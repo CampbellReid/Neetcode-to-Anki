@@ -1,0 +1,570 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+let's solve
+longest common subsequence a dynamic
+programming problem
+and this is pretty much one of the most
+popular dynamic programming problems so
+we are given
+two strings text 1 and text 2
+and we just want to return the length of
+the longest
+common subsequence between these
+two strings and you might remember from
+my last video where we
+learned basically what a sub sequence is
+it's basically
+uh you take a string right like this
+string a b c d e
+and you just you know you choose a few
+characters from it
+while you maintain the order so one sub
+sequence from this string could be a b
+right you take the first two characters
+from and you can take any characters you
+can choose to remove any characters you
+can do whatever you want
+and so we're looking for the longest
+common subsequence
+so a subsequence that is in both
+of the strings so in this example we
+have two strings right a b
+c d e and a c e so what is the longest
+common subsequence between these well
+when you take a look at the first string
+you see that hey they both have an a
+right they both have an a in the first
+spot so that's good
+so now let's look at the second
+character b and c
+well this has a b but the second string
+does not have a b
+but the second string does have a c and
+we also have a c over here
+but the second string does not have a d
+right so we can't include the d from the
+first string but then we see the last
+character is an e the last character and
+the other string is also an e so
+we get the longest common subsequence to
+just be
+the original second string right ace
+because ace
+can be found in the first string all we
+have to do is remove
+a couple characters right remove the b
+and remove the d
+then we get a subsequence that matches
+the second string so the length of the
+longest common subsequence
+is three so how can we solve this
+problem well as i mentioned dynamic
+programming
+is the most efficient way to solve this
+problem but before we even get into the
+dynamic programming solution
+which is going to be a two dimensional
+dynamic programming solution
+before we get into that let's just
+notice one thing
+do you so let's say these are our two
+strings right string one and string two
+does it at least make sense to you that
+okay
+like we would want to start let's say at
+the beginning of both strings right like
+we're looking for the longest common sub
+sequence
+it might just be that both of the
+strings are actually equal right that
+could be a possible way so let's
+look at the first character in each
+string and in this case
+they match each other right they're the
+same character
+so does it at least make sense to you
+that if
+both of the characters match each other
+right the first characters
+that the longest common subsequence then
+we can break it into a sub problem right
+now
+the new problem we're looking at is
+finding the longest common subsequence
+between the remainder of both strings
+right
+plus one plus one
+because we see that the first two
+characters
+are equal right that's where our one
+comes from right
+because we know that the longest common
+subsequence is at least
+going to be one because we found a
+matching
+pair of characters right and then we
+have a
+sub problem right and you you might know
+that
+that's what dynamic programming is all
+about finding the
+sub problem now what if this character
+was a b right and this is an
+a so clearly they're not the same
+character what would we do
+then well we can't do what we just did
+we can't add one and then find
+the longest common subsequence between
+uh the
+the remainder of the two strings we
+can't do that but
+but we can break it into a different sub
+problem we can say well
+it's possible that the longest common
+subsequence could be between
+these two strings right or it could be
+between
+this string and this string so this is
+just
+a little bit of an explanation before i
+show you the actual dynamic programming
+solution right
+basically what we found out is that
+based on
+comparing the first two characters
+whether they're equal or not equal we
+can break up
+the problem into sub problems and then
+solve those sub
+problems so take a look what i just did
+i took the
+two input strings right string one and
+string two
+and i wrote them in a different way
+right i
+said that this is a two dimensional
+dynamic programming problem
+and you might know that a grid a 2d
+grid like this is commonly used to solve
+these types of dynamic programming
+problems
+so notice that for each character in
+both
+strings there's a square right a
+position
+a cell that we can put a value in we're
+going to put a value in each of these
+cells and so let's just start at the
+beginning like we
+did right so let's start at the first
+characters right
+what we're trying to do is for these
+strings find the longest common
+subsequence
+between the entire strings right so what
+we're going to do is put that value
+right here that's what's going to be the
+entire
+longest common subsequence so we want to
+compute the value that goes here but
+what you're going to find is
+to do that we need to solve some sub
+problems
+and then you know continue to do that
+and then work our way back
+up to this position so what do we notice
+we let's look at these two characters
+right they're
+equal a and a right so okay so now we
+want to find the value that goes here
+how can we find that value
+well like i mentioned right now we're
+trying to solve a sub problem we want to
+find the longest common subsequence
+between these two substrings
+right we don't have to check these a's
+anymore because we know they match each
+other
+so now i want to find this new
+sub problem right and so basically what
+i'm saying is i'm going to go
+here i'm i want to solve the sub problem
+that goes here
+so now we're here right we're comparing
+this b
+with this c we see that they're not
+equal this time
+right that means we're not going to be
+going diagonally we're not going to look
+at this sub problem we're going to look
+at a different sub problem
+since these characters do not equal each
+other
+we have to check two different sub
+problems
+it means that the longest common
+subsurface between
+these two substrings is going to be
+found
+in either of these two positions right
+so let's look at this position first
+with this position tells us we're trying
+to find the longest common subsequence
+between this string
+and this string right so basically we're
+not looking at this c
+anymore right and this position tells us
+that we're looking at the longest common
+subsequence between this string
+and this string so basically when we
+remove this
+b right and just by looking at it right
+you can tell that this
+is going to these two strings are going
+to lead to a longest common subsequence
+of one just by looking at it right
+because you can see that this has one
+character it's an e it only matches
+this e so that's going to be a one but
+when you look at
+this string and this string right
+corresponding to this position
+we see that this has a ce this has a ce
+so this is n
+this is going to end up being a two but
+let me actually solve
+the rest of it a little bit so mainly
+looking at these two strings right
+in this position we see that the c's
+match each other right so since
+remember when the characters match each
+other the first characters of both
+strings match each other that's when we
+go diagonally
+and the reason we go diagonally is
+because then we know we can look at the
+remainder of both of the strings right
+we
+we know that this c matches this c so we
+want to look diagonally we want to look
+at these two substrings
+so what's the longest common substring
+between these two
+okay so what are we gonna do let's
+compare the first character right so
+d and and e so these characters are
+not equal so remember what we do when
+the first characters are
+not equal then we can't go diagonally so
+what do we decide to do we go to the
+right and we go
+down and we take whatever the max of
+these two
+is and then put it in this value that's
+what we're gonna do
+so first let's check this right position
+so what does this right position even
+mean it means we're taking
+this substring and finding the longest
+common subsequence with this substring
+but this is an
+empty string so what's going to be in
+this
+cell remember this is actually out of
+bounds
+anyway right so what default value are
+we gonna give ourselves if we go out of
+bounds to the right
+clearly the the longest come sub
+sequence between a string and an empty
+string like this
+is gonna be zero right so really what
+we're gonna initialize is we're gonna
+say
+every value in this column is going to
+be 0.
+similarly this is an empty substring if
+it were to
+if we were trying to find the lcs the
+longest common subsequence between this
+and an empty substring
+we would also get zero so what we're
+gonna do is put a zero
+in these positions right that's just how
+we're gonna initialize our 2d matrix
+when we start the problem okay so
+remember what we were doing we were at
+this position we were going right and we
+were going down trying to find the
+maximum value well
+clearly to the right we get a zero so
+that's not the max
+so let's go down okay now we're down so
+what are we doing we're
+finding the lcs between this substring
+and
+this substring well they're the exact
+same right e matches
+e okay great and remember when
+characters match each other
+that's when we look diagonally right so
+we came down here and now we're looking
+diagonally
+clearly we get a zero here right so
+zero plus one the reason we're doing a
+plus
+one here is because we found matching
+characters when characters match
+we add one because clearly the lcs
+between these is going to at least be
+one right at least one of these
+characters matches
+so now i'm basically gonna go here and
+then take us
+back along the path that we came from
+and then show you what the solution
+is so we had a one here right and so
+from this position we went
+down so since we were going down that
+means that this character and this
+character did not match each other so
+what we're gonna do is just
+take the one and put it up here right so
+there's gonna be a one here
+because the lcs between these two is one
+but now we're gonna go back over here
+diagonally right
+diagonally means that this character
+matched this character right
+so we're going to take the value that we
+got up here put it over here
+and add one because remember these match
+each other so we're adding one
+that means we're going to end up putting
+a two in this position
+and now we're we we're going up right
+we're going up
+because that's where we came from and
+remember when you go up that means the
+characters did not match each other the
+c
+and the b don't match each other so
+we're going to put a 2 here right we're
+just taking this 2
+and putting it over here and lastly
+we're going back
+here that's where we came from right
+diagonally that means the characters
+were matching each other so we can add
+at least
+one character so two plus one that's
+going to be
+three this is how we got the result
+right so we got a
+three meaning that the lcs between these
+two strings is three right and that's
+what we learned from the problem
+explanation so right what we're going to
+do is return
+3 that's our result but you can see that
+the way
+i did it was basically intuitive right i
+used this picture and basically solved
+this problem by hand
+using a little intuition and stuff right
+but the way we're gonna have to solve
+this with
+code is gonna be brute force ish right
+so it's dynamic programming
+but what we're gonna have to do is for
+every value
+in this cell right so we are gonna
+initialize these
+zeros right but with this matrix right
+this 2d matrix
+we want the value that goes up here
+right and to do that we have to compute
+the value
+that goes here that goes here that goes
+here and basically for
+all these and then finally we'll be able
+to have the value that goes here which
+is the result that we're going to return
+and so basically what i'm saying is this
+is going to be a bottom
+up dynamic programming solution right
+bottom
+up meaning we're going gonna solve it in
+reverse order we're gonna first
+get every value we're gonna get the
+value that goes here and then work our
+way
+up until we get to the result and you
+might have noticed see i have an i that
+tells us
+the column i have a j that tells us
+actually the column and the i tells us
+what the row is
+and so when we're working our way
+starting at the bottom and then working
+our way up
+how are we going to determine what value
+goes in each cell
+basically what i went over earlier right
+so we're going to look at the characters
+and if they match each other what we're
+going to do is say
+one plus the value that's diagonal right
+and we know
+when we go out of bounds there's a zero
+right there's an implicit
+zero when we go out of bounds and we're
+going to do that with
+every single cell right so when you look
+at these two we get an e
+and a c right and when characters don't
+match each other right
+that's important what we're going to do
+is we're going to look down
+right we see a zero down here and we're
+gonna go right
+right to the right side and we see a one
+here on the right side
+and what we're gonna do is take the max
+of those two values
+and we see that the max is of course one
+right one is bigger than zero and then
+we're going to put that max value in
+the cell so that's really it there are
+two choices right
+if the characters don't match each other
+right in this case
+or if their characters do match each
+other in this case
+right that's basically how we're going
+to solve this problem it'll make a
+little more sense when i show you the
+code
+so remember we're going to have a 2d
+grid so i'm going to call that dp for
+dynamic programming it's going to be a
+2d grid and what i'm initially going to
+do
+is set it to all zeros right so and i'm
+just gonna do a little bit of
+uh python stuff so list comprehension in
+python
+so we're gonna go through every single
+value
+in the length of text two
+plus one right plus one because we
+we know that we need at least one more
+column to have all the zeros in it
+and so we're remember we're gonna put a
+zero for every
+value in that so length plus
+one and we're going to have this row for
+every value in the length
+of string one so text one plus
+one as well right so we're basically uh
+if you're not familiar with python this
+looks complicated but basically we're
+getting a 2d grid of dimensions length 2
+plus 1 times a length string 1 plus 1
+and initializing it to
+all zeros and then we're just going to
+have a
+nested loop and what we're going to do
+is
+iterate through this 2d grid in reverse
+order
+so in python you can do it like this and
+basically what i'm doing is
+starting at the bottom right of the
+matrix and then working our way up
+so this is how you do it in python
+negative one negative one
+and let's do the same thing for text
+two and so remember so we're going
+through every cell
+in our 2d grid and remember there were
+two conditions one condition
+is if the characters in both strings
+match each other so if text one of i
+matches text two at position
+j if they match each other we're going
+to do something and if they
+don't match each other we're going to do
+something different so remember if they
+do match each other then what we can say
+is at this position
+dp of i j because remember we're trying
+to fill in
+every single cell what we can do is then
+just simply take one plus
+the diagonal how do we find the diagonal
+well we can say
+i plus one and j plus one right that
+gives us the diagonal
+and remember we're adding one to it
+because these characters match that
+means we add a one
+and if they don't match that's the else
+case right so we're doing something
+different here
+we're going to put a different value for
+dp of ij
+and in this case what we're doing is
+we're finding the maximum of
+two values what are the two values the
+value to the right
+of this position so we can say dp of i j
+plus one we can say that's the right
+value and the
+value below the bottom value so we can
+say
+i plus one and j for that
+right so we're finding the maximum of
+these two we're not adding one
+we're not adding one because the
+characters did not match each other
+but basically literally these are the
+two cases
+we're just filling in a different value
+depending on what the case
+is and that's it so literally with these
+two nested loops and with these two
+conditions
+we're filling in the entire dp matrix
+and so once that matrix is filled in we
+know that the result is going to be at
+the top
+left of that matrix so the dp the matrix
+at index
+0 0. that's going to have our result so
+all we have to do now is return
+the result and clearly you can see that
+the
+time complexity of this is the length of
+the strings
+multiplied by each other so if the
+length of string one was n
+and the length of string two was m we'd
+just multiply them together so this
+would be the time complexity
+that's also the memory complexity
+because we need extra memory for our 2d
+dynamic programming grid oops i had just
+one little bug i added
+one to the inside of that function but i
+needed to add one here
+but other than that you can see that the
+code
+does work and it is pretty efficient
+because the dynamic programming solution
+is the most efficient for this problem
+so i hope that this
+was helpful if it was please like and
+subscribe it supports the channel
+a lot and i'll hopefully see you pretty
+soon

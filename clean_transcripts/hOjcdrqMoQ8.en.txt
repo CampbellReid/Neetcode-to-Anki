@@ -1,0 +1,275 @@
+everyone welcome back and let's write
+some more neat code today so today let's
+solve the problem k the largest element
+in a stream and it's marked as an easy
+question but i definitely feel that it's
+more of a medium and maybe that's why
+many people disliked it but we are told
+to design a class to find the kth
+largest element in a stream of numbers
+so stream basically means that we could
+continue to add numbers to the list of
+numbers after we do that we still have
+to find the kth largest element now that
+we've added more numbers to it and they
+say that the kth largest element is the
+case largest in the sorted order not
+distinct and what they mean by that is
+basically that if we had you know this
+uh list of numbers and k equals three
+meaning we want the third largest number
+if we look at the distinct values we'd
+say okay three is the largest two is the
+second largest and one is the third
+largest but they say we want to return
+the case largest in sorted order meaning
+this is the first largest this is the
+second largest and this is the third
+largest so we return two we're not just
+looking at distinct elements if we have
+multiple copies we include those as well
+the good thing is we only need to
+implement two functions one is the
+constructor where we'll be given the
+parameter k that we can store and an
+initial list of numbers and this list of
+numbers it could be at least k elements
+or it could be less than k elements or
+it could be more than k elements so
+that's something we're gonna have to
+take care of when we do write out the
+code uh but the second function is the
+add function where we can actually add a
+number to the stream of data and this
+function is also going to return the new
+kth largest element every time we call
+it so
+they do tell us that whenever we call
+this function we are guaranteed to have
+at least k elements in the stream of
+data so that's good even though we might
+not have k elements when we initialize
+it we will have k elements when we call
+the add function so now the question is
+how can we efficiently solve this
+problem well suppose we were given this
+input right in our constructor this
+array and k equals three of course the
+intuitive approach is to sort the input
+so that we can uh you know look through
+and find the kth largest element a
+little bit faster right in the original
+array we could just scan through the
+entire input and that'd be o of n to
+find the kth largest but when the array
+is sorted though we can of course use
+binary search which will run in log n
+time but the problem is if we want to
+insert a new value for example we want
+to run add on the value three well yeah
+we can run binary search to add the
+number as well we can find where to
+insert it but when you insert in the
+middle of an array it's a linear time
+operation big o of n so the question is
+is there a better approach is there a
+different data structure we can use and
+yes there actually is and the data
+structure that's going to help us the
+most in this case is a min heap and we
+are going to require it to be of size k
+and let me tell you why well first of
+all a heap is a data structure if you
+haven't heard of it that has a somewhat
+sorted property we can add and pop
+elements from the min heap in log n time
+we can also get the minimum value of the
+min heap in big o of one time obviously
+this is a little bit better than an
+array especially an unsorted array like
+we are given in the input but the
+question is why are we going to require
+it to be of size k and why are we using
+a min heap rather than a max heap well
+one thing we are going to use to our
+advantage is that we're only going to be
+adding elements to our stream of data
+we're never really going to be removing
+anything so in this example we're given
+four numbers but we only need a min heap
+of size k because we only need the k
+largest values from the array in this
+case it's four five and three why is
+that why do we never need the two
+because we want the third largest value
+this is the largest this is the second
+largest this is the third largest so we
+have three numbers that are bigger than
+two is two ever going to be the third
+largest value in our stream of data it's
+never going to be because we're never
+going to remove any of these elements
+right we might add elements we might add
+a value like six if we add this six
+value then we don't want to include this
+f this four anymore then we only want to
+keep track of these three numbers six
+five and eight and now this is going to
+be the third largest number five is
+going to be the third largest number two
+is never going to be included in this
+group two is never going to be in our
+min heap of size k if we added a small
+element to our stream like a 1 well we
+don't care about a 1. now in terms of
+the code and how we're going to
+implement this we're going to have a min
+heap of size k first of all what we're
+going to do to get this heap is we're
+going to take this entire input and add
+it to the min heap right so suppose we
+have four five and eight in our min heap
+now we're going to do a while loop while
+the size of the heap is greater than k
+we're gonna pop the minimum
+value in this case the minimum is 2
+we're going to pop it thankfully now our
+heap is size k exactly so we don't need
+to continue to pop elements and remember
+our min heap we can get the minimum
+value and since we have these are the
+three largest values we want the third
+largest which is going to be the minimum
+among all of these i hope now you can
+see why we're using a min heap because
+we can get the minimum in o of one time
+but the add function over here requires
+us to add a value to our stream of data
+so for example suppose we want to run
+add 3
+well how do we know if 3 is included
+among our k largest values well the
+easiest way to do it there's multiple
+ways but the easiest is just to take
+that 3 and add it to our min heap so now
+we have 4 values in our min heap and we
+we added it in log n time now we want to
+pop the minimum value from this min heat
+because we want the third largest value
+we have four values in the heap let's
+pop the smallest one which is three we
+can do that again in login time and now
+we want to know okay among the remaining
+what's the smallest value again it's
+four so as you can see we can do the add
+function in log n time how many times
+are we going to run the law in the add
+function who knows let's call it m and
+then this is going to be the overall
+time complexity of add if we count all
+the function calls that are made to it
+now in terms of our
+constructor function actually generating
+this entire heap it's potentially going
+to be n log n in the worst case reason
+being is we can actually initialize the
+heap like this is our input data we can
+turn it into a heap in o of n time
+that's not too bad but then remember
+when we started with the array we had
+this two right we have to keep popping
+elements until we only have k elements
+remaining so
+a pop function is gonna be log n time
+how many times are we gonna have to pop
+potentially n minus k times so this is
+the overall time complexity k could be
+really small it could be one so you know
+worst case we could have n log n for our
+constructor but the add function is just
+going to be log n that's a big
+improvement over the first solution we
+came up with which was uh end time when
+we were just using a array structure so
+heaps definitely help us out a lot now
+we can go ahead and code this up now
+let's code it up first thing we're going
+to do is the constructor you can see i
+have one comment that hopefully will
+help guide us
+in the code so we can create a member
+variable with the self keyword in python
+so first we want to create our min heap
+and we also want to have another member
+variable for k which is you know going
+to be the size of that heap or at least
+the desired size of it so min heap
+initially can just be assigned to nums
+and our k is just going to be assigned
+to the input parameter k we want to turn
+this into a heap right now it's just a
+array we can turn it into a heap in
+python like this heap q dot heapify
+keepifying this array into a min heap
+that will create the sorted property it
+will run in big o of n time but it could
+be that it has more than k element so
+while the length of self.min he is
+greater than k we can go ahead and pop
+from the min heap we can do that with
+heap q dot heap pop
+on the min heap data structure and don't
+forget the keyword self since it's a
+member variable so the constructor isn't
+too bad now let's do our add function
+there's multiple ways you could write it
+but the easiest way is just to go ahead
+and add this value to our min heap
+regardless of what it is if it's too big
+or if it's too small who cares we can go
+this value
+and then we're gonna pop the smallest
+value which might end up being this
+value or it might end up being a
+different value who knows let's go ahead
+and just pop it and our heap data
+structure will actually take care of
+that for us anyway
+but there's actually just one edge case
+that you might miss remember our heap
+might be initialized with less than k
+elements this loop will execute if it
+has more than k elements which is good
+but what if it has less than k elements
+then if we add a value to the heap we
+don't want to pop from the heap if it
+has less than k elements or even equal
+to k elements we only want to pop if the
+length of the min heap is greater than k
+elements so if it's greater than k
+that's when we want to pop from the min
+heap but once we've done that we make
+sure our heap is valid it does have k
+elements we're guaranteed that when the
+add function runs so now we just want to
+return the minimum from our min heap and
+the way heaps are implemented the
+minimum value will always be stored in
+the zeroth index so we can just go ahead
+and return
+this
+and don't be dumb like me we forgot to
+when we're referencing min heap and the
+k value we want to make sure we
+reference it as a member variable so
+let's use the keyword self
+self.min heap okay it looks good to me
+let's run it to make sure that it works
+and as you can see on the left yes it
+does work and it's about as efficient as
+we can get so i really hope that this
+was helpful if it was please like and
+subscribe it really supports the channel
+a lot consider checking out my patreon
+where you can further support the
+channel and hopefully i'll see you

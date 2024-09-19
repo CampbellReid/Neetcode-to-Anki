@@ -1,0 +1,2600 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.160 --> 00:00:01.750 align:start position:0%
+ 
+everyone<00:00:00.560><c> welcome</c><00:00:00.960><c> back</c><00:00:01.199><c> and</c><00:00:01.280><c> let's</c><00:00:01.520><c> write</c>
+
+00:00:01.750 --> 00:00:01.760 align:start position:0%
+everyone welcome back and let's write
+ 
+
+00:00:01.760 --> 00:00:03.110 align:start position:0%
+everyone welcome back and let's write
+some<00:00:01.920><c> more</c><00:00:02.080><c> neat</c><00:00:02.399><c> code</c><00:00:02.639><c> today</c>
+
+00:00:03.110 --> 00:00:03.120 align:start position:0%
+some more neat code today
+ 
+
+00:00:03.120 --> 00:00:04.789 align:start position:0%
+some more neat code today
+so<00:00:03.360><c> today</c><00:00:03.600><c> let's</c><00:00:03.840><c> look</c><00:00:04.000><c> at</c><00:00:04.080><c> a</c><00:00:04.240><c> problem</c>
+
+00:00:04.789 --> 00:00:04.799 align:start position:0%
+so today let's look at a problem
+ 
+
+00:00:04.799 --> 00:00:06.550 align:start position:0%
+so today let's look at a problem
+palindrome<00:00:05.520><c> partitioning</c>
+
+00:00:06.550 --> 00:00:06.560 align:start position:0%
+palindrome partitioning
+ 
+
+00:00:06.560 --> 00:00:09.669 align:start position:0%
+palindrome partitioning
+so<00:00:06.799><c> we're</c><00:00:07.120><c> given</c><00:00:07.520><c> a</c><00:00:07.680><c> string</c><00:00:08.400><c> s</c><00:00:08.880><c> and</c><00:00:09.120><c> we</c><00:00:09.280><c> want</c><00:00:09.519><c> to</c>
+
+00:00:09.669 --> 00:00:09.679 align:start position:0%
+so we're given a string s and we want to
+ 
+
+00:00:09.679 --> 00:00:12.070 align:start position:0%
+so we're given a string s and we want to
+partition<00:00:10.480><c> it</c><00:00:10.719><c> in</c><00:00:10.960><c> such</c><00:00:11.280><c> a</c><00:00:11.440><c> way</c><00:00:11.679><c> that</c>
+
+00:00:12.070 --> 00:00:12.080 align:start position:0%
+partition it in such a way that
+ 
+
+00:00:12.080 --> 00:00:15.350 align:start position:0%
+partition it in such a way that
+every<00:00:12.639><c> single</c><00:00:13.200><c> sub-string</c><00:00:14.160><c> of</c><00:00:14.320><c> the</c><00:00:14.480><c> partition</c>
+
+00:00:15.350 --> 00:00:15.360 align:start position:0%
+every single sub-string of the partition
+ 
+
+00:00:15.360 --> 00:00:17.910 align:start position:0%
+every single sub-string of the partition
+is<00:00:15.519><c> a</c><00:00:15.679><c> palindrome</c><00:00:16.640><c> and</c><00:00:16.960><c> we</c><00:00:17.119><c> want</c><00:00:17.279><c> to</c><00:00:17.440><c> return</c>
+
+00:00:17.910 --> 00:00:17.920 align:start position:0%
+is a palindrome and we want to return
+ 
+
+00:00:17.920 --> 00:00:18.390 align:start position:0%
+is a palindrome and we want to return
+all
+
+00:00:18.390 --> 00:00:18.400 align:start position:0%
+all
+ 
+
+00:00:18.400 --> 00:00:21.109 align:start position:0%
+all
+possible<00:00:19.119><c> ways</c><00:00:19.600><c> that</c><00:00:19.760><c> we</c><00:00:19.920><c> can</c><00:00:20.160><c> partition</c><00:00:20.800><c> it</c>
+
+00:00:21.109 --> 00:00:21.119 align:start position:0%
+possible ways that we can partition it
+ 
+
+00:00:21.119 --> 00:00:21.670 align:start position:0%
+possible ways that we can partition it
+in
+
+00:00:21.670 --> 00:00:21.680 align:start position:0%
+in
+ 
+
+00:00:21.680 --> 00:00:24.310 align:start position:0%
+in
+like<00:00:22.000><c> by</c><00:00:22.160><c> following</c><00:00:22.640><c> this</c><00:00:22.960><c> rule</c><00:00:23.600><c> and</c><00:00:23.840><c> if</c><00:00:24.000><c> you</c>
+
+00:00:24.310 --> 00:00:24.320 align:start position:0%
+like by following this rule and if you
+ 
+
+00:00:24.320 --> 00:00:26.310 align:start position:0%
+like by following this rule and if you
+don't<00:00:24.560><c> remember</c><00:00:25.039><c> a</c><00:00:25.199><c> palindrome</c><00:00:25.840><c> is</c><00:00:25.920><c> basically</c>
+
+00:00:26.310 --> 00:00:26.320 align:start position:0%
+don't remember a palindrome is basically
+ 
+
+00:00:26.320 --> 00:00:27.029 align:start position:0%
+don't remember a palindrome is basically
+a<00:00:26.480><c> string</c>
+
+00:00:27.029 --> 00:00:27.039 align:start position:0%
+a string
+ 
+
+00:00:27.039 --> 00:00:29.269 align:start position:0%
+a string
+that<00:00:27.680><c> if</c><00:00:27.760><c> you</c><00:00:28.000><c> reverse</c><00:00:28.480><c> it</c><00:00:28.640><c> it's</c><00:00:28.800><c> the</c><00:00:28.960><c> exact</c>
+
+00:00:29.269 --> 00:00:29.279 align:start position:0%
+that if you reverse it it's the exact
+ 
+
+00:00:29.279 --> 00:00:30.070 align:start position:0%
+that if you reverse it it's the exact
+same<00:00:29.519><c> string</c>
+
+00:00:30.070 --> 00:00:30.080 align:start position:0%
+same string
+ 
+
+00:00:30.080 --> 00:00:32.389 align:start position:0%
+same string
+so<00:00:30.320><c> one</c><00:00:30.560><c> thing</c><00:00:30.800><c> to</c><00:00:30.960><c> notice</c><00:00:31.279><c> is</c><00:00:31.439><c> no</c><00:00:31.599><c> matter</c><00:00:32.079><c> what</c>
+
+00:00:32.389 --> 00:00:32.399 align:start position:0%
+so one thing to notice is no matter what
+ 
+
+00:00:32.399 --> 00:00:33.830 align:start position:0%
+so one thing to notice is no matter what
+string<00:00:32.800><c> we're</c><00:00:33.040><c> given</c><00:00:33.440><c> it's</c>
+
+00:00:33.830 --> 00:00:33.840 align:start position:0%
+string we're given it's
+ 
+
+00:00:33.840 --> 00:00:36.549 align:start position:0%
+string we're given it's
+possible<00:00:34.399><c> to</c><00:00:34.559><c> partition</c><00:00:35.040><c> it</c><00:00:35.280><c> in</c><00:00:35.440><c> this</c><00:00:35.680><c> way</c><00:00:36.320><c> why</c>
+
+00:00:36.549 --> 00:00:36.559 align:start position:0%
+possible to partition it in this way why
+ 
+
+00:00:36.559 --> 00:00:37.750 align:start position:0%
+possible to partition it in this way why
+is<00:00:36.719><c> that</c><00:00:36.960><c> the</c><00:00:37.120><c> case</c>
+
+00:00:37.750 --> 00:00:37.760 align:start position:0%
+is that the case
+ 
+
+00:00:37.760 --> 00:00:41.190 align:start position:0%
+is that the case
+because<00:00:38.480><c> in</c><00:00:38.640><c> this</c><00:00:38.800><c> case</c><00:00:39.040><c> we</c><00:00:39.200><c> have</c><00:00:39.600><c> a</c><00:00:40.160><c> a</c><00:00:40.719><c> b</c>
+
+00:00:41.190 --> 00:00:41.200 align:start position:0%
+because in this case we have a a b
+ 
+
+00:00:41.200 --> 00:00:44.950 align:start position:0%
+because in this case we have a a b
+we<00:00:41.520><c> know</c><00:00:41.840><c> that</c><00:00:42.320><c> any</c><00:00:43.360><c> any</c><00:00:43.840><c> single</c><00:00:44.399><c> character</c>
+
+00:00:44.950 --> 00:00:44.960 align:start position:0%
+we know that any any single character
+ 
+
+00:00:44.960 --> 00:00:45.350 align:start position:0%
+we know that any any single character
+like
+
+00:00:45.350 --> 00:00:45.360 align:start position:0%
+like
+ 
+
+00:00:45.360 --> 00:00:47.990 align:start position:0%
+like
+a<00:00:45.760><c> is</c><00:00:45.920><c> a</c><00:00:46.079><c> palindrome</c><00:00:46.640><c> right</c><00:00:46.800><c> if</c><00:00:46.960><c> you</c><00:00:47.120><c> reverse</c><00:00:47.600><c> a</c>
+
+00:00:47.990 --> 00:00:48.000 align:start position:0%
+a is a palindrome right if you reverse a
+ 
+
+00:00:48.000 --> 00:00:49.029 align:start position:0%
+a is a palindrome right if you reverse a
+you<00:00:48.239><c> get</c><00:00:48.480><c> a</c>
+
+00:00:49.029 --> 00:00:49.039 align:start position:0%
+you get a
+ 
+
+00:00:49.039 --> 00:00:51.750 align:start position:0%
+you get a
+any<00:00:49.360><c> character</c><00:00:50.079><c> including</c><00:00:50.640><c> b</c><00:00:51.440><c> is</c><00:00:51.600><c> a</c>
+
+00:00:51.750 --> 00:00:51.760 align:start position:0%
+any character including b is a
+ 
+
+00:00:51.760 --> 00:00:53.110 align:start position:0%
+any character including b is a
+palindrome<00:00:52.559><c> right</c>
+
+00:00:53.110 --> 00:00:53.120 align:start position:0%
+palindrome right
+ 
+
+00:00:53.120 --> 00:00:55.510 align:start position:0%
+palindrome right
+reverse<00:00:53.600><c> it</c><00:00:53.760><c> you</c><00:00:53.920><c> get</c><00:00:54.160><c> b</c><00:00:54.640><c> so</c><00:00:54.960><c> one</c><00:00:55.199><c> way</c><00:00:55.360><c> to</c>
+
+00:00:55.510 --> 00:00:55.520 align:start position:0%
+reverse it you get b so one way to
+ 
+
+00:00:55.520 --> 00:00:56.869 align:start position:0%
+reverse it you get b so one way to
+partition<00:00:56.079><c> this</c><00:00:56.320><c> is</c><00:00:56.480><c> take</c>
+
+00:00:56.869 --> 00:00:56.879 align:start position:0%
+partition this is take
+ 
+
+00:00:56.879 --> 00:00:59.590 align:start position:0%
+partition this is take
+each<00:00:57.280><c> character</c><00:00:58.239><c> and</c><00:00:58.719><c> separate</c><00:00:59.199><c> it</c><00:00:59.280><c> right</c><00:00:59.520><c> and</c>
+
+00:00:59.590 --> 00:00:59.600 align:start position:0%
+each character and separate it right and
+ 
+
+00:00:59.600 --> 00:01:01.430 align:start position:0%
+each character and separate it right and
+that's<00:00:59.840><c> what</c><00:01:00.079><c> the</c><00:01:00.320><c> first</c><00:01:00.719><c> partition</c><00:01:01.280><c> over</c>
+
+00:01:01.430 --> 00:01:01.440 align:start position:0%
+that's what the first partition over
+ 
+
+00:01:01.440 --> 00:01:03.910 align:start position:0%
+that's what the first partition over
+here<00:01:01.760><c> is</c><00:01:01.920><c> right</c><00:01:02.239><c> each</c><00:01:02.480><c> character</c><00:01:02.960><c> by</c><00:01:03.199><c> itself</c>
+
+00:01:03.910 --> 00:01:03.920 align:start position:0%
+here is right each character by itself
+ 
+
+00:01:03.920 --> 00:01:06.070 align:start position:0%
+here is right each character by itself
+so<00:01:04.159><c> are</c><00:01:04.239><c> there</c><00:01:04.559><c> any</c><00:01:04.960><c> other</c><00:01:05.199><c> ways</c><00:01:05.439><c> to</c><00:01:05.600><c> partition</c>
+
+00:01:06.070 --> 00:01:06.080 align:start position:0%
+so are there any other ways to partition
+ 
+
+00:01:06.080 --> 00:01:07.190 align:start position:0%
+so are there any other ways to partition
+this<00:01:06.400><c> other</c><00:01:06.640><c> than</c><00:01:06.880><c> just</c>
+
+00:01:07.190 --> 00:01:07.200 align:start position:0%
+this other than just
+ 
+
+00:01:07.200 --> 00:01:09.590 align:start position:0%
+this other than just
+this<00:01:07.439><c> single</c><00:01:07.840><c> way</c><00:01:08.479><c> well</c><00:01:08.720><c> if</c><00:01:08.880><c> you</c><00:01:09.119><c> take</c><00:01:09.360><c> the</c>
+
+00:01:09.590 --> 00:01:09.600 align:start position:0%
+this single way well if you take the
+ 
+
+00:01:09.600 --> 00:01:10.950 align:start position:0%
+this single way well if you take the
+first<00:01:10.000><c> two</c><00:01:10.240><c> characters</c>
+
+00:01:10.950 --> 00:01:10.960 align:start position:0%
+first two characters
+ 
+
+00:01:10.960 --> 00:01:13.510 align:start position:0%
+first two characters
+you<00:01:11.200><c> see</c><00:01:11.520><c> that</c><00:01:11.439><c> that</c><00:01:12.080><c> is</c><00:01:12.240><c> also</c><00:01:12.640><c> a</c><00:01:13.040><c> palindrome</c>
+
+00:01:13.510 --> 00:01:13.520 align:start position:0%
+you see that that is also a palindrome
+ 
+
+00:01:13.520 --> 00:01:14.070 align:start position:0%
+you see that that is also a palindrome
+right<00:01:13.760><c> a</c>
+
+00:01:14.070 --> 00:01:14.080 align:start position:0%
+right a
+ 
+
+00:01:14.080 --> 00:01:17.109 align:start position:0%
+right a
+a<00:01:14.320><c> reversa</c><00:01:14.960><c> is</c><00:01:15.119><c> still</c><00:01:15.360><c> a</c><00:01:15.680><c> a</c><00:01:16.240><c> and</c><00:01:16.400><c> of</c><00:01:16.560><c> course</c><00:01:16.880><c> b</c>
+
+00:01:17.109 --> 00:01:17.119 align:start position:0%
+a reversa is still a a and of course b
+ 
+
+00:01:17.119 --> 00:01:19.350 align:start position:0%
+a reversa is still a a and of course b
+by<00:01:17.360><c> itself</c><00:01:18.000><c> we</c><00:01:18.159><c> know</c><00:01:18.400><c> any</c><00:01:18.640><c> single</c><00:01:18.960><c> character</c>
+
+00:01:19.350 --> 00:01:19.360 align:start position:0%
+by itself we know any single character
+ 
+
+00:01:19.360 --> 00:01:21.109 align:start position:0%
+by itself we know any single character
+is<00:01:19.520><c> definitely</c><00:01:20.080><c> a</c><00:01:20.320><c> palindrome</c>
+
+00:01:21.109 --> 00:01:21.119 align:start position:0%
+is definitely a palindrome
+ 
+
+00:01:21.119 --> 00:01:23.190 align:start position:0%
+is definitely a palindrome
+so<00:01:21.360><c> for</c><00:01:21.520><c> the</c><00:01:21.759><c> second</c><00:01:22.080><c> partition</c><00:01:22.560><c> we'll</c><00:01:22.799><c> have</c>
+
+00:01:23.190 --> 00:01:23.200 align:start position:0%
+so for the second partition we'll have
+ 
+
+00:01:23.200 --> 00:01:24.950 align:start position:0%
+so for the second partition we'll have
+two<00:01:23.840><c> sub</c><00:01:24.080><c> strings</c><00:01:24.479><c> right</c>
+
+00:01:24.950 --> 00:01:24.960 align:start position:0%
+two sub strings right
+ 
+
+00:01:24.960 --> 00:01:28.550 align:start position:0%
+two sub strings right
+a<00:01:25.680><c> and</c><00:01:26.159><c> b</c><00:01:26.720><c> so</c><00:01:26.960><c> then</c><00:01:27.280><c> this</c><00:01:27.520><c> is</c><00:01:27.680><c> our</c><00:01:27.840><c> result</c>
+
+00:01:28.550 --> 00:01:28.560 align:start position:0%
+a and b so then this is our result
+ 
+
+00:01:28.560 --> 00:01:30.630 align:start position:0%
+a and b so then this is our result
+because<00:01:28.880><c> we</c><00:01:29.040><c> cannot</c><00:01:29.439><c> have</c><00:01:29.759><c> any</c><00:01:30.079><c> other</c><00:01:30.400><c> sub</c>
+
+00:01:30.630 --> 00:01:30.640 align:start position:0%
+because we cannot have any other sub
+ 
+
+00:01:30.640 --> 00:01:32.710 align:start position:0%
+because we cannot have any other sub
+strings<00:01:31.040><c> that</c><00:01:31.200><c> are</c><00:01:31.520><c> phalan</c><00:01:31.920><c> drums</c><00:01:32.240><c> right</c>
+
+00:01:32.710 --> 00:01:32.720 align:start position:0%
+strings that are phalan drums right
+ 
+
+00:01:32.720 --> 00:01:34.870 align:start position:0%
+strings that are phalan drums right
+a<00:01:32.960><c> b</c><00:01:33.360><c> is</c><00:01:33.439><c> not</c><00:01:33.600><c> a</c><00:01:33.680><c> palindrome</c><00:01:34.240><c> if</c><00:01:34.320><c> you</c><00:01:34.400><c> reverse</c>
+
+00:01:34.870 --> 00:01:34.880 align:start position:0%
+a b is not a palindrome if you reverse
+ 
+
+00:01:34.880 --> 00:01:37.270 align:start position:0%
+a b is not a palindrome if you reverse
+it<00:01:34.960><c> we</c><00:01:35.119><c> get</c><00:01:35.280><c> b</c><00:01:35.600><c> a</c><00:01:35.759><c> that's</c><00:01:36.000><c> not</c><00:01:36.159><c> the</c><00:01:36.320><c> same</c><00:01:36.560><c> string</c>
+
+00:01:37.270 --> 00:01:37.280 align:start position:0%
+it we get b a that's not the same string
+ 
+
+00:01:37.280 --> 00:01:39.429 align:start position:0%
+it we get b a that's not the same string
+if<00:01:37.439><c> you</c><00:01:37.600><c> take</c><00:01:37.920><c> this</c><00:01:38.400><c> and</c><00:01:38.560><c> you</c><00:01:38.720><c> reverse</c><00:01:39.200><c> it</c><00:01:39.280><c> you</c>
+
+00:01:39.429 --> 00:01:39.439 align:start position:0%
+if you take this and you reverse it you
+ 
+
+00:01:39.439 --> 00:01:40.310 align:start position:0%
+if you take this and you reverse it you
+get<00:01:39.600><c> b</c><00:01:40.000><c> a</c>
+
+00:01:40.310 --> 00:01:40.320 align:start position:0%
+get b a
+ 
+
+00:01:40.320 --> 00:01:43.429 align:start position:0%
+get b a
+a<00:01:40.720><c> that's</c><00:01:41.040><c> not</c><00:01:41.200><c> a</c><00:01:41.280><c> palindrome</c><00:01:42.399><c> so</c><00:01:42.720><c> the</c><00:01:42.960><c> brute</c>
+
+00:01:43.429 --> 00:01:43.439 align:start position:0%
+a that's not a palindrome so the brute
+ 
+
+00:01:43.439 --> 00:01:45.190 align:start position:0%
+a that's not a palindrome so the brute
+force<00:01:43.840><c> way</c><00:01:44.240><c> in</c><00:01:44.399><c> this</c><00:01:44.640><c> case</c>
+
+00:01:45.190 --> 00:01:45.200 align:start position:0%
+force way in this case
+ 
+
+00:01:45.200 --> 00:01:47.670 align:start position:0%
+force way in this case
+to<00:01:45.360><c> solve</c><00:01:45.680><c> this</c><00:01:45.840><c> problem</c><00:01:46.320><c> happens</c><00:01:46.720><c> to</c><00:01:46.960><c> also</c><00:01:47.360><c> be</c>
+
+00:01:47.670 --> 00:01:47.680 align:start position:0%
+to solve this problem happens to also be
+ 
+
+00:01:47.680 --> 00:01:49.510 align:start position:0%
+to solve this problem happens to also be
+the<00:01:47.920><c> main</c><00:01:48.159><c> way</c><00:01:48.320><c> to</c><00:01:48.399><c> solve</c><00:01:48.640><c> this</c><00:01:48.880><c> problem</c><00:01:49.200><c> which</c>
+
+00:01:49.510 --> 00:01:49.520 align:start position:0%
+the main way to solve this problem which
+ 
+
+00:01:49.520 --> 00:01:50.069 align:start position:0%
+the main way to solve this problem which
+is
+
+00:01:50.069 --> 00:01:50.079 align:start position:0%
+is
+ 
+
+00:01:50.079 --> 00:01:52.069 align:start position:0%
+is
+backtracking<00:01:51.119><c> so</c><00:01:51.280><c> we</c><00:01:51.439><c> are</c><00:01:51.600><c> going</c><00:01:51.680><c> to</c><00:01:51.759><c> use</c>
+
+00:01:52.069 --> 00:01:52.079 align:start position:0%
+backtracking so we are going to use
+ 
+
+00:01:52.079 --> 00:01:54.069 align:start position:0%
+backtracking so we are going to use
+backtracking<00:01:52.799><c> to</c><00:01:52.960><c> solve</c><00:01:53.280><c> this</c><00:01:53.439><c> problem</c><00:01:53.920><c> and</c>
+
+00:01:54.069 --> 00:01:54.079 align:start position:0%
+backtracking to solve this problem and
+ 
+
+00:01:54.079 --> 00:01:55.590 align:start position:0%
+backtracking to solve this problem and
+what<00:01:54.240><c> we're</c><00:01:54.399><c> going</c><00:01:54.479><c> to</c><00:01:54.560><c> do</c><00:01:54.799><c> is</c><00:01:55.040><c> create</c>
+
+00:01:55.590 --> 00:01:55.600 align:start position:0%
+what we're going to do is create
+ 
+
+00:01:55.600 --> 00:01:57.990 align:start position:0%
+what we're going to do is create
+every<00:01:56.159><c> single</c><00:01:56.799><c> possible</c><00:01:57.360><c> way</c><00:01:57.600><c> we</c><00:01:57.759><c> could</c>
+
+00:01:57.990 --> 00:01:58.000 align:start position:0%
+every single possible way we could
+ 
+
+00:01:58.000 --> 00:01:59.270 align:start position:0%
+every single possible way we could
+partition<00:01:58.640><c> this</c>
+
+00:01:59.270 --> 00:01:59.280 align:start position:0%
+partition this
+ 
+
+00:01:59.280 --> 00:02:02.310 align:start position:0%
+partition this
+and<00:01:59.439><c> then</c><00:01:59.759><c> check</c><00:02:00.159><c> if</c><00:02:00.640><c> those</c><00:02:00.960><c> partitions</c><00:02:01.920><c> form</c>
+
+00:02:02.310 --> 00:02:02.320 align:start position:0%
+and then check if those partitions form
+ 
+
+00:02:02.320 --> 00:02:04.230 align:start position:0%
+and then check if those partitions form
+palindromes<00:02:03.119><c> and</c><00:02:03.280><c> if</c><00:02:03.439><c> they</c><00:02:03.680><c> do</c><00:02:03.920><c> we</c><00:02:04.079><c> are</c><00:02:04.159><c> going</c>
+
+00:02:04.230 --> 00:02:04.240 align:start position:0%
+palindromes and if they do we are going
+ 
+
+00:02:04.240 --> 00:02:05.670 align:start position:0%
+palindromes and if they do we are going
+to<00:02:04.399><c> add</c><00:02:04.640><c> them</c><00:02:04.880><c> to</c><00:02:05.200><c> our</c>
+
+00:02:05.670 --> 00:02:05.680 align:start position:0%
+to add them to our
+ 
+
+00:02:05.680 --> 00:02:08.150 align:start position:0%
+to add them to our
+result<00:02:06.719><c> list</c><00:02:07.040><c> right</c><00:02:07.200><c> because</c><00:02:07.520><c> ultimately</c><00:02:08.000><c> we</c>
+
+00:02:08.150 --> 00:02:08.160 align:start position:0%
+result list right because ultimately we
+ 
+
+00:02:08.160 --> 00:02:08.790 align:start position:0%
+result list right because ultimately we
+want<00:02:08.399><c> to</c><00:02:08.479><c> re</c>
+
+00:02:08.790 --> 00:02:08.800 align:start position:0%
+want to re
+ 
+
+00:02:08.800 --> 00:02:11.029 align:start position:0%
+want to re
+we<00:02:08.879><c> want</c><00:02:09.039><c> a</c><00:02:09.200><c> list</c><00:02:09.759><c> that</c><00:02:09.920><c> has</c><00:02:10.239><c> every</c><00:02:10.479><c> single</c><00:02:10.800><c> way</c>
+
+00:02:11.029 --> 00:02:11.039 align:start position:0%
+we want a list that has every single way
+ 
+
+00:02:11.039 --> 00:02:12.309 align:start position:0%
+we want a list that has every single way
+to<00:02:11.200><c> partition</c><00:02:11.760><c> this</c>
+
+00:02:12.309 --> 00:02:12.319 align:start position:0%
+to partition this
+ 
+
+00:02:12.319 --> 00:02:15.190 align:start position:0%
+to partition this
+while<00:02:12.640><c> maintaining</c><00:02:13.280><c> palindromes</c><00:02:14.400><c> so</c><00:02:14.720><c> for</c><00:02:14.879><c> the</c>
+
+00:02:15.190 --> 00:02:15.200 align:start position:0%
+while maintaining palindromes so for the
+ 
+
+00:02:15.200 --> 00:02:15.670 align:start position:0%
+while maintaining palindromes so for the
+first
+
+00:02:15.670 --> 00:02:15.680 align:start position:0%
+first
+ 
+
+00:02:15.680 --> 00:02:18.790 align:start position:0%
+first
+partition<00:02:16.480><c> we</c><00:02:16.800><c> have</c><00:02:17.280><c> three</c><00:02:17.680><c> choices</c><00:02:18.400><c> do</c><00:02:18.560><c> you</c>
+
+00:02:18.790 --> 00:02:18.800 align:start position:0%
+partition we have three choices do you
+ 
+
+00:02:18.800 --> 00:02:19.510 align:start position:0%
+partition we have three choices do you
+see<00:02:19.040><c> what</c><00:02:19.200><c> they</c>
+
+00:02:19.510 --> 00:02:19.520 align:start position:0%
+see what they
+ 
+
+00:02:19.520 --> 00:02:22.550 align:start position:0%
+see what they
+are<00:02:19.760><c> if</c><00:02:19.920><c> we</c><00:02:20.080><c> want</c><00:02:20.480><c> a</c><00:02:20.800><c> first</c><00:02:21.200><c> partition</c><00:02:22.080><c> well</c>
+
+00:02:22.550 --> 00:02:22.560 align:start position:0%
+are if we want a first partition well
+ 
+
+00:02:22.560 --> 00:02:24.710 align:start position:0%
+are if we want a first partition well
+the<00:02:22.720><c> first</c><00:02:22.959><c> partition</c><00:02:23.440><c> can</c><00:02:23.599><c> either</c><00:02:23.840><c> be</c><00:02:24.160><c> a</c><00:02:24.480><c> by</c>
+
+00:02:24.710 --> 00:02:24.720 align:start position:0%
+the first partition can either be a by
+ 
+
+00:02:24.720 --> 00:02:25.990 align:start position:0%
+the first partition can either be a by
+itself<00:02:25.360><c> right</c>
+
+00:02:25.990 --> 00:02:26.000 align:start position:0%
+itself right
+ 
+
+00:02:26.000 --> 00:02:28.790 align:start position:0%
+itself right
+so<00:02:26.319><c> a</c><00:02:26.640><c> by</c><00:02:26.800><c> itself</c><00:02:27.280><c> which</c><00:02:27.520><c> is</c><00:02:27.680><c> if</c><00:02:27.840><c> we</c><00:02:28.000><c> just</c><00:02:28.400><c> took</c>
+
+00:02:28.790 --> 00:02:28.800 align:start position:0%
+so a by itself which is if we just took
+ 
+
+00:02:28.800 --> 00:02:29.589 align:start position:0%
+so a by itself which is if we just took
+the<00:02:29.120><c> first</c>
+
+00:02:29.589 --> 00:02:29.599 align:start position:0%
+the first
+ 
+
+00:02:29.599 --> 00:02:31.589 align:start position:0%
+the first
+character<00:02:30.400><c> and</c><00:02:30.560><c> said</c><00:02:30.800><c> that</c><00:02:30.959><c> that</c><00:02:31.120><c> was</c><00:02:31.360><c> one</c>
+
+00:02:31.589 --> 00:02:31.599 align:start position:0%
+character and said that that was one
+ 
+
+00:02:31.599 --> 00:02:33.430 align:start position:0%
+character and said that that was one
+partition<00:02:32.400><c> another</c>
+
+00:02:33.430 --> 00:02:33.440 align:start position:0%
+partition another
+ 
+
+00:02:33.440 --> 00:02:36.070 align:start position:0%
+partition another
+partition<00:02:34.160><c> is</c><00:02:34.800><c> double</c><00:02:35.200><c> a</c><00:02:35.440><c> right</c><00:02:35.599><c> if</c><00:02:35.760><c> we</c><00:02:35.840><c> just</c>
+
+00:02:36.070 --> 00:02:36.080 align:start position:0%
+partition is double a right if we just
+ 
+
+00:02:36.080 --> 00:02:37.670 align:start position:0%
+partition is double a right if we just
+took<00:02:36.239><c> the</c><00:02:36.480><c> first</c><00:02:36.800><c> two</c><00:02:37.040><c> characters</c>
+
+00:02:37.670 --> 00:02:37.680 align:start position:0%
+took the first two characters
+ 
+
+00:02:37.680 --> 00:02:40.869 align:start position:0%
+took the first two characters
+as<00:02:37.920><c> our</c><00:02:38.080><c> first</c><00:02:38.400><c> partition</c><00:02:39.360><c> or</c><00:02:39.920><c> the</c><00:02:40.160><c> last</c><00:02:40.480><c> one</c>
+
+00:02:40.869 --> 00:02:40.879 align:start position:0%
+as our first partition or the last one
+ 
+
+00:02:40.879 --> 00:02:43.030 align:start position:0%
+as our first partition or the last one
+obviously<00:02:41.519><c> if</c><00:02:41.599><c> we</c><00:02:41.760><c> just</c><00:02:41.920><c> took</c><00:02:42.160><c> the</c><00:02:42.319><c> entire</c>
+
+00:02:43.030 --> 00:02:43.040 align:start position:0%
+obviously if we just took the entire
+ 
+
+00:02:43.040 --> 00:02:45.430 align:start position:0%
+obviously if we just took the entire
+string<00:02:43.840><c> as</c><00:02:44.160><c> our</c><00:02:44.319><c> first</c><00:02:44.640><c> partition</c>
+
+00:02:45.430 --> 00:02:45.440 align:start position:0%
+string as our first partition
+ 
+
+00:02:45.440 --> 00:02:47.990 align:start position:0%
+string as our first partition
+now<00:02:45.840><c> we</c><00:02:46.080><c> will</c><00:02:46.480><c> check</c><00:02:46.959><c> is</c><00:02:47.120><c> this</c><00:02:47.360><c> a</c><00:02:47.440><c> palindrome</c>
+
+00:02:47.990 --> 00:02:48.000 align:start position:0%
+now we will check is this a palindrome
+ 
+
+00:02:48.000 --> 00:02:49.270 align:start position:0%
+now we will check is this a palindrome
+how<00:02:48.160><c> are</c><00:02:48.319><c> we</c><00:02:48.400><c> going</c><00:02:48.560><c> to</c><00:02:48.640><c> check</c><00:02:48.879><c> well</c><00:02:49.040><c> we</c><00:02:49.200><c> can</c>
+
+00:02:49.270 --> 00:02:49.280 align:start position:0%
+how are we going to check well we can
+ 
+
+00:02:49.280 --> 00:02:50.550 align:start position:0%
+how are we going to check well we can
+start<00:02:49.519><c> comparing</c><00:02:49.920><c> the</c><00:02:50.160><c> first</c>
+
+00:02:50.550 --> 00:02:50.560 align:start position:0%
+start comparing the first
+ 
+
+00:02:50.560 --> 00:02:52.150 align:start position:0%
+start comparing the first
+and<00:02:50.720><c> last</c><00:02:51.040><c> characters</c><00:02:51.519><c> right</c><00:02:51.760><c> and</c><00:02:51.840><c> we</c><00:02:52.000><c> see</c>
+
+00:02:52.150 --> 00:02:52.160 align:start position:0%
+and last characters right and we see
+ 
+
+00:02:52.160 --> 00:02:53.830 align:start position:0%
+and last characters right and we see
+that<00:02:52.319><c> well</c><00:02:52.480><c> they're</c><00:02:52.720><c> not</c><00:02:52.879><c> even</c><00:02:53.200><c> equal</c>
+
+00:02:53.830 --> 00:02:53.840 align:start position:0%
+that well they're not even equal
+ 
+
+00:02:53.840 --> 00:02:56.869 align:start position:0%
+that well they're not even equal
+right<00:02:54.480><c> so</c><00:02:54.720><c> this</c><00:02:55.040><c> is</c><00:02:55.200><c> not</c><00:02:55.440><c> a</c><00:02:55.599><c> palindrome</c><00:02:56.480><c> so</c>
+
+00:02:56.869 --> 00:02:56.879 align:start position:0%
+right so this is not a palindrome so
+ 
+
+00:02:56.879 --> 00:02:59.270 align:start position:0%
+right so this is not a palindrome so
+we<00:02:57.120><c> are</c><00:02:57.280><c> not</c><00:02:57.519><c> going</c><00:02:57.680><c> to</c><00:02:57.840><c> continue</c><00:02:58.560><c> on</c><00:02:58.879><c> this</c>
+
+00:02:59.270 --> 00:02:59.280 align:start position:0%
+we are not going to continue on this
+ 
+
+00:02:59.280 --> 00:02:59.990 align:start position:0%
+we are not going to continue on this
+branch
+
+00:02:59.990 --> 00:03:00.000 align:start position:0%
+branch
+ 
+
+00:03:00.000 --> 00:03:02.550 align:start position:0%
+branch
+or<00:03:00.239><c> on</c><00:03:00.400><c> this</c><00:03:00.720><c> path</c><00:03:01.040><c> for</c><00:03:01.200><c> our</c><00:03:01.360><c> depth</c><00:03:01.599><c> for</c><00:03:01.840><c> search</c>
+
+00:03:02.550 --> 00:03:02.560 align:start position:0%
+or on this path for our depth for search
+ 
+
+00:03:02.560 --> 00:03:04.229 align:start position:0%
+or on this path for our depth for search
+tree<00:03:02.959><c> but</c><00:03:03.120><c> we</c><00:03:03.360><c> know</c><00:03:03.599><c> that</c><00:03:03.840><c> this</c>
+
+00:03:04.229 --> 00:03:04.239 align:start position:0%
+tree but we know that this
+ 
+
+00:03:04.239 --> 00:03:07.270 align:start position:0%
+tree but we know that this
+by<00:03:04.400><c> itself</c><00:03:04.879><c> is</c><00:03:05.120><c> a</c><00:03:05.200><c> palindrome</c><00:03:05.840><c> right</c><00:03:06.159><c> so</c><00:03:06.879><c> this</c>
+
+00:03:07.270 --> 00:03:07.280 align:start position:0%
+by itself is a palindrome right so this
+ 
+
+00:03:07.280 --> 00:03:09.910 align:start position:0%
+by itself is a palindrome right so this
+is<00:03:07.440><c> going</c><00:03:07.680><c> to</c><00:03:07.920><c> be</c><00:03:08.319><c> our</c><00:03:08.720><c> first</c><00:03:09.120><c> partition</c><00:03:09.680><c> now</c>
+
+00:03:09.910 --> 00:03:09.920 align:start position:0%
+is going to be our first partition now
+ 
+
+00:03:09.920 --> 00:03:11.509 align:start position:0%
+is going to be our first partition now
+we're<00:03:10.080><c> going</c><00:03:10.159><c> to</c><00:03:10.319><c> take</c><00:03:10.560><c> the</c><00:03:10.720><c> remaining</c>
+
+00:03:11.509 --> 00:03:11.519 align:start position:0%
+we're going to take the remaining
+ 
+
+00:03:11.519 --> 00:03:12.309 align:start position:0%
+we're going to take the remaining
+characters
+
+00:03:12.309 --> 00:03:12.319 align:start position:0%
+characters
+ 
+
+00:03:12.319 --> 00:03:15.509 align:start position:0%
+characters
+a<00:03:12.800><c> and</c><00:03:13.040><c> b</c><00:03:13.440><c> and</c><00:03:13.599><c> try</c><00:03:13.760><c> to</c><00:03:13.920><c> partition</c><00:03:14.879><c> them</c>
+
+00:03:15.509 --> 00:03:15.519 align:start position:0%
+a and b and try to partition them
+ 
+
+00:03:15.519 --> 00:03:17.910 align:start position:0%
+a and b and try to partition them
+right<00:03:15.760><c> so</c><00:03:16.319><c> for</c><00:03:16.720><c> one</c><00:03:16.959><c> partition</c><00:03:17.519><c> of</c><00:03:17.680><c> those</c>
+
+00:03:17.910 --> 00:03:17.920 align:start position:0%
+right so for one partition of those
+ 
+
+00:03:17.920 --> 00:03:19.670 align:start position:0%
+right so for one partition of those
+remaining<00:03:18.319><c> characters</c><00:03:18.720><c> we</c><00:03:18.879><c> could</c><00:03:19.040><c> get</c><00:03:19.280><c> a</c>
+
+00:03:19.670 --> 00:03:19.680 align:start position:0%
+remaining characters we could get a
+ 
+
+00:03:19.680 --> 00:03:22.550 align:start position:0%
+remaining characters we could get a
+single<00:03:20.319><c> a</c><00:03:20.959><c> if</c><00:03:21.040><c> we</c><00:03:21.200><c> took</c><00:03:21.440><c> this</c><00:03:21.680><c> first</c><00:03:22.080><c> one</c>
+
+00:03:22.550 --> 00:03:22.560 align:start position:0%
+single a if we took this first one
+ 
+
+00:03:22.560 --> 00:03:24.070 align:start position:0%
+single a if we took this first one
+another<00:03:22.959><c> partition</c><00:03:23.440><c> we</c><00:03:23.599><c> could</c><00:03:23.760><c> get</c>
+
+00:03:24.070 --> 00:03:24.080 align:start position:0%
+another partition we could get
+ 
+
+00:03:24.080 --> 00:03:27.270 align:start position:0%
+another partition we could get
+is<00:03:24.560><c> a</c><00:03:25.440><c> b</c><00:03:26.319><c> if</c><00:03:26.560><c> we</c><00:03:26.720><c> took</c>
+
+00:03:27.270 --> 00:03:27.280 align:start position:0%
+is a b if we took
+ 
+
+00:03:27.280 --> 00:03:29.509 align:start position:0%
+is a b if we took
+both<00:03:27.599><c> of</c><00:03:27.760><c> these</c><00:03:28.000><c> characters</c><00:03:28.799><c> but</c><00:03:29.040><c> we</c><00:03:29.200><c> look</c><00:03:29.440><c> at</c>
+
+00:03:29.509 --> 00:03:29.519 align:start position:0%
+both of these characters but we look at
+ 
+
+00:03:29.519 --> 00:03:31.030 align:start position:0%
+both of these characters but we look at
+the<00:03:29.599><c> first</c><00:03:29.920><c> character</c><00:03:30.319><c> and</c><00:03:30.400><c> last</c><00:03:30.640><c> character</c>
+
+00:03:31.030 --> 00:03:31.040 align:start position:0%
+the first character and last character
+ 
+
+00:03:31.040 --> 00:03:32.149 align:start position:0%
+the first character and last character
+this<00:03:31.200><c> is</c><00:03:31.280><c> not</c><00:03:31.440><c> a</c><00:03:31.519><c> palindrome</c>
+
+00:03:32.149 --> 00:03:32.159 align:start position:0%
+this is not a palindrome
+ 
+
+00:03:32.159 --> 00:03:34.789 align:start position:0%
+this is not a palindrome
+this<00:03:32.480><c> is</c><00:03:32.640><c> a</c><00:03:32.799><c> palindrome</c><00:03:33.680><c> but</c><00:03:33.920><c> this</c><00:03:34.239><c> is</c><00:03:34.480><c> not</c><00:03:34.720><c> a</c>
+
+00:03:34.789 --> 00:03:34.799 align:start position:0%
+this is a palindrome but this is not a
+ 
+
+00:03:34.799 --> 00:03:35.670 align:start position:0%
+this is a palindrome but this is not a
+palindrome
+
+00:03:35.670 --> 00:03:35.680 align:start position:0%
+palindrome
+ 
+
+00:03:35.680 --> 00:03:37.430 align:start position:0%
+palindrome
+so<00:03:35.840><c> we</c><00:03:35.920><c> don't</c><00:03:36.159><c> have</c><00:03:36.239><c> to</c><00:03:36.400><c> continue</c><00:03:36.959><c> on</c><00:03:37.120><c> this</c>
+
+00:03:37.430 --> 00:03:37.440 align:start position:0%
+so we don't have to continue on this
+ 
+
+00:03:37.440 --> 00:03:38.710 align:start position:0%
+so we don't have to continue on this
+path<00:03:38.000><c> and</c><00:03:38.319><c> from</c>
+
+00:03:38.710 --> 00:03:38.720 align:start position:0%
+path and from
+ 
+
+00:03:38.720 --> 00:03:40.710 align:start position:0%
+path and from
+here<00:03:39.040><c> we</c><00:03:39.200><c> know</c><00:03:39.440><c> we</c><00:03:39.599><c> already</c><00:03:40.000><c> took</c><00:03:40.239><c> the</c><00:03:40.400><c> first</c>
+
+00:03:40.710 --> 00:03:40.720 align:start position:0%
+here we know we already took the first
+ 
+
+00:03:40.720 --> 00:03:42.789 align:start position:0%
+here we know we already took the first
+two<00:03:40.879><c> characters</c><00:03:41.360><c> as</c><00:03:41.519><c> our</c><00:03:41.599><c> first</c><00:03:41.920><c> partition</c>
+
+00:03:42.789 --> 00:03:42.799 align:start position:0%
+two characters as our first partition
+ 
+
+00:03:42.799 --> 00:03:45.030 align:start position:0%
+two characters as our first partition
+so<00:03:43.280><c> we</c><00:03:43.440><c> only</c><00:03:43.599><c> have</c><00:03:43.840><c> one</c><00:03:44.159><c> choice</c><00:03:44.560><c> for</c><00:03:44.720><c> our</c>
+
+00:03:45.030 --> 00:03:45.040 align:start position:0%
+so we only have one choice for our
+ 
+
+00:03:45.040 --> 00:03:46.070 align:start position:0%
+so we only have one choice for our
+second<00:03:45.360><c> partition</c>
+
+00:03:46.070 --> 00:03:46.080 align:start position:0%
+second partition
+ 
+
+00:03:46.080 --> 00:03:48.550 align:start position:0%
+second partition
+and<00:03:46.159><c> that's</c><00:03:46.480><c> just</c><00:03:46.799><c> the</c><00:03:46.959><c> character</c><00:03:47.519><c> b</c><00:03:48.239><c> and</c><00:03:48.400><c> we</c>
+
+00:03:48.550 --> 00:03:48.560 align:start position:0%
+and that's just the character b and we
+ 
+
+00:03:48.560 --> 00:03:50.390 align:start position:0%
+and that's just the character b and we
+know<00:03:48.799><c> a</c><00:03:48.959><c> single</c><00:03:49.280><c> character</c><00:03:49.680><c> by</c><00:03:49.840><c> itself</c>
+
+00:03:50.390 --> 00:03:50.400 align:start position:0%
+know a single character by itself
+ 
+
+00:03:50.400 --> 00:03:53.350 align:start position:0%
+know a single character by itself
+does<00:03:50.959><c> form</c><00:03:51.360><c> a</c><00:03:51.519><c> partition</c><00:03:52.319><c> and</c><00:03:52.560><c> we</c><00:03:52.720><c> also</c><00:03:53.120><c> know</c>
+
+00:03:53.350 --> 00:03:53.360 align:start position:0%
+does form a partition and we also know
+ 
+
+00:03:53.360 --> 00:03:55.030 align:start position:0%
+does form a partition and we also know
+that<00:03:53.519><c> we</c><00:03:53.680><c> have</c><00:03:53.920><c> no</c><00:03:54.239><c> more</c><00:03:54.480><c> remaining</c>
+
+00:03:55.030 --> 00:03:55.040 align:start position:0%
+that we have no more remaining
+ 
+
+00:03:55.040 --> 00:03:56.550 align:start position:0%
+that we have no more remaining
+characters<00:03:55.439><c> right</c><00:03:55.599><c> we</c><00:03:55.760><c> already</c><00:03:56.159><c> took</c><00:03:56.400><c> the</c>
+
+00:03:56.550 --> 00:03:56.560 align:start position:0%
+characters right we already took the
+ 
+
+00:03:56.560 --> 00:03:58.070 align:start position:0%
+characters right we already took the
+first<00:03:56.879><c> three</c><00:03:57.200><c> characters</c>
+
+00:03:58.070 --> 00:03:58.080 align:start position:0%
+first three characters
+ 
+
+00:03:58.080 --> 00:04:00.949 align:start position:0%
+first three characters
+so<00:03:58.239><c> what</c><00:03:58.560><c> this</c><00:03:58.799><c> tells</c><00:03:59.200><c> us</c><00:03:59.519><c> is</c><00:03:59.840><c> this</c><00:04:00.159><c> is</c><00:04:00.480><c> one</c>
+
+00:04:00.949 --> 00:04:00.959 align:start position:0%
+so what this tells us is this is one
+ 
+
+00:04:00.959 --> 00:04:03.190 align:start position:0%
+so what this tells us is this is one
+possible<00:04:01.599><c> way</c><00:04:01.920><c> to</c><00:04:02.159><c> partition</c>
+
+00:04:03.190 --> 00:04:03.200 align:start position:0%
+possible way to partition
+ 
+
+00:04:03.200 --> 00:04:05.190 align:start position:0%
+possible way to partition
+to<00:04:03.360><c> make</c><00:04:03.519><c> sure</c><00:04:03.680><c> that</c><00:04:04.000><c> all</c><00:04:04.239><c> the</c><00:04:04.400><c> substrings</c><00:04:05.040><c> are</c>
+
+00:04:05.190 --> 00:04:05.200 align:start position:0%
+to make sure that all the substrings are
+ 
+
+00:04:05.200 --> 00:04:06.550 align:start position:0%
+to make sure that all the substrings are
+palindromes<00:04:05.760><c> right</c><00:04:05.920><c> both</c><00:04:06.239><c> of</c><00:04:06.319><c> these</c>
+
+00:04:06.550 --> 00:04:06.560 align:start position:0%
+palindromes right both of these
+ 
+
+00:04:06.560 --> 00:04:08.390 align:start position:0%
+palindromes right both of these
+substrings<00:04:07.120><c> are</c><00:04:07.280><c> palindromes</c><00:04:07.840><c> so</c><00:04:08.000><c> this</c><00:04:08.159><c> is</c>
+
+00:04:08.390 --> 00:04:08.400 align:start position:0%
+substrings are palindromes so this is
+ 
+
+00:04:08.400 --> 00:04:11.830 align:start position:0%
+substrings are palindromes so this is
+one<00:04:08.799><c> possible</c><00:04:09.920><c> uh</c><00:04:10.159><c> solution</c><00:04:10.879><c> so</c><00:04:11.120><c> now</c><00:04:11.280><c> the</c><00:04:11.519><c> only</c>
+
+00:04:11.830 --> 00:04:11.840 align:start position:0%
+one possible uh solution so now the only
+ 
+
+00:04:11.840 --> 00:04:13.670 align:start position:0%
+one possible uh solution so now the only
+path<00:04:12.080><c> for</c><00:04:12.239><c> us</c><00:04:12.400><c> to</c><00:04:12.480><c> continue</c><00:04:12.959><c> we</c><00:04:13.040><c> can't</c><00:04:13.280><c> do</c><00:04:13.439><c> this</c>
+
+00:04:13.670 --> 00:04:13.680 align:start position:0%
+path for us to continue we can't do this
+ 
+
+00:04:13.680 --> 00:04:14.710 align:start position:0%
+path for us to continue we can't do this
+and<00:04:13.760><c> we</c><00:04:13.920><c> can't</c><00:04:14.080><c> do</c><00:04:14.319><c> this</c>
+
+00:04:14.710 --> 00:04:14.720 align:start position:0%
+and we can't do this
+ 
+
+00:04:14.720 --> 00:04:16.550 align:start position:0%
+and we can't do this
+and<00:04:14.959><c> we</c><00:04:15.120><c> cannot</c><00:04:15.680><c> do</c><00:04:15.840><c> this</c><00:04:16.000><c> anymore</c><00:04:16.320><c> we</c><00:04:16.479><c> don't</c>
+
+00:04:16.550 --> 00:04:16.560 align:start position:0%
+and we cannot do this anymore we don't
+ 
+
+00:04:16.560 --> 00:04:18.150 align:start position:0%
+and we cannot do this anymore we don't
+have<00:04:16.720><c> any</c><00:04:17.120><c> more</c><00:04:17.359><c> characters</c>
+
+00:04:18.150 --> 00:04:18.160 align:start position:0%
+have any more characters
+ 
+
+00:04:18.160 --> 00:04:20.229 align:start position:0%
+have any more characters
+so<00:04:18.320><c> we</c><00:04:18.479><c> can</c><00:04:18.639><c> continue</c><00:04:19.120><c> this</c><00:04:19.440><c> one</c><00:04:19.840><c> how</c><00:04:20.000><c> many</c>
+
+00:04:20.229 --> 00:04:20.239 align:start position:0%
+so we can continue this one how many
+ 
+
+00:04:20.239 --> 00:04:21.909 align:start position:0%
+so we can continue this one how many
+choices<00:04:20.639><c> do</c><00:04:20.799><c> we</c><00:04:20.880><c> have</c><00:04:21.120><c> well</c><00:04:21.280><c> we</c><00:04:21.519><c> took</c><00:04:21.680><c> the</c>
+
+00:04:21.909 --> 00:04:21.919 align:start position:0%
+choices do we have well we took the
+ 
+
+00:04:21.919 --> 00:04:23.270 align:start position:0%
+choices do we have well we took the
+first<00:04:22.320><c> two</c><00:04:22.560><c> a's</c>
+
+00:04:23.270 --> 00:04:23.280 align:start position:0%
+first two a's
+ 
+
+00:04:23.280 --> 00:04:25.749 align:start position:0%
+first two a's
+right<00:04:23.919><c> so</c><00:04:24.080><c> now</c><00:04:24.240><c> we</c><00:04:24.400><c> only</c><00:04:24.639><c> have</c><00:04:24.880><c> one</c><00:04:25.199><c> choice</c><00:04:25.600><c> and</c>
+
+00:04:25.749 --> 00:04:25.759 align:start position:0%
+right so now we only have one choice and
+ 
+
+00:04:25.759 --> 00:04:27.430 align:start position:0%
+right so now we only have one choice and
+that's<00:04:26.000><c> going</c><00:04:26.160><c> to</c><00:04:26.240><c> be</c><00:04:26.479><c> the</c><00:04:26.800><c> b</c>
+
+00:04:27.430 --> 00:04:27.440 align:start position:0%
+that's going to be the b
+ 
+
+00:04:27.440 --> 00:04:30.550 align:start position:0%
+that's going to be the b
+so<00:04:27.759><c> we</c><00:04:28.560><c> for</c><00:04:28.720><c> our</c><00:04:28.960><c> third</c><00:04:29.360><c> partition</c><00:04:30.160><c> in</c>
+
+00:04:30.550 --> 00:04:30.560 align:start position:0%
+so we for our third partition in
+ 
+
+00:04:30.560 --> 00:04:33.749 align:start position:0%
+so we for our third partition in
+this<00:04:30.960><c> line</c><00:04:31.440><c> is</c><00:04:31.600><c> going</c><00:04:31.759><c> to</c><00:04:31.840><c> be</c><00:04:32.560><c> b</c><00:04:33.120><c> so</c><00:04:33.360><c> this</c><00:04:33.520><c> one</c>
+
+00:04:33.749 --> 00:04:33.759 align:start position:0%
+this line is going to be b so this one
+ 
+
+00:04:33.759 --> 00:04:34.070 align:start position:0%
+this line is going to be b so this one
+had
+
+00:04:34.070 --> 00:04:34.080 align:start position:0%
+had
+ 
+
+00:04:34.080 --> 00:04:37.430 align:start position:0%
+had
+two<00:04:34.800><c> uh</c><00:04:35.199><c> partitions</c><00:04:36.080><c> right</c><00:04:36.400><c> two</c><00:04:36.639><c> strings</c>
+
+00:04:37.430 --> 00:04:37.440 align:start position:0%
+two uh partitions right two strings
+ 
+
+00:04:37.440 --> 00:04:40.150 align:start position:0%
+two uh partitions right two strings
+this<00:04:37.680><c> one</c><00:04:37.840><c> has</c><00:04:38.160><c> three</c><00:04:39.120><c> and</c><00:04:39.440><c> all</c><00:04:39.680><c> of</c><00:04:39.840><c> them</c>
+
+00:04:40.150 --> 00:04:40.160 align:start position:0%
+this one has three and all of them
+ 
+
+00:04:40.160 --> 00:04:41.990 align:start position:0%
+this one has three and all of them
+happen<00:04:40.479><c> to</c><00:04:40.639><c> be</c><00:04:40.800><c> palindrome</c><00:04:41.360><c> so</c><00:04:41.600><c> this</c><00:04:41.759><c> is</c>
+
+00:04:41.990 --> 00:04:42.000 align:start position:0%
+happen to be palindrome so this is
+ 
+
+00:04:42.000 --> 00:04:44.550 align:start position:0%
+happen to be palindrome so this is
+also<00:04:42.400><c> a</c><00:04:42.560><c> possible</c><00:04:43.040><c> solution</c><00:04:43.919><c> so</c><00:04:44.160><c> that's</c><00:04:44.400><c> how</c>
+
+00:04:44.550 --> 00:04:44.560 align:start position:0%
+also a possible solution so that's how
+ 
+
+00:04:44.560 --> 00:04:46.310 align:start position:0%
+also a possible solution so that's how
+you<00:04:44.800><c> basically</c><00:04:45.280><c> solve</c><00:04:45.520><c> this</c><00:04:45.759><c> problem</c>
+
+00:04:46.310 --> 00:04:46.320 align:start position:0%
+you basically solve this problem
+ 
+
+00:04:46.320 --> 00:04:49.430 align:start position:0%
+you basically solve this problem
+with<00:04:46.800><c> backtracking</c><00:04:47.759><c> it's</c><00:04:48.080><c> not</c><00:04:48.400><c> super</c>
+
+00:04:49.430 --> 00:04:49.440 align:start position:0%
+with backtracking it's not super
+ 
+
+00:04:49.440 --> 00:04:51.670 align:start position:0%
+with backtracking it's not super
+efficient<00:04:50.080><c> right</c><00:04:50.400><c> it's</c><00:04:50.639><c> going</c><00:04:50.800><c> to</c><00:04:50.960><c> be</c><00:04:51.280><c> at</c>
+
+00:04:51.670 --> 00:04:51.680 align:start position:0%
+efficient right it's going to be at
+ 
+
+00:04:51.680 --> 00:04:53.670 align:start position:0%
+efficient right it's going to be at
+least<00:04:52.320><c> 2</c><00:04:52.479><c> to</c><00:04:52.639><c> the</c><00:04:52.800><c> power</c><00:04:53.199><c> of</c>
+
+00:04:53.670 --> 00:04:53.680 align:start position:0%
+least 2 to the power of
+ 
+
+00:04:53.680 --> 00:04:55.990 align:start position:0%
+least 2 to the power of
+n<00:04:53.919><c> because</c><00:04:54.320><c> we're</c><00:04:54.560><c> brute</c><00:04:54.800><c> forcing</c><00:04:55.280><c> it</c><00:04:55.600><c> but</c><00:04:55.759><c> now</c>
+
+00:04:55.990 --> 00:04:56.000 align:start position:0%
+n because we're brute forcing it but now
+ 
+
+00:04:56.000 --> 00:04:57.510 align:start position:0%
+n because we're brute forcing it but now
+let<00:04:56.160><c> me</c><00:04:56.320><c> show</c><00:04:56.479><c> you</c><00:04:56.639><c> the</c><00:04:56.880><c> code</c>
+
+00:04:57.510 --> 00:04:57.520 align:start position:0%
+let me show you the code
+ 
+
+00:04:57.520 --> 00:04:59.350 align:start position:0%
+let me show you the code
+so<00:04:57.759><c> let's</c><00:04:57.919><c> have</c><00:04:58.160><c> our</c><00:04:58.400><c> result</c><00:04:58.800><c> this</c><00:04:59.040><c> is</c><00:04:59.120><c> what's</c>
+
+00:04:59.350 --> 00:04:59.360 align:start position:0%
+so let's have our result this is what's
+ 
+
+00:04:59.360 --> 00:05:01.350 align:start position:0%
+so let's have our result this is what's
+going<00:04:59.440><c> to</c><00:04:59.680><c> store</c><00:05:00.240><c> all</c><00:05:00.479><c> of</c><00:05:00.560><c> the</c><00:05:00.720><c> partitions</c>
+
+00:05:01.350 --> 00:05:01.360 align:start position:0%
+going to store all of the partitions
+ 
+
+00:05:01.360 --> 00:05:02.070 align:start position:0%
+going to store all of the partitions
+that<00:05:01.520><c> we</c>
+
+00:05:02.070 --> 00:05:02.080 align:start position:0%
+that we
+ 
+
+00:05:02.080 --> 00:05:04.469 align:start position:0%
+that we
+create<00:05:02.560><c> all</c><00:05:02.720><c> the</c><00:05:02.880><c> possible</c><00:05:03.280><c> partitions</c><00:05:04.160><c> let's</c>
+
+00:05:04.469 --> 00:05:04.479 align:start position:0%
+create all the possible partitions let's
+ 
+
+00:05:04.479 --> 00:05:05.350 align:start position:0%
+create all the possible partitions let's
+also<00:05:04.960><c> have</c>
+
+00:05:05.350 --> 00:05:05.360 align:start position:0%
+also have
+ 
+
+00:05:05.360 --> 00:05:08.150 align:start position:0%
+also have
+a<00:05:05.680><c> variable</c><00:05:06.560><c> called</c><00:05:07.199><c> part</c><00:05:07.440><c> this</c><00:05:07.680><c> is</c><00:05:07.919><c> this</c>
+
+00:05:08.150 --> 00:05:08.160 align:start position:0%
+a variable called part this is this
+ 
+
+00:05:08.160 --> 00:05:09.749 align:start position:0%
+a variable called part this is this
+basically<00:05:08.560><c> stands</c><00:05:08.800><c> for</c><00:05:08.960><c> partitions</c><00:05:09.520><c> this</c><00:05:09.600><c> is</c>
+
+00:05:09.749 --> 00:05:09.759 align:start position:0%
+basically stands for partitions this is
+ 
+
+00:05:09.759 --> 00:05:10.070 align:start position:0%
+basically stands for partitions this is
+our
+
+00:05:10.070 --> 00:05:10.080 align:start position:0%
+our
+ 
+
+00:05:10.080 --> 00:05:11.909 align:start position:0%
+our
+current<00:05:10.560><c> partition</c><00:05:11.199><c> right</c><00:05:11.440><c> so</c><00:05:11.680><c> if</c><00:05:11.840><c> our</c>
+
+00:05:11.909 --> 00:05:11.919 align:start position:0%
+current partition right so if our
+ 
+
+00:05:11.919 --> 00:05:13.909 align:start position:0%
+current partition right so if our
+current<00:05:12.160><c> partition</c><00:05:12.639><c> happens</c><00:05:12.880><c> to</c><00:05:13.039><c> be</c>
+
+00:05:13.909 --> 00:05:13.919 align:start position:0%
+current partition happens to be
+ 
+
+00:05:13.919 --> 00:05:15.830 align:start position:0%
+current partition happens to be
+this<00:05:14.639><c> this</c><00:05:14.880><c> is</c><00:05:14.960><c> just</c><00:05:15.120><c> going</c><00:05:15.199><c> to</c><00:05:15.280><c> be</c><00:05:15.440><c> the</c><00:05:15.520><c> single</c>
+
+00:05:15.830 --> 00:05:15.840 align:start position:0%
+this this is just going to be the single
+ 
+
+00:05:15.840 --> 00:05:17.670 align:start position:0%
+this this is just going to be the single
+partition<00:05:16.320><c> the</c><00:05:16.479><c> result</c><00:05:16.880><c> is</c><00:05:16.960><c> going</c><00:05:17.120><c> to</c><00:05:17.199><c> be</c><00:05:17.360><c> what</c>
+
+00:05:17.670 --> 00:05:17.680 align:start position:0%
+partition the result is going to be what
+ 
+
+00:05:17.680 --> 00:05:19.990 align:start position:0%
+partition the result is going to be what
+stores<00:05:18.080><c> the</c><00:05:18.240><c> partitions</c><00:05:18.960><c> right</c><00:05:19.199><c> so</c><00:05:19.360><c> this</c><00:05:19.520><c> will</c>
+
+00:05:19.990 --> 00:05:20.000 align:start position:0%
+stores the partitions right so this will
+ 
+
+00:05:20.000 --> 00:05:22.070 align:start position:0%
+stores the partitions right so this will
+possibly<00:05:20.560><c> have</c><00:05:21.280><c> you</c><00:05:21.440><c> know</c><00:05:21.600><c> multiple</c>
+
+00:05:22.070 --> 00:05:22.080 align:start position:0%
+possibly have you know multiple
+ 
+
+00:05:22.080 --> 00:05:23.350 align:start position:0%
+possibly have you know multiple
+partitions<00:05:22.639><c> in</c><00:05:22.880><c> it</c>
+
+00:05:23.350 --> 00:05:23.360 align:start position:0%
+partitions in it
+ 
+
+00:05:23.360 --> 00:05:25.749 align:start position:0%
+partitions in it
+and<00:05:23.680><c> now</c><00:05:24.080><c> i'm</c><00:05:24.240><c> going</c><00:05:24.479><c> to</c><00:05:24.720><c> create</c><00:05:25.039><c> a</c><00:05:25.280><c> nested</c>
+
+00:05:25.749 --> 00:05:25.759 align:start position:0%
+and now i'm going to create a nested
+ 
+
+00:05:25.759 --> 00:05:27.270 align:start position:0%
+and now i'm going to create a nested
+function<00:05:26.240><c> depth</c><00:05:26.479><c> first</c><00:05:26.639><c> search</c><00:05:26.960><c> for</c>
+
+00:05:27.270 --> 00:05:27.280 align:start position:0%
+function depth first search for
+ 
+
+00:05:27.280 --> 00:05:28.950 align:start position:0%
+function depth first search for
+our<00:05:27.440><c> br</c><00:05:27.759><c> our</c><00:05:27.919><c> backtracking</c><00:05:28.560><c> the</c><00:05:28.639><c> only</c><00:05:28.800><c> thing</c>
+
+00:05:28.950 --> 00:05:28.960 align:start position:0%
+our br our backtracking the only thing
+ 
+
+00:05:28.960 --> 00:05:31.430 align:start position:0%
+our br our backtracking the only thing
+i'm<00:05:29.120><c> going</c><00:05:29.199><c> to</c><00:05:29.280><c> pass</c><00:05:29.600><c> into</c><00:05:29.840><c> it</c><00:05:30.000><c> is</c><00:05:30.240><c> i</c><00:05:30.560><c> the</c><00:05:30.880><c> index</c>
+
+00:05:31.430 --> 00:05:31.440 align:start position:0%
+i'm going to pass into it is i the index
+ 
+
+00:05:31.440 --> 00:05:32.469 align:start position:0%
+i'm going to pass into it is i the index
+of<00:05:31.520><c> the</c><00:05:31.759><c> character</c>
+
+00:05:32.469 --> 00:05:32.479 align:start position:0%
+of the character
+ 
+
+00:05:32.479 --> 00:05:35.029 align:start position:0%
+of the character
+we're<00:05:32.720><c> currently</c><00:05:33.440><c> at</c><00:05:34.080><c> and</c><00:05:34.240><c> so</c><00:05:34.479><c> since</c><00:05:34.800><c> this</c>
+
+00:05:35.029 --> 00:05:35.039 align:start position:0%
+we're currently at and so since this
+ 
+
+00:05:35.039 --> 00:05:35.590 align:start position:0%
+we're currently at and so since this
+function<00:05:35.360><c> is</c>
+
+00:05:35.590 --> 00:05:35.600 align:start position:0%
+function is
+ 
+
+00:05:35.600 --> 00:05:37.749 align:start position:0%
+function is
+nested<00:05:36.000><c> inside</c><00:05:36.400><c> this</c><00:05:36.560><c> function</c><00:05:37.280><c> these</c><00:05:37.520><c> two</c>
+
+00:05:37.749 --> 00:05:37.759 align:start position:0%
+nested inside this function these two
+ 
+
+00:05:37.759 --> 00:05:39.029 align:start position:0%
+nested inside this function these two
+variables<00:05:38.320><c> as</c><00:05:38.479><c> well</c><00:05:38.720><c> as</c>
+
+00:05:39.029 --> 00:05:39.039 align:start position:0%
+variables as well as
+ 
+
+00:05:39.039 --> 00:05:41.590 align:start position:0%
+variables as well as
+s<00:05:39.360><c> the</c><00:05:39.520><c> string</c><00:05:40.240><c> are</c><00:05:40.400><c> going</c><00:05:40.560><c> to</c><00:05:40.720><c> be</c><00:05:40.960><c> accessible</c>
+
+00:05:41.590 --> 00:05:41.600 align:start position:0%
+s the string are going to be accessible
+ 
+
+00:05:41.600 --> 00:05:43.670 align:start position:0%
+s the string are going to be accessible
+in<00:05:41.680><c> this</c><00:05:41.919><c> even</c><00:05:42.160><c> if</c><00:05:42.240><c> we</c><00:05:42.400><c> don't</c><00:05:42.639><c> pass</c><00:05:42.960><c> them</c><00:05:43.280><c> into</c>
+
+00:05:43.670 --> 00:05:43.680 align:start position:0%
+in this even if we don't pass them into
+ 
+
+00:05:43.680 --> 00:05:44.230 align:start position:0%
+in this even if we don't pass them into
+it
+
+00:05:44.230 --> 00:05:44.240 align:start position:0%
+it
+ 
+
+00:05:44.240 --> 00:05:46.469 align:start position:0%
+it
+so<00:05:44.880><c> since</c><00:05:45.199><c> this</c><00:05:45.360><c> is</c><00:05:45.440><c> a</c><00:05:45.520><c> recursive</c><00:05:46.080><c> function</c>
+
+00:05:46.469 --> 00:05:46.479 align:start position:0%
+so since this is a recursive function
+ 
+
+00:05:46.479 --> 00:05:48.230 align:start position:0%
+so since this is a recursive function
+first<00:05:46.720><c> thing</c><00:05:46.880><c> we</c><00:05:47.039><c> check</c><00:05:47.280><c> is</c><00:05:47.440><c> the</c><00:05:47.600><c> base</c><00:05:47.840><c> case</c><00:05:48.080><c> so</c>
+
+00:05:48.230 --> 00:05:48.240 align:start position:0%
+first thing we check is the base case so
+ 
+
+00:05:48.240 --> 00:05:48.790 align:start position:0%
+first thing we check is the base case so
+if<00:05:48.479><c> i</c>
+
+00:05:48.790 --> 00:05:48.800 align:start position:0%
+if i
+ 
+
+00:05:48.800 --> 00:05:51.350 align:start position:0%
+if i
+happens<00:05:49.199><c> to</c><00:05:49.440><c> be</c><00:05:50.000><c> out</c><00:05:50.240><c> of</c><00:05:50.479><c> bound</c><00:05:50.880><c> so</c><00:05:51.039><c> if</c><00:05:51.199><c> it's</c>
+
+00:05:51.350 --> 00:05:51.360 align:start position:0%
+happens to be out of bound so if it's
+ 
+
+00:05:51.360 --> 00:05:53.029 align:start position:0%
+happens to be out of bound so if it's
+greater<00:05:51.680><c> than</c><00:05:51.840><c> or</c><00:05:52.000><c> equal</c><00:05:52.240><c> to</c><00:05:52.400><c> the</c><00:05:52.639><c> length</c><00:05:52.960><c> of</c>
+
+00:05:53.029 --> 00:05:53.039 align:start position:0%
+greater than or equal to the length of
+ 
+
+00:05:53.039 --> 00:05:53.990 align:start position:0%
+greater than or equal to the length of
+the<00:05:53.199><c> input</c><00:05:53.520><c> string</c>
+
+00:05:53.990 --> 00:05:54.000 align:start position:0%
+the input string
+ 
+
+00:05:54.000 --> 00:05:56.629 align:start position:0%
+the input string
+s<00:05:54.479><c> what</c><00:05:54.639><c> are</c><00:05:54.720><c> we</c><00:05:54.880><c> going</c><00:05:54.960><c> to</c><00:05:55.120><c> do</c><00:05:55.360><c> well</c><00:05:56.240><c> in</c><00:05:56.400><c> that</c>
+
+00:05:56.629 --> 00:05:56.639 align:start position:0%
+s what are we going to do well in that
+ 
+
+00:05:56.639 --> 00:05:57.270 align:start position:0%
+s what are we going to do well in that
+case
+
+00:05:57.270 --> 00:05:57.280 align:start position:0%
+case
+ 
+
+00:05:57.280 --> 00:05:58.950 align:start position:0%
+case
+the<00:05:57.440><c> same</c><00:05:57.759><c> thing</c><00:05:58.000><c> that</c><00:05:58.080><c> we</c><00:05:58.240><c> did</c><00:05:58.479><c> over</c><00:05:58.720><c> here</c>
+
+00:05:58.950 --> 00:05:58.960 align:start position:0%
+the same thing that we did over here
+ 
+
+00:05:58.960 --> 00:06:00.309 align:start position:0%
+the same thing that we did over here
+right<00:05:59.199><c> we</c><00:05:59.360><c> knew</c><00:05:59.600><c> that</c><00:05:59.759><c> we</c><00:06:00.000><c> had</c>
+
+00:06:00.309 --> 00:06:00.319 align:start position:0%
+right we knew that we had
+ 
+
+00:06:00.319 --> 00:06:03.430 align:start position:0%
+right we knew that we had
+our<00:06:00.639><c> a</c><00:06:00.800><c> valid</c><00:06:01.840><c> partition</c><00:06:02.400><c> and</c><00:06:02.560><c> we</c><00:06:02.720><c> had</c><00:06:02.960><c> no</c><00:06:03.199><c> more</c>
+
+00:06:03.430 --> 00:06:03.440 align:start position:0%
+our a valid partition and we had no more
+ 
+
+00:06:03.440 --> 00:06:05.350 align:start position:0%
+our a valid partition and we had no more
+characters<00:06:03.919><c> to</c><00:06:04.160><c> add</c><00:06:04.479><c> so</c><00:06:04.720><c> in</c><00:06:04.800><c> that</c><00:06:04.960><c> case</c><00:06:05.199><c> we</c>
+
+00:06:05.350 --> 00:06:05.360 align:start position:0%
+characters to add so in that case we
+ 
+
+00:06:05.360 --> 00:06:05.990 align:start position:0%
+characters to add so in that case we
+know<00:06:05.520><c> that</c><00:06:05.680><c> this</c>
+
+00:06:05.990 --> 00:06:06.000 align:start position:0%
+know that this
+ 
+
+00:06:06.000 --> 00:06:08.710 align:start position:0%
+know that this
+is<00:06:06.160><c> a</c><00:06:06.319><c> possible</c><00:06:07.120><c> solution</c><00:06:08.080><c> so</c><00:06:08.400><c> what</c><00:06:08.560><c> i'm</c><00:06:08.639><c> going</c>
+
+00:06:08.710 --> 00:06:08.720 align:start position:0%
+is a possible solution so what i'm going
+ 
+
+00:06:08.720 --> 00:06:11.670 align:start position:0%
+is a possible solution so what i'm going
+to<00:06:08.800><c> do</c><00:06:09.039><c> here</c><00:06:09.360><c> is</c><00:06:09.680><c> basically</c><00:06:10.240><c> to</c><00:06:10.560><c> our</c><00:06:10.800><c> result</c>
+
+00:06:11.670 --> 00:06:11.680 align:start position:0%
+to do here is basically to our result
+ 
+
+00:06:11.680 --> 00:06:13.590 align:start position:0%
+to do here is basically to our result
+i'm<00:06:11.840><c> going</c><00:06:12.000><c> to</c><00:06:12.080><c> append</c><00:06:12.800><c> the</c><00:06:13.199><c> current</c>
+
+00:06:13.590 --> 00:06:13.600 align:start position:0%
+i'm going to append the current
+ 
+
+00:06:13.600 --> 00:06:15.270 align:start position:0%
+i'm going to append the current
+partition<00:06:14.160><c> that</c><00:06:14.319><c> we</c><00:06:14.479><c> have</c><00:06:14.720><c> formed</c>
+
+00:06:15.270 --> 00:06:15.280 align:start position:0%
+partition that we have formed
+ 
+
+00:06:15.280 --> 00:06:17.189 align:start position:0%
+partition that we have formed
+but<00:06:15.440><c> not</c><00:06:15.680><c> only</c><00:06:15.919><c> that</c><00:06:16.080><c> i'm</c><00:06:16.240><c> going</c><00:06:16.319><c> to</c><00:06:16.560><c> clone</c><00:06:17.039><c> it</c>
+
+00:06:17.189 --> 00:06:17.199 align:start position:0%
+but not only that i'm going to clone it
+ 
+
+00:06:17.199 --> 00:06:18.710 align:start position:0%
+but not only that i'm going to clone it
+because<00:06:17.520><c> we</c><00:06:17.840><c> know</c>
+
+00:06:18.710 --> 00:06:18.720 align:start position:0%
+because we know
+ 
+
+00:06:18.720 --> 00:06:20.950 align:start position:0%
+because we know
+or<00:06:18.880><c> rather</c><00:06:19.280><c> i'm</c><00:06:19.440><c> gonna</c><00:06:19.680><c> copy</c><00:06:20.160><c> it</c><00:06:20.560><c> because</c><00:06:20.800><c> we</c>
+
+00:06:20.950 --> 00:06:20.960 align:start position:0%
+or rather i'm gonna copy it because we
+ 
+
+00:06:20.960 --> 00:06:22.070 align:start position:0%
+or rather i'm gonna copy it because we
+know<00:06:21.199><c> if</c><00:06:21.280><c> we</c><00:06:21.520><c> end</c><00:06:21.680><c> up</c>
+
+00:06:22.070 --> 00:06:22.080 align:start position:0%
+know if we end up
+ 
+
+00:06:22.080 --> 00:06:24.390 align:start position:0%
+know if we end up
+in<00:06:22.240><c> a</c><00:06:22.319><c> different</c><00:06:23.280><c> recursive</c><00:06:23.840><c> call</c><00:06:24.000><c> making</c>
+
+00:06:24.390 --> 00:06:24.400 align:start position:0%
+in a different recursive call making
+ 
+
+00:06:24.400 --> 00:06:26.150 align:start position:0%
+in a different recursive call making
+changes<00:06:24.800><c> to</c><00:06:24.960><c> this</c><00:06:25.120><c> variable</c><00:06:25.520><c> there's</c><00:06:25.680><c> only</c>
+
+00:06:26.150 --> 00:06:26.160 align:start position:0%
+changes to this variable there's only
+ 
+
+00:06:26.160 --> 00:06:29.270 align:start position:0%
+changes to this variable there's only
+one<00:06:26.880><c> part</c><00:06:27.280><c> partition</c><00:06:27.919><c> variable</c><00:06:28.560><c> so</c><00:06:28.960><c> it's</c><00:06:29.120><c> not</c>
+
+00:06:29.270 --> 00:06:29.280 align:start position:0%
+one part partition variable so it's not
+ 
+
+00:06:29.280 --> 00:06:30.550 align:start position:0%
+one part partition variable so it's not
+like<00:06:29.440><c> there</c><00:06:29.600><c> are</c><00:06:29.759><c> multiple</c>
+
+00:06:30.550 --> 00:06:30.560 align:start position:0%
+like there are multiple
+ 
+
+00:06:30.560 --> 00:06:32.390 align:start position:0%
+like there are multiple
+partitions<00:06:31.039><c> being</c><00:06:31.280><c> created</c><00:06:31.759><c> we</c><00:06:31.919><c> only</c><00:06:32.080><c> have</c><00:06:32.240><c> a</c>
+
+00:06:32.390 --> 00:06:32.400 align:start position:0%
+partitions being created we only have a
+ 
+
+00:06:32.400 --> 00:06:33.990 align:start position:0%
+partitions being created we only have a
+single<00:06:32.720><c> one</c><00:06:32.960><c> so</c><00:06:33.520><c> every</c><00:06:33.680><c> time</c>
+
+00:06:33.990 --> 00:06:34.000 align:start position:0%
+single one so every time
+ 
+
+00:06:34.000 --> 00:06:36.150 align:start position:0%
+single one so every time
+we<00:06:34.560><c> append</c><00:06:34.880><c> to</c><00:06:35.039><c> result</c><00:06:35.440><c> we</c><00:06:35.600><c> have</c><00:06:35.680><c> to</c><00:06:35.840><c> make</c><00:06:36.000><c> a</c>
+
+00:06:36.150 --> 00:06:36.160 align:start position:0%
+we append to result we have to make a
+ 
+
+00:06:36.160 --> 00:06:37.189 align:start position:0%
+we append to result we have to make a
+copy<00:06:36.639><c> of</c><00:06:36.880><c> it</c>
+
+00:06:37.189 --> 00:06:37.199 align:start position:0%
+copy of it
+ 
+
+00:06:37.199 --> 00:06:39.189 align:start position:0%
+copy of it
+and<00:06:37.520><c> after</c><00:06:37.759><c> we</c><00:06:37.919><c> do</c><00:06:38.080><c> that</c><00:06:38.240><c> we</c><00:06:38.400><c> can</c><00:06:38.560><c> return</c>
+
+00:06:39.189 --> 00:06:39.199 align:start position:0%
+and after we do that we can return
+ 
+
+00:06:39.199 --> 00:06:41.110 align:start position:0%
+and after we do that we can return
+because<00:06:39.440><c> this</c><00:06:39.680><c> is</c><00:06:39.759><c> our</c><00:06:39.919><c> base</c><00:06:40.240><c> case</c>
+
+00:06:41.110 --> 00:06:41.120 align:start position:0%
+because this is our base case
+ 
+
+00:06:41.120 --> 00:06:43.189 align:start position:0%
+because this is our base case
+if<00:06:41.280><c> we</c><00:06:41.520><c> haven't</c><00:06:41.919><c> reached</c><00:06:42.240><c> the</c><00:06:42.479><c> last</c><00:06:42.800><c> index</c>
+
+00:06:43.189 --> 00:06:43.199 align:start position:0%
+if we haven't reached the last index
+ 
+
+00:06:43.199 --> 00:06:45.029 align:start position:0%
+if we haven't reached the last index
+what<00:06:43.360><c> can</c><00:06:43.520><c> we</c><00:06:43.680><c> do</c><00:06:43.919><c> well</c><00:06:44.160><c> we</c><00:06:44.240><c> can</c><00:06:44.560><c> iterate</c>
+
+00:06:45.029 --> 00:06:45.039 align:start position:0%
+what can we do well we can iterate
+ 
+
+00:06:45.039 --> 00:06:45.510 align:start position:0%
+what can we do well we can iterate
+through
+
+00:06:45.510 --> 00:06:45.520 align:start position:0%
+through
+ 
+
+00:06:45.520 --> 00:06:48.390 align:start position:0%
+through
+every<00:06:46.240><c> other</c><00:06:46.720><c> character</c><00:06:47.600><c> in</c><00:06:47.919><c> our</c><00:06:48.080><c> string</c>
+
+00:06:48.390 --> 00:06:48.400 align:start position:0%
+every other character in our string
+ 
+
+00:06:48.400 --> 00:06:48.950 align:start position:0%
+every other character in our string
+right<00:06:48.560><c> so</c>
+
+00:06:48.950 --> 00:06:48.960 align:start position:0%
+right so
+ 
+
+00:06:48.960 --> 00:06:51.510 align:start position:0%
+right so
+we're<00:06:49.120><c> going</c><00:06:49.199><c> to</c><00:06:49.440><c> start</c><00:06:49.840><c> at</c><00:06:50.160><c> i</c><00:06:50.479><c> and</c><00:06:50.800><c> keep</c><00:06:51.199><c> going</c>
+
+00:06:51.510 --> 00:06:51.520 align:start position:0%
+we're going to start at i and keep going
+ 
+
+00:06:51.520 --> 00:06:52.550 align:start position:0%
+we're going to start at i and keep going
+until<00:06:51.759><c> we</c><00:06:51.919><c> get</c><00:06:52.080><c> to</c><00:06:52.240><c> the</c>
+
+00:06:52.550 --> 00:06:52.560 align:start position:0%
+until we get to the
+ 
+
+00:06:52.560 --> 00:06:55.589 align:start position:0%
+until we get to the
+end<00:06:53.199><c> of</c><00:06:53.759><c> the</c><00:06:54.000><c> string</c><00:06:54.880><c> and</c>
+
+00:06:55.589 --> 00:06:55.599 align:start position:0%
+end of the string and
+ 
+
+00:06:55.599 --> 00:06:57.670 align:start position:0%
+end of the string and
+for<00:06:56.160><c> this</c><00:06:56.560><c> meaning</c><00:06:56.880><c> so</c><00:06:57.039><c> this</c><00:06:57.199><c> is</c><00:06:57.360><c> going</c><00:06:57.440><c> to</c><00:06:57.520><c> be</c>
+
+00:06:57.670 --> 00:06:57.680 align:start position:0%
+for this meaning so this is going to be
+ 
+
+00:06:57.680 --> 00:06:59.110 align:start position:0%
+for this meaning so this is going to be
+our<00:06:57.919><c> sub</c><00:06:58.160><c> string</c><00:06:58.479><c> right</c><00:06:58.639><c> this</c><00:06:58.800><c> is</c>
+
+00:06:59.110 --> 00:06:59.120 align:start position:0%
+our sub string right this is
+ 
+
+00:06:59.120 --> 00:07:01.110 align:start position:0%
+our sub string right this is
+every<00:06:59.440><c> possible</c><00:07:00.240><c> substring</c><00:07:00.720><c> and</c><00:07:00.800><c> we</c><00:07:00.880><c> want</c><00:07:01.039><c> to</c>
+
+00:07:01.110 --> 00:07:01.120 align:start position:0%
+every possible substring and we want to
+ 
+
+00:07:01.120 --> 00:07:02.870 align:start position:0%
+every possible substring and we want to
+know<00:07:01.440><c> is</c><00:07:01.599><c> it</c><00:07:01.680><c> a</c><00:07:01.919><c> palindrome</c>
+
+00:07:02.870 --> 00:07:02.880 align:start position:0%
+know is it a palindrome
+ 
+
+00:07:02.880 --> 00:07:05.749 align:start position:0%
+know is it a palindrome
+so<00:07:03.360><c> so</c><00:07:03.599><c> the</c><00:07:03.919><c> indices</c><00:07:04.400><c> are</c><00:07:04.560><c> going</c><00:07:04.639><c> to</c><00:07:04.880><c> tell</c><00:07:05.120><c> us</c>
+
+00:07:05.749 --> 00:07:05.759 align:start position:0%
+so so the indices are going to tell us
+ 
+
+00:07:05.759 --> 00:07:06.150 align:start position:0%
+so so the indices are going to tell us
+if
+
+00:07:06.150 --> 00:07:06.160 align:start position:0%
+if
+ 
+
+00:07:06.160 --> 00:07:09.350 align:start position:0%
+if
+from<00:07:06.560><c> a</c><00:07:06.720><c> string</c><00:07:07.120><c> s</c><00:07:07.599><c> starting</c><00:07:08.080><c> at</c><00:07:08.319><c> index</c><00:07:08.800><c> i</c><00:07:09.120><c> all</c>
+
+00:07:09.350 --> 00:07:09.360 align:start position:0%
+from a string s starting at index i all
+ 
+
+00:07:09.360 --> 00:07:10.309 align:start position:0%
+from a string s starting at index i all
+the<00:07:09.520><c> way</c><00:07:09.759><c> to</c><00:07:10.000><c> j</c>
+
+00:07:10.309 --> 00:07:10.319 align:start position:0%
+the way to j
+ 
+
+00:07:10.319 --> 00:07:11.909 align:start position:0%
+the way to j
+we're<00:07:10.479><c> going</c><00:07:10.560><c> to</c><00:07:10.639><c> check</c><00:07:10.960><c> every</c><00:07:11.360><c> possible</c>
+
+00:07:11.909 --> 00:07:11.919 align:start position:0%
+we're going to check every possible
+ 
+
+00:07:11.919 --> 00:07:14.070 align:start position:0%
+we're going to check every possible
+string<00:07:12.720><c> i'm</c><00:07:12.800><c> going</c><00:07:12.880><c> to</c><00:07:13.039><c> add</c><00:07:13.280><c> one</c><00:07:13.440><c> to</c><00:07:13.680><c> j</c>
+
+00:07:14.070 --> 00:07:14.080 align:start position:0%
+string i'm going to add one to j
+ 
+
+00:07:14.080 --> 00:07:16.710 align:start position:0%
+string i'm going to add one to j
+to<00:07:14.400><c> get</c><00:07:14.639><c> rid</c><00:07:14.800><c> of</c><00:07:14.880><c> the</c><00:07:15.039><c> off</c><00:07:15.280><c> by</c><00:07:15.520><c> one</c><00:07:15.840><c> error</c><00:07:16.319><c> and</c><00:07:16.479><c> i</c>
+
+00:07:16.710 --> 00:07:16.720 align:start position:0%
+to get rid of the off by one error and i
+ 
+
+00:07:16.720 --> 00:07:17.189 align:start position:0%
+to get rid of the off by one error and i
+want<00:07:16.880><c> to</c>
+
+00:07:17.189 --> 00:07:17.199 align:start position:0%
+want to
+ 
+
+00:07:17.199 --> 00:07:19.430 align:start position:0%
+want to
+know<00:07:17.680><c> is</c><00:07:17.919><c> this</c><00:07:18.160><c> a</c><00:07:18.319><c> string</c><00:07:19.039><c> is</c><00:07:19.120><c> this</c><00:07:19.360><c> a</c>
+
+00:07:19.430 --> 00:07:19.440 align:start position:0%
+know is this a string is this a
+ 
+
+00:07:19.440 --> 00:07:20.309 align:start position:0%
+know is this a string is this a
+palindrome
+
+00:07:20.309 --> 00:07:20.319 align:start position:0%
+palindrome
+ 
+
+00:07:20.319 --> 00:07:22.870 align:start position:0%
+palindrome
+i'm<00:07:20.560><c> also</c><00:07:20.800><c> going</c><00:07:20.880><c> to</c><00:07:21.039><c> pass</c><00:07:21.360><c> in</c><00:07:21.440><c> the</c><00:07:21.680><c> indices</c><00:07:22.319><c> i</c>
+
+00:07:22.870 --> 00:07:22.880 align:start position:0%
+i'm also going to pass in the indices i
+ 
+
+00:07:22.880 --> 00:07:23.350 align:start position:0%
+i'm also going to pass in the indices i
+and<00:07:23.039><c> j</c>
+
+00:07:23.350 --> 00:07:23.360 align:start position:0%
+and j
+ 
+
+00:07:23.360 --> 00:07:24.950 align:start position:0%
+and j
+so<00:07:23.520><c> we</c><00:07:23.680><c> know</c><00:07:23.919><c> what</c><00:07:24.160><c> our</c><00:07:24.319><c> left</c><00:07:24.560><c> and</c><00:07:24.720><c> right</c>
+
+00:07:24.950 --> 00:07:24.960 align:start position:0%
+so we know what our left and right
+ 
+
+00:07:24.960 --> 00:07:27.430 align:start position:0%
+so we know what our left and right
+boundaries<00:07:25.520><c> are</c><00:07:26.080><c> and</c><00:07:26.319><c> actually</c><00:07:26.800><c> since</c><00:07:27.039><c> we</c><00:07:27.280><c> are</c>
+
+00:07:27.430 --> 00:07:27.440 align:start position:0%
+boundaries are and actually since we are
+ 
+
+00:07:27.440 --> 00:07:28.550 align:start position:0%
+boundaries are and actually since we are
+passing<00:07:27.840><c> in</c><00:07:28.000><c> these</c>
+
+00:07:28.550 --> 00:07:28.560 align:start position:0%
+passing in these
+ 
+
+00:07:28.560 --> 00:07:29.990 align:start position:0%
+passing in these
+boundaries<00:07:29.039><c> we</c><00:07:29.199><c> don't</c><00:07:29.440><c> actually</c><00:07:29.680><c> need</c><00:07:29.759><c> to</c>
+
+00:07:29.990 --> 00:07:30.000 align:start position:0%
+boundaries we don't actually need to
+ 
+
+00:07:30.000 --> 00:07:31.589 align:start position:0%
+boundaries we don't actually need to
+create<00:07:30.240><c> a</c><00:07:30.400><c> substring</c><00:07:30.800><c> we</c><00:07:30.960><c> can</c><00:07:31.039><c> just</c><00:07:31.199><c> pass</c>
+
+00:07:31.589 --> 00:07:31.599 align:start position:0%
+create a substring we can just pass
+ 
+
+00:07:31.599 --> 00:07:33.670 align:start position:0%
+create a substring we can just pass
+s<00:07:31.840><c> itself</c><00:07:32.160><c> so</c><00:07:32.319><c> we</c><00:07:32.479><c> want</c><00:07:32.639><c> to</c><00:07:32.720><c> know</c><00:07:32.960><c> is</c><00:07:33.280><c> s</c><00:07:33.520><c> a</c>
+
+00:07:33.670 --> 00:07:33.680 align:start position:0%
+s itself so we want to know is s a
+ 
+
+00:07:33.680 --> 00:07:35.350 align:start position:0%
+s itself so we want to know is s a
+palindrome<00:07:34.160><c> if</c><00:07:34.319><c> you</c><00:07:34.560><c> take</c><00:07:34.800><c> it</c>
+
+00:07:35.350 --> 00:07:35.360 align:start position:0%
+palindrome if you take it
+ 
+
+00:07:35.360 --> 00:07:38.710 align:start position:0%
+palindrome if you take it
+to<00:07:35.680><c> start</c><00:07:36.080><c> at</c><00:07:36.319><c> index</c><00:07:36.800><c> i</c><00:07:37.039><c> and</c><00:07:37.520><c> end</c><00:07:37.919><c> at</c><00:07:38.160><c> index</c>
+
+00:07:38.710 --> 00:07:38.720 align:start position:0%
+to start at index i and end at index
+ 
+
+00:07:38.720 --> 00:07:41.430 align:start position:0%
+to start at index i and end at index
+j<00:07:39.120><c> is</c><00:07:39.280><c> this</c><00:07:39.520><c> a</c><00:07:39.599><c> palindrome</c><00:07:40.479><c> and</c><00:07:40.639><c> so</c><00:07:40.880><c> if</c><00:07:41.120><c> it</c>
+
+00:07:41.430 --> 00:07:41.440 align:start position:0%
+j is this a palindrome and so if it
+ 
+
+00:07:41.440 --> 00:07:43.350 align:start position:0%
+j is this a palindrome and so if it
+happens<00:07:41.759><c> to</c><00:07:41.919><c> be</c><00:07:42.080><c> a</c><00:07:42.160><c> palm</c><00:07:42.400><c> drum</c><00:07:42.800><c> i'll</c><00:07:43.039><c> actually</c>
+
+00:07:43.350 --> 00:07:43.360 align:start position:0%
+happens to be a palm drum i'll actually
+ 
+
+00:07:43.360 --> 00:07:45.189 align:start position:0%
+happens to be a palm drum i'll actually
+write<00:07:43.599><c> this</c><00:07:43.759><c> helper</c><00:07:44.160><c> function</c><00:07:44.639><c> later</c><00:07:45.039><c> we'll</c>
+
+00:07:45.189 --> 00:07:45.199 align:start position:0%
+write this helper function later we'll
+ 
+
+00:07:45.199 --> 00:07:47.189 align:start position:0%
+write this helper function later we'll
+just<00:07:45.440><c> assume</c><00:07:45.840><c> we</c><00:07:45.919><c> have</c><00:07:46.160><c> it</c><00:07:46.240><c> now</c><00:07:46.479><c> so</c><00:07:46.720><c> if</c><00:07:46.960><c> this</c>
+
+00:07:47.189 --> 00:07:47.199 align:start position:0%
+just assume we have it now so if this
+ 
+
+00:07:47.199 --> 00:07:48.950 align:start position:0%
+just assume we have it now so if this
+happens<00:07:47.520><c> to</c><00:07:47.680><c> be</c><00:07:47.840><c> a</c><00:07:47.919><c> palindrome</c><00:07:48.479><c> what</c><00:07:48.639><c> can</c><00:07:48.800><c> we</c>
+
+00:07:48.950 --> 00:07:48.960 align:start position:0%
+happens to be a palindrome what can we
+ 
+
+00:07:48.960 --> 00:07:49.589 align:start position:0%
+happens to be a palindrome what can we
+do
+
+00:07:49.589 --> 00:07:49.599 align:start position:0%
+do
+ 
+
+00:07:49.599 --> 00:07:53.189 align:start position:0%
+do
+we<00:07:49.759><c> can</c><00:07:50.080><c> to</c><00:07:50.319><c> our</c><00:07:50.479><c> partition</c><00:07:51.440><c> we</c><00:07:51.599><c> can</c><00:07:52.080><c> add</c><00:07:52.479><c> this</c>
+
+00:07:53.189 --> 00:07:53.199 align:start position:0%
+we can to our partition we can add this
+ 
+
+00:07:53.199 --> 00:07:56.230 align:start position:0%
+we can to our partition we can add this
+string<00:07:53.840><c> so</c><00:07:54.319><c> s</c><00:07:54.879><c> from</c><00:07:55.360><c> index</c><00:07:55.919><c> i</c>
+
+00:07:56.230 --> 00:07:56.240 align:start position:0%
+string so s from index i
+ 
+
+00:07:56.240 --> 00:07:59.430 align:start position:0%
+string so s from index i
+to<00:07:56.560><c> index</c><00:07:57.280><c> j</c><00:07:57.919><c> get</c><00:07:58.080><c> rid</c><00:07:58.240><c> of</c><00:07:58.319><c> the</c><00:07:58.479><c> off</c><00:07:58.720><c> by</c><00:07:58.879><c> 1</c><00:07:59.199><c> error</c>
+
+00:07:59.430 --> 00:07:59.440 align:start position:0%
+to index j get rid of the off by 1 error
+ 
+
+00:07:59.440 --> 00:08:00.629 align:start position:0%
+to index j get rid of the off by 1 error
+we<00:07:59.520><c> can</c><00:07:59.759><c> add</c><00:08:00.080><c> this</c>
+
+00:08:00.629 --> 00:08:00.639 align:start position:0%
+we can add this
+ 
+
+00:08:00.639 --> 00:08:02.790 align:start position:0%
+we can add this
+so<00:08:00.879><c> this</c><00:08:01.039><c> is</c><00:08:01.199><c> our</c><00:08:01.360><c> current</c><00:08:01.759><c> partition</c><00:08:02.479><c> and</c><00:08:02.639><c> we</c>
+
+00:08:02.790 --> 00:08:02.800 align:start position:0%
+so this is our current partition and we
+ 
+
+00:08:02.800 --> 00:08:03.830 align:start position:0%
+so this is our current partition and we
+want<00:08:02.960><c> to</c><00:08:03.199><c> keep</c>
+
+00:08:03.830 --> 00:08:03.840 align:start position:0%
+want to keep
+ 
+
+00:08:03.840 --> 00:08:06.869 align:start position:0%
+want to keep
+because<00:08:04.080><c> we</c><00:08:04.319><c> know</c><00:08:04.639><c> s</c><00:08:05.360><c> this</c><00:08:06.000><c> substring</c><00:08:06.560><c> is</c><00:08:06.720><c> a</c>
+
+00:08:06.869 --> 00:08:06.879 align:start position:0%
+because we know s this substring is a
+ 
+
+00:08:06.879 --> 00:08:07.990 align:start position:0%
+because we know s this substring is a
+palindrome
+
+00:08:07.990 --> 00:08:08.000 align:start position:0%
+palindrome
+ 
+
+00:08:08.000 --> 00:08:10.469 align:start position:0%
+palindrome
+and<00:08:08.160><c> so</c><00:08:08.400><c> now</c><00:08:08.639><c> we</c><00:08:08.800><c> can</c><00:08:09.120><c> recursively</c><00:08:10.080><c> do</c><00:08:10.319><c> our</c>
+
+00:08:10.469 --> 00:08:10.479 align:start position:0%
+and so now we can recursively do our
+ 
+
+00:08:10.479 --> 00:08:11.350 align:start position:0%
+and so now we can recursively do our
+depth<00:08:10.720><c> first</c><00:08:10.879><c> search</c>
+
+00:08:11.350 --> 00:08:11.360 align:start position:0%
+depth first search
+ 
+
+00:08:11.360 --> 00:08:14.150 align:start position:0%
+depth first search
+looking<00:08:11.680><c> for</c><00:08:12.000><c> additional</c><00:08:12.720><c> palindromes</c><00:08:13.840><c> and</c>
+
+00:08:14.150 --> 00:08:14.160 align:start position:0%
+looking for additional palindromes and
+ 
+
+00:08:14.160 --> 00:08:15.909 align:start position:0%
+looking for additional palindromes and
+of<00:08:14.319><c> course</c><00:08:14.560><c> we'll</c><00:08:14.879><c> start</c><00:08:15.280><c> at</c><00:08:15.599><c> j</c>
+
+00:08:15.909 --> 00:08:15.919 align:start position:0%
+of course we'll start at j
+ 
+
+00:08:15.919 --> 00:08:18.469 align:start position:0%
+of course we'll start at j
+plus<00:08:16.319><c> one</c><00:08:16.720><c> because</c><00:08:17.280><c> that's</c><00:08:17.599><c> going</c><00:08:17.759><c> to</c><00:08:17.919><c> be</c><00:08:18.160><c> the</c>
+
+00:08:18.469 --> 00:08:18.479 align:start position:0%
+plus one because that's going to be the
+ 
+
+00:08:18.479 --> 00:08:18.950 align:start position:0%
+plus one because that's going to be the
+next
+
+00:08:18.950 --> 00:08:18.960 align:start position:0%
+next
+ 
+
+00:08:18.960 --> 00:08:21.510 align:start position:0%
+next
+character<00:08:19.759><c> and</c><00:08:20.160><c> after</c><00:08:20.479><c> we</c><00:08:20.639><c> do</c><00:08:20.800><c> our</c><00:08:20.960><c> recursive</c>
+
+00:08:21.510 --> 00:08:21.520 align:start position:0%
+character and after we do our recursive
+ 
+
+00:08:21.520 --> 00:08:22.950 align:start position:0%
+character and after we do our recursive
+function<00:08:21.919><c> we</c><00:08:22.080><c> have</c><00:08:22.160><c> to</c><00:08:22.400><c> clean</c>
+
+00:08:22.950 --> 00:08:22.960 align:start position:0%
+function we have to clean
+ 
+
+00:08:22.960 --> 00:08:25.350 align:start position:0%
+function we have to clean
+up<00:08:23.360><c> so</c><00:08:23.599><c> since</c><00:08:23.840><c> we</c><00:08:24.080><c> know</c><00:08:24.240><c> we</c><00:08:24.400><c> only</c><00:08:24.639><c> have</c><00:08:24.960><c> one</c>
+
+00:08:25.350 --> 00:08:25.360 align:start position:0%
+up so since we know we only have one
+ 
+
+00:08:25.360 --> 00:08:27.350 align:start position:0%
+up so since we know we only have one
+single<00:08:25.840><c> partition</c><00:08:26.479><c> variable</c>
+
+00:08:27.350 --> 00:08:27.360 align:start position:0%
+single partition variable
+ 
+
+00:08:27.360 --> 00:08:29.909 align:start position:0%
+single partition variable
+after<00:08:27.680><c> we</c><00:08:27.840><c> have</c><00:08:28.080><c> added</c><00:08:28.479><c> this</c><00:08:28.879><c> and</c><00:08:29.440><c> added</c><00:08:29.759><c> the</c>
+
+00:08:29.909 --> 00:08:29.919 align:start position:0%
+after we have added this and added the
+ 
+
+00:08:29.919 --> 00:08:31.430 align:start position:0%
+after we have added this and added the
+substring<00:08:30.400><c> and</c><00:08:30.479><c> then</c><00:08:30.720><c> ran</c><00:08:30.960><c> our</c><00:08:31.120><c> debt</c><00:08:31.280><c> for</c>
+
+00:08:31.430 --> 00:08:31.440 align:start position:0%
+substring and then ran our debt for
+ 
+
+00:08:31.440 --> 00:08:31.830 align:start position:0%
+substring and then ran our debt for
+search
+
+00:08:31.830 --> 00:08:31.840 align:start position:0%
+search
+ 
+
+00:08:31.840 --> 00:08:34.230 align:start position:0%
+search
+looking<00:08:32.080><c> for</c><00:08:32.320><c> all</c><00:08:32.560><c> possible</c><00:08:33.680><c> additional</c>
+
+00:08:34.230 --> 00:08:34.240 align:start position:0%
+looking for all possible additional
+ 
+
+00:08:34.240 --> 00:08:35.509 align:start position:0%
+looking for all possible additional
+partitions
+
+00:08:35.509 --> 00:08:35.519 align:start position:0%
+partitions
+ 
+
+00:08:35.519 --> 00:08:37.509 align:start position:0%
+partitions
+after<00:08:35.760><c> that</c><00:08:36.000><c> we</c><00:08:36.159><c> can</c><00:08:36.320><c> take</c><00:08:36.880><c> the</c><00:08:37.039><c> string</c><00:08:37.360><c> that</c>
+
+00:08:37.509 --> 00:08:37.519 align:start position:0%
+after that we can take the string that
+ 
+
+00:08:37.519 --> 00:08:40.070 align:start position:0%
+after that we can take the string that
+we<00:08:37.680><c> just</c><00:08:38.080><c> added</c><00:08:38.479><c> over</c><00:08:38.880><c> here</c><00:08:39.279><c> and</c><00:08:39.360><c> then</c><00:08:39.599><c> pop</c>
+
+00:08:40.070 --> 00:08:40.080 align:start position:0%
+we just added over here and then pop
+ 
+
+00:08:40.080 --> 00:08:42.550 align:start position:0%
+we just added over here and then pop
+that<00:08:40.320><c> from</c><00:08:40.560><c> our</c><00:08:40.719><c> partition</c><00:08:41.440><c> list</c><00:08:42.080><c> and</c><00:08:42.240><c> that's</c>
+
+00:08:42.550 --> 00:08:42.560 align:start position:0%
+that from our partition list and that's
+ 
+
+00:08:42.560 --> 00:08:44.070 align:start position:0%
+that from our partition list and that's
+actually<00:08:43.039><c> our</c><00:08:43.360><c> entire</c>
+
+00:08:44.070 --> 00:08:44.080 align:start position:0%
+actually our entire
+ 
+
+00:08:44.080 --> 00:08:46.070 align:start position:0%
+actually our entire
+depth<00:08:44.320><c> for</c><00:08:44.560><c> search</c><00:08:44.959><c> function</c><00:08:45.360><c> you</c><00:08:45.519><c> notice</c><00:08:45.839><c> we</c>
+
+00:08:46.070 --> 00:08:46.080 align:start position:0%
+depth for search function you notice we
+ 
+
+00:08:46.080 --> 00:08:47.829 align:start position:0%
+depth for search function you notice we
+have<00:08:46.320><c> our</c><00:08:46.480><c> base</c><00:08:46.800><c> case</c><00:08:47.120><c> when</c><00:08:47.279><c> we</c><00:08:47.440><c> go</c><00:08:47.600><c> out</c><00:08:47.760><c> of</c>
+
+00:08:47.829 --> 00:08:47.839 align:start position:0%
+have our base case when we go out of
+ 
+
+00:08:47.839 --> 00:08:48.310 align:start position:0%
+have our base case when we go out of
+bounds
+
+00:08:48.310 --> 00:08:48.320 align:start position:0%
+bounds
+ 
+
+00:08:48.320 --> 00:08:51.110 align:start position:0%
+bounds
+and<00:08:48.560><c> with</c><00:08:48.959><c> this</c><00:08:49.600><c> loop</c><00:08:50.000><c> we</c><00:08:50.160><c> are</c><00:08:50.320><c> generating</c>
+
+00:08:51.110 --> 00:08:51.120 align:start position:0%
+and with this loop we are generating
+ 
+
+00:08:51.120 --> 00:08:53.110 align:start position:0%
+and with this loop we are generating
+every<00:08:51.519><c> single</c><00:08:51.920><c> possible</c><00:08:52.399><c> substring</c><00:08:52.959><c> right</c>
+
+00:08:53.110 --> 00:08:53.120 align:start position:0%
+every single possible substring right
+ 
+
+00:08:53.120 --> 00:08:54.230 align:start position:0%
+every single possible substring right
+from<00:08:53.360><c> i</c><00:08:53.600><c> to</c><00:08:53.839><c> j</c>
+
+00:08:54.230 --> 00:08:54.240 align:start position:0%
+from i to j
+ 
+
+00:08:54.240 --> 00:08:56.070 align:start position:0%
+from i to j
+we're<00:08:54.560><c> checking</c><00:08:54.880><c> if</c><00:08:55.040><c> it's</c><00:08:55.200><c> a</c><00:08:55.360><c> palindrome</c><00:08:55.920><c> if</c>
+
+00:08:56.070 --> 00:08:56.080 align:start position:0%
+we're checking if it's a palindrome if
+ 
+
+00:08:56.080 --> 00:08:58.230 align:start position:0%
+we're checking if it's a palindrome if
+it<00:08:56.240><c> is</c><00:08:56.560><c> then</c><00:08:56.800><c> we're</c><00:08:56.959><c> recursively</c><00:08:57.680><c> continuing</c>
+
+00:08:58.230 --> 00:08:58.240 align:start position:0%
+it is then we're recursively continuing
+ 
+
+00:08:58.240 --> 00:08:59.269 align:start position:0%
+it is then we're recursively continuing
+our<00:08:58.399><c> depth</c><00:08:58.640><c> for</c><00:08:58.800><c> search</c>
+
+00:08:59.269 --> 00:08:59.279 align:start position:0%
+our depth for search
+ 
+
+00:08:59.279 --> 00:09:01.190 align:start position:0%
+our depth for search
+if<00:08:59.440><c> it's</c><00:08:59.600><c> not</c><00:08:59.839><c> a</c><00:09:00.000><c> palindrome</c><00:09:00.560><c> then</c><00:09:00.800><c> we're</c><00:09:00.959><c> just</c>
+
+00:09:01.190 --> 00:09:01.200 align:start position:0%
+if it's not a palindrome then we're just
+ 
+
+00:09:01.200 --> 00:09:03.190 align:start position:0%
+if it's not a palindrome then we're just
+skipping<00:09:01.680><c> that</c><00:09:01.920><c> substring</c><00:09:02.480><c> altogether</c><00:09:03.040><c> and</c>
+
+00:09:03.190 --> 00:09:03.200 align:start position:0%
+skipping that substring altogether and
+ 
+
+00:09:03.200 --> 00:09:04.389 align:start position:0%
+skipping that substring altogether and
+going<00:09:03.440><c> to</c><00:09:03.519><c> the</c><00:09:03.760><c> next</c>
+
+00:09:04.389 --> 00:09:04.399 align:start position:0%
+going to the next
+ 
+
+00:09:04.399 --> 00:09:06.230 align:start position:0%
+going to the next
+iteration<00:09:05.040><c> of</c><00:09:05.120><c> the</c><00:09:05.360><c> loop</c><00:09:05.680><c> so</c><00:09:05.839><c> that's</c><00:09:06.080><c> our</c>
+
+00:09:06.230 --> 00:09:06.240 align:start position:0%
+iteration of the loop so that's our
+ 
+
+00:09:06.240 --> 00:09:08.230 align:start position:0%
+iteration of the loop so that's our
+entire<00:09:06.640><c> function</c><00:09:07.360><c> and</c><00:09:07.600><c> the</c><00:09:07.680><c> only</c><00:09:07.839><c> thing</c><00:09:08.000><c> left</c>
+
+00:09:08.230 --> 00:09:08.240 align:start position:0%
+entire function and the only thing left
+ 
+
+00:09:08.240 --> 00:09:09.430 align:start position:0%
+entire function and the only thing left
+for<00:09:08.320><c> us</c><00:09:08.480><c> to</c><00:09:08.560><c> do</c><00:09:08.720><c> is</c><00:09:08.880><c> to</c><00:09:09.040><c> actually</c>
+
+00:09:09.430 --> 00:09:09.440 align:start position:0%
+for us to do is to actually
+ 
+
+00:09:09.440 --> 00:09:11.670 align:start position:0%
+for us to do is to actually
+call<00:09:09.680><c> it</c><00:09:09.839><c> so</c><00:09:10.160><c> debt</c><00:09:10.399><c> for</c><00:09:10.640><c> search</c><00:09:10.959><c> will</c><00:09:11.200><c> pass</c><00:09:11.519><c> in</c>
+
+00:09:11.670 --> 00:09:11.680 align:start position:0%
+call it so debt for search will pass in
+ 
+
+00:09:11.680 --> 00:09:13.430 align:start position:0%
+call it so debt for search will pass in
+zero<00:09:12.080><c> because</c><00:09:12.320><c> we</c><00:09:12.480><c> know</c><00:09:12.640><c> that's</c><00:09:12.959><c> the</c><00:09:13.120><c> start</c>
+
+00:09:13.430 --> 00:09:13.440 align:start position:0%
+zero because we know that's the start
+ 
+
+00:09:13.440 --> 00:09:14.150 align:start position:0%
+zero because we know that's the start
+index
+
+00:09:14.150 --> 00:09:14.160 align:start position:0%
+index
+ 
+
+00:09:14.160 --> 00:09:15.590 align:start position:0%
+index
+and<00:09:14.320><c> then</c><00:09:14.640><c> what</c><00:09:14.800><c> we're</c><00:09:14.959><c> going</c><00:09:15.040><c> to</c><00:09:15.120><c> do</c><00:09:15.440><c> is</c>
+
+00:09:15.590 --> 00:09:15.600 align:start position:0%
+and then what we're going to do is
+ 
+
+00:09:15.600 --> 00:09:17.190 align:start position:0%
+and then what we're going to do is
+return<00:09:16.320><c> result</c>
+
+00:09:17.190 --> 00:09:17.200 align:start position:0%
+return result
+ 
+
+00:09:17.200 --> 00:09:19.350 align:start position:0%
+return result
+and<00:09:17.760><c> before</c><00:09:18.080><c> i</c><00:09:18.240><c> forget</c><00:09:18.640><c> we</c><00:09:18.800><c> know</c><00:09:18.959><c> we</c><00:09:19.120><c> have</c><00:09:19.200><c> to</c>
+
+00:09:19.350 --> 00:09:19.360 align:start position:0%
+and before i forget we know we have to
+ 
+
+00:09:19.360 --> 00:09:21.269 align:start position:0%
+and before i forget we know we have to
+actually<00:09:19.839><c> write</c><00:09:20.080><c> this</c><00:09:20.240><c> helper</c><00:09:20.720><c> function</c><00:09:21.120><c> that</c>
+
+00:09:21.269 --> 00:09:21.279 align:start position:0%
+actually write this helper function that
+ 
+
+00:09:21.279 --> 00:09:23.910 align:start position:0%
+actually write this helper function that
+we<00:09:21.920><c> called</c><00:09:22.320><c> before</c><00:09:22.720><c> we</c><00:09:22.880><c> even</c><00:09:23.120><c> wrote</c><00:09:23.360><c> it</c><00:09:23.519><c> so</c>
+
+00:09:23.910 --> 00:09:23.920 align:start position:0%
+we called before we even wrote it so
+ 
+
+00:09:23.920 --> 00:09:25.990 align:start position:0%
+we called before we even wrote it so
+let's<00:09:24.160><c> write</c><00:09:24.399><c> that</c><00:09:24.560><c> really</c><00:09:24.880><c> quickly</c><00:09:25.600><c> is</c>
+
+00:09:25.990 --> 00:09:26.000 align:start position:0%
+let's write that really quickly is
+ 
+
+00:09:26.000 --> 00:09:27.110 align:start position:0%
+let's write that really quickly is
+palindrome
+
+00:09:27.110 --> 00:09:27.120 align:start position:0%
+palindrome
+ 
+
+00:09:27.120 --> 00:09:29.350 align:start position:0%
+palindrome
+it'll<00:09:27.440><c> accept</c><00:09:27.839><c> a</c><00:09:27.920><c> string</c><00:09:28.399><c> and</c><00:09:28.560><c> it'll</c><00:09:28.800><c> accept</c>
+
+00:09:29.350 --> 00:09:29.360 align:start position:0%
+it'll accept a string and it'll accept
+ 
+
+00:09:29.360 --> 00:09:31.350 align:start position:0%
+it'll accept a string and it'll accept
+left<00:09:29.839><c> and</c><00:09:30.000><c> right</c><00:09:30.399><c> boundaries</c><00:09:30.880><c> so</c><00:09:31.040><c> we</c><00:09:31.200><c> just</c>
+
+00:09:31.350 --> 00:09:31.360 align:start position:0%
+left and right boundaries so we just
+ 
+
+00:09:31.360 --> 00:09:33.110 align:start position:0%
+left and right boundaries so we just
+have<00:09:31.440><c> to</c><00:09:31.600><c> check</c><00:09:31.839><c> if</c><00:09:32.000><c> it's</c><00:09:32.160><c> a</c><00:09:32.240><c> palindrome</c>
+
+00:09:33.110 --> 00:09:33.120 align:start position:0%
+have to check if it's a palindrome
+ 
+
+00:09:33.120 --> 00:09:36.230 align:start position:0%
+have to check if it's a palindrome
+so<00:09:33.519><c> while</c><00:09:34.160><c> left</c><00:09:34.640><c> is</c><00:09:34.959><c> less</c><00:09:35.279><c> than</c><00:09:35.600><c> right</c>
+
+00:09:36.230 --> 00:09:36.240 align:start position:0%
+so while left is less than right
+ 
+
+00:09:36.240 --> 00:09:38.870 align:start position:0%
+so while left is less than right
+we'll<00:09:36.560><c> check</c><00:09:36.959><c> if</c><00:09:37.600><c> the</c><00:09:37.920><c> character</c><00:09:38.320><c> at</c><00:09:38.480><c> the</c><00:09:38.560><c> left</c>
+
+00:09:38.870 --> 00:09:38.880 align:start position:0%
+we'll check if the character at the left
+ 
+
+00:09:38.880 --> 00:09:39.430 align:start position:0%
+we'll check if the character at the left
+position
+
+00:09:39.430 --> 00:09:39.440 align:start position:0%
+position
+ 
+
+00:09:39.440 --> 00:09:41.590 align:start position:0%
+position
+doesn't<00:09:39.839><c> equal</c><00:09:40.240><c> the</c><00:09:40.399><c> character</c><00:09:40.959><c> at</c><00:09:41.120><c> the</c><00:09:41.279><c> right</c>
+
+00:09:41.590 --> 00:09:41.600 align:start position:0%
+doesn't equal the character at the right
+ 
+
+00:09:41.600 --> 00:09:42.949 align:start position:0%
+doesn't equal the character at the right
+position<00:09:42.320><c> that</c><00:09:42.560><c> means</c>
+
+00:09:42.949 --> 00:09:42.959 align:start position:0%
+position that means
+ 
+
+00:09:42.959 --> 00:09:45.350 align:start position:0%
+position that means
+it's<00:09:43.279><c> not</c><00:09:43.519><c> a</c><00:09:43.600><c> palindrome</c><00:09:44.240><c> so</c><00:09:44.399><c> we</c><00:09:44.560><c> can</c><00:09:44.720><c> return</c>
+
+00:09:45.350 --> 00:09:45.360 align:start position:0%
+it's not a palindrome so we can return
+ 
+
+00:09:45.360 --> 00:09:46.630 align:start position:0%
+it's not a palindrome so we can return
+false<00:09:45.920><c> if</c><00:09:46.080><c> it</c>
+
+00:09:46.630 --> 00:09:46.640 align:start position:0%
+false if it
+ 
+
+00:09:46.640 --> 00:09:49.190 align:start position:0%
+false if it
+if<00:09:46.880><c> they</c><00:09:47.120><c> are</c><00:09:47.360><c> equal</c><00:09:47.760><c> then</c><00:09:48.000><c> we</c><00:09:48.160><c> can</c><00:09:48.480><c> update</c><00:09:48.959><c> our</c>
+
+00:09:49.190 --> 00:09:49.200 align:start position:0%
+if they are equal then we can update our
+ 
+
+00:09:49.200 --> 00:09:51.509 align:start position:0%
+if they are equal then we can update our
+left<00:09:49.519><c> and</c><00:09:49.680><c> right</c><00:09:49.920><c> pointer</c><00:09:50.320><c> so</c><00:09:50.560><c> add</c><00:09:50.959><c> one</c><00:09:51.279><c> to</c>
+
+00:09:51.509 --> 00:09:51.519 align:start position:0%
+left and right pointer so add one to
+ 
+
+00:09:51.519 --> 00:09:51.990 align:start position:0%
+left and right pointer so add one to
+left
+
+00:09:51.990 --> 00:09:52.000 align:start position:0%
+left
+ 
+
+00:09:52.000 --> 00:09:54.150 align:start position:0%
+left
+and<00:09:52.160><c> subtract</c><00:09:52.800><c> one</c><00:09:53.040><c> from</c><00:09:53.279><c> the</c><00:09:53.440><c> right</c><00:09:53.680><c> pointer</c>
+
+00:09:54.150 --> 00:09:54.160 align:start position:0%
+and subtract one from the right pointer
+ 
+
+00:09:54.160 --> 00:09:55.990 align:start position:0%
+and subtract one from the right pointer
+and<00:09:54.320><c> if</c><00:09:54.480><c> this</c><00:09:54.800><c> loop</c><00:09:55.040><c> this</c><00:09:55.360><c> entire</c><00:09:55.680><c> loop</c>
+
+00:09:55.990 --> 00:09:56.000 align:start position:0%
+and if this loop this entire loop
+ 
+
+00:09:56.000 --> 00:09:57.910 align:start position:0%
+and if this loop this entire loop
+executes<00:09:56.480><c> and</c><00:09:56.640><c> all</c><00:09:56.800><c> the</c><00:09:56.959><c> characters</c><00:09:57.519><c> actually</c>
+
+00:09:57.910 --> 00:09:57.920 align:start position:0%
+executes and all the characters actually
+ 
+
+00:09:57.920 --> 00:09:58.870 align:start position:0%
+executes and all the characters actually
+were<00:09:58.240><c> equal</c>
+
+00:09:58.870 --> 00:09:58.880 align:start position:0%
+were equal
+ 
+
+00:09:58.880 --> 00:10:00.790 align:start position:0%
+were equal
+then<00:09:59.120><c> we'll</c><00:09:59.360><c> exit</c><00:09:59.680><c> the</c><00:09:59.839><c> loop</c><00:10:00.160><c> and</c><00:10:00.320><c> then</c><00:10:00.480><c> we</c><00:10:00.640><c> can</c>
+
+00:10:00.790 --> 00:10:00.800 align:start position:0%
+then we'll exit the loop and then we can
+ 
+
+00:10:00.800 --> 00:10:02.710 align:start position:0%
+then we'll exit the loop and then we can
+return<00:10:01.279><c> true</c><00:10:01.600><c> because</c><00:10:01.920><c> that</c><00:10:02.079><c> means</c><00:10:02.399><c> it</c>
+
+00:10:02.710 --> 00:10:02.720 align:start position:0%
+return true because that means it
+ 
+
+00:10:02.720 --> 00:10:04.870 align:start position:0%
+return true because that means it
+is<00:10:02.959><c> a</c><00:10:03.040><c> palindrome</c><00:10:03.760><c> and</c><00:10:03.920><c> now</c><00:10:04.079><c> let</c><00:10:04.240><c> me</c><00:10:04.320><c> just</c><00:10:04.640><c> run</c>
+
+00:10:04.870 --> 00:10:04.880 align:start position:0%
+is a palindrome and now let me just run
+ 
+
+00:10:04.880 --> 00:10:07.110 align:start position:0%
+is a palindrome and now let me just run
+it<00:10:05.040><c> to</c><00:10:05.279><c> prove</c><00:10:05.680><c> to</c><00:10:05.839><c> you</c><00:10:06.000><c> that</c><00:10:06.240><c> it</c><00:10:06.480><c> works</c>
+
+00:10:07.110 --> 00:10:07.120 align:start position:0%
+it to prove to you that it works
+ 
+
+00:10:07.120 --> 00:10:08.949 align:start position:0%
+it to prove to you that it works
+and<00:10:07.360><c> hopefully</c><00:10:07.760><c> it's</c><00:10:07.920><c> somewhat</c><00:10:08.320><c> efficient</c>
+
+00:10:08.949 --> 00:10:08.959 align:start position:0%
+and hopefully it's somewhat efficient
+ 
+
+00:10:08.959 --> 00:10:11.350 align:start position:0%
+and hopefully it's somewhat efficient
+yep<00:10:09.360><c> it</c><00:10:09.760><c> runs</c><00:10:10.240><c> perfectly</c><00:10:10.959><c> and</c>
+
+00:10:11.350 --> 00:10:11.360 align:start position:0%
+yep it runs perfectly and
+ 
+
+00:10:11.360 --> 00:10:13.990 align:start position:0%
+yep it runs perfectly and
+it<00:10:11.680><c> is</c><00:10:12.320><c> pretty</c><00:10:12.640><c> efficient</c><00:10:13.360><c> so</c><00:10:13.519><c> i</c><00:10:13.600><c> hope</c><00:10:13.839><c> this</c>
+
+00:10:13.990 --> 00:10:14.000 align:start position:0%
+it is pretty efficient so i hope this
+ 
+
+00:10:14.000 --> 00:10:15.030 align:start position:0%
+it is pretty efficient so i hope this
+was<00:10:14.240><c> helpful</c>
+
+00:10:15.030 --> 00:10:15.040 align:start position:0%
+was helpful
+ 
+
+00:10:15.040 --> 00:10:17.269 align:start position:0%
+was helpful
+if<00:10:15.200><c> you</c><00:10:15.360><c> enjoyed</c><00:10:16.079><c> please</c><00:10:16.399><c> like</c><00:10:16.640><c> and</c><00:10:16.720><c> subscribe</c>
+
+00:10:17.269 --> 00:10:17.279 align:start position:0%
+if you enjoyed please like and subscribe
+ 
+
+00:10:17.279 --> 00:10:19.430 align:start position:0%
+if you enjoyed please like and subscribe
+it<00:10:17.440><c> supports</c><00:10:17.920><c> the</c><00:10:18.079><c> channel</c><00:10:18.480><c> a</c><00:10:18.720><c> lot</c><00:10:19.120><c> and</c><00:10:19.279><c> i'll</c>
+
+00:10:19.430 --> 00:10:19.440 align:start position:0%
+it supports the channel a lot and i'll
+ 
+
+00:10:19.440 --> 00:10:20.150 align:start position:0%
+it supports the channel a lot and i'll
+hopefully
+
+00:10:20.150 --> 00:10:20.160 align:start position:0%
+hopefully
+ 
+
+00:10:20.160 --> 00:10:24.800 align:start position:0%
+hopefully
+see<00:10:20.320><c> you</c><00:10:20.480><c> pretty</c><00:10:21.800><c> soon</c>
+

@@ -1,0 +1,431 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+let's solve swim in Rising water this is
+a graph problem we're given an N byn
+grid so it's going to be a square grid
+each position in the grid represents the
+elevation at that point and so basically
+some amount of rain is falling at time T
+the depth of the water everywhere is
+going to be T but you're going to find
+that we actually don't need to worry
+about this T variable we don't really
+need to worry about the water itself
+because we are allowed to swim at any
+position so from one square to another
+square if and only if the elevation of
+both the squares is less than or equal
+to t t is the amount of time that's
+passed and like I said we're actually
+not going to have to keep track of what
+T is the reason being let's keep reading
+the problem we can swim an infinite
+distance in zero time so you know if
+let's say this was our our 2D grid right
+1111 uh we could swim this entire
+distance in zero time and the question
+they're asking is if we start at the top
+left of the grid and we go to the bottom
+right of the grid What is the least time
+it takes for us to reach the bottom
+right Square so clearly we want to know
+the time but why did I say we don't
+actually have to keep track of this time
+because think about it initially we're
+going to be at time zero so let's say
+the top left of our grid is zero then
+let's say the right and bottom are are
+two right and then maybe the bottom
+right is also two so this is our grid
+right we're starting here we want to get
+to the bottom right so both of the paths
+are pretty much the same to get there so
+my question to you is what is going to
+be the time it takes for us to get here
+well remember initially there's zero
+water and for us to be able to reach
+this position too we can only reach it
+if T is less than or equal to 2 because
+that's the maximum elevation that we've
+gone at so really what the question is
+asking is what's going to be the path
+from the top left to the bottom right
+such that the the maximum height along
+this path is minimized right because the
+bottleneck is going to be whatever the
+maximum height is because if the maximum
+height is let's say uh four then no
+matter what we do we're going to have to
+wait for time to be less than or equal
+to four so the question is what path can
+we take to minimize what the t is and
+then return that particular T value so
+in this first example this is what the
+grid actually looks like and you can see
+we have two paths right we can go like
+this bottom right and what's going to be
+the max elevation we reach along this
+path it's going to be three right so
+that therefore the time we return has to
+be three or uh if we go along this path
+same thing right even though this is a
+two so so for us to reach this position
+to reach this two we would have to wait
+for time to be less than or equal to two
+but to reach this third position no
+matter what we're going to have to wait
+for time to equal three now of course
+one idea you might have is just consider
+every single possible path and then take
+along each path what is the maximum
+height and then return the minimum of
+the maximum height from all those paths
+right and if we're going to be going
+through every single path it's going to
+be exponential but there's actually a
+trick a greedy way we can solve this
+problem and you might remember a greedy
+algorithm called jigra algorithm and we
+can do a modified version of this
+algorithm which will give us a Time
+complexity of n^2 * log n so let me show
+you that solution right now so like I
+said we're going to be doing a modified
+version of jra's algorithm it's pretty
+much exactly like this algorithm just a
+slight difference and you might know
+that this algorithm requires a minimum
+Heap now this it's a breath first search
+jer's algorithm is basically a BFS
+search a breath first search but instead
+of doing a regular Q we're going to be
+using a priority CU AKA a heap so we're
+going to use a minimum Heap which is
+going to contain the frontier of where
+we're at so consider we start at the top
+left what's our Frontier going to be
+it's going to be the adjacent positions
+right this position and the bottom
+position which are going to be in our
+Frontier so we're going to take both of
+those and add them to our front here so
+we're really going to add the
+coordinates of these positions so think
+of the columns as being 012 and the rows
+also being 012 remember this is our
+Target position we want to know from
+here what's going to be the path that we
+can take that's going to get us here
+such that the maximum height along this
+path is minimized so why am I using a
+Min Heap why am I using Jar's algorithm
+because remember we're being greedy what
+did I just say we want to minimize the
+maximum height along the path that takes
+us to the result so if we start here at
+zero which one of these paths am I going
+to choose first would I choose the
+height of two or would I choose the
+height of one well of course we'd want
+the minimum height right because it's
+possible with a height of one we could
+also find another path that will take us
+to the result where the max height will
+still remain as being one right whereas
+if we go down this path we're basically
+guaranteeing okay the maximum height
+along the path to the the result is
+going to be at minimum two so of course
+we want to try the Min path first we
+want to try the smaller height first so
+when we take a position like this and
+add it to our Min Heap we're going to
+add three values the first one is going
+to be the key for our minimum Heap which
+is going to be the height so in this
+position the height is one so that's
+what we're going to add as the main key
+for this Min Heap right so when we pop a
+value from this Min Heap we want to pop
+the one that had a minimum height
+the other two values of course we're
+going to be adding are the row and
+column which are basically the
+coordinates of this position and I'm
+probably not going to write them out
+each time just to keep this code a
+little bit cleaner so that's kind of the
+main idea and each time we're going to
+be popping the minimum from our Min Heap
+uh you know and then continuing on the
+frontier so you know if we pop this
+value then we're going to look at its
+neighbors bottom and right the other two
+neighbors are out of bounds or which
+have already been visited we don't want
+to visit the same uh position twice so
+we're going to have a visit hash set for
+that but I'm not going to draw that just
+to keep things a little bit more simple
+and suppose we take two pths you know
+bottom right and we get to this two
+position and we take another path you
+know top right and then go down and get
+to this position this one position right
+and remember our goal is to find uh to
+get to this this end point right so from
+these two which of these two would I say
+is going going to be the path that leads
+to the result of course I would want to
+favor this one by looking at it right
+because okay the height over here is one
+the height over here is two so that must
+mean that this path is going to be the
+path with a smaller Max height but
+that's not actually true take a look at
+this path there's a three along this
+path whereas the maximum height along
+this path uh was a two right this two or
+this two so of course I would actually
+want this path to be the one that leads
+us to the result because the max height
+along that that path is a two so how can
+I do that this is where we modify jra's
+algorithm we don't really care about the
+edge weights in this algorithm we're not
+finding the shortest path we're finding
+the path with the smallest Max height so
+when I get to this position when I get
+here what I'm actually going to say is
+the value I'm going to put here when I
+add this to the Min Heap it's not going
+to be a one with the row and column I'm
+actually going to add a three because
+I'm saying to get to this position in
+the first place it took us a Max height
+of three so it's it's a bit disingenuous
+to say that this path only took a Max
+height of one so I'm not going to add a
+one in this position I'm going to add a
+three so each time we add a coordinate
+to the Min heat we want the maximum of
+its own height and the height that came
+before it so with that being said let's
+go through a really quick dry run so
+initially we have zero uh our Min Heap
+let's pop it and then let's get its
+neighbor so we have a two below it and
+we have a one to the right so let's add
+those so we add one row column and we
+add two row column so excuse me if this
+drawing gets a little bit messy but so
+now once again we're going to pop from
+the Min heat we're going to pop this one
+because it has a smaller Max height so
+we're going to uh pop it we're going to
+add its two neighbors right uh right and
+bottom and those two neighbors have a
+height of three and four respectively
+right so those are the max Heights along
+each of those paths so we add those four
+and that three to our Min Heap and now
+we're going to pop again from the Min
+Heap this time we're going to pop this
+two uh because that's the minimum height
+right now so we're going to pop this to
+we're going to look at the bottom and
+the right now the right has already been
+visited but the bottom has not been
+added to the Min Heap yet so let's add
+that to the Min Heap it has a height of
+one and you know we'll add those
+coordinates but I'm just writing row
+column just because to keep it a little
+bit cleaner but actually hold on a
+second I added a one here was that the
+correct thing to do because the the
+position that came before it was a two
+it's disingenuous to say that this to
+reach this position only takes a height
+of one when in reality what came before
+it was a two so what we're adding what
+we're really adding to it is the maximum
+of itself which is one and the one that
+came before it which is two so the max
+of one and two is obviously going to
+evaluate to two so we're going to add
+two and the row column to the Heap now
+we're going to pop again from the
+minimum Heap and this is going to be the
+one that we pop so we'll add its
+neighbors it doesn't have a bottom
+neighbor it doesn't have a left neighbor
+the above neighbor has already been
+visited the right neighbor hasn't been
+visited so let's add that to the m Heap
+so again we'll take the maximum of
+itself and what came before it so
+basically the max of two and two so two
+is going to be what we add and of course
+its coordinates once again we're going
+to pop from the in Heap pop the same one
+this two We'll add its neighbors uh it
+only has one neighbor this height of one
+but that's actually going to be a two
+because we know that you know the
+maximum height along this path itself
+was two so we're going to add a two row
+column now once again one last time
+we're going to pop from the Min Heap
+we're going to pop this value we pop it
+and before we continue we're going to
+see that okay it's its coordinates are
+the destination coordinates so we can
+return now what are we going to return
+well what was the max height along this
+path what was the max height along this
+path that uh we had to do obviously a
+two in either of these positions but are
+we actually going to have to look
+through the entire path again no because
+when we added this to the Min Heap we
+added it as a two and then we added its
+coordinates so we can say that the max
+height to reach it was a two this is the
+value that we're going to return and
+then we're done so that's kind of the
+general picture of how this algorithm is
+going to work coding it up is not too
+bad if you know Jar's Alm and you know
+how to use a minimum Heap so now let's
+dive into that code so the first thing
+I'm going to do is get the length of the
+grid we know it's a square grid so we
+can just uh say that n is both of the
+dimensions we are going to have a visit
+hash set to make sure we don't visit the
+same coordinate twice so let's do that
+we're also going to have a minimum Heap
+remember we're going to initialize the
+minimum Heap with values the first value
+is going to be the time that's going to
+be the key that's going to determine
+what we actually pop from them in Heap
+and then we're going to add the
+coordinates the time is basically also
+the max height so you can call it time
+or the you know Max height that it'll
+take and initially we're going to add
+the top left coordinate so what are the
+what's the height of the top left
+coordinate it's going to be whatever is
+in that position in the grid and the
+coordinates themselves are going to be 0
+0 that's the top left and since we're
+adding this to the Min Heap we can go
+ahead and actually add to visit uh the
+position 0 0 cuz we don't want to have
+to visit that again and last but not
+least we're going to need a little
+helper variable for us directions which
+are going to tell us the four directions
+that we can travel in 01 uh you'll see
+where we're going to be using these in
+just a moment it'll make the code a
+little bit cleaner for us mainly that's
+why I'm doing it so these are the four
+directions we can travel in that's going
+to be useful for us when we're doing our
+BFS solution so while our Min Heap is
+nonempty that's when we're going to be
+popping just like I showed in the
+drawing explanation so we can say in
+Python at least the way we can pop from
+A Min Heap is going to be Heap q. Heap
+pop and we're going to get three
+variables right the time or the max
+height it took us uh and the row column
+so those are going to be the three
+things that we pop now if we're also
+going to take this and add it to visit
+uh because this previously was not
+visited so we can say that this
+coordinate has now been visited now if
+this is the destination so if row is n
+minus one and
+column is n minus one that means we've
+reached the destination so what we're
+going to return is whatever the time or
+the max height it took us to get to this
+position but if we're not returning it
+that's when we're going to actually
+start traversing the four neighbors so
+we're going to use the difference in R
+the difference in column the basically
+the directions in our directions
+variable that we defined and using those
+we're going to compute the neighbor row
+and the neighbor column we can say the
+neighbor row is just going to be R plus
+Dr neighbor column is just going to be
+the column plus the difference in the
+column now it's possible that these
+could be out of bounds or this
+coordinate has already been visited so
+let's check that so if neighbor row is
+less than zero or neighbor column is
+less than zero or neighbor row is equal
+to n meaning it's out of bounds or
+neighbor column is equal to n meaning
+it's also out of bounds or this position
+has already been visited so we can check
+that like this so neighbor row neighbor
+column in visit so if any of these
+evaluate to true then we're going to
+skip this position basically we're going
+to continue to the next iteration of the
+loop but if none of these do evaluate
+then we want to mark this position as
+visit because we're about to add it to
+our Min Heap so let's first add U Market
+as visit and actually I just noticed if
+we're going to be marking it as visit uh
+right as we add it to the Min Heap
+there's no need to Mark something as
+visited after it's been popped from the
+Min Heap so I'm going to delete that
+line of above and so we're going to mark
+this as visit and then we're going to go
+ahead and add it to our our Min um Heap
+so we're going to say Heap q. Heap push
+to the Min Heap this uh coordinate so
+what are we adding as the coordinate so
+of course we're going to add the
+neighbor row and the neighbor column but
+remember what's the first variable we're
+adding we're adding the max height that
+it took so we're either going to say the
+maximum of itself or or rather it's its
+uh previous position so maximum of T and
+the maximum of whatever the height is at
+this particular position so the height
+at neighbor row neighbor column so this
+will make sure that the value that we
+add here is always going to be the max
+height along the path that it took for
+us to reach this neighbor row and
+neighbor column position and believe it
+or not that is the entire code we don't
+have to put a return statement on the
+outside because it's guaranteed that we
+can reach the target position and once
+we do we're automatically going to
+return whatever the max height was to
+reach that Target position so this is
+the entire code you can see that it is
+very efficient it's a very efficient
+solution so I hope this was helpful if
+it was please like And subscribe it
+supports the channel a lot and I'll
+hopefully see you pretty soon thanks for
+watching

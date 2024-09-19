@@ -1,0 +1,408 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+let's solve meeting rooms two
+and just like meeting rooms one we're
+going to solve this problem on the
+website called
+lint code because this is a premium leak
+code problem
+so if you want to be able to solve it
+for free you can use lintcode.com
+so it's pretty similar to meeting rooms
+one we are given a list of meeting times
+each meeting time is an
+object and it has two variables it has a
+start time
+and it has an end time and the end time
+is always going to come after the start
+time that's pretty intuitive
+and we want to know what's the minimum
+number of
+conference rooms required for all of
+these meetings now what they
+what they actually mean by conference
+rooms is basically
+what is the maximum number of
+overlapping
+meetings at any given point in time so
+for example
+in this input we have a meeting that
+starts at 0 ends at 30. another meeting
+that starts at 5 ends at 10
+and then another meeting that starts at
+15 and ends at 20.
+and we would need two meeting rooms for
+this problem because we
+are gonna have two overlapping meetings
+so if we had one room where the zero to
+thirty meeting is going on
+the five to 10 meeting is basically
+going to be going on
+during the same time as this one so
+we're going to need a second meeting
+room for this
+and we also have another meeting 15 to
+20. now it doesn't overlap with this one
+so technically they can be a part of the
+same meeting room now we don't actually
+need to determine
+what goes in each meeting room we just
+have to know what's the maximum number
+of overlapping meetings at any given
+point in time
+in this case that happens to be two we
+are going to be required to sort the
+input array
+which is going to take n log n time
+complexity so this is going to be the
+time complexity
+of the algorithm the memory complexity
+is going to be big o
+of n i'm going to show you how to do the
+solution now if you just stare at this
+like the problem statement and just look
+at these numbers it's going to be
+difficult to come up with how to code
+the solution but
+as you guys know i like to draw pictures
+and when you look at the picture it
+actually becomes pretty easy
+to figure out how to solve this problem
+so let's do that so this is kind of how
+we can visualize those meetings right
+these are the
+exact same meetings that we were given
+in that first example
+we have one meeting going from 0 to 30
+another meeting going from 5 to 10 and
+another meeting going from 15 to 20. now
+if we just go from left to right we're
+gonna see
+okay well this is the first meeting that
+starts right it starts at time zero
+and if we just keep going now we see
+what's the next point on our grid right
+well
+there's another meeting and this is not
+an end time this is not you know the the
+first meeting isn't
+ending there just happens to be another
+meeting that's starting so another
+meeting just started at time
+five so what does that tell us that
+tells us
+two meetings have started so far but
+nothing has ended right there's no
+meeting that's
+ended yet so at this point in time we're
+gonna have
+two meetings going on at the same amount
+of time so what we're gonna be
+maintaining is a variable
+count which tells us at any given point
+in time what is the number of meetings
+going on and right now our account is 2
+and we're going to end up returning
+whatever the max value this happened to
+be
+so what's the next point on our grid we
+visited this one we visited this one
+now we're looking at this one right okay
+at at time
+10 there's an end point this is not a
+starting value this is a starting value
+this is an
+ending value so what does that tell us
+that tells us a meeting has just
+ended so what are we going to do with
+our count we knew we had two meetings
+going on at the same time over here
+but now after this point we're only
+going to have one meeting going on right
+like look at the picture
+there's only one meeting going on and
+it's this first one right zero to 30. so
+we're going to set the number of
+meetings going on to
+one now we're going to look at the next
+point in order
+now it happens to be a start time so
+another meeting just started at time 15
+right so once again there are two
+meetings going on right at this point
+there's two meetings going on the first
+one and
+this second one so once again a meeting
+started that's going to tell us to
+increment our
+count so now we're gonna say two
+meetings are once again going on
+and again we're gonna repeat the same
+process the next point is at 20 this
+happens to be an
+end time so that means a meeting is
+ending right we don't
+we don't technically even know is it
+this meeting that's ending or is it this
+meeting that's ending it doesn't really
+matter to us
+all we know is that after this point
+only one meeting is gonna be going on at
+any particular time and it's gonna be
+this one
+so we're gonna take our count of
+meetings going on decrement it and now
+it's gonna be
+one and last but not least we're going
+to go to the last
+point in our grid and it's also a end
+time obviously the last point is always
+going to be
+a end time for a meeting so that means
+another meeting is stopping
+after that point there's only going to
+be you know zero meetings going on
+so therefore we can take our count
+decrement it all the way down
+to zero now we notice that what was the
+max value that count happened to be
+well the max it ever reached was two so
+therefore we're going to return
+two as our result two meeting rooms is
+enough to contain all of these meetings
+so let me show you quickly how we're
+actually going to be sorting these
+points and how we're going to be able to
+iterate through each point in order
+regardless of if it's a start time for a
+meeting or if it's an
+end time for a meeting so i'm going to
+slightly change the example in this case
+so
+just by looking at the picture what do
+you think the meeting room's number
+would be for this
+problem well you see over here there's
+gonna be one meeting
+going on here there's gonna be two
+meetings here there's gonna be two
+meetings here there's gonna be one
+meeting but look at this point at
+point time equals 10 clearly there's
+three
+meetings going on at this time or at
+least three meetings have a 10 value
+included in their time
+interval does that mean that there's
+going to be three meetings going on
+well technically the way this problem is
+defined this meeting would
+end before this meeting started what i'm
+saying is these two meetings are
+non-overlapping so when we are going
+through this point if we ever have a
+tie meaning if we ever have two points
+with the exact same value
+what we're gonna do is we're always
+gonna iterate through the
+end meeting time before we iterate
+through the start
+meeting time right notice how this is a
+end time this is a start time we're
+always gonna pick
+this one if we ever get a tie like this
+so we're actually going to have
+two input arrays we're not just going to
+sort every meeting based on the start
+time what i'm going to do is i'm going
+to put all start times in a separate
+array
+so 0 5 and 10 are all gonna go in a
+separate
+array these are all the start times for
+any meeting right this way
+we have them in sorted order and we know
+okay these are the ones
+that are start times we can
+differentiate between a start time and
+an
+end time we're also going to put every
+end time
+in an array as well in sorted order so
+we can see the first is 10
+next 15 next 30. so now we're going to
+start this problem off with two pointers
+we're going to have one pointer at the
+beginning of start and one pointer at
+the beginning of end
+we're always between these two we're
+always going to pick the minimum value
+so
+we are going to maintain a count which
+tells us the number of meetings that are
+going
+on and if the minimum between these two
+is the start time what we're going to do
+is we're going to increment the count of
+meetings going on and then shift our
+start pointer to the next one
+and we can see that that's the case
+again right 5 is less than 10 therefore
+a meeting has to start before this
+meeting ends
+so once again we're going to shift our
+pointer over here and we're going to
+increment our count by one so
+the count is now gonna be set to two and
+now we get to the edge case right we got
+a tie so
+a meeting is ending and a meeting is
+starting remember we are gonna
+visit the end time if there's a tie
+first so what we're gonna say
+now is that okay a meeting has to end
+before this meeting starts so we're
+gonna shift our
+end pointer to the next one if we
+iterate through an end value that means
+a meeting just ended therefore we're
+gonna decrement our count by one so
+two is decremented by one it's going to
+be set to one now
+now again we're going to compare these
+two values 10 and 15. which one is
+smaller the 10 right so therefore
+another meeting is starting
+so we're going to increment our count by
+one so count is now going to be equal to
+two and now we don't even have any start
+times
+left so technically at this point we're
+just going to be iterating through the
+end time so we're literally just going
+to be decrementing this so we iterate
+through this
+decrement this down to one iterate
+through this decrement this down to zero
+so technically
+once we've gotten through all start
+times we don't even have to iterate
+through
+the remaining portion of end times so
+what we can say is that our max count
+at any given point it reached was two so
+therefore we're going to return
+two so that is basically the algorithm
+we're going to use
+and coding it up isn't going to be too
+difficult yes we are going to have to
+create two separate arrays start and end
+and we're going to sort these input
+arrays so the time complexity is going
+to be n log n the memory complexity is
+going to be big o of
+n that being said let's jump into the
+code now on lint code
+so like i said we are going to create a
+array for all start times in sorted
+order now i'm sure you know how to do
+that in your language of choice
+but in python there's a pretty easy way
+to do it so we're going to go through
+for every interval
+in the list of intervals that we're
+given now
+an interval is an object as defined up
+above it as two member variables start
+and end so since this arrays start we're
+going to put every start time of this
+interval
+in this input array and don't forget we
+are going to sort it so and i can do
+that
+on the same line just like this we're
+going to have a similar array for n
+times basically doing the exact same
+thing so a sorted input array
+of i dot n for every interval in the
+list of
+intervals now we are going to have a
+result variable and a count variable so
+count is just going to be whatever what
+i basically said it was going to be
+result is just going to continuously be
+whatever the max we have reached so far
+for the count variable
+and we are also going to have two
+pointers i'm just going to name them s
+and e uh they're initially going to be
+both
+zero so s is gonna be the position we're
+at in our start array e
+is gonna be the position we're at in our
+end array and i'm basically just going
+to keep
+going while s has not reached the
+end of intervals because we know of
+course s
+is going to reach the end before e does
+because the start times are always
+before the end times
+so remember we have two cases if the
+start if the position that we're at in
+our start array
+is less than the position we're at in
+our end array
+and the other case would be if the end
+array
+was greater than the s than the start
+array which would be the else case but
+also if these were
+equal we're also going to do the else
+case because if they're equal then we
+want to make sure we increment our e
+pointer first
+so that's exactly what we would do here
+we would take e
+increment increment it by one and
+to our count decrement it by one the
+opposite is going to be true up here so
+here
+since s is smaller since the start time
+is smaller we're going to be
+shifting our s pointer and we're going
+to be incrementing the count so we do
+have one additional meeting going
+on right now that's what we're saying
+and after every
+iteration basically we're gonna update
+our result potentially we always want it
+to be the maximum that we've reached so
+far for count so we're gonna just take
+the max
+of result and count once that is done
+that means
+this loop once this loop is done that
+means we've finished all of our start
+times
+so at that point we can basically return
+our result because we've ensured that it
+has reached whatever the maximum it was
+going to be
+and with all that we can go ahead and
+submit it hopefully this works
+and as you can see it does it's about as
+efficient as it would get
+so this is the entire code it's not too
+bad once you can kind of visualize what
+is actually going on that's how you can
+kind of figure out
+how to put the different points inside
+of separate input arrays
+but i think it would be pretty difficult
+to come up with this on your own in like
+a very short interview
+but i hope this was helpful if it was
+please like and subscribe it supports
+our channel
+a lot and i'll hopefully see you pretty

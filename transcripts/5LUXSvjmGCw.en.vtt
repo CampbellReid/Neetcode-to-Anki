@@ -1,0 +1,2672 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.589 align:start position:0%
+ 
+hey<00:00:00.240><c> everyone</c><00:00:00.640><c> welcome</c><00:00:01.040><c> back</c><00:00:01.280><c> and</c><00:00:01.360><c> let's</c>
+
+00:00:01.589 --> 00:00:01.599 align:start position:0%
+hey everyone welcome back and let's
+ 
+
+00:00:01.599 --> 00:00:03.510 align:start position:0%
+hey everyone welcome back and let's
+write<00:00:01.760><c> some</c><00:00:01.920><c> more</c><00:00:02.159><c> neat</c><00:00:02.399><c> code</c><00:00:02.639><c> today</c><00:00:02.960><c> so</c><00:00:03.120><c> today</c>
+
+00:00:03.510 --> 00:00:03.520 align:start position:0%
+write some more neat code today so today
+ 
+
+00:00:03.520 --> 00:00:04.230 align:start position:0%
+write some more neat code today so today
+let's<00:00:03.760><c> solve</c>
+
+00:00:04.230 --> 00:00:04.240 align:start position:0%
+let's solve
+ 
+
+00:00:04.240 --> 00:00:07.510 align:start position:0%
+let's solve
+kth<00:00:04.880><c> smallest</c><00:00:05.600><c> element</c><00:00:06.080><c> in</c><00:00:06.319><c> a</c><00:00:06.560><c> binary</c><00:00:07.120><c> search</c>
+
+00:00:07.510 --> 00:00:07.520 align:start position:0%
+kth smallest element in a binary search
+ 
+
+00:00:07.520 --> 00:00:07.990 align:start position:0%
+kth smallest element in a binary search
+tree
+
+00:00:07.990 --> 00:00:08.000 align:start position:0%
+tree
+ 
+
+00:00:08.000 --> 00:00:09.910 align:start position:0%
+tree
+so<00:00:08.160><c> we're</c><00:00:08.400><c> given</c><00:00:08.639><c> the</c><00:00:08.880><c> root</c><00:00:09.120><c> of</c><00:00:09.280><c> a</c><00:00:09.360><c> binary</c>
+
+00:00:09.910 --> 00:00:09.920 align:start position:0%
+so we're given the root of a binary
+ 
+
+00:00:09.920 --> 00:00:11.830 align:start position:0%
+so we're given the root of a binary
+search<00:00:10.240><c> tree</c><00:00:10.719><c> and</c><00:00:10.960><c> an</c><00:00:11.200><c> integer</c>
+
+00:00:11.830 --> 00:00:11.840 align:start position:0%
+search tree and an integer
+ 
+
+00:00:11.840 --> 00:00:15.430 align:start position:0%
+search tree and an integer
+k<00:00:12.480><c> and</c><00:00:12.639><c> we</c><00:00:12.799><c> want</c><00:00:12.960><c> to</c><00:00:13.120><c> return</c><00:00:13.599><c> the</c><00:00:13.920><c> kth</c><00:00:14.639><c> smallest</c>
+
+00:00:15.430 --> 00:00:15.440 align:start position:0%
+k and we want to return the kth smallest
+ 
+
+00:00:15.440 --> 00:00:18.310 align:start position:0%
+k and we want to return the kth smallest
+element<00:00:15.920><c> in</c><00:00:16.080><c> the</c><00:00:16.320><c> binary</c><00:00:16.880><c> search</c><00:00:17.199><c> tree</c><00:00:17.840><c> right</c>
+
+00:00:18.310 --> 00:00:18.320 align:start position:0%
+element in the binary search tree right
+ 
+
+00:00:18.320 --> 00:00:20.550 align:start position:0%
+element in the binary search tree right
+and<00:00:18.480><c> so</c><00:00:18.640><c> remember</c><00:00:19.039><c> a</c><00:00:19.279><c> binary</c><00:00:19.760><c> search</c><00:00:20.080><c> tree</c><00:00:20.320><c> by</c>
+
+00:00:20.550 --> 00:00:20.560 align:start position:0%
+and so remember a binary search tree by
+ 
+
+00:00:20.560 --> 00:00:22.630 align:start position:0%
+and so remember a binary search tree by
+definition<00:00:21.279><c> means</c><00:00:21.680><c> that</c><00:00:21.840><c> it's</c><00:00:22.160><c> in</c>
+
+00:00:22.630 --> 00:00:22.640 align:start position:0%
+definition means that it's in
+ 
+
+00:00:22.640 --> 00:00:25.509 align:start position:0%
+definition means that it's in
+order<00:00:23.279><c> meaning</c><00:00:23.680><c> that</c><00:00:24.000><c> for</c><00:00:24.320><c> let's</c><00:00:24.560><c> say</c><00:00:24.800><c> 3</c>
+
+00:00:25.509 --> 00:00:25.519 align:start position:0%
+order meaning that for let's say 3
+ 
+
+00:00:25.519 --> 00:00:27.189 align:start position:0%
+order meaning that for let's say 3
+everything<00:00:25.920><c> in</c><00:00:26.080><c> its</c><00:00:26.320><c> left</c><00:00:26.560><c> subtree</c><00:00:26.960><c> is</c><00:00:27.119><c> going</c>
+
+00:00:27.189 --> 00:00:27.199 align:start position:0%
+everything in its left subtree is going
+ 
+
+00:00:27.199 --> 00:00:27.589 align:start position:0%
+everything in its left subtree is going
+to<00:00:27.279><c> be</c>
+
+00:00:27.589 --> 00:00:27.599 align:start position:0%
+to be
+ 
+
+00:00:27.599 --> 00:00:30.150 align:start position:0%
+to be
+less<00:00:27.920><c> than</c><00:00:28.240><c> 3.</c><00:00:28.880><c> everything</c><00:00:29.279><c> that's</c><00:00:29.519><c> right</c><00:00:29.840><c> sub</c>
+
+00:00:30.150 --> 00:00:30.160 align:start position:0%
+less than 3. everything that's right sub
+ 
+
+00:00:30.160 --> 00:00:31.029 align:start position:0%
+less than 3. everything that's right sub
+tree<00:00:30.400><c> is</c><00:00:30.480><c> going</c><00:00:30.560><c> to</c><00:00:30.640><c> be</c>
+
+00:00:31.029 --> 00:00:31.039 align:start position:0%
+tree is going to be
+ 
+
+00:00:31.039 --> 00:00:33.990 align:start position:0%
+tree is going to be
+greater<00:00:31.519><c> than</c><00:00:31.840><c> three</c><00:00:32.480><c> and</c><00:00:32.719><c> so</c><00:00:33.040><c> let's</c><00:00:33.280><c> say</c><00:00:33.520><c> k</c>
+
+00:00:33.990 --> 00:00:34.000 align:start position:0%
+greater than three and so let's say k
+ 
+
+00:00:34.000 --> 00:00:34.549 align:start position:0%
+greater than three and so let's say k
+equals
+
+00:00:34.549 --> 00:00:34.559 align:start position:0%
+equals
+ 
+
+00:00:34.559 --> 00:00:37.110 align:start position:0%
+equals
+one<00:00:34.800><c> that</c><00:00:34.960><c> means</c><00:00:35.200><c> we</c><00:00:35.360><c> want</c><00:00:35.600><c> the</c><00:00:35.920><c> one</c><00:00:36.320><c> smallest</c>
+
+00:00:37.110 --> 00:00:37.120 align:start position:0%
+one that means we want the one smallest
+ 
+
+00:00:37.120 --> 00:00:37.750 align:start position:0%
+one that means we want the one smallest
+element
+
+00:00:37.750 --> 00:00:37.760 align:start position:0%
+element
+ 
+
+00:00:37.760 --> 00:00:40.389 align:start position:0%
+element
+in<00:00:38.239><c> the</c><00:00:38.640><c> binary</c><00:00:39.040><c> search</c><00:00:39.280><c> tree</c><00:00:39.520><c> so</c><00:00:39.760><c> if</c><00:00:39.920><c> you</c><00:00:40.079><c> put</c>
+
+00:00:40.389 --> 00:00:40.399 align:start position:0%
+in the binary search tree so if you put
+ 
+
+00:00:40.399 --> 00:00:42.310 align:start position:0%
+in the binary search tree so if you put
+all<00:00:40.640><c> four</c><00:00:40.800><c> of</c><00:00:40.879><c> these</c><00:00:41.120><c> elements</c><00:00:41.600><c> in</c><00:00:41.840><c> order</c><00:00:42.160><c> we</c>
+
+00:00:42.310 --> 00:00:42.320 align:start position:0%
+all four of these elements in order we
+ 
+
+00:00:42.320 --> 00:00:43.110 align:start position:0%
+all four of these elements in order we
+get<00:00:42.480><c> a</c><00:00:42.640><c> one</c>
+
+00:00:43.110 --> 00:00:43.120 align:start position:0%
+get a one
+ 
+
+00:00:43.120 --> 00:00:46.389 align:start position:0%
+get a one
+two<00:00:43.680><c> three</c><00:00:44.559><c> and</c><00:00:44.879><c> four</c><00:00:45.120><c> the</c><00:00:45.360><c> smallest</c><00:00:45.920><c> element</c>
+
+00:00:46.389 --> 00:00:46.399 align:start position:0%
+two three and four the smallest element
+ 
+
+00:00:46.399 --> 00:00:47.110 align:start position:0%
+two three and four the smallest element
+is
+
+00:00:47.110 --> 00:00:47.120 align:start position:0%
+is
+ 
+
+00:00:47.120 --> 00:00:50.630 align:start position:0%
+is
+one<00:00:47.520><c> so</c><00:00:47.760><c> then</c><00:00:48.000><c> we</c><00:00:48.160><c> can</c><00:00:48.320><c> return</c><00:00:49.280><c> one</c><00:00:50.000><c> and</c><00:00:50.239><c> now</c><00:00:50.480><c> so</c>
+
+00:00:50.630 --> 00:00:50.640 align:start position:0%
+one so then we can return one and now so
+ 
+
+00:00:50.640 --> 00:00:51.510 align:start position:0%
+one so then we can return one and now so
+your<00:00:51.039><c> first</c>
+
+00:00:51.510 --> 00:00:51.520 align:start position:0%
+your first
+ 
+
+00:00:51.520 --> 00:00:53.990 align:start position:0%
+your first
+thought<00:00:51.760><c> with</c><00:00:52.000><c> this</c><00:00:52.239><c> problem</c><00:00:53.039><c> might</c><00:00:53.440><c> be</c><00:00:53.680><c> that</c>
+
+00:00:53.990 --> 00:00:54.000 align:start position:0%
+thought with this problem might be that
+ 
+
+00:00:54.000 --> 00:00:55.029 align:start position:0%
+thought with this problem might be that
+okay<00:00:54.320><c> so</c>
+
+00:00:55.029 --> 00:00:55.039 align:start position:0%
+okay so
+ 
+
+00:00:55.039 --> 00:00:57.110 align:start position:0%
+okay so
+in<00:00:55.360><c> order</c><00:00:55.840><c> like</c><00:00:56.160><c> you</c><00:00:56.320><c> saw</c><00:00:56.480><c> what</c><00:00:56.640><c> i</c><00:00:56.719><c> just</c><00:00:56.960><c> did</c>
+
+00:00:57.110 --> 00:00:57.120 align:start position:0%
+in order like you saw what i just did
+ 
+
+00:00:57.120 --> 00:00:58.709 align:start position:0%
+in order like you saw what i just did
+right<00:00:57.360><c> i</c><00:00:57.440><c> just</c><00:00:57.520><c> took</c><00:00:57.840><c> every</c><00:00:58.079><c> element</c><00:00:58.480><c> and</c><00:00:58.559><c> put</c>
+
+00:00:58.709 --> 00:00:58.719 align:start position:0%
+right i just took every element and put
+ 
+
+00:00:58.719 --> 00:00:59.110 align:start position:0%
+right i just took every element and put
+it<00:00:58.879><c> in</c>
+
+00:00:59.110 --> 00:00:59.120 align:start position:0%
+it in
+ 
+
+00:00:59.120 --> 00:01:01.430 align:start position:0%
+it in
+order<00:00:59.440><c> and</c><00:00:59.520><c> then</c><00:00:59.760><c> took</c><00:01:00.079><c> the</c><00:01:00.399><c> kth</c><00:01:00.960><c> element</c>
+
+00:01:01.430 --> 00:01:01.440 align:start position:0%
+order and then took the kth element
+ 
+
+00:01:01.440 --> 00:01:03.830 align:start position:0%
+order and then took the kth element
+right<00:01:01.920><c> and</c><00:01:02.160><c> if</c><00:01:02.320><c> k</c><00:01:02.559><c> was</c><00:01:02.800><c> 2</c><00:01:03.120><c> we</c><00:01:03.280><c> would</c><00:01:03.440><c> get</c><00:01:03.600><c> the</c>
+
+00:01:03.830 --> 00:01:03.840 align:start position:0%
+right and if k was 2 we would get the
+ 
+
+00:01:03.840 --> 00:01:05.750 align:start position:0%
+right and if k was 2 we would get the
+second<00:01:04.159><c> element</c><00:01:04.479><c> if</c><00:01:04.640><c> k</c><00:01:04.879><c> was</c><00:01:05.199><c> 3</c>
+
+00:01:05.750 --> 00:01:05.760 align:start position:0%
+second element if k was 3
+ 
+
+00:01:05.760 --> 00:01:08.310 align:start position:0%
+second element if k was 3
+we'd<00:01:06.000><c> get</c><00:01:06.159><c> the</c><00:01:06.320><c> third</c><00:01:06.640><c> element</c><00:01:07.040><c> right</c><00:01:07.680><c> so</c><00:01:08.240><c> is</c>
+
+00:01:08.310 --> 00:01:08.320 align:start position:0%
+we'd get the third element right so is
+ 
+
+00:01:08.320 --> 00:01:09.910 align:start position:0%
+we'd get the third element right so is
+there<00:01:08.560><c> a</c><00:01:08.640><c> way</c><00:01:08.880><c> i</c><00:01:08.960><c> can</c><00:01:09.119><c> take</c><00:01:09.280><c> this</c><00:01:09.520><c> binary</c>
+
+00:01:09.910 --> 00:01:09.920 align:start position:0%
+there a way i can take this binary
+ 
+
+00:01:09.920 --> 00:01:10.630 align:start position:0%
+there a way i can take this binary
+search<00:01:10.240><c> tree</c>
+
+00:01:10.630 --> 00:01:10.640 align:start position:0%
+search tree
+ 
+
+00:01:10.640 --> 00:01:13.429 align:start position:0%
+search tree
+and<00:01:10.799><c> then</c><00:01:11.040><c> put</c><00:01:11.280><c> it</c><00:01:11.439><c> into</c><00:01:12.080><c> a</c><00:01:12.400><c> sorted</c><00:01:12.960><c> array</c><00:01:13.360><c> or</c>
+
+00:01:13.429 --> 00:01:13.439 align:start position:0%
+and then put it into a sorted array or
+ 
+
+00:01:13.439 --> 00:01:14.310 align:start position:0%
+and then put it into a sorted array or
+something
+
+00:01:14.310 --> 00:01:14.320 align:start position:0%
+something
+ 
+
+00:01:14.320 --> 00:01:16.390 align:start position:0%
+something
+and<00:01:14.799><c> the</c><00:01:14.960><c> answer</c><00:01:15.360><c> is</c><00:01:15.520><c> yes</c><00:01:15.759><c> right</c><00:01:16.000><c> because</c>
+
+00:01:16.390 --> 00:01:16.400 align:start position:0%
+and the answer is yes right because
+ 
+
+00:01:16.400 --> 00:01:17.350 align:start position:0%
+and the answer is yes right because
+binary<00:01:16.880><c> search</c>
+
+00:01:17.350 --> 00:01:17.360 align:start position:0%
+binary search
+ 
+
+00:01:17.360 --> 00:01:21.109 align:start position:0%
+binary search
+tree<00:01:17.759><c> means</c><00:01:18.080><c> that</c><00:01:18.400><c> if</c><00:01:18.560><c> we</c><00:01:18.960><c> traverse</c><00:01:20.000><c> this</c><00:01:20.400><c> tree</c>
+
+00:01:21.109 --> 00:01:21.119 align:start position:0%
+tree means that if we traverse this tree
+ 
+
+00:01:21.119 --> 00:01:23.990 align:start position:0%
+tree means that if we traverse this tree
+in<00:01:21.680><c> order</c><00:01:22.400><c> and</c><00:01:22.479><c> then</c><00:01:22.880><c> take</c><00:01:23.200><c> each</c><00:01:23.520><c> element</c><00:01:23.920><c> and</c>
+
+00:01:23.990 --> 00:01:24.000 align:start position:0%
+in order and then take each element and
+ 
+
+00:01:24.000 --> 00:01:26.070 align:start position:0%
+in order and then take each element and
+then<00:01:24.240><c> put</c><00:01:24.479><c> it</c><00:01:24.640><c> into</c><00:01:24.880><c> an</c><00:01:25.119><c> array</c>
+
+00:01:26.070 --> 00:01:26.080 align:start position:0%
+then put it into an array
+ 
+
+00:01:26.080 --> 00:01:28.550 align:start position:0%
+then put it into an array
+then<00:01:26.240><c> we've</c><00:01:26.479><c> basically</c><00:01:27.119><c> solved</c><00:01:27.520><c> this</c><00:01:27.840><c> problem</c>
+
+00:01:28.550 --> 00:01:28.560 align:start position:0%
+then we've basically solved this problem
+ 
+
+00:01:28.560 --> 00:01:30.550 align:start position:0%
+then we've basically solved this problem
+so<00:01:28.799><c> for</c><00:01:28.960><c> example</c><00:01:29.360><c> we</c><00:01:29.600><c> start</c><00:01:29.840><c> at</c><00:01:29.920><c> the</c><00:01:30.159><c> root</c><00:01:30.400><c> but</c>
+
+00:01:30.550 --> 00:01:30.560 align:start position:0%
+so for example we start at the root but
+ 
+
+00:01:30.560 --> 00:01:31.109 align:start position:0%
+so for example we start at the root but
+we<00:01:30.640><c> don't</c>
+
+00:01:31.109 --> 00:01:31.119 align:start position:0%
+we don't
+ 
+
+00:01:31.119 --> 00:01:34.390 align:start position:0%
+we don't
+visit<00:01:31.520><c> the</c><00:01:31.759><c> value</c><00:01:32.320><c> yet</c><00:01:32.640><c> right</c><00:01:32.880><c> we</c><00:01:33.119><c> go</c><00:01:33.360><c> to</c><00:01:33.920><c> the</c>
+
+00:01:34.390 --> 00:01:34.400 align:start position:0%
+visit the value yet right we go to the
+ 
+
+00:01:34.400 --> 00:01:36.789 align:start position:0%
+visit the value yet right we go to the
+left<00:01:34.720><c> child</c><00:01:35.119><c> right</c><00:01:35.360><c> and</c><00:01:35.439><c> then</c><00:01:35.680><c> we</c><00:01:36.159><c> see</c><00:01:36.400><c> okay</c><00:01:36.720><c> it</c>
+
+00:01:36.789 --> 00:01:36.799 align:start position:0%
+left child right and then we see okay it
+ 
+
+00:01:36.799 --> 00:01:37.429 align:start position:0%
+left child right and then we see okay it
+doesn't<00:01:37.119><c> have</c>
+
+00:01:37.429 --> 00:01:37.439 align:start position:0%
+doesn't have
+ 
+
+00:01:37.439 --> 00:01:39.510 align:start position:0%
+doesn't have
+a<00:01:37.680><c> left</c><00:01:38.400><c> subtree</c><00:01:38.880><c> right</c><00:01:39.040><c> doesn't</c><00:01:39.280><c> have</c><00:01:39.360><c> any</c>
+
+00:01:39.510 --> 00:01:39.520 align:start position:0%
+a left subtree right doesn't have any
+ 
+
+00:01:39.520 --> 00:01:41.910 align:start position:0%
+a left subtree right doesn't have any
+left<00:01:39.840><c> child</c><00:01:40.079><c> so</c><00:01:40.240><c> then</c><00:01:40.400><c> we</c><00:01:40.640><c> visit</c><00:01:41.119><c> one</c>
+
+00:01:41.910 --> 00:01:41.920 align:start position:0%
+left child so then we visit one
+ 
+
+00:01:41.920 --> 00:01:43.510 align:start position:0%
+left child so then we visit one
+by<00:01:42.079><c> that</c><00:01:42.320><c> i</c><00:01:42.399><c> mean</c><00:01:42.560><c> we</c><00:01:42.720><c> basically</c><00:01:43.200><c> put</c><00:01:43.360><c> it</c>
+
+00:01:43.510 --> 00:01:43.520 align:start position:0%
+by that i mean we basically put it
+ 
+
+00:01:43.520 --> 00:01:45.109 align:start position:0%
+by that i mean we basically put it
+inside<00:01:43.920><c> of</c><00:01:44.079><c> our</c><00:01:44.320><c> array</c>
+
+00:01:45.109 --> 00:01:45.119 align:start position:0%
+inside of our array
+ 
+
+00:01:45.119 --> 00:01:47.270 align:start position:0%
+inside of our array
+then<00:01:45.360><c> we</c><00:01:45.520><c> go</c><00:01:45.680><c> to</c><00:01:45.920><c> its</c><00:01:46.159><c> right</c><00:01:46.399><c> subtree</c><00:01:46.880><c> we</c><00:01:47.040><c> see</c>
+
+00:01:47.270 --> 00:01:47.280 align:start position:0%
+then we go to its right subtree we see
+ 
+
+00:01:47.280 --> 00:01:48.230 align:start position:0%
+then we go to its right subtree we see
+okay<00:01:47.680><c> two</c>
+
+00:01:48.230 --> 00:01:48.240 align:start position:0%
+okay two
+ 
+
+00:01:48.240 --> 00:01:51.109 align:start position:0%
+okay two
+we<00:01:48.399><c> add</c><00:01:48.720><c> two</c><00:01:48.960><c> to</c><00:01:49.119><c> the</c><00:01:49.200><c> array</c><00:01:50.079><c> and</c><00:01:50.320><c> of</c><00:01:50.479><c> course</c>
+
+00:01:51.109 --> 00:01:51.119 align:start position:0%
+we add two to the array and of course
+ 
+
+00:01:51.119 --> 00:01:52.149 align:start position:0%
+we add two to the array and of course
+since<00:01:51.360><c> we</c><00:01:51.600><c> know</c>
+
+00:01:52.149 --> 00:01:52.159 align:start position:0%
+since we know
+ 
+
+00:01:52.159 --> 00:01:54.230 align:start position:0%
+since we know
+k<00:01:52.560><c> is</c><00:01:52.720><c> one</c><00:01:52.880><c> we</c><00:01:53.040><c> could</c><00:01:53.200><c> actually</c><00:01:53.600><c> stop</c><00:01:54.000><c> here</c>
+
+00:01:54.230 --> 00:01:54.240 align:start position:0%
+k is one we could actually stop here
+ 
+
+00:01:54.240 --> 00:01:55.830 align:start position:0%
+k is one we could actually stop here
+once<00:01:54.479><c> we</c><00:01:54.720><c> visited</c><00:01:55.200><c> the</c><00:01:55.439><c> one</c>
+
+00:01:55.830 --> 00:01:55.840 align:start position:0%
+once we visited the one
+ 
+
+00:01:55.840 --> 00:01:57.749 align:start position:0%
+once we visited the one
+but<00:01:56.320><c> we</c><00:01:56.479><c> could</c><00:01:56.640><c> also</c><00:01:56.960><c> continue</c><00:01:57.360><c> to</c><00:01:57.520><c> add</c>
+
+00:01:57.749 --> 00:01:57.759 align:start position:0%
+but we could also continue to add
+ 
+
+00:01:57.759 --> 00:01:59.350 align:start position:0%
+but we could also continue to add
+elements<00:01:58.240><c> so</c><00:01:58.399><c> then</c><00:01:58.560><c> we'd</c><00:01:58.799><c> pop</c><00:01:59.040><c> back</c>
+
+00:01:59.350 --> 00:01:59.360 align:start position:0%
+elements so then we'd pop back
+ 
+
+00:01:59.360 --> 00:02:02.310 align:start position:0%
+elements so then we'd pop back
+up<00:01:59.439><c> to</c><00:01:59.600><c> the</c><00:01:59.840><c> three</c><00:02:00.640><c> add</c><00:02:00.880><c> the</c><00:02:01.119><c> three</c><00:02:02.000><c> and</c><00:02:02.079><c> then</c>
+
+00:02:02.310 --> 00:02:02.320 align:start position:0%
+up to the three add the three and then
+ 
+
+00:02:02.320 --> 00:02:04.069 align:start position:0%
+up to the three add the three and then
+we<00:02:02.479><c> go</c><00:02:02.640><c> to</c><00:02:02.799><c> the</c><00:02:02.960><c> right</c><00:02:03.200><c> child</c><00:02:03.600><c> and</c><00:02:03.759><c> then</c>
+
+00:02:04.069 --> 00:02:04.079 align:start position:0%
+we go to the right child and then
+ 
+
+00:02:04.079 --> 00:02:06.550 align:start position:0%
+we go to the right child and then
+see<00:02:04.240><c> the</c><00:02:04.399><c> four</c><00:02:04.640><c> and</c><00:02:04.799><c> add</c><00:02:04.960><c> the</c><00:02:05.200><c> four</c><00:02:05.840><c> and</c><00:02:06.079><c> so</c><00:02:06.240><c> you</c>
+
+00:02:06.550 --> 00:02:06.560 align:start position:0%
+see the four and add the four and so you
+ 
+
+00:02:06.560 --> 00:02:07.109 align:start position:0%
+see the four and add the four and so you
+know
+
+00:02:07.109 --> 00:02:07.119 align:start position:0%
+know
+ 
+
+00:02:07.119 --> 00:02:09.669 align:start position:0%
+know
+that<00:02:07.439><c> writing</c><00:02:08.000><c> an</c><00:02:08.239><c> in-order</c><00:02:08.720><c> traversal</c><00:02:09.360><c> for</c><00:02:09.599><c> a</c>
+
+00:02:09.669 --> 00:02:09.679 align:start position:0%
+that writing an in-order traversal for a
+ 
+
+00:02:09.679 --> 00:02:12.150 align:start position:0%
+that writing an in-order traversal for a
+binary<00:02:10.080><c> search</c><00:02:10.319><c> tree</c><00:02:10.560><c> recursively</c><00:02:11.599><c> is</c><00:02:11.840><c> pretty</c>
+
+00:02:12.150 --> 00:02:12.160 align:start position:0%
+binary search tree recursively is pretty
+ 
+
+00:02:12.160 --> 00:02:12.949 align:start position:0%
+binary search tree recursively is pretty
+easy<00:02:12.480><c> right</c><00:02:12.640><c> but</c>
+
+00:02:12.949 --> 00:02:12.959 align:start position:0%
+easy right but
+ 
+
+00:02:12.959 --> 00:02:14.229 align:start position:0%
+easy right but
+i'm<00:02:13.040><c> going</c><00:02:13.120><c> to</c><00:02:13.200><c> show</c><00:02:13.360><c> you</c><00:02:13.520><c> how</c><00:02:13.599><c> to</c><00:02:13.760><c> do</c><00:02:13.920><c> it</c>
+
+00:02:14.229 --> 00:02:14.239 align:start position:0%
+i'm going to show you how to do it
+ 
+
+00:02:14.239 --> 00:02:16.150 align:start position:0%
+i'm going to show you how to do it
+iteratively<00:02:14.879><c> which</c><00:02:15.200><c> you</c><00:02:15.440><c> might</c><00:02:15.760><c> not</c>
+
+00:02:16.150 --> 00:02:16.160 align:start position:0%
+iteratively which you might not
+ 
+
+00:02:16.160 --> 00:02:17.910 align:start position:0%
+iteratively which you might not
+know<00:02:16.400><c> yet</c><00:02:16.560><c> but</c><00:02:16.720><c> it's</c><00:02:16.959><c> actually</c><00:02:17.360><c> pretty</c>
+
+00:02:17.910 --> 00:02:17.920 align:start position:0%
+know yet but it's actually pretty
+ 
+
+00:02:17.920 --> 00:02:19.830 align:start position:0%
+know yet but it's actually pretty
+similar<00:02:18.800><c> to</c><00:02:19.040><c> doing</c>
+
+00:02:19.830 --> 00:02:19.840 align:start position:0%
+similar to doing
+ 
+
+00:02:19.840 --> 00:02:22.710 align:start position:0%
+similar to doing
+the<00:02:20.319><c> recursive</c><00:02:20.959><c> solution</c><00:02:21.680><c> so</c><00:02:22.000><c> you</c><00:02:22.319><c> saw</c><00:02:22.560><c> how</c>
+
+00:02:22.710 --> 00:02:22.720 align:start position:0%
+the recursive solution so you saw how
+ 
+
+00:02:22.720 --> 00:02:24.550 align:start position:0%
+the recursive solution so you saw how
+the<00:02:22.879><c> recursive</c><00:02:23.440><c> solution</c><00:02:23.840><c> works</c><00:02:24.160><c> right</c><00:02:24.400><c> let's</c>
+
+00:02:24.550 --> 00:02:24.560 align:start position:0%
+the recursive solution works right let's
+ 
+
+00:02:24.560 --> 00:02:25.670 align:start position:0%
+the recursive solution works right let's
+say<00:02:24.720><c> we</c><00:02:24.879><c> visit</c><00:02:25.280><c> one</c>
+
+00:02:25.670 --> 00:02:25.680 align:start position:0%
+say we visit one
+ 
+
+00:02:25.680 --> 00:02:27.750 align:start position:0%
+say we visit one
+then<00:02:25.840><c> we</c><00:02:26.000><c> go</c><00:02:26.160><c> to</c><00:02:26.239><c> its</c><00:02:26.480><c> right</c><00:02:26.800><c> child</c><00:02:27.360><c> right</c><00:02:27.599><c> we</c>
+
+00:02:27.750 --> 00:02:27.760 align:start position:0%
+then we go to its right child right we
+ 
+
+00:02:27.760 --> 00:02:29.830 align:start position:0%
+then we go to its right child right we
+visit<00:02:28.480><c> one</c><00:02:28.800><c> and</c><00:02:28.879><c> then</c><00:02:29.040><c> we</c><00:02:29.200><c> visit</c><00:02:29.440><c> two</c><00:02:29.599><c> and</c><00:02:29.680><c> then</c>
+
+00:02:29.830 --> 00:02:29.840 align:start position:0%
+visit one and then we visit two and then
+ 
+
+00:02:29.840 --> 00:02:31.030 align:start position:0%
+visit one and then we visit two and then
+we<00:02:30.080><c> end</c><00:02:30.239><c> up</c><00:02:30.400><c> having</c><00:02:30.720><c> to</c>
+
+00:02:31.030 --> 00:02:31.040 align:start position:0%
+we end up having to
+ 
+
+00:02:31.040 --> 00:02:34.229 align:start position:0%
+we end up having to
+pop<00:02:31.760><c> back</c><00:02:32.239><c> up</c><00:02:32.640><c> to</c><00:02:32.879><c> the</c><00:02:33.200><c> three</c><00:02:33.599><c> right</c>
+
+00:02:34.229 --> 00:02:34.239 align:start position:0%
+pop back up to the three right
+ 
+
+00:02:34.239 --> 00:02:36.470 align:start position:0%
+pop back up to the three right
+so<00:02:34.560><c> to</c><00:02:34.879><c> pop</c><00:02:35.200><c> back</c><00:02:35.519><c> up</c><00:02:35.680><c> here</c><00:02:35.920><c> we</c><00:02:36.080><c> know</c><00:02:36.319><c> the</c>
+
+00:02:36.470 --> 00:02:36.480 align:start position:0%
+so to pop back up here we know the
+ 
+
+00:02:36.480 --> 00:02:38.550 align:start position:0%
+so to pop back up here we know the
+recursive<00:02:37.200><c> call</c><00:02:37.599><c> will</c><00:02:37.920><c> eventually</c>
+
+00:02:38.550 --> 00:02:38.560 align:start position:0%
+recursive call will eventually
+ 
+
+00:02:38.560 --> 00:02:40.630 align:start position:0%
+recursive call will eventually
+come<00:02:38.800><c> back</c><00:02:39.280><c> like</c><00:02:39.519><c> with</c><00:02:39.680><c> the</c><00:02:39.840><c> call</c><00:02:40.080><c> stack</c><00:02:40.480><c> right</c>
+
+00:02:40.630 --> 00:02:40.640 align:start position:0%
+come back like with the call stack right
+ 
+
+00:02:40.640 --> 00:02:42.869 align:start position:0%
+come back like with the call stack right
+that's<00:02:40.879><c> how</c><00:02:41.440><c> function</c><00:02:41.920><c> calls</c><00:02:42.319><c> or</c><00:02:42.480><c> method</c>
+
+00:02:42.869 --> 00:02:42.879 align:start position:0%
+that's how function calls or method
+ 
+
+00:02:42.879 --> 00:02:43.350 align:start position:0%
+that's how function calls or method
+calls
+
+00:02:43.350 --> 00:02:43.360 align:start position:0%
+calls
+ 
+
+00:02:43.360 --> 00:02:45.670 align:start position:0%
+calls
+work<00:02:43.920><c> but</c><00:02:44.160><c> if</c><00:02:44.239><c> we're</c><00:02:44.400><c> doing</c><00:02:44.640><c> it</c><00:02:44.800><c> iteratively</c>
+
+00:02:45.670 --> 00:02:45.680 align:start position:0%
+work but if we're doing it iteratively
+ 
+
+00:02:45.680 --> 00:02:47.430 align:start position:0%
+work but if we're doing it iteratively
+not<00:02:46.000><c> recursively</c><00:02:46.879><c> right</c>
+
+00:02:47.430 --> 00:02:47.440 align:start position:0%
+not recursively right
+ 
+
+00:02:47.440 --> 00:02:51.030 align:start position:0%
+not recursively right
+then<00:02:47.680><c> we</c><00:02:47.840><c> need</c><00:02:48.160><c> a</c><00:02:48.480><c> stack</c><00:02:49.519><c> to</c><00:02:50.080><c> contain</c>
+
+00:02:51.030 --> 00:02:51.040 align:start position:0%
+then we need a stack to contain
+ 
+
+00:02:51.040 --> 00:02:53.110 align:start position:0%
+then we need a stack to contain
+the<00:02:51.280><c> previous</c><00:02:51.760><c> nodes</c><00:02:52.080><c> that</c><00:02:52.160><c> we</c><00:02:52.319><c> need</c><00:02:52.480><c> to</c><00:02:52.640><c> pop</c>
+
+00:02:53.110 --> 00:02:53.120 align:start position:0%
+the previous nodes that we need to pop
+ 
+
+00:02:53.120 --> 00:02:54.309 align:start position:0%
+the previous nodes that we need to pop
+back<00:02:53.519><c> up</c><00:02:53.760><c> to</c>
+
+00:02:54.309 --> 00:02:54.319 align:start position:0%
+back up to
+ 
+
+00:02:54.319 --> 00:02:55.750 align:start position:0%
+back up to
+so<00:02:54.560><c> i'm</c><00:02:54.720><c> going</c><00:02:54.800><c> to</c><00:02:54.879><c> show</c><00:02:55.040><c> you</c><00:02:55.120><c> how</c><00:02:55.280><c> to</c><00:02:55.360><c> do</c><00:02:55.519><c> this</c>
+
+00:02:55.750 --> 00:02:55.760 align:start position:0%
+so i'm going to show you how to do this
+ 
+
+00:02:55.760 --> 00:02:58.309 align:start position:0%
+so i'm going to show you how to do this
+problem<00:02:56.160><c> with</c><00:02:56.400><c> a</c><00:02:56.640><c> stack</c><00:02:57.280><c> iteratively</c>
+
+00:02:58.309 --> 00:02:58.319 align:start position:0%
+problem with a stack iteratively
+ 
+
+00:02:58.319 --> 00:03:01.350 align:start position:0%
+problem with a stack iteratively
+so<00:02:58.480><c> let's</c><00:02:58.720><c> say</c><00:02:58.879><c> that</c><00:02:59.200><c> this</c><00:02:59.680><c> is</c><00:03:00.080><c> our</c><00:03:00.480><c> stack</c>
+
+00:03:01.350 --> 00:03:01.360 align:start position:0%
+so let's say that this is our stack
+ 
+
+00:03:01.360 --> 00:03:04.149 align:start position:0%
+so let's say that this is our stack
+so<00:03:01.680><c> iteratively</c><00:03:02.400><c> we</c><00:03:02.720><c> start</c><00:03:03.120><c> at</c><00:03:03.360><c> the</c><00:03:03.599><c> root</c>
+
+00:03:04.149 --> 00:03:04.159 align:start position:0%
+so iteratively we start at the root
+ 
+
+00:03:04.159 --> 00:03:04.949 align:start position:0%
+so iteratively we start at the root
+right
+
+00:03:04.949 --> 00:03:04.959 align:start position:0%
+right
+ 
+
+00:03:04.959 --> 00:03:07.110 align:start position:0%
+right
+and<00:03:05.519><c> we</c><00:03:05.760><c> we're</c><00:03:05.920><c> not</c><00:03:06.080><c> going</c><00:03:06.159><c> to</c><00:03:06.480><c> visit</c><00:03:06.879><c> this</c>
+
+00:03:07.110 --> 00:03:07.120 align:start position:0%
+and we we're not going to visit this
+ 
+
+00:03:07.120 --> 00:03:08.149 align:start position:0%
+and we we're not going to visit this
+node<00:03:07.440><c> yet</c><00:03:07.760><c> right</c>
+
+00:03:08.149 --> 00:03:08.159 align:start position:0%
+node yet right
+ 
+
+00:03:08.159 --> 00:03:10.790 align:start position:0%
+node yet right
+so<00:03:08.800><c> we're</c><00:03:08.959><c> not</c><00:03:09.120><c> going</c><00:03:09.200><c> to</c><00:03:09.440><c> count</c><00:03:09.760><c> it</c><00:03:09.920><c> as</c><00:03:10.159><c> a</c><00:03:10.400><c> k</c>
+
+00:03:10.790 --> 00:03:10.800 align:start position:0%
+so we're not going to count it as a k
+ 
+
+00:03:10.800 --> 00:03:12.309 align:start position:0%
+so we're not going to count it as a k
+value<00:03:11.200><c> yet</c><00:03:11.360><c> because</c><00:03:11.599><c> we</c><00:03:11.680><c> want</c><00:03:11.840><c> to</c><00:03:11.920><c> go</c><00:03:12.080><c> through</c>
+
+00:03:12.309 --> 00:03:12.319 align:start position:0%
+value yet because we want to go through
+ 
+
+00:03:12.319 --> 00:03:14.869 align:start position:0%
+value yet because we want to go through
+everything<00:03:12.640><c> in</c><00:03:12.720><c> the</c><00:03:12.959><c> left</c><00:03:13.200><c> sub</c><00:03:13.440><c> tree</c><00:03:13.840><c> first</c><00:03:14.239><c> so</c>
+
+00:03:14.869 --> 00:03:14.879 align:start position:0%
+everything in the left sub tree first so
+ 
+
+00:03:14.879 --> 00:03:18.390 align:start position:0%
+everything in the left sub tree first so
+next<00:03:15.280><c> i'm</c><00:03:15.519><c> just</c><00:03:15.680><c> going</c><00:03:15.760><c> to</c><00:03:16.080><c> keep</c><00:03:16.560><c> going</c><00:03:17.440><c> as</c><00:03:17.760><c> far</c>
+
+00:03:18.390 --> 00:03:18.400 align:start position:0%
+next i'm just going to keep going as far
+ 
+
+00:03:18.400 --> 00:03:21.350 align:start position:0%
+next i'm just going to keep going as far
+left<00:03:18.879><c> as</c><00:03:19.120><c> i</c><00:03:19.360><c> can</c><00:03:19.920><c> so</c><00:03:20.080><c> i'm</c><00:03:20.239><c> going</c><00:03:20.319><c> to</c><00:03:20.480><c> go</c><00:03:20.720><c> to</c><00:03:21.040><c> this</c>
+
+00:03:21.350 --> 00:03:21.360 align:start position:0%
+left as i can so i'm going to go to this
+ 
+
+00:03:21.360 --> 00:03:22.229 align:start position:0%
+left as i can so i'm going to go to this
+node<00:03:21.760><c> right</c>
+
+00:03:22.229 --> 00:03:22.239 align:start position:0%
+node right
+ 
+
+00:03:22.239 --> 00:03:24.789 align:start position:0%
+node right
+it's<00:03:22.560><c> left</c><00:03:22.800><c> child</c><00:03:23.280><c> but</c><00:03:23.519><c> before</c><00:03:24.080><c> i</c><00:03:24.239><c> go</c><00:03:24.480><c> here</c><00:03:24.640><c> i'm</c>
+
+00:03:24.789 --> 00:03:24.799 align:start position:0%
+it's left child but before i go here i'm
+ 
+
+00:03:24.799 --> 00:03:27.030 align:start position:0%
+it's left child but before i go here i'm
+going<00:03:24.879><c> to</c><00:03:25.040><c> add</c><00:03:25.360><c> the</c><00:03:25.599><c> 3</c><00:03:26.000><c> to</c><00:03:26.159><c> the</c><00:03:26.400><c> stack</c>
+
+00:03:27.030 --> 00:03:27.040 align:start position:0%
+going to add the 3 to the stack
+ 
+
+00:03:27.040 --> 00:03:29.670 align:start position:0%
+going to add the 3 to the stack
+because<00:03:27.280><c> we</c><00:03:27.519><c> know</c><00:03:27.760><c> we</c><00:03:27.840><c> want</c><00:03:28.000><c> to</c><00:03:28.319><c> pop</c><00:03:29.040><c> back</c><00:03:29.519><c> up</c>
+
+00:03:29.670 --> 00:03:29.680 align:start position:0%
+because we know we want to pop back up
+ 
+
+00:03:29.680 --> 00:03:31.509 align:start position:0%
+because we know we want to pop back up
+to<00:03:29.840><c> this</c><00:03:30.080><c> 3</c><00:03:30.400><c> when</c><00:03:30.640><c> we're</c><00:03:30.959><c> done</c>
+
+00:03:31.509 --> 00:03:31.519 align:start position:0%
+to this 3 when we're done
+ 
+
+00:03:31.519 --> 00:03:34.869 align:start position:0%
+to this 3 when we're done
+traversing<00:03:32.560><c> the</c><00:03:32.799><c> left</c><00:03:33.120><c> subtree</c><00:03:34.159><c> so</c><00:03:34.400><c> now</c><00:03:34.640><c> i'm</c>
+
+00:03:34.869 --> 00:03:34.879 align:start position:0%
+traversing the left subtree so now i'm
+ 
+
+00:03:34.879 --> 00:03:36.309 align:start position:0%
+traversing the left subtree so now i'm
+at<00:03:34.959><c> the</c><00:03:35.200><c> one</c><00:03:35.519><c> i'm</c><00:03:35.680><c> going</c><00:03:35.760><c> to</c><00:03:35.840><c> go</c><00:03:36.000><c> to</c>
+
+00:03:36.309 --> 00:03:36.319 align:start position:0%
+at the one i'm going to go to
+ 
+
+00:03:36.319 --> 00:03:39.110 align:start position:0%
+at the one i'm going to go to
+its<00:03:36.640><c> left</c><00:03:36.879><c> child</c><00:03:37.360><c> right</c><00:03:37.760><c> but</c><00:03:38.000><c> we</c><00:03:38.239><c> see</c><00:03:38.560><c> it's</c>
+
+00:03:39.110 --> 00:03:39.120 align:start position:0%
+its left child right but we see it's
+ 
+
+00:03:39.120 --> 00:03:40.470 align:start position:0%
+its left child right but we see it's
+null
+
+00:03:40.470 --> 00:03:40.480 align:start position:0%
+null
+ 
+
+00:03:40.480 --> 00:03:42.630 align:start position:0%
+null
+right<00:03:40.879><c> but</c><00:03:41.120><c> before</c><00:03:41.519><c> i</c><00:03:41.760><c> go</c><00:03:42.000><c> to</c><00:03:42.239><c> null</c><00:03:42.480><c> i'm</c><00:03:42.560><c> going</c>
+
+00:03:42.630 --> 00:03:42.640 align:start position:0%
+right but before i go to null i'm going
+ 
+
+00:03:42.640 --> 00:03:43.910 align:start position:0%
+right but before i go to null i'm going
+to<00:03:42.799><c> add</c><00:03:43.280><c> one</c>
+
+00:03:43.910 --> 00:03:43.920 align:start position:0%
+to add one
+ 
+
+00:03:43.920 --> 00:03:46.949 align:start position:0%
+to add one
+to<00:03:44.159><c> the</c><00:03:44.319><c> stack</c><00:03:44.879><c> but</c><00:03:45.200><c> once</c><00:03:45.519><c> we</c><00:03:45.840><c> reach</c><00:03:46.239><c> a</c><00:03:46.560><c> null</c>
+
+00:03:46.949 --> 00:03:46.959 align:start position:0%
+to the stack but once we reach a null
+ 
+
+00:03:46.959 --> 00:03:47.509 align:start position:0%
+to the stack but once we reach a null
+case
+
+00:03:47.509 --> 00:03:47.519 align:start position:0%
+case
+ 
+
+00:03:47.519 --> 00:03:50.550 align:start position:0%
+case
+that<00:03:47.760><c> means</c><00:03:48.080><c> it's</c><00:03:48.239><c> time</c><00:03:48.480><c> for</c><00:03:48.720><c> us</c><00:03:48.959><c> to</c><00:03:49.280><c> pop</c><00:03:49.920><c> back</c>
+
+00:03:50.550 --> 00:03:50.560 align:start position:0%
+that means it's time for us to pop back
+ 
+
+00:03:50.560 --> 00:03:54.070 align:start position:0%
+that means it's time for us to pop back
+up<00:03:51.280><c> and</c><00:03:51.599><c> go</c><00:03:51.920><c> back</c><00:03:52.400><c> up</c><00:03:52.799><c> to</c><00:03:53.040><c> the</c><00:03:53.280><c> previous</c><00:03:53.760><c> node</c>
+
+00:03:54.070 --> 00:03:54.080 align:start position:0%
+up and go back up to the previous node
+ 
+
+00:03:54.080 --> 00:03:55.990 align:start position:0%
+up and go back up to the previous node
+and<00:03:54.239><c> we</c><00:03:54.480><c> know</c><00:03:54.799><c> that</c><00:03:55.040><c> because</c><00:03:55.280><c> we</c><00:03:55.439><c> just</c><00:03:55.680><c> look</c><00:03:55.920><c> at</c>
+
+00:03:55.990 --> 00:03:56.000 align:start position:0%
+and we know that because we just look at
+ 
+
+00:03:56.000 --> 00:03:58.550 align:start position:0%
+and we know that because we just look at
+the<00:03:56.159><c> top</c><00:03:56.400><c> of</c><00:03:56.560><c> our</c><00:03:56.720><c> stack</c><00:03:57.120><c> so</c><00:03:57.360><c> we</c><00:03:57.599><c> take</c><00:03:57.760><c> this</c><00:03:58.080><c> one</c>
+
+00:03:58.550 --> 00:03:58.560 align:start position:0%
+the top of our stack so we take this one
+ 
+
+00:03:58.560 --> 00:04:01.750 align:start position:0%
+the top of our stack so we take this one
+we<00:03:58.720><c> remove</c><00:03:59.439><c> the</c><00:03:59.680><c> 1</c><00:04:00.560><c> and</c><00:04:00.799><c> so</c><00:04:01.040><c> basically</c><00:04:01.439><c> when</c><00:04:01.599><c> we</c>
+
+00:04:01.750 --> 00:04:01.760 align:start position:0%
+we remove the 1 and so basically when we
+ 
+
+00:04:01.760 --> 00:04:03.589 align:start position:0%
+we remove the 1 and so basically when we
+remove<00:04:02.319><c> an</c><00:04:02.480><c> element</c><00:04:02.879><c> from</c><00:04:03.040><c> the</c><00:04:03.120><c> stack</c><00:04:03.439><c> that</c>
+
+00:04:03.589 --> 00:04:03.599 align:start position:0%
+remove an element from the stack that
+ 
+
+00:04:03.599 --> 00:04:05.270 align:start position:0%
+remove an element from the stack that
+means<00:04:03.760><c> we're</c><00:04:04.080><c> processing</c><00:04:04.799><c> it</c><00:04:04.959><c> or</c>
+
+00:04:05.270 --> 00:04:05.280 align:start position:0%
+means we're processing it or
+ 
+
+00:04:05.280 --> 00:04:08.710 align:start position:0%
+means we're processing it or
+visiting<00:04:05.760><c> it</c><00:04:06.239><c> and</c><00:04:06.720><c> we</c><00:04:06.959><c> see</c><00:04:07.360><c> k</c><00:04:07.840><c> is</c><00:04:08.080><c> equal</c><00:04:08.400><c> to</c>
+
+00:04:08.710 --> 00:04:08.720 align:start position:0%
+visiting it and we see k is equal to
+ 
+
+00:04:08.720 --> 00:04:11.830 align:start position:0%
+visiting it and we see k is equal to
+1<00:04:09.439><c> this</c><00:04:09.680><c> is</c><00:04:09.840><c> the</c><00:04:10.080><c> first</c><00:04:10.560><c> value</c><00:04:11.040><c> that</c><00:04:11.280><c> we</c><00:04:11.519><c> just</c>
+
+00:04:11.830 --> 00:04:11.840 align:start position:0%
+1 this is the first value that we just
+ 
+
+00:04:11.840 --> 00:04:12.789 align:start position:0%
+1 this is the first value that we just
+visited<00:04:12.400><c> right</c>
+
+00:04:12.789 --> 00:04:12.799 align:start position:0%
+visited right
+ 
+
+00:04:12.799 --> 00:04:16.069 align:start position:0%
+visited right
+so<00:04:13.040><c> then</c><00:04:13.360><c> it</c><00:04:13.680><c> must</c><00:04:14.159><c> be</c><00:04:14.400><c> the</c><00:04:14.560><c> result</c><00:04:15.120><c> so</c><00:04:15.599><c> the</c><00:04:15.840><c> one</c>
+
+00:04:16.069 --> 00:04:16.079 align:start position:0%
+so then it must be the result so the one
+ 
+
+00:04:16.079 --> 00:04:17.189 align:start position:0%
+so then it must be the result so the one
+that<00:04:16.239><c> we</c><00:04:16.320><c> just</c><00:04:16.639><c> popped</c>
+
+00:04:17.189 --> 00:04:17.199 align:start position:0%
+that we just popped
+ 
+
+00:04:17.199 --> 00:04:19.590 align:start position:0%
+that we just popped
+is<00:04:17.359><c> going</c><00:04:17.440><c> to</c><00:04:17.600><c> be</c><00:04:17.840><c> the</c><00:04:18.160><c> output</c><00:04:18.959><c> right</c><00:04:19.359><c> but</c>
+
+00:04:19.590 --> 00:04:19.600 align:start position:0%
+is going to be the output right but
+ 
+
+00:04:19.600 --> 00:04:20.789 align:start position:0%
+is going to be the output right but
+let's<00:04:19.840><c> say</c>
+
+00:04:20.789 --> 00:04:20.799 align:start position:0%
+let's say
+ 
+
+00:04:20.799 --> 00:04:23.030 align:start position:0%
+let's say
+that<00:04:21.120><c> it</c><00:04:21.280><c> wasn't</c><00:04:21.680><c> let's</c><00:04:21.840><c> just</c><00:04:22.079><c> continue</c><00:04:22.720><c> the</c>
+
+00:04:23.030 --> 00:04:23.040 align:start position:0%
+that it wasn't let's just continue the
+ 
+
+00:04:23.040 --> 00:04:24.710 align:start position:0%
+that it wasn't let's just continue the
+iterative<00:04:23.520><c> solution</c><00:04:23.919><c> just</c><00:04:24.080><c> so</c><00:04:24.240><c> you</c><00:04:24.320><c> can</c><00:04:24.560><c> kind</c>
+
+00:04:24.710 --> 00:04:24.720 align:start position:0%
+iterative solution just so you can kind
+ 
+
+00:04:24.720 --> 00:04:25.909 align:start position:0%
+iterative solution just so you can kind
+of<00:04:24.880><c> understand</c><00:04:25.440><c> how</c><00:04:25.600><c> it</c>
+
+00:04:25.909 --> 00:04:25.919 align:start position:0%
+of understand how it
+ 
+
+00:04:25.919 --> 00:04:28.950 align:start position:0%
+of understand how it
+works<00:04:26.800><c> so</c><00:04:27.120><c> now</c><00:04:27.440><c> i'm</c><00:04:27.680><c> at</c><00:04:27.919><c> the</c><00:04:28.160><c> one</c><00:04:28.479><c> right</c>
+
+00:04:28.950 --> 00:04:28.960 align:start position:0%
+works so now i'm at the one right
+ 
+
+00:04:28.960 --> 00:04:30.870 align:start position:0%
+works so now i'm at the one right
+we<00:04:29.120><c> just</c><00:04:29.520><c> process</c><00:04:29.919><c> the</c><00:04:30.080><c> one</c><00:04:30.320><c> we</c><00:04:30.400><c> don't</c><00:04:30.560><c> have</c><00:04:30.720><c> to</c>
+
+00:04:30.870 --> 00:04:30.880 align:start position:0%
+we just process the one we don't have to
+ 
+
+00:04:30.880 --> 00:04:32.230 align:start position:0%
+we just process the one we don't have to
+ever<00:04:31.120><c> consider</c><00:04:31.520><c> it</c><00:04:31.680><c> again</c><00:04:31.840><c> so</c><00:04:32.000><c> i'm</c><00:04:32.080><c> just</c><00:04:32.160><c> going</c>
+
+00:04:32.230 --> 00:04:32.240 align:start position:0%
+ever consider it again so i'm just going
+ 
+
+00:04:32.240 --> 00:04:33.350 align:start position:0%
+ever consider it again so i'm just going
+to<00:04:32.400><c> cross</c><00:04:32.800><c> it</c><00:04:32.960><c> out</c>
+
+00:04:33.350 --> 00:04:33.360 align:start position:0%
+to cross it out
+ 
+
+00:04:33.360 --> 00:04:37.030 align:start position:0%
+to cross it out
+but<00:04:33.759><c> now</c><00:04:34.720><c> once</c><00:04:35.040><c> we</c><00:04:35.360><c> pop</c><00:04:35.759><c> up</c><00:04:36.240><c> right</c><00:04:36.479><c> we</c><00:04:36.639><c> visit</c><00:04:36.960><c> a</c>
+
+00:04:37.030 --> 00:04:37.040 align:start position:0%
+but now once we pop up right we visit a
+ 
+
+00:04:37.040 --> 00:04:37.510 align:start position:0%
+but now once we pop up right we visit a
+node
+
+00:04:37.510 --> 00:04:37.520 align:start position:0%
+node
+ 
+
+00:04:37.520 --> 00:04:39.749 align:start position:0%
+node
+then<00:04:37.840><c> we</c><00:04:38.080><c> want</c><00:04:38.240><c> to</c><00:04:38.320><c> go</c><00:04:38.560><c> to</c><00:04:38.720><c> its</c><00:04:39.040><c> right</c><00:04:39.280><c> child</c>
+
+00:04:39.749 --> 00:04:39.759 align:start position:0%
+then we want to go to its right child
+ 
+
+00:04:39.759 --> 00:04:40.950 align:start position:0%
+then we want to go to its right child
+only<00:04:40.240><c> after</c><00:04:40.639><c> we</c>
+
+00:04:40.950 --> 00:04:40.960 align:start position:0%
+only after we
+ 
+
+00:04:40.960 --> 00:04:44.070 align:start position:0%
+only after we
+visit<00:04:41.360><c> the</c><00:04:41.680><c> node</c><00:04:42.960><c> after</c><00:04:43.360><c> that</c><00:04:43.520><c> do</c><00:04:43.759><c> we</c><00:04:43.840><c> want</c><00:04:44.000><c> to</c>
+
+00:04:44.070 --> 00:04:44.080 align:start position:0%
+visit the node after that do we want to
+ 
+
+00:04:44.080 --> 00:04:45.990 align:start position:0%
+visit the node after that do we want to
+go<00:04:44.320><c> to</c><00:04:44.479><c> its</c><00:04:44.720><c> right</c><00:04:45.040><c> subtree</c><00:04:45.520><c> right</c><00:04:45.759><c> because</c>
+
+00:04:45.990 --> 00:04:46.000 align:start position:0%
+go to its right subtree right because
+ 
+
+00:04:46.000 --> 00:04:47.670 align:start position:0%
+go to its right subtree right because
+remember<00:04:46.479><c> we're</c><00:04:46.639><c> trying</c><00:04:46.880><c> to</c><00:04:46.960><c> do</c><00:04:47.199><c> this</c>
+
+00:04:47.670 --> 00:04:47.680 align:start position:0%
+remember we're trying to do this
+ 
+
+00:04:47.680 --> 00:04:50.950 align:start position:0%
+remember we're trying to do this
+in<00:04:48.479><c> order</c><00:04:50.160><c> so</c>
+
+00:04:50.950 --> 00:04:50.960 align:start position:0%
+in order so
+ 
+
+00:04:50.960 --> 00:04:53.430 align:start position:0%
+in order so
+with<00:04:51.360><c> three</c><00:04:51.840><c> still</c><00:04:52.240><c> remaining</c><00:04:52.720><c> in</c><00:04:52.800><c> the</c><00:04:52.960><c> stack</c>
+
+00:04:53.430 --> 00:04:53.440 align:start position:0%
+with three still remaining in the stack
+ 
+
+00:04:53.440 --> 00:04:55.670 align:start position:0%
+with three still remaining in the stack
+we're<00:04:53.600><c> gonna</c><00:04:53.840><c> go</c><00:04:54.080><c> to</c><00:04:54.400><c> two</c><00:04:54.800><c> right</c><00:04:55.040><c> so</c><00:04:55.360><c> now</c><00:04:55.520><c> we're</c>
+
+00:04:55.670 --> 00:04:55.680 align:start position:0%
+we're gonna go to two right so now we're
+ 
+
+00:04:55.680 --> 00:04:55.990 align:start position:0%
+we're gonna go to two right so now we're
+gonna
+
+00:04:55.990 --> 00:04:56.000 align:start position:0%
+gonna
+ 
+
+00:04:56.000 --> 00:04:59.110 align:start position:0%
+gonna
+add<00:04:56.639><c> two</c><00:04:56.960><c> to</c><00:04:57.120><c> the</c><00:04:57.280><c> stack</c><00:04:58.400><c> and</c><00:04:58.560><c> now</c><00:04:58.800><c> i'm</c><00:04:58.960><c> gonna</c>
+
+00:04:59.110 --> 00:04:59.120 align:start position:0%
+add two to the stack and now i'm gonna
+ 
+
+00:04:59.120 --> 00:05:01.350 align:start position:0%
+add two to the stack and now i'm gonna
+go<00:04:59.360><c> to</c><00:04:59.520><c> the</c><00:04:59.840><c> left</c><00:05:00.080><c> child</c><00:05:00.479><c> of</c><00:05:00.639><c> two</c><00:05:00.880><c> right</c><00:05:01.120><c> we</c>
+
+00:05:01.350 --> 00:05:01.360 align:start position:0%
+go to the left child of two right we
+ 
+
+00:05:01.360 --> 00:05:02.070 align:start position:0%
+go to the left child of two right we
+know<00:05:01.600><c> it's</c>
+
+00:05:02.070 --> 00:05:02.080 align:start position:0%
+know it's
+ 
+
+00:05:02.080 --> 00:05:05.590 align:start position:0%
+know it's
+null<00:05:02.880><c> so</c><00:05:03.840><c> so</c><00:05:04.080><c> then</c><00:05:04.479><c> we're</c><00:05:04.720><c> allowed</c><00:05:05.039><c> to</c><00:05:05.280><c> pop</c>
+
+00:05:05.590 --> 00:05:05.600 align:start position:0%
+null so so then we're allowed to pop
+ 
+
+00:05:05.600 --> 00:05:05.909 align:start position:0%
+null so so then we're allowed to pop
+back
+
+00:05:05.909 --> 00:05:05.919 align:start position:0%
+back
+ 
+
+00:05:05.919 --> 00:05:07.670 align:start position:0%
+back
+up<00:05:06.080><c> right</c><00:05:06.240><c> so</c><00:05:06.400><c> we're</c><00:05:06.560><c> gonna</c><00:05:06.720><c> go</c><00:05:06.960><c> to</c><00:05:07.120><c> the</c><00:05:07.360><c> two</c>
+
+00:05:07.670 --> 00:05:07.680 align:start position:0%
+up right so we're gonna go to the two
+ 
+
+00:05:07.680 --> 00:05:09.590 align:start position:0%
+up right so we're gonna go to the two
+it's<00:05:07.919><c> because</c><00:05:08.160><c> it's</c><00:05:08.560><c> at</c><00:05:08.720><c> the</c><00:05:08.960><c> top</c><00:05:09.199><c> of</c><00:05:09.360><c> our</c>
+
+00:05:09.590 --> 00:05:09.600 align:start position:0%
+it's because it's at the top of our
+ 
+
+00:05:09.600 --> 00:05:10.070 align:start position:0%
+it's because it's at the top of our
+stack
+
+00:05:10.070 --> 00:05:10.080 align:start position:0%
+stack
+ 
+
+00:05:10.080 --> 00:05:11.670 align:start position:0%
+stack
+right<00:05:10.240><c> so</c><00:05:10.400><c> the</c><00:05:10.639><c> 2</c><00:05:10.960><c> is</c><00:05:11.039><c> at</c><00:05:11.199><c> the</c><00:05:11.280><c> top</c><00:05:11.440><c> of</c><00:05:11.600><c> our</c>
+
+00:05:11.670 --> 00:05:11.680 align:start position:0%
+right so the 2 is at the top of our
+ 
+
+00:05:11.680 --> 00:05:13.510 align:start position:0%
+right so the 2 is at the top of our
+stack<00:05:11.919><c> so</c><00:05:12.080><c> now</c><00:05:12.240><c> we're</c><00:05:12.320><c> going</c><00:05:12.400><c> to</c><00:05:12.639><c> pop</c><00:05:12.960><c> the</c><00:05:13.199><c> two</c>
+
+00:05:13.510 --> 00:05:13.520 align:start position:0%
+stack so now we're going to pop the two
+ 
+
+00:05:13.520 --> 00:05:13.990 align:start position:0%
+stack so now we're going to pop the two
+off
+
+00:05:13.990 --> 00:05:14.000 align:start position:0%
+off
+ 
+
+00:05:14.000 --> 00:05:16.150 align:start position:0%
+off
+so<00:05:14.240><c> meaning</c><00:05:14.560><c> we're</c><00:05:14.800><c> processing</c><00:05:15.440><c> the</c><00:05:15.600><c> node</c><00:05:15.919><c> 2</c>
+
+00:05:16.150 --> 00:05:16.160 align:start position:0%
+so meaning we're processing the node 2
+ 
+
+00:05:16.160 --> 00:05:18.070 align:start position:0%
+so meaning we're processing the node 2
+or<00:05:16.320><c> visiting</c><00:05:16.720><c> it</c><00:05:16.800><c> so</c><00:05:16.960><c> we</c><00:05:17.120><c> can</c><00:05:17.280><c> cross</c><00:05:17.680><c> it</c><00:05:17.840><c> out</c>
+
+00:05:18.070 --> 00:05:18.080 align:start position:0%
+or visiting it so we can cross it out
+ 
+
+00:05:18.080 --> 00:05:19.110 align:start position:0%
+or visiting it so we can cross it out
+now
+
+00:05:19.110 --> 00:05:19.120 align:start position:0%
+now
+ 
+
+00:05:19.120 --> 00:05:21.110 align:start position:0%
+now
+and<00:05:19.360><c> now</c><00:05:19.600><c> i'm</c><00:05:19.680><c> going</c><00:05:19.759><c> to</c><00:05:19.840><c> go</c><00:05:20.080><c> to</c><00:05:20.240><c> its</c><00:05:20.639><c> right</c>
+
+00:05:21.110 --> 00:05:21.120 align:start position:0%
+and now i'm going to go to its right
+ 
+
+00:05:21.120 --> 00:05:22.150 align:start position:0%
+and now i'm going to go to its right
+subtree<00:05:21.680><c> which</c><00:05:21.840><c> is</c>
+
+00:05:22.150 --> 00:05:22.160 align:start position:0%
+subtree which is
+ 
+
+00:05:22.160 --> 00:05:24.550 align:start position:0%
+subtree which is
+also<00:05:22.720><c> now</c><00:05:23.120><c> null</c><00:05:23.440><c> right</c><00:05:23.600><c> because</c><00:05:24.000><c> now</c><00:05:24.160><c> that</c><00:05:24.320><c> we</c>
+
+00:05:24.550 --> 00:05:24.560 align:start position:0%
+also now null right because now that we
+ 
+
+00:05:24.560 --> 00:05:26.629 align:start position:0%
+also now null right because now that we
+process<00:05:25.120><c> two</c><00:05:25.360><c> we're</c><00:05:25.600><c> allowed</c><00:05:25.919><c> to</c><00:05:26.080><c> go</c><00:05:26.240><c> to</c><00:05:26.400><c> its</c>
+
+00:05:26.629 --> 00:05:26.639 align:start position:0%
+process two we're allowed to go to its
+ 
+
+00:05:26.639 --> 00:05:28.790 align:start position:0%
+process two we're allowed to go to its
+right<00:05:26.880><c> subtree</c><00:05:27.520><c> but</c><00:05:27.759><c> we</c><00:05:28.000><c> see</c><00:05:28.240><c> that</c><00:05:28.400><c> it's</c>
+
+00:05:28.790 --> 00:05:28.800 align:start position:0%
+right subtree but we see that it's
+ 
+
+00:05:28.800 --> 00:05:31.590 align:start position:0%
+right subtree but we see that it's
+null<00:05:29.360><c> so</c><00:05:30.240><c> since</c><00:05:30.479><c> it's</c><00:05:30.720><c> null</c><00:05:31.039><c> that</c><00:05:31.120><c> means</c><00:05:31.360><c> we</c>
+
+00:05:31.590 --> 00:05:31.600 align:start position:0%
+null so since it's null that means we
+ 
+
+00:05:31.600 --> 00:05:32.070 align:start position:0%
+null so since it's null that means we
+pop
+
+00:05:32.070 --> 00:05:32.080 align:start position:0%
+pop
+ 
+
+00:05:32.080 --> 00:05:34.790 align:start position:0%
+pop
+again<00:05:32.800><c> from</c><00:05:33.039><c> our</c><00:05:33.280><c> stack</c><00:05:33.680><c> right</c><00:05:33.919><c> so</c><00:05:34.400><c> we're</c><00:05:34.560><c> done</c>
+
+00:05:34.790 --> 00:05:34.800 align:start position:0%
+again from our stack right so we're done
+ 
+
+00:05:34.800 --> 00:05:35.749 align:start position:0%
+again from our stack right so we're done
+with<00:05:34.960><c> this</c><00:05:35.120><c> null</c><00:05:35.440><c> but</c>
+
+00:05:35.749 --> 00:05:35.759 align:start position:0%
+with this null but
+ 
+
+00:05:35.759 --> 00:05:38.150 align:start position:0%
+with this null but
+conveniently<00:05:36.479><c> for</c><00:05:36.639><c> us</c><00:05:36.880><c> we</c><00:05:36.960><c> have</c><00:05:37.120><c> a</c><00:05:37.360><c> three</c><00:05:38.080><c> at</c>
+
+00:05:38.150 --> 00:05:38.160 align:start position:0%
+conveniently for us we have a three at
+ 
+
+00:05:38.160 --> 00:05:39.990 align:start position:0%
+conveniently for us we have a three at
+the<00:05:38.320><c> top</c><00:05:38.479><c> of</c><00:05:38.639><c> our</c><00:05:38.720><c> stack</c><00:05:39.039><c> we</c><00:05:39.199><c> crossed</c><00:05:39.680><c> these</c>
+
+00:05:39.990 --> 00:05:40.000 align:start position:0%
+the top of our stack we crossed these
+ 
+
+00:05:40.000 --> 00:05:41.189 align:start position:0%
+the top of our stack we crossed these
+two<00:05:40.240><c> values</c><00:05:40.800><c> out</c>
+
+00:05:41.189 --> 00:05:41.199 align:start position:0%
+two values out
+ 
+
+00:05:41.199 --> 00:05:42.950 align:start position:0%
+two values out
+so<00:05:41.360><c> now</c><00:05:41.520><c> we're</c><00:05:41.680><c> going</c><00:05:41.759><c> to</c><00:05:41.919><c> automatically</c><00:05:42.639><c> go</c>
+
+00:05:42.950 --> 00:05:42.960 align:start position:0%
+so now we're going to automatically go
+ 
+
+00:05:42.960 --> 00:05:44.390 align:start position:0%
+so now we're going to automatically go
+back<00:05:43.440><c> up</c><00:05:43.680><c> here</c>
+
+00:05:44.390 --> 00:05:44.400 align:start position:0%
+back up here
+ 
+
+00:05:44.400 --> 00:05:47.110 align:start position:0%
+back up here
+so<00:05:44.560><c> we</c><00:05:44.800><c> pop</c><00:05:45.120><c> the</c><00:05:45.360><c> three</c><00:05:46.080><c> so</c><00:05:46.320><c> now</c><00:05:46.560><c> it's</c><00:05:46.720><c> time</c><00:05:46.880><c> to</c>
+
+00:05:47.110 --> 00:05:47.120 align:start position:0%
+so we pop the three so now it's time to
+ 
+
+00:05:47.120 --> 00:05:49.510 align:start position:0%
+so we pop the three so now it's time to
+process<00:05:47.680><c> the</c><00:05:47.840><c> three</c><00:05:48.160><c> right</c><00:05:48.479><c> we</c><00:05:48.720><c> process</c><00:05:49.199><c> it</c><00:05:49.360><c> we</c>
+
+00:05:49.510 --> 00:05:49.520 align:start position:0%
+process the three right we process it we
+ 
+
+00:05:49.520 --> 00:05:51.270 align:start position:0%
+process the three right we process it we
+look<00:05:49.759><c> at</c><00:05:49.840><c> it</c><00:05:50.000><c> we</c><00:05:50.160><c> visit</c><00:05:50.479><c> it</c><00:05:50.639><c> whatever</c><00:05:50.960><c> you</c><00:05:51.120><c> want</c>
+
+00:05:51.270 --> 00:05:51.280 align:start position:0%
+look at it we visit it whatever you want
+ 
+
+00:05:51.280 --> 00:05:51.990 align:start position:0%
+look at it we visit it whatever you want
+to<00:05:51.360><c> call</c><00:05:51.680><c> it</c>
+
+00:05:51.990 --> 00:05:52.000 align:start position:0%
+to call it
+ 
+
+00:05:52.000 --> 00:05:54.230 align:start position:0%
+to call it
+and<00:05:52.320><c> after</c><00:05:52.639><c> we</c><00:05:52.800><c> visit</c><00:05:53.120><c> it</c><00:05:53.440><c> then</c><00:05:53.680><c> we</c><00:05:54.000><c> were</c>
+
+00:05:54.230 --> 00:05:54.240 align:start position:0%
+and after we visit it then we were
+ 
+
+00:05:54.240 --> 00:05:56.070 align:start position:0%
+and after we visit it then we were
+allowed<00:05:54.560><c> to</c><00:05:54.720><c> go</c><00:05:54.960><c> to</c><00:05:55.120><c> the</c><00:05:55.440><c> right</c>
+
+00:05:56.070 --> 00:05:56.080 align:start position:0%
+allowed to go to the right
+ 
+
+00:05:56.080 --> 00:05:58.790 align:start position:0%
+allowed to go to the right
+subtree<00:05:56.880><c> so</c><00:05:57.120><c> now</c><00:05:57.520><c> we</c><00:05:57.759><c> we're</c><00:05:58.000><c> at</c><00:05:58.240><c> four</c><00:05:58.479><c> so</c><00:05:58.639><c> we</c>
+
+00:05:58.790 --> 00:05:58.800 align:start position:0%
+subtree so now we we're at four so we
+ 
+
+00:05:58.800 --> 00:05:59.270 align:start position:0%
+subtree so now we we're at four so we
+add
+
+00:05:59.270 --> 00:05:59.280 align:start position:0%
+add
+ 
+
+00:05:59.280 --> 00:06:02.629 align:start position:0%
+add
+four<00:05:59.759><c> to</c><00:06:00.080><c> our</c><00:06:00.400><c> stack</c><00:06:01.600><c> and</c><00:06:01.919><c> you</c><00:06:02.080><c> basically</c><00:06:02.479><c> know</c>
+
+00:06:02.629 --> 00:06:02.639 align:start position:0%
+four to our stack and you basically know
+ 
+
+00:06:02.639 --> 00:06:03.909 align:start position:0%
+four to our stack and you basically know
+what's<00:06:02.800><c> gonna</c><00:06:03.039><c> happen</c><00:06:03.280><c> now</c><00:06:03.440><c> we're</c><00:06:03.600><c> gonna</c><00:06:03.759><c> try</c>
+
+00:06:03.909 --> 00:06:03.919 align:start position:0%
+what's gonna happen now we're gonna try
+ 
+
+00:06:03.919 --> 00:06:05.350 align:start position:0%
+what's gonna happen now we're gonna try
+to<00:06:04.000><c> go</c><00:06:04.160><c> to</c><00:06:04.319><c> the</c><00:06:04.400><c> left</c><00:06:04.639><c> sub</c><00:06:04.880><c> tree</c><00:06:05.039><c> but</c><00:06:05.199><c> it's</c>
+
+00:06:05.350 --> 00:06:05.360 align:start position:0%
+to go to the left sub tree but it's
+ 
+
+00:06:05.360 --> 00:06:06.390 align:start position:0%
+to go to the left sub tree but it's
+going<00:06:05.440><c> to</c><00:06:05.520><c> be</c><00:06:05.680><c> null</c>
+
+00:06:06.390 --> 00:06:06.400 align:start position:0%
+going to be null
+ 
+
+00:06:06.400 --> 00:06:09.430 align:start position:0%
+going to be null
+so<00:06:06.560><c> we</c><00:06:06.800><c> pop</c><00:06:07.199><c> from</c><00:06:07.440><c> the</c><00:06:08.160><c> from</c><00:06:08.400><c> the</c><00:06:08.560><c> stack</c><00:06:09.039><c> so</c><00:06:09.199><c> we</c>
+
+00:06:09.430 --> 00:06:09.440 align:start position:0%
+so we pop from the from the stack so we
+ 
+
+00:06:09.440 --> 00:06:09.990 align:start position:0%
+so we pop from the from the stack so we
+process
+
+00:06:09.990 --> 00:06:10.000 align:start position:0%
+process
+ 
+
+00:06:10.000 --> 00:06:12.309 align:start position:0%
+process
+four<00:06:10.880><c> but</c><00:06:11.039><c> then</c><00:06:11.199><c> we</c><00:06:11.360><c> try</c><00:06:11.600><c> going</c><00:06:11.840><c> to</c><00:06:12.000><c> the</c><00:06:12.080><c> right</c>
+
+00:06:12.309 --> 00:06:12.319 align:start position:0%
+four but then we try going to the right
+ 
+
+00:06:12.319 --> 00:06:13.430 align:start position:0%
+four but then we try going to the right
+subtree<00:06:12.720><c> it's</c><00:06:12.960><c> also</c>
+
+00:06:13.430 --> 00:06:13.440 align:start position:0%
+subtree it's also
+ 
+
+00:06:13.440 --> 00:06:16.309 align:start position:0%
+subtree it's also
+null<00:06:13.840><c> so</c><00:06:14.080><c> now</c><00:06:14.960><c> that</c><00:06:15.440><c> so</c><00:06:15.600><c> now</c><00:06:15.759><c> we</c><00:06:15.919><c> look</c><00:06:16.080><c> at</c><00:06:16.240><c> our</c>
+
+00:06:16.309 --> 00:06:16.319 align:start position:0%
+null so now that so now we look at our
+ 
+
+00:06:16.319 --> 00:06:17.590 align:start position:0%
+null so now that so now we look at our
+stack<00:06:16.639><c> right</c><00:06:16.800><c> we're</c><00:06:16.960><c> going</c><00:06:17.039><c> to</c><00:06:17.120><c> pop</c><00:06:17.360><c> again</c>
+
+00:06:17.590 --> 00:06:17.600 align:start position:0%
+stack right we're going to pop again
+ 
+
+00:06:17.600 --> 00:06:19.029 align:start position:0%
+stack right we're going to pop again
+from<00:06:17.840><c> our</c><00:06:17.919><c> stack</c><00:06:18.080><c> but</c><00:06:18.240><c> our</c><00:06:18.400><c> stack</c><00:06:18.720><c> is</c>
+
+00:06:19.029 --> 00:06:19.039 align:start position:0%
+from our stack but our stack is
+ 
+
+00:06:19.039 --> 00:06:20.790 align:start position:0%
+from our stack but our stack is
+empty<00:06:19.440><c> right</c><00:06:19.600><c> so</c><00:06:19.840><c> that's</c><00:06:20.080><c> how</c><00:06:20.240><c> you</c><00:06:20.400><c> know</c><00:06:20.639><c> the</c>
+
+00:06:20.790 --> 00:06:20.800 align:start position:0%
+empty right so that's how you know the
+ 
+
+00:06:20.800 --> 00:06:22.790 align:start position:0%
+empty right so that's how you know the
+algorithm<00:06:21.360><c> is</c><00:06:21.520><c> done</c><00:06:22.000><c> we</c><00:06:22.240><c> visited</c>
+
+00:06:22.790 --> 00:06:22.800 align:start position:0%
+algorithm is done we visited
+ 
+
+00:06:22.800 --> 00:06:24.950 align:start position:0%
+algorithm is done we visited
+every<00:06:23.120><c> node</c><00:06:23.440><c> that</c><00:06:23.520><c> we</c><00:06:23.680><c> needed</c><00:06:24.000><c> to</c><00:06:24.400><c> and</c><00:06:24.720><c> if</c><00:06:24.800><c> you</c>
+
+00:06:24.950 --> 00:06:24.960 align:start position:0%
+every node that we needed to and if you
+ 
+
+00:06:24.960 --> 00:06:26.629 align:start position:0%
+every node that we needed to and if you
+were<00:06:25.120><c> actually</c><00:06:25.520><c> keeping</c><00:06:26.000><c> track</c>
+
+00:06:26.629 --> 00:06:26.639 align:start position:0%
+were actually keeping track
+ 
+
+00:06:26.639 --> 00:06:29.510 align:start position:0%
+were actually keeping track
+and<00:06:26.720><c> you</c><00:06:26.960><c> noticed</c><00:06:27.600><c> the</c><00:06:27.919><c> order</c><00:06:28.319><c> that</c><00:06:28.479><c> we</c><00:06:28.639><c> popped</c>
+
+00:06:29.510 --> 00:06:29.520 align:start position:0%
+and you noticed the order that we popped
+ 
+
+00:06:29.520 --> 00:06:30.790 align:start position:0%
+and you noticed the order that we popped
+the<00:06:29.680><c> elements</c><00:06:30.240><c> in</c>
+
+00:06:30.790 --> 00:06:30.800 align:start position:0%
+the elements in
+ 
+
+00:06:30.800 --> 00:06:32.870 align:start position:0%
+the elements in
+so<00:06:31.039><c> basically</c><00:06:31.600><c> the</c><00:06:31.840><c> first</c><00:06:32.080><c> element</c><00:06:32.479><c> we</c><00:06:32.639><c> popped</c>
+
+00:06:32.870 --> 00:06:32.880 align:start position:0%
+so basically the first element we popped
+ 
+
+00:06:32.880 --> 00:06:34.629 align:start position:0%
+so basically the first element we popped
+from<00:06:33.039><c> our</c><00:06:33.120><c> stack</c><00:06:33.440><c> was</c><00:06:33.600><c> a</c><00:06:33.919><c> one</c><00:06:34.240><c> if</c><00:06:34.400><c> you</c><00:06:34.479><c> were</c>
+
+00:06:34.629 --> 00:06:34.639 align:start position:0%
+from our stack was a one if you were
+ 
+
+00:06:34.639 --> 00:06:35.430 align:start position:0%
+from our stack was a one if you were
+paying<00:06:34.880><c> attention</c>
+
+00:06:35.430 --> 00:06:35.440 align:start position:0%
+paying attention
+ 
+
+00:06:35.440 --> 00:06:38.230 align:start position:0%
+paying attention
+after<00:06:35.840><c> that</c><00:06:36.240><c> we</c><00:06:36.400><c> did</c><00:06:36.639><c> a</c><00:06:36.800><c> two</c><00:06:37.199><c> right</c><00:06:37.440><c> we</c><00:06:37.600><c> popped</c>
+
+00:06:38.230 --> 00:06:38.240 align:start position:0%
+after that we did a two right we popped
+ 
+
+00:06:38.240 --> 00:06:38.790 align:start position:0%
+after that we did a two right we popped
+the<00:06:38.400><c> two</c>
+
+00:06:38.790 --> 00:06:38.800 align:start position:0%
+the two
+ 
+
+00:06:38.800 --> 00:06:41.110 align:start position:0%
+the two
+and<00:06:38.960><c> then</c><00:06:39.199><c> we</c><00:06:39.360><c> went</c><00:06:39.520><c> back</c><00:06:39.840><c> up</c><00:06:39.919><c> to</c><00:06:40.080><c> the</c><00:06:40.319><c> three</c><00:06:40.960><c> we</c>
+
+00:06:41.110 --> 00:06:41.120 align:start position:0%
+and then we went back up to the three we
+ 
+
+00:06:41.120 --> 00:06:42.469 align:start position:0%
+and then we went back up to the three we
+popped<00:06:41.520><c> the</c><00:06:41.759><c> three</c>
+
+00:06:42.469 --> 00:06:42.479 align:start position:0%
+popped the three
+ 
+
+00:06:42.479 --> 00:06:44.790 align:start position:0%
+popped the three
+and<00:06:42.800><c> then</c><00:06:43.199><c> finally</c><00:06:43.680><c> we</c><00:06:43.919><c> visited</c><00:06:44.240><c> the</c><00:06:44.479><c> four</c>
+
+00:06:44.790 --> 00:06:44.800 align:start position:0%
+and then finally we visited the four
+ 
+
+00:06:44.800 --> 00:06:46.309 align:start position:0%
+and then finally we visited the four
+right<00:06:45.039><c> so</c><00:06:45.280><c> even</c><00:06:45.520><c> though</c><00:06:45.680><c> we</c><00:06:45.840><c> did</c><00:06:46.080><c> it</c>
+
+00:06:46.309 --> 00:06:46.319 align:start position:0%
+right so even though we did it
+ 
+
+00:06:46.319 --> 00:06:48.469 align:start position:0%
+right so even though we did it
+iteratively<00:06:47.120><c> we</c><00:06:47.360><c> visited</c><00:06:47.680><c> the</c><00:06:47.919><c> elements</c>
+
+00:06:48.469 --> 00:06:48.479 align:start position:0%
+iteratively we visited the elements
+ 
+
+00:06:48.479 --> 00:06:49.350 align:start position:0%
+iteratively we visited the elements
+exactly
+
+00:06:49.350 --> 00:06:49.360 align:start position:0%
+exactly
+ 
+
+00:06:49.360 --> 00:06:52.710 align:start position:0%
+exactly
+in<00:06:49.759><c> order</c><00:06:50.479><c> so</c><00:06:50.720><c> it's</c><00:06:51.680><c> surprisingly</c><00:06:52.479><c> the</c>
+
+00:06:52.710 --> 00:06:52.720 align:start position:0%
+in order so it's surprisingly the
+ 
+
+00:06:52.720 --> 00:06:53.909 align:start position:0%
+in order so it's surprisingly the
+iterative<00:06:53.280><c> solution</c>
+
+00:06:53.909 --> 00:06:53.919 align:start position:0%
+iterative solution
+ 
+
+00:06:53.919 --> 00:06:56.469 align:start position:0%
+iterative solution
+is<00:06:54.160><c> not</c><00:06:54.560><c> quite</c><00:06:54.880><c> as</c><00:06:55.039><c> hard</c><00:06:55.280><c> as</c><00:06:55.440><c> you</c><00:06:55.520><c> might</c><00:06:55.759><c> expect</c>
+
+00:06:56.469 --> 00:06:56.479 align:start position:0%
+is not quite as hard as you might expect
+ 
+
+00:06:56.479 --> 00:06:59.670 align:start position:0%
+is not quite as hard as you might expect
+let<00:06:56.639><c> me</c><00:06:56.880><c> show</c><00:06:57.039><c> you</c><00:06:57.199><c> the</c><00:06:57.440><c> code</c><00:06:57.759><c> for</c><00:06:58.000><c> it</c><00:06:58.160><c> now</c>
+
+00:06:59.670 --> 00:06:59.680 align:start position:0%
+let me show you the code for it now
+ 
+
+00:06:59.680 --> 00:07:02.790 align:start position:0%
+let me show you the code for it now
+so<00:07:00.080><c> i'm</c><00:07:00.240><c> going</c><00:07:00.319><c> to</c><00:07:00.560><c> declare</c><00:07:00.960><c> a</c><00:07:01.039><c> variable</c><00:07:01.680><c> n</c>
+
+00:07:02.790 --> 00:07:02.800 align:start position:0%
+so i'm going to declare a variable n
+ 
+
+00:07:02.800 --> 00:07:04.950 align:start position:0%
+so i'm going to declare a variable n
+to<00:07:03.039><c> basically</c><00:07:03.520><c> tell</c><00:07:03.759><c> us</c><00:07:03.919><c> the</c><00:07:04.160><c> number</c><00:07:04.639><c> of</c>
+
+00:07:04.950 --> 00:07:04.960 align:start position:0%
+to basically tell us the number of
+ 
+
+00:07:04.960 --> 00:07:07.110 align:start position:0%
+to basically tell us the number of
+elements<00:07:05.440><c> that</c><00:07:05.599><c> we</c><00:07:05.840><c> visited</c><00:07:06.319><c> from</c><00:07:06.560><c> our</c><00:07:06.720><c> tree</c>
+
+00:07:07.110 --> 00:07:07.120 align:start position:0%
+elements that we visited from our tree
+ 
+
+00:07:07.120 --> 00:07:07.589 align:start position:0%
+elements that we visited from our tree
+once
+
+00:07:07.589 --> 00:07:07.599 align:start position:0%
+once
+ 
+
+00:07:07.599 --> 00:07:10.070 align:start position:0%
+once
+n<00:07:08.319><c> equals</c><00:07:08.880><c> k</c><00:07:09.120><c> that's</c><00:07:09.360><c> how</c><00:07:09.520><c> you</c><00:07:09.680><c> know</c><00:07:09.919><c> we</c>
+
+00:07:10.070 --> 00:07:10.080 align:start position:0%
+n equals k that's how you know we
+ 
+
+00:07:10.080 --> 00:07:10.629 align:start position:0%
+n equals k that's how you know we
+visited
+
+00:07:10.629 --> 00:07:10.639 align:start position:0%
+visited
+ 
+
+00:07:10.639 --> 00:07:11.990 align:start position:0%
+visited
+the<00:07:10.800><c> element</c><00:07:11.120><c> that</c><00:07:11.280><c> we</c><00:07:11.360><c> wanted</c><00:07:11.599><c> to</c><00:07:11.759><c> and</c><00:07:11.840><c> then</c>
+
+00:07:11.990 --> 00:07:12.000 align:start position:0%
+the element that we wanted to and then
+ 
+
+00:07:12.000 --> 00:07:13.830 align:start position:0%
+the element that we wanted to and then
+we<00:07:12.160><c> can</c><00:07:12.240><c> return</c><00:07:12.720><c> that</c><00:07:13.039><c> value</c>
+
+00:07:13.830 --> 00:07:13.840 align:start position:0%
+we can return that value
+ 
+
+00:07:13.840 --> 00:07:15.510 align:start position:0%
+we can return that value
+and<00:07:14.000><c> remember</c><00:07:14.479><c> i'm</c><00:07:14.639><c> also</c><00:07:14.960><c> going</c><00:07:15.039><c> to</c><00:07:15.120><c> have</c><00:07:15.280><c> a</c>
+
+00:07:15.510 --> 00:07:15.520 align:start position:0%
+and remember i'm also going to have a
+ 
+
+00:07:15.520 --> 00:07:16.950 align:start position:0%
+and remember i'm also going to have a
+stack<00:07:15.919><c> which</c><00:07:16.080><c> is</c><00:07:16.240><c> going</c><00:07:16.319><c> to</c><00:07:16.400><c> help</c><00:07:16.720><c> us</c>
+
+00:07:16.950 --> 00:07:16.960 align:start position:0%
+stack which is going to help us
+ 
+
+00:07:16.960 --> 00:07:18.870 align:start position:0%
+stack which is going to help us
+because<00:07:17.199><c> we</c><00:07:17.520><c> we</c><00:07:17.759><c> need</c><00:07:18.000><c> it</c><00:07:18.400><c> because</c><00:07:18.720><c> we're</c>
+
+00:07:18.870 --> 00:07:18.880 align:start position:0%
+because we we need it because we're
+ 
+
+00:07:18.880 --> 00:07:20.629 align:start position:0%
+because we we need it because we're
+doing<00:07:19.039><c> this</c><00:07:19.360><c> iteratively</c>
+
+00:07:20.629 --> 00:07:20.639 align:start position:0%
+doing this iteratively
+ 
+
+00:07:20.639 --> 00:07:22.550 align:start position:0%
+doing this iteratively
+so<00:07:20.960><c> i'm</c><00:07:21.199><c> also</c><00:07:21.440><c> going</c><00:07:21.599><c> to</c><00:07:21.680><c> have</c><00:07:21.919><c> actually</c><00:07:22.319><c> a</c>
+
+00:07:22.550 --> 00:07:22.560 align:start position:0%
+so i'm also going to have actually a
+ 
+
+00:07:22.560 --> 00:07:23.909 align:start position:0%
+so i'm also going to have actually a
+pointer<00:07:23.120><c> cur</c>
+
+00:07:23.909 --> 00:07:23.919 align:start position:0%
+pointer cur
+ 
+
+00:07:23.919 --> 00:07:25.110 align:start position:0%
+pointer cur
+it's<00:07:24.080><c> going</c><00:07:24.160><c> to</c><00:07:24.319><c> initially</c><00:07:24.639><c> point</c><00:07:24.880><c> at</c><00:07:24.960><c> the</c>
+
+00:07:25.110 --> 00:07:25.120 align:start position:0%
+it's going to initially point at the
+ 
+
+00:07:25.120 --> 00:07:26.550 align:start position:0%
+it's going to initially point at the
+root<00:07:25.280><c> it's</c><00:07:25.520><c> basically</c><00:07:25.919><c> going</c><00:07:26.080><c> to</c><00:07:26.160><c> tell</c><00:07:26.319><c> us</c>
+
+00:07:26.550 --> 00:07:26.560 align:start position:0%
+root it's basically going to tell us
+ 
+
+00:07:26.560 --> 00:07:28.710 align:start position:0%
+root it's basically going to tell us
+what<00:07:26.800><c> node</c><00:07:27.039><c> that</c><00:07:27.199><c> we're</c><00:07:27.440><c> currently</c><00:07:28.000><c> visiting</c>
+
+00:07:28.710 --> 00:07:28.720 align:start position:0%
+what node that we're currently visiting
+ 
+
+00:07:28.720 --> 00:07:30.550 align:start position:0%
+what node that we're currently visiting
+or<00:07:28.960><c> at</c><00:07:29.039><c> the</c><00:07:29.280><c> node</c><00:07:29.440><c> that</c><00:07:29.599><c> we're</c><00:07:29.759><c> currently</c><00:07:30.240><c> at</c>
+
+00:07:30.550 --> 00:07:30.560 align:start position:0%
+or at the node that we're currently at
+ 
+
+00:07:30.560 --> 00:07:32.469 align:start position:0%
+or at the node that we're currently at
+and<00:07:30.800><c> so</c><00:07:30.960><c> i'm</c><00:07:31.039><c> going</c><00:07:31.120><c> to</c><00:07:31.280><c> have</c><00:07:31.360><c> a</c><00:07:31.520><c> while</c><00:07:31.840><c> loop</c>
+
+00:07:32.469 --> 00:07:32.479 align:start position:0%
+and so i'm going to have a while loop
+ 
+
+00:07:32.479 --> 00:07:35.830 align:start position:0%
+and so i'm going to have a while loop
+basically<00:07:33.039><c> while</c><00:07:33.520><c> current</c><00:07:34.080><c> is</c><00:07:34.319><c> not</c><00:07:34.639><c> null</c><00:07:35.360><c> and</c>
+
+00:07:35.830 --> 00:07:35.840 align:start position:0%
+basically while current is not null and
+ 
+
+00:07:35.840 --> 00:07:39.029 align:start position:0%
+basically while current is not null and
+the<00:07:36.080><c> stack</c><00:07:36.560><c> is</c><00:07:36.800><c> non-empty</c><00:07:38.160><c> we're</c><00:07:38.479><c> going</c><00:07:38.720><c> to</c>
+
+00:07:39.029 --> 00:07:39.039 align:start position:0%
+the stack is non-empty we're going to
+ 
+
+00:07:39.039 --> 00:07:40.469 align:start position:0%
+the stack is non-empty we're going to
+continue
+
+00:07:40.469 --> 00:07:40.479 align:start position:0%
+continue
+ 
+
+00:07:40.479 --> 00:07:42.790 align:start position:0%
+continue
+traversing<00:07:41.039><c> our</c><00:07:41.199><c> binary</c><00:07:41.599><c> tree</c><00:07:41.919><c> right</c><00:07:42.560><c> that</c>
+
+00:07:42.790 --> 00:07:42.800 align:start position:0%
+traversing our binary tree right that
+ 
+
+00:07:42.800 --> 00:07:44.390 align:start position:0%
+traversing our binary tree right that
+makes<00:07:43.039><c> sense</c><00:07:43.360><c> so</c><00:07:43.599><c> far</c>
+
+00:07:44.390 --> 00:07:44.400 align:start position:0%
+makes sense so far
+ 
+
+00:07:44.400 --> 00:07:46.230 align:start position:0%
+makes sense so far
+and<00:07:44.560><c> remember</c><00:07:45.039><c> the</c><00:07:45.360><c> first</c><00:07:45.680><c> thing</c><00:07:45.840><c> we</c><00:07:46.000><c> want</c><00:07:46.160><c> to</c>
+
+00:07:46.230 --> 00:07:46.240 align:start position:0%
+and remember the first thing we want to
+ 
+
+00:07:46.240 --> 00:07:47.909 align:start position:0%
+and remember the first thing we want to
+do<00:07:46.400><c> is</c><00:07:46.479><c> let's</c><00:07:46.639><c> say</c><00:07:46.800><c> we're</c><00:07:47.039><c> at</c><00:07:47.280><c> ker</c><00:07:47.520><c> what</c><00:07:47.680><c> are</c><00:07:47.759><c> we</c>
+
+00:07:47.909 --> 00:07:47.919 align:start position:0%
+do is let's say we're at ker what are we
+ 
+
+00:07:47.919 --> 00:07:49.270 align:start position:0%
+do is let's say we're at ker what are we
+going<00:07:48.000><c> to</c><00:07:48.080><c> do</c>
+
+00:07:49.270 --> 00:07:49.280 align:start position:0%
+going to do
+ 
+
+00:07:49.280 --> 00:07:51.670 align:start position:0%
+going to do
+while<00:07:49.759><c> current</c><00:07:50.240><c> is</c><00:07:50.560><c> not</c><00:07:50.879><c> null</c><00:07:51.280><c> we're</c><00:07:51.520><c> just</c>
+
+00:07:51.670 --> 00:07:51.680 align:start position:0%
+while current is not null we're just
+ 
+
+00:07:51.680 --> 00:07:52.469 align:start position:0%
+while current is not null we're just
+going<00:07:51.840><c> to</c><00:07:52.080><c> keep</c>
+
+00:07:52.469 --> 00:07:52.479 align:start position:0%
+going to keep
+ 
+
+00:07:52.479 --> 00:07:54.869 align:start position:0%
+going to keep
+going<00:07:53.120><c> left</c><00:07:53.520><c> right</c><00:07:53.840><c> remember</c><00:07:54.319><c> we</c><00:07:54.479><c> want</c><00:07:54.639><c> to</c><00:07:54.720><c> go</c>
+
+00:07:54.869 --> 00:07:54.879 align:start position:0%
+going left right remember we want to go
+ 
+
+00:07:54.879 --> 00:07:57.589 align:start position:0%
+going left right remember we want to go
+through<00:07:55.360><c> every</c><00:07:55.840><c> node</c><00:07:56.160><c> in</c><00:07:56.319><c> the</c><00:07:56.560><c> left</c><00:07:56.879><c> sub</c><00:07:57.120><c> tree</c>
+
+00:07:57.589 --> 00:07:57.599 align:start position:0%
+through every node in the left sub tree
+ 
+
+00:07:57.599 --> 00:08:00.070 align:start position:0%
+through every node in the left sub tree
+before<00:07:58.080><c> we</c><00:07:58.319><c> visit</c><00:07:58.639><c> the</c><00:07:58.800><c> current</c><00:07:59.199><c> node</c><00:07:59.759><c> so</c>
+
+00:08:00.070 --> 00:08:00.080 align:start position:0%
+before we visit the current node so
+ 
+
+00:08:00.080 --> 00:08:02.070 align:start position:0%
+before we visit the current node so
+while<00:08:00.400><c> current</c><00:08:00.800><c> is</c><00:08:00.960><c> not</c><00:08:01.199><c> null</c><00:08:01.440><c> we're</c><00:08:01.599><c> going</c><00:08:01.680><c> to</c>
+
+00:08:02.070 --> 00:08:02.080 align:start position:0%
+while current is not null we're going to
+ 
+
+00:08:02.080 --> 00:08:05.350 align:start position:0%
+while current is not null we're going to
+set<00:08:02.800><c> current</c><00:08:03.440><c> equal</c><00:08:03.759><c> to</c><00:08:04.000><c> current</c><00:08:04.479><c> dot</c><00:08:04.879><c> left</c>
+
+00:08:05.350 --> 00:08:05.360 align:start position:0%
+set current equal to current dot left
+ 
+
+00:08:05.360 --> 00:08:07.670 align:start position:0%
+set current equal to current dot left
+but<00:08:05.520><c> remember</c><00:08:06.000><c> before</c><00:08:06.639><c> we</c><00:08:06.879><c> do</c><00:08:07.120><c> that</c><00:08:07.440><c> we</c><00:08:07.599><c> have</c>
+
+00:08:07.670 --> 00:08:07.680 align:start position:0%
+but remember before we do that we have
+ 
+
+00:08:07.680 --> 00:08:08.790 align:start position:0%
+but remember before we do that we have
+to<00:08:07.840><c> go</c><00:08:08.319><c> back</c>
+
+00:08:08.790 --> 00:08:08.800 align:start position:0%
+to go back
+ 
+
+00:08:08.800 --> 00:08:10.710 align:start position:0%
+to go back
+up<00:08:09.039><c> to</c><00:08:09.280><c> current</c><00:08:09.840><c> after</c><00:08:10.160><c> we're</c><00:08:10.400><c> done</c>
+
+00:08:10.710 --> 00:08:10.720 align:start position:0%
+up to current after we're done
+ 
+
+00:08:10.720 --> 00:08:11.990 align:start position:0%
+up to current after we're done
+processing<00:08:11.360><c> current</c><00:08:11.680><c> dot</c>
+
+00:08:11.990 --> 00:08:12.000 align:start position:0%
+processing current dot
+ 
+
+00:08:12.000 --> 00:08:14.469 align:start position:0%
+processing current dot
+left<00:08:12.400><c> so</c><00:08:12.639><c> before</c><00:08:13.120><c> i</c><00:08:13.280><c> do</c><00:08:13.520><c> that</c><00:08:14.000><c> i'm</c><00:08:14.240><c> going</c><00:08:14.319><c> to</c>
+
+00:08:14.469 --> 00:08:14.479 align:start position:0%
+left so before i do that i'm going to
+ 
+
+00:08:14.479 --> 00:08:15.029 align:start position:0%
+left so before i do that i'm going to
+take
+
+00:08:15.029 --> 00:08:15.039 align:start position:0%
+take
+ 
+
+00:08:15.039 --> 00:08:18.150 align:start position:0%
+take
+the<00:08:15.280><c> stack</c><00:08:16.160><c> and</c><00:08:16.639><c> add</c><00:08:17.599><c> current</c>
+
+00:08:18.150 --> 00:08:18.160 align:start position:0%
+the stack and add current
+ 
+
+00:08:18.160 --> 00:08:21.110 align:start position:0%
+the stack and add current
+to<00:08:18.400><c> it</c><00:08:19.039><c> and</c><00:08:19.280><c> so</c><00:08:19.520><c> when</c><00:08:19.759><c> this</c><00:08:20.080><c> loop</c><00:08:20.560><c> is</c><00:08:20.800><c> done</c>
+
+00:08:21.110 --> 00:08:21.120 align:start position:0%
+to it and so when this loop is done
+ 
+
+00:08:21.120 --> 00:08:23.029 align:start position:0%
+to it and so when this loop is done
+executing<00:08:21.680><c> that</c><00:08:21.840><c> means</c><00:08:22.160><c> current</c><00:08:22.560><c> is</c><00:08:22.720><c> at</c>
+
+00:08:23.029 --> 00:08:23.039 align:start position:0%
+executing that means current is at
+ 
+
+00:08:23.039 --> 00:08:25.350 align:start position:0%
+executing that means current is at
+null<00:08:23.280><c> so</c><00:08:23.440><c> that</c><00:08:23.599><c> means</c><00:08:23.840><c> we</c><00:08:24.000><c> went</c><00:08:24.319><c> too</c><00:08:24.639><c> far</c><00:08:25.199><c> and</c>
+
+00:08:25.350 --> 00:08:25.360 align:start position:0%
+null so that means we went too far and
+ 
+
+00:08:25.360 --> 00:08:26.790 align:start position:0%
+null so that means we went too far and
+that<00:08:25.599><c> means</c><00:08:25.840><c> we</c><00:08:26.000><c> have</c><00:08:26.080><c> to</c><00:08:26.319><c> pop</c>
+
+00:08:26.790 --> 00:08:26.800 align:start position:0%
+that means we have to pop
+ 
+
+00:08:26.800 --> 00:08:29.510 align:start position:0%
+that means we have to pop
+the<00:08:27.199><c> last</c><00:08:27.680><c> element</c><00:08:28.080><c> that</c><00:08:28.240><c> we</c><00:08:28.560><c> added</c><00:08:29.039><c> to</c><00:08:29.280><c> our</c>
+
+00:08:29.510 --> 00:08:29.520 align:start position:0%
+the last element that we added to our
+ 
+
+00:08:29.520 --> 00:08:31.350 align:start position:0%
+the last element that we added to our
+stack<00:08:30.000><c> so</c><00:08:30.240><c> actually</c><00:08:30.639><c> stack</c>
+
+00:08:31.350 --> 00:08:31.360 align:start position:0%
+stack so actually stack
+ 
+
+00:08:31.360 --> 00:08:33.589 align:start position:0%
+stack so actually stack
+pop<00:08:31.680><c> we're</c><00:08:31.919><c> popping</c><00:08:32.240><c> the</c><00:08:32.399><c> most</c><00:08:32.959><c> recently</c>
+
+00:08:33.589 --> 00:08:33.599 align:start position:0%
+pop we're popping the most recently
+ 
+
+00:08:33.599 --> 00:08:36.070 align:start position:0%
+pop we're popping the most recently
+added<00:08:33.919><c> value</c><00:08:34.479><c> from</c><00:08:34.719><c> our</c><00:08:34.880><c> stack</c>
+
+00:08:36.070 --> 00:08:36.080 align:start position:0%
+added value from our stack
+ 
+
+00:08:36.080 --> 00:08:38.550 align:start position:0%
+added value from our stack
+and<00:08:36.240><c> we're</c><00:08:36.399><c> going</c><00:08:36.479><c> to</c><00:08:36.719><c> set</c><00:08:36.959><c> it</c><00:08:37.120><c> to</c><00:08:37.440><c> cur</c><00:08:37.839><c> so</c><00:08:38.399><c> now</c>
+
+00:08:38.550 --> 00:08:38.560 align:start position:0%
+and we're going to set it to cur so now
+ 
+
+00:08:38.560 --> 00:08:40.310 align:start position:0%
+and we're going to set it to cur so now
+that<00:08:38.719><c> we</c><00:08:39.039><c> popped</c><00:08:39.440><c> this</c><00:08:39.680><c> element</c>
+
+00:08:40.310 --> 00:08:40.320 align:start position:0%
+that we popped this element
+ 
+
+00:08:40.320 --> 00:08:42.389 align:start position:0%
+that we popped this element
+curve<00:08:40.719><c> that</c><00:08:40.880><c> means</c><00:08:41.120><c> we're</c><00:08:41.360><c> processing</c><00:08:42.080><c> it</c><00:08:42.240><c> so</c>
+
+00:08:42.389 --> 00:08:42.399 align:start position:0%
+curve that means we're processing it so
+ 
+
+00:08:42.399 --> 00:08:43.750 align:start position:0%
+curve that means we're processing it so
+what<00:08:42.560><c> we</c><00:08:42.719><c> can</c><00:08:42.880><c> do</c><00:08:43.039><c> is</c><00:08:43.200><c> actually</c>
+
+00:08:43.750 --> 00:08:43.760 align:start position:0%
+what we can do is actually
+ 
+
+00:08:43.760 --> 00:08:47.350 align:start position:0%
+what we can do is actually
+update<00:08:44.560><c> our</c><00:08:45.279><c> n</c><00:08:45.600><c> value</c><00:08:46.000><c> that</c><00:08:46.160><c> means</c><00:08:46.640><c> n</c>
+
+00:08:47.350 --> 00:08:47.360 align:start position:0%
+update our n value that means n
+ 
+
+00:08:47.360 --> 00:08:49.110 align:start position:0%
+update our n value that means n
+that<00:08:47.519><c> means</c><00:08:47.680><c> we</c><00:08:47.839><c> just</c><00:08:48.080><c> visited</c><00:08:48.480><c> another</c><00:08:48.880><c> node</c>
+
+00:08:49.110 --> 00:08:49.120 align:start position:0%
+that means we just visited another node
+ 
+
+00:08:49.120 --> 00:08:50.470 align:start position:0%
+that means we just visited another node
+so<00:08:49.279><c> we</c><00:08:49.360><c> can</c><00:08:49.680><c> increment</c><00:08:50.240><c> n</c>
+
+00:08:50.470 --> 00:08:50.480 align:start position:0%
+so we can increment n
+ 
+
+00:08:50.480 --> 00:08:53.990 align:start position:0%
+so we can increment n
+by<00:08:50.800><c> 1.</c><00:08:51.600><c> and</c><00:08:52.000><c> if</c><00:08:52.640><c> n</c><00:08:52.959><c> happens</c><00:08:53.360><c> to</c><00:08:53.519><c> be</c><00:08:53.680><c> equal</c>
+
+00:08:53.990 --> 00:08:54.000 align:start position:0%
+by 1. and if n happens to be equal
+ 
+
+00:08:54.000 --> 00:08:56.230 align:start position:0%
+by 1. and if n happens to be equal
+to<00:08:54.240><c> k</c><00:08:54.560><c> that</c><00:08:54.800><c> means</c><00:08:55.279><c> the</c><00:08:55.440><c> current</c><00:08:55.760><c> node</c><00:08:56.000><c> that</c><00:08:56.080><c> we</c>
+
+00:08:56.230 --> 00:08:56.240 align:start position:0%
+to k that means the current node that we
+ 
+
+00:08:56.240 --> 00:08:57.190 align:start position:0%
+to k that means the current node that we
+just
+
+00:08:57.190 --> 00:08:57.200 align:start position:0%
+just
+ 
+
+00:08:57.200 --> 00:08:59.509 align:start position:0%
+just
+processed<00:08:58.080><c> is</c><00:08:58.320><c> the</c><00:08:58.480><c> value</c><00:08:58.880><c> we're</c><00:08:59.040><c> looking</c><00:08:59.279><c> for</c>
+
+00:08:59.509 --> 00:08:59.519 align:start position:0%
+processed is the value we're looking for
+ 
+
+00:08:59.519 --> 00:09:00.870 align:start position:0%
+processed is the value we're looking for
+because<00:08:59.760><c> remember</c><00:09:00.240><c> we</c><00:09:00.560><c> are</c>
+
+00:09:00.870 --> 00:09:00.880 align:start position:0%
+because remember we are
+ 
+
+00:09:00.880 --> 00:09:04.070 align:start position:0%
+because remember we are
+looking<00:09:01.519><c> for</c><00:09:01.680><c> the</c><00:09:02.000><c> kth</c><00:09:02.640><c> smallest</c><00:09:03.279><c> element</c>
+
+00:09:04.070 --> 00:09:04.080 align:start position:0%
+looking for the kth smallest element
+ 
+
+00:09:04.080 --> 00:09:06.630 align:start position:0%
+looking for the kth smallest element
+so<00:09:04.959><c> if</c><00:09:05.200><c> that's</c><00:09:05.519><c> true</c><00:09:05.760><c> then</c><00:09:05.920><c> we</c><00:09:06.080><c> can</c><00:09:06.240><c> just</c>
+
+00:09:06.630 --> 00:09:06.640 align:start position:0%
+so if that's true then we can just
+ 
+
+00:09:06.640 --> 00:09:07.110 align:start position:0%
+so if that's true then we can just
+return
+
+00:09:07.110 --> 00:09:07.120 align:start position:0%
+return
+ 
+
+00:09:07.120 --> 00:09:09.269 align:start position:0%
+return
+current.value<00:09:08.160><c> and</c><00:09:08.399><c> we're</c><00:09:08.640><c> done</c><00:09:08.959><c> we</c><00:09:09.120><c> don't</c>
+
+00:09:09.269 --> 00:09:09.279 align:start position:0%
+current.value and we're done we don't
+ 
+
+00:09:09.279 --> 00:09:11.750 align:start position:0%
+current.value and we're done we don't
+have<00:09:09.360><c> to</c><00:09:09.519><c> visit</c><00:09:09.920><c> any</c><00:09:10.320><c> extra</c><00:09:10.800><c> elements</c>
+
+00:09:11.750 --> 00:09:11.760 align:start position:0%
+have to visit any extra elements
+ 
+
+00:09:11.760 --> 00:09:14.389 align:start position:0%
+have to visit any extra elements
+but<00:09:12.000><c> what</c><00:09:12.240><c> happens</c><00:09:12.640><c> if</c><00:09:12.800><c> this</c><00:09:13.040><c> is</c><00:09:13.360><c> not</c><00:09:13.680><c> the</c><00:09:13.920><c> case</c>
+
+00:09:14.389 --> 00:09:14.399 align:start position:0%
+but what happens if this is not the case
+ 
+
+00:09:14.399 --> 00:09:14.870 align:start position:0%
+but what happens if this is not the case
+well
+
+00:09:14.870 --> 00:09:14.880 align:start position:0%
+well
+ 
+
+00:09:14.880 --> 00:09:17.670 align:start position:0%
+well
+we<00:09:15.120><c> just</c><00:09:15.600><c> processed</c><00:09:16.399><c> current</c><00:09:16.880><c> right</c><00:09:17.440><c> that</c>
+
+00:09:17.670 --> 00:09:17.680 align:start position:0%
+we just processed current right that
+ 
+
+00:09:17.680 --> 00:09:18.230 align:start position:0%
+we just processed current right that
+means
+
+00:09:18.230 --> 00:09:18.240 align:start position:0%
+means
+ 
+
+00:09:18.240 --> 00:09:20.470 align:start position:0%
+means
+that<00:09:18.480><c> we're</c><00:09:18.640><c> allowed</c><00:09:19.040><c> to</c><00:09:19.360><c> now</c><00:09:19.680><c> go</c><00:09:19.920><c> to</c><00:09:20.160><c> its</c>
+
+00:09:20.470 --> 00:09:20.480 align:start position:0%
+that we're allowed to now go to its
+ 
+
+00:09:20.480 --> 00:09:22.310 align:start position:0%
+that we're allowed to now go to its
+right<00:09:20.959><c> subtree</c><00:09:21.440><c> so</c><00:09:21.600><c> we</c><00:09:21.680><c> can</c><00:09:21.839><c> actually</c>
+
+00:09:22.310 --> 00:09:22.320 align:start position:0%
+right subtree so we can actually
+ 
+
+00:09:22.320 --> 00:09:24.710 align:start position:0%
+right subtree so we can actually
+update<00:09:22.800><c> current</c><00:09:23.200><c> now</c><00:09:23.440><c> and</c><00:09:23.600><c> set</c><00:09:23.760><c> it</c><00:09:23.920><c> to</c><00:09:24.160><c> current</c>
+
+00:09:24.710 --> 00:09:24.720 align:start position:0%
+update current now and set it to current
+ 
+
+00:09:24.720 --> 00:09:25.590 align:start position:0%
+update current now and set it to current
+dot
+
+00:09:25.590 --> 00:09:25.600 align:start position:0%
+dot
+ 
+
+00:09:25.600 --> 00:09:27.990 align:start position:0%
+dot
+right<00:09:26.399><c> and</c><00:09:26.560><c> so</c><00:09:26.800><c> what's</c><00:09:27.040><c> gonna</c><00:09:27.279><c> happen</c><00:09:27.680><c> now</c>
+
+00:09:27.990 --> 00:09:28.000 align:start position:0%
+right and so what's gonna happen now
+ 
+
+00:09:28.000 --> 00:09:30.070 align:start position:0%
+right and so what's gonna happen now
+well<00:09:28.240><c> the</c><00:09:28.480><c> loop</c><00:09:28.720><c> is</c><00:09:28.880><c> gonna</c><00:09:29.120><c> actually</c><00:09:29.440><c> go</c><00:09:29.680><c> back</c>
+
+00:09:30.070 --> 00:09:30.080 align:start position:0%
+well the loop is gonna actually go back
+ 
+
+00:09:30.080 --> 00:09:32.949 align:start position:0%
+well the loop is gonna actually go back
+up<00:09:30.320><c> if</c><00:09:30.560><c> current</c><00:09:30.959><c> dot</c><00:09:31.200><c> write</c><00:09:31.600><c> is</c><00:09:32.160><c> non-null</c><00:09:32.720><c> or</c>
+
+00:09:32.949 --> 00:09:32.959 align:start position:0%
+up if current dot write is non-null or
+ 
+
+00:09:32.959 --> 00:09:35.430 align:start position:0%
+up if current dot write is non-null or
+the<00:09:33.120><c> stack</c><00:09:33.519><c> is</c><00:09:33.680><c> not</c><00:09:33.920><c> null</c><00:09:34.160><c> then</c><00:09:34.399><c> we're</c><00:09:34.560><c> gonna</c>
+
+00:09:35.430 --> 00:09:35.440 align:start position:0%
+the stack is not null then we're gonna
+ 
+
+00:09:35.440 --> 00:09:37.829 align:start position:0%
+the stack is not null then we're gonna
+start<00:09:35.760><c> our</c><00:09:36.080><c> loop</c><00:09:36.640><c> and</c><00:09:36.959><c> for</c><00:09:37.200><c> that</c><00:09:37.440><c> node</c><00:09:37.680><c> we're</c>
+
+00:09:37.829 --> 00:09:37.839 align:start position:0%
+start our loop and for that node we're
+ 
+
+00:09:37.839 --> 00:09:40.150 align:start position:0%
+start our loop and for that node we're
+gonna<00:09:38.080><c> keep</c><00:09:38.320><c> going</c><00:09:38.720><c> left</c><00:09:39.120><c> as</c><00:09:39.279><c> much</c><00:09:39.519><c> as</c><00:09:39.680><c> we</c><00:09:39.839><c> can</c>
+
+00:09:40.150 --> 00:09:40.160 align:start position:0%
+gonna keep going left as much as we can
+ 
+
+00:09:40.160 --> 00:09:41.750 align:start position:0%
+gonna keep going left as much as we can
+maybe<00:09:40.560><c> it</c><00:09:40.640><c> doesn't</c><00:09:40.959><c> have</c><00:09:41.120><c> a</c><00:09:41.279><c> left</c>
+
+00:09:41.750 --> 00:09:41.760 align:start position:0%
+maybe it doesn't have a left
+ 
+
+00:09:41.760 --> 00:09:44.150 align:start position:0%
+maybe it doesn't have a left
+sub<00:09:42.080><c> tree</c><00:09:42.320><c> so</c><00:09:42.480><c> then</c><00:09:42.720><c> this</c><00:09:43.120><c> part</c><00:09:43.440><c> isn't</c><00:09:43.839><c> is</c><00:09:44.000><c> not</c>
+
+00:09:44.150 --> 00:09:44.160 align:start position:0%
+sub tree so then this part isn't is not
+ 
+
+00:09:44.160 --> 00:09:46.070 align:start position:0%
+sub tree so then this part isn't is not
+gonna<00:09:44.480><c> execute</c><00:09:44.959><c> and</c><00:09:45.040><c> then</c><00:09:45.200><c> we'll</c><00:09:45.440><c> end</c><00:09:45.680><c> up</c>
+
+00:09:46.070 --> 00:09:46.080 align:start position:0%
+gonna execute and then we'll end up
+ 
+
+00:09:46.080 --> 00:09:48.389 align:start position:0%
+gonna execute and then we'll end up
+we're<00:09:46.240><c> gonna</c><00:09:46.480><c> end</c><00:09:46.640><c> up</c><00:09:46.800><c> just</c><00:09:47.040><c> popping</c><00:09:47.680><c> again</c>
+
+00:09:48.389 --> 00:09:48.399 align:start position:0%
+we're gonna end up just popping again
+ 
+
+00:09:48.399 --> 00:09:49.670 align:start position:0%
+we're gonna end up just popping again
+from<00:09:48.640><c> our</c><00:09:48.800><c> stack</c>
+
+00:09:49.670 --> 00:09:49.680 align:start position:0%
+from our stack
+ 
+
+00:09:49.680 --> 00:09:53.110 align:start position:0%
+from our stack
+and<00:09:50.240><c> conveniently</c><00:09:51.040><c> for</c><00:09:51.279><c> us</c><00:09:51.760><c> in</c><00:09:52.160><c> this</c><00:09:52.480><c> problem</c>
+
+00:09:53.110 --> 00:09:53.120 align:start position:0%
+and conveniently for us in this problem
+ 
+
+00:09:53.120 --> 00:09:55.829 align:start position:0%
+and conveniently for us in this problem
+we're<00:09:53.360><c> guaranteed</c><00:09:54.160><c> to</c><00:09:54.320><c> have</c><00:09:54.720><c> at</c><00:09:54.959><c> least</c><00:09:55.360><c> k</c>
+
+00:09:55.829 --> 00:09:55.839 align:start position:0%
+we're guaranteed to have at least k
+ 
+
+00:09:55.839 --> 00:09:57.670 align:start position:0%
+we're guaranteed to have at least k
+nodes<00:09:56.240><c> in</c><00:09:56.399><c> our</c><00:09:56.560><c> tree</c><00:09:56.959><c> so</c><00:09:57.200><c> this</c>
+
+00:09:57.670 --> 00:09:57.680 align:start position:0%
+nodes in our tree so this
+ 
+
+00:09:57.680 --> 00:09:59.829 align:start position:0%
+nodes in our tree so this
+is<00:09:57.920><c> actually</c><00:09:58.399><c> always</c><00:09:58.880><c> going</c><00:09:59.120><c> to</c><00:09:59.360><c> execute</c>
+
+00:09:59.829 --> 00:09:59.839 align:start position:0%
+is actually always going to execute
+ 
+
+00:09:59.839 --> 00:10:01.030 align:start position:0%
+is actually always going to execute
+we're<00:10:00.000><c> not</c><00:10:00.160><c> going</c><00:10:00.240><c> to</c><00:10:00.399><c> end</c><00:10:00.640><c> up</c>
+
+00:10:01.030 --> 00:10:01.040 align:start position:0%
+we're not going to end up
+ 
+
+00:10:01.040 --> 00:10:03.509 align:start position:0%
+we're not going to end up
+exiting<00:10:01.600><c> this</c><00:10:02.000><c> while</c><00:10:02.399><c> loop</c><00:10:02.959><c> so</c><00:10:03.120><c> we</c><00:10:03.279><c> actually</c>
+
+00:10:03.509 --> 00:10:03.519 align:start position:0%
+exiting this while loop so we actually
+ 
+
+00:10:03.519 --> 00:10:05.750 align:start position:0%
+exiting this while loop so we actually
+don't<00:10:03.760><c> even</c><00:10:04.000><c> need</c><00:10:04.320><c> a</c><00:10:04.480><c> return</c><00:10:04.959><c> statement</c><00:10:05.519><c> over</c>
+
+00:10:05.750 --> 00:10:05.760 align:start position:0%
+don't even need a return statement over
+ 
+
+00:10:05.760 --> 00:10:06.630 align:start position:0%
+don't even need a return statement over
+here
+
+00:10:06.630 --> 00:10:06.640 align:start position:0%
+here
+ 
+
+00:10:06.640 --> 00:10:08.630 align:start position:0%
+here
+and<00:10:06.800><c> this</c><00:10:07.120><c> actually</c><00:10:07.519><c> is</c><00:10:07.680><c> the</c><00:10:07.839><c> entire</c><00:10:08.240><c> code</c><00:10:08.480><c> let</c>
+
+00:10:08.630 --> 00:10:08.640 align:start position:0%
+and this actually is the entire code let
+ 
+
+00:10:08.640 --> 00:10:10.470 align:start position:0%
+and this actually is the entire code let
+me<00:10:08.800><c> just</c><00:10:09.040><c> run</c><00:10:09.279><c> it</c><00:10:09.360><c> for</c><00:10:09.519><c> you</c><00:10:09.680><c> to</c><00:10:09.920><c> prove</c><00:10:10.160><c> that</c><00:10:10.399><c> it</c>
+
+00:10:10.470 --> 00:10:10.480 align:start position:0%
+me just run it for you to prove that it
+ 
+
+00:10:10.480 --> 00:10:11.190 align:start position:0%
+me just run it for you to prove that it
+works
+
+00:10:11.190 --> 00:10:11.200 align:start position:0%
+works
+ 
+
+00:10:11.200 --> 00:10:13.590 align:start position:0%
+works
+and<00:10:11.440><c> as</c><00:10:11.680><c> you</c><00:10:11.760><c> can</c><00:10:11.920><c> see</c><00:10:12.399><c> it's</c><00:10:12.959><c> according</c><00:10:13.440><c> to</c>
+
+00:10:13.590 --> 00:10:13.600 align:start position:0%
+and as you can see it's according to
+ 
+
+00:10:13.600 --> 00:10:15.269 align:start position:0%
+and as you can see it's according to
+this<00:10:13.920><c> not</c><00:10:14.079><c> pretty</c><00:10:14.399><c> efficient</c><00:10:14.720><c> but</c><00:10:14.880><c> i'm</c><00:10:15.040><c> pretty</c>
+
+00:10:15.269 --> 00:10:15.279 align:start position:0%
+this not pretty efficient but i'm pretty
+ 
+
+00:10:15.279 --> 00:10:17.430 align:start position:0%
+this not pretty efficient but i'm pretty
+sure<00:10:15.440><c> if</c><00:10:15.600><c> i</c><00:10:15.760><c> ran</c><00:10:16.000><c> it</c><00:10:16.160><c> again</c><00:10:16.480><c> i</c><00:10:16.640><c> would</c><00:10:16.880><c> get</c><00:10:17.120><c> a</c>
+
+00:10:17.430 --> 00:10:17.440 align:start position:0%
+sure if i ran it again i would get a
+ 
+
+00:10:17.440 --> 00:10:19.829 align:start position:0%
+sure if i ran it again i would get a
+much<00:10:17.760><c> more</c><00:10:17.920><c> efficient</c><00:10:18.399><c> time</c><00:10:19.040><c> but</c><00:10:19.200><c> you</c><00:10:19.360><c> can</c><00:10:19.519><c> see</c>
+
+00:10:19.829 --> 00:10:19.839 align:start position:0%
+much more efficient time but you can see
+ 
+
+00:10:19.839 --> 00:10:20.710 align:start position:0%
+much more efficient time but you can see
+this<00:10:20.240><c> is</c><00:10:20.399><c> the</c>
+
+00:10:20.710 --> 00:10:20.720 align:start position:0%
+this is the
+ 
+
+00:10:20.720 --> 00:10:23.030 align:start position:0%
+this is the
+iterative<00:10:21.200><c> solution</c><00:10:21.680><c> it's</c><00:10:22.000><c> roughly</c><00:10:22.399><c> this</c><00:10:22.880><c> the</c>
+
+00:10:23.030 --> 00:10:23.040 align:start position:0%
+iterative solution it's roughly this the
+ 
+
+00:10:23.040 --> 00:10:24.870 align:start position:0%
+iterative solution it's roughly this the
+same<00:10:23.279><c> time</c><00:10:23.600><c> complexity</c><00:10:24.320><c> as</c>
+
+00:10:24.870 --> 00:10:24.880 align:start position:0%
+same time complexity as
+ 
+
+00:10:24.880 --> 00:10:27.670 align:start position:0%
+same time complexity as
+the<00:10:25.440><c> uh</c><00:10:25.920><c> recursive</c><00:10:26.480><c> solution</c><00:10:27.440><c> and</c>
+
+00:10:27.670 --> 00:10:27.680 align:start position:0%
+the uh recursive solution and
+ 
+
+00:10:27.680 --> 00:10:28.949 align:start position:0%
+the uh recursive solution and
+surprisingly
+
+00:10:28.949 --> 00:10:28.959 align:start position:0%
+surprisingly
+ 
+
+00:10:28.959 --> 00:10:31.350 align:start position:0%
+surprisingly
+uh<00:10:29.279><c> it's</c><00:10:29.519><c> not</c><00:10:29.839><c> that</c><00:10:30.160><c> much</c><00:10:30.480><c> code</c><00:10:30.880><c> right</c><00:10:31.200><c> like</c>
+
+00:10:31.350 --> 00:10:31.360 align:start position:0%
+uh it's not that much code right like
+ 
+
+00:10:31.360 --> 00:10:33.350 align:start position:0%
+uh it's not that much code right like
+you<00:10:31.519><c> might</c><00:10:31.839><c> expect</c><00:10:32.399><c> the</c><00:10:32.560><c> iterative</c><00:10:32.959><c> solution</c>
+
+00:10:33.350 --> 00:10:33.360 align:start position:0%
+you might expect the iterative solution
+ 
+
+00:10:33.360 --> 00:10:34.870 align:start position:0%
+you might expect the iterative solution
+to<00:10:33.440><c> be</c><00:10:33.600><c> more</c><00:10:33.920><c> complex</c>
+
+00:10:34.870 --> 00:10:34.880 align:start position:0%
+to be more complex
+ 
+
+00:10:34.880 --> 00:10:36.470 align:start position:0%
+to be more complex
+but<00:10:35.120><c> we're</c><00:10:35.279><c> actually</c><00:10:35.519><c> not</c><00:10:35.760><c> doing</c><00:10:36.000><c> anything</c>
+
+00:10:36.470 --> 00:10:36.480 align:start position:0%
+but we're actually not doing anything
+ 
+
+00:10:36.480 --> 00:10:38.630 align:start position:0%
+but we're actually not doing anything
+fancy<00:10:36.880><c> we're</c><00:10:37.040><c> just</c><00:10:37.519><c> going</c><00:10:37.839><c> as</c><00:10:38.160><c> far</c>
+
+00:10:38.630 --> 00:10:38.640 align:start position:0%
+fancy we're just going as far
+ 
+
+00:10:38.640 --> 00:10:41.030 align:start position:0%
+fancy we're just going as far
+left<00:10:38.959><c> as</c><00:10:39.040><c> we</c><00:10:39.279><c> possibly</c><00:10:39.839><c> can</c><00:10:40.480><c> adding</c><00:10:40.880><c> the</c>
+
+00:10:41.030 --> 00:10:41.040 align:start position:0%
+left as we possibly can adding the
+ 
+
+00:10:41.040 --> 00:10:42.310 align:start position:0%
+left as we possibly can adding the
+values<00:10:41.440><c> to</c><00:10:41.600><c> the</c><00:10:41.760><c> stack</c>
+
+00:10:42.310 --> 00:10:42.320 align:start position:0%
+values to the stack
+ 
+
+00:10:42.320 --> 00:10:44.550 align:start position:0%
+values to the stack
+and<00:10:42.399><c> then</c><00:10:42.720><c> popping</c><00:10:43.120><c> from</c><00:10:43.279><c> the</c><00:10:43.600><c> right</c><00:10:44.160><c> when</c><00:10:44.320><c> we</c>
+
+00:10:44.550 --> 00:10:44.560 align:start position:0%
+and then popping from the right when we
+ 
+
+00:10:44.560 --> 00:10:45.670 align:start position:0%
+and then popping from the right when we
+need<00:10:44.800><c> to</c>
+
+00:10:45.670 --> 00:10:45.680 align:start position:0%
+need to
+ 
+
+00:10:45.680 --> 00:10:48.550 align:start position:0%
+need to
+so<00:10:46.160><c> i</c><00:10:46.320><c> hope</c><00:10:46.560><c> this</c><00:10:46.800><c> was</c><00:10:46.959><c> helpful</c><00:10:47.680><c> if</c><00:10:47.920><c> it</c><00:10:48.079><c> was</c>
+
+00:10:48.550 --> 00:10:48.560 align:start position:0%
+so i hope this was helpful if it was
+ 
+
+00:10:48.560 --> 00:10:50.389 align:start position:0%
+so i hope this was helpful if it was
+please<00:10:48.880><c> like</c><00:10:49.120><c> and</c><00:10:49.279><c> subscribe</c><00:10:49.839><c> it</c><00:10:49.920><c> supports</c>
+
+00:10:50.389 --> 00:10:50.399 align:start position:0%
+please like and subscribe it supports
+ 
+
+00:10:50.399 --> 00:10:52.710 align:start position:0%
+please like and subscribe it supports
+the<00:10:50.560><c> channel</c><00:10:50.959><c> a</c><00:10:51.200><c> lot</c><00:10:51.600><c> and</c><00:10:51.760><c> i'll</c><00:10:52.000><c> hopefully</c>
+
+00:10:52.710 --> 00:10:52.720 align:start position:0%
+the channel a lot and i'll hopefully
+ 
+
+00:10:52.720 --> 00:10:57.200 align:start position:0%
+the channel a lot and i'll hopefully
+see<00:10:52.880><c> you</c><00:10:53.040><c> pretty</c><00:10:54.200><c> soon</c>
+

@@ -1,0 +1,199 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+let's solve the problem single number
+we're given a non-empty array of
+integers nums and we're told that every
+single element in this array appears
+exactly twice except for one element and
+that element only appears a single time
+our goal is to find that number that
+only appears once and we have to
+implement our solution in linear time
+and we're not even allowed to use extra
+space if we were allowed to use extra
+space this problem would be really
+trivial if you know what a hash map is
+or actually even just a hash set uh
+because for every single value
+like suppose we had this input array
+we'd take that two add it to our hash
+set so something like this and then we'd
+see a second two and then we would
+remove it from our hash set because
+every element that appears twice is
+going to be added to the hash set and
+then removed from it except for that
+single value like one which is going to
+be added to the hash set but it's never
+going to be removed so by the time our
+algorithm finishes we're only going to
+have a single value in our hash set and
+that's the value that we're going to
+return but the downside of this is in
+the worst case uh we'd obviously iterate
+through the entire array which is big of
+and time complexity but it's also big o
+of n memory complexity because we're
+using a hash set is there a way to do
+this solution without using any extra
+memory well there definitely is a
+solution and let's try to figure it out
+using this example i will say that the
+solution i'm about to show you is not
+really easy to figure out but once
+you've seen it before it's pretty easy
+to implement and recognize when you can
+use it so suppose we had this input
+array and you'll see why i wrote it this
+way in a moment so i'll just tell you
+that this solution does require bit
+manipulation so i'm going to take each
+of these values show them in their
+binary representation so 4 for example
+is going to be 1 0 0. of course there's
+going to be some leading zeros but we
+don't really care about those 1 is going
+to be represented like this 2 is going
+to be represented like this okay so this
+is the binary representation and once
+again i'll just tell you the solution
+basically we're going to use a binary
+operation called xor or exclusive or and
+if you don't know this operation
+basically what it does is if two bits
+are the exact same so 0
+xor 0 is going to equal 0. also
+if they are the same meaning they're
+both 1 this is also going to equal 0.
+but if they're different so if we had 1
+and 0 that's going to be 1 and if we had
+0
+xor 1 that's going to be 1 as well so if
+they're different we get one if they're
+the same we get zero and the solution to
+this problem is literally just taking
+all these input values xor them together
+and then our result is going to be that
+single value in this case that single
+value is 4. and if you just want to know
+the solution to this problem that's
+literally it but it never satisfies me
+so what i'm going to do is actually
+explain a bit of the intuition behind it
+and the simple answer is that when you
+take two values like two and two and you
+xor them together of course they have
+the exact same binary representation so
+if you xor two values that are the exact
+same of course you're gonna get zero uh
+all zeros in the output because you know
+the bits here are the exact same the
+bits here are the exact same and they're
+going to be the exact same so if the
+bits are the same we get 0 in the output
+and the reason that's important is
+because we know that there's two twos
+right so these are going to cancel out
+we know that there's two ones these are
+going to cancel out so we're going to be
+left with only that single value and the
+order that you do the xor operation in
+is not important you can do it in any
+order and you're going to get the same
+exact result so that's the simple
+explanation and i'll just talk for
+another minute about if you didn't know
+that xor can be done in any order could
+you still figure this out what's the
+intuition behind it let me just talk
+about that for a minute i'm not smart
+enough to figure it out just by looking
+at all of these bits but we know that to
+simplify it we can just look at a single
+column right just one of the positions
+and like i said we know that every value
+in the input is going to be a duplicate
+except for that single number so we're
+trying to prove that we know for sure
+that the bit in the output is going to
+be the same bit
+that comes from that single number which
+is right over here we know for sure it's
+gonna be zero how do we know that so
+we're trying to prove that the output
+bit is always gonna be the bit that
+comes from the single value how do we
+know that well first i'm going to prove
+to you that this portion of the xor
+operation is always going to evaluate to
+be zero how do i know that because first
+of all zeros in any xor operation i
+don't change the result that means if we
+had n and n could be either one or it
+could be zero n x or
+zero is going to equal n that's pretty
+simple if you look at a couple examples
+we could have one x or zero that's going
+to be 1 we can have 0 x or 0 that's also
+going to be 0. so basically what i'm
+saying is we can ignore all of the zeros
+here so i'm going to scribble that out
+and scribble that out so then we're
+going to be left with a bunch of ones
+how many ones are we going to be left
+with well it's guaranteed to be an even
+number of ones i'm not counting this
+position by the way i'm only counting
+this portion and we know it's going to
+be an even number of ones because we
+have only duplicates here right it's
+either going to be zero ones or it's
+going to be two ones where it's going to
+be four ones etc etc and we know that
+duplicates always cancel out one xor one
+is always going to be zero that pretty
+much shows that this entire thing is
+always gonna be zero so uh so this is
+gonna be zero right and this is either
+gonna be a one or a zero and whatever it
+happens to be is going to go exactly in
+the output because like i showed a
+moment ago n xor with 0 is always going
+to be n so that's going to be this bit
+and so basically what i showed you is
+not really a formal proof but i showed
+you an intuitive proof for just one
+column but of course we could apply that
+to every single column so what we know
+is all of this is going to be gone and
+this is going to be the output after we
+do xor so we're going to return the
+correct result for and we didn't use any
+extra memory now let's jump into the
+code now let's code it up and we are
+going to have a result and we're going
+to initialize it to zero and this is
+what we're going to store our x or
+result in the reason we're initializing
+it to 0 is because like i mentioned any
+value
+n xored with 0 is always going to end up
+being n so this is a good default value
+to set it to and then we're just going
+to go through every single value in nums
+take that n and x or it with the result
+and then set the result back equal to
+that and then
+once we've done that we
+like i showed in the proof we know for
+sure that the result has that single
+number that we're trying to return so
+now let's run the code to make sure that
+it works and yes it does as you can see
+on the left it works and it's pretty
+efficient so i really hope that this was
+helpful if it was please don't forget to
+like and subscribe it really supports
+the channel a lot consider checking out
+my patreon where you can further support
+the channel and hopefully i'll see you

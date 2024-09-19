@@ -1,0 +1,365 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+let's solve the problem subtree of
+another tree and this problem is
+actually from the blind 75 list that we
+haven't really visited in quite a while
+because we've solved most of the
+problems on this list but you can see
+one of the problems one of the few
+problems that we missed was subtree of
+another tree so let's solve that today
+by the way this is a spreadsheet we
+created a long time ago basically just
+tracking all 75 of the problems in the
+blind 75 list you can see i've taken
+some of my notes on each of these
+problems over here and each of the
+problems or at least most of the
+problems have a video solution that i
+created
+and you can see about 16 people are
+actually
+you know looking at this sheet right now
+i assume most of them are viewers of
+mine and if you don't really care for
+spreadsheets i actually did make a video
+playlist of each of the solutions uh we
+have about 68 of them done so pretty
+much every problem has been solved
+except for just a few of them most of
+the hard problems at least okay now
+let's get back to the problem the
+description of the problem is pretty
+simple we're given two binary trees one
+is called root so this is that entire
+tree and the second tree is called sub
+root and this is that second tree and
+the only thing we want to know is
+this sub root this tree this entire tree
+is it a sub tree of
+this tree on the left is this one a sub
+tree of this one now first question what
+is a subtree so for for this a root tree
+what's a sub tree basically you can
+start at any node in the tree and then
+take all of the nodes in that subtree
+right so for starting at four this is a
+subtree of the tree uh starting at one
+the node itself is a sub tree this
+itself is a subtree this itself is a sub
+tree even starting at the root node this
+entire tree is a sub tree of itself so
+now the first thought that you probably
+have is to check if this is a subtree of
+this tree let's just brute force it
+right and how would that work well
+basically we would check visit every
+single node in the root tree and then
+check starting from here does the tree
+match the sub root tree so let's start
+at the root right the root of both of
+the trees three and four are are the
+root values the same well they're not
+right so that kind of automatically
+means that this entire tree is not equal
+to this tree so then we continue right
+we check okay starting from here
+starting from the four are these two
+trees the same well we check the root
+value you know they're both the same
+they're both four so at this point we're
+basically just comparing these trees to
+check if they are equal and we can do
+that recursively there's actually
+another leak code problem called same
+tree that i would recommend solving
+before this problem if you struggle with
+this problem this one is also an easy
+problem if you want to check it out but
+yeah we can recursively compare these
+two subtrees four and four are exactly
+the same so now let's check the left
+child of both trees one and one are both
+the same now let's check the right child
+two and two are both the same so yeah
+these sub trees
+you know this this tree is a sub tree of
+this tree because we did find a sub tree
+that matches uh this tree so i think
+this is one of the problems where the
+solution is actually really simple right
+for every single node in this tree let's
+call it s for every single node in this
+tree we compared that sub tree to this
+entire tree let's call this tree t so
+the way the worst case is going to work
+out basically for every position in the
+s tree we'd have to end up going through
+every single
+node in the t tree right so from here
+you know let's say this was a four the
+worst case would be that we'd compare
+all three nodes with all three nodes
+here but of course we didn't have to do
+that because the root nodes weren't the
+same but what i'm getting at is
+basically the overall time complexity
+for this solution the brute force is
+going to be s times t
+and yeah this works so basically the
+size of both trees multiplied together
+so this will get us accepted on leak
+code but just because understanding the
+solution is simple it doesn't mean
+implementing it is simple it's actually
+kind of tricky and my suggestion to you
+would be since this is a tree problem
+most tree problems are easiest to
+understand when you think of them
+recursively so let's try to do that
+initially the problem is we want to know
+is t this subtree is it a sub tree of
+the entire tree here right is it a
+subtree of this tree to determine that
+the first thing we did was checked the
+first subtree right the root sub tree
+that matches this tree right so just
+three nodes in this case right and we
+found that no this subtree is not the
+same as this one right and by the way to
+check that comparison we could create a
+helper function to do that for us we'll
+call it same tree right that'll be a
+helper function just to compare two
+trees to let us know if they're equal
+but in this case it didn't work right so
+now we have to continue the problem and
+like i said let's think of this
+recursively initially we wanted to know
+is t a subtree of this entire tree we
+found that it's definitely not if we
+start at the root so now let's ask the
+sub problem is t
+a subtree of the left sub tree of the
+root node and when i say is it a sub
+tree of the left sub-tree over here i'm
+not asking is it the same tree i'm
+asking is it a sub-tree so we're going
+to have two functions in this case one
+is the helper function same tree and
+another is going to be
+another function i don't know what it's
+going to be called i think it's just the
+the generic function that they give us i
+think it's called is subtree so
+basically that's how it's going to work
+is subtree is initially going to be
+called with s and t is t a subtree of s
+well we'll check is it the same tree
+first right okay it's not the same tree
+as s so then we want to know is it a
+subtree of the left subtree so what are
+we going to do in that case well we're
+going to call
+the same tree function is it the same
+tree as the left sub tree so that's the
+main idea but i think it won't make a
+hundred percent sense until we actually
+jump into the code so let's do that in a
+moment but as with most recursive
+problems we definitely don't want to
+forget about the important edge cases
+when we are comparing the trees so first
+thing let's start with the helper
+function what would happen if both trees
+were null in that case are they the same
+tree if they're both null and yeah if
+both trees are null yes they are the
+same what about if two trees like this
+one and this one had the same initial
+values right like the first three values
+we can see are the same but what if one
+of the trees had an extra node uh here
+right then is this tree the same as this
+one of course not right so we'll have to
+keep track of that when we do our is
+same tree function now what about the is
+subtree recursive function if both of
+these trees are null is our is subtree
+going to return true is t a nulled
+subtree a subtree of another null tree
+well that's going to depend on our same
+tree helper function and it's going to
+return true so yes a null sub tree is a
+sub tree of another null sub tree but
+the more interesting edge case is what
+if s was null right s is empty but t is
+non-empty in that case is t a sub tree
+of this one nope it's not right because
+this tree cannot be found anywhere in
+the s tree but what if the opposite was
+true what if t was an empty tree then is
+an empty tree a null tree is it a
+sub-tree of a non-empty tree and in this
+case the answer is yes and the main
+intuition i use is basically you know if
+we had a null tree here we could just go
+to one of the children of you know one
+of the leaf children of the other tree
+and technically these have a null sub
+tree because they do have a null child
+so that's kind of the intuition i use
+but that might be a good clarification
+question to ask in a real interview but
+in leak code's case i think they do want
+that to be
+true so those are the main topics that i
+wanted to go over so now let's actually
+jump into the code and see how we can
+implement the solution okay so now let's
+get into the code and like i said we are
+going to define one more function a
+helper function same tree which is just
+going to pass
+in the same parameters right two trees s
+and t and then let us know if they are
+the same tree so well
+let's actually start with this function
+because i think it will help us finish
+the rest of it so the first base cases
+if we are given empty trees right if s
+is empty and
+t is empty they're both null in that
+case what do we want to return well if
+they're both empty then they are the
+same tree technically so we can go ahead
+and return true now if they're not both
+empty then we have to actually compare
+them so we have to compare them but
+technically one of them could still be
+empty so let's make sure both of them
+are not empty first right so if s and t
+are both non-empty and
+the values of both of these are the same
+right because that's of course how we
+determine if two trees are the same if
+the values are the same so if s eval is
+the same as t val then what are we going
+to do are we going to return something
+well we know that these two nodes are
+the same but we still have to compare
+the rest of the sub trees right so we
+have to compare the s the left subtree
+of s and t and we have to compare the
+right subtree of s and t
+right so this is a recursive definition
+so what we're going to do is call same
+tree passing in the sub trees right so s
+dot left and t dot left we want to know
+the left sub trees are the same but we
+also want to know if the right subtrees
+are the same so we'll do the same
+calculation with both of these and
+what's the return value going to be
+basically if both of these are uh true
+if both of these return true meaning the
+left subtree and the right subtree were
+the same then we can return that value
+so what i'm just going to do is take the
+and the conditional and of both of these
+and then return that itself so we have
+two cases so far if both of the trees
+are empty we return true if they're both
+non-empty then we actually compare the
+trees and the third case uh is basically
+if one of the you know if both of these
+conditions don't execute and they both
+return something so the if statements
+will never exit but if neither of them
+executes that means at least one of the
+trees is empty and one of the trees is
+non-empty in that case of course we want
+to return false they can't possibly be
+the same tree if one of them is empty
+and the other is non-empty so basically
+we just solved one leak code easy
+problem this is its own problem but now
+we can use this
+function and use it in our real is
+subtree function but remember this is
+also going to be a recursive function so
+let's start with the base cases remember
+one of the things we determined is that
+the tea tree the one that's the actual a
+sub tree if it's empty then of course it
+will be a sub tree of the other tree
+regardless of whether the other tree is
+empty or not so what we can say is if
+not t if t is null then we can return
+true no matter what right so that's
+really simple now what if the opposite
+was true do you remember what we said if
+s is empty but t is non-empty in that
+case we have to return false t cannot be
+a subtree of s so in that case we return
+false and just so you know the order of
+these conditions is very important
+because if we did not return with the
+first if statement then we pretty much
+know that t is non-empty so then here in
+this condition i could hear right and t
+to indicate that t is non-empty but it's
+not necessary i hope you can see why
+because we pretty much checked that with
+the first condition if t was empty we
+would have returned so here we know for
+sure it's not empty we don't have to
+include this second condition so now at
+this point we basically know both of the
+trees are not empty so what are we going
+to do well we of course want to compare
+both of the trees right so let's call
+same tree on both of them if they are
+equal if both of the trees are the same
+then we can return true so let's check
+that so is the return value true if it
+is then we can go ahead and return true
+so pretty straightforward but what if
+they are not the same sub tree and this
+is kind of the tricky part but it's
+simple once you actually see it okay
+they're not the same tree but remember
+the is sub tree function is recursive so
+we can instead compare t to the subtree
+of of s right we can compare t to the
+left subtree of s and we can also do the
+same we can compare t with the right
+subtree of s and i don't mean calling
+the same tree function i mean
+calling the is subtree function so is
+subtree
+is t a subtree of the left subtree of s
+or we could check the opposite case is t
+a subtree of the right subtree of s
+right so if either of these returns true
+then we can return true right because we
+only want to know if t is a subtree of
+at least one of the trees in s so we can
+instead of taking the logic and of both
+of these we can take the logic or of
+both of these so logic or uh you know
+take that condition and then return
+whatever it evaluates to so that is the
+entire code let's just run it to make
+sure that it works so as you can see yes
+it does work and it is relatively
+efficient even though the time
+complexity is the size of both trees
+multiplied together so i really hope
+this was helpful if it was please like
+and subscribe it really supports the
+channel a lot consider checking out my
+patreon where you can further support
+the channel if you would like and
+hopefully i'll see you pretty soon

@@ -1,0 +1,258 @@
+everyone welcome back and let's write
+some more neat code today so today let's
+solve the problem
+subsets so we are given an integer array
+nums and all we need to do is return
+every single possible subset that we
+could create
+from the input nums and we do not want
+to
+include any duplicate subsets so what is
+a subset well let's say we have
+one two three as our input one subset of
+course would be
+one right by itself another subset would
+be two by itself
+we could do one two together now what
+happens if we do
+two one right we just swap the order
+does that
+count as a different subset or is that
+the same
+as this subset well they're the exact
+same we don't care about the order this
+is not a permutation
+this is a subset so it's not a
+permutation
+it's a subset so we do not want to
+include
+duplicates and this counts as a
+duplicate we're not going to include it
+and 3 is another subset 1 3 2
+3 1 2 3 the original input
+is technically also a subset and we also
+don't want to forget the empty subset so
+no matter
+what we're given an empty subset is
+technically a subset of this
+as well so if we want to create all the
+subsets from this input we have a choice
+for
+every single element so for this one
+we have a choice of include the one in
+our subset
+or not include the one so we get an
+empty subset right so we have that
+choice
+and we have that choice for every single
+input element so in total we have two
+choices here
+two choices here and two choices here so
+this is going to be
+8 or in other words 2 to the power of n
+where n is the size of our
+input right so this is the number of
+subsets
+and we don't want the number of subsets
+we actually want the subsets themselves
+so how long could a subset be right well
+we could have a subset one two three
+right the size of our input
+we could also have subsets that are
+smaller right like one two
+maybe two three so as you can tell
+this is not going to be an efficient
+problem to solve we have this many
+subsets
+and each subset could be up to length n
+so the worst case time complexity of
+this problem is going to be
+n times 2 to the n regardless of
+how efficient we make it because given
+the constraints of this problem we don't
+want the number of subsets we want the
+subsets themselves
+we have to make it inefficient so with
+this in mind we can just
+jump straight into backtracking which is
+the brute force way of solving this
+problem but it's also
+pretty much the most efficient way so
+like i said
+for each of these elements we have a
+choice so i'm going to draw the decision
+tree
+so first we can choose to add one or
+not add one and that will give us two
+subsets one subset with just one
+and one empty subset so along
+this path we can decide now do we want
+to add two or
+not add two so with one decision we will
+add two and the other decision we won't
+add to
+so we'll get one two as one subset and
+the other subset will just be
+one by itself and we can actually repeat
+that
+on the right subtree for two so we can
+decide to add
+two to this empty subset or we can
+decide
+to not add two to the empty subset in
+which case we'll get
+a subset with two by itself or we'll get
+the empty subset again right
+this is where we're just not adding
+anything and lastly
+we can decide whether we want to add
+this 3 or not
+so if we add the 3 to this subset we'll
+get
+1 2 3. if we don't add the 3
+then we will remain as 1
+2 and we can repeat that decision over
+here
+and that's basically what i'm gonna do
+now right repeat that decision for every
+single one of our like you can call them
+nodes or you can call them leaf nodes
+that's just what we're doing
+so if i add the three here we'll have a
+one three
+if i do not add the three here we'll
+have the
+one by itself so you can kind of see
+these are
+four unique subsets right now let's
+build the rest of the four from over
+here
+so i have the choice do i add three or
+do i
+not add three to this subset if i do i
+will get
+two three if i don't i will have
+two by itself and you can see these two
+subsets are
+different from the subsets over here
+these are still unique
+and lastly we can choose to add three
+to the sub to the empty subset or we can
+choose
+not to add three to the empty subset in
+which case
+we'll get a single empty subset now you
+can see
+we keep multiplying by two right so here
+we had a one we had one
+we we multiply by two now we have two
+subsets over here right we go down again
+we multiply by two now we have
+four subsets over here right then we go
+down one more time multiply by two we
+have
+eight subsets and they're all unique
+this is our result this is what we're
+building with this problem
+this is backtracking now if you want to
+know how to do this backtracking
+solution in code
+let me show you right now so let's do
+this with backtracking so we're going to
+have
+a result list which we're going to add
+these subsets to
+and i'm gonna do this with uh
+backtracking depth first search
+and i'm going to write this function
+inside of this function
+so that we don't have to pass in this
+variable or this variable into it
+we'll just have access to it by default
+but i'm going to pass an i which is the
+index
+of the value that we are making the
+decision on so
+you know we had one two three so
+initially i'm going to pass an
+index zero for this one and you know
+this will be index one this will be
+index 2 that's going to tell us
+whether we decide to add 3 or not add 3.
+so this i will tell us which element
+we're currently
+visiting and so we know that the base
+case for this will be if
+i happens to be out of bounds so if it's
+greater than or equal
+to the length of our input we know we're
+out of bounds
+and in that case we can just return now
+what
+what like data structure am i going to
+use to build each subset i'm going to
+have an array and i'm going to allocate
+it
+outside of the function so that we have
+global access to it inside of
+this function right so let's say cur
+let's actually call it subset
+let's say that it has the subset that we
+currently have if we ever reach the base
+case we know we've gotten
+past our leaf node so what we can do is
+add that to our result
+and i'm also going to add a copy of the
+subset because
+it because the way it works in python
+and in most most languages
+this subset is going to be modified
+right so we know we have two decisions
+so this is the decision
+to include nums of i so this is like our
+left decision that i showed you in the
+picture right so what i'm going to do is
+to the subset i'm going to append
+nums of i and then i'm going to
+recursively run
+depth first search on the next element
+so i plus
+1. so this is going to be like the left
+branch of our
+decision tree and this is going to be
+the decision
+not to include nums of i so basically
+we're skipping numbers of i so how am i
+going to do that i'm going to take the
+subset
+and just pop the element that we just
+appended and then i'm going to
+recursively run depth first search
+uh i'm basically going to do the same
+thing so these
+two function calls while they look the
+exact same they're going to behave
+slightly differently because for this
+recursive call
+it's going to have a different subset
+given to it
+and this recursive call is going to have
+an empty subset given to it so now the
+only thing left for us to do
+is call our function of course we're
+going to pass
+an index 0 that's the first value and
+then we can return
+our result so as you can see it is of an
+efficient solution
+luckily for us the order that we have
+our subsets in the result doesn't matter
+so for example if we had an empty
+subset and we had one that's the same as
+if we returned
+one and the empty subset right like the
+order that we put the subsets in
+doesn't actually matter but again i hope
+this was helpful if you enjoyed
+please like and subscribe it supports
+the channel a lot and i'll hopefully

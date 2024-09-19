@@ -1,0 +1,216 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+let's solve count good nodes in a binary
+tree this is according to leak code this
+is microsoft's most asked question of
+2021 so far and in my opinion it's
+actually a pretty good problem to
+understand a lot of good fundamental
+knowledge can be gained from this
+problem so we're given the root of a
+binary tree that is going to always be
+non-empty we want to count the number of
+good nodes in the tree and a good node
+is defined so for example take node x it
+is defined as a good node if for example
+let's take this node 4 if from the path
+from the root node all the way down to
+this node this path in particular if
+there are no nodes in this path that
+have a greater value than this
+particular node so basically along this
+path if there isn't any value larger
+than 4 then this node 4 counts as a good
+node what about 1 let's take the path
+from the root to 1.
+are there nodes greater than the value 1
+along this path yes because this node 3
+is greater than this node 1 so then 1 is
+not a good node so we can solve this
+problem in linear time big o of n time
+where n is the number of nodes and
+memory complexity is going to be log n
+or in other words the height of the tree
+which technically could be greater than
+log n it could be as big as n
+and we can accomplish this with a simple
+tree traversal in particular we're going
+to be using pre-order traversal meaning
+when we recursively run dfs on this
+we're going to process each node before
+we do recursively the left subtree and
+recursively the right subtree so the
+first question is is the root node
+technically a good node well
+this is basically the entire path are
+there any nodes greater than three no so
+technically yes the root node does count
+as a good note so what we're going to do
+now we've counted one as
+we found one good note and now we want
+to know how many good nodes are there in
+the left subtree and how many good nodes
+are there in the right subtree well
+first let's do the left subtree even
+though we could do it in the opposite
+order but i'm just going to do the left
+first so
+to count how many good nodes are in this
+left subtree first we have to we have to
+run the dfs on the left child but before
+we do that we have to pass to this left
+child we have to pass what's the
+greatest value we have seen so far we
+don't have to pass all the values we've
+seen so far we just have to pass the
+greatest because then we're going to
+check for every node is this
+is the greatest node that we've seen so
+far somehow greater than this node if it
+is then this is not a good node so to
+this node we're gonna pass the value
+three we're gonna now process this the
+greatest we've seen so far is three one
+is smaller than that this is not a good
+node so this does not count but we still
+have to recursively run dfs on the left
+and right now when we do run dfs on the
+left obviously it doesn't have a right
+subtree but on the left subtree what
+value are we going to pass here well we
+would want to take the max of 3 which
+was the parents max and the value here
+of course one is smaller than three so
+we're going to pass three to this uh
+node as well so so far the max we've
+seen is three
+is is the max greater than this node
+it's not so even though they're the
+exact same value this still counts as a
+good node so that's what we learned and
+so
+now we have seen two good nodes so far
+now the same thing we're going to do on
+the right subtree literally the exact
+same thing just recursively doing the
+same thing we're going to pass 3 to this
+node because 3 is the max value we've
+seen so far from the root right if there
+was a really big value here we wouldn't
+want to transfer it to the right subtree
+but we're counting from the root
+downwards so let's look at four is this
+max value greater than four it's not so
+then four does count as a good node
+now let's do the same thing for the left
+subtree but when we go to the left
+subtree we're not passing three we're
+passing four because so far now along
+this path the max value we've
+encountered is four so we're going to
+pass four to this child node one now
+obviously four is greater than one so
+this does not count as a good node same
+thing on the right node we're going to
+pass 4 down to this node the max we've
+seen so far is 4 but this value 5 is
+greater than it 4 is not greater than 5
+so this counts as another good node so
+all together you can look we have one
+two three four good nodes and
+we would you know from the root what
+would we actually do we'd say okay we so
+far we found one uh good node at this
+root in the left right plus left this is
+basically the equation we're going to
+use one plus left plus right of course
+left is actually going to be one because
+there's one good node in the left
+subtree right is actually going to be
+two there's two good nodes in the right
+subtree so one plus one plus two that's
+going to be four so from the root we're
+going to return four good nodes in this
+entire tree so with that being said we
+can finally jump into the code okay so
+we know this is going to be a recursive
+function but in our recursive function
+we're going to have to pass in more than
+just the root so which is why i'm going
+to define a separate function inside of
+this function dfs obviously we're going
+to pass in the node or the root or
+whatever you want to call it but we're
+also going to pass in what the max value
+is so far from the path from the root
+all the way down to every particular
+node and i didn't mention this but our
+base case of course is going to be if
+the node we reach is null right so if
+not node now what are we going to return
+then does an empty tree have any good
+nodes of course it doesn't so we're
+going to return 0 right ok so now we got
+to a node that is non empty we want to
+know is this particular node a good node
+or not well let's
+let's compute that into our result so
+we're going to say okay result is going
+to be 1 if this node is a good note how
+do we know if it's a good note if the
+node value is greater than or equal to
+the max value encountered so far
+otherwise the result so far is going to
+be 0 meaning this node is not a good
+node next we want to do is update our
+max value so far right we're just going
+to take the max of itself and the max of
+the current node's value so we've
+updated our max value so far why did we
+do this because of course we're going to
+need to pass this along to our dfs
+recursive call of course we're going to
+run dfs on the node's left child passing
+in the max value and of course we're
+going to do the exact same thing on the
+right child the right subtree passing in
+the max value so far now what are we
+going to do with the results of these
+two recursive calls well this function
+itself is just counting the number of
+good nodes so we're going to take the
+result of it and add it to our result
+for both of these function calls we're
+going to count the number of good nodes
+in the left and right subtree adding it
+to the result once that's been computed
+then we can go ahead and actually return
+that result value
+so you can see that this dfs is
+basically computing the result that we
+want of course we want to compute it for
+the entire tree so when we actually call
+our dfs we're going to call it on the
+root node now what default value can we
+pass in for the max value so far well we
+could pass in some kind of negative
+infinity right or whatever but it
+actually works out as well if we just
+pass in the root value because as long
+as this root is greater than or equal to
+the max value so far it does count as a
+good note and we know that the root node
+always counts as a good node so this is
+going to work out for us now what we
+actually want to do is return the result
+of this function call and then we're
+good to go
+as you can see it's pretty dang
+efficient so this is a good fundamental
+binary tree question to understand your
+pre-order traversal and it also happens
+to be the most common asked question by
+microsoft of 2021 so i hope that this
+was helpful if it was please like and
+subscribe it supports the channel a lot
+and i'll hopefully see you pretty soon

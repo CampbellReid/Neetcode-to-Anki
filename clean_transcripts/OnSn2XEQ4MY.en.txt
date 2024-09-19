@@ -1,0 +1,114 @@
+everyone welcome back and let's write
+some more neat code today so today let's
+solve a pretty easy and popular question
+invert binary search tree so all they
+tell us to do
+is invert a binary tree and what exactly
+does that mean
+so let's say that this is our initial
+tree
+to invert it is basically what you can
+tell
+in the output right so the root stayed
+the same but you can see it's two
+children which were left child two left
+or right child seven
+were swapped right so seven is now on
+the other side
+two has been moved right so basically we
+took these
+and then we swapped them and when they
+say invert the binary tree it's a
+recursive definition so take a look at
+this
+subtree right you can see since we moved
+it to this side that's where it is
+right but notice how even these sub
+trees
+are are different now right one was
+initially on the left and three was
+initially on the right
+but now three is on the left and one is
+on the right
+the exact same thing happened with this
+tree right it was moved
+over here to the left side but then
+its children were also swapped right so
+nine
+was moved to the left six to the right
+so when they say
+invert the binary tree what we're saying
+is
+visit every single node in the tree
+right
+and every time we visit a node take a
+look at its
+two children and swap the positions
+of the children right so in other words
+if we're given a
+tree look at the root node and take its
+children and then swap the positions and
+then
+recursively run inver binaries
+or invert tree on the left subtree and
+run invert on the right subtree so it's
+a recursive definition
+so we can solve this problem with
+recursion we can do
+a depth first search whether it's
+pre-order or post
+order it doesn't actually matter a depth
+first search will
+allow us to solve this problem
+recursively so this problem would
+probably be a lot more annoying
+if it were iterative but luckily we can
+do it recursively so
+we can first check the base case so if
+the root is null
+then we can return null we don't have to
+continue
+otherwise what we're going to do is swap
+the children
+so we're going to save the left value
+root.left in a temporary variable then
+we're going to
+replace the root.left value with
+root.right
+and then we're going to replace the
+root.right value with the left value
+which we know is now
+stored in temp so after we swap the
+nodes
+all we have to do is now recursively
+invert the
+subtrees so we can invert the left
+subtree
+and then we can invert the right subtree
+so by doing self.invert tree what we're
+doing is making a recursive call to the
+function we're inside
+and once we have swapped the roots
+children once we have inverted the left
+subtree and
+inverted the right subtree we know we're
+finished so then we can return the root
+so there it is this problem is a
+relatively short code it's a very good
+problem to kind of understand the basics
+of
+depth first search and tree problems in
+general and it's actually a pretty
+popular problem
+and if you weren't able to solve this on
+your first try don't feel too bad take a
+look at this trivia
+there was a very good engineer who
+actually failed this problem in their
+google interview
+but his career still turned out pretty
+fine so i hope this was helpful
+if it was please like and subscribe it
+supports the channel
+a lot and i'll hopefully see you pretty
+soon

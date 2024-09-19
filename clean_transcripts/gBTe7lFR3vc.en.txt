@@ -1,0 +1,341 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+let's solve
+linked list cycle i know that we solved
+a problem that's pretty much a harder
+version of this exact problem
+but in this explanation i'm going to
+explain why the tortoise and hair
+algorithm on a linkedlist cycle
+why exactly it works and why exactly
+we know for sure that it's a linear time
+algorithm because i think most people
+just kind of glance over why exactly
+this is true so i'm going to go over
+that today
+and you can see that this linked list
+problem is another problem from the
+blind 75 list a list of 75 problems
+we've been working through and tracking
+on the spreadsheet the link to the
+spreadsheet will be in the description
+if you want to take a look
+we are not quite done with this sheet
+yet even though we have done all
+pretty much most of the difficult medium
+and hard problems on this list
+so basically we're given the head of a
+linked list
+and we just want to determine if there
+exists a cycle in this linked list or
+not
+and basically the definition of a cycle
+is if at some point you know you get
+to a node and you keep following the
+pointers along that node eventually
+you'll get back to the same node and if
+we get back to the same node
+we'll be able to do it again and again
+and again basically an infinite loop
+so we return true if there's a cycle we
+return false if there's no cycle now the
+first idea you might have is just start
+at the beginning
+keep going to the end keep going keep
+going and eventually let's say that this
+of this negative four actually pointed
+to null in that case
+we know okay we got to the end of a
+linked list right so in that case we
+return
+false no cycle and that's always going
+to be the case so if there's no cycle
+it's really easy to detect that there's
+no cycle because eventually we reach
+null but if we don't reach null
+right we we go along this node and we
+get to we get back to the same node we
+already visited but for some reason we
+can't detect that so then we go to the
+next node
+the next node and keep doing that and
+from our perspective we're just going to
+say okay it's just a really
+long linked list eventually we're going
+to get to null right but that's not
+going to be the case if there's a cycle
+we never get to null we'll never break
+out of this loop so we really have to
+determine a way
+to detect that we're visiting the same
+node twice
+so how can we determine if we're
+visiting the same node twice well we
+start at the beginning like usual and we
+maintain
+a hash map or a hash set in this case
+where basically we take every single
+node and we take the
+node itself and add it to the hash set
+after we have visited this node we don't
+add the value because i think in this
+problem there could be duplicates
+right like the same value could show up
+multiple times in multiple nodes
+so we don't want to detect a loop that
+way but we'll take the node itself
+and then add it to the hash set and i
+think you can do that in most languages
+you definitely can in python
+because the node itself is just an
+object and you usually can hash an
+object and so in that case we're going
+to take this
+visit it take this visit it take this
+visit it take this visit and then
+eventually we'll get
+back to a node if we notice that a node
+has
+already been visited and now we're
+visiting it twice
+that obviously means that there must be
+a cycle right
+we can't visit the same node twice so
+that means there's a cycle we detect
+that and then we can return true a cycle
+exists
+now in this case we're only having to
+visit each node about once
+so the time complexity is going to be
+big o of n the memory complexity is also
+going to be big o of n because every
+node potentially is going to be stored
+in the hash set
+but there's actually a way that we can
+do this without using a hash set we can
+do this in o of one memory and that's
+the
+slightly complicated algorithm i'm going
+to show you that algorithm and i'm going
+to show you
+exactly why it works so the idea is
+simple we're going to start at the
+beginning of the linked list but we're
+going to have two pointers this time
+we're going to have a slow pointer s and
+we're going to have a fast pointer
+f and you may have seen this algorithm
+before it's a pretty simple algorithm
+once you know it but i'm gonna again
+show you why exactly it works so the
+slow pointer
+each time is just gonna be shifted by
+one
+the fast pointer is going to be shifted
+by
+two so it's going to be here and
+so originally they do start at the same
+position but we're gonna look at every
+position
+after we've shifted it and so what's
+either going to happen
+obviously the fast pointer is faster
+than the slow pointer so the if there is
+the end of a linked list right like for
+example
+this points at null the fast pointer is
+of course gonna
+gonna reach the end of the linked list
+first so if we do that
+then we can return false no link no
+cycle exists in the linked list but if
+there
+is a cycle do you see that this fast
+pointer and this slow pointer are
+going to meet again they're going to
+meet at the exact
+same position and if they meet at the
+exact same position that must mean that
+a cycle
+exists so i'm just going to run the
+simulation and then i'm going to show
+you why it's always going to be the case
+that these two are going to meet
+if they ever reach a cycle so we just
+take one more step with s right we're
+only shifting it by one
+f is gonna be shifted by two so first
+we're gonna go to four
+and then we're gonna follow the link and
+reach back
+to this position right the two position
+so
+clearly f made a loop f has gone through
+the cycle
+and so far we've shifted each of the
+pointers twice
+and so we're going to do one last shift
+s is going to reach
+the 4 and our f from over here is gonna
+be shifted twice again
+and it's gonna reach the four as well so
+at this point
+we're gonna just we're gonna see yes the
+slow pointer and the fast pointer have
+met each other how could it be possible
+that they met each other if the
+fast pointer was going twice as fast
+because
+they were in a cycle and eventually the
+fast pointer no matter where they start
+slow is here fast as you're eventually
+the fast pointer is going to catch
+up to the slow pointer let me show you
+why that's always going to be the case
+and why it's going to happen in linear
+time
+so let's say this is our cycle and i'm
+not drawing it as a linked list it's
+some kind of circle right and it's a
+cycle
+and let's say we're moving clockwise in
+this cycle
+first thing to notice is do you know
+that every gap so let's say you know the
+distance between slow and fast
+that's going to be some integer value
+right it's not going to be a decimal
+it's going to be an integer value
+and this portion is also going to be an
+integer value
+because the entire length of the cycle
+is going to be an integer value because
+you know linked list
+lengths are integer values right this is
+an integer one this is an integer two
+uh also one so the entire list is length
+two right so we're dealing with
+integers here not decimals so we're
+looking at the case where at with a slow
+and fast pointer are at different
+positions because obviously if they were
+already at the same position
+we're inside the cycle they're at the
+same position then of course we know
+we're going to return true but it could
+be possible that they're at different
+positions
+any arbitrary position is what i'm
+choosing here
+and we know that the slope pointer on
+one iteration is going to make
+one jump right the distance it's gonna
+do it's gonna move is one we know that
+the fast pointer
+is gonna move a distance of two
+right so clearly in our simulation
+eventually the fast pointer is going to
+reach and surpass the slow pointer
+but why is it true that they are going
+to meet each other at the exact same
+spot
+well let's just give this distance an
+arbitrary
+value we know that the fast pointer will
+catch up to the slow pointer and this is
+the distance that it's going to have to
+travel
+in order to do so this is our gap that
+we have to close
+so let's say the the length of this gap
+is 10.
+if we move the slow pointer by one
+we're taking the gap and increasing it
+by one right
+if the slow pointer gets shifted by one
+we increased the gap
+but then the fast pointer is not going
+to quit it's gonna move by two as well
+so when we move the fast pointer we're
+taking the gap
+and closing it by two so we're saying
+plus
+one minus two right do you see how
+this evaluates to ten minus
+one which is going to be nine so on a
+single
+iteration of the loop the distance
+between the pointers
+is being closed by one so then
+how many iterations is it going to take
+for the fast pointer to reach the slope
+pointer well of course whatever this
+length happens to be right whatever that
+closing distance happens to be whatever
+that
+gap happens to be how big could this gap
+possibly be it could only be the entire
+length of the list so you know let's say
+uh the fast pointer is over here where
+this
+distance is one so then the remaining
+distance is gonna be
+the entire length of the list let's call
+that n
+minus one so then how many iterations is
+it gonna take to get this to equal to
+zero
+of course roughly n so that's why the
+overall time complexity is
+n where the length is the distance where
+n is the length of the cycle which could
+be the entire linked list right
+so that's why it's always going to work
+and
+it's going to run in linear time and
+maybe you didn't even care about why
+exactly it works but that's okay because
+once you know the fast and slow pointer
+technique
+the code is usually pretty easy to write
+let's get into that now so like i said
+we're going to start our slow and fast
+pointer at the same position
+and the next time that they meet each
+other is how we know we've detected a
+loop so obviously they're at the same
+position now so we don't want to
+say that there already exists a loop
+because we don't know that for sure
+and we're going to be shifting our fast
+and slow pointers while
+fast and fast dot next is not
+null because we need to make sure that
+fast dot next is not null
+because remember we're shifting fast by
+two on each
+iteration and of course fast is going to
+reach the end of the linked list
+before slow does so if it does that then
+outside of the loop we can return false
+meaning that there does
+not exist a cycle but on the inside
+we're gonna check if there is a cycle so
+we're gonna take our slow pointer
+shift it by one slow dot next take our
+fast pointer shift it by two
+fast dot next dot next again
+and now if we if they meet each other
+we can say if slow ever reaches fast
+then we can return true there does exist
+a cycle and you could pretty much write
+this loop as a do while loop in a lot of
+other languages but i don't think python
+supports that
+so the solution is really as simple as
+that linear time
+constant space you can see that the
+solution works and is efficient so i
+hope this was helpful
+if it was please like and subscribe it
+supports the channel a lot and i'll

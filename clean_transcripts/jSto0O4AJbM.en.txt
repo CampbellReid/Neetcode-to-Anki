@@ -1,0 +1,754 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+let's solve
+minimum window substring we're given two
+strings
+s and t and we want to return the
+minimum
+window in the string s which contains
+every single character present in
+string t and it's possible that that
+might not even exist
+in which case we can return an empty
+string
+so in this case our string s is this big
+long string
+and our string t is this a b
+and c so we just need we don't need to
+find
+a b c in here we just need to find
+a substring of s that contains
+all these characters and we want to find
+the minimum string that contains all
+these characters
+so one possible string is
+this right it has a d o b
+e c so it has a b and c
+but there happens to be a shorter string
+that has
+all of those as well this string b a
+and c so they are out of order so b
+a c and there's an n in there as well
+but this happens to be the shortest one
+it's length four and so that's the
+result that we're going to output
+so what's even a brute force way to
+solve this so we're given
+s and t right and we want like if we're
+checking
+a substring right like this substring
+maybe this is our solution right
+how do we even determine that well let's
+use some hash maps
+so these two are our hash maps you can
+see i have one for t
+what does this hash map represent well
+you look at t right
+because for each of these substrings we
+just want to make sure
+that it has at least one a right
+one a has at least one b
+and it has at least one c because that's
+what we have over here we just want to
+make sure
+that we find the minimum substring in
+s that satisfies this condition
+so for every possible window that we
+check in s like maybe we check
+this window we are gonna want to have a
+hash map for the window and we're gonna
+count how many a's do we have initially
+we're gonna start with zero right
+because
+because initially our window is gonna be
+just empty or whatever
+we're gonna start with zero b's and zero
+c's but for this
+current window you can see we have one a
+one b and one c right so
+we have one a one b and one c so
+as we compare right we compare how many
+a's do we have versus how many do we
+need right this is how many we need and
+this is how many we have in our current
+window
+you can see we need one and we have one
+right
+so the relationship we're looking for is
+greater than or equal right we want the
+counts
+all to be greater than or equal but one
+thing you can see is brute forcing
+is gonna be difficult right so let's say
+we initially start with
+this window right we see we just added
+an a so what are we gonna do we're gonna
+update this now let's just check is our
+window valid
+well we have at least one a and so
+remembering that this is how many we
+have in our current window and this is
+how many we need to satisfy the
+condition
+so initially let's start with this
+window just
+one a so then we can update our count
+for this window right add
+a single a so now my question is have we
+satisfied the condition do we have
+everything we need
+well how are we going to check that well
+we have to check
+all of these right so is the have count
+greater than or equal to the need yes it
+is what about
+this is the beat count uh greater than
+or equal to
+how many we need the answer is no right
+so therefore we don't have how many we
+need
+so therefore we have to actually expand
+our window right we have to add another
+character
+this d right but that's not actually
+going to update
+our window because we don't need any
+characters other than a b
+or c so we don't really care about the d
+the same thing is true for the o
+but now we have a b right that's good
+because we do need a b
+so we add a b so now we're gonna have to
+run the same operation do we have
+everything that we need so we're gonna
+be doing some repeated work do you
+notice this repeated work we're doing
+we have to check if we have enough a's
+which we know we do because we already
+checked that when we first added this
+element so we notice we do have enough
+a's
+do we have enough b's well this time we
+actually do because we just added a new
+b
+right that's the most recent character
+we added great so we know we have enough
+b's
+do we have enough c's we do not have any
+c's
+in our string the count is zero
+therefore this condition is not
+met so we do not have our result yet we
+have an a and we have a b
+but we need to add more so now we're
+gonna add an
+e which we don't really care about we're
+gonna add a c
+so finally we have so finally we can see
+that we met
+our condition right but we with our
+current algorithm our brute force way we
+have to repeatedly check
+every one of these even if we already
+know the count is
+met so this is basically where our
+repeated work this is what i'm going to
+show you how to eliminate but
+as you can see we have enough a's we
+have enough
+b's we have enough c's so therefore this
+is a
+possible result it might not be the
+minimum but it's a possible result and
+what's the length of this
+it is 6. so we can say for now
+that our result is length 6 and it goes
+from index
+0 all the way to index five
+so i'll put zero five that's our current
+result
+so one thing we noticed is we're having
+to do a lot of repeated work
+to check that we have everything that we
+need we have to check
+every single one of these characters
+right
+but we don't we know we don't always
+have to do that so let me show you how
+to do it without repeating all of that
+work
+we're going to start out the same way so
+we're going to add an a right that's our
+first character
+so now we're going to check so now what
+we're going to say is a count
+is 1 right so now my question is do we
+have to check
+every single one of the halves because
+initially we
+know that none of the conditions have
+been met right
+initially we start with all zeros we
+also
+know that the number of characters that
+we need
+is gonna be three right meaning
+we need to satisfy the count condition
+for three
+unique characters right and we know that
+we
+start out with a have value of zero
+because we know for each of those three
+characters
+we have met the condition for none of
+them right initially we met the
+condition for none of them because we
+start out with all
+zeros but now you can see we just added
+an
+a so let's check just for this one
+character
+have we met the condition is the count
+greater than or equal
+than one yes it is we have one and we
+only
+needed one so we met the condition so
+what does that mean
+we can take our have value and update it
+so initially it was zero
+now we can change it to one so now we
+have one but my question
+now is have we met the condition well we
+need three but we only have one so we
+haven't met the condition
+you can see what i'm doing here right
+before we needed to check the condition
+for
+all three of these each time now we only
+have to check the condition
+for one we have one value that tells us
+how many we have
+we have one value that tells us how many
+we need so before we were
+we had to continue running an operation
+of length
+t which is in this case 3 but who knows
+it could have been bigger
+t could have been 10 it could have been
+100 it could have been anything
+and we would be bounded by that but in
+this case we only have to do
+one operation for comparing these
+integers
+and one operation for comparing the
+integers of the character
+that we just added so for each character
+that we add
+we only have to do an o of one operation
+so now let's add another character let's
+add the d we know that doesn't really do
+anything
+we add the o that doesn't do anything we
+add a b this is good so
+how am i going to do things differently
+this time well like usual
+i'm going to change this one this zero
+to a one we know we have
+one b so now i'm going to check has this
+condition
+been met or is it equal
+i know last time i showed you greater
+than or equal but really what we're
+looking for is
+are they exactly equal because that's
+when we know the condition has been met
+so if these are exactly equal which they
+are in this case one equals one so what
+that means
+is we can increment our have value by
+one before it was it was one now we're
+going to actually change it
+to two and now let's check are these
+equal now have we me do we have what we
+need
+it's not because two is less than three
+so we haven't met the condition yet so
+we have to continue but notice how that
+was an
+o of one operation we just had to make
+one comparison here
+and then one comparison here we didn't
+have to go through the entire list
+so now we're gonna add an e which we
+don't really care about
+now we're going to add a c which we do
+care about so let's update the length
+of this now are these exactly equal
+we know we just met the condition for
+these last two
+now have we finally met our last
+condition
+and yes they're both one so we can take
+this
+through this two and replace it it's
+getting a little messy
+but i hope you can see it so we have a
+three here so now let's make the
+comparison
+between these two and yes they are
+exactly equal so what that tells us
+is this string contains we have exactly
+what we need
+right so we met the condition this is a
+possible result
+and i'm just going to take the two
+indices the start and
+the ending of it which is 0 and 5 and
+i'm going to put that as our current
+result
+so our current result is from 0 to 5.
+and the length of that result happens to
+be
+six right so now what are we gonna do
+are we just gonna keep adding elements
+again and again
+well we wanna find the minimum so let's
+at least try to find
+a string that's less than six so what
+are we gonna do let's
+remove the leftmost character and
+keep doing that until this condition is
+no longer valid until we
+don't have what we need anymore so we
+can try to at least find
+a smaller result because ultimately
+we're looking for the minimum string
+so i'm going to take this character and
+remove it from
+our current window and so we're removing
+an
+a so what that means is we have to
+update this
+so it's no longer one we actually have a
+zero for count
+a now and now we know that this
+condition
+is this is less than what we need it to
+be so this condition is no longer valid
+so
+that also means we have to update this
+value
+so before we had a three but now we have
+to put a two we only have
+two of these conditions matt write these
+two characters b
+and c so now we're actually just going
+to keep adding characters we're going to
+keep
+looking for the minimum so we add an o
+but we know we don't care about that we
+add a d
+we don't really care about that we add
+an e we don't care about that
+we add a b over here right we do care
+about b
+so what are we gonna do we're gonna take
+the b count
+it's one currently now we have two
+now that's great because we actually
+have more than what we need right we
+we need one but we have two so am i
+gonna take this
+and update it no because they're not
+equal
+what that means is we added an
+unnecessary character it's okay
+but it didn't help satisfy the condition
+we already know
+this and this were satisfied this is the
+one that needed to be satisfied
+so since it's not exactly equal we're
+not going to
+increment our have count so now let's
+add another character
+the a that we wanted so badly so
+we added an a we update the count of a
+we add one
+so now this is one we're gonna check are
+they
+exactly equal have we met the condition
+now
+by adding a character did we make these
+exactly equal
+and we did so what does that mean well
+we met one more condition
+so we update our have count it's now
+going to be set
+to three and now these are actually
+equal
+so we actually met the we have exactly
+what we need so we potentially
+found a result now the only problem is
+this
+result goes from index 1 all the way to
+roughly
+index 10 so it's actually bigger than
+our current result which
+is a problem so we don't update our
+result yet
+but now we want to try to find an even
+smaller substring than this so let's
+start popping characters from the left
+so we pop a d
+but d's we don't care about so we don't
+update our window
+and let's just keep popping values until
+this condition is no longer met so
+now let's pop a b so let's
+now we have to update our value of b so
+this was originally two now it's going
+to be set to one
+so now it's set to one so did we or
+did we undo this condition is this
+condition no longer valid nope
+because this is still greater than or
+equal to the count that we needed
+so the condition is still valid we don't
+have to update our have count yet
+so actually this string is
+still a possible result but notice
+this string goes from index 4 all the
+way to index 10 so it's actually
+length 7 and that's still greater than
+this string so we cannot count this as a
+result yet so now we remove
+the e and then we remove the c
+so we have to actually update our count
+again so this was originally
+one now it's going to be zero
+and now you can see that this condition
+is actually no longer valid
+so even though these two are still valid
+this one is not valid we have to update
+our have count
+so our have count was three but now we
+removed one so it's going to be
+two so now it's no longer equal so our
+string is no longer valid
+it's length five but it doesn't have
+a c we have a b we have an a but we
+don't have a c
+so we can't update our result so let's
+keep
+adding characters now maybe we'll find
+another valid string so we add an
+n but we don't care about ends we add
+the c
+that we want so we added a c so we
+update our c
+count now it's set to one these are once
+again
+equal so since they're exactly equal
+that means we
+just now have met the condition so we
+met one more condition
+so we can update our have count now to
+three that means it's exactly equal to
+what it needs to be
+that means this is a valid string so
+this goes
+this goes from index 6 all the way to
+index 12
+that's a length of 7 which is not
+smaller than our current result
+but that doesn't mean we can't shrink
+this right so let's
+start from the left and keep popping and
+making it smaller
+but also keep going until it's no longer
+valid anymore
+so we pop in oh let's remove a
+d but we're still valid right we didn't
+update any of these
+and now you see we have a string of
+length
+five so we can actually update our
+result
+so now we're going from index 8 to index
+12
+and that leaves us with a length of 5
+but we're not done yet we have an e we
+can remove that
+e as well now you notice we're still
+valid we have a b
+we have an a and we have a c
+we didn't have to update our map our
+have count is exactly equal to the need
+so now we can update our result one more
+time
+and it's gonna go from index nine all
+the way to index
+twelve that's the string the length of
+it
+is four and lastly we are going to
+remove
+this b character from it as well and
+once we remove the b
+you can see okay we removed this one now
+we have zero b's remaining
+uh that's less than how many we need so
+we have to update the have count so we
+set it to
+2 the condition is no longer valid
+and so are we going to continue our
+algorithm well we have no more
+characters
+left to add we reach the end of the
+string so
+since this is our current minimum and
+our current result this is what we're
+going to end up returning
+and by the way we just solved this
+problem
+in big o of n time because you see we
+added each character
+once that's an o of one we removed each
+character once
+every time we added or removed a
+character we did at most
+two operations right we had to update
+one spot in our map and we had to
+potentially update
+this right okay so now let's finally get
+into the code the first thing i'm going
+to do
+is actually handle a edge case so if
+the input string t which is you know our
+string is like the substring that we're
+looking for if it's empty then what i'm
+going to do
+is return an empty string because that's
+just how they want us to handle it in
+this problem
+and i'm going to have two windows that i
+showed previously so
+count of t and just the current window
+that we have they're both initially
+going to be hash maps they're both
+initially going to be empty
+and the first thing i want to do is
+initialize
+our count t map because we know this map
+actually isn't going to change at all
+so for every character in string t i'm
+going to
+add one to it but the
+value i'm going to get i can't just do
+this because it's possible that
+c hasn't even been added to count t yet
+so i'm going to do some python stuff
+i'm going to use the function get which
+is good for this so i'm going to get c
+i'm going to get the count of c so if c
+exists
+in our map it will give me the value
+that's stored in here
+if it doesn't exist i can put a default
+value which is going gonna be
+zero so if it doesn't exist this
+function will return
+zero so that's just a way that i like to
+handle
+this case so now that we've initialized
+the count of t
+we can have our variables have and
+need so we know have initially is going
+to be
+zero because we have zero of the
+characters we need and
+need is going to be initialized to the
+length of
+count t because that length of count t
+gives us the unique
+characters in the string t and then i'm
+just going to start
+iterating through every character in
+s so i'm going to use a right pointer
+for that the r is going to tell us the
+right boundary of our current
+window so i'm going to get the character
+that we just
+reached which is s at index r so i'm
+just going to put it in a variable c
+so with c we know we can update our
+current window so i'm going to do
+window of c and add one to it
+for the character that we just reached
+and here i'm basically doing what i did
+above if c has never been added to
+window we're just gonna
+return zero with this function so 1 plus
+0 we'll put a 1 here
+if it does already exist this function
+will get us the count that was
+stored in here so we're updating our
+window we're adding the count to it
+now we want to know does this count
+completely satisfy what we were looking
+for does
+window of c equal exactly
+count of t that means we just satisfied
+a condition for the first time
+but one thing i also want to check
+before i check this
+is that c is even a character in count
+d count t so if c is in
+count t and this is true because we know
+we don't actually care about the
+characters that aren't even
+in the string t to begin with and we
+know if this is true we can
+update our have count so we can
+increment it by one
+this means we just satisfied a condition
+so now what we want to know does
+have equal need exactly so are they
+actually
+equal if that's true i'm going to run a
+loop and i'm going to show you why it
+needs to be a loop
+so we actually met the condition let's
+one
+update our result potentially right so
+if we found a new minimum result let's
+update so this actually reminds me that
+i didn't even set a result so let's set
+our result
+and our result length so initially we
+know our result is going to be a pointer
+like a left and right pointer so i'm
+just going to give it a default value of
+negative 1 negative 1.
+and for the result length i'm going to
+put float infinity
+because that's a good default value in
+this case because we are looking for the
+minimum string so any value will
+obviously be less than infinity
+and i'm also going to initialize a left
+pointer
+because we know r tells us the right
+pointer left pointer will initially be
+set to zero
+but so now we can actually update our
+result we know the condition has been
+met
+so if the current length of our string
+which is going to be
+r minus left plus 1 this is how you just
+calculate
+the size of our current window if it
+happens to be
+less than the current result length
+which
+initially starts at infinity so this
+will definitely execute at least
+once if this is true we can update our
+result which is stored over here so we
+can
+set our result to left and right this is
+the window
+and we can set our result length equal
+to the size of this window which we just
+computed above but let's compute it
+again
+this is the size of the window and just
+like i showed you in the drawing
+while the condition is met we want to
+keep shrinking from the left we want to
+make this string as
+small as it can possibly be so let's
+pop from the left of our
+window right let's try to minimize it so
+i'm going to remove the leftmost
+character from our window map so the
+leftmost character is
+is the string at index left right
+and from this i'm going to decrement it
+by
+1. so now since we removed a character
+it's possible that our have and need
+condition is no longer met so i'm going
+to do something
+similar to what we did up here i'm going
+to check
+if this character s of l was in
+count t meaning it's one of the
+characters that we need to satisfy our
+condition
+and if somehow right now for the first
+time
+that we took this character from our
+window and
+now the count is actually less than the
+count that we
+need which is present in count t so now
+if it's
+if the if by removing a character we
+just made it
+less than what it needed to be what we
+did is we just took our halve
+and then decremented it by one right so
+this
+is just a part of removing a character
+from the left we update our map
+we update our have count if we need to
+and lastly we take our left pointer and
+increment it by one because of course we
+have to shift this by one
+if we're removing a character from the
+left of our window
+so now after we do this we're going to
+potentially check the have and need
+condition
+and it might be true it might not be
+true and whatever it is the
+loop is going to execute when it needs
+to
+so this is all we're doing we're taking
+characters adding it to our window map
+checking if the condition has been met
+updating the window accordingly
+that's all we need to do by the end the
+result if it exists
+will be stored in our result variable so
+our result pointer
+we can put it in uh left and right we
+can take
+result and extract it into left and
+right these these pointers in this case
+these new left and rights will tell us
+the result so what we can do is
+say return from string s going from
+pointer left all the way to pointer
+right but we need to add one
+for the off by one error and we're only
+gonna do this
+if the result length has
+not has been changed meaning it's no
+longer infinity because we know
+it's actually possible that a result
+does not even exist
+if that's not true if a result doesn't
+exist we know we have to return
+an empty string so there it is this is
+the entire code i'll probably have to
+link this in the description because
+it's pretty long and even kind of messy
+and you can see it is definitely very
+efficient this is a linear
+time algorithm so i really hope that
+this was helpful
+if it was please like and subscribe it
+supports the channel
+soon

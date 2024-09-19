@@ -1,0 +1,162 @@
+what solve leak code 3 longest substring
+without repeating characters or back to
+a classic leak code problem the third
+one so this one's pretty simple we're
+just given a string and we want to find
+the longest sub screen without any
+repeating characters right like how
+these three don't have any duplicate
+characters ABC this one has two A's so
+this would not count as a substring
+without repeating characters and we only
+need to return the length of this
+substring so the first idea that comes
+to my mind at least is so just check
+every single substring check if it has
+any duplicates if it doesn't then it
+then we're just going to take the
+longest one of those strings and return
+the length so how would that algorithm
+run okay first we'd start at a we want
+to get every substring starting at a so
+just this one a well that doesn't have
+any duplicates a B that doesn't have any
+duplicates a C that doesn't have any
+duplicates either and then we get to
+this first duplicate a we have two A's
+now but remember we're checking every
+single sub screen starting at this first
+a so we're gonna keep this algorithm
+going even though we don't have to every
+substring we get after that like see how
+we're doing it every single substring
+after is also gonna have duplicates so
+do we even need to check all of these
+starting at value a this is the repeated
+work that we're gonna eliminate with our
+very fundamental technique the sliding
+window so we want to only check sub
+strings without any repeated characters
+so let's actually just do that let's
+make sure that our window right our sub
+array our substring is always not
+containing any duplicates so once we get
+to this next a we're gonna say well now
+we have to a so we need to start
+removing from the left wing to start
+shrinking our sliding window until we no
+longer have duplicates so I'm gonna say
+remove this one from our substring now
+our substring runs from here from the B
+all the way to the a now it's perfectly
+valid so now we can keep going it's
+still only length three though so now
+so we're gonna add this bead but wait a
+minute now we have two bees but my
+question is how would we even know
+instantly whether we had a duplicate or
+not well we can use a set for that sets
+will only contain one of each character
+so we'll automatically know if we have a
+duplicate we can check it instantly so
+we're going to check that we have two
+bees so now we're going to keep popping
+from the left we're going to keep
+shrinking our window from the left until
+we don't have until we remove a bee and
+we're gonna see that the first one we
+remove is the Beast and now we're done
+so now our substring runs from this C
+all the way to this D now we're gonna
+add another character once again we have
+a duplicate and once again we can
+literally just remove the farthest left
+character and now we're valid again no
+more duplicates we're running all the
+way from A to C next we add a B the
+interesting thing about this is that now
+we have to remove this a because we have
+to shrink our window our sub string has
+to be contiguous so we have to remove
+this a but notice we still have two bees
+in our substring so we got to remove
+another character we have to remove this
+B so now our substring runs from C to B
+so we are valid again but now our
+substring is only length two next we'll
+get to the last B last character we're
+adding and C yep it's a duplicate again
+and don't forget that as we're removing
+these characters from the left we're
+removing a C we're not just removing it
+from our window but we also have to
+remove it from our set because our set
+is going to correspond to all the
+characters inside of our substring that
+we're at so we have to remove our see
+from the window and move it from the set
+we have to take this B and do the same
+thing and now we have no more characters
+to add with this sliding window
+technique which is a very fundamental
+technique that you'll probably see a lot
+more in a lot of different problems we
+can cut the time complexity down to Big
+O of n we just have to go through the
+entire list well we might have to add
+and remove values from our set but
+that's a very quick operation the memory
+complexity because of our set is also
+going to be Big O of n because potential
+every character and the string could be
+unique and will add all of them to our
+set and I didn't really show it while we
+were going through the problem but we
+would want to maintain what's the
+longest substring we found in our case
+it was obvious that the long as we found
+was of length three so I remember the
+first thing we need to do is get a set
+to make sure we have all the characters
+in our window so I'll call it character
+set and we're going to do a sliding
+window so any week so we need two
+pointers a left pointer and a right
+pointer to determine our sliding window
+our left will be initialized to zero and
+our right pointer is going to
+continuously be changing as we visit
+every character so I can just use it in
+this for loop so the right pointer is
+going to go through every single
+character now remember if we get to a
+duplicate character that means we have
+to update our window and our set so
+while this character that we just visit
+at the right pointer s of R is equal is
+already inside our character set meaning
+it's a duplicate then we got to update
+our window so we have to take the left
+character and remove it from our set so
+character set dot remove the leftmost
+character and then of course we have to
+update that left pointer incremented by
+1 and we're going to keep doing this
+while that duplicate remains in the
+character set after we've removed all
+duplicates then we can just add this
+rightmost character to our set and since
+at this point we know for sure that our
+substring doesn't have any duplicates we
+can potentially update ours our result
+variable which I never declared so let
+me declare it up here result is
+initially going to be 0 and now we can
+update our results so we can potentially
+make it larger than it is if the current
+window size is greater than what it is
+right now which we can compute by right
+minus left plus 1 and then at the end
+once we've gone through the entire or
+substring we can return the result if
+this was helpful leave a like in

@@ -1,0 +1,441 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+let's solve partition
+equal subset sum so this is a pretty
+interesting problem so we're given a
+non-empty array of nums containing
+only positive integers we want to know
+if the array can be partitioned into two
+different subsets such that the sum of
+each of the subsets
+is exactly equal notice how that's
+basically saying
+if we can take one subset of the array
+which is going to equal
+half of the sum of the entire array
+right because
+if we partition it into two equal halves
+right let's say the total sum was 22
+if we partitioned it into equal halves
+then each of the halves would be exactly
+11 right
+aka one of the partitions is going to be
+half that of the total sum
+so for example in this problem the sum
+is exactly 22. so we want to know can we
+get a partition or can we get a
+subset of this array basically we can
+choose
+any of the values and can we get a
+subset such that it sums
+up to 11. in this case the answer is yes
+it's true because we can take you know
+the single 11 that sums up to 11 right
+and obviously if there's one way to get
+half of the
+sum of the total array then the
+remaining elements are going to
+basically equal 11 as well right so you
+can see that 1
+plus 5 plus another 5 is going to be
+equal to 11 right basically these are
+the two partitions
+so as with many problems let's just try
+to figure out what the brute force
+solution would be so basically let's
+start at the first
+element right and for every single
+element that we visit we have two
+choices right we can either include this
+in our sum
+or we cannot include it in our sum and
+we want to basically determine
+every single sum that we can make with
+any single subset from this given array
+and we want to know does that sum
+ever equal 11 because 11 is our target
+right if we sum this
+up divide it by 2 we get 11. so we want
+to know if that's
+possible so let's brute force it right
+so the first choice we can either choose
+a
+1 or choose nothing right basically
+skipping that so either our sum will be
+1 or our sum will be zero because
+initially our sum
+is zero so the next value is five right
+so basically for each of these
+uh paths we can choose five or not
+choose five if we do choose five here
+we'll get a six if we don't we'll
+stay at one otherwise on this path if we
+choose the five we'll get a five
+because we started at zero so if we skip
+the five we'll stay at zero
+next we get a we get an 11 so basically
+continuing that right so i don't know if
+i'm going to have enough room for this
+okay
+11 plus 6 is going to give us 17 on this
+path
+clearly we went over so we would
+probably not want to continue down this
+path
+but over here if we skip the 11 we'll
+get a 6 still
+if we take 11 here we're going to get 12
+if
+we skip it we'll get one and etc etc
+we'll get 16 here skip we'll get five
+if we take 11 here we'll get 11 skip get
+zero but clearly we found our target
+that we were looking for we
+we don't really have to continue anymore
+right so basically we can skip this last
+element
+we found our target we're gonna return
+true and we're gonna go
+back up so as you can tell since every
+level of our decision tree we're having
+two choices right and what's the height
+of this decision tree gonna be basically
+for every single element
+right we're going to have a decision so
+let's say the input size of the array is
+n so basically our time complexity is
+going to be 2 to the power of
+n if we do a brute force method so let's
+go back to the first step
+basically the first element that we were
+at and let's see if there's any repeated
+work that we can cut down on
+so initially our index or our eye
+pointer is at the first element right
+so basically we're at the beginning of
+the array we can go down the entire
+array we can choose any elements from
+here but and we want to know can we
+sum up to the target 11. now once we
+take our two paths right
+we're basically going to say i is now
+going to be shifted to the next element
+five right
+and we had two choices we could have
+either chosen the one or we could have
+skipped the one
+but clearly now we have a new sub
+problem
+we already have a one so from the
+perspective of this decision
+we're not looking for a target of 11
+anymore right we're looking for a target
+of 10. we're looking for a target of 10
+and not
+only that but our initially our eye
+pointer was here meaning we could have
+we could have done the entire array but
+now our eye pointer is over here
+so we're not even looking at the entire
+array anymore we're looking at a
+subarray basically the remaining
+elements of the array
+minus this first one so if we were to
+cache this
+our new sub problem would be target of
+10 that we're trying to solve and i
+is not at zero anymore index is at
+one similarly over here we can see since
+we're at zero the target is still 11
+right we are trying to sum up
+all the way to 11 but the index that
+we're starting at
+in this case as well is one now right
+because
+we basically said we were skipping this
+element down this path right so now we
+want to know is there a way
+that we can sum up to 11 basically just
+from this subarray right
+and every time we made a decision we
+would continue to update these values
+target and i right so
+as you can see what are the dimensions
+of our cache going to be if these are
+the two
+variables of our cache what are the
+dimensions going to be well clearly
+clearly i could be
+any value in the input array so the
+dimensions of our cache are going to be
+n where basically n is the size of the
+input array right because i could be at
+any value from zero to
+n minus one and what about the target
+well the target is basically the sum of
+the entire array divided by two right so
+basically
+sum of nums divided by two
+or you know the constants usually don't
+matter in time complexity so basically
+this is going to be
+the big o time complexity now this is
+technically
+better than 2 to the power of n
+because they do give us a pretty good
+limitation like the values in this input
+array are usually going to be i think
+less than or equal to 200. now if they
+were really big like if this could have
+been a million
+clearly that would not be very efficient
+because our sum could have potentially
+been
+super large but this is basically the
+best way that we can optimize it
+so basically if we did a depth-first
+search solution with a
+cache like a backtracking solution with
+a cache this would be the time
+complexity and this would also be the
+memory complexity because this would be
+the dimensions of our cache
+but it's actually possible to improve
+the memory complexity
+a little bit with dynamic programming
+and
+the time complexity is mainly going to
+stay the same as this but the overall
+memory complexity can be improved and
+let me show you why that's the case
+so suppose we were starting at this
+first value right and let's say we
+already knew all the possible sums that
+any given subset from the remainder of
+this
+array like basically what we could do is
+say
+for every single one of those sums we we
+would add
+one to it right so for every t let's
+just call it t for now
+in that subarray we're going to be
+basically be checking two things right
+either
+if t is equal to target right like some
+possible sum from this sub rate totaled
+up to the target then we would return
+true right
+every possible sum that we could create
+from any subset in this subarray
+and if it total basically that that's
+what t would be and if that t
+happened to be equal to the target
+target 11 then we would return true
+right
+or if we took every single sum we could
+create from the subarray
+and added one to it basically one
+because that's the only value
+left over here right one plus t
+equal to target if that was also equal
+to 11
+then we would return true as well right
+so basically this is the recurrence
+relation that i'm trying to show you
+and so this is basically the idea we're
+gonna use for the bottom up solution so
+instead of starting here we're gonna
+work our way backwards so we're gonna
+start here so
+and this is very simple right so how
+many possible sums
+could we create from this sub array well
+there's only one value here right we
+either take it or we don't so
+the amount of sums we can create is
+going to be zero
+or five and what i'm gonna do is i'm
+gonna be storing these values in a
+set so let's say this is our set so so
+far we have zero and
+five next what i'm gonna do is i'm gonna
+i'm gonna go to 11
+right we're going to work our way
+backwards i'm going to start at 11
+and i'm going to iterate through every
+single one of these and i'm basically
+going to
+add 11 to them right so for 0 let's add
+11 to it that's going to be 11 i'm going
+to add that to our set
+let's look at 5 that's going to be 11.
+i'm going to add that
+11 plus 5 is 16. i'm going to add that
+to our set right clearly we can see we
+already
+found the target value so we could
+return but let's just keep going to see
+all the possible targets we could create
+with this input array
+so we we were done visiting 11. now
+let's go to five right so basically
+we're going to iterate through every
+single one of these
+add 5 to them and then see if that's a
+new value if it's already a value that
+exists
+then we wouldn't do anything like in
+this case we can see see 5
+plus 0 is just going to be five right so
+i'm not going to add a second
+five to this because we already have a
+five this is a set it's gonna
+want only unique values so we're not
+gonna end up adding a second five
+but if we add five plus five that's
+gonna be a ten if we add five plus 11
+that's going to be a 16. we already have
+a 16. if we add 5 plus 16 that's going
+to be 21.
+and basically i'm going to do the exact
+same thing with one so
+you know we would add a 1 here we'd add
+a 6
+5 plus 1 is six one plus eleven
+is twelve one plus sixteen is
+seventeen and one plus ten is eleven we
+already have
+eleven one plus twenty one is twenty two
+so basically
+this is the entire list of sums we could
+possibly create
+from our given input array as long as
+this
+set contains 11 we return true if it
+doesn't contain 11
+that means it's impossible to sum up to
+this target
+so we would return false now i think in
+practice the size of the set is probably
+going to be about the same size as the
+cache that we would use in the
+memoization
+technique but technically the size of
+this
+this cache is going to be limited to the
+size of the target which is basically
+uh limited by the sum of the nums input
+array so this is going to be the memory
+complexity in this case
+technically the time complexity is going
+to be the same
+but i think this this solution is
+definitely easier to code
+it's just a little bit tricky to
+actually arrive to the solution
+i think going through the brute force to
+the caching
+to the dynamic programming solution is
+the best thought process to arrive
+to this optimal solution so now let's
+jump into the code
+so one thing i didn't mention is that if
+the sum
+of our input array is odd then it's
+obviously going to be impossible to
+partition it into an equal half right so
+basically if the sum
+of this modded by two is one then we're
+going to return
+false also i'm going to have a dp set as
+i mentioned because this is going to be
+the most optimal solution
+to the dp set i'm just going to add a
+base case of zero basically
+we're guaranteed that we can add up to a
+sum of zero right if we just don't
+choose any elements from the input array
+nums
+and the target that we're trying to sum
+up to is of course the sum
+of nums divided by two
+so with that being said let's iterate
+through every single value
+in nums in reverse order you could do it
+in regular order but i'm just gonna do
+reverse order because i'm used to it so
+so we're gonna go through every target
+or every total value that's already
+in our dp set for every t and dp
+and what we want to do is 2dp add
+a value right we basically want to add t
+plus nums of i right because i is the
+current index that we're at
+we want to add it for every single t
+that's already in dp we want to add
+numbers of i to it right but we can't
+update this dp set while we're iterating
+through it so what i'm going to do is
+create a new dp
+set basically next dp it's going to be
+the dp set that we iterate through over
+the
+you know the next time we execute the
+loop so instead of adding to dp what i'm
+going to do is add to next
+dp but we also don't want to lose all
+the original values that are
+in dp so what i'm also going to do is to
+next
+dp i'm going to add the t value
+as well whatever the t value happened to
+be now if i really wanted to i could
+probably skip this line if i just took
+dp and
+cloned it and then set that to next dp
+but
+you know whatever you prefer basically
+what i'm doing is taking
+i'm setting next dp i'm taking every
+value in dp adding it to next dp
+and also adding this t plus nums of i
+to nextdp and once this loop is done
+executing we're basically going to
+update
+reassign dp to the next dp
+set and this is going to keep executing
+it's going to keep executing i is going
+to start at the end it's gonna
+it's gonna go all the way to zero so
+then we're gonna have gone through every
+single one
+and at the end we can return true if and
+only if the target happens to exist
+in dp else we have to return false
+and yeah so this is the entire code and
+it runs
+fairly efficiently so this is about 50
+now i think it would probably be a
+little bit faster if you know the first
+time we find the target value if we just
+returned it
+actually let me just you know you can
+probably stop watching at this point
+that was the entire solution but let me
+just see if this actually does speed it
+up so let's say
+if i happens to be equal to the target
+we can immediately return true
+let me see if that does speed it up okay
+so that actually did so it's about
+twice as fast i think the old one was 14
+milliseconds so this is 600 milliseconds
+so this might be an optimization that
+your interviewer would like
+but the overall time complexity is still
+the same but i hope that this was
+helpful
+if it was please like and subscribe it
+supports the channel a lot and i'll
+hopefully

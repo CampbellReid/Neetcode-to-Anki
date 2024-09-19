@@ -1,0 +1,1648 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.080 --> 00:00:01.350 align:start position:0%
+ 
+hey<00:00:00.240><c> everyone</c><00:00:00.599><c> welcome</c><00:00:00.919><c> back</c><00:00:01.040><c> and</c><00:00:01.199><c> let's</c>
+
+00:00:01.350 --> 00:00:01.360 align:start position:0%
+hey everyone welcome back and let's
+ 
+
+00:00:01.360 --> 00:00:03.189 align:start position:0%
+hey everyone welcome back and let's
+write<00:00:01.560><c> some</c><00:00:01.680><c> more</c><00:00:01.839><c> neat</c><00:00:02.159><c> code</c><00:00:02.600><c> so</c><00:00:02.760><c> today</c><00:00:03.000><c> let's</c>
+
+00:00:03.189 --> 00:00:03.199 align:start position:0%
+write some more neat code so today let's
+ 
+
+00:00:03.199 --> 00:00:05.269 align:start position:0%
+write some more neat code so today let's
+solve<00:00:03.560><c> diameter</c><00:00:04.000><c> of</c><00:00:04.200><c> binary</c><00:00:04.640><c> tree</c><00:00:05.080><c> we're</c>
+
+00:00:05.269 --> 00:00:05.279 align:start position:0%
+solve diameter of binary tree we're
+ 
+
+00:00:05.279 --> 00:00:07.190 align:start position:0%
+solve diameter of binary tree we're
+given<00:00:05.520><c> the</c><00:00:05.680><c> root</c><00:00:06.000><c> of</c><00:00:06.120><c> a</c><00:00:06.279><c> binary</c><00:00:06.680><c> tree</c><00:00:07.000><c> and</c><00:00:07.120><c> we</c>
+
+00:00:07.190 --> 00:00:07.200 align:start position:0%
+given the root of a binary tree and we
+ 
+
+00:00:07.200 --> 00:00:08.629 align:start position:0%
+given the root of a binary tree and we
+want<00:00:07.319><c> to</c><00:00:07.600><c> return</c><00:00:07.799><c> the</c><00:00:08.000><c> length</c><00:00:08.280><c> of</c><00:00:08.440><c> the</c>
+
+00:00:08.629 --> 00:00:08.639 align:start position:0%
+want to return the length of the
+ 
+
+00:00:08.639 --> 00:00:11.350 align:start position:0%
+want to return the length of the
+diameter<00:00:09.120><c> of</c><00:00:09.280><c> the</c><00:00:09.400><c> tree</c><00:00:10.000><c> which</c><00:00:10.120><c> is</c><00:00:10.400><c> defined</c><00:00:11.120><c> as</c>
+
+00:00:11.350 --> 00:00:11.360 align:start position:0%
+diameter of the tree which is defined as
+ 
+
+00:00:11.360 --> 00:00:13.990 align:start position:0%
+diameter of the tree which is defined as
+being<00:00:11.759><c> the</c><00:00:12.000><c> longest</c><00:00:12.679><c> path</c><00:00:13.120><c> from</c><00:00:13.320><c> a</c><00:00:13.559><c> particular</c>
+
+00:00:13.990 --> 00:00:14.000 align:start position:0%
+being the longest path from a particular
+ 
+
+00:00:14.000 --> 00:00:16.470 align:start position:0%
+being the longest path from a particular
+node<00:00:14.519><c> so</c><00:00:14.839><c> in</c><00:00:15.040><c> this</c><00:00:15.280><c> case</c><00:00:15.599><c> it</c><00:00:15.719><c> would</c><00:00:16.039><c> basically</c>
+
+00:00:16.470 --> 00:00:16.480 align:start position:0%
+node so in this case it would basically
+ 
+
+00:00:16.480 --> 00:00:18.990 align:start position:0%
+node so in this case it would basically
+be<00:00:16.680><c> the</c><00:00:16.960><c> longest</c><00:00:17.600><c> path</c><00:00:17.880><c> on</c><00:00:18.080><c> the</c><00:00:18.320><c> left</c><00:00:18.640><c> side</c>
+
+00:00:18.990 --> 00:00:19.000 align:start position:0%
+be the longest path on the left side
+ 
+
+00:00:19.000 --> 00:00:21.509 align:start position:0%
+be the longest path on the left side
+which<00:00:19.199><c> could</c><00:00:19.439><c> either</c><00:00:19.720><c> be</c><00:00:20.000><c> this</c><00:00:20.240><c> part</c><00:00:20.760><c> or</c><00:00:21.320><c> this</c>
+
+00:00:21.509 --> 00:00:21.519 align:start position:0%
+which could either be this part or this
+ 
+
+00:00:21.519 --> 00:00:24.189 align:start position:0%
+which could either be this part or this
+part<00:00:21.880><c> both</c><00:00:22.080><c> of</c><00:00:22.279><c> those</c><00:00:22.560><c> are</c><00:00:22.800><c> of</c><00:00:23.000><c> length</c><00:00:23.359><c> two</c><00:00:24.080><c> I'm</c>
+
+00:00:24.189 --> 00:00:24.199 align:start position:0%
+part both of those are of length two I'm
+ 
+
+00:00:24.199 --> 00:00:26.189 align:start position:0%
+part both of those are of length two I'm
+getting<00:00:24.519><c> that</c><00:00:24.720><c> calculation</c><00:00:25.439><c> because</c><00:00:25.720><c> two</c><00:00:26.080><c> is</c>
+
+00:00:26.189 --> 00:00:26.199 align:start position:0%
+getting that calculation because two is
+ 
+
+00:00:26.199 --> 00:00:28.790 align:start position:0%
+getting that calculation because two is
+the<00:00:26.359><c> number</c><00:00:26.599><c> of</c><00:00:26.840><c> edges</c><00:00:27.480><c> on</c><00:00:27.760><c> that</c><00:00:28.000><c> side</c><00:00:28.400><c> for</c><00:00:28.640><c> the</c>
+
+00:00:28.790 --> 00:00:28.800 align:start position:0%
+the number of edges on that side for the
+ 
+
+00:00:28.800 --> 00:00:30.870 align:start position:0%
+the number of edges on that side for the
+longest<00:00:29.279><c> path</c><00:00:29.640><c> on</c><00:00:29.759><c> the</c><00:00:30.080><c> right</c><00:00:30.279><c> side</c><00:00:30.480><c> we</c><00:00:30.679><c> just</c>
+
+00:00:30.870 --> 00:00:30.880 align:start position:0%
+longest path on the right side we just
+ 
+
+00:00:30.880 --> 00:00:33.150 align:start position:0%
+longest path on the right side we just
+have<00:00:31.119><c> one</c><00:00:31.400><c> Edge</c><00:00:31.960><c> so</c><00:00:32.200><c> that's</c><00:00:32.439><c> one</c><00:00:32.840><c> so</c><00:00:33.000><c> the</c>
+
+00:00:33.150 --> 00:00:33.160 align:start position:0%
+have one Edge so that's one so the
+ 
+
+00:00:33.160 --> 00:00:35.549 align:start position:0%
+have one Edge so that's one so the
+diameter<00:00:33.600><c> through</c><00:00:33.800><c> the</c><00:00:33.960><c> root</c><00:00:34.360><c> would</c><00:00:34.480><c> be</c><00:00:34.680><c> 2</c><00:00:34.960><c> +</c><00:00:35.239><c> 1</c>
+
+00:00:35.549 --> 00:00:35.559 align:start position:0%
+diameter through the root would be 2 + 1
+ 
+
+00:00:35.559 --> 00:00:38.270 align:start position:0%
+diameter through the root would be 2 + 1
+which<00:00:35.680><c> is</c><00:00:35.879><c> 3</c><00:00:36.440><c> but</c><00:00:36.640><c> keep</c><00:00:36.840><c> in</c><00:00:37.040><c> mind</c><00:00:37.719><c> that</c><00:00:38.120><c> the</c>
+
+00:00:38.270 --> 00:00:38.280 align:start position:0%
+which is 3 but keep in mind that the
+ 
+
+00:00:38.280 --> 00:00:40.790 align:start position:0%
+which is 3 but keep in mind that the
+longest<00:00:38.760><c> path</c><00:00:39.120><c> might</c><00:00:39.320><c> not</c><00:00:39.680><c> necessarily</c><00:00:40.480><c> run</c>
+
+00:00:40.790 --> 00:00:40.800 align:start position:0%
+longest path might not necessarily run
+ 
+
+00:00:40.800 --> 00:00:42.389 align:start position:0%
+longest path might not necessarily run
+through<00:00:41.039><c> the</c><00:00:41.200><c> route</c><00:00:41.680><c> so</c><00:00:41.840><c> let's</c><00:00:42.039><c> look</c><00:00:42.160><c> at</c><00:00:42.239><c> a</c>
+
+00:00:42.389 --> 00:00:42.399 align:start position:0%
+through the route so let's look at a
+ 
+
+00:00:42.399 --> 00:00:44.830 align:start position:0%
+through the route so let's look at a
+counter<00:00:42.840><c> example</c><00:00:43.600><c> with</c><00:00:43.840><c> this</c><00:00:44.039><c> tree</c><00:00:44.399><c> if</c><00:00:44.520><c> we</c><00:00:44.640><c> try</c>
+
+00:00:44.830 --> 00:00:44.840 align:start position:0%
+counter example with this tree if we try
+ 
+
+00:00:44.840 --> 00:00:46.430 align:start position:0%
+counter example with this tree if we try
+to<00:00:45.039><c> calculate</c><00:00:45.480><c> the</c><00:00:45.640><c> diameter</c><00:00:46.079><c> through</c><00:00:46.280><c> the</c>
+
+00:00:46.430 --> 00:00:46.440 align:start position:0%
+to calculate the diameter through the
+ 
+
+00:00:46.440 --> 00:00:48.630 align:start position:0%
+to calculate the diameter through the
+root<00:00:46.840><c> on</c><00:00:46.960><c> the</c><00:00:47.160><c> left</c><00:00:47.440><c> side</c><00:00:47.719><c> we</c><00:00:47.840><c> have</c><00:00:48.079><c> nothing</c><00:00:48.440><c> so</c>
+
+00:00:48.630 --> 00:00:48.640 align:start position:0%
+root on the left side we have nothing so
+ 
+
+00:00:48.640 --> 00:00:51.229 align:start position:0%
+root on the left side we have nothing so
+that's<00:00:48.760><c> a</c><00:00:49.000><c> zero</c><00:00:49.440><c> on</c><00:00:49.559><c> the</c><00:00:49.840><c> right</c><00:00:50.199><c> side</c><00:00:50.680><c> we</c><00:00:50.920><c> have</c>
+
+00:00:51.229 --> 00:00:51.239 align:start position:0%
+that's a zero on the right side we have
+ 
+
+00:00:51.239 --> 00:00:52.869 align:start position:0%
+that's a zero on the right side we have
+three<00:00:51.640><c> that's</c><00:00:51.800><c> the</c><00:00:51.960><c> longest</c><00:00:52.399><c> path</c><00:00:52.640><c> you</c><00:00:52.719><c> could</c>
+
+00:00:52.869 --> 00:00:52.879 align:start position:0%
+three that's the longest path you could
+ 
+
+00:00:52.879 --> 00:00:54.990 align:start position:0%
+three that's the longest path you could
+take<00:00:53.239><c> multiple</c><00:00:53.719><c> different</c><00:00:54.160><c> paths</c><00:00:54.600><c> but</c><00:00:54.760><c> all</c><00:00:54.879><c> of</c>
+
+00:00:54.990 --> 00:00:55.000 align:start position:0%
+take multiple different paths but all of
+ 
+
+00:00:55.000 --> 00:00:56.510 align:start position:0%
+take multiple different paths but all of
+them<00:00:55.160><c> are</c><00:00:55.280><c> going</c><00:00:55.359><c> to</c><00:00:55.480><c> be</c><00:00:55.600><c> of</c><00:00:55.760><c> length</c><00:00:56.079><c> three</c><00:00:56.359><c> so</c>
+
+00:00:56.510 --> 00:00:56.520 align:start position:0%
+them are going to be of length three so
+ 
+
+00:00:56.520 --> 00:00:58.470 align:start position:0%
+them are going to be of length three so
+the<00:00:56.640><c> diameter</c><00:00:57.079><c> from</c><00:00:57.320><c> here</c><00:00:57.480><c> is</c><00:00:57.680><c> three</c><00:00:58.280><c> but</c>
+
+00:00:58.470 --> 00:00:58.480 align:start position:0%
+the diameter from here is three but
+ 
+
+00:00:58.480 --> 00:01:00.790 align:start position:0%
+the diameter from here is three but
+consider<00:00:58.840><c> the</c><00:00:58.960><c> node</c><00:00:59.399><c> over</c><00:00:59.680><c> here</c><00:01:00.320><c> length</c><00:01:00.640><c> on</c>
+
+00:01:00.790 --> 00:01:00.800 align:start position:0%
+consider the node over here length on
+ 
+
+00:01:00.800 --> 00:01:03.229 align:start position:0%
+consider the node over here length on
+the<00:01:00.960><c> left</c><00:01:01.239><c> side</c><00:01:01.600><c> is</c><00:01:01.800><c> two</c><00:01:02.320><c> and</c><00:01:02.559><c> length</c><00:01:02.920><c> on</c><00:01:03.039><c> the</c>
+
+00:01:03.229 --> 00:01:03.239 align:start position:0%
+the left side is two and length on the
+ 
+
+00:01:03.239 --> 00:01:05.789 align:start position:0%
+the left side is two and length on the
+right<00:01:03.519><c> side</c><00:01:03.879><c> is</c><00:01:04.040><c> two</c><00:01:04.479><c> so</c><00:01:04.680><c> total</c><00:01:05.000><c> is</c><00:01:05.199><c> four</c>
+
+00:01:05.789 --> 00:01:05.799 align:start position:0%
+right side is two so total is four
+ 
+
+00:01:05.799 --> 00:01:08.109 align:start position:0%
+right side is two so total is four
+that's<00:01:06.000><c> the</c><00:01:06.320><c> diameter</c><00:01:06.760><c> of</c><00:01:06.880><c> this</c><00:01:07.000><c> tree</c><00:01:07.640><c> now</c><00:01:08.040><c> I</c>
+
+00:01:08.109 --> 00:01:08.119 align:start position:0%
+that's the diameter of this tree now I
+ 
+
+00:01:08.119 --> 00:01:10.070 align:start position:0%
+that's the diameter of this tree now I
+want<00:01:08.280><c> to</c><00:01:08.479><c> mention</c><00:01:08.759><c> to</c><00:01:08.920><c> you</c><00:01:09.119><c> that</c><00:01:09.320><c> this</c><00:01:09.680><c> problem</c>
+
+00:01:10.070 --> 00:01:10.080 align:start position:0%
+want to mention to you that this problem
+ 
+
+00:01:10.080 --> 00:01:13.270 align:start position:0%
+want to mention to you that this problem
+is<00:01:10.360><c> actually</c><00:01:10.920><c> closer</c><00:01:11.759><c> to</c><00:01:12.119><c> a</c><00:01:12.360><c> medium</c><00:01:12.960><c> problem</c>
+
+00:01:13.270 --> 00:01:13.280 align:start position:0%
+is actually closer to a medium problem
+ 
+
+00:01:13.280 --> 00:01:16.230 align:start position:0%
+is actually closer to a medium problem
+than<00:01:13.439><c> an</c><00:01:13.640><c> easy</c><00:01:14.119><c> problem</c><00:01:14.799><c> why</c><00:01:15.040><c> exactly</c><00:01:15.520><c> is</c><00:01:15.720><c> that</c>
+
+00:01:16.230 --> 00:01:16.240 align:start position:0%
+than an easy problem why exactly is that
+ 
+
+00:01:16.240 --> 00:01:18.310 align:start position:0%
+than an easy problem why exactly is that
+because<00:01:16.520><c> the</c><00:01:16.680><c> solution</c><00:01:17.360><c> initially</c><00:01:17.880><c> seems</c>
+
+00:01:18.310 --> 00:01:18.320 align:start position:0%
+because the solution initially seems
+ 
+
+00:01:18.320 --> 00:01:20.390 align:start position:0%
+because the solution initially seems
+pretty<00:01:18.759><c> obvious</c><00:01:19.320><c> right</c><00:01:19.479><c> to</c><00:01:19.640><c> get</c><00:01:19.799><c> the</c><00:01:20.000><c> result</c>
+
+00:01:20.390 --> 00:01:20.400 align:start position:0%
+pretty obvious right to get the result
+ 
+
+00:01:20.400 --> 00:01:21.990 align:start position:0%
+pretty obvious right to get the result
+we<00:01:20.479><c> can</c><00:01:20.680><c> just</c><00:01:20.840><c> try</c><00:01:21.079><c> to</c><00:01:21.320><c> calculate</c><00:01:21.799><c> that</c>
+
+00:01:21.990 --> 00:01:22.000 align:start position:0%
+we can just try to calculate that
+ 
+
+00:01:22.000 --> 00:01:24.310 align:start position:0%
+we can just try to calculate that
+diameter<00:01:22.759><c> through</c><00:01:23.079><c> every</c><00:01:23.360><c> single</c><00:01:23.680><c> node</c><00:01:24.200><c> in</c>
+
+00:01:24.310 --> 00:01:24.320 align:start position:0%
+diameter through every single node in
+ 
+
+00:01:24.320 --> 00:01:26.149 align:start position:0%
+diameter through every single node in
+the<00:01:24.479><c> tree</c><00:01:25.040><c> how</c><00:01:25.159><c> do</c><00:01:25.240><c> you</c><00:01:25.400><c> do</c><00:01:25.600><c> that</c><00:01:25.799><c> well</c><00:01:26.000><c> just</c>
+
+00:01:26.149 --> 00:01:26.159 align:start position:0%
+the tree how do you do that well just
+ 
+
+00:01:26.159 --> 00:01:28.109 align:start position:0%
+the tree how do you do that well just
+like<00:01:26.320><c> I</c><00:01:26.439><c> did</c><00:01:26.680><c> get</c><00:01:26.880><c> the</c><00:01:27.079><c> longest</c><00:01:27.600><c> path</c><00:01:27.799><c> on</c><00:01:27.920><c> the</c>
+
+00:01:28.109 --> 00:01:28.119 align:start position:0%
+like I did get the longest path on the
+ 
+
+00:01:28.119 --> 00:01:30.270 align:start position:0%
+like I did get the longest path on the
+left<00:01:28.400><c> and</c><00:01:28.560><c> the</c><00:01:28.680><c> longest</c><00:01:29.200><c> path</c><00:01:29.400><c> on</c><00:01:29.520><c> the</c><00:01:29.680><c> right</c>
+
+00:01:30.270 --> 00:01:30.280 align:start position:0%
+left and the longest path on the right
+ 
+
+00:01:30.280 --> 00:01:32.429 align:start position:0%
+left and the longest path on the right
+and<00:01:30.479><c> add</c><00:01:30.680><c> them</c><00:01:30.960><c> together</c><00:01:31.280><c> AKA</c><00:01:31.880><c> sort</c><00:01:32.079><c> of</c><00:01:32.240><c> like</c>
+
+00:01:32.429 --> 00:01:32.439 align:start position:0%
+and add them together AKA sort of like
+ 
+
+00:01:32.439 --> 00:01:34.190 align:start position:0%
+and add them together AKA sort of like
+the<00:01:32.680><c> height</c><00:01:32.960><c> on</c><00:01:33.119><c> the</c><00:01:33.320><c> left</c><00:01:33.600><c> side</c><00:01:33.920><c> and</c><00:01:34.040><c> the</c>
+
+00:01:34.190 --> 00:01:34.200 align:start position:0%
+the height on the left side and the
+ 
+
+00:01:34.200 --> 00:01:36.389 align:start position:0%
+the height on the left side and the
+height<00:01:34.439><c> on</c><00:01:34.560><c> the</c><00:01:34.759><c> right</c><00:01:35.000><c> side</c><00:01:35.479><c> generally</c><00:01:36.040><c> we</c><00:01:36.200><c> do</c>
+
+00:01:36.389 --> 00:01:36.399 align:start position:0%
+height on the right side generally we do
+ 
+
+00:01:36.399 --> 00:01:38.749 align:start position:0%
+height on the right side generally we do
+this<00:01:36.640><c> recursively</c><00:01:37.399><c> with</c><00:01:37.560><c> some</c><00:01:37.799><c> kind</c><00:01:37.960><c> of</c><00:01:38.159><c> DFS</c>
+
+00:01:38.749 --> 00:01:38.759 align:start position:0%
+this recursively with some kind of DFS
+ 
+
+00:01:38.759 --> 00:01:41.670 align:start position:0%
+this recursively with some kind of DFS
+algorithm<00:01:39.520><c> but</c><00:01:39.680><c> the</c><00:01:39.920><c> tricky</c><00:01:40.439><c> part</c><00:01:40.799><c> about</c><00:01:41.320><c> this</c>
+
+00:01:41.670 --> 00:01:41.680 align:start position:0%
+algorithm but the tricky part about this
+ 
+
+00:01:41.680 --> 00:01:44.550 align:start position:0%
+algorithm but the tricky part about this
+problem<00:01:42.320><c> is</c><00:01:42.560><c> that</c><00:01:42.960><c> the</c><00:01:43.320><c> return</c><00:01:43.799><c> value</c>
+
+00:01:44.550 --> 00:01:44.560 align:start position:0%
+problem is that the return value
+ 
+
+00:01:44.560 --> 00:01:47.350 align:start position:0%
+problem is that the return value
+obviously<00:01:45.119><c> of</c><00:01:45.320><c> this</c><00:01:45.479><c> DFS</c><00:01:46.399><c> is</c><00:01:46.560><c> going</c><00:01:46.680><c> to</c><00:01:46.880><c> be</c><00:01:47.119><c> the</c>
+
+00:01:47.350 --> 00:01:47.360 align:start position:0%
+obviously of this DFS is going to be the
+ 
+
+00:01:47.360 --> 00:01:49.469 align:start position:0%
+obviously of this DFS is going to be the
+height<00:01:47.840><c> so</c><00:01:48.040><c> what</c><00:01:48.159><c> we</c><00:01:48.280><c> want</c><00:01:48.399><c> to</c><00:01:48.759><c> return</c><00:01:49.159><c> from</c>
+
+00:01:49.469 --> 00:01:49.479 align:start position:0%
+height so what we want to return from
+ 
+
+00:01:49.479 --> 00:01:52.190 align:start position:0%
+height so what we want to return from
+this<00:01:49.719><c> right</c><00:01:49.960><c> subtree</c><00:01:50.680><c> up</c><00:01:50.880><c> to</c><00:01:51.200><c> this</c><00:01:51.399><c> node</c><00:01:51.840><c> is</c><00:01:52.040><c> of</c>
+
+00:01:52.190 --> 00:01:52.200 align:start position:0%
+this right subtree up to this node is of
+ 
+
+00:01:52.200 --> 00:01:54.270 align:start position:0%
+this right subtree up to this node is of
+course<00:01:52.560><c> the</c><00:01:52.799><c> height</c><00:01:53.320><c> but</c><00:01:53.560><c> that's</c><00:01:53.759><c> not</c><00:01:54.040><c> the</c>
+
+00:01:54.270 --> 00:01:54.280 align:start position:0%
+course the height but that's not the
+ 
+
+00:01:54.280 --> 00:01:56.389 align:start position:0%
+course the height but that's not the
+result<00:01:54.920><c> that</c><00:01:55.040><c> we're</c><00:01:55.320><c> ultimately</c><00:01:55.920><c> trying</c><00:01:56.200><c> to</c>
+
+00:01:56.389 --> 00:01:56.399 align:start position:0%
+result that we're ultimately trying to
+ 
+
+00:01:56.399 --> 00:01:57.870 align:start position:0%
+result that we're ultimately trying to
+compute<00:01:56.880><c> what</c><00:01:57.000><c> we're</c><00:01:57.200><c> actually</c><00:01:57.479><c> trying</c><00:01:57.719><c> to</c>
+
+00:01:57.870 --> 00:01:57.880 align:start position:0%
+compute what we're actually trying to
+ 
+
+00:01:57.880 --> 00:02:00.830 align:start position:0%
+compute what we're actually trying to
+compute<00:01:58.560><c> is</c><00:01:58.759><c> the</c><00:01:59.079><c> diameter</c><00:02:00.000><c> now</c><00:02:00.240><c> in</c><00:02:00.399><c> terms</c><00:02:00.680><c> of</c>
+
+00:02:00.830 --> 00:02:00.840 align:start position:0%
+compute is the diameter now in terms of
+ 
+
+00:02:00.840 --> 00:02:02.469 align:start position:0%
+compute is the diameter now in terms of
+the<00:02:01.000><c> code</c><00:02:01.280><c> there</c><00:02:01.399><c> are</c><00:02:01.600><c> multiple</c><00:02:02.039><c> ways</c><00:02:02.280><c> of</c>
+
+00:02:02.469 --> 00:02:02.479 align:start position:0%
+the code there are multiple ways of
+ 
+
+00:02:02.479 --> 00:02:04.350 align:start position:0%
+the code there are multiple ways of
+handling<00:02:02.960><c> that</c><00:02:03.159><c> the</c><00:02:03.280><c> way</c><00:02:03.479><c> I'll</c><00:02:03.640><c> show</c><00:02:03.920><c> you</c><00:02:04.159><c> is</c>
+
+00:02:04.350 --> 00:02:04.360 align:start position:0%
+handling that the way I'll show you is
+ 
+
+00:02:04.360 --> 00:02:06.990 align:start position:0%
+handling that the way I'll show you is
+sort<00:02:04.560><c> of</c><00:02:04.759><c> by</c><00:02:04.920><c> using</c><00:02:05.320><c> a</c><00:02:05.840><c> member</c><00:02:06.320><c> variable</c><00:02:06.880><c> or</c>
+
+00:02:06.990 --> 00:02:07.000 align:start position:0%
+sort of by using a member variable or
+ 
+
+00:02:07.000 --> 00:02:08.510 align:start position:0%
+sort of by using a member variable or
+you<00:02:07.119><c> can</c><00:02:07.280><c> even</c><00:02:07.479><c> think</c><00:02:07.640><c> of</c><00:02:07.759><c> it</c><00:02:07.960><c> as</c><00:02:08.080><c> sort</c><00:02:08.239><c> of</c><00:02:08.360><c> a</c>
+
+00:02:08.510 --> 00:02:08.520 align:start position:0%
+you can even think of it as sort of a
+ 
+
+00:02:08.520 --> 00:02:10.389 align:start position:0%
+you can even think of it as sort of a
+global<00:02:08.920><c> variable</c><00:02:09.640><c> with</c><00:02:09.879><c> respect</c><00:02:10.119><c> to</c><00:02:10.239><c> the</c>
+
+00:02:10.389 --> 00:02:10.399 align:start position:0%
+global variable with respect to the
+ 
+
+00:02:10.399 --> 00:02:12.270 align:start position:0%
+global variable with respect to the
+recursive<00:02:10.920><c> function</c><00:02:11.480><c> but</c><00:02:11.640><c> the</c><00:02:11.760><c> algorithm</c>
+
+00:02:12.270 --> 00:02:12.280 align:start position:0%
+recursive function but the algorithm
+ 
+
+00:02:12.280 --> 00:02:14.589 align:start position:0%
+recursive function but the algorithm
+will<00:02:12.440><c> be</c><00:02:12.680><c> exactly</c><00:02:13.200><c> like</c><00:02:13.440><c> this</c><00:02:13.920><c> recursively</c>
+
+00:02:14.589 --> 00:02:14.599 align:start position:0%
+will be exactly like this recursively
+ 
+
+00:02:14.599 --> 00:02:17.390 align:start position:0%
+will be exactly like this recursively
+run<00:02:14.959><c> DFS</c><00:02:15.599><c> from</c><00:02:15.760><c> the</c><00:02:15.959><c> left</c><00:02:16.160><c> sub</c><00:02:16.440><c> tree</c><00:02:16.959><c> we</c><00:02:17.120><c> reach</c>
+
+00:02:17.390 --> 00:02:17.400 align:start position:0%
+run DFS from the left sub tree we reach
+ 
+
+00:02:17.400 --> 00:02:19.229 align:start position:0%
+run DFS from the left sub tree we reach
+null<00:02:17.879><c> so</c><00:02:18.040><c> the</c><00:02:18.200><c> height</c><00:02:18.400><c> of</c><00:02:18.560><c> that</c><00:02:18.720><c> of</c><00:02:18.879><c> course</c><00:02:19.080><c> is</c>
+
+00:02:19.229 --> 00:02:19.239 align:start position:0%
+null so the height of that of course is
+ 
+
+00:02:19.239 --> 00:02:20.910 align:start position:0%
+null so the height of that of course is
+going<00:02:19.319><c> to</c><00:02:19.440><c> be</c><00:02:19.599><c> zero</c><00:02:20.040><c> that's</c><00:02:20.200><c> what</c><00:02:20.319><c> we</c><00:02:20.640><c> return</c>
+
+00:02:20.910 --> 00:02:20.920 align:start position:0%
+going to be zero that's what we return
+ 
+
+00:02:20.920 --> 00:02:23.030 align:start position:0%
+going to be zero that's what we return
+up<00:02:21.160><c> here</c><00:02:21.680><c> then</c><00:02:21.840><c> do</c><00:02:22.040><c> the</c><00:02:22.160><c> same</c><00:02:22.400><c> on</c><00:02:22.560><c> the</c><00:02:22.760><c> right</c>
+
+00:02:23.030 --> 00:02:23.040 align:start position:0%
+up here then do the same on the right
+ 
+
+00:02:23.040 --> 00:02:25.190 align:start position:0%
+up here then do the same on the right
+side<00:02:23.400><c> and</c><00:02:23.519><c> then</c><00:02:23.640><c> we'd</c><00:02:23.959><c> continuously</c><00:02:24.599><c> go</c><00:02:24.840><c> down</c>
+
+00:02:25.190 --> 00:02:25.200 align:start position:0%
+side and then we'd continuously go down
+ 
+
+00:02:25.200 --> 00:02:27.390 align:start position:0%
+side and then we'd continuously go down
+and<00:02:25.319><c> so</c><00:02:25.720><c> here</c><00:02:26.239><c> we'd</c><00:02:26.560><c> reach</c><00:02:26.879><c> the</c><00:02:27.000><c> case</c><00:02:27.239><c> with</c>
+
+00:02:27.390 --> 00:02:27.400 align:start position:0%
+and so here we'd reach the case with
+ 
+
+00:02:27.400 --> 00:02:29.309 align:start position:0%
+and so here we'd reach the case with
+just<00:02:27.519><c> a</c><00:02:27.680><c> node</c><00:02:28.000><c> the</c><00:02:28.160><c> height</c><00:02:28.360><c> of</c><00:02:28.560><c> that</c><00:02:29.000><c> we</c><00:02:29.120><c> will</c>
+
+00:02:29.309 --> 00:02:29.319 align:start position:0%
+just a node the height of that we will
+ 
+
+00:02:29.319 --> 00:02:31.270 align:start position:0%
+just a node the height of that we will
+say<00:02:29.640><c> is</c><00:02:29.959><c> going</c><00:02:30.040><c> to</c><00:02:30.120><c> be</c><00:02:30.280><c> one</c><00:02:30.920><c> that's</c><00:02:31.080><c> going</c><00:02:31.200><c> to</c>
+
+00:02:31.270 --> 00:02:31.280 align:start position:0%
+say is going to be one that's going to
+ 
+
+00:02:31.280 --> 00:02:32.910 align:start position:0%
+say is going to be one that's going to
+be<00:02:31.560><c> returned</c><00:02:31.800><c> up</c><00:02:31.959><c> to</c><00:02:32.080><c> the</c><00:02:32.239><c> parent</c><00:02:32.560><c> and</c><00:02:32.720><c> that's</c>
+
+00:02:32.910 --> 00:02:32.920 align:start position:0%
+be returned up to the parent and that's
+ 
+
+00:02:32.920 --> 00:02:34.589 align:start position:0%
+be returned up to the parent and that's
+basically<00:02:33.280><c> saying</c><00:02:33.519><c> that</c><00:02:33.680><c> the</c><00:02:33.800><c> length</c><00:02:34.080><c> of</c><00:02:34.319><c> this</c>
+
+00:02:34.589 --> 00:02:34.599 align:start position:0%
+basically saying that the length of this
+ 
+
+00:02:34.599 --> 00:02:36.910 align:start position:0%
+basically saying that the length of this
+is<00:02:34.760><c> one</c><00:02:35.400><c> same</c><00:02:35.720><c> thing</c><00:02:36.000><c> for</c><00:02:36.319><c> this</c><00:02:36.519><c> side</c><00:02:36.760><c> we'll</c>
+
+00:02:36.910 --> 00:02:36.920 align:start position:0%
+is one same thing for this side we'll
+ 
+
+00:02:36.920 --> 00:02:38.869 align:start position:0%
+is one same thing for this side we'll
+say<00:02:37.120><c> the</c><00:02:37.239><c> length</c><00:02:37.519><c> is</c><00:02:37.640><c> one</c><00:02:38.120><c> so</c><00:02:38.400><c> now</c><00:02:38.599><c> when</c><00:02:38.720><c> we</c>
+
+00:02:38.869 --> 00:02:38.879 align:start position:0%
+say the length is one so now when we
+ 
+
+00:02:38.879 --> 00:02:41.550 align:start position:0%
+say the length is one so now when we
+want<00:02:38.959><c> to</c><00:02:39.200><c> compute</c><00:02:39.599><c> the</c><00:02:39.879><c> diameter</c><00:02:40.760><c> from</c><00:02:41.120><c> here</c>
+
+00:02:41.550 --> 00:02:41.560 align:start position:0%
+want to compute the diameter from here
+ 
+
+00:02:41.560 --> 00:02:42.949 align:start position:0%
+want to compute the diameter from here
+we're<00:02:41.720><c> going</c><00:02:41.840><c> to</c><00:02:42.000><c> maintain</c><00:02:42.400><c> a</c><00:02:42.599><c> global</c>
+
+00:02:42.949 --> 00:02:42.959 align:start position:0%
+we're going to maintain a global
+ 
+
+00:02:42.959 --> 00:02:44.750 align:start position:0%
+we're going to maintain a global
+variable<00:02:43.440><c> which</c><00:02:43.680><c> I'll</c><00:02:43.879><c> call</c><00:02:44.040><c> it</c><00:02:44.159><c> the</c><00:02:44.360><c> result</c>
+
+00:02:44.750 --> 00:02:44.760 align:start position:0%
+variable which I'll call it the result
+ 
+
+00:02:44.760 --> 00:02:47.030 align:start position:0%
+variable which I'll call it the result
+or<00:02:45.239><c> this</c><00:02:45.400><c> for</c><00:02:45.560><c> sure</c><00:02:46.200><c> and</c><00:02:46.360><c> initially</c><00:02:46.720><c> we'll</c><00:02:46.879><c> set</c>
+
+00:02:47.030 --> 00:02:47.040 align:start position:0%
+or this for sure and initially we'll set
+ 
+
+00:02:47.040 --> 00:02:48.630 align:start position:0%
+or this for sure and initially we'll set
+it<00:02:47.159><c> to</c><00:02:47.400><c> zero</c><00:02:47.760><c> this</c><00:02:47.840><c> is</c><00:02:47.959><c> what</c><00:02:48.080><c> we're</c><00:02:48.200><c> trying</c><00:02:48.400><c> to</c>
+
+00:02:48.630 --> 00:02:48.640 align:start position:0%
+it to zero this is what we're trying to
+ 
+
+00:02:48.640 --> 00:02:51.270 align:start position:0%
+it to zero this is what we're trying to
+maximize<00:02:49.239><c> of</c><00:02:49.400><c> course</c><00:02:49.959><c> and</c><00:02:50.159><c> from</c><00:02:50.480><c> this</c><00:02:50.680><c> node</c><00:02:51.080><c> we</c>
+
+00:02:51.270 --> 00:02:51.280 align:start position:0%
+maximize of course and from this node we
+ 
+
+00:02:51.280 --> 00:02:53.869 align:start position:0%
+maximize of course and from this node we
+calculate<00:02:51.680><c> a</c><00:02:51.840><c> diameter</c><00:02:52.239><c> of</c><00:02:52.360><c> 1</c><00:02:52.599><c> +</c><00:02:52.879><c> 1</c><00:02:53.440><c> which</c><00:02:53.680><c> of</c>
+
+00:02:53.869 --> 00:02:53.879 align:start position:0%
+calculate a diameter of 1 + 1 which of
+ 
+
+00:02:53.879 --> 00:02:56.270 align:start position:0%
+calculate a diameter of 1 + 1 which of
+course<00:02:54.319><c> is</c><00:02:54.480><c> going</c><00:02:54.599><c> to</c><00:02:54.760><c> be</c><00:02:55.080><c> two</c><00:02:55.440><c> now</c><00:02:55.879><c> that's</c><00:02:56.120><c> the</c>
+
+00:02:56.270 --> 00:02:56.280 align:start position:0%
+course is going to be two now that's the
+ 
+
+00:02:56.280 --> 00:02:59.030 align:start position:0%
+course is going to be two now that's the
+biggest<00:02:56.599><c> result</c><00:02:56.920><c> that</c><00:02:57.040><c> we</c><00:02:57.239><c> have</c><00:02:57.760><c> now</c><00:02:58.319><c> from</c>
+
+00:02:59.030 --> 00:02:59.040 align:start position:0%
+biggest result that we have now from
+ 
+
+00:02:59.040 --> 00:03:01.790 align:start position:0%
+biggest result that we have now from
+this<00:02:59.319><c> node</c><00:03:00.159><c> I</c><00:03:00.239><c> want</c><00:03:00.400><c> to</c><00:03:00.760><c> return</c><00:03:01.080><c> up</c><00:03:01.280><c> to</c><00:03:01.519><c> my</c>
+
+00:03:01.790 --> 00:03:01.800 align:start position:0%
+this node I want to return up to my
+ 
+
+00:03:01.800 --> 00:03:04.910 align:start position:0%
+this node I want to return up to my
+parent<00:03:02.519><c> the</c><00:03:02.720><c> height</c><00:03:03.319><c> of</c><00:03:03.640><c> this</c><00:03:03.920><c> tree</c><00:03:04.519><c> so</c><00:03:04.799><c> what</c>
+
+00:03:04.910 --> 00:03:04.920 align:start position:0%
+parent the height of this tree so what
+ 
+
+00:03:04.920 --> 00:03:07.309 align:start position:0%
+parent the height of this tree so what
+do<00:03:05.120><c> I</c><00:03:05.319><c> do</c><00:03:05.879><c> well</c><00:03:06.080><c> the</c><00:03:06.280><c> height</c><00:03:06.560><c> is</c><00:03:06.840><c> different</c>
+
+00:03:07.309 --> 00:03:07.319 align:start position:0%
+do I do well the height is different
+ 
+
+00:03:07.319 --> 00:03:09.670 align:start position:0%
+do I do well the height is different
+than<00:03:07.680><c> the</c><00:03:07.959><c> diameter</c><00:03:08.440><c> so</c><00:03:08.680><c> we</c><00:03:08.879><c> actually</c><00:03:09.440><c> will</c>
+
+00:03:09.670 --> 00:03:09.680 align:start position:0%
+than the diameter so we actually will
+ 
+
+00:03:09.680 --> 00:03:11.710 align:start position:0%
+than the diameter so we actually will
+take<00:03:09.920><c> the</c><00:03:10.200><c> max</c><00:03:10.560><c> of</c><00:03:10.680><c> the</c><00:03:10.840><c> left</c><00:03:11.040><c> sub</c><00:03:11.319><c> tree</c><00:03:11.560><c> the</c>
+
+00:03:11.710 --> 00:03:11.720 align:start position:0%
+take the max of the left sub tree the
+ 
+
+00:03:11.720 --> 00:03:13.990 align:start position:0%
+take the max of the left sub tree the
+max<00:03:12.000><c> of</c><00:03:12.120><c> the</c><00:03:12.280><c> right</c><00:03:12.480><c> sub</c><00:03:12.760><c> tree</c><00:03:13.000><c> and</c><00:03:13.239><c> add</c><00:03:13.519><c> one</c><00:03:13.760><c> to</c>
+
+00:03:13.990 --> 00:03:14.000 align:start position:0%
+max of the right sub tree and add one to
+ 
+
+00:03:14.000 --> 00:03:15.670 align:start position:0%
+max of the right sub tree and add one to
+it<00:03:14.360><c> well</c><00:03:14.519><c> in</c><00:03:14.640><c> this</c><00:03:14.760><c> case</c><00:03:14.959><c> they're</c><00:03:15.159><c> the</c><00:03:15.280><c> same</c><00:03:15.519><c> so</c>
+
+00:03:15.670 --> 00:03:15.680 align:start position:0%
+it well in this case they're the same so
+ 
+
+00:03:15.680 --> 00:03:17.589 align:start position:0%
+it well in this case they're the same so
+we<00:03:15.840><c> just</c><00:03:16.040><c> get</c><00:03:16.200><c> one</c><00:03:16.519><c> and</c><00:03:16.640><c> then</c><00:03:16.840><c> add</c><00:03:17.080><c> one</c><00:03:17.239><c> to</c><00:03:17.400><c> it</c>
+
+00:03:17.589 --> 00:03:17.599 align:start position:0%
+we just get one and then add one to it
+ 
+
+00:03:17.599 --> 00:03:19.309 align:start position:0%
+we just get one and then add one to it
+which<00:03:17.680><c> is</c><00:03:17.959><c> this</c><00:03:18.200><c> Edge</c><00:03:18.480><c> so</c><00:03:18.640><c> we'll</c><00:03:18.840><c> say</c><00:03:19.000><c> that</c><00:03:19.159><c> the</c>
+
+00:03:19.309 --> 00:03:19.319 align:start position:0%
+which is this Edge so we'll say that the
+ 
+
+00:03:19.319 --> 00:03:21.750 align:start position:0%
+which is this Edge so we'll say that the
+height<00:03:19.760><c> here</c><00:03:20.200><c> is</c><00:03:20.319><c> going</c><00:03:20.440><c> to</c><00:03:20.560><c> be</c><00:03:20.680><c> two</c><00:03:21.360><c> obviously</c>
+
+00:03:21.750 --> 00:03:21.760 align:start position:0%
+height here is going to be two obviously
+ 
+
+00:03:21.760 --> 00:03:23.309 align:start position:0%
+height here is going to be two obviously
+it<00:03:21.840><c> didn't</c><00:03:22.159><c> have</c><00:03:22.280><c> to</c><00:03:22.400><c> be</c><00:03:22.640><c> like</c><00:03:22.799><c> that</c><00:03:23.000><c> Suppose</c>
+
+00:03:23.309 --> 00:03:23.319 align:start position:0%
+it didn't have to be like that Suppose
+ 
+
+00:03:23.319 --> 00:03:25.110 align:start position:0%
+it didn't have to be like that Suppose
+there<00:03:23.440><c> was</c><00:03:23.560><c> a</c><00:03:23.680><c> node</c><00:03:24.120><c> over</c><00:03:24.400><c> here</c><00:03:24.840><c> and</c><00:03:24.959><c> then</c>
+
+00:03:25.110 --> 00:03:25.120 align:start position:0%
+there was a node over here and then
+ 
+
+00:03:25.120 --> 00:03:26.710 align:start position:0%
+there was a node over here and then
+maybe<00:03:25.440><c> the</c><00:03:25.640><c> height</c><00:03:25.879><c> of</c><00:03:26.040><c> this</c><00:03:26.239><c> right</c><00:03:26.440><c> tree</c>
+
+00:03:26.710 --> 00:03:26.720 align:start position:0%
+maybe the height of this right tree
+ 
+
+00:03:26.720 --> 00:03:27.990 align:start position:0%
+maybe the height of this right tree
+would<00:03:26.840><c> have</c><00:03:27.000><c> been</c><00:03:27.159><c> two</c><00:03:27.480><c> and</c><00:03:27.560><c> then</c><00:03:27.720><c> we</c><00:03:27.879><c> would</c>
+
+00:03:27.990 --> 00:03:28.000 align:start position:0%
+would have been two and then we would
+ 
+
+00:03:28.000 --> 00:03:29.869 align:start position:0%
+would have been two and then we would
+have<00:03:28.280><c> returned</c><00:03:28.519><c> 2</c><00:03:28.879><c> +</c><00:03:29.159><c> 1</c><00:03:29.480><c> which</c><00:03:29.599><c> would</c><00:03:29.760><c> would</c>
+
+00:03:29.869 --> 00:03:29.879 align:start position:0%
+have returned 2 + 1 which would would
+ 
+
+00:03:29.879 --> 00:03:31.710 align:start position:0%
+have returned 2 + 1 which would would
+have<00:03:29.959><c> been</c><00:03:30.120><c> three</c><00:03:30.640><c> so</c><00:03:30.840><c> that's</c><00:03:31.120><c> generally</c><00:03:31.560><c> the</c>
+
+00:03:31.710 --> 00:03:31.720 align:start position:0%
+have been three so that's generally the
+ 
+
+00:03:31.720 --> 00:03:33.589 align:start position:0%
+have been three so that's generally the
+core<00:03:32.040><c> idea</c><00:03:32.640><c> we</c><00:03:32.720><c> would</c><00:03:32.879><c> do</c><00:03:33.040><c> the</c><00:03:33.159><c> same</c><00:03:33.400><c> thing</c>
+
+00:03:33.589 --> 00:03:33.599 align:start position:0%
+core idea we would do the same thing
+ 
+
+00:03:33.599 --> 00:03:35.070 align:start position:0%
+core idea we would do the same thing
+from<00:03:33.799><c> here</c><00:03:34.000><c> cuz</c><00:03:34.120><c> it's</c><00:03:34.280><c> kind</c><00:03:34.400><c> of</c><00:03:34.560><c> symmetrical</c>
+
+00:03:35.070 --> 00:03:35.080 align:start position:0%
+from here cuz it's kind of symmetrical
+ 
+
+00:03:35.080 --> 00:03:37.229 align:start position:0%
+from here cuz it's kind of symmetrical
+to<00:03:35.280><c> this</c><00:03:35.439><c> side</c><00:03:35.680><c> so</c><00:03:35.879><c> this</c><00:03:36.000><c> would</c><00:03:36.159><c> be</c><00:03:36.640><c> one</c><00:03:37.000><c> and</c>
+
+00:03:37.229 --> 00:03:37.239 align:start position:0%
+to this side so this would be one and
+ 
+
+00:03:37.239 --> 00:03:39.750 align:start position:0%
+to this side so this would be one and
+one<00:03:37.879><c> and</c><00:03:38.000><c> then</c><00:03:38.159><c> the</c><00:03:38.319><c> height</c><00:03:38.560><c> of</c><00:03:38.799><c> this</c><00:03:39.120><c> is</c><00:03:39.280><c> two</c>
+
+00:03:39.750 --> 00:03:39.760 align:start position:0%
+one and then the height of this is two
+ 
+
+00:03:39.760 --> 00:03:42.110 align:start position:0%
+one and then the height of this is two
+height<00:03:40.000><c> of</c><00:03:40.239><c> this</c><00:03:40.720><c> is</c><00:03:40.920><c> two</c><00:03:41.640><c> those</c><00:03:41.799><c> are</c><00:03:41.920><c> going</c><00:03:42.040><c> to</c>
+
+00:03:42.110 --> 00:03:42.120 align:start position:0%
+height of this is two those are going to
+ 
+
+00:03:42.120 --> 00:03:44.390 align:start position:0%
+height of this is two those are going to
+be<00:03:42.400><c> returned</c><00:03:42.799><c> up</c><00:03:43.000><c> to</c><00:03:43.239><c> three</c><00:03:43.840><c> add</c><00:03:44.080><c> them</c>
+
+00:03:44.390 --> 00:03:44.400 align:start position:0%
+be returned up to three add them
+ 
+
+00:03:44.400 --> 00:03:47.030 align:start position:0%
+be returned up to three add them
+together<00:03:44.920><c> the</c><00:03:45.080><c> diameter</c><00:03:45.560><c> now</c><00:03:46.159><c> is</c><00:03:46.319><c> going</c><00:03:46.480><c> to</c><00:03:46.680><c> be</c>
+
+00:03:47.030 --> 00:03:47.040 align:start position:0%
+together the diameter now is going to be
+ 
+
+00:03:47.040 --> 00:03:48.990 align:start position:0%
+together the diameter now is going to be
+four<00:03:47.439><c> it's</c><00:03:47.560><c> going</c><00:03:47.640><c> to</c><00:03:47.760><c> be</c><00:03:47.959><c> increased</c><00:03:48.720><c> all</c><00:03:48.879><c> the</c>
+
+00:03:48.990 --> 00:03:49.000 align:start position:0%
+four it's going to be increased all the
+ 
+
+00:03:49.000 --> 00:03:51.750 align:start position:0%
+four it's going to be increased all the
+way<00:03:49.319><c> up</c><00:03:49.519><c> to</c><00:03:49.720><c> four</c><00:03:50.360><c> from</c><00:03:50.640><c> here</c><00:03:51.120><c> we</c><00:03:51.280><c> want</c><00:03:51.400><c> to</c><00:03:51.560><c> take</c>
+
+00:03:51.750 --> 00:03:51.760 align:start position:0%
+way up to four from here we want to take
+ 
+
+00:03:51.760 --> 00:03:54.630 align:start position:0%
+way up to four from here we want to take
+the<00:03:51.920><c> max</c><00:03:52.159><c> of</c><00:03:52.439><c> left</c><00:03:53.000><c> Max</c><00:03:53.239><c> of</c><00:03:53.480><c> right</c><00:03:53.840><c> it's</c><00:03:54.040><c> two</c>
+
+00:03:54.630 --> 00:03:54.640 align:start position:0%
+the max of left Max of right it's two
+ 
+
+00:03:54.640 --> 00:03:56.390 align:start position:0%
+the max of left Max of right it's two
+and<00:03:54.760><c> we</c><00:03:54.879><c> want</c><00:03:55.000><c> to</c><00:03:55.200><c> add</c><00:03:55.400><c> one</c><00:03:55.599><c> to</c><00:03:55.760><c> it</c><00:03:56.000><c> because</c><00:03:56.200><c> of</c>
+
+00:03:56.390 --> 00:03:56.400 align:start position:0%
+and we want to add one to it because of
+ 
+
+00:03:56.400 --> 00:03:58.550 align:start position:0%
+and we want to add one to it because of
+this<00:03:56.599><c> edge</c><00:03:56.920><c> here</c><00:03:57.360><c> so</c><00:03:57.519><c> then</c><00:03:57.640><c> we</c><00:03:57.760><c> say</c><00:03:58.000><c> the</c><00:03:58.200><c> height</c>
+
+00:03:58.550 --> 00:03:58.560 align:start position:0%
+this edge here so then we say the height
+ 
+
+00:03:58.560 --> 00:04:01.350 align:start position:0%
+this edge here so then we say the height
+of<00:03:58.920><c> this</c><00:03:59.120><c> part</c><00:03:59.439><c> is</c><00:03:59.920><c> three</c><00:04:00.480><c> we</c><00:04:00.799><c> return</c><00:04:01.079><c> that</c><00:04:01.239><c> up</c>
+
+00:04:01.350 --> 00:04:01.360 align:start position:0%
+of this part is three we return that up
+ 
+
+00:04:01.360 --> 00:04:03.270 align:start position:0%
+of this part is three we return that up
+to<00:04:01.519><c> the</c><00:04:01.640><c> root</c><00:04:02.159><c> I'll</c><00:04:02.400><c> make</c><00:04:02.519><c> it</c><00:04:02.640><c> another</c><00:04:02.920><c> color</c>
+
+00:04:03.270 --> 00:04:03.280 align:start position:0%
+to the root I'll make it another color
+ 
+
+00:04:03.280 --> 00:04:05.509 align:start position:0%
+to the root I'll make it another color
+three<00:04:03.720><c> root</c><00:04:04.000><c> is</c><00:04:04.120><c> going</c><00:04:04.200><c> to</c><00:04:04.360><c> do</c><00:04:04.599><c> the</c><00:04:04.799><c> same</c><00:04:05.120><c> thing</c>
+
+00:04:05.509 --> 00:04:05.519 align:start position:0%
+three root is going to do the same thing
+ 
+
+00:04:05.519 --> 00:04:07.550 align:start position:0%
+three root is going to do the same thing
+take<00:04:05.879><c> left</c><00:04:06.319><c> plus</c><00:04:06.680><c> Right</c><00:04:06.920><c> add</c><00:04:07.040><c> them</c><00:04:07.319><c> together</c>
+
+00:04:07.550 --> 00:04:07.560 align:start position:0%
+take left plus Right add them together
+ 
+
+00:04:07.560 --> 00:04:09.990 align:start position:0%
+take left plus Right add them together
+we<00:04:07.680><c> get</c><00:04:07.959><c> three</c><00:04:08.640><c> this</c><00:04:08.840><c> time</c><00:04:09.079><c> it's</c><00:04:09.319><c> not</c><00:04:09.640><c> greater</c>
+
+00:04:09.990 --> 00:04:10.000 align:start position:0%
+we get three this time it's not greater
+ 
+
+00:04:10.000 --> 00:04:12.229 align:start position:0%
+we get three this time it's not greater
+than<00:04:10.159><c> the</c><00:04:10.319><c> result</c><00:04:10.720><c> so</c><00:04:10.879><c> our</c><00:04:11.079><c> result</c><00:04:11.439><c> will</c><00:04:11.680><c> stay</c>
+
+00:04:12.229 --> 00:04:12.239 align:start position:0%
+than the result so our result will stay
+ 
+
+00:04:12.239 --> 00:04:15.069 align:start position:0%
+than the result so our result will stay
+unchanged<00:04:13.239><c> and</c><00:04:13.560><c> it</c><00:04:13.640><c> will</c><00:04:13.879><c> be</c><00:04:14.239><c> four</c><00:04:14.680><c> four</c><00:04:14.959><c> is</c>
+
+00:04:15.069 --> 00:04:15.079 align:start position:0%
+unchanged and it will be four four is
+ 
+
+00:04:15.079 --> 00:04:16.830 align:start position:0%
+unchanged and it will be four four is
+ultimately<00:04:15.560><c> what</c><00:04:15.680><c> we</c><00:04:15.840><c> would</c><00:04:16.160><c> return</c><00:04:16.560><c> but</c><00:04:16.720><c> it's</c>
+
+00:04:16.830 --> 00:04:16.840 align:start position:0%
+ultimately what we would return but it's
+ 
+
+00:04:16.840 --> 00:04:18.310 align:start position:0%
+ultimately what we would return but it's
+not<00:04:17.000><c> going</c><00:04:17.120><c> to</c><00:04:17.199><c> be</c><00:04:17.479><c> returned</c><00:04:17.919><c> from</c><00:04:18.120><c> the</c>
+
+00:04:18.310 --> 00:04:18.320 align:start position:0%
+not going to be returned from the
+ 
+
+00:04:18.320 --> 00:04:19.870 align:start position:0%
+not going to be returned from the
+recursive<00:04:18.840><c> function</c><00:04:19.239><c> keep</c><00:04:19.440><c> that</c><00:04:19.560><c> in</c><00:04:19.680><c> mind</c>
+
+00:04:19.870 --> 00:04:19.880 align:start position:0%
+recursive function keep that in mind
+ 
+
+00:04:19.880 --> 00:04:21.629 align:start position:0%
+recursive function keep that in mind
+we're<00:04:20.040><c> going</c><00:04:20.120><c> to</c><00:04:20.199><c> have</c><00:04:20.320><c> a</c><00:04:20.600><c> separate</c><00:04:21.239><c> variable</c>
+
+00:04:21.629 --> 00:04:21.639 align:start position:0%
+we're going to have a separate variable
+ 
+
+00:04:21.639 --> 00:04:23.510 align:start position:0%
+we're going to have a separate variable
+that's<00:04:21.799><c> sort</c><00:04:21.959><c> of</c><00:04:22.120><c> going</c><00:04:22.199><c> to</c><00:04:22.320><c> be</c><00:04:22.560><c> Global</c><00:04:23.320><c> which</c>
+
+00:04:23.510 --> 00:04:23.520 align:start position:0%
+that's sort of going to be Global which
+ 
+
+00:04:23.520 --> 00:04:25.830 align:start position:0%
+that's sort of going to be Global which
+does<00:04:23.919><c> that</c><00:04:24.440><c> and</c><00:04:24.880><c> since</c><00:04:25.120><c> we</c><00:04:25.240><c> were</c><00:04:25.400><c> able</c><00:04:25.639><c> to</c>
+
+00:04:25.830 --> 00:04:25.840 align:start position:0%
+does that and since we were able to
+ 
+
+00:04:25.840 --> 00:04:27.430 align:start position:0%
+does that and since we were able to
+accomplish<00:04:26.320><c> this</c><00:04:26.479><c> by</c><00:04:26.639><c> just</c><00:04:26.840><c> visiting</c><00:04:27.240><c> each</c>
+
+00:04:27.430 --> 00:04:27.440 align:start position:0%
+accomplish this by just visiting each
+ 
+
+00:04:27.440 --> 00:04:29.710 align:start position:0%
+accomplish this by just visiting each
+node<00:04:27.800><c> once</c><00:04:28.280><c> we</c><00:04:28.400><c> will</c><00:04:28.639><c> say</c><00:04:29.039><c> that</c><00:04:29.160><c> the</c><00:04:29.280><c> time</c>
+
+00:04:29.710 --> 00:04:29.720 align:start position:0%
+node once we will say that the time
+ 
+
+00:04:29.720 --> 00:04:31.749 align:start position:0%
+node once we will say that the time
+complexity<00:04:30.360><c> is</c><00:04:30.560><c> linear</c><00:04:31.160><c> and</c><00:04:31.280><c> the</c><00:04:31.440><c> space</c>
+
+00:04:31.749 --> 00:04:31.759 align:start position:0%
+complexity is linear and the space
+ 
+
+00:04:31.759 --> 00:04:33.150 align:start position:0%
+complexity is linear and the space
+complexity<00:04:32.240><c> is</c><00:04:32.360><c> going</c><00:04:32.440><c> to</c><00:04:32.560><c> be</c><00:04:32.720><c> proportional</c>
+
+00:04:33.150 --> 00:04:33.160 align:start position:0%
+complexity is going to be proportional
+ 
+
+00:04:33.160 --> 00:04:35.270 align:start position:0%
+complexity is going to be proportional
+to<00:04:33.320><c> the</c><00:04:33.520><c> height</c><00:04:33.720><c> of</c><00:04:33.840><c> the</c><00:04:33.960><c> tree</c><00:04:34.320><c> which</c><00:04:34.720><c> could</c><00:04:34.919><c> be</c>
+
+00:04:35.270 --> 00:04:35.280 align:start position:0%
+to the height of the tree which could be
+ 
+
+00:04:35.280 --> 00:04:38.790 align:start position:0%
+to the height of the tree which could be
+log<00:04:35.600><c> in</c><00:04:35.800><c> for</c><00:04:35.960><c> a</c><00:04:36.120><c> balance</c><00:04:36.520><c> tree</c><00:04:37.199><c> or</c><00:04:37.759><c> n</c><00:04:38.199><c> for</c><00:04:38.560><c> a</c>
+
+00:04:38.790 --> 00:04:38.800 align:start position:0%
+log in for a balance tree or n for a
+ 
+
+00:04:38.800 --> 00:04:40.710 align:start position:0%
+log in for a balance tree or n for a
+non-balanced<00:04:39.400><c> tree</c><00:04:40.160><c> so</c><00:04:40.320><c> we're</c><00:04:40.440><c> going</c><00:04:40.560><c> to</c>
+
+00:04:40.710 --> 00:04:40.720 align:start position:0%
+non-balanced tree so we're going to
+ 
+
+00:04:40.720 --> 00:04:42.590 align:start position:0%
+non-balanced tree so we're going to
+solve<00:04:41.039><c> this</c><00:04:41.240><c> recursively</c><00:04:41.919><c> and</c><00:04:42.039><c> I</c><00:04:42.160><c> like</c><00:04:42.320><c> to</c><00:04:42.440><c> do</c>
+
+00:04:42.590 --> 00:04:42.600 align:start position:0%
+solve this recursively and I like to do
+ 
+
+00:04:42.600 --> 00:04:44.390 align:start position:0%
+solve this recursively and I like to do
+it<00:04:42.720><c> with</c><00:04:42.880><c> nested</c><00:04:43.400><c> functions</c><00:04:43.919><c> so</c><00:04:44.080><c> I'm</c><00:04:44.160><c> going</c><00:04:44.240><c> to</c>
+
+00:04:44.390 --> 00:04:44.400 align:start position:0%
+it with nested functions so I'm going to
+ 
+
+00:04:44.400 --> 00:04:46.590 align:start position:0%
+it with nested functions so I'm going to
+have<00:04:44.600><c> my</c><00:04:44.759><c> DFS</c><00:04:45.440><c> here</c><00:04:45.919><c> and</c><00:04:46.039><c> I'm</c><00:04:46.120><c> going</c><00:04:46.199><c> to</c><00:04:46.400><c> pass</c>
+
+00:04:46.590 --> 00:04:46.600 align:start position:0%
+have my DFS here and I'm going to pass
+ 
+
+00:04:46.600 --> 00:04:49.230 align:start position:0%
+have my DFS here and I'm going to pass
+in<00:04:46.880><c> a</c><00:04:47.000><c> single</c><00:04:47.360><c> variable</c><00:04:47.880><c> Curr</c><00:04:48.600><c> remember</c><00:04:49.080><c> that</c>
+
+00:04:49.230 --> 00:04:49.240 align:start position:0%
+in a single variable Curr remember that
+ 
+
+00:04:49.240 --> 00:04:51.390 align:start position:0%
+in a single variable Curr remember that
+this<00:04:49.400><c> DFS</c><00:04:49.880><c> is</c><00:04:50.039><c> not</c><00:04:50.199><c> returning</c><00:04:50.639><c> the</c><00:04:50.840><c> diameter</c>
+
+00:04:51.390 --> 00:04:51.400 align:start position:0%
+this DFS is not returning the diameter
+ 
+
+00:04:51.400 --> 00:04:52.990 align:start position:0%
+this DFS is not returning the diameter
+it's<00:04:51.520><c> going</c><00:04:51.639><c> to</c><00:04:51.919><c> return</c><00:04:52.199><c> the</c><00:04:52.440><c> height</c><00:04:52.800><c> that's</c>
+
+00:04:52.990 --> 00:04:53.000 align:start position:0%
+it's going to return the height that's
+ 
+
+00:04:53.000 --> 00:04:54.870 align:start position:0%
+it's going to return the height that's
+the<00:04:53.199><c> most</c><00:04:53.400><c> important</c><00:04:53.960><c> thing</c><00:04:54.280><c> about</c><00:04:54.600><c> this</c>
+
+00:04:54.870 --> 00:04:54.880 align:start position:0%
+the most important thing about this
+ 
+
+00:04:54.880 --> 00:04:57.070 align:start position:0%
+the most important thing about this
+problem<00:04:55.360><c> it's</c><00:04:55.520><c> not</c><00:04:55.759><c> a</c><00:04:55.919><c> trivial</c><00:04:56.400><c> recursive</c>
+
+00:04:57.070 --> 00:04:57.080 align:start position:0%
+problem it's not a trivial recursive
+ 
+
+00:04:57.080 --> 00:04:58.870 align:start position:0%
+problem it's not a trivial recursive
+problem<00:04:57.560><c> the</c><00:04:57.680><c> base</c><00:04:58.000><c> case</c><00:04:58.280><c> though</c><00:04:58.520><c> is</c><00:04:58.639><c> going</c><00:04:58.759><c> to</c>
+
+00:04:58.870 --> 00:04:58.880 align:start position:0%
+problem the base case though is going to
+ 
+
+00:04:58.880 --> 00:05:01.950 align:start position:0%
+problem the base case though is going to
+be<00:04:59.039><c> pretty</c><00:04:59.280><c> easy</c><00:05:00.120><c> if</c><00:05:00.440><c> not</c><00:05:00.840><c> Cur</c><00:05:01.440><c> therefore</c><00:05:01.840><c> we</c>
+
+00:05:01.950 --> 00:05:01.960 align:start position:0%
+be pretty easy if not Cur therefore we
+ 
+
+00:05:01.960 --> 00:05:04.430 align:start position:0%
+be pretty easy if not Cur therefore we
+reached<00:05:02.280><c> a</c><00:05:02.479><c> null</c><00:05:02.840><c> node</c><00:05:03.560><c> the</c><00:05:03.720><c> height</c><00:05:03.960><c> of</c><00:05:04.199><c> that</c>
+
+00:05:04.430 --> 00:05:04.440 align:start position:0%
+reached a null node the height of that
+ 
+
+00:05:04.440 --> 00:05:06.110 align:start position:0%
+reached a null node the height of that
+is<00:05:04.560><c> of</c><00:05:04.720><c> course</c><00:05:04.960><c> just</c><00:05:05.080><c> going</c><00:05:05.160><c> to</c><00:05:05.320><c> be</c><00:05:05.560><c> zero</c><00:05:05.919><c> so</c>
+
+00:05:06.110 --> 00:05:06.120 align:start position:0%
+is of course just going to be zero so
+ 
+
+00:05:06.120 --> 00:05:08.270 align:start position:0%
+is of course just going to be zero so
+that's<00:05:06.240><c> what</c><00:05:06.360><c> we</c><00:05:06.680><c> return</c><00:05:07.240><c> otherwise</c><00:05:08.000><c> let's</c><00:05:08.160><c> do</c>
+
+00:05:08.270 --> 00:05:08.280 align:start position:0%
+that's what we return otherwise let's do
+ 
+
+00:05:08.280 --> 00:05:10.310 align:start position:0%
+that's what we return otherwise let's do
+the<00:05:08.440><c> recursive</c><00:05:09.000><c> case</c><00:05:09.320><c> let's</c><00:05:09.600><c> get</c><00:05:09.800><c> the</c><00:05:10.039><c> height</c>
+
+00:05:10.310 --> 00:05:10.320 align:start position:0%
+the recursive case let's get the height
+ 
+
+00:05:10.320 --> 00:05:13.790 align:start position:0%
+the recursive case let's get the height
+of<00:05:10.479><c> the</c><00:05:10.680><c> left</c><00:05:10.960><c> subtree</c><00:05:11.560><c> let's</c><00:05:11.720><c> call</c><00:05:12.039><c> DFS</c><00:05:12.720><c> on</c><00:05:13.000><c> c.</c>
+
+00:05:13.790 --> 00:05:13.800 align:start position:0%
+of the left subtree let's call DFS on c.
+ 
+
+00:05:13.800 --> 00:05:16.150 align:start position:0%
+of the left subtree let's call DFS on c.
+left<00:05:14.280><c> let's</c><00:05:14.479><c> do</c><00:05:14.680><c> the</c><00:05:14.880><c> exact</c><00:05:15.280><c> same</c><00:05:15.560><c> thing</c><00:05:15.919><c> for</c>
+
+00:05:16.150 --> 00:05:16.160 align:start position:0%
+left let's do the exact same thing for
+ 
+
+00:05:16.160 --> 00:05:19.510 align:start position:0%
+left let's do the exact same thing for
+the<00:05:16.360><c> right</c><00:05:16.639><c> subtree</c><00:05:17.400><c> just</c><00:05:17.880><c> like</c><00:05:18.360><c> this</c><00:05:19.000><c> now</c>
+
+00:05:19.510 --> 00:05:19.520 align:start position:0%
+the right subtree just like this now
+ 
+
+00:05:19.520 --> 00:05:21.309 align:start position:0%
+the right subtree just like this now
+remember<00:05:20.160><c> there's</c><00:05:20.440><c> two</c><00:05:20.680><c> things</c><00:05:20.960><c> we</c><00:05:21.039><c> want</c><00:05:21.199><c> to</c>
+
+00:05:21.309 --> 00:05:21.319 align:start position:0%
+remember there's two things we want to
+ 
+
+00:05:21.319 --> 00:05:23.150 align:start position:0%
+remember there's two things we want to
+do<00:05:21.560><c> we</c><00:05:21.639><c> want</c><00:05:21.759><c> to</c><00:05:22.000><c> potentially</c><00:05:22.600><c> update</c><00:05:22.960><c> the</c>
+
+00:05:23.150 --> 00:05:23.160 align:start position:0%
+do we want to potentially update the
+ 
+
+00:05:23.160 --> 00:05:25.230 align:start position:0%
+do we want to potentially update the
+result<00:05:23.600><c> and</c><00:05:23.800><c> we</c><00:05:23.880><c> want</c><00:05:24.000><c> to</c><00:05:24.360><c> return</c><00:05:24.720><c> the</c><00:05:24.960><c> height</c>
+
+00:05:25.230 --> 00:05:25.240 align:start position:0%
+result and we want to return the height
+ 
+
+00:05:25.240 --> 00:05:27.790 align:start position:0%
+result and we want to return the height
+of<00:05:25.360><c> the</c><00:05:25.479><c> tree</c><00:05:25.880><c> from</c><00:05:26.240><c> cerr</c><00:05:26.880><c> so</c><00:05:27.280><c> let's</c><00:05:27.520><c> start</c>
+
+00:05:27.790 --> 00:05:27.800 align:start position:0%
+of the tree from cerr so let's start
+ 
+
+00:05:27.800 --> 00:05:29.909 align:start position:0%
+of the tree from cerr so let's start
+with<00:05:27.960><c> the</c><00:05:28.120><c> result</c><00:05:28.720><c> I'm</c><00:05:28.919><c> going</c><00:05:29.120><c> to</c><00:05:29.319><c> create</c><00:05:29.800><c> a</c>
+
+00:05:29.909 --> 00:05:29.919 align:start position:0%
+with the result I'm going to create a
+ 
+
+00:05:29.919 --> 00:05:33.230 align:start position:0%
+with the result I'm going to create a
+variable<00:05:30.440><c> self.</c><00:05:31.400><c> result</c><00:05:32.039><c> is</c><00:05:32.199><c> equal</c><00:05:32.440><c> to</c><00:05:32.639><c> zero</c>
+
+00:05:33.230 --> 00:05:33.240 align:start position:0%
+variable self. result is equal to zero
+ 
+
+00:05:33.240 --> 00:05:35.029 align:start position:0%
+variable self. result is equal to zero
+this<00:05:33.319><c> is</c><00:05:33.560><c> basically</c><00:05:34.000><c> making</c><00:05:34.240><c> it</c><00:05:34.440><c> a</c><00:05:34.600><c> member</c>
+
+00:05:35.029 --> 00:05:35.039 align:start position:0%
+this is basically making it a member
+ 
+
+00:05:35.039 --> 00:05:37.430 align:start position:0%
+this is basically making it a member
+variable<00:05:35.720><c> of</c><00:05:36.199><c> this</c><00:05:36.440><c> class</c><00:05:36.759><c> like</c><00:05:36.880><c> an</c><00:05:37.080><c> instance</c>
+
+00:05:37.430 --> 00:05:37.440 align:start position:0%
+variable of this class like an instance
+ 
+
+00:05:37.440 --> 00:05:39.990 align:start position:0%
+variable of this class like an instance
+of<00:05:37.600><c> this</c><00:05:37.880><c> class</c><00:05:38.440><c> so</c><00:05:38.639><c> that</c><00:05:38.800><c> it</c><00:05:38.919><c> is</c><00:05:39.280><c> accessible</c>
+
+00:05:39.990 --> 00:05:40.000 align:start position:0%
+of this class so that it is accessible
+ 
+
+00:05:40.000 --> 00:05:42.629 align:start position:0%
+of this class so that it is accessible
+inside<00:05:40.520><c> of</c><00:05:40.880><c> this</c><00:05:41.080><c> nested</c><00:05:41.600><c> function</c><00:05:42.120><c> so</c><00:05:42.440><c> when</c><00:05:42.560><c> I</c>
+
+00:05:42.629 --> 00:05:42.639 align:start position:0%
+inside of this nested function so when I
+ 
+
+00:05:42.639 --> 00:05:44.710 align:start position:0%
+inside of this nested function so when I
+want<00:05:42.800><c> to</c><00:05:43.120><c> maximize</c><00:05:43.720><c> the</c><00:05:43.919><c> result</c><00:05:44.319><c> I'm</c><00:05:44.440><c> going</c><00:05:44.560><c> to</c>
+
+00:05:44.710 --> 00:05:44.720 align:start position:0%
+want to maximize the result I'm going to
+ 
+
+00:05:44.720 --> 00:05:48.110 align:start position:0%
+want to maximize the result I'm going to
+set<00:05:44.919><c> it</c><00:05:45.160><c> equal</c><00:05:45.720><c> to</c><00:05:45.880><c> the</c><00:05:46.080><c> max</c><00:05:46.560><c> of</c><00:05:46.759><c> itself</c><00:05:47.440><c> self.</c>
+
+00:05:48.110 --> 00:05:48.120 align:start position:0%
+set it equal to the max of itself self.
+ 
+
+00:05:48.120 --> 00:05:50.870 align:start position:0%
+set it equal to the max of itself self.
+result<00:05:48.759><c> and</c><00:05:49.360><c> the</c><00:05:49.600><c> current</c><00:05:50.120><c> diameter</c><00:05:50.680><c> how</c><00:05:50.759><c> do</c>
+
+00:05:50.870 --> 00:05:50.880 align:start position:0%
+result and the current diameter how do
+ 
+
+00:05:50.880 --> 00:05:53.230 align:start position:0%
+result and the current diameter how do
+we<00:05:51.080><c> get</c><00:05:51.280><c> that</c><00:05:51.440><c> we'll</c><00:05:51.720><c> just</c><00:05:51.960><c> take</c><00:05:52.319><c> the</c><00:05:52.600><c> left</c><00:05:52.960><c> and</c>
+
+00:05:53.230 --> 00:05:53.240 align:start position:0%
+we get that we'll just take the left and
+ 
+
+00:05:53.240 --> 00:05:55.749 align:start position:0%
+we get that we'll just take the left and
+right<00:05:53.759><c> and</c><00:05:53.960><c> add</c><00:05:54.199><c> them</c><00:05:54.560><c> together</c><00:05:55.199><c> just</c><00:05:55.440><c> as</c><00:05:55.600><c> we</c>
+
+00:05:55.749 --> 00:05:55.759 align:start position:0%
+right and add them together just as we
+ 
+
+00:05:55.759 --> 00:05:58.189 align:start position:0%
+right and add them together just as we
+did<00:05:56.000><c> in</c><00:05:56.120><c> the</c><00:05:56.240><c> drawing</c><00:05:56.680><c> explanation</c><00:05:57.680><c> now</c><00:05:57.840><c> for</c>
+
+00:05:58.189 --> 00:05:58.199 align:start position:0%
+did in the drawing explanation now for
+ 
+
+00:05:58.199 --> 00:06:00.430 align:start position:0%
+did in the drawing explanation now for
+returning<00:05:59.120><c> we're</c><00:05:59.280><c> not</c><00:05:59.680><c> returning</c><00:06:00.120><c> this</c><00:06:00.319><c> we're</c>
+
+00:06:00.430 --> 00:06:00.440 align:start position:0%
+returning we're not returning this we're
+ 
+
+00:06:00.440 --> 00:06:02.309 align:start position:0%
+returning we're not returning this we're
+not<00:06:00.600><c> returning</c><00:06:01.000><c> the</c><00:06:01.160><c> diameter</c><00:06:01.680><c> remember</c><00:06:02.000><c> this</c>
+
+00:06:02.309 --> 00:06:02.319 align:start position:0%
+not returning the diameter remember this
+ 
+
+00:06:02.319 --> 00:06:04.430 align:start position:0%
+not returning the diameter remember this
+Returns<00:06:02.639><c> the</c><00:06:02.800><c> height</c><00:06:03.280><c> how</c><00:06:03.400><c> do</c><00:06:03.520><c> we</c><00:06:03.800><c> calculate</c>
+
+00:06:04.430 --> 00:06:04.440 align:start position:0%
+Returns the height how do we calculate
+ 
+
+00:06:04.440 --> 00:06:06.309 align:start position:0%
+Returns the height how do we calculate
+the<00:06:04.639><c> height</c><00:06:04.960><c> though</c><00:06:05.479><c> well</c><00:06:05.840><c> it's</c><00:06:06.039><c> either</c><00:06:06.199><c> going</c>
+
+00:06:06.309 --> 00:06:06.319 align:start position:0%
+the height though well it's either going
+ 
+
+00:06:06.319 --> 00:06:08.469 align:start position:0%
+the height though well it's either going
+to<00:06:06.440><c> be</c><00:06:06.560><c> the</c><00:06:06.720><c> max</c><00:06:07.000><c> of</c><00:06:07.160><c> the</c><00:06:07.319><c> left</c><00:06:07.680><c> or</c><00:06:07.840><c> the</c><00:06:08.000><c> max</c><00:06:08.319><c> of</c>
+
+00:06:08.469 --> 00:06:08.479 align:start position:0%
+to be the max of the left or the max of
+ 
+
+00:06:08.479 --> 00:06:11.469 align:start position:0%
+to be the max of the left or the max of
+the<00:06:08.759><c> right</c><00:06:09.400><c> and</c><00:06:09.919><c> also</c><00:06:10.360><c> don't</c><00:06:10.560><c> forget</c><00:06:10.840><c> to</c><00:06:11.160><c> add</c>
+
+00:06:11.469 --> 00:06:11.479 align:start position:0%
+the right and also don't forget to add
+ 
+
+00:06:11.479 --> 00:06:14.150 align:start position:0%
+the right and also don't forget to add
+one<00:06:12.039><c> for</c><00:06:12.319><c> the</c><00:06:12.560><c> current</c><00:06:12.960><c> node</c><00:06:13.360><c> that</c><00:06:13.479><c> we</c><00:06:13.599><c> are</c><00:06:13.800><c> at</c>
+
+00:06:14.150 --> 00:06:14.160 align:start position:0%
+one for the current node that we are at
+ 
+
+00:06:14.160 --> 00:06:15.830 align:start position:0%
+one for the current node that we are at
+this<00:06:14.360><c> just</c><00:06:14.520><c> tells</c><00:06:14.759><c> us</c><00:06:14.919><c> the</c><00:06:15.039><c> max</c><00:06:15.280><c> of</c><00:06:15.440><c> either</c><00:06:15.720><c> of</c>
+
+00:06:15.830 --> 00:06:15.840 align:start position:0%
+this just tells us the max of either of
+ 
+
+00:06:15.840 --> 00:06:18.230 align:start position:0%
+this just tells us the max of either of
+the<00:06:15.960><c> sub</c><00:06:16.240><c> trees</c><00:06:16.599><c> but</c><00:06:16.840><c> Plus</c><00:06:17.120><c> One</c><00:06:17.720><c> will</c><00:06:17.919><c> give</c><00:06:18.080><c> us</c>
+
+00:06:18.230 --> 00:06:18.240 align:start position:0%
+the sub trees but Plus One will give us
+ 
+
+00:06:18.240 --> 00:06:21.230 align:start position:0%
+the sub trees but Plus One will give us
+the<00:06:18.400><c> max</c><00:06:18.919><c> of</c><00:06:19.039><c> the</c><00:06:19.240><c> height</c><00:06:19.599><c> from</c><00:06:19.960><c> cerr</c><00:06:20.720><c> now</c>
+
+00:06:21.230 --> 00:06:21.240 align:start position:0%
+the max of the height from cerr now
+ 
+
+00:06:21.240 --> 00:06:23.870 align:start position:0%
+the max of the height from cerr now
+that's<00:06:21.599><c> actually</c><00:06:22.240><c> pretty</c><00:06:22.599><c> much</c><00:06:23.000><c> it</c><00:06:23.400><c> it's</c><00:06:23.639><c> not</c>
+
+00:06:23.870 --> 00:06:23.880 align:start position:0%
+that's actually pretty much it it's not
+ 
+
+00:06:23.880 --> 00:06:25.309 align:start position:0%
+that's actually pretty much it it's not
+easy<00:06:24.080><c> to</c><00:06:24.240><c> come</c><00:06:24.440><c> up</c><00:06:24.599><c> with</c><00:06:24.840><c> remember</c><00:06:25.160><c> the</c>
+
+00:06:25.309 --> 00:06:25.319 align:start position:0%
+easy to come up with remember the
+ 
+
+00:06:25.319 --> 00:06:26.870 align:start position:0%
+easy to come up with remember the
+complexity<00:06:25.840><c> of</c><00:06:25.960><c> this</c><00:06:26.160><c> comes</c><00:06:26.400><c> from</c><00:06:26.599><c> the</c><00:06:26.720><c> fact</c>
+
+00:06:26.870 --> 00:06:26.880 align:start position:0%
+complexity of this comes from the fact
+ 
+
+00:06:26.880 --> 00:06:28.870 align:start position:0%
+complexity of this comes from the fact
+that<00:06:27.000><c> the</c><00:06:27.280><c> return</c><00:06:27.599><c> value</c><00:06:27.960><c> is</c><00:06:28.160><c> not</c><00:06:28.360><c> the</c><00:06:28.520><c> result</c>
+
+00:06:28.870 --> 00:06:28.880 align:start position:0%
+that the return value is not the result
+ 
+
+00:06:28.880 --> 00:06:30.990 align:start position:0%
+that the return value is not the result
+so<00:06:29.080><c> down</c><00:06:29.280><c> here</c><00:06:29.639><c> we're</c><00:06:29.759><c> going</c><00:06:29.880><c> to</c><00:06:30.120><c> return</c><00:06:30.360><c> self.</c>
+
+00:06:30.990 --> 00:06:31.000 align:start position:0%
+so down here we're going to return self.
+ 
+
+00:06:31.000 --> 00:06:33.029 align:start position:0%
+so down here we're going to return self.
+result<00:06:31.520><c> but</c><00:06:31.639><c> don't</c><00:06:31.840><c> forget</c><00:06:32.280><c> don't</c><00:06:32.479><c> be</c><00:06:32.680><c> like</c><00:06:32.840><c> me</c>
+
+00:06:33.029 --> 00:06:33.039 align:start position:0%
+result but don't forget don't be like me
+ 
+
+00:06:33.039 --> 00:06:34.430 align:start position:0%
+result but don't forget don't be like me
+and<00:06:33.199><c> forget</c><00:06:33.479><c> to</c><00:06:33.680><c> actually</c><00:06:34.039><c> call</c><00:06:34.280><c> the</c>
+
+00:06:34.430 --> 00:06:34.440 align:start position:0%
+and forget to actually call the
+ 
+
+00:06:34.440 --> 00:06:36.710 align:start position:0%
+and forget to actually call the
+recursive<00:06:35.000><c> function</c><00:06:35.599><c> starting</c><00:06:36.199><c> from</c><00:06:36.560><c> the</c>
+
+00:06:36.710 --> 00:06:36.720 align:start position:0%
+recursive function starting from the
+ 
+
+00:06:36.720 --> 00:06:39.070 align:start position:0%
+recursive function starting from the
+root<00:06:37.280><c> this</c><00:06:37.400><c> is</c><00:06:37.599><c> the</c><00:06:37.759><c> entire</c><00:06:38.120><c> solution</c><00:06:38.840><c> you</c><00:06:38.960><c> can</c>
+
+00:06:39.070 --> 00:06:39.080 align:start position:0%
+root this is the entire solution you can
+ 
+
+00:06:39.080 --> 00:06:40.629 align:start position:0%
+root this is the entire solution you can
+see<00:06:39.319><c> that</c><00:06:39.440><c> it</c><00:06:39.599><c> works</c><00:06:39.960><c> and</c><00:06:40.080><c> it's</c><00:06:40.319><c> very</c>
+
+00:06:40.629 --> 00:06:40.639 align:start position:0%
+see that it works and it's very
+ 
+
+00:06:40.639 --> 00:06:42.309 align:start position:0%
+see that it works and it's very
+efficient<00:06:41.360><c> I</c><00:06:41.440><c> just</c><00:06:41.560><c> want</c><00:06:41.680><c> to</c><00:06:41.800><c> show</c><00:06:42.000><c> you</c><00:06:42.199><c> a</c>
+
+00:06:42.309 --> 00:06:42.319 align:start position:0%
+efficient I just want to show you a
+ 
+
+00:06:42.319 --> 00:06:43.710 align:start position:0%
+efficient I just want to show you a
+couple<00:06:42.680><c> different</c><00:06:43.000><c> ways</c><00:06:43.400><c> that</c><00:06:43.479><c> you</c><00:06:43.599><c> could</c>
+
+00:06:43.710 --> 00:06:43.720 align:start position:0%
+couple different ways that you could
+ 
+
+00:06:43.720 --> 00:06:45.430 align:start position:0%
+couple different ways that you could
+have<00:06:43.880><c> handled</c><00:06:44.280><c> This</c><00:06:44.440><c> Global</c><00:06:44.919><c> case</c><00:06:45.199><c> though</c><00:06:45.360><c> at</c>
+
+00:06:45.430 --> 00:06:45.440 align:start position:0%
+have handled This Global case though at
+ 
+
+00:06:45.440 --> 00:06:47.749 align:start position:0%
+have handled This Global case though at
+least<00:06:45.680><c> in</c><00:06:45.960><c> Python</c><00:06:46.680><c> another</c><00:06:47.039><c> way</c><00:06:47.240><c> is</c><00:06:47.440><c> just</c>
+
+00:06:47.749 --> 00:06:47.759 align:start position:0%
+least in Python another way is just
+ 
+
+00:06:47.759 --> 00:06:50.150 align:start position:0%
+least in Python another way is just
+making<00:06:48.000><c> it</c><00:06:48.120><c> a</c><00:06:48.319><c> local</c><00:06:48.680><c> variable</c><00:06:49.360><c> result</c><00:06:50.000><c> and</c>
+
+00:06:50.150 --> 00:06:50.160 align:start position:0%
+making it a local variable result and
+ 
+
+00:06:50.160 --> 00:06:52.909 align:start position:0%
+making it a local variable result and
+then<00:06:50.520><c> in</c><00:06:50.840><c> here</c><00:06:51.280><c> to</c><00:06:51.599><c> update</c><00:06:52.039><c> it</c><00:06:52.319><c> let's</c><00:06:52.599><c> get</c><00:06:52.759><c> rid</c>
+
+00:06:52.909 --> 00:06:52.919 align:start position:0%
+then in here to update it let's get rid
+ 
+
+00:06:52.919 --> 00:06:55.270 align:start position:0%
+then in here to update it let's get rid
+of<00:06:53.080><c> all</c><00:06:53.199><c> the</c><00:06:53.360><c> self</c><00:06:53.800><c> Dots</c><00:06:54.280><c> here</c><00:06:54.680><c> let's</c><00:06:54.960><c> get</c><00:06:55.120><c> rid</c>
+
+00:06:55.270 --> 00:06:55.280 align:start position:0%
+of all the self Dots here let's get rid
+ 
+
+00:06:55.280 --> 00:06:57.070 align:start position:0%
+of all the self Dots here let's get rid
+of<00:06:55.440><c> that</c><00:06:55.639><c> and</c><00:06:55.759><c> let's</c><00:06:55.960><c> get</c><00:06:56.240><c> rid</c><00:06:56.360><c> of</c><00:06:56.560><c> that</c><00:06:56.800><c> to</c>
+
+00:06:57.070 --> 00:06:57.080 align:start position:0%
+of that and let's get rid of that to
+ 
+
+00:06:57.080 --> 00:06:58.749 align:start position:0%
+of that and let's get rid of that to
+update<00:06:57.599><c> result</c><00:06:58.160><c> you</c><00:06:58.319><c> have</c><00:06:58.400><c> to</c><00:06:58.520><c> kind</c><00:06:58.639><c> of</c>
+
+00:06:58.749 --> 00:06:58.759 align:start position:0%
+update result you have to kind of
+ 
+
+00:06:58.759 --> 00:07:01.589 align:start position:0%
+update result you have to kind of
+declare<00:06:59.120><c> it</c><00:06:59.759><c> nonlocal</c><00:07:00.759><c> first</c><00:07:01.199><c> you</c><00:07:01.280><c> want</c><00:07:01.440><c> to</c>
+
+00:07:01.589 --> 00:07:01.599 align:start position:0%
+declare it nonlocal first you want to
+ 
+
+00:07:01.599 --> 00:07:04.510 align:start position:0%
+declare it nonlocal first you want to
+say<00:07:01.800><c> that</c><00:07:02.000><c> this</c><00:07:02.120><c> is</c><00:07:02.319><c> not</c><00:07:02.599><c> a</c><00:07:02.840><c> local</c><00:07:03.720><c> variable</c><00:07:04.240><c> to</c>
+
+00:07:04.510 --> 00:07:04.520 align:start position:0%
+say that this is not a local variable to
+ 
+
+00:07:04.520 --> 00:07:06.430 align:start position:0%
+say that this is not a local variable to
+this<00:07:04.759><c> function</c><00:07:05.319><c> it's</c><00:07:05.560><c> actually</c><00:07:05.919><c> the</c><00:07:06.120><c> same</c>
+
+00:07:06.430 --> 00:07:06.440 align:start position:0%
+this function it's actually the same
+ 
+
+00:07:06.440 --> 00:07:08.430 align:start position:0%
+this function it's actually the same
+result<00:07:06.800><c> that</c><00:07:06.919><c> was</c><00:07:07.080><c> declared</c><00:07:07.639><c> out</c><00:07:07.960><c> there</c><00:07:08.280><c> so</c>
+
+00:07:08.430 --> 00:07:08.440 align:start position:0%
+result that was declared out there so
+ 
+
+00:07:08.440 --> 00:07:10.230 align:start position:0%
+result that was declared out there so
+this<00:07:08.560><c> will</c><00:07:08.720><c> do</c><00:07:08.919><c> the</c><00:07:09.080><c> same</c><00:07:09.400><c> thing</c><00:07:09.759><c> so</c><00:07:09.960><c> if</c><00:07:10.039><c> we</c>
+
+00:07:10.230 --> 00:07:10.240 align:start position:0%
+this will do the same thing so if we
+ 
+
+00:07:10.240 --> 00:07:12.070 align:start position:0%
+this will do the same thing so if we
+execute<00:07:10.720><c> this</c><00:07:11.120><c> you'll</c><00:07:11.319><c> see</c><00:07:11.520><c> that</c><00:07:11.680><c> once</c><00:07:11.919><c> again</c>
+
+00:07:12.070 --> 00:07:12.080 align:start position:0%
+execute this you'll see that once again
+ 
+
+00:07:12.080 --> 00:07:14.070 align:start position:0%
+execute this you'll see that once again
+it<00:07:12.240><c> works</c><00:07:12.840><c> it</c><00:07:12.960><c> says</c><00:07:13.160><c> it's</c><00:07:13.360><c> more</c><00:07:13.560><c> efficient</c><00:07:13.960><c> but</c>
+
+00:07:14.070 --> 00:07:14.080 align:start position:0%
+it works it says it's more efficient but
+ 
+
+00:07:14.080 --> 00:07:15.830 align:start position:0%
+it works it says it's more efficient but
+leak<00:07:14.360><c> code</c><00:07:14.560><c> run</c><00:07:14.759><c> times</c><00:07:14.960><c> are</c><00:07:15.160><c> random</c><00:07:15.479><c> so</c><00:07:15.680><c> don't</c>
+
+00:07:15.830 --> 00:07:15.840 align:start position:0%
+leak code run times are random so don't
+ 
+
+00:07:15.840 --> 00:07:17.309 align:start position:0%
+leak code run times are random so don't
+really<00:07:16.039><c> pay</c><00:07:16.199><c> attention</c><00:07:16.520><c> to</c><00:07:16.759><c> that</c><00:07:17.120><c> if</c><00:07:17.199><c> you</c>
+
+00:07:17.309 --> 00:07:17.319 align:start position:0%
+really pay attention to that if you
+ 
+
+00:07:17.319 --> 00:07:18.749 align:start position:0%
+really pay attention to that if you
+found<00:07:17.520><c> this</c><00:07:17.680><c> helpful</c><00:07:18.199><c> please</c><00:07:18.440><c> like</c><00:07:18.599><c> And</c>
+
+00:07:18.749 --> 00:07:18.759 align:start position:0%
+found this helpful please like And
+ 
+
+00:07:18.759 --> 00:07:20.469 align:start position:0%
+found this helpful please like And
+subscribe<00:07:19.400><c> if</c><00:07:19.479><c> you</c><00:07:19.599><c> want</c><00:07:19.680><c> to</c><00:07:19.800><c> learn</c><00:07:20.160><c> a</c><00:07:20.280><c> bunch</c>
+
+00:07:20.469 --> 00:07:20.479 align:start position:0%
+subscribe if you want to learn a bunch
+ 
+
+00:07:20.479 --> 00:07:22.390 align:start position:0%
+subscribe if you want to learn a bunch
+of<00:07:20.599><c> more</c><00:07:20.919><c> python</c><00:07:21.319><c> tricks</c><00:07:21.800><c> check</c><00:07:22.000><c> out</c><00:07:22.199><c> my</c>
+
+00:07:22.390 --> 00:07:22.400 align:start position:0%
+of more python tricks check out my
+ 
+
+00:07:22.400 --> 00:07:24.070 align:start position:0%
+of more python tricks check out my
+python<00:07:22.680><c> for</c><00:07:22.879><c> coding</c><00:07:23.120><c> interviews</c><00:07:23.560><c> course</c><00:07:24.000><c> and</c>
+
+00:07:24.070 --> 00:07:24.080 align:start position:0%
+python for coding interviews course and
+ 
+
+00:07:24.080 --> 00:07:27.160 align:start position:0%
+python for coding interviews course and
+I<00:07:24.199><c> hope</c><00:07:24.319><c> you</c><00:07:24.400><c> have</c><00:07:24.520><c> a</c><00:07:24.639><c> good</c><00:07:24.800><c> day</c>
+

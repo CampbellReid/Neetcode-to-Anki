@@ -1,0 +1,366 @@
+everyone welcome back and let's write
+some more neat code today so today let's
+solve the problem non-overlapping
+intervals and this is actually a problem
+from the blind 75 list of questions that
+we've been working on and we've actually
+been tracking that list of questions on
+this spreadsheet you can see that i do
+have a video solution on the left side
+over here for pretty much every single
+problem in this list except for a couple
+that we haven't gotten to yet so today
+we will be doing the last interval
+problem in this list you can see i
+solved the other interval related
+problems already there's about like 70
+people viewing it right now so i hope
+that you guys are finding it helpful and
+you can see conveniently i made a
+youtube playlist for all the blind 75
+solutions link to that will be in the
+description as well if you do want to
+take a look so now let's continue with
+the video so this problem is definitely
+like most interval problems in that if
+you've solved other interval problems
+before this one shouldn't be too
+difficult but if you're new to interval
+problems this one is kind of challenging
+so we're given an array of intervals
+where each interval has a start value
+and an end value and we want to return
+the minimum number of intervals that we
+have to remove from the list to make
+sure that the rest of the intervals are
+non-overlapping so first question you
+should ask is what exactly is a
+overlapping interval well assuming an
+interval looks something like this right
+it has some start value maybe the start
+value is 1 and the end value is two
+right maybe we have another interval
+that starts at three and goes all the
+way to four so definitely these two
+intervals are not overlapping but what
+if we had uh the interval starting over
+here maybe the end point is 3 but the
+starting point is maybe 1.5 right
+obviously in this case these two
+intervals are overlapping right you can
+see you know right over here this is the
+region that they're overlapping at but
+the edge case comes when we have a
+interval let's say like this one that's
+going maybe starting from two and going
+all the way to three are these intervals
+overlapping technically you know this
+point at position two is overlapping but
+technically these intervals are not
+considered overlapping right so if they
+have the same edge point they do not
+count as overlapping this edge case is
+very important to understand to solve
+this problem okay so let's take a look
+at the first example actually so you can
+see i've drawn a few of the intervals
+and you can see so far these three are
+not overlapping right but we're about to
+insert the last and fourth interval one
+three so it starts at one and goes all
+the way until three so now you can see
+that they are overlapping with the
+introduction of this interval and things
+become really simple when you draw a
+picture which is why i always recommend
+drawing a picture for complicated
+problems so now we want to eliminate
+intervals we want to eliminate the
+minimum number it's obvious that we can
+just remove a single interval this one
+that we just inserted to make the rest
+non-overlapping but of course that's not
+the only way we could do it we could
+instead remove this interval and remove
+this interval so instead we'd remove two
+intervals that's clearly not the
+solution but there are multiple ways to
+do it which is why writing the algorithm
+for this problem can be kind of tricky
+one definitely possible way to do this
+problem is brute force it right go
+through every single combination right
+for every single interval we can choose
+to remove this interval or to keep this
+interval and if we have two choices for
+every single interval inside the list of
+intervals then you know the time
+complexity to check every single
+possibility is going to be 2 times 2
+times 2 basically 2 to the power of n
+where n is the size of the input so
+that's obviously not very efficient but
+can we do better and we definitely can
+and it takes a greedy approach to solve
+this problem when we're actually given
+this list of intervals the ordering of
+them could be pretty random right but
+you can see when we actually draw the
+picture you know why would we want to go
+through these intervals in a random
+order why would we want to look at this
+one then look at this one then this one
+yeah right like in just a completely
+random order when you look at it this
+way it kind of makes sense to want to go
+left to right right to see okay here are
+they overlapping here are they
+overlapping etc etc and the easiest way
+to do that is to to iterate through them
+in some kind of sorted order you can
+probably do it sorted by the starting
+point or sorted by the ending point i'm
+just going to stick with sorted by the
+starting point just because it's a
+little bit simpler for me but i know
+that it works in both ways for this
+problem at least so when we iterate
+through these in sorted order first
+we're going to compare these two
+intervals right we want to compare
+adjacent pairs of intervals right and
+let's actually ignore this example for
+just a second suppose we had just two
+intervals right one interval like this
+and one interval like this okay they're
+in sorted order right and we're
+comparing adjacent pairs so we're going
+to look at this one and look at this one
+how do we know if they are overlapping
+well if they're sorted by the starting
+point we know that either they both have
+the exact same starting point or the
+second one has a starting point that's
+after the first one's starting point and
+that's the case here
+but again how do we know if they're
+overlapping or not well the easiest way
+to check is they're not overlapping if
+this one starts after this one ends
+right if the second one starts after the
+first one ends then they're definitely
+not overlapping but on the other hand if
+the second one starts before the first
+one ends then they're definitely
+overlapping right you can see that this
+is the point that they're overlapping at
+okay so does that cover all of the cases
+well there's one more case technically
+that's slightly different what if you
+know the first one is really long and
+the second one starts here right so it
+does come after this one but it ends
+before the first one ends this is a
+slightly different edge case again they
+are overlapping we can detect that with
+the same condition this one starts
+before this one ends so yes they're
+overlapping but now suppose we had a
+third interval that comes next remember
+we are traversing these in sorted order
+so first we're gonna compare this one is
+first this one is second so then we're
+gonna compare these two together next
+are we gonna be looking at this one and
+this one
+in this case yes because remember if
+these two are overlapping we don't have
+to remove both of them we only have to
+remove one of them so the choice is are
+we going to remove this one or are we
+going to remove this one well which one
+do you think we would rather remove
+would we want to remove the one that
+ends first or the one that ends second
+of course we'd want to remove the one
+that ends first because then it's
+there's less of a chance that it's going
+to overlap with the following intervals
+that come after and remember we want to
+minimize the number of intervals that we
+have to delete in this example with
+these three intervals it doesn't matter
+we could remove this one or remove this
+one but let's look at another example
+what if the third interval was like this
+right it's overlapping with this one
+then it becomes pretty obvious we would
+want to remove this bottom interval
+rather than this top interval and it
+depends on which one of these ends first
+so that's how we're going to decide
+which one to remove and just to look at
+a third example so what if they were
+inter overlapping like this right of
+course we're going to first compare
+these two intervals okay yes they're
+overlapping and we can detect that
+because this one starts before this one
+ends so now we have a choice do we
+remove this one or do we remove this one
+again we're moving the one that ends
+first so we're going to remove this one
+and you can see
+exactly why because now these two do not
+overlap but what if instead we decided
+to remove this one well we removed it
+but it didn't help us because these two
+are still overlapping we want to
+minimize that so
+basically i just explained to you the
+exact algorithm that we're going to be
+using we're going to sort the entire
+array based on the starting value then
+we're going to compare adjacent pairs
+and then use the conditions that i just
+mentioned now what's the time complexity
+of this well we're going to sort and
+then we're just going to iterate through
+the array a single pass right so the
+iterating is simple it's just big o of n
+we're just going to iterate through the
+entire array but the sorting is where
+the bottleneck is so that's what the
+overall time complexity is going to be
+big o log
+n log n and just to run the algorithm
+that i explained on this input example
+because they have the first two starting
+values so we're going to have this array
+in sorted order based on the start
+values we're actually going to take the
+first interval and just take its end
+value and then keep track of it because
+since this is the first interval there's
+nothing going to be that comes before it
+on the left okay so now we're going to
+iterate through the intervals that come
+after this one so the first interval is
+this one it has the next start value so
+we're going to check is the start value
+less than
+this ones yes they are so they're
+overlapping so which one are we going to
+delete the one with the larger end value
+so we're going to delete this one we can
+leave this interval as is and save its
+end value so that we can compare it with
+the following intervals so this is the
+interval that comes next is its start
+value less than the end value of the
+previous one no it's not so we don't
+delete either of these intervals but
+since we didn't delete either of these
+intervals and since we know this one
+started after this one ended we know
+that this one is going to have a larger
+end value so we're not going to be using
+this one to compare anymore we're going
+to be using this end value to compare to
+the following intervals on the right
+side okay so now let's look at this
+interval and the next interval that's
+coming up is this one so is this one
+starting before this one ends nope it
+does not so we don't delete either of
+these and
+uh we just set this to the new end value
+that we're going to keep track of but
+there's nothing that comes after it so
+we're done here we only had to remove
+one interval as you can see so the
+answer in this case is one which is what
+they also had in the output so that's
+the entire algorithm now we can actually
+code it up it's not too bad
+okay so now let's get into everybody's
+favorite part writing out the code so
+remember the first thing we want to do
+is sort the list of intervals so in
+python i can just say sort and it'll
+actually sort it based on
+the entire pair it'll first sort it
+based on the start value and then sort
+it based on the end value if there's a
+tie between the start but you know in
+java and stuff you can specify the key
+is just the start or you can use just
+the end if you want to and then
+you can slightly change your algorithm
+if you're sorting by the end value but
+the result that we're going to keep
+track of is just the entire count that
+we have to remove so initially it's
+going to be set to zero and remember
+we're going to initially keep track of
+the first end value in our sorted
+intervals so we can get that just like
+this intervals the first interval and we
+want its end value which is at index one
+then we're going to iterate through the
+remaining list of intervals so we can
+iterate through the start and end value
+of the remaining intervals like this and
+we want to start at index one so we can
+specify like that in python and now we
+get to our if-else case because we want
+to know are they overlapping or not so
+they're not overlapping if the start
+value of the interval that we're looking
+at is greater than or equal to the
+previous end value and remember the
+equal is very important that's the edge
+case we talked about at the beginning if
+they're equal they're technically not
+overlapping and if they are not
+overlapping the only thing we need to do
+is update our previous end set it to the
+new end value
+because we know that the new end value
+is going to be greater than the previous
+one and the else case is if they are
+actually overlapping and if they are
+overlapping then we need to remove one
+of the intervals so definitely we are
+going to increment our result count by
+one because we have to remove one of
+these now the question is which one are
+we going to remove and how are we
+actually even going to handle that well
+the only thing we actually need to
+update is our previous end because
+remember we don't actually have to
+delete the interval in the array we just
+have to count how many we delete but we
+have we do have to update the previous
+end uh remember which one of these end
+values are we actually going to keep
+which one of the intervals are we going
+to keep we're going to keep the one that
+has the minimum end value so we're going
+to set previous end equal to the minimum
+of end and itself previous end so that
+once we've updated this we can use this
+new end value uh in the future
+iterations of the loop but that's
+actually the entire algorithm once we've
+done that we just have to return the the
+count of how many we deleted and then
+run the code and make sure that it works
+and as you can see yes it does work and
+it is pretty efficient so i really hope
+that this was helpful if it was please
+like and subscribe it really supports
+the channel a lot consider checking out
+my patreon where you can further support
+the channel and hopefully i'll see you

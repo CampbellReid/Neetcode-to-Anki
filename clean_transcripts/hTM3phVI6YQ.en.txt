@@ -1,0 +1,566 @@
+everyone welcome back and let's write
+some more neat code today so today let's
+solve maximum depth of a binary tree
+and the main reason i'm solving this
+today is just for the sake of completion
+we have solved harder tree problems
+before
+but this one is on the blind 75 list so
+i do want to solve this problem
+today and this problem actually has
+multiple ways to solve it so i do think
+it's a good problem to understand of
+like the fundamentals on uh tree
+traversals we can do it three different
+ways and i'm actually going to show
+the three different ways there might
+even be more than three but i'm going to
+show you the three main ways
+basically recursive depth first search
+iterative depth
+first search basically depth first
+search without using recursion
+and of course another way is going to be
+breadth first search
+so i'm going to be showing all three
+today so the problem is pretty simple
+we're given a root binary tree and we
+want to return its maximum depth and the
+maximum depth is defined as being
+the longest path from the root
+to one of the no to one of the leaf
+nodes and basically along that path
+we're counting the number of nodes so in
+this case you can see we have two paths
+that are of the same length so from the
+root down to here
+we have three nodes from the root down
+to here we have three nodes as well so
+those are the two leaf nodes we have
+here
+we also have a leaf node on the left
+side but clearly we see
+that there's only two nodes in this path
+so out of all those paths what's the max
+length of course it's three so you can
+see that that's what our output is going
+to be in this problem
+so the simplest way to solve this
+problem is recursive depth first search
+now
+what's the base case we're using
+recursion so first let's think of the
+base case obviously if we had just an
+empty tree right like what's what if
+this was our tree what are we gonna
+return of course
+zero right the max depth of an empty
+tree is just zero
+what about if we just had one node and
+no
+children right okay we'd do this
+recursively so we'd get to the first
+node right we'd say okay we at least
+have
+one node then we'd say okay let's just
+find the max of the left subtree and the
+max of the
+the right subtree both of those are
+gonna return zero right so
+once we get back to the root what are we
+gonna say we're gonna say okay the left
+and right subtree were zero
+so the maximum of the left and right
+subtree is also zero so what we're going
+to return from the perspective of this
+root node is just going to be 1
+plus the max 1 plus the max
+of the left and right results basically
+the max of
+the left and right subtrees in which
+case it was both
+zero so of course in this problem we're
+going to return one as the max step now
+let's look at this more general example
+that they gave us so obviously we're
+going to do the same thing we're going
+to get to the root say okay we found
+at least one node
+so the depth is at least one and then
+we're going to return the max
+of we're going to return the max of
+the left and right subtrees plus one and
+why are we doing it this way well you
+can
+see that we found this node but now we
+have sub problems right we need to know
+what's the max path what's the max
+depth and we'll have to search the left
+subtree and we'll have to search the
+right subtree so we're not even
+considering this node anymore we're
+doing recursion we're looking at the sub
+problem what's the max depth of this
+left subtree well of course it's just a
+node a single node with no children so
+of course the max depth is going to be
+1.
+similarly let's do the right subtree and
+so again this is going to be our
+recursive case right we have one node
+and from then this node's perspective
+we're going to run recursion again we're
+going to look at the left subtree and
+the right subtree both of which are
+going to return one
+so then of course from this node's
+perspective we're going to return to
+the max depth of this subtree is 2 the
+max depth of the left sub tree
+is 1. so now when we get back up here
+we're saying okay from the perspective
+of this node we're going to return 1
+plus the max of left and right the max
+is clearly 2.
+so from this node's perspective we're
+going to return 3 the max depth is 3. so
+let's code this up recursively
+it's literally just going to be this
+line that i just wrote and the base case
+and since we are traversing the entire
+tree the time complexity is going to be
+big o
+of n the memory complexity is just going
+to be the height of the tree which also
+could be worst case big of n if it's a
+not
+if it's not a balanced binary tree so
+with recursion we always want to take
+care of the base case first so if the
+root
+is null then of course we're just going
+to return 0 that's the max depth
+otherwise we're going to return 1
+plus the max of what our dfs of left
+returns or in this case it's not dfs
+it's actually called max
+depth and since we're inside of the
+function in python you have to
+you know say self.max depth and then run
+that
+on the left subtree and also run it on
+the
+right subtree now to make this line
+shorter i could actually store the
+result of both of these function calls
+in variables but i think this one liner
+is pretty much good enough so we're just
+taking
+the result of both of these function
+calls figuring out what's the max of it
+so what's the max subtree's depth
+of both of the sub trees and then just
+adding one to it because we know that
+the current node the current root node
+that we're traversing
+is definitely not null so this
+calculation will work out let's submit
+it
+and of course i'm showing that i can't
+even solve easy problems so it's not
+called
+node it's actually called root hopefully
+you were able to catch that
+but yeah so this is the entire problem
+but what if your
+interviewer or what if you just want to
+do this for learning purposes
+you want to solve this problem without
+recursion well there's two ways to do it
+iterative depth first search or
+iterative breadth first search and i'm
+going to show you both of those right
+now
+now there's not a lot of benefits to
+using breadth first search on this
+problem
+compared to just doing dfs recursively
+mainly that you just don't have to do
+recursion at all
+the time complexity is still going to be
+the same the memory complexity is still
+going to be the same
+but let's still do this for learning
+purposes so breadth first search on a
+tree is basically
+level order traversal we're traversing
+each level
+by level until we get to the end or the
+last
+level and then we can't continue anymore
+so you can kind of see how breath for
+search is a pretty intuitive way to find
+the max
+depth right we're basically counting the
+number of levels we have
+so here we see okay we have one level
+next we see
+we have two levels oh this is the third
+level and we can't go any lower so
+what's the number of levels that we had
+we had three
+that's the number of levels is basically
+going to be the same as the max
+depth so now the only problem is how are
+we actually going to code this
+up now typically bfs involves a queue or
+a
+deck a dq or however you call it and so
+the way it's going to work is the queue
+is initially just going to have the root
+value
+so i'm going to kind of represent this
+array as the queue so initially we're
+just going to put the root
+in the queue right so now we're going to
+say okay what's the length of our queue
+this is these are the elements currently
+in our queue and this these are all at
+level one
+so now we're going to go through every
+node in our queue we only have one and
+we're going to take three
+now we're going to remove it from our
+queue and we're going to replace it with
+its children
+9 and 20. so let's add 9 and
+20 to the queue so now
+this is our second level right these
+elements that we have here are our
+second
+level of the queue the second level of
+the tree so we're going to do the exact
+same thing
+with these two nodes we're going to take
+the first one 9
+get rid of it we see 9 is here now we're
+going to replace it with its children it
+doesn't have any children so we don't
+have to replace it with anything right
+but we're going to keep going
+now we're going to go to the second one
+20 remove that from
+our q and replace it with its children
+what are its children we have 15
+and 17 so let's add 15 i ran out of
+space but that's okay
+and 17 to our q now this
+portion is the next level it's level
+three
+so let's continue to go so 15 is the
+first one let's pop it let's get rid of
+it replace it with its children it
+doesn't have any children
+so it's a base case next one seven okay
+i wrote 17 but it's actually seven sorry
+about that i'm not paying attention
+but okay we're gonna get rid of this
+seven and we're gonna see okay seven did
+not have any children either
+so now when we when we continue to go
+we're gonna see okay there's nothing
+left in our queue so we have to stop
+right
+that's how we know we're done traversing
+the entire tree when we went through
+every single node
+what's the max level that we actually
+got to of course it was three so that's
+what we're going to end up returning the
+max
+depth of this this tree was three okay
+so now let's get rid of this and
+actually do
+that solution so another base case or
+the same basis i'm just going to say
+if not root we can still return zero so
+if there's no root then we're gonna
+return zero
+and we're also going to maintain the
+current level that we're at and we're
+gonna have a queue which in this case
+is going to be a deck and initially
+we're going to initialize this queue
+with just a single value the
+root i think most libraries do have a
+queue structure so
+we're going to initialize our queue like
+that we're going to have our level
+initially at one we're gonna keep going
+until the queue is empty right now so
+now we want to go through the queue and
+remove
+every element that's currently in it
+right so however many are in it so we're
+gonna say for i
+in range length of the queue at this
+current time right so we're going to
+take a snapshot of the length of the
+queue maybe it has one element maybe it
+has two
+we're going to take a snapshot remove
+all of those and then add the children
+so basically traverse the entire level
+and then add the next level
+and then once we're done with that
+entire loop we're going to increase the
+number of levels
+so for every node in the queue we're
+going to go ahead and pop from the left
+just like we did in the picture we're
+always going to be popping from the left
+of the queue and we're always going to
+be adding to the right of the queue so
+we're going to pop a node
+and then we're going to go ahead and add
+its children to
+the queue only if the children are not
+null so if node.left is non-null
+then we're going to go ahead and say q
+dot append node
+dot left if node.right is non-null then
+we're going to append that one
+as well so q dot append no dot
+right and actually if we're going to be
+doing it this way we should probably
+initialize our level to
+zero so you can see that we're never
+going to be adding
+null nodes to our our queue so every
+time
+our queue is non-empty we can be sure
+that there's at least
+a non-empty node in the queue right so
+we're basically counting the number of
+times our q is not
+is going to be non-empty so each time it
+is we can basically increment the number
+of levels
+and then at the end once our q is
+finally empty we know that we have
+totaled up the number of levels and we
+can go ahead and return that
+so you can see this solution also works
+and it's also pretty efficient so this
+is the breadth first search solution
+but there's one more solution i want to
+show you the iterative
+depth first search solution basically
+depth first search without using
+recursion
+so now we're going to do iterative depth
+first search and we're going to be
+needing a stack data structure because
+we're basically going to be
+emulating the call stack the recursive
+call stack right so
+you know in a recursive dfs we go to
+this node right and then we go to the
+left sub tree right and when we're done
+with the left sub tree
+then we pop back up to the three
+and then we go down to you know the
+right subtree etc
+right that's like in in order dfs but
+we're going to be implementing
+pre-order dfs with a stack because
+pre-order is actually by far the
+easiest one to do iteratively so what
+we're going to do is we're going to say
+okay
+come to this node process this node
+right then
+add the children to the stack the left
+and right children right
+now in now our normal pre-order
+traversal we'll do the left subtree
+first so what we're going to do is now
+say okay
+let's do the left subtree well well
+we're going to go to the left subtree
+it's pre-order so we're going to process
+this then we're going to do its children
+well it doesn't have any children right
+so now what are we going to do well this
+one was added to the stack
+so then we can go ahead and process this
+one and add its children to the stack
+and then we're going to process this one
+it doesn't have any children and then
+this one's going to be at the top of the
+stack because we just popped this one
+and then we can process this one and
+then we're done right so we're going to
+do that
+and as we do it iteratively we're not
+just going to be adding the nodes
+themselves to the stack but we're also
+for each node going to be adding to
+the depth of each node because we can
+easily do that right we know this is
+going to be depth one
+when we add the left and right children
+we're gonna say okay these are at depth
+two
+when we add these two we're gonna say
+these are at depth three
+so we're just gonna try to visit every
+single node find the node that had the
+greatest depth and then we can return
+that
+so initially we're gonna start with node
+three at depth
+1 in our stack so now we're going to pop
+from our stack so let's
+pop this node and we process it so so
+far the max depth we found was
+1 and let's add its children to the
+stack so let's add 20 to the stack
+and let's add 9 to the stack and each of
+these are going to have a depth of
+2. so now this is technically the top of
+the stack even though it's the bottom so
+let's pop from the top of the stack
+pop this one that's node 9 so now we've
+found a max depth of two that's better
+than one
+and now let's also add the children of
+this of course it doesn't have any
+children so we're done with
+these so now what's at the top of our
+stack that's
+that's well we popped this one we popped
+this this is at the top of the stack now
+so let's pop this one
+we pop 20. it also has a max depth of
+two so we don't update the result but
+now we can add its children
+to the stack and the depth of course is
+going to be plus one so both of these
+are gonna have a depth of 20
+of three we're going to add 7 and 15 to
+the stack so now let's pop the top of
+the stack 15
+pop this it has a max depth of 3 so
+we've updated the result pop one more
+time this
+also had a max depth of three so we're
+done with that we process this node
+and neither of these had any children so
+now we're done with the dfs
+so that's basically how it's going to
+work it's pretty straightforward at
+least if you're doing it with pre-order
+dfs
+with a stack okay so finally for the
+last solution so this was bfs but now
+we're going to be doing iterative dfs
+we're going to leave this
+initial case if the root is null we're
+going to return 0
+and our stack otherwise is just going to
+have one single
+value on it the root but remember we're
+also maintaining the depth so we're
+gonna add a pair of values we're gonna
+add the root which is the node
+and we're gonna add it has a depth of
+one and now we're gonna continue to go
+while our stack is non-empty so this is
+pretty similar to bfs
+but we don't actually need nested loops
+so
+now we're going to pop from the stack
+stack dot pop we're popping two values
+remember we're getting the node and
+we're getting its
+depth and so what we're going to say now
+is we're going to say if the node is
+non-null
+you'll see why i'm going to do this in a
+moment because it's possible the node
+could be null so if it's non-null
+what we're going to do is we want to
+update our result now initially we're
+going to set our result
+equal to 1 because we know we do have at
+least
+a 1. and so if we pop this node and it's
+non-null then we can potentially update
+our result so we'll set the result equal
+to the max of itself
+and the depth of the node that we just
+popped
+and then what we're going to do is to
+our stack we're going to add the
+children
+of of this node and we're gonna add both
+of them together so node.left
+node.right but we're not even checking
+it could be possible that these children
+are null so we technically might add
+null nodes to our stack which is
+different than the drawing i showed but
+we're showing that if we do add a null
+node we're going to pop from we're going
+to pop it from the stack but we're not
+actually going to do anything with it
+right this
+if statement will prevent us from
+actually using that
+null node so we're just going to ignore
+the null nodes
+and actually we're we're adding both of
+these nodes but we also want to add the
+depth of each of them so that's what i'm
+going to
+modify right now so we're going to
+append the left node
+and we're going to append it with its
+depth which is just going to be the
+depth of the node that we just popped
+plus one and we're going to do the exact
+same thing for node
+dot write so
+copy paste and update this so we're
+adding both of the nodes even if they're
+null we're adding them
+and then we're just going to continue
+through the stack until the stack
+becomes
+empty and then once that is done we can
+go ahead and return
+the result and this is the entire code
+and i actually just realized
+that we can actually simplify the code a
+little bit we can actually get rid of
+these two first lines
+and set the result initially equal to
+zero
+so then if we do have a null root node
+the loop will execute we'll pop this
+but then the if statement won't execute
+so then the result will stay zero and
+then we'll end up returning zero but of
+course if the root is non-null
+we will end up updating the result so
+this is the third and final solution
+that i wanted to show you they all have
+basically the same time and space
+complexity
+but there's definitely variations with
+each of these solutions so i hope that
+this was helpful
+if it was please like and subscribe it
+supports the channel a lot and i'll
+hopefully see you pretty soon

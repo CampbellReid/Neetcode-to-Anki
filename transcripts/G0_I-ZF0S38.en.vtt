@@ -1,0 +1,2264 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.750 align:start position:0%
+ 
+hey<00:00:00.240><c> everyone</c><00:00:00.719><c> welcome</c><00:00:01.120><c> back</c><00:00:01.439><c> and</c><00:00:01.520><c> let's</c>
+
+00:00:01.750 --> 00:00:01.760 align:start position:0%
+hey everyone welcome back and let's
+ 
+
+00:00:01.760 --> 00:00:03.189 align:start position:0%
+hey everyone welcome back and let's
+write<00:00:01.920><c> some</c><00:00:02.080><c> more</c><00:00:02.320><c> neat</c><00:00:02.560><c> code</c><00:00:02.800><c> today</c><00:00:03.040><c> it's</c>
+
+00:00:03.189 --> 00:00:03.199 align:start position:0%
+write some more neat code today it's
+ 
+
+00:00:03.199 --> 00:00:05.030 align:start position:0%
+write some more neat code today it's
+actually<00:00:03.520><c> raining</c><00:00:03.919><c> outside</c><00:00:04.319><c> right</c><00:00:04.560><c> now</c>
+
+00:00:05.030 --> 00:00:05.040 align:start position:0%
+actually raining outside right now
+ 
+
+00:00:05.040 --> 00:00:06.710 align:start position:0%
+actually raining outside right now
+pretty<00:00:05.279><c> hard</c><00:00:05.520><c> so</c><00:00:05.759><c> hopefully</c><00:00:06.160><c> you</c><00:00:06.319><c> can't</c><00:00:06.480><c> hear</c>
+
+00:00:06.710 --> 00:00:06.720 align:start position:0%
+pretty hard so hopefully you can't hear
+ 
+
+00:00:06.720 --> 00:00:09.430 align:start position:0%
+pretty hard so hopefully you can't hear
+it<00:00:06.879><c> too</c><00:00:07.040><c> well</c><00:00:07.600><c> so</c><00:00:07.759><c> today</c><00:00:08.080><c> let's</c><00:00:08.400><c> solve</c><00:00:08.720><c> an</c><00:00:08.880><c> easy</c>
+
+00:00:09.430 --> 00:00:09.440 align:start position:0%
+it too well so today let's solve an easy
+ 
+
+00:00:09.440 --> 00:00:11.669 align:start position:0%
+it too well so today let's solve an easy
+question<00:00:09.920><c> reverse</c><00:00:10.400><c> a</c><00:00:10.480><c> linked</c><00:00:10.800><c> list</c><00:00:11.280><c> and</c><00:00:11.440><c> this</c>
+
+00:00:11.669 --> 00:00:11.679 align:start position:0%
+question reverse a linked list and this
+ 
+
+00:00:11.679 --> 00:00:13.589 align:start position:0%
+question reverse a linked list and this
+question<00:00:12.000><c> is</c><00:00:12.240><c> actually</c><00:00:12.559><c> like</c><00:00:12.719><c> a</c><00:00:12.880><c> sub</c><00:00:13.200><c> problem</c>
+
+00:00:13.589 --> 00:00:13.599 align:start position:0%
+question is actually like a sub problem
+ 
+
+00:00:13.599 --> 00:00:15.190 align:start position:0%
+question is actually like a sub problem
+that's<00:00:13.920><c> needed</c><00:00:14.320><c> in</c><00:00:14.480><c> a</c><00:00:14.559><c> lot</c><00:00:14.719><c> of</c><00:00:14.880><c> other</c>
+
+00:00:15.190 --> 00:00:15.200 align:start position:0%
+that's needed in a lot of other
+ 
+
+00:00:15.200 --> 00:00:16.870 align:start position:0%
+that's needed in a lot of other
+questions<00:00:15.679><c> like</c><00:00:15.839><c> linked</c><00:00:16.080><c> list</c><00:00:16.480><c> related</c>
+
+00:00:16.870 --> 00:00:16.880 align:start position:0%
+questions like linked list related
+ 
+
+00:00:16.880 --> 00:00:18.070 align:start position:0%
+questions like linked list related
+questions<00:00:17.199><c> so</c><00:00:17.359><c> it's</c><00:00:17.520><c> definitely</c>
+
+00:00:18.070 --> 00:00:18.080 align:start position:0%
+questions so it's definitely
+ 
+
+00:00:18.080 --> 00:00:20.790 align:start position:0%
+questions so it's definitely
+good<00:00:18.320><c> to</c><00:00:18.720><c> understand</c><00:00:20.000><c> so</c><00:00:20.240><c> just</c><00:00:20.480><c> like</c><00:00:20.640><c> the</c>
+
+00:00:20.790 --> 00:00:20.800 align:start position:0%
+good to understand so just like the
+ 
+
+00:00:20.800 --> 00:00:23.029 align:start position:0%
+good to understand so just like the
+problem<00:00:21.199><c> says</c><00:00:21.520><c> we</c><00:00:21.680><c> have</c><00:00:21.920><c> a</c><00:00:22.080><c> linked</c><00:00:22.320><c> list</c>
+
+00:00:23.029 --> 00:00:23.039 align:start position:0%
+problem says we have a linked list
+ 
+
+00:00:23.039 --> 00:00:26.310 align:start position:0%
+problem says we have a linked list
+we've<00:00:23.279><c> got</c><00:00:23.439><c> some</c><00:00:23.680><c> nodes</c><00:00:24.640><c> and</c><00:00:25.680><c> and</c><00:00:26.000><c> we</c><00:00:26.160><c> just</c>
+
+00:00:26.310 --> 00:00:26.320 align:start position:0%
+we've got some nodes and and we just
+ 
+
+00:00:26.320 --> 00:00:27.029 align:start position:0%
+we've got some nodes and and we just
+want<00:00:26.480><c> to</c><00:00:26.640><c> take</c>
+
+00:00:27.029 --> 00:00:27.039 align:start position:0%
+want to take
+ 
+
+00:00:27.039 --> 00:00:30.950 align:start position:0%
+want to take
+each<00:00:27.279><c> of</c><00:00:27.439><c> these</c><00:00:28.000><c> links</c><00:00:29.039><c> reverse</c><00:00:29.599><c> them</c>
+
+00:00:30.950 --> 00:00:30.960 align:start position:0%
+each of these links reverse them
+ 
+
+00:00:30.960 --> 00:00:34.389 align:start position:0%
+each of these links reverse them
+keep<00:00:31.199><c> doing</c><00:00:31.439><c> that</c><00:00:31.599><c> with</c><00:00:31.840><c> everything</c><00:00:33.120><c> and</c><00:00:33.440><c> then</c>
+
+00:00:34.389 --> 00:00:34.399 align:start position:0%
+keep doing that with everything and then
+ 
+
+00:00:34.399 --> 00:00:37.830 align:start position:0%
+keep doing that with everything and then
+this<00:00:34.800><c> is</c><00:00:34.960><c> going</c><00:00:35.040><c> to</c><00:00:35.200><c> be</c><00:00:35.440><c> the</c><00:00:35.680><c> new</c><00:00:36.160><c> head</c>
+
+00:00:37.830 --> 00:00:37.840 align:start position:0%
+this is going to be the new head
+ 
+
+00:00:37.840 --> 00:00:41.030 align:start position:0%
+this is going to be the new head
+and<00:00:39.040><c> then</c><00:00:39.360><c> we're</c><00:00:39.520><c> going</c><00:00:39.600><c> to</c><00:00:39.680><c> return</c><00:00:40.079><c> that</c>
+
+00:00:41.030 --> 00:00:41.040 align:start position:0%
+and then we're going to return that
+ 
+
+00:00:41.040 --> 00:00:42.790 align:start position:0%
+and then we're going to return that
+and<00:00:41.280><c> they</c><00:00:41.440><c> tell</c><00:00:41.760><c> us</c><00:00:41.920><c> that</c><00:00:42.079><c> this</c><00:00:42.239><c> can</c><00:00:42.399><c> be</c><00:00:42.559><c> done</c>
+
+00:00:42.790 --> 00:00:42.800 align:start position:0%
+and they tell us that this can be done
+ 
+
+00:00:42.800 --> 00:00:45.190 align:start position:0%
+and they tell us that this can be done
+two<00:00:43.040><c> ways</c><00:00:43.520><c> iteratively</c><00:00:44.239><c> meaning</c><00:00:44.640><c> with</c><00:00:44.879><c> just</c>
+
+00:00:45.190 --> 00:00:45.200 align:start position:0%
+two ways iteratively meaning with just
+ 
+
+00:00:45.200 --> 00:00:46.150 align:start position:0%
+two ways iteratively meaning with just
+pointers
+
+00:00:46.150 --> 00:00:46.160 align:start position:0%
+pointers
+ 
+
+00:00:46.160 --> 00:00:49.190 align:start position:0%
+pointers
+and<00:00:46.399><c> also</c><00:00:46.719><c> recursively</c><00:00:48.480><c> and</c><00:00:48.800><c> i'll</c><00:00:48.960><c> show</c><00:00:49.120><c> you</c>
+
+00:00:49.190 --> 00:00:49.200 align:start position:0%
+and also recursively and i'll show you
+ 
+
+00:00:49.200 --> 00:00:51.189 align:start position:0%
+and also recursively and i'll show you
+how<00:00:49.360><c> to</c><00:00:49.440><c> do</c><00:00:49.600><c> it</c><00:00:49.840><c> both</c><00:00:50.160><c> ways</c>
+
+00:00:51.189 --> 00:00:51.199 align:start position:0%
+how to do it both ways
+ 
+
+00:00:51.199 --> 00:00:53.350 align:start position:0%
+how to do it both ways
+so<00:00:51.440><c> we</c><00:00:51.600><c> can</c><00:00:51.760><c> do</c><00:00:51.920><c> this</c><00:00:52.160><c> with</c><00:00:52.480><c> two</c><00:00:52.800><c> pointers</c>
+
+00:00:53.350 --> 00:00:53.360 align:start position:0%
+so we can do this with two pointers
+ 
+
+00:00:53.360 --> 00:00:55.430 align:start position:0%
+so we can do this with two pointers
+because<00:00:53.760><c> we</c><00:00:53.920><c> want</c><00:00:54.079><c> to</c><00:00:54.239><c> reverse</c><00:00:54.800><c> it</c><00:00:54.960><c> so</c><00:00:55.199><c> like</c>
+
+00:00:55.430 --> 00:00:55.440 align:start position:0%
+because we want to reverse it so like
+ 
+
+00:00:55.440 --> 00:00:57.029 align:start position:0%
+because we want to reverse it so like
+from<00:00:55.600><c> the</c><00:00:55.760><c> perspective</c><00:00:56.320><c> of</c><00:00:56.480><c> this</c><00:00:56.719><c> node</c>
+
+00:00:57.029 --> 00:00:57.039 align:start position:0%
+from the perspective of this node
+ 
+
+00:00:57.039 --> 00:00:58.069 align:start position:0%
+from the perspective of this node
+instead<00:00:57.520><c> of</c>
+
+00:00:58.069 --> 00:00:58.079 align:start position:0%
+instead of
+ 
+
+00:00:58.079 --> 00:01:01.110 align:start position:0%
+instead of
+the<00:00:58.320><c> next</c><00:00:58.640><c> pointer</c><00:00:59.120><c> pointing</c><00:00:59.440><c> at</c><00:00:59.760><c> three</c><00:01:00.879><c> we</c>
+
+00:01:01.110 --> 00:01:01.120 align:start position:0%
+the next pointer pointing at three we
+ 
+
+00:01:01.120 --> 00:01:03.430 align:start position:0%
+the next pointer pointing at three we
+want<00:01:01.359><c> it</c><00:01:01.520><c> to</c><00:01:01.760><c> point</c><00:01:02.160><c> at</c><00:01:02.320><c> the</c><00:01:02.640><c> previous</c>
+
+00:01:03.430 --> 00:01:03.440 align:start position:0%
+want it to point at the previous
+ 
+
+00:01:03.440 --> 00:01:06.710 align:start position:0%
+want it to point at the previous
+node<00:01:04.080><c> one</c><00:01:05.199><c> so</c><00:01:05.439><c> if</c><00:01:05.600><c> we</c><00:01:05.760><c> want</c><00:01:05.920><c> to</c><00:01:06.000><c> do</c><00:01:06.240><c> this</c>
+
+00:01:06.710 --> 00:01:06.720 align:start position:0%
+node one so if we want to do this
+ 
+
+00:01:06.720 --> 00:01:09.910 align:start position:0%
+node one so if we want to do this
+iteratively<00:01:08.159><c> we</c><00:01:08.400><c> can</c><00:01:08.640><c> use</c><00:01:09.280><c> two</c>
+
+00:01:09.910 --> 00:01:09.920 align:start position:0%
+iteratively we can use two
+ 
+
+00:01:09.920 --> 00:01:13.109 align:start position:0%
+iteratively we can use two
+pointers<00:01:10.799><c> like</c><00:01:11.200><c> many</c><00:01:11.680><c> problems</c>
+
+00:01:13.109 --> 00:01:13.119 align:start position:0%
+pointers like many problems
+ 
+
+00:01:13.119 --> 00:01:14.630 align:start position:0%
+pointers like many problems
+now<00:01:13.439><c> what</c><00:01:13.600><c> are</c><00:01:13.760><c> the</c><00:01:13.840><c> two</c><00:01:14.080><c> pointers</c><00:01:14.400><c> going</c><00:01:14.560><c> to</c>
+
+00:01:14.630 --> 00:01:14.640 align:start position:0%
+now what are the two pointers going to
+ 
+
+00:01:14.640 --> 00:01:16.789 align:start position:0%
+now what are the two pointers going to
+be<00:01:14.880><c> we</c><00:01:15.119><c> can</c><00:01:15.439><c> have</c><00:01:16.080><c> initially</c>
+
+00:01:16.789 --> 00:01:16.799 align:start position:0%
+be we can have initially
+ 
+
+00:01:16.799 --> 00:01:19.350 align:start position:0%
+be we can have initially
+a<00:01:17.119><c> current</c><00:01:17.600><c> pointer</c><00:01:18.080><c> so</c><00:01:18.400><c> we</c><00:01:18.560><c> can</c><00:01:18.720><c> initialize</c>
+
+00:01:19.350 --> 00:01:19.360 align:start position:0%
+a current pointer so we can initialize
+ 
+
+00:01:19.360 --> 00:01:20.950 align:start position:0%
+a current pointer so we can initialize
+current<00:01:19.759><c> to</c><00:01:19.920><c> the</c><00:01:20.080><c> first</c><00:01:20.479><c> node</c>
+
+00:01:20.950 --> 00:01:20.960 align:start position:0%
+current to the first node
+ 
+
+00:01:20.960 --> 00:01:23.990 align:start position:0%
+current to the first node
+which<00:01:21.200><c> is</c><00:01:21.520><c> our</c><00:01:21.840><c> head</c><00:01:22.880><c> and</c><00:01:23.040><c> we</c><00:01:23.200><c> can</c><00:01:23.520><c> also</c>
+
+00:01:23.990 --> 00:01:24.000 align:start position:0%
+which is our head and we can also
+ 
+
+00:01:24.000 --> 00:01:24.950 align:start position:0%
+which is our head and we can also
+maintain
+
+00:01:24.950 --> 00:01:24.960 align:start position:0%
+maintain
+ 
+
+00:01:24.960 --> 00:01:28.070 align:start position:0%
+maintain
+a<00:01:25.200><c> previous</c><00:01:25.920><c> pointer</c><00:01:26.400><c> which</c><00:01:26.799><c> initially</c>
+
+00:01:28.070 --> 00:01:28.080 align:start position:0%
+a previous pointer which initially
+ 
+
+00:01:28.080 --> 00:01:32.069 align:start position:0%
+a previous pointer which initially
+is<00:01:28.240><c> going</c><00:01:28.400><c> to</c><00:01:28.479><c> be</c><00:01:28.720><c> set</c><00:01:29.439><c> to</c><00:01:29.920><c> null</c>
+
+00:01:32.069 --> 00:01:32.079 align:start position:0%
+is going to be set to null
+ 
+
+00:01:32.079 --> 00:01:34.870 align:start position:0%
+is going to be set to null
+so<00:01:32.320><c> for</c><00:01:32.479><c> the</c><00:01:32.720><c> first</c><00:01:33.119><c> node</c><00:01:33.520><c> 1</c><00:01:34.400><c> we're</c><00:01:34.560><c> going</c><00:01:34.720><c> to</c>
+
+00:01:34.870 --> 00:01:34.880 align:start position:0%
+so for the first node 1 we're going to
+ 
+
+00:01:34.880 --> 00:01:35.990 align:start position:0%
+so for the first node 1 we're going to
+take
+
+00:01:35.990 --> 00:01:36.000 align:start position:0%
+take
+ 
+
+00:01:36.000 --> 00:01:39.350 align:start position:0%
+take
+the<00:01:36.240><c> next</c><00:01:36.640><c> pointer</c><00:01:37.439><c> and</c><00:01:37.680><c> reverse</c><00:01:38.159><c> it</c><00:01:38.880><c> so</c><00:01:39.119><c> now</c>
+
+00:01:39.350 --> 00:01:39.360 align:start position:0%
+the next pointer and reverse it so now
+ 
+
+00:01:39.360 --> 00:01:39.990 align:start position:0%
+the next pointer and reverse it so now
+the<00:01:39.600><c> next</c>
+
+00:01:39.990 --> 00:01:40.000 align:start position:0%
+the next
+ 
+
+00:01:40.000 --> 00:01:42.710 align:start position:0%
+the next
+pointer<00:01:40.560><c> is</c><00:01:40.720><c> going</c><00:01:40.799><c> to</c><00:01:40.880><c> be</c><00:01:41.119><c> pointing</c><00:01:41.680><c> at</c><00:01:42.159><c> null</c>
+
+00:01:42.710 --> 00:01:42.720 align:start position:0%
+pointer is going to be pointing at null
+ 
+
+00:01:42.720 --> 00:01:45.109 align:start position:0%
+pointer is going to be pointing at null
+so<00:01:42.960><c> this</c><00:01:43.200><c> is</c><00:01:43.360><c> now</c><00:01:43.600><c> going</c><00:01:43.680><c> to</c><00:01:43.840><c> be</c><00:01:44.079><c> the</c><00:01:44.560><c> last</c>
+
+00:01:45.109 --> 00:01:45.119 align:start position:0%
+so this is now going to be the last
+ 
+
+00:01:45.119 --> 00:01:47.990 align:start position:0%
+so this is now going to be the last
+element<00:01:45.600><c> in</c><00:01:45.759><c> our</c><00:01:46.000><c> new</c><00:01:46.320><c> reversed</c><00:01:46.880><c> linked</c><00:01:47.200><c> list</c>
+
+00:01:47.990 --> 00:01:48.000 align:start position:0%
+element in our new reversed linked list
+ 
+
+00:01:48.000 --> 00:01:49.990 align:start position:0%
+element in our new reversed linked list
+so<00:01:48.159><c> now</c><00:01:48.399><c> we</c><00:01:48.560><c> can</c><00:01:48.799><c> shift</c><00:01:49.119><c> our</c><00:01:49.280><c> pointers</c>
+
+00:01:49.990 --> 00:01:50.000 align:start position:0%
+so now we can shift our pointers
+ 
+
+00:01:50.000 --> 00:01:51.670 align:start position:0%
+so now we can shift our pointers
+so<00:01:50.159><c> we're</c><00:01:50.320><c> going</c><00:01:50.399><c> to</c><00:01:50.560><c> take</c><00:01:50.799><c> the</c><00:01:51.040><c> previous</c>
+
+00:01:51.670 --> 00:01:51.680 align:start position:0%
+so we're going to take the previous
+ 
+
+00:01:51.680 --> 00:01:53.990 align:start position:0%
+so we're going to take the previous
+pointer<00:01:52.159><c> and</c><00:01:52.240><c> then</c><00:01:52.560><c> shift</c><00:01:52.960><c> it</c><00:01:53.119><c> to</c><00:01:53.439><c> current</c>
+
+00:01:53.990 --> 00:01:54.000 align:start position:0%
+pointer and then shift it to current
+ 
+
+00:01:54.000 --> 00:01:55.749 align:start position:0%
+pointer and then shift it to current
+and<00:01:54.159><c> we're</c><00:01:54.320><c> going</c><00:01:54.399><c> to</c><00:01:54.560><c> take</c><00:01:55.040><c> the</c><00:01:55.360><c> current</c>
+
+00:01:55.749 --> 00:01:55.759 align:start position:0%
+and we're going to take the current
+ 
+
+00:01:55.759 --> 00:01:57.190 align:start position:0%
+and we're going to take the current
+pointer<00:01:56.240><c> and</c><00:01:56.479><c> shift</c><00:01:56.880><c> it</c>
+
+00:01:57.190 --> 00:01:57.200 align:start position:0%
+pointer and shift it
+ 
+
+00:01:57.200 --> 00:02:00.550 align:start position:0%
+pointer and shift it
+to<00:01:57.439><c> the</c><00:01:57.680><c> next</c><00:01:58.159><c> node</c><00:01:58.719><c> now</c><00:01:59.040><c> since</c><00:01:59.360><c> we</c><00:01:59.759><c> broke</c><00:02:00.159><c> this</c>
+
+00:02:00.550 --> 00:02:00.560 align:start position:0%
+to the next node now since we broke this
+ 
+
+00:02:00.560 --> 00:02:04.230 align:start position:0%
+to the next node now since we broke this
+link<00:02:01.520><c> we</c><00:02:01.840><c> have</c><00:02:02.079><c> to</c><00:02:03.040><c> save</c><00:02:03.439><c> this</c><00:02:03.759><c> somewhere</c>
+
+00:02:04.230 --> 00:02:04.240 align:start position:0%
+link we have to save this somewhere
+ 
+
+00:02:04.240 --> 00:02:06.789 align:start position:0%
+link we have to save this somewhere
+before<00:02:05.040><c> we</c><00:02:05.280><c> end</c><00:02:05.520><c> up</c><00:02:05.680><c> breaking</c><00:02:06.079><c> this</c><00:02:06.399><c> link</c><00:02:06.640><c> and</c>
+
+00:02:06.789 --> 00:02:06.799 align:start position:0%
+before we end up breaking this link and
+ 
+
+00:02:06.799 --> 00:02:08.070 align:start position:0%
+before we end up breaking this link and
+i'm<00:02:06.880><c> going</c><00:02:06.960><c> to</c><00:02:07.040><c> show</c><00:02:07.200><c> you</c><00:02:07.360><c> how</c><00:02:07.439><c> to</c><00:02:07.520><c> do</c><00:02:07.680><c> that</c>
+
+00:02:08.070 --> 00:02:08.080 align:start position:0%
+i'm going to show you how to do that
+ 
+
+00:02:08.080 --> 00:02:11.589 align:start position:0%
+i'm going to show you how to do that
+in<00:02:08.239><c> the</c><00:02:08.479><c> code</c><00:02:09.360><c> so</c><00:02:09.599><c> now</c><00:02:09.920><c> our</c><00:02:10.239><c> current</c><00:02:10.720><c> is</c><00:02:11.039><c> 2</c>
+
+00:02:11.589 --> 00:02:11.599 align:start position:0%
+in the code so now our current is 2
+ 
+
+00:02:11.599 --> 00:02:14.869 align:start position:0%
+in the code so now our current is 2
+we<00:02:11.840><c> want</c><00:02:12.000><c> to</c><00:02:12.160><c> take</c><00:02:12.640><c> the</c><00:02:12.879><c> next</c><00:02:13.200><c> pointer</c>
+
+00:02:14.869 --> 00:02:14.879 align:start position:0%
+we want to take the next pointer
+ 
+
+00:02:14.879 --> 00:02:18.229 align:start position:0%
+we want to take the next pointer
+and<00:02:15.200><c> reverse</c><00:02:15.840><c> it</c><00:02:16.080><c> so</c><00:02:16.480><c> the</c><00:02:16.800><c> next</c><00:02:17.599><c> is</c><00:02:17.840><c> now</c><00:02:18.080><c> going</c>
+
+00:02:18.229 --> 00:02:18.239 align:start position:0%
+and reverse it so the next is now going
+ 
+
+00:02:18.239 --> 00:02:19.110 align:start position:0%
+and reverse it so the next is now going
+to<00:02:18.400><c> be</c>
+
+00:02:19.110 --> 00:02:19.120 align:start position:0%
+to be
+ 
+
+00:02:19.120 --> 00:02:21.510 align:start position:0%
+to be
+like<00:02:19.680><c> this</c><00:02:20.239><c> so</c><00:02:20.480><c> it's</c><00:02:20.640><c> going</c><00:02:20.720><c> to</c><00:02:20.879><c> point</c><00:02:21.120><c> at</c>
+
+00:02:21.510 --> 00:02:21.520 align:start position:0%
+like this so it's going to point at
+ 
+
+00:02:21.520 --> 00:02:22.390 align:start position:0%
+like this so it's going to point at
+previous
+
+00:02:22.390 --> 00:02:22.400 align:start position:0%
+previous
+ 
+
+00:02:22.400 --> 00:02:24.869 align:start position:0%
+previous
+so<00:02:22.640><c> we</c><00:02:22.800><c> can</c><00:02:23.200><c> reverse</c><00:02:23.760><c> the</c><00:02:23.920><c> next</c><00:02:24.239><c> pointer</c><00:02:24.640><c> and</c>
+
+00:02:24.869 --> 00:02:24.879 align:start position:0%
+so we can reverse the next pointer and
+ 
+
+00:02:24.879 --> 00:02:26.630 align:start position:0%
+so we can reverse the next pointer and
+set<00:02:25.120><c> it</c><00:02:25.280><c> to</c><00:02:25.599><c> previous</c>
+
+00:02:26.630 --> 00:02:26.640 align:start position:0%
+set it to previous
+ 
+
+00:02:26.640 --> 00:02:28.550 align:start position:0%
+set it to previous
+and<00:02:26.800><c> once</c><00:02:27.120><c> again</c><00:02:27.440><c> we're</c><00:02:27.599><c> going</c><00:02:27.680><c> to</c><00:02:27.920><c> shift</c><00:02:28.319><c> our</c>
+
+00:02:28.550 --> 00:02:28.560 align:start position:0%
+and once again we're going to shift our
+ 
+
+00:02:28.560 --> 00:02:30.390 align:start position:0%
+and once again we're going to shift our
+previous<00:02:28.959><c> pointer</c><00:02:29.360><c> to</c><00:02:29.599><c> current</c><00:02:30.000><c> and</c><00:02:30.160><c> our</c>
+
+00:02:30.390 --> 00:02:30.400 align:start position:0%
+previous pointer to current and our
+ 
+
+00:02:30.400 --> 00:02:31.910 align:start position:0%
+previous pointer to current and our
+current<00:02:30.720><c> pointer</c><00:02:31.200><c> is</c><00:02:31.280><c> going</c><00:02:31.360><c> to</c><00:02:31.519><c> be</c><00:02:31.599><c> shifted</c>
+
+00:02:31.910 --> 00:02:31.920 align:start position:0%
+current pointer is going to be shifted
+ 
+
+00:02:31.920 --> 00:02:33.110 align:start position:0%
+current pointer is going to be shifted
+to<00:02:32.160><c> next</c>
+
+00:02:33.110 --> 00:02:33.120 align:start position:0%
+to next
+ 
+
+00:02:33.120 --> 00:02:35.910 align:start position:0%
+to next
+now<00:02:33.360><c> we're</c><00:02:33.519><c> finally</c><00:02:34.080><c> at</c><00:02:34.319><c> the</c><00:02:34.640><c> last</c><00:02:35.120><c> node</c><00:02:35.680><c> we</c>
+
+00:02:35.910 --> 00:02:35.920 align:start position:0%
+now we're finally at the last node we
+ 
+
+00:02:35.920 --> 00:02:37.670 align:start position:0%
+now we're finally at the last node we
+can<00:02:36.239><c> once</c><00:02:36.560><c> again</c>
+
+00:02:37.670 --> 00:02:37.680 align:start position:0%
+can once again
+ 
+
+00:02:37.680 --> 00:02:39.750 align:start position:0%
+can once again
+update<00:02:38.000><c> the</c><00:02:38.160><c> next</c><00:02:38.480><c> pointer</c><00:02:39.040><c> of</c><00:02:39.200><c> this</c><00:02:39.440><c> current</c>
+
+00:02:39.750 --> 00:02:39.760 align:start position:0%
+update the next pointer of this current
+ 
+
+00:02:39.760 --> 00:02:41.030 align:start position:0%
+update the next pointer of this current
+node<00:02:40.480><c> and</c><00:02:40.720><c> so</c>
+
+00:02:41.030 --> 00:02:41.040 align:start position:0%
+node and so
+ 
+
+00:02:41.040 --> 00:02:43.750 align:start position:0%
+node and so
+now<00:02:41.360><c> when</c><00:02:41.519><c> we</c><00:02:41.680><c> update</c><00:02:42.080><c> our</c><00:02:42.239><c> pointers</c><00:02:43.120><c> previous</c>
+
+00:02:43.750 --> 00:02:43.760 align:start position:0%
+now when we update our pointers previous
+ 
+
+00:02:43.760 --> 00:02:44.710 align:start position:0%
+now when we update our pointers previous
+will<00:02:43.920><c> be</c><00:02:44.160><c> here</c>
+
+00:02:44.710 --> 00:02:44.720 align:start position:0%
+will be here
+ 
+
+00:02:44.720 --> 00:02:47.910 align:start position:0%
+will be here
+and<00:02:45.040><c> current</c><00:02:45.519><c> is</c><00:02:45.680><c> going</c><00:02:45.840><c> to</c><00:02:46.000><c> be</c><00:02:47.280><c> at</c>
+
+00:02:47.910 --> 00:02:47.920 align:start position:0%
+and current is going to be at
+ 
+
+00:02:47.920 --> 00:02:51.350 align:start position:0%
+and current is going to be at
+null<00:02:49.280><c> we've</c><00:02:49.599><c> reached</c><00:02:50.080><c> the</c><00:02:50.400><c> end</c><00:02:50.640><c> of</c><00:02:50.800><c> our</c><00:02:50.959><c> list</c>
+
+00:02:51.350 --> 00:02:51.360 align:start position:0%
+null we've reached the end of our list
+ 
+
+00:02:51.360 --> 00:02:53.430 align:start position:0%
+null we've reached the end of our list
+now<00:02:51.519><c> we</c><00:02:51.680><c> want</c><00:02:51.840><c> to</c><00:02:51.920><c> return</c><00:02:52.480><c> the</c><00:02:52.800><c> head</c>
+
+00:02:53.430 --> 00:02:53.440 align:start position:0%
+now we want to return the head
+ 
+
+00:02:53.440 --> 00:02:56.229 align:start position:0%
+now we want to return the head
+how<00:02:53.599><c> do</c><00:02:53.760><c> we</c><00:02:53.920><c> return</c><00:02:54.319><c> the</c><00:02:54.400><c> head</c><00:02:55.120><c> lucky</c><00:02:55.519><c> for</c><00:02:55.760><c> us</c>
+
+00:02:56.229 --> 00:02:56.239 align:start position:0%
+how do we return the head lucky for us
+ 
+
+00:02:56.239 --> 00:02:58.149 align:start position:0%
+how do we return the head lucky for us
+the<00:02:56.560><c> previous</c><00:02:57.200><c> pointer</c>
+
+00:02:58.149 --> 00:02:58.159 align:start position:0%
+the previous pointer
+ 
+
+00:02:58.159 --> 00:03:01.190 align:start position:0%
+the previous pointer
+is<00:02:58.480><c> equal</c><00:02:58.959><c> to</c><00:02:59.200><c> the</c><00:02:59.519><c> new</c><00:02:59.760><c> head</c><00:03:00.080><c> right</c><00:03:00.319><c> so</c><00:03:00.720><c> this</c>
+
+00:03:01.190 --> 00:03:01.200 align:start position:0%
+is equal to the new head right so this
+ 
+
+00:03:01.200 --> 00:03:04.949 align:start position:0%
+is equal to the new head right so this
+is<00:03:01.360><c> going</c><00:03:01.440><c> to</c><00:03:01.599><c> be</c><00:03:01.920><c> our</c><00:03:02.840><c> result</c>
+
+00:03:04.949 --> 00:03:04.959 align:start position:0%
+is going to be our result
+ 
+
+00:03:04.959 --> 00:03:06.949 align:start position:0%
+is going to be our result
+just<00:03:05.200><c> like</c><00:03:05.440><c> in</c><00:03:05.519><c> the</c><00:03:05.680><c> drawing</c><00:03:06.319><c> we</c><00:03:06.640><c> can</c>
+
+00:03:06.949 --> 00:03:06.959 align:start position:0%
+just like in the drawing we can
+ 
+
+00:03:06.959 --> 00:03:08.790 align:start position:0%
+just like in the drawing we can
+initialize<00:03:07.599><c> our</c><00:03:07.760><c> pointers</c><00:03:08.239><c> first</c>
+
+00:03:08.790 --> 00:03:08.800 align:start position:0%
+initialize our pointers first
+ 
+
+00:03:08.800 --> 00:03:11.589 align:start position:0%
+initialize our pointers first
+previous<00:03:09.440><c> will</c><00:03:09.680><c> initially</c><00:03:10.159><c> be</c><00:03:10.400><c> null</c><00:03:11.120><c> current</c>
+
+00:03:11.589 --> 00:03:11.599 align:start position:0%
+previous will initially be null current
+ 
+
+00:03:11.599 --> 00:03:12.309 align:start position:0%
+previous will initially be null current
+will<00:03:11.840><c> start</c>
+
+00:03:12.309 --> 00:03:12.319 align:start position:0%
+will start
+ 
+
+00:03:12.319 --> 00:03:15.509 align:start position:0%
+will start
+at<00:03:12.480><c> the</c><00:03:12.640><c> head</c><00:03:14.000><c> and</c><00:03:14.159><c> we</c><00:03:14.319><c> want</c><00:03:14.480><c> to</c><00:03:14.720><c> keep</c><00:03:15.120><c> going</c>
+
+00:03:15.509 --> 00:03:15.519 align:start position:0%
+at the head and we want to keep going
+ 
+
+00:03:15.519 --> 00:03:16.630 align:start position:0%
+at the head and we want to keep going
+until<00:03:16.000><c> we</c><00:03:16.239><c> reach</c>
+
+00:03:16.630 --> 00:03:16.640 align:start position:0%
+until we reach
+ 
+
+00:03:16.640 --> 00:03:19.030 align:start position:0%
+until we reach
+the<00:03:16.879><c> end</c><00:03:17.120><c> of</c><00:03:17.200><c> the</c><00:03:17.360><c> list</c><00:03:17.680><c> so</c><00:03:18.000><c> while</c><00:03:18.400><c> current</c><00:03:18.800><c> is</c>
+
+00:03:19.030 --> 00:03:19.040 align:start position:0%
+the end of the list so while current is
+ 
+
+00:03:19.040 --> 00:03:20.470 align:start position:0%
+the end of the list so while current is
+not<00:03:19.519><c> null</c>
+
+00:03:20.470 --> 00:03:20.480 align:start position:0%
+not null
+ 
+
+00:03:20.480 --> 00:03:23.509 align:start position:0%
+not null
+we're<00:03:20.800><c> going</c><00:03:21.120><c> to</c><00:03:21.440><c> reverse</c><00:03:21.920><c> the</c><00:03:22.080><c> pointers</c><00:03:23.280><c> so</c>
+
+00:03:23.509 --> 00:03:23.519 align:start position:0%
+we're going to reverse the pointers so
+ 
+
+00:03:23.519 --> 00:03:24.309 align:start position:0%
+we're going to reverse the pointers so
+we<00:03:23.760><c> want</c>
+
+00:03:24.309 --> 00:03:24.319 align:start position:0%
+we want
+ 
+
+00:03:24.319 --> 00:03:27.670 align:start position:0%
+we want
+current<00:03:24.959><c> dot</c><00:03:25.440><c> next</c><00:03:26.239><c> to</c><00:03:26.480><c> be</c><00:03:27.040><c> set</c><00:03:27.360><c> to</c>
+
+00:03:27.670 --> 00:03:27.680 align:start position:0%
+current dot next to be set to
+ 
+
+00:03:27.680 --> 00:03:29.910 align:start position:0%
+current dot next to be set to
+previous<00:03:28.720><c> and</c><00:03:28.799><c> then</c><00:03:29.040><c> we</c><00:03:29.200><c> can</c><00:03:29.440><c> shift</c><00:03:29.760><c> our</c>
+
+00:03:29.910 --> 00:03:29.920 align:start position:0%
+previous and then we can shift our
+ 
+
+00:03:29.920 --> 00:03:32.550 align:start position:0%
+previous and then we can shift our
+pointers<00:03:30.640><c> right</c><00:03:30.879><c> so</c><00:03:31.040><c> we</c><00:03:31.200><c> can</c><00:03:31.440><c> update</c><00:03:31.920><c> previous</c>
+
+00:03:32.550 --> 00:03:32.560 align:start position:0%
+pointers right so we can update previous
+ 
+
+00:03:32.560 --> 00:03:36.309 align:start position:0%
+pointers right so we can update previous
+set<00:03:32.720><c> it</c><00:03:32.879><c> to</c><00:03:33.040><c> cur</c><00:03:34.720><c> and</c>
+
+00:03:36.309 --> 00:03:36.319 align:start position:0%
+set it to cur and
+ 
+
+00:03:36.319 --> 00:03:40.229 align:start position:0%
+set it to cur and
+cur<00:03:37.200><c> is</c><00:03:37.360><c> going</c><00:03:37.440><c> to</c><00:03:37.519><c> be</c><00:03:37.760><c> equal</c><00:03:38.159><c> to</c><00:03:38.920><c> current.next</c>
+
+00:03:40.229 --> 00:03:40.239 align:start position:0%
+cur is going to be equal to current.next
+ 
+
+00:03:40.239 --> 00:03:43.589 align:start position:0%
+cur is going to be equal to current.next
+but<00:03:40.480><c> notice</c><00:03:40.959><c> how</c><00:03:41.360><c> we</c><00:03:41.760><c> set</c><00:03:42.200><c> current.next</c>
+
+00:03:43.589 --> 00:03:43.599 align:start position:0%
+but notice how we set current.next
+ 
+
+00:03:43.599 --> 00:03:46.630 align:start position:0%
+but notice how we set current.next
+to<00:03:43.840><c> previous</c><00:03:44.319><c> before</c><00:03:44.720><c> so</c><00:03:45.200><c> when</c><00:03:45.440><c> we</c><00:03:45.599><c> do</c><00:03:45.840><c> this</c>
+
+00:03:46.630 --> 00:03:46.640 align:start position:0%
+to previous before so when we do this
+ 
+
+00:03:46.640 --> 00:03:48.710 align:start position:0%
+to previous before so when we do this
+we<00:03:47.120><c> actually</c><00:03:47.920><c> are</c><00:03:48.159><c> going</c><00:03:48.239><c> to</c><00:03:48.400><c> have</c><00:03:48.560><c> a</c>
+
+00:03:48.710 --> 00:03:48.720 align:start position:0%
+we actually are going to have a
+ 
+
+00:03:48.720 --> 00:03:51.110 align:start position:0%
+we actually are going to have a
+temporary<00:03:49.360><c> variable</c>
+
+00:03:51.110 --> 00:03:51.120 align:start position:0%
+temporary variable
+ 
+
+00:03:51.120 --> 00:03:54.630 align:start position:0%
+temporary variable
+called<00:03:51.519><c> next</c><00:03:52.720><c> which</c><00:03:53.120><c> i</c><00:03:53.280><c> will</c><00:03:53.439><c> do</c><00:03:53.920><c> at</c><00:03:54.159><c> the</c>
+
+00:03:54.630 --> 00:03:54.640 align:start position:0%
+called next which i will do at the
+ 
+
+00:03:54.640 --> 00:03:57.670 align:start position:0%
+called next which i will do at the
+first<00:03:55.120><c> line</c><00:03:55.920><c> when</c><00:03:56.080><c> we</c><00:03:56.239><c> start</c><00:03:56.560><c> our</c><00:03:56.799><c> loop</c><00:03:57.360><c> so</c><00:03:57.519><c> we</c>
+
+00:03:57.670 --> 00:03:57.680 align:start position:0%
+first line when we start our loop so we
+ 
+
+00:03:57.680 --> 00:03:59.030 align:start position:0%
+first line when we start our loop so we
+can<00:03:57.840><c> save</c><00:03:58.159><c> that</c><00:03:58.400><c> in</c><00:03:58.560><c> next</c>
+
+00:03:59.030 --> 00:03:59.040 align:start position:0%
+can save that in next
+ 
+
+00:03:59.040 --> 00:04:02.550 align:start position:0%
+can save that in next
+so<00:03:59.280><c> then</c><00:03:59.519><c> when</c><00:03:59.680><c> we</c><00:03:59.840><c> update</c><00:04:00.239><c> current.next</c>
+
+00:04:02.550 --> 00:04:02.560 align:start position:0%
+so then when we update current.next
+ 
+
+00:04:02.560 --> 00:04:06.470 align:start position:0%
+so then when we update current.next
+you<00:04:02.640><c> know</c><00:04:02.799><c> we</c><00:04:02.959><c> still</c><00:04:03.200><c> have</c><00:04:03.519><c> that</c><00:04:03.840><c> next</c><00:04:04.239><c> pointer</c>
+
+00:04:06.470 --> 00:04:06.480 align:start position:0%
+you know we still have that next pointer
+ 
+
+00:04:06.480 --> 00:04:09.350 align:start position:0%
+you know we still have that next pointer
+and<00:04:06.720><c> lastly</c><00:04:07.519><c> we</c><00:04:07.760><c> return</c><00:04:08.239><c> the</c><00:04:08.400><c> result</c><00:04:08.879><c> which</c><00:04:09.120><c> we</c>
+
+00:04:09.350 --> 00:04:09.360 align:start position:0%
+and lastly we return the result which we
+ 
+
+00:04:09.360 --> 00:04:09.670 align:start position:0%
+and lastly we return the result which we
+know
+
+00:04:09.670 --> 00:04:09.680 align:start position:0%
+know
+ 
+
+00:04:09.680 --> 00:04:12.070 align:start position:0%
+know
+is<00:04:09.840><c> stored</c><00:04:10.319><c> in</c><00:04:10.560><c> previous</c><00:04:11.280><c> when</c><00:04:11.439><c> this</c><00:04:11.760><c> loop</c>
+
+00:04:12.070 --> 00:04:12.080 align:start position:0%
+is stored in previous when this loop
+ 
+
+00:04:12.080 --> 00:04:13.990 align:start position:0%
+is stored in previous when this loop
+stops<00:04:12.840><c> executing</c>
+
+00:04:13.990 --> 00:04:14.000 align:start position:0%
+stops executing
+ 
+
+00:04:14.000 --> 00:04:16.229 align:start position:0%
+stops executing
+so<00:04:14.239><c> it</c><00:04:14.400><c> works</c><00:04:14.959><c> and</c><00:04:15.280><c> this</c><00:04:15.519><c> is</c><00:04:15.680><c> actually</c><00:04:16.000><c> the</c>
+
+00:04:16.229 --> 00:04:16.239 align:start position:0%
+so it works and this is actually the
+ 
+
+00:04:16.239 --> 00:04:18.310 align:start position:0%
+so it works and this is actually the
+most<00:04:16.639><c> optimal</c><00:04:17.120><c> solution</c><00:04:17.759><c> the</c><00:04:18.000><c> time</c>
+
+00:04:18.310 --> 00:04:18.320 align:start position:0%
+most optimal solution the time
+ 
+
+00:04:18.320 --> 00:04:23.350 align:start position:0%
+most optimal solution the time
+complexity<00:04:19.280><c> is</c><00:04:20.160><c> big</c><00:04:20.400><c> o</c><00:04:20.639><c> of</c><00:04:20.880><c> n</c>
+
+00:04:23.350 --> 00:04:23.360 align:start position:0%
+ 
+ 
+
+00:04:23.360 --> 00:04:26.469 align:start position:0%
+ 
+and<00:04:23.520><c> the</c><00:04:23.759><c> memory</c><00:04:24.160><c> complexity</c><00:04:24.880><c> is</c><00:04:25.040><c> big</c><00:04:25.280><c> o</c><00:04:25.600><c> of</c><00:04:26.000><c> 1</c>
+
+00:04:26.469 --> 00:04:26.479 align:start position:0%
+and the memory complexity is big o of 1
+ 
+
+00:04:26.479 --> 00:04:28.950 align:start position:0%
+and the memory complexity is big o of 1
+because<00:04:27.120><c> we're</c><00:04:27.360><c> just</c><00:04:27.600><c> using</c><00:04:28.080><c> pointers</c><00:04:28.639><c> right</c>
+
+00:04:28.950 --> 00:04:28.960 align:start position:0%
+because we're just using pointers right
+ 
+
+00:04:28.960 --> 00:04:29.909 align:start position:0%
+because we're just using pointers right
+no
+
+00:04:29.909 --> 00:04:29.919 align:start position:0%
+no
+ 
+
+00:04:29.919 --> 00:04:33.189 align:start position:0%
+no
+data<00:04:30.240><c> structures</c><00:04:30.720><c> or</c><00:04:30.880><c> anything</c><00:04:32.479><c> but</c><00:04:32.800><c> if</c><00:04:33.040><c> we</c>
+
+00:04:33.189 --> 00:04:33.199 align:start position:0%
+data structures or anything but if we
+ 
+
+00:04:33.199 --> 00:04:35.909 align:start position:0%
+data structures or anything but if we
+want<00:04:33.360><c> to</c><00:04:33.520><c> do</c><00:04:33.759><c> the</c><00:04:33.919><c> recursive</c><00:04:34.880><c> solution</c>
+
+00:04:35.909 --> 00:04:35.919 align:start position:0%
+want to do the recursive solution
+ 
+
+00:04:35.919 --> 00:04:38.629 align:start position:0%
+want to do the recursive solution
+then<00:04:36.080><c> the</c><00:04:36.320><c> time</c><00:04:36.560><c> complexity</c><00:04:37.520><c> is</c><00:04:37.919><c> also</c><00:04:38.479><c> going</c>
+
+00:04:38.629 --> 00:04:38.639 align:start position:0%
+then the time complexity is also going
+ 
+
+00:04:38.639 --> 00:04:39.909 align:start position:0%
+then the time complexity is also going
+to<00:04:38.800><c> remain</c>
+
+00:04:39.909 --> 00:04:39.919 align:start position:0%
+to remain
+ 
+
+00:04:39.919 --> 00:04:42.070 align:start position:0%
+to remain
+linear<00:04:40.320><c> but</c><00:04:40.560><c> the</c><00:04:40.800><c> memory</c><00:04:41.199><c> complexity</c><00:04:41.919><c> is</c>
+
+00:04:42.070 --> 00:04:42.080 align:start position:0%
+linear but the memory complexity is
+ 
+
+00:04:42.080 --> 00:04:43.189 align:start position:0%
+linear but the memory complexity is
+going<00:04:42.240><c> to</c><00:04:42.320><c> be</c>
+
+00:04:43.189 --> 00:04:43.199 align:start position:0%
+going to be
+ 
+
+00:04:43.199 --> 00:04:44.790 align:start position:0%
+going to be
+linear<00:04:43.680><c> as</c><00:04:43.840><c> well</c><00:04:44.080><c> so</c><00:04:44.240><c> we're</c><00:04:44.400><c> going</c><00:04:44.479><c> to</c><00:04:44.560><c> need</c>
+
+00:04:44.790 --> 00:04:44.800 align:start position:0%
+linear as well so we're going to need
+ 
+
+00:04:44.800 --> 00:04:46.950 align:start position:0%
+linear as well so we're going to need
+extra<00:04:45.199><c> memory</c><00:04:45.919><c> so</c><00:04:46.080><c> it's</c><00:04:46.320><c> not</c><00:04:46.560><c> the</c><00:04:46.720><c> best</c>
+
+00:04:46.950 --> 00:04:46.960 align:start position:0%
+extra memory so it's not the best
+ 
+
+00:04:46.960 --> 00:04:48.469 align:start position:0%
+extra memory so it's not the best
+solution<00:04:47.360><c> but</c><00:04:47.520><c> i'll</c><00:04:47.680><c> still</c><00:04:47.919><c> show</c><00:04:48.080><c> you</c><00:04:48.240><c> how</c><00:04:48.400><c> to</c>
+
+00:04:48.469 --> 00:04:48.479 align:start position:0%
+solution but i'll still show you how to
+ 
+
+00:04:48.479 --> 00:04:49.430 align:start position:0%
+solution but i'll still show you how to
+do<00:04:48.720><c> it</c>
+
+00:04:49.430 --> 00:04:49.440 align:start position:0%
+do it
+ 
+
+00:04:49.440 --> 00:04:51.590 align:start position:0%
+do it
+so<00:04:49.759><c> usually</c><00:04:50.320><c> the</c><00:04:50.479><c> best</c><00:04:50.800><c> way</c><00:04:50.960><c> to</c><00:04:51.120><c> think</c><00:04:51.280><c> about</c>
+
+00:04:51.590 --> 00:04:51.600 align:start position:0%
+so usually the best way to think about
+ 
+
+00:04:51.600 --> 00:04:52.950 align:start position:0%
+so usually the best way to think about
+recursive<00:04:52.320><c> problems</c>
+
+00:04:52.950 --> 00:04:52.960 align:start position:0%
+recursive problems
+ 
+
+00:04:52.960 --> 00:04:55.430 align:start position:0%
+recursive problems
+is<00:04:53.120><c> to</c><00:04:53.360><c> break</c><00:04:53.680><c> it</c><00:04:53.840><c> down</c><00:04:54.080><c> into</c><00:04:54.320><c> a</c><00:04:54.560><c> sub</c><00:04:54.960><c> problem</c>
+
+00:04:55.430 --> 00:04:55.440 align:start position:0%
+is to break it down into a sub problem
+ 
+
+00:04:55.440 --> 00:04:56.230 align:start position:0%
+is to break it down into a sub problem
+right<00:04:55.680><c> so</c>
+
+00:04:56.230 --> 00:04:56.240 align:start position:0%
+right so
+ 
+
+00:04:56.240 --> 00:04:59.749 align:start position:0%
+right so
+if<00:04:56.639><c> our</c><00:04:56.960><c> initial</c><00:04:57.600><c> head</c><00:04:58.240><c> is</c><00:04:58.800><c> one</c>
+
+00:04:59.749 --> 00:04:59.759 align:start position:0%
+if our initial head is one
+ 
+
+00:04:59.759 --> 00:05:02.469 align:start position:0%
+if our initial head is one
+we<00:05:00.080><c> start</c><00:05:00.479><c> at</c><00:05:00.800><c> one</c><00:05:01.199><c> and</c><00:05:01.440><c> this</c><00:05:01.680><c> is</c><00:05:01.840><c> our</c><00:05:02.080><c> linked</c>
+
+00:05:02.469 --> 00:05:02.479 align:start position:0%
+we start at one and this is our linked
+ 
+
+00:05:02.479 --> 00:05:04.070 align:start position:0%
+we start at one and this is our linked
+list<00:05:02.880><c> right</c>
+
+00:05:04.070 --> 00:05:04.080 align:start position:0%
+list right
+ 
+
+00:05:04.080 --> 00:05:06.550 align:start position:0%
+list right
+but<00:05:04.400><c> let's</c><00:05:04.639><c> say</c><00:05:04.960><c> i</c><00:05:05.120><c> want</c><00:05:05.280><c> to</c><00:05:05.440><c> do</c><00:05:05.600><c> a</c><00:05:05.759><c> recursive</c>
+
+00:05:06.550 --> 00:05:06.560 align:start position:0%
+but let's say i want to do a recursive
+ 
+
+00:05:06.560 --> 00:05:07.350 align:start position:0%
+but let's say i want to do a recursive
+call
+
+00:05:07.350 --> 00:05:07.360 align:start position:0%
+call
+ 
+
+00:05:07.360 --> 00:05:09.749 align:start position:0%
+call
+instead<00:05:07.840><c> of</c><00:05:08.000><c> reversing</c><00:05:08.639><c> the</c><00:05:08.880><c> entire</c><00:05:09.440><c> linked</c>
+
+00:05:09.749 --> 00:05:09.759 align:start position:0%
+instead of reversing the entire linked
+ 
+
+00:05:09.759 --> 00:05:10.390 align:start position:0%
+instead of reversing the entire linked
+list
+
+00:05:10.390 --> 00:05:10.400 align:start position:0%
+list
+ 
+
+00:05:10.400 --> 00:05:13.510 align:start position:0%
+list
+i'm<00:05:10.720><c> gonna</c><00:05:11.039><c> reverse</c><00:05:12.080><c> the</c><00:05:12.320><c> remainder</c><00:05:13.199><c> of</c><00:05:13.360><c> the</c>
+
+00:05:13.510 --> 00:05:13.520 align:start position:0%
+i'm gonna reverse the remainder of the
+ 
+
+00:05:13.520 --> 00:05:14.550 align:start position:0%
+i'm gonna reverse the remainder of the
+linked<00:05:13.919><c> list</c>
+
+00:05:14.550 --> 00:05:14.560 align:start position:0%
+linked list
+ 
+
+00:05:14.560 --> 00:05:18.070 align:start position:0%
+linked list
+so<00:05:14.960><c> everything</c><00:05:15.759><c> except</c><00:05:16.800><c> this</c><00:05:17.360><c> one</c>
+
+00:05:18.070 --> 00:05:18.080 align:start position:0%
+so everything except this one
+ 
+
+00:05:18.080 --> 00:05:20.550 align:start position:0%
+so everything except this one
+so<00:05:18.320><c> now</c><00:05:18.479><c> i</c><00:05:18.639><c> have</c><00:05:18.800><c> a</c><00:05:19.039><c> sub</c><00:05:19.360><c> problem</c><00:05:19.840><c> right</c><00:05:20.160><c> now</c><00:05:20.400><c> i</c>
+
+00:05:20.550 --> 00:05:20.560 align:start position:0%
+so now i have a sub problem right now i
+ 
+
+00:05:20.560 --> 00:05:21.270 align:start position:0%
+so now i have a sub problem right now i
+only<00:05:20.880><c> have</c>
+
+00:05:21.270 --> 00:05:21.280 align:start position:0%
+only have
+ 
+
+00:05:21.280 --> 00:05:24.870 align:start position:0%
+only have
+two<00:05:21.759><c> nodes</c><00:05:22.400><c> to</c><00:05:22.639><c> deal</c><00:05:22.960><c> with</c><00:05:23.840><c> but</c><00:05:24.160><c> let's</c><00:05:24.479><c> take</c><00:05:24.720><c> it</c>
+
+00:05:24.870 --> 00:05:24.880 align:start position:0%
+two nodes to deal with but let's take it
+ 
+
+00:05:24.880 --> 00:05:25.590 align:start position:0%
+two nodes to deal with but let's take it
+one<00:05:25.120><c> step</c>
+
+00:05:25.590 --> 00:05:25.600 align:start position:0%
+one step
+ 
+
+00:05:25.600 --> 00:05:28.950 align:start position:0%
+one step
+further<00:05:26.479><c> this</c><00:05:26.960><c> is</c><00:05:27.199><c> now</c><00:05:27.440><c> my</c><00:05:27.759><c> new</c><00:05:28.000><c> head</c><00:05:28.320><c> right</c>
+
+00:05:28.950 --> 00:05:28.960 align:start position:0%
+further this is now my new head right
+ 
+
+00:05:28.960 --> 00:05:30.710 align:start position:0%
+further this is now my new head right
+and<00:05:29.120><c> i'm</c><00:05:29.280><c> gonna</c><00:05:29.440><c> break</c><00:05:29.759><c> it</c><00:05:29.840><c> down</c><00:05:30.080><c> even</c><00:05:30.400><c> more</c>
+
+00:05:30.710 --> 00:05:30.720 align:start position:0%
+and i'm gonna break it down even more
+ 
+
+00:05:30.720 --> 00:05:32.550 align:start position:0%
+and i'm gonna break it down even more
+i'm<00:05:30.880><c> gonna</c><00:05:31.199><c> say</c><00:05:31.520><c> reverse</c>
+
+00:05:32.550 --> 00:05:32.560 align:start position:0%
+i'm gonna say reverse
+ 
+
+00:05:32.560 --> 00:05:35.510 align:start position:0%
+i'm gonna say reverse
+this<00:05:32.880><c> portion</c><00:05:34.160><c> reverse</c><00:05:34.639><c> the</c><00:05:34.880><c> sub</c><00:05:35.199><c> problem</c>
+
+00:05:35.510 --> 00:05:35.520 align:start position:0%
+this portion reverse the sub problem
+ 
+
+00:05:35.520 --> 00:05:36.550 align:start position:0%
+this portion reverse the sub problem
+reverse<00:05:36.000><c> only</c>
+
+00:05:36.550 --> 00:05:36.560 align:start position:0%
+reverse only
+ 
+
+00:05:36.560 --> 00:05:40.230 align:start position:0%
+reverse only
+one<00:05:36.880><c> node</c><00:05:38.240><c> so</c><00:05:38.560><c> then</c><00:05:39.280><c> if</c><00:05:39.440><c> we</c><00:05:39.600><c> try</c><00:05:39.840><c> to</c><00:05:39.919><c> break</c><00:05:40.160><c> it</c>
+
+00:05:40.230 --> 00:05:40.240 align:start position:0%
+one node so then if we try to break it
+ 
+
+00:05:40.240 --> 00:05:41.909 align:start position:0%
+one node so then if we try to break it
+down<00:05:40.479><c> even</c><00:05:40.880><c> more</c><00:05:41.199><c> then</c><00:05:41.360><c> we're</c><00:05:41.520><c> going</c><00:05:41.600><c> to</c><00:05:41.680><c> get</c>
+
+00:05:41.909 --> 00:05:41.919 align:start position:0%
+down even more then we're going to get
+ 
+
+00:05:41.919 --> 00:05:43.749 align:start position:0%
+down even more then we're going to get
+this<00:05:42.160><c> is</c><00:05:42.320><c> our</c><00:05:42.479><c> sub</c><00:05:42.720><c> list</c><00:05:43.039><c> right</c><00:05:43.199><c> but</c><00:05:43.360><c> this</c><00:05:43.600><c> is</c>
+
+00:05:43.749 --> 00:05:43.759 align:start position:0%
+this is our sub list right but this is
+ 
+
+00:05:43.759 --> 00:05:44.150 align:start position:0%
+this is our sub list right but this is
+just
+
+00:05:44.150 --> 00:05:44.160 align:start position:0%
+just
+ 
+
+00:05:44.160 --> 00:05:46.070 align:start position:0%
+just
+null<00:05:44.479><c> so</c><00:05:44.639><c> we</c><00:05:44.800><c> can't</c><00:05:45.039><c> really</c><00:05:45.280><c> reverse</c><00:05:45.840><c> that</c>
+
+00:05:46.070 --> 00:05:46.080 align:start position:0%
+null so we can't really reverse that
+ 
+
+00:05:46.080 --> 00:05:47.909 align:start position:0%
+null so we can't really reverse that
+that's<00:05:46.400><c> the</c><00:05:46.639><c> base</c><00:05:46.960><c> case</c>
+
+00:05:47.909 --> 00:05:47.919 align:start position:0%
+that's the base case
+ 
+
+00:05:47.919 --> 00:05:50.550 align:start position:0%
+that's the base case
+so<00:05:48.240><c> now</c><00:05:48.639><c> we're</c><00:05:48.960><c> at</c><00:05:49.199><c> this</c><00:05:49.520><c> we</c><00:05:49.680><c> only</c><00:05:49.919><c> have</c><00:05:50.240><c> one</c>
+
+00:05:50.550 --> 00:05:50.560 align:start position:0%
+so now we're at this we only have one
+ 
+
+00:05:50.560 --> 00:05:51.990 align:start position:0%
+so now we're at this we only have one
+node<00:05:50.880><c> and</c><00:05:51.039><c> we</c><00:05:51.199><c> want</c><00:05:51.360><c> to</c><00:05:51.440><c> reverse</c>
+
+00:05:51.990 --> 00:05:52.000 align:start position:0%
+node and we want to reverse
+ 
+
+00:05:52.000 --> 00:05:54.230 align:start position:0%
+node and we want to reverse
+it<00:05:52.160><c> how</c><00:05:52.320><c> do</c><00:05:52.479><c> we</c><00:05:52.639><c> do</c><00:05:52.880><c> that</c><00:05:53.280><c> well</c><00:05:53.680><c> the</c><00:05:53.919><c> next</c>
+
+00:05:54.230 --> 00:05:54.240 align:start position:0%
+it how do we do that well the next
+ 
+
+00:05:54.240 --> 00:05:55.510 align:start position:0%
+it how do we do that well the next
+pointer<00:05:54.639><c> is</c><00:05:54.800><c> pointing</c><00:05:55.199><c> at</c>
+
+00:05:55.510 --> 00:05:55.520 align:start position:0%
+pointer is pointing at
+ 
+
+00:05:55.520 --> 00:05:58.870 align:start position:0%
+pointer is pointing at
+null<00:05:56.479><c> instead</c><00:05:57.039><c> of</c><00:05:57.199><c> that</c><00:05:58.000><c> we</c><00:05:58.240><c> can</c><00:05:58.479><c> take</c><00:05:58.720><c> the</c>
+
+00:05:58.870 --> 00:05:58.880 align:start position:0%
+null instead of that we can take the
+ 
+
+00:05:58.880 --> 00:06:00.070 align:start position:0%
+null instead of that we can take the
+next<00:05:59.280><c> pointer</c>
+
+00:06:00.070 --> 00:06:00.080 align:start position:0%
+next pointer
+ 
+
+00:06:00.080 --> 00:06:02.950 align:start position:0%
+next pointer
+and<00:06:00.400><c> set</c><00:06:00.639><c> it</c><00:06:00.800><c> to</c><00:06:01.039><c> previous</c><00:06:02.160><c> not</c><00:06:02.560><c> really</c>
+
+00:06:02.950 --> 00:06:02.960 align:start position:0%
+and set it to previous not really
+ 
+
+00:06:02.960 --> 00:06:04.790 align:start position:0%
+and set it to previous not really
+because<00:06:03.199><c> this</c><00:06:03.440><c> is</c><00:06:03.600><c> recursive</c>
+
+00:06:04.790 --> 00:06:04.800 align:start position:0%
+because this is recursive
+ 
+
+00:06:04.800 --> 00:06:06.790 align:start position:0%
+because this is recursive
+and<00:06:05.039><c> at</c><00:06:05.120><c> least</c><00:06:05.360><c> the</c><00:06:05.440><c> way</c><00:06:05.680><c> i'm</c><00:06:05.840><c> gonna</c><00:06:06.080><c> do</c><00:06:06.319><c> it</c><00:06:06.560><c> i'm</c>
+
+00:06:06.790 --> 00:06:06.800 align:start position:0%
+and at least the way i'm gonna do it i'm
+ 
+
+00:06:06.800 --> 00:06:07.909 align:start position:0%
+and at least the way i'm gonna do it i'm
+gonna<00:06:07.120><c> set</c>
+
+00:06:07.909 --> 00:06:07.919 align:start position:0%
+gonna set
+ 
+
+00:06:07.919 --> 00:06:11.270 align:start position:0%
+gonna set
+i'm<00:06:08.160><c> gonna</c><00:06:08.639><c> keep</c><00:06:09.280><c> the</c><00:06:09.520><c> pointer</c><00:06:10.240><c> pointing</c><00:06:10.800><c> at</c>
+
+00:06:11.270 --> 00:06:11.280 align:start position:0%
+i'm gonna keep the pointer pointing at
+ 
+
+00:06:11.280 --> 00:06:14.550 align:start position:0%
+i'm gonna keep the pointer pointing at
+null<00:06:12.080><c> so</c><00:06:12.400><c> we</c><00:06:12.800><c> technically</c><00:06:13.440><c> reversed</c><00:06:14.240><c> this</c>
+
+00:06:14.550 --> 00:06:14.560 align:start position:0%
+null so we technically reversed this
+ 
+
+00:06:14.560 --> 00:06:16.390 align:start position:0%
+null so we technically reversed this
+portion<00:06:15.039><c> which</c><00:06:15.360><c> is</c>
+
+00:06:16.390 --> 00:06:16.400 align:start position:0%
+portion which is
+ 
+
+00:06:16.400 --> 00:06:18.390 align:start position:0%
+portion which is
+just<00:06:16.720><c> this</c><00:06:17.120><c> right</c><00:06:17.360><c> it's</c><00:06:17.520><c> just</c><00:06:17.759><c> a</c><00:06:17.840><c> link</c><00:06:18.000><c> list</c><00:06:18.240><c> of</c>
+
+00:06:18.390 --> 00:06:18.400 align:start position:0%
+just this right it's just a link list of
+ 
+
+00:06:18.400 --> 00:06:20.150 align:start position:0%
+just this right it's just a link list of
+one<00:06:18.720><c> so</c><00:06:18.880><c> now</c><00:06:19.120><c> we're</c><00:06:19.280><c> going</c><00:06:19.360><c> to</c><00:06:19.600><c> pop</c>
+
+00:06:20.150 --> 00:06:20.160 align:start position:0%
+one so now we're going to pop
+ 
+
+00:06:20.160 --> 00:06:24.150 align:start position:0%
+one so now we're going to pop
+back<00:06:20.720><c> up</c><00:06:22.400><c> out</c><00:06:22.560><c> of</c><00:06:22.720><c> our</c><00:06:22.880><c> recursive</c><00:06:23.520><c> call</c>
+
+00:06:24.150 --> 00:06:24.160 align:start position:0%
+back up out of our recursive call
+ 
+
+00:06:24.160 --> 00:06:28.230 align:start position:0%
+back up out of our recursive call
+and<00:06:24.479><c> now</c><00:06:24.800><c> our</c><00:06:25.039><c> job</c><00:06:25.360><c> is</c><00:06:25.520><c> to</c><00:06:25.759><c> reverse</c><00:06:26.880><c> these</c><00:06:27.360><c> two</c>
+
+00:06:28.230 --> 00:06:28.240 align:start position:0%
+and now our job is to reverse these two
+ 
+
+00:06:28.240 --> 00:06:31.350 align:start position:0%
+and now our job is to reverse these two
+nodes<00:06:29.280><c> so</c><00:06:29.600><c> since</c><00:06:30.080><c> we're</c><00:06:30.639><c> at</c>
+
+00:06:31.350 --> 00:06:31.360 align:start position:0%
+nodes so since we're at
+ 
+
+00:06:31.360 --> 00:06:34.550 align:start position:0%
+nodes so since we're at
+2<00:06:32.160><c> we</c><00:06:32.400><c> can</c><00:06:32.800><c> access</c><00:06:33.759><c> three</c>
+
+00:06:34.550 --> 00:06:34.560 align:start position:0%
+2 we can access three
+ 
+
+00:06:34.560 --> 00:06:37.189 align:start position:0%
+2 we can access three
+so<00:06:34.800><c> what</c><00:06:34.960><c> i'm</c><00:06:35.199><c> gonna</c><00:06:35.360><c> do</c><00:06:35.600><c> is</c><00:06:35.759><c> say</c><00:06:36.000><c> okay</c><00:06:36.960><c> the</c>
+
+00:06:37.189 --> 00:06:37.199 align:start position:0%
+so what i'm gonna do is say okay the
+ 
+
+00:06:37.199 --> 00:06:38.790 align:start position:0%
+so what i'm gonna do is say okay the
+next<00:06:37.600><c> pointer</c><00:06:38.160><c> of</c><00:06:38.400><c> this</c>
+
+00:06:38.790 --> 00:06:38.800 align:start position:0%
+next pointer of this
+ 
+
+00:06:38.800 --> 00:06:42.070 align:start position:0%
+next pointer of this
+is<00:06:39.199><c> actually</c><00:06:39.759><c> gonna</c><00:06:40.000><c> be</c><00:06:40.319><c> set</c><00:06:41.039><c> to</c><00:06:41.360><c> me</c><00:06:41.680><c> to</c>
+
+00:06:42.070 --> 00:06:42.080 align:start position:0%
+is actually gonna be set to me to
+ 
+
+00:06:42.080 --> 00:06:44.309 align:start position:0%
+is actually gonna be set to me to
+is<00:06:42.240><c> gonna</c><00:06:42.400><c> be</c><00:06:42.479><c> set</c><00:06:42.720><c> to</c><00:06:42.960><c> two</c><00:06:43.600><c> where</c><00:06:43.840><c> i'm</c><00:06:44.080><c> at</c>
+
+00:06:44.309 --> 00:06:44.319 align:start position:0%
+is gonna be set to two where i'm at
+ 
+
+00:06:44.319 --> 00:06:45.510 align:start position:0%
+is gonna be set to two where i'm at
+right<00:06:44.560><c> now</c>
+
+00:06:45.510 --> 00:06:45.520 align:start position:0%
+right now
+ 
+
+00:06:45.520 --> 00:06:49.350 align:start position:0%
+right now
+but<00:06:45.840><c> my</c><00:06:46.319><c> next</c><00:06:46.720><c> pointer</c><00:06:47.440><c> two's</c><00:06:47.919><c> next</c><00:06:48.240><c> pointer</c>
+
+00:06:49.350 --> 00:06:49.360 align:start position:0%
+but my next pointer two's next pointer
+ 
+
+00:06:49.360 --> 00:06:52.870 align:start position:0%
+but my next pointer two's next pointer
+is<00:06:49.599><c> gonna</c><00:06:49.840><c> be</c><00:06:50.080><c> set</c><00:06:51.039><c> to</c><00:06:51.599><c> null</c>
+
+00:06:52.870 --> 00:06:52.880 align:start position:0%
+is gonna be set to null
+ 
+
+00:06:52.880 --> 00:06:56.070 align:start position:0%
+is gonna be set to null
+so<00:06:53.199><c> notice</c><00:06:53.680><c> that</c><00:06:54.080><c> so</c><00:06:54.479><c> far</c><00:06:55.280><c> we</c><00:06:55.520><c> have</c>
+
+00:06:56.070 --> 00:06:56.080 align:start position:0%
+so notice that so far we have
+ 
+
+00:06:56.080 --> 00:06:59.589 align:start position:0%
+so notice that so far we have
+done<00:06:56.319><c> our</c><00:06:56.560><c> job</c><00:06:56.960><c> we</c><00:06:57.280><c> reversed</c><00:06:58.400><c> a</c><00:06:58.639><c> linked</c><00:06:58.960><c> list</c>
+
+00:06:59.589 --> 00:06:59.599 align:start position:0%
+done our job we reversed a linked list
+ 
+
+00:06:59.599 --> 00:07:03.110 align:start position:0%
+done our job we reversed a linked list
+of<00:06:59.919><c> size</c><00:07:00.560><c> two</c><00:07:01.520><c> right</c><00:07:01.919><c> this</c><00:07:02.160><c> is</c><00:07:02.319><c> going</c><00:07:02.400><c> to</c><00:07:02.560><c> be</c>
+
+00:07:03.110 --> 00:07:03.120 align:start position:0%
+of size two right this is going to be
+ 
+
+00:07:03.120 --> 00:07:05.830 align:start position:0%
+of size two right this is going to be
+the<00:07:03.360><c> new</c><00:07:03.599><c> head</c><00:07:04.400><c> and</c><00:07:04.639><c> this</c><00:07:04.880><c> is</c><00:07:05.039><c> the</c><00:07:05.280><c> tail</c><00:07:05.599><c> this</c>
+
+00:07:05.830 --> 00:07:05.840 align:start position:0%
+the new head and this is the tail this
+ 
+
+00:07:05.840 --> 00:07:07.589 align:start position:0%
+the new head and this is the tail this
+is<00:07:05.919><c> the</c><00:07:06.160><c> end</c><00:07:06.319><c> of</c><00:07:06.400><c> the</c><00:07:06.560><c> list</c>
+
+00:07:07.589 --> 00:07:07.599 align:start position:0%
+is the end of the list
+ 
+
+00:07:07.599 --> 00:07:10.230 align:start position:0%
+is the end of the list
+so<00:07:07.759><c> we</c><00:07:07.919><c> did</c><00:07:08.160><c> our</c><00:07:08.319><c> job</c><00:07:08.639><c> of</c><00:07:08.800><c> reversing</c><00:07:09.360><c> it</c>
+
+00:07:10.230 --> 00:07:10.240 align:start position:0%
+so we did our job of reversing it
+ 
+
+00:07:10.240 --> 00:07:12.070 align:start position:0%
+so we did our job of reversing it
+reversing<00:07:10.720><c> these</c><00:07:10.960><c> two</c><00:07:11.199><c> nodes</c><00:07:11.520><c> but</c><00:07:11.680><c> we</c><00:07:11.919><c> still</c>
+
+00:07:12.070 --> 00:07:12.080 align:start position:0%
+reversing these two nodes but we still
+ 
+
+00:07:12.080 --> 00:07:14.070 align:start position:0%
+reversing these two nodes but we still
+have<00:07:12.319><c> one</c><00:07:12.560><c> more</c><00:07:12.800><c> node</c><00:07:13.039><c> so</c><00:07:13.199><c> we're</c><00:07:13.440><c> going</c><00:07:13.520><c> to</c>
+
+00:07:14.070 --> 00:07:14.080 align:start position:0%
+have one more node so we're going to
+ 
+
+00:07:14.080 --> 00:07:17.430 align:start position:0%
+have one more node so we're going to
+pop<00:07:14.400><c> back</c><00:07:14.720><c> up</c><00:07:15.280><c> out</c><00:07:15.440><c> of</c><00:07:15.599><c> our</c><00:07:15.680><c> recursive</c><00:07:16.319><c> call</c>
+
+00:07:17.430 --> 00:07:17.440 align:start position:0%
+pop back up out of our recursive call
+ 
+
+00:07:17.440 --> 00:07:20.629 align:start position:0%
+pop back up out of our recursive call
+okay<00:07:17.759><c> so</c><00:07:18.000><c> now</c><00:07:18.319><c> we're</c><00:07:18.560><c> finally</c><00:07:19.280><c> at</c><00:07:19.520><c> the</c><00:07:19.919><c> last</c>
+
+00:07:20.629 --> 00:07:20.639 align:start position:0%
+okay so now we're finally at the last
+ 
+
+00:07:20.639 --> 00:07:23.670 align:start position:0%
+okay so now we're finally at the last
+call<00:07:21.840><c> so</c><00:07:22.240><c> our</c><00:07:22.800><c> sub</c><00:07:23.120><c> problem</c>
+
+00:07:23.670 --> 00:07:23.680 align:start position:0%
+call so our sub problem
+ 
+
+00:07:23.680 --> 00:07:27.029 align:start position:0%
+call so our sub problem
+is<00:07:24.000><c> to</c><00:07:24.319><c> reverse</c><00:07:24.880><c> these</c><00:07:25.280><c> three</c><00:07:25.680><c> nodes</c><00:07:26.639><c> and</c><00:07:26.880><c> we</c>
+
+00:07:27.029 --> 00:07:27.039 align:start position:0%
+is to reverse these three nodes and we
+ 
+
+00:07:27.039 --> 00:07:28.950 align:start position:0%
+is to reverse these three nodes and we
+can<00:07:27.199><c> repeat</c><00:07:27.599><c> the</c><00:07:27.759><c> same</c><00:07:28.080><c> thing</c><00:07:28.240><c> we</c><00:07:28.400><c> did</c><00:07:28.639><c> over</c>
+
+00:07:28.950 --> 00:07:28.960 align:start position:0%
+can repeat the same thing we did over
+ 
+
+00:07:28.960 --> 00:07:29.350 align:start position:0%
+can repeat the same thing we did over
+here
+
+00:07:29.350 --> 00:07:29.360 align:start position:0%
+here
+ 
+
+00:07:29.360 --> 00:07:32.469 align:start position:0%
+here
+we're<00:07:29.599><c> gonna</c><00:07:30.319><c> for</c><00:07:30.639><c> one</c><00:07:31.199><c> ins</c><00:07:31.680><c> since</c><00:07:32.000><c> one</c><00:07:32.240><c> has</c>
+
+00:07:32.469 --> 00:07:32.479 align:start position:0%
+we're gonna for one ins since one has
+ 
+
+00:07:32.479 --> 00:07:34.870 align:start position:0%
+we're gonna for one ins since one has
+access<00:07:32.960><c> to</c><00:07:33.199><c> two</c>
+
+00:07:34.870 --> 00:07:34.880 align:start position:0%
+access to two
+ 
+
+00:07:34.880 --> 00:07:38.309 align:start position:0%
+access to two
+we're<00:07:35.199><c> going</c><00:07:35.440><c> to</c><00:07:35.759><c> set</c><00:07:36.240><c> two's</c><00:07:37.360><c> next</c><00:07:37.840><c> pointer</c>
+
+00:07:38.309 --> 00:07:38.319 align:start position:0%
+we're going to set two's next pointer
+ 
+
+00:07:38.319 --> 00:07:39.670 align:start position:0%
+we're going to set two's next pointer
+over<00:07:38.639><c> here</c><00:07:38.960><c> instead</c><00:07:39.360><c> of</c>
+
+00:07:39.670 --> 00:07:39.680 align:start position:0%
+over here instead of
+ 
+
+00:07:39.680 --> 00:07:42.830 align:start position:0%
+over here instead of
+null<00:07:40.479><c> we're</c><00:07:40.720><c> going</c><00:07:41.039><c> to</c><00:07:41.360><c> set</c><00:07:41.599><c> it</c><00:07:42.240><c> to</c>
+
+00:07:42.830 --> 00:07:42.840 align:start position:0%
+null we're going to set it to
+ 
+
+00:07:42.840 --> 00:07:45.749 align:start position:0%
+null we're going to set it to
+one<00:07:44.080><c> and</c><00:07:44.319><c> the</c><00:07:44.479><c> next</c><00:07:44.879><c> pointer</c>
+
+00:07:45.749 --> 00:07:45.759 align:start position:0%
+one and the next pointer
+ 
+
+00:07:45.759 --> 00:07:49.909 align:start position:0%
+one and the next pointer
+of<00:07:46.160><c> one</c><00:07:47.360><c> is</c><00:07:47.680><c> now</c><00:07:48.160><c> going</c><00:07:48.560><c> to</c><00:07:48.800><c> be</c>
+
+00:07:49.909 --> 00:07:49.919 align:start position:0%
+of one is now going to be
+ 
+
+00:07:49.919 --> 00:07:53.670 align:start position:0%
+of one is now going to be
+null<00:07:50.879><c> because</c><00:07:51.520><c> we've</c><00:07:51.919><c> reached</c><00:07:52.400><c> the</c><00:07:52.800><c> end</c>
+
+00:07:53.670 --> 00:07:53.680 align:start position:0%
+null because we've reached the end
+ 
+
+00:07:53.680 --> 00:07:55.830 align:start position:0%
+null because we've reached the end
+this<00:07:53.919><c> is</c><00:07:54.000><c> going</c><00:07:54.080><c> to</c><00:07:54.160><c> be</c><00:07:54.319><c> the</c><00:07:54.560><c> new</c><00:07:55.120><c> end</c><00:07:55.440><c> of</c><00:07:55.599><c> our</c>
+
+00:07:55.830 --> 00:07:55.840 align:start position:0%
+this is going to be the new end of our
+ 
+
+00:07:55.840 --> 00:07:57.189 align:start position:0%
+this is going to be the new end of our
+linked<00:07:56.160><c> list</c>
+
+00:07:57.189 --> 00:07:57.199 align:start position:0%
+linked list
+ 
+
+00:07:57.199 --> 00:08:00.469 align:start position:0%
+linked list
+so<00:07:57.360><c> we've</c><00:07:57.599><c> done</c><00:07:57.840><c> our</c><00:07:58.080><c> job</c><00:07:58.720><c> we</c><00:07:58.960><c> recursively</c>
+
+00:08:00.469 --> 00:08:00.479 align:start position:0%
+so we've done our job we recursively
+ 
+
+00:08:00.479 --> 00:08:04.070 align:start position:0%
+so we've done our job we recursively
+took<00:08:01.039><c> our</c><00:08:01.360><c> linked</c><00:08:01.680><c> list</c><00:08:02.160><c> and</c><00:08:02.319><c> reversed</c><00:08:02.960><c> it</c>
+
+00:08:04.070 --> 00:08:04.080 align:start position:0%
+took our linked list and reversed it
+ 
+
+00:08:04.080 --> 00:08:06.390 align:start position:0%
+took our linked list and reversed it
+the<00:08:04.240><c> only</c><00:08:04.560><c> problem</c><00:08:05.120><c> is</c><00:08:05.680><c> that</c><00:08:05.919><c> we</c><00:08:06.080><c> are</c><00:08:06.240><c> doing</c>
+
+00:08:06.390 --> 00:08:06.400 align:start position:0%
+the only problem is that we are doing
+ 
+
+00:08:06.400 --> 00:08:08.309 align:start position:0%
+the only problem is that we are doing
+this<00:08:06.639><c> recursively</c><00:08:07.520><c> so</c>
+
+00:08:08.309 --> 00:08:08.319 align:start position:0%
+this recursively so
+ 
+
+00:08:08.319 --> 00:08:11.110 align:start position:0%
+this recursively so
+we<00:08:08.639><c> have</c><00:08:08.879><c> to</c><00:08:09.840><c> in</c><00:08:10.000><c> our</c><00:08:10.160><c> code</c><00:08:10.560><c> we're</c><00:08:10.720><c> gonna</c><00:08:10.879><c> have</c>
+
+00:08:11.110 --> 00:08:11.120 align:start position:0%
+we have to in our code we're gonna have
+ 
+
+00:08:11.120 --> 00:08:12.550 align:start position:0%
+we have to in our code we're gonna have
+to<00:08:11.280><c> maintain</c>
+
+00:08:12.550 --> 00:08:12.560 align:start position:0%
+to maintain
+ 
+
+00:08:12.560 --> 00:08:18.469 align:start position:0%
+to maintain
+the<00:08:12.879><c> last</c><00:08:13.360><c> node</c><00:08:14.160><c> as</c><00:08:14.400><c> the</c><00:08:14.720><c> new</c><00:08:15.520><c> head</c>
+
+00:08:18.469 --> 00:08:18.479 align:start position:0%
+ 
+ 
+
+00:08:18.479 --> 00:08:21.189 align:start position:0%
+ 
+so<00:08:18.639><c> now</c><00:08:18.879><c> let's</c><00:08:19.120><c> code</c><00:08:19.440><c> it</c><00:08:19.599><c> up</c><00:08:20.240><c> as</c><00:08:20.479><c> with</c><00:08:20.879><c> most</c>
+
+00:08:21.189 --> 00:08:21.199 align:start position:0%
+so now let's code it up as with most
+ 
+
+00:08:21.199 --> 00:08:22.629 align:start position:0%
+so now let's code it up as with most
+recursive<00:08:21.840><c> functions</c>
+
+00:08:22.629 --> 00:08:22.639 align:start position:0%
+recursive functions
+ 
+
+00:08:22.639 --> 00:08:25.670 align:start position:0%
+recursive functions
+you<00:08:22.879><c> want</c><00:08:23.039><c> to</c><00:08:23.120><c> do</c><00:08:23.440><c> the</c><00:08:23.759><c> base</c><00:08:24.160><c> case</c><00:08:24.639><c> first</c><00:08:25.039><c> so</c><00:08:25.440><c> if</c>
+
+00:08:25.670 --> 00:08:25.680 align:start position:0%
+you want to do the base case first so if
+ 
+
+00:08:25.680 --> 00:08:26.469 align:start position:0%
+you want to do the base case first so if
+the<00:08:25.919><c> head</c><00:08:26.160><c> is</c>
+
+00:08:26.469 --> 00:08:26.479 align:start position:0%
+the head is
+ 
+
+00:08:26.479 --> 00:08:29.670 align:start position:0%
+the head is
+null<00:08:27.440><c> we</c><00:08:27.759><c> can</c><00:08:28.800><c> return</c>
+
+00:08:29.670 --> 00:08:29.680 align:start position:0%
+null we can return
+ 
+
+00:08:29.680 --> 00:08:32.790 align:start position:0%
+null we can return
+null<00:08:30.800><c> and</c><00:08:31.039><c> i'm</c><00:08:31.280><c> going</c><00:08:31.360><c> to</c><00:08:31.440><c> make</c><00:08:31.759><c> a</c><00:08:32.000><c> variable</c>
+
+00:08:32.790 --> 00:08:32.800 align:start position:0%
+null and i'm going to make a variable
+ 
+
+00:08:32.800 --> 00:08:34.949 align:start position:0%
+null and i'm going to make a variable
+to<00:08:33.120><c> maintain</c><00:08:33.680><c> the</c><00:08:33.919><c> new</c><00:08:34.240><c> head</c><00:08:34.479><c> which</c><00:08:34.719><c> i'm</c><00:08:34.880><c> going</c>
+
+00:08:34.949 --> 00:08:34.959 align:start position:0%
+to maintain the new head which i'm going
+ 
+
+00:08:34.959 --> 00:08:37.509 align:start position:0%
+to maintain the new head which i'm going
+to<00:08:35.200><c> initially</c><00:08:35.919><c> set</c><00:08:36.320><c> to</c><00:08:36.560><c> head</c>
+
+00:08:37.509 --> 00:08:37.519 align:start position:0%
+to initially set to head
+ 
+
+00:08:37.519 --> 00:08:39.829 align:start position:0%
+to initially set to head
+head<00:08:38.000><c> is</c><00:08:38.159><c> the</c><00:08:38.479><c> current</c><00:08:38.880><c> node</c><00:08:39.120><c> that</c><00:08:39.279><c> we're</c><00:08:39.519><c> at</c>
+
+00:08:39.829 --> 00:08:39.839 align:start position:0%
+head is the current node that we're at
+ 
+
+00:08:39.839 --> 00:08:41.589 align:start position:0%
+head is the current node that we're at
+in<00:08:40.159><c> our</c><00:08:40.320><c> recursive</c><00:08:40.959><c> call</c><00:08:41.279><c> so</c>
+
+00:08:41.589 --> 00:08:41.599 align:start position:0%
+in our recursive call so
+ 
+
+00:08:41.599 --> 00:08:45.030 align:start position:0%
+in our recursive call so
+if<00:08:42.719><c> head</c><00:08:43.839><c> dot</c><00:08:44.399><c> next</c>
+
+00:08:45.030 --> 00:08:45.040 align:start position:0%
+if head dot next
+ 
+
+00:08:45.040 --> 00:08:47.350 align:start position:0%
+if head dot next
+is<00:08:45.200><c> not</c><00:08:45.519><c> null</c><00:08:46.000><c> if</c><00:08:46.320><c> there's</c><00:08:46.640><c> still</c><00:08:46.880><c> a</c><00:08:47.040><c> sub</c>
+
+00:08:47.350 --> 00:08:47.360 align:start position:0%
+is not null if there's still a sub
+ 
+
+00:08:47.360 --> 00:08:48.949 align:start position:0%
+is not null if there's still a sub
+problem<00:08:47.839><c> if</c><00:08:48.080><c> we</c><00:08:48.240><c> can</c><00:08:48.480><c> keep</c>
+
+00:08:48.949 --> 00:08:48.959 align:start position:0%
+problem if we can keep
+ 
+
+00:08:48.959 --> 00:08:52.230 align:start position:0%
+problem if we can keep
+uh<00:08:49.279><c> reversing</c><00:08:50.480><c> then</c><00:08:50.959><c> we're</c><00:08:51.200><c> gonna</c><00:08:51.519><c> have</c><00:08:51.920><c> our</c>
+
+00:08:52.230 --> 00:08:52.240 align:start position:0%
+uh reversing then we're gonna have our
+ 
+
+00:08:52.240 --> 00:08:54.630 align:start position:0%
+uh reversing then we're gonna have our
+recursive<00:08:52.800><c> call</c><00:08:53.120><c> so</c>
+
+00:08:54.630 --> 00:08:54.640 align:start position:0%
+recursive call so
+ 
+
+00:08:54.640 --> 00:08:57.990 align:start position:0%
+recursive call so
+reverse<00:08:56.720><c> the</c><00:08:56.959><c> list</c>
+
+00:08:57.990 --> 00:08:58.000 align:start position:0%
+reverse the list
+ 
+
+00:08:58.000 --> 00:09:01.509 align:start position:0%
+reverse the list
+pass<00:08:58.560><c> in</c><00:08:58.880><c> head</c><00:08:59.120><c> dot</c><00:08:59.519><c> next</c><00:09:00.880><c> and</c>
+
+00:09:01.509 --> 00:09:01.519 align:start position:0%
+pass in head dot next and
+ 
+
+00:09:01.519 --> 00:09:04.070 align:start position:0%
+pass in head dot next and
+the<00:09:01.760><c> return</c><00:09:02.320><c> value</c><00:09:02.720><c> of</c><00:09:02.880><c> this</c><00:09:03.440><c> we</c><00:09:03.680><c> are</c><00:09:03.839><c> going</c><00:09:03.920><c> to</c>
+
+00:09:04.070 --> 00:09:04.080 align:start position:0%
+the return value of this we are going to
+ 
+
+00:09:04.080 --> 00:09:06.230 align:start position:0%
+the return value of this we are going to
+have<00:09:04.480><c> as</c><00:09:04.720><c> the</c><00:09:04.959><c> new</c><00:09:05.279><c> head</c>
+
+00:09:06.230 --> 00:09:06.240 align:start position:0%
+have as the new head
+ 
+
+00:09:06.240 --> 00:09:09.430 align:start position:0%
+have as the new head
+so<00:09:06.640><c> if</c><00:09:07.360><c> this</c><00:09:07.680><c> returns</c><00:09:08.240><c> something</c>
+
+00:09:09.430 --> 00:09:09.440 align:start position:0%
+so if this returns something
+ 
+
+00:09:09.440 --> 00:09:11.910 align:start position:0%
+so if this returns something
+so<00:09:09.680><c> we're</c><00:09:09.839><c> going</c><00:09:09.920><c> to</c><00:09:10.080><c> set</c><00:09:10.320><c> the</c><00:09:10.480><c> result</c><00:09:11.040><c> of</c><00:09:11.279><c> that</c>
+
+00:09:11.910 --> 00:09:11.920 align:start position:0%
+so we're going to set the result of that
+ 
+
+00:09:11.920 --> 00:09:12.470 align:start position:0%
+so we're going to set the result of that
+to
+
+00:09:12.470 --> 00:09:12.480 align:start position:0%
+to
+ 
+
+00:09:12.480 --> 00:09:16.150 align:start position:0%
+to
+new<00:09:12.720><c> head</c><00:09:14.080><c> and</c><00:09:14.720><c> since</c><00:09:15.040><c> head</c><00:09:15.279><c> dot</c><00:09:15.600><c> next</c>
+
+00:09:16.150 --> 00:09:16.160 align:start position:0%
+new head and since head dot next
+ 
+
+00:09:16.160 --> 00:09:18.790 align:start position:0%
+new head and since head dot next
+is<00:09:16.320><c> the</c><00:09:16.640><c> next</c><00:09:17.040><c> node</c><00:09:17.360><c> of</c><00:09:17.600><c> head</c><00:09:18.240><c> we</c><00:09:18.480><c> want</c><00:09:18.640><c> to</c>
+
+00:09:18.790 --> 00:09:18.800 align:start position:0%
+is the next node of head we want to
+ 
+
+00:09:18.800 --> 00:09:21.350 align:start position:0%
+is the next node of head we want to
+reverse<00:09:19.440><c> that</c><00:09:19.760><c> link</c><00:09:20.080><c> so</c><00:09:20.320><c> what</c><00:09:20.480><c> we</c><00:09:20.720><c> can</c><00:09:20.880><c> do</c>
+
+00:09:21.350 --> 00:09:21.360 align:start position:0%
+reverse that link so what we can do
+ 
+
+00:09:21.360 --> 00:09:24.790 align:start position:0%
+reverse that link so what we can do
+is<00:09:22.240><c> get</c><00:09:22.480><c> the</c><00:09:22.800><c> double</c>
+
+00:09:24.790 --> 00:09:24.800 align:start position:0%
+is get the double
+ 
+
+00:09:24.800 --> 00:09:28.310 align:start position:0%
+is get the double
+so<00:09:25.040><c> head</c><00:09:25.279><c> dot</c><00:09:25.519><c> next</c><00:09:25.839><c> dot</c><00:09:26.320><c> next</c>
+
+00:09:28.310 --> 00:09:28.320 align:start position:0%
+so head dot next dot next
+ 
+
+00:09:28.320 --> 00:09:30.630 align:start position:0%
+so head dot next dot next
+is<00:09:28.480><c> going</c><00:09:28.640><c> to</c><00:09:28.720><c> be</c><00:09:28.959><c> set</c><00:09:29.440><c> to</c><00:09:29.680><c> head</c><00:09:30.080><c> what</c><00:09:30.320><c> this</c><00:09:30.560><c> is</c>
+
+00:09:30.630 --> 00:09:30.640 align:start position:0%
+is going to be set to head what this is
+ 
+
+00:09:30.640 --> 00:09:31.750 align:start position:0%
+is going to be set to head what this is
+doing<00:09:31.040><c> is</c><00:09:31.279><c> just</c>
+
+00:09:31.750 --> 00:09:31.760 align:start position:0%
+doing is just
+ 
+
+00:09:31.760 --> 00:09:34.630 align:start position:0%
+doing is just
+reversing<00:09:32.399><c> the</c><00:09:32.560><c> link</c><00:09:33.120><c> between</c><00:09:33.519><c> the</c><00:09:33.680><c> next</c><00:09:34.080><c> node</c>
+
+00:09:34.630 --> 00:09:34.640 align:start position:0%
+reversing the link between the next node
+ 
+
+00:09:34.640 --> 00:09:36.070 align:start position:0%
+reversing the link between the next node
+and<00:09:34.959><c> head</c>
+
+00:09:36.070 --> 00:09:36.080 align:start position:0%
+and head
+ 
+
+00:09:36.080 --> 00:09:39.110 align:start position:0%
+and head
+and<00:09:36.399><c> lastly</c><00:09:37.120><c> we</c><00:09:37.279><c> can</c><00:09:37.519><c> say</c><00:09:38.160><c> head</c><00:09:38.640><c> dot</c>
+
+00:09:39.110 --> 00:09:39.120 align:start position:0%
+and lastly we can say head dot
+ 
+
+00:09:39.120 --> 00:09:42.710 align:start position:0%
+and lastly we can say head dot
+next<00:09:40.000><c> is</c><00:09:40.160><c> going</c><00:09:40.320><c> to</c><00:09:40.399><c> be</c><00:09:40.560><c> equal</c><00:09:41.120><c> to</c><00:09:41.440><c> null</c><00:09:41.760><c> so</c><00:09:42.080><c> if</c>
+
+00:09:42.710 --> 00:09:42.720 align:start position:0%
+next is going to be equal to null so if
+ 
+
+00:09:42.720 --> 00:09:45.430 align:start position:0%
+next is going to be equal to null so if
+head<00:09:43.120><c> happens</c><00:09:43.600><c> to</c><00:09:43.760><c> be</c><00:09:44.080><c> the</c><00:09:44.480><c> first</c><00:09:44.800><c> node</c><00:09:45.120><c> in</c><00:09:45.200><c> the</c>
+
+00:09:45.430 --> 00:09:45.440 align:start position:0%
+head happens to be the first node in the
+ 
+
+00:09:45.440 --> 00:09:45.990 align:start position:0%
+head happens to be the first node in the
+list
+
+00:09:45.990 --> 00:09:46.000 align:start position:0%
+list
+ 
+
+00:09:46.000 --> 00:09:48.949 align:start position:0%
+list
+we're<00:09:46.399><c> setting</c><00:09:46.720><c> the</c><00:09:46.880><c> next</c><00:09:47.200><c> pointer</c><00:09:47.600><c> to</c><00:09:47.839><c> null</c>
+
+00:09:48.949 --> 00:09:48.959 align:start position:0%
+we're setting the next pointer to null
+ 
+
+00:09:48.959 --> 00:09:49.269 align:start position:0%
+we're setting the next pointer to null
+and
+
+00:09:49.269 --> 00:09:49.279 align:start position:0%
+and
+ 
+
+00:09:49.279 --> 00:09:51.110 align:start position:0%
+and
+of<00:09:49.440><c> course</c><00:09:49.680><c> this</c><00:09:49.920><c> function</c><00:09:50.560><c> wants</c><00:09:50.880><c> us</c><00:09:50.959><c> to</c>
+
+00:09:51.110 --> 00:09:51.120 align:start position:0%
+of course this function wants us to
+ 
+
+00:09:51.120 --> 00:09:53.430 align:start position:0%
+of course this function wants us to
+reverse<00:09:51.519><c> the</c><00:09:51.680><c> list</c><00:09:52.000><c> and</c><00:09:52.160><c> return</c><00:09:52.640><c> the</c><00:09:52.800><c> new</c><00:09:53.120><c> head</c>
+
+00:09:53.430 --> 00:09:53.440 align:start position:0%
+reverse the list and return the new head
+ 
+
+00:09:53.440 --> 00:09:53.829 align:start position:0%
+reverse the list and return the new head
+so
+
+00:09:53.829 --> 00:09:53.839 align:start position:0%
+so
+ 
+
+00:09:53.839 --> 00:09:56.949 align:start position:0%
+so
+we're<00:09:54.160><c> gonna</c><00:09:54.480><c> return</c><00:09:55.519><c> the</c><00:09:55.680><c> new</c><00:09:56.000><c> head</c>
+
+00:09:56.949 --> 00:09:56.959 align:start position:0%
+we're gonna return the new head
+ 
+
+00:09:56.959 --> 00:10:00.150 align:start position:0%
+we're gonna return the new head
+so<00:09:57.200><c> i</c><00:09:57.360><c> think</c><00:09:58.320><c> so</c><00:09:58.480><c> this</c><00:09:58.800><c> works</c><00:09:59.360><c> and</c><00:09:59.760><c> i</c><00:09:59.839><c> think</c><00:10:00.080><c> it</c>
+
+00:10:00.150 --> 00:10:00.160 align:start position:0%
+so i think so this works and i think it
+ 
+
+00:10:00.160 --> 00:10:02.069 align:start position:0%
+so i think so this works and i think it
+might<00:10:00.320><c> be</c><00:10:00.560><c> a</c><00:10:00.720><c> little</c><00:10:01.040><c> confusing</c><00:10:01.600><c> the</c><00:10:01.760><c> way</c><00:10:01.920><c> i</c>
+
+00:10:02.069 --> 00:10:02.079 align:start position:0%
+might be a little confusing the way i
+ 
+
+00:10:02.079 --> 00:10:04.949 align:start position:0%
+might be a little confusing the way i
+wrote<00:10:02.320><c> it</c><00:10:02.480><c> because</c><00:10:02.720><c> we</c><00:10:02.880><c> have</c><00:10:03.480><c> head.next.next</c>
+
+00:10:04.949 --> 00:10:04.959 align:start position:0%
+wrote it because we have head.next.next
+ 
+
+00:10:04.959 --> 00:10:07.670 align:start position:0%
+wrote it because we have head.next.next
+but<00:10:05.839><c> if</c><00:10:06.000><c> you</c><00:10:06.560><c> want</c><00:10:06.720><c> to</c><00:10:06.880><c> understand</c><00:10:07.440><c> it</c><00:10:07.600><c> a</c>
+
+00:10:07.670 --> 00:10:07.680 align:start position:0%
+but if you want to understand it a
+ 
+
+00:10:07.680 --> 00:10:08.310 align:start position:0%
+but if you want to understand it a
+little<00:10:07.920><c> more</c>
+
+00:10:08.310 --> 00:10:08.320 align:start position:0%
+little more
+ 
+
+00:10:08.320 --> 00:10:11.350 align:start position:0%
+little more
+i<00:10:08.399><c> would</c><00:10:08.720><c> try</c><00:10:08.959><c> to</c><00:10:09.920><c> like</c><00:10:10.320><c> mentally</c>
+
+00:10:11.350 --> 00:10:11.360 align:start position:0%
+i would try to like mentally
+ 
+
+00:10:11.360 --> 00:10:13.829 align:start position:0%
+i would try to like mentally
+run<00:10:11.680><c> through</c><00:10:11.920><c> a</c><00:10:12.000><c> couple</c><00:10:12.399><c> test</c><00:10:12.720><c> cases</c><00:10:13.680><c> for</c>
+
+00:10:13.829 --> 00:10:13.839 align:start position:0%
+run through a couple test cases for
+ 
+
+00:10:13.839 --> 00:10:15.670 align:start position:0%
+run through a couple test cases for
+example<00:10:14.160><c> if</c><00:10:14.240><c> you</c><00:10:14.320><c> were</c><00:10:14.480><c> just</c><00:10:14.640><c> given</c><00:10:14.959><c> one</c><00:10:15.279><c> node</c>
+
+00:10:15.670 --> 00:10:15.680 align:start position:0%
+example if you were just given one node
+ 
+
+00:10:15.680 --> 00:10:17.190 align:start position:0%
+example if you were just given one node
+like
+
+00:10:17.190 --> 00:10:17.200 align:start position:0%
+like
+ 
+
+00:10:17.200 --> 00:10:18.790 align:start position:0%
+like
+if<00:10:17.360><c> you</c><00:10:17.440><c> were</c><00:10:17.519><c> just</c><00:10:17.680><c> given</c><00:10:17.920><c> a</c><00:10:18.000><c> linked</c><00:10:18.240><c> list</c><00:10:18.560><c> of</c>
+
+00:10:18.790 --> 00:10:18.800 align:start position:0%
+if you were just given a linked list of
+ 
+
+00:10:18.800 --> 00:10:20.949 align:start position:0%
+if you were just given a linked list of
+this<00:10:19.440><c> try</c><00:10:19.600><c> to</c><00:10:19.760><c> run</c><00:10:20.000><c> through</c><00:10:20.240><c> the</c><00:10:20.399><c> code</c>
+
+00:10:20.949 --> 00:10:20.959 align:start position:0%
+this try to run through the code
+ 
+
+00:10:20.959 --> 00:10:24.069 align:start position:0%
+this try to run through the code
+see<00:10:21.120><c> what</c><00:10:21.360><c> the</c><00:10:21.519><c> code</c><00:10:21.839><c> does</c><00:10:22.480><c> see</c><00:10:23.279><c> what</c><00:10:23.680><c> the</c>
+
+00:10:24.069 --> 00:10:24.079 align:start position:0%
+see what the code does see what the
+ 
+
+00:10:24.079 --> 00:10:27.590 align:start position:0%
+see what the code does see what the
+function<00:10:24.480><c> returns</c><00:10:25.360><c> see</c><00:10:25.839><c> which</c><00:10:26.480><c> like</c><00:10:26.720><c> this</c>
+
+00:10:27.590 --> 00:10:27.600 align:start position:0%
+function returns see which like this
+ 
+
+00:10:27.600 --> 00:10:29.910 align:start position:0%
+function returns see which like this
+statement<00:10:28.160><c> would</c><00:10:28.399><c> not</c><00:10:28.800><c> ever</c><00:10:29.120><c> execute</c><00:10:29.680><c> if</c><00:10:29.760><c> we</c>
+
+00:10:29.910 --> 00:10:29.920 align:start position:0%
+statement would not ever execute if we
+ 
+
+00:10:29.920 --> 00:10:31.030 align:start position:0%
+statement would not ever execute if we
+were<00:10:30.160><c> given</c>
+
+00:10:31.030 --> 00:10:31.040 align:start position:0%
+were given
+ 
+
+00:10:31.040 --> 00:10:34.470 align:start position:0%
+were given
+a<00:10:32.320><c> link</c><00:10:32.560><c> list</c><00:10:32.880><c> of</c><00:10:33.040><c> size</c><00:10:33.440><c> one</c><00:10:33.839><c> this</c><00:10:34.079><c> is</c><00:10:34.320><c> not</c>
+
+00:10:34.470 --> 00:10:34.480 align:start position:0%
+a link list of size one this is not
+ 
+
+00:10:34.480 --> 00:10:35.670 align:start position:0%
+a link list of size one this is not
+going<00:10:34.560><c> to</c><00:10:34.720><c> execute</c>
+
+00:10:35.670 --> 00:10:35.680 align:start position:0%
+going to execute
+ 
+
+00:10:35.680 --> 00:10:38.069 align:start position:0%
+going to execute
+so<00:10:35.920><c> just</c><00:10:36.160><c> kind</c><00:10:36.320><c> of</c><00:10:36.480><c> like</c><00:10:36.959><c> try</c><00:10:37.279><c> that</c><00:10:37.519><c> out</c><00:10:37.920><c> see</c>
+
+00:10:38.069 --> 00:10:38.079 align:start position:0%
+so just kind of like try that out see
+ 
+
+00:10:38.079 --> 00:10:39.269 align:start position:0%
+so just kind of like try that out see
+what<00:10:38.320><c> happens</c><00:10:38.640><c> if</c>
+
+00:10:39.269 --> 00:10:39.279 align:start position:0%
+what happens if
+ 
+
+00:10:39.279 --> 00:10:42.870 align:start position:0%
+what happens if
+you<00:10:39.519><c> had</c><00:10:39.680><c> a</c><00:10:39.839><c> linked</c><00:10:40.079><c> list</c><00:10:40.399><c> of</c><00:10:40.560><c> size</c><00:10:40.959><c> two</c>
+
+00:10:42.870 --> 00:10:42.880 align:start position:0%
+you had a linked list of size two
+ 
+
+00:10:42.880 --> 00:10:45.350 align:start position:0%
+you had a linked list of size two
+like<00:10:43.120><c> this</c><00:10:43.920><c> and</c><00:10:44.160><c> use</c><00:10:44.399><c> pen</c><00:10:44.640><c> and</c><00:10:44.720><c> paper</c><00:10:45.120><c> draw</c><00:10:45.279><c> a</c>
+
+00:10:45.350 --> 00:10:45.360 align:start position:0%
+like this and use pen and paper draw a
+ 
+
+00:10:45.360 --> 00:10:46.630 align:start position:0%
+like this and use pen and paper draw a
+picture
+
+00:10:46.630 --> 00:10:46.640 align:start position:0%
+picture
+ 
+
+00:10:46.640 --> 00:10:49.829 align:start position:0%
+picture
+and<00:10:46.880><c> lastly</c><00:10:47.760><c> the</c><00:10:48.000><c> reason</c><00:10:48.399><c> why</c><00:10:48.640><c> the</c><00:10:48.800><c> memory</c><00:10:49.440><c> is</c>
+
+00:10:49.829 --> 00:10:49.839 align:start position:0%
+and lastly the reason why the memory is
+ 
+
+00:10:49.839 --> 00:10:52.550 align:start position:0%
+and lastly the reason why the memory is
+linear<00:10:50.399><c> is</c><00:10:50.640><c> because</c><00:10:51.360><c> if</c><00:10:51.600><c> we</c><00:10:51.760><c> were</c><00:10:51.920><c> given</c><00:10:52.399><c> a</c>
+
+00:10:52.550 --> 00:10:52.560 align:start position:0%
+linear is because if we were given a
+ 
+
+00:10:52.560 --> 00:10:53.269 align:start position:0%
+linear is because if we were given a
+linked<00:10:52.880><c> list</c>
+
+00:10:53.269 --> 00:10:53.279 align:start position:0%
+linked list
+ 
+
+00:10:53.279 --> 00:10:56.630 align:start position:0%
+linked list
+of<00:10:53.519><c> size</c><00:10:54.000><c> two</c><00:10:54.880><c> our</c><00:10:55.279><c> recursive</c><00:10:55.920><c> call</c>
+
+00:10:56.630 --> 00:10:56.640 align:start position:0%
+of size two our recursive call
+ 
+
+00:10:56.640 --> 00:10:59.509 align:start position:0%
+of size two our recursive call
+is<00:10:56.800><c> gonna</c><00:10:57.120><c> be</c><00:10:57.920><c> size</c><00:10:58.240><c> two</c><00:10:58.720><c> but</c><00:10:58.880><c> i</c><00:10:58.959><c> hope</c><00:10:59.200><c> this</c><00:10:59.360><c> was</c>
+
+00:10:59.509 --> 00:10:59.519 align:start position:0%
+is gonna be size two but i hope this was
+ 
+
+00:10:59.519 --> 00:11:00.310 align:start position:0%
+is gonna be size two but i hope this was
+helpful
+
+00:11:00.310 --> 00:11:00.320 align:start position:0%
+helpful
+ 
+
+00:11:00.320 --> 00:11:02.310 align:start position:0%
+helpful
+please<00:11:00.640><c> leave</c><00:11:00.800><c> a</c><00:11:00.880><c> like</c><00:11:01.120><c> and</c><00:11:01.279><c> subscribe</c><00:11:02.160><c> thank</c>
+
+00:11:02.310 --> 00:11:02.320 align:start position:0%
+please leave a like and subscribe thank
+ 
+
+00:11:02.320 --> 00:11:04.230 align:start position:0%
+please leave a like and subscribe thank
+you<00:11:02.560><c> and</c><00:11:02.720><c> thank</c><00:11:02.880><c> you</c><00:11:03.040><c> so</c><00:11:03.200><c> much</c><00:11:03.360><c> for</c><00:11:03.519><c> watching</c>
+
+00:11:04.230 --> 00:11:04.240 align:start position:0%
+you and thank you so much for watching
+ 
+
+00:11:04.240 --> 00:11:08.399 align:start position:0%
+you and thank you so much for watching
+and<00:11:04.399><c> i'll</c><00:11:04.560><c> hopefully</c><00:11:05.040><c> see</c><00:11:05.200><c> you</c><00:11:05.360><c> pretty</c><00:11:05.600><c> soon</c>
+

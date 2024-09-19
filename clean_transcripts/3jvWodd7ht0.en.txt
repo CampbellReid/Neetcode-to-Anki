@@ -1,0 +1,324 @@
+everyone welcome back and let's write
+some more neat code today
+so today let's look at a problem
+palindrome partitioning
+so we're given a string s and we want to
+partition it in such a way that
+every single sub-string of the partition
+is a palindrome and we want to return
+all
+possible ways that we can partition it
+in
+like by following this rule and if you
+don't remember a palindrome is basically
+a string
+that if you reverse it it's the exact
+same string
+so one thing to notice is no matter what
+string we're given it's
+possible to partition it in this way why
+is that the case
+because in this case we have a a b
+we know that any any single character
+like
+a is a palindrome right if you reverse a
+you get a
+any character including b is a
+palindrome right
+reverse it you get b so one way to
+partition this is take
+each character and separate it right and
+that's what the first partition over
+here is right each character by itself
+so are there any other ways to partition
+this other than just
+this single way well if you take the
+first two characters
+you see that that is also a palindrome
+right a
+a reversa is still a a and of course b
+by itself we know any single character
+is definitely a palindrome
+so for the second partition we'll have
+two sub strings right
+a and b so then this is our result
+because we cannot have any other sub
+strings that are phalan drums right
+a b is not a palindrome if you reverse
+it we get b a that's not the same string
+if you take this and you reverse it you
+get b a
+a that's not a palindrome so the brute
+force way in this case
+to solve this problem happens to also be
+the main way to solve this problem which
+is
+backtracking so we are going to use
+backtracking to solve this problem and
+what we're going to do is create
+every single possible way we could
+partition this
+and then check if those partitions form
+palindromes and if they do we are going
+to add them to our
+result list right because ultimately we
+want to re
+we want a list that has every single way
+to partition this
+while maintaining palindromes so for the
+first
+partition we have three choices do you
+see what they
+are if we want a first partition well
+the first partition can either be a by
+itself right
+so a by itself which is if we just took
+the first
+character and said that that was one
+partition another
+partition is double a right if we just
+took the first two characters
+as our first partition or the last one
+obviously if we just took the entire
+string as our first partition
+now we will check is this a palindrome
+how are we going to check well we can
+start comparing the first
+and last characters right and we see
+that well they're not even equal
+right so this is not a palindrome so
+we are not going to continue on this
+branch
+or on this path for our depth for search
+tree but we know that this
+by itself is a palindrome right so this
+is going to be our first partition now
+we're going to take the remaining
+characters
+a and b and try to partition them
+right so for one partition of those
+remaining characters we could get a
+single a if we took this first one
+another partition we could get
+is a b if we took
+both of these characters but we look at
+the first character and last character
+this is not a palindrome
+this is a palindrome but this is not a
+palindrome
+so we don't have to continue on this
+path and from
+here we know we already took the first
+two characters as our first partition
+so we only have one choice for our
+second partition
+and that's just the character b and we
+know a single character by itself
+does form a partition and we also know
+that we have no more remaining
+characters right we already took the
+first three characters
+so what this tells us is this is one
+possible way to partition
+to make sure that all the substrings are
+palindromes right both of these
+substrings are palindromes so this is
+one possible uh solution so now the only
+path for us to continue we can't do this
+and we can't do this
+and we cannot do this anymore we don't
+have any more characters
+so we can continue this one how many
+choices do we have well we took the
+first two a's
+right so now we only have one choice and
+that's going to be the b
+so we for our third partition in
+this line is going to be b so this one
+had
+two uh partitions right two strings
+this one has three and all of them
+happen to be palindrome so this is
+also a possible solution so that's how
+you basically solve this problem
+with backtracking it's not super
+efficient right it's going to be at
+least 2 to the power of
+n because we're brute forcing it but now
+let me show you the code
+so let's have our result this is what's
+going to store all of the partitions
+that we
+create all the possible partitions let's
+also have
+a variable called part this is this
+basically stands for partitions this is
+our
+current partition right so if our
+current partition happens to be
+this this is just going to be the single
+partition the result is going to be what
+stores the partitions right so this will
+possibly have you know multiple
+partitions in it
+and now i'm going to create a nested
+function depth first search for
+our br our backtracking the only thing
+i'm going to pass into it is i the index
+of the character
+we're currently at and so since this
+function is
+nested inside this function these two
+variables as well as
+s the string are going to be accessible
+in this even if we don't pass them into
+it
+so since this is a recursive function
+first thing we check is the base case so
+if i
+happens to be out of bound so if it's
+greater than or equal to the length of
+the input string
+s what are we going to do well in that
+case
+the same thing that we did over here
+right we knew that we had
+our a valid partition and we had no more
+characters to add so in that case we
+know that this
+is a possible solution so what i'm going
+to do here is basically to our result
+i'm going to append the current
+partition that we have formed
+but not only that i'm going to clone it
+because we know
+or rather i'm gonna copy it because we
+know if we end up
+in a different recursive call making
+changes to this variable there's only
+one part partition variable so it's not
+like there are multiple
+partitions being created we only have a
+single one so every time
+we append to result we have to make a
+copy of it
+and after we do that we can return
+because this is our base case
+if we haven't reached the last index
+what can we do well we can iterate
+through
+every other character in our string
+right so
+we're going to start at i and keep going
+until we get to the
+end of the string and
+for this meaning so this is going to be
+our sub string right this is
+every possible substring and we want to
+know is it a palindrome
+so so the indices are going to tell us
+if
+from a string s starting at index i all
+the way to j
+we're going to check every possible
+string i'm going to add one to j
+to get rid of the off by one error and i
+want to
+know is this a string is this a
+palindrome
+i'm also going to pass in the indices i
+and j
+so we know what our left and right
+boundaries are and actually since we are
+passing in these
+boundaries we don't actually need to
+create a substring we can just pass
+s itself so we want to know is s a
+palindrome if you take it
+to start at index i and end at index
+j is this a palindrome and so if it
+happens to be a palm drum i'll actually
+write this helper function later we'll
+just assume we have it now so if this
+happens to be a palindrome what can we
+do
+we can to our partition we can add this
+string so s from index i
+to index j get rid of the off by 1 error
+we can add this
+so this is our current partition and we
+want to keep
+because we know s this substring is a
+palindrome
+and so now we can recursively do our
+depth first search
+looking for additional palindromes and
+of course we'll start at j
+plus one because that's going to be the
+next
+character and after we do our recursive
+function we have to clean
+up so since we know we only have one
+single partition variable
+after we have added this and added the
+substring and then ran our debt for
+search
+looking for all possible additional
+partitions
+after that we can take the string that
+we just added over here and then pop
+that from our partition list and that's
+actually our entire
+depth for search function you notice we
+have our base case when we go out of
+bounds
+and with this loop we are generating
+every single possible substring right
+from i to j
+we're checking if it's a palindrome if
+it is then we're recursively continuing
+our depth for search
+if it's not a palindrome then we're just
+skipping that substring altogether and
+going to the next
+iteration of the loop so that's our
+entire function and the only thing left
+for us to do is to actually
+call it so debt for search will pass in
+zero because we know that's the start
+index
+and then what we're going to do is
+return result
+and before i forget we know we have to
+actually write this helper function that
+we called before we even wrote it so
+let's write that really quickly is
+palindrome
+it'll accept a string and it'll accept
+left and right boundaries so we just
+have to check if it's a palindrome
+so while left is less than right
+we'll check if the character at the left
+position
+doesn't equal the character at the right
+position that means
+it's not a palindrome so we can return
+false if it
+if they are equal then we can update our
+left and right pointer so add one to
+left
+and subtract one from the right pointer
+and if this loop this entire loop
+executes and all the characters actually
+were equal
+then we'll exit the loop and then we can
+return true because that means it
+is a palindrome and now let me just run
+it to prove to you that it works
+and hopefully it's somewhat efficient
+yep it runs perfectly and
+it is pretty efficient so i hope this
+was helpful
+if you enjoyed please like and subscribe
+it supports the channel a lot and i'll
+hopefully

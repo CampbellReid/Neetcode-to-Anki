@@ -1,0 +1,385 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+let's solve distinct subsequences this
+is another hard problem and this is
+actually going to be solved with dynamic
+programming it's very similar to some
+other dynamic programming problems
+involving subsequences particularly
+longest common subsequence
+which is a problem that i've solved on
+this channel before so if you struggle
+with this problem
+i would recommend solving this one or
+watching that video before
+so we're given two strings s and t and
+we want to return
+the total number of distinct
+subsequences
+of s which equal t so basically what
+we're doing is we're looking for
+subsequences
+of s that happen to match the entire
+string t and if you don't remember what
+a subsequence is
+basically for let's say this string a
+subsequence is just a subset
+of some particular characters so
+basically maybe we don't want to include
+the b
+we don't want to include the d so this
+happens to be a subsequence ace right a
+c e this one is not a subsequence
+because it's not in the correct
+order of these you can't change the
+relative order of characters in the
+subsequence
+so we're given an example s and t so
+basically these are both
+rapid just spelled a little bit
+differently right this one has an extra
+b
+in it so how many different sub
+sequences of this string s
+can we take that exactly match this
+string t
+well let's look character by character
+so let's start at the first character of
+this the first character of this
+they exactly match each other right so
+okay that's good so now we're going to
+look at the sub problem right we found
+these two match exactly now how many
+different ways can these sub sequences
+match each other
+now how many ways can we get this string
+how many sub sequences of it can we get
+that match now the remainder of this
+string
+now we see again both of these
+characters are a so so far they're
+exactly matching each other that's good
+and we get to a b these b's match each
+other that's also good so so far we're
+getting pretty close
+to getting a subsequence of this to
+exactly match this right we only have to
+match three more characters
+we see another b that's good but now we
+see we're looking for an i right we need
+an i
+and a t so that we can create an exact
+subsequence of this but
+so far we have a b right so what are we
+going to do in this case
+so far what we've been doing is we've
+been basically evaluating this we've
+seen that at the i
+pointer which is corresponding to the
+string s and the j pointers
+corresponding to string t
+if the characters at those corresponding
+positions match each other
+we're basically just incrementing both
+indices right because we're just trying
+to match that string t
+right so if both of the characters match
+we can continue to move on right
+so this is going to be the else
+condition where we just got to right now
+right we're looking at
+b in the string s and i in the string t
+right they don't match each other so
+what we're going to do is we're going to
+take
+i and increment it by one we're going to
+take the i pointer
+and then shift it to this next character
+over here
+right why are we leaving j the same
+though basically our j pointer is over
+here and it's going to stay at this
+character
+why is it staying here because it's
+required for us to
+match every single character in string t
+right that's what the goal of this
+problem is we need all sub sequences
+from s
+that exactly match t so what we're doing
+is so for now we're just saying this b
+we're skipping it right now we're going
+to look at the next character maybe
+there's some ways that we can match the
+remainder of this string
+to this string okay so now our eye
+pointer is at this
+character i our j pointers at this
+character i so in this case the
+characters do match each other so what
+are we going to do
+similarly to what we did before we're
+going to increment both indices by one
+we can move to the next position so
+we're at this character now in s we're
+at this character now
+in t once again these characters exactly
+match each other
+right so once again we're going to take
+both pointers and shift them by one
+now we get to a base case right both
+strings are
+empty so what are we going to return in
+that case basically that tells us we
+went through every single character in t
+right and we matched every single
+character now there's no characters
+remaining right so what would the count
+be in that case
+how many subsequences of an empty string
+can we match
+to another empty string basically just
+one right that's our base case we're
+returning one now
+but my question to you is hold on a
+minute we're returning
+one right so our result happens to be
+one but in this problem description they
+return to three
+why is that how did they get three
+different ways when our current
+algorithm
+that i've shown you these two conditions
+only gave us a single one
+so what did we end up missing well let's
+take a look at their explanation over
+here they say there's three different
+ways why is that
+well when you take a look at the b
+characters right what we
+said what we originally said is this b
+is gonna match this b for sure and
+that's the only way that we
+did it but we and then basically we took
+like over here you can see we took our
+pointers and incremented them both by
+one then we went to the next b
+but that doesn't necessarily have to be
+the case isn't it possible
+just because these characters match
+doesn't mean
+we have to require them to match we can
+say hey
+let's just skip this b even though it
+matches this b maybe there's another b
+over here that can also match this b so
+what i'm saying here is if these
+characters match each other right if the
+with this if condition we this is one
+way we can do it but we can
+also do another thing which is we can
+take our i pointer
+increment it by one and take our j
+pointer and leave it the same
+basically we're doing over here what we
+did down here so in in
+in this if case we're going to take both
+of these results
+basically counting the number of ways
+that we can compute subsequences
+with both of these and totaling them up
+and that's what we're going to end up
+returning
+so what would happen if we ended up
+skipping this b and then let's say we
+took
+this b and matched it with this previous
+b right then what would we get well
+then we'd get to these pointers right
+and again we can say okay these b's are
+now going to match each other
+right and then these two i characters
+are going to match each other and then
+the t's are going to match each other so
+that's an additional
+one way that we could we could take a
+subsequence of
+s and turn it into t so that's another
+way so far our total
+is two so what's the third way that we
+could do it well once again
+we see that this b matches this b but it
+doesn't have to be that way
+in another way we could say okay these
+b's match each other we're gonna now
+skip the second b and we're gonna say
+okay these two b's are gonna match each
+other
+so that is what the third way would be
+and then of course we'd have our eyes
+match and we'd have our t's match
+so this covers exactly what we're going
+to do if the characters match each other
+and this is what we're going to do if
+the characters don't match each other
+we're going to do this recursively with
+depth first search
+or backtracking whatever you want to
+call it and we we noticed that we're
+probably going to be doing a lot of
+repeated work meaning our
+when we're calling that function we
+might be passing in the same i
+value and same j value into that
+function so we're going to use a cache
+so that we don't repeat the same work
+twice and so how big is that cache going
+to be well how many possible ways could
+we call our depth first search function
+we could call
+an i value for basically the length of
+our string
+s and we could call a j value for the
+length
+of our string t so basically the number
+of times we could call it is going to be
+the length of both strings multiplied by
+each other let's just say that's big
+o of n times m so that's going to be the
+memory as well
+as the run time of this algorithm
+because we're going to be caching it
+i've solved a lot of dp problems with
+the bottom up approach so this time i am
+going to be using the recursive approach
+which is top
+down but there's one last thing i want
+to cover before we jump into the code
+let's look at two more base cases so
+let's say our string s
+had a single value a and let's say our
+string t
+was empty right so it's an empty string
+how many subsequences of our string s
+can we take that convert
+exactly to t well only a single one
+right so
+basically if we just take this entire
+string and just don't take any
+characters from it that counts as a
+subsequence
+so this is gonna return one so basically
+if our string t
+is empty because we remember the
+previous case where let's say
+string t and string s were empty right
+if they're both
+empty strings then in that case we're
+also ending up returning one so
+basically the condition is if our string
+t
+is empty we return one as the base case
+what about the opposite case where our
+string
+t is non-empty we have an a here but
+maybe our string
+s is empty now once again the question
+is how many
+subsequences of this string s can we
+take that
+exactly match the string t we're looking
+to exactly match the string t
+well since this is empty there's no
+characters in it we can't possibly get
+an
+a from this so we can't possibly match
+this a
+character so therefore in this base case
+we're going to end up returning
+zero there's no subsequences of the
+string s
+that match string t so that's all that
+we need to cover we have our base cases
+handled and we have this logic that we
+are going to be using
+so now let's get into the code so as i
+mentioned we are going to be using a
+cache you could use a two-dimensional
+array for this but i prefer using a hash
+map or dictionary in python
+because it just is a little bit easier
+for me so we're going to be passing two
+parameters i
+and j which tell us the corresponding
+positions of string s
+and string t that we're currently at we
+know that one base case is if
+j has reached the end of the string that
+means
+string t is empty that means we can
+return one as the base case as we
+previously discussed
+the other base case is if we reach the
+end of string
+s and that means we can't possibly match
+the string t
+anymore so we're going to return 0 in
+that case last base case
+is if this ij pair has already been
+computed
+in our cache if that's the case then we
+can return
+the value that is stored in our cache so
+then we remember there's two cases for
+the logic that we have to cover so if s
+of i matches exactly t of j
+then we know we're gonna be running
+depth first search we're gonna be doing
+it two different ways we're gonna be
+looking at the remainder of string s
+and the remainder of string t and we're
+going to also be calling depth for
+search
+with the remainder of string s but the
+entirety of string t so we're going to
+be incrementing i
+but not incrementing j in this case and
+we're going to call both of these
+and total up the result and then once
+that has been totaled we can return it
+but before we return it we want to make
+sure that we cache it
+so let's put it in the cache at position
+i j
+the else condition is basically the same
+thing
+as this except i'm gonna copy paste it
+so except this portion right since these
+characters don't match
+we have to only shift our eye pointer we
+still have to look for
+a character that matches the character
+at position j
+and once either of these has been
+computed then we can return whatever
+value
+we ended up storing in our cache and
+this is the entirety of the depth first
+search function pretty short because we
+didn't have to pass in a lot of
+variables into it because i defined this
+function inside of another function that
+just makes things easier for me
+so now all we have to do is call it so
+let's call debt for search
+starting at 0 0 for both of the
+beginning of the strings
+and then we return the result so this is
+going to be big o
+n times m basically multiplying the
+length of the strings together
+time and memory complexity i hope that
+this was helpful
+if it was please like and subscribe it
+supports the channel a lot and i'll
+hopefully

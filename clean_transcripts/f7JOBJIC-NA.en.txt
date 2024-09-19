@@ -1,0 +1,726 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+let's solve
+minimum cost to connect all points and
+surprise this actually is not a problem
+from the blind 75 list that we've been
+working on recently
+and the reason i'm solving this problem
+is because honestly it actually
+should be a part of that list like this
+is one of those problems i think that's
+missing from the blind 75 list reason
+being
+is this is a problem related to minimum
+spanning trees a concept that a lot of
+people skip over i think when they
+grind leak code so this is what we're
+going to be doing today and you might
+have heard of an algorithm for minimum
+spanning trees there's actually a couple
+prims algorithm and there's also crust
+goals
+we're going to be doing prims algorithm
+because i think it's easier to implement
+and it's actually more efficient most of
+the time
+and you might remember this algorithm
+from college most
+most computer science curriculums do
+teach it but if you're anything like me
+you probably forgot it the instant
+that you you know finished the class
+that you learned it in
+but that's okay and this algorithm
+prim's algorithm is actually not as
+complicated as you might expect
+so we're just given a list of points
+that represent some coordinates on a 2d
+plane so
+we're for each point we're given two
+values the x-coordinate and the
+y-coordinate so the cost of connecting
+any two particular points like let's say
+these two points circled
+down there the cost of connecting them
+is just going to be the absolute value
+of the
+x difference plus the absolute value of
+the y difference so it's actually not
+you know the the cost of connecting them
+is not going to be like the diagonal
+it's going to be the
+x distance and the y distance in other
+words the manhattan distance if you've
+heard of that term
+that's pretty easy to calculate good for
+us and for the entire
+set of points in this case we're given
+five points we want to know what's the
+minimum
+possible cost to connect all points
+and they also say that any pair of
+points is going to be connected by
+exactly one
+simple path i think that's that
+information is actually redundant just
+saying that we want the minimum cost to
+connect all points
+pretty much tells you this is going to
+be a minimum spanning tree problem
+so the only question is where the heck
+are the edges for this graph we're only
+given
+points right so but they do tell us
+pretty much what an edge is going to be
+right with the cost
+of each uh connection is just going to
+be the distance so we have to create our
+edges
+ourselves so basically all possible
+edges could be you know every single
+point
+to connect it to every other point right
+that's going to be a set of edges and we
+can continue that so for example you
+know this point to connect
+all the other uh points as well so we're
+gonna have to kind of manually create
+the points
+so for each pair of points in the entire
+graph we're just gonna take the
+manhattan distance between them and just
+call that an
+edge and then you know have our list of
+edges or basically we're going to create
+an adjacency list
+so that is kind of like the pre-work we
+have to do that's step one
+in this problem creating the edges but
+as soon as you create the edges
+this is literally just a problem that
+you can go ahead and take
+prim's algorithm and just apply the
+textbook definition of prim's algorithm
+to this problem and you will get the
+optimal solution and the time complexity
+of that is going to be n squared log n
+because n squared is going to be the
+number of edges we're going to have
+right because
+to connect each pair of points we could
+potentially have n squared edges where n
+is the number of points that we're given
+and login
+is going to come from prem's algorithm
+because we're going to be using
+a min heap in this problem so it's
+pretty similar in a way to jigstra's
+algorithm
+digixtra's minimum path algorithm
+if you if you are familiar with that
+prim's algorithm is pretty similar to
+that so let's
+jump into it so prim's algorithm is an
+algorithm to find minimum spanning trees
+so there's a few concepts you have to be
+familiar with to understand prim's
+algorithm to obviously
+you need prim's algorithm to solve this
+problem efficiently so i'm just gonna
+give some of the background in case you
+don't know it
+so basically let's say you have a graph
+and in this case
+we have a graph with five nodes or
+vertices right
+and to connect all of these nodes
+together
+without forming a cycle so we want
+every node to be connected together but
+we don't want to form a cycle how many
+edges is it going to take us to
+accomplish that it's going to take
+exactly n minus 1 edges so if we have
+five nodes it's going to take exactly
+four edges to connect all of them
+together
+without creating a cycle because take a
+look right now i have four edges
+right if i add another edge that's not a
+duplicate if i add an edge here we
+create
+a cycle if i add an edge here we create
+a cycle right
+that's just kind of something you know
+and i think it intuitively does make
+sense
+because you know if you start out with
+five nodes you add one edge
+now we have four different you know
+connected components we have one here
+one here and then a couple here every
+time you add an edge you're decreasing
+the total number of connected components
+by one
+so if we start out with five nodes we
+add four edges we de
+we decrease the number of connected
+components by four then we're going to
+be left with one connected component so
+if we add another edge on top of that
+we're going to get a cycle
+so we want to connect all of these
+without creating a cycle because that's
+what a minimum spanning tree is
+so our goal is to connect all of these
+with
+exactly four edges but prim's algorithm
+or
+the definition of a minimum spanning
+tree is also
+one more condition we want to minimize
+the total
+cost of the edges now i didn't actually
+draw all of the edges all the possible
+edges out right now it would look
+something like this right basically for
+every single node
+it could possibly be connected to every
+other single node and the reason i'm not
+drawing it is as you can see
+it's going to get really complicated
+really quickly
+so this is pretty much what it would
+look like if i drew every possible edge
+that could exist
+in this graph and i think that's going
+to make it a little bit too messy but
+let's just assume
+that those edges do exist that for any
+point we could possibly connect it
+to another point so the way prim's
+algorithm works is we can choose to
+start at
+any single node in the entire graph
+and then very simple we're just gonna
+perform
+a bfs a breath first search on
+that node where we are gonna
+continuously be
+for every node that we're adding we're
+gonna have two data structures we're
+gonna have a
+visit data structure to to make sure
+that we don't add
+the same node twice because if we add
+the same node twice
+that's how you know we're gonna get a
+cycle we want to avoid
+cycles the second data structure we're
+gonna use is a minimum heat
+which is gonna keep track of our
+frontier
+of our breadth first search now what is
+a frontier
+well you might know that let's say we
+had a single node
+so we visited this this is in our graph
+right this is part of our
+minimum spanning tree what's the
+frontier then basically every possible
+node
+that could be added from this position
+right so
+initially if we just had one node these
+four nodes
+would be in our frontier but we're not
+just gonna have
+each node in the front here so we're
+gonna have you know let's say
+node one and we're also gonna add the
+weight of connecting node one so let's
+say the weight of the edge was something
+like five
+then we'd add one five in our min heap
+but we're not going to add it in this
+order we're gonna add it in the opposite
+order
+five one because when we're popping from
+the min heap
+we're gonna be wanting to pop whatever
+node we can connect
+next with the minimum possible cost
+so let's say we had five you know three
+two and you know up here we have a six
+or something
+out of all these four nodes which of
+them can we connect with the minimum
+possible cost that's what we're going to
+use our min heap for
+looking at it you can tell okay this one
+because it has a cost of
+2 so then we're going to connect that
+that so then that's going to be a part
+of our frontier
+so next we're going to say okay we have
+two nodes
+a part of our frontier next what we're
+gonna do is add
+more nodes to our frontier even though
+we already had
+all three of these nodes we're gonna add
+them again
+to our frontier because now possibly if
+we're if we're starting from node four
+and we're trying to connect to three
+one or two it's possible that the
+connection
+from four to three or four to two or
+four to one
+could be smaller than the connection
+from one
+to those respective nodes so we always
+want to connect a node
+with the minimum possible cost that it
+takes us if it costs
+less to connect it to four then to
+connect it to one
+we're going to take the one with the
+smaller cost and of course
+as we visit nodes we visit zero we visit
+four we're gonna add them to our hash
+set so
+that we don't you know starting from
+four we're not gonna go back to one and
+add one
+again because that would create a loop
+and how do you know that we can
+stop the execution of prim's algorithm
+well once the
+length of our visit set the the number
+of nodes that we've added
+is equal to 5 which is the number of
+nodes that we started
+out with so with all that being said you
+just have to understand how these data
+structures are contributing to the
+solution and then we can go ahead and
+walk through it so let's start at zero
+you can start at any node you can start
+at three
+two four but in this case we're gonna
+start at zero just because it makes
+sense
+so when we start at zero what we're
+doing is we're adding it to visit and
+we're adding it to the frontier so
+what's the
+cost of connecting zero well if we're
+just connecting a single node to the
+graph we're not actually including any
+edges so the cost is going to be zero
+and the node value is going to be zero
+and so the way this algorithm works is
+at each step we're just going to
+pop from the min heap so let's pop the
+first value
+this right so the total cost so far is
+zero right we don't actually have to add
+any cost
+and that's actually one other variable
+we're going to be maintaining let me
+just write it down down here
+so so far the cost is zero we're going
+to continuously be adding to it though
+but next for zero we're now going to add
+every one of its
+neighbors to the frontier and the way
+we're gonna add it i haven't drawn it
+out but there is gonna be like an
+adjacency list
+so we will have a list of neighbors for
+zero of course it could be connected to
+every single point in the entire graph
+that's just how this
+problem is defined now i'm not going to
+write the exact
+cost of each of these edges because i
+think it's pretty
+obvious from the picture that this is
+going to be the one that's closest and
+the cost of connecting to that is going
+to be 4 based on the
+point values that we were given in the
+previous picture so
+out of all these four these are going to
+be in our frontier
+so all of these are going to be in our
+frontier and you can see i drew them
+here i didn't specify the actual cost
+of 2 3 and 4 because i don't want to
+focus too much on that because we know
+that this is going to be the minimum so
+this
+is the one that we care about right now
+because we already can tell from the
+picture that it's the smallest
+and so that's the step right so you take
+the entire frontier add it to the min
+heap
+next step we're just going to repeat the
+same thing that we just did we're going
+to take a look at our frontier
+pop the minimum from it we know that
+this is the minimum so pop
+it when you pop a node we have to add it
+to visited so we popped the one node
+right
+and so we're going to add it to visit
+and the cost of that one was
+four right so let's just add four to our
+total cost so far
+and since this one was popped let me
+just draw that that is definitely going
+to be an
+edge inside of our minimum spanning tree
+so now we
+are at one and now we're going to add
+every adjacent node or every neighbor of
+this
+to our frontier as well so you can see
+that that this is kind of what the graph
+is going to look like
+we're not going to add 1 to our frontier
+because it's actually already been
+visited
+but we are going to add 2 3 and 4 to our
+frontier now notice they already exist
+in our frontier right so we're going to
+be adding them
+multiple times that's kind of how the n
+squared is going to come from right we
+could possibly add
+n squared nodes to this min heap because
+we're going to be adding it for every
+possible
+edge that exists in our graph and every
+time we pop from the min heap it's going
+to be
+log n so basically the time complexity
+is n squared multiplied
+by log n so i'm not going to redraw all
+three of these
+nodes but you can assume that yes there
+could be duplicates of them
+inside of our min heap now looking at 1
+which
+node is the closest to it now of course
+3 is the closest node
+to our entire graph this is our entire
+graph right we have two nodes right
+what's the closest node that we can add
+to this graph right we could add it
+anywhere we could
+say okay this is going to be connected
+to zero right or three is going to be
+connected to zero or three is going to
+be connected to one we could add
+any node but we know just by looking at
+the picture that this is what's the
+closest
+is gonna be and i'll just tell you okay
+for that node three the cost is gonna be
+three so now we continue another
+iteration of our loop
+let's pop the minimum from the frontier
+this is gonna be the minimum three has
+been popped
+so let's add an edge connecting it to
+our graph so so far this is what our
+graph looks like since we popped 3 add
+it to visit and let's add the cost
+of it so 3 was the cost of adding node 3
+so total our cost
+is going to be seven so far so now three
+has been visited now let's add the
+frontier
+of the neighbors of three of course one
+and
+zero have already been visited so we're
+just focusing on two
+and four we're going to add those to our
+frontier they're already in our frontier
+but yes we're going to be ending up
+adding duplicates
+to the frontier right so i'm not going
+to you know actually focus too much on
+the drawing but
+there could be multiples of these in the
+frontier and now
+well which of these edges that are in
+our front here or the nodes in our
+frontier what's the minimum cost that we
+could pop
+i'm just gonna tell you that for the
+cost of node four
+it's going to be four and it's going to
+be this right you can tell by the
+picture that's pretty obvious
+this is going to be the shortest way to
+include the node 4.
+so let's pop this node add it to
+the edges list so 1 or 3
+and 4 are going to be connected and the
+cost of that one was
+four so let's add four and let's add it
+to the visit now
+just so you know that let's say we did
+end up popping the same node multiple
+times because technically that's
+possible right
+we pop one four but we still have a four
+remaining
+in the frontier so we what if we popped
+four again what would we do well we
+would actually see that okay let's take
+a look at our visit well four
+is already been visited right so there's
+no need to add this to visit again and
+there's no need to add the frontier
+of that again and there's no need to
+take the cost of that
+and add it to our total cost because
+four was already connected to the graph
+we don't wanna you know add a redundant
+cost
+okay but so now you can see that four
+has been added to our graph
+now what's the remaining neighbors of
+four of course these three nodes have
+already been visited so the only edge we
+could possibly add that would be useful
+would be
+this to there but you can see that
+that's a pretty long path right surely
+we have a shorter path in our graph
+to the two node so so you can see four
+of them are already connected we just
+need to connect one last one so let's
+pop from our frontier again
+this is gonna be obviously two is gonna
+be the one that's popped but what
+exactly is gonna be the cost of it
+well i'll just tell you the cost is
+gonna be nine and which edge is it gonna
+be well by looking at the picture we'd
+probably think one of these two is gonna
+be connected to two either
+like this or like this and i'll tell you
+that the paths are actually not
+of equal length if they were equal
+length it wouldn't really matter what
+which one we chose right
+it would it would lead to the same cost
+anyway but in this case i'll tell you
+this is the shorter one
+so and yes the cost of that is going to
+be nine so we can pop this so we can say
+okay
+two has now been added two has been
+visited now it wasn't
+previously visited but now it's visited
+and the cost of adding it was 9. so the
+total cost
+that we ended up getting was 20 20 was
+the total cost
+and now we know we're done because every
+node in our graph has been connected you
+can tell by the red
+edges all of the nodes are connected we
+added
+four edges and we visited every single
+of the five
+nodes so the algorithm prim's algorithm
+is just that simple i mean it's not
+really simple until you've actually done
+it a few times you've practiced it and
+learned these concepts of
+visit minheep and now we're actually
+going to jump into the code it's about
+20 to 30 lines
+okay so let's write it out and like i
+said so the first thing we're going to
+be doing
+is actually creating the adjacency list
+because that's not given to us we're
+just given a list of points so i'm going
+to get the number of points we have
+and then i'm going to start creating
+that adjacency list so
+and basically i'm going to refer to each
+point in our list as
+basically the index of that point so the
+first point in our points list is going
+to be point zero
+the next one is going to be 0.1 etc etc
+so we can just say for i in
+range of the number of points we have so
+for i in
+range of n the number of points we're
+basically going to take each point i
+map it to a empty list so far now we're
+actually going to build out that list so
+for i in range of n
+so for every single point we want to
+compare it to every
+other point in the graph so for j in
+range i plus 1 all the way to n so we
+don't want to compare each point to
+itself
+we just want to compare it to every
+other point in the entire graph
+and when we do that we want to get the
+coordinates so
+for the point at i we're just going to
+get the x and y
+coordinates so points at index i
+and we're going to do the exact same
+thing for the point at index
+j inside of our loop we're going to get
+each point
+that we're comparing it to and then
+we're just going to take
+the distance the manhattan distance
+between them and we can get that by
+taking the absolute value of x1 minus x2
+the absolute value of y1 minus y2
+and so i'm going to just comment up
+above that for each node work
+we're mapping it to a list of points
+and for each point we're basically going
+to have the
+cost and the node or the neighbor
+each neighbor is going to be a pair
+right so each edge is basically a
+weighted edge don't forget about that
+so we're going to say adjacency for i
+append to it the cost or the distance
+right and the node itself which is node
+j and we're going to do the exact
+opposite because technically these are
+undirected edges they go both ways so
+let's just do the exact opposite so
+adjacency of j append to it the distance
+same distance but instead we're
+appending i because that's its neighbor
+so this is how you build that adjacency
+list and technically we could actually
+not have to write this for loop out we
+could actually you know
+compute these calculations while we are
+running prim's algorithm but the reason
+i'm doing it before is just to
+give a clear distinction this is the
+edge portion this is like the extra
+portion of this problem
+the following part is literally just an
+exact
+implementation of prem's algorithm
+nothing fancy
+so let's define our variables we're
+going to have a result which is of
+course going to be the total cost
+initially it's going to be 0. we're also
+going to have a visit
+set so it's going to tell us the the
+points that have already been visited
+we're also going to have a min heap
+which is initially not going to be empty
+we're going to be starting at point
+zero and the cost of it is also going to
+be zero so let me just put in a comment
+that each pair is going to be the cost
+and the point cost goes first the order
+is important because that's what the min
+heap is going to be minimizing it based
+on
+and so now we're actually going to do
+the loop and remember we're going to
+keep going while the length of visit is
+less than the total number of points
+which is n
+and on each iteration we're going to be
+popping from the min heap in python we
+can say heap q
+dot heap pop and from it we'll get a
+pair of values
+okay we have to specify which heap we're
+popping from min heap
+min h and we're going to get a pair of
+values the we can call it cost
+and the point let's call it i and
+remember
+we are adding duplicates to our min heap
+so if we popped it this could have
+already been visited so let's just check
+if
+i is in visit then we're just going to
+skip this iteration of the loop we
+don't want to have to process this same
+node that's already been popped before
+but if it hasn't been popped then we're
+going to take the cost of it
+add it to the result so we're adding
+this fresh new
+node that we haven't visited yet and
+we're also going to add it to visit now
+to make sure that it never gets visited
+again
+and then we're going to go through every
+neighbor in its adjacency list
+so the adjacency list of i and remember
+each neighbor actually isn't just
+one value it's going to be the cost so
+let's call it neighbor
+cost as well as the neighbor right up
+above you remember that in our adjacency
+list we added a pair of values in that
+list cost and the node itself
+so now for each neighbor so for nay if
+the neighbor
+is not in visit then we're going to be
+adding it to our min heap
+so then we can say heap q dot heap push
+to the min heap we're going to be
+pushing a pair of values remember we're
+pushing the cost first so neighbor cost
+and then the neighbor and that's it
+right so we're just for every neighbor
+all we're having to do is just add it to
+the min heap right and then we're going
+to go to the next iteration of the loop
+repeat the exact same thing until we
+visit every single node
+once we've done that we know for sure
+the result has the total cost
+that it took so then at the end all we
+have to do is return that
+cost let me make sure i don't have a
+space and yeah that's the exact thing so
+you can see this is the portion that's
+prim's algorithm everything else is just
+some pre-work that we had to do yes we
+could have taken this pre-work and mixed
+it up into here but i just want to give
+a clear
+understanding to you all of what exactly
+prim's algorithm entails this is just
+stuff that's not necessarily related to
+prim's algorithm
+we do need an adjacency list though to
+perform this algorithm efficiently
+so i hope that this was helpful if it
+was please like and subscribe it
+supports the channel a lot and i'll
+hopefully

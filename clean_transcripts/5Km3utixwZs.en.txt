@@ -1,0 +1,311 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+let's solve number of one bits this is
+actually another blind 75 problem and
+we've been tracking all blind 75
+problems on this spreadsheet the link to
+that will be in the description today
+we'll be doing number of one bits one of
+the last problems remaining that we
+haven't done and i also have a youtube
+playlist for the blind 75 solutions link
+to that will also be in the description
+if you do want to take a look okay so
+now let's get into it we are told to
+write a function that takes in an
+unsigned integer which isn't really
+important for this problem because all
+we want to do is count the number of one
+bits that it has so the concept is
+pretty simple so when you take a look at
+this number we can see it's made up of
+zeros and ones and we just want to count
+how many ones it has clearly it has one
+two three so we can return three but how
+can we actually count the bits so
+obviously we need to do a little bit of
+bit manipulation i'm going to be showing
+you two different solutions one of the
+solutions the second one is going to be
+slightly faster if you're interested in
+it and it's pretty difficult to come up
+with but the
+first solution is a little bit more
+straightforward and is more doable so
+like i said the easiest way is just to
+count manually bit by bit and then see
+which one of them is our ones and then
+increment our total and then return the
+total but let's see how we can actually
+accomplish that so how do we know let's
+say we want to look at the first a bit
+on the right side how do we know if it's
+a one or a zero well there's actually
+two different ways one way is you can
+and it with the integer one so
+since the integer one just has a one
+here and then the rest of them are zeros
+when we do a logic and operation logic
+and is basically taking the and of every
+bit but we know that every bit is gonna
+be zero when we take the logic and
+it's gonna be zero for every bit except
+for this one which can either be zero or
+one it'll be one if the bit in the input
+integer is one then we'll get a one in
+the output if it's a zero over here then
+we'll get a zero in the output so that
+can tell us if there's a 1 here or a 0
+here
+another way to do it is just to mod this
+by 2. modding is basically taking this
+dividing it by 2 and getting the
+remainder since this is the ones place
+if we mod it by two and there is a one
+here we'll get a one in the output if
+there's a zero here we'll get a zero in
+the output so we have two different ways
+to do it i think i'm gonna stick with
+modding but you can do it either way
+okay so we have a way to detect if the
+first bit is a one or a zero but what if
+we want to look at the next bit and the
+next bit and the next bit how do we do
+that well the easiest way would just be
+to take all the rest of the bits and
+then shift them to the right by one and
+luckily most languages can natively
+support this and it's a very efficient
+cpu operation this is kind of the
+preferred way to usually do it in bit
+manipulation just shift every bit to the
+right by one
+we can achieve basically the exact same
+thing by taking this and then integer
+division by two dividing it by two will
+basically shift all the bits to the
+right by one as well but usually the bit
+shift operation is a little bit more
+efficient on your cpu so that's what i'm
+going to prefer so basically we're going
+to take these shift them to the right so
+now we're going to have a new integer 1
+0 1.
+again we want to know if this bit is 1
+or 0. we're going to mod it by 2 we're
+going to get another one so so far we
+have counted two
+two ones and again we would want to take
+these shift them to the right this time
+we get a one zero we mod this by two we
+get a zero in the output that means
+there's a zero here so we don't add to
+our total this time and lastly we take
+this shift it by one we get another we
+basically get the integer one we mod it
+by two one divided by two the remainder
+after that is just one so we got our
+third one so our total so far is three
+ones that we counted and lastly we're
+going to take this and then shift it to
+the right but what exactly is going to
+be remaining after we do that well
+basically zero and once we have a zero
+it basically means we have all zeros
+right 32 bit integer we'll have 32 zeros
+and that basically means that we can
+stop our algorithm now and we're done so
+we counted in total three ones and
+that's what we can return so once you're
+familiar with these bit operations it's
+a pretty straightforward problem so
+let's code up the first solution okay so
+now let's code it up i'm going to
+declare one variable for the result
+which is basically the total account the
+total number of ones that we're going to
+have and i'm going to continue
+counting the ones while n is greater
+than zero or in other words while it's
+not equal to zero which i can you know
+do just like this and that'll work in
+most languages i think and
+then we want to know if the ones place
+is a one or a zero so we can take n and
+mod it by two now this will either be a
+one or this will be a zero if it's a one
+then we wanna increment result if it's a
+zero we don't wanna increment result so
+in other words we can just basically add
+this to our result itself and then we
+don't want to forget to
+shift everything to the right by one so
+what we can do is set an equal to itself
+bit shifted to the right by one after
+that last thing we have to do is just
+return the result so now let's run it to
+make sure that it works and as you can
+see it does work and it is pretty
+efficient but what exactly is the time
+complexity of the solution
+well the good thing is that we're
+guaranteed that every input is going to
+be a 32-bit integer so we know that that
+while loop we had is going to run 32
+times so really the time complexity is
+big o of 32 which is constant time right
+no matter what the input is the time
+complexity is not going to scale up so
+basically the time complexity is
+constant we can say it's big o of one
+and there's no real extra memory
+complexity needed as well so that's also
+big o of one but a small downside of our
+solution is it has to count it has to
+look at every bit even the ones that
+aren't ones so for example what if we
+had a number like this in this case
+we're gonna look at this bit first okay
+it's a one we're done with that then
+we're going to look at this bit this bit
+this bit this bit every bit here even
+though they're zeros right that kind of
+wastes time wouldn't it be convenient if
+we only had to look at the bits that
+were one that meaning our algorithm only
+has to run as many times as how many
+ones are actually in the input and yes
+there actually is a way we can do this
+but it's not very easy to come up with
+and it's probably not even worth coming
+up with because the time complexity will
+be the same it'll still be constant time
+and constant space but
+it might be good to just you know get
+really good at your bit manipulation
+tricks and stuff and maybe you'll see
+this in an interview so the main
+operation we're going to be doing in our
+while loop with this trick is basically
+taking n and setting it equal to n
+logic ended with n minus one and this is
+what we're going to do in every
+iteration of the loop and each time we
+do that we're going to increment our
+result by one but the question is why
+does this work first let's see what will
+happen so okay so what's gonna happen
+let's take this integer and subtract one
+from it right that's what we're gonna do
+over here so n minus 1 which is going to
+be
+this and now we're going to logic and
+them together what are we going to get
+when we do that we're basically going to
+be removing this right this we're going
+to get n minus 1 itself and we're also
+going to increment our result by 1 now
+regardless of what the output happens to
+be okay so now our n value is going to
+be set to this okay so now our new value
+is going to be
+1 0 0 and all zeros okay now we're going
+to take this number and subtract one
+from it what what is that going to look
+like in binary well it's going to be 0 1
+1 1 1 1 1 1. okay and now we are gonna
+logic and these two together what's that
+gonna look like well we're logic handing
+every bit this one is gonna turn into
+zero now and the rest of these are also
+gonna be zero even though we have ones
+in the bottom number we have all zeros
+in the number above so now we're
+actually done with our entire loop now
+we have all zeros we incremented our
+result by two so now our result is two
+and then we return right which makes
+sense because when you look at the
+original number we started with it yes
+it did have two ones in it but how did
+this algorithm work well it's actually
+really simple but it's definitely not
+easy to come up with what we're doing
+when we're subtracting one from itself
+is we're basically getting rid of a bit
+right when we took this number and
+subtracted one from it we got rid of
+this one bit right and remember we're
+counting one bits so when we did that we
+increment our result by one but then why
+did we logic and it together with itself
+well basically since the rest of the
+numbers stayed the same and you know we
+took this one away here and then we
+logic and them together we're basically
+removing that one bit so then when we
+when we logic ended these two together
+you can see that the one bit was removed
+but the rest of the number stayed the
+exact same on the left okay that works
+but what about this number right then we
+were left with this and then we
+subtracted one from it then what did we
+do well again when we subtracted one
+from it we basically got rid of the the
+next one bit right you can see that when
+we subtracted one from it this is what
+the number looked like we got rid of
+this one bit but we introduced a bunch
+of other one bits but these are all okay
+because we know they're gonna be and any
+one bits that we introduce are going to
+be on the right side and we know that if
+we just deleted this one it was the it
+was the right most one bit that we had
+so any ones that are introduced to the
+right side won't matter in this number
+this is n minus 1 by the way any ones
+here won't matter because remember every
+time we do that we're logic ending them
+together we're logic ending n with n
+minus 1 so these are all gonna cancel
+out and this is going to cancel out as
+well well the position where we you know
+remove the one bit so basically what
+we're doing here is we're skipping all
+the zeros in between we're basically
+allowing ourself to run the loop as many
+times as
+as basically as many one bits exist in
+the input integer it's kind of a really
+weird trick but it definitely works and
+it makes sense why it works now we can
+code it up and it's pretty simple so you
+can see that this was our original
+solution and we only have to modify this
+a little bit so what we're going to do
+is get rid of this line and instead of
+incrementing our result by n mod 2 we're
+actually going to increment our result
+by one each time because each time we
+increment this we are going to be
+setting n equal to n
+anded with n minus one so we're going to
+be counting the number of one bits
+exactly and this line can actually be
+slightly shortened
+by doing this in most languages and yeah
+so this is about as efficient as we can
+get we won't run any extra iterations of
+this loop when we have zero so let's run
+it to make sure that it works and you
+can see yes on the left side it works
+yeah the run time is about the same
+because it's still the same exact big o
+time complexity but i hope that this was
+helpful if it was please like and
+subscribe it really supports the channel
+a lot consider checking out my patreon
+where you can further support the
+channel and hopefully i'll see you

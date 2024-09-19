@@ -1,0 +1,2536 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.829 align:start position:0%
+ 
+hey<00:00:00.240><c> everyone</c><00:00:00.799><c> welcome</c><00:00:01.199><c> back</c><00:00:01.520><c> and</c><00:00:01.599><c> let's</c>
+
+00:00:01.829 --> 00:00:01.839 align:start position:0%
+hey everyone welcome back and let's
+ 
+
+00:00:01.839 --> 00:00:03.830 align:start position:0%
+hey everyone welcome back and let's
+write<00:00:02.080><c> some</c><00:00:02.240><c> more</c><00:00:02.480><c> neat</c><00:00:02.720><c> code</c><00:00:03.040><c> today</c><00:00:03.280><c> so</c><00:00:03.439><c> today</c>
+
+00:00:03.830 --> 00:00:03.840 align:start position:0%
+write some more neat code today so today
+ 
+
+00:00:03.840 --> 00:00:05.990 align:start position:0%
+write some more neat code today so today
+let's<00:00:04.080><c> solve</c><00:00:04.319><c> the</c><00:00:04.560><c> problem</c><00:00:04.960><c> in</c><00:00:05.279><c> code</c><00:00:05.759><c> and</c>
+
+00:00:05.990 --> 00:00:06.000 align:start position:0%
+let's solve the problem in code and
+ 
+
+00:00:06.000 --> 00:00:08.230 align:start position:0%
+let's solve the problem in code and
+decode<00:00:06.799><c> strings</c><00:00:07.520><c> so</c><00:00:07.680><c> you</c><00:00:07.759><c> can</c><00:00:07.919><c> tell</c><00:00:08.080><c> the</c>
+
+00:00:08.230 --> 00:00:08.240 align:start position:0%
+decode strings so you can tell the
+ 
+
+00:00:08.240 --> 00:00:09.589 align:start position:0%
+decode strings so you can tell the
+interface<00:00:08.720><c> is</c><00:00:08.880><c> a</c><00:00:08.880><c> little</c><00:00:09.040><c> bit</c><00:00:09.200><c> different</c><00:00:09.440><c> this</c>
+
+00:00:09.589 --> 00:00:09.599 align:start position:0%
+interface is a little bit different this
+ 
+
+00:00:09.599 --> 00:00:11.190 align:start position:0%
+interface is a little bit different this
+time<00:00:09.920><c> and</c><00:00:10.000><c> that's</c><00:00:10.320><c> because</c><00:00:10.719><c> we</c><00:00:10.880><c> are</c><00:00:11.040><c> going</c><00:00:11.120><c> to</c>
+
+00:00:11.190 --> 00:00:11.200 align:start position:0%
+time and that's because we are going to
+ 
+
+00:00:11.200 --> 00:00:13.430 align:start position:0%
+time and that's because we are going to
+be<00:00:11.360><c> solving</c><00:00:11.679><c> this</c><00:00:11.920><c> problem</c><00:00:12.400><c> on</c><00:00:12.719><c> lint</c><00:00:13.040><c> code</c>
+
+00:00:13.430 --> 00:00:13.440 align:start position:0%
+be solving this problem on lint code
+ 
+
+00:00:13.440 --> 00:00:15.669 align:start position:0%
+be solving this problem on lint code
+because<00:00:13.920><c> this</c><00:00:14.320><c> is</c><00:00:14.559><c> a</c><00:00:14.799><c> premium</c><00:00:15.200><c> leak</c><00:00:15.440><c> code</c>
+
+00:00:15.669 --> 00:00:15.679 align:start position:0%
+because this is a premium leak code
+ 
+
+00:00:15.679 --> 00:00:17.590 align:start position:0%
+because this is a premium leak code
+problem<00:00:16.080><c> and</c><00:00:16.160><c> we</c><00:00:16.320><c> can</c><00:00:16.480><c> solve</c><00:00:16.800><c> it</c><00:00:16.880><c> for</c><00:00:17.039><c> free</c><00:00:17.440><c> on</c>
+
+00:00:17.590 --> 00:00:17.600 align:start position:0%
+problem and we can solve it for free on
+ 
+
+00:00:17.600 --> 00:00:20.710 align:start position:0%
+problem and we can solve it for free on
+the<00:00:17.760><c> website</c><00:00:18.240><c> lint</c><00:00:18.640><c> code</c><00:00:19.279><c> and</c><00:00:19.520><c> also</c><00:00:20.080><c> this</c><00:00:20.400><c> is</c><00:00:20.560><c> a</c>
+
+00:00:20.710 --> 00:00:20.720 align:start position:0%
+the website lint code and also this is a
+ 
+
+00:00:20.720 --> 00:00:23.509 align:start position:0%
+the website lint code and also this is a
+problem<00:00:21.119><c> from</c><00:00:21.279><c> the</c><00:00:21.439><c> blind</c><00:00:21.840><c> 75</c><00:00:22.480><c> list</c><00:00:22.880><c> a</c><00:00:23.119><c> list</c><00:00:23.359><c> of</c>
+
+00:00:23.509 --> 00:00:23.519 align:start position:0%
+problem from the blind 75 list a list of
+ 
+
+00:00:23.519 --> 00:00:25.509 align:start position:0%
+problem from the blind 75 list a list of
+75<00:00:24.080><c> common</c><00:00:24.400><c> leak</c><00:00:24.560><c> code</c><00:00:24.880><c> questions</c><00:00:25.279><c> that</c><00:00:25.359><c> we've</c>
+
+00:00:25.509 --> 00:00:25.519 align:start position:0%
+75 common leak code questions that we've
+ 
+
+00:00:25.519 --> 00:00:27.589 align:start position:0%
+75 common leak code questions that we've
+been<00:00:25.680><c> tracking</c><00:00:26.160><c> on</c><00:00:26.400><c> this</c><00:00:26.640><c> spreadsheet</c><00:00:27.439><c> the</c>
+
+00:00:27.589 --> 00:00:27.599 align:start position:0%
+been tracking on this spreadsheet the
+ 
+
+00:00:27.599 --> 00:00:29.029 align:start position:0%
+been tracking on this spreadsheet the
+link<00:00:27.760><c> to</c><00:00:27.920><c> this</c><00:00:28.080><c> will</c><00:00:28.240><c> be</c><00:00:28.400><c> in</c><00:00:28.480><c> the</c><00:00:28.560><c> description</c>
+
+00:00:29.029 --> 00:00:29.039 align:start position:0%
+link to this will be in the description
+ 
+
+00:00:29.039 --> 00:00:31.349 align:start position:0%
+link to this will be in the description
+if<00:00:29.119><c> you</c><00:00:29.199><c> want</c><00:00:29.359><c> to</c><00:00:29.439><c> take</c><00:00:29.679><c> a</c><00:00:29.760><c> look</c><00:00:30.320><c> and</c><00:00:30.720><c> we're</c>
+
+00:00:31.349 --> 00:00:31.359 align:start position:0%
+if you want to take a look and we're
+ 
+
+00:00:31.359 --> 00:00:32.870 align:start position:0%
+if you want to take a look and we're
+pretty<00:00:31.599><c> much</c><00:00:31.840><c> done</c><00:00:32.000><c> with</c><00:00:32.160><c> the</c><00:00:32.320><c> main</c><00:00:32.559><c> problems</c>
+
+00:00:32.870 --> 00:00:32.880 align:start position:0%
+pretty much done with the main problems
+ 
+
+00:00:32.880 --> 00:00:33.910 align:start position:0%
+pretty much done with the main problems
+i'm<00:00:32.960><c> going</c><00:00:33.040><c> to</c><00:00:33.120><c> be</c><00:00:33.200><c> solving</c><00:00:33.520><c> another</c><00:00:33.760><c> one</c>
+
+00:00:33.910 --> 00:00:33.920 align:start position:0%
+i'm going to be solving another one
+ 
+
+00:00:33.920 --> 00:00:36.950 align:start position:0%
+i'm going to be solving another one
+today<00:00:34.640><c> a</c><00:00:34.800><c> premium</c><00:00:35.280><c> one</c><00:00:35.520><c> in</c><00:00:35.760><c> code</c><00:00:36.239><c> and</c><00:00:36.399><c> decode</c>
+
+00:00:36.950 --> 00:00:36.960 align:start position:0%
+today a premium one in code and decode
+ 
+
+00:00:36.960 --> 00:00:38.549 align:start position:0%
+today a premium one in code and decode
+strings<00:00:37.280><c> this</c><00:00:37.440><c> is</c><00:00:37.600><c> a</c><00:00:37.680><c> pretty</c><00:00:37.920><c> decent</c><00:00:38.320><c> problem</c>
+
+00:00:38.549 --> 00:00:38.559 align:start position:0%
+strings this is a pretty decent problem
+ 
+
+00:00:38.559 --> 00:00:40.630 align:start position:0%
+strings this is a pretty decent problem
+to<00:00:38.719><c> understand</c><00:00:39.200><c> so</c><00:00:39.360><c> let's</c><00:00:39.600><c> get</c><00:00:39.840><c> into</c><00:00:40.160><c> it</c><00:00:40.480><c> so</c>
+
+00:00:40.630 --> 00:00:40.640 align:start position:0%
+to understand so let's get into it so
+ 
+
+00:00:40.640 --> 00:00:42.630 align:start position:0%
+to understand so let's get into it so
+it's<00:00:40.800><c> a</c><00:00:40.879><c> bit</c><00:00:41.040><c> of</c><00:00:41.120><c> a</c><00:00:41.200><c> design</c><00:00:41.680><c> algorithm</c><00:00:42.320><c> because</c>
+
+00:00:42.630 --> 00:00:42.640 align:start position:0%
+it's a bit of a design algorithm because
+ 
+
+00:00:42.640 --> 00:00:43.670 align:start position:0%
+it's a bit of a design algorithm because
+we're<00:00:42.800><c> going</c><00:00:42.879><c> to</c><00:00:42.960><c> have</c><00:00:43.120><c> two</c><00:00:43.360><c> different</c>
+
+00:00:43.670 --> 00:00:43.680 align:start position:0%
+we're going to have two different
+ 
+
+00:00:43.680 --> 00:00:45.350 align:start position:0%
+we're going to have two different
+functions<00:00:44.160><c> that</c><00:00:44.239><c> we</c><00:00:44.480><c> want</c><00:00:44.640><c> to</c><00:00:44.800><c> implement</c><00:00:45.200><c> so</c>
+
+00:00:45.350 --> 00:00:45.360 align:start position:0%
+functions that we want to implement so
+ 
+
+00:00:45.360 --> 00:00:48.549 align:start position:0%
+functions that we want to implement so
+we're<00:00:45.600><c> given</c><00:00:46.000><c> a</c><00:00:46.320><c> list</c><00:00:46.800><c> of</c><00:00:47.120><c> strings</c><00:00:48.160><c> and</c><00:00:48.320><c> we</c>
+
+00:00:48.549 --> 00:00:48.559 align:start position:0%
+we're given a list of strings and we
+ 
+
+00:00:48.559 --> 00:00:50.790 align:start position:0%
+we're given a list of strings and we
+want<00:00:48.879><c> to</c><00:00:49.280><c> write</c><00:00:49.520><c> two</c><00:00:49.840><c> functions</c><00:00:50.239><c> we</c><00:00:50.399><c> want</c><00:00:50.559><c> to</c>
+
+00:00:50.790 --> 00:00:50.800 align:start position:0%
+want to write two functions we want to
+ 
+
+00:00:50.800 --> 00:00:54.069 align:start position:0%
+want to write two functions we want to
+encode<00:00:51.840><c> this</c><00:00:52.320><c> list</c><00:00:52.640><c> of</c><00:00:52.800><c> strings</c><00:00:53.360><c> into</c><00:00:53.760><c> a</c>
+
+00:00:54.069 --> 00:00:54.079 align:start position:0%
+encode this list of strings into a
+ 
+
+00:00:54.079 --> 00:00:56.389 align:start position:0%
+encode this list of strings into a
+single<00:00:54.559><c> string</c><00:00:55.440><c> and</c><00:00:55.680><c> you</c><00:00:55.840><c> can</c><00:00:55.920><c> kind</c><00:00:56.079><c> of</c><00:00:56.160><c> see</c>
+
+00:00:56.389 --> 00:00:56.399 align:start position:0%
+single string and you can kind of see
+ 
+
+00:00:56.399 --> 00:00:58.709 align:start position:0%
+single string and you can kind of see
+that<00:00:56.640><c> down</c><00:00:56.879><c> here</c><00:00:57.039><c> we</c><00:00:57.360><c> were</c><00:00:57.600><c> given</c><00:00:58.000><c> an</c><00:00:58.160><c> input</c>
+
+00:00:58.709 --> 00:00:58.719 align:start position:0%
+that down here we were given an input
+ 
+
+00:00:58.719 --> 00:01:02.310 align:start position:0%
+that down here we were given an input
+list<00:00:58.960><c> of</c><00:00:59.120><c> strings</c><00:00:59.920><c> lint</c><00:01:00.239><c> code</c><00:01:00.640><c> love</c><00:01:00.960><c> you</c><00:01:01.359><c> and</c>
+
+00:01:02.310 --> 00:01:02.320 align:start position:0%
+list of strings lint code love you and
+ 
+
+00:01:02.320 --> 00:01:04.469 align:start position:0%
+list of strings lint code love you and
+we<00:01:02.559><c> want</c><00:01:02.719><c> it</c><00:01:02.800><c> to</c><00:01:02.960><c> be</c><00:01:03.199><c> a</c><00:01:03.359><c> single</c><00:01:03.680><c> string</c><00:01:04.000><c> such</c><00:01:04.239><c> as</c>
+
+00:01:04.469 --> 00:01:04.479 align:start position:0%
+we want it to be a single string such as
+ 
+
+00:01:04.479 --> 00:01:06.950 align:start position:0%
+we want it to be a single string such as
+this<00:01:04.720><c> one</c><00:01:04.960><c> in</c><00:01:05.119><c> the</c><00:01:05.280><c> bottom</c><00:01:05.760><c> right</c><00:01:06.320><c> and</c><00:01:06.479><c> then</c>
+
+00:01:06.950 --> 00:01:06.960 align:start position:0%
+this one in the bottom right and then
+ 
+
+00:01:06.960 --> 00:01:08.469 align:start position:0%
+this one in the bottom right and then
+the<00:01:07.200><c> d</c><00:01:07.439><c> code</c><00:01:07.760><c> is</c><00:01:07.840><c> just</c><00:01:08.000><c> going</c><00:01:08.080><c> to</c><00:01:08.159><c> be</c><00:01:08.320><c> the</c>
+
+00:01:08.469 --> 00:01:08.479 align:start position:0%
+the d code is just going to be the
+ 
+
+00:01:08.479 --> 00:01:10.149 align:start position:0%
+the d code is just going to be the
+opposite<00:01:09.040><c> of</c><00:01:09.280><c> in</c><00:01:09.520><c> code</c><00:01:09.760><c> we're</c><00:01:09.920><c> going</c><00:01:10.000><c> to</c><00:01:10.080><c> be</c>
+
+00:01:10.149 --> 00:01:10.159 align:start position:0%
+opposite of in code we're going to be
+ 
+
+00:01:10.159 --> 00:01:12.789 align:start position:0%
+opposite of in code we're going to be
+given<00:01:10.479><c> a</c><00:01:10.720><c> single</c><00:01:11.200><c> string</c><00:01:11.920><c> and</c><00:01:12.159><c> we</c><00:01:12.320><c> want</c><00:01:12.560><c> to</c><00:01:12.640><c> be</c>
+
+00:01:12.789 --> 00:01:12.799 align:start position:0%
+given a single string and we want to be
+ 
+
+00:01:12.799 --> 00:01:15.910 align:start position:0%
+given a single string and we want to be
+able<00:01:12.880><c> to</c><00:01:13.040><c> convert</c><00:01:13.439><c> this</c><00:01:13.680><c> string</c><00:01:14.320><c> in</c><00:01:14.960><c> into</c><00:01:15.680><c> back</c>
+
+00:01:15.910 --> 00:01:15.920 align:start position:0%
+able to convert this string in into back
+ 
+
+00:01:15.920 --> 00:01:18.469 align:start position:0%
+able to convert this string in into back
+into<00:01:16.320><c> that</c><00:01:16.560><c> original</c><00:01:17.360><c> list</c><00:01:17.759><c> of</c><00:01:17.920><c> strings</c><00:01:18.320><c> that</c>
+
+00:01:18.469 --> 00:01:18.479 align:start position:0%
+into that original list of strings that
+ 
+
+00:01:18.479 --> 00:01:21.190 align:start position:0%
+into that original list of strings that
+we<00:01:18.640><c> were</c><00:01:18.960><c> given</c><00:01:19.600><c> and</c><00:01:19.759><c> it's</c><00:01:20.080><c> up</c><00:01:20.240><c> to</c><00:01:20.479><c> us</c><00:01:20.799><c> on</c><00:01:20.960><c> how</c>
+
+00:01:21.190 --> 00:01:21.200 align:start position:0%
+we were given and it's up to us on how
+ 
+
+00:01:21.200 --> 00:01:23.830 align:start position:0%
+we were given and it's up to us on how
+we<00:01:21.360><c> want</c><00:01:21.600><c> to</c><00:01:21.840><c> design</c><00:01:22.240><c> this</c><00:01:22.479><c> algorithm</c><00:01:23.360><c> but</c><00:01:23.600><c> the</c>
+
+00:01:23.830 --> 00:01:23.840 align:start position:0%
+we want to design this algorithm but the
+ 
+
+00:01:23.840 --> 00:01:25.990 align:start position:0%
+we want to design this algorithm but the
+tricky<00:01:24.159><c> part</c><00:01:24.479><c> is</c><00:01:24.560><c> going</c><00:01:24.640><c> to</c><00:01:24.799><c> be</c><00:01:25.040><c> that</c><00:01:25.759><c> where</c>
+
+00:01:25.990 --> 00:01:26.000 align:start position:0%
+tricky part is going to be that where
+ 
+
+00:01:26.000 --> 00:01:27.990 align:start position:0%
+tricky part is going to be that where
+the<00:01:26.080><c> basic</c><00:01:26.479><c> assumption</c><00:01:27.040><c> is</c><00:01:27.200><c> that</c><00:01:27.439><c> in</c><00:01:27.759><c> our</c>
+
+00:01:27.990 --> 00:01:28.000 align:start position:0%
+the basic assumption is that in our
+ 
+
+00:01:28.000 --> 00:01:30.550 align:start position:0%
+the basic assumption is that in our
+input<00:01:28.400><c> we</c><00:01:28.560><c> could</c><00:01:28.799><c> have</c><00:01:29.200><c> any</c><00:01:29.840><c> possible</c>
+
+00:01:30.550 --> 00:01:30.560 align:start position:0%
+input we could have any possible
+ 
+
+00:01:30.560 --> 00:01:33.270 align:start position:0%
+input we could have any possible
+character<00:01:31.360><c> in</c><00:01:31.759><c> the</c><00:01:32.079><c> inputs</c><00:01:32.479><c> not</c><00:01:32.640><c> just</c><00:01:32.880><c> limited</c>
+
+00:01:33.270 --> 00:01:33.280 align:start position:0%
+character in the inputs not just limited
+ 
+
+00:01:33.280 --> 00:01:35.510 align:start position:0%
+character in the inputs not just limited
+to<00:01:33.439><c> lowercase</c><00:01:33.920><c> a</c><00:01:34.079><c> to</c><00:01:34.320><c> z</c><00:01:34.560><c> so</c><00:01:34.799><c> the</c><00:01:35.119><c> difficult</c>
+
+00:01:35.510 --> 00:01:35.520 align:start position:0%
+to lowercase a to z so the difficult
+ 
+
+00:01:35.520 --> 00:01:36.870 align:start position:0%
+to lowercase a to z so the difficult
+thing<00:01:35.759><c> is</c><00:01:35.840><c> going</c><00:01:35.920><c> to</c><00:01:36.000><c> be</c><00:01:36.159><c> how</c><00:01:36.320><c> do</c><00:01:36.400><c> we</c><00:01:36.560><c> create</c>
+
+00:01:36.870 --> 00:01:36.880 align:start position:0%
+thing is going to be how do we create
+ 
+
+00:01:36.880 --> 00:01:39.990 align:start position:0%
+thing is going to be how do we create
+some<00:01:37.119><c> kind</c><00:01:37.360><c> of</c><00:01:37.520><c> delimiter</c><00:01:38.479><c> between</c><00:01:39.439><c> each</c><00:01:39.680><c> word</c>
+
+00:01:39.990 --> 00:01:40.000 align:start position:0%
+some kind of delimiter between each word
+ 
+
+00:01:40.000 --> 00:01:41.910 align:start position:0%
+some kind of delimiter between each word
+how<00:01:40.159><c> do</c><00:01:40.240><c> we</c><00:01:40.320><c> know</c><00:01:40.479><c> when</c><00:01:40.720><c> one</c><00:01:40.960><c> word</c><00:01:41.360><c> ends</c><00:01:41.759><c> and</c>
+
+00:01:41.910 --> 00:01:41.920 align:start position:0%
+how do we know when one word ends and
+ 
+
+00:01:41.920 --> 00:01:43.670 align:start position:0%
+how do we know when one word ends and
+another<00:01:42.320><c> word</c><00:01:42.640><c> begins</c><00:01:43.119><c> that's</c><00:01:43.280><c> kind</c><00:01:43.439><c> of</c><00:01:43.520><c> what</c>
+
+00:01:43.670 --> 00:01:43.680 align:start position:0%
+another word begins that's kind of what
+ 
+
+00:01:43.680 --> 00:01:45.510 align:start position:0%
+another word begins that's kind of what
+we're<00:01:43.840><c> going</c><00:01:43.920><c> to</c><00:01:44.000><c> be</c><00:01:44.240><c> focusing</c><00:01:44.720><c> on</c><00:01:45.119><c> so</c><00:01:45.280><c> let's</c>
+
+00:01:45.510 --> 00:01:45.520 align:start position:0%
+we're going to be focusing on so let's
+ 
+
+00:01:45.520 --> 00:01:47.910 align:start position:0%
+we're going to be focusing on so let's
+get<00:01:45.759><c> into</c><00:01:46.079><c> that</c><00:01:46.399><c> solution</c><00:01:47.280><c> so</c><00:01:47.439><c> suppose</c><00:01:47.840><c> we</c>
+
+00:01:47.910 --> 00:01:47.920 align:start position:0%
+get into that solution so suppose we
+ 
+
+00:01:47.920 --> 00:01:50.149 align:start position:0%
+get into that solution so suppose we
+were<00:01:48.079><c> given</c><00:01:48.399><c> two</c><00:01:48.640><c> strings</c><00:01:49.119><c> like</c><00:01:49.280><c> this</c><00:01:49.759><c> neat</c>
+
+00:01:50.149 --> 00:01:50.159 align:start position:0%
+were given two strings like this neat
+ 
+
+00:01:50.159 --> 00:01:53.350 align:start position:0%
+were given two strings like this neat
+and<00:01:50.560><c> code</c><00:01:51.280><c> and</c><00:01:51.600><c> we</c><00:01:51.759><c> want</c><00:01:52.000><c> to</c><00:01:52.159><c> convert</c><00:01:52.560><c> it</c><00:01:52.799><c> into</c>
+
+00:01:53.350 --> 00:01:53.360 align:start position:0%
+and code and we want to convert it into
+ 
+
+00:01:53.360 --> 00:01:55.510 align:start position:0%
+and code and we want to convert it into
+another<00:01:53.920><c> string</c><00:01:54.560><c> basically</c><00:01:54.960><c> into</c><00:01:55.200><c> a</c><00:01:55.280><c> single</c>
+
+00:01:55.510 --> 00:01:55.520 align:start position:0%
+another string basically into a single
+ 
+
+00:01:55.520 --> 00:01:57.910 align:start position:0%
+another string basically into a single
+string<00:01:55.840><c> right</c><00:01:56.079><c> so</c><00:01:56.479><c> a</c><00:01:56.640><c> naive</c><00:01:57.040><c> way</c><00:01:57.280><c> would</c><00:01:57.439><c> be</c>
+
+00:01:57.910 --> 00:01:57.920 align:start position:0%
+string right so a naive way would be
+ 
+
+00:01:57.920 --> 00:01:59.749 align:start position:0%
+string right so a naive way would be
+something<00:01:58.240><c> like</c><00:01:58.399><c> this</c><00:01:58.640><c> right</c><00:01:58.880><c> just</c><00:01:59.119><c> say</c><00:01:59.360><c> okay</c>
+
+00:01:59.749 --> 00:01:59.759 align:start position:0%
+something like this right just say okay
+ 
+
+00:01:59.759 --> 00:02:02.870 align:start position:0%
+something like this right just say okay
+neat<00:02:00.479><c> code</c><00:02:01.040><c> now</c><00:02:01.280><c> the</c><00:02:01.439><c> problem</c><00:02:01.840><c> is</c><00:02:02.240><c> okay</c><00:02:02.479><c> we</c><00:02:02.640><c> did</c>
+
+00:02:02.870 --> 00:02:02.880 align:start position:0%
+neat code now the problem is okay we did
+ 
+
+00:02:02.880 --> 00:02:05.270 align:start position:0%
+neat code now the problem is okay we did
+that<00:02:03.119><c> the</c><00:02:03.360><c> encode</c><00:02:03.920><c> was</c><00:02:04.240><c> fine</c><00:02:04.640><c> but</c><00:02:04.799><c> now</c><00:02:04.960><c> we</c><00:02:05.119><c> want</c>
+
+00:02:05.270 --> 00:02:05.280 align:start position:0%
+that the encode was fine but now we want
+ 
+
+00:02:05.280 --> 00:02:07.510 align:start position:0%
+that the encode was fine but now we want
+to<00:02:05.439><c> decode</c><00:02:05.920><c> this</c><00:02:06.479><c> back</c><00:02:06.719><c> into</c><00:02:07.040><c> the</c><00:02:07.280><c> two</c>
+
+00:02:07.510 --> 00:02:07.520 align:start position:0%
+to decode this back into the two
+ 
+
+00:02:07.520 --> 00:02:09.510 align:start position:0%
+to decode this back into the two
+original<00:02:07.920><c> strings</c><00:02:08.319><c> that</c><00:02:08.399><c> we</c><00:02:08.560><c> had</c><00:02:09.039><c> but</c><00:02:09.280><c> there's</c>
+
+00:02:09.510 --> 00:02:09.520 align:start position:0%
+original strings that we had but there's
+ 
+
+00:02:09.520 --> 00:02:11.430 align:start position:0%
+original strings that we had but there's
+no<00:02:09.759><c> way</c><00:02:09.920><c> for</c><00:02:10.080><c> us</c><00:02:10.239><c> to</c><00:02:10.319><c> determine</c><00:02:10.879><c> right</c><00:02:11.120><c> because</c>
+
+00:02:11.430 --> 00:02:11.440 align:start position:0%
+no way for us to determine right because
+ 
+
+00:02:11.440 --> 00:02:13.910 align:start position:0%
+no way for us to determine right because
+we<00:02:11.599><c> can't</c><00:02:11.840><c> remember</c><00:02:12.640><c> where</c><00:02:12.959><c> one</c><00:02:13.280><c> word</c><00:02:13.599><c> ends</c>
+
+00:02:13.910 --> 00:02:13.920 align:start position:0%
+we can't remember where one word ends
+ 
+
+00:02:13.920 --> 00:02:15.589 align:start position:0%
+we can't remember where one word ends
+and<00:02:14.080><c> another</c><00:02:14.400><c> word</c><00:02:14.640><c> begins</c><00:02:15.040><c> right</c><00:02:15.200><c> so</c><00:02:15.360><c> we</c><00:02:15.440><c> need</c>
+
+00:02:15.589 --> 00:02:15.599 align:start position:0%
+and another word begins right so we need
+ 
+
+00:02:15.599 --> 00:02:17.990 align:start position:0%
+and another word begins right so we need
+to<00:02:15.680><c> have</c><00:02:16.000><c> some</c><00:02:16.239><c> kind</c><00:02:16.480><c> of</c><00:02:16.959><c> uh</c><00:02:17.280><c> character</c><00:02:17.760><c> or</c>
+
+00:02:17.990 --> 00:02:18.000 align:start position:0%
+to have some kind of uh character or
+ 
+
+00:02:18.000 --> 00:02:20.790 align:start position:0%
+to have some kind of uh character or
+something<00:02:18.480><c> to</c><00:02:18.720><c> separate</c><00:02:19.280><c> words</c><00:02:19.840><c> what</c><00:02:20.000><c> if</c><00:02:20.239><c> we</c>
+
+00:02:20.790 --> 00:02:20.800 align:start position:0%
+something to separate words what if we
+ 
+
+00:02:20.800 --> 00:02:23.670 align:start position:0%
+something to separate words what if we
+used<00:02:21.280><c> a</c><00:02:22.080><c> pound</c><00:02:22.480><c> sign</c><00:02:22.879><c> or</c><00:02:23.040><c> something</c><00:02:23.440><c> right</c>
+
+00:02:23.670 --> 00:02:23.680 align:start position:0%
+used a pound sign or something right
+ 
+
+00:02:23.680 --> 00:02:25.589 align:start position:0%
+used a pound sign or something right
+something<00:02:24.080><c> like</c><00:02:24.480><c> this</c><00:02:24.800><c> or</c><00:02:25.040><c> any</c><00:02:25.200><c> character</c>
+
+00:02:25.589 --> 00:02:25.599 align:start position:0%
+something like this or any character
+ 
+
+00:02:25.599 --> 00:02:27.589 align:start position:0%
+something like this or any character
+maybe<00:02:25.840><c> a</c><00:02:26.000><c> question</c><00:02:26.400><c> mark</c><00:02:26.640><c> or</c><00:02:26.800><c> something</c><00:02:27.120><c> right</c>
+
+00:02:27.589 --> 00:02:27.599 align:start position:0%
+maybe a question mark or something right
+ 
+
+00:02:27.599 --> 00:02:29.350 align:start position:0%
+maybe a question mark or something right
+but<00:02:27.920><c> this</c><00:02:28.080><c> is</c><00:02:28.160><c> like</c><00:02:28.400><c> our</c><00:02:28.560><c> special</c><00:02:28.959><c> character</c>
+
+00:02:29.350 --> 00:02:29.360 align:start position:0%
+but this is like our special character
+ 
+
+00:02:29.360 --> 00:02:30.949 align:start position:0%
+but this is like our special character
+that's<00:02:29.599><c> what's</c><00:02:29.840><c> going</c><00:02:29.920><c> to</c><00:02:30.080><c> separate</c><00:02:30.640><c> words</c>
+
+00:02:30.949 --> 00:02:30.959 align:start position:0%
+that's what's going to separate words
+ 
+
+00:02:30.959 --> 00:02:33.589 align:start position:0%
+that's what's going to separate words
+for<00:02:31.120><c> us</c><00:02:31.519><c> so</c><00:02:31.840><c> in</c><00:02:32.080><c> this</c><00:02:32.319><c> case</c><00:02:32.800><c> it</c><00:02:33.040><c> works</c><00:02:33.440><c> out</c>
+
+00:02:33.589 --> 00:02:33.599 align:start position:0%
+for us so in this case it works out
+ 
+
+00:02:33.599 --> 00:02:35.830 align:start position:0%
+for us so in this case it works out
+right<00:02:33.840><c> we'll</c><00:02:34.080><c> go</c><00:02:34.640><c> character</c><00:02:35.040><c> by</c><00:02:35.280><c> character</c><00:02:35.680><c> in</c>
+
+00:02:35.830 --> 00:02:35.840 align:start position:0%
+right we'll go character by character in
+ 
+
+00:02:35.840 --> 00:02:37.990 align:start position:0%
+right we'll go character by character in
+the<00:02:36.080><c> input</c><00:02:36.560><c> once</c><00:02:36.879><c> we</c><00:02:37.040><c> get</c><00:02:37.120><c> to</c><00:02:37.280><c> a</c><00:02:37.440><c> pound</c><00:02:37.760><c> sign</c>
+
+00:02:37.990 --> 00:02:38.000 align:start position:0%
+the input once we get to a pound sign
+ 
+
+00:02:38.000 --> 00:02:39.990 align:start position:0%
+the input once we get to a pound sign
+okay<00:02:38.239><c> we'll</c><00:02:38.400><c> say</c><00:02:38.560><c> that</c><00:02:38.720><c> this</c><00:02:38.959><c> word</c><00:02:39.360><c> ends</c><00:02:39.840><c> so</c>
+
+00:02:39.990 --> 00:02:40.000 align:start position:0%
+okay we'll say that this word ends so
+ 
+
+00:02:40.000 --> 00:02:41.670 align:start position:0%
+okay we'll say that this word ends so
+we'll<00:02:40.160><c> say</c><00:02:40.400><c> okay</c><00:02:40.720><c> we</c><00:02:40.879><c> have</c>
+
+00:02:41.670 --> 00:02:41.680 align:start position:0%
+we'll say okay we have
+ 
+
+00:02:41.680 --> 00:02:43.670 align:start position:0%
+we'll say okay we have
+the<00:02:41.840><c> first</c><00:02:42.160><c> word</c><00:02:42.480><c> neat</c><00:02:42.959><c> and</c><00:02:43.120><c> this</c><00:02:43.360><c> is</c><00:02:43.440><c> not</c>
+
+00:02:43.670 --> 00:02:43.680 align:start position:0%
+the first word neat and this is not
+ 
+
+00:02:43.680 --> 00:02:45.589 align:start position:0%
+the first word neat and this is not
+included<00:02:44.239><c> in</c><00:02:44.400><c> any</c><00:02:44.560><c> of</c><00:02:44.640><c> the</c><00:02:44.720><c> words</c><00:02:45.040><c> so</c><00:02:45.200><c> we</c><00:02:45.360><c> skip</c>
+
+00:02:45.589 --> 00:02:45.599 align:start position:0%
+included in any of the words so we skip
+ 
+
+00:02:45.599 --> 00:02:46.790 align:start position:0%
+included in any of the words so we skip
+it<00:02:45.680><c> and</c><00:02:45.760><c> then</c><00:02:45.920><c> we</c><00:02:46.000><c> get</c><00:02:46.160><c> to</c><00:02:46.239><c> the</c><00:02:46.400><c> remaining</c>
+
+00:02:46.790 --> 00:02:46.800 align:start position:0%
+it and then we get to the remaining
+ 
+
+00:02:46.800 --> 00:02:49.589 align:start position:0%
+it and then we get to the remaining
+portion<00:02:47.599><c> code</c><00:02:48.160><c> and</c><00:02:48.640><c> there</c><00:02:48.879><c> aren't</c><00:02:49.120><c> any</c><00:02:49.360><c> more</c>
+
+00:02:49.589 --> 00:02:49.599 align:start position:0%
+portion code and there aren't any more
+ 
+
+00:02:49.599 --> 00:02:52.309 align:start position:0%
+portion code and there aren't any more
+pound<00:02:50.000><c> signs</c><00:02:50.640><c> so</c><00:02:50.959><c> that</c><00:02:51.200><c> works</c><00:02:51.519><c> out</c><00:02:51.760><c> in</c><00:02:52.080><c> this</c>
+
+00:02:52.309 --> 00:02:52.319 align:start position:0%
+pound signs so that works out in this
+ 
+
+00:02:52.319 --> 00:02:55.030 align:start position:0%
+pound signs so that works out in this
+case<00:02:52.720><c> right</c><00:02:53.200><c> but</c><00:02:53.440><c> basically</c><00:02:54.319><c> our</c><00:02:54.480><c> assumption</c>
+
+00:02:55.030 --> 00:02:55.040 align:start position:0%
+case right but basically our assumption
+ 
+
+00:02:55.040 --> 00:02:57.270 align:start position:0%
+case right but basically our assumption
+when<00:02:55.200><c> we're</c><00:02:55.360><c> using</c><00:02:55.680><c> this</c><00:02:55.920><c> pound</c><00:02:56.239><c> sign</c><00:02:56.640><c> is</c><00:02:57.040><c> that</c>
+
+00:02:57.270 --> 00:02:57.280 align:start position:0%
+when we're using this pound sign is that
+ 
+
+00:02:57.280 --> 00:02:58.869 align:start position:0%
+when we're using this pound sign is that
+the<00:02:57.440><c> pound</c><00:02:57.840><c> is</c><00:02:58.000><c> never</c><00:02:58.239><c> going</c><00:02:58.319><c> to</c><00:02:58.480><c> actually</c>
+
+00:02:58.869 --> 00:02:58.879 align:start position:0%
+the pound is never going to actually
+ 
+
+00:02:58.879 --> 00:03:01.910 align:start position:0%
+the pound is never going to actually
+show<00:02:59.120><c> up</c><00:02:59.280><c> in</c><00:02:59.519><c> any</c><00:02:59.760><c> words</c><00:03:00.400><c> what</c><00:03:00.720><c> happens</c><00:03:01.440><c> if</c><00:03:01.760><c> we</c>
+
+00:03:01.910 --> 00:03:01.920 align:start position:0%
+show up in any words what happens if we
+ 
+
+00:03:01.920 --> 00:03:05.350 align:start position:0%
+show up in any words what happens if we
+have<00:03:02.560><c> a</c><00:03:02.800><c> word</c><00:03:03.360><c> suppose</c><00:03:03.920><c> in</c><00:03:04.080><c> our</c><00:03:04.239><c> word</c><00:03:04.720><c> code</c><00:03:05.280><c> in</c>
+
+00:03:05.350 --> 00:03:05.360 align:start position:0%
+have a word suppose in our word code in
+ 
+
+00:03:05.360 --> 00:03:07.270 align:start position:0%
+have a word suppose in our word code in
+the<00:03:05.519><c> middle</c><00:03:05.840><c> of</c><00:03:05.920><c> the</c><00:03:06.080><c> word</c><00:03:06.480><c> we</c><00:03:06.640><c> have</c><00:03:06.879><c> a</c><00:03:06.959><c> pound</c>
+
+00:03:07.270 --> 00:03:07.280 align:start position:0%
+the middle of the word we have a pound
+ 
+
+00:03:07.280 --> 00:03:09.350 align:start position:0%
+the middle of the word we have a pound
+sign<00:03:07.680><c> right</c><00:03:08.000><c> there's</c><00:03:08.319><c> no</c><00:03:08.560><c> reason</c><00:03:08.879><c> why</c><00:03:09.040><c> we</c>
+
+00:03:09.350 --> 00:03:09.360 align:start position:0%
+sign right there's no reason why we
+ 
+
+00:03:09.360 --> 00:03:11.509 align:start position:0%
+sign right there's no reason why we
+can't<00:03:09.599><c> have</c><00:03:09.840><c> something</c><00:03:10.239><c> like</c><00:03:10.480><c> this</c><00:03:10.959><c> so</c><00:03:11.360><c> in</c>
+
+00:03:11.509 --> 00:03:11.519 align:start position:0%
+can't have something like this so in
+ 
+
+00:03:11.519 --> 00:03:14.550 align:start position:0%
+can't have something like this so in
+that<00:03:11.760><c> case</c><00:03:12.400><c> when</c><00:03:12.640><c> we</c><00:03:13.120><c> when</c><00:03:13.280><c> we</c><00:03:13.440><c> take</c><00:03:13.680><c> this</c><00:03:14.080><c> and</c>
+
+00:03:14.550 --> 00:03:14.560 align:start position:0%
+that case when we when we take this and
+ 
+
+00:03:14.560 --> 00:03:16.710 align:start position:0%
+that case when we when we take this and
+encode<00:03:15.120><c> it</c><00:03:15.519><c> we're</c><00:03:15.680><c> gonna</c><00:03:15.840><c> get</c><00:03:16.080><c> something</c><00:03:16.400><c> like</c>
+
+00:03:16.710 --> 00:03:16.720 align:start position:0%
+encode it we're gonna get something like
+ 
+
+00:03:16.720 --> 00:03:18.790 align:start position:0%
+encode it we're gonna get something like
+this<00:03:17.120><c> as</c><00:03:17.360><c> the</c><00:03:17.599><c> encoded</c><00:03:18.239><c> string</c><00:03:18.560><c> right</c><00:03:18.720><c> and</c>
+
+00:03:18.790 --> 00:03:18.800 align:start position:0%
+this as the encoded string right and
+ 
+
+00:03:18.800 --> 00:03:20.949 align:start position:0%
+this as the encoded string right and
+then<00:03:18.959><c> when</c><00:03:19.200><c> we</c><00:03:19.360><c> split</c><00:03:19.760><c> it</c><00:03:20.080><c> we're</c><00:03:20.239><c> gonna</c><00:03:20.400><c> have</c>
+
+00:03:20.949 --> 00:03:20.959 align:start position:0%
+then when we split it we're gonna have
+ 
+
+00:03:20.959 --> 00:03:25.030 align:start position:0%
+then when we split it we're gonna have
+three<00:03:21.440><c> different</c><00:03:21.840><c> words</c><00:03:22.560><c> neat</c><00:03:23.200><c> co</c><00:03:23.920><c> and</c><00:03:24.159><c> d</c><00:03:24.560><c> e</c>
+
+00:03:25.030 --> 00:03:25.040 align:start position:0%
+three different words neat co and d e
+ 
+
+00:03:25.040 --> 00:03:26.789 align:start position:0%
+three different words neat co and d e
+but<00:03:25.280><c> in</c><00:03:25.360><c> the</c><00:03:25.519><c> original</c><00:03:26.000><c> you</c><00:03:26.159><c> can</c><00:03:26.239><c> see</c><00:03:26.400><c> we</c><00:03:26.640><c> only</c>
+
+00:03:26.789 --> 00:03:26.799 align:start position:0%
+but in the original you can see we only
+ 
+
+00:03:26.799 --> 00:03:29.430 align:start position:0%
+but in the original you can see we only
+had<00:03:27.120><c> two</c><00:03:27.519><c> words</c><00:03:28.080><c> but</c><00:03:28.239><c> when</c><00:03:28.400><c> we</c><00:03:28.720><c> get</c><00:03:28.879><c> our</c><00:03:29.120><c> output</c>
+
+00:03:29.430 --> 00:03:29.440 align:start position:0%
+had two words but when we get our output
+ 
+
+00:03:29.440 --> 00:03:31.030 align:start position:0%
+had two words but when we get our output
+we're<00:03:29.599><c> gonna</c><00:03:29.760><c> end</c><00:03:29.920><c> up</c><00:03:30.080><c> splitting</c><00:03:30.560><c> this</c><00:03:30.799><c> into</c>
+
+00:03:31.030 --> 00:03:31.040 align:start position:0%
+we're gonna end up splitting this into
+ 
+
+00:03:31.040 --> 00:03:32.949 align:start position:0%
+we're gonna end up splitting this into
+three<00:03:31.280><c> words</c><00:03:31.760><c> which</c><00:03:32.080><c> is</c><00:03:32.159><c> not</c><00:03:32.319><c> what</c><00:03:32.480><c> we</c><00:03:32.640><c> wanted</c>
+
+00:03:32.949 --> 00:03:32.959 align:start position:0%
+three words which is not what we wanted
+ 
+
+00:03:32.959 --> 00:03:34.710 align:start position:0%
+three words which is not what we wanted
+to<00:03:33.040><c> do</c><00:03:33.200><c> right</c><00:03:33.440><c> we</c><00:03:33.519><c> want</c><00:03:33.680><c> to</c><00:03:33.840><c> transform</c><00:03:34.319><c> it</c><00:03:34.480><c> back</c>
+
+00:03:34.710 --> 00:03:34.720 align:start position:0%
+to do right we want to transform it back
+ 
+
+00:03:34.720 --> 00:03:36.949 align:start position:0%
+to do right we want to transform it back
+into<00:03:34.959><c> what</c><00:03:35.200><c> was</c><00:03:35.440><c> originally</c><00:03:35.920><c> given</c><00:03:36.239><c> to</c><00:03:36.400><c> us</c><00:03:36.720><c> so</c>
+
+00:03:36.949 --> 00:03:36.959 align:start position:0%
+into what was originally given to us so
+ 
+
+00:03:36.959 --> 00:03:38.869 align:start position:0%
+into what was originally given to us so
+having<00:03:37.280><c> just</c><00:03:37.519><c> a</c><00:03:37.680><c> single</c><00:03:38.000><c> special</c><00:03:38.480><c> character</c>
+
+00:03:38.869 --> 00:03:38.879 align:start position:0%
+having just a single special character
+ 
+
+00:03:38.879 --> 00:03:40.309 align:start position:0%
+having just a single special character
+delimiter<00:03:39.360><c> is</c><00:03:39.519><c> not</c><00:03:39.680><c> going</c><00:03:39.760><c> to</c><00:03:39.840><c> work</c><00:03:40.080><c> because</c>
+
+00:03:40.309 --> 00:03:40.319 align:start position:0%
+delimiter is not going to work because
+ 
+
+00:03:40.319 --> 00:03:42.470 align:start position:0%
+delimiter is not going to work because
+that<00:03:40.480><c> delimiter</c><00:03:41.200><c> could</c><00:03:41.440><c> actually</c><00:03:41.840><c> show</c><00:03:42.159><c> up</c><00:03:42.319><c> in</c>
+
+00:03:42.470 --> 00:03:42.480 align:start position:0%
+that delimiter could actually show up in
+ 
+
+00:03:42.480 --> 00:03:45.270 align:start position:0%
+that delimiter could actually show up in
+some<00:03:42.720><c> of</c><00:03:42.799><c> the</c><00:03:42.959><c> words</c><00:03:43.680><c> wouldn't</c><00:03:44.080><c> it</c><00:03:44.159><c> be</c><00:03:44.480><c> nice</c><00:03:44.879><c> if</c>
+
+00:03:45.270 --> 00:03:45.280 align:start position:0%
+some of the words wouldn't it be nice if
+ 
+
+00:03:45.280 --> 00:03:48.710 align:start position:0%
+some of the words wouldn't it be nice if
+in<00:03:45.680><c> the</c><00:03:46.000><c> encoded</c><00:03:46.640><c> string</c><00:03:47.280><c> we</c><00:03:47.599><c> somehow</c><00:03:48.239><c> already</c>
+
+00:03:48.710 --> 00:03:48.720 align:start position:0%
+in the encoded string we somehow already
+ 
+
+00:03:48.720 --> 00:03:51.110 align:start position:0%
+in the encoded string we somehow already
+knew<00:03:49.280><c> how</c><00:03:49.519><c> many</c><00:03:49.840><c> characters</c><00:03:50.400><c> would</c><00:03:50.560><c> go</c><00:03:50.879><c> in</c><00:03:50.959><c> the</c>
+
+00:03:51.110 --> 00:03:51.120 align:start position:0%
+knew how many characters would go in the
+ 
+
+00:03:51.120 --> 00:03:53.030 align:start position:0%
+knew how many characters would go in the
+first<00:03:51.440><c> word</c><00:03:51.920><c> how</c><00:03:52.080><c> many</c><00:03:52.239><c> characters</c><00:03:52.640><c> would</c><00:03:52.799><c> go</c>
+
+00:03:53.030 --> 00:03:53.040 align:start position:0%
+first word how many characters would go
+ 
+
+00:03:53.040 --> 00:03:54.789 align:start position:0%
+first word how many characters would go
+in<00:03:53.120><c> the</c><00:03:53.200><c> second</c><00:03:53.439><c> word</c><00:03:53.680><c> etc</c><00:03:54.080><c> etc</c><00:03:54.480><c> so</c><00:03:54.560><c> then</c><00:03:54.720><c> we</c>
+
+00:03:54.789 --> 00:03:54.799 align:start position:0%
+in the second word etc etc so then we
+ 
+
+00:03:54.799 --> 00:03:56.309 align:start position:0%
+in the second word etc etc so then we
+could<00:03:54.959><c> just</c><00:03:55.120><c> say</c><00:03:55.360><c> okay</c><00:03:55.599><c> let's</c><00:03:55.760><c> take</c><00:03:55.920><c> the</c><00:03:56.080><c> first</c>
+
+00:03:56.309 --> 00:03:56.319 align:start position:0%
+could just say okay let's take the first
+ 
+
+00:03:56.319 --> 00:03:58.630 align:start position:0%
+could just say okay let's take the first
+four<00:03:56.560><c> characters</c><00:03:57.200><c> encode</c><00:03:57.680><c> it</c><00:03:57.840><c> back</c><00:03:58.159><c> into</c><00:03:58.480><c> the</c>
+
+00:03:58.630 --> 00:03:58.640 align:start position:0%
+four characters encode it back into the
+ 
+
+00:03:58.640 --> 00:04:00.630 align:start position:0%
+four characters encode it back into the
+first<00:03:59.040><c> word</c><00:03:59.439><c> then</c><00:03:59.680><c> take</c><00:03:59.920><c> the</c><00:04:00.000><c> next</c><00:04:00.319><c> five</c>
+
+00:04:00.630 --> 00:04:00.640 align:start position:0%
+first word then take the next five
+ 
+
+00:04:00.640 --> 00:04:02.309 align:start position:0%
+first word then take the next five
+characters<00:04:01.200><c> and</c><00:04:01.280><c> code</c><00:04:01.519><c> it</c><00:04:01.680><c> into</c><00:04:01.840><c> the</c><00:04:02.000><c> second</c>
+
+00:04:02.309 --> 00:04:02.319 align:start position:0%
+characters and code it into the second
+ 
+
+00:04:02.319 --> 00:04:04.070 align:start position:0%
+characters and code it into the second
+word<00:04:02.720><c> so</c><00:04:02.959><c> how</c><00:04:03.120><c> could</c><00:04:03.360><c> we</c><00:04:03.680><c> you</c><00:04:03.760><c> know</c><00:04:03.920><c> do</c>
+
+00:04:04.070 --> 00:04:04.080 align:start position:0%
+word so how could we you know do
+ 
+
+00:04:04.080 --> 00:04:05.910 align:start position:0%
+word so how could we you know do
+something<00:04:04.400><c> like</c><00:04:04.560><c> that</c><00:04:04.720><c> well</c><00:04:05.040><c> one</c><00:04:05.280><c> way</c><00:04:05.680><c> would</c>
+
+00:04:05.910 --> 00:04:05.920 align:start position:0%
+something like that well one way would
+ 
+
+00:04:05.920 --> 00:04:07.990 align:start position:0%
+something like that well one way would
+basically<00:04:06.480><c> be</c><00:04:06.720><c> by</c><00:04:06.959><c> maintaining</c><00:04:07.519><c> some</c><00:04:07.680><c> kind</c><00:04:07.840><c> of</c>
+
+00:04:07.990 --> 00:04:08.000 align:start position:0%
+basically be by maintaining some kind of
+ 
+
+00:04:08.000 --> 00:04:09.830 align:start position:0%
+basically be by maintaining some kind of
+array<00:04:08.319><c> right</c><00:04:08.480><c> when</c><00:04:08.720><c> we're</c><00:04:08.879><c> given</c><00:04:09.120><c> this</c><00:04:09.519><c> uh</c>
+
+00:04:09.830 --> 00:04:09.840 align:start position:0%
+array right when we're given this uh
+ 
+
+00:04:09.840 --> 00:04:12.229 align:start position:0%
+array right when we're given this uh
+inputs<00:04:10.480><c> a</c><00:04:10.640><c> list</c><00:04:10.959><c> of</c><00:04:11.120><c> strings</c><00:04:11.680><c> and</c><00:04:11.840><c> we</c><00:04:11.920><c> want</c><00:04:12.080><c> to</c>
+
+00:04:12.229 --> 00:04:12.239 align:start position:0%
+inputs a list of strings and we want to
+ 
+
+00:04:12.239 --> 00:04:14.309 align:start position:0%
+inputs a list of strings and we want to
+encode<00:04:12.560><c> it</c><00:04:12.640><c> to</c><00:04:12.799><c> a</c><00:04:12.879><c> single</c><00:04:13.120><c> string</c><00:04:13.439><c> we</c><00:04:13.599><c> can</c><00:04:14.159><c> for</c>
+
+00:04:14.309 --> 00:04:14.319 align:start position:0%
+encode it to a single string we can for
+ 
+
+00:04:14.319 --> 00:04:16.150 align:start position:0%
+encode it to a single string we can for
+every<00:04:14.480><c> single</c><00:04:14.799><c> word</c><00:04:15.120><c> basically</c><00:04:15.760><c> have</c><00:04:16.000><c> an</c>
+
+00:04:16.150 --> 00:04:16.160 align:start position:0%
+every single word basically have an
+ 
+
+00:04:16.160 --> 00:04:17.590 align:start position:0%
+every single word basically have an
+integer<00:04:16.479><c> right</c><00:04:16.720><c> the</c><00:04:16.799><c> first</c><00:04:17.040><c> word</c><00:04:17.280><c> is</c><00:04:17.359><c> four</c>
+
+00:04:17.590 --> 00:04:17.600 align:start position:0%
+integer right the first word is four
+ 
+
+00:04:17.600 --> 00:04:19.110 align:start position:0%
+integer right the first word is four
+characters<00:04:18.000><c> the</c><00:04:18.160><c> next</c><00:04:18.400><c> word</c><00:04:18.639><c> is</c><00:04:18.880><c> five</c>
+
+00:04:19.110 --> 00:04:19.120 align:start position:0%
+characters the next word is five
+ 
+
+00:04:19.120 --> 00:04:21.030 align:start position:0%
+characters the next word is five
+characters<00:04:19.519><c> etc</c><00:04:20.160><c> but</c><00:04:20.320><c> then</c><00:04:20.560><c> where</c><00:04:20.799><c> are</c><00:04:20.880><c> we</c>
+
+00:04:21.030 --> 00:04:21.040 align:start position:0%
+characters etc but then where are we
+ 
+
+00:04:21.040 --> 00:04:24.469 align:start position:0%
+characters etc but then where are we
+gonna<00:04:21.359><c> store</c><00:04:22.079><c> this</c><00:04:22.720><c> list</c><00:04:23.360><c> because</c><00:04:24.240><c> you</c><00:04:24.320><c> know</c>
+
+00:04:24.469 --> 00:04:24.479 align:start position:0%
+gonna store this list because you know
+ 
+
+00:04:24.479 --> 00:04:26.070 align:start position:0%
+gonna store this list because you know
+this<00:04:24.720><c> is</c><00:04:24.880><c> a</c><00:04:24.960><c> valid</c><00:04:25.360><c> solution</c><00:04:25.840><c> if</c><00:04:25.919><c> we're</c>
+
+00:04:26.070 --> 00:04:26.080 align:start position:0%
+this is a valid solution if we're
+ 
+
+00:04:26.080 --> 00:04:27.670 align:start position:0%
+this is a valid solution if we're
+storing<00:04:26.479><c> this</c><00:04:26.639><c> list</c><00:04:26.960><c> somewhere</c><00:04:27.440><c> but</c>
+
+00:04:27.670 --> 00:04:27.680 align:start position:0%
+storing this list somewhere but
+ 
+
+00:04:27.680 --> 00:04:29.590 align:start position:0%
+storing this list somewhere but
+basically<00:04:28.320><c> in</c><00:04:28.400><c> the</c><00:04:28.560><c> description</c><00:04:29.120><c> they</c><00:04:29.280><c> don't</c>
+
+00:04:29.590 --> 00:04:29.600 align:start position:0%
+basically in the description they don't
+ 
+
+00:04:29.600 --> 00:04:31.670 align:start position:0%
+basically in the description they don't
+want<00:04:29.919><c> us</c><00:04:30.080><c> to</c><00:04:30.240><c> store</c><00:04:30.639><c> any</c><00:04:30.880><c> kind</c><00:04:31.040><c> of</c><00:04:31.199><c> state</c>
+
+00:04:31.670 --> 00:04:31.680 align:start position:0%
+want us to store any kind of state
+ 
+
+00:04:31.680 --> 00:04:34.150 align:start position:0%
+want us to store any kind of state
+variable<00:04:32.160><c> this</c><00:04:32.479><c> encode</c><00:04:33.120><c> and</c><00:04:33.280><c> decode</c><00:04:33.840><c> needs</c><00:04:34.080><c> to</c>
+
+00:04:34.150 --> 00:04:34.160 align:start position:0%
+variable this encode and decode needs to
+ 
+
+00:04:34.160 --> 00:04:37.270 align:start position:0%
+variable this encode and decode needs to
+be<00:04:34.479><c> stateless</c><00:04:35.360><c> so</c><00:04:35.680><c> when</c><00:04:35.919><c> we</c><00:04:36.000><c> have</c><00:04:36.240><c> this</c><00:04:36.560><c> list</c><00:04:36.960><c> 4</c>
+
+00:04:37.270 --> 00:04:37.280 align:start position:0%
+be stateless so when we have this list 4
+ 
+
+00:04:37.280 --> 00:04:39.670 align:start position:0%
+be stateless so when we have this list 4
+5<00:04:37.759><c> we</c><00:04:38.000><c> cannot</c><00:04:38.400><c> store</c><00:04:38.639><c> it</c><00:04:38.800><c> in</c><00:04:38.960><c> a</c><00:04:39.040><c> separate</c><00:04:39.440><c> data</c>
+
+00:04:39.670 --> 00:04:39.680 align:start position:0%
+5 we cannot store it in a separate data
+ 
+
+00:04:39.680 --> 00:04:42.070 align:start position:0%
+5 we cannot store it in a separate data
+structure<00:04:40.160><c> is</c><00:04:40.320><c> it</c><00:04:40.479><c> possible</c><00:04:41.040><c> for</c><00:04:41.199><c> us</c><00:04:41.520><c> to</c><00:04:41.759><c> store</c>
+
+00:04:42.070 --> 00:04:42.080 align:start position:0%
+structure is it possible for us to store
+ 
+
+00:04:42.080 --> 00:04:45.510 align:start position:0%
+structure is it possible for us to store
+it<00:04:42.320><c> in</c><00:04:42.800><c> the</c><00:04:43.040><c> string</c><00:04:43.680><c> itself</c><00:04:44.479><c> how</c><00:04:44.800><c> about</c><00:04:45.280><c> when</c>
+
+00:04:45.510 --> 00:04:45.520 align:start position:0%
+it in the string itself how about when
+ 
+
+00:04:45.520 --> 00:04:47.510 align:start position:0%
+it in the string itself how about when
+we're<00:04:45.759><c> encoding</c><00:04:46.240><c> this</c><00:04:46.639><c> we</c><00:04:46.800><c> want</c><00:04:46.960><c> to</c><00:04:47.040><c> know</c><00:04:47.280><c> okay</c>
+
+00:04:47.510 --> 00:04:47.520 align:start position:0%
+we're encoding this we want to know okay
+ 
+
+00:04:47.520 --> 00:04:49.430 align:start position:0%
+we're encoding this we want to know okay
+starting<00:04:47.840><c> at</c><00:04:47.919><c> the</c><00:04:48.080><c> beginning</c><00:04:48.639><c> here</c><00:04:49.040><c> how</c><00:04:49.199><c> many</c>
+
+00:04:49.430 --> 00:04:49.440 align:start position:0%
+starting at the beginning here how many
+ 
+
+00:04:49.440 --> 00:04:51.189 align:start position:0%
+starting at the beginning here how many
+of<00:04:49.520><c> these</c><00:04:49.759><c> characters</c><00:04:50.160><c> are</c><00:04:50.320><c> going</c><00:04:50.400><c> to</c><00:04:50.560><c> be</c><00:04:51.040><c> in</c>
+
+00:04:51.189 --> 00:04:51.199 align:start position:0%
+of these characters are going to be in
+ 
+
+00:04:51.199 --> 00:04:53.030 align:start position:0%
+of these characters are going to be in
+the<00:04:51.360><c> first</c><00:04:51.759><c> word</c><00:04:52.160><c> well</c><00:04:52.320><c> why</c><00:04:52.479><c> not</c><00:04:52.639><c> just</c><00:04:52.880><c> put</c>
+
+00:04:53.030 --> 00:04:53.040 align:start position:0%
+the first word well why not just put
+ 
+
+00:04:53.040 --> 00:04:55.510 align:start position:0%
+the first word well why not just put
+that<00:04:53.360><c> number</c><00:04:53.759><c> at</c><00:04:53.840><c> the</c><00:04:54.000><c> beginning</c><00:04:54.400><c> right</c><00:04:54.800><c> 4</c><00:04:55.440><c> at</c>
+
+00:04:55.510 --> 00:04:55.520 align:start position:0%
+that number at the beginning right 4 at
+ 
+
+00:04:55.520 --> 00:04:58.390 align:start position:0%
+that number at the beginning right 4 at
+the<00:04:55.759><c> beginning</c><00:04:56.320><c> of</c><00:04:56.880><c> this</c><00:04:57.199><c> encoded</c><00:04:57.759><c> string</c>
+
+00:04:58.390 --> 00:04:58.400 align:start position:0%
+the beginning of this encoded string
+ 
+
+00:04:58.400 --> 00:04:59.830 align:start position:0%
+the beginning of this encoded string
+that<00:04:58.639><c> works</c><00:04:58.960><c> because</c><00:04:59.199><c> then</c><00:04:59.360><c> we</c><00:04:59.520><c> can</c><00:04:59.600><c> look</c><00:04:59.759><c> at</c>
+
+00:04:59.830 --> 00:04:59.840 align:start position:0%
+that works because then we can look at
+ 
+
+00:04:59.840 --> 00:05:01.670 align:start position:0%
+that works because then we can look at
+the<00:04:59.919><c> beginning</c><00:05:00.560><c> transform</c><00:05:01.120><c> it</c><00:05:01.280><c> into</c><00:05:01.520><c> an</c>
+
+00:05:01.670 --> 00:05:01.680 align:start position:0%
+the beginning transform it into an
+ 
+
+00:05:01.680 --> 00:05:03.749 align:start position:0%
+the beginning transform it into an
+integer<00:05:02.400><c> but</c><00:05:02.639><c> one</c><00:05:02.880><c> thing</c><00:05:03.120><c> is</c><00:05:03.280><c> what</c><00:05:03.440><c> if</c><00:05:03.600><c> the</c>
+
+00:05:03.749 --> 00:05:03.759 align:start position:0%
+integer but one thing is what if the
+ 
+
+00:05:03.759 --> 00:05:06.469 align:start position:0%
+integer but one thing is what if the
+word<00:05:04.080><c> itself</c><00:05:04.639><c> had</c><00:05:04.960><c> some</c><00:05:05.199><c> integers</c><00:05:05.759><c> in</c><00:05:05.919><c> it</c><00:05:06.080><c> well</c>
+
+00:05:06.469 --> 00:05:06.479 align:start position:0%
+word itself had some integers in it well
+ 
+
+00:05:06.479 --> 00:05:08.469 align:start position:0%
+word itself had some integers in it well
+now<00:05:06.720><c> we</c><00:05:06.880><c> need</c><00:05:07.199><c> another</c><00:05:07.520><c> delimiter</c><00:05:08.160><c> right</c>
+
+00:05:08.469 --> 00:05:08.479 align:start position:0%
+now we need another delimiter right
+ 
+
+00:05:08.479 --> 00:05:10.469 align:start position:0%
+now we need another delimiter right
+we're<00:05:08.720><c> gonna</c><00:05:08.880><c> have</c><00:05:09.120><c> our</c><00:05:09.440><c> integer</c><00:05:10.000><c> always</c><00:05:10.400><c> at</c>
+
+00:05:10.469 --> 00:05:10.479 align:start position:0%
+we're gonna have our integer always at
+ 
+
+00:05:10.479 --> 00:05:11.909 align:start position:0%
+we're gonna have our integer always at
+the<00:05:10.560><c> beginning</c><00:05:10.960><c> there's</c><00:05:11.199><c> always</c><00:05:11.600><c> going</c><00:05:11.680><c> to</c><00:05:11.759><c> be</c>
+
+00:05:11.909 --> 00:05:11.919 align:start position:0%
+the beginning there's always going to be
+ 
+
+00:05:11.919 --> 00:05:13.830 align:start position:0%
+the beginning there's always going to be
+an<00:05:12.080><c> integer</c><00:05:12.479><c> at</c><00:05:12.560><c> the</c><00:05:12.720><c> beginning</c><00:05:13.199><c> the</c><00:05:13.440><c> string</c>
+
+00:05:13.830 --> 00:05:13.840 align:start position:0%
+an integer at the beginning the string
+ 
+
+00:05:13.840 --> 00:05:15.270 align:start position:0%
+an integer at the beginning the string
+is<00:05:14.000><c> always</c><00:05:14.320><c> going</c><00:05:14.400><c> to</c><00:05:14.479><c> start</c><00:05:14.720><c> with</c><00:05:14.800><c> an</c><00:05:14.960><c> integer</c>
+
+00:05:15.270 --> 00:05:15.280 align:start position:0%
+is always going to start with an integer
+ 
+
+00:05:15.280 --> 00:05:16.790 align:start position:0%
+is always going to start with an integer
+that<00:05:15.520><c> integer</c><00:05:15.840><c> is</c><00:05:16.000><c> going</c><00:05:16.080><c> to</c><00:05:16.160><c> represent</c><00:05:16.639><c> what</c>
+
+00:05:16.790 --> 00:05:16.800 align:start position:0%
+that integer is going to represent what
+ 
+
+00:05:16.800 --> 00:05:18.790 align:start position:0%
+that integer is going to represent what
+the<00:05:16.960><c> length</c><00:05:17.440><c> of</c><00:05:17.600><c> the</c><00:05:17.840><c> following</c><00:05:18.320><c> word</c><00:05:18.639><c> is</c>
+
+00:05:18.790 --> 00:05:18.800 align:start position:0%
+the length of the following word is
+ 
+
+00:05:18.800 --> 00:05:20.230 align:start position:0%
+the length of the following word is
+going<00:05:19.039><c> to</c><00:05:19.199><c> be</c><00:05:19.520><c> but</c><00:05:19.680><c> we're</c><00:05:19.840><c> going</c><00:05:19.919><c> to</c><00:05:20.000><c> have</c><00:05:20.160><c> a</c>
+
+00:05:20.230 --> 00:05:20.240 align:start position:0%
+going to be but we're going to have a
+ 
+
+00:05:20.240 --> 00:05:23.270 align:start position:0%
+going to be but we're going to have a
+delimiter<00:05:20.960><c> in</c><00:05:21.120><c> between</c><00:05:21.919><c> the</c><00:05:22.320><c> integer</c><00:05:23.039><c> and</c>
+
+00:05:23.270 --> 00:05:23.280 align:start position:0%
+delimiter in between the integer and
+ 
+
+00:05:23.280 --> 00:05:25.350 align:start position:0%
+delimiter in between the integer and
+between<00:05:23.600><c> the</c><00:05:23.840><c> word</c><00:05:24.240><c> itself</c>
+
+00:05:25.350 --> 00:05:25.360 align:start position:0%
+between the word itself
+ 
+
+00:05:25.360 --> 00:05:27.110 align:start position:0%
+between the word itself
+so<00:05:25.520><c> basically</c><00:05:26.000><c> we're</c><00:05:26.160><c> going</c><00:05:26.240><c> to</c><00:05:26.400><c> read</c><00:05:26.800><c> each</c>
+
+00:05:27.110 --> 00:05:27.120 align:start position:0%
+so basically we're going to read each
+ 
+
+00:05:27.120 --> 00:05:29.749 align:start position:0%
+so basically we're going to read each
+character<00:05:27.840><c> until</c><00:05:28.320><c> we</c><00:05:28.479><c> reach</c><00:05:28.800><c> the</c><00:05:28.960><c> delimiter</c>
+
+00:05:29.749 --> 00:05:29.759 align:start position:0%
+character until we reach the delimiter
+ 
+
+00:05:29.759 --> 00:05:31.270 align:start position:0%
+character until we reach the delimiter
+and<00:05:30.000><c> once</c><00:05:30.240><c> we</c><00:05:30.400><c> reach</c><00:05:30.639><c> the</c><00:05:30.720><c> delimiter</c><00:05:31.199><c> we're</c>
+
+00:05:31.270 --> 00:05:31.280 align:start position:0%
+and once we reach the delimiter we're
+ 
+
+00:05:31.280 --> 00:05:32.629 align:start position:0%
+and once we reach the delimiter we're
+going<00:05:31.360><c> to</c><00:05:31.440><c> take</c><00:05:31.759><c> all</c><00:05:31.840><c> the</c><00:05:32.000><c> characters</c><00:05:32.400><c> that</c><00:05:32.560><c> we</c>
+
+00:05:32.629 --> 00:05:32.639 align:start position:0%
+going to take all the characters that we
+ 
+
+00:05:32.639 --> 00:05:33.749 align:start position:0%
+going to take all the characters that we
+just<00:05:32.880><c> read</c><00:05:33.120><c> which</c><00:05:33.360><c> are</c><00:05:33.440><c> going</c><00:05:33.520><c> to</c><00:05:33.600><c> be</c>
+
+00:05:33.749 --> 00:05:33.759 align:start position:0%
+just read which are going to be
+ 
+
+00:05:33.759 --> 00:05:36.390 align:start position:0%
+just read which are going to be
+transformed<00:05:34.479><c> into</c><00:05:34.720><c> an</c><00:05:34.960><c> integer</c><00:05:35.520><c> so</c><00:05:35.680><c> this</c><00:05:36.000><c> 4</c><00:05:36.320><c> is</c>
+
+00:05:36.390 --> 00:05:36.400 align:start position:0%
+transformed into an integer so this 4 is
+ 
+
+00:05:36.400 --> 00:05:38.070 align:start position:0%
+transformed into an integer so this 4 is
+going<00:05:36.560><c> to</c><00:05:36.639><c> be</c><00:05:36.880><c> mapped</c><00:05:37.120><c> to</c><00:05:37.440><c> four</c><00:05:37.840><c> and</c><00:05:37.919><c> then</c>
+
+00:05:38.070 --> 00:05:38.080 align:start position:0%
+going to be mapped to four and then
+ 
+
+00:05:38.080 --> 00:05:39.749 align:start position:0%
+going to be mapped to four and then
+we're<00:05:38.240><c> going</c><00:05:38.320><c> to</c><00:05:38.479><c> count</c><00:05:38.880><c> the</c><00:05:38.960><c> next</c><00:05:39.360><c> four</c>
+
+00:05:39.749 --> 00:05:39.759 align:start position:0%
+we're going to count the next four
+ 
+
+00:05:39.759 --> 00:05:42.870 align:start position:0%
+we're going to count the next four
+characters<00:05:40.720><c> after</c><00:05:41.520><c> the</c><00:05:41.759><c> delimiter</c><00:05:42.560><c> which</c><00:05:42.800><c> in</c>
+
+00:05:42.870 --> 00:05:42.880 align:start position:0%
+characters after the delimiter which in
+ 
+
+00:05:42.880 --> 00:05:44.550 align:start position:0%
+characters after the delimiter which in
+this<00:05:43.039><c> case</c><00:05:43.360><c> is</c><00:05:43.440><c> going</c><00:05:43.520><c> to</c><00:05:43.600><c> be</c><00:05:43.840><c> pound</c><00:05:44.240><c> and</c><00:05:44.320><c> that</c>
+
+00:05:44.550 --> 00:05:44.560 align:start position:0%
+this case is going to be pound and that
+ 
+
+00:05:44.560 --> 00:05:46.469 align:start position:0%
+this case is going to be pound and that
+works<00:05:45.120><c> because</c><00:05:45.600><c> we're</c><00:05:45.759><c> only</c><00:05:46.000><c> going</c><00:05:46.080><c> to</c><00:05:46.160><c> read</c>
+
+00:05:46.469 --> 00:05:46.479 align:start position:0%
+works because we're only going to read
+ 
+
+00:05:46.479 --> 00:05:48.629 align:start position:0%
+works because we're only going to read
+one<00:05:46.800><c> delimiter</c><00:05:47.759><c> we're</c><00:05:48.000><c> always</c><00:05:48.240><c> gonna</c><00:05:48.479><c> we're</c>
+
+00:05:48.629 --> 00:05:48.639 align:start position:0%
+one delimiter we're always gonna we're
+ 
+
+00:05:48.639 --> 00:05:51.270 align:start position:0%
+one delimiter we're always gonna we're
+gonna<00:05:48.800><c> expect</c><00:05:49.440><c> a</c><00:05:49.680><c> single</c><00:05:50.160><c> pound</c><00:05:50.560><c> sign</c><00:05:51.120><c> no</c>
+
+00:05:51.270 --> 00:05:51.280 align:start position:0%
+gonna expect a single pound sign no
+ 
+
+00:05:51.280 --> 00:05:53.029 align:start position:0%
+gonna expect a single pound sign no
+matter<00:05:51.680><c> what</c><00:05:51.919><c> right</c><00:05:52.080><c> so</c><00:05:52.240><c> even</c><00:05:52.479><c> if</c><00:05:52.639><c> the</c><00:05:52.720><c> first</c>
+
+00:05:53.029 --> 00:05:53.039 align:start position:0%
+matter what right so even if the first
+ 
+
+00:05:53.039 --> 00:05:55.590 align:start position:0%
+matter what right so even if the first
+character<00:05:53.440><c> here</c><00:05:54.000><c> was</c><00:05:54.320><c> a</c><00:05:54.560><c> pound</c><00:05:55.120><c> it</c><00:05:55.280><c> still</c>
+
+00:05:55.590 --> 00:05:55.600 align:start position:0%
+character here was a pound it still
+ 
+
+00:05:55.600 --> 00:05:57.110 align:start position:0%
+character here was a pound it still
+works<00:05:55.919><c> because</c><00:05:56.160><c> we're</c><00:05:56.319><c> gonna</c><00:05:56.479><c> read</c><00:05:56.880><c> an</c>
+
+00:05:57.110 --> 00:05:57.120 align:start position:0%
+works because we're gonna read an
+ 
+
+00:05:57.120 --> 00:05:59.510 align:start position:0%
+works because we're gonna read an
+integer<00:05:57.600><c> four</c><00:05:58.080><c> read</c><00:05:58.400><c> a</c><00:05:58.560><c> single</c><00:05:58.960><c> pound</c><00:05:59.280><c> sign</c>
+
+00:05:59.510 --> 00:05:59.520 align:start position:0%
+integer four read a single pound sign
+ 
+
+00:05:59.520 --> 00:06:00.870 align:start position:0%
+integer four read a single pound sign
+and<00:05:59.600><c> then</c><00:05:59.759><c> say</c><00:05:59.919><c> okay</c><00:06:00.160><c> take</c><00:06:00.319><c> the</c><00:06:00.400><c> next</c><00:06:00.639><c> four</c>
+
+00:06:00.870 --> 00:06:00.880 align:start position:0%
+and then say okay take the next four
+ 
+
+00:06:00.880 --> 00:06:03.350 align:start position:0%
+and then say okay take the next four
+characters<00:06:01.600><c> even</c><00:06:01.840><c> if</c><00:06:02.000><c> they</c><00:06:02.240><c> include</c><00:06:02.800><c> pound</c>
+
+00:06:03.350 --> 00:06:03.360 align:start position:0%
+characters even if they include pound
+ 
+
+00:06:03.360 --> 00:06:05.270 align:start position:0%
+characters even if they include pound
+even<00:06:03.600><c> if</c><00:06:03.680><c> they</c><00:06:03.840><c> included</c><00:06:04.319><c> some</c><00:06:04.560><c> integer</c><00:06:04.960><c> like</c>
+
+00:06:05.270 --> 00:06:05.280 align:start position:0%
+even if they included some integer like
+ 
+
+00:06:05.280 --> 00:06:07.670 align:start position:0%
+even if they included some integer like
+eight<00:06:05.600><c> or</c><00:06:06.080><c> you</c><00:06:06.240><c> know</c><00:06:06.479><c> six</c><00:06:06.880><c> or</c><00:06:07.039><c> something</c><00:06:07.440><c> right</c>
+
+00:06:07.670 --> 00:06:07.680 align:start position:0%
+eight or you know six or something right
+ 
+
+00:06:07.680 --> 00:06:09.350 align:start position:0%
+eight or you know six or something right
+if<00:06:07.840><c> they</c><00:06:08.000><c> include</c><00:06:08.319><c> integer</c><00:06:08.720><c> pound</c><00:06:09.039><c> it</c><00:06:09.120><c> doesn't</c>
+
+00:06:09.350 --> 00:06:09.360 align:start position:0%
+if they include integer pound it doesn't
+ 
+
+00:06:09.360 --> 00:06:11.350 align:start position:0%
+if they include integer pound it doesn't
+matter<00:06:09.840><c> because</c><00:06:10.080><c> this</c><00:06:10.319><c> tells</c><00:06:10.720><c> us</c><00:06:11.039><c> how</c><00:06:11.199><c> many</c>
+
+00:06:11.350 --> 00:06:11.360 align:start position:0%
+matter because this tells us how many
+ 
+
+00:06:11.360 --> 00:06:13.029 align:start position:0%
+matter because this tells us how many
+characters<00:06:11.840><c> are</c><00:06:11.919><c> going</c><00:06:12.000><c> to</c><00:06:12.080><c> be</c><00:06:12.319><c> in</c><00:06:12.479><c> the</c><00:06:12.639><c> first</c>
+
+00:06:13.029 --> 00:06:13.039 align:start position:0%
+characters are going to be in the first
+ 
+
+00:06:13.039 --> 00:06:15.430 align:start position:0%
+characters are going to be in the first
+word<00:06:13.520><c> and</c><00:06:13.600><c> then</c><00:06:14.240><c> once</c><00:06:14.479><c> we</c><00:06:14.639><c> read</c><00:06:14.880><c> those</c><00:06:15.199><c> four</c>
+
+00:06:15.430 --> 00:06:15.440 align:start position:0%
+word and then once we read those four
+ 
+
+00:06:15.440 --> 00:06:17.189 align:start position:0%
+word and then once we read those four
+characters<00:06:16.160><c> what</c><00:06:16.319><c> are</c><00:06:16.479><c> we</c><00:06:16.560><c> going</c><00:06:16.639><c> to</c><00:06:16.800><c> expect</c>
+
+00:06:17.189 --> 00:06:17.199 align:start position:0%
+characters what are we going to expect
+ 
+
+00:06:17.199 --> 00:06:19.029 align:start position:0%
+characters what are we going to expect
+to<00:06:17.360><c> be</c><00:06:17.600><c> next</c><00:06:18.080><c> well</c><00:06:18.319><c> we're</c><00:06:18.479><c> going</c><00:06:18.560><c> to</c><00:06:18.639><c> expect</c>
+
+00:06:19.029 --> 00:06:19.039 align:start position:0%
+to be next well we're going to expect
+ 
+
+00:06:19.039 --> 00:06:21.029 align:start position:0%
+to be next well we're going to expect
+some<00:06:19.360><c> word</c><00:06:19.759><c> but</c><00:06:19.919><c> we</c><00:06:20.080><c> want</c><00:06:20.240><c> to</c><00:06:20.319><c> know</c><00:06:20.479><c> how</c><00:06:20.800><c> long</c>
+
+00:06:21.029 --> 00:06:21.039 align:start position:0%
+some word but we want to know how long
+ 
+
+00:06:21.039 --> 00:06:22.230 align:start position:0%
+some word but we want to know how long
+that<00:06:21.199><c> word</c><00:06:21.440><c> is</c><00:06:21.600><c> going</c><00:06:21.680><c> to</c><00:06:21.759><c> be</c><00:06:21.919><c> so</c><00:06:22.080><c> we're</c><00:06:22.240><c> going</c>
+
+00:06:22.230 --> 00:06:22.240 align:start position:0%
+that word is going to be so we're going
+ 
+
+00:06:22.240 --> 00:06:25.270 align:start position:0%
+that word is going to be so we're going
+to<00:06:22.319><c> do</c><00:06:22.560><c> exactly</c><00:06:22.960><c> what</c><00:06:23.120><c> we</c><00:06:23.360><c> just</c><00:06:23.680><c> did</c><00:06:24.240><c> over</c><00:06:24.800><c> here</c>
+
+00:06:25.270 --> 00:06:25.280 align:start position:0%
+to do exactly what we just did over here
+ 
+
+00:06:25.280 --> 00:06:27.110 align:start position:0%
+to do exactly what we just did over here
+having<00:06:25.520><c> an</c><00:06:25.759><c> integer</c><00:06:26.240><c> followed</c><00:06:26.560><c> by</c><00:06:26.720><c> a</c><00:06:26.880><c> pound</c>
+
+00:06:27.110 --> 00:06:27.120 align:start position:0%
+having an integer followed by a pound
+ 
+
+00:06:27.120 --> 00:06:28.629 align:start position:0%
+having an integer followed by a pound
+sign<00:06:27.360><c> and</c><00:06:27.440><c> we're</c><00:06:27.520><c> going</c><00:06:27.600><c> to</c><00:06:27.759><c> put</c><00:06:27.919><c> that</c><00:06:28.400><c> same</c>
+
+00:06:28.629 --> 00:06:28.639 align:start position:0%
+sign and we're going to put that same
+ 
+
+00:06:28.639 --> 00:06:30.550 align:start position:0%
+sign and we're going to put that same
+thing<00:06:28.960><c> over</c><00:06:29.280><c> here</c><00:06:29.759><c> so</c><00:06:30.000><c> in</c><00:06:30.080><c> this</c><00:06:30.240><c> case</c><00:06:30.400><c> we're</c>
+
+00:06:30.550 --> 00:06:30.560 align:start position:0%
+thing over here so in this case we're
+ 
+
+00:06:30.560 --> 00:06:32.950 align:start position:0%
+thing over here so in this case we're
+going<00:06:30.639><c> to</c><00:06:30.720><c> have</c><00:06:30.880><c> a</c><00:06:31.120><c> 5</c><00:06:31.680><c> and</c><00:06:31.840><c> a</c><00:06:32.000><c> pound</c><00:06:32.319><c> sign</c>
+
+00:06:32.950 --> 00:06:32.960 align:start position:0%
+going to have a 5 and a pound sign
+ 
+
+00:06:32.960 --> 00:06:35.110 align:start position:0%
+going to have a 5 and a pound sign
+because<00:06:33.759><c> the</c><00:06:34.000><c> next</c><00:06:34.319><c> word</c><00:06:34.639><c> is</c><00:06:34.720><c> going</c><00:06:34.800><c> to</c><00:06:34.880><c> be</c>
+
+00:06:35.110 --> 00:06:35.120 align:start position:0%
+because the next word is going to be
+ 
+
+00:06:35.120 --> 00:06:37.590 align:start position:0%
+because the next word is going to be
+five<00:06:35.600><c> characters</c><00:06:36.400><c> long</c><00:06:36.720><c> so</c><00:06:36.960><c> this</c><00:06:37.199><c> is</c><00:06:37.280><c> kind</c><00:06:37.440><c> of</c>
+
+00:06:37.590 --> 00:06:37.600 align:start position:0%
+five characters long so this is kind of
+ 
+
+00:06:37.600 --> 00:06:39.990 align:start position:0%
+five characters long so this is kind of
+how<00:06:37.759><c> we're</c><00:06:38.000><c> storing</c><00:06:38.400><c> the</c><00:06:38.639><c> integers</c><00:06:39.280><c> inside</c><00:06:39.919><c> of</c>
+
+00:06:39.990 --> 00:06:40.000 align:start position:0%
+how we're storing the integers inside of
+ 
+
+00:06:40.000 --> 00:06:42.070 align:start position:0%
+how we're storing the integers inside of
+the<00:06:40.240><c> encoded</c><00:06:40.800><c> string</c><00:06:41.120><c> so</c><00:06:41.280><c> that</c><00:06:41.440><c> we</c><00:06:41.600><c> know</c><00:06:41.840><c> how</c>
+
+00:06:42.070 --> 00:06:42.080 align:start position:0%
+the encoded string so that we know how
+ 
+
+00:06:42.080 --> 00:06:44.950 align:start position:0%
+the encoded string so that we know how
+to<00:06:42.319><c> decode</c><00:06:42.800><c> it</c><00:06:42.880><c> we</c><00:06:43.039><c> know</c><00:06:43.280><c> how</c><00:06:43.919><c> long</c><00:06:44.560><c> each</c><00:06:44.800><c> of</c>
+
+00:06:44.950 --> 00:06:44.960 align:start position:0%
+to decode it we know how long each of
+ 
+
+00:06:44.960 --> 00:06:47.029 align:start position:0%
+to decode it we know how long each of
+the<00:06:45.039><c> strings</c><00:06:45.520><c> is</c><00:06:45.680><c> going</c><00:06:45.840><c> to</c><00:06:46.080><c> be</c><00:06:46.639><c> so</c><00:06:46.800><c> i</c><00:06:46.880><c> hope</c>
+
+00:06:47.029 --> 00:06:47.039 align:start position:0%
+the strings is going to be so i hope
+ 
+
+00:06:47.039 --> 00:06:48.629 align:start position:0%
+the strings is going to be so i hope
+this<00:06:47.199><c> makes</c><00:06:47.520><c> sense</c><00:06:48.080><c> now</c><00:06:48.240><c> i'm</c><00:06:48.319><c> going</c><00:06:48.400><c> to</c><00:06:48.479><c> show</c>
+
+00:06:48.629 --> 00:06:48.639 align:start position:0%
+this makes sense now i'm going to show
+ 
+
+00:06:48.639 --> 00:06:50.629 align:start position:0%
+this makes sense now i'm going to show
+you<00:06:48.800><c> how</c><00:06:49.039><c> to</c><00:06:49.120><c> actually</c><00:06:49.520><c> code</c><00:06:49.759><c> it</c><00:06:49.919><c> up</c><00:06:50.319><c> by</c><00:06:50.479><c> the</c>
+
+00:06:50.629 --> 00:06:50.639 align:start position:0%
+you how to actually code it up by the
+ 
+
+00:06:50.639 --> 00:06:52.550 align:start position:0%
+you how to actually code it up by the
+way<00:06:51.039><c> the</c><00:06:51.280><c> overall</c><00:06:51.599><c> time</c><00:06:51.840><c> complexity</c><00:06:52.319><c> of</c>
+
+00:06:52.550 --> 00:06:52.560 align:start position:0%
+way the overall time complexity of
+ 
+
+00:06:52.560 --> 00:06:55.029 align:start position:0%
+way the overall time complexity of
+encode<00:06:53.280><c> and</c><00:06:53.599><c> decode</c><00:06:54.080><c> is</c><00:06:54.160><c> going</c><00:06:54.240><c> to</c><00:06:54.319><c> be</c><00:06:54.400><c> of</c><00:06:54.880><c> n</c>
+
+00:06:55.029 --> 00:06:55.039 align:start position:0%
+encode and decode is going to be of n
+ 
+
+00:06:55.039 --> 00:06:56.950 align:start position:0%
+encode and decode is going to be of n
+where<00:06:55.360><c> n</c><00:06:55.599><c> is</c><00:06:55.680><c> going</c><00:06:55.759><c> to</c><00:06:55.840><c> be</c><00:06:56.080><c> the</c><00:06:56.319><c> total</c><00:06:56.639><c> number</c>
+
+00:06:56.950 --> 00:06:56.960 align:start position:0%
+where n is going to be the total number
+ 
+
+00:06:56.960 --> 00:06:59.830 align:start position:0%
+where n is going to be the total number
+of<00:06:57.199><c> characters</c><00:06:58.080><c> given</c><00:06:58.319><c> to</c><00:06:58.560><c> us</c><00:06:58.800><c> in</c><00:06:58.880><c> the</c><00:06:59.120><c> list</c><00:06:59.599><c> of</c>
+
+00:06:59.830 --> 00:06:59.840 align:start position:0%
+of characters given to us in the list of
+ 
+
+00:06:59.840 --> 00:07:02.230 align:start position:0%
+of characters given to us in the list of
+words<00:07:00.560><c> so</c><00:07:00.720><c> with</c><00:07:00.880><c> that</c><00:07:01.120><c> being</c><00:07:01.360><c> said</c><00:07:01.759><c> we</c><00:07:02.080><c> are</c>
+
+00:07:02.230 --> 00:07:02.240 align:start position:0%
+words so with that being said we are
+ 
+
+00:07:02.240 --> 00:07:04.230 align:start position:0%
+words so with that being said we are
+ready<00:07:02.479><c> to</c><00:07:02.639><c> get</c><00:07:02.800><c> into</c><00:07:03.039><c> the</c><00:07:03.199><c> code</c><00:07:03.599><c> okay</c><00:07:03.840><c> so</c><00:07:04.000><c> now</c>
+
+00:07:04.230 --> 00:07:04.240 align:start position:0%
+ready to get into the code okay so now
+ 
+
+00:07:04.240 --> 00:07:05.909 align:start position:0%
+ready to get into the code okay so now
+let's<00:07:04.400><c> get</c><00:07:04.639><c> into</c><00:07:04.880><c> the</c><00:07:05.039><c> code</c><00:07:05.360><c> you</c><00:07:05.440><c> can</c><00:07:05.599><c> see</c><00:07:05.759><c> the</c>
+
+00:07:05.909 --> 00:07:05.919 align:start position:0%
+let's get into the code you can see the
+ 
+
+00:07:05.919 --> 00:07:07.670 align:start position:0%
+let's get into the code you can see the
+interface<00:07:06.400><c> is</c><00:07:06.479><c> a</c><00:07:06.560><c> little</c><00:07:06.800><c> bit</c><00:07:06.960><c> different</c><00:07:07.440><c> yes</c>
+
+00:07:07.670 --> 00:07:07.680 align:start position:0%
+interface is a little bit different yes
+ 
+
+00:07:07.680 --> 00:07:09.430 align:start position:0%
+interface is a little bit different yes
+we<00:07:07.840><c> are</c><00:07:07.919><c> doing</c><00:07:08.160><c> this</c><00:07:08.400><c> on</c><00:07:08.639><c> lint</c><00:07:08.880><c> code</c><00:07:09.199><c> rather</c>
+
+00:07:09.430 --> 00:07:09.440 align:start position:0%
+we are doing this on lint code rather
+ 
+
+00:07:09.440 --> 00:07:11.029 align:start position:0%
+we are doing this on lint code rather
+than<00:07:09.680><c> leak</c><00:07:09.919><c> code</c><00:07:10.160><c> because</c><00:07:10.319><c> it's</c><00:07:10.479><c> free</c><00:07:10.800><c> on</c>
+
+00:07:11.029 --> 00:07:11.039 align:start position:0%
+than leak code because it's free on
+ 
+
+00:07:11.039 --> 00:07:13.350 align:start position:0%
+than leak code because it's free on
+there<00:07:11.520><c> so</c><00:07:11.840><c> let's</c><00:07:12.080><c> start</c><00:07:12.319><c> with</c><00:07:12.479><c> the</c><00:07:12.720><c> encode</c>
+
+00:07:13.350 --> 00:07:13.360 align:start position:0%
+there so let's start with the encode
+ 
+
+00:07:13.360 --> 00:07:15.189 align:start position:0%
+there so let's start with the encode
+function<00:07:13.759><c> it's</c><00:07:13.919><c> a</c><00:07:14.000><c> little</c><00:07:14.160><c> bit</c><00:07:14.400><c> easier</c><00:07:14.960><c> so</c>
+
+00:07:15.189 --> 00:07:15.199 align:start position:0%
+function it's a little bit easier so
+ 
+
+00:07:15.199 --> 00:07:17.029 align:start position:0%
+function it's a little bit easier so
+remember<00:07:15.520><c> we're</c><00:07:15.759><c> given</c><00:07:16.080><c> a</c><00:07:16.240><c> list</c><00:07:16.479><c> of</c><00:07:16.639><c> strings</c>
+
+00:07:17.029 --> 00:07:17.039 align:start position:0%
+remember we're given a list of strings
+ 
+
+00:07:17.039 --> 00:07:19.589 align:start position:0%
+remember we're given a list of strings
+and<00:07:17.199><c> we</c><00:07:17.360><c> want</c><00:07:17.599><c> to</c><00:07:18.080><c> encode</c><00:07:18.560><c> it</c><00:07:18.720><c> into</c><00:07:19.039><c> a</c><00:07:19.199><c> single</c>
+
+00:07:19.589 --> 00:07:19.599 align:start position:0%
+and we want to encode it into a single
+ 
+
+00:07:19.599 --> 00:07:21.510 align:start position:0%
+and we want to encode it into a single
+string<00:07:20.240><c> how</c><00:07:20.400><c> are</c><00:07:20.479><c> we</c><00:07:20.639><c> going</c><00:07:20.720><c> to</c><00:07:20.800><c> do</c><00:07:21.039><c> that</c><00:07:21.280><c> well</c>
+
+00:07:21.510 --> 00:07:21.520 align:start position:0%
+string how are we going to do that well
+ 
+
+00:07:21.520 --> 00:07:23.350 align:start position:0%
+string how are we going to do that well
+we're<00:07:21.680><c> going</c><00:07:21.840><c> to</c><00:07:21.919><c> go</c><00:07:22.160><c> string</c><00:07:22.560><c> by</c><00:07:22.800><c> string</c><00:07:23.199><c> in</c>
+
+00:07:23.350 --> 00:07:23.360 align:start position:0%
+we're going to go string by string in
+ 
+
+00:07:23.360 --> 00:07:26.629 align:start position:0%
+we're going to go string by string in
+the<00:07:23.599><c> input</c><00:07:24.400><c> and</c><00:07:24.639><c> to</c><00:07:24.960><c> the</c><00:07:25.199><c> result</c><00:07:25.919><c> we</c><00:07:26.160><c> want</c><00:07:26.400><c> to</c>
+
+00:07:26.629 --> 00:07:26.639 align:start position:0%
+the input and to the result we want to
+ 
+
+00:07:26.639 --> 00:07:29.749 align:start position:0%
+the input and to the result we want to
+append<00:07:27.440><c> this</c><00:07:27.840><c> encoded</c><00:07:28.560><c> string</c><00:07:29.039><c> s</c><00:07:29.280><c> how</c><00:07:29.440><c> are</c><00:07:29.599><c> we</c>
+
+00:07:29.749 --> 00:07:29.759 align:start position:0%
+append this encoded string s how are we
+ 
+
+00:07:29.759 --> 00:07:31.749 align:start position:0%
+append this encoded string s how are we
+encoding<00:07:30.319><c> it</c><00:07:30.400><c> again</c><00:07:30.880><c> well</c><00:07:31.199><c> remember</c><00:07:31.599><c> we're</c>
+
+00:07:31.749 --> 00:07:31.759 align:start position:0%
+encoding it again well remember we're
+ 
+
+00:07:31.759 --> 00:07:34.309 align:start position:0%
+encoding it again well remember we're
+going<00:07:31.840><c> to</c><00:07:31.919><c> take</c><00:07:32.160><c> the</c><00:07:32.479><c> length</c><00:07:33.120><c> of</c><00:07:33.199><c> the</c><00:07:33.440><c> string</c>
+
+00:07:34.309 --> 00:07:34.319 align:start position:0%
+going to take the length of the string
+ 
+
+00:07:34.319 --> 00:07:36.309 align:start position:0%
+going to take the length of the string
+and<00:07:34.960><c> you</c><00:07:35.039><c> know</c><00:07:35.440><c> this</c><00:07:35.759><c> the</c><00:07:35.919><c> length</c><00:07:36.160><c> of</c><00:07:36.240><c> the</c>
+
+00:07:36.309 --> 00:07:36.319 align:start position:0%
+and you know this the length of the
+ 
+
+00:07:36.319 --> 00:07:37.670 align:start position:0%
+and you know this the length of the
+string<00:07:36.639><c> is</c><00:07:36.720><c> going</c><00:07:36.800><c> to</c><00:07:36.880><c> be</c><00:07:36.960><c> an</c><00:07:37.120><c> integer</c><00:07:37.440><c> but</c><00:07:37.599><c> we</c>
+
+00:07:37.670 --> 00:07:37.680 align:start position:0%
+string is going to be an integer but we
+ 
+
+00:07:37.680 --> 00:07:40.309 align:start position:0%
+string is going to be an integer but we
+want<00:07:37.840><c> to</c><00:07:37.919><c> transform</c><00:07:38.479><c> that</c><00:07:38.720><c> into</c><00:07:39.039><c> a</c><00:07:39.280><c> string</c><00:07:40.000><c> so</c>
+
+00:07:40.309 --> 00:07:40.319 align:start position:0%
+want to transform that into a string so
+ 
+
+00:07:40.319 --> 00:07:42.230 align:start position:0%
+want to transform that into a string so
+let's<00:07:40.639><c> do</c><00:07:40.800><c> that</c><00:07:41.039><c> in</c><00:07:41.120><c> python</c><00:07:41.599><c> pretty</c><00:07:41.840><c> easily</c>
+
+00:07:42.230 --> 00:07:42.240 align:start position:0%
+let's do that in python pretty easily
+ 
+
+00:07:42.240 --> 00:07:43.589 align:start position:0%
+let's do that in python pretty easily
+just<00:07:42.400><c> like</c><00:07:42.639><c> this</c>
+
+00:07:43.589 --> 00:07:43.599 align:start position:0%
+just like this
+ 
+
+00:07:43.599 --> 00:07:44.550 align:start position:0%
+just like this
+plus
+
+00:07:44.550 --> 00:07:44.560 align:start position:0%
+plus
+ 
+
+00:07:44.560 --> 00:07:46.150 align:start position:0%
+plus
+we<00:07:44.720><c> want</c><00:07:44.879><c> to</c><00:07:44.960><c> add</c><00:07:45.199><c> the</c><00:07:45.360><c> delimiter</c><00:07:45.840><c> to</c><00:07:45.919><c> the</c>
+
+00:07:46.150 --> 00:07:46.160 align:start position:0%
+we want to add the delimiter to the
+ 
+
+00:07:46.160 --> 00:07:48.150 align:start position:0%
+we want to add the delimiter to the
+pound<00:07:46.560><c> sign</c><00:07:46.879><c> so</c><00:07:47.120><c> we</c><00:07:47.280><c> have</c><00:07:47.440><c> the</c><00:07:47.680><c> length</c><00:07:48.000><c> of</c><00:07:48.080><c> the</c>
+
+00:07:48.150 --> 00:07:48.160 align:start position:0%
+pound sign so we have the length of the
+ 
+
+00:07:48.160 --> 00:07:50.629 align:start position:0%
+pound sign so we have the length of the
+string<00:07:48.720><c> followed</c><00:07:49.120><c> by</c><00:07:49.599><c> the</c><00:07:49.759><c> delimiter</c><00:07:50.319><c> pound</c>
+
+00:07:50.629 --> 00:07:50.639 align:start position:0%
+string followed by the delimiter pound
+ 
+
+00:07:50.639 --> 00:07:54.150 align:start position:0%
+string followed by the delimiter pound
+sign<00:07:51.199><c> followed</c><00:07:51.680><c> by</c><00:07:52.160><c> the</c><00:07:52.319><c> string</c><00:07:52.800><c> itself</c><00:07:53.599><c> s</c><00:07:53.919><c> so</c>
+
+00:07:54.150 --> 00:07:54.160 align:start position:0%
+sign followed by the string itself s so
+ 
+
+00:07:54.160 --> 00:07:56.070 align:start position:0%
+sign followed by the string itself s so
+then<00:07:54.720><c> you</c><00:07:54.879><c> know</c><00:07:54.960><c> this</c><00:07:55.199><c> is</c><00:07:55.280><c> kind</c><00:07:55.440><c> of</c><00:07:55.520><c> the</c><00:07:55.680><c> format</c>
+
+00:07:56.070 --> 00:07:56.080 align:start position:0%
+then you know this is kind of the format
+ 
+
+00:07:56.080 --> 00:07:58.550 align:start position:0%
+then you know this is kind of the format
+that<00:07:56.319><c> we</c><00:07:56.800><c> agreed</c><00:07:57.280><c> upon</c><00:07:57.919><c> this</c><00:07:58.160><c> is</c><00:07:58.319><c> how</c><00:07:58.400><c> we're</c>
+
+00:07:58.550 --> 00:07:58.560 align:start position:0%
+that we agreed upon this is how we're
+ 
+
+00:07:58.560 --> 00:07:59.830 align:start position:0%
+that we agreed upon this is how we're
+going<00:07:58.639><c> to</c><00:07:58.720><c> be</c><00:07:58.879><c> encoding</c><00:07:59.360><c> it</c><00:07:59.520><c> because</c><00:07:59.680><c> it's</c>
+
+00:07:59.830 --> 00:07:59.840 align:start position:0%
+going to be encoding it because it's
+ 
+
+00:07:59.840 --> 00:08:01.589 align:start position:0%
+going to be encoding it because it's
+going<00:07:59.919><c> to</c><00:08:00.000><c> be</c><00:08:00.160><c> easy</c><00:08:00.400><c> for</c><00:08:00.560><c> us</c><00:08:00.639><c> to</c><00:08:00.800><c> decode</c><00:08:01.360><c> this</c>
+
+00:08:01.589 --> 00:08:01.599 align:start position:0%
+going to be easy for us to decode this
+ 
+
+00:08:01.599 --> 00:08:02.790 align:start position:0%
+going to be easy for us to decode this
+as<00:08:01.680><c> well</c><00:08:01.919><c> so</c><00:08:02.080><c> we're</c><00:08:02.240><c> going</c><00:08:02.240><c> to</c><00:08:02.319><c> do</c><00:08:02.479><c> this</c><00:08:02.639><c> for</c>
+
+00:08:02.790 --> 00:08:02.800 align:start position:0%
+as well so we're going to do this for
+ 
+
+00:08:02.800 --> 00:08:04.869 align:start position:0%
+as well so we're going to do this for
+every<00:08:02.960><c> single</c><00:08:03.280><c> string</c><00:08:03.680><c> in</c><00:08:03.840><c> the</c><00:08:04.080><c> input</c><00:08:04.639><c> add</c><00:08:04.800><c> it</c>
+
+00:08:04.869 --> 00:08:04.879 align:start position:0%
+every single string in the input add it
+ 
+
+00:08:04.879 --> 00:08:06.629 align:start position:0%
+every single string in the input add it
+to<00:08:05.039><c> the</c><00:08:05.120><c> result</c><00:08:05.599><c> and</c><00:08:05.680><c> then</c><00:08:05.840><c> we</c><00:08:06.000><c> can</c><00:08:06.160><c> go</c><00:08:06.319><c> ahead</c>
+
+00:08:06.629 --> 00:08:06.639 align:start position:0%
+to the result and then we can go ahead
+ 
+
+00:08:06.639 --> 00:08:09.830 align:start position:0%
+to the result and then we can go ahead
+and<00:08:06.879><c> return</c><00:08:07.680><c> that</c><00:08:08.080><c> result</c><00:08:08.720><c> so</c><00:08:08.960><c> encode</c><00:08:09.520><c> was</c>
+
+00:08:09.830 --> 00:08:09.840 align:start position:0%
+and return that result so encode was
+ 
+
+00:08:09.840 --> 00:08:11.430 align:start position:0%
+and return that result so encode was
+pretty<00:08:10.160><c> straightforward</c><00:08:10.800><c> d</c><00:08:10.800><c> decode</c><00:08:11.280><c> is</c><00:08:11.360><c> going</c>
+
+00:08:11.430 --> 00:08:11.440 align:start position:0%
+pretty straightforward d decode is going
+ 
+
+00:08:11.440 --> 00:08:13.430 align:start position:0%
+pretty straightforward d decode is going
+to<00:08:11.520><c> be</c><00:08:11.680><c> a</c><00:08:11.759><c> little</c><00:08:11.919><c> bit</c><00:08:12.160><c> more</c><00:08:12.400><c> tricky</c><00:08:12.879><c> but</c><00:08:13.120><c> we</c>
+
+00:08:13.430 --> 00:08:13.440 align:start position:0%
+to be a little bit more tricky but we
+ 
+
+00:08:13.440 --> 00:08:15.670 align:start position:0%
+to be a little bit more tricky but we
+know<00:08:13.680><c> the</c><00:08:14.000><c> rules</c><00:08:14.319><c> that</c><00:08:14.479><c> we</c><00:08:14.639><c> can</c><00:08:14.879><c> follow</c><00:08:15.360><c> so</c>
+
+00:08:15.670 --> 00:08:15.680 align:start position:0%
+know the rules that we can follow so
+ 
+
+00:08:15.680 --> 00:08:17.510 align:start position:0%
+know the rules that we can follow so
+this<00:08:15.840><c> time</c><00:08:16.000><c> we're</c><00:08:16.160><c> given</c><00:08:16.560><c> a</c><00:08:16.639><c> single</c><00:08:17.039><c> string</c><00:08:17.360><c> a</c>
+
+00:08:17.510 --> 00:08:17.520 align:start position:0%
+this time we're given a single string a
+ 
+
+00:08:17.520 --> 00:08:19.830 align:start position:0%
+this time we're given a single string a
+single<00:08:18.000><c> encoded</c><00:08:18.800><c> string</c><00:08:19.360><c> which</c><00:08:19.599><c> is</c><00:08:19.680><c> going</c><00:08:19.759><c> to</c>
+
+00:08:19.830 --> 00:08:19.840 align:start position:0%
+single encoded string which is going to
+ 
+
+00:08:19.840 --> 00:08:21.749 align:start position:0%
+single encoded string which is going to
+be<00:08:20.240><c> you</c><00:08:20.319><c> know</c><00:08:20.479><c> encoded</c><00:08:21.039><c> using</c><00:08:21.280><c> the</c><00:08:21.440><c> function</c>
+
+00:08:21.749 --> 00:08:21.759 align:start position:0%
+be you know encoded using the function
+ 
+
+00:08:21.759 --> 00:08:23.270 align:start position:0%
+be you know encoded using the function
+that<00:08:21.840><c> we</c><00:08:22.000><c> just</c><00:08:22.240><c> wrote</c><00:08:22.639><c> so</c><00:08:22.800><c> how</c><00:08:22.960><c> are</c><00:08:23.039><c> we</c><00:08:23.120><c> going</c>
+
+00:08:23.270 --> 00:08:23.280 align:start position:0%
+that we just wrote so how are we going
+ 
+
+00:08:23.280 --> 00:08:25.510 align:start position:0%
+that we just wrote so how are we going
+to<00:08:23.360><c> decode</c><00:08:23.919><c> it</c><00:08:24.080><c> into</c><00:08:24.319><c> a</c><00:08:24.479><c> list</c><00:08:24.800><c> of</c><00:08:24.960><c> strings</c><00:08:25.440><c> in</c>
+
+00:08:25.510 --> 00:08:25.520 align:start position:0%
+to decode it into a list of strings in
+ 
+
+00:08:25.520 --> 00:08:27.270 align:start position:0%
+to decode it into a list of strings in
+this<00:08:25.680><c> case</c><00:08:26.000><c> our</c><00:08:26.160><c> result</c><00:08:26.560><c> is</c><00:08:26.720><c> going</c><00:08:26.800><c> to</c><00:08:26.879><c> be</c><00:08:27.039><c> a</c>
+
+00:08:27.270 --> 00:08:27.280 align:start position:0%
+this case our result is going to be a
+ 
+
+00:08:27.280 --> 00:08:29.670 align:start position:0%
+this case our result is going to be a
+list<00:08:28.000><c> of</c><00:08:28.160><c> strings</c><00:08:28.879><c> and</c><00:08:29.120><c> i'm</c><00:08:29.280><c> also</c><00:08:29.520><c> going</c><00:08:29.599><c> to</c>
+
+00:08:29.670 --> 00:08:29.680 align:start position:0%
+list of strings and i'm also going to
+ 
+
+00:08:29.680 --> 00:08:31.909 align:start position:0%
+list of strings and i'm also going to
+have<00:08:29.919><c> a</c><00:08:30.240><c> pointer</c><00:08:30.720><c> i</c><00:08:31.199><c> which</c><00:08:31.440><c> is</c><00:08:31.520><c> going</c><00:08:31.599><c> to</c><00:08:31.759><c> tell</c>
+
+00:08:31.909 --> 00:08:31.919 align:start position:0%
+have a pointer i which is going to tell
+ 
+
+00:08:31.919 --> 00:08:34.389 align:start position:0%
+have a pointer i which is going to tell
+us<00:08:32.240><c> what</c><00:08:32.479><c> position</c><00:08:32.880><c> that</c><00:08:33.039><c> we're</c><00:08:33.279><c> at</c><00:08:33.760><c> in</c><00:08:34.159><c> the</c>
+
+00:08:34.389 --> 00:08:34.399 align:start position:0%
+us what position that we're at in the
+ 
+
+00:08:34.399 --> 00:08:37.589 align:start position:0%
+us what position that we're at in the
+input<00:08:34.800><c> string</c><00:08:35.519><c> so</c><00:08:35.919><c> far</c><00:08:36.560><c> so</c><00:08:36.880><c> i'm</c><00:08:37.120><c> going</c><00:08:37.200><c> to</c><00:08:37.360><c> just</c>
+
+00:08:37.589 --> 00:08:37.599 align:start position:0%
+input string so far so i'm going to just
+ 
+
+00:08:37.599 --> 00:08:39.509 align:start position:0%
+input string so far so i'm going to just
+iterate<00:08:38.000><c> character</c><00:08:38.320><c> by</c><00:08:38.479><c> character</c><00:08:38.880><c> so</c><00:08:39.120><c> while</c>
+
+00:08:39.509 --> 00:08:39.519 align:start position:0%
+iterate character by character so while
+ 
+
+00:08:39.519 --> 00:08:41.990 align:start position:0%
+iterate character by character so while
+i<00:08:39.919><c> is</c><00:08:40.159><c> still</c><00:08:40.560><c> in</c><00:08:40.880><c> bounds</c><00:08:41.519><c> we</c><00:08:41.680><c> are</c><00:08:41.760><c> going</c><00:08:41.919><c> to</c>
+
+00:08:41.990 --> 00:08:42.000 align:start position:0%
+i is still in bounds we are going to
+ 
+
+00:08:42.000 --> 00:08:44.070 align:start position:0%
+i is still in bounds we are going to
+read<00:08:42.240><c> character</c><00:08:42.640><c> by</c><00:08:42.880><c> character</c><00:08:43.599><c> basically</c>
+
+00:08:44.070 --> 00:08:44.080 align:start position:0%
+read character by character basically
+ 
+
+00:08:44.080 --> 00:08:46.550 align:start position:0%
+read character by character basically
+decoding<00:08:44.800><c> each</c><00:08:45.120><c> string</c><00:08:45.600><c> so</c><00:08:45.839><c> when</c><00:08:46.000><c> we</c><00:08:46.240><c> start</c>
+
+00:08:46.550 --> 00:08:46.560 align:start position:0%
+decoding each string so when we start
+ 
+
+00:08:46.560 --> 00:08:48.230 align:start position:0%
+decoding each string so when we start
+off<00:08:46.959><c> the</c><00:08:47.200><c> first</c><00:08:47.519><c> position</c><00:08:47.920><c> that</c><00:08:48.000><c> we're</c><00:08:48.160><c> going</c>
+
+00:08:48.230 --> 00:08:48.240 align:start position:0%
+off the first position that we're going
+ 
+
+00:08:48.240 --> 00:08:51.190 align:start position:0%
+off the first position that we're going
+to<00:08:48.320><c> be</c><00:08:48.560><c> at</c><00:08:48.959><c> is</c><00:08:49.120><c> going</c><00:08:49.360><c> to</c><00:08:49.519><c> be</c><00:08:49.760><c> an</c><00:08:50.080><c> integer</c><00:08:50.560><c> right</c>
+
+00:08:51.190 --> 00:08:51.200 align:start position:0%
+to be at is going to be an integer right
+ 
+
+00:08:51.200 --> 00:08:53.670 align:start position:0%
+to be at is going to be an integer right
+so<00:08:51.440><c> what</c><00:08:51.600><c> we</c><00:08:51.760><c> want</c><00:08:51.920><c> to</c><00:08:52.080><c> do</c><00:08:52.480><c> is</c><00:08:52.720><c> we</c><00:08:52.880><c> want</c><00:08:53.040><c> to</c><00:08:53.200><c> find</c>
+
+00:08:53.670 --> 00:08:53.680 align:start position:0%
+so what we want to do is we want to find
+ 
+
+00:08:53.680 --> 00:08:55.910 align:start position:0%
+so what we want to do is we want to find
+the<00:08:53.920><c> delimiter</c><00:08:54.560><c> we</c><00:08:54.640><c> want</c><00:08:54.800><c> to</c><00:08:54.880><c> find</c><00:08:55.040><c> the</c><00:08:55.360><c> end</c><00:08:55.760><c> of</c>
+
+00:08:55.910 --> 00:08:55.920 align:start position:0%
+the delimiter we want to find the end of
+ 
+
+00:08:55.920 --> 00:08:57.110 align:start position:0%
+the delimiter we want to find the end of
+the<00:08:56.160><c> integer</c><00:08:56.560><c> so</c><00:08:56.720><c> we're</c><00:08:56.800><c> going</c><00:08:56.880><c> to</c><00:08:56.959><c> have</c><00:08:57.040><c> a</c>
+
+00:08:57.110 --> 00:08:57.120 align:start position:0%
+the integer so we're going to have a
+ 
+
+00:08:57.120 --> 00:08:59.030 align:start position:0%
+the integer so we're going to have a
+second<00:08:57.440><c> pointer</c><00:08:57.839><c> j</c><00:08:58.320><c> initially</c><00:08:58.720><c> it's</c><00:08:58.880><c> going</c><00:08:58.959><c> to</c>
+
+00:08:59.030 --> 00:08:59.040 align:start position:0%
+second pointer j initially it's going to
+ 
+
+00:08:59.040 --> 00:09:03.110 align:start position:0%
+second pointer j initially it's going to
+be<00:08:59.200><c> at</c><00:08:59.440><c> i</c><00:09:00.080><c> and</c><00:09:00.720><c> while</c><00:09:01.519><c> the</c><00:09:01.920><c> characters</c><00:09:02.959><c> the</c>
+
+00:09:03.110 --> 00:09:03.120 align:start position:0%
+be at i and while the characters the
+ 
+
+00:09:03.120 --> 00:09:04.389 align:start position:0%
+be at i and while the characters the
+character<00:09:03.519><c> at</c>
+
+00:09:04.389 --> 00:09:04.399 align:start position:0%
+character at
+ 
+
+00:09:04.399 --> 00:09:07.750 align:start position:0%
+character at
+pointer<00:09:04.800><c> j</c><00:09:05.360><c> is</c><00:09:05.680><c> not</c><00:09:06.000><c> equal</c><00:09:06.640><c> to</c><00:09:06.880><c> the</c><00:09:07.120><c> pound</c>
+
+00:09:07.750 --> 00:09:07.760 align:start position:0%
+pointer j is not equal to the pound
+ 
+
+00:09:07.760 --> 00:09:09.670 align:start position:0%
+pointer j is not equal to the pound
+meaning<00:09:08.080><c> that</c><00:09:08.240><c> we're</c><00:09:08.480><c> still</c><00:09:08.800><c> at</c><00:09:09.120><c> an</c><00:09:09.279><c> integer</c>
+
+00:09:09.670 --> 00:09:09.680 align:start position:0%
+meaning that we're still at an integer
+ 
+
+00:09:09.680 --> 00:09:10.790 align:start position:0%
+meaning that we're still at an integer
+character<00:09:10.080><c> we're</c><00:09:10.240><c> going</c><00:09:10.320><c> to</c><00:09:10.399><c> keep</c>
+
+00:09:10.790 --> 00:09:10.800 align:start position:0%
+character we're going to keep
+ 
+
+00:09:10.800 --> 00:09:13.350 align:start position:0%
+character we're going to keep
+incrementing<00:09:11.839><c> j</c><00:09:12.480><c> by</c><00:09:12.800><c> 1.</c><00:09:13.040><c> and</c><00:09:13.120><c> we're</c>
+
+00:09:13.350 --> 00:09:13.360 align:start position:0%
+incrementing j by 1. and we're
+ 
+
+00:09:13.360 --> 00:09:15.750 align:start position:0%
+incrementing j by 1. and we're
+guaranteed<00:09:14.080><c> to</c><00:09:14.320><c> find</c><00:09:14.800><c> a</c><00:09:15.040><c> pound</c><00:09:15.360><c> character</c>
+
+00:09:15.750 --> 00:09:15.760 align:start position:0%
+guaranteed to find a pound character
+ 
+
+00:09:15.760 --> 00:09:17.190 align:start position:0%
+guaranteed to find a pound character
+right<00:09:15.920><c> because</c><00:09:16.160><c> we</c><00:09:16.399><c> that's</c><00:09:16.640><c> kind</c><00:09:16.800><c> of</c><00:09:16.880><c> how</c><00:09:17.040><c> we</c>
+
+00:09:17.190 --> 00:09:17.200 align:start position:0%
+right because we that's kind of how we
+ 
+
+00:09:17.200 --> 00:09:19.190 align:start position:0%
+right because we that's kind of how we
+encoded<00:09:17.680><c> it</c><00:09:17.839><c> up</c><00:09:18.000><c> above</c><00:09:18.640><c> so</c><00:09:18.880><c> we're</c><00:09:19.040><c> going</c><00:09:19.120><c> to</c>
+
+00:09:19.190 --> 00:09:19.200 align:start position:0%
+encoded it up above so we're going to
+ 
+
+00:09:19.200 --> 00:09:21.030 align:start position:0%
+encoded it up above so we're going to
+keep<00:09:19.680><c> incrementing</c><00:09:20.240><c> until</c><00:09:20.480><c> we</c><00:09:20.640><c> get</c><00:09:20.800><c> to</c><00:09:20.880><c> that</c>
+
+00:09:21.030 --> 00:09:21.040 align:start position:0%
+keep incrementing until we get to that
+ 
+
+00:09:21.040 --> 00:09:22.870 align:start position:0%
+keep incrementing until we get to that
+pound<00:09:21.360><c> character</c><00:09:22.000><c> and</c><00:09:22.160><c> then</c><00:09:22.240><c> once</c><00:09:22.480><c> we</c><00:09:22.640><c> get</c><00:09:22.800><c> to</c>
+
+00:09:22.870 --> 00:09:22.880 align:start position:0%
+pound character and then once we get to
+ 
+
+00:09:22.880 --> 00:09:24.630 align:start position:0%
+pound character and then once we get to
+the<00:09:23.040><c> pound</c><00:09:23.279><c> character</c><00:09:23.680><c> we</c><00:09:23.839><c> know</c><00:09:24.080><c> that</c><00:09:24.320><c> our</c>
+
+00:09:24.630 --> 00:09:24.640 align:start position:0%
+the pound character we know that our
+ 
+
+00:09:24.640 --> 00:09:26.870 align:start position:0%
+the pound character we know that our
+integer<00:09:25.360><c> the</c><00:09:25.760><c> length</c><00:09:26.160><c> of</c><00:09:26.320><c> the</c><00:09:26.480><c> following</c>
+
+00:09:26.870 --> 00:09:26.880 align:start position:0%
+integer the length of the following
+ 
+
+00:09:26.880 --> 00:09:29.910 align:start position:0%
+integer the length of the following
+string<00:09:27.279><c> is</c><00:09:27.440><c> going</c><00:09:27.600><c> to</c><00:09:27.760><c> be</c><00:09:28.000><c> from</c><00:09:28.640><c> our</c><00:09:28.800><c> string</c>
+
+00:09:29.910 --> 00:09:29.920 align:start position:0%
+string is going to be from our string
+ 
+
+00:09:29.920 --> 00:09:32.790 align:start position:0%
+string is going to be from our string
+starting<00:09:30.320><c> at</c><00:09:30.480><c> index</c><00:09:30.959><c> i</c><00:09:31.440><c> going</c><00:09:31.920><c> all</c><00:09:32.080><c> the</c><00:09:32.240><c> way</c><00:09:32.640><c> up</c>
+
+00:09:32.790 --> 00:09:32.800 align:start position:0%
+starting at index i going all the way up
+ 
+
+00:09:32.800 --> 00:09:35.910 align:start position:0%
+starting at index i going all the way up
+until<00:09:33.279><c> index</c><00:09:33.680><c> j</c><00:09:34.000><c> but</c><00:09:34.320><c> not</c><00:09:34.640><c> including</c><00:09:35.279><c> index</c><00:09:35.680><c> j</c>
+
+00:09:35.910 --> 00:09:35.920 align:start position:0%
+until index j but not including index j
+ 
+
+00:09:35.920 --> 00:09:37.670 align:start position:0%
+until index j but not including index j
+right<00:09:36.080><c> so</c><00:09:36.320><c> that's</c><00:09:36.800><c> this</c><00:09:37.040><c> portion</c><00:09:37.360><c> is</c><00:09:37.519><c> going</c><00:09:37.600><c> to</c>
+
+00:09:37.670 --> 00:09:37.680 align:start position:0%
+right so that's this portion is going to
+ 
+
+00:09:37.680 --> 00:09:39.750 align:start position:0%
+right so that's this portion is going to
+be<00:09:37.839><c> the</c><00:09:38.000><c> integer</c><00:09:38.640><c> right</c><00:09:38.800><c> now</c><00:09:38.959><c> it's</c><00:09:39.120><c> a</c><00:09:39.279><c> string</c>
+
+00:09:39.750 --> 00:09:39.760 align:start position:0%
+be the integer right now it's a string
+ 
+
+00:09:39.760 --> 00:09:42.630 align:start position:0%
+be the integer right now it's a string
+so<00:09:39.920><c> we</c><00:09:40.160><c> want</c><00:09:40.399><c> to</c><00:09:40.640><c> uh</c><00:09:41.120><c> transform</c><00:09:41.600><c> it</c><00:09:41.839><c> into</c><00:09:42.480><c> or</c>
+
+00:09:42.630 --> 00:09:42.640 align:start position:0%
+so we want to uh transform it into or
+ 
+
+00:09:42.640 --> 00:09:44.870 align:start position:0%
+so we want to uh transform it into or
+convert<00:09:43.120><c> it</c><00:09:43.360><c> into</c><00:09:43.839><c> an</c><00:09:44.160><c> integer</c><00:09:44.480><c> we</c><00:09:44.640><c> can</c><00:09:44.800><c> do</c>
+
+00:09:44.870 --> 00:09:44.880 align:start position:0%
+convert it into an integer we can do
+ 
+
+00:09:44.880 --> 00:09:46.710 align:start position:0%
+convert it into an integer we can do
+that<00:09:45.040><c> in</c><00:09:45.200><c> python</c><00:09:45.680><c> pretty</c><00:09:45.920><c> easily</c><00:09:46.240><c> just</c><00:09:46.480><c> like</c>
+
+00:09:46.710 --> 00:09:46.720 align:start position:0%
+that in python pretty easily just like
+ 
+
+00:09:46.720 --> 00:09:49.430 align:start position:0%
+that in python pretty easily just like
+this<00:09:47.279><c> so</c><00:09:47.440><c> now</c><00:09:47.680><c> this</c><00:09:48.160><c> length</c><00:09:48.560><c> variable</c><00:09:49.120><c> tells</c>
+
+00:09:49.430 --> 00:09:49.440 align:start position:0%
+this so now this length variable tells
+ 
+
+00:09:49.440 --> 00:09:51.750 align:start position:0%
+this so now this length variable tells
+us<00:09:49.760><c> how</c><00:09:49.920><c> many</c><00:09:50.320><c> following</c><00:09:50.880><c> characters</c><00:09:51.360><c> we</c><00:09:51.600><c> have</c>
+
+00:09:51.750 --> 00:09:51.760 align:start position:0%
+us how many following characters we have
+ 
+
+00:09:51.760 --> 00:09:55.350 align:start position:0%
+us how many following characters we have
+to<00:09:52.000><c> read</c><00:09:52.640><c> after</c><00:09:53.200><c> j</c><00:09:53.839><c> in</c><00:09:54.080><c> order</c><00:09:54.399><c> to</c><00:09:54.640><c> get</c><00:09:55.040><c> every</c>
+
+00:09:55.350 --> 00:09:55.360 align:start position:0%
+to read after j in order to get every
+ 
+
+00:09:55.360 --> 00:09:58.150 align:start position:0%
+to read after j in order to get every
+character<00:09:56.160><c> of</c><00:09:56.399><c> the</c><00:09:56.640><c> string</c><00:09:57.440><c> so</c><00:09:57.680><c> in</c><00:09:57.920><c> other</c>
+
+00:09:58.150 --> 00:09:58.160 align:start position:0%
+character of the string so in other
+ 
+
+00:09:58.160 --> 00:10:02.550 align:start position:0%
+character of the string so in other
+words<00:09:58.640><c> if</c><00:09:58.800><c> we</c><00:09:59.040><c> start</c><00:09:59.839><c> string</c><00:10:00.480><c> at</c><00:10:00.880><c> index</c><00:10:01.600><c> j</c><00:10:02.160><c> plus</c>
+
+00:10:02.550 --> 00:10:02.560 align:start position:0%
+words if we start string at index j plus
+ 
+
+00:10:02.560 --> 00:10:05.430 align:start position:0%
+words if we start string at index j plus
+1<00:10:02.880><c> because</c><00:10:03.200><c> remember</c><00:10:03.680><c> j</c><00:10:04.320><c> is</c><00:10:04.560><c> at</c><00:10:04.720><c> the</c><00:10:04.800><c> delimiter</c>
+
+00:10:05.430 --> 00:10:05.440 align:start position:0%
+1 because remember j is at the delimiter
+ 
+
+00:10:05.440 --> 00:10:07.110 align:start position:0%
+1 because remember j is at the delimiter
+character<00:10:05.760><c> so</c><00:10:06.000><c> j</c><00:10:06.240><c> plus</c><00:10:06.480><c> one</c><00:10:06.720><c> is</c><00:10:06.800><c> going</c><00:10:06.880><c> to</c><00:10:07.040><c> be</c>
+
+00:10:07.110 --> 00:10:07.120 align:start position:0%
+character so j plus one is going to be
+ 
+
+00:10:07.120 --> 00:10:09.910 align:start position:0%
+character so j plus one is going to be
+the<00:10:07.279><c> first</c><00:10:07.680><c> character</c><00:10:08.240><c> in</c><00:10:08.399><c> the</c><00:10:08.640><c> string</c><00:10:09.200><c> itself</c>
+
+00:10:09.910 --> 00:10:09.920 align:start position:0%
+the first character in the string itself
+ 
+
+00:10:09.920 --> 00:10:12.230 align:start position:0%
+the first character in the string itself
+and<00:10:10.079><c> we</c><00:10:10.320><c> want</c><00:10:10.560><c> to</c><00:10:10.800><c> go</c><00:10:11.279><c> all</c><00:10:11.440><c> the</c><00:10:11.519><c> way</c><00:10:11.760><c> until</c><00:10:12.000><c> the</c>
+
+00:10:12.230 --> 00:10:12.240 align:start position:0%
+and we want to go all the way until the
+ 
+
+00:10:12.240 --> 00:10:14.150 align:start position:0%
+and we want to go all the way until the
+end<00:10:12.560><c> of</c><00:10:12.640><c> that</c><00:10:12.880><c> string</c><00:10:13.360><c> how</c><00:10:13.519><c> do</c><00:10:13.680><c> we</c><00:10:13.760><c> get</c><00:10:13.920><c> that</c>
+
+00:10:14.150 --> 00:10:14.160 align:start position:0%
+end of that string how do we get that
+ 
+
+00:10:14.160 --> 00:10:15.990 align:start position:0%
+end of that string how do we get that
+well<00:10:14.480><c> right</c><00:10:14.640><c> now</c><00:10:14.880><c> we</c><00:10:14.959><c> have</c><00:10:15.200><c> the</c><00:10:15.440><c> length</c><00:10:15.839><c> of</c>
+
+00:10:15.990 --> 00:10:16.000 align:start position:0%
+well right now we have the length of
+ 
+
+00:10:16.000 --> 00:10:18.389 align:start position:0%
+well right now we have the length of
+that<00:10:16.240><c> string</c><00:10:16.560><c> so</c><00:10:16.720><c> we</c><00:10:16.800><c> can</c><00:10:17.040><c> say</c><00:10:17.600><c> j</c>
+
+00:10:18.389 --> 00:10:18.399 align:start position:0%
+that string so we can say j
+ 
+
+00:10:18.399 --> 00:10:22.550 align:start position:0%
+that string so we can say j
+plus<00:10:19.040><c> 1</c><00:10:19.760><c> plus</c><00:10:20.560><c> length</c><00:10:21.360><c> this</c><00:10:21.600><c> will</c><00:10:21.760><c> give</c><00:10:22.000><c> us</c><00:10:22.240><c> the</c>
+
+00:10:22.550 --> 00:10:22.560 align:start position:0%
+plus 1 plus length this will give us the
+ 
+
+00:10:22.560 --> 00:10:24.949 align:start position:0%
+plus 1 plus length this will give us the
+entire<00:10:23.040><c> string</c><00:10:23.680><c> and</c><00:10:23.760><c> what</c><00:10:23.920><c> do</c><00:10:24.079><c> we</c><00:10:24.160><c> want</c><00:10:24.320><c> to</c><00:10:24.560><c> do</c>
+
+00:10:24.949 --> 00:10:24.959 align:start position:0%
+entire string and what do we want to do
+ 
+
+00:10:24.959 --> 00:10:26.949 align:start position:0%
+entire string and what do we want to do
+with<00:10:25.120><c> the</c><00:10:25.279><c> string</c><00:10:25.600><c> well</c><00:10:25.839><c> we</c><00:10:26.000><c> want</c><00:10:26.240><c> to</c><00:10:26.480><c> append</c>
+
+00:10:26.949 --> 00:10:26.959 align:start position:0%
+with the string well we want to append
+ 
+
+00:10:26.959 --> 00:10:29.990 align:start position:0%
+with the string well we want to append
+it<00:10:27.360><c> to</c><00:10:27.920><c> the</c><00:10:28.160><c> result</c><00:10:28.640><c> so</c><00:10:28.800><c> let's</c><00:10:29.120><c> go</c><00:10:29.360><c> ahead</c><00:10:29.760><c> and</c>
+
+00:10:29.990 --> 00:10:30.000 align:start position:0%
+it to the result so let's go ahead and
+ 
+
+00:10:30.000 --> 00:10:33.670 align:start position:0%
+it to the result so let's go ahead and
+do<00:10:30.320><c> just</c><00:10:30.800><c> that</c><00:10:31.360><c> so</c><00:10:32.000><c> basically</c><00:10:32.720><c> each</c><00:10:33.120><c> iteration</c>
+
+00:10:33.670 --> 00:10:33.680 align:start position:0%
+do just that so basically each iteration
+ 
+
+00:10:33.680 --> 00:10:35.990 align:start position:0%
+do just that so basically each iteration
+of<00:10:33.760><c> this</c><00:10:34.000><c> loop</c><00:10:34.320><c> is</c><00:10:34.480><c> gonna</c><00:10:34.640><c> read</c><00:10:35.120><c> one</c><00:10:35.440><c> entire</c>
+
+00:10:35.990 --> 00:10:36.000 align:start position:0%
+of this loop is gonna read one entire
+ 
+
+00:10:36.000 --> 00:10:38.230 align:start position:0%
+of this loop is gonna read one entire
+word<00:10:36.399><c> and</c><00:10:36.480><c> then</c><00:10:36.640><c> we're</c><00:10:36.800><c> gonna</c><00:10:37.120><c> go</c><00:10:37.440><c> again</c><00:10:37.920><c> loop</c>
+
+00:10:38.230 --> 00:10:38.240 align:start position:0%
+word and then we're gonna go again loop
+ 
+
+00:10:38.240 --> 00:10:40.470 align:start position:0%
+word and then we're gonna go again loop
+again<00:10:38.560><c> and</c><00:10:38.720><c> read</c><00:10:39.279><c> more</c><00:10:39.519><c> words</c><00:10:39.839><c> until</c><00:10:40.079><c> we</c><00:10:40.240><c> reach</c>
+
+00:10:40.470 --> 00:10:40.480 align:start position:0%
+again and read more words until we reach
+ 
+
+00:10:40.480 --> 00:10:42.389 align:start position:0%
+again and read more words until we reach
+the<00:10:40.640><c> end</c><00:10:40.800><c> of</c><00:10:40.959><c> the</c><00:10:41.040><c> string</c><00:10:41.600><c> but</c><00:10:41.920><c> one</c><00:10:42.079><c> thing</c><00:10:42.240><c> we</c>
+
+00:10:42.389 --> 00:10:42.399 align:start position:0%
+the end of the string but one thing we
+ 
+
+00:10:42.399 --> 00:10:44.150 align:start position:0%
+the end of the string but one thing we
+forgot<00:10:42.800><c> is</c><00:10:42.880><c> how</c><00:10:43.120><c> are</c><00:10:43.200><c> we</c><00:10:43.360><c> gonna</c><00:10:43.600><c> update</c><00:10:44.000><c> our</c>
+
+00:10:44.150 --> 00:10:44.160 align:start position:0%
+forgot is how are we gonna update our
+ 
+
+00:10:44.160 --> 00:10:46.630 align:start position:0%
+forgot is how are we gonna update our
+pointer<00:10:44.640><c> i</c><00:10:45.120><c> well</c><00:10:45.519><c> we</c><00:10:45.680><c> just</c><00:10:46.000><c> read</c><00:10:46.240><c> a</c><00:10:46.320><c> single</c>
+
+00:10:46.630 --> 00:10:46.640 align:start position:0%
+pointer i well we just read a single
+ 
+
+00:10:46.640 --> 00:10:48.550 align:start position:0%
+pointer i well we just read a single
+word<00:10:46.959><c> so</c><00:10:47.120><c> now</c><00:10:47.279><c> we</c><00:10:47.440><c> want</c><00:10:47.519><c> to</c><00:10:47.680><c> start</c><00:10:47.920><c> at</c><00:10:48.079><c> the</c><00:10:48.240><c> next</c>
+
+00:10:48.550 --> 00:10:48.560 align:start position:0%
+word so now we want to start at the next
+ 
+
+00:10:48.560 --> 00:10:50.870 align:start position:0%
+word so now we want to start at the next
+word<00:10:48.800><c> how</c><00:10:48.959><c> do</c><00:10:49.120><c> we</c><00:10:49.200><c> get</c><00:10:49.440><c> that</c><00:10:49.839><c> well</c><00:10:50.160><c> our</c><00:10:50.399><c> pointer</c>
+
+00:10:50.870 --> 00:10:50.880 align:start position:0%
+word how do we get that well our pointer
+ 
+
+00:10:50.880 --> 00:10:53.190 align:start position:0%
+word how do we get that well our pointer
+i<00:10:51.279><c> is</c><00:10:51.360><c> just</c><00:10:51.600><c> going</c><00:10:51.680><c> to</c><00:10:51.760><c> be</c><00:10:51.920><c> set</c><00:10:52.160><c> to</c><00:10:52.399><c> j</c>
+
+00:10:53.190 --> 00:10:53.200 align:start position:0%
+i is just going to be set to j
+ 
+
+00:10:53.200 --> 00:10:56.389 align:start position:0%
+i is just going to be set to j
+plus<00:10:53.600><c> 1</c><00:10:54.320><c> plus</c><00:10:55.040><c> length</c><00:10:55.600><c> because</c><00:10:56.000><c> this</c><00:10:56.240><c> is</c>
+
+00:10:56.389 --> 00:10:56.399 align:start position:0%
+plus 1 plus length because this is
+ 
+
+00:10:56.399 --> 00:10:57.670 align:start position:0%
+plus 1 plus length because this is
+actually<00:10:56.640><c> not</c><00:10:57.120><c> this</c><00:10:57.279><c> is</c><00:10:57.360><c> going</c><00:10:57.440><c> to</c><00:10:57.519><c> be</c>
+
+00:10:57.670 --> 00:10:57.680 align:start position:0%
+actually not this is going to be
+ 
+
+00:10:57.680 --> 00:10:59.750 align:start position:0%
+actually not this is going to be
+basically<00:10:58.079><c> the</c><00:10:58.240><c> beginning</c><00:10:58.800><c> of</c><00:10:58.959><c> the</c><00:10:59.279><c> next</c>
+
+00:10:59.750 --> 00:10:59.760 align:start position:0%
+basically the beginning of the next
+ 
+
+00:10:59.760 --> 00:11:01.750 align:start position:0%
+basically the beginning of the next
+string<00:11:00.399><c> or</c><00:11:00.640><c> it</c><00:11:00.720><c> could</c><00:11:00.959><c> be</c><00:11:01.120><c> the</c><00:11:01.360><c> end</c><00:11:01.519><c> of</c><00:11:01.600><c> the</c>
+
+00:11:01.750 --> 00:11:01.760 align:start position:0%
+string or it could be the end of the
+ 
+
+00:11:01.760 --> 00:11:03.910 align:start position:0%
+string or it could be the end of the
+entire<00:11:02.160><c> string</c><00:11:02.560><c> right</c><00:11:02.959><c> but</c><00:11:03.200><c> either</c><00:11:03.440><c> way</c><00:11:03.680><c> this</c>
+
+00:11:03.910 --> 00:11:03.920 align:start position:0%
+entire string right but either way this
+ 
+
+00:11:03.920 --> 00:11:05.990 align:start position:0%
+entire string right but either way this
+is<00:11:04.079><c> how</c><00:11:04.320><c> we</c><00:11:04.480><c> are</c><00:11:04.560><c> going</c><00:11:04.720><c> to</c><00:11:04.800><c> be</c><00:11:05.040><c> updating</c><00:11:05.440><c> our</c><00:11:05.680><c> j</c>
+
+00:11:05.990 --> 00:11:06.000 align:start position:0%
+is how we are going to be updating our j
+ 
+
+00:11:06.000 --> 00:11:07.670 align:start position:0%
+is how we are going to be updating our j
+each<00:11:06.320><c> iteration</c><00:11:06.880><c> of</c><00:11:06.959><c> the</c><00:11:07.120><c> loop</c><00:11:07.360><c> once</c><00:11:07.600><c> we're</c>
+
+00:11:07.670 --> 00:11:07.680 align:start position:0%
+each iteration of the loop once we're
+ 
+
+00:11:07.680 --> 00:11:10.230 align:start position:0%
+each iteration of the loop once we're
+done<00:11:07.920><c> with</c><00:11:08.079><c> that</c><00:11:08.640><c> our</c><00:11:08.880><c> result</c><00:11:09.440><c> will</c><00:11:09.839><c> be</c>
+
+00:11:10.230 --> 00:11:10.240 align:start position:0%
+done with that our result will be
+ 
+
+00:11:10.240 --> 00:11:12.310 align:start position:0%
+done with that our result will be
+containing<00:11:10.800><c> all</c><00:11:10.959><c> the</c><00:11:11.120><c> decoded</c><00:11:11.760><c> strings</c><00:11:12.079><c> so</c><00:11:12.240><c> we</c>
+
+00:11:12.310 --> 00:11:12.320 align:start position:0%
+containing all the decoded strings so we
+ 
+
+00:11:12.320 --> 00:11:14.470 align:start position:0%
+containing all the decoded strings so we
+can<00:11:12.399><c> go</c><00:11:12.560><c> ahead</c><00:11:12.880><c> and</c><00:11:13.040><c> return</c><00:11:13.440><c> that</c><00:11:13.600><c> result</c>
+
+00:11:14.470 --> 00:11:14.480 align:start position:0%
+can go ahead and return that result
+ 
+
+00:11:14.480 --> 00:11:16.710 align:start position:0%
+can go ahead and return that result
+and<00:11:14.720><c> as</c><00:11:14.880><c> you</c><00:11:14.959><c> can</c><00:11:15.200><c> see</c><00:11:15.760><c> i</c><00:11:15.839><c> just</c><00:11:16.079><c> ran</c><00:11:16.320><c> the</c><00:11:16.399><c> code</c>
+
+00:11:16.710 --> 00:11:16.720 align:start position:0%
+and as you can see i just ran the code
+ 
+
+00:11:16.720 --> 00:11:18.550 align:start position:0%
+and as you can see i just ran the code
+and<00:11:16.880><c> it</c><00:11:16.959><c> looks</c><00:11:17.120><c> like</c><00:11:17.360><c> it</c><00:11:17.519><c> works</c><00:11:17.920><c> and</c><00:11:18.079><c> it</c><00:11:18.320><c> is</c>
+
+00:11:18.550 --> 00:11:18.560 align:start position:0%
+and it looks like it works and it is
+ 
+
+00:11:18.560 --> 00:11:21.110 align:start position:0%
+and it looks like it works and it is
+pretty<00:11:18.959><c> efficient</c><00:11:19.440><c> so</c><00:11:19.600><c> i</c><00:11:19.680><c> hope</c><00:11:19.920><c> that</c><00:11:20.160><c> this</c><00:11:20.560><c> was</c>
+
+00:11:21.110 --> 00:11:21.120 align:start position:0%
+pretty efficient so i hope that this was
+ 
+
+00:11:21.120 --> 00:11:23.590 align:start position:0%
+pretty efficient so i hope that this was
+helpful<00:11:21.600><c> let</c><00:11:21.760><c> me</c><00:11:22.160><c> hide</c><00:11:22.480><c> that</c><00:11:23.040><c> so</c><00:11:23.200><c> i</c><00:11:23.279><c> hope</c><00:11:23.440><c> that</c>
+
+00:11:23.590 --> 00:11:23.600 align:start position:0%
+helpful let me hide that so i hope that
+ 
+
+00:11:23.600 --> 00:11:25.990 align:start position:0%
+helpful let me hide that so i hope that
+this<00:11:23.760><c> was</c><00:11:24.000><c> helpful</c><00:11:24.560><c> if</c><00:11:24.800><c> it</c><00:11:24.880><c> was</c><00:11:25.440><c> please</c><00:11:25.760><c> like</c>
+
+00:11:25.990 --> 00:11:26.000 align:start position:0%
+this was helpful if it was please like
+ 
+
+00:11:26.000 --> 00:11:28.069 align:start position:0%
+this was helpful if it was please like
+and<00:11:26.160><c> subscribe</c><00:11:26.720><c> it</c><00:11:26.800><c> supports</c><00:11:27.279><c> the</c><00:11:27.440><c> channel</c><00:11:27.839><c> a</c>
+
+00:11:28.069 --> 00:11:28.079 align:start position:0%
+and subscribe it supports the channel a
+ 
+
+00:11:28.079 --> 00:11:30.150 align:start position:0%
+and subscribe it supports the channel a
+lot<00:11:28.399><c> and</c><00:11:28.640><c> i'll</c><00:11:28.800><c> hopefully</c><00:11:29.519><c> see</c><00:11:29.680><c> you</c><00:11:29.839><c> pretty</c>
+
+00:11:30.150 --> 00:11:30.160 align:start position:0%
+lot and i'll hopefully see you pretty
+ 
+
+00:11:30.160 --> 00:11:33.839 align:start position:0%
+lot and i'll hopefully see you pretty
+soon<00:11:30.640><c> thanks</c><00:11:30.880><c> for</c><00:11:31.040><c> watching</c>
+

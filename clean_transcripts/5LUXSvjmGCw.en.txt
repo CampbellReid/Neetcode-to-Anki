@@ -1,0 +1,333 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+let's solve
+kth smallest element in a binary search
+tree
+so we're given the root of a binary
+search tree and an integer
+k and we want to return the kth smallest
+element in the binary search tree right
+and so remember a binary search tree by
+definition means that it's in
+order meaning that for let's say 3
+everything in its left subtree is going
+to be
+less than 3. everything that's right sub
+tree is going to be
+greater than three and so let's say k
+equals
+one that means we want the one smallest
+element
+in the binary search tree so if you put
+all four of these elements in order we
+get a one
+two three and four the smallest element
+is
+one so then we can return one and now so
+your first
+thought with this problem might be that
+okay so
+in order like you saw what i just did
+right i just took every element and put
+it in
+order and then took the kth element
+right and if k was 2 we would get the
+second element if k was 3
+we'd get the third element right so is
+there a way i can take this binary
+search tree
+and then put it into a sorted array or
+something
+and the answer is yes right because
+binary search
+tree means that if we traverse this tree
+in order and then take each element and
+then put it into an array
+then we've basically solved this problem
+so for example we start at the root but
+we don't
+visit the value yet right we go to the
+left child right and then we see okay it
+doesn't have
+a left subtree right doesn't have any
+left child so then we visit one
+by that i mean we basically put it
+inside of our array
+then we go to its right subtree we see
+okay two
+we add two to the array and of course
+since we know
+k is one we could actually stop here
+once we visited the one
+but we could also continue to add
+elements so then we'd pop back
+up to the three add the three and then
+we go to the right child and then
+see the four and add the four and so you
+know
+that writing an in-order traversal for a
+binary search tree recursively is pretty
+easy right but
+i'm going to show you how to do it
+iteratively which you might not
+know yet but it's actually pretty
+similar to doing
+the recursive solution so you saw how
+the recursive solution works right let's
+say we visit one
+then we go to its right child right we
+visit one and then we visit two and then
+we end up having to
+pop back up to the three right
+so to pop back up here we know the
+recursive call will eventually
+come back like with the call stack right
+that's how function calls or method
+calls
+work but if we're doing it iteratively
+not recursively right
+then we need a stack to contain
+the previous nodes that we need to pop
+back up to
+so i'm going to show you how to do this
+problem with a stack iteratively
+so let's say that this is our stack
+so iteratively we start at the root
+right
+and we we're not going to visit this
+node yet right
+so we're not going to count it as a k
+value yet because we want to go through
+everything in the left sub tree first so
+next i'm just going to keep going as far
+left as i can so i'm going to go to this
+node right
+it's left child but before i go here i'm
+going to add the 3 to the stack
+because we know we want to pop back up
+to this 3 when we're done
+traversing the left subtree so now i'm
+at the one i'm going to go to
+its left child right but we see it's
+null
+right but before i go to null i'm going
+to add one
+to the stack but once we reach a null
+case
+that means it's time for us to pop back
+up and go back up to the previous node
+and we know that because we just look at
+the top of our stack so we take this one
+we remove the 1 and so basically when we
+remove an element from the stack that
+means we're processing it or
+visiting it and we see k is equal to
+1 this is the first value that we just
+visited right
+so then it must be the result so the one
+that we just popped
+is going to be the output right but
+let's say
+that it wasn't let's just continue the
+iterative solution just so you can kind
+of understand how it
+works so now i'm at the one right
+we just process the one we don't have to
+ever consider it again so i'm just going
+to cross it out
+but now once we pop up right we visit a
+node
+then we want to go to its right child
+only after we
+visit the node after that do we want to
+go to its right subtree right because
+remember we're trying to do this
+in order so
+with three still remaining in the stack
+we're gonna go to two right so now we're
+gonna
+add two to the stack and now i'm gonna
+go to the left child of two right we
+know it's
+null so so then we're allowed to pop
+back
+up right so we're gonna go to the two
+it's because it's at the top of our
+stack
+right so the 2 is at the top of our
+stack so now we're going to pop the two
+off
+so meaning we're processing the node 2
+or visiting it so we can cross it out
+now
+and now i'm going to go to its right
+subtree which is
+also now null right because now that we
+process two we're allowed to go to its
+right subtree but we see that it's
+null so since it's null that means we
+pop
+again from our stack right so we're done
+with this null but
+conveniently for us we have a three at
+the top of our stack we crossed these
+two values out
+so now we're going to automatically go
+back up here
+so we pop the three so now it's time to
+process the three right we process it we
+look at it we visit it whatever you want
+to call it
+and after we visit it then we were
+allowed to go to the right
+subtree so now we we're at four so we
+add
+four to our stack and you basically know
+what's gonna happen now we're gonna try
+to go to the left sub tree but it's
+going to be null
+so we pop from the from the stack so we
+process
+four but then we try going to the right
+subtree it's also
+null so now that so now we look at our
+stack right we're going to pop again
+from our stack but our stack is
+empty right so that's how you know the
+algorithm is done we visited
+every node that we needed to and if you
+were actually keeping track
+and you noticed the order that we popped
+the elements in
+so basically the first element we popped
+from our stack was a one if you were
+paying attention
+after that we did a two right we popped
+the two
+and then we went back up to the three we
+popped the three
+and then finally we visited the four
+right so even though we did it
+iteratively we visited the elements
+exactly
+in order so it's surprisingly the
+iterative solution
+is not quite as hard as you might expect
+let me show you the code for it now
+so i'm going to declare a variable n
+to basically tell us the number of
+elements that we visited from our tree
+once
+n equals k that's how you know we
+visited
+the element that we wanted to and then
+we can return that value
+and remember i'm also going to have a
+stack which is going to help us
+because we we need it because we're
+doing this iteratively
+so i'm also going to have actually a
+pointer cur
+it's going to initially point at the
+root it's basically going to tell us
+what node that we're currently visiting
+or at the node that we're currently at
+and so i'm going to have a while loop
+basically while current is not null and
+the stack is non-empty we're going to
+continue
+traversing our binary tree right that
+makes sense so far
+and remember the first thing we want to
+do is let's say we're at ker what are we
+going to do
+while current is not null we're just
+going to keep
+going left right remember we want to go
+through every node in the left sub tree
+before we visit the current node so
+while current is not null we're going to
+set current equal to current dot left
+but remember before we do that we have
+to go back
+up to current after we're done
+processing current dot
+left so before i do that i'm going to
+take
+the stack and add current
+to it and so when this loop is done
+executing that means current is at
+null so that means we went too far and
+that means we have to pop
+the last element that we added to our
+stack so actually stack
+pop we're popping the most recently
+added value from our stack
+and we're going to set it to cur so now
+that we popped this element
+curve that means we're processing it so
+what we can do is actually
+update our n value that means n
+that means we just visited another node
+so we can increment n
+by 1. and if n happens to be equal
+to k that means the current node that we
+just
+processed is the value we're looking for
+because remember we are
+looking for the kth smallest element
+so if that's true then we can just
+return
+current.value and we're done we don't
+have to visit any extra elements
+but what happens if this is not the case
+well
+we just processed current right that
+means
+that we're allowed to now go to its
+right subtree so we can actually
+update current now and set it to current
+dot
+right and so what's gonna happen now
+well the loop is gonna actually go back
+up if current dot write is non-null or
+the stack is not null then we're gonna
+start our loop and for that node we're
+gonna keep going left as much as we can
+maybe it doesn't have a left
+sub tree so then this part isn't is not
+gonna execute and then we'll end up
+we're gonna end up just popping again
+from our stack
+and conveniently for us in this problem
+we're guaranteed to have at least k
+nodes in our tree so this
+is actually always going to execute
+we're not going to end up
+exiting this while loop so we actually
+don't even need a return statement over
+here
+and this actually is the entire code let
+me just run it for you to prove that it
+works
+and as you can see it's according to
+this not pretty efficient but i'm pretty
+sure if i ran it again i would get a
+much more efficient time but you can see
+this is the
+iterative solution it's roughly this the
+same time complexity as
+the uh recursive solution and
+surprisingly
+uh it's not that much code right like
+you might expect the iterative solution
+to be more complex
+but we're actually not doing anything
+fancy we're just going as far
+left as we possibly can adding the
+values to the stack
+and then popping from the right when we
+need to
+so i hope this was helpful if it was
+please like and subscribe it supports
+the channel a lot and i'll hopefully

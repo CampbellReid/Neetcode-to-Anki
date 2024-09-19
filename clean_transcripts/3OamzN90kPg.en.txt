@@ -1,0 +1,162 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+let's solve contains duplicate this is
+another problem from the blind 75 list
+of questions we've been working on so i
+like this problem because it's a good
+problem for beginners but there's also
+multiple solutions to it that i'd like
+to go over in this video so we're given
+an array of numbers we want to return
+true if there's any value in that list
+of numbers that appears at least twice
+but maybe it could appear three times or
+four times write just at least twice and
+we want to return false if there aren't
+any values that appear at least twice
+basically what that means is that every
+value in the array is distinct so let's
+take a look at an example we have one
+two three and then we have 1 again so of
+course this has duplicates right so we
+return true and the easiest way we would
+be able to detect that is by brute
+forcing this so given these numbers the
+first thing we do is look at the first
+number it's 1. how do we know if this is
+a duplicate or not well we'd have to
+compare it to every single number in the
+rest of the array so that would be a big
+o of n time operation just to check if
+the first number is a duplicate or not
+and then we'd have to do that for every
+number then we have to check is the
+second number a duplicate how do we know
+we have to compare it to every other
+number we do the same thing with the
+third one and the last one and so since
+we're doing it for every number in the
+array the overall time complexity is
+going to become n squared and by the way
+in this case n is just the size of the
+input array so the brute force solution
+is big o n squared time complexity but
+the good thing is we don't need any
+extra memory so the memory complexity is
+big of one it's definitely not a bad
+solution but the question is can we do
+better than that and yes we definitely
+can a second approach that will help us
+is sorting what happens if we took this
+array and we sorted it it would look a
+little bit different it would look like
+this okay but how does sorting help us
+well let's think about it if we sort the
+input then any duplicates that do exist
+in the array and clearly we see that two
+duplicates exist at the beginning of the
+array they're going to be adjacent so
+when we're
+trying to detect any duplicates in here
+we only have to iterate through the
+array once and as we do that we're just
+going to be comparing two neighbors in
+the array checking if they're duplicates
+next we're going to shift our pointers
+to the next spot are these duplicates
+are these duplicates etc etc until we
+finish the entire array in this case we
+see that these two adjacent values are
+duplicates so we can return true and
+what's the time complexity of this well
+the one pass is just going to be big o
+of n but we know that sorting does take
+extra memory or not extra memory it does
+take uh extra time complexity and that
+time complexity is n log n so that's the
+bottleneck in this solution but again we
+don't need extra space if you don't
+count the space that's used by the
+sorting algorithm so in this case we do
+have a slightly better solution than
+brute force but actually if we use a
+little bit extra memory and it's really
+a trade-off if we sacrifice space
+complexity we can actually achieve
+better memory complexity and let me show
+you how so suppose we don't sort our
+input we're given the default input but
+we use extra memory we use a hash set
+but what exactly is a hash set gonna do
+for us it's gonna allow us to insert
+elements into the hash set in big o of
+one time but it's also gonna allow us to
+check we can ask our hashmap does a
+certain value exist we want to know does
+this 1 exist in the hashmap well if we
+start at the beginning of the array so
+far nothing is in our hashmap so a 1
+does not exist in our hashmap that means
+this 1 is not a duplicate you can see
+that this is an improvement over the
+brute force previously to determine if
+this was a duplicate we had to check
+every other value in the array this time
+we don't but after we have checked if
+this is a duplicate we do have to add it
+to our hash set because later on if we
+encounter a one like over here then we
+determine that this is a duplicate
+because we know that there's already a
+one in our hash set so next we're gonna
+check two two is not a duplicate added
+here is three a duplicate nope add it
+here one is this a duplicate yep there's
+a one over here so we return true this
+does contain duplicates and by the way
+since each operation was just big o of
+one we had to do that for every value in
+the input array and we only had to scan
+through the list of inputs once the time
+complexity is going to be big o of n but
+the space complexity we did have to
+sacrifice a little bit we have to create
+a hash set and the memory that that hash
+set will use could be up to the size of
+the input array which is n so we do end
+up using extra memory but that's not too
+bad this is about as efficient as we can
+get in terms of time complexity so let's
+get into the code now okay so now let's
+get into the code so the first thing i'm
+going to do is create that hash set in
+python you can do that just like this
+it's just called a set and then the
+simple thing is just going through every
+value in the input array nums and
+before we end up adding it to our hash
+set because remember we want to add
+every one of these values to our hash
+set just like this but before we even do
+that we want to know is n a duplicate
+does this value already exist in our
+hash set and if it does we know that our
+array contains duplicates so we don't
+even have to continue through the rest
+of the array we can immediately return
+true because we found a duplicate but if
+it doesn't contain a duplicate we're
+going to add that value then iterate
+through the rest of the array of nums
+and then the loop will exit and then we
+can return false to indicate that we did
+not find any duplicates in the array now
+let's run the code to make sure that it
+works and on the left you can see that
+yes it does work and it is about as
+efficient as we can get so i really hope
+that this was helpful if it was please
+like and subscribe it supports the
+channel a lot consider checking out my
+patreon where you can further support
+the channel and hopefully i'll see you

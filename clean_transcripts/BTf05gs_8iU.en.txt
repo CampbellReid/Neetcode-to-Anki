@@ -1,0 +1,632 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+let's solve
+design add and search words data
+structure
+so this is another problem from the
+blind 75
+leak code problems list so this is the
+spreadsheet i've been using to track
+which
+uh videos we've uploaded for those 75
+problems you can see that most of the
+solutions have already been updated and
+today we are working on this problem a
+tree problem
+add and search word so basically another
+day another problem from the sleep code
+blind 75 list the link
+to this sheet will be in the description
+if you do want to take a look
+so basically we're designing a data
+structure to efficiently solve this
+problem
+of basically adding words we're taking
+new words
+adding them to the data structure and
+also we're being given words and we want
+to search to see if those words
+match any previously added words to our
+data structure
+so we only need to support three
+functions for this data structure one is
+just gonna be the constructor that's
+gonna initialize the object one is gonna
+be adding a word and that one is pretty
+self-explanatory so we're just given a
+string a word
+and then we're adding it to the data
+structure now this word could only
+consist
+of lowercase characters from lowercase a
+to lowercase z
+and the third one is going to be the one
+where the bulk of the algorithm is going
+to be contained so this is going to be
+the searching
+words so we're searching a word and the
+word can contain
+any character from lowercase a to
+lowercase c but there's
+one additional character it could
+contain a dot
+character and what we're told is that
+the dot character is actually like a
+wild card it can basically match
+any character in the string so for
+example let's say in our word
+list so far let's say we had just a
+string a
+b right so this is what we have so far
+and we're trying to search
+dot b so basically would this search
+match any words that contain so far in
+our data structure the answer is yes
+because the dot would match any first
+character right so this
+that we basically match this lowercase a
+and then
+we do have an additional b which matches
+the second character
+in the string so a dot matches any
+character that's what's going to be
+tricky for us
+to implement now the brew force way to
+solve this problem is pretty simple
+right we would basically
+have a list of words and then just
+for every search we would just say okay
+does this search match
+any of the words in the input list now
+that's not going to be super efficient
+a more efficient solution is going to
+require a try data structure
+aka a prefix tree so this is what we're
+going to be using to solve this problem
+efficiently i will say if you've never
+heard of this data structure
+or you've never implemented it before
+you basically don't have a chance of
+solving this problem efficiently
+but if you have heard of this data
+structure it's pretty intuitive
+why this data structure is used in this
+problem basically
+you know a prefix tree right so for
+example if we were searching b
+dot dot we would want to first find all
+all words that start with the character
+b
+and then check you know are any of them
+of length
+two because the remaining portion of
+this can match any string of length two
+so a try is basically a tree that has
+some kind of
+root node and each node can have up to
+26 children in this example because we
+have lowercase characters from a
+to z so basically each node is going to
+represent a single character right and
+then each node could have
+up to 26 additional uh children
+and basically a word in this case for
+example you know this is
+a if i had a b here and then another c
+this is going to be a single word right
+and
+and so if we inserted the word let's say
+we added the word
+abc into our try this
+is basically how it would look like now
+one additional thing we have to say is
+for a particular node such as c we have
+to say
+this is the end of the word right
+because what we're trying to say is we
+did not add the word
+a we did not add the word a b we've only
+added the word abc so we have to
+designate that this is the last
+character now if we added
+another word for example a b what we're
+going to do
+we're not just going to repeat that
+we're not just going to say okay now
+there's going to be a lowercase a here
+then there's going to be a lowercase b
+notice how we already have those
+characters available to us
+we're going to reuse these characters so
+instead what we would do adding
+this word we would say okay let's add an
+a so let's start at the root add an a we
+see there's already an a that exists
+then we'd say okay from here let's add a
+b we see that a b
+already exists so once we get
+to the end of the word right that was
+the last character then we just say okay
+designate
+this as an additional end of the word so
+now we have two words
+along this path we have one word a b we
+have another word abc
+notice how all words starting with an a
+are going to be here right we could have
+other words a
+maybe a t or something right and other
+words as well right
+basically all words that start with a
+are going to be here that's what makes
+this
+efficient that's why this is called a
+prefix tree because
+let's say we wanted all words starting
+with
+let's say we were searching something
+like this right we're searching
+a b dot dot so we want all words
+for example or even one word of length
+five
+that starts with a b then we'd go okay
+let's find a
+then find b right here and then we'd go
+through all possible children
+that it has right in the tree we would
+do a brute force depth first search
+backtracking type approach
+and then we'd get a word we would try to
+find a word like this one
+so with that being said let's run
+through the example you can see at the
+above the first word that we're going to
+be adding is bad
+so let's add a character for b
+let's add a child for this a let's add a
+child for it
+d so now we've inserted the word bad
+we do want to designate this as the end
+of a word so i'll just mark it blue but
+in our code obviously we're going to do
+something different
+next we're adding another word dad so
+we have to start along a different path
+because these two words have a different
+prefix one starts with a b
+one starts with a d so let's
+additionally add a
+and additionally add d once again
+designating this as the end of a word
+we're going to add one last word before
+we start searching this one's going to
+be mad
+so we don't already have an m so we do
+have to insert that and then we have to
+insert a
+and then d of course this is going to be
+the end of a word so so far we have
+three words all of them end with a d
+but they all all three of them have
+different prefixes that's why they're
+along different paths
+now let's get to the searching part the
+interesting part so we're going to
+search for a word pad now so what we're
+going to do is we're going to start at
+the beginning right
+are there any words pad in this so first
+we're going to try
+are there any p's we're going to look is
+there a p we don't see any right
+we only have b d and m so we don't have
+any words starting with a p
+that means immediately we know false pad
+does not exist in our input that's why
+in the output over here you can see
+false is what's returned next we're
+searching another word that word is
+going to be
+bad so we're going to start at the root
+and see are there any b's
+we're going to see that yes we do have a
+b over here
+the next character in the string is a so
+does this b have a child
+a yes it does it has an a over here the
+last character is a d
+does this a have a child d yes it does
+it's over here
+now we yes we found the characters we
+needed but now
+lastly we have to say okay the last
+character that in the
+searching word is d is this in our try
+is this designated as the end of a word
+since it's marked blue
+it is therefore we're going to return
+true for this
+uh input searching word and you can see
+that's what's
+written in the output this returns true
+let's go through the last two search
+examples so in this example we have
+dot a d so what does that mean remember
+the dot character means we can match
+any character so we're going to start at
+the root and we're going to go down
+all three paths or or literally
+any of the paths and to do that we're
+going to have to use
+depth first search or basically a
+backtracking approach right
+and remember we're only looking for one
+word that matches this right so let's
+say the first path we decide to go down
+is this one right so this is a b
+and we're allowed to use a b because the
+dot matches any character so
+this matches so far right next we're at
+the next character
+a does this path have a child a yes it
+does
+so we found another match next we're
+looking for a d
+does this have a child d yes it does and
+it's designated as the end of a word so
+in this case
+we found one word that matches this and
+that's all we need we just need one word
+so we are going to return true
+and you can see that up above now if
+this one did not match for example if
+this
+wasn't designated as the end of a word
+or maybe this was instead an
+x character we would say okay we didn't
+find a match down this path
+but it doesn't matter because remember
+the dot matches any character so
+we don't have to go down this path let's
+try going down this path right and we
+would do the same thing we'd say okay we
+have an
+a we have a d that means we found a
+match that means we can return
+true and you can see that this is not
+going to be
+super efficient right we possibly we
+would have to go through every single
+character that's in
+our try decision tree but it's still
+more efficient than our brute force
+approach
+especially for this next last example so
+we're doing
+one last search and in this search we
+have we start with a b
+but then we have two dot characters and
+the reason this is more efficient with a
+try
+rather than just brute forcing every
+list because this
+at least tells us okay we're starting
+with a b so what we're gonna do in our
+try decision trees we're gonna say okay
+every other word that starts with
+any other character than a b we're not
+going to consider them and we have a
+pretty small
+try right now but it's possible we could
+have a really big one right
+so what this does for us is it
+eliminates a lot of the possibilities
+we say okay at least we know we're
+starting with a b
+and yes we did find a matching b so
+we can go down this path now we get to
+the brute force portion
+where we have a dot right so basically
+in this case it's simple because
+we only have one child but maybe we'd
+have multiple and then we'd have to go
+down
+all of those paths but in this case it's
+simple right let's just check do we have
+any
+characters that go below it yes any
+character will match this first dot now
+we're looking for
+another second dot do we have any
+characters that match it yes
+we have a d and it's the end of a word
+so yes in this case
+we also found a match so we can return
+true just like we have up above
+so once you can kind of understand this
+visual example
+it's not super hard now it's time to
+actually implement the code and i'll
+admit that it's actually a little tricky
+but i'll go i'll try to guide you
+through it
+so one thing i like to do for try
+problems is just define
+a try node because it's going to have a
+couple
+uh variables so in the constructor we're
+basically going to initialize
+two fields so for this tri node we are
+going to have
+a list of children now i'm going to use
+a hashmap for that
+so basically what i'm going to say is
+for each character we're going to say
+something like you know a
+is mapped to a tri node
+and we could possibly do that for every
+lowercase character from a to z
+and for every character we also need to
+designate if it's the end of a word so
+i'm just going to use a boolean for that
+call it word and initially we'll set it
+to
+false and so basically the only thing we
+need to do for the constructor for the
+constructor of the word dictionary is
+just define a root so
+let's call it root and it'll just be a
+try note so initially you can see that
+we don't have any characters
+inserted right we just have an initial
+empty try node
+it doesn't have any children so no
+characters are inserted
+next we are going to do the add word
+portion this portion isn't too difficult
+so what we're gonna do
+is we'll set current equal to what our
+root is so self.root is
+where we're gonna start and what we're
+gonna do is basically go through every
+single character
+in the word and what we're gonna do is
+we're gonna check
+if this character is not already
+inserted because it's possible this
+character
+could already be inserted in the try so
+we're going to check if
+if c is not in current
+dot children because of the current
+nodes children if c is not
+in there then we we need to obviously
+insert it right so what we would do is
+say current.children
+of c is going to be a new trinode
+where we inserted a trinode
+corresponding to the character c
+and then of course what we're going to
+do is we're going to update our current
+pointer
+to this uh new try node
+if it didn't already exist that means we
+just created it if it did already exist
+then we just
+shifted over to it right what we're
+ultimately trying to do is insert
+every character from this word into our
+try and once
+that's been completed what we're going
+to do at the end
+is say okay current dot word is now
+going to be set to true
+so we have created the characters and
+designated this as
+a word okay now for the actual meat and
+potatoes of this problem
+and this part is actually going to be
+recursive and let me show you
+why before we actually start doing the
+recursive portion
+so this is going to start similar to
+what we had before right so current is
+going to be initially set to
+let's say self.root right and then what
+we would want to do
+is go through every single character in
+the word in this case i'm actually going
+to
+use the index of the word and you'll see
+why in a moment so
+for i in range length of the word
+and then we're going to get the
+character at position i so word
+of i and so remember this character
+could be
+any character from a to z in which case
+the problem would be straightforward
+right we would just search our try and
+see does this character already exist
+and then we'd continue if it doesn't
+already exist then we would return false
+but we know this character could
+actually be a dot character that's
+what's going to make this tricky so if c
+equals a dot character the else
+condition is if it is a regular
+character
+now let's start with the else case
+because it's a little more simple so if
+c
+is just a regular character what are we
+gonna do we're gonna check
+if c is not in current.children that
+means this character does not exist we
+needed this character to exist we're
+searching for this word but this
+character does not exist
+so what do we do then well simply we can
+just return false that means we know for
+sure this word does not exist
+if it does exist then obviously we're
+going to shift our current pointer
+to that node so we're going to go to
+current.children
+at character c and then we would just
+continue our algorithm right
+but this case is going to be a little
+bit more tricky because remember if the
+character is a dot that means
+potentially we're going down
+26 different paths because this dot
+could match
+any of the 26 characters and we can't
+really do that
+iteratively very easily right we are
+gonna use backtracking or recursion
+to help us do that so for example let's
+say we had a string like
+dot a b what we would want to do then is
+say okay
+dot it could match any of the possible
+characters so what we would say then is
+we would go through for every
+child in current dot children
+dot values because remember for
+current.children that's a hashmap
+and then we want only the values because
+those are going to be the actual
+children
+so because we know that dot could match
+any character so for this
+dot we would basically match every
+single character and then we'd say okay
+for each of these
+we want to do the recursion on it so we
+want to do
+the depth first search on this and when
+we're actually doing that depth for
+search
+it could just be an iterative matching
+so what we're trying to what i'm trying
+to get at is that this entire thing that
+we just wrote
+is the recursive function this is the
+depth first search
+right we have the iterative portion here
+where we don't have a dot and we have
+the recursive portion over here
+where we do have a dot so let's wrap
+this entire thing
+inside of a depth first search function
+depth first search dfs
+and so let's just tab it over so now
+let's think about it
+when we're doing our depth first search
+what are we going to pass
+in well we want to know what's the
+remaining portion of the word that we
+are trying to match right so we would
+want to pass in the
+index so let's call that j we're passing
+in the starting index
+j right and the other thing we're
+passing is what's the current
+route that or the current node in our
+try that we're at so
+in this case if so depending on which
+one of these we're iterating through
+we're gonna pass in that child node
+right so
+so that's what the the node that we're
+going to be passing in whatever child
+that is
+so that's how we're going to call dfs so
+let's define that up above so j
+is going to be uh the index parameter
+and let's call root what the
+node that we're passing in is so okay so
+current is
+instead of being called self.root it's
+actually going to be initialized to the
+root that we end up passing in
+and okay so here i passed in j but we
+would
+what we would actually pass in is going
+to be i actually not just i
+i plus 1 because we're going down a
+child
+so we're going to pass in i plus 1
+as the index of the character that we're
+looking for
+right because because what we're saying
+is we're skipping the dot so we're going
+to have to increment i plus
+one and this function is going to return
+a boolean so if this function
+ends up returning true that means we
+found one path that matches and remember
+if we find a path that matches we return
+true
+immediately we're done we don't have to
+do anything else if we don't find a path
+we're going to keep going down all
+possible paths
+until we do if we never find a true if
+we never find a match then we're going
+to return
+false oh and one more thing so initially
+up above we said
+i is going to go through range of the
+length of the word but we know we could
+be starting at a different position here
+we're always going to start at zero we
+don't want to do that we always want to
+start at j whatever it happens to be
+so that is the main recursive portion
+and the last thing is let's say we were
+given a word abc and let's say we found
+a match right we didn't have any dots in
+here what would that do
+well we'd go through the for loop we'd
+always execute the else condition
+and we would always find the current
+node and then the entire loop would be
+finished then what would we want to
+return out here
+well we would want to return whatever
+current happens to be
+so if current dot word is true
+then we would return true if
+current.word was false
+then we would return false so we can
+just leave this
+as it is so that's the main portion of
+this algorithm the last thing that we
+want to do
+is actually call this step for search
+function right so what are the
+parameters that we're going to give it
+well we're always going to start at
+index 0 because we're going to start at
+the beginning of the word so we can pass
+in 0 for j
+and we're always going to start at the
+root node of our try so we can pass in
+self.root
+as the root node and then we would just
+want to return the result that this dfs
+function returns
+so as you can see this function did work
+and it does work pretty efficiently
+so if you didn't already know what a try
+was i hope that you learned that today
+so this
+is the entire code and if you did
+already know what a try was i hope that
+you learned a new application of it so i
+hope this was helpful
+if it was please like and subscribe it
+supports the channel a lot and i'll
+hopefully

@@ -1,0 +1,418 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+let's solve
+top k frequent elements i really like
+this problem because it's pretty
+clever and once you figure it out the
+code is really easy to write
+so we're given an input array nums and
+an
+integer k and we want to return the k
+most frequent elements that appear in
+the array nums
+we can return the answer in any order so
+for example we have this
+input array three ones two twos
+and a single three and we wanna return
+the two most
+frequent elements right so we know that
+the most frequent is of course
+one it appears three times so we add a
+one to the output
+the second most frequent is two so then
+we add a 2 to the output and that's all
+we want now if
+if k was 3 of course we'd add the last
+element
+k is never going to be greater than the
+distinct number of elements in the input
+array so that's good for us
+and our input array is always going to
+be non-empty so for example for each
+value right we're going to
+count how many occurrences it has so for
+example one
+occurs three times two occurs
+twice and three occurs once
+and then we can take this basically this
+list of pairs right then we can sort it
+in ascending order right so
+basically it's already sorted in
+ascending order right because the most
+frequent is here
+the second most frequent is here the
+third most frequent is here right
+now of course sorting it in the worst
+case right basically
+if every single value in here was
+distinct and we wanted the top k
+distinct values
+we'd get a time complexity of n log
+n right but we don't necessarily need to
+sort the entire thing because
+we only want the top k frequent elements
+so in another solution we could actually
+use
+a max heap so we would still do this
+whole operation where we count the
+number of occurrences of each value and
+then we'd add each pair
+to our max heap and the key of this max
+heap would
+of course be the number of occurrences
+right so the count right
+and then we'd pop from our heap exactly
+k times so why is this more efficient
+well we know popping
+from the heap well first of all we when
+we initialize our heap we're going to
+add this entire set and there's a
+function called
+heapify i think that can do that in
+actually
+linear time so big o of n time so that's
+the good thing and of course we know
+we're only going to be popping from the
+heap
+k times each pop is going to take log n
+and we're going to be doing that k times
+right so that's going to be
+k times log n right so that's a little
+bit better than
+n log n at least as long as k is
+less than n right but it turns out that
+there's actually an
+even better solution there's actually a
+solution that can be done
+in o of n time linear time
+so big o of n time and big o of n memory
+but we are still going to be using this
+exact
+a technique where for each value like
+one we count the number of recurrences
+like three so this problem can actually
+be solved in linear time if you use the
+algorithm called
+bucket sore so when you first think of
+bucket sort this is probably what you're
+going to think of
+the way bucket sort is usually taught is
+that for each value for example 1
+we're going to take an input array right
+this is our input array this
+this row is the indices the index of the
+array and this is actually going to be
+the value so for example for one
+we're going to go to the posit the index
+one and in the value we're gonna put
+okay one occurs exactly once now we're
+gonna see a second one we're gonna say
+one occurs twice right basically we're
+going to go through the input array
+count how many times
+each value occurs and then in our input
+array
+put that count for that index right map
+the value to the index and then put the
+count of that value so 1 occurs 3 times
+2 occurs twice 100 in this case occurs
+once now this algorithm would be
+linear time if our input values right
+were bounded for example if we knew for
+a fact that every value
+was between 1 and 10 then we would know
+that the size of our input array is also
+going to be 10 right but in this case
+the values are unbounded right like this
+could have been
+a million and then the size of our input
+array would have been a million even
+though the total
+input array size is only six right we
+have six elements
+but then that array where we actually
+store the buckets
+sort values is going to be unbounded
+right and also we want the top k
+elements this still isn't very clear of
+where exactly the top k
+elements are actually going to be so in
+this case this type of bucket sort
+doesn't work but there's another way
+we can do it so in this case you can see
+for our
+for our array where we're going to be
+doing the bucket sort the index
+i was using the each value in the
+inquiry for example you know one was
+being mapped to index one right and
+there we were storing the count
+there's actually another tricky way that
+you can do it that will lead us to a
+linear time solution
+so if we're pretty clever this is what
+we're going to do
+for the index we're actually going to be
+mapping
+the accounts of each value and in the
+values we're actually going to have a
+list of which values have exactly
+this particular count for example
+a hundred right we know that a hundred
+occurs
+one time so what we're gonna do is for
+this position
+one we're gonna say okay this value
+occurs only once a hundred a hundred
+occurs one single time which value
+for another value in our input array 2
+we see it occurs exactly twice right we
+can count that with a hash map pretty
+easily
+and then we'll say okay this value
+occurs twice so in the position
+2 index position 2 of our array we're
+going to add that value 2.
+2 is the value that occurs twice we see
+a
+last distinct value in our input array
+1. we count it occurs exactly three
+times so in this position
+index 3 we're gonna say okay there's a
+value a single value a one
+that occurs three times now it's
+possible maybe we had a third
+three right maybe two occurs three times
+in that case
+we would actually have multiple values
+in this position right but in this case
+we can see one occurs three times two
+occurs twice
+100 occurs once so they're all going to
+go in separate positions
+and then you know once we've taken every
+single input value and then
+and counted how many times each value
+occurs and then put it in the
+appropriate spot in this array what are
+we going to do well
+we want the top k values right the
+values that occur
+the top k values that occur most
+frequently right so what are we going to
+do we're going to start at this
+end of the array we want all the values
+that occur
+six times why are we stopping at six
+though why don't i extend this array
+farther right seven
+eight a hundred right why did the
+indices stop at six
+notice something about our input array
+our input array is
+size six right so that means if every
+single
+value in the input array was the exact
+same the
+most number of times a value could occur
+would be exactly
+six time so the cool thing about this in
+about this new array that we're creating
+is it's bounded
+by six or well technically six plus one
+because we do have a zero but that's not
+actually necessary
+but it's basically it's proportionate to
+the size of the input array right so
+so you know when we're scanning from
+right to left or
+however we do it we're only going to be
+doing that we can scan through the
+entire thing in linear time
+now in this case we see six there's no
+values that occur six times so we can't
+find our top k element
+in that position we'll try the same
+thing with five
+five no values occur five times four
+no values occur four times three oh a
+single value we're going to go through
+every
+value in this array there's only a
+single value in this case
+but we do see a 1 occur so to our result
+we want the top k values
+the top k occurring values we are going
+to add a 1 to that
+1 occurs most frequently in the input
+array so
+we add one to our result we need one
+more because i think we were looking for
+the top
+two values k in this case is going to be
+two so now we're going to go here which
+values occur
+twice a single value and that value is
+two
+so we're going to add that to our output
+array so now we've gotten the top two
+values
+and then we can return this array now
+why is this linear time again
+because remember the max size that this
+array could possibly be is going to be
+about equal to the size of the input
+array right because we could have a
+value for example one could occur six
+times in that case we'd have
+one over here now what if every single
+value in the input array was distinct
+right that's another extreme what if we
+had one
+two three four five six
+in that case this position would be
+empty because no values occur six times
+no values occur
+five times four times three times or two
+times
+every one of these six values would go
+in
+this position at index one reason being
+each one of these occurs exactly once so
+in that case we'll have
+all six values concentrated over here
+and that's still going to be linear time
+because yes we are going to be iterating
+through this entire input array which is
+going to be big o
+of n and then we're going to add another
+big o of n
+to that right big o of n plus big o of n
+because we're going to have to iterate
+through six values in exactly one
+position
+so that's still technically linear time
+now we are creating this
+uh array to help us and we're also going
+to be needing a hash map to
+count the occurrences of each value in
+the input array so the memory complexity
+is also going to be big o
+of n with that being said let's jump
+into the linear time code it's pretty
+easy once you can identify this
+trick so we are going to use a hash map
+to count the occurrences of each value
+or also
+the array the special array that's going
+to be the same size as the input array
+about
+is going to be called frequency
+basically you know
+the index is going to be the frequency
+of an element or the count of an element
+and the value is just going to be the
+list of
+values that occur that particular many
+number of times
+so i'm going to have an empty i'm going
+to initialize this as an empty array
+the number of empty arrays that go in
+this is going to be about
+the size of our input plus one
+so now i'm just going to go through
+every value in nums and just count how
+many times it occurs so for count of
+this particular end value we're going to
+do
+1 plus what its current count is count
+dot
+get n now if n doesn't already exist in
+our hash map or dictionary
+we're just going to put a default value
+of zero so this will return zero if it
+doesn't exist but this is
+how we're going to be counting the
+number of times each value in nums
+occurs
+next we're going to be going through
+each value that we counted so
+n c in count
+dot items because that's going to return
+the key value pair every single key
+value pair that we added to
+our dictionary and for every key value
+pair for every number
+and count i want to change the free i
+want to in the frequency array i want to
+insert so for this particular
+count remember the count is what's going
+to be the index so
+at index count we're going to append to
+that list
+this value n what we're saying is this
+value
+n occurs exactly c number of times
+and once we've done this we've basically
+initialized everything we need to so now
+we're going to have our
+result output right we want the top k
+elements so
+4 and so we're going to be iterating
+through this array frequency in
+descending order right because we want
+to start with the numbers that occur
+most frequently so for i
+in range length of frequency
+minus one which is the last index and
+we're going to go all the way
+up until zero and we're going to be
+going in descending order so we're going
+to put a negative 1 as the decrementer
+and we're going to go through every
+value so for every let's say
+n value in frequency at this index
+i because we know everything inserted in
+i is actually another sub list so it
+could be empty or it could have some
+values whatever it does so let's say
+n is non-empty then we're going to go
+ahead and take that
+end value and append it to our result
+because we're basically getting the end
+value that occurs
+most frequently now when are we going to
+stop at some point our result
+output is going to be the exact same
+size as k
+because we're guaranteed to have at
+least k values in our input array so
+once that happens
+once if the length of result is matching
+exactly k
+that's when we can go ahead and return
+result we know this is
+guaranteed to execute at some point so
+we don't have to put a return statement
+outside of the loop
+and that is the entire code so we could
+have solved this problem
+in decent time if we used a heap it
+wouldn't be too bad k
+log n i think that's a doable solution
+but with this kind of neat trick
+we can do this in big o of n time and i
+hope that you did learn something maybe
+a little about
+a little bit about bucket sort this
+problem definitely taught me something
+when i first solved it
+and i know many people have been
+requesting problems and i'm trying to
+get
+to all those requested problems as
+quickly as i can so i hope it was
+helpful
+if it was please like and subscribe it
+supports the channel a lot
+and i'll hopefully see you pretty soon

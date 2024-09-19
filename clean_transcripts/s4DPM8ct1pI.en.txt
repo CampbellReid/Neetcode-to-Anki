@@ -1,0 +1,252 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+let's solve the problem binary search
+we're given an array of integers nums
+which are going to be sorted in
+ascending order and we're also given a
+target integer that we're going to look
+for if the target exists in the array
+then we can return the index of it if it
+does not exist then we return one the
+goal is to create an efficient algorithm
+that can run in log n time so what
+algorithm are we going to use well the
+problem pretty much tells you binary
+search so while this is self-explanatory
+and a pretty basic algorithm i still
+think it's really important because a
+lot of problems kind of extend the idea
+of binary search and then make it even
+harder and this is actually a pretty
+common interview question to be asked
+some variation of binary search so this
+is a very good problem to practice and
+your goal should be able to implement
+binary search very quickly basically as
+if you were doing it in your sleep so
+i'll try to explain this quickly but
+also in a beginner-friendly way so the
+input array is sorted the target value
+could exist anywhere in this array or it
+might not exist at all when we start we
+are considering the entire input array
+how are we going to do that well we're
+going to have two pointers one pointer
+is going to be at the leftmost index
+which is initially index zero another
+pointer is going to be at the rightmost
+index these pointers mean that we are
+considering the entire range now if we
+could only look at one of these values
+which one should we look at should we
+look at the leftmost if we do that and
+we see that it's not equal to the target
+then we've only eliminated one
+possibility and we still have to search
+all of these if we look at the rightmost
+similarly it's not the target so we've
+only eliminated one possibility we still
+have to look at the rest of them but if
+we look at the midway point and
+technically either of these could be the
+midway point the way we calculate it
+though is going to be literally taking
+the left and right indexes and dividing
+them by two which i think will lead us
+to this position but approximately the
+halfway point why should we look here
+well we can compare it to the target
+it's not equal to the target so what
+does that tell us have we only
+eliminated one possibility no because
+remember the input array is sorted so if
+this is not equal to the target we
+should also ask is it smaller than the
+target or is it larger than the target
+in this case it's smaller than the
+target so if this is smaller than the
+target then everything to the left of it
+is also going to be smaller than the
+target so this was our midway point
+we'll call it m and we found that it's
+smaller than the target so we can
+eliminate these three values from
+consideration everything over here how
+are we gonna you know represent that in
+code well we're gonna take this left
+pointer and then shift it to be m
+plus one so now our left pointer is
+gonna be over here this represents
+possible range of solutions is going to
+lie within you know these two pointers
+so at this point we're just going to
+repeat the algorithm repeat what i
+pretty much just did now if we take
+these two add them together divide by
+two the middle is going to be over here
+so then we're going to check is this
+equal to the target that we're looking
+for in this case yes it is so now we can
+return the index because that's what we
+were trying to do we can return m
+whatever it happened to be i think it's
+4 in this case so that is pretty much
+the idea of binary search okay so now
+the time complexity if you know binary
+search you already know that it runs in
+log in time but let's quickly understand
+why so we're not considering this
+example anymore but suppose we had 16
+values in the input array every time we
+go to the midway point we either find
+the target but if we don't find the
+target we know we're at least going to
+eliminate half of the possibilities so
+we would eliminate this down to a now
+we're only looking at eight values we
+still don't find the result we keep
+dividing it by two make it two remaining
+and then finally there would only be
+one value remaining and either that's
+going to be the target or it's not going
+to be the target and then we're pretty
+much done with the algorithm anyway so
+the question is if we have a while loop
+the while loop is going to run as many
+times as we can divide the length of the
+input array by two how many times can we
+divide it by two well if you remember
+from your math class that is a math
+equation called log base two of n this
+evaluates to how many times can we
+divide n by 2. and you know suppose it
+evaluates to be x that's equivalent to
+saying that 2 to the power of x is going
+to be equal to n okay but this is too
+much math maybe you don't even care but
+that's pretty much the idea that's why
+our loop is going to run x times which
+is going to be equal to log n so it's
+not a big o of n algorithm it's a log
+base 2 n algorithm which is much much
+more efficient
+okay so now let's code it up and like i
+did in the drawing initially we're
+considering the entire input array as
+our search area so our left pointer is
+going to be at zero our right pointer is
+going to be at the last index which is
+just the length of the array minus 1.
+now we want to continue going until
+there's no more possibilities left or we
+have maybe found the result so the way
+to do that is to basically say that
+while our left pointer is less than or
+equal to our right pointer because i
+didn't show it in the drawing picture
+but suppose we just had a very small
+input array just to illustrate the
+example our left and right pointers
+would both point here our midpointer
+would also point here but suppose our
+target is actually equal to two okay
+we'd say okay this is too small for our
+target so we're gonna set our left
+pointer to be equal to mid plus one so
+that means our left pointer would be one
+and our right pointer would be zero that
+basically means our left pointer has
+crossed our right pointer and that's how
+you know that we have no more values
+left to search we did not find the
+result so that's why we're doing less
+than or equal if they're both equal
+though if they're both pointing at this
+value that means we haven't looked at
+this value yet so that's the idea so
+each iteration of the loop we're just
+going to find the midway point which we
+can get by taking l plus r and dividing
+by two if the value that this index is
+at is greater than the target then we
+want to look at all values to the left
+of it so we're gonna take our right
+pointer and set it to m minus one we
+wanna look at all values to the left
+we're basically shrinking our criteria
+and in the other case else if that num
+is smaller than our target then we're
+gonna do the opposite we're gonna set
+left equal to mid plus one just like in
+the drawing explanation the last case is
+if neither of those are true that must
+mean that we found the target if it's
+not greater and not smaller that means
+it must be equal that means we can
+return m which is the result but if we
+went through every iteration of the loop
+and we didn't find the result then
+outside of it we are told that we should
+return negative one to indicate we did
+not find a result so that's the solution
+let's run it to make sure that it works
+and as you can see on the left yes it
+does and it's very efficient there's one
+more thing though that i want to mention
+to you which probably won't come up in
+your interview to be honest it's never
+come up in mine but there's actually one
+little bug here i mean technically the
+bug doesn't exist in python because
+python
+integers are unbounded they can pretty
+much be infinitely large but in most
+languages like java and c plus plus you
+might encounter an overflow because
+suppose we had a very large input array
+and then these two integers were very
+close to the 32-bit integer max which is
+something like
+2 to the power of 31 suppose they were
+both close to that then adding them
+together would possibly overflow and
+then we would get the wrong result in
+this
+value so possibly your interviewer might
+ask you something about that and how
+would you go about fixing that well
+there's actually a way to do that we can
+still calculate the midway point between
+left and right without adding them
+together because we can take the
+distance between them we can get the
+distance between them by taking right
+minus left and then dividing that by two
+right that will give us half of the
+distance between them and we can take
+that and add it to the left index
+because if this is halfway of the
+distance between them and then this is
+the left index by adding these together
+we are getting the midway point this is
+just a way to do the exact same
+calculation but this way it will never
+overflow because right is always going
+to be greater than or equal to left and
+in this case we're not adding them
+together we're subtracting them so this
+will always be positive or it will be
+zero so i'll run it and it does work
+pretty much exactly the same as you can
+see on the left but this is just
+something i think a lot of people don't
+talk about and actually i pretty much
+never implement it this way people have
+actually mentioned that in my comments
+before which is kind of why i'm talking
+about it today but i really hope that
+this was helpful if it was please like
+and subscribe it really supports the
+channel a lot consider checking out my
+patreon where you can further support
+the channel and hopefully i'll see you

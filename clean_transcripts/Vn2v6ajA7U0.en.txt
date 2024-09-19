@@ -1,0 +1,407 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+let's solve the problem subsets 2. we
+did solve the first one of this and that
+was actually a long time ago and people
+have been requesting i solved this one
+as well so let's do it today the first
+one is actually very similar to this one
+the only difference is that in this case
+the input array that we're given can
+contain some duplicate values now our
+job is still the same we want to return
+all possible subsets we can from this
+input array nums but since we do have
+duplicate values it's going to be tricky
+for us to not have any duplicate subsets
+in our result the good thing is we can
+return the solution in any order so
+that's good but let's take a look at an
+example we have one two two now a subset
+of one two two is basically uh some
+values from here where the order is
+preserved for the most part so you know
+we could just take the value one that's
+a subset we could take the second value
+two
+that's a subset as well we could take
+the third value by itself which is also
+two but here you can see we have a
+duplicate right these are both the same
+we can't include both of them so you
+know we don't include the second one and
+by the way even if we don't choose any
+of these for example if we just have an
+empty list
+that is still a valid subset as you can
+see in the output over here we could
+also take the first one and take the
+first two which would give us one two we
+could take the first one and then take
+the second two but that would be the
+exact same that would be one two as well
+so we're not going to keep both of them
+so you're starting to get the idea of
+you know subsets in general and what the
+problem here is going to be for us to
+not include any duplicates in our
+results when we don't include any
+duplicates we have six different subsets
+that we can create and before we
+actually get into the assertion you
+might be thinking okay maybe dynamic
+programming is something we can do and
+that would be possible but i know
+immediately by looking at this problem
+that we can't do dynamic programming and
+the reason is because we're not really
+counting subsets or anything like that
+we're actually creating the subsets so
+even if we found some kind of shortcut
+it wouldn't really make this any more
+efficient because we still have to
+create all of these subsets and how many
+possible subsets could we have well to
+generate a subset for each value we can
+either choose to include this value or
+not include that value so for each value
+we have two choices now how many values
+do we have in our input let's just call
+it n so let's say 2 to the power of n is
+how many subsets we're going to have now
+how long is each subset going to be well
+at most it could be of length n so we're
+going to take the number of subsets
+multiplied by the length of the subset
+so this is going to be the overall time
+complexity to actually generate all of
+these subsets notice how we can figure
+this out even though we haven't even
+solved the problem yet and this kind of
+hints to you how we are going to solve
+this problem this is basically a brute
+force solution right so we're going to
+be using backtracking okay so let's get
+into it so let's take a look at an
+example and let's just start with the
+first subset solution which is actually
+pretty trivial for a backtracking
+problem remember we want to create every
+single possible subset so for each one
+of these input values we have a choice
+are we going to include this one or are
+we not going to include this one so
+putting it more simply with a decision
+tree you know for the first decision we
+have we're at this one right and we know
+that because we're going to keep track
+of an index a pointer whatever you want
+to call it and it's initially going to
+start at zero once we make our decision
+here then we're going to shift it to the
+right and then make our decision over
+here and then keep doing that for every
+single value in the input but so let's
+start with our first decision which is
+the one so let's say we do include that
+one then we are going to have a array of
+one this is our subset so far if we
+don't include the one we're going to
+have an empty list which is still a
+valid subset but we're not done yet we
+still have to iterate through the rest
+of the array so next we're at the second
+decision which is two values so for here
+we could either add the two and if we
+add the two we'd have one two or we
+could not add the two so we're basically
+skipping the two which would leave us
+having a one same over here we could add
+a two which would be just 2 by itself in
+an array
+or we could skip the 2 which would leave
+this being an empty list still ok so we
+just finished this value now we're at
+the second two and we're going to
+continue this kind of naive approach but
+now you're gonna see what the problem is
+so for here suppose we add this to which
+would leave us having one two two if we
+don't add the two we stay as a one two
+and over here you're gonna see where the
+problem is so here we could add a 2
+which would give us a 1 2. you see that
+we have two subsets that are the exact
+same now even though we're not finished
+with the array yet uh both of these
+paths are clearly going to lead to the
+same subsets because they are the exact
+same and they the remainder of the array
+is going to be the same for both of
+these so we're going to end up with
+duplicate subsets but the important
+question is how did this happen and how
+can we prevent this from happening let's
+take a look so as we make this decision
+tree for example when we're over here
+and we're at the two value we know that
+all subsets that follow this one like as
+we go down the decision tree all subsets
+are going to include at least one one
+value right and the decision we're
+making is okay we're including this two
+so if we do include the two then we're
+saying all subsets that we create using
+this one are going to include at least
+one two value so this path is supposed
+to be the path with all subsets that
+include at least one two and we don't
+want duplicates so when we make the
+decision on the right side where we skip
+this two value we don't include the two
+value on this right side so what this
+right side should represent is all
+possible subsets that don't include at
+least a single two basically all subsets
+that do not include any two values why
+because this left side over here already
+includes all subsets that have at least
+one two value so if we include any two
+values on the right side we're going to
+end up with duplicates so what we have
+to do is not include any two values on
+this right side how can we do that well
+basically when we were over here that's
+what two we were deciding at right when
+we choose to skip this two we should
+choose to skip all two so instead of
+taking our i pointer and just shifting
+it by one to be over here we should
+actually shift it by two to be over here
+because that's how we know we're not
+going to get any more two values but
+this input representation might make it
+look simple but we're actually not
+guaranteed that the input array is going
+to be sorted so we have to sort it
+ourselves which is going to be n log n
+time but that's not a big deal because
+we already know that the time complexity
+of this solution is going to be about n
+times 2 to the power of n so this is
+pretty insignificant so now let's
+re-draw this decision tree keeping what
+i just mentioned in mind and then we
+will eliminate all the duplicates okay
+so this can actually stay the same
+because this is the side where we do
+include a 2 but this is the side where
+we're skipping all the two values so our
+pointer when we're making a decision now
+is not actually going to be over here
+our pointer is actually going to be over
+here at this 3. so are we gonna include
+a three or not that's our choice so if
+we do include a three we get one three
+if we don't include a three we just get
+one okay and what about this two well we
+chose one two so now the next decision
+is going to be are we including the
+second two or are we not including the
+second two so we can draw that so if we
+do include the second two we get a two
+two and if we don't include the second
+two we just stay as a single two and
+lastly on the right side over here are
+we actually going to be choosing from
+the second two well no because we
+already skipped the first two and that
+means we're gonna end up skipping the
+second two as well so the decision we're
+making over here is actually going to be
+are we including the three or are we not
+including the 3 so that's going to be 3
+by itself or just an empty
+array and so now you can see that this
+is actually
+the last value that we were looking at
+so we're not going to go any further
+down in this case so just to kind of
+illustrate that i'm going to put a box
+around here this is the base case we're
+not going to go any further same over
+here this was also the base case because
+we were choosing from the three value
+here we included it here we did not
+include it okay at this point you
+probably get the idea so i'm going to
+fast forward so over here we either
+include the three or we don't include
+the three which will leave us with a one
+two two three the other one would be
+just one two two and the other decision
+is just one two two over here if we
+include the 3 we get 1 2 3. if we don't
+include the 3 we just get a 1 2 and then
+let's finish these two as well so this
+would be 2 2 3 or just a 2 2 if we don't
+include the 3 and then this one is going
+to be 2 3 or just 2 by itself so these
+are all of our
+subsets that are going to be added to
+the result output you can see that it's
+actually not quite 2 to the power of n 2
+to the power of n in this case would be
+2 to the power of 4 which is 16. in this
+case i think we actually have about 12
+of them and the reason is because we're
+eliminating duplicates right if we
+included the duplicates it would have
+been 16 but that's why uh the time
+complexity still is the same we can
+still say the time complexity is n times
+two to the power of n because remember
+this is the worst case we don't actually
+know if there are gonna be any
+duplicates in the input or not if
+there's not any duplicates this is gonna
+be the upper bound you know if there are
+some duplicates the actual time
+complexity might be a little bit smaller
+than this but i think that's enough for
+us with this explanation now let's
+actually get into writing the code
+luckily it's pretty straightforward okay
+so now let's code it up and we're going
+to declare our result it's initially
+just going to be an empty array this is
+what we're going to be adding all our
+subsets to and remember before we
+actually get into the backtracking
+portion we want to make sure that our
+input array is in sorted order okay so
+now let's write the backtracking portion
+we are given uh two main inputs that
+we're gonna keep track of one is the
+index that we're at in our nums array
+and the second is what's the current
+subset looking like so far uh we're
+gonna have a single base case
+and that's when we reach the end of the
+input array so basically if i is equal
+to the length of the input array nums
+that's basically how we know we have
+gone through the entire array that means
+we can take this subset that we have
+built and go ahead and append it to our
+result but we want to make a copy of
+this subset because this subset is just
+going to be an array and we're going to
+be using this as we do our backtracking
+so what we want to do is actually create
+a copy of this subset so that when we
+have a future backtracking call that we
+don't end up overwriting this subset
+because we're taking a reference to this
+subset and appending it to this array
+what we want to do is create a copy and
+we can do that in python like this or
+you can use like a built-in copy
+function in java or whatever language
+you want and after that we just want to
+return because we don't want to continue
+backtracking when we reach the end of
+the array okay that's the base case but
+what is the recursive case well remember
+we have exactly two decisions to make
+one is all subsets that include nums of
+i that include the number that we're at
+the other case is all subsets that do
+not include nums of i so we do not
+choose to include nums of i in our
+subset let's start with the first
+decision what we're going to do is we're
+going to include nums of i right so
+we're going to take our subset and
+append to it this number nums of i and
+then simply enough we're going to go
+ahead and do our backtracking call by
+passing in the next index so we're going
+to pass in i plus 1. and we're going to
+pass in the subset that we have so far
+and you know that's going to take care
+of all subsets that include this number
+so very easy but before we start
+generating all subsets that do not
+include that number we should probably
+remove from the subset the value that we
+just added to it we can do that just by
+saying subset pop that'll pop this value
+that we just added so now we're going to
+generate all subsets that don't include
+numbers of eye but this is the slightly
+tricky part because remember if there
+are duplicates the duplicates will be
+right next to each other because
+remember we sorted the input array so
+what we want to say is
+i plus 1 as long as i plus 1 is inbound
+so it's less than the length of the
+input array and you'll see why we're
+doing this and if nums of i
+is equal to nums of i plus one so what
+am i doing here and why am i doing it
+well remember if we have an input array
+like one two two and we're at this value
+and we're choosing to skip this two then
+we should probably skip the second two
+as well because we don't want duplicates
+right we should skip the second two and
+then our index i is gonna be over here
+right and we're gonna compare this value
+to this value are they equal yes they
+are so then we're going to increment our
+pointer to be over here now then we're
+going to compare this value with the
+next value 3. it's not equal so
+that's when we're going to stop this
+loop right and what this loop is going
+to be doing is just going to be
+incrementing the i pointer like i kind
+of talked about right now but what if we
+didn't actually have this 3 value here
+in that case our i pointer would be
+incremented to be this position and we'd
+see that i plus 1 is out of bounds so
+then our loop would terminate as well
+okay and after the loop does terminate
+we still want to run our back tracking
+because even if we don't add any values
+even if we skipped the entire array you
+know this is this case over here is
+going to be the case that ends up adding
+the empty array to the result so we
+definitely don't want to skip calling
+backtrack onto this regardless of what
+the while loop ends up doing so let's
+call our backtracking uh pass in i plus
+1 same as we did up above and let's pass
+in the current subset
+after we have popped the value from it
+remember that is actually the entire
+code as long as i don't have any bugs
+let's run it to make sure that i don't
+so first we want to actually call our
+backtracking function let's pass in 0 as
+the starting index and just pass in an
+empty array as the initial subset and
+then after that we can just return the
+result so now let's run it to make sure
+that it works and as you can see on the
+left yes it does work and it's pretty
+efficient so i really hope that this was
+helpful if it was please like and
+subscribe it really supports the channel
+a lot consider checking out my patreon
+if you'd like to further support the
+channel and hopefully i'll see you

@@ -1,0 +1,492 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+let's solve combination sum
+and this is another problem from that
+blind 75 list the link will be in the
+description so we are doing one more
+problem
+and have very few problems from this
+list remaining
+so we're given an array of distinct
+integers called
+candidates and we're given a target
+integer called
+target and we just want to return a
+list of all the unique combinations of
+candidates where all those numbers end
+up summing to the
+target value and we're allowed to return
+those combinations in any order
+and we're also allowed to use the same
+number from candidates
+multiple times but we don't want to have
+duplicate
+combinations for example if 2 2
+3 sums up to 7 right that means
+3 2 2 these are the exact same values
+right
+just in a different order these sum to
+seven as well so we don't want to add
+both of these combinations to the result
+because they're the exact same
+so what we're saying is we want
+combinations we don't want permutations
+that end up summing
+to the target value so in this example
+you can see
+that we are given these candidates and a
+target of seven and we have two
+different ways that we can sum up to
+seven of course seven by itself
+does sum up to the target and two
+occurrences of the two value and one
+occurrence of the three value added
+together
+are gonna lead to seven as well so then
+we return these two combinations
+as our result so i would say the
+difficult part about this problem is
+trying to figure out how to
+eliminate duplicate combinations right
+for example if we just brute force it
+like a decision tree so we have four
+different values we can choose we can
+choose each of them
+an unlimited number of times what we can
+do is have four decisions in our
+decision tree right like that might be
+the naive thing that you start with
+so we would get two three
+six and seven and then we'd basically
+continue that right
+on one path over here we would find okay
+we found the seven
+so we found the target right so we found
+one way that we can reach the target
+so therefore we don't need to continue
+down here because as we add more numbers
+all of these values are going to be
+positive so as we add more numbers
+we're only going to get a sum larger
+than the target so you know
+i think it's kind of obvious why we
+don't continue down this path right
+but down here from the six let's try to
+continue right we can add a two so we'd
+get
+six two we could add a three so we get a
+six three
+we could add another six so we'd get six
+six and we could add a seven where we'd
+get six seven
+so notice how all of these are gonna sum
+to a value
+greater than the target so down this
+path we
+never ended up reaching the target we
+only went over the target so we don't
+continue down any of these paths
+right but now let's continue down this
+path so here
+we'll get we can get another 2 we can
+get
+a 3 we could get a 2 6 but in that case
+we would get 8 which goes over our
+target we could also get a 727
+but that also goes over our target now
+here's the part where we're going to end
+up getting duplicates so i'm going to
+show you why
+this type of decision tree does not work
+so here we could get
+a 3 for example right so we'd get two
+two
+three now that sums to the target down
+this path we could choose a two so we'd
+get two
+three two notice how both of these
+end up summing to seven but they're the
+exact same they're just in a different
+order we have two twos and a three
+here we also have two twos and a three
+so we ended up getting the same
+one twice so this works in finding the
+combinations but we end up getting
+duplicate combinations so what kind of
+decision tree can we try
+that gets us the result that we want but
+does not have these duplicates let me
+show you how we're gonna do that
+let's logically think about this we know
+that we have one value in our
+candidates two right so we can try to
+get
+all combinations that include this
+2 value right and see if any of those
+combinations leads us to the target
+value
+7. now we could also so then
+if we make a second decision over here
+right in this decision we're definitely
+including at least
+one two now if we go down this path we
+want to make sure that
+none of the combinations down this path
+ever match the combinations down this
+path
+how can we guarantee that well in this
+side we said we're definitely including
+at least one two
+how about in this side we don't include
+even a
+single two so basically we skip
+two so here we're gonna have an empty
+array because we skipped the two right
+all we said is we were able to start
+from here but we said no we're just not
+including a two we're just gonna do
+combinations with these three values
+that's gonna guarantee that none of the
+combinations on both sides are gonna be
+matching
+and that's basically the logic that
+we're gonna follow
+so from here remember we can include
+multiple twos if we want to right so one
+decision here could be including a
+second two so we get two two now
+this is this path is going to include
+all combinations that include
+at least two twos right and but remember
+our definition for this decision tree
+needs to be recursive right because we
+don't
+want any of the combinations down this
+path to be the same as any of the
+combinations down this path so what we
+said here is
+we're going to include two twos how
+about down this path
+we say that we're we're not including
+any more
+twos now what we're saying is we had one
+two but now we're done we're skipping
+twos now we're only going to use values
+from here
+so that's the recursive thing right
+we're basically doing the same decision
+down here as we did up here so here
+we're going to say we ended up
+skipping the two and we're we still only
+have one single two
+and so let's just continue to repeat
+that so over here we're gonna add
+another two so we'll have
+two two two and over here we'll say okay
+we're
+now we're done with twos right where
+we're gonna keep ourselves at a limit of
+two occurrences of two and we're
+basically going to continue this logic
+until we get to our base case so over
+here we're gonna see if we ended up
+having four
+twos we'll get a target of eight so
+therefore we went over
+our target value so we're going to stop
+but down here right this was up our path
+where we said okay we're not going to
+include
+any more twos in this path so here we
+can make a decision we can add a three
+so then we'd get two two three so we're
+continuing that recursive definition
+and so notice how we have two two three
+that's seven so we did find at least
+one combination but remember down now
+for if we make our decision to the right
+we wanna make sure we don't have any
+duplicates from here so in this
+side we decided to add one three how
+about down this path we say we're done
+adding threes we're not even going to
+add a single extra three so
+this is going to remain as two two
+now i think it's pretty obvious that
+down here since we're only allowed to
+add values six and seven neither of
+these is gonna end up leading to the
+target if we add a six
+we'll get a total of of ten if we add a
+seven we'll get a total of eleven
+neither of these
+you know both of these go over our
+target so let's quickly run through the
+rest of the decision tree so over here
+over here we said we added a second two
+so over here we're not going to be
+adding any more to so here we can add a
+three so we'd get
+two three and over here we would skip
+adding threes right so we're gonna we're
+not gonna add any more threes this is
+gonna remain
+as two now down this path at this point
+we have a total of five so we're only
+allowed to add values three
+six or seven all of those are going to
+end up leading to
+a total of greater than seven so we
+can't we won't be able to find any
+solutions down this path
+i'm just skipping and drawing it out
+because we're kind of running out of
+room
+now over here what we said is we skipped
+two
+and we and since this path includes the
+one where we added a three so here we're
+not going to add any threes
+and so we're only allowed to choose six
+and seven that's going to end up leading
+to
+uh totals of greater than it's going to
+lead to either eight
+or nine those are both greater than our
+target value
+so here we're not allowed to add any
+twos because that's what this path was
+so we can add a three
+or we can choose to skip three
+and have add nothing so here since we're
+we're not see we're we're skipping three
+so we're only allowed to add sixes or
+seven so here we can say okay get a six
+this path we skip six so we're not
+allowed to add any sixes over here
+and from over here we'll say okay we can
+add a
+seven which will give us the total seven
+right
+that's the target that we're looking for
+so we did end up finding that
+so that's our second solution that we
+found now since this
+this path is going to lead to
+combinations that do include a seven
+this path
+cannot include a seven but you notice
+how as
+we are continuing to go down right paths
+what we're saying is okay
+we're we're basically removing the
+number of elements we can choose from
+right we're popping two initially over
+here then when we go down here
+we're we're not allowing ourselves to
+choose three over here we can't choose
+six
+then when we finally go down all the way
+over here we're not even allowed to
+choose seven so therefore we have no
+choices left so this is also going to be
+a base case
+because we ran out of elements and the
+way we're going to be tracking
+which elements we can choose from is
+we're going to have a pointer let's call
+it i
+and so initially it's going to be here
+which means we can choose any of these
+elements
+as we pop an element like this one we'd
+end up taking our i pointer and shifting
+it over
+here which tells us okay we can only
+choose these elements now
+so that's the main idea this is going to
+be a recursion tree each
+recursion step we can make two decisions
+and it's pretty easy to code up once you
+can kind of understand this logic let me
+show you how to do that
+by the way the time complexity of this
+you can see that our decision tree
+we're making two decisions each time so
+it's going to be 2 to the power
+what's the height of our decision tree
+going to be well each value in
+this is going to be positive it's going
+to be at least one so the height of this
+decision tree can be at most whatever
+the target
+value we're trying to make it so t so
+two to the power of t
+where t is the target value that's going
+to be the big o
+and uh big o time complexity of this
+problem so we are going to do this
+recursively but let's have our result
+variable which is basically going to be
+global for the scope of this problems
+because i'm going to define
+a depth for search function inside of
+our outer function
+so a few variables we're going to pass
+into here we do want to maintain
+which of the candidates we're still
+allowed to choose so like i said we're
+going to have a pointer i that's going
+to determine that
+we're also going to have a current
+variable we're only going to have a
+single occurrence of this it's just
+going to be a list that tells us
+what values we have added so far to the
+current combination for example like we
+could have two
+we could have two two right two two
+three etcetera etcetera
+and for the values in our current
+combination we do wanna have a total so
+we want to be maintaining what's the
+total sum of those because if it ever
+reaches
+our target sum then we know we have
+found a solution if we ever go
+over our target sum that means we've
+reached the base case and we can't
+continue anymore
+so in our dfs function let's go ahead
+and define those base cases we know the
+base cases if total ever ends up
+reaching target that means we found the
+result so what we're going to do is
+result dot
+append we want to append the actual
+combination so we're going to append
+current
+and we're since we're only maintaining a
+single uh
+variable list for current we don't want
+to actually append current itself we
+want to create a copy of it because
+we're going to continue to use this
+current variable
+when we're doing the other combinations
+recursively so we don't
+because then we're going to be modifying
+it so we just want to create a single
+copy
+before we actually add it to the result
+and after we're done with that we don't
+want to continue the rest of this
+function so we're just going to go ahead
+and break out of it by returning
+so that's the base case where we succeed
+what's the base cases
+if we end up uh being impossible to find
+a combination well one is going to be if
+i is out of bounds meaning we can't
+choose any more candidates so if i
+is greater than or equal to candidates
+or our total ended up going over the
+target that we're trying to reach
+that's a base case where we have to
+return immediately because we cannot
+find a combination done
+now for the actual recursive step
+remember we have two decisions to make
+we can choose to include
+the value at candidates of i right we
+can choose to include this value
+what so what are we going to do if we're
+including this value well first of all
+we're going to take our current
+uh values that are in our combination
+we're going to take
+that candidate and go ahead and append
+it to our current
+combination right we're going to do that
+before we end up actually calling our
+dfs function so we're going to call dfs
+and what are we going to pass in well
+we're including this candidate so we can
+potentially
+continue to include it right so what
+we're going to say for our index i that
+we're passing is i stays the same right
+we're not restricting which candidates
+we're allowed to choose from just yet
+so i stays the same we pass in current
+because we just updated it right now so
+we can go ahead and pass it in
+and the total did end up changing so we
+took our current total and
+added this candidate to it right
+so we can go ahead and pass in total
+plus candidates of i
+so let me delete this line because we're
+not doing anything with it
+but yeah so this is going to be that
+first decision where we do include the
+candidate
+now the next decision is going to be
+where we can't include it
+but but after we call this function we
+want to clean up a little bit we ended
+up adding
+uh this value to our current candidates
+our current combination so we want to go
+ahead and pop that before we go down the
+other decision
+and bef so once we pop that we can go
+down the other decision that's if we're
+not
+ever going to include this candidate so
+for the index we're going to pass an i
+plus 1
+indicating that we can't include any any
+occurrences of i and for current we can
+just go ahead and pass in
+our current combination and total is
+going to stay the same because we didn't
+end up adding any value to it right we
+we
+left our current uh combination as the
+same as it was before when we actually
+called this function
+and once that's done we've we basically
+made our two decisions right can you see
+what's going on can you see that we
+called that for search
+once and then we called it a second time
+so we did create that two branch
+decision
+and after we're done with that we can go
+ahead and return and in this case we
+actually don't need to return
+so that is the entire dfs function last
+but not least
+what we want to do is actually call it
+out here so we're going to call it
+passing in 0 as the beginning index
+passing in an empty array as the current
+combination
+and passing in 0 as the current total
+and then once that is done
+we will have updated our result which we
+declared up here
+and then we can simply go ahead and
+return that result it should contain
+all the combinations that end up
+totaling to the target
+so you can see this problem isn't too
+bad to code this backtracking approach
+isn't too bad once you kind of
+understand the two decisions that we're
+actually making
+so i hope that this was helpful if it
+was please like and subscribe it
+supports the channel a lot
+and i'll hopefully see you pretty soon

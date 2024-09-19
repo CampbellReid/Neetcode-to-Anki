@@ -1,0 +1,456 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+let's solve
+serialize and deserialize a binary tree
+basically what we're trying to do is
+we're given a binary tree right and we
+want to write two functions for it
+serializing it and then deserializing it
+when we serialize we're taking an object
+right and this object
+in memory it could be anything right
+like you don't know where this node
+could be
+in memory you don't know where this node
+could be we know that there's some links
+and stuff connecting them all together
+but
+what we want to do is take this and put
+it into a very easy to read
+string that could be passed around
+easily right so basically
+for example we could convert basically
+we could convert
+this entire tree into a string something
+like this right
+one is the root node then there's a two
+then there's a three then there's a
+couple nulls because two doesn't have
+any children
+and then there's the other nodes four
+and five right basically
+this is something that's easy to use and
+pass around right
+and we also wanna be able to take a
+string like this and then turn it
+back into a tree so we have to keep that
+in mind it's something that could be
+you know taken back and forth easily
+reversed so there's a lot of different
+ways to solve this problem
+i'm gonna show you a pretty easy and
+straightforward way to do it
+you could use breadth first search
+basically taking the tree and then
+serializing it level by level
+and then you know reading through the
+input level by level
+etc but there's also a way to do it with
+depth first search using
+pre-order traversal and i'll show you
+this way because it requires a little
+bit less code
+so like i mentioned we're going to be
+doing this with pre-order traversal so
+let's just see
+what would a tree like this if we
+converted it into pre-order traversal
+into the form of a string what would it
+look like well obviously the first
+value is one so we're gonna say okay the
+root note is one right that's what
+pre-order means we're gonna do the first
+node
+then we're gonna recursively do the left
+subtree with pre-order
+traversal and then similarly after that
+we're going to do the right subtree in
+pre-order traversal
+now obviously we want to be able to
+separate values
+so we're going to use a comma as a
+delimiter but you could use a space if
+you really wanted to
+or use something else but i'll just use
+a comma so now let's recursively do the
+same thing for the left subtree so
+obviously we have a two
+let's add that too because we're doing
+pre-order and now let's do the left and
+right subtree of two so first let's go
+to the left subtree
+now we're gonna see null right this is
+null it's empty there's nothing there
+but we are gonna add that to our string
+just to indicate to us that this
+left portion of the subtree cannot be
+continued right and
+you could add the word null but i'm just
+going to use a capital letter n to
+indicate that so that's going to be our
+special value that indicates an
+empty no node or empty tree since we
+finished the entire left subtree and we
+know that it was a null right so that's
+basically our base case that tells us we
+can't go any farther here so now what's
+our right subtree for two it's also
+null so we're going to add another null
+and see how we've done the entire left
+subtree here
+so now we can start going down the right
+subtree
+so of course the first value is a three
+so let's go ahead and add that
+and similarly we're going to do
+pre-order traversal on the left subtree
+now you can basically see
+this is the exact same thing that we did
+up here right
+2 was a node and two had no children so
+left and right child of two were null
+that's the same that's true for this
+four node so we're gonna add
+four and then we're gonna add the two
+null nodes basically indicating that
+four
+does not have any children n
+n so now let's go do the right subtree
+basically you
+can probably tell what i'm going to do
+here so i'm running out of space so
+let's put the five down here
+comma and then a couple empty null nodes
+and now we're done right that was the
+entire string
+so now i'm going to get rid of this tree
+and we're going to see
+is it even possible for us to be able to
+take a string like this
+and know exactly which one is going to
+be the left node and which is going to
+be the right etc etc right well we're
+obviously going to use
+pre-order traversal on this string
+basically
+to create a new tree and i'm going to
+show you that it is
+possible that this string is actually
+not ambiguous
+because clearly you can see okay one is
+going to be the root note then the next
+value must be the left if this were a
+null
+that would mean that one has no left
+subtree right so we could just put
+null for its left subtree but clearly
+this is not null
+so that means two is the left child of
+one
+next we see okay let's create the
+subtree for
+two right well it's left child is null
+and next it's right child is also
+null so therefore two is not going to
+have anything right so
+that's basically the idea so now let's
+actually do it okay since we know we
+created the string with pre-order
+traversal that's basically the idea
+we're going to use so we're going to
+have a pointer
+we'll call it i that's going to
+basically tell us what index
+of this string that we're at well in
+reality what we're going to do we're
+actually going to take this string
+and then split it based on the delimiter
+comma so then it's actually going to be
+an array but i'm not going to redraw
+that just because
+it's pretty straightforward what we're
+going to be doing with this string
+so first one is non-null so it's a one
+right so we
+are going to create a root node with the
+value one
+now let's create the left sub tree
+similar to pre-order traversal right
+we're creating the node now then we're
+gonna do the left subtree then we're
+gonna do the right subtree the question
+you might have is
+how do we know when the left sub tree
+stops
+and when the right sub sub tree starts
+i'm going to show you it's actually
+simpler than you might think
+so we know that the first value here is
+going to be the left
+child if this were null we would put a
+null here but it's not null it's two so
+we are creating a
+two node over here and once again
+recursively creating
+this subtree so start with the left so
+this first value is going to be the left
+subtree it's a
+null right so since it's a null that
+means we can't continue
+this subtree anymore right so that means
+whatever value
+so we're done with this first null now
+whatever value comes
+next here is going to be the value in
+the right subtree
+of this two node it happens to also be
+null but maybe if it wasn't unknown
+maybe it could have been a three right
+that's when we would put three over here
+but clearly it's not it's a null so that
+means
+we can actually stop this subtree
+as well so since both of the children
+were null
+that means we're actually done creating
+this entire subtree
+we reached our base case basically so
+we're done with this
+now the next value that comes in our
+string is clearly going to be the right
+child of one so the three is gonna be
+the right child
+here and now of course pre-order
+traversal we're gonna fill in the left
+subtree of three so what's the next
+value
+in our string it's a four so this does
+have a left subtree
+four continuously we're going to be
+doing the left subtree of four
+we see it's a null that's our base case
+so we're done with the left sub tree of
+four
+next we're looking for the right subtree
+of four so what's the next value in our
+string it's again
+null so we reach the base case we can be
+done
+with this entire subtree so we're gonna
+pop back up recursively over here to
+three
+and now we know we need to fill in the
+right subtree it could be null or it
+could be a real value let's find out
+well the next value in our string is a
+five so therefore
+this is going to be five so next we see
+that okay left child of five is going to
+be null and
+right child of 5 is going to be null
+right so clearly what you can see here
+is that for every single leaf node we
+have
+in our tree we we specified what their
+children were going to be we specified
+the leaf node two has two null children
+leaf node four has two nulls and leaf
+node five has two nulls
+that's how you know we're done with the
+entire string we're
+we're gonna stop here we know that
+there's nothing left to do
+right every single leaf had null
+children therefore we can't possibly
+continue this tree right so we're done
+so that's why it's not ambiguous and by
+the way what do you think the time
+complexity of this was well we know that
+pre-order traversal is pretty linear
+right so
+basically o of n for serializing and for
+d
+serializing this problem is actually a
+little simpler than you might think
+for a hard problem at least so now with
+that being said let's jump into the code
+so good thing for us we only have to
+fill in two functions so let's start out
+with the serialize so we're going to be
+given a root node for a tree and we want
+to convert it into a string and then
+return that string so let's start
+with a empty string initially right
+and actually just to make things a
+little bit easier i'm going to
+set our result to an array i'm basically
+going to be adding
+strings together like for example if we
+had a node 1 i'm going to add it like
+this if we add a node 2 i'm going to add
+it
+like this and then at the end i'm
+basically going to be joining all the
+strings together with a comma
+delimiter so i'm going to define a
+function inside a function just because
+it's easier once again right so this is
+going to be our pre-order depth first
+search we are going to be passing in the
+current root or the current node that
+we're visiting
+and of course we know that the base case
+is if the node is
+null and in that case what are we going
+to do our special character that we're
+going to define
+is going to basically be a n character
+so to result i'm going to append
+and end character and then we're going
+to return
+if it's not null then we know we can
+append we can we're since we're doing
+pre-order we're going to be appending
+before we recursively do depth for
+search we're going to append
+node.val but we know it's going to be an
+integer so we're going to we're going to
+convert it into a string so node.val
+converted into a string
+appended to result after that of course
+we just call our recursive different
+search
+on the left and right subtree so uh debt
+for search on node.left
+and depth for search on node.right and
+we don't even have to call our return
+function because once this is done
+executing it's going to basically return
+by default
+so once that is done we know that our
+result is going to contain
+all the strings that we want it to so
+basically what i'm going to do is return
+the result joined by a
+comma delimiter so comma dot join
+everything in result oh but i almost
+forgot we actually have to
+remember to call our debt for search
+function so i'm going to call it passing
+in the root value
+so our serialized function is actually
+just as simple as that so
+next we're going to be moving on to our
+deserialize function so we're going to
+be given the data right
+we know that the data is going to be
+comma delimited so we're basically going
+to split it
+based on that comma into an array a list
+of
+the data that we're going to be needing
+so i'm just going to call that vals
+and i'm also going to create a pointer
+i'm going to call it self.i
+self because it's going to be a member
+variable of this class
+basically because we want it to be
+global because i'm about to define
+another
+recursive function inside of this
+function and i don't even need to pass
+any variables into it because
+the self.i is global so i'm going to
+initialize this to 0 indicating we're
+going to start at the first
+value in our list of values and so once
+again we're going to start with the base
+case now what's the base case going to
+be well if our
+pointer is pointing at a value in the
+vowels
+and if that value happens to be null now
+how do we know if it's null
+well that's pretty easy right we can say
+vals at index
+self dot i and if it happens to be equal
+to the character n
+we know that's null so what are we going
+to do we're just going to return the
+base case we're going to return
+a null node if it's not null that means
+we have some work to do right we have to
+create a tree node
+with that particular value but we know
+this valves
+at self.i we know this is going to be a
+string right so
+and we know that tree nodes have integer
+values so we're going to convert this
+into an
+integer before we pass it in and so this
+node is going to be referred to
+as node one thing i actually almost
+forgot
+if we're create if we're saying that the
+value at this vowels
+is null so we're basically saying we're
+done visiting this right we're returning
+null for this n in our values array so
+before we return we want to make sure
+that we increment i so self.i
+plus one so that next time we go we call
+a function
+that we're at the appropriate value in
+our list of values
+and that's exactly what we're going to
+be doing down here too right so since
+we're already using
+the value at self.i once we create this
+tree node we know we have to increment
+our pointer i so that we can be moving
+on to the next
+value that we need to create a node for
+so i'm going to call depth first search
+remember we don't actually have to pass
+any parameters into this and the return
+value for this is going to be the sub
+tree i created
+for node dot left it could be null
+or it could be something else now after
+calling the step for a search function
+we don't have to increment self.i
+because that's going to be happening
+recursively so
+once this is done we're going to do the
+exact same thing for the right subtree
+so
+uh node.write is also going to be
+basically whatever debt for search
+returns for us
+and once all of that is done we know
+that we can simply return the node the
+root node that we ended up creating
+and then once that's done we've
+basically defined our debt for search
+function so what are we going to do
+we're just going to call that debt for
+search function
+and return the result because for this
+function we're taking in a string of
+data and then converting it into a tree
+and then returning that tree
+this problem is not too bad if you do
+have a pretty good understanding of
+depth first search or pre-order
+traversal or you know just
+general binary tree traversals you could
+do this with breadth-first search if you
+really wanted to it just takes a little
+bit more code but you can see that this
+is a pretty efficient enough solution
+this is about as good as it gets so i
+hope that this was helpful
+if it was please like and subscribe it
+supports the channel a lot and i'll
+hopefully

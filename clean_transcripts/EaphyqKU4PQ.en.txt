@@ -1,0 +1,606 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+let's solve
+network delay time the reason i'm
+solving this problem is because it's a
+rare problem that you actually have to
+use
+ajixtra's however you pronounce that
+name
+this algorithm it's the shortest path
+algorithm
+it's not super common on leak code but i
+think it's a really cool
+problem to solve a cool algorithm to
+implement so obviously this is a graph
+problem we're given
+a network of n nodes labeled from
+1 to n and we're also given a list of
+times the times are going to be our
+edges so
+it's going to be directed edges so a
+time
+is a triple value the first value in
+this triple
+is going to be the source node so for
+example this node 2
+the second node the second value is
+going to be the target
+node for example 1 is this node
+and the reason it's a target is we can
+see that there is an
+outgoing edge going from two to the one
+so every edge is going to be directed
+right we can see there's a directed edge
+there a directed edge here
+the third value and this is also pretty
+important for this algorithm
+is the weight of the edge in the context
+of this problem the one basically just
+means the amount of time
+it's going to take for us to go from
+here to this node right
+but this is the weight of the edge so
+we're given
+a original node k so this is our
+starting point the node k is going to be
+the starting point
+so for example in this problem in this
+origin in this graph
+we're given k equals 2. that means this
+is the starting point
+for us what we want to do in this
+problem
+is starting at two how
+long would it take for us to visit
+every single node basically if we
+if we sent a signal from here in every
+direction so in this direction
+and in this direction how long would it
+take for that signal to reach
+every single node now if it's not
+possible for example
+in this case it is possible but what if
+we had a fifth node over here
+that's just not connected to these four
+nodes over here then it would be
+impossible
+for this node to send a signal here in
+that case
+we're simply going to return negative
+one because it's not possible
+but what about in this problem because
+it is possible
+how long is it going to take that's the
+only question now looking at the picture
+it's pretty obvious
+starting at 2 how long is it going to
+take for this to reach a signal
+it's going to take 1 right because the
+weight of the edge
+is 1. how long is it going to take for
+this node to
+to get the signal also one because
+the the weight of the edge is one so now
+we're over here
+let me just change the color to make it
+a little bit better by the way this was
+the original node how long did it take
+this node to get the signal
+technically zero right because it's the
+one sending the signal
+how long did it take this three to reach
+the signal one
+how long did it take this to reach a
+signal one now we're going to continue
+going
+from this three we know that this one
+doesn't have any more nodes that it can
+send the signal to but this three
+does it has a node over here four right
+now how long is it going to take this
+four to reach the signal
+well the weight of the edge is one so
+does that mean it's going to take
+the for one second or whatever our time
+unit is to reach this
+no because we have to add the one from
+over here right
+remember our signal first started over
+here
+then it traveled over here with one then
+it's going to travel again
+over here with one so in total once we
+have visited this
+node it's going to have taken two units
+of time to reach it
+now after this node reaches gets the
+signal
+that means everybody has gotten the
+signal how long did it take what's the
+largest value we have
+it took this one right this one took two
+seconds or whatever
+so therefore we're going to return two
+because after
+two you know units of time every node
+has received the signal so our output
+value
+in this case is going to be 2. now from
+looking at this example that we ran
+through you might be able to tell that
+jigstr's algorithm is actually a breadth
+first search algorithm
+that i'm going to show you the general
+idea of
+but the one difference about regular
+breadth for searches
+this algorithm actually uses a minimum
+heap
+aka a priority queue so we're going to
+be needing this data structure it's not
+a super common data structure
+but it is it is needed for this graph
+algorithm let me show you the actual
+algorithm after that we're going to jump
+into the code
+so in case you want to google this
+algorithm or do some more research it is
+called
+jigsaw's algorithm it is a shortest path
+graph algorithm
+and it's pretty common you have probably
+learned it in school if you study cs
+and what it does is in this case let's
+say our source or our starting point is
+this node the value one what it does
+is for every other node it basically
+tells you the shortest path right so
+for example three what's the length of
+the shortest path
+to this node well from directly from one
+to three
+it takes one so one is going to be the
+shortest path
+for this node what about this two node
+what's the shortest path to this node
+right
+with this it's pretty obvious because
+there's only one
+way to get here anyway but take a look
+at this node
+there's two different ways to get there
+now this
+is this the shortest path it's the
+obvious path right it's just
+one node away but the edge has a weight
+of four that's a problem because take a
+look at the second path that we can do
+we can go to
+three right over here then we can go to
+the four
+and then we can get to the two right
+that took three
+edges didn't it that took one edge two
+edge
+three edges but when we total these
+values up
+we get a sum of three that means
+this path is actually shorter than the
+path up here so
+it's not always clear right that's why
+we need an algorithm
+and that's exactly what we have we have
+jigsaw's algorithm
+and we're going to be doing a breath
+first search right so starting at this
+node the start node 1 we're only going
+to be possibly visiting nodes that are
+that are right next to our frontier
+right
+depth first search would be we just go
+one direction we just keep going right
+but breadth first search
+is we're gonna do this layer by layer
+right we're going to go to the first
+layer
+the next layer and so on if we had a
+bigger graph right that's how breadth
+first search works
+and every node that is on our
+frontier right so if this is our
+starting point we have two
+options of nodes we can visit this node
+or this node
+these both are going are going to be
+added to our min
+heap and we're only going to visit the
+one with a shorter path
+that does make sense so far doesn't it
+it makes sense that we would want to
+visit
+this node because it has a shorter path
+rather than visiting this node first
+which has a longer path right that makes
+sense so far
+that's why we're using a minimum heap
+minimum heaps can get us the minimum
+value
+pretty efficiently right every time we
+want to get a minimum value from the min
+heap
+it's just a log n operation
+okay so the way we initialize this
+algorithm is we know that we're starting
+here right what we're going to actually
+do
+is add this node to our min heap
+initially right so
+and in our min heap we're going to be
+keeping track of two values
+obviously the path length right because
+we're always going to be popping
+from the min heap based on the minimum
+path right so that's what
+that's like our key value that's what we
+actually care about right that's what's
+going to determine
+which one we pop but we also want to
+keep track of which node it is right so
+initially
+the path to reach uh the initial node
+one
+is zero right because we're that's where
+we're starting so
+it doesn't cost us anything to get there
+and the node itself
+is obviously one so this is how we're
+gonna start then we're gonna pop
+this value it's only one value so far so
+it's it's simple
+of where we're popping right once we pop
+this value
+what's our next step well like i said
+this is a
+breadth first search right so we're
+gonna take a look at the node over here
+it's one we're gonna look at all of its
+neighbors right
+it has two neighbors right we're
+checking that first
+layer this we're going we're going layer
+by layer
+with breadth first search right so this
+is our first layer right
+we're gonna take the first neighbor
+three how long does it take to reach
+three one
+we're not visiting it yet we're simply
+adding it to
+our min heap so the path length is one
+and this is for node three then other
+node that we can reach
+is two the path length is four let's add
+that
+as well four and the node is two
+and since we've already visited the node
+one we can cross it out now
+so now we're popping another value this
+time we have two values so which one are
+we gonna pop well this is a min heap
+right we're gonna pop the value with the
+minimum
+path it's this one right of course
+that's the one with the shortest path
+that's what we're gonna pop
+now so as we pop every element
+we're basically determining the minimum
+path so now we can say for sure that the
+minimum path to reach three
+takes us one right because one was the
+value that we added
+to our min heap and again we're just
+doing a breath first search
+what are all of the nodes that three has
+neighbors with
+it it only has neighbors with one node
+right this four we have a directed edge
+going exactly to four so let's add
+four to our min heap
+so we're adding the node 4 right so
+that's what we're going to put in the
+node position
+what are we going to put in the path
+position are we just going to put
+1 because it only takes 1 for us to get
+there from
+3 that's not actually what we're going
+to put we're going to take
+the total that it took to reach three
+which was
+one and it's taking us another one
+to reach four so we're gonna add the
+total to this right we're not just
+keeping track of the single one
+we're keeping track of the total path it
+takes
+for each node we want to know how long
+it takes to reach node 4
+all the way from our starting position
+we care about the starting position so
+when i put the path value
+of the path length for this node i'm
+going to put a 2 value
+so now we are once again done with this
+node so now again we are going to decide
+which one are we going to pop
+from our min heap we want to pop the
+value with a
+shorter path so we're going to pop this
+one
+so now we're at this node right and how
+many nodes can this node
+reach well it only has a single outgoing
+edge
+to this node 2 right and we see that
+2 has actually already been added to
+our min heap right but the only
+difference is this time
+and i'm running out of space so i'm just
+going to add a little slot is that
+for this 2 it's how long
+first of all how long did it take to
+reach this it took a distance of
+two to reach this four and plus one
+means that to reach this to reach this
+two now it's actually a distance of 3
+which is
+shorter than this one right so now
+we can actually add that same node 2
+to our min heap but this time we're
+going to have
+a distance of 3 which is shorter so we
+visited this node
+and now you can see that we only have
+one node remaining to visit
+good thing for us both of our options in
+the
+min heap lead to that node which one are
+we gonna pick
+it's a min heap so we're gonna pick this
+one 3
+is less than 4 so we're going to pop
+this from our min heap
+so now we finally popped the last node
+it's a path length of
+3 so now that we've reached every single
+node in our array and by the way this
+node does not have any outgoing edges so
+we don't have to do anything more
+and we even though we do have an a value
+left in our min heap
+once we pop it we're going to see that
+it's the same node that we've already
+visited we visited this two node and we
+visited every node now and you can see
+the max
+value that we got in terms of length is
+three
+so three is going to be our output in
+this case it takes
+three units of time or whatever for us
+to start at this
+position and then send a signal to every
+other node
+in the graph so analyzing the time
+complexity of this problem is actually a
+little more difficult than you think so
+i'm going to use
+e to tell us basically the number of
+total edges
+inside of our graph that we're given
+and v for the total number of nodes or
+vertices that we're given
+and just so you know the maximum number
+of edges
+that we could possibly have is about
+proportional to the number
+of nodes squared because like it's just
+kind of how it works so like if we had
+two nodes
+or rather three nodes you know there's
+we could have bi-directional edges
+for every pair of nodes and if you just
+basically this is just something that's
+true and that's what i'm going to assume
+so the max size of our heap could
+actually be
+v squared even though we have let's say
+four
+edges we noticed that some of the uh
+or rather we have four nodes we notice
+that some of the nodes could be added
+into the min heap
+multiple times that's dependent on the
+total number of edges that's why we're
+saying v
+squared is the total number of nodes
+that could be in the heap
+so every heap operation is possibly
+worst case
+log v squared and how many times
+are we going to be doing this operation
+it's going to be e
+times worst case basically the number of
+edges because for every edge
+is how many times we can add values to
+the heap
+right so and this and the way logs work
+logarithms if you take this 2 we can
+actually
+get rid of that too put it over here
+right put the two over here and we know
+how big o
+complexity works we don't care about
+constant values
+so this two actually goes away so the
+overall
+big o time complexity with a
+priority queue for a jigsaw's algorithm
+is going to be e
+log v this is just the general overview
+now let's get into the code
+so we're actually given a list of edges
+and we want to create an adjacency list
+of that first
+for jigsaw's algorithm so the first
+thing i'm going to do is create a
+dictionary or a hashmap of
+edges initially it's just going to be an
+empty list
+so i'm going to go through every edge in
+the input
+so for so for every edge u i'm going to
+get a list of all of its
+uh neighbors right because we know that
+that's pretty useful for a gixxer's
+algorithm we're going to
+basically get every single outgoing
+neighbor so v
+is the neighbor node and w is the weight
+of that node so we're going to add that
+to edges
+list for you so this is just creating an
+adjacency list for us which is going to
+be useful
+now i'm going to create that min heap we
+remember
+we want to just initialize this min heap
+with the first value and the
+weight of it's going to be 0 because we
+know it doesn't cost us anything to get
+there and that
+starting node is given to us as k i'm
+also going to have one more data
+structure it's going to be a set
+basically it's going to keep track of
+all the nodes that we've visited because
+we know we don't want to go
+in a cycle we don't want to go in a loop
+so we do have to
+sort of keep track of that i'm also
+going to have a variable t
+for the result initially it's going to
+be 0 basically the max
+value that we end up getting or the last
+node that we visit
+and the cost or the length to visit that
+note is going to be the value that we
+return
+so now we're just going to continue our
+algorithm while our min heap
+is non-empty we're going to keep popping
+from
+our heap while it's not empty we know
+that there's two values that we added
+the
+weight was the first value the second
+was the actual node itself so we're
+going to say
+keep q dot heap pop
+from our min heap this is basically how
+you do it in python it's
+pretty easy in python that's what i like
+and
+like i said we don't want to visit a
+node multiple times so if we see that
+this node
+n1 is in visit meaning it's already been
+visited then we're just going to
+continue to the next
+iteration of the loop we don't want to
+go through all of this node's neighbors
+if it's already been visited otherwise
+what we're going to do is
+add it to visit so that we don't visit
+it again and we're also going to update
+our result
+t so we're going to set it to the max of
+what it already is
+and the max of the weight that we just
+got the weight is remember the time it
+takes to reach
+this node so we're going to update that
+now we're going to do the breath first
+search
+portion of it so we're going to go
+through all the neighbors
+of this node so the no the neighbor and
+the neighbor's
+weight so i'm just going to call that n2
+and w2 because i'm bad at naming
+these so in edges basically neighbors
+of this n1 original node that we just
+popped from
+our min heap we're going to go through
+it and for all of the neighbors that
+haven't already been visited so if
+n2 is not in visit it's it has not been
+visited yet
+then we're going to add it to our min
+heap so heap q dot
+heap push on to our min heap
+is going to be this node n2
+but remember the first value we're
+adding is the weight so
+weight 2 but remember this weight
+is just this weight 2 is just the weight
+that it takes
+for one edge but we want to keep track
+of the total
+uh path length to reach this node so
+we're actually going to add that
+w1 the first weight to it
+as well so w1 plus w2
+the total path that it takes to reach n2
+i know that this algorithm is actually
+pretty complicated
+it's not a lot of code it's about 20
+lines but it's actually
+you know it does take some practice to
+get used to it after you've written it a
+few times you do kind of understand the
+subtleties of it
+it's pretty easy to go wrong with this
+algorithm but we've basically
+written the entire thing so now we can
+return
+t after this loop is done executing
+after the min heap is empty
+our t should give us the uh basically
+what it takes to reach every single node
+if it's possible right remember if it's
+possible
+and we know that it's possible basically
+we've visited
+every single node if the length of visit
+is equal
+to our input value n which tells us the
+total number of nodes if we visited
+every node then we can return
+t remember the other condition was if we
+can't visit every single node
+we return negative one and that is the
+entire algorithm remember the overall
+time complexity is big
+o the total number of edges multiplied
+by log the total number of vertices
+so this was a pretty long one it was
+pretty difficult i actually had a lot of
+bugs when i was writing my code for this
+video
+and i hope that this came across pretty
+clear
+if this was helpful please like and
+subscribe it supports the channel a lot
+and i'll hopefully

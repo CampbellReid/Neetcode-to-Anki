@@ -1,0 +1,409 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+let's solve the problem combination sum
+2 this is actually my second time making
+a solution for this one cuz I think I
+could do a little bit better than the
+first time I explained this one so
+before we start I want to mention that
+this is part two of the combination some
+series I would definitely watch part one
+of this I have a very good video on this
+you can also check it on N code iio if
+you want to search for it this problem
+and combination someone are a part of
+the neat code 150 list which is a very
+good list of problems to understand and
+actually there's another problem that
+will help you understand the trick
+behind this problem it's actually an
+array problem it's called threesome
+that's also a part of the N code 150
+list and it's beneficial to know for
+this problem because we kind of
+eliminate duplicate Solutions pretty
+much the same way except we do so
+recursively in this problem so let's get
+into it the idea is we're given a list
+of numbers and we want to find all
+combinations from this set of numbers
+that sum up to so similar to the first
+question so one way would be 116 we get
+this one we get this six and we get this
+one they sum up to eight another one
+would be 17 you could choose this one
+and this one but couldn't we make up 17
+multiple ways couldn't we also have
+chosen the second one over here and the
+Seven well technically they count as the
+same combination so we don't want
+duplicate combinations in the solution
+set and another difference between this
+problem and the first combination sum is
+that we cannot use the same number in
+unlimited amount of time so we can't
+just take the one and reuse it eight
+times to sum up to the Target we could
+though use the same element multiple
+times if it shows up multiple times in
+the input we have two occurrences of one
+so that's the max number of times that
+we can use the number one in a solution
+so that's what makes this a little bit
+tricky in the first combination sum we
+were given a distinct set of numbers and
+we could reuse the same number an
+unlimited amount of times so in the
+first problem we had the input and we
+were able to solve it very simply with
+recursion for a given element either you
+include it or you skip it so we would
+have had 10 or we would have skipped 10
+and then from here we would have chosen
+from the next element we can either
+include one or we can skip one from this
+side though we're not quite at one yet
+we can actually choose to continue
+including 10 we can have multiple
+occurrences of 10 or we could have
+skipped it and in that case from here we
+would have started choosing from one so
+here we could have chosen uh one or we
+could have skipped one and so that was a
+very simple two Branch recursion but we
+can't apply the same here and the reason
+for that is at some point with this
+example we might include one and then
+eventually we might get to seven and
+then we might include seven as well if
+we were to have skipped this one we
+could have gone down this path we could
+have included the seven and then we
+could have included the one that came
+after it and we would have ended up with
+duplicate combinations so we want to
+avoid this case and we can believe it or
+not still do so with two Branch
+recursion it's going to be similar to
+how we eliminate duplicates in threesome
+so this is the trick behind eliminating
+duplicates the issue here is that when
+we choose to include one or choose to
+skip one we don't want to end up with
+another one on the same path where we
+decided to skip one so how can we make
+it so that we never see another one
+again if we decided to skip it well this
+is the trick first you take the input
+array and you sort it so I'm going to
+redraw this in sorted order now it's
+sorted why did I put it in sorted order
+because I want all duplicate elements to
+be adjacent it's not necessarily
+important that we go through the
+elements in sorted order that's actually
+not important because all of these are
+going to be positive anyway so they're
+always going to contribute to the Target
+we're never going to deal with negative
+numbers so it doesn't matter so much the
+order that we go through them but it
+does matter that we group similar
+elements together so now I'm actually
+able to make the choice I'm going to say
+okay either I include one in my solution
+set so this brand brch is going to
+include all possible combinations that
+include one or have multiple occurrences
+of one up to two in this example or I'm
+going to decide to skip one on this side
+but when we are choosing from an element
+we're going to obviously have some kind
+of pointer that tells us the current
+position that we're at let's call that I
+so here I'm choosing between this
+element I can include it and if I
+include it here I definitely need to
+shift my pointer because I'm not allowed
+to reuse that same element multiple
+times so I do have to shift the pointer
+here so it's going to be shifted but
+what about this case where I decided I
+want to skip one well if I shift it by
+one and it lands over here I'm still
+able to choose from one but I wanted to
+skip it all together so this is where
+we're going to use something called a
+loop I'm going to use a while loop and
+what we're going to say is don't just
+shift I by 1 keep shifting it while the
+element at I is equal to its neighbor so
+while these two are equal shift I so
+right now I is going to be shifted over
+here and right now this value is not
+equal to its next neighbor so now this
+is where I is going to land and when we
+actually make the recursive call we're
+always going to be passing in I + 1 into
+the recursive call so we don't really
+have to shift it again here so it's
+already going to be passed in uh when we
+do it recursively so that'll probably
+make more sense when we get to the code
+but keep in mind that just because we
+have a loop in the recursive solution
+doesn't mean we're going to be
+recursively calling the function
+multiple times we're still only doing
+two Branch recursion so with this I'll
+kind of run through the quick simulation
+here and then we'll get into the code
+the code is going to be very similar to
+combination some one just the fact that
+we're sorting the input this time and
+that we're going to have a loop inside
+of our recursive function so here we can
+continue to include one we're at the
+second one so here we could have
+included it we would have gotten that
+one one or we could have skipped it in
+which case we're over here so we would
+have you know still have been here but
+just keep in mind that I'm not drawing
+exactly where the pointer happens to be
+um here we could like go through all
+combinations obviously that's going to
+be a very large tree but just trust me
+when I say that eventually we could have
+skipped two we could have skipped five
+and we could have gotten to six and in
+that case this would have been one valid
+combination where we get 11 six so
+that's going to be valid now another
+base case could have been where we have
+gotten to like 1 1 7 clearly in this
+case we went over the target the target
+should be eight but when you sum all of
+these together we're going to get nine
+so at that point we can actually stop
+our recursion cuz we know all elements
+in the input are positive so we're never
+going to get a lower sum if our sum is
+nine now but we're looking for a sum of
+eight well we're never going to get
+there at this point that's another base
+case now from here you could imagine
+that we would have skipped everything in
+between here and we would have gotten to
+seven in that case we would have gotten
+1 7 that's another a valid combination
+and I won't draw all of them out but
+here we could have gotten to 1 2 five
+that's another valid one in the case
+where we skip one we could have chosen
+two and then eventually chosen six so
+that would have been another valid one
+these are all the valid ones I didn't
+draw out the entire recursion tree I
+would encourage you to do that as an
+exercise though I do think it'll help
+you understand it and it might be easier
+to kind of do the drawing after after
+you look at the code so maybe that'll
+help you out keep in mind the overall
+time complexity of this is going to be
+similar to combination some one even
+though we're doing sorting and log in
+that's not going to be the bottleneck
+the bottleneck is going to be the fact
+that we have up to two branches at every
+single step assuming that every number
+would be distinct in the input we'll
+have two branches so the overall time
+complexity is going to be something like
+2 the^ of n that's how many different
+combinations we could have ended up with
+when we add these to the result we are
+going to create a copy of every single
+array so I think in the worst case the
+time complexity would be n * 2 ^ of n so
+not very efficient but given that this
+is a combination problem there's no way
+around that like the size of the
+solution in the worst case is going to
+be n 2 the Power of n so there's no like
+shortcut in terms of time for us to
+achieve the correct solution in this
+case so you can't really apply dynamic
+programming to this it's not going to
+help you out in terms of the space if
+you don't count the output as extra
+space the over all memory is going to be
+Big O of n for an individual combination
+or for like the size of the recursive
+call stack so I'm going to declare the
+result it's going to be an array of the
+combinations we know that that's what
+we're ultimately going to return down
+here so I'm just going to put that there
+now we are going to have a recursive
+function you could call it DFS or
+backtrack I guess I'll call it DFS it
+doesn't really matter we know that
+there's a few things we're going to have
+to keep track of one the current
+position that we're at in the candidates
+array two is the current combination
+I'll just call that curve for short so
+those are the elements in our current
+combination and the third variable is
+going to be the sum or the total of
+those current elements so that we can
+compare once the total has reached the
+target amount or the total has exceeded
+the target amount so before you even get
+into this recursion remember that our
+solution only is going to eliminate
+duplicates if we sort the input array
+that's the easiest way to do it so make
+sure to call sort on the input array in
+your language of choice it's pretty easy
+in Python so I would highly recommend
+using python I have a couple good
+courses for that python for beginners
+and python for coding interviews now
+let's start with the base cases they're
+pretty simple one we either reach the
+target amount total is equal to the
+Target amount two is the total exceeds
+the target amount there's actually one
+more base case though and that's what
+what if we run out of candidates that
+would mean our ey pointer is out of
+bounds so either this is true or I is
+greater than or equal to candidates and
+it will usually just be equal to the
+length of candidates so we can just put
+that there so these are the two base
+cases the second one is simple that's
+when we just return we do not have a
+valid combination and we never will at
+this point this is where we do have a
+valid combination so what do we do well
+clearly we have to update the result so
+I'm going to say result. pen to it not
+just the current combination cuz that's
+going to be a variable that we're
+passing around by reference so we want
+to actually create a copy of this one
+way to do that in Python is like this do
+copy again python is such a readable
+language such an easy language to use
+isn't it now don't forget within this
+base case to return I mean I guess if
+you didn't have the return it probably
+wouldn't hurt but given that all
+elements in candidates are positive if
+we've reached the total sum everything
+after this is just going to increase
+that so might as well just put the
+return here early now for the recursive
+case and this is probably going to be
+the complicated part so let me go a
+little bit slow one is where we include
+the element at indexi let's call that
+candidates at indexi and the other is
+where we skip candidates at index I so
+this first case is pretty simple it's
+similar to combination some one what
+we're going to do is update our current
+elements we're going to include the
+element at index I and then we're going
+to run DFS now for the index we're not
+going to pass index I because that would
+mean we're able to reuse the element at
+index I but in this problem we're not
+allowed to reuse the same element so we
+have to put a plus one here we cannot
+reuse candidates at indexi second we're
+going to pass in the current combination
+that's pretty straightforward and third
+we're going to pass in the new Total the
+total is just going to be the previous
+total plus this element whatever this
+element contributed to the total there
+you go now after we're done with this
+recursive call we're going to have to
+undo the work that we just did and
+that's pretty much as simple as removing
+the element that we just appended to the
+current so we can say current. pop
+because of course in the next case we
+want to skip that element so we have to
+remove it from the current set of
+elements now the next part I wish it was
+as easy as doing this as easy as just
+calling DFS on I +1
+with the current combination with the
+previous total since we're skipping the
+element there's no need to update the
+total I wish it was this simple but it's
+not we require two more lines of code
+and that is the loop that I was talking
+about we want to say while the candidate
+is at index I is equal to the candidate
+at index I + 1 while that's the case
+increment the pointer because I don't
+want to use use the element at index I
+and I don't want to use any duplicates
+of that element either I want to skip
+this element all together and the way to
+do that is with this Loop like I showed
+you the example where we had multiple
+ones where we had one one and then we
+had a two after it but it could have
+been the case that we had more than that
+we could have had like four ones or five
+ones so we already recursively did the
+path where we include one or more ones
+now I want to do the path where we skip
+all of these ones so that's why we need
+the loop don't just skip this one skip
+this this this this and this so that we
+have a fresh choice to make there's one
+issue with this what if we had an array
+like this well I is always going to be
+equal to the next element and then we're
+going to end up with a comparison where
+we compare this to the next element but
+it doesn't exist make sure you have this
+I + 1 is inbounds so that we don't get
+an index out of bounds error when we
+execute this part so that's very
+important now this is the entire code
+well I guess there's one thing that
+we're missing if you're smart you'll be
+able to notice it we defined our DFS
+function but we never called it so let
+me do that down here DFS what do you
+think the parameters are going to be
+well we're going to start at index zero
+let's put that the current combination
+initially is going to be empty so we can
+have an empty array here and lastly our
+total sum initially is just going to be
+zero so let me put a zero there after we
+call this function our result should be
+updated and then we can and return the
+final result so let me execute this and
+as you can see here it works it is
+efficient even though these run times
+are pretty random maybe there are some
+hacky ways that we can improve the
+execution time but in terms of Big O
+complexity this is the final solution it
+is the most optimal if you found this
+helpful check out n code. for a very
+comprehensive road map and for a bunch
+of courses that will make your life a
+lot easier thanks for watching and I'll

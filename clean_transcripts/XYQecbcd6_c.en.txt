@@ -1,0 +1,212 @@
+hey everyone let's solve another classic
+leak code problem today longest
+palindromic substring
+so we're given a string in this case
+b-a-b-a-d
+and we want to return the longest
+palindromic substring that exists
+inside of here in this case there's
+actually two
+b a b as well as a b
+a so we could return either of these and
+that would be perfectly fine
+now what actually is a palindromic
+substring in the first place
+basically it means that you know you
+take b
+a b if we wrote that in the reverse
+order which would be
+you know b a b it's the exact same
+string
+so like i usually do let's say you just
+don't know how to solve
+the problem well what's the most brute
+force way you could do it
+well you could say i'm just going to
+check every single substring
+in this original string and check if
+it's a palindrome and get the longest
+one
+starting at b so i would check this i
+could check this
+i could check this this
+and this right so every substring
+containing this
+original b and i want to check for each
+of these
+is it a palindrome or not and i would
+repeat
+that process with every character right
+so for this a
+i'd get every substring
+and basically keep doing that now the
+question is
+for a string for example b a b
+how what's the time complexity to even
+check if it's a palindrome well we'd
+have to scan
+through the entire string right so for
+any given sub string
+to check if it's a palindrome it's going
+to take
+linear time complexity so let's say
+n right now how many sub strings
+do we actually have to check
+n squared because we're checking every
+single substring containing every single
+character
+so to check if a string is a palindrome
+we have to do
+we have to do a linear scan and we have
+to do that for every single substring
+so then that's going to mean that the
+overall time complexity of this brute
+force approach is going to be big
+o n cubed so the question is how can we
+do
+better well it it actually involves
+understanding how to actually
+check if a substring is a palindrome or
+not
+for again let's look at bab we can check
+if it's a palindrome
+by starting at the outside and comparing
+these characters
+and as long as they're equal we'll keep
+going until we get to the middle
+and then we'll check and then we'll know
+okay it's a palindrome but we could also
+do it another way
+we could start at the middle and then
+expand outwards
+and and check if it's a palindrome that
+way so
+which one of these is going to help us
+more well let's think about this
+let's say i wanted to know for this b
+what's the longest palindrome where this
+b is the center of the palindrome
+well there's no character to the left of
+it so it's just going to be this
+character
+this or this b itself right so it's just
+one
+what about this a well let's let's start
+expanding there is a character to the
+left and there is a character to the
+right and they happen to be equal
+so the longest palindrome with this a at
+the center
+is going to be a length 3 and it's going
+to be
+b a b notice how if we do it this way
+for each character we're going to
+consider it the center and we're going
+we're going to take each character so
+that's going to be n and to expand
+outwards for each character it's going
+to be n again
+so for this way the overall time
+complexity
+is going to be o of n squared so that's
+kind of
+clever right like a little a subtle
+difference of how we check if it's a
+palindrome
+can really improve the time complexity
+but hold on
+there's one edge case that we're missing
+when we take
+one character and expand outwards from
+it like for this b
+we're getting palindromes that are of
+odd
+lengths they've conveniently shown us
+this example
+where the longest palindrome is actually
+even so how are we going to check
+even palindromes well that's just a
+slight edge case
+that we can easily add to our solution
+so we just have to remember to handle
+this edge case when we're implementing
+our code
+okay so let's get to everybody's
+favorite part the code
+so i'm gonna initialize the result as an
+empty string because you know that's
+just a good default case
+we'll get the the longest length
+initially set to zero
+now we're gonna go through every single
+character or
+rather every single position in this
+string
+considering it to be the center so first
+let's check
+so i'm going to have a left and right
+pointer these left and right pointers
+are going to be initialized
+to i which is our center position
+right now while my left and right
+inbound
+as well as while this is a palindrome so
+i want to check that the left and right
+are equal to each other
+remember we're starting in the middle
+so while this is the case we know it's a
+palindrome so we can potentially
+update our result so we'll check that
+the length of this palindrome which we
+can
+compute by saying right minus left
+plus one is greater
+than our current result length
+and we also have to not forget to update
+the result length i usually forget to do
+this
+and let's also not forget to expand our
+pointers outward so our left pointer
+will be shifted to the left
+our right corner will be shifted to the
+right so now let's check the even
+length palindromes as well
+right now you can handle this a bunch of
+different ways the way i'm going to do
+it is
+setting the left pointer to
+i and setting the right pointer to i
+plus one so again we're basically copy
+and pasting the code that we just wrote
+above
+maybe we could write a function to do
+this but that's
+so while it's a palindrome again we'll
+check that
+the length is we'll check that it's the
+longest palindrome that we've seen so
+far basically
+and again we can expand our pointers
+outward
+and at the end all we have to do is
+return
+our result so i kind of made it look
+easy
+uh with the code but don't let it fool
+you it took me a while to write this
+before i started recording this
+um there's a lot of like edge cases that
+can be kind of annoying
+with this problem i think for me putting
+the if statement
+uh checking that it's the longest
+palindrome inside of the while loop
+helped i think if you put this outside
+the while loop it kind of makes it
+harder
+but i hope this at least gave you a
+little bit of the intuition behind the
+problem
+writing the code is not always easy but
+if this was helpful
+leave a like and subscribe and thank you

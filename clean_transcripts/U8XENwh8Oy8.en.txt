@@ -1,0 +1,305 @@
+okay let's solve leak code 33 search and
+rotated sorted array
+so we're basically given an array that
+was originally sorted like this one but
+it then it became rotated like this one
+and by rotated they mean that they took
+a certain pivot or index of the array
+like right over here and then they cut
+it in half and then swap through the
+portions right so you can basically
+think of this right-hand portion being
+swapped over to the left side over here
+right that's what happened as you can
+see here right these two halves were put
+in the opposites position and we're also
+given a target value in this example
+target zero and we want to check if our
+array contains this value if it does we
+return the index if it doesn't we return
+negative one the most straightforward
+way to approach this problem is
+literally just check every single value
+is this our target is this our target
+and eventually we get here this is our
+target and then we return the index for
+now this is just too trivial of a
+solution right the time complexity isn't
+bad it's o of n but can we do better in
+this problem they literally tell us to
+find a solution and that's of log n so
+obviously we can and basically anytime
+you're looking for a solution that's log
+N or better than linear almost every
+time you're going to be looking for a
+binary search type solution so since
+this array was originally rotated can we
+use that to our advantage to potentially
+find a binary search type solution for
+this problem let's try to analyze it and
+see what we can find so given that the
+original array was sorted if we wanted
+to represent that as a graph we would
+basically have a continuously increasing
+line it might not necessarily be linear
+but it would always be increasing right
+and then we took some pivot like over
+here and then swapped these halves
+around right so let's draw what that
+would look like so let's say the left
+side was exclusively greater than the
+right side because that's what it means
+so I think this is a pretty good way to
+visualize the problem to kind of
+understand what it would look like and
+you can use this to your advantage to
+find potential patterns that can help us
+find a binary search solution so with a
+problem like this you really have to
+break it down into discrete cases and
+then use those cases to form a solution
+so the most obvious thing is that there
+are two portions of the array right
+there's a left portion and a right
+portion both independently are sorted
+right so it's like we have two halves
+that are sorted and so we know that a
+binary search usually has three pointers
+a left pointer a middle pointer and a
+right pointer the left is always going
+to be less than or equal to the right
+this is just something you kind of know
+from binary search so let's say our
+middle value was six at some point right
+this means that we're in the left sorted
+portion of the array so can we use that
+to our advantage so let's say our target
+was greater than six in that case we
+know for sure since we're in the left
+sorted portion of the array none of
+these values are greater than six so we
+can basically say these are eliminated
+let's run binary search on this portion
+now right so that's pretty easy if we
+know that we're in the left sorted
+portion and our target is greater than
+the middle this is what we can do
+what if our target is less than the
+middle value so what if our target was
+less than six well these two numbers are
+less than six and these three numbers
+are less than six so how do we know
+which way to go do we go left or do we
+go right because we can't go both
+directions in a binary search the key is
+to see that in our left sorted portion
+the smallest value is right here right
+or on our graph it's right here
+so if our target is even smaller than
+this left value for in that case we know
+that we don't have to search for we
+don't have to search five we don't have
+to search six week
+binarysearch over here but if our value
+is greater than or equal to four then
+that means we're gonna run binary search
+on this on these two values right it's
+less than six but it's greater than or
+equal to four so we can run binary
+search on these two values we can
+eliminate all of these from
+consideration so all of that is if we
+were in the left sorted portion of the
+array right now what happens if we're in
+the right sorted portion of the array
+let's say our middle was one and let's
+say we knew somehow that we were in the
+right sorted portion of the array what
+if our target was less than one well
+then we know we have to search the left
+the only value less than one is right
+here so we're gonna search the left
+portion of this array we're not gonna
+look at one we're not gonna look at two
+anymore any value to the right of one is
+greater than one so we don't have to
+look at them we're just gonna run binary
+search on these elements we don't
+necessarily have to know where the pivot
+even is we just know we have to go left
+but what if our target was greater than
+one well then our solution could
+possibly be two it could also be any of
+these four values so then where do we go
+again we can use this rightmost value or
+the edge basically of our right to our
+advantage
+so if our target is greater than one and
+it's also greater than two that means we
+can again search this left portion we
+can eliminate these two from
+consideration but what if the opposite
+is true
+what if our target is greater than one
+but it's less than or equal to two in
+that case we only have to run binary
+search on the right portion of one every
+value to the right of one meaning we can
+eliminate all of these from
+consideration so that was a lot of
+discrete cases and it might be confusing
+I think it'll be a little easier to
+understand once we actually write the
+code but I think it's also
+important to visualize it and actually
+understand what's going on before you
+even write a single line of code and
+knowing what we just learned let's just
+go through this example of the target
+equal to zero and given this input array
+so initially our left pointer would be
+here our right pointer would be here our
+middle would be here so how do we even
+know if we're in the left sorted portion
+or the right sorted portion
+well the way I check is just if our
+middle value is greater than or equal to
+our left the actual value at that index
+if this is true then that means our
+middle value belongs to the left sorted
+portion if this wasn't true that means
+our middle values in the right sorted
+portion and we would write our if
+statements accordingly but knowing that
+we are in this left sorted portion right
+let's run through it so our target is
+zero that means our target is less than
+seven so our target is less than seven
+that means we could be looking here or
+we could be looking here so let's
+compare it to four now is our target
+less than the leftmost value well zero
+is less than four okay so that means
+we're all good we just have to search
+every value to the right of our middle
+value so we can eliminate all of these
+we can cross out our middle and left our
+new left is going to be here and our new
+middle is going to be here now in this
+case are we in the left sorted portion
+or the right sorted portion well among
+these three values the entire array is
+pretty much sorted so according to our
+thing according to our if statements
+were basically going to say that middle
+belongs to the left sorted portion
+because the entire thing is sorted so
+now we compare middle to target well our
+target is less than one so now we have
+to go left and if we compared it to the
+leftmost value zero
+our target is greater than or equal to
+not so we don't have to check anywhere
+else we only have to go left so we can
+eliminate these two from consideration
+and we're left with one value over here
+and that's our solution so
+this is kind of a visualization for it
+now let's actually look at the code to
+better understand what these cases are
+going to look like okay so when you're
+doing binary search first thing you do
+is initialize your pointer so we have a
+left and we have a right left is going
+to be 0 right is going to be the length
+of the array minus 1 our condition is
+while left is less than or equal to
+right because imagine we're given an
+array like this with just one value
+let's say it had one left and right
+would be equal in that case and we still
+have to check that one value so now we
+can compute the middle value middle is
+just going to be left + right / to the
+average of them and it's possible to the
+middle value could be the target if it
+is we simply return the index if that's
+not the case then we need to check which
+portion of the array are we in are we in
+the left sorted portion and like I
+mentioned before we can check that if
+the middle value is greater than the
+left value well greater than or equal
+right because it's possible that the
+middle value in the left value could be
+the same value the else condition would
+be that we're in the right sorted
+portion so the simplest case is that our
+target is greater than the middle value
+in that case we're going to search right
+so we can say our left pointer is now
+going to be mid plus 1 so if the target
+is actually less than the middle then we
+need to do something else so if the
+target is less than the middle but it's
+also less than the left most value in
+nums then we also have to search the
+right portion so we're gonna do left is
+mid plus 1 now notice how these two
+cases are evaluating to the same thing
+that means we can condense them we can
+get rid of this and say instead if the
+top if target is greater than the middle
+or
+if the target is less than the left-most
+value then we have to search the right
+portion so we can get rid of this and if
+this isn't true that means the target is
+less than the middle but it's greater
+than the left that means we search the
+left portions so we can update our right
+pointer
+I had a typo over here we don't we're
+not calling it left we're just calling
+it L for short and so this is if we were
+in the right sorted portion of the array
+the easy thing is if target is less than
+the middle that means we go left so we
+can update our right pointer to mid
+minus one so if this isn't true meaning
+target is greater than middle and the
+target is greater than the rightmost
+value that means we have to go left as
+well so write equals mid minus one
+notice again how these two are doing the
+exact same thing so we can condense them
+we can say at the top if the target is
+less than the middle or if target is
+greater than the rightmost value then
+we're going to search the left portion
+so we update our right pointer so we get
+rid of this and the else condition is
+that the target is greater than the
+middle value and the target is less than
+the right value in that case we only
+have to search the right portion of the
+array so we update our left pointer to
+mid plus one these are all of the cases
+right so if we find our result we're
+going to return it up here but if we
+don't find it we'll exit the loop and
+we'll return negative one and just as I
+expected because I just finished this
+problem like a half hour ago it worked
+perfectly so this is not an easy problem
+the code looks pretty easy but you
+really have to understand the discrete
+cases like are we in the left sorted
+portion or the right sorted portion and
+then what's going to happen as a result
+which part of the array do we have to
+check based on the
+Harrison conditions you really want to
+dry it out and kind of look at the
+picture before you write the code I hope
+this was helpful if it was leave a like

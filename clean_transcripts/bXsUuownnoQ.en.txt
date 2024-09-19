@@ -1,0 +1,450 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+let's solve a problem
+graph valid tree so this is another leak
+code premium problem so we are going to
+be solving it
+on lint code because it's free on that
+website so we are going to be leveraging
+that
+and also this is another problem from
+the blind 75
+list so this is graph valid tree so we
+are going to be filling in one more
+problem from that blind 75 list today
+so this is a graph problem we are given
+n
+input nodes labeled from zero to n
+minus one and we're given a list of
+undirected edges the undirected means
+that the edges will go both ways so you
+know we have
+a couple nodes like this so the edge
+could go in either direction
+and we just want to write a function to
+check whether these edges and nodes
+create
+a valid tree or not so we know it's
+going to be some kind of graph right
+it could the graph could look something
+like this right we don't care
+too much about the values here but let's
+say this was the shape of a graph
+does this count as a tree well yeah this
+is a pretty familiar looking tree right
+so we would say yes this
+is a tree but if i add one more edge
+like
+this one is this a tree it's not
+a tree and the reason being is because
+we have a
+loop inside of this graph trees are not
+allowed to have loops that's just
+something that you you know you just
+have to kind of know the definition of
+because in this problem they don't tell
+you what exactly is the definition
+of a valid tree so we know trees can't
+have
+loops and there's one more condition for
+it to be a tree a tree
+needs to be connected so for example if
+i had a graph that looks like
+this this is not a tree because
+every node is not connected right like
+this node over here is just by itself
+it's not connected with the rest of the
+nodes
+so for it to be a valid tree we can't
+have
+loops and every node needs to be
+connected
+so simply we can take our input nodes
+and our edges
+and then check are they connected and do
+they
+not have a loop and to be able to do
+that so
+you can see the format that we're given
+our edges in but
+we want to use these using these edges
+create an adjacency list so basically
+for each node for example you know one
+we want to know what neighbors does one
+have in this example
+one only has a single neighbor right and
+that's zero
+what neighbors does two have in this
+case two has a single neighbor and it's
+zero that's basically what we wanna do
+we wanna create a list
+of neighbors for every single input node
+and once we get that it'll be easy to
+traverse the graph and then we can
+perform our check to make sure that it
+is a tree
+so let's say we were given a graph like
+this is this a valid tree well just by
+looking at it we can tell
+yes that it is but what kind of
+algorithm can we do to determine that
+well let's start at any node in this
+graph we're always just going to choose
+node 0 because it's you know the
+smallest value every single graph is
+going to have at least a node 0 if we
+don't even have node 0 like if we if the
+number of nodes
+if we don't have any nodes at all then
+we can return true basically an
+empty graph does count as a tree
+technically
+but so in this case we don't have an
+empty graph so we're going to start at
+node
+0. what are we going to check basically
+we're going to do a standard
+graph traversal you could do breadth
+first search but i'm going to do
+depth first search and so for every
+single node we're basically going to go
+on and visit its neighbors recursively
+and then
+continue to do that until we visited
+every single node that's connected
+to the zero node at the end what we're
+going to do is
+take the number of input nodes that we
+were given in this case it's 5
+and then we're going to check if the
+number of visited nodes
+matches if the number of visited nodes
+matches the input value for nodes that
+means that
+every every node inside the graph is
+connected right that's one of the things
+we're looking for is
+is the graph connected if the number of
+nodes we visit
+matches the number of nodes given to us
+we can guarantee that that graph
+is connected the other thing we're going
+to check for is to make sure that this
+graph
+does not contain any cycles or loops
+if we ever encounter a cycle like for
+example you know we have an edge like
+this
+if we went here we went here we weren't
+here and then we got back to zero
+that counts as a cycle then we would
+have to return false immediately but if
+we don't reach a cycle
+and this condition ends up being true
+then we're going to return true
+so since we start at 0 what we're going
+to do is to
+our set of visited nodes it's going to
+be a hash set because that's the most
+efficient way to do
+it so we're going to add that node 0
+because 0
+has been visited so then we're going to
+recursively go to
+its first neighbor 1 so now we're going
+to be at 1 right and from from the
+perspective of 0
+we're gonna visit one after we're done
+with that we're gonna visit two then
+we're gonna visit three bills first
+we're gonna start at one so now we're at
+one right
+we're gonna go ahead and add one to the
+visit set
+and we notice one has two neighbors
+right
+it has a neighbor 0 and it also has a
+neighbor
+4. now one problem with our algorithm is
+for every node including 1 we're always
+going to want to visit
+every single neighbor it has we know
+that the neighbor
+zero has already been visited right so
+if we end up going
+back here we're gonna see okay we're
+visiting zero again
+zero happens to be in our visit set so
+that means we detected a loop
+but technically this graph does not have
+a
+loop so how can we get around this edge
+case if
+every time we visit a node like one
+we're going to end up going
+back to where we came from and that's
+always going to give us a false
+positive of detecting a loop it's going
+to be a false positive for a loop
+how can we get rid of that well every
+time we visit a node such
+as 1 what we're going to give it is one
+additional value
+and that's going to be previous previous
+is gonna be what the
+previous node we just visited was
+so when we get to one we're gonna say
+the previous node that we
+visited was zero so we're not gonna go
+back
+to zero from this position if there
+happened
+to be another way back to zero for
+example let's say four
+ended up connecting to zero then we
+would detect a loop right
+but one if we ever got to four we would
+say okay the previous value
+from four will happen to be one right so
+this four
+came from one so so we won't get any
+false positives if we do it like this
+so from one the only node we're gonna
+visit is gonna be
+the neighbor four so yes we're gonna go
+to four now and we're gonna see okay is
+4
+already visited it's not so let's add it
+to the visit set so
+4 is going to be added as a node that's
+been visited
+now we know the previous node from 4
+happened to be 1 right so we're never
+going to go back directly to 1
+we're going to skip that and we're going
+to check does 4 have any other neighbors
+it does not
+so this is going to be our base case for
+our debt for search we're going to
+return
+true because so far we have not
+encountered a loop so we can return true
+if we did encounter a loop then we would
+have to return false but so far we're
+good we're gonna return
+and then we're gonna get to one and from
+one we have no more neighbors left to
+visit either so then we're gonna return
+back to zero and by the way what kind of
+previous value would we
+feed into zero because it's going to be
+the first value we end up
+it's going to be the first node that we
+end up visiting so we can give it a
+default previous value of negative one
+because we know that no nodes in the
+graph are actually going to have a value
+of negative one because they start at
+zero
+so now let's go to the next neighbor of
+zero we'll go down to two
+okay check has two been visited it
+hasn't so let's add it to our visit set
+two is being added
+now two does not have any additional
+neighbors it only has that neighbor that
+it came from
+node zero so we're we're not going to
+keep going and then we're gonna go to
+the last neighbor of zero we're gonna go
+down to
+three and once again check has three
+been visited it hasn't
+so then we're gonna add three to the
+visit set then we're gonna go back to
+zero
+and then zero does not have any
+additional neighbors so now we're done
+we didn't detect a loop so that's good
+but let's make sure that the graph
+is connected it does the so the number
+of input nodes we were given is always
+going to be given as a parameter it was
+n
+equals five now let's check the length
+of this visit set
+because that tells us how many nodes are
+connected and it happens to exactly be
+five right so in this case we are going
+to end up returning true
+now if i change the graph let's say this
+edge did not exist
+of course then we would not have visited
+this three node
+then you know the length of our set
+would have been four but the
+n value was five so does n equal four
+the size of our visit set no
+that does not match right so therefore
+in this case we would have to return
+false we didn't detect a loop but
+the graph is not connected so we have to
+return false because it's not a valid
+tree
+and similarly let's say we had an
+additional node from
+four to zero then in our debt for search
+what we would have done
+is okay we have gone to zero and then
+we're visiting zero so we check
+is zero already in our visit set yes it
+is zero is right here so that means
+we're visiting
+it twice that means we detected a loop
+that means we return false
+immediately so that's the main idea of
+this algorithm
+now the time complexity since we're only
+you know having to traverse each node
+once at most once and each edge at most
+once
+the overall time complexity is going to
+be number of edges
+plus the number of vertices or nodes so
+just e
+plus v and that's also going to
+basically be the memory complexity as
+well
+because this is we're going to be doing
+this recursively
+and we're also going to be needing to
+create an adjacency list
+of connecting every single node to all
+of its neighbors
+and i think it'll be if it's not super
+clear right now i think it'll be pretty
+clear once i show you the code it's not
+too bad let's get into it
+so one base case is if we aren't given
+any nodes at all so if n was zero so
+in that case we would return true
+there's no graph to traverse
+but an empty graph does technically
+count
+as a tree and if
+we do have some nodes then we're going
+to create an adjacency list so
+what i'm going to do isn't first of all
+for every single node
+in our input so basically n is the
+number of nodes
+so for i in range n i'm going to create
+a pair
+in our hash map and each pair is going
+to be
+the value of that node and an empty list
+initially
+and then i'm going to go through every
+pair of
+nodes in every single edge so
+an edge is basically a pair of nodes
+being connected right so what i'm going
+to say
+is and remember these edges are not
+directed so they go both
+ways so for the adjacency list of n1
+i'm gonna append n2 to that list and
+similarly for the adjacency list of n2
+i'm gonna append n1 and then i'm going
+to start defining our depth first search
+remember we are going to pat we are
+going to know which node we're visiting
+so i'm going to use
+i as the value of the node that we're
+visiting remember we're also passing in
+one other variable the previous node
+that we came from so that we don't you
+know get false positives
+for loop detection and so you can see
+i'm defining this function inside of our
+outer function that just means i don't
+have to pass
+in the variables like adjacency list
+into this
+each time and actually i need to define
+one more variable that's going to be
+visit which is going to be a
+set which is going to keep track of all
+the nodes we've visited so one base case
+is going to be if i is in the visit set
+that means
+it's already been visited that means
+we've detected a loop that means we can
+return
+false if not that means i hasn't been
+visited so then we can go ahead and add
+it to visit so
+let's add i and then let's go through
+every single
+neighbor of i so every single node let's
+call it
+j in the adjacency list so the list of
+neighbors
+of i and if j happens to be equal to the
+the previous node the node that we came
+from then we're going to skip
+this iteration of the loop we can do
+that with the continue statement
+if it's not the previous node that we
+came from then we're going to call debt
+for search on this node j
+and as the previous value we're going to
+pass in i because that's where we're
+coming from when we arrive at node j
+now if the return value of this is
+equal to false so if not the result of
+this
+then we're going to immediately return
+false because that means we detected a
+loop
+if this does not return false then we're
+basically going to continue we're going
+to go through all the other neighbors
+of the node i and if we go through every
+single neighbor without returning false
+then we can return
+true meaning we did not detect a loop so
+we want to now return the result right
+and of course we know we're going to
+have to call our debt for search
+function we're gonna start at node 0 and
+as a previous value we're going to pass
+a negative 1 because negative 1 is never
+going to exist
+in our graph but is this enough remember
+our dip for search what it's returning
+as the true and false is only detecting
+if there's a loop like a cycle or not
+but it's not making sure that the entire
+graph is connected so
+we're only going to return true if this
+function returns true
+and if n which is the input
+of the number of nodes exactly matches
+the length
+of the visit set basically every single
+node happened to be visited that means
+every node is connected
+that means the graph is a tree so only
+if both of these are true are we going
+to return true
+so this is the entire code and i can
+show you if i slide this up a little bit
+that this does run
+and it does run pretty efficiently so i
+hope that this was helpful we're
+basically just doing a standard debt for
+search
+on this graph and if this was helpful
+please like and subscribe it supports
+the channel a lot and i'll hopefully

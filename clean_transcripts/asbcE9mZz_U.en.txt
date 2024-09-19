@@ -1,0 +1,684 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+let's solve
+word search two and once again like
+usual this is a problem from the blind
+75 link code list
+a list that we've been tracking on this
+spreadsheet and the link will be in the
+description to this
+and we are very close actually to being
+done with all the major problems on this
+list
+that i wanted to do and probably at some
+point i will finish up some of these
+easy ones like contains duplicates i
+think that's a pretty trivial problem
+don't know how many people are waiting
+for a solution on that one but i
+probably will do it eventually
+just for the sake of completeness so
+this is word search 2 and word search 1
+actually we already solved on this
+channel and that is leak code 79 so i do
+recommend understanding that problem
+before you try to do this one because
+this is definitely an extension of that
+one
+so we are given an m by n board exactly
+the same as we were in
+in word search one and we are given a
+list of words this time
+previously we were just given a single
+word but in this case we're given a
+list of words and we want to know from
+that list of words
+which of those words exist in this board
+and whichever ones do exist we want to
+return those words
+so previously we only wanted to know if
+one word
+existed in here or not so we returned
+true or false
+but in this case we want to know how
+many or exactly which of these words do
+exist
+so if we just reuse our solution from
+the first word search
+what we're gonna do is we're gonna go to
+every single position
+in this grid and we're gonna start a
+depth first search recursively on here
+so it's just
+backtracking right we're gonna be
+checking brute force
+what's every word we could come up with
+right so starting at
+o could we come up with a word in our
+list of words right so we just go in
+every
+all four directions basically right so
+if we go here we'll get oe
+if we go this way we'll get oa right
+etcetera etcetera we could
+you know possibly make a word like this
+o a a n
+or we could make a word like this o a t
+h
+and this happens to be a word in our
+list of words
+so we would return we would say okay o a
+t h this is a word so this is going to
+be added to our solution set
+so it's going to go in the output so a
+very brute force approach would be so
+for every single word we're gonna run a
+depth first search
+starting at every single position and
+check okay could we make the word
+oath starting from here could we make
+the word oath
+starting from here etc etc until we get
+you know all the way
+to the bottom of the grid and we have
+run a depth first search on every single
+position now that's not going to be
+super efficient right
+and then we're going to have to do the
+exact same thing for the next word p
+right because maybe this word could
+exist so we'd have to brute force check
+every single position etc etc etc
+and one way to analyze the time
+complexity of that would be something
+like
+worst case four and four because that's
+the number of directions
+you know from a any position we could go
+we could go in four directions now we
+can't revisit the same
+position twice of course so basically
+the length of our depth for search is
+going to be the dimensions of the board
+let's call that m by
+n right so that's how much one dfs would
+be and we're going to be doing a dfs
+starting at every single position so
+it's going to be something like
+m by n to the power or and by n
+multiplied
+by 4 to the power of m n and we're going
+to be doing this for every single word
+so basically let's say w is the number
+of words so this is going to be super
+inefficient now there is a way basically
+where we can make this more efficient
+where we can get rid of this constant w
+basically
+the solution is going to be we're only
+going to have to run dfs
+starting from each position a single
+time because
+as we're checking you know what are all
+the words we can create
+starting at this position right starting
+at this character a
+what are all the words that we could
+create now the main idea that we're
+going to be doing instead of
+just checking a single word at a time
+like running dfs on here just to check
+if this word exists
+let's check simultaneously let's check
+all the words in our set
+which of them can be created starting at
+this position so that's the idea we're
+going to be using
+and we're going to be using a data
+structure which is going to be very
+useful for it because what we're going
+to notice is we can
+check all words starting at here based
+on the prefix right so
+clearly here we only want words starting
+with the letter
+a right so the prefix is going to be a
+and
+what kind of data structure can help us
+organize these words
+based on their prefix guess what
+either you have heard of this data
+structure before or you haven't if you
+haven't heard of this data structure
+then you probably don't have a chance of
+solving this problem in the optimal way
+so i would learn what this data
+structure is first but if you do already
+know it
+the solution is actually not too bad to
+implement so this
+the data structure we're going to be
+using is a try aka
+a prefix tree which is going to help us
+organize these words based on their
+prefixes
+so let's say we had a pretty small grid
+and we had a pretty small list of words
+the words are
+app ape and ace so we want to know which
+of these words can be found
+inside of this grid now let's use the
+idea of prefixes that i mentioned so
+let's say we're going to start our dfs
+here right so this is the first position
+we're going to be at and we can't
+revisit
+this position twice makes sense so far
+so so far we have a single character
+right
+we have found the character a right so
+we can basically we want to know all the
+words that we could create starting at
+this position dfs from here and of
+course then we're going to repeat that
+by doing a dfs from here
+here and here but we're so far we're
+only starting here
+and of our entire list of words we want
+to know which one of them
+have a prefix of a because
+if you know if we had a word such as
+bat then we'd say okay bat does not
+start with an a so basically we don't
+even have to consider that right we
+don't have to run a dfs on here
+searching for the word bat it doesn't
+even exist in this position
+right the letter b does not start here
+so what we're gonna have to do is
+basically go through every single word
+this word starts with an a
+this word starts with an a this word
+starts with an a so potentially
+so far all of the words could be
+found starting at this position right so
+we haven't eliminated any of these just
+yet
+so now let's say we go down first right
+of course if we go
+up that's out of bounds so you know
+we're just going to return there because
+we're going to see okay
+the it ended with the the word a a does
+not exist in our list of words so of
+course we're not gonna do that of course
+if we went left
+that also would not work but we can go
+down so let's
+start going down first so we add a p to
+our word so far so so far we have ap so
+then again we're going to just go
+through every single word check okay
+does this start with ap
+yes does this start with ap yes does
+this start with ap
+no so so we don't want to consider this
+word anymore right but as you can see
+this is going to get kind of complicated
+right
+we're having to go through the list of
+words every single time that's not
+really helping us out in terms of
+efficiency
+a more intuitive way would be if we
+could check the prefixes of these words
+more easily and of course we know a data
+structure prefix tree
+is exactly what that is for so basically
+what a prefix tree is going to be it's
+going to be
+you know every single character is going
+to be a node so one node is going to be
+a
+and we're just going to take these words
+and add them to our prefix tree so
+we want all words starting with the
+character a to go
+here right so let's add childs of these
+so what characters come after a
+of course we have a p and then we have a
+c so
+all words that start with a p are going
+to go down here
+and all words that start with a c are
+gonna go down here
+and how many different words do we have
+that start with ap we have
+uh app and we have ape
+and all words that start with ac is just
+one word
+ace so do you see how this is this tree
+is organizing these words based on the
+prefixes
+so now we started at a right we want all
+words that start at a so so this is
+where we're going to be at so far and we
+see that
+of course there are three words that
+start with
+a and by the way let's say ap
+this is not a word even though it is a
+path in our tribe because basically
+let's just say we call
+these three leaf nodes happen to be the
+end of words it's possible that we could
+have a word ap
+but in this case we don't up here right
+we don't have ap
+so this this node is not going to be
+marked as the end of a word
+so only these three are marked as end of
+words but so now when we go down in this
+direction we go to a p
+all we're going to do from this position
+is check does this have a child p
+if it does we're going to say okay let's
+go there so now this is going to be all
+words
+that potentially start with ap so this
+prefix
+now if we did not have a p right then we
+would say okay
+we went down here ap we don't have any
+words
+that start with ap so in that case we
+would just return that's our base case
+right if we didn't have any words with a
+prefix of ap
+which we could check pretty easily with
+this prefix tree
+we wouldn't want to continue going down
+this direction
+so you can see that we're making things
+a lot more efficient for us using this
+try
+so now from p we can't go down that's
+out of bounds we can't go left
+we can't go up because we already
+visited that position so we can go
+right which is going to add the
+character e so from here from this p we
+want to check do we have a child
+e well this is not the e this is though
+right
+okay so so far we we did find a path
+in our prefix tree now let's check is
+this the end of a word since it's marked
+purple that's what i'm just indicating
+so yes this is the end of a word
+therefore we found a single word down
+this path that we were maintaining
+called a p e that yes you can see it's
+found in our list of words
+so therefore we found one word that we
+can make from this grid
+that you know can be found basically so
+we're going to add
+ape to our results now from here
+we would want to continue now we can't
+go right we can't go down we can't go
+left because we already visited there so
+we would go
+up so we'd say okay add a c right so
+from here
+a p e a p e and then we add a c
+does this word exist well this does not
+have a child of c
+so of course we can't do that and that
+makes sense because this word apec
+does not exist in our input list of
+words so therefore at this point we
+would return because we don't even have
+any words that start with this prefix
+so so far we did find one word ape now
+when we started here the first
+direction we went was down but it's
+possible we could also go right so let's
+do that so
+now we have ac so we started here we
+check does this have a child c yes it
+does it's over here right so now we
+can't go right we can't go up we can't
+go back left so
+now we go down a c e do we have a e
+child
+under this c yes we do and this is the
+end of a word right it exists in our
+list of input words so now we found
+another word
+ace and then we would continue from our
+grid in the only
+position we can go to which is the p
+right so we'd add a p we'd say okay does
+this e have a child
+p it does not so therefore we can't
+continue so that's going to be our base
+case
+but it's okay because we at least found
+one word so we can go ahead and add that
+to
+our list of words ape and ace so now is
+going to be the easy part so we we
+started our dfs from this position now
+let's start the dfs
+from c so we look in our prefix tree we
+do have
+a prefix starting at a do we have a
+prefix starting at c
+we don't so immediately we can say okay
+we know for sure
+none of our words start with the
+character c we didn't
+we didn't just have to we didn't have to
+run through the list of words to do that
+we just did that
+in an o of one operation we just checked
+do any
+is our root node does our root node have
+a child
+c it does not so therefore none of the
+words
+start with a c so we don't even have to
+continue the dfs from this position
+and you can tell that's the same is
+going to happen for the character e
+none of the words start with e we don't
+have an e root node in our prefix tree
+similarly p we don't have any root node
+p in other words start with p
+so so we're not going to find any
+additional words in
+this grid we only found two words ape
+and ace
+we found ape and ace we did not find app
+so we're going to return these two words
+as a
+list so once you kind of understand that
+this problem can be solved by the prefix
+tree
+and you know how to implement a prefix
+tree and you know how to implement
+backtracking dfs which you can learn
+from word
+or word search one this problem is not
+too difficult
+so now let's write the code so the first
+thing i want to do is actually implement
+a try node
+class or a try class basically and so
+in the constructor of this if you have
+written a try
+before you'll know that there are mainly
+two things that we worry about for a try
+node and that
+is its list of children so that's going
+to be one member
+variable for this class a list of
+children now you could use a list in
+this case
+all characters i think are going to be
+from lower case a to z but a more
+generic way to handle it is just using a
+hash map
+so the key is going to be the character
+and the value in this hash map is going
+to be the child
+node the child tri node and also for
+each
+node you want to be able to mark if it
+is the end of a word or not so
+one member variable for is word it's
+going to be a boolean initially we can
+set it to false
+now to our try we are going to want to
+add words to it so let's define one
+function add word
+and this is really going to be the only
+function so we'll be passed in a string
+a word and we just want to add that word
+to our try
+so let's get our current pointer to be
+at the
+root node which is just the self node
+and then we're gonna go character by
+character in this word and just start
+adding them
+now it's possible that the the character
+might not exist in our tri node if it
+does not exist so if c
+not in current dot children if this
+character does not exist then we're
+going to obviously have to insert it
+so current.children at character c we
+want to create a try node for this
+particular character
+if it already exists then we're going to
+skip this if statement and simply we're
+just going to
+move our current pointer to that
+position so current.children
+at character c so that's the try node
+that we want and at the end all we have
+to do is return the current pointer
+or actually not return the current
+pointer at the end we have to mark that
+this is now going to be the end of the
+word so the last character that we ended
+at
+current is word we want to set that to
+true
+when we insert a word now the reason
+we're not going to define a search
+function like searching a word in this
+trinode is because we're going to be
+doing that
+simultaneously as we do our depth first
+search on the
+board so now let's start getting into
+the dfs
+we're actually the first thing we're
+going to want to do is create a root
+tri-node
+so so let's create a trinode with the
+class that we just defined and
+for every word that we're given in the
+input so for w in the list of words we
+just want to go ahead and take
+each word and add it to our try so root
+dot add
+word w and now we can start going ahead
+and doing the depth first search so
+first i like to do is get the dimensions
+of the board so rows and columns
+we can get the length of the board we
+know for sure that the board is going to
+be non-empty and
+the list of words is going to be
+non-empty as well they do tell us that
+in the problem description
+now i'm going to create two sets result
+and visit so result
+is going to be the set of words it's
+possible we could visit
+the same word twice inside of our board
+so we don't want to have to
+return duplicates and the visit set is
+pretty self-explanatory when we run a
+dfs
+on the board we don't want to get stuck
+in like an infinite loop or mainly
+we don't want to repeat the same
+character twice we're not allowed to do
+that
+so once we have those defined we are
+going to define a dfs
+recursive function we're going to be
+going through every position so we want
+to pass in the coordinates row column as
+the coordinates
+we want to pass in the current node that
+we're at
+in our try you know depending on what
+characters we've already visited before
+and we also want to pass in what is the
+word so far so for example you know we
+visited two characters ac
+we want that to be stored in this word
+variable and of course if the node that
+we're visiting happens to be the end of
+a word what we're going to do is just
+take that word and add it to our result
+which is out here we don't have to pass
+it into every recursive call
+so for this dfs let's go ahead and
+define the base cases so of course if we
+go out of bounds
+row is less than 0 or column is less
+than zero
+or row is too big meaning it's the
+number of rows
+or a column is too big meaning it's the
+number of columns or
+maybe this position row column is
+already been visited so if it's already
+in visit then we're going to return
+or maybe the character that we're at for
+example
+board at position row column maybe
+this character is not even in
+our try maybe it's in bounds right but
+it's
+not even in our try at the current
+position that we're at
+in our try node right meaning this
+character
+is not in node.children
+right if it's not in the children of the
+current node that we're visiting that
+means this character doesn't exist in
+our tribe therefore
+it's not one of the words that we were
+given in our input list of words so
+if any of these are true then we're
+going to return that's our base case if
+that's not true first thing we want to
+do is make sure we mark
+this position as visited and after
+after we're done the last thing we do
+before we return is we're going to have
+to
+mark this as unvisited basically since
+this
+is backtracking uh we we can't visit the
+same one twice but once we're no longer
+done visiting it after we return
+then we can go ahead and you know remove
+this position from being visited
+so since we got to a new character we
+want to update some variables so we want
+to update
+node so node is going to be set to
+node.children
+of the current character that we just
+visited which is board
+at position rc so we're updating the
+node because we know that that node does
+exist
+and we're updating the word right so
+we're taking the current word
+adding to it the new character that we
+just reached
+board at rc and before we do the
+recursive case again before we look at
+the neighboring positions we do want to
+check is this the end of a word so we
+can check that based on our node so if
+node is word
+is true then of course we can take our
+result
+and add to it the word that we just
+built right the string
+itself not the node we're not going to
+add the node to result we're going to
+have the string
+word so this is just basically you know
+checking if it actually is a word
+in our list of words and we're you know
+doing some uh bookkeeping here
+and once that is done we can go ahead
+and actually do our recursive case
+you could write it with a loop but i
+like to be lazy and i think it's pretty
+okay to just copy and paste
+dfs four times so we're gonna pass in
+the coordinates and we're gonna pass in
+the node and we're going to pass in the
+word that so far we have built
+so let's just copy and paste this four
+times going in each of the four
+directions
+up down left right so all that we have
+defined our dfs function about 15 lines
+of code so remember what we actually
+want to do with that dfs is go through
+every single
+position every single starting position
+in the grid so i'm going to do
+a quick 2d loop a quick nested loop on
+the entire
+grid and call dfs from
+each starting position in the grid now
+for node what are we going to pass in
+we're going to pass in our root node
+that we defined up above and for the
+word
+initially it's going to be empty right
+so that's what we're going to pass in
+for the word
+once that is all said and done we want
+to return our result but don't forget
+our result
+is a set to eliminate duplicates we can
+cast it into a
+list pretty easily in python so that's
+what i'm going to do
+as you can see this is the entire code
+so this
+is the entire code and all of its glory
+so this
+you can see that this solution does work
+once or twice it actually did give me
+time limit expire i think there is a
+slight
+optimization that you can make to this
+problem i don't think it actually
+improves the overall time complexity
+but once you find a word in the try
+basically what you can do is actually
+remove
+that if it's a leaf node you can remove
+that
+from the try because you don't want to
+have to you don't have to search for the
+same word twice that's a slight
+optimization that you can make but i
+but i think this solution is mainly good
+enough and it's too big to even
+fit on the screen that's how you know
+this is a hard problem no matter what
+you do it's going to be a lot of code
+that you have to write
+but i hope that this was helpful if it
+was please like and subscribe it
+supports the channel a lot and i'll
+hopefully

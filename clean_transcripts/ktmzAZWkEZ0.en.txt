@@ -1,0 +1,506 @@
+everyone welcome back and let's write
+some more neat code today today let's
+solve minimum cost climbing stairs and
+this problem is very similar to another
+problem that we've solved that's called
+climbing stairs and honestly i think
+this is probably one of my best videos
+explaining dynamic programming i really
+walk through
+all the steps from recursion to
+memorization to dynamic programming so i
+will link this video somewhere on the
+screen or somewhere on the description
+if you want to take a look it's very
+similar to the problem that we're
+solving right now which is minimum cost
+climbing stairs it's just a slight
+variation of that other problem so we're
+given an integer array called cost where
+cost of i is the i step on the staircase
+and if we pay that cost at index i then
+we can either climb one step or two
+steps from index i so in this example
+over here we're given an array of 10 15
+and 20. what we're told is that if we
+pay this cost if we're at this position
+right and we pay the cost of 10 from
+this position we can either take one
+step which will land us in this position
+or we can take two steps which will land
+us in this position and we only have to
+pay a cost of 10 to do that and also we
+are told that we can actually either
+start at index 0 or start at index 1. so
+we can either start from this position
+or we can start from this position and
+our goal is to reach the top floor of
+this staircase so you're probably
+thinking okay
+let's just start at position uh index
+zero right take a jump of 2
+which costs 10 right because we're
+taking two steps starting from here so
+that costs 10 then we reach this spot
+and then we're done right we've reached
+the top floor so therefore the answer is
+10 right well not quite and it's kind of
+tricky i think it's really their fault
+that they word this problem kind of
+poorly in this case the answer is
+actually 15. why is it 15 well it's
+pretty simple it's because this is the
+last position in our cost array but this
+is not the top floor the position right
+after that is considered the top floor
+which
+yeah they don't really specify that
+anywhere in the description which is
+kind of dumb but that's the thing so
+the reason why the answer is 15 is
+because remember we can either start at
+this index or we can start at this index
+if we start here then we can take a jump
+of 2 which will reach which will land us
+at the top of the staircase it only
+costs us 15 to do that or we could start
+at 10 take a jump of 2 and then take a
+jump of 1 which would cost us 30 or we
+could from 10 jump to 15 and then take a
+double jump which would cost us 25 10
+plus 15
+so clearly the minimum was when we start
+at 15 and then just take a jump of two
+so then the result is 15. so then your
+next idea might be let's just be greedy
+right why not always you know let's
+start at one of the positions either
+this one or this one and then always
+take two steps right why exactly would
+we ever want to take one step when we
+could take two steps right and it costs
+us the same amount well there's an
+answer to that question and let me show
+you an example a counter example of why
+sometimes we would want to take one step
+rather than two the main reason is
+because maybe if we take two steps
+there's a value over here something like
+a thousand right a really big number and
+then we'd have to either take one step
+or two step but either way we'd have to
+cut it would cost us a thousand if we
+land here or we could take maybe one
+step and yeah we'd have to pay 15 and
+then have to pay a 20 and then we could
+though take two steps uh to maybe a
+value over here that's really small like
+five which would skip us a value like
+over here which would be a thousand so
+you can't really be greedy and actually
+the second example down here is another
+reason
+is another counter example of why we
+can't always take two steps
+so let's really try to understand how we
+can at least brute force this problem
+because we've noticed that from every
+spot we have two decisions right take a
+jump of one or take a jump of two and we
+can't just be greedy and take a two jump
+every single time so let's try every
+single possibility and if you've watched
+any of my videos you know that we like
+to do decision trees when we're brute
+forcing so
+suppose we start here we start at index
+0 and we have you know 0 1 2 to this
+index and this index is out of bounds
+and that's when we know we've reached
+the goal and we can stop so initially we
+start at zero right we can either jump
+to index one or index two and the cost
+if we jumped to index one would be ten
+the cost if we jump to index 2 would
+also be 10. now if from index 1 we can
+either jump once right meaning we jump
+to index 2 or we can do a double jump
+and jump to index 3. of course if we're
+at index 1 the cost to jump from there
+is going to be 15 whether we take a one
+jump or if we take a double jump from
+index two we actually only have one
+choice we can take a single jump which
+will land us at index three which is
+actually out of bounds if we take a
+double jump we'll get to index 4 which
+doesn't really make any sense because
+that's also out of bounds so in this
+case
+the cost from jumping from index 2 is 20
+so we can put that now just so you know
+once we reach index 3 which we already
+have done in two of our
+paths as you can see
+we can't really go any farther from here
+right so what we're going to say is as
+we've stopped here we want to know okay
+we reached the end right we want to know
+what was the minimum cost to reach this
+position so
+one path if we jump like this the cost
+was 10 plus 15 which is 25 right that's
+the total cost to reach this
+taking this path it was 10 plus 20 which
+is larger it took 30 to reach this spot
+but we're not quite done yet we know we
+can't go in this direction so you know
+we're done here but there's still one
+node in our decision tree that we can
+continue to traverse so from index 2 we
+can take another single jump and then
+get to index three and of course that's
+going to cost 20 to do that and so the
+cost is 20. so you can already tell that
+this is definitely not the solution this
+took about what 45 to reach uh index
+three so definitely not good you can see
+there were three different ways for us
+to reach uh the goal
+and among all of these the minimum was
+25 but remember if we go back to the
+actual description the answer to this
+problem was actually 15 so why didn't we
+end up with the correct answer and it's
+pretty simple because remember we were
+allowed to start at index zero or
+allowed to start at index one but
+clearly in this decision tree we started
+at index zero so don't we have to draw
+another entire decision tree starting at
+index one well if you're clever and you
+take a look at this picture you know
+starting from index one don't we already
+have that entire decision tree just look
+over here right we started at index one
+here now we did do some work before we
+got to index one but can't we just
+pretend like that doesn't exist can't we
+just reuse this entire decision tree
+obviously we'd have to modify the
+numbers a tiny bit right because
+when we
+start from here the cost so far is not
+10 it's actually zero because we're
+pretending like we actually started from
+here right and that will be easy to
+handle for us if we recursively
+implement this solution uh so what i'm
+saying is for us if we started at at one
+you know we'd put a path over here on
+the right and then get to three and the
+cost for that would be 15 not 25 as we
+have down here and the other path where
+we go left we go uh jump to position two
+and then jump to position three that
+would cost us 15 plus 20 which means the
+total would be 35
+rather than 45 right so not 45 over here
+it would actually be 35. the main point
+of what i'm trying to show you is
+there's repeated work here right if we
+take this solution as it is it's
+exponential because it's a decision tree
+each node is going to have two branches
+right up to two branches and we're gonna
+keep doing that until we get to the base
+case right which is index three so
+what's the possible height the max
+height of this tree well we could have a
+potential level for every single
+position in the input array right so the
+height of the tree is going to be n
+which is equal to the length of the cost
+array right so n is equal to the length
+of the cost array and we know that we
+could have two branches for every single
+node so the time complexity comes to two
+to the power of n but as we just showed
+there's a lot of repeated work that
+we're doing if we eliminate that
+repeated work we can actually get this
+time complexity down to big o of n
+because what we're noticing is to solve
+the original problem which is what's the
+minimum cost if we start at index 0 to
+reach index 3. to solve this problem
+we're asking a couple more questions
+we're basically solving the sub problem
+we're asking okay how about to solve
+this problem we have to first figure out
+if we're starting at index one what's
+the minimum cost of reaching index three
+and to solve this problem we're asking
+another sub problem down here okay what
+about if we start at index two then
+what's the minimum cost to arrive at
+index three so if we cache this repeated
+work
+with a hash map or something so that we
+don't repeat the same problem multiple
+times what i'm saying is over here you
+can see that we start at index two and
+we wanna know how what's the cost to
+reach index three well it turns out that
+it was twenty right from two to get to
+three it costs twenty so then when we're
+trying to solve that same sub problem
+over here starting at index two how much
+does it cost to get to index three well
+it was 20. we don't actually have to run
+through that because we already solved
+that problem over here right so that's
+the main idea of how we can get this to
+big o of n the reason it's big o of n is
+because we have n sub problems we're
+asking okay from index zero how long
+does it take to get to three from index
+one how long does it take to get to
+three from index two how long does it
+take to get to three so that will be an
+o of one operation for each position in
+the array which will be n time
+complexity it'll also be o of n memory
+complexity and if we take this idea of
+caching the recursive solution we can
+actually get an iterative solution that
+i'm going to show you now which will
+have the same time complexity and you
+know pretty much the same memory
+complexity as well so now let's actually
+go over the real dynamic programming
+solution which will actually have a
+slightly better memory complexity
+because we can actually use the input
+array itself that we're given and we
+could actually even just use two single
+variables to do the dp solution let me
+show you why so we noticed that to solve
+the original problem right starting from
+index 0 what's the minimum cost to reach
+the out of bounds position or the top of
+the staircase we first have to solve the
+sub problem of starting from one and
+starting from two right so basically
+this has a dependency of this and this
+but we also learned that this has a
+dependency of this and this and
+basically every one of these cells has
+that dependency so how about we actually
+solve this problem from right to left
+rather than from left to right let's
+solve the sub problems first and then
+solve the original problem okay so does
+that mean we're gonna start from index
+two we wanna know how what's the cost
+for this to reach index three well it
+has two choices it can do one jump or
+two jumps the second jump doesn't do
+anything because it also goes out of
+bounds right the first jump will go out
+of bounds so that's enough for us and
+what's the cost to reach 3 well it's
+going to be just 20. yes that works so
+we can just leave 20 here right so from
+index 2 to reach out of bounds it takes
+20. but what about from index 1 now we
+kind of get into one of the more
+interesting cases right from here we can
+also do a single jump so then we're
+asking okay if we do a single jump it'll
+obviously cost us 15 to do that single
+jump but also the value that should be
+in this position is from index two how
+long does it take to reach index three
+because then what we can say is okay for
+index one to reach index three we can
+just take 15 which was this jump and
+then 20 which was the remainder right
+the remainder to reach index three so we
+can in this position we can put 15 plus
+20. but hold on because there's actually
+two paths right
+we already handled the single jump case
+but what if we do a double jump from
+index one then what's the cost that we'd
+put here well we'd put 15 because that's
+the cost of making the double jump but
+then we'd want to also add the value
+that goes here to that total result
+right because from index three how long
+does it take to reach index three it's
+kind of a weird question logically to
+actually ask but just to make the math
+work out the easiest number we can put
+here is zero right because if we're
+already at index three it obviously
+doesn't cost anything to to stay here so
+that's the reason why we're putting a
+default value here of zero now now we
+actually have to look at two choices
+right because one possibility was we go
+here make a single jump to two and then
+go to three right the cost of that will
+be 15 plus 20. another possibility is we
+stay we start here and then just do a
+double jump to this position right and
+the cost for that is going to be 15 plus
+0 because there's a 0 here so we want to
+take the minimum of both of these values
+what's smaller 35 or 15 of course 15 is
+smaller so we're going to put the
+minimum of these two computations in
+this position and the good thing is it's
+already 15. and last we're gonna start
+from index zero we're going to see okay
+10 plus the cost you know 10 is the cost
+for making one jump and then from here
+from index one what would be the cost to
+you know do the remainder of reaching
+index three it's just going to be the
+value that's here which is already 15 so
+10 plus 15 is 25 that's one possibility
+the second possibility would be making a
+double jump so from here a double jump
+10 plus 20 which is the value here is 30
+right so we want to take the minimum of
+those two values of course 25 is smaller
+than 30 so we put 25 in this position so
+now in this array every single index
+represents the entire cost it would take
+from this index to reach the end of the
+array or the top of the staircase from 2
+it would be 20 from index 1 it would be
+15 and from index 0 it would be 25 now
+what value do we actually want to return
+remember we can only start at index 0 or
+index 1. we can't start at index 2 and
+we definitely can't start at the top of
+the staircase so what we're going to
+return is just going to be what's the
+minimum of the first two values in this
+array of course the minimum of these two
+is 15 so we can just return 15. as you
+can see the the time complexity was
+definitely big o of n we just you know
+iterated through the array in reverse
+and the memory complexity is uh
+technically big o of one because we're
+not really we're just using the input
+array itself and you actually don't even
+need to use the input array you don't
+need to write over the input array
+because if you notice as we go in
+reverse
+you know this value only depends on the
+next two values and this only depends on
+the next two values so really if you
+wanted to you could just keep two
+variables in memory rather than even
+writing over the entire array and then
+as you go in reverse order you could
+update those variables to you know the
+correct values but it's your choice of
+how you want to code it up speaking of
+code now we can finally jump into the
+coding solution okay so now let's jump
+into the code and this is the same
+example that we were basically working
+on and remember what we wanted was to
+just have another extra zero at the end
+of the array just to make the math work
+out easily for us so that's what we're
+going to do to this input array we're
+just going to append a zero value to it
+and then we want to iterate through this
+array in reverse order right so what
+index are we going to start at well in
+the drawing i started at this index but
+remember what we're going to be doing is
+taking this and then looking at the next
+two values that come after it of course
+for the last index or this index that
+i'm showing there aren't two values that
+come after it so we should actually
+start at this index and that makes sense
+for us because we're not actually going
+to be updating this value because we're
+just going to take 20 add it with 0
+which doesn't change this value at all
+right so that's why we're going to be
+starting at this index how we can get
+this index is basically the entire
+length of the array we know that the
+entire length of the array minus 1 will
+give us the last position right length
+minus 1 will give us this position so
+really we can do length minus 3 which
+will give us this position which is
+where we want to actually start at so
+we're going to do the length of the cost
+array minus three and this is just how
+you do it in python at least with a for
+loop and we're gonna decrement uh we're
+gonna keep going all the way until we
+reach the beginning of the array and
+we're gonna decrement by one each time
+if you're not familiar with python all
+we're doing is just iterating starting
+at this position in reverse order from
+this array so remember what we want to
+do for cost at index i what we want to
+assign this to is really the minimum of
+cost of index i plus
+cost of index i plus one right because
+from here if we make a single jump we're
+going to land here so we want to add the
+value at that position that we land at
+to the original position the second
+choice is if we make a double jump so
+i'm just going to copy and paste this
+because it's pretty similar if we make a
+double jump this is what
+the computation will be like cost of i
+plus cost of i plus two but if you want
+to actually simplify this line of code
+you can see that since both of these
+computations have cost of i as the first
+uh you know value we can actually just
+remove cost of i from both of these and
+actually just take the minimum of these
+two and add it to the original value so
+we can just change this line to this
+right take the minimum of these two and
+add it to cost of i yeah that's the
+entire code just iterate through it in
+reverse order do the computation and
+then the only thing you have to return
+is the minimum of the first two values
+of cost of i so
+cost of zero and cost of index one and
+the main reason that this works is
+because we're guaranteed that the cost
+array is going to have at least two
+values if we weren't guaranteed that
+then we couldn't necessarily do this
+line over here but let's run it to make
+sure that it works let me just delete
+this first line up above so we don't get
+any errors and as you can see on the
+left yes the solution works and it's
+pretty efficient so i hope that this was
+helpful if it was please like and
+subscribe it supports the channel a lot
+consider checking out my patreon where
+you can further support the channel if
+you would like and hopefully i'll see

@@ -1,0 +1,514 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+let's solve pacific
+atlantic water flow so this is another
+problem from the blind 75 list and
+that's why i'm doing it today the link
+to this spreadsheet will be in the
+description again
+and so we will be able to fill in one
+more graph problem today from that blind
+75 list we're nearly done with that list
+now at least most of the important
+problems on this list i think there are
+some binary questions that i haven't
+really done and
+i might not do these because i feel like
+binary questions rarely come up in
+interviews
+but for this problem so the text is a
+little small so let's focus
+more on the picture so we're given a two
+dimensional
+grid of values and so each value
+represents a
+height so this has a height of 4 this
+has a height of 5 etc etc
+we are claiming that the top border
+of our grid everything you know right
+above our grid and everything to the
+left of the grid is going to be
+called the pacific ocean and everything
+to the right of the grid and everything
+below the grid
+is going to be the atlantic ocean
+so for any particular cell we want to
+know
+can this cell reach the pacific ocean
+and can it reach the atlantic ocean
+if it can then we are going to include
+this position
+in the result if it cannot reach the
+atlantic and pacific ocean then we don't
+include it in the result
+so how do we know if this cell can reach
+the pacific and atlantic ocean because
+clearly there's a path
+you know straight to it well there's one
+condition
+we want to know if water from this cell
+can flow to the pacific end to the
+atlantic and
+water can only flow from the perspective
+of a
+cell to an adjacent cell that has
+a value that is lower than the original
+cell or
+equal to the cell and it can only flow
+in four directions
+straight above to the left to the right
+and below that's pretty straightforward
+usually you can't go diagonally in these
+types of graph problems
+and so in this case for this five we see
+that the above neighbor
+three is less than five this is less
+than five this is less than five and
+this is less than five so
+clearly five can go to all of its
+neighbors
+now let's take a look at the three okay
+three has a neighbor one
+one is less than three so it can
+definitely flow in that direction and
+now
+see this one is bordering the atlantic
+ocean so clearly
+that means five is able to reach the
+atlantic ocean
+now let's look left it can reach four
+and four can definitely reach two
+because two
+is less than or equal to four so from
+this perspective we can also now reach
+the pacific ocean
+so water from this position can flow to
+the pacific
+and it can flow to the atlantic so this
+position is going to be included in
+our result so a brute force and naive
+way to solve this problem is to
+simply go to every single position
+do some kind of graph traversal dfs or
+bfs would probably work
+and doing that search check from a cell
+can we reach the top
+and left border and can we reach the
+right
+and bottom border and if we can then
+we're going to add this cell
+to the solution set if we can't then we
+don't add it right
+so if we're doing a dfs or bfs on every
+single position
+starting at every single position in the
+grid we're gonna get a time complexity
+of basically the size of the grid let's
+say that's that's
+n times m which is you know the
+dimensions of the grid
+and if we do that from every single
+starting point we're gonna get
+n by m squared as the big o
+time complexity and you might think well
+since
+we're doing this recursively we're
+probably doing a lot of repeated work
+right so for example if i'm starting at
+3
+right doing a dfs from here i'm gonna go
+to its neighbors and then do dfs from
+here
+here here and here and maybe
+you know by doing that i can cut out the
+repeated work right
+and so i won't and so we won't have to
+you know restart a dfs for every single
+position
+in the entire grid and you might think
+that that will work
+but i'm pretty sure it doesn't i'm not
+going to go through
+the details of why and somebody in the
+comments can correct me if i'm wrong
+maybe there is a clever way to get that
+to work
+but i i tried to do it myself and i was
+not able to so i don't know if it's
+actually possible
+to do it that way there's a different
+clever way to solve this problem
+how about rather than us going through
+every single cell
+and checking if this cell can reach
+pacific and reach atlantic how about
+we go for start from the pacific ocean
+right and let's find every
+cell that borders the pacific ocean
+clearly
+everything in the first row borders the
+pacific ocean right that means
+everything in this cell can reach the
+pacific ocean
+and everything in the left column can
+also
+reach the pacific ocean and starting
+from each of these nodes
+what we're going to do is now find what
+are all the
+other nodes that can also reach the
+pacific ocean right so
+at the end we would have you know some
+kind of set maybe you know it looks
+something like this right
+or whatever and then we know okay these
+are all all the ones in purple
+can reach the pacific ocean and
+similarly
+we would also do that with the atlantic
+ocean we know everything
+here on the right side can reach the
+atlantic ocean
+everything at the bottom can reach the
+atlantic ocean similarly we do some kind
+of dr
+graf traversal starting from each of
+these positions
+right and see okay what what nodes can
+reach the
+pacific ocean as well and at the end we
+would want to go through every single
+position in the grid and we'd want to
+find
+positions like this one that can reach
+the atlantic
+and pacific ocean that we marked as
+being able to reach the atlantic
+and pacific and then from these ones
+that can reach both we would add them to
+our result and then return the results
+so that's kind of
+the general algorithm of how we're going
+to do things the reason this is more
+efficient
+this is going to be big o n times m
+we're not going to be revisiting nodes
+mult
+you know several times we're not going
+to be re-running a graph traversal
+what we're going to be doing is starting
+at each of these nodes right doing a
+depth first search right so
+for example let's say we started at this
+one right we'd do a depth first search
+and then see all the other nodes that
+can reach the pacific ocean right
+you know let's say we marked these and
+these right and then maybe we do the
+same thing starting at this one
+right and we'd you know go over here
+maybe and then go over here and then
+we'd come back here if we ever got to a
+cell that we
+revisited we would not want to continue
+our debt for search from
+a repeated cell right so we we just
+wouldn't do that
+so that's the main idea of this
+algorithm but there's one last point i
+want to make before i start going
+through the code
+and that is remember how if we're
+starting at a cell like this one
+water can flow from this cell to a cell
+that has a smaller
+value right like a cell a small cell
+like three for example and then it can
+flow down to a smaller cell like one and
+then it can reach the ocean right
+so if we are going starting from a cell
+and reaching the ocean
+we are allowed to go at equal heights so
+one can reach one
+or we can go in decreasing heights like
+these ones
+but if we're going in the opposite
+direction if we're starting
+at the atlantic ocean and going to a
+cell like 1
+going to a cell like 3 and going to a
+cell like 5 then we're
+going to have to do the opposite we can
+go to cells of
+equal heights or cells of increasing
+heights right
+you kind of see why that's the case
+because what we're saying is
+water is allowed to flow from five to
+three to
+one so therefore water from the ocean is
+allowed to go
+from one to three to five because that
+does mean that
+five can reach the ocean so with that
+being said
+the first thing i'm gonna do is go
+through
+the first row which is gonna be pacific
+ocean
+values and then i'm gonna and from there
+i'm gonna run depth first search to see
+all the other nodes
+that can reach the pacific ocean and i'm
+gonna do the same thing at the
+bottom row seeing which nodes can reach
+the atlantic ocean
+and i'm gonna be maintaining those in a
+set let's call it a visit set it's going
+to be a hash set so that
+we don't end up adding duplicates to it
+so now getting into the code so the
+first thing i like to do with these
+problems is just get the dimensions of
+the grid so we're guaranteed that this
+grid is not going to be empty so we
+don't have to
+you know worry about that so let's get
+the length of heights which is going to
+give us the number of rows
+and then get the number of columns as
+well
+and so i'm going to be having two hash
+sets pacific and atlantic
+maintaining all the positions that can
+reach the pacific and atlantic oceans
+respectively
+and then what i'm gonna do is i'm gonna
+go through every single position
+in the first row so i'm gonna go through
+every single column
+in the first row right and what's going
+to be every single position in the first
+row from here it's going to be
+0 0 right in the first row is 0 and
+column is going to be the column
+position and so what i want to do
+on this position is run a dfs right so
+i'm going to run a dfs on this position
+right
+and so i'm going to pass in a visit set
+to this dfs function
+since this is the first row the first
+row means it's the pacific ocean right
+it's not the atlantic it's the pacific
+so that's what i'm going to pass in as
+the visit set
+the pacific ocean so i want to visit
+this position and i want to see all the
+other positions it can reach
+now we know that water from the ocean
+to other cells can only go at equal
+values or
+greater values right remember we
+reversed the thinking since we're going
+from the ocean to the cells we're going
+to have to do the opposite
+so we can go to greater cells so i want
+to always pass in a previous height
+variable to this so if we're going to
+visit a cell i want to make sure that
+you know we're allowed to visit that
+cell so i'm going to pass in a previous
+height so
+since there is no previous height for
+this position i can just give it a
+default value and i'll just give it the
+same height as this position because
+that's going to be allowed remember
+we're always allowed
+to visit heights of the exact same
+height
+as the previous position and so while
+we're at this
+right we're going through every position
+in the first row
+why not go through every single position
+in the last row
+which tells us the atlantic ocean right
+so what's the last row it's going to be
+the number of rows
+minus one and going through every column
+in that rows and
+so instead of passing in pacific let's
+pass an atlantic
+because the bottom row refers to the
+atlantic ocean and similarly we'll pass
+in the height
+of this position as the previous height
+so we're calling this dfs function so
+let's might as well define it up above
+here now
+the first two parameters are going to be
+the row and column and the next is going
+to be the visit set now
+since we're reusing this function for
+both atlantic and pacific we'll just
+give it a generic name like visit we
+could be passing in either of these two
+sets and the last parameter is the
+previous
+height so if this position has already
+been visited meaning
+if row column is in
+visit then we're going to return we're
+not going to continue this function or
+if it's out of bounds we're also not
+going to return right because remember
+we're already going
+from the ocean from let's say the
+pacific ocean and trying to visit
+all the cells that we can because that's
+going to tell us
+all the cells that can reach the pacific
+ocean so we're not even trying to reach
+the ocean right now
+we're going from the ocean to all the
+cells so if we go out of bounds then
+we're going to have to return so
+if let's say r is less than 0 or
+c is less than zero or if r is
+equal to the number of rows that means
+we've gone too large
+or if c is equal to the number of
+columns that also means we've gone too
+large
+and the last case where we would want to
+return is if
+the height of this position row column
+is less than the previous height
+because remember we're only allowed to
+go to heights of greater height or equal
+so if the height was too small
+then we would want to return if we're
+not returning that means we're finding a
+new cell so let's go ahead and add it to
+visit we're visiting this new cell row
+column
+and then on all four of its neighbors we
+also want to run dfs
+on all four of those neighbors and we
+could do that with a loop but i'm lazy
+so i don't want to write that out i'm
+just going to
+copy and paste this four times so so row
+column
+passing in visit and passing in the
+previous height which is just going to
+be
+heights at this position row column
+let's copy and paste this four times and
+so
+we're gonna go through all four of its
+neighbors so row plus one
+is one neighbor row minus one is a
+neighbor column plus one
+is another neighbor and column minus one
+is another neighbor
+and that's going to be the entire dfs
+function for us
+it's going to be marking all nodes that
+can visit
+that can reach the pacific ocean or the
+atlantic ocean depending on what we pass
+in
+and so right now we're doing that for
+the first row and the last row
+but we also know the first column is
+going is going to be
+the pacific ocean and the last column is
+going to be the atlantic ocean so let's
+do that so for every
+row in range of rows
+we want to get every position at the
+left
+most column and call dfs on it so
+for row we're just going to pass in the
+current row we're going to go through
+every single row and for column we're
+going to pass in zero
+right we know that the first column is
+zero and if
+and the first column can reach the
+pacific ocean so that's what we're going
+to pass in and for heights
+we're just going to give it the default
+value of this position
+and similarly let's do the same thing
+for the last row
+let's do the same thing for the last
+column so for
+columns instead of zero let's do columns
+minus one
+and instead of pacific let's pass in the
+atlantic ocean because that's
+what the rightmost column refers to and
+heights is going to be the same default
+value
+and so we don't have to rewrite the dfs
+function right because we already wrote
+it up above here we're reusing that
+function
+so once these two loops have executed we
+will have marked
+every single position that can reach the
+pacific ocean
+in here and we'll have done the same
+with the atlantic ocean so
+now after that let's just go through
+every single position in the grid
+brute forcing it so every single
+position every single row every single
+column
+and for every single position we want to
+know if
+this position row column is in
+the pacific ocean and if row column
+is in the atlantic ocean then what we
+want to do
+is let's first declare a result list
+if this position was in both atlantic
+and pacific we want to go ahead and add
+it to
+our result and we want to add it as a
+let's say as a sub list and so once
+we've done that then we have definitely
+found out every single
+position that can reach both atlantic
+and pacific ocean and then we can go
+ahead and return that result
+okay i had a pretty stupid bug so sorry
+about that so when we're passing in
+uh we're you know we're finding the
+position of heights so
+you know we have column because that's
+what we're at for row we should have
+zero because that's the position that
+we're starting at so sorry about that
+let's change this to a zero and
+similarly down here
+i actually think we have this right so
+rows minus one because that matches over
+here but down here
+we have row and column zero so we want
+to change column to zero over here
+and over here we do have row so that
+matches but columns minus 1
+is the column value that we want to pass
+in so with those changes you can see
+that this solution does work and it is
+about as efficient as you can get for
+this problem
+so i hope that this was helpful if it
+was please like and subscribe
+it supports the channel a lot and i'll
+hopefully see you pretty soon

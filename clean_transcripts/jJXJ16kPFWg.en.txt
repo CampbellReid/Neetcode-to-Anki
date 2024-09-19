@@ -1,0 +1,417 @@
+hey everyone welcome back and let's
+write some more new code today so today
+let's solve the problem valid palindrome
+i'm actually going to be solving this
+two different ways and i think both ways
+are definitely going to be helpful to
+know in an interview setting before we
+start i just want to quickly mention
+that this problem is actually a part of
+the blind 75 list of questions and
+luckily we have actually solved the vast
+majority of the blind 75 questions i
+even have a playlist of all of these
+questions in the description if you want
+to take a look and of course we will be
+finishing one more today getting one
+step closer to 100 completion of blind
+75 so we are given a string s all we
+want to do is determine if it's a
+palindrome uh if it is we can return
+true if it's not we return false uh only
+one catch is that we are only
+considering alphanumeric characters in
+the list and we are ignoring cases by
+ignoring cases they mean upper and lower
+case so in the input string you can see
+the leftmost character is capital a the
+rightmost character is lowercase a both
+of these characters are considered the
+same so if we had a string an input
+string like big a lower a this string
+itself is a palindrome so we do return
+true even though one is uppercase and
+one is lowercase we are ignoring the
+cases of the characters uh and also when
+they say we're only considering
+alphanumeric characters basically it
+means we can ignore everything that's
+not an alphanumeric character what is
+alphanumeric basically everything from
+uppercase a to uppercase z everything
+from lowercase a to lowercase c and
+everything from zero all the way to nine
+right every character and every digit so
+basically in this input string it might
+not look like a palindrome initially but
+the answer is yes true it is a
+palindrome because and actually before
+we even get into that what is a
+palindrome if you don't remember well
+basically the easiest way to check if a
+string is a palindrome is basically if
+it reads uh the same way as it does when
+it is reversed meaning if the string is
+the exact same even after it's been
+reversed so for example a b a if we
+reverse this string it's still a b a so
+it is a palindrome right so and let's
+take this string if we reverse it is it
+still the exact same basically if we
+read it in reverse order and the answer
+is yes let's just compare a few
+characters initially let's start at the
+beginning right a uh and remember we're
+ignoring case so when i say ignoring
+case i'm just going to basically convert
+it to lowercase so everything is just
+going to be lower okay so we have an a
+okay next character is a space character
+but remember we're only considering
+alphanumeric so we don't even consider
+the space we want to skip that space so
+just delete it right
+next character m
+and then next character a next character
+n so we just took this from the
+beginning of the string a man right so
+let's start at the end of the string uh
+we have a lowercase a right and then we
+have a lowercase m then we have a
+lowercase a then we have lowercase n so
+even starting at the end of the string
+it looks like it's the same as the
+beginning when we read it in reverse and
+it turns out that if we you know take
+this string and remove
+all the spaces all the special
+characters and then convert everything
+else to lowercase and then we reverse it
+it will be the exact same string and
+that's the approach i'm going to be
+taking i'm just going to be removing i'm
+going to be filtering all the useless
+characters from this keeping the
+characters that we want and then
+converting them to lowercase then
+reversing the string and then checking
+if it's still equal so now let's get
+into the coding solution at least the
+first coding solution okay so now let's
+code it up and remember we're going to
+be building the new string which is just
+going to be removing all the
+non-alphanumeric characters from the
+input string so this solution is kind of
+the cheating solution where i'm going to
+be using a lot of built-in functions and
+extra memory as well so we're going to
+just iterate through every single
+character in the string s if that
+character is alphanumerical and the good
+thing is python and actually i think
+most uh libraries most languages like
+java have a built-in function to check
+if a character or a string is
+alphanumerical python at least does so
+we're checking if this character is
+alphanumerical if it is we want to
+include it in the new string so we're
+going to go ahead and take that
+character and add it to the new string
+but one thing you don't want to forget
+is we want to make sure that every
+character is lowercase so before we add
+it to the new string we want to make
+sure that it is lowercase so we'll
+convert it to lowercase and then we're
+done with that we have the new string we
+removed all the other characters from it
+now we just want to check if it is the
+exact same when it has been reversed
+so we're just going to take this new
+string compare it to the reversed string
+which in python you can do like this
+by you know this is the syntax for
+reversing a string so if they are equal
+then we can return true if they're not
+equal this will return false which is
+what we want to do to determine if it's
+a palindrome so now let's run the code
+and make sure that it works as you can
+see on the left yes it does work but
+there are some deficiencies with the
+solution that maybe your interviewer
+won't want you to use maybe they won't
+want you to use this alphanumerical
+function and they want you to implement
+it yourself and maybe they don't want
+you to use extra memory clearly we use
+extra memory by building the new string
+and we actually used extra memory over
+here when we reversed the string we
+created a new string that was the
+reversal of the original so let's see
+how we can actually improve this
+solution okay so now let's see how we
+can actually solve this problem with
+constant extra memory without using
+extra memory without creating a new
+version of this string and the main way
+is going to be by using pointers so
+we're going to have two pointers a left
+pointer and a right pointer because
+remember there are multiple ways to
+check if a string is a palindrome we
+don't have to reverse it we can just
+compare the left character and the
+rightmost character if they're equal
+then we shift the pointers in the left
+pointer comes here and the right pointer
+goes here and then we can continue to
+check to make sure that the characters
+are equal if they're not equal then we
+return but how do we know when to stop
+well we're going to keep incrementing
+the left pointer and we're going to keep
+decrementing the right pointer until
+eventually they meet in the middle or
+the left pointer you know passes the
+right pointer right the left pointer
+becomes here and the right pointer is
+over here that's how we know when we can
+stop or maybe they will meet
+exactly at the same character if the
+length of the string happens to be odd
+okay so that's actually pretty simple
+not too bad so what are we gonna do okay
+left is here right is here this is
+capital a but of course we're gonna
+convert it to lowercase this is
+lowercase a so they're equal right okay
+so then right pointer is gonna be
+decremented by one so the right pointer
+is going to be over here at the m
+character left corner is going to be
+incremented by one and it's going to be
+here well we're at the space character
+but remember we want to ignore spaces we
+want to ignore everything except for
+alphanumerical characters and can we try
+to do this without using a built-in
+function well let me show you how we can
+kind of do that basically i did some
+quick googling and we're actually going
+to use ascii values to determine if a
+character is alphanumerical basically
+what you need to know is that each
+symbol
+you know ascii symbols is 128 of them
+and lowercase and uppercase english
+characters happen to have an ascii value
+associated with them you can see the
+integer 0 has an ascii value associated
+48 uh integer 1 has 49 integer 2 has 50
+so they are contiguous all the way down
+to integer 9 which is at 57. so that's
+important and we also have uppercase a
+starting at 65 going all the way down
+to 90. they are contiguous as well and
+then eventually we can get to lowercase
+starting at 97 going all the way down to
+122. these are contiguous as well using
+this information in pretty much every
+language you can write your own
+alphanumerical character detecting
+function and i'll show you how to do
+that in a few minutes but for now just
+assume that we do have our own
+alphanumerical function and our left
+pointer is over here what do we want to
+do we don't really want to compare this
+character with the character m on the
+right side do we because we want to skip
+this character so how do we skip it well
+we can create a while loop
+so while our left pointer is not
+alphanumerical then we're gonna
+increment left right we're gonna do left
+plus plus we're gonna keep incrementing
+left while it is not a alphanumerical
+character because we want to ignore uh
+characters that are not alphanumeric so
+we're gonna increment left one more time
+now luckily it is a alphanumerical
+character it's the character m so we
+compare left and right they're exactly
+the same so we continue with our
+algorithm we uh decrement r over here
+increment left over here right now
+they're both at the same character and
+we're going to continue the algorithm so
+that's the main idea i won't run through
+this entire string because it's pretty
+long but eventually the strings will
+meet in the middle for example over here
+somewhere maybe at that point we'll see
+okay they're at the same character and
+then we'll say we can stop our algorithm
+we've determined it is a palindrome and
+then we can return true so now let me
+show you how to code it up the benefit
+of this solution it is still a linear
+time algorithm it's still big o of n
+because we have to iterate through the
+entire string but the memory complexity
+is big o of one because we're not using
+any extra memory in this case okay so
+now let's get into the code first thing
+i'm going to do is write our alpha
+numerical function so
+it's going to take in a single parameter
+just going to take in a character and
+then we're going to determine if that
+character is alphanumeric or not how can
+we determine that well i was using the
+ascii values a moment ago right i was
+talking about them so in python you can
+get the ascii value of a character uh
+using the ord function we just want to
+know that the ascii value of this
+character if it is an uppercase
+character how can we check that well as
+i showed you a moment ago ascii values
+are contiguous for uppercase characters
+right so from uppercase a to uppercase z
+uh they're contiguous so if the ascii
+value of the c character of whatever
+this character happens to be is between
+the ascii value of uppercase a and
+uppercase z that means it's an uppercase
+character so that's good good so far
+right that's progress for now we can
+check that this is an uppercase
+character but we want to check if it's
+alphanumeric so we have to extend this
+idea so how about we say okay that or
+second condition i'm actually just going
+to copy and paste this because it's
+going to be similar we want to check if
+it's a lowercase character right because
+that's the next thing is it uppercase or
+is it lowercase we can do that by taking
+the ascii values of the lowercase a and
+lowercase z and last it could be a digit
+from zero to one or zero to nine
+actually so let's do that same thing
+right starting at zero is in between
+zero or uh the integer nine if any of
+these is true this will be true so
+basically we've determined if it's an
+alphanumeric or not that will that's
+what this condition will be so we can go
+ahead and return this so if it is
+alphanumeric of course this will return
+true if it's not alphanumeric this will
+return false okay so we got our helper
+function out of the way now let's
+actually write the algorithm as i showed
+in the drawing we're going to have two
+pointers left and right left is gonna
+initially be at zero right is initially
+going to be all the way at the right
+side so the length of the string minus
+one and remember we want to continue the
+algorithm we want to check if it's a
+paundrome while the left pointer is less
+than the right point the pointers have
+not met each other yet or crossed each
+other and so now we get to the point
+where we actually want to compare the
+characters so we want to take the
+character at position left and the
+character at position right and if
+they're not equal we want to return
+immediately right because if we find a
+single pair that's not equal then we
+know it's not a palindrome so we can
+return false immediately
+but did we forget about anything well
+the first thing we forgot about is we
+want to make sure to only compare the
+lowercase versions of each character so
+let's convert this to lower and convert
+this to lower
+so that's good we're so if one of these
+is upper case one of them is lowercase
+we're still good but did we forget about
+anything else well we never called our
+alphanumeric function right what if one
+of these is not an alphanumeric
+character well we can't have that right
+we shouldn't allow that to happen so
+before we even execute this if statement
+let's make sure both characters at left
+and right are alphanumeric so while it's
+not alphanumeric so for example while
+the character at position left is not
+alphanumeric what do we want to do well
+we want to increment that left pointer
+right so we can uh plus 1 to this but
+one thing we want to make sure is that
+the pointer never goes out of bounds so
+let's just add a checks to make sure
+left is less than right for example this
+will make sure that of course it never
+passes the other pointer and it'll also
+make sure that the pointer doesn't go
+out of bounds and we want to make sure
+to do the exact same thing
+for the other position as well for the
+right pointer so
+make sure that right is greater than
+left and
+the character at the position right is
+if it's not alphanumeric then what do we
+want to do we want to decrement the
+right pointer by one instead of
+incrementing but but both of these while
+loops will make sure that both
+characters are alphanumeric before we do
+the comparison which is what we wanted
+to achieve so
+then this will return false if it's not
+a palindrome if the entire loop finishes
+that must mean that the string is a
+palindrome so then we can just go ahead
+and return
+true oh and actually one more thing
+before i forget
+after we do do the comparison we want to
+update our left and right pointers right
+we want to compare the next position so
+to the left pointer we're going to
+increment it by one to the right pointer
+we're going to decrement it by one so
+just moving to the next position to do
+the next comparison on the next
+iteration of the while loop so now this
+is the entire code so let's just run it
+to make sure that it works okay i was
+dumb in python if you want to call
+another function inside of an object you
+have to use the self keyword so let's
+try that one more time and as you can
+see on the left yes it does work but
+it's actually slightly less efficient
+than the other solution even though the
+big o time complexity is the exact same
+and the memory complexity of the
+solution is actually better than the
+other one this is no extra memory needed
+as you can see so i really hope that
+this was helpful if it was please like
+and subscribe it really supports the
+channel a lot consider checking out my
+patreon where you can further support
+the channel and hopefully i'll see you

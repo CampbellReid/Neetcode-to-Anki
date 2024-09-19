@@ -1,0 +1,286 @@
+everyone welcome back and let's write
+some more neat code today so today let's
+solve
+merge intervals we are given an array of
+intervals with a start and an end value
+so an interval is a start and end value
+you can think of it like a class or a
+meeting or some
+kind of time period or whatever and for
+each of these
+intervals we want to take all the
+overlapping
+intervals and then merge them and then
+we're going to have a new
+output array of intervals and since we
+merged the overlapping intervals the
+result
+is going to be non-overlapping so in
+this case
+we see we have an interval 1 3 and
+2 6. so these two are overlapping we can
+merge them into one
+interval 1 6. the remaining two
+intervals
+are non-overlapping so they do not get
+merged and then we see that the
+output has three on intervals one
+that we had to merge to get and then the
+two
+original and this second example just
+basically clarifies that if we have one
+interval one four and a second interval
+four
+five now these aren't technically
+overlapping
+in a sense right like we have one to
+four and
+four to five so they clarify that these
+two actually
+do count as overlapping so what's a
+good and efficient way to solve this
+problem let's say we're given
+the exact same four intervals that we
+were given in the original example but
+notice
+this time they're out of order this one
+is 1 3 this one is 8
+10 this is 2 6. it was originally over
+here
+right they had given the input to us in
+sorted
+order right so that's kind of a hint
+that it might be helpful for us
+to keep our intervals in sorted order
+but what's a good way to kind of
+visualize what's actually going on with
+these intervals
+these numbers are pretty descriptive but
+it's better to have a picture to look at
+so i'm gonna draw a number line and
+we're gonna
+start at zero because they clarify for
+us in the problem
+that any interval is not gonna start at
+like a negative value so we can
+start at zero so let's just start
+putting these
+intervals into our number line and see
+what happens
+so we have one three so i'm gonna
+have a line going from one
+going from one to three which is over
+here
+so this interval is length 2. we'll have
+an interval going from
+8 to 10 another interval of length
+2. we'll have an interval from 15 to 18
+and the last interval is from two to six
+so notice this time we actually do have
+an
+overlapping interval two to six
+so i'm gonna draw it above so i'm gonna
+draw it
+where it's obvious that we have two
+intervals that are
+overlapping now when you actually draw
+out the number line
+it kind of becomes obvious that
+it would be very helpful for us to take
+these
+intervals and sort them based on
+the start value we don't care so much
+about the end value because we want to
+go through our number line starting
+at the beginning starting at the start
+value
+going to the next start value going to
+the next start value and then continuing
+that
+because this allows us to detect
+so for example we look at this interval
+first we know it goes
+from one to three next we look
+at the second interval it goes from
+two to six and since we just looked at
+the previous interval
+over here we know that this one overlaps
+with this one so what are we going to do
+we're going to merge them
+together into a new interval
+so it results in a new interval from
+1 to 6 because remember ultimately we
+are trying to
+merge the intervals and then we go to
+our next starting position which is
+a so we have an interval from 8 to 10
+and we know it does not merge with this
+one because they're non-overlapping we
+got some
+space over here right lastly we go to
+this interval and it goes from 15
+to 18 we know it does not overlap with
+this one
+there's all this space in between right
+so just to reiterate we're going to take
+our input list of intervals sort
+by the start value
+of each interval and then we're gonna
+iterate through each start value right
+starting at
+the first one then the next one then
+this one
+then this one and where each time we're
+going to check okay
+does the current interval does the most
+recent interval
+overlap with the previous interval if it
+doesn't we don't do anything
+if it does which it did in this case
+then we can merge them into one interval
+now it might seem unnecessary to even
+have a picture like this because
+this interval problem is actually
+straightforward right we just sort and
+then we merge the intervals
+but there are a lot more difficult
+interval problems
+where i'm telling you drawing a picture
+like this
+drawing a number line to understand
+what's actually going
+on makes the problem a lot easier to
+solve
+so now let's write the code remember we
+are sorting the entire input
+so the and then iterating through the
+input so the
+time complexity is going to be big o n
+log n
+where n is the number of intervals that
+we're given
+so thankfully for us in python it's
+pretty straightforward to sort we can
+just take
+interval sort and what's the key we're
+sorting by because remember we're
+sorting a list
+of pairs so the key is going to be a
+in python a lambda function so in this
+case
+i is going to stand for the interval and
+what value of this interval are we going
+to use we're going to use the first
+value so at index
+0 we're sorting by the start value if we
+wanted to sort by the end value this
+would be
+i of 1 but we're going to sort by the
+start value only
+and so let's also declare an output
+where we're going to put the merged
+intervals so i'm not going to initialize
+this to
+empty i'm actually going to take the
+first interval
+and have it inserted into the output
+just so
+i can avoid an edge case so we have
+initialized
+the interval so now we're going to
+iterate through every
+single interval in sorted order
+and technically we can skip the first
+one because we already added the first
+interval into the output
+and instead of just having the interval
+itself we know we're going to use the
+start and end value so i'm just going to
+extract them
+like this and so how do we know if
+the interval is overlapping with the
+most recent
+interval well we can get from our output
+this is why i added one so we can avoid
+the edge case from our
+output we can get the most recently
+added interval
+and get the end value of it because
+that's what we need to know if it
+overlaps
+so the end value of the most recent
+interval
+we'll call it last end and we're going
+to check of the current interval we're
+at the start and end value
+we're iterating through if the star
+is less than or equal
+to the last ending value that means
+they're overlapping the equal is
+important because they
+they told us in the second example that
+we are counting
+equal as overlapping so if they are
+overlapping what are we gonna do we're
+gonna merge them
+how do we merge them well all we have to
+do
+is take the most recently added
+interval and take the ending value
+of it and set it to the max
+of itself which we already have in last
+end
+and the max of the current end value
+that we're at
+and the reason we need to take the max
+is what if we had
+two intervals starting at 1 5
+and the second interval is 2
+4 because we would iterate through them
+in this order because this has a
+starting value of 1 this has a starting
+value of 2 but notice how this actually
+has a
+larger end value than this one so if we
+just take
+4 and merge this together and set this
+to four we're actually making the
+interval
+smaller we want to keep the five because
+merging these two together
+is going to actually result in one
+five so in the case that they're
+non-overlapping what are we going to do
+well we don't have to merge but we do
+have to
+take that interval and still add it to
+our
+output so we're going to take start end
+and just add it to our output so what
+would be an example of that well what if
+we had
+7 a right these two intervals are
+non-overlapping so the result would
+actually
+be itself right we don't have to make
+any changes we don't have to merge
+we can just leave it as it is and that's
+actually it
+so we didn't really have to do anything
+since we used the
+built in sort we took care of the main
+problem
+main part of this problem and all we
+have to do now is return
+the output and so this is a pretty
+efficient solution
+i hope this kind of explained a little
+bit of the intuition
+and you kind of have like a visual
+picture of what is actually going
+on as we run this algorithm and why
+we're doing it the way we
+are and i hope this was helpful if you
+enjoyed
+please leave a like and subscribe it
+supports the channel a lot

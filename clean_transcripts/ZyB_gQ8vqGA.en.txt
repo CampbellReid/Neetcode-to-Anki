@@ -1,0 +1,482 @@
+everyone welcome back and let's write
+some more neat code today so today let's
+solve the problem reconstruct itinerary
+this is a pretty difficult problem but
+it's doable if you have a good
+understanding of graphs and graph
+traversals especially dfs which we're
+going to be using in this problem but
+we're given a list of airline tickets
+and these tickets are basically a graph
+edge we have a from and a two so
+basically a source and a destination and
+it connects two nodes together in this
+case the nodes are going to represent
+airports or cities and basically using
+this list of tickets we want to
+reconstruct the itinerary and basically
+what that means is we want to
+reconstruct the flight history of a
+person who had this list of tickets all
+of the tickets belong to someone who
+departed from jfk so no matter what this
+is going to be our starting edge in our
+graph so basically if you take a look at
+this picture we're always going to be
+starting at jfk so we're pretty much
+guaranteed that jfk is going to be a
+node in our graph they also tell us that
+we can assume all tickets form at least
+one valid itinerary so basically we're
+guaranteed that there is a solution and
+in the solution that we create we have
+to use every single ticket exactly once
+and there's one last thing that they
+tell us there could be multiple
+solutions and if there are multiple
+solutions we want to return the one that
+has a smaller lexical order basically
+the one that comes first in sorted order
+and you can't really tell that from this
+example because there's really only one
+solution but let's take a look at
+another so here we have a different
+graph let's say you know a was jfk in
+this context i'm just using abc to keep
+it simple but we're starting at a we
+could uh you know we want to go over
+every single edge basically each edge
+represents a ticket we want to go over
+every single edge and we want the
+history of the destinations to be our
+result so you know let's say we're
+creating our result a is going to be
+first and then you know what we could do
+is we could say okay let's visit uh c
+first right we get to c and then we go
+back to a right from c so
+you know what we could say is okay we
+first go to a then go to c then go back
+to a and then we go to b and then we go
+back to a from b and then that would
+leave our result looking something like
+this that's one possible solution but
+the other solution would have been to go
+to b first and then go to c what that
+would have looked like is a
+b
+a
+c a now which one of these has a smaller
+lexical order which one of these comes
+first in sorted order well the first
+character a is the same but the second
+character could be b or c which one of
+these comes first b comes first so of
+course of these two we would prefer the
+second one we would return the second
+order as our result so that's something
+to keep in mind and the way we can
+actually handle this is going to be
+pretty easy i'll show you how we can you
+know make sure that we return the
+smaller lexical order result now this
+example is very simple because there's
+really only one you know ordering that
+we could possibly create and to get that
+ordering what we could do is just run
+dfs starting at jfk we know we're always
+going to start at jfk we create a dfs
+running on this and you know using this
+dfs technically we are allowed to visit
+multiple the you know the same node
+multiple times as i showed in the
+example just a moment ago but what we
+can't do is go over the same edge
+multiple times we can't reuse one of our
+tickets but in this case if we run a dfs
+starting at jfk you know what we'll get
+is jfk first then this one then this one
+then this one and then this one so
+there's really only one ordering and you
+can see that that's the output for this
+example the expected output and so
+that's what we can return but if we of
+course had multiple choices like this or
+you know adding a bunch more edges and
+we still have to go over every single
+edge and we have to return the smallest
+lexical order you know let's see how we
+can do that algorithm so like i
+mentioned you really have to have a good
+understanding of graphs to be able to
+solve this problem i'm going to assume
+you kind of already know dfs and the
+basics of graphs so what we're going to
+use to do the traversal on this graph in
+the first place is you know create an
+adjacency list of course we're already
+given the list of edges but we have to
+actually create an adjacency list out of
+that to be able to traverse over the
+graph and the way we're going to be you
+know creating this adjacency list is
+just going to be by using a hashmap
+we're going to map every single node to
+the you know every single source rather
+to the possible destinations that we can
+take and the easiest way to build an
+adjacency list is just kind of iterate
+over the input which is tickets in this
+case right it's a list of source
+destination pairs so what we would do is
+say okay jfk has a san francisco sfo at
+least i assume that's san francisco uh
+and then it also has a second one
+atlanta atl and we can start adding
+those to our adjacency list like this is
+the list this is the source right so
+from jfk we can travel to these two
+cities but what i'm going to tell you
+right now is that we should have this
+list in sorted order because we're going
+to be running dfs and as we run dfs
+we're going to start at the first
+possible source that we could visit from
+jfk right we're going to try sfo and
+maybe we find a result starting at sfo
+in that case we could return that as the
+result but what if it turned out that
+maybe we could have also found a result
+of you know going to atlanta first
+rather than sfo in that case this is the
+result that we would prefer because it
+comes first in sorted order so what we
+want is for each of these lists to be in
+sorted order and we could build the
+adjacency list and then sort each of
+these lists independently but the easier
+way to do it is actually just to sort
+the input and i'll show you why because
+the way we're going to be sorting the
+input is by doing this these are pairs
+of values right the first uh value is
+going to be the first key that we're
+going to use to sort so you know these
+two jfks would be next to each other but
+then if there's a tie between the first
+value then we want to use the second
+value as our sorting keys so among these
+two which is going to come first sfo or
+atl of course atl because it comes first
+you know that's just something to keep
+in mind so if we have this in sorted
+order then our adjacency list will be
+sorted by default right and i'm actually
+going to build this adjacency list now
+assuming that this thing is in sorted
+order or at least i'm going to be going
+through the sorted order version of this
+uh list of tickets so first is going to
+be atl and it has jfk as one of its
+destinations so let's do that and atl
+also has sfo as one of its destinations
+so let's add that next we have jfk it
+has atlanta as one of its destinations
+and it also has sfo as one of its
+destinations and then lastly we have sfo
+which only has one destination which is
+atl so let's add that so now we're gonna
+start running our dfs so let's focus on
+the picture now so we're gonna be
+starting at jfk you know we have two
+outgoing edges from jfk we could go to
+sfo or we could go to atl which one are
+we going to decide well we're going to
+look at our adjacency list and see which
+one comes first well atl comes first so
+let's visit atl so we're going to go
+along this edge and now we're going to
+be at atl and when we do that we're
+actually going to remove atl from our
+adjacency list at least temporarily for
+now and by the way as we you know go
+along this we're also going to be
+building our result our result is just
+going to be you know the travel history
+of these airports we know initially we
+start at jfk and right now we just
+visited atl so that's going to come next
+okay now from atl we have two outgoing
+edges we could go to sfo or we could go
+to jfk which one are we going to decide
+well let's see which one comes first in
+sorted order it's jfk so let's go to jfk
+next so we're going back to jfk so we
+visited both of these two edges and
+let's remove jfk as an
+as a destination from atlanta and in our
+result now let's add jfk again because
+we started at jfk then we went to
+atlanta then we're back at jfk now from
+jfk we only have one outgoing edge
+remaining sfo and that you can tell from
+our adjacency list as well so let's pop
+sfo now we're at sfo let's add that to
+our result as well now from sfo we only
+have one destination it makes things
+easy for us that's atlanta so let's pop
+atlanta from here let's go along that
+edge and let's add atl to our result and
+from atl now we only have another a
+single edge outgoing it's to sfo so
+let's pop sfo travel along that edge and
+add sfo to our result so this was a
+valid way because we just visited every
+single edge how exactly do we know we
+visited every single edge though well
+our result is going to be keeping track
+of all of the nodes that we visited in
+our graph right not the edges we know
+every time we visit one of the edges
+we're going to be adding another node to
+our result and we know that we actually
+initially start with a single node which
+is jfk before we even travel along any
+edges right we start at jfk so basically
+we know we are finished when the length
+of our results array is equal so i'll
+write it out is equal to the length of
+our tickets plus
+1. so down here you can see when length
+of result is equal to length of tickets
+plus one that's how we know that we are
+done the plus one comes from the fact
+that we already start with a single uh
+node in our result array and then every
+other node comes from traveling along
+one of the edges in our graph so that's
+the main idea now in this example it was
+kind of simple for us because the first
+you know solution ended up working the
+first path that we tried ended up
+working but if it didn't suppose we
+actually had a graph that looked like
+this one and let's say we started at the
+a node in this case we have two choices
+of where we could go we could go to c
+first or we could go to b first we're
+going to choose b because it comes first
+in lexical order compared to c so we
+travel along this edge and we end up
+visiting the b okay well now we're stuck
+here there's no outgoing edges from b we
+can't even get back to a so what we
+found is we tried to be greedy we tried
+to take the first character that came
+right the the first the alphabetical
+character but it didn't work out for us
+so we end up backtracking we say okay
+we're actually not going to travel along
+this edge at least just yet we're
+actually going to travel to the c first
+even though it comes after in order
+compared to the b just because we know
+that at least here we might be able to
+create a valid path so we go to c then
+we go back to a and then we go to b so
+basically what we
+realized from this example is that
+sometimes in some of the cases we're
+going to have to backtrack so we might
+go along an edge and realize that it
+doesn't work and then we're going to
+have to reverse our decision and then
+travel along a different edge so that's
+something we're gonna have to keep in
+mind let's actually jump into the code
+in a second and stay tuned because it's
+actually gonna be pretty tricky but
+let's discuss the time complexity of
+this solution and since i mentioned we
+are going to be doing some form of
+backtracking the overall time complexity
+to run a dfs on the entire graph in the
+worst case it would be like a v plus e
+right basically the size of the graph
+but since we are backtracking
+potentially for every single edge that
+exists in the graph the overall time
+complexity is going to be you know the
+size of the graph squared and you know
+since we know that the number of edges
+is actually going to be you know
+approximately the same or greater than
+the number of vertices we can actually
+think of this as pretty much being e
+squared as the time complexity and as
+the memory complexity we can consider it
+to be big o of the number of edges one
+because we're going to be storing it in
+our adjacency list and when we do the
+function recursively this could be the
+size of the call stack in the worst case
+so this is the time complexity this is
+the memory complexity now let's code it
+up okay so let's code it up we are going
+to first create our adjacency list we
+are going to map every single source
+node to an empty list initially so let's
+go through every single source
+destination in our input which is
+tickets and just map the source to an
+empty list for now and then let's
+actually build the adjacency list so
+let's go through every source
+destination in our tickets and then say
+for this source we want to append to it
+this destination and that's really all
+the pre-work that we have to do now we
+actually get into our dfs where we are
+going to be passing in some source node
+and then running dfs on it seeing if we
+can actually find a valid path and then
+updating our result accordingly right
+our result is basically going to be that
+path that we found that is valid and in
+lexical order now we know that we have a
+starting point in our results initially
+we start at jfk and we actually don't
+have to pass this variable into our dfs
+because our dfs is declared inside of
+the outer function but now for the base
+case of this dfs one is that we find our
+solution how do we know if we find our
+solution again well if the length of the
+result is exactly equal to the length of
+the tickets plus one and in that case
+we're going to return true saying that
+we did find a valid path now one of the
+cases where we can't find a valid path
+is if the this source that we're at is
+not actually in our adjacency list what
+that means is that this source does not
+have any outgoing edges from it in that
+case we can go ahead and return false
+that means we can't find a valid path
+okay so now what we want to do is
+actually iterate through all of the
+neighbors of our current
+source node right so for this source
+node we're going to go through all of
+the adjacent neighbors and let's
+actually call it v so for the input that
+we're given this source we're going to
+go through all of its neighbors we're
+going to call that neighbor the v and we
+actually want to enumerate over this and
+basically what enumerate is going to do
+for us is going to allow us to iterate
+over the index at the same time as the
+actual
+value which is the vertex but what
+you're about to see is actually we're
+going to be modifying the adjacency list
+as we iterate through it right because
+if we visit this v
+vertex this node then we want to remove
+it we want to remove the i index from
+the adjacency list currently but we
+can't really
+you know update a list as we iterate
+through it that's not really good to do
+it in many cases it's not even allowed
+so you know rather than iterating over
+this i'm going to actually create a
+temporary array of that so i'm going to
+create a copy of it and in python you
+can do that just like this just pass
+that list into a list constructor and
+that'll create a copy for us and then
+let's iterate over that copy instead
+because we want to be updating the
+actual adjacency list because that's
+what's going to be used in future
+recursive calls okay so we're we're
+visiting one of the neighbors this is
+that neighbor what we want to do is pop
+it from our adjacency list so let's get
+the adjacency list of the source and
+then pop it so we're popping the i index
+and once we pop it we also want to
+append it to our result what we're
+saying is this is our current path so we
+can add that v that vertex to our result
+and then what we want to do is run our
+i'm just gonna you know leave that as a
+placeholder for now and then if that dfs
+ends up returning true then we can
+return true and then stop the function
+call because we're just looking for one
+path and we will know that that path is
+the smallest lexical order one because
+we sorted our tickets which i just
+realized i forgot to do so let's
+actually do that up above before we
+build our adjacency list let's not
+forget to actually sort our tickets
+by default in python this will
+sort the tickets based on the pair
+basically the logic that i summarized
+earlier in the video but in some
+languages you might have to you know
+customize that source comparator okay by
+jumping back to the logic down here so
+this is the decision that we're making
+kind of in our back tracking if we find
+that it returns true that's great but if
+it doesn't return true then we have to
+backtrack this decision so what what we
+just did up above what we did was we
+popped this so instead of popping let's
+insert it back into our adjacency list
+so at this index we want to add v back
+to it and we you know added this to the
+end of our result so now let's actually
+pop from the end of our result to remove
+that right basically reversing this
+decision that we make and then making a
+new decision on the next iteration of
+the loop now of course it's possible
+that you know down this decision you
+know down this recursive call we don't
+find a solution so in that case we end
+up returning false from this function
+but we know we are guaranteed at least
+one solution so we know that when we
+actually called this dfs function which
+i'm going to do right now called the dfs
+and we know that the parameter we want
+to pass in is jfk that's always going to
+be our initial source node so we pass in
+dfs and then what we end up returning is
+going to be our result and of course
+this time it wasn't really the logic i
+misnamed one of the variables i don't
+know why i named it time it should be
+temp okay now let's rerun this and i
+left our placeholder dfs as it is we
+forgot to pass in the variable we know
+that the variable is v
+v is the node that we're going to be
+passing in okay let's try this again
+okay awesome now it actually works you
+can see that it's pretty efficient on
+the left this is a pretty challenging
+problem but i think that this solution
+while it's difficult it is also doable
+for a hard problem so i really hope that
+this was helpful if it was please like
+and subscribe it really supports the
+channel a lot consider checking out my
+patreon where you can further support
+the channel and hopefully i'll see you

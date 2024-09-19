@@ -1,0 +1,722 @@
+hey everyone welcome back and let's
+write some more neat code today so it's
+been a while for me sorry i've been
+pretty busy but let's
+today solve leak code 42 trapping rain
+water
+so we're given an integer array
+representing the
+heights of certain elevations or
+whatever right so
+it's a one-dimensional array the first
+value is zero
+meaning a height of zero so that's over
+here the next value is one so that means
+a height of
+one some have heights of two this one
+has a height of two
+this one has a height of three right and
+so given this
+entire structure we basically want to
+know how like what's the
+maximum amount of rain water could
+this structure trap right given an
+unlimited amount of
+rain so you can see this is one unit
+right over here
+this is roughly four units right
+one two three four and then this is
+another one right so when you count all
+of those you get a total of
+six squares right so the output is six
+this can trap a maximum of six blocks of
+water
+so with a picture it's pretty easy but
+what how do you
+know right like what's the algorithm to
+determine how much
+each position could trap right like for
+example
+this position is the first one right so
+there's no
+boundary on the left of it right so no
+matter how much
+water we would add over here it would
+all just spill
+to the left and the same is true for
+this position right no matter how much
+water we put on top of here even though
+there's a right boundary over here right
+there's nothing on the left of it so all
+the water is just going to spill out to
+the left so it's not going to trap any
+water
+but you can see in the third position we
+are able to
+trap exactly one block of water so
+what's the algorithm to determine why is
+it one
+right because we care about the height
+because we want to know how much water
+and it's actually pretty simple right
+take a look so here we have
+one block of water what if i added a
+second block of water
+well we can see that there is a boundary
+on the right this is good right
+but what about the left side there's no
+boundary over here right meaning
+any water i add is just going to spill
+out the boundary only has a height of
+one so we're seeing that the height on
+the left is one the height on the right
+is two so we're
+we need to take the minimum of that we
+need to take the minimum of one and two
+because that
+is our bottleneck that is what's
+determining
+exactly how much water we are able to
+trap
+per position right for every single
+position we need
+the max height on the left and the max
+height on the right left and right and
+then we need to take the minimum
+of those two let's take a look at this
+position clearly we can't trap any water
+here but
+why exactly is that the case well when
+you look at the right position right
+in the entire right section the maximum
+height is a
+three right so that's good three here
+what's the maximum height on the left
+side
+it's a one right this position
+is a two if we take the minimum of one
+and three we get
+one so that's our boundary that doesn't
+mean we can trap
+any water here we can trap zero water
+here the reason is
+because the actual calculation is we're
+gonna take the minimum
+we're gonna take the minimum of the
+maximum left height and the maximum
+right height we're gonna take the
+minimum of those two and
+we're going to take the height that
+we're currently at right so let's say
+h of the index i that we're at
+so this is the equation we're going to
+use to determine at every single
+position
+i let's say this is our i position right
+so you can see i is in this equation
+this is going to determine how much
+water we can trap
+in position i so we know the minimum of
+the
+max of the left and right right because
+the left was one the right was three the
+minimum of those is just going to be
+one and h of i so the height at position
+i
+is two over here right two so we're
+gonna take one
+minus two that's actually going to give
+us a negative
+number right that's going to give us
+negative 1
+but we know we can't trap negative water
+right so we're always going to round
+up we're never going to use negative
+numbers because it doesn't really make
+sense
+to trap negative water over here so
+really since the
+solution is negative that really means
+that we can trap
+zero water in this position but let's
+just
+move to a couple more positions before
+you probably get the idea so over here
+right
+in this position the height is one right
+and the max height on the left is two
+the max height on the right is three
+again right so we take the minimum of
+two and three
+so we're going to get two right two is
+the minimum
+and height of i is one right the height
+at this position
+is one so that means we can trap exactly
+one water in this position
+right clearly that is the case right
+we're trapping one unit of water
+and basically if you did this exact same
+calculation
+for every single position including this
+position you'd get
+the appropriate water count so this
+position would give us
+two units of water this is going to give
+us one
+these are going to give us zero this is
+going to give us one and the rest are
+going to give us
+zero water that we can trap once we take
+the sum of all those we are going to get
+our answer
+six so now let me actually show you the
+efficient ways to
+solve this problem okay so i'm going to
+show you two different ways to solve
+this problem
+both of the solutions are linear time
+solutions right so big o
+of n is going to be the time complexity
+of the solution
+but the first solution i show you is
+going to actually require big
+o and of memory as well there's an
+actual optimization you can do with two
+pointers
+to reduce the memory from linear memory
+big o of n
+to constant memory so i'm going to show
+you both
+of the solutions and it's actually not a
+lot of code the code is actually pretty
+easy
+since for every single position right to
+know how much water we can trap at index
+i we need to know what's the max
+left and right height of every single
+position right so for this position the
+max on the left is going to be 2
+right over here and the max on the right
+is going to be 3
+right over here right so we're going to
+need to be doing that calculation a lot
+so we can actually make an array and
+then store
+that calculation for us so that we only
+have to do it
+a single time each so first we can scan
+through the array right just go iterate
+through the entire array
+calculating every single max left
+position meaning
+for this position what's the max height
+on the left of it
+well there aren't any heights on the
+left of it so it's going to be zero
+what's the max height of this well the
+max height is
+zero right that's the only height that
+came before it what's the max height
+on the left of this well it's a one
+right so
+we can do this in linear time big o of n
+time so i'm just gonna do that right
+what's the max height on the left of
+this
+one max height on the left of this we
+have a new max it's two
+right we just keep track of what the
+current max is so far
+right now it's two two we got a new
+height a new maximum that's three so now
+three
+is going to be the max left height for
+the remainder of these
+right so we calculated the max left
+height we can actually calculate the max
+right height pretty easily as well when
+we iterate through this
+in reverse order right we go from right
+to left
+so initially the max right height is
+zero because there's nothing on the
+right of this
+next it's going to be one now it's going
+to be two
+and now we got to a three so the max
+right height for the
+remainder of this is just going to be 3.
+and remember we actually need to take
+the minimum of the max
+left and the max right for every single
+position right so for this position we
+want the minimum
+of these two values for this position
+right
+zero we want the minimum of these two
+values right
+because the minimum is going to help us
+determine how much
+water we can trap in this position right
+and clearly we can actually find the
+minimum of these two arrays as well
+in linear time so here is the minimum is
+zero
+minimum is zero minimum is one one two
+two one and zero
+and so now for every single position
+we're going to determine how much
+water we can trap and we can do that
+remember with our calculation we can
+take the minimum
+of the left and the right and subtract
+from it the height at position i right
+and we're always going to round
+up we always want it to be greater than
+or equal to zero and then we can add the
+sum
+of all of those values and then get the
+total water that we can trap
+so in this position we have zero minus
+zero minus zero right so here the amount
+of water we can trap
+is zero here we have zero
+minus one that's going to be negative
+one but we don't count negative so
+the amount of water we can trap here is
+zero here we have
+one minus zero the height at this
+position so we can actually trap
+one water in this position here
+we have one minus two that's going to be
+negative
+so we can't trap any water here here we
+have
+two minus one so that's going to be one
+that means we can trap
+one water here this is two
+so the maximum boundary is two minus
+zero that means we can trap two units of
+water here
+next position we have a two minus one we
+can trap
+one water here here we have two minus
+three that's going to be negative
+we can't trap any water here this is
+going to be
+2 minus 2 again 0 water that we can trap
+here
+2 minus 1 that's
+1. so we can trap one unit of water here
+here we're gonna get
+one minus two that's negative can't trap
+any water here
+here we have zero minus one that's also
+negative so can't trap
+any water here and that makes sense why
+would be we why would we be able to trap
+water here when there's no
+right boundary but okay so we have all
+of our values we take one plus one plus
+two
+plus one plus one and
+we get exactly what we expected right we
+get a six
+we can trap six units of water here so
+this is the solution
+taking extra linear memory okay so
+now i'm going to show you the o of one
+memory solution it's still linear time
+big o of n time but this time we're not
+gonna need any of this
+extra memory that we just allocated
+we're actually gonna do this
+we're gonna do this with two pointers so
+initially i'm gonna have my left
+pointer over here i'm gonna have my
+right pointer here
+so the right pointer is going to be all
+the way at the end of the
+input array so we're going to have our
+two pointers initialized we're also
+going to have two variables
+max left and max right which are going
+to be keeping track of the maximum
+left pointer and maximum right pointer
+so far so you can see
+left is initially zero so the max so far
+on the left is zero
+you can see right is initially one so
+the max on the right so far
+is one so now we are gonna have to
+update our pointer now which pointer are
+we gonna shift
+we're gonna take the one that has the
+smaller max
+value so right now you can see max
+left has zero max right has one so we're
+going to shift the smaller one
+which is left so we're going to take our
+left pointer and shift it
+so now our left pointer is over here and
+just
+just uh fyi we know that we can't have
+any water stored on the end points right
+on the left and the right
+positions we can't have any water
+because they're endpoints right they
+can't contain any water
+but this position technically can have
+some water
+and how are we going to determine that
+well we're going to take our
+how much water this can contain right
+we're going to take the max
+left value that we have in our variable
+right now right
+how how come we don't need the right
+value
+well i'm going to show you so this is
+the part that you kind of need to notice
+the trick
+i guess right so we're in this position
+right
+now remember originally we wanted the
+minimum down here you can see we wanted
+the minimum of the max
+left and max right well we know what the
+max left
+is so far right the max left is zero
+right that's what's over here
+now we technically don't know what the
+max right is even though this variable
+says
+one yes so far it's one
+but we know that the max right could
+actually be three
+right that's what the true max right is
+of this position right because there's a
+three over here
+so why is it that we don't need that
+value
+because remember we want the minimum of
+the max
+left and the max right now we clearly
+know that the max
+left is zero right so it's smaller
+than what's even at this position right
+and we want the minimum
+of it so no matter how big this value is
+right right now it's a three it could be
+a 10
+right it doesn't matter how big it is
+because we want the max of the left
+and the right and we already know that
+the left
+is pretty small right it's it's zero
+so it doesn't matter what's in all of
+these values
+because we know that the max left is our
+bottleneck right remember we
+shifted our left pointer from here
+to the next position because left
+was smaller than right that's why we
+shifted it
+that's how we're able to calculate the
+water that's trapped in this position
+without knowing what the max right is
+so with that being explained let's
+actually go through this so we can get
+to the code
+so what's the amount of water that we
+can trap over here it's actually
+zero because the max left which is the
+value that we need is zero right so zero
+minus what the actual height is in this
+position is
+one we know that's going to be a
+negative one we don't count negative
+ones
+so we're not gonna use that so we're
+gonna say that zero water can be trapped
+here
+but you can see look this is a one right
+our left pointer is here so we can
+actually
+update this we can cross the zero out
+max left is now actually going to be one
+so now we're actually at a dilemma right
+because take a look our max
+left and our max right are both one so
+it doesn't really matter which one we
+shift let's just shift
+the left one again so we're shifting our
+left pointer over here now right
+and since they're equal this is going to
+be the bottleneck which is
+left pointer and the max left and it's
+one so far
+so no matter how big anything over here
+is we know that one is gonna be the
+bottleneck
+we're gonna do one which is the max left
+pointer or the minimum of the max of the
+left and right pointers right
+so we're gonna take that one minus the
+value that's
+in this position the height of the index
+i
+which is zero so that's going to give us
+a water
+level that is one so that means
+in this position we can store one block
+of water so basically i'm running
+through the
+algorithm with two pointers so i'm just
+going to quickly go through the rest of
+what this example would be
+so again we're going to shift our left
+pointer because left and right are equal
+so it doesn't matter which one we shift
+we're shifting the left one over here
+so now to calculate how much water would
+be stored
+here we're gonna take the max left
+pointer which is one
+and subtract from it the height that's
+in this position
+two that's clearly negative negative one
+so what we're gonna say
+is that zero water could be stored here
+and so since we reached a height of two
+that means we can update max
+left and set it to two now so now
+remember we wanna shift the minimum
+pointer and right now the minimum
+pointer is
+the the right pointer which is a max
+height of one so we're going to take our
+right pointer and shift it
+and since we shift the shift to the
+right pointer now we have to calculate
+the height
+or the water that we can contain in this
+position right
+and so remember now the bottleneck right
+is going to be this the max right height
+for this position
+is one right so it doesn't matter how
+big heights over here are right there's
+a three here but we don't care about
+that because the max
+right height is one and remember we're
+taking the minimum of
+the max left and right height so
+no matter what we do that's always going
+to be 1 for this position
+so we're going to take 1 minus the
+height in this position which is 2.
+that's obviously going to be negative so
+we don't have any water here so we can
+say
+zero water here and since this is a two
+that means we can also update our max
+right height now to two so this is going
+to be set to
+two now the max right height is 2. and
+since they're now once again equal
+they're both set to 2
+i'm going to be updating the left
+pointer because it doesn't really matter
+which one we do
+okay so let's calculate the water in
+this position so we're at a left
+position so we're going to take the max
+left height which is 2 minus the height
+in this position
+1 that's going to give us a 1 meaning
+that we can contain
+1 unit of water and the height in this
+position is 1 so we don't update our max
+left height but we can now shift our
+left pointer one more position
+now our left pointer is over here our
+max
+left height stayed the same it's two so
+let's compute the water we can store
+here
+two which is you know the boundary uh
+subtracted by
+the level here which is zero so that's
+going to give us
+two units of water that we can store
+here so a two here
+and let's shift our left pointer again
+because the max left and right
+are equal so now we're over here what's
+the max left it's still
+two minus the height in this position
+which is one
+that's going to give us a one so that
+means one unit of water can be stored
+here
+let's shift our left pointer again
+awesome so now our left pointer is
+actually at
+a three so what we're going to do is 2
+which is the max
+left height minus 3 which is the height
+in this position that's going to give us
+a negative right so what that tells us
+is that we can't store any water here
+that's a zero
+right but you can see our max left
+height can actually be
+updated now right it's going to be set
+to three now
+so this is a little bit messy but let's
+just say our max
+left height is three right and our max
+right height is still two remember we're
+shifting the minimum
+height so we're taking now the right
+height and shifting it so now
+we can take so we're at a right position
+we can take the max right which is 2
+subtract it from the height in this
+position 2 minus one is going to give us
+a one that means we can store one unit
+of water here
+now let's shift our right pointer again
+because two
+is less than three so now we're
+basically at the last
+position right so the the max right
+height is two
+the height in this position is two so
+what we're gonna do is two minus two
+that's gonna be zero right so we can't
+store
+any water here that's gonna be a zero
+and now you can see
+we filled in the the water levels that
+we wanted right when you take this
+one plus one plus two plus one plus one
+once again you're going to get the total
+six right because
+six is the amount of water that we can
+store i just show you
+showed you now how to actually do it
+without any extra memory right we took
+away this big chunk of memory that we
+were using
+and we did it with two pointers and if
+it doesn't make
+a ton of sense right now it might make
+even more sense when you take a look at
+the code
+which is actually shorter than you would
+expect let me show you that right now
+so one short edge case we have to take
+care of is if not height meaning the
+input is
+empty we can return zero this is needed
+for this problem
+and just like in the explanation i'm
+going to initialize
+two pointers left is going to be at the
+beginning so index 0
+and right is going to be at the last
+index so length
+of height minus 1.
+i'm also going to have two maxes so the
+left max and
+the right max which are initially going
+to be set to
+height of the respective indices so
+height of left
+height of right i'm also going to have a
+result which is going to total the water
+for us
+so i'm gonna run this loop while
+left is less than right so before they
+meet each other
+and remember we're gonna decide which
+cell to compute
+and which pointer to shift depending on
+the comparison between the maxes so if
+left max is less than right max
+then we're going to be shifting the left
+pointer otherwise we're going to shift
+the right pointer so if left max is
+smaller we're going to increment left by
+one in the opposite case we're going to
+decrement
+right by one and remember we're also
+going to be
+updating the the left max right so which
+is so if we get to let's say compare
+left max with
+the current height at position left
+right so whichever is greater we're
+going to be updating the left max
+with that value and we're going to do
+similarly
+in the opposite case so right max would
+also be updated to the max
+of itself and the new height that we get
+to height r
+and remember so in this case right we're
+going to be taking the left
+max and then subtracting the height at
+the position i
+or the position l right at the left
+pointer position
+right so we're going to be making this
+computation right
+and then we're going to be adding that
+to the result
+right so this is going to be added to
+the result
+now notice how i'm not making any check
+to check that this
+is negative because technically this is
+never going to be negative
+and you can dig into that if you want
+it's because i'm updating the left max
+here
+before i'm doing this computation but if
+you were to swap the order of these two
+you would
+need to make sure that you're not adding
+a negative to the result but that's just
+a minor detail that you can probably
+confirm on your own
+the bulk of this is that you have to
+take the left max and then subtract it
+from the height
+at that current position right and so in
+the else condition we're going to be
+doing the opposite we're going to be
+adding to the result
+the difference between the right max and
+the height at the right pointer
+so this is really what i was just doing
+in the picture
+right this probably makes it a little
+more clear because we actually have
+good uh variable names and stuff but
+yeah
+after all this is done the last thing
+that you have to do is just return the
+result let me just prove to you that it
+runs
+and runs efficiently and you can see
+that it does exactly that so i hope that
+this was helpful
+if it was please like and subscribe it
+supports the channel a lot i showed you
+how to do this in linear time and
+constant memory
+complexity

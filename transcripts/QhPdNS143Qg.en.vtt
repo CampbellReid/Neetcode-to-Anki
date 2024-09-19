@@ -1,0 +1,3120 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.160 --> 00:00:01.750 align:start position:0%
+ 
+everyone<00:00:00.640><c> welcome</c><00:00:01.040><c> back</c><00:00:01.280><c> and</c><00:00:01.360><c> let's</c><00:00:01.599><c> write</c>
+
+00:00:01.750 --> 00:00:01.760 align:start position:0%
+everyone welcome back and let's write
+ 
+
+00:00:01.760 --> 00:00:03.669 align:start position:0%
+everyone welcome back and let's write
+some<00:00:02.000><c> more</c><00:00:02.240><c> neat</c><00:00:02.480><c> code</c><00:00:02.720><c> today</c><00:00:02.960><c> so</c><00:00:03.120><c> today</c><00:00:03.520><c> let's</c>
+
+00:00:03.669 --> 00:00:03.679 align:start position:0%
+some more neat code today so today let's
+ 
+
+00:00:03.679 --> 00:00:06.070 align:start position:0%
+some more neat code today so today let's
+solve<00:00:04.000><c> the</c><00:00:04.240><c> problem</c><00:00:04.720><c> valid</c><00:00:05.200><c> parentheses</c>
+
+00:00:06.070 --> 00:00:06.080 align:start position:0%
+solve the problem valid parentheses
+ 
+
+00:00:06.080 --> 00:00:08.710 align:start position:0%
+solve the problem valid parentheses
+string<00:00:06.960><c> we've</c><00:00:07.279><c> solved</c><00:00:07.680><c> a</c><00:00:07.759><c> few</c><00:00:08.000><c> parentheses</c>
+
+00:00:08.710 --> 00:00:08.720 align:start position:0%
+string we've solved a few parentheses
+ 
+
+00:00:08.720 --> 00:00:10.310 align:start position:0%
+string we've solved a few parentheses
+related<00:00:09.200><c> problems</c><00:00:09.599><c> on</c><00:00:09.679><c> this</c><00:00:09.840><c> channel</c><00:00:10.160><c> but</c>
+
+00:00:10.310 --> 00:00:10.320 align:start position:0%
+related problems on this channel but
+ 
+
+00:00:10.320 --> 00:00:12.549 align:start position:0%
+related problems on this channel but
+this<00:00:10.480><c> is</c><00:00:10.639><c> a</c><00:00:10.800><c> pretty</c><00:00:11.200><c> unique</c><00:00:11.679><c> one</c><00:00:12.160><c> so</c><00:00:12.320><c> we're</c>
+
+00:00:12.549 --> 00:00:12.559 align:start position:0%
+this is a pretty unique one so we're
+ 
+
+00:00:12.559 --> 00:00:14.629 align:start position:0%
+this is a pretty unique one so we're
+given<00:00:12.799><c> a</c><00:00:12.960><c> string</c><00:00:13.440><c> s</c><00:00:13.679><c> and</c><00:00:13.840><c> it</c><00:00:13.920><c> could</c><00:00:14.160><c> contain</c>
+
+00:00:14.629 --> 00:00:14.639 align:start position:0%
+given a string s and it could contain
+ 
+
+00:00:14.639 --> 00:00:16.550 align:start position:0%
+given a string s and it could contain
+three<00:00:14.799><c> types</c><00:00:15.120><c> of</c><00:00:15.280><c> characters</c><00:00:16.000><c> a</c><00:00:16.240><c> left</c>
+
+00:00:16.550 --> 00:00:16.560 align:start position:0%
+three types of characters a left
+ 
+
+00:00:16.560 --> 00:00:19.750 align:start position:0%
+three types of characters a left
+parenthesis<00:00:17.600><c> a</c><00:00:17.840><c> right</c><00:00:18.080><c> parenthesis</c><00:00:19.039><c> and</c><00:00:19.439><c> a</c>
+
+00:00:19.750 --> 00:00:19.760 align:start position:0%
+parenthesis a right parenthesis and a
+ 
+
+00:00:19.760 --> 00:00:22.070 align:start position:0%
+parenthesis a right parenthesis and a
+wild<00:00:20.240><c> card</c><00:00:20.640><c> character</c><00:00:21.119><c> and</c><00:00:21.279><c> the</c><00:00:21.439><c> wild</c><00:00:21.760><c> card</c>
+
+00:00:22.070 --> 00:00:22.080 align:start position:0%
+wild card character and the wild card
+ 
+
+00:00:22.080 --> 00:00:23.830 align:start position:0%
+wild card character and the wild card
+character<00:00:22.960><c> could</c>
+
+00:00:23.830 --> 00:00:23.840 align:start position:0%
+character could
+ 
+
+00:00:23.840 --> 00:00:26.550 align:start position:0%
+character could
+be<00:00:24.240><c> a</c><00:00:24.480><c> three</c><00:00:24.800><c> possibilities</c><00:00:25.599><c> it</c><00:00:25.680><c> could</c><00:00:25.920><c> be</c><00:00:26.240><c> an</c>
+
+00:00:26.550 --> 00:00:26.560 align:start position:0%
+be a three possibilities it could be an
+ 
+
+00:00:26.560 --> 00:00:28.390 align:start position:0%
+be a three possibilities it could be an
+empty<00:00:26.960><c> string</c><00:00:27.279><c> which</c><00:00:27.519><c> is</c><00:00:27.599><c> the</c><00:00:27.760><c> simplest</c><00:00:28.240><c> right</c>
+
+00:00:28.390 --> 00:00:28.400 align:start position:0%
+empty string which is the simplest right
+ 
+
+00:00:28.400 --> 00:00:29.830 align:start position:0%
+empty string which is the simplest right
+so<00:00:28.560><c> basically</c><00:00:28.960><c> in</c><00:00:29.039><c> that</c><00:00:29.199><c> case</c><00:00:29.439><c> we</c><00:00:29.599><c> would</c>
+
+00:00:29.830 --> 00:00:29.840 align:start position:0%
+so basically in that case we would
+ 
+
+00:00:29.840 --> 00:00:32.950 align:start position:0%
+so basically in that case we would
+ignore<00:00:30.160><c> the</c><00:00:30.320><c> wild</c><00:00:30.720><c> card</c><00:00:31.279><c> it</c><00:00:31.439><c> could</c><00:00:31.679><c> be</c><00:00:32.320><c> a</c><00:00:32.719><c> right</c>
+
+00:00:32.950 --> 00:00:32.960 align:start position:0%
+ignore the wild card it could be a right
+ 
+
+00:00:32.960 --> 00:00:35.270 align:start position:0%
+ignore the wild card it could be a right
+parenthesis<00:00:33.840><c> or</c><00:00:34.079><c> it</c><00:00:34.239><c> could</c><00:00:34.480><c> be</c><00:00:34.640><c> a</c><00:00:34.960><c> left</c>
+
+00:00:35.270 --> 00:00:35.280 align:start position:0%
+parenthesis or it could be a left
+ 
+
+00:00:35.280 --> 00:00:36.790 align:start position:0%
+parenthesis or it could be a left
+parenthesis<00:00:36.000><c> so</c>
+
+00:00:36.790 --> 00:00:36.800 align:start position:0%
+parenthesis so
+ 
+
+00:00:36.800 --> 00:00:39.350 align:start position:0%
+parenthesis so
+each<00:00:37.040><c> time</c><00:00:37.200><c> we</c><00:00:37.440><c> reach</c><00:00:37.760><c> a</c><00:00:37.920><c> wild</c><00:00:38.239><c> card</c>
+
+00:00:39.350 --> 00:00:39.360 align:start position:0%
+each time we reach a wild card
+ 
+
+00:00:39.360 --> 00:00:41.190 align:start position:0%
+each time we reach a wild card
+in<00:00:39.520><c> terms</c><00:00:39.840><c> of</c><00:00:40.000><c> a</c><00:00:40.079><c> decision</c><00:00:40.559><c> tree</c><00:00:40.800><c> we</c><00:00:40.960><c> really</c>
+
+00:00:41.190 --> 00:00:41.200 align:start position:0%
+in terms of a decision tree we really
+ 
+
+00:00:41.200 --> 00:00:43.030 align:start position:0%
+in terms of a decision tree we really
+have<00:00:41.440><c> three</c><00:00:41.840><c> branches</c><00:00:42.480><c> right</c><00:00:42.640><c> we</c><00:00:42.800><c> have</c><00:00:42.879><c> three</c>
+
+00:00:43.030 --> 00:00:43.040 align:start position:0%
+have three branches right we have three
+ 
+
+00:00:43.040 --> 00:00:44.790 align:start position:0%
+have three branches right we have three
+different<00:00:43.440><c> things</c><00:00:43.680><c> we</c><00:00:43.840><c> could</c><00:00:44.000><c> consider</c><00:00:44.640><c> it</c>
+
+00:00:44.790 --> 00:00:44.800 align:start position:0%
+different things we could consider it
+ 
+
+00:00:44.800 --> 00:00:46.790 align:start position:0%
+different things we could consider it
+could<00:00:44.960><c> be</c><00:00:45.520><c> a</c><00:00:45.680><c> space</c><00:00:46.079><c> it</c><00:00:46.160><c> could</c><00:00:46.320><c> be</c><00:00:46.480><c> a</c><00:00:46.559><c> left</c>
+
+00:00:46.790 --> 00:00:46.800 align:start position:0%
+could be a space it could be a left
+ 
+
+00:00:46.800 --> 00:00:47.830 align:start position:0%
+could be a space it could be a left
+parenthesis<00:00:47.200><c> it</c><00:00:47.280><c> could</c><00:00:47.440><c> be</c><00:00:47.600><c> a</c><00:00:47.680><c> right</c>
+
+00:00:47.830 --> 00:00:47.840 align:start position:0%
+parenthesis it could be a right
+ 
+
+00:00:47.840 --> 00:00:49.830 align:start position:0%
+parenthesis it could be a right
+parenthesis<00:00:48.559><c> so</c><00:00:48.800><c> already</c><00:00:49.200><c> we're</c><00:00:49.440><c> kind</c><00:00:49.600><c> of</c>
+
+00:00:49.830 --> 00:00:49.840 align:start position:0%
+parenthesis so already we're kind of
+ 
+
+00:00:49.840 --> 00:00:51.510 align:start position:0%
+parenthesis so already we're kind of
+getting<00:00:50.239><c> the</c><00:00:50.480><c> intuition</c><00:00:50.960><c> of</c><00:00:51.039><c> how</c><00:00:51.199><c> to</c><00:00:51.280><c> solve</c>
+
+00:00:51.510 --> 00:00:51.520 align:start position:0%
+getting the intuition of how to solve
+ 
+
+00:00:51.520 --> 00:00:53.670 align:start position:0%
+getting the intuition of how to solve
+this<00:00:51.760><c> problem</c><00:00:52.160><c> or</c><00:00:52.320><c> at</c><00:00:52.399><c> least</c><00:00:52.719><c> enumerate</c><00:00:53.440><c> all</c>
+
+00:00:53.670 --> 00:00:53.680 align:start position:0%
+this problem or at least enumerate all
+ 
+
+00:00:53.680 --> 00:00:55.990 align:start position:0%
+this problem or at least enumerate all
+possibilities<00:00:54.719><c> our</c><00:00:54.879><c> goal</c><00:00:55.120><c> is</c><00:00:55.199><c> to</c><00:00:55.360><c> determine</c>
+
+00:00:55.990 --> 00:00:56.000 align:start position:0%
+possibilities our goal is to determine
+ 
+
+00:00:56.000 --> 00:00:59.189 align:start position:0%
+possibilities our goal is to determine
+if<00:00:56.320><c> the</c><00:00:56.640><c> given</c><00:00:56.960><c> string</c><00:00:57.680><c> could</c><00:00:58.000><c> be</c><00:00:58.320><c> valid</c><00:00:59.039><c> if</c>
+
+00:00:59.189 --> 00:00:59.199 align:start position:0%
+if the given string could be valid if
+ 
+
+00:00:59.199 --> 00:01:01.270 align:start position:0%
+if the given string could be valid if
+it's<00:00:59.359><c> possible</c><00:00:59.920><c> we</c><00:01:00.079><c> return</c><00:01:00.480><c> true</c><00:01:00.879><c> if</c><00:01:01.039><c> it's</c>
+
+00:01:01.270 --> 00:01:01.280 align:start position:0%
+it's possible we return true if it's
+ 
+
+00:01:01.280 --> 00:01:03.990 align:start position:0%
+it's possible we return true if it's
+impossible<00:01:02.000><c> we</c><00:01:02.239><c> return</c><00:01:02.800><c> false</c><00:01:03.440><c> and</c><00:01:03.600><c> you</c><00:01:03.760><c> can</c>
+
+00:01:03.990 --> 00:01:04.000 align:start position:0%
+impossible we return false and you can
+ 
+
+00:01:04.000 --> 00:01:06.149 align:start position:0%
+impossible we return false and you can
+go<00:01:04.239><c> over</c><00:01:04.479><c> this</c><00:01:04.879><c> to</c><00:01:05.119><c> understand</c><00:01:05.680><c> what</c><00:01:05.920><c> makes</c>
+
+00:01:06.149 --> 00:01:06.159 align:start position:0%
+go over this to understand what makes
+ 
+
+00:01:06.159 --> 00:01:08.870 align:start position:0%
+go over this to understand what makes
+parentheses<00:01:06.880><c> valid</c><00:01:07.280><c> and</c><00:01:07.520><c> invalid</c><00:01:08.159><c> the</c><00:01:08.479><c> main</c>
+
+00:01:08.870 --> 00:01:08.880 align:start position:0%
+parentheses valid and invalid the main
+ 
+
+00:01:08.880 --> 00:01:11.510 align:start position:0%
+parentheses valid and invalid the main
+thing<00:01:09.119><c> is</c><00:01:09.439><c> as</c><00:01:09.760><c> you</c><00:01:10.240><c> scan</c><00:01:10.720><c> through</c><00:01:11.040><c> a</c><00:01:11.200><c> string</c>
+
+00:01:11.510 --> 00:01:11.520 align:start position:0%
+thing is as you scan through a string
+ 
+
+00:01:11.520 --> 00:01:13.750 align:start position:0%
+thing is as you scan through a string
+suppose<00:01:12.000><c> this</c><00:01:12.240><c> one</c><00:01:12.720><c> what</c><00:01:12.960><c> has</c><00:01:13.200><c> to</c><00:01:13.439><c> really</c>
+
+00:01:13.750 --> 00:01:13.760 align:start position:0%
+suppose this one what has to really
+ 
+
+00:01:13.760 --> 00:01:16.070 align:start position:0%
+suppose this one what has to really
+happen<00:01:14.400><c> is</c><00:01:14.640><c> that</c><00:01:14.880><c> every</c><00:01:15.280><c> left</c><00:01:15.520><c> parenthesis</c>
+
+00:01:16.070 --> 00:01:16.080 align:start position:0%
+happen is that every left parenthesis
+ 
+
+00:01:16.080 --> 00:01:18.630 align:start position:0%
+happen is that every left parenthesis
+has<00:01:16.320><c> to</c><00:01:16.400><c> have</c><00:01:16.640><c> a</c><00:01:16.880><c> matching</c><00:01:17.520><c> right</c><00:01:17.759><c> parenthesis</c>
+
+00:01:18.630 --> 00:01:18.640 align:start position:0%
+has to have a matching right parenthesis
+ 
+
+00:01:18.640 --> 00:01:20.230 align:start position:0%
+has to have a matching right parenthesis
+and<00:01:18.799><c> the</c><00:01:18.880><c> matching</c><00:01:19.280><c> right</c><00:01:19.439><c> parenthesis</c><00:01:20.080><c> has</c>
+
+00:01:20.230 --> 00:01:20.240 align:start position:0%
+and the matching right parenthesis has
+ 
+
+00:01:20.240 --> 00:01:22.950 align:start position:0%
+and the matching right parenthesis has
+to<00:01:20.320><c> come</c><00:01:20.720><c> after</c><00:01:21.439><c> the</c><00:01:21.680><c> left</c><00:01:21.920><c> parentheses</c><00:01:22.799><c> and</c>
+
+00:01:22.950 --> 00:01:22.960 align:start position:0%
+to come after the left parentheses and
+ 
+
+00:01:22.960 --> 00:01:24.870 align:start position:0%
+to come after the left parentheses and
+the<00:01:23.119><c> natural</c><00:01:23.600><c> order</c><00:01:24.000><c> for</c><00:01:24.159><c> it</c><00:01:24.320><c> is</c><00:01:24.400><c> kind</c><00:01:24.560><c> of</c><00:01:24.720><c> like</c>
+
+00:01:24.870 --> 00:01:24.880 align:start position:0%
+the natural order for it is kind of like
+ 
+
+00:01:24.880 --> 00:01:26.710 align:start position:0%
+the natural order for it is kind of like
+first<00:01:25.280><c> in</c><00:01:25.360><c> first</c><00:01:25.680><c> out</c><00:01:25.840><c> so</c><00:01:26.080><c> you</c><00:01:26.240><c> can</c><00:01:26.320><c> see</c><00:01:26.560><c> we</c>
+
+00:01:26.710 --> 00:01:26.720 align:start position:0%
+first in first out so you can see we
+ 
+
+00:01:26.720 --> 00:01:28.149 align:start position:0%
+first in first out so you can see we
+have<00:01:26.799><c> a</c><00:01:26.880><c> left</c><00:01:27.040><c> parenthesis</c><00:01:27.600><c> then</c><00:01:27.759><c> we</c><00:01:27.920><c> have</c>
+
+00:01:28.149 --> 00:01:28.159 align:start position:0%
+have a left parenthesis then we have
+ 
+
+00:01:28.159 --> 00:01:29.990 align:start position:0%
+have a left parenthesis then we have
+another<00:01:28.479><c> left</c><00:01:28.720><c> parenthesis</c><00:01:29.360><c> then</c><00:01:29.600><c> we</c><00:01:29.759><c> have</c><00:01:29.840><c> a</c>
+
+00:01:29.990 --> 00:01:30.000 align:start position:0%
+another left parenthesis then we have a
+ 
+
+00:01:30.000 --> 00:01:31.109 align:start position:0%
+another left parenthesis then we have a
+right<00:01:30.159><c> parenthesis</c><00:01:30.720><c> and</c><00:01:30.799><c> this</c><00:01:30.960><c> right</c>
+
+00:01:31.109 --> 00:01:31.119 align:start position:0%
+right parenthesis and this right
+ 
+
+00:01:31.119 --> 00:01:33.109 align:start position:0%
+right parenthesis and this right
+parenthesis<00:01:31.680><c> matches</c><00:01:32.079><c> this</c><00:01:32.320><c> one</c><00:01:32.720><c> okay</c><00:01:32.960><c> then</c>
+
+00:01:33.109 --> 00:01:33.119 align:start position:0%
+parenthesis matches this one okay then
+ 
+
+00:01:33.119 --> 00:01:34.630 align:start position:0%
+parenthesis matches this one okay then
+we<00:01:33.200><c> have</c><00:01:33.360><c> another</c><00:01:33.680><c> left</c><00:01:33.840><c> parenthesis</c><00:01:34.400><c> then</c><00:01:34.560><c> we</c>
+
+00:01:34.630 --> 00:01:34.640 align:start position:0%
+we have another left parenthesis then we
+ 
+
+00:01:34.640 --> 00:01:36.630 align:start position:0%
+we have another left parenthesis then we
+have<00:01:34.720><c> a</c><00:01:34.799><c> right</c><00:01:34.960><c> parenthesis</c><00:01:35.680><c> this</c><00:01:35.920><c> matches</c>
+
+00:01:36.630 --> 00:01:36.640 align:start position:0%
+have a right parenthesis this matches
+ 
+
+00:01:36.640 --> 00:01:38.390 align:start position:0%
+have a right parenthesis this matches
+the<00:01:36.720><c> most</c><00:01:37.040><c> recent</c><00:01:37.360><c> one</c><00:01:37.600><c> and</c><00:01:37.680><c> then</c><00:01:37.840><c> we</c><00:01:38.000><c> have</c>
+
+00:01:38.390 --> 00:01:38.400 align:start position:0%
+the most recent one and then we have
+ 
+
+00:01:38.400 --> 00:01:40.149 align:start position:0%
+the most recent one and then we have
+another<00:01:38.880><c> right</c><00:01:39.040><c> parentheses</c><00:01:39.600><c> and</c><00:01:39.680><c> this</c>
+
+00:01:40.149 --> 00:01:40.159 align:start position:0%
+another right parentheses and this
+ 
+
+00:01:40.159 --> 00:01:42.630 align:start position:0%
+another right parentheses and this
+matches<00:01:40.880><c> this</c><00:01:41.119><c> one</c><00:01:41.520><c> but</c><00:01:41.759><c> suppose</c><00:01:42.240><c> we</c><00:01:42.399><c> had</c><00:01:42.560><c> a</c>
+
+00:01:42.630 --> 00:01:42.640 align:start position:0%
+matches this one but suppose we had a
+ 
+
+00:01:42.640 --> 00:01:44.789 align:start position:0%
+matches this one but suppose we had a
+slightly<00:01:43.119><c> different</c><00:01:43.360><c> string</c><00:01:44.079><c> maybe</c><00:01:44.399><c> we</c><00:01:44.560><c> have</c>
+
+00:01:44.789 --> 00:01:44.799 align:start position:0%
+slightly different string maybe we have
+ 
+
+00:01:44.799 --> 00:01:47.190 align:start position:0%
+slightly different string maybe we have
+three<00:01:45.119><c> right</c><00:01:45.360><c> parentheses</c><00:01:46.000><c> in</c><00:01:46.159><c> a</c><00:01:46.240><c> row</c><00:01:46.880><c> this</c>
+
+00:01:47.190 --> 00:01:47.200 align:start position:0%
+three right parentheses in a row this
+ 
+
+00:01:47.200 --> 00:01:50.469 align:start position:0%
+three right parentheses in a row this
+would<00:01:47.520><c> be</c><00:01:47.840><c> invalid</c><00:01:48.640><c> and</c><00:01:48.880><c> you</c><00:01:49.040><c> can</c><00:01:49.200><c> see</c><00:01:49.439><c> why</c>
+
+00:01:50.469 --> 00:01:50.479 align:start position:0%
+would be invalid and you can see why
+ 
+
+00:01:50.479 --> 00:01:52.550 align:start position:0%
+would be invalid and you can see why
+these<00:01:50.720><c> two</c><00:01:50.960><c> match</c><00:01:51.200><c> each</c><00:01:51.439><c> other</c><00:01:51.680><c> great</c><00:01:52.240><c> this</c>
+
+00:01:52.550 --> 00:01:52.560 align:start position:0%
+these two match each other great this
+ 
+
+00:01:52.560 --> 00:01:55.270 align:start position:0%
+these two match each other great this
+one<00:01:53.040><c> matches</c><00:01:53.680><c> this</c><00:01:54.000><c> one</c><00:01:54.399><c> great</c><00:01:54.720><c> but</c><00:01:54.880><c> the</c><00:01:55.040><c> right</c>
+
+00:01:55.270 --> 00:01:55.280 align:start position:0%
+one matches this one great but the right
+ 
+
+00:01:55.280 --> 00:01:57.749 align:start position:0%
+one matches this one great but the right
+parentheses<00:01:55.920><c> then</c><00:01:56.240><c> comes</c><00:01:56.560><c> before</c><00:01:57.360><c> the</c><00:01:57.520><c> left</c>
+
+00:01:57.749 --> 00:01:57.759 align:start position:0%
+parentheses then comes before the left
+ 
+
+00:01:57.759 --> 00:01:59.990 align:start position:0%
+parentheses then comes before the left
+parenthesis<00:01:58.320><c> we</c><00:01:58.560><c> can't</c><00:01:58.960><c> have</c><00:01:59.280><c> that</c><00:01:59.680><c> and</c><00:01:59.840><c> this</c>
+
+00:01:59.990 --> 00:02:00.000 align:start position:0%
+parenthesis we can't have that and this
+ 
+
+00:02:00.000 --> 00:02:01.510 align:start position:0%
+parenthesis we can't have that and this
+is<00:02:00.159><c> one</c><00:02:00.320><c> way</c><00:02:00.479><c> to</c><00:02:00.640><c> understand</c><00:02:01.040><c> that</c><00:02:01.280><c> but</c><00:02:01.439><c> the</c>
+
+00:02:01.510 --> 00:02:01.520 align:start position:0%
+is one way to understand that but the
+ 
+
+00:02:01.520 --> 00:02:02.950 align:start position:0%
+is one way to understand that but the
+easiest<00:02:01.840><c> way</c><00:02:02.000><c> to</c><00:02:02.079><c> know</c><00:02:02.240><c> that</c><00:02:02.399><c> we</c><00:02:02.640><c> have</c><00:02:02.799><c> an</c>
+
+00:02:02.950 --> 00:02:02.960 align:start position:0%
+easiest way to know that we have an
+ 
+
+00:02:02.960 --> 00:02:06.069 align:start position:0%
+easiest way to know that we have an
+invalid<00:02:03.439><c> parenthesis</c><00:02:04.320><c> combination</c><00:02:05.119><c> is</c><00:02:05.439><c> that</c>
+
+00:02:06.069 --> 00:02:06.079 align:start position:0%
+invalid parenthesis combination is that
+ 
+
+00:02:06.079 --> 00:02:09.029 align:start position:0%
+invalid parenthesis combination is that
+at<00:02:06.320><c> any</c><00:02:06.560><c> given</c><00:02:06.960><c> point</c><00:02:07.759><c> of</c><00:02:08.000><c> the</c><00:02:08.160><c> string</c><00:02:08.800><c> the</c>
+
+00:02:09.029 --> 00:02:09.039 align:start position:0%
+at any given point of the string the
+ 
+
+00:02:09.039 --> 00:02:11.430 align:start position:0%
+at any given point of the string the
+number<00:02:09.280><c> of</c><00:02:09.520><c> left</c><00:02:09.840><c> parentheses</c><00:02:10.640><c> that</c><00:02:10.800><c> we</c><00:02:10.959><c> have</c>
+
+00:02:11.430 --> 00:02:11.440 align:start position:0%
+number of left parentheses that we have
+ 
+
+00:02:11.440 --> 00:02:13.430 align:start position:0%
+number of left parentheses that we have
+can<00:02:11.680><c> never</c><00:02:11.920><c> be</c><00:02:12.239><c> less</c><00:02:12.560><c> than</c><00:02:12.720><c> the</c><00:02:12.879><c> number</c><00:02:13.200><c> of</c>
+
+00:02:13.430 --> 00:02:13.440 align:start position:0%
+can never be less than the number of
+ 
+
+00:02:13.440 --> 00:02:14.949 align:start position:0%
+can never be less than the number of
+right<00:02:13.680><c> parentheses</c><00:02:14.319><c> and</c><00:02:14.400><c> you</c><00:02:14.480><c> can</c><00:02:14.640><c> see</c><00:02:14.800><c> that</c>
+
+00:02:14.949 --> 00:02:14.959 align:start position:0%
+right parentheses and you can see that
+ 
+
+00:02:14.959 --> 00:02:17.750 align:start position:0%
+right parentheses and you can see that
+that<00:02:15.200><c> happens</c><00:02:15.760><c> here</c><00:02:16.400><c> right</c><00:02:16.640><c> we</c><00:02:16.720><c> have</c><00:02:16.959><c> two</c><00:02:17.520><c> left</c>
+
+00:02:17.750 --> 00:02:17.760 align:start position:0%
+that happens here right we have two left
+ 
+
+00:02:17.760 --> 00:02:19.589 align:start position:0%
+that happens here right we have two left
+parentheses<00:02:18.319><c> then</c><00:02:18.480><c> we</c><00:02:18.640><c> have</c><00:02:18.879><c> three</c><00:02:19.360><c> right</c>
+
+00:02:19.589 --> 00:02:19.599 align:start position:0%
+parentheses then we have three right
+ 
+
+00:02:19.599 --> 00:02:22.070 align:start position:0%
+parentheses then we have three right
+parentheses<00:02:20.400><c> and</c><00:02:20.879><c> we</c><00:02:21.120><c> are</c><00:02:21.360><c> never</c><00:02:21.599><c> going</c><00:02:21.760><c> to</c><00:02:21.920><c> be</c>
+
+00:02:22.070 --> 00:02:22.080 align:start position:0%
+parentheses and we are never going to be
+ 
+
+00:02:22.080 --> 00:02:24.229 align:start position:0%
+parentheses and we are never going to be
+able<00:02:22.319><c> to</c><00:02:22.560><c> recover</c><00:02:23.040><c> from</c><00:02:23.280><c> this</c><00:02:23.520><c> because</c><00:02:23.840><c> at</c><00:02:24.000><c> one</c>
+
+00:02:24.229 --> 00:02:24.239 align:start position:0%
+able to recover from this because at one
+ 
+
+00:02:24.239 --> 00:02:25.589 align:start position:0%
+able to recover from this because at one
+point<00:02:24.480><c> in</c><00:02:24.640><c> time</c><00:02:24.879><c> we</c><00:02:24.959><c> had</c><00:02:25.120><c> more</c><00:02:25.360><c> right</c>
+
+00:02:25.589 --> 00:02:25.599 align:start position:0%
+point in time we had more right
+ 
+
+00:02:25.599 --> 00:02:27.589 align:start position:0%
+point in time we had more right
+parentheses<00:02:26.319><c> than</c><00:02:26.480><c> we</c><00:02:26.640><c> had</c><00:02:26.879><c> left</c><00:02:27.200><c> it</c><00:02:27.280><c> doesn't</c>
+
+00:02:27.589 --> 00:02:27.599 align:start position:0%
+parentheses than we had left it doesn't
+ 
+
+00:02:27.599 --> 00:02:29.589 align:start position:0%
+parentheses than we had left it doesn't
+matter<00:02:27.920><c> if</c><00:02:28.000><c> we</c><00:02:28.160><c> get</c><00:02:28.319><c> more</c><00:02:28.640><c> left</c><00:02:28.800><c> parentheses</c>
+
+00:02:29.589 --> 00:02:29.599 align:start position:0%
+matter if we get more left parentheses
+ 
+
+00:02:29.599 --> 00:02:31.750 align:start position:0%
+matter if we get more left parentheses
+we<00:02:29.760><c> cannot</c><00:02:30.239><c> recover</c><00:02:30.720><c> from</c><00:02:30.959><c> this</c><00:02:31.280><c> ever</c><00:02:31.599><c> and</c>
+
+00:02:31.750 --> 00:02:31.760 align:start position:0%
+we cannot recover from this ever and
+ 
+
+00:02:31.760 --> 00:02:33.670 align:start position:0%
+we cannot recover from this ever and
+that's<00:02:31.920><c> how</c><00:02:32.080><c> you</c><00:02:32.239><c> know</c><00:02:32.400><c> it's</c><00:02:32.560><c> invalid</c><00:02:33.280><c> let's</c>
+
+00:02:33.670 --> 00:02:33.680 align:start position:0%
+that's how you know it's invalid let's
+ 
+
+00:02:33.680 --> 00:02:36.550 align:start position:0%
+that's how you know it's invalid let's
+take<00:02:34.080><c> a</c><00:02:34.319><c> very</c><00:02:34.720><c> simple</c><00:02:35.440><c> input</c><00:02:35.840><c> string</c><00:02:36.239><c> and</c><00:02:36.319><c> then</c>
+
+00:02:36.550 --> 00:02:36.560 align:start position:0%
+take a very simple input string and then
+ 
+
+00:02:36.560 --> 00:02:38.949 align:start position:0%
+take a very simple input string and then
+determine<00:02:37.040><c> if</c><00:02:37.200><c> this</c><00:02:37.360><c> is</c><00:02:37.440><c> valid</c><00:02:37.840><c> or</c><00:02:38.000><c> not</c><00:02:38.319><c> and</c><00:02:38.800><c> we</c>
+
+00:02:38.949 --> 00:02:38.959 align:start position:0%
+determine if this is valid or not and we
+ 
+
+00:02:38.959 --> 00:02:40.869 align:start position:0%
+determine if this is valid or not and we
+can<00:02:39.120><c> tell</c><00:02:39.360><c> that</c><00:02:39.599><c> it</c><00:02:39.840><c> is</c><00:02:40.319><c> how</c><00:02:40.480><c> would</c><00:02:40.640><c> it</c><00:02:40.720><c> be</c>
+
+00:02:40.869 --> 00:02:40.879 align:start position:0%
+can tell that it is how would it be
+ 
+
+00:02:40.879 --> 00:02:43.670 align:start position:0%
+can tell that it is how would it be
+valid<00:02:41.200><c> if</c><00:02:41.599><c> the</c><00:02:41.760><c> wild</c><00:02:42.080><c> card</c><00:02:42.400><c> was</c><00:02:42.800><c> empty</c><00:02:43.280><c> and</c><00:02:43.599><c> it</c>
+
+00:02:43.670 --> 00:02:43.680 align:start position:0%
+valid if the wild card was empty and it
+ 
+
+00:02:43.680 --> 00:02:45.110 align:start position:0%
+valid if the wild card was empty and it
+would<00:02:43.840><c> look</c><00:02:44.000><c> like</c><00:02:44.160><c> this</c><00:02:44.400><c> right</c><00:02:44.560><c> just</c><00:02:44.800><c> a</c><00:02:44.879><c> left</c>
+
+00:02:45.110 --> 00:02:45.120 align:start position:0%
+would look like this right just a left
+ 
+
+00:02:45.120 --> 00:02:46.630 align:start position:0%
+would look like this right just a left
+and<00:02:45.200><c> a</c><00:02:45.280><c> right</c><00:02:45.440><c> parenthesis</c><00:02:46.000><c> but</c><00:02:46.160><c> how</c><00:02:46.319><c> can</c><00:02:46.480><c> we</c>
+
+00:02:46.630 --> 00:02:46.640 align:start position:0%
+and a right parenthesis but how can we
+ 
+
+00:02:46.640 --> 00:02:49.030 align:start position:0%
+and a right parenthesis but how can we
+do<00:02:46.800><c> that</c><00:02:47.280><c> uh</c><00:02:47.680><c> brute</c><00:02:48.080><c> force</c><00:02:48.400><c> and</c><00:02:48.480><c> we</c><00:02:48.640><c> would</c><00:02:48.879><c> we</c>
+
+00:02:49.030 --> 00:02:49.040 align:start position:0%
+do that uh brute force and we would we
+ 
+
+00:02:49.040 --> 00:02:51.509 align:start position:0%
+do that uh brute force and we would we
+could<00:02:49.280><c> possibly</c><00:02:49.680><c> have</c><00:02:49.920><c> more</c><00:02:50.160><c> complex</c><00:02:50.800><c> strings</c>
+
+00:02:51.509 --> 00:02:51.519 align:start position:0%
+could possibly have more complex strings
+ 
+
+00:02:51.519 --> 00:02:53.190 align:start position:0%
+could possibly have more complex strings
+how<00:02:51.680><c> could</c><00:02:51.840><c> we</c><00:02:52.000><c> determine</c><00:02:52.400><c> that</c><00:02:52.800><c> well</c><00:02:53.040><c> the</c>
+
+00:02:53.190 --> 00:02:53.200 align:start position:0%
+how could we determine that well the
+ 
+
+00:02:53.200 --> 00:02:54.790 align:start position:0%
+how could we determine that well the
+brute<00:02:53.519><c> force</c><00:02:53.840><c> is</c><00:02:53.920><c> going</c><00:02:54.000><c> to</c><00:02:54.080><c> be</c><00:02:54.239><c> a</c><00:02:54.319><c> decision</c>
+
+00:02:54.790 --> 00:02:54.800 align:start position:0%
+brute force is going to be a decision
+ 
+
+00:02:54.800 --> 00:02:56.710 align:start position:0%
+brute force is going to be a decision
+tree<00:02:55.120><c> because</c><00:02:55.440><c> if</c><00:02:55.519><c> we</c><00:02:55.760><c> weren't</c><00:02:56.080><c> given</c><00:02:56.480><c> any</c>
+
+00:02:56.710 --> 00:02:56.720 align:start position:0%
+tree because if we weren't given any
+ 
+
+00:02:56.720 --> 00:02:58.470 align:start position:0%
+tree because if we weren't given any
+wild<00:02:57.040><c> cards</c><00:02:57.440><c> we</c><00:02:57.599><c> have</c><00:02:57.760><c> a</c><00:02:57.920><c> very</c><00:02:58.159><c> simple</c>
+
+00:02:58.470 --> 00:02:58.480 align:start position:0%
+wild cards we have a very simple
+ 
+
+00:02:58.480 --> 00:03:00.070 align:start position:0%
+wild cards we have a very simple
+algorithm<00:02:58.879><c> just</c><00:02:59.120><c> to</c><00:02:59.280><c> scan</c><00:02:59.680><c> through</c><00:03:00.000><c> the</c>
+
+00:03:00.070 --> 00:03:00.080 align:start position:0%
+algorithm just to scan through the
+ 
+
+00:03:00.080 --> 00:03:01.750 align:start position:0%
+algorithm just to scan through the
+parentheses<00:03:00.720><c> to</c><00:03:00.800><c> know</c><00:03:00.959><c> if</c><00:03:01.040><c> they</c><00:03:01.200><c> were</c><00:03:01.360><c> valid</c>
+
+00:03:01.750 --> 00:03:01.760 align:start position:0%
+parentheses to know if they were valid
+ 
+
+00:03:01.760 --> 00:03:04.309 align:start position:0%
+parentheses to know if they were valid
+or<00:03:02.000><c> not</c><00:03:02.400><c> just</c><00:03:02.560><c> like</c><00:03:02.800><c> i</c><00:03:02.879><c> talked</c><00:03:03.200><c> about</c><00:03:03.840><c> but</c><00:03:04.080><c> with</c>
+
+00:03:04.309 --> 00:03:04.319 align:start position:0%
+or not just like i talked about but with
+ 
+
+00:03:04.319 --> 00:03:06.869 align:start position:0%
+or not just like i talked about but with
+wild<00:03:04.640><c> cards</c><00:03:05.120><c> there's</c><00:03:05.440><c> lots</c><00:03:05.760><c> of</c><00:03:05.920><c> possibilities</c>
+
+00:03:06.869 --> 00:03:06.879 align:start position:0%
+wild cards there's lots of possibilities
+ 
+
+00:03:06.879 --> 00:03:08.869 align:start position:0%
+wild cards there's lots of possibilities
+we're<00:03:07.040><c> going</c><00:03:07.120><c> to</c><00:03:07.280><c> go</c><00:03:07.519><c> through</c><00:03:07.840><c> each</c><00:03:08.080><c> character</c>
+
+00:03:08.869 --> 00:03:08.879 align:start position:0%
+we're going to go through each character
+ 
+
+00:03:08.879 --> 00:03:11.110 align:start position:0%
+we're going to go through each character
+in<00:03:09.040><c> the</c><00:03:09.200><c> string</c><00:03:09.920><c> and</c><00:03:10.239><c> have</c><00:03:10.400><c> a</c><00:03:10.480><c> decision</c><00:03:10.879><c> tree</c>
+
+00:03:11.110 --> 00:03:11.120 align:start position:0%
+in the string and have a decision tree
+ 
+
+00:03:11.120 --> 00:03:13.190 align:start position:0%
+in the string and have a decision tree
+so<00:03:11.280><c> first</c><00:03:11.599><c> character</c><00:03:12.000><c> we</c><00:03:12.159><c> see</c><00:03:12.480><c> is</c><00:03:12.800><c> a</c><00:03:12.959><c> left</c>
+
+00:03:13.190 --> 00:03:13.200 align:start position:0%
+so first character we see is a left
+ 
+
+00:03:13.200 --> 00:03:15.509 align:start position:0%
+so first character we see is a left
+parenthesis<00:03:13.840><c> that's</c><00:03:14.000><c> perfectly</c><00:03:14.560><c> fine</c><00:03:15.360><c> and</c>
+
+00:03:15.509 --> 00:03:15.519 align:start position:0%
+parenthesis that's perfectly fine and
+ 
+
+00:03:15.519 --> 00:03:17.350 align:start position:0%
+parenthesis that's perfectly fine and
+then<00:03:15.680><c> we</c><00:03:15.840><c> get</c><00:03:16.000><c> to</c><00:03:16.080><c> the</c><00:03:16.239><c> wild</c><00:03:16.560><c> card</c><00:03:16.800><c> right</c><00:03:17.120><c> when</c>
+
+00:03:17.350 --> 00:03:17.360 align:start position:0%
+then we get to the wild card right when
+ 
+
+00:03:17.360 --> 00:03:18.790 align:start position:0%
+then we get to the wild card right when
+you<00:03:17.440><c> get</c><00:03:17.519><c> to</c><00:03:17.680><c> a</c><00:03:17.760><c> wild</c><00:03:18.000><c> card</c><00:03:18.239><c> that's</c><00:03:18.560><c> when</c><00:03:18.640><c> you</c>
+
+00:03:18.790 --> 00:03:18.800 align:start position:0%
+you get to a wild card that's when you
+ 
+
+00:03:18.800 --> 00:03:20.390 align:start position:0%
+you get to a wild card that's when you
+actually<00:03:19.040><c> need</c><00:03:19.200><c> to</c><00:03:19.440><c> branch</c><00:03:19.840><c> we</c><00:03:20.000><c> don't</c><00:03:20.159><c> need</c><00:03:20.319><c> to</c>
+
+00:03:20.390 --> 00:03:20.400 align:start position:0%
+actually need to branch we don't need to
+ 
+
+00:03:20.400 --> 00:03:22.149 align:start position:0%
+actually need to branch we don't need to
+just<00:03:20.640><c> branch</c><00:03:20.959><c> when</c><00:03:21.120><c> we</c><00:03:21.280><c> get</c><00:03:21.440><c> to</c><00:03:21.519><c> a</c><00:03:21.680><c> regular</c>
+
+00:03:22.149 --> 00:03:22.159 align:start position:0%
+just branch when we get to a regular
+ 
+
+00:03:22.159 --> 00:03:23.830 align:start position:0%
+just branch when we get to a regular
+parenthesis<00:03:23.040><c> because</c><00:03:23.280><c> that's</c><00:03:23.519><c> already</c>
+
+00:03:23.830 --> 00:03:23.840 align:start position:0%
+parenthesis because that's already
+ 
+
+00:03:23.840 --> 00:03:25.509 align:start position:0%
+parenthesis because that's already
+determined<00:03:24.480><c> it</c><00:03:24.640><c> could</c><00:03:24.720><c> be</c><00:03:24.879><c> another</c><00:03:25.280><c> left</c>
+
+00:03:25.509 --> 00:03:25.519 align:start position:0%
+determined it could be another left
+ 
+
+00:03:25.519 --> 00:03:28.149 align:start position:0%
+determined it could be another left
+parenthesis<00:03:26.239><c> it</c><00:03:26.319><c> could</c><00:03:26.560><c> be</c><00:03:26.879><c> a</c><00:03:27.200><c> space</c><00:03:27.840><c> or</c><00:03:28.080><c> it</c>
+
+00:03:28.149 --> 00:03:28.159 align:start position:0%
+parenthesis it could be a space or it
+ 
+
+00:03:28.159 --> 00:03:30.229 align:start position:0%
+parenthesis it could be a space or it
+could<00:03:28.400><c> be</c><00:03:28.560><c> a</c><00:03:28.799><c> right</c><00:03:29.040><c> parenthesis</c>
+
+00:03:30.229 --> 00:03:30.239 align:start position:0%
+could be a right parenthesis
+ 
+
+00:03:30.239 --> 00:03:31.350 align:start position:0%
+could be a right parenthesis
+and<00:03:30.319><c> then</c><00:03:30.400><c> we're</c><00:03:30.560><c> going</c><00:03:30.640><c> to</c><00:03:30.720><c> get</c><00:03:30.879><c> to</c><00:03:30.959><c> the</c><00:03:31.040><c> third</c>
+
+00:03:31.350 --> 00:03:31.360 align:start position:0%
+and then we're going to get to the third
+ 
+
+00:03:31.360 --> 00:03:33.110 align:start position:0%
+and then we're going to get to the third
+character<00:03:32.080><c> uh</c><00:03:32.239><c> but</c><00:03:32.480><c> we</c><00:03:32.640><c> have</c><00:03:32.720><c> to</c><00:03:32.799><c> do</c><00:03:32.959><c> that</c>
+
+00:03:33.110 --> 00:03:33.120 align:start position:0%
+character uh but we have to do that
+ 
+
+00:03:33.120 --> 00:03:34.710 align:start position:0%
+character uh but we have to do that
+third<00:03:33.360><c> character</c><00:03:33.760><c> it's</c><00:03:33.920><c> already</c><00:03:34.239><c> determined</c>
+
+00:03:34.710 --> 00:03:34.720 align:start position:0%
+third character it's already determined
+ 
+
+00:03:34.720 --> 00:03:35.990 align:start position:0%
+third character it's already determined
+it's<00:03:34.879><c> a</c><00:03:34.959><c> right</c><00:03:35.120><c> parenthesis</c><00:03:35.599><c> but</c><00:03:35.680><c> we</c><00:03:35.840><c> have</c><00:03:35.920><c> to</c>
+
+00:03:35.990 --> 00:03:36.000 align:start position:0%
+it's a right parenthesis but we have to
+ 
+
+00:03:36.000 --> 00:03:37.830 align:start position:0%
+it's a right parenthesis but we have to
+do<00:03:36.080><c> it</c><00:03:36.239><c> for</c><00:03:36.400><c> all</c><00:03:36.560><c> three</c><00:03:36.720><c> of</c><00:03:36.879><c> our</c><00:03:37.040><c> branches</c><00:03:37.519><c> now</c>
+
+00:03:37.830 --> 00:03:37.840 align:start position:0%
+do it for all three of our branches now
+ 
+
+00:03:37.840 --> 00:03:39.670 align:start position:0%
+do it for all three of our branches now
+so<00:03:38.000><c> you</c><00:03:38.080><c> can</c><00:03:38.239><c> kind</c><00:03:38.400><c> of</c><00:03:38.480><c> see</c><00:03:38.720><c> if</c><00:03:38.799><c> we</c><00:03:38.959><c> had</c><00:03:39.200><c> a</c><00:03:39.440><c> lot</c>
+
+00:03:39.670 --> 00:03:39.680 align:start position:0%
+so you can kind of see if we had a lot
+ 
+
+00:03:39.680 --> 00:03:42.309 align:start position:0%
+so you can kind of see if we had a lot
+of<00:03:39.840><c> wild</c><00:03:40.159><c> cards</c><00:03:40.879><c> uh</c><00:03:41.200><c> this</c><00:03:41.599><c> decision</c><00:03:42.080><c> tree</c>
+
+00:03:42.309 --> 00:03:42.319 align:start position:0%
+of wild cards uh this decision tree
+ 
+
+00:03:42.319 --> 00:03:44.149 align:start position:0%
+of wild cards uh this decision tree
+would<00:03:42.560><c> get</c><00:03:42.799><c> very</c><00:03:43.040><c> big</c><00:03:43.280><c> but</c><00:03:43.440><c> let's</c><00:03:43.680><c> just</c><00:03:43.840><c> finish</c>
+
+00:03:44.149 --> 00:03:44.159 align:start position:0%
+would get very big but let's just finish
+ 
+
+00:03:44.159 --> 00:03:46.869 align:start position:0%
+would get very big but let's just finish
+it<00:03:44.319><c> up</c><00:03:44.400><c> real</c><00:03:44.720><c> quick</c><00:03:45.200><c> so</c><00:03:45.440><c> here</c><00:03:46.000><c> we'll</c><00:03:46.239><c> have</c><00:03:46.640><c> a</c>
+
+00:03:46.869 --> 00:03:46.879 align:start position:0%
+it up real quick so here we'll have a
+ 
+
+00:03:46.879 --> 00:03:48.390 align:start position:0%
+it up real quick so here we'll have a
+right<00:03:47.120><c> parenthesis</c><00:03:47.760><c> here</c><00:03:48.000><c> we'll</c><00:03:48.159><c> have</c><00:03:48.319><c> a</c>
+
+00:03:48.390 --> 00:03:48.400 align:start position:0%
+right parenthesis here we'll have a
+ 
+
+00:03:48.400 --> 00:03:49.750 align:start position:0%
+right parenthesis here we'll have a
+right<00:03:48.560><c> parentheses</c><00:03:49.120><c> here</c><00:03:49.360><c> we'll</c><00:03:49.519><c> have</c><00:03:49.680><c> a</c>
+
+00:03:49.750 --> 00:03:49.760 align:start position:0%
+right parentheses here we'll have a
+ 
+
+00:03:49.760 --> 00:03:52.309 align:start position:0%
+right parentheses here we'll have a
+right<00:03:49.920><c> parenthesis</c><00:03:50.720><c> so</c><00:03:51.200><c> among</c><00:03:51.680><c> all</c><00:03:51.920><c> three</c><00:03:52.159><c> of</c>
+
+00:03:52.309 --> 00:03:52.319 align:start position:0%
+right parenthesis so among all three of
+ 
+
+00:03:52.319 --> 00:03:53.910 align:start position:0%
+right parenthesis so among all three of
+these<00:03:52.560><c> combinations</c><00:03:53.200><c> you</c><00:03:53.360><c> can</c><00:03:53.439><c> see</c><00:03:53.599><c> that</c><00:03:53.680><c> this</c>
+
+00:03:53.910 --> 00:03:53.920 align:start position:0%
+these combinations you can see that this
+ 
+
+00:03:53.920 --> 00:03:56.789 align:start position:0%
+these combinations you can see that this
+is<00:03:54.080><c> invalid</c><00:03:54.640><c> because</c><00:03:55.040><c> it</c><00:03:55.200><c> has</c><00:03:55.760><c> two</c><00:03:56.080><c> open</c><00:03:56.720><c> it</c>
+
+00:03:56.789 --> 00:03:56.799 align:start position:0%
+is invalid because it has two open it
+ 
+
+00:03:56.799 --> 00:03:59.429 align:start position:0%
+is invalid because it has two open it
+has<00:03:57.040><c> two</c><00:03:57.280><c> left</c><00:03:57.760><c> one</c><00:03:58.080><c> right</c><00:03:58.400><c> that's</c><00:03:58.720><c> invalid</c>
+
+00:03:59.429 --> 00:03:59.439 align:start position:0%
+has two left one right that's invalid
+ 
+
+00:03:59.439 --> 00:04:01.429 align:start position:0%
+has two left one right that's invalid
+this<00:03:59.680><c> one</c><00:03:59.840><c> you</c><00:04:00.000><c> can</c><00:04:00.159><c> see</c><00:04:00.319><c> is</c><00:04:00.480><c> also</c><00:04:00.879><c> invalid</c><00:04:01.280><c> it</c>
+
+00:04:01.429 --> 00:04:01.439 align:start position:0%
+this one you can see is also invalid it
+ 
+
+00:04:01.439 --> 00:04:03.750 align:start position:0%
+this one you can see is also invalid it
+has<00:04:01.599><c> one</c><00:04:01.920><c> left</c><00:04:02.239><c> and</c><00:04:02.319><c> then</c><00:04:02.560><c> two</c><00:04:02.799><c> right</c><00:04:03.519><c> but</c><00:04:03.680><c> the</c>
+
+00:04:03.750 --> 00:04:03.760 align:start position:0%
+has one left and then two right but the
+ 
+
+00:04:03.760 --> 00:04:05.830 align:start position:0%
+has one left and then two right but the
+middle<00:04:04.080><c> one</c><00:04:04.319><c> you</c><00:04:04.480><c> can</c><00:04:04.640><c> see</c><00:04:04.959><c> it</c><00:04:05.120><c> is</c><00:04:05.280><c> valid</c><00:04:05.680><c> it</c>
+
+00:04:05.830 --> 00:04:05.840 align:start position:0%
+middle one you can see it is valid it
+ 
+
+00:04:05.840 --> 00:04:07.910 align:start position:0%
+middle one you can see it is valid it
+has<00:04:06.000><c> a</c><00:04:06.080><c> left</c><00:04:06.480><c> a</c><00:04:06.640><c> space</c><00:04:07.040><c> and</c><00:04:07.120><c> then</c><00:04:07.280><c> a</c><00:04:07.360><c> right</c><00:04:07.760><c> and</c>
+
+00:04:07.910 --> 00:04:07.920 align:start position:0%
+has a left a space and then a right and
+ 
+
+00:04:07.920 --> 00:04:09.110 align:start position:0%
+has a left a space and then a right and
+the<00:04:08.000><c> way</c><00:04:08.159><c> we</c><00:04:08.319><c> could</c><00:04:08.480><c> do</c><00:04:08.640><c> this</c><00:04:08.879><c> problem</c>
+
+00:04:09.110 --> 00:04:09.120 align:start position:0%
+the way we could do this problem
+ 
+
+00:04:09.120 --> 00:04:11.030 align:start position:0%
+the way we could do this problem
+recursively<00:04:09.840><c> the</c><00:04:10.000><c> decision</c><00:04:10.400><c> tree</c><00:04:10.560><c> portion</c><00:04:10.959><c> is</c>
+
+00:04:11.030 --> 00:04:11.040 align:start position:0%
+recursively the decision tree portion is
+ 
+
+00:04:11.040 --> 00:04:12.470 align:start position:0%
+recursively the decision tree portion is
+kind<00:04:11.200><c> of</c><00:04:11.360><c> simple</c><00:04:11.680><c> we</c><00:04:11.840><c> would</c><00:04:12.000><c> make</c><00:04:12.239><c> three</c>
+
+00:04:12.470 --> 00:04:12.480 align:start position:0%
+kind of simple we would make three
+ 
+
+00:04:12.480 --> 00:04:14.470 align:start position:0%
+kind of simple we would make three
+recursive<00:04:13.040><c> calls</c><00:04:13.439><c> every</c><00:04:13.680><c> time</c>
+
+00:04:14.470 --> 00:04:14.480 align:start position:0%
+recursive calls every time
+ 
+
+00:04:14.480 --> 00:04:17.349 align:start position:0%
+recursive calls every time
+we<00:04:14.640><c> got</c><00:04:14.959><c> to</c><00:04:15.519><c> a</c><00:04:15.760><c> wild</c><00:04:16.079><c> card</c><00:04:16.639><c> but</c><00:04:16.799><c> to</c><00:04:16.959><c> determine</c>
+
+00:04:17.349 --> 00:04:17.359 align:start position:0%
+we got to a wild card but to determine
+ 
+
+00:04:17.359 --> 00:04:19.590 align:start position:0%
+we got to a wild card but to determine
+if<00:04:17.519><c> it</c><00:04:17.600><c> was</c><00:04:17.680><c> valid</c><00:04:18.000><c> or</c><00:04:18.079><c> not</c><00:04:18.479><c> one</c><00:04:19.040><c> we</c><00:04:19.199><c> would</c><00:04:19.359><c> keep</c>
+
+00:04:19.590 --> 00:04:19.600 align:start position:0%
+if it was valid or not one we would keep
+ 
+
+00:04:19.600 --> 00:04:21.590 align:start position:0%
+if it was valid or not one we would keep
+track<00:04:20.000><c> of</c><00:04:20.160><c> how</c><00:04:20.320><c> many</c><00:04:20.639><c> left</c><00:04:20.880><c> parentheses</c><00:04:21.440><c> we</c>
+
+00:04:21.590 --> 00:04:21.600 align:start position:0%
+track of how many left parentheses we
+ 
+
+00:04:21.600 --> 00:04:24.230 align:start position:0%
+track of how many left parentheses we
+had<00:04:21.759><c> how</c><00:04:21.919><c> many</c><00:04:22.240><c> open</c><00:04:22.880><c> left</c><00:04:23.120><c> parentheses</c><00:04:24.080><c> we</c>
+
+00:04:24.230 --> 00:04:24.240 align:start position:0%
+had how many open left parentheses we
+ 
+
+00:04:24.240 --> 00:04:27.510 align:start position:0%
+had how many open left parentheses we
+had<00:04:24.880><c> at</c><00:04:25.040><c> this</c><00:04:25.280><c> point</c><00:04:25.440><c> we</c><00:04:25.600><c> had</c><00:04:25.840><c> one</c><00:04:26.160><c> open</c>
+
+00:04:27.510 --> 00:04:27.520 align:start position:0%
+had at this point we had one open
+ 
+
+00:04:27.520 --> 00:04:28.710 align:start position:0%
+had at this point we had one open
+if<00:04:27.680><c> we're</c><00:04:27.759><c> just</c><00:04:27.919><c> considering</c><00:04:28.320><c> the</c><00:04:28.400><c> middle</c>
+
+00:04:28.710 --> 00:04:28.720 align:start position:0%
+if we're just considering the middle
+ 
+
+00:04:28.720 --> 00:04:31.110 align:start position:0%
+if we're just considering the middle
+branch<00:04:29.040><c> here</c><00:04:29.280><c> we</c><00:04:29.440><c> also</c><00:04:29.680><c> had</c><00:04:30.000><c> a</c><00:04:30.240><c> one</c><00:04:30.560><c> open</c><00:04:31.040><c> and</c>
+
+00:04:31.110 --> 00:04:31.120 align:start position:0%
+branch here we also had a one open and
+ 
+
+00:04:31.120 --> 00:04:33.590 align:start position:0%
+branch here we also had a one open and
+then<00:04:31.280><c> by</c><00:04:31.440><c> the</c><00:04:31.600><c> end</c><00:04:31.759><c> of</c><00:04:31.840><c> it</c><00:04:32.080><c> we</c><00:04:32.240><c> had</c><00:04:32.720><c> zero</c><00:04:33.199><c> open</c>
+
+00:04:33.590 --> 00:04:33.600 align:start position:0%
+then by the end of it we had zero open
+ 
+
+00:04:33.600 --> 00:04:36.390 align:start position:0%
+then by the end of it we had zero open
+zero<00:04:34.080><c> left</c><00:04:34.479><c> open</c><00:04:34.800><c> parenthesis</c><00:04:35.520><c> by</c><00:04:35.680><c> the</c><00:04:35.919><c> end</c><00:04:36.240><c> we</c>
+
+00:04:36.390 --> 00:04:36.400 align:start position:0%
+zero left open parenthesis by the end we
+ 
+
+00:04:36.400 --> 00:04:37.909 align:start position:0%
+zero left open parenthesis by the end we
+should<00:04:36.639><c> have</c><00:04:36.880><c> exactly</c><00:04:37.280><c> zero</c><00:04:37.600><c> because</c><00:04:37.840><c> they</c>
+
+00:04:37.909 --> 00:04:37.919 align:start position:0%
+should have exactly zero because they
+ 
+
+00:04:37.919 --> 00:04:39.990 align:start position:0%
+should have exactly zero because they
+should<00:04:38.080><c> all</c><00:04:38.320><c> match</c><00:04:38.639><c> each</c><00:04:38.800><c> other</c><00:04:39.280><c> and</c><00:04:39.840><c> the</c>
+
+00:04:39.990 --> 00:04:40.000 align:start position:0%
+should all match each other and the
+ 
+
+00:04:40.000 --> 00:04:42.230 align:start position:0%
+should all match each other and the
+number<00:04:40.320><c> of</c><00:04:40.639><c> left</c><00:04:40.960><c> open</c><00:04:41.360><c> should</c><00:04:41.600><c> never</c><00:04:41.919><c> be</c>
+
+00:04:42.230 --> 00:04:42.240 align:start position:0%
+number of left open should never be
+ 
+
+00:04:42.240 --> 00:04:44.310 align:start position:0%
+number of left open should never be
+negative<00:04:42.639><c> for</c><00:04:42.800><c> example</c><00:04:43.120><c> if</c><00:04:43.199><c> we</c><00:04:43.440><c> started</c><00:04:44.000><c> like</c>
+
+00:04:44.310 --> 00:04:44.320 align:start position:0%
+negative for example if we started like
+ 
+
+00:04:44.320 --> 00:04:45.749 align:start position:0%
+negative for example if we started like
+this<00:04:44.639><c> right</c><00:04:44.880><c> if</c><00:04:44.960><c> we</c><00:04:45.120><c> started</c><00:04:45.360><c> with</c><00:04:45.520><c> a</c><00:04:45.600><c> right</c>
+
+00:04:45.749 --> 00:04:45.759 align:start position:0%
+this right if we started with a right
+ 
+
+00:04:45.759 --> 00:04:48.070 align:start position:0%
+this right if we started with a right
+parenthesis<00:04:46.240><c> that's</c><00:04:46.560><c> automatically</c><00:04:47.360><c> invalid</c>
+
+00:04:48.070 --> 00:04:48.080 align:start position:0%
+parenthesis that's automatically invalid
+ 
+
+00:04:48.080 --> 00:04:50.550 align:start position:0%
+parenthesis that's automatically invalid
+okay<00:04:48.320><c> so</c><00:04:48.479><c> that's</c><00:04:48.960><c> the</c><00:04:49.120><c> recursive</c><00:04:49.759><c> solution</c>
+
+00:04:50.550 --> 00:04:50.560 align:start position:0%
+okay so that's the recursive solution
+ 
+
+00:04:50.560 --> 00:04:52.550 align:start position:0%
+okay so that's the recursive solution
+and<00:04:51.040><c> you</c><00:04:51.199><c> can</c><00:04:51.440><c> actually</c><00:04:51.840><c> add</c><00:04:52.080><c> dynamic</c>
+
+00:04:52.550 --> 00:04:52.560 align:start position:0%
+and you can actually add dynamic
+ 
+
+00:04:52.560 --> 00:04:54.550 align:start position:0%
+and you can actually add dynamic
+programming<00:04:53.040><c> and</c><00:04:53.120><c> by</c><00:04:53.600><c> dynamic</c><00:04:54.080><c> programming</c><00:04:54.479><c> i</c>
+
+00:04:54.550 --> 00:04:54.560 align:start position:0%
+programming and by dynamic programming i
+ 
+
+00:04:54.560 --> 00:04:56.469 align:start position:0%
+programming and by dynamic programming i
+mean<00:04:54.800><c> memoization</c><00:04:55.520><c> that's</c><00:04:55.759><c> the</c><00:04:55.919><c> easier</c><00:04:56.320><c> way</c>
+
+00:04:56.469 --> 00:04:56.479 align:start position:0%
+mean memoization that's the easier way
+ 
+
+00:04:56.479 --> 00:04:59.749 align:start position:0%
+mean memoization that's the easier way
+to<00:04:56.639><c> do</c><00:04:56.800><c> it</c><00:04:57.360><c> to</c><00:04:57.600><c> this</c><00:04:58.240><c> recursive</c><00:04:58.800><c> solution</c><00:04:59.600><c> and</c>
+
+00:04:59.749 --> 00:04:59.759 align:start position:0%
+to do it to this recursive solution and
+ 
+
+00:04:59.759 --> 00:05:01.749 align:start position:0%
+to do it to this recursive solution and
+i<00:04:59.919><c> will</c><00:05:00.080><c> actually</c><00:05:00.479><c> link</c><00:05:00.720><c> the</c><00:05:00.880><c> code</c><00:05:01.199><c> to</c><00:05:01.360><c> that</c><00:05:01.600><c> in</c>
+
+00:05:01.749 --> 00:05:01.759 align:start position:0%
+i will actually link the code to that in
+ 
+
+00:05:01.759 --> 00:05:03.110 align:start position:0%
+i will actually link the code to that in
+the<00:05:01.919><c> description</c><00:05:02.400><c> if</c><00:05:02.479><c> you</c><00:05:02.560><c> want</c><00:05:02.720><c> to</c><00:05:02.800><c> take</c><00:05:02.960><c> a</c>
+
+00:05:03.110 --> 00:05:03.120 align:start position:0%
+the description if you want to take a
+ 
+
+00:05:03.120 --> 00:05:05.189 align:start position:0%
+the description if you want to take a
+look<00:05:03.520><c> uh</c><00:05:03.680><c> the</c><00:05:03.840><c> overall</c><00:05:04.240><c> time</c><00:05:04.400><c> complexity</c><00:05:05.039><c> of</c>
+
+00:05:05.189 --> 00:05:05.199 align:start position:0%
+look uh the overall time complexity of
+ 
+
+00:05:05.199 --> 00:05:07.350 align:start position:0%
+look uh the overall time complexity of
+first<00:05:05.360><c> of</c><00:05:05.520><c> all</c><00:05:05.600><c> the</c><00:05:05.759><c> brute</c><00:05:06.000><c> force</c><00:05:06.240><c> solution</c><00:05:06.960><c> is</c>
+
+00:05:07.350 --> 00:05:07.360 align:start position:0%
+first of all the brute force solution is
+ 
+
+00:05:07.360 --> 00:05:09.909 align:start position:0%
+first of all the brute force solution is
+in<00:05:07.440><c> the</c><00:05:07.600><c> worst</c><00:05:07.919><c> case</c><00:05:08.240><c> going</c><00:05:08.479><c> to</c><00:05:08.880><c> be</c><00:05:09.120><c> a</c><00:05:09.360><c> 3</c><00:05:09.680><c> to</c><00:05:09.840><c> the</c>
+
+00:05:09.909 --> 00:05:09.919 align:start position:0%
+in the worst case going to be a 3 to the
+ 
+
+00:05:09.919 --> 00:05:11.590 align:start position:0%
+in the worst case going to be a 3 to the
+power<00:05:10.240><c> of</c><00:05:10.479><c> n</c><00:05:10.720><c> because</c><00:05:11.039><c> that's</c><00:05:11.280><c> how</c><00:05:11.440><c> many</c>
+
+00:05:11.590 --> 00:05:11.600 align:start position:0%
+power of n because that's how many
+ 
+
+00:05:11.600 --> 00:05:13.350 align:start position:0%
+power of n because that's how many
+branches<00:05:12.080><c> we</c><00:05:12.160><c> have</c><00:05:12.560><c> n</c><00:05:12.800><c> is</c><00:05:12.880><c> going</c><00:05:12.960><c> to</c><00:05:13.039><c> be</c><00:05:13.199><c> the</c>
+
+00:05:13.350 --> 00:05:13.360 align:start position:0%
+branches we have n is going to be the
+ 
+
+00:05:13.360 --> 00:05:14.870 align:start position:0%
+branches we have n is going to be the
+size<00:05:13.759><c> of</c><00:05:13.919><c> the</c><00:05:14.080><c> string</c><00:05:14.400><c> because</c><00:05:14.639><c> that's</c><00:05:14.800><c> going</c>
+
+00:05:14.870 --> 00:05:14.880 align:start position:0%
+size of the string because that's going
+ 
+
+00:05:14.880 --> 00:05:16.710 align:start position:0%
+size of the string because that's going
+to<00:05:14.960><c> be</c><00:05:15.120><c> the</c><00:05:15.199><c> height</c><00:05:15.440><c> of</c><00:05:15.600><c> this</c><00:05:15.759><c> decision</c><00:05:16.240><c> tree</c>
+
+00:05:16.710 --> 00:05:16.720 align:start position:0%
+to be the height of this decision tree
+ 
+
+00:05:16.720 --> 00:05:19.029 align:start position:0%
+to be the height of this decision tree
+but<00:05:16.880><c> when</c><00:05:17.039><c> you</c><00:05:17.199><c> add</c><00:05:17.360><c> memoization</c><00:05:18.080><c> to</c><00:05:18.160><c> this</c><00:05:18.639><c> the</c>
+
+00:05:19.029 --> 00:05:19.039 align:start position:0%
+but when you add memoization to this the
+ 
+
+00:05:19.039 --> 00:05:20.950 align:start position:0%
+but when you add memoization to this the
+overall<00:05:19.360><c> time</c><00:05:19.520><c> complexity</c><00:05:20.080><c> actually</c><00:05:20.479><c> becomes</c>
+
+00:05:20.950 --> 00:05:20.960 align:start position:0%
+overall time complexity actually becomes
+ 
+
+00:05:20.960 --> 00:05:23.430 align:start position:0%
+overall time complexity actually becomes
+n<00:05:21.280><c> cubed</c><00:05:22.240><c> and</c><00:05:22.400><c> the</c><00:05:22.479><c> way</c><00:05:22.639><c> we</c><00:05:22.800><c> would</c><00:05:22.880><c> do</c><00:05:23.039><c> that</c><00:05:23.280><c> is</c>
+
+00:05:23.430 --> 00:05:23.440 align:start position:0%
+n cubed and the way we would do that is
+ 
+
+00:05:23.440 --> 00:05:25.749 align:start position:0%
+n cubed and the way we would do that is
+by<00:05:23.759><c> caching</c><00:05:24.240><c> and</c><00:05:24.400><c> we</c><00:05:24.560><c> would</c><00:05:24.800><c> cache</c><00:05:25.199><c> uh</c><00:05:25.440><c> with</c>
+
+00:05:25.749 --> 00:05:25.759 align:start position:0%
+by caching and we would cache uh with
+ 
+
+00:05:25.759 --> 00:05:27.830 align:start position:0%
+by caching and we would cache uh with
+two<00:05:26.080><c> parameters</c><00:05:26.720><c> one</c><00:05:26.960><c> would</c><00:05:27.120><c> be</c><00:05:27.280><c> i</c><00:05:27.600><c> which</c><00:05:27.759><c> is</c>
+
+00:05:27.830 --> 00:05:27.840 align:start position:0%
+two parameters one would be i which is
+ 
+
+00:05:27.840 --> 00:05:29.590 align:start position:0%
+two parameters one would be i which is
+the<00:05:28.000><c> index</c><00:05:28.400><c> of</c><00:05:28.479><c> the</c><00:05:28.560><c> position</c><00:05:28.960><c> that</c><00:05:29.039><c> we're</c><00:05:29.280><c> at</c>
+
+00:05:29.590 --> 00:05:29.600 align:start position:0%
+the index of the position that we're at
+ 
+
+00:05:29.600 --> 00:05:31.510 align:start position:0%
+the index of the position that we're at
+and<00:05:29.759><c> the</c><00:05:29.919><c> other</c><00:05:30.160><c> parameter</c><00:05:30.639><c> would</c><00:05:30.800><c> be</c><00:05:31.199><c> uh</c><00:05:31.360><c> the</c>
+
+00:05:31.510 --> 00:05:31.520 align:start position:0%
+and the other parameter would be uh the
+ 
+
+00:05:31.520 --> 00:05:33.830 align:start position:0%
+and the other parameter would be uh the
+number<00:05:31.840><c> of</c><00:05:32.080><c> left</c><00:05:32.479><c> open</c><00:05:32.800><c> parentheses</c><00:05:33.440><c> at</c><00:05:33.680><c> any</c>
+
+00:05:33.830 --> 00:05:33.840 align:start position:0%
+number of left open parentheses at any
+ 
+
+00:05:33.840 --> 00:05:35.830 align:start position:0%
+number of left open parentheses at any
+given<00:05:34.160><c> point</c><00:05:34.720><c> uh</c><00:05:34.960><c> in</c><00:05:35.120><c> the</c><00:05:35.280><c> string</c><00:05:35.520><c> that</c><00:05:35.680><c> we're</c>
+
+00:05:35.830 --> 00:05:35.840 align:start position:0%
+given point uh in the string that we're
+ 
+
+00:05:35.840 --> 00:05:38.070 align:start position:0%
+given point uh in the string that we're
+at<00:05:36.160><c> now</c><00:05:36.639><c> a</c><00:05:36.880><c> caching</c><00:05:37.199><c> with</c><00:05:37.520><c> two</c><00:05:37.840><c> different</c>
+
+00:05:38.070 --> 00:05:38.080 align:start position:0%
+at now a caching with two different
+ 
+
+00:05:38.080 --> 00:05:39.909 align:start position:0%
+at now a caching with two different
+parameters<00:05:38.639><c> like</c><00:05:38.800><c> this</c><00:05:39.199><c> will</c><00:05:39.360><c> cause</c><00:05:39.680><c> us</c><00:05:39.759><c> to</c>
+
+00:05:39.909 --> 00:05:39.919 align:start position:0%
+parameters like this will cause us to
+ 
+
+00:05:39.919 --> 00:05:41.909 align:start position:0%
+parameters like this will cause us to
+have<00:05:40.080><c> a</c><00:05:40.240><c> two-dimensional</c><00:05:40.960><c> matrix</c><00:05:41.600><c> uh</c><00:05:41.840><c> the</c>
+
+00:05:41.909 --> 00:05:41.919 align:start position:0%
+have a two-dimensional matrix uh the
+ 
+
+00:05:41.919 --> 00:05:43.430 align:start position:0%
+have a two-dimensional matrix uh the
+size<00:05:42.240><c> of</c><00:05:42.320><c> that</c><00:05:42.400><c> matrix</c><00:05:42.880><c> is</c><00:05:42.960><c> going</c><00:05:43.039><c> to</c><00:05:43.120><c> be</c><00:05:43.280><c> n</c>
+
+00:05:43.430 --> 00:05:43.440 align:start position:0%
+size of that matrix is going to be n
+ 
+
+00:05:43.440 --> 00:05:46.070 align:start position:0%
+size of that matrix is going to be n
+squared<00:05:44.000><c> but</c><00:05:44.160><c> to</c><00:05:44.320><c> calculate</c><00:05:44.880><c> each</c><00:05:45.199><c> value</c><00:05:45.680><c> in</c>
+
+00:05:46.070 --> 00:05:46.080 align:start position:0%
+squared but to calculate each value in
+ 
+
+00:05:46.080 --> 00:05:48.629 align:start position:0%
+squared but to calculate each value in
+that<00:05:46.560><c> matrix</c><00:05:47.120><c> would</c><00:05:47.440><c> would</c><00:05:47.680><c> take</c><00:05:48.000><c> big</c><00:05:48.240><c> o</c><00:05:48.320><c> of</c><00:05:48.479><c> n</c>
+
+00:05:48.629 --> 00:05:48.639 align:start position:0%
+that matrix would would take big o of n
+ 
+
+00:05:48.639 --> 00:05:50.230 align:start position:0%
+that matrix would would take big o of n
+time<00:05:48.800><c> complexity</c><00:05:49.280><c> that's</c><00:05:49.520><c> how</c><00:05:49.600><c> i'm</c><00:05:49.759><c> getting</c><00:05:50.000><c> n</c>
+
+00:05:50.230 --> 00:05:50.240 align:start position:0%
+time complexity that's how i'm getting n
+ 
+
+00:05:50.240 --> 00:05:52.310 align:start position:0%
+time complexity that's how i'm getting n
+cubed<00:05:50.639><c> from</c><00:05:51.280><c> but</c><00:05:51.440><c> i</c><00:05:51.520><c> don't</c><00:05:51.680><c> expect</c><00:05:52.000><c> you</c><00:05:52.160><c> to</c>
+
+00:05:52.310 --> 00:05:52.320 align:start position:0%
+cubed from but i don't expect you to
+ 
+
+00:05:52.320 --> 00:05:53.830 align:start position:0%
+cubed from but i don't expect you to
+understand<00:05:52.720><c> all</c><00:05:52.880><c> of</c><00:05:52.960><c> this</c><00:05:53.199><c> if</c><00:05:53.360><c> you</c><00:05:53.520><c> want</c><00:05:53.680><c> to</c>
+
+00:05:53.830 --> 00:05:53.840 align:start position:0%
+understand all of this if you want to
+ 
+
+00:05:53.840 --> 00:05:55.830 align:start position:0%
+understand all of this if you want to
+understand<00:05:54.240><c> it</c><00:05:54.320><c> a</c><00:05:54.400><c> bit</c><00:05:54.560><c> more</c><00:05:54.720><c> you</c><00:05:54.880><c> can</c><00:05:55.520><c> look</c><00:05:55.680><c> at</c>
+
+00:05:55.830 --> 00:05:55.840 align:start position:0%
+understand it a bit more you can look at
+ 
+
+00:05:55.840 --> 00:05:56.870 align:start position:0%
+understand it a bit more you can look at
+the<00:05:55.919><c> code</c><00:05:56.240><c> that</c><00:05:56.400><c> i'll</c><00:05:56.479><c> have</c><00:05:56.720><c> in</c><00:05:56.800><c> the</c>
+
+00:05:56.870 --> 00:05:56.880 align:start position:0%
+the code that i'll have in the
+ 
+
+00:05:56.880 --> 00:05:58.710 align:start position:0%
+the code that i'll have in the
+description<00:05:57.360><c> but</c><00:05:57.520><c> there's</c><00:05:57.840><c> actually</c><00:05:58.319><c> an</c><00:05:58.479><c> even</c>
+
+00:05:58.710 --> 00:05:58.720 align:start position:0%
+description but there's actually an even
+ 
+
+00:05:58.720 --> 00:06:00.710 align:start position:0%
+description but there's actually an even
+more<00:05:58.960><c> efficient</c><00:05:59.360><c> way</c><00:05:59.520><c> to</c><00:05:59.680><c> solve</c><00:05:59.919><c> this</c><00:06:00.160><c> problem</c>
+
+00:06:00.710 --> 00:06:00.720 align:start position:0%
+more efficient way to solve this problem
+ 
+
+00:06:00.720 --> 00:06:03.189 align:start position:0%
+more efficient way to solve this problem
+and<00:06:00.880><c> that</c><00:06:01.199><c> is</c><00:06:01.600><c> the</c><00:06:01.919><c> greedy</c><00:06:02.400><c> solution</c><00:06:02.880><c> and</c><00:06:03.039><c> it's</c>
+
+00:06:03.189 --> 00:06:03.199 align:start position:0%
+and that is the greedy solution and it's
+ 
+
+00:06:03.199 --> 00:06:05.270 align:start position:0%
+and that is the greedy solution and it's
+very<00:06:03.440><c> difficult</c><00:06:03.840><c> to</c><00:06:04.000><c> come</c><00:06:04.240><c> up</c><00:06:04.400><c> with</c><00:06:04.800><c> now</c><00:06:05.039><c> even</c>
+
+00:06:05.270 --> 00:06:05.280 align:start position:0%
+very difficult to come up with now even
+ 
+
+00:06:05.280 --> 00:06:06.790 align:start position:0%
+very difficult to come up with now even
+if<00:06:05.360><c> you</c><00:06:05.600><c> can't</c><00:06:05.840><c> come</c><00:06:06.080><c> up</c><00:06:06.160><c> with</c><00:06:06.319><c> the</c><00:06:06.400><c> greedy</c>
+
+00:06:06.790 --> 00:06:06.800 align:start position:0%
+if you can't come up with the greedy
+ 
+
+00:06:06.800 --> 00:06:08.790 align:start position:0%
+if you can't come up with the greedy
+solution<00:06:07.120><c> by</c><00:06:07.360><c> yourself</c><00:06:08.000><c> it</c><00:06:08.160><c> might</c><00:06:08.400><c> still</c>
+
+00:06:08.790 --> 00:06:08.800 align:start position:0%
+solution by yourself it might still
+ 
+
+00:06:08.800 --> 00:06:10.390 align:start position:0%
+solution by yourself it might still
+occur<00:06:09.039><c> to</c><00:06:09.199><c> you</c><00:06:09.360><c> in</c><00:06:09.440><c> a</c><00:06:09.520><c> real</c><00:06:09.840><c> interview</c><00:06:10.160><c> that</c>
+
+00:06:10.390 --> 00:06:10.400 align:start position:0%
+occur to you in a real interview that
+ 
+
+00:06:10.400 --> 00:06:12.309 align:start position:0%
+occur to you in a real interview that
+maybe<00:06:10.720><c> there's</c><00:06:10.960><c> some</c><00:06:11.199><c> kind</c><00:06:11.360><c> of</c><00:06:11.600><c> trick</c><00:06:11.919><c> to</c><00:06:12.080><c> this</c>
+
+00:06:12.309 --> 00:06:12.319 align:start position:0%
+maybe there's some kind of trick to this
+ 
+
+00:06:12.319 --> 00:06:14.309 align:start position:0%
+maybe there's some kind of trick to this
+problem<00:06:12.639><c> that</c><00:06:12.960><c> if</c><00:06:13.199><c> only</c><00:06:13.520><c> you</c><00:06:13.600><c> could</c><00:06:13.840><c> figure</c><00:06:14.160><c> it</c>
+
+00:06:14.309 --> 00:06:14.319 align:start position:0%
+problem that if only you could figure it
+ 
+
+00:06:14.319 --> 00:06:16.150 align:start position:0%
+problem that if only you could figure it
+out<00:06:14.639><c> you</c><00:06:14.880><c> would</c><00:06:15.120><c> be</c><00:06:15.360><c> able</c><00:06:15.520><c> to</c><00:06:15.680><c> solve</c><00:06:15.919><c> this</c>
+
+00:06:16.150 --> 00:06:16.160 align:start position:0%
+out you would be able to solve this
+ 
+
+00:06:16.160 --> 00:06:18.309 align:start position:0%
+out you would be able to solve this
+problem<00:06:16.560><c> in</c><00:06:16.720><c> linear</c><00:06:17.120><c> time</c><00:06:17.520><c> is</c><00:06:17.680><c> there</c><00:06:17.840><c> a</c><00:06:18.000><c> trick</c>
+
+00:06:18.309 --> 00:06:18.319 align:start position:0%
+problem in linear time is there a trick
+ 
+
+00:06:18.319 --> 00:06:20.469 align:start position:0%
+problem in linear time is there a trick
+like<00:06:18.560><c> that</c><00:06:19.039><c> well</c><00:06:19.280><c> hopefully</c><00:06:20.000><c> in</c><00:06:20.160><c> a</c><00:06:20.240><c> real</c>
+
+00:06:20.469 --> 00:06:20.479 align:start position:0%
+like that well hopefully in a real
+ 
+
+00:06:20.479 --> 00:06:21.909 align:start position:0%
+like that well hopefully in a real
+interview<00:06:20.960><c> your</c><00:06:21.199><c> interviewer</c><00:06:21.600><c> would</c><00:06:21.759><c> give</c>
+
+00:06:21.909 --> 00:06:21.919 align:start position:0%
+interview your interviewer would give
+ 
+
+00:06:21.919 --> 00:06:23.909 align:start position:0%
+interview your interviewer would give
+you<00:06:22.160><c> a</c><00:06:22.319><c> hint</c><00:06:22.560><c> for</c><00:06:22.720><c> that</c><00:06:23.120><c> but</c><00:06:23.280><c> let's</c><00:06:23.440><c> see</c><00:06:23.600><c> how</c><00:06:23.759><c> we</c>
+
+00:06:23.909 --> 00:06:23.919 align:start position:0%
+you a hint for that but let's see how we
+ 
+
+00:06:23.919 --> 00:06:26.150 align:start position:0%
+you a hint for that but let's see how we
+could<00:06:24.160><c> maybe</c><00:06:24.479><c> come</c><00:06:24.720><c> up</c><00:06:24.800><c> with</c><00:06:24.960><c> it</c><00:06:25.120><c> ourselves</c><00:06:26.000><c> we</c>
+
+00:06:26.150 --> 00:06:26.160 align:start position:0%
+could maybe come up with it ourselves we
+ 
+
+00:06:26.160 --> 00:06:27.990 align:start position:0%
+could maybe come up with it ourselves we
+know<00:06:26.319><c> that</c><00:06:26.479><c> one</c><00:06:26.720><c> variable</c><00:06:27.280><c> is</c><00:06:27.360><c> going</c><00:06:27.520><c> to</c><00:06:27.600><c> be</c><00:06:27.840><c> a</c>
+
+00:06:27.990 --> 00:06:28.000 align:start position:0%
+know that one variable is going to be a
+ 
+
+00:06:28.000 --> 00:06:29.749 align:start position:0%
+know that one variable is going to be a
+mandatory<00:06:28.639><c> for</c><00:06:28.800><c> us</c><00:06:29.039><c> and</c><00:06:29.120><c> i'm</c><00:06:29.280><c> going</c><00:06:29.360><c> to</c><00:06:29.520><c> call</c>
+
+00:06:29.749 --> 00:06:29.759 align:start position:0%
+mandatory for us and i'm going to call
+ 
+
+00:06:29.759 --> 00:06:31.670 align:start position:0%
+mandatory for us and i'm going to call
+it<00:06:29.919><c> left</c><00:06:30.319><c> it's</c><00:06:30.479><c> going</c><00:06:30.639><c> to</c><00:06:30.720><c> be</c><00:06:30.880><c> the</c><00:06:31.039><c> number</c><00:06:31.360><c> of</c>
+
+00:06:31.670 --> 00:06:31.680 align:start position:0%
+it left it's going to be the number of
+ 
+
+00:06:31.680 --> 00:06:34.550 align:start position:0%
+it left it's going to be the number of
+left<00:06:32.080><c> open</c><00:06:32.400><c> parentheses</c><00:06:33.039><c> we</c><00:06:33.280><c> have</c><00:06:33.919><c> and</c><00:06:34.400><c> when</c>
+
+00:06:34.550 --> 00:06:34.560 align:start position:0%
+left open parentheses we have and when
+ 
+
+00:06:34.560 --> 00:06:36.469 align:start position:0%
+left open parentheses we have and when
+we<00:06:34.720><c> reach</c><00:06:35.120><c> the</c><00:06:35.280><c> first</c><00:06:35.600><c> character</c><00:06:36.000><c> it's</c><00:06:36.160><c> a</c><00:06:36.240><c> left</c>
+
+00:06:36.469 --> 00:06:36.479 align:start position:0%
+we reach the first character it's a left
+ 
+
+00:06:36.479 --> 00:06:38.469 align:start position:0%
+we reach the first character it's a left
+open<00:06:36.720><c> parenthesis</c><00:06:37.280><c> initially</c><00:06:37.919><c> our</c><00:06:38.080><c> total</c><00:06:38.400><c> is</c>
+
+00:06:38.469 --> 00:06:38.479 align:start position:0%
+open parenthesis initially our total is
+ 
+
+00:06:38.479 --> 00:06:41.029 align:start position:0%
+open parenthesis initially our total is
+going<00:06:38.560><c> to</c><00:06:38.639><c> be</c><00:06:38.800><c> zero</c><00:06:39.440><c> but</c><00:06:40.080><c> after</c><00:06:40.639><c> seeing</c><00:06:40.880><c> the</c>
+
+00:06:41.029 --> 00:06:41.039 align:start position:0%
+going to be zero but after seeing the
+ 
+
+00:06:41.039 --> 00:06:42.710 align:start position:0%
+going to be zero but after seeing the
+left<00:06:41.280><c> open</c><00:06:41.520><c> parenthesis</c><00:06:41.919><c> we</c><00:06:42.080><c> increment</c><00:06:42.400><c> it</c><00:06:42.479><c> by</c>
+
+00:06:42.710 --> 00:06:42.720 align:start position:0%
+left open parenthesis we increment it by
+ 
+
+00:06:42.720 --> 00:06:44.710 align:start position:0%
+left open parenthesis we increment it by
+one<00:06:42.960><c> now</c><00:06:43.120><c> we</c><00:06:43.280><c> have</c><00:06:43.520><c> one</c><00:06:44.080><c> left</c><00:06:44.479><c> open</c>
+
+00:06:44.710 --> 00:06:44.720 align:start position:0%
+one now we have one left open
+ 
+
+00:06:44.720 --> 00:06:46.950 align:start position:0%
+one now we have one left open
+parenthesis<00:06:45.440><c> and</c><00:06:45.520><c> that</c><00:06:45.680><c> would</c><00:06:45.840><c> be</c><00:06:46.080><c> very</c><00:06:46.400><c> easy</c>
+
+00:06:46.950 --> 00:06:46.960 align:start position:0%
+parenthesis and that would be very easy
+ 
+
+00:06:46.960 --> 00:06:48.710 align:start position:0%
+parenthesis and that would be very easy
+uh<00:06:47.120><c> suppose</c><00:06:47.440><c> we</c><00:06:47.600><c> didn't</c><00:06:47.840><c> have</c><00:06:48.080><c> the</c><00:06:48.160><c> wild</c><00:06:48.479><c> card</c>
+
+00:06:48.710 --> 00:06:48.720 align:start position:0%
+uh suppose we didn't have the wild card
+ 
+
+00:06:48.720 --> 00:06:50.870 align:start position:0%
+uh suppose we didn't have the wild card
+then<00:06:48.960><c> we</c><00:06:49.120><c> would</c><00:06:49.280><c> have</c><00:06:49.680><c> a</c><00:06:49.840><c> right</c><00:06:50.080><c> parenthesis</c>
+
+00:06:50.870 --> 00:06:50.880 align:start position:0%
+then we would have a right parenthesis
+ 
+
+00:06:50.880 --> 00:06:52.550 align:start position:0%
+then we would have a right parenthesis
+and<00:06:51.120><c> we</c><00:06:51.280><c> would</c><00:06:51.440><c> do</c><00:06:51.599><c> the</c><00:06:51.680><c> exact</c><00:06:52.080><c> opposite</c><00:06:52.400><c> we'd</c>
+
+00:06:52.550 --> 00:06:52.560 align:start position:0%
+and we would do the exact opposite we'd
+ 
+
+00:06:52.560 --> 00:06:54.550 align:start position:0%
+and we would do the exact opposite we'd
+say<00:06:52.720><c> okay</c><00:06:53.039><c> left</c><00:06:53.520><c> uh</c><00:06:53.759><c> open</c><00:06:54.000><c> parenthesis</c><00:06:54.479><c> has</c>
+
+00:06:54.550 --> 00:06:54.560 align:start position:0%
+say okay left uh open parenthesis has
+ 
+
+00:06:54.560 --> 00:06:56.710 align:start position:0%
+say okay left uh open parenthesis has
+been<00:06:54.800><c> decremented</c><00:06:55.360><c> by</c><00:06:55.599><c> one</c><00:06:56.000><c> so</c><00:06:56.240><c> now</c><00:06:56.479><c> we're</c>
+
+00:06:56.710 --> 00:06:56.720 align:start position:0%
+been decremented by one so now we're
+ 
+
+00:06:56.720 --> 00:06:59.189 align:start position:0%
+been decremented by one so now we're
+back<00:06:56.960><c> to</c><00:06:57.280><c> zero</c><00:06:57.759><c> left</c><00:06:58.080><c> open</c><00:06:58.319><c> parenthesis</c><00:06:59.120><c> and</c>
+
+00:06:59.189 --> 00:06:59.199 align:start position:0%
+back to zero left open parenthesis and
+ 
+
+00:06:59.199 --> 00:07:02.150 align:start position:0%
+back to zero left open parenthesis and
+that<00:06:59.360><c> makes</c><00:06:59.680><c> sense</c><00:07:00.240><c> but</c><00:07:00.639><c> wild</c><00:07:00.960><c> cards</c><00:07:01.440><c> create</c>
+
+00:07:02.150 --> 00:07:02.160 align:start position:0%
+that makes sense but wild cards create
+ 
+
+00:07:02.160 --> 00:07:04.870 align:start position:0%
+that makes sense but wild cards create
+multiple<00:07:02.639><c> possibilities</c><00:07:03.520><c> and</c><00:07:03.919><c> three</c><00:07:04.319><c> exactly</c>
+
+00:07:04.870 --> 00:07:04.880 align:start position:0%
+multiple possibilities and three exactly
+ 
+
+00:07:04.880 --> 00:07:06.550 align:start position:0%
+multiple possibilities and three exactly
+right<00:07:05.199><c> one</c><00:07:05.599><c> the</c><00:07:05.759><c> simplest</c><00:07:06.160><c> would</c><00:07:06.319><c> be</c><00:07:06.400><c> to</c>
+
+00:07:06.550 --> 00:07:06.560 align:start position:0%
+right one the simplest would be to
+ 
+
+00:07:06.560 --> 00:07:09.510 align:start position:0%
+right one the simplest would be to
+ignore<00:07:06.960><c> this</c><00:07:07.199><c> right</c><00:07:07.919><c> if</c><00:07:08.000><c> we</c><00:07:08.160><c> ignore</c><00:07:08.479><c> it</c><00:07:08.720><c> okay</c>
+
+00:07:09.510 --> 00:07:09.520 align:start position:0%
+ignore this right if we ignore it okay
+ 
+
+00:07:09.520 --> 00:07:10.790 align:start position:0%
+ignore this right if we ignore it okay
+we're<00:07:09.680><c> still</c><00:07:09.919><c> left</c><00:07:10.160><c> with</c><00:07:10.319><c> one</c><00:07:10.560><c> open</c>
+
+00:07:10.790 --> 00:07:10.800 align:start position:0%
+we're still left with one open
+ 
+
+00:07:10.800 --> 00:07:12.710 align:start position:0%
+we're still left with one open
+parenthesis<00:07:11.280><c> that's</c><00:07:11.520><c> the</c><00:07:11.680><c> simplest</c><00:07:12.319><c> but</c><00:07:12.560><c> it</c>
+
+00:07:12.710 --> 00:07:12.720 align:start position:0%
+parenthesis that's the simplest but it
+ 
+
+00:07:12.720 --> 00:07:13.830 align:start position:0%
+parenthesis that's the simplest but it
+could<00:07:12.880><c> there</c><00:07:13.039><c> could</c><00:07:13.199><c> be</c><00:07:13.360><c> multiple</c>
+
+00:07:13.830 --> 00:07:13.840 align:start position:0%
+could there could be multiple
+ 
+
+00:07:13.840 --> 00:07:15.589 align:start position:0%
+could there could be multiple
+possibilities<00:07:14.880><c> right</c><00:07:15.120><c> and</c><00:07:15.199><c> we</c><00:07:15.360><c> need</c><00:07:15.520><c> to</c>
+
+00:07:15.589 --> 00:07:15.599 align:start position:0%
+possibilities right and we need to
+ 
+
+00:07:15.599 --> 00:07:17.589 align:start position:0%
+possibilities right and we need to
+consider<00:07:16.160><c> all</c><00:07:16.400><c> possibilities</c><00:07:17.120><c> if</c><00:07:17.280><c> we</c><00:07:17.360><c> want</c><00:07:17.520><c> to</c>
+
+00:07:17.589 --> 00:07:17.599 align:start position:0%
+consider all possibilities if we want to
+ 
+
+00:07:17.599 --> 00:07:19.749 align:start position:0%
+consider all possibilities if we want to
+be<00:07:17.759><c> sure</c><00:07:18.000><c> that</c><00:07:18.160><c> we</c><00:07:18.319><c> can</c><00:07:18.479><c> determine</c><00:07:19.039><c> if</c><00:07:19.360><c> this</c><00:07:19.599><c> is</c>
+
+00:07:19.749 --> 00:07:19.759 align:start position:0%
+be sure that we can determine if this is
+ 
+
+00:07:19.759 --> 00:07:22.390 align:start position:0%
+be sure that we can determine if this is
+possibly<00:07:20.400><c> valid</c><00:07:20.800><c> or</c><00:07:21.120><c> not</c><00:07:21.360><c> possibly</c><00:07:21.919><c> valid</c><00:07:22.240><c> we</c>
+
+00:07:22.390 --> 00:07:22.400 align:start position:0%
+possibly valid or not possibly valid we
+ 
+
+00:07:22.400 --> 00:07:24.710 align:start position:0%
+possibly valid or not possibly valid we
+do<00:07:22.639><c> have</c><00:07:22.880><c> to</c><00:07:23.039><c> consider</c><00:07:23.520><c> every</c><00:07:23.759><c> possibility</c><00:07:24.560><c> so</c>
+
+00:07:24.710 --> 00:07:24.720 align:start position:0%
+do have to consider every possibility so
+ 
+
+00:07:24.720 --> 00:07:26.390 align:start position:0%
+do have to consider every possibility so
+another<00:07:25.039><c> possibility</c><00:07:25.599><c> is</c><00:07:25.680><c> this</c><00:07:25.840><c> wild</c><00:07:26.160><c> card</c>
+
+00:07:26.390 --> 00:07:26.400 align:start position:0%
+another possibility is this wild card
+ 
+
+00:07:26.400 --> 00:07:27.670 align:start position:0%
+another possibility is this wild card
+could<00:07:26.639><c> be</c><00:07:26.880><c> a</c>
+
+00:07:27.670 --> 00:07:27.680 align:start position:0%
+could be a
+ 
+
+00:07:27.680 --> 00:07:30.629 align:start position:0%
+could be a
+left<00:07:28.319><c> open</c><00:07:28.639><c> parenthesis</c><00:07:29.520><c> if</c><00:07:29.680><c> that's</c><00:07:30.000><c> the</c><00:07:30.160><c> case</c>
+
+00:07:30.629 --> 00:07:30.639 align:start position:0%
+left open parenthesis if that's the case
+ 
+
+00:07:30.639 --> 00:07:32.870 align:start position:0%
+left open parenthesis if that's the case
+we<00:07:30.800><c> would</c><00:07:30.960><c> take</c><00:07:31.280><c> our</c><00:07:31.599><c> left</c><00:07:32.080><c> and</c><00:07:32.319><c> actually</c>
+
+00:07:32.870 --> 00:07:32.880 align:start position:0%
+we would take our left and actually
+ 
+
+00:07:32.880 --> 00:07:35.589 align:start position:0%
+we would take our left and actually
+increment<00:07:33.280><c> it</c><00:07:33.360><c> by</c><00:07:33.599><c> one</c><00:07:34.000><c> to</c><00:07:34.160><c> make</c><00:07:34.400><c> it</c><00:07:34.720><c> two</c><00:07:35.360><c> but</c>
+
+00:07:35.589 --> 00:07:35.599 align:start position:0%
+increment it by one to make it two but
+ 
+
+00:07:35.599 --> 00:07:38.469 align:start position:0%
+increment it by one to make it two but
+another<00:07:36.080><c> possibility</c><00:07:36.880><c> is</c><00:07:37.280><c> that</c><00:07:37.520><c> this</c><00:07:38.080><c> a</c><00:07:38.240><c> wild</c>
+
+00:07:38.469 --> 00:07:38.479 align:start position:0%
+another possibility is that this a wild
+ 
+
+00:07:38.479 --> 00:07:40.870 align:start position:0%
+another possibility is that this a wild
+card<00:07:38.800><c> could</c><00:07:38.960><c> be</c><00:07:39.199><c> a</c><00:07:39.520><c> right</c><00:07:39.840><c> parenthesis</c><00:07:40.560><c> and</c><00:07:40.720><c> in</c>
+
+00:07:40.870 --> 00:07:40.880 align:start position:0%
+card could be a right parenthesis and in
+ 
+
+00:07:40.880 --> 00:07:43.270 align:start position:0%
+card could be a right parenthesis and in
+that<00:07:41.120><c> case</c><00:07:41.599><c> we</c><00:07:41.759><c> would</c><00:07:42.160><c> take</c><00:07:42.400><c> this</c><00:07:42.639><c> and</c><00:07:42.720><c> then</c>
+
+00:07:43.270 --> 00:07:43.280 align:start position:0%
+that case we would take this and then
+ 
+
+00:07:43.280 --> 00:07:46.309 align:start position:0%
+that case we would take this and then
+decrement<00:07:43.919><c> it</c><00:07:44.319><c> by</c><00:07:44.639><c> one</c><00:07:45.199><c> see</c><00:07:45.440><c> how</c><00:07:45.680><c> this</c><00:07:46.000><c> wild</c>
+
+00:07:46.309 --> 00:07:46.319 align:start position:0%
+decrement it by one see how this wild
+ 
+
+00:07:46.319 --> 00:07:48.629 align:start position:0%
+decrement it by one see how this wild
+card<00:07:46.639><c> is</c><00:07:46.720><c> creating</c><00:07:47.199><c> some</c><00:07:47.360><c> divergence</c><00:07:48.160><c> for</c><00:07:48.319><c> us</c>
+
+00:07:48.629 --> 00:07:48.639 align:start position:0%
+card is creating some divergence for us
+ 
+
+00:07:48.639 --> 00:07:51.430 align:start position:0%
+card is creating some divergence for us
+we<00:07:49.039><c> can't</c><00:07:49.440><c> maintain</c><00:07:50.240><c> all</c><00:07:50.400><c> possibilities</c><00:07:51.199><c> in</c><00:07:51.280><c> a</c>
+
+00:07:51.430 --> 00:07:51.440 align:start position:0%
+we can't maintain all possibilities in a
+ 
+
+00:07:51.440 --> 00:07:54.390 align:start position:0%
+we can't maintain all possibilities in a
+single<00:07:51.840><c> variable</c><00:07:52.560><c> like</c><00:07:52.800><c> we</c><00:07:52.960><c> could</c><00:07:53.199><c> before</c><00:07:54.000><c> so</c>
+
+00:07:54.390 --> 00:07:54.400 align:start position:0%
+single variable like we could before so
+ 
+
+00:07:54.400 --> 00:07:56.150 align:start position:0%
+single variable like we could before so
+this<00:07:54.639><c> is</c><00:07:54.720><c> kind</c><00:07:54.879><c> of</c><00:07:55.039><c> a</c><00:07:55.120><c> hint</c><00:07:55.360><c> to</c><00:07:55.520><c> you</c><00:07:55.680><c> that</c><00:07:55.840><c> maybe</c>
+
+00:07:56.150 --> 00:07:56.160 align:start position:0%
+this is kind of a hint to you that maybe
+ 
+
+00:07:56.160 --> 00:07:58.629 align:start position:0%
+this is kind of a hint to you that maybe
+we<00:07:56.319><c> need</c><00:07:56.639><c> two</c><00:07:56.960><c> variables</c><00:07:57.919><c> let's</c><00:07:58.080><c> go</c><00:07:58.319><c> to</c><00:07:58.479><c> the</c>
+
+00:07:58.629 --> 00:07:58.639 align:start position:0%
+we need two variables let's go to the
+ 
+
+00:07:58.639 --> 00:08:00.629 align:start position:0%
+we need two variables let's go to the
+third<00:07:58.879><c> character</c><00:07:59.440><c> before</c><00:07:59.840><c> we</c><00:08:00.319><c> actually</c>
+
+00:08:00.629 --> 00:08:00.639 align:start position:0%
+third character before we actually
+ 
+
+00:08:00.639 --> 00:08:02.629 align:start position:0%
+third character before we actually
+create<00:08:01.039><c> those</c><00:08:01.199><c> two</c><00:08:01.440><c> variables</c><00:08:01.919><c> now</c><00:08:02.160><c> we</c><00:08:02.319><c> have</c><00:08:02.479><c> a</c>
+
+00:08:02.629 --> 00:08:02.639 align:start position:0%
+create those two variables now we have a
+ 
+
+00:08:02.639 --> 00:08:04.309 align:start position:0%
+create those two variables now we have a
+right<00:08:02.879><c> parenthesis</c><00:08:03.520><c> now</c><00:08:03.680><c> what</c><00:08:03.919><c> are</c><00:08:04.000><c> we</c><00:08:04.080><c> gonna</c>
+
+00:08:04.309 --> 00:08:04.319 align:start position:0%
+right parenthesis now what are we gonna
+ 
+
+00:08:04.319 --> 00:08:05.909 align:start position:0%
+right parenthesis now what are we gonna
+do<00:08:04.720><c> well</c><00:08:04.879><c> with</c><00:08:05.120><c> right</c><00:08:05.280><c> parentheses</c><00:08:05.759><c> we're</c>
+
+00:08:05.909 --> 00:08:05.919 align:start position:0%
+do well with right parentheses we're
+ 
+
+00:08:05.919 --> 00:08:07.589 align:start position:0%
+do well with right parentheses we're
+gonna<00:08:06.080><c> decrement</c><00:08:06.639><c> our</c><00:08:06.800><c> left</c><00:08:07.120><c> count</c><00:08:07.360><c> but</c><00:08:07.440><c> now</c>
+
+00:08:07.589 --> 00:08:07.599 align:start position:0%
+gonna decrement our left count but now
+ 
+
+00:08:07.599 --> 00:08:09.909 align:start position:0%
+gonna decrement our left count but now
+we<00:08:07.759><c> have</c><00:08:07.840><c> to</c><00:08:08.000><c> decrement</c><00:08:08.560><c> two</c><00:08:08.800><c> variables</c><00:08:09.440><c> so</c>
+
+00:08:09.909 --> 00:08:09.919 align:start position:0%
+we have to decrement two variables so
+ 
+
+00:08:09.919 --> 00:08:11.909 align:start position:0%
+we have to decrement two variables so
+this<00:08:10.160><c> would</c><00:08:10.400><c> become</c><00:08:11.039><c> one</c><00:08:11.360><c> and</c><00:08:11.440><c> then</c><00:08:11.599><c> this</c>
+
+00:08:11.909 --> 00:08:11.919 align:start position:0%
+this would become one and then this
+ 
+
+00:08:11.919 --> 00:08:14.950 align:start position:0%
+this would become one and then this
+would<00:08:12.080><c> become</c><00:08:12.800><c> zero</c><00:08:13.360><c> what</c><00:08:13.599><c> do</c><00:08:13.840><c> these</c><00:08:14.400><c> actually</c>
+
+00:08:14.950 --> 00:08:14.960 align:start position:0%
+would become zero what do these actually
+ 
+
+00:08:14.960 --> 00:08:17.270 align:start position:0%
+would become zero what do these actually
+represent<00:08:16.000><c> the</c><00:08:16.160><c> reason</c><00:08:16.479><c> we</c><00:08:16.639><c> have</c><00:08:16.879><c> two</c><00:08:17.120><c> in</c><00:08:17.199><c> the</c>
+
+00:08:17.270 --> 00:08:17.280 align:start position:0%
+represent the reason we have two in the
+ 
+
+00:08:17.280 --> 00:08:19.350 align:start position:0%
+represent the reason we have two in the
+first<00:08:17.599><c> place</c><00:08:17.840><c> is</c><00:08:18.000><c> from</c><00:08:18.240><c> the</c><00:08:18.400><c> wild</c><00:08:18.720><c> card</c>
+
+00:08:19.350 --> 00:08:19.360 align:start position:0%
+first place is from the wild card
+ 
+
+00:08:19.360 --> 00:08:21.990 align:start position:0%
+first place is from the wild card
+basically<00:08:20.160><c> these</c><00:08:20.400><c> are</c><00:08:20.479><c> gonna</c><00:08:20.720><c> represent</c><00:08:21.520><c> the</c>
+
+00:08:21.990 --> 00:08:22.000 align:start position:0%
+basically these are gonna represent the
+ 
+
+00:08:22.000 --> 00:08:25.189 align:start position:0%
+basically these are gonna represent the
+i'm<00:08:22.160><c> gonna</c><00:08:22.319><c> call</c><00:08:22.560><c> it</c><00:08:22.720><c> the</c><00:08:23.120><c> left</c><00:08:23.759><c> max</c><00:08:24.400><c> and</c><00:08:24.879><c> the</c>
+
+00:08:25.189 --> 00:08:25.199 align:start position:0%
+i'm gonna call it the left max and the
+ 
+
+00:08:25.199 --> 00:08:28.629 align:start position:0%
+i'm gonna call it the left max and the
+left<00:08:25.919><c> min</c><00:08:26.479><c> and</c><00:08:26.639><c> what</c><00:08:26.879><c> that</c><00:08:27.120><c> means</c><00:08:27.520><c> is</c><00:08:28.080><c> what's</c>
+
+00:08:28.629 --> 00:08:28.639 align:start position:0%
+left min and what that means is what's
+ 
+
+00:08:28.639 --> 00:08:29.589 align:start position:0%
+left min and what that means is what's
+the
+
+00:08:29.589 --> 00:08:29.599 align:start position:0%
+the
+ 
+
+00:08:29.599 --> 00:08:32.070 align:start position:0%
+the
+maximum<00:08:30.479><c> left</c><00:08:30.800><c> open</c><00:08:31.120><c> left</c><00:08:31.360><c> parenthesis</c><00:08:31.919><c> we</c>
+
+00:08:32.070 --> 00:08:32.080 align:start position:0%
+maximum left open left parenthesis we
+ 
+
+00:08:32.080 --> 00:08:33.909 align:start position:0%
+maximum left open left parenthesis we
+could<00:08:32.240><c> have</c><00:08:32.479><c> and</c><00:08:32.640><c> what's</c><00:08:32.880><c> the</c><00:08:33.039><c> minimum</c><00:08:33.599><c> open</c>
+
+00:08:33.909 --> 00:08:33.919 align:start position:0%
+could have and what's the minimum open
+ 
+
+00:08:33.919 --> 00:08:35.909 align:start position:0%
+could have and what's the minimum open
+left<00:08:34.159><c> parenthesis</c><00:08:34.640><c> we</c><00:08:34.800><c> could</c><00:08:34.959><c> have</c><00:08:35.360><c> depending</c>
+
+00:08:35.909 --> 00:08:35.919 align:start position:0%
+left parenthesis we could have depending
+ 
+
+00:08:35.919 --> 00:08:38.389 align:start position:0%
+left parenthesis we could have depending
+on<00:08:36.080><c> how</c><00:08:36.240><c> we</c><00:08:36.479><c> choose</c><00:08:36.880><c> our</c><00:08:37.039><c> wild</c><00:08:37.440><c> card</c><00:08:38.000><c> okay</c><00:08:38.240><c> now</c>
+
+00:08:38.389 --> 00:08:38.399 align:start position:0%
+on how we choose our wild card okay now
+ 
+
+00:08:38.399 --> 00:08:41.029 align:start position:0%
+on how we choose our wild card okay now
+let's<00:08:38.640><c> go</c><00:08:38.880><c> to</c><00:08:39.200><c> another</c><00:08:39.599><c> character</c><00:08:40.320><c> and</c><00:08:40.719><c> again</c>
+
+00:08:41.029 --> 00:08:41.039 align:start position:0%
+let's go to another character and again
+ 
+
+00:08:41.039 --> 00:08:43.110 align:start position:0%
+let's go to another character and again
+we<00:08:41.200><c> have</c><00:08:41.360><c> a</c><00:08:41.440><c> wild</c><00:08:41.839><c> card</c><00:08:42.320><c> now</c><00:08:42.479><c> let</c><00:08:42.640><c> me</c><00:08:42.800><c> explain</c>
+
+00:08:43.110 --> 00:08:43.120 align:start position:0%
+we have a wild card now let me explain
+ 
+
+00:08:43.120 --> 00:08:44.470 align:start position:0%
+we have a wild card now let me explain
+to<00:08:43.279><c> you</c><00:08:43.360><c> what</c><00:08:43.519><c> these</c><00:08:43.760><c> two</c><00:08:43.919><c> variables</c><00:08:44.399><c> are</c>
+
+00:08:44.470 --> 00:08:44.480 align:start position:0%
+to you what these two variables are
+ 
+
+00:08:44.480 --> 00:08:45.750 align:start position:0%
+to you what these two variables are
+supposed<00:08:44.800><c> to</c><00:08:44.959><c> represent</c><00:08:45.360><c> they're</c><00:08:45.519><c> supposed</c>
+
+00:08:45.750 --> 00:08:45.760 align:start position:0%
+supposed to represent they're supposed
+ 
+
+00:08:45.760 --> 00:08:48.550 align:start position:0%
+supposed to represent they're supposed
+to<00:08:45.920><c> represent</c><00:08:46.560><c> the</c><00:08:46.959><c> range</c><00:08:47.360><c> of</c><00:08:47.519><c> possibilities</c>
+
+00:08:48.550 --> 00:08:48.560 align:start position:0%
+to represent the range of possibilities
+ 
+
+00:08:48.560 --> 00:08:51.110 align:start position:0%
+to represent the range of possibilities
+we<00:08:48.800><c> could</c><00:08:49.120><c> have</c><00:08:49.600><c> zero</c><00:08:50.000><c> left</c><00:08:50.240><c> open</c><00:08:50.560><c> parentheses</c>
+
+00:08:51.110 --> 00:08:51.120 align:start position:0%
+we could have zero left open parentheses
+ 
+
+00:08:51.120 --> 00:08:53.030 align:start position:0%
+we could have zero left open parentheses
+or<00:08:51.279><c> we</c><00:08:51.440><c> could</c><00:08:51.519><c> have</c><00:08:51.839><c> one</c><00:08:52.480><c> left</c><00:08:52.800><c> open</c>
+
+00:08:53.030 --> 00:08:53.040 align:start position:0%
+or we could have one left open
+ 
+
+00:08:53.040 --> 00:08:54.949 align:start position:0%
+or we could have one left open
+parentheses<00:08:53.839><c> depending</c><00:08:54.240><c> on</c><00:08:54.320><c> how</c><00:08:54.480><c> we</c><00:08:54.640><c> chose</c>
+
+00:08:54.949 --> 00:08:54.959 align:start position:0%
+parentheses depending on how we chose
+ 
+
+00:08:54.959 --> 00:08:56.550 align:start position:0%
+parentheses depending on how we chose
+the<00:08:55.120><c> first</c><00:08:55.360><c> wild</c><00:08:55.680><c> card</c><00:08:55.920><c> but</c><00:08:56.000><c> now</c><00:08:56.160><c> we</c><00:08:56.320><c> have</c><00:08:56.480><c> a</c>
+
+00:08:56.550 --> 00:08:56.560 align:start position:0%
+the first wild card but now we have a
+ 
+
+00:08:56.560 --> 00:08:58.790 align:start position:0%
+the first wild card but now we have a
+second<00:08:56.880><c> wildcard</c><00:08:57.519><c> now</c><00:08:57.680><c> if</c><00:08:57.839><c> we</c><00:08:58.000><c> made</c><00:08:58.240><c> this</c><00:08:58.480><c> a</c>
+
+00:08:58.790 --> 00:08:58.800 align:start position:0%
+second wildcard now if we made this a
+ 
+
+00:08:58.800 --> 00:09:01.030 align:start position:0%
+second wildcard now if we made this a
+left<00:08:59.200><c> open</c><00:08:59.519><c> parenthesis</c><00:09:00.399><c> that</c><00:09:00.560><c> would</c><00:09:00.800><c> mean</c>
+
+00:09:01.030 --> 00:09:01.040 align:start position:0%
+left open parenthesis that would mean
+ 
+
+00:09:01.040 --> 00:09:04.150 align:start position:0%
+left open parenthesis that would mean
+it's<00:09:01.279><c> possible</c><00:09:01.760><c> for</c><00:09:01.920><c> us</c><00:09:02.320><c> to</c><00:09:02.560><c> have</c><00:09:03.200><c> two</c><00:09:03.839><c> left</c>
+
+00:09:04.150 --> 00:09:04.160 align:start position:0%
+it's possible for us to have two left
+ 
+
+00:09:04.160 --> 00:09:06.550 align:start position:0%
+it's possible for us to have two left
+open<00:09:04.399><c> parentheses</c><00:09:05.200><c> so</c><00:09:05.360><c> we</c><00:09:05.519><c> would</c><00:09:05.920><c> update</c><00:09:06.320><c> our</c>
+
+00:09:06.550 --> 00:09:06.560 align:start position:0%
+open parentheses so we would update our
+ 
+
+00:09:06.560 --> 00:09:08.790 align:start position:0%
+open parentheses so we would update our
+left<00:09:06.959><c> max</c><00:09:07.360><c> in</c><00:09:07.440><c> that</c><00:09:07.680><c> case</c><00:09:08.000><c> but</c><00:09:08.160><c> if</c><00:09:08.240><c> we</c><00:09:08.399><c> made</c><00:09:08.640><c> it</c>
+
+00:09:08.790 --> 00:09:08.800 align:start position:0%
+left max in that case but if we made it
+ 
+
+00:09:08.800 --> 00:09:11.110 align:start position:0%
+left max in that case but if we made it
+a<00:09:08.959><c> closing</c><00:09:09.519><c> parenthesis</c><00:09:10.399><c> then</c><00:09:10.640><c> we</c><00:09:10.800><c> would</c><00:09:10.959><c> want</c>
+
+00:09:11.110 --> 00:09:11.120 align:start position:0%
+a closing parenthesis then we would want
+ 
+
+00:09:11.120 --> 00:09:13.269 align:start position:0%
+a closing parenthesis then we would want
+to<00:09:11.279><c> update</c><00:09:11.680><c> our</c><00:09:11.920><c> minimum</c><00:09:12.640><c> because</c><00:09:12.880><c> this</c><00:09:13.200><c> is</c>
+
+00:09:13.269 --> 00:09:13.279 align:start position:0%
+to update our minimum because this is
+ 
+
+00:09:13.279 --> 00:09:15.590 align:start position:0%
+to update our minimum because this is
+supposed<00:09:13.600><c> to</c><00:09:13.760><c> represent</c><00:09:14.320><c> all</c><00:09:14.640><c> possibilities</c>
+
+00:09:15.590 --> 00:09:15.600 align:start position:0%
+supposed to represent all possibilities
+ 
+
+00:09:15.600 --> 00:09:18.230 align:start position:0%
+supposed to represent all possibilities
+so<00:09:15.760><c> let's</c><00:09:16.000><c> do</c><00:09:16.240><c> exactly</c><00:09:16.720><c> that</c><00:09:17.120><c> if</c>
+
+00:09:18.230 --> 00:09:18.240 align:start position:0%
+so let's do exactly that if
+ 
+
+00:09:18.240 --> 00:09:20.470 align:start position:0%
+so let's do exactly that if
+let's<00:09:18.480><c> increment</c><00:09:18.959><c> our</c><00:09:19.120><c> left</c><00:09:19.360><c> max</c><00:09:19.680><c> to</c><00:09:19.839><c> be</c><00:09:20.080><c> 2</c>
+
+00:09:20.470 --> 00:09:20.480 align:start position:0%
+let's increment our left max to be 2
+ 
+
+00:09:20.480 --> 00:09:22.790 align:start position:0%
+let's increment our left max to be 2
+then<00:09:20.720><c> let's</c><00:09:21.040><c> decrement</c><00:09:21.600><c> our</c><00:09:21.839><c> left</c><00:09:22.160><c> min</c><00:09:22.480><c> to</c><00:09:22.640><c> be</c>
+
+00:09:22.790 --> 00:09:22.800 align:start position:0%
+then let's decrement our left min to be
+ 
+
+00:09:22.800 --> 00:09:25.670 align:start position:0%
+then let's decrement our left min to be
+negative<00:09:23.200><c> one</c><00:09:23.760><c> but</c><00:09:24.240><c> hold</c><00:09:24.560><c> on</c><00:09:24.720><c> for</c><00:09:24.880><c> a</c><00:09:24.959><c> second</c>
+
+00:09:25.670 --> 00:09:25.680 align:start position:0%
+negative one but hold on for a second
+ 
+
+00:09:25.680 --> 00:09:27.110 align:start position:0%
+negative one but hold on for a second
+this<00:09:25.920><c> isn't</c><00:09:26.240><c> just</c><00:09:26.480><c> the</c><00:09:26.640><c> range</c><00:09:26.959><c> of</c>
+
+00:09:27.110 --> 00:09:27.120 align:start position:0%
+this isn't just the range of
+ 
+
+00:09:27.120 --> 00:09:29.750 align:start position:0%
+this isn't just the range of
+possibilities<00:09:27.839><c> this</c><00:09:28.080><c> should</c><00:09:28.480><c> also</c><00:09:28.880><c> be</c><00:09:29.360><c> the</c>
+
+00:09:29.750 --> 00:09:29.760 align:start position:0%
+possibilities this should also be the
+ 
+
+00:09:29.760 --> 00:09:32.470 align:start position:0%
+possibilities this should also be the
+valid<00:09:30.399><c> range</c><00:09:30.720><c> of</c><00:09:30.880><c> possibilities</c><00:09:32.000><c> we</c><00:09:32.160><c> should</c>
+
+00:09:32.470 --> 00:09:32.480 align:start position:0%
+valid range of possibilities we should
+ 
+
+00:09:32.480 --> 00:09:35.430 align:start position:0%
+valid range of possibilities we should
+never<00:09:32.800><c> have</c><00:09:33.040><c> our</c><00:09:33.279><c> left</c><00:09:33.680><c> min</c><00:09:34.160><c> become</c><00:09:34.800><c> negative</c>
+
+00:09:35.430 --> 00:09:35.440 align:start position:0%
+never have our left min become negative
+ 
+
+00:09:35.440 --> 00:09:36.949 align:start position:0%
+never have our left min become negative
+because<00:09:35.839><c> that</c><00:09:36.000><c> would</c><00:09:36.240><c> imply</c><00:09:36.640><c> that</c><00:09:36.800><c> the</c>
+
+00:09:36.949 --> 00:09:36.959 align:start position:0%
+because that would imply that the
+ 
+
+00:09:36.959 --> 00:09:39.269 align:start position:0%
+because that would imply that the
+choices<00:09:37.440><c> we</c><00:09:37.600><c> made</c><00:09:37.839><c> caused</c><00:09:38.160><c> our</c><00:09:38.320><c> left</c><00:09:38.880><c> min</c><00:09:39.120><c> to</c>
+
+00:09:39.269 --> 00:09:39.279 align:start position:0%
+choices we made caused our left min to
+ 
+
+00:09:39.279 --> 00:09:41.750 align:start position:0%
+choices we made caused our left min to
+be<00:09:39.519><c> negative</c><00:09:40.160><c> and</c><00:09:40.240><c> we</c><00:09:40.399><c> know</c><00:09:40.560><c> that's</c><00:09:40.959><c> invalid</c>
+
+00:09:41.750 --> 00:09:41.760 align:start position:0%
+be negative and we know that's invalid
+ 
+
+00:09:41.760 --> 00:09:43.350 align:start position:0%
+be negative and we know that's invalid
+so<00:09:41.920><c> we're</c><00:09:42.080><c> never</c><00:09:42.320><c> going</c><00:09:42.399><c> to</c><00:09:42.640><c> allow</c><00:09:42.880><c> our</c><00:09:43.040><c> left</c>
+
+00:09:43.350 --> 00:09:43.360 align:start position:0%
+so we're never going to allow our left
+ 
+
+00:09:43.360 --> 00:09:45.269 align:start position:0%
+so we're never going to allow our left
+min<00:09:43.600><c> to</c><00:09:43.680><c> become</c><00:09:44.160><c> negative</c><00:09:44.560><c> if</c><00:09:44.720><c> it</c><00:09:44.800><c> ever</c><00:09:45.040><c> does</c>
+
+00:09:45.269 --> 00:09:45.279 align:start position:0%
+min to become negative if it ever does
+ 
+
+00:09:45.279 --> 00:09:47.030 align:start position:0%
+min to become negative if it ever does
+become<00:09:45.519><c> negative</c><00:09:45.920><c> we're</c><00:09:46.000><c> going</c><00:09:46.160><c> to</c><00:09:46.399><c> reset</c><00:09:46.880><c> it</c>
+
+00:09:47.030 --> 00:09:47.040 align:start position:0%
+become negative we're going to reset it
+ 
+
+00:09:47.040 --> 00:09:49.750 align:start position:0%
+become negative we're going to reset it
+back<00:09:47.519><c> to</c><00:09:47.680><c> b0</c><00:09:48.480><c> so</c><00:09:48.720><c> now</c><00:09:48.880><c> you</c><00:09:48.959><c> can</c><00:09:49.120><c> see</c><00:09:49.279><c> that</c><00:09:49.440><c> these</c>
+
+00:09:49.750 --> 00:09:49.760 align:start position:0%
+back to b0 so now you can see that these
+ 
+
+00:09:49.760 --> 00:09:51.509 align:start position:0%
+back to b0 so now you can see that these
+are<00:09:49.920><c> the</c><00:09:50.080><c> range</c><00:09:50.320><c> of</c><00:09:50.480><c> possibilities</c><00:09:51.200><c> between</c>
+
+00:09:51.509 --> 00:09:51.519 align:start position:0%
+are the range of possibilities between
+ 
+
+00:09:51.519 --> 00:09:53.509 align:start position:0%
+are the range of possibilities between
+zero<00:09:51.920><c> and</c><00:09:52.080><c> two</c><00:09:52.480><c> and</c><00:09:52.640><c> now</c><00:09:52.800><c> we're</c><00:09:53.200><c> just</c><00:09:53.279><c> going</c><00:09:53.440><c> to</c>
+
+00:09:53.509 --> 00:09:53.519 align:start position:0%
+zero and two and now we're just going to
+ 
+
+00:09:53.519 --> 00:09:55.430 align:start position:0%
+zero and two and now we're just going to
+continue<00:09:53.920><c> through</c><00:09:54.160><c> the</c><00:09:54.240><c> rest</c><00:09:54.640><c> of</c><00:09:54.880><c> the</c><00:09:55.120><c> array</c>
+
+00:09:55.430 --> 00:09:55.440 align:start position:0%
+continue through the rest of the array
+ 
+
+00:09:55.440 --> 00:09:56.710 align:start position:0%
+continue through the rest of the array
+we're<00:09:55.600><c> going</c><00:09:55.680><c> to</c><00:09:55.760><c> get</c><00:09:55.920><c> a</c><00:09:56.080><c> left</c><00:09:56.480><c> open</c>
+
+00:09:56.710 --> 00:09:56.720 align:start position:0%
+we're going to get a left open
+ 
+
+00:09:56.720 --> 00:09:58.550 align:start position:0%
+we're going to get a left open
+parenthesis<00:09:57.360><c> which</c><00:09:57.839><c> uh</c><00:09:58.080><c> we're</c><00:09:58.240><c> going</c><00:09:58.320><c> to</c>
+
+00:09:58.550 --> 00:09:58.560 align:start position:0%
+parenthesis which uh we're going to
+ 
+
+00:09:58.560 --> 00:10:00.790 align:start position:0%
+parenthesis which uh we're going to
+increment<00:09:58.959><c> both</c><00:09:59.279><c> of</c><00:09:59.440><c> our</c><00:10:00.000><c> variables</c><00:10:00.399><c> so</c><00:10:00.560><c> this</c>
+
+00:10:00.790 --> 00:10:00.800 align:start position:0%
+increment both of our variables so this
+ 
+
+00:10:00.800 --> 00:10:03.990 align:start position:0%
+increment both of our variables so this
+is<00:10:00.880><c> going</c><00:10:00.959><c> to</c><00:10:01.040><c> be</c><00:10:01.200><c> 1</c><00:10:01.760><c> this</c><00:10:02.079><c> is</c><00:10:02.240><c> going</c><00:10:02.399><c> to</c><00:10:02.480><c> be</c><00:10:03.040><c> a</c><00:10:03.360><c> 3</c>
+
+00:10:03.990 --> 00:10:04.000 align:start position:0%
+is going to be 1 this is going to be a 3
+ 
+
+00:10:04.000 --> 00:10:05.110 align:start position:0%
+is going to be 1 this is going to be a 3
+and<00:10:04.160><c> then</c><00:10:04.240><c> we're</c><00:10:04.399><c> going</c><00:10:04.480><c> to</c><00:10:04.560><c> get</c><00:10:04.720><c> a</c><00:10:04.880><c> closing</c>
+
+00:10:05.110 --> 00:10:05.120 align:start position:0%
+and then we're going to get a closing
+ 
+
+00:10:05.120 --> 00:10:06.550 align:start position:0%
+and then we're going to get a closing
+parenthesis<00:10:05.839><c> so</c><00:10:06.000><c> this</c><00:10:06.160><c> is</c><00:10:06.240><c> going</c><00:10:06.320><c> to</c><00:10:06.399><c> be</c>
+
+00:10:06.550 --> 00:10:06.560 align:start position:0%
+parenthesis so this is going to be
+ 
+
+00:10:06.560 --> 00:10:08.069 align:start position:0%
+parenthesis so this is going to be
+decremented<00:10:07.120><c> down</c><00:10:07.279><c> to</c><00:10:07.440><c> 0.</c><00:10:07.680><c> this</c><00:10:07.839><c> is</c><00:10:07.920><c> going</c><00:10:08.000><c> to</c>
+
+00:10:08.069 --> 00:10:08.079 align:start position:0%
+decremented down to 0. this is going to
+ 
+
+00:10:08.079 --> 00:10:11.030 align:start position:0%
+decremented down to 0. this is going to
+be<00:10:08.240><c> decremented</c><00:10:08.800><c> down</c><00:10:09.040><c> to</c><00:10:09.279><c> 2.</c><00:10:10.079><c> and</c><00:10:10.240><c> now</c><00:10:10.720><c> how</c><00:10:10.880><c> do</c>
+
+00:10:11.030 --> 00:10:11.040 align:start position:0%
+be decremented down to 2. and now how do
+ 
+
+00:10:11.040 --> 00:10:13.190 align:start position:0%
+be decremented down to 2. and now how do
+we<00:10:11.360><c> know</c><00:10:11.519><c> if</c><00:10:11.600><c> we</c><00:10:11.760><c> can</c><00:10:11.920><c> return</c><00:10:12.320><c> true</c><00:10:12.720><c> or</c><00:10:12.880><c> false</c>
+
+00:10:13.190 --> 00:10:13.200 align:start position:0%
+we know if we can return true or false
+ 
+
+00:10:13.200 --> 00:10:15.670 align:start position:0%
+we know if we can return true or false
+is<00:10:13.360><c> this</c><00:10:13.680><c> valid</c><00:10:14.079><c> or</c><00:10:14.240><c> is</c><00:10:14.399><c> it</c><00:10:14.480><c> not</c><00:10:14.720><c> valid</c><00:10:15.360><c> well</c><00:10:15.519><c> we</c>
+
+00:10:15.670 --> 00:10:15.680 align:start position:0%
+is this valid or is it not valid well we
+ 
+
+00:10:15.680 --> 00:10:17.670 align:start position:0%
+is this valid or is it not valid well we
+know<00:10:15.839><c> it's</c><00:10:16.079><c> balanced</c><00:10:16.720><c> if</c><00:10:16.959><c> the</c><00:10:17.200><c> left</c><00:10:17.440><c> open</c>
+
+00:10:17.670 --> 00:10:17.680 align:start position:0%
+know it's balanced if the left open
+ 
+
+00:10:17.680 --> 00:10:20.069 align:start position:0%
+know it's balanced if the left open
+parenthesis<00:10:18.320><c> count</c><00:10:18.640><c> is</c><00:10:18.800><c> zero</c><00:10:19.200><c> so</c><00:10:19.360><c> does</c><00:10:19.600><c> zero</c>
+
+00:10:20.069 --> 00:10:20.079 align:start position:0%
+parenthesis count is zero so does zero
+ 
+
+00:10:20.079 --> 00:10:22.710 align:start position:0%
+parenthesis count is zero so does zero
+fall<00:10:20.480><c> in</c><00:10:21.120><c> between</c><00:10:21.600><c> our</c><00:10:21.760><c> range</c><00:10:22.160><c> right</c><00:10:22.320><c> now</c><00:10:22.560><c> it</c>
+
+00:10:22.710 --> 00:10:22.720 align:start position:0%
+fall in between our range right now it
+ 
+
+00:10:22.720 --> 00:10:25.190 align:start position:0%
+fall in between our range right now it
+does<00:10:23.200><c> because</c><00:10:23.440><c> our</c><00:10:23.680><c> left</c><00:10:24.000><c> min</c><00:10:24.480><c> is</c><00:10:24.640><c> exactly</c>
+
+00:10:25.190 --> 00:10:25.200 align:start position:0%
+does because our left min is exactly
+ 
+
+00:10:25.200 --> 00:10:26.790 align:start position:0%
+does because our left min is exactly
+zero<00:10:25.760><c> so</c><00:10:25.920><c> that's</c><00:10:26.160><c> how</c><00:10:26.320><c> you</c><00:10:26.399><c> know</c><00:10:26.560><c> we</c><00:10:26.720><c> can</c>
+
+00:10:26.790 --> 00:10:26.800 align:start position:0%
+zero so that's how you know we can
+ 
+
+00:10:26.800 --> 00:10:29.030 align:start position:0%
+zero so that's how you know we can
+return<00:10:27.200><c> true</c><00:10:27.440><c> if</c><00:10:27.600><c> our</c><00:10:27.760><c> left</c><00:10:28.079><c> min</c><00:10:28.480><c> is</c><00:10:28.640><c> equal</c><00:10:28.880><c> to</c>
+
+00:10:29.030 --> 00:10:29.040 align:start position:0%
+return true if our left min is equal to
+ 
+
+00:10:29.040 --> 00:10:31.990 align:start position:0%
+return true if our left min is equal to
+zero<00:10:29.680><c> and</c><00:10:30.000><c> before</c><00:10:30.320><c> we</c><00:10:30.560><c> get</c><00:10:30.800><c> into</c><00:10:31.200><c> the</c><00:10:31.519><c> code</c><00:10:31.920><c> i</c>
+
+00:10:31.990 --> 00:10:32.000 align:start position:0%
+zero and before we get into the code i
+ 
+
+00:10:32.000 --> 00:10:33.590 align:start position:0%
+zero and before we get into the code i
+just<00:10:32.160><c> want</c><00:10:32.320><c> to</c><00:10:32.399><c> show</c><00:10:32.560><c> you</c><00:10:32.800><c> another</c><00:10:33.120><c> way</c><00:10:33.440><c> that</c>
+
+00:10:33.590 --> 00:10:33.600 align:start position:0%
+just want to show you another way that
+ 
+
+00:10:33.600 --> 00:10:36.069 align:start position:0%
+just want to show you another way that
+our<00:10:33.760><c> solution</c><00:10:34.160><c> could</c><00:10:34.320><c> have</c><00:10:34.399><c> been</c><00:10:34.800><c> invalid</c><00:10:35.839><c> uh</c>
+
+00:10:36.069 --> 00:10:36.079 align:start position:0%
+our solution could have been invalid uh
+ 
+
+00:10:36.079 --> 00:10:38.870 align:start position:0%
+our solution could have been invalid uh
+suppose<00:10:36.480><c> you</c><00:10:36.640><c> know</c><00:10:36.720><c> our</c><00:10:36.880><c> string</c><00:10:37.200><c> had</c><00:10:37.920><c> two</c><00:10:38.399><c> uh</c>
+
+00:10:38.870 --> 00:10:38.880 align:start position:0%
+suppose you know our string had two uh
+ 
+
+00:10:38.880 --> 00:10:41.190 align:start position:0%
+suppose you know our string had two uh
+closing<00:10:39.440><c> parentheses</c><00:10:40.000><c> and</c><00:10:40.079><c> then</c><00:10:40.240><c> two</c><00:10:40.560><c> open</c><00:10:41.040><c> of</c>
+
+00:10:41.190 --> 00:10:41.200 align:start position:0%
+closing parentheses and then two open of
+ 
+
+00:10:41.200 --> 00:10:43.910 align:start position:0%
+closing parentheses and then two open of
+course<00:10:41.440><c> our</c><00:10:41.680><c> left</c><00:10:42.079><c> min</c><00:10:42.399><c> is</c><00:10:42.560><c> never</c><00:10:42.880><c> going</c><00:10:43.120><c> to</c><00:10:43.360><c> be</c>
+
+00:10:43.910 --> 00:10:43.920 align:start position:0%
+course our left min is never going to be
+ 
+
+00:10:43.920 --> 00:10:46.230 align:start position:0%
+course our left min is never going to be
+uh<00:10:44.399><c> negative</c><00:10:44.880><c> because</c><00:10:45.360><c> uh</c><00:10:45.600><c> if</c><00:10:45.760><c> it</c><00:10:45.920><c> becomes</c>
+
+00:10:46.230 --> 00:10:46.240 align:start position:0%
+uh negative because uh if it becomes
+ 
+
+00:10:46.240 --> 00:10:48.069 align:start position:0%
+uh negative because uh if it becomes
+negative<00:10:46.560><c> we</c><00:10:46.720><c> reset</c><00:10:47.200><c> it</c><00:10:47.279><c> back</c><00:10:47.440><c> to</c><00:10:47.519><c> zero</c><00:10:47.760><c> but</c><00:10:47.920><c> if</c>
+
+00:10:48.069 --> 00:10:48.079 align:start position:0%
+negative we reset it back to zero but if
+ 
+
+00:10:48.079 --> 00:10:51.590 align:start position:0%
+negative we reset it back to zero but if
+our<00:10:48.240><c> left</c><00:10:48.720><c> max</c><00:10:49.440><c> does</c><00:10:49.760><c> become</c><00:10:50.160><c> negative</c><00:10:50.880><c> uh</c><00:10:51.519><c> in</c>
+
+00:10:51.590 --> 00:10:51.600 align:start position:0%
+our left max does become negative uh in
+ 
+
+00:10:51.600 --> 00:10:54.150 align:start position:0%
+our left max does become negative uh in
+this<00:10:51.760><c> case</c><00:10:52.000><c> it'll</c><00:10:52.160><c> be</c><00:10:52.320><c> negative</c><00:10:52.720><c> two</c><00:10:53.279><c> uh</c><00:10:53.920><c> from</c>
+
+00:10:54.150 --> 00:10:54.160 align:start position:0%
+this case it'll be negative two uh from
+ 
+
+00:10:54.160 --> 00:10:56.230 align:start position:0%
+this case it'll be negative two uh from
+this<00:10:54.720><c> uh</c><00:10:54.959><c> at</c><00:10:55.120><c> this</c><00:10:55.360><c> after</c><00:10:55.600><c> we've</c><00:10:55.839><c> seen</c><00:10:56.000><c> these</c>
+
+00:10:56.230 --> 00:10:56.240 align:start position:0%
+this uh at this after we've seen these
+ 
+
+00:10:56.240 --> 00:10:57.990 align:start position:0%
+this uh at this after we've seen these
+two<00:10:56.640><c> that's</c><00:10:56.880><c> how</c><00:10:57.040><c> you</c><00:10:57.120><c> know</c><00:10:57.279><c> we</c><00:10:57.440><c> can</c><00:10:57.519><c> return</c>
+
+00:10:57.990 --> 00:10:58.000 align:start position:0%
+two that's how you know we can return
+ 
+
+00:10:58.000 --> 00:10:59.750 align:start position:0%
+two that's how you know we can return
+false<00:10:58.320><c> because</c><00:10:58.480><c> it'll</c><00:10:58.720><c> never</c><00:10:59.040><c> be</c><00:10:59.200><c> valid</c><00:10:59.600><c> we'll</c>
+
+00:10:59.750 --> 00:10:59.760 align:start position:0%
+false because it'll never be valid we'll
+ 
+
+00:10:59.760 --> 00:11:01.750 align:start position:0%
+false because it'll never be valid we'll
+never<00:11:00.079><c> recover</c><00:11:00.560><c> from</c><00:11:00.720><c> this</c><00:11:01.120><c> because</c><00:11:01.360><c> if</c><00:11:01.519><c> the</c>
+
+00:11:01.750 --> 00:11:01.760 align:start position:0%
+never recover from this because if the
+ 
+
+00:11:01.760 --> 00:11:03.990 align:start position:0%
+never recover from this because if the
+maximum<00:11:02.399><c> number</c><00:11:02.800><c> of</c><00:11:02.959><c> left</c><00:11:03.279><c> open</c><00:11:03.519><c> parentheses</c>
+
+00:11:03.990 --> 00:11:04.000 align:start position:0%
+maximum number of left open parentheses
+ 
+
+00:11:04.000 --> 00:11:05.670 align:start position:0%
+maximum number of left open parentheses
+we<00:11:04.079><c> could</c><00:11:04.240><c> have</c><00:11:04.560><c> is</c><00:11:04.800><c> negative</c><00:11:05.279><c> that</c><00:11:05.440><c> means</c>
+
+00:11:05.670 --> 00:11:05.680 align:start position:0%
+we could have is negative that means
+ 
+
+00:11:05.680 --> 00:11:07.590 align:start position:0%
+we could have is negative that means
+there's<00:11:05.920><c> no</c><00:11:06.160><c> choices</c><00:11:06.640><c> we</c><00:11:06.720><c> could</c><00:11:06.959><c> possibly</c><00:11:07.440><c> do</c>
+
+00:11:07.590 --> 00:11:07.600 align:start position:0%
+there's no choices we could possibly do
+ 
+
+00:11:07.600 --> 00:11:09.590 align:start position:0%
+there's no choices we could possibly do
+to<00:11:07.760><c> make</c><00:11:08.000><c> this</c><00:11:08.240><c> valid</c><00:11:08.720><c> okay</c><00:11:08.880><c> so</c><00:11:09.040><c> before</c><00:11:09.360><c> we</c><00:11:09.440><c> get</c>
+
+00:11:09.590 --> 00:11:09.600 align:start position:0%
+to make this valid okay so before we get
+ 
+
+00:11:09.600 --> 00:11:11.110 align:start position:0%
+to make this valid okay so before we get
+into<00:11:09.760><c> the</c><00:11:09.839><c> code</c><00:11:10.320><c> as</c><00:11:10.480><c> you</c><00:11:10.560><c> could</c><00:11:10.720><c> tell</c><00:11:10.959><c> from</c>
+
+00:11:11.110 --> 00:11:11.120 align:start position:0%
+into the code as you could tell from
+ 
+
+00:11:11.120 --> 00:11:12.870 align:start position:0%
+into the code as you could tell from
+this<00:11:11.360><c> algorithm</c><00:11:11.920><c> we</c><00:11:12.079><c> don't</c><00:11:12.240><c> even</c><00:11:12.399><c> need</c><00:11:12.640><c> any</c>
+
+00:11:12.870 --> 00:11:12.880 align:start position:0%
+this algorithm we don't even need any
+ 
+
+00:11:12.880 --> 00:11:14.790 align:start position:0%
+this algorithm we don't even need any
+extra<00:11:13.279><c> space</c><00:11:13.600><c> so</c><00:11:13.760><c> the</c><00:11:13.839><c> space</c><00:11:14.160><c> complexity</c><00:11:14.720><c> is</c>
+
+00:11:14.790 --> 00:11:14.800 align:start position:0%
+extra space so the space complexity is
+ 
+
+00:11:14.800 --> 00:11:16.949 align:start position:0%
+extra space so the space complexity is
+bigger<00:11:15.120><c> of</c><00:11:15.200><c> zero</c><00:11:15.680><c> and</c><00:11:15.839><c> we</c><00:11:16.000><c> only</c><00:11:16.240><c> need</c><00:11:16.399><c> to</c><00:11:16.560><c> scan</c>
+
+00:11:16.949 --> 00:11:16.959 align:start position:0%
+bigger of zero and we only need to scan
+ 
+
+00:11:16.959 --> 00:11:19.110 align:start position:0%
+bigger of zero and we only need to scan
+through<00:11:17.360><c> the</c><00:11:17.600><c> string</c><00:11:18.079><c> once</c><00:11:18.480><c> so</c><00:11:18.640><c> the</c><00:11:18.880><c> time</c>
+
+00:11:19.110 --> 00:11:19.120 align:start position:0%
+through the string once so the time
+ 
+
+00:11:19.120 --> 00:11:21.190 align:start position:0%
+through the string once so the time
+complexity<00:11:19.680><c> is</c><00:11:19.760><c> big</c><00:11:20.000><c> o</c><00:11:20.160><c> of</c><00:11:20.320><c> n</c><00:11:20.640><c> so</c><00:11:20.880><c> now</c><00:11:21.040><c> let's</c>
+
+00:11:21.190 --> 00:11:21.200 align:start position:0%
+complexity is big o of n so now let's
+ 
+
+00:11:21.200 --> 00:11:23.110 align:start position:0%
+complexity is big o of n so now let's
+code<00:11:21.440><c> it</c><00:11:21.600><c> up</c><00:11:21.760><c> okay</c><00:11:21.920><c> so</c><00:11:22.079><c> now</c><00:11:22.240><c> let's</c><00:11:22.480><c> code</c><00:11:22.720><c> it</c><00:11:22.880><c> up</c>
+
+00:11:23.110 --> 00:11:23.120 align:start position:0%
+code it up okay so now let's code it up
+ 
+
+00:11:23.120 --> 00:11:24.470 align:start position:0%
+code it up okay so now let's code it up
+and<00:11:23.440><c> like</c><00:11:23.680><c> i</c><00:11:23.760><c> said</c><00:11:23.920><c> we're</c><00:11:24.079><c> gonna</c><00:11:24.160><c> have</c><00:11:24.320><c> two</c>
+
+00:11:24.470 --> 00:11:24.480 align:start position:0%
+and like i said we're gonna have two
+ 
+
+00:11:24.480 --> 00:11:25.990 align:start position:0%
+and like i said we're gonna have two
+variables<00:11:24.959><c> left</c><00:11:25.200><c> min</c><00:11:25.440><c> and</c><00:11:25.519><c> left</c><00:11:25.760><c> max</c>
+
+00:11:25.990 --> 00:11:26.000 align:start position:0%
+variables left min and left max
+ 
+
+00:11:26.000 --> 00:11:28.470 align:start position:0%
+variables left min and left max
+initially<00:11:26.399><c> they're</c><00:11:26.560><c> both</c><00:11:26.800><c> gonna</c><00:11:27.040><c> be</c><00:11:27.600><c> a</c><00:11:27.839><c> zero</c>
+
+00:11:28.470 --> 00:11:28.480 align:start position:0%
+initially they're both gonna be a zero
+ 
+
+00:11:28.480 --> 00:11:29.829 align:start position:0%
+initially they're both gonna be a zero
+and<00:11:28.560><c> then</c><00:11:28.720><c> we're</c><00:11:28.880><c> just</c><00:11:29.120><c> going</c><00:11:29.200><c> to</c><00:11:29.360><c> go</c><00:11:29.600><c> through</c>
+
+00:11:29.829 --> 00:11:29.839 align:start position:0%
+and then we're just going to go through
+ 
+
+00:11:29.839 --> 00:11:33.190 align:start position:0%
+and then we're just going to go through
+every<00:11:30.160><c> single</c><00:11:30.800><c> character</c><00:11:31.440><c> in</c><00:11:31.920><c> the</c><00:11:32.160><c> string</c><00:11:33.040><c> if</c>
+
+00:11:33.190 --> 00:11:33.200 align:start position:0%
+every single character in the string if
+ 
+
+00:11:33.200 --> 00:11:36.150 align:start position:0%
+every single character in the string if
+we<00:11:33.440><c> get</c><00:11:33.680><c> a</c><00:11:34.160><c> open</c><00:11:34.480><c> parenthesis</c><00:11:35.360><c> a</c><00:11:35.600><c> left</c><00:11:35.920><c> open</c>
+
+00:11:36.150 --> 00:11:36.160 align:start position:0%
+we get a open parenthesis a left open
+ 
+
+00:11:36.160 --> 00:11:38.230 align:start position:0%
+we get a open parenthesis a left open
+parenthesis<00:11:36.880><c> we're</c><00:11:37.120><c> going</c><00:11:37.360><c> to</c><00:11:37.680><c> increment</c>
+
+00:11:38.230 --> 00:11:38.240 align:start position:0%
+parenthesis we're going to increment
+ 
+
+00:11:38.240 --> 00:11:40.630 align:start position:0%
+parenthesis we're going to increment
+both<00:11:38.640><c> of</c><00:11:38.959><c> our</c><00:11:39.120><c> variables</c><00:11:39.600><c> so</c><00:11:39.839><c> leftmin</c><00:11:40.480><c> and</c>
+
+00:11:40.630 --> 00:11:40.640 align:start position:0%
+both of our variables so leftmin and
+ 
+
+00:11:40.640 --> 00:11:42.389 align:start position:0%
+both of our variables so leftmin and
+leftmax<00:11:41.200><c> are</c><00:11:41.360><c> going</c><00:11:41.440><c> to</c><00:11:41.519><c> be</c><00:11:41.680><c> incremented</c><00:11:42.240><c> by</c>
+
+00:11:42.389 --> 00:11:42.399 align:start position:0%
+leftmax are going to be incremented by
+ 
+
+00:11:42.399 --> 00:11:44.230 align:start position:0%
+leftmax are going to be incremented by
+one<00:11:42.959><c> because</c><00:11:43.279><c> here</c><00:11:43.519><c> we</c><00:11:43.680><c> don't</c><00:11:43.920><c> really</c><00:11:44.079><c> have</c>
+
+00:11:44.230 --> 00:11:44.240 align:start position:0%
+one because here we don't really have
+ 
+
+00:11:44.240 --> 00:11:46.550 align:start position:0%
+one because here we don't really have
+any<00:11:44.480><c> choices</c><00:11:45.040><c> we</c><00:11:45.279><c> have</c><00:11:45.519><c> to</c><00:11:45.920><c> increment</c><00:11:46.399><c> the</c>
+
+00:11:46.550 --> 00:11:46.560 align:start position:0%
+any choices we have to increment the
+ 
+
+00:11:46.560 --> 00:11:49.190 align:start position:0%
+any choices we have to increment the
+count<00:11:46.959><c> by</c><00:11:47.279><c> one</c><00:11:47.839><c> and</c><00:11:48.160><c> in</c><00:11:48.240><c> the</c><00:11:48.399><c> opposite</c><00:11:48.880><c> case</c>
+
+00:11:49.190 --> 00:11:49.200 align:start position:0%
+count by one and in the opposite case
+ 
+
+00:11:49.200 --> 00:11:51.670 align:start position:0%
+count by one and in the opposite case
+where<00:11:49.440><c> we</c><00:11:49.680><c> do</c><00:11:49.920><c> have</c><00:11:50.160><c> a</c><00:11:50.399><c> closing</c><00:11:50.800><c> parenthesis</c>
+
+00:11:51.670 --> 00:11:51.680 align:start position:0%
+where we do have a closing parenthesis
+ 
+
+00:11:51.680 --> 00:11:53.590 align:start position:0%
+where we do have a closing parenthesis
+we<00:11:51.920><c> also</c><00:11:52.320><c> don't</c><00:11:52.560><c> have</c><00:11:52.720><c> a</c><00:11:52.880><c> choice</c><00:11:53.200><c> so</c><00:11:53.360><c> i'm</c><00:11:53.519><c> going</c>
+
+00:11:53.590 --> 00:11:53.600 align:start position:0%
+we also don't have a choice so i'm going
+ 
+
+00:11:53.600 --> 00:11:55.750 align:start position:0%
+we also don't have a choice so i'm going
+to<00:11:53.680><c> copy</c><00:11:54.000><c> and</c><00:11:54.160><c> paste</c><00:11:54.399><c> this</c><00:11:54.639><c> but</c><00:11:54.880><c> in</c><00:11:55.040><c> that</c><00:11:55.279><c> case</c>
+
+00:11:55.750 --> 00:11:55.760 align:start position:0%
+to copy and paste this but in that case
+ 
+
+00:11:55.760 --> 00:11:57.990 align:start position:0%
+to copy and paste this but in that case
+we're<00:11:56.000><c> going</c><00:11:56.160><c> to</c><00:11:56.320><c> be</c><00:11:56.880><c> decrementing</c><00:11:57.519><c> the</c><00:11:57.680><c> count</c>
+
+00:11:57.990 --> 00:11:58.000 align:start position:0%
+we're going to be decrementing the count
+ 
+
+00:11:58.000 --> 00:12:00.949 align:start position:0%
+we're going to be decrementing the count
+by<00:11:58.240><c> one</c><00:11:58.560><c> for</c><00:11:58.720><c> each</c><00:11:58.959><c> of</c><00:11:59.120><c> them</c><00:11:59.600><c> uh</c><00:11:59.839><c> and</c><00:12:00.240><c> the</c><00:12:00.560><c> else</c>
+
+00:12:00.949 --> 00:12:00.959 align:start position:0%
+by one for each of them uh and the else
+ 
+
+00:12:00.959 --> 00:12:02.710 align:start position:0%
+by one for each of them uh and the else
+case<00:12:01.360><c> is</c><00:12:01.519><c> when</c><00:12:01.680><c> we</c><00:12:01.839><c> have</c><00:12:02.000><c> a</c><00:12:02.079><c> wild</c><00:12:02.320><c> card</c><00:12:02.560><c> we</c>
+
+00:12:02.710 --> 00:12:02.720 align:start position:0%
+case is when we have a wild card we
+ 
+
+00:12:02.720 --> 00:12:04.629 align:start position:0%
+case is when we have a wild card we
+don't<00:12:02.880><c> have</c><00:12:02.959><c> to</c><00:12:03.120><c> specify</c><00:12:03.600><c> that</c><00:12:03.760><c> character</c><00:12:04.399><c> and</c>
+
+00:12:04.629 --> 00:12:04.639 align:start position:0%
+don't have to specify that character and
+ 
+
+00:12:04.639 --> 00:12:06.150 align:start position:0%
+don't have to specify that character and
+this<00:12:04.800><c> is</c><00:12:04.880><c> the</c><00:12:05.040><c> part</c><00:12:05.200><c> where</c><00:12:05.360><c> we</c><00:12:05.519><c> do</c><00:12:05.760><c> have</c><00:12:06.000><c> a</c>
+
+00:12:06.150 --> 00:12:06.160 align:start position:0%
+this is the part where we do have a
+ 
+
+00:12:06.160 --> 00:12:08.710 align:start position:0%
+this is the part where we do have a
+choice<00:12:06.560><c> so</c><00:12:06.720><c> i'll</c><00:12:06.880><c> copy</c><00:12:07.200><c> and</c><00:12:07.279><c> paste</c><00:12:07.600><c> again</c><00:12:08.320><c> but</c>
+
+00:12:08.710 --> 00:12:08.720 align:start position:0%
+choice so i'll copy and paste again but
+ 
+
+00:12:08.720 --> 00:12:10.230 align:start position:0%
+choice so i'll copy and paste again but
+with<00:12:08.959><c> the</c><00:12:09.120><c> left</c><00:12:09.440><c> min</c><00:12:09.839><c> we're</c><00:12:10.000><c> going</c><00:12:10.160><c> to</c>
+
+00:12:10.230 --> 00:12:10.240 align:start position:0%
+with the left min we're going to
+ 
+
+00:12:10.240 --> 00:12:12.310 align:start position:0%
+with the left min we're going to
+decrement<00:12:10.720><c> that</c><00:12:10.880><c> count</c><00:12:11.279><c> in</c><00:12:11.360><c> the</c><00:12:11.519><c> case</c><00:12:11.839><c> that</c><00:12:12.079><c> we</c>
+
+00:12:12.310 --> 00:12:12.320 align:start position:0%
+decrement that count in the case that we
+ 
+
+00:12:12.320 --> 00:12:14.870 align:start position:0%
+decrement that count in the case that we
+have<00:12:12.959><c> a</c><00:12:13.200><c> closing</c><00:12:13.680><c> parenthesis</c><00:12:14.560><c> and</c><00:12:14.720><c> in</c><00:12:14.800><c> the</c>
+
+00:12:14.870 --> 00:12:14.880 align:start position:0%
+have a closing parenthesis and in the
+ 
+
+00:12:14.880 --> 00:12:16.550 align:start position:0%
+have a closing parenthesis and in the
+case<00:12:15.120><c> that</c><00:12:15.279><c> we</c><00:12:15.519><c> choose</c><00:12:15.760><c> the</c><00:12:15.920><c> wild</c><00:12:16.160><c> card</c><00:12:16.399><c> to</c><00:12:16.480><c> be</c>
+
+00:12:16.550 --> 00:12:16.560 align:start position:0%
+case that we choose the wild card to be
+ 
+
+00:12:16.560 --> 00:12:18.069 align:start position:0%
+case that we choose the wild card to be
+an<00:12:16.800><c> open</c><00:12:17.040><c> parenthesis</c><00:12:17.600><c> we're</c><00:12:17.760><c> going</c><00:12:17.839><c> to</c>
+
+00:12:18.069 --> 00:12:18.079 align:start position:0%
+an open parenthesis we're going to
+ 
+
+00:12:18.079 --> 00:12:21.030 align:start position:0%
+an open parenthesis we're going to
+increment<00:12:18.560><c> the</c><00:12:18.800><c> left</c><00:12:19.200><c> max</c><00:12:20.000><c> by</c><00:12:20.320><c> 1.</c><00:12:20.720><c> but</c>
+
+00:12:21.030 --> 00:12:21.040 align:start position:0%
+increment the left max by 1. but
+ 
+
+00:12:21.040 --> 00:12:24.150 align:start position:0%
+increment the left max by 1. but
+remember<00:12:21.680><c> if</c><00:12:21.839><c> the</c><00:12:22.079><c> left</c><00:12:22.399><c> max</c><00:12:22.959><c> ever</c><00:12:23.680><c> is</c>
+
+00:12:24.150 --> 00:12:24.160 align:start position:0%
+remember if the left max ever is
+ 
+
+00:12:24.160 --> 00:12:26.550 align:start position:0%
+remember if the left max ever is
+negative<00:12:24.959><c> that</c><00:12:25.200><c> means</c><00:12:25.519><c> it's</c><00:12:25.760><c> impossible</c><00:12:26.399><c> for</c>
+
+00:12:26.550 --> 00:12:26.560 align:start position:0%
+negative that means it's impossible for
+ 
+
+00:12:26.560 --> 00:12:28.389 align:start position:0%
+negative that means it's impossible for
+our<00:12:26.720><c> parentheses</c><00:12:27.279><c> to</c><00:12:27.440><c> be</c><00:12:27.680><c> valid</c><00:12:28.000><c> so</c><00:12:28.160><c> in</c><00:12:28.240><c> that</c>
+
+00:12:28.389 --> 00:12:28.399 align:start position:0%
+our parentheses to be valid so in that
+ 
+
+00:12:28.399 --> 00:12:29.670 align:start position:0%
+our parentheses to be valid so in that
+case<00:12:28.639><c> we're</c><00:12:28.800><c> just</c><00:12:28.959><c> going</c><00:12:29.040><c> to</c><00:12:29.200><c> immediately</c>
+
+00:12:29.670 --> 00:12:29.680 align:start position:0%
+case we're just going to immediately
+ 
+
+00:12:29.680 --> 00:12:32.550 align:start position:0%
+case we're just going to immediately
+return<00:12:30.240><c> false</c><00:12:30.959><c> but</c><00:12:31.200><c> in</c><00:12:31.680><c> the</c><00:12:31.920><c> similar</c><00:12:32.320><c> case</c>
+
+00:12:32.550 --> 00:12:32.560 align:start position:0%
+return false but in the similar case
+ 
+
+00:12:32.560 --> 00:12:35.190 align:start position:0%
+return false but in the similar case
+where<00:12:32.720><c> our</c><00:12:32.880><c> left</c><00:12:33.279><c> min</c><00:12:33.760><c> is</c><00:12:34.000><c> negative</c><00:12:34.560><c> we're</c><00:12:34.880><c> not</c>
+
+00:12:35.190 --> 00:12:35.200 align:start position:0%
+where our left min is negative we're not
+ 
+
+00:12:35.200 --> 00:12:37.350 align:start position:0%
+where our left min is negative we're not
+necessarily<00:12:36.079><c> going</c><00:12:36.240><c> to</c><00:12:36.320><c> return</c><00:12:36.800><c> false</c>
+
+00:12:37.350 --> 00:12:37.360 align:start position:0%
+necessarily going to return false
+ 
+
+00:12:37.360 --> 00:12:39.110 align:start position:0%
+necessarily going to return false
+because<00:12:37.600><c> that</c><00:12:37.760><c> would</c><00:12:38.000><c> mean</c><00:12:38.240><c> our</c><00:12:38.399><c> left</c><00:12:38.639><c> max</c><00:12:38.959><c> is</c>
+
+00:12:39.110 --> 00:12:39.120 align:start position:0%
+because that would mean our left max is
+ 
+
+00:12:39.120 --> 00:12:40.949 align:start position:0%
+because that would mean our left max is
+not<00:12:39.360><c> negative</c><00:12:39.680><c> so</c><00:12:39.839><c> it</c><00:12:40.000><c> technically</c><00:12:40.560><c> is</c>
+
+00:12:40.949 --> 00:12:40.959 align:start position:0%
+not negative so it technically is
+ 
+
+00:12:40.959 --> 00:12:42.790 align:start position:0%
+not negative so it technically is
+possible<00:12:41.519><c> for</c><00:12:41.680><c> the</c><00:12:41.839><c> string</c><00:12:42.160><c> to</c><00:12:42.320><c> still</c><00:12:42.560><c> be</c>
+
+00:12:42.790 --> 00:12:42.800 align:start position:0%
+possible for the string to still be
+ 
+
+00:12:42.800 --> 00:12:45.670 align:start position:0%
+possible for the string to still be
+valid<00:12:43.360><c> we</c><00:12:43.760><c> don't</c><00:12:43.920><c> want</c><00:12:44.079><c> to</c><00:12:44.160><c> continue</c><00:12:44.800><c> assuming</c>
+
+00:12:45.670 --> 00:12:45.680 align:start position:0%
+valid we don't want to continue assuming
+ 
+
+00:12:45.680 --> 00:12:47.750 align:start position:0%
+valid we don't want to continue assuming
+that<00:12:46.000><c> our</c><00:12:46.240><c> string</c><00:12:46.639><c> up</c><00:12:46.720><c> until</c><00:12:47.040><c> this</c><00:12:47.279><c> point</c><00:12:47.600><c> is</c>
+
+00:12:47.750 --> 00:12:47.760 align:start position:0%
+that our string up until this point is
+ 
+
+00:12:47.760 --> 00:12:49.430 align:start position:0%
+that our string up until this point is
+invalid<00:12:48.240><c> so</c><00:12:48.399><c> we're</c><00:12:48.560><c> going</c><00:12:48.639><c> to</c><00:12:48.720><c> reset</c><00:12:49.120><c> it</c><00:12:49.279><c> back</c>
+
+00:12:49.430 --> 00:12:49.440 align:start position:0%
+invalid so we're going to reset it back
+ 
+
+00:12:49.440 --> 00:12:50.790 align:start position:0%
+invalid so we're going to reset it back
+to<00:12:49.600><c> zero</c><00:12:49.920><c> and</c><00:12:50.079><c> if</c>
+
+00:12:50.790 --> 00:12:50.800 align:start position:0%
+to zero and if
+ 
+
+00:12:50.800 --> 00:12:52.949 align:start position:0%
+to zero and if
+this<00:12:51.120><c> part</c><00:12:51.360><c> is</c><00:12:51.600><c> unclear</c><00:12:52.160><c> and</c><00:12:52.240><c> i</c><00:12:52.399><c> don't</c><00:12:52.639><c> expect</c>
+
+00:12:52.949 --> 00:12:52.959 align:start position:0%
+this part is unclear and i don't expect
+ 
+
+00:12:52.959 --> 00:12:54.470 align:start position:0%
+this part is unclear and i don't expect
+it<00:12:53.040><c> to</c><00:12:53.120><c> be</c><00:12:53.279><c> too</c><00:12:53.519><c> clear</c><00:12:53.760><c> because</c><00:12:54.000><c> it's</c><00:12:54.160><c> actually</c>
+
+00:12:54.470 --> 00:12:54.480 align:start position:0%
+it to be too clear because it's actually
+ 
+
+00:12:54.480 --> 00:12:56.710 align:start position:0%
+it to be too clear because it's actually
+complicated<00:12:55.040><c> to</c><00:12:55.200><c> understand</c><00:12:56.079><c> this</c><00:12:56.399><c> is</c><00:12:56.560><c> the</c>
+
+00:12:56.710 --> 00:12:56.720 align:start position:0%
+complicated to understand this is the
+ 
+
+00:12:56.720 --> 00:12:59.190 align:start position:0%
+complicated to understand this is the
+string<00:12:57.200><c> that</c><00:12:57.440><c> i</c><00:12:57.600><c> would</c><00:12:58.079><c> kind</c><00:12:58.320><c> of</c><00:12:58.480><c> run</c><00:12:58.720><c> the</c><00:12:58.880><c> code</c>
+
+00:12:59.190 --> 00:12:59.200 align:start position:0%
+string that i would kind of run the code
+ 
+
+00:12:59.200 --> 00:13:01.110 align:start position:0%
+string that i would kind of run the code
+on<00:12:59.680><c> and</c><00:13:00.000><c> this</c><00:13:00.160><c> is</c><00:13:00.240><c> the</c><00:13:00.399><c> example</c><00:13:00.880><c> i</c><00:13:00.959><c> would</c>
+
+00:13:01.110 --> 00:13:01.120 align:start position:0%
+on and this is the example i would
+ 
+
+00:13:01.120 --> 00:13:03.350 align:start position:0%
+on and this is the example i would
+really<00:13:01.360><c> try</c><00:13:01.600><c> to</c><00:13:01.680><c> understand</c><00:13:02.480><c> if</c><00:13:02.639><c> you</c><00:13:02.720><c> don't</c>
+
+00:13:03.350 --> 00:13:03.360 align:start position:0%
+really try to understand if you don't
+ 
+
+00:13:03.360 --> 00:13:05.750 align:start position:0%
+really try to understand if you don't
+get<00:13:03.519><c> this</c><00:13:03.839><c> part</c><00:13:04.399><c> this</c><00:13:04.639><c> string</c><00:13:05.040><c> is</c><00:13:05.200><c> impossible</c>
+
+00:13:05.750 --> 00:13:05.760 align:start position:0%
+get this part this string is impossible
+ 
+
+00:13:05.760 --> 00:13:07.910 align:start position:0%
+get this part this string is impossible
+to<00:13:06.000><c> make</c><00:13:06.399><c> valid</c><00:13:06.800><c> no</c><00:13:06.959><c> matter</c><00:13:07.200><c> what</c><00:13:07.360><c> we</c><00:13:07.600><c> choose</c>
+
+00:13:07.910 --> 00:13:07.920 align:start position:0%
+to make valid no matter what we choose
+ 
+
+00:13:07.920 --> 00:13:09.990 align:start position:0%
+to make valid no matter what we choose
+for<00:13:08.079><c> the</c><00:13:08.240><c> wild</c><00:13:08.639><c> card</c><00:13:09.120><c> but</c><00:13:09.360><c> if</c><00:13:09.440><c> you</c><00:13:09.680><c> don't</c>
+
+00:13:09.990 --> 00:13:10.000 align:start position:0%
+for the wild card but if you don't
+ 
+
+00:13:10.000 --> 00:13:12.230 align:start position:0%
+for the wild card but if you don't
+include<00:13:10.399><c> this</c><00:13:10.800><c> if</c><00:13:11.040><c> statement</c><00:13:11.519><c> in</c><00:13:11.600><c> your</c><00:13:11.839><c> code</c>
+
+00:13:12.230 --> 00:13:12.240 align:start position:0%
+include this if statement in your code
+ 
+
+00:13:12.240 --> 00:13:14.150 align:start position:0%
+include this if statement in your code
+you'll<00:13:12.639><c> end</c><00:13:12.800><c> up</c><00:13:12.959><c> returning</c><00:13:13.519><c> true</c><00:13:13.839><c> for</c><00:13:14.000><c> this</c>
+
+00:13:14.150 --> 00:13:14.160 align:start position:0%
+you'll end up returning true for this
+ 
+
+00:13:14.160 --> 00:13:15.670 align:start position:0%
+you'll end up returning true for this
+when<00:13:14.320><c> you</c><00:13:14.480><c> should</c><00:13:14.639><c> be</c><00:13:14.800><c> returning</c><00:13:15.360><c> false</c>
+
+00:13:15.670 --> 00:13:15.680 align:start position:0%
+when you should be returning false
+ 
+
+00:13:15.680 --> 00:13:17.910 align:start position:0%
+when you should be returning false
+that's<00:13:15.920><c> kind</c><00:13:16.079><c> of</c><00:13:16.399><c> what</c><00:13:16.639><c> i'll</c><00:13:17.120><c> leave</c><00:13:17.360><c> it</c><00:13:17.519><c> at</c><00:13:17.760><c> but</c>
+
+00:13:17.910 --> 00:13:17.920 align:start position:0%
+that's kind of what i'll leave it at but
+ 
+
+00:13:17.920 --> 00:13:20.230 align:start position:0%
+that's kind of what i'll leave it at but
+other<00:13:18.160><c> than</c><00:13:18.320><c> that</c><00:13:18.560><c> once</c><00:13:18.800><c> we</c><00:13:19.040><c> exit</c><00:13:19.360><c> the</c><00:13:19.519><c> loop</c><00:13:20.000><c> we</c>
+
+00:13:20.230 --> 00:13:20.240 align:start position:0%
+other than that once we exit the loop we
+ 
+
+00:13:20.240 --> 00:13:22.470 align:start position:0%
+other than that once we exit the loop we
+will<00:13:20.480><c> return</c><00:13:20.880><c> true</c><00:13:21.279><c> if</c><00:13:21.519><c> the</c><00:13:21.680><c> left</c><00:13:22.000><c> min</c><00:13:22.320><c> is</c>
+
+00:13:22.470 --> 00:13:22.480 align:start position:0%
+will return true if the left min is
+ 
+
+00:13:22.480 --> 00:13:24.550 align:start position:0%
+will return true if the left min is
+equal<00:13:22.720><c> to</c><00:13:22.880><c> zero</c><00:13:23.279><c> if</c><00:13:23.360><c> it's</c><00:13:23.519><c> not</c><00:13:23.760><c> equal</c><00:13:24.000><c> to</c><00:13:24.160><c> zero</c>
+
+00:13:24.550 --> 00:13:24.560 align:start position:0%
+equal to zero if it's not equal to zero
+ 
+
+00:13:24.560 --> 00:13:26.870 align:start position:0%
+equal to zero if it's not equal to zero
+then<00:13:24.800><c> we</c><00:13:24.959><c> return</c><00:13:25.519><c> false</c><00:13:26.160><c> now</c><00:13:26.320><c> let's</c><00:13:26.560><c> run</c><00:13:26.720><c> the</c>
+
+00:13:26.870 --> 00:13:26.880 align:start position:0%
+then we return false now let's run the
+ 
+
+00:13:26.880 --> 00:13:28.949 align:start position:0%
+then we return false now let's run the
+code<00:13:27.120><c> to</c><00:13:27.279><c> make</c><00:13:27.440><c> sure</c><00:13:27.600><c> that</c><00:13:27.760><c> it</c><00:13:27.920><c> works</c><00:13:28.480><c> and</c><00:13:28.720><c> as</c>
+
+00:13:28.949 --> 00:13:28.959 align:start position:0%
+code to make sure that it works and as
+ 
+
+00:13:28.959 --> 00:13:30.550 align:start position:0%
+code to make sure that it works and as
+you<00:13:29.040><c> can</c><00:13:29.200><c> see</c><00:13:29.360><c> on</c><00:13:29.440><c> the</c><00:13:29.519><c> left</c><00:13:29.839><c> yes</c><00:13:30.079><c> it</c><00:13:30.160><c> does</c><00:13:30.480><c> and</c>
+
+00:13:30.550 --> 00:13:30.560 align:start position:0%
+you can see on the left yes it does and
+ 
+
+00:13:30.560 --> 00:13:32.069 align:start position:0%
+you can see on the left yes it does and
+it's<00:13:30.720><c> pretty</c><00:13:30.959><c> efficient</c><00:13:31.360><c> so</c><00:13:31.519><c> i</c><00:13:31.680><c> really</c><00:13:31.920><c> hope</c>
+
+00:13:32.069 --> 00:13:32.079 align:start position:0%
+it's pretty efficient so i really hope
+ 
+
+00:13:32.079 --> 00:13:34.150 align:start position:0%
+it's pretty efficient so i really hope
+that<00:13:32.240><c> this</c><00:13:32.399><c> was</c><00:13:32.560><c> helpful</c><00:13:33.040><c> if</c><00:13:33.200><c> it</c><00:13:33.360><c> was</c><00:13:33.839><c> please</c>
+
+00:13:34.150 --> 00:13:34.160 align:start position:0%
+that this was helpful if it was please
+ 
+
+00:13:34.160 --> 00:13:35.750 align:start position:0%
+that this was helpful if it was please
+like<00:13:34.399><c> and</c><00:13:34.480><c> subscribe</c><00:13:35.040><c> it</c><00:13:35.120><c> really</c><00:13:35.360><c> supports</c>
+
+00:13:35.750 --> 00:13:35.760 align:start position:0%
+like and subscribe it really supports
+ 
+
+00:13:35.760 --> 00:13:37.509 align:start position:0%
+like and subscribe it really supports
+the<00:13:35.839><c> channel</c><00:13:36.160><c> a</c><00:13:36.320><c> lot</c><00:13:36.720><c> consider</c><00:13:37.200><c> checking</c><00:13:37.440><c> out</c>
+
+00:13:37.509 --> 00:13:37.519 align:start position:0%
+the channel a lot consider checking out
+ 
+
+00:13:37.519 --> 00:13:39.030 align:start position:0%
+the channel a lot consider checking out
+my<00:13:37.760><c> patreon</c><00:13:38.160><c> where</c><00:13:38.320><c> you</c><00:13:38.399><c> can</c><00:13:38.480><c> further</c><00:13:38.800><c> support</c>
+
+00:13:39.030 --> 00:13:39.040 align:start position:0%
+my patreon where you can further support
+ 
+
+00:13:39.040 --> 00:13:40.550 align:start position:0%
+my patreon where you can further support
+the<00:13:39.199><c> channel</c><00:13:39.519><c> and</c><00:13:39.600><c> hopefully</c><00:13:40.079><c> i'll</c><00:13:40.240><c> see</c><00:13:40.399><c> you</c>
+
+00:13:40.550 --> 00:13:40.560 align:start position:0%
+the channel and hopefully i'll see you
+ 
+
+00:13:40.560 --> 00:13:44.320 align:start position:0%
+the channel and hopefully i'll see you
+pretty<00:13:40.800><c> soon</c><00:13:41.279><c> thanks</c><00:13:41.600><c> for</c><00:13:41.760><c> watching</c>
+

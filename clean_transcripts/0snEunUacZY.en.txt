@@ -1,0 +1,335 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+let's solve
+letter combinations of a phone number so
+we're given a
+string of digits that contain
+only two through nine so the digits are
+only going to contain the numbers
+2 through 9 and we want to return all
+possible letter combinations that the
+number
+could represent and so basically what
+this problem is about
+is like when you wanted to text people
+with old phones you only had
+these digits right so in order to have
+characters you'd map a number like two
+to the characters a b c
+and you can see the reason we're doing
+two through nine is because
+one was not mapped to any digits right
+so we don't need to consider the one
+two was mapped to abc three was mapped
+to d
+e f basically each number or each digit
+four five six each one was mapped to
+three characters some were mapped to
+four characters seven is mapped to four
+nine is mapped to four different
+characters so then if you're given
+a string of digits let's say two 3 in
+this
+case right 2 3 is our string well how
+many different
+output strings could we have here you
+can see we have a
+bunch right we have 9 different strings
+why do we have 9 different strings
+because this two could be three
+different characters it could be
+a b or c this
+three could also be three different
+characters d
+e f so three times
+three is nine so basically we can have
+we can have nine different combinations
+of these characters right
+we could have a d we could have a
+e we could have a f right and so on and
+so on right so
+we could have b e b b f
+and then do the same thing for c right
+so then you would have nine different
+strings
+and so basically you can tell that this
+problem right like writing out the
+solution like this it's not that
+difficult because we're gonna basically
+be forced to brute force this problem
+and it's a backtracking problem because
+we have to brute force it right we have
+to basically find every single
+combination
+that we could get using the given digits
+and
+you might have noticed i've been doing a
+lot of backtracking problems recently
+and that just goes to show you that
+backtracking is a very important
+algorithm
+so let me just show you kind of the
+drawing of the backtracking solution so
+luckily for us in this case we're only
+given two
+three right and so we only need to find
+okay two maps to these three characters
+three maps to these three characters but
+we know in total
+we it's possible we could have a four we
+could have a five if we had a four
+we know four maps to the next three
+characters after this
+so g h i i think unless i'm forgetting
+something
+and basically we could have any
+character right from
+two through nine so we're going to need
+to create a hash map
+or some kind of way to map every
+character from
+or basically every digit from two all
+the way
+to five six seven all the way to nine
+right and
+map them to the characters that they end
+up being right we know nine is
+i think gonna be xyz we're basically
+gonna have to hard
+code this map of characters there's not
+like a clean way to do it mainly because
+some of the characters
+i think seven has four characters right
+seven is mapped to four different
+characters and
+so whatever but this is a pretty small
+hash map right so it's not a big deal if
+we have to hard code it
+but now let's just look at this problem
+itself how are we going to solve it well
+so the first character is 2
+right so 2 could map to three
+different characters so two being the
+first digit it can map to a
+b or c right and the next character we
+know or the next digit is
+three so from a we could have three
+different
+characters that follow after it we could
+have a d
+we could have an e or we could have an f
+and that's going to be true for
+every single one of these right we could
+basically put a d
+e f after each of them and this
+is the entire backtracking tree so based
+on this
+what's our solution because remember we
+want to know the strings
+that this could map to well this is one
+string
+this is one string this is another
+string so basically for
+each of the leaf nodes in this tree
+we're going to
+follow the entire like list of
+characters that came before that's going
+to be the output strings right a
+a d a e a f
+and so on right b d b e
+b f and the exact same thing for c
+so when you visualize it like this this
+is actually a pretty simple problem
+so now you just need to know how to
+write this backtracking algorithm and
+i'm going to show you how to do this
+recursively but before i do that the
+time complexity for this
+is basically the number of combinations
+that we're going to have
+so the question is how many different
+output
+could we have for a string let's say the
+input string is length
+n how many different outputs could we
+have well since we know that there are
+some characters like i think
+nine maps to four different characters i
+think w
+x y z actually so the brute force is
+gonna be
+four to the power of n that's how many
+outputs we could actually have right
+because maybe we'd get
+a string s equal 9999 right so
+basically we'd have four choices for
+each of those characters so 4 times 4
+basically 4 to the power of n which is
+the
+length of the input string right so
+that's the number
+of output strings that we're going to
+have and the length of each
+output string is going to be the same as
+the length of the
+input string right so really the time
+complexity is going to be
+big o of n times
+4 to the n and basically this is the
+worst case time complexity
+okay so now let's get into the code
+which is going to be
+fairly short so the first thing we want
+to do is have a result
+this result is going to contain the
+combination strings that we're trying to
+build
+and the next thing we want to do is
+create a map of digits right we want to
+take
+every single input digit that could be
+possible like two and map it to the
+characters
+that are possible so abc right for two
+and
+unless you wanna see me type this out i
+think i'm just gonna copy and paste it
+so
+this is what our digit map is going to
+be like and you can verify this if you
+have an old phone laying around that
+this
+is the correct mapping from digits to
+the following
+uh string characters so now let's write
+that backtracking function
+it's going to be a recursive function
+and i'm going to
+declare this function inside of this
+function so that we don't need to pass
+in these parameters every time we call
+this backtracking function
+and we also don't need to pass the
+digits that we're on i'm only going to
+pass in one variable i which is going to
+tell us what index we're at in
+the digit string that we're given as the
+input to our
+function and i'm actually going to pass
+in one more variable
+so the current string meaning basically
+the current string that we're building
+so let's say our input was
+uh one two three and the current string
+would contain something like
+a right so if we've we've only visited
+one so far we'd have a
+and then we'd want the next two
+characters from two and three
+so we know the base case is if i
+is greater than or equal to the
+length of digits or actually an even
+better base case would be
+our current string let's say the length
+of the current string
+is exactly equal to the length of digits
+that means that we've
+basically been able to take every single
+digit and then map it to a character
+because current string is going to
+contain those characters
+and if that is the case then we are
+allowed to take our result and add to it
+the current string that we just
+built and then since this is the base
+case after that we can just return
+if this is not true though that means we
+haven't
+finished building the current string
+that means we need to continue
+going through the digit that we're at
+right at index i
+so let's create a loop to do that
+so basically i'm going to take digits of
+i that's going to tell us the current
+digit that we're at right and i want to
+take this digit that we're at and i want
+to map it to the list
+of characters that it maps to right so
+if we had nine we know nine maps to
+w x y z so how can i do that well that's
+why we created this
+digit to character map we can take a
+digit
+and then map it to a character so digit
+to
+character i'm going to take this digit
+and now basically this is going to be
+the
+that string that it maps to and i want
+to just go
+through every character in this string
+so for every c every single character in
+this string
+i want to brute force this right so for
+every single character i'm just going to
+call backtrack
+i'm going to make that recursive call
+right so
+for i we're going to increment i by 1
+because we're moving to the next digit
+and for the current string we're going
+to just take the current string that we
+were given
+and add one more character to it the
+character that we're currently visiting
+c and that's actually all that we have
+to do
+we have our single base case and we have
+our recursive case you can see that the
+only thing
+that might be different for you is that
+our recursive call is inside of a loop
+so with this backtracking function
+complete
+now let's actually call this
+backtracking function so
+we the parameters to give it are going
+to be 0 for the
+index and the current string is
+initially just going to be empty right
+but i'm actually going to need to make
+one last modification so we're only
+going to need to call backtracking if
+the digit string that we're given
+is non-empty and the reason is because
+if digits was
+empty then our recursive call would be
+called and then we'd execute the base
+case
+once so then we'd end up returning this
+as our result we'd add the empty string
+to result
+but in the way this problem is defined
+if
+digits if digits was empty like this if
+digits was just an empty string the
+output that they actually want is just
+an
+empty array like this so that's why we
+have to
+put this inside of a condition but other
+than that all we have to do is now
+return
+our result and the function is complete
+so you can see that it's pretty
+efficient about as efficient as you can
+make a problem like this even though
+it's a rel it's what's it called it's an
+exponential function right
+but i hope that this was helpful if it
+was
+please like and subscribe it supports
+the channel a lot and i'll hopefully
+see you pretty soon
+you

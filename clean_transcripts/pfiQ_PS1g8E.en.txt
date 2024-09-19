@@ -1,0 +1,327 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+let's look at
+word search this is a pretty good
+problem and it's definitely very popular
+so we're given a grid
+m by n with a bunch of characters or you
+could say it's a board
+and we're also given a target word and
+we want to
+look for this word inside of our board
+and if we can
+find the word we return true if we can't
+find the word then we return false
+and so within our grid the word can be
+constructed
+any way but it has to be either
+horizontally or
+vertically neighboring cells so
+basically what we're looking for let's
+say this
+is our board we're looking for a path
+inside of this board where we can move
+horizontally right we're moving to the
+right
+then we go down and then we go to the
+left
+so this is our path and we
+are looking for a word so we're looking
+for a path that can make this
+word down here you can see in the
+example they give us a target word
+a b c c e d and that's the word we're
+looking for we're looking for a path
+and we can find a path with exactly
+those characters
+therefore we can return true now the
+question you're wondering is how can we
+figure this out is there a really
+efficient algorithm to solve this
+problem the answer is
+no there's definitely not a super
+efficient one we just are going to go
+through
+the brute force solution and that brute
+force solution is going to be
+back tracking so basically this problem
+is actually pretty intuitive right how
+would you solve this problem
+in real life if you didn't have any code
+well you'd go brute force right
+looking let's start at every single cell
+so we'd go through every single cell
+right let's say this is an e
+right it does our word start with an e
+no it starts with an a
+now we have a c does our word start with
+a c nope does our word start with a b
+nope does our word start with an a yes
+it does so now let's look at all the
+neighbors of a and look for our next
+destination character our next target
+character is b
+right so let's look down we don't have a
+b over here this is an
+s let's look up there's nothing up left
+there's nothing left
+okay to the right we have a b gray now
+the next character we're looking for is
+a c
+are there any neighboring c's not up
+right
+what about to the left we can't reuse a
+character
+so we can't reuse this a but we wouldn't
+want to use it anyway but that's
+just another detail right we can't reuse
+any characters
+down here there's an f that's not what
+we're looking for but to the right
+there's a c
+right obviously we can see that and the
+next character we're looking for is a
+second c
+you know we could run through this but
+it's mainly just brute force right we're
+going through every single position
+looking at every single neighbor to see
+if it's even possible for us to make
+this target word
+in this case the answer is obviously yes
+we have an e
+and we have a d we can finish it up so
+in the code we're going to be doing
+backtracking so let me
+jump into that or rather we're going to
+be doing recursive
+backtracking so we're going to do this
+recursively or in other words we're
+going to do this with depth for search
+so let's dive right into it so one thing
+i like to do with these problems is just
+get the dimension so i'm going to get
+the number of rows and the number of
+columns
+so get the length of the board we get
+the number of rows
+and get the length of the first row and
+we get the number of columns
+also remember how i said we can't
+revisit the same character twice
+within our path therefore we're going to
+need a variable
+or a data structure for our path we're
+going to use a set to
+add all the current values from our
+board
+or positions in our board that are
+currently within our path
+to make sure that we don't revisit the
+same position
+twice within our path but other than
+that
+if you've seen any of my backtracking
+videos you know i like to follow a
+formula so i'm just going to be going
+through that right now so i like to
+create a nested debt for search function
+within
+the root or the regular function because
+then we don't have to pass
+in some of the variables like the board
+and the word because this is a nested
+function
+but we are gonna have to pass in the
+position of the board that we're at so
+two variables row column for that and
+we're gonna have to pass in a third
+variable i which is going to tell us the
+current
+character within our target word that
+we're looking for
+so if we ever reach the end of the word
+or if i
+ever equals the last position so if
+i if we ever finish the entire word
+therefore we know we
+found the word therefore we know we can
+return true right that's the good case
+the other case is what if we go out of
+bounds
+right out of bounds of the entire board
+what if row
+is less than zero or column is less than
+zero
+right or what if row is
+greater than or equal to the number of
+rows or if column
+is greater than or equal to the number
+of columns that's also out of bounds so
+or let's consider one more case what if
+the
+board what if the character that we're
+at in our word so word at position i
+is not equal to the character that we're
+at in
+our board so board at position row
+column
+so if this is the case if we're if
+basically we found the wrong character
+then we also want to return false
+and there's one last condition we have
+to check what if the character
+or or what if the position we're at row
+column this tuple what if this
+row column position that we're at is
+inside
+of our path set what does that mean that
+means we're visiting
+the same position twice within our path
+we know
+all of these things that i've just
+listed all these conditions
+are basically invalid if any of these
+are true then we have to return false
+because you know if we're out of bounds
+we return false if we see the same
+character twice
+we return false if we see a character
+that we are not
+looking for we also return false okay
+but once we're done with that
+then we know okay we found a chara we
+found the character we're looking for
+right so what can we do we can take our
+path and
+add the current position to it so the
+current row column
+to our path because we found a character
+that we need
+so now we're going to be continuing our
+recursive depth first search
+and so we're going to be looking for the
+result
+of this depth first search so we're
+going to run depth for search right
+we're going to run it in
+all four adjacent positions so what i'm
+going to do is say row plus
+1 leave the column the same and add
+1 to i we're adding one to i because we
+found the character
+we are looking for now we're going to
+look for the next character right so now
+i'm just going to basically
+copy and paste this a few times so so i
+copy and pasted it four times because
+we're going to look at all four of the
+adjacent positions so let me just fix
+you probably see what i'm doing but
+basically i'm saying row plus one
+leave column the same row minus one
+leave column the same
+column plus one leave row the same and
+column minus one
+leave row the same so we're looking at
+all four horiz
+of all four adjacent positions we're
+running depth first search
+on all of them and if any of them return
+true
+then our result is gonna return true
+remember we only need to find
+our target word one single time
+so if we ever find that word then we
+know we can return true
+so i'm gonna go ahead and return that
+result
+but right before i return that result
+i'm going to do a little bit of cleaning
+up so i'm going to take our path
+variable
+and remove from it the position we just
+added to the path because we're no
+longer
+visiting that position right we're
+returning from this function called
+therefore
+we don't have to continue to visit that
+position
+inside of our path so this depth first
+search
+of recursive function is always the main
+part of the
+backtracking problems once we're done
+with this function
+the only thing left for us to do is
+actually brute force go through every
+single position in our grid
+and run this depth for search function
+on it
+so that's exactly what i'm going to do
+for every single position
+every single starting position in our
+board i'm gonna run
+that first search passing in the row
+column
+passing in zero for the position of i
+because we're always starting at the
+beginning of the word
+and if we ever return true if this
+differ search function ever returns
+true i can immediately return true from
+our function exists right i can just
+return true immediately i don't have to
+wait
+and if we never return true if this goes
+through every position in the board and
+we never return true
+then i'm gonna have to return false out
+here because that means we did not find
+the word that we were looking for
+so this is the entire function actually
+you can tell that it's definitely not
+very efficient right
+we're running through the entire board
+right so what's the time complexity of
+that running through the entire board is
+going to be
+n times m because those are the
+dimensions of our board
+and that's being multiplied by the debt
+first search function right
+because we're calling that debt for
+search function every single time for
+every position in the board so the
+question becomes what's the time
+complexity of the debt for search
+function
+well the call stack of that debt for
+search function is always going to be
+the length of the word right because the
+word can only be so long we can only go
+through so many
+characters for the word so that's going
+to be the call stack of it remember
+where
+though we have four different branches
+we're calling the depth first search for
+different times so it's really going to
+be 4 to the power
+of the length of the word that we are
+given
+so it's going to be something like 4 to
+the power of
+n where n is the length of the word so
+you can see this problem is not very
+efficient so let's just clean this
+up so this is going to be 4 to the power
+of n roughly
+right so it's not a very efficient
+solution this is the rough time
+complexity of the problem so i hope that
+this was helpful
+if it was please like and subscribe it
+supports the channel a lot
+and i'll hopefully see you pretty soon

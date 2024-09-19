@@ -1,0 +1,451 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+let's solve the problem car fleet i
+think a lot of people don't end up
+solving this problem but i think it's a
+very good problem and interesting
+problem to solve so we're given n cars
+that are traveling along the same road
+it has one lane the road has only a
+single lane and this is important for
+the rest of the problem all the cars are
+traveling towards some destination which
+is at some target position right and
+every car that we're given has a
+position
+and it has a speed associated with it
+and remember they're all traveling in
+the same direction towards the target
+and the position and speed are given in
+their own arrays so there's two separate
+arrays given for b for each of these and
+the important thing is that a car can
+never pass another car that's because we
+have one lane in the road right so
+imagine we have two cars like these you
+know this one's traveling and then this
+one's traveling right let's say this
+one's traveling at 10 miles per hour and
+the other one is traveling 20 miles per
+hour of course the faster one is
+eventually gonna catch up to the slower
+one but since they're in the same road
+even when they do catch up that faster
+one uh is just going to be traveling
+right next to the slower one right so
+the slower one was traveling at 10 once
+the fast one catches up its speed is
+going to be reduced to 10 because it
+can't pass the one that's ahead of it so
+once cars are basically traveling right
+next to each other that is called a car
+fleet and
+and by the way if these cars are right
+next to each other they're basically
+assumed to have the same exact position
+even though technically one is behind
+the other one they still are considered
+to have the same position uh that's what
+they mentioned right here and they also
+mentioned a car fleet is just some
+non-empty set of cars that are basically
+at the same position traveling at the
+same speed and by the way even a single
+car can be considered a car fleet so and
+the last edge case you might be
+wondering is if what if a car catches up
+right at the moment that they both
+arrive at the destination point because
+remember once they arrive at the
+destination they're going to stop so
+what if a car catches up exactly at the
+destination well they're considered a
+car fleet and what we want to do
+is determine the total number of car
+fleets that will arrive at the
+destination so you know in this case for
+example this example problem we're given
+five cars right so initially we have
+five car fleets but when they actually
+arrive at the destination which in this
+case is at position 12 then they are
+going to be reduced down to three car
+fleets okay so now let's try to figure
+out how we can actually solve this
+problem and let's take a look at our own
+example so here you can see i'm
+basically combining the two arrays that
+they give us i know they give us a
+separate array for position and speed
+but i'm just going to combine it into an
+array of pairs so this pair represents
+uh you know the first is the position
+next is the speed so this is at position
+three with speed three this is at
+position five with speed two this is at
+position seven with speed one
+and our target in this case is ten so
+i'm gonna actually explain this problem
+in a way that you might not expect
+because when you actually think about
+what these cars are they're literally
+just a system of linear equations right
+we have the time on one axis
+and we have the position on another axis
+right and if we take a single example
+such as this one right it starts at
+position three so position three is over
+here on the chart and it has a speed of
+three what does the speed mean it means
+that the slope is going to be three
+right so every unit of time that passes
+it will be in
+three positions ahead right so in one
+second it'll be at position six in two
+seconds it'll be at position nine excuse
+my kind of bad drawing here and then at
+time 3 it'll be at position 12. so
+basically it reaches it reaches the
+destination 10 right remember 10 is our
+destination it reaches it at let's say
+two point something seconds right and we
+could calculate that if we really want
+to pretty easily it's just a linear
+equation but i'm just drawing it out
+just so you kind of get an idea of
+what's going on here so now let's do
+this one seven one and let's use a
+different color just to kind of
+illustrate things so it starts at
+position seven and it has a slope of one
+so each unit of time is just going to go
+up one position so at time three is when
+it's going to uh reach the destination
+right so we can draw a
+you know line like this one and what you
+can already tell
+from this drawing is these intersect
+here right they intersect before they
+reach the destination what does that
+tell us that tells us that they are
+going to become a car fleet this orange
+one and the blue one right they
+intersected over here before the orange
+one reached the destination over here so
+what's actually going to happen with
+this orange one this part of the drawing
+is is not going to happen right
+because once they do intersect over here
+the orange one is going to travel at the
+same speed as the blue one because it
+can't pass the blue one right on the
+drawing we showed that the orange one
+passed the blue one but that's that's
+impossible in the context of this
+problem right so a better uh drawing for
+the orange one would have been something
+like this
+right like it starts at a high slope but
+then it slows down and just to finish up
+the drawing so this other one five two
+it starts at position five it has a
+slope of two so by the time it reaches
+the destination it'll be at 2.5 which is
+about over here i think so let's just
+draw a continuous line and even though
+it's kind of hard to draw a straight
+line here but you can see again these
+intersected as well right so that must
+mean since all three of them intersected
+that must mean that we're gonna have a
+single car fleet right and that's pretty
+obvious when you look at a drawing and
+actually when we look closer at the
+drawing we see that the orange one
+intersected with the green one before it
+intersects with the blue one so actually
+when the orange one intersects here it's
+actually going to be traveling at the
+same rate as the uh green one
+and you can continue with this drawing
+if it kind of gives you a good intuition
+of the problem i just wanted to kind of
+show you like where i'm coming from with
+this problem and that i'm not just
+immediately jumping to the solution but
+knowing kind of this idea we can
+kind of get into the solution to this
+problem and we can actually do it in
+linear time so now you can see that i've
+drawn the cars and their positions in
+sorted order and that makes sense right
+wouldn't we want to go through the cars
+in sorted order because of course we
+know that they can't like the relative
+order of the cars is never gonna change
+so it makes sense to go through them in
+sorted order now for any two given cars
+such as these two how do we know if
+they're gonna intersect or you know
+they're gonna collide and become a
+single car fleet before they reach the
+destination position well basically by
+the drawing i showed you earlier if
+these two intersect each other right so
+what we could do is actually calculate
+the intersection point of these two if
+we really wanted to but there's a
+slightly easier way we can just
+calculate what time is this car going to
+reach the destination and what time is
+this car going to reach the destination
+if this car reaches the destination
+before or at the same time as this one
+that must mean that they became a car
+fleet right they became a car fleet
+somewhere in the middle somewhere in
+here so since this one is moving at one
+mile per hour and this one is moving at
+two miles per hour or whatever you know
+whatever unit of speed or something that
+they gave us we can calculate what time
+they're going to reach the destination
+we can do it pretty easily right we can
+just take the distance difference for
+you know i'm gonna do the green one
+first we can take 10 minus seven right
+that's the distance that we need to
+travel three units of distance and
+divide that by the speed in this case
+one so this is going to reach the
+destination at time equals 3. we can do
+the same thing for this one so 10 minus
+5 divided by 2 that's going to be 2.5 so
+this is going to reach the destination
+at time
+2.5 so that must mean that they are
+going to collide so we know they're
+going to be one car fleet so technically
+we can kind of just like delete one of
+these right
+and just not consider it anymore but
+which one of these two are we going to
+remove right like
+okay let's say i remove one and then you
+know i start comparing the remainder of
+the list that's on the left side well
+i'll tell you right now we're always
+gonna keep the one that comes ahead
+because if these collided they're gonna
+end up being reduced down to the speed
+of the one that's ahead right so this is
+gonna start traveling at one instead of
+two right that's gonna be the new speed
+so if we want to know if these two
+intersect it's going to be harder to
+calculate because this one is going to
+have two different speeds initially it's
+going to be 2 but at some portion it's
+going to change to 1. so it's easier if
+we
+keep this one because this one is always
+going to be traveling at speed one and
+one more thing we're actually we're not
+going to go from left to right we're
+going to go from right to left when we
+do this operation and the reason is
+pretty much the same because if we
+started at the beginning and then we
+were checking okay do does this one
+collide with the blue one well we don't
+even know what speed the blue one is
+going to be traveling throughout the
+whole thing we can't just assume it's
+traveling at speed two the entire time
+because it could collide with somebody
+else and slow down that's why it's
+better to start from the right and then
+iterate through this in reverse order
+okay now and just to complete the
+example so we know that this is going to
+end up colliding with this one so we can
+just assume that this car is a single
+car fleet we have one more car over here
+and it's traveling at speed three so now
+we wanna know is this one going to
+collide with this one we already know
+what time this is gonna reach the
+destination let's calculate the time
+this is gonna reach the destination so
+we can do 10 minus three so that's seven
+divided by three that's going to be two
+point something right let's just say two
+point i think it's 2.3 or something but
+it's not too important but we know that
+this uh since it has a smaller time than
+the one ahead of it then they are going
+to collide and remember which one of
+them are we gonna delete we are gonna
+delete
+this one because it's the one that's
+behind okay so before we get into the
+code just to mention the overall time
+complexity of this portion of the
+algorithm where we're actually going
+through the cars is big o of n but of
+course we know we actually have to sort
+the input based on the position so
+that's going to make the overall time
+complexity end up being n log n uh and
+the extra space is just going to be big
+o of n
+because we're going to be creating a
+separate array but we're also going to
+be using a stack just to give you a
+preview of how we're going to be doing
+this so so just to let you know
+initially our stack is going to be empty
+we're going to go through this in
+reverse order so first car we're going
+to go ahead and add it to the stack okay
+next car we're going to go ahead and
+take this and then add it to the top of
+the stack but then we're going to
+compare
+this car with the other car that's
+adjacent to it on the stack right both
+of these are going to be on the stack if
+they collide with each other which we
+can calculate pretty easily then we're
+going to remove the one that's on the
+top of the stack
+this one is the one that's on the top of
+the stack so this is the one we're going
+to pop from the stack and that's how
+we're going to do the algorithm so you
+know assuming we pop this from the stack
+but then we add this one and and then we
+end up popping this one as well what
+we're going to end up returning is the
+number of car fleets that actually exist
+at the end of the entire algorithm which
+we can get easily because we can just
+take the length of our stack and that'll
+tell us how many car fleets we actually
+have and it's just going to be a single
+one in this example problem so now let's
+get into the code okay now let's write
+the code i love problems like these
+where we can spend most of our time
+actually explaining it and talking about
+it and then the code becomes easy the
+first thing i'm going to do is just kind
+of create an array of pairs uh in python
+it's pretty easy to do i'm just going to
+iterate through both of the position and
+speed array simultaneously i can do that
+with zip but you can you know instead of
+using an array of pairs you can also
+just uh have like a hash map or
+something and then just sort the
+positions if you want i'm doing it this
+way because it's easiest but you can do
+it how you'd like this is i think called
+list comprehension in python if you want
+to google it we're just creating an
+array of pairs but next we don't want to
+forget to actually sort that array of
+pairs so actually
+when we go ahead and iterate through the
+array of pairs p
+position and speed in
+sorted pair and so we can iterate
+through this sorted but we also want to
+make sure we iterate through it in
+reverse order in python that's pretty
+easy to do just like this so just to
+clarify what we're doing is reverse
+sorted order and we need one more
+data structure just our stack which will
+tell us how many car fleets we have at
+the end okay so we're going through
+every single car remember when we get to
+a car we want to know what time is it
+going to reach the destination we can
+get that easily just by taking target
+minus the position of this car and then
+dividing that by the speed in python
+this is decimal division and that's very
+important because we know the time could
+be a decimal we don't want to make an
+integer of it we don't want to make an
+integer division by adding two slashes
+so we're going to take this time and
+we're going to go ahead and append it to
+our stack
+and once we've appended it to our stack
+whoops there's a little typo we want to
+know does it overlap with the other one
+at the top of our stack so first we want
+to make sure that our stack has at least
+two elements in it because if it just
+has one element just one car then we
+don't really need to do anything
+but if it has at least two cars it could
+be possible that we have a collision so
+if the
+the time that the top of our stack at
+index negative one that's how you can
+get to the top of the stack in python if
+it reaches the destination before the
+one that's ahead of it at index negative
+two like if the time of it is less than
+the next one that must mean they collide
+that must mean we have to pop from the
+stop of the stack and by doing that
+we're decreasing the number of car
+fleets if we don't pop then we leave it
+as it is and in case i didn't explain
+this earlier you might be wondering why
+is this an if statement rather than a
+while loop and let me explain that for a
+second suppose that this is our stack
+right we have three elements so and when
+we get to this one right and we find
+that okay this collides with this one
+right so then what are we gonna do we're
+just gonna pop this from our stack right
+but then you might be thinking okay well
+what if this one collides with this one
+right then we have to also remove this
+one don't we but you're you might be
+forgetting that we already probably
+checked that condition because we're
+traversing this in reverse order right
+before we even get to this car over here
+we're gonna check okay does this collide
+with anybody nope okay does this collide
+with this guy
+nope and then we get to this one and we
+find yes this one actually does collide
+with this guy but that's okay because
+just because it collides with this it'll
+never collide with the next one because
+once it does collide with the blue one
+these two will be traveling at the same
+speed and we determined that this won't
+collide with that so it's impossible for
+this to collide with this one so that's
+why we're doing it this way and that's
+actually all we have to do after we're
+done with that we can just go ahead and
+return the length of the stack and let's
+run this to make sure that it works and
+as you can see on the left it does work
+and it's relatively efficient so i
+really hope that this was helpful if it
+was please like and subscribe it really
+supports the channel a lot consider
+checking out my patreon where you can
+further support the channel if you would
+like and hopefully i'll see you pretty

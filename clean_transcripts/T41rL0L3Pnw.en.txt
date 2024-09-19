@@ -1,0 +1,493 @@
+hey everyone welcome back and let's
+write some more neat code today
+so today let's look at set matrix zeros
+we are given an m by n matrix
+and we want to go through every element
+if we see that an element is zero we're
+gonna set the entire row
+and the entire column to zero so for
+example we're given
+a grid there's only one zero so what are
+we gonna do we're gonna set everything
+in the column to zero we're gonna set
+everything
+in the row to zero and then we see
+the output is exactly that right we got
+some
+zeros and then this is going to be our
+output
+and as you can see there's a bunch of
+ways to solve this problem
+with better and better complexities so
+i'm gonna
+show you the like bad solutions and then
+show you how you can use that to get the
+best solution
+because it's actually pretty intuitive
+so first
+let's say that this is our input array
+and
+we declare a copy of that array
+a copy of that matrix right so
+then we can what we can do is go through
+every position right so
+the first one is a one so we don't have
+to do anything then
+we get a zero what does that tell us
+that tells us
+that the entire column is going to be
+set to zero
+and the row is going to be set to zero
+so why can't we just do that in place
+like why can't i just put a zero here
+and then a zero here and now a zero here
+right
+because because there there's actually a
+good reason because
+so far we've checked off these spots we
+checked off
+this spot now we're over here right but
+we replaced that
+one with a zero now so now we're going
+to end up
+making this a zero and this is zero but
+that's not
+really what we want to do and that's the
+reason why we start off with a copy
+so when we make changes we're going to
+make changes to
+our copy and when we read the values
+we're going to read from our input so
+remember
+we did see a zero over here so
+in the copy we are gonna update
+the entire row so this is gonna be a
+zero
+this is gonna be a zero so every value
+in the row but we also have to do the
+column
+we see this is already a zero but this
+is gonna be changed so now we made
+changes to the copy so this is a zero
+but we see that this is still
+a one right because because now when we
+go to the next position which is this we
+see it's a one
+so we don't actually have to modify
+this column and this road
+right because we haven't even read this
+value yet
+and now we're just gonna continue so
+this is the next position
+in our matrix it's a one so we don't
+have to do anything
+and this is the next one it's a zero so
+it's time to
+set the entire column to zero and set
+the entire
+row to zero so in our copy we
+see that we actually already did this
+column so
+this is kind of an example of the
+repeated work that we're having to do
+right it kind of shows you that maybe
+having a copy
+is not the best solution but we still
+need to update the row so we're gonna
+change this to a zero
+and we're gonna change this to a zero so
+next we go to
+this position it's a one we don't have
+to do anything
+and then we go to the next position this
+is a zero so it's time to make some
+changes
+we're gonna set the entire column to
+zero and we're gonna set the entire
+row to zero in our copy so we see that
+this is already a zero so this is the
+only other value
+in the output that needs to be changed
+to zero
+and we see that the column has already
+been set to zero so clearly having a
+copy
+of the input array takes m by n memory
+and it's also not the most time
+efficient algorithm
+either so how can we do better we're
+noticing for
+every single cell in our input we're
+potentially having to update an
+entire row and an entire column
+can we prevent this repeated work yes
+i'm going to show you how so
+we see that we actually have a fixed
+amount of
+rows right let's call that m we have a
+fixed amount
+of columns n so worst case scenario
+all we're gonna have to do is make sure
+that every
+row is set to zero and then every column
+is set to zero so as we iterate
+through every single value in our input
+let's not update the copy we
+actually don't need the copy
+we need less memory we can have one
+array for the number
+of columns and one array for the number
+of
+rows and then we can mark these whether
+we want to
+fill in zeros or not and then at the
+end we can actually fill in the zeros
+in our input array without even needing
+a copy
+so let me show you this algorithm so we
+have a one
+so we don't have to do anything so this
+empty indicates that we don't have to uh
+zero the row or the column
+next we see a zero so what are we going
+to do well we're gonna
+say okay in this column we're gonna fill
+it
+we're gonna fill it with zero so this is
+some work that we have to do
+in this row we are going to fill it with
+zeros but we're not gonna do it yet
+because we don't want to
+overwrite this value that we haven't
+even visited yet and we definitely don't
+want to overwrite this value
+yet which we haven't visited yet next we
+go to this position it's a 1 so we don't
+have to do anything
+this is also a one this is a zero so
+technically we have to mark this spot
+but we already did that we already know
+this column is going to be set to zero
+but we want to say that this row needs
+to be set to zero
+we're not going to fill the zeros yet
+but we're definitely gonna mark it
+so this is a one we don't do anything
+this is a zero
+we know that this column has to be set
+to zero
+and this row has to be set
+to zero now technically we see that
+every row is gonna be set to zero so
+so therefore like the entire matrix is
+just gonna be zero but
+we're still gonna continue our algorithm
+so this is a one we don't have to do
+anything
+this is a one we don't have to do
+anything so now what we're gonna do
+is we're gonna look at this memory and
+it's gonna tell us which columns need to
+be set to zero so we see the first
+column does need to be set to zero
+we're gonna do that the second column
+needs to be set to zero
+we're gonna do that the third column
+does not need to be set to zero
+next we look at the rows the first row
+needs to be set to zero we mostly
+already did that but
+don't forget about this one the second
+row is going to be set to zero
+the third row is going to be set to zero
+and obviously the entire matrix is now
+zero but
+the advantage of this is the memory we
+used
+we didn't need to create an entire copy
+we just needed
+two arrays so the memory complexity is
+actually
+big o m plus n where these are the
+dimensions
+the time complexity is m
+by n because we're really just iterating
+over the entire matrix
+at most three times one where we iterate
+through every position
+one where we fill in the columns and
+another time where we fill in the rows
+and i didn't tell you the time
+complexity of this one but it is
+actually greater than the time
+complexity
+of this so this is actually a better
+time
+solution and a better memory solution
+now my only
+question is can we get a o of
+one memory solution we know the time
+the best time complexity we can do is m
+by n because we do
+have to iterate through every single
+position in
+the matrix but we can save some space
+is it possible yes i'm going to show you
+how
+is there a way where we can take this
+array
+and put it into the matrix so we're we
+can do this in
+place is that possible if i put that
+over here is it possible for
+us to take this uh array
+and put it in to
+our matrix the answer is yes we can take
+these two arrays that we have and put
+them
+in our matrix so we do this in place
+with
+o of one memory but you see just one
+problem
+right just one little problem notice
+how this position is overlapping the two
+arrays are overlapping in this position
+so we
+we do need a tiny bit more memory we
+just need
+one more uh cell right we just need one
+more
+variable but we know that that's still
+big o
+of one so i'm actually for the purple
+one which tells us which rows we need to
+zero i'm going to
+have it be one less we don't want them
+to overlap
+so we can get rid of this we don't
+actually need the extra memory
+from these input arrays we don't need
+this extra memory but we do need this
+one
+single last cell because we see that
+there's no room for it over here the
+green one
+took that from us so you can see this is
+big o
+of one memory right we're just using one
+extra cell that's constant memory
+and so this is going to tell us whether
+we need to zero out the first
+row or not so now we're just going to
+run through
+the matrix for the third and last time
+so this is a one we don't have to do
+anything
+this is a zero so what are we gonna do
+we're gonna mark
+this cell and how are we gonna mark it
+well we're gonna set
+this to zero which it already is right
+and we're gonna set this to zero
+indicating that this
+row needs to be zeroed out this
+zero tells us that this column needs to
+be zeroed out
+next we go to this cell it's a one great
+we don't have to do anything
+this is a one great we don't have to do
+anything this is a zero
+so what are we gonna do well we're gonna
+set
+this cell to zero to indicate that this
+column needs to be zeroed out but it's
+already zero good for
+us but we also need to set
+this to zero to tell us that this
+row needs to be zeroed out and you see
+why this solution works right so now
+we're gonna set this to zero
+and that's okay for us because we
+already
+visited that cell we already saw that it
+initially had a one
+so we can overwrite it we're allowed to
+do that
+the reason this works is we start at the
+top
+left over here and then work our way
+down right we start here
+and work our way top to bottom left
+to right so now we visit this cell it's
+a one
+nothing to do we visit this zero so we
+got
+we got some work to do we need to set
+this top value to zero to indicate that
+this column needs to be zeroed out
+and we need to set this position to zero
+to indicate that the row needs to be
+zeroed out but it's already zero
+which is good for us so now we get a one
+nothing to do we get another one nothing
+to do
+okay so now that we know we know which
+rows
+we need to zero out and we know which
+columns we have to zero out so all we
+have to do is fill in those zeros
+so we start we start here we know this
+entire
+column needs to be zero it already is we
+know this column needs to be zero it
+mostly is we just have to change this
+last value
+this is a one so we don't have to zero
+out this column
+next let's go through the rows so this
+row needs to be zeroed out so we can
+change this
+to a zero this row needs to be zeroed
+out
+so we can change this to a zero the
+third row
+also needs to be zeroed out so we can
+change
+this to a zero now the entire thing is
+zero which is the result that we
+expected
+but the good thing about the solution is
+we did it
+in place all we really needed was one
+extra variable so with all that being
+said let's
+finally write the big o of
+one memory solution so the first thing
+i'm just gonna do is
+get the number of rows and columns and
+put them in some variables so we don't
+have to
+keep computing that we can get the
+length of the matrix and get the length
+of the first
+row of the matrix which tells us the
+number of columns
+remember we don't need extra arrays but
+we just
+need one extra variable to tell us if
+the first row is
+zero or not so initially i'm going to
+set this
+to false to say that the first row is
+not zero but we'll
+update it to true if we need to so
+remember that the first thing we want to
+know is
+determine which rows and columns
+need to be zeroed so we can
+iterate through every position in our
+cell
+so we're gonna go through every row and
+we're gonna go through
+every column if we ever find a
+value that is zeros in this case
+what we so if we find a zero what are we
+gonna do we're gonna
+set the first row so row
+zero in this column we're going to set
+that value
+to zero what we also want to do is
+in the first column so
+column is zero we want to set that
+row position to zero as well
+but just one catch we cannot set that
+for the top leftmost position so
+only we're only gonna do this if row
+is greater than zero because remember
+for row 0 we
+actually have a dedicated value so
+if rho 0 is greater than 0 then we do
+this
+but otherwise we're going to actually
+update
+this value our boolean so
+we're going to set that to true and so
+that's
+it we're just marking which rows and
+columns to zero
+out so now the way i'm actually going to
+zero them out is going to be a little
+bit different than how i showed in the
+picture i'm actually gonna go through
+every position one more time
+so every uh row column pair and i'm
+gonna check
+for each position so for this row column
+pair is
+the do we need to zero it out and how do
+we know if we're gonna zero it out
+well see up here we would set the first
+row to zero so if
+the first row value is zero that means
+that we're going to zero this out but
+also
+if the column is zero so if
+matrix of the first column
+of this row is equal to zero
+then in either of these cases we wanna
+set
+the current position that we're at to
+zero
+and so we cannot actually just do this
+by iterating through every row column
+we have to actually skip the first row
+and we have to skip the first column
+because we're gonna handle that after so
+now that we zeroed out
+the main part of our matrix we can
+potentially
+zero out the first row and the first
+column if we need to so
+for we're gonna check if the
+origin of our matrix is zero
+so remember the first row of the matrix
+tells us
+which columns we can zero out so if this
+is equal to zero that means we can set
+every
+value we can set every value
+in our matrix in the first column
+so i'm gonna say column is zero
+so if the first column in the first row
+is zero
+then every value so what we're doing
+here is basically zeroing out the first
+column of our matrix and
+last but not least we have to take a
+look at
+our last uh variable that we declared so
+row zero this tells us if we're going to
+zero out the first
+row so if row zero is true
+meaning we have to zero out the first
+row we're gonna go through every
+value in the first row
+and zero it out so matrix of the first
+row
+row index zero and every position in
+that row
+we're gonna zero it out so that's the
+algorithm
+first we've determined which rows and
+columns to zero out
+then we zero out most of them
+then we zero out the first column
+if we need to and lastly we zero out the
+first
+row if we need to and we don't have to
+return anything
+because we did this in place which is
+what the problem wanted us to do
+okay i'm so dumb i don't know why i
+didn't finish this line of code don't
+forget to

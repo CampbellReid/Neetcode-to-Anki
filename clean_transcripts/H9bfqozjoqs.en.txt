@@ -1,0 +1,531 @@
+hey everyone welcome back and let's
+write some more neat code today today
+let's solve another
+classic dynamic programming problem coin
+change
+and we get a pretty simple uh
+description so we're given a list of
+coins
+of different values and we're also given
+a total amount
+of money that we want to sum up to but
+we
+want to use the fewest number of coins
+possible to make up or to sum up to that
+amount
+and it's possible that that amount of
+money cannot be made up
+with any combination of the coins that
+we have
+and then we want to return negative one
+if that's the case and
+luckily for us we're actually given an
+infinite number of each coin so
+in the first example we have coins of
+value 1
+2 and 5 and we have infinite quantities
+of these coins the amount that we want
+to sum up to
+is 11 and basically you know just look
+at this
+what's the fewest number of coins we
+could do well
+of course we want to use a five because
+it's the biggest one we can use another
+five
+and then we just need a one left if we
+want to sum up to 11.
+so in this case you can see we only
+needed three coins
+these this is the fewest number of coins
+we needed so we can return
+three in the second example we have a
+coin of value two
+but we want to sum up to three we can
+try two plus two but we know that's
+four so we went over three so there's no
+way to
+possibly sum up to three so we return
+negative one there's no possible
+solution
+so your first idea might be can we just
+be
+greedy is the problem that easy can we
+just
+be greedy and let's look at this example
+so let's say these are our coins one
+three
+four five and we want to sum up to seven
+so when i say greedy i mean okay we
+wanna sum up to seven let's just start
+at the biggest coin we have
+so let's start at five so now let's look
+at the biggest coin again
+five if we add a five here we know we're
+going over
+we're going over the total amount seven
+right so we don't add another five
+well let's look at the four well we know
+five plus 4 is
+also going to be more than 7 5 plus
+3 is going to be more than 7. okay but
+we found a 1. luckily we have a 1. so
+let's add 1 to it now we're at
+6. so let's add a second one
+now we got to the sum seven so we
+basically went down
+from the biggest smallest coin values
+right that's what i mean when i say
+greedy let's pick the biggest one
+possible
+first so notice that this took us
+three coin values right so our result in
+this case would be three but
+is that the minimum amount of coins the
+answer is
+no because you know just looking at it
+we can tell
+we got a three and we have a
+four three plus four is seven
+that means the minimum amount of coins
+is actually
+two so this is a counter example we
+cannot be
+greedy if we want to solve it so the
+next thing you might try is like a brute
+force solution right so to do the brute
+force solution we need to implement
+some kind of depth first search or
+backtracking solution
+right so let's look at the same example
+one three four
+five and amount sum to seven so what
+would a backtracking solution
+even look like for this problem well
+it's gonna be brute force right so
+so we have four coin values so that
+means in our decision tree we have four
+possible choices
+we can choose a one we can choose a
+three
+we can choose a four or we can choose a
+five
+in this case the remaining amount would
+be six
+because seven minus one is six in this
+case the remaining amount that we have
+to compute
+would be four because we're taking seven
+minus three which is the coin that we
+chose
+so we get four as the remaining amount
+right
+in this case we would have a three and
+in this case we would have a remaining
+amount of
+two so since none of these are zero
+once we get to zero we know that that
+we've computed
+the total amount that we want but right
+now we have to continue going right we
+have to continue doing the brute force
+approach
+let's start at this side right now so we
+still have
+four coins right we have unlimited
+quantity so we can choose
+the coin one we can choose a three we
+can choose a four
+or we can choose a five if we choose a
+one we'll have a remaining amount of
+one if we choose a three we're going to
+get a
+negative one what does that tell us that
+tells us
+if we chose a five coin and we chose a
+three coin
+then we get to a negative value that
+means
+five plus three cannot be the amount
+so we don't have to keep searching here
+we can stop right we got to a negative
+value
+if we keep adding values to it it's just
+going to become more and more
+negative right and you can probably
+notice that
+since these values are even greater 2
+minus 4 is going to be negative 2
+2 minus 5 is going to be negative 3. so
+we can't go down these paths either we
+don't have to
+search them anymore and so now here
+we're gonna see
+okay we can choose a one coin of course
+we can choose a
+three four and five but we can see from
+here
+that that's not gonna work that's gonna
+lead us to a negative
+value anyway if we choose a one
+over here then we know we're going to
+finally get to a zero
+so this is what we want right we took a
+five
+from up here we took a one from over
+here
+and we took a third one right so then if
+we
+count how many coins we chose
+down this path we know we get three
+coins right
+and we get to a zero so of course we
+don't have to keep searching anymore
+so we found one possible way where we
+can
+sum up to the amount seven we know it
+has three coins which
+you know from the previous example we
+know that that's not the minimum amount
+of coins
+but we found an algorithm that at least
+tells us
+a possible solution so we can kind of
+keep track of that the minimum coins
+we can set to three so now i'm gonna
+show you what happens when we go down
+this tree path
+even though we know that the solution is
+actually three plus four which is two
+coins
+which either of these is gonna get us to
+the correct solution i'm gonna show you
+what happens when we go down
+this one anyway so we can choose a coin
+one
+three four or five so if we go down this
+path
+we will have a remaining amount of five
+here we'll have a remaining amount of
+three
+here we'll have a remaining amount of
+two here we'll have a remaining amount
+of 1. do you kind of see how we're
+taking
+the original problem which is 7
+and then breaking it down into sub
+problems
+like 6 and then breaking it down even
+further into five and not only that we
+have sub problems yes
+but do you also see that these sub
+problems are repeating themselves here
+we have a remaining amount of
+one here we also have a remaining amount
+of one
+so do we even have to compute this path
+because we already know if we have an
+amount one
+it takes only a single coin
+for us to be able to reduce it to the
+amount
+zero which is what we're looking for so
+since
+this sub problem repeats i don't have to
+compute it
+i can just borrow from over here
+so in that case we see the same thing
+happened though
+we use a coin one and we get zero and we
+see that okay it took
+three coins for us to get to zero right
+we took a one
+a five and another one from over here so
+basically we got the same thing that
+happened
+over here just in a different order and
+just to make this a little less messy
+i'm just gonna tell you that none of
+these are going to lead us to the
+optimal solution
+so now let's look at this case we have a
+remaining amount of four
+how many coins does it take for us to
+get an amount for well let's brute force
+it let's check
+every possible combination here we'll
+get a
+one here we'll get the value we're
+looking for zero that's great but let's
+just look at this last one
+with five we'll get a negative one
+meaning we can stop
+searching so this is awesome we got a
+zero and let's count how many coins did
+it take us to
+get to this zero we took one four and we
+took a
+three so this path is only
+two coins long we see our minimum is
+currently
+three but we can actually replace this
+now with a
+two because two is the minimum number of
+coins
+needed to total to amount seven
+so we know this is the correct answer
+but let's just see what happens with the
+remaining stuff
+so first let me just look at this one we
+see we actually
+already solved this sub problem over
+here
+so we don't really need to solve it
+again we know it takes
+one coin for us to go from one to zero
+and what about this three okay well we
+can do
+the same thing right one three four
+five and i'll just tell you from here
+we're not going to find the optimal
+solution going from
+four to three and more that's going to
+obviously be more
+than the current minimum of coins that
+we have which is two right now
+so this is not going to lead us to the
+correct solution
+but you see that once we compute
+this stuff then we have one last
+subtree over here right this original
+three
+but once we already solved the sub
+problems of this
+do we really have to solve the sub
+problems here
+no if we store it in memory if we have
+like a cache
+or you can call it dp we do not have to
+repeat these sub
+problems so the way i just solved this
+was called top down or top down
+memoization
+because we're doing it recursively but
+you can actually solve this
+with a true dynamic programming solution
+which
+is bottom up and it means exactly what
+it says so
+bottom up basically instead of
+solving the original problem where the
+amount is seven we
+solve it in reverse order we start at
+the smallest one which is
+zero right this zero over here so we
+wanna know what's the minimum number of
+coins
+we can call it dp of zero so
+for amount equals zero what's the
+minimum number of coins
+for us to sum to zero
+well we know it just takes zero coins
+right
+what about if we wanna know what's the
+minimum number of coins
+for summing to one well we can
+look at our coins we got a one a three a
+four and a five
+these will all cause it to be greater
+than one but we just want a
+one so we can take just this meaning it
+only takes us
+one coin to sum to 1. and then we can
+just repeat that process right so for
+a dp of 2 so we want how many coins
+does it take for us to sum to 2 well
+we got 4 coins right these 3 will cause
+it to be greater than two so we don't
+use those
+but what about this one okay we get a
+one
+so it takes one coin to sum to one but
+that's something we already
+knew so if we want to compute dp
+of two we can take one
+plus dp of one
+because we know these three coins are
+going to be too
+big but we have a one over here
+that's value one and we also know
+that that's not enough right two minus
+one
+still leaves us with a remaining amount
+of one but we just computed that
+up here we know for us to get the
+minimum number of coins
+to get a value one it only takes
+one coin so that means that if we want
+to get amount two it takes at least two
+coins
+and let's say we repeat this process for
+all values for all amounts from
+from all the way starting at zero all
+the way
+to seven over here so i computed it from
+all the way from zero to six but the
+last one we really
+really want is amount equals seven so
+let's compute that
+dp of seven how do we get it
+well we still kind of have to check
+every single coin so
+what happens if we get coin one
+then we are com then we take the result
+of one meaning that's how many coins we
+use not the value one
+because we needed one coin with a value
+one and now we have a remaining amount
+of
+six right dp of six so how many coins
+did it take
+for us to compute dp of six well we
+already computed that it took
+two so we get one plus two
+equals three so that's one possible
+solution but is it the minimal solution
+well let's look at if we use the coin
+value three over here well it takes us
+one coin so we take one plus
+dp of four because that's the remaining
+amount we have to use
+if we take a coin value of three and
+lucky luckily we already computed dp
+of four it is one so then we get one
+plus
+one equals two and we know that
+this is the real result that we want
+but even before we know that we would
+repeat this
+process so technically if we do the
+bottom-up
+dynamic programming solution we are
+going to repeat this for the remaining
+two coins so for four we would get one
+so we'd have one plus dp of three
+because four
+minor because seven minus four would
+leave us with a remaining amount of
+three
+and in that case we know dp of three is
+one so we would have the total of two
+again so we see that there are actually
+two solutions
+and we know we have one last coin that
+we technically have to check
+coin five so we'd use one coin for value
+five
+and then the remaining amount we'd wanna
+compute is dp of 2
+and we know that dp of 2 is value 2 so
+this would result in a
+3 which is not what we want right so
+from these 4 values that we computed
+we want to take the minimum which we
+know is 2
+so we can return 2 in this case
+so that took us forever but luckily the
+code is a lot shorter so just like we
+showed i'm gonna have a dp array and
+i'm gonna initialize this to be
+length of amount plus one because
+we are going from zero
+all the way to amount and the default
+value i'm gonna give each uh element in
+this array is amount
+plus one or you can do like
+infinity or whatever the max in is like
+math.max integer or whatever
+in your language but amount plus one is
+basically a max value
+anyway and we know that the base case
+for this
+is a dp of zero meaning if we want to
+compute
+amount zero that it only takes zero
+coins
+and now we're going to start computing
+every value in dp
+so for every amount a in
+range and we're going to do this in
+reverse order not
+or rather bottom up so we're gonna go
+from one
+all the way to the amount and we
+technically
+are still doing it in a brute force way
+so we
+are gonna go through every coin so for
+coin
+in our list of coins so we're trying to
+compute
+this a amount so we're gonna take
+a and subtract the current coin that
+we're looking at
+if this is non-negative
+so if it's greater than or equal to zero
+that means we can
+kind of continue searching right so this
+means
+we possibly found a solution for our dp
+so for this amount a we're going to set
+it to the minimum
+of itself and 1
+plus dp of a
+minus c so this 1 comes
+from this current coin that we're using
+c and dp of
+a minus c comes from for example
+let's say our coin value was four
+and our amount that we're trying to
+compute a is
+seven basically we're saying dp of
+seven is equal to one
+plus dp of
+three because seven minus four
+is three so we're saying that this is a
+possible solution
+and actually that's the only thing that
+we have to do
+this is basically it this is like what's
+called the recurrence relation
+and so now the only thing we have to do
+is return what we're looking for so dp
+of amount so this is what we have to
+return but
+we remember one last edge case if we
+could not compute the amount
+meaning if so we can only return this
+if if the value that's stored
+is not the default value so if it's
+not equal to amount plus one right which
+was the default value that we
+gave it so we'll return this if it's not
+the default value
+otherwise we're gonna have to return
+negative one meaning we could not
+compute this amount with the given coins
+so this solution does work and even
+though
+it's pretty efficient the time
+complexity is actually
+big o the amount that we're given
+multiplied the number of
+coins that we're given and the memory
+complexity is
+big o amount because we see we have a dp
+array that we're having a potential
+value for every single
+amount so i hope this was helpful if you
+enjoyed
+please like and subscribe it supports
+the channel a lot and i'll hopefully

@@ -1,0 +1,2144 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.160 --> 00:00:01.990 align:start position:0%
+ 
+hey<00:00:00.399><c> everyone</c><00:00:00.960><c> welcome</c><00:00:01.360><c> back</c><00:00:01.680><c> and</c><00:00:01.760><c> let's</c>
+
+00:00:01.990 --> 00:00:02.000 align:start position:0%
+hey everyone welcome back and let's
+ 
+
+00:00:02.000 --> 00:00:04.150 align:start position:0%
+hey everyone welcome back and let's
+write<00:00:02.240><c> some</c><00:00:02.480><c> more</c><00:00:02.800><c> neat</c><00:00:03.040><c> code</c><00:00:03.280><c> today</c><00:00:03.679><c> so</c><00:00:03.840><c> today</c>
+
+00:00:04.150 --> 00:00:04.160 align:start position:0%
+write some more neat code today so today
+ 
+
+00:00:04.160 --> 00:00:06.550 align:start position:0%
+write some more neat code today so today
+we're<00:00:04.319><c> going</c><00:00:04.400><c> to</c><00:00:04.560><c> look</c><00:00:04.799><c> at</c><00:00:05.040><c> leak</c><00:00:05.279><c> code</c><00:00:05.600><c> 202</c>
+
+00:00:06.550 --> 00:00:06.560 align:start position:0%
+we're going to look at leak code 202
+ 
+
+00:00:06.560 --> 00:00:10.470 align:start position:0%
+we're going to look at leak code 202
+happy<00:00:07.120><c> number</c><00:00:08.559><c> so</c><00:00:09.360><c> what</c><00:00:09.679><c> makes</c><00:00:10.000><c> a</c><00:00:10.080><c> number</c>
+
+00:00:10.470 --> 00:00:10.480 align:start position:0%
+happy number so what makes a number
+ 
+
+00:00:10.480 --> 00:00:11.110 align:start position:0%
+happy number so what makes a number
+happy
+
+00:00:11.110 --> 00:00:11.120 align:start position:0%
+happy
+ 
+
+00:00:11.120 --> 00:00:13.509 align:start position:0%
+happy
+they<00:00:11.360><c> explain</c><00:00:11.759><c> it</c><00:00:11.920><c> to</c><00:00:12.160><c> us</c><00:00:12.559><c> in</c><00:00:12.880><c> the</c><00:00:13.120><c> problem</c>
+
+00:00:13.509 --> 00:00:13.519 align:start position:0%
+they explain it to us in the problem
+ 
+
+00:00:13.519 --> 00:00:14.310 align:start position:0%
+they explain it to us in the problem
+statement
+
+00:00:14.310 --> 00:00:14.320 align:start position:0%
+statement
+ 
+
+00:00:14.320 --> 00:00:17.109 align:start position:0%
+statement
+so<00:00:14.559><c> we're</c><00:00:14.799><c> given</c><00:00:15.280><c> an</c><00:00:15.599><c> input</c><00:00:15.920><c> number</c><00:00:16.320><c> n</c><00:00:16.800><c> and</c><00:00:16.960><c> we</c>
+
+00:00:17.109 --> 00:00:17.119 align:start position:0%
+so we're given an input number n and we
+ 
+
+00:00:17.119 --> 00:00:17.910 align:start position:0%
+so we're given an input number n and we
+want<00:00:17.279><c> to</c><00:00:17.520><c> know</c>
+
+00:00:17.910 --> 00:00:17.920 align:start position:0%
+want to know
+ 
+
+00:00:17.920 --> 00:00:20.390 align:start position:0%
+want to know
+is<00:00:18.080><c> it</c><00:00:18.320><c> happy</c><00:00:18.800><c> or</c><00:00:19.119><c> not</c><00:00:19.439><c> if</c><00:00:19.600><c> it's</c><00:00:19.760><c> happy</c><00:00:20.160><c> we</c><00:00:20.320><c> can</c>
+
+00:00:20.390 --> 00:00:20.400 align:start position:0%
+is it happy or not if it's happy we can
+ 
+
+00:00:20.400 --> 00:00:21.349 align:start position:0%
+is it happy or not if it's happy we can
+return<00:00:20.880><c> true</c>
+
+00:00:21.349 --> 00:00:21.359 align:start position:0%
+return true
+ 
+
+00:00:21.359 --> 00:00:23.990 align:start position:0%
+return true
+and<00:00:21.439><c> we're</c><00:00:21.760><c> done</c><00:00:22.240><c> if</c><00:00:22.480><c> it's</c><00:00:22.640><c> not</c><00:00:22.880><c> happy</c><00:00:23.760><c> we're</c>
+
+00:00:23.990 --> 00:00:24.000 align:start position:0%
+and we're done if it's not happy we're
+ 
+
+00:00:24.000 --> 00:00:25.109 align:start position:0%
+and we're done if it's not happy we're
+going<00:00:24.160><c> to</c><00:00:24.240><c> return</c>
+
+00:00:25.109 --> 00:00:25.119 align:start position:0%
+going to return
+ 
+
+00:00:25.119 --> 00:00:27.509 align:start position:0%
+going to return
+false<00:00:25.760><c> but</c><00:00:26.000><c> how</c><00:00:26.160><c> do</c><00:00:26.320><c> you</c><00:00:26.400><c> determine</c><00:00:27.119><c> if</c><00:00:27.279><c> it's</c><00:00:27.439><c> a</c>
+
+00:00:27.509 --> 00:00:27.519 align:start position:0%
+false but how do you determine if it's a
+ 
+
+00:00:27.519 --> 00:00:28.790 align:start position:0%
+false but how do you determine if it's a
+happy<00:00:27.840><c> number</c><00:00:28.240><c> or</c><00:00:28.400><c> not</c>
+
+00:00:28.790 --> 00:00:28.800 align:start position:0%
+happy number or not
+ 
+
+00:00:28.800 --> 00:00:31.830 align:start position:0%
+happy number or not
+in<00:00:29.039><c> this</c><00:00:29.199><c> example</c><00:00:29.599><c> they</c><00:00:29.840><c> gave</c><00:00:30.080><c> us</c><00:00:30.320><c> a</c><00:00:30.480><c> nineteen</c>
+
+00:00:31.830 --> 00:00:31.840 align:start position:0%
+in this example they gave us a nineteen
+ 
+
+00:00:31.840 --> 00:00:34.150 align:start position:0%
+in this example they gave us a nineteen
+so<00:00:32.000><c> let's</c><00:00:32.239><c> work</c><00:00:32.399><c> with</c><00:00:32.640><c> that</c><00:00:33.280><c> so</c><00:00:33.600><c> all</c><00:00:33.840><c> we</c><00:00:34.000><c> need</c>
+
+00:00:34.150 --> 00:00:34.160 align:start position:0%
+so let's work with that so all we need
+ 
+
+00:00:34.160 --> 00:00:35.030 align:start position:0%
+so let's work with that so all we need
+to<00:00:34.320><c> do</c><00:00:34.559><c> is</c><00:00:34.719><c> take</c>
+
+00:00:35.030 --> 00:00:35.040 align:start position:0%
+to do is take
+ 
+
+00:00:35.040 --> 00:00:39.110 align:start position:0%
+to do is take
+each<00:00:35.280><c> digit</c><00:00:35.760><c> so</c><00:00:35.920><c> the</c><00:00:36.079><c> first</c><00:00:36.399><c> digit</c><00:00:37.760><c> one</c>
+
+00:00:39.110 --> 00:00:39.120 align:start position:0%
+each digit so the first digit one
+ 
+
+00:00:39.120 --> 00:00:42.229 align:start position:0%
+each digit so the first digit one
+square<00:00:39.600><c> it</c><00:00:40.239><c> the</c><00:00:40.399><c> second</c><00:00:40.719><c> digit</c><00:00:41.200><c> nine</c>
+
+00:00:42.229 --> 00:00:42.239 align:start position:0%
+square it the second digit nine
+ 
+
+00:00:42.239 --> 00:00:45.510 align:start position:0%
+square it the second digit nine
+square<00:00:42.840><c> it</c><00:00:44.079><c> add</c><00:00:44.399><c> them</c><00:00:44.640><c> together</c>
+
+00:00:45.510 --> 00:00:45.520 align:start position:0%
+square it add them together
+ 
+
+00:00:45.520 --> 00:00:49.190 align:start position:0%
+square it add them together
+and<00:00:45.680><c> then</c><00:00:45.840><c> compute</c><00:00:46.239><c> the</c><00:00:46.480><c> sum</c>
+
+00:00:49.190 --> 00:00:49.200 align:start position:0%
+ 
+ 
+
+00:00:49.200 --> 00:00:51.430 align:start position:0%
+ 
+but<00:00:49.360><c> we're</c><00:00:49.520><c> not</c><00:00:49.760><c> done</c><00:00:50.000><c> yet</c><00:00:50.559><c> to</c><00:00:50.719><c> determine</c><00:00:51.280><c> if</c>
+
+00:00:51.430 --> 00:00:51.440 align:start position:0%
+but we're not done yet to determine if
+ 
+
+00:00:51.440 --> 00:00:53.189 align:start position:0%
+but we're not done yet to determine if
+it's<00:00:51.680><c> actually</c><00:00:52.239><c> happy</c><00:00:52.559><c> or</c><00:00:52.719><c> not</c>
+
+00:00:53.189 --> 00:00:53.199 align:start position:0%
+it's actually happy or not
+ 
+
+00:00:53.199 --> 00:00:55.430 align:start position:0%
+it's actually happy or not
+we're<00:00:53.360><c> going</c><00:00:53.520><c> to</c><00:00:53.600><c> take</c><00:00:54.160><c> this</c><00:00:54.399><c> number</c><00:00:54.800><c> now</c><00:00:55.280><c> and</c>
+
+00:00:55.430 --> 00:00:55.440 align:start position:0%
+we're going to take this number now and
+ 
+
+00:00:55.440 --> 00:00:56.709 align:start position:0%
+we're going to take this number now and
+do<00:00:55.680><c> the</c><00:00:55.760><c> same</c><00:00:56.079><c> thing</c>
+
+00:00:56.709 --> 00:00:56.719 align:start position:0%
+do the same thing
+ 
+
+00:00:56.719 --> 00:00:58.389 align:start position:0%
+do the same thing
+and<00:00:56.879><c> we're</c><00:00:57.120><c> going</c><00:00:57.199><c> to</c><00:00:57.360><c> keep</c><00:00:57.680><c> repeating</c><00:00:58.160><c> this</c>
+
+00:00:58.389 --> 00:00:58.399 align:start position:0%
+and we're going to keep repeating this
+ 
+
+00:00:58.399 --> 00:01:00.950 align:start position:0%
+and we're going to keep repeating this
+process<00:00:58.879><c> right</c><00:00:59.120><c> so</c><00:00:59.359><c> we</c><00:00:59.520><c> would</c><00:00:59.760><c> take</c><00:01:00.000><c> 8</c><00:01:00.320><c> squared</c>
+
+00:01:00.950 --> 00:01:00.960 align:start position:0%
+process right so we would take 8 squared
+ 
+
+00:01:00.960 --> 00:01:05.910 align:start position:0%
+process right so we would take 8 squared
+plus<00:01:01.359><c> 2</c><00:01:01.600><c> squared</c><00:01:02.640><c> and</c><00:01:02.800><c> then</c><00:01:02.960><c> we</c><00:01:03.120><c> get</c><00:01:03.680><c> 68</c>
+
+00:01:05.910 --> 00:01:05.920 align:start position:0%
+plus 2 squared and then we get 68
+ 
+
+00:01:05.920 --> 00:01:08.630 align:start position:0%
+plus 2 squared and then we get 68
+and<00:01:06.080><c> we're</c><00:01:06.240><c> going</c><00:01:06.320><c> to</c><00:01:06.479><c> keep</c><00:01:06.799><c> going</c><00:01:07.200><c> now</c><00:01:08.080><c> if</c><00:01:08.479><c> the</c>
+
+00:01:08.630 --> 00:01:08.640 align:start position:0%
+and we're going to keep going now if the
+ 
+
+00:01:08.640 --> 00:01:09.750 align:start position:0%
+and we're going to keep going now if the
+number<00:01:09.119><c> reaches</c>
+
+00:01:09.750 --> 00:01:09.760 align:start position:0%
+number reaches
+ 
+
+00:01:09.760 --> 00:01:12.630 align:start position:0%
+number reaches
+a<00:01:10.159><c> 1</c><00:01:10.640><c> just</c><00:01:10.880><c> like</c><00:01:11.119><c> it</c><00:01:11.200><c> did</c><00:01:11.600><c> in</c><00:01:11.760><c> this</c><00:01:12.000><c> example</c><00:01:12.400><c> so</c>
+
+00:01:12.630 --> 00:01:12.640 align:start position:0%
+a 1 just like it did in this example so
+ 
+
+00:01:12.640 --> 00:01:13.670 align:start position:0%
+a 1 just like it did in this example so
+eventually
+
+00:01:13.670 --> 00:01:13.680 align:start position:0%
+eventually
+ 
+
+00:01:13.680 --> 00:01:15.910 align:start position:0%
+eventually
+we're<00:01:13.840><c> going</c><00:01:13.920><c> to</c><00:01:14.000><c> go</c><00:01:14.240><c> to</c><00:01:14.400><c> 68</c><00:01:15.600><c> we're</c><00:01:15.759><c> going</c><00:01:15.840><c> to</c>
+
+00:01:15.910 --> 00:01:15.920 align:start position:0%
+we're going to go to 68 we're going to
+ 
+
+00:01:15.920 --> 00:01:17.590 align:start position:0%
+we're going to go to 68 we're going to
+go<00:01:16.080><c> to</c><00:01:16.240><c> 100</c>
+
+00:01:17.590 --> 00:01:17.600 align:start position:0%
+go to 100
+ 
+
+00:01:17.600 --> 00:01:20.789 align:start position:0%
+go to 100
+and<00:01:17.759><c> then</c><00:01:18.000><c> we're</c><00:01:18.159><c> going</c><00:01:18.320><c> to</c><00:01:18.479><c> get</c><00:01:18.880><c> to</c><00:01:19.439><c> 1.</c>
+
+00:01:20.789 --> 00:01:20.799 align:start position:0%
+and then we're going to get to 1.
+ 
+
+00:01:20.799 --> 00:01:24.149 align:start position:0%
+and then we're going to get to 1.
+and<00:01:21.040><c> if</c><00:01:21.280><c> it</c><00:01:21.439><c> reaches</c><00:01:21.840><c> a</c><00:01:21.920><c> 1</c><00:01:22.240><c> like</c><00:01:22.479><c> this</c><00:01:23.439><c> then</c>
+
+00:01:24.149 --> 00:01:24.159 align:start position:0%
+and if it reaches a 1 like this then
+ 
+
+00:01:24.159 --> 00:01:26.789 align:start position:0%
+and if it reaches a 1 like this then
+it's<00:01:24.400><c> a</c><00:01:24.479><c> happy</c><00:01:24.799><c> number</c><00:01:25.439><c> if</c><00:01:25.680><c> it</c><00:01:25.920><c> doesn't</c><00:01:26.479><c> ever</c>
+
+00:01:26.789 --> 00:01:26.799 align:start position:0%
+it's a happy number if it doesn't ever
+ 
+
+00:01:26.799 --> 00:01:27.749 align:start position:0%
+it's a happy number if it doesn't ever
+reach<00:01:27.119><c> a</c><00:01:27.200><c> one</c>
+
+00:01:27.749 --> 00:01:27.759 align:start position:0%
+reach a one
+ 
+
+00:01:27.759 --> 00:01:29.749 align:start position:0%
+reach a one
+then<00:01:28.000><c> it's</c><00:01:28.320><c> not</c><00:01:28.560><c> a</c><00:01:28.640><c> happy</c><00:01:28.960><c> number</c><00:01:29.360><c> and</c><00:01:29.520><c> we're</c>
+
+00:01:29.749 --> 00:01:29.759 align:start position:0%
+then it's not a happy number and we're
+ 
+
+00:01:29.759 --> 00:01:31.429 align:start position:0%
+then it's not a happy number and we're
+going<00:01:29.840><c> to</c><00:01:29.920><c> return</c><00:01:30.400><c> false</c>
+
+00:01:31.429 --> 00:01:31.439 align:start position:0%
+going to return false
+ 
+
+00:01:31.439 --> 00:01:34.630 align:start position:0%
+going to return false
+but<00:01:31.680><c> they</c><00:01:31.920><c> also</c><00:01:32.320><c> tell</c><00:01:32.640><c> us</c><00:01:33.600><c> that</c><00:01:33.840><c> no</c><00:01:34.079><c> matter</c>
+
+00:01:34.630 --> 00:01:34.640 align:start position:0%
+but they also tell us that no matter
+ 
+
+00:01:34.640 --> 00:01:37.670 align:start position:0%
+but they also tell us that no matter
+what<00:01:35.280><c> whether</c><00:01:35.520><c> it's</c><00:01:35.759><c> a</c><00:01:35.840><c> happy</c><00:01:36.159><c> number</c><00:01:36.640><c> or</c><00:01:37.040><c> not</c>
+
+00:01:37.670 --> 00:01:37.680 align:start position:0%
+what whether it's a happy number or not
+ 
+
+00:01:37.680 --> 00:01:40.950 align:start position:0%
+what whether it's a happy number or not
+it's<00:01:37.920><c> going</c><00:01:38.240><c> to</c><00:01:38.640><c> loop</c><00:01:39.119><c> endlessly</c><00:01:40.240><c> so</c><00:01:40.560><c> notice</c>
+
+00:01:40.950 --> 00:01:40.960 align:start position:0%
+it's going to loop endlessly so notice
+ 
+
+00:01:40.960 --> 00:01:41.510 align:start position:0%
+it's going to loop endlessly so notice
+how<00:01:41.119><c> this</c>
+
+00:01:41.510 --> 00:01:41.520 align:start position:0%
+how this
+ 
+
+00:01:41.520 --> 00:01:44.950 align:start position:0%
+how this
+one<00:01:42.159><c> if</c><00:01:42.320><c> you</c><00:01:42.479><c> take</c><00:01:42.880><c> one</c><00:01:43.280><c> and</c><00:01:43.520><c> square</c><00:01:44.000><c> it</c>
+
+00:01:44.950 --> 00:01:44.960 align:start position:0%
+one if you take one and square it
+ 
+
+00:01:44.960 --> 00:01:48.550 align:start position:0%
+one if you take one and square it
+one<00:01:45.280><c> squared</c><00:01:45.759><c> is</c><00:01:45.920><c> equal</c><00:01:46.240><c> to</c><00:01:46.479><c> one</c><00:01:47.840><c> one</c><00:01:48.079><c> squared</c>
+
+00:01:48.550 --> 00:01:48.560 align:start position:0%
+one squared is equal to one one squared
+ 
+
+00:01:48.560 --> 00:01:49.990 align:start position:0%
+one squared is equal to one one squared
+is<00:01:48.720><c> equal</c><00:01:48.960><c> to</c><00:01:49.119><c> one</c><00:01:49.439><c> so</c>
+
+00:01:49.990 --> 00:01:50.000 align:start position:0%
+is equal to one so
+ 
+
+00:01:50.000 --> 00:01:51.510 align:start position:0%
+is equal to one so
+when<00:01:50.240><c> we</c><00:01:50.320><c> keep</c><00:01:50.560><c> doing</c><00:01:50.799><c> this</c><00:01:51.119><c> we're</c><00:01:51.360><c> going</c><00:01:51.439><c> to</c>
+
+00:01:51.510 --> 00:01:51.520 align:start position:0%
+when we keep doing this we're going to
+ 
+
+00:01:51.520 --> 00:01:54.069 align:start position:0%
+when we keep doing this we're going to
+get<00:01:51.759><c> stuck</c><00:01:52.399><c> in</c><00:01:52.720><c> an</c><00:01:52.960><c> infinite</c><00:01:53.360><c> loop</c>
+
+00:01:54.069 --> 00:01:54.079 align:start position:0%
+get stuck in an infinite loop
+ 
+
+00:01:54.079 --> 00:01:57.270 align:start position:0%
+get stuck in an infinite loop
+but<00:01:54.479><c> even</c><00:01:54.799><c> if</c><00:01:54.960><c> we</c><00:01:55.280><c> never</c><00:01:55.759><c> reach</c><00:01:56.159><c> a</c><00:01:56.399><c> 1</c><00:01:56.880><c> we'll</c>
+
+00:01:57.270 --> 00:01:57.280 align:start position:0%
+but even if we never reach a 1 we'll
+ 
+
+00:01:57.280 --> 00:01:59.510 align:start position:0%
+but even if we never reach a 1 we'll
+still<00:01:57.600><c> be</c><00:01:57.840><c> stuck</c><00:01:58.159><c> in</c><00:01:58.240><c> an</c><00:01:58.399><c> infinite</c><00:01:58.799><c> loop</c>
+
+00:01:59.510 --> 00:01:59.520 align:start position:0%
+still be stuck in an infinite loop
+ 
+
+00:01:59.520 --> 00:02:01.030 align:start position:0%
+still be stuck in an infinite loop
+so<00:01:59.759><c> you</c><00:01:59.920><c> guys</c><00:02:00.159><c> know</c><00:02:00.320><c> how</c><00:02:00.479><c> much</c><00:02:00.640><c> i</c><00:02:00.719><c> like</c><00:02:00.880><c> to</c>
+
+00:02:01.030 --> 00:02:01.040 align:start position:0%
+so you guys know how much i like to
+ 
+
+00:02:01.040 --> 00:02:02.709 align:start position:0%
+so you guys know how much i like to
+visualize<00:02:01.600><c> problems</c><00:02:02.159><c> so</c><00:02:02.320><c> let's</c>
+
+00:02:02.709 --> 00:02:02.719 align:start position:0%
+visualize problems so let's
+ 
+
+00:02:02.719 --> 00:02:07.190 align:start position:0%
+visualize problems so let's
+do<00:02:02.960><c> exactly</c><00:02:03.439><c> that</c><00:02:03.680><c> so</c><00:02:03.920><c> we</c><00:02:04.159><c> start</c><00:02:04.399><c> with</c><00:02:04.640><c> a</c><00:02:04.799><c> 19.</c>
+
+00:02:07.190 --> 00:02:07.200 align:start position:0%
+do exactly that so we start with a 19.
+ 
+
+00:02:07.200 --> 00:02:11.350 align:start position:0%
+do exactly that so we start with a 19.
+then<00:02:07.759><c> we</c><00:02:07.920><c> get</c><00:02:08.160><c> to</c><00:02:08.319><c> eighty-two</c>
+
+00:02:11.350 --> 00:02:11.360 align:start position:0%
+ 
+ 
+
+00:02:11.360 --> 00:02:17.110 align:start position:0%
+ 
+then<00:02:11.760><c> we</c><00:02:12.000><c> get</c><00:02:12.239><c> to</c><00:02:12.400><c> sixty-eight</c>
+
+00:02:17.110 --> 00:02:17.120 align:start position:0%
+ 
+ 
+
+00:02:17.120 --> 00:02:22.070 align:start position:0%
+ 
+then<00:02:17.360><c> we</c><00:02:17.520><c> get</c><00:02:17.680><c> to</c><00:02:17.840><c> a</c><00:02:20.840><c> hundred</c>
+
+00:02:22.070 --> 00:02:22.080 align:start position:0%
+then we get to a hundred
+ 
+
+00:02:22.080 --> 00:02:24.390 align:start position:0%
+then we get to a hundred
+and<00:02:22.239><c> then</c><00:02:22.480><c> we</c><00:02:22.720><c> get</c><00:02:23.440><c> to</c><00:02:23.599><c> the</c><00:02:23.760><c> number</c><00:02:24.160><c> that</c>
+
+00:02:24.390 --> 00:02:24.400 align:start position:0%
+and then we get to the number that
+ 
+
+00:02:24.400 --> 00:02:25.589 align:start position:0%
+and then we get to the number that
+proves<00:02:24.879><c> to</c><00:02:25.120><c> us</c>
+
+00:02:25.589 --> 00:02:25.599 align:start position:0%
+proves to us
+ 
+
+00:02:25.599 --> 00:02:28.790 align:start position:0%
+proves to us
+that<00:02:26.239><c> 19</c><00:02:26.959><c> is</c><00:02:27.120><c> happy</c>
+
+00:02:28.790 --> 00:02:28.800 align:start position:0%
+that 19 is happy
+ 
+
+00:02:28.800 --> 00:02:31.830 align:start position:0%
+that 19 is happy
+now<00:02:29.840><c> we</c><00:02:29.920><c> get</c><00:02:30.080><c> to</c><00:02:30.239><c> a</c><00:02:30.319><c> one</c><00:02:30.640><c> right</c><00:02:31.120><c> and</c><00:02:31.360><c> now</c><00:02:31.599><c> this</c>
+
+00:02:31.830 --> 00:02:31.840 align:start position:0%
+now we get to a one right and now this
+ 
+
+00:02:31.840 --> 00:02:32.229 align:start position:0%
+now we get to a one right and now this
+one
+
+00:02:32.229 --> 00:02:32.239 align:start position:0%
+one
+ 
+
+00:02:32.239 --> 00:02:34.949 align:start position:0%
+one
+is<00:02:32.400><c> going</c><00:02:32.640><c> to</c><00:02:33.200><c> loop</c><00:02:34.080><c> infinitely</c><00:02:34.800><c> and</c>
+
+00:02:34.949 --> 00:02:34.959 align:start position:0%
+is going to loop infinitely and
+ 
+
+00:02:34.959 --> 00:02:35.990 align:start position:0%
+is going to loop infinitely and
+therefore<00:02:35.519><c> we</c><00:02:35.680><c> know</c>
+
+00:02:35.990 --> 00:02:36.000 align:start position:0%
+therefore we know
+ 
+
+00:02:36.000 --> 00:02:39.750 align:start position:0%
+therefore we know
+that<00:02:36.319><c> 1</c><00:02:37.040><c> or</c><00:02:37.680><c> 19</c><00:02:38.480><c> is</c><00:02:38.720><c> a</c><00:02:38.959><c> happy</c>
+
+00:02:39.750 --> 00:02:39.760 align:start position:0%
+that 1 or 19 is a happy
+ 
+
+00:02:39.760 --> 00:02:42.309 align:start position:0%
+that 1 or 19 is a happy
+number<00:02:40.800><c> but</c><00:02:41.040><c> let's</c><00:02:41.280><c> take</c><00:02:41.519><c> a</c><00:02:41.680><c> look</c><00:02:42.000><c> at</c><00:02:42.160><c> a</c>
+
+00:02:42.309 --> 00:02:42.319 align:start position:0%
+number but let's take a look at a
+ 
+
+00:02:42.319 --> 00:02:43.910 align:start position:0%
+number but let's take a look at a
+different<00:02:42.800><c> example</c>
+
+00:02:43.910 --> 00:02:43.920 align:start position:0%
+different example
+ 
+
+00:02:43.920 --> 00:02:47.350 align:start position:0%
+different example
+what<00:02:44.080><c> if</c><00:02:44.319><c> our</c><00:02:44.640><c> input</c><00:02:45.440><c> was</c><00:02:45.920><c> equal</c><00:02:46.480><c> to</c>
+
+00:02:47.350 --> 00:02:47.360 align:start position:0%
+what if our input was equal to
+ 
+
+00:02:47.360 --> 00:02:50.550 align:start position:0%
+what if our input was equal to
+2<00:02:47.840><c> instead</c><00:02:48.160><c> of</c><00:02:48.840><c> 19.</c>
+
+00:02:50.550 --> 00:02:50.560 align:start position:0%
+2 instead of 19.
+ 
+
+00:02:50.560 --> 00:02:52.949 align:start position:0%
+2 instead of 19.
+then<00:02:50.800><c> what's</c><00:02:51.040><c> going</c><00:02:51.120><c> to</c><00:02:51.280><c> happen</c><00:02:52.000><c> so</c><00:02:52.480><c> we</c><00:02:52.720><c> first</c>
+
+00:02:52.949 --> 00:02:52.959 align:start position:0%
+then what's going to happen so we first
+ 
+
+00:02:52.959 --> 00:02:55.670 align:start position:0%
+then what's going to happen so we first
+start<00:02:53.280><c> with</c><00:02:53.440><c> a</c><00:02:53.680><c> 2</c>
+
+00:02:55.670 --> 00:02:55.680 align:start position:0%
+start with a 2
+ 
+
+00:02:55.680 --> 00:02:59.990 align:start position:0%
+start with a 2
+we<00:02:55.840><c> can</c><00:02:56.080><c> square</c><00:02:56.400><c> the</c><00:02:56.560><c> 2</c><00:02:57.200><c> and</c><00:02:57.360><c> we</c><00:02:57.519><c> get</c><00:02:58.000><c> to</c><00:02:58.319><c> 4.</c>
+
+00:02:59.990 --> 00:03:00.000 align:start position:0%
+we can square the 2 and we get to 4.
+ 
+
+00:03:00.000 --> 00:03:03.110 align:start position:0%
+we can square the 2 and we get to 4.
+we<00:03:00.159><c> can</c><00:03:00.400><c> square</c><00:03:00.720><c> the</c><00:03:00.959><c> 4</c><00:03:01.519><c> and</c><00:03:01.680><c> we</c><00:03:01.920><c> get</c><00:03:02.239><c> to</c>
+
+00:03:03.110 --> 00:03:03.120 align:start position:0%
+we can square the 4 and we get to
+ 
+
+00:03:03.120 --> 00:03:05.750 align:start position:0%
+we can square the 4 and we get to
+16.<00:03:04.000><c> now</c><00:03:04.239><c> this</c><00:03:04.400><c> is</c><00:03:04.560><c> the</c><00:03:04.720><c> part</c><00:03:05.440><c> where</c><00:03:05.599><c> you're</c>
+
+00:03:05.750 --> 00:03:05.760 align:start position:0%
+16. now this is the part where you're
+ 
+
+00:03:05.760 --> 00:03:07.589 align:start position:0%
+16. now this is the part where you're
+gonna<00:03:05.920><c> have</c><00:03:06.000><c> to</c><00:03:06.159><c> trust</c><00:03:06.400><c> my</c><00:03:06.640><c> math</c>
+
+00:03:07.589 --> 00:03:07.599 align:start position:0%
+gonna have to trust my math
+ 
+
+00:03:07.599 --> 00:03:10.790 align:start position:0%
+gonna have to trust my math
+so<00:03:08.480><c> if</c><00:03:08.720><c> we</c><00:03:08.879><c> take</c><00:03:09.120><c> the</c><00:03:09.360><c> sum</c><00:03:09.599><c> of</c><00:03:09.760><c> squares</c>
+
+00:03:10.790 --> 00:03:10.800 align:start position:0%
+so if we take the sum of squares
+ 
+
+00:03:10.800 --> 00:03:13.830 align:start position:0%
+so if we take the sum of squares
+of<00:03:10.959><c> digits</c><00:03:11.360><c> of</c><00:03:11.519><c> 16</c><00:03:12.319><c> we're</c><00:03:12.560><c> gonna</c><00:03:12.879><c> get</c><00:03:13.280><c> to</c>
+
+00:03:13.830 --> 00:03:13.840 align:start position:0%
+of digits of 16 we're gonna get to
+ 
+
+00:03:13.840 --> 00:03:18.790 align:start position:0%
+of digits of 16 we're gonna get to
+37<00:03:16.640><c> if</c><00:03:16.720><c> we</c><00:03:16.879><c> take</c><00:03:17.040><c> the</c><00:03:17.200><c> sum</c><00:03:17.440><c> of</c><00:03:17.519><c> squares</c><00:03:17.920><c> of</c><00:03:18.000><c> 37</c>
+
+00:03:18.790 --> 00:03:18.800 align:start position:0%
+37 if we take the sum of squares of 37
+ 
+
+00:03:18.800 --> 00:03:19.589 align:start position:0%
+37 if we take the sum of squares of 37
+which<00:03:19.040><c> is</c>
+
+00:03:19.589 --> 00:03:19.599 align:start position:0%
+which is
+ 
+
+00:03:19.599 --> 00:03:25.190 align:start position:0%
+which is
+9<00:03:20.159><c> and</c><00:03:20.480><c> 21</c><00:03:21.519><c> we</c><00:03:21.760><c> get</c><00:03:22.000><c> 230.</c>
+
+00:03:25.190 --> 00:03:25.200 align:start position:0%
+ 
+ 
+
+00:03:25.200 --> 00:03:28.309 align:start position:0%
+ 
+next<00:03:25.920><c> 3</c><00:03:26.239><c> squared</c><00:03:26.560><c> plus</c><00:03:26.879><c> 0</c><00:03:27.200><c> squared</c><00:03:27.760><c> that's</c>
+
+00:03:28.309 --> 00:03:28.319 align:start position:0%
+next 3 squared plus 0 squared that's
+ 
+
+00:03:28.319 --> 00:03:33.589 align:start position:0%
+next 3 squared plus 0 squared that's
+a<00:03:28.720><c> 9.</c><00:03:30.480><c> 9</c><00:03:30.879><c> squared</c><00:03:31.360><c> is</c><00:03:31.519><c> eighty-one</c>
+
+00:03:33.589 --> 00:03:33.599 align:start position:0%
+a 9. 9 squared is eighty-one
+ 
+
+00:03:33.599 --> 00:03:36.710 align:start position:0%
+a 9. 9 squared is eighty-one
+eighty-one<00:03:34.239><c> squared</c><00:03:35.680><c> is</c>
+
+00:03:36.710 --> 00:03:36.720 align:start position:0%
+eighty-one squared is
+ 
+
+00:03:36.720 --> 00:03:41.110 align:start position:0%
+eighty-one squared is
+sixty-five
+
+00:03:41.110 --> 00:03:41.120 align:start position:0%
+ 
+ 
+
+00:03:41.120 --> 00:03:44.550 align:start position:0%
+ 
+sixty-five<00:03:41.840><c> squared</c><00:03:42.879><c> is</c><00:03:43.519><c> sixty-one</c>
+
+00:03:44.550 --> 00:03:44.560 align:start position:0%
+sixty-five squared is sixty-one
+ 
+
+00:03:44.560 --> 00:03:49.110 align:start position:0%
+sixty-five squared is sixty-one
+or<00:03:44.959><c> the</c><00:03:45.120><c> sum</c><00:03:45.360><c> of</c><00:03:45.440><c> squares</c><00:03:45.760><c> of</c><00:03:45.920><c> 65</c><00:03:46.799><c> is</c><00:03:46.959><c> 61.</c>
+
+00:03:49.110 --> 00:03:49.120 align:start position:0%
+or the sum of squares of 65 is 61.
+ 
+
+00:03:49.120 --> 00:03:53.830 align:start position:0%
+or the sum of squares of 65 is 61.
+and<00:03:50.400><c> now</c><00:03:51.519><c> 6</c><00:03:51.920><c> squared</c>
+
+00:03:53.830 --> 00:03:53.840 align:start position:0%
+and now 6 squared
+ 
+
+00:03:53.840 --> 00:03:57.309 align:start position:0%
+and now 6 squared
+plus<00:03:54.239><c> 1</c><00:03:54.560><c> squared</c><00:03:56.400><c> is</c>
+
+00:03:57.309 --> 00:03:57.319 align:start position:0%
+plus 1 squared is
+ 
+
+00:03:57.319 --> 00:04:00.070 align:start position:0%
+plus 1 squared is
+37<00:03:58.640><c> and</c><00:03:59.120><c> you</c><00:03:59.280><c> notice</c><00:03:59.599><c> anything</c>
+
+00:04:00.070 --> 00:04:00.080 align:start position:0%
+37 and you notice anything
+ 
+
+00:04:00.080 --> 00:04:03.350 align:start position:0%
+37 and you notice anything
+about<00:04:00.319><c> this</c><00:04:00.959><c> there's</c><00:04:01.200><c> a</c><00:04:01.360><c> 37</c><00:04:02.720><c> right</c>
+
+00:04:03.350 --> 00:04:03.360 align:start position:0%
+about this there's a 37 right
+ 
+
+00:04:03.360 --> 00:04:06.550 align:start position:0%
+about this there's a 37 right
+over<00:04:04.000><c> here</c><00:04:05.680><c> so</c><00:04:05.920><c> basically</c>
+
+00:04:06.550 --> 00:04:06.560 align:start position:0%
+over here so basically
+ 
+
+00:04:06.560 --> 00:04:08.710 align:start position:0%
+over here so basically
+the<00:04:06.720><c> exact</c><00:04:07.120><c> same</c><00:04:07.360><c> thing</c><00:04:07.599><c> happened</c><00:04:08.000><c> right</c><00:04:08.560><c> we</c>
+
+00:04:08.710 --> 00:04:08.720 align:start position:0%
+the exact same thing happened right we
+ 
+
+00:04:08.720 --> 00:04:10.390 align:start position:0%
+the exact same thing happened right we
+started<00:04:09.120><c> at</c><00:04:09.280><c> 2</c>
+
+00:04:10.390 --> 00:04:10.400 align:start position:0%
+started at 2
+ 
+
+00:04:10.400 --> 00:04:13.030 align:start position:0%
+started at 2
+we<00:04:10.959><c> did</c><00:04:11.120><c> some</c><00:04:11.360><c> stuff</c><00:04:11.840><c> and</c><00:04:11.920><c> then</c><00:04:12.080><c> we</c><00:04:12.239><c> got</c><00:04:12.480><c> stuck</c>
+
+00:04:13.030 --> 00:04:13.040 align:start position:0%
+we did some stuff and then we got stuck
+ 
+
+00:04:13.040 --> 00:04:14.710 align:start position:0%
+we did some stuff and then we got stuck
+in<00:04:13.280><c> an</c><00:04:13.519><c> infinite</c><00:04:13.920><c> loop</c><00:04:14.239><c> right</c><00:04:14.400><c> it's</c><00:04:14.560><c> just</c>
+
+00:04:14.710 --> 00:04:14.720 align:start position:0%
+in an infinite loop right it's just
+ 
+
+00:04:14.720 --> 00:04:16.469 align:start position:0%
+in an infinite loop right it's just
+going<00:04:14.799><c> to</c><00:04:14.959><c> keep</c><00:04:15.280><c> going</c><00:04:15.519><c> around</c><00:04:15.920><c> and</c><00:04:16.079><c> round</c><00:04:16.320><c> and</c>
+
+00:04:16.469 --> 00:04:16.479 align:start position:0%
+going to keep going around and round and
+ 
+
+00:04:16.479 --> 00:04:17.349 align:start position:0%
+going to keep going around and round and
+round
+
+00:04:17.349 --> 00:04:17.359 align:start position:0%
+round
+ 
+
+00:04:17.359 --> 00:04:19.430 align:start position:0%
+round
+infinitely<00:04:17.919><c> right</c><00:04:18.400><c> so</c><00:04:18.639><c> what</c><00:04:18.799><c> does</c><00:04:18.959><c> this</c><00:04:19.199><c> tell</c>
+
+00:04:19.430 --> 00:04:19.440 align:start position:0%
+infinitely right so what does this tell
+ 
+
+00:04:19.440 --> 00:04:21.349 align:start position:0%
+infinitely right so what does this tell
+us<00:04:19.840><c> well</c><00:04:20.239><c> in</c><00:04:20.479><c> this</c><00:04:20.720><c> case</c>
+
+00:04:21.349 --> 00:04:21.359 align:start position:0%
+us well in this case
+ 
+
+00:04:21.359 --> 00:04:26.469 align:start position:0%
+us well in this case
+the<00:04:21.600><c> input</c><00:04:21.919><c> number</c><00:04:22.400><c> 2</c><00:04:23.120><c> is</c><00:04:23.440><c> not</c><00:04:23.919><c> happy</c>
+
+00:04:26.469 --> 00:04:26.479 align:start position:0%
+ 
+ 
+
+00:04:26.479 --> 00:04:28.469 align:start position:0%
+ 
+so<00:04:26.720><c> instead</c><00:04:27.040><c> of</c><00:04:27.120><c> returning</c><00:04:27.600><c> true</c><00:04:28.160><c> we're</c><00:04:28.400><c> going</c>
+
+00:04:28.469 --> 00:04:28.479 align:start position:0%
+so instead of returning true we're going
+ 
+
+00:04:28.479 --> 00:04:29.830 align:start position:0%
+so instead of returning true we're going
+to<00:04:28.560><c> return</c><00:04:29.199><c> false</c>
+
+00:04:29.830 --> 00:04:29.840 align:start position:0%
+to return false
+ 
+
+00:04:29.840 --> 00:04:32.550 align:start position:0%
+to return false
+so<00:04:30.160><c> basically</c><00:04:30.639><c> what</c><00:04:30.800><c> we're</c><00:04:31.040><c> trying</c><00:04:31.280><c> to</c><00:04:31.360><c> do</c><00:04:31.919><c> is</c>
+
+00:04:32.550 --> 00:04:32.560 align:start position:0%
+so basically what we're trying to do is
+ 
+
+00:04:32.560 --> 00:04:33.030 align:start position:0%
+so basically what we're trying to do is
+check
+
+00:04:33.030 --> 00:04:33.040 align:start position:0%
+check
+ 
+
+00:04:33.040 --> 00:04:36.390 align:start position:0%
+check
+if<00:04:33.360><c> we</c><00:04:33.759><c> ever</c><00:04:35.040><c> get</c><00:04:35.360><c> to</c><00:04:35.759><c> basically</c>
+
+00:04:36.390 --> 00:04:36.400 align:start position:0%
+if we ever get to basically
+ 
+
+00:04:36.400 --> 00:04:39.189 align:start position:0%
+if we ever get to basically
+do<00:04:36.560><c> we</c><00:04:36.720><c> ever</c><00:04:37.040><c> visit</c><00:04:37.520><c> a</c><00:04:37.680><c> number</c><00:04:38.240><c> twice</c><00:04:38.800><c> and</c><00:04:39.040><c> how</c>
+
+00:04:39.189 --> 00:04:39.199 align:start position:0%
+do we ever visit a number twice and how
+ 
+
+00:04:39.199 --> 00:04:41.189 align:start position:0%
+do we ever visit a number twice and how
+can<00:04:39.360><c> we</c><00:04:39.520><c> do</c><00:04:39.759><c> that</c><00:04:40.080><c> efficiently</c><00:04:40.800><c> well</c><00:04:41.040><c> you</c>
+
+00:04:41.189 --> 00:04:41.199 align:start position:0%
+can we do that efficiently well you
+ 
+
+00:04:41.199 --> 00:04:42.629 align:start position:0%
+can we do that efficiently well you
+might<00:04:41.360><c> have</c><00:04:41.520><c> heard</c><00:04:41.919><c> there's</c><00:04:42.240><c> a</c><00:04:42.320><c> data</c>
+
+00:04:42.629 --> 00:04:42.639 align:start position:0%
+might have heard there's a data
+ 
+
+00:04:42.639 --> 00:04:43.510 align:start position:0%
+might have heard there's a data
+structure<00:04:43.120><c> called</c>
+
+00:04:43.510 --> 00:04:43.520 align:start position:0%
+structure called
+ 
+
+00:04:43.520 --> 00:04:45.830 align:start position:0%
+structure called
+a<00:04:43.759><c> hash</c><00:04:44.160><c> set</c><00:04:44.479><c> that</c><00:04:44.639><c> we</c><00:04:44.800><c> can</c><00:04:44.960><c> use</c><00:04:45.520><c> and</c><00:04:45.600><c> i'm</c><00:04:45.759><c> going</c>
+
+00:04:45.830 --> 00:04:45.840 align:start position:0%
+a hash set that we can use and i'm going
+ 
+
+00:04:45.840 --> 00:04:47.510 align:start position:0%
+a hash set that we can use and i'm going
+to<00:04:45.919><c> show</c><00:04:46.080><c> you</c><00:04:46.160><c> how</c><00:04:46.320><c> to</c><00:04:46.479><c> code</c><00:04:46.800><c> that</c><00:04:47.040><c> up</c><00:04:47.280><c> right</c>
+
+00:04:47.510 --> 00:04:47.520 align:start position:0%
+to show you how to code that up right
+ 
+
+00:04:47.520 --> 00:04:48.390 align:start position:0%
+to show you how to code that up right
+now
+
+00:04:48.390 --> 00:04:48.400 align:start position:0%
+now
+ 
+
+00:04:48.400 --> 00:04:51.670 align:start position:0%
+now
+so<00:04:48.639><c> i'm</c><00:04:48.800><c> doing</c><00:04:49.040><c> this</c><00:04:49.280><c> in</c><00:04:49.440><c> python</c><00:04:50.160><c> so</c><00:04:51.360><c> let's</c>
+
+00:04:51.670 --> 00:04:51.680 align:start position:0%
+so i'm doing this in python so let's
+ 
+
+00:04:51.680 --> 00:04:52.310 align:start position:0%
+so i'm doing this in python so let's
+create
+
+00:04:52.310 --> 00:04:52.320 align:start position:0%
+create
+ 
+
+00:04:52.320 --> 00:04:56.070 align:start position:0%
+create
+a<00:04:52.639><c> visit</c><00:04:53.120><c> hash</c><00:04:53.520><c> set</c><00:04:55.040><c> to</c><00:04:55.199><c> keep</c><00:04:55.440><c> track</c><00:04:55.759><c> of</c>
+
+00:04:56.070 --> 00:04:56.080 align:start position:0%
+a visit hash set to keep track of
+ 
+
+00:04:56.080 --> 00:04:58.390 align:start position:0%
+a visit hash set to keep track of
+every<00:04:56.560><c> number</c><00:04:56.880><c> that</c><00:04:57.040><c> we</c><00:04:57.280><c> previously</c><00:04:57.919><c> visited</c>
+
+00:04:58.390 --> 00:04:58.400 align:start position:0%
+every number that we previously visited
+ 
+
+00:04:58.400 --> 00:05:00.310 align:start position:0%
+every number that we previously visited
+so<00:04:58.800><c> that</c><00:04:59.040><c> if</c><00:04:59.120><c> we</c><00:04:59.280><c> get</c><00:04:59.440><c> to</c><00:04:59.600><c> a</c><00:04:59.759><c> number</c><00:05:00.000><c> that</c><00:05:00.160><c> we</c>
+
+00:05:00.310 --> 00:05:00.320 align:start position:0%
+so that if we get to a number that we
+ 
+
+00:05:00.320 --> 00:05:01.670 align:start position:0%
+so that if we get to a number that we
+visit<00:05:00.720><c> twice</c><00:05:01.120><c> we</c><00:05:01.280><c> can</c>
+
+00:05:01.670 --> 00:05:01.680 align:start position:0%
+visit twice we can
+ 
+
+00:05:01.680 --> 00:05:04.390 align:start position:0%
+visit twice we can
+instantly<00:05:02.240><c> know</c><00:05:02.479><c> in</c><00:05:02.800><c> constant</c><00:05:03.440><c> speed</c><00:05:03.840><c> right</c>
+
+00:05:04.390 --> 00:05:04.400 align:start position:0%
+instantly know in constant speed right
+ 
+
+00:05:04.400 --> 00:05:06.070 align:start position:0%
+instantly know in constant speed right
+hash<00:05:04.720><c> sets</c><00:05:04.960><c> are</c><00:05:05.120><c> really</c><00:05:05.360><c> quick</c>
+
+00:05:06.070 --> 00:05:06.080 align:start position:0%
+hash sets are really quick
+ 
+
+00:05:06.080 --> 00:05:08.150 align:start position:0%
+hash sets are really quick
+and<00:05:06.240><c> now</c><00:05:06.479><c> we</c><00:05:06.720><c> just</c><00:05:06.960><c> want</c><00:05:07.199><c> to</c><00:05:07.280><c> compute</c><00:05:07.680><c> the</c><00:05:07.919><c> sum</c>
+
+00:05:08.150 --> 00:05:08.160 align:start position:0%
+and now we just want to compute the sum
+ 
+
+00:05:08.160 --> 00:05:09.189 align:start position:0%
+and now we just want to compute the sum
+of<00:05:08.320><c> squares</c><00:05:08.960><c> of</c>
+
+00:05:09.189 --> 00:05:09.199 align:start position:0%
+of squares of
+ 
+
+00:05:09.199 --> 00:05:12.550 align:start position:0%
+of squares of
+n<00:05:09.919><c> until</c><00:05:11.199><c> n</c><00:05:11.680><c> is</c>
+
+00:05:12.550 --> 00:05:12.560 align:start position:0%
+n until n is
+ 
+
+00:05:12.560 --> 00:05:16.950 align:start position:0%
+n until n is
+repeated<00:05:13.280><c> until</c><00:05:13.600><c> we</c><00:05:13.759><c> get</c><00:05:14.160><c> a</c><00:05:14.320><c> duplicate</c><00:05:14.800><c> value</c>
+
+00:05:16.950 --> 00:05:16.960 align:start position:0%
+repeated until we get a duplicate value
+ 
+
+00:05:16.960 --> 00:05:20.150 align:start position:0%
+repeated until we get a duplicate value
+so<00:05:17.199><c> i'm</c><00:05:17.440><c> gonna</c><00:05:18.240><c> go</c><00:05:18.800><c> until</c>
+
+00:05:20.150 --> 00:05:20.160 align:start position:0%
+so i'm gonna go until
+ 
+
+00:05:20.160 --> 00:05:23.990 align:start position:0%
+so i'm gonna go until
+n<00:05:20.400><c> is</c><00:05:20.639><c> not</c><00:05:21.039><c> in</c><00:05:21.360><c> visit</c><00:05:22.960><c> so</c><00:05:23.120><c> if</c><00:05:23.360><c> n</c><00:05:23.600><c> hasn't</c>
+
+00:05:23.990 --> 00:05:24.000 align:start position:0%
+n is not in visit so if n hasn't
+ 
+
+00:05:24.000 --> 00:05:26.950 align:start position:0%
+n is not in visit so if n hasn't
+been<00:05:24.160><c> visited</c><00:05:25.360><c> so</c><00:05:25.600><c> if</c><00:05:25.759><c> n</c><00:05:26.080><c> hasn't</c><00:05:26.400><c> been</c><00:05:26.560><c> visited</c>
+
+00:05:26.950 --> 00:05:26.960 align:start position:0%
+been visited so if n hasn't been visited
+ 
+
+00:05:26.960 --> 00:05:28.550 align:start position:0%
+been visited so if n hasn't been visited
+then<00:05:27.120><c> the</c><00:05:27.280><c> first</c><00:05:27.600><c> thing</c><00:05:27.759><c> we</c><00:05:27.919><c> can</c><00:05:28.080><c> do</c>
+
+00:05:28.550 --> 00:05:28.560 align:start position:0%
+then the first thing we can do
+ 
+
+00:05:28.560 --> 00:05:32.230 align:start position:0%
+then the first thing we can do
+is<00:05:28.880><c> add</c><00:05:29.120><c> it</c><00:05:29.199><c> to</c><00:05:29.440><c> our</c><00:05:29.520><c> visit</c>
+
+00:05:32.230 --> 00:05:32.240 align:start position:0%
+ 
+ 
+
+00:05:32.240 --> 00:05:34.310 align:start position:0%
+ 
+and<00:05:32.639><c> the</c><00:05:32.800><c> next</c><00:05:33.039><c> thing</c><00:05:33.199><c> we</c><00:05:33.360><c> want</c><00:05:33.520><c> to</c><00:05:33.600><c> do</c><00:05:34.000><c> is</c>
+
+00:05:34.310 --> 00:05:34.320 align:start position:0%
+and the next thing we want to do is
+ 
+
+00:05:34.320 --> 00:05:36.230 align:start position:0%
+and the next thing we want to do is
+compute<00:05:35.120><c> the</c>
+
+00:05:36.230 --> 00:05:36.240 align:start position:0%
+compute the
+ 
+
+00:05:36.240 --> 00:05:39.510 align:start position:0%
+compute the
+sum<00:05:36.639><c> of</c><00:05:36.880><c> squares</c>
+
+00:05:39.510 --> 00:05:39.520 align:start position:0%
+sum of squares
+ 
+
+00:05:39.520 --> 00:05:42.070 align:start position:0%
+sum of squares
+so<00:05:39.840><c> i'm</c><00:05:40.720><c> not</c><00:05:40.960><c> going</c><00:05:41.039><c> to</c><00:05:41.199><c> do</c><00:05:41.360><c> that</c><00:05:41.520><c> here</c><00:05:41.840><c> i'm</c>
+
+00:05:42.070 --> 00:05:42.080 align:start position:0%
+so i'm not going to do that here i'm
+ 
+
+00:05:42.080 --> 00:05:43.830 align:start position:0%
+so i'm not going to do that here i'm
+going<00:05:42.160><c> to</c><00:05:42.320><c> separate</c><00:05:42.720><c> that</c><00:05:42.960><c> out</c><00:05:43.120><c> into</c><00:05:43.360><c> a</c><00:05:43.440><c> helper</c>
+
+00:05:43.830 --> 00:05:43.840 align:start position:0%
+going to separate that out into a helper
+ 
+
+00:05:43.840 --> 00:05:44.390 align:start position:0%
+going to separate that out into a helper
+function
+
+00:05:44.390 --> 00:05:44.400 align:start position:0%
+function
+ 
+
+00:05:44.400 --> 00:05:45.749 align:start position:0%
+function
+like<00:05:44.639><c> i'm</c><00:05:44.800><c> doing</c><00:05:45.039><c> right</c><00:05:45.199><c> now</c><00:05:45.360><c> so</c><00:05:45.520><c> we're</c><00:05:45.680><c> going</c>
+
+00:05:45.749 --> 00:05:45.759 align:start position:0%
+like i'm doing right now so we're going
+ 
+
+00:05:45.759 --> 00:05:47.909 align:start position:0%
+like i'm doing right now so we're going
+to<00:05:45.919><c> pass</c><00:05:46.400><c> n</c><00:05:46.720><c> into</c><00:05:46.960><c> this</c><00:05:47.120><c> function</c>
+
+00:05:47.909 --> 00:05:47.919 align:start position:0%
+to pass n into this function
+ 
+
+00:05:47.919 --> 00:05:49.110 align:start position:0%
+to pass n into this function
+we're<00:05:48.080><c> going</c><00:05:48.160><c> to</c><00:05:48.240><c> compute</c><00:05:48.639><c> the</c><00:05:48.800><c> sum</c><00:05:49.039><c> of</c>
+
+00:05:49.110 --> 00:05:49.120 align:start position:0%
+we're going to compute the sum of
+ 
+
+00:05:49.120 --> 00:05:51.270 align:start position:0%
+we're going to compute the sum of
+squares<00:05:49.600><c> and</c><00:05:49.680><c> we're</c><00:05:49.840><c> going</c><00:05:49.919><c> to</c><00:05:50.080><c> reassign</c><00:05:50.800><c> n</c>
+
+00:05:51.270 --> 00:05:51.280 align:start position:0%
+squares and we're going to reassign n
+ 
+
+00:05:51.280 --> 00:05:53.670 align:start position:0%
+squares and we're going to reassign n
+to<00:05:51.440><c> that</c><00:05:51.680><c> value</c><00:05:52.400><c> so</c><00:05:52.560><c> before</c><00:05:52.880><c> i</c><00:05:53.039><c> forget</c><00:05:53.360><c> let</c><00:05:53.520><c> me</c>
+
+00:05:53.670 --> 00:05:53.680 align:start position:0%
+to that value so before i forget let me
+ 
+
+00:05:53.680 --> 00:06:05.670 align:start position:0%
+to that value so before i forget let me
+actually<00:05:54.000><c> define</c><00:05:54.560><c> this</c><00:05:54.800><c> helper</c><00:05:55.199><c> function</c>
+
+00:06:05.670 --> 00:06:05.680 align:start position:0%
+ 
+ 
+
+00:06:05.680 --> 00:06:08.550 align:start position:0%
+ 
+and<00:06:05.840><c> so</c><00:06:06.080><c> what's</c><00:06:06.319><c> going</c><00:06:06.479><c> to</c><00:06:06.639><c> be</c><00:06:07.680><c> the</c><00:06:08.000><c> condition</c>
+
+00:06:08.550 --> 00:06:08.560 align:start position:0%
+and so what's going to be the condition
+ 
+
+00:06:08.560 --> 00:06:09.909 align:start position:0%
+and so what's going to be the condition
+that<00:06:08.639><c> we</c><00:06:08.800><c> return</c><00:06:09.280><c> true</c>
+
+00:06:09.909 --> 00:06:09.919 align:start position:0%
+that we return true
+ 
+
+00:06:09.919 --> 00:06:12.309 align:start position:0%
+that we return true
+so<00:06:10.240><c> remember</c><00:06:11.039><c> the</c><00:06:11.360><c> single</c><00:06:11.759><c> number</c><00:06:12.000><c> that</c><00:06:12.160><c> we're</c>
+
+00:06:12.309 --> 00:06:12.319 align:start position:0%
+so remember the single number that we're
+ 
+
+00:06:12.319 --> 00:06:13.590 align:start position:0%
+so remember the single number that we're
+looking<00:06:12.639><c> for</c><00:06:12.880><c> is</c><00:06:13.120><c> 1.</c>
+
+00:06:13.590 --> 00:06:13.600 align:start position:0%
+looking for is 1.
+ 
+
+00:06:13.600 --> 00:06:16.790 align:start position:0%
+looking for is 1.
+if<00:06:13.919><c> n</c><00:06:14.479><c> ever</c><00:06:14.880><c> equals</c><00:06:15.440><c> 1</c><00:06:16.000><c> we're</c><00:06:16.319><c> done</c>
+
+00:06:16.790 --> 00:06:16.800 align:start position:0%
+if n ever equals 1 we're done
+ 
+
+00:06:16.800 --> 00:06:20.390 align:start position:0%
+if n ever equals 1 we're done
+like<00:06:16.960><c> we</c><00:06:17.120><c> can</c><00:06:17.280><c> just</c><00:06:17.360><c> return</c><00:06:18.840><c> true</c>
+
+00:06:20.390 --> 00:06:20.400 align:start position:0%
+like we can just return true
+ 
+
+00:06:20.400 --> 00:06:22.309 align:start position:0%
+like we can just return true
+and<00:06:20.560><c> we</c><00:06:20.720><c> could</c><00:06:20.880><c> have</c><00:06:20.960><c> even</c><00:06:21.199><c> put</c><00:06:21.440><c> this</c><00:06:21.919><c> part</c>
+
+00:06:22.309 --> 00:06:22.319 align:start position:0%
+and we could have even put this part
+ 
+
+00:06:22.319 --> 00:06:23.830 align:start position:0%
+and we could have even put this part
+like<00:06:22.560><c> at</c><00:06:22.639><c> the</c><00:06:22.800><c> beginning</c><00:06:23.120><c> of</c><00:06:23.280><c> our</c><00:06:23.360><c> code</c><00:06:23.600><c> if</c><00:06:23.759><c> we</c>
+
+00:06:23.830 --> 00:06:23.840 align:start position:0%
+like at the beginning of our code if we
+ 
+
+00:06:23.840 --> 00:06:25.990 align:start position:0%
+like at the beginning of our code if we
+wanted<00:06:24.080><c> to</c><00:06:24.319><c> if</c><00:06:24.479><c> the</c><00:06:24.639><c> input</c><00:06:24.880><c> value</c><00:06:25.280><c> was</c><00:06:25.440><c> one</c>
+
+00:06:25.990 --> 00:06:26.000 align:start position:0%
+wanted to if the input value was one
+ 
+
+00:06:26.000 --> 00:06:27.830 align:start position:0%
+wanted to if the input value was one
+just<00:06:26.319><c> instantly</c><00:06:26.720><c> return</c><00:06:27.120><c> one</c><00:06:27.360><c> we</c><00:06:27.520><c> don't</c><00:06:27.680><c> even</c>
+
+00:06:27.830 --> 00:06:27.840 align:start position:0%
+just instantly return one we don't even
+ 
+
+00:06:27.840 --> 00:06:29.270 align:start position:0%
+just instantly return one we don't even
+need<00:06:27.919><c> to</c><00:06:28.080><c> do</c><00:06:28.240><c> anything</c>
+
+00:06:29.270 --> 00:06:29.280 align:start position:0%
+need to do anything
+ 
+
+00:06:29.280 --> 00:06:32.870 align:start position:0%
+need to do anything
+but<00:06:30.080><c> in</c><00:06:30.240><c> the</c><00:06:30.400><c> case</c><00:06:30.800><c> that</c><00:06:30.960><c> we</c><00:06:31.199><c> visit</c><00:06:31.520><c> a</c><00:06:31.680><c> value</c>
+
+00:06:32.870 --> 00:06:32.880 align:start position:0%
+but in the case that we visit a value
+ 
+
+00:06:32.880 --> 00:06:36.469 align:start position:0%
+but in the case that we visit a value
+twice<00:06:33.520><c> like</c><00:06:33.759><c> if</c><00:06:34.000><c> our</c><00:06:34.240><c> loop</c><00:06:34.880><c> stops</c><00:06:35.440><c> executing</c>
+
+00:06:36.469 --> 00:06:36.479 align:start position:0%
+twice like if our loop stops executing
+ 
+
+00:06:36.479 --> 00:06:38.550 align:start position:0%
+twice like if our loop stops executing
+that<00:06:36.639><c> means</c><00:06:36.880><c> we</c><00:06:37.120><c> visited</c><00:06:37.440><c> about</c><00:06:37.759><c> we</c><00:06:38.000><c> visited</c><00:06:38.400><c> a</c>
+
+00:06:38.550 --> 00:06:38.560 align:start position:0%
+that means we visited about we visited a
+ 
+
+00:06:38.560 --> 00:06:40.309 align:start position:0%
+that means we visited about we visited a
+value<00:06:39.039><c> twice</c>
+
+00:06:40.309 --> 00:06:40.319 align:start position:0%
+value twice
+ 
+
+00:06:40.319 --> 00:06:43.590 align:start position:0%
+value twice
+but<00:06:40.720><c> in</c><00:06:40.880><c> the</c><00:06:41.039><c> case</c><00:06:41.360><c> that</c><00:06:41.520><c> we</c><00:06:41.759><c> visited</c><00:06:42.960><c> a</c><00:06:43.120><c> value</c>
+
+00:06:43.590 --> 00:06:43.600 align:start position:0%
+but in the case that we visited a value
+ 
+
+00:06:43.600 --> 00:06:44.230 align:start position:0%
+but in the case that we visited a value
+twice
+
+00:06:44.230 --> 00:06:44.240 align:start position:0%
+twice
+ 
+
+00:06:44.240 --> 00:06:47.510 align:start position:0%
+twice
+and<00:06:44.479><c> that</c><00:06:44.720><c> value</c><00:06:45.120><c> was</c><00:06:45.440><c> not</c><00:06:46.000><c> one</c><00:06:46.880><c> then</c>
+
+00:06:47.510 --> 00:06:47.520 align:start position:0%
+and that value was not one then
+ 
+
+00:06:47.520 --> 00:06:50.469 align:start position:0%
+and that value was not one then
+we<00:06:47.759><c> need</c><00:06:47.919><c> to</c><00:06:48.080><c> return</c><00:06:48.720><c> false</c><00:06:49.120><c> because</c><00:06:49.440><c> we</c><00:06:49.680><c> know</c>
+
+00:06:50.469 --> 00:06:50.479 align:start position:0%
+we need to return false because we know
+ 
+
+00:06:50.479 --> 00:06:50.950 align:start position:0%
+we need to return false because we know
+our
+
+00:06:50.950 --> 00:06:50.960 align:start position:0%
+our
+ 
+
+00:06:50.960 --> 00:06:53.670 align:start position:0%
+our
+loop<00:06:51.280><c> is</c><00:06:51.440><c> going</c><00:06:51.520><c> to</c><00:06:51.680><c> stop</c><00:06:52.000><c> executing</c><00:06:53.360><c> and</c><00:06:53.520><c> we</c>
+
+00:06:53.670 --> 00:06:53.680 align:start position:0%
+loop is going to stop executing and we
+ 
+
+00:06:53.680 --> 00:06:55.110 align:start position:0%
+loop is going to stop executing and we
+know<00:06:53.840><c> that</c><00:06:54.000><c> we</c><00:06:54.080><c> didn't</c><00:06:54.319><c> reach</c><00:06:54.560><c> a</c><00:06:54.639><c> value</c><00:06:54.960><c> that</c>
+
+00:06:55.110 --> 00:06:55.120 align:start position:0%
+know that we didn't reach a value that
+ 
+
+00:06:55.120 --> 00:06:55.430 align:start position:0%
+know that we didn't reach a value that
+was
+
+00:06:55.430 --> 00:06:55.440 align:start position:0%
+was
+ 
+
+00:06:55.440 --> 00:06:59.670 align:start position:0%
+was
+1<00:06:56.560><c> so</c><00:06:57.120><c> we</c><00:06:57.280><c> can</c><00:06:57.680><c> just</c><00:06:57.840><c> return</c><00:06:58.319><c> false</c>
+
+00:06:59.670 --> 00:06:59.680 align:start position:0%
+1 so we can just return false
+ 
+
+00:06:59.680 --> 00:07:01.670 align:start position:0%
+1 so we can just return false
+now<00:07:00.000><c> for</c><00:07:00.160><c> the</c><00:07:00.319><c> annoying</c><00:07:00.720><c> part</c><00:07:01.039><c> we</c><00:07:01.280><c> actually</c>
+
+00:07:01.670 --> 00:07:01.680 align:start position:0%
+now for the annoying part we actually
+ 
+
+00:07:01.680 --> 00:07:03.909 align:start position:0%
+now for the annoying part we actually
+gotta<00:07:02.080><c> compute</c><00:07:02.639><c> these</c><00:07:02.960><c> sum</c><00:07:03.280><c> of</c><00:07:03.360><c> squares</c><00:07:03.759><c> of</c>
+
+00:07:03.909 --> 00:07:03.919 align:start position:0%
+gotta compute these sum of squares of
+ 
+
+00:07:03.919 --> 00:07:05.189 align:start position:0%
+gotta compute these sum of squares of
+digits
+
+00:07:05.189 --> 00:07:05.199 align:start position:0%
+digits
+ 
+
+00:07:05.199 --> 00:07:07.350 align:start position:0%
+digits
+so<00:07:05.520><c> let</c><00:07:05.680><c> me</c><00:07:05.840><c> just</c><00:07:06.080><c> explain</c><00:07:06.720><c> what</c><00:07:06.880><c> i'm</c><00:07:07.039><c> gonna</c><00:07:07.199><c> do</c>
+
+00:07:07.350 --> 00:07:07.360 align:start position:0%
+so let me just explain what i'm gonna do
+ 
+
+00:07:07.360 --> 00:07:09.029 align:start position:0%
+so let me just explain what i'm gonna do
+before<00:07:07.680><c> i</c><00:07:07.759><c> actually</c><00:07:08.160><c> write</c><00:07:08.400><c> the</c><00:07:08.560><c> code</c><00:07:08.800><c> for</c>
+
+00:07:09.029 --> 00:07:09.039 align:start position:0%
+before i actually write the code for
+ 
+
+00:07:09.039 --> 00:07:09.830 align:start position:0%
+before i actually write the code for
+that
+
+00:07:09.830 --> 00:07:09.840 align:start position:0%
+that
+ 
+
+00:07:09.840 --> 00:07:13.189 align:start position:0%
+that
+so<00:07:10.000><c> we're</c><00:07:10.319><c> talking</c><00:07:10.800><c> about</c><00:07:11.280><c> taking</c><00:07:11.759><c> 19</c><00:07:12.319><c> right</c>
+
+00:07:13.189 --> 00:07:13.199 align:start position:0%
+so we're talking about taking 19 right
+ 
+
+00:07:13.199 --> 00:07:16.950 align:start position:0%
+so we're talking about taking 19 right
+getting<00:07:14.160><c> the</c><00:07:15.039><c> sum</c><00:07:15.280><c> of</c><00:07:15.520><c> squares</c>
+
+00:07:16.950 --> 00:07:16.960 align:start position:0%
+getting the sum of squares
+ 
+
+00:07:16.960 --> 00:07:19.430 align:start position:0%
+getting the sum of squares
+and<00:07:17.120><c> then</c><00:07:17.280><c> adding</c><00:07:17.680><c> them</c><00:07:17.840><c> up</c><00:07:18.800><c> but</c><00:07:19.039><c> how</c><00:07:19.199><c> do</c><00:07:19.280><c> we</c>
+
+00:07:19.430 --> 00:07:19.440 align:start position:0%
+and then adding them up but how do we
+ 
+
+00:07:19.440 --> 00:07:21.350 align:start position:0%
+and then adding them up but how do we
+actually<00:07:19.919><c> do</c><00:07:20.160><c> that</c><00:07:20.400><c> in</c><00:07:20.560><c> code</c><00:07:20.880><c> it's</c><00:07:21.120><c> a</c><00:07:21.199><c> little</c>
+
+00:07:21.350 --> 00:07:21.360 align:start position:0%
+actually do that in code it's a little
+ 
+
+00:07:21.360 --> 00:07:23.110 align:start position:0%
+actually do that in code it's a little
+bit<00:07:21.599><c> annoying</c><00:07:22.080><c> but</c><00:07:22.319><c> once</c><00:07:22.639><c> you</c>
+
+00:07:23.110 --> 00:07:23.120 align:start position:0%
+bit annoying but once you
+ 
+
+00:07:23.120 --> 00:07:25.909 align:start position:0%
+bit annoying but once you
+kind<00:07:23.280><c> of</c><00:07:23.440><c> figure</c><00:07:23.759><c> it</c><00:07:23.919><c> out</c><00:07:24.080><c> it's</c><00:07:24.319><c> not</c><00:07:24.639><c> too</c><00:07:24.880><c> bad</c>
+
+00:07:25.909 --> 00:07:25.919 align:start position:0%
+kind of figure it out it's not too bad
+ 
+
+00:07:25.919 --> 00:07:26.870 align:start position:0%
+kind of figure it out it's not too bad
+so<00:07:26.080><c> if</c><00:07:26.240><c> you</c><00:07:26.400><c> take</c>
+
+00:07:26.870 --> 00:07:26.880 align:start position:0%
+so if you take
+ 
+
+00:07:26.880 --> 00:07:29.990 align:start position:0%
+so if you take
+19<00:07:29.360><c> mod</c><00:07:29.759><c> it</c>
+
+00:07:29.990 --> 00:07:30.000 align:start position:0%
+19 mod it
+ 
+
+00:07:30.000 --> 00:07:33.270 align:start position:0%
+19 mod it
+by<00:07:30.319><c> 10</c>
+
+00:07:33.270 --> 00:07:33.280 align:start position:0%
+ 
+ 
+
+00:07:33.280 --> 00:07:36.469 align:start position:0%
+ 
+you<00:07:33.680><c> get</c><00:07:34.319><c> the</c><00:07:34.639><c> ones</c><00:07:35.039><c> place</c><00:07:35.360><c> value</c><00:07:35.840><c> right</c>
+
+00:07:36.469 --> 00:07:36.479 align:start position:0%
+you get the ones place value right
+ 
+
+00:07:36.479 --> 00:07:38.790 align:start position:0%
+you get the ones place value right
+so<00:07:36.720><c> we</c><00:07:36.880><c> want</c><00:07:37.039><c> to</c><00:07:37.120><c> take</c><00:07:37.360><c> this</c><00:07:37.680><c> 9</c><00:07:38.240><c> because</c><00:07:38.560><c> we</c>
+
+00:07:38.790 --> 00:07:38.800 align:start position:0%
+so we want to take this 9 because we
+ 
+
+00:07:38.800 --> 00:07:41.270 align:start position:0%
+so we want to take this 9 because we
+need<00:07:39.039><c> it</c><00:07:39.280><c> to</c><00:07:39.440><c> compute</c><00:07:39.840><c> the</c><00:07:40.000><c> sum</c><00:07:40.319><c> of</c><00:07:40.479><c> squares</c>
+
+00:07:41.270 --> 00:07:41.280 align:start position:0%
+need it to compute the sum of squares
+ 
+
+00:07:41.280 --> 00:07:46.150 align:start position:0%
+need it to compute the sum of squares
+so<00:07:41.919><c> when</c><00:07:42.080><c> you</c><00:07:42.240><c> do</c><00:07:42.400><c> this</c><00:07:42.800><c> you</c><00:07:42.960><c> get</c><00:07:43.039><c> a</c><00:07:43.120><c> value</c><00:07:43.599><c> 9.</c>
+
+00:07:46.150 --> 00:07:46.160 align:start position:0%
+ 
+ 
+
+00:07:46.160 --> 00:07:47.909 align:start position:0%
+ 
+so<00:07:46.400><c> now</c><00:07:46.560><c> that</c><00:07:46.720><c> we</c><00:07:46.800><c> have</c><00:07:47.039><c> our</c><00:07:47.280><c> 9</c><00:07:47.599><c> we</c><00:07:47.680><c> don't</c>
+
+00:07:47.909 --> 00:07:47.919 align:start position:0%
+so now that we have our 9 we don't
+ 
+
+00:07:47.919 --> 00:07:49.510 align:start position:0%
+so now that we have our 9 we don't
+actually<00:07:48.319><c> need</c><00:07:49.120><c> this</c>
+
+00:07:49.510 --> 00:07:49.520 align:start position:0%
+actually need this
+ 
+
+00:07:49.520 --> 00:07:52.230 align:start position:0%
+actually need this
+anymore<00:07:50.080><c> so</c><00:07:50.240><c> what</c><00:07:50.400><c> are</c><00:07:50.479><c> we</c><00:07:50.639><c> going</c><00:07:50.720><c> to</c><00:07:50.879><c> do</c><00:07:52.000><c> i'm</c>
+
+00:07:52.230 --> 00:07:52.240 align:start position:0%
+anymore so what are we going to do i'm
+ 
+
+00:07:52.240 --> 00:07:53.990 align:start position:0%
+anymore so what are we going to do i'm
+going<00:07:52.319><c> to</c><00:07:52.400><c> take</c><00:07:52.720><c> 19</c>
+
+00:07:53.990 --> 00:07:54.000 align:start position:0%
+going to take 19
+ 
+
+00:07:54.000 --> 00:07:57.029 align:start position:0%
+going to take 19
+and<00:07:54.160><c> divide</c><00:07:54.560><c> it</c><00:07:54.639><c> by</c><00:07:54.960><c> 10.</c><00:07:56.080><c> now</c><00:07:56.240><c> we</c><00:07:56.400><c> know</c><00:07:56.639><c> in</c>
+
+00:07:57.029 --> 00:07:57.039 align:start position:0%
+and divide it by 10. now we know in
+ 
+
+00:07:57.039 --> 00:07:59.990 align:start position:0%
+and divide it by 10. now we know in
+code<00:07:58.080><c> this</c><00:07:58.400><c> is</c><00:07:58.560><c> not</c><00:07:58.800><c> going</c><00:07:58.879><c> to</c><00:07:59.039><c> do</c><00:07:59.520><c> what</c><00:07:59.680><c> you'd</c>
+
+00:07:59.990 --> 00:08:00.000 align:start position:0%
+code this is not going to do what you'd
+ 
+
+00:08:00.000 --> 00:08:01.670 align:start position:0%
+code this is not going to do what you'd
+expect<00:08:00.400><c> in</c><00:08:00.560><c> math</c><00:08:00.960><c> right</c><00:08:01.120><c> this</c><00:08:01.360><c> is</c><00:08:01.440><c> not</c><00:08:01.599><c> going</c>
+
+00:08:01.670 --> 00:08:01.680 align:start position:0%
+expect in math right this is not going
+ 
+
+00:08:01.680 --> 00:08:02.629 align:start position:0%
+expect in math right this is not going
+to<00:08:01.759><c> be</c><00:08:01.919><c> a</c><00:08:02.000><c> fraction</c>
+
+00:08:02.629 --> 00:08:02.639 align:start position:0%
+to be a fraction
+ 
+
+00:08:02.639 --> 00:08:05.909 align:start position:0%
+to be a fraction
+we<00:08:02.879><c> want</c><00:08:03.440><c> to</c><00:08:03.680><c> just</c><00:08:04.000><c> get</c><00:08:04.240><c> rid</c><00:08:04.400><c> of</c><00:08:04.560><c> this</c><00:08:04.800><c> 9.</c><00:08:05.440><c> so</c><00:08:05.680><c> in</c>
+
+00:08:05.909 --> 00:08:05.919 align:start position:0%
+we want to just get rid of this 9. so in
+ 
+
+00:08:05.919 --> 00:08:09.589 align:start position:0%
+we want to just get rid of this 9. so in
+code<00:08:06.560><c> this</c><00:08:06.879><c> is</c><00:08:07.039><c> going</c><00:08:07.440><c> to</c><00:08:08.639><c> this</c><00:08:08.960><c> is</c><00:08:09.120><c> going</c><00:08:09.360><c> to</c>
+
+00:08:09.589 --> 00:08:09.599 align:start position:0%
+code this is going to this is going to
+ 
+
+00:08:09.599 --> 00:08:10.070 align:start position:0%
+code this is going to this is going to
+equal
+
+00:08:10.070 --> 00:08:10.080 align:start position:0%
+equal
+ 
+
+00:08:10.080 --> 00:08:13.110 align:start position:0%
+equal
+1<00:08:10.800><c> right</c><00:08:11.599><c> so</c><00:08:11.840><c> that's</c><00:08:12.080><c> great</c><00:08:12.400><c> now</c><00:08:12.560><c> we</c><00:08:12.720><c> got</c><00:08:12.879><c> our</c>
+
+00:08:13.110 --> 00:08:13.120 align:start position:0%
+1 right so that's great now we got our
+ 
+
+00:08:13.120 --> 00:08:13.510 align:start position:0%
+1 right so that's great now we got our
+one
+
+00:08:13.510 --> 00:08:13.520 align:start position:0%
+one
+ 
+
+00:08:13.520 --> 00:08:16.230 align:start position:0%
+one
+and<00:08:13.680><c> we</c><00:08:13.840><c> have</c><00:08:14.080><c> our</c><00:08:14.319><c> nine</c><00:08:15.039><c> so</c><00:08:15.440><c> now</c><00:08:15.599><c> we</c><00:08:15.759><c> just</c><00:08:16.080><c> can</c>
+
+00:08:16.230 --> 00:08:16.240 align:start position:0%
+and we have our nine so now we just can
+ 
+
+00:08:16.240 --> 00:08:17.430 align:start position:0%
+and we have our nine so now we just can
+take<00:08:16.479><c> the</c><00:08:16.639><c> squares</c><00:08:17.039><c> of</c><00:08:17.120><c> them</c>
+
+00:08:17.430 --> 00:08:17.440 align:start position:0%
+take the squares of them
+ 
+
+00:08:17.440 --> 00:08:19.430 align:start position:0%
+take the squares of them
+and<00:08:17.599><c> add</c><00:08:17.759><c> them</c><00:08:18.000><c> together</c><00:08:18.639><c> so</c><00:08:18.800><c> this</c><00:08:19.039><c> is</c><00:08:19.199><c> kind</c><00:08:19.360><c> of</c>
+
+00:08:19.430 --> 00:08:19.440 align:start position:0%
+and add them together so this is kind of
+ 
+
+00:08:19.440 --> 00:08:21.270 align:start position:0%
+and add them together so this is kind of
+the<00:08:19.599><c> process</c><00:08:20.080><c> that</c><00:08:20.319><c> i'm</c><00:08:20.479><c> gonna</c><00:08:20.639><c> do</c><00:08:20.960><c> except</c>
+
+00:08:21.270 --> 00:08:21.280 align:start position:0%
+the process that i'm gonna do except
+ 
+
+00:08:21.280 --> 00:08:22.790 align:start position:0%
+the process that i'm gonna do except
+we're<00:08:21.440><c> gonna</c><00:08:21.599><c> do</c><00:08:21.759><c> it</c><00:08:21.919><c> in</c><00:08:22.160><c> code</c><00:08:22.560><c> and</c><00:08:22.639><c> we're</c>
+
+00:08:22.790 --> 00:08:22.800 align:start position:0%
+we're gonna do it in code and we're
+ 
+
+00:08:22.800 --> 00:08:24.070 align:start position:0%
+we're gonna do it in code and we're
+gonna<00:08:23.039><c> use</c><00:08:23.199><c> a</c><00:08:23.440><c> loop</c>
+
+00:08:24.070 --> 00:08:24.080 align:start position:0%
+gonna use a loop
+ 
+
+00:08:24.080 --> 00:08:26.309 align:start position:0%
+gonna use a loop
+oh<00:08:24.319><c> and</c><00:08:24.479><c> one</c><00:08:24.639><c> more</c><00:08:24.879><c> thing</c><00:08:25.199><c> so</c><00:08:25.680><c> notice</c><00:08:26.000><c> how</c><00:08:26.160><c> we</c>
+
+00:08:26.309 --> 00:08:26.319 align:start position:0%
+oh and one more thing so notice how we
+ 
+
+00:08:26.319 --> 00:08:28.230 align:start position:0%
+oh and one more thing so notice how we
+have<00:08:26.479><c> our</c><00:08:26.639><c> one</c><00:08:26.960><c> now</c>
+
+00:08:28.230 --> 00:08:28.240 align:start position:0%
+have our one now
+ 
+
+00:08:28.240 --> 00:08:31.270 align:start position:0%
+have our one now
+if<00:08:28.400><c> we</c><00:08:28.960><c> mod</c><00:08:29.280><c> it</c><00:08:29.360><c> by</c><00:08:29.599><c> 10</c>
+
+00:08:31.270 --> 00:08:31.280 align:start position:0%
+if we mod it by 10
+ 
+
+00:08:31.280 --> 00:08:33.909 align:start position:0%
+if we mod it by 10
+we're<00:08:31.520><c> gonna</c><00:08:31.759><c> get</c><00:08:32.479><c> zero</c><00:08:32.959><c> right</c><00:08:33.279><c> and</c><00:08:33.519><c> zero</c>
+
+00:08:33.909 --> 00:08:33.919 align:start position:0%
+we're gonna get zero right and zero
+ 
+
+00:08:33.919 --> 00:08:35.110 align:start position:0%
+we're gonna get zero right and zero
+squared<00:08:34.399><c> is</c><00:08:34.560><c> of</c><00:08:34.640><c> course</c>
+
+00:08:35.110 --> 00:08:35.120 align:start position:0%
+squared is of course
+ 
+
+00:08:35.120 --> 00:08:38.709 align:start position:0%
+squared is of course
+zero<00:08:36.159><c> when</c><00:08:36.320><c> we</c><00:08:36.479><c> take</c><00:08:36.800><c> our</c><00:08:37.120><c> one</c><00:08:37.839><c> and</c><00:08:38.159><c> divide</c><00:08:38.560><c> it</c>
+
+00:08:38.709 --> 00:08:38.719 align:start position:0%
+zero when we take our one and divide it
+ 
+
+00:08:38.719 --> 00:08:39.909 align:start position:0%
+zero when we take our one and divide it
+by<00:08:38.959><c> 10</c>
+
+00:08:39.909 --> 00:08:39.919 align:start position:0%
+by 10
+ 
+
+00:08:39.919 --> 00:08:42.550 align:start position:0%
+by 10
+we're<00:08:40.240><c> also</c><00:08:40.640><c> going</c><00:08:40.719><c> to</c><00:08:40.880><c> get</c><00:08:41.360><c> zero</c><00:08:42.159><c> so</c><00:08:42.320><c> that's</c>
+
+00:08:42.550 --> 00:08:42.560 align:start position:0%
+we're also going to get zero so that's
+ 
+
+00:08:42.560 --> 00:08:44.070 align:start position:0%
+we're also going to get zero so that's
+how<00:08:42.719><c> you</c><00:08:42.880><c> know</c><00:08:43.039><c> we're</c><00:08:43.279><c> finished</c><00:08:43.680><c> right</c><00:08:43.919><c> so</c>
+
+00:08:44.070 --> 00:08:44.080 align:start position:0%
+how you know we're finished right so
+ 
+
+00:08:44.080 --> 00:08:46.310 align:start position:0%
+how you know we're finished right so
+this<00:08:44.320><c> isn't</c><00:08:44.480><c> going</c><00:08:44.640><c> to</c><00:08:44.800><c> loop</c><00:08:45.120><c> forever</c>
+
+00:08:46.310 --> 00:08:46.320 align:start position:0%
+this isn't going to loop forever
+ 
+
+00:08:46.320 --> 00:08:48.310 align:start position:0%
+this isn't going to loop forever
+okay<00:08:46.640><c> so</c><00:08:46.800><c> now</c><00:08:47.040><c> we</c><00:08:47.120><c> can</c><00:08:47.360><c> finish</c><00:08:47.760><c> this</c><00:08:47.920><c> helper</c>
+
+00:08:48.310 --> 00:08:48.320 align:start position:0%
+okay so now we can finish this helper
+ 
+
+00:08:48.320 --> 00:08:50.150 align:start position:0%
+okay so now we can finish this helper
+function<00:08:48.800><c> and</c><00:08:48.880><c> then</c><00:08:49.120><c> finally</c><00:08:49.600><c> be</c><00:08:49.760><c> done</c><00:08:50.000><c> with</c>
+
+00:08:50.150 --> 00:08:50.160 align:start position:0%
+function and then finally be done with
+ 
+
+00:08:50.160 --> 00:08:51.509 align:start position:0%
+function and then finally be done with
+our<00:08:50.320><c> solution</c>
+
+00:08:51.509 --> 00:08:51.519 align:start position:0%
+our solution
+ 
+
+00:08:51.519 --> 00:08:53.509 align:start position:0%
+our solution
+so<00:08:51.839><c> i'm</c><00:08:52.080><c> going</c><00:08:52.160><c> to</c><00:08:52.320><c> declare</c><00:08:52.720><c> a</c><00:08:52.800><c> variable</c><00:08:53.279><c> for</c>
+
+00:08:53.509 --> 00:08:53.519 align:start position:0%
+so i'm going to declare a variable for
+ 
+
+00:08:53.519 --> 00:08:55.430 align:start position:0%
+so i'm going to declare a variable for
+the<00:08:53.839><c> output</c><00:08:54.320><c> which</c><00:08:54.560><c> is</c><00:08:54.640><c> going</c><00:08:54.800><c> to</c><00:08:54.880><c> be</c><00:08:55.040><c> the</c><00:08:55.200><c> sum</c>
+
+00:08:55.430 --> 00:08:55.440 align:start position:0%
+the output which is going to be the sum
+ 
+
+00:08:55.440 --> 00:08:56.550 align:start position:0%
+the output which is going to be the sum
+of<00:08:55.519><c> squares</c><00:08:55.920><c> value</c>
+
+00:08:56.550 --> 00:08:56.560 align:start position:0%
+of squares value
+ 
+
+00:08:56.560 --> 00:08:59.910 align:start position:0%
+of squares value
+initially<00:08:57.120><c> it's</c><00:08:57.279><c> going</c><00:08:57.360><c> to</c><00:08:57.440><c> be</c><00:08:57.680><c> 0.</c>
+
+00:08:59.910 --> 00:08:59.920 align:start position:0%
+initially it's going to be 0.
+ 
+
+00:08:59.920 --> 00:09:03.190 align:start position:0%
+initially it's going to be 0.
+so<00:09:00.320><c> while</c><00:09:01.120><c> n</c><00:09:01.920><c> is</c><00:09:02.160><c> not</c><00:09:02.560><c> 0</c>
+
+00:09:03.190 --> 00:09:03.200 align:start position:0%
+so while n is not 0
+ 
+
+00:09:03.200 --> 00:09:05.990 align:start position:0%
+so while n is not 0
+and<00:09:03.360><c> we</c><00:09:03.440><c> can</c><00:09:03.600><c> just</c><00:09:03.760><c> say</c><00:09:04.000><c> while</c><00:09:04.399><c> n</c><00:09:05.200><c> in</c><00:09:05.360><c> python</c><00:09:05.839><c> at</c>
+
+00:09:05.990 --> 00:09:06.000 align:start position:0%
+and we can just say while n in python at
+ 
+
+00:09:06.000 --> 00:09:07.430 align:start position:0%
+and we can just say while n in python at
+least
+
+00:09:07.430 --> 00:09:07.440 align:start position:0%
+least
+ 
+
+00:09:07.440 --> 00:09:08.949 align:start position:0%
+least
+we're<00:09:07.600><c> going</c><00:09:07.680><c> to</c><00:09:07.839><c> continue</c><00:09:08.240><c> our</c><00:09:08.399><c> loop</c><00:09:08.800><c> we're</c>
+
+00:09:08.949 --> 00:09:08.959 align:start position:0%
+we're going to continue our loop we're
+ 
+
+00:09:08.959 --> 00:09:11.190 align:start position:0%
+we're going to continue our loop we're
+going<00:09:09.040><c> to</c><00:09:09.120><c> continue</c><00:09:09.600><c> taking</c><00:09:10.000><c> each</c><00:09:10.320><c> digit</c>
+
+00:09:11.190 --> 00:09:11.200 align:start position:0%
+going to continue taking each digit
+ 
+
+00:09:11.200 --> 00:09:12.949 align:start position:0%
+going to continue taking each digit
+and<00:09:11.440><c> squaring</c><00:09:11.920><c> it</c><00:09:12.080><c> and</c><00:09:12.160><c> adding</c><00:09:12.480><c> it</c><00:09:12.560><c> to</c><00:09:12.720><c> our</c>
+
+00:09:12.949 --> 00:09:12.959 align:start position:0%
+and squaring it and adding it to our
+ 
+
+00:09:12.959 --> 00:09:14.630 align:start position:0%
+and squaring it and adding it to our
+output
+
+00:09:14.630 --> 00:09:14.640 align:start position:0%
+output
+ 
+
+00:09:14.640 --> 00:09:17.030 align:start position:0%
+output
+so<00:09:15.040><c> remember</c><00:09:15.440><c> how</c><00:09:15.600><c> do</c><00:09:15.760><c> we</c><00:09:15.839><c> get</c><00:09:16.000><c> that</c><00:09:16.320><c> digit</c><00:09:16.880><c> we</c>
+
+00:09:17.030 --> 00:09:17.040 align:start position:0%
+so remember how do we get that digit we
+ 
+
+00:09:17.040 --> 00:09:17.750 align:start position:0%
+so remember how do we get that digit we
+can<00:09:17.279><c> take</c>
+
+00:09:17.750 --> 00:09:17.760 align:start position:0%
+can take
+ 
+
+00:09:17.760 --> 00:09:21.269 align:start position:0%
+can take
+n<00:09:18.720><c> mod</c><00:09:19.040><c> it</c><00:09:19.519><c> by</c><00:09:19.839><c> 10</c>
+
+00:09:21.269 --> 00:09:21.279 align:start position:0%
+n mod it by 10
+ 
+
+00:09:21.279 --> 00:09:24.550 align:start position:0%
+n mod it by 10
+and<00:09:21.440><c> we</c><00:09:21.680><c> also</c><00:09:21.920><c> have</c><00:09:22.000><c> to</c><00:09:22.240><c> square</c><00:09:22.720><c> our</c><00:09:22.880><c> digit</c><00:09:24.240><c> so</c>
+
+00:09:24.550 --> 00:09:24.560 align:start position:0%
+and we also have to square our digit so
+ 
+
+00:09:24.560 --> 00:09:30.310 align:start position:0%
+and we also have to square our digit so
+we<00:09:24.800><c> can</c><00:09:25.120><c> in</c><00:09:25.360><c> python</c><00:09:26.080><c> at</c><00:09:26.240><c> least</c><00:09:27.040><c> say</c><00:09:27.519><c> digit</c>
+
+00:09:30.310 --> 00:09:30.320 align:start position:0%
+ 
+ 
+
+00:09:30.320 --> 00:09:33.590 align:start position:0%
+ 
+double<00:09:30.720><c> star</c><00:09:32.160><c> two</c><00:09:32.480><c> so</c><00:09:32.640><c> that's</c><00:09:32.959><c> squaring</c><00:09:33.440><c> in</c>
+
+00:09:33.590 --> 00:09:33.600 align:start position:0%
+double star two so that's squaring in
+ 
+
+00:09:33.600 --> 00:09:34.710 align:start position:0%
+double star two so that's squaring in
+python
+
+00:09:34.710 --> 00:09:34.720 align:start position:0%
+python
+ 
+
+00:09:34.720 --> 00:09:37.030 align:start position:0%
+python
+and<00:09:34.959><c> we</c><00:09:35.040><c> can</c><00:09:35.200><c> take</c><00:09:35.440><c> our</c><00:09:35.680><c> output</c><00:09:36.240><c> and</c><00:09:36.480><c> add</c><00:09:36.800><c> this</c>
+
+00:09:37.030 --> 00:09:37.040 align:start position:0%
+and we can take our output and add this
+ 
+
+00:09:37.040 --> 00:09:39.590 align:start position:0%
+and we can take our output and add this
+digit
+
+00:09:39.590 --> 00:09:39.600 align:start position:0%
+ 
+ 
+
+00:09:39.600 --> 00:09:41.590 align:start position:0%
+ 
+and<00:09:40.000><c> the</c><00:09:40.160><c> last</c><00:09:40.399><c> thing</c><00:09:40.640><c> we</c><00:09:40.720><c> have</c><00:09:40.880><c> to</c><00:09:41.040><c> do</c><00:09:41.360><c> is</c>
+
+00:09:41.590 --> 00:09:41.600 align:start position:0%
+and the last thing we have to do is
+ 
+
+00:09:41.600 --> 00:09:43.509 align:start position:0%
+and the last thing we have to do is
+remember<00:09:42.240><c> update</c><00:09:42.720><c> our</c><00:09:42.959><c> value</c>
+
+00:09:43.509 --> 00:09:43.519 align:start position:0%
+remember update our value
+ 
+
+00:09:43.519 --> 00:09:46.630 align:start position:0%
+remember update our value
+n<00:09:43.839><c> because</c><00:09:44.959><c> we're</c><00:09:45.200><c> done</c><00:09:45.440><c> with</c><00:09:46.000><c> this</c><00:09:46.240><c> digit</c><00:09:46.480><c> but</c>
+
+00:09:46.630 --> 00:09:46.640 align:start position:0%
+n because we're done with this digit but
+ 
+
+00:09:46.640 --> 00:09:53.590 align:start position:0%
+n because we're done with this digit but
+now<00:09:46.800><c> we</c><00:09:46.959><c> have</c><00:09:47.040><c> to</c><00:09:47.200><c> find</c><00:09:47.440><c> the</c><00:09:47.600><c> next</c><00:09:48.839><c> digit</c>
+
+00:09:53.590 --> 00:09:53.600 align:start position:0%
+ 
+ 
+
+00:09:53.600 --> 00:09:56.630 align:start position:0%
+ 
+and<00:09:53.760><c> so</c><00:09:54.160><c> in</c><00:09:54.320><c> python</c><00:09:54.800><c> at</c><00:09:54.959><c> least</c><00:09:55.360><c> these</c><00:09:55.680><c> two</c><00:09:56.160><c> mean</c>
+
+00:09:56.630 --> 00:09:56.640 align:start position:0%
+and so in python at least these two mean
+ 
+
+00:09:56.640 --> 00:09:58.790 align:start position:0%
+and so in python at least these two mean
+integer<00:09:57.120><c> division</c><00:09:57.839><c> in</c><00:09:58.080><c> java</c><00:09:58.480><c> in</c><00:09:58.560><c> most</c>
+
+00:09:58.790 --> 00:09:58.800 align:start position:0%
+integer division in java in most
+ 
+
+00:09:58.800 --> 00:10:01.910 align:start position:0%
+integer division in java in most
+languages<00:09:59.279><c> you</c><00:09:59.360><c> can</c><00:09:59.440><c> just</c><00:09:59.600><c> get</c><00:09:59.760><c> away</c><00:10:00.000><c> with</c><00:10:00.320><c> one</c>
+
+00:10:01.910 --> 00:10:01.920 align:start position:0%
+languages you can just get away with one
+ 
+
+00:10:01.920 --> 00:10:03.750 align:start position:0%
+languages you can just get away with one
+and<00:10:02.079><c> so</c><00:10:02.240><c> this</c><00:10:02.480><c> loop</c><00:10:02.800><c> is</c><00:10:02.880><c> going</c><00:10:02.959><c> to</c><00:10:03.120><c> keep</c><00:10:03.360><c> going</c>
+
+00:10:03.750 --> 00:10:03.760 align:start position:0%
+and so this loop is going to keep going
+ 
+
+00:10:03.760 --> 00:10:05.910 align:start position:0%
+and so this loop is going to keep going
+until<00:10:04.480><c> n</c><00:10:04.720><c> is</c><00:10:04.959><c> equal</c><00:10:05.120><c> to</c><00:10:05.279><c> zero</c>
+
+00:10:05.910 --> 00:10:05.920 align:start position:0%
+until n is equal to zero
+ 
+
+00:10:05.920 --> 00:10:08.550 align:start position:0%
+until n is equal to zero
+and<00:10:06.079><c> then</c><00:10:06.240><c> we</c><00:10:06.399><c> can</c><00:10:06.640><c> finally</c><00:10:07.279><c> return</c><00:10:08.240><c> that</c>
+
+00:10:08.550 --> 00:10:08.560 align:start position:0%
+and then we can finally return that
+ 
+
+00:10:08.560 --> 00:10:09.350 align:start position:0%
+and then we can finally return that
+output
+
+00:10:09.350 --> 00:10:09.360 align:start position:0%
+output
+ 
+
+00:10:09.360 --> 00:10:11.829 align:start position:0%
+output
+and<00:10:09.600><c> our</c><00:10:09.680><c> solution</c><00:10:10.160><c> works</c><00:10:10.720><c> it's</c><00:10:10.959><c> not</c><00:10:11.200><c> the</c><00:10:11.440><c> most</c>
+
+00:10:11.829 --> 00:10:11.839 align:start position:0%
+and our solution works it's not the most
+ 
+
+00:10:11.839 --> 00:10:12.870 align:start position:0%
+and our solution works it's not the most
+efficient<00:10:12.320><c> solution</c>
+
+00:10:12.870 --> 00:10:12.880 align:start position:0%
+efficient solution
+ 
+
+00:10:12.880 --> 00:10:15.269 align:start position:0%
+efficient solution
+i'll<00:10:13.040><c> tell</c><00:10:13.200><c> you</c><00:10:13.440><c> that</c><00:10:13.760><c> so</c><00:10:14.000><c> we</c><00:10:14.160><c> needed</c><00:10:14.560><c> a</c><00:10:14.880><c> set</c>
+
+00:10:15.269 --> 00:10:15.279 align:start position:0%
+i'll tell you that so we needed a set
+ 
+
+00:10:15.279 --> 00:10:16.230 align:start position:0%
+i'll tell you that so we needed a set
+right
+
+00:10:16.230 --> 00:10:16.240 align:start position:0%
+right
+ 
+
+00:10:16.240 --> 00:10:19.750 align:start position:0%
+right
+the<00:10:16.480><c> set</c><00:10:16.959><c> made</c><00:10:17.200><c> it</c><00:10:17.360><c> so</c><00:10:17.519><c> our</c><00:10:17.760><c> memory</c><00:10:18.240><c> complexity</c>
+
+00:10:19.750 --> 00:10:19.760 align:start position:0%
+the set made it so our memory complexity
+ 
+
+00:10:19.760 --> 00:10:23.030 align:start position:0%
+the set made it so our memory complexity
+was<00:10:20.320><c> big</c><00:10:20.800><c> o</c><00:10:21.200><c> of</c><00:10:21.600><c> n</c><00:10:22.480><c> there's</c><00:10:22.800><c> a</c>
+
+00:10:23.030 --> 00:10:23.040 align:start position:0%
+was big o of n there's a
+ 
+
+00:10:23.040 --> 00:10:25.910 align:start position:0%
+was big o of n there's a
+actually<00:10:23.680><c> slightly</c><00:10:24.160><c> better</c><00:10:24.399><c> way</c><00:10:24.640><c> to</c><00:10:24.720><c> do</c><00:10:24.959><c> this</c>
+
+00:10:25.910 --> 00:10:25.920 align:start position:0%
+actually slightly better way to do this
+ 
+
+00:10:25.920 --> 00:10:27.509 align:start position:0%
+actually slightly better way to do this
+and<00:10:26.160><c> the</c><00:10:26.320><c> better</c><00:10:26.560><c> way</c><00:10:26.800><c> to</c><00:10:26.880><c> do</c><00:10:27.120><c> this</c>
+
+00:10:27.509 --> 00:10:27.519 align:start position:0%
+and the better way to do this
+ 
+
+00:10:27.519 --> 00:10:29.829 align:start position:0%
+and the better way to do this
+is<00:10:27.760><c> just</c><00:10:28.079><c> like</c><00:10:28.320><c> this</c><00:10:28.480><c> suggested</c><00:10:29.120><c> problem</c><00:10:29.680><c> a</c>
+
+00:10:29.829 --> 00:10:29.839 align:start position:0%
+is just like this suggested problem a
+ 
+
+00:10:29.839 --> 00:10:31.190 align:start position:0%
+is just like this suggested problem a
+lengthless<00:10:30.399><c> cycle</c>
+
+00:10:31.190 --> 00:10:31.200 align:start position:0%
+lengthless cycle
+ 
+
+00:10:31.200 --> 00:10:33.750 align:start position:0%
+lengthless cycle
+because<00:10:32.160><c> if</c><00:10:32.399><c> you</c><00:10:32.720><c> remember</c><00:10:33.120><c> the</c><00:10:33.279><c> drawings</c><00:10:33.680><c> i</c>
+
+00:10:33.750 --> 00:10:33.760 align:start position:0%
+because if you remember the drawings i
+ 
+
+00:10:33.760 --> 00:10:34.389 align:start position:0%
+because if you remember the drawings i
+was<00:10:33.920><c> showing</c>
+
+00:10:34.389 --> 00:10:34.399 align:start position:0%
+was showing
+ 
+
+00:10:34.399 --> 00:10:37.590 align:start position:0%
+was showing
+this<00:10:34.720><c> problem</c><00:10:35.360><c> is</c><00:10:35.519><c> a</c><00:10:35.760><c> linked</c><00:10:36.079><c> list</c><00:10:36.560><c> problem</c><00:10:37.360><c> at</c>
+
+00:10:37.590 --> 00:10:37.600 align:start position:0%
+this problem is a linked list problem at
+ 
+
+00:10:37.600 --> 00:10:39.829 align:start position:0%
+this problem is a linked list problem at
+its<00:10:37.760><c> heart</c><00:10:38.160><c> right</c><00:10:38.480><c> so</c><00:10:38.720><c> if</c><00:10:38.959><c> you</c><00:10:39.200><c> solve</c><00:10:39.600><c> linked</c>
+
+00:10:39.829 --> 00:10:39.839 align:start position:0%
+its heart right so if you solve linked
+ 
+
+00:10:39.839 --> 00:10:41.269 align:start position:0%
+its heart right so if you solve linked
+list<00:10:40.160><c> cycle</c>
+
+00:10:41.269 --> 00:10:41.279 align:start position:0%
+list cycle
+ 
+
+00:10:41.279 --> 00:10:42.870 align:start position:0%
+list cycle
+you're<00:10:41.440><c> pretty</c><00:10:41.680><c> much</c><00:10:41.839><c> solving</c><00:10:42.240><c> this</c><00:10:42.480><c> problem</c>
+
+00:10:42.870 --> 00:10:42.880 align:start position:0%
+you're pretty much solving this problem
+ 
+
+00:10:42.880 --> 00:10:45.350 align:start position:0%
+you're pretty much solving this problem
+as<00:10:43.040><c> well</c><00:10:44.240><c> but</c><00:10:44.480><c> thank</c><00:10:44.720><c> you</c><00:10:44.880><c> so</c><00:10:45.040><c> much</c><00:10:45.200><c> for</c>
+
+00:10:45.350 --> 00:10:45.360 align:start position:0%
+as well but thank you so much for
+ 
+
+00:10:45.360 --> 00:10:47.110 align:start position:0%
+as well but thank you so much for
+watching<00:10:45.920><c> if</c><00:10:46.079><c> this</c><00:10:46.320><c> was</c><00:10:46.480><c> helpful</c>
+
+00:10:47.110 --> 00:10:47.120 align:start position:0%
+watching if this was helpful
+ 
+
+00:10:47.120 --> 00:10:57.550 align:start position:0%
+watching if this was helpful
+like<00:10:47.360><c> and</c><00:10:47.519><c> subscribe</c><00:10:48.480><c> and</c><00:10:48.720><c> i</c><00:10:48.880><c> hope</c><00:10:49.040><c> to</c><00:10:49.200><c> see</c><00:10:49.360><c> you</c>
+
+00:10:57.550 --> 00:10:57.560 align:start position:0%
+ 
+ 
+
+00:10:57.560 --> 00:11:00.560 align:start position:0%
+ 
+soon
+

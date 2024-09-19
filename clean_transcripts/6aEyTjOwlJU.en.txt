@@ -1,0 +1,411 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+let's solve the problem decode ways so
+we're basically given a string of
+integers and we want to know with that
+string of integers how many different
+ways can we take that string of integers
+and decode it into a string of
+characters and we're given a specific
+mapping so we have 26 characters and
+each integer maps to a different
+character so we have an integer 1 2 all
+the way to 26 and each of these integers
+maps to a different character now we
+don't actually need to build that string
+that we are mapping to we just have to
+count the number of different ways we
+can decode it so down here in the
+example you can see a string like 12 can
+be decoded in two different ways one way
+to decode it is just one and two because
+one maps to a
+two maps to b so that's one string but
+remember we can have double digit values
+so 12 actually maps to its own character
+12 itself maps to 11. so there are two
+different ways that this string this
+string of integers could be mapped to a
+string of characters so we return two in
+the output now as you can see it would
+be very simple if we just had numbers
+one through nine that map to characters
+right the problem comes from double
+digits right from 10 10 a string like
+this can be taken in two different ways
+right 1 0 or just 10 right so that's
+where the complexity is going to come
+from from a string like this we could
+have two different decisions so we're
+going to be using a decision tree to
+kind of figure out all the possibilities
+with this at least that's going to be
+the brute force approach the only
+problem is that there's going to be a
+few different edge cases we have to
+worry about for example we could have a
+string like this we could have a string
+like zero
+six right how what what exactly does
+this map to well zero is not even in our
+our input right basically zero itself
+does not map to any character right six
+could map to a character but zero does
+not so if we ever get a zero you know a
+string starting with zero that's invalid
+so we have to return zero in that case
+this cannot be mapped to any uh this
+cannot be decoded in any way so we
+return zero okay let's try to figure out
+the brute force approach to solving this
+problem and in doing that we'll try to
+figure out some of the edge cases that
+we're gonna have to deal with suppose we
+have a string like this one two one how
+many different ways can this be decoded
+well let's say we start at the beginning
+right we could take one by itself right
+that's going to be some character right
+we don't really care what it is but it's
+going to be some character now we could
+also take the first two characters by
+themselves 12 by itself right because
+that's valid right so that's another
+decision starting from here we could
+take one or we could take 12. and by the
+way if this was a zero we definitely
+could not take it then we'd have to just
+stop immediately right because we can't
+start with a string starting at zero but
+if we had something like one zero right
+a ten maybe then we can take it because
+it's okay if a zero comes after a one
+and so basically any any integer by
+itself right one two three four five any
+integer by itself except for zero can be
+taken right so basically we can create
+any string of one
+you know one number from one through
+nine except zero right we're just not
+including zero it cannot be taken by
+itself but any from one through nine are
+okay right so what we're gonna see here
+is okay if we went down this path where
+we chose a one then the next character
+we're gonna be at is the two right of
+course two can be taken by itself right
+any number except for zero can be taken
+by itself it can be decoded in that way
+so when we're at this one or one when
+we're at this position we can take two
+by itself or we can take 21 right 21 is
+also some character i don't know what it
+is but remember we had values from 1
+through 26 right so having a 20 21 is
+completely fine that will decode to its
+own character right now of course if we
+had something like a 27 over here then
+we could not go down this path right
+then we just would not go down this path
+because 27 does not map to any character
+right so we're kind of learning that you
+know anything the integers have to be
+within 1 through 26 right and this 27 is
+not okay and so down this path we reach
+the end right we had a 1 and we had a 21
+right so there's no more characters to
+choose from here so basically this was
+one way that we could decode this input
+so when we reach the end we're gonna
+count that as a one right that means we
+found a single way to decode this input
+so this was a good base case where we
+return one and from here let's continue
+this one so we left off at two then we
+get to one can one be taken by itself of
+course again it's not a zero so we can
+take it by itself and so then we reach
+the end of the string again so this is
+another good base case one two one is a
+valid way to decode this string so if we
+started with one you know over here we
+could decode this in two different ways
+if we start with 12 how many ways can we
+decode it well if we start with 12 then
+we just have one character left the one
+character
+so that can be decoded another way so
+this is another good base case so
+basically we saw that we have three
+different ways that we can decode this
+string now just to kind of add a couple
+values to the string what if we had
+something like 31 after it so then you
+know let's say we left off over here you
+know we can choose the three by itself
+right because any character except for
+zero can be taken by itself could we
+take 31 we could not right the same
+reason we can't take 27 we can't take 31
+because it's it's greater than 26 right
+how are we going to determine that in
+the code you can do it a lot of
+different ways what i'm just going to
+say is we can only take double digit
+values if the the first digit starts
+with a one
+because if it starts with a one then for
+the second digit we can take anything
+from zero to nine right anything from
+zero to nine because then you know this
+this this double digit value will either
+be between 10 to 19 right and this value
+is less than 26 so that's perfectly fine
+but if we start with a two digit
+if we start with a two digit then the
+second digit has to be between zero and
+six because 26 is going to be less than
+or equal to 26 but if this became too
+large if it became a 27 that's not less
+than or equal to 26 so we can't do that
+that's how i'm going to decide it now
+what if the first digit started with a 3
+you know or or a four or a five or
+anything that's never going to work
+because if we're going to have some
+other second digit here it's never going
+to be less than or equal to 26 right
+it just won't be so we're only gonna
+have uh two decisions right we're only
+gonna have two branches if our first
+digit is a one or if it is a two so this
+is kind of the brute force approach that
+i'm showing you but it might not be
+super efficient because we could have
+two decisions at every single every
+single position then our time complexity
+would be something like 2 to the power
+of n where n is the length of the input
+string so how can we kind of do a little
+bit better well notice the sub problem
+that we're doing for example when we
+take when we take just 1 by itself and
+consider okay this is just going to be
+one way that we decode it then we're
+asking okay how many different ways can
+we decode the remaining of the string
+right that's the sub problem over here
+we're asking how many different ways can
+we decode 21 when we take the first two
+characters 12 then we're asking how many
+different ways can we decode the string
+one right so that's kind of how the sub
+problem is going to work the sub problem
+is just going to be some portion of the
+string you know for example you know
+starting from
+from here all the way to the end of the
+string how many ways can we decode this
+or how many ways can we decode this or
+how many ways can we decode the entire
+thing right to to be able to solve this
+problem how many ways can we decode this
+we have to solve the sub problem how
+many ways can we decode everything
+except the beginning and so basically
+you know how many different ways can we
+cache it well we're going to have some
+index i which could either be here or it
+could be here or it could be here it's
+just going to designate starting from
+here and taking the remaining portion of
+the string how many ways can we decode
+it so basically the dimension of our
+cache is going to be n right so that's
+kind of that's also going to be the time
+complexity because every time we get to
+a position i at most we have two
+different decisions to make right so
+that's going to be an o of one operation
+making those two decisions it's not like
+we're gonna have to run through a loop
+or anything like that we're not gonna
+have any loops and you'll see that when
+i write out the code if this is the size
+of our cache this is also going to be
+the size of our time complexity and this
+is also going to be the size of our
+memory this is because it's the size of
+the cache now just so you know i think
+this problem actually can be solved when
+we write out the actual dynamic
+programming solution not using a cache
+not doing it recursively but natural
+dynamic programming it can be solved
+with of one memory because one thing you
+might notice okay when we want to know
+how many ways can we decode this entire
+string well you know when we're at a
+pointer i we can either take this
+character by itself in which case then
+we're going to shift i by one over here
+and ask you know what's the result of
+this sub problem or if we take the first
+two characters 12 then we're gonna ask
+okay what's the result of this sub
+problem right so we're either gonna so
+basically you know it's a set dp of i
+we're either gonna ask dp of i plus one
+or i plus two right those are the only
+ones that we would need to look at right
+to compute a value like this we'd only
+need to at most look at two different
+positions that come after it so you know
+when we have our dp cache we actually
+don't need a full array to solve this
+problem we could do it with two just two
+variables similar to like a house robber
+problem approach to dynamic programming
+or like a fibonacci sequence problem
+right but with that being said i think
+we're ready to get into the code now now
+let's write the code so the first way
+i'm going to show you the solution is
+basically the recursive caching solution
+the o of n time and memory solution so
+we're going to initialize our cache we
+are going to put a single value in here
+basically the entire length of the
+string is going to map to one because if
+we get an empty string we want to return
+one in that case that's just kind of our
+good base case right and then we're
+ready to write out the recursive
+function i'm just going to call it dfs
+pass in a single variable i basically i
+is the position that we're at in our
+string s now one base case is if i is in
+our dp neither meaning either it's
+already been cached or i is the last
+position in the string in which case
+that's our base case right and then we
+would just return dp of i so that's you
+know our good base case it's either been
+cached or you know it's just the end of
+the string our bad base case is going to
+be if it's not the end of the string
+then we have to check what character it
+is if the character is starting with
+zero right if the string is starting
+with zero then it's invalid right
+there's no ways to decode a string that
+starts with zero so then we have to
+return zero so that's like our bad base
+case so so these are the two main base
+cases that we have but remember if it's
+not zero that means it's between one
+through nine in which case uh we know we
+can take this value as a single digit
+right so then the sub problem becomes
+dfs of i plus one right so that's what
+the result is going to be we're just
+going to call dfs on i plus 1 because we
+took the character at i as a single
+digit right but we know that there are
+some cases where we can also call i plus
+2. now what's a good way that we can
+write out that case well first
+let's this is one of the ways you can do
+it i'm sure there are better ways but
+basically if i plus 1 is less than the
+length of the string basically if we do
+have a second character that comes after
+the current one right because we're
+looking for a double digit character so
+if i plus one is in bounds and either
+the character s of i starts with a one
+right s of i is a one because if it
+starts with a one and there is a second
+digit that means that definitely we can
+take a double digit value right because
+anything between 10 all the way to 19 is
+a double digit value right so if as long
+as it starts with one we know we can
+make a double digit value or the other
+case is basically i'm trying to figure
+out a good way to format this in a
+readable way but basically or if s of i
+is equal to two right it starts with a
+two but if it does start with a two then
+the second digit right s of i plus one
+must be between zero and six right how
+can we check that in python at least we
+can check okay if this uh character
+happens to be in this substring one two
+three four five six right basically
+we're saying is that second digit any
+value between zero through six at least
+this is a clean ish way to write it so i
+encourage you to reread this uh
+condition if you don't fully understand
+it but it's basically what i mentioned
+in the drawing explanation we're
+basically checking if this double digit
+value is between 10 to 26 so then we can
+actually take it as a double digit value
+if we can do that then to our result
+we're going to add
+dfs of i plus two right it makes sense
+we're doing i plus two because this is a
+double digit value the sub problem
+becomes i plus two and then once we're
+done with that we can just go ahead and
+return the result but before we do don't
+forget to cache it so dp of i is going
+to be equal to result we're caching it
+and then we're going to return the
+result and then uh you know when we
+actually want to return the result in
+the outer function we can just return
+dfs of zero because we want to know how
+many ways can we decode the string
+starting at index zero and i ran it and
+as you can see it works and it's pretty
+efficient let me just copy and paste the
+actual dynamic programming solution i
+don't want to waste too much time to
+write it out because it is very similar
+and i think if you can come up with the
+recursive approach the logic for the
+dynamic programming solution is also
+pretty simple we have the exact same
+cache the only thing is we're doing this
+bottom up so we're starting at the end
+of the string iterating in reverse order
+we have the same base cases basically if
+s of i starts with zero then the dp is
+going to be zero right and basically you
+know this is the same as these two lines
+of code where where we just return zero
+else meaning you know that means it's a
+digit between one through nine then we
+can call dp of i plus one that's the
+same as when down here when we call dfs
+of i plus 1. now this bottom part is the
+exact same as the if statement we had
+down below right you can see the logic
+is the exact same you know the condition
+is the exact same only difference is
+here we're saying dp of i plus two is
+added down here instead of using dp of i
+plus two we actually called the
+recursive function dfs so this the logic
+is definitely pretty similar and in this
+solution at least the memory is o of n
+but i do think that you can instead of
+having an entire cache or array or
+whatever you're using you can just have
+two variables so i hope that this was
+helpful if it was please like and
+subscribe it supports the channel a lot
+and i'll hopefully see you pretty soon

@@ -1,0 +1,390 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+let's solve a problem
+daily temperatures we are just given an
+array of
+integers which represent temperatures
+and we want to return an array
+answer such that at every single
+position in answer it's going to be the
+same exact size as
+our temperatures array and at every
+single position in answer we want to
+know
+for the eighth day whatever the
+temperature was on the i
+day we want to find how many days did it
+take for us
+to find a temperature that was greater
+than the temperature on the eighth day
+so for example let's take a look at this
+uh
+temperatures array we can see there's
+eight values in the temperatures array
+and there's eight values in the output
+for
+each value in the temperatures array for
+example 73
+how many days did it take us in this
+array to
+to the right of of 73 how many days did
+it take us to find a new
+temperature that was greater than 73
+well on the
+on the exact next day we found 74 which
+is greater than 73
+so it took us one day so in the first
+position we're going to return a 1.
+what about 74 how many days did it take
+us to find a new temperature that was
+greater than it
+75 one day later right okay for 75
+how many days did it take us 71 is not
+greater
+69 is not greater 72 is not greater but
+76
+is greater and you can see that took
+about four
+days right so then we return a four in
+that position now there are some
+temperatures
+that never had a temperature greater
+than them look at these
+last two temperatures we had a 76
+nothing to the right of 76 is greater
+than it and of course the last position
+73
+there's no temperatures to the right of
+it in the first place so nothing
+was greater than 73 to the right so for
+these ones we're gonna return a default
+value of zero
+so we're gonna build an output array now
+looking at the
+the input what's the brute force way to
+do it of course we could do an
+n squared approach right like for every
+temperature we would look through the
+entire temperature array
+after it right and see okay how many
+days did it take us to find a
+temperature that was greater than this
+one right and then
+do the same thing for the next
+temperature over here look through the
+entire or i see
+you know what's the first day that we
+could find a greater temperature and
+keep doing that now that's going to be
+big o
+of n squared time complexity but there
+actually is an
+easier way to do this problem if we use
+some extra memory
+now let's just iterate through the input
+array once
+going to the right but we do need to
+know that for example
+we have to remember the previous
+temperatures
+that we looked at so if we you know
+let's say the previous temperature here
+was a 73 like in the input example and
+then the next temperature
+was a 74 when we get to this position we
+have to somehow remember
+what was the temperature that came
+before it right now obviously we could
+use a list for that or in this case a
+stack would be more intuitive
+because one thing we're going to notice
+is if we get a temperature
+greater than at 74 right then we're
+going to say okay what was our previous
+temperature 73 so this temperature is
+greater than it right
+so we can we can keep track of what
+index this
+occurred at and what index we're at
+right now and say okay the difference
+between these indexes
+was one right we clearly found a
+temperature the first temperature
+greater than the 73 so then what are we
+going to do from our stack well then we
+don't have to remember this anymore
+right we're going to say okay we're
+going to put a 1 in the output and we
+can pop this
+from our stack right so we're going to
+do stack.pop
+so this will be popped from the stack
+now when we get to a 75 the exact same
+thing is going to happen right clearly
+we see these temperatures are in
+increasing order so we see okay one day
+it took us
+to get r to get a temperature greater
+than this we'll put a one in the output
+pop this from the stack and
+if we just had increasing temperatures
+that would be really easy for us right
+but it's not always going to happen
+where we have increasing temperatures
+what happens
+if we had a 72 that came after it
+well we would we would look at the 72
+and compare it to the top of the stack
+say okay this is not
+greater so we can't pop from the stack
+but we're also going to take this value
+and add it to the sec so now we're going
+to have two values
+inside of our stack and what happens if
+we got another
+smaller value 71 right so far for none
+of these values
+do they have a temperature to the right
+of them that's greater right
+so all three of these are going to be on
+the stack what are we noticing about our
+stack
+it's going to be in monotonic
+decreasing order right
+this is a type of stack problem that i
+have solved on this channel a couple
+times but this is more of a beginner
+friendly monotonic
+decreasing stack problem what this means
+is that our stack is going to be in
+decreasing order that's what monotonic
+means it's always in decreasing order
+now technically
+what if what happens if we got another
+71 over here right
+well in that case 71 is not greater than
+this so
+all four of these would be on our stack
+currently right so it's technically not
+monotonic
+decreasing order it could be equal as
+well right we're noticing it's not
+strictly decreasing if two values are
+equal they're also going to go on the
+stack
+but if we got a greater value if i got
+to a 72 right
+what am i gonna do clearly 72 is greater
+than the top of our stack so i pop
+this one right but now we have a new
+value on the top of our stack
+this one is is our 72 greater than this
+it's not
+so so our stack is like this now we
+looked on our stack we took
+this guy out this is no longer in our
+stack but these three values are in our
+stack and still
+notice how the the stack is still in
+monotonic decreasing order it's always
+going to be the case
+what happens if instead of a 72 i had a
+73 then of course we'd still pop this 71
+and then we'd we'd also want to pop the
+72 because now 73
+is greater than 72 we pop this but it's
+not the case
+for this one but if you know we change
+this value to a 74
+excuse my bad handwriting over here but
+if we change this to a 74
+then yes we are going to pop this one as
+well so no matter what we do
+our stack is always going to be in
+monotonic decreasing order if i
+add a 70 over here it's we're not going
+to pop anything
+it's still in decreasing order so let's
+just run through a quick simulation let
+me show you how we can get this output
+in linear time
+using a stack so first value 73
+we're going to compare it to the top of
+our stack our stack is empty so we're
+not going to do anything we're just
+going to take the 73 add it to the stack
+next we're at 74 we're going to compare
+it to the top of the stack
+74 is greater than 73 right what index
+did 73
+occur at at index 0 what index does 74
+occur
+at index one so we take the difference
+one minus zero so
+it took us one position to find a value
+greater than
+73 so we can pop 73 from our stack and
+then 74
+is going to be on the top of our stack
+now now exact same thing is going to
+happen with 75 right
+75 is greater than this the difference
+between the indexes
+is one so we add a one to the output 474
+and we pop 74 now we're at and we add 75
+to the stack
+next we get 71. 71 is not greater than
+the top of our stack so all we do is add
+it
+we don't update the output in either of
+those positions
+again we get a smaller value 69 so we
+add it to the stack we can't pop any of
+these 69's not
+greater than either of these next we get
+a 72 right
+72 is greater than 69 right so we pop 69
+what was the difference between the
+indices it was one so we're going to
+take
+in the corresponding output position
+which is in this position for 69 we're
+going to say okay there was an
+index difference of 1. now we're going
+to look at the next top for our stack
+71.
+so the difference between these two is
+two so for 71 we're going to say it took
+two days for us to find a greater
+temperature than 71 so
+for this position we add a 2 so we pop
+71 from our stack
+now 72 is not greater than 75 so we
+still have a hole in our output over
+here we never found a greater
+temperature than 75 yet
+and similarly for 72 we have a hole
+next we get 76 and compare it to the top
+of our stack
+so 76 is greater than 72 we pop 72 the
+difference
+the number of days it took us was just
+one day so we can add a one
+for 72 and then we look at the next top
+of our stack
+yes we finally found a temperature
+greater than 75
+it took us one two three four days to do
+that so we can add a
+four in the output in the corresponding
+position over
+here and we can pop 75 from our stack i
+think i just need one more
+square over here because we have one
+last temperature in our input 73 so
+we're going to add 73
+see 73 is not greater than 76 so we
+can't pop that
+and now at the end we have no more
+temperatures to add right we still have
+two temperatures
+left in our stack and whatever the
+default value
+for the unpopped uh temperatures is just
+gonna be zero right they told us
+in the uh description of the problem
+that if we can't
+get a greater temperature we're just
+gonna put zero for these
+so that's how we build the output you
+can see it exactly matches
+the output that they built in the
+example and
+we did that in linear time by using this
+monotonically
+decreasing stack in o of end time of and
+memory
+so now let's jump into the code so we
+are going to have a result or answer
+array and it's initially going to be
+default values of 0 because that's kind
+of what they tell us
+and it's going to be the exact same
+length as the input array temperatures
+i'm also gonna have a stack remember
+this is our extra memory it's gonna
+uh contain a pair of values in the in
+the drawing example
+i only showed that we're adding the
+temperature but we're also gonna add the
+index of the temperature so we can
+calculate the difference basically
+calculate the number of days it took us
+to find a greater temperature so we're
+going to be adding two values
+to the stack a pair of temperature and
+the index that that temperature occurred
+at
+next we're just going to iterate through
+the uh temperatures array we're going to
+enumerate this meaning we're going to
+get the in
+the index of it and the value at the
+same time it just makes the code a
+little bit cleaner
+i is the index t is the temperature
+first thing we're going to do is
+see does is our stack empty and if it is
+is this temperature greater than the
+temperature on the top of our stack
+the top of our stack is index negative
+one in python
+and the temperature is the first value
+in that pair so index
+zero and so if this is true of course we
+can pop from our stack right so
+stack.pop
+so i'm going to call it the stack
+temperature and the stack
+index which we just popped right and for
+this
+temperature we want to you know in the
+result output say okay
+whatever the index of this temperature
+was stack index we want to compute the
+number of days it took us to find a
+greater temperature we can do that with
+i the current temperature that we're at
+minus
+the temp the index of the
+uh temperature that we just popped and
+we take the difference of those that
+gives us the number of days it took to
+find a greater temperature and then
+we're just adding it to the stack at the
+corresponding position we want to
+and then once that while loop is done it
+might execute zero times it might
+execute multiple times
+after it's done then we finally want to
+append to the stack
+the temperature that we're currently
+traversing so a pair the
+t the temperature value and the index of
+that temperature
+and once we're done with that we can go
+ahead and return our result the reason
+we don't have to fill
+in any extra zeros if our stack is
+non-empty is because we already
+initialized
+our result to b0 so if we never filled
+anything in
+the default value is automatically gonna
+be zero
+so you can see the solution works and is
+pretty efficient so i hope this was
+helpful
+if it was please like and subscribe it
+supports the channel a lot
+and i'll hopefully see you pretty soon

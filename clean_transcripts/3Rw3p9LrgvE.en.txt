@@ -1,0 +1,507 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+let's solve interleaving string so in
+this problem we're given a list of three
+strings well not really a list but we're
+given three strings s1 s2 and s3 and we
+just want to know a simple question can
+we form the string s3 by interleaving
+the strings s1 and s2 an interleaving
+string is basically when you take two
+strings and split them up into you know
+sub strings and then you add them
+together now they have a description
+over here but i kind of feel like this
+description actually just made things
+more complicated for me like with the
+absolute value difference being at most
+one you know taking these strings
+forming them together basically what
+we're saying is can we take
+the string
+one and string two split them into sub
+strings like you can see a string one is
+split into this one this one and this
+one and notice how the relative order of
+these three is maintained that's very
+important and this other string was also
+split into two portions this one and
+this one and the relative order of the
+characters was maintained you can see
+that this
+dbc goes in the front and the a goes at
+the end so the relative order is
+important but that's it we can split the
+strings in any way that we want and then
+add them together and we just want to
+know doing that can we form the third
+string so the first thing you might
+notice is well if we're taking the
+string splitting them of course the
+total number of characters has to match
+the total number of characters in string
+three and yes that's true it will have
+to match and in this case it does we
+have ten characters and the output in
+each of these strings is five five plus
+five equals ten so once you kind of
+understand what an interleaving string
+actually is the logic of this problem
+isn't too complicated right for example
+we see that the first character in
+string three is a right so for sure we
+need at least one of the characters from
+s1 or s2 to start with an a right
+because we can't just take an a from the
+middle of one of these strings and then
+say okay we'll put that at the beginning
+because remember the relative order of
+each of these strings has to be
+maintained so at least one of them has
+to start with an a and we can see that
+the first string over here does start
+with an a right so it's kind of brute
+force we're just comparing the first
+positions of each of the charac of the
+input strings right so now we have a d
+and we can choose between an a and a d
+in either of the strings but we're
+looking for an a in the target string so
+we're going to again pick from the first
+string and we can cross that out so now
+we have another sub problem we have the
+remaining portion of this and the and
+the entire portion of this string right
+so and we're kind of just brute forcing
+it obviously if we got to a character
+such you know let's say at this position
+we had a z but you know when you look at
+both of the strings that we have neither
+of them have a z in that case it would
+basically mean it's impossible for us to
+continue at this point but what if we
+had the opposite what if we had a b over
+here and you can see that this position
+is also a b right and let's say we were
+looking for a b right so then which one
+of these are we gonna take are we gonna
+take the b from string two or the b from
+string one that's the back tracking or
+the brute force portion right we could
+take either of them so we pretty much
+have to make a decision in our decision
+tree that we are gonna choose both we're
+going to see if we do it either of these
+ways is it possible for us to take these
+two strings interleave them together to
+build the output string right because
+maybe one of the ways works but the
+other way doesn't we do have to try both
+of the ways but it turns out we can use
+a dynamic programming technique called
+caching where we can eliminate a bunch
+of repeated work so therefore the time
+complexity of the solution can actually
+be broken down to m times n where m is
+the size of one string and n is the size
+of the other string and you can actually
+instead of doing caching you can
+actually do a true dynamic programming
+solution that will also give you this
+time complexity i'll explain a little
+bit about both of those so let me just
+kind of show you what the decision tree
+for this problem would look like and
+then how we're actually going to do the
+caching so notice how we're going to
+start at the beginning of both of the
+strings and we're also going to start at
+the beginning of the third string right
+we're looking for this character can we
+get it from either of string one or
+string two right so that's kind of how
+our decision tree is gonna work we're
+gonna have one pointer let's call it i1
+which is going to represent what
+position we're at in s1 and we're gonna
+have another pointer let's call it i two
+it's a little bit messy but i2 is gonna
+represent the position we're at in
+string two and we're gonna have a third
+pointer over here let's call it i3 right
+but do you notice that this pointer is
+always going to be the addition of i1
+and i2 if we add these pointers together
+we're always going to get this one right
+because notice how you know they're both
+initially at zero right zero plus zero
+is going to equal zero which is the
+first one here if we increment one of
+them right if we take this pointer and
+shift it over here this is gonna be one
+so we're gonna take one plus zero add it
+together and we're gonna get at the
+position one which is gonna be over here
+and that makes sense because if we use a
+character from here that's gonna take up
+the character that's over here so that's
+kind of how the math works out so in
+reality we just have to keep track of
+two pointers the third pointer can be
+calculated for the position of this
+string so we start at the position zero
+zero the first zero indicates what
+position we're at over here second
+pointer indicates where we're at over
+here
+and we're going to compare so does this
+equal this character of course it does
+write d does not equal a but a equals a
+so we can shift our pointer over here
+and shift our pointer over here so in
+this case we didn't have to make two
+decisions we just had an easy job we
+just had to make one decision so let's
+call that uh one zero because we shifted
+our first pointer to the position one
+and now i'm going to go kind of fast
+because i think you probably get what
+we're going to do so once again this is
+the character
+that matches in string three so we can
+shift both of our pointers to the next
+position and once again we incremented
+the first pointer so we're going to be
+at two
+zero and in this case b does not match d
+but this character does so once again
+let's shift our pointers by one and in
+this case we shifted the second pointer
+so let's call that two
+one i don't really know why i'm drawing
+the decision tree like this but let's
+continue so in this case you can see
+we're looking for a b and we can get a b
+from this one or from this one right so
+that's gonna be two different decisions
+we finally have two different decisions
+we can either do three one or we can do
+two
+two depending on how we do it so this is
+kind of where the complexity is going to
+come right and the worst case would be
+that we could make two decisions every
+single time so you can see that if we
+continue drawing this out the worst case
+time complexity for a particular uh
+decision tree could be 2 to the power of
+n plus m basically the total number of
+characters that we have but you can see
+that we might be repeating the same sub
+problem multiple times right how many
+different possible pairs of values could
+we even have like this well we could
+only have n different values in the
+first position we could have m different
+values in the second position that's
+where the time complexity n by m comes
+from so we can do this by caching i'm
+going to show you how we can do that in
+the coding portion so this will make
+sure that we have this many sub problems
+and if we repeat the same sum problem we
+can just do it in o of one time because
+we're going to be caching the result of
+that now what exactly is the value that
+we're going to be caching well for any
+particular sub problem like for either
+of these branches we want to know
+ultimately from here are we actually
+able to form the remaining portion of
+the result string so either it's going
+to be true or false right we're not
+storing a value like a number or
+anything we're going to be storing true
+or false for any of these and actually
+if we find a single true then we don't
+have to cache it because if we find a
+single true that means we are able to
+form the result string and then we can
+immediately return true by going back up
+to the root that we called this
+recursive function from so we discussed
+the memoization solution but let's go
+over the true dynamic programming
+solution which is going to be pretty
+similar to what we just talked about so
+just to quickly go over what was the
+base case in our recursive solution that
+we went over well what what would happen
+if let's say the the last uh pointer in
+the first string reached this position
+out of bounds and the pointer of string2
+reached this position that would mean if
+we added them together we would get to
+the out of bounds position in s3 right
+so basically if both of the pointers
+become out of bound that's how you know
+we have reached the base case and in
+that case that means we built the
+resulting string and we can return true
+so when we go over to the dynamic
+programming solution take a look at this
+grid that i've drawn you might recognize
+this as a regular dynamic programming
+grid this is string one this is string
+two we multiplied them together because
+remember it's m by n that's what our
+cache is going to look like so i'm
+basically drawing what the cache looks
+like but you can see that this is the
+dimensions but i have one extra layer
+out here which is important in this
+problem remember what i just said if
+this if we're out of bounds in this
+string and we're out of bounds in this
+string that's going to lead us to this
+position so that's our base case we want
+to initialize this with a t for true and
+a particular value in this grid for
+example this one means that let's say we
+had this remaining portion of the string
+and we had this remaining portion of the
+string you can see that both of these
+together form a str form two different
+characters right two characters in total
+so what we're asking is if you look at
+the last two characters in our resulting
+string we want to know can these two
+characters a and c form this string
+a c right that's the target string that
+we're looking for can these two
+characters form it of course by looking
+at them you can tell yes they can form
+this string right but that's basically
+what we're going to be computing we're
+going to be doing that for every single
+cell in this 2d grid and yes we're even
+gonna have to calculate these out of
+bounds positions why is it that we have
+to do that because they're actually
+valid positions take a look at this
+position this means if we had zero
+characters from string one but we had a
+single character from string two meaning
+you know the character a can we form the
+last character of the target string well
+the last character on the target string
+is c
+this character is a so therefore we
+can't do that right so we have to put a
+false over here and similarly from this
+position we're looking at just these
+last two characters c a using these
+characters can we form the target string
+a c you might think yes but no we can't
+because remember the relative order of
+these characters has to match this first
+character c has to match this character
+but it doesn't so this is also going to
+be a false right and of course we would
+do the same thing for this position
+right computing this if we had a c from
+here but we had nothing from here in
+that case this is actually going to be a
+true because we have a value here for an
+arbitrary position like this let me just
+show you what's going to happen
+obviously this mat this is a b here and
+we have a b in this portion as well so
+if we take the indices of these which is
+two plus two we get to index four in our
+target string which is this target
+character right we're looking for a b
+now notice how either of these can get
+there if we used the b from
+this position
+like this b what would we do in that
+case well then we'd want to know okay we
+if we were able to get a b now does the
+result in the bottom position equal true
+why are we looking in the bottom
+position because we just used this b so
+we can't use it again we have to use
+these last two characters but we can use
+this first b if we want to because we
+didn't use it yet so in that case we
+would go down in the opposite case if we
+used this b we cross it out we can still
+use this one but we can only use two
+characters from here so in that case we
+would go to the right now if either of
+these in this case we can go in both
+directions if either the bottom neighbor
+is true or the right neighbor is true
+then we can put true in this position if
+they were both false then we can't put
+false if only then we can't put true if
+only one of them was true then we can
+also put true now let's dive into the
+coding portion so in the interest of
+time i'm just going to skip and show you
+what the memoization recursive solution
+looks like and then we're going to code
+up the dynamic programming solution so
+we do have a cache in this case it's
+going to be a hashmap and you can see
+we're passing in two pointers into our
+function just like we did in the drawing
+right and our base case is yes if i and
+j are out of bounds then we can return
+true that's one base case another base
+case is if this position has already
+been computed meaning it's already in
+the dynamic programming cache then we
+can just return the result now if that's
+not the case then we have to go into our
+recursive case you might not be able to
+tell but yes this is recursion because
+we're checking if i is still in bounds
+right because technically one of the
+strings could be out of bounds so if i
+is in bounds then we're gonna check does
+the character in string one i basically
+is the pointer for string one does that
+character match the target position
+we're looking at in string three like i
+said we're taking i plus j the two
+pointers adding them together to find
+the target character in string three so
+if the characters match then we're gonna
+take i and increment it by one right
+we're incrementing it by one because
+we're saying we just used the character
+from string one now the next two lines
+of code are the exact opposite if the
+string if the character if the pointer
+in string two is inbounds and that
+character in string two matches the
+target character then we're gonna take
+dfs and increment j by one saying we
+just used the character in string two
+and if that returns true then we can
+return true in either of these cases we
+don't have to cache that because if we
+find one valid result then we can
+immediately return true from the root
+function if neither of them return true
+then we have to dp cache this as false
+and then return false because we don't
+have to repeat the work again so that's
+the entire function i bet it's a little
+bit easier than you expected and then
+all we have to do is call dfs starting
+at the beginning of both strings 0 0. so
+now let's do the dp portion and the
+first thing i'm going to do is just make
+sure that the length of the strings add
+up to the length of the target string so
+if length of string two and string three
+add up to the length of string one then
+we can return
+false if they don't add up let me make
+that correction if they don't add up
+then we return false otherwise we can
+continue so otherwise we can actually uh
+basically so otherwise we can initialize
+our dp two-dimensional array i'm just
+going to copy paste that in the interest
+of time so remember we're just gonna
+initialize this as basically empty in
+other words we're gonna initialize
+everything as false and the dimensions
+are going to be basically the length of
+string one and string two plus one
+remember because we do need that outside
+layer so that's just what this is doing
+you could do this differently in other
+languages and for the out of bounds
+position like the out of bounds position
+in both strings string one and string
+two we want to initialize that corner
+value as true remember just like in the
+drawing position the drawing picture and
+i don't know if i mentioned this in the
+drawing but we are going to start at the
+bottom right corner and then work our
+way to the left and then work our way up
+row by row so that's what these two are
+uh these two for loops are indicating
+it's a nested loop we're starting at the
+bottom right working our way to the top
+left now the rest of this code is
+actually going to be very much borrowed
+from what we just did in the recursive
+solution so i'm actually just going to
+copy and paste these two lines to show
+you it's actually very similar to the
+recursive solution so what exactly do we
+need to change the same thing is true if
+i is in bounds because remember one of
+these strings could be one of these
+pointers could be out of bounds because
+we are uh computing some of those
+out-of-bound corner positions right so
+if i is still in bounds then we want to
+check okay does that character equal to
+the target character we're looking for
+if it does we don't want to compute dfs
+right but we want to know if the result
+of this is true but we can do that from
+our dp right we're not doing recursion
+we're just using our dp value and since
+we're computing this bottom up we know
+that the result of this will already be
+computed so instead of saying dfs let's
+change this to dp of i plus 1
+and j
+so if this happens to be true then what
+are we going to do we're not going to
+return true right because we're not
+doing this recursively we're going to
+set dp of i and j whatever we're
+currently at in this for loop and then
+set it equal to true right again for
+these bottom two lines we're going to do
+the exact same so instead of calling dfs
+if j is still in bounds and the
+character at j equals the character
+we're looking for we're not going to
+call dfs we want to know is dp of these
+two pointers still
+true so we're going to say i dp of i and
+dp of j plus 1. if that's true then we
+can set our dp position to true it's
+possible that both of these if
+statements will execute that isn't a
+problem for us right we'll set it to
+true either way now if neither of these
+if statements executes we want to set
+our dp position equal to false but
+notice how we already initialized the
+entire 2d grid to false right so we
+actually don't need to do that third
+condition
+and i know i kind of pretty much just
+cheated by copy and pasting a bunch of
+this but that's the entire code i'm not
+kidding so once you do that
+nested for loop we can just return the
+result of dp at position zero zero
+that's the entire code so yes this
+solution works it's efficient and we
+just and i just showed you how to solve
+it in two different ways so i hope this
+was helpful if it was please like and
+subscribe it supports the channel a lot
+and i'll hopefully see you pretty soon

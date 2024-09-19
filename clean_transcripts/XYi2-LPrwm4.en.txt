@@ -1,0 +1,677 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+let's solve
+edit distance so this is a dynamic
+programming problem and this is
+very similar to the problem longest
+common subsequence which is a problem
+i've solved on this channel so
+this problem is basically an extension
+of that problem
+so we're given two strings word one and
+word two
+and our goal is to return the minimum
+number of
+operations required to take word one
+and convert it into word two and we only
+have
+three operations available to us
+inserting a character
+into word one right remember because
+we're trying to take word one and
+convert it
+into word two we can't change word two
+we can delete a character
+from word one because we can't change
+word two and we can replace a character
+in word one and so replacing a character
+is basically changing
+one character into another so in this
+case
+there's three operations it would take
+to take horse and turn it into
+this string of course we'd want to get
+rid of the
+h right but we would do that by
+replacing the h with an
+r so this is going to be an r and then
+we have
+two r's right so we'd get rid of this r
+so we
+can get rid of that and lastly we see we
+have
+r o s we have an extra e so we're going
+to get
+rid of the e as well so we did that in
+three operations
+so we can return three so first of all
+let's analyze some simple cases
+what if we had the case where word one
+and word two were both
+just empty strings how many operations
+does it take then to take word one and
+convert it into word two
+obviously zero right we don't have to do
+anything they're already the same
+similarly if word one was let's say abc
+and word two
+is also a b c we also
+don't have to do anything right we'd
+look at the first character see oh
+they're the same right
+since they're the same of course we
+don't have to consider them anymore
+right
+then all we have to do is compare the
+remainder of each string right but then
+we see again hey b
+is the same good c is also the same
+good and look perfectly timed there's no
+characters left in word one and there's
+no characters left in word two
+therefore zero operations were needed
+right
+what if word one was abc
+and word two was empty then what would
+we do is it even possible to take this
+word and then convert it into an
+empty of course it is in this problem
+it's
+always going to be possible to take word
+one and convert it into word two right
+because we can insert a character we can
+delete a character
+or we can replace a character so it's
+always going to be possible
+because in the worst case right this is
+what we could do
+we could take every single character in
+word one and just delete it
+delete that delete that because none of
+these show up in word two
+just delete all of them if there was
+some character maybe there's a z over
+here
+then we could just copy every character
+after we've deleted these
+and then copy it over here right add
+that z but no we don't need to
+so my question to you is if word two is
+empty
+and word one is not empty then what's
+this is a base case
+how many operations is it gonna take is
+always going to take the length of word
+one whatever the length happens to be
+because we're gonna have to delete
+every single character right so that's
+one base case word two is empty
+what about the opposite case what if
+word two was abc
+and word one was empty is this possible
+is it possible to take word one and
+convert it to word two
+of course it is right because we're
+allowed to insert characters in here so
+basically we could just read character
+by character a
+add that here b add that here c add that
+here
+as well right so we can just copy every
+character so my question to you is in
+in this case the opposite case where
+word two is
+non-empty but word one is empty how many
+operations is it gonna take well we're
+just gonna
+copy each character in here right so in
+this case it's gonna take the length
+of word two that's how many operations
+it's going to take right so basically
+what i'm getting at is if
+word one is empty and word two is
+non-empty
+then we're gonna return the length of
+this as the minimum number of operations
+if the opposite was true right maybe
+this is empty but this is not empty then
+we'd return the length of the non-empty
+one if one of them is empty we're going
+to return the length of the non-empty
+string that's going to be the minimum
+number of operations
+this is important because this is our
+base case so now let's try to brute
+force this
+how are we going to handle it well we're
+going to have two pointers right we're
+going to have one pointer
+pointing at a character in word one and
+a second pointer pointing at a character
+in word two we're going to compare
+character by character
+so the the one case is what if they're
+exactly equal
+then what what is the sub problem then
+right because we don't have to consider
+these characters anymore
+now we're dealing with the sub problem
+of the remainder of the
+of those strings so basically if i'm
+calling the pointer in word one i and
+i'm calling the pointer in word to j
+if these characters are equal that means
+we can basically say i plus one is the
+new problem and
+j plus one is the is the new problem in
+word two right so
+we're just shifting our pointers like
+that so basically to summarize
+if these characters are equal right at
+the i and j
+pointer basically what i'm saying the
+characters are equal then we're just
+going to increment i by 1
+and increment j by 1. the number of
+operations we had to do was exactly
+zero right we didn't have to do anything
+they were already equal we didn't have
+to
+modify word one at all to the next
+character so our i
+pointer is going to be over here our j
+pointer is going to be here because we
+incremented both of them by one so now
+let's compare the characters
+c and b are not equal right so now our
+else condition condition is going to
+execute and we don't know
+we know we have three options we can
+insert a character
+delete a character or replace a
+character from word one
+but we don't know which one to do right
+so let's just try
+all three what happens if we insert
+a character what character are we gonna
+wanna insert over here
+obviously we'd wanna insert the
+character from word two we don't know if
+that's going to end up making word one
+exactly into word two in the minimum
+number of operations but let's just try
+it and see what happens
+right so what would we do if we inserted
+a c over here right we're not deleting a
+character all we're doing is inserting a
+c
+over here in that case our i pointer is
+still going to be pointing at this b
+right
+but since we inserted a c over here it's
+hard to read
+but let's say i inserted a c in between
+over here
+that means we took care of the c from
+word two right so
+basically we don't need to find a
+matching c for it anymore we do need to
+find a matching b
+somewhere over here right so we're gonna
+leave our i
+pointer where it is but we're gonna take
+our j pointer and then shift it to the
+next position
+in word two that's what we would do if
+we inserted a character
+so as you can see when we insert a
+character
+we are taking one operation right so
+we're gonna have to add a one to the
+number of operations we did
+but when we when we shift our pointers
+the i
+pointer stays the exact same but j
+is incremented by one so that's one
+possibility
+another possibility is we delete a
+character so we're allowed to delete
+characters from
+our word one right so what would happen
+if i just deleted this character what
+we're saying is
+okay i can't find a matching c in this
+position right
+and we and we don't have a b
+corresponding to that position so i'm
+just going to ignore this guy
+and hopefully the remainder of the
+strings can match up right so what i'm
+saying is i'm going to take our
+eye pointer and yes i am going to shift
+it to the next position because i just i
+want to pretend like this character
+never existed but it does take one
+operation to complete that but since we
+did not
+find a matching c yet right we have to
+leave our j pointer here right we have
+to keep searching until we find a
+matching c
+ultimately we want word one to match
+word two
+so in this case for the delete operation
+what we're saying is i is going to be
+shifted but j is going to stay the exact
+same so i plus 1 but j stays the same
+as you can see this is you know kind of
+a pattern we're starting to see a
+pattern right
+and the last thing that we can do is
+replace
+a character from word one that shows up
+in word two right obviously if we're
+replacing a character from word
+one right we're gonna want the character
+that's matching
+in word two right so what we'd wanna do
+is take this b
+and replace it with a c character right
+if we did that clearly these two
+characters match right we
+made them match we forced these
+characters to match
+so in that case we we know that the c
+has a matching c
+up here so we can take this i pointer
+and shift it and we can take our j
+pointer and shift it to the next
+position right so
+the replace actually ends up doing the
+exact same thing as
+if the characters were equal and that
+makes sense because what we're doing is
+we're
+forcing them to be equal with the
+replace operation
+the difference between the replace and
+and if they were already originally
+equal
+is that the replace does take a single
+operation if they were already equal
+the number of operations it takes is
+zero right
+so it does come with a cost even though
+replace is pretty powerful
+as i said with replace what we're going
+to do is increment i
+and increment j so let's just go with
+the replace operation because that's
+actually going to end up
+being the minimum solution so now we
+shifted our pointers to the next
+position we see
+d and d they match each other so this is
+the statement that's going to execute
+and we know that takes 0
+operations right so we're going to
+increment both pointers by 1.
+j is going to be over here now i is
+going to be over here notice now how we
+have two
+empty strings remember the base case if
+both strings are empty
+we can return 0 because it takes zero
+operations to make them
+equal right they're already equal so
+we're done we return
+zero how many operations did it take by
+the way if we
+if you were counting we did have to
+execute a single replace
+operation that took one operation so the
+result is
+one so we are noticing that the sub
+problems
+are good to solve before we try to solve
+the original
+problem of comparing the entire lists
+let me reformat this
+into the dynamic programming explanation
+so you may have seen something like this
+before this is going to be a
+two-dimensional dynamic programming
+problem
+it's good to visualize it kind of like
+this so what we're doing here is we are
+comparing these two strings
+and for this position this is what we
+want to calculate
+in this position what we're going to do
+is we're going to store
+the basically the minimum number of
+operations for
+these two strings starting at this
+character for word two
+starting at this character for word one
+so basically the entire strings
+is going to be stored here what would be
+stored in this position basically
+corresponding to here so we're comparing
+these two
+basically the remainder of this string
+and from here
+the remainder of this string so in this
+position what we would store
+is the minimum number of operations it
+would take to make this
+sub problem these two sub strings how
+many
+minimum operations it would take to make
+them equal
+okay so that makes sense so far but then
+why do i have this
+extra layer over here the this
+portion is for our base case what would
+be over here
+right so clearly we see that there's an
+empty string over here there's an empty
+string over here what value should i put
+over here obviously zero right two empty
+strings take
+zero operations to make equal what about
+in
+this position what does this position
+tell us well we have an empty string
+from word two
+but over here we have the entire string
+from word one
+so how many minimum operations would
+that take remember we went over that at
+the beginning
+and it would just be the length of the
+non-empty string so here we can see the
+length of the non-empty string
+is three what about in this position
+similarly
+word two is empty word one has a length
+of
+two so we'd put two and basically
+continuing
+to one and then down to zero right so
+similarly over here
+we have an empty string from word one
+word two is completely
+full and the length of it is three so
+we're going to put three here
+and then continue just counting down
+three two
+one right so in what order are we going
+to solve this
+if we start at the beginning then we're
+going to notice something
+notice okay well we're comparing these
+two characters in this position right
+they're both
+equal right so then we're going to
+execute this statement right so we're
+going to take
+i plus 1 and j plus 1. what does that
+tell us that tells us that the result of
+this value
+depends on this value right
+so okay then let's take a look at this
+value well in this case they're
+not equal b and c are not equal
+so then what are we going to do remember
+if they're not equal we have to brute
+force it we have to take a look at all
+three operations and remember i
+corresponds to word one
+j corresponds to or two so in the insert
+operation what we're going to do is look
+in this spot
+in the delete operation what we're going
+to do increment i by 1 in this case so
+we're going to look in this spot
+and for the replace operation we're
+incrementing both of them so then we're
+going diagonal
+again from this since we have three
+values that we're looking at what we're
+going to do is we want to know which one
+of these three
+leads us to the minimum number of
+operations right so what in reality
+what we're going to do is since we're
+noticing that
+it depends on the lower values let's do
+this
+bottom up this is called bottom up
+dynamic programming we're going to start
+at the bottom
+compute this value compute this value
+compute this value
+and then so on and so on and then work
+our way backwards until we finally
+get to the result and notice if we do
+start
+in this position we already have the
+values that it could possibly depend on
+because those are our base cases over
+here
+diagonally and below right and so notice
+d and d are equal so what we're going to
+do is from here we're going to look at
+the diagonal value
+right because this this statement is
+going to execute we're going to see it's
+zero
+so that's what we're going to put over
+here and then eventually we would end
+we would compute these and then
+eventually we would get up over
+here right and we'd compute the value
+from that
+and then eventually we'd get all the way
+up here and we would compute the value
+from here you would see that we'd end up
+putting a 1 over here we'd end up
+putting a 1
+over here so what would the value over
+here end up being well let's look at the
+two characters d
+and c they're not equal so what we're
+going to do is we're going to look down
+we're going to look
+diagonal and we're going to look to the
+right which one of those values is
+minimum
+it's over here so that's 0 but we do
+have to add 1 because
+in this case we do need to do a single
+operation so we add 1
+and similarly is what we would do for
+every single position
+you know we'd compare the characters and
+then we'd execute this statement or we'd
+execute
+this statement so i'm not going to run
+through that but i think this is simple
+enough that if you want to you can get a
+piece of paper out
+and then try it for yourself and you'll
+probably come to the same conclusion
+so that being said let's jump into the
+code this is exactly what i'm going to
+do with the code i'm going to have a two
+dimensional
+array and i'm going to execute these
+exact statements
+so i'm going to call our two-dimensional
+array our cache
+and so basically i'm going to initialize
+it to
+initial values of just max integer or
+float infinity in python
+and you can probably initialize this any
+way that you'd like in your own language
+there's probably
+a different ways that you'd want to do
+that but i'm going to use
+a list comprehension so basically i'm
+creating a list
+fl with float infinite as the value of
+length
+word two plus one remember because we do
+need to make
+our two dimensional array a little bit
+bigger to handle those base cases
+for this list i'm gonna have one of
+these lists basically for every
+character
+in the range of the length of
+word one so this probably looks
+confusing if you're not familiar with
+python but basically i'm just creating a
+two-dimensional array
+with these dimensions actually word one
+the length of board one plus one
+because remember we are worrying about
+the base case but basically yeah
+a two dimensional array so now i wanna
+fill up
+our bottom row of the two-dimensional
+grid
+so what i'm gonna do is for our cache
+i'm going to go to the bottom row what's
+the bottom row it's going to be the
+length of the word
+1 and that's going to be the bottom row
+and we're going to go through every
+value of it so for
+every j of that remember where it's
+going to be basically
+in descending order so what i'm going to
+do is and it's going to initially start
+at the length of what word two happens
+to be
+because remember the base case is if one
+string is empty and the other string
+isn't so word two and it's going to
+basically be decrementing by one each
+time so what i can just do is just say
+length of word two dec subtracted by
+j and actually i keep forgetting the
+bottom row is actually not just going to
+be the length of word tube that's going
+to be length of word two plus
+one so i want to make sure to add that
+plus one and similarly what we're gonna
+do is and for that right most column
+what we're gonna do is go through every
+position in it so length of word one
+plus one and for every work every
+position in
+the last column and the last column can
+be
+found like this basically for every i
+in the last column which is going to be
+length of word
+2 in this case and what we're going to
+do is similar to what we did
+up here take what the original length of
+word one is
+and each time subtract it by an
+additional value
+basically we can use i in this case so
+this might be a little bit confusing
+you can do this a bunch of different
+ways if this is confusing to you you can
+probably find your own way to do it
+basically we're just initializing the
+base case of our two dimensional array
+but so now let's actually get into the
+dynamic programming portion so remember
+this is going to be bottom
+up so we're going to work our way
+backwards from the length of
+word one minus one and the reason we're
+minusing one is we know we already
+filled up our base case
+portion so now we actually want to get
+to the actual dimensions of our two
+strings
+and we're going to do this in
+decrementing order until we get
+to the beginning until we get to the
+zeroth index which is when this is going
+to end up stopping
+and similarly let's work our way
+backwards from the length
+of word to so we're going to start at
+the bottom row and work our way
+backwards and then keep doing that until
+we end up getting to the top
+row and remember we had two cases either
+word one
+at index i is equal to word two at
+index j basically with the characters
+that we're comparing are equal or
+they're not equal remember if they are
+equal
+then that's really easy for us right
+because then we can just say okay
+cache of position i j what we're doing
+here is computing what's the minimum
+number of operations it would take
+to get the sub string starting at i and
+the substring starting at j for these
+respective words
+compute the minimum number of operations
+so we can get that in this case since
+the characters are equal just by saying
+cache of i plus one cache of j plus
+one and the else case is where we have
+to check all three directions
+and then take the minimum of those so
+what i'm gonna do is say one
+plus the minimum of those three uh
+directions so cache of
+i plus 1 and leave j the same
+and also we want to take the minimum of
+cash
+of i left the same but j plus 1
+and last but not least we want to take
+the minimum of cash of i plus 1
+and j plus one so this is a long line
+but i'm going to leave it as it is
+but yeah basically this is taking care
+of insert delete
+as well as replace and it's taking the
+minimum of whatever
+those were adding one to it because we
+are having to do at least one operation
+whichever one of those it is and then
+storing that minimum
+here and once we have done that once
+we've filled up our entire
+two-dimensional array
+we want to return the value at index
+0 0 of our cache because that tells us
+what's the minimum number of operations
+for the beginning of both strings so
+basically the entirety
+of both strings so this is definitely a
+doozy of a problem it's not a ton of
+code but it does take some thought to
+get to here
+and it's definitely an extension of
+longest common subsequence
+so i recommend solving that problem if
+you haven't already
+but i do hope that this was helpful it's
+a tough dynamic programming problem
+if it was helpful please like and
+subscribe it supports the channel
+a lot and i'll hopefully see you pretty

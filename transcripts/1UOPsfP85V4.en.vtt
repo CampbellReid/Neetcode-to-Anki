@@ -1,0 +1,2720 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.510 align:start position:0%
+ 
+hey<00:00:00.160><c> everyone</c><00:00:00.560><c> welcome</c><00:00:00.960><c> back</c><00:00:01.199><c> and</c><00:00:01.280><c> let's</c>
+
+00:00:01.510 --> 00:00:01.520 align:start position:0%
+hey everyone welcome back and let's
+ 
+
+00:00:01.520 --> 00:00:03.669 align:start position:0%
+hey everyone welcome back and let's
+write<00:00:01.760><c> some</c><00:00:02.080><c> more</c><00:00:02.399><c> neat</c><00:00:02.639><c> code</c><00:00:02.960><c> today</c><00:00:03.360><c> today</c>
+
+00:00:03.669 --> 00:00:03.679 align:start position:0%
+write some more neat code today today
+ 
+
+00:00:03.679 --> 00:00:05.990 align:start position:0%
+write some more neat code today today
+let's<00:00:04.000><c> solve</c><00:00:04.400><c> reverse</c><00:00:05.200><c> nodes</c>
+
+00:00:05.990 --> 00:00:06.000 align:start position:0%
+let's solve reverse nodes
+ 
+
+00:00:06.000 --> 00:00:09.190 align:start position:0%
+let's solve reverse nodes
+in<00:00:06.240><c> a</c><00:00:06.399><c> k</c><00:00:06.799><c> group</c><00:00:07.440><c> now</c><00:00:07.600><c> this</c><00:00:07.839><c> is</c><00:00:08.000><c> a</c><00:00:08.160><c> hard</c><00:00:08.639><c> problem</c>
+
+00:00:09.190 --> 00:00:09.200 align:start position:0%
+in a k group now this is a hard problem
+ 
+
+00:00:09.200 --> 00:00:11.350 align:start position:0%
+in a k group now this is a hard problem
+but<00:00:09.360><c> it's</c><00:00:09.679><c> actually</c><00:00:10.320><c> not</c><00:00:10.559><c> as</c><00:00:10.800><c> hard</c><00:00:11.040><c> as</c><00:00:11.200><c> you</c>
+
+00:00:11.350 --> 00:00:11.360 align:start position:0%
+but it's actually not as hard as you
+ 
+
+00:00:11.360 --> 00:00:12.310 align:start position:0%
+but it's actually not as hard as you
+might<00:00:11.759><c> think</c>
+
+00:00:12.310 --> 00:00:12.320 align:start position:0%
+might think
+ 
+
+00:00:12.320 --> 00:00:15.190 align:start position:0%
+might think
+so<00:00:12.480><c> we're</c><00:00:12.719><c> given</c><00:00:13.440><c> one</c><00:00:14.080><c> linked</c><00:00:14.480><c> list</c><00:00:14.880><c> and</c><00:00:15.040><c> we</c>
+
+00:00:15.190 --> 00:00:15.200 align:start position:0%
+so we're given one linked list and we
+ 
+
+00:00:15.200 --> 00:00:16.230 align:start position:0%
+so we're given one linked list and we
+want<00:00:15.360><c> to</c><00:00:15.519><c> reverse</c>
+
+00:00:16.230 --> 00:00:16.240 align:start position:0%
+want to reverse
+ 
+
+00:00:16.240 --> 00:00:19.189 align:start position:0%
+want to reverse
+the<00:00:16.640><c> nodes</c><00:00:17.199><c> of</c><00:00:17.359><c> that</c><00:00:17.680><c> linked</c><00:00:18.000><c> list</c><00:00:18.320><c> a</c><00:00:18.800><c> at</c><00:00:18.960><c> a</c>
+
+00:00:19.189 --> 00:00:19.199 align:start position:0%
+the nodes of that linked list a at a
+ 
+
+00:00:19.199 --> 00:00:19.830 align:start position:0%
+the nodes of that linked list a at a
+time
+
+00:00:19.830 --> 00:00:19.840 align:start position:0%
+time
+ 
+
+00:00:19.840 --> 00:00:22.630 align:start position:0%
+time
+and<00:00:19.920><c> then</c><00:00:20.160><c> return</c><00:00:21.039><c> the</c><00:00:21.279><c> output</c><00:00:22.160><c> so</c><00:00:22.320><c> what</c><00:00:22.480><c> do</c>
+
+00:00:22.630 --> 00:00:22.640 align:start position:0%
+and then return the output so what do
+ 
+
+00:00:22.640 --> 00:00:23.509 align:start position:0%
+and then return the output so what do
+they<00:00:22.880><c> actually</c>
+
+00:00:23.509 --> 00:00:23.519 align:start position:0%
+they actually
+ 
+
+00:00:23.519 --> 00:00:26.630 align:start position:0%
+they actually
+mean<00:00:23.840><c> when</c><00:00:24.000><c> they</c><00:00:24.240><c> say</c><00:00:24.640><c> k</c><00:00:25.039><c> at</c><00:00:25.199><c> a</c><00:00:25.359><c> time</c><00:00:26.000><c> so</c>
+
+00:00:26.630 --> 00:00:26.640 align:start position:0%
+mean when they say k at a time so
+ 
+
+00:00:26.640 --> 00:00:28.230 align:start position:0%
+mean when they say k at a time so
+in<00:00:26.800><c> the</c><00:00:26.960><c> example</c><00:00:27.599><c> that</c><00:00:27.760><c> we're</c><00:00:27.920><c> going</c><00:00:28.000><c> to</c><00:00:28.080><c> look</c>
+
+00:00:28.230 --> 00:00:28.240 align:start position:0%
+in the example that we're going to look
+ 
+
+00:00:28.240 --> 00:00:30.550 align:start position:0%
+in the example that we're going to look
+at<00:00:28.400><c> let's</c><00:00:28.560><c> say</c><00:00:28.880><c> k</c><00:00:29.439><c> is</c><00:00:29.920><c> 2.</c>
+
+00:00:30.550 --> 00:00:30.560 align:start position:0%
+at let's say k is 2.
+ 
+
+00:00:30.560 --> 00:00:33.190 align:start position:0%
+at let's say k is 2.
+we<00:00:30.880><c> basically</c><00:00:31.439><c> take</c><00:00:31.760><c> this</c><00:00:32.399><c> input</c><00:00:32.880><c> right</c><00:00:33.040><c> we</c>
+
+00:00:33.190 --> 00:00:33.200 align:start position:0%
+we basically take this input right we
+ 
+
+00:00:33.200 --> 00:00:33.750 align:start position:0%
+we basically take this input right we
+see<00:00:33.360><c> there's</c>
+
+00:00:33.750 --> 00:00:33.760 align:start position:0%
+see there's
+ 
+
+00:00:33.760 --> 00:00:37.270 align:start position:0%
+see there's
+five<00:00:34.640><c> nodes</c><00:00:35.760><c> we</c><00:00:36.000><c> want</c><00:00:36.160><c> to</c><00:00:36.239><c> look</c><00:00:36.480><c> at</c><00:00:36.719><c> each</c>
+
+00:00:37.270 --> 00:00:37.280 align:start position:0%
+five nodes we want to look at each
+ 
+
+00:00:37.280 --> 00:00:40.389 align:start position:0%
+five nodes we want to look at each
+group<00:00:37.760><c> of</c><00:00:38.079><c> size</c><00:00:38.640><c> k</c><00:00:39.120><c> so</c><00:00:39.360><c> each</c><00:00:39.920><c> group</c>
+
+00:00:40.389 --> 00:00:40.399 align:start position:0%
+group of size k so each group
+ 
+
+00:00:40.399 --> 00:00:43.590 align:start position:0%
+group of size k so each group
+of<00:00:40.640><c> size</c><00:00:41.040><c> two</c><00:00:41.440><c> this</c><00:00:41.680><c> is</c><00:00:41.920><c> one</c><00:00:42.239><c> group</c><00:00:43.200><c> this</c><00:00:43.440><c> is</c>
+
+00:00:43.590 --> 00:00:43.600 align:start position:0%
+of size two this is one group this is
+ 
+
+00:00:43.600 --> 00:00:44.389 align:start position:0%
+of size two this is one group this is
+one<00:00:43.920><c> group</c>
+
+00:00:44.389 --> 00:00:44.399 align:start position:0%
+one group
+ 
+
+00:00:44.399 --> 00:00:48.150 align:start position:0%
+one group
+and<00:00:44.640><c> the</c><00:00:44.879><c> last</c><00:00:45.280><c> group</c><00:00:45.760><c> doesn't</c><00:00:46.239><c> even</c><00:00:46.719><c> have</c><00:00:47.200><c> k</c>
+
+00:00:48.150 --> 00:00:48.160 align:start position:0%
+and the last group doesn't even have k
+ 
+
+00:00:48.160 --> 00:00:50.950 align:start position:0%
+and the last group doesn't even have k
+elements<00:00:49.039><c> and</c><00:00:49.280><c> what</c><00:00:49.440><c> we</c><00:00:49.600><c> want</c><00:00:49.760><c> to</c><00:00:50.000><c> do</c><00:00:50.320><c> to</c><00:00:50.559><c> each</c>
+
+00:00:50.950 --> 00:00:50.960 align:start position:0%
+elements and what we want to do to each
+ 
+
+00:00:50.960 --> 00:00:51.430 align:start position:0%
+elements and what we want to do to each
+group
+
+00:00:51.430 --> 00:00:51.440 align:start position:0%
+group
+ 
+
+00:00:51.440 --> 00:00:53.750 align:start position:0%
+group
+so<00:00:51.600><c> let's</c><00:00:51.840><c> look</c><00:00:52.000><c> at</c><00:00:52.079><c> the</c><00:00:52.239><c> first</c><00:00:52.719><c> group</c><00:00:53.280><c> we</c><00:00:53.440><c> just</c>
+
+00:00:53.750 --> 00:00:53.760 align:start position:0%
+so let's look at the first group we just
+ 
+
+00:00:53.760 --> 00:00:55.590 align:start position:0%
+so let's look at the first group we just
+want<00:00:54.000><c> to</c><00:00:54.239><c> reverse</c><00:00:54.879><c> it</c>
+
+00:00:55.590 --> 00:00:55.600 align:start position:0%
+want to reverse it
+ 
+
+00:00:55.600 --> 00:00:58.869 align:start position:0%
+want to reverse it
+so<00:00:56.000><c> now</c><00:00:56.320><c> this</c><00:00:56.640><c> has</c><00:00:56.879><c> been</c><00:00:57.120><c> reversed</c><00:00:58.160><c> and</c><00:00:58.480><c> we</c>
+
+00:00:58.869 --> 00:00:58.879 align:start position:0%
+so now this has been reversed and we
+ 
+
+00:00:58.879 --> 00:01:02.869 align:start position:0%
+so now this has been reversed and we
+also<00:00:59.440><c> want</c><00:00:59.840><c> it</c><00:01:00.399><c> to</c><00:01:00.879><c> still</c><00:01:01.440><c> be</c><00:01:01.680><c> a</c><00:01:01.920><c> part</c><00:01:02.160><c> of</c><00:01:02.399><c> this</c>
+
+00:01:02.869 --> 00:01:02.879 align:start position:0%
+also want it to still be a part of this
+ 
+
+00:01:02.879 --> 00:01:05.990 align:start position:0%
+also want it to still be a part of this
+entire<00:01:03.680><c> linked</c><00:01:04.080><c> list</c><00:01:04.960><c> so</c><00:01:05.199><c> what</c><00:01:05.360><c> we</c><00:01:05.519><c> have</c><00:01:05.600><c> to</c><00:01:05.760><c> do</c>
+
+00:01:05.990 --> 00:01:06.000 align:start position:0%
+entire linked list so what we have to do
+ 
+
+00:01:06.000 --> 00:01:06.870 align:start position:0%
+entire linked list so what we have to do
+is<00:01:06.240><c> for</c><00:01:06.479><c> this</c>
+
+00:01:06.870 --> 00:01:06.880 align:start position:0%
+is for this
+ 
+
+00:01:06.880 --> 00:01:10.149 align:start position:0%
+is for this
+one<00:01:07.439><c> we</c><00:01:07.680><c> have</c><00:01:07.760><c> to</c><00:01:07.920><c> set</c><00:01:08.240><c> its</c><00:01:08.560><c> next</c><00:01:08.960><c> pointer</c><00:01:09.760><c> over</c>
+
+00:01:10.149 --> 00:01:10.159 align:start position:0%
+one we have to set its next pointer over
+ 
+
+00:01:10.159 --> 00:01:11.109 align:start position:0%
+one we have to set its next pointer over
+here
+
+00:01:11.109 --> 00:01:11.119 align:start position:0%
+here
+ 
+
+00:01:11.119 --> 00:01:14.310 align:start position:0%
+here
+and<00:01:11.360><c> in</c><00:01:11.439><c> the</c><00:01:11.760><c> output</c><00:01:12.400><c> you</c><00:01:12.560><c> can</c><00:01:12.799><c> see</c><00:01:13.280><c> that</c>
+
+00:01:14.310 --> 00:01:14.320 align:start position:0%
+and in the output you can see that
+ 
+
+00:01:14.320 --> 00:01:16.950 align:start position:0%
+and in the output you can see that
+this<00:01:14.640><c> group</c><00:01:15.280><c> is</c><00:01:15.439><c> reversed</c><00:01:16.080><c> now</c><00:01:16.320><c> we</c><00:01:16.479><c> do</c><00:01:16.720><c> the</c>
+
+00:01:16.950 --> 00:01:16.960 align:start position:0%
+this group is reversed now we do the
+ 
+
+00:01:16.960 --> 00:01:18.310 align:start position:0%
+this group is reversed now we do the
+same<00:01:17.360><c> thing</c><00:01:17.680><c> with</c><00:01:18.000><c> the</c>
+
+00:01:18.310 --> 00:01:18.320 align:start position:0%
+same thing with the
+ 
+
+00:01:18.320 --> 00:01:22.070 align:start position:0%
+same thing with the
+second<00:01:18.799><c> group</c><00:01:19.439><c> so</c><00:01:20.400><c> four's</c><00:01:21.040><c> next</c><00:01:21.439><c> is</c><00:01:21.680><c> actually</c>
+
+00:01:22.070 --> 00:01:22.080 align:start position:0%
+second group so four's next is actually
+ 
+
+00:01:22.080 --> 00:01:22.630 align:start position:0%
+second group so four's next is actually
+going<00:01:22.159><c> to</c><00:01:22.240><c> be</c>
+
+00:01:22.630 --> 00:01:22.640 align:start position:0%
+going to be
+ 
+
+00:01:22.640 --> 00:01:24.950 align:start position:0%
+going to be
+three<00:01:23.040><c> now</c><00:01:23.280><c> we've</c><00:01:23.520><c> reversed</c><00:01:24.240><c> this</c><00:01:24.720><c> and</c><00:01:24.799><c> then</c>
+
+00:01:24.950 --> 00:01:24.960 align:start position:0%
+three now we've reversed this and then
+ 
+
+00:01:24.960 --> 00:01:26.469 align:start position:0%
+three now we've reversed this and then
+the<00:01:25.360><c> output</c>
+
+00:01:26.469 --> 00:01:26.479 align:start position:0%
+the output
+ 
+
+00:01:26.479 --> 00:01:29.590 align:start position:0%
+the output
+it's<00:01:26.720><c> also</c><00:01:27.280><c> reversed</c><00:01:28.080><c> now</c><00:01:28.320><c> they</c><00:01:28.640><c> tell</c><00:01:28.960><c> us</c><00:01:29.360><c> if</c>
+
+00:01:29.590 --> 00:01:29.600 align:start position:0%
+it's also reversed now they tell us if
+ 
+
+00:01:29.600 --> 00:01:31.350 align:start position:0%
+it's also reversed now they tell us if
+we<00:01:29.759><c> have</c><00:01:30.000><c> a</c><00:01:30.159><c> special</c><00:01:30.799><c> group</c>
+
+00:01:31.350 --> 00:01:31.360 align:start position:0%
+we have a special group
+ 
+
+00:01:31.360 --> 00:01:33.590 align:start position:0%
+we have a special group
+right<00:01:31.600><c> like</c><00:01:31.840><c> the</c><00:01:32.000><c> last</c><00:01:32.400><c> group</c><00:01:32.880><c> doesn't</c><00:01:33.280><c> even</c>
+
+00:01:33.590 --> 00:01:33.600 align:start position:0%
+right like the last group doesn't even
+ 
+
+00:01:33.600 --> 00:01:34.870 align:start position:0%
+right like the last group doesn't even
+have<00:01:33.920><c> k</c><00:01:34.320><c> elements</c>
+
+00:01:34.870 --> 00:01:34.880 align:start position:0%
+have k elements
+ 
+
+00:01:34.880 --> 00:01:38.069 align:start position:0%
+have k elements
+so<00:01:35.200><c> if</c><00:01:35.360><c> it's</c><00:01:35.759><c> not</c><00:01:36.000><c> a</c><00:01:36.159><c> multiple</c><00:01:36.640><c> of</c><00:01:36.960><c> k</c><00:01:37.680><c> then</c><00:01:37.920><c> it</c>
+
+00:01:38.069 --> 00:01:38.079 align:start position:0%
+so if it's not a multiple of k then it
+ 
+
+00:01:38.079 --> 00:01:39.270 align:start position:0%
+so if it's not a multiple of k then it
+should<00:01:38.320><c> just</c><00:01:38.560><c> remain</c>
+
+00:01:39.270 --> 00:01:39.280 align:start position:0%
+should just remain
+ 
+
+00:01:39.280 --> 00:01:42.069 align:start position:0%
+should just remain
+as<00:01:39.520><c> it</c><00:01:39.680><c> is</c><00:01:40.240><c> so</c><00:01:40.479><c> we</c><00:01:40.720><c> really</c><00:01:41.119><c> don't</c><00:01:41.439><c> have</c><00:01:41.600><c> to</c><00:01:41.759><c> make</c>
+
+00:01:42.069 --> 00:01:42.079 align:start position:0%
+as it is so we really don't have to make
+ 
+
+00:01:42.079 --> 00:01:43.510 align:start position:0%
+as it is so we really don't have to make
+any<00:01:42.399><c> changes</c><00:01:42.880><c> to</c><00:01:43.040><c> this</c>
+
+00:01:43.510 --> 00:01:43.520 align:start position:0%
+any changes to this
+ 
+
+00:01:43.520 --> 00:01:46.550 align:start position:0%
+any changes to this
+it<00:01:43.759><c> remains</c><00:01:44.720><c> the</c><00:01:44.880><c> exact</c><00:01:45.280><c> same</c><00:01:46.079><c> now</c>
+
+00:01:46.550 --> 00:01:46.560 align:start position:0%
+it remains the exact same now
+ 
+
+00:01:46.560 --> 00:01:49.429 align:start position:0%
+it remains the exact same now
+one<00:01:46.880><c> thing</c><00:01:47.119><c> to</c><00:01:47.360><c> notice</c><00:01:47.840><c> is</c><00:01:48.399><c> reversing</c><00:01:49.200><c> the</c>
+
+00:01:49.429 --> 00:01:49.439 align:start position:0%
+one thing to notice is reversing the
+ 
+
+00:01:49.439 --> 00:01:50.149 align:start position:0%
+one thing to notice is reversing the
+groups
+
+00:01:50.149 --> 00:01:50.159 align:start position:0%
+groups
+ 
+
+00:01:50.159 --> 00:01:52.870 align:start position:0%
+groups
+is<00:01:50.399><c> pretty</c><00:01:50.960><c> easy</c><00:01:51.520><c> but</c><00:01:52.159><c> we</c><00:01:52.320><c> need</c><00:01:52.479><c> to</c><00:01:52.640><c> do</c><00:01:52.799><c> a</c>
+
+00:01:52.870 --> 00:01:52.880 align:start position:0%
+is pretty easy but we need to do a
+ 
+
+00:01:52.880 --> 00:01:54.149 align:start position:0%
+is pretty easy but we need to do a
+little<00:01:53.200><c> more</c><00:01:53.439><c> than</c><00:01:53.680><c> just</c>
+
+00:01:54.149 --> 00:01:54.159 align:start position:0%
+little more than just
+ 
+
+00:01:54.159 --> 00:01:56.709 align:start position:0%
+little more than just
+that<00:01:54.479><c> right</c><00:01:54.720><c> see</c><00:01:55.520><c> one's</c><00:01:56.000><c> next</c><00:01:56.320><c> pointer</c><00:01:56.640><c> is</c>
+
+00:01:56.709 --> 00:01:56.719 align:start position:0%
+that right see one's next pointer is
+ 
+
+00:01:56.719 --> 00:01:58.230 align:start position:0%
+that right see one's next pointer is
+initially<00:01:57.200><c> at</c><00:01:57.520><c> two</c>
+
+00:01:58.230 --> 00:01:58.240 align:start position:0%
+initially at two
+ 
+
+00:01:58.240 --> 00:02:01.670 align:start position:0%
+initially at two
+but<00:01:58.399><c> at</c><00:01:58.560><c> the</c><00:01:59.119><c> end</c><00:01:59.920><c> it's</c><00:02:00.159><c> pointing</c><00:02:00.640><c> at</c><00:02:01.040><c> four</c>
+
+00:02:01.670 --> 00:02:01.680 align:start position:0%
+but at the end it's pointing at four
+ 
+
+00:02:01.680 --> 00:02:05.429 align:start position:0%
+but at the end it's pointing at four
+so<00:02:02.079><c> really</c><00:02:02.560><c> we</c><00:02:02.719><c> have</c><00:02:02.880><c> to</c><00:02:03.040><c> make</c><00:02:04.000><c> this</c><00:02:04.479><c> jump</c>
+
+00:02:05.429 --> 00:02:05.439 align:start position:0%
+so really we have to make this jump
+ 
+
+00:02:05.439 --> 00:02:07.190 align:start position:0%
+so really we have to make this jump
+so<00:02:05.680><c> that's</c><00:02:05.920><c> where</c><00:02:06.079><c> the</c><00:02:06.320><c> difficulty</c><00:02:06.960><c> comes</c>
+
+00:02:07.190 --> 00:02:07.200 align:start position:0%
+so that's where the difficulty comes
+ 
+
+00:02:07.200 --> 00:02:08.229 align:start position:0%
+so that's where the difficulty comes
+from<00:02:07.439><c> and</c><00:02:07.520><c> that's</c><00:02:07.680><c> what</c><00:02:07.840><c> i'm</c><00:02:08.000><c> going</c><00:02:08.080><c> to</c>
+
+00:02:08.229 --> 00:02:08.239 align:start position:0%
+from and that's what i'm going to
+ 
+
+00:02:08.239 --> 00:02:11.190 align:start position:0%
+from and that's what i'm going to
+explain<00:02:08.800><c> once</c><00:02:09.119><c> we've</c><00:02:09.440><c> reversed</c><00:02:10.080><c> these</c><00:02:10.399><c> groups</c>
+
+00:02:11.190 --> 00:02:11.200 align:start position:0%
+explain once we've reversed these groups
+ 
+
+00:02:11.200 --> 00:02:12.710 align:start position:0%
+explain once we've reversed these groups
+then<00:02:11.440><c> we</c><00:02:11.680><c> actually</c><00:02:11.920><c> have</c><00:02:12.080><c> to</c><00:02:12.239><c> put</c><00:02:12.480><c> them</c>
+
+00:02:12.710 --> 00:02:12.720 align:start position:0%
+then we actually have to put them
+ 
+
+00:02:12.720 --> 00:02:14.229 align:start position:0%
+then we actually have to put them
+together
+
+00:02:14.229 --> 00:02:14.239 align:start position:0%
+together
+ 
+
+00:02:14.239 --> 00:02:16.309 align:start position:0%
+together
+so<00:02:14.560><c> like</c><00:02:14.800><c> most</c><00:02:15.200><c> linked</c><00:02:15.440><c> list</c><00:02:15.760><c> problems</c><00:02:16.160><c> i'm</c>
+
+00:02:16.309 --> 00:02:16.319 align:start position:0%
+so like most linked list problems i'm
+ 
+
+00:02:16.319 --> 00:02:17.750 align:start position:0%
+so like most linked list problems i'm
+just<00:02:16.400><c> going</c><00:02:16.480><c> to</c><00:02:16.640><c> tell</c><00:02:16.879><c> you</c><00:02:17.040><c> from</c><00:02:17.200><c> the</c><00:02:17.360><c> start</c>
+
+00:02:17.750 --> 00:02:17.760 align:start position:0%
+just going to tell you from the start
+ 
+
+00:02:17.760 --> 00:02:18.630 align:start position:0%
+just going to tell you from the start
+this<00:02:17.920><c> time</c><00:02:18.160><c> that</c><00:02:18.319><c> we</c>
+
+00:02:18.630 --> 00:02:18.640 align:start position:0%
+this time that we
+ 
+
+00:02:18.640 --> 00:02:21.110 align:start position:0%
+this time that we
+are<00:02:18.800><c> going</c><00:02:18.959><c> to</c><00:02:19.120><c> need</c><00:02:19.440><c> a</c><00:02:19.680><c> dummy</c><00:02:20.080><c> node</c><00:02:20.800><c> because</c>
+
+00:02:21.110 --> 00:02:21.120 align:start position:0%
+are going to need a dummy node because
+ 
+
+00:02:21.120 --> 00:02:22.229 align:start position:0%
+are going to need a dummy node because
+we're<00:02:21.360><c> potentially</c>
+
+00:02:22.229 --> 00:02:22.239 align:start position:0%
+we're potentially
+ 
+
+00:02:22.239 --> 00:02:24.949 align:start position:0%
+we're potentially
+modifying<00:02:23.360><c> the</c><00:02:23.760><c> head</c><00:02:24.080><c> of</c><00:02:24.239><c> the</c><00:02:24.400><c> list</c><00:02:24.720><c> right</c>
+
+00:02:24.949 --> 00:02:24.959 align:start position:0%
+modifying the head of the list right
+ 
+
+00:02:24.959 --> 00:02:25.830 align:start position:0%
+modifying the head of the list right
+like
+
+00:02:25.830 --> 00:02:25.840 align:start position:0%
+like
+ 
+
+00:02:25.840 --> 00:02:27.830 align:start position:0%
+like
+first<00:02:26.160><c> this</c><00:02:26.400><c> is</c><00:02:26.480><c> the</c><00:02:26.720><c> head</c><00:02:27.040><c> but</c><00:02:27.280><c> at</c><00:02:27.360><c> the</c><00:02:27.520><c> end</c>
+
+00:02:27.830 --> 00:02:27.840 align:start position:0%
+first this is the head but at the end
+ 
+
+00:02:27.840 --> 00:02:29.110 align:start position:0%
+first this is the head but at the end
+this<00:02:28.080><c> is</c><00:02:28.160><c> going</c><00:02:28.239><c> to</c><00:02:28.400><c> be</c><00:02:28.480><c> the</c><00:02:28.640><c> head</c><00:02:28.879><c> i</c><00:02:28.959><c> don't</c>
+
+00:02:29.110 --> 00:02:29.120 align:start position:0%
+this is going to be the head i don't
+ 
+
+00:02:29.120 --> 00:02:31.110 align:start position:0%
+this is going to be the head i don't
+want<00:02:29.280><c> to</c><00:02:29.360><c> deal</c><00:02:29.599><c> with</c><00:02:29.760><c> edge</c><00:02:30.080><c> cases</c><00:02:30.480><c> and</c><00:02:30.640><c> stuff</c>
+
+00:02:31.110 --> 00:02:31.120 align:start position:0%
+want to deal with edge cases and stuff
+ 
+
+00:02:31.120 --> 00:02:33.589 align:start position:0%
+want to deal with edge cases and stuff
+so<00:02:31.360><c> just</c><00:02:31.519><c> having</c><00:02:31.920><c> a</c><00:02:32.000><c> dummy</c><00:02:32.319><c> node</c><00:02:32.560><c> here</c><00:02:33.280><c> helps</c>
+
+00:02:33.589 --> 00:02:33.599 align:start position:0%
+so just having a dummy node here helps
+ 
+
+00:02:33.599 --> 00:02:34.550 align:start position:0%
+so just having a dummy node here helps
+us<00:02:33.920><c> a</c><00:02:34.080><c> lot</c>
+
+00:02:34.550 --> 00:02:34.560 align:start position:0%
+us a lot
+ 
+
+00:02:34.560 --> 00:02:37.670 align:start position:0%
+us a lot
+so<00:02:35.040><c> we</c><00:02:35.280><c> have</c><00:02:35.680><c> k</c><00:02:36.160><c> equals</c><00:02:36.879><c> two</c>
+
+00:02:37.670 --> 00:02:37.680 align:start position:0%
+so we have k equals two
+ 
+
+00:02:37.680 --> 00:02:40.869 align:start position:0%
+so we have k equals two
+i<00:02:37.920><c> wanna</c><00:02:38.160><c> reverse</c><00:02:38.720><c> the</c><00:02:39.040><c> first</c><00:02:39.760><c> group</c><00:02:40.319><c> how</c><00:02:40.480><c> do</c><00:02:40.720><c> i</c>
+
+00:02:40.869 --> 00:02:40.879 align:start position:0%
+i wanna reverse the first group how do i
+ 
+
+00:02:40.879 --> 00:02:41.670 align:start position:0%
+i wanna reverse the first group how do i
+do<00:02:41.120><c> that</c>
+
+00:02:41.670 --> 00:02:41.680 align:start position:0%
+do that
+ 
+
+00:02:41.680 --> 00:02:45.110 align:start position:0%
+do that
+let's<00:02:41.920><c> say</c><00:02:42.239><c> we</c><00:02:42.560><c> start</c><00:02:43.200><c> here</c><00:02:44.319><c> all</c><00:02:44.560><c> i</c><00:02:44.640><c> have</c><00:02:44.800><c> to</c><00:02:44.879><c> do</c>
+
+00:02:45.110 --> 00:02:45.120 align:start position:0%
+let's say we start here all i have to do
+ 
+
+00:02:45.120 --> 00:02:45.509 align:start position:0%
+let's say we start here all i have to do
+is
+
+00:02:45.509 --> 00:02:45.519 align:start position:0%
+is
+ 
+
+00:02:45.519 --> 00:02:49.670 align:start position:0%
+is
+count<00:02:45.920><c> by</c><00:02:46.239><c> k</c><00:02:47.040><c> so</c><00:02:47.760><c> one</c>
+
+00:02:49.670 --> 00:02:49.680 align:start position:0%
+count by k so one
+ 
+
+00:02:49.680 --> 00:02:53.190 align:start position:0%
+count by k so one
+two<00:02:50.640><c> so</c><00:02:51.120><c> this</c><00:02:51.760><c> is</c><00:02:51.920><c> the</c><00:02:52.319><c> k-th</c>
+
+00:02:53.190 --> 00:02:53.200 align:start position:0%
+two so this is the k-th
+ 
+
+00:02:53.200 --> 00:02:56.630 align:start position:0%
+two so this is the k-th
+node<00:02:54.000><c> so</c><00:02:54.319><c> now</c><00:02:54.720><c> starting</c><00:02:55.680><c> from</c><00:02:56.080><c> here</c>
+
+00:02:56.630 --> 00:02:56.640 align:start position:0%
+node so now starting from here
+ 
+
+00:02:56.640 --> 00:02:59.750 align:start position:0%
+node so now starting from here
+we're<00:02:56.879><c> gonna</c><00:02:57.120><c> start</c><00:02:57.599><c> reversing</c><00:02:58.879><c> so</c><00:02:59.120><c> the</c><00:02:59.360><c> next</c>
+
+00:02:59.750 --> 00:02:59.760 align:start position:0%
+we're gonna start reversing so the next
+ 
+
+00:02:59.760 --> 00:03:00.470 align:start position:0%
+we're gonna start reversing so the next
+pointer
+
+00:03:00.470 --> 00:03:00.480 align:start position:0%
+pointer
+ 
+
+00:03:00.480 --> 00:03:03.670 align:start position:0%
+pointer
+of<00:03:00.800><c> one</c><00:03:01.680><c> is</c><00:03:01.840><c> gonna</c><00:03:02.080><c> be</c><00:03:02.239><c> reversed</c><00:03:03.200><c> but</c>
+
+00:03:03.670 --> 00:03:03.680 align:start position:0%
+of one is gonna be reversed but
+ 
+
+00:03:03.680 --> 00:03:05.830 align:start position:0%
+of one is gonna be reversed but
+this<00:03:03.920><c> is</c><00:03:04.000><c> the</c><00:03:04.239><c> dummy</c><00:03:04.560><c> node</c><00:03:04.959><c> so</c><00:03:05.280><c> i</c><00:03:05.360><c> don't</c><00:03:05.519><c> really</c>
+
+00:03:05.830 --> 00:03:05.840 align:start position:0%
+this is the dummy node so i don't really
+ 
+
+00:03:05.840 --> 00:03:06.790 align:start position:0%
+this is the dummy node so i don't really
+care<00:03:06.080><c> about</c><00:03:06.400><c> it</c>
+
+00:03:06.790 --> 00:03:06.800 align:start position:0%
+care about it
+ 
+
+00:03:06.800 --> 00:03:09.430 align:start position:0%
+care about it
+so<00:03:07.120><c> i'm</c><00:03:07.360><c> actually</c><00:03:07.760><c> gonna</c><00:03:08.000><c> set</c><00:03:08.400><c> this</c><00:03:09.040><c> equal</c>
+
+00:03:09.430 --> 00:03:09.440 align:start position:0%
+so i'm actually gonna set this equal
+ 
+
+00:03:09.440 --> 00:03:12.309 align:start position:0%
+so i'm actually gonna set this equal
+let's<00:03:09.680><c> say</c><00:03:10.000><c> to</c><00:03:10.319><c> null</c><00:03:10.720><c> for</c><00:03:11.040><c> now</c>
+
+00:03:12.309 --> 00:03:12.319 align:start position:0%
+let's say to null for now
+ 
+
+00:03:12.319 --> 00:03:15.110 align:start position:0%
+let's say to null for now
+next<00:03:12.800><c> i'm</c><00:03:13.040><c> gonna</c><00:03:13.360><c> move</c><00:03:14.239><c> to</c><00:03:14.400><c> the</c><00:03:14.560><c> next</c><00:03:14.879><c> node</c>
+
+00:03:15.110 --> 00:03:15.120 align:start position:0%
+next i'm gonna move to the next node
+ 
+
+00:03:15.120 --> 00:03:16.790 align:start position:0%
+next i'm gonna move to the next node
+which<00:03:15.360><c> happens</c><00:03:15.760><c> to</c><00:03:15.920><c> be</c><00:03:16.080><c> our</c><00:03:16.319><c> kth</c>
+
+00:03:16.790 --> 00:03:16.800 align:start position:0%
+which happens to be our kth
+ 
+
+00:03:16.800 --> 00:03:19.990 align:start position:0%
+which happens to be our kth
+node<00:03:17.680><c> i'm</c><00:03:17.920><c> going</c><00:03:18.000><c> to</c><00:03:18.319><c> say</c><00:03:18.720><c> its</c><00:03:19.040><c> next</c><00:03:19.440><c> pointer</c>
+
+00:03:19.990 --> 00:03:20.000 align:start position:0%
+node i'm going to say its next pointer
+ 
+
+00:03:20.000 --> 00:03:22.790 align:start position:0%
+node i'm going to say its next pointer
+is<00:03:20.239><c> also</c><00:03:20.560><c> going</c><00:03:20.640><c> to</c><00:03:20.720><c> be</c><00:03:20.959><c> reversed</c><00:03:22.080><c> now</c><00:03:22.480><c> it's</c>
+
+00:03:22.790 --> 00:03:22.800 align:start position:0%
+is also going to be reversed now it's
+ 
+
+00:03:22.800 --> 00:03:23.509 align:start position:0%
+is also going to be reversed now it's
+set
+
+00:03:23.509 --> 00:03:23.519 align:start position:0%
+set
+ 
+
+00:03:23.519 --> 00:03:26.630 align:start position:0%
+set
+to<00:03:23.840><c> 1</c><00:03:24.400><c> right</c><00:03:24.799><c> the</c><00:03:25.040><c> previous</c><00:03:25.680><c> node</c>
+
+00:03:26.630 --> 00:03:26.640 align:start position:0%
+to 1 right the previous node
+ 
+
+00:03:26.640 --> 00:03:30.149 align:start position:0%
+to 1 right the previous node
+now<00:03:26.879><c> we</c><00:03:27.120><c> move</c><00:03:27.840><c> to</c><00:03:28.080><c> the</c><00:03:28.480><c> next</c><00:03:28.959><c> node</c><00:03:29.599><c> but</c><00:03:29.840><c> we</c>
+
+00:03:30.149 --> 00:03:30.159 align:start position:0%
+now we move to the next node but we
+ 
+
+00:03:30.159 --> 00:03:32.630 align:start position:0%
+now we move to the next node but we
+know<00:03:30.400><c> we</c><00:03:30.640><c> just</c><00:03:31.040><c> passed</c><00:03:31.519><c> our</c><00:03:31.840><c> kth</c><00:03:32.239><c> node</c><00:03:32.480><c> so</c>
+
+00:03:32.630 --> 00:03:32.640 align:start position:0%
+know we just passed our kth node so
+ 
+
+00:03:32.640 --> 00:03:34.869 align:start position:0%
+know we just passed our kth node so
+we're<00:03:32.959><c> not</c><00:03:33.200><c> reversing</c><00:03:33.920><c> this</c><00:03:34.239><c> yet</c><00:03:34.560><c> we're</c><00:03:34.799><c> going</c>
+
+00:03:34.869 --> 00:03:34.879 align:start position:0%
+we're not reversing this yet we're going
+ 
+
+00:03:34.879 --> 00:03:35.910 align:start position:0%
+we're not reversing this yet we're going
+to<00:03:35.040><c> reverse</c><00:03:35.519><c> it</c>
+
+00:03:35.910 --> 00:03:35.920 align:start position:0%
+to reverse it
+ 
+
+00:03:35.920 --> 00:03:38.789 align:start position:0%
+to reverse it
+with<00:03:36.159><c> its</c><00:03:36.480><c> own</c><00:03:36.959><c> group</c><00:03:37.760><c> right</c><00:03:38.000><c> now</c><00:03:38.239><c> we're</c><00:03:38.480><c> only</c>
+
+00:03:38.789 --> 00:03:38.799 align:start position:0%
+with its own group right now we're only
+ 
+
+00:03:38.799 --> 00:03:39.910 align:start position:0%
+with its own group right now we're only
+reversing
+
+00:03:39.910 --> 00:03:39.920 align:start position:0%
+reversing
+ 
+
+00:03:39.920 --> 00:03:43.190 align:start position:0%
+reversing
+this<00:03:40.319><c> group</c><00:03:40.959><c> so</c><00:03:41.120><c> we're</c><00:03:41.360><c> finished</c><00:03:42.400><c> so</c><00:03:42.799><c> now</c><00:03:43.040><c> if</c>
+
+00:03:43.190 --> 00:03:43.200 align:start position:0%
+this group so we're finished so now if
+ 
+
+00:03:43.200 --> 00:03:45.270 align:start position:0%
+this group so we're finished so now if
+you<00:03:43.440><c> look</c><00:03:43.680><c> at</c><00:03:43.840><c> what</c><00:03:44.000><c> we</c><00:03:44.239><c> just</c><00:03:44.560><c> did</c><00:03:44.879><c> we</c>
+
+00:03:45.270 --> 00:03:45.280 align:start position:0%
+you look at what we just did we
+ 
+
+00:03:45.280 --> 00:03:49.430 align:start position:0%
+you look at what we just did we
+took<00:03:46.159><c> this</c><00:03:46.560><c> portion</c><00:03:48.000><c> reversed</c><00:03:48.720><c> that</c><00:03:49.040><c> group</c>
+
+00:03:49.430 --> 00:03:49.440 align:start position:0%
+took this portion reversed that group
+ 
+
+00:03:49.440 --> 00:03:51.190 align:start position:0%
+took this portion reversed that group
+right<00:03:49.599><c> now</c><00:03:49.840><c> we</c><00:03:50.000><c> have</c><00:03:50.239><c> this</c>
+
+00:03:51.190 --> 00:03:51.200 align:start position:0%
+right now we have this
+ 
+
+00:03:51.200 --> 00:03:53.670 align:start position:0%
+right now we have this
+and<00:03:52.159><c> we</c><00:03:52.319><c> didn't</c><00:03:52.560><c> really</c><00:03:52.799><c> touch</c><00:03:53.120><c> this</c><00:03:53.360><c> so</c><00:03:53.599><c> it</c>
+
+00:03:53.670 --> 00:03:53.680 align:start position:0%
+and we didn't really touch this so it
+ 
+
+00:03:53.680 --> 00:03:55.190 align:start position:0%
+and we didn't really touch this so it
+stayed<00:03:54.080><c> the</c><00:03:54.239><c> same</c>
+
+00:03:55.190 --> 00:03:55.200 align:start position:0%
+stayed the same
+ 
+
+00:03:55.200 --> 00:03:57.750 align:start position:0%
+stayed the same
+but<00:03:55.519><c> look</c><00:03:55.680><c> what</c><00:03:55.840><c> we</c><00:03:56.000><c> just</c><00:03:56.239><c> did</c><00:03:56.560><c> we</c><00:03:57.120><c> cut</c><00:03:57.519><c> our</c>
+
+00:03:57.750 --> 00:03:57.760 align:start position:0%
+but look what we just did we cut our
+ 
+
+00:03:57.760 --> 00:03:58.630 align:start position:0%
+but look what we just did we cut our
+linked<00:03:58.159><c> list</c>
+
+00:03:58.630 --> 00:03:58.640 align:start position:0%
+linked list
+ 
+
+00:03:58.640 --> 00:04:01.589 align:start position:0%
+linked list
+in<00:03:58.879><c> half</c><00:03:59.439><c> it's</c><00:03:59.680><c> not</c><00:03:59.920><c> even</c><00:04:00.239><c> connected</c><00:04:00.959><c> anymore</c>
+
+00:04:01.589 --> 00:04:01.599 align:start position:0%
+in half it's not even connected anymore
+ 
+
+00:04:01.599 --> 00:04:03.589 align:start position:0%
+in half it's not even connected anymore
+we<00:04:01.840><c> reversed</c><00:04:02.400><c> the</c><00:04:02.560><c> first</c><00:04:02.959><c> group</c><00:04:03.280><c> which</c><00:04:03.519><c> is</c>
+
+00:04:03.589 --> 00:04:03.599 align:start position:0%
+we reversed the first group which is
+ 
+
+00:04:03.599 --> 00:04:04.550 align:start position:0%
+we reversed the first group which is
+what<00:04:03.760><c> we</c><00:04:04.000><c> wanted</c>
+
+00:04:04.550 --> 00:04:04.560 align:start position:0%
+what we wanted
+ 
+
+00:04:04.560 --> 00:04:07.190 align:start position:0%
+what we wanted
+but<00:04:04.720><c> we</c><00:04:04.959><c> didn't</c><00:04:05.200><c> want</c><00:04:05.360><c> to</c><00:04:05.599><c> split</c><00:04:06.080><c> them</c><00:04:06.959><c> so</c>
+
+00:04:07.190 --> 00:04:07.200 align:start position:0%
+but we didn't want to split them so
+ 
+
+00:04:07.200 --> 00:04:08.630 align:start position:0%
+but we didn't want to split them so
+instead<00:04:07.840><c> of</c><00:04:08.080><c> setting</c>
+
+00:04:08.630 --> 00:04:08.640 align:start position:0%
+instead of setting
+ 
+
+00:04:08.640 --> 00:04:11.990 align:start position:0%
+instead of setting
+this<00:04:08.959><c> one</c><00:04:09.280><c> to</c><00:04:09.599><c> null</c><00:04:10.400><c> we</c><00:04:10.640><c> can</c><00:04:11.040><c> set</c><00:04:11.360><c> it</c>
+
+00:04:11.990 --> 00:04:12.000 align:start position:0%
+this one to null we can set it
+ 
+
+00:04:12.000 --> 00:04:15.110 align:start position:0%
+this one to null we can set it
+to<00:04:12.400><c> what</c><00:04:12.640><c> the</c><00:04:13.120><c> last</c><00:04:14.000><c> what</c><00:04:14.239><c> our</c><00:04:14.480><c> cond</c><00:04:14.799><c> where</c><00:04:14.959><c> our</c>
+
+00:04:15.110 --> 00:04:15.120 align:start position:0%
+to what the last what our cond where our
+ 
+
+00:04:15.120 --> 00:04:15.990 align:start position:0%
+to what the last what our cond where our
+condition<00:04:15.599><c> would</c>
+
+00:04:15.990 --> 00:04:16.000 align:start position:0%
+condition would
+ 
+
+00:04:16.000 --> 00:04:17.830 align:start position:0%
+condition would
+stop<00:04:16.560><c> right</c><00:04:16.799><c> this</c><00:04:16.959><c> is</c><00:04:17.040><c> where</c><00:04:17.280><c> our</c><00:04:17.359><c> condition</c>
+
+00:04:17.830 --> 00:04:17.840 align:start position:0%
+stop right this is where our condition
+ 
+
+00:04:17.840 --> 00:04:19.830 align:start position:0%
+stop right this is where our condition
+is<00:04:18.000><c> going</c><00:04:18.079><c> to</c><00:04:18.239><c> stop</c><00:04:18.560><c> so</c><00:04:18.720><c> the</c><00:04:18.959><c> node</c>
+
+00:04:19.830 --> 00:04:19.840 align:start position:0%
+is going to stop so the node
+ 
+
+00:04:19.840 --> 00:04:22.710 align:start position:0%
+is going to stop so the node
+right<00:04:20.239><c> after</c><00:04:20.880><c> k</c><00:04:21.680><c> is</c><00:04:21.919><c> where</c><00:04:22.160><c> we're</c><00:04:22.400><c> going</c><00:04:22.479><c> to</c>
+
+00:04:22.710 --> 00:04:22.720 align:start position:0%
+right after k is where we're going to
+ 
+
+00:04:22.720 --> 00:04:23.189 align:start position:0%
+right after k is where we're going to
+set
+
+00:04:23.189 --> 00:04:23.199 align:start position:0%
+set
+ 
+
+00:04:23.199 --> 00:04:26.230 align:start position:0%
+set
+the<00:04:23.520><c> next</c><00:04:23.919><c> pointer</c><00:04:25.440><c> of</c><00:04:25.680><c> this</c>
+
+00:04:26.230 --> 00:04:26.240 align:start position:0%
+the next pointer of this
+ 
+
+00:04:26.240 --> 00:04:29.350 align:start position:0%
+the next pointer of this
+also<00:04:26.720><c> we</c><00:04:27.040><c> don't</c><00:04:27.280><c> want</c><00:04:27.520><c> to</c><00:04:27.600><c> forget</c><00:04:28.479><c> that</c><00:04:28.720><c> our</c>
+
+00:04:29.350 --> 00:04:29.360 align:start position:0%
+also we don't want to forget that our
+ 
+
+00:04:29.360 --> 00:04:32.150 align:start position:0%
+also we don't want to forget that our
+our<00:04:29.680><c> dummy</c><00:04:30.080><c> node</c><00:04:30.320><c> over</c><00:04:30.639><c> here</c><00:04:31.280><c> should</c><00:04:31.680><c> point</c><00:04:32.000><c> at</c>
+
+00:04:32.150 --> 00:04:32.160 align:start position:0%
+our dummy node over here should point at
+ 
+
+00:04:32.160 --> 00:04:32.550 align:start position:0%
+our dummy node over here should point at
+the
+
+00:04:32.550 --> 00:04:32.560 align:start position:0%
+the
+ 
+
+00:04:32.560 --> 00:04:36.310 align:start position:0%
+the
+first<00:04:33.520><c> node</c><00:04:34.479><c> so</c><00:04:34.800><c> great</c><00:04:35.280><c> we've</c><00:04:35.520><c> done</c>
+
+00:04:36.310 --> 00:04:36.320 align:start position:0%
+first node so great we've done
+ 
+
+00:04:36.320 --> 00:04:38.469 align:start position:0%
+first node so great we've done
+the<00:04:36.560><c> first</c><00:04:36.880><c> group</c><00:04:37.280><c> now</c><00:04:37.520><c> we</c><00:04:37.680><c> want</c><00:04:37.840><c> to</c><00:04:38.000><c> move</c><00:04:38.320><c> to</c>
+
+00:04:38.469 --> 00:04:38.479 align:start position:0%
+the first group now we want to move to
+ 
+
+00:04:38.479 --> 00:04:39.749 align:start position:0%
+the first group now we want to move to
+the<00:04:38.720><c> next</c><00:04:39.120><c> group</c>
+
+00:04:39.749 --> 00:04:39.759 align:start position:0%
+the next group
+ 
+
+00:04:39.759 --> 00:04:42.870 align:start position:0%
+the next group
+so<00:04:40.000><c> don't</c><00:04:40.240><c> forget</c><00:04:40.720><c> k</c><00:04:40.960><c> equals</c><00:04:41.520><c> 2</c><00:04:42.400><c> so</c>
+
+00:04:42.870 --> 00:04:42.880 align:start position:0%
+so don't forget k equals 2 so
+ 
+
+00:04:42.880 --> 00:04:45.270 align:start position:0%
+so don't forget k equals 2 so
+this<00:04:43.120><c> is</c><00:04:43.360><c> our</c><00:04:43.680><c> first</c><00:04:44.080><c> node</c><00:04:44.639><c> this</c><00:04:44.880><c> is</c><00:04:45.040><c> our</c>
+
+00:04:45.270 --> 00:04:45.280 align:start position:0%
+this is our first node this is our
+ 
+
+00:04:45.280 --> 00:04:46.310 align:start position:0%
+this is our first node this is our
+second<00:04:45.759><c> node</c>
+
+00:04:46.310 --> 00:04:46.320 align:start position:0%
+second node
+ 
+
+00:04:46.320 --> 00:04:49.350 align:start position:0%
+second node
+so<00:04:46.639><c> this</c><00:04:46.960><c> happens</c><00:04:47.360><c> to</c><00:04:47.520><c> be</c><00:04:47.680><c> the</c><00:04:47.919><c> kth</c><00:04:48.479><c> node</c><00:04:49.120><c> so</c>
+
+00:04:49.350 --> 00:04:49.360 align:start position:0%
+so this happens to be the kth node so
+ 
+
+00:04:49.360 --> 00:04:50.150 align:start position:0%
+so this happens to be the kth node so
+again
+
+00:04:50.150 --> 00:04:50.160 align:start position:0%
+again
+ 
+
+00:04:50.160 --> 00:04:52.230 align:start position:0%
+again
+we're<00:04:50.400><c> going</c><00:04:50.479><c> to</c><00:04:50.639><c> take</c><00:04:51.199><c> this</c><00:04:51.600><c> pointer</c><00:04:52.080><c> and</c>
+
+00:04:52.230 --> 00:04:52.240 align:start position:0%
+we're going to take this pointer and
+ 
+
+00:04:52.240 --> 00:04:53.189 align:start position:0%
+we're going to take this pointer and
+reverse<00:04:52.880><c> it</c>
+
+00:04:53.189 --> 00:04:53.199 align:start position:0%
+reverse it
+ 
+
+00:04:53.199 --> 00:04:55.510 align:start position:0%
+reverse it
+and<00:04:53.440><c> in</c><00:04:53.600><c> the</c><00:04:53.840><c> first</c><00:04:54.320><c> example</c><00:04:54.880><c> i</c><00:04:55.040><c> showed</c><00:04:55.280><c> you</c>
+
+00:04:55.510 --> 00:04:55.520 align:start position:0%
+and in the first example i showed you
+ 
+
+00:04:55.520 --> 00:04:57.030 align:start position:0%
+and in the first example i showed you
+that<00:04:55.680><c> it's</c><00:04:55.840><c> going</c><00:04:56.000><c> to</c><00:04:56.080><c> be</c><00:04:56.320><c> set</c>
+
+00:04:57.030 --> 00:04:57.040 align:start position:0%
+that it's going to be set
+ 
+
+00:04:57.040 --> 00:05:00.150 align:start position:0%
+that it's going to be set
+to<00:04:57.360><c> null</c><00:04:58.160><c> but</c><00:04:58.560><c> really</c><00:04:58.960><c> we</c><00:04:59.360><c> know</c>
+
+00:05:00.150 --> 00:05:00.160 align:start position:0%
+to null but really we know
+ 
+
+00:05:00.160 --> 00:05:03.350 align:start position:0%
+to null but really we know
+it's<00:05:00.400><c> going</c><00:05:00.560><c> to</c><00:05:00.639><c> be</c><00:05:00.960><c> set</c><00:05:01.440><c> to</c><00:05:01.840><c> k</c><00:05:02.720><c> dot</c>
+
+00:05:03.350 --> 00:05:03.360 align:start position:0%
+it's going to be set to k dot
+ 
+
+00:05:03.360 --> 00:05:07.350 align:start position:0%
+it's going to be set to k dot
+next<00:05:04.400><c> right</c><00:05:04.800><c> k</c><00:05:05.199><c> dot</c><00:05:05.520><c> next</c><00:05:06.320><c> we</c><00:05:06.560><c> know</c><00:05:06.800><c> that</c><00:05:07.120><c> this</c>
+
+00:05:07.350 --> 00:05:07.360 align:start position:0%
+next right k dot next we know that this
+ 
+
+00:05:07.360 --> 00:05:07.670 align:start position:0%
+next right k dot next we know that this
+is
+
+00:05:07.670 --> 00:05:07.680 align:start position:0%
+is
+ 
+
+00:05:07.680 --> 00:05:12.070 align:start position:0%
+is
+k<00:05:08.560><c> so</c><00:05:08.960><c> k</c><00:05:09.280><c> dot</c><00:05:09.759><c> next</c><00:05:10.400><c> is</c><00:05:10.639><c> over</c><00:05:11.120><c> here</c>
+
+00:05:12.070 --> 00:05:12.080 align:start position:0%
+k so k dot next is over here
+ 
+
+00:05:12.080 --> 00:05:14.550 align:start position:0%
+k so k dot next is over here
+so<00:05:12.320><c> after</c><00:05:12.639><c> i</c><00:05:12.880><c> cross</c><00:05:13.280><c> out</c><00:05:13.520><c> the</c><00:05:13.680><c> next</c><00:05:14.080><c> pointer</c>
+
+00:05:14.550 --> 00:05:14.560 align:start position:0%
+so after i cross out the next pointer
+ 
+
+00:05:14.560 --> 00:05:15.830 align:start position:0%
+so after i cross out the next pointer
+i'm<00:05:14.800><c> going</c><00:05:14.880><c> to</c><00:05:15.039><c> move</c><00:05:15.360><c> it</c>
+
+00:05:15.830 --> 00:05:15.840 align:start position:0%
+i'm going to move it
+ 
+
+00:05:15.840 --> 00:05:19.189 align:start position:0%
+i'm going to move it
+over<00:05:16.400><c> here</c><00:05:17.680><c> next</c><00:05:18.080><c> we</c><00:05:18.320><c> want</c><00:05:18.479><c> to</c><00:05:18.560><c> reverse</c>
+
+00:05:19.189 --> 00:05:19.199 align:start position:0%
+over here next we want to reverse
+ 
+
+00:05:19.199 --> 00:05:23.110 align:start position:0%
+over here next we want to reverse
+the<00:05:19.440><c> link</c><00:05:19.840><c> of</c><00:05:20.160><c> 4</c><00:05:20.720><c> so</c><00:05:22.080><c> we</c><00:05:22.240><c> can</c><00:05:22.400><c> remove</c><00:05:22.880><c> this</c>
+
+00:05:23.110 --> 00:05:23.120 align:start position:0%
+the link of 4 so we can remove this
+ 
+
+00:05:23.120 --> 00:05:24.150 align:start position:0%
+the link of 4 so we can remove this
+pointer<00:05:23.840><c> and</c>
+
+00:05:24.150 --> 00:05:24.160 align:start position:0%
+pointer and
+ 
+
+00:05:24.160 --> 00:05:27.189 align:start position:0%
+pointer and
+reverse<00:05:24.720><c> it</c><00:05:25.039><c> we</c><00:05:25.280><c> know</c><00:05:25.919><c> that</c><00:05:26.160><c> this</c><00:05:26.560><c> is</c><00:05:26.800><c> the</c>
+
+00:05:27.189 --> 00:05:27.199 align:start position:0%
+reverse it we know that this is the
+ 
+
+00:05:27.199 --> 00:05:28.150 align:start position:0%
+reverse it we know that this is the
+previous
+
+00:05:28.150 --> 00:05:28.160 align:start position:0%
+previous
+ 
+
+00:05:28.160 --> 00:05:30.870 align:start position:0%
+previous
+node<00:05:29.120><c> and</c><00:05:29.280><c> the</c><00:05:29.600><c> last</c><00:05:30.000><c> thing</c><00:05:30.240><c> remember</c><00:05:30.720><c> don't</c>
+
+00:05:30.870 --> 00:05:30.880 align:start position:0%
+node and the last thing remember don't
+ 
+
+00:05:30.880 --> 00:05:31.749 align:start position:0%
+node and the last thing remember don't
+forget
+
+00:05:31.749 --> 00:05:31.759 align:start position:0%
+forget
+ 
+
+00:05:31.759 --> 00:05:34.390 align:start position:0%
+forget
+before<00:05:32.400><c> we</c><00:05:32.639><c> took</c><00:05:32.880><c> our</c><00:05:33.199><c> dummy</c><00:05:33.680><c> pointer</c><00:05:34.240><c> and</c>
+
+00:05:34.390 --> 00:05:34.400 align:start position:0%
+before we took our dummy pointer and
+ 
+
+00:05:34.400 --> 00:05:35.189 align:start position:0%
+before we took our dummy pointer and
+then<00:05:34.720><c> set</c><00:05:34.960><c> it</c>
+
+00:05:35.189 --> 00:05:35.199 align:start position:0%
+then set it
+ 
+
+00:05:35.199 --> 00:05:38.310 align:start position:0%
+then set it
+to<00:05:35.600><c> two</c><00:05:36.080><c> instead</c><00:05:36.479><c> of</c><00:05:36.840><c> one</c><00:05:38.000><c> but</c>
+
+00:05:38.310 --> 00:05:38.320 align:start position:0%
+to two instead of one but
+ 
+
+00:05:38.320 --> 00:05:41.590 align:start position:0%
+to two instead of one but
+right<00:05:38.720><c> now</c><00:05:39.039><c> we're</c><00:05:39.280><c> gonna</c><00:05:39.600><c> take</c><00:05:40.400><c> one's</c><00:05:41.199><c> next</c>
+
+00:05:41.590 --> 00:05:41.600 align:start position:0%
+right now we're gonna take one's next
+ 
+
+00:05:41.600 --> 00:05:42.390 align:start position:0%
+right now we're gonna take one's next
+pointer
+
+00:05:42.390 --> 00:05:42.400 align:start position:0%
+pointer
+ 
+
+00:05:42.400 --> 00:05:45.510 align:start position:0%
+pointer
+and<00:05:42.639><c> instead</c><00:05:43.919><c> set</c><00:05:44.160><c> it</c><00:05:44.400><c> to</c><00:05:44.800><c> four</c>
+
+00:05:45.510 --> 00:05:45.520 align:start position:0%
+and instead set it to four
+ 
+
+00:05:45.520 --> 00:05:47.070 align:start position:0%
+and instead set it to four
+rather<00:05:45.840><c> than</c><00:05:46.160><c> three</c><00:05:46.560><c> because</c><00:05:46.800><c> we're</c>
+
+00:05:47.070 --> 00:05:47.080 align:start position:0%
+rather than three because we're
+ 
+
+00:05:47.080 --> 00:05:48.550 align:start position:0%
+rather than three because we're
+reversing
+
+00:05:48.550 --> 00:05:48.560 align:start position:0%
+reversing
+ 
+
+00:05:48.560 --> 00:05:53.590 align:start position:0%
+reversing
+this<00:05:48.880><c> group</c><00:05:50.160><c> so</c><00:05:50.560><c> one</c><00:05:50.880><c> dot</c><00:05:51.199><c> next</c><00:05:51.919><c> is</c><00:05:52.160><c> gonna</c><00:05:52.560><c> be</c>
+
+00:05:53.590 --> 00:05:53.600 align:start position:0%
+this group so one dot next is gonna be
+ 
+
+00:05:53.600 --> 00:05:56.710 align:start position:0%
+this group so one dot next is gonna be
+at<00:05:54.080><c> four</c><00:05:55.280><c> so</c><00:05:55.440><c> these</c><00:05:55.759><c> pointers</c><00:05:56.240><c> can</c><00:05:56.479><c> get</c>
+
+00:05:56.710 --> 00:05:56.720 align:start position:0%
+at four so these pointers can get
+ 
+
+00:05:56.720 --> 00:05:58.870 align:start position:0%
+at four so these pointers can get
+complicated<00:05:57.440><c> and</c><00:05:57.600><c> can</c><00:05:57.919><c> definitely</c><00:05:58.560><c> get</c>
+
+00:05:58.870 --> 00:05:58.880 align:start position:0%
+complicated and can definitely get
+ 
+
+00:05:58.880 --> 00:06:00.629 align:start position:0%
+complicated and can definitely get
+messy<00:05:59.360><c> even</c><00:05:59.680><c> when</c><00:05:59.840><c> you're</c><00:06:00.000><c> looking</c><00:06:00.319><c> at</c><00:06:00.479><c> a</c>
+
+00:06:00.629 --> 00:06:00.639 align:start position:0%
+messy even when you're looking at a
+ 
+
+00:06:00.639 --> 00:06:03.110 align:start position:0%
+messy even when you're looking at a
+picture<00:06:01.280><c> so</c><00:06:01.520><c> let's</c><00:06:01.840><c> redraw</c><00:06:02.479><c> it</c>
+
+00:06:03.110 --> 00:06:03.120 align:start position:0%
+picture so let's redraw it
+ 
+
+00:06:03.120 --> 00:06:05.670 align:start position:0%
+picture so let's redraw it
+so<00:06:03.520><c> this</c><00:06:04.000><c> is</c><00:06:04.160><c> what</c><00:06:04.400><c> our</c><00:06:04.560><c> linked</c><00:06:04.880><c> list</c><00:06:05.360><c> looks</c>
+
+00:06:05.670 --> 00:06:05.680 align:start position:0%
+so this is what our linked list looks
+ 
+
+00:06:05.680 --> 00:06:06.150 align:start position:0%
+so this is what our linked list looks
+like
+
+00:06:06.150 --> 00:06:06.160 align:start position:0%
+like
+ 
+
+00:06:06.160 --> 00:06:08.550 align:start position:0%
+like
+now<00:06:06.800><c> we</c><00:06:07.039><c> still</c><00:06:07.199><c> have</c><00:06:07.440><c> our</c><00:06:07.600><c> dummy</c><00:06:07.919><c> node</c><00:06:08.240><c> over</c>
+
+00:06:08.550 --> 00:06:08.560 align:start position:0%
+now we still have our dummy node over
+ 
+
+00:06:08.560 --> 00:06:11.189 align:start position:0%
+now we still have our dummy node over
+here<00:06:09.120><c> we</c><00:06:09.360><c> reversed</c><00:06:10.080><c> the</c><00:06:10.240><c> first</c><00:06:10.720><c> group</c>
+
+00:06:11.189 --> 00:06:11.199 align:start position:0%
+here we reversed the first group
+ 
+
+00:06:11.199 --> 00:06:13.670 align:start position:0%
+here we reversed the first group
+we<00:06:11.440><c> reversed</c><00:06:12.080><c> the</c><00:06:12.319><c> second</c><00:06:12.720><c> group</c><00:06:13.280><c> let's</c><00:06:13.520><c> look</c>
+
+00:06:13.670 --> 00:06:13.680 align:start position:0%
+we reversed the second group let's look
+ 
+
+00:06:13.680 --> 00:06:15.189 align:start position:0%
+we reversed the second group let's look
+at<00:06:13.840><c> the</c><00:06:14.080><c> third</c><00:06:14.400><c> group</c>
+
+00:06:15.189 --> 00:06:15.199 align:start position:0%
+at the third group
+ 
+
+00:06:15.199 --> 00:06:17.990 align:start position:0%
+at the third group
+so<00:06:15.919><c> we're</c><00:06:16.160><c> starting</c><00:06:16.560><c> here</c><00:06:16.800><c> this</c><00:06:17.039><c> is</c><00:06:17.280><c> one</c><00:06:17.759><c> let's</c>
+
+00:06:17.990 --> 00:06:18.000 align:start position:0%
+so we're starting here this is one let's
+ 
+
+00:06:18.000 --> 00:06:20.710 align:start position:0%
+so we're starting here this is one let's
+get<00:06:18.240><c> the</c><00:06:18.479><c> kth</c><00:06:18.880><c> node</c><00:06:19.360><c> okay</c><00:06:19.840><c> we</c><00:06:20.000><c> want</c><00:06:20.160><c> the</c><00:06:20.319><c> second</c>
+
+00:06:20.710 --> 00:06:20.720 align:start position:0%
+get the kth node okay we want the second
+ 
+
+00:06:20.720 --> 00:06:22.710 align:start position:0%
+get the kth node okay we want the second
+node<00:06:20.960><c> we</c><00:06:21.120><c> try</c><00:06:21.520><c> here</c>
+
+00:06:22.710 --> 00:06:22.720 align:start position:0%
+node we try here
+ 
+
+00:06:22.720 --> 00:06:26.790 align:start position:0%
+node we try here
+this<00:06:22.960><c> is</c><00:06:23.120><c> null</c><00:06:23.600><c> right</c><00:06:25.600><c> so</c><00:06:25.759><c> the</c><00:06:26.000><c> kth</c><00:06:26.400><c> node</c>
+
+00:06:26.790 --> 00:06:26.800 align:start position:0%
+this is null right so the kth node
+ 
+
+00:06:26.800 --> 00:06:28.070 align:start position:0%
+this is null right so the kth node
+doesn't<00:06:27.120><c> even</c><00:06:27.440><c> exist</c>
+
+00:06:28.070 --> 00:06:28.080 align:start position:0%
+doesn't even exist
+ 
+
+00:06:28.080 --> 00:06:31.270 align:start position:0%
+doesn't even exist
+so<00:06:28.400><c> this</c><00:06:28.720><c> group</c><00:06:29.199><c> is</c><00:06:29.440><c> too</c><00:06:29.759><c> small</c><00:06:30.800><c> so</c><00:06:31.039><c> we're</c>
+
+00:06:31.270 --> 00:06:31.280 align:start position:0%
+so this group is too small so we're
+ 
+
+00:06:31.280 --> 00:06:32.070 align:start position:0%
+so this group is too small so we're
+finished
+
+00:06:32.070 --> 00:06:32.080 align:start position:0%
+finished
+ 
+
+00:06:32.080 --> 00:06:34.790 align:start position:0%
+finished
+we<00:06:32.240><c> don't</c><00:06:32.400><c> have</c><00:06:32.560><c> to</c><00:06:32.639><c> do</c><00:06:32.880><c> anything</c><00:06:33.440><c> anymore</c><00:06:34.560><c> and</c>
+
+00:06:34.790 --> 00:06:34.800 align:start position:0%
+we don't have to do anything anymore and
+ 
+
+00:06:34.800 --> 00:06:35.990 align:start position:0%
+we don't have to do anything anymore and
+so<00:06:35.039><c> notice</c><00:06:35.360><c> we</c><00:06:35.520><c> got</c>
+
+00:06:35.990 --> 00:06:36.000 align:start position:0%
+so notice we got
+ 
+
+00:06:36.000 --> 00:06:39.830 align:start position:0%
+so notice we got
+two<00:06:36.639><c> one</c><00:06:37.360><c> four</c><00:06:38.080><c> three</c><00:06:38.880><c> five</c>
+
+00:06:39.830 --> 00:06:39.840 align:start position:0%
+two one four three five
+ 
+
+00:06:39.840 --> 00:06:41.670 align:start position:0%
+two one four three five
+when<00:06:40.080><c> you</c><00:06:40.160><c> go</c><00:06:40.400><c> back</c><00:06:40.639><c> here</c><00:06:40.960><c> that's</c><00:06:41.280><c> exactly</c>
+
+00:06:41.670 --> 00:06:41.680 align:start position:0%
+when you go back here that's exactly
+ 
+
+00:06:41.680 --> 00:06:43.110 align:start position:0%
+when you go back here that's exactly
+what<00:06:41.840><c> we</c><00:06:42.000><c> have</c><00:06:42.160><c> in</c><00:06:42.240><c> the</c><00:06:42.400><c> output</c>
+
+00:06:43.110 --> 00:06:43.120 align:start position:0%
+what we have in the output
+ 
+
+00:06:43.120 --> 00:06:46.870 align:start position:0%
+what we have in the output
+two<00:06:44.080><c> one</c><00:06:44.639><c> four</c><00:06:45.280><c> three</c><00:06:46.000><c> and</c><00:06:46.319><c> five</c>
+
+00:06:46.870 --> 00:06:46.880 align:start position:0%
+two one four three and five
+ 
+
+00:06:46.880 --> 00:06:49.430 align:start position:0%
+two one four three and five
+so<00:06:47.120><c> now</c><00:06:47.360><c> let's</c><00:06:47.680><c> actually</c><00:06:48.080><c> look</c><00:06:48.319><c> at</c><00:06:48.400><c> the</c><00:06:48.560><c> code</c>
+
+00:06:49.430 --> 00:06:49.440 align:start position:0%
+so now let's actually look at the code
+ 
+
+00:06:49.440 --> 00:06:50.469 align:start position:0%
+so now let's actually look at the code
+we<00:06:49.759><c> want</c><00:06:50.080><c> a</c>
+
+00:06:50.469 --> 00:06:50.479 align:start position:0%
+we want a
+ 
+
+00:06:50.479 --> 00:06:53.670 align:start position:0%
+we want a
+dummy<00:06:50.960><c> node</c><00:06:51.840><c> to</c><00:06:52.080><c> be</c><00:06:52.240><c> initialized</c>
+
+00:06:53.670 --> 00:06:53.680 align:start position:0%
+dummy node to be initialized
+ 
+
+00:06:53.680 --> 00:06:56.230 align:start position:0%
+dummy node to be initialized
+at<00:06:53.919><c> the</c><00:06:54.160><c> beginning</c><00:06:54.880><c> so</c><00:06:55.440><c> we're</c><00:06:55.680><c> gonna</c><00:06:55.919><c> give</c><00:06:56.080><c> it</c>
+
+00:06:56.230 --> 00:06:56.240 align:start position:0%
+at the beginning so we're gonna give it
+ 
+
+00:06:56.240 --> 00:06:57.350 align:start position:0%
+at the beginning so we're gonna give it
+a<00:06:56.319><c> default</c><00:06:56.720><c> value</c>
+
+00:06:57.350 --> 00:06:57.360 align:start position:0%
+a default value
+ 
+
+00:06:57.360 --> 00:07:00.710 align:start position:0%
+a default value
+zero<00:06:58.479><c> and</c><00:06:58.800><c> the</c><00:06:59.039><c> next</c><00:06:59.440><c> pointer</c><00:07:00.000><c> is</c><00:07:00.240><c> gonna</c><00:07:00.479><c> be</c>
+
+00:07:00.710 --> 00:07:00.720 align:start position:0%
+zero and the next pointer is gonna be
+ 
+
+00:07:00.720 --> 00:07:02.550 align:start position:0%
+zero and the next pointer is gonna be
+set<00:07:01.120><c> to</c><00:07:01.360><c> our</c><00:07:01.599><c> head</c>
+
+00:07:02.550 --> 00:07:02.560 align:start position:0%
+set to our head
+ 
+
+00:07:02.560 --> 00:07:05.589 align:start position:0%
+set to our head
+of<00:07:02.720><c> the</c><00:07:02.880><c> linked</c><00:07:03.199><c> list</c><00:07:04.000><c> i'm</c><00:07:04.319><c> also</c><00:07:04.800><c> gonna</c><00:07:05.120><c> have</c>
+
+00:07:05.589 --> 00:07:05.599 align:start position:0%
+of the linked list i'm also gonna have
+ 
+
+00:07:05.599 --> 00:07:07.830 align:start position:0%
+of the linked list i'm also gonna have
+a<00:07:05.840><c> pointer</c><00:07:06.319><c> i'm</c><00:07:06.400><c> gonna</c><00:07:06.639><c> call</c><00:07:06.960><c> the</c><00:07:07.199><c> group</c>
+
+00:07:07.830 --> 00:07:07.840 align:start position:0%
+a pointer i'm gonna call the group
+ 
+
+00:07:07.840 --> 00:07:08.629 align:start position:0%
+a pointer i'm gonna call the group
+previous
+
+00:07:08.629 --> 00:07:08.639 align:start position:0%
+previous
+ 
+
+00:07:08.639 --> 00:07:10.870 align:start position:0%
+previous
+which<00:07:08.880><c> i'm</c><00:07:09.039><c> gonna</c><00:07:09.280><c> initially</c><00:07:09.919><c> set</c><00:07:10.160><c> to</c><00:07:10.479><c> dummy</c>
+
+00:07:10.870 --> 00:07:10.880 align:start position:0%
+which i'm gonna initially set to dummy
+ 
+
+00:07:10.880 --> 00:07:13.029 align:start position:0%
+which i'm gonna initially set to dummy
+but<00:07:11.440><c> the</c><00:07:11.680><c> reason</c><00:07:12.000><c> we</c><00:07:12.240><c> have</c><00:07:12.560><c> this</c>
+
+00:07:13.029 --> 00:07:13.039 align:start position:0%
+but the reason we have this
+ 
+
+00:07:13.039 --> 00:07:16.070 align:start position:0%
+but the reason we have this
+is<00:07:13.280><c> if</c><00:07:13.440><c> we</c><00:07:13.680><c> have</c><00:07:13.919><c> a</c><00:07:14.160><c> group</c><00:07:14.720><c> so</c><00:07:14.880><c> if</c><00:07:15.120><c> our</c><00:07:15.520><c> group</c>
+
+00:07:16.070 --> 00:07:16.080 align:start position:0%
+is if we have a group so if our group
+ 
+
+00:07:16.080 --> 00:07:19.270 align:start position:0%
+is if we have a group so if our group
+was<00:07:16.400><c> 2</c><00:07:16.720><c> and</c><00:07:16.960><c> 3</c><00:07:17.599><c> and</c><00:07:17.759><c> we</c><00:07:17.919><c> want</c><00:07:18.080><c> to</c><00:07:18.240><c> reverse</c><00:07:18.800><c> it</c>
+
+00:07:19.270 --> 00:07:19.280 align:start position:0%
+was 2 and 3 and we want to reverse it
+ 
+
+00:07:19.280 --> 00:07:21.990 align:start position:0%
+was 2 and 3 and we want to reverse it
+the<00:07:19.520><c> output</c><00:07:20.000><c> would</c><00:07:20.240><c> look</c><00:07:20.479><c> like</c><00:07:20.800><c> this</c><00:07:21.280><c> right</c><00:07:21.840><c> so</c>
+
+00:07:21.990 --> 00:07:22.000 align:start position:0%
+the output would look like this right so
+ 
+
+00:07:22.000 --> 00:07:24.550 align:start position:0%
+the output would look like this right so
+we<00:07:22.160><c> took</c><00:07:22.400><c> this</c><00:07:22.720><c> group</c><00:07:23.039><c> and</c><00:07:23.199><c> reversed</c><00:07:23.759><c> it</c><00:07:23.919><c> to</c><00:07:24.240><c> do</c>
+
+00:07:24.550 --> 00:07:24.560 align:start position:0%
+we took this group and reversed it to do
+ 
+
+00:07:24.560 --> 00:07:27.589 align:start position:0%
+we took this group and reversed it to do
+that<00:07:25.120><c> we</c><00:07:25.360><c> need</c><00:07:25.680><c> to</c><00:07:25.919><c> have</c><00:07:26.240><c> a</c><00:07:26.319><c> pointer</c><00:07:27.039><c> of</c><00:07:27.280><c> one</c>
+
+00:07:27.589 --> 00:07:27.599 align:start position:0%
+that we need to have a pointer of one
+ 
+
+00:07:27.599 --> 00:07:28.070 align:start position:0%
+that we need to have a pointer of one
+node
+
+00:07:28.070 --> 00:07:28.080 align:start position:0%
+node
+ 
+
+00:07:28.080 --> 00:07:30.469 align:start position:0%
+node
+right<00:07:28.400><c> before</c><00:07:29.039><c> the</c><00:07:29.280><c> start</c><00:07:29.680><c> of</c><00:07:29.840><c> our</c><00:07:30.000><c> group</c><00:07:30.319><c> so</c>
+
+00:07:30.469 --> 00:07:30.479 align:start position:0%
+right before the start of our group so
+ 
+
+00:07:30.479 --> 00:07:31.350 align:start position:0%
+right before the start of our group so
+we<00:07:30.639><c> can</c><00:07:30.800><c> then</c><00:07:31.039><c> say</c>
+
+00:07:31.350 --> 00:07:31.360 align:start position:0%
+we can then say
+ 
+
+00:07:31.360 --> 00:07:33.990 align:start position:0%
+we can then say
+one<00:07:31.599><c> dot</c><00:07:31.919><c> next</c><00:07:32.400><c> is</c><00:07:32.639><c> three</c><00:07:33.039><c> so</c><00:07:33.199><c> we're</c><00:07:33.520><c> always</c>
+
+00:07:33.990 --> 00:07:34.000 align:start position:0%
+one dot next is three so we're always
+ 
+
+00:07:34.000 --> 00:07:35.110 align:start position:0%
+one dot next is three so we're always
+going<00:07:34.160><c> to</c><00:07:34.319><c> save</c>
+
+00:07:35.110 --> 00:07:35.120 align:start position:0%
+going to save
+ 
+
+00:07:35.120 --> 00:07:38.309 align:start position:0%
+going to save
+one<00:07:35.520><c> node</c><00:07:36.160><c> right</c><00:07:36.479><c> before</c><00:07:37.120><c> our</c><00:07:37.360><c> group</c><00:07:38.080><c> now</c>
+
+00:07:38.309 --> 00:07:38.319 align:start position:0%
+one node right before our group now
+ 
+
+00:07:38.319 --> 00:07:39.350 align:start position:0%
+one node right before our group now
+we're<00:07:38.479><c> just</c><00:07:38.720><c> gonna</c><00:07:38.960><c> start</c>
+
+00:07:39.350 --> 00:07:39.360 align:start position:0%
+we're just gonna start
+ 
+
+00:07:39.360 --> 00:07:41.589 align:start position:0%
+we're just gonna start
+looping<00:07:39.840><c> i'm</c><00:07:40.080><c> just</c><00:07:40.240><c> gonna</c><00:07:40.479><c> say</c><00:07:40.800><c> while</c><00:07:41.280><c> true</c>
+
+00:07:41.589 --> 00:07:41.599 align:start position:0%
+looping i'm just gonna say while true
+ 
+
+00:07:41.599 --> 00:07:42.710 align:start position:0%
+looping i'm just gonna say while true
+because<00:07:41.919><c> i'm</c><00:07:42.080><c> lazy</c>
+
+00:07:42.710 --> 00:07:42.720 align:start position:0%
+because i'm lazy
+ 
+
+00:07:42.720 --> 00:07:44.950 align:start position:0%
+because i'm lazy
+so<00:07:42.960><c> we're</c><00:07:43.120><c> going</c><00:07:43.280><c> to</c><00:07:43.360><c> need</c><00:07:43.520><c> to</c><00:07:43.759><c> get</c><00:07:44.080><c> the</c><00:07:44.400><c> kth</c>
+
+00:07:44.950 --> 00:07:44.960 align:start position:0%
+so we're going to need to get the kth
+ 
+
+00:07:44.960 --> 00:07:46.469 align:start position:0%
+so we're going to need to get the kth
+node<00:07:45.280><c> so</c><00:07:45.440><c> we</c><00:07:45.759><c> know</c>
+
+00:07:46.469 --> 00:07:46.479 align:start position:0%
+node so we know
+ 
+
+00:07:46.479 --> 00:07:49.189 align:start position:0%
+node so we know
+how<00:07:46.879><c> long</c><00:07:47.199><c> or</c><00:07:47.360><c> how</c><00:07:47.599><c> big</c><00:07:47.759><c> our</c><00:07:48.000><c> group</c><00:07:48.400><c> is</c><00:07:48.639><c> how</c>
+
+00:07:49.189 --> 00:07:49.199 align:start position:0%
+how long or how big our group is how
+ 
+
+00:07:49.199 --> 00:07:50.950 align:start position:0%
+how long or how big our group is how
+like<00:07:49.360><c> what</c><00:07:49.599><c> exactly</c><00:07:50.000><c> the</c><00:07:50.240><c> group</c><00:07:50.560><c> is</c><00:07:50.720><c> we're</c>
+
+00:07:50.950 --> 00:07:50.960 align:start position:0%
+like what exactly the group is we're
+ 
+
+00:07:50.960 --> 00:07:52.550 align:start position:0%
+like what exactly the group is we're
+trying<00:07:51.120><c> to</c><00:07:51.280><c> reverse</c><00:07:51.759><c> so</c><00:07:52.000><c> i'm</c><00:07:52.160><c> going</c><00:07:52.240><c> to</c><00:07:52.319><c> write</c>
+
+00:07:52.550 --> 00:07:52.560 align:start position:0%
+trying to reverse so i'm going to write
+ 
+
+00:07:52.560 --> 00:07:54.230 align:start position:0%
+trying to reverse so i'm going to write
+a<00:07:52.720><c> helper</c><00:07:53.199><c> function</c><00:07:53.599><c> to</c><00:07:53.759><c> do</c><00:07:53.919><c> that</c>
+
+00:07:54.230 --> 00:07:54.240 align:start position:0%
+a helper function to do that
+ 
+
+00:07:54.240 --> 00:07:56.790 align:start position:0%
+a helper function to do that
+just<00:07:54.479><c> called</c><00:07:54.960><c> get</c><00:07:55.280><c> k</c><00:07:55.919><c> and</c><00:07:56.240><c> we're</c><00:07:56.479><c> just</c><00:07:56.639><c> going</c>
+
+00:07:56.790 --> 00:07:56.800 align:start position:0%
+just called get k and we're just going
+ 
+
+00:07:56.800 --> 00:07:57.350 align:start position:0%
+just called get k and we're just going
+to<00:07:56.960><c> pass</c>
+
+00:07:57.350 --> 00:07:57.360 align:start position:0%
+to pass
+ 
+
+00:07:57.360 --> 00:07:59.990 align:start position:0%
+to pass
+in<00:07:57.759><c> two</c><00:07:58.000><c> parameters</c><00:07:58.560><c> the</c><00:07:58.800><c> current</c><00:07:59.280><c> node</c><00:07:59.599><c> and</c>
+
+00:07:59.990 --> 00:08:00.000 align:start position:0%
+in two parameters the current node and
+ 
+
+00:08:00.000 --> 00:08:01.589 align:start position:0%
+in two parameters the current node and
+the<00:08:00.319><c> what</c><00:08:00.479><c> the</c><00:08:00.639><c> value</c><00:08:01.199><c> k</c>
+
+00:08:01.589 --> 00:08:01.599 align:start position:0%
+the what the value k
+ 
+
+00:08:01.599 --> 00:08:04.150 align:start position:0%
+the what the value k
+is<00:08:01.919><c> so</c><00:08:02.319><c> starting</c><00:08:02.800><c> at</c><00:08:03.120><c> cur</c><00:08:03.680><c> we're</c><00:08:03.919><c> gonna</c>
+
+00:08:04.150 --> 00:08:04.160 align:start position:0%
+is so starting at cur we're gonna
+ 
+
+00:08:04.160 --> 00:08:04.950 align:start position:0%
+is so starting at cur we're gonna
+increment
+
+00:08:04.950 --> 00:08:04.960 align:start position:0%
+increment
+ 
+
+00:08:04.960 --> 00:08:07.749 align:start position:0%
+increment
+we're<00:08:05.120><c> gonna</c><00:08:05.440><c> uh</c><00:08:06.000><c> we're</c><00:08:06.240><c> gonna</c><00:08:06.479><c> shift</c><00:08:06.960><c> k</c><00:08:07.360><c> times</c>
+
+00:08:07.749 --> 00:08:07.759 align:start position:0%
+we're gonna uh we're gonna shift k times
+ 
+
+00:08:07.759 --> 00:08:08.950 align:start position:0%
+we're gonna uh we're gonna shift k times
+and<00:08:07.840><c> then</c><00:08:08.080><c> return</c><00:08:08.560><c> that</c>
+
+00:08:08.950 --> 00:08:08.960 align:start position:0%
+and then return that
+ 
+
+00:08:08.960 --> 00:08:12.550 align:start position:0%
+and then return that
+kth<00:08:09.440><c> node</c><00:08:10.080><c> so</c><00:08:10.560><c> while</c><00:08:11.039><c> cur</c><00:08:11.440><c> is</c><00:08:11.599><c> not</c><00:08:11.919><c> at</c><00:08:12.000><c> the</c><00:08:12.240><c> end</c>
+
+00:08:12.550 --> 00:08:12.560 align:start position:0%
+kth node so while cur is not at the end
+ 
+
+00:08:12.560 --> 00:08:12.869 align:start position:0%
+kth node so while cur is not at the end
+and
+
+00:08:12.869 --> 00:08:12.879 align:start position:0%
+and
+ 
+
+00:08:12.879 --> 00:08:14.950 align:start position:0%
+and
+k<00:08:13.120><c> is</c><00:08:13.360><c> greater</c><00:08:13.599><c> than</c><00:08:13.919><c> zero</c><00:08:14.400><c> we're</c><00:08:14.639><c> gonna</c>
+
+00:08:14.950 --> 00:08:14.960 align:start position:0%
+k is greater than zero we're gonna
+ 
+
+00:08:14.960 --> 00:08:16.309 align:start position:0%
+k is greater than zero we're gonna
+update<00:08:15.680><c> current</c>
+
+00:08:16.309 --> 00:08:16.319 align:start position:0%
+update current
+ 
+
+00:08:16.319 --> 00:08:19.430 align:start position:0%
+update current
+and<00:08:16.639><c> decrement</c><00:08:17.360><c> k</c><00:08:18.000><c> then</c><00:08:18.240><c> at</c><00:08:18.319><c> the</c><00:08:18.639><c> end</c><00:08:19.039><c> we</c><00:08:19.199><c> can</c>
+
+00:08:19.430 --> 00:08:19.440 align:start position:0%
+and decrement k then at the end we can
+ 
+
+00:08:19.440 --> 00:08:20.309 align:start position:0%
+and decrement k then at the end we can
+return
+
+00:08:20.309 --> 00:08:20.319 align:start position:0%
+return
+ 
+
+00:08:20.319 --> 00:08:23.110 align:start position:0%
+return
+the<00:08:20.560><c> kth</c><00:08:20.879><c> node</c><00:08:21.199><c> that</c><00:08:21.280><c> we</c><00:08:21.440><c> want</c><00:08:21.759><c> to</c><00:08:22.240><c> so</c><00:08:22.560><c> now</c><00:08:22.960><c> i'm</c>
+
+00:08:23.110 --> 00:08:23.120 align:start position:0%
+the kth node that we want to so now i'm
+ 
+
+00:08:23.120 --> 00:08:25.110 align:start position:0%
+the kth node that we want to so now i'm
+gonna<00:08:23.360><c> call</c><00:08:23.680><c> that</c><00:08:23.919><c> helper</c><00:08:24.319><c> function</c>
+
+00:08:25.110 --> 00:08:25.120 align:start position:0%
+gonna call that helper function
+ 
+
+00:08:25.120 --> 00:08:27.670 align:start position:0%
+gonna call that helper function
+get<00:08:25.599><c> k</c><00:08:26.240><c> and</c><00:08:26.560><c> what's</c><00:08:26.800><c> the</c><00:08:27.039><c> start</c><00:08:27.440><c> that</c><00:08:27.520><c> we're</c>
+
+00:08:27.670 --> 00:08:27.680 align:start position:0%
+get k and what's the start that we're
+ 
+
+00:08:27.680 --> 00:08:29.430 align:start position:0%
+get k and what's the start that we're
+going<00:08:27.840><c> to</c><00:08:28.000><c> pass</c><00:08:28.240><c> in</c><00:08:28.479><c> we're</c><00:08:28.639><c> going</c><00:08:28.720><c> to</c><00:08:28.960><c> pass</c><00:08:29.280><c> in</c>
+
+00:08:29.430 --> 00:08:29.440 align:start position:0%
+going to pass in we're going to pass in
+ 
+
+00:08:29.440 --> 00:08:30.230 align:start position:0%
+going to pass in we're going to pass in
+the<00:08:29.680><c> group</c>
+
+00:08:30.230 --> 00:08:30.240 align:start position:0%
+the group
+ 
+
+00:08:30.240 --> 00:08:32.550 align:start position:0%
+the group
+previous<00:08:30.960><c> because</c><00:08:31.520><c> the</c><00:08:31.680><c> group</c><00:08:32.000><c> previous</c><00:08:32.399><c> is</c>
+
+00:08:32.550 --> 00:08:32.560 align:start position:0%
+previous because the group previous is
+ 
+
+00:08:32.560 --> 00:08:36.389 align:start position:0%
+previous because the group previous is
+not<00:08:32.880><c> a</c><00:08:32.959><c> part</c><00:08:33.200><c> of</c><00:08:33.360><c> our</c><00:08:33.599><c> group</c>
+
+00:08:36.389 --> 00:08:36.399 align:start position:0%
+ 
+ 
+
+00:08:36.399 --> 00:08:39.509 align:start position:0%
+ 
+and<00:08:36.560><c> let's</c><00:08:36.880><c> store</c><00:08:37.279><c> this</c><00:08:37.839><c> in</c><00:08:38.240><c> case</c><00:08:39.039><c> but</c>
+
+00:08:39.509 --> 00:08:39.519 align:start position:0%
+and let's store this in case but
+ 
+
+00:08:39.519 --> 00:08:42.630 align:start position:0%
+and let's store this in case but
+what<00:08:39.760><c> if</c><00:08:40.080><c> the</c><00:08:40.320><c> kth</c><00:08:40.800><c> node</c><00:08:41.279><c> doesn't</c><00:08:41.760><c> even</c><00:08:42.080><c> exist</c>
+
+00:08:42.630 --> 00:08:42.640 align:start position:0%
+what if the kth node doesn't even exist
+ 
+
+00:08:42.640 --> 00:08:43.350 align:start position:0%
+what if the kth node doesn't even exist
+what<00:08:42.800><c> does</c><00:08:42.959><c> that</c>
+
+00:08:43.350 --> 00:08:43.360 align:start position:0%
+what does that
+ 
+
+00:08:43.360 --> 00:08:45.990 align:start position:0%
+what does that
+mean<00:08:43.760><c> that</c><00:08:44.000><c> means</c><00:08:44.320><c> we've</c><00:08:44.560><c> gotten</c><00:08:44.880><c> to</c><00:08:45.040><c> the</c><00:08:45.360><c> last</c>
+
+00:08:45.990 --> 00:08:46.000 align:start position:0%
+mean that means we've gotten to the last
+ 
+
+00:08:46.000 --> 00:08:46.790 align:start position:0%
+mean that means we've gotten to the last
+group
+
+00:08:46.790 --> 00:08:46.800 align:start position:0%
+group
+ 
+
+00:08:46.800 --> 00:08:49.670 align:start position:0%
+group
+in<00:08:46.959><c> our</c><00:08:47.120><c> linked</c><00:08:47.440><c> list</c><00:08:48.160><c> and</c><00:08:48.320><c> it's</c><00:08:48.640><c> not</c><00:08:49.440><c> big</c>
+
+00:08:49.670 --> 00:08:49.680 align:start position:0%
+in our linked list and it's not big
+ 
+
+00:08:49.680 --> 00:08:50.230 align:start position:0%
+in our linked list and it's not big
+enough
+
+00:08:50.230 --> 00:08:50.240 align:start position:0%
+enough
+ 
+
+00:08:50.240 --> 00:08:53.110 align:start position:0%
+enough
+for<00:08:50.560><c> us</c><00:08:50.720><c> to</c><00:08:50.959><c> reverse</c><00:08:51.440><c> it</c><00:08:51.600><c> so</c><00:08:51.839><c> we</c><00:08:52.000><c> can</c><00:08:52.320><c> stop</c><00:08:52.720><c> then</c>
+
+00:08:53.110 --> 00:08:53.120 align:start position:0%
+for us to reverse it so we can stop then
+ 
+
+00:08:53.120 --> 00:08:53.990 align:start position:0%
+for us to reverse it so we can stop then
+so<00:08:53.360><c> we</c><00:08:53.519><c> can</c><00:08:53.680><c> say</c>
+
+00:08:53.990 --> 00:08:54.000 align:start position:0%
+so we can say
+ 
+
+00:08:54.000 --> 00:08:57.829 align:start position:0%
+so we can say
+if<00:08:54.399><c> not</c><00:08:54.800><c> k</c><00:08:55.440><c> if</c><00:08:55.600><c> it's</c><00:08:55.920><c> null</c><00:08:56.640><c> then</c><00:08:56.880><c> terminate</c><00:08:57.519><c> so</c>
+
+00:08:57.829 --> 00:08:57.839 align:start position:0%
+if not k if it's null then terminate so
+ 
+
+00:08:57.839 --> 00:09:00.470 align:start position:0%
+if not k if it's null then terminate so
+break<00:08:58.399><c> out</c><00:08:58.640><c> of</c><00:08:58.800><c> the</c><00:08:59.040><c> loop</c><00:08:59.680><c> so</c><00:08:59.920><c> that's</c><00:09:00.160><c> why</c><00:09:00.320><c> we</c>
+
+00:09:00.470 --> 00:09:00.480 align:start position:0%
+break out of the loop so that's why we
+ 
+
+00:09:00.480 --> 00:09:01.509 align:start position:0%
+break out of the loop so that's why we
+have<00:09:00.560><c> a</c><00:09:00.720><c> true</c><00:09:01.040><c> here</c>
+
+00:09:01.509 --> 00:09:01.519 align:start position:0%
+have a true here
+ 
+
+00:09:01.519 --> 00:09:02.870 align:start position:0%
+have a true here
+and<00:09:01.760><c> that's</c><00:09:02.000><c> going</c><00:09:02.080><c> to</c><00:09:02.160><c> be</c><00:09:02.320><c> the</c><00:09:02.399><c> condition</c>
+
+00:09:02.870 --> 00:09:02.880 align:start position:0%
+and that's going to be the condition
+ 
+
+00:09:02.880 --> 00:09:04.790 align:start position:0%
+and that's going to be the condition
+that<00:09:03.120><c> breaks</c><00:09:03.600><c> us</c><00:09:03.839><c> out</c><00:09:04.399><c> so</c>
+
+00:09:04.790 --> 00:09:04.800 align:start position:0%
+that breaks us out so
+ 
+
+00:09:04.800 --> 00:09:07.190 align:start position:0%
+that breaks us out so
+similar<00:09:05.360><c> to</c><00:09:05.519><c> how</c><00:09:05.760><c> we</c><00:09:05.920><c> have</c><00:09:06.320><c> we</c><00:09:06.560><c> always</c><00:09:06.959><c> keep</c>
+
+00:09:07.190 --> 00:09:07.200 align:start position:0%
+similar to how we have we always keep
+ 
+
+00:09:07.200 --> 00:09:09.430 align:start position:0%
+similar to how we have we always keep
+track<00:09:07.519><c> of</c><00:09:07.760><c> one</c><00:09:08.080><c> node</c><00:09:08.399><c> before</c><00:09:08.800><c> the</c><00:09:08.959><c> start</c><00:09:09.279><c> of</c>
+
+00:09:09.430 --> 00:09:09.440 align:start position:0%
+track of one node before the start of
+ 
+
+00:09:09.440 --> 00:09:10.070 align:start position:0%
+track of one node before the start of
+our<00:09:09.600><c> group</c>
+
+00:09:10.070 --> 00:09:10.080 align:start position:0%
+our group
+ 
+
+00:09:10.080 --> 00:09:13.030 align:start position:0%
+our group
+let's<00:09:10.399><c> keep</c><00:09:10.720><c> track</c><00:09:11.120><c> of</c><00:09:11.279><c> a</c><00:09:11.519><c> node</c><00:09:12.320><c> right</c><00:09:12.720><c> after</c>
+
+00:09:13.030 --> 00:09:13.040 align:start position:0%
+let's keep track of a node right after
+ 
+
+00:09:13.040 --> 00:09:14.710 align:start position:0%
+let's keep track of a node right after
+our<00:09:13.200><c> group</c><00:09:13.519><c> so</c><00:09:13.680><c> if</c><00:09:13.760><c> this</c><00:09:14.000><c> is</c><00:09:14.080><c> the</c><00:09:14.320><c> kth</c>
+
+00:09:14.710 --> 00:09:14.720 align:start position:0%
+our group so if this is the kth
+ 
+
+00:09:14.720 --> 00:09:17.990 align:start position:0%
+our group so if this is the kth
+node<00:09:15.040><c> let's</c><00:09:15.279><c> just</c><00:09:15.519><c> get</c><00:09:16.320><c> kth</c><00:09:17.519><c> dot</c>
+
+00:09:17.990 --> 00:09:18.000 align:start position:0%
+node let's just get kth dot
+ 
+
+00:09:18.000 --> 00:09:21.990 align:start position:0%
+node let's just get kth dot
+next<00:09:19.360><c> and</c><00:09:19.760><c> store</c><00:09:20.080><c> that</c><00:09:20.399><c> in</c><00:09:20.640><c> group</c><00:09:21.040><c> dot</c><00:09:21.360><c> next</c>
+
+00:09:21.990 --> 00:09:22.000 align:start position:0%
+next and store that in group dot next
+ 
+
+00:09:22.000 --> 00:09:25.110 align:start position:0%
+next and store that in group dot next
+so<00:09:22.240><c> one</c><00:09:22.560><c> node</c><00:09:23.040><c> right</c><00:09:23.440><c> after</c><00:09:23.920><c> our</c><00:09:24.080><c> group</c><00:09:24.640><c> so</c><00:09:24.880><c> now</c>
+
+00:09:25.110 --> 00:09:25.120 align:start position:0%
+so one node right after our group so now
+ 
+
+00:09:25.120 --> 00:09:25.990 align:start position:0%
+so one node right after our group so now
+we<00:09:25.279><c> can</c><00:09:25.519><c> start</c>
+
+00:09:25.990 --> 00:09:26.000 align:start position:0%
+we can start
+ 
+
+00:09:26.000 --> 00:09:29.190 align:start position:0%
+we can start
+actually<00:09:26.800><c> reversing</c><00:09:27.760><c> right</c><00:09:28.080><c> reversing</c>
+
+00:09:29.190 --> 00:09:29.200 align:start position:0%
+actually reversing right reversing
+ 
+
+00:09:29.200 --> 00:09:32.550 align:start position:0%
+actually reversing right reversing
+the<00:09:29.440><c> group</c><00:09:30.160><c> and</c><00:09:30.880><c> we</c><00:09:31.040><c> can</c><00:09:31.279><c> use</c><00:09:31.760><c> two</c><00:09:32.000><c> pointers</c><00:09:32.399><c> to</c>
+
+00:09:32.550 --> 00:09:32.560 align:start position:0%
+the group and we can use two pointers to
+ 
+
+00:09:32.560 --> 00:09:33.990 align:start position:0%
+the group and we can use two pointers to
+do<00:09:32.720><c> that</c><00:09:32.959><c> if</c><00:09:33.120><c> you've</c><00:09:33.440><c> solved</c>
+
+00:09:33.990 --> 00:09:34.000 align:start position:0%
+do that if you've solved
+ 
+
+00:09:34.000 --> 00:09:36.310 align:start position:0%
+do that if you've solved
+the<00:09:34.480><c> delete</c><00:09:34.880><c> code</c><00:09:35.120><c> easy</c><00:09:35.440><c> problem</c><00:09:35.839><c> reversal</c>
+
+00:09:36.310 --> 00:09:36.320 align:start position:0%
+the delete code easy problem reversal
+ 
+
+00:09:36.320 --> 00:09:37.910 align:start position:0%
+the delete code easy problem reversal
+linked<00:09:36.560><c> list</c><00:09:36.880><c> you</c><00:09:37.040><c> probably</c><00:09:37.279><c> know</c><00:09:37.440><c> how</c><00:09:37.600><c> to</c><00:09:37.680><c> do</c>
+
+00:09:37.910 --> 00:09:37.920 align:start position:0%
+linked list you probably know how to do
+ 
+
+00:09:37.920 --> 00:09:38.389 align:start position:0%
+linked list you probably know how to do
+this
+
+00:09:38.389 --> 00:09:38.399 align:start position:0%
+this
+ 
+
+00:09:38.399 --> 00:09:41.190 align:start position:0%
+this
+i'm<00:09:38.560><c> going</c><00:09:38.720><c> to</c><00:09:38.800><c> set</c><00:09:39.120><c> previous</c><00:09:39.760><c> to</c><00:09:40.080><c> null</c><00:09:40.880><c> and</c>
+
+00:09:41.190 --> 00:09:41.200 align:start position:0%
+i'm going to set previous to null and
+ 
+
+00:09:41.200 --> 00:09:41.910 align:start position:0%
+i'm going to set previous to null and
+current
+
+00:09:41.910 --> 00:09:41.920 align:start position:0%
+current
+ 
+
+00:09:41.920 --> 00:09:45.750 align:start position:0%
+current
+group<00:09:42.959><c> previous</c><00:09:44.240><c> dot</c><00:09:44.720><c> next</c>
+
+00:09:45.750 --> 00:09:45.760 align:start position:0%
+group previous dot next
+ 
+
+00:09:45.760 --> 00:09:48.389 align:start position:0%
+group previous dot next
+because<00:09:46.160><c> this</c><00:09:46.560><c> is</c><00:09:46.720><c> the</c><00:09:47.040><c> first</c><00:09:47.519><c> node</c><00:09:48.080><c> in</c><00:09:48.240><c> our</c>
+
+00:09:48.389 --> 00:09:48.399 align:start position:0%
+because this is the first node in our
+ 
+
+00:09:48.399 --> 00:09:50.389 align:start position:0%
+because this is the first node in our
+group<00:09:48.800><c> but</c><00:09:48.959><c> there's</c><00:09:49.200><c> just</c><00:09:49.440><c> one</c><00:09:49.760><c> problem</c><00:09:50.160><c> with</c>
+
+00:09:50.389 --> 00:09:50.399 align:start position:0%
+group but there's just one problem with
+ 
+
+00:09:50.399 --> 00:09:51.269 align:start position:0%
+group but there's just one problem with
+this<00:09:50.560><c> remember</c>
+
+00:09:51.269 --> 00:09:51.279 align:start position:0%
+this remember
+ 
+
+00:09:51.279 --> 00:09:53.750 align:start position:0%
+this remember
+if<00:09:51.440><c> we</c><00:09:51.680><c> have</c><00:09:52.000><c> previous</c><00:09:52.560><c> initially</c><00:09:53.200><c> set</c><00:09:53.519><c> to</c>
+
+00:09:53.750 --> 00:09:53.760 align:start position:0%
+if we have previous initially set to
+ 
+
+00:09:53.760 --> 00:09:54.630 align:start position:0%
+if we have previous initially set to
+null
+
+00:09:54.630 --> 00:09:54.640 align:start position:0%
+null
+ 
+
+00:09:54.640 --> 00:09:56.949 align:start position:0%
+null
+we're<00:09:54.800><c> gonna</c><00:09:55.120><c> end</c><00:09:55.360><c> up</c><00:09:55.760><c> splitting</c><00:09:56.399><c> our</c><00:09:56.640><c> linked</c>
+
+00:09:56.949 --> 00:09:56.959 align:start position:0%
+we're gonna end up splitting our linked
+ 
+
+00:09:56.959 --> 00:09:59.430 align:start position:0%
+we're gonna end up splitting our linked
+lists<00:09:57.600><c> and</c><00:09:57.760><c> we</c><00:09:58.000><c> don't</c><00:09:58.320><c> want</c><00:09:58.560><c> to</c><00:09:58.720><c> have</c><00:09:58.959><c> multiple</c>
+
+00:09:59.430 --> 00:09:59.440 align:start position:0%
+lists and we don't want to have multiple
+ 
+
+00:09:59.440 --> 00:10:00.310 align:start position:0%
+lists and we don't want to have multiple
+linked<00:09:59.760><c> lists</c><00:10:00.000><c> so</c>
+
+00:10:00.310 --> 00:10:00.320 align:start position:0%
+linked lists so
+ 
+
+00:10:00.320 --> 00:10:03.509 align:start position:0%
+linked lists so
+instead<00:10:00.800><c> of</c><00:10:00.959><c> this</c><00:10:01.279><c> being</c><00:10:01.680><c> null</c><00:10:02.399><c> in</c><00:10:02.640><c> reality</c>
+
+00:10:03.509 --> 00:10:03.519 align:start position:0%
+instead of this being null in reality
+ 
+
+00:10:03.519 --> 00:10:06.710 align:start position:0%
+instead of this being null in reality
+it's<00:10:03.760><c> going</c><00:10:03.920><c> to</c><00:10:04.000><c> be</c><00:10:04.480><c> kth</c><00:10:05.519><c> dot</c><00:10:06.000><c> next</c>
+
+00:10:06.710 --> 00:10:06.720 align:start position:0%
+it's going to be kth dot next
+ 
+
+00:10:06.720 --> 00:10:08.949 align:start position:0%
+it's going to be kth dot next
+so<00:10:06.959><c> the</c><00:10:07.120><c> rest</c><00:10:07.440><c> of</c><00:10:07.519><c> this</c><00:10:07.920><c> is</c><00:10:08.160><c> basically</c><00:10:08.640><c> just</c>
+
+00:10:08.949 --> 00:10:08.959 align:start position:0%
+so the rest of this is basically just
+ 
+
+00:10:08.959 --> 00:10:10.470 align:start position:0%
+so the rest of this is basically just
+reverse<00:10:09.360><c> a</c><00:10:09.519><c> linked</c><00:10:09.760><c> list</c><00:10:10.079><c> so</c>
+
+00:10:10.470 --> 00:10:10.480 align:start position:0%
+reverse a linked list so
+ 
+
+00:10:10.480 --> 00:10:13.269 align:start position:0%
+reverse a linked list so
+while<00:10:11.040><c> current</c><00:10:11.600><c> does</c><00:10:11.839><c> not</c><00:10:12.079><c> reach</c><00:10:12.399><c> the</c><00:10:12.800><c> end</c><00:10:13.120><c> in</c>
+
+00:10:13.269 --> 00:10:13.279 align:start position:0%
+while current does not reach the end in
+ 
+
+00:10:13.279 --> 00:10:14.230 align:start position:0%
+while current does not reach the end in
+this<00:10:13.519><c> case</c><00:10:13.839><c> the</c>
+
+00:10:14.230 --> 00:10:14.240 align:start position:0%
+this case the
+ 
+
+00:10:14.240 --> 00:10:18.230 align:start position:0%
+this case the
+end<00:10:14.800><c> is</c><00:10:15.440><c> the</c><00:10:15.680><c> end</c><00:10:16.000><c> is</c><00:10:16.480><c> group</c><00:10:17.040><c> dot</c><00:10:17.360><c> next</c><00:10:17.920><c> and</c><00:10:18.079><c> now</c>
+
+00:10:18.230 --> 00:10:18.240 align:start position:0%
+end is the end is group dot next and now
+ 
+
+00:10:18.240 --> 00:10:20.230 align:start position:0%
+end is the end is group dot next and now
+we're<00:10:18.399><c> just</c><00:10:18.640><c> reversing</c><00:10:19.279><c> so</c><00:10:19.600><c> i'm</c><00:10:19.839><c> going</c><00:10:19.920><c> to</c><00:10:20.079><c> put</c>
+
+00:10:20.230 --> 00:10:20.240 align:start position:0%
+we're just reversing so i'm going to put
+ 
+
+00:10:20.240 --> 00:10:21.870 align:start position:0%
+we're just reversing so i'm going to put
+it<00:10:20.399><c> in</c><00:10:20.560><c> a</c><00:10:20.720><c> temporary</c><00:10:21.200><c> variable</c>
+
+00:10:21.870 --> 00:10:21.880 align:start position:0%
+it in a temporary variable
+ 
+
+00:10:21.880 --> 00:10:23.949 align:start position:0%
+it in a temporary variable
+current.next<00:10:22.959><c> we're</c><00:10:23.120><c> going</c><00:10:23.200><c> to</c><00:10:23.440><c> update</c>
+
+00:10:23.949 --> 00:10:23.959 align:start position:0%
+current.next we're going to update
+ 
+
+00:10:23.959 --> 00:10:25.430 align:start position:0%
+current.next we're going to update
+current.next
+
+00:10:25.430 --> 00:10:25.440 align:start position:0%
+current.next
+ 
+
+00:10:25.440 --> 00:10:27.910 align:start position:0%
+current.next
+set<00:10:25.680><c> it</c><00:10:25.839><c> to</c><00:10:26.079><c> previous</c><00:10:26.959><c> previous</c><00:10:27.519><c> is</c><00:10:27.680><c> going</c><00:10:27.839><c> to</c>
+
+00:10:27.910 --> 00:10:27.920 align:start position:0%
+set it to previous previous is going to
+ 
+
+00:10:27.920 --> 00:10:28.630 align:start position:0%
+set it to previous previous is going to
+be<00:10:28.079><c> set</c><00:10:28.320><c> to</c>
+
+00:10:28.630 --> 00:10:28.640 align:start position:0%
+be set to
+ 
+
+00:10:28.640 --> 00:10:31.110 align:start position:0%
+be set to
+current<00:10:29.600><c> and</c><00:10:29.839><c> then</c><00:10:30.160><c> current</c><00:10:30.560><c> is</c><00:10:30.720><c> going</c><00:10:30.800><c> to</c><00:10:30.880><c> be</c>
+
+00:10:31.110 --> 00:10:31.120 align:start position:0%
+current and then current is going to be
+ 
+
+00:10:31.120 --> 00:10:32.790 align:start position:0%
+current and then current is going to be
+shifted<00:10:31.519><c> by</c><00:10:31.839><c> 1</c><00:10:32.240><c> which</c><00:10:32.480><c> is</c>
+
+00:10:32.790 --> 00:10:32.800 align:start position:0%
+shifted by 1 which is
+ 
+
+00:10:32.800 --> 00:10:35.190 align:start position:0%
+shifted by 1 which is
+stored<00:10:33.279><c> in</c><00:10:33.440><c> our</c><00:10:33.600><c> temporary</c><00:10:34.240><c> variable</c><00:10:34.959><c> so</c>
+
+00:10:35.190 --> 00:10:35.200 align:start position:0%
+stored in our temporary variable so
+ 
+
+00:10:35.200 --> 00:10:36.310 align:start position:0%
+stored in our temporary variable so
+remember<00:10:35.839><c> how</c>
+
+00:10:36.310 --> 00:10:36.320 align:start position:0%
+remember how
+ 
+
+00:10:36.320 --> 00:10:39.269 align:start position:0%
+remember how
+kth<00:10:37.040><c> was</c><00:10:37.279><c> the</c><00:10:37.600><c> last</c><00:10:38.000><c> node</c><00:10:38.320><c> in</c><00:10:38.480><c> our</c><00:10:38.640><c> group</c><00:10:39.040><c> now</c>
+
+00:10:39.269 --> 00:10:39.279 align:start position:0%
+kth was the last node in our group now
+ 
+
+00:10:39.279 --> 00:10:41.509 align:start position:0%
+kth was the last node in our group now
+we<00:10:39.519><c> want</c><00:10:39.760><c> it</c><00:10:39.839><c> to</c><00:10:40.000><c> be</c><00:10:40.160><c> the</c><00:10:40.480><c> first</c><00:10:40.880><c> node</c><00:10:41.200><c> in</c><00:10:41.279><c> our</c>
+
+00:10:41.509 --> 00:10:41.519 align:start position:0%
+we want it to be the first node in our
+ 
+
+00:10:41.519 --> 00:10:42.150 align:start position:0%
+we want it to be the first node in our
+group
+
+00:10:42.150 --> 00:10:42.160 align:start position:0%
+group
+ 
+
+00:10:42.160 --> 00:10:45.269 align:start position:0%
+group
+and<00:10:42.640><c> what</c><00:10:42.880><c> we</c><00:10:43.040><c> can</c><00:10:43.360><c> do</c><00:10:43.839><c> is</c><00:10:44.160><c> say</c><00:10:44.560><c> group</c>
+
+00:10:45.269 --> 00:10:45.279 align:start position:0%
+and what we can do is say group
+ 
+
+00:10:45.279 --> 00:10:48.230 align:start position:0%
+and what we can do is say group
+previous<00:10:46.079><c> so</c><00:10:46.399><c> one</c><00:10:46.720><c> node</c><00:10:47.040><c> before</c><00:10:47.519><c> the</c><00:10:47.760><c> start</c><00:10:48.079><c> of</c>
+
+00:10:48.230 --> 00:10:48.240 align:start position:0%
+previous so one node before the start of
+ 
+
+00:10:48.240 --> 00:10:49.110 align:start position:0%
+previous so one node before the start of
+our<00:10:48.399><c> group</c>
+
+00:10:49.110 --> 00:10:49.120 align:start position:0%
+our group
+ 
+
+00:10:49.120 --> 00:10:52.470 align:start position:0%
+our group
+dot<00:10:49.760><c> next</c><00:10:50.880><c> is</c><00:10:51.200><c> now</c><00:10:51.519><c> going</c><00:10:51.680><c> to</c><00:10:51.839><c> be</c>
+
+00:10:52.470 --> 00:10:52.480 align:start position:0%
+dot next is now going to be
+ 
+
+00:10:52.480 --> 00:10:55.030 align:start position:0%
+dot next is now going to be
+kth<00:10:53.040><c> so</c><00:10:53.200><c> what</c><00:10:53.360><c> we're</c><00:10:53.600><c> doing</c><00:10:53.920><c> is</c><00:10:54.079><c> putting</c><00:10:54.560><c> kth</c>
+
+00:10:55.030 --> 00:10:55.040 align:start position:0%
+kth so what we're doing is putting kth
+ 
+
+00:10:55.040 --> 00:10:57.110 align:start position:0%
+kth so what we're doing is putting kth
+at<00:10:55.200><c> the</c><00:10:55.360><c> beginning</c><00:10:56.079><c> of</c><00:10:56.240><c> this</c><00:10:56.560><c> group</c>
+
+00:10:57.110 --> 00:10:57.120 align:start position:0%
+at the beginning of this group
+ 
+
+00:10:57.120 --> 00:11:00.230 align:start position:0%
+at the beginning of this group
+but<00:10:57.360><c> we</c><00:10:57.680><c> also</c><00:10:58.320><c> want</c><00:10:58.640><c> to</c><00:10:59.040><c> update</c><00:10:59.760><c> group</c>
+
+00:11:00.230 --> 00:11:00.240 align:start position:0%
+but we also want to update group
+ 
+
+00:11:00.240 --> 00:11:03.269 align:start position:0%
+but we also want to update group
+previous<00:11:01.440><c> for</c><00:11:01.680><c> the</c><00:11:01.920><c> next</c><00:11:02.320><c> iteration</c><00:11:02.959><c> of</c><00:11:03.120><c> our</c>
+
+00:11:03.269 --> 00:11:03.279 align:start position:0%
+previous for the next iteration of our
+ 
+
+00:11:03.279 --> 00:11:05.110 align:start position:0%
+previous for the next iteration of our
+loop<00:11:03.519><c> right</c><00:11:03.680><c> when</c><00:11:03.839><c> we</c><00:11:04.000><c> come</c><00:11:04.240><c> back</c><00:11:04.560><c> around</c>
+
+00:11:05.110 --> 00:11:05.120 align:start position:0%
+loop right when we come back around
+ 
+
+00:11:05.120 --> 00:11:08.310 align:start position:0%
+loop right when we come back around
+we<00:11:05.360><c> want</c><00:11:06.399><c> this</c><00:11:06.720><c> node</c><00:11:07.200><c> to</c><00:11:07.360><c> be</c><00:11:07.600><c> where</c><00:11:07.760><c> it</c><00:11:08.079><c> should</c>
+
+00:11:08.310 --> 00:11:08.320 align:start position:0%
+we want this node to be where it should
+ 
+
+00:11:08.320 --> 00:11:09.990 align:start position:0%
+we want this node to be where it should
+be<00:11:08.480><c> we</c><00:11:08.640><c> want</c><00:11:08.880><c> this</c><00:11:09.040><c> pointer</c><00:11:09.440><c> to</c><00:11:09.519><c> be</c><00:11:09.680><c> where</c><00:11:09.839><c> it</c>
+
+00:11:09.990 --> 00:11:10.000 align:start position:0%
+be we want this pointer to be where it
+ 
+
+00:11:10.000 --> 00:11:10.790 align:start position:0%
+be we want this pointer to be where it
+should<00:11:10.320><c> be</c>
+
+00:11:10.790 --> 00:11:10.800 align:start position:0%
+should be
+ 
+
+00:11:10.800 --> 00:11:14.150 align:start position:0%
+should be
+and<00:11:11.040><c> to</c><00:11:11.200><c> do</c><00:11:11.519><c> that</c><00:11:12.000><c> what</c><00:11:12.240><c> we</c><00:11:12.399><c> can</c><00:11:12.560><c> do</c><00:11:13.120><c> is</c>
+
+00:11:14.150 --> 00:11:14.160 align:start position:0%
+and to do that what we can do is
+ 
+
+00:11:14.160 --> 00:11:15.910 align:start position:0%
+and to do that what we can do is
+actually<00:11:14.640><c> have</c><00:11:14.800><c> a</c><00:11:15.040><c> and</c><00:11:15.279><c> i</c><00:11:15.360><c> have</c><00:11:15.519><c> another</c>
+
+00:11:15.910 --> 00:11:15.920 align:start position:0%
+actually have a and i have another
+ 
+
+00:11:15.920 --> 00:11:17.750 align:start position:0%
+actually have a and i have another
+temporary<00:11:16.399><c> variable</c><00:11:17.040><c> so</c>
+
+00:11:17.750 --> 00:11:17.760 align:start position:0%
+temporary variable so
+ 
+
+00:11:17.760 --> 00:11:19.910 align:start position:0%
+temporary variable so
+in<00:11:17.920><c> that</c><00:11:18.160><c> we're</c><00:11:18.320><c> going</c><00:11:18.399><c> to</c><00:11:18.560><c> store</c><00:11:18.959><c> group</c>
+
+00:11:19.910 --> 00:11:19.920 align:start position:0%
+in that we're going to store group
+ 
+
+00:11:19.920 --> 00:11:20.870 align:start position:0%
+in that we're going to store group
+previous
+
+00:11:20.870 --> 00:11:20.880 align:start position:0%
+previous
+ 
+
+00:11:20.880 --> 00:11:23.990 align:start position:0%
+previous
+dot<00:11:21.360><c> next</c><00:11:22.000><c> before</c><00:11:22.320><c> we</c><00:11:22.560><c> end</c><00:11:22.720><c> up</c><00:11:22.959><c> updating</c><00:11:23.519><c> it</c>
+
+00:11:23.990 --> 00:11:24.000 align:start position:0%
+dot next before we end up updating it
+ 
+
+00:11:24.000 --> 00:11:26.310 align:start position:0%
+dot next before we end up updating it
+and<00:11:24.240><c> what</c><00:11:24.640><c> this</c><00:11:25.279><c> current</c><00:11:25.920><c> what</c><00:11:26.079><c> this</c>
+
+00:11:26.310 --> 00:11:26.320 align:start position:0%
+and what this current what this
+ 
+
+00:11:26.320 --> 00:11:27.750 align:start position:0%
+and what this current what this
+initially<00:11:26.959><c> stores</c>
+
+00:11:27.750 --> 00:11:27.760 align:start position:0%
+initially stores
+ 
+
+00:11:27.760 --> 00:11:31.030 align:start position:0%
+initially stores
+is<00:11:28.240><c> the</c><00:11:28.640><c> first</c><00:11:29.120><c> node</c><00:11:29.519><c> in</c><00:11:29.680><c> our</c><00:11:29.920><c> group</c><00:11:30.240><c> remember</c>
+
+00:11:31.030 --> 00:11:31.040 align:start position:0%
+is the first node in our group remember
+ 
+
+00:11:31.040 --> 00:11:33.590 align:start position:0%
+is the first node in our group remember
+kth<00:11:31.519><c> was</c><00:11:31.760><c> the</c><00:11:31.920><c> last</c><00:11:32.320><c> node</c><00:11:32.560><c> in</c><00:11:32.720><c> our</c><00:11:32.880><c> group</c><00:11:33.279><c> this</c>
+
+00:11:33.590 --> 00:11:33.600 align:start position:0%
+kth was the last node in our group this
+ 
+
+00:11:33.600 --> 00:11:35.509 align:start position:0%
+kth was the last node in our group this
+is<00:11:33.760><c> the</c><00:11:34.079><c> first</c><00:11:34.480><c> node</c><00:11:34.720><c> in</c><00:11:34.880><c> our</c><00:11:35.040><c> group</c>
+
+00:11:35.509 --> 00:11:35.519 align:start position:0%
+is the first node in our group
+ 
+
+00:11:35.519 --> 00:11:39.030 align:start position:0%
+is the first node in our group
+and<00:11:35.760><c> so</c><00:11:36.000><c> we</c><00:11:36.240><c> want</c><00:11:36.399><c> to</c><00:11:36.640><c> set</c><00:11:36.959><c> this</c><00:11:37.760><c> equal</c><00:11:38.240><c> to</c><00:11:38.399><c> that</c>
+
+00:11:39.030 --> 00:11:39.040 align:start position:0%
+and so we want to set this equal to that
+ 
+
+00:11:39.040 --> 00:11:41.430 align:start position:0%
+and so we want to set this equal to that
+because<00:11:39.440><c> this</c><00:11:39.920><c> started</c><00:11:40.480><c> as</c><00:11:40.640><c> the</c><00:11:40.880><c> first</c><00:11:41.200><c> node</c>
+
+00:11:41.430 --> 00:11:41.440 align:start position:0%
+because this started as the first node
+ 
+
+00:11:41.440 --> 00:11:42.150 align:start position:0%
+because this started as the first node
+in<00:11:41.519><c> our</c><00:11:41.680><c> group</c>
+
+00:11:42.150 --> 00:11:42.160 align:start position:0%
+in our group
+ 
+
+00:11:42.160 --> 00:11:44.949 align:start position:0%
+in our group
+but<00:11:42.480><c> now</c><00:11:42.800><c> it's</c><00:11:42.959><c> going</c><00:11:43.120><c> to</c><00:11:43.200><c> be</c><00:11:43.360><c> the</c><00:11:43.680><c> last</c><00:11:44.240><c> node</c>
+
+00:11:44.949 --> 00:11:44.959 align:start position:0%
+but now it's going to be the last node
+ 
+
+00:11:44.959 --> 00:11:45.590 align:start position:0%
+but now it's going to be the last node
+and<00:11:45.120><c> that's</c>
+
+00:11:45.590 --> 00:11:45.600 align:start position:0%
+and that's
+ 
+
+00:11:45.600 --> 00:11:47.910 align:start position:0%
+and that's
+what<00:11:45.760><c> we</c><00:11:45.920><c> want</c><00:11:46.240><c> this</c><00:11:46.480><c> to</c><00:11:46.640><c> be</c><00:11:46.800><c> set</c><00:11:47.120><c> to</c><00:11:47.360><c> so</c><00:11:47.600><c> i</c>
+
+00:11:47.910 --> 00:11:47.920 align:start position:0%
+what we want this to be set to so i
+ 
+
+00:11:47.920 --> 00:11:49.990 align:start position:0%
+what we want this to be set to so i
+think<00:11:48.320><c> probably</c><00:11:48.959><c> this</c><00:11:49.279><c> is</c><00:11:49.360><c> the</c><00:11:49.600><c> most</c>
+
+00:11:49.990 --> 00:11:50.000 align:start position:0%
+think probably this is the most
+ 
+
+00:11:50.000 --> 00:11:52.550 align:start position:0%
+think probably this is the most
+complicated<00:11:50.720><c> part</c><00:11:51.040><c> of</c><00:11:51.120><c> the</c><00:11:51.360><c> problem</c><00:11:52.079><c> and</c>
+
+00:11:52.550 --> 00:11:52.560 align:start position:0%
+complicated part of the problem and
+ 
+
+00:11:52.560 --> 00:11:54.470 align:start position:0%
+complicated part of the problem and
+pointers<00:11:53.120><c> in</c><00:11:53.279><c> general</c><00:11:53.760><c> are</c><00:11:53.920><c> really</c>
+
+00:11:54.470 --> 00:11:54.480 align:start position:0%
+pointers in general are really
+ 
+
+00:11:54.480 --> 00:11:56.629 align:start position:0%
+pointers in general are really
+kind<00:11:54.639><c> of</c><00:11:54.800><c> annoying</c><00:11:55.279><c> even</c><00:11:55.519><c> drawing</c><00:11:55.839><c> a</c><00:11:55.920><c> picture</c>
+
+00:11:56.629 --> 00:11:56.639 align:start position:0%
+kind of annoying even drawing a picture
+ 
+
+00:11:56.639 --> 00:11:57.910 align:start position:0%
+kind of annoying even drawing a picture
+is<00:11:56.800><c> kind</c><00:11:56.959><c> of</c><00:11:57.040><c> annoying</c><00:11:57.360><c> because</c><00:11:57.519><c> you</c><00:11:57.680><c> have</c><00:11:57.760><c> to</c>
+
+00:11:57.910 --> 00:11:57.920 align:start position:0%
+is kind of annoying because you have to
+ 
+
+00:11:57.920 --> 00:11:59.670 align:start position:0%
+is kind of annoying because you have to
+cross<00:11:58.320><c> out</c><00:11:58.480><c> a</c><00:11:58.560><c> bunch</c><00:11:58.800><c> of</c><00:11:58.959><c> pointers</c>
+
+00:11:59.670 --> 00:11:59.680 align:start position:0%
+cross out a bunch of pointers
+ 
+
+00:11:59.680 --> 00:12:01.990 align:start position:0%
+cross out a bunch of pointers
+but<00:12:00.160><c> right</c><00:12:00.399><c> now</c><00:12:00.880><c> all</c><00:12:01.040><c> we</c><00:12:01.200><c> need</c><00:12:01.360><c> to</c><00:12:01.519><c> do</c><00:12:01.839><c> is</c>
+
+00:12:01.990 --> 00:12:02.000 align:start position:0%
+but right now all we need to do is
+ 
+
+00:12:02.000 --> 00:12:02.710 align:start position:0%
+but right now all we need to do is
+return
+
+00:12:02.710 --> 00:12:02.720 align:start position:0%
+return
+ 
+
+00:12:02.720 --> 00:12:05.509 align:start position:0%
+return
+the<00:12:03.040><c> new</c><00:12:03.360><c> head</c><00:12:03.680><c> of</c><00:12:03.839><c> the</c><00:12:04.000><c> linked</c><00:12:04.320><c> list</c><00:12:04.959><c> which</c><00:12:05.360><c> is</c>
+
+00:12:05.509 --> 00:12:05.519 align:start position:0%
+the new head of the linked list which is
+ 
+
+00:12:05.519 --> 00:12:06.829 align:start position:0%
+the new head of the linked list which is
+going<00:12:05.680><c> to</c><00:12:05.839><c> be</c>
+
+00:12:06.829 --> 00:12:06.839 align:start position:0%
+going to be
+ 
+
+00:12:06.839 --> 00:12:10.069 align:start position:0%
+going to be
+dummy.next<00:12:08.000><c> so</c><00:12:08.160><c> this</c><00:12:08.399><c> is</c><00:12:08.560><c> the</c><00:12:08.720><c> final</c><00:12:09.200><c> code</c><00:12:09.839><c> so</c>
+
+00:12:10.069 --> 00:12:10.079 align:start position:0%
+dummy.next so this is the final code so
+ 
+
+00:12:10.079 --> 00:12:10.870 align:start position:0%
+dummy.next so this is the final code so
+it<00:12:10.240><c> does</c><00:12:10.480><c> work</c>
+
+00:12:10.870 --> 00:12:10.880 align:start position:0%
+it does work
+ 
+
+00:12:10.880 --> 00:12:13.350 align:start position:0%
+it does work
+pretty<00:12:11.200><c> well</c><00:12:11.920><c> if</c><00:12:12.079><c> this</c><00:12:12.240><c> was</c><00:12:12.399><c> helpful</c><00:12:13.040><c> please</c>
+
+00:12:13.350 --> 00:12:13.360 align:start position:0%
+pretty well if this was helpful please
+ 
+
+00:12:13.360 --> 00:12:14.949 align:start position:0%
+pretty well if this was helpful please
+like<00:12:13.600><c> and</c><00:12:13.680><c> subscribe</c><00:12:14.240><c> it</c><00:12:14.399><c> supports</c><00:12:14.800><c> the</c>
+
+00:12:14.949 --> 00:12:14.959 align:start position:0%
+like and subscribe it supports the
+ 
+
+00:12:14.959 --> 00:12:15.910 align:start position:0%
+like and subscribe it supports the
+channel<00:12:15.279><c> a</c><00:12:15.440><c> lot</c>
+
+00:12:15.910 --> 00:12:15.920 align:start position:0%
+channel a lot
+ 
+
+00:12:15.920 --> 00:12:21.360 align:start position:0%
+channel a lot
+and<00:12:16.079><c> i'll</c><00:12:16.240><c> hopefully</c><00:12:16.800><c> see</c><00:12:17.040><c> you</c><00:12:17.200><c> pretty</c><00:12:18.360><c> soon</c>
+

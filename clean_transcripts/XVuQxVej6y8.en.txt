@@ -1,0 +1,192 @@
+hey everyone welcome back let's write
+some more neat code today today let's
+solve remove nth node from the end of a
+list
+so we're given a linked list and all we
+need to do
+is remove the nth node from the end of
+the list
+and then return the new list so that's
+pretty straightforward right so in this
+case we got five nodes
+we just want to remove the n equals two
+so meaning the second node from the end
+of the list right so this is the first
+from the end of the list this is the
+second
+so we remove this and then we return
+this list which now has four elements
+remaining
+so what's the easiest way to solve this
+well they say from the
+end of the list that's inconvenient if
+it was from the beginning of the list
+it'd be
+super straightforward right n equals 2
+remove this node
+how can we make that even easier i mean
+what if these pointers were reversed
+can't we just reverse this linked list
+start from
+here and then remove the second node
+and then we're done that's definitely a
+possible solution but it requires
+reversing the linked list which we don't
+actually
+have to do and i'm going to show you the
+easier way to do it
+so let's say n equals 2 again
+so we want to remove this node so how
+can we
+identify that this is the second node
+from the end of the list
+like a lot of linked list questions we
+can use two pointers
+but how are we gonna make use of our two
+pointers
+so what if i had two pointers right a
+left pointer and a right pointer
+the left pointer is at the beginning of
+the list and the right pointer
+is shifted by n equals two so
+our right pointer is gonna be shifted
+one and then it's gonna be shifted again
+and our right pointer is gonna be over
+here so
+now we're just gonna keep shifting our
+pointers until this
+right pointer is at the end of the list
+and watch what happens
+when we do that so we're just going to
+be shifting
+each pointer by one and this is going to
+make sure
+that the space between these pointers is
+exactly
+equal to n which is two right
+so now we're going to shift by one again
+making sure that the gap between them is
+still two
+now we're going to shift one last time
+because right is almost at the end so
+now our
+right pointer is at null right it's at
+the
+end of the list it can't go any farther
+and our left pointer
+is exactly at the node that we want to
+delete
+and the reason is because remember the
+offset between these two
+is n making sure that we have the node
+we want to delete
+now there's only one problem we have
+access to the node that we want to
+delete but we want to delete it
+how do we delete it the only thing we
+have to do is take this pointer
+cross it out and then reassign it
+over here right once we've done that
+we've gotten
+rid of this node so the problem is
+we're at this node when really we want
+to be
+at this node if we want to delete this
+node
+and this can actually be solved by
+another
+pretty common technique the dummy node
+right so we're going to actually have
+another
+node that we insert at the beginning of
+this list that we don't really
+use and the main thing that's going to
+happen is happen is instead of our
+left pointer instead of our left pointer
+being initialized here
+we're actually going to initialize it at
+the dummy node
+so left is really going to be
+initialized here
+and our right pointer though is still
+going to be initialized over here
+so in reality when our right pointer
+reaches the end of the list
+we will have a left pointer at 3
+and then we can update its pointer
+removing this node that we want to
+remove
+and to return the new linked list
+all we have to do is take our dummy
+pointer
+and say return dummy dot next
+which is going to be this node and since
+this is a 2.0 technique
+the time complexity is going to be big o
+of n
+so just like in the drawing the first
+thing we really want to do is create a
+dummy node
+we don't really care what the value of
+this node is but i'll just say
+zero but we want to make sure that the
+next
+pointer of this node is set to the head
+of the list because we're inserting it
+at the beginning
+next we can initialize our left
+pointer to dummy
+and we want our right pointer to be
+head plus two right or
+head plus n whatever n happens to be
+so we need a loop to do that right we
+can't just do that
+with a calculation so we can initially
+say
+right is equal to head and while
+n is greater than zero and
+right is not null we want to keep
+shifting right
+so shift right by one
+and decrement n by one
+because once n equals zero that means
+we've shifted by the amount that we
+wanted to shift by
+and the last thing we want to do is keep
+shifting
+both of our pointers now now we're
+shifting left and right and we're going
+to keep
+going until right equals until
+right reaches the end of the list
+so we can shift our left pointer
+and we can shift our right pointer
+now last but not least we actually want
+to delete the node and remember
+all we need to do to delete is update
+the left node's next pointer
+and it's going to basically be shifted
+by one so left dot next is going to
+equal
+left dot next dot next
+so for example if my left node was at
+my left pointer was at this node its
+next pointer is at 2 but i want to set
+its next pointer
+to 2's next pointer so
+basically what i'm doing is this and we
+know that
+dummy.next is at the head of our list
+which is what we want to return we want
+to return the
+updated list so we can just return
+dummy.next we don't want to include
+our dummy node in the output we never
+wanted to add a node to the list we just
+wanted to remove a node
+so our solution works beautifully we
+could have just reversed the list
+but we definitely did not need to do
+that i hope this was helpful
+don't forget to like and subscribe it
+supports the channel a lot and i'll

@@ -1,0 +1,291 @@
+everyone welcome back and let's write
+some more neat code today so today let's
+solve sum of two integers and finally
+this is actually the last blind 75
+question that we have to do on this
+channel we've been tracking all the
+blind 75 problems on the spreadsheet
+link will be in the description if you
+want to take a look i've actually
+finished all the questions even a couple
+of them that are blank i've recorded
+those and this sum of two integers is
+finally the last blind 75 question we
+have remaining okay now let's get into
+the problem so we're given two integers
+a and b and we want to return the sum of
+these two integers and the only catch is
+that we have to do this without using
+the plus and minus operators and that's
+definitely going to make this tricky and
+by the way don't uh pay attention to
+this dislike up above so i'm sure you
+know how addition works we have one plus
+two and the output is going to be three
+so if we can't use plus and minus we
+have to get creative and by creative we
+mean bit manipulation so when we look at
+the integer 1 it's going to look like
+this in binary representation the
+integer 2 is going to look like this so
+we know of course if we add these right
+we can do it digit by digit this is
+going to be 1 this is also going to be 1
+and this is the binary representation
+for 3. so that works but of course we
+have to do it without doing the plus
+operation so we're gonna have to do some
+kind of bit manipulation operation on
+each of these bits so let's think about
+this if we had a one and we had a zero
+we know that adding these two together
+is gonna give us a one in the output but
+we can't use addition what kind of
+operation logical operation could we do
+on these two bits to figure out that the
+answer is one we know that this could be
+a zero and this could be a one or this
+could be a zero and this could be a one
+and adding these together still would be
+a one in the output so if one of these
+digits is a one we will have a one in
+the output but what would happen if both
+of these digits were a one then we'd
+have a zero in the output and we'd have
+a one that's a carry value that we're
+gonna you know shift left and then add
+that carry to the remaining digits and
+by the way we could also have two
+zeros and of course zero added together
+would be zero so what we really
+discovered is that if one of these is a
+one digit only one of these is a one
+digit then we'll have a one in the
+output but if they're both ones then
+we'll have a zero in the output and if
+they're both zeros then we'll also have
+a zero in the output so what we have
+discovered is actually a logical
+operator called xor or exclusive or it
+basically means only one of these two
+digits is one then you'll have a one in
+the output if both of the digits are the
+same then we'll have a zero in the
+output and that's exactly what we need
+in this problem so xor works if we have
+two ones here though and we do the xor
+operation we're gonna get a zero
+in the output digit which is exactly
+what we want but we also want a one
+carry how do we get that one carry well
+you first have to ask yourself in what
+case are we going to have a carry digit
+right when are we going to have this
+carry well if we have two zeros we're
+definitely not going to have a carry if
+we have a single zero then we're also
+not going to have a carry but if we have
+two ones this is the only case that
+we're going to have a carry so how do we
+know if we have two ones well we can use
+another logic operator called the and
+operator so if a and b are one then we
+know we'll have a one carry but that one
+carry is not going to be added over here
+that one carry is gonna be in
+the left spot it's gonna be shifted to
+the left by one so actually when we do
+this a and b operation we want to take
+it and then shift it to the left by one
+and then take this or this new integer
+that we've discovered right and then
+take that and then add it here so we're
+actually gonna have a loop we're gonna
+do an xor operation and then if we have
+a carry value we're going to actually
+take that new carry value and then add
+it again to whatever we have left
+remaining now let's try this idea that i
+just talked about on one of these
+examples and what we're going to figure
+out is actually when we're doing these
+logic operators we don't have to do them
+one by one we can do them on the
+entirety of a and b that we're given
+okay so now let's take a look at an
+example we want to add a which is the
+integer 9 in binary representation it
+looks like this and we want to add b
+which is 11 and this is what it looks
+like in binary representation well we
+want to add them but we know we can't
+use plus and minus so
+what we're gonna do is run the exclusive
+or operation which in code i think it
+looks like this we want to run the
+exclusive or on these bit by bit and we
+can do it on the entire integer a and b
+if we exclusive or them together uh
+first this bit well they're both one so
+that's going to be a zero in this case
+one of them is a one so we're going to
+have a one in the output in this case
+they're both zero we have a zero in the
+output in this case they're both one we
+have a zero in the output but what
+integer is this this is just the integer
+two but obviously nine plus eleven is
+not two so we missed something basically
+we didn't do the and right in this case
+we're going to have a carry one that's
+going to be over here right and we're
+also going to have a carry from these
+two which is going to be over here so
+what we want to do is take this new
+integer which is going to look like this
+and then add that with the result of a
+xor b
+the xor does add these numbers it just
+doesn't take care of the carry so we
+have to take care of the carry ourselves
+and uh when we
+basically take a logic and with b we
+also want to shift it to the left by one
+and then we'll get some other integer so
+by the way over here we're going to take
+a and b and then shift it to the left by
+one so
+when we end these two together we get a
+one when we and these two together we
+get a zero when we and these two we get
+a zero when we and these two we get a
+one but we remember we want to take this
+and shift it to the left by one so what
+we're actually gonna have is a one here
+zero zero one right and then this will
+just this uh place will just get filled
+with a zero so now we wanna take these
+two numbers and add them together and
+when we say add them together we're
+going to do the same exact operations we
+did here so we're going to first xor
+these exclusive wearing these we get a
+zero exclusive wearing these we get a
+zero exclusive or these we get zero
+again zero here though we do get a one
+so we got the exclusive or now we want
+to get the and of them shifted to the
+left by one so and these two nothing and
+these two we get a one and of course we
+want to shift it to the left by one
+which means we'll have a one over here
+so i'll just put that one over here
+because we know for the rest of these uh
+this is not going to be ended and this
+is not going to be ended so
+this will basically be zero zero
+everything is zero except this so now we
+want to add these two together again
+we're going to do our xor operation
+first xoring these these nothing here we
+get a 1
+nothing here here we get a 1 and
+when you and these two together we just
+get a zero in the output right logic
+ending these two will get us a zero
+which basically means we don't have a
+carry in this case which means we are
+finished adding them together right if
+we don't have a carry that means we're
+done so this is the result in that case
+now what number is this well it's 16
+plus 4 which is 20 which is exactly what
+we were looking for right because we
+were adding 9 plus 11. so i hope that
+this makes sense and i hope you kind of
+understand why it works so now we can
+get into the code and actually what is
+going to be the time complexity of this
+solution well it's going to be constant
+time because first we're we're told that
+the integers a and b are going to be
+between negative 1000 and positive 1000
+and how many times could we actually do
+this loop uh you know before getting a
+carry that's you know zero
+it can't go run forever like of course
+if these were arbitrarily large integers
+then in that case
+we might have like a linear time
+algorithm but for the most part this is
+constant time and one more thing i want
+to mention is how are we going to handle
+negative numbers well negative numbers
+will actually handle themselves and i
+don't want to go too in detail to that
+we could talk about like two's
+complement and stuff like that but what
+you need to know is this operation um
+xoring and ending them this is
+equivalent to addition and we know that
+in most languages if you take negative
+three you know plus positive number this
+will give us the correct output which is
+positive one in this case and since this
+is basically equivalent to addition as
+long as the language we're using handles
+binary representation correctly it
+should work for us one thing i want to
+mention is i'm actually going to code
+this up in java today not python because
+python integers are arbitrarily large
+they're not 32-bit so it kind of runs
+into problems with this algorithm and
+just to keep it simple i'm just going to
+use java okay so now let's code it up
+and yes uh believe it or not i do know
+java i have coded java even though i use
+python pretty much exclusively on this
+channel so now let's do our loop and
+remember the condition we're doing our
+loop is basically until the carry value
+ends up being 0 and b is what we're
+going to use for the carry in this case
+and you'll see what i mean in a second
+so what we want to do is we want to
+assign a equal to a x or b just like we
+kind of did in the drawing explanation
+and we want to set b
+equal to a anded with b and then bit
+shifted to the left by one and then we
+want to go to the next iteration of the
+loop basically doing the same thing and
+we learned that these two operations are
+equivalent to adding a and b together
+but one little catch is that if we
+already assign a to the exclusive or
+then when we try to assign b we're using
+the new value of a when we actually want
+to use the old value of a
+so before we
+reassign a i'm just going to actually
+calculate a temporary integer which is
+basically our and condition which is
+going to be a and b
+shifted to the left by one and then
+instead i'm going to assign b equal to
+that temporary value to make sure that
+we use the original value of a not the
+new value of a and once we're done with
+that eventually b will equal 0 b is the
+carry and then we can go ahead and
+return the result which is going to be
+stored in a okay now let's run it to
+make sure that it works and on the left
+you can see that yes it works and it is
+pretty efficient so i really hope that
+this was helpful if it was please like
+and subscribe it really supports the
+channel a lot consider checking out my
+patreon where you can further support
+the channel and hopefully i'll see you

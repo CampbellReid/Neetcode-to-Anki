@@ -1,0 +1,4112 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.750 align:start position:0%
+ 
+hey<00:00:00.240><c> everyone</c><00:00:00.719><c> welcome</c><00:00:01.199><c> back</c><00:00:01.439><c> and</c><00:00:01.520><c> let's</c>
+
+00:00:01.750 --> 00:00:01.760 align:start position:0%
+hey everyone welcome back and let's
+ 
+
+00:00:01.760 --> 00:00:03.750 align:start position:0%
+hey everyone welcome back and let's
+write<00:00:02.000><c> some</c><00:00:02.159><c> more</c><00:00:02.399><c> neat</c><00:00:02.720><c> code</c><00:00:02.960><c> today</c><00:00:03.199><c> so</c><00:00:03.360><c> today</c>
+
+00:00:03.750 --> 00:00:03.760 align:start position:0%
+write some more neat code today so today
+ 
+
+00:00:03.760 --> 00:00:04.470 align:start position:0%
+write some more neat code today so today
+let's<00:00:04.000><c> solve</c>
+
+00:00:04.470 --> 00:00:04.480 align:start position:0%
+let's solve
+ 
+
+00:00:04.480 --> 00:00:07.909 align:start position:0%
+let's solve
+hand<00:00:04.960><c> of</c><00:00:05.359><c> straights</c><00:00:06.319><c> so</c><00:00:06.640><c> we're</c><00:00:06.960><c> given</c><00:00:07.359><c> a</c><00:00:07.520><c> hand</c>
+
+00:00:07.909 --> 00:00:07.919 align:start position:0%
+hand of straights so we're given a hand
+ 
+
+00:00:07.919 --> 00:00:08.310 align:start position:0%
+hand of straights so we're given a hand
+of
+
+00:00:08.310 --> 00:00:08.320 align:start position:0%
+of
+ 
+
+00:00:08.320 --> 00:00:10.790 align:start position:0%
+of
+cards<00:00:08.960><c> which</c><00:00:09.200><c> is</c><00:00:09.360><c> given</c><00:00:09.599><c> to</c><00:00:09.760><c> us</c><00:00:10.000><c> as</c><00:00:10.080><c> an</c><00:00:10.320><c> array</c>
+
+00:00:10.790 --> 00:00:10.800 align:start position:0%
+cards which is given to us as an array
+ 
+
+00:00:10.800 --> 00:00:12.070 align:start position:0%
+cards which is given to us as an array
+of<00:00:11.040><c> integers</c><00:00:11.440><c> so</c><00:00:11.679><c> each</c>
+
+00:00:12.070 --> 00:00:12.080 align:start position:0%
+of integers so each
+ 
+
+00:00:12.080 --> 00:00:14.709 align:start position:0%
+of integers so each
+card<00:00:12.480><c> has</c><00:00:12.799><c> a</c><00:00:12.880><c> particular</c><00:00:13.599><c> integer</c><00:00:14.080><c> associated</c>
+
+00:00:14.709 --> 00:00:14.719 align:start position:0%
+card has a particular integer associated
+ 
+
+00:00:14.719 --> 00:00:15.350 align:start position:0%
+card has a particular integer associated
+with<00:00:14.960><c> it</c>
+
+00:00:15.350 --> 00:00:15.360 align:start position:0%
+with it
+ 
+
+00:00:15.360 --> 00:00:18.550 align:start position:0%
+with it
+we<00:00:15.599><c> want</c><00:00:15.839><c> to</c><00:00:16.160><c> rearrange</c><00:00:17.199><c> the</c><00:00:17.520><c> cards</c><00:00:18.080><c> into</c>
+
+00:00:18.550 --> 00:00:18.560 align:start position:0%
+we want to rearrange the cards into
+ 
+
+00:00:18.560 --> 00:00:21.910 align:start position:0%
+we want to rearrange the cards into
+groups<00:00:19.279><c> so</c><00:00:19.520><c> that</c><00:00:19.760><c> each</c><00:00:20.240><c> group</c><00:00:20.800><c> size</c><00:00:21.520><c> is</c><00:00:21.760><c> a</c>
+
+00:00:21.910 --> 00:00:21.920 align:start position:0%
+groups so that each group size is a
+ 
+
+00:00:21.920 --> 00:00:24.070 align:start position:0%
+groups so that each group size is a
+particular<00:00:22.640><c> value</c><00:00:23.039><c> that</c><00:00:23.199><c> we're</c><00:00:23.359><c> given</c><00:00:23.760><c> as</c><00:00:23.920><c> an</c>
+
+00:00:24.070 --> 00:00:24.080 align:start position:0%
+particular value that we're given as an
+ 
+
+00:00:24.080 --> 00:00:25.990 align:start position:0%
+particular value that we're given as an
+input<00:00:24.480><c> parameter</c><00:00:24.880><c> for</c><00:00:25.119><c> example</c><00:00:25.519><c> one</c>
+
+00:00:25.990 --> 00:00:26.000 align:start position:0%
+input parameter for example one
+ 
+
+00:00:26.000 --> 00:00:28.150 align:start position:0%
+input parameter for example one
+value<00:00:26.320><c> we</c><00:00:26.400><c> could</c><00:00:26.560><c> be</c><00:00:26.640><c> given</c><00:00:26.960><c> is</c><00:00:27.119><c> group</c><00:00:27.439><c> size</c><00:00:27.840><c> of</c>
+
+00:00:28.150 --> 00:00:28.160 align:start position:0%
+value we could be given is group size of
+ 
+
+00:00:28.160 --> 00:00:30.470 align:start position:0%
+value we could be given is group size of
+three<00:00:28.880><c> so</c><00:00:29.119><c> every</c><00:00:29.359><c> group</c><00:00:29.679><c> needs</c><00:00:29.920><c> to</c><00:00:30.080><c> be</c><00:00:30.320><c> of</c>
+
+00:00:30.470 --> 00:00:30.480 align:start position:0%
+three so every group needs to be of
+ 
+
+00:00:30.480 --> 00:00:31.750 align:start position:0%
+three so every group needs to be of
+group<00:00:30.800><c> size</c><00:00:31.199><c> three</c>
+
+00:00:31.750 --> 00:00:31.760 align:start position:0%
+group size three
+ 
+
+00:00:31.760 --> 00:00:34.870 align:start position:0%
+group size three
+but<00:00:32.079><c> not</c><00:00:32.480><c> only</c><00:00:33.040><c> that</c><00:00:33.520><c> every</c><00:00:34.160><c> single</c>
+
+00:00:34.870 --> 00:00:34.880 align:start position:0%
+but not only that every single
+ 
+
+00:00:34.880 --> 00:00:37.910 align:start position:0%
+but not only that every single
+group<00:00:35.600><c> needs</c><00:00:36.000><c> to</c><00:00:36.239><c> have</c><00:00:36.800><c> consecutive</c>
+
+00:00:37.910 --> 00:00:37.920 align:start position:0%
+group needs to have consecutive
+ 
+
+00:00:37.920 --> 00:00:40.470 align:start position:0%
+group needs to have consecutive
+cards<00:00:38.480><c> in</c><00:00:38.719><c> it</c><00:00:38.879><c> basically</c><00:00:39.600><c> a</c><00:00:39.760><c> group</c><00:00:40.160><c> could</c><00:00:40.320><c> be</c>
+
+00:00:40.470 --> 00:00:40.480 align:start position:0%
+cards in it basically a group could be
+ 
+
+00:00:40.480 --> 00:00:41.030 align:start position:0%
+cards in it basically a group could be
+let's<00:00:40.719><c> say</c>
+
+00:00:41.030 --> 00:00:41.040 align:start position:0%
+let's say
+ 
+
+00:00:41.040 --> 00:00:43.990 align:start position:0%
+let's say
+one<00:00:41.760><c> two</c><00:00:42.480><c> three</c><00:00:42.879><c> because</c><00:00:43.200><c> all</c><00:00:43.360><c> values</c><00:00:43.840><c> are</c>
+
+00:00:43.990 --> 00:00:44.000 align:start position:0%
+one two three because all values are
+ 
+
+00:00:44.000 --> 00:00:45.590 align:start position:0%
+one two three because all values are
+consecutive<00:00:44.640><c> it</c><00:00:44.800><c> could</c><00:00:44.960><c> also</c><00:00:45.200><c> be</c>
+
+00:00:45.590 --> 00:00:45.600 align:start position:0%
+consecutive it could also be
+ 
+
+00:00:45.600 --> 00:00:49.270 align:start position:0%
+consecutive it could also be
+2<00:00:46.320><c> 3</c><00:00:47.280><c> 4</c><00:00:47.680><c> right</c><00:00:48.160><c> but</c><00:00:48.399><c> something</c><00:00:48.719><c> like</c><00:00:48.960><c> 2</c>
+
+00:00:49.270 --> 00:00:49.280 align:start position:0%
+2 3 4 right but something like 2
+ 
+
+00:00:49.280 --> 00:00:51.750 align:start position:0%
+2 3 4 right but something like 2
+3<00:00:49.760><c> 5</c><00:00:50.239><c> would</c><00:00:50.480><c> not</c><00:00:50.800><c> work</c><00:00:51.039><c> right</c><00:00:51.280><c> because</c><00:00:51.520><c> there's</c>
+
+00:00:51.750 --> 00:00:51.760 align:start position:0%
+3 5 would not work right because there's
+ 
+
+00:00:51.760 --> 00:00:52.389 align:start position:0%
+3 5 would not work right because there's
+a<00:00:51.920><c> hole</c>
+
+00:00:52.389 --> 00:00:52.399 align:start position:0%
+a hole
+ 
+
+00:00:52.399 --> 00:00:54.470 align:start position:0%
+a hole
+in<00:00:52.559><c> here</c><00:00:52.800><c> these</c><00:00:52.960><c> are</c><00:00:53.039><c> not</c><00:00:53.199><c> consecutive</c><00:00:54.399><c> you</c>
+
+00:00:54.470 --> 00:00:54.480 align:start position:0%
+in here these are not consecutive you
+ 
+
+00:00:54.480 --> 00:00:55.830 align:start position:0%
+in here these are not consecutive you
+know<00:00:54.640><c> we're</c><00:00:54.800><c> missing</c><00:00:55.199><c> a</c><00:00:55.440><c> 4</c>
+
+00:00:55.830 --> 00:00:55.840 align:start position:0%
+know we're missing a 4
+ 
+
+00:00:55.840 --> 00:00:57.990 align:start position:0%
+know we're missing a 4
+right<00:00:56.320><c> so</c><00:00:56.559><c> one</c><00:00:56.800><c> thing</c><00:00:57.039><c> to</c><00:00:57.280><c> recognize</c><00:00:57.760><c> with</c>
+
+00:00:57.990 --> 00:00:58.000 align:start position:0%
+right so one thing to recognize with
+ 
+
+00:00:58.000 --> 00:01:00.069 align:start position:0%
+right so one thing to recognize with
+this<00:00:58.239><c> problem</c><00:00:58.719><c> is</c><00:00:58.960><c> how</c><00:00:59.120><c> could</c><00:00:59.359><c> we</c><00:00:59.520><c> possibly</c>
+
+00:01:00.069 --> 00:01:00.079 align:start position:0%
+this problem is how could we possibly
+ 
+
+00:01:00.079 --> 00:01:01.830 align:start position:0%
+this problem is how could we possibly
+break<00:01:00.320><c> it</c><00:01:00.399><c> down</c><00:01:00.640><c> into</c><00:01:00.960><c> groups</c><00:01:01.280><c> right</c><00:01:01.520><c> like</c>
+
+00:01:01.830 --> 00:01:01.840 align:start position:0%
+break it down into groups right like
+ 
+
+00:01:01.840 --> 00:01:03.910 align:start position:0%
+break it down into groups right like
+just<00:01:02.160><c> looking</c><00:01:02.480><c> at</c><00:01:02.640><c> this</c><00:01:03.039><c> we</c><00:01:03.199><c> have</c><00:01:03.440><c> so</c><00:01:03.680><c> many</c>
+
+00:01:03.910 --> 00:01:03.920 align:start position:0%
+just looking at this we have so many
+ 
+
+00:01:03.920 --> 00:01:05.910 align:start position:0%
+just looking at this we have so many
+different<00:01:04.239><c> options</c><00:01:04.720><c> brute</c><00:01:05.119><c> forcing</c><00:01:05.600><c> it</c>
+
+00:01:05.910 --> 00:01:05.920 align:start position:0%
+different options brute forcing it
+ 
+
+00:01:05.920 --> 00:01:07.830 align:start position:0%
+different options brute forcing it
+is<00:01:06.080><c> going</c><00:01:06.240><c> to</c><00:01:06.400><c> be</c><00:01:06.640><c> really</c><00:01:07.040><c> complex</c><00:01:07.760><c> and</c>
+
+00:01:07.830 --> 00:01:07.840 align:start position:0%
+is going to be really complex and
+ 
+
+00:01:07.840 --> 00:01:09.510 align:start position:0%
+is going to be really complex and
+there's<00:01:08.080><c> not</c><00:01:08.240><c> really</c><00:01:08.560><c> any</c><00:01:08.720><c> way</c><00:01:08.960><c> to</c>
+
+00:01:09.510 --> 00:01:09.520 align:start position:0%
+there's not really any way to
+ 
+
+00:01:09.520 --> 00:01:11.510 align:start position:0%
+there's not really any way to
+to<00:01:09.680><c> eliminate</c><00:01:10.080><c> repeated</c><00:01:10.640><c> work</c><00:01:11.200><c> doing</c>
+
+00:01:11.510 --> 00:01:11.520 align:start position:0%
+to eliminate repeated work doing
+ 
+
+00:01:11.520 --> 00:01:13.270 align:start position:0%
+to eliminate repeated work doing
+something<00:01:11.840><c> like</c><00:01:12.080><c> that</c><00:01:12.320><c> so</c><00:01:12.479><c> we</c><00:01:12.560><c> need</c><00:01:12.720><c> to</c><00:01:12.960><c> find</c>
+
+00:01:13.270 --> 00:01:13.280 align:start position:0%
+something like that so we need to find
+ 
+
+00:01:13.280 --> 00:01:14.469 align:start position:0%
+something like that so we need to find
+some<00:01:13.439><c> kind</c><00:01:13.680><c> of</c><00:01:13.840><c> pattern</c>
+
+00:01:14.469 --> 00:01:14.479 align:start position:0%
+some kind of pattern
+ 
+
+00:01:14.479 --> 00:01:16.230 align:start position:0%
+some kind of pattern
+so<00:01:14.720><c> one</c><00:01:14.880><c> thing</c><00:01:15.040><c> to</c><00:01:15.200><c> notice</c><00:01:15.439><c> would</c><00:01:15.600><c> be</c><00:01:15.840><c> if</c><00:01:16.080><c> we</c>
+
+00:01:16.230 --> 00:01:16.240 align:start position:0%
+so one thing to notice would be if we
+ 
+
+00:01:16.240 --> 00:01:18.230 align:start position:0%
+so one thing to notice would be if we
+wanted<00:01:16.720><c> all</c><00:01:17.040><c> groups</c><00:01:17.439><c> that</c><00:01:17.680><c> two</c><00:01:18.000><c> could</c>
+
+00:01:18.230 --> 00:01:18.240 align:start position:0%
+wanted all groups that two could
+ 
+
+00:01:18.240 --> 00:01:20.310 align:start position:0%
+wanted all groups that two could
+possibly<00:01:18.720><c> be</c><00:01:18.960><c> a</c><00:01:19.040><c> part</c><00:01:19.280><c> of</c><00:01:19.520><c> we</c><00:01:19.680><c> know</c><00:01:19.920><c> that</c><00:01:20.080><c> one</c>
+
+00:01:20.310 --> 00:01:20.320 align:start position:0%
+possibly be a part of we know that one
+ 
+
+00:01:20.320 --> 00:01:21.749 align:start position:0%
+possibly be a part of we know that one
+group<00:01:20.560><c> could</c><00:01:20.720><c> be</c><00:01:20.880><c> something</c><00:01:21.200><c> like</c><00:01:21.439><c> two</c>
+
+00:01:21.749 --> 00:01:21.759 align:start position:0%
+group could be something like two
+ 
+
+00:01:21.759 --> 00:01:24.149 align:start position:0%
+group could be something like two
+three<00:01:22.159><c> four</c><00:01:22.479><c> right</c><00:01:23.280><c> because</c><00:01:23.520><c> our</c><00:01:23.680><c> group</c><00:01:23.920><c> size</c>
+
+00:01:24.149 --> 00:01:24.159 align:start position:0%
+three four right because our group size
+ 
+
+00:01:24.159 --> 00:01:24.870 align:start position:0%
+three four right because our group size
+is<00:01:24.320><c> three</c>
+
+00:01:24.870 --> 00:01:24.880 align:start position:0%
+is three
+ 
+
+00:01:24.880 --> 00:01:26.630 align:start position:0%
+is three
+and<00:01:25.040><c> this</c><00:01:25.280><c> would</c><00:01:25.439><c> be</c><00:01:25.600><c> if</c><00:01:25.759><c> two</c><00:01:26.080><c> was</c><00:01:26.320><c> in</c><00:01:26.400><c> the</c>
+
+00:01:26.630 --> 00:01:26.640 align:start position:0%
+and this would be if two was in the
+ 
+
+00:01:26.640 --> 00:01:28.710 align:start position:0%
+and this would be if two was in the
+first<00:01:27.040><c> position</c><00:01:27.600><c> now</c><00:01:27.759><c> it's</c><00:01:27.920><c> also</c><00:01:28.320><c> possible</c>
+
+00:01:28.710 --> 00:01:28.720 align:start position:0%
+first position now it's also possible
+ 
+
+00:01:28.720 --> 00:01:29.670 align:start position:0%
+first position now it's also possible
+that<00:01:28.960><c> two</c><00:01:29.200><c> could</c><00:01:29.360><c> be</c>
+
+00:01:29.670 --> 00:01:29.680 align:start position:0%
+that two could be
+ 
+
+00:01:29.680 --> 00:01:31.350 align:start position:0%
+that two could be
+in<00:01:29.759><c> the</c><00:01:30.000><c> second</c><00:01:30.240><c> position</c><00:01:30.640><c> right</c><00:01:30.880><c> so</c><00:01:31.040><c> maybe</c><00:01:31.280><c> we</c>
+
+00:01:31.350 --> 00:01:31.360 align:start position:0%
+in the second position right so maybe we
+ 
+
+00:01:31.360 --> 00:01:33.350 align:start position:0%
+in the second position right so maybe we
+could<00:01:31.520><c> have</c><00:01:31.680><c> a</c><00:01:31.840><c> group</c><00:01:32.479><c> like</c><00:01:32.799><c> one</c>
+
+00:01:33.350 --> 00:01:33.360 align:start position:0%
+could have a group like one
+ 
+
+00:01:33.360 --> 00:01:35.590 align:start position:0%
+could have a group like one
+two<00:01:33.759><c> three</c><00:01:34.079><c> so</c><00:01:34.560><c> two</c><00:01:34.799><c> could</c><00:01:34.960><c> be</c><00:01:35.119><c> in</c><00:01:35.280><c> a</c><00:01:35.360><c> group</c>
+
+00:01:35.590 --> 00:01:35.600 align:start position:0%
+two three so two could be in a group
+ 
+
+00:01:35.600 --> 00:01:37.030 align:start position:0%
+two three so two could be in a group
+where<00:01:35.759><c> it's</c><00:01:36.000><c> the</c><00:01:36.159><c> middle</c><00:01:36.479><c> value</c>
+
+00:01:37.030 --> 00:01:37.040 align:start position:0%
+where it's the middle value
+ 
+
+00:01:37.040 --> 00:01:40.310 align:start position:0%
+where it's the middle value
+or<00:01:37.600><c> it's</c><00:01:37.840><c> the</c><00:01:38.000><c> first</c><00:01:38.320><c> value</c><00:01:38.960><c> but</c><00:01:39.360><c> notice</c><00:01:39.759><c> how</c>
+
+00:01:40.310 --> 00:01:40.320 align:start position:0%
+or it's the first value but notice how
+ 
+
+00:01:40.320 --> 00:01:42.950 align:start position:0%
+or it's the first value but notice how
+we<00:01:40.880><c> are</c><00:01:41.119><c> always</c><00:01:41.520><c> going</c><00:01:41.680><c> to</c><00:01:41.840><c> have</c><00:01:42.159><c> some</c><00:01:42.479><c> value</c>
+
+00:01:42.950 --> 00:01:42.960 align:start position:0%
+we are always going to have some value
+ 
+
+00:01:42.960 --> 00:01:44.789 align:start position:0%
+we are always going to have some value
+in<00:01:43.119><c> our</c><00:01:43.280><c> input</c><00:01:43.520><c> array</c><00:01:43.840><c> that's</c><00:01:44.000><c> the</c><00:01:44.320><c> minimum</c>
+
+00:01:44.789 --> 00:01:44.799 align:start position:0%
+in our input array that's the minimum
+ 
+
+00:01:44.799 --> 00:01:45.910 align:start position:0%
+in our input array that's the minimum
+value<00:01:45.280><c> right</c>
+
+00:01:45.910 --> 00:01:45.920 align:start position:0%
+value right
+ 
+
+00:01:45.920 --> 00:01:48.149 align:start position:0%
+value right
+one<00:01:46.399><c> is</c><00:01:46.560><c> the</c><00:01:46.640><c> minimum</c><00:01:47.119><c> value</c><00:01:47.600><c> in</c><00:01:47.680><c> this</c><00:01:47.920><c> case</c>
+
+00:01:48.149 --> 00:01:48.159 align:start position:0%
+one is the minimum value in this case
+ 
+
+00:01:48.159 --> 00:01:49.510 align:start position:0%
+one is the minimum value in this case
+right<00:01:48.399><c> so</c><00:01:48.640><c> in</c><00:01:48.799><c> this</c><00:01:49.040><c> case</c>
+
+00:01:49.510 --> 00:01:49.520 align:start position:0%
+right so in this case
+ 
+
+00:01:49.520 --> 00:01:52.310 align:start position:0%
+right so in this case
+we<00:01:49.759><c> could</c><00:01:49.920><c> have</c><00:01:50.399><c> a</c><00:01:50.640><c> group</c><00:01:51.280><c> of</c><00:01:51.520><c> one</c><00:01:51.840><c> two</c><00:01:52.079><c> three</c>
+
+00:01:52.310 --> 00:01:52.320 align:start position:0%
+we could have a group of one two three
+ 
+
+00:01:52.320 --> 00:01:54.950 align:start position:0%
+we could have a group of one two three
+right<00:01:52.640><c> one</c><00:01:52.960><c> could</c><00:01:53.119><c> be</c><00:01:53.280><c> the</c><00:01:53.439><c> first</c><00:01:53.840><c> value</c><00:01:54.320><c> now</c>
+
+00:01:54.950 --> 00:01:54.960 align:start position:0%
+right one could be the first value now
+ 
+
+00:01:54.960 --> 00:01:57.429 align:start position:0%
+right one could be the first value now
+are<00:01:55.040><c> there</c><00:01:55.360><c> any</c><00:01:55.840><c> other</c><00:01:56.320><c> groups</c><00:01:56.799><c> that</c><00:01:57.119><c> one</c>
+
+00:01:57.429 --> 00:01:57.439 align:start position:0%
+are there any other groups that one
+ 
+
+00:01:57.439 --> 00:01:58.789 align:start position:0%
+are there any other groups that one
+could<00:01:57.600><c> be</c><00:01:57.759><c> a</c><00:01:57.840><c> part</c><00:01:58.079><c> of</c><00:01:58.320><c> this</c><00:01:58.479><c> is</c>
+
+00:01:58.789 --> 00:01:58.799 align:start position:0%
+could be a part of this is
+ 
+
+00:01:58.799 --> 00:02:00.709 align:start position:0%
+could be a part of this is
+the<00:01:59.040><c> only</c><00:01:59.439><c> group</c><00:01:59.759><c> that</c><00:01:59.920><c> one</c><00:02:00.079><c> could</c><00:02:00.240><c> be</c><00:02:00.399><c> a</c><00:02:00.479><c> part</c>
+
+00:02:00.709 --> 00:02:00.719 align:start position:0%
+the only group that one could be a part
+ 
+
+00:02:00.719 --> 00:02:01.990 align:start position:0%
+the only group that one could be a part
+of<00:02:00.799><c> this</c><00:02:01.040><c> is</c><00:02:01.119><c> what</c><00:02:01.280><c> the</c><00:02:01.439><c> group</c><00:02:01.680><c> would</c><00:02:01.840><c> look</c>
+
+00:02:01.990 --> 00:02:02.000 align:start position:0%
+of this is what the group would look
+ 
+
+00:02:02.000 --> 00:02:03.990 align:start position:0%
+of this is what the group would look
+like<00:02:02.240><c> we</c><00:02:02.399><c> can't</c><00:02:02.719><c> possibly</c><00:02:03.119><c> have</c><00:02:03.360><c> a</c><00:02:03.439><c> group</c><00:02:03.680><c> like</c>
+
+00:02:03.990 --> 00:02:04.000 align:start position:0%
+like we can't possibly have a group like
+ 
+
+00:02:04.000 --> 00:02:04.709 align:start position:0%
+like we can't possibly have a group like
+one
+
+00:02:04.709 --> 00:02:04.719 align:start position:0%
+one
+ 
+
+00:02:04.719 --> 00:02:07.190 align:start position:0%
+one
+or<00:02:04.960><c> zero</c><00:02:05.360><c> one</c><00:02:05.680><c> two</c><00:02:06.000><c> because</c><00:02:06.479><c> there's</c><00:02:06.960><c> there's</c>
+
+00:02:07.190 --> 00:02:07.200 align:start position:0%
+or zero one two because there's there's
+ 
+
+00:02:07.200 --> 00:02:08.150 align:start position:0%
+or zero one two because there's there's
+no<00:02:07.439><c> value</c><00:02:07.840><c> that's</c>
+
+00:02:08.150 --> 00:02:08.160 align:start position:0%
+no value that's
+ 
+
+00:02:08.160 --> 00:02:10.790 align:start position:0%
+no value that's
+less<00:02:08.479><c> than</c><00:02:08.879><c> one</c><00:02:09.280><c> we</c><00:02:09.360><c> don't</c><00:02:09.599><c> have</c><00:02:09.759><c> a</c><00:02:09.920><c> zero</c><00:02:10.319><c> right</c>
+
+00:02:10.790 --> 00:02:10.800 align:start position:0%
+less than one we don't have a zero right
+ 
+
+00:02:10.800 --> 00:02:11.350 align:start position:0%
+less than one we don't have a zero right
+so
+
+00:02:11.350 --> 00:02:11.360 align:start position:0%
+so
+ 
+
+00:02:11.360 --> 00:02:14.229 align:start position:0%
+so
+in<00:02:11.599><c> a</c><00:02:11.760><c> sense</c><00:02:12.160><c> we</c><00:02:12.319><c> can</c><00:02:12.480><c> be</c><00:02:12.879><c> greedy</c><00:02:13.599><c> we're</c><00:02:13.840><c> always</c>
+
+00:02:14.229 --> 00:02:14.239 align:start position:0%
+in a sense we can be greedy we're always
+ 
+
+00:02:14.239 --> 00:02:16.550 align:start position:0%
+in a sense we can be greedy we're always
+gonna<00:02:14.560><c> look</c><00:02:14.720><c> at</c><00:02:14.879><c> whatever</c><00:02:15.280><c> the</c><00:02:15.520><c> minimum</c><00:02:16.000><c> value</c>
+
+00:02:16.550 --> 00:02:16.560 align:start position:0%
+gonna look at whatever the minimum value
+ 
+
+00:02:16.560 --> 00:02:18.550 align:start position:0%
+gonna look at whatever the minimum value
+available<00:02:17.120><c> to</c><00:02:17.280><c> us</c><00:02:17.520><c> is</c><00:02:17.760><c> and</c><00:02:17.840><c> we're</c><00:02:18.000><c> gonna</c><00:02:18.239><c> start</c>
+
+00:02:18.550 --> 00:02:18.560 align:start position:0%
+available to us is and we're gonna start
+ 
+
+00:02:18.560 --> 00:02:19.830 align:start position:0%
+available to us is and we're gonna start
+with<00:02:18.800><c> a</c><00:02:18.959><c> group</c>
+
+00:02:19.830 --> 00:02:19.840 align:start position:0%
+with a group
+ 
+
+00:02:19.840 --> 00:02:22.229 align:start position:0%
+with a group
+like<00:02:20.160><c> that</c><00:02:20.480><c> right</c><00:02:20.800><c> so</c><00:02:20.959><c> we're</c><00:02:21.120><c> gonna</c><00:02:21.599><c> basically</c>
+
+00:02:22.229 --> 00:02:22.239 align:start position:0%
+like that right so we're gonna basically
+ 
+
+00:02:22.239 --> 00:02:23.110 align:start position:0%
+like that right so we're gonna basically
+make<00:02:22.480><c> a</c><00:02:22.640><c> group</c>
+
+00:02:23.110 --> 00:02:23.120 align:start position:0%
+make a group
+ 
+
+00:02:23.120 --> 00:02:26.150 align:start position:0%
+make a group
+like<00:02:23.520><c> this</c><00:02:24.080><c> first</c><00:02:24.879><c> and</c><00:02:25.120><c> we</c><00:02:25.280><c> also</c><00:02:25.680><c> notice</c>
+
+00:02:26.150 --> 00:02:26.160 align:start position:0%
+like this first and we also notice
+ 
+
+00:02:26.160 --> 00:02:28.790 align:start position:0%
+like this first and we also notice
+that<00:02:26.560><c> yes</c><00:02:26.959><c> we</c><00:02:27.120><c> could</c><00:02:27.360><c> have</c><00:02:27.760><c> multiple</c><00:02:28.319><c> copies</c>
+
+00:02:28.790 --> 00:02:28.800 align:start position:0%
+that yes we could have multiple copies
+ 
+
+00:02:28.800 --> 00:02:30.630 align:start position:0%
+that yes we could have multiple copies
+of<00:02:28.959><c> the</c><00:02:29.120><c> same</c><00:02:29.440><c> card</c><00:02:29.760><c> so</c><00:02:29.920><c> for</c><00:02:30.080><c> example</c><00:02:30.400><c> we</c><00:02:30.480><c> could</c>
+
+00:02:30.630 --> 00:02:30.640 align:start position:0%
+of the same card so for example we could
+ 
+
+00:02:30.640 --> 00:02:32.390 align:start position:0%
+of the same card so for example we could
+have<00:02:30.800><c> two</c><00:02:31.120><c> cards</c><00:02:31.440><c> with</c><00:02:31.599><c> a</c><00:02:31.760><c> value</c><00:02:32.160><c> of</c>
+
+00:02:32.390 --> 00:02:32.400 align:start position:0%
+have two cards with a value of
+ 
+
+00:02:32.400 --> 00:02:35.270 align:start position:0%
+have two cards with a value of
+two<00:02:33.120><c> so</c><00:02:33.599><c> one</c><00:02:34.160><c> convenience</c><00:02:34.800><c> thing</c><00:02:34.959><c> that</c><00:02:35.040><c> we're</c>
+
+00:02:35.270 --> 00:02:35.280 align:start position:0%
+two so one convenience thing that we're
+ 
+
+00:02:35.280 --> 00:02:36.150 align:start position:0%
+two so one convenience thing that we're
+gonna<00:02:35.519><c> probably</c>
+
+00:02:36.150 --> 00:02:36.160 align:start position:0%
+gonna probably
+ 
+
+00:02:36.160 --> 00:02:38.630 align:start position:0%
+gonna probably
+do<00:02:36.480><c> is</c><00:02:36.800><c> count</c><00:02:37.200><c> the</c><00:02:37.360><c> number</c><00:02:37.760><c> of</c><00:02:37.920><c> each</c><00:02:38.160><c> card</c><00:02:38.480><c> that</c>
+
+00:02:38.630 --> 00:02:38.640 align:start position:0%
+do is count the number of each card that
+ 
+
+00:02:38.640 --> 00:02:40.309 align:start position:0%
+do is count the number of each card that
+we<00:02:38.879><c> have</c><00:02:39.200><c> right</c><00:02:39.360><c> so</c><00:02:39.599><c> basically</c>
+
+00:02:40.309 --> 00:02:40.319 align:start position:0%
+we have right so basically
+ 
+
+00:02:40.319 --> 00:02:42.150 align:start position:0%
+we have right so basically
+the<00:02:40.480><c> best</c><00:02:40.720><c> way</c><00:02:40.959><c> to</c><00:02:41.040><c> do</c><00:02:41.280><c> that</c><00:02:41.519><c> is</c><00:02:41.680><c> going</c><00:02:41.840><c> to</c><00:02:42.000><c> be</c>
+
+00:02:42.150 --> 00:02:42.160 align:start position:0%
+the best way to do that is going to be
+ 
+
+00:02:42.160 --> 00:02:44.309 align:start position:0%
+the best way to do that is going to be
+with<00:02:42.400><c> a</c><00:02:42.560><c> hash</c><00:02:42.879><c> map</c><00:02:43.120><c> right</c><00:02:43.280><c> so</c><00:02:43.440><c> for</c><00:02:43.599><c> each</c><00:02:43.840><c> card</c>
+
+00:02:44.309 --> 00:02:44.319 align:start position:0%
+with a hash map right so for each card
+ 
+
+00:02:44.319 --> 00:02:46.710 align:start position:0%
+with a hash map right so for each card
+for<00:02:44.480><c> example</c><00:02:44.959><c> two</c><00:02:45.440><c> we</c><00:02:45.599><c> would</c><00:02:45.840><c> count</c><00:02:46.319><c> you</c><00:02:46.480><c> know</c>
+
+00:02:46.710 --> 00:02:46.720 align:start position:0%
+for example two we would count you know
+ 
+
+00:02:46.720 --> 00:02:47.350 align:start position:0%
+for example two we would count you know
+two<00:02:46.959><c> has</c>
+
+00:02:47.350 --> 00:02:47.360 align:start position:0%
+two has
+ 
+
+00:02:47.360 --> 00:02:49.270 align:start position:0%
+two has
+two<00:02:47.519><c> copies</c><00:02:48.000><c> in</c><00:02:48.080><c> this</c><00:02:48.319><c> input</c><00:02:48.640><c> array</c><00:02:48.879><c> so</c><00:02:49.040><c> that's</c>
+
+00:02:49.270 --> 00:02:49.280 align:start position:0%
+two copies in this input array so that's
+ 
+
+00:02:49.280 --> 00:02:50.390 align:start position:0%
+two copies in this input array so that's
+what<00:02:49.360><c> we're</c><00:02:49.519><c> going</c><00:02:49.599><c> to</c><00:02:49.680><c> basically</c><00:02:50.080><c> do</c><00:02:50.239><c> we're</c>
+
+00:02:50.390 --> 00:02:50.400 align:start position:0%
+what we're going to basically do we're
+ 
+
+00:02:50.400 --> 00:02:51.750 align:start position:0%
+what we're going to basically do we're
+going<00:02:50.480><c> to</c><00:02:50.560><c> use</c><00:02:50.720><c> a</c><00:02:50.800><c> hash</c><00:02:51.120><c> map</c>
+
+00:02:51.750 --> 00:02:51.760 align:start position:0%
+going to use a hash map
+ 
+
+00:02:51.760 --> 00:02:55.030 align:start position:0%
+going to use a hash map
+to<00:02:52.160><c> count</c><00:02:52.640><c> the</c><00:02:52.800><c> number</c><00:02:53.440><c> of</c><00:02:53.920><c> cards</c><00:02:54.480><c> for</c><00:02:54.640><c> each</c>
+
+00:02:55.030 --> 00:02:55.040 align:start position:0%
+to count the number of cards for each
+ 
+
+00:02:55.040 --> 00:02:57.270 align:start position:0%
+to count the number of cards for each
+value<00:02:55.840><c> so</c><00:02:56.080><c> like</c><00:02:56.319><c> i</c><00:02:56.480><c> said</c><00:02:56.800><c> we're</c><00:02:56.959><c> going</c><00:02:57.040><c> to</c><00:02:57.120><c> be</c>
+
+00:02:57.270 --> 00:02:57.280 align:start position:0%
+value so like i said we're going to be
+ 
+
+00:02:57.280 --> 00:02:58.710 align:start position:0%
+value so like i said we're going to be
+taking<00:02:57.680><c> our</c><00:02:57.920><c> input</c><00:02:58.239><c> array</c><00:02:58.480><c> and</c><00:02:58.560><c> then</c>
+
+00:02:58.710 --> 00:02:58.720 align:start position:0%
+taking our input array and then
+ 
+
+00:02:58.720 --> 00:03:00.550 align:start position:0%
+taking our input array and then
+converting<00:02:59.200><c> it</c><00:02:59.280><c> into</c><00:02:59.519><c> a</c><00:02:59.599><c> hash</c><00:02:59.920><c> map</c><00:03:00.159><c> right</c><00:03:00.319><c> so</c>
+
+00:03:00.550 --> 00:03:00.560 align:start position:0%
+converting it into a hash map right so
+ 
+
+00:03:00.560 --> 00:03:00.949 align:start position:0%
+converting it into a hash map right so
+one
+
+00:03:00.949 --> 00:03:00.959 align:start position:0%
+one
+ 
+
+00:03:00.959 --> 00:03:03.270 align:start position:0%
+one
+occurs<00:03:01.360><c> one</c><00:03:01.680><c> time</c><00:03:02.000><c> two</c><00:03:02.239><c> occurs</c><00:03:02.720><c> two</c><00:03:02.959><c> times</c>
+
+00:03:03.270 --> 00:03:03.280 align:start position:0%
+occurs one time two occurs two times
+ 
+
+00:03:03.280 --> 00:03:05.350 align:start position:0%
+occurs one time two occurs two times
+three<00:03:03.680><c> occurs</c><00:03:04.080><c> two</c><00:03:04.319><c> times</c><00:03:04.800><c> and</c><00:03:04.959><c> i</c><00:03:05.040><c> think</c><00:03:05.200><c> you</c>
+
+00:03:05.350 --> 00:03:05.360 align:start position:0%
+three occurs two times and i think you
+ 
+
+00:03:05.360 --> 00:03:07.110 align:start position:0%
+three occurs two times and i think you
+probably<00:03:05.760><c> already</c><00:03:06.080><c> know</c><00:03:06.319><c> how</c><00:03:06.480><c> to</c><00:03:06.640><c> create</c><00:03:07.040><c> a</c>
+
+00:03:07.110 --> 00:03:07.120 align:start position:0%
+probably already know how to create a
+ 
+
+00:03:07.120 --> 00:03:08.390 align:start position:0%
+probably already know how to create a
+hashmap<00:03:07.680><c> like</c><00:03:07.920><c> this</c>
+
+00:03:08.390 --> 00:03:08.400 align:start position:0%
+hashmap like this
+ 
+
+00:03:08.400 --> 00:03:10.390 align:start position:0%
+hashmap like this
+and<00:03:08.560><c> so</c><00:03:08.800><c> given</c><00:03:09.120><c> that</c><00:03:09.360><c> we</c><00:03:09.519><c> have</c><00:03:09.680><c> a</c><00:03:09.840><c> group</c><00:03:10.080><c> size</c>
+
+00:03:10.390 --> 00:03:10.400 align:start position:0%
+and so given that we have a group size
+ 
+
+00:03:10.400 --> 00:03:12.550 align:start position:0%
+and so given that we have a group size
+of<00:03:10.640><c> three</c><00:03:11.200><c> what</c><00:03:11.360><c> we're</c><00:03:11.599><c> going</c><00:03:11.680><c> to</c><00:03:11.760><c> be</c><00:03:12.000><c> doing</c><00:03:12.400><c> as</c>
+
+00:03:12.550 --> 00:03:12.560 align:start position:0%
+of three what we're going to be doing as
+ 
+
+00:03:12.560 --> 00:03:13.830 align:start position:0%
+of three what we're going to be doing as
+i<00:03:12.640><c> mentioned</c><00:03:13.040><c> is</c><00:03:13.120><c> we're</c><00:03:13.280><c> always</c><00:03:13.519><c> going</c><00:03:13.599><c> to</c><00:03:13.680><c> be</c>
+
+00:03:13.830 --> 00:03:13.840 align:start position:0%
+i mentioned is we're always going to be
+ 
+
+00:03:13.840 --> 00:03:15.910 align:start position:0%
+i mentioned is we're always going to be
+looking<00:03:14.080><c> at</c><00:03:14.159><c> the</c><00:03:14.319><c> minimum</c><00:03:14.800><c> value</c><00:03:15.280><c> available</c>
+
+00:03:15.910 --> 00:03:15.920 align:start position:0%
+looking at the minimum value available
+ 
+
+00:03:15.920 --> 00:03:16.869 align:start position:0%
+looking at the minimum value available
+to<00:03:16.159><c> us</c><00:03:16.400><c> right</c>
+
+00:03:16.869 --> 00:03:16.879 align:start position:0%
+to us right
+ 
+
+00:03:16.879 --> 00:03:18.470 align:start position:0%
+to us right
+so<00:03:17.040><c> for</c><00:03:17.200><c> example</c><00:03:17.519><c> in</c><00:03:17.599><c> this</c><00:03:17.840><c> case</c><00:03:18.080><c> that's</c><00:03:18.319><c> gonna</c>
+
+00:03:18.470 --> 00:03:18.480 align:start position:0%
+so for example in this case that's gonna
+ 
+
+00:03:18.480 --> 00:03:20.070 align:start position:0%
+so for example in this case that's gonna
+be<00:03:18.640><c> a</c><00:03:18.800><c> one</c><00:03:19.040><c> right</c><00:03:19.280><c> we're</c><00:03:19.440><c> gonna</c><00:03:19.760><c> see</c>
+
+00:03:20.070 --> 00:03:20.080 align:start position:0%
+be a one right we're gonna see
+ 
+
+00:03:20.080 --> 00:03:23.350 align:start position:0%
+be a one right we're gonna see
+can<00:03:20.319><c> we</c><00:03:20.640><c> make</c><00:03:20.879><c> a</c><00:03:21.200><c> a</c><00:03:21.440><c> group</c><00:03:22.000><c> size</c><00:03:22.400><c> of</c><00:03:22.720><c> three</c>
+
+00:03:23.350 --> 00:03:23.360 align:start position:0%
+can we make a a group size of three
+ 
+
+00:03:23.360 --> 00:03:25.509 align:start position:0%
+can we make a a group size of three
+starting<00:03:23.920><c> at</c><00:03:24.239><c> one</c><00:03:24.480><c> because</c><00:03:24.720><c> we</c><00:03:24.879><c> know</c><00:03:25.200><c> one</c>
+
+00:03:25.509 --> 00:03:25.519 align:start position:0%
+starting at one because we know one
+ 
+
+00:03:25.519 --> 00:03:28.070 align:start position:0%
+starting at one because we know one
+could<00:03:25.760><c> only</c><00:03:26.159><c> possibly</c><00:03:26.720><c> belong</c><00:03:27.200><c> to</c><00:03:27.440><c> one</c><00:03:27.760><c> group</c>
+
+00:03:28.070 --> 00:03:28.080 align:start position:0%
+could only possibly belong to one group
+ 
+
+00:03:28.080 --> 00:03:29.350 align:start position:0%
+could only possibly belong to one group
+and<00:03:28.239><c> this</c><00:03:28.400><c> is</c><00:03:28.560><c> what</c><00:03:28.640><c> the</c><00:03:28.799><c> group</c>
+
+00:03:29.350 --> 00:03:29.360 align:start position:0%
+and this is what the group
+ 
+
+00:03:29.360 --> 00:03:31.750 align:start position:0%
+and this is what the group
+would<00:03:29.599><c> look</c><00:03:29.840><c> like</c><00:03:30.000><c> so</c><00:03:30.239><c> either</c><00:03:30.720><c> we</c><00:03:31.040><c> can</c><00:03:31.360><c> create</c>
+
+00:03:31.750 --> 00:03:31.760 align:start position:0%
+would look like so either we can create
+ 
+
+00:03:31.760 --> 00:03:32.710 align:start position:0%
+would look like so either we can create
+this<00:03:32.000><c> group</c>
+
+00:03:32.710 --> 00:03:32.720 align:start position:0%
+this group
+ 
+
+00:03:32.720 --> 00:03:33.830 align:start position:0%
+this group
+in<00:03:32.799><c> which</c><00:03:33.040><c> case</c><00:03:33.280><c> then</c><00:03:33.440><c> we're</c><00:03:33.680><c> going</c><00:03:33.760><c> to</c>
+
+00:03:33.830 --> 00:03:33.840 align:start position:0%
+in which case then we're going to
+ 
+
+00:03:33.840 --> 00:03:35.190 align:start position:0%
+in which case then we're going to
+continue<00:03:34.239><c> our</c><00:03:34.400><c> algorithm</c><00:03:34.799><c> then</c><00:03:34.959><c> we're</c><00:03:35.120><c> going</c>
+
+00:03:35.190 --> 00:03:35.200 align:start position:0%
+continue our algorithm then we're going
+ 
+
+00:03:35.200 --> 00:03:37.509 align:start position:0%
+continue our algorithm then we're going
+to<00:03:35.280><c> refine</c><00:03:35.840><c> the</c><00:03:36.000><c> next</c><00:03:36.319><c> minimum</c><00:03:36.720><c> value</c>
+
+00:03:37.509 --> 00:03:37.519 align:start position:0%
+to refine the next minimum value
+ 
+
+00:03:37.519 --> 00:03:39.830 align:start position:0%
+to refine the next minimum value
+or<00:03:37.760><c> if</c><00:03:37.840><c> we</c><00:03:38.080><c> cannot</c><00:03:38.560><c> create</c><00:03:38.959><c> this</c><00:03:39.200><c> group</c><00:03:39.599><c> that</c>
+
+00:03:39.830 --> 00:03:39.840 align:start position:0%
+or if we cannot create this group that
+ 
+
+00:03:39.840 --> 00:03:41.589 align:start position:0%
+or if we cannot create this group that
+means<00:03:40.239><c> we</c><00:03:40.480><c> can't</c><00:03:40.879><c> possibly</c>
+
+00:03:41.589 --> 00:03:41.599 align:start position:0%
+means we can't possibly
+ 
+
+00:03:41.599 --> 00:03:43.750 align:start position:0%
+means we can't possibly
+put<00:03:42.000><c> one</c><00:03:42.400><c> into</c><00:03:42.720><c> a</c><00:03:42.879><c> group</c><00:03:43.120><c> so</c><00:03:43.280><c> we're</c><00:03:43.440><c> going</c><00:03:43.519><c> to</c>
+
+00:03:43.750 --> 00:03:43.760 align:start position:0%
+put one into a group so we're going to
+ 
+
+00:03:43.760 --> 00:03:44.710 align:start position:0%
+put one into a group so we're going to
+have<00:03:44.000><c> to</c><00:03:44.159><c> return</c>
+
+00:03:44.710 --> 00:03:44.720 align:start position:0%
+have to return
+ 
+
+00:03:44.720 --> 00:03:46.390 align:start position:0%
+have to return
+false<00:03:45.200><c> so</c><00:03:45.360><c> that's</c><00:03:45.680><c> basically</c><00:03:46.080><c> what</c><00:03:46.239><c> i'm</c><00:03:46.319><c> going</c>
+
+00:03:46.390 --> 00:03:46.400 align:start position:0%
+false so that's basically what i'm going
+ 
+
+00:03:46.400 --> 00:03:48.630 align:start position:0%
+false so that's basically what i'm going
+to<00:03:46.480><c> be</c><00:03:46.640><c> going</c><00:03:46.959><c> over</c><00:03:47.440><c> oh</c><00:03:47.680><c> and</c><00:03:47.840><c> by</c><00:03:48.000><c> the</c><00:03:48.159><c> way</c>
+
+00:03:48.630 --> 00:03:48.640 align:start position:0%
+to be going over oh and by the way
+ 
+
+00:03:48.640 --> 00:03:50.309 align:start position:0%
+to be going over oh and by the way
+another<00:03:49.040><c> quick</c><00:03:49.280><c> thing</c><00:03:49.519><c> that</c><00:03:49.680><c> we</c><00:03:49.920><c> could</c>
+
+00:03:50.309 --> 00:03:50.319 align:start position:0%
+another quick thing that we could
+ 
+
+00:03:50.319 --> 00:03:51.990 align:start position:0%
+another quick thing that we could
+determine<00:03:51.200><c> is</c><00:03:51.599><c> we</c>
+
+00:03:51.990 --> 00:03:52.000 align:start position:0%
+determine is we
+ 
+
+00:03:52.000 --> 00:03:53.670 align:start position:0%
+determine is we
+basically<00:03:52.480><c> need</c><00:03:52.640><c> to</c><00:03:52.720><c> guarantee</c><00:03:53.280><c> that</c><00:03:53.439><c> the</c>
+
+00:03:53.670 --> 00:03:53.680 align:start position:0%
+basically need to guarantee that the
+ 
+
+00:03:53.680 --> 00:03:55.830 align:start position:0%
+basically need to guarantee that the
+size<00:03:54.000><c> of</c><00:03:54.080><c> our</c><00:03:54.239><c> input</c><00:03:54.560><c> array</c><00:03:54.879><c> is</c><00:03:55.040><c> divisible</c><00:03:55.599><c> by</c>
+
+00:03:55.830 --> 00:03:55.840 align:start position:0%
+size of our input array is divisible by
+ 
+
+00:03:55.840 --> 00:03:57.030 align:start position:0%
+size of our input array is divisible by
+three<00:03:56.080><c> right</c><00:03:56.239><c> because</c><00:03:56.480><c> we</c><00:03:56.560><c> need</c><00:03:56.720><c> to</c><00:03:56.799><c> break</c>
+
+00:03:57.030 --> 00:03:57.040 align:start position:0%
+three right because we need to break
+ 
+
+00:03:57.040 --> 00:03:59.110 align:start position:0%
+three right because we need to break
+this<00:03:57.280><c> up</c><00:03:57.439><c> into</c><00:03:57.680><c> group</c><00:03:57.920><c> sizes</c><00:03:58.480><c> of</c><00:03:58.720><c> three</c>
+
+00:03:59.110 --> 00:03:59.120 align:start position:0%
+this up into group sizes of three
+ 
+
+00:03:59.120 --> 00:04:01.110 align:start position:0%
+this up into group sizes of three
+so<00:03:59.840><c> it</c><00:03:59.920><c> would</c><00:04:00.080><c> have</c><00:04:00.239><c> to</c><00:04:00.400><c> be</c><00:04:00.480><c> divisible</c><00:04:00.959><c> by</c>
+
+00:04:01.110 --> 00:04:01.120 align:start position:0%
+so it would have to be divisible by
+ 
+
+00:04:01.120 --> 00:04:02.869 align:start position:0%
+so it would have to be divisible by
+three<00:04:01.280><c> in</c><00:04:01.360><c> this</c><00:04:01.519><c> case</c><00:04:01.680><c> we</c><00:04:01.840><c> have</c><00:04:02.000><c> nine</c><00:04:02.319><c> elements</c>
+
+00:04:02.869 --> 00:04:02.879 align:start position:0%
+three in this case we have nine elements
+ 
+
+00:04:02.879 --> 00:04:04.869 align:start position:0%
+three in this case we have nine elements
+nine<00:04:03.120><c> divided</c><00:04:03.519><c> by</c><00:04:03.680><c> three</c><00:04:04.159><c> that</c><00:04:04.480><c> you</c><00:04:04.560><c> know</c>
+
+00:04:04.869 --> 00:04:04.879 align:start position:0%
+nine divided by three that you know
+ 
+
+00:04:04.879 --> 00:04:06.390 align:start position:0%
+nine divided by three that you know
+there's<00:04:05.040><c> no</c><00:04:05.280><c> remainder</c><00:04:05.760><c> with</c><00:04:05.920><c> that</c><00:04:06.080><c> so</c>
+
+00:04:06.390 --> 00:04:06.400 align:start position:0%
+there's no remainder with that so
+ 
+
+00:04:06.400 --> 00:04:08.470 align:start position:0%
+there's no remainder with that so
+you<00:04:06.480><c> know</c><00:04:06.640><c> it's</c><00:04:06.879><c> possible</c><00:04:07.439><c> at</c><00:04:07.599><c> least</c><00:04:08.000><c> so</c><00:04:08.239><c> we're</c>
+
+00:04:08.470 --> 00:04:08.480 align:start position:0%
+you know it's possible at least so we're
+ 
+
+00:04:08.480 --> 00:04:09.830 align:start position:0%
+you know it's possible at least so we're
+gonna<00:04:08.720><c> start</c><00:04:08.959><c> at</c><00:04:09.120><c> one</c><00:04:09.439><c> right</c>
+
+00:04:09.830 --> 00:04:09.840 align:start position:0%
+gonna start at one right
+ 
+
+00:04:09.840 --> 00:04:11.270 align:start position:0%
+gonna start at one right
+and<00:04:09.920><c> then</c><00:04:10.159><c> we're</c><00:04:10.319><c> gonna</c><00:04:10.480><c> check</c><00:04:10.720><c> okay</c><00:04:10.959><c> the</c><00:04:11.040><c> next</c>
+
+00:04:11.270 --> 00:04:11.280 align:start position:0%
+and then we're gonna check okay the next
+ 
+
+00:04:11.280 --> 00:04:13.990 align:start position:0%
+and then we're gonna check okay the next
+value<00:04:11.599><c> that</c><00:04:11.680><c> comes</c><00:04:12.000><c> after</c><00:04:12.400><c> one</c><00:04:12.640><c> is</c><00:04:12.799><c> a</c><00:04:13.040><c> two</c><00:04:13.360><c> so</c>
+
+00:04:13.990 --> 00:04:14.000 align:start position:0%
+value that comes after one is a two so
+ 
+
+00:04:14.000 --> 00:04:15.270 align:start position:0%
+value that comes after one is a two so
+basically<00:04:14.400><c> we're</c><00:04:14.560><c> going</c><00:04:14.640><c> to</c><00:04:14.720><c> decrement</c><00:04:15.200><c> the</c>
+
+00:04:15.270 --> 00:04:15.280 align:start position:0%
+basically we're going to decrement the
+ 
+
+00:04:15.280 --> 00:04:17.270 align:start position:0%
+basically we're going to decrement the
+count<00:04:15.599><c> of</c><00:04:15.760><c> one</c><00:04:16.000><c> right</c><00:04:16.239><c> we've</c><00:04:16.560><c> already</c><00:04:16.799><c> used</c>
+
+00:04:17.270 --> 00:04:17.280 align:start position:0%
+count of one right we've already used
+ 
+
+00:04:17.280 --> 00:04:18.789 align:start position:0%
+count of one right we've already used
+our<00:04:17.440><c> one</c><00:04:17.680><c> now</c><00:04:18.079><c> we're</c><00:04:18.239><c> going</c><00:04:18.239><c> to</c><00:04:18.320><c> see</c><00:04:18.479><c> are</c><00:04:18.639><c> there</c>
+
+00:04:18.789 --> 00:04:18.799 align:start position:0%
+our one now we're going to see are there
+ 
+
+00:04:18.799 --> 00:04:20.550 align:start position:0%
+our one now we're going to see are there
+any<00:04:19.040><c> twos</c><00:04:19.359><c> available</c><00:04:19.759><c> to</c><00:04:19.919><c> us</c><00:04:20.079><c> we</c><00:04:20.160><c> can</c><00:04:20.239><c> do</c><00:04:20.400><c> that</c>
+
+00:04:20.550 --> 00:04:20.560 align:start position:0%
+any twos available to us we can do that
+ 
+
+00:04:20.560 --> 00:04:22.550 align:start position:0%
+any twos available to us we can do that
+in<00:04:20.799><c> o</c><00:04:20.959><c> of</c><00:04:21.120><c> one</c><00:04:21.359><c> time</c><00:04:21.600><c> because</c><00:04:21.840><c> yes</c><00:04:22.079><c> we</c><00:04:22.240><c> have</c><00:04:22.400><c> a</c>
+
+00:04:22.550 --> 00:04:22.560 align:start position:0%
+in o of one time because yes we have a
+ 
+
+00:04:22.560 --> 00:04:23.749 align:start position:0%
+in o of one time because yes we have a
+hash<00:04:22.800><c> map</c><00:04:23.120><c> right</c><00:04:23.280><c> we</c><00:04:23.360><c> can</c>
+
+00:04:23.749 --> 00:04:23.759 align:start position:0%
+hash map right we can
+ 
+
+00:04:23.759 --> 00:04:25.670 align:start position:0%
+hash map right we can
+basically<00:04:24.160><c> check</c><00:04:24.400><c> that</c><00:04:24.639><c> instantly</c><00:04:25.040><c> so</c><00:04:25.199><c> we</c><00:04:25.440><c> do</c>
+
+00:04:25.670 --> 00:04:25.680 align:start position:0%
+basically check that instantly so we do
+ 
+
+00:04:25.680 --> 00:04:27.590 align:start position:0%
+basically check that instantly so we do
+have<00:04:25.840><c> some</c><00:04:26.160><c> twos</c><00:04:26.479><c> available</c><00:04:26.880><c> to</c><00:04:27.040><c> us</c><00:04:27.199><c> right</c>
+
+00:04:27.590 --> 00:04:27.600 align:start position:0%
+have some twos available to us right
+ 
+
+00:04:27.600 --> 00:04:29.189 align:start position:0%
+have some twos available to us right
+so<00:04:27.840><c> we're</c><00:04:28.000><c> going</c><00:04:28.080><c> to</c><00:04:28.160><c> decrement</c><00:04:28.639><c> the</c><00:04:28.800><c> count</c><00:04:29.040><c> of</c>
+
+00:04:29.189 --> 00:04:29.199 align:start position:0%
+so we're going to decrement the count of
+ 
+
+00:04:29.199 --> 00:04:30.790 align:start position:0%
+so we're going to decrement the count of
+two<00:04:29.759><c> set</c><00:04:30.000><c> it</c><00:04:30.080><c> to</c><00:04:30.240><c> one</c>
+
+00:04:30.790 --> 00:04:30.800 align:start position:0%
+two set it to one
+ 
+
+00:04:30.800 --> 00:04:32.390 align:start position:0%
+two set it to one
+and<00:04:31.120><c> so</c><00:04:31.360><c> far</c><00:04:31.520><c> we</c><00:04:31.680><c> have</c><00:04:31.759><c> a</c><00:04:31.840><c> two</c><00:04:32.000><c> so</c><00:04:32.160><c> now</c><00:04:32.240><c> we're</c>
+
+00:04:32.390 --> 00:04:32.400 align:start position:0%
+and so far we have a two so now we're
+ 
+
+00:04:32.400 --> 00:04:34.230 align:start position:0%
+and so far we have a two so now we're
+going<00:04:32.479><c> to</c><00:04:32.560><c> look</c><00:04:32.720><c> for</c><00:04:32.880><c> that</c><00:04:33.199><c> last</c><00:04:33.600><c> value</c><00:04:34.080><c> of</c>
+
+00:04:34.230 --> 00:04:34.240 align:start position:0%
+going to look for that last value of
+ 
+
+00:04:34.240 --> 00:04:35.110 align:start position:0%
+going to look for that last value of
+this<00:04:34.479><c> group</c><00:04:34.800><c> right</c>
+
+00:04:35.110 --> 00:04:35.120 align:start position:0%
+this group right
+ 
+
+00:04:35.120 --> 00:04:36.870 align:start position:0%
+this group right
+group<00:04:35.280><c> size</c><00:04:35.600><c> three</c><00:04:35.919><c> so</c><00:04:36.080><c> what's</c><00:04:36.560><c> the</c><00:04:36.639><c> next</c>
+
+00:04:36.870 --> 00:04:36.880 align:start position:0%
+group size three so what's the next
+ 
+
+00:04:36.880 --> 00:04:38.150 align:start position:0%
+group size three so what's the next
+value<00:04:37.199><c> going</c><00:04:37.280><c> to</c><00:04:37.360><c> be</c><00:04:37.520><c> we're</c><00:04:37.680><c> looking</c><00:04:37.919><c> for</c><00:04:38.080><c> a</c>
+
+00:04:38.150 --> 00:04:38.160 align:start position:0%
+value going to be we're looking for a
+ 
+
+00:04:38.160 --> 00:04:40.070 align:start position:0%
+value going to be we're looking for a
+three<00:04:38.400><c> do</c><00:04:38.560><c> we</c><00:04:38.720><c> have</c><00:04:38.800><c> any</c><00:04:39.040><c> available</c><00:04:39.520><c> to</c><00:04:39.680><c> us</c>
+
+00:04:40.070 --> 00:04:40.080 align:start position:0%
+three do we have any available to us
+ 
+
+00:04:40.080 --> 00:04:41.830 align:start position:0%
+three do we have any available to us
+let's<00:04:40.320><c> check</c><00:04:40.639><c> in</c><00:04:40.800><c> our</c><00:04:40.880><c> hash</c><00:04:41.120><c> map</c><00:04:41.360><c> yep</c><00:04:41.600><c> we</c><00:04:41.759><c> have</c>
+
+00:04:41.830 --> 00:04:41.840 align:start position:0%
+let's check in our hash map yep we have
+ 
+
+00:04:41.840 --> 00:04:44.390 align:start position:0%
+let's check in our hash map yep we have
+some<00:04:42.080><c> threes</c><00:04:42.720><c> decrement</c><00:04:43.280><c> this</c><00:04:43.440><c> count</c><00:04:43.759><c> to</c><00:04:44.000><c> one</c>
+
+00:04:44.390 --> 00:04:44.400 align:start position:0%
+some threes decrement this count to one
+ 
+
+00:04:44.400 --> 00:04:47.110 align:start position:0%
+some threes decrement this count to one
+so<00:04:44.560><c> we</c><00:04:44.720><c> were</c><00:04:44.960><c> able</c><00:04:45.199><c> to</c><00:04:45.280><c> create</c><00:04:45.759><c> at</c><00:04:45.919><c> least</c><00:04:46.400><c> one</c>
+
+00:04:47.110 --> 00:04:47.120 align:start position:0%
+so we were able to create at least one
+ 
+
+00:04:47.120 --> 00:04:47.830 align:start position:0%
+so we were able to create at least one
+group
+
+00:04:47.830 --> 00:04:47.840 align:start position:0%
+group
+ 
+
+00:04:47.840 --> 00:04:49.909 align:start position:0%
+group
+so<00:04:48.000><c> we</c><00:04:48.240><c> created</c><00:04:48.720><c> one</c><00:04:49.040><c> group</c><00:04:49.280><c> now</c><00:04:49.440><c> let's</c><00:04:49.680><c> see</c><00:04:49.840><c> if</c>
+
+00:04:49.909 --> 00:04:49.919 align:start position:0%
+so we created one group now let's see if
+ 
+
+00:04:49.919 --> 00:04:51.909 align:start position:0%
+so we created one group now let's see if
+we<00:04:50.080><c> can</c><00:04:50.240><c> create</c><00:04:50.560><c> another</c><00:04:50.960><c> and</c><00:04:51.120><c> once</c><00:04:51.440><c> again</c><00:04:51.759><c> we</c>
+
+00:04:51.909 --> 00:04:51.919 align:start position:0%
+we can create another and once again we
+ 
+
+00:04:51.919 --> 00:04:53.270 align:start position:0%
+we can create another and once again we
+are<00:04:52.000><c> going</c><00:04:52.080><c> to</c><00:04:52.160><c> be</c><00:04:52.400><c> looking</c><00:04:52.720><c> at</c><00:04:52.880><c> what</c><00:04:53.040><c> the</c>
+
+00:04:53.270 --> 00:04:53.280 align:start position:0%
+are going to be looking at what the
+ 
+
+00:04:53.280 --> 00:04:55.670 align:start position:0%
+are going to be looking at what the
+minimum<00:04:53.759><c> value</c><00:04:54.240><c> happens</c><00:04:54.560><c> to</c><00:04:54.800><c> be</c><00:04:55.040><c> available</c><00:04:55.520><c> to</c>
+
+00:04:55.670 --> 00:04:55.680 align:start position:0%
+minimum value happens to be available to
+ 
+
+00:04:55.680 --> 00:04:55.990 align:start position:0%
+minimum value happens to be available to
+us
+
+00:04:55.990 --> 00:04:56.000 align:start position:0%
+us
+ 
+
+00:04:56.000 --> 00:04:58.310 align:start position:0%
+us
+now<00:04:56.240><c> the</c><00:04:56.479><c> minimum</c><00:04:56.960><c> is</c><00:04:57.040><c> no</c><00:04:57.280><c> longer</c><00:04:57.840><c> one</c><00:04:58.160><c> right</c>
+
+00:04:58.310 --> 00:04:58.320 align:start position:0%
+now the minimum is no longer one right
+ 
+
+00:04:58.320 --> 00:04:59.670 align:start position:0%
+now the minimum is no longer one right
+because<00:04:58.560><c> we</c><00:04:58.720><c> took</c><00:04:58.960><c> the</c><00:04:59.199><c> count</c><00:04:59.520><c> and</c>
+
+00:04:59.670 --> 00:04:59.680 align:start position:0%
+because we took the count and
+ 
+
+00:04:59.680 --> 00:05:01.830 align:start position:0%
+because we took the count and
+decremented<00:05:00.320><c> it</c><00:05:00.479><c> all</c><00:05:00.639><c> the</c><00:05:00.720><c> way</c><00:05:00.960><c> to</c><00:05:01.199><c> zero</c><00:05:01.520><c> so</c><00:05:01.680><c> we</c>
+
+00:05:01.830 --> 00:05:01.840 align:start position:0%
+decremented it all the way to zero so we
+ 
+
+00:05:01.840 --> 00:05:03.590 align:start position:0%
+decremented it all the way to zero so we
+don't<00:05:02.000><c> have</c><00:05:02.080><c> any</c><00:05:02.400><c> ones</c><00:05:02.720><c> available</c><00:05:03.120><c> to</c><00:05:03.280><c> us</c>
+
+00:05:03.590 --> 00:05:03.600 align:start position:0%
+don't have any ones available to us
+ 
+
+00:05:03.600 --> 00:05:05.590 align:start position:0%
+don't have any ones available to us
+but<00:05:03.759><c> we</c><00:05:03.919><c> do</c><00:05:04.160><c> have</c><00:05:04.400><c> a</c><00:05:04.639><c> two</c><00:05:04.960><c> as</c><00:05:05.120><c> the</c><00:05:05.199><c> minimum</c>
+
+00:05:05.590 --> 00:05:05.600 align:start position:0%
+but we do have a two as the minimum
+ 
+
+00:05:05.600 --> 00:05:06.870 align:start position:0%
+but we do have a two as the minimum
+value<00:05:06.000><c> available</c><00:05:06.400><c> to</c><00:05:06.560><c> us</c>
+
+00:05:06.870 --> 00:05:06.880 align:start position:0%
+value available to us
+ 
+
+00:05:06.880 --> 00:05:09.189 align:start position:0%
+value available to us
+but<00:05:07.039><c> my</c><00:05:07.280><c> question</c><00:05:07.680><c> is</c><00:05:08.000><c> how</c><00:05:08.160><c> can</c><00:05:08.320><c> we</c><00:05:08.639><c> find</c><00:05:08.960><c> these</c>
+
+00:05:09.189 --> 00:05:09.199 align:start position:0%
+but my question is how can we find these
+ 
+
+00:05:09.199 --> 00:05:10.230 align:start position:0%
+but my question is how can we find these
+minimum<00:05:09.600><c> values</c>
+
+00:05:10.230 --> 00:05:10.240 align:start position:0%
+minimum values
+ 
+
+00:05:10.240 --> 00:05:12.390 align:start position:0%
+minimum values
+well<00:05:10.479><c> of</c><00:05:10.639><c> course</c><00:05:11.440><c> we</c><00:05:11.600><c> could</c><00:05:11.759><c> just</c><00:05:11.919><c> scan</c>
+
+00:05:12.390 --> 00:05:12.400 align:start position:0%
+well of course we could just scan
+ 
+
+00:05:12.400 --> 00:05:14.310 align:start position:0%
+well of course we could just scan
+through<00:05:12.960><c> this</c><00:05:13.199><c> hash</c><00:05:13.520><c> map</c><00:05:13.680><c> right</c><00:05:13.919><c> and</c><00:05:14.000><c> find</c><00:05:14.240><c> the</c>
+
+00:05:14.310 --> 00:05:14.320 align:start position:0%
+through this hash map right and find the
+ 
+
+00:05:14.320 --> 00:05:16.310 align:start position:0%
+through this hash map right and find the
+minimum<00:05:14.800><c> and</c><00:05:14.880><c> we</c><00:05:14.960><c> could</c><00:05:15.120><c> do</c><00:05:15.199><c> that</c><00:05:15.360><c> in</c><00:05:15.600><c> o</c><00:05:15.759><c> of</c><00:05:16.000><c> n</c>
+
+00:05:16.310 --> 00:05:16.320 align:start position:0%
+minimum and we could do that in o of n
+ 
+
+00:05:16.320 --> 00:05:18.390 align:start position:0%
+minimum and we could do that in o of n
+time<00:05:16.560><c> but</c><00:05:16.720><c> can</c><00:05:16.880><c> we</c><00:05:17.039><c> do</c><00:05:17.280><c> even</c><00:05:17.680><c> better</c><00:05:17.919><c> than</c><00:05:18.160><c> end</c>
+
+00:05:18.390 --> 00:05:18.400 align:start position:0%
+time but can we do even better than end
+ 
+
+00:05:18.400 --> 00:05:20.550 align:start position:0%
+time but can we do even better than end
+time<00:05:18.639><c> well</c><00:05:19.039><c> we</c><00:05:19.280><c> know</c><00:05:19.440><c> a</c><00:05:19.600><c> data</c><00:05:19.919><c> structure</c>
+
+00:05:20.550 --> 00:05:20.560 align:start position:0%
+time well we know a data structure
+ 
+
+00:05:20.560 --> 00:05:22.790 align:start position:0%
+time well we know a data structure
+that<00:05:20.720><c> can</c><00:05:20.880><c> efficiently</c><00:05:21.520><c> find</c><00:05:21.840><c> minimums</c><00:05:22.400><c> is</c><00:05:22.560><c> a</c>
+
+00:05:22.790 --> 00:05:22.800 align:start position:0%
+that can efficiently find minimums is a
+ 
+
+00:05:22.800 --> 00:05:24.710 align:start position:0%
+that can efficiently find minimums is a
+min<00:05:23.120><c> heap</c><00:05:23.520><c> right</c><00:05:23.680><c> so</c><00:05:23.919><c> basically</c><00:05:24.320><c> what</c><00:05:24.479><c> we</c><00:05:24.639><c> can</c>
+
+00:05:24.710 --> 00:05:24.720 align:start position:0%
+min heap right so basically what we can
+ 
+
+00:05:24.720 --> 00:05:25.909 align:start position:0%
+min heap right so basically what we can
+do<00:05:24.880><c> is</c><00:05:25.039><c> add</c><00:05:25.280><c> all</c><00:05:25.520><c> these</c>
+
+00:05:25.909 --> 00:05:25.919 align:start position:0%
+do is add all these
+ 
+
+00:05:25.919 --> 00:05:28.950 align:start position:0%
+do is add all these
+key<00:05:26.160><c> values</c><00:05:27.199><c> from</c><00:05:27.440><c> our</c><00:05:27.520><c> hash</c><00:05:27.840><c> map</c><00:05:28.160><c> into</c><00:05:28.639><c> a</c>
+
+00:05:28.950 --> 00:05:28.960 align:start position:0%
+key values from our hash map into a
+ 
+
+00:05:28.960 --> 00:05:31.430 align:start position:0%
+key values from our hash map into a
+min<00:05:29.280><c> heap</c><00:05:30.080><c> right</c><00:05:30.320><c> so</c><00:05:30.479><c> let's</c><00:05:30.639><c> say</c><00:05:30.800><c> our</c><00:05:30.960><c> min</c><00:05:31.120><c> heap</c>
+
+00:05:31.430 --> 00:05:31.440 align:start position:0%
+min heap right so let's say our min heap
+ 
+
+00:05:31.440 --> 00:05:33.270 align:start position:0%
+min heap right so let's say our min heap
+initially<00:05:32.000><c> looks</c><00:05:32.240><c> something</c><00:05:32.720><c> like</c>
+
+00:05:33.270 --> 00:05:33.280 align:start position:0%
+initially looks something like
+ 
+
+00:05:33.280 --> 00:05:36.390 align:start position:0%
+initially looks something like
+this<00:05:33.759><c> right</c><00:05:34.080><c> so</c><00:05:34.320><c> one</c><00:05:34.880><c> two</c><00:05:35.680><c> three</c>
+
+00:05:36.390 --> 00:05:36.400 align:start position:0%
+this right so one two three
+ 
+
+00:05:36.400 --> 00:05:40.310 align:start position:0%
+this right so one two three
+four<00:05:37.199><c> six</c><00:05:37.840><c> seven</c><00:05:38.479><c> and</c><00:05:38.800><c> eight</c><00:05:39.199><c> right</c><00:05:39.600><c> so</c>
+
+00:05:40.310 --> 00:05:40.320 align:start position:0%
+four six seven and eight right so
+ 
+
+00:05:40.320 --> 00:05:42.950 align:start position:0%
+four six seven and eight right so
+clearly<00:05:40.720><c> we</c><00:05:40.880><c> have</c><00:05:41.039><c> our</c><00:05:41.199><c> minimum</c><00:05:41.680><c> at</c><00:05:41.840><c> the</c><00:05:42.160><c> top</c>
+
+00:05:42.950 --> 00:05:42.960 align:start position:0%
+clearly we have our minimum at the top
+ 
+
+00:05:42.960 --> 00:05:43.749 align:start position:0%
+clearly we have our minimum at the top
+but<00:05:43.120><c> we</c><00:05:43.360><c> know</c>
+
+00:05:43.749 --> 00:05:43.759 align:start position:0%
+but we know
+ 
+
+00:05:43.759 --> 00:05:46.469 align:start position:0%
+but we know
+as<00:05:44.080><c> we</c><00:05:44.479><c> decremented</c><00:05:45.120><c> the</c><00:05:45.280><c> count</c><00:05:45.600><c> of</c><00:05:45.840><c> one</c><00:05:46.160><c> down</c>
+
+00:05:46.469 --> 00:05:46.479 align:start position:0%
+as we decremented the count of one down
+ 
+
+00:05:46.479 --> 00:05:47.749 align:start position:0%
+as we decremented the count of one down
+to<00:05:46.639><c> zero</c><00:05:46.960><c> we</c><00:05:47.120><c> basically</c>
+
+00:05:47.749 --> 00:05:47.759 align:start position:0%
+to zero we basically
+ 
+
+00:05:47.759 --> 00:05:50.070 align:start position:0%
+to zero we basically
+popped<00:05:48.320><c> this</c><00:05:48.560><c> from</c><00:05:48.800><c> our</c><00:05:48.960><c> min</c><00:05:49.199><c> heap</c><00:05:49.520><c> right</c><00:05:49.680><c> so</c>
+
+00:05:50.070 --> 00:05:50.080 align:start position:0%
+popped this from our min heap right so
+ 
+
+00:05:50.080 --> 00:05:51.270 align:start position:0%
+popped this from our min heap right so
+basically<00:05:50.400><c> what</c><00:05:50.560><c> we're</c><00:05:50.720><c> going</c><00:05:50.800><c> to</c><00:05:50.880><c> be</c><00:05:50.960><c> doing</c>
+
+00:05:51.270 --> 00:05:51.280 align:start position:0%
+basically what we're going to be doing
+ 
+
+00:05:51.280 --> 00:05:51.590 align:start position:0%
+basically what we're going to be doing
+is
+
+00:05:51.590 --> 00:05:51.600 align:start position:0%
+is
+ 
+
+00:05:51.600 --> 00:05:53.350 align:start position:0%
+is
+yes<00:05:51.840><c> we're</c><00:05:52.000><c> going</c><00:05:52.080><c> to</c><00:05:52.160><c> be</c><00:05:52.400><c> popping</c><00:05:53.199><c> the</c>
+
+00:05:53.350 --> 00:05:53.360 align:start position:0%
+yes we're going to be popping the
+ 
+
+00:05:53.360 --> 00:05:55.110 align:start position:0%
+yes we're going to be popping the
+minimum<00:05:53.840><c> value</c><00:05:54.320><c> from</c><00:05:54.560><c> our</c><00:05:54.800><c> min</c>
+
+00:05:55.110 --> 00:05:55.120 align:start position:0%
+minimum value from our min
+ 
+
+00:05:55.120 --> 00:05:58.150 align:start position:0%
+minimum value from our min
+heap<00:05:55.840><c> if</c><00:05:56.080><c> the</c><00:05:56.319><c> count</c><00:05:56.720><c> is</c><00:05:56.880><c> decremented</c><00:05:57.600><c> down</c><00:05:57.919><c> to</c>
+
+00:05:58.150 --> 00:05:58.160 align:start position:0%
+heap if the count is decremented down to
+ 
+
+00:05:58.160 --> 00:05:58.950 align:start position:0%
+heap if the count is decremented down to
+zero
+
+00:05:58.950 --> 00:05:58.960 align:start position:0%
+zero
+ 
+
+00:05:58.960 --> 00:06:00.390 align:start position:0%
+zero
+so<00:05:59.199><c> now</c><00:05:59.440><c> when</c><00:05:59.600><c> we're</c><00:05:59.759><c> actually</c><00:06:00.080><c> going</c><00:06:00.160><c> to</c><00:06:00.240><c> be</c>
+
+00:06:00.390 --> 00:06:00.400 align:start position:0%
+so now when we're actually going to be
+ 
+
+00:06:00.400 --> 00:06:02.390 align:start position:0%
+so now when we're actually going to be
+starting<00:06:00.880><c> our</c><00:06:01.120><c> second</c><00:06:01.520><c> group</c><00:06:01.840><c> we</c><00:06:02.000><c> can</c><00:06:02.160><c> find</c>
+
+00:06:02.390 --> 00:06:02.400 align:start position:0%
+starting our second group we can find
+ 
+
+00:06:02.400 --> 00:06:04.790 align:start position:0%
+starting our second group we can find
+the<00:06:02.560><c> minimum</c><00:06:02.960><c> value</c><00:06:03.280><c> to</c><00:06:03.520><c> start</c><00:06:03.919><c> out</c><00:06:04.160><c> in</c>
+
+00:06:04.790 --> 00:06:04.800 align:start position:0%
+the minimum value to start out in
+ 
+
+00:06:04.800 --> 00:06:07.830 align:start position:0%
+the minimum value to start out in
+log<00:06:05.520><c> n</c><00:06:06.080><c> time</c><00:06:06.479><c> we</c><00:06:06.639><c> know</c><00:06:06.800><c> that</c><00:06:06.960><c> each</c><00:06:07.280><c> group</c><00:06:07.680><c> is</c>
+
+00:06:07.830 --> 00:06:07.840 align:start position:0%
+log n time we know that each group is
+ 
+
+00:06:07.840 --> 00:06:09.749 align:start position:0%
+log n time we know that each group is
+basically<00:06:08.240><c> going</c><00:06:08.319><c> to</c><00:06:08.479><c> take</c><00:06:08.720><c> group</c><00:06:09.120><c> size</c>
+
+00:06:09.749 --> 00:06:09.759 align:start position:0%
+basically going to take group size
+ 
+
+00:06:09.759 --> 00:06:11.670 align:start position:0%
+basically going to take group size
+to<00:06:10.000><c> compute</c><00:06:10.400><c> so</c><00:06:10.800><c> overall</c><00:06:11.199><c> what</c><00:06:11.360><c> i'm</c><00:06:11.440><c> saying</c>
+
+00:06:11.670 --> 00:06:11.680 align:start position:0%
+to compute so overall what i'm saying
+ 
+
+00:06:11.680 --> 00:06:13.270 align:start position:0%
+to compute so overall what i'm saying
+the<00:06:11.840><c> time</c><00:06:12.000><c> complex</c><00:06:12.479><c> is</c><00:06:12.639><c> mainly</c><00:06:12.960><c> going</c><00:06:13.120><c> to</c><00:06:13.199><c> be</c>
+
+00:06:13.270 --> 00:06:13.280 align:start position:0%
+the time complex is mainly going to be
+ 
+
+00:06:13.280 --> 00:06:14.469 align:start position:0%
+the time complex is mainly going to be
+log<00:06:13.600><c> in</c><00:06:13.680><c> multiplied</c><00:06:14.160><c> by</c>
+
+00:06:14.469 --> 00:06:14.479 align:start position:0%
+log in multiplied by
+ 
+
+00:06:14.479 --> 00:06:16.150 align:start position:0%
+log in multiplied by
+n<00:06:14.800><c> because</c><00:06:15.280><c> technically</c><00:06:15.840><c> you</c><00:06:15.919><c> know</c><00:06:16.080><c> the</c>
+
+00:06:16.150 --> 00:06:16.160 align:start position:0%
+n because technically you know the
+ 
+
+00:06:16.160 --> 00:06:18.070 align:start position:0%
+n because technically you know the
+number<00:06:16.400><c> of</c><00:06:16.479><c> times</c><00:06:16.800><c> we</c><00:06:16.960><c> pop</c><00:06:17.199><c> from</c><00:06:17.360><c> the</c><00:06:17.520><c> min</c><00:06:17.759><c> heap</c>
+
+00:06:18.070 --> 00:06:18.080 align:start position:0%
+number of times we pop from the min heap
+ 
+
+00:06:18.080 --> 00:06:20.309 align:start position:0%
+number of times we pop from the min heap
+could<00:06:18.319><c> be</c><00:06:18.800><c> you</c><00:06:18.880><c> know</c><00:06:19.120><c> whatever</c><00:06:19.440><c> the</c><00:06:19.759><c> size</c><00:06:20.160><c> of</c>
+
+00:06:20.309 --> 00:06:20.319 align:start position:0%
+could be you know whatever the size of
+ 
+
+00:06:20.319 --> 00:06:22.309 align:start position:0%
+could be you know whatever the size of
+the<00:06:20.479><c> entire</c><00:06:20.880><c> input</c><00:06:21.199><c> array</c><00:06:21.520><c> happens</c><00:06:21.840><c> to</c><00:06:22.000><c> be</c><00:06:22.160><c> so</c>
+
+00:06:22.309 --> 00:06:22.319 align:start position:0%
+the entire input array happens to be so
+ 
+
+00:06:22.319 --> 00:06:23.590 align:start position:0%
+the entire input array happens to be so
+this<00:06:22.560><c> is</c><00:06:22.639><c> basically</c><00:06:23.039><c> what</c><00:06:23.199><c> i'm</c><00:06:23.280><c> saying</c><00:06:23.520><c> the</c>
+
+00:06:23.590 --> 00:06:23.600 align:start position:0%
+this is basically what i'm saying the
+ 
+
+00:06:23.600 --> 00:06:25.350 align:start position:0%
+this is basically what i'm saying the
+time<00:06:23.840><c> complexity</c><00:06:24.400><c> is</c><00:06:24.560><c> going</c><00:06:24.639><c> to</c><00:06:24.720><c> be</c>
+
+00:06:25.350 --> 00:06:25.360 align:start position:0%
+time complexity is going to be
+ 
+
+00:06:25.360 --> 00:06:27.189 align:start position:0%
+time complexity is going to be
+but<00:06:25.520><c> so</c><00:06:25.680><c> yes</c><00:06:25.919><c> getting</c><00:06:26.160><c> the</c><00:06:26.240><c> minimum</c><00:06:26.639><c> value</c><00:06:27.039><c> is</c>
+
+00:06:27.189 --> 00:06:27.199 align:start position:0%
+but so yes getting the minimum value is
+ 
+
+00:06:27.199 --> 00:06:29.590 align:start position:0%
+but so yes getting the minimum value is
+two<00:06:27.600><c> okay</c><00:06:28.080><c> do</c><00:06:28.240><c> we</c><00:06:28.400><c> have</c><00:06:28.639><c> any</c><00:06:28.800><c> twos</c><00:06:29.199><c> available</c>
+
+00:06:29.590 --> 00:06:29.600 align:start position:0%
+two okay do we have any twos available
+ 
+
+00:06:29.600 --> 00:06:30.870 align:start position:0%
+two okay do we have any twos available
+to<00:06:29.759><c> us</c><00:06:30.000><c> let's</c><00:06:30.240><c> take</c><00:06:30.479><c> a</c><00:06:30.560><c> look</c>
+
+00:06:30.870 --> 00:06:30.880 align:start position:0%
+to us let's take a look
+ 
+
+00:06:30.880 --> 00:06:32.870 align:start position:0%
+to us let's take a look
+yes<00:06:31.120><c> we</c><00:06:31.199><c> have</c><00:06:31.360><c> at</c><00:06:31.440><c> least</c><00:06:31.840><c> one</c><00:06:32.080><c> two</c><00:06:32.560><c> but</c><00:06:32.720><c> we're</c>
+
+00:06:32.870 --> 00:06:32.880 align:start position:0%
+yes we have at least one two but we're
+ 
+
+00:06:32.880 --> 00:06:34.070 align:start position:0%
+yes we have at least one two but we're
+decrementing<00:06:33.440><c> the</c><00:06:33.520><c> count</c><00:06:33.759><c> now</c>
+
+00:06:34.070 --> 00:06:34.080 align:start position:0%
+decrementing the count now
+ 
+
+00:06:34.080 --> 00:06:36.070 align:start position:0%
+decrementing the count now
+so<00:06:34.240><c> it's</c><00:06:34.400><c> gonna</c><00:06:34.560><c> be</c><00:06:34.720><c> zero</c><00:06:35.120><c> twos</c><00:06:35.440><c> remaining</c><00:06:35.919><c> so</c>
+
+00:06:36.070 --> 00:06:36.080 align:start position:0%
+so it's gonna be zero twos remaining so
+ 
+
+00:06:36.080 --> 00:06:37.749 align:start position:0%
+so it's gonna be zero twos remaining so
+since<00:06:36.319><c> we</c><00:06:36.479><c> decremented</c><00:06:37.039><c> this</c><00:06:37.199><c> to</c><00:06:37.360><c> zero</c><00:06:37.600><c> we</c>
+
+00:06:37.749 --> 00:06:37.759 align:start position:0%
+since we decremented this to zero we
+ 
+
+00:06:37.759 --> 00:06:39.189 align:start position:0%
+since we decremented this to zero we
+have<00:06:37.840><c> to</c><00:06:37.919><c> make</c><00:06:38.000><c> sure</c><00:06:38.240><c> we</c><00:06:38.400><c> pop</c><00:06:38.639><c> from</c><00:06:38.800><c> the</c><00:06:38.960><c> min</c>
+
+00:06:39.189 --> 00:06:39.199 align:start position:0%
+have to make sure we pop from the min
+ 
+
+00:06:39.199 --> 00:06:40.870 align:start position:0%
+have to make sure we pop from the min
+heap<00:06:39.440><c> right</c><00:06:39.600><c> we're</c><00:06:39.759><c> popping</c><00:06:40.080><c> the</c><00:06:40.240><c> minimum</c>
+
+00:06:40.870 --> 00:06:40.880 align:start position:0%
+heap right we're popping the minimum
+ 
+
+00:06:40.880 --> 00:06:43.590 align:start position:0%
+heap right we're popping the minimum
+value<00:06:41.360><c> too</c><00:06:42.080><c> okay</c><00:06:42.319><c> so</c><00:06:42.560><c> now</c><00:06:42.960><c> let's</c><00:06:43.199><c> look</c><00:06:43.360><c> for</c><00:06:43.440><c> the</c>
+
+00:06:43.590 --> 00:06:43.600 align:start position:0%
+value too okay so now let's look for the
+ 
+
+00:06:43.600 --> 00:06:45.270 align:start position:0%
+value too okay so now let's look for the
+next<00:06:43.840><c> value</c><00:06:44.160><c> what</c><00:06:44.319><c> comes</c><00:06:44.639><c> after</c><00:06:44.880><c> two</c>
+
+00:06:45.270 --> 00:06:45.280 align:start position:0%
+next value what comes after two
+ 
+
+00:06:45.280 --> 00:06:47.110 align:start position:0%
+next value what comes after two
+of<00:06:45.360><c> course</c><00:06:45.759><c> three</c><00:06:46.000><c> so</c><00:06:46.160><c> do</c><00:06:46.319><c> we</c><00:06:46.400><c> have</c><00:06:46.560><c> any</c><00:06:46.800><c> threes</c>
+
+00:06:47.110 --> 00:06:47.120 align:start position:0%
+of course three so do we have any threes
+ 
+
+00:06:47.120 --> 00:06:48.629 align:start position:0%
+of course three so do we have any threes
+available<00:06:47.520><c> to</c><00:06:47.680><c> us</c><00:06:48.000><c> yes</c>
+
+00:06:48.629 --> 00:06:48.639 align:start position:0%
+available to us yes
+ 
+
+00:06:48.639 --> 00:06:50.309 align:start position:0%
+available to us yes
+in<00:06:48.720><c> the</c><00:06:48.880><c> min</c><00:06:49.120><c> heap</c><00:06:49.440><c> we</c><00:06:49.599><c> do</c><00:06:49.759><c> have</c><00:06:50.000><c> a</c><00:06:50.080><c> three</c>
+
+00:06:50.309 --> 00:06:50.319 align:start position:0%
+in the min heap we do have a three
+ 
+
+00:06:50.319 --> 00:06:51.830 align:start position:0%
+in the min heap we do have a three
+available<00:06:50.720><c> to</c><00:06:50.960><c> us</c><00:06:51.199><c> but</c><00:06:51.440><c> we're</c><00:06:51.599><c> going</c><00:06:51.680><c> to</c><00:06:51.759><c> be</c>
+
+00:06:51.830 --> 00:06:51.840 align:start position:0%
+available to us but we're going to be
+ 
+
+00:06:51.840 --> 00:06:54.390 align:start position:0%
+available to us but we're going to be
+decrementing<00:06:52.400><c> its</c><00:06:52.639><c> count</c><00:06:52.960><c> down</c><00:06:53.120><c> to</c><00:06:53.360><c> zero</c><00:06:53.759><c> now</c>
+
+00:06:54.390 --> 00:06:54.400 align:start position:0%
+decrementing its count down to zero now
+ 
+
+00:06:54.400 --> 00:06:57.029 align:start position:0%
+decrementing its count down to zero now
+so<00:06:54.639><c> once</c><00:06:54.880><c> again</c><00:06:55.440><c> since</c><00:06:55.919><c> three</c><00:06:56.400><c> has</c><00:06:56.639><c> no</c><00:06:56.800><c> more</c>
+
+00:06:57.029 --> 00:06:57.039 align:start position:0%
+so once again since three has no more
+ 
+
+00:06:57.039 --> 00:06:58.790 align:start position:0%
+so once again since three has no more
+values<00:06:57.440><c> left</c><00:06:57.680><c> what's</c><00:06:57.919><c> the</c><00:06:58.080><c> minimum</c><00:06:58.400><c> value</c><00:06:58.720><c> in</c>
+
+00:06:58.790 --> 00:06:58.800 align:start position:0%
+values left what's the minimum value in
+ 
+
+00:06:58.800 --> 00:07:00.390 align:start position:0%
+values left what's the minimum value in
+our<00:06:58.960><c> min</c><00:06:59.120><c> heap</c><00:06:59.440><c> of</c><00:06:59.520><c> course</c><00:06:59.759><c> it</c><00:06:59.840><c> was</c><00:07:00.080><c> three</c>
+
+00:07:00.390 --> 00:07:00.400 align:start position:0%
+our min heap of course it was three
+ 
+
+00:07:00.400 --> 00:07:02.150 align:start position:0%
+our min heap of course it was three
+because<00:07:00.560><c> we</c><00:07:00.720><c> just</c><00:07:00.960><c> popped</c><00:07:01.360><c> the</c><00:07:01.520><c> two</c>
+
+00:07:02.150 --> 00:07:02.160 align:start position:0%
+because we just popped the two
+ 
+
+00:07:02.160 --> 00:07:04.230 align:start position:0%
+because we just popped the two
+so<00:07:02.639><c> now</c><00:07:02.800><c> we</c><00:07:02.960><c> once</c><00:07:03.199><c> again</c><00:07:03.440><c> have</c><00:07:03.520><c> to</c><00:07:03.680><c> pop</c><00:07:04.080><c> from</c>
+
+00:07:04.230 --> 00:07:04.240 align:start position:0%
+so now we once again have to pop from
+ 
+
+00:07:04.240 --> 00:07:05.990 align:start position:0%
+so now we once again have to pop from
+the<00:07:04.400><c> min</c><00:07:04.639><c> heap</c><00:07:04.880><c> the</c><00:07:04.960><c> minimum</c><00:07:05.360><c> value</c><00:07:05.680><c> which</c><00:07:05.840><c> is</c>
+
+00:07:05.990 --> 00:07:06.000 align:start position:0%
+the min heap the minimum value which is
+ 
+
+00:07:06.000 --> 00:07:06.550 align:start position:0%
+the min heap the minimum value which is
+three
+
+00:07:06.550 --> 00:07:06.560 align:start position:0%
+three
+ 
+
+00:07:06.560 --> 00:07:08.469 align:start position:0%
+three
+and<00:07:06.800><c> last</c><00:07:07.120><c> but</c><00:07:07.280><c> not</c><00:07:07.599><c> least</c><00:07:08.000><c> we</c><00:07:08.160><c> are</c><00:07:08.240><c> going</c><00:07:08.400><c> to</c>
+
+00:07:08.469 --> 00:07:08.479 align:start position:0%
+and last but not least we are going to
+ 
+
+00:07:08.479 --> 00:07:09.990 align:start position:0%
+and last but not least we are going to
+get<00:07:08.639><c> the</c><00:07:08.800><c> next</c><00:07:09.120><c> value</c><00:07:09.440><c> that</c><00:07:09.520><c> comes</c><00:07:09.759><c> after</c>
+
+00:07:09.990 --> 00:07:10.000 align:start position:0%
+get the next value that comes after
+ 
+
+00:07:10.000 --> 00:07:11.670 align:start position:0%
+get the next value that comes after
+three<00:07:10.240><c> do</c><00:07:10.319><c> we</c><00:07:10.479><c> have</c><00:07:10.560><c> any</c><00:07:10.800><c> fours</c><00:07:11.120><c> available</c>
+
+00:07:11.670 --> 00:07:11.680 align:start position:0%
+three do we have any fours available
+ 
+
+00:07:11.680 --> 00:07:13.189 align:start position:0%
+three do we have any fours available
+yes<00:07:11.919><c> we</c><00:07:12.080><c> do</c><00:07:12.240><c> so</c><00:07:12.400><c> we're</c><00:07:12.560><c> just</c><00:07:12.720><c> going</c><00:07:12.800><c> to</c><00:07:12.880><c> repeat</c>
+
+00:07:13.189 --> 00:07:13.199 align:start position:0%
+yes we do so we're just going to repeat
+ 
+
+00:07:13.199 --> 00:07:14.950 align:start position:0%
+yes we do so we're just going to repeat
+the<00:07:13.360><c> exact</c><00:07:13.680><c> same</c><00:07:14.000><c> process</c><00:07:14.560><c> because</c>
+
+00:07:14.950 --> 00:07:14.960 align:start position:0%
+the exact same process because
+ 
+
+00:07:14.960 --> 00:07:16.629 align:start position:0%
+the exact same process because
+we<00:07:15.120><c> see</c><00:07:15.360><c> we're</c><00:07:15.520><c> decrementing</c><00:07:16.080><c> the</c><00:07:16.160><c> count</c><00:07:16.479><c> of</c>
+
+00:07:16.629 --> 00:07:16.639 align:start position:0%
+we see we're decrementing the count of
+ 
+
+00:07:16.639 --> 00:07:18.950 align:start position:0%
+we see we're decrementing the count of
+four<00:07:16.960><c> down</c><00:07:17.120><c> to</c><00:07:17.360><c> zero</c><00:07:17.919><c> so</c><00:07:18.080><c> once</c><00:07:18.400><c> again</c><00:07:18.639><c> we</c><00:07:18.800><c> can</c>
+
+00:07:18.950 --> 00:07:18.960 align:start position:0%
+four down to zero so once again we can
+ 
+
+00:07:18.960 --> 00:07:20.790 align:start position:0%
+four down to zero so once again we can
+pop<00:07:19.280><c> from</c><00:07:19.520><c> our</c><00:07:19.599><c> min</c><00:07:19.840><c> heap</c><00:07:20.080><c> we're</c><00:07:20.240><c> popping</c><00:07:20.560><c> the</c>
+
+00:07:20.790 --> 00:07:20.800 align:start position:0%
+pop from our min heap we're popping the
+ 
+
+00:07:20.800 --> 00:07:23.430 align:start position:0%
+pop from our min heap we're popping the
+minimum<00:07:21.280><c> value</c><00:07:21.680><c> from</c><00:07:21.919><c> our</c><00:07:22.000><c> min</c><00:07:22.240><c> heap</c><00:07:22.560><c> of</c><00:07:22.800><c> four</c>
+
+00:07:23.430 --> 00:07:23.440 align:start position:0%
+minimum value from our min heap of four
+ 
+
+00:07:23.440 --> 00:07:26.469 align:start position:0%
+minimum value from our min heap of four
+so<00:07:23.599><c> we</c><00:07:23.759><c> once</c><00:07:24.000><c> again</c><00:07:24.400><c> created</c><00:07:24.960><c> a</c><00:07:25.199><c> group</c><00:07:25.599><c> size</c><00:07:26.080><c> of</c>
+
+00:07:26.469 --> 00:07:26.479 align:start position:0%
+so we once again created a group size of
+ 
+
+00:07:26.479 --> 00:07:29.110 align:start position:0%
+so we once again created a group size of
+three<00:07:26.800><c> so</c><00:07:27.440><c> now</c><00:07:27.840><c> let's</c><00:07:28.160><c> see</c><00:07:28.319><c> if</c><00:07:28.400><c> we</c><00:07:28.560><c> can</c><00:07:28.720><c> create</c>
+
+00:07:29.110 --> 00:07:29.120 align:start position:0%
+three so now let's see if we can create
+ 
+
+00:07:29.120 --> 00:07:31.189 align:start position:0%
+three so now let's see if we can create
+one<00:07:29.360><c> more</c><00:07:29.599><c> group</c><00:07:29.919><c> size</c><00:07:30.319><c> of</c><00:07:30.560><c> three</c><00:07:30.800><c> so</c><00:07:31.039><c> what</c>
+
+00:07:31.189 --> 00:07:31.199 align:start position:0%
+one more group size of three so what
+ 
+
+00:07:31.199 --> 00:07:32.870 align:start position:0%
+one more group size of three so what
+let's<00:07:31.440><c> get</c><00:07:31.520><c> the</c><00:07:31.680><c> minimum</c><00:07:32.080><c> value</c><00:07:32.479><c> and</c><00:07:32.560><c> we</c><00:07:32.720><c> know</c>
+
+00:07:32.870 --> 00:07:32.880 align:start position:0%
+let's get the minimum value and we know
+ 
+
+00:07:32.880 --> 00:07:34.469 align:start position:0%
+let's get the minimum value and we know
+we<00:07:32.960><c> can</c><00:07:33.120><c> get</c><00:07:33.199><c> that</c><00:07:33.360><c> from</c><00:07:33.599><c> our</c><00:07:33.759><c> min</c><00:07:34.000><c> heap</c><00:07:34.319><c> now</c>
+
+00:07:34.469 --> 00:07:34.479 align:start position:0%
+we can get that from our min heap now
+ 
+
+00:07:34.479 --> 00:07:35.749 align:start position:0%
+we can get that from our min heap now
+it's<00:07:34.639><c> going</c><00:07:34.720><c> to</c><00:07:34.800><c> be</c><00:07:34.880><c> a</c><00:07:35.039><c> six</c><00:07:35.280><c> so</c><00:07:35.440><c> we're</c><00:07:35.520><c> going</c><00:07:35.599><c> to</c>
+
+00:07:35.749 --> 00:07:35.759 align:start position:0%
+it's going to be a six so we're going to
+ 
+
+00:07:35.759 --> 00:07:36.950 align:start position:0%
+it's going to be a six so we're going to
+start<00:07:36.000><c> this</c><00:07:36.160><c> group</c><00:07:36.479><c> at</c><00:07:36.639><c> six</c>
+
+00:07:36.950 --> 00:07:36.960 align:start position:0%
+start this group at six
+ 
+
+00:07:36.960 --> 00:07:38.950 align:start position:0%
+start this group at six
+are<00:07:37.039><c> there</c><00:07:37.199><c> any</c><00:07:37.360><c> sixes</c><00:07:37.759><c> available</c><00:07:38.160><c> to</c><00:07:38.319><c> us</c><00:07:38.639><c> yes</c>
+
+00:07:38.950 --> 00:07:38.960 align:start position:0%
+are there any sixes available to us yes
+ 
+
+00:07:38.960 --> 00:07:40.629 align:start position:0%
+are there any sixes available to us yes
+there<00:07:39.199><c> are</c><00:07:39.520><c> but</c><00:07:39.759><c> we</c><00:07:39.840><c> have</c><00:07:40.000><c> to</c><00:07:40.080><c> decrement</c><00:07:40.479><c> its</c>
+
+00:07:40.629 --> 00:07:40.639 align:start position:0%
+there are but we have to decrement its
+ 
+
+00:07:40.639 --> 00:07:41.749 align:start position:0%
+there are but we have to decrement its
+count<00:07:40.880><c> down</c><00:07:41.039><c> to</c><00:07:41.199><c> zero</c>
+
+00:07:41.749 --> 00:07:41.759 align:start position:0%
+count down to zero
+ 
+
+00:07:41.759 --> 00:07:43.270 align:start position:0%
+count down to zero
+so<00:07:41.919><c> basically</c><00:07:42.319><c> we're</c><00:07:42.560><c> repeating</c><00:07:42.960><c> the</c><00:07:43.039><c> same</c>
+
+00:07:43.270 --> 00:07:43.280 align:start position:0%
+so basically we're repeating the same
+ 
+
+00:07:43.280 --> 00:07:44.950 align:start position:0%
+so basically we're repeating the same
+process<00:07:43.599><c> let's</c><00:07:43.919><c> pop</c><00:07:44.160><c> that</c><00:07:44.560><c> six</c>
+
+00:07:44.950 --> 00:07:44.960 align:start position:0%
+process let's pop that six
+ 
+
+00:07:44.960 --> 00:07:46.790 align:start position:0%
+process let's pop that six
+from<00:07:45.280><c> our</c><00:07:45.440><c> min</c><00:07:45.680><c> heap</c><00:07:46.000><c> six</c><00:07:46.240><c> is</c><00:07:46.319><c> the</c><00:07:46.400><c> minimum</c>
+
+00:07:46.790 --> 00:07:46.800 align:start position:0%
+from our min heap six is the minimum
+ 
+
+00:07:46.800 --> 00:07:48.390 align:start position:0%
+from our min heap six is the minimum
+value<00:07:47.440><c> so</c><00:07:47.599><c> now</c><00:07:47.759><c> let's</c><00:07:48.000><c> check</c>
+
+00:07:48.390 --> 00:07:48.400 align:start position:0%
+value so now let's check
+ 
+
+00:07:48.400 --> 00:07:50.550 align:start position:0%
+value so now let's check
+is<00:07:48.479><c> there</c><00:07:48.720><c> a</c><00:07:48.879><c> seven</c><00:07:49.360><c> available</c><00:07:49.759><c> to</c><00:07:50.000><c> us</c><00:07:50.319><c> there</c>
+
+00:07:50.550 --> 00:07:50.560 align:start position:0%
+is there a seven available to us there
+ 
+
+00:07:50.560 --> 00:07:51.749 align:start position:0%
+is there a seven available to us there
+is<00:07:50.720><c> a</c><00:07:50.879><c> seven</c>
+
+00:07:51.749 --> 00:07:51.759 align:start position:0%
+is a seven
+ 
+
+00:07:51.759 --> 00:07:53.350 align:start position:0%
+is a seven
+we're<00:07:51.919><c> decrementing</c><00:07:52.479><c> its</c><00:07:52.639><c> count</c><00:07:52.879><c> to</c><00:07:53.039><c> zero</c>
+
+00:07:53.350 --> 00:07:53.360 align:start position:0%
+we're decrementing its count to zero
+ 
+
+00:07:53.360 --> 00:07:55.029 align:start position:0%
+we're decrementing its count to zero
+once<00:07:53.599><c> again</c><00:07:53.840><c> we're</c><00:07:54.000><c> going</c><00:07:54.080><c> to</c><00:07:54.160><c> pop</c><00:07:54.479><c> seven</c><00:07:54.800><c> from</c>
+
+00:07:55.029 --> 00:07:55.039 align:start position:0%
+once again we're going to pop seven from
+ 
+
+00:07:55.039 --> 00:07:56.070 align:start position:0%
+once again we're going to pop seven from
+the<00:07:55.199><c> min</c><00:07:55.440><c> heap</c>
+
+00:07:56.070 --> 00:07:56.080 align:start position:0%
+the min heap
+ 
+
+00:07:56.080 --> 00:07:58.150 align:start position:0%
+the min heap
+the<00:07:56.240><c> third</c><00:07:56.560><c> value</c><00:07:56.879><c> we</c><00:07:56.960><c> need</c><00:07:57.120><c> to</c><00:07:57.280><c> complete</c><00:07:57.840><c> this</c>
+
+00:07:58.150 --> 00:07:58.160 align:start position:0%
+the third value we need to complete this
+ 
+
+00:07:58.160 --> 00:07:59.589 align:start position:0%
+the third value we need to complete this
+group<00:07:58.560><c> is</c><00:07:58.639><c> going</c><00:07:58.720><c> to</c><00:07:58.879><c> be</c><00:07:59.120><c> 8</c>
+
+00:07:59.589 --> 00:07:59.599 align:start position:0%
+group is going to be 8
+ 
+
+00:07:59.599 --> 00:08:01.670 align:start position:0%
+group is going to be 8
+and<00:07:59.759><c> we</c><00:07:59.919><c> do</c><00:08:00.160><c> have</c><00:08:00.319><c> an</c><00:08:00.560><c> 8</c><00:08:00.720><c> available</c><00:08:01.199><c> to</c><00:08:01.360><c> us</c><00:08:01.599><c> and</c>
+
+00:08:01.670 --> 00:08:01.680 align:start position:0%
+and we do have an 8 available to us and
+ 
+
+00:08:01.680 --> 00:08:03.510 align:start position:0%
+and we do have an 8 available to us and
+we<00:08:01.840><c> decrement</c><00:08:02.240><c> its</c><00:08:02.400><c> count</c><00:08:02.639><c> down</c><00:08:02.800><c> to</c><00:08:02.960><c> 0.</c><00:08:03.199><c> so</c><00:08:03.360><c> now</c>
+
+00:08:03.510 --> 00:08:03.520 align:start position:0%
+we decrement its count down to 0. so now
+ 
+
+00:08:03.520 --> 00:08:04.869 align:start position:0%
+we decrement its count down to 0. so now
+we're<00:08:03.759><c> popping</c><00:08:04.160><c> the</c><00:08:04.400><c> last</c>
+
+00:08:04.869 --> 00:08:04.879 align:start position:0%
+we're popping the last
+ 
+
+00:08:04.879 --> 00:08:06.550 align:start position:0%
+we're popping the last
+value<00:08:05.199><c> from</c><00:08:05.440><c> our</c><00:08:05.520><c> min</c><00:08:05.759><c> heap</c><00:08:06.080><c> we're</c><00:08:06.240><c> popping</c>
+
+00:08:06.550 --> 00:08:06.560 align:start position:0%
+value from our min heap we're popping
+ 
+
+00:08:06.560 --> 00:08:08.309 align:start position:0%
+value from our min heap we're popping
+the<00:08:06.720><c> minimum</c><00:08:07.120><c> value</c><00:08:07.440><c> and</c><00:08:07.599><c> it's</c><00:08:07.759><c> the</c><00:08:07.919><c> last</c>
+
+00:08:08.309 --> 00:08:08.319 align:start position:0%
+the minimum value and it's the last
+ 
+
+00:08:08.319 --> 00:08:09.029 align:start position:0%
+the minimum value and it's the last
+value
+
+00:08:09.029 --> 00:08:09.039 align:start position:0%
+value
+ 
+
+00:08:09.039 --> 00:08:11.749 align:start position:0%
+value
+we<00:08:09.199><c> completed</c><00:08:09.680><c> this</c><00:08:09.919><c> group</c><00:08:10.400><c> so</c><00:08:10.720><c> now</c><00:08:11.199><c> if</c><00:08:11.360><c> we</c><00:08:11.520><c> try</c>
+
+00:08:11.749 --> 00:08:11.759 align:start position:0%
+we completed this group so now if we try
+ 
+
+00:08:11.759 --> 00:08:12.390 align:start position:0%
+we completed this group so now if we try
+to<00:08:11.919><c> create</c>
+
+00:08:12.390 --> 00:08:12.400 align:start position:0%
+to create
+ 
+
+00:08:12.400 --> 00:08:14.390 align:start position:0%
+to create
+a<00:08:12.639><c> fourth</c><00:08:13.039><c> group</c><00:08:13.680><c> we're</c><00:08:13.840><c> gonna</c><00:08:14.000><c> need</c><00:08:14.160><c> to</c><00:08:14.240><c> get</c>
+
+00:08:14.390 --> 00:08:14.400 align:start position:0%
+a fourth group we're gonna need to get
+ 
+
+00:08:14.400 --> 00:08:16.230 align:start position:0%
+a fourth group we're gonna need to get
+the<00:08:14.560><c> minimum</c><00:08:14.960><c> value</c><00:08:15.280><c> from</c><00:08:15.520><c> our</c><00:08:15.680><c> min</c><00:08:15.840><c> heap</c><00:08:16.080><c> but</c>
+
+00:08:16.230 --> 00:08:16.240 align:start position:0%
+the minimum value from our min heap but
+ 
+
+00:08:16.240 --> 00:08:16.550 align:start position:0%
+the minimum value from our min heap but
+we
+
+00:08:16.550 --> 00:08:16.560 align:start position:0%
+we
+ 
+
+00:08:16.560 --> 00:08:18.790 align:start position:0%
+we
+see<00:08:17.199><c> that</c><00:08:17.440><c> there</c><00:08:17.680><c> is</c><00:08:17.840><c> no</c><00:08:18.080><c> value</c><00:08:18.400><c> in</c><00:08:18.479><c> the</c><00:08:18.560><c> min</c>
+
+00:08:18.790 --> 00:08:18.800 align:start position:0%
+see that there is no value in the min
+ 
+
+00:08:18.800 --> 00:08:20.390 align:start position:0%
+see that there is no value in the min
+heap<00:08:18.960><c> so</c><00:08:19.199><c> basically</c><00:08:19.599><c> that's</c><00:08:19.840><c> how</c><00:08:19.919><c> you</c><00:08:20.080><c> know</c><00:08:20.319><c> we</c>
+
+00:08:20.390 --> 00:08:20.400 align:start position:0%
+heap so basically that's how you know we
+ 
+
+00:08:20.400 --> 00:08:22.309 align:start position:0%
+heap so basically that's how you know we
+have<00:08:20.560><c> no</c><00:08:20.720><c> more</c><00:08:21.039><c> groups</c><00:08:21.360><c> left</c><00:08:21.599><c> to</c><00:08:21.759><c> create</c><00:08:22.080><c> we</c>
+
+00:08:22.309 --> 00:08:22.319 align:start position:0%
+have no more groups left to create we
+ 
+
+00:08:22.319 --> 00:08:23.029 align:start position:0%
+have no more groups left to create we
+basically
+
+00:08:23.029 --> 00:08:23.039 align:start position:0%
+basically
+ 
+
+00:08:23.039 --> 00:08:25.029 align:start position:0%
+basically
+you<00:08:23.199><c> know</c><00:08:23.440><c> took</c><00:08:23.759><c> every</c><00:08:24.000><c> value</c><00:08:24.319><c> that</c><00:08:24.479><c> was</c><00:08:24.720><c> given</c>
+
+00:08:25.029 --> 00:08:25.039 align:start position:0%
+you know took every value that was given
+ 
+
+00:08:25.039 --> 00:08:26.869 align:start position:0%
+you know took every value that was given
+to<00:08:25.280><c> us</c><00:08:25.599><c> now</c><00:08:25.759><c> let</c><00:08:25.919><c> me</c><00:08:26.000><c> just</c><00:08:26.160><c> quickly</c><00:08:26.560><c> go</c>
+
+00:08:26.869 --> 00:08:26.879 align:start position:0%
+to us now let me just quickly go
+ 
+
+00:08:26.879 --> 00:08:29.670 align:start position:0%
+to us now let me just quickly go
+over<00:08:27.360><c> a</c><00:08:27.440><c> case</c><00:08:27.759><c> where</c><00:08:27.919><c> we</c><00:08:28.080><c> would</c><00:08:28.240><c> return</c><00:08:28.879><c> false</c>
+
+00:08:29.670 --> 00:08:29.680 align:start position:0%
+over a case where we would return false
+ 
+
+00:08:29.680 --> 00:08:30.309 align:start position:0%
+over a case where we would return false
+because
+
+00:08:30.309 --> 00:08:30.319 align:start position:0%
+because
+ 
+
+00:08:30.319 --> 00:08:32.149 align:start position:0%
+because
+you<00:08:30.479><c> know</c><00:08:30.800><c> in</c><00:08:30.879><c> this</c><00:08:31.120><c> example</c><00:08:31.520><c> we</c><00:08:31.599><c> would</c><00:08:31.759><c> return</c>
+
+00:08:32.149 --> 00:08:32.159 align:start position:0%
+you know in this example we would return
+ 
+
+00:08:32.159 --> 00:08:33.589 align:start position:0%
+you know in this example we would return
+true<00:08:32.399><c> because</c><00:08:32.640><c> clearly</c><00:08:32.959><c> we</c><00:08:33.120><c> could</c><00:08:33.360><c> break</c><00:08:33.519><c> it</c>
+
+00:08:33.589 --> 00:08:33.599 align:start position:0%
+true because clearly we could break it
+ 
+
+00:08:33.599 --> 00:08:35.509 align:start position:0%
+true because clearly we could break it
+down<00:08:33.839><c> but</c><00:08:34.000><c> let's</c><00:08:34.159><c> say</c><00:08:34.399><c> this</c><00:08:34.640><c> 8</c><00:08:34.880><c> happened</c><00:08:35.200><c> to</c><00:08:35.279><c> be</c>
+
+00:08:35.509 --> 00:08:35.519 align:start position:0%
+down but let's say this 8 happened to be
+ 
+
+00:08:35.519 --> 00:08:35.909 align:start position:0%
+down but let's say this 8 happened to be
+a
+
+00:08:35.909 --> 00:08:35.919 align:start position:0%
+a
+ 
+
+00:08:35.919 --> 00:08:38.870 align:start position:0%
+a
+9<00:08:36.719><c> and</c><00:08:37.120><c> you</c><00:08:37.279><c> know</c><00:08:37.440><c> then</c><00:08:37.680><c> the</c><00:08:38.159><c> value</c><00:08:38.479><c> in</c><00:08:38.640><c> our</c><00:08:38.719><c> min</c>
+
+00:08:38.870 --> 00:08:38.880 align:start position:0%
+9 and you know then the value in our min
+ 
+
+00:08:38.880 --> 00:08:39.990 align:start position:0%
+9 and you know then the value in our min
+heap<00:08:39.039><c> was</c><00:08:39.200><c> also</c><00:08:39.519><c> a</c><00:08:39.599><c> nine</c>
+
+00:08:39.990 --> 00:08:40.000 align:start position:0%
+heap was also a nine
+ 
+
+00:08:40.000 --> 00:08:41.589 align:start position:0%
+heap was also a nine
+we<00:08:40.159><c> were</c><00:08:40.399><c> we're</c><00:08:40.640><c> looking</c><00:08:40.959><c> for</c><00:08:41.039><c> an</c><00:08:41.279><c> eight</c><00:08:41.519><c> to</c>
+
+00:08:41.589 --> 00:08:41.599 align:start position:0%
+we were we're looking for an eight to
+ 
+
+00:08:41.599 --> 00:08:43.029 align:start position:0%
+we were we're looking for an eight to
+complete<00:08:41.919><c> this</c><00:08:42.159><c> group</c><00:08:42.479><c> but</c><00:08:42.640><c> what</c><00:08:42.800><c> we're</c><00:08:42.959><c> going</c>
+
+00:08:43.029 --> 00:08:43.039 align:start position:0%
+complete this group but what we're going
+ 
+
+00:08:43.039 --> 00:08:44.790 align:start position:0%
+complete this group but what we're going
+to<00:08:43.120><c> find</c><00:08:43.440><c> in</c><00:08:43.519><c> our</c><00:08:43.599><c> hash</c><00:08:43.839><c> map</c><00:08:44.080><c> is</c><00:08:44.159><c> there</c><00:08:44.399><c> is</c><00:08:44.560><c> no</c>
+
+00:08:44.790 --> 00:08:44.800 align:start position:0%
+to find in our hash map is there is no
+ 
+
+00:08:44.800 --> 00:08:45.750 align:start position:0%
+to find in our hash map is there is no
+eight<00:08:45.040><c> value</c>
+
+00:08:45.750 --> 00:08:45.760 align:start position:0%
+eight value
+ 
+
+00:08:45.760 --> 00:08:47.509 align:start position:0%
+eight value
+so<00:08:46.160><c> in</c><00:08:46.320><c> that</c><00:08:46.480><c> case</c><00:08:46.640><c> we</c><00:08:46.800><c> can't</c><00:08:47.040><c> complete</c><00:08:47.360><c> this</c>
+
+00:08:47.509 --> 00:08:47.519 align:start position:0%
+so in that case we can't complete this
+ 
+
+00:08:47.519 --> 00:08:49.110 align:start position:0%
+so in that case we can't complete this
+group<00:08:47.680><c> so</c><00:08:47.839><c> we</c><00:08:47.920><c> would</c><00:08:48.080><c> return</c><00:08:48.560><c> false</c><00:08:48.880><c> there's</c>
+
+00:08:49.110 --> 00:08:49.120 align:start position:0%
+group so we would return false there's
+ 
+
+00:08:49.120 --> 00:08:50.630 align:start position:0%
+group so we would return false there's
+another<00:08:49.519><c> case</c><00:08:49.760><c> that</c><00:08:49.920><c> we</c><00:08:50.000><c> would</c><00:08:50.240><c> return</c>
+
+00:08:50.630 --> 00:08:50.640 align:start position:0%
+another case that we would return
+ 
+
+00:08:50.640 --> 00:08:52.550 align:start position:0%
+another case that we would return
+false<00:08:50.959><c> and</c><00:08:51.120><c> let</c><00:08:51.279><c> me</c><00:08:51.360><c> show</c><00:08:51.519><c> you</c><00:08:51.680><c> that</c><00:08:52.160><c> so</c><00:08:52.399><c> let's</c>
+
+00:08:52.550 --> 00:08:52.560 align:start position:0%
+false and let me show you that so let's
+ 
+
+00:08:52.560 --> 00:08:54.949 align:start position:0%
+false and let me show you that so let's
+say<00:08:52.800><c> i</c><00:08:52.959><c> slightly</c><00:08:53.519><c> modified</c><00:08:54.080><c> the</c><00:08:54.240><c> input</c><00:08:54.640><c> array</c>
+
+00:08:54.949 --> 00:08:54.959 align:start position:0%
+say i slightly modified the input array
+ 
+
+00:08:54.959 --> 00:08:55.910 align:start position:0%
+say i slightly modified the input array
+so<00:08:55.200><c> i</c><00:08:55.440><c> change</c>
+
+00:08:55.910 --> 00:08:55.920 align:start position:0%
+so i change
+ 
+
+00:08:55.920 --> 00:08:59.110 align:start position:0%
+so i change
+one<00:08:56.320><c> two</c><00:08:56.720><c> into</c><00:08:57.200><c> a</c><00:08:57.600><c> one</c><00:08:57.920><c> so</c><00:08:58.640><c> instead</c>
+
+00:08:59.110 --> 00:08:59.120 align:start position:0%
+one two into a one so instead
+ 
+
+00:08:59.120 --> 00:09:01.670 align:start position:0%
+one two into a one so instead
+so<00:08:59.360><c> for</c><00:08:59.839><c> two</c><00:09:00.080><c> we</c><00:09:00.240><c> only</c><00:09:00.480><c> have</c><00:09:00.720><c> one</c><00:09:01.120><c> occurrence</c>
+
+00:09:01.670 --> 00:09:01.680 align:start position:0%
+so for two we only have one occurrence
+ 
+
+00:09:01.680 --> 00:09:02.150 align:start position:0%
+so for two we only have one occurrence
+of<00:09:01.839><c> it</c>
+
+00:09:02.150 --> 00:09:02.160 align:start position:0%
+of it
+ 
+
+00:09:02.160 --> 00:09:04.070 align:start position:0%
+of it
+for<00:09:02.399><c> one</c><00:09:02.720><c> we</c><00:09:03.040><c> in</c><00:09:03.200><c> this</c><00:09:03.360><c> case</c><00:09:03.600><c> have</c><00:09:03.839><c> two</c>
+
+00:09:04.070 --> 00:09:04.080 align:start position:0%
+for one we in this case have two
+ 
+
+00:09:04.080 --> 00:09:05.350 align:start position:0%
+for one we in this case have two
+occurrences<00:09:04.720><c> of</c><00:09:04.880><c> it</c><00:09:05.040><c> so</c>
+
+00:09:05.350 --> 00:09:05.360 align:start position:0%
+occurrences of it so
+ 
+
+00:09:05.360 --> 00:09:07.110 align:start position:0%
+occurrences of it so
+we're<00:09:05.519><c> gonna</c><00:09:05.680><c> start</c><00:09:05.920><c> with</c><00:09:06.080><c> the</c><00:09:06.240><c> first</c><00:09:06.640><c> group</c>
+
+00:09:07.110 --> 00:09:07.120 align:start position:0%
+we're gonna start with the first group
+ 
+
+00:09:07.120 --> 00:09:08.710 align:start position:0%
+we're gonna start with the first group
+we're<00:09:07.279><c> gonna</c><00:09:07.440><c> get</c><00:09:07.519><c> the</c><00:09:07.680><c> minimum</c><00:09:08.080><c> value</c><00:09:08.399><c> it's</c><00:09:08.560><c> a</c>
+
+00:09:08.710 --> 00:09:08.720 align:start position:0%
+we're gonna get the minimum value it's a
+ 
+
+00:09:08.720 --> 00:09:09.190 align:start position:0%
+we're gonna get the minimum value it's a
+one
+
+00:09:09.190 --> 00:09:09.200 align:start position:0%
+one
+ 
+
+00:09:09.200 --> 00:09:10.630 align:start position:0%
+one
+so<00:09:09.360><c> we're</c><00:09:09.519><c> gonna</c><00:09:09.680><c> start</c><00:09:09.920><c> at</c><00:09:10.080><c> one</c><00:09:10.240><c> we're</c><00:09:10.399><c> gonna</c>
+
+00:09:10.630 --> 00:09:10.640 align:start position:0%
+so we're gonna start at one we're gonna
+ 
+
+00:09:10.640 --> 00:09:12.389 align:start position:0%
+so we're gonna start at one we're gonna
+take<00:09:11.200><c> the</c><00:09:11.440><c> count</c><00:09:11.760><c> of</c><00:09:12.000><c> one</c>
+
+00:09:12.389 --> 00:09:12.399 align:start position:0%
+take the count of one
+ 
+
+00:09:12.399 --> 00:09:14.470 align:start position:0%
+take the count of one
+and<00:09:12.560><c> decrement</c><00:09:13.120><c> it</c><00:09:13.200><c> down</c><00:09:13.440><c> to</c><00:09:13.680><c> one</c><00:09:14.080><c> we're</c><00:09:14.320><c> gonna</c>
+
+00:09:14.470 --> 00:09:14.480 align:start position:0%
+and decrement it down to one we're gonna
+ 
+
+00:09:14.480 --> 00:09:16.310 align:start position:0%
+and decrement it down to one we're gonna
+take<00:09:14.640><c> the</c><00:09:14.880><c> count</c><00:09:15.200><c> of</c><00:09:15.440><c> two</c><00:09:15.760><c> because</c><00:09:15.920><c> that's</c><00:09:16.160><c> the</c>
+
+00:09:16.310 --> 00:09:16.320 align:start position:0%
+take the count of two because that's the
+ 
+
+00:09:16.320 --> 00:09:17.990 align:start position:0%
+take the count of two because that's the
+next<00:09:16.480><c> value</c><00:09:16.880><c> we're</c><00:09:17.040><c> gonna</c>
+
+00:09:17.990 --> 00:09:18.000 align:start position:0%
+next value we're gonna
+ 
+
+00:09:18.000 --> 00:09:19.670 align:start position:0%
+next value we're gonna
+insert<00:09:18.399><c> in</c><00:09:18.480><c> this</c><00:09:18.640><c> group</c><00:09:18.959><c> and</c><00:09:19.120><c> decrement</c><00:09:19.600><c> it</c>
+
+00:09:19.670 --> 00:09:19.680 align:start position:0%
+insert in this group and decrement it
+ 
+
+00:09:19.680 --> 00:09:21.030 align:start position:0%
+insert in this group and decrement it
+down<00:09:20.160><c> to</c><00:09:20.399><c> zero</c>
+
+00:09:21.030 --> 00:09:21.040 align:start position:0%
+down to zero
+ 
+
+00:09:21.040 --> 00:09:23.829 align:start position:0%
+down to zero
+now<00:09:21.360><c> notice</c><00:09:21.760><c> how</c><00:09:22.000><c> before</c><00:09:23.040><c> so</c><00:09:23.360><c> basically</c><00:09:23.680><c> what</c>
+
+00:09:23.829 --> 00:09:23.839 align:start position:0%
+now notice how before so basically what
+ 
+
+00:09:23.839 --> 00:09:25.750 align:start position:0%
+now notice how before so basically what
+i'm<00:09:23.920><c> saying</c><00:09:24.160><c> now</c><00:09:24.320><c> we</c><00:09:24.480><c> have</c><00:09:24.560><c> to</c><00:09:24.800><c> pop</c><00:09:25.200><c> two</c><00:09:25.519><c> from</c>
+
+00:09:25.750 --> 00:09:25.760 align:start position:0%
+i'm saying now we have to pop two from
+ 
+
+00:09:25.760 --> 00:09:27.430 align:start position:0%
+i'm saying now we have to pop two from
+our<00:09:26.000><c> min</c><00:09:26.240><c> heap</c><00:09:26.480><c> because</c><00:09:26.640><c> it's</c><00:09:26.800><c> no</c><00:09:27.040><c> longer</c>
+
+00:09:27.430 --> 00:09:27.440 align:start position:0%
+our min heap because it's no longer
+ 
+
+00:09:27.440 --> 00:09:28.150 align:start position:0%
+our min heap because it's no longer
+available
+
+00:09:28.150 --> 00:09:28.160 align:start position:0%
+available
+ 
+
+00:09:28.160 --> 00:09:31.030 align:start position:0%
+available
+but<00:09:28.399><c> notice</c><00:09:28.720><c> how</c><00:09:29.040><c> in</c><00:09:29.120><c> the</c><00:09:29.279><c> first</c><00:09:30.080><c> example</c>
+
+00:09:31.030 --> 00:09:31.040 align:start position:0%
+but notice how in the first example
+ 
+
+00:09:31.040 --> 00:09:32.949 align:start position:0%
+but notice how in the first example
+every<00:09:31.360><c> time</c><00:09:31.600><c> we</c><00:09:31.839><c> popped</c><00:09:32.240><c> from</c><00:09:32.399><c> the</c><00:09:32.480><c> min</c><00:09:32.720><c> heap</c>
+
+00:09:32.949 --> 00:09:32.959 align:start position:0%
+every time we popped from the min heap
+ 
+
+00:09:32.959 --> 00:09:35.030 align:start position:0%
+every time we popped from the min heap
+we<00:09:33.120><c> were</c><00:09:33.360><c> popping</c><00:09:33.760><c> the</c><00:09:34.000><c> minimum</c><00:09:34.480><c> value</c>
+
+00:09:35.030 --> 00:09:35.040 align:start position:0%
+we were popping the minimum value
+ 
+
+00:09:35.040 --> 00:09:37.910 align:start position:0%
+we were popping the minimum value
+in<00:09:35.120><c> this</c><00:09:35.360><c> case</c><00:09:35.600><c> we're</c><00:09:35.760><c> popping</c><00:09:36.320><c> 2</c><00:09:36.880><c> 2</c><00:09:37.279><c> is</c><00:09:37.600><c> not</c>
+
+00:09:37.910 --> 00:09:37.920 align:start position:0%
+in this case we're popping 2 2 is not
+ 
+
+00:09:37.920 --> 00:09:38.710 align:start position:0%
+in this case we're popping 2 2 is not
+the<00:09:38.160><c> minimum</c>
+
+00:09:38.710 --> 00:09:38.720 align:start position:0%
+the minimum
+ 
+
+00:09:38.720 --> 00:09:42.230 align:start position:0%
+the minimum
+value<00:09:39.519><c> in</c><00:09:39.839><c> our</c><00:09:40.160><c> min</c><00:09:40.399><c> heap</c><00:09:41.040><c> and</c><00:09:41.600><c> you</c><00:09:41.680><c> know</c>
+
+00:09:42.230 --> 00:09:42.240 align:start position:0%
+value in our min heap and you know
+ 
+
+00:09:42.240 --> 00:09:44.550 align:start position:0%
+value in our min heap and you know
+it's<00:09:42.480><c> usually</c><00:09:43.279><c> in</c><00:09:43.440><c> min</c><00:09:43.600><c> heaps</c><00:09:43.920><c> you</c><00:09:44.000><c> can't</c><00:09:44.240><c> just</c>
+
+00:09:44.550 --> 00:09:44.560 align:start position:0%
+it's usually in min heaps you can't just
+ 
+
+00:09:44.560 --> 00:09:46.870 align:start position:0%
+it's usually in min heaps you can't just
+pop<00:09:44.880><c> an</c><00:09:45.120><c> arbitrary</c><00:09:45.920><c> value</c><00:09:46.240><c> you</c><00:09:46.399><c> can't</c><00:09:46.560><c> just</c>
+
+00:09:46.870 --> 00:09:46.880 align:start position:0%
+pop an arbitrary value you can't just
+ 
+
+00:09:46.880 --> 00:09:49.110 align:start position:0%
+pop an arbitrary value you can't just
+search<00:09:47.200><c> for</c><00:09:47.360><c> a</c><00:09:47.440><c> value</c><00:09:47.920><c> in</c><00:09:48.160><c> log</c><00:09:48.560><c> in</c><00:09:48.720><c> time</c><00:09:49.040><c> and</c>
+
+00:09:49.110 --> 00:09:49.120 align:start position:0%
+search for a value in log in time and
+ 
+
+00:09:49.120 --> 00:09:50.150 align:start position:0%
+search for a value in log in time and
+then<00:09:49.360><c> just</c><00:09:49.600><c> pop</c>
+
+00:09:50.150 --> 00:09:50.160 align:start position:0%
+then just pop
+ 
+
+00:09:50.160 --> 00:09:51.910 align:start position:0%
+then just pop
+any<00:09:50.399><c> particular</c><00:09:50.959><c> value</c><00:09:51.200><c> you</c><00:09:51.360><c> can</c><00:09:51.440><c> only</c><00:09:51.680><c> pop</c>
+
+00:09:51.910 --> 00:09:51.920 align:start position:0%
+any particular value you can only pop
+ 
+
+00:09:51.920 --> 00:09:53.190 align:start position:0%
+any particular value you can only pop
+the<00:09:52.160><c> minimum</c><00:09:52.640><c> value</c>
+
+00:09:53.190 --> 00:09:53.200 align:start position:0%
+the minimum value
+ 
+
+00:09:53.200 --> 00:09:55.750 align:start position:0%
+the minimum value
+so<00:09:53.519><c> how</c><00:09:53.680><c> can</c><00:09:53.920><c> we</c><00:09:54.160><c> get</c><00:09:54.480><c> around</c><00:09:54.959><c> this</c><00:09:55.200><c> how</c><00:09:55.360><c> can</c><00:09:55.600><c> i</c>
+
+00:09:55.750 --> 00:09:55.760 align:start position:0%
+so how can we get around this how can i
+ 
+
+00:09:55.760 --> 00:09:57.030 align:start position:0%
+so how can we get around this how can i
+pop<00:09:56.080><c> a</c><00:09:56.320><c> 2</c>
+
+00:09:57.030 --> 00:09:57.040 align:start position:0%
+pop a 2
+ 
+
+00:09:57.040 --> 00:10:00.550 align:start position:0%
+pop a 2
+efficiently<00:09:57.839><c> in</c><00:09:58.000><c> log</c><00:09:58.320><c> in</c><00:09:58.560><c> time</c><00:09:59.040><c> well</c><00:09:59.600><c> one</c>
+
+00:10:00.550 --> 00:10:00.560 align:start position:0%
+efficiently in log in time well one
+ 
+
+00:10:00.560 --> 00:10:02.630 align:start position:0%
+efficiently in log in time well one
+workaround<00:10:01.200><c> would</c><00:10:01.440><c> be</c><00:10:01.600><c> instead</c><00:10:01.920><c> of</c><00:10:02.079><c> using</c><00:10:02.399><c> a</c>
+
+00:10:02.630 --> 00:10:02.640 align:start position:0%
+workaround would be instead of using a
+ 
+
+00:10:02.640 --> 00:10:04.150 align:start position:0%
+workaround would be instead of using a
+min<00:10:02.959><c> heap</c><00:10:03.440><c> you</c><00:10:03.600><c> could</c><00:10:03.760><c> use</c>
+
+00:10:04.150 --> 00:10:04.160 align:start position:0%
+min heap you could use
+ 
+
+00:10:04.160 --> 00:10:07.350 align:start position:0%
+min heap you could use
+a<00:10:04.480><c> tree</c><00:10:04.959><c> map</c><00:10:05.920><c> so</c><00:10:06.079><c> in</c><00:10:06.240><c> that</c><00:10:06.560><c> case</c><00:10:06.880><c> you</c><00:10:07.120><c> could</c>
+
+00:10:07.350 --> 00:10:07.360 align:start position:0%
+a tree map so in that case you could
+ 
+
+00:10:07.360 --> 00:10:09.190 align:start position:0%
+a tree map so in that case you could
+search<00:10:07.600><c> for</c><00:10:07.760><c> the</c><00:10:07.839><c> minimum</c><00:10:08.320><c> value</c><00:10:08.720><c> or</c><00:10:08.959><c> any</c>
+
+00:10:09.190 --> 00:10:09.200 align:start position:0%
+search for the minimum value or any
+ 
+
+00:10:09.200 --> 00:10:10.949 align:start position:0%
+search for the minimum value or any
+particular<00:10:09.839><c> value</c><00:10:10.240><c> in</c><00:10:10.480><c> log</c>
+
+00:10:10.949 --> 00:10:10.959 align:start position:0%
+particular value in log
+ 
+
+00:10:10.959 --> 00:10:12.870 align:start position:0%
+particular value in log
+n<00:10:11.120><c> time</c><00:10:11.440><c> and</c><00:10:11.519><c> then</c><00:10:11.680><c> remove</c><00:10:12.079><c> it</c><00:10:12.240><c> with</c><00:10:12.480><c> a</c><00:10:12.560><c> tree</c>
+
+00:10:12.870 --> 00:10:12.880 align:start position:0%
+n time and then remove it with a tree
+ 
+
+00:10:12.880 --> 00:10:14.389 align:start position:0%
+n time and then remove it with a tree
+map<00:10:13.120><c> but</c><00:10:13.279><c> that's</c><00:10:13.600><c> actually</c><00:10:14.000><c> not</c>
+
+00:10:14.389 --> 00:10:14.399 align:start position:0%
+map but that's actually not
+ 
+
+00:10:14.399 --> 00:10:16.710 align:start position:0%
+map but that's actually not
+necessary<00:10:15.200><c> in</c><00:10:15.279><c> this</c><00:10:15.839><c> problem</c><00:10:16.240><c> let</c><00:10:16.399><c> me</c><00:10:16.560><c> show</c>
+
+00:10:16.710 --> 00:10:16.720 align:start position:0%
+necessary in this problem let me show
+ 
+
+00:10:16.720 --> 00:10:17.750 align:start position:0%
+necessary in this problem let me show
+you<00:10:16.959><c> why</c>
+
+00:10:17.750 --> 00:10:17.760 align:start position:0%
+you why
+ 
+
+00:10:17.760 --> 00:10:20.630 align:start position:0%
+you why
+basically<00:10:18.399><c> the</c><00:10:18.560><c> idea</c><00:10:19.200><c> is</c><00:10:19.519><c> if</c><00:10:19.680><c> we're</c><00:10:20.000><c> trying</c><00:10:20.320><c> to</c>
+
+00:10:20.630 --> 00:10:20.640 align:start position:0%
+basically the idea is if we're trying to
+ 
+
+00:10:20.640 --> 00:10:22.710 align:start position:0%
+basically the idea is if we're trying to
+pop<00:10:21.040><c> a</c><00:10:21.279><c> value</c><00:10:21.680><c> from</c><00:10:21.920><c> our</c><00:10:22.079><c> min</c><00:10:22.320><c> heap</c>
+
+00:10:22.710 --> 00:10:22.720 align:start position:0%
+pop a value from our min heap
+ 
+
+00:10:22.720 --> 00:10:25.269 align:start position:0%
+pop a value from our min heap
+that's<00:10:23.200><c> not</c><00:10:23.440><c> the</c><00:10:23.680><c> minimum</c><00:10:24.240><c> value</c><00:10:24.880><c> we've</c>
+
+00:10:25.269 --> 00:10:25.279 align:start position:0%
+that's not the minimum value we've
+ 
+
+00:10:25.279 --> 00:10:26.150 align:start position:0%
+that's not the minimum value we've
+already
+
+00:10:26.150 --> 00:10:26.160 align:start position:0%
+already
+ 
+
+00:10:26.160 --> 00:10:29.269 align:start position:0%
+already
+lost<00:10:26.800><c> we</c><00:10:27.120><c> already</c><00:10:28.079><c> cannot</c><00:10:28.640><c> break</c><00:10:28.959><c> this</c>
+
+00:10:29.269 --> 00:10:29.279 align:start position:0%
+lost we already cannot break this
+ 
+
+00:10:29.279 --> 00:10:31.910 align:start position:0%
+lost we already cannot break this
+up<00:10:29.519><c> into</c><00:10:29.760><c> group</c><00:10:30.079><c> sizes</c><00:10:31.040><c> and</c><00:10:31.200><c> in</c><00:10:31.279><c> that</c><00:10:31.440><c> case</c><00:10:31.760><c> we</c>
+
+00:10:31.910 --> 00:10:31.920 align:start position:0%
+up into group sizes and in that case we
+ 
+
+00:10:31.920 --> 00:10:32.710 align:start position:0%
+up into group sizes and in that case we
+would<00:10:32.079><c> return</c>
+
+00:10:32.710 --> 00:10:32.720 align:start position:0%
+would return
+ 
+
+00:10:32.720 --> 00:10:35.269 align:start position:0%
+would return
+false<00:10:33.200><c> now</c><00:10:33.440><c> that's</c><00:10:33.760><c> not</c><00:10:34.320><c> super</c><00:10:34.720><c> intuitive</c>
+
+00:10:35.269 --> 00:10:35.279 align:start position:0%
+false now that's not super intuitive
+ 
+
+00:10:35.279 --> 00:10:36.710 align:start position:0%
+false now that's not super intuitive
+until<00:10:35.519><c> you</c><00:10:35.760><c> actually</c><00:10:36.079><c> run</c><00:10:36.320><c> through</c><00:10:36.560><c> the</c>
+
+00:10:36.710 --> 00:10:36.720 align:start position:0%
+until you actually run through the
+ 
+
+00:10:36.720 --> 00:10:37.350 align:start position:0%
+until you actually run through the
+example
+
+00:10:37.350 --> 00:10:37.360 align:start position:0%
+example
+ 
+
+00:10:37.360 --> 00:10:39.190 align:start position:0%
+example
+take<00:10:37.600><c> a</c><00:10:37.839><c> look</c><00:10:38.000><c> what</c><00:10:38.160><c> we're</c><00:10:38.480><c> doing</c><00:10:38.800><c> here</c>
+
+00:10:39.190 --> 00:10:39.200 align:start position:0%
+take a look what we're doing here
+ 
+
+00:10:39.200 --> 00:10:40.389 align:start position:0%
+take a look what we're doing here
+remember<00:10:39.920><c> how</c>
+
+00:10:40.389 --> 00:10:40.399 align:start position:0%
+remember how
+ 
+
+00:10:40.399 --> 00:10:43.350 align:start position:0%
+remember how
+one<00:10:40.959><c> is</c><00:10:41.120><c> the</c><00:10:41.360><c> minimum</c><00:10:41.760><c> value</c><00:10:42.320><c> available</c><00:10:42.880><c> to</c><00:10:43.040><c> us</c>
+
+00:10:43.350 --> 00:10:43.360 align:start position:0%
+one is the minimum value available to us
+ 
+
+00:10:43.360 --> 00:10:43.750 align:start position:0%
+one is the minimum value available to us
+right
+
+00:10:43.750 --> 00:10:43.760 align:start position:0%
+right
+ 
+
+00:10:43.760 --> 00:10:46.470 align:start position:0%
+right
+and<00:10:44.399><c> one</c><00:10:44.959><c> since</c><00:10:45.200><c> one</c><00:10:45.440><c> is</c><00:10:45.519><c> the</c><00:10:45.760><c> minimum</c><00:10:46.160><c> value</c>
+
+00:10:46.470 --> 00:10:46.480 align:start position:0%
+and one since one is the minimum value
+ 
+
+00:10:46.480 --> 00:10:48.630 align:start position:0%
+and one since one is the minimum value
+it<00:10:46.560><c> could</c><00:10:46.800><c> only</c><00:10:47.200><c> belong</c><00:10:47.680><c> to</c><00:10:47.839><c> a</c><00:10:48.000><c> group</c><00:10:48.399><c> that</c>
+
+00:10:48.630 --> 00:10:48.640 align:start position:0%
+it could only belong to a group that
+ 
+
+00:10:48.640 --> 00:10:49.269 align:start position:0%
+it could only belong to a group that
+looked<00:10:48.880><c> like</c>
+
+00:10:49.269 --> 00:10:49.279 align:start position:0%
+looked like
+ 
+
+00:10:49.279 --> 00:10:52.389 align:start position:0%
+looked like
+this<00:10:49.600><c> right</c><00:10:50.000><c> so</c><00:10:50.320><c> if</c><00:10:50.560><c> we're</c><00:10:50.959><c> popping</c><00:10:51.440><c> a</c><00:10:51.680><c> value</c>
+
+00:10:52.389 --> 00:10:52.399 align:start position:0%
+this right so if we're popping a value
+ 
+
+00:10:52.399 --> 00:10:55.509 align:start position:0%
+this right so if we're popping a value
+such<00:10:52.720><c> as</c><00:10:53.120><c> two</c><00:10:53.600><c> or</c><00:10:53.839><c> even</c><00:10:54.480><c> three</c>
+
+00:10:55.509 --> 00:10:55.519 align:start position:0%
+such as two or even three
+ 
+
+00:10:55.519 --> 00:10:57.430 align:start position:0%
+such as two or even three
+and<00:10:55.680><c> these</c><00:10:55.920><c> values</c><00:10:56.320><c> are</c><00:10:56.640><c> not</c><00:10:56.880><c> the</c><00:10:57.040><c> minimum</c>
+
+00:10:57.430 --> 00:10:57.440 align:start position:0%
+and these values are not the minimum
+ 
+
+00:10:57.440 --> 00:11:00.310 align:start position:0%
+and these values are not the minimum
+values<00:10:58.000><c> we're</c><00:10:58.320><c> basically</c><00:10:58.880><c> creating</c><00:10:59.519><c> a</c><00:10:59.760><c> hole</c>
+
+00:11:00.310 --> 00:11:00.320 align:start position:0%
+values we're basically creating a hole
+ 
+
+00:11:00.320 --> 00:11:03.829 align:start position:0%
+values we're basically creating a hole
+in<00:11:00.640><c> our</c><00:11:01.680><c> in</c><00:11:01.839><c> our</c><00:11:02.079><c> values</c><00:11:02.800><c> right</c><00:11:03.200><c> so</c><00:11:03.440><c> in</c><00:11:03.600><c> this</c>
+
+00:11:03.829 --> 00:11:03.839 align:start position:0%
+in our in our values right so in this
+ 
+
+00:11:03.839 --> 00:11:04.150 align:start position:0%
+in our in our values right so in this
+case
+
+00:11:04.150 --> 00:11:04.160 align:start position:0%
+case
+ 
+
+00:11:04.160 --> 00:11:07.030 align:start position:0%
+case
+okay<00:11:04.800><c> two</c><00:11:05.200><c> it's</c><00:11:05.519><c> it's</c><00:11:05.839><c> true</c><00:11:06.079><c> that</c><00:11:06.480><c> two</c><00:11:06.959><c> is</c>
+
+00:11:07.030 --> 00:11:07.040 align:start position:0%
+okay two it's it's true that two is
+ 
+
+00:11:07.040 --> 00:11:08.470 align:start position:0%
+okay two it's it's true that two is
+available<00:11:07.519><c> to</c><00:11:07.760><c> us</c><00:11:08.000><c> and</c>
+
+00:11:08.470 --> 00:11:08.480 align:start position:0%
+available to us and
+ 
+
+00:11:08.480 --> 00:11:10.790 align:start position:0%
+available to us and
+three<00:11:08.959><c> is</c><00:11:09.120><c> also</c><00:11:09.440><c> available</c><00:11:09.920><c> to</c><00:11:10.079><c> us</c><00:11:10.320><c> right</c><00:11:10.640><c> so</c>
+
+00:11:10.790 --> 00:11:10.800 align:start position:0%
+three is also available to us right so
+ 
+
+00:11:10.800 --> 00:11:12.389 align:start position:0%
+three is also available to us right so
+we<00:11:10.959><c> would</c><00:11:11.120><c> decrement</c><00:11:11.519><c> the</c><00:11:11.680><c> count</c><00:11:11.920><c> of</c><00:11:12.079><c> three</c>
+
+00:11:12.389 --> 00:11:12.399 align:start position:0%
+we would decrement the count of three
+ 
+
+00:11:12.399 --> 00:11:13.350 align:start position:0%
+we would decrement the count of three
+down<00:11:12.640><c> to</c><00:11:12.959><c> one</c>
+
+00:11:13.350 --> 00:11:13.360 align:start position:0%
+down to one
+ 
+
+00:11:13.360 --> 00:11:15.430 align:start position:0%
+down to one
+so<00:11:13.519><c> we</c><00:11:13.600><c> could</c><00:11:13.839><c> create</c><00:11:14.240><c> one</c><00:11:14.560><c> group</c><00:11:14.880><c> but</c><00:11:15.040><c> when</c><00:11:15.279><c> we</c>
+
+00:11:15.430 --> 00:11:15.440 align:start position:0%
+so we could create one group but when we
+ 
+
+00:11:15.440 --> 00:11:17.750 align:start position:0%
+so we could create one group but when we
+try<00:11:15.680><c> to</c><00:11:15.839><c> create</c><00:11:16.160><c> the</c><00:11:16.560><c> next</c><00:11:16.959><c> group</c><00:11:17.279><c> now</c>
+
+00:11:17.750 --> 00:11:17.760 align:start position:0%
+try to create the next group now
+ 
+
+00:11:17.760 --> 00:11:19.750 align:start position:0%
+try to create the next group now
+we're<00:11:17.920><c> gonna</c><00:11:18.079><c> get</c><00:11:18.240><c> to</c><00:11:18.480><c> a</c><00:11:18.640><c> one</c><00:11:19.200><c> right</c><00:11:19.519><c> and</c><00:11:19.600><c> then</c>
+
+00:11:19.750 --> 00:11:19.760 align:start position:0%
+we're gonna get to a one right and then
+ 
+
+00:11:19.760 --> 00:11:21.350 align:start position:0%
+we're gonna get to a one right and then
+we're<00:11:19.920><c> gonna</c><00:11:20.079><c> look</c><00:11:20.240><c> for</c><00:11:20.399><c> a</c><00:11:20.640><c> two</c><00:11:20.959><c> but</c><00:11:21.120><c> we're</c>
+
+00:11:21.350 --> 00:11:21.360 align:start position:0%
+we're gonna look for a two but we're
+ 
+
+00:11:21.360 --> 00:11:22.150 align:start position:0%
+we're gonna look for a two but we're
+gonna<00:11:21.600><c> see</c>
+
+00:11:22.150 --> 00:11:22.160 align:start position:0%
+gonna see
+ 
+
+00:11:22.160 --> 00:11:25.030 align:start position:0%
+gonna see
+that<00:11:22.480><c> two</c><00:11:22.800><c> has</c><00:11:23.040><c> a</c><00:11:23.279><c> count</c><00:11:23.600><c> of</c><00:11:24.000><c> zero</c><00:11:24.640><c> basically</c>
+
+00:11:25.030 --> 00:11:25.040 align:start position:0%
+that two has a count of zero basically
+ 
+
+00:11:25.040 --> 00:11:27.030 align:start position:0%
+that two has a count of zero basically
+we<00:11:25.200><c> were</c><00:11:25.440><c> trying</c><00:11:25.680><c> to</c><00:11:25.920><c> pop</c><00:11:26.240><c> a</c><00:11:26.399><c> value</c>
+
+00:11:27.030 --> 00:11:27.040 align:start position:0%
+we were trying to pop a value
+ 
+
+00:11:27.040 --> 00:11:30.230 align:start position:0%
+we were trying to pop a value
+that<00:11:27.200><c> was</c><00:11:27.440><c> in</c><00:11:27.600><c> the</c><00:11:27.920><c> middle</c><00:11:28.560><c> of</c><00:11:28.880><c> our</c><00:11:29.200><c> group</c><00:11:30.000><c> so</c>
+
+00:11:30.230 --> 00:11:30.240 align:start position:0%
+that was in the middle of our group so
+ 
+
+00:11:30.240 --> 00:11:32.550 align:start position:0%
+that was in the middle of our group so
+we<00:11:30.480><c> can't</c><00:11:30.880><c> create</c><00:11:31.440><c> another</c><00:11:31.920><c> group</c>
+
+00:11:32.550 --> 00:11:32.560 align:start position:0%
+we can't create another group
+ 
+
+00:11:32.560 --> 00:11:34.550 align:start position:0%
+we can't create another group
+because<00:11:32.800><c> we're</c><00:11:33.040><c> missing</c><00:11:33.440><c> that</c><00:11:33.680><c> two</c><00:11:34.000><c> value</c><00:11:34.320><c> so</c>
+
+00:11:34.550 --> 00:11:34.560 align:start position:0%
+because we're missing that two value so
+ 
+
+00:11:34.560 --> 00:11:35.829 align:start position:0%
+because we're missing that two value so
+if<00:11:34.959><c> basically</c><00:11:35.360><c> if</c><00:11:35.519><c> we</c>
+
+00:11:35.829 --> 00:11:35.839 align:start position:0%
+if basically if we
+ 
+
+00:11:35.839 --> 00:11:38.470 align:start position:0%
+if basically if we
+ever<00:11:36.160><c> try</c><00:11:36.399><c> to</c><00:11:36.640><c> pop</c><00:11:36.959><c> a</c><00:11:37.120><c> value</c><00:11:37.680><c> from</c><00:11:38.000><c> our</c><00:11:38.240><c> min</c>
+
+00:11:38.470 --> 00:11:38.480 align:start position:0%
+ever try to pop a value from our min
+ 
+
+00:11:38.480 --> 00:11:38.949 align:start position:0%
+ever try to pop a value from our min
+heap
+
+00:11:38.949 --> 00:11:38.959 align:start position:0%
+heap
+ 
+
+00:11:38.959 --> 00:11:42.150 align:start position:0%
+heap
+that's<00:11:39.360><c> not</c><00:11:39.680><c> the</c><00:11:39.920><c> minimum</c><00:11:40.480><c> value</c><00:11:41.600><c> that</c><00:11:41.839><c> means</c>
+
+00:11:42.150 --> 00:11:42.160 align:start position:0%
+that's not the minimum value that means
+ 
+
+00:11:42.160 --> 00:11:43.190 align:start position:0%
+that's not the minimum value that means
+we<00:11:42.320><c> have</c><00:11:42.480><c> to</c><00:11:42.640><c> return</c>
+
+00:11:43.190 --> 00:11:43.200 align:start position:0%
+we have to return
+ 
+
+00:11:43.200 --> 00:11:46.310 align:start position:0%
+we have to return
+false<00:11:43.839><c> because</c><00:11:44.399><c> we</c><00:11:44.640><c> have</c><00:11:44.880><c> a</c><00:11:44.959><c> value</c><00:11:45.760><c> less</c><00:11:46.079><c> than</c>
+
+00:11:46.310 --> 00:11:46.320 align:start position:0%
+false because we have a value less than
+ 
+
+00:11:46.320 --> 00:11:48.630 align:start position:0%
+false because we have a value less than
+it<00:11:46.480><c> that's</c><00:11:46.720><c> available</c><00:11:47.120><c> to</c><00:11:47.279><c> us</c><00:11:47.519><c> like</c><00:11:47.760><c> 1</c><00:11:48.160><c> but</c><00:11:48.399><c> we</c>
+
+00:11:48.630 --> 00:11:48.640 align:start position:0%
+it that's available to us like 1 but we
+ 
+
+00:11:48.640 --> 00:11:49.750 align:start position:0%
+it that's available to us like 1 but we
+don't<00:11:48.880><c> have</c><00:11:49.120><c> that</c><00:11:49.440><c> 2</c>
+
+00:11:49.750 --> 00:11:49.760 align:start position:0%
+don't have that 2
+ 
+
+00:11:49.760 --> 00:11:52.470 align:start position:0%
+don't have that 2
+value<00:11:50.320><c> so</c><00:11:50.880><c> we'll</c><00:11:51.120><c> never</c><00:11:51.360><c> be</c><00:11:51.519><c> able</c><00:11:51.680><c> to</c><00:11:51.920><c> complete</c>
+
+00:11:52.470 --> 00:11:52.480 align:start position:0%
+value so we'll never be able to complete
+ 
+
+00:11:52.480 --> 00:11:53.269 align:start position:0%
+value so we'll never be able to complete
+a<00:11:52.720><c> group</c>
+
+00:11:53.269 --> 00:11:53.279 align:start position:0%
+a group
+ 
+
+00:11:53.279 --> 00:11:56.150 align:start position:0%
+a group
+with<00:11:53.839><c> this</c><00:11:54.160><c> one</c><00:11:54.399><c> value</c><00:11:54.880><c> again</c><00:11:55.360><c> so</c><00:11:55.760><c> you</c><00:11:55.920><c> know</c><00:11:56.000><c> we</c>
+
+00:11:56.150 --> 00:11:56.160 align:start position:0%
+with this one value again so you know we
+ 
+
+00:11:56.160 --> 00:11:57.829 align:start position:0%
+with this one value again so you know we
+just<00:11:56.320><c> have</c><00:11:56.480><c> to</c><00:11:56.639><c> return</c><00:11:57.040><c> false</c><00:11:57.440><c> then</c>
+
+00:11:57.829 --> 00:11:57.839 align:start position:0%
+just have to return false then
+ 
+
+00:11:57.839 --> 00:12:00.310 align:start position:0%
+just have to return false then
+so<00:11:58.000><c> i</c><00:11:58.079><c> think</c><00:11:58.320><c> that's</c><00:11:59.120><c> how</c><00:11:59.440><c> we</c><00:11:59.600><c> would</c><00:11:59.839><c> solve</c><00:12:00.160><c> the</c>
+
+00:12:00.310 --> 00:12:00.320 align:start position:0%
+so i think that's how we would solve the
+ 
+
+00:12:00.320 --> 00:12:01.590 align:start position:0%
+so i think that's how we would solve the
+problem<00:12:00.720><c> with</c><00:12:00.880><c> a</c><00:12:00.959><c> min</c><00:12:01.200><c> heap</c>
+
+00:12:01.590 --> 00:12:01.600 align:start position:0%
+problem with a min heap
+ 
+
+00:12:01.600 --> 00:12:03.509 align:start position:0%
+problem with a min heap
+like<00:12:01.839><c> i</c><00:12:01.920><c> said</c><00:12:02.079><c> it's</c><00:12:02.320><c> not</c><00:12:02.560><c> actually</c><00:12:02.959><c> necessary</c>
+
+00:12:03.509 --> 00:12:03.519 align:start position:0%
+like i said it's not actually necessary
+ 
+
+00:12:03.519 --> 00:12:05.350 align:start position:0%
+like i said it's not actually necessary
+you<00:12:03.680><c> could</c><00:12:03.920><c> use</c><00:12:04.079><c> a</c><00:12:04.240><c> tree</c><00:12:04.560><c> map</c><00:12:04.880><c> if</c><00:12:04.959><c> you</c><00:12:05.040><c> wanted</c>
+
+00:12:05.350 --> 00:12:05.360 align:start position:0%
+you could use a tree map if you wanted
+ 
+
+00:12:05.360 --> 00:12:06.150 align:start position:0%
+you could use a tree map if you wanted
+and<00:12:05.440><c> you</c><00:12:05.600><c> could</c><00:12:05.760><c> actually</c>
+
+00:12:06.150 --> 00:12:06.160 align:start position:0%
+and you could actually
+ 
+
+00:12:06.160 --> 00:12:08.629 align:start position:0%
+and you could actually
+not<00:12:06.399><c> use</c><00:12:07.040><c> a</c><00:12:07.200><c> data</c><00:12:07.519><c> an</c><00:12:07.680><c> extra</c><00:12:08.000><c> data</c><00:12:08.240><c> structure</c>
+
+00:12:08.629 --> 00:12:08.639 align:start position:0%
+not use a data an extra data structure
+ 
+
+00:12:08.639 --> 00:12:10.389 align:start position:0%
+not use a data an extra data structure
+at<00:12:08.800><c> all</c><00:12:09.040><c> you</c><00:12:09.279><c> could</c><00:12:09.519><c> just</c><00:12:09.839><c> use</c>
+
+00:12:10.389 --> 00:12:10.399 align:start position:0%
+at all you could just use
+ 
+
+00:12:10.399 --> 00:12:12.949 align:start position:0%
+at all you could just use
+i<00:12:10.560><c> think</c><00:12:10.800><c> a</c><00:12:10.880><c> sorted</c><00:12:11.440><c> input</c><00:12:11.760><c> array</c><00:12:12.399><c> but</c><00:12:12.720><c> i'm</c>
+
+00:12:12.949 --> 00:12:12.959 align:start position:0%
+i think a sorted input array but i'm
+ 
+
+00:12:12.959 --> 00:12:14.949 align:start position:0%
+i think a sorted input array but i'm
+going<00:12:13.200><c> to</c><00:12:13.360><c> be</c><00:12:13.519><c> doing</c><00:12:13.839><c> it</c><00:12:14.000><c> with</c><00:12:14.240><c> a</c><00:12:14.399><c> min</c><00:12:14.720><c> heap</c>
+
+00:12:14.949 --> 00:12:14.959 align:start position:0%
+going to be doing it with a min heap
+ 
+
+00:12:14.959 --> 00:12:16.150 align:start position:0%
+going to be doing it with a min heap
+because<00:12:15.200><c> i</c><00:12:15.360><c> like</c><00:12:15.680><c> the</c>
+
+00:12:16.150 --> 00:12:16.160 align:start position:0%
+because i like the
+ 
+
+00:12:16.160 --> 00:12:18.389 align:start position:0%
+because i like the
+way<00:12:16.399><c> the</c><00:12:16.560><c> code</c><00:12:16.880><c> works</c><00:12:17.200><c> out</c><00:12:17.440><c> in</c><00:12:17.519><c> that</c><00:12:17.760><c> case</c><00:12:18.240><c> so</c>
+
+00:12:18.389 --> 00:12:18.399 align:start position:0%
+way the code works out in that case so
+ 
+
+00:12:18.399 --> 00:12:19.829 align:start position:0%
+way the code works out in that case so
+as<00:12:18.639><c> i</c><00:12:18.720><c> mentioned</c><00:12:19.040><c> the</c><00:12:19.120><c> first</c><00:12:19.360><c> thing</c><00:12:19.519><c> we</c><00:12:19.680><c> do</c>
+
+00:12:19.829 --> 00:12:19.839 align:start position:0%
+as i mentioned the first thing we do
+ 
+
+00:12:19.839 --> 00:12:20.470 align:start position:0%
+as i mentioned the first thing we do
+want<00:12:20.000><c> to</c><00:12:20.160><c> check</c>
+
+00:12:20.470 --> 00:12:20.480 align:start position:0%
+want to check
+ 
+
+00:12:20.480 --> 00:12:22.710 align:start position:0%
+want to check
+is<00:12:20.639><c> that</c><00:12:20.800><c> the</c><00:12:21.040><c> length</c><00:12:21.360><c> of</c><00:12:21.519><c> hand</c><00:12:21.920><c> itself</c><00:12:22.480><c> is</c>
+
+00:12:22.710 --> 00:12:22.720 align:start position:0%
+is that the length of hand itself is
+ 
+
+00:12:22.720 --> 00:12:24.389 align:start position:0%
+is that the length of hand itself is
+actually<00:12:23.040><c> divisible</c><00:12:23.680><c> by</c>
+
+00:12:24.389 --> 00:12:24.399 align:start position:0%
+actually divisible by
+ 
+
+00:12:24.399 --> 00:12:26.790 align:start position:0%
+actually divisible by
+the<00:12:24.639><c> group</c><00:12:25.040><c> size</c><00:12:25.839><c> if</c><00:12:26.000><c> it's</c><00:12:26.160><c> not</c><00:12:26.399><c> then</c><00:12:26.639><c> of</c>
+
+00:12:26.790 --> 00:12:26.800 align:start position:0%
+the group size if it's not then of
+ 
+
+00:12:26.800 --> 00:12:28.870 align:start position:0%
+the group size if it's not then of
+course<00:12:27.279><c> we</c><00:12:27.440><c> won't</c><00:12:27.680><c> be</c><00:12:27.760><c> able</c><00:12:27.920><c> to</c><00:12:28.079><c> break</c><00:12:28.399><c> this</c>
+
+00:12:28.870 --> 00:12:28.880 align:start position:0%
+course we won't be able to break this
+ 
+
+00:12:28.880 --> 00:12:31.190 align:start position:0%
+course we won't be able to break this
+down<00:12:29.200><c> so</c><00:12:29.360><c> we'll</c><00:12:29.519><c> have</c><00:12:29.600><c> to</c><00:12:29.760><c> return</c><00:12:30.160><c> false</c><00:12:31.040><c> and</c>
+
+00:12:31.190 --> 00:12:31.200 align:start position:0%
+down so we'll have to return false and
+ 
+
+00:12:31.200 --> 00:12:33.670 align:start position:0%
+down so we'll have to return false and
+also<00:12:31.440><c> we</c><00:12:31.600><c> do</c><00:12:31.839><c> want</c><00:12:32.000><c> to</c><00:12:32.160><c> create</c><00:12:32.639><c> a</c><00:12:32.880><c> hashmap</c>
+
+00:12:33.670 --> 00:12:33.680 align:start position:0%
+also we do want to create a hashmap
+ 
+
+00:12:33.680 --> 00:12:35.430 align:start position:0%
+also we do want to create a hashmap
+uh<00:12:34.079><c> counting</c><00:12:34.480><c> the</c><00:12:34.639><c> occurrences</c><00:12:35.200><c> of</c><00:12:35.279><c> each</c>
+
+00:12:35.430 --> 00:12:35.440 align:start position:0%
+uh counting the occurrences of each
+ 
+
+00:12:35.440 --> 00:12:37.269 align:start position:0%
+uh counting the occurrences of each
+value<00:12:35.839><c> now</c><00:12:36.000><c> i</c><00:12:36.079><c> could</c><00:12:36.240><c> just</c><00:12:36.399><c> use</c><00:12:36.639><c> a</c><00:12:36.720><c> counter</c><00:12:37.120><c> in</c>
+
+00:12:37.269 --> 00:12:37.279 align:start position:0%
+value now i could just use a counter in
+ 
+
+00:12:37.279 --> 00:12:39.030 align:start position:0%
+value now i could just use a counter in
+python<00:12:37.680><c> but</c><00:12:37.839><c> i</c><00:12:37.920><c> usually</c><00:12:38.240><c> like</c><00:12:38.480><c> to</c><00:12:38.639><c> write</c><00:12:38.880><c> it</c>
+
+00:12:39.030 --> 00:12:39.040 align:start position:0%
+python but i usually like to write it
+ 
+
+00:12:39.040 --> 00:12:41.030 align:start position:0%
+python but i usually like to write it
+out<00:12:39.200><c> just</c><00:12:39.360><c> in</c><00:12:39.519><c> case</c><00:12:39.839><c> the</c><00:12:40.079><c> interviewer</c><00:12:40.720><c> wants</c>
+
+00:12:41.030 --> 00:12:41.040 align:start position:0%
+out just in case the interviewer wants
+ 
+
+00:12:41.040 --> 00:12:41.430 align:start position:0%
+out just in case the interviewer wants
+that
+
+00:12:41.430 --> 00:12:41.440 align:start position:0%
+that
+ 
+
+00:12:41.440 --> 00:12:44.710 align:start position:0%
+that
+so<00:12:41.680><c> for</c><00:12:41.839><c> every</c><00:12:42.079><c> value</c><00:12:42.639><c> in</c><00:12:43.040><c> our</c><00:12:43.440><c> hand</c><00:12:44.240><c> i'm</c><00:12:44.480><c> going</c>
+
+00:12:44.710 --> 00:12:44.720 align:start position:0%
+so for every value in our hand i'm going
+ 
+
+00:12:44.720 --> 00:12:45.269 align:start position:0%
+so for every value in our hand i'm going
+to<00:12:44.959><c> just</c>
+
+00:12:45.269 --> 00:12:45.279 align:start position:0%
+to just
+ 
+
+00:12:45.279 --> 00:12:47.750 align:start position:0%
+to just
+increment<00:12:45.760><c> the</c><00:12:46.000><c> count</c><00:12:46.399><c> of</c><00:12:46.639><c> n</c><00:12:46.959><c> so</c><00:12:47.279><c> basically</c>
+
+00:12:47.750 --> 00:12:47.760 align:start position:0%
+increment the count of n so basically
+ 
+
+00:12:47.760 --> 00:12:51.030 align:start position:0%
+increment the count of n so basically
+one<00:12:48.240><c> plus</c><00:12:48.639><c> whatever</c><00:12:49.200><c> it</c><00:12:49.360><c> was</c><00:12:49.680><c> previously</c>
+
+00:12:51.030 --> 00:12:51.040 align:start position:0%
+one plus whatever it was previously
+ 
+
+00:12:51.040 --> 00:12:52.949 align:start position:0%
+one plus whatever it was previously
+and<00:12:51.200><c> if</c><00:12:51.360><c> it</c><00:12:51.440><c> does</c><00:12:51.600><c> not</c><00:12:51.920><c> exist</c><00:12:52.399><c> in</c><00:12:52.560><c> our</c><00:12:52.720><c> map</c>
+
+00:12:52.949 --> 00:12:52.959 align:start position:0%
+and if it does not exist in our map
+ 
+
+00:12:52.959 --> 00:12:54.790 align:start position:0%
+and if it does not exist in our map
+we're<00:12:53.120><c> going</c><00:12:53.200><c> to</c><00:12:53.279><c> return</c><00:12:53.600><c> a</c><00:12:53.680><c> default</c><00:12:54.160><c> value</c><00:12:54.560><c> of</c>
+
+00:12:54.790 --> 00:12:54.800 align:start position:0%
+we're going to return a default value of
+ 
+
+00:12:54.800 --> 00:12:55.590 align:start position:0%
+we're going to return a default value of
+zero
+
+00:12:55.590 --> 00:12:55.600 align:start position:0%
+zero
+ 
+
+00:12:55.600 --> 00:12:57.750 align:start position:0%
+zero
+we're<00:12:55.839><c> also</c><00:12:56.079><c> going</c><00:12:56.240><c> to</c><00:12:56.320><c> be</c><00:12:56.399><c> using</c><00:12:56.800><c> a</c><00:12:56.959><c> min</c><00:12:57.279><c> heap</c>
+
+00:12:57.750 --> 00:12:57.760 align:start position:0%
+we're also going to be using a min heap
+ 
+
+00:12:57.760 --> 00:12:58.949 align:start position:0%
+we're also going to be using a min heap
+so
+
+00:12:58.949 --> 00:12:58.959 align:start position:0%
+so
+ 
+
+00:12:58.959 --> 00:13:01.430 align:start position:0%
+so
+we<00:12:59.200><c> want</c><00:12:59.519><c> only</c><00:12:59.839><c> the</c><00:13:00.000><c> distinct</c><00:13:00.720><c> values</c><00:13:01.279><c> that</c>
+
+00:13:01.430 --> 00:13:01.440 align:start position:0%
+we want only the distinct values that
+ 
+
+00:13:01.440 --> 00:13:03.670 align:start position:0%
+we want only the distinct values that
+are<00:13:01.600><c> available</c><00:13:02.000><c> to</c><00:13:02.160><c> us</c><00:13:02.399><c> so</c><00:13:02.560><c> what</c><00:13:02.800><c> we</c><00:13:02.959><c> can</c><00:13:03.120><c> do</c><00:13:03.360><c> is</c>
+
+00:13:03.670 --> 00:13:03.680 align:start position:0%
+are available to us so what we can do is
+ 
+
+00:13:03.680 --> 00:13:04.150 align:start position:0%
+are available to us so what we can do is
+take
+
+00:13:04.150 --> 00:13:04.160 align:start position:0%
+take
+ 
+
+00:13:04.160 --> 00:13:06.790 align:start position:0%
+take
+count<00:13:04.560><c> dot</c><00:13:05.120><c> keys</c><00:13:05.600><c> which</c><00:13:05.839><c> is</c><00:13:06.399><c> going</c><00:13:06.480><c> to</c><00:13:06.560><c> be</c>
+
+00:13:06.790 --> 00:13:06.800 align:start position:0%
+count dot keys which is going to be
+ 
+
+00:13:06.800 --> 00:13:07.990 align:start position:0%
+count dot keys which is going to be
+distinct<00:13:07.279><c> values</c>
+
+00:13:07.990 --> 00:13:08.000 align:start position:0%
+distinct values
+ 
+
+00:13:08.000 --> 00:13:11.750 align:start position:0%
+distinct values
+convert<00:13:08.480><c> that</c><00:13:08.720><c> into</c><00:13:09.200><c> a</c><00:13:09.519><c> list</c><00:13:10.639><c> which</c><00:13:10.959><c> is</c><00:13:11.120><c> what</c>
+
+00:13:11.750 --> 00:13:11.760 align:start position:0%
+convert that into a list which is what
+ 
+
+00:13:11.760 --> 00:13:14.310 align:start position:0%
+convert that into a list which is what
+min<00:13:12.000><c> heaps</c><00:13:12.560><c> are</c><00:13:12.880><c> implemented</c><00:13:13.440><c> as</c><00:13:13.680><c> in</c><00:13:13.920><c> python</c>
+
+00:13:14.310 --> 00:13:14.320 align:start position:0%
+min heaps are implemented as in python
+ 
+
+00:13:14.320 --> 00:13:16.870 align:start position:0%
+min heaps are implemented as in python
+but<00:13:14.480><c> we</c><00:13:14.639><c> actually</c><00:13:14.880><c> do</c><00:13:15.120><c> have</c><00:13:15.200><c> to</c><00:13:15.360><c> heapify</c><00:13:16.000><c> it</c><00:13:16.160><c> so</c>
+
+00:13:16.870 --> 00:13:16.880 align:start position:0%
+but we actually do have to heapify it so
+ 
+
+00:13:16.880 --> 00:13:18.870 align:start position:0%
+but we actually do have to heapify it so
+we're<00:13:17.040><c> going</c><00:13:17.200><c> to</c><00:13:17.360><c> do</c><00:13:17.600><c> heapify</c><00:13:18.399><c> this</c><00:13:18.639><c> is</c><00:13:18.720><c> a</c>
+
+00:13:18.870 --> 00:13:18.880 align:start position:0%
+we're going to do heapify this is a
+ 
+
+00:13:18.880 --> 00:13:20.870 align:start position:0%
+we're going to do heapify this is a
+linear<00:13:19.360><c> algorithm</c><00:13:19.920><c> it</c><00:13:20.000><c> just</c><00:13:20.160><c> takes</c><00:13:20.480><c> an</c><00:13:20.639><c> input</c>
+
+00:13:20.870 --> 00:13:20.880 align:start position:0%
+linear algorithm it just takes an input
+ 
+
+00:13:20.880 --> 00:13:21.430 align:start position:0%
+linear algorithm it just takes an input
+array<00:13:21.200><c> and</c>
+
+00:13:21.430 --> 00:13:21.440 align:start position:0%
+array and
+ 
+
+00:13:21.440 --> 00:13:24.069 align:start position:0%
+array and
+transforms<00:13:22.079><c> it</c><00:13:22.240><c> into</c><00:13:22.639><c> a</c><00:13:22.880><c> min</c><00:13:23.120><c> heap</c><00:13:23.760><c> now</c><00:13:23.920><c> we're</c>
+
+00:13:24.069 --> 00:13:24.079 align:start position:0%
+transforms it into a min heap now we're
+ 
+
+00:13:24.079 --> 00:13:25.430 align:start position:0%
+transforms it into a min heap now we're
+basically<00:13:24.480><c> going</c><00:13:24.639><c> to</c><00:13:24.720><c> continue</c>
+
+00:13:25.430 --> 00:13:25.440 align:start position:0%
+basically going to continue
+ 
+
+00:13:25.440 --> 00:13:27.990 align:start position:0%
+basically going to continue
+until<00:13:25.920><c> our</c><00:13:26.160><c> min</c><00:13:26.480><c> heap</c><00:13:26.800><c> is</c><00:13:27.120><c> empty</c><00:13:27.440><c> so</c><00:13:27.600><c> while</c><00:13:27.839><c> min</c>
+
+00:13:27.990 --> 00:13:28.000 align:start position:0%
+until our min heap is empty so while min
+ 
+
+00:13:28.000 --> 00:13:29.350 align:start position:0%
+until our min heap is empty so while min
+heap<00:13:28.240><c> is</c><00:13:28.320><c> not</c><00:13:28.480><c> empty</c><00:13:28.720><c> we're</c><00:13:28.880><c> going</c><00:13:28.959><c> to</c><00:13:29.040><c> get</c><00:13:29.200><c> the</c>
+
+00:13:29.350 --> 00:13:29.360 align:start position:0%
+heap is not empty we're going to get the
+ 
+
+00:13:29.360 --> 00:13:30.629 align:start position:0%
+heap is not empty we're going to get the
+minimum<00:13:29.839><c> value</c>
+
+00:13:30.629 --> 00:13:30.639 align:start position:0%
+minimum value
+ 
+
+00:13:30.639 --> 00:13:32.310 align:start position:0%
+minimum value
+so<00:13:30.800><c> we</c><00:13:30.959><c> can</c><00:13:31.040><c> get</c><00:13:31.200><c> the</c><00:13:31.279><c> minimum</c><00:13:31.680><c> value</c><00:13:32.000><c> from</c><00:13:32.240><c> a</c>
+
+00:13:32.310 --> 00:13:32.320 align:start position:0%
+so we can get the minimum value from a
+ 
+
+00:13:32.320 --> 00:13:33.829 align:start position:0%
+so we can get the minimum value from a
+min<00:13:32.560><c> heap</c><00:13:32.800><c> just</c><00:13:33.120><c> at</c><00:13:33.360><c> index</c>
+
+00:13:33.829 --> 00:13:33.839 align:start position:0%
+min heap just at index
+ 
+
+00:13:33.839 --> 00:13:36.150 align:start position:0%
+min heap just at index
+zero<00:13:34.160><c> so</c><00:13:34.320><c> min</c><00:13:34.560><c> heap</c><00:13:34.800><c> at</c><00:13:34.959><c> index</c><00:13:35.279><c> zero</c><00:13:35.760><c> is</c><00:13:35.920><c> going</c>
+
+00:13:36.150 --> 00:13:36.160 align:start position:0%
+zero so min heap at index zero is going
+ 
+
+00:13:36.160 --> 00:13:38.069 align:start position:0%
+zero so min heap at index zero is going
+to<00:13:36.399><c> give</c><00:13:36.639><c> us</c><00:13:36.800><c> the</c><00:13:36.959><c> minimum</c><00:13:37.360><c> value</c>
+
+00:13:38.069 --> 00:13:38.079 align:start position:0%
+to give us the minimum value
+ 
+
+00:13:38.079 --> 00:13:39.750 align:start position:0%
+to give us the minimum value
+i'm<00:13:38.240><c> actually</c><00:13:38.480><c> going</c><00:13:38.560><c> to</c><00:13:38.639><c> name</c><00:13:38.880><c> this</c><00:13:39.279><c> first</c>
+
+00:13:39.750 --> 00:13:39.760 align:start position:0%
+i'm actually going to name this first
+ 
+
+00:13:39.760 --> 00:13:40.949 align:start position:0%
+i'm actually going to name this first
+just<00:13:40.000><c> so</c><00:13:40.240><c> it's</c><00:13:40.399><c> a</c><00:13:40.480><c> little</c><00:13:40.639><c> bit</c><00:13:40.800><c> more</c>
+
+00:13:40.949 --> 00:13:40.959 align:start position:0%
+just so it's a little bit more
+ 
+
+00:13:40.959 --> 00:13:42.150 align:start position:0%
+just so it's a little bit more
+descriptive
+
+00:13:42.150 --> 00:13:42.160 align:start position:0%
+descriptive
+ 
+
+00:13:42.160 --> 00:13:43.829 align:start position:0%
+descriptive
+and<00:13:42.320><c> so</c><00:13:42.480><c> now</c><00:13:42.639><c> we</c><00:13:42.800><c> want</c><00:13:42.959><c> to</c><00:13:43.120><c> see</c><00:13:43.360><c> if</c><00:13:43.519><c> we</c><00:13:43.680><c> can</c>
+
+00:13:43.829 --> 00:13:43.839 align:start position:0%
+and so now we want to see if we can
+ 
+
+00:13:43.839 --> 00:13:46.310 align:start position:0%
+and so now we want to see if we can
+create<00:13:44.160><c> a</c><00:13:44.320><c> group</c><00:13:44.639><c> size</c><00:13:44.959><c> starting</c><00:13:45.360><c> at</c><00:13:45.519><c> first</c>
+
+00:13:46.310 --> 00:13:46.320 align:start position:0%
+create a group size starting at first
+ 
+
+00:13:46.320 --> 00:13:48.389 align:start position:0%
+create a group size starting at first
+of<00:13:46.639><c> size</c><00:13:47.040><c> group</c><00:13:47.279><c> size</c><00:13:47.600><c> so</c><00:13:47.760><c> we're</c><00:13:47.920><c> going</c><00:13:48.000><c> to</c><00:13:48.160><c> go</c>
+
+00:13:48.389 --> 00:13:48.399 align:start position:0%
+of size group size so we're going to go
+ 
+
+00:13:48.399 --> 00:13:49.750 align:start position:0%
+of size group size so we're going to go
+for<00:13:48.800><c> i</c><00:13:49.279><c> in</c>
+
+00:13:49.750 --> 00:13:49.760 align:start position:0%
+for i in
+ 
+
+00:13:49.760 --> 00:13:52.389 align:start position:0%
+for i in
+range<00:13:50.480><c> starting</c><00:13:50.800><c> at</c><00:13:50.959><c> the</c><00:13:51.120><c> first</c><00:13:51.440><c> value</c><00:13:51.920><c> right</c>
+
+00:13:52.389 --> 00:13:52.399 align:start position:0%
+range starting at the first value right
+ 
+
+00:13:52.399 --> 00:13:53.110 align:start position:0%
+range starting at the first value right
+and
+
+00:13:53.110 --> 00:13:53.120 align:start position:0%
+and
+ 
+
+00:13:53.120 --> 00:13:55.910 align:start position:0%
+and
+going<00:13:53.839><c> up</c><00:13:54.000><c> until</c><00:13:54.639><c> you</c><00:13:54.800><c> know</c><00:13:55.040><c> the</c><00:13:55.279><c> group</c><00:13:55.600><c> size</c>
+
+00:13:55.910 --> 00:13:55.920 align:start position:0%
+going up until you know the group size
+ 
+
+00:13:55.920 --> 00:13:57.030 align:start position:0%
+going up until you know the group size
+so<00:13:56.240><c> just</c><00:13:56.480><c> add</c>
+
+00:13:57.030 --> 00:13:57.040 align:start position:0%
+so just add
+ 
+
+00:13:57.040 --> 00:13:59.910 align:start position:0%
+so just add
+group<00:13:57.600><c> size</c><00:13:58.079><c> to</c><00:13:58.320><c> this</c><00:13:59.040><c> so</c><00:13:59.279><c> the</c><00:13:59.440><c> first</c><00:13:59.680><c> thing</c><00:13:59.839><c> we</c>
+
+00:13:59.910 --> 00:13:59.920 align:start position:0%
+group size to this so the first thing we
+ 
+
+00:13:59.920 --> 00:14:01.350 align:start position:0%
+group size to this so the first thing we
+want<00:14:00.079><c> to</c><00:14:00.240><c> check</c><00:14:00.560><c> is</c><00:14:00.800><c> if</c><00:14:00.959><c> this</c>
+
+00:14:01.350 --> 00:14:01.360 align:start position:0%
+want to check is if this
+ 
+
+00:14:01.360 --> 00:14:04.069 align:start position:0%
+want to check is if this
+i<00:14:01.600><c> value</c><00:14:02.079><c> is</c><00:14:02.320><c> even</c><00:14:02.560><c> available</c><00:14:03.040><c> to</c><00:14:03.199><c> us</c><00:14:03.279><c> so</c><00:14:03.519><c> if</c><00:14:03.760><c> i</c>
+
+00:14:04.069 --> 00:14:04.079 align:start position:0%
+i value is even available to us so if i
+ 
+
+00:14:04.079 --> 00:14:04.389 align:start position:0%
+i value is even available to us so if i
+is
+
+00:14:04.389 --> 00:14:04.399 align:start position:0%
+is
+ 
+
+00:14:04.399 --> 00:14:07.430 align:start position:0%
+is
+not<00:14:04.880><c> in</c><00:14:05.279><c> our</c><00:14:05.600><c> hash</c><00:14:05.920><c> map</c><00:14:06.560><c> then</c><00:14:06.880><c> we</c><00:14:07.120><c> have</c><00:14:07.279><c> to</c>
+
+00:14:07.430 --> 00:14:07.440 align:start position:0%
+not in our hash map then we have to
+ 
+
+00:14:07.440 --> 00:14:08.069 align:start position:0%
+not in our hash map then we have to
+return
+
+00:14:08.069 --> 00:14:08.079 align:start position:0%
+return
+ 
+
+00:14:08.079 --> 00:14:09.829 align:start position:0%
+return
+false<00:14:08.560><c> because</c><00:14:08.880><c> the</c><00:14:09.040><c> value</c><00:14:09.360><c> we're</c><00:14:09.519><c> looking</c>
+
+00:14:09.829 --> 00:14:09.839 align:start position:0%
+false because the value we're looking
+ 
+
+00:14:09.839 --> 00:14:11.829 align:start position:0%
+false because the value we're looking
+for<00:14:10.160><c> isn't</c><00:14:10.480><c> even</c><00:14:10.880><c> available</c>
+
+00:14:11.829 --> 00:14:11.839 align:start position:0%
+for isn't even available
+ 
+
+00:14:11.839 --> 00:14:13.829 align:start position:0%
+for isn't even available
+if<00:14:12.000><c> it</c><00:14:12.160><c> is</c><00:14:12.399><c> available</c><00:14:12.880><c> then</c><00:14:13.120><c> of</c><00:14:13.199><c> course</c><00:14:13.519><c> we</c><00:14:13.680><c> do</c>
+
+00:14:13.829 --> 00:14:13.839 align:start position:0%
+if it is available then of course we do
+ 
+
+00:14:13.839 --> 00:14:15.670 align:start position:0%
+if it is available then of course we do
+have<00:14:13.920><c> to</c><00:14:14.079><c> decrement</c><00:14:14.639><c> the</c><00:14:14.880><c> count</c><00:14:15.199><c> of</c><00:14:15.360><c> it</c><00:14:15.440><c> so</c>
+
+00:14:15.670 --> 00:14:15.680 align:start position:0%
+have to decrement the count of it so
+ 
+
+00:14:15.680 --> 00:14:16.069 align:start position:0%
+have to decrement the count of it so
+count
+
+00:14:16.069 --> 00:14:16.079 align:start position:0%
+count
+ 
+
+00:14:16.079 --> 00:14:18.389 align:start position:0%
+count
+of<00:14:16.240><c> i</c><00:14:16.560><c> is</c><00:14:16.639><c> going</c><00:14:16.720><c> to</c><00:14:16.880><c> be</c><00:14:16.959><c> decremented</c><00:14:17.519><c> by</c><00:14:17.839><c> one</c>
+
+00:14:18.389 --> 00:14:18.399 align:start position:0%
+of i is going to be decremented by one
+ 
+
+00:14:18.399 --> 00:14:19.990 align:start position:0%
+of i is going to be decremented by one
+and<00:14:18.639><c> we</c><00:14:18.800><c> do</c><00:14:18.959><c> have</c><00:14:19.120><c> to</c><00:14:19.360><c> check</c>
+
+00:14:19.990 --> 00:14:20.000 align:start position:0%
+and we do have to check
+ 
+
+00:14:20.000 --> 00:14:23.030 align:start position:0%
+and we do have to check
+if<00:14:20.399><c> this</c><00:14:20.720><c> count</c><00:14:21.120><c> so</c><00:14:21.920><c> if</c><00:14:22.079><c> it's</c><00:14:22.240><c> now</c><00:14:22.560><c> equal</c><00:14:22.800><c> to</c>
+
+00:14:23.030 --> 00:14:23.040 align:start position:0%
+if this count so if it's now equal to
+ 
+
+00:14:23.040 --> 00:14:24.710 align:start position:0%
+if this count so if it's now equal to
+zero<00:14:23.440><c> because</c><00:14:23.680><c> remember</c><00:14:24.079><c> if</c><00:14:24.240><c> it's</c><00:14:24.399><c> equal</c><00:14:24.560><c> to</c>
+
+00:14:24.710 --> 00:14:24.720 align:start position:0%
+zero because remember if it's equal to
+ 
+
+00:14:24.720 --> 00:14:26.389 align:start position:0%
+zero because remember if it's equal to
+zero<00:14:24.959><c> that</c><00:14:25.120><c> means</c><00:14:25.360><c> we</c><00:14:25.440><c> have</c><00:14:25.600><c> to</c><00:14:25.760><c> pop</c><00:14:26.000><c> it</c><00:14:26.160><c> from</c>
+
+00:14:26.389 --> 00:14:26.399 align:start position:0%
+zero that means we have to pop it from
+ 
+
+00:14:26.399 --> 00:14:27.430 align:start position:0%
+zero that means we have to pop it from
+our<00:14:26.639><c> min</c><00:14:26.880><c> heap</c>
+
+00:14:27.430 --> 00:14:27.440 align:start position:0%
+our min heap
+ 
+
+00:14:27.440 --> 00:14:29.509 align:start position:0%
+our min heap
+but<00:14:27.839><c> if</c><00:14:28.079><c> we're</c><00:14:28.320><c> popping</c><00:14:28.720><c> a</c><00:14:28.800><c> value</c><00:14:29.199><c> from</c><00:14:29.440><c> our</c>
+
+00:14:29.509 --> 00:14:29.519 align:start position:0%
+but if we're popping a value from our
+ 
+
+00:14:29.519 --> 00:14:30.710 align:start position:0%
+but if we're popping a value from our
+min<00:14:29.839><c> heap</c><00:14:30.320><c> that's</c>
+
+00:14:30.710 --> 00:14:30.720 align:start position:0%
+min heap that's
+ 
+
+00:14:30.720 --> 00:14:32.870 align:start position:0%
+min heap that's
+not<00:14:31.120><c> equal</c><00:14:31.440><c> to</c><00:14:31.600><c> the</c><00:14:31.839><c> minimum</c><00:14:32.320><c> value</c><00:14:32.720><c> in</c><00:14:32.800><c> the</c>
+
+00:14:32.870 --> 00:14:32.880 align:start position:0%
+not equal to the minimum value in the
+ 
+
+00:14:32.880 --> 00:14:34.790 align:start position:0%
+not equal to the minimum value in the
+min<00:14:33.120><c> heap</c><00:14:33.360><c> which</c><00:14:33.600><c> we</c><00:14:33.760><c> know</c><00:14:33.920><c> we</c><00:14:34.079><c> can</c><00:14:34.240><c> find</c><00:14:34.560><c> at</c>
+
+00:14:34.790 --> 00:14:34.800 align:start position:0%
+min heap which we know we can find at
+ 
+
+00:14:34.800 --> 00:14:37.189 align:start position:0%
+min heap which we know we can find at
+index<00:14:35.199><c> 0.</c><00:14:35.680><c> so</c><00:14:35.839><c> if</c><00:14:36.000><c> this</c><00:14:36.240><c> is</c><00:14:36.399><c> not</c><00:14:36.639><c> the</c><00:14:36.800><c> minimum</c>
+
+00:14:37.189 --> 00:14:37.199 align:start position:0%
+index 0. so if this is not the minimum
+ 
+
+00:14:37.199 --> 00:14:38.790 align:start position:0%
+index 0. so if this is not the minimum
+value<00:14:37.600><c> that</c><00:14:37.680><c> we're</c><00:14:37.839><c> trying</c><00:14:38.079><c> to</c><00:14:38.320><c> pop</c>
+
+00:14:38.790 --> 00:14:38.800 align:start position:0%
+value that we're trying to pop
+ 
+
+00:14:38.800 --> 00:14:40.470 align:start position:0%
+value that we're trying to pop
+that<00:14:38.959><c> means</c><00:14:39.199><c> we</c><00:14:39.360><c> have</c><00:14:39.440><c> to</c><00:14:39.519><c> return</c><00:14:40.079><c> false</c>
+
+00:14:40.470 --> 00:14:40.480 align:start position:0%
+that means we have to return false
+ 
+
+00:14:40.480 --> 00:14:42.150 align:start position:0%
+that means we have to return false
+immediately<00:14:41.519><c> because</c>
+
+00:14:42.150 --> 00:14:42.160 align:start position:0%
+immediately because
+ 
+
+00:14:42.160 --> 00:14:45.030 align:start position:0%
+immediately because
+if<00:14:42.560><c> we</c><00:14:42.800><c> pop</c><00:14:43.120><c> this</c><00:14:43.360><c> value</c><00:14:44.160><c> if</c><00:14:44.320><c> we</c><00:14:44.480><c> remove</c><00:14:44.880><c> it</c>
+
+00:14:45.030 --> 00:14:45.040 align:start position:0%
+if we pop this value if we remove it
+ 
+
+00:14:45.040 --> 00:14:45.990 align:start position:0%
+if we pop this value if we remove it
+then<00:14:45.279><c> the</c><00:14:45.519><c> next</c>
+
+00:14:45.990 --> 00:14:46.000 align:start position:0%
+then the next
+ 
+
+00:14:46.000 --> 00:14:47.509 align:start position:0%
+then the next
+group<00:14:46.399><c> we're</c><00:14:46.639><c> not</c><00:14:46.800><c> going</c><00:14:46.959><c> to</c><00:14:47.040><c> be</c><00:14:47.199><c> able</c><00:14:47.360><c> to</c>
+
+00:14:47.509 --> 00:14:47.519 align:start position:0%
+group we're not going to be able to
+ 
+
+00:14:47.519 --> 00:14:49.269 align:start position:0%
+group we're not going to be able to
+complete<00:14:48.000><c> because</c><00:14:48.320><c> we</c><00:14:48.560><c> know</c><00:14:48.720><c> that</c><00:14:48.880><c> there</c><00:14:49.120><c> is</c>
+
+00:14:49.269 --> 00:14:49.279 align:start position:0%
+complete because we know that there is
+ 
+
+00:14:49.279 --> 00:14:49.590 align:start position:0%
+complete because we know that there is
+an
+
+00:14:49.590 --> 00:14:49.600 align:start position:0%
+an
+ 
+
+00:14:49.600 --> 00:14:52.389 align:start position:0%
+an
+i<00:14:49.839><c> value</c><00:14:50.320><c> smaller</c><00:14:50.800><c> than</c><00:14:51.040><c> this</c><00:14:51.279><c> value</c><00:14:52.079><c> so</c><00:14:52.240><c> we</c>
+
+00:14:52.389 --> 00:14:52.399 align:start position:0%
+i value smaller than this value so we
+ 
+
+00:14:52.399 --> 00:14:54.230 align:start position:0%
+i value smaller than this value so we
+won't<00:14:52.720><c> basically</c><00:14:53.199><c> be</c><00:14:53.360><c> able</c><00:14:53.440><c> to</c><00:14:53.600><c> complete</c><00:14:54.079><c> the</c>
+
+00:14:54.230 --> 00:14:54.240 align:start position:0%
+won't basically be able to complete the
+ 
+
+00:14:54.240 --> 00:14:55.189 align:start position:0%
+won't basically be able to complete the
+next<00:14:54.639><c> group</c>
+
+00:14:55.189 --> 00:14:55.199 align:start position:0%
+next group
+ 
+
+00:14:55.199 --> 00:14:56.870 align:start position:0%
+next group
+so<00:14:55.360><c> we'll</c><00:14:55.519><c> just</c><00:14:55.680><c> return</c><00:14:56.079><c> false</c><00:14:56.399><c> immediately</c>
+
+00:14:56.870 --> 00:14:56.880 align:start position:0%
+so we'll just return false immediately
+ 
+
+00:14:56.880 --> 00:14:58.629 align:start position:0%
+so we'll just return false immediately
+if<00:14:56.959><c> that's</c><00:14:57.279><c> not</c><00:14:57.519><c> the</c><00:14:57.680><c> case</c><00:14:57.920><c> though</c><00:14:58.160><c> we</c><00:14:58.399><c> are</c>
+
+00:14:58.629 --> 00:14:58.639 align:start position:0%
+if that's not the case though we are
+ 
+
+00:14:58.639 --> 00:14:59.189 align:start position:0%
+if that's not the case though we are
+able
+
+00:14:59.189 --> 00:14:59.199 align:start position:0%
+able
+ 
+
+00:14:59.199 --> 00:15:00.870 align:start position:0%
+able
+to<00:14:59.360><c> pop</c><00:14:59.600><c> from</c><00:14:59.839><c> the</c><00:14:59.920><c> min</c><00:15:00.079><c> heap</c><00:15:00.320><c> we</c><00:15:00.480><c> are</c><00:15:00.560><c> popping</c>
+
+00:15:00.870 --> 00:15:00.880 align:start position:0%
+to pop from the min heap we are popping
+ 
+
+00:15:00.880 --> 00:15:02.790 align:start position:0%
+to pop from the min heap we are popping
+the<00:15:01.040><c> minimum</c><00:15:01.440><c> value</c><00:15:01.760><c> that's</c><00:15:02.000><c> easy</c><00:15:02.240><c> to</c><00:15:02.399><c> do</c><00:15:02.639><c> with</c>
+
+00:15:02.790 --> 00:15:02.800 align:start position:0%
+the minimum value that's easy to do with
+ 
+
+00:15:02.800 --> 00:15:04.150 align:start position:0%
+the minimum value that's easy to do with
+a<00:15:02.959><c> heap</c><00:15:03.199><c> so</c><00:15:03.440><c> heap</c><00:15:03.680><c> q</c>
+
+00:15:04.150 --> 00:15:04.160 align:start position:0%
+a heap so heap q
+ 
+
+00:15:04.160 --> 00:15:07.269 align:start position:0%
+a heap so heap q
+heap<00:15:04.720><c> pop</c><00:15:05.440><c> from</c><00:15:05.600><c> the</c><00:15:05.760><c> min</c><00:15:06.079><c> heap</c><00:15:06.560><c> and</c><00:15:06.800><c> so</c>
+
+00:15:07.269 --> 00:15:07.279 align:start position:0%
+heap pop from the min heap and so
+ 
+
+00:15:07.279 --> 00:15:09.509 align:start position:0%
+heap pop from the min heap and so
+that's<00:15:07.519><c> the</c><00:15:07.680><c> entire</c><00:15:08.160><c> code</c><00:15:08.639><c> and</c><00:15:08.880><c> if</c><00:15:09.040><c> we're</c><00:15:09.279><c> able</c>
+
+00:15:09.509 --> 00:15:09.519 align:start position:0%
+that's the entire code and if we're able
+ 
+
+00:15:09.519 --> 00:15:11.110 align:start position:0%
+that's the entire code and if we're able
+to<00:15:09.600><c> get</c><00:15:09.839><c> out</c><00:15:10.000><c> of</c><00:15:10.079><c> this</c><00:15:10.240><c> loop</c><00:15:10.480><c> we</c><00:15:10.560><c> can</c><00:15:10.720><c> return</c>
+
+00:15:11.110 --> 00:15:11.120 align:start position:0%
+to get out of this loop we can return
+ 
+
+00:15:11.120 --> 00:15:13.430 align:start position:0%
+to get out of this loop we can return
+true<00:15:11.600><c> so</c><00:15:11.920><c> if</c><00:15:12.079><c> we</c><00:15:12.320><c> never</c><00:15:12.560><c> execute</c><00:15:13.040><c> these</c><00:15:13.279><c> two</c>
+
+00:15:13.430 --> 00:15:13.440 align:start position:0%
+true so if we never execute these two
+ 
+
+00:15:13.440 --> 00:15:14.069 align:start position:0%
+true so if we never execute these two
+conditions
+
+00:15:14.069 --> 00:15:14.079 align:start position:0%
+conditions
+ 
+
+00:15:14.079 --> 00:15:16.230 align:start position:0%
+conditions
+basically<00:15:14.560><c> if</c><00:15:14.720><c> a</c><00:15:14.800><c> value</c><00:15:15.120><c> is</c><00:15:15.440><c> is</c><00:15:15.839><c> always</c>
+
+00:15:16.230 --> 00:15:16.240 align:start position:0%
+basically if a value is is always
+ 
+
+00:15:16.240 --> 00:15:17.350 align:start position:0%
+basically if a value is is always
+available<00:15:16.639><c> to</c><00:15:16.800><c> us</c>
+
+00:15:17.350 --> 00:15:17.360 align:start position:0%
+available to us
+ 
+
+00:15:17.360 --> 00:15:19.829 align:start position:0%
+available to us
+and<00:15:17.680><c> we're</c><00:15:17.920><c> never</c><00:15:18.240><c> popping</c><00:15:18.959><c> a</c><00:15:19.120><c> non-minimum</c>
+
+00:15:19.829 --> 00:15:19.839 align:start position:0%
+and we're never popping a non-minimum
+ 
+
+00:15:19.839 --> 00:15:20.790 align:start position:0%
+and we're never popping a non-minimum
+value
+
+00:15:20.790 --> 00:15:20.800 align:start position:0%
+value
+ 
+
+00:15:20.800 --> 00:15:22.550 align:start position:0%
+value
+and<00:15:20.959><c> we</c><00:15:21.120><c> never</c><00:15:21.360><c> return</c><00:15:21.760><c> false</c><00:15:22.079><c> in</c><00:15:22.320><c> either</c><00:15:22.480><c> of</c>
+
+00:15:22.550 --> 00:15:22.560 align:start position:0%
+and we never return false in either of
+ 
+
+00:15:22.560 --> 00:15:25.189 align:start position:0%
+and we never return false in either of
+these<00:15:22.800><c> cases</c><00:15:23.279><c> we</c><00:15:23.600><c> if</c><00:15:23.760><c> we</c><00:15:24.160><c> basically</c><00:15:24.639><c> break</c>
+
+00:15:25.189 --> 00:15:25.199 align:start position:0%
+these cases we if we basically break
+ 
+
+00:15:25.199 --> 00:15:28.389 align:start position:0%
+these cases we if we basically break
+the<00:15:26.000><c> hand</c><00:15:26.480><c> into</c><00:15:26.880><c> group</c><00:15:27.199><c> sizes</c><00:15:27.920><c> and</c><00:15:28.000><c> then</c><00:15:28.240><c> at</c>
+
+00:15:28.389 --> 00:15:28.399 align:start position:0%
+the hand into group sizes and then at
+ 
+
+00:15:28.399 --> 00:15:30.150 align:start position:0%
+the hand into group sizes and then at
+the<00:15:28.560><c> end</c><00:15:28.800><c> we</c><00:15:28.959><c> can</c><00:15:29.040><c> return</c><00:15:29.519><c> true</c>
+
+00:15:30.150 --> 00:15:30.160 align:start position:0%
+the end we can return true
+ 
+
+00:15:30.160 --> 00:15:32.389 align:start position:0%
+the end we can return true
+so<00:15:30.639><c> there's</c><00:15:31.120><c> many</c><00:15:31.360><c> ways</c><00:15:31.680><c> to</c><00:15:31.839><c> solve</c><00:15:32.079><c> this</c>
+
+00:15:32.389 --> 00:15:32.399 align:start position:0%
+so there's many ways to solve this
+ 
+
+00:15:32.399 --> 00:15:34.870 align:start position:0%
+so there's many ways to solve this
+problem<00:15:32.800><c> you</c><00:15:32.959><c> can</c><00:15:33.199><c> use</c><00:15:33.440><c> a</c><00:15:33.680><c> sorted</c><00:15:34.160><c> input</c><00:15:34.480><c> array</c>
+
+00:15:34.870 --> 00:15:34.880 align:start position:0%
+problem you can use a sorted input array
+ 
+
+00:15:34.880 --> 00:15:36.870 align:start position:0%
+problem you can use a sorted input array
+you<00:15:35.040><c> can</c><00:15:35.199><c> use</c><00:15:35.519><c> a</c><00:15:35.680><c> tree</c><00:15:35.920><c> map</c><00:15:36.240><c> or</c><00:15:36.399><c> you</c><00:15:36.480><c> can</c><00:15:36.639><c> use</c><00:15:36.800><c> a</c>
+
+00:15:36.870 --> 00:15:36.880 align:start position:0%
+you can use a tree map or you can use a
+ 
+
+00:15:36.880 --> 00:15:37.269 align:start position:0%
+you can use a tree map or you can use a
+heap
+
+00:15:37.269 --> 00:15:37.279 align:start position:0%
+heap
+ 
+
+00:15:37.279 --> 00:15:39.110 align:start position:0%
+heap
+all<00:15:37.680><c> the</c><00:15:37.839><c> time</c><00:15:38.079><c> complexities</c><00:15:38.800><c> of</c><00:15:38.959><c> each</c>
+
+00:15:39.110 --> 00:15:39.120 align:start position:0%
+all the time complexities of each
+ 
+
+00:15:39.120 --> 00:15:41.189 align:start position:0%
+all the time complexities of each
+solution<00:15:39.600><c> is</c><00:15:39.759><c> going</c><00:15:39.839><c> to</c><00:15:39.920><c> be</c><00:15:40.160><c> n</c><00:15:40.399><c> log</c><00:15:40.720><c> n</c>
+
+00:15:41.189 --> 00:15:41.199 align:start position:0%
+solution is going to be n log n
+ 
+
+00:15:41.199 --> 00:15:43.990 align:start position:0%
+solution is going to be n log n
+and<00:15:41.360><c> they</c><00:15:41.600><c> all</c><00:15:41.839><c> mainly</c><00:15:42.320><c> follow</c><00:15:42.720><c> similar</c><00:15:43.199><c> ideas</c>
+
+00:15:43.990 --> 00:15:44.000 align:start position:0%
+and they all mainly follow similar ideas
+ 
+
+00:15:44.000 --> 00:15:45.590 align:start position:0%
+and they all mainly follow similar ideas
+so<00:15:44.240><c> i</c><00:15:44.320><c> hope</c><00:15:44.560><c> that</c><00:15:44.639><c> this</c><00:15:44.800><c> was</c><00:15:45.040><c> helpful</c>
+
+00:15:45.590 --> 00:15:45.600 align:start position:0%
+so i hope that this was helpful
+ 
+
+00:15:45.600 --> 00:15:47.509 align:start position:0%
+so i hope that this was helpful
+if<00:15:45.759><c> it</c><00:15:45.920><c> was</c><00:15:46.320><c> please</c><00:15:46.560><c> like</c><00:15:46.800><c> and</c><00:15:46.880><c> subscribe</c><00:15:47.360><c> it</c>
+
+00:15:47.509 --> 00:15:47.519 align:start position:0%
+if it was please like and subscribe it
+ 
+
+00:15:47.519 --> 00:15:49.350 align:start position:0%
+if it was please like and subscribe it
+supports<00:15:47.920><c> the</c><00:15:48.000><c> channel</c><00:15:48.399><c> a</c><00:15:48.639><c> lot</c><00:15:48.959><c> and</c><00:15:49.120><c> i'll</c>
+
+00:15:49.350 --> 00:15:49.360 align:start position:0%
+supports the channel a lot and i'll
+ 
+
+00:15:49.360 --> 00:15:49.990 align:start position:0%
+supports the channel a lot and i'll
+hopefully
+
+00:15:49.990 --> 00:15:50.000 align:start position:0%
+hopefully
+ 
+
+00:15:50.000 --> 00:15:55.199 align:start position:0%
+hopefully
+see<00:15:50.160><c> you</c><00:15:50.320><c> pretty</c><00:15:50.639><c> soon</c><00:15:51.120><c> thanks</c><00:15:51.360><c> for</c><00:15:52.199><c> watching</c>
+

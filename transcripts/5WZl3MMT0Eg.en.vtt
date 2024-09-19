@@ -1,0 +1,1568 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.060 --> 00:00:03.139 align:start position:0%
+ 
+let's<00:00:00.299><c> all</c><00:00:00.539><c> leak</c><00:00:00.870><c> code</c><00:00:01.110><c> 53</c><00:00:01.890><c> maximum</c><00:00:02.550><c> sub-array</c>
+
+00:00:03.139 --> 00:00:03.149 align:start position:0%
+let's all leak code 53 maximum sub-array
+ 
+
+00:00:03.149 --> 00:00:05.090 align:start position:0%
+let's all leak code 53 maximum sub-array
+so<00:00:03.480><c> we're</c><00:00:03.629><c> given</c><00:00:04.049><c> an</c><00:00:04.170><c> integer</c><00:00:04.500><c> array</c><00:00:04.980><c> of</c>
+
+00:00:05.090 --> 00:00:05.100 align:start position:0%
+so we're given an integer array of
+ 
+
+00:00:05.100 --> 00:00:06.410 align:start position:0%
+so we're given an integer array of
+gnomes<00:00:05.339><c> and</c><00:00:05.670><c> we</c><00:00:05.850><c> want</c><00:00:06.029><c> to</c><00:00:06.089><c> find</c><00:00:06.240><c> the</c>
+
+00:00:06.410 --> 00:00:06.420 align:start position:0%
+gnomes and we want to find the
+ 
+
+00:00:06.420 --> 00:00:09.169 align:start position:0%
+gnomes and we want to find the
+contiguous<00:00:07.020><c> sub</c><00:00:07.710><c> array</c><00:00:08.010><c> containing</c><00:00:08.970><c> at</c><00:00:09.150><c> least</c>
+
+00:00:09.169 --> 00:00:09.179 align:start position:0%
+contiguous sub array containing at least
+ 
+
+00:00:09.179 --> 00:00:11.720 align:start position:0%
+contiguous sub array containing at least
+one<00:00:09.660><c> number</c><00:00:10.110><c> which</c><00:00:10.349><c> has</c><00:00:10.559><c> the</c><00:00:10.679><c> largest</c><00:00:11.099><c> sum</c><00:00:11.490><c> and</c>
+
+00:00:11.720 --> 00:00:11.730 align:start position:0%
+one number which has the largest sum and
+ 
+
+00:00:11.730 --> 00:00:14.120 align:start position:0%
+one number which has the largest sum and
+then<00:00:11.849><c> we</c><00:00:12.000><c> want</c><00:00:12.179><c> to</c><00:00:12.240><c> return</c><00:00:12.540><c> only</c><00:00:12.809><c> the</c><00:00:13.290><c> sum</c><00:00:13.559><c> so</c>
+
+00:00:14.120 --> 00:00:14.130 align:start position:0%
+then we want to return only the sum so
+ 
+
+00:00:14.130 --> 00:00:16.129 align:start position:0%
+then we want to return only the sum so
+this<00:00:14.309><c> array</c><00:00:14.610><c> has</c><00:00:14.849><c> in</c><00:00:15.000><c> positive</c><00:00:15.509><c> numbers</c><00:00:15.929><c> and</c>
+
+00:00:16.129 --> 00:00:16.139 align:start position:0%
+this array has in positive numbers and
+ 
+
+00:00:16.139 --> 00:00:18.529 align:start position:0%
+this array has in positive numbers and
+it<00:00:16.650><c> has</c><00:00:16.740><c> negative</c><00:00:17.039><c> numbers</c><00:00:17.640><c> so</c><00:00:17.880><c> that's</c><00:00:18.390><c> what</c>
+
+00:00:18.529 --> 00:00:18.539 align:start position:0%
+it has negative numbers so that's what
+ 
+
+00:00:18.539 --> 00:00:20.870 align:start position:0%
+it has negative numbers so that's what
+we<00:00:18.630><c> have</c><00:00:18.720><c> to</c><00:00:18.840><c> keep</c><00:00:18.990><c> in</c><00:00:19.170><c> mind</c><00:00:19.439><c> in</c><00:00:19.740><c> this</c><00:00:20.160><c> case</c><00:00:20.430><c> the</c>
+
+00:00:20.870 --> 00:00:20.880 align:start position:0%
+we have to keep in mind in this case the
+ 
+
+00:00:20.880 --> 00:00:23.090 align:start position:0%
+we have to keep in mind in this case the
+largest<00:00:21.090><c> sum</c><00:00:21.449><c> is</c><00:00:21.600><c> 6</c><00:00:21.960><c> and</c><00:00:22.260><c> it's</c><00:00:22.500><c> just</c><00:00:22.769><c> this</c>
+
+00:00:23.090 --> 00:00:23.100 align:start position:0%
+largest sum is 6 and it's just this
+ 
+
+00:00:23.100 --> 00:00:25.700 align:start position:0%
+largest sum is 6 and it's just this
+middle<00:00:23.670><c> portion</c><00:00:23.939><c> of</c><00:00:24.390><c> the</c><00:00:24.630><c> array</c><00:00:24.900><c> so</c><00:00:25.230><c> the</c><00:00:25.380><c> first</c>
+
+00:00:25.700 --> 00:00:25.710 align:start position:0%
+middle portion of the array so the first
+ 
+
+00:00:25.710 --> 00:00:27.800 align:start position:0%
+middle portion of the array so the first
+thing<00:00:25.980><c> you</c><00:00:26.099><c> might</c><00:00:26.310><c> try</c><00:00:26.580><c> is</c><00:00:26.640><c> just</c><00:00:26.820><c> compute</c>
+
+00:00:27.800 --> 00:00:27.810 align:start position:0%
+thing you might try is just compute
+ 
+
+00:00:27.810 --> 00:00:30.980 align:start position:0%
+thing you might try is just compute
+every<00:00:28.470><c> single</c><00:00:29.070><c> sub</c><00:00:29.369><c> array</c><00:00:29.640><c> right</c><00:00:29.910><c> so</c><00:00:30.449><c> let's</c>
+
+00:00:30.980 --> 00:00:30.990 align:start position:0%
+every single sub array right so let's
+ 
+
+00:00:30.990 --> 00:00:32.930 align:start position:0%
+every single sub array right so let's
+first<00:00:31.410><c> compute</c><00:00:31.740><c> every</c><00:00:32.189><c> single</c><00:00:32.520><c> subarray</c>
+
+00:00:32.930 --> 00:00:32.940 align:start position:0%
+first compute every single subarray
+ 
+
+00:00:32.940 --> 00:00:35.420 align:start position:0%
+first compute every single subarray
+starting<00:00:33.390><c> at</c><00:00:33.480><c> negative</c><00:00:33.630><c> 2</c><00:00:34.050><c> there's</c><00:00:34.800><c> one</c><00:00:35.130><c> sub</c>
+
+00:00:35.420 --> 00:00:35.430 align:start position:0%
+starting at negative 2 there's one sub
+ 
+
+00:00:35.430 --> 00:00:38.660 align:start position:0%
+starting at negative 2 there's one sub
+array<00:00:35.670><c> there's</c><00:00:36.120><c> 2</c><00:00:36.450><c> sub</c><00:00:36.750><c> arrays</c><00:00:37.020><c> there's</c><00:00:37.829><c> 3</c><00:00:38.340><c> sub</c>
+
+00:00:38.660 --> 00:00:38.670 align:start position:0%
+array there's 2 sub arrays there's 3 sub
+ 
+
+00:00:38.670 --> 00:00:40.310 align:start position:0%
+array there's 2 sub arrays there's 3 sub
+arrays<00:00:38.940><c> and</c><00:00:39.210><c> then</c><00:00:39.390><c> we</c><00:00:39.510><c> keep</c><00:00:39.780><c> doing</c><00:00:40.020><c> that</c><00:00:40.260><c> until</c>
+
+00:00:40.310 --> 00:00:40.320 align:start position:0%
+arrays and then we keep doing that until
+ 
+
+00:00:40.320 --> 00:00:42.440 align:start position:0%
+arrays and then we keep doing that until
+we<00:00:40.649><c> got</c><00:00:40.770><c> to</c><00:00:40.829><c> the</c><00:00:41.010><c> end</c><00:00:41.190><c> right</c><00:00:41.550><c> and</c><00:00:41.820><c> then</c><00:00:42.300><c> we</c>
+
+00:00:42.440 --> 00:00:42.450 align:start position:0%
+we got to the end right and then we
+ 
+
+00:00:42.450 --> 00:00:44.180 align:start position:0%
+we got to the end right and then we
+could<00:00:42.600><c> repeat</c><00:00:42.930><c> the</c><00:00:43.110><c> process</c><00:00:43.320><c> for</c><00:00:43.590><c> the</c><00:00:43.770><c> second</c>
+
+00:00:44.180 --> 00:00:44.190 align:start position:0%
+could repeat the process for the second
+ 
+
+00:00:44.190 --> 00:00:45.979 align:start position:0%
+could repeat the process for the second
+number<00:00:44.460><c> so</c><00:00:44.640><c> the</c><00:00:44.850><c> sub</c><00:00:45.059><c> array</c><00:00:45.180><c> starting</c><00:00:45.629><c> at</c><00:00:45.750><c> 1</c>
+
+00:00:45.979 --> 00:00:45.989 align:start position:0%
+number so the sub array starting at 1
+ 
+
+00:00:45.989 --> 00:00:48.470 align:start position:0%
+number so the sub array starting at 1
+here<00:00:46.620><c> another</c><00:00:47.370><c> sub</c><00:00:47.700><c> array</c><00:00:47.879><c> starting</c><00:00:48.210><c> at</c><00:00:48.329><c> 1</c>
+
+00:00:48.470 --> 00:00:48.480 align:start position:0%
+here another sub array starting at 1
+ 
+
+00:00:48.480 --> 00:00:50.750 align:start position:0%
+here another sub array starting at 1
+here<00:00:48.989><c> another</c><00:00:49.800><c> sub</c><00:00:50.070><c> array</c><00:00:50.219><c> starting</c><00:00:50.550><c> at</c><00:00:50.640><c> 1</c>
+
+00:00:50.750 --> 00:00:50.760 align:start position:0%
+here another sub array starting at 1
+ 
+
+00:00:50.760 --> 00:00:53.000 align:start position:0%
+here another sub array starting at 1
+here<00:00:51.090><c> all</c><00:00:51.300><c> the</c><00:00:51.840><c> way</c><00:00:51.989><c> until</c><00:00:52.199><c> the</c><00:00:52.379><c> end</c>
+
+00:00:53.000 --> 00:00:53.010 align:start position:0%
+here all the way until the end
+ 
+
+00:00:53.010 --> 00:00:54.860 align:start position:0%
+here all the way until the end
+now<00:00:53.610><c> we</c><00:00:53.670><c> could</c><00:00:53.940><c> repeat</c><00:00:54.300><c> that</c><00:00:54.360><c> same</c><00:00:54.809><c> process</c>
+
+00:00:54.860 --> 00:00:54.870 align:start position:0%
+now we could repeat that same process
+ 
+
+00:00:54.870 --> 00:00:57.680 align:start position:0%
+now we could repeat that same process
+for<00:00:55.500><c> every</c><00:00:56.039><c> number</c><00:00:56.250><c> in</c><00:00:56.520><c> the</c><00:00:56.610><c> array</c><00:00:56.730><c> so</c><00:00:57.449><c> let's</c>
+
+00:00:57.680 --> 00:00:57.690 align:start position:0%
+for every number in the array so let's
+ 
+
+00:00:57.690 --> 00:00:59.360 align:start position:0%
+for every number in the array so let's
+just<00:00:57.870><c> write</c><00:00:58.050><c> the</c><00:00:58.199><c> pseudocode</c><00:00:58.379><c> to</c><00:00:58.739><c> see</c><00:00:59.100><c> what</c>
+
+00:00:59.360 --> 00:00:59.370 align:start position:0%
+just write the pseudocode to see what
+ 
+
+00:00:59.370 --> 00:01:01.369 align:start position:0%
+just write the pseudocode to see what
+that<00:00:59.520><c> what</c><00:01:00.120><c> kind</c><00:01:00.300><c> of</c><00:01:00.329><c> complexity</c><00:01:01.020><c> this</c><00:01:01.170><c> would</c>
+
+00:01:01.369 --> 00:01:01.379 align:start position:0%
+that what kind of complexity this would
+ 
+
+00:01:01.379 --> 00:01:04.189 align:start position:0%
+that what kind of complexity this would
+yield<00:01:01.649><c> so</c><00:01:02.039><c> let's</c><00:01:02.730><c> say</c><00:01:02.879><c> we're</c><00:01:03.059><c> starting</c><00:01:03.420><c> the</c>
+
+00:01:04.189 --> 00:01:04.199 align:start position:0%
+yield so let's say we're starting the
+ 
+
+00:01:04.199 --> 00:01:05.600 align:start position:0%
+yield so let's say we're starting the
+eye<00:01:04.229><c> is</c><00:01:04.409><c> gonna</c><00:01:04.680><c> represent</c><00:01:05.010><c> the</c><00:01:05.220><c> starting</c>
+
+00:01:05.600 --> 00:01:05.610 align:start position:0%
+eye is gonna represent the starting
+ 
+
+00:01:05.610 --> 00:01:07.219 align:start position:0%
+eye is gonna represent the starting
+value<00:01:05.970><c> it's</c><00:01:06.150><c> gonna</c><00:01:06.270><c> be</c><00:01:06.570><c> it's</c><00:01:06.900><c> gonna</c><00:01:06.990><c> range</c>
+
+00:01:07.219 --> 00:01:07.229 align:start position:0%
+value it's gonna be it's gonna range
+ 
+
+00:01:07.229 --> 00:01:09.170 align:start position:0%
+value it's gonna be it's gonna range
+from<00:01:07.470><c> zero</c><00:01:07.830><c> all</c><00:01:08.130><c> the</c><00:01:08.159><c> way</c><00:01:08.340><c> to</c><00:01:08.460><c> the</c><00:01:08.640><c> last</c><00:01:08.880><c> number</c>
+
+00:01:09.170 --> 00:01:09.180 align:start position:0%
+from zero all the way to the last number
+ 
+
+00:01:09.180 --> 00:01:12.530 align:start position:0%
+from zero all the way to the last number
+n<00:01:09.600><c> minus</c><00:01:10.320><c> 1</c><00:01:10.590><c> or</c><00:01:10.920><c> the</c><00:01:11.100><c> last</c><00:01:11.250><c> index</c><00:01:11.640><c> and</c><00:01:11.850><c> minus</c><00:01:12.330><c> 1</c>
+
+00:01:12.530 --> 00:01:12.540 align:start position:0%
+n minus 1 or the last index and minus 1
+ 
+
+00:01:12.540 --> 00:01:15.710 align:start position:0%
+n minus 1 or the last index and minus 1
+and<00:01:12.840><c> then</c><00:01:13.680><c> we</c><00:01:13.979><c> want</c><00:01:14.220><c> to</c><00:01:14.280><c> get</c><00:01:14.400><c> the</c><00:01:14.610><c> ending</c><00:01:15.240><c> index</c>
+
+00:01:15.710 --> 00:01:15.720 align:start position:0%
+and then we want to get the ending index
+ 
+
+00:01:15.720 --> 00:01:17.990 align:start position:0%
+and then we want to get the ending index
+so<00:01:15.869><c> I'm</c><00:01:15.930><c> going</c><00:01:16.049><c> to</c><00:01:16.110><c> use</c><00:01:16.229><c> J</c><00:01:16.590><c> for</c><00:01:17.009><c> the</c><00:01:17.490><c> end</c><00:01:17.700><c> of</c>
+
+00:01:17.990 --> 00:01:18.000 align:start position:0%
+so I'm going to use J for the end of
+ 
+
+00:01:18.000 --> 00:01:20.660 align:start position:0%
+so I'm going to use J for the end of
+this<00:01:18.180><c> sub</c><00:01:18.810><c> array</c><00:01:19.080><c> so</c><00:01:19.530><c> we're</c><00:01:19.680><c> gonna</c><00:01:19.799><c> start</c><00:01:20.250><c> at</c><00:01:20.460><c> I</c>
+
+00:01:20.660 --> 00:01:20.670 align:start position:0%
+this sub array so we're gonna start at I
+ 
+
+00:01:20.670 --> 00:01:23.090 align:start position:0%
+this sub array so we're gonna start at I
+and<00:01:21.210><c> we're</c><00:01:21.810><c> going</c><00:01:21.930><c> to</c><00:01:21.990><c> keep</c><00:01:22.140><c> going</c><00:01:22.409><c> until</c><00:01:22.740><c> the</c>
+
+00:01:23.090 --> 00:01:23.100 align:start position:0%
+and we're going to keep going until the
+ 
+
+00:01:23.100 --> 00:01:26.270 align:start position:0%
+and we're going to keep going until the
+end<00:01:23.520><c> of</c><00:01:23.850><c> the</c><00:01:23.939><c> sub</c><00:01:24.180><c> array</c><00:01:24.619><c> or</c><00:01:25.619><c> until</c><00:01:26.009><c> the</c><00:01:26.100><c> end</c><00:01:26.250><c> of</c>
+
+00:01:26.270 --> 00:01:26.280 align:start position:0%
+end of the sub array or until the end of
+ 
+
+00:01:26.280 --> 00:01:28.880 align:start position:0%
+end of the sub array or until the end of
+the<00:01:26.430><c> entire</c><00:01:26.729><c> array</c><00:01:27.060><c> and</c><00:01:27.330><c> minus</c><00:01:27.720><c> 1</c><00:01:27.960><c> so</c><00:01:28.619><c> this</c>
+
+00:01:28.880 --> 00:01:28.890 align:start position:0%
+the entire array and minus 1 so this
+ 
+
+00:01:28.890 --> 00:01:31.010 align:start position:0%
+the entire array and minus 1 so this
+represents<00:01:29.430><c> the</c><00:01:29.490><c> start</c><00:01:29.970><c> I</c><00:01:30.240><c> represents</c><00:01:30.930><c> the</c>
+
+00:01:31.010 --> 00:01:31.020 align:start position:0%
+represents the start I represents the
+ 
+
+00:01:31.020 --> 00:01:33.230 align:start position:0%
+represents the start I represents the
+start<00:01:31.320><c> J</c><00:01:31.680><c> represents</c><00:01:31.860><c> the</c><00:01:32.310><c> end</c><00:01:32.490><c> now</c><00:01:33.180><c> we</c>
+
+00:01:33.230 --> 00:01:33.240 align:start position:0%
+start J represents the end now we
+ 
+
+00:01:33.240 --> 00:01:36.380 align:start position:0%
+start J represents the end now we
+actually<00:01:33.479><c> want</c><00:01:33.840><c> to</c><00:01:33.869><c> compute</c><00:01:34.350><c> the</c><00:01:35.220><c> sum</c><00:01:36.000><c> of</c><00:01:36.060><c> this</c>
+
+00:01:36.380 --> 00:01:36.390 align:start position:0%
+actually want to compute the sum of this
+ 
+
+00:01:36.390 --> 00:01:37.910 align:start position:0%
+actually want to compute the sum of this
+sub<00:01:36.570><c> array</c><00:01:36.780><c> so</c><00:01:36.840><c> we're</c><00:01:37.140><c> gonna</c><00:01:37.229><c> have</c><00:01:37.439><c> a</c><00:01:37.470><c> third</c>
+
+00:01:37.910 --> 00:01:37.920 align:start position:0%
+sub array so we're gonna have a third
+ 
+
+00:01:37.920 --> 00:01:41.090 align:start position:0%
+sub array so we're gonna have a third
+loop<00:01:38.280><c> for</c><00:01:38.549><c> that</c><00:01:38.700><c> right</c><00:01:38.970><c> let's</c><00:01:39.810><c> use</c><00:01:40.049><c> KK</c><00:01:40.920><c> is</c>
+
+00:01:41.090 --> 00:01:41.100 align:start position:0%
+loop for that right let's use KK is
+ 
+
+00:01:41.100 --> 00:01:44.179 align:start position:0%
+loop for that right let's use KK is
+gonna<00:01:41.280><c> range</c><00:01:41.640><c> all</c><00:01:41.909><c> the</c><00:01:41.970><c> way</c><00:01:42.420><c> from</c><00:01:42.840><c> I</c><00:01:43.020><c> to</c><00:01:43.710><c> J</c>
+
+00:01:44.179 --> 00:01:44.189 align:start position:0%
+gonna range all the way from I to J
+ 
+
+00:01:44.189 --> 00:01:46.100 align:start position:0%
+gonna range all the way from I to J
+right<00:01:44.850><c> because</c><00:01:45.090><c> that's</c><00:01:45.240><c> what</c><00:01:45.509><c> represents</c><00:01:45.990><c> the</c>
+
+00:01:46.100 --> 00:01:46.110 align:start position:0%
+right because that's what represents the
+ 
+
+00:01:46.110 --> 00:01:48.260 align:start position:0%
+right because that's what represents the
+sub<00:01:46.320><c> array</c><00:01:46.439><c> and</c><00:01:46.770><c> then</c><00:01:47.070><c> in</c><00:01:47.280><c> here</c><00:01:47.579><c> we'd</c><00:01:47.759><c> compute</c>
+
+00:01:48.260 --> 00:01:48.270 align:start position:0%
+sub array and then in here we'd compute
+ 
+
+00:01:48.270 --> 00:01:52.760 align:start position:0%
+sub array and then in here we'd compute
+the<00:01:48.420><c> sum</c><00:01:48.630><c> right</c><00:01:50.630><c> now</c><00:01:51.630><c> obviously</c><00:01:52.439><c> this</c><00:01:52.590><c> is</c>
+
+00:01:52.760 --> 00:01:52.770 align:start position:0%
+the sum right now obviously this is
+ 
+
+00:01:52.770 --> 00:01:55.100 align:start position:0%
+the sum right now obviously this is
+really<00:01:53.520><c> inefficient</c><00:01:54.210><c> right</c><00:01:54.509><c> the</c><00:01:54.869><c> time</c>
+
+00:01:55.100 --> 00:01:55.110 align:start position:0%
+really inefficient right the time
+ 
+
+00:01:55.110 --> 00:01:57.590 align:start position:0%
+really inefficient right the time
+complexity<00:01:55.619><c> is</c><00:01:55.770><c> n</c><00:01:55.950><c> cubed</c><00:01:56.880><c> it's</c><00:01:57.090><c> obvious</c>
+
+00:01:57.590 --> 00:01:57.600 align:start position:0%
+complexity is n cubed it's obvious
+ 
+
+00:01:57.600 --> 00:02:00.319 align:start position:0%
+complexity is n cubed it's obvious
+because<00:01:57.780><c> we</c><00:01:57.960><c> have</c><00:01:58.079><c> 3</c><00:01:58.469><c> for</c><00:01:59.310><c> loops</c><00:01:59.610><c> so</c><00:01:59.969><c> let's</c><00:02:00.149><c> try</c>
+
+00:02:00.319 --> 00:02:00.329 align:start position:0%
+because we have 3 for loops so let's try
+ 
+
+00:02:00.329 --> 00:02:02.149 align:start position:0%
+because we have 3 for loops so let's try
+to<00:02:00.360><c> expand</c><00:02:01.020><c> upon</c><00:02:01.320><c> this</c><00:02:01.560><c> let's</c><00:02:01.740><c> see</c><00:02:01.860><c> if</c><00:02:01.920><c> we</c><00:02:02.040><c> can</c>
+
+00:02:02.149 --> 00:02:02.159 align:start position:0%
+to expand upon this let's see if we can
+ 
+
+00:02:02.159 --> 00:02:04.280 align:start position:0%
+to expand upon this let's see if we can
+make<00:02:02.340><c> any</c><00:02:02.369><c> shortcuts</c><00:02:03.060><c> to</c><00:02:03.240><c> improve</c><00:02:03.570><c> it</c><00:02:03.780><c> so</c><00:02:04.020><c> the</c>
+
+00:02:04.280 --> 00:02:04.290 align:start position:0%
+make any shortcuts to improve it so the
+ 
+
+00:02:04.290 --> 00:02:05.719 align:start position:0%
+make any shortcuts to improve it so the
+most<00:02:04.469><c> obvious</c><00:02:05.009><c> thing</c><00:02:05.250><c> you'll</c><00:02:05.399><c> probably</c>
+
+00:02:05.719 --> 00:02:05.729 align:start position:0%
+most obvious thing you'll probably
+ 
+
+00:02:05.729 --> 00:02:08.690 align:start position:0%
+most obvious thing you'll probably
+notice<00:02:06.270><c> is</c><00:02:06.570><c> that</c><00:02:06.600><c> we</c><00:02:07.229><c> can</c><00:02:07.500><c> save</c><00:02:08.129><c> time</c><00:02:08.489><c> when</c>
+
+00:02:08.690 --> 00:02:08.700 align:start position:0%
+notice is that we can save time when
+ 
+
+00:02:08.700 --> 00:02:10.490 align:start position:0%
+notice is that we can save time when
+we're<00:02:08.849><c> computing</c><00:02:09.450><c> a</c><00:02:09.539><c> sub</c><00:02:09.780><c> array</c><00:02:09.989><c> so</c><00:02:10.170><c> if</c><00:02:10.259><c> let's</c>
+
+00:02:10.490 --> 00:02:10.500 align:start position:0%
+we're computing a sub array so if let's
+ 
+
+00:02:10.500 --> 00:02:12.930 align:start position:0%
+we're computing a sub array so if let's
+say<00:02:10.649><c> we</c><00:02:10.800><c> computed</c><00:02:11.400><c> this</c><00:02:11.700><c> sub</c><00:02:11.970><c> array</c><00:02:12.209><c> right</c><00:02:12.450><c> and</c>
+
+00:02:12.930 --> 00:02:12.940 align:start position:0%
+say we computed this sub array right and
+ 
+
+00:02:12.940 --> 00:02:14.880 align:start position:0%
+say we computed this sub array right and
+we<00:02:13.120><c> want</c><00:02:13.330><c> to</c><00:02:13.390><c> compute</c><00:02:13.810><c> the</c><00:02:14.020><c> next</c><00:02:14.320><c> sub-array</c>
+
+00:02:14.880 --> 00:02:14.890 align:start position:0%
+we want to compute the next sub-array
+ 
+
+00:02:14.890 --> 00:02:17.040 align:start position:0%
+we want to compute the next sub-array
+was<00:02:15.070><c> just</c><00:02:15.280><c> one</c><00:02:15.550><c> added</c><00:02:15.970><c> element</c><00:02:16.420><c> well</c><00:02:16.750><c> we</c><00:02:16.900><c> can</c>
+
+00:02:17.040 --> 00:02:17.050 align:start position:0%
+was just one added element well we can
+ 
+
+00:02:17.050 --> 00:02:19.860 align:start position:0%
+was just one added element well we can
+save<00:02:17.530><c> the</c><00:02:17.800><c> result</c><00:02:18.190><c> of</c><00:02:18.370><c> this</c><00:02:18.670><c> right</c><00:02:19.090><c> and</c><00:02:19.300><c> say</c>
+
+00:02:19.860 --> 00:02:19.870 align:start position:0%
+save the result of this right and say
+ 
+
+00:02:19.870 --> 00:02:21.570 align:start position:0%
+save the result of this right and say
+it's<00:02:20.020><c> our</c><00:02:20.140><c> current</c><00:02:20.560><c> summer</c><00:02:20.860><c> or</c><00:02:21.010><c> whatever</c><00:02:21.280><c> and</c>
+
+00:02:21.570 --> 00:02:21.580 align:start position:0%
+it's our current summer or whatever and
+ 
+
+00:02:21.580 --> 00:02:24.240 align:start position:0%
+it's our current summer or whatever and
+then<00:02:22.000><c> to</c><00:02:22.690><c> compute</c><00:02:22.990><c> this</c><00:02:23.320><c> sub</c><00:02:23.620><c> array</c><00:02:23.860><c> we</c><00:02:24.070><c> just</c>
+
+00:02:24.240 --> 00:02:24.250 align:start position:0%
+then to compute this sub array we just
+ 
+
+00:02:24.250 --> 00:02:26.400 align:start position:0%
+then to compute this sub array we just
+have<00:02:24.400><c> to</c><00:02:24.490><c> add</c><00:02:24.670><c> this</c><00:02:25.240><c> number</c><00:02:25.720><c> over</c><00:02:25.840><c> here</c><00:02:26.200><c> right</c>
+
+00:02:26.400 --> 00:02:26.410 align:start position:0%
+have to add this number over here right
+ 
+
+00:02:26.410 --> 00:02:30.000 align:start position:0%
+have to add this number over here right
+so<00:02:26.890><c> we</c><00:02:27.040><c> can</c><00:02:27.160><c> just</c><00:02:27.340><c> say</c><00:02:27.490><c> current</c><00:02:27.820><c> sum</c><00:02:29.010><c> plus</c>
+
+00:02:30.000 --> 00:02:30.010 align:start position:0%
+so we can just say current sum plus
+ 
+
+00:02:30.010 --> 00:02:33.090 align:start position:0%
+so we can just say current sum plus
+negative<00:02:30.850><c> 1</c><00:02:31.300><c> and</c><00:02:31.570><c> so</c><00:02:31.600><c> this</c><00:02:32.260><c> can</c><00:02:32.440><c> save</c><00:02:32.680><c> us</c><00:02:32.860><c> time</c>
+
+00:02:33.090 --> 00:02:33.100 align:start position:0%
+negative 1 and so this can save us time
+ 
+
+00:02:33.100 --> 00:02:34.980 align:start position:0%
+negative 1 and so this can save us time
+let's<00:02:33.580><c> take</c><00:02:33.760><c> a</c><00:02:33.790><c> look</c><00:02:34.030><c> at</c><00:02:34.120><c> the</c><00:02:34.240><c> time</c><00:02:34.480><c> complexity</c>
+
+00:02:34.980 --> 00:02:34.990 align:start position:0%
+let's take a look at the time complexity
+ 
+
+00:02:34.990 --> 00:02:36.780 align:start position:0%
+let's take a look at the time complexity
+of<00:02:35.110><c> this</c><00:02:35.410><c> solution</c><00:02:35.830><c> so</c><00:02:36.340><c> we're</c><00:02:36.490><c> going</c><00:02:36.580><c> to</c><00:02:36.670><c> have</c>
+
+00:02:36.780 --> 00:02:36.790 align:start position:0%
+of this solution so we're going to have
+ 
+
+00:02:36.790 --> 00:02:38.520 align:start position:0%
+of this solution so we're going to have
+another<00:02:37.090><c> for</c><00:02:37.570><c> loop</c><00:02:37.810><c> which</c><00:02:38.230><c> is</c><00:02:38.350><c> going</c><00:02:38.470><c> to</c>
+
+00:02:38.520 --> 00:02:38.530 align:start position:0%
+another for loop which is going to
+ 
+
+00:02:38.530 --> 00:02:40.740 align:start position:0%
+another for loop which is going to
+represent<00:02:38.710><c> the</c><00:02:39.160><c> start</c><00:02:39.520><c> so</c><00:02:39.910><c> start</c><00:02:40.360><c> is</c><00:02:40.510><c> going</c><00:02:40.630><c> to</c>
+
+00:02:40.740 --> 00:02:40.750 align:start position:0%
+represent the start so start is going to
+ 
+
+00:02:40.750 --> 00:02:43.620 align:start position:0%
+represent the start so start is going to
+range<00:02:40.930><c> from</c><00:02:41.170><c> 0</c><00:02:41.530><c> all</c><00:02:42.220><c> the</c><00:02:42.550><c> way</c><00:02:42.670><c> to</c><00:02:42.730><c> n</c><00:02:42.970><c> minus</c><00:02:43.360><c> 1</c>
+
+00:02:43.620 --> 00:02:43.630 align:start position:0%
+range from 0 all the way to n minus 1
+ 
+
+00:02:43.630 --> 00:02:46.290 align:start position:0%
+range from 0 all the way to n minus 1
+and<00:02:44.020><c> we're</c><00:02:44.710><c> gonna</c><00:02:44.800><c> have</c><00:02:44.980><c> another</c><00:02:45.310><c> loop</c><00:02:45.640><c> for</c>
+
+00:02:46.290 --> 00:02:46.300 align:start position:0%
+and we're gonna have another loop for
+ 
+
+00:02:46.300 --> 00:02:48.090 align:start position:0%
+and we're gonna have another loop for
+the<00:02:46.660><c> end</c><00:02:47.020><c> of</c><00:02:47.440><c> the</c><00:02:47.590><c> sub</c><00:02:47.800><c> array</c>
+
+00:02:48.090 --> 00:02:48.100 align:start position:0%
+the end of the sub array
+ 
+
+00:02:48.100 --> 00:02:51.900 align:start position:0%
+the end of the sub array
+J<00:02:49.060><c> is</c><00:02:49.360><c> going</c><00:02:49.510><c> to</c><00:02:49.630><c> range</c><00:02:49.870><c> from</c><00:02:49.960><c> I</c><00:02:50.580><c> 2</c><00:02:51.580><c> the</c><00:02:51.700><c> last</c>
+
+00:02:51.900 --> 00:02:51.910 align:start position:0%
+J is going to range from I 2 the last
+ 
+
+00:02:51.910 --> 00:02:54.930 align:start position:0%
+J is going to range from I 2 the last
+index<00:02:52.390><c> n</c><00:02:52.630><c> minus</c><00:02:53.080><c> 1</c><00:02:53.350><c> and</c><00:02:53.650><c> then</c><00:02:54.250><c> inside</c><00:02:54.700><c> of</c><00:02:54.760><c> the</c>
+
+00:02:54.930 --> 00:02:54.940 align:start position:0%
+index n minus 1 and then inside of the
+ 
+
+00:02:54.940 --> 00:02:56.580 align:start position:0%
+index n minus 1 and then inside of the
+loop<00:02:55.120><c> we're</c><00:02:55.420><c> going</c><00:02:55.450><c> to</c><00:02:55.600><c> maintain</c><00:02:55.810><c> our</c><00:02:56.350><c> current</c>
+
+00:02:56.580 --> 00:02:56.590 align:start position:0%
+loop we're going to maintain our current
+ 
+
+00:02:56.590 --> 00:03:01.490 align:start position:0%
+loop we're going to maintain our current
+sum<00:02:56.890><c> and</c><00:02:57.100><c> simply</c><00:02:57.520><c> just</c><00:02:57.550><c> add</c><00:02:58.620><c> the</c><00:02:59.620><c> number</c><00:03:00.270><c> J</c>
+
+00:03:01.490 --> 00:03:01.500 align:start position:0%
+sum and simply just add the number J
+ 
+
+00:03:01.500 --> 00:03:04.890 align:start position:0%
+sum and simply just add the number J
+each<00:03:02.500><c> iteration</c><00:03:02.860><c> of</c><00:03:03.250><c> the</c><00:03:03.310><c> loop</c><00:03:03.460><c> right</c><00:03:03.940><c> so</c><00:03:04.660><c> this</c>
+
+00:03:04.890 --> 00:03:04.900 align:start position:0%
+each iteration of the loop right so this
+ 
+
+00:03:04.900 --> 00:03:06.720 align:start position:0%
+each iteration of the loop right so this
+is<00:03:05.080><c> a</c><00:03:05.110><c> little</c><00:03:05.470><c> more</c><00:03:05.650><c> efficient</c><00:03:06.130><c> o</c><00:03:06.250><c> of</c><00:03:06.580><c> N</c>
+
+00:03:06.720 --> 00:03:06.730 align:start position:0%
+is a little more efficient o of N
+ 
+
+00:03:06.730 --> 00:03:09.360 align:start position:0%
+is a little more efficient o of N
+squared<00:03:07.120><c> it's</c><00:03:07.570><c> a</c><00:03:07.660><c> pretty</c><00:03:07.870><c> easy</c><00:03:08.370><c> optimization</c>
+
+00:03:09.360 --> 00:03:09.370 align:start position:0%
+squared it's a pretty easy optimization
+ 
+
+00:03:09.370 --> 00:03:11.430 align:start position:0%
+squared it's a pretty easy optimization
+to<00:03:09.580><c> make</c><00:03:09.850><c> and</c><00:03:10.150><c> it</c><00:03:10.270><c> improves</c><00:03:10.750><c> your</c><00:03:10.900><c> solution</c><00:03:11.380><c> a</c>
+
+00:03:11.430 --> 00:03:11.440 align:start position:0%
+to make and it improves your solution a
+ 
+
+00:03:11.440 --> 00:03:13.680 align:start position:0%
+to make and it improves your solution a
+lot<00:03:11.620><c> but</c><00:03:11.890><c> can</c><00:03:12.010><c> we</c><00:03:12.130><c> do</c><00:03:12.280><c> even</c><00:03:12.490><c> better</c><00:03:13.120><c> than</c><00:03:13.420><c> this</c>
+
+00:03:13.680 --> 00:03:13.690 align:start position:0%
+lot but can we do even better than this
+ 
+
+00:03:13.690 --> 00:03:15.690 align:start position:0%
+lot but can we do even better than this
+so<00:03:14.200><c> now</c><00:03:14.530><c> the</c><00:03:14.590><c> question</c><00:03:15.310><c> you</c><00:03:15.340><c> should</c><00:03:15.490><c> ask</c>
+
+00:03:15.690 --> 00:03:15.700 align:start position:0%
+so now the question you should ask
+ 
+
+00:03:15.700 --> 00:03:18.479 align:start position:0%
+so now the question you should ask
+yourself<00:03:16.060><c> is</c><00:03:16.540><c> do</c><00:03:16.810><c> we</c><00:03:16.959><c> have</c><00:03:17.200><c> to</c><00:03:17.350><c> compute</c><00:03:17.770><c> every</c>
+
+00:03:18.479 --> 00:03:18.489 align:start position:0%
+yourself is do we have to compute every
+ 
+
+00:03:18.489 --> 00:03:21.720 align:start position:0%
+yourself is do we have to compute every
+sub<00:03:18.820><c> array</c><00:03:19.090><c> starting</c><00:03:20.020><c> at</c><00:03:20.170><c> every</c><00:03:20.890><c> single</c><00:03:21.190><c> value</c>
+
+00:03:21.720 --> 00:03:21.730 align:start position:0%
+sub array starting at every single value
+ 
+
+00:03:21.730 --> 00:03:23.280 align:start position:0%
+sub array starting at every single value
+in<00:03:21.880><c> the</c><00:03:21.970><c> array</c><00:03:22.000><c> right</c><00:03:22.510><c> do</c><00:03:22.630><c> we</c><00:03:22.690><c> have</c><00:03:22.780><c> to</c><00:03:22.930><c> start</c>
+
+00:03:23.280 --> 00:03:23.290 align:start position:0%
+in the array right do we have to start
+ 
+
+00:03:23.290 --> 00:03:26.460 align:start position:0%
+in the array right do we have to start
+at<00:03:23.530><c> every</c><00:03:24.310><c> single</c><00:03:24.610><c> value</c><00:03:24.970><c> and</c><00:03:25.420><c> compute</c><00:03:25.870><c> every</c>
+
+00:03:26.460 --> 00:03:26.470 align:start position:0%
+at every single value and compute every
+ 
+
+00:03:26.470 --> 00:03:28.650 align:start position:0%
+at every single value and compute every
+sub<00:03:26.739><c> array</c><00:03:26.920><c> that</c><00:03:27.070><c> comes</c><00:03:27.280><c> after</c><00:03:27.760><c> it</c><00:03:27.880><c> I</c><00:03:28.060><c> don't</c>
+
+00:03:28.650 --> 00:03:28.660 align:start position:0%
+sub array that comes after it I don't
+ 
+
+00:03:28.660 --> 00:03:30.900 align:start position:0%
+sub array that comes after it I don't
+think<00:03:28.750><c> we</c><00:03:29.020><c> do</c><00:03:29.380><c> remember</c><00:03:30.100><c> we're</c><00:03:30.459><c> trying</c><00:03:30.640><c> to</c>
+
+00:03:30.900 --> 00:03:30.910 align:start position:0%
+think we do remember we're trying to
+ 
+
+00:03:30.910 --> 00:03:33.750 align:start position:0%
+think we do remember we're trying to
+find<00:03:31.150><c> the</c><00:03:31.450><c> maximum</c><00:03:32.200><c> sub</c><00:03:32.440><c> array</c><00:03:32.709><c> we</c><00:03:33.130><c> can</c><00:03:33.160><c> use</c>
+
+00:03:33.750 --> 00:03:33.760 align:start position:0%
+find the maximum sub array we can use
+ 
+
+00:03:33.760 --> 00:03:36.960 align:start position:0%
+find the maximum sub array we can use
+that<00:03:34.090><c> knowledge</c><00:03:34.570><c> to</c><00:03:35.200><c> help</c><00:03:35.500><c> us</c><00:03:35.940><c> make</c><00:03:36.940><c> a</c>
+
+00:03:36.960 --> 00:03:36.970 align:start position:0%
+that knowledge to help us make a
+ 
+
+00:03:36.970 --> 00:03:39.750 align:start position:0%
+that knowledge to help us make a
+shortcut<00:03:37.540><c> so</c><00:03:38.110><c> let's</c><00:03:38.530><c> take</c><00:03:38.739><c> a</c><00:03:38.770><c> look</c><00:03:39.010><c> at</c><00:03:39.130><c> this</c><00:03:39.370><c> we</c>
+
+00:03:39.750 --> 00:03:39.760 align:start position:0%
+shortcut so let's take a look at this we
+ 
+
+00:03:39.760 --> 00:03:42.150 align:start position:0%
+shortcut so let's take a look at this we
+have<00:03:39.790><c> a</c><00:03:39.940><c> negative</c><00:03:40.270><c> 2</c><00:03:40.660><c> right</c><00:03:40.930><c> so</c><00:03:41.410><c> when</c><00:03:42.010><c> we're</c>
+
+00:03:42.150 --> 00:03:42.160 align:start position:0%
+have a negative 2 right so when we're
+ 
+
+00:03:42.160 --> 00:03:43.890 align:start position:0%
+have a negative 2 right so when we're
+starting<00:03:42.370><c> here</c><00:03:42.760><c> that's</c><00:03:43.060><c> gonna</c><00:03:43.269><c> be</c><00:03:43.480><c> our</c><00:03:43.600><c> max</c>
+
+00:03:43.890 --> 00:03:43.900 align:start position:0%
+starting here that's gonna be our max
+ 
+
+00:03:43.900 --> 00:03:47.790 align:start position:0%
+starting here that's gonna be our max
+sum<00:03:44.380><c> so</c><00:03:44.800><c> far</c><00:03:44.830><c> then</c><00:03:45.820><c> we</c><00:03:46.060><c> get</c><00:03:46.360><c> to</c><00:03:47.080><c> negative</c><00:03:47.380><c> 2</c>
+
+00:03:47.790 --> 00:03:47.800 align:start position:0%
+sum so far then we get to negative 2
+ 
+
+00:03:47.800 --> 00:03:51.390 align:start position:0%
+sum so far then we get to negative 2
+plus<00:03:48.340><c> 1</c><00:03:48.760><c> so</c><00:03:49.480><c> this</c><00:03:49.750><c> is</c><00:03:49.989><c> negative</c><00:03:50.590><c> 1</c><00:03:50.830><c> so</c><00:03:50.860><c> far</c>
+
+00:03:51.390 --> 00:03:51.400 align:start position:0%
+plus 1 so this is negative 1 so far
+ 
+
+00:03:51.400 --> 00:03:54.420 align:start position:0%
+plus 1 so this is negative 1 so far
+right<00:03:51.700><c> do</c><00:03:52.570><c> we</c><00:03:52.720><c> actually</c><00:03:52.989><c> need</c><00:03:53.680><c> this</c><00:03:53.920><c> negative</c>
+
+00:03:54.420 --> 00:03:54.430 align:start position:0%
+right do we actually need this negative
+ 
+
+00:03:54.430 --> 00:03:56.520 align:start position:0%
+right do we actually need this negative
+number<00:03:54.459><c> the</c><00:03:55.060><c> negative</c><00:03:55.660><c> numbers</c><00:03:56.170><c> don't</c>
+
+00:03:56.520 --> 00:03:56.530 align:start position:0%
+number the negative numbers don't
+ 
+
+00:03:56.530 --> 00:03:58.920 align:start position:0%
+number the negative numbers don't
+contribute<00:03:57.160><c> anything</c><00:03:57.519><c> in</c><00:03:58.180><c> this</c><00:03:58.330><c> case</c><00:03:58.570><c> right</c>
+
+00:03:58.920 --> 00:03:58.930 align:start position:0%
+contribute anything in this case right
+ 
+
+00:03:58.930 --> 00:04:02.250 align:start position:0%
+contribute anything in this case right
+so<00:03:59.500><c> we</c><00:03:59.650><c> can</c><00:03:59.830><c> disk</c><00:04:00.459><c> we</c><00:04:00.760><c> can</c><00:04:00.790><c> basically</c><00:04:01.780><c> ignore</c>
+
+00:04:02.250 --> 00:04:02.260 align:start position:0%
+so we can disk we can basically ignore
+ 
+
+00:04:02.260 --> 00:04:05.699 align:start position:0%
+so we can disk we can basically ignore
+that<00:04:02.830><c> value</c><00:04:03.280><c> right</c><00:04:03.330><c> once</c><00:04:04.330><c> we</c><00:04:04.540><c> get</c><00:04:04.750><c> here</c><00:04:05.200><c> we</c><00:04:05.530><c> can</c>
+
+00:04:05.699 --> 00:04:05.709 align:start position:0%
+that value right once we get here we can
+ 
+
+00:04:05.709 --> 00:04:08.160 align:start position:0%
+that value right once we get here we can
+basically<00:04:06.070><c> say</c><00:04:06.580><c> this</c><00:04:06.760><c> negative</c><00:04:07.450><c> value</c><00:04:07.660><c> this</c>
+
+00:04:08.160 --> 00:04:08.170 align:start position:0%
+basically say this negative value this
+ 
+
+00:04:08.170 --> 00:04:10.350 align:start position:0%
+basically say this negative value this
+negative<00:04:08.709><c> prefix</c><00:04:09.580><c> that</c><00:04:09.850><c> came</c><00:04:10.090><c> before</c>
+
+00:04:10.350 --> 00:04:10.360 align:start position:0%
+negative prefix that came before
+ 
+
+00:04:10.360 --> 00:04:13.229 align:start position:0%
+negative prefix that came before
+positive<00:04:11.260><c> 1</c><00:04:11.500><c> isn't</c><00:04:12.100><c> gonna</c><00:04:12.190><c> help</c><00:04:12.459><c> us</c><00:04:12.670><c> at</c><00:04:12.850><c> all</c><00:04:13.030><c> so</c>
+
+00:04:13.229 --> 00:04:13.239 align:start position:0%
+positive 1 isn't gonna help us at all so
+ 
+
+00:04:13.239 --> 00:04:14.970 align:start position:0%
+positive 1 isn't gonna help us at all so
+let's<00:04:13.540><c> not</c><00:04:13.690><c> even</c><00:04:13.840><c> consider</c><00:04:14.530><c> it</c>
+
+00:04:14.970 --> 00:04:14.980 align:start position:0%
+let's not even consider it
+ 
+
+00:04:14.980 --> 00:04:17.520 align:start position:0%
+let's not even consider it
+so<00:04:15.250><c> next</c><00:04:15.580><c> do</c><00:04:15.790><c> we</c><00:04:15.880><c> get</c><00:04:16.000><c> to</c><00:04:16.120><c> this</c><00:04:16.239><c> negative</c><00:04:16.510><c> 3</c><00:04:16.959><c> now</c>
+
+00:04:17.520 --> 00:04:17.530 align:start position:0%
+so next do we get to this negative 3 now
+ 
+
+00:04:17.530 --> 00:04:21.150 align:start position:0%
+so next do we get to this negative 3 now
+up<00:04:17.830><c> until</c><00:04:18.250><c> here</c><00:04:18.700><c> our</c><00:04:19.380><c> total</c><00:04:20.380><c> sum</c><00:04:20.620><c> is</c><00:04:20.650><c> negative</c>
+
+00:04:21.150 --> 00:04:21.160 align:start position:0%
+up until here our total sum is negative
+ 
+
+00:04:21.160 --> 00:04:24.960 align:start position:0%
+up until here our total sum is negative
+2<00:04:21.400><c> right</c><00:04:21.729><c> so</c><00:04:22.419><c> then</c><00:04:22.750><c> we</c><00:04:22.780><c> get</c><00:04:23.080><c> to</c><00:04:23.289><c> this</c><00:04:23.530><c> 4</c><00:04:24.220><c> this</c><00:04:24.789><c> is</c>
+
+00:04:24.960 --> 00:04:24.970 align:start position:0%
+2 right so then we get to this 4 this is
+ 
+
+00:04:24.970 --> 00:04:26.940 align:start position:0%
+2 right so then we get to this 4 this is
+a<00:04:25.000><c> negative</c><00:04:25.419><c> prefix</c><00:04:26.050><c> that</c><00:04:26.229><c> came</c><00:04:26.440><c> before</c>
+
+00:04:26.940 --> 00:04:26.950 align:start position:0%
+a negative prefix that came before
+ 
+
+00:04:26.950 --> 00:04:29.310 align:start position:0%
+a negative prefix that came before
+negative<00:04:27.370><c> too</c><00:04:27.580><c> right</c><00:04:27.850><c> so</c><00:04:28.030><c> we</c><00:04:28.330><c> can</c><00:04:28.360><c> say</c><00:04:28.780><c> up</c>
+
+00:04:29.310 --> 00:04:29.320 align:start position:0%
+negative too right so we can say up
+ 
+
+00:04:29.320 --> 00:04:30.960 align:start position:0%
+negative too right so we can say up
+until<00:04:29.590><c> this</c><00:04:29.920><c> point</c><00:04:30.040><c> we're</c><00:04:30.460><c> not</c><00:04:30.610><c> even</c><00:04:30.850><c> gonna</c>
+
+00:04:30.960 --> 00:04:30.970 align:start position:0%
+until this point we're not even gonna
+ 
+
+00:04:30.970 --> 00:04:33.600 align:start position:0%
+until this point we're not even gonna
+consider<00:04:31.150><c> what</c><00:04:31.840><c> came</c><00:04:32.050><c> before</c><00:04:32.260><c> so</c><00:04:33.190><c> this</c><00:04:33.340><c> one</c>
+
+00:04:33.600 --> 00:04:33.610 align:start position:0%
+consider what came before so this one
+ 
+
+00:04:33.610 --> 00:04:35.400 align:start position:0%
+consider what came before so this one
+and<00:04:33.820><c> negative</c><00:04:34.180><c> three</c><00:04:34.480><c> aren't</c><00:04:34.930><c> gonna</c><00:04:35.050><c> help</c><00:04:35.230><c> us</c>
+
+00:04:35.400 --> 00:04:35.410 align:start position:0%
+and negative three aren't gonna help us
+ 
+
+00:04:35.410 --> 00:04:37.590 align:start position:0%
+and negative three aren't gonna help us
+at<00:04:35.560><c> all</c><00:04:35.650><c> just</c><00:04:36.010><c> ignore</c><00:04:36.400><c> them</c><00:04:36.640><c> now</c><00:04:37.030><c> we</c><00:04:37.090><c> get</c><00:04:37.420><c> to</c><00:04:37.570><c> a</c>
+
+00:04:37.590 --> 00:04:37.600 align:start position:0%
+at all just ignore them now we get to a
+ 
+
+00:04:37.600 --> 00:04:39.990 align:start position:0%
+at all just ignore them now we get to a
+negative<00:04:37.870><c> one</c><00:04:38.320><c> so</c><00:04:39.040><c> the</c><00:04:39.160><c> prefix</c><00:04:39.640><c> that</c><00:04:39.730><c> came</c>
+
+00:04:39.990 --> 00:04:40.000 align:start position:0%
+negative one so the prefix that came
+ 
+
+00:04:40.000 --> 00:04:41.940 align:start position:0%
+negative one so the prefix that came
+before<00:04:40.150><c> this</c><00:04:40.510><c> was</c><00:04:40.720><c> a</c><00:04:40.750><c> positive</c><00:04:41.050><c> four</c><00:04:41.590><c> so</c><00:04:41.770><c> we're</c>
+
+00:04:41.940 --> 00:04:41.950 align:start position:0%
+before this was a positive four so we're
+ 
+
+00:04:41.950 --> 00:04:43.770 align:start position:0%
+before this was a positive four so we're
+gonna<00:04:42.040><c> not</c><00:04:42.490><c> delete</c><00:04:43.030><c> it</c><00:04:43.150><c> from</c><00:04:43.300><c> our</c><00:04:43.480><c> list</c><00:04:43.660><c> we're</c>
+
+00:04:43.770 --> 00:04:43.780 align:start position:0%
+gonna not delete it from our list we're
+ 
+
+00:04:43.780 --> 00:04:46.200 align:start position:0%
+gonna not delete it from our list we're
+gonna<00:04:43.870><c> keep</c><00:04:44.200><c> that</c><00:04:44.470><c> positive</c><00:04:44.710><c> four</c><00:04:45.250><c> and</c><00:04:45.430><c> add</c><00:04:45.970><c> it</c>
+
+00:04:46.200 --> 00:04:46.210 align:start position:0%
+gonna keep that positive four and add it
+ 
+
+00:04:46.210 --> 00:04:48.030 align:start position:0%
+gonna keep that positive four and add it
+to<00:04:46.240><c> this</c><00:04:46.450><c> negative</c><00:04:46.870><c> one</c><00:04:47.140><c> so</c><00:04:47.590><c> now</c><00:04:47.770><c> we're</c><00:04:47.920><c> gonna</c>
+
+00:04:48.030 --> 00:04:48.040 align:start position:0%
+to this negative one so now we're gonna
+ 
+
+00:04:48.040 --> 00:04:50.340 align:start position:0%
+to this negative one so now we're gonna
+be<00:04:48.250><c> a</c><00:04:48.280><c> three</c><00:04:48.730><c> so</c><00:04:48.970><c> far</c><00:04:49.210><c> now</c><00:04:49.750><c> we</c><00:04:49.780><c> get</c><00:04:50.140><c> to</c><00:04:50.320><c> a</c>
+
+00:04:50.340 --> 00:04:50.350 align:start position:0%
+be a three so far now we get to a
+ 
+
+00:04:50.350 --> 00:04:52.950 align:start position:0%
+be a three so far now we get to a
+positive<00:04:51.160><c> two</c><00:04:51.370><c> right</c><00:04:51.640><c> even</c><00:04:52.330><c> though</c><00:04:52.630><c> there's</c><00:04:52.900><c> a</c>
+
+00:04:52.950 --> 00:04:52.960 align:start position:0%
+positive two right even though there's a
+ 
+
+00:04:52.960 --> 00:04:55.230 align:start position:0%
+positive two right even though there's a
+negative<00:04:53.560><c> one</c><00:04:53.770><c> that</c><00:04:53.920><c> came</c><00:04:54.190><c> before</c><00:04:54.400><c> it</c><00:04:54.670><c> well</c>
+
+00:04:55.230 --> 00:04:55.240 align:start position:0%
+negative one that came before it well
+ 
+
+00:04:55.240 --> 00:04:56.940 align:start position:0%
+negative one that came before it well
+there<00:04:55.450><c> was</c><00:04:55.540><c> a</c><00:04:55.570><c> positive</c><00:04:56.260><c> forward</c><00:04:56.530><c> that</c><00:04:56.770><c> came</c>
+
+00:04:56.940 --> 00:04:56.950 align:start position:0%
+there was a positive forward that came
+ 
+
+00:04:56.950 --> 00:04:58.950 align:start position:0%
+there was a positive forward that came
+before<00:04:57.130><c> that</c><00:04:57.340><c> so</c><00:04:58.030><c> if</c><00:04:58.150><c> we</c><00:04:58.270><c> get</c><00:04:58.450><c> rid</c><00:04:58.720><c> of</c><00:04:58.810><c> this</c>
+
+00:04:58.950 --> 00:04:58.960 align:start position:0%
+before that so if we get rid of this
+ 
+
+00:04:58.960 --> 00:05:00.900 align:start position:0%
+before that so if we get rid of this
+negative<00:04:59.200><c> one</c><00:04:59.620><c> we</c><00:04:59.770><c> also</c><00:05:00.040><c> have</c><00:05:00.430><c> to</c><00:05:00.550><c> get</c><00:05:00.700><c> rid</c><00:05:00.880><c> of</c>
+
+00:05:00.900 --> 00:05:00.910 align:start position:0%
+negative one we also have to get rid of
+ 
+
+00:05:00.910 --> 00:05:02.790 align:start position:0%
+negative one we also have to get rid of
+the<00:05:01.120><c> positive</c><00:05:01.600><c> four</c><00:05:01.840><c> which</c><00:05:02.020><c> we</c><00:05:02.170><c> don't</c><00:05:02.440><c> want</c><00:05:02.590><c> to</c>
+
+00:05:02.790 --> 00:05:02.800 align:start position:0%
+the positive four which we don't want to
+ 
+
+00:05:02.800 --> 00:05:04.530 align:start position:0%
+the positive four which we don't want to
+do<00:05:02.950><c> remember</c><00:05:03.550><c> we</c><00:05:03.700><c> have</c><00:05:03.790><c> to</c><00:05:03.910><c> keep</c><00:05:03.940><c> the</c>
+
+00:05:04.530 --> 00:05:04.540 align:start position:0%
+do remember we have to keep the
+ 
+
+00:05:04.540 --> 00:05:06.720 align:start position:0%
+do remember we have to keep the
+sub-array<00:05:04.930><c> contiguous</c><00:05:05.830><c> so</c><00:05:06.190><c> I'm</c><00:05:06.310><c> not</c><00:05:06.520><c> gonna</c>
+
+00:05:06.720 --> 00:05:06.730 align:start position:0%
+sub-array contiguous so I'm not gonna
+ 
+
+00:05:06.730 --> 00:05:09.240 align:start position:0%
+sub-array contiguous so I'm not gonna
+chop<00:05:07.090><c> this</c><00:05:07.450><c> portion</c><00:05:07.960><c> off</c><00:05:08.170><c> I'm</c><00:05:08.530><c> gonna</c><00:05:08.710><c> keep</c><00:05:09.010><c> it</c>
+
+00:05:09.240 --> 00:05:09.250 align:start position:0%
+chop this portion off I'm gonna keep it
+ 
+
+00:05:09.250 --> 00:05:11.310 align:start position:0%
+chop this portion off I'm gonna keep it
+now<00:05:09.640><c> now</c><00:05:09.970><c> we're</c><00:05:10.090><c> gonna</c><00:05:10.180><c> add</c><00:05:10.360><c> two</c><00:05:10.660><c> to</c><00:05:10.810><c> it</c><00:05:10.930><c> so</c><00:05:11.110><c> now</c>
+
+00:05:11.310 --> 00:05:11.320 align:start position:0%
+now now we're gonna add two to it so now
+ 
+
+00:05:11.320 --> 00:05:13.560 align:start position:0%
+now now we're gonna add two to it so now
+we're<00:05:11.440><c> gonna</c><00:05:11.560><c> be</c><00:05:11.740><c> at</c><00:05:11.860><c> five</c><00:05:12.270><c> then</c><00:05:13.270><c> we're</c><00:05:13.450><c> gonna</c>
+
+00:05:13.560 --> 00:05:13.570 align:start position:0%
+we're gonna be at five then we're gonna
+ 
+
+00:05:13.570 --> 00:05:17.160 align:start position:0%
+we're gonna be at five then we're gonna
+get<00:05:13.720><c> this</c><00:05:13.930><c> one</c><00:05:14.290><c> we're</c><00:05:14.920><c> gonna</c><00:05:14.980><c> add</c><00:05:15.310><c> it</c><00:05:15.970><c> and</c><00:05:16.420><c> get</c>
+
+00:05:17.160 --> 00:05:17.170 align:start position:0%
+get this one we're gonna add it and get
+ 
+
+00:05:17.170 --> 00:05:18.930 align:start position:0%
+get this one we're gonna add it and get
+our<00:05:17.320><c> sub</c><00:05:17.560><c> array</c><00:05:17.740><c> of</c><00:05:17.860><c> six</c><00:05:18.190><c> and</c><00:05:18.400><c> this</c><00:05:18.640><c> is</c><00:05:18.790><c> the</c>
+
+00:05:18.930 --> 00:05:18.940 align:start position:0%
+our sub array of six and this is the
+ 
+
+00:05:18.940 --> 00:05:20.700 align:start position:0%
+our sub array of six and this is the
+result<00:05:19.330><c> so</c><00:05:19.390><c> far</c><00:05:19.750><c> but</c><00:05:19.870><c> let's</c><00:05:19.930><c> keep</c><00:05:20.260><c> going</c><00:05:20.620><c> and</c>
+
+00:05:20.700 --> 00:05:20.710 align:start position:0%
+result so far but let's keep going and
+ 
+
+00:05:20.710 --> 00:05:22.560 align:start position:0%
+result so far but let's keep going and
+see<00:05:20.980><c> what</c><00:05:21.010><c> happens</c><00:05:21.580><c> next</c><00:05:22.030><c> will</c><00:05:22.420><c> have</c><00:05:22.540><c> a</c>
+
+00:05:22.560 --> 00:05:22.570 align:start position:0%
+see what happens next will have a
+ 
+
+00:05:22.570 --> 00:05:25.080 align:start position:0%
+see what happens next will have a
+negative<00:05:22.810><c> five</c><00:05:23.200><c> right</c><00:05:23.560><c> so</c><00:05:23.800><c> minus</c><00:05:24.340><c> five</c><00:05:24.610><c> now</c>
+
+00:05:25.080 --> 00:05:25.090 align:start position:0%
+negative five right so minus five now
+ 
+
+00:05:25.090 --> 00:05:28.110 align:start position:0%
+negative five right so minus five now
+we're<00:05:25.240><c> at</c><00:05:25.330><c> one</c><00:05:25.860><c> so</c><00:05:26.860><c> obviously</c><00:05:27.340><c> we</c><00:05:27.700><c> decreased</c>
+
+00:05:28.110 --> 00:05:28.120 align:start position:0%
+we're at one so obviously we decreased
+ 
+
+00:05:28.120 --> 00:05:30.870 align:start position:0%
+we're at one so obviously we decreased
+our<00:05:28.270><c> sub</c><00:05:28.510><c> array</c><00:05:28.750><c> but</c><00:05:29.350><c> we</c><00:05:29.470><c> know</c><00:05:29.770><c> this</c><00:05:30.430><c> negative</c>
+
+00:05:30.870 --> 00:05:30.880 align:start position:0%
+our sub array but we know this negative
+ 
+
+00:05:30.880 --> 00:05:32.940 align:start position:0%
+our sub array but we know this negative
+five<00:05:31.120><c> is</c><00:05:31.450><c> not</c><00:05:31.930><c> going</c><00:05:32.110><c> to</c><00:05:32.170><c> be</c><00:05:32.260><c> deleted</c><00:05:32.590><c> because</c>
+
+00:05:32.940 --> 00:05:32.950 align:start position:0%
+five is not going to be deleted because
+ 
+
+00:05:32.950 --> 00:05:36.810 align:start position:0%
+five is not going to be deleted because
+we<00:05:33.340><c> had</c><00:05:33.460><c> a</c><00:05:33.490><c> positive</c><00:05:34.030><c> six</c><00:05:34.330><c> portion</c><00:05:35.820><c> comprised</c>
+
+00:05:36.810 --> 00:05:36.820 align:start position:0%
+we had a positive six portion comprised
+ 
+
+00:05:36.820 --> 00:05:38.850 align:start position:0%
+we had a positive six portion comprised
+of<00:05:37.030><c> these</c><00:05:37.270><c> four</c><00:05:37.600><c> elements</c><00:05:38.050><c> that</c><00:05:38.200><c> were</c><00:05:38.560><c> that</c>
+
+00:05:38.850 --> 00:05:38.860 align:start position:0%
+of these four elements that were that
+ 
+
+00:05:38.860 --> 00:05:39.690 align:start position:0%
+of these four elements that were that
+came<00:05:39.070><c> before</c><00:05:39.250><c> that</c>
+
+00:05:39.690 --> 00:05:39.700 align:start position:0%
+came before that
+ 
+
+00:05:39.700 --> 00:05:42.330 align:start position:0%
+came before that
+lastly<00:05:40.450><c> we</c><00:05:40.780><c> get</c><00:05:40.930><c> a</c><00:05:40.960><c> positive</c><00:05:41.230><c> four</c><00:05:41.740><c> again</c><00:05:42.100><c> add</c>
+
+00:05:42.330 --> 00:05:42.340 align:start position:0%
+lastly we get a positive four again add
+ 
+
+00:05:42.340 --> 00:05:47.070 align:start position:0%
+lastly we get a positive four again add
+that<00:05:43.120><c> our</c><00:05:43.680><c> sum</c><00:05:44.680><c> is</c><00:05:44.710><c> still</c><00:05:45.040><c> five</c><00:05:45.340><c> so</c><00:05:46.000><c> we</c><00:05:46.480><c> see</c>
+
+00:05:47.070 --> 00:05:47.080 align:start position:0%
+that our sum is still five so we see
+ 
+
+00:05:47.080 --> 00:05:49.350 align:start position:0%
+that our sum is still five so we see
+that<00:05:47.260><c> the</c><00:05:47.500><c> max</c><00:05:47.740><c> of</c><00:05:47.950><c> our</c><00:05:48.130><c> a</c><00:05:48.220><c> was</c><00:05:48.550><c> this</c><00:05:48.790><c> portion</c>
+
+00:05:49.350 --> 00:05:49.360 align:start position:0%
+that the max of our a was this portion
+ 
+
+00:05:49.360 --> 00:05:53.130 align:start position:0%
+that the max of our a was this portion
+of<00:05:49.600><c> these</c><00:05:50.470><c> four</c><00:05:50.860><c> elements</c><00:05:51.340><c> which</c><00:05:51.810><c> totaled</c><00:05:52.810><c> to</c>
+
+00:05:53.130 --> 00:05:53.140 align:start position:0%
+of these four elements which totaled to
+ 
+
+00:05:53.140 --> 00:05:55.890 align:start position:0%
+of these four elements which totaled to
+six<00:05:53.500><c> now</c><00:05:54.100><c> this</c><00:05:54.280><c> was</c><00:05:54.460><c> a</c><00:05:54.490><c> linear</c><00:05:54.910><c> time</c><00:05:55.510><c> algorithm</c>
+
+00:05:55.890 --> 00:05:55.900 align:start position:0%
+six now this was a linear time algorithm
+ 
+
+00:05:55.900 --> 00:05:58.140 align:start position:0%
+six now this was a linear time algorithm
+it's<00:05:56.260><c> kind</c><00:05:56.560><c> of</c><00:05:56.650><c> like</c><00:05:56.800><c> a</c><00:05:56.830><c> sliding</c><00:05:57.520><c> window</c><00:05:57.550><c> right</c>
+
+00:05:58.140 --> 00:05:58.150 align:start position:0%
+it's kind of like a sliding window right
+ 
+
+00:05:58.150 --> 00:06:00.900 align:start position:0%
+it's kind of like a sliding window right
+we<00:05:58.660><c> keep</c><00:05:58.960><c> incrementing</c><00:05:59.830><c> our</c><00:06:00.160><c> right</c><00:06:00.490><c> pointer</c>
+
+00:06:00.900 --> 00:06:00.910 align:start position:0%
+we keep incrementing our right pointer
+ 
+
+00:06:00.910 --> 00:06:02.700 align:start position:0%
+we keep incrementing our right pointer
+as<00:06:01.090><c> we</c><00:06:01.330><c> go</c><00:06:01.540><c> as</c><00:06:01.750><c> we</c><00:06:01.840><c> go</c><00:06:02.050><c> through</c><00:06:02.290><c> the</c><00:06:02.410><c> array</c>
+
+00:06:02.700 --> 00:06:02.710 align:start position:0%
+as we go as we go through the array
+ 
+
+00:06:02.710 --> 00:06:04.800 align:start position:0%
+as we go as we go through the array
+right<00:06:02.950><c> but</c><00:06:03.400><c> our</c><00:06:03.520><c> left</c><00:06:03.820><c> pointer</c><00:06:04.240><c> keeps</c><00:06:04.480><c> getting</c>
+
+00:06:04.800 --> 00:06:04.810 align:start position:0%
+right but our left pointer keeps getting
+ 
+
+00:06:04.810 --> 00:06:07.110 align:start position:0%
+right but our left pointer keeps getting
+shifted<00:06:05.140><c> if</c><00:06:05.500><c> we</c><00:06:05.950><c> ever</c><00:06:06.190><c> have</c><00:06:06.640><c> a</c><00:06:06.670><c> negative</c>
+
+00:06:07.110 --> 00:06:07.120 align:start position:0%
+shifted if we ever have a negative
+ 
+
+00:06:07.120 --> 00:06:09.930 align:start position:0%
+shifted if we ever have a negative
+prefix<00:06:07.810><c> like</c><00:06:08.200><c> this</c><00:06:08.380><c> negative</c><00:06:08.830><c> two</c><00:06:09.040><c> or</c><00:06:09.310><c> this</c>
+
+00:06:09.930 --> 00:06:09.940 align:start position:0%
+prefix like this negative two or this
+ 
+
+00:06:09.940 --> 00:06:12.120 align:start position:0%
+prefix like this negative two or this
+negative<00:06:10.420><c> two</c><00:06:10.570><c> portion</c><00:06:11.080><c> comprised</c><00:06:11.770><c> of</c><00:06:11.950><c> these</c>
+
+00:06:12.120 --> 00:06:12.130 align:start position:0%
+negative two portion comprised of these
+ 
+
+00:06:12.130 --> 00:06:14.910 align:start position:0%
+negative two portion comprised of these
+two<00:06:12.400><c> elements</c><00:06:12.970><c> so</c><00:06:13.120><c> anytime</c><00:06:14.110><c> we</c><00:06:14.320><c> get</c><00:06:14.740><c> a</c>
+
+00:06:14.910 --> 00:06:14.920 align:start position:0%
+two elements so anytime we get a
+ 
+
+00:06:14.920 --> 00:06:19.950 align:start position:0%
+two elements so anytime we get a
+negative<00:06:15.460><c> prefix</c><00:06:16.330><c> we</c><00:06:16.750><c> remove</c><00:06:17.140><c> it</c><00:06:17.350><c> and</c><00:06:18.780><c> for</c><00:06:19.780><c> me</c>
+
+00:06:19.950 --> 00:06:19.960 align:start position:0%
+negative prefix we remove it and for me
+ 
+
+00:06:19.960 --> 00:06:21.990 align:start position:0%
+negative prefix we remove it and for me
+it<00:06:20.080><c> kind</c><00:06:20.290><c> of</c><00:06:20.350><c> helps</c><00:06:20.680><c> it</c><00:06:21.250><c> kind</c><00:06:21.490><c> of</c><00:06:21.520><c> helps</c><00:06:21.760><c> me</c><00:06:21.910><c> to</c>
+
+00:06:21.990 --> 00:06:22.000 align:start position:0%
+it kind of helps it kind of helps me to
+ 
+
+00:06:22.000 --> 00:06:23.760 align:start position:0%
+it kind of helps it kind of helps me to
+think<00:06:22.210><c> about</c><00:06:22.420><c> this</c><00:06:22.600><c> as</c><00:06:22.780><c> like</c><00:06:23.050><c> a</c><00:06:23.080><c> sliding</c>
+
+00:06:23.760 --> 00:06:23.770 align:start position:0%
+think about this as like a sliding
+ 
+
+00:06:23.770 --> 00:06:27.810 align:start position:0%
+think about this as like a sliding
+window<00:06:23.940><c> and</c><00:06:25.950><c> since</c><00:06:26.950><c> it's</c><00:06:27.130><c> a</c><00:06:27.220><c> linear</c><00:06:27.460><c> time</c>
+
+00:06:27.810 --> 00:06:27.820 align:start position:0%
+window and since it's a linear time
+ 
+
+00:06:27.820 --> 00:06:29.910 align:start position:0%
+window and since it's a linear time
+algorithm<00:06:28.180><c> the</c><00:06:28.600><c> overall</c><00:06:29.020><c> time</c><00:06:29.260><c> complexity</c><00:06:29.770><c> is</c>
+
+00:06:29.910 --> 00:06:29.920 align:start position:0%
+algorithm the overall time complexity is
+ 
+
+00:06:29.920 --> 00:06:32.880 align:start position:0%
+algorithm the overall time complexity is
+Big<00:06:30.280><c> O</c><00:06:30.490><c> of</c><00:06:30.700><c> n</c><00:06:31.090><c> we</c><00:06:31.960><c> didn't</c><00:06:32.200><c> need</c><00:06:32.320><c> any</c><00:06:32.560><c> extra</c>
+
+00:06:32.880 --> 00:06:32.890 align:start position:0%
+Big O of n we didn't need any extra
+ 
+
+00:06:32.890 --> 00:06:34.530 align:start position:0%
+Big O of n we didn't need any extra
+memory<00:06:33.160><c> we</c><00:06:33.520><c> just</c><00:06:33.760><c> had</c><00:06:33.910><c> to</c><00:06:34.000><c> go</c><00:06:34.180><c> through</c><00:06:34.390><c> the</c>
+
+00:06:34.530 --> 00:06:34.540 align:start position:0%
+memory we just had to go through the
+ 
+
+00:06:34.540 --> 00:06:37.500 align:start position:0%
+memory we just had to go through the
+array<00:06:34.810><c> removing</c><00:06:35.530><c> any</c><00:06:35.770><c> negative</c><00:06:36.490><c> prefix</c><00:06:37.000><c> as</c><00:06:37.150><c> we</c>
+
+00:06:37.500 --> 00:06:37.510 align:start position:0%
+array removing any negative prefix as we
+ 
+
+00:06:37.510 --> 00:06:39.990 align:start position:0%
+array removing any negative prefix as we
+computed<00:06:38.080><c> the</c><00:06:38.230><c> total</c><00:06:38.590><c> sum</c><00:06:38.860><c> okay</c><00:06:39.430><c> so</c><00:06:39.490><c> now</c><00:06:39.790><c> let's</c>
+
+00:06:39.990 --> 00:06:40.000 align:start position:0%
+computed the total sum okay so now let's
+ 
+
+00:06:40.000 --> 00:06:40.629 align:start position:0%
+computed the total sum okay so now let's
+code<00:06:40.270><c> it</c>
+
+00:06:40.629 --> 00:06:40.639 align:start position:0%
+code it
+ 
+
+00:06:40.639 --> 00:06:43.450 align:start position:0%
+code it
+so<00:06:41.270><c> we</c><00:06:41.509><c> can</c><00:06:41.719><c> initialize</c><00:06:42.379><c> our</c><00:06:42.590><c> Max</c><00:06:42.889><c> sub-array</c>
+
+00:06:43.450 --> 00:06:43.460 align:start position:0%
+so we can initialize our Max sub-array
+ 
+
+00:06:43.460 --> 00:06:45.640 align:start position:0%
+so we can initialize our Max sub-array
+to<00:06:43.520><c> the</c><00:06:43.759><c> first</c><00:06:44.150><c> value</c><00:06:44.569><c> in</c><00:06:44.990><c> the</c><00:06:45.169><c> array</c><00:06:45.199><c> that's</c>
+
+00:06:45.640 --> 00:06:45.650 align:start position:0%
+to the first value in the array that's
+ 
+
+00:06:45.650 --> 00:06:47.230 align:start position:0%
+to the first value in the array that's
+like<00:06:45.860><c> the</c><00:06:45.979><c> default</c><00:06:46.340><c> value</c><00:06:46.699><c> that</c><00:06:46.849><c> we're</c><00:06:47.120><c> going</c>
+
+00:06:47.230 --> 00:06:47.240 align:start position:0%
+like the default value that we're going
+ 
+
+00:06:47.240 --> 00:06:50.290 align:start position:0%
+like the default value that we're going
+to<00:06:47.330><c> give</c><00:06:47.509><c> it</c><00:06:47.689><c> because</c><00:06:48.729><c> we</c><00:06:49.729><c> have</c><00:06:49.909><c> to</c><00:06:50.029><c> give</c><00:06:50.180><c> it</c>
+
+00:06:50.290 --> 00:06:50.300 align:start position:0%
+to give it because we have to give it
+ 
+
+00:06:50.300 --> 00:06:52.420 align:start position:0%
+to give it because we have to give it
+something<00:06:50.599><c> and</c><00:06:51.110><c> it</c><00:06:51.439><c> can't</c><00:06:51.680><c> be</c><00:06:51.740><c> zero</c><00:06:51.860><c> because</c>
+
+00:06:52.420 --> 00:06:52.430 align:start position:0%
+something and it can't be zero because
+ 
+
+00:06:52.430 --> 00:06:54.040 align:start position:0%
+something and it can't be zero because
+we<00:06:52.669><c> know</c><00:06:52.789><c> we</c><00:06:52.909><c> have</c><00:06:52.999><c> negative</c><00:06:53.419><c> values</c><00:06:53.779><c> in</c><00:06:53.930><c> this</c>
+
+00:06:54.040 --> 00:06:54.050 align:start position:0%
+we know we have negative values in this
+ 
+
+00:06:54.050 --> 00:06:56.469 align:start position:0%
+we know we have negative values in this
+array<00:06:54.349><c> and</c><00:06:54.650><c> we</c><00:06:55.460><c> know</c><00:06:55.639><c> the</c><00:06:55.879><c> array</c><00:06:56.120><c> is</c><00:06:56.180><c> non</c><00:06:56.449><c> empty</c>
+
+00:06:56.469 --> 00:06:56.479 align:start position:0%
+array and we know the array is non empty
+ 
+
+00:06:56.479 --> 00:06:59.080 align:start position:0%
+array and we know the array is non empty
+so<00:06:57.050><c> the</c><00:06:57.169><c> zeroth</c><00:06:57.529><c> value</c><00:06:58.189><c> of</c><00:06:58.340><c> the</c><00:06:58.550><c> array</c><00:06:58.969><c> is</c>
+
+00:06:59.080 --> 00:06:59.090 align:start position:0%
+so the zeroth value of the array is
+ 
+
+00:06:59.090 --> 00:07:00.640 align:start position:0%
+so the zeroth value of the array is
+always<00:06:59.240><c> going</c><00:06:59.449><c> to</c><00:06:59.509><c> exist</c><00:06:59.870><c> and</c><00:07:00.080><c> we're</c><00:07:00.439><c> going</c><00:07:00.590><c> to</c>
+
+00:07:00.640 --> 00:07:00.650 align:start position:0%
+always going to exist and we're going to
+ 
+
+00:07:00.650 --> 00:07:03.189 align:start position:0%
+always going to exist and we're going to
+be<00:07:00.909><c> constantly</c><00:07:01.909><c> computing</c><00:07:02.419><c> our</c><00:07:02.479><c> current</c><00:07:02.960><c> sum</c>
+
+00:07:03.189 --> 00:07:03.199 align:start position:0%
+be constantly computing our current sum
+ 
+
+00:07:03.199 --> 00:07:05.339 align:start position:0%
+be constantly computing our current sum
+so<00:07:03.409><c> I'm</c><00:07:03.499><c> going</c><00:07:03.650><c> to</c><00:07:03.710><c> initialize</c><00:07:04.069><c> that</c><00:07:04.310><c> to</c><00:07:04.490><c> zero</c>
+
+00:07:05.339 --> 00:07:05.349 align:start position:0%
+so I'm going to initialize that to zero
+ 
+
+00:07:05.349 --> 00:07:10.830 align:start position:0%
+so I'm going to initialize that to zero
+so<00:07:06.349><c> let's</c><00:07:06.529><c> go</c><00:07:06.710><c> through</c><00:07:06.979><c> each</c><00:07:07.039><c> number</c><00:07:07.789><c> in</c><00:07:07.999><c> nomes</c>
+
+00:07:10.830 --> 00:07:10.840 align:start position:0%
+ 
+ 
+
+00:07:10.840 --> 00:07:13.929 align:start position:0%
+ 
+now<00:07:11.840><c> remember</c><00:07:12.319><c> if</c><00:07:12.469><c> we</c><00:07:12.590><c> had</c><00:07:12.740><c> a</c><00:07:12.770><c> negative</c><00:07:13.099><c> prefix</c>
+
+00:07:13.929 --> 00:07:13.939 align:start position:0%
+now remember if we had a negative prefix
+ 
+
+00:07:13.939 --> 00:07:15.939 align:start position:0%
+now remember if we had a negative prefix
+we're<00:07:14.419><c> going</c><00:07:14.539><c> to</c><00:07:14.599><c> remove</c><00:07:14.960><c> that</c><00:07:15.020><c> portion</c><00:07:15.439><c> from</c>
+
+00:07:15.939 --> 00:07:15.949 align:start position:0%
+we're going to remove that portion from
+ 
+
+00:07:15.949 --> 00:07:18.070 align:start position:0%
+we're going to remove that portion from
+our<00:07:16.250><c> current</c><00:07:16.610><c> sum</c><00:07:16.849><c> so</c><00:07:17.090><c> the</c><00:07:17.509><c> way</c><00:07:17.629><c> that</c><00:07:17.810><c> we</c><00:07:17.930><c> can</c>
+
+00:07:18.070 --> 00:07:18.080 align:start position:0%
+our current sum so the way that we can
+ 
+
+00:07:18.080 --> 00:07:19.959 align:start position:0%
+our current sum so the way that we can
+check<00:07:18.289><c> this</c><00:07:18.560><c> is</c><00:07:18.770><c> just</c><00:07:19.099><c> check</c><00:07:19.310><c> if</c><00:07:19.460><c> current</c><00:07:19.669><c> sum</c>
+
+00:07:19.959 --> 00:07:19.969 align:start position:0%
+check this is just check if current sum
+ 
+
+00:07:19.969 --> 00:07:22.119 align:start position:0%
+check this is just check if current sum
+is<00:07:20.389><c> at</c><00:07:20.599><c> any</c><00:07:20.779><c> point</c><00:07:20.870><c> negative</c><00:07:21.469><c> if</c><00:07:21.800><c> it's</c><00:07:21.949><c> less</c>
+
+00:07:22.119 --> 00:07:22.129 align:start position:0%
+is at any point negative if it's less
+ 
+
+00:07:22.129 --> 00:07:23.890 align:start position:0%
+is at any point negative if it's less
+than<00:07:22.340><c> zero</c><00:07:22.639><c> we're</c><00:07:22.879><c> just</c><00:07:23.000><c> going</c><00:07:23.120><c> to</c><00:07:23.150><c> reset</c><00:07:23.779><c> it</c>
+
+00:07:23.890 --> 00:07:23.900 align:start position:0%
+than zero we're just going to reset it
+ 
+
+00:07:23.900 --> 00:07:27.610 align:start position:0%
+than zero we're just going to reset it
+back<00:07:24.139><c> to</c><00:07:24.199><c> zero</c><00:07:24.439><c> and</c><00:07:25.599><c> then</c><00:07:26.599><c> after</c><00:07:27.199><c> that</c><00:07:27.379><c> we</c><00:07:27.590><c> can</c>
+
+00:07:27.610 --> 00:07:27.620 align:start position:0%
+back to zero and then after that we can
+ 
+
+00:07:27.620 --> 00:07:31.420 align:start position:0%
+back to zero and then after that we can
+add<00:07:27.949><c> our</c><00:07:27.979><c> current</c><00:07:28.550><c> number</c><00:07:28.879><c> to</c><00:07:29.419><c> this</c><00:07:30.129><c> this</c><00:07:31.129><c> will</c>
+
+00:07:31.420 --> 00:07:31.430 align:start position:0%
+add our current number to this this will
+ 
+
+00:07:31.430 --> 00:07:33.010 align:start position:0%
+add our current number to this this will
+make<00:07:31.610><c> sure</c><00:07:31.819><c> that</c><00:07:31.849><c> we're</c><00:07:32.150><c> always</c><00:07:32.360><c> computing</c>
+
+00:07:33.010 --> 00:07:33.020 align:start position:0%
+make sure that we're always computing
+ 
+
+00:07:33.020 --> 00:07:35.439 align:start position:0%
+make sure that we're always computing
+the<00:07:33.110><c> maximum</c><00:07:33.740><c> that</c><00:07:33.889><c> we</c><00:07:33.949><c> can</c><00:07:34.060><c> now</c><00:07:35.060><c> this</c><00:07:35.210><c> current</c>
+
+00:07:35.439 --> 00:07:35.449 align:start position:0%
+the maximum that we can now this current
+ 
+
+00:07:35.449 --> 00:07:37.480 align:start position:0%
+the maximum that we can now this current
+sum<00:07:35.719><c> could</c><00:07:35.990><c> be</c><00:07:36.199><c> the</c><00:07:36.349><c> possible</c><00:07:36.800><c> maximum</c><00:07:37.310><c> so</c>
+
+00:07:37.480 --> 00:07:37.490 align:start position:0%
+sum could be the possible maximum so
+ 
+
+00:07:37.490 --> 00:07:39.369 align:start position:0%
+sum could be the possible maximum so
+we're<00:07:37.669><c> just</c><00:07:37.699><c> going</c><00:07:37.969><c> to</c><00:07:38.000><c> update</c><00:07:38.539><c> our</c><00:07:38.749><c> max</c><00:07:39.110><c> sub</c>
+
+00:07:39.369 --> 00:07:39.379 align:start position:0%
+we're just going to update our max sub
+ 
+
+00:07:39.379 --> 00:07:43.929 align:start position:0%
+we're just going to update our max sub
+array<00:07:39.650><c> to</c><00:07:41.349><c> the</c><00:07:42.349><c> maximum</c><00:07:42.830><c> of</c><00:07:42.979><c> itself</c><00:07:43.370><c> as</c><00:07:43.699><c> well</c>
+
+00:07:43.929 --> 00:07:43.939 align:start position:0%
+array to the maximum of itself as well
+ 
+
+00:07:43.939 --> 00:07:47.290 align:start position:0%
+array to the maximum of itself as well
+as<00:07:43.999><c> the</c><00:07:44.120><c> max</c><00:07:44.479><c> that</c><00:07:44.629><c> we</c><00:07:44.719><c> just</c><00:07:44.930><c> computed</c><00:07:46.300><c> after</c>
+
+00:07:47.290 --> 00:07:47.300 align:start position:0%
+as the max that we just computed after
+ 
+
+00:07:47.300 --> 00:07:48.700 align:start position:0%
+as the max that we just computed after
+we're<00:07:47.449><c> done</c><00:07:47.599><c> with</c><00:07:47.659><c> that</c><00:07:47.810><c> we'll</c><00:07:48.560><c> return</c>
+
+00:07:48.700 --> 00:07:48.710 align:start position:0%
+we're done with that we'll return
+ 
+
+00:07:48.710 --> 00:07:50.679 align:start position:0%
+we're done with that we'll return
+whatever<00:07:49.219><c> we</c><00:07:49.400><c> computed</c><00:07:49.879><c> as</c><00:07:50.029><c> the</c><00:07:50.060><c> max</c><00:07:50.449><c> sub</c>
+
+00:07:50.679 --> 00:07:50.689 align:start position:0%
+whatever we computed as the max sub
+ 
+
+00:07:50.689 --> 00:07:55.029 align:start position:0%
+whatever we computed as the max sub
+array<00:07:50.930><c> I</c><00:07:52.839><c> hope</c><00:07:53.839><c> this</c><00:07:53.990><c> helps</c><00:07:54.319><c> show</c><00:07:54.560><c> you</c><00:07:54.620><c> kind</c><00:07:54.949><c> of</c>
+
+00:07:55.029 --> 00:07:55.039 align:start position:0%
+array I hope this helps show you kind of
+ 
+
+00:07:55.039 --> 00:07:56.980 align:start position:0%
+array I hope this helps show you kind of
+the<00:07:55.129><c> intuition</c><00:07:55.669><c> behind</c><00:07:55.879><c> the</c><00:07:56.419><c> solution</c><00:07:56.899><c> of</c>
+
+00:07:56.980 --> 00:07:56.990 align:start position:0%
+the intuition behind the solution of
+ 
+
+00:07:56.990 --> 00:07:58.629 align:start position:0%
+the intuition behind the solution of
+this<00:07:57.110><c> problem</c><00:07:57.589><c> if</c><00:07:57.770><c> it</c><00:07:58.039><c> was</c><00:07:58.159><c> helpful</c>
+
+00:07:58.629 --> 00:07:58.639 align:start position:0%
+this problem if it was helpful
+ 
+
+00:07:58.639 --> 00:08:00.760 align:start position:0%
+this problem if it was helpful
+leave<00:07:59.060><c> a</c><00:07:59.089><c> like</c><00:07:59.330><c> and</c><00:07:59.509><c> subscribe</c><00:07:59.990><c> and</c><00:08:00.199><c> thank</c><00:08:00.649><c> you</c>
+
+00:08:00.760 --> 00:08:00.770 align:start position:0%
+leave a like and subscribe and thank you
+ 
+
+00:08:00.770 --> 00:08:03.339 align:start position:0%
+leave a like and subscribe and thank you
+for<00:08:00.949><c> watching</c>
+

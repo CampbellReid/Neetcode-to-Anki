@@ -1,0 +1,316 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+let's solve the problem in code and
+decode strings so you can tell the
+interface is a little bit different this
+time and that's because we are going to
+be solving this problem on lint code
+because this is a premium leak code
+problem and we can solve it for free on
+the website lint code and also this is a
+problem from the blind 75 list a list of
+75 common leak code questions that we've
+been tracking on this spreadsheet the
+link to this will be in the description
+if you want to take a look and we're
+pretty much done with the main problems
+i'm going to be solving another one
+today a premium one in code and decode
+strings this is a pretty decent problem
+to understand so let's get into it so
+it's a bit of a design algorithm because
+we're going to have two different
+functions that we want to implement so
+we're given a list of strings and we
+want to write two functions we want to
+encode this list of strings into a
+single string and you can kind of see
+that down here we were given an input
+list of strings lint code love you and
+we want it to be a single string such as
+this one in the bottom right and then
+the d code is just going to be the
+opposite of in code we're going to be
+given a single string and we want to be
+able to convert this string in into back
+into that original list of strings that
+we were given and it's up to us on how
+we want to design this algorithm but the
+tricky part is going to be that where
+the basic assumption is that in our
+input we could have any possible
+character in the inputs not just limited
+to lowercase a to z so the difficult
+thing is going to be how do we create
+some kind of delimiter between each word
+how do we know when one word ends and
+another word begins that's kind of what
+we're going to be focusing on so let's
+get into that solution so suppose we
+were given two strings like this neat
+and code and we want to convert it into
+another string basically into a single
+string right so a naive way would be
+something like this right just say okay
+neat code now the problem is okay we did
+that the encode was fine but now we want
+to decode this back into the two
+original strings that we had but there's
+no way for us to determine right because
+we can't remember where one word ends
+and another word begins right so we need
+to have some kind of uh character or
+something to separate words what if we
+used a pound sign or something right
+something like this or any character
+maybe a question mark or something right
+but this is like our special character
+that's what's going to separate words
+for us so in this case it works out
+right we'll go character by character in
+the input once we get to a pound sign
+okay we'll say that this word ends so
+we'll say okay we have
+the first word neat and this is not
+included in any of the words so we skip
+it and then we get to the remaining
+portion code and there aren't any more
+pound signs so that works out in this
+case right but basically our assumption
+when we're using this pound sign is that
+the pound is never going to actually
+show up in any words what happens if we
+have a word suppose in our word code in
+the middle of the word we have a pound
+sign right there's no reason why we
+can't have something like this so in
+that case when we when we take this and
+encode it we're gonna get something like
+this as the encoded string right and
+then when we split it we're gonna have
+three different words neat co and d e
+but in the original you can see we only
+had two words but when we get our output
+we're gonna end up splitting this into
+three words which is not what we wanted
+to do right we want to transform it back
+into what was originally given to us so
+having just a single special character
+delimiter is not going to work because
+that delimiter could actually show up in
+some of the words wouldn't it be nice if
+in the encoded string we somehow already
+knew how many characters would go in the
+first word how many characters would go
+in the second word etc etc so then we
+could just say okay let's take the first
+four characters encode it back into the
+first word then take the next five
+characters and code it into the second
+word so how could we you know do
+something like that well one way would
+basically be by maintaining some kind of
+array right when we're given this uh
+inputs a list of strings and we want to
+encode it to a single string we can for
+every single word basically have an
+integer right the first word is four
+characters the next word is five
+characters etc but then where are we
+gonna store this list because you know
+this is a valid solution if we're
+storing this list somewhere but
+basically in the description they don't
+want us to store any kind of state
+variable this encode and decode needs to
+be stateless so when we have this list 4
+5 we cannot store it in a separate data
+structure is it possible for us to store
+it in the string itself how about when
+we're encoding this we want to know okay
+starting at the beginning here how many
+of these characters are going to be in
+the first word well why not just put
+that number at the beginning right 4 at
+the beginning of this encoded string
+that works because then we can look at
+the beginning transform it into an
+integer but one thing is what if the
+word itself had some integers in it well
+now we need another delimiter right
+we're gonna have our integer always at
+the beginning there's always going to be
+an integer at the beginning the string
+is always going to start with an integer
+that integer is going to represent what
+the length of the following word is
+going to be but we're going to have a
+delimiter in between the integer and
+between the word itself
+so basically we're going to read each
+character until we reach the delimiter
+and once we reach the delimiter we're
+going to take all the characters that we
+just read which are going to be
+transformed into an integer so this 4 is
+going to be mapped to four and then
+we're going to count the next four
+characters after the delimiter which in
+this case is going to be pound and that
+works because we're only going to read
+one delimiter we're always gonna we're
+gonna expect a single pound sign no
+matter what right so even if the first
+character here was a pound it still
+works because we're gonna read an
+integer four read a single pound sign
+and then say okay take the next four
+characters even if they include pound
+even if they included some integer like
+eight or you know six or something right
+if they include integer pound it doesn't
+matter because this tells us how many
+characters are going to be in the first
+word and then once we read those four
+characters what are we going to expect
+to be next well we're going to expect
+some word but we want to know how long
+that word is going to be so we're going
+to do exactly what we just did over here
+having an integer followed by a pound
+sign and we're going to put that same
+thing over here so in this case we're
+going to have a 5 and a pound sign
+because the next word is going to be
+five characters long so this is kind of
+how we're storing the integers inside of
+the encoded string so that we know how
+to decode it we know how long each of
+the strings is going to be so i hope
+this makes sense now i'm going to show
+you how to actually code it up by the
+way the overall time complexity of
+encode and decode is going to be of n
+where n is going to be the total number
+of characters given to us in the list of
+words so with that being said we are
+ready to get into the code okay so now
+let's get into the code you can see the
+interface is a little bit different yes
+we are doing this on lint code rather
+than leak code because it's free on
+there so let's start with the encode
+function it's a little bit easier so
+remember we're given a list of strings
+and we want to encode it into a single
+string how are we going to do that well
+we're going to go string by string in
+the input and to the result we want to
+append this encoded string s how are we
+encoding it again well remember we're
+going to take the length of the string
+and you know this the length of the
+string is going to be an integer but we
+want to transform that into a string so
+let's do that in python pretty easily
+just like this
+plus
+we want to add the delimiter to the
+pound sign so we have the length of the
+string followed by the delimiter pound
+sign followed by the string itself s so
+then you know this is kind of the format
+that we agreed upon this is how we're
+going to be encoding it because it's
+going to be easy for us to decode this
+as well so we're going to do this for
+every single string in the input add it
+to the result and then we can go ahead
+and return that result so encode was
+pretty straightforward d decode is going
+to be a little bit more tricky but we
+know the rules that we can follow so
+this time we're given a single string a
+single encoded string which is going to
+be you know encoded using the function
+that we just wrote so how are we going
+to decode it into a list of strings in
+this case our result is going to be a
+list of strings and i'm also going to
+have a pointer i which is going to tell
+us what position that we're at in the
+input string so far so i'm going to just
+iterate character by character so while
+i is still in bounds we are going to
+read character by character basically
+decoding each string so when we start
+off the first position that we're going
+to be at is going to be an integer right
+so what we want to do is we want to find
+the delimiter we want to find the end of
+the integer so we're going to have a
+second pointer j initially it's going to
+be at i and while the characters the
+character at
+pointer j is not equal to the pound
+meaning that we're still at an integer
+character we're going to keep
+incrementing j by 1. and we're
+guaranteed to find a pound character
+right because we that's kind of how we
+encoded it up above so we're going to
+keep incrementing until we get to that
+pound character and then once we get to
+the pound character we know that our
+integer the length of the following
+string is going to be from our string
+starting at index i going all the way up
+until index j but not including index j
+right so that's this portion is going to
+be the integer right now it's a string
+so we want to uh transform it into or
+convert it into an integer we can do
+that in python pretty easily just like
+this so now this length variable tells
+us how many following characters we have
+to read after j in order to get every
+character of the string so in other
+words if we start string at index j plus
+1 because remember j is at the delimiter
+character so j plus one is going to be
+the first character in the string itself
+and we want to go all the way until the
+end of that string how do we get that
+well right now we have the length of
+that string so we can say j
+plus 1 plus length this will give us the
+entire string and what do we want to do
+with the string well we want to append
+it to the result so let's go ahead and
+do just that so basically each iteration
+of this loop is gonna read one entire
+word and then we're gonna go again loop
+again and read more words until we reach
+the end of the string but one thing we
+forgot is how are we gonna update our
+pointer i well we just read a single
+word so now we want to start at the next
+word how do we get that well our pointer
+i is just going to be set to j
+plus 1 plus length because this is
+actually not this is going to be
+basically the beginning of the next
+string or it could be the end of the
+entire string right but either way this
+is how we are going to be updating our j
+each iteration of the loop once we're
+done with that our result will be
+containing all the decoded strings so we
+can go ahead and return that result
+and as you can see i just ran the code
+and it looks like it works and it is
+pretty efficient so i hope that this was
+helpful let me hide that so i hope that
+this was helpful if it was please like
+and subscribe it supports the channel a
+lot and i'll hopefully see you pretty

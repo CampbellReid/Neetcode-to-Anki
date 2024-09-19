@@ -1,0 +1,638 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+let's solve a pretty
+difficult problem median of two sorted
+arrays
+so we're given two arrays nums one and
+nums two that are already
+in sorted order but they could be of
+different sizes
+m and n and we want to return the median
+of both of the arrays when they have
+been put together
+and sorted so not individually but we
+want to put them together and then find
+the median of both of them
+and not only that but we want to do it
+efficiently so log of m
+plus n worst case right so
+one example we can see one array could
+be one
+three another array could be two and in
+this case
+when you put the two arrays together
+it's pretty obvious that
+two is the median that the median is the
+middle value
+now we know that there are other
+examples where we might have an even
+number of total elements
+one two three four when you put those
+together
+we get one two three four in this case
+we have
+two numbers that are in the middle two
+and three so what do we do we can just
+take the average
+of these two and we know the average is
+2.5
+but both of these examples used a
+merged array but we know if we actually
+merged
+two arrays together like one two and
+three four
+the worst case is actually big o n plus
+m and that's not log
+so we know in most cases when people
+want a
+log algorithm you need binary search and
+that's exactly what i'm going to show
+you right now how to solve this problem
+with binary search so let's say we are
+given a different example let's call
+this array b
+and let's call this array a so we know
+we can
+merge these two arrays right and then
+the median is obvious but what exactly
+is a median well it's the middle
+value right in this case this is the
+middle value
+and we know that because we know to the
+left of it
+there are six elements and to the right
+of it
+there are six elements so in this case
+we have a
+array of 13 elements and this happens
+to be the middle the left partition
+of six elements is the same size as the
+right partition of six elements so what
+we're doing
+is partitioning the array into two equal
+halves
+roughly right because we know there's an
+odd case and an even case
+now let's just take hypothetically this
+eight doesn't exist
+then in reality we have 12 elements so
+we take the left partition to be six
+elements and the right partition to be
+six elements
+so in that case we know we can take the
+two
+middle most elements or in other words
+the right most value in
+our left partition and the leftmost
+value
+in our right partition and take the
+average so add them together
+and divide by two we know that's going
+to be 3.5
+so how can we simulate that without
+actually
+merging these two arrays how can we
+simulate that with just
+the original arrays which are still in
+sorted order right
+luckily for us they are given in sorted
+order so keep in mind that the total
+number of elements we have
+in this case is 13 and half the number
+of elements we have
+is roughly six i'm going to round down
+in this case and when we talk about
+partitioning we want our
+left partition to be roughly equal
+to half so when we partition this
+we want the left to be roughly 6. so the
+most intuitive way to do this
+is let's get half of the elements of
+let's say
+a right so i'm going to have a left
+pointer initialized here and i'm going
+to have a right pointer initialized
+here and i'm gonna find the middle so we
+know this is index zero this is index
+four i add them together on average
+so we know that the middle is gonna be
+two right so what are we actually gonna
+do
+so this is going to be our middle value
+right
+and basically what that means is our
+left partition is going to include that
+so so far our left partition
+initially is going to be like this now
+obviously we can increase it by adding
+an element
+we can also decrease it by removing an
+element
+but initially let's have our left
+partition have
+three values in it so it has three
+values great now can we repeat that same
+process
+up here well the good thing is we don't
+actually need to because look in this
+case if we do that we're gonna get
+four and we can basic if we want we can
+run binary search up here too but is
+that even necessary because
+look at this half our elements are
+six so really what we can do is say half
+minus three over here
+is going to be equal to three so if we
+run binary search on just
+this bottom ray on this bottom array we
+can
+compute the size of the left partition
+for the second
+array right we can just compute it using
+our half
+value and since we know 6 minus three is
+three we know initially we can say that
+the left partition of this
+is gonna be three as well we don't even
+need to keep
+a left and right pointer for this array
+so these two
+uh sub arrays make up our left partition
+now my question is how do we
+know if we found the correct left
+partition or not
+well we want them to be in order right
+so notice how we already know that this
+3 is going to be
+less than or equal to the element that
+comes after it that's what sorted order
+means
+and we already know this value is going
+to be less than or equal
+to the value to the right of it because
+this is also in sorted order
+but we want to make sure that the left
+partition
+is less than or equal to every
+element in the right partition and this
+is our right partition so
+how can we determine that well one thing
+we can ask
+is is this is the right most
+element in this part of the partition
+less than or
+equal to this value
+and in this case it is we also want to
+ask
+is this value less than or equal
+to the left most value in
+this part of the partition in the right
+partition
+is it less than or equal to that in this
+case
+it is and what this tells us is that
+our left partition has been done
+correctly
+and if it's not clear enough let me just
+write it out again so remember if we
+merge these two arrays this is what it's
+going to look like
+and our left partition is going to be
+this right we have 13 elements this is
+our left partition
+and we can say that this is our right
+partition
+but since it's odd we can add that extra
+element
+and you can see that that's exactly what
+we found here right
+okay so we know we found the left
+partition correctly right so the left
+is going to be this sixth element but
+how do we find that middle value
+well in this case either of these two is
+a
+four so either of them is going to be
+the median right we have two fours
+either of them could be the median but
+hypothetically let's say
+one of these was a five so let's say
+maybe in the top
+we had a 5 so this would be a 5.
+how would we find the median in that
+case well
+from these two values right we know one
+of them has to be the median
+what we would do is take the minimum of
+both of them
+so we take the minimum of the leftmost
+values in both partitions so
+so the min of 5 and 4 and we know that's
+going to be
+4 so 4 is our median so this example was
+a little too
+easy because we didn't actually really
+need to run a search
+so let's remove one element and let's
+update our total
+to 12 now instead of 13 because we just
+removed one
+the half is still going to be six so now
+let's do the same thing our right
+pointer is going to be here
+this is index zero this is index three
+we divide three by two
+we're going to round down to one so
+this is going to be our middle position
+and what that tells us is our left
+partition
+is going to be like this and now how do
+we get the left partition
+of this well similarly we can take 6
+minus 2 which is the size of our left
+partition so we get four so the left
+partition
+of this is going to be of size four we
+take the first
+four elements so now let's check do we
+have our left partition correctly have
+we done it correctly how can we check
+that well let's check that this
+2 is less than or equal to the 5. we
+know that's true
+right 2 is less than 5. what about this
+value
+is the rightmost value in this partition
+less than or equal to this
+it's not right four is not less than or
+equal to three that's just not true
+so our left partition is not correct in
+this case right how can our left
+partition
+have a 4 where our right partition
+has a 3 that means we have not
+partitioned it correctly
+so what that tells us is we have to
+update these pointers right because we
+are doing binary search
+so initially our left our middle was
+over here so what we're going to do
+is take our left pointer and then shift
+it
+one plus the middle value the old middle
+value because we know
+that we're going to need extra elements
+from array
+a so with our left shifted over here
+we're going to recompute the middle we
+know the index of this is 2
+this is 3 we add them together 2 plus
+3 divided by 2 if we round down is going
+to be 2. so what's going to end up
+happening
+is our left partition is now going to be
+these three elements because mid is
+going to be over here
+and so how many elements from our array
+b
+are we going to need well let's just
+compute it right half is 6
+minus 3 because that's the size of this
+partition
+is going to total to be 3 so we know
+that the partition from
+b is also going to be need to be size
+three
+so let's get the first three elements of
+this now let's
+check have we partitioned our
+left have we partitioned this correctly
+so let's check
+is this three less than or equal
+to this value yes it is three is less
+than four
+is this three less than or equal
+to this value yes three is less than or
+equal to four
+so that tells us we finally partitioned
+our our arrays correctly but you saw
+originally we had 13 elements so it was
+odd and when it's odd in that case what
+we had to do was take the minimum
+of these two values right but in this
+case it's even so what are we actually
+going to do now
+so how are we going to find the median
+well how would we do it if we had a
+sorted array so this is
+how the sorted array would look if we
+merged these two
+right and we can see that look at our
+left partition we have one
+two and three right so this is our left
+partition right now
+right it's size six this is our
+right partition it's also size
+six so clearly if we actually want to
+find the median what we have to do is
+take
+the max value from
+our left partition and take the minimum
+value
+from our right partition right like
+that's
+pretty obvious so how do we translate
+that when we actually have
+two separate arrays how do we actually
+translate that let me show you
+well we can take the minimum of
+these two values right and in this case
+they're clearly
+the same but if they were different we
+would want to take the minimum
+of both of them right and we would want
+to take
+the max of these two values
+of that and this right in this case
+they're
+also the same but they could be
+different hypothetically so we would
+take
+that right and that's going to get us
+the two values we need to compute the
+median and of course we can just divide
+them
+by two so this is the main
+idea of this algorithm you can see that
+it's actually
+somewhat intuitive once you understand
+some of the basic ideas
+let me just show you one last thing
+that's gonna make the code a lot
+easier for us hypothetically our left
+partition
+from this array right a hypothetically
+it could be
+one it could also be zero right we want
+our left partition to be six elements
+what if we just took
+the six elements from over here that's
+gonna make edge cases a little annoying
+like you know how we always wanna make
+sure that
+the value from over here is less than or
+equal
+to that and we wanna make sure that this
+is going to be less than or equal to
+something like this but if we had 0
+values here
+i'm going to basically default that like
+there's
+a positive infinity over here and
+there's a negative infinity over here
+so that if we wanted all elements to
+come from a single array we would
+actually be checking okay is this less
+than or equal to the positive infinity
+and i'm going to show you basically what
+i mean in the code but i hope that the
+main idea
+of what we're doing the binary search to
+find the median
+is at least somewhat obvious now so we
+have two
+arrays nums one and nums two i'm going
+to assign them
+two different variables we'll call them
+a and b
+and you know how we only have to run
+binary search on one of them i'm gonna
+make sure that we run binary search on a
+and i'm gonna make sure that a
+is the smaller of these two arrays
+so we'll check if the length of a is
+bigger than b
+then we're gonna we're gonna swap these
+two uh
+arrays we're gonna swap a and b so let's
+also
+get the total and half length of
+each of these so the total is just gonna
+be the length of each
+added together and half is just going to
+be
+total divided by 2. in python we need
+the double if we want to do integer
+division so now i'm going to run binary
+search on
+a because a is the smaller so the left
+and right pointers are going to be
+zero and length of a minus one
+and remember that half is going to tell
+us the total elements
+in the left partition so now i'm just
+gonna be
+lazy and say while true we're going to
+start
+looping we're going to run our binary
+search because we know that there's
+guaranteed a minimum so once we
+are there's guaranteed a median so once
+we find it we can just return
+it so now of course we want to compute
+the middle value
+of array a that we're gonna use to get
+our left partition
+so we're gonna take left and right
+pointers add them together
+divide by two now how do we get the
+and so this is referring to a so we'll
+call this
+this is for a this is the pointer for b
+now
+we don't actually need to divide
+anything by two we can just take half
+and subtract i from it but one thing
+you need to know that this is going to
+be the index
+so to get rid of the off by one errors
+j is not actually the number of elements
+in array b it's actually the index of
+the midpoint so we're going to take
+subtract i and we're also going to
+subtract 2 from it because we know
+arrays are indexed at zero
+and we're doing this because we know j
+starts at zero and i starts at zero so
+we gotta do the extra minus by two
+so now we wanna get the values
+right the values that we're actually
+gonna need to compare to find
+to determine if we actually found the
+median right if we actually have a
+correct
+left partition so you know we can take
+a left to be a of index i right
+that's going to be the value in the left
+partition that we're going to need to
+use to compare
+and there's also going to be a value in
+the right partition of
+of a right and we know it's adjacent
+right so what we can do is just take
+i plus one and we can repeat this with b
+right so b left is going to be b at
+index j
+b right is going to be b at
+index j plus one but here's the part
+where i'm gonna make our lives a lot
+easier and avoid some edge cases now any
+of these
+indices technically could be out of
+bounds right
+isn't that true so if i is out of bounds
+hypothetically what would that mean that
+would mean i
+is less than zero so if i is less than
+zero is there a default value that we
+can give to a
+left there is and it's called
+negative infinity right so it's going to
+be set to a of i
+if i is greater than or equal to zero so
+if i
+is still in bounds set it to the value
+at this position if it's not let's
+default
+the default value we can give this is
+negative
+infinity and we can do the exact same
+thing for this one
+if this j is actually out of bounds it's
+going to be that
+j is less than or equal is basically
+less than zero so it's gone too far to
+the left
+so if j is greater than or equal to zero
+leave it as it is
+otherwise set this to negative infinity
+and what about this value if i plus
+1 is out of bounds that must mean we
+want
+all the values in array a to be a part
+of our left partition so if i
+plus 1 is out of bounds the default
+value
+that means that the default value we
+want to give it is infinity
+because we've gone too far to the right
+and otherwise if
+i is less than length
+of a then we will leave it as it is
+or i plus 1 rather right we're checking
+if i plus 1
+is out of bounds and we're going to do
+the exact same thing for
+b so if j plus 1 is within bounds
+we can leave it as it is get b of j plus
+1
+otherwise we're going to set it to
+positive infinity
+so now finally with these you'll see
+that we've actually just done
+the algorithm now our life is so easy
+we can check if a left is
+less than or equal to b right
+because that's what we were doing in the
+picture right
+if that's true and if b left
+is less than or equal to a right
+that means our left partition is correct
+so we found the median but remember
+there's two cases
+there's one case that we have an odd
+number of elements so how do we know if
+we have an odd number we can take the
+total number
+mod it by two if this equals one
+then we have to compute the median
+odd so if you remember from the picture
+we can get that by taking
+the minimum of a right
+and b right we can take the minimum of
+these two values
+and return it notice how if one of these
+values
+is an actual real number let's say four
+and one of them
+is positive infinity we're going to take
+the minimum of these two so we're going
+to end up returning
+4. now both of these will never be
+infinity you can run through some
+examples to prove that to yourself
+and if it's not odd that means it's even
+length
+so how can we get the median in that
+case
+well we take the max of
+a left and b left just like we did in
+the picture
+we add that to the minimum of
+a right and b right so these are going
+to be the two
+values in the middle and we can divide
+them
+by two we want decimal division in this
+case
+and then we can return that value so now
+in the case that we
+don't find the median it could be
+possible that a
+left is greater than b
+right like that's a possibility right
+and in that case
+basically that tells us that a left is
+too big so we have
+too many elements from a so we're going
+to reduce the size of a
+so what we can do is take our right
+pointer
+and shift it to i minus one so we're
+reducing the size of the left partition
+from a and the third case is just the
+else case
+where it would be that this condition
+was not true
+in that case we would need to increase
+the size of our left partition from a
+so we would say left is equal to
+i plus 1. and that's actually the entire
+code so we don't need a return statement
+outside because we know
+that our loop is eventually going to
+find a median and we're going to return
+it whether it's odd
+or whether it's even so you can see we
+did this in about 30 lines of code
+and it would probably be less if i
+removed some of the spaces in the
+comments
+and the time complexity is basically
+going to be
+log of the minimum of n
+of n or m because we're running binary
+search on the smaller of the two
+and as you can see it's a pretty
+efficient solution
+and i really hope that this was helpful
+to understand
+like the big picture it's a difficult
+problem i probably wouldn't be able to
+figure this out on my own but you can
+see it
+is definitely understandable once you
+know some of the tricks behind it
+don't forget to like and subscribe if
+this was helpful it supports the channel
+a lot and i'll hopefully

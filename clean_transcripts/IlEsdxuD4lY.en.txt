@@ -1,0 +1,325 @@
+hey everyone welcome back and let's
+write some more neat code today
+so today let's look at unique paths so
+this is a dynamic programming problem
+and it's a relatively straightforward
+one compared to a lot of more difficult
+dynamic programming problems
+we are given a m by n grid
+and so the top left in the grid is
+always going to be our start value and
+so
+from our start value it's like a game we
+have two choices no matter what position
+we're at we
+can only move right or we can move
+down those are our only choices we can't
+go diagonal
+we can't go up and we definitely can't
+go left so our
+goal is to reach the end position or the
+finished
+position that's always going to be the
+bottom right so we start at the top
+left but we want to go to the bottom
+right and the only question
+is how many unique paths are there to
+get to the end position
+so at first this kind of seems like a
+recursive problem right so
+we have two choices right we can go down
+or we can go
+right and then that's a sub problem one
+thing to notice is see how from this
+start position
+we are actually able to move to any
+position
+in the entire grid but if we move
+right from this position what are the
+possible spots we can go to well we can
+go
+right and we can go down so we can
+actually go to any spot
+here but notice we will never be able to
+reach these two elements if we
+start from here and similarly if we go
+down
+from here then what positions can we
+reach we can reach any position to the
+right or below but we'll never be able
+to reach any of these
+positions and another thing to notice is
+literally any spot in the entire grid
+uh the nature of this grid and since we
+can go down and we can go right
+any spot in this grid will be able to
+reach our destination
+so we don't have to worry about not
+being able to reach
+the destination so yeah you might try
+this problem recursively right so we
+have two decisions go down
+or go right and that's great right so
+now from here we also have two choices
+go
+down or go right from here we have two
+choices
+go down or go right
+you kind of notice though there's some
+repeated work
+obviously we can get to this position
+two different ways so
+in that case we're gonna end up doing
+repeated work right from
+this uh way that we got here we're gonna
+we can go down and we can go
+right and we're gonna repeat that over
+here right go
+down or go right so if we're doing depth
+first search recursively
+one thing we can do is have a cache so
+for every row column
+position so for example in this
+position we cache the result so if we
+ever
+reach this spot multiple times we will
+be able to store that and we won't have
+to run
+debt for search again because debt for
+search is pretty expensive
+and so what is this value even going to
+store well
+this is recursive so for each position
+we're actually calculating the number of
+ways
+we can reach the destination right and
+if we can compute that for
+every single like square then
+we can compute that for the original
+square
+right basically what i'm saying is the
+result that we're looking for
+is actually equal so let's say we call
+this spot
+r we call this spot down right so this
+is r
+for right this is d for down the result
+that we're looking for is actually the
+sum of r plus d right but then you might
+ask well how do we compute
+r and how do we compute d well r is just
+gonna be
+r has a value to the right of it and it
+has a value below it right
+so if we want to compute this value
+we can just take the right and down
+values
+and get them right but so what's the
+what ends up being the base case
+so with all that in mind what ends up
+actually being the base case well
+so this is the ending position right so
+how many ways
+from the ending position are there how
+many unique paths are there to
+get to itself well we can choose
+to define that as one so if we've
+defined that value as one we'll notice
+that things actually work out pretty
+nicely
+because let's let's take a look at this
+cell right we want to take the bottom
+value
+and the right value and then add them up
+and then that's what we're going to put
+in this spot
+but we see that there's nothing below it
+right that's out of bounds
+what we can say is well we'll just
+define that to be 0 right
+we'll define every value out of bounds
+to be zero so if we ever need them well
+we can just say
+that they're zero so then what becomes
+the value that we place in the cell well
+we can take
+the right value which is one and the
+bottom value which is zero add them
+together and then we get
+one so we can just put a one over here
+right and
+you might notice well what if we want to
+compute the value in this position
+well the exact same thing will take
+place right the value below is zero the
+value to the right is one
+so we can say that there's one way from
+this position
+to reach the end result and now what's
+what actually is that
+path well we can we can't move down
+right that's out of bounds so we can
+only choose to move
+right and then right and then we'll be
+able to get to the result
+and you can see that's true for every
+position in the bottom row so we're just
+going to fill
+these to be one and you might be able to
+see how
+we are going to arrive at the dynamic
+programming solution now
+so the first thing for us to do is to
+compute this bottom row now let's start
+doing the next
+row right because our ultimate goal is
+to be able to do this value we can work
+our way
+from the bottom to the left and then
+from here
+to the left and then keep doing that and
+eventually we'll
+arrive at the result so what about this
+position
+well it has a zero to the right of it
+because the right is out of bounds it
+has a one
+below it so we'll take zero plus one
+again we get
+one now what about this spot this spot
+actually has a value below it
+and a value to the right of it and those
+values are one and one respectively so
+the sum is gonna be two and that makes
+sense right because if you
+start here there's one path going to the
+right and then going down right that's
+one path to get to the result
+and there's another path going down and
+going
+right that lets us get to the result so
+it makes sense that this would be
+two unique paths to get to the result
+and from here on out it's basic addition
+right so down is one
+right is two add those together we get
+three here we get one plus three that's
+going to be
+four add this together with this that's
+gonna be five
+add these two together that's gonna be
+six add these two together that's gonna
+be seven
+and so you notice now we have filled in
+the second row it looks a little bit
+different than the first row right
+the bottom was all ones and now the only
+thing for us to do is to get this
+last row so we look down and we look
+right that's one plus zero so we're
+going to get a one
+notice how the entire first column is
+one
+that's actually always going to be true
+right because think about it from any
+position
+in the rightmost column the only
+decision we can do is move
+down so there's only going to be one
+path
+to the result so this is going to be two
+plus
+one this is going to be three plus three
+this is going to be four plus six this
+is going to be five plus ten
+this is going to be six plus fifteen and
+so finally
+we are at our start position so we can
+take the bottom and right values
+7 plus 21 add them together we get 28
+so that tells us if we start here there
+are
+28 different paths we can use
+to get to the result 28 unique paths
+and when you look at the picture it
+actually looks more like a math problem
+than a coding problem right and that's
+because it is you can actually
+calculate the number of ways from the
+top left i think in constant time if you
+have like a
+math equation but i don't know a ton
+about it i'm just going to stick to the
+dynamic programming solution
+so let's do what we just did in the
+picture so i'm going to have
+a row and this is initially going to be
+the bottom row it's going to be
+the length of the number of rows that we
+have which is
+n but since it's a grid you could
+probably use either m
+or n and so since we know the bottom row
+is going to be all ones we can start
+going through the other rows
+so we can go through all of the other
+rows except for the last one so
+m minus one and for each row we're going
+to compute
+a new row so this new row is going to be
+above
+the old row and so it's going to be the
+same dimensions of course
+we'll initialize it to all ones and to
+avoid
+the edge case of having to check out of
+bounds what i'm going to do
+is go through every position every
+column except
+the rightmost column and we can do that
+like this because we know the rightmost
+column
+or the last value in every single row is
+always going to be
+one right i showed that in the drawing
+and so we're going to
+start at the second to last position
+keep going until we get to the beginning
+and go
+in reverse order so we're going from
+right to left
+and we know that the new row so if we're
+computing new row of
+j it's going to be new
+row of j plus 1 so the
+this is the right value and the value
+below is just going to be
+the old row at index j and so with this
+loop we'll be able to compute the new
+row and so after we do that we can
+update the row so the old row is now
+going to be set to the
+new row and so it's going to keep doing
+that until we
+end up getting the last or rather the
+first row the top
+row that we actually want to compute so
+after this has been executed that's
+what's going to happen and what we
+actually want to return though
+is in that first row which will be in
+this variable
+we want the first value so at index 0
+that's what we're going to return
+so now we can run our code and by the
+way
+so it is pretty efficient because we did
+this in o
+of n times n time and the memory
+complexity is just the
+big o of n because that's the length of
+a
+row so i hope this was helpful if you
+enjoyed
+please like and subscribe it supports
+the channel a lot and i'll hopefully

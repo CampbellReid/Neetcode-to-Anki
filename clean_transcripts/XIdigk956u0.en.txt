@@ -1,0 +1,171 @@
+hey guys it's me again and let's solve
+another leak code problem
+merge two sorted lists so this is an
+easy problem
+it's a mainly fundamental problem
+there's nothing crazy about it but it's
+a pretty good problem to understand some
+basic stuff so
+we're given two linked lists right so
+this is the first one
+this is the second one both of them are
+already sorted and we just want to merge
+them
+into an output linked list the only
+catch
+is that we have to use the original
+nodes right like we can't create copies
+of the nodes so let's say we have
+list one and we have list two i'm just
+going to take them exactly from the
+example that they gave us
+so we can actually focus on the general
+algorithm itself
+so your intuition will probably solve
+this problem for you so
+it's basically since the lists are
+sorted we start at the beginning of both
+of them right
+now we can just compare the values so
+they're both
+one so it doesn't really matter which
+one we pick
+so we can just take uh i'll say list one
+right so we'll take
+this one and insert it in our output and
+then move to the next one
+and then just continue the algorithm the
+only catch here is that right now our
+output list
+is empty right so this kind of gives us
+an edge case because our we don't even
+have a list itself yet so
+what i like to do is just create like a
+dummy node so
+this is a pretty common technique and
+you avoid
+any edge cases you avoid the edge case
+of the initial empty list
+so let's say we start out with a list
+right this is a dummy node it can have
+any possible value so now we're going to
+insert one
+into our list now we're going to compare
+two values
+of two and one in this case the value
+from list two is smaller so we're gonna
+take it
+insert it into our output list one now
+we're gonna be comparing these two
+so two and three the value from list one
+is smaller
+we take it and insert it into our output
+two and then of course we can move to
+the last value in list one so now we're
+at
+four and three which one of them is
+smaller
+of course three which is the value in
+list
+two i'm running out of space
+but i think you get the idea at this
+point so now we're at the two last
+values from each list
+we'll just take the value from list one
+and add it
+which is four they're both the same so
+it doesn't matter now this is the last
+edge case that we have to worry about so
+now
+for list one there aren't any more
+values left right so we can't really
+continue our algorithm lucky for us
+there's only one value left in list two
+but it's not
+always going to be the case right maybe
+there could be a bunch of other values
+right four five six there could be other
+values
+in list 2. now what would we do in this
+case well we can
+do a really easy thing which is just
+take the remaining
+portion of the list so if we
+run out so if one of the lists is empty
+of course
+the the list two in this case is still
+sorted so we can literally just take
+that list
+insert it into the end of our result
+right
+so that's basically the idea okay now
+let's write the code so remember
+i like and most people like to use this
+technique of creating a dummy node
+so you don't have to worry about the
+edge case of inserting into an empty
+list
+the tail of our list is initially
+i'm just going to say you know the dummy
+so
+now we're going to keep going we're
+going to iterate through these two lists
+what's the condition that we're going to
+do that basically
+if both of them are non-empty right
+because that's
+when we can actually compare the two
+values so while list one and
+list two are non-null so now we can do
+our comparison
+so if the value of list one
+then of course we're going to take the
+list1 value and insert it into
+our tail so tail dot
+next is going to be the node itself
+right list one node
+and then we can of course update our
+now the else case is if list two
+is less than or equal right so if they
+were equal the else condition would
+evaluate so we're going to do the exact
+same thing except
+and don't forget we do have to update
+our tail pointer but the tail pointer is
+going to be updated regardless of which
+node we insert into our list so that's
+why i'm not putting it in either of the
+conditionals
+and you might be tempted to just say
+return
+dummy.next return the list but
+don't forget our condition was list one
+and list two are non-null what if one of
+them
+is empty but the other one isn't right
+now well in that case we want to find
+the non-empty list
+and then insert it at the end of our
+result so if
+l1 is not null then we'll say tail
+dot next is equal to l1 so we're just
+taking that remaining portion of l1
+and inserting it into the end of the
+list
+else if l2 is non-null we would do the
+exact same thing
+with l2 uh only one of them can be
+non-null so let me just run it to prove
+to myself that it still works
+and yep it does and some random
+percentages that always seem to change
+right now it's 65
+but i'm sure if i submit it again it
+could be 10 it could be 99
+i don't know why leak code is so
+inconsistent with this
+but that's besides the point if this was
+helpful please leave a like and
+subscribe
+and thank you for watching and feel free
+to suggest any other problems that you

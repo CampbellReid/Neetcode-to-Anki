@@ -1,0 +1,513 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+let's solve
+hand of straights so we're given a hand
+of
+cards which is given to us as an array
+of integers so each
+card has a particular integer associated
+with it
+we want to rearrange the cards into
+groups so that each group size is a
+particular value that we're given as an
+input parameter for example one
+value we could be given is group size of
+three so every group needs to be of
+group size three
+but not only that every single
+group needs to have consecutive
+cards in it basically a group could be
+let's say
+one two three because all values are
+consecutive it could also be
+2 3 4 right but something like 2
+3 5 would not work right because there's
+a hole
+in here these are not consecutive you
+know we're missing a 4
+right so one thing to recognize with
+this problem is how could we possibly
+break it down into groups right like
+just looking at this we have so many
+different options brute forcing it
+is going to be really complex and
+there's not really any way to
+to eliminate repeated work doing
+something like that so we need to find
+some kind of pattern
+so one thing to notice would be if we
+wanted all groups that two could
+possibly be a part of we know that one
+group could be something like two
+three four right because our group size
+is three
+and this would be if two was in the
+first position now it's also possible
+that two could be
+in the second position right so maybe we
+could have a group like one
+two three so two could be in a group
+where it's the middle value
+or it's the first value but notice how
+we are always going to have some value
+in our input array that's the minimum
+value right
+one is the minimum value in this case
+right so in this case
+we could have a group of one two three
+right one could be the first value now
+are there any other groups that one
+could be a part of this is
+the only group that one could be a part
+of this is what the group would look
+like we can't possibly have a group like
+one
+or zero one two because there's there's
+no value that's
+less than one we don't have a zero right
+so
+in a sense we can be greedy we're always
+gonna look at whatever the minimum value
+available to us is and we're gonna start
+with a group
+like that right so we're gonna basically
+make a group
+like this first and we also notice
+that yes we could have multiple copies
+of the same card so for example we could
+have two cards with a value of
+two so one convenience thing that we're
+gonna probably
+do is count the number of each card that
+we have right so basically
+the best way to do that is going to be
+with a hash map right so for each card
+for example two we would count you know
+two has
+two copies in this input array so that's
+what we're going to basically do we're
+going to use a hash map
+to count the number of cards for each
+value so like i said we're going to be
+taking our input array and then
+converting it into a hash map right so
+one
+occurs one time two occurs two times
+three occurs two times and i think you
+probably already know how to create a
+hashmap like this
+and so given that we have a group size
+of three what we're going to be doing as
+i mentioned is we're always going to be
+looking at the minimum value available
+to us right
+so for example in this case that's gonna
+be a one right we're gonna see
+can we make a a group size of three
+starting at one because we know one
+could only possibly belong to one group
+and this is what the group
+would look like so either we can create
+this group
+in which case then we're going to
+continue our algorithm then we're going
+to refine the next minimum value
+or if we cannot create this group that
+means we can't possibly
+put one into a group so we're going to
+have to return
+false so that's basically what i'm going
+to be going over oh and by the way
+another quick thing that we could
+determine is we
+basically need to guarantee that the
+size of our input array is divisible by
+three right because we need to break
+this up into group sizes of three
+so it would have to be divisible by
+three in this case we have nine elements
+nine divided by three that you know
+there's no remainder with that so
+you know it's possible at least so we're
+gonna start at one right
+and then we're gonna check okay the next
+value that comes after one is a two so
+basically we're going to decrement the
+count of one right we've already used
+our one now we're going to see are there
+any twos available to us we can do that
+in o of one time because yes we have a
+hash map right we can
+basically check that instantly so we do
+have some twos available to us right
+so we're going to decrement the count of
+two set it to one
+and so far we have a two so now we're
+going to look for that last value of
+this group right
+group size three so what's the next
+value going to be we're looking for a
+three do we have any available to us
+let's check in our hash map yep we have
+some threes decrement this count to one
+so we were able to create at least one
+group
+so we created one group now let's see if
+we can create another and once again we
+are going to be looking at what the
+minimum value happens to be available to
+us
+now the minimum is no longer one right
+because we took the count and
+decremented it all the way to zero so we
+don't have any ones available to us
+but we do have a two as the minimum
+value available to us
+but my question is how can we find these
+minimum values
+well of course we could just scan
+through this hash map right and find the
+minimum and we could do that in o of n
+time but can we do even better than end
+time well we know a data structure
+that can efficiently find minimums is a
+min heap right so basically what we can
+do is add all these
+key values from our hash map into a
+min heap right so let's say our min heap
+initially looks something like
+this right so one two three
+four six seven and eight right so
+clearly we have our minimum at the top
+but we know
+as we decremented the count of one down
+to zero we basically
+popped this from our min heap right so
+basically what we're going to be doing
+is
+yes we're going to be popping the
+minimum value from our min
+heap if the count is decremented down to
+zero
+so now when we're actually going to be
+starting our second group we can find
+the minimum value to start out in
+log n time we know that each group is
+basically going to take group size
+to compute so overall what i'm saying
+the time complex is mainly going to be
+log in multiplied by
+n because technically you know the
+number of times we pop from the min heap
+could be you know whatever the size of
+the entire input array happens to be so
+this is basically what i'm saying the
+time complexity is going to be
+but so yes getting the minimum value is
+two okay do we have any twos available
+to us let's take a look
+yes we have at least one two but we're
+decrementing the count now
+so it's gonna be zero twos remaining so
+since we decremented this to zero we
+have to make sure we pop from the min
+heap right we're popping the minimum
+value too okay so now let's look for the
+next value what comes after two
+of course three so do we have any threes
+available to us yes
+in the min heap we do have a three
+available to us but we're going to be
+decrementing its count down to zero now
+so once again since three has no more
+values left what's the minimum value in
+our min heap of course it was three
+because we just popped the two
+so now we once again have to pop from
+the min heap the minimum value which is
+three
+and last but not least we are going to
+get the next value that comes after
+three do we have any fours available
+yes we do so we're just going to repeat
+the exact same process because
+we see we're decrementing the count of
+four down to zero so once again we can
+pop from our min heap we're popping the
+minimum value from our min heap of four
+so we once again created a group size of
+three so now let's see if we can create
+one more group size of three so what
+let's get the minimum value and we know
+we can get that from our min heap now
+it's going to be a six so we're going to
+start this group at six
+are there any sixes available to us yes
+there are but we have to decrement its
+count down to zero
+so basically we're repeating the same
+process let's pop that six
+from our min heap six is the minimum
+value so now let's check
+is there a seven available to us there
+is a seven
+we're decrementing its count to zero
+once again we're going to pop seven from
+the min heap
+the third value we need to complete this
+group is going to be 8
+and we do have an 8 available to us and
+we decrement its count down to 0. so now
+we're popping the last
+value from our min heap we're popping
+the minimum value and it's the last
+value
+we completed this group so now if we try
+to create
+a fourth group we're gonna need to get
+the minimum value from our min heap but
+we
+see that there is no value in the min
+heap so basically that's how you know we
+have no more groups left to create we
+basically
+you know took every value that was given
+to us now let me just quickly go
+over a case where we would return false
+because
+you know in this example we would return
+true because clearly we could break it
+down but let's say this 8 happened to be
+a
+9 and you know then the value in our min
+heap was also a nine
+we were we're looking for an eight to
+complete this group but what we're going
+to find in our hash map is there is no
+eight value
+so in that case we can't complete this
+group so we would return false there's
+another case that we would return
+false and let me show you that so let's
+say i slightly modified the input array
+so i change
+one two into a one so instead
+so for two we only have one occurrence
+of it
+for one we in this case have two
+occurrences of it so
+we're gonna start with the first group
+we're gonna get the minimum value it's a
+one
+so we're gonna start at one we're gonna
+take the count of one
+and decrement it down to one we're gonna
+take the count of two because that's the
+next value we're gonna
+insert in this group and decrement it
+down to zero
+now notice how before so basically what
+i'm saying now we have to pop two from
+our min heap because it's no longer
+available
+but notice how in the first example
+every time we popped from the min heap
+we were popping the minimum value
+in this case we're popping 2 2 is not
+the minimum
+value in our min heap and you know
+it's usually in min heaps you can't just
+pop an arbitrary value you can't just
+search for a value in log in time and
+then just pop
+any particular value you can only pop
+the minimum value
+so how can we get around this how can i
+pop a 2
+efficiently in log in time well one
+workaround would be instead of using a
+min heap you could use
+a tree map so in that case you could
+search for the minimum value or any
+particular value in log
+n time and then remove it with a tree
+map but that's actually not
+necessary in this problem let me show
+you why
+basically the idea is if we're trying to
+pop a value from our min heap
+that's not the minimum value we've
+already
+lost we already cannot break this
+up into group sizes and in that case we
+would return
+false now that's not super intuitive
+until you actually run through the
+example
+take a look what we're doing here
+remember how
+one is the minimum value available to us
+right
+and one since one is the minimum value
+it could only belong to a group that
+looked like
+this right so if we're popping a value
+such as two or even three
+and these values are not the minimum
+values we're basically creating a hole
+in our in our values right so in this
+case
+okay two it's it's true that two is
+available to us and
+three is also available to us right so
+we would decrement the count of three
+down to one
+so we could create one group but when we
+try to create the next group now
+we're gonna get to a one right and then
+we're gonna look for a two but we're
+gonna see
+that two has a count of zero basically
+we were trying to pop a value
+that was in the middle of our group so
+we can't create another group
+because we're missing that two value so
+if basically if we
+ever try to pop a value from our min
+heap
+that's not the minimum value that means
+we have to return
+false because we have a value less than
+it that's available to us like 1 but we
+don't have that 2
+value so we'll never be able to complete
+a group
+with this one value again so you know we
+just have to return false then
+so i think that's how we would solve the
+problem with a min heap
+like i said it's not actually necessary
+you could use a tree map if you wanted
+and you could actually
+not use a data an extra data structure
+at all you could just use
+i think a sorted input array but i'm
+going to be doing it with a min heap
+because i like the
+way the code works out in that case so
+as i mentioned the first thing we do
+want to check
+is that the length of hand itself is
+actually divisible by
+the group size if it's not then of
+course we won't be able to break this
+down so we'll have to return false and
+also we do want to create a hashmap
+uh counting the occurrences of each
+value now i could just use a counter in
+python but i usually like to write it
+out just in case the interviewer wants
+that
+so for every value in our hand i'm going
+to just
+increment the count of n so basically
+one plus whatever it was previously
+and if it does not exist in our map
+we're going to return a default value of
+zero
+we're also going to be using a min heap
+so
+we want only the distinct values that
+are available to us so what we can do is
+take
+count dot keys which is going to be
+distinct values
+convert that into a list which is what
+min heaps are implemented as in python
+but we actually do have to heapify it so
+we're going to do heapify this is a
+linear algorithm it just takes an input
+array and
+transforms it into a min heap now we're
+basically going to continue
+until our min heap is empty so while min
+heap is not empty we're going to get the
+minimum value
+so we can get the minimum value from a
+min heap just at index
+zero so min heap at index zero is going
+to give us the minimum value
+i'm actually going to name this first
+just so it's a little bit more
+descriptive
+and so now we want to see if we can
+create a group size starting at first
+of size group size so we're going to go
+for i in
+range starting at the first value right
+and
+going up until you know the group size
+so just add
+group size to this so the first thing we
+want to check is if this
+i value is even available to us so if i
+is
+not in our hash map then we have to
+return
+false because the value we're looking
+for isn't even available
+if it is available then of course we do
+have to decrement the count of it so
+count
+of i is going to be decremented by one
+and we do have to check
+if this count so if it's now equal to
+zero because remember if it's equal to
+zero that means we have to pop it from
+our min heap
+but if we're popping a value from our
+min heap that's
+not equal to the minimum value in the
+min heap which we know we can find at
+index 0. so if this is not the minimum
+value that we're trying to pop
+that means we have to return false
+immediately because
+if we pop this value if we remove it
+then the next
+group we're not going to be able to
+complete because we know that there is
+an
+i value smaller than this value so we
+won't basically be able to complete the
+next group
+so we'll just return false immediately
+if that's not the case though we are
+able
+to pop from the min heap we are popping
+the minimum value that's easy to do with
+a heap so heap q
+heap pop from the min heap and so
+that's the entire code and if we're able
+to get out of this loop we can return
+true so if we never execute these two
+conditions
+basically if a value is is always
+available to us
+and we're never popping a non-minimum
+value
+and we never return false in either of
+these cases we if we basically break
+the hand into group sizes and then at
+the end we can return true
+so there's many ways to solve this
+problem you can use a sorted input array
+you can use a tree map or you can use a
+heap
+all the time complexities of each
+solution is going to be n log n
+and they all mainly follow similar ideas
+so i hope that this was helpful
+if it was please like and subscribe it
+supports the channel a lot and i'll
+hopefully

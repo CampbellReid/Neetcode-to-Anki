@@ -1,0 +1,498 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+let's solve coco
+eating bananas but before we do i just
+want to say that if you do have any
+requested problems you can feel free to
+leave those in the comments i do have a
+large backlog
+of requested problems that i'm working
+through so it may take some time for me
+to get there
+but you can feel free to request at any
+time and if you find this video helpful
+don't forget to leave a like and
+subscribe for more videos
+so this is a pretty interesting problem
+because there is a brute force solution
+that we can arrive at and that brute
+force solution can easily be
+transitioned
+into a binary search solution which is
+the optimal solution for this problem so
+we're going to be working our way
+from the brute force to that binary
+search solution so coco loves eating
+bananas and we have
+n piles of bananas given to us in a
+piles input array
+we're also given a second parameter h
+which is the number of
+hours that we have in order to eat all
+of the bananas so we have to eat them
+within h hours and so coco has a certain
+eating speed where she can eat a certain
+number of bananas per hour and that
+variable happens to be
+k and k is not an input variable that's
+what we're trying to determine as the
+solution for this problem
+each hour she can only choose one pile
+of bananas
+and eat k bananas from that pile so
+that's what we're trying to determine
+that k
+value if the pile has less than k
+bananas
+she'll eat all of the bananas but she's
+not gonna eat any extra bananas from a
+different pile so what we're saying here
+is
+coco can only eat at most one pile
+one entire pile of bananas in a given
+hour
+so what does that tell us already we're
+given some key information
+let's say we're given a certain number
+of piles right so basically the length
+of p h must be greater than or equal to
+the length of p
+why is that because let's say we have
+five piles right
+so let's say we had five piles and let's
+say this is what the piles look like the
+values aren't too important right one
+one two two
+three and let's say we had h equals four
+hours
+well let's say k equals some really big
+number like three right basically the
+max of this input array okay cocoa eight
+this entire pile cocaine this entire
+pile this entire pile and this entire
+pile
+because she could only eat four piles
+because we only have four hours right
+coco can only eat one pile per hour so
+if she ate
+all four piles over here we'd still have
+one left over
+that's why they guarantee us that h is
+always going to be greater than or equal
+to the number of piles so the minimum
+in this problem given this input array h
+the minimum it could possibly be is
+going to be five
+and i sort of wrote over it but the last
+important thing that they tell us in the
+problem is we
+want to determine that eating speed k
+that cocoa is going to eat at but we
+want to know the
+minimum integer k the minimum eating
+speed of cocoa
+that she could eat all of the piles in
+exactly five
+hours or exactly whatever that time
+interval that number of hours happens to
+be
+so let's take a look at this example
+they give us an input array of four
+piles and they give us
+eight hours to eat all four of those
+piles what's the minimum
+k the minimum eating speed that coco
+could use
+to eat all of these piles in at most
+eight hours so we have to eat all the
+piles in eight hours
+or less well the brute force would be to
+start at one right because coco could
+try
+k equals one right can we eat all piles
+in eight hours then well it will take us
+three hours to eat
+the first pile right three divided by
+one which is our k
+right three divided by one is going to
+be three hours to eat this first pile
+and to eat the second pile is gonna be
+even more that's gonna be six hours
+right six divided by one
+six hours so so far we already have nine
+hours and we haven't even eaten the
+entire
+number of piles so therefore k equals
+one is not going to work
+and we could just continue this brute
+force approach right now try k
+equals two right and then do the exact
+same computation
+with k equals 2. now my question to you
+is what's we know that the minimum like
+possible solution would be k
+equals 1 right k can't be zero because
+that would mean we're not eating any
+pile so the minimum is one
+what's the maximum that k could possibly
+be
+given this in parade and given this
+number of hours
+well remember the number of hours is
+always going to be
+greater than or equal to the number of
+piles so in the worst case
+k would basically be the max number that
+happens to be in our piles for example
+if k
+equals 11 right that means we're able to
+eat the max pile in exactly
+one hour right and if we can eat the max
+pile in one hour that means
+every other pile is also going to take
+us only
+one hour so therefore we're going to eat
+every single pile
+in four hours and we know for sure that
+this
+is going to be less than whatever is
+given to us as h
+right we could we guaranteed that at the
+beginning so really what we're doing
+here
+is we're going to try every single value
+from 1
+all the way up to 11 which happens to be
+the max value of our piles
+and the first value that we get that
+that allows us to eat
+every single pile in less than or equal
+to eight hours is going to be our
+output so we're gonna end up trying one
+we're gonna end up trying two we're
+gonna end up trying three and we're
+gonna find that
+four allows us to eat all the piles in
+less than or equal to eight hours
+so this is not a terrible solution right
+even though we're brute forcing the
+entire solution set
+one through the max of piles it's not
+gonna be terrible what's gonna be the
+complexity of that well we're
+potentially gonna have to iterate
+through every
+value in this uh potential solution set
+what's that gonna be well one
+through the max value of our piles right
+so it's gonna be
+let's say big o of the max value
+of piles so max of p multiplied
+by the length of p because for every k
+value we're potentially gonna have to
+try okay
+if i e all these how many hours is that
+gonna take me right so we're gonna have
+to iterate through this entire array for
+every
+k value that we try so we're gonna get a
+time complexity of max of p
+multiplied by p right but that's only
+we're getting this max
+p from the fact that we're having to
+iterate through every single value
+in this k range but why should we
+iterate from
+one to the end of that k range why would
+in which case in the worst case we'll
+have to go through every single value
+why don't we instead apply binary search
+on this k
+range what's that going to give us well
+we can reduce max of p
+to the log of max p so if we can improve
+this this is what our time complexity is
+going to be
+okay so i ran out of room but this is
+the improved
+time complexity basically we're taking
+this variable and applying a
+log to it which is going to reduce it a
+little bit so let me show you quickly
+how that binary solution is gonna work
+it's pretty straightforward and then
+we're gonna jump into the code
+so we're gonna be using binary search
+we're given this input array and we
+wanna
+eat every single pile in less than or
+equal to eight
+hours so we know that the potential
+rate that we're eating bananas at k is
+gonna be between
+one that's the minimum it could possibly
+be the max it could possibly be is going
+to be whatever the max in
+our input array is we know the max value
+is 11 we can find that in linear time
+so then we're going to initialize a
+range like this
+right this entire range that we have
+going all the way from 1
+to that max value 11. so in other words
+we're going to have a left pointer at
+the minimum
+and a right pointer at the maximum then
+we're going to compute the middle by
+taking the average of left and right
+1 plus 11 divided by 2 is going to be 6
+so our middle
+is going to be here in other words our k
+that we're trying
+is going to be here this is the rate
+that we're going to eat bananas at so
+we're trying the rate of six
+does this work can we eat all these
+bananas with a rate of six bananas per
+hour in less than or equal to eight
+hours can we do that well
+how many uh hours does the first pile
+take well three bananas right
+divided by the rate which is six is
+gonna round up to one that means it took
+us
+one hour to eat the first pile the
+second pile six divided by six is also
+going to take
+one hour so let's just count the number
+of hours
+so the second or the rather the third
+pile seven divided by six is going to
+round
+up to two so that's going to take two
+hours
+the third pile 11 divided by six is
+gonna also round up to two that means
+two hours so
+we just did this in six hours right is
+that good does that mean we found our
+solution
+well six is less than or equal to eight
+that means we were we were able to eat
+this entire thing
+in the time threshold with a rate of six
+bananas per hour is this our solution
+well remember
+we were looking for the minimum k value
+that allowed us to do this so this
+might be the solution but let's try all
+the smaller values or let's
+let's start our binary search in this
+direction to see
+is there a smaller value than six that
+we can use for our k value
+so basically what i'm doing here is if
+we're able to eat the entire pile in the
+threshold what i'm gonna do
+is then start searching in the left
+direction so what i'm gonna do is take
+my right pointer
+and shift it to k minus 1 because we're
+now we're searching this entire range
+what if the opposite was true what if i
+tried this k value but i was
+only able to eat the entire banana pile
+and let's say
+h equals 10 hours that means i went
+over the threshold right that means i
+went over
+the time so what does that mean does
+that modify our binary search well what
+that tells us is our rate of eating
+bananas 6 was too small we
+didn't have enough time to eat all the
+bananas in the given available time
+so what we have to do is increase our
+rate of k
+right so in that case what i would do is
+i would search the right portion
+of the range so what i would do is take
+the left pointer and set it to k
+plus one over here at the seven so
+that's how this binary search is going
+to be working but so far we do have one
+possible solution
+and that's six so now our new right
+pointer is pointing over here and our
+result is
+for now going to be six so once again
+we're going to take the left and right
+add them together divide by two that's
+going to give us one plus five divided
+by two is three so our k
+is now going to be at this three value
+so now let's check
+can we eat all the bananas in less than
+or equal
+to eight hours how many hours does the
+first take us well we're eating at a
+rate of three bananas per hour the first
+pile
+is three that's going to take us one
+hour to eat it the second pile
+six bananas divided by three that's
+going to take two hours the third pile
+seven divided by three rounding up
+is going to be three hours to eat that
+pile
+last pile 11 divided by three rounded up
+is going to be four hours so when we
+total all of this
+up it's going to give us i think 10
+hours so just like we discussed before
+we went
+over our threshold we we took too long
+to eat these bananas so what that tells
+us is this did not work
+three bananas per hour doesn't work
+let's start searching to the right of
+our range
+and remember when we took this right
+pointer and shifted it
+what we basically did was we said that
+none of these values are ever going to
+be considered again we're now searching
+in the other range that's how binary
+search works remember so since this did
+not
+work we're not searching it and we're
+not going to search any of the values to
+the left of it so what we're going to do
+is take this left pointer
+set it to k plus 1. so once again we're
+going to take our pointers add them
+together divide by 2
+and we'll in this case we'll just round
+down so nine divided by two is going to
+be four so i'm going to put my k value
+basically where left happens to be at
+four
+so let's see with a rate of k equals
+four can we eat all the bananas in less
+than or equal to eight hours the first
+pile takes one hour the second pile
+takes two hours
+the third pile takes two hours and the
+last pile takes three hours
+so totaling all of this up we get eight
+right so we were able to eat all the
+bananas
+in less than or equal to eight hours if
+we had a rate of
+four so basically let's compare that to
+our current result
+so far we found a value with six so
+really we can update this six and say
+there's a smaller rate that we can use
+that happens to be
+four so now that we did find a potential
+result four let's see if we can find an
+even
+smaller one remember that's what we did
+before if we find a k that works we're
+gonna try to find an even smaller one
+so what we're gonna do is we're gonna
+set our right pointer
+shifted over here but notice how now
+the left and right pointers are not in
+the correct order right
+left should always be to the left of the
+right pointer that's basically how you
+know
+that our binary search has stopped we
+don't have to continue the binary search
+anymore right and that makes sense
+because now we're searching values that
+we previously crossed out we crossed
+these out so how can we search them
+again
+it makes no sense so now we can stop the
+binary search
+and we can return the current result
+which happens to be four
+four is the minimum rate of bananas that
+cocoa could eat to eat all bananas
+in less than or equal to eight hours
+with that being said let's jump into the
+code now
+so just like i mentioned we are gonna
+have our left and right pointers
+initially
+set to one left is going to be one and
+right is going to be the max that
+happens to
+exist in our piles input array now the
+result we're not going to initialize it
+to 0
+initially because remember we're looking
+for the minimum so i'm just going to
+initialize it to r
+which is the max in our piles because we
+know at least this will work this is the
+max
+that our solution could possibly be and
+now we just start binary searching
+while our left and right pointers are in
+the correct order
+we can compute the k by adding the left
+and right together and dividing by two
+and we want to
+count for this value k for this rate k
+how many hours does it take to eat all
+bananas so let's initialize hours to
+zero and go through every pile
+in the input array piles so for any
+given pile p
+we can divide it by k which tells us how
+many hours it took but remember we have
+to round
+up so there's a function in python
+math.ceiling which will round
+this up for us and whatever that happens
+to be is what we can add to our hours
+total once we've done that then at the
+end
+of that loop we're going to check if
+hours happens to be less than or equal
+to
+h the given input if it is that means we
+can update our result
+to a new minimum right take the minimum
+of the result and whatever
+k happens to be k is that rate that
+we're looking for
+and if this is the case then how are we
+going to update our binary search well
+we're going to look for an even
+smaller k so what we're going to do is
+set our right pointer
+equal to k minus 1. we're going to
+search the left portion now
+if this wasn't true how would we update
+our binary search in the opposite case
+then we would take our left pointer
+and set it to k plus 1 because that
+means the rate was too small so we need
+to find an even bigger
+rate that will allow us to eat the
+bananas in the given time interval
+and at the end of this loop once the
+binary search has stopped we know that
+we're going to be returning that result
+variable which tells us what the minimum
+k happens to be
+and believe it or not that is the entire
+result so i hope this was helpful
+if it was please like and subscribe it
+supports the channel a lot and i'll
+hopefully

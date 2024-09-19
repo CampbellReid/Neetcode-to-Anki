@@ -1,0 +1,819 @@
+hey everyone welcome back now let's
+write some more neat code today so today
+let's solve a pretty hard problem
+regular expression matching so we are
+given an
+input string s and a pattern or a
+regular expression
+p and we want to implement regular
+expression matching
+and these are the two special characters
+that we're gonna have to worry about
+a period and a star so the stars or so
+the period will match
+to any particular character and the star
+basically means that any character that
+comes before it can be repeated
+zero times or it can be repeated
+infinite times right so it can be
+repeated as many times as it needs to be
+and the match or the pattern has to
+cover the entire input string so it has
+to match
+the full input string so one example
+is let's say so these are the special
+characters we worry about right the
+period
+and the star if we don't have either of
+them then it's basically
+string matching right so we see in this
+example we have
+two a's right that's one input string
+and a single a so basically do these
+strings match each other they
+don't match each other so we have to
+return false
+meaning that the input string s does not
+match this regular expression
+and remember it's only going to be a
+regular expression which possibly has
+the star
+or possibly has the period now imagine
+instead if our pattern
+was a period so in that case
+we would compare it to the string double
+a and we would see that yes they do
+match because remember the period can be
+any character so we could
+say okay we'll given this pattern this
+could be double a so
+it would match this input string what if
+we were checking does it match
+this input string a b in that case it
+would also match because this period
+could then turn into a b
+so it would be a b and these two match
+each other
+but of course if we had a period period
+checking if it matches double a it
+doesn't because they're not even the
+same length this has
+three this has two there's no way we
+could put any characters for these two
+periods that would match
+double a and what about this second
+example let's say the input string
+is double a and the pattern is a star
+so what this star means is a star
+so a star basically means that the
+element that comes before
+this a could be repeated multiple times
+or zero times so
+the possible strings that this pattern
+could match to could be
+an empty string because this character
+could be repeated
+zero times right so empty string this
+character could be repeated once
+so a single a this character could be
+repeated twice
+so double a this character could be
+repeated three times so
+aaa and so on and so on right we could
+repeat this a infinite number of times
+but if you take a look at our input
+string we're only checking does it match
+double a of course it does right we just
+repeat the a
+twice so in this case we return true
+a third example so let's say our input
+string is a b
+and we're checking does it match the
+pattern dot star
+so basically what this dot star means is
+we could have
+a string that's empty right repeating
+the dot zero time so empty string
+uh we could repeat the dot once so dot
+we could repeat it twice double dot
+right and so on and so on and
+so let's say this right double dot is
+what we're looking for we're checking
+does
+this match a b well one of the dots
+could be
+a and one of the dots could be b so that
+matches
+double dot so this would return true
+so as you can see that there's probably
+going to be a few edge cases we have to
+deal with right
+the complexity really mainly comes from
+the star the dot isn't so difficult
+right
+but the star makes things interesting so
+let's just try to brute force this let's
+look at one example
+this example let's say this is our
+string s and
+this is our pattern a star so as you
+know the star
+is really where the complexity comes
+from so let's make a decision tree let's
+brute force this
+so this is the string we're trying to
+match to this is our pattern a star
+we know so we're first gonna look at the
+first a
+and then we're gonna look at the first
+character of this now
+this isn't just an ordinary character
+there's a star that comes after it so
+this could be repeated
+zero times or more times right so let's
+brute force this
+we know we have a choice are we gonna
+repeat the a
+at least once or are we gonna repeat it
+zero times if we repeat it zero times
+then we
+end up with an empty string right if we
+repeat it once
+we end up with a single a now clearly we
+want the single
+a because it matches this right
+and if we decided to to have an empty
+string meaning we want this star to
+or and this character a to repeat zero
+times then we would have to
+move to this position right and there
+clearly
+isn't any character here maybe there
+would be a b maybe there would be
+an a but there's clearly nothing there
+so this is this
+decision is going to stop right we
+cannot go any farther
+all we can do here is an empty string
+but it's okay because we ended up
+matching with this a when we were on
+this
+path right so now the character we're
+looking to match in the input string is
+this
+single a so now again we have a choice
+are we gonna repeat the star like in
+this
+spot we repeated the star and this we
+didn't repeat the star
+now again we have that choice are we
+going to repeat the star or are we
+not going to repeat the star if we don't
+repeat the star we're going to end up
+with a
+single a and then we're gonna have to be
+shifted over to this position meaning we
+cannot use the star anymore
+so we're gonna stop right this is going
+to be our string a single a
+but you can see in our input our input
+string was a double a
+so really our other decision where we do
+repeat the star at least one more time
+is gonna lead us to
+double a and that's good because now we
+have the second a meaning we matched
+this second a right so now in reality we
+have matched
+the input string but just to show you in
+theory we could
+keep going we could decide not to use
+the star anymore right we would be
+shifted to that position
+and in which case our ending string
+would just be double a or we could use
+the star
+one more time meaning we'd get triple a
+but then of course you can see we're
+even bigger than the input string that
+we wanted to match so we stop
+but we see that we did end up finding
+the results since we
+found the result right we found the
+input string
+that means that these do match right so
+we would return
+true because the input string matches
+the regular expression but as you can
+see
+we're doing a decision tree this is not
+exactly going to be super efficient
+right
+how many decisions are we going to have
+well any time we get to a star
+we're going to have two different
+decisions how many times can we repeat
+that decision it's going to be
+n where n is the input string
+s so clearly you can tell this is not
+super efficient
+but in case you haven't noticed this is
+a dynamic programming problem and if we
+take this
+and we implement a cache then we can get
+this time complexity down
+to n squared or in other words really
+we're getting it down to
+n times m where n is the length
+of the input string and m is the length
+of
+the pattern and this is if we do the top
+down
+memoization with a cache we can also do
+the actual
+bottom up dynamic programming solution
+so the bottom up dynamic programming
+solution
+and both of these actually have the same
+time time complexity so i'm going to
+show you the top down coding solution
+but once you know the top down solution
+getting the bottom up full dynamic
+program solution
+is not usually impossible but before
+that let's look at one more example
+so the index i'm going to use so let's
+say this
+is our input string s and this is our
+pattern p so i'm going to use two
+variables to keep track of where we are
+in each of the strings i'm going to use
+i to tell us where we're at in the input
+string i'm going to use
+j to tell us where we're at in the
+pattern so
+remember whenever we reach a character
+that has a star that comes after
+we have two choices so i'm going gonna
+draw our decision tree
+we have a choice to use the star
+or we have a choice to not use the star
+so in this case if we use the star
+meaning we use the character at least
+once we're gonna get a c right we're
+gonna repeat the c
+just once if we don't do that we're
+gonna
+get an empty string so i'll just draw
+this dash for empty string now you can
+see we have a c
+but the first character of our input
+string is a
+so really what we want to do is not use
+this c any times meaning we do not want
+to use the star we don't want
+to repeat c even a single time
+so the decision we want is not this
+decision but this
+is the path that's going to lead us to
+the correct answer
+so what am i going to do with this j
+pointer i'm going to shift
+j so i'm going to shift j over here
+right so notice what we just did in this
+path where we do not use the
+star right we didn't use the star what
+did we do
+we ended up shifting j by two so we
+took j and then added two to it that's
+very important because any time we
+choose
+not to use the star we're gonna take our
+pointer where it's at and then shift it
+twice because we're shifting one to get
+to the next character but also look at
+the star we don't want to land
+on the star we want to land at the next
+character
+and what about pointer i are we going to
+shift that well since we didn't use the
+star that means we weren't
+able to match with the character a right
+so actually i
+is going to stay exactly where it is
+so in this decision what we did is we
+left i
+the exact same and then we took j and
+added
+2 to it and this is very important
+because this is exactly what i'm going
+to do
+in the code so i remains the same j
+plus 2. okay so now we're still at this
+a but our j is over here so notice how
+j right after j is a star that means
+this character a can
+can be repeated zero times or it can be
+repeated one or more times
+so again we have a decision to make so
+one decision is we use the star at least
+once the other decision is we do not use
+the star at all
+so if we use the star once we'll get a
+string of
+a if we don't use the star again we'll
+end up with an
+empty list or an empty string so
+remember when we used the star over here
+we got a c that didn't match the a but
+now we actually have
+an a that exactly matches the character
+over here right
+but what about this path right right now
+we have an empty string
+is this path gonna lead us to the
+correct answer well the only way to find
+out would be to continue on this
+decision tree right making decisions
+and stuff but i'm not going to show that
+because it's going to get pretty messy
+and you can tell by looking at the
+string since we chose this path we would
+have to
+leave i as it is and we'd have to add 2
+to j
+so i would stay here j would be moved
+over here and then you see the pattern
+left at this point is just b does that
+match the input string s it definitely
+does not
+right so clearly this decision is not
+going to lead us to the correct answer
+but let's look at this this is promising
+let's continue on this path so
+so if we end up using the star as we did
+right now how are we going to update our
+pointers well take a look at i
+we matched a exactly what we wanted to
+do
+right so what are we going to do with i
+well we're allowed to shift it by 1 now
+so we're going to take i and move it
+over here right we already matched
+this character we don't really need to
+match it again
+but we do need to match the remaining
+string of s
+a and b what about j well j
+can stay the same because we use the
+star once we repeated this
+a once now we can continue to repeat it
+or we can repeat it zero times
+and we can make that decision by rem by
+leaving
+j exactly where it is so when we go down
+this path
+when we actually use the star what we're
+going to do is add one to i
+but leave j exactly as it is and this is
+important too
+these two things are important because
+this is exactly what i'm going to do
+when i write the code
+so since we're still at j and there's
+still is a star
+that comes after it we again have two
+choices so we can choose again
+to repeat this a or we can choose
+to not repeat the a so if we repeat the
+a
+then we're gonna get the string double a
+right
+and if we choose not to repeat a then
+we're gonna have a single
+a and then meaning we're not gonna use
+this anymore and then we're gonna have a
+b that comes
+after right and you can tell a b by
+itself
+does not match the entire input string
+right so clearly
+this is not going to be the solution but
+you can see that the new character we
+just added the single a
+it matches exactly what we were looking
+for another
+a right so that means we can repeat what
+we just did
+up here we can take this i and shift it
+by one
+and we can leave j exactly where it is
+so now i is at the last character in s
+and i was shifted by one and j remained
+the same
+okay i'm starting to run out of space
+but let's see if we can finish this
+again we're at this position where star
+comes after right j
+is over there so we have two choices we
+can
+use the star or we can not use the star
+if we use the star we're going to get
+triple a
+right and see the third a it does not
+match the character that we're currently
+at b so clearly
+this is not going to be the decision we
+go down
+if we don't match the a then we're going
+to end up
+with a double a right exactly what we
+had before
+right but in this case as we usually do
+when we
+don't use the star what we're going to
+end up doing is taking i
+leaving it where it is because we know
+we didn't match this character right now
+but we're going to take
+j and add 2 to it and since
+we add 2 to j that means we have to
+shift it by two so now j
+is going to be at the last character in
+p at the b
+and notice how j now the character after
+there's no
+star that comes after right so we
+actually don't have a
+choice right now we are only checking
+does the character at j this b
+does it match the character at i this
+other b
+we don't have a choice because there's
+no star we're not allowed to repeat this
+b
+zero times or one time or three times we
+have to use it
+only a single time right we must use it
+we're required to use this b
+but lucky for us we have a b right here
+right so we don't have a choice right
+now
+we're just checking do they match and
+they do so
+what we're going to do now is see that
+our string that we created with our
+regular expression
+is now a a and
+b right and that matches what we wanted
+to
+in the input string but it's important
+to note
+when we do not have a star we're
+strictly checking do the characters
+equal we're checking does s of i
+equal p of
+j and if they do equal what we're gonna
+do
+how are we gonna update our pointers i
+and j we're gonna take
+i add one to it and take
+j add one to it we're going to do this
+in the code
+so now when you see if we take our i and
+then
+shift it over here so i'm just going to
+make a barrier between these two and if
+we take our j
+and shift it by one you see both of
+these
+are out of bounds right i is out of
+bounds
+and j is out of bounds that's how you
+know we have
+perfectly matched so really when we say
+that
+i is greater than or equal to the length
+of s meaning it's out of bounds and
+j is greater than or equal to
+the length of p that's how you know they
+have matched exactly perfectly
+but my question is what if i wasn't
+was i was still in bounds but what if j
+was out of bounds what if j was greater
+than or equal to the length of
+p so an example would be this let's say
+our input string was
+a a right that's our input string our
+pattern
+is a is just a single a right let's say
+our
+our index of i was here let's say our
+index of
+j was over here right clearly this does
+not match this is our string s this is
+our pattern p
+this does not match this right
+so basically if only j is out of bounds
+then they do not match because we still
+have some string
+in the input that hasn't been matched
+but
+what if the opposite was true what if i
+was out of bounds right i
+is out of bounds so i is greater than
+the length of
+s but j was still in bounds what does
+that look like
+an example would be this let's say we
+had an input of
+a and let's say our pattern was
+a star and b star
+so let's say our index of i was shifted
+by one so our i
+is over here and we took our j starting
+over here
+we matched the a a single time then we
+shifted our j
+to be at this b character so basically
+i'm asking so with our i over here and
+our j
+over here do these two strings match
+each other
+technically yes right because this b
+could be repeated
+zero times and still match
+the input a so just because i is out of
+bounds
+doesn't mean we have to return false but
+as i just showed a second ago
+if the j happens to be out of bounds so
+if the j
+is out of bounds then we must return
+false i know this is probably a little
+confusing with these edge cases
+but i hope the examples make it clearer
+and i hope the code that i'm about to
+show you makes it even more clear
+so again i'm going to do the top down
+memoization dynamic programming solution
+not the bottom
+up i think the top down is easier to
+understand when you're first starting
+this problem just doing the bottom up
+solution
+is more confusing in my opinion but we
+are going to do this
+recursively so i'm going to do a nested
+function depth first search inside
+of our uh is match function i guess you
+could call this backtracking or you
+could call it
+uh whatever else you wanted i'm just
+going to call it dfs
+and we're passing in i and j which are
+going to tell us what position we're at
+in the input string s for i and j is
+going to tell us where we're at in the
+input string p
+so as always with recursive functions
+let's start with the base case i just
+showed you that if
+i is out of bounds and j is out of
+bounds that means we have found
+our solution that means we were able to
+match the pattern to the string so we
+can return true
+but as i showed you if i is not out of
+bounds but
+j is out of bounds we have some string
+in s
+that we haven't matched and there's no
+way we're going to be able to match it
+so we have to return
+false so these are our two base cases
+notice
+that given these two cases it's still
+possible that
+i could be out of bounds right i
+technically could be out of bounds
+and neither of these return statements
+would execute right because
+this needs i and j to be out of bounds
+so
+we would pass this and we would pass
+this and i could still be out of bounds
+but i'm going to show you how i'm going
+to handle that right now
+so the first thing we want to check is
+is there a match
+between the first character so
+is there a match between s of i
+and p of j and the other thing we could
+check
+technically right p of j could have
+a period in that position meaning the
+period matches to
+any character right so we have to check
+this or check this
+and since we know i could technically be
+out of bounds before we even
+check this we have to confirm that i is
+inbound so i is less than the length of
+s so strictly less than not less than
+equal so
+if these conditions are satisfied that
+means the first character
+of each string matches exactly the
+reason i'm putting this in a variable is
+we're gonna have to repeat it a couple
+times in the following code
+so the first thing i want to check is
+does the
+following character in uh the pattern
+string so p
+of j plus one does it match the star
+is it a star and the reason i'm checking
+this first is because the star has the
+highest precedence and i'm checking j
+plus one because we know the pattern the
+first character in the pattern string is
+never going to be a star and since i'm
+checking p
+of j plus one i have to first check that
+j plus one
+is inbound so i have to check that it's
+less than the length of
+p so if this is true that means we're
+gonna have to
+we're gonna have to take care of this
+star right and
+we remember when we encounter a star we
+have two choices so i'm going to do a
+recursive call right
+that first search the first choice we
+have
+is don't use the star right if we
+don't use the star we leave i as it is
+and we take
+j and add two to it right that's one
+now we know we have two choices if
+either of them evaluates to true
+then we can return true right we're
+brute forcing this right now
+so the other decision we have is the
+other decision we have
+is use the star right so if we use the
+star
+that means we can take i and add one to
+it
+and we can leave j where it is but
+remember we can
+only use the star if there's a match
+between
+the first character right the first two
+characters right because we only want to
+use the star if there happens to be a
+match
+so really here we're checking if there's
+a match
+and this whole thing about this
+recursive call evaluates to true right
+so i'm going to wrap this
+in parentheses so basically what i'm
+saying
+is these are our two choices this is one
+recursive call and this is another
+recursive call if either of these
+evaluates to true then we can return
+true and that's what i'm doing basically
+by putting these
+on the same line so i don't know the
+best way to format this
+maybe this is somewhat readable
+so if either of these is true we're
+going to end up returning true if
+neither of them is true we're going to
+return false so this
+by itself this these three lines of code
+handles
+that star for us now if this isn't true
+meaning we don't have a star
+character then we're looking just for a
+simple match right so we can just
+check if match if the two characters
+match
+then what are we gonna do well remember
+we can then
+increment i by one and we can increment
+j
+by one and return the result of that
+now if there's not a star and the
+characters don't match
+in that case it's simple right then we
+can just return false meaning that this
+string will never match the pattern so
+then we return false
+and this is the brute force solution
+it's actually as simple
+as that so let's let's return it and let
+me show you how
+inefficient it is right now so we can
+call our debt for search
+starting at zero in both of the strings
+oops i had a syntax error so we had
+double equal over here we have to put
+double
+equal over here oops and one last thing
+when you have multi-line stuff in python
+you have to wrap it all in parentheses
+so i'm just going to wrap this entire
+thing in parentheses
+hopefully it's still readable and a
+third bug so i don't know why i checked
+if j
+is out of bounds of string s when j
+refers to the
+index of string p so sorry about these
+bugs
+but okay so this time it finally worked
+you can see it's not
+super efficient right it took about i
+think this is 1.3 seconds
+and it was 11 so we did the top we did
+the brute force solution but look i
+forgot to do the memoization right so
+let's
+actually do the caching now and make
+this efficient so i'm going to create a
+cache
+it's going to be a hash map so before we
+do anything
+whenever we call this function we're
+first going to check if i
+if the pair i j has already been added
+to our cache
+if it has then we can return it right so
+this is going to
+basically not have to is basically going
+to take care of repeated work for us if
+we
+execute this we're not going to have to
+do all the repeated work but now we
+actually have to use this cache so
+instead of returning this right away you
+can see down here i'm going to actually
+take this and add it
+to the cache so at index ij
+i'm going to put the value that this
+returns to
+and after that after we add it to the
+cache
+then i'm going to return it and i'm
+going to do the exact same thing
+down here so adding this
+to the cache and then we can take this
+and return it so we're all we're doing
+right now is caching
+the work that we do so we don't have to
+repeat it lastly down here we can
+say in the cache add
+false and then return false so basically
+by just adding what
+like four or five lines of code we've
+added the caching element to this
+function it was pretty easy so taking
+the brute force to the
+optimal solution was actually pretty
+easy and look at the result
+look how much faster this is 44
+milliseconds
+81 so we actually didn't even
+need to do the bottom up dynamic
+programming solution right
+and this i will be honest with you is
+not the prettiest way to write this code
+i've seen solutions that are a lot
+better than this but i really hope that
+you
+at least were able to understand what
+we're doing right
+the the meat of the work is done
+in this call right basically these
+two lines of code are the work that
+we're doing right this is where we're
+handling the star
+case and you can see it's actually not
+that difficult right
+all we're doing is i stays the same j
+added two
+or i plus one j stays the same right and
+you
+understand why we're doing it like that
+from the picture that i drew
+but i encourage you to do the dynamic
+programming solution i'll probably
+link the code for that in the
+description and i hope this was helpful
+if you enjoyed please like and subscribe
+it supports the channel a lot

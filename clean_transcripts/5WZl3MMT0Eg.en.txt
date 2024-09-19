@@ -1,0 +1,193 @@
+let's all leak code 53 maximum sub-array
+so we're given an integer array of
+gnomes and we want to find the
+contiguous sub array containing at least
+one number which has the largest sum and
+then we want to return only the sum so
+this array has in positive numbers and
+it has negative numbers so that's what
+we have to keep in mind in this case the
+largest sum is 6 and it's just this
+middle portion of the array so the first
+thing you might try is just compute
+every single sub array right so let's
+first compute every single subarray
+starting at negative 2 there's one sub
+array there's 2 sub arrays there's 3 sub
+arrays and then we keep doing that until
+we got to the end right and then we
+could repeat the process for the second
+number so the sub array starting at 1
+here another sub array starting at 1
+here all the way until the end
+now we could repeat that same process
+for every number in the array so let's
+just write the pseudocode to see what
+that what kind of complexity this would
+yield so let's say we're starting the
+eye is gonna represent the starting
+value it's gonna be it's gonna range
+from zero all the way to the last number
+n minus 1 or the last index and minus 1
+and then we want to get the ending index
+so I'm going to use J for the end of
+this sub array so we're gonna start at I
+and we're going to keep going until the
+end of the sub array or until the end of
+the entire array and minus 1 so this
+represents the start I represents the
+start J represents the end now we
+actually want to compute the sum of this
+sub array so we're gonna have a third
+loop for that right let's use KK is
+gonna range all the way from I to J
+right because that's what represents the
+sub array and then in here we'd compute
+the sum right now obviously this is
+really inefficient right the time
+complexity is n cubed it's obvious
+because we have 3 for loops so let's try
+to expand upon this let's see if we can
+make any shortcuts to improve it so the
+most obvious thing you'll probably
+notice is that we can save time when
+we're computing a sub array so if let's
+say we computed this sub array right and
+we want to compute the next sub-array
+was just one added element well we can
+save the result of this right and say
+it's our current summer or whatever and
+then to compute this sub array we just
+have to add this number over here right
+so we can just say current sum plus
+negative 1 and so this can save us time
+let's take a look at the time complexity
+of this solution so we're going to have
+another for loop which is going to
+represent the start so start is going to
+range from 0 all the way to n minus 1
+and we're gonna have another loop for
+the end of the sub array
+J is going to range from I 2 the last
+index n minus 1 and then inside of the
+loop we're going to maintain our current
+sum and simply just add the number J
+each iteration of the loop right so this
+is a little more efficient o of N
+squared it's a pretty easy optimization
+to make and it improves your solution a
+lot but can we do even better than this
+so now the question you should ask
+yourself is do we have to compute every
+sub array starting at every single value
+in the array right do we have to start
+at every single value and compute every
+sub array that comes after it I don't
+think we do remember we're trying to
+find the maximum sub array we can use
+that knowledge to help us make a
+shortcut so let's take a look at this we
+have a negative 2 right so when we're
+starting here that's gonna be our max
+sum so far then we get to negative 2
+plus 1 so this is negative 1 so far
+right do we actually need this negative
+number the negative numbers don't
+contribute anything in this case right
+so we can disk we can basically ignore
+that value right once we get here we can
+basically say this negative value this
+negative prefix that came before
+positive 1 isn't gonna help us at all so
+let's not even consider it
+so next do we get to this negative 3 now
+up until here our total sum is negative
+2 right so then we get to this 4 this is
+a negative prefix that came before
+negative too right so we can say up
+until this point we're not even gonna
+consider what came before so this one
+and negative three aren't gonna help us
+at all just ignore them now we get to a
+negative one so the prefix that came
+before this was a positive four so we're
+gonna not delete it from our list we're
+gonna keep that positive four and add it
+to this negative one so now we're gonna
+be a three so far now we get to a
+positive two right even though there's a
+negative one that came before it well
+there was a positive forward that came
+before that so if we get rid of this
+negative one we also have to get rid of
+the positive four which we don't want to
+do remember we have to keep the
+sub-array contiguous so I'm not gonna
+chop this portion off I'm gonna keep it
+now now we're gonna add two to it so now
+we're gonna be at five then we're gonna
+get this one we're gonna add it and get
+our sub array of six and this is the
+result so far but let's keep going and
+see what happens next will have a
+negative five right so minus five now
+we're at one so obviously we decreased
+our sub array but we know this negative
+five is not going to be deleted because
+we had a positive six portion comprised
+of these four elements that were that
+came before that
+lastly we get a positive four again add
+that our sum is still five so we see
+that the max of our a was this portion
+of these four elements which totaled to
+six now this was a linear time algorithm
+it's kind of like a sliding window right
+we keep incrementing our right pointer
+as we go as we go through the array
+right but our left pointer keeps getting
+shifted if we ever have a negative
+prefix like this negative two or this
+negative two portion comprised of these
+two elements so anytime we get a
+negative prefix we remove it and for me
+it kind of helps it kind of helps me to
+think about this as like a sliding
+window and since it's a linear time
+algorithm the overall time complexity is
+Big O of n we didn't need any extra
+memory we just had to go through the
+array removing any negative prefix as we
+computed the total sum okay so now let's
+code it
+so we can initialize our Max sub-array
+to the first value in the array that's
+like the default value that we're going
+to give it because we have to give it
+something and it can't be zero because
+we know we have negative values in this
+array and we know the array is non empty
+so the zeroth value of the array is
+always going to exist and we're going to
+be constantly computing our current sum
+so I'm going to initialize that to zero
+now remember if we had a negative prefix
+we're going to remove that portion from
+our current sum so the way that we can
+check this is just check if current sum
+is at any point negative if it's less
+than zero we're just going to reset it
+back to zero and then after that we can
+add our current number to this this will
+make sure that we're always computing
+the maximum that we can now this current
+sum could be the possible maximum so
+we're just going to update our max sub
+array to the maximum of itself as well
+as the max that we just computed after
+we're done with that we'll return
+whatever we computed as the max sub
+array I hope this helps show you kind of
+the intuition behind the solution of
+this problem if it was helpful
+leave a like and subscribe and thank you

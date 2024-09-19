@@ -1,0 +1,1600 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.670 align:start position:0%
+ 
+hey<00:00:00.160><c> everyone</c><00:00:00.719><c> welcome</c><00:00:01.120><c> back</c><00:00:01.360><c> and</c><00:00:01.439><c> let's</c>
+
+00:00:01.670 --> 00:00:01.680 align:start position:0%
+hey everyone welcome back and let's
+ 
+
+00:00:01.680 --> 00:00:03.510 align:start position:0%
+hey everyone welcome back and let's
+write<00:00:01.920><c> some</c><00:00:02.080><c> more</c><00:00:02.320><c> neat</c><00:00:02.560><c> code</c><00:00:02.800><c> today</c><00:00:03.040><c> so</c><00:00:03.199><c> today</c>
+
+00:00:03.510 --> 00:00:03.520 align:start position:0%
+write some more neat code today so today
+ 
+
+00:00:03.520 --> 00:00:05.990 align:start position:0%
+write some more neat code today so today
+let's<00:00:03.760><c> solve</c><00:00:04.000><c> the</c><00:00:04.160><c> problem</c><00:00:04.799><c> single</c><00:00:05.359><c> number</c>
+
+00:00:05.990 --> 00:00:06.000 align:start position:0%
+let's solve the problem single number
+ 
+
+00:00:06.000 --> 00:00:08.230 align:start position:0%
+let's solve the problem single number
+we're<00:00:06.160><c> given</c><00:00:06.560><c> a</c><00:00:06.799><c> non-empty</c><00:00:07.600><c> array</c><00:00:08.000><c> of</c>
+
+00:00:08.230 --> 00:00:08.240 align:start position:0%
+we're given a non-empty array of
+ 
+
+00:00:08.240 --> 00:00:10.709 align:start position:0%
+we're given a non-empty array of
+integers<00:00:08.800><c> nums</c><00:00:09.440><c> and</c><00:00:09.679><c> we're</c><00:00:09.840><c> told</c><00:00:10.080><c> that</c><00:00:10.400><c> every</c>
+
+00:00:10.709 --> 00:00:10.719 align:start position:0%
+integers nums and we're told that every
+ 
+
+00:00:10.719 --> 00:00:13.270 align:start position:0%
+integers nums and we're told that every
+single<00:00:11.120><c> element</c><00:00:11.599><c> in</c><00:00:12.000><c> this</c><00:00:12.320><c> array</c><00:00:12.719><c> appears</c>
+
+00:00:13.270 --> 00:00:13.280 align:start position:0%
+single element in this array appears
+ 
+
+00:00:13.280 --> 00:00:16.790 align:start position:0%
+single element in this array appears
+exactly<00:00:14.160><c> twice</c><00:00:14.799><c> except</c><00:00:15.519><c> for</c><00:00:15.759><c> one</c><00:00:16.080><c> element</c><00:00:16.560><c> and</c>
+
+00:00:16.790 --> 00:00:16.800 align:start position:0%
+exactly twice except for one element and
+ 
+
+00:00:16.800 --> 00:00:20.070 align:start position:0%
+exactly twice except for one element and
+that<00:00:17.119><c> element</c><00:00:17.680><c> only</c><00:00:18.080><c> appears</c><00:00:18.720><c> a</c><00:00:18.960><c> single</c><00:00:19.439><c> time</c>
+
+00:00:20.070 --> 00:00:20.080 align:start position:0%
+that element only appears a single time
+ 
+
+00:00:20.080 --> 00:00:22.150 align:start position:0%
+that element only appears a single time
+our<00:00:20.320><c> goal</c><00:00:20.720><c> is</c><00:00:20.880><c> to</c><00:00:21.039><c> find</c><00:00:21.439><c> that</c><00:00:21.680><c> number</c><00:00:21.920><c> that</c>
+
+00:00:22.150 --> 00:00:22.160 align:start position:0%
+our goal is to find that number that
+ 
+
+00:00:22.160 --> 00:00:23.910 align:start position:0%
+our goal is to find that number that
+only<00:00:22.480><c> appears</c><00:00:22.960><c> once</c><00:00:23.279><c> and</c><00:00:23.519><c> we</c><00:00:23.680><c> have</c><00:00:23.760><c> to</c>
+
+00:00:23.910 --> 00:00:23.920 align:start position:0%
+only appears once and we have to
+ 
+
+00:00:23.920 --> 00:00:26.390 align:start position:0%
+only appears once and we have to
+implement<00:00:24.320><c> our</c><00:00:24.480><c> solution</c><00:00:25.039><c> in</c><00:00:25.279><c> linear</c><00:00:25.760><c> time</c>
+
+00:00:26.390 --> 00:00:26.400 align:start position:0%
+implement our solution in linear time
+ 
+
+00:00:26.400 --> 00:00:29.269 align:start position:0%
+implement our solution in linear time
+and<00:00:26.720><c> we're</c><00:00:26.960><c> not</c><00:00:27.279><c> even</c><00:00:27.680><c> allowed</c><00:00:28.080><c> to</c><00:00:28.320><c> use</c><00:00:28.800><c> extra</c>
+
+00:00:29.269 --> 00:00:29.279 align:start position:0%
+and we're not even allowed to use extra
+ 
+
+00:00:29.279 --> 00:00:31.349 align:start position:0%
+and we're not even allowed to use extra
+space<00:00:29.760><c> if</c><00:00:29.920><c> we</c><00:00:30.160><c> were</c><00:00:30.400><c> allowed</c><00:00:30.720><c> to</c><00:00:30.800><c> use</c><00:00:31.039><c> extra</c>
+
+00:00:31.349 --> 00:00:31.359 align:start position:0%
+space if we were allowed to use extra
+ 
+
+00:00:31.359 --> 00:00:33.270 align:start position:0%
+space if we were allowed to use extra
+space<00:00:31.920><c> this</c><00:00:32.239><c> problem</c><00:00:32.559><c> would</c><00:00:32.719><c> be</c><00:00:32.880><c> really</c>
+
+00:00:33.270 --> 00:00:33.280 align:start position:0%
+space this problem would be really
+ 
+
+00:00:33.280 --> 00:00:36.229 align:start position:0%
+space this problem would be really
+trivial<00:00:34.000><c> if</c><00:00:34.239><c> you</c><00:00:34.399><c> know</c><00:00:34.719><c> what</c><00:00:34.960><c> a</c><00:00:35.200><c> hash</c><00:00:35.520><c> map</c><00:00:35.760><c> is</c>
+
+00:00:36.229 --> 00:00:36.239 align:start position:0%
+trivial if you know what a hash map is
+ 
+
+00:00:36.239 --> 00:00:39.030 align:start position:0%
+trivial if you know what a hash map is
+or<00:00:36.480><c> actually</c><00:00:36.880><c> even</c><00:00:37.120><c> just</c><00:00:37.520><c> a</c><00:00:37.760><c> hash</c><00:00:38.320><c> set</c><00:00:38.800><c> uh</c>
+
+00:00:39.030 --> 00:00:39.040 align:start position:0%
+or actually even just a hash set uh
+ 
+
+00:00:39.040 --> 00:00:41.270 align:start position:0%
+or actually even just a hash set uh
+because<00:00:39.360><c> for</c><00:00:39.520><c> every</c><00:00:39.840><c> single</c><00:00:40.239><c> value</c>
+
+00:00:41.270 --> 00:00:41.280 align:start position:0%
+because for every single value
+ 
+
+00:00:41.280 --> 00:00:43.190 align:start position:0%
+because for every single value
+like<00:00:42.000><c> suppose</c><00:00:42.320><c> we</c><00:00:42.399><c> had</c><00:00:42.480><c> this</c><00:00:42.719><c> input</c><00:00:42.960><c> array</c>
+
+00:00:43.190 --> 00:00:43.200 align:start position:0%
+like suppose we had this input array
+ 
+
+00:00:43.200 --> 00:00:45.270 align:start position:0%
+like suppose we had this input array
+we'd<00:00:43.360><c> take</c><00:00:43.520><c> that</c><00:00:43.840><c> two</c><00:00:44.320><c> add</c><00:00:44.559><c> it</c><00:00:44.640><c> to</c><00:00:44.800><c> our</c><00:00:44.960><c> hash</c>
+
+00:00:45.270 --> 00:00:45.280 align:start position:0%
+we'd take that two add it to our hash
+ 
+
+00:00:45.280 --> 00:00:47.190 align:start position:0%
+we'd take that two add it to our hash
+set<00:00:45.600><c> so</c><00:00:45.840><c> something</c><00:00:46.160><c> like</c><00:00:46.320><c> this</c><00:00:46.719><c> and</c><00:00:46.800><c> then</c><00:00:46.960><c> we'd</c>
+
+00:00:47.190 --> 00:00:47.200 align:start position:0%
+set so something like this and then we'd
+ 
+
+00:00:47.200 --> 00:00:49.190 align:start position:0%
+set so something like this and then we'd
+see<00:00:47.440><c> a</c><00:00:47.600><c> second</c><00:00:48.000><c> two</c><00:00:48.480><c> and</c><00:00:48.640><c> then</c><00:00:48.800><c> we</c><00:00:48.960><c> would</c>
+
+00:00:49.190 --> 00:00:49.200 align:start position:0%
+see a second two and then we would
+ 
+
+00:00:49.200 --> 00:00:51.430 align:start position:0%
+see a second two and then we would
+remove<00:00:49.760><c> it</c><00:00:50.000><c> from</c><00:00:50.239><c> our</c><00:00:50.399><c> hash</c><00:00:50.719><c> set</c><00:00:51.120><c> because</c>
+
+00:00:51.430 --> 00:00:51.440 align:start position:0%
+remove it from our hash set because
+ 
+
+00:00:51.440 --> 00:00:53.350 align:start position:0%
+remove it from our hash set because
+every<00:00:51.760><c> element</c><00:00:52.079><c> that</c><00:00:52.239><c> appears</c><00:00:52.719><c> twice</c><00:00:53.199><c> is</c>
+
+00:00:53.350 --> 00:00:53.360 align:start position:0%
+every element that appears twice is
+ 
+
+00:00:53.360 --> 00:00:55.029 align:start position:0%
+every element that appears twice is
+going<00:00:53.440><c> to</c><00:00:53.520><c> be</c><00:00:53.760><c> added</c><00:00:54.079><c> to</c><00:00:54.160><c> the</c><00:00:54.320><c> hash</c><00:00:54.559><c> set</c><00:00:54.879><c> and</c>
+
+00:00:55.029 --> 00:00:55.039 align:start position:0%
+going to be added to the hash set and
+ 
+
+00:00:55.039 --> 00:00:57.270 align:start position:0%
+going to be added to the hash set and
+then<00:00:55.280><c> removed</c><00:00:55.840><c> from</c><00:00:56.079><c> it</c><00:00:56.320><c> except</c><00:00:56.719><c> for</c><00:00:56.879><c> that</c>
+
+00:00:57.270 --> 00:00:57.280 align:start position:0%
+then removed from it except for that
+ 
+
+00:00:57.280 --> 00:00:59.750 align:start position:0%
+then removed from it except for that
+single<00:00:57.760><c> value</c><00:00:58.480><c> like</c><00:00:58.879><c> one</c><00:00:59.280><c> which</c><00:00:59.520><c> is</c><00:00:59.600><c> going</c><00:00:59.680><c> to</c>
+
+00:00:59.750 --> 00:00:59.760 align:start position:0%
+single value like one which is going to
+ 
+
+00:00:59.760 --> 00:01:01.910 align:start position:0%
+single value like one which is going to
+be<00:01:00.000><c> added</c><00:01:00.399><c> to</c><00:01:00.559><c> the</c><00:01:00.640><c> hash</c><00:01:00.960><c> set</c><00:01:01.280><c> but</c><00:01:01.440><c> it's</c><00:01:01.680><c> never</c>
+
+00:01:01.910 --> 00:01:01.920 align:start position:0%
+be added to the hash set but it's never
+ 
+
+00:01:01.920 --> 00:01:03.830 align:start position:0%
+be added to the hash set but it's never
+going<00:01:02.079><c> to</c><00:01:02.160><c> be</c><00:01:02.399><c> removed</c><00:01:02.960><c> so</c><00:01:03.199><c> by</c><00:01:03.359><c> the</c><00:01:03.520><c> time</c><00:01:03.680><c> our</c>
+
+00:01:03.830 --> 00:01:03.840 align:start position:0%
+going to be removed so by the time our
+ 
+
+00:01:03.840 --> 00:01:05.670 align:start position:0%
+going to be removed so by the time our
+algorithm<00:01:04.320><c> finishes</c><00:01:04.960><c> we're</c><00:01:05.280><c> only</c><00:01:05.519><c> going</c><00:01:05.600><c> to</c>
+
+00:01:05.670 --> 00:01:05.680 align:start position:0%
+algorithm finishes we're only going to
+ 
+
+00:01:05.680 --> 00:01:08.070 align:start position:0%
+algorithm finishes we're only going to
+have<00:01:05.840><c> a</c><00:01:06.080><c> single</c><00:01:06.479><c> value</c><00:01:06.960><c> in</c><00:01:07.119><c> our</c><00:01:07.200><c> hash</c><00:01:07.600><c> set</c><00:01:07.920><c> and</c>
+
+00:01:08.070 --> 00:01:08.080 align:start position:0%
+have a single value in our hash set and
+ 
+
+00:01:08.080 --> 00:01:09.429 align:start position:0%
+have a single value in our hash set and
+that's<00:01:08.400><c> the</c><00:01:08.479><c> value</c><00:01:08.880><c> that</c><00:01:09.040><c> we're</c><00:01:09.200><c> going</c><00:01:09.360><c> to</c>
+
+00:01:09.429 --> 00:01:09.439 align:start position:0%
+that's the value that we're going to
+ 
+
+00:01:09.439 --> 00:01:11.830 align:start position:0%
+that's the value that we're going to
+return<00:01:10.080><c> but</c><00:01:10.320><c> the</c><00:01:10.479><c> downside</c><00:01:10.960><c> of</c><00:01:11.040><c> this</c><00:01:11.360><c> is</c><00:01:11.680><c> in</c>
+
+00:01:11.830 --> 00:01:11.840 align:start position:0%
+return but the downside of this is in
+ 
+
+00:01:11.840 --> 00:01:14.149 align:start position:0%
+return but the downside of this is in
+the<00:01:12.000><c> worst</c><00:01:12.320><c> case</c><00:01:12.720><c> uh</c><00:01:12.960><c> we'd</c><00:01:13.280><c> obviously</c><00:01:13.840><c> iterate</c>
+
+00:01:14.149 --> 00:01:14.159 align:start position:0%
+the worst case uh we'd obviously iterate
+ 
+
+00:01:14.159 --> 00:01:15.749 align:start position:0%
+the worst case uh we'd obviously iterate
+through<00:01:14.320><c> the</c><00:01:14.479><c> entire</c><00:01:14.799><c> array</c><00:01:15.119><c> which</c><00:01:15.280><c> is</c><00:01:15.360><c> big</c><00:01:15.520><c> of</c>
+
+00:01:15.749 --> 00:01:15.759 align:start position:0%
+through the entire array which is big of
+ 
+
+00:01:15.759 --> 00:01:17.749 align:start position:0%
+through the entire array which is big of
+and<00:01:16.000><c> time</c><00:01:16.240><c> complexity</c><00:01:16.799><c> but</c><00:01:16.960><c> it's</c><00:01:17.119><c> also</c><00:01:17.439><c> big</c><00:01:17.680><c> o</c>
+
+00:01:17.749 --> 00:01:17.759 align:start position:0%
+and time complexity but it's also big o
+ 
+
+00:01:17.759 --> 00:01:19.510 align:start position:0%
+and time complexity but it's also big o
+of<00:01:17.920><c> n</c><00:01:18.080><c> memory</c><00:01:18.400><c> complexity</c><00:01:19.040><c> because</c><00:01:19.280><c> we're</c>
+
+00:01:19.510 --> 00:01:19.520 align:start position:0%
+of n memory complexity because we're
+ 
+
+00:01:19.520 --> 00:01:21.830 align:start position:0%
+of n memory complexity because we're
+using<00:01:19.920><c> a</c><00:01:20.080><c> hash</c><00:01:20.479><c> set</c><00:01:20.960><c> is</c><00:01:21.119><c> there</c><00:01:21.280><c> a</c><00:01:21.439><c> way</c><00:01:21.600><c> to</c><00:01:21.680><c> do</c>
+
+00:01:21.830 --> 00:01:21.840 align:start position:0%
+using a hash set is there a way to do
+ 
+
+00:01:21.840 --> 00:01:23.830 align:start position:0%
+using a hash set is there a way to do
+this<00:01:22.000><c> solution</c><00:01:22.400><c> without</c><00:01:22.720><c> using</c><00:01:23.119><c> any</c><00:01:23.439><c> extra</c>
+
+00:01:23.830 --> 00:01:23.840 align:start position:0%
+this solution without using any extra
+ 
+
+00:01:23.840 --> 00:01:25.429 align:start position:0%
+this solution without using any extra
+memory<00:01:24.320><c> well</c><00:01:24.479><c> there</c><00:01:24.640><c> definitely</c><00:01:25.200><c> is</c><00:01:25.360><c> a</c>
+
+00:01:25.429 --> 00:01:25.439 align:start position:0%
+memory well there definitely is a
+ 
+
+00:01:25.439 --> 00:01:27.350 align:start position:0%
+memory well there definitely is a
+solution<00:01:26.159><c> and</c><00:01:26.240><c> let's</c><00:01:26.479><c> try</c><00:01:26.640><c> to</c><00:01:26.799><c> figure</c><00:01:27.040><c> it</c><00:01:27.200><c> out</c>
+
+00:01:27.350 --> 00:01:27.360 align:start position:0%
+solution and let's try to figure it out
+ 
+
+00:01:27.360 --> 00:01:29.830 align:start position:0%
+solution and let's try to figure it out
+using<00:01:27.759><c> this</c><00:01:28.240><c> example</c><00:01:29.040><c> i</c><00:01:29.119><c> will</c><00:01:29.360><c> say</c><00:01:29.520><c> that</c><00:01:29.680><c> the</c>
+
+00:01:29.830 --> 00:01:29.840 align:start position:0%
+using this example i will say that the
+ 
+
+00:01:29.840 --> 00:01:31.749 align:start position:0%
+using this example i will say that the
+solution<00:01:30.240><c> i'm</c><00:01:30.400><c> about</c><00:01:30.640><c> to</c><00:01:30.799><c> show</c><00:01:31.040><c> you</c><00:01:31.360><c> is</c><00:01:31.520><c> not</c>
+
+00:01:31.749 --> 00:01:31.759 align:start position:0%
+solution i'm about to show you is not
+ 
+
+00:01:31.759 --> 00:01:33.429 align:start position:0%
+solution i'm about to show you is not
+really<00:01:32.159><c> easy</c><00:01:32.400><c> to</c><00:01:32.560><c> figure</c><00:01:32.880><c> out</c><00:01:33.040><c> but</c><00:01:33.200><c> once</c>
+
+00:01:33.429 --> 00:01:33.439 align:start position:0%
+really easy to figure out but once
+ 
+
+00:01:33.439 --> 00:01:35.429 align:start position:0%
+really easy to figure out but once
+you've<00:01:33.680><c> seen</c><00:01:33.920><c> it</c><00:01:34.000><c> before</c><00:01:34.640><c> it's</c><00:01:34.880><c> pretty</c><00:01:35.200><c> easy</c>
+
+00:01:35.429 --> 00:01:35.439 align:start position:0%
+you've seen it before it's pretty easy
+ 
+
+00:01:35.439 --> 00:01:37.350 align:start position:0%
+you've seen it before it's pretty easy
+to<00:01:35.680><c> implement</c><00:01:36.079><c> and</c><00:01:36.240><c> recognize</c><00:01:36.880><c> when</c><00:01:37.040><c> you</c><00:01:37.200><c> can</c>
+
+00:01:37.350 --> 00:01:37.360 align:start position:0%
+to implement and recognize when you can
+ 
+
+00:01:37.360 --> 00:01:39.590 align:start position:0%
+to implement and recognize when you can
+use<00:01:37.680><c> it</c><00:01:38.000><c> so</c><00:01:38.240><c> suppose</c><00:01:38.640><c> we</c><00:01:38.799><c> had</c><00:01:38.960><c> this</c><00:01:39.280><c> input</c>
+
+00:01:39.590 --> 00:01:39.600 align:start position:0%
+use it so suppose we had this input
+ 
+
+00:01:39.600 --> 00:01:41.510 align:start position:0%
+use it so suppose we had this input
+array<00:01:39.920><c> and</c><00:01:40.000><c> you'll</c><00:01:40.159><c> see</c><00:01:40.400><c> why</c><00:01:40.640><c> i</c><00:01:40.880><c> wrote</c><00:01:41.119><c> it</c><00:01:41.280><c> this</c>
+
+00:01:41.510 --> 00:01:41.520 align:start position:0%
+array and you'll see why i wrote it this
+ 
+
+00:01:41.520 --> 00:01:43.429 align:start position:0%
+array and you'll see why i wrote it this
+way<00:01:41.759><c> in</c><00:01:41.920><c> a</c><00:01:42.000><c> moment</c><00:01:42.479><c> so</c><00:01:42.640><c> i'll</c><00:01:42.799><c> just</c><00:01:43.119><c> tell</c><00:01:43.280><c> you</c>
+
+00:01:43.429 --> 00:01:43.439 align:start position:0%
+way in a moment so i'll just tell you
+ 
+
+00:01:43.439 --> 00:01:45.270 align:start position:0%
+way in a moment so i'll just tell you
+that<00:01:43.600><c> this</c><00:01:43.840><c> solution</c><00:01:44.320><c> does</c><00:01:44.560><c> require</c><00:01:45.040><c> bit</c>
+
+00:01:45.270 --> 00:01:45.280 align:start position:0%
+that this solution does require bit
+ 
+
+00:01:45.280 --> 00:01:46.870 align:start position:0%
+that this solution does require bit
+manipulation<00:01:45.920><c> so</c><00:01:46.079><c> i'm</c><00:01:46.159><c> going</c><00:01:46.320><c> to</c><00:01:46.399><c> take</c><00:01:46.640><c> each</c>
+
+00:01:46.870 --> 00:01:46.880 align:start position:0%
+manipulation so i'm going to take each
+ 
+
+00:01:46.880 --> 00:01:48.870 align:start position:0%
+manipulation so i'm going to take each
+of<00:01:46.960><c> these</c><00:01:47.280><c> values</c><00:01:48.079><c> show</c><00:01:48.320><c> them</c><00:01:48.560><c> in</c><00:01:48.640><c> their</c>
+
+00:01:48.870 --> 00:01:48.880 align:start position:0%
+of these values show them in their
+ 
+
+00:01:48.880 --> 00:01:51.830 align:start position:0%
+of these values show them in their
+binary<00:01:49.520><c> representation</c><00:01:50.720><c> so</c><00:01:50.960><c> 4</c><00:01:51.280><c> for</c><00:01:51.439><c> example</c>
+
+00:01:51.830 --> 00:01:51.840 align:start position:0%
+binary representation so 4 for example
+ 
+
+00:01:51.840 --> 00:01:55.109 align:start position:0%
+binary representation so 4 for example
+is<00:01:51.920><c> going</c><00:01:52.079><c> to</c><00:01:52.159><c> be</c><00:01:52.399><c> 1</c><00:01:53.119><c> 0</c><00:01:53.920><c> 0.</c><00:01:54.560><c> of</c><00:01:54.640><c> course</c><00:01:54.880><c> there's</c>
+
+00:01:55.109 --> 00:01:55.119 align:start position:0%
+is going to be 1 0 0. of course there's
+ 
+
+00:01:55.119 --> 00:01:56.630 align:start position:0%
+is going to be 1 0 0. of course there's
+going<00:01:55.200><c> to</c><00:01:55.280><c> be</c><00:01:55.439><c> some</c><00:01:55.600><c> leading</c><00:01:56.000><c> zeros</c><00:01:56.320><c> but</c><00:01:56.479><c> we</c>
+
+00:01:56.630 --> 00:01:56.640 align:start position:0%
+going to be some leading zeros but we
+ 
+
+00:01:56.640 --> 00:01:58.630 align:start position:0%
+going to be some leading zeros but we
+don't<00:01:56.799><c> really</c><00:01:56.960><c> care</c><00:01:57.200><c> about</c><00:01:57.439><c> those</c><00:01:58.079><c> 1</c><00:01:58.399><c> is</c><00:01:58.560><c> going</c>
+
+00:01:58.630 --> 00:01:58.640 align:start position:0%
+don't really care about those 1 is going
+ 
+
+00:01:58.640 --> 00:02:01.350 align:start position:0%
+don't really care about those 1 is going
+to<00:01:58.719><c> be</c><00:01:58.880><c> represented</c><00:01:59.520><c> like</c><00:02:00.159><c> this</c><00:02:00.799><c> 2</c><00:02:01.119><c> is</c><00:02:01.280><c> going</c>
+
+00:02:01.350 --> 00:02:01.360 align:start position:0%
+to be represented like this 2 is going
+ 
+
+00:02:01.360 --> 00:02:03.990 align:start position:0%
+to be represented like this 2 is going
+to<00:02:01.439><c> be</c><00:02:01.520><c> represented</c><00:02:02.240><c> like</c><00:02:02.719><c> this</c><00:02:03.360><c> okay</c><00:02:03.600><c> so</c><00:02:03.759><c> this</c>
+
+00:02:03.990 --> 00:02:04.000 align:start position:0%
+to be represented like this okay so this
+ 
+
+00:02:04.000 --> 00:02:05.990 align:start position:0%
+to be represented like this okay so this
+is<00:02:04.079><c> the</c><00:02:04.240><c> binary</c><00:02:04.719><c> representation</c><00:02:05.680><c> and</c><00:02:05.759><c> once</c>
+
+00:02:05.990 --> 00:02:06.000 align:start position:0%
+is the binary representation and once
+ 
+
+00:02:06.000 --> 00:02:08.229 align:start position:0%
+is the binary representation and once
+again<00:02:06.240><c> i'll</c><00:02:06.399><c> just</c><00:02:06.640><c> tell</c><00:02:06.880><c> you</c><00:02:07.119><c> the</c><00:02:07.280><c> solution</c>
+
+00:02:08.229 --> 00:02:08.239 align:start position:0%
+again i'll just tell you the solution
+ 
+
+00:02:08.239 --> 00:02:09.990 align:start position:0%
+again i'll just tell you the solution
+basically<00:02:08.720><c> we're</c><00:02:08.879><c> going</c><00:02:08.959><c> to</c><00:02:09.119><c> use</c><00:02:09.360><c> a</c><00:02:09.520><c> binary</c>
+
+00:02:09.990 --> 00:02:10.000 align:start position:0%
+basically we're going to use a binary
+ 
+
+00:02:10.000 --> 00:02:13.190 align:start position:0%
+basically we're going to use a binary
+operation<00:02:10.560><c> called</c><00:02:10.959><c> xor</c><00:02:11.680><c> or</c><00:02:11.920><c> exclusive</c><00:02:12.640><c> or</c><00:02:13.040><c> and</c>
+
+00:02:13.190 --> 00:02:13.200 align:start position:0%
+operation called xor or exclusive or and
+ 
+
+00:02:13.200 --> 00:02:14.390 align:start position:0%
+operation called xor or exclusive or and
+if<00:02:13.280><c> you</c><00:02:13.360><c> don't</c><00:02:13.520><c> know</c><00:02:13.680><c> this</c><00:02:13.920><c> operation</c>
+
+00:02:14.390 --> 00:02:14.400 align:start position:0%
+if you don't know this operation
+ 
+
+00:02:14.400 --> 00:02:16.710 align:start position:0%
+if you don't know this operation
+basically<00:02:14.720><c> what</c><00:02:14.959><c> it</c><00:02:15.040><c> does</c><00:02:15.280><c> is</c><00:02:15.440><c> if</c><00:02:15.680><c> two</c><00:02:16.319><c> bits</c>
+
+00:02:16.710 --> 00:02:16.720 align:start position:0%
+basically what it does is if two bits
+ 
+
+00:02:16.720 --> 00:02:18.869 align:start position:0%
+basically what it does is if two bits
+are<00:02:16.879><c> the</c><00:02:17.040><c> exact</c><00:02:17.440><c> same</c><00:02:17.760><c> so</c><00:02:18.000><c> 0</c>
+
+00:02:18.869 --> 00:02:18.879 align:start position:0%
+are the exact same so 0
+ 
+
+00:02:18.879 --> 00:02:22.550 align:start position:0%
+are the exact same so 0
+xor<00:02:19.360><c> 0</c><00:02:19.920><c> is</c><00:02:20.000><c> going</c><00:02:20.160><c> to</c><00:02:20.319><c> equal</c><00:02:20.959><c> 0.</c><00:02:21.599><c> also</c>
+
+00:02:22.550 --> 00:02:22.560 align:start position:0%
+xor 0 is going to equal 0. also
+ 
+
+00:02:22.560 --> 00:02:24.150 align:start position:0%
+xor 0 is going to equal 0. also
+if<00:02:22.640><c> they</c><00:02:23.040><c> are</c><00:02:23.120><c> the</c><00:02:23.280><c> same</c><00:02:23.760><c> meaning</c><00:02:24.000><c> they're</c>
+
+00:02:24.150 --> 00:02:24.160 align:start position:0%
+if they are the same meaning they're
+ 
+
+00:02:24.160 --> 00:02:27.030 align:start position:0%
+if they are the same meaning they're
+both<00:02:24.560><c> 1</c><00:02:25.040><c> this</c><00:02:25.280><c> is</c><00:02:25.520><c> also</c><00:02:26.160><c> going</c><00:02:26.319><c> to</c><00:02:26.480><c> equal</c><00:02:26.800><c> 0.</c>
+
+00:02:27.030 --> 00:02:27.040 align:start position:0%
+both 1 this is also going to equal 0.
+ 
+
+00:02:27.040 --> 00:02:28.790 align:start position:0%
+both 1 this is also going to equal 0.
+but<00:02:27.200><c> if</c><00:02:27.280><c> they're</c><00:02:27.599><c> different</c><00:02:27.920><c> so</c><00:02:28.080><c> if</c><00:02:28.160><c> we</c><00:02:28.239><c> had</c><00:02:28.480><c> 1</c>
+
+00:02:28.790 --> 00:02:28.800 align:start position:0%
+but if they're different so if we had 1
+ 
+
+00:02:28.800 --> 00:02:31.830 align:start position:0%
+but if they're different so if we had 1
+and<00:02:28.959><c> 0</c><00:02:29.360><c> that's</c><00:02:29.599><c> going</c><00:02:29.680><c> to</c><00:02:29.760><c> be</c><00:02:30.000><c> 1</c><00:02:30.640><c> and</c><00:02:30.879><c> if</c><00:02:31.040><c> we</c><00:02:31.200><c> had</c>
+
+00:02:31.830 --> 00:02:31.840 align:start position:0%
+and 0 that's going to be 1 and if we had
+ 
+
+00:02:31.840 --> 00:02:32.710 align:start position:0%
+and 0 that's going to be 1 and if we had
+0
+
+00:02:32.710 --> 00:02:32.720 align:start position:0%
+0
+ 
+
+00:02:32.720 --> 00:02:35.830 align:start position:0%
+0
+xor<00:02:33.360><c> 1</c><00:02:33.920><c> that's</c><00:02:34.239><c> going</c><00:02:34.400><c> to</c><00:02:34.560><c> be</c><00:02:34.800><c> 1</c><00:02:35.200><c> as</c><00:02:35.360><c> well</c><00:02:35.519><c> so</c><00:02:35.680><c> if</c>
+
+00:02:35.830 --> 00:02:35.840 align:start position:0%
+xor 1 that's going to be 1 as well so if
+ 
+
+00:02:35.840 --> 00:02:37.270 align:start position:0%
+xor 1 that's going to be 1 as well so if
+they're<00:02:36.000><c> different</c><00:02:36.400><c> we</c><00:02:36.560><c> get</c><00:02:36.720><c> one</c><00:02:36.959><c> if</c><00:02:37.120><c> they're</c>
+
+00:02:37.270 --> 00:02:37.280 align:start position:0%
+they're different we get one if they're
+ 
+
+00:02:37.280 --> 00:02:39.589 align:start position:0%
+they're different we get one if they're
+the<00:02:37.440><c> same</c><00:02:37.680><c> we</c><00:02:37.840><c> get</c><00:02:38.080><c> zero</c><00:02:38.720><c> and</c><00:02:38.879><c> the</c><00:02:39.040><c> solution</c><00:02:39.440><c> to</c>
+
+00:02:39.589 --> 00:02:39.599 align:start position:0%
+the same we get zero and the solution to
+ 
+
+00:02:39.599 --> 00:02:41.430 align:start position:0%
+the same we get zero and the solution to
+this<00:02:39.840><c> problem</c><00:02:40.239><c> is</c><00:02:40.400><c> literally</c><00:02:40.800><c> just</c><00:02:41.040><c> taking</c>
+
+00:02:41.430 --> 00:02:41.440 align:start position:0%
+this problem is literally just taking
+ 
+
+00:02:41.440 --> 00:02:44.470 align:start position:0%
+this problem is literally just taking
+all<00:02:41.599><c> these</c><00:02:41.840><c> input</c><00:02:42.160><c> values</c><00:02:42.879><c> xor</c><00:02:43.440><c> them</c><00:02:43.680><c> together</c>
+
+00:02:44.470 --> 00:02:44.480 align:start position:0%
+all these input values xor them together
+ 
+
+00:02:44.480 --> 00:02:47.270 align:start position:0%
+all these input values xor them together
+and<00:02:44.879><c> then</c><00:02:45.200><c> our</c><00:02:45.440><c> result</c><00:02:46.080><c> is</c><00:02:46.319><c> going</c><00:02:46.560><c> to</c><00:02:46.720><c> be</c><00:02:46.879><c> that</c>
+
+00:02:47.270 --> 00:02:47.280 align:start position:0%
+and then our result is going to be that
+ 
+
+00:02:47.280 --> 00:02:49.589 align:start position:0%
+and then our result is going to be that
+single<00:02:47.760><c> value</c><00:02:48.480><c> in</c><00:02:48.560><c> this</c><00:02:48.800><c> case</c><00:02:49.040><c> that</c><00:02:49.280><c> single</c>
+
+00:02:49.589 --> 00:02:49.599 align:start position:0%
+single value in this case that single
+ 
+
+00:02:49.599 --> 00:02:52.070 align:start position:0%
+single value in this case that single
+value<00:02:50.160><c> is</c><00:02:50.640><c> 4.</c><00:02:51.120><c> and</c><00:02:51.280><c> if</c><00:02:51.360><c> you</c><00:02:51.519><c> just</c><00:02:51.680><c> want</c><00:02:51.840><c> to</c><00:02:51.920><c> know</c>
+
+00:02:52.070 --> 00:02:52.080 align:start position:0%
+value is 4. and if you just want to know
+ 
+
+00:02:52.080 --> 00:02:53.509 align:start position:0%
+value is 4. and if you just want to know
+the<00:02:52.160><c> solution</c><00:02:52.560><c> to</c><00:02:52.720><c> this</c><00:02:52.879><c> problem</c><00:02:53.200><c> that's</c>
+
+00:02:53.509 --> 00:02:53.519 align:start position:0%
+the solution to this problem that's
+ 
+
+00:02:53.519 --> 00:02:56.070 align:start position:0%
+the solution to this problem that's
+literally<00:02:54.000><c> it</c><00:02:54.239><c> but</c><00:02:54.400><c> it</c><00:02:54.560><c> never</c><00:02:54.879><c> satisfies</c><00:02:55.680><c> me</c>
+
+00:02:56.070 --> 00:02:56.080 align:start position:0%
+literally it but it never satisfies me
+ 
+
+00:02:56.080 --> 00:02:57.670 align:start position:0%
+literally it but it never satisfies me
+so<00:02:56.319><c> what</c><00:02:56.480><c> i'm</c><00:02:56.720><c> going</c><00:02:56.800><c> to</c><00:02:56.879><c> do</c><00:02:57.120><c> is</c><00:02:57.280><c> actually</c>
+
+00:02:57.670 --> 00:02:57.680 align:start position:0%
+so what i'm going to do is actually
+ 
+
+00:02:57.680 --> 00:02:59.990 align:start position:0%
+so what i'm going to do is actually
+explain<00:02:58.239><c> a</c><00:02:58.319><c> bit</c><00:02:58.480><c> of</c><00:02:58.560><c> the</c><00:02:58.720><c> intuition</c><00:02:59.280><c> behind</c><00:02:59.680><c> it</c>
+
+00:02:59.990 --> 00:03:00.000 align:start position:0%
+explain a bit of the intuition behind it
+ 
+
+00:03:00.000 --> 00:03:01.990 align:start position:0%
+explain a bit of the intuition behind it
+and<00:03:00.080><c> the</c><00:03:00.239><c> simple</c><00:03:00.640><c> answer</c><00:03:01.120><c> is</c><00:03:01.519><c> that</c><00:03:01.680><c> when</c><00:03:01.840><c> you</c>
+
+00:03:01.990 --> 00:03:02.000 align:start position:0%
+and the simple answer is that when you
+ 
+
+00:03:02.000 --> 00:03:04.790 align:start position:0%
+and the simple answer is that when you
+take<00:03:02.319><c> two</c><00:03:02.640><c> values</c><00:03:03.120><c> like</c><00:03:03.360><c> two</c><00:03:04.080><c> and</c><00:03:04.239><c> two</c><00:03:04.480><c> and</c><00:03:04.640><c> you</c>
+
+00:03:04.790 --> 00:03:04.800 align:start position:0%
+take two values like two and two and you
+ 
+
+00:03:04.800 --> 00:03:06.470 align:start position:0%
+take two values like two and two and you
+xor<00:03:05.280><c> them</c><00:03:05.440><c> together</c><00:03:05.840><c> of</c><00:03:05.920><c> course</c><00:03:06.159><c> they</c><00:03:06.319><c> have</c>
+
+00:03:06.470 --> 00:03:06.480 align:start position:0%
+xor them together of course they have
+ 
+
+00:03:06.480 --> 00:03:09.110 align:start position:0%
+xor them together of course they have
+the<00:03:06.640><c> exact</c><00:03:07.040><c> same</c><00:03:07.360><c> binary</c><00:03:07.920><c> representation</c><00:03:08.959><c> so</c>
+
+00:03:09.110 --> 00:03:09.120 align:start position:0%
+the exact same binary representation so
+ 
+
+00:03:09.120 --> 00:03:11.270 align:start position:0%
+the exact same binary representation so
+if<00:03:09.280><c> you</c><00:03:09.440><c> xor</c><00:03:09.920><c> two</c><00:03:10.159><c> values</c><00:03:10.560><c> that</c><00:03:10.720><c> are</c><00:03:10.800><c> the</c><00:03:10.959><c> exact</c>
+
+00:03:11.270 --> 00:03:11.280 align:start position:0%
+if you xor two values that are the exact
+ 
+
+00:03:11.280 --> 00:03:14.229 align:start position:0%
+if you xor two values that are the exact
+same<00:03:11.760><c> of</c><00:03:12.000><c> course</c><00:03:12.400><c> you're</c><00:03:12.560><c> gonna</c><00:03:12.720><c> get</c><00:03:13.040><c> zero</c><00:03:13.760><c> uh</c>
+
+00:03:14.229 --> 00:03:14.239 align:start position:0%
+same of course you're gonna get zero uh
+ 
+
+00:03:14.239 --> 00:03:16.470 align:start position:0%
+same of course you're gonna get zero uh
+all<00:03:14.480><c> zeros</c><00:03:15.040><c> in</c><00:03:15.120><c> the</c><00:03:15.360><c> output</c><00:03:15.760><c> because</c><00:03:16.080><c> you</c><00:03:16.159><c> know</c>
+
+00:03:16.470 --> 00:03:16.480 align:start position:0%
+all zeros in the output because you know
+ 
+
+00:03:16.480 --> 00:03:18.070 align:start position:0%
+all zeros in the output because you know
+the<00:03:16.640><c> bits</c><00:03:16.879><c> here</c><00:03:17.120><c> are</c><00:03:17.280><c> the</c><00:03:17.440><c> exact</c><00:03:17.680><c> same</c><00:03:18.000><c> the</c>
+
+00:03:18.070 --> 00:03:18.080 align:start position:0%
+the bits here are the exact same the
+ 
+
+00:03:18.080 --> 00:03:19.670 align:start position:0%
+the bits here are the exact same the
+bits<00:03:18.319><c> here</c><00:03:18.640><c> are</c><00:03:18.720><c> the</c><00:03:18.879><c> exact</c><00:03:19.200><c> same</c><00:03:19.440><c> and</c><00:03:19.519><c> they're</c>
+
+00:03:19.670 --> 00:03:19.680 align:start position:0%
+bits here are the exact same and they're
+ 
+
+00:03:19.680 --> 00:03:21.509 align:start position:0%
+bits here are the exact same and they're
+going<00:03:19.760><c> to</c><00:03:19.840><c> be</c><00:03:20.000><c> the</c><00:03:20.159><c> exact</c><00:03:20.400><c> same</c><00:03:20.720><c> so</c><00:03:21.120><c> if</c><00:03:21.280><c> the</c>
+
+00:03:21.509 --> 00:03:21.519 align:start position:0%
+going to be the exact same so if the
+ 
+
+00:03:21.519 --> 00:03:23.830 align:start position:0%
+going to be the exact same so if the
+bits<00:03:21.760><c> are</c><00:03:21.920><c> the</c><00:03:22.000><c> same</c><00:03:22.480><c> we</c><00:03:22.640><c> get</c><00:03:22.800><c> 0</c><00:03:23.120><c> in</c><00:03:23.200><c> the</c><00:03:23.360><c> output</c>
+
+00:03:23.830 --> 00:03:23.840 align:start position:0%
+bits are the same we get 0 in the output
+ 
+
+00:03:23.840 --> 00:03:25.030 align:start position:0%
+bits are the same we get 0 in the output
+and<00:03:24.000><c> the</c><00:03:24.080><c> reason</c><00:03:24.319><c> that's</c><00:03:24.560><c> important</c><00:03:24.959><c> is</c>
+
+00:03:25.030 --> 00:03:25.040 align:start position:0%
+and the reason that's important is
+ 
+
+00:03:25.040 --> 00:03:26.869 align:start position:0%
+and the reason that's important is
+because<00:03:25.280><c> we</c><00:03:25.440><c> know</c><00:03:25.599><c> that</c><00:03:25.760><c> there's</c><00:03:26.080><c> two</c><00:03:26.319><c> twos</c>
+
+00:03:26.869 --> 00:03:26.879 align:start position:0%
+because we know that there's two twos
+ 
+
+00:03:26.879 --> 00:03:28.470 align:start position:0%
+because we know that there's two twos
+right<00:03:27.040><c> so</c><00:03:27.200><c> these</c><00:03:27.440><c> are</c><00:03:27.519><c> going</c><00:03:27.599><c> to</c><00:03:27.680><c> cancel</c><00:03:28.159><c> out</c>
+
+00:03:28.470 --> 00:03:28.480 align:start position:0%
+right so these are going to cancel out
+ 
+
+00:03:28.480 --> 00:03:30.470 align:start position:0%
+right so these are going to cancel out
+we<00:03:28.640><c> know</c><00:03:28.799><c> that</c><00:03:28.959><c> there's</c><00:03:29.280><c> two</c><00:03:29.680><c> ones</c><00:03:30.159><c> these</c><00:03:30.400><c> are</c>
+
+00:03:30.470 --> 00:03:30.480 align:start position:0%
+we know that there's two ones these are
+ 
+
+00:03:30.480 --> 00:03:32.630 align:start position:0%
+we know that there's two ones these are
+going<00:03:30.560><c> to</c><00:03:30.720><c> cancel</c><00:03:31.120><c> out</c><00:03:31.599><c> so</c><00:03:32.159><c> we're</c><00:03:32.319><c> going</c><00:03:32.400><c> to</c><00:03:32.480><c> be</c>
+
+00:03:32.630 --> 00:03:32.640 align:start position:0%
+going to cancel out so we're going to be
+ 
+
+00:03:32.640 --> 00:03:35.030 align:start position:0%
+going to cancel out so we're going to be
+left<00:03:32.879><c> with</c><00:03:33.280><c> only</c><00:03:33.599><c> that</c><00:03:33.840><c> single</c><00:03:34.159><c> value</c><00:03:34.640><c> and</c><00:03:34.720><c> the</c>
+
+00:03:35.030 --> 00:03:35.040 align:start position:0%
+left with only that single value and the
+ 
+
+00:03:35.040 --> 00:03:37.750 align:start position:0%
+left with only that single value and the
+order<00:03:35.440><c> that</c><00:03:35.599><c> you</c><00:03:35.760><c> do</c><00:03:36.000><c> the</c><00:03:36.159><c> xor</c><00:03:36.720><c> operation</c><00:03:37.280><c> in</c>
+
+00:03:37.750 --> 00:03:37.760 align:start position:0%
+order that you do the xor operation in
+ 
+
+00:03:37.760 --> 00:03:39.990 align:start position:0%
+order that you do the xor operation in
+is<00:03:38.000><c> not</c><00:03:38.400><c> important</c><00:03:38.879><c> you</c><00:03:39.040><c> can</c><00:03:39.120><c> do</c><00:03:39.280><c> it</c><00:03:39.440><c> in</c><00:03:39.680><c> any</c>
+
+00:03:39.990 --> 00:03:40.000 align:start position:0%
+is not important you can do it in any
+ 
+
+00:03:40.000 --> 00:03:41.350 align:start position:0%
+is not important you can do it in any
+order<00:03:40.319><c> and</c><00:03:40.400><c> you're</c><00:03:40.560><c> going</c><00:03:40.640><c> to</c><00:03:40.720><c> get</c><00:03:40.879><c> the</c><00:03:41.040><c> same</c>
+
+00:03:41.350 --> 00:03:41.360 align:start position:0%
+order and you're going to get the same
+ 
+
+00:03:41.360 --> 00:03:43.030 align:start position:0%
+order and you're going to get the same
+exact<00:03:41.760><c> result</c><00:03:42.080><c> so</c><00:03:42.239><c> that's</c><00:03:42.480><c> the</c><00:03:42.640><c> simple</c>
+
+00:03:43.030 --> 00:03:43.040 align:start position:0%
+exact result so that's the simple
+ 
+
+00:03:43.040 --> 00:03:44.630 align:start position:0%
+exact result so that's the simple
+explanation<00:03:43.840><c> and</c><00:03:44.000><c> i'll</c><00:03:44.080><c> just</c><00:03:44.239><c> talk</c><00:03:44.480><c> for</c>
+
+00:03:44.630 --> 00:03:44.640 align:start position:0%
+explanation and i'll just talk for
+ 
+
+00:03:44.640 --> 00:03:46.869 align:start position:0%
+explanation and i'll just talk for
+another<00:03:45.040><c> minute</c><00:03:45.440><c> about</c><00:03:45.920><c> if</c><00:03:46.080><c> you</c><00:03:46.239><c> didn't</c><00:03:46.720><c> know</c>
+
+00:03:46.869 --> 00:03:46.879 align:start position:0%
+another minute about if you didn't know
+ 
+
+00:03:46.879 --> 00:03:49.270 align:start position:0%
+another minute about if you didn't know
+that<00:03:47.200><c> xor</c><00:03:47.760><c> can</c><00:03:47.920><c> be</c><00:03:48.080><c> done</c><00:03:48.319><c> in</c><00:03:48.480><c> any</c><00:03:48.640><c> order</c><00:03:49.120><c> could</c>
+
+00:03:49.270 --> 00:03:49.280 align:start position:0%
+that xor can be done in any order could
+ 
+
+00:03:49.280 --> 00:03:50.869 align:start position:0%
+that xor can be done in any order could
+you<00:03:49.440><c> still</c><00:03:49.760><c> figure</c><00:03:50.080><c> this</c><00:03:50.239><c> out</c><00:03:50.480><c> what's</c><00:03:50.720><c> the</c>
+
+00:03:50.869 --> 00:03:50.879 align:start position:0%
+you still figure this out what's the
+ 
+
+00:03:50.879 --> 00:03:52.390 align:start position:0%
+you still figure this out what's the
+intuition<00:03:51.360><c> behind</c><00:03:51.680><c> it</c><00:03:51.840><c> let</c><00:03:52.000><c> me</c><00:03:52.080><c> just</c><00:03:52.239><c> talk</c>
+
+00:03:52.390 --> 00:03:52.400 align:start position:0%
+intuition behind it let me just talk
+ 
+
+00:03:52.400 --> 00:03:54.229 align:start position:0%
+intuition behind it let me just talk
+about<00:03:52.640><c> that</c><00:03:52.799><c> for</c><00:03:52.959><c> a</c><00:03:53.040><c> minute</c><00:03:53.519><c> i'm</c><00:03:53.680><c> not</c><00:03:53.920><c> smart</c>
+
+00:03:54.229 --> 00:03:54.239 align:start position:0%
+about that for a minute i'm not smart
+ 
+
+00:03:54.239 --> 00:03:55.910 align:start position:0%
+about that for a minute i'm not smart
+enough<00:03:54.480><c> to</c><00:03:54.640><c> figure</c><00:03:54.879><c> it</c><00:03:55.040><c> out</c><00:03:55.200><c> just</c><00:03:55.439><c> by</c><00:03:55.599><c> looking</c>
+
+00:03:55.910 --> 00:03:55.920 align:start position:0%
+enough to figure it out just by looking
+ 
+
+00:03:55.920 --> 00:03:58.390 align:start position:0%
+enough to figure it out just by looking
+at<00:03:56.159><c> all</c><00:03:56.319><c> of</c><00:03:56.480><c> these</c><00:03:56.720><c> bits</c><00:03:57.280><c> but</c><00:03:57.760><c> we</c><00:03:57.920><c> know</c><00:03:58.080><c> that</c><00:03:58.239><c> to</c>
+
+00:03:58.390 --> 00:03:58.400 align:start position:0%
+at all of these bits but we know that to
+ 
+
+00:03:58.400 --> 00:04:00.630 align:start position:0%
+at all of these bits but we know that to
+simplify<00:03:58.879><c> it</c><00:03:59.040><c> we</c><00:03:59.200><c> can</c><00:03:59.280><c> just</c><00:03:59.519><c> look</c><00:03:59.760><c> at</c><00:04:00.000><c> a</c><00:04:00.159><c> single</c>
+
+00:04:00.630 --> 00:04:00.640 align:start position:0%
+simplify it we can just look at a single
+ 
+
+00:04:00.640 --> 00:04:03.670 align:start position:0%
+simplify it we can just look at a single
+column<00:04:01.040><c> right</c><00:04:01.519><c> just</c><00:04:01.920><c> one</c><00:04:02.560><c> of</c><00:04:02.720><c> the</c><00:04:02.879><c> positions</c>
+
+00:04:03.670 --> 00:04:03.680 align:start position:0%
+column right just one of the positions
+ 
+
+00:04:03.680 --> 00:04:05.509 align:start position:0%
+column right just one of the positions
+and<00:04:03.840><c> like</c><00:04:04.080><c> i</c><00:04:04.159><c> said</c><00:04:04.319><c> we</c><00:04:04.480><c> know</c><00:04:04.640><c> that</c><00:04:04.879><c> every</c><00:04:05.120><c> value</c>
+
+00:04:05.509 --> 00:04:05.519 align:start position:0%
+and like i said we know that every value
+ 
+
+00:04:05.519 --> 00:04:07.350 align:start position:0%
+and like i said we know that every value
+in<00:04:05.599><c> the</c><00:04:05.760><c> input</c><00:04:06.159><c> is</c><00:04:06.239><c> going</c><00:04:06.319><c> to</c><00:04:06.400><c> be</c><00:04:06.560><c> a</c><00:04:06.720><c> duplicate</c>
+
+00:04:07.350 --> 00:04:07.360 align:start position:0%
+in the input is going to be a duplicate
+ 
+
+00:04:07.360 --> 00:04:09.350 align:start position:0%
+in the input is going to be a duplicate
+except<00:04:07.599><c> for</c><00:04:07.760><c> that</c><00:04:08.000><c> single</c><00:04:08.400><c> number</c><00:04:08.879><c> so</c><00:04:09.120><c> we're</c>
+
+00:04:09.350 --> 00:04:09.360 align:start position:0%
+except for that single number so we're
+ 
+
+00:04:09.360 --> 00:04:11.350 align:start position:0%
+except for that single number so we're
+trying<00:04:09.599><c> to</c><00:04:09.840><c> prove</c><00:04:10.400><c> that</c><00:04:10.560><c> we</c><00:04:10.720><c> know</c><00:04:10.959><c> for</c><00:04:11.120><c> sure</c>
+
+00:04:11.350 --> 00:04:11.360 align:start position:0%
+trying to prove that we know for sure
+ 
+
+00:04:11.360 --> 00:04:13.190 align:start position:0%
+trying to prove that we know for sure
+that<00:04:11.519><c> the</c><00:04:11.760><c> bit</c><00:04:12.000><c> in</c><00:04:12.080><c> the</c><00:04:12.319><c> output</c><00:04:12.720><c> is</c><00:04:12.879><c> going</c><00:04:13.040><c> to</c>
+
+00:04:13.190 --> 00:04:13.200 align:start position:0%
+that the bit in the output is going to
+ 
+
+00:04:13.200 --> 00:04:14.390 align:start position:0%
+that the bit in the output is going to
+be<00:04:13.360><c> the</c><00:04:13.439><c> same</c><00:04:13.760><c> bit</c>
+
+00:04:14.390 --> 00:04:14.400 align:start position:0%
+be the same bit
+ 
+
+00:04:14.400 --> 00:04:15.990 align:start position:0%
+be the same bit
+that<00:04:14.560><c> comes</c><00:04:14.799><c> from</c><00:04:14.959><c> that</c><00:04:15.120><c> single</c><00:04:15.439><c> number</c><00:04:15.760><c> which</c>
+
+00:04:15.990 --> 00:04:16.000 align:start position:0%
+that comes from that single number which
+ 
+
+00:04:16.000 --> 00:04:17.909 align:start position:0%
+that comes from that single number which
+is<00:04:16.400><c> right</c><00:04:16.639><c> over</c><00:04:16.880><c> here</c><00:04:17.040><c> we</c><00:04:17.199><c> know</c><00:04:17.359><c> for</c><00:04:17.519><c> sure</c><00:04:17.759><c> it's</c>
+
+00:04:17.909 --> 00:04:17.919 align:start position:0%
+is right over here we know for sure it's
+ 
+
+00:04:17.919 --> 00:04:19.830 align:start position:0%
+is right over here we know for sure it's
+gonna<00:04:18.079><c> be</c><00:04:18.239><c> zero</c><00:04:18.560><c> how</c><00:04:18.720><c> do</c><00:04:18.880><c> we</c><00:04:18.959><c> know</c><00:04:19.199><c> that</c><00:04:19.680><c> so</c>
+
+00:04:19.830 --> 00:04:19.840 align:start position:0%
+gonna be zero how do we know that so
+ 
+
+00:04:19.840 --> 00:04:21.830 align:start position:0%
+gonna be zero how do we know that so
+we're<00:04:20.079><c> trying</c><00:04:20.320><c> to</c><00:04:20.479><c> prove</c><00:04:20.959><c> that</c><00:04:21.120><c> the</c><00:04:21.440><c> output</c>
+
+00:04:21.830 --> 00:04:21.840 align:start position:0%
+we're trying to prove that the output
+ 
+
+00:04:21.840 --> 00:04:23.670 align:start position:0%
+we're trying to prove that the output
+bit<00:04:22.079><c> is</c><00:04:22.320><c> always</c><00:04:22.720><c> gonna</c><00:04:22.880><c> be</c><00:04:23.040><c> the</c><00:04:23.199><c> bit</c><00:04:23.440><c> that</c>
+
+00:04:23.670 --> 00:04:23.680 align:start position:0%
+bit is always gonna be the bit that
+ 
+
+00:04:23.680 --> 00:04:26.390 align:start position:0%
+bit is always gonna be the bit that
+comes<00:04:24.240><c> from</c><00:04:24.880><c> the</c><00:04:25.199><c> single</c><00:04:25.600><c> value</c><00:04:26.000><c> how</c><00:04:26.160><c> do</c><00:04:26.240><c> we</c>
+
+00:04:26.390 --> 00:04:26.400 align:start position:0%
+comes from the single value how do we
+ 
+
+00:04:26.400 --> 00:04:28.150 align:start position:0%
+comes from the single value how do we
+know<00:04:26.639><c> that</c><00:04:26.880><c> well</c><00:04:27.280><c> first</c><00:04:27.600><c> i'm</c><00:04:27.680><c> going</c><00:04:27.840><c> to</c><00:04:27.919><c> prove</c>
+
+00:04:28.150 --> 00:04:28.160 align:start position:0%
+know that well first i'm going to prove
+ 
+
+00:04:28.160 --> 00:04:30.950 align:start position:0%
+know that well first i'm going to prove
+to<00:04:28.320><c> you</c><00:04:28.400><c> that</c><00:04:28.720><c> this</c><00:04:29.120><c> portion</c><00:04:29.680><c> of</c><00:04:30.080><c> the</c><00:04:30.320><c> xor</c>
+
+00:04:30.950 --> 00:04:30.960 align:start position:0%
+to you that this portion of the xor
+ 
+
+00:04:30.960 --> 00:04:33.830 align:start position:0%
+to you that this portion of the xor
+operation<00:04:31.840><c> is</c><00:04:32.160><c> always</c><00:04:32.639><c> going</c><00:04:32.880><c> to</c><00:04:33.040><c> evaluate</c><00:04:33.680><c> to</c>
+
+00:04:33.830 --> 00:04:33.840 align:start position:0%
+operation is always going to evaluate to
+ 
+
+00:04:33.840 --> 00:04:36.950 align:start position:0%
+operation is always going to evaluate to
+be<00:04:34.320><c> zero</c><00:04:34.880><c> how</c><00:04:35.040><c> do</c><00:04:35.199><c> i</c><00:04:35.280><c> know</c><00:04:35.520><c> that</c><00:04:36.000><c> because</c><00:04:36.720><c> first</c>
+
+00:04:36.950 --> 00:04:36.960 align:start position:0%
+be zero how do i know that because first
+ 
+
+00:04:36.960 --> 00:04:40.150 align:start position:0%
+be zero how do i know that because first
+of<00:04:37.120><c> all</c><00:04:37.360><c> zeros</c><00:04:38.080><c> in</c><00:04:38.320><c> any</c><00:04:38.560><c> xor</c><00:04:39.040><c> operation</c><00:04:39.919><c> i</c>
+
+00:04:40.150 --> 00:04:40.160 align:start position:0%
+of all zeros in any xor operation i
+ 
+
+00:04:40.160 --> 00:04:42.150 align:start position:0%
+of all zeros in any xor operation i
+don't<00:04:40.560><c> change</c><00:04:40.880><c> the</c><00:04:41.040><c> result</c><00:04:41.440><c> that</c><00:04:41.600><c> means</c><00:04:41.919><c> if</c><00:04:42.000><c> we</c>
+
+00:04:42.150 --> 00:04:42.160 align:start position:0%
+don't change the result that means if we
+ 
+
+00:04:42.160 --> 00:04:45.270 align:start position:0%
+don't change the result that means if we
+had<00:04:42.560><c> n</c><00:04:43.120><c> and</c><00:04:43.360><c> n</c><00:04:43.600><c> could</c><00:04:43.759><c> be</c><00:04:44.000><c> either</c><00:04:44.400><c> one</c><00:04:44.800><c> or</c><00:04:45.120><c> it</c>
+
+00:04:45.270 --> 00:04:45.280 align:start position:0%
+had n and n could be either one or it
+ 
+
+00:04:45.280 --> 00:04:47.990 align:start position:0%
+had n and n could be either one or it
+could<00:04:45.440><c> be</c><00:04:45.600><c> zero</c><00:04:46.240><c> n</c><00:04:46.800><c> x</c><00:04:47.199><c> or</c>
+
+00:04:47.990 --> 00:04:48.000 align:start position:0%
+could be zero n x or
+ 
+
+00:04:48.000 --> 00:04:50.629 align:start position:0%
+could be zero n x or
+zero<00:04:48.479><c> is</c><00:04:48.560><c> going</c><00:04:48.720><c> to</c><00:04:48.880><c> equal</c><00:04:49.680><c> n</c><00:04:50.080><c> that's</c><00:04:50.400><c> pretty</c>
+
+00:04:50.629 --> 00:04:50.639 align:start position:0%
+zero is going to equal n that's pretty
+ 
+
+00:04:50.639 --> 00:04:52.390 align:start position:0%
+zero is going to equal n that's pretty
+simple<00:04:51.040><c> if</c><00:04:51.120><c> you</c><00:04:51.360><c> look</c><00:04:51.520><c> at</c><00:04:51.600><c> a</c><00:04:51.680><c> couple</c><00:04:52.000><c> examples</c>
+
+00:04:52.390 --> 00:04:52.400 align:start position:0%
+simple if you look at a couple examples
+ 
+
+00:04:52.400 --> 00:04:54.710 align:start position:0%
+simple if you look at a couple examples
+we<00:04:52.479><c> could</c><00:04:52.639><c> have</c><00:04:52.800><c> one</c><00:04:53.280><c> x</c><00:04:53.600><c> or</c><00:04:53.840><c> zero</c><00:04:54.320><c> that's</c><00:04:54.560><c> going</c>
+
+00:04:54.710 --> 00:04:54.720 align:start position:0%
+we could have one x or zero that's going
+ 
+
+00:04:54.720 --> 00:04:58.469 align:start position:0%
+we could have one x or zero that's going
+to<00:04:54.800><c> be</c><00:04:54.960><c> 1</c><00:04:55.360><c> we</c><00:04:55.520><c> can</c><00:04:55.680><c> have</c><00:04:56.320><c> 0</c><00:04:56.960><c> x</c><00:04:57.199><c> or</c><00:04:57.440><c> 0</c><00:04:57.919><c> that's</c><00:04:58.240><c> also</c>
+
+00:04:58.469 --> 00:04:58.479 align:start position:0%
+to be 1 we can have 0 x or 0 that's also
+ 
+
+00:04:58.479 --> 00:05:00.310 align:start position:0%
+to be 1 we can have 0 x or 0 that's also
+going<00:04:58.560><c> to</c><00:04:58.639><c> be</c><00:04:58.800><c> 0.</c><00:04:59.440><c> so</c><00:04:59.600><c> basically</c><00:05:00.000><c> what</c><00:05:00.160><c> i'm</c>
+
+00:05:00.310 --> 00:05:00.320 align:start position:0%
+going to be 0. so basically what i'm
+ 
+
+00:05:00.320 --> 00:05:02.870 align:start position:0%
+going to be 0. so basically what i'm
+saying<00:05:00.560><c> is</c><00:05:00.720><c> we</c><00:05:00.880><c> can</c><00:05:01.120><c> ignore</c><00:05:01.759><c> all</c><00:05:01.919><c> of</c><00:05:02.000><c> the</c><00:05:02.160><c> zeros</c>
+
+00:05:02.870 --> 00:05:02.880 align:start position:0%
+saying is we can ignore all of the zeros
+ 
+
+00:05:02.880 --> 00:05:04.469 align:start position:0%
+saying is we can ignore all of the zeros
+here<00:05:03.199><c> so</c><00:05:03.360><c> i'm</c><00:05:03.440><c> going</c><00:05:03.520><c> to</c><00:05:03.600><c> scribble</c><00:05:04.000><c> that</c><00:05:04.240><c> out</c>
+
+00:05:04.469 --> 00:05:04.479 align:start position:0%
+here so i'm going to scribble that out
+ 
+
+00:05:04.479 --> 00:05:06.710 align:start position:0%
+here so i'm going to scribble that out
+and<00:05:04.639><c> scribble</c><00:05:04.960><c> that</c><00:05:05.199><c> out</c><00:05:05.520><c> so</c><00:05:06.080><c> then</c><00:05:06.560><c> we're</c>
+
+00:05:06.710 --> 00:05:06.720 align:start position:0%
+and scribble that out so then we're
+ 
+
+00:05:06.720 --> 00:05:08.469 align:start position:0%
+and scribble that out so then we're
+going<00:05:06.800><c> to</c><00:05:06.880><c> be</c><00:05:07.039><c> left</c><00:05:07.280><c> with</c><00:05:07.440><c> a</c><00:05:07.520><c> bunch</c><00:05:07.840><c> of</c><00:05:08.000><c> ones</c>
+
+00:05:08.469 --> 00:05:08.479 align:start position:0%
+going to be left with a bunch of ones
+ 
+
+00:05:08.479 --> 00:05:10.230 align:start position:0%
+going to be left with a bunch of ones
+how<00:05:08.720><c> many</c><00:05:09.039><c> ones</c><00:05:09.360><c> are</c><00:05:09.520><c> we</c><00:05:09.600><c> going</c><00:05:09.680><c> to</c><00:05:09.759><c> be</c><00:05:10.000><c> left</c>
+
+00:05:10.230 --> 00:05:10.240 align:start position:0%
+how many ones are we going to be left
+ 
+
+00:05:10.240 --> 00:05:13.189 align:start position:0%
+how many ones are we going to be left
+with<00:05:10.560><c> well</c><00:05:10.960><c> it's</c><00:05:11.199><c> guaranteed</c><00:05:11.840><c> to</c><00:05:12.000><c> be</c><00:05:12.160><c> an</c><00:05:12.479><c> even</c>
+
+00:05:13.189 --> 00:05:13.199 align:start position:0%
+with well it's guaranteed to be an even
+ 
+
+00:05:13.199 --> 00:05:14.950 align:start position:0%
+with well it's guaranteed to be an even
+number<00:05:13.520><c> of</c><00:05:13.759><c> ones</c><00:05:14.080><c> i'm</c><00:05:14.160><c> not</c><00:05:14.400><c> counting</c><00:05:14.800><c> this</c>
+
+00:05:14.950 --> 00:05:14.960 align:start position:0%
+number of ones i'm not counting this
+ 
+
+00:05:14.960 --> 00:05:16.550 align:start position:0%
+number of ones i'm not counting this
+position<00:05:15.360><c> by</c><00:05:15.520><c> the</c><00:05:15.600><c> way</c><00:05:15.840><c> i'm</c><00:05:16.000><c> only</c><00:05:16.240><c> counting</c>
+
+00:05:16.550 --> 00:05:16.560 align:start position:0%
+position by the way i'm only counting
+ 
+
+00:05:16.560 --> 00:05:18.230 align:start position:0%
+position by the way i'm only counting
+this<00:05:16.800><c> portion</c><00:05:17.520><c> and</c><00:05:17.600><c> we</c><00:05:17.759><c> know</c><00:05:17.919><c> it's</c><00:05:18.080><c> going</c><00:05:18.160><c> to</c>
+
+00:05:18.230 --> 00:05:18.240 align:start position:0%
+this portion and we know it's going to
+ 
+
+00:05:18.240 --> 00:05:20.710 align:start position:0%
+this portion and we know it's going to
+be<00:05:18.320><c> an</c><00:05:18.560><c> even</c><00:05:18.800><c> number</c><00:05:19.120><c> of</c><00:05:19.280><c> ones</c><00:05:19.759><c> because</c><00:05:20.479><c> we</c>
+
+00:05:20.710 --> 00:05:20.720 align:start position:0%
+be an even number of ones because we
+ 
+
+00:05:20.720 --> 00:05:23.510 align:start position:0%
+be an even number of ones because we
+have<00:05:21.280><c> only</c><00:05:21.919><c> duplicates</c><00:05:22.880><c> here</c><00:05:23.120><c> right</c><00:05:23.360><c> it's</c>
+
+00:05:23.510 --> 00:05:23.520 align:start position:0%
+have only duplicates here right it's
+ 
+
+00:05:23.520 --> 00:05:25.270 align:start position:0%
+have only duplicates here right it's
+either<00:05:23.680><c> going</c><00:05:23.759><c> to</c><00:05:23.919><c> be</c><00:05:24.160><c> zero</c><00:05:24.560><c> ones</c><00:05:24.960><c> or</c><00:05:25.120><c> it's</c>
+
+00:05:25.270 --> 00:05:25.280 align:start position:0%
+either going to be zero ones or it's
+ 
+
+00:05:25.280 --> 00:05:26.950 align:start position:0%
+either going to be zero ones or it's
+going<00:05:25.360><c> to</c><00:05:25.440><c> be</c><00:05:25.759><c> two</c><00:05:26.080><c> ones</c><00:05:26.479><c> where</c><00:05:26.639><c> it's</c><00:05:26.800><c> going</c><00:05:26.880><c> to</c>
+
+00:05:26.950 --> 00:05:26.960 align:start position:0%
+going to be two ones where it's going to
+ 
+
+00:05:26.960 --> 00:05:30.070 align:start position:0%
+going to be two ones where it's going to
+be<00:05:27.199><c> four</c><00:05:27.520><c> ones</c><00:05:28.000><c> etc</c><00:05:28.479><c> etc</c><00:05:28.960><c> and</c><00:05:29.039><c> we</c><00:05:29.199><c> know</c><00:05:29.759><c> that</c>
+
+00:05:30.070 --> 00:05:30.080 align:start position:0%
+be four ones etc etc and we know that
+ 
+
+00:05:30.080 --> 00:05:34.469 align:start position:0%
+be four ones etc etc and we know that
+duplicates<00:05:31.120><c> always</c><00:05:31.919><c> cancel</c><00:05:32.560><c> out</c><00:05:33.120><c> one</c><00:05:33.680><c> xor</c><00:05:34.160><c> one</c>
+
+00:05:34.469 --> 00:05:34.479 align:start position:0%
+duplicates always cancel out one xor one
+ 
+
+00:05:34.479 --> 00:05:37.110 align:start position:0%
+duplicates always cancel out one xor one
+is<00:05:34.720><c> always</c><00:05:35.199><c> going</c><00:05:35.440><c> to</c><00:05:35.600><c> be</c><00:05:35.919><c> zero</c><00:05:36.479><c> that</c><00:05:36.960><c> pretty</c>
+
+00:05:37.110 --> 00:05:37.120 align:start position:0%
+is always going to be zero that pretty
+ 
+
+00:05:37.120 --> 00:05:38.629 align:start position:0%
+is always going to be zero that pretty
+much<00:05:37.280><c> shows</c><00:05:37.520><c> that</c><00:05:37.680><c> this</c><00:05:37.919><c> entire</c><00:05:38.240><c> thing</c><00:05:38.479><c> is</c>
+
+00:05:38.629 --> 00:05:38.639 align:start position:0%
+much shows that this entire thing is
+ 
+
+00:05:38.639 --> 00:05:41.430 align:start position:0%
+much shows that this entire thing is
+always<00:05:39.039><c> gonna</c><00:05:39.199><c> be</c><00:05:39.440><c> zero</c><00:05:40.080><c> so</c><00:05:40.639><c> uh</c><00:05:40.960><c> so</c><00:05:41.199><c> this</c><00:05:41.360><c> is</c>
+
+00:05:41.430 --> 00:05:41.440 align:start position:0%
+always gonna be zero so uh so this is
+ 
+
+00:05:41.440 --> 00:05:43.430 align:start position:0%
+always gonna be zero so uh so this is
+gonna<00:05:41.600><c> be</c><00:05:41.759><c> zero</c><00:05:42.080><c> right</c><00:05:42.479><c> and</c><00:05:42.800><c> this</c><00:05:43.039><c> is</c><00:05:43.199><c> either</c>
+
+00:05:43.430 --> 00:05:43.440 align:start position:0%
+gonna be zero right and this is either
+ 
+
+00:05:43.440 --> 00:05:46.070 align:start position:0%
+gonna be zero right and this is either
+gonna<00:05:43.600><c> be</c><00:05:43.759><c> a</c><00:05:44.000><c> one</c><00:05:44.560><c> or</c><00:05:44.800><c> a</c><00:05:44.960><c> zero</c><00:05:45.440><c> and</c><00:05:45.600><c> whatever</c><00:05:46.000><c> it</c>
+
+00:05:46.070 --> 00:05:46.080 align:start position:0%
+gonna be a one or a zero and whatever it
+ 
+
+00:05:46.080 --> 00:05:48.469 align:start position:0%
+gonna be a one or a zero and whatever it
+happens<00:05:46.400><c> to</c><00:05:46.560><c> be</c><00:05:46.880><c> is</c><00:05:47.120><c> going</c><00:05:47.280><c> to</c><00:05:47.440><c> go</c><00:05:47.759><c> exactly</c><00:05:48.320><c> in</c>
+
+00:05:48.469 --> 00:05:48.479 align:start position:0%
+happens to be is going to go exactly in
+ 
+
+00:05:48.479 --> 00:05:49.830 align:start position:0%
+happens to be is going to go exactly in
+the<00:05:48.639><c> output</c><00:05:48.960><c> because</c><00:05:49.199><c> like</c><00:05:49.440><c> i</c><00:05:49.520><c> showed</c><00:05:49.759><c> a</c>
+
+00:05:49.830 --> 00:05:49.840 align:start position:0%
+the output because like i showed a
+ 
+
+00:05:49.840 --> 00:05:53.110 align:start position:0%
+the output because like i showed a
+moment<00:05:50.080><c> ago</c><00:05:50.479><c> n</c><00:05:51.120><c> xor</c><00:05:51.600><c> with</c><00:05:51.840><c> 0</c><00:05:52.320><c> is</c><00:05:52.560><c> always</c><00:05:52.960><c> going</c>
+
+00:05:53.110 --> 00:05:53.120 align:start position:0%
+moment ago n xor with 0 is always going
+ 
+
+00:05:53.120 --> 00:05:55.510 align:start position:0%
+moment ago n xor with 0 is always going
+to<00:05:53.199><c> be</c><00:05:53.520><c> n</c><00:05:54.000><c> so</c><00:05:54.240><c> that's</c><00:05:54.479><c> going</c><00:05:54.560><c> to</c><00:05:54.639><c> be</c><00:05:54.800><c> this</c><00:05:55.120><c> bit</c>
+
+00:05:55.510 --> 00:05:55.520 align:start position:0%
+to be n so that's going to be this bit
+ 
+
+00:05:55.520 --> 00:05:57.830 align:start position:0%
+to be n so that's going to be this bit
+and<00:05:55.919><c> so</c><00:05:56.240><c> basically</c><00:05:56.560><c> what</c><00:05:56.720><c> i</c><00:05:56.800><c> showed</c><00:05:57.039><c> you</c><00:05:57.280><c> is</c>
+
+00:05:57.830 --> 00:05:57.840 align:start position:0%
+and so basically what i showed you is
+ 
+
+00:05:57.840 --> 00:05:59.670 align:start position:0%
+and so basically what i showed you is
+not<00:05:58.000><c> really</c><00:05:58.240><c> a</c><00:05:58.400><c> formal</c><00:05:58.880><c> proof</c><00:05:59.199><c> but</c><00:05:59.360><c> i</c><00:05:59.440><c> showed</c>
+
+00:05:59.670 --> 00:05:59.680 align:start position:0%
+not really a formal proof but i showed
+ 
+
+00:05:59.680 --> 00:06:01.590 align:start position:0%
+not really a formal proof but i showed
+you<00:05:59.840><c> an</c><00:06:00.000><c> intuitive</c><00:06:00.560><c> proof</c><00:06:00.960><c> for</c><00:06:01.120><c> just</c><00:06:01.360><c> one</c>
+
+00:06:01.590 --> 00:06:01.600 align:start position:0%
+you an intuitive proof for just one
+ 
+
+00:06:01.600 --> 00:06:03.189 align:start position:0%
+you an intuitive proof for just one
+column<00:06:02.000><c> but</c><00:06:02.160><c> of</c><00:06:02.240><c> course</c><00:06:02.479><c> we</c><00:06:02.639><c> could</c><00:06:02.720><c> apply</c><00:06:03.039><c> that</c>
+
+00:06:03.189 --> 00:06:03.199 align:start position:0%
+column but of course we could apply that
+ 
+
+00:06:03.199 --> 00:06:05.029 align:start position:0%
+column but of course we could apply that
+to<00:06:03.360><c> every</c><00:06:03.600><c> single</c><00:06:03.919><c> column</c><00:06:04.319><c> so</c><00:06:04.479><c> what</c><00:06:04.639><c> we</c><00:06:04.800><c> know</c>
+
+00:06:05.029 --> 00:06:05.039 align:start position:0%
+to every single column so what we know
+ 
+
+00:06:05.039 --> 00:06:07.110 align:start position:0%
+to every single column so what we know
+is<00:06:05.360><c> all</c><00:06:05.520><c> of</c><00:06:05.600><c> this</c><00:06:05.840><c> is</c><00:06:05.919><c> going</c><00:06:06.000><c> to</c><00:06:06.160><c> be</c><00:06:06.319><c> gone</c><00:06:06.880><c> and</c>
+
+00:06:07.110 --> 00:06:07.120 align:start position:0%
+is all of this is going to be gone and
+ 
+
+00:06:07.120 --> 00:06:09.189 align:start position:0%
+is all of this is going to be gone and
+this<00:06:07.440><c> is</c><00:06:07.600><c> going</c><00:06:07.759><c> to</c><00:06:07.919><c> be</c><00:06:08.080><c> the</c><00:06:08.319><c> output</c><00:06:08.720><c> after</c><00:06:09.039><c> we</c>
+
+00:06:09.189 --> 00:06:09.199 align:start position:0%
+this is going to be the output after we
+ 
+
+00:06:09.199 --> 00:06:11.029 align:start position:0%
+this is going to be the output after we
+do<00:06:09.520><c> xor</c><00:06:10.080><c> so</c><00:06:10.240><c> we're</c><00:06:10.400><c> going</c><00:06:10.479><c> to</c><00:06:10.560><c> return</c><00:06:10.880><c> the</c>
+
+00:06:11.029 --> 00:06:11.039 align:start position:0%
+do xor so we're going to return the
+ 
+
+00:06:11.039 --> 00:06:13.670 align:start position:0%
+do xor so we're going to return the
+correct<00:06:11.360><c> result</c><00:06:11.759><c> for</c><00:06:12.160><c> and</c><00:06:12.319><c> we</c><00:06:12.560><c> didn't</c><00:06:12.880><c> use</c><00:06:13.280><c> any</c>
+
+00:06:13.670 --> 00:06:13.680 align:start position:0%
+correct result for and we didn't use any
+ 
+
+00:06:13.680 --> 00:06:15.990 align:start position:0%
+correct result for and we didn't use any
+extra<00:06:14.080><c> memory</c><00:06:14.720><c> now</c><00:06:14.960><c> let's</c><00:06:15.280><c> jump</c><00:06:15.600><c> into</c><00:06:15.840><c> the</c>
+
+00:06:15.990 --> 00:06:16.000 align:start position:0%
+extra memory now let's jump into the
+ 
+
+00:06:16.000 --> 00:06:17.909 align:start position:0%
+extra memory now let's jump into the
+code<00:06:16.400><c> now</c><00:06:16.560><c> let's</c><00:06:16.800><c> code</c><00:06:17.039><c> it</c><00:06:17.199><c> up</c><00:06:17.360><c> and</c><00:06:17.600><c> we</c><00:06:17.759><c> are</c>
+
+00:06:17.909 --> 00:06:17.919 align:start position:0%
+code now let's code it up and we are
+ 
+
+00:06:17.919 --> 00:06:19.510 align:start position:0%
+code now let's code it up and we are
+going<00:06:18.080><c> to</c><00:06:18.240><c> have</c><00:06:18.560><c> a</c><00:06:18.720><c> result</c><00:06:19.199><c> and</c><00:06:19.280><c> we're</c><00:06:19.360><c> going</c>
+
+00:06:19.510 --> 00:06:19.520 align:start position:0%
+going to have a result and we're going
+ 
+
+00:06:19.520 --> 00:06:21.670 align:start position:0%
+going to have a result and we're going
+to<00:06:19.600><c> initialize</c><00:06:20.160><c> it</c><00:06:20.240><c> to</c><00:06:20.400><c> zero</c><00:06:21.280><c> and</c><00:06:21.440><c> this</c><00:06:21.600><c> is</c>
+
+00:06:21.670 --> 00:06:21.680 align:start position:0%
+to initialize it to zero and this is
+ 
+
+00:06:21.680 --> 00:06:23.270 align:start position:0%
+to initialize it to zero and this is
+what<00:06:21.840><c> we're</c><00:06:22.000><c> going</c><00:06:22.080><c> to</c><00:06:22.160><c> store</c><00:06:22.560><c> our</c><00:06:22.800><c> x</c><00:06:23.039><c> or</c>
+
+00:06:23.270 --> 00:06:23.280 align:start position:0%
+what we're going to store our x or
+ 
+
+00:06:23.280 --> 00:06:25.029 align:start position:0%
+what we're going to store our x or
+result<00:06:23.600><c> in</c><00:06:23.759><c> the</c><00:06:23.919><c> reason</c><00:06:24.160><c> we're</c><00:06:24.400><c> initializing</c>
+
+00:06:25.029 --> 00:06:25.039 align:start position:0%
+result in the reason we're initializing
+ 
+
+00:06:25.039 --> 00:06:26.870 align:start position:0%
+result in the reason we're initializing
+it<00:06:25.120><c> to</c><00:06:25.280><c> 0</c><00:06:25.520><c> is</c><00:06:25.680><c> because</c><00:06:25.919><c> like</c><00:06:26.080><c> i</c><00:06:26.160><c> mentioned</c><00:06:26.639><c> any</c>
+
+00:06:26.870 --> 00:06:26.880 align:start position:0%
+it to 0 is because like i mentioned any
+ 
+
+00:06:26.880 --> 00:06:27.909 align:start position:0%
+it to 0 is because like i mentioned any
+value
+
+00:06:27.909 --> 00:06:27.919 align:start position:0%
+value
+ 
+
+00:06:27.919 --> 00:06:30.230 align:start position:0%
+value
+n<00:06:28.240><c> xored</c><00:06:28.720><c> with</c><00:06:28.880><c> 0</c><00:06:29.280><c> is</c><00:06:29.520><c> always</c><00:06:29.759><c> going</c><00:06:29.840><c> to</c><00:06:30.000><c> end</c><00:06:30.160><c> up</c>
+
+00:06:30.230 --> 00:06:30.240 align:start position:0%
+n xored with 0 is always going to end up
+ 
+
+00:06:30.240 --> 00:06:32.629 align:start position:0%
+n xored with 0 is always going to end up
+being<00:06:30.639><c> n</c><00:06:31.199><c> so</c><00:06:31.360><c> this</c><00:06:31.520><c> is</c><00:06:31.600><c> a</c><00:06:31.680><c> good</c><00:06:31.840><c> default</c><00:06:32.240><c> value</c>
+
+00:06:32.629 --> 00:06:32.639 align:start position:0%
+being n so this is a good default value
+ 
+
+00:06:32.639 --> 00:06:34.870 align:start position:0%
+being n so this is a good default value
+to<00:06:32.880><c> set</c><00:06:33.039><c> it</c><00:06:33.199><c> to</c><00:06:33.680><c> and</c><00:06:34.240><c> then</c><00:06:34.400><c> we're</c><00:06:34.560><c> just</c><00:06:34.720><c> going</c>
+
+00:06:34.870 --> 00:06:34.880 align:start position:0%
+to set it to and then we're just going
+ 
+
+00:06:34.880 --> 00:06:37.909 align:start position:0%
+to set it to and then we're just going
+to<00:06:34.960><c> go</c><00:06:35.120><c> through</c><00:06:35.440><c> every</c><00:06:35.759><c> single</c><00:06:36.160><c> value</c><00:06:36.720><c> in</c><00:06:37.120><c> nums</c>
+
+00:06:37.909 --> 00:06:37.919 align:start position:0%
+to go through every single value in nums
+ 
+
+00:06:37.919 --> 00:06:41.749 align:start position:0%
+to go through every single value in nums
+take<00:06:38.160><c> that</c><00:06:38.560><c> n</c><00:06:39.039><c> and</c><00:06:39.759><c> x</c><00:06:40.080><c> or</c><00:06:40.319><c> it</c><00:06:40.560><c> with</c><00:06:41.039><c> the</c><00:06:41.280><c> result</c>
+
+00:06:41.749 --> 00:06:41.759 align:start position:0%
+take that n and x or it with the result
+ 
+
+00:06:41.759 --> 00:06:43.590 align:start position:0%
+take that n and x or it with the result
+and<00:06:41.840><c> then</c><00:06:42.080><c> set</c><00:06:42.319><c> the</c><00:06:42.479><c> result</c><00:06:42.880><c> back</c><00:06:43.120><c> equal</c><00:06:43.440><c> to</c>
+
+00:06:43.590 --> 00:06:43.600 align:start position:0%
+and then set the result back equal to
+ 
+
+00:06:43.600 --> 00:06:45.110 align:start position:0%
+and then set the result back equal to
+that<00:06:44.080><c> and</c><00:06:44.319><c> then</c>
+
+00:06:45.110 --> 00:06:45.120 align:start position:0%
+that and then
+ 
+
+00:06:45.120 --> 00:06:46.950 align:start position:0%
+that and then
+once<00:06:45.360><c> we've</c><00:06:45.520><c> done</c><00:06:45.759><c> that</c><00:06:46.240><c> we</c>
+
+00:06:46.950 --> 00:06:46.960 align:start position:0%
+once we've done that we
+ 
+
+00:06:46.960 --> 00:06:48.469 align:start position:0%
+once we've done that we
+like<00:06:47.199><c> i</c><00:06:47.280><c> showed</c><00:06:47.520><c> in</c><00:06:47.600><c> the</c><00:06:47.680><c> proof</c><00:06:48.000><c> we</c><00:06:48.160><c> know</c><00:06:48.319><c> for</c>
+
+00:06:48.469 --> 00:06:48.479 align:start position:0%
+like i showed in the proof we know for
+ 
+
+00:06:48.479 --> 00:06:50.390 align:start position:0%
+like i showed in the proof we know for
+sure<00:06:48.639><c> that</c><00:06:48.800><c> the</c><00:06:48.960><c> result</c><00:06:49.440><c> has</c><00:06:49.759><c> that</c><00:06:50.080><c> single</c>
+
+00:06:50.390 --> 00:06:50.400 align:start position:0%
+sure that the result has that single
+ 
+
+00:06:50.400 --> 00:06:52.150 align:start position:0%
+sure that the result has that single
+number<00:06:50.720><c> that</c><00:06:50.800><c> we're</c><00:06:50.960><c> trying</c><00:06:51.199><c> to</c><00:06:51.360><c> return</c><00:06:51.919><c> so</c>
+
+00:06:52.150 --> 00:06:52.160 align:start position:0%
+number that we're trying to return so
+ 
+
+00:06:52.160 --> 00:06:53.990 align:start position:0%
+number that we're trying to return so
+now<00:06:52.400><c> let's</c><00:06:52.800><c> run</c><00:06:53.039><c> the</c><00:06:53.120><c> code</c><00:06:53.360><c> to</c><00:06:53.520><c> make</c><00:06:53.680><c> sure</c><00:06:53.840><c> that</c>
+
+00:06:53.990 --> 00:06:54.000 align:start position:0%
+now let's run the code to make sure that
+ 
+
+00:06:54.000 --> 00:06:55.990 align:start position:0%
+now let's run the code to make sure that
+it<00:06:54.080><c> works</c><00:06:54.560><c> and</c><00:06:54.800><c> yes</c><00:06:55.039><c> it</c><00:06:55.120><c> does</c><00:06:55.440><c> as</c><00:06:55.680><c> you</c><00:06:55.759><c> can</c><00:06:55.840><c> see</c>
+
+00:06:55.990 --> 00:06:56.000 align:start position:0%
+it works and yes it does as you can see
+ 
+
+00:06:56.000 --> 00:06:57.430 align:start position:0%
+it works and yes it does as you can see
+on<00:06:56.080><c> the</c><00:06:56.240><c> left</c><00:06:56.560><c> it</c><00:06:56.720><c> works</c><00:06:56.960><c> and</c><00:06:57.120><c> it's</c><00:06:57.280><c> pretty</c>
+
+00:06:57.430 --> 00:06:57.440 align:start position:0%
+on the left it works and it's pretty
+ 
+
+00:06:57.440 --> 00:06:58.870 align:start position:0%
+on the left it works and it's pretty
+efficient<00:06:57.840><c> so</c><00:06:58.000><c> i</c><00:06:58.080><c> really</c><00:06:58.319><c> hope</c><00:06:58.479><c> that</c><00:06:58.560><c> this</c><00:06:58.720><c> was</c>
+
+00:06:58.870 --> 00:06:58.880 align:start position:0%
+efficient so i really hope that this was
+ 
+
+00:06:58.880 --> 00:07:00.629 align:start position:0%
+efficient so i really hope that this was
+helpful<00:06:59.280><c> if</c><00:06:59.440><c> it</c><00:06:59.520><c> was</c><00:06:59.919><c> please</c><00:07:00.160><c> don't</c><00:07:00.319><c> forget</c><00:07:00.560><c> to</c>
+
+00:07:00.629 --> 00:07:00.639 align:start position:0%
+helpful if it was please don't forget to
+ 
+
+00:07:00.639 --> 00:07:02.070 align:start position:0%
+helpful if it was please don't forget to
+like<00:07:00.880><c> and</c><00:07:00.960><c> subscribe</c><00:07:01.440><c> it</c><00:07:01.520><c> really</c><00:07:01.759><c> supports</c>
+
+00:07:02.070 --> 00:07:02.080 align:start position:0%
+like and subscribe it really supports
+ 
+
+00:07:02.080 --> 00:07:03.430 align:start position:0%
+like and subscribe it really supports
+the<00:07:02.160><c> channel</c><00:07:02.479><c> a</c><00:07:02.560><c> lot</c><00:07:02.720><c> consider</c><00:07:03.120><c> checking</c><00:07:03.360><c> out</c>
+
+00:07:03.430 --> 00:07:03.440 align:start position:0%
+the channel a lot consider checking out
+ 
+
+00:07:03.440 --> 00:07:04.950 align:start position:0%
+the channel a lot consider checking out
+my<00:07:03.599><c> patreon</c><00:07:04.000><c> where</c><00:07:04.160><c> you</c><00:07:04.240><c> can</c><00:07:04.319><c> further</c><00:07:04.639><c> support</c>
+
+00:07:04.950 --> 00:07:04.960 align:start position:0%
+my patreon where you can further support
+ 
+
+00:07:04.960 --> 00:07:06.309 align:start position:0%
+my patreon where you can further support
+the<00:07:05.039><c> channel</c><00:07:05.360><c> and</c><00:07:05.520><c> hopefully</c><00:07:05.919><c> i'll</c><00:07:06.080><c> see</c><00:07:06.240><c> you</c>
+
+00:07:06.309 --> 00:07:06.319 align:start position:0%
+the channel and hopefully i'll see you
+ 
+
+00:07:06.319 --> 00:07:10.000 align:start position:0%
+the channel and hopefully i'll see you
+pretty<00:07:06.560><c> soon</c><00:07:07.039><c> thanks</c><00:07:07.199><c> for</c><00:07:07.360><c> watching</c>
+

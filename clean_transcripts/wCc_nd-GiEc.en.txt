@@ -1,0 +1,486 @@
+welcome back and let's write some more
+neat code today so today let's solve the
+problem longest increasing path in a
+matrix and while this is a hard problem
+i would definitely say it's one of the
+more doable hard problems there's
+nothing crazy involved but it is
+somewhat difficult we're given an m by n
+matrix
+that is filled with integers and the
+integers are going to be i believe zero
+or greater than zero so mostly positive
+integers and we want to return the
+length of the longest increasing path in
+this matrix and we are allowed to move
+only in four directions left right up or
+down we're not allowed to move
+diagonally and of course we can't go
+outside of the boundaries so let's just
+start with some observations first of
+all this is an example and you can see
+that this is the path that is the
+longest it's of length four and it's in
+increasing order obviously we can start
+with pretty much any value right and
+pretty much starting at any position we
+can create a path of at least length one
+right this is a path of length one this
+is a path of length one uh but you know
+starting from here then the next
+position that we go to is a two it has
+to be greater than one which it is and
+then the next one is six that's greater
+and then nine that's also greater but
+from here uh we can't really go anywhere
+else right we're allowed to move here uh
+but this one is not greater than nine
+it's just exactly nine so that's the
+longest path now one thing you might be
+wondering is can we you know reuse the
+same value multiple times right what if
+we have a loop of some kind well just
+think about it for a second if this is
+an increasing path of course we can't
+reuse any values because take a look at
+our path right you know the value that
+we get to is going to be greater than
+all the previous values anyway so how
+could we possibly reuse any of the
+values in our path we're not allowed to
+now they don't state that in the problem
+statement but that's an observation that
+you have to make on your own and in this
+case you know that's true and another
+observation we can make without even
+trying to understand you know what's the
+algorithm we'd use for this problem just
+by looking at this example we can make a
+very important observation and that is
+that if this is the longest increasing
+path and it's of length four that means
+the longest increasing path starting at
+this position is going to be of length
+four but what about the longest
+increasing path starting at this
+position over here what is it going to
+be in this case we can see that there is
+a path right now starting from it that's
+increasing that's of length three is
+there going to be any paths starting
+from this position that are gonna be
+larger than three of course not because
+if there were wouldn't this entire path
+be longer than four if we found a path
+an increasing path starting from this
+position that was not three but it was
+actually four then you know let's say it
+looks something like this right uh then
+of course the longest increasing path
+from here would be five now what i'm
+saying might not make sense to you just
+yet but now let's actually understand
+how we can approach the solution to this
+problem and then i bet it will make
+sense now let's think about this what's
+the most basic brute force way that we
+could find the longest increasing path
+well we could basically start at every
+single position and say maybe the
+longest increasing path will start here
+maybe it'll start here maybe it'll start
+here right who knows
+they don't tell us where we have to
+start so we pretty much have to try
+every single position that's the brute
+force and let's say we you know record
+that in a grid that's the same size as
+the grid we have here i'm going to call
+it lip for longest increasing path and
+once we do that once we've filled up
+every value in here we can just take the
+maximum of them and then return that
+that'll be the length of the longest
+increasing path okay so for any
+particular position how do we find the
+longest length well the brute force
+again is just going to be a simple dfs i
+hope you're familiar with the dfs
+algorithm it's a pretty standard graph
+algorithm and you definitely will need
+it for hard level problems we're going
+to run a dfs starting from this position
+going in four directions right up down
+left right of course if we go out of
+bounds to the top or to the left or any
+other direction we're not going to
+continue there of course okay so we
+can't go out of bounds let's try going
+right starting from here are we allowed
+to go here well we have to compare the
+values right we have to look at this
+value is it greater than the previous
+value it's not greater than the previous
+value so we can't go here right we're
+not allowed to go there starting from
+here okay let's try going down that's
+the only position left that we have it's
+a six that's also not greater than nine
+so we can't go there either uh so we're
+pretty much uh not allowed to go
+anywhere so what's the length uh from
+here it's one because remember
+one is basically like the default value
+we can always have a length of one
+starting at any position okay so we did
+that now let's go to the next position
+similarly we're not allowed to go in any
+of the four directions because none of
+them have a greater value so we'll also
+put a one here okay now let's try the
+four and this is where things are going
+to get interesting so pay attention we
+can't go up we can't go to the right but
+we can go to the left
+and finally we see a value that's
+greater than the original 9 is greater
+than 4 so we are allowed to go here
+that's awesome
+but now
+we're doing dfs does that mean
+recursively we're going to run dfs on
+this position again well we don't have
+to because we already ran dfs on this
+position and we already found the
+longest increasing path starting from
+that position the length of it is one so
+we don't have to repeat that work
+because we stored the repeated work
+inside of this matrix so we know that
+starting from four we can go to this
+nine and that's a path of length two
+that's at least one path that we can
+create okay we do have one more
+direction to try though we can from four
+we can go
+down to the a we haven't ran dfs on this
+position yet so we're gonna have to do
+that now dfs okay let's go to the right
+that's out of bounds okay let's go up
+should we even go up well in reality we
+shouldn't but if our algorithm is
+programmed to try going up it'll still
+work for us because of course we came
+from the 4 so we know that the value up
+above is less than eight so if we try
+going up it's not going to work anyway
+so it's okay to leave that in the code
+because it's not going to break anything
+so that's good for us because it keeps
+our dfs pretty simple okay now let's try
+going down we can't go down because one
+is less than eight we want it to be
+greater than eight let's try going to
+the left okay six is also less than
+eight we want it to be greater than
+eight okay so we couldn't go anywhere
+but we'd still uh
+of the two paths both of them were the
+same length so we can put a two here uh
+starting from this position the longest
+increasing path is length two but did we
+do anything else well we started at the
+eight we ran dfs from this position so
+not only did we determine that the the
+lip from here is two but we also
+determined that the lip from eight is
+one because we couldn't go anywhere
+starting from eight are you starting to
+see how this algorithm itself even the
+dfs brute force is not inefficient
+because we're caching the work we're
+storing the work in a matrix so this
+isn't even a brute force solution as
+long as you implement it correctly it's
+actually very efficient as long as we
+don't repeat the work so now when we
+we're not we're not quite at the eight
+yet right because we're going in order
+in our uh matrix but once we get to the
+eight we'll know we already ran dfs on
+it and we won't have to repeat that work
+so now that you're probably starting to
+get the idea i'm going to start fast
+forwarding through this explanation so
+now let's run dfs starting from the six
+we try going left can't we try going
+right we can't we try going down we also
+can't do that we try going up okay we
+can do that and we know that we already
+computed the lip from here it's one so
+we can say the lips from starting at six
+is going to be two now let's go to the
+second six we can't go left it's less
+than six we can't go down it's also less
+than six we can go to the right uh we
+already computed the lip from here so we
+know that this will be a path of length
+two we know that because uh we're just
+going to take the value here that we
+computed and just add it to uh you know
+one from here so
+that's uh one possibility we could also
+go up we already computed the lip from
+up it's also one so basically we have a
+tie right and that tie is going to be of
+length two so we can put a two in this
+position and then when we get to the 8
+we're going to try running dfs on it but
+before we do we're going to see we've
+already computed it so we don't repeat
+that work uh starting from 2 we only
+have two possibilities can't go to the
+right but we can go up above and up
+above we're not going to rerun dfs on
+this position because we already
+computed it over here it's length two so
+we can say the lip starting from this
+position is one plus the two value
+that's above it so it's going to be
+three and same here we can try going up
+uh which will be one plus two because
+the value up above it is two we can try
+going to the right that's not gonna work
+we can we can't go down but we can go to
+the left and that's gonna be one plus
+three of course one plus three is
+greater than one plus two so uh the
+value we're going to put here uh in our
+lip is gonna be four and uh fast
+forwarding this i think this is gonna
+look up above and then that's just gonna
+be one plus one so we're gonna put a two
+here and then we're going to take the
+max from our lip which is of course 4
+and we're going to return 4. we don't
+actually have to return the path itself
+just the length of it in this case which
+is 4. okay so that's the solution and
+it's pretty efficient but how do we know
+it's efficient what's the time
+complexity of course the memory
+complexity is big o n times m those are
+the dimensions of the matrix because
+we're using extra space here but what's
+the time complexity it's also big o of n
+times m now how do i know that i don't
+know how quickly i can give you like a
+formal proof of it but let's just think
+about the intuition behind it let's say
+our matrix was in such a way that when
+we ran dfs at the first position we you
+know had a path such like this and then
+we went here and then we went there then
+here then here then here basically we
+visit the entire matrix in one dfs
+that's going to take big o of n times m
+to run that dfs but the good thing about
+that is going to be after we've done
+that we're going to have computed every
+lip from every single position right and
+then when we visit the remainder
+remaining values of the matrix each of
+those is going to be computed in big o
+of one time so you know having done the
+repeated work at the beginning wasn't
+such a big deal because the remainder is
+going to be very easy or in the worst
+case maybe starting from each position
+let's say they're all the same exact
+value right let's say each of them was
+exactly nine in that case we wouldn't
+really run dfs on any of them well we
+would try to but we'd see that we can't
+go in any of the four directions so for
+each of these in that case as well the
+time complexity would be big o of one
+which means the overall time complexity
+would be n times m once again so i hope
+you're kind of getting the intuition
+behind why this is an efficient solution
+um and with that being said let's
+finally jump into the code okay so now
+let's code it up and i'm sure you know
+that i like to write these kind of
+two-dimensional graph problems uh matrix
+problems in a very formulaic way and
+i've done it so many times that actually
+don't even have to think about it i
+always do this i always take the
+dimensions of the matrix put it in some
+static variables rows and columns
+because we know we're going to run dfs
+on this so we're going to need to know
+those dimensions in this case we're
+gonna have a two-dimensional matrix or
+cache i'm gonna call it dp and i'm
+actually gonna set it to be a hash map
+because it's pretty easy to do that in
+python uh we can use two values to
+access this right and those the key
+value is basically going to be row
+column which is going to map to the lip
+the longest increasing path now of
+course you could just use a
+two-dimensional matrix if you're doing
+this in java or whatever if you want and
+maybe i honestly should do that as well
+but i'm really used to doing it this way
+because you can kind of just turn your
+brain off
+and next we're going to use
+dfs we have a function inside of a
+function so we don't have to pass in
+every variable such as these three that
+i defined up above but we are going to
+pass in the position that we're
+currently visiting which is the row
+column coordinate and we want to make
+sure that the pass the path is an
+increasing order so we are going to pass
+in what the previous value ends up being
+and then with all uh you know graph
+traversals the first thing you want to
+check is did we go out of bounds is the
+row less than zero or is the row exactly
+equal to the number of rows which means
+it's too big um or
+same exact thing with the column is
+column less than zero or is column equal
+to the number of columns because that
+means it's too big and the last
+condition in this case is going to be is
+the path not increasing how do we know
+that well the value that we're currently
+visiting which is the matrix at the row
+column position is
+less than or equal to the previous value
+that means it's not increasing and if
+it's not increasing then we are just
+going to return we can return zero just
+to say that the increasing path was just
+zero okay so that's one base case and
+the second base case is a little bit
+easier that's if we already computed the
+lip at this position rc and if this and
+we know that because if this is in our
+dp hash map as a key value then we can
+return whatever the length of it was
+that we computed and ended up storing in
+our dp cache so there we go okay now to
+actually compute the length we're just
+going to call it result and initially
+set it to 1 because we know it's at
+least going to be one that's the minimum
+it could possibly be and now we could
+use a loop to go through all four of the
+directions but i don't think it's really
+necessary we can just kind of copy and
+paste the same line like four times i
+prefer doing that rather than doing a
+loop but you can do what you prefer so
+one we know we're going to
+run dfs right we're going to run dfs on
+one of the neighboring positions one of
+them could be r plus one
+and then the column is the same and what
+is going to be the previous value that
+we passed and of course it's going to be
+the current value right now so row
+column and we only want to update the
+result if this is greater than the
+result so what we want to do is set this
+equal or actually this alone is not
+going to be the length because this is
+going to tell us the longest increasing
+path starting at row plus one and if
+that's the case what we actually want
+the length to be is from this position
+that we're currently at so we're going
+to take this
+and add 1 to it 1 plus that similar to
+how i was doing it or i was talking
+about it in the drawing explanation okay
+so once we have that then we want to
+take the max of the current
+maximum result maximum length and the
+max of this and then you know update it
+accordingly and this is where we copy
+and paste uh four times because we want
+to go in all four of the directions so r
+plus one r minus one
+also column plus one and column minus
+one okay and when we're done with that
+the last thing we have to do is now that
+we've actually computed the lip starting
+at this position we want to make sure to
+actually throw it into our dp cache so
+let's do that before we end up returning
+so let's store that and then once we've
+stored it we can go ahead and return it
+so then the next time if we ever call
+dfs starting from the same position
+we'll end up returning it from our cache
+rather than redoing the dfs so that's
+where we're saving our time now that
+we've defined our dfs all that's left is
+to actually call it and remember we want
+to run dfs starting from pretty much
+every single position in the grid so we
+can do a nested for loop to do that so
+go through every row go through every
+single column when we do that we also
+want to run dfs on every
+coordinate and what's the previous value
+that we're going to pass in for that
+well we know that every value in the
+matrix is going to be
+zero or greater than zero so a default
+value we can pass in for the previous
+value uh is negative one because we
+never want this to return if we're
+looking at like the first value right
+and so if we pass in negative one this
+uh comparison will never evaluate to
+true right none of these values is ever
+going to be less than negative one
+that's good so that's why we're doing it
+like this
+so
+once we've done that
+we're good to go the last thing we have
+to do is just return whatever the
+maximum was so we can just take our dp
+values which will return a list of all
+the values and just take the maximum of
+that now we probably don't need to do it
+like this like we could have just
+maintained another variable over here
+maybe i've just called it lip longest
+increasing path and then just
+continuously updated it based on the
+maximum that was returned you can do it
+however you want the time complexity is
+the same even though we're iterating
+over the entire you know matrix again
+pretty much by doing this that's the
+idea let's just run this to make sure
+that it works and as you can see on the
+left yes it does work and it's about as
+efficient as you can get for this
+problem so i really hope that this was
+helpful if it was please like and
+subscribe it really supports the channel
+a lot consider checking out my patreon
+where you can further support the
+channel and hopefully i'll see you

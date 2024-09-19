@@ -1,0 +1,589 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+let's solve
+climbing stairs so this is going to be
+another dynamic programming problem
+and this is definitely more on the easy
+side definitely compared to some of the
+really hard
+dynamic programming problems that we've
+been solving recently but i still think
+that this is a good problem to really
+understand the fundamentals understand
+you know the brute force
+and taking that brute force you know
+using memoization and then of course
+getting the true dynamic programming
+solution
+and by the way if you don't already know
+we have been tracking a list of blind 75
+questions on the spreadsheet so today
+we're going to be solving this dynamic
+programming one
+the climbing stairs problem so i will be
+adding the solution once this video is
+uploaded
+and the link will be in the description
+if you do want to take a look at this
+sheet
+so the problem statement is pretty
+simple we're climbing a staircase and
+it's going to take us
+n steps to reach the top of the
+staircase
+every time we take a step we have two
+choices of how we can take a step
+we can either just take one single step
+or we can take
+two steps at once and all we want to
+know is
+how many different ways can we get to
+the top of the staircase
+so let's look at the first example n
+equals two that means we need to climb
+two steps so we could draw the picture
+kind of like this right so
+let's say we start over here right this
+is step
+zero basically when we haven't climbed
+anything and our goal is to get up here
+which clearly is
+two steps right so starting from here we
+know we can make two choices right we
+can take
+one step and that would land us over
+here or we could take
+two steps and that would land us over
+here so already we're seeing
+one way is to just take two steps right
+that's what this path
+would take us right that's one way we
+could reach the goal right just taking
+two steps at once
+now if we ended up taking one step then
+we would be
+at this position so from here we would
+we would have that same exact choice
+right we can take
+one step or we can take two steps now
+clearly if we take two steps we've gone
+too far right we were
+only trying to climb two steps total but
+if we you know end up over here
+then you know that's not going to count
+as a path right so that would not count
+but as you can see if we took one step
+initially then we could take another
+single step and that would be another
+way so either
+this is one way we could reach two steps
+or we could just take
+a single double step right so clearly
+there are two different ways we could
+climb the staircase and that's also the
+result
+of this problem and they basically
+explain it over here
+so let's look at the second example
+which is basically if we're climbing
+three steps instead of two right so
+let's look at the drawing so once again
+we're gonna do the exact same thing that
+we did right from here we could take
+one step or we could take two steps
+right
+and so so far we'd get here but remember
+our goal is to climb three steps so
+let's continue
+so from here we could take one step
+which would land us at the result or we
+could take
+two steps which would get us out of
+bounds right that's not what we want to
+do
+so so far we have found one way to get
+us to the result
+but let's continue that from over here
+again we can take a single step which
+would get us over here or we can take
+two steps which would get us at the
+result so now we've found two different
+ways we can get to the last step
+and lastly we still have a path to
+continue right we got here
+by taking one step and then taking
+another single step so
+here we have two choices take one step
+get to the result or take two steps and
+get out of bounds
+so in the end we see that there were
+three different ways
+we were able to get to this last step as
+you can see this is getting really hard
+to visualize
+with a single staircase a more easy way
+would be
+to get a decision tree to visualize and
+at
+every decision remember we can take one
+step or we can take two steps so let's
+try to visualize the problem like that
+and see if we can notice any patterns
+so let's say we're given n equals five
+we're trying to climb
+five steps so we can consider just like
+the previous drawing that we're starting
+at step
+zero and our goal is to get to step five
+now remember
+at every given point we have two
+decisions to make
+we can climb one step or we can climb
+two steps right and depending on the
+decision that we make
+each of these is going to lead to a
+different path we can take to get to the
+result and remember
+all we're trying to do is count the
+number of ways we can get to that result
+so in this decision tree you know we're
+gonna keep making two decisions at every
+step and at the end
+we're gonna count how many different
+ways were we
+able to get to five steps reached
+so we can get to step one and we can get
+to step two let's just continue drawing
+out the decision tree from here we can
+make two more decisions
+we can take one step which would get us
+to two we can take two steps get us to
+three
+and similar here we can take one step
+get us to three
+two steps get us to four from here we
+can also take one step
+get us to three two steps get us to four
+one step get us to four two steps get us
+to five
+now here we can see that we reached the
+result right n equals five
+so this is our first path that we
+could reach to get us to the result
+right you can see we took
+one step then we took two steps then we
+took another two steps so this is our
+result
+once we get to it that's our base case
+right we're gonna solve this recursively
+right that's pretty much what we're
+doing this decision tree is basically
+recursion
+and this is our base case we wouldn't
+want to continue
+if we got here so here we would return
+one we found one way to get to the
+result but for the remaining paths let's
+continue so here we can take one step or
+two
+that'd get us to four this would get us
+to five so you can see once again we
+found
+another way we can get to the results so
+so far we have two different paths that
+can lead us to step five
+and here let's do the same thing if we
+take one step we get to five that's the
+result if we take two steps we get to
+six
+that means we overshot right we went too
+far this is another base case
+if this number of steps ever exceeds
+five then we're going to return
+zero right we found zero ways from this
+path that can reach
+the result so now let's continue over
+here again we take one step or two
+so we'll get to four or five another
+path that leads us to the result
+and here we can also take one step or
+two which would get us five
+or six similarly over here right this is
+another
+four so the exact same thing is going to
+happen do you start to see
+we're repeating the exact same problem
+multiple times how can we better solve
+this problem knowing that
+so now we have another four we're just
+going to repeat the exact same thing
+that we just did before right take one
+step or two we know we're gonna get to a
+five and we know we're going to get to a
+six
+so you can see every path led to the
+base case except for this last one so
+let's complete this we can take one
+step which would get five or two steps
+six okay so now our entire decision tree
+is complete so what's the result gonna
+be remember red means we're gonna return
+zero green means we're gonna return one
+so let's just count the number of greens
+one two three four five six seven eight
+so there were eight different paths from
+the beginning that could reach step five
+but remember since we started here we
+were asking how many different ways
+starting at zero can we get to five and
+then we got to a
+sub problem we got to a sub problem of
+starting at step
+one how many ways can we reach five from
+this decision tree alone we see that
+there's one
+two three four five different ways we
+can reach the result
+and down two if we're starting at step
+two
+there's three different ways we can
+reach the result now if you solve the
+problem like this
+basically using recursion and you could
+probably do it with depth first search
+because this is basically a tree and
+what would be the time complexity of
+that well clearly we you can see that we
+have two decisions each time so it's
+going to be 2 to the power of the height
+of this tree what's the height going to
+be
+it's going to be roughly n equals 5
+right you can see that this is going to
+be the longest path so that's roughly
+the height so the overall time
+complexity is going to be 2 to the power
+of
+n that's not super efficient but you can
+see here
+we're repeating the same problem
+multiple times right when we get over
+here we're
+asking how many different ways starting
+from 2 can we get to five right
+and down in this decision tree we found
+yes there were three different ways
+right so then when we
+get over here why why do we have to
+recompute the exact same thing
+take a look at these two purple blocks i
+just drew
+notice how this decision tree looks the
+exact same as this one
+because in both cases we're solving the
+exact
+same sub problem and since we're doing
+it depth first search
+this one is going to be solved first
+right so
+if we solve this entire problem what we
+said was
+okay we found out starting at step two
+there were three different ways to get
+to step five so when we get here why
+don't we just take
+that result store it in memory store it
+in dp
+or basically this is a cache right we're
+we're storing it in memory so then when
+we get here we can just say we already
+know the result of this
+meaning that we don't need to draw out
+the entire decision tree we're just
+going to skip that all together we're
+not going to draw this
+we're not going to draw that and we're
+not going to draw any
+levels of this tree so as you can see
+i'm eliminating
+all that repeated work by saving that
+solution
+but that's not all right we see over
+here
+we're asking a different sub problem
+starting at step three how many
+different ways can we get to n equals
+five
+well in this case it was two different
+ways right notice how this decision tree
+is the exact same over here because
+here we're asking that same question
+starting at step three what's the number
+of ways and since we're doing the step
+for search
+this one is going to end up being
+computed before this one
+so when we get here we can just say we
+already know the answer is
+2 so we don't need to run through the
+entire decision tree again
+so in this case as well we can eliminate
+that repeated work so i'm just going to
+cross this entire thing out
+and we're not done yet see over here
+we're asking starting at step four
+how many ways can we get to five that
+same problem is over here
+notice how they have the exact same
+decision tree this one is going to be
+computed first because we're doing debt
+for search
+so once again let's eliminate this
+repeated work
+so now you can see when we do eliminate
+all that repeated work
+this is what our decision tree ends up
+looking like and this
+is roughly o of n this is
+linear time solution reason being we're
+only solving each sub problem once right
+so we know that the first sub problem
+the original problem is starting at zero
+then we get a sub problem of
+one two three four all the way to
+five which is our base case right so
+each of these sub problems is just being
+solved once
+n is five so overall the time complexity
+is big o of n
+and this is basically the the dynamic
+programming solution where we are
+caching the result aka memoization
+so we're using memoization but this
+problem can actually be solved with a
+true dynamic programming solution
+as you can see starting at the result
+the the result
+of zero depends on the sub problem
+this one right and this sub problem
+depends on another sub problem
+which depends on another sub problem
+which depends on our base case so why
+don't we
+start at the bottom solve the base case
+and then work our way up to the original
+problem
+at zero right why don't we start at the
+bottom work our way
+up this is called a bottom up this is
+called a bottom
+up dynamic programming approach so
+that's what i'm going to show you we're
+going to start at the base case
+and then work our way up so remember
+we're starting
+at position zero and our goal is to get
+to the fifth step
+right each time we can take one step or
+we can take two steps right
+so i'm going to be storing our result in
+an array called dp
+so we're going to have a position in dp
+all the way from index
+0 all the way up to index n which is
+going to be our input value remember
+so remember we're we're at the base case
+initially right what's the base case
+gonna be
+well at the last step if we start here
+how many different ways can we land here
+well that's just gonna be
+one right that's our default value so
+now
+that we solved that we are able to solve
+this one right because remember this
+problem depends on the sub problem of
+this
+so from here let's say we're starting
+here we can take
+one step which lands us at the result we
+can take
+two steps which lands us out of bounds
+right so how many different ways
+from here can we reach the goal again
+it's going to be one
+and do you notice how this is always
+going to be the case
+even if we had something like n equals a
+hundred so let's say this was actually a
+hundred and this was 99
+this would always be one right this is
+always gonna be one because
+it's at the goal and starting from here
+it's also always going to be
+one because we can take one step which
+would get us to the result or we could
+take two steps which would get us out of
+bounds so no matter what the n
+e the input value n is this is always
+going to be the case
+it's always going to be uh 1 1.
+next we're going to get to the
+interesting part so then we want to know
+okay how many different ways from here
+can we reach
+five well this depends on two sub
+problems which come
+after it right so we can take one step
+over here or two steps over here right
+so and then we get to the sub problem
+right
+so from four we don't need to continue
+to figure out how many different ways
+from four can we get to five because we
+just computed that that's why we're
+using dynamic programming that's why we
+have this array because we already
+computed
+starting at four how many different ways
+can we reach five and we also
+starting at five how many different ways
+can we reach five that's also
+one so what we're gonna do in this value
+is basically take
+these next two values add them together
+one plus one and then we're gonna get
+two over here and we're gonna do the
+exact same thing
+for this position two so we know here we
+could take one step
+or two steps right so what we wanna do
+from here three is find out how many
+different ways can we reach five
+we just computed that that's two and
+from 4 we want to know how many
+different ways can we reach
+5 we also already computed that that's
+one so what we can do is take
+these two values add them together and
+that's going to be
+what we put here so starting at 2 we can
+get to 5
+three different ways and at this point i
+bet you probably get the idea we're
+gonna do the exact same thing over here
+so what value are we gonna put over here
+just take these
+next two values add them together three
+plus two is gonna be
+five and remember this is what we were
+originally trying to compute this is
+going to be the result it depends on
+only two sub problems
+which are listed right after it five
+plus three that's going to be eight so
+that's the result
+if you're familiar with what the
+fibonacci sequence is the fibonacci
+numbers
+that's exactly what we're doing right
+now we're starting at the base case of 1
+1
+adding these two values to get the next
+result then we're adding these two
+values to get three
+then we're adding these two values to
+get five then we're adding these two
+values to get a
+so you may or may not be familiar with
+it but that's what we're doing
+and you may have also noticed we're
+using extra memory right we're having an
+entire array size equals n that's going
+to be o of n
+extra memory but is it actually needed
+to have an entire array
+notice how each value such as this one
+only depends on the two values that come
+after it and this one only depended on
+the two values that came
+after it so in reality we don't need to
+have an entire array we just need to
+have
+two different variables let's initialize
+the two variables like this
+one is gonna be this position two
+is gonna be this position because
+starting from here we wanna know how
+many different ways could we reach the
+result if we took
+one step that's why this is called one
+and if we took two steps
+that's why this is called two and we're
+basically going to be computing this
+next value right and once we compute
+this next value we're gonna shift our
+one variable over here
+and we're gonna shift our two variable
+over here and we're going to keep doing
+that until we get to the result
+of zero and if we initialize two
+initial variables one and two as values
+one how many different
+values do we have to compute that come
+after in this case you can see we have
+to compute
+four values right so basically we
+compute
+n minus one values we have to loop n
+minus one times and then when our one
+variable
+ends up getting in this position that's
+what we're going to return
+as the result so this was a really long
+explanation because we did a lot of
+analysis but when i actually show you
+the code it's going to be really simple
+using this idea of two variables being
+shifted
+n minus 1 times so as i said from the
+drawing explanation we're gonna have two
+variables one and two
+both are going to be initialized as one
+and
+then we're just gonna loop through n
+minus one time so for i in range
+n minus one and we're gonna continuously
+update these two variables one and two
+so the first thing i'm gonna do is
+update one
+one is gonna be set to one plus two
+right because we're just adding the two
+previous values
+and then getting the new result so one
+is being updated and we would also want
+to shift
+two to whatever the previous value of
+one
+was but you can see that we're updating
+one before we actually shift two so what
+we're actually going to do is store
+one in a temporary variable before
+we actually update it and then we're
+going to set two to the temporary
+variable
+so that we don't end up setting it to
+one plus two we do we just want it to be
+set to one so we're gonna set two equal
+to temp
+once this loop goes through n minus 1
+times
+we're going to end up just returning
+whatever one happens to land on
+and that is the entire solution we went
+through so much headache just to get to
+these five lines of code
+so i hope that this was helpful if it
+was please like and subscribe it
+supports the channel
+a lot and i'll hopefully see you pretty

@@ -1,0 +1,503 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+let's look at
+spiral matrix we are given an m by
+n matrix and all we need to do is return
+all of the elements in spiral order
+so the order that we're given the
+elements in is one two three
+four five six seven eight nine right if
+you go from left to right
+but we actually wanna return these
+elements
+in spiral order so we are gonna start at
+the top
+left and we're going to go 1 we're going
+to go right
+2 go right again 3 now we can't go
+right anymore so now we're going to go
+down because that is
+spiral order so we're going to do 6 go
+down one more time
+do nine now go left because we can't go
+down anymore
+we're gonna get eight go left again
+we're gonna get seven
+now we can't go left anymore so we go up
+to four and if we try to go up now we
+actually see well we already visited
+that right the one's been visited
+so now we actually go right we have the
+five and the five
+is the last element if we try to go
+right we cannot go right anymore
+so how can we write an efficient
+algorithm to do that right to worry
+about
+okay we're going in this direction and
+then eventually we have to change
+directions and all that stuff
+well in my opinion the easiest way is
+also the most efficient way so one thing
+to notice is
+we let's say we start at the top left we
+go right right right we go here
+so we cross out all these elements then
+we go down down down
+we get here then we go left we go here
+so we cross out these elements
+and then we go up right so we went all
+four directions we went
+right we went down we went left
+and then we went up until we couldn't
+anymore but we still have some elements
+left but do you see what we kind of did
+here
+we took the outermost layer
+and shrinked it right so now we have a
+sub
+rectangle or sub matrix here that now
+we're going to do the exact same
+algorithm on but you notice that our
+boundary
+our left boundary was over here and our
+right boundary was initially over here
+but now we shrinked it right this is our
+new sub matrix right originally we had
+this
+so our left and our new left and right
+boundaries
+are here right so we shrunk it by one we
+had to move
+our left and right boundaries inward
+similarly we had a
+top boundary of here and we had a bottom
+boundary
+over here but we had to shrink that as
+well right we had to move our top
+boundary down one and we had to move
+our bottom boundary up by one so now our
+top boundary is over here and our bottom
+boundary is over here
+and we still have some elements to go in
+spiral order so again what are we going
+to do with this
+sub matrix well we're going to start at
+the top
+left which is over here and we're going
+to go in spiral order so now we're going
+to go
+right so we get to seven but notice now
+notice now how we pretty much have gone
+through all the elements right
+and so since we done these elements what
+we can now say is our left and right
+boundaries were moved
+once more right so left and right are
+now at the same position
+or they've intersected or overlapped or
+whatever and so what that basically
+means is
+we don't really have a rectangle anymore
+right our
+boundaries are not in a position so
+therefore we don't have to continue
+going anymore right and you can tell by
+the picture well we already visited
+every single element
+we don't have to continue the spiral
+we're just going to repeat
+old elements anyway so that's the main
+idea but i'm just going to show you
+i'm just going to actually walk through
+the algorithm and show you a couple
+of things that i'm going to do slightly
+differently so i am going to initialize
+the left boundary over here because this
+is our zero
+column right and this is our third
+column but what i'm actually gonna do is
+put the
+right boundary over here just mainly
+because it's gonna make the code a
+little bit easier for us
+and so this is the zeroth row and this
+is the second row right
+so what i'm gonna do is put our top
+boundary over here
+and i'm gonna put our bottom boundary
+not at index two but
+one more so i'm gonna put our bottom
+boundary over here just because it makes
+the code a little bit easier
+and so as you can tell basically what
+we're doing is we have
+four pointers and these four pointers
+are going to make co
+make coding this solution the spiral
+matrix solution a lot easier for us
+we are going to start over here because
+it's the
+position that our top left is pointing
+at so we're always going to start at the
+top
+left position and so we are going to
+have an
+output we know the output is going to be
+a list or an array so we're going to add
+1 to our output and then we are going to
+go
+right so so whenever we start at the top
+left we're going to go right because
+we're going to do the first
+row so now we're going to be at 2 we're
+going to add
+2 to our output and we're just going to
+keep repeating this until we
+reach our right boundary our right
+boundary is going to tell us when we can
+stop
+now we get to 3 we add 3 to our output
+now we get to 4 we can add 4 to our
+output
+and now we know we cannot go any further
+we've
+basically reached our right boundary so
+now what we're going to do
+is we are going to go down but before we
+go
+down since we just did this entire row
+we added it to the output we don't
+really need
+this top boundary anymore right but what
+can we do with it
+we can basically shift it down because
+our
+new top boundary of our rectangle right
+now look at our current rectangle
+is this so our top boundary belongs in
+this spot so now we are going to go
+down we're going to reach this 8 we're
+going to add that 8 to our output
+and we're going to go down one more time
+and we're going to keep going down
+until we reach our bottom boundary right
+that's pretty
+obvious from looking at the picture so
+now we reach
+our bottom boundary and the last value
+is 12.
+so now obviously we're gonna start going
+left
+right but do you notice any differences
+about
+our matrix now well clearly we just did
+this
+entire row what does that tell us well
+that tells us we can
+update our right boundary right because
+if you look at the new rectangle
+we've we've moved our top boundary over
+here but we can also take our right
+boundary
+and and move our right boundary in this
+position right
+of course the left and bottom boundaries
+can still be the same because look at
+our rectangle we need those boundaries
+still
+but now we are going to go left we reach
+an 11 we can add that to our output
+we go left again keep going left until
+we reach our
+left boundary right until we reach the
+element at our left boundary but in this
+case it's inclusive when we were going
+right we were going to stop before we
+got to the right boundary
+and this is basically just to make the
+code easier even though it's
+a little bit inconsistent so now we get
+a 10
+we add that 10 to our output we go left
+one more time
+we get a 9 and we add that to our output
+but now you can see
+that this left boundary is where we need
+to stop
+but as you can see we just finished the
+entire bottom row
+what does that tell us well our bottom
+boundary can be shifted up by one
+over here because our new rectangle
+is like this right our right boundary
+tells us about this our bottom boundary
+tells us about
+this our top boundary tells us about
+this
+and our left boundary tells us about
+this so this is the resulting rectangle
+one by three
+so now we're gonna put the bottom
+boundary here
+and now we're gonna start going up and
+we're not just gonna keep going up
+forever
+we're gonna stop once we reach our top
+boundary which is pretty easy
+for us because we only have one element
+and now we're at the top boundary
+so we get a five and we add that to our
+output
+now you can see that this this problem
+has been reduced we took our matrix and
+chopped off each side of it we chopped
+off the top
+the bottom the right column and the left
+column
+but we can still continue our our
+algorithm as it
+is the only thing that we have to update
+now is take
+our left boundary because we just did
+the entire left column now
+and shift it to the right by one
+so now again we're going to start at the
+top
+left because the top is pointing here
+the left is also pointing here
+so we're going to start here and we're
+going to go right
+but we have to add 6 to our output so we
+add a 6 to the output
+we keep going right until we reach this
+boundary right which
+we've reached once we've gotten to the
+seven so we add the seven to the output
+and now we stop because we reached the
+right boundary
+and since we've just finished this top
+row what are we gonna do
+we're gonna update the top pointer right
+we're going to cross it out and we're
+going to shift it
+down over here right so now top is over
+here
+as well as bottom they're both pointing
+at the same
+row and basically that's the condition
+once pointers reach like in this case
+top and bottom reach but it could have
+been possible that
+left and right reach the same position
+if
+either of those things happen then we
+can stop our algorithm because we know
+we've
+done every single element that we needed
+to so now let's get into the code and by
+the way the time
+complexity of this is big o m by n which
+is the dimensions of the matrix
+the memory complexity is big o of 1
+because we are not saving any extra
+memory we're just
+running the code and it's big of one if
+you do not count the
+output as extra memory so we have our
+result variable
+i'm gonna have the four pointers that we
+mentioned left
+and right so left is going to be
+initially at zero right is going to be
+the length of the matrix right is
+basically going to be the
+number of columns plus one which is
+exactly what the length is going to give
+us we also have a
+top and bottom variable so top is gonna
+be zero we know we start at
+top left is zero zero the bottom is
+going to be
+the length of the matrix which is going
+to tell us the number of
+rows and basically all i'm gonna do is
+just keep looping until we know that
+either of the pointers cross so we know
+that left has to be
+less than right we don't want them to
+meet each other
+and top has to be less than the bottom
+so the first thing i'm going to do is go
+left to right
+and get every single get every value
+in the top row so every i in the top row
+so i'm just going to iterate for i in
+range
+left to right and this is basically why
+i'm setting the right
+uh out of bounds because in python it's
+going to go from left which is initially
+going to be 0 maybe right is let's say
+four
+it's gonna it's basically gonna go from
+zero to three in this case that's what
+python does
+the four is non-inclusive so this right
+value is non-inclusive
+and so for each of these values we know
+all we have to do
+is append it to our result so
+how do we get the value well we know
+we're in the top row
+so for the row we just put top for the
+column we can put
+i and since we just completed our top
+row before we do anything else let's
+update our top variable so if we
+increment it by one
+basically what we're doing is shifting
+top down by one
+next i want to get every i in
+the right column right the rightmost
+column
+how can we do that well i'm going to
+iterate
+i in range from top
+to bottom right it's as easy as that and
+we are allowed to do this because we
+just
+incremented our top by one so we're not
+going to have any repeated elements
+so now i'm just going to take every
+single one of these elements
+and add it to our result so the row that
+we're in
+is of course i because we're going from
+top to bottom the column that we're in
+is right but we're going to subtract by
+1 because we know that our right is
+actually
+out of bounds and so after we do this we
+know we just completed the rightmost
+column so what can we do we can take our
+right variable and decrement it by one
+because then we're shifting it to the
+left
+now this is the part that you're kind of
+gonna have to trust me on
+so so basically if the pointers have
+crossed so if this condition is no
+longer true
+what we have to do is break out of our
+loop
+and if you don't understand exactly why
+we're doing this i would encourage you
+to run
+this entire code or at least do it by
+hand on a couple examples so imagine our
+matrix was
+this if we had like a single row matrix
+see what happens when you do that or
+imagine if we had a
+column matrix like this see what happens
+when you run this code
+so we did the top row and we did the
+rightmost column so now we have to do
+the bottom row
+and we know we have to do this from
+right to left so that's going to be a
+little annoying so we're going to go
+for i in range so we're going to start
+at our right boundary
+minus 1 because we know our right is
+actually a little bit farther to the
+right
+and we're going to do this from right to
+left
+but left we're also going to take -1
+because that's how python works
+the left is non-inclusive so if we
+actually want to go
+all the way to left we have to subtract
+it by one and
+to do this in reverse order we just have
+to add a negative one
+so basically what we're doing is going
+from right to left in reverse order so
+backwards so now we're going to take
+each of these and append it to our
+result
+so we are in the bottom row so for the
+row we're going to take
+bottom minus 1 because we know even the
+bottom
+pointer is actually out of bounds by
+just one value
+right so this is just an off by one
+error and
+the column is going to be i that's what
+we're doing when we're going from
+right to left and so after we've done
+this we've just done the bottom row so
+we're going to update the bottom
+pointer how are we going to update it in
+this case we subtract it by
+one if we want to shift it upwards so
+last but not least we want to get every
+i
+in the leftmost column right so
+we can and we want to do that from
+bottom to top
+because we are going in spiral order so
+for i
+in range we're gonna start at the bottom
+but we are have we have to subtract it
+by one to make sure we don't get
+the off by one error and we're gonna go
+all the way to top
+but we're again going to subtract by one
+basically we're doing the same thing
+that we just did
+up here so we're going from bottom to
+top in reverse order
+so we add a negative one and now for
+each of these elements
+we're gonna add it to our result
+so matrix the row is going to be i
+that's what we're doing when we're
+iterating from bottom to top
+the column is going to be the leftmost
+column and after we've completed this we
+are allowed to increment left by one
+because we just completed the entire
+left column so we're shifting our left
+pointer
+to the right by one so this is the code
+with these comments it makes it seem a
+little longer than it actually is but
+this code is not too long the only thing
+we have to do now is
+return the result that we just
+computed the array now we can run this
+code
+and you can see the code is pretty
+efficient and
+one thing i'll mention is that see we're
+kind of repeating
+the same thing like four times over here
+in total that is only like 12 lines of
+code but if you wanted you could put it
+in a helper function
+but i think in this case a helper
+function just makes it more confusing i
+prefer to actually
+write this out because it's pretty
+obvious when you write it out and add a
+comment
+what exactly we're doing but other than
+that i hope this was helpful
+i hope it showed you that this problem
+can be written in pretty simple code
+and if you enjoyed please like and
+subscribe it supports the channel a lot

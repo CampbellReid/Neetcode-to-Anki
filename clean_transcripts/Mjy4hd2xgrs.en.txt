@@ -1,0 +1,668 @@
+everyone welcome back and let's write
+some more neat code today so today let's
+solve the problem coin change2 we
+already solved the first one and i'll
+link that somewhere on the top right of
+the screen or somewhere in the
+description if you want to watch that
+video you don't have to solve it before
+solving this problem but it'll probably
+be easier to solve this problem if you
+do so similarly we're given a list of
+coins each representing a different
+amount right a different denomination
+and we're given a second parameter an
+integer amount and this is the amount
+that we want to sum up to it's a total
+amount of money that we want to sum up
+to given these coins and specifically we
+want to know with these coins and this
+particular amount how many different
+combinations are there that we can sum
+up to this amount of course if we can't
+ever sum up to that amount we can just
+return zero and we can assume that we
+have an infinite number of each type of
+coin so
+that kind of hints to you that this is
+an unbounded knapsack problem which i
+talk about that category of problem in
+one of my videos i think it's called top
+five dynamic programming patterns if you
+want to watch that video and so this is
+kind of one example that they give us
+and you can go ahead and read it if you
+want there's four different ways to sum
+up to the amount five if we're given
+three coins one two and five now when we
+say number of combinations we can't
+reuse the same combination right so if
+we get two to one uh two two one these
+three coins sum up to five we can't just
+change the order and then call that a
+different combination the order doesn't
+really matter so now let's kind of get
+into the explanation let's talk about
+the brute force explanation which is
+going to be exponential with uh c to the
+power of n whereas c is let's say the
+number of coins that we have and n is
+the total amount that we want to sum up
+to that's the exponential solution we
+can uh use memoization on that decision
+tree to actually get the time complexity
+to be big o of uh c times n i'm actually
+just gonna replace the variable c with m
+so let's call it m to the power of n
+that can be reduced to m times n uh this
+time complexity that's the best time
+complexity we can do but there is one
+optimization with memory complexity
+that's pretty difficult to come up with
+but i'll kind of explain it to you so
+let's get into that so same example
+we're trying to get the amount five with
+these three coins let's just think about
+the brute force so
+initially we have a sum of zero right
+we'll put that in a node and we have
+decisions we can make right we're just
+gonna
+make three decisions right we could
+either choose a coin of one that that
+would give our sum to be one uh we can
+either choose a coin of two that would
+give our sum to be two we could choose
+another coin to be five
+that would put our sum to be five right
+and then we can continue this approach
+the only thing is how do we guarantee
+that we don't have duplicates
+right because if i go down this path and
+i choose another two and and then i
+choose another two right here we have a
+one two two that gives us a sum of five
+so that gives us the amount that we
+wanted here we could do the same thing
+couldn't we we could get a one and then
+we could get a two this is the same uh
+combination of coins just a different
+order right we don't want to get into
+this case so how can we guarantee with
+this decision tree that we won't ever
+get something like that well how about
+every time we make a decision
+right we made three decisions in this
+case we put some rules on that decision
+how about
+when we go down this path we are allowed
+to choose we chose a one right we chose
+the coin one and we're allowed to choose
+any coin that we want right down this
+path we can continue to choose a one we
+can choose a two we can choose a five if
+we want but we want to make sure that
+this never gets any duplicates as this
+one so how can we guarantee that how
+about this path can never
+choose a one how about we just don't let
+us choose ones anymore down this path to
+make sure that we never have duplicates
+on the other side of the decision tree
+right we're free to choose any twos and
+any fives that we want but we just can't
+choose once hopefully it makes sense why
+that guarantees that we won't have
+duplicates right because this path has
+at least one one right and this path
+will never have any one so obviously
+neither both of these paths will never
+have the same combination i hope that
+makes sense and similarly over here when
+we choose a five we're gonna we're gonna
+say that okay we're not allowed to
+choose anything except fives right we
+can't choose ones or two that'll
+guarantee that these two are not the
+same right because we have a two here
+and we'll never have any twos down this
+path so they'll never be the same so
+that's the main idea of how i'm going to
+eliminate duplicates so now we've gotten
+to the point where we have the m to the
+power of n solution right the base case
+is going to be if we get to the amount
+so you can see on this path we already
+reached the amount right we have a total
+of five that's exactly the target that
+we're trying to get to
+now let's say we chose a five over here
+right we chose a coin of five that would
+put our total at seven if we go over the
+total amount then we're going to stop
+right then we're just going to return 0
+and then stop going down that decision
+so those are the main base cases and by
+the way how are we going to implement
+that idea of if we chose a 1 or chose a
+2 we're not allowed to choose any other
+certain coins right we're gonna be
+maintaining a pointer uh let's call it i
+it's gonna point at some index of coins
+right so if we chose a coin of one then
+our index is going to be here right at
+the coin one and if we chose a coin of
+two then our index i is gonna be at this
+coin two and what when when our index is
+at a coin then it basically means that
+we're not allowed to choose any coins
+with an index less than it so basically
+anything on the left side of this coins
+array on the left side of our pointer i
+we're not allowed to choose those coins
+right so that's how i'm going to
+implement it in the code and this is
+important because now that we actually
+move into the memoization solution the
+memoization solution where we're going
+to be caching the repeated work because
+when you look at this decision tree it's
+going to be pretty inefficient right
+like i said it's going to be m to the
+power of n where m is the number of
+decisions we can make in other words
+it's the number of coins that we have n
+is the total amount right because the
+amount is what's going to determine the
+height of the tree so when we implement
+this recursively let's call it dfs we're
+going to pass in two parameters one
+parameter is going to be i which is
+going to tell us what index we're at in
+coins it could be you know any of these
+uh positions
+and we're going to pass in a second
+parameter let's call it a which is
+whatever the current amount happens to
+be remember if the amount ever goes over
+five which is you know the target that
+we're trying to do then we're going to
+stop right so basically the total number
+of about possible values a could be is
+going to be whatever that target value
+is so when you look at this right how
+many different combinations could this
+dfs be called basically the total number
+of coins that we have right let's call
+that m and the total amount that we're
+trying to sum up to let's call that n so
+the total possible number of ways this
+dfs could be called is m times n so if
+we cache the repeated work right if we
+call it with the same values we don't
+wanna have to recalculate the same thing
+if we call dfs let's say uh on index one
+and let's say our amount happens to be
+two and we call this multiple times we
+don't wanna have to recalculate all that
+work so we can do caching with that so
+that's basically memorization we're
+going to be putting that in memory and
+then we won't have to redo that work so
+at this point we've gotten to a solution
+that will pass on leak code the time
+complexity will be m times n and the
+memory complexity will be the same but
+now i'm going to show you the dynamic
+programming solution which will actually
+have the exact same time and space
+complexity and then i'm going to show
+you a slightly more advanced dynamic
+programming solution which will actually
+reduce the memory to instead of being o
+of m times n it'll actually be o of n
+this is one of the reasons why dynamic
+programming is important because
+sometimes the dynamic programming
+solution can actually be more efficient
+than the recursive memorization solution
+so if you want to check that out
+continue so now let's do the dynamic
+programming solution you can see i drew
+a 2d grid where we have one dimension
+being the amount the you know zero from
+zero all the way to up to five and one
+dimension being the coin we had three
+different coins one two three and we
+know the base case is if the amount is
+zero right and what value are we gonna
+put in here when the amount is zero how
+many different combinations is it that
+we can sum up to zero well the base
+cases let's just put it as one right
+because that's what's gonna make the
+math work out and it kind of makes sense
+right how many ways can you sum up to
+zero just one right regardless of which
+coin we start at so what does this
+position mean it means that if we could
+only choose from this single coin five
+how many different ways could we sum up
+to zero it's going to be one different
+way right and this position is going to
+mean if we had two coins available to us
+two and five how many ways could we sum
+up to the amount zero it's going to be
+one right and so on and so on for an
+arbitrary position like this the
+question is uh how many different ways
+can we sum up to the amount three using
+these two coins from here it would be
+using these three coins right so what
+order would it make sense to uh compute
+these values probably bottom up right
+that's why they call this bottom-up
+dynamic programming we're going to start
+here and compute the value that goes
+here then we're going to compute the
+value that goes here and then here and
+then start from here and then do the
+same and looking at it since we're doing
+it in this order you're probably
+thinking i probably should have you know
+rotated this instead i should have put
+the amount over here and the coins over
+here because then we can actually
+compute it like
+this and you're right but there's
+actually a way that we can compute it
+like this
+that i'm going to show you and actually
+this way if we do it in this order is
+going to be better memory complexity let
+me show you why that's the case though
+so let's say starting from this position
+right we're trying to sum up to the
+amount one if we use a coin we can only
+choose one coin that's available to us
+right we can choose a five coin what
+happens if we use a five coin uh then
+our amount that we're trying to sum up
+to is gonna be one minus five right
+that's going to put us at negative four
+so from here i'm gonna go to negative
+four now that's out of bounds right so
+that kind of tells us that there's zero
+ways to sum up to the amount one if we
+only have a single five coin available
+to us next let's compute the value that
+would go here so we have two choices in
+this case actually because now we have
+two coins available to us so we can
+choose to use the two coin what happens
+if we use the two coin well then our
+amount one is going to be one minus two
+which is going to be negative one right
+so you know if we're trying to get the
+value here then you know our arrow is
+going to go over here out of bounds
+which is negative right so that doesn't
+work and that's if we choose the two
+coin if we choose the five coin what
+what are we going to do well then we're
+just going to look directly below us
+because we're still solving the same
+problem amount equals one but in this
+case we're choosing not to use the two
+coin we're just gonna use the five coin
+but we see that that's a zero value down
+here so in the end we'll also end up
+putting a zero here and from here we're
+going to do the same thing we in this
+case we have three coins available to us
+if we use a one coin what is that going
+to put us well we started at we're
+trying to get to the amount one if we
+use a one coin we'll do one minus one
+equals zero so okay then from here we're
+gonna you know go to the to the spot
+that has a value of zero right that's
+directly to the right of us right that's
+where zero is so then we're gonna take
+this value add it to this position right
+so one is gonna be added here but we
+don't have to choose this one coin right
+we could actually choose the two coin we
+could ask okay instead of choosing one
+what happens if we try to sum up to the
+value one with two coins available to us
+in that case we look directly below us
+and we see that there's a zero there and
+we add zero to this position one plus
+zero will just be one so we can leave a
+one in this spot so and then you can
+kind of just continue doing the dynamic
+programming just like this one thing you
+might notice though let's assume for an
+arbitrary position like this one if we
+use the two coin that'll put us amount
+is four we'll move two spots to the
+right where amount is two right so we're
+looking all the way to the right we
+could also say okay we're not going to
+use the two coin right we're gonna use
+all the other coins in that case we'd
+have to look directly below us right
+that's perfectly fine this this
+perfectly works but one thing you're
+noticing for a arbitrary position like
+this one we have to look both to the
+right and we have to look below what
+does that mean that means potentially we
+have to have the entire uh
+two-dimensional array in memory because
+when we're looking directly to the right
+of us we're not just looking one spot we
+could be looking two spots three spots
+five spots right depending on what coin
+value we have so in that case we're
+going to have to have this entire
+two-dimensional grid in memory there's
+actually a different way we can do this
+problem if we uh compute this in this
+order right from here in that way we
+won't have to have the entire grid in
+memory we will only have to have up to
+two rows uh two rows like these we'll
+only have to have up to two rows in
+memory and a row will only be as large
+as whatever the max amount happens to be
+which means the overall memory
+complexity in that case will be big o of
+n now you probably don't need this
+solution to pass your interview unless
+it's like a super hard interview and
+your interviewer is looking for it but
+i'll show you both of the solutions
+anyway i'll show you the code for this
+solution and the code for the memory
+solution of o of m by n okay so in this
+spot we're asking the same question
+if we only have one coin available to us
+can we sum up to the amount one we can't
+write because then we go out of bounds
+so in this case let's just put a zero
+okay ask the next question if we're
+summing up to amount two with just one
+coin available to us can we sum up to
+that amount no of course we can't right
+so and that's gonna be true for this
+position right can't sum up to three
+can't sum up to four either but once we
+finally get to five with a single coin
+of five well what's going to happen okay
+we use our coin of five right so that
+means we look five spots all the way to
+the right and over here in this spot we
+find a one is waiting for us right
+that's our base case that's where amount
+is equal to zero so we take that one and
+then we add it in this spot right so now
+we've done that so there's one way to
+compute the the amount of five if we
+only have a single coin available to us
+but remember the actual problem that
+we're trying to solve is all the way in
+the top left corner if we had all three
+coins available to us because we do we
+have an unlimited supply of all three
+coins available to us so how many
+combinations can we do to get to this
+amount five well let's continue row by
+row just like i mentioned right so now
+we will need to keep this row in memory
+for us to be able to compute this row
+but once we're computing this row we
+actually won't need this bottom row in
+memory anymore and i'll show you why
+that's the case so now if we had two
+coins available to us how many ways
+could we sum up to the amount one well
+if we use a two coin we'll go two spots
+to the right which is out of bounds so
+we don't put anything right so far it's
+we're at zero so if we choose not to use
+the two coin and we say okay we're just
+going to use all the remaining coins
+then we look directly below us again we
+find a zero so in this spot we say that
+there are zero ways to sum up to the
+amount one if we have these two coins
+available to us which makes sense right
+there's no way you can get a one if you
+have a two and a five available to you
+now let's do it in this spot so if we
+use the two coin in this spot we'll move
+two spots to the right which will we
+find a one here right so we can add a
+one here uh if we choose not to use the
+two coin we look directly below us which
+is a zero so we don't do anything in
+that case right so we leave a one here
+there's one way to sum up to the amount
+two with uh these two coins available to
+us
+in now i'm going to start going fast
+because i don't want to waste too much
+your time so in this spot we're gonna
+look directly two spots to the right
+which is a zero or we're going to look
+directly down and that's a zero so we'll
+still put zero here notice how we're
+looking multiple spots to the right but
+that's okay because we have this row in
+memory but when we look down we're never
+going to look multiple spots down that's
+the key that's why we only need o of n
+extra memory so let's continue so from
+amount four uh we're going to look two
+spots to the right there's a one or
+we'll look down that's a zero so we put
+one plus zero one here here again two
+spots to the right that's a zero or one
+spot down that's a one so one plus zero
+we get a one let's continue so from here
+we'll look once uh spot directly to the
+right that's one we'll look down that's
+zero so
+we'll put a 1 here again from here we'll
+look one spot to the right that's a 1
+we'll look one spot down now we get a 2
+right because we're adding these two
+values together that makes sense right
+because amount 2 how many different ways
+could we sum up to this amount too if we
+had all three coins available to us
+there are two ways right and from here
+we'll look directly to the right by one
+two plus directly below that's zero so
+we'll put a two here from here again
+directly to the right directly below 1
+plus 2 that's going to be 3 and from
+here again directly to the right and
+directly below that's going to be 4. so
+we get a solution of 4. is that correct
+well when you come back and look at the
+problem description with that example
+yeah that's what the amount was that's
+good now we're ready to dive into the
+code okay so now let's jump into the
+code and since this video is probably
+already too long i don't want to spend
+too much time coding it up so let me
+just show you the code and it will be in
+the description this time if you want to
+copy and paste it or take a look at it
+so this is the recursive solution the
+time and space complexity is big o of n
+times m just like i mentioned in the
+explanation you can see that we have a
+cache in this case the cache is the hash
+map the base case is just as i mentioned
+right so one is if we actually get to
+the target amount that we're looking for
+remember we're passing in two variables
+the index and the amount a if we get to
+the target amount then we're going to
+return one if we go over the target
+amount that's that means we cannot
+possibly sum up to the amount we return
+zero if we go out of bounds meaning i is
+out of bounds right that basically means
+now we we decided that we don't have any
+coins available to us uh that's going to
+be we're going to return zero as well in
+that case uh and the fourth base case is
+if we've already computed this if we've
+already computed it we can take it
+directly from our cache and then return
+it the other case is now this is the
+base case or not the base case this is
+the recursive case right you can see i'm
+calling dfs twice one is where i'm
+calling dfs is where we are choosing the
+coin that is at index i in that case we
+leave i just as it is and then we say
+okay the new amount that we have is a
+whatever the amount that we previously
+had plus whatever coin happens to be at
+index i right so we're choosing the coin
+at index i that's one decision the
+second decision is if we skip the coin
+at index i in that case the amount stays
+the same right we skipped a coin so we
+don't change the amount but we do have
+to increment our index i because we're
+skipping this coin right now we're going
+to choose the next coin so that's the
+main logic behind this and then whatever
+the result of this happens to be we're
+going to go ahead and throw it into our
+cache and then return the value from the
+cache and so that's the entire dfs all
+you have to do is call the dfs starting
+at index zero starting with our amount
+being zero and then we can just return
+that result right up above now i've copy
+and pasted the dynamic programming
+solution where we had to use two
+dimensions of memory so this is the same
+memory complexity big o of n multiplied
+by m right this is the one that was
+sub-optimal for dynamic programming so
+you can see i'm using two dimensions for
+the dp cache and then the logic of this
+is pretty much the same as i showed
+right we're going to be going from
+starting at amount equals one uh we're
+going to see how many different ways can
+we sum up to that amount right and then
+our index i
+is uh going to be at the last coin so
+length of the coins -1 where we only
+have one coin available to us right i is
+gonna be uh decremented each time
+because we're gonna be adding more and
+more available coins each time but so
+suppose we had uh this many coins
+available to us that's what i says and a
+we're trying to sum up to this
+particular amount what what is that
+going to be well one decision is if we
+skip the coin at index i which is just
+going to be dp of a uh with i plus one
+you can see that this line of code is
+the exact same if you look below this
+dfs is the exact same as this line of
+code right you can see the parameters
+are the exact same right all i'm doing
+is passing in a i plus 1 here same thing
+here right a i plus 1. now the other
+case is going to be
+with if we actually do use the coin at
+index i right so we're going to take a
+minus uh coins of i
+why are we doing minus here instead of
+plus down here well you could do it you
+can implement it how you want i did it
+like this because
+a is the target amount if we use this
+coin then we have a certain amount left
+over now we're confirming that whatever
+that amount left over is greater than or
+equal to zero because if it's negative
+that means we went over right that means
+we use too many coins so if this is
+greater than or equal to zero then this
+line of code is just is completely
+analogous to this dfs down here if you
+can see it this dfs where we pass in i
+uh a plus coins of i you can see that
+instead of passing a plus coins of i'm
+doing a minus coins of i
+right but this is uh if you get confused
+by this i would recommend going back to
+that two-dimensional grid that i was
+showing you because this is exactly the
+same as that now last but not least i
+have went ahead and copy and pasted my
+code for the solution where the memory
+complexity is actually just big o of n
+the time complexity is the same as the
+above solution but the memory complexity
+is less you can see that that's exactly
+what i'm doing here right we're not
+actually using the full
+memory we're not using two dimensions of
+memory we just have one dimension and
+you can see just like in the
+two-dimensional matrix that i showed the
+main difference between the above
+solution and the below solution is just
+the order that we're computing the uh
+the two-dimensional grid right you can
+see in this case the outer loop is we're
+iterating through the amount and the
+inner loop is where we're iterating
+through the coins in the other case the
+outer loop is iterating through the
+coins and the inner loop is iterating
+through the amount but other than that
+the entire solution is pretty similar
+right like here you can see i'm pretty
+much just i have one row that i'm
+maintaining out here and then i'm i'm
+using next dp to be the next row that
+we're computing and then at the end i'm
+just reassigning dp to be next dp right
+at any given point we're only going to
+have two rows in memory we're not going
+to have an entire two-dimensional grid
+so i know this was really confusing and
+this is probably a long video i wasn't
+able to spend as much time on the code
+as i would like but i hope that the
+drawing explanation was able to help you
+out this code will be in the description
+if you want to take a look i guess let
+me just run it and prove to you that it
+works so i'll run the code that is below
+which is the most optimal solution that
+i was able to come up with the time
+complexity is n by m and the memory
+complexity is of n you can see on the
+left that it does work and it's pretty
+efficient so i hope that this was
+helpful if it was please like and
+subscribe it supports the channel a lot
+and i'll hopefully see you pretty soon

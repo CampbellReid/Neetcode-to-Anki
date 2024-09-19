@@ -1,0 +1,442 @@
+everyone welcome back and let's write
+some more neat code today so today let's
+look at a graph problem actually it's
+called
+course schedule we're given a total
+number of courses and these are our
+nodes and they're labeled from zero
+to n minus 1 basically so some courses
+have
+prerequisites for example if you want to
+take course 0
+you have to first take course 1 and
+that's represented as a pair
+or as an edge in our graph so if you
+want to take course
+zero you have to first take course one
+and the only
+question we want to answer is is it
+possible for us to finish every course
+so let's just look at the first example
+where given number of courses are two so
+that means we have one course
+zero and another course one we know that
+the prerequisites are like
+this meaning that if we want to take
+course one
+we have to first take course 0 and i'm
+going to represent it as an
+edge going outward from 1
+into 0. so what do they mean by possible
+let's just run through each of our
+courses and see is it possible to take
+each one
+so for zero is it possible to take zero
+well we don't have any
+outward edges from zero so that means
+zero does not have any prerequisites so
+it is possible for us to complete course
+zero then we look at course one it has
+one prerequisite which is
+zero and we know zero is possible to
+complete
+so once we finish course zero then we're
+allowed to take
+course one which has no other
+prerequisites right the only
+prerequisite was
+course zero so therefore both of these
+courses are possible
+to complete so we can return true
+so let's look at an example where it's
+actually impossible so we're given
+n equals two that means we have two
+courses
+zero and one and we're given two
+prerequisites so
+one zero and zero one this one means
+that if we want to finish course one we
+have to first complete
+course zero so zero is a prerequisite
+the second one means that if we want to
+finish course
+zero we have to finish course one first
+so
+one is a prerequisite of zero so the
+problem with this
+is kind of obvious right there's a cycle
+so we if we want to finish course zero
+we gotta go finish course one
+if we wanna finish course one we gotta
+finish course zero and it just goes like
+that
+forever so neither of the courses are
+possible to finish
+so in this case we return false
+so we can actually solve this problem
+using
+depth first search we can also use
+breadth first search and i'm going to
+show you
+just the depth for search version
+because i like it better
+so given this new example the first
+thing you want to do is visualize it so
+i'm going to draw a picture
+so we're given five nodes so we have
+zero one
+two three four that's five nodes
+we're also given five prerequisites so
+in this case we end up having five
+edges right from zero to one zero to two
+one two three one to four
+and three to four so my goal here
+is for each of these nodes i just want
+to know right for each of these
+classes can we complete this course or
+not
+and how do we know if a course can be
+completed well
+just looking at this picture is obvious
+right xero has a prerequisite
+of two but two does not have any
+prerequisites which is great
+it also has a prerequisite of one and
+one has
+two prerequisites three and four
+three has one prerequisite of four and
+four
+luckily for us does not have any
+prerequisites
+so looking at this it's kind of obvious
+that
+we can complete all these courses so
+let's do the algorithm to be able to
+determine that
+we see that these are kind of our base
+cases right 2
+and 4 don't have any prerequisites
+that's useful information but we don't
+need a graph to tell us that
+we can use a data structure called an
+adjacency list
+and i'm going to call it prerequisite
+map because the
+what the data structure i'm going to use
+is a hashmap to represent this
+so for each of our courses we are going
+to have
+a list of all of its prerequisites so
+for zero we know
+zero has two prerequisites one and two
+and we're going to repeat that for every
+single course so for one
+we know that two does not have any
+prerequisites so we can just put
+an empty list over here 4 also does not
+have any prerequisites so we get another
+empty list so now we're going to run
+depth first search on
+every single node i'm going to do it in
+the order from
+zero to n minus one so
+be starting at zero so we're going to
+run debt first search on it right
+how are we gonna do the depth first
+search well we have our prerequisite map
+so we're gonna do it recursively we see
+that it has two prerequisites
+one and two so now let's run depth first
+search
+on the first neighbor
+one so now we look at one we see that it
+has two neighbors
+three and four so let's recursively run
+depth first search
+on its first neighbor three so since
+three is a prerequisite of one
+now we wanna know if we can take we can
+complete course three
+so we look at its prerequisites it only
+has
+one four so now we're going to check
+it's only prerequisite
+for can we complete course four and then
+we want to look at the prerequisites
+of course for which we know are empty
+this is good right so now we see that
+this is empty
+so what does that tell us that tells us
+course 4
+can be completed which we basically
+already
+knew because course 4 has an empty
+uh empty prerequisite list so i'm just
+going to put a little
+check mark here to say that we know
+course 4
+can be completed and so recursively
+we're going to
+end up going back to our three and we
+see that it only had
+one prerequisite and we were able to
+complete that prerequisite for
+so therefore three is also
+a course that can be completed and so
+what we can actually do
+is from its prerequisite list we see
+four we can just remove the four we
+know it can be completed and so i'm
+representing that
+by having an empty list here right just
+an empty list means that it has no
+prerequisites therefore it can be
+completed so i removed the only
+prerequisite that three
+had then from three we can actually go
+backwards to one which we see here
+we can kind of get rid of this 3 because
+we know
+3 can be completed and then from the 3
+we're going to end up going to 4 to
+check again
+if 4 can be completed because it is a
+prerequisite
+of one and since we already know four
+can be completed we can get rid of that
+as well so now we know for sure that one
+can also be completed and now
+i'm gonna go back to zero which is where
+we how we even got to one in the first
+place and we look at the prerequisites
+of zero
+we see one is no longer a prerequisite
+because we
+basically know that one can be completed
+but we still have to look at this
+too so then we're gonna go to the last
+unvisited node in our entire graph which
+is
+two so now we've gotten to the last
+course two we see it's an empty list
+right
+therefore two can be completed it has
+no neighbors it has no prerequisites so
+i can put a little check mark here
+two can be completed and then we can
+finally go
+back to our original node 0
+cross out its last prerequisite which
+was
+2 and now when we look at 0 even
+0 has an empty list of prerequisites
+therefore we know zero can be completed
+so since we were able to complete every
+single
+course that that means we can return
+true
+every course is completable and the time
+complexity for this
+is going to be big o the
+number of nodes we have which is n i'll
+use
+n as that and i'll use p for the number
+of prerequisites that we had
+because if you notice in this graph we
+have to
+we have to visit every single node
+and we have to visit and we have to move
+along
+every single edge and once we get rid
+of the prerequisites from here we don't
+really have to
+visit a course twice because once we
+know it can be completed
+we we can instantly do that we don't
+have to go through its prerequisites
+twice
+so i'm gonna show you one last example
+this is the example
+that what we're going to do how are we
+actually going to detect this loop
+because we see
+so i'm just going to cross this stuff
+out because we're looking at a different
+example
+but here we see that zero has a
+prerequisite of one
+one has a preset pre-rec of two two has
+a pre-rec of 3. so this is a loop
+we cannot complete these courses but how
+can we actually
+how can we actually detect this loop i'm
+going to show you how really quickly so
+to detect a loop i'm going to use one
+last data structure and it's going to be
+a
+set though i think you could just use an
+array if you want to call it the visit
+set and all it's going to contain is the
+list
+of courses that we're currently visiting
+along
+our depth first search so let's say we
+start at 0 then we add zero
+to our visit set we take a look at the
+prerequisites of zero we see it as one
+prerequisite so then we
+move to one so now we visit one
+so we're going to add one to our visit
+set and we look at the prerequisites of
+one it has one prerequisite two so then
+we
+move to two we run debt for search on
+two
+so to do that we have to first visit two
+so
+two is also going to be added to our
+visit set and lastly
+we see two has one prerequisite of zero
+so then we of course want to
+visit zero and so now we're going to
+visit
+zero twice but you see that zero is
+already in the visit set therefore we
+detected
+a loop therefore we have to return
+false these courses cannot be
+completed so now let's finally look at
+the code so
+the first thing i want to do is create
+our pre-map
+so our list of prerequisites so we know
+for each
+course initially we can set it to an
+empty list so an empty list of
+prerequisites and we want to do that for
+every course that we got which the
+number of that is just
+number of courses so this is if you're
+not familiar this is some python stuff
+i'm just saying that for every course
+initially we want to map it to an
+empty list and we know that the
+prerequisites are actually contained in
+this
+nested list variable so let's iterate
+through that let's get each
+course prerequisite pair from that list
+and then just start appending them so
+pre-map
+of course we want to append to this list
+this prerequisite so we also want a
+visit
+set which is going to store
+the it's going to store all the courses
+along the current depth first search
+path and of course it's initially just
+going to be empty so since we're going
+to do this
+recursively i'm going to define a nested
+function depth first search inside of
+our can finish function because then
+we'll have access
+to all these variables without having to
+pass them in as a parameter
+the only parameter that we have to pass
+in is the current
+course that we're visiting and so like
+most recursive functions we want to look
+at our base cases first the first
+base case is if course is in
+the visit set already so what this
+means is that we're visiting a course
+twice
+so we detected a loop so we can return
+false meaning that this course cannot be
+completed
+the other base case we know is if
+the prerequisites of this course happen
+to be an
+empty list what that tells us is that
+this course
+has no prerequisites and we can return
+true because it can definitely
+be completed if neither of these
+conditions that
+is satisfied then we can take this
+course
+and add it to our visit set because that
+means we are currently visiting this and
+we're going to recursively run debt
+first search
+on its prerequisites so i'm gonna loop
+through the prerequisites of this course
+for each one i'm gonna run debt for
+search on it
+so debt first search on this
+prerequisite if it happens to return
+false though then we know we can return
+false immediately we don't have to wait
+because if we find
+one course that can't be completed then
+we can return false for the entire
+function
+so i forgot to put a not over here so if
+not meaning if
+it returns false then we return false
+but if this does not execute that means
+it's a course that can be taken and
+we want to return true in that case but
+before we return true we want to remove
+it from our visit set
+because we are no longer visiting this
+we've already finished visiting it
+so visit remove this course
+and also since we know this course can
+be visited
+what we can do is say pre-map we can
+set it to an empty list so that
+if if we ever have to run debt first
+search on it again
+we will in that case execute this
+condition
+and return true immediately we will not
+have to repeat
+all this work of running debt first
+search on
+its neighbors so that's all for our debt
+for search function
+the function is done all we have to do
+is call it now
+but we have to potentially call it for
+every single
+course in the number of courses that we
+have
+and if any of them happen to return
+false
+then we have to return false immediately
+and if they don't return false then we
+can return
+true all courses can be completed
+and the reason we are looping like this
+is mainly because
+what if our graph is not fully connected
+like what if we have a graph like this
+one has a prerequisite of two
+and maybe three has a prerequisite
+of four so these are two separate
+graphs that are not connected right so
+we have to ch we have to
+manually iterate through every course
+and check
+can one be completed can two be
+completed can three
+and can four be completed so this is the
+depth first search
+solution you can see that it does run
+very efficiently about as efficiently as
+the breadth for search solution as well
+and i hope this was helpful if it was
+please like and subscribe it supports
+the channel a lot and i'll hopefully

@@ -1,0 +1,1544 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.750 align:start position:0%
+ 
+hey<00:00:00.240><c> everyone</c><00:00:00.560><c> welcome</c><00:00:01.040><c> back</c><00:00:01.360><c> let's</c><00:00:01.520><c> write</c>
+
+00:00:01.750 --> 00:00:01.760 align:start position:0%
+hey everyone welcome back let's write
+ 
+
+00:00:01.760 --> 00:00:03.750 align:start position:0%
+hey everyone welcome back let's write
+some<00:00:01.920><c> more</c><00:00:02.080><c> neat</c><00:00:02.320><c> code</c><00:00:02.560><c> today</c><00:00:02.960><c> today</c><00:00:03.360><c> let's</c>
+
+00:00:03.750 --> 00:00:03.760 align:start position:0%
+some more neat code today today let's
+ 
+
+00:00:03.760 --> 00:00:07.030 align:start position:0%
+some more neat code today today let's
+solve<00:00:04.240><c> remove</c><00:00:05.120><c> nth</c><00:00:05.520><c> node</c><00:00:05.920><c> from</c><00:00:06.160><c> the</c><00:00:06.480><c> end</c><00:00:06.720><c> of</c><00:00:06.879><c> a</c>
+
+00:00:07.030 --> 00:00:07.040 align:start position:0%
+solve remove nth node from the end of a
+ 
+
+00:00:07.040 --> 00:00:07.670 align:start position:0%
+solve remove nth node from the end of a
+list
+
+00:00:07.670 --> 00:00:07.680 align:start position:0%
+list
+ 
+
+00:00:07.680 --> 00:00:10.709 align:start position:0%
+list
+so<00:00:07.839><c> we're</c><00:00:08.080><c> given</c><00:00:08.639><c> a</c><00:00:08.880><c> linked</c><00:00:09.280><c> list</c><00:00:10.080><c> and</c><00:00:10.320><c> all</c><00:00:10.559><c> we</c>
+
+00:00:10.709 --> 00:00:10.719 align:start position:0%
+so we're given a linked list and all we
+ 
+
+00:00:10.719 --> 00:00:11.350 align:start position:0%
+so we're given a linked list and all we
+need<00:00:10.880><c> to</c><00:00:11.040><c> do</c>
+
+00:00:11.350 --> 00:00:11.360 align:start position:0%
+need to do
+ 
+
+00:00:11.360 --> 00:00:14.310 align:start position:0%
+need to do
+is<00:00:11.759><c> remove</c><00:00:12.240><c> the</c><00:00:12.480><c> nth</c><00:00:12.960><c> node</c><00:00:13.280><c> from</c><00:00:13.519><c> the</c><00:00:13.920><c> end</c><00:00:14.160><c> of</c>
+
+00:00:14.310 --> 00:00:14.320 align:start position:0%
+is remove the nth node from the end of
+ 
+
+00:00:14.320 --> 00:00:15.030 align:start position:0%
+is remove the nth node from the end of
+the<00:00:14.480><c> list</c>
+
+00:00:15.030 --> 00:00:15.040 align:start position:0%
+the list
+ 
+
+00:00:15.040 --> 00:00:17.269 align:start position:0%
+the list
+and<00:00:15.120><c> then</c><00:00:15.280><c> return</c><00:00:15.679><c> the</c><00:00:15.839><c> new</c><00:00:16.080><c> list</c><00:00:16.640><c> so</c><00:00:16.880><c> that's</c>
+
+00:00:17.269 --> 00:00:17.279 align:start position:0%
+and then return the new list so that's
+ 
+
+00:00:17.279 --> 00:00:19.269 align:start position:0%
+and then return the new list so that's
+pretty<00:00:17.600><c> straightforward</c><00:00:18.400><c> right</c><00:00:18.640><c> so</c><00:00:18.960><c> in</c><00:00:19.119><c> this</c>
+
+00:00:19.269 --> 00:00:19.279 align:start position:0%
+pretty straightforward right so in this
+ 
+
+00:00:19.279 --> 00:00:21.349 align:start position:0%
+pretty straightforward right so in this
+case<00:00:19.600><c> we</c><00:00:19.760><c> got</c><00:00:20.080><c> five</c><00:00:20.480><c> nodes</c>
+
+00:00:21.349 --> 00:00:21.359 align:start position:0%
+case we got five nodes
+ 
+
+00:00:21.359 --> 00:00:24.790 align:start position:0%
+case we got five nodes
+we<00:00:21.600><c> just</c><00:00:21.840><c> want</c><00:00:22.000><c> to</c><00:00:22.160><c> remove</c><00:00:22.960><c> the</c><00:00:23.600><c> n</c><00:00:23.840><c> equals</c><00:00:24.400><c> two</c>
+
+00:00:24.790 --> 00:00:24.800 align:start position:0%
+we just want to remove the n equals two
+ 
+
+00:00:24.800 --> 00:00:27.109 align:start position:0%
+we just want to remove the n equals two
+so<00:00:25.119><c> meaning</c><00:00:25.439><c> the</c><00:00:25.760><c> second</c><00:00:26.160><c> node</c><00:00:26.480><c> from</c><00:00:26.640><c> the</c><00:00:26.880><c> end</c>
+
+00:00:27.109 --> 00:00:27.119 align:start position:0%
+so meaning the second node from the end
+ 
+
+00:00:27.119 --> 00:00:28.950 align:start position:0%
+so meaning the second node from the end
+of<00:00:27.199><c> the</c><00:00:27.359><c> list</c><00:00:27.599><c> right</c><00:00:27.840><c> so</c><00:00:28.000><c> this</c><00:00:28.240><c> is</c><00:00:28.320><c> the</c><00:00:28.560><c> first</c>
+
+00:00:28.950 --> 00:00:28.960 align:start position:0%
+of the list right so this is the first
+ 
+
+00:00:28.960 --> 00:00:30.470 align:start position:0%
+of the list right so this is the first
+from<00:00:29.119><c> the</c><00:00:29.279><c> end</c><00:00:29.439><c> of</c><00:00:29.519><c> the</c><00:00:29.599><c> list</c><00:00:29.920><c> this</c><00:00:30.080><c> is</c><00:00:30.240><c> the</c>
+
+00:00:30.470 --> 00:00:30.480 align:start position:0%
+from the end of the list this is the
+ 
+
+00:00:30.480 --> 00:00:31.189 align:start position:0%
+from the end of the list this is the
+second
+
+00:00:31.189 --> 00:00:31.199 align:start position:0%
+second
+ 
+
+00:00:31.199 --> 00:00:34.630 align:start position:0%
+second
+so<00:00:31.359><c> we</c><00:00:31.599><c> remove</c><00:00:32.239><c> this</c><00:00:32.960><c> and</c><00:00:33.040><c> then</c><00:00:33.280><c> we</c><00:00:33.440><c> return</c>
+
+00:00:34.630 --> 00:00:34.640 align:start position:0%
+so we remove this and then we return
+ 
+
+00:00:34.640 --> 00:00:37.190 align:start position:0%
+so we remove this and then we return
+this<00:00:35.040><c> list</c><00:00:35.680><c> which</c><00:00:35.920><c> now</c><00:00:36.160><c> has</c><00:00:36.480><c> four</c><00:00:36.800><c> elements</c>
+
+00:00:37.190 --> 00:00:37.200 align:start position:0%
+this list which now has four elements
+ 
+
+00:00:37.200 --> 00:00:38.069 align:start position:0%
+this list which now has four elements
+remaining
+
+00:00:38.069 --> 00:00:38.079 align:start position:0%
+remaining
+ 
+
+00:00:38.079 --> 00:00:40.310 align:start position:0%
+remaining
+so<00:00:38.239><c> what's</c><00:00:38.559><c> the</c><00:00:38.719><c> easiest</c><00:00:39.200><c> way</c><00:00:39.360><c> to</c><00:00:39.600><c> solve</c><00:00:39.840><c> this</c>
+
+00:00:40.310 --> 00:00:40.320 align:start position:0%
+so what's the easiest way to solve this
+ 
+
+00:00:40.320 --> 00:00:42.310 align:start position:0%
+so what's the easiest way to solve this
+well<00:00:41.040><c> they</c><00:00:41.360><c> say</c><00:00:41.680><c> from</c><00:00:41.920><c> the</c>
+
+00:00:42.310 --> 00:00:42.320 align:start position:0%
+well they say from the
+ 
+
+00:00:42.320 --> 00:00:44.709 align:start position:0%
+well they say from the
+end<00:00:42.480><c> of</c><00:00:42.640><c> the</c><00:00:42.879><c> list</c><00:00:43.440><c> that's</c><00:00:43.760><c> inconvenient</c><00:00:44.559><c> if</c>
+
+00:00:44.709 --> 00:00:44.719 align:start position:0%
+end of the list that's inconvenient if
+ 
+
+00:00:44.719 --> 00:00:46.229 align:start position:0%
+end of the list that's inconvenient if
+it<00:00:44.800><c> was</c><00:00:45.039><c> from</c><00:00:45.200><c> the</c><00:00:45.360><c> beginning</c><00:00:45.760><c> of</c><00:00:45.920><c> the</c><00:00:46.000><c> list</c>
+
+00:00:46.229 --> 00:00:46.239 align:start position:0%
+it was from the beginning of the list
+ 
+
+00:00:46.239 --> 00:00:46.709 align:start position:0%
+it was from the beginning of the list
+it'd<00:00:46.399><c> be</c>
+
+00:00:46.709 --> 00:00:46.719 align:start position:0%
+it'd be
+ 
+
+00:00:46.719 --> 00:00:48.869 align:start position:0%
+it'd be
+super<00:00:47.039><c> straightforward</c><00:00:47.920><c> right</c><00:00:48.160><c> n</c><00:00:48.320><c> equals</c><00:00:48.719><c> 2</c>
+
+00:00:48.869 --> 00:00:48.879 align:start position:0%
+super straightforward right n equals 2
+ 
+
+00:00:48.879 --> 00:00:50.150 align:start position:0%
+super straightforward right n equals 2
+remove<00:00:49.280><c> this</c><00:00:49.600><c> node</c>
+
+00:00:50.150 --> 00:00:50.160 align:start position:0%
+remove this node
+ 
+
+00:00:50.160 --> 00:00:52.310 align:start position:0%
+remove this node
+how<00:00:50.320><c> can</c><00:00:50.480><c> we</c><00:00:50.640><c> make</c><00:00:50.800><c> that</c><00:00:51.039><c> even</c><00:00:51.280><c> easier</c><00:00:52.079><c> i</c><00:00:52.160><c> mean</c>
+
+00:00:52.310 --> 00:00:52.320 align:start position:0%
+how can we make that even easier i mean
+ 
+
+00:00:52.320 --> 00:00:54.549 align:start position:0%
+how can we make that even easier i mean
+what<00:00:52.480><c> if</c><00:00:52.640><c> these</c><00:00:53.039><c> pointers</c><00:00:53.440><c> were</c><00:00:53.680><c> reversed</c>
+
+00:00:54.549 --> 00:00:54.559 align:start position:0%
+what if these pointers were reversed
+ 
+
+00:00:54.559 --> 00:00:57.350 align:start position:0%
+what if these pointers were reversed
+can't<00:00:54.800><c> we</c><00:00:54.960><c> just</c><00:00:55.280><c> reverse</c><00:00:55.920><c> this</c><00:00:56.239><c> linked</c><00:00:56.640><c> list</c>
+
+00:00:57.350 --> 00:00:57.360 align:start position:0%
+can't we just reverse this linked list
+ 
+
+00:00:57.360 --> 00:00:58.069 align:start position:0%
+can't we just reverse this linked list
+start<00:00:57.760><c> from</c>
+
+00:00:58.069 --> 00:00:58.079 align:start position:0%
+start from
+ 
+
+00:00:58.079 --> 00:01:01.270 align:start position:0%
+start from
+here<00:00:58.800><c> and</c><00:00:58.960><c> then</c><00:00:59.120><c> remove</c><00:00:59.600><c> the</c><00:00:59.840><c> second</c><00:01:00.239><c> node</c>
+
+00:01:01.270 --> 00:01:01.280 align:start position:0%
+here and then remove the second node
+ 
+
+00:01:01.280 --> 00:01:03.349 align:start position:0%
+here and then remove the second node
+and<00:01:01.359><c> then</c><00:01:01.600><c> we're</c><00:01:01.840><c> done</c><00:01:02.399><c> that's</c><00:01:02.719><c> definitely</c><00:01:03.199><c> a</c>
+
+00:01:03.349 --> 00:01:03.359 align:start position:0%
+and then we're done that's definitely a
+ 
+
+00:01:03.359 --> 00:01:05.509 align:start position:0%
+and then we're done that's definitely a
+possible<00:01:03.920><c> solution</c><00:01:04.559><c> but</c><00:01:04.799><c> it</c><00:01:04.879><c> requires</c>
+
+00:01:05.509 --> 00:01:05.519 align:start position:0%
+possible solution but it requires
+ 
+
+00:01:05.519 --> 00:01:07.830 align:start position:0%
+possible solution but it requires
+reversing<00:01:06.240><c> the</c><00:01:06.400><c> linked</c><00:01:06.720><c> list</c><00:01:07.040><c> which</c><00:01:07.280><c> we</c><00:01:07.520><c> don't</c>
+
+00:01:07.830 --> 00:01:07.840 align:start position:0%
+reversing the linked list which we don't
+ 
+
+00:01:07.840 --> 00:01:08.469 align:start position:0%
+reversing the linked list which we don't
+actually
+
+00:01:08.469 --> 00:01:08.479 align:start position:0%
+actually
+ 
+
+00:01:08.479 --> 00:01:10.710 align:start position:0%
+actually
+have<00:01:08.720><c> to</c><00:01:08.880><c> do</c><00:01:09.680><c> and</c><00:01:09.840><c> i'm</c><00:01:10.000><c> going</c><00:01:10.080><c> to</c><00:01:10.159><c> show</c><00:01:10.320><c> you</c><00:01:10.479><c> the</c>
+
+00:01:10.710 --> 00:01:10.720 align:start position:0%
+have to do and i'm going to show you the
+ 
+
+00:01:10.720 --> 00:01:11.990 align:start position:0%
+have to do and i'm going to show you the
+easier<00:01:11.119><c> way</c><00:01:11.280><c> to</c><00:01:11.439><c> do</c><00:01:11.680><c> it</c>
+
+00:01:11.990 --> 00:01:12.000 align:start position:0%
+easier way to do it
+ 
+
+00:01:12.000 --> 00:01:15.109 align:start position:0%
+easier way to do it
+so<00:01:12.240><c> let's</c><00:01:12.479><c> say</c><00:01:13.119><c> n</c><00:01:13.600><c> equals</c><00:01:14.159><c> 2</c><00:01:14.479><c> again</c>
+
+00:01:15.109 --> 00:01:15.119 align:start position:0%
+so let's say n equals 2 again
+ 
+
+00:01:15.119 --> 00:01:17.990 align:start position:0%
+so let's say n equals 2 again
+so<00:01:15.280><c> we</c><00:01:15.439><c> want</c><00:01:15.600><c> to</c><00:01:15.680><c> remove</c><00:01:16.159><c> this</c><00:01:16.560><c> node</c><00:01:17.520><c> so</c><00:01:17.759><c> how</c>
+
+00:01:17.990 --> 00:01:18.000 align:start position:0%
+so we want to remove this node so how
+ 
+
+00:01:18.000 --> 00:01:18.550 align:start position:0%
+so we want to remove this node so how
+can<00:01:18.240><c> we</c>
+
+00:01:18.550 --> 00:01:18.560 align:start position:0%
+can we
+ 
+
+00:01:18.560 --> 00:01:21.510 align:start position:0%
+can we
+identify<00:01:19.520><c> that</c><00:01:19.840><c> this</c><00:01:20.240><c> is</c><00:01:20.400><c> the</c><00:01:20.720><c> second</c><00:01:21.200><c> node</c>
+
+00:01:21.510 --> 00:01:21.520 align:start position:0%
+identify that this is the second node
+ 
+
+00:01:21.520 --> 00:01:23.510 align:start position:0%
+identify that this is the second node
+from<00:01:21.759><c> the</c><00:01:22.000><c> end</c><00:01:22.240><c> of</c><00:01:22.320><c> the</c><00:01:22.560><c> list</c>
+
+00:01:23.510 --> 00:01:23.520 align:start position:0%
+from the end of the list
+ 
+
+00:01:23.520 --> 00:01:25.429 align:start position:0%
+from the end of the list
+like<00:01:23.840><c> a</c><00:01:23.920><c> lot</c><00:01:24.080><c> of</c><00:01:24.240><c> linked</c><00:01:24.479><c> list</c><00:01:24.799><c> questions</c><00:01:25.280><c> we</c>
+
+00:01:25.429 --> 00:01:25.439 align:start position:0%
+like a lot of linked list questions we
+ 
+
+00:01:25.439 --> 00:01:27.030 align:start position:0%
+like a lot of linked list questions we
+can<00:01:25.600><c> use</c><00:01:25.920><c> two</c><00:01:26.240><c> pointers</c>
+
+00:01:27.030 --> 00:01:27.040 align:start position:0%
+can use two pointers
+ 
+
+00:01:27.040 --> 00:01:29.429 align:start position:0%
+can use two pointers
+but<00:01:27.200><c> how</c><00:01:27.439><c> are</c><00:01:27.520><c> we</c><00:01:27.680><c> gonna</c><00:01:27.920><c> make</c><00:01:28.320><c> use</c><00:01:28.799><c> of</c><00:01:28.960><c> our</c><00:01:29.200><c> two</c>
+
+00:01:29.429 --> 00:01:29.439 align:start position:0%
+but how are we gonna make use of our two
+ 
+
+00:01:29.439 --> 00:01:30.149 align:start position:0%
+but how are we gonna make use of our two
+pointers
+
+00:01:30.149 --> 00:01:30.159 align:start position:0%
+pointers
+ 
+
+00:01:30.159 --> 00:01:32.550 align:start position:0%
+pointers
+so<00:01:30.320><c> what</c><00:01:30.560><c> if</c><00:01:30.799><c> i</c><00:01:30.960><c> had</c><00:01:31.200><c> two</c><00:01:31.520><c> pointers</c><00:01:32.000><c> right</c><00:01:32.320><c> a</c>
+
+00:01:32.550 --> 00:01:32.560 align:start position:0%
+so what if i had two pointers right a
+ 
+
+00:01:32.560 --> 00:01:35.190 align:start position:0%
+so what if i had two pointers right a
+left<00:01:32.960><c> pointer</c><00:01:33.439><c> and</c><00:01:33.600><c> a</c><00:01:33.759><c> right</c><00:01:34.079><c> pointer</c>
+
+00:01:35.190 --> 00:01:35.200 align:start position:0%
+left pointer and a right pointer
+ 
+
+00:01:35.200 --> 00:01:37.030 align:start position:0%
+left pointer and a right pointer
+the<00:01:35.439><c> left</c><00:01:35.759><c> pointer</c><00:01:36.079><c> is</c><00:01:36.159><c> at</c><00:01:36.240><c> the</c><00:01:36.400><c> beginning</c><00:01:36.960><c> of</c>
+
+00:01:37.030 --> 00:01:37.040 align:start position:0%
+the left pointer is at the beginning of
+ 
+
+00:01:37.040 --> 00:01:39.429 align:start position:0%
+the left pointer is at the beginning of
+the<00:01:37.280><c> list</c><00:01:37.680><c> and</c><00:01:37.840><c> the</c><00:01:38.159><c> right</c><00:01:38.560><c> pointer</c>
+
+00:01:39.429 --> 00:01:39.439 align:start position:0%
+the list and the right pointer
+ 
+
+00:01:39.439 --> 00:01:43.109 align:start position:0%
+the list and the right pointer
+is<00:01:39.840><c> shifted</c><00:01:40.880><c> by</c><00:01:41.280><c> n</c><00:01:41.600><c> equals</c><00:01:42.159><c> two</c><00:01:42.479><c> so</c>
+
+00:01:43.109 --> 00:01:43.119 align:start position:0%
+is shifted by n equals two so
+ 
+
+00:01:43.119 --> 00:01:44.710 align:start position:0%
+is shifted by n equals two so
+our<00:01:43.360><c> right</c><00:01:43.600><c> pointer</c><00:01:43.840><c> is</c><00:01:43.920><c> gonna</c><00:01:44.079><c> be</c><00:01:44.159><c> shifted</c>
+
+00:01:44.710 --> 00:01:44.720 align:start position:0%
+our right pointer is gonna be shifted
+ 
+
+00:01:44.720 --> 00:01:47.030 align:start position:0%
+our right pointer is gonna be shifted
+one<00:01:45.360><c> and</c><00:01:45.520><c> then</c><00:01:45.680><c> it's</c><00:01:45.840><c> gonna</c><00:01:46.000><c> be</c><00:01:46.079><c> shifted</c><00:01:46.560><c> again</c>
+
+00:01:47.030 --> 00:01:47.040 align:start position:0%
+one and then it's gonna be shifted again
+ 
+
+00:01:47.040 --> 00:01:48.870 align:start position:0%
+one and then it's gonna be shifted again
+and<00:01:47.200><c> our</c><00:01:47.439><c> right</c><00:01:47.600><c> pointer</c><00:01:47.920><c> is</c><00:01:48.000><c> gonna</c><00:01:48.240><c> be</c><00:01:48.479><c> over</c>
+
+00:01:48.870 --> 00:01:48.880 align:start position:0%
+and our right pointer is gonna be over
+ 
+
+00:01:48.880 --> 00:01:50.230 align:start position:0%
+and our right pointer is gonna be over
+here<00:01:49.920><c> so</c>
+
+00:01:50.230 --> 00:01:50.240 align:start position:0%
+here so
+ 
+
+00:01:50.240 --> 00:01:52.389 align:start position:0%
+here so
+now<00:01:50.479><c> we're</c><00:01:50.640><c> just</c><00:01:50.880><c> gonna</c><00:01:51.200><c> keep</c><00:01:51.600><c> shifting</c><00:01:52.159><c> our</c>
+
+00:01:52.389 --> 00:01:52.399 align:start position:0%
+now we're just gonna keep shifting our
+ 
+
+00:01:52.399 --> 00:01:54.149 align:start position:0%
+now we're just gonna keep shifting our
+pointers<00:01:53.040><c> until</c><00:01:53.600><c> this</c>
+
+00:01:54.149 --> 00:01:54.159 align:start position:0%
+pointers until this
+ 
+
+00:01:54.159 --> 00:01:57.030 align:start position:0%
+pointers until this
+right<00:01:54.640><c> pointer</c><00:01:55.280><c> is</c><00:01:55.520><c> at</c><00:01:55.680><c> the</c><00:01:56.000><c> end</c><00:01:56.320><c> of</c><00:01:56.399><c> the</c><00:01:56.640><c> list</c>
+
+00:01:57.030 --> 00:01:57.040 align:start position:0%
+right pointer is at the end of the list
+ 
+
+00:01:57.040 --> 00:01:58.630 align:start position:0%
+right pointer is at the end of the list
+and<00:01:57.360><c> watch</c><00:01:57.680><c> what</c><00:01:57.920><c> happens</c>
+
+00:01:58.630 --> 00:01:58.640 align:start position:0%
+and watch what happens
+ 
+
+00:01:58.640 --> 00:02:01.109 align:start position:0%
+and watch what happens
+when<00:01:58.880><c> we</c><00:01:59.040><c> do</c><00:01:59.280><c> that</c><00:02:00.240><c> so</c><00:02:00.479><c> we're</c><00:02:00.640><c> just</c><00:02:00.880><c> going</c><00:02:00.960><c> to</c>
+
+00:02:01.109 --> 00:02:01.119 align:start position:0%
+when we do that so we're just going to
+ 
+
+00:02:01.119 --> 00:02:01.910 align:start position:0%
+when we do that so we're just going to
+be<00:02:01.280><c> shifting</c>
+
+00:02:01.910 --> 00:02:01.920 align:start position:0%
+be shifting
+ 
+
+00:02:01.920 --> 00:02:04.870 align:start position:0%
+be shifting
+each<00:02:02.240><c> pointer</c><00:02:02.719><c> by</c><00:02:03.119><c> one</c><00:02:04.000><c> and</c><00:02:04.320><c> this</c><00:02:04.560><c> is</c><00:02:04.640><c> going</c><00:02:04.719><c> to</c>
+
+00:02:04.870 --> 00:02:04.880 align:start position:0%
+each pointer by one and this is going to
+ 
+
+00:02:04.880 --> 00:02:05.749 align:start position:0%
+each pointer by one and this is going to
+make<00:02:05.119><c> sure</c>
+
+00:02:05.749 --> 00:02:05.759 align:start position:0%
+make sure
+ 
+
+00:02:05.759 --> 00:02:08.630 align:start position:0%
+make sure
+that<00:02:05.920><c> the</c><00:02:06.240><c> space</c><00:02:06.880><c> between</c><00:02:07.360><c> these</c><00:02:07.759><c> pointers</c><00:02:08.399><c> is</c>
+
+00:02:08.630 --> 00:02:08.640 align:start position:0%
+that the space between these pointers is
+ 
+
+00:02:08.640 --> 00:02:09.430 align:start position:0%
+that the space between these pointers is
+exactly
+
+00:02:09.430 --> 00:02:09.440 align:start position:0%
+exactly
+ 
+
+00:02:09.440 --> 00:02:12.470 align:start position:0%
+exactly
+equal<00:02:09.840><c> to</c><00:02:10.239><c> n</c><00:02:10.720><c> which</c><00:02:10.959><c> is</c><00:02:11.360><c> two</c><00:02:11.680><c> right</c>
+
+00:02:12.470 --> 00:02:12.480 align:start position:0%
+equal to n which is two right
+ 
+
+00:02:12.480 --> 00:02:14.550 align:start position:0%
+equal to n which is two right
+so<00:02:12.720><c> now</c><00:02:12.879><c> we're</c><00:02:13.040><c> going</c><00:02:13.120><c> to</c><00:02:13.200><c> shift</c><00:02:13.520><c> by</c><00:02:13.760><c> one</c><00:02:14.000><c> again</c>
+
+00:02:14.550 --> 00:02:14.560 align:start position:0%
+so now we're going to shift by one again
+ 
+
+00:02:14.560 --> 00:02:16.630 align:start position:0%
+so now we're going to shift by one again
+making<00:02:14.959><c> sure</c><00:02:15.200><c> that</c><00:02:15.360><c> the</c><00:02:15.520><c> gap</c><00:02:15.840><c> between</c><00:02:16.239><c> them</c><00:02:16.480><c> is</c>
+
+00:02:16.630 --> 00:02:16.640 align:start position:0%
+making sure that the gap between them is
+ 
+
+00:02:16.640 --> 00:02:17.510 align:start position:0%
+making sure that the gap between them is
+still<00:02:16.959><c> two</c>
+
+00:02:17.510 --> 00:02:17.520 align:start position:0%
+still two
+ 
+
+00:02:17.520 --> 00:02:20.550 align:start position:0%
+still two
+now<00:02:17.760><c> we're</c><00:02:17.920><c> going</c><00:02:18.000><c> to</c><00:02:18.239><c> shift</c><00:02:18.640><c> one</c><00:02:19.280><c> last</c><00:02:19.680><c> time</c>
+
+00:02:20.550 --> 00:02:20.560 align:start position:0%
+now we're going to shift one last time
+ 
+
+00:02:20.560 --> 00:02:22.949 align:start position:0%
+now we're going to shift one last time
+because<00:02:21.040><c> right</c><00:02:21.280><c> is</c><00:02:21.440><c> almost</c><00:02:21.760><c> at</c><00:02:21.920><c> the</c><00:02:22.160><c> end</c><00:02:22.640><c> so</c>
+
+00:02:22.949 --> 00:02:22.959 align:start position:0%
+because right is almost at the end so
+ 
+
+00:02:22.959 --> 00:02:23.670 align:start position:0%
+because right is almost at the end so
+now<00:02:23.280><c> our</c>
+
+00:02:23.670 --> 00:02:23.680 align:start position:0%
+now our
+ 
+
+00:02:23.680 --> 00:02:26.390 align:start position:0%
+now our
+right<00:02:24.080><c> pointer</c><00:02:24.800><c> is</c><00:02:24.959><c> at</c><00:02:25.360><c> null</c><00:02:25.920><c> right</c><00:02:26.160><c> it's</c><00:02:26.319><c> at</c>
+
+00:02:26.390 --> 00:02:26.400 align:start position:0%
+right pointer is at null right it's at
+ 
+
+00:02:26.400 --> 00:02:26.710 align:start position:0%
+right pointer is at null right it's at
+the
+
+00:02:26.710 --> 00:02:26.720 align:start position:0%
+the
+ 
+
+00:02:26.720 --> 00:02:29.430 align:start position:0%
+the
+end<00:02:26.959><c> of</c><00:02:27.120><c> the</c><00:02:27.280><c> list</c><00:02:27.599><c> it</c><00:02:27.760><c> can't</c><00:02:28.160><c> go</c><00:02:28.480><c> any</c><00:02:28.800><c> farther</c>
+
+00:02:29.430 --> 00:02:29.440 align:start position:0%
+end of the list it can't go any farther
+ 
+
+00:02:29.440 --> 00:02:31.030 align:start position:0%
+end of the list it can't go any farther
+and<00:02:29.680><c> our</c><00:02:29.920><c> left</c><00:02:30.239><c> pointer</c>
+
+00:02:31.030 --> 00:02:31.040 align:start position:0%
+and our left pointer
+ 
+
+00:02:31.040 --> 00:02:34.949 align:start position:0%
+and our left pointer
+is<00:02:31.920><c> exactly</c><00:02:32.959><c> at</c><00:02:33.200><c> the</c><00:02:33.440><c> node</c><00:02:34.000><c> that</c><00:02:34.239><c> we</c><00:02:34.480><c> want</c><00:02:34.800><c> to</c>
+
+00:02:34.949 --> 00:02:34.959 align:start position:0%
+is exactly at the node that we want to
+ 
+
+00:02:34.959 --> 00:02:35.990 align:start position:0%
+is exactly at the node that we want to
+delete
+
+00:02:35.990 --> 00:02:36.000 align:start position:0%
+delete
+ 
+
+00:02:36.000 --> 00:02:38.790 align:start position:0%
+delete
+and<00:02:36.160><c> the</c><00:02:36.400><c> reason</c><00:02:36.879><c> is</c><00:02:37.360><c> because</c><00:02:38.000><c> remember</c><00:02:38.640><c> the</c>
+
+00:02:38.790 --> 00:02:38.800 align:start position:0%
+and the reason is because remember the
+ 
+
+00:02:38.800 --> 00:02:40.470 align:start position:0%
+and the reason is because remember the
+offset<00:02:39.440><c> between</c><00:02:39.760><c> these</c><00:02:40.080><c> two</c>
+
+00:02:40.470 --> 00:02:40.480 align:start position:0%
+offset between these two
+ 
+
+00:02:40.480 --> 00:02:43.589 align:start position:0%
+offset between these two
+is<00:02:40.720><c> n</c><00:02:41.280><c> making</c><00:02:41.760><c> sure</c><00:02:42.560><c> that</c><00:02:42.800><c> we</c><00:02:42.959><c> have</c><00:02:43.200><c> the</c><00:02:43.360><c> node</c>
+
+00:02:43.589 --> 00:02:43.599 align:start position:0%
+is n making sure that we have the node
+ 
+
+00:02:43.599 --> 00:02:44.869 align:start position:0%
+is n making sure that we have the node
+we<00:02:43.760><c> want</c><00:02:44.000><c> to</c><00:02:44.080><c> delete</c>
+
+00:02:44.869 --> 00:02:44.879 align:start position:0%
+we want to delete
+ 
+
+00:02:44.879 --> 00:02:46.869 align:start position:0%
+we want to delete
+now<00:02:45.040><c> there's</c><00:02:45.280><c> only</c><00:02:45.519><c> one</c><00:02:45.840><c> problem</c><00:02:46.319><c> we</c><00:02:46.560><c> have</c>
+
+00:02:46.869 --> 00:02:46.879 align:start position:0%
+now there's only one problem we have
+ 
+
+00:02:46.879 --> 00:02:48.470 align:start position:0%
+now there's only one problem we have
+access<00:02:47.360><c> to</c><00:02:47.519><c> the</c><00:02:47.680><c> node</c><00:02:47.920><c> that</c><00:02:48.000><c> we</c><00:02:48.160><c> want</c><00:02:48.319><c> to</c>
+
+00:02:48.470 --> 00:02:48.480 align:start position:0%
+access to the node that we want to
+ 
+
+00:02:48.480 --> 00:02:50.550 align:start position:0%
+access to the node that we want to
+delete<00:02:49.040><c> but</c><00:02:49.200><c> we</c><00:02:49.360><c> want</c><00:02:49.599><c> to</c><00:02:49.680><c> delete</c><00:02:50.239><c> it</c>
+
+00:02:50.550 --> 00:02:50.560 align:start position:0%
+delete but we want to delete it
+ 
+
+00:02:50.560 --> 00:02:52.790 align:start position:0%
+delete but we want to delete it
+how<00:02:50.800><c> do</c><00:02:50.959><c> we</c><00:02:51.120><c> delete</c><00:02:51.519><c> it</c><00:02:51.920><c> the</c><00:02:52.160><c> only</c><00:02:52.480><c> thing</c><00:02:52.640><c> we</c>
+
+00:02:52.790 --> 00:02:52.800 align:start position:0%
+how do we delete it the only thing we
+ 
+
+00:02:52.800 --> 00:02:56.150 align:start position:0%
+how do we delete it the only thing we
+have<00:02:52.879><c> to</c><00:02:53.040><c> do</c><00:02:53.280><c> is</c><00:02:53.519><c> take</c><00:02:53.840><c> this</c><00:02:54.160><c> pointer</c>
+
+00:02:56.150 --> 00:02:56.160 align:start position:0%
+have to do is take this pointer
+ 
+
+00:02:56.160 --> 00:02:59.670 align:start position:0%
+have to do is take this pointer
+cross<00:02:56.560><c> it</c><00:02:56.720><c> out</c><00:02:57.440><c> and</c><00:02:57.599><c> then</c><00:02:58.319><c> reassign</c><00:02:59.120><c> it</c>
+
+00:02:59.670 --> 00:02:59.680 align:start position:0%
+cross it out and then reassign it
+ 
+
+00:02:59.680 --> 00:03:02.710 align:start position:0%
+cross it out and then reassign it
+over<00:03:00.159><c> here</c><00:03:01.040><c> right</c><00:03:01.599><c> once</c><00:03:01.920><c> we've</c><00:03:02.159><c> done</c><00:03:02.400><c> that</c>
+
+00:03:02.710 --> 00:03:02.720 align:start position:0%
+over here right once we've done that
+ 
+
+00:03:02.720 --> 00:03:03.350 align:start position:0%
+over here right once we've done that
+we've<00:03:02.959><c> gotten</c>
+
+00:03:03.350 --> 00:03:03.360 align:start position:0%
+we've gotten
+ 
+
+00:03:03.360 --> 00:03:06.550 align:start position:0%
+we've gotten
+rid<00:03:03.599><c> of</c><00:03:03.680><c> this</c><00:03:04.080><c> node</c><00:03:04.800><c> so</c><00:03:04.959><c> the</c><00:03:05.280><c> problem</c><00:03:06.000><c> is</c>
+
+00:03:06.550 --> 00:03:06.560 align:start position:0%
+rid of this node so the problem is
+ 
+
+00:03:06.560 --> 00:03:09.509 align:start position:0%
+rid of this node so the problem is
+we're<00:03:06.879><c> at</c><00:03:07.360><c> this</c><00:03:07.760><c> node</c><00:03:08.239><c> when</c><00:03:08.560><c> really</c><00:03:08.959><c> we</c><00:03:09.280><c> want</c>
+
+00:03:09.509 --> 00:03:09.519 align:start position:0%
+we're at this node when really we want
+ 
+
+00:03:09.519 --> 00:03:09.910 align:start position:0%
+we're at this node when really we want
+to<00:03:09.599><c> be</c>
+
+00:03:09.910 --> 00:03:09.920 align:start position:0%
+to be
+ 
+
+00:03:09.920 --> 00:03:12.710 align:start position:0%
+to be
+at<00:03:10.319><c> this</c><00:03:10.640><c> node</c><00:03:10.959><c> if</c><00:03:11.120><c> we</c><00:03:11.280><c> want</c><00:03:11.440><c> to</c><00:03:11.599><c> delete</c><00:03:12.400><c> this</c>
+
+00:03:12.710 --> 00:03:12.720 align:start position:0%
+at this node if we want to delete this
+ 
+
+00:03:12.720 --> 00:03:13.509 align:start position:0%
+at this node if we want to delete this
+node
+
+00:03:13.509 --> 00:03:13.519 align:start position:0%
+node
+ 
+
+00:03:13.519 --> 00:03:16.229 align:start position:0%
+node
+and<00:03:13.760><c> this</c><00:03:14.000><c> can</c><00:03:14.319><c> actually</c><00:03:14.879><c> be</c><00:03:15.120><c> solved</c><00:03:15.680><c> by</c>
+
+00:03:16.229 --> 00:03:16.239 align:start position:0%
+and this can actually be solved by
+ 
+
+00:03:16.239 --> 00:03:17.190 align:start position:0%
+and this can actually be solved by
+another
+
+00:03:17.190 --> 00:03:17.200 align:start position:0%
+another
+ 
+
+00:03:17.200 --> 00:03:19.110 align:start position:0%
+another
+pretty<00:03:17.440><c> common</c><00:03:17.840><c> technique</c><00:03:18.319><c> the</c><00:03:18.480><c> dummy</c><00:03:18.800><c> node</c>
+
+00:03:19.110 --> 00:03:19.120 align:start position:0%
+pretty common technique the dummy node
+ 
+
+00:03:19.120 --> 00:03:21.030 align:start position:0%
+pretty common technique the dummy node
+right<00:03:19.360><c> so</c><00:03:19.840><c> we're</c><00:03:20.080><c> going</c><00:03:20.159><c> to</c><00:03:20.319><c> actually</c><00:03:20.720><c> have</c>
+
+00:03:21.030 --> 00:03:21.040 align:start position:0%
+right so we're going to actually have
+ 
+
+00:03:21.040 --> 00:03:21.990 align:start position:0%
+right so we're going to actually have
+another
+
+00:03:21.990 --> 00:03:22.000 align:start position:0%
+another
+ 
+
+00:03:22.000 --> 00:03:24.949 align:start position:0%
+another
+node<00:03:22.560><c> that</c><00:03:22.879><c> we</c><00:03:23.200><c> insert</c><00:03:24.000><c> at</c><00:03:24.159><c> the</c><00:03:24.319><c> beginning</c><00:03:24.799><c> of</c>
+
+00:03:24.949 --> 00:03:24.959 align:start position:0%
+node that we insert at the beginning of
+ 
+
+00:03:24.959 --> 00:03:26.710 align:start position:0%
+node that we insert at the beginning of
+this<00:03:25.200><c> list</c><00:03:25.519><c> that</c><00:03:25.599><c> we</c><00:03:25.840><c> don't</c><00:03:26.159><c> really</c>
+
+00:03:26.710 --> 00:03:26.720 align:start position:0%
+this list that we don't really
+ 
+
+00:03:26.720 --> 00:03:28.869 align:start position:0%
+this list that we don't really
+use<00:03:27.519><c> and</c><00:03:27.680><c> the</c><00:03:27.920><c> main</c><00:03:28.239><c> thing</c><00:03:28.400><c> that's</c><00:03:28.640><c> going</c><00:03:28.720><c> to</c>
+
+00:03:28.869 --> 00:03:28.879 align:start position:0%
+use and the main thing that's going to
+ 
+
+00:03:28.879 --> 00:03:31.270 align:start position:0%
+use and the main thing that's going to
+happen<00:03:29.200><c> is</c><00:03:29.680><c> happen</c><00:03:30.080><c> is</c><00:03:30.319><c> instead</c><00:03:30.799><c> of</c><00:03:30.959><c> our</c>
+
+00:03:31.270 --> 00:03:31.280 align:start position:0%
+happen is happen is instead of our
+ 
+
+00:03:31.280 --> 00:03:34.229 align:start position:0%
+happen is happen is instead of our
+left<00:03:31.680><c> pointer</c><00:03:32.400><c> instead</c><00:03:33.120><c> of</c><00:03:33.280><c> our</c><00:03:33.440><c> left</c><00:03:33.760><c> pointer</c>
+
+00:03:34.229 --> 00:03:34.239 align:start position:0%
+left pointer instead of our left pointer
+ 
+
+00:03:34.239 --> 00:03:35.750 align:start position:0%
+left pointer instead of our left pointer
+being<00:03:34.400><c> initialized</c><00:03:35.200><c> here</c>
+
+00:03:35.750 --> 00:03:35.760 align:start position:0%
+being initialized here
+ 
+
+00:03:35.760 --> 00:03:37.910 align:start position:0%
+being initialized here
+we're<00:03:36.239><c> actually</c><00:03:36.720><c> going</c><00:03:36.879><c> to</c><00:03:37.040><c> initialize</c><00:03:37.599><c> it</c><00:03:37.840><c> at</c>
+
+00:03:37.910 --> 00:03:37.920 align:start position:0%
+we're actually going to initialize it at
+ 
+
+00:03:37.920 --> 00:03:39.509 align:start position:0%
+we're actually going to initialize it at
+the<00:03:38.159><c> dummy</c><00:03:38.560><c> node</c>
+
+00:03:39.509 --> 00:03:39.519 align:start position:0%
+the dummy node
+ 
+
+00:03:39.519 --> 00:03:41.430 align:start position:0%
+the dummy node
+so<00:03:40.000><c> left</c><00:03:40.319><c> is</c><00:03:40.640><c> really</c><00:03:41.040><c> going</c><00:03:41.200><c> to</c><00:03:41.280><c> be</c>
+
+00:03:41.430 --> 00:03:41.440 align:start position:0%
+so left is really going to be
+ 
+
+00:03:41.440 --> 00:03:43.030 align:start position:0%
+so left is really going to be
+initialized<00:03:42.319><c> here</c>
+
+00:03:43.030 --> 00:03:43.040 align:start position:0%
+initialized here
+ 
+
+00:03:43.040 --> 00:03:45.030 align:start position:0%
+initialized here
+and<00:03:43.200><c> our</c><00:03:43.440><c> right</c><00:03:43.760><c> pointer</c><00:03:44.239><c> though</c><00:03:44.480><c> is</c><00:03:44.720><c> still</c>
+
+00:03:45.030 --> 00:03:45.040 align:start position:0%
+and our right pointer though is still
+ 
+
+00:03:45.040 --> 00:03:47.830 align:start position:0%
+and our right pointer though is still
+going<00:03:45.200><c> to</c><00:03:45.280><c> be</c><00:03:45.760><c> initialized</c><00:03:46.480><c> over</c><00:03:46.879><c> here</c>
+
+00:03:47.830 --> 00:03:47.840 align:start position:0%
+going to be initialized over here
+ 
+
+00:03:47.840 --> 00:03:50.470 align:start position:0%
+going to be initialized over here
+so<00:03:48.159><c> in</c><00:03:48.400><c> reality</c><00:03:49.200><c> when</c><00:03:49.519><c> our</c><00:03:49.760><c> right</c><00:03:50.080><c> pointer</c>
+
+00:03:50.470 --> 00:03:50.480 align:start position:0%
+so in reality when our right pointer
+ 
+
+00:03:50.480 --> 00:03:52.309 align:start position:0%
+so in reality when our right pointer
+reaches<00:03:50.879><c> the</c><00:03:51.200><c> end</c><00:03:51.440><c> of</c><00:03:51.519><c> the</c><00:03:51.680><c> list</c>
+
+00:03:52.309 --> 00:03:52.319 align:start position:0%
+reaches the end of the list
+ 
+
+00:03:52.319 --> 00:03:56.710 align:start position:0%
+reaches the end of the list
+we<00:03:52.560><c> will</c><00:03:52.720><c> have</c><00:03:52.959><c> a</c><00:03:53.200><c> left</c><00:03:53.599><c> pointer</c><00:03:54.799><c> at</c><00:03:55.280><c> 3</c>
+
+00:03:56.710 --> 00:03:56.720 align:start position:0%
+we will have a left pointer at 3
+ 
+
+00:03:56.720 --> 00:04:00.470 align:start position:0%
+we will have a left pointer at 3
+and<00:03:57.120><c> then</c><00:03:57.760><c> we</c><00:03:58.000><c> can</c><00:03:58.720><c> update</c><00:03:59.200><c> its</c><00:03:59.519><c> pointer</c>
+
+00:04:00.470 --> 00:04:00.480 align:start position:0%
+and then we can update its pointer
+ 
+
+00:04:00.480 --> 00:04:02.789 align:start position:0%
+and then we can update its pointer
+removing<00:04:01.519><c> this</c><00:04:01.920><c> node</c><00:04:02.239><c> that</c><00:04:02.400><c> we</c><00:04:02.560><c> want</c><00:04:02.720><c> to</c>
+
+00:04:02.789 --> 00:04:02.799 align:start position:0%
+removing this node that we want to
+ 
+
+00:04:02.799 --> 00:04:03.990 align:start position:0%
+removing this node that we want to
+remove
+
+00:04:03.990 --> 00:04:04.000 align:start position:0%
+remove
+ 
+
+00:04:04.000 --> 00:04:07.190 align:start position:0%
+remove
+and<00:04:04.319><c> to</c><00:04:05.280><c> return</c><00:04:05.840><c> the</c><00:04:06.080><c> new</c><00:04:06.400><c> linked</c><00:04:06.720><c> list</c>
+
+00:04:07.190 --> 00:04:07.200 align:start position:0%
+and to return the new linked list
+ 
+
+00:04:07.200 --> 00:04:09.670 align:start position:0%
+and to return the new linked list
+all<00:04:07.439><c> we</c><00:04:07.599><c> have</c><00:04:07.760><c> to</c><00:04:07.920><c> do</c><00:04:08.480><c> is</c><00:04:08.799><c> take</c><00:04:09.120><c> our</c><00:04:09.280><c> dummy</c>
+
+00:04:09.670 --> 00:04:09.680 align:start position:0%
+all we have to do is take our dummy
+ 
+
+00:04:09.680 --> 00:04:10.550 align:start position:0%
+all we have to do is take our dummy
+pointer
+
+00:04:10.550 --> 00:04:10.560 align:start position:0%
+pointer
+ 
+
+00:04:10.560 --> 00:04:14.630 align:start position:0%
+pointer
+and<00:04:10.879><c> say</c><00:04:11.200><c> return</c><00:04:12.400><c> dummy</c><00:04:13.280><c> dot</c><00:04:13.920><c> next</c>
+
+00:04:14.630 --> 00:04:14.640 align:start position:0%
+and say return dummy dot next
+ 
+
+00:04:14.640 --> 00:04:17.670 align:start position:0%
+and say return dummy dot next
+which<00:04:14.879><c> is</c><00:04:15.120><c> going</c><00:04:15.280><c> to</c><00:04:15.439><c> be</c><00:04:15.920><c> this</c><00:04:16.239><c> node</c><00:04:17.120><c> and</c><00:04:17.359><c> since</c>
+
+00:04:17.670 --> 00:04:17.680 align:start position:0%
+which is going to be this node and since
+ 
+
+00:04:17.680 --> 00:04:19.749 align:start position:0%
+which is going to be this node and since
+this<00:04:17.840><c> is</c><00:04:18.000><c> a</c><00:04:18.079><c> 2.0</c><00:04:18.799><c> technique</c>
+
+00:04:19.749 --> 00:04:19.759 align:start position:0%
+this is a 2.0 technique
+ 
+
+00:04:19.759 --> 00:04:21.830 align:start position:0%
+this is a 2.0 technique
+the<00:04:19.919><c> time</c><00:04:20.160><c> complexity</c><00:04:20.720><c> is</c><00:04:20.799><c> going</c><00:04:20.880><c> to</c><00:04:21.040><c> be</c><00:04:21.199><c> big</c><00:04:21.440><c> o</c>
+
+00:04:21.830 --> 00:04:21.840 align:start position:0%
+the time complexity is going to be big o
+ 
+
+00:04:21.840 --> 00:04:23.189 align:start position:0%
+the time complexity is going to be big o
+of<00:04:22.079><c> n</c>
+
+00:04:23.189 --> 00:04:23.199 align:start position:0%
+of n
+ 
+
+00:04:23.199 --> 00:04:25.189 align:start position:0%
+of n
+so<00:04:23.440><c> just</c><00:04:23.600><c> like</c><00:04:23.840><c> in</c><00:04:23.919><c> the</c><00:04:24.160><c> drawing</c><00:04:24.720><c> the</c><00:04:24.960><c> first</c>
+
+00:04:25.189 --> 00:04:25.199 align:start position:0%
+so just like in the drawing the first
+ 
+
+00:04:25.199 --> 00:04:27.350 align:start position:0%
+so just like in the drawing the first
+thing<00:04:25.360><c> we</c><00:04:25.759><c> really</c><00:04:26.080><c> want</c><00:04:26.240><c> to</c><00:04:26.400><c> do</c><00:04:26.639><c> is</c><00:04:26.880><c> create</c><00:04:27.199><c> a</c>
+
+00:04:27.350 --> 00:04:27.360 align:start position:0%
+thing we really want to do is create a
+ 
+
+00:04:27.360 --> 00:04:28.710 align:start position:0%
+thing we really want to do is create a
+dummy<00:04:27.759><c> node</c>
+
+00:04:28.710 --> 00:04:28.720 align:start position:0%
+dummy node
+ 
+
+00:04:28.720 --> 00:04:31.189 align:start position:0%
+dummy node
+we<00:04:28.880><c> don't</c><00:04:29.040><c> really</c><00:04:29.440><c> care</c><00:04:29.840><c> what</c><00:04:30.080><c> the</c><00:04:30.400><c> value</c><00:04:31.040><c> of</c>
+
+00:04:31.189 --> 00:04:31.199 align:start position:0%
+we don't really care what the value of
+ 
+
+00:04:31.199 --> 00:04:32.950 align:start position:0%
+we don't really care what the value of
+this<00:04:31.440><c> node</c><00:04:31.759><c> is</c><00:04:32.000><c> but</c><00:04:32.240><c> i'll</c><00:04:32.400><c> just</c><00:04:32.639><c> say</c>
+
+00:04:32.950 --> 00:04:32.960 align:start position:0%
+this node is but i'll just say
+ 
+
+00:04:32.960 --> 00:04:35.510 align:start position:0%
+this node is but i'll just say
+zero<00:04:33.919><c> but</c><00:04:34.160><c> we</c><00:04:34.320><c> want</c><00:04:34.479><c> to</c><00:04:34.560><c> make</c><00:04:34.720><c> sure</c><00:04:34.960><c> that</c><00:04:35.120><c> the</c>
+
+00:04:35.510 --> 00:04:35.520 align:start position:0%
+zero but we want to make sure that the
+ 
+
+00:04:35.520 --> 00:04:35.990 align:start position:0%
+zero but we want to make sure that the
+next
+
+00:04:35.990 --> 00:04:36.000 align:start position:0%
+next
+ 
+
+00:04:36.000 --> 00:04:39.749 align:start position:0%
+next
+pointer<00:04:36.560><c> of</c><00:04:36.800><c> this</c><00:04:37.199><c> node</c><00:04:38.080><c> is</c><00:04:38.320><c> set</c><00:04:38.960><c> to</c><00:04:39.120><c> the</c><00:04:39.360><c> head</c>
+
+00:04:39.749 --> 00:04:39.759 align:start position:0%
+pointer of this node is set to the head
+ 
+
+00:04:39.759 --> 00:04:41.990 align:start position:0%
+pointer of this node is set to the head
+of<00:04:39.919><c> the</c><00:04:40.080><c> list</c><00:04:40.800><c> because</c><00:04:41.040><c> we're</c><00:04:41.280><c> inserting</c><00:04:41.759><c> it</c>
+
+00:04:41.990 --> 00:04:42.000 align:start position:0%
+of the list because we're inserting it
+ 
+
+00:04:42.000 --> 00:04:43.590 align:start position:0%
+of the list because we're inserting it
+at<00:04:42.160><c> the</c><00:04:42.320><c> beginning</c>
+
+00:04:43.590 --> 00:04:43.600 align:start position:0%
+at the beginning
+ 
+
+00:04:43.600 --> 00:04:46.710 align:start position:0%
+at the beginning
+next<00:04:44.000><c> we</c><00:04:44.160><c> can</c><00:04:44.400><c> initialize</c><00:04:45.520><c> our</c><00:04:45.840><c> left</c>
+
+00:04:46.710 --> 00:04:46.720 align:start position:0%
+next we can initialize our left
+ 
+
+00:04:46.720 --> 00:04:50.310 align:start position:0%
+next we can initialize our left
+pointer<00:04:47.840><c> to</c><00:04:48.400><c> dummy</c>
+
+00:04:50.310 --> 00:04:50.320 align:start position:0%
+pointer to dummy
+ 
+
+00:04:50.320 --> 00:04:54.230 align:start position:0%
+pointer to dummy
+and<00:04:50.479><c> we</c><00:04:50.800><c> want</c><00:04:51.120><c> our</c><00:04:51.520><c> right</c><00:04:51.919><c> pointer</c><00:04:52.960><c> to</c><00:04:53.199><c> be</c>
+
+00:04:54.230 --> 00:04:54.240 align:start position:0%
+and we want our right pointer to be
+ 
+
+00:04:54.240 --> 00:04:57.510 align:start position:0%
+and we want our right pointer to be
+head<00:04:54.960><c> plus</c><00:04:55.600><c> two</c><00:04:56.080><c> right</c><00:04:56.800><c> or</c>
+
+00:04:57.510 --> 00:04:57.520 align:start position:0%
+head plus two right or
+ 
+
+00:04:57.520 --> 00:05:01.029 align:start position:0%
+head plus two right or
+head<00:04:57.919><c> plus</c><00:04:58.479><c> n</c><00:04:58.800><c> whatever</c><00:04:59.520><c> n</c><00:04:59.840><c> happens</c><00:05:00.320><c> to</c><00:05:00.479><c> be</c>
+
+00:05:01.029 --> 00:05:01.039 align:start position:0%
+head plus n whatever n happens to be
+ 
+
+00:05:01.039 --> 00:05:03.350 align:start position:0%
+head plus n whatever n happens to be
+so<00:05:01.280><c> we</c><00:05:01.520><c> need</c><00:05:01.759><c> a</c><00:05:02.080><c> loop</c><00:05:02.400><c> to</c><00:05:02.560><c> do</c><00:05:02.720><c> that</c><00:05:03.039><c> right</c><00:05:03.199><c> we</c>
+
+00:05:03.350 --> 00:05:03.360 align:start position:0%
+so we need a loop to do that right we
+ 
+
+00:05:03.360 --> 00:05:04.870 align:start position:0%
+so we need a loop to do that right we
+can't<00:05:03.600><c> just</c><00:05:03.840><c> do</c><00:05:04.000><c> that</c>
+
+00:05:04.870 --> 00:05:04.880 align:start position:0%
+can't just do that
+ 
+
+00:05:04.880 --> 00:05:07.590 align:start position:0%
+can't just do that
+with<00:05:05.280><c> a</c><00:05:05.360><c> calculation</c><00:05:06.400><c> so</c><00:05:06.560><c> we</c><00:05:06.720><c> can</c><00:05:06.960><c> initially</c>
+
+00:05:07.590 --> 00:05:07.600 align:start position:0%
+with a calculation so we can initially
+ 
+
+00:05:07.600 --> 00:05:08.390 align:start position:0%
+with a calculation so we can initially
+say
+
+00:05:08.390 --> 00:05:08.400 align:start position:0%
+say
+ 
+
+00:05:08.400 --> 00:05:12.070 align:start position:0%
+say
+right<00:05:08.880><c> is</c><00:05:09.039><c> equal</c><00:05:09.600><c> to</c><00:05:10.000><c> head</c><00:05:10.800><c> and</c><00:05:11.199><c> while</c>
+
+00:05:12.070 --> 00:05:12.080 align:start position:0%
+right is equal to head and while
+ 
+
+00:05:12.080 --> 00:05:15.350 align:start position:0%
+right is equal to head and while
+n<00:05:12.639><c> is</c><00:05:12.960><c> greater</c><00:05:13.280><c> than</c><00:05:13.600><c> zero</c><00:05:14.960><c> and</c>
+
+00:05:15.350 --> 00:05:15.360 align:start position:0%
+n is greater than zero and
+ 
+
+00:05:15.360 --> 00:05:18.230 align:start position:0%
+n is greater than zero and
+right<00:05:15.680><c> is</c><00:05:15.840><c> not</c><00:05:16.160><c> null</c><00:05:17.280><c> we</c><00:05:17.520><c> want</c><00:05:17.680><c> to</c><00:05:17.840><c> keep</c>
+
+00:05:18.230 --> 00:05:18.240 align:start position:0%
+right is not null we want to keep
+ 
+
+00:05:18.240 --> 00:05:20.550 align:start position:0%
+right is not null we want to keep
+shifting<00:05:18.880><c> right</c>
+
+00:05:20.550 --> 00:05:20.560 align:start position:0%
+shifting right
+ 
+
+00:05:20.560 --> 00:05:24.070 align:start position:0%
+shifting right
+so<00:05:20.880><c> shift</c><00:05:21.440><c> right</c><00:05:22.560><c> by</c><00:05:22.880><c> one</c>
+
+00:05:24.070 --> 00:05:24.080 align:start position:0%
+so shift right by one
+ 
+
+00:05:24.080 --> 00:05:27.110 align:start position:0%
+so shift right by one
+and<00:05:24.639><c> decrement</c><00:05:25.520><c> n</c><00:05:25.840><c> by</c><00:05:26.080><c> one</c>
+
+00:05:27.110 --> 00:05:27.120 align:start position:0%
+and decrement n by one
+ 
+
+00:05:27.120 --> 00:05:29.670 align:start position:0%
+and decrement n by one
+because<00:05:27.520><c> once</c><00:05:27.919><c> n</c><00:05:28.160><c> equals</c><00:05:28.560><c> zero</c><00:05:29.280><c> that</c><00:05:29.440><c> means</c>
+
+00:05:29.670 --> 00:05:29.680 align:start position:0%
+because once n equals zero that means
+ 
+
+00:05:29.680 --> 00:05:31.510 align:start position:0%
+because once n equals zero that means
+we've<00:05:30.000><c> shifted</c><00:05:30.479><c> by</c><00:05:30.720><c> the</c><00:05:30.880><c> amount</c><00:05:31.199><c> that</c><00:05:31.360><c> we</c>
+
+00:05:31.510 --> 00:05:31.520 align:start position:0%
+we've shifted by the amount that we
+ 
+
+00:05:31.520 --> 00:05:32.950 align:start position:0%
+we've shifted by the amount that we
+wanted<00:05:31.919><c> to</c><00:05:32.080><c> shift</c><00:05:32.400><c> by</c>
+
+00:05:32.950 --> 00:05:32.960 align:start position:0%
+wanted to shift by
+ 
+
+00:05:32.960 --> 00:05:36.150 align:start position:0%
+wanted to shift by
+and<00:05:33.280><c> the</c><00:05:33.520><c> last</c><00:05:33.840><c> thing</c><00:05:34.000><c> we</c><00:05:34.160><c> want</c><00:05:34.320><c> to</c><00:05:34.479><c> do</c><00:05:35.280><c> is</c><00:05:35.840><c> keep</c>
+
+00:05:36.150 --> 00:05:36.160 align:start position:0%
+and the last thing we want to do is keep
+ 
+
+00:05:36.160 --> 00:05:36.870 align:start position:0%
+and the last thing we want to do is keep
+shifting
+
+00:05:36.870 --> 00:05:36.880 align:start position:0%
+shifting
+ 
+
+00:05:36.880 --> 00:05:38.790 align:start position:0%
+shifting
+both<00:05:37.360><c> of</c><00:05:37.520><c> our</c><00:05:37.680><c> pointers</c><00:05:38.080><c> now</c><00:05:38.400><c> now</c><00:05:38.560><c> we're</c>
+
+00:05:38.790 --> 00:05:38.800 align:start position:0%
+both of our pointers now now we're
+ 
+
+00:05:38.800 --> 00:05:40.629 align:start position:0%
+both of our pointers now now we're
+shifting<00:05:39.280><c> left</c><00:05:39.680><c> and</c><00:05:39.919><c> right</c><00:05:40.240><c> and</c><00:05:40.400><c> we're</c><00:05:40.560><c> going</c>
+
+00:05:40.629 --> 00:05:40.639 align:start position:0%
+shifting left and right and we're going
+ 
+
+00:05:40.639 --> 00:05:41.270 align:start position:0%
+shifting left and right and we're going
+to<00:05:40.800><c> keep</c>
+
+00:05:41.270 --> 00:05:41.280 align:start position:0%
+to keep
+ 
+
+00:05:41.280 --> 00:05:44.629 align:start position:0%
+to keep
+going<00:05:41.759><c> until</c><00:05:42.639><c> right</c><00:05:43.120><c> equals</c><00:05:44.160><c> until</c>
+
+00:05:44.629 --> 00:05:44.639 align:start position:0%
+going until right equals until
+ 
+
+00:05:44.639 --> 00:05:47.830 align:start position:0%
+going until right equals until
+right<00:05:45.199><c> reaches</c><00:05:46.080><c> the</c><00:05:46.479><c> end</c><00:05:46.880><c> of</c><00:05:47.039><c> the</c><00:05:47.199><c> list</c>
+
+00:05:47.830 --> 00:05:47.840 align:start position:0%
+right reaches the end of the list
+ 
+
+00:05:47.840 --> 00:05:51.670 align:start position:0%
+right reaches the end of the list
+so<00:05:48.080><c> we</c><00:05:48.240><c> can</c><00:05:48.960><c> shift</c><00:05:49.280><c> our</c><00:05:49.440><c> left</c><00:05:49.759><c> pointer</c>
+
+00:05:51.670 --> 00:05:51.680 align:start position:0%
+so we can shift our left pointer
+ 
+
+00:05:51.680 --> 00:05:55.510 align:start position:0%
+so we can shift our left pointer
+and<00:05:51.840><c> we</c><00:05:52.000><c> can</c><00:05:52.240><c> shift</c><00:05:52.720><c> our</c><00:05:52.960><c> right</c><00:05:53.280><c> pointer</c>
+
+00:05:55.510 --> 00:05:55.520 align:start position:0%
+and we can shift our right pointer
+ 
+
+00:05:55.520 --> 00:05:57.909 align:start position:0%
+and we can shift our right pointer
+now<00:05:55.759><c> last</c><00:05:56.080><c> but</c><00:05:56.319><c> not</c><00:05:56.720><c> least</c><00:05:57.120><c> we</c><00:05:57.360><c> actually</c><00:05:57.759><c> want</c>
+
+00:05:57.909 --> 00:05:57.919 align:start position:0%
+now last but not least we actually want
+ 
+
+00:05:57.919 --> 00:06:00.550 align:start position:0%
+now last but not least we actually want
+to<00:05:58.080><c> delete</c><00:05:58.639><c> the</c><00:05:58.880><c> node</c><00:05:59.360><c> and</c><00:05:59.520><c> remember</c>
+
+00:06:00.550 --> 00:06:00.560 align:start position:0%
+to delete the node and remember
+ 
+
+00:06:00.560 --> 00:06:04.070 align:start position:0%
+to delete the node and remember
+all<00:06:01.039><c> we</c><00:06:01.199><c> need</c><00:06:01.360><c> to</c><00:06:01.440><c> do</c><00:06:01.680><c> to</c><00:06:01.840><c> delete</c><00:06:02.560><c> is</c><00:06:03.120><c> update</c>
+
+00:06:04.070 --> 00:06:04.080 align:start position:0%
+all we need to do to delete is update
+ 
+
+00:06:04.080 --> 00:06:07.350 align:start position:0%
+all we need to do to delete is update
+the<00:06:04.400><c> left</c><00:06:04.800><c> node's</c><00:06:05.520><c> next</c><00:06:06.000><c> pointer</c>
+
+00:06:07.350 --> 00:06:07.360 align:start position:0%
+the left node's next pointer
+ 
+
+00:06:07.360 --> 00:06:10.629 align:start position:0%
+the left node's next pointer
+and<00:06:07.759><c> it's</c><00:06:08.080><c> going</c><00:06:08.240><c> to</c><00:06:08.560><c> basically</c><00:06:09.199><c> be</c><00:06:09.840><c> shifted</c>
+
+00:06:10.629 --> 00:06:10.639 align:start position:0%
+and it's going to basically be shifted
+ 
+
+00:06:10.639 --> 00:06:13.830 align:start position:0%
+and it's going to basically be shifted
+by<00:06:10.880><c> one</c><00:06:11.199><c> so</c><00:06:11.520><c> left</c><00:06:12.080><c> dot</c><00:06:12.479><c> next</c><00:06:13.199><c> is</c><00:06:13.440><c> going</c><00:06:13.600><c> to</c>
+
+00:06:13.830 --> 00:06:13.840 align:start position:0%
+by one so left dot next is going to
+ 
+
+00:06:13.840 --> 00:06:14.390 align:start position:0%
+by one so left dot next is going to
+equal
+
+00:06:14.390 --> 00:06:14.400 align:start position:0%
+equal
+ 
+
+00:06:14.400 --> 00:06:17.510 align:start position:0%
+equal
+left<00:06:14.960><c> dot</c><00:06:15.360><c> next</c><00:06:16.160><c> dot</c><00:06:16.560><c> next</c>
+
+00:06:17.510 --> 00:06:17.520 align:start position:0%
+left dot next dot next
+ 
+
+00:06:17.520 --> 00:06:20.870 align:start position:0%
+left dot next dot next
+so<00:06:17.759><c> for</c><00:06:18.000><c> example</c><00:06:18.479><c> if</c><00:06:18.720><c> my</c><00:06:19.039><c> left</c><00:06:19.360><c> node</c><00:06:19.680><c> was</c><00:06:20.000><c> at</c>
+
+00:06:20.870 --> 00:06:20.880 align:start position:0%
+so for example if my left node was at
+ 
+
+00:06:20.880 --> 00:06:23.350 align:start position:0%
+so for example if my left node was at
+my<00:06:21.039><c> left</c><00:06:21.280><c> pointer</c><00:06:21.600><c> was</c><00:06:21.840><c> at</c><00:06:22.080><c> this</c><00:06:22.400><c> node</c><00:06:22.960><c> its</c>
+
+00:06:23.350 --> 00:06:23.360 align:start position:0%
+my left pointer was at this node its
+ 
+
+00:06:23.360 --> 00:06:25.909 align:start position:0%
+my left pointer was at this node its
+next<00:06:23.680><c> pointer</c><00:06:24.080><c> is</c><00:06:24.240><c> at</c><00:06:24.560><c> 2</c><00:06:25.039><c> but</c><00:06:25.280><c> i</c><00:06:25.360><c> want</c><00:06:25.520><c> to</c><00:06:25.680><c> set</c>
+
+00:06:25.909 --> 00:06:25.919 align:start position:0%
+next pointer is at 2 but i want to set
+ 
+
+00:06:25.919 --> 00:06:27.189 align:start position:0%
+next pointer is at 2 but i want to set
+its<00:06:26.160><c> next</c><00:06:26.479><c> pointer</c>
+
+00:06:27.189 --> 00:06:27.199 align:start position:0%
+its next pointer
+ 
+
+00:06:27.199 --> 00:06:31.110 align:start position:0%
+its next pointer
+to<00:06:28.400><c> 2's</c><00:06:28.800><c> next</c><00:06:29.120><c> pointer</c><00:06:29.919><c> so</c>
+
+00:06:31.110 --> 00:06:31.120 align:start position:0%
+to 2's next pointer so
+ 
+
+00:06:31.120 --> 00:06:33.830 align:start position:0%
+to 2's next pointer so
+basically<00:06:31.520><c> what</c><00:06:31.759><c> i'm</c><00:06:31.840><c> doing</c><00:06:32.240><c> is</c><00:06:32.479><c> this</c><00:06:33.440><c> and</c><00:06:33.600><c> we</c>
+
+00:06:33.830 --> 00:06:33.840 align:start position:0%
+basically what i'm doing is this and we
+ 
+
+00:06:33.840 --> 00:06:35.150 align:start position:0%
+basically what i'm doing is this and we
+know<00:06:34.240><c> that</c>
+
+00:06:35.150 --> 00:06:35.160 align:start position:0%
+know that
+ 
+
+00:06:35.160 --> 00:06:37.909 align:start position:0%
+know that
+dummy.next<00:06:36.240><c> is</c><00:06:36.639><c> at</c><00:06:36.800><c> the</c><00:06:36.960><c> head</c><00:06:37.199><c> of</c><00:06:37.360><c> our</c><00:06:37.520><c> list</c>
+
+00:06:37.909 --> 00:06:37.919 align:start position:0%
+dummy.next is at the head of our list
+ 
+
+00:06:37.919 --> 00:06:39.830 align:start position:0%
+dummy.next is at the head of our list
+which<00:06:38.160><c> is</c><00:06:38.319><c> what</c><00:06:38.560><c> we</c><00:06:38.720><c> want</c><00:06:38.880><c> to</c><00:06:38.960><c> return</c><00:06:39.520><c> we</c><00:06:39.680><c> want</c>
+
+00:06:39.830 --> 00:06:39.840 align:start position:0%
+which is what we want to return we want
+ 
+
+00:06:39.840 --> 00:06:40.629 align:start position:0%
+which is what we want to return we want
+to<00:06:39.919><c> return</c><00:06:40.319><c> the</c>
+
+00:06:40.629 --> 00:06:40.639 align:start position:0%
+to return the
+ 
+
+00:06:40.639 --> 00:06:44.270 align:start position:0%
+to return the
+updated<00:06:41.280><c> list</c><00:06:42.000><c> so</c><00:06:42.319><c> we</c><00:06:42.479><c> can</c><00:06:42.639><c> just</c><00:06:42.960><c> return</c>
+
+00:06:44.270 --> 00:06:44.280 align:start position:0%
+updated list so we can just return
+ 
+
+00:06:44.280 --> 00:06:47.029 align:start position:0%
+updated list so we can just return
+dummy.next<00:06:45.280><c> we</c><00:06:45.520><c> don't</c><00:06:45.840><c> want</c><00:06:46.000><c> to</c><00:06:46.160><c> include</c>
+
+00:06:47.029 --> 00:06:47.039 align:start position:0%
+dummy.next we don't want to include
+ 
+
+00:06:47.039 --> 00:06:49.110 align:start position:0%
+dummy.next we don't want to include
+our<00:06:47.199><c> dummy</c><00:06:47.520><c> node</c><00:06:47.919><c> in</c><00:06:48.000><c> the</c><00:06:48.240><c> output</c><00:06:48.639><c> we</c><00:06:48.880><c> never</c>
+
+00:06:49.110 --> 00:06:49.120 align:start position:0%
+our dummy node in the output we never
+ 
+
+00:06:49.120 --> 00:06:51.350 align:start position:0%
+our dummy node in the output we never
+wanted<00:06:49.440><c> to</c><00:06:49.759><c> add</c><00:06:50.080><c> a</c><00:06:50.240><c> node</c><00:06:50.560><c> to</c><00:06:50.720><c> the</c><00:06:50.800><c> list</c><00:06:51.039><c> we</c><00:06:51.199><c> just</c>
+
+00:06:51.350 --> 00:06:51.360 align:start position:0%
+wanted to add a node to the list we just
+ 
+
+00:06:51.360 --> 00:06:53.029 align:start position:0%
+wanted to add a node to the list we just
+wanted<00:06:51.599><c> to</c><00:06:51.759><c> remove</c><00:06:52.240><c> a</c><00:06:52.400><c> node</c>
+
+00:06:53.029 --> 00:06:53.039 align:start position:0%
+wanted to remove a node
+ 
+
+00:06:53.039 --> 00:06:55.670 align:start position:0%
+wanted to remove a node
+so<00:06:53.280><c> our</c><00:06:53.440><c> solution</c><00:06:54.319><c> works</c><00:06:54.720><c> beautifully</c><00:06:55.440><c> we</c>
+
+00:06:55.670 --> 00:06:55.680 align:start position:0%
+so our solution works beautifully we
+ 
+
+00:06:55.680 --> 00:06:57.589 align:start position:0%
+so our solution works beautifully we
+could<00:06:55.840><c> have</c><00:06:56.000><c> just</c><00:06:56.319><c> reversed</c><00:06:56.880><c> the</c><00:06:57.120><c> list</c>
+
+00:06:57.589 --> 00:06:57.599 align:start position:0%
+could have just reversed the list
+ 
+
+00:06:57.599 --> 00:06:59.510 align:start position:0%
+could have just reversed the list
+but<00:06:57.840><c> we</c><00:06:58.080><c> definitely</c><00:06:58.560><c> did</c><00:06:58.720><c> not</c><00:06:58.960><c> need</c><00:06:59.120><c> to</c><00:06:59.280><c> do</c>
+
+00:06:59.510 --> 00:06:59.520 align:start position:0%
+but we definitely did not need to do
+ 
+
+00:06:59.520 --> 00:07:01.270 align:start position:0%
+but we definitely did not need to do
+that<00:07:00.000><c> i</c><00:07:00.160><c> hope</c><00:07:00.400><c> this</c><00:07:00.560><c> was</c><00:07:00.720><c> helpful</c>
+
+00:07:01.270 --> 00:07:01.280 align:start position:0%
+that i hope this was helpful
+ 
+
+00:07:01.280 --> 00:07:03.029 align:start position:0%
+that i hope this was helpful
+don't<00:07:01.520><c> forget</c><00:07:01.759><c> to</c><00:07:01.919><c> like</c><00:07:02.160><c> and</c><00:07:02.240><c> subscribe</c><00:07:02.880><c> it</c>
+
+00:07:03.029 --> 00:07:03.039 align:start position:0%
+don't forget to like and subscribe it
+ 
+
+00:07:03.039 --> 00:07:04.790 align:start position:0%
+don't forget to like and subscribe it
+supports<00:07:03.440><c> the</c><00:07:03.599><c> channel</c><00:07:04.000><c> a</c><00:07:04.160><c> lot</c><00:07:04.479><c> and</c><00:07:04.639><c> i'll</c>
+
+00:07:04.790 --> 00:07:04.800 align:start position:0%
+supports the channel a lot and i'll
+ 
+
+00:07:04.800 --> 00:07:10.479 align:start position:0%
+supports the channel a lot and i'll
+hopefully<00:07:05.360><c> see</c><00:07:05.520><c> you</c><00:07:05.680><c> pretty</c><00:07:07.479><c> soon</c>
+

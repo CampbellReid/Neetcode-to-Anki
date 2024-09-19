@@ -1,0 +1,330 @@
+everyone welcome back and let's write
+some more neat code today so today let's
+solve the problem valid anagram and
+we're actually going to be solving this
+a few different ways so maybe you will
+learn something today so we're given two
+strings s and t and we want to return
+true if
+t is an anagram of s or basically if
+both of the strings are anagrams of each
+other and false if they're not anagrams
+so main thing that they don't mention in
+this problem is what exactly is an
+anagram and basically it means that you
+know to call t an anagram of s is
+basically saying that using the
+characters of s all of the characters
+right every single character we can
+create the string t so basically they're
+made up of the exact same list of
+characters so
+so the string s you can see that it has
+three a characters one n character a one
+g character one r character and one m
+character so it's made up of in total
+seven characters so that must mean that
+if t is an anagram of s
+t has to have exactly seven characters
+as well which clearly it does have seven
+characters but are they the exact same
+characters as i wrote up above well
+let's check okay does it have three a
+characters one two three yep it has
+three a characters does it have a single
+n character yep it has exactly one n
+character does it have a g character yes
+exactly one g character uh does it have
+an r exactly one r it has exactly one m
+as well so it has
+uh the exact same characters and the
+same quantity of each character that's
+also important right because three a's
+have to exist in t as well so in this
+case they're anagrams we can return true
+that's great uh second example uh rat
+and car
+both of them have an r both of them have
+an a character but one of them has a t
+while the other has a c character
+they're both the same length they're
+both length three but they have one
+differing character so they're not
+anagrams we return false in this case so
+the first solution i wanted to talk
+about is probably the most obvious one
+and probably uh by just listening to me
+talk about anagrams you might be able to
+come up with this by yourself we just
+want to count the occurrences of each
+character in both
+both strings right
+what's the easiest way to do that well
+you could use an array or a hash map
+that's what i'm going to use i like hash
+maps basically what the hash map is
+going to look like so basically we're
+going to have two hash maps one for each
+string and the key value in the hash map
+is going to be the character so for
+example a in string s right let's use a
+different color so a in string s so how
+many a's are there there's three a's
+right the the value is going to be the
+count the key is just going to be the
+character we're going to do that for
+every single character in the string so
+that's a n has one g has one r has one
+and m also has one and we know that t is
+the exact same right as three a's one n
+etcetera etcetera right i could continue
+this so in the end you can see that
+they're the exact same hash map right
+once we've built these hash maps we can
+then go through the keys and then
+compare that the counts for each
+character are the exact same which in
+this case yes it is so then after that
+comparison then we know that they're
+anagrams then we can return true and how
+exactly i'm going to do that is i'm just
+going to actually iterate through the
+keys of one of these so in this case for
+example i'm just going to iterate
+through all the keys in string s so a n
+g and then make sure the counts right we
+want to make sure that the count of each
+of the characters is the exact same and
+if we make sure that both strings have
+the exact same length before we actually
+do the hash map stuff then we actually
+only have to iterate through one of the
+hash maps and comparing it to the other
+hash map right because if we make sure
+that
+t has exactly three a's t has exactly
+one n t has exactly one g etcetera
+etcetera if we make sure that all of
+that is true and that's inside of t then
+we pretty much know t is exactly the
+same as s because they have to be if
+they are the same length so that's the
+solution uh time complexity of this is
+big o of n uh or rather let's say big o
+of s plus t
+uh because we're gonna have to iterate
+through both of the strings so we uh so
+that's the time complexity the memory
+complexity is the same s plus t because
+clearly we are building hash maps that
+are gonna be of size
+potentially up to the size of s and the
+size of t so the downside of this
+solution is we are going to need some
+extra memory and the second solution
+that i show you is actually going to
+solve that memory problem so stay tuned
+in the video if you want to see that but
+for now let's jump into the coding
+solution of
+this hashmap solution that i'm talking
+about okay so now let's code it up and
+like i mentioned a main thing we're just
+going to be doing is counting the
+characters in both of the strings so
+we're going to create hashmaps for that
+this is how you can do that in python
+but remember before we even do that we
+want to make sure that the length of
+both strings is exactly the same because
+if they're not the same length then of
+course it's impossible for them to be
+palindromes so we can immediately whoops
+then we can immediately return false if
+they are not the same length otherwise
+we can actually run the algorithm so
+let's just
+uh go through the strings at the same
+time so we can iterate uh basically
+through the length of the string s
+because we know they're both the same
+length so we can just use the index i
+for both of the strings uh count s is
+basically going to count the occurrence
+of each character in uh string s of
+course so each time we see the a
+character so a character is basically
+going to be s at index i that's the key
+of the hashmap uh every time we see a
+character we want to increment the count
+of that character by one so can we just
+say one plus this can we just say one
+plus this well in python no because what
+if that character doesn't even exist in
+the hashmap yet then this is gonna throw
+a key error right key does not exist so
+to get around that in python at least
+there's a nice little function uh with
+hash maps that you can use that's called
+get so
+get this uh you know this key and it'll
+basically do exactly what's being done
+over here on the left side but the
+second parameter to this function is
+basically a default value so 0 is the
+default value in this case that means
+that if this key does not exist in the
+hashmap then the default value that this
+function is going to return is 0 which
+is of course what we would want it to
+return right so with this line we're
+just counting the occurrences of each
+character in string s we can do the
+exact same thing uh with string t just
+by copy pasting this and then changing
+everything to t so making sure we use
+the t hash map and making sure we
+iterate through the string t right t at
+index i so that's pretty much it for
+building the hash maps next we want to
+iterate through the hash maps and make
+sure the counts are the same so let's
+say for c for the character in count uh
+s so we just want to make sure the
+counts of both uh hash maps are the same
+so count that character i is equal to
+count t
+at character i so the counts are the
+same actually in this case we'd want to
+make sure that the counts are not the
+same because if they're not the same
+then we basically know to return false
+immediately because
+then we know that they're not anagrams
+if you have noticed we're iterating
+through the keys in python at least
+we're iterating through all the key
+values of account s right the the count
+map of string s and c
+is going to be the key but what if that
+key does not exist in the t map right
+count t what if it doesn't exist in this
+map well again we can use that default
+function of get so that it doesn't throw
+a key error for us and it'll return a
+default value of zero so
+that's uh basically the entire algorithm
+right we built the hash map we performed
+the check and then if if we never return
+false here that must mean that they are
+anagram so then if the loop exits we can
+go ahead and return true that's the
+entire code let's run it to make sure
+that it works so you can see on the left
+it does run it's relatively efficient
+though it doesn't reflect that on leak
+code but basically you can actually do
+exactly what i just showed you with one
+line of code at least in python but i i
+think this is kind of cheating and it
+probably won't work in an interview but
+counter is a data structure in python
+which is a hashmap but it basically
+counts things automatically for you so
+we can run a counter on s and we can run
+a counter on t and if these counters are
+exactly equal basically by doing the
+equal sign i'm just doing what i did
+down here right with the for loop but
+the equal sign does it for us instantly
+so
+uh it does that and then we can just
+return the result if they're equal it'll
+return true if they're not equal it'll
+return false i can run that and make
+sure that it works which it does and
+it's actually slightly more efficient i
+guess the overall time complexity and
+space complexity of both of these
+solutions is exactly the same just this
+takes more lines of code because we're
+actually explicitly writing out all the
+operations so now what if as a follow-up
+question your interviewer asks you how
+can you make a solution where we don't
+actually need extra memory can you do a
+solution with of one memory how would
+you solve that problem it's a good
+question and the solution is actually
+simpler than you might think
+just kind of thinking about how anagrams
+work if you took all these characters
+and put them in a hash map where we can
+count the occurrences then it's pretty
+easy to check if they're equal but isn't
+there another way what if we
+made sure that the characters show up in
+the exact same order every single time
+what do we mean by order well one
+possible way would be sorted order right
+because if they're if they really are
+the exact same characters then if we put
+them in sorted order then they should
+actually become the exact same string
+then we can literally just do an equals
+operation on both of the sorted strings
+and guarantee that they're going to be
+equal but the downside is what's the
+time complexity of doing sort well in
+some cases with bad sorting algorithms
+like bubble sort or something it might
+be n squared right
+good sorting algorithms can do it in n
+log n time right worst case big o of n
+log n time uh but you know the space
+complexity is kind of iffy usually
+sorting algorithms at least good ones
+actually do use extra memory they use of
+n extra memory but sometimes they don't
+sometimes they can be really optimized
+and actually run on
+constant memory constant extra memory it
+will depend on which built-in library
+function you're using but usually for
+some reason interviewers just assume
+that sorting doesn't take extra space so
+it's definitely something to discuss
+with your interviewer yeah so basically
+if you just sort it it solves the
+problem for you right because if we took
+anagram and we sorted it we'd get aaa g
+m n r right it would be the same order
+and then if we take the this string t
+sort it it's the exact same characters
+so when we sort it it should be the
+exact same string and it is so now let's
+get into the code of this solution okay
+so now you can see that these were the
+two solutions we originally came up with
+now let's do the third and final
+solution
+we can just run the sort function on s
+and the sort function
+the built-in sort functions at least in
+python on t as well and if they're
+exactly equal it'll return true if
+they're not equal it will return false
+let's run it to make sure that it works
+and on the left you can see yes it does
+it's relatively efficient but
+technically it's not as efficient as the
+two previous solutions that we came up
+with below and who knows maybe your
+interviewer will actually want you to
+write out your own sorting function for
+this but i really hope that this was
+helpful if it was please like and
+subscribe it supports the channel a lot
+consider checking out my patreon where
+you can further support the channel and
+hopefully i'll see you pretty soon

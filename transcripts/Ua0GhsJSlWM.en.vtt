@@ -1,0 +1,4568 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.589 align:start position:0%
+ 
+hey<00:00:00.160><c> everyone</c><00:00:00.640><c> welcome</c><00:00:01.040><c> back</c><00:00:01.280><c> and</c><00:00:01.360><c> let's</c>
+
+00:00:01.589 --> 00:00:01.599 align:start position:0%
+hey everyone welcome back and let's
+ 
+
+00:00:01.599 --> 00:00:03.669 align:start position:0%
+hey everyone welcome back and let's
+write<00:00:01.839><c> some</c><00:00:02.000><c> more</c><00:00:02.240><c> neat</c><00:00:02.560><c> code</c><00:00:02.879><c> today</c><00:00:03.120><c> so</c><00:00:03.360><c> today</c>
+
+00:00:03.669 --> 00:00:03.679 align:start position:0%
+write some more neat code today so today
+ 
+
+00:00:03.679 --> 00:00:04.470 align:start position:0%
+write some more neat code today so today
+let's<00:00:04.000><c> solve</c>
+
+00:00:04.470 --> 00:00:04.480 align:start position:0%
+let's solve
+ 
+
+00:00:04.480 --> 00:00:07.269 align:start position:0%
+let's solve
+longest<00:00:05.120><c> common</c><00:00:05.600><c> subsequence</c><00:00:06.480><c> a</c><00:00:06.720><c> dynamic</c>
+
+00:00:07.269 --> 00:00:07.279 align:start position:0%
+longest common subsequence a dynamic
+ 
+
+00:00:07.279 --> 00:00:08.710 align:start position:0%
+longest common subsequence a dynamic
+programming<00:00:07.839><c> problem</c>
+
+00:00:08.710 --> 00:00:08.720 align:start position:0%
+programming problem
+ 
+
+00:00:08.720 --> 00:00:10.549 align:start position:0%
+programming problem
+and<00:00:08.960><c> this</c><00:00:09.200><c> is</c><00:00:09.519><c> pretty</c><00:00:09.760><c> much</c><00:00:09.920><c> one</c><00:00:10.080><c> of</c><00:00:10.160><c> the</c><00:00:10.320><c> most</c>
+
+00:00:10.549 --> 00:00:10.559 align:start position:0%
+and this is pretty much one of the most
+ 
+
+00:00:10.559 --> 00:00:12.709 align:start position:0%
+and this is pretty much one of the most
+popular<00:00:11.040><c> dynamic</c><00:00:11.599><c> programming</c><00:00:12.160><c> problems</c><00:00:12.559><c> so</c>
+
+00:00:12.709 --> 00:00:12.719 align:start position:0%
+popular dynamic programming problems so
+ 
+
+00:00:12.719 --> 00:00:13.589 align:start position:0%
+popular dynamic programming problems so
+we<00:00:12.880><c> are</c><00:00:13.040><c> given</c>
+
+00:00:13.589 --> 00:00:13.599 align:start position:0%
+we are given
+ 
+
+00:00:13.599 --> 00:00:16.790 align:start position:0%
+we are given
+two<00:00:14.160><c> strings</c><00:00:15.120><c> text</c><00:00:15.360><c> 1</c><00:00:15.759><c> and</c><00:00:15.920><c> text</c><00:00:16.320><c> 2</c>
+
+00:00:16.790 --> 00:00:16.800 align:start position:0%
+two strings text 1 and text 2
+ 
+
+00:00:16.800 --> 00:00:19.910 align:start position:0%
+two strings text 1 and text 2
+and<00:00:17.119><c> we</c><00:00:17.279><c> just</c><00:00:17.600><c> want</c><00:00:17.840><c> to</c><00:00:18.000><c> return</c><00:00:18.560><c> the</c><00:00:18.960><c> length</c><00:00:19.680><c> of</c>
+
+00:00:19.910 --> 00:00:19.920 align:start position:0%
+and we just want to return the length of
+ 
+
+00:00:19.920 --> 00:00:21.189 align:start position:0%
+and we just want to return the length of
+the<00:00:20.240><c> longest</c>
+
+00:00:21.189 --> 00:00:21.199 align:start position:0%
+the longest
+ 
+
+00:00:21.199 --> 00:00:24.710 align:start position:0%
+the longest
+common<00:00:21.840><c> subsequence</c><00:00:22.960><c> between</c><00:00:23.920><c> these</c>
+
+00:00:24.710 --> 00:00:24.720 align:start position:0%
+common subsequence between these
+ 
+
+00:00:24.720 --> 00:00:27.509 align:start position:0%
+common subsequence between these
+two<00:00:25.119><c> strings</c><00:00:26.400><c> and</c><00:00:26.560><c> you</c><00:00:26.640><c> might</c><00:00:26.880><c> remember</c><00:00:27.279><c> from</c>
+
+00:00:27.509 --> 00:00:27.519 align:start position:0%
+two strings and you might remember from
+ 
+
+00:00:27.519 --> 00:00:29.109 align:start position:0%
+two strings and you might remember from
+my<00:00:27.680><c> last</c><00:00:28.000><c> video</c><00:00:28.400><c> where</c><00:00:28.640><c> we</c>
+
+00:00:29.109 --> 00:00:29.119 align:start position:0%
+my last video where we
+ 
+
+00:00:29.119 --> 00:00:31.429 align:start position:0%
+my last video where we
+learned<00:00:29.519><c> basically</c><00:00:29.920><c> what</c><00:00:30.080><c> a</c><00:00:30.240><c> sub</c><00:00:30.480><c> sequence</c><00:00:31.119><c> is</c>
+
+00:00:31.429 --> 00:00:31.439 align:start position:0%
+learned basically what a sub sequence is
+ 
+
+00:00:31.439 --> 00:00:32.310 align:start position:0%
+learned basically what a sub sequence is
+it's<00:00:31.679><c> basically</c>
+
+00:00:32.310 --> 00:00:32.320 align:start position:0%
+it's basically
+ 
+
+00:00:32.320 --> 00:00:34.150 align:start position:0%
+it's basically
+uh<00:00:32.559><c> you</c><00:00:32.719><c> take</c><00:00:32.960><c> a</c><00:00:33.120><c> string</c><00:00:33.520><c> right</c><00:00:33.760><c> like</c><00:00:33.920><c> this</c>
+
+00:00:34.150 --> 00:00:34.160 align:start position:0%
+uh you take a string right like this
+ 
+
+00:00:34.160 --> 00:00:35.910 align:start position:0%
+uh you take a string right like this
+string<00:00:34.480><c> a</c><00:00:34.640><c> b</c><00:00:34.800><c> c</c><00:00:34.960><c> d</c><00:00:35.200><c> e</c>
+
+00:00:35.910 --> 00:00:35.920 align:start position:0%
+string a b c d e
+ 
+
+00:00:35.920 --> 00:00:38.229 align:start position:0%
+string a b c d e
+and<00:00:36.160><c> you</c><00:00:36.559><c> just</c><00:00:37.040><c> you</c><00:00:37.120><c> know</c><00:00:37.360><c> you</c><00:00:37.600><c> choose</c><00:00:37.920><c> a</c><00:00:38.000><c> few</c>
+
+00:00:38.229 --> 00:00:38.239 align:start position:0%
+and you just you know you choose a few
+ 
+
+00:00:38.239 --> 00:00:39.670 align:start position:0%
+and you just you know you choose a few
+characters<00:00:38.719><c> from</c><00:00:38.960><c> it</c>
+
+00:00:39.670 --> 00:00:39.680 align:start position:0%
+characters from it
+ 
+
+00:00:39.680 --> 00:00:41.990 align:start position:0%
+characters from it
+while<00:00:39.920><c> you</c><00:00:40.160><c> maintain</c><00:00:40.640><c> the</c><00:00:40.800><c> order</c><00:00:41.200><c> so</c><00:00:41.520><c> one</c><00:00:41.760><c> sub</c>
+
+00:00:41.990 --> 00:00:42.000 align:start position:0%
+while you maintain the order so one sub
+ 
+
+00:00:42.000 --> 00:00:44.069 align:start position:0%
+while you maintain the order so one sub
+sequence<00:00:42.399><c> from</c><00:00:42.559><c> this</c><00:00:42.719><c> string</c><00:00:43.040><c> could</c><00:00:43.200><c> be</c><00:00:43.440><c> a</c><00:00:43.760><c> b</c>
+
+00:00:44.069 --> 00:00:44.079 align:start position:0%
+sequence from this string could be a b
+ 
+
+00:00:44.079 --> 00:00:45.750 align:start position:0%
+sequence from this string could be a b
+right<00:00:44.239><c> you</c><00:00:44.399><c> take</c><00:00:44.800><c> the</c><00:00:44.960><c> first</c><00:00:45.200><c> two</c><00:00:45.440><c> characters</c>
+
+00:00:45.750 --> 00:00:45.760 align:start position:0%
+right you take the first two characters
+ 
+
+00:00:45.760 --> 00:00:47.430 align:start position:0%
+right you take the first two characters
+from<00:00:46.000><c> and</c><00:00:46.160><c> you</c><00:00:46.239><c> can</c><00:00:46.320><c> take</c><00:00:46.559><c> any</c><00:00:46.800><c> characters</c><00:00:47.280><c> you</c>
+
+00:00:47.430 --> 00:00:47.440 align:start position:0%
+from and you can take any characters you
+ 
+
+00:00:47.440 --> 00:00:49.430 align:start position:0%
+from and you can take any characters you
+can<00:00:47.760><c> choose</c><00:00:48.079><c> to</c><00:00:48.239><c> remove</c><00:00:48.719><c> any</c><00:00:48.879><c> characters</c><00:00:49.360><c> you</c>
+
+00:00:49.430 --> 00:00:49.440 align:start position:0%
+can choose to remove any characters you
+ 
+
+00:00:49.440 --> 00:00:50.869 align:start position:0%
+can choose to remove any characters you
+can<00:00:49.520><c> do</c><00:00:49.680><c> whatever</c><00:00:50.000><c> you</c><00:00:50.160><c> want</c>
+
+00:00:50.869 --> 00:00:50.879 align:start position:0%
+can do whatever you want
+ 
+
+00:00:50.879 --> 00:00:52.709 align:start position:0%
+can do whatever you want
+and<00:00:51.039><c> so</c><00:00:51.199><c> we're</c><00:00:51.440><c> looking</c><00:00:51.680><c> for</c><00:00:51.840><c> the</c><00:00:52.000><c> longest</c>
+
+00:00:52.709 --> 00:00:52.719 align:start position:0%
+and so we're looking for the longest
+ 
+
+00:00:52.719 --> 00:00:54.310 align:start position:0%
+and so we're looking for the longest
+common<00:00:53.280><c> subsequence</c>
+
+00:00:54.310 --> 00:00:54.320 align:start position:0%
+common subsequence
+ 
+
+00:00:54.320 --> 00:00:57.590 align:start position:0%
+common subsequence
+so<00:00:54.559><c> a</c><00:00:54.719><c> subsequence</c><00:00:55.840><c> that</c><00:00:56.160><c> is</c><00:00:56.559><c> in</c><00:00:57.120><c> both</c>
+
+00:00:57.590 --> 00:00:57.600 align:start position:0%
+so a subsequence that is in both
+ 
+
+00:00:57.600 --> 00:01:00.150 align:start position:0%
+so a subsequence that is in both
+of<00:00:57.760><c> the</c><00:00:58.079><c> strings</c><00:00:58.960><c> so</c><00:00:59.199><c> in</c><00:00:59.359><c> this</c><00:00:59.520><c> example</c><00:01:00.000><c> we</c>
+
+00:01:00.150 --> 00:01:00.160 align:start position:0%
+of the strings so in this example we
+ 
+
+00:01:00.160 --> 00:01:01.590 align:start position:0%
+of the strings so in this example we
+have<00:01:00.320><c> two</c><00:01:00.559><c> strings</c><00:01:00.960><c> right</c><00:01:01.199><c> a</c><00:01:01.359><c> b</c>
+
+00:01:01.590 --> 00:01:01.600 align:start position:0%
+have two strings right a b
+ 
+
+00:01:01.600 --> 00:01:05.830 align:start position:0%
+have two strings right a b
+c<00:01:01.920><c> d</c><00:01:02.239><c> e</c><00:01:02.879><c> and</c><00:01:03.120><c> a</c><00:01:03.440><c> c</c><00:01:03.840><c> e</c><00:01:04.479><c> so</c><00:01:04.799><c> what</c><00:01:05.040><c> is</c><00:01:05.119><c> the</c><00:01:05.439><c> longest</c>
+
+00:01:05.830 --> 00:01:05.840 align:start position:0%
+c d e and a c e so what is the longest
+ 
+
+00:01:05.840 --> 00:01:07.830 align:start position:0%
+c d e and a c e so what is the longest
+common<00:01:06.159><c> subsequence</c><00:01:06.799><c> between</c><00:01:07.119><c> these</c><00:01:07.439><c> well</c>
+
+00:01:07.830 --> 00:01:07.840 align:start position:0%
+common subsequence between these well
+ 
+
+00:01:07.840 --> 00:01:09.670 align:start position:0%
+common subsequence between these well
+when<00:01:08.000><c> you</c><00:01:08.080><c> take</c><00:01:08.240><c> a</c><00:01:08.320><c> look</c><00:01:08.560><c> at</c><00:01:08.640><c> the</c><00:01:08.720><c> first</c><00:01:08.960><c> string</c>
+
+00:01:09.670 --> 00:01:09.680 align:start position:0%
+when you take a look at the first string
+ 
+
+00:01:09.680 --> 00:01:12.310 align:start position:0%
+when you take a look at the first string
+you<00:01:09.920><c> see</c><00:01:10.159><c> that</c><00:01:10.560><c> hey</c><00:01:10.799><c> they</c><00:01:11.040><c> both</c><00:01:11.439><c> have</c><00:01:11.680><c> an</c><00:01:11.920><c> a</c>
+
+00:01:12.310 --> 00:01:12.320 align:start position:0%
+you see that hey they both have an a
+ 
+
+00:01:12.320 --> 00:01:14.230 align:start position:0%
+you see that hey they both have an a
+right<00:01:12.799><c> they</c><00:01:12.960><c> both</c><00:01:13.200><c> have</c><00:01:13.439><c> an</c><00:01:13.600><c> a</c><00:01:13.760><c> in</c><00:01:13.840><c> the</c><00:01:13.920><c> first</c>
+
+00:01:14.230 --> 00:01:14.240 align:start position:0%
+right they both have an a in the first
+ 
+
+00:01:14.240 --> 00:01:15.510 align:start position:0%
+right they both have an a in the first
+spot<00:01:14.479><c> so</c><00:01:14.640><c> that's</c><00:01:14.960><c> good</c>
+
+00:01:15.510 --> 00:01:15.520 align:start position:0%
+spot so that's good
+ 
+
+00:01:15.520 --> 00:01:17.190 align:start position:0%
+spot so that's good
+so<00:01:15.840><c> now</c><00:01:16.320><c> let's</c><00:01:16.479><c> look</c><00:01:16.640><c> at</c><00:01:16.720><c> the</c><00:01:16.880><c> second</c>
+
+00:01:17.190 --> 00:01:17.200 align:start position:0%
+so now let's look at the second
+ 
+
+00:01:17.200 --> 00:01:18.789 align:start position:0%
+so now let's look at the second
+character<00:01:17.920><c> b</c><00:01:18.320><c> and</c><00:01:18.479><c> c</c>
+
+00:01:18.789 --> 00:01:18.799 align:start position:0%
+character b and c
+ 
+
+00:01:18.799 --> 00:01:21.429 align:start position:0%
+character b and c
+well<00:01:19.200><c> this</c><00:01:19.439><c> has</c><00:01:19.600><c> a</c><00:01:19.680><c> b</c><00:01:20.080><c> but</c><00:01:20.560><c> the</c><00:01:20.799><c> second</c><00:01:21.119><c> string</c>
+
+00:01:21.429 --> 00:01:21.439 align:start position:0%
+well this has a b but the second string
+ 
+
+00:01:21.439 --> 00:01:22.630 align:start position:0%
+well this has a b but the second string
+does<00:01:21.600><c> not</c><00:01:21.759><c> have</c><00:01:21.920><c> a</c><00:01:22.080><c> b</c>
+
+00:01:22.630 --> 00:01:22.640 align:start position:0%
+does not have a b
+ 
+
+00:01:22.640 --> 00:01:24.950 align:start position:0%
+does not have a b
+but<00:01:22.799><c> the</c><00:01:22.960><c> second</c><00:01:23.280><c> string</c><00:01:23.600><c> does</c><00:01:23.759><c> have</c><00:01:24.000><c> a</c><00:01:24.159><c> c</c><00:01:24.799><c> and</c>
+
+00:01:24.950 --> 00:01:24.960 align:start position:0%
+but the second string does have a c and
+ 
+
+00:01:24.960 --> 00:01:26.789 align:start position:0%
+but the second string does have a c and
+we<00:01:25.200><c> also</c><00:01:25.360><c> have</c><00:01:25.520><c> a</c><00:01:25.680><c> c</c><00:01:25.920><c> over</c><00:01:26.159><c> here</c>
+
+00:01:26.789 --> 00:01:26.799 align:start position:0%
+we also have a c over here
+ 
+
+00:01:26.799 --> 00:01:28.870 align:start position:0%
+we also have a c over here
+but<00:01:26.960><c> the</c><00:01:27.119><c> second</c><00:01:27.439><c> string</c><00:01:27.680><c> does</c><00:01:27.840><c> not</c><00:01:28.000><c> have</c><00:01:28.240><c> a</c><00:01:28.479><c> d</c>
+
+00:01:28.870 --> 00:01:28.880 align:start position:0%
+but the second string does not have a d
+ 
+
+00:01:28.880 --> 00:01:30.789 align:start position:0%
+but the second string does not have a d
+right<00:01:29.119><c> so</c><00:01:29.360><c> we</c><00:01:29.520><c> can't</c><00:01:29.759><c> include</c><00:01:30.079><c> the</c><00:01:30.240><c> d</c><00:01:30.479><c> from</c><00:01:30.720><c> the</c>
+
+00:01:30.789 --> 00:01:30.799 align:start position:0%
+right so we can't include the d from the
+ 
+
+00:01:30.799 --> 00:01:32.630 align:start position:0%
+right so we can't include the d from the
+first<00:01:31.040><c> string</c><00:01:31.439><c> but</c><00:01:31.759><c> then</c><00:01:32.000><c> we</c><00:01:32.079><c> see</c><00:01:32.320><c> the</c><00:01:32.400><c> last</c>
+
+00:01:32.630 --> 00:01:32.640 align:start position:0%
+first string but then we see the last
+ 
+
+00:01:32.640 --> 00:01:34.310 align:start position:0%
+first string but then we see the last
+character<00:01:33.040><c> is</c><00:01:33.119><c> an</c><00:01:33.280><c> e</c><00:01:33.520><c> the</c><00:01:33.680><c> last</c><00:01:33.920><c> character</c><00:01:34.240><c> and</c>
+
+00:01:34.310 --> 00:01:34.320 align:start position:0%
+character is an e the last character and
+ 
+
+00:01:34.320 --> 00:01:36.069 align:start position:0%
+character is an e the last character and
+the<00:01:34.479><c> other</c><00:01:34.560><c> string</c><00:01:34.880><c> is</c><00:01:34.960><c> also</c><00:01:35.200><c> an</c><00:01:35.360><c> e</c><00:01:35.600><c> so</c>
+
+00:01:36.069 --> 00:01:36.079 align:start position:0%
+the other string is also an e so
+ 
+
+00:01:36.079 --> 00:01:38.630 align:start position:0%
+the other string is also an e so
+we<00:01:36.240><c> get</c><00:01:36.400><c> the</c><00:01:36.640><c> longest</c><00:01:37.360><c> common</c><00:01:37.759><c> subsequence</c><00:01:38.479><c> to</c>
+
+00:01:38.630 --> 00:01:38.640 align:start position:0%
+we get the longest common subsequence to
+ 
+
+00:01:38.640 --> 00:01:39.510 align:start position:0%
+we get the longest common subsequence to
+just<00:01:38.960><c> be</c>
+
+00:01:39.510 --> 00:01:39.520 align:start position:0%
+just be
+ 
+
+00:01:39.520 --> 00:01:42.389 align:start position:0%
+just be
+the<00:01:39.840><c> original</c><00:01:40.560><c> second</c><00:01:40.960><c> string</c><00:01:41.439><c> right</c><00:01:41.759><c> ace</c>
+
+00:01:42.389 --> 00:01:42.399 align:start position:0%
+the original second string right ace
+ 
+
+00:01:42.399 --> 00:01:43.350 align:start position:0%
+the original second string right ace
+because<00:01:42.799><c> ace</c>
+
+00:01:43.350 --> 00:01:43.360 align:start position:0%
+because ace
+ 
+
+00:01:43.360 --> 00:01:45.670 align:start position:0%
+because ace
+can<00:01:43.600><c> be</c><00:01:43.840><c> found</c><00:01:44.240><c> in</c><00:01:44.399><c> the</c><00:01:44.640><c> first</c><00:01:44.880><c> string</c><00:01:45.360><c> all</c><00:01:45.520><c> we</c>
+
+00:01:45.670 --> 00:01:45.680 align:start position:0%
+can be found in the first string all we
+ 
+
+00:01:45.680 --> 00:01:47.109 align:start position:0%
+can be found in the first string all we
+have<00:01:45.759><c> to</c><00:01:45.840><c> do</c><00:01:46.079><c> is</c><00:01:46.240><c> remove</c>
+
+00:01:47.109 --> 00:01:47.119 align:start position:0%
+have to do is remove
+ 
+
+00:01:47.119 --> 00:01:49.429 align:start position:0%
+have to do is remove
+a<00:01:47.280><c> couple</c><00:01:47.600><c> characters</c><00:01:48.159><c> right</c><00:01:48.560><c> remove</c><00:01:49.040><c> the</c><00:01:49.200><c> b</c>
+
+00:01:49.429 --> 00:01:49.439 align:start position:0%
+a couple characters right remove the b
+ 
+
+00:01:49.439 --> 00:01:50.710 align:start position:0%
+a couple characters right remove the b
+and<00:01:49.600><c> remove</c><00:01:49.920><c> the</c><00:01:50.159><c> d</c>
+
+00:01:50.710 --> 00:01:50.720 align:start position:0%
+and remove the d
+ 
+
+00:01:50.720 --> 00:01:53.990 align:start position:0%
+and remove the d
+then<00:01:50.960><c> we</c><00:01:51.119><c> get</c><00:01:51.439><c> a</c><00:01:51.840><c> subsequence</c><00:01:52.880><c> that</c><00:01:53.200><c> matches</c>
+
+00:01:53.990 --> 00:01:54.000 align:start position:0%
+then we get a subsequence that matches
+ 
+
+00:01:54.000 --> 00:01:56.469 align:start position:0%
+then we get a subsequence that matches
+the<00:01:54.159><c> second</c><00:01:54.479><c> string</c><00:01:55.040><c> so</c><00:01:55.200><c> the</c><00:01:55.520><c> length</c><00:01:56.000><c> of</c><00:01:56.240><c> the</c>
+
+00:01:56.469 --> 00:01:56.479 align:start position:0%
+the second string so the length of the
+ 
+
+00:01:56.479 --> 00:01:58.469 align:start position:0%
+the second string so the length of the
+longest<00:01:56.960><c> common</c><00:01:57.280><c> subsequence</c>
+
+00:01:58.469 --> 00:01:58.479 align:start position:0%
+longest common subsequence
+ 
+
+00:01:58.479 --> 00:02:01.990 align:start position:0%
+longest common subsequence
+is<00:01:59.119><c> three</c><00:02:00.079><c> so</c><00:02:00.399><c> how</c><00:02:00.640><c> can</c><00:02:00.880><c> we</c><00:02:01.119><c> solve</c><00:02:01.520><c> this</c>
+
+00:02:01.990 --> 00:02:02.000 align:start position:0%
+is three so how can we solve this
+ 
+
+00:02:02.000 --> 00:02:04.550 align:start position:0%
+is three so how can we solve this
+problem<00:02:02.560><c> well</c><00:02:03.040><c> as</c><00:02:03.280><c> i</c><00:02:03.439><c> mentioned</c><00:02:03.920><c> dynamic</c>
+
+00:02:04.550 --> 00:02:04.560 align:start position:0%
+problem well as i mentioned dynamic
+ 
+
+00:02:04.560 --> 00:02:05.429 align:start position:0%
+problem well as i mentioned dynamic
+programming
+
+00:02:05.429 --> 00:02:05.439 align:start position:0%
+programming
+ 
+
+00:02:05.439 --> 00:02:07.270 align:start position:0%
+programming
+is<00:02:05.600><c> the</c><00:02:05.840><c> most</c><00:02:06.079><c> efficient</c><00:02:06.479><c> way</c><00:02:06.640><c> to</c><00:02:06.799><c> solve</c><00:02:07.040><c> this</c>
+
+00:02:07.270 --> 00:02:07.280 align:start position:0%
+is the most efficient way to solve this
+ 
+
+00:02:07.280 --> 00:02:09.749 align:start position:0%
+is the most efficient way to solve this
+problem<00:02:07.759><c> but</c><00:02:08.000><c> before</c><00:02:08.399><c> we</c><00:02:08.640><c> even</c><00:02:08.959><c> get</c><00:02:09.280><c> into</c><00:02:09.599><c> the</c>
+
+00:02:09.749 --> 00:02:09.759 align:start position:0%
+problem but before we even get into the
+ 
+
+00:02:09.759 --> 00:02:11.430 align:start position:0%
+problem but before we even get into the
+dynamic<00:02:10.239><c> programming</c><00:02:10.720><c> solution</c>
+
+00:02:11.430 --> 00:02:11.440 align:start position:0%
+dynamic programming solution
+ 
+
+00:02:11.440 --> 00:02:13.750 align:start position:0%
+dynamic programming solution
+which<00:02:11.680><c> is</c><00:02:11.760><c> going</c><00:02:12.000><c> to</c><00:02:12.160><c> be</c><00:02:12.319><c> a</c><00:02:12.640><c> two</c><00:02:12.959><c> dimensional</c>
+
+00:02:13.750 --> 00:02:13.760 align:start position:0%
+which is going to be a two dimensional
+ 
+
+00:02:13.760 --> 00:02:15.350 align:start position:0%
+which is going to be a two dimensional
+dynamic<00:02:14.160><c> programming</c><00:02:14.720><c> solution</c>
+
+00:02:15.350 --> 00:02:15.360 align:start position:0%
+dynamic programming solution
+ 
+
+00:02:15.360 --> 00:02:17.350 align:start position:0%
+dynamic programming solution
+before<00:02:15.680><c> we</c><00:02:15.840><c> get</c><00:02:16.080><c> into</c><00:02:16.319><c> that</c><00:02:16.800><c> let's</c><00:02:17.040><c> just</c>
+
+00:02:17.350 --> 00:02:17.360 align:start position:0%
+before we get into that let's just
+ 
+
+00:02:17.360 --> 00:02:19.190 align:start position:0%
+before we get into that let's just
+notice<00:02:17.840><c> one</c><00:02:18.160><c> thing</c>
+
+00:02:19.190 --> 00:02:19.200 align:start position:0%
+notice one thing
+ 
+
+00:02:19.200 --> 00:02:20.949 align:start position:0%
+notice one thing
+do<00:02:19.360><c> you</c><00:02:19.599><c> so</c><00:02:19.840><c> let's</c><00:02:20.000><c> say</c><00:02:20.239><c> these</c><00:02:20.480><c> are</c><00:02:20.560><c> our</c><00:02:20.720><c> two</c>
+
+00:02:20.949 --> 00:02:20.959 align:start position:0%
+do you so let's say these are our two
+ 
+
+00:02:20.959 --> 00:02:22.790 align:start position:0%
+do you so let's say these are our two
+strings<00:02:21.280><c> right</c><00:02:21.520><c> string</c><00:02:21.760><c> one</c><00:02:22.000><c> and</c><00:02:22.080><c> string</c><00:02:22.400><c> two</c>
+
+00:02:22.790 --> 00:02:22.800 align:start position:0%
+strings right string one and string two
+ 
+
+00:02:22.800 --> 00:02:25.750 align:start position:0%
+strings right string one and string two
+does<00:02:23.040><c> it</c><00:02:23.280><c> at</c><00:02:23.520><c> least</c><00:02:24.000><c> make</c><00:02:24.400><c> sense</c><00:02:24.800><c> to</c><00:02:24.959><c> you</c><00:02:25.440><c> that</c>
+
+00:02:25.750 --> 00:02:25.760 align:start position:0%
+does it at least make sense to you that
+ 
+
+00:02:25.760 --> 00:02:26.470 align:start position:0%
+does it at least make sense to you that
+okay
+
+00:02:26.470 --> 00:02:26.480 align:start position:0%
+okay
+ 
+
+00:02:26.480 --> 00:02:28.390 align:start position:0%
+okay
+like<00:02:26.959><c> we</c><00:02:27.120><c> would</c><00:02:27.360><c> want</c><00:02:27.520><c> to</c><00:02:27.680><c> start</c><00:02:28.000><c> let's</c><00:02:28.160><c> say</c><00:02:28.319><c> at</c>
+
+00:02:28.390 --> 00:02:28.400 align:start position:0%
+like we would want to start let's say at
+ 
+
+00:02:28.400 --> 00:02:29.990 align:start position:0%
+like we would want to start let's say at
+the<00:02:28.560><c> beginning</c><00:02:28.879><c> of</c><00:02:29.040><c> both</c><00:02:29.280><c> strings</c><00:02:29.680><c> right</c><00:02:29.840><c> like</c>
+
+00:02:29.990 --> 00:02:30.000 align:start position:0%
+the beginning of both strings right like
+ 
+
+00:02:30.000 --> 00:02:31.830 align:start position:0%
+the beginning of both strings right like
+we're<00:02:30.239><c> looking</c><00:02:30.480><c> for</c><00:02:30.640><c> the</c><00:02:30.720><c> longest</c><00:02:31.120><c> common</c><00:02:31.519><c> sub</c>
+
+00:02:31.830 --> 00:02:31.840 align:start position:0%
+we're looking for the longest common sub
+ 
+
+00:02:31.840 --> 00:02:32.470 align:start position:0%
+we're looking for the longest common sub
+sequence
+
+00:02:32.470 --> 00:02:32.480 align:start position:0%
+sequence
+ 
+
+00:02:32.480 --> 00:02:33.830 align:start position:0%
+sequence
+it<00:02:32.560><c> might</c><00:02:32.800><c> just</c><00:02:32.959><c> be</c><00:02:33.120><c> that</c><00:02:33.360><c> both</c><00:02:33.599><c> of</c><00:02:33.680><c> the</c>
+
+00:02:33.830 --> 00:02:33.840 align:start position:0%
+it might just be that both of the
+ 
+
+00:02:33.840 --> 00:02:35.350 align:start position:0%
+it might just be that both of the
+strings<00:02:34.160><c> are</c><00:02:34.239><c> actually</c><00:02:34.640><c> equal</c><00:02:35.040><c> right</c><00:02:35.200><c> that</c>
+
+00:02:35.350 --> 00:02:35.360 align:start position:0%
+strings are actually equal right that
+ 
+
+00:02:35.360 --> 00:02:37.110 align:start position:0%
+strings are actually equal right that
+could<00:02:35.519><c> be</c><00:02:35.680><c> a</c><00:02:35.760><c> possible</c><00:02:36.160><c> way</c><00:02:36.400><c> so</c><00:02:36.640><c> let's</c>
+
+00:02:37.110 --> 00:02:37.120 align:start position:0%
+could be a possible way so let's
+ 
+
+00:02:37.120 --> 00:02:39.110 align:start position:0%
+could be a possible way so let's
+look<00:02:37.280><c> at</c><00:02:37.440><c> the</c><00:02:37.760><c> first</c><00:02:38.160><c> character</c><00:02:38.720><c> in</c><00:02:38.879><c> each</c>
+
+00:02:39.110 --> 00:02:39.120 align:start position:0%
+look at the first character in each
+ 
+
+00:02:39.120 --> 00:02:41.030 align:start position:0%
+look at the first character in each
+string<00:02:39.760><c> and</c><00:02:39.920><c> in</c><00:02:40.160><c> this</c><00:02:40.400><c> case</c>
+
+00:02:41.030 --> 00:02:41.040 align:start position:0%
+string and in this case
+ 
+
+00:02:41.040 --> 00:02:43.350 align:start position:0%
+string and in this case
+they<00:02:41.440><c> match</c><00:02:41.840><c> each</c><00:02:42.000><c> other</c><00:02:42.400><c> right</c><00:02:42.720><c> they're</c><00:02:42.959><c> the</c>
+
+00:02:43.350 --> 00:02:43.360 align:start position:0%
+they match each other right they're the
+ 
+
+00:02:43.360 --> 00:02:44.470 align:start position:0%
+they match each other right they're the
+same<00:02:43.760><c> character</c>
+
+00:02:44.470 --> 00:02:44.480 align:start position:0%
+same character
+ 
+
+00:02:44.480 --> 00:02:47.110 align:start position:0%
+same character
+so<00:02:44.959><c> does</c><00:02:45.200><c> it</c><00:02:45.360><c> at</c><00:02:45.680><c> least</c><00:02:46.160><c> make</c><00:02:46.480><c> sense</c><00:02:46.800><c> to</c><00:02:46.959><c> you</c>
+
+00:02:47.110 --> 00:02:47.120 align:start position:0%
+so does it at least make sense to you
+ 
+
+00:02:47.120 --> 00:02:47.750 align:start position:0%
+so does it at least make sense to you
+that<00:02:47.440><c> if</c>
+
+00:02:47.750 --> 00:02:47.760 align:start position:0%
+that if
+ 
+
+00:02:47.760 --> 00:02:49.910 align:start position:0%
+that if
+both<00:02:48.160><c> of</c><00:02:48.239><c> the</c><00:02:48.400><c> characters</c><00:02:49.040><c> match</c><00:02:49.360><c> each</c><00:02:49.599><c> other</c>
+
+00:02:49.910 --> 00:02:49.920 align:start position:0%
+both of the characters match each other
+ 
+
+00:02:49.920 --> 00:02:51.350 align:start position:0%
+both of the characters match each other
+right<00:02:50.160><c> the</c><00:02:50.319><c> first</c><00:02:50.640><c> characters</c>
+
+00:02:51.350 --> 00:02:51.360 align:start position:0%
+right the first characters
+ 
+
+00:02:51.360 --> 00:02:54.550 align:start position:0%
+right the first characters
+that<00:02:51.760><c> the</c><00:02:52.080><c> longest</c><00:02:52.560><c> common</c><00:02:52.879><c> subsequence</c><00:02:53.760><c> then</c>
+
+00:02:54.550 --> 00:02:54.560 align:start position:0%
+that the longest common subsequence then
+ 
+
+00:02:54.560 --> 00:02:57.509 align:start position:0%
+that the longest common subsequence then
+we<00:02:54.720><c> can</c><00:02:55.040><c> break</c><00:02:55.360><c> it</c><00:02:55.519><c> into</c><00:02:55.840><c> a</c><00:02:56.080><c> sub</c><00:02:56.480><c> problem</c><00:02:56.959><c> right</c>
+
+00:02:57.509 --> 00:02:57.519 align:start position:0%
+we can break it into a sub problem right
+ 
+
+00:02:57.519 --> 00:02:58.070 align:start position:0%
+we can break it into a sub problem right
+now
+
+00:02:58.070 --> 00:02:58.080 align:start position:0%
+now
+ 
+
+00:02:58.080 --> 00:03:00.229 align:start position:0%
+now
+the<00:02:58.400><c> new</c><00:02:58.720><c> problem</c><00:02:59.120><c> we're</c><00:02:59.360><c> looking</c><00:02:59.680><c> at</c><00:03:00.000><c> is</c>
+
+00:03:00.229 --> 00:03:00.239 align:start position:0%
+the new problem we're looking at is
+ 
+
+00:03:00.239 --> 00:03:02.630 align:start position:0%
+the new problem we're looking at is
+finding<00:03:00.560><c> the</c><00:03:00.800><c> longest</c><00:03:01.280><c> common</c><00:03:01.680><c> subsequence</c>
+
+00:03:02.630 --> 00:03:02.640 align:start position:0%
+finding the longest common subsequence
+ 
+
+00:03:02.640 --> 00:03:05.750 align:start position:0%
+finding the longest common subsequence
+between<00:03:03.360><c> the</c><00:03:03.599><c> remainder</c><00:03:04.560><c> of</c><00:03:04.800><c> both</c><00:03:05.200><c> strings</c>
+
+00:03:05.750 --> 00:03:05.760 align:start position:0%
+between the remainder of both strings
+ 
+
+00:03:05.760 --> 00:03:06.309 align:start position:0%
+between the remainder of both strings
+right
+
+00:03:06.309 --> 00:03:06.319 align:start position:0%
+right
+ 
+
+00:03:06.319 --> 00:03:09.350 align:start position:0%
+right
+plus<00:03:07.360><c> one</c><00:03:08.239><c> plus</c><00:03:08.720><c> one</c>
+
+00:03:09.350 --> 00:03:09.360 align:start position:0%
+plus one plus one
+ 
+
+00:03:09.360 --> 00:03:11.750 align:start position:0%
+plus one plus one
+because<00:03:10.000><c> we</c><00:03:10.319><c> see</c><00:03:10.480><c> that</c><00:03:10.640><c> the</c><00:03:11.040><c> first</c><00:03:11.440><c> two</c>
+
+00:03:11.750 --> 00:03:11.760 align:start position:0%
+because we see that the first two
+ 
+
+00:03:11.760 --> 00:03:12.470 align:start position:0%
+because we see that the first two
+characters
+
+00:03:12.470 --> 00:03:12.480 align:start position:0%
+characters
+ 
+
+00:03:12.480 --> 00:03:14.630 align:start position:0%
+characters
+are<00:03:12.720><c> equal</c><00:03:13.040><c> right</c><00:03:13.360><c> that's</c><00:03:13.680><c> where</c><00:03:14.000><c> our</c><00:03:14.319><c> one</c>
+
+00:03:14.630 --> 00:03:14.640 align:start position:0%
+are equal right that's where our one
+ 
+
+00:03:14.640 --> 00:03:15.670 align:start position:0%
+are equal right that's where our one
+comes<00:03:14.959><c> from</c><00:03:15.280><c> right</c>
+
+00:03:15.670 --> 00:03:15.680 align:start position:0%
+comes from right
+ 
+
+00:03:15.680 --> 00:03:17.430 align:start position:0%
+comes from right
+because<00:03:15.920><c> we</c><00:03:16.080><c> know</c><00:03:16.319><c> that</c><00:03:16.480><c> the</c><00:03:16.640><c> longest</c><00:03:17.040><c> common</c>
+
+00:03:17.430 --> 00:03:17.440 align:start position:0%
+because we know that the longest common
+ 
+
+00:03:17.440 --> 00:03:18.949 align:start position:0%
+because we know that the longest common
+subsequence<00:03:18.159><c> is</c><00:03:18.319><c> at</c><00:03:18.560><c> least</c>
+
+00:03:18.949 --> 00:03:18.959 align:start position:0%
+subsequence is at least
+ 
+
+00:03:18.959 --> 00:03:21.350 align:start position:0%
+subsequence is at least
+going<00:03:19.200><c> to</c><00:03:19.360><c> be</c><00:03:19.680><c> one</c><00:03:20.159><c> because</c><00:03:20.480><c> we</c><00:03:20.720><c> found</c><00:03:21.120><c> a</c>
+
+00:03:21.350 --> 00:03:21.360 align:start position:0%
+going to be one because we found a
+ 
+
+00:03:21.360 --> 00:03:21.990 align:start position:0%
+going to be one because we found a
+matching
+
+00:03:21.990 --> 00:03:22.000 align:start position:0%
+matching
+ 
+
+00:03:22.000 --> 00:03:24.309 align:start position:0%
+matching
+pair<00:03:22.319><c> of</c><00:03:22.560><c> characters</c><00:03:23.120><c> right</c><00:03:23.599><c> and</c><00:03:23.840><c> then</c><00:03:24.080><c> we</c>
+
+00:03:24.309 --> 00:03:24.319 align:start position:0%
+pair of characters right and then we
+ 
+
+00:03:24.319 --> 00:03:25.190 align:start position:0%
+pair of characters right and then we
+have<00:03:24.720><c> a</c>
+
+00:03:25.190 --> 00:03:25.200 align:start position:0%
+have a
+ 
+
+00:03:25.200 --> 00:03:28.470 align:start position:0%
+have a
+sub<00:03:26.080><c> problem</c><00:03:26.879><c> right</c><00:03:27.120><c> and</c><00:03:27.280><c> you</c><00:03:27.760><c> you</c><00:03:27.920><c> might</c><00:03:28.239><c> know</c>
+
+00:03:28.470 --> 00:03:28.480 align:start position:0%
+sub problem right and you you might know
+ 
+
+00:03:28.480 --> 00:03:28.869 align:start position:0%
+sub problem right and you you might know
+that
+
+00:03:28.869 --> 00:03:28.879 align:start position:0%
+that
+ 
+
+00:03:28.879 --> 00:03:30.789 align:start position:0%
+that
+that's<00:03:29.200><c> what</c><00:03:29.360><c> dynamic</c><00:03:29.840><c> programming</c><00:03:30.319><c> is</c><00:03:30.560><c> all</c>
+
+00:03:30.789 --> 00:03:30.799 align:start position:0%
+that's what dynamic programming is all
+ 
+
+00:03:30.799 --> 00:03:32.309 align:start position:0%
+that's what dynamic programming is all
+about<00:03:31.440><c> finding</c><00:03:31.920><c> the</c>
+
+00:03:32.309 --> 00:03:32.319 align:start position:0%
+about finding the
+ 
+
+00:03:32.319 --> 00:03:35.589 align:start position:0%
+about finding the
+sub<00:03:32.879><c> problem</c><00:03:33.840><c> now</c><00:03:34.080><c> what</c><00:03:34.319><c> if</c><00:03:34.480><c> this</c><00:03:34.799><c> character</c>
+
+00:03:35.589 --> 00:03:35.599 align:start position:0%
+sub problem now what if this character
+ 
+
+00:03:35.599 --> 00:03:38.710 align:start position:0%
+sub problem now what if this character
+was<00:03:36.239><c> a</c><00:03:36.720><c> b</c><00:03:37.440><c> right</c><00:03:38.000><c> and</c><00:03:38.159><c> this</c><00:03:38.319><c> is</c><00:03:38.480><c> an</c>
+
+00:03:38.710 --> 00:03:38.720 align:start position:0%
+was a b right and this is an
+ 
+
+00:03:38.720 --> 00:03:40.789 align:start position:0%
+was a b right and this is an
+a<00:03:39.200><c> so</c><00:03:39.440><c> clearly</c><00:03:39.840><c> they're</c><00:03:40.080><c> not</c><00:03:40.319><c> the</c><00:03:40.480><c> same</c>
+
+00:03:40.789 --> 00:03:40.799 align:start position:0%
+a so clearly they're not the same
+ 
+
+00:03:40.799 --> 00:03:42.149 align:start position:0%
+a so clearly they're not the same
+character<00:03:41.200><c> what</c><00:03:41.360><c> would</c><00:03:41.599><c> we</c><00:03:41.760><c> do</c>
+
+00:03:42.149 --> 00:03:42.159 align:start position:0%
+character what would we do
+ 
+
+00:03:42.159 --> 00:03:44.949 align:start position:0%
+character what would we do
+then<00:03:42.720><c> well</c><00:03:43.200><c> we</c><00:03:43.519><c> can't</c><00:03:43.920><c> do</c><00:03:44.159><c> what</c><00:03:44.319><c> we</c><00:03:44.480><c> just</c><00:03:44.720><c> did</c>
+
+00:03:44.949 --> 00:03:44.959 align:start position:0%
+then well we can't do what we just did
+ 
+
+00:03:44.959 --> 00:03:47.190 align:start position:0%
+then well we can't do what we just did
+we<00:03:45.120><c> can't</c><00:03:45.440><c> add</c><00:03:45.840><c> one</c><00:03:46.080><c> and</c><00:03:46.239><c> then</c><00:03:46.480><c> find</c>
+
+00:03:47.190 --> 00:03:47.200 align:start position:0%
+we can't add one and then find
+ 
+
+00:03:47.200 --> 00:03:50.070 align:start position:0%
+we can't add one and then find
+the<00:03:48.080><c> longest</c><00:03:48.640><c> common</c><00:03:48.959><c> subsequence</c><00:03:49.519><c> between</c>
+
+00:03:50.070 --> 00:03:50.080 align:start position:0%
+the longest common subsequence between
+ 
+
+00:03:50.080 --> 00:03:50.630 align:start position:0%
+the longest common subsequence between
+uh<00:03:50.319><c> the</c>
+
+00:03:50.630 --> 00:03:50.640 align:start position:0%
+uh the
+ 
+
+00:03:50.640 --> 00:03:52.149 align:start position:0%
+uh the
+the<00:03:50.799><c> remainder</c><00:03:51.200><c> of</c><00:03:51.280><c> the</c><00:03:51.440><c> two</c><00:03:51.599><c> strings</c><00:03:51.920><c> we</c>
+
+00:03:52.149 --> 00:03:52.159 align:start position:0%
+the remainder of the two strings we
+ 
+
+00:03:52.159 --> 00:03:54.229 align:start position:0%
+the remainder of the two strings we
+can't<00:03:52.560><c> do</c><00:03:52.799><c> that</c><00:03:53.519><c> but</c>
+
+00:03:54.229 --> 00:03:54.239 align:start position:0%
+can't do that but
+ 
+
+00:03:54.239 --> 00:03:56.630 align:start position:0%
+can't do that but
+but<00:03:54.400><c> we</c><00:03:54.640><c> can</c><00:03:54.879><c> break</c><00:03:55.200><c> it</c><00:03:55.360><c> into</c><00:03:55.599><c> a</c><00:03:55.920><c> different</c><00:03:56.400><c> sub</c>
+
+00:03:56.630 --> 00:03:56.640 align:start position:0%
+but we can break it into a different sub
+ 
+
+00:03:56.640 --> 00:03:57.990 align:start position:0%
+but we can break it into a different sub
+problem<00:03:57.040><c> we</c><00:03:57.200><c> can</c><00:03:57.360><c> say</c><00:03:57.599><c> well</c>
+
+00:03:57.990 --> 00:03:58.000 align:start position:0%
+problem we can say well
+ 
+
+00:03:58.000 --> 00:03:59.830 align:start position:0%
+problem we can say well
+it's<00:03:58.319><c> possible</c><00:03:58.799><c> that</c><00:03:58.959><c> the</c><00:03:59.120><c> longest</c><00:03:59.519><c> common</c>
+
+00:03:59.830 --> 00:03:59.840 align:start position:0%
+it's possible that the longest common
+ 
+
+00:03:59.840 --> 00:04:01.910 align:start position:0%
+it's possible that the longest common
+subsequence<00:04:00.560><c> could</c><00:04:00.799><c> be</c><00:04:00.959><c> between</c>
+
+00:04:01.910 --> 00:04:01.920 align:start position:0%
+subsequence could be between
+ 
+
+00:04:01.920 --> 00:04:04.949 align:start position:0%
+subsequence could be between
+these<00:04:02.560><c> two</c><00:04:02.879><c> strings</c><00:04:03.360><c> right</c><00:04:03.920><c> or</c><00:04:04.480><c> it</c><00:04:04.640><c> could</c><00:04:04.799><c> be</c>
+
+00:04:04.949 --> 00:04:04.959 align:start position:0%
+these two strings right or it could be
+ 
+
+00:04:04.959 --> 00:04:05.910 align:start position:0%
+these two strings right or it could be
+between
+
+00:04:05.910 --> 00:04:05.920 align:start position:0%
+between
+ 
+
+00:04:05.920 --> 00:04:08.789 align:start position:0%
+between
+this<00:04:06.239><c> string</c><00:04:06.959><c> and</c><00:04:07.680><c> this</c><00:04:07.920><c> string</c><00:04:08.239><c> so</c><00:04:08.400><c> this</c><00:04:08.640><c> is</c>
+
+00:04:08.789 --> 00:04:08.799 align:start position:0%
+this string and this string so this is
+ 
+
+00:04:08.799 --> 00:04:09.190 align:start position:0%
+this string and this string so this is
+just
+
+00:04:09.190 --> 00:04:09.200 align:start position:0%
+just
+ 
+
+00:04:09.200 --> 00:04:12.070 align:start position:0%
+just
+a<00:04:09.439><c> little</c><00:04:09.760><c> bit</c><00:04:10.000><c> of</c><00:04:10.239><c> an</c><00:04:10.400><c> explanation</c><00:04:11.360><c> before</c><00:04:11.840><c> i</c>
+
+00:04:12.070 --> 00:04:12.080 align:start position:0%
+a little bit of an explanation before i
+ 
+
+00:04:12.080 --> 00:04:14.229 align:start position:0%
+a little bit of an explanation before i
+show<00:04:12.239><c> you</c><00:04:12.480><c> the</c><00:04:12.720><c> actual</c><00:04:13.200><c> dynamic</c><00:04:13.680><c> programming</c>
+
+00:04:14.229 --> 00:04:14.239 align:start position:0%
+show you the actual dynamic programming
+ 
+
+00:04:14.239 --> 00:04:15.429 align:start position:0%
+show you the actual dynamic programming
+solution<00:04:14.799><c> right</c>
+
+00:04:15.429 --> 00:04:15.439 align:start position:0%
+solution right
+ 
+
+00:04:15.439 --> 00:04:17.990 align:start position:0%
+solution right
+basically<00:04:15.920><c> what</c><00:04:16.079><c> we</c><00:04:16.320><c> found</c><00:04:16.639><c> out</c><00:04:16.959><c> is</c><00:04:17.440><c> that</c>
+
+00:04:17.990 --> 00:04:18.000 align:start position:0%
+basically what we found out is that
+ 
+
+00:04:18.000 --> 00:04:18.870 align:start position:0%
+basically what we found out is that
+based<00:04:18.400><c> on</c>
+
+00:04:18.870 --> 00:04:18.880 align:start position:0%
+based on
+ 
+
+00:04:18.880 --> 00:04:20.550 align:start position:0%
+based on
+comparing<00:04:19.359><c> the</c><00:04:19.519><c> first</c><00:04:19.840><c> two</c><00:04:20.079><c> characters</c>
+
+00:04:20.550 --> 00:04:20.560 align:start position:0%
+comparing the first two characters
+ 
+
+00:04:20.560 --> 00:04:22.230 align:start position:0%
+comparing the first two characters
+whether<00:04:20.880><c> they're</c><00:04:21.120><c> equal</c><00:04:21.440><c> or</c><00:04:21.519><c> not</c><00:04:21.759><c> equal</c><00:04:22.079><c> we</c>
+
+00:04:22.230 --> 00:04:22.240 align:start position:0%
+whether they're equal or not equal we
+ 
+
+00:04:22.240 --> 00:04:23.510 align:start position:0%
+whether they're equal or not equal we
+can<00:04:22.479><c> break</c><00:04:22.800><c> up</c>
+
+00:04:23.510 --> 00:04:23.520 align:start position:0%
+can break up
+ 
+
+00:04:23.520 --> 00:04:25.990 align:start position:0%
+can break up
+the<00:04:23.759><c> problem</c><00:04:24.240><c> into</c><00:04:24.720><c> sub</c><00:04:25.040><c> problems</c><00:04:25.600><c> and</c><00:04:25.759><c> then</c>
+
+00:04:25.990 --> 00:04:26.000 align:start position:0%
+the problem into sub problems and then
+ 
+
+00:04:26.000 --> 00:04:26.870 align:start position:0%
+the problem into sub problems and then
+solve<00:04:26.320><c> those</c><00:04:26.560><c> sub</c>
+
+00:04:26.870 --> 00:04:26.880 align:start position:0%
+solve those sub
+ 
+
+00:04:26.880 --> 00:04:29.270 align:start position:0%
+solve those sub
+problems<00:04:27.520><c> so</c><00:04:27.680><c> take</c><00:04:28.000><c> a</c><00:04:28.080><c> look</c><00:04:28.320><c> what</c><00:04:28.479><c> i</c><00:04:28.639><c> just</c><00:04:28.960><c> did</c>
+
+00:04:29.270 --> 00:04:29.280 align:start position:0%
+problems so take a look what i just did
+ 
+
+00:04:29.280 --> 00:04:30.070 align:start position:0%
+problems so take a look what i just did
+i<00:04:29.440><c> took</c><00:04:29.759><c> the</c>
+
+00:04:30.070 --> 00:04:30.080 align:start position:0%
+i took the
+ 
+
+00:04:30.080 --> 00:04:32.710 align:start position:0%
+i took the
+two<00:04:30.400><c> input</c><00:04:30.800><c> strings</c><00:04:31.199><c> right</c><00:04:31.440><c> string</c><00:04:31.840><c> one</c><00:04:32.479><c> and</c>
+
+00:04:32.710 --> 00:04:32.720 align:start position:0%
+two input strings right string one and
+ 
+
+00:04:32.720 --> 00:04:33.430 align:start position:0%
+two input strings right string one and
+string<00:04:33.120><c> two</c>
+
+00:04:33.430 --> 00:04:33.440 align:start position:0%
+string two
+ 
+
+00:04:33.440 --> 00:04:36.070 align:start position:0%
+string two
+and<00:04:33.600><c> i</c><00:04:34.240><c> wrote</c><00:04:34.560><c> them</c><00:04:35.199><c> in</c><00:04:35.360><c> a</c><00:04:35.520><c> different</c><00:04:35.840><c> way</c>
+
+00:04:36.070 --> 00:04:36.080 align:start position:0%
+and i wrote them in a different way
+ 
+
+00:04:36.080 --> 00:04:36.550 align:start position:0%
+and i wrote them in a different way
+right<00:04:36.320><c> i</c>
+
+00:04:36.550 --> 00:04:36.560 align:start position:0%
+right i
+ 
+
+00:04:36.560 --> 00:04:38.870 align:start position:0%
+right i
+said<00:04:36.880><c> that</c><00:04:37.040><c> this</c><00:04:37.360><c> is</c><00:04:37.600><c> a</c><00:04:37.840><c> two</c><00:04:38.160><c> dimensional</c>
+
+00:04:38.870 --> 00:04:38.880 align:start position:0%
+said that this is a two dimensional
+ 
+
+00:04:38.880 --> 00:04:40.469 align:start position:0%
+said that this is a two dimensional
+dynamic<00:04:39.360><c> programming</c><00:04:39.919><c> problem</c>
+
+00:04:40.469 --> 00:04:40.479 align:start position:0%
+dynamic programming problem
+ 
+
+00:04:40.479 --> 00:04:43.510 align:start position:0%
+dynamic programming problem
+and<00:04:40.639><c> you</c><00:04:40.800><c> might</c><00:04:41.120><c> know</c><00:04:41.440><c> that</c><00:04:42.000><c> a</c><00:04:42.400><c> grid</c><00:04:42.880><c> a</c><00:04:43.120><c> 2d</c>
+
+00:04:43.510 --> 00:04:43.520 align:start position:0%
+and you might know that a grid a 2d
+ 
+
+00:04:43.520 --> 00:04:46.310 align:start position:0%
+and you might know that a grid a 2d
+grid<00:04:43.840><c> like</c><00:04:44.000><c> this</c><00:04:44.320><c> is</c><00:04:44.639><c> commonly</c><00:04:45.280><c> used</c><00:04:45.600><c> to</c><00:04:45.919><c> solve</c>
+
+00:04:46.310 --> 00:04:46.320 align:start position:0%
+grid like this is commonly used to solve
+ 
+
+00:04:46.320 --> 00:04:48.070 align:start position:0%
+grid like this is commonly used to solve
+these<00:04:46.639><c> types</c><00:04:46.960><c> of</c><00:04:47.040><c> dynamic</c><00:04:47.600><c> programming</c>
+
+00:04:48.070 --> 00:04:48.080 align:start position:0%
+these types of dynamic programming
+ 
+
+00:04:48.080 --> 00:04:49.030 align:start position:0%
+these types of dynamic programming
+problems
+
+00:04:49.030 --> 00:04:49.040 align:start position:0%
+problems
+ 
+
+00:04:49.040 --> 00:04:51.830 align:start position:0%
+problems
+so<00:04:49.360><c> notice</c><00:04:49.759><c> that</c><00:04:50.000><c> for</c><00:04:50.400><c> each</c><00:04:50.960><c> character</c><00:04:51.680><c> in</c>
+
+00:04:51.830 --> 00:04:51.840 align:start position:0%
+so notice that for each character in
+ 
+
+00:04:51.840 --> 00:04:52.310 align:start position:0%
+so notice that for each character in
+both
+
+00:04:52.310 --> 00:04:52.320 align:start position:0%
+both
+ 
+
+00:04:52.320 --> 00:04:55.110 align:start position:0%
+both
+strings<00:04:53.120><c> there's</c><00:04:53.600><c> a</c><00:04:54.080><c> square</c><00:04:54.560><c> right</c><00:04:54.880><c> a</c>
+
+00:04:55.110 --> 00:04:55.120 align:start position:0%
+strings there's a square right a
+ 
+
+00:04:55.120 --> 00:04:55.749 align:start position:0%
+strings there's a square right a
+position
+
+00:04:55.749 --> 00:04:55.759 align:start position:0%
+position
+ 
+
+00:04:55.759 --> 00:04:59.030 align:start position:0%
+position
+a<00:04:56.080><c> cell</c><00:04:56.479><c> that</c><00:04:56.720><c> we</c><00:04:56.880><c> can</c><00:04:57.440><c> put</c><00:04:57.680><c> a</c><00:04:58.080><c> value</c><00:04:58.639><c> in</c><00:04:58.880><c> we're</c>
+
+00:04:59.030 --> 00:04:59.040 align:start position:0%
+a cell that we can put a value in we're
+ 
+
+00:04:59.040 --> 00:05:01.510 align:start position:0%
+a cell that we can put a value in we're
+going<00:04:59.120><c> to</c><00:04:59.199><c> put</c><00:04:59.360><c> a</c><00:04:59.600><c> value</c><00:05:00.160><c> in</c><00:05:00.400><c> each</c><00:05:00.639><c> of</c><00:05:00.800><c> these</c>
+
+00:05:01.510 --> 00:05:01.520 align:start position:0%
+going to put a value in each of these
+ 
+
+00:05:01.520 --> 00:05:03.670 align:start position:0%
+going to put a value in each of these
+cells<00:05:02.320><c> and</c><00:05:02.479><c> so</c><00:05:02.639><c> let's</c><00:05:02.880><c> just</c><00:05:03.120><c> start</c><00:05:03.440><c> at</c><00:05:03.600><c> the</c>
+
+00:05:03.670 --> 00:05:03.680 align:start position:0%
+cells and so let's just start at the
+ 
+
+00:05:03.680 --> 00:05:04.710 align:start position:0%
+cells and so let's just start at the
+beginning<00:05:04.080><c> like</c><00:05:04.320><c> we</c>
+
+00:05:04.710 --> 00:05:04.720 align:start position:0%
+beginning like we
+ 
+
+00:05:04.720 --> 00:05:07.510 align:start position:0%
+beginning like we
+did<00:05:05.039><c> right</c><00:05:05.360><c> so</c><00:05:05.520><c> let's</c><00:05:05.919><c> start</c><00:05:06.240><c> at</c><00:05:06.479><c> the</c><00:05:06.800><c> first</c>
+
+00:05:07.510 --> 00:05:07.520 align:start position:0%
+did right so let's start at the first
+ 
+
+00:05:07.520 --> 00:05:08.629 align:start position:0%
+did right so let's start at the first
+characters<00:05:08.240><c> right</c>
+
+00:05:08.629 --> 00:05:08.639 align:start position:0%
+characters right
+ 
+
+00:05:08.639 --> 00:05:11.029 align:start position:0%
+characters right
+what<00:05:08.880><c> we're</c><00:05:09.120><c> trying</c><00:05:09.360><c> to</c><00:05:09.600><c> do</c><00:05:09.919><c> is</c><00:05:10.400><c> for</c><00:05:10.720><c> these</c>
+
+00:05:11.029 --> 00:05:11.039 align:start position:0%
+what we're trying to do is for these
+ 
+
+00:05:11.039 --> 00:05:12.950 align:start position:0%
+what we're trying to do is for these
+strings<00:05:11.600><c> find</c><00:05:11.919><c> the</c><00:05:12.160><c> longest</c><00:05:12.639><c> common</c>
+
+00:05:12.950 --> 00:05:12.960 align:start position:0%
+strings find the longest common
+ 
+
+00:05:12.960 --> 00:05:13.830 align:start position:0%
+strings find the longest common
+subsequence
+
+00:05:13.830 --> 00:05:13.840 align:start position:0%
+subsequence
+ 
+
+00:05:13.840 --> 00:05:17.029 align:start position:0%
+subsequence
+between<00:05:14.320><c> the</c><00:05:14.560><c> entire</c><00:05:15.199><c> strings</c><00:05:15.680><c> right</c><00:05:16.160><c> so</c><00:05:16.800><c> what</c>
+
+00:05:17.029 --> 00:05:17.039 align:start position:0%
+between the entire strings right so what
+ 
+
+00:05:17.039 --> 00:05:19.110 align:start position:0%
+between the entire strings right so what
+we're<00:05:17.199><c> going</c><00:05:17.280><c> to</c><00:05:17.360><c> do</c><00:05:17.600><c> is</c><00:05:17.840><c> put</c><00:05:18.080><c> that</c><00:05:18.400><c> value</c>
+
+00:05:19.110 --> 00:05:19.120 align:start position:0%
+we're going to do is put that value
+ 
+
+00:05:19.120 --> 00:05:21.270 align:start position:0%
+we're going to do is put that value
+right<00:05:19.520><c> here</c><00:05:19.840><c> that's</c><00:05:20.160><c> what's</c><00:05:20.479><c> going</c><00:05:20.560><c> to</c><00:05:20.720><c> be</c><00:05:20.960><c> the</c>
+
+00:05:21.270 --> 00:05:21.280 align:start position:0%
+right here that's what's going to be the
+ 
+
+00:05:21.280 --> 00:05:22.870 align:start position:0%
+right here that's what's going to be the
+entire
+
+00:05:22.870 --> 00:05:22.880 align:start position:0%
+entire
+ 
+
+00:05:22.880 --> 00:05:25.110 align:start position:0%
+entire
+longest<00:05:23.280><c> common</c><00:05:23.680><c> subsequence</c><00:05:24.400><c> so</c><00:05:24.560><c> we</c><00:05:24.800><c> want</c><00:05:24.960><c> to</c>
+
+00:05:25.110 --> 00:05:25.120 align:start position:0%
+longest common subsequence so we want to
+ 
+
+00:05:25.120 --> 00:05:26.790 align:start position:0%
+longest common subsequence so we want to
+compute<00:05:25.520><c> the</c><00:05:25.680><c> value</c><00:05:26.000><c> that</c><00:05:26.160><c> goes</c><00:05:26.479><c> here</c><00:05:26.639><c> but</c>
+
+00:05:26.790 --> 00:05:26.800 align:start position:0%
+compute the value that goes here but
+ 
+
+00:05:26.800 --> 00:05:28.150 align:start position:0%
+compute the value that goes here but
+what<00:05:26.960><c> you're</c><00:05:27.199><c> going</c><00:05:27.280><c> to</c><00:05:27.440><c> find</c><00:05:27.759><c> is</c>
+
+00:05:28.150 --> 00:05:28.160 align:start position:0%
+what you're going to find is
+ 
+
+00:05:28.160 --> 00:05:30.710 align:start position:0%
+what you're going to find is
+to<00:05:28.320><c> do</c><00:05:28.560><c> that</c><00:05:28.800><c> we</c><00:05:29.039><c> need</c><00:05:29.199><c> to</c><00:05:29.440><c> solve</c><00:05:29.840><c> some</c><00:05:30.320><c> sub</c>
+
+00:05:30.710 --> 00:05:30.720 align:start position:0%
+to do that we need to solve some sub
+ 
+
+00:05:30.720 --> 00:05:31.510 align:start position:0%
+to do that we need to solve some sub
+problems
+
+00:05:31.510 --> 00:05:31.520 align:start position:0%
+problems
+ 
+
+00:05:31.520 --> 00:05:33.830 align:start position:0%
+problems
+and<00:05:31.680><c> then</c><00:05:32.240><c> you</c><00:05:32.400><c> know</c><00:05:32.639><c> continue</c><00:05:33.120><c> to</c><00:05:33.199><c> do</c><00:05:33.440><c> that</c>
+
+00:05:33.830 --> 00:05:33.840 align:start position:0%
+and then you know continue to do that
+ 
+
+00:05:33.840 --> 00:05:35.590 align:start position:0%
+and then you know continue to do that
+and<00:05:34.000><c> then</c><00:05:34.320><c> work</c><00:05:34.639><c> our</c><00:05:34.800><c> way</c><00:05:35.120><c> back</c>
+
+00:05:35.590 --> 00:05:35.600 align:start position:0%
+and then work our way back
+ 
+
+00:05:35.600 --> 00:05:39.510 align:start position:0%
+and then work our way back
+up<00:05:36.080><c> to</c><00:05:36.320><c> this</c><00:05:36.639><c> position</c><00:05:37.759><c> so</c><00:05:38.400><c> what</c><00:05:38.560><c> do</c><00:05:38.720><c> we</c><00:05:38.960><c> notice</c>
+
+00:05:39.510 --> 00:05:39.520 align:start position:0%
+up to this position so what do we notice
+ 
+
+00:05:39.520 --> 00:05:41.909 align:start position:0%
+up to this position so what do we notice
+we<00:05:40.000><c> let's</c><00:05:40.240><c> look</c><00:05:40.400><c> at</c><00:05:40.720><c> these</c><00:05:41.280><c> two</c><00:05:41.520><c> characters</c>
+
+00:05:41.909 --> 00:05:41.919 align:start position:0%
+we let's look at these two characters
+ 
+
+00:05:41.919 --> 00:05:42.550 align:start position:0%
+we let's look at these two characters
+right<00:05:42.160><c> they're</c>
+
+00:05:42.550 --> 00:05:42.560 align:start position:0%
+right they're
+ 
+
+00:05:42.560 --> 00:05:45.830 align:start position:0%
+right they're
+equal<00:05:43.120><c> a</c><00:05:43.520><c> and</c><00:05:43.759><c> a</c><00:05:44.080><c> right</c><00:05:44.560><c> so</c><00:05:44.880><c> okay</c><00:05:45.199><c> so</c><00:05:45.440><c> now</c><00:05:45.600><c> we</c>
+
+00:05:45.830 --> 00:05:45.840 align:start position:0%
+equal a and a right so okay so now we
+ 
+
+00:05:45.840 --> 00:05:47.749 align:start position:0%
+equal a and a right so okay so now we
+want<00:05:46.000><c> to</c><00:05:46.240><c> find</c><00:05:46.479><c> the</c><00:05:46.639><c> value</c><00:05:47.039><c> that</c><00:05:47.199><c> goes</c><00:05:47.440><c> here</c>
+
+00:05:47.749 --> 00:05:47.759 align:start position:0%
+want to find the value that goes here
+ 
+
+00:05:47.759 --> 00:05:49.749 align:start position:0%
+want to find the value that goes here
+how<00:05:47.919><c> can</c><00:05:48.160><c> we</c><00:05:48.400><c> find</c><00:05:48.639><c> that</c><00:05:48.880><c> value</c>
+
+00:05:49.749 --> 00:05:49.759 align:start position:0%
+how can we find that value
+ 
+
+00:05:49.759 --> 00:05:52.150 align:start position:0%
+how can we find that value
+well<00:05:50.240><c> like</c><00:05:50.479><c> i</c><00:05:50.639><c> mentioned</c><00:05:51.039><c> right</c><00:05:51.360><c> now</c><00:05:51.840><c> we're</c>
+
+00:05:52.150 --> 00:05:52.160 align:start position:0%
+well like i mentioned right now we're
+ 
+
+00:05:52.160 --> 00:05:53.830 align:start position:0%
+well like i mentioned right now we're
+trying<00:05:52.400><c> to</c><00:05:52.479><c> solve</c><00:05:52.720><c> a</c><00:05:52.880><c> sub</c><00:05:53.120><c> problem</c><00:05:53.440><c> we</c><00:05:53.600><c> want</c><00:05:53.759><c> to</c>
+
+00:05:53.830 --> 00:05:53.840 align:start position:0%
+trying to solve a sub problem we want to
+ 
+
+00:05:53.840 --> 00:05:55.830 align:start position:0%
+trying to solve a sub problem we want to
+find<00:05:54.080><c> the</c><00:05:54.160><c> longest</c><00:05:54.639><c> common</c><00:05:54.960><c> subsequence</c>
+
+00:05:55.830 --> 00:05:55.840 align:start position:0%
+find the longest common subsequence
+ 
+
+00:05:55.840 --> 00:05:58.870 align:start position:0%
+find the longest common subsequence
+between<00:05:56.639><c> these</c><00:05:57.360><c> two</c><00:05:58.000><c> substrings</c>
+
+00:05:58.870 --> 00:05:58.880 align:start position:0%
+between these two substrings
+ 
+
+00:05:58.880 --> 00:06:00.870 align:start position:0%
+between these two substrings
+right<00:05:59.120><c> we</c><00:05:59.280><c> don't</c><00:05:59.520><c> have</c><00:05:59.600><c> to</c><00:05:59.759><c> check</c><00:06:00.160><c> these</c><00:06:00.479><c> a's</c>
+
+00:06:00.870 --> 00:06:00.880 align:start position:0%
+right we don't have to check these a's
+ 
+
+00:06:00.880 --> 00:06:02.710 align:start position:0%
+right we don't have to check these a's
+anymore<00:06:01.280><c> because</c><00:06:01.520><c> we</c><00:06:01.680><c> know</c><00:06:01.919><c> they</c><00:06:02.160><c> match</c><00:06:02.560><c> each</c>
+
+00:06:02.710 --> 00:06:02.720 align:start position:0%
+anymore because we know they match each
+ 
+
+00:06:02.720 --> 00:06:03.110 align:start position:0%
+anymore because we know they match each
+other
+
+00:06:03.110 --> 00:06:03.120 align:start position:0%
+other
+ 
+
+00:06:03.120 --> 00:06:06.150 align:start position:0%
+other
+so<00:06:03.440><c> now</c><00:06:03.680><c> i</c><00:06:03.759><c> want</c><00:06:03.919><c> to</c><00:06:04.080><c> find</c><00:06:04.800><c> this</c><00:06:05.360><c> new</c>
+
+00:06:06.150 --> 00:06:06.160 align:start position:0%
+so now i want to find this new
+ 
+
+00:06:06.160 --> 00:06:07.909 align:start position:0%
+so now i want to find this new
+sub<00:06:06.400><c> problem</c><00:06:06.800><c> right</c><00:06:07.039><c> and</c><00:06:07.120><c> so</c><00:06:07.360><c> basically</c><00:06:07.759><c> what</c>
+
+00:06:07.909 --> 00:06:07.919 align:start position:0%
+sub problem right and so basically what
+ 
+
+00:06:07.919 --> 00:06:09.510 align:start position:0%
+sub problem right and so basically what
+i'm<00:06:08.080><c> saying</c><00:06:08.319><c> is</c><00:06:08.479><c> i'm</c><00:06:08.639><c> going</c><00:06:08.720><c> to</c><00:06:08.880><c> go</c>
+
+00:06:09.510 --> 00:06:09.520 align:start position:0%
+i'm saying is i'm going to go
+ 
+
+00:06:09.520 --> 00:06:11.670 align:start position:0%
+i'm saying is i'm going to go
+here<00:06:09.919><c> i'm</c><00:06:10.240><c> i</c><00:06:10.319><c> want</c><00:06:10.479><c> to</c><00:06:10.639><c> solve</c><00:06:10.880><c> the</c><00:06:11.039><c> sub</c><00:06:11.360><c> problem</c>
+
+00:06:11.670 --> 00:06:11.680 align:start position:0%
+here i'm i want to solve the sub problem
+ 
+
+00:06:11.680 --> 00:06:13.029 align:start position:0%
+here i'm i want to solve the sub problem
+that<00:06:11.840><c> goes</c><00:06:12.240><c> here</c>
+
+00:06:13.029 --> 00:06:13.039 align:start position:0%
+that goes here
+ 
+
+00:06:13.039 --> 00:06:15.510 align:start position:0%
+that goes here
+so<00:06:13.360><c> now</c><00:06:13.520><c> we're</c><00:06:13.840><c> here</c><00:06:14.160><c> right</c><00:06:14.400><c> we're</c><00:06:14.560><c> comparing</c>
+
+00:06:15.510 --> 00:06:15.520 align:start position:0%
+so now we're here right we're comparing
+ 
+
+00:06:15.520 --> 00:06:16.469 align:start position:0%
+so now we're here right we're comparing
+this<00:06:15.840><c> b</c>
+
+00:06:16.469 --> 00:06:16.479 align:start position:0%
+this b
+ 
+
+00:06:16.479 --> 00:06:19.110 align:start position:0%
+this b
+with<00:06:16.720><c> this</c><00:06:16.960><c> c</c><00:06:17.360><c> we</c><00:06:17.600><c> see</c><00:06:17.840><c> that</c><00:06:18.080><c> they're</c><00:06:18.560><c> not</c>
+
+00:06:19.110 --> 00:06:19.120 align:start position:0%
+with this c we see that they're not
+ 
+
+00:06:19.120 --> 00:06:20.150 align:start position:0%
+with this c we see that they're not
+equal<00:06:19.520><c> this</c><00:06:19.759><c> time</c>
+
+00:06:20.150 --> 00:06:20.160 align:start position:0%
+equal this time
+ 
+
+00:06:20.160 --> 00:06:21.830 align:start position:0%
+equal this time
+right<00:06:20.400><c> that</c><00:06:20.560><c> means</c><00:06:20.960><c> we're</c><00:06:21.280><c> not</c><00:06:21.440><c> going</c><00:06:21.600><c> to</c><00:06:21.680><c> be</c>
+
+00:06:21.830 --> 00:06:21.840 align:start position:0%
+right that means we're not going to be
+ 
+
+00:06:21.840 --> 00:06:23.590 align:start position:0%
+right that means we're not going to be
+going<00:06:22.160><c> diagonally</c><00:06:22.880><c> we're</c><00:06:23.039><c> not</c><00:06:23.199><c> going</c><00:06:23.280><c> to</c><00:06:23.360><c> look</c>
+
+00:06:23.590 --> 00:06:23.600 align:start position:0%
+going diagonally we're not going to look
+ 
+
+00:06:23.600 --> 00:06:25.029 align:start position:0%
+going diagonally we're not going to look
+at<00:06:23.759><c> this</c><00:06:24.000><c> sub</c><00:06:24.240><c> problem</c><00:06:24.560><c> we're</c><00:06:24.720><c> going</c><00:06:24.800><c> to</c><00:06:24.880><c> look</c>
+
+00:06:25.029 --> 00:06:25.039 align:start position:0%
+at this sub problem we're going to look
+ 
+
+00:06:25.039 --> 00:06:26.790 align:start position:0%
+at this sub problem we're going to look
+at<00:06:25.199><c> a</c><00:06:25.440><c> different</c><00:06:25.840><c> sub</c><00:06:26.160><c> problem</c>
+
+00:06:26.790 --> 00:06:26.800 align:start position:0%
+at a different sub problem
+ 
+
+00:06:26.800 --> 00:06:29.670 align:start position:0%
+at a different sub problem
+since<00:06:27.199><c> these</c><00:06:27.520><c> characters</c><00:06:28.319><c> do</c><00:06:28.720><c> not</c><00:06:29.039><c> equal</c><00:06:29.520><c> each</c>
+
+00:06:29.670 --> 00:06:29.680 align:start position:0%
+since these characters do not equal each
+ 
+
+00:06:29.680 --> 00:06:30.230 align:start position:0%
+since these characters do not equal each
+other
+
+00:06:30.230 --> 00:06:30.240 align:start position:0%
+other
+ 
+
+00:06:30.240 --> 00:06:33.189 align:start position:0%
+other
+we<00:06:30.560><c> have</c><00:06:30.800><c> to</c><00:06:31.039><c> check</c><00:06:31.840><c> two</c><00:06:32.400><c> different</c><00:06:32.880><c> sub</c>
+
+00:06:33.189 --> 00:06:33.199 align:start position:0%
+we have to check two different sub
+ 
+
+00:06:33.199 --> 00:06:34.150 align:start position:0%
+we have to check two different sub
+problems
+
+00:06:34.150 --> 00:06:34.160 align:start position:0%
+problems
+ 
+
+00:06:34.160 --> 00:06:36.150 align:start position:0%
+problems
+it<00:06:34.400><c> means</c><00:06:34.800><c> that</c><00:06:35.039><c> the</c><00:06:35.360><c> longest</c><00:06:35.759><c> common</c>
+
+00:06:36.150 --> 00:06:36.160 align:start position:0%
+it means that the longest common
+ 
+
+00:06:36.160 --> 00:06:37.670 align:start position:0%
+it means that the longest common
+subsurface<00:06:36.800><c> between</c>
+
+00:06:37.670 --> 00:06:37.680 align:start position:0%
+subsurface between
+ 
+
+00:06:37.680 --> 00:06:40.629 align:start position:0%
+subsurface between
+these<00:06:38.080><c> two</c><00:06:38.319><c> substrings</c><00:06:39.120><c> is</c><00:06:39.280><c> going</c><00:06:39.600><c> to</c><00:06:39.840><c> be</c>
+
+00:06:40.629 --> 00:06:40.639 align:start position:0%
+these two substrings is going to be
+ 
+
+00:06:40.639 --> 00:06:41.270 align:start position:0%
+these two substrings is going to be
+found
+
+00:06:41.270 --> 00:06:41.280 align:start position:0%
+found
+ 
+
+00:06:41.280 --> 00:06:44.469 align:start position:0%
+found
+in<00:06:42.080><c> either</c><00:06:42.479><c> of</c><00:06:42.800><c> these</c><00:06:43.440><c> two</c><00:06:43.759><c> positions</c><00:06:44.319><c> right</c>
+
+00:06:44.469 --> 00:06:44.479 align:start position:0%
+in either of these two positions right
+ 
+
+00:06:44.479 --> 00:06:46.230 align:start position:0%
+in either of these two positions right
+so<00:06:44.639><c> let's</c><00:06:44.880><c> look</c><00:06:45.039><c> at</c><00:06:45.199><c> this</c><00:06:45.440><c> position</c><00:06:45.919><c> first</c>
+
+00:06:46.230 --> 00:06:46.240 align:start position:0%
+so let's look at this position first
+ 
+
+00:06:46.240 --> 00:06:47.990 align:start position:0%
+so let's look at this position first
+with<00:06:46.400><c> this</c><00:06:46.639><c> position</c><00:06:47.039><c> tells</c><00:06:47.360><c> us</c><00:06:47.520><c> we're</c><00:06:47.680><c> trying</c>
+
+00:06:47.990 --> 00:06:48.000 align:start position:0%
+with this position tells us we're trying
+ 
+
+00:06:48.000 --> 00:06:49.990 align:start position:0%
+with this position tells us we're trying
+to<00:06:48.160><c> find</c><00:06:48.400><c> the</c><00:06:48.560><c> longest</c><00:06:48.960><c> common</c><00:06:49.280><c> subsequence</c>
+
+00:06:49.990 --> 00:06:50.000 align:start position:0%
+to find the longest common subsequence
+ 
+
+00:06:50.000 --> 00:06:51.670 align:start position:0%
+to find the longest common subsequence
+between<00:06:50.400><c> this</c><00:06:50.720><c> string</c>
+
+00:06:51.670 --> 00:06:51.680 align:start position:0%
+between this string
+ 
+
+00:06:51.680 --> 00:06:54.070 align:start position:0%
+between this string
+and<00:06:52.319><c> this</c><00:06:52.560><c> string</c><00:06:52.960><c> right</c><00:06:53.199><c> so</c><00:06:53.360><c> basically</c><00:06:53.840><c> we're</c>
+
+00:06:54.070 --> 00:06:54.080 align:start position:0%
+and this string right so basically we're
+ 
+
+00:06:54.080 --> 00:06:55.350 align:start position:0%
+and this string right so basically we're
+not<00:06:54.240><c> looking</c><00:06:54.479><c> at</c><00:06:54.639><c> this</c><00:06:54.960><c> c</c>
+
+00:06:55.350 --> 00:06:55.360 align:start position:0%
+not looking at this c
+ 
+
+00:06:55.360 --> 00:06:58.950 align:start position:0%
+not looking at this c
+anymore<00:06:56.000><c> right</c><00:06:56.639><c> and</c><00:06:57.280><c> this</c><00:06:57.680><c> position</c><00:06:58.240><c> tells</c><00:06:58.639><c> us</c>
+
+00:06:58.950 --> 00:06:58.960 align:start position:0%
+anymore right and this position tells us
+ 
+
+00:06:58.960 --> 00:07:00.629 align:start position:0%
+anymore right and this position tells us
+that<00:06:59.120><c> we're</c><00:06:59.280><c> looking</c><00:06:59.599><c> at</c><00:06:59.680><c> the</c><00:06:59.919><c> longest</c><00:07:00.319><c> common</c>
+
+00:07:00.629 --> 00:07:00.639 align:start position:0%
+that we're looking at the longest common
+ 
+
+00:07:00.639 --> 00:07:02.710 align:start position:0%
+that we're looking at the longest common
+subsequence<00:07:01.280><c> between</c><00:07:01.759><c> this</c><00:07:02.080><c> string</c>
+
+00:07:02.710 --> 00:07:02.720 align:start position:0%
+subsequence between this string
+ 
+
+00:07:02.720 --> 00:07:04.390 align:start position:0%
+subsequence between this string
+and<00:07:02.880><c> this</c><00:07:03.120><c> string</c><00:07:03.360><c> so</c><00:07:03.599><c> basically</c><00:07:04.080><c> when</c><00:07:04.240><c> we</c>
+
+00:07:04.390 --> 00:07:04.400 align:start position:0%
+and this string so basically when we
+ 
+
+00:07:04.400 --> 00:07:05.990 align:start position:0%
+and this string so basically when we
+remove<00:07:05.360><c> this</c>
+
+00:07:05.990 --> 00:07:06.000 align:start position:0%
+remove this
+ 
+
+00:07:06.000 --> 00:07:09.270 align:start position:0%
+remove this
+b<00:07:06.639><c> right</c><00:07:07.520><c> and</c><00:07:07.919><c> just</c><00:07:08.160><c> by</c><00:07:08.479><c> looking</c><00:07:08.800><c> at</c><00:07:08.960><c> it</c><00:07:09.039><c> right</c>
+
+00:07:09.270 --> 00:07:09.280 align:start position:0%
+b right and just by looking at it right
+ 
+
+00:07:09.280 --> 00:07:10.870 align:start position:0%
+b right and just by looking at it right
+you<00:07:09.360><c> can</c><00:07:09.599><c> tell</c><00:07:09.840><c> that</c><00:07:10.160><c> this</c>
+
+00:07:10.870 --> 00:07:10.880 align:start position:0%
+you can tell that this
+ 
+
+00:07:10.880 --> 00:07:13.589 align:start position:0%
+you can tell that this
+is<00:07:11.280><c> going</c><00:07:11.599><c> to</c><00:07:12.639><c> these</c><00:07:12.880><c> two</c><00:07:13.120><c> strings</c><00:07:13.440><c> are</c><00:07:13.520><c> going</c>
+
+00:07:13.589 --> 00:07:13.599 align:start position:0%
+is going to these two strings are going
+ 
+
+00:07:13.599 --> 00:07:16.150 align:start position:0%
+is going to these two strings are going
+to<00:07:13.759><c> lead</c><00:07:14.080><c> to</c><00:07:14.240><c> a</c><00:07:14.400><c> longest</c><00:07:14.880><c> common</c><00:07:15.280><c> subsequence</c>
+
+00:07:16.150 --> 00:07:16.160 align:start position:0%
+to lead to a longest common subsequence
+ 
+
+00:07:16.160 --> 00:07:18.230 align:start position:0%
+to lead to a longest common subsequence
+of<00:07:16.800><c> one</c><00:07:17.199><c> just</c><00:07:17.360><c> by</c><00:07:17.520><c> looking</c><00:07:17.840><c> at</c><00:07:17.919><c> it</c><00:07:18.080><c> right</c>
+
+00:07:18.230 --> 00:07:18.240 align:start position:0%
+of one just by looking at it right
+ 
+
+00:07:18.240 --> 00:07:19.510 align:start position:0%
+of one just by looking at it right
+because<00:07:18.479><c> you</c><00:07:18.639><c> can</c><00:07:18.720><c> see</c><00:07:18.880><c> that</c><00:07:18.960><c> this</c><00:07:19.199><c> has</c><00:07:19.360><c> one</c>
+
+00:07:19.510 --> 00:07:19.520 align:start position:0%
+because you can see that this has one
+ 
+
+00:07:19.520 --> 00:07:21.670 align:start position:0%
+because you can see that this has one
+character<00:07:19.919><c> it's</c><00:07:20.080><c> an</c><00:07:20.240><c> e</c><00:07:20.479><c> it</c><00:07:20.639><c> only</c><00:07:20.880><c> matches</c>
+
+00:07:21.670 --> 00:07:21.680 align:start position:0%
+character it's an e it only matches
+ 
+
+00:07:21.680 --> 00:07:23.990 align:start position:0%
+character it's an e it only matches
+this<00:07:21.919><c> e</c><00:07:22.240><c> so</c><00:07:22.400><c> that's</c><00:07:22.639><c> going</c><00:07:22.720><c> to</c><00:07:22.800><c> be</c><00:07:22.960><c> a</c><00:07:23.120><c> one</c><00:07:23.759><c> but</c>
+
+00:07:23.990 --> 00:07:24.000 align:start position:0%
+this e so that's going to be a one but
+ 
+
+00:07:24.000 --> 00:07:24.790 align:start position:0%
+this e so that's going to be a one but
+when<00:07:24.160><c> you</c><00:07:24.240><c> look</c><00:07:24.479><c> at</c>
+
+00:07:24.790 --> 00:07:24.800 align:start position:0%
+when you look at
+ 
+
+00:07:24.800 --> 00:07:27.350 align:start position:0%
+when you look at
+this<00:07:25.520><c> string</c><00:07:26.080><c> and</c><00:07:26.560><c> this</c><00:07:26.800><c> string</c><00:07:27.120><c> right</c>
+
+00:07:27.350 --> 00:07:27.360 align:start position:0%
+this string and this string right
+ 
+
+00:07:27.360 --> 00:07:29.110 align:start position:0%
+this string and this string right
+corresponding<00:07:27.919><c> to</c><00:07:28.080><c> this</c><00:07:28.319><c> position</c>
+
+00:07:29.110 --> 00:07:29.120 align:start position:0%
+corresponding to this position
+ 
+
+00:07:29.120 --> 00:07:32.309 align:start position:0%
+corresponding to this position
+we<00:07:29.280><c> see</c><00:07:29.440><c> that</c><00:07:29.599><c> this</c><00:07:29.840><c> has</c><00:07:30.000><c> a</c><00:07:30.160><c> ce</c><00:07:31.039><c> this</c><00:07:31.360><c> has</c><00:07:31.680><c> a</c><00:07:31.919><c> ce</c>
+
+00:07:32.309 --> 00:07:32.319 align:start position:0%
+we see that this has a ce this has a ce
+ 
+
+00:07:32.319 --> 00:07:33.350 align:start position:0%
+we see that this has a ce this has a ce
+so<00:07:32.479><c> this</c><00:07:32.639><c> is</c><00:07:32.800><c> n</c>
+
+00:07:33.350 --> 00:07:33.360 align:start position:0%
+so this is n
+ 
+
+00:07:33.360 --> 00:07:35.270 align:start position:0%
+so this is n
+this<00:07:33.599><c> is</c><00:07:33.680><c> going</c><00:07:33.759><c> to</c><00:07:33.919><c> end</c><00:07:34.080><c> up</c><00:07:34.240><c> being</c><00:07:34.479><c> a</c><00:07:34.720><c> two</c><00:07:35.120><c> but</c>
+
+00:07:35.270 --> 00:07:35.280 align:start position:0%
+this is going to end up being a two but
+ 
+
+00:07:35.280 --> 00:07:36.710 align:start position:0%
+this is going to end up being a two but
+let<00:07:35.440><c> me</c><00:07:35.599><c> actually</c><00:07:36.080><c> solve</c>
+
+00:07:36.710 --> 00:07:36.720 align:start position:0%
+let me actually solve
+ 
+
+00:07:36.720 --> 00:07:39.830 align:start position:0%
+let me actually solve
+the<00:07:36.960><c> rest</c><00:07:37.199><c> of</c><00:07:37.360><c> it</c><00:07:38.080><c> a</c><00:07:38.160><c> little</c><00:07:38.400><c> bit</c><00:07:39.120><c> so</c><00:07:39.360><c> mainly</c>
+
+00:07:39.830 --> 00:07:39.840 align:start position:0%
+the rest of it a little bit so mainly
+ 
+
+00:07:39.840 --> 00:07:41.830 align:start position:0%
+the rest of it a little bit so mainly
+looking<00:07:40.080><c> at</c><00:07:40.319><c> these</c><00:07:40.639><c> two</c><00:07:40.880><c> strings</c><00:07:41.360><c> right</c>
+
+00:07:41.830 --> 00:07:41.840 align:start position:0%
+looking at these two strings right
+ 
+
+00:07:41.840 --> 00:07:44.710 align:start position:0%
+looking at these two strings right
+in<00:07:42.240><c> this</c><00:07:42.479><c> position</c><00:07:42.960><c> we</c><00:07:43.120><c> see</c><00:07:43.360><c> that</c><00:07:43.599><c> the</c><00:07:43.919><c> c's</c>
+
+00:07:44.710 --> 00:07:44.720 align:start position:0%
+in this position we see that the c's
+ 
+
+00:07:44.720 --> 00:07:46.550 align:start position:0%
+in this position we see that the c's
+match<00:07:45.039><c> each</c><00:07:45.280><c> other</c><00:07:45.520><c> right</c><00:07:45.759><c> so</c><00:07:46.000><c> since</c>
+
+00:07:46.550 --> 00:07:46.560 align:start position:0%
+match each other right so since
+ 
+
+00:07:46.560 --> 00:07:48.390 align:start position:0%
+match each other right so since
+remember<00:07:46.960><c> when</c><00:07:47.120><c> the</c><00:07:47.280><c> characters</c><00:07:47.840><c> match</c><00:07:48.240><c> each</c>
+
+00:07:48.390 --> 00:07:48.400 align:start position:0%
+remember when the characters match each
+ 
+
+00:07:48.400 --> 00:07:49.909 align:start position:0%
+remember when the characters match each
+other<00:07:48.720><c> the</c><00:07:48.879><c> first</c><00:07:49.120><c> characters</c><00:07:49.599><c> of</c><00:07:49.680><c> both</c>
+
+00:07:49.909 --> 00:07:49.919 align:start position:0%
+other the first characters of both
+ 
+
+00:07:49.919 --> 00:07:51.510 align:start position:0%
+other the first characters of both
+strings<00:07:50.240><c> match</c><00:07:50.479><c> each</c><00:07:50.639><c> other</c><00:07:50.879><c> that's</c><00:07:51.199><c> when</c><00:07:51.360><c> we</c>
+
+00:07:51.510 --> 00:07:51.520 align:start position:0%
+strings match each other that's when we
+ 
+
+00:07:51.520 --> 00:07:53.189 align:start position:0%
+strings match each other that's when we
+go<00:07:51.879><c> diagonally</c>
+
+00:07:53.189 --> 00:07:53.199 align:start position:0%
+go diagonally
+ 
+
+00:07:53.199 --> 00:07:55.510 align:start position:0%
+go diagonally
+and<00:07:53.280><c> the</c><00:07:53.599><c> reason</c><00:07:54.000><c> we</c><00:07:54.240><c> go</c><00:07:54.479><c> diagonally</c><00:07:55.360><c> is</c>
+
+00:07:55.510 --> 00:07:55.520 align:start position:0%
+and the reason we go diagonally is
+ 
+
+00:07:55.520 --> 00:07:57.430 align:start position:0%
+and the reason we go diagonally is
+because<00:07:55.840><c> then</c><00:07:56.080><c> we</c><00:07:56.319><c> know</c><00:07:56.560><c> we</c><00:07:56.720><c> can</c><00:07:56.960><c> look</c><00:07:57.120><c> at</c><00:07:57.280><c> the</c>
+
+00:07:57.430 --> 00:07:57.440 align:start position:0%
+because then we know we can look at the
+ 
+
+00:07:57.440 --> 00:07:59.909 align:start position:0%
+because then we know we can look at the
+remainder<00:07:58.400><c> of</c><00:07:58.720><c> both</c><00:07:59.039><c> of</c><00:07:59.120><c> the</c><00:07:59.360><c> strings</c><00:07:59.680><c> right</c>
+
+00:07:59.909 --> 00:07:59.919 align:start position:0%
+remainder of both of the strings right
+ 
+
+00:07:59.919 --> 00:08:00.230 align:start position:0%
+remainder of both of the strings right
+we
+
+00:08:00.230 --> 00:08:00.240 align:start position:0%
+we
+ 
+
+00:08:00.240 --> 00:08:03.110 align:start position:0%
+we
+we<00:08:00.400><c> know</c><00:08:00.560><c> that</c><00:08:00.720><c> this</c><00:08:00.879><c> c</c><00:08:01.280><c> matches</c><00:08:01.759><c> this</c><00:08:02.000><c> c</c><00:08:02.240><c> so</c><00:08:02.879><c> we</c>
+
+00:08:03.110 --> 00:08:03.120 align:start position:0%
+we know that this c matches this c so we
+ 
+
+00:08:03.120 --> 00:08:04.869 align:start position:0%
+we know that this c matches this c so we
+want<00:08:03.280><c> to</c><00:08:03.440><c> look</c><00:08:03.680><c> diagonally</c><00:08:04.319><c> we</c><00:08:04.479><c> want</c><00:08:04.639><c> to</c><00:08:04.720><c> look</c>
+
+00:08:04.869 --> 00:08:04.879 align:start position:0%
+want to look diagonally we want to look
+ 
+
+00:08:04.879 --> 00:08:06.309 align:start position:0%
+want to look diagonally we want to look
+at<00:08:04.960><c> these</c><00:08:05.280><c> two</c><00:08:05.520><c> substrings</c>
+
+00:08:06.309 --> 00:08:06.319 align:start position:0%
+at these two substrings
+ 
+
+00:08:06.319 --> 00:08:08.469 align:start position:0%
+at these two substrings
+so<00:08:06.479><c> what's</c><00:08:06.720><c> the</c><00:08:06.879><c> longest</c><00:08:07.280><c> common</c><00:08:07.680><c> substring</c>
+
+00:08:08.469 --> 00:08:08.479 align:start position:0%
+so what's the longest common substring
+ 
+
+00:08:08.479 --> 00:08:09.990 align:start position:0%
+so what's the longest common substring
+between<00:08:09.120><c> these</c><00:08:09.440><c> two</c>
+
+00:08:09.990 --> 00:08:10.000 align:start position:0%
+between these two
+ 
+
+00:08:10.000 --> 00:08:11.749 align:start position:0%
+between these two
+okay<00:08:10.400><c> so</c><00:08:10.800><c> what</c><00:08:10.960><c> are</c><00:08:11.039><c> we</c><00:08:11.199><c> gonna</c><00:08:11.360><c> do</c><00:08:11.520><c> let's</c>
+
+00:08:11.749 --> 00:08:11.759 align:start position:0%
+okay so what are we gonna do let's
+ 
+
+00:08:11.759 --> 00:08:13.909 align:start position:0%
+okay so what are we gonna do let's
+compare<00:08:12.240><c> the</c><00:08:12.400><c> first</c><00:08:12.800><c> character</c><00:08:13.280><c> right</c><00:08:13.599><c> so</c>
+
+00:08:13.909 --> 00:08:13.919 align:start position:0%
+compare the first character right so
+ 
+
+00:08:13.919 --> 00:08:16.950 align:start position:0%
+compare the first character right so
+d<00:08:14.400><c> and</c><00:08:14.879><c> and</c><00:08:15.120><c> e</c><00:08:15.680><c> so</c><00:08:15.840><c> these</c><00:08:16.080><c> characters</c><00:08:16.639><c> are</c>
+
+00:08:16.950 --> 00:08:16.960 align:start position:0%
+d and and e so these characters are
+ 
+
+00:08:16.960 --> 00:08:19.189 align:start position:0%
+d and and e so these characters are
+not<00:08:17.360><c> equal</c><00:08:17.759><c> so</c><00:08:18.000><c> remember</c><00:08:18.400><c> what</c><00:08:18.560><c> we</c><00:08:18.800><c> do</c><00:08:18.960><c> when</c>
+
+00:08:19.189 --> 00:08:19.199 align:start position:0%
+not equal so remember what we do when
+ 
+
+00:08:19.199 --> 00:08:20.390 align:start position:0%
+not equal so remember what we do when
+the<00:08:19.280><c> first</c><00:08:19.599><c> characters</c><00:08:20.080><c> are</c>
+
+00:08:20.390 --> 00:08:20.400 align:start position:0%
+the first characters are
+ 
+
+00:08:20.400 --> 00:08:23.270 align:start position:0%
+the first characters are
+not<00:08:20.800><c> equal</c><00:08:21.199><c> then</c><00:08:21.440><c> we</c><00:08:21.759><c> can't</c><00:08:22.080><c> go</c><00:08:22.319><c> diagonally</c><00:08:23.120><c> so</c>
+
+00:08:23.270 --> 00:08:23.280 align:start position:0%
+not equal then we can't go diagonally so
+ 
+
+00:08:23.280 --> 00:08:25.110 align:start position:0%
+not equal then we can't go diagonally so
+what<00:08:23.440><c> do</c><00:08:23.599><c> we</c><00:08:23.680><c> decide</c><00:08:24.080><c> to</c><00:08:24.160><c> do</c><00:08:24.319><c> we</c><00:08:24.479><c> go</c><00:08:24.720><c> to</c><00:08:24.879><c> the</c>
+
+00:08:25.110 --> 00:08:25.120 align:start position:0%
+what do we decide to do we go to the
+ 
+
+00:08:25.120 --> 00:08:26.550 align:start position:0%
+what do we decide to do we go to the
+right<00:08:25.759><c> and</c><00:08:26.000><c> we</c><00:08:26.160><c> go</c>
+
+00:08:26.550 --> 00:08:26.560 align:start position:0%
+right and we go
+ 
+
+00:08:26.560 --> 00:08:29.670 align:start position:0%
+right and we go
+down<00:08:27.120><c> and</c><00:08:27.280><c> we</c><00:08:27.520><c> take</c><00:08:27.919><c> whatever</c><00:08:28.319><c> the</c><00:08:28.720><c> max</c><00:08:29.440><c> of</c>
+
+00:08:29.670 --> 00:08:29.680 align:start position:0%
+down and we take whatever the max of
+ 
+
+00:08:29.680 --> 00:08:30.309 align:start position:0%
+down and we take whatever the max of
+these<00:08:30.000><c> two</c>
+
+00:08:30.309 --> 00:08:30.319 align:start position:0%
+these two
+ 
+
+00:08:30.319 --> 00:08:33.829 align:start position:0%
+these two
+is<00:08:30.800><c> and</c><00:08:30.960><c> then</c><00:08:31.360><c> put</c><00:08:31.599><c> it</c><00:08:32.159><c> in</c><00:08:32.640><c> this</c><00:08:33.120><c> value</c><00:08:33.599><c> that's</c>
+
+00:08:33.829 --> 00:08:33.839 align:start position:0%
+is and then put it in this value that's
+ 
+
+00:08:33.839 --> 00:08:35.269 align:start position:0%
+is and then put it in this value that's
+what<00:08:34.000><c> we're</c><00:08:34.320><c> gonna</c><00:08:34.640><c> do</c>
+
+00:08:35.269 --> 00:08:35.279 align:start position:0%
+what we're gonna do
+ 
+
+00:08:35.279 --> 00:08:37.430 align:start position:0%
+what we're gonna do
+so<00:08:35.599><c> first</c><00:08:35.919><c> let's</c><00:08:36.240><c> check</c><00:08:36.479><c> this</c><00:08:36.800><c> right</c><00:08:37.039><c> position</c>
+
+00:08:37.430 --> 00:08:37.440 align:start position:0%
+so first let's check this right position
+ 
+
+00:08:37.440 --> 00:08:39.190 align:start position:0%
+so first let's check this right position
+so<00:08:37.599><c> what</c><00:08:37.760><c> does</c><00:08:38.000><c> this</c><00:08:38.240><c> right</c><00:08:38.399><c> position</c><00:08:38.880><c> even</c>
+
+00:08:39.190 --> 00:08:39.200 align:start position:0%
+so what does this right position even
+ 
+
+00:08:39.200 --> 00:08:40.389 align:start position:0%
+so what does this right position even
+mean<00:08:39.440><c> it</c><00:08:39.519><c> means</c><00:08:39.760><c> we're</c><00:08:39.919><c> taking</c>
+
+00:08:40.389 --> 00:08:40.399 align:start position:0%
+mean it means we're taking
+ 
+
+00:08:40.399 --> 00:08:42.870 align:start position:0%
+mean it means we're taking
+this<00:08:40.719><c> substring</c><00:08:41.680><c> and</c><00:08:42.080><c> finding</c><00:08:42.399><c> the</c><00:08:42.560><c> longest</c>
+
+00:08:42.870 --> 00:08:42.880 align:start position:0%
+this substring and finding the longest
+ 
+
+00:08:42.880 --> 00:08:44.710 align:start position:0%
+this substring and finding the longest
+common<00:08:43.200><c> subsequence</c><00:08:43.839><c> with</c><00:08:44.000><c> this</c><00:08:44.159><c> substring</c>
+
+00:08:44.710 --> 00:08:44.720 align:start position:0%
+common subsequence with this substring
+ 
+
+00:08:44.720 --> 00:08:45.590 align:start position:0%
+common subsequence with this substring
+but<00:08:44.880><c> this</c><00:08:45.120><c> is</c><00:08:45.279><c> an</c>
+
+00:08:45.590 --> 00:08:45.600 align:start position:0%
+but this is an
+ 
+
+00:08:45.600 --> 00:08:48.310 align:start position:0%
+but this is an
+empty<00:08:45.920><c> string</c><00:08:46.240><c> so</c><00:08:46.480><c> what's</c><00:08:46.800><c> going</c><00:08:46.880><c> to</c><00:08:47.200><c> be</c><00:08:47.839><c> in</c>
+
+00:08:48.310 --> 00:08:48.320 align:start position:0%
+empty string so what's going to be in
+ 
+
+00:08:48.320 --> 00:08:48.790 align:start position:0%
+empty string so what's going to be in
+this
+
+00:08:48.790 --> 00:08:48.800 align:start position:0%
+this
+ 
+
+00:08:48.800 --> 00:08:51.190 align:start position:0%
+this
+cell<00:08:49.600><c> remember</c><00:08:50.080><c> this</c><00:08:50.240><c> is</c><00:08:50.399><c> actually</c><00:08:50.800><c> out</c><00:08:51.040><c> of</c>
+
+00:08:51.190 --> 00:08:51.200 align:start position:0%
+cell remember this is actually out of
+ 
+
+00:08:51.200 --> 00:08:51.829 align:start position:0%
+cell remember this is actually out of
+bounds
+
+00:08:51.829 --> 00:08:51.839 align:start position:0%
+bounds
+ 
+
+00:08:51.839 --> 00:08:54.870 align:start position:0%
+bounds
+anyway<00:08:52.399><c> right</c><00:08:52.959><c> so</c><00:08:53.200><c> what</c><00:08:53.680><c> default</c><00:08:54.240><c> value</c><00:08:54.720><c> are</c>
+
+00:08:54.870 --> 00:08:54.880 align:start position:0%
+anyway right so what default value are
+ 
+
+00:08:54.880 --> 00:08:56.790 align:start position:0%
+anyway right so what default value are
+we<00:08:54.959><c> gonna</c><00:08:55.200><c> give</c><00:08:55.519><c> ourselves</c><00:08:56.000><c> if</c><00:08:56.160><c> we</c><00:08:56.240><c> go</c><00:08:56.480><c> out</c><00:08:56.720><c> of</c>
+
+00:08:56.790 --> 00:08:56.800 align:start position:0%
+we gonna give ourselves if we go out of
+ 
+
+00:08:56.800 --> 00:08:58.150 align:start position:0%
+we gonna give ourselves if we go out of
+bounds<00:08:57.200><c> to</c><00:08:57.360><c> the</c><00:08:57.519><c> right</c>
+
+00:08:58.150 --> 00:08:58.160 align:start position:0%
+bounds to the right
+ 
+
+00:08:58.160 --> 00:09:00.310 align:start position:0%
+bounds to the right
+clearly<00:08:58.640><c> the</c><00:08:58.959><c> the</c><00:08:59.360><c> longest</c><00:08:59.760><c> come</c><00:09:00.000><c> sub</c>
+
+00:09:00.310 --> 00:09:00.320 align:start position:0%
+clearly the the longest come sub
+ 
+
+00:09:00.320 --> 00:09:02.070 align:start position:0%
+clearly the the longest come sub
+sequence<00:09:00.720><c> between</c><00:09:01.040><c> a</c><00:09:01.120><c> string</c><00:09:01.440><c> and</c><00:09:01.600><c> an</c><00:09:01.760><c> empty</c>
+
+00:09:02.070 --> 00:09:02.080 align:start position:0%
+sequence between a string and an empty
+ 
+
+00:09:02.080 --> 00:09:02.949 align:start position:0%
+sequence between a string and an empty
+string<00:09:02.399><c> like</c><00:09:02.640><c> this</c>
+
+00:09:02.949 --> 00:09:02.959 align:start position:0%
+string like this
+ 
+
+00:09:02.959 --> 00:09:04.949 align:start position:0%
+string like this
+is<00:09:03.040><c> gonna</c><00:09:03.279><c> be</c><00:09:03.519><c> zero</c><00:09:03.839><c> right</c><00:09:04.000><c> so</c><00:09:04.320><c> really</c><00:09:04.800><c> what</c>
+
+00:09:04.949 --> 00:09:04.959 align:start position:0%
+is gonna be zero right so really what
+ 
+
+00:09:04.959 --> 00:09:06.710 align:start position:0%
+is gonna be zero right so really what
+we're<00:09:05.120><c> gonna</c><00:09:05.360><c> initialize</c><00:09:06.160><c> is</c><00:09:06.320><c> we're</c><00:09:06.480><c> gonna</c>
+
+00:09:06.710 --> 00:09:06.720 align:start position:0%
+we're gonna initialize is we're gonna
+ 
+
+00:09:06.720 --> 00:09:07.030 align:start position:0%
+we're gonna initialize is we're gonna
+say
+
+00:09:07.030 --> 00:09:07.040 align:start position:0%
+say
+ 
+
+00:09:07.040 --> 00:09:10.150 align:start position:0%
+say
+every<00:09:08.080><c> value</c><00:09:08.640><c> in</c><00:09:09.040><c> this</c><00:09:09.360><c> column</c><00:09:09.839><c> is</c><00:09:09.920><c> going</c><00:09:10.080><c> to</c>
+
+00:09:10.150 --> 00:09:10.160 align:start position:0%
+every value in this column is going to
+ 
+
+00:09:10.160 --> 00:09:10.949 align:start position:0%
+every value in this column is going to
+be<00:09:10.320><c> 0.</c>
+
+00:09:10.949 --> 00:09:10.959 align:start position:0%
+be 0.
+ 
+
+00:09:10.959 --> 00:09:13.350 align:start position:0%
+be 0.
+similarly<00:09:11.680><c> this</c><00:09:11.920><c> is</c><00:09:12.080><c> an</c><00:09:12.240><c> empty</c><00:09:12.480><c> substring</c><00:09:13.120><c> if</c>
+
+00:09:13.350 --> 00:09:13.360 align:start position:0%
+similarly this is an empty substring if
+ 
+
+00:09:13.360 --> 00:09:14.870 align:start position:0%
+similarly this is an empty substring if
+it<00:09:13.440><c> were</c><00:09:13.760><c> to</c>
+
+00:09:14.870 --> 00:09:14.880 align:start position:0%
+it were to
+ 
+
+00:09:14.880 --> 00:09:16.710 align:start position:0%
+it were to
+if<00:09:15.040><c> we</c><00:09:15.120><c> were</c><00:09:15.200><c> trying</c><00:09:15.360><c> to</c><00:09:15.440><c> find</c><00:09:15.680><c> the</c><00:09:15.839><c> lcs</c><00:09:16.560><c> the</c>
+
+00:09:16.710 --> 00:09:16.720 align:start position:0%
+if we were trying to find the lcs the
+ 
+
+00:09:16.720 --> 00:09:18.470 align:start position:0%
+if we were trying to find the lcs the
+longest<00:09:17.040><c> common</c><00:09:17.279><c> subsequence</c><00:09:17.920><c> between</c><00:09:18.240><c> this</c>
+
+00:09:18.470 --> 00:09:18.480 align:start position:0%
+longest common subsequence between this
+ 
+
+00:09:18.480 --> 00:09:19.990 align:start position:0%
+longest common subsequence between this
+and<00:09:18.720><c> an</c><00:09:18.880><c> empty</c><00:09:19.200><c> substring</c>
+
+00:09:19.990 --> 00:09:20.000 align:start position:0%
+and an empty substring
+ 
+
+00:09:20.000 --> 00:09:21.750 align:start position:0%
+and an empty substring
+we<00:09:20.160><c> would</c><00:09:20.399><c> also</c><00:09:20.720><c> get</c><00:09:20.959><c> zero</c><00:09:21.279><c> so</c><00:09:21.440><c> what</c><00:09:21.600><c> we're</c>
+
+00:09:21.750 --> 00:09:21.760 align:start position:0%
+we would also get zero so what we're
+ 
+
+00:09:21.760 --> 00:09:23.910 align:start position:0%
+we would also get zero so what we're
+gonna<00:09:21.920><c> do</c><00:09:22.080><c> is</c><00:09:22.320><c> put</c><00:09:22.560><c> a</c><00:09:22.880><c> zero</c>
+
+00:09:23.910 --> 00:09:23.920 align:start position:0%
+gonna do is put a zero
+ 
+
+00:09:23.920 --> 00:09:25.829 align:start position:0%
+gonna do is put a zero
+in<00:09:24.320><c> these</c><00:09:24.640><c> positions</c><00:09:25.200><c> right</c><00:09:25.360><c> that's</c><00:09:25.600><c> just</c><00:09:25.680><c> how</c>
+
+00:09:25.829 --> 00:09:25.839 align:start position:0%
+in these positions right that's just how
+ 
+
+00:09:25.839 --> 00:09:28.310 align:start position:0%
+in these positions right that's just how
+we're<00:09:26.000><c> gonna</c><00:09:26.320><c> initialize</c><00:09:26.959><c> our</c><00:09:27.120><c> 2d</c><00:09:27.519><c> matrix</c>
+
+00:09:28.310 --> 00:09:28.320 align:start position:0%
+we're gonna initialize our 2d matrix
+ 
+
+00:09:28.320 --> 00:09:30.470 align:start position:0%
+we're gonna initialize our 2d matrix
+when<00:09:28.480><c> we</c><00:09:28.720><c> start</c><00:09:28.959><c> the</c><00:09:29.200><c> problem</c><00:09:30.000><c> okay</c><00:09:30.240><c> so</c>
+
+00:09:30.470 --> 00:09:30.480 align:start position:0%
+when we start the problem okay so
+ 
+
+00:09:30.480 --> 00:09:31.829 align:start position:0%
+when we start the problem okay so
+remember<00:09:30.880><c> what</c><00:09:31.040><c> we</c><00:09:31.120><c> were</c><00:09:31.279><c> doing</c><00:09:31.440><c> we</c><00:09:31.600><c> were</c><00:09:31.680><c> at</c>
+
+00:09:31.829 --> 00:09:31.839 align:start position:0%
+remember what we were doing we were at
+ 
+
+00:09:31.839 --> 00:09:33.509 align:start position:0%
+remember what we were doing we were at
+this<00:09:32.000><c> position</c><00:09:32.399><c> we</c><00:09:32.480><c> were</c><00:09:32.640><c> going</c><00:09:33.040><c> right</c><00:09:33.279><c> and</c><00:09:33.440><c> we</c>
+
+00:09:33.509 --> 00:09:33.519 align:start position:0%
+this position we were going right and we
+ 
+
+00:09:33.519 --> 00:09:34.949 align:start position:0%
+this position we were going right and we
+were<00:09:33.680><c> going</c><00:09:34.000><c> down</c><00:09:34.240><c> trying</c><00:09:34.480><c> to</c><00:09:34.640><c> find</c><00:09:34.800><c> the</c>
+
+00:09:34.949 --> 00:09:34.959 align:start position:0%
+were going down trying to find the
+ 
+
+00:09:34.959 --> 00:09:36.230 align:start position:0%
+were going down trying to find the
+maximum<00:09:35.440><c> value</c><00:09:35.839><c> well</c>
+
+00:09:36.230 --> 00:09:36.240 align:start position:0%
+maximum value well
+ 
+
+00:09:36.240 --> 00:09:38.070 align:start position:0%
+maximum value well
+clearly<00:09:36.640><c> to</c><00:09:36.800><c> the</c><00:09:36.959><c> right</c><00:09:37.200><c> we</c><00:09:37.360><c> get</c><00:09:37.519><c> a</c><00:09:37.600><c> zero</c><00:09:37.920><c> so</c>
+
+00:09:38.070 --> 00:09:38.080 align:start position:0%
+clearly to the right we get a zero so
+ 
+
+00:09:38.080 --> 00:09:39.269 align:start position:0%
+clearly to the right we get a zero so
+that's<00:09:38.240><c> not</c><00:09:38.480><c> the</c><00:09:38.640><c> max</c>
+
+00:09:39.269 --> 00:09:39.279 align:start position:0%
+that's not the max
+ 
+
+00:09:39.279 --> 00:09:41.910 align:start position:0%
+that's not the max
+so<00:09:39.440><c> let's</c><00:09:39.680><c> go</c><00:09:40.080><c> down</c><00:09:40.560><c> okay</c><00:09:40.959><c> now</c><00:09:41.120><c> we're</c><00:09:41.360><c> down</c><00:09:41.760><c> so</c>
+
+00:09:41.910 --> 00:09:41.920 align:start position:0%
+so let's go down okay now we're down so
+ 
+
+00:09:41.920 --> 00:09:43.110 align:start position:0%
+so let's go down okay now we're down so
+what<00:09:42.160><c> are</c><00:09:42.240><c> we</c><00:09:42.320><c> doing</c><00:09:42.480><c> we're</c>
+
+00:09:43.110 --> 00:09:43.120 align:start position:0%
+what are we doing we're
+ 
+
+00:09:43.120 --> 00:09:45.990 align:start position:0%
+what are we doing we're
+finding<00:09:43.440><c> the</c><00:09:43.680><c> lcs</c><00:09:44.560><c> between</c><00:09:45.040><c> this</c><00:09:45.279><c> substring</c>
+
+00:09:45.990 --> 00:09:46.000 align:start position:0%
+finding the lcs between this substring
+ 
+
+00:09:46.000 --> 00:09:46.470 align:start position:0%
+finding the lcs between this substring
+and
+
+00:09:46.470 --> 00:09:46.480 align:start position:0%
+and
+ 
+
+00:09:46.480 --> 00:09:48.470 align:start position:0%
+and
+this<00:09:46.800><c> substring</c><00:09:47.440><c> well</c><00:09:47.680><c> they're</c><00:09:47.920><c> the</c><00:09:48.080><c> exact</c>
+
+00:09:48.470 --> 00:09:48.480 align:start position:0%
+this substring well they're the exact
+ 
+
+00:09:48.480 --> 00:09:50.070 align:start position:0%
+this substring well they're the exact
+same<00:09:48.800><c> right</c><00:09:49.120><c> e</c><00:09:49.440><c> matches</c>
+
+00:09:50.070 --> 00:09:50.080 align:start position:0%
+same right e matches
+ 
+
+00:09:50.080 --> 00:09:52.310 align:start position:0%
+same right e matches
+e<00:09:50.720><c> okay</c><00:09:51.120><c> great</c><00:09:51.519><c> and</c><00:09:51.680><c> remember</c><00:09:52.080><c> when</c>
+
+00:09:52.310 --> 00:09:52.320 align:start position:0%
+e okay great and remember when
+ 
+
+00:09:52.320 --> 00:09:53.990 align:start position:0%
+e okay great and remember when
+characters<00:09:52.800><c> match</c><00:09:53.200><c> each</c><00:09:53.360><c> other</c>
+
+00:09:53.990 --> 00:09:54.000 align:start position:0%
+characters match each other
+ 
+
+00:09:54.000 --> 00:09:56.230 align:start position:0%
+characters match each other
+that's<00:09:54.240><c> when</c><00:09:54.399><c> we</c><00:09:54.640><c> look</c><00:09:55.120><c> diagonally</c><00:09:55.920><c> right</c><00:09:56.080><c> so</c>
+
+00:09:56.230 --> 00:09:56.240 align:start position:0%
+that's when we look diagonally right so
+ 
+
+00:09:56.240 --> 00:09:58.070 align:start position:0%
+that's when we look diagonally right so
+we<00:09:56.480><c> came</c><00:09:56.880><c> down</c><00:09:57.120><c> here</c><00:09:57.360><c> and</c><00:09:57.440><c> now</c><00:09:57.600><c> we're</c><00:09:57.839><c> looking</c>
+
+00:09:58.070 --> 00:09:58.080 align:start position:0%
+we came down here and now we're looking
+ 
+
+00:09:58.080 --> 00:09:59.030 align:start position:0%
+we came down here and now we're looking
+diagonally
+
+00:09:59.030 --> 00:09:59.040 align:start position:0%
+diagonally
+ 
+
+00:09:59.040 --> 00:10:02.150 align:start position:0%
+diagonally
+clearly<00:09:59.600><c> we</c><00:09:59.760><c> get</c><00:09:59.920><c> a</c><00:10:00.000><c> zero</c><00:10:00.399><c> here</c><00:10:00.640><c> right</c><00:10:01.120><c> so</c>
+
+00:10:02.150 --> 00:10:02.160 align:start position:0%
+clearly we get a zero here right so
+ 
+
+00:10:02.160 --> 00:10:05.190 align:start position:0%
+clearly we get a zero here right so
+zero<00:10:02.880><c> plus</c><00:10:03.680><c> one</c><00:10:04.160><c> the</c><00:10:04.320><c> reason</c><00:10:04.640><c> we're</c><00:10:04.800><c> doing</c><00:10:04.959><c> a</c>
+
+00:10:05.190 --> 00:10:05.200 align:start position:0%
+zero plus one the reason we're doing a
+ 
+
+00:10:05.200 --> 00:10:05.590 align:start position:0%
+zero plus one the reason we're doing a
+plus
+
+00:10:05.590 --> 00:10:05.600 align:start position:0%
+plus
+ 
+
+00:10:05.600 --> 00:10:07.910 align:start position:0%
+plus
+one<00:10:05.920><c> here</c><00:10:06.240><c> is</c><00:10:06.399><c> because</c><00:10:06.640><c> we</c><00:10:06.880><c> found</c><00:10:07.440><c> matching</c>
+
+00:10:07.910 --> 00:10:07.920 align:start position:0%
+one here is because we found matching
+ 
+
+00:10:07.920 --> 00:10:09.509 align:start position:0%
+one here is because we found matching
+characters<00:10:08.320><c> when</c><00:10:08.560><c> characters</c><00:10:09.040><c> match</c>
+
+00:10:09.509 --> 00:10:09.519 align:start position:0%
+characters when characters match
+ 
+
+00:10:09.519 --> 00:10:13.030 align:start position:0%
+characters when characters match
+we<00:10:09.839><c> add</c><00:10:10.160><c> one</c><00:10:10.480><c> because</c><00:10:10.880><c> clearly</c><00:10:11.760><c> the</c><00:10:12.399><c> lcs</c>
+
+00:10:13.030 --> 00:10:13.040 align:start position:0%
+we add one because clearly the lcs
+ 
+
+00:10:13.040 --> 00:10:15.110 align:start position:0%
+we add one because clearly the lcs
+between<00:10:13.360><c> these</c><00:10:13.680><c> is</c><00:10:13.839><c> going</c><00:10:14.000><c> to</c><00:10:14.160><c> at</c><00:10:14.399><c> least</c><00:10:14.800><c> be</c>
+
+00:10:15.110 --> 00:10:15.120 align:start position:0%
+between these is going to at least be
+ 
+
+00:10:15.120 --> 00:10:16.790 align:start position:0%
+between these is going to at least be
+one<00:10:15.440><c> right</c><00:10:15.760><c> at</c><00:10:15.920><c> least</c><00:10:16.240><c> one</c><00:10:16.480><c> of</c><00:10:16.560><c> these</c>
+
+00:10:16.790 --> 00:10:16.800 align:start position:0%
+one right at least one of these
+ 
+
+00:10:16.800 --> 00:10:18.310 align:start position:0%
+one right at least one of these
+characters<00:10:17.279><c> matches</c>
+
+00:10:18.310 --> 00:10:18.320 align:start position:0%
+characters matches
+ 
+
+00:10:18.320 --> 00:10:20.630 align:start position:0%
+characters matches
+so<00:10:18.560><c> now</c><00:10:18.800><c> i'm</c><00:10:19.040><c> basically</c><00:10:19.519><c> gonna</c><00:10:19.839><c> go</c><00:10:20.079><c> here</c><00:10:20.560><c> and</c>
+
+00:10:20.630 --> 00:10:20.640 align:start position:0%
+so now i'm basically gonna go here and
+ 
+
+00:10:20.640 --> 00:10:21.509 align:start position:0%
+so now i'm basically gonna go here and
+then<00:10:20.880><c> take</c><00:10:21.120><c> us</c>
+
+00:10:21.509 --> 00:10:21.519 align:start position:0%
+then take us
+ 
+
+00:10:21.519 --> 00:10:24.069 align:start position:0%
+then take us
+back<00:10:21.920><c> along</c><00:10:22.320><c> the</c><00:10:22.560><c> path</c><00:10:22.959><c> that</c><00:10:23.120><c> we</c><00:10:23.440><c> came</c><00:10:23.760><c> from</c>
+
+00:10:24.069 --> 00:10:24.079 align:start position:0%
+back along the path that we came from
+ 
+
+00:10:24.079 --> 00:10:26.150 align:start position:0%
+back along the path that we came from
+and<00:10:24.160><c> then</c><00:10:24.480><c> show</c><00:10:24.720><c> you</c><00:10:24.959><c> what</c><00:10:25.200><c> the</c><00:10:25.360><c> solution</c>
+
+00:10:26.150 --> 00:10:26.160 align:start position:0%
+and then show you what the solution
+ 
+
+00:10:26.160 --> 00:10:29.190 align:start position:0%
+and then show you what the solution
+is<00:10:26.800><c> so</c><00:10:26.959><c> we</c><00:10:27.120><c> had</c><00:10:27.360><c> a</c><00:10:27.680><c> one</c><00:10:28.000><c> here</c><00:10:28.320><c> right</c><00:10:28.720><c> and</c><00:10:28.959><c> so</c>
+
+00:10:29.190 --> 00:10:29.200 align:start position:0%
+is so we had a one here right and so
+ 
+
+00:10:29.200 --> 00:10:30.630 align:start position:0%
+is so we had a one here right and so
+from<00:10:29.360><c> this</c><00:10:29.600><c> position</c><00:10:30.000><c> we</c><00:10:30.240><c> went</c>
+
+00:10:30.630 --> 00:10:30.640 align:start position:0%
+from this position we went
+ 
+
+00:10:30.640 --> 00:10:32.790 align:start position:0%
+from this position we went
+down<00:10:31.279><c> so</c><00:10:31.600><c> since</c><00:10:31.839><c> we</c><00:10:32.000><c> were</c><00:10:32.079><c> going</c><00:10:32.399><c> down</c><00:10:32.640><c> that</c>
+
+00:10:32.790 --> 00:10:32.800 align:start position:0%
+down so since we were going down that
+ 
+
+00:10:32.800 --> 00:10:34.150 align:start position:0%
+down so since we were going down that
+means<00:10:33.120><c> that</c><00:10:33.279><c> this</c><00:10:33.519><c> character</c><00:10:33.920><c> and</c><00:10:34.000><c> this</c>
+
+00:10:34.150 --> 00:10:34.160 align:start position:0%
+means that this character and this
+ 
+
+00:10:34.160 --> 00:10:35.829 align:start position:0%
+means that this character and this
+character<00:10:34.480><c> did</c><00:10:34.640><c> not</c><00:10:34.880><c> match</c><00:10:35.200><c> each</c><00:10:35.440><c> other</c><00:10:35.680><c> so</c>
+
+00:10:35.829 --> 00:10:35.839 align:start position:0%
+character did not match each other so
+ 
+
+00:10:35.839 --> 00:10:37.190 align:start position:0%
+character did not match each other so
+what<00:10:36.000><c> we're</c><00:10:36.160><c> gonna</c><00:10:36.320><c> do</c><00:10:36.560><c> is</c><00:10:36.720><c> just</c>
+
+00:10:37.190 --> 00:10:37.200 align:start position:0%
+what we're gonna do is just
+ 
+
+00:10:37.200 --> 00:10:40.470 align:start position:0%
+what we're gonna do is just
+take<00:10:38.000><c> the</c><00:10:38.240><c> one</c><00:10:38.640><c> and</c><00:10:38.880><c> put</c><00:10:39.120><c> it</c><00:10:39.440><c> up</c><00:10:39.680><c> here</c><00:10:40.079><c> right</c><00:10:40.320><c> so</c>
+
+00:10:40.470 --> 00:10:40.480 align:start position:0%
+take the one and put it up here right so
+ 
+
+00:10:40.480 --> 00:10:42.150 align:start position:0%
+take the one and put it up here right so
+there's<00:10:40.720><c> gonna</c><00:10:40.880><c> be</c><00:10:41.040><c> a</c><00:10:41.279><c> one</c><00:10:41.600><c> here</c>
+
+00:10:42.150 --> 00:10:42.160 align:start position:0%
+there's gonna be a one here
+ 
+
+00:10:42.160 --> 00:10:45.670 align:start position:0%
+there's gonna be a one here
+because<00:10:42.399><c> the</c><00:10:42.560><c> lcs</c><00:10:43.200><c> between</c><00:10:43.600><c> these</c><00:10:43.839><c> two</c><00:10:44.240><c> is</c><00:10:44.800><c> one</c>
+
+00:10:45.670 --> 00:10:45.680 align:start position:0%
+because the lcs between these two is one
+ 
+
+00:10:45.680 --> 00:10:48.230 align:start position:0%
+because the lcs between these two is one
+but<00:10:46.079><c> now</c><00:10:46.399><c> we're</c><00:10:46.560><c> gonna</c><00:10:46.800><c> go</c><00:10:47.040><c> back</c><00:10:47.519><c> over</c><00:10:47.839><c> here</c>
+
+00:10:48.230 --> 00:10:48.240 align:start position:0%
+but now we're gonna go back over here
+ 
+
+00:10:48.240 --> 00:10:49.509 align:start position:0%
+but now we're gonna go back over here
+diagonally<00:10:49.120><c> right</c>
+
+00:10:49.509 --> 00:10:49.519 align:start position:0%
+diagonally right
+ 
+
+00:10:49.519 --> 00:10:51.670 align:start position:0%
+diagonally right
+diagonally<00:10:50.240><c> means</c><00:10:50.560><c> that</c><00:10:50.720><c> this</c><00:10:51.040><c> character</c>
+
+00:10:51.670 --> 00:10:51.680 align:start position:0%
+diagonally means that this character
+ 
+
+00:10:51.680 --> 00:10:53.590 align:start position:0%
+diagonally means that this character
+matched<00:10:52.480><c> this</c><00:10:52.720><c> character</c><00:10:53.200><c> right</c>
+
+00:10:53.590 --> 00:10:53.600 align:start position:0%
+matched this character right
+ 
+
+00:10:53.600 --> 00:10:55.430 align:start position:0%
+matched this character right
+so<00:10:53.760><c> we're</c><00:10:53.920><c> going</c><00:10:54.000><c> to</c><00:10:54.160><c> take</c><00:10:54.640><c> the</c><00:10:54.800><c> value</c><00:10:55.120><c> that</c><00:10:55.279><c> we</c>
+
+00:10:55.430 --> 00:10:55.440 align:start position:0%
+so we're going to take the value that we
+ 
+
+00:10:55.440 --> 00:10:57.829 align:start position:0%
+so we're going to take the value that we
+got<00:10:55.760><c> up</c><00:10:55.920><c> here</c><00:10:56.560><c> put</c><00:10:56.880><c> it</c><00:10:57.040><c> over</c><00:10:57.360><c> here</c>
+
+00:10:57.829 --> 00:10:57.839 align:start position:0%
+got up here put it over here
+ 
+
+00:10:57.839 --> 00:11:00.710 align:start position:0%
+got up here put it over here
+and<00:10:58.240><c> add</c><00:10:58.640><c> one</c><00:10:58.880><c> because</c><00:10:59.200><c> remember</c><00:10:59.680><c> these</c><00:11:00.399><c> match</c>
+
+00:11:00.710 --> 00:11:00.720 align:start position:0%
+and add one because remember these match
+ 
+
+00:11:00.720 --> 00:11:02.150 align:start position:0%
+and add one because remember these match
+each<00:11:00.880><c> other</c><00:11:01.040><c> so</c><00:11:01.200><c> we're</c><00:11:01.360><c> adding</c><00:11:01.680><c> one</c>
+
+00:11:02.150 --> 00:11:02.160 align:start position:0%
+each other so we're adding one
+ 
+
+00:11:02.160 --> 00:11:03.430 align:start position:0%
+each other so we're adding one
+that<00:11:02.320><c> means</c><00:11:02.560><c> we're</c><00:11:02.720><c> going</c><00:11:02.800><c> to</c><00:11:02.880><c> end</c><00:11:03.040><c> up</c><00:11:03.120><c> putting</c>
+
+00:11:03.430 --> 00:11:03.440 align:start position:0%
+that means we're going to end up putting
+ 
+
+00:11:03.440 --> 00:11:05.829 align:start position:0%
+that means we're going to end up putting
+a<00:11:03.760><c> two</c><00:11:04.560><c> in</c><00:11:04.640><c> this</c><00:11:04.959><c> position</c>
+
+00:11:05.829 --> 00:11:05.839 align:start position:0%
+a two in this position
+ 
+
+00:11:05.839 --> 00:11:08.710 align:start position:0%
+a two in this position
+and<00:11:06.079><c> now</c><00:11:06.560><c> we're</c><00:11:07.120><c> we</c><00:11:07.360><c> we're</c><00:11:07.519><c> going</c><00:11:08.000><c> up</c><00:11:08.480><c> right</c>
+
+00:11:08.710 --> 00:11:08.720 align:start position:0%
+and now we're we we're going up right
+ 
+
+00:11:08.720 --> 00:11:09.590 align:start position:0%
+and now we're we we're going up right
+we're<00:11:08.880><c> going</c><00:11:09.279><c> up</c>
+
+00:11:09.590 --> 00:11:09.600 align:start position:0%
+we're going up
+ 
+
+00:11:09.600 --> 00:11:11.269 align:start position:0%
+we're going up
+because<00:11:09.760><c> that's</c><00:11:10.000><c> where</c><00:11:10.160><c> we</c><00:11:10.320><c> came</c><00:11:10.640><c> from</c><00:11:11.040><c> and</c>
+
+00:11:11.269 --> 00:11:11.279 align:start position:0%
+because that's where we came from and
+ 
+
+00:11:11.279 --> 00:11:13.110 align:start position:0%
+because that's where we came from and
+remember<00:11:11.680><c> when</c><00:11:11.839><c> you</c><00:11:12.000><c> go</c><00:11:12.320><c> up</c><00:11:12.560><c> that</c><00:11:12.720><c> means</c><00:11:12.959><c> the</c>
+
+00:11:13.110 --> 00:11:13.120 align:start position:0%
+remember when you go up that means the
+ 
+
+00:11:13.120 --> 00:11:14.790 align:start position:0%
+remember when you go up that means the
+characters<00:11:13.519><c> did</c><00:11:13.600><c> not</c><00:11:13.920><c> match</c><00:11:14.160><c> each</c><00:11:14.320><c> other</c><00:11:14.640><c> the</c>
+
+00:11:14.790 --> 00:11:14.800 align:start position:0%
+characters did not match each other the
+ 
+
+00:11:14.800 --> 00:11:15.030 align:start position:0%
+characters did not match each other the
+c
+
+00:11:15.030 --> 00:11:15.040 align:start position:0%
+c
+ 
+
+00:11:15.040 --> 00:11:16.310 align:start position:0%
+c
+and<00:11:15.120><c> the</c><00:11:15.200><c> b</c><00:11:15.440><c> don't</c><00:11:15.600><c> match</c><00:11:15.839><c> each</c><00:11:16.000><c> other</c><00:11:16.160><c> so</c>
+
+00:11:16.310 --> 00:11:16.320 align:start position:0%
+and the b don't match each other so
+ 
+
+00:11:16.320 --> 00:11:18.150 align:start position:0%
+and the b don't match each other so
+we're<00:11:16.480><c> going</c><00:11:16.560><c> to</c><00:11:16.640><c> put</c><00:11:16.800><c> a</c><00:11:16.959><c> 2</c><00:11:17.279><c> here</c><00:11:17.760><c> right</c><00:11:18.000><c> we're</c>
+
+00:11:18.150 --> 00:11:18.160 align:start position:0%
+we're going to put a 2 here right we're
+ 
+
+00:11:18.160 --> 00:11:19.350 align:start position:0%
+we're going to put a 2 here right we're
+just<00:11:18.320><c> taking</c><00:11:18.560><c> this</c><00:11:18.880><c> 2</c>
+
+00:11:19.350 --> 00:11:19.360 align:start position:0%
+just taking this 2
+ 
+
+00:11:19.360 --> 00:11:21.750 align:start position:0%
+just taking this 2
+and<00:11:19.519><c> putting</c><00:11:19.839><c> it</c><00:11:20.000><c> over</c><00:11:20.240><c> here</c><00:11:20.800><c> and</c><00:11:21.279><c> lastly</c>
+
+00:11:21.750 --> 00:11:21.760 align:start position:0%
+and putting it over here and lastly
+ 
+
+00:11:21.760 --> 00:11:23.030 align:start position:0%
+and putting it over here and lastly
+we're<00:11:22.000><c> going</c><00:11:22.320><c> back</c>
+
+00:11:23.030 --> 00:11:23.040 align:start position:0%
+we're going back
+ 
+
+00:11:23.040 --> 00:11:24.550 align:start position:0%
+we're going back
+here<00:11:23.360><c> that's</c><00:11:23.600><c> where</c><00:11:23.760><c> we</c><00:11:23.920><c> came</c><00:11:24.160><c> from</c><00:11:24.399><c> right</c>
+
+00:11:24.550 --> 00:11:24.560 align:start position:0%
+here that's where we came from right
+ 
+
+00:11:24.560 --> 00:11:26.310 align:start position:0%
+here that's where we came from right
+diagonally<00:11:25.279><c> that</c><00:11:25.440><c> means</c><00:11:25.760><c> the</c><00:11:25.839><c> characters</c>
+
+00:11:26.310 --> 00:11:26.320 align:start position:0%
+diagonally that means the characters
+ 
+
+00:11:26.320 --> 00:11:28.069 align:start position:0%
+diagonally that means the characters
+were<00:11:26.560><c> matching</c><00:11:26.959><c> each</c><00:11:27.200><c> other</c><00:11:27.360><c> so</c><00:11:27.519><c> we</c><00:11:27.680><c> can</c><00:11:27.839><c> add</c>
+
+00:11:28.069 --> 00:11:28.079 align:start position:0%
+were matching each other so we can add
+ 
+
+00:11:28.079 --> 00:11:28.550 align:start position:0%
+were matching each other so we can add
+at<00:11:28.160><c> least</c>
+
+00:11:28.550 --> 00:11:28.560 align:start position:0%
+at least
+ 
+
+00:11:28.560 --> 00:11:31.110 align:start position:0%
+at least
+one<00:11:29.200><c> character</c><00:11:29.839><c> so</c><00:11:30.160><c> two</c><00:11:30.399><c> plus</c><00:11:30.640><c> one</c><00:11:30.880><c> that's</c>
+
+00:11:31.110 --> 00:11:31.120 align:start position:0%
+one character so two plus one that's
+ 
+
+00:11:31.120 --> 00:11:31.590 align:start position:0%
+one character so two plus one that's
+going<00:11:31.200><c> to</c><00:11:31.279><c> be</c>
+
+00:11:31.590 --> 00:11:31.600 align:start position:0%
+going to be
+ 
+
+00:11:31.600 --> 00:11:34.230 align:start position:0%
+going to be
+three<00:11:32.720><c> this</c><00:11:32.959><c> is</c><00:11:33.120><c> how</c><00:11:33.279><c> we</c><00:11:33.519><c> got</c><00:11:33.760><c> the</c><00:11:33.839><c> result</c>
+
+00:11:34.230 --> 00:11:34.240 align:start position:0%
+three this is how we got the result
+ 
+
+00:11:34.240 --> 00:11:35.190 align:start position:0%
+three this is how we got the result
+right<00:11:34.480><c> so</c><00:11:34.640><c> we</c><00:11:34.800><c> got</c><00:11:34.959><c> a</c>
+
+00:11:35.190 --> 00:11:35.200 align:start position:0%
+right so we got a
+ 
+
+00:11:35.200 --> 00:11:37.269 align:start position:0%
+right so we got a
+three<00:11:35.519><c> meaning</c><00:11:35.839><c> that</c><00:11:36.000><c> the</c><00:11:36.079><c> lcs</c><00:11:36.640><c> between</c><00:11:37.040><c> these</c>
+
+00:11:37.269 --> 00:11:37.279 align:start position:0%
+three meaning that the lcs between these
+ 
+
+00:11:37.279 --> 00:11:39.829 align:start position:0%
+three meaning that the lcs between these
+two<00:11:37.519><c> strings</c><00:11:38.000><c> is</c><00:11:38.240><c> three</c><00:11:38.640><c> right</c><00:11:38.959><c> and</c><00:11:39.040><c> that's</c>
+
+00:11:39.829 --> 00:11:39.839 align:start position:0%
+two strings is three right and that's
+ 
+
+00:11:39.839 --> 00:11:41.430 align:start position:0%
+two strings is three right and that's
+what<00:11:40.000><c> we</c><00:11:40.240><c> learned</c><00:11:40.640><c> from</c><00:11:40.800><c> the</c><00:11:41.040><c> problem</c>
+
+00:11:41.430 --> 00:11:41.440 align:start position:0%
+what we learned from the problem
+ 
+
+00:11:41.440 --> 00:11:42.790 align:start position:0%
+what we learned from the problem
+explanation<00:11:42.000><c> so</c><00:11:42.240><c> right</c><00:11:42.399><c> what</c><00:11:42.560><c> we're</c><00:11:42.640><c> going</c><00:11:42.720><c> to</c>
+
+00:11:42.790 --> 00:11:42.800 align:start position:0%
+explanation so right what we're going to
+ 
+
+00:11:42.800 --> 00:11:43.670 align:start position:0%
+explanation so right what we're going to
+do<00:11:43.040><c> is</c><00:11:43.200><c> return</c>
+
+00:11:43.670 --> 00:11:43.680 align:start position:0%
+do is return
+ 
+
+00:11:43.680 --> 00:11:46.310 align:start position:0%
+do is return
+3<00:11:44.000><c> that's</c><00:11:44.320><c> our</c><00:11:44.480><c> result</c><00:11:45.440><c> but</c><00:11:45.600><c> you</c><00:11:45.760><c> can</c><00:11:45.920><c> see</c><00:11:46.160><c> that</c>
+
+00:11:46.310 --> 00:11:46.320 align:start position:0%
+3 that's our result but you can see that
+ 
+
+00:11:46.320 --> 00:11:46.949 align:start position:0%
+3 that's our result but you can see that
+the<00:11:46.560><c> way</c>
+
+00:11:46.949 --> 00:11:46.959 align:start position:0%
+the way
+ 
+
+00:11:46.959 --> 00:11:49.990 align:start position:0%
+the way
+i<00:11:47.279><c> did</c><00:11:47.519><c> it</c><00:11:47.680><c> was</c><00:11:48.320><c> basically</c><00:11:48.959><c> intuitive</c><00:11:49.600><c> right</c><00:11:49.839><c> i</c>
+
+00:11:49.990 --> 00:11:50.000 align:start position:0%
+i did it was basically intuitive right i
+ 
+
+00:11:50.000 --> 00:11:51.910 align:start position:0%
+i did it was basically intuitive right i
+used<00:11:50.240><c> this</c><00:11:50.480><c> picture</c><00:11:50.880><c> and</c><00:11:50.959><c> basically</c><00:11:51.519><c> solved</c>
+
+00:11:51.910 --> 00:11:51.920 align:start position:0%
+used this picture and basically solved
+ 
+
+00:11:51.920 --> 00:11:53.350 align:start position:0%
+used this picture and basically solved
+this<00:11:52.240><c> problem</c><00:11:52.639><c> by</c><00:11:52.880><c> hand</c>
+
+00:11:53.350 --> 00:11:53.360 align:start position:0%
+this problem by hand
+ 
+
+00:11:53.360 --> 00:11:55.350 align:start position:0%
+this problem by hand
+using<00:11:53.680><c> a</c><00:11:53.760><c> little</c><00:11:54.000><c> intuition</c><00:11:54.639><c> and</c><00:11:54.720><c> stuff</c><00:11:55.040><c> right</c>
+
+00:11:55.350 --> 00:11:55.360 align:start position:0%
+using a little intuition and stuff right
+ 
+
+00:11:55.360 --> 00:11:56.710 align:start position:0%
+using a little intuition and stuff right
+but<00:11:55.519><c> the</c><00:11:55.680><c> way</c><00:11:55.839><c> we're</c><00:11:56.000><c> gonna</c><00:11:56.160><c> have</c><00:11:56.320><c> to</c><00:11:56.480><c> solve</c>
+
+00:11:56.710 --> 00:11:56.720 align:start position:0%
+but the way we're gonna have to solve
+ 
+
+00:11:56.720 --> 00:11:57.350 align:start position:0%
+but the way we're gonna have to solve
+this<00:11:56.959><c> with</c>
+
+00:11:57.350 --> 00:11:57.360 align:start position:0%
+this with
+ 
+
+00:11:57.360 --> 00:12:00.150 align:start position:0%
+this with
+code<00:11:57.760><c> is</c><00:11:57.920><c> gonna</c><00:11:58.160><c> be</c><00:11:58.399><c> brute</c><00:11:58.959><c> force</c><00:11:59.519><c> ish</c><00:12:00.000><c> right</c>
+
+00:12:00.150 --> 00:12:00.160 align:start position:0%
+code is gonna be brute force ish right
+ 
+
+00:12:00.160 --> 00:12:01.670 align:start position:0%
+code is gonna be brute force ish right
+so<00:12:00.320><c> it's</c><00:12:00.480><c> dynamic</c><00:12:00.959><c> programming</c>
+
+00:12:01.670 --> 00:12:01.680 align:start position:0%
+so it's dynamic programming
+ 
+
+00:12:01.680 --> 00:12:03.590 align:start position:0%
+so it's dynamic programming
+but<00:12:01.839><c> what</c><00:12:02.000><c> we're</c><00:12:02.079><c> gonna</c><00:12:02.240><c> have</c><00:12:02.399><c> to</c><00:12:02.639><c> do</c><00:12:03.120><c> is</c><00:12:03.360><c> for</c>
+
+00:12:03.590 --> 00:12:03.600 align:start position:0%
+but what we're gonna have to do is for
+ 
+
+00:12:03.600 --> 00:12:05.030 align:start position:0%
+but what we're gonna have to do is for
+every<00:12:04.160><c> value</c>
+
+00:12:05.030 --> 00:12:05.040 align:start position:0%
+every value
+ 
+
+00:12:05.040 --> 00:12:07.509 align:start position:0%
+every value
+in<00:12:05.519><c> this</c><00:12:06.000><c> cell</c><00:12:06.480><c> right</c><00:12:06.800><c> so</c><00:12:07.120><c> we</c><00:12:07.279><c> are</c><00:12:07.360><c> gonna</c>
+
+00:12:07.509 --> 00:12:07.519 align:start position:0%
+in this cell right so we are gonna
+ 
+
+00:12:07.519 --> 00:12:08.550 align:start position:0%
+in this cell right so we are gonna
+initialize<00:12:08.079><c> these</c>
+
+00:12:08.550 --> 00:12:08.560 align:start position:0%
+initialize these
+ 
+
+00:12:08.560 --> 00:12:11.430 align:start position:0%
+initialize these
+zeros<00:12:09.120><c> right</c><00:12:09.680><c> but</c><00:12:10.399><c> with</c><00:12:10.560><c> this</c><00:12:10.800><c> matrix</c><00:12:11.279><c> right</c>
+
+00:12:11.430 --> 00:12:11.440 align:start position:0%
+zeros right but with this matrix right
+ 
+
+00:12:11.440 --> 00:12:12.710 align:start position:0%
+zeros right but with this matrix right
+this<00:12:11.680><c> 2d</c><00:12:12.079><c> matrix</c>
+
+00:12:12.710 --> 00:12:12.720 align:start position:0%
+this 2d matrix
+ 
+
+00:12:12.720 --> 00:12:15.190 align:start position:0%
+this 2d matrix
+we<00:12:12.959><c> want</c><00:12:13.200><c> the</c><00:12:13.360><c> value</c><00:12:13.760><c> that</c><00:12:14.000><c> goes</c><00:12:14.399><c> up</c><00:12:14.800><c> here</c>
+
+00:12:15.190 --> 00:12:15.200 align:start position:0%
+we want the value that goes up here
+ 
+
+00:12:15.200 --> 00:12:17.509 align:start position:0%
+we want the value that goes up here
+right<00:12:15.600><c> and</c><00:12:15.839><c> to</c><00:12:16.160><c> do</c><00:12:16.399><c> that</c><00:12:16.639><c> we</c><00:12:16.880><c> have</c><00:12:16.959><c> to</c><00:12:17.120><c> compute</c>
+
+00:12:17.509 --> 00:12:17.519 align:start position:0%
+right and to do that we have to compute
+ 
+
+00:12:17.519 --> 00:12:18.230 align:start position:0%
+right and to do that we have to compute
+the<00:12:17.680><c> value</c>
+
+00:12:18.230 --> 00:12:18.240 align:start position:0%
+the value
+ 
+
+00:12:18.240 --> 00:12:20.230 align:start position:0%
+the value
+that<00:12:18.480><c> goes</c><00:12:18.800><c> here</c><00:12:19.120><c> that</c><00:12:19.279><c> goes</c><00:12:19.600><c> here</c><00:12:19.839><c> that</c><00:12:20.000><c> goes</c>
+
+00:12:20.230 --> 00:12:20.240 align:start position:0%
+that goes here that goes here that goes
+ 
+
+00:12:20.240 --> 00:12:21.910 align:start position:0%
+that goes here that goes here that goes
+here<00:12:20.720><c> and</c><00:12:20.959><c> basically</c><00:12:21.519><c> for</c>
+
+00:12:21.910 --> 00:12:21.920 align:start position:0%
+here and basically for
+ 
+
+00:12:21.920 --> 00:12:25.190 align:start position:0%
+here and basically for
+all<00:12:22.240><c> these</c><00:12:23.279><c> and</c><00:12:23.519><c> then</c><00:12:24.160><c> finally</c><00:12:24.720><c> we'll</c><00:12:24.880><c> be</c><00:12:25.040><c> able</c>
+
+00:12:25.190 --> 00:12:25.200 align:start position:0%
+all these and then finally we'll be able
+ 
+
+00:12:25.200 --> 00:12:26.949 align:start position:0%
+all these and then finally we'll be able
+to<00:12:25.360><c> have</c><00:12:25.600><c> the</c><00:12:25.760><c> value</c><00:12:26.079><c> that</c><00:12:26.240><c> goes</c><00:12:26.480><c> here</c><00:12:26.639><c> which</c>
+
+00:12:26.949 --> 00:12:26.959 align:start position:0%
+to have the value that goes here which
+ 
+
+00:12:26.959 --> 00:12:29.269 align:start position:0%
+to have the value that goes here which
+is<00:12:27.120><c> the</c><00:12:27.360><c> result</c><00:12:27.760><c> that</c><00:12:27.920><c> we're</c><00:12:28.240><c> going</c><00:12:28.320><c> to</c><00:12:28.399><c> return</c>
+
+00:12:29.269 --> 00:12:29.279 align:start position:0%
+is the result that we're going to return
+ 
+
+00:12:29.279 --> 00:12:30.949 align:start position:0%
+is the result that we're going to return
+and<00:12:29.440><c> so</c><00:12:29.680><c> basically</c><00:12:30.079><c> what</c><00:12:30.240><c> i'm</c><00:12:30.399><c> saying</c><00:12:30.639><c> is</c><00:12:30.720><c> this</c>
+
+00:12:30.949 --> 00:12:30.959 align:start position:0%
+and so basically what i'm saying is this
+ 
+
+00:12:30.959 --> 00:12:32.550 align:start position:0%
+and so basically what i'm saying is this
+is<00:12:31.040><c> going</c><00:12:31.200><c> to</c><00:12:31.360><c> be</c><00:12:31.600><c> a</c><00:12:31.920><c> bottom</c>
+
+00:12:32.550 --> 00:12:32.560 align:start position:0%
+is going to be a bottom
+ 
+
+00:12:32.560 --> 00:12:35.350 align:start position:0%
+is going to be a bottom
+up<00:12:33.040><c> dynamic</c><00:12:33.519><c> programming</c><00:12:34.079><c> solution</c><00:12:34.639><c> right</c>
+
+00:12:35.350 --> 00:12:35.360 align:start position:0%
+up dynamic programming solution right
+ 
+
+00:12:35.360 --> 00:12:35.990 align:start position:0%
+up dynamic programming solution right
+bottom
+
+00:12:35.990 --> 00:12:36.000 align:start position:0%
+bottom
+ 
+
+00:12:36.000 --> 00:12:37.670 align:start position:0%
+bottom
+up<00:12:36.399><c> meaning</c><00:12:36.720><c> we're</c><00:12:36.880><c> going</c><00:12:36.880><c> gonna</c><00:12:37.120><c> solve</c><00:12:37.360><c> it</c><00:12:37.519><c> in</c>
+
+00:12:37.670 --> 00:12:37.680 align:start position:0%
+up meaning we're going gonna solve it in
+ 
+
+00:12:37.680 --> 00:12:39.910 align:start position:0%
+up meaning we're going gonna solve it in
+reverse<00:12:38.320><c> order</c><00:12:38.639><c> we're</c><00:12:38.800><c> gonna</c><00:12:39.040><c> first</c>
+
+00:12:39.910 --> 00:12:39.920 align:start position:0%
+reverse order we're gonna first
+ 
+
+00:12:39.920 --> 00:12:42.069 align:start position:0%
+reverse order we're gonna first
+get<00:12:40.320><c> every</c><00:12:40.720><c> value</c><00:12:41.519><c> we're</c><00:12:41.680><c> gonna</c><00:12:41.839><c> get</c><00:12:41.920><c> the</c>
+
+00:12:42.069 --> 00:12:42.079 align:start position:0%
+get every value we're gonna get the
+ 
+
+00:12:42.079 --> 00:12:43.910 align:start position:0%
+get every value we're gonna get the
+value<00:12:42.320><c> that</c><00:12:42.480><c> goes</c><00:12:42.720><c> here</c><00:12:42.959><c> and</c><00:12:43.040><c> then</c><00:12:43.360><c> work</c><00:12:43.680><c> our</c>
+
+00:12:43.910 --> 00:12:43.920 align:start position:0%
+value that goes here and then work our
+ 
+
+00:12:43.920 --> 00:12:44.550 align:start position:0%
+value that goes here and then work our
+way
+
+00:12:44.550 --> 00:12:44.560 align:start position:0%
+way
+ 
+
+00:12:44.560 --> 00:12:47.269 align:start position:0%
+way
+up<00:12:44.959><c> until</c><00:12:45.360><c> we</c><00:12:45.600><c> get</c><00:12:45.760><c> to</c><00:12:45.920><c> the</c><00:12:46.079><c> result</c><00:12:46.959><c> and</c><00:12:47.120><c> you</c>
+
+00:12:47.269 --> 00:12:47.279 align:start position:0%
+up until we get to the result and you
+ 
+
+00:12:47.279 --> 00:12:49.269 align:start position:0%
+up until we get to the result and you
+might<00:12:47.440><c> have</c><00:12:47.600><c> noticed</c><00:12:48.000><c> see</c><00:12:48.240><c> i</c><00:12:48.399><c> have</c><00:12:48.480><c> an</c><00:12:48.720><c> i</c><00:12:49.040><c> that</c>
+
+00:12:49.269 --> 00:12:49.279 align:start position:0%
+might have noticed see i have an i that
+ 
+
+00:12:49.279 --> 00:12:49.990 align:start position:0%
+might have noticed see i have an i that
+tells<00:12:49.600><c> us</c>
+
+00:12:49.990 --> 00:12:50.000 align:start position:0%
+tells us
+ 
+
+00:12:50.000 --> 00:12:53.190 align:start position:0%
+tells us
+the<00:12:50.240><c> column</c><00:12:50.639><c> i</c><00:12:50.800><c> have</c><00:12:50.959><c> a</c><00:12:51.120><c> j</c><00:12:51.440><c> that</c><00:12:51.600><c> tells</c><00:12:52.000><c> us</c>
+
+00:12:53.190 --> 00:12:53.200 align:start position:0%
+the column i have a j that tells us
+ 
+
+00:12:53.200 --> 00:12:54.949 align:start position:0%
+the column i have a j that tells us
+actually<00:12:53.519><c> the</c><00:12:53.600><c> column</c><00:12:54.000><c> and</c><00:12:54.079><c> the</c><00:12:54.240><c> i</c><00:12:54.480><c> tells</c><00:12:54.800><c> us</c>
+
+00:12:54.949 --> 00:12:54.959 align:start position:0%
+actually the column and the i tells us
+ 
+
+00:12:54.959 --> 00:12:56.629 align:start position:0%
+actually the column and the i tells us
+what<00:12:55.200><c> the</c><00:12:55.440><c> row</c><00:12:55.920><c> is</c>
+
+00:12:56.629 --> 00:12:56.639 align:start position:0%
+what the row is
+ 
+
+00:12:56.639 --> 00:12:58.150 align:start position:0%
+what the row is
+and<00:12:56.800><c> so</c><00:12:56.959><c> when</c><00:12:57.120><c> we're</c><00:12:57.360><c> working</c><00:12:57.680><c> our</c><00:12:57.839><c> way</c>
+
+00:12:58.150 --> 00:12:58.160 align:start position:0%
+and so when we're working our way
+ 
+
+00:12:58.160 --> 00:12:59.590 align:start position:0%
+and so when we're working our way
+starting<00:12:58.480><c> at</c><00:12:58.560><c> the</c><00:12:58.720><c> bottom</c><00:12:59.040><c> and</c><00:12:59.120><c> then</c><00:12:59.279><c> working</c>
+
+00:12:59.590 --> 00:12:59.600 align:start position:0%
+starting at the bottom and then working
+ 
+
+00:12:59.600 --> 00:13:00.310 align:start position:0%
+starting at the bottom and then working
+our<00:12:59.680><c> way</c><00:13:00.000><c> up</c>
+
+00:13:00.310 --> 00:13:00.320 align:start position:0%
+our way up
+ 
+
+00:13:00.320 --> 00:13:02.389 align:start position:0%
+our way up
+how<00:13:00.480><c> are</c><00:13:00.639><c> we</c><00:13:00.800><c> going</c><00:13:00.880><c> to</c><00:13:01.200><c> determine</c><00:13:01.760><c> what</c><00:13:02.000><c> value</c>
+
+00:13:02.389 --> 00:13:02.399 align:start position:0%
+how are we going to determine what value
+ 
+
+00:13:02.399 --> 00:13:03.350 align:start position:0%
+how are we going to determine what value
+goes<00:13:02.639><c> in</c><00:13:02.720><c> each</c><00:13:02.959><c> cell</c>
+
+00:13:03.350 --> 00:13:03.360 align:start position:0%
+goes in each cell
+ 
+
+00:13:03.360 --> 00:13:05.509 align:start position:0%
+goes in each cell
+basically<00:13:03.839><c> what</c><00:13:04.000><c> i</c><00:13:04.160><c> went</c><00:13:04.480><c> over</c><00:13:04.880><c> earlier</c><00:13:05.360><c> right</c>
+
+00:13:05.509 --> 00:13:05.519 align:start position:0%
+basically what i went over earlier right
+ 
+
+00:13:05.519 --> 00:13:07.590 align:start position:0%
+basically what i went over earlier right
+so<00:13:05.680><c> we're</c><00:13:05.839><c> going</c><00:13:05.920><c> to</c><00:13:06.079><c> look</c><00:13:06.240><c> at</c><00:13:06.399><c> the</c><00:13:06.639><c> characters</c>
+
+00:13:07.590 --> 00:13:07.600 align:start position:0%
+so we're going to look at the characters
+ 
+
+00:13:07.600 --> 00:13:09.750 align:start position:0%
+so we're going to look at the characters
+and<00:13:07.839><c> if</c><00:13:08.079><c> they</c><00:13:08.480><c> match</c><00:13:08.800><c> each</c><00:13:09.040><c> other</c><00:13:09.440><c> what</c><00:13:09.600><c> we're</c>
+
+00:13:09.750 --> 00:13:09.760 align:start position:0%
+and if they match each other what we're
+ 
+
+00:13:09.760 --> 00:13:11.110 align:start position:0%
+and if they match each other what we're
+going<00:13:09.839><c> to</c><00:13:10.000><c> do</c><00:13:10.480><c> is</c><00:13:10.639><c> say</c>
+
+00:13:11.110 --> 00:13:11.120 align:start position:0%
+going to do is say
+ 
+
+00:13:11.120 --> 00:13:14.310 align:start position:0%
+going to do is say
+one<00:13:11.920><c> plus</c><00:13:12.639><c> the</c><00:13:12.880><c> value</c><00:13:13.200><c> that's</c><00:13:13.519><c> diagonal</c><00:13:14.079><c> right</c>
+
+00:13:14.310 --> 00:13:14.320 align:start position:0%
+one plus the value that's diagonal right
+ 
+
+00:13:14.320 --> 00:13:14.790 align:start position:0%
+one plus the value that's diagonal right
+and<00:13:14.399><c> we</c><00:13:14.560><c> know</c>
+
+00:13:14.790 --> 00:13:14.800 align:start position:0%
+and we know
+ 
+
+00:13:14.800 --> 00:13:16.790 align:start position:0%
+and we know
+when<00:13:14.959><c> we</c><00:13:15.040><c> go</c><00:13:15.279><c> out</c><00:13:15.440><c> of</c><00:13:15.600><c> bounds</c><00:13:15.920><c> there's</c><00:13:16.160><c> a</c><00:13:16.399><c> zero</c>
+
+00:13:16.790 --> 00:13:16.800 align:start position:0%
+when we go out of bounds there's a zero
+ 
+
+00:13:16.800 --> 00:13:18.069 align:start position:0%
+when we go out of bounds there's a zero
+right<00:13:17.040><c> there's</c><00:13:17.200><c> an</c><00:13:17.440><c> implicit</c>
+
+00:13:18.069 --> 00:13:18.079 align:start position:0%
+right there's an implicit
+ 
+
+00:13:18.079 --> 00:13:20.150 align:start position:0%
+right there's an implicit
+zero<00:13:18.399><c> when</c><00:13:18.560><c> we</c><00:13:18.720><c> go</c><00:13:18.959><c> out</c><00:13:19.120><c> of</c><00:13:19.200><c> bounds</c><00:13:19.839><c> and</c><00:13:20.000><c> we're</c>
+
+00:13:20.150 --> 00:13:20.160 align:start position:0%
+zero when we go out of bounds and we're
+ 
+
+00:13:20.160 --> 00:13:21.430 align:start position:0%
+zero when we go out of bounds and we're
+going<00:13:20.240><c> to</c><00:13:20.399><c> do</c><00:13:20.639><c> that</c><00:13:21.040><c> with</c>
+
+00:13:21.430 --> 00:13:21.440 align:start position:0%
+going to do that with
+ 
+
+00:13:21.440 --> 00:13:23.350 align:start position:0%
+going to do that with
+every<00:13:21.920><c> single</c><00:13:22.320><c> cell</c><00:13:22.560><c> right</c><00:13:22.720><c> so</c><00:13:22.959><c> when</c><00:13:23.120><c> you</c><00:13:23.200><c> look</c>
+
+00:13:23.350 --> 00:13:23.360 align:start position:0%
+every single cell right so when you look
+ 
+
+00:13:23.360 --> 00:13:24.949 align:start position:0%
+every single cell right so when you look
+at<00:13:23.440><c> these</c><00:13:23.760><c> two</c><00:13:24.000><c> we</c><00:13:24.160><c> get</c><00:13:24.320><c> an</c><00:13:24.560><c> e</c>
+
+00:13:24.949 --> 00:13:24.959 align:start position:0%
+at these two we get an e
+ 
+
+00:13:24.959 --> 00:13:27.670 align:start position:0%
+at these two we get an e
+and<00:13:25.120><c> a</c><00:13:25.360><c> c</c><00:13:25.760><c> right</c><00:13:26.079><c> and</c><00:13:26.240><c> when</c><00:13:26.480><c> characters</c><00:13:27.200><c> don't</c>
+
+00:13:27.670 --> 00:13:27.680 align:start position:0%
+and a c right and when characters don't
+ 
+
+00:13:27.680 --> 00:13:29.030 align:start position:0%
+and a c right and when characters don't
+match<00:13:28.000><c> each</c><00:13:28.240><c> other</c><00:13:28.560><c> right</c>
+
+00:13:29.030 --> 00:13:29.040 align:start position:0%
+match each other right
+ 
+
+00:13:29.040 --> 00:13:30.310 align:start position:0%
+match each other right
+that's<00:13:29.360><c> important</c><00:13:29.680><c> what</c><00:13:29.839><c> we're</c><00:13:29.920><c> going</c><00:13:30.000><c> to</c><00:13:30.079><c> do</c>
+
+00:13:30.310 --> 00:13:30.320 align:start position:0%
+that's important what we're going to do
+ 
+
+00:13:30.320 --> 00:13:32.550 align:start position:0%
+that's important what we're going to do
+is<00:13:30.480><c> we're</c><00:13:30.639><c> going</c><00:13:30.720><c> to</c><00:13:30.880><c> look</c><00:13:31.279><c> down</c>
+
+00:13:32.550 --> 00:13:32.560 align:start position:0%
+is we're going to look down
+ 
+
+00:13:32.560 --> 00:13:34.310 align:start position:0%
+is we're going to look down
+right<00:13:32.720><c> we</c><00:13:32.880><c> see</c><00:13:33.040><c> a</c><00:13:33.200><c> zero</c><00:13:33.519><c> down</c><00:13:33.680><c> here</c><00:13:34.000><c> and</c><00:13:34.160><c> we're</c>
+
+00:13:34.310 --> 00:13:34.320 align:start position:0%
+right we see a zero down here and we're
+ 
+
+00:13:34.320 --> 00:13:35.590 align:start position:0%
+right we see a zero down here and we're
+gonna<00:13:34.560><c> go</c><00:13:35.120><c> right</c>
+
+00:13:35.590 --> 00:13:35.600 align:start position:0%
+gonna go right
+ 
+
+00:13:35.600 --> 00:13:37.990 align:start position:0%
+gonna go right
+right<00:13:35.839><c> to</c><00:13:35.920><c> the</c><00:13:36.079><c> right</c><00:13:36.399><c> side</c><00:13:36.880><c> and</c><00:13:36.959><c> we</c><00:13:37.120><c> see</c><00:13:37.360><c> a</c><00:13:37.680><c> one</c>
+
+00:13:37.990 --> 00:13:38.000 align:start position:0%
+right to the right side and we see a one
+ 
+
+00:13:38.000 --> 00:13:39.269 align:start position:0%
+right to the right side and we see a one
+here<00:13:38.320><c> on</c><00:13:38.399><c> the</c><00:13:38.560><c> right</c><00:13:38.880><c> side</c>
+
+00:13:39.269 --> 00:13:39.279 align:start position:0%
+here on the right side
+ 
+
+00:13:39.279 --> 00:13:41.430 align:start position:0%
+here on the right side
+and<00:13:39.360><c> what</c><00:13:39.519><c> we're</c><00:13:39.680><c> gonna</c><00:13:39.839><c> do</c><00:13:40.079><c> is</c><00:13:40.240><c> take</c><00:13:40.480><c> the</c><00:13:40.880><c> max</c>
+
+00:13:41.430 --> 00:13:41.440 align:start position:0%
+and what we're gonna do is take the max
+ 
+
+00:13:41.440 --> 00:13:42.949 align:start position:0%
+and what we're gonna do is take the max
+of<00:13:41.600><c> those</c><00:13:41.920><c> two</c><00:13:42.240><c> values</c>
+
+00:13:42.949 --> 00:13:42.959 align:start position:0%
+of those two values
+ 
+
+00:13:42.959 --> 00:13:45.750 align:start position:0%
+of those two values
+and<00:13:43.199><c> we</c><00:13:43.360><c> see</c><00:13:43.600><c> that</c><00:13:43.760><c> the</c><00:13:43.920><c> max</c><00:13:44.240><c> is</c><00:13:44.399><c> of</c><00:13:44.560><c> course</c><00:13:45.199><c> one</c>
+
+00:13:45.750 --> 00:13:45.760 align:start position:0%
+and we see that the max is of course one
+ 
+
+00:13:45.760 --> 00:13:47.430 align:start position:0%
+and we see that the max is of course one
+right<00:13:46.000><c> one</c><00:13:46.240><c> is</c><00:13:46.399><c> bigger</c><00:13:46.639><c> than</c><00:13:46.800><c> zero</c><00:13:47.199><c> and</c><00:13:47.279><c> then</c>
+
+00:13:47.430 --> 00:13:47.440 align:start position:0%
+right one is bigger than zero and then
+ 
+
+00:13:47.440 --> 00:13:49.189 align:start position:0%
+right one is bigger than zero and then
+we're<00:13:47.600><c> going</c><00:13:47.680><c> to</c><00:13:47.680><c> put</c><00:13:47.920><c> that</c><00:13:48.160><c> max</c><00:13:48.399><c> value</c><00:13:48.880><c> in</c>
+
+00:13:49.189 --> 00:13:49.199 align:start position:0%
+we're going to put that max value in
+ 
+
+00:13:49.199 --> 00:13:51.189 align:start position:0%
+we're going to put that max value in
+the<00:13:49.440><c> cell</c><00:13:50.000><c> so</c><00:13:50.160><c> that's</c><00:13:50.399><c> really</c><00:13:50.720><c> it</c><00:13:50.880><c> there</c><00:13:51.040><c> are</c>
+
+00:13:51.189 --> 00:13:51.199 align:start position:0%
+the cell so that's really it there are
+ 
+
+00:13:51.199 --> 00:13:52.310 align:start position:0%
+the cell so that's really it there are
+two<00:13:51.440><c> choices</c><00:13:51.920><c> right</c>
+
+00:13:52.310 --> 00:13:52.320 align:start position:0%
+two choices right
+ 
+
+00:13:52.320 --> 00:13:54.550 align:start position:0%
+two choices right
+if<00:13:52.480><c> the</c><00:13:52.639><c> characters</c><00:13:53.279><c> don't</c><00:13:53.600><c> match</c><00:13:53.920><c> each</c><00:13:54.160><c> other</c>
+
+00:13:54.550 --> 00:13:54.560 align:start position:0%
+if the characters don't match each other
+ 
+
+00:13:54.560 --> 00:13:55.590 align:start position:0%
+if the characters don't match each other
+right<00:13:54.800><c> in</c><00:13:54.880><c> this</c><00:13:55.120><c> case</c>
+
+00:13:55.590 --> 00:13:55.600 align:start position:0%
+right in this case
+ 
+
+00:13:55.600 --> 00:13:57.509 align:start position:0%
+right in this case
+or<00:13:55.839><c> if</c><00:13:55.920><c> their</c><00:13:56.079><c> characters</c><00:13:56.720><c> do</c><00:13:57.040><c> match</c><00:13:57.360><c> each</c>
+
+00:13:57.509 --> 00:13:57.519 align:start position:0%
+or if their characters do match each
+ 
+
+00:13:57.519 --> 00:13:58.949 align:start position:0%
+or if their characters do match each
+other<00:13:58.079><c> in</c><00:13:58.320><c> this</c><00:13:58.560><c> case</c>
+
+00:13:58.949 --> 00:13:58.959 align:start position:0%
+other in this case
+ 
+
+00:13:58.959 --> 00:14:00.949 align:start position:0%
+other in this case
+right<00:13:59.440><c> that's</c><00:14:00.160><c> basically</c><00:14:00.560><c> how</c><00:14:00.720><c> we're</c><00:14:00.880><c> going</c>
+
+00:14:00.949 --> 00:14:00.959 align:start position:0%
+right that's basically how we're going
+ 
+
+00:14:00.959 --> 00:14:02.470 align:start position:0%
+right that's basically how we're going
+to<00:14:01.040><c> solve</c><00:14:01.279><c> this</c><00:14:01.519><c> problem</c><00:14:01.920><c> it'll</c><00:14:02.160><c> make</c><00:14:02.399><c> a</c>
+
+00:14:02.470 --> 00:14:02.480 align:start position:0%
+to solve this problem it'll make a
+ 
+
+00:14:02.480 --> 00:14:04.069 align:start position:0%
+to solve this problem it'll make a
+little<00:14:02.720><c> more</c><00:14:02.959><c> sense</c><00:14:03.199><c> when</c><00:14:03.360><c> i</c><00:14:03.519><c> show</c><00:14:03.680><c> you</c><00:14:03.839><c> the</c>
+
+00:14:04.069 --> 00:14:04.079 align:start position:0%
+little more sense when i show you the
+ 
+
+00:14:04.079 --> 00:14:05.269 align:start position:0%
+little more sense when i show you the
+code
+
+00:14:05.269 --> 00:14:05.279 align:start position:0%
+code
+ 
+
+00:14:05.279 --> 00:14:07.430 align:start position:0%
+code
+so<00:14:05.760><c> remember</c><00:14:06.320><c> we're</c><00:14:06.480><c> going</c><00:14:06.639><c> to</c><00:14:06.720><c> have</c><00:14:06.880><c> a</c><00:14:07.040><c> 2d</c>
+
+00:14:07.430 --> 00:14:07.440 align:start position:0%
+so remember we're going to have a 2d
+ 
+
+00:14:07.440 --> 00:14:09.430 align:start position:0%
+so remember we're going to have a 2d
+grid<00:14:07.760><c> so</c><00:14:07.920><c> i'm</c><00:14:08.079><c> going</c><00:14:08.160><c> to</c><00:14:08.240><c> call</c><00:14:08.480><c> that</c><00:14:08.720><c> dp</c><00:14:09.199><c> for</c>
+
+00:14:09.430 --> 00:14:09.440 align:start position:0%
+grid so i'm going to call that dp for
+ 
+
+00:14:09.440 --> 00:14:11.030 align:start position:0%
+grid so i'm going to call that dp for
+dynamic<00:14:09.920><c> programming</c><00:14:10.480><c> it's</c><00:14:10.639><c> going</c><00:14:10.720><c> to</c><00:14:10.800><c> be</c><00:14:10.959><c> a</c>
+
+00:14:11.030 --> 00:14:11.040 align:start position:0%
+dynamic programming it's going to be a
+ 
+
+00:14:11.040 --> 00:14:12.870 align:start position:0%
+dynamic programming it's going to be a
+2d<00:14:11.440><c> grid</c><00:14:11.760><c> and</c><00:14:11.839><c> what</c><00:14:12.000><c> i'm</c><00:14:12.160><c> initially</c><00:14:12.560><c> going</c><00:14:12.720><c> to</c>
+
+00:14:12.870 --> 00:14:12.880 align:start position:0%
+2d grid and what i'm initially going to
+ 
+
+00:14:12.880 --> 00:14:13.350 align:start position:0%
+2d grid and what i'm initially going to
+do
+
+00:14:13.350 --> 00:14:13.360 align:start position:0%
+do
+ 
+
+00:14:13.360 --> 00:14:16.470 align:start position:0%
+do
+is<00:14:14.000><c> set</c><00:14:14.240><c> it</c><00:14:14.399><c> to</c><00:14:14.800><c> all</c><00:14:15.120><c> zeros</c><00:14:15.680><c> right</c><00:14:16.000><c> so</c><00:14:16.240><c> and</c><00:14:16.320><c> i'm</c>
+
+00:14:16.470 --> 00:14:16.480 align:start position:0%
+is set it to all zeros right so and i'm
+ 
+
+00:14:16.480 --> 00:14:17.670 align:start position:0%
+is set it to all zeros right so and i'm
+just<00:14:16.560><c> gonna</c><00:14:16.720><c> do</c><00:14:16.880><c> a</c><00:14:16.959><c> little</c><00:14:17.120><c> bit</c><00:14:17.279><c> of</c>
+
+00:14:17.670 --> 00:14:17.680 align:start position:0%
+just gonna do a little bit of
+ 
+
+00:14:17.680 --> 00:14:21.030 align:start position:0%
+just gonna do a little bit of
+uh<00:14:18.639><c> python</c><00:14:19.199><c> stuff</c><00:14:19.600><c> so</c><00:14:19.839><c> list</c><00:14:20.160><c> comprehension</c><00:14:20.959><c> in</c>
+
+00:14:21.030 --> 00:14:21.040 align:start position:0%
+uh python stuff so list comprehension in
+ 
+
+00:14:21.040 --> 00:14:22.069 align:start position:0%
+uh python stuff so list comprehension in
+python
+
+00:14:22.069 --> 00:14:22.079 align:start position:0%
+python
+ 
+
+00:14:22.079 --> 00:14:24.470 align:start position:0%
+python
+so<00:14:22.880><c> we're</c><00:14:23.040><c> gonna</c><00:14:23.199><c> go</c><00:14:23.440><c> through</c><00:14:23.760><c> every</c><00:14:24.079><c> single</c>
+
+00:14:24.470 --> 00:14:24.480 align:start position:0%
+so we're gonna go through every single
+ 
+
+00:14:24.480 --> 00:14:25.269 align:start position:0%
+so we're gonna go through every single
+value
+
+00:14:25.269 --> 00:14:25.279 align:start position:0%
+value
+ 
+
+00:14:25.279 --> 00:14:28.710 align:start position:0%
+value
+in<00:14:25.680><c> the</c><00:14:26.079><c> length</c><00:14:26.800><c> of</c><00:14:27.519><c> text</c><00:14:28.240><c> two</c>
+
+00:14:28.710 --> 00:14:28.720 align:start position:0%
+in the length of text two
+ 
+
+00:14:28.720 --> 00:14:31.750 align:start position:0%
+in the length of text two
+plus<00:14:29.519><c> one</c><00:14:30.160><c> right</c><00:14:30.480><c> plus</c><00:14:30.880><c> one</c><00:14:31.199><c> because</c><00:14:31.440><c> we</c>
+
+00:14:31.750 --> 00:14:31.760 align:start position:0%
+plus one right plus one because we
+ 
+
+00:14:31.760 --> 00:14:33.509 align:start position:0%
+plus one right plus one because we
+we<00:14:31.920><c> know</c><00:14:32.079><c> that</c><00:14:32.160><c> we</c><00:14:32.320><c> need</c><00:14:32.480><c> at</c><00:14:32.560><c> least</c><00:14:32.880><c> one</c><00:14:33.120><c> more</c>
+
+00:14:33.509 --> 00:14:33.519 align:start position:0%
+we know that we need at least one more
+ 
+
+00:14:33.519 --> 00:14:36.150 align:start position:0%
+we know that we need at least one more
+column<00:14:34.240><c> to</c><00:14:34.480><c> have</c><00:14:34.720><c> all</c><00:14:34.880><c> the</c><00:14:35.040><c> zeros</c><00:14:35.519><c> in</c><00:14:35.680><c> it</c>
+
+00:14:36.150 --> 00:14:36.160 align:start position:0%
+column to have all the zeros in it
+ 
+
+00:14:36.160 --> 00:14:37.910 align:start position:0%
+column to have all the zeros in it
+and<00:14:36.399><c> so</c><00:14:36.560><c> we're</c><00:14:36.880><c> remember</c><00:14:37.279><c> we're</c><00:14:37.360><c> gonna</c><00:14:37.519><c> put</c><00:14:37.760><c> a</c>
+
+00:14:37.910 --> 00:14:37.920 align:start position:0%
+and so we're remember we're gonna put a
+ 
+
+00:14:37.920 --> 00:14:39.590 align:start position:0%
+and so we're remember we're gonna put a
+zero<00:14:38.800><c> for</c><00:14:39.040><c> every</c>
+
+00:14:39.590 --> 00:14:39.600 align:start position:0%
+zero for every
+ 
+
+00:14:39.600 --> 00:14:42.790 align:start position:0%
+zero for every
+value<00:14:40.320><c> in</c><00:14:41.120><c> that</c><00:14:41.440><c> so</c><00:14:41.839><c> length</c><00:14:42.240><c> plus</c>
+
+00:14:42.790 --> 00:14:42.800 align:start position:0%
+value in that so length plus
+ 
+
+00:14:42.800 --> 00:14:45.829 align:start position:0%
+value in that so length plus
+one<00:14:43.360><c> and</c><00:14:43.440><c> we're</c><00:14:43.600><c> going</c><00:14:43.680><c> to</c><00:14:43.760><c> have</c><00:14:44.160><c> this</c><00:14:44.639><c> row</c><00:14:45.360><c> for</c>
+
+00:14:45.829 --> 00:14:45.839 align:start position:0%
+one and we're going to have this row for
+ 
+
+00:14:45.839 --> 00:14:48.949 align:start position:0%
+one and we're going to have this row for
+every<00:14:46.240><c> value</c><00:14:47.120><c> in</c><00:14:48.160><c> the</c><00:14:48.399><c> length</c>
+
+00:14:48.949 --> 00:14:48.959 align:start position:0%
+every value in the length
+ 
+
+00:14:48.959 --> 00:14:52.470 align:start position:0%
+every value in the length
+of<00:14:49.680><c> string</c><00:14:50.240><c> one</c><00:14:50.639><c> so</c><00:14:50.880><c> text</c><00:14:51.279><c> one</c><00:14:51.760><c> plus</c>
+
+00:14:52.470 --> 00:14:52.480 align:start position:0%
+of string one so text one plus
+ 
+
+00:14:52.480 --> 00:14:55.590 align:start position:0%
+of string one so text one plus
+one<00:14:53.040><c> as</c><00:14:53.199><c> well</c><00:14:53.600><c> right</c><00:14:53.839><c> so</c><00:14:54.000><c> we're</c><00:14:54.240><c> basically</c><00:14:55.120><c> uh</c>
+
+00:14:55.590 --> 00:14:55.600 align:start position:0%
+one as well right so we're basically uh
+ 
+
+00:14:55.600 --> 00:14:57.430 align:start position:0%
+one as well right so we're basically uh
+if<00:14:55.760><c> you're</c><00:14:55.839><c> not</c><00:14:56.079><c> familiar</c><00:14:56.560><c> with</c><00:14:56.720><c> python</c><00:14:57.120><c> this</c>
+
+00:14:57.430 --> 00:14:57.440 align:start position:0%
+if you're not familiar with python this
+ 
+
+00:14:57.440 --> 00:14:59.350 align:start position:0%
+if you're not familiar with python this
+looks<00:14:57.680><c> complicated</c><00:14:58.240><c> but</c><00:14:58.399><c> basically</c><00:14:58.880><c> we're</c>
+
+00:14:59.350 --> 00:14:59.360 align:start position:0%
+looks complicated but basically we're
+ 
+
+00:14:59.360 --> 00:15:02.710 align:start position:0%
+looks complicated but basically we're
+getting<00:14:59.680><c> a</c><00:14:59.760><c> 2d</c><00:15:00.160><c> grid</c><00:15:00.480><c> of</c><00:15:00.639><c> dimensions</c><00:15:01.680><c> length</c><00:15:02.240><c> 2</c>
+
+00:15:02.710 --> 00:15:02.720 align:start position:0%
+getting a 2d grid of dimensions length 2
+ 
+
+00:15:02.720 --> 00:15:06.150 align:start position:0%
+getting a 2d grid of dimensions length 2
+plus<00:15:03.040><c> 1</c><00:15:03.600><c> times</c><00:15:04.240><c> a</c><00:15:04.560><c> length</c><00:15:04.880><c> string</c><00:15:05.279><c> 1</c><00:15:05.600><c> plus</c><00:15:05.920><c> 1</c>
+
+00:15:06.150 --> 00:15:06.160 align:start position:0%
+plus 1 times a length string 1 plus 1
+ 
+
+00:15:06.160 --> 00:15:07.430 align:start position:0%
+plus 1 times a length string 1 plus 1
+and<00:15:06.320><c> initializing</c><00:15:07.040><c> it</c><00:15:07.120><c> to</c>
+
+00:15:07.430 --> 00:15:07.440 align:start position:0%
+and initializing it to
+ 
+
+00:15:07.440 --> 00:15:10.389 align:start position:0%
+and initializing it to
+all<00:15:08.160><c> zeros</c><00:15:09.199><c> and</c><00:15:09.440><c> then</c><00:15:09.760><c> we're</c><00:15:10.000><c> just</c><00:15:10.160><c> going</c><00:15:10.320><c> to</c>
+
+00:15:10.389 --> 00:15:10.399 align:start position:0%
+all zeros and then we're just going to
+ 
+
+00:15:10.399 --> 00:15:11.110 align:start position:0%
+all zeros and then we're just going to
+have<00:15:10.720><c> a</c>
+
+00:15:11.110 --> 00:15:11.120 align:start position:0%
+have a
+ 
+
+00:15:11.120 --> 00:15:13.910 align:start position:0%
+have a
+nested<00:15:12.160><c> loop</c><00:15:12.720><c> and</c><00:15:12.880><c> what</c><00:15:13.040><c> we're</c><00:15:13.199><c> going</c><00:15:13.279><c> to</c><00:15:13.440><c> do</c>
+
+00:15:13.910 --> 00:15:13.920 align:start position:0%
+nested loop and what we're going to do
+ 
+
+00:15:13.920 --> 00:15:14.230 align:start position:0%
+nested loop and what we're going to do
+is
+
+00:15:14.230 --> 00:15:14.240 align:start position:0%
+is
+ 
+
+00:15:14.240 --> 00:15:17.189 align:start position:0%
+is
+iterate<00:15:14.720><c> through</c><00:15:14.959><c> this</c><00:15:15.199><c> 2d</c><00:15:15.600><c> grid</c><00:15:16.079><c> in</c><00:15:16.320><c> reverse</c>
+
+00:15:17.189 --> 00:15:17.199 align:start position:0%
+iterate through this 2d grid in reverse
+ 
+
+00:15:17.199 --> 00:15:18.069 align:start position:0%
+iterate through this 2d grid in reverse
+order
+
+00:15:18.069 --> 00:15:18.079 align:start position:0%
+order
+ 
+
+00:15:18.079 --> 00:15:21.350 align:start position:0%
+order
+so<00:15:18.320><c> in</c><00:15:18.480><c> python</c><00:15:19.199><c> you</c><00:15:19.360><c> can</c><00:15:19.519><c> do</c><00:15:19.680><c> it</c><00:15:19.839><c> like</c><00:15:20.399><c> this</c><00:15:21.040><c> and</c>
+
+00:15:21.350 --> 00:15:21.360 align:start position:0%
+so in python you can do it like this and
+ 
+
+00:15:21.360 --> 00:15:22.949 align:start position:0%
+so in python you can do it like this and
+basically<00:15:21.760><c> what</c><00:15:21.920><c> i'm</c><00:15:22.079><c> doing</c><00:15:22.480><c> is</c>
+
+00:15:22.949 --> 00:15:22.959 align:start position:0%
+basically what i'm doing is
+ 
+
+00:15:22.959 --> 00:15:25.269 align:start position:0%
+basically what i'm doing is
+starting<00:15:23.440><c> at</c><00:15:23.600><c> the</c><00:15:23.839><c> bottom</c><00:15:24.639><c> right</c><00:15:24.959><c> of</c><00:15:25.120><c> the</c>
+
+00:15:25.269 --> 00:15:25.279 align:start position:0%
+starting at the bottom right of the
+ 
+
+00:15:25.279 --> 00:15:27.430 align:start position:0%
+starting at the bottom right of the
+matrix<00:15:25.760><c> and</c><00:15:25.920><c> then</c><00:15:26.079><c> working</c><00:15:26.399><c> our</c><00:15:26.560><c> way</c><00:15:26.880><c> up</c>
+
+00:15:27.430 --> 00:15:27.440 align:start position:0%
+matrix and then working our way up
+ 
+
+00:15:27.440 --> 00:15:29.430 align:start position:0%
+matrix and then working our way up
+so<00:15:28.000><c> this</c><00:15:28.240><c> is</c><00:15:28.320><c> how</c><00:15:28.480><c> you</c><00:15:28.560><c> do</c><00:15:28.639><c> it</c><00:15:28.800><c> in</c><00:15:28.959><c> python</c>
+
+00:15:29.430 --> 00:15:29.440 align:start position:0%
+so this is how you do it in python
+ 
+
+00:15:29.440 --> 00:15:31.269 align:start position:0%
+so this is how you do it in python
+negative<00:15:29.839><c> one</c><00:15:30.160><c> negative</c><00:15:30.560><c> one</c>
+
+00:15:31.269 --> 00:15:31.279 align:start position:0%
+negative one negative one
+ 
+
+00:15:31.279 --> 00:15:34.629 align:start position:0%
+negative one negative one
+and<00:15:31.519><c> let's</c><00:15:31.759><c> do</c><00:15:32.000><c> the</c><00:15:32.160><c> same</c><00:15:32.560><c> thing</c><00:15:33.040><c> for</c><00:15:33.839><c> text</c>
+
+00:15:34.629 --> 00:15:34.639 align:start position:0%
+and let's do the same thing for text
+ 
+
+00:15:34.639 --> 00:15:37.110 align:start position:0%
+and let's do the same thing for text
+two<00:15:35.600><c> and</c><00:15:35.759><c> so</c><00:15:36.000><c> remember</c><00:15:36.560><c> so</c><00:15:36.720><c> we're</c><00:15:36.880><c> going</c>
+
+00:15:37.110 --> 00:15:37.120 align:start position:0%
+two and so remember so we're going
+ 
+
+00:15:37.120 --> 00:15:38.150 align:start position:0%
+two and so remember so we're going
+through<00:15:37.360><c> every</c><00:15:37.759><c> cell</c>
+
+00:15:38.150 --> 00:15:38.160 align:start position:0%
+through every cell
+ 
+
+00:15:38.160 --> 00:15:39.910 align:start position:0%
+through every cell
+in<00:15:38.320><c> our</c><00:15:38.480><c> 2d</c><00:15:38.800><c> grid</c><00:15:39.120><c> and</c><00:15:39.199><c> remember</c><00:15:39.519><c> there</c><00:15:39.680><c> were</c>
+
+00:15:39.910 --> 00:15:39.920 align:start position:0%
+in our 2d grid and remember there were
+ 
+
+00:15:39.920 --> 00:15:41.749 align:start position:0%
+in our 2d grid and remember there were
+two<00:15:40.160><c> conditions</c><00:15:40.720><c> one</c><00:15:40.959><c> condition</c>
+
+00:15:41.749 --> 00:15:41.759 align:start position:0%
+two conditions one condition
+ 
+
+00:15:41.759 --> 00:15:45.110 align:start position:0%
+two conditions one condition
+is<00:15:42.160><c> if</c><00:15:42.560><c> the</c><00:15:42.800><c> characters</c><00:15:43.600><c> in</c><00:15:44.240><c> both</c><00:15:44.560><c> strings</c>
+
+00:15:45.110 --> 00:15:45.120 align:start position:0%
+is if the characters in both strings
+ 
+
+00:15:45.120 --> 00:15:48.550 align:start position:0%
+is if the characters in both strings
+match<00:15:45.440><c> each</c><00:15:45.680><c> other</c><00:15:45.920><c> so</c><00:15:46.160><c> if</c><00:15:46.720><c> text</c><00:15:47.440><c> one</c><00:15:47.759><c> of</c><00:15:48.079><c> i</c>
+
+00:15:48.550 --> 00:15:48.560 align:start position:0%
+match each other so if text one of i
+ 
+
+00:15:48.560 --> 00:15:51.670 align:start position:0%
+match each other so if text one of i
+matches<00:15:49.759><c> text</c><00:15:50.240><c> two</c><00:15:50.800><c> at</c><00:15:51.040><c> position</c>
+
+00:15:51.670 --> 00:15:51.680 align:start position:0%
+matches text two at position
+ 
+
+00:15:51.680 --> 00:15:53.749 align:start position:0%
+matches text two at position
+j<00:15:52.000><c> if</c><00:15:52.079><c> they</c><00:15:52.399><c> match</c><00:15:52.800><c> each</c><00:15:53.040><c> other</c><00:15:53.519><c> we're</c><00:15:53.680><c> going</c>
+
+00:15:53.749 --> 00:15:53.759 align:start position:0%
+j if they match each other we're going
+ 
+
+00:15:53.759 --> 00:15:55.030 align:start position:0%
+j if they match each other we're going
+to<00:15:53.839><c> do</c><00:15:54.079><c> something</c><00:15:54.399><c> and</c><00:15:54.480><c> if</c><00:15:54.639><c> they</c>
+
+00:15:55.030 --> 00:15:55.040 align:start position:0%
+to do something and if they
+ 
+
+00:15:55.040 --> 00:15:56.470 align:start position:0%
+to do something and if they
+don't<00:15:55.360><c> match</c><00:15:55.600><c> each</c><00:15:55.759><c> other</c><00:15:55.920><c> we're</c><00:15:56.079><c> going</c><00:15:56.240><c> to</c><00:15:56.320><c> do</c>
+
+00:15:56.470 --> 00:15:56.480 align:start position:0%
+don't match each other we're going to do
+ 
+
+00:15:56.480 --> 00:15:58.870 align:start position:0%
+don't match each other we're going to do
+something<00:15:56.880><c> different</c><00:15:57.600><c> so</c><00:15:57.839><c> remember</c><00:15:58.320><c> if</c><00:15:58.480><c> they</c>
+
+00:15:58.870 --> 00:15:58.880 align:start position:0%
+something different so remember if they
+ 
+
+00:15:58.880 --> 00:16:00.949 align:start position:0%
+something different so remember if they
+do<00:15:59.199><c> match</c><00:15:59.519><c> each</c><00:15:59.759><c> other</c><00:16:00.079><c> then</c><00:16:00.320><c> what</c><00:16:00.480><c> we</c><00:16:00.639><c> can</c><00:16:00.800><c> say</c>
+
+00:16:00.949 --> 00:16:00.959 align:start position:0%
+do match each other then what we can say
+ 
+
+00:16:00.959 --> 00:16:02.230 align:start position:0%
+do match each other then what we can say
+is<00:16:01.199><c> at</c><00:16:01.440><c> this</c><00:16:01.680><c> position</c>
+
+00:16:02.230 --> 00:16:02.240 align:start position:0%
+is at this position
+ 
+
+00:16:02.240 --> 00:16:05.670 align:start position:0%
+is at this position
+dp<00:16:02.880><c> of</c><00:16:03.120><c> i</c><00:16:03.839><c> j</c><00:16:04.720><c> because</c><00:16:04.880><c> remember</c><00:16:05.199><c> we're</c><00:16:05.440><c> trying</c>
+
+00:16:05.670 --> 00:16:05.680 align:start position:0%
+dp of i j because remember we're trying
+ 
+
+00:16:05.680 --> 00:16:06.629 align:start position:0%
+dp of i j because remember we're trying
+to<00:16:05.920><c> fill</c><00:16:06.240><c> in</c>
+
+00:16:06.629 --> 00:16:06.639 align:start position:0%
+to fill in
+ 
+
+00:16:06.639 --> 00:16:10.069 align:start position:0%
+to fill in
+every<00:16:06.959><c> single</c><00:16:07.440><c> cell</c><00:16:08.240><c> what</c><00:16:08.480><c> we</c><00:16:08.560><c> can</c><00:16:08.800><c> do</c><00:16:09.360><c> is</c><00:16:09.519><c> then</c>
+
+00:16:10.069 --> 00:16:10.079 align:start position:0%
+every single cell what we can do is then
+ 
+
+00:16:10.079 --> 00:16:13.189 align:start position:0%
+every single cell what we can do is then
+just<00:16:10.480><c> simply</c><00:16:10.959><c> take</c><00:16:11.519><c> one</c><00:16:12.320><c> plus</c>
+
+00:16:13.189 --> 00:16:13.199 align:start position:0%
+just simply take one plus
+ 
+
+00:16:13.199 --> 00:16:15.670 align:start position:0%
+just simply take one plus
+the<00:16:13.600><c> diagonal</c><00:16:14.320><c> how</c><00:16:14.480><c> do</c><00:16:14.639><c> we</c><00:16:14.800><c> find</c><00:16:15.040><c> the</c><00:16:15.120><c> diagonal</c>
+
+00:16:15.670 --> 00:16:15.680 align:start position:0%
+the diagonal how do we find the diagonal
+ 
+
+00:16:15.680 --> 00:16:16.629 align:start position:0%
+the diagonal how do we find the diagonal
+well<00:16:15.920><c> we</c><00:16:16.079><c> can</c><00:16:16.320><c> say</c>
+
+00:16:16.629 --> 00:16:16.639 align:start position:0%
+well we can say
+ 
+
+00:16:16.639 --> 00:16:19.990 align:start position:0%
+well we can say
+i<00:16:16.880><c> plus</c><00:16:17.279><c> one</c><00:16:18.079><c> and</c><00:16:18.720><c> j</c><00:16:19.040><c> plus</c><00:16:19.360><c> one</c><00:16:19.600><c> right</c><00:16:19.839><c> that</c>
+
+00:16:19.990 --> 00:16:20.000 align:start position:0%
+i plus one and j plus one right that
+ 
+
+00:16:20.000 --> 00:16:21.350 align:start position:0%
+i plus one and j plus one right that
+gives<00:16:20.320><c> us</c><00:16:20.399><c> the</c><00:16:20.560><c> diagonal</c>
+
+00:16:21.350 --> 00:16:21.360 align:start position:0%
+gives us the diagonal
+ 
+
+00:16:21.360 --> 00:16:23.189 align:start position:0%
+gives us the diagonal
+and<00:16:21.600><c> remember</c><00:16:22.000><c> we're</c><00:16:22.240><c> adding</c><00:16:22.639><c> one</c><00:16:22.800><c> to</c><00:16:23.040><c> it</c>
+
+00:16:23.189 --> 00:16:23.199 align:start position:0%
+and remember we're adding one to it
+ 
+
+00:16:23.199 --> 00:16:25.030 align:start position:0%
+and remember we're adding one to it
+because<00:16:23.759><c> these</c><00:16:24.000><c> characters</c><00:16:24.560><c> match</c><00:16:24.880><c> that</c>
+
+00:16:25.030 --> 00:16:25.040 align:start position:0%
+because these characters match that
+ 
+
+00:16:25.040 --> 00:16:26.550 align:start position:0%
+because these characters match that
+means<00:16:25.279><c> we</c><00:16:25.519><c> add</c><00:16:25.759><c> a</c><00:16:26.000><c> one</c>
+
+00:16:26.550 --> 00:16:26.560 align:start position:0%
+means we add a one
+ 
+
+00:16:26.560 --> 00:16:29.110 align:start position:0%
+means we add a one
+and<00:16:26.639><c> if</c><00:16:26.800><c> they</c><00:16:27.199><c> don't</c><00:16:27.600><c> match</c><00:16:28.160><c> that's</c><00:16:28.480><c> the</c><00:16:28.720><c> else</c>
+
+00:16:29.110 --> 00:16:29.120 align:start position:0%
+and if they don't match that's the else
+ 
+
+00:16:29.120 --> 00:16:30.550 align:start position:0%
+and if they don't match that's the else
+case<00:16:29.440><c> right</c><00:16:29.600><c> so</c><00:16:29.759><c> we're</c><00:16:29.920><c> doing</c><00:16:30.079><c> something</c>
+
+00:16:30.550 --> 00:16:30.560 align:start position:0%
+case right so we're doing something
+ 
+
+00:16:30.560 --> 00:16:31.430 align:start position:0%
+case right so we're doing something
+different<00:16:31.040><c> here</c>
+
+00:16:31.430 --> 00:16:31.440 align:start position:0%
+different here
+ 
+
+00:16:31.440 --> 00:16:33.110 align:start position:0%
+different here
+we're<00:16:31.680><c> going</c><00:16:31.759><c> to</c><00:16:31.839><c> put</c><00:16:32.000><c> a</c><00:16:32.160><c> different</c><00:16:32.560><c> value</c><00:16:32.959><c> for</c>
+
+00:16:33.110 --> 00:16:33.120 align:start position:0%
+we're going to put a different value for
+ 
+
+00:16:33.120 --> 00:16:34.710 align:start position:0%
+we're going to put a different value for
+dp<00:16:33.519><c> of</c><00:16:33.759><c> ij</c>
+
+00:16:34.710 --> 00:16:34.720 align:start position:0%
+dp of ij
+ 
+
+00:16:34.720 --> 00:16:36.550 align:start position:0%
+dp of ij
+and<00:16:35.120><c> in</c><00:16:35.279><c> this</c><00:16:35.519><c> case</c><00:16:35.759><c> what</c><00:16:35.920><c> we're</c><00:16:36.079><c> doing</c><00:16:36.399><c> is</c>
+
+00:16:36.550 --> 00:16:36.560 align:start position:0%
+and in this case what we're doing is
+ 
+
+00:16:36.560 --> 00:16:38.230 align:start position:0%
+and in this case what we're doing is
+we're<00:16:36.720><c> finding</c><00:16:37.040><c> the</c><00:16:37.279><c> maximum</c><00:16:38.000><c> of</c>
+
+00:16:38.230 --> 00:16:38.240 align:start position:0%
+we're finding the maximum of
+ 
+
+00:16:38.240 --> 00:16:40.550 align:start position:0%
+we're finding the maximum of
+two<00:16:38.480><c> values</c><00:16:39.040><c> what</c><00:16:39.199><c> are</c><00:16:39.360><c> the</c><00:16:39.519><c> two</c><00:16:39.759><c> values</c><00:16:40.320><c> the</c>
+
+00:16:40.550 --> 00:16:40.560 align:start position:0%
+two values what are the two values the
+ 
+
+00:16:40.560 --> 00:16:41.990 align:start position:0%
+two values what are the two values the
+value<00:16:40.880><c> to</c><00:16:41.040><c> the</c><00:16:41.360><c> right</c>
+
+00:16:41.990 --> 00:16:42.000 align:start position:0%
+value to the right
+ 
+
+00:16:42.000 --> 00:16:45.110 align:start position:0%
+value to the right
+of<00:16:42.160><c> this</c><00:16:42.399><c> position</c><00:16:42.800><c> so</c><00:16:42.959><c> we</c><00:16:43.120><c> can</c><00:16:43.279><c> say</c><00:16:43.440><c> dp</c><00:16:43.839><c> of</c><00:16:44.000><c> i</c><00:16:44.720><c> j</c>
+
+00:16:45.110 --> 00:16:45.120 align:start position:0%
+of this position so we can say dp of i j
+ 
+
+00:16:45.120 --> 00:16:47.430 align:start position:0%
+of this position so we can say dp of i j
+plus<00:16:45.600><c> one</c><00:16:46.079><c> we</c><00:16:46.240><c> can</c><00:16:46.399><c> say</c><00:16:46.560><c> that's</c><00:16:46.880><c> the</c><00:16:47.120><c> right</c>
+
+00:16:47.430 --> 00:16:47.440 align:start position:0%
+plus one we can say that's the right
+ 
+
+00:16:47.440 --> 00:16:49.110 align:start position:0%
+plus one we can say that's the right
+value<00:16:48.079><c> and</c><00:16:48.399><c> the</c>
+
+00:16:49.110 --> 00:16:49.120 align:start position:0%
+value and the
+ 
+
+00:16:49.120 --> 00:16:51.749 align:start position:0%
+value and the
+value<00:16:49.600><c> below</c><00:16:50.240><c> the</c><00:16:50.480><c> bottom</c><00:16:50.880><c> value</c><00:16:51.279><c> so</c><00:16:51.440><c> we</c><00:16:51.600><c> can</c>
+
+00:16:51.749 --> 00:16:51.759 align:start position:0%
+value below the bottom value so we can
+ 
+
+00:16:51.759 --> 00:16:52.150 align:start position:0%
+value below the bottom value so we can
+say
+
+00:16:52.150 --> 00:16:52.160 align:start position:0%
+say
+ 
+
+00:16:52.160 --> 00:16:55.350 align:start position:0%
+say
+i<00:16:52.720><c> plus</c><00:16:53.199><c> one</c><00:16:54.000><c> and</c><00:16:54.399><c> j</c><00:16:54.720><c> for</c><00:16:54.959><c> that</c>
+
+00:16:55.350 --> 00:16:55.360 align:start position:0%
+i plus one and j for that
+ 
+
+00:16:55.360 --> 00:16:57.350 align:start position:0%
+i plus one and j for that
+right<00:16:55.680><c> so</c><00:16:55.839><c> we're</c><00:16:56.079><c> finding</c><00:16:56.320><c> the</c><00:16:56.639><c> maximum</c><00:16:57.199><c> of</c>
+
+00:16:57.350 --> 00:16:57.360 align:start position:0%
+right so we're finding the maximum of
+ 
+
+00:16:57.360 --> 00:16:59.110 align:start position:0%
+right so we're finding the maximum of
+these<00:16:57.600><c> two</c><00:16:57.759><c> we're</c><00:16:58.000><c> not</c><00:16:58.160><c> adding</c><00:16:58.639><c> one</c>
+
+00:16:59.110 --> 00:16:59.120 align:start position:0%
+these two we're not adding one
+ 
+
+00:16:59.120 --> 00:17:00.389 align:start position:0%
+these two we're not adding one
+we're<00:16:59.360><c> not</c><00:16:59.519><c> adding</c><00:16:59.839><c> one</c><00:17:00.079><c> because</c><00:17:00.320><c> the</c>
+
+00:17:00.389 --> 00:17:00.399 align:start position:0%
+we're not adding one because the
+ 
+
+00:17:00.399 --> 00:17:02.790 align:start position:0%
+we're not adding one because the
+characters<00:17:00.880><c> did</c><00:17:01.040><c> not</c><00:17:01.360><c> match</c><00:17:01.680><c> each</c><00:17:01.920><c> other</c>
+
+00:17:02.790 --> 00:17:02.800 align:start position:0%
+characters did not match each other
+ 
+
+00:17:02.800 --> 00:17:05.510 align:start position:0%
+characters did not match each other
+but<00:17:03.040><c> basically</c><00:17:03.920><c> literally</c><00:17:04.640><c> these</c><00:17:05.120><c> are</c><00:17:05.360><c> the</c>
+
+00:17:05.510 --> 00:17:05.520 align:start position:0%
+but basically literally these are the
+ 
+
+00:17:05.520 --> 00:17:06.630 align:start position:0%
+but basically literally these are the
+two<00:17:05.839><c> cases</c>
+
+00:17:06.630 --> 00:17:06.640 align:start position:0%
+two cases
+ 
+
+00:17:06.640 --> 00:17:09.029 align:start position:0%
+two cases
+we're<00:17:06.799><c> just</c><00:17:07.039><c> filling</c><00:17:07.360><c> in</c><00:17:07.439><c> a</c><00:17:07.600><c> different</c><00:17:08.079><c> value</c>
+
+00:17:09.029 --> 00:17:09.039 align:start position:0%
+we're just filling in a different value
+ 
+
+00:17:09.039 --> 00:17:10.549 align:start position:0%
+we're just filling in a different value
+depending<00:17:09.520><c> on</c><00:17:09.760><c> what</c><00:17:09.919><c> the</c><00:17:10.079><c> case</c>
+
+00:17:10.549 --> 00:17:10.559 align:start position:0%
+depending on what the case
+ 
+
+00:17:10.559 --> 00:17:13.429 align:start position:0%
+depending on what the case
+is<00:17:11.280><c> and</c><00:17:11.439><c> that's</c><00:17:11.839><c> it</c><00:17:12.160><c> so</c><00:17:12.480><c> literally</c><00:17:12.880><c> with</c><00:17:13.120><c> these</c>
+
+00:17:13.429 --> 00:17:13.439 align:start position:0%
+is and that's it so literally with these
+ 
+
+00:17:13.439 --> 00:17:15.270 align:start position:0%
+is and that's it so literally with these
+two<00:17:13.679><c> nested</c><00:17:14.160><c> loops</c><00:17:14.480><c> and</c><00:17:14.559><c> with</c><00:17:14.720><c> these</c><00:17:15.039><c> two</c>
+
+00:17:15.270 --> 00:17:15.280 align:start position:0%
+two nested loops and with these two
+ 
+
+00:17:15.280 --> 00:17:15.990 align:start position:0%
+two nested loops and with these two
+conditions
+
+00:17:15.990 --> 00:17:16.000 align:start position:0%
+conditions
+ 
+
+00:17:16.000 --> 00:17:19.029 align:start position:0%
+conditions
+we're<00:17:16.240><c> filling</c><00:17:16.559><c> in</c><00:17:16.720><c> the</c><00:17:16.959><c> entire</c><00:17:17.600><c> dp</c><00:17:18.079><c> matrix</c>
+
+00:17:19.029 --> 00:17:19.039 align:start position:0%
+we're filling in the entire dp matrix
+ 
+
+00:17:19.039 --> 00:17:21.189 align:start position:0%
+we're filling in the entire dp matrix
+and<00:17:19.280><c> so</c><00:17:19.520><c> once</c><00:17:19.760><c> that</c><00:17:19.919><c> matrix</c><00:17:20.400><c> is</c><00:17:20.559><c> filled</c><00:17:20.799><c> in</c><00:17:20.959><c> we</c>
+
+00:17:21.189 --> 00:17:21.199 align:start position:0%
+and so once that matrix is filled in we
+ 
+
+00:17:21.199 --> 00:17:22.710 align:start position:0%
+and so once that matrix is filled in we
+know<00:17:21.360><c> that</c><00:17:21.520><c> the</c><00:17:21.760><c> result</c><00:17:22.240><c> is</c><00:17:22.400><c> going</c><00:17:22.480><c> to</c><00:17:22.559><c> be</c><00:17:22.640><c> at</c>
+
+00:17:22.710 --> 00:17:22.720 align:start position:0%
+know that the result is going to be at
+ 
+
+00:17:22.720 --> 00:17:23.429 align:start position:0%
+know that the result is going to be at
+the<00:17:22.959><c> top</c>
+
+00:17:23.429 --> 00:17:23.439 align:start position:0%
+the top
+ 
+
+00:17:23.439 --> 00:17:26.470 align:start position:0%
+the top
+left<00:17:23.760><c> of</c><00:17:23.839><c> that</c><00:17:24.079><c> matrix</c><00:17:24.559><c> so</c><00:17:24.880><c> the</c><00:17:25.120><c> dp</c><00:17:25.839><c> the</c><00:17:26.000><c> matrix</c>
+
+00:17:26.470 --> 00:17:26.480 align:start position:0%
+left of that matrix so the dp the matrix
+ 
+
+00:17:26.480 --> 00:17:27.189 align:start position:0%
+left of that matrix so the dp the matrix
+at<00:17:26.720><c> index</c>
+
+00:17:27.189 --> 00:17:27.199 align:start position:0%
+at index
+ 
+
+00:17:27.199 --> 00:17:29.430 align:start position:0%
+at index
+0<00:17:27.600><c> 0.</c><00:17:28.000><c> that's</c><00:17:28.240><c> going</c><00:17:28.319><c> to</c><00:17:28.400><c> have</c><00:17:28.640><c> our</c><00:17:28.799><c> result</c><00:17:29.200><c> so</c>
+
+00:17:29.430 --> 00:17:29.440 align:start position:0%
+0 0. that's going to have our result so
+ 
+
+00:17:29.440 --> 00:17:31.510 align:start position:0%
+0 0. that's going to have our result so
+all<00:17:29.600><c> we</c><00:17:29.760><c> have</c><00:17:29.840><c> to</c><00:17:29.919><c> do</c><00:17:30.160><c> now</c><00:17:30.400><c> is</c><00:17:30.640><c> return</c>
+
+00:17:31.510 --> 00:17:31.520 align:start position:0%
+all we have to do now is return
+ 
+
+00:17:31.520 --> 00:17:34.230 align:start position:0%
+all we have to do now is return
+the<00:17:31.840><c> result</c><00:17:32.640><c> and</c><00:17:33.120><c> clearly</c><00:17:33.520><c> you</c><00:17:33.600><c> can</c><00:17:33.760><c> see</c><00:17:34.000><c> that</c>
+
+00:17:34.230 --> 00:17:34.240 align:start position:0%
+the result and clearly you can see that
+ 
+
+00:17:34.240 --> 00:17:34.710 align:start position:0%
+the result and clearly you can see that
+the
+
+00:17:34.710 --> 00:17:34.720 align:start position:0%
+the
+ 
+
+00:17:34.720 --> 00:17:37.830 align:start position:0%
+the
+time<00:17:34.960><c> complexity</c><00:17:35.600><c> of</c><00:17:35.760><c> this</c><00:17:36.160><c> is</c><00:17:36.720><c> the</c><00:17:37.120><c> length</c><00:17:37.600><c> of</c>
+
+00:17:37.830 --> 00:17:37.840 align:start position:0%
+time complexity of this is the length of
+ 
+
+00:17:37.840 --> 00:17:38.549 align:start position:0%
+time complexity of this is the length of
+the<00:17:38.080><c> strings</c>
+
+00:17:38.549 --> 00:17:38.559 align:start position:0%
+the strings
+ 
+
+00:17:38.559 --> 00:17:40.230 align:start position:0%
+the strings
+multiplied<00:17:39.120><c> by</c><00:17:39.360><c> each</c><00:17:39.520><c> other</c><00:17:39.760><c> so</c><00:17:39.919><c> if</c><00:17:40.080><c> the</c>
+
+00:17:40.230 --> 00:17:40.240 align:start position:0%
+multiplied by each other so if the
+ 
+
+00:17:40.240 --> 00:17:41.830 align:start position:0%
+multiplied by each other so if the
+length<00:17:40.559><c> of</c><00:17:40.640><c> string</c><00:17:40.960><c> one</c><00:17:41.120><c> was</c><00:17:41.440><c> n</c>
+
+00:17:41.830 --> 00:17:41.840 align:start position:0%
+length of string one was n
+ 
+
+00:17:41.840 --> 00:17:43.830 align:start position:0%
+length of string one was n
+and<00:17:42.000><c> the</c><00:17:42.160><c> length</c><00:17:42.400><c> of</c><00:17:42.480><c> string</c><00:17:42.799><c> two</c><00:17:43.039><c> was</c><00:17:43.360><c> m</c><00:17:43.600><c> we'd</c>
+
+00:17:43.830 --> 00:17:43.840 align:start position:0%
+and the length of string two was m we'd
+ 
+
+00:17:43.840 --> 00:17:45.590 align:start position:0%
+and the length of string two was m we'd
+just<00:17:44.080><c> multiply</c><00:17:44.640><c> them</c><00:17:44.799><c> together</c><00:17:45.200><c> so</c><00:17:45.360><c> this</c>
+
+00:17:45.590 --> 00:17:45.600 align:start position:0%
+just multiply them together so this
+ 
+
+00:17:45.600 --> 00:17:47.190 align:start position:0%
+just multiply them together so this
+would<00:17:45.760><c> be</c><00:17:45.919><c> the</c><00:17:46.080><c> time</c><00:17:46.320><c> complexity</c>
+
+00:17:47.190 --> 00:17:47.200 align:start position:0%
+would be the time complexity
+ 
+
+00:17:47.200 --> 00:17:49.510 align:start position:0%
+would be the time complexity
+that's<00:17:47.600><c> also</c><00:17:48.000><c> the</c><00:17:48.240><c> memory</c><00:17:48.640><c> complexity</c>
+
+00:17:49.510 --> 00:17:49.520 align:start position:0%
+that's also the memory complexity
+ 
+
+00:17:49.520 --> 00:17:52.470 align:start position:0%
+that's also the memory complexity
+because<00:17:49.840><c> we</c><00:17:50.000><c> need</c><00:17:50.240><c> extra</c><00:17:50.559><c> memory</c><00:17:51.039><c> for</c><00:17:51.360><c> our</c><00:17:51.679><c> 2d</c>
+
+00:17:52.470 --> 00:17:52.480 align:start position:0%
+because we need extra memory for our 2d
+ 
+
+00:17:52.480 --> 00:17:55.990 align:start position:0%
+because we need extra memory for our 2d
+dynamic<00:17:53.039><c> programming</c><00:17:54.240><c> grid</c><00:17:55.120><c> oops</c><00:17:55.520><c> i</c><00:17:55.600><c> had</c><00:17:55.760><c> just</c>
+
+00:17:55.990 --> 00:17:56.000 align:start position:0%
+dynamic programming grid oops i had just
+ 
+
+00:17:56.000 --> 00:17:57.510 align:start position:0%
+dynamic programming grid oops i had just
+one<00:17:56.240><c> little</c><00:17:56.559><c> bug</c><00:17:56.799><c> i</c><00:17:57.039><c> added</c>
+
+00:17:57.510 --> 00:17:57.520 align:start position:0%
+one little bug i added
+ 
+
+00:17:57.520 --> 00:18:00.549 align:start position:0%
+one little bug i added
+one<00:17:58.080><c> to</c><00:17:58.640><c> the</c><00:17:59.120><c> inside</c><00:17:59.600><c> of</c><00:17:59.760><c> that</c><00:18:00.000><c> function</c><00:18:00.320><c> but</c><00:18:00.480><c> i</c>
+
+00:18:00.549 --> 00:18:00.559 align:start position:0%
+one to the inside of that function but i
+ 
+
+00:18:00.559 --> 00:18:01.909 align:start position:0%
+one to the inside of that function but i
+needed<00:18:00.799><c> to</c><00:18:00.880><c> add</c><00:18:01.120><c> one</c><00:18:01.360><c> here</c>
+
+00:18:01.909 --> 00:18:01.919 align:start position:0%
+needed to add one here
+ 
+
+00:18:01.919 --> 00:18:04.150 align:start position:0%
+needed to add one here
+but<00:18:02.240><c> other</c><00:18:02.559><c> than</c><00:18:02.720><c> that</c><00:18:03.039><c> you</c><00:18:03.200><c> can</c><00:18:03.440><c> see</c><00:18:03.679><c> that</c><00:18:03.840><c> the</c>
+
+00:18:04.150 --> 00:18:04.160 align:start position:0%
+but other than that you can see that the
+ 
+
+00:18:04.160 --> 00:18:05.110 align:start position:0%
+but other than that you can see that the
+code
+
+00:18:05.110 --> 00:18:05.120 align:start position:0%
+code
+ 
+
+00:18:05.120 --> 00:18:08.150 align:start position:0%
+code
+does<00:18:05.600><c> work</c><00:18:06.559><c> and</c><00:18:06.799><c> it</c><00:18:07.039><c> is</c><00:18:07.360><c> pretty</c><00:18:07.679><c> efficient</c>
+
+00:18:08.150 --> 00:18:08.160 align:start position:0%
+does work and it is pretty efficient
+ 
+
+00:18:08.160 --> 00:18:10.230 align:start position:0%
+does work and it is pretty efficient
+because<00:18:08.400><c> the</c><00:18:08.559><c> dynamic</c><00:18:09.039><c> programming</c><00:18:09.600><c> solution</c>
+
+00:18:10.230 --> 00:18:10.240 align:start position:0%
+because the dynamic programming solution
+ 
+
+00:18:10.240 --> 00:18:12.870 align:start position:0%
+because the dynamic programming solution
+is<00:18:10.400><c> the</c><00:18:10.559><c> most</c><00:18:10.880><c> efficient</c><00:18:11.440><c> for</c><00:18:11.679><c> this</c><00:18:12.000><c> problem</c>
+
+00:18:12.870 --> 00:18:12.880 align:start position:0%
+is the most efficient for this problem
+ 
+
+00:18:12.880 --> 00:18:13.990 align:start position:0%
+is the most efficient for this problem
+so<00:18:13.200><c> i</c><00:18:13.440><c> hope</c><00:18:13.600><c> that</c><00:18:13.760><c> this</c>
+
+00:18:13.990 --> 00:18:14.000 align:start position:0%
+so i hope that this
+ 
+
+00:18:14.000 --> 00:18:16.470 align:start position:0%
+so i hope that this
+was<00:18:14.160><c> helpful</c><00:18:15.039><c> if</c><00:18:15.200><c> it</c><00:18:15.360><c> was</c><00:18:15.760><c> please</c><00:18:16.160><c> like</c><00:18:16.400><c> and</c>
+
+00:18:16.470 --> 00:18:16.480 align:start position:0%
+was helpful if it was please like and
+ 
+
+00:18:16.480 --> 00:18:18.230 align:start position:0%
+was helpful if it was please like and
+subscribe<00:18:17.039><c> it</c><00:18:17.120><c> supports</c><00:18:17.600><c> the</c><00:18:17.760><c> channel</c>
+
+00:18:18.230 --> 00:18:18.240 align:start position:0%
+subscribe it supports the channel
+ 
+
+00:18:18.240 --> 00:18:20.650 align:start position:0%
+subscribe it supports the channel
+a<00:18:18.480><c> lot</c><00:18:18.799><c> and</c><00:18:18.960><c> i'll</c><00:18:19.200><c> hopefully</c><00:18:19.840><c> see</c><00:18:20.000><c> you</c><00:18:20.160><c> pretty</c>
+
+00:18:20.650 --> 00:18:20.660 align:start position:0%
+a lot and i'll hopefully see you pretty
+ 
+
+00:18:20.660 --> 00:18:23.470 align:start position:0%
+a lot and i'll hopefully see you pretty
+[Music]
+
+00:18:23.470 --> 00:18:23.480 align:start position:0%
+[Music]
+ 
+
+00:18:23.480 --> 00:18:26.480 align:start position:0%
+[Music]
+soon
+

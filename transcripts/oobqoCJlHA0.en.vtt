@@ -1,0 +1,4744 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.160 --> 00:00:01.750 align:start position:0%
+ 
+everyone<00:00:00.560><c> welcome</c><00:00:01.040><c> back</c><00:00:01.280><c> and</c><00:00:01.360><c> let's</c><00:00:01.599><c> write</c>
+
+00:00:01.750 --> 00:00:01.760 align:start position:0%
+everyone welcome back and let's write
+ 
+
+00:00:01.760 --> 00:00:03.750 align:start position:0%
+everyone welcome back and let's write
+some<00:00:01.920><c> more</c><00:00:02.159><c> neat</c><00:00:02.399><c> code</c><00:00:02.720><c> today</c><00:00:03.040><c> so</c><00:00:03.199><c> today</c><00:00:03.520><c> let's</c>
+
+00:00:03.750 --> 00:00:03.760 align:start position:0%
+some more neat code today so today let's
+ 
+
+00:00:03.760 --> 00:00:04.309 align:start position:0%
+some more neat code today so today let's
+solve
+
+00:00:04.309 --> 00:00:04.319 align:start position:0%
+solve
+ 
+
+00:00:04.319 --> 00:00:07.670 align:start position:0%
+solve
+implement<00:00:05.200><c> try</c><00:00:05.920><c> aka</c><00:00:06.720><c> a</c><00:00:06.960><c> prefix</c>
+
+00:00:07.670 --> 00:00:07.680 align:start position:0%
+implement try aka a prefix
+ 
+
+00:00:07.680 --> 00:00:10.870 align:start position:0%
+implement try aka a prefix
+tree<00:00:08.240><c> so</c><00:00:08.480><c> a</c><00:00:08.639><c> try</c><00:00:09.200><c> or</c><00:00:09.360><c> a</c><00:00:09.519><c> prefix</c><00:00:10.160><c> tree</c><00:00:10.559><c> is</c><00:00:10.719><c> a</c>
+
+00:00:10.870 --> 00:00:10.880 align:start position:0%
+tree so a try or a prefix tree is a
+ 
+
+00:00:10.880 --> 00:00:12.230 align:start position:0%
+tree so a try or a prefix tree is a
+special<00:00:11.519><c> type</c><00:00:11.920><c> of</c>
+
+00:00:12.230 --> 00:00:12.240 align:start position:0%
+special type of
+ 
+
+00:00:12.240 --> 00:00:14.950 align:start position:0%
+special type of
+tree<00:00:12.799><c> and</c><00:00:12.880><c> it's</c><00:00:13.120><c> used</c><00:00:13.440><c> to</c><00:00:13.679><c> efficiently</c><00:00:14.400><c> store</c>
+
+00:00:14.950 --> 00:00:14.960 align:start position:0%
+tree and it's used to efficiently store
+ 
+
+00:00:14.960 --> 00:00:16.550 align:start position:0%
+tree and it's used to efficiently store
+strings<00:00:16.000><c> and</c>
+
+00:00:16.550 --> 00:00:16.560 align:start position:0%
+strings and
+ 
+
+00:00:16.560 --> 00:00:18.790 align:start position:0%
+strings and
+the<00:00:16.800><c> applications</c><00:00:17.600><c> are</c><00:00:18.000><c> some</c><00:00:18.320><c> stuff</c><00:00:18.560><c> like</c>
+
+00:00:18.790 --> 00:00:18.800 align:start position:0%
+the applications are some stuff like
+ 
+
+00:00:18.800 --> 00:00:19.750 align:start position:0%
+the applications are some stuff like
+autocomplete
+
+00:00:19.750 --> 00:00:19.760 align:start position:0%
+autocomplete
+ 
+
+00:00:19.760 --> 00:00:22.550 align:start position:0%
+autocomplete
+and<00:00:20.080><c> spell</c><00:00:20.480><c> checker</c><00:00:21.439><c> the</c><00:00:21.600><c> reason</c><00:00:22.080><c> is</c><00:00:22.240><c> because</c>
+
+00:00:22.550 --> 00:00:22.560 align:start position:0%
+and spell checker the reason is because
+ 
+
+00:00:22.560 --> 00:00:23.590 align:start position:0%
+and spell checker the reason is because
+the<00:00:22.880><c> prefix</c>
+
+00:00:23.590 --> 00:00:23.600 align:start position:0%
+the prefix
+ 
+
+00:00:23.600 --> 00:00:26.550 align:start position:0%
+the prefix
+tree<00:00:24.320><c> allows</c><00:00:24.720><c> you</c><00:00:24.800><c> to</c><00:00:24.960><c> efficiently</c><00:00:26.160><c> filter</c>
+
+00:00:26.550 --> 00:00:26.560 align:start position:0%
+tree allows you to efficiently filter
+ 
+
+00:00:26.560 --> 00:00:27.189 align:start position:0%
+tree allows you to efficiently filter
+and<00:00:26.800><c> search</c>
+
+00:00:27.189 --> 00:00:27.199 align:start position:0%
+and search
+ 
+
+00:00:27.199 --> 00:00:29.750 align:start position:0%
+and search
+based<00:00:27.519><c> on</c><00:00:27.840><c> prefixes</c><00:00:28.480><c> so</c><00:00:28.640><c> let's</c><00:00:28.960><c> look</c><00:00:29.279><c> at</c><00:00:29.599><c> the</c>
+
+00:00:29.750 --> 00:00:29.760 align:start position:0%
+based on prefixes so let's look at the
+ 
+
+00:00:29.760 --> 00:00:31.750 align:start position:0%
+based on prefixes so let's look at the
+actual<00:00:30.160><c> implementation</c><00:00:31.039><c> of</c><00:00:31.279><c> it</c>
+
+00:00:31.750 --> 00:00:31.760 align:start position:0%
+actual implementation of it
+ 
+
+00:00:31.760 --> 00:00:34.310 align:start position:0%
+actual implementation of it
+so<00:00:32.000><c> we're</c><00:00:32.239><c> going</c><00:00:32.320><c> to</c><00:00:32.480><c> have</c><00:00:32.800><c> a</c><00:00:33.200><c> object</c><00:00:33.760><c> that's</c>
+
+00:00:34.310 --> 00:00:34.320 align:start position:0%
+so we're going to have a object that's
+ 
+
+00:00:34.320 --> 00:00:35.830 align:start position:0%
+so we're going to have a object that's
+what<00:00:34.480><c> we're</c><00:00:34.640><c> going</c><00:00:34.719><c> to</c><00:00:34.800><c> be</c><00:00:34.960><c> doing</c><00:00:35.200><c> this</c><00:00:35.360><c> time</c><00:00:35.600><c> a</c>
+
+00:00:35.830 --> 00:00:35.840 align:start position:0%
+what we're going to be doing this time a
+ 
+
+00:00:35.840 --> 00:00:36.389 align:start position:0%
+what we're going to be doing this time a
+try
+
+00:00:36.389 --> 00:00:36.399 align:start position:0%
+try
+ 
+
+00:00:36.399 --> 00:00:39.350 align:start position:0%
+try
+object<00:00:37.200><c> and</c><00:00:37.440><c> our</c><00:00:37.760><c> job</c><00:00:38.079><c> is</c><00:00:38.239><c> to</c><00:00:38.399><c> fill</c><00:00:38.559><c> in</c><00:00:38.879><c> three</c>
+
+00:00:39.350 --> 00:00:39.360 align:start position:0%
+object and our job is to fill in three
+ 
+
+00:00:39.360 --> 00:00:41.030 align:start position:0%
+object and our job is to fill in three
+functions<00:00:39.840><c> the</c><00:00:40.079><c> first</c><00:00:40.399><c> function</c><00:00:40.800><c> is</c><00:00:40.879><c> going</c><00:00:40.960><c> to</c>
+
+00:00:41.030 --> 00:00:41.040 align:start position:0%
+functions the first function is going to
+ 
+
+00:00:41.040 --> 00:00:41.350 align:start position:0%
+functions the first function is going to
+be
+
+00:00:41.350 --> 00:00:41.360 align:start position:0%
+be
+ 
+
+00:00:41.360 --> 00:00:44.630 align:start position:0%
+be
+inserting<00:00:42.079><c> a</c><00:00:42.320><c> word</c><00:00:42.879><c> into</c><00:00:43.120><c> the</c><00:00:43.280><c> try</c><00:00:44.000><c> the</c><00:00:44.239><c> second</c>
+
+00:00:44.630 --> 00:00:44.640 align:start position:0%
+inserting a word into the try the second
+ 
+
+00:00:44.640 --> 00:00:45.590 align:start position:0%
+inserting a word into the try the second
+function<00:00:45.039><c> is</c><00:00:45.120><c> going</c><00:00:45.200><c> to</c><00:00:45.280><c> be</c>
+
+00:00:45.590 --> 00:00:45.600 align:start position:0%
+function is going to be
+ 
+
+00:00:45.600 --> 00:00:48.470 align:start position:0%
+function is going to be
+searching<00:00:46.239><c> for</c><00:00:46.559><c> a</c><00:00:46.719><c> word</c><00:00:47.200><c> in</c><00:00:47.360><c> the</c><00:00:47.600><c> try</c><00:00:47.920><c> to</c><00:00:48.160><c> see</c>
+
+00:00:48.470 --> 00:00:48.480 align:start position:0%
+searching for a word in the try to see
+ 
+
+00:00:48.480 --> 00:00:49.270 align:start position:0%
+searching for a word in the try to see
+if<00:00:48.640><c> the</c><00:00:48.800><c> word</c>
+
+00:00:49.270 --> 00:00:49.280 align:start position:0%
+if the word
+ 
+
+00:00:49.280 --> 00:00:51.830 align:start position:0%
+if the word
+exists<00:00:50.399><c> and</c><00:00:50.559><c> the</c><00:00:50.800><c> third</c><00:00:51.199><c> function</c><00:00:51.600><c> is</c><00:00:51.680><c> going</c>
+
+00:00:51.830 --> 00:00:51.840 align:start position:0%
+exists and the third function is going
+ 
+
+00:00:51.840 --> 00:00:53.350 align:start position:0%
+exists and the third function is going
+to<00:00:51.920><c> be</c><00:00:52.239><c> to</c><00:00:52.559><c> check</c>
+
+00:00:53.350 --> 00:00:53.360 align:start position:0%
+to be to check
+ 
+
+00:00:53.360 --> 00:00:55.830 align:start position:0%
+to be to check
+if<00:00:53.520><c> there</c><00:00:53.760><c> is</c><00:00:53.920><c> a</c><00:00:54.079><c> word</c><00:00:54.480><c> that</c><00:00:54.800><c> starts</c><00:00:55.280><c> with</c><00:00:55.520><c> a</c>
+
+00:00:55.830 --> 00:00:55.840 align:start position:0%
+if there is a word that starts with a
+ 
+
+00:00:55.840 --> 00:00:56.549 align:start position:0%
+if there is a word that starts with a
+given
+
+00:00:56.549 --> 00:00:56.559 align:start position:0%
+given
+ 
+
+00:00:56.559 --> 00:00:59.270 align:start position:0%
+given
+prefix<00:00:57.600><c> so</c><00:00:58.000><c> those</c><00:00:58.320><c> are</c><00:00:58.399><c> the</c><00:00:58.559><c> three</c><00:00:58.879><c> functions</c>
+
+00:00:59.270 --> 00:00:59.280 align:start position:0%
+prefix so those are the three functions
+ 
+
+00:00:59.280 --> 00:01:00.389 align:start position:0%
+prefix so those are the three functions
+we're<00:00:59.440><c> gonna</c><00:00:59.680><c> do</c>
+
+00:01:00.389 --> 00:01:00.399 align:start position:0%
+we're gonna do
+ 
+
+00:01:00.399 --> 00:01:02.229 align:start position:0%
+we're gonna do
+and<00:01:00.559><c> let</c><00:01:00.719><c> me</c><00:01:00.879><c> just</c><00:01:01.039><c> go</c><00:01:01.280><c> through</c><00:01:01.520><c> the</c><00:01:01.680><c> rest</c><00:01:02.000><c> of</c>
+
+00:01:02.229 --> 00:01:02.239 align:start position:0%
+and let me just go through the rest of
+ 
+
+00:01:02.239 --> 00:01:03.910 align:start position:0%
+and let me just go through the rest of
+this<00:01:02.879><c> explanation</c>
+
+00:01:03.910 --> 00:01:03.920 align:start position:0%
+this explanation
+ 
+
+00:01:03.920 --> 00:01:05.509 align:start position:0%
+this explanation
+and<00:01:04.320><c> then</c><00:01:04.479><c> i'll</c><00:01:04.640><c> show</c><00:01:04.799><c> you</c><00:01:04.879><c> what</c><00:01:05.040><c> a</c><00:01:05.199><c> try</c>
+
+00:01:05.509 --> 00:01:05.519 align:start position:0%
+and then i'll show you what a try
+ 
+
+00:01:05.519 --> 00:01:07.510 align:start position:0%
+and then i'll show you what a try
+actually<00:01:06.080><c> is</c><00:01:06.640><c> so</c><00:01:06.799><c> here</c><00:01:07.040><c> you</c><00:01:07.119><c> can</c><00:01:07.280><c> see</c>
+
+00:01:07.510 --> 00:01:07.520 align:start position:0%
+actually is so here you can see
+ 
+
+00:01:07.520 --> 00:01:08.789 align:start position:0%
+actually is so here you can see
+basically<00:01:07.920><c> what</c><00:01:08.080><c> we're</c><00:01:08.240><c> gonna</c><00:01:08.400><c> actually</c><00:01:08.640><c> be</c>
+
+00:01:08.789 --> 00:01:08.799 align:start position:0%
+basically what we're gonna actually be
+ 
+
+00:01:08.799 --> 00:01:09.270 align:start position:0%
+basically what we're gonna actually be
+doing
+
+00:01:09.270 --> 00:01:09.280 align:start position:0%
+doing
+ 
+
+00:01:09.280 --> 00:01:11.350 align:start position:0%
+doing
+they're<00:01:09.439><c> gonna</c><00:01:09.680><c> be</c><00:01:09.920><c> instantiating</c><00:01:10.720><c> the</c><00:01:10.960><c> try</c>
+
+00:01:11.350 --> 00:01:11.360 align:start position:0%
+they're gonna be instantiating the try
+ 
+
+00:01:11.360 --> 00:01:13.590 align:start position:0%
+they're gonna be instantiating the try
+right<00:01:11.920><c> we're</c><00:01:12.080><c> going</c><00:01:12.240><c> to</c><00:01:12.320><c> be</c><00:01:12.479><c> inserting</c><00:01:13.119><c> a</c><00:01:13.200><c> word</c>
+
+00:01:13.590 --> 00:01:13.600 align:start position:0%
+right we're going to be inserting a word
+ 
+
+00:01:13.600 --> 00:01:16.070 align:start position:0%
+right we're going to be inserting a word
+such<00:01:13.840><c> as</c><00:01:14.240><c> apple</c><00:01:14.720><c> right</c><00:01:15.280><c> then</c><00:01:15.680><c> we're</c><00:01:15.840><c> going</c><00:01:16.000><c> to</c>
+
+00:01:16.070 --> 00:01:16.080 align:start position:0%
+such as apple right then we're going to
+ 
+
+00:01:16.080 --> 00:01:17.270 align:start position:0%
+such as apple right then we're going to
+run<00:01:16.400><c> search</c>
+
+00:01:17.270 --> 00:01:17.280 align:start position:0%
+run search
+ 
+
+00:01:17.280 --> 00:01:20.469 align:start position:0%
+run search
+does<00:01:17.520><c> the</c><00:01:17.680><c> word</c><00:01:18.159><c> apple</c><00:01:18.640><c> exist</c><00:01:19.040><c> but</c><00:01:19.200><c> we</c><00:01:19.439><c> just</c><00:01:20.000><c> uh</c>
+
+00:01:20.469 --> 00:01:20.479 align:start position:0%
+does the word apple exist but we just uh
+ 
+
+00:01:20.479 --> 00:01:21.990 align:start position:0%
+does the word apple exist but we just uh
+added<00:01:20.880><c> it</c><00:01:21.119><c> so</c><00:01:21.360><c> of</c><00:01:21.439><c> course</c><00:01:21.680><c> we're</c><00:01:21.840><c> going</c><00:01:21.920><c> to</c>
+
+00:01:21.990 --> 00:01:22.000 align:start position:0%
+added it so of course we're going to
+ 
+
+00:01:22.000 --> 00:01:23.910 align:start position:0%
+added it so of course we're going to
+return<00:01:22.400><c> true</c><00:01:22.880><c> apple</c><00:01:23.360><c> exists</c>
+
+00:01:23.910 --> 00:01:23.920 align:start position:0%
+return true apple exists
+ 
+
+00:01:23.920 --> 00:01:25.429 align:start position:0%
+return true apple exists
+then<00:01:24.159><c> we're</c><00:01:24.240><c> going</c><00:01:24.400><c> to</c><00:01:24.479><c> check</c><00:01:24.720><c> does</c><00:01:24.880><c> the</c><00:01:25.040><c> word</c>
+
+00:01:25.429 --> 00:01:25.439 align:start position:0%
+then we're going to check does the word
+ 
+
+00:01:25.439 --> 00:01:26.950 align:start position:0%
+then we're going to check does the word
+app<00:01:26.159><c> exist</c>
+
+00:01:26.950 --> 00:01:26.960 align:start position:0%
+app exist
+ 
+
+00:01:26.960 --> 00:01:30.550 align:start position:0%
+app exist
+it<00:01:27.119><c> does</c><00:01:27.439><c> not</c><00:01:28.080><c> the</c><00:01:28.240><c> word</c><00:01:28.640><c> app</c><00:01:29.360><c> does</c><00:01:29.600><c> not</c><00:01:29.920><c> exist</c>
+
+00:01:30.550 --> 00:01:30.560 align:start position:0%
+it does not the word app does not exist
+ 
+
+00:01:30.560 --> 00:01:33.830 align:start position:0%
+it does not the word app does not exist
+and<00:01:31.040><c> third</c><00:01:31.439><c> we're</c><00:01:31.680><c> going</c><00:01:31.759><c> to</c><00:01:31.840><c> try</c><00:01:32.720><c> starts</c><00:01:33.439><c> with</c>
+
+00:01:33.830 --> 00:01:33.840 align:start position:0%
+and third we're going to try starts with
+ 
+
+00:01:33.840 --> 00:01:37.109 align:start position:0%
+and third we're going to try starts with
+app<00:01:34.320><c> are</c><00:01:34.479><c> there</c><00:01:34.799><c> any</c><00:01:35.040><c> words</c><00:01:35.439><c> that</c><00:01:35.840><c> start</c><00:01:36.560><c> with</c>
+
+00:01:37.109 --> 00:01:37.119 align:start position:0%
+app are there any words that start with
+ 
+
+00:01:37.119 --> 00:01:40.149 align:start position:0%
+app are there any words that start with
+app<00:01:37.759><c> an</c><00:01:38.000><c> answer</c><00:01:38.400><c> is</c><00:01:38.720><c> yes</c><00:01:39.200><c> so</c><00:01:39.360><c> we</c><00:01:39.439><c> return</c><00:01:39.840><c> true</c>
+
+00:01:40.149 --> 00:01:40.159 align:start position:0%
+app an answer is yes so we return true
+ 
+
+00:01:40.159 --> 00:01:40.630 align:start position:0%
+app an answer is yes so we return true
+remember
+
+00:01:40.630 --> 00:01:40.640 align:start position:0%
+remember
+ 
+
+00:01:40.640 --> 00:01:44.149 align:start position:0%
+remember
+apple<00:01:41.439><c> starts</c><00:01:41.920><c> with</c><00:01:42.240><c> app</c><00:01:42.880><c> so</c><00:01:43.280><c> we</c><00:01:43.439><c> return</c><00:01:43.840><c> true</c>
+
+00:01:44.149 --> 00:01:44.159 align:start position:0%
+apple starts with app so we return true
+ 
+
+00:01:44.159 --> 00:01:44.469 align:start position:0%
+apple starts with app so we return true
+the
+
+00:01:44.469 --> 00:01:44.479 align:start position:0%
+the
+ 
+
+00:01:44.479 --> 00:01:47.590 align:start position:0%
+the
+prefix<00:01:45.600><c> right</c><00:01:45.920><c> this</c><00:01:46.159><c> is</c><00:01:46.240><c> the</c><00:01:46.479><c> prefix</c><00:01:47.200><c> app</c>
+
+00:01:47.590 --> 00:01:47.600 align:start position:0%
+prefix right this is the prefix app
+ 
+
+00:01:47.600 --> 00:01:50.710 align:start position:0%
+prefix right this is the prefix app
+is<00:01:47.759><c> the</c><00:01:48.000><c> prefix</c><00:01:48.799><c> of</c><00:01:49.119><c> apple</c><00:01:50.079><c> so</c>
+
+00:01:50.710 --> 00:01:50.720 align:start position:0%
+is the prefix of apple so
+ 
+
+00:01:50.720 --> 00:01:53.030 align:start position:0%
+is the prefix of apple so
+now<00:01:50.960><c> let</c><00:01:51.119><c> me</c><00:01:51.200><c> show</c><00:01:51.439><c> you</c><00:01:51.920><c> the</c><00:01:52.159><c> actual</c><00:01:52.720><c> data</c>
+
+00:01:53.030 --> 00:01:53.040 align:start position:0%
+now let me show you the actual data
+ 
+
+00:01:53.040 --> 00:01:55.350 align:start position:0%
+now let me show you the actual data
+structure<00:01:53.840><c> so</c><00:01:54.000><c> let</c><00:01:54.159><c> me</c><00:01:54.240><c> show</c><00:01:54.399><c> you</c><00:01:54.560><c> what</c><00:01:54.720><c> a</c><00:01:54.880><c> try</c>
+
+00:01:55.350 --> 00:01:55.360 align:start position:0%
+structure so let me show you what a try
+ 
+
+00:01:55.360 --> 00:01:57.590 align:start position:0%
+structure so let me show you what a try
+is<00:01:55.600><c> and</c><00:01:55.920><c> in</c><00:01:56.079><c> this</c><00:01:56.399><c> problem</c><00:01:56.880><c> they</c><00:01:57.119><c> told</c><00:01:57.360><c> us</c><00:01:57.520><c> that</c>
+
+00:01:57.590 --> 00:01:57.600 align:start position:0%
+is and in this problem they told us that
+ 
+
+00:01:57.600 --> 00:01:58.630 align:start position:0%
+is and in this problem they told us that
+the<00:01:57.840><c> limitation</c>
+
+00:01:58.630 --> 00:01:58.640 align:start position:0%
+the limitation
+ 
+
+00:01:58.640 --> 00:02:00.630 align:start position:0%
+the limitation
+is<00:01:58.799><c> that</c><00:01:59.040><c> the</c><00:01:59.200><c> words</c><00:01:59.600><c> are</c><00:01:59.759><c> gonna</c><00:02:00.000><c> only</c><00:02:00.399><c> have</c>
+
+00:02:00.630 --> 00:02:00.640 align:start position:0%
+is that the words are gonna only have
+ 
+
+00:02:00.640 --> 00:02:01.670 align:start position:0%
+is that the words are gonna only have
+characters<00:02:01.200><c> from</c>
+
+00:02:01.670 --> 00:02:01.680 align:start position:0%
+characters from
+ 
+
+00:02:01.680 --> 00:02:04.310 align:start position:0%
+characters from
+lowercase<00:02:02.479><c> a</c><00:02:02.960><c> to</c><00:02:03.280><c> z</c><00:02:03.600><c> right</c><00:02:03.840><c> so</c><00:02:04.000><c> this</c><00:02:04.159><c> is</c>
+
+00:02:04.310 --> 00:02:04.320 align:start position:0%
+lowercase a to z right so this is
+ 
+
+00:02:04.320 --> 00:02:05.990 align:start position:0%
+lowercase a to z right so this is
+lowercase<00:02:04.960><c> a</c><00:02:05.119><c> to</c><00:02:05.280><c> z</c><00:02:05.439><c> so</c><00:02:05.600><c> that</c><00:02:05.680><c> means</c><00:02:05.840><c> we're</c>
+
+00:02:05.990 --> 00:02:06.000 align:start position:0%
+lowercase a to z so that means we're
+ 
+
+00:02:06.000 --> 00:02:08.070 align:start position:0%
+lowercase a to z so that means we're
+gonna<00:02:06.159><c> have</c><00:02:06.320><c> exactly</c><00:02:06.799><c> 26</c><00:02:07.360><c> characters</c>
+
+00:02:08.070 --> 00:02:08.080 align:start position:0%
+gonna have exactly 26 characters
+ 
+
+00:02:08.080 --> 00:02:11.350 align:start position:0%
+gonna have exactly 26 characters
+to<00:02:08.319><c> worry</c><00:02:08.640><c> about</c><00:02:08.959><c> right</c><00:02:09.360><c> but</c><00:02:09.599><c> so</c><00:02:10.080><c> this</c><00:02:10.560><c> is</c><00:02:10.800><c> a</c>
+
+00:02:11.350 --> 00:02:11.360 align:start position:0%
+to worry about right but so this is a
+ 
+
+00:02:11.360 --> 00:02:13.350 align:start position:0%
+to worry about right but so this is a
+tree<00:02:11.760><c> right</c><00:02:12.000><c> it's</c><00:02:12.160><c> a</c><00:02:12.319><c> prefix</c><00:02:12.879><c> tree</c><00:02:13.120><c> it's</c><00:02:13.280><c> a</c>
+
+00:02:13.350 --> 00:02:13.360 align:start position:0%
+tree right it's a prefix tree it's a
+ 
+
+00:02:13.360 --> 00:02:14.390 align:start position:0%
+tree right it's a prefix tree it's a
+special<00:02:13.840><c> kind</c><00:02:14.160><c> of</c>
+
+00:02:14.390 --> 00:02:14.400 align:start position:0%
+special kind of
+ 
+
+00:02:14.400 --> 00:02:17.350 align:start position:0%
+special kind of
+tree<00:02:15.120><c> so</c><00:02:15.440><c> initially</c><00:02:16.160><c> our</c><00:02:16.400><c> tr</c><00:02:16.800><c> our</c><00:02:16.959><c> tree</c><00:02:17.280><c> is</c>
+
+00:02:17.350 --> 00:02:17.360 align:start position:0%
+tree so initially our tr our tree is
+ 
+
+00:02:17.360 --> 00:02:18.309 align:start position:0%
+tree so initially our tr our tree is
+going<00:02:17.440><c> to</c><00:02:17.520><c> be</c><00:02:17.760><c> empty</c>
+
+00:02:18.309 --> 00:02:18.319 align:start position:0%
+going to be empty
+ 
+
+00:02:18.319 --> 00:02:21.030 align:start position:0%
+going to be empty
+right<00:02:18.959><c> but</c><00:02:19.200><c> let's</c><00:02:19.360><c> say</c><00:02:19.520><c> we</c><00:02:19.760><c> want</c><00:02:20.000><c> to</c><00:02:20.319><c> insert</c>
+
+00:02:21.030 --> 00:02:21.040 align:start position:0%
+right but let's say we want to insert
+ 
+
+00:02:21.040 --> 00:02:21.750 align:start position:0%
+right but let's say we want to insert
+apple
+
+00:02:21.750 --> 00:02:21.760 align:start position:0%
+apple
+ 
+
+00:02:21.760 --> 00:02:24.790 align:start position:0%
+apple
+so<00:02:22.000><c> if</c><00:02:22.080><c> we</c><00:02:22.239><c> want</c><00:02:22.400><c> to</c><00:02:22.640><c> insert</c><00:02:23.120><c> the</c><00:02:23.440><c> word</c><00:02:24.080><c> apple</c>
+
+00:02:24.790 --> 00:02:24.800 align:start position:0%
+so if we want to insert the word apple
+ 
+
+00:02:24.800 --> 00:02:26.790 align:start position:0%
+so if we want to insert the word apple
+how<00:02:25.040><c> can</c><00:02:25.200><c> we</c><00:02:25.360><c> do</c><00:02:25.599><c> that</c><00:02:26.000><c> well</c><00:02:26.319><c> this</c><00:02:26.560><c> is</c><00:02:26.640><c> what</c>
+
+00:02:26.790 --> 00:02:26.800 align:start position:0%
+how can we do that well this is what
+ 
+
+00:02:26.800 --> 00:02:28.630 align:start position:0%
+how can we do that well this is what
+we're<00:02:26.959><c> going</c><00:02:27.120><c> to</c><00:02:27.200><c> do</c><00:02:27.440><c> we're</c><00:02:27.599><c> going</c><00:02:27.680><c> to</c><00:02:27.920><c> create</c>
+
+00:02:28.630 --> 00:02:28.640 align:start position:0%
+we're going to do we're going to create
+ 
+
+00:02:28.640 --> 00:02:31.750 align:start position:0%
+we're going to do we're going to create
+a<00:02:29.040><c> node</c><00:02:30.000><c> for</c><00:02:30.640><c> the</c><00:02:30.879><c> lowercase</c>
+
+00:02:31.750 --> 00:02:31.760 align:start position:0%
+a node for the lowercase
+ 
+
+00:02:31.760 --> 00:02:34.710 align:start position:0%
+a node for the lowercase
+letter<00:02:32.400><c> a</c><00:02:33.040><c> right</c><00:02:33.840><c> then</c><00:02:34.319><c> we're</c><00:02:34.560><c> going</c><00:02:34.640><c> to</c>
+
+00:02:34.710 --> 00:02:34.720 align:start position:0%
+letter a right then we're going to
+ 
+
+00:02:34.720 --> 00:02:35.990 align:start position:0%
+letter a right then we're going to
+create<00:02:35.200><c> another</c>
+
+00:02:35.990 --> 00:02:36.000 align:start position:0%
+create another
+ 
+
+00:02:36.000 --> 00:02:39.430 align:start position:0%
+create another
+node<00:02:36.560><c> for</c><00:02:36.720><c> the</c><00:02:36.879><c> lowercase</c><00:02:37.920><c> letter</c><00:02:38.640><c> p</c>
+
+00:02:39.430 --> 00:02:39.440 align:start position:0%
+node for the lowercase letter p
+ 
+
+00:02:39.440 --> 00:02:41.750 align:start position:0%
+node for the lowercase letter p
+and<00:02:39.920><c> we're</c><00:02:40.080><c> going</c><00:02:40.160><c> to</c><00:02:40.319><c> basically</c><00:02:40.959><c> keep</c><00:02:41.360><c> doing</c>
+
+00:02:41.750 --> 00:02:41.760 align:start position:0%
+and we're going to basically keep doing
+ 
+
+00:02:41.760 --> 00:02:43.030 align:start position:0%
+and we're going to basically keep doing
+this<00:02:42.000><c> for</c><00:02:42.400><c> every</c>
+
+00:02:43.030 --> 00:02:43.040 align:start position:0%
+this for every
+ 
+
+00:02:43.040 --> 00:02:45.190 align:start position:0%
+this for every
+character<00:02:43.840><c> in</c><00:02:44.319><c> the</c><00:02:44.560><c> word</c><00:02:44.800><c> that</c><00:02:44.959><c> we're</c>
+
+00:02:45.190 --> 00:02:45.200 align:start position:0%
+character in the word that we're
+ 
+
+00:02:45.200 --> 00:02:46.790 align:start position:0%
+character in the word that we're
+inserting<00:02:45.760><c> right</c><00:02:46.080><c> we're</c><00:02:46.319><c> going</c><00:02:46.400><c> to</c><00:02:46.480><c> say</c>
+
+00:02:46.790 --> 00:02:46.800 align:start position:0%
+inserting right we're going to say
+ 
+
+00:02:46.800 --> 00:02:50.070 align:start position:0%
+inserting right we're going to say
+a<00:02:47.519><c> insert</c><00:02:48.000><c> it</c><00:02:48.560><c> p</c><00:02:48.879><c> insert</c><00:02:49.360><c> it</c><00:02:49.599><c> second</c>
+
+00:02:50.070 --> 00:02:50.080 align:start position:0%
+a insert it p insert it second
+ 
+
+00:02:50.080 --> 00:02:52.790 align:start position:0%
+a insert it p insert it second
+p<00:02:50.480><c> keep</c><00:02:50.720><c> doing</c><00:02:51.040><c> that</c><00:02:51.440><c> and</c><00:02:52.160><c> every</c><00:02:52.400><c> time</c><00:02:52.560><c> we're</c>
+
+00:02:52.790 --> 00:02:52.800 align:start position:0%
+p keep doing that and every time we're
+ 
+
+00:02:52.800 --> 00:02:54.470 align:start position:0%
+p keep doing that and every time we're
+inserting<00:02:53.200><c> a</c><00:02:53.440><c> new</c><00:02:53.680><c> character</c><00:02:54.080><c> we're</c><00:02:54.239><c> going</c><00:02:54.319><c> to</c>
+
+00:02:54.470 --> 00:02:54.480 align:start position:0%
+inserting a new character we're going to
+ 
+
+00:02:54.480 --> 00:02:55.430 align:start position:0%
+inserting a new character we're going to
+add<00:02:54.800><c> it</c><00:02:54.959><c> as</c><00:02:55.120><c> a</c>
+
+00:02:55.430 --> 00:02:55.440 align:start position:0%
+add it as a
+ 
+
+00:02:55.440 --> 00:02:58.550 align:start position:0%
+add it as a
+child<00:02:56.080><c> of</c><00:02:56.640><c> the</c><00:02:56.959><c> previous</c><00:02:57.440><c> character</c>
+
+00:02:58.550 --> 00:02:58.560 align:start position:0%
+child of the previous character
+ 
+
+00:02:58.560 --> 00:03:01.350 align:start position:0%
+child of the previous character
+so<00:02:58.720><c> we</c><00:02:59.120><c> inserted</c><00:02:59.920><c> the</c><00:03:00.080><c> word</c><00:03:00.560><c> apple</c><00:03:01.040><c> right</c><00:03:01.200><c> we</c>
+
+00:03:01.350 --> 00:03:01.360 align:start position:0%
+so we inserted the word apple right we
+ 
+
+00:03:01.360 --> 00:03:03.110 align:start position:0%
+so we inserted the word apple right we
+can<00:03:01.519><c> clearly</c><00:03:02.000><c> see</c><00:03:02.319><c> that</c>
+
+00:03:03.110 --> 00:03:03.120 align:start position:0%
+can clearly see that
+ 
+
+00:03:03.120 --> 00:03:05.430 align:start position:0%
+can clearly see that
+one<00:03:03.440><c> more</c><00:03:03.680><c> thing</c><00:03:04.000><c> we</c><00:03:04.159><c> have</c><00:03:04.239><c> to</c><00:03:04.400><c> do</c><00:03:04.640><c> to</c><00:03:04.879><c> say</c><00:03:05.120><c> that</c>
+
+00:03:05.430 --> 00:03:05.440 align:start position:0%
+one more thing we have to do to say that
+ 
+
+00:03:05.440 --> 00:03:06.229 align:start position:0%
+one more thing we have to do to say that
+this<00:03:05.760><c> is</c>
+
+00:03:06.229 --> 00:03:06.239 align:start position:0%
+this is
+ 
+
+00:03:06.239 --> 00:03:08.309 align:start position:0%
+this is
+the<00:03:06.480><c> word</c><00:03:06.800><c> that</c><00:03:06.879><c> we</c><00:03:07.120><c> inserted</c><00:03:07.599><c> is</c><00:03:07.760><c> we</c><00:03:07.840><c> have</c><00:03:08.000><c> to</c>
+
+00:03:08.309 --> 00:03:08.319 align:start position:0%
+the word that we inserted is we have to
+ 
+
+00:03:08.319 --> 00:03:09.350 align:start position:0%
+the word that we inserted is we have to
+mark<00:03:08.879><c> the</c>
+
+00:03:09.350 --> 00:03:09.360 align:start position:0%
+mark the
+ 
+
+00:03:09.360 --> 00:03:12.470 align:start position:0%
+mark the
+end<00:03:10.000><c> of</c><00:03:10.319><c> the</c><00:03:10.480><c> word</c><00:03:10.800><c> right</c><00:03:11.040><c> so</c><00:03:11.599><c> this</c><00:03:12.000><c> is</c><00:03:12.159><c> the</c>
+
+00:03:12.470 --> 00:03:12.480 align:start position:0%
+end of the word right so this is the
+ 
+
+00:03:12.480 --> 00:03:14.869 align:start position:0%
+end of the word right so this is the
+end<00:03:12.640><c> of</c><00:03:12.800><c> the</c><00:03:12.959><c> word</c><00:03:13.360><c> right</c><00:03:13.760><c> the</c><00:03:13.920><c> letter</c><00:03:14.400><c> e</c><00:03:14.800><c> is</c>
+
+00:03:14.869 --> 00:03:14.879 align:start position:0%
+end of the word right the letter e is
+ 
+
+00:03:14.879 --> 00:03:16.070 align:start position:0%
+end of the word right the letter e is
+the<00:03:15.040><c> end</c><00:03:15.120><c> of</c><00:03:15.200><c> the</c><00:03:15.280><c> word</c><00:03:15.440><c> so</c><00:03:15.599><c> we're</c><00:03:15.760><c> going</c><00:03:15.840><c> to</c>
+
+00:03:16.070 --> 00:03:16.080 align:start position:0%
+the end of the word so we're going to
+ 
+
+00:03:16.080 --> 00:03:17.430 align:start position:0%
+the end of the word so we're going to
+mark<00:03:16.400><c> it</c><00:03:16.560><c> such</c><00:03:16.879><c> that</c>
+
+00:03:17.430 --> 00:03:17.440 align:start position:0%
+mark it such that
+ 
+
+00:03:17.440 --> 00:03:19.270 align:start position:0%
+mark it such that
+so<00:03:17.680><c> that</c><00:03:17.840><c> this</c><00:03:18.080><c> is</c><00:03:18.239><c> identified</c><00:03:18.800><c> as</c><00:03:18.959><c> the</c><00:03:19.040><c> end</c><00:03:19.200><c> of</c>
+
+00:03:19.270 --> 00:03:19.280 align:start position:0%
+so that this is identified as the end of
+ 
+
+00:03:19.280 --> 00:03:20.710 align:start position:0%
+so that this is identified as the end of
+the<00:03:19.360><c> word</c><00:03:19.599><c> right</c><00:03:19.920><c> not</c>
+
+00:03:20.710 --> 00:03:20.720 align:start position:0%
+the word right not
+ 
+
+00:03:20.720 --> 00:03:23.030 align:start position:0%
+the word right not
+for<00:03:20.879><c> example</c><00:03:21.280><c> this</c><00:03:21.680><c> right</c><00:03:21.920><c> if</c><00:03:22.080><c> the</c><00:03:22.319><c> if</c><00:03:22.480><c> we</c><00:03:22.640><c> mark</c>
+
+00:03:23.030 --> 00:03:23.040 align:start position:0%
+for example this right if the if we mark
+ 
+
+00:03:23.040 --> 00:03:24.309 align:start position:0%
+for example this right if the if we mark
+this<00:03:23.280><c> as</c><00:03:23.360><c> the</c><00:03:23.519><c> end</c><00:03:23.680><c> of</c><00:03:23.760><c> the</c><00:03:23.840><c> word</c>
+
+00:03:24.309 --> 00:03:24.319 align:start position:0%
+this as the end of the word
+ 
+
+00:03:24.319 --> 00:03:25.990 align:start position:0%
+this as the end of the word
+then<00:03:24.480><c> we're</c><00:03:24.640><c> basically</c><00:03:25.120><c> saying</c><00:03:25.360><c> we</c><00:03:25.599><c> inserted</c>
+
+00:03:25.990 --> 00:03:26.000 align:start position:0%
+then we're basically saying we inserted
+ 
+
+00:03:26.000 --> 00:03:27.509 align:start position:0%
+then we're basically saying we inserted
+the<00:03:26.159><c> word</c><00:03:26.720><c> a</c><00:03:27.200><c> p</c>
+
+00:03:27.509 --> 00:03:27.519 align:start position:0%
+the word a p
+ 
+
+00:03:27.519 --> 00:03:29.990 align:start position:0%
+the word a p
+but<00:03:27.680><c> we</c><00:03:27.840><c> know</c><00:03:28.000><c> we</c><00:03:28.159><c> actually</c><00:03:28.560><c> did</c><00:03:29.200><c> apple</c><00:03:29.680><c> right</c>
+
+00:03:29.990 --> 00:03:30.000 align:start position:0%
+but we know we actually did apple right
+ 
+
+00:03:30.000 --> 00:03:30.789 align:start position:0%
+but we know we actually did apple right
+full<00:03:30.400><c> on</c>
+
+00:03:30.789 --> 00:03:30.799 align:start position:0%
+full on
+ 
+
+00:03:30.799 --> 00:03:32.869 align:start position:0%
+full on
+apple<00:03:31.200><c> this</c><00:03:31.440><c> is</c><00:03:31.519><c> the</c><00:03:31.599><c> last</c><00:03:31.920><c> character</c><00:03:32.400><c> so</c><00:03:32.560><c> we</c>
+
+00:03:32.869 --> 00:03:32.879 align:start position:0%
+apple this is the last character so we
+ 
+
+00:03:32.879 --> 00:03:35.350 align:start position:0%
+apple this is the last character so we
+mark<00:03:33.440><c> here</c><00:03:33.840><c> as</c><00:03:34.000><c> the</c><00:03:34.080><c> last</c><00:03:34.319><c> character</c>
+
+00:03:35.350 --> 00:03:35.360 align:start position:0%
+mark here as the last character
+ 
+
+00:03:35.360 --> 00:03:36.949 align:start position:0%
+mark here as the last character
+we<00:03:35.599><c> are</c><00:03:35.760><c> marking</c><00:03:36.239><c> it</c><00:03:36.319><c> even</c><00:03:36.480><c> though</c><00:03:36.640><c> it's</c><00:03:36.799><c> kind</c>
+
+00:03:36.949 --> 00:03:36.959 align:start position:0%
+we are marking it even though it's kind
+ 
+
+00:03:36.959 --> 00:03:38.949 align:start position:0%
+we are marking it even though it's kind
+of<00:03:37.239><c> self-explanatory</c><00:03:38.239><c> because</c><00:03:38.640><c> this</c>
+
+00:03:38.949 --> 00:03:38.959 align:start position:0%
+of self-explanatory because this
+ 
+
+00:03:38.959 --> 00:03:39.670 align:start position:0%
+of self-explanatory because this
+character<00:03:39.440><c> e</c>
+
+00:03:39.670 --> 00:03:39.680 align:start position:0%
+character e
+ 
+
+00:03:39.680 --> 00:03:41.190 align:start position:0%
+character e
+does<00:03:39.840><c> not</c><00:03:40.000><c> have</c><00:03:40.159><c> any</c><00:03:40.400><c> children</c><00:03:40.799><c> it's</c>
+
+00:03:41.190 --> 00:03:41.200 align:start position:0%
+does not have any children it's
+ 
+
+00:03:41.200 --> 00:03:42.710 align:start position:0%
+does not have any children it's
+basically<00:03:41.680><c> obvious</c><00:03:42.080><c> that</c><00:03:42.159><c> this</c><00:03:42.319><c> is</c><00:03:42.400><c> the</c><00:03:42.560><c> end</c>
+
+00:03:42.710 --> 00:03:42.720 align:start position:0%
+basically obvious that this is the end
+ 
+
+00:03:42.720 --> 00:03:44.229 align:start position:0%
+basically obvious that this is the end
+of<00:03:42.799><c> the</c><00:03:42.879><c> word</c><00:03:43.120><c> but</c><00:03:43.280><c> we're</c><00:03:43.519><c> still</c><00:03:43.680><c> marking</c><00:03:44.080><c> it</c>
+
+00:03:44.229 --> 00:03:44.239 align:start position:0%
+of the word but we're still marking it
+ 
+
+00:03:44.239 --> 00:03:45.430 align:start position:0%
+of the word but we're still marking it
+just<00:03:44.400><c> to</c><00:03:44.560><c> be</c><00:03:44.720><c> safe</c>
+
+00:03:45.430 --> 00:03:45.440 align:start position:0%
+just to be safe
+ 
+
+00:03:45.440 --> 00:03:46.949 align:start position:0%
+just to be safe
+so<00:03:45.599><c> you</c><00:03:45.760><c> can</c><00:03:45.920><c> kind</c><00:03:46.080><c> of</c><00:03:46.159><c> see</c><00:03:46.400><c> what</c><00:03:46.560><c> we're</c><00:03:46.720><c> doing</c>
+
+00:03:46.949 --> 00:03:46.959 align:start position:0%
+so you can kind of see what we're doing
+ 
+
+00:03:46.959 --> 00:03:48.470 align:start position:0%
+so you can kind of see what we're doing
+here<00:03:47.280><c> now</c><00:03:47.519><c> right</c><00:03:48.000><c> this</c>
+
+00:03:48.470 --> 00:03:48.480 align:start position:0%
+here now right this
+ 
+
+00:03:48.480 --> 00:03:51.830 align:start position:0%
+here now right this
+is<00:03:49.120><c> kind</c><00:03:49.519><c> of</c><00:03:49.680><c> the</c><00:03:50.080><c> route</c><00:03:50.640><c> right</c><00:03:51.280><c> so</c>
+
+00:03:51.830 --> 00:03:51.840 align:start position:0%
+is kind of the route right so
+ 
+
+00:03:51.840 --> 00:03:53.830 align:start position:0%
+is kind of the route right so
+really<00:03:52.159><c> what's</c><00:03:52.400><c> going</c><00:03:52.480><c> to</c><00:03:52.560><c> be</c><00:03:52.799><c> possible</c><00:03:53.360><c> is</c><00:03:53.680><c> we</c>
+
+00:03:53.830 --> 00:03:53.840 align:start position:0%
+really what's going to be possible is we
+ 
+
+00:03:53.840 --> 00:03:55.589 align:start position:0%
+really what's going to be possible is we
+have<00:03:54.000><c> 26</c><00:03:54.480><c> characters</c><00:03:54.959><c> right</c><00:03:55.200><c> so</c>
+
+00:03:55.589 --> 00:03:55.599 align:start position:0%
+have 26 characters right so
+ 
+
+00:03:55.599 --> 00:03:58.789 align:start position:0%
+have 26 characters right so
+potentially<00:03:56.159><c> we</c><00:03:56.319><c> could</c><00:03:56.480><c> have</c><00:03:56.799><c> a</c><00:03:57.200><c> a</c><00:03:58.080><c> a</c>
+
+00:03:58.789 --> 00:03:58.799 align:start position:0%
+potentially we could have a a a
+ 
+
+00:03:58.799 --> 00:04:00.949 align:start position:0%
+potentially we could have a a a
+node<00:03:59.200><c> at</c><00:03:59.360><c> the</c><00:03:59.519><c> first</c><00:04:00.000><c> layer</c><00:04:00.400><c> for</c><00:04:00.640><c> every</c>
+
+00:04:00.949 --> 00:04:00.959 align:start position:0%
+node at the first layer for every
+ 
+
+00:04:00.959 --> 00:04:02.309 align:start position:0%
+node at the first layer for every
+character<00:04:01.360><c> right</c><00:04:01.519><c> so</c><00:04:01.760><c> a</c>
+
+00:04:02.309 --> 00:04:02.319 align:start position:0%
+character right so a
+ 
+
+00:04:02.319 --> 00:04:05.910 align:start position:0%
+character right so a
+b<00:04:02.640><c> c</c><00:04:03.360><c> d</c><00:04:03.680><c> etc</c><00:04:04.400><c> right</c><00:04:04.720><c> we</c><00:04:04.879><c> could</c><00:04:05.040><c> have</c><00:04:05.200><c> a</c><00:04:05.360><c> node</c><00:04:05.680><c> for</c>
+
+00:04:05.910 --> 00:04:05.920 align:start position:0%
+b c d etc right we could have a node for
+ 
+
+00:04:05.920 --> 00:04:06.630 align:start position:0%
+b c d etc right we could have a node for
+each<00:04:06.080><c> of</c><00:04:06.239><c> these</c>
+
+00:04:06.630 --> 00:04:06.640 align:start position:0%
+each of these
+ 
+
+00:04:06.640 --> 00:04:08.869 align:start position:0%
+each of these
+basically<00:04:07.120><c> indicating</c><00:04:07.840><c> that</c><00:04:08.159><c> here</c><00:04:08.560><c> is</c><00:04:08.720><c> where</c>
+
+00:04:08.869 --> 00:04:08.879 align:start position:0%
+basically indicating that here is where
+ 
+
+00:04:08.879 --> 00:04:10.630 align:start position:0%
+basically indicating that here is where
+we're<00:04:09.040><c> gonna</c><00:04:09.280><c> put</c><00:04:09.599><c> all</c><00:04:09.840><c> of</c><00:04:09.920><c> the</c><00:04:10.080><c> words</c><00:04:10.400><c> that</c>
+
+00:04:10.630 --> 00:04:10.640 align:start position:0%
+we're gonna put all of the words that
+ 
+
+00:04:10.640 --> 00:04:11.589 align:start position:0%
+we're gonna put all of the words that
+start<00:04:10.799><c> with</c><00:04:10.959><c> a</c><00:04:11.120><c> b</c>
+
+00:04:11.589 --> 00:04:11.599 align:start position:0%
+start with a b
+ 
+
+00:04:11.599 --> 00:04:13.190 align:start position:0%
+start with a b
+here<00:04:11.760><c> we're</c><00:04:12.000><c> gonna</c><00:04:12.159><c> put</c><00:04:12.400><c> all</c><00:04:12.480><c> the</c><00:04:12.640><c> words</c><00:04:12.959><c> that</c>
+
+00:04:13.190 --> 00:04:13.200 align:start position:0%
+here we're gonna put all the words that
+ 
+
+00:04:13.200 --> 00:04:15.110 align:start position:0%
+here we're gonna put all the words that
+start<00:04:13.439><c> with</c><00:04:13.599><c> a</c><00:04:13.680><c> c</c><00:04:14.319><c> here's</c><00:04:14.720><c> where</c><00:04:14.879><c> we're</c><00:04:15.040><c> going</c>
+
+00:04:15.110 --> 00:04:15.120 align:start position:0%
+start with a c here's where we're going
+ 
+
+00:04:15.120 --> 00:04:17.030 align:start position:0%
+start with a c here's where we're going
+to<00:04:15.200><c> put</c><00:04:15.360><c> all</c><00:04:15.519><c> the</c><00:04:15.599><c> words</c><00:04:15.920><c> starting</c><00:04:16.239><c> with</c><00:04:16.560><c> d</c>
+
+00:04:17.030 --> 00:04:17.040 align:start position:0%
+to put all the words starting with d
+ 
+
+00:04:17.040 --> 00:04:19.349 align:start position:0%
+to put all the words starting with d
+so<00:04:17.280><c> the</c><00:04:17.519><c> next</c><00:04:18.160><c> thing</c><00:04:18.320><c> we're</c><00:04:18.479><c> going</c><00:04:18.639><c> to</c><00:04:18.720><c> do</c><00:04:19.040><c> is</c>
+
+00:04:19.349 --> 00:04:19.359 align:start position:0%
+so the next thing we're going to do is
+ 
+
+00:04:19.359 --> 00:04:22.150 align:start position:0%
+so the next thing we're going to do is
+run<00:04:20.000><c> search</c><00:04:20.400><c> we're</c><00:04:20.639><c> searching</c><00:04:21.120><c> for</c><00:04:21.280><c> the</c><00:04:21.519><c> word</c>
+
+00:04:22.150 --> 00:04:22.160 align:start position:0%
+run search we're searching for the word
+ 
+
+00:04:22.160 --> 00:04:24.150 align:start position:0%
+run search we're searching for the word
+apple<00:04:22.960><c> so</c><00:04:23.199><c> how</c><00:04:23.440><c> are</c><00:04:23.520><c> we</c><00:04:23.680><c> going</c><00:04:23.759><c> to</c><00:04:23.840><c> do</c><00:04:24.000><c> that</c>
+
+00:04:24.150 --> 00:04:24.160 align:start position:0%
+apple so how are we going to do that
+ 
+
+00:04:24.160 --> 00:04:25.189 align:start position:0%
+apple so how are we going to do that
+well<00:04:24.320><c> we're</c><00:04:24.479><c> going</c><00:04:24.560><c> to</c><00:04:24.720><c> start</c>
+
+00:04:25.189 --> 00:04:25.199 align:start position:0%
+well we're going to start
+ 
+
+00:04:25.199 --> 00:04:27.590 align:start position:0%
+well we're going to start
+here<00:04:25.680><c> at</c><00:04:25.919><c> our</c><00:04:26.320><c> root</c><00:04:26.720><c> right</c><00:04:27.199><c> this</c><00:04:27.440><c> is</c>
+
+00:04:27.590 --> 00:04:27.600 align:start position:0%
+here at our root right this is
+ 
+
+00:04:27.600 --> 00:04:29.430 align:start position:0%
+here at our root right this is
+technically<00:04:28.080><c> our</c><00:04:28.400><c> root</c><00:04:28.800><c> even</c><00:04:29.040><c> though</c><00:04:29.280><c> it</c>
+
+00:04:29.430 --> 00:04:29.440 align:start position:0%
+technically our root even though it
+ 
+
+00:04:29.440 --> 00:04:30.550 align:start position:0%
+technically our root even though it
+doesn't<00:04:29.759><c> really</c><00:04:30.160><c> have</c>
+
+00:04:30.550 --> 00:04:30.560 align:start position:0%
+doesn't really have
+ 
+
+00:04:30.560 --> 00:04:32.950 align:start position:0%
+doesn't really have
+a<00:04:30.800><c> character</c><00:04:31.440><c> right</c><00:04:31.919><c> so</c><00:04:32.240><c> that's</c><00:04:32.560><c> basically</c>
+
+00:04:32.950 --> 00:04:32.960 align:start position:0%
+a character right so that's basically
+ 
+
+00:04:32.960 --> 00:04:34.870 align:start position:0%
+a character right so that's basically
+just<00:04:33.199><c> a</c><00:04:33.280><c> placeholder</c><00:04:34.080><c> node</c><00:04:34.400><c> right</c><00:04:34.639><c> it</c><00:04:34.720><c> doesn't</c>
+
+00:04:34.870 --> 00:04:34.880 align:start position:0%
+just a placeholder node right it doesn't
+ 
+
+00:04:34.880 --> 00:04:35.990 align:start position:0%
+just a placeholder node right it doesn't
+have<00:04:35.040><c> any</c><00:04:35.199><c> characteristics</c>
+
+00:04:35.990 --> 00:04:36.000 align:start position:0%
+have any characteristics
+ 
+
+00:04:36.000 --> 00:04:37.749 align:start position:0%
+have any characteristics
+but<00:04:36.160><c> it's</c><00:04:36.240><c> considered</c><00:04:36.720><c> the</c><00:04:36.880><c> root</c><00:04:37.199><c> right</c><00:04:37.600><c> and</c>
+
+00:04:37.749 --> 00:04:37.759 align:start position:0%
+but it's considered the root right and
+ 
+
+00:04:37.759 --> 00:04:39.590 align:start position:0%
+but it's considered the root right and
+so<00:04:37.919><c> we're</c><00:04:38.080><c> gonna</c><00:04:38.400><c> check</c><00:04:38.960><c> does</c><00:04:39.199><c> this</c>
+
+00:04:39.590 --> 00:04:39.600 align:start position:0%
+so we're gonna check does this
+ 
+
+00:04:39.600 --> 00:04:42.310 align:start position:0%
+so we're gonna check does this
+root<00:04:40.160><c> have</c><00:04:40.400><c> the</c><00:04:40.720><c> child</c><00:04:41.440><c> the</c><00:04:41.680><c> of</c><00:04:41.919><c> the</c><00:04:42.080><c> first</c>
+
+00:04:42.310 --> 00:04:42.320 align:start position:0%
+root have the child the of the first
+ 
+
+00:04:42.320 --> 00:04:43.590 align:start position:0%
+root have the child the of the first
+character<00:04:42.720><c> that</c><00:04:42.800><c> we're</c><00:04:42.960><c> looking</c><00:04:43.199><c> for</c><00:04:43.440><c> right</c>
+
+00:04:43.590 --> 00:04:43.600 align:start position:0%
+character that we're looking for right
+ 
+
+00:04:43.600 --> 00:04:44.950 align:start position:0%
+character that we're looking for right
+so<00:04:43.759><c> take</c><00:04:43.919><c> a</c><00:04:44.000><c> look</c><00:04:44.160><c> this</c><00:04:44.320><c> is</c><00:04:44.479><c> the</c><00:04:44.560><c> word</c><00:04:44.800><c> we're</c>
+
+00:04:44.950 --> 00:04:44.960 align:start position:0%
+so take a look this is the word we're
+ 
+
+00:04:44.960 --> 00:04:45.510 align:start position:0%
+so take a look this is the word we're
+looking<00:04:45.199><c> for</c>
+
+00:04:45.510 --> 00:04:45.520 align:start position:0%
+looking for
+ 
+
+00:04:45.520 --> 00:04:46.629 align:start position:0%
+looking for
+obviously<00:04:45.919><c> we're</c><00:04:46.160><c> looking</c><00:04:46.400><c> for</c><00:04:46.479><c> the</c>
+
+00:04:46.629 --> 00:04:46.639 align:start position:0%
+obviously we're looking for the
+ 
+
+00:04:46.639 --> 00:04:48.710 align:start position:0%
+obviously we're looking for the
+character<00:04:47.120><c> a</c><00:04:47.520><c> so</c><00:04:47.840><c> we</c><00:04:48.080><c> check</c>
+
+00:04:48.710 --> 00:04:48.720 align:start position:0%
+character a so we check
+ 
+
+00:04:48.720 --> 00:04:51.189 align:start position:0%
+character a so we check
+hey<00:04:49.199><c> there's</c><00:04:49.440><c> the</c><00:04:49.680><c> a</c><00:04:50.080><c> lowercase</c><00:04:50.639><c> a</c><00:04:50.880><c> right</c><00:04:51.040><c> it's</c>
+
+00:04:51.189 --> 00:04:51.199 align:start position:0%
+hey there's the a lowercase a right it's
+ 
+
+00:04:51.199 --> 00:04:53.030 align:start position:0%
+hey there's the a lowercase a right it's
+the<00:04:51.280><c> first</c><00:04:51.600><c> character</c><00:04:52.080><c> of</c><00:04:52.240><c> the</c><00:04:52.400><c> word</c><00:04:52.800><c> that's</c>
+
+00:04:53.030 --> 00:04:53.040 align:start position:0%
+the first character of the word that's
+ 
+
+00:04:53.040 --> 00:04:54.310 align:start position:0%
+the first character of the word that's
+what<00:04:53.120><c> we're</c><00:04:53.280><c> looking</c><00:04:53.520><c> for</c><00:04:53.759><c> great</c>
+
+00:04:54.310 --> 00:04:54.320 align:start position:0%
+what we're looking for great
+ 
+
+00:04:54.320 --> 00:04:56.870 align:start position:0%
+what we're looking for great
+now<00:04:54.880><c> for</c><00:04:55.120><c> this</c><00:04:55.600><c> a</c><00:04:56.080><c> we're</c><00:04:56.240><c> looking</c><00:04:56.479><c> for</c><00:04:56.639><c> the</c>
+
+00:04:56.870 --> 00:04:56.880 align:start position:0%
+now for this a we're looking for the
+ 
+
+00:04:56.880 --> 00:04:59.110 align:start position:0%
+now for this a we're looking for the
+next<00:04:57.199><c> character</c><00:04:57.600><c> right</c><00:04:57.840><c> so</c><00:04:58.080><c> does</c><00:04:58.400><c> this</c><00:04:58.639><c> a</c><00:04:58.880><c> have</c>
+
+00:04:59.110 --> 00:04:59.120 align:start position:0%
+next character right so does this a have
+ 
+
+00:04:59.120 --> 00:04:59.990 align:start position:0%
+next character right so does this a have
+a<00:04:59.280><c> child</c>
+
+00:04:59.990 --> 00:05:00.000 align:start position:0%
+a child
+ 
+
+00:05:00.000 --> 00:05:02.790 align:start position:0%
+a child
+p<00:05:00.400><c> character</c><00:05:01.039><c> it</c><00:05:01.199><c> has</c><00:05:01.440><c> exactly</c><00:05:01.919><c> that</c><00:05:02.240><c> so</c><00:05:02.400><c> we</c><00:05:02.560><c> do</c>
+
+00:05:02.790 --> 00:05:02.800 align:start position:0%
+p character it has exactly that so we do
+ 
+
+00:05:02.800 --> 00:05:03.670 align:start position:0%
+p character it has exactly that so we do
+have<00:05:03.120><c> this</c><00:05:03.360><c> p</c>
+
+00:05:03.670 --> 00:05:03.680 align:start position:0%
+have this p
+ 
+
+00:05:03.680 --> 00:05:05.189 align:start position:0%
+have this p
+right<00:05:03.919><c> and</c><00:05:04.160><c> this</c><00:05:04.400><c> is</c><00:05:04.479><c> what</c><00:05:04.639><c> we're</c><00:05:04.800><c> doing</c><00:05:05.039><c> right</c>
+
+00:05:05.189 --> 00:05:05.199 align:start position:0%
+right and this is what we're doing right
+ 
+
+00:05:05.199 --> 00:05:06.870 align:start position:0%
+right and this is what we're doing right
+we're<00:05:05.440><c> going</c><00:05:05.759><c> character</c><00:05:06.160><c> by</c><00:05:06.320><c> character</c><00:05:06.800><c> in</c>
+
+00:05:06.870 --> 00:05:06.880 align:start position:0%
+we're going character by character in
+ 
+
+00:05:06.880 --> 00:05:08.230 align:start position:0%
+we're going character by character in
+the<00:05:07.039><c> word</c><00:05:07.280><c> we're</c><00:05:07.440><c> searching</c><00:05:07.840><c> for</c><00:05:08.000><c> and</c>
+
+00:05:08.230 --> 00:05:08.240 align:start position:0%
+the word we're searching for and
+ 
+
+00:05:08.240 --> 00:05:08.710 align:start position:0%
+the word we're searching for and
+checking
+
+00:05:08.710 --> 00:05:08.720 align:start position:0%
+checking
+ 
+
+00:05:08.720 --> 00:05:11.189 align:start position:0%
+checking
+if<00:05:09.039><c> a</c><00:05:09.199><c> node</c><00:05:09.520><c> exists</c><00:05:10.080><c> for</c><00:05:10.320><c> each</c><00:05:10.560><c> character</c>
+
+00:05:11.189 --> 00:05:11.199 align:start position:0%
+if a node exists for each character
+ 
+
+00:05:11.199 --> 00:05:13.510 align:start position:0%
+if a node exists for each character
+consecutively<00:05:12.000><c> right</c><00:05:12.240><c> as</c><00:05:12.400><c> a</c><00:05:12.560><c> child</c><00:05:12.960><c> so</c>
+
+00:05:13.510 --> 00:05:13.520 align:start position:0%
+consecutively right as a child so
+ 
+
+00:05:13.520 --> 00:05:15.909 align:start position:0%
+consecutively right as a child so
+next<00:05:13.759><c> character</c><00:05:14.320><c> p</c><00:05:14.800><c> does</c><00:05:14.960><c> this</c><00:05:15.280><c> have</c><00:05:15.440><c> a</c><00:05:15.600><c> child</c>
+
+00:05:15.909 --> 00:05:15.919 align:start position:0%
+next character p does this have a child
+ 
+
+00:05:15.919 --> 00:05:17.350 align:start position:0%
+next character p does this have a child
+p<00:05:16.160><c> yes</c><00:05:16.400><c> it</c><00:05:16.560><c> does</c>
+
+00:05:17.350 --> 00:05:17.360 align:start position:0%
+p yes it does
+ 
+
+00:05:17.360 --> 00:05:20.550 align:start position:0%
+p yes it does
+next<00:05:17.600><c> character</c><00:05:18.160><c> l</c><00:05:18.720><c> we</c><00:05:18.880><c> have</c><00:05:19.039><c> a</c><00:05:19.120><c> child</c><00:05:19.680><c> l</c><00:05:20.320><c> next</c>
+
+00:05:20.550 --> 00:05:20.560 align:start position:0%
+next character l we have a child l next
+ 
+
+00:05:20.560 --> 00:05:21.350 align:start position:0%
+next character l we have a child l next
+character
+
+00:05:21.350 --> 00:05:21.360 align:start position:0%
+character
+ 
+
+00:05:21.360 --> 00:05:23.590 align:start position:0%
+character
+e<00:05:21.680><c> this</c><00:05:21.840><c> is</c><00:05:22.000><c> the</c><00:05:22.160><c> last</c><00:05:22.560><c> character</c><00:05:23.039><c> so</c><00:05:23.199><c> we</c><00:05:23.360><c> do</c>
+
+00:05:23.590 --> 00:05:23.600 align:start position:0%
+e this is the last character so we do
+ 
+
+00:05:23.600 --> 00:05:24.390 align:start position:0%
+e this is the last character so we do
+have<00:05:23.759><c> an</c><00:05:24.000><c> e</c>
+
+00:05:24.390 --> 00:05:24.400 align:start position:0%
+have an e
+ 
+
+00:05:24.400 --> 00:05:27.189 align:start position:0%
+have an e
+over<00:05:24.720><c> here</c><00:05:25.120><c> right</c><00:05:25.600><c> and</c><00:05:26.160><c> last</c><00:05:26.639><c> thing</c><00:05:26.880><c> that</c><00:05:27.039><c> we</c>
+
+00:05:27.189 --> 00:05:27.199 align:start position:0%
+over here right and last thing that we
+ 
+
+00:05:27.199 --> 00:05:28.390 align:start position:0%
+over here right and last thing that we
+have<00:05:27.360><c> to</c><00:05:27.600><c> confirm</c>
+
+00:05:28.390 --> 00:05:28.400 align:start position:0%
+have to confirm
+ 
+
+00:05:28.400 --> 00:05:30.710 align:start position:0%
+have to confirm
+is<00:05:28.880><c> okay</c><00:05:29.199><c> this</c><00:05:29.360><c> is</c><00:05:29.440><c> the</c><00:05:29.600><c> last</c><00:05:29.759><c> character</c><00:05:30.320><c> does</c>
+
+00:05:30.710 --> 00:05:30.720 align:start position:0%
+is okay this is the last character does
+ 
+
+00:05:30.720 --> 00:05:31.990 align:start position:0%
+is okay this is the last character does
+is<00:05:30.880><c> it</c><00:05:31.120><c> marked</c>
+
+00:05:31.990 --> 00:05:32.000 align:start position:0%
+is it marked
+ 
+
+00:05:32.000 --> 00:05:34.150 align:start position:0%
+is it marked
+such<00:05:32.320><c> that</c><00:05:32.560><c> this</c><00:05:32.800><c> is</c><00:05:32.960><c> the</c><00:05:33.199><c> end</c><00:05:33.440><c> of</c><00:05:33.520><c> the</c><00:05:33.680><c> word</c><00:05:34.000><c> is</c>
+
+00:05:34.150 --> 00:05:34.160 align:start position:0%
+such that this is the end of the word is
+ 
+
+00:05:34.160 --> 00:05:36.310 align:start position:0%
+such that this is the end of the word is
+it<00:05:34.400><c> marked</c><00:05:34.880><c> as</c><00:05:35.120><c> if</c><00:05:35.280><c> it</c><00:05:35.440><c> was</c><00:05:35.680><c> the</c><00:05:35.919><c> end</c><00:05:36.080><c> of</c><00:05:36.160><c> the</c>
+
+00:05:36.310 --> 00:05:36.320 align:start position:0%
+it marked as if it was the end of the
+ 
+
+00:05:36.320 --> 00:05:36.710 align:start position:0%
+it marked as if it was the end of the
+word
+
+00:05:36.710 --> 00:05:36.720 align:start position:0%
+word
+ 
+
+00:05:36.720 --> 00:05:38.150 align:start position:0%
+word
+it's<00:05:36.960><c> blue</c><00:05:37.280><c> right</c><00:05:37.440><c> that's</c><00:05:37.680><c> what</c><00:05:37.759><c> we're</c><00:05:37.919><c> doing</c>
+
+00:05:38.150 --> 00:05:38.160 align:start position:0%
+it's blue right that's what we're doing
+ 
+
+00:05:38.160 --> 00:05:39.510 align:start position:0%
+it's blue right that's what we're doing
+to<00:05:38.400><c> indicate</c><00:05:38.720><c> that</c><00:05:38.880><c> it's</c><00:05:39.039><c> the</c><00:05:39.199><c> end</c><00:05:39.280><c> of</c><00:05:39.440><c> the</c>
+
+00:05:39.510 --> 00:05:39.520 align:start position:0%
+to indicate that it's the end of the
+ 
+
+00:05:39.520 --> 00:05:39.909 align:start position:0%
+to indicate that it's the end of the
+word
+
+00:05:39.909 --> 00:05:39.919 align:start position:0%
+word
+ 
+
+00:05:39.919 --> 00:05:42.469 align:start position:0%
+word
+so<00:05:40.160><c> it</c><00:05:40.400><c> is</c><00:05:40.639><c> right</c><00:05:41.039><c> so</c><00:05:41.280><c> clearly</c><00:05:41.680><c> we</c><00:05:41.919><c> do</c><00:05:42.160><c> have</c>
+
+00:05:42.469 --> 00:05:42.479 align:start position:0%
+so it is right so clearly we do have
+ 
+
+00:05:42.479 --> 00:05:44.390 align:start position:0%
+so it is right so clearly we do have
+apple<00:05:42.800><c> we</c><00:05:42.960><c> search</c><00:05:43.199><c> for</c><00:05:43.440><c> apple</c><00:05:43.840><c> what</c><00:05:44.000><c> do</c><00:05:44.080><c> we</c><00:05:44.240><c> do</c>
+
+00:05:44.390 --> 00:05:44.400 align:start position:0%
+apple we search for apple what do we do
+ 
+
+00:05:44.400 --> 00:05:45.029 align:start position:0%
+apple we search for apple what do we do
+we<00:05:44.560><c> return</c>
+
+00:05:45.029 --> 00:05:45.039 align:start position:0%
+we return
+ 
+
+00:05:45.039 --> 00:05:48.469 align:start position:0%
+we return
+true<00:05:45.440><c> because</c><00:05:45.919><c> apple</c><00:05:46.400><c> does</c><00:05:46.800><c> exist</c><00:05:47.440><c> in</c><00:05:47.600><c> the</c><00:05:47.759><c> try</c>
+
+00:05:48.469 --> 00:05:48.479 align:start position:0%
+true because apple does exist in the try
+ 
+
+00:05:48.479 --> 00:05:51.270 align:start position:0%
+true because apple does exist in the try
+so<00:05:48.800><c> next</c><00:05:49.120><c> let's</c><00:05:49.440><c> run</c><00:05:49.759><c> search</c><00:05:50.160><c> again</c><00:05:50.800><c> and</c><00:05:51.039><c> this</c>
+
+00:05:51.270 --> 00:05:51.280 align:start position:0%
+so next let's run search again and this
+ 
+
+00:05:51.280 --> 00:05:51.670 align:start position:0%
+so next let's run search again and this
+time
+
+00:05:51.670 --> 00:05:51.680 align:start position:0%
+time
+ 
+
+00:05:51.680 --> 00:05:54.790 align:start position:0%
+time
+let's<00:05:52.000><c> check</c><00:05:52.320><c> if</c><00:05:52.479><c> a</c><00:05:52.639><c> word</c><00:05:53.120><c> app</c><00:05:53.600><c> exists</c><00:05:54.240><c> inside</c>
+
+00:05:54.790 --> 00:05:54.800 align:start position:0%
+let's check if a word app exists inside
+ 
+
+00:05:54.800 --> 00:05:57.830 align:start position:0%
+let's check if a word app exists inside
+of<00:05:55.039><c> our</c><00:05:55.440><c> try</c><00:05:56.080><c> app</c><00:05:56.479><c> right</c><00:05:56.800><c> not</c><00:05:57.120><c> apple</c>
+
+00:05:57.830 --> 00:05:57.840 align:start position:0%
+of our try app right not apple
+ 
+
+00:05:57.840 --> 00:05:59.749 align:start position:0%
+of our try app right not apple
+so<00:05:58.080><c> obviously</c><00:05:58.639><c> we</c><00:05:58.800><c> know</c><00:05:59.039><c> that</c><00:05:59.360><c> starting</c><00:05:59.600><c> from</c>
+
+00:05:59.749 --> 00:05:59.759 align:start position:0%
+so obviously we know that starting from
+ 
+
+00:05:59.759 --> 00:06:01.189 align:start position:0%
+so obviously we know that starting from
+the<00:05:59.840><c> root</c><00:06:00.160><c> again</c><00:06:00.400><c> we</c><00:06:00.560><c> do</c><00:06:00.720><c> have</c><00:06:00.960><c> an</c>
+
+00:06:01.189 --> 00:06:01.199 align:start position:0%
+the root again we do have an
+ 
+
+00:06:01.199 --> 00:06:03.270 align:start position:0%
+the root again we do have an
+a<00:06:01.280><c> lowercase</c><00:06:01.919><c> a</c><00:06:02.160><c> just</c><00:06:02.319><c> like</c><00:06:02.479><c> we</c><00:06:02.720><c> checked</c><00:06:02.960><c> we</c><00:06:03.120><c> do</c>
+
+00:06:03.270 --> 00:06:03.280 align:start position:0%
+a lowercase a just like we checked we do
+ 
+
+00:06:03.280 --> 00:06:04.390 align:start position:0%
+a lowercase a just like we checked we do
+have<00:06:03.360><c> a</c><00:06:03.440><c> lowercase</c><00:06:04.080><c> p</c>
+
+00:06:04.390 --> 00:06:04.400 align:start position:0%
+have a lowercase p
+ 
+
+00:06:04.400 --> 00:06:06.390 align:start position:0%
+have a lowercase p
+after<00:06:04.800><c> that</c><00:06:05.199><c> and</c><00:06:05.360><c> we</c><00:06:05.440><c> do</c><00:06:05.600><c> have</c><00:06:05.759><c> a</c><00:06:06.000><c> second</c>
+
+00:06:06.390 --> 00:06:06.400 align:start position:0%
+after that and we do have a second
+ 
+
+00:06:06.400 --> 00:06:07.670 align:start position:0%
+after that and we do have a second
+lowercase<00:06:07.039><c> p</c>
+
+00:06:07.670 --> 00:06:07.680 align:start position:0%
+lowercase p
+ 
+
+00:06:07.680 --> 00:06:10.070 align:start position:0%
+lowercase p
+so<00:06:08.319><c> since</c><00:06:08.560><c> we</c><00:06:08.800><c> do</c><00:06:08.960><c> have</c><00:06:09.280><c> all</c><00:06:09.520><c> three</c><00:06:09.759><c> of</c><00:06:09.840><c> these</c>
+
+00:06:10.070 --> 00:06:10.080 align:start position:0%
+so since we do have all three of these
+ 
+
+00:06:10.080 --> 00:06:10.790 align:start position:0%
+so since we do have all three of these
+characters<00:06:10.479><c> right</c>
+
+00:06:10.790 --> 00:06:10.800 align:start position:0%
+characters right
+ 
+
+00:06:10.800 --> 00:06:13.430 align:start position:0%
+characters right
+a<00:06:11.039><c> p</c><00:06:11.360><c> p</c><00:06:11.919><c> shouldn't</c><00:06:12.240><c> this</c><00:06:12.479><c> function</c><00:06:12.880><c> return</c>
+
+00:06:13.430 --> 00:06:13.440 align:start position:0%
+a p p shouldn't this function return
+ 
+
+00:06:13.440 --> 00:06:14.150 align:start position:0%
+a p p shouldn't this function return
+true
+
+00:06:14.150 --> 00:06:14.160 align:start position:0%
+true
+ 
+
+00:06:14.160 --> 00:06:16.390 align:start position:0%
+true
+no<00:06:14.560><c> we're</c><00:06:14.960><c> not</c><00:06:15.199><c> returning</c><00:06:15.680><c> true</c><00:06:16.080><c> and</c><00:06:16.160><c> the</c>
+
+00:06:16.390 --> 00:06:16.400 align:start position:0%
+no we're not returning true and the
+ 
+
+00:06:16.400 --> 00:06:17.430 align:start position:0%
+no we're not returning true and the
+reason<00:06:16.880><c> is</c>
+
+00:06:17.430 --> 00:06:17.440 align:start position:0%
+reason is
+ 
+
+00:06:17.440 --> 00:06:19.590 align:start position:0%
+reason is
+this<00:06:17.919><c> node</c><00:06:18.319><c> is</c><00:06:18.479><c> the</c><00:06:18.639><c> last</c><00:06:18.960><c> character</c><00:06:19.360><c> of</c><00:06:19.520><c> the</c>
+
+00:06:19.590 --> 00:06:19.600 align:start position:0%
+this node is the last character of the
+ 
+
+00:06:19.600 --> 00:06:20.950 align:start position:0%
+this node is the last character of the
+word<00:06:20.000><c> right</c><00:06:20.319><c> p</c>
+
+00:06:20.950 --> 00:06:20.960 align:start position:0%
+word right p
+ 
+
+00:06:20.960 --> 00:06:23.990 align:start position:0%
+word right p
+and<00:06:21.360><c> it's</c><00:06:21.759><c> not</c><00:06:22.240><c> marked</c><00:06:22.720><c> blue</c><00:06:23.360><c> meaning</c><00:06:23.680><c> it's</c>
+
+00:06:23.990 --> 00:06:24.000 align:start position:0%
+and it's not marked blue meaning it's
+ 
+
+00:06:24.000 --> 00:06:24.469 align:start position:0%
+and it's not marked blue meaning it's
+not
+
+00:06:24.469 --> 00:06:24.479 align:start position:0%
+not
+ 
+
+00:06:24.479 --> 00:06:27.590 align:start position:0%
+not
+marked<00:06:24.960><c> as</c><00:06:25.199><c> a</c><00:06:25.440><c> word</c><00:06:25.840><c> right</c><00:06:26.160><c> remember</c><00:06:26.720><c> we</c><00:06:27.039><c> only</c>
+
+00:06:27.590 --> 00:06:27.600 align:start position:0%
+marked as a word right remember we only
+ 
+
+00:06:27.600 --> 00:06:30.710 align:start position:0%
+marked as a word right remember we only
+inserted<00:06:28.400><c> apple</c><00:06:28.960><c> into</c><00:06:29.280><c> our</c><00:06:29.520><c> try</c><00:06:30.240><c> right</c><00:06:30.479><c> into</c>
+
+00:06:30.710 --> 00:06:30.720 align:start position:0%
+inserted apple into our try right into
+ 
+
+00:06:30.720 --> 00:06:31.350 align:start position:0%
+inserted apple into our try right into
+our<00:06:30.880><c> tree</c>
+
+00:06:31.350 --> 00:06:31.360 align:start position:0%
+our tree
+ 
+
+00:06:31.360 --> 00:06:33.270 align:start position:0%
+our tree
+and<00:06:31.680><c> we</c><00:06:32.080><c> and</c><00:06:32.240><c> we</c><00:06:32.400><c> marked</c><00:06:32.720><c> this</c><00:06:32.880><c> as</c><00:06:32.960><c> the</c><00:06:33.120><c> end</c><00:06:33.199><c> of</c>
+
+00:06:33.270 --> 00:06:33.280 align:start position:0%
+and we and we marked this as the end of
+ 
+
+00:06:33.280 --> 00:06:34.950 align:start position:0%
+and we and we marked this as the end of
+the<00:06:33.360><c> word</c><00:06:33.600><c> we</c><00:06:33.840><c> never</c><00:06:34.160><c> inserted</c>
+
+00:06:34.950 --> 00:06:34.960 align:start position:0%
+the word we never inserted
+ 
+
+00:06:34.960 --> 00:06:38.070 align:start position:0%
+the word we never inserted
+app<00:06:35.520><c> into</c><00:06:35.759><c> the</c><00:06:35.919><c> tree</c><00:06:36.400><c> so</c><00:06:36.639><c> this</c><00:06:37.039><c> is</c><00:06:37.199><c> not</c><00:06:37.759><c> marked</c>
+
+00:06:38.070 --> 00:06:38.080 align:start position:0%
+app into the tree so this is not marked
+ 
+
+00:06:38.080 --> 00:06:39.830 align:start position:0%
+app into the tree so this is not marked
+as<00:06:38.240><c> the</c><00:06:38.400><c> end</c><00:06:38.479><c> of</c><00:06:38.560><c> the</c><00:06:38.639><c> word</c><00:06:38.880><c> so</c><00:06:39.039><c> we</c><00:06:39.199><c> return</c>
+
+00:06:39.830 --> 00:06:39.840 align:start position:0%
+as the end of the word so we return
+ 
+
+00:06:39.840 --> 00:06:42.950 align:start position:0%
+as the end of the word so we return
+false<00:06:40.800><c> for</c><00:06:41.120><c> saying</c><00:06:41.520><c> that</c><00:06:42.080><c> uh</c>
+
+00:06:42.950 --> 00:06:42.960 align:start position:0%
+false for saying that uh
+ 
+
+00:06:42.960 --> 00:06:45.909 align:start position:0%
+false for saying that uh
+app<00:06:43.360><c> does</c><00:06:43.680><c> not</c><00:06:44.000><c> exist</c><00:06:44.560><c> in</c><00:06:44.720><c> our</c><00:06:44.960><c> tree</c><00:06:45.360><c> app</c><00:06:45.759><c> is</c>
+
+00:06:45.909 --> 00:06:45.919 align:start position:0%
+app does not exist in our tree app is
+ 
+
+00:06:45.919 --> 00:06:46.230 align:start position:0%
+app does not exist in our tree app is
+not
+
+00:06:46.230 --> 00:06:46.240 align:start position:0%
+not
+ 
+
+00:06:46.240 --> 00:06:49.749 align:start position:0%
+not
+a<00:06:46.400><c> word</c><00:06:46.960><c> yet</c><00:06:47.840><c> next</c><00:06:48.400><c> let's</c><00:06:48.639><c> run</c><00:06:48.960><c> another</c>
+
+00:06:49.749 --> 00:06:49.759 align:start position:0%
+a word yet next let's run another
+ 
+
+00:06:49.759 --> 00:06:52.390 align:start position:0%
+a word yet next let's run another
+function<00:06:50.319><c> on</c><00:06:50.479><c> our</c><00:06:50.720><c> tree</c><00:06:51.039><c> or</c><00:06:51.280><c> try</c><00:06:52.080><c> we're</c><00:06:52.319><c> going</c>
+
+00:06:52.390 --> 00:06:52.400 align:start position:0%
+function on our tree or try we're going
+ 
+
+00:06:52.400 --> 00:06:52.870 align:start position:0%
+function on our tree or try we're going
+to<00:06:52.560><c> check</c>
+
+00:06:52.870 --> 00:06:52.880 align:start position:0%
+to check
+ 
+
+00:06:52.880 --> 00:06:55.990 align:start position:0%
+to check
+does<00:06:53.120><c> a</c><00:06:53.199><c> word</c><00:06:53.680><c> start</c><00:06:54.400><c> with</c><00:06:54.800><c> app</c><00:06:55.440><c> how</c><00:06:55.599><c> can</c><00:06:55.840><c> we</c>
+
+00:06:55.990 --> 00:06:56.000 align:start position:0%
+does a word start with app how can we
+ 
+
+00:06:56.000 --> 00:06:57.110 align:start position:0%
+does a word start with app how can we
+check<00:06:56.240><c> if</c><00:06:56.479><c> a</c><00:06:56.639><c> word</c>
+
+00:06:57.110 --> 00:06:57.120 align:start position:0%
+check if a word
+ 
+
+00:06:57.120 --> 00:06:59.270 align:start position:0%
+check if a word
+starts<00:06:57.599><c> with</c><00:06:57.840><c> app</c><00:06:58.240><c> well</c><00:06:58.479><c> we're</c><00:06:58.720><c> basically</c>
+
+00:06:59.270 --> 00:06:59.280 align:start position:0%
+starts with app well we're basically
+ 
+
+00:06:59.280 --> 00:07:00.790 align:start position:0%
+starts with app well we're basically
+running<00:06:59.599><c> the</c><00:06:59.759><c> exact</c><00:07:00.080><c> same</c><00:07:00.240><c> thing</c><00:07:00.400><c> what</c><00:07:00.639><c> we've</c>
+
+00:07:00.790 --> 00:07:00.800 align:start position:0%
+running the exact same thing what we've
+ 
+
+00:07:00.800 --> 00:07:02.150 align:start position:0%
+running the exact same thing what we've
+done<00:07:01.039><c> right</c><00:07:01.199><c> we're</c><00:07:01.360><c> starting</c><00:07:01.680><c> at</c><00:07:01.759><c> the</c><00:07:01.919><c> root</c>
+
+00:07:02.150 --> 00:07:02.160 align:start position:0%
+done right we're starting at the root
+ 
+
+00:07:02.160 --> 00:07:02.870 align:start position:0%
+done right we're starting at the root
+we're<00:07:02.319><c> going</c><00:07:02.400><c> to</c><00:07:02.479><c> check</c>
+
+00:07:02.870 --> 00:07:02.880 align:start position:0%
+we're going to check
+ 
+
+00:07:02.880 --> 00:07:05.670 align:start position:0%
+we're going to check
+character<00:07:03.199><c> by</c><00:07:03.440><c> character</c><00:07:04.240><c> so</c><00:07:04.560><c> this</c><00:07:04.800><c> is</c><00:07:05.199><c> pretty</c>
+
+00:07:05.670 --> 00:07:05.680 align:start position:0%
+character by character so this is pretty
+ 
+
+00:07:05.680 --> 00:07:07.189 align:start position:0%
+character by character so this is pretty
+like<00:07:05.919><c> all</c><00:07:06.080><c> three</c><00:07:06.240><c> of</c><00:07:06.319><c> these</c><00:07:06.560><c> functions</c><00:07:07.039><c> are</c>
+
+00:07:07.189 --> 00:07:07.199 align:start position:0%
+like all three of these functions are
+ 
+
+00:07:07.199 --> 00:07:08.390 align:start position:0%
+like all three of these functions are
+pretty<00:07:07.520><c> similar</c><00:07:07.840><c> right</c><00:07:08.000><c> we're</c><00:07:08.080><c> checking</c>
+
+00:07:08.390 --> 00:07:08.400 align:start position:0%
+pretty similar right we're checking
+ 
+
+00:07:08.400 --> 00:07:10.070 align:start position:0%
+pretty similar right we're checking
+character<00:07:08.720><c> by</c><00:07:08.880><c> character</c><00:07:09.280><c> for</c><00:07:09.520><c> all</c><00:07:09.599><c> of</c><00:07:09.759><c> them</c>
+
+00:07:10.070 --> 00:07:10.080 align:start position:0%
+character by character for all of them
+ 
+
+00:07:10.080 --> 00:07:13.189 align:start position:0%
+character by character for all of them
+start<00:07:10.400><c> at</c><00:07:10.560><c> a</c><00:07:11.120><c> a</c><00:07:11.280><c> exists</c><00:07:12.080><c> check</c><00:07:12.400><c> p</c><00:07:12.960><c> p</c>
+
+00:07:13.189 --> 00:07:13.199 align:start position:0%
+start at a a exists check p p
+ 
+
+00:07:13.199 --> 00:07:16.309 align:start position:0%
+start at a a exists check p p
+exists<00:07:13.919><c> check</c><00:07:14.240><c> another</c><00:07:14.639><c> p</c><00:07:15.039><c> p</c><00:07:15.360><c> does</c><00:07:15.599><c> exist</c>
+
+00:07:16.309 --> 00:07:16.319 align:start position:0%
+exists check another p p does exist
+ 
+
+00:07:16.319 --> 00:07:19.589 align:start position:0%
+exists check another p p does exist
+so<00:07:17.199><c> since</c><00:07:17.919><c> we</c><00:07:18.160><c> found</c><00:07:18.639><c> all</c><00:07:18.800><c> of</c><00:07:18.880><c> the</c><00:07:19.039><c> characters</c>
+
+00:07:19.589 --> 00:07:19.599 align:start position:0%
+so since we found all of the characters
+ 
+
+00:07:19.599 --> 00:07:19.909 align:start position:0%
+so since we found all of the characters
+right
+
+00:07:19.909 --> 00:07:19.919 align:start position:0%
+right
+ 
+
+00:07:19.919 --> 00:07:22.629 align:start position:0%
+right
+we're<00:07:20.160><c> basically</c><00:07:20.800><c> guaranteed</c><00:07:21.680><c> that's</c><00:07:22.240><c> either</c>
+
+00:07:22.629 --> 00:07:22.639 align:start position:0%
+we're basically guaranteed that's either
+ 
+
+00:07:22.639 --> 00:07:23.029 align:start position:0%
+we're basically guaranteed that's either
+this
+
+00:07:23.029 --> 00:07:23.039 align:start position:0%
+this
+ 
+
+00:07:23.039 --> 00:07:25.350 align:start position:0%
+this
+is<00:07:23.199><c> a</c><00:07:23.280><c> word</c><00:07:23.599><c> itself</c><00:07:24.080><c> which</c><00:07:24.400><c> clearly</c><00:07:24.800><c> it's</c><00:07:25.120><c> not</c>
+
+00:07:25.350 --> 00:07:25.360 align:start position:0%
+is a word itself which clearly it's not
+ 
+
+00:07:25.360 --> 00:07:26.870 align:start position:0%
+is a word itself which clearly it's not
+right<00:07:25.520><c> we</c><00:07:25.680><c> never</c><00:07:25.919><c> inserted</c><00:07:26.400><c> app</c>
+
+00:07:26.870 --> 00:07:26.880 align:start position:0%
+right we never inserted app
+ 
+
+00:07:26.880 --> 00:07:29.350 align:start position:0%
+right we never inserted app
+or<00:07:27.360><c> we're</c><00:07:27.599><c> guaranteed</c><00:07:28.240><c> that</c><00:07:28.319><c> there</c><00:07:28.639><c> is</c><00:07:28.960><c> some</c>
+
+00:07:29.350 --> 00:07:29.360 align:start position:0%
+or we're guaranteed that there is some
+ 
+
+00:07:29.360 --> 00:07:29.990 align:start position:0%
+or we're guaranteed that there is some
+word
+
+00:07:29.990 --> 00:07:30.000 align:start position:0%
+word
+ 
+
+00:07:30.000 --> 00:07:32.309 align:start position:0%
+word
+below<00:07:30.479><c> that</c><00:07:30.639><c> has</c><00:07:30.960><c> been</c><00:07:31.199><c> marked</c><00:07:31.599><c> right</c><00:07:31.840><c> because</c>
+
+00:07:32.309 --> 00:07:32.319 align:start position:0%
+below that has been marked right because
+ 
+
+00:07:32.319 --> 00:07:33.110 align:start position:0%
+below that has been marked right because
+if
+
+00:07:33.110 --> 00:07:33.120 align:start position:0%
+if
+ 
+
+00:07:33.120 --> 00:07:35.350 align:start position:0%
+if
+we<00:07:33.280><c> inserted</c><00:07:33.759><c> these</c><00:07:34.000><c> characters</c><00:07:34.639><c> we</c><00:07:34.880><c> only</c><00:07:35.199><c> did</c>
+
+00:07:35.350 --> 00:07:35.360 align:start position:0%
+we inserted these characters we only did
+ 
+
+00:07:35.360 --> 00:07:37.189 align:start position:0%
+we inserted these characters we only did
+that<00:07:35.520><c> because</c><00:07:35.759><c> we</c><00:07:35.919><c> were</c><00:07:36.160><c> inserting</c><00:07:36.639><c> a</c><00:07:36.800><c> word</c><00:07:37.039><c> so</c>
+
+00:07:37.189 --> 00:07:37.199 align:start position:0%
+that because we were inserting a word so
+ 
+
+00:07:37.199 --> 00:07:38.550 align:start position:0%
+that because we were inserting a word so
+there's<00:07:37.440><c> guaranteed</c><00:07:38.000><c> to</c><00:07:38.160><c> be</c>
+
+00:07:38.550 --> 00:07:38.560 align:start position:0%
+there's guaranteed to be
+ 
+
+00:07:38.560 --> 00:07:40.790 align:start position:0%
+there's guaranteed to be
+at<00:07:38.720><c> least</c><00:07:39.039><c> something</c><00:07:39.520><c> that</c><00:07:39.759><c> is</c><00:07:40.000><c> marked</c><00:07:40.400><c> blue</c>
+
+00:07:40.790 --> 00:07:40.800 align:start position:0%
+at least something that is marked blue
+ 
+
+00:07:40.800 --> 00:07:42.230 align:start position:0%
+at least something that is marked blue
+down<00:07:41.039><c> here</c><00:07:41.360><c> right</c><00:07:41.599><c> so</c>
+
+00:07:42.230 --> 00:07:42.240 align:start position:0%
+down here right so
+ 
+
+00:07:42.240 --> 00:07:44.309 align:start position:0%
+down here right so
+so<00:07:42.560><c> once</c><00:07:42.800><c> we</c><00:07:43.039><c> found</c><00:07:43.599><c> this</c><00:07:43.840><c> character</c><00:07:44.160><c> the</c>
+
+00:07:44.309 --> 00:07:44.319 align:start position:0%
+so once we found this character the
+ 
+
+00:07:44.319 --> 00:07:45.350 align:start position:0%
+so once we found this character the
+second<00:07:44.639><c> p</c>
+
+00:07:45.350 --> 00:07:45.360 align:start position:0%
+second p
+ 
+
+00:07:45.360 --> 00:07:46.869 align:start position:0%
+second p
+which<00:07:45.520><c> is</c><00:07:45.759><c> all</c><00:07:45.919><c> the</c><00:07:46.000><c> characters</c><00:07:46.400><c> in</c><00:07:46.560><c> here</c><00:07:46.720><c> then</c>
+
+00:07:46.869 --> 00:07:46.879 align:start position:0%
+which is all the characters in here then
+ 
+
+00:07:46.879 --> 00:07:48.869 align:start position:0%
+which is all the characters in here then
+we<00:07:47.039><c> can</c><00:07:47.199><c> say</c><00:07:47.440><c> true</c><00:07:47.840><c> right</c><00:07:48.080><c> there</c><00:07:48.400><c> definitely</c>
+
+00:07:48.869 --> 00:07:48.879 align:start position:0%
+we can say true right there definitely
+ 
+
+00:07:48.879 --> 00:07:49.510 align:start position:0%
+we can say true right there definitely
+exists
+
+00:07:49.510 --> 00:07:49.520 align:start position:0%
+exists
+ 
+
+00:07:49.520 --> 00:07:52.550 align:start position:0%
+exists
+a<00:07:49.680><c> word</c><00:07:49.919><c> that</c><00:07:50.240><c> starts</c><00:07:50.800><c> with</c><00:07:51.199><c> app</c><00:07:51.520><c> right</c><00:07:51.919><c> and</c><00:07:52.080><c> so</c>
+
+00:07:52.550 --> 00:07:52.560 align:start position:0%
+a word that starts with app right and so
+ 
+
+00:07:52.560 --> 00:07:55.029 align:start position:0%
+a word that starts with app right and so
+this<00:07:52.879><c> starts</c><00:07:53.360><c> with</c><00:07:53.599><c> function</c><00:07:54.080><c> is</c><00:07:54.240><c> the</c><00:07:54.479><c> main</c>
+
+00:07:55.029 --> 00:07:55.039 align:start position:0%
+this starts with function is the main
+ 
+
+00:07:55.039 --> 00:07:56.070 align:start position:0%
+this starts with function is the main
+reason<00:07:55.440><c> we're</c><00:07:55.680><c> even</c>
+
+00:07:56.070 --> 00:07:56.080 align:start position:0%
+reason we're even
+ 
+
+00:07:56.080 --> 00:07:58.150 align:start position:0%
+reason we're even
+implementing<00:07:56.720><c> a</c><00:07:56.879><c> try</c><00:07:57.280><c> in</c><00:07:57.360><c> the</c><00:07:57.440><c> first</c><00:07:57.759><c> place</c>
+
+00:07:58.150 --> 00:07:58.160 align:start position:0%
+implementing a try in the first place
+ 
+
+00:07:58.160 --> 00:07:59.110 align:start position:0%
+implementing a try in the first place
+because<00:07:58.400><c> if</c><00:07:58.560><c> we</c><00:07:58.720><c> want</c><00:07:58.879><c> to</c>
+
+00:07:59.110 --> 00:07:59.120 align:start position:0%
+because if we want to
+ 
+
+00:07:59.120 --> 00:08:02.390 align:start position:0%
+because if we want to
+insert<00:07:59.759><c> words</c><00:08:00.240><c> and</c><00:08:00.479><c> search</c><00:08:00.879><c> for</c><00:08:01.120><c> words</c><00:08:01.599><c> exist</c>
+
+00:08:02.390 --> 00:08:02.400 align:start position:0%
+insert words and search for words exist
+ 
+
+00:08:02.400 --> 00:08:03.990 align:start position:0%
+insert words and search for words exist
+right<00:08:02.560><c> to</c><00:08:02.720><c> check</c><00:08:02.960><c> if</c><00:08:03.120><c> a</c><00:08:03.199><c> word</c><00:08:03.440><c> exists</c><00:08:03.759><c> we</c><00:08:03.840><c> could</c>
+
+00:08:03.990 --> 00:08:04.000 align:start position:0%
+right to check if a word exists we could
+ 
+
+00:08:04.000 --> 00:08:05.589 align:start position:0%
+right to check if a word exists we could
+just<00:08:04.160><c> use</c><00:08:04.319><c> a</c><00:08:04.400><c> hash</c><00:08:04.720><c> map</c><00:08:04.960><c> for</c><00:08:05.120><c> that</c><00:08:05.360><c> right</c>
+
+00:08:05.589 --> 00:08:05.599 align:start position:0%
+just use a hash map for that right
+ 
+
+00:08:05.599 --> 00:08:06.230 align:start position:0%
+just use a hash map for that right
+because
+
+00:08:06.230 --> 00:08:06.240 align:start position:0%
+because
+ 
+
+00:08:06.240 --> 00:08:08.950 align:start position:0%
+because
+hash<00:08:06.560><c> maps</c><00:08:06.960><c> can</c><00:08:07.280><c> or</c><00:08:07.520><c> hash</c><00:08:07.840><c> sets</c><00:08:08.240><c> can</c><00:08:08.400><c> do</c><00:08:08.720><c> both</c>
+
+00:08:08.950 --> 00:08:08.960 align:start position:0%
+hash maps can or hash sets can do both
+ 
+
+00:08:08.960 --> 00:08:10.390 align:start position:0%
+hash maps can or hash sets can do both
+of<00:08:09.120><c> those</c><00:08:09.360><c> things</c><00:08:09.759><c> in</c><00:08:09.919><c> o</c><00:08:10.160><c> of</c>
+
+00:08:10.390 --> 00:08:10.400 align:start position:0%
+of those things in o of
+ 
+
+00:08:10.400 --> 00:08:13.749 align:start position:0%
+of those things in o of
+one<00:08:10.720><c> time</c><00:08:11.039><c> right</c><00:08:11.360><c> but</c><00:08:11.840><c> this</c><00:08:12.800><c> is</c><00:08:13.199><c> really</c><00:08:13.520><c> the</c>
+
+00:08:13.749 --> 00:08:13.759 align:start position:0%
+one time right but this is really the
+ 
+
+00:08:13.759 --> 00:08:14.550 align:start position:0%
+one time right but this is really the
+problem
+
+00:08:14.550 --> 00:08:14.560 align:start position:0%
+problem
+ 
+
+00:08:14.560 --> 00:08:16.790 align:start position:0%
+problem
+starts<00:08:15.120><c> with</c><00:08:15.440><c> it</c><00:08:15.840><c> allows</c><00:08:16.160><c> us</c><00:08:16.319><c> to</c><00:08:16.479><c> check</c>
+
+00:08:16.790 --> 00:08:16.800 align:start position:0%
+starts with it allows us to check
+ 
+
+00:08:16.800 --> 00:08:18.309 align:start position:0%
+starts with it allows us to check
+prefixes<00:08:17.520><c> right</c><00:08:17.759><c> so</c><00:08:18.000><c> now</c>
+
+00:08:18.309 --> 00:08:18.319 align:start position:0%
+prefixes right so now
+ 
+
+00:08:18.319 --> 00:08:20.070 align:start position:0%
+prefixes right so now
+let's<00:08:18.479><c> say</c><00:08:18.639><c> we</c><00:08:18.800><c> were</c><00:08:19.039><c> inserting</c><00:08:19.520><c> another</c><00:08:19.840><c> word</c>
+
+00:08:20.070 --> 00:08:20.080 align:start position:0%
+let's say we were inserting another word
+ 
+
+00:08:20.080 --> 00:08:21.749 align:start position:0%
+let's say we were inserting another word
+let's<00:08:20.240><c> say</c><00:08:20.400><c> we're</c><00:08:20.639><c> inserting</c><00:08:21.039><c> the</c><00:08:21.199><c> word</c>
+
+00:08:21.749 --> 00:08:21.759 align:start position:0%
+let's say we're inserting the word
+ 
+
+00:08:21.759 --> 00:08:25.110 align:start position:0%
+let's say we're inserting the word
+ape<00:08:22.319><c> right</c><00:08:22.720><c> a</c><00:08:22.960><c> p</c><00:08:23.360><c> e</c><00:08:23.759><c> how</c><00:08:23.919><c> are</c><00:08:24.000><c> we</c><00:08:24.160><c> gonna</c><00:08:24.319><c> do</c><00:08:24.560><c> that</c>
+
+00:08:25.110 --> 00:08:25.120 align:start position:0%
+ape right a p e how are we gonna do that
+ 
+
+00:08:25.120 --> 00:08:26.710 align:start position:0%
+ape right a p e how are we gonna do that
+right<00:08:25.520><c> we're</c><00:08:25.680><c> inserting</c><00:08:26.080><c> another</c><00:08:26.319><c> word</c><00:08:26.560><c> what</c>
+
+00:08:26.710 --> 00:08:26.720 align:start position:0%
+right we're inserting another word what
+ 
+
+00:08:26.720 --> 00:08:28.550 align:start position:0%
+right we're inserting another word what
+does<00:08:26.879><c> that</c><00:08:27.039><c> mean</c><00:08:27.360><c> are</c><00:08:27.440><c> we</c><00:08:27.599><c> gonna</c><00:08:27.840><c> say</c>
+
+00:08:28.550 --> 00:08:28.560 align:start position:0%
+does that mean are we gonna say
+ 
+
+00:08:28.560 --> 00:08:32.070 align:start position:0%
+does that mean are we gonna say
+a<00:08:29.360><c> p</c><00:08:30.160><c> e</c><00:08:30.479><c> and</c><00:08:30.560><c> then</c><00:08:30.720><c> just</c><00:08:30.960><c> create</c><00:08:31.440><c> a</c><00:08:31.599><c> separate</c>
+
+00:08:32.070 --> 00:08:32.080 align:start position:0%
+a p e and then just create a separate
+ 
+
+00:08:32.080 --> 00:08:33.350 align:start position:0%
+a p e and then just create a separate
+node<00:08:32.399><c> for</c><00:08:32.640><c> each</c><00:08:32.800><c> of</c><00:08:32.959><c> these</c>
+
+00:08:33.350 --> 00:08:33.360 align:start position:0%
+node for each of these
+ 
+
+00:08:33.360 --> 00:08:35.269 align:start position:0%
+node for each of these
+as<00:08:33.839><c> children</c><00:08:34.320><c> right</c><00:08:34.479><c> and</c><00:08:34.560><c> just</c><00:08:34.719><c> connect</c><00:08:35.039><c> them</c>
+
+00:08:35.269 --> 00:08:35.279 align:start position:0%
+as children right and just connect them
+ 
+
+00:08:35.279 --> 00:08:37.909 align:start position:0%
+as children right and just connect them
+such<00:08:35.519><c> as</c><00:08:35.599><c> that</c><00:08:35.839><c> right</c><00:08:36.240><c> this</c><00:08:36.399><c> is</c><00:08:36.560><c> a</c><00:08:36.640><c> child</c><00:08:37.120><c> of</c><00:08:37.360><c> a</c>
+
+00:08:37.909 --> 00:08:37.919 align:start position:0%
+such as that right this is a child of a
+ 
+
+00:08:37.919 --> 00:08:39.909 align:start position:0%
+such as that right this is a child of a
+this<00:08:38.159><c> is</c><00:08:38.240><c> the</c><00:08:38.399><c> child</c><00:08:38.800><c> of</c><00:08:39.120><c> p</c><00:08:39.360><c> are</c><00:08:39.519><c> we</c><00:08:39.599><c> gonna</c><00:08:39.760><c> do</c>
+
+00:08:39.909 --> 00:08:39.919 align:start position:0%
+this is the child of p are we gonna do
+ 
+
+00:08:39.919 --> 00:08:41.670 align:start position:0%
+this is the child of p are we gonna do
+that<00:08:40.240><c> no</c><00:08:40.800><c> because</c><00:08:41.120><c> we</c><00:08:41.279><c> could</c>
+
+00:08:41.670 --> 00:08:41.680 align:start position:0%
+that no because we could
+ 
+
+00:08:41.680 --> 00:08:43.350 align:start position:0%
+that no because we could
+reuse<00:08:42.159><c> it</c><00:08:42.320><c> right</c><00:08:42.560><c> why</c><00:08:42.719><c> would</c><00:08:42.880><c> we</c><00:08:43.039><c> have</c>
+
+00:08:43.350 --> 00:08:43.360 align:start position:0%
+reuse it right why would we have
+ 
+
+00:08:43.360 --> 00:08:44.870 align:start position:0%
+reuse it right why would we have
+duplicate<00:08:44.159><c> a's</c>
+
+00:08:44.870 --> 00:08:44.880 align:start position:0%
+duplicate a's
+ 
+
+00:08:44.880 --> 00:08:47.110 align:start position:0%
+duplicate a's
+in<00:08:44.959><c> the</c><00:08:45.120><c> first</c><00:08:45.519><c> position</c><00:08:46.240><c> when</c><00:08:46.480><c> we</c><00:08:46.720><c> already</c>
+
+00:08:47.110 --> 00:08:47.120 align:start position:0%
+in the first position when we already
+ 
+
+00:08:47.120 --> 00:08:47.990 align:start position:0%
+in the first position when we already
+have<00:08:47.360><c> an</c><00:08:47.600><c> a</c>
+
+00:08:47.990 --> 00:08:48.000 align:start position:0%
+have an a
+ 
+
+00:08:48.000 --> 00:08:49.990 align:start position:0%
+have an a
+over<00:08:48.240><c> here</c><00:08:48.560><c> so</c><00:08:48.720><c> if</c><00:08:48.880><c> we</c><00:08:49.200><c> are</c><00:08:49.360><c> inserting</c><00:08:49.839><c> this</c>
+
+00:08:49.990 --> 00:08:50.000 align:start position:0%
+over here so if we are inserting this
+ 
+
+00:08:50.000 --> 00:08:51.590 align:start position:0%
+over here so if we are inserting this
+word<00:08:50.320><c> ape</c><00:08:50.800><c> we're</c><00:08:51.040><c> gonna</c>
+
+00:08:51.590 --> 00:08:51.600 align:start position:0%
+word ape we're gonna
+ 
+
+00:08:51.600 --> 00:08:54.070 align:start position:0%
+word ape we're gonna
+leverage<00:08:52.080><c> this</c><00:08:52.320><c> a</c><00:08:52.560><c> that</c><00:08:52.720><c> we</c><00:08:52.959><c> already</c><00:08:53.360><c> created</c>
+
+00:08:54.070 --> 00:08:54.080 align:start position:0%
+leverage this a that we already created
+ 
+
+00:08:54.080 --> 00:08:54.630 align:start position:0%
+leverage this a that we already created
+great
+
+00:08:54.630 --> 00:08:54.640 align:start position:0%
+great
+ 
+
+00:08:54.640 --> 00:08:56.389 align:start position:0%
+great
+and<00:08:54.880><c> then</c><00:08:55.519><c> we're</c><00:08:55.760><c> adding</c><00:08:56.000><c> the</c><00:08:56.080><c> second</c>
+
+00:08:56.389 --> 00:08:56.399 align:start position:0%
+and then we're adding the second
+ 
+
+00:08:56.399 --> 00:08:58.470 align:start position:0%
+and then we're adding the second
+character<00:08:56.959><c> p</c><00:08:57.519><c> we're</c><00:08:57.680><c> gonna</c><00:08:57.920><c> leverage</c>
+
+00:08:58.470 --> 00:08:58.480 align:start position:0%
+character p we're gonna leverage
+ 
+
+00:08:58.480 --> 00:09:01.509 align:start position:0%
+character p we're gonna leverage
+this<00:08:59.040><c> p</c><00:08:59.360><c> that</c><00:08:59.519><c> we</c><00:08:59.839><c> already</c><00:09:00.320><c> created</c><00:09:00.959><c> and</c><00:09:01.279><c> so</c>
+
+00:09:01.509 --> 00:09:01.519 align:start position:0%
+this p that we already created and so
+ 
+
+00:09:01.519 --> 00:09:02.470 align:start position:0%
+this p that we already created and so
+we've<00:09:01.760><c> inserted</c>
+
+00:09:02.470 --> 00:09:02.480 align:start position:0%
+we've inserted
+ 
+
+00:09:02.480 --> 00:09:04.389 align:start position:0%
+we've inserted
+the<00:09:02.640><c> first</c><00:09:02.880><c> two</c><00:09:03.120><c> characters</c><00:09:03.680><c> what</c><00:09:03.839><c> about</c><00:09:04.160><c> the</c>
+
+00:09:04.389 --> 00:09:04.399 align:start position:0%
+the first two characters what about the
+ 
+
+00:09:04.399 --> 00:09:05.990 align:start position:0%
+the first two characters what about the
+last<00:09:04.720><c> character</c><00:09:05.120><c> the</c><00:09:05.360><c> e</c>
+
+00:09:05.990 --> 00:09:06.000 align:start position:0%
+last character the e
+ 
+
+00:09:06.000 --> 00:09:08.470 align:start position:0%
+last character the e
+do<00:09:06.160><c> we</c><00:09:06.399><c> have</c><00:09:06.640><c> an</c><00:09:06.800><c> e</c><00:09:07.120><c> over</c><00:09:07.360><c> here</c><00:09:07.920><c> no</c><00:09:08.320><c> right</c>
+
+00:09:08.470 --> 00:09:08.480 align:start position:0%
+do we have an e over here no right
+ 
+
+00:09:08.480 --> 00:09:09.030 align:start position:0%
+do we have an e over here no right
+there's<00:09:08.720><c> no</c>
+
+00:09:09.030 --> 00:09:09.040 align:start position:0%
+there's no
+ 
+
+00:09:09.040 --> 00:09:11.030 align:start position:0%
+there's no
+e<00:09:09.519><c> in</c><00:09:09.600><c> the</c><00:09:09.760><c> third</c><00:09:10.080><c> position</c><00:09:10.560><c> so</c><00:09:10.640><c> what</c><00:09:10.800><c> are</c><00:09:10.959><c> we</c>
+
+00:09:11.030 --> 00:09:11.040 align:start position:0%
+e in the third position so what are we
+ 
+
+00:09:11.040 --> 00:09:12.949 align:start position:0%
+e in the third position so what are we
+gonna<00:09:11.200><c> do</c><00:09:11.360><c> we're</c><00:09:11.519><c> gonna</c><00:09:11.680><c> create</c><00:09:12.080><c> another</c>
+
+00:09:12.949 --> 00:09:12.959 align:start position:0%
+gonna do we're gonna create another
+ 
+
+00:09:12.959 --> 00:09:16.230 align:start position:0%
+gonna do we're gonna create another
+child<00:09:13.440><c> node</c><00:09:13.839><c> right</c><00:09:14.320><c> now</c><00:09:14.480><c> we</c><00:09:14.720><c> create</c><00:09:15.279><c> an</c><00:09:15.600><c> e</c>
+
+00:09:16.230 --> 00:09:16.240 align:start position:0%
+child node right now we create an e
+ 
+
+00:09:16.240 --> 00:09:19.190 align:start position:0%
+child node right now we create an e
+and<00:09:16.800><c> last</c><00:09:17.040><c> but</c><00:09:17.200><c> not</c><00:09:17.440><c> least</c><00:09:17.920><c> we</c><00:09:18.240><c> mark</c><00:09:18.560><c> that</c><00:09:18.800><c> this</c>
+
+00:09:19.190 --> 00:09:19.200 align:start position:0%
+and last but not least we mark that this
+ 
+
+00:09:19.200 --> 00:09:19.670 align:start position:0%
+and last but not least we mark that this
+is<00:09:19.360><c> the</c>
+
+00:09:19.670 --> 00:09:19.680 align:start position:0%
+is the
+ 
+
+00:09:19.680 --> 00:09:22.630 align:start position:0%
+is the
+end<00:09:20.000><c> of</c><00:09:20.160><c> a</c><00:09:20.320><c> word</c><00:09:20.880><c> so</c><00:09:21.200><c> you</c><00:09:21.360><c> can</c><00:09:21.600><c> see</c><00:09:21.839><c> that</c><00:09:22.080><c> a</c><00:09:22.240><c> try</c>
+
+00:09:22.630 --> 00:09:22.640 align:start position:0%
+end of a word so you can see that a try
+ 
+
+00:09:22.640 --> 00:09:24.470 align:start position:0%
+end of a word so you can see that a try
+actually<00:09:22.959><c> has</c><00:09:23.200><c> the</c><00:09:23.279><c> potential</c><00:09:23.760><c> to</c><00:09:23.920><c> be</c><00:09:24.160><c> pretty</c>
+
+00:09:24.470 --> 00:09:24.480 align:start position:0%
+actually has the potential to be pretty
+ 
+
+00:09:24.480 --> 00:09:25.910 align:start position:0%
+actually has the potential to be pretty
+efficient<00:09:25.040><c> because</c><00:09:25.279><c> we</c><00:09:25.519><c> are</c>
+
+00:09:25.910 --> 00:09:25.920 align:start position:0%
+efficient because we are
+ 
+
+00:09:25.920 --> 00:09:28.310 align:start position:0%
+efficient because we are
+reusing<00:09:26.720><c> a</c><00:09:26.959><c> lot</c><00:09:27.200><c> of</c><00:09:27.360><c> nodes</c><00:09:27.760><c> right</c><00:09:27.920><c> we're</c><00:09:28.080><c> not</c>
+
+00:09:28.310 --> 00:09:28.320 align:start position:0%
+reusing a lot of nodes right we're not
+ 
+
+00:09:28.320 --> 00:09:30.470 align:start position:0%
+reusing a lot of nodes right we're not
+necessarily<00:09:28.959><c> creating</c><00:09:29.360><c> a</c><00:09:29.519><c> separate</c><00:09:30.000><c> node</c>
+
+00:09:30.470 --> 00:09:30.480 align:start position:0%
+necessarily creating a separate node
+ 
+
+00:09:30.480 --> 00:09:32.870 align:start position:0%
+necessarily creating a separate node
+for<00:09:30.720><c> every</c><00:09:31.120><c> single</c><00:09:31.519><c> word</c><00:09:32.240><c> now</c><00:09:32.399><c> let</c><00:09:32.560><c> me</c><00:09:32.720><c> just</c>
+
+00:09:32.870 --> 00:09:32.880 align:start position:0%
+for every single word now let me just
+ 
+
+00:09:32.880 --> 00:09:33.670 align:start position:0%
+for every single word now let me just
+show<00:09:33.040><c> you</c><00:09:33.279><c> one</c>
+
+00:09:33.670 --> 00:09:33.680 align:start position:0%
+show you one
+ 
+
+00:09:33.680 --> 00:09:36.230 align:start position:0%
+show you one
+last<00:09:34.080><c> thing</c><00:09:34.320><c> before</c><00:09:34.640><c> we</c><00:09:34.880><c> jump</c><00:09:35.120><c> into</c><00:09:35.360><c> the</c><00:09:35.519><c> code</c>
+
+00:09:36.230 --> 00:09:36.240 align:start position:0%
+last thing before we jump into the code
+ 
+
+00:09:36.240 --> 00:09:37.990 align:start position:0%
+last thing before we jump into the code
+so<00:09:36.399><c> we're</c><00:09:36.560><c> going</c><00:09:36.640><c> to</c><00:09:36.720><c> do</c><00:09:36.959><c> one</c><00:09:37.200><c> last</c><00:09:37.519><c> function</c>
+
+00:09:37.990 --> 00:09:38.000 align:start position:0%
+so we're going to do one last function
+ 
+
+00:09:38.000 --> 00:09:40.550 align:start position:0%
+so we're going to do one last function
+we<00:09:38.160><c> want</c><00:09:38.320><c> to</c><00:09:38.480><c> check</c><00:09:38.959><c> does</c><00:09:39.279><c> any</c><00:09:39.600><c> word</c><00:09:40.080><c> start</c>
+
+00:09:40.550 --> 00:09:40.560 align:start position:0%
+we want to check does any word start
+ 
+
+00:09:40.560 --> 00:09:41.030 align:start position:0%
+we want to check does any word start
+with
+
+00:09:41.030 --> 00:09:41.040 align:start position:0%
+with
+ 
+
+00:09:41.040 --> 00:09:43.590 align:start position:0%
+with
+b<00:09:41.519><c> and</c><00:09:41.680><c> i'm</c><00:09:41.760><c> just</c><00:09:42.000><c> illustrating</c><00:09:42.720><c> why</c><00:09:43.360><c> we're</c>
+
+00:09:43.590 --> 00:09:43.600 align:start position:0%
+b and i'm just illustrating why we're
+ 
+
+00:09:43.600 --> 00:09:45.269 align:start position:0%
+b and i'm just illustrating why we're
+even<00:09:43.920><c> implementing</c><00:09:44.399><c> a</c><00:09:44.480><c> try</c><00:09:44.800><c> in</c><00:09:44.880><c> the</c><00:09:44.959><c> first</c>
+
+00:09:45.269 --> 00:09:45.279 align:start position:0%
+even implementing a try in the first
+ 
+
+00:09:45.279 --> 00:09:47.190 align:start position:0%
+even implementing a try in the first
+place<00:09:45.519><c> it's</c><00:09:45.680><c> because</c><00:09:46.080><c> the</c><00:09:46.399><c> starts</c><00:09:46.880><c> with</c>
+
+00:09:47.190 --> 00:09:47.200 align:start position:0%
+place it's because the starts with
+ 
+
+00:09:47.200 --> 00:09:47.750 align:start position:0%
+place it's because the starts with
+function
+
+00:09:47.750 --> 00:09:47.760 align:start position:0%
+function
+ 
+
+00:09:47.760 --> 00:09:50.550 align:start position:0%
+function
+is<00:09:48.240><c> very</c><00:09:48.720><c> efficient</c><00:09:49.279><c> compared</c><00:09:49.680><c> to</c><00:09:49.920><c> other</c><00:09:50.160><c> data</c>
+
+00:09:50.550 --> 00:09:50.560 align:start position:0%
+is very efficient compared to other data
+ 
+
+00:09:50.560 --> 00:09:51.430 align:start position:0%
+is very efficient compared to other data
+structures
+
+00:09:51.430 --> 00:09:51.440 align:start position:0%
+structures
+ 
+
+00:09:51.440 --> 00:09:54.470 align:start position:0%
+structures
+so<00:09:51.680><c> for</c><00:09:51.920><c> example</c><00:09:52.320><c> let's</c><00:09:52.480><c> say</c><00:09:52.720><c> we</c><00:09:52.880><c> had</c><00:09:53.040><c> a</c><00:09:53.360><c> list</c><00:09:54.160><c> a</c>
+
+00:09:54.470 --> 00:09:54.480 align:start position:0%
+so for example let's say we had a list a
+ 
+
+00:09:54.480 --> 00:09:54.949 align:start position:0%
+so for example let's say we had a list a
+list
+
+00:09:54.949 --> 00:09:54.959 align:start position:0%
+list
+ 
+
+00:09:54.959 --> 00:09:57.269 align:start position:0%
+list
+of<00:09:55.200><c> words</c><00:09:55.680><c> a</c><00:09:55.839><c> list</c><00:09:56.080><c> of</c><00:09:56.240><c> strings</c><00:09:56.720><c> and</c><00:09:56.880><c> let's</c><00:09:57.040><c> say</c>
+
+00:09:57.269 --> 00:09:57.279 align:start position:0%
+of words a list of strings and let's say
+ 
+
+00:09:57.279 --> 00:09:59.110 align:start position:0%
+of words a list of strings and let's say
+the<00:09:57.600><c> size</c><00:09:58.080><c> of</c><00:09:58.240><c> that</c><00:09:58.560><c> list</c>
+
+00:09:59.110 --> 00:09:59.120 align:start position:0%
+the size of that list
+ 
+
+00:09:59.120 --> 00:10:02.310 align:start position:0%
+the size of that list
+was<00:09:59.440><c> equal</c><00:10:00.000><c> to</c><00:10:00.640><c> a</c><00:10:01.040><c> million</c><00:10:01.600><c> right</c>
+
+00:10:02.310 --> 00:10:02.320 align:start position:0%
+was equal to a million right
+ 
+
+00:10:02.320 --> 00:10:05.350 align:start position:0%
+was equal to a million right
+how<00:10:02.800><c> long</c><00:10:03.360><c> would</c><00:10:03.600><c> it</c><00:10:03.839><c> take</c><00:10:04.320><c> for</c><00:10:04.560><c> us</c><00:10:04.720><c> to</c><00:10:05.040><c> check</c>
+
+00:10:05.350 --> 00:10:05.360 align:start position:0%
+how long would it take for us to check
+ 
+
+00:10:05.360 --> 00:10:05.670 align:start position:0%
+how long would it take for us to check
+if
+
+00:10:05.670 --> 00:10:05.680 align:start position:0%
+if
+ 
+
+00:10:05.680 --> 00:10:08.949 align:start position:0%
+if
+any<00:10:06.079><c> word</c><00:10:06.560><c> starts</c><00:10:07.040><c> with</c><00:10:07.360><c> b</c><00:10:07.920><c> worst</c><00:10:08.399><c> case</c><00:10:08.800><c> we</c>
+
+00:10:08.949 --> 00:10:08.959 align:start position:0%
+any word starts with b worst case we
+ 
+
+00:10:08.959 --> 00:10:10.230 align:start position:0%
+any word starts with b worst case we
+would<00:10:09.120><c> have</c><00:10:09.279><c> to</c><00:10:09.519><c> check</c>
+
+00:10:10.230 --> 00:10:10.240 align:start position:0%
+would have to check
+ 
+
+00:10:10.240 --> 00:10:13.430 align:start position:0%
+would have to check
+every<00:10:11.120><c> single</c><00:10:11.760><c> word</c><00:10:12.320><c> in</c><00:10:12.480><c> the</c><00:10:12.720><c> list</c><00:10:13.040><c> and</c><00:10:13.200><c> check</c>
+
+00:10:13.430 --> 00:10:13.440 align:start position:0%
+every single word in the list and check
+ 
+
+00:10:13.440 --> 00:10:14.550 align:start position:0%
+every single word in the list and check
+if<00:10:13.519><c> it</c><00:10:13.680><c> starts</c><00:10:14.000><c> with</c><00:10:14.160><c> b</c>
+
+00:10:14.550 --> 00:10:14.560 align:start position:0%
+if it starts with b
+ 
+
+00:10:14.560 --> 00:10:16.230 align:start position:0%
+if it starts with b
+and<00:10:14.720><c> what</c><00:10:14.880><c> if</c><00:10:15.040><c> there</c><00:10:15.200><c> was</c><00:10:15.440><c> zero</c><00:10:15.760><c> words</c><00:10:16.079><c> that</c>
+
+00:10:16.230 --> 00:10:16.240 align:start position:0%
+and what if there was zero words that
+ 
+
+00:10:16.240 --> 00:10:18.069 align:start position:0%
+and what if there was zero words that
+started<00:10:16.560><c> with</c><00:10:16.720><c> b</c><00:10:17.120><c> then</c><00:10:17.360><c> every</c><00:10:17.600><c> time</c><00:10:17.839><c> we</c><00:10:17.920><c> would</c>
+
+00:10:18.069 --> 00:10:18.079 align:start position:0%
+started with b then every time we would
+ 
+
+00:10:18.079 --> 00:10:20.150 align:start position:0%
+started with b then every time we would
+have<00:10:18.240><c> to</c><00:10:18.399><c> go</c><00:10:18.640><c> through</c><00:10:18.880><c> that</c><00:10:19.200><c> entire</c>
+
+00:10:20.150 --> 00:10:20.160 align:start position:0%
+have to go through that entire
+ 
+
+00:10:20.160 --> 00:10:23.430 align:start position:0%
+have to go through that entire
+list<00:10:20.480><c> of</c><00:10:20.640><c> a</c><00:10:20.880><c> million</c><00:10:21.360><c> words</c><00:10:22.079><c> but</c><00:10:22.240><c> with</c><00:10:22.480><c> a</c><00:10:22.720><c> try</c>
+
+00:10:23.430 --> 00:10:23.440 align:start position:0%
+list of a million words but with a try
+ 
+
+00:10:23.440 --> 00:10:25.829 align:start position:0%
+list of a million words but with a try
+like<00:10:23.600><c> we've</c><00:10:23.920><c> implemented</c><00:10:24.480><c> right</c><00:10:24.800><c> now</c><00:10:25.279><c> it's</c>
+
+00:10:25.829 --> 00:10:25.839 align:start position:0%
+like we've implemented right now it's
+ 
+
+00:10:25.839 --> 00:10:27.269 align:start position:0%
+like we've implemented right now it's
+very<00:10:26.399><c> efficient</c>
+
+00:10:27.269 --> 00:10:27.279 align:start position:0%
+very efficient
+ 
+
+00:10:27.279 --> 00:10:29.030 align:start position:0%
+very efficient
+here<00:10:27.519><c> you</c><00:10:27.680><c> can</c><00:10:27.839><c> see</c><00:10:28.000><c> we</c><00:10:28.240><c> implement</c><00:10:28.720><c> we</c><00:10:28.800><c> have</c>
+
+00:10:29.030 --> 00:10:29.040 align:start position:0%
+here you can see we implement we have
+ 
+
+00:10:29.040 --> 00:10:30.630 align:start position:0%
+here you can see we implement we have
+two<00:10:29.279><c> words</c><00:10:29.600><c> right</c><00:10:29.760><c> we</c><00:10:29.839><c> have</c><00:10:29.920><c> one</c><00:10:30.160><c> word</c><00:10:30.399><c> here</c>
+
+00:10:30.630 --> 00:10:30.640 align:start position:0%
+two words right we have one word here
+ 
+
+00:10:30.640 --> 00:10:32.389 align:start position:0%
+two words right we have one word here
+and<00:10:30.720><c> we</c><00:10:30.880><c> have</c><00:10:30.959><c> a</c><00:10:31.040><c> second</c><00:10:31.360><c> word</c><00:10:31.600><c> here</c><00:10:31.920><c> and</c><00:10:32.160><c> it's</c>
+
+00:10:32.389 --> 00:10:32.399 align:start position:0%
+and we have a second word here and it's
+ 
+
+00:10:32.399 --> 00:10:34.150 align:start position:0%
+and we have a second word here and it's
+possible<00:10:32.800><c> we</c><00:10:32.959><c> could</c><00:10:33.120><c> have</c><00:10:33.360><c> a</c><00:10:33.600><c> million</c>
+
+00:10:34.150 --> 00:10:34.160 align:start position:0%
+possible we could have a million
+ 
+
+00:10:34.160 --> 00:10:35.990 align:start position:0%
+possible we could have a million
+other<00:10:34.399><c> words</c><00:10:34.720><c> right</c><00:10:34.959><c> like</c><00:10:35.200><c> clearly</c><00:10:35.680><c> there's</c>
+
+00:10:35.990 --> 00:10:36.000 align:start position:0%
+other words right like clearly there's
+ 
+
+00:10:36.000 --> 00:10:37.430 align:start position:0%
+other words right like clearly there's
+probably<00:10:36.320><c> a</c><00:10:36.399><c> lot</c><00:10:36.560><c> of</c><00:10:36.640><c> words</c><00:10:36.959><c> that</c><00:10:37.120><c> start</c><00:10:37.279><c> with</c>
+
+00:10:37.430 --> 00:10:37.440 align:start position:0%
+probably a lot of words that start with
+ 
+
+00:10:37.440 --> 00:10:38.389 align:start position:0%
+probably a lot of words that start with
+the<00:10:37.519><c> character</c><00:10:38.000><c> a</c>
+
+00:10:38.389 --> 00:10:38.399 align:start position:0%
+the character a
+ 
+
+00:10:38.399 --> 00:10:41.190 align:start position:0%
+the character a
+and<00:10:38.560><c> maybe</c><00:10:38.880><c> so</c><00:10:39.120><c> on</c><00:10:39.519><c> but</c><00:10:40.000><c> when</c><00:10:40.240><c> we</c><00:10:40.640><c> run</c><00:10:40.880><c> this</c>
+
+00:10:41.190 --> 00:10:41.200 align:start position:0%
+and maybe so on but when we run this
+ 
+
+00:10:41.200 --> 00:10:41.670 align:start position:0%
+and maybe so on but when we run this
+function
+
+00:10:41.670 --> 00:10:41.680 align:start position:0%
+function
+ 
+
+00:10:41.680 --> 00:10:43.829 align:start position:0%
+function
+starts<00:10:42.079><c> with</c><00:10:42.320><c> b</c><00:10:42.800><c> all</c><00:10:43.040><c> we're</c><00:10:43.360><c> checking</c><00:10:43.680><c> is</c>
+
+00:10:43.829 --> 00:10:43.839 align:start position:0%
+starts with b all we're checking is
+ 
+
+00:10:43.839 --> 00:10:45.509 align:start position:0%
+starts with b all we're checking is
+we're<00:10:44.079><c> starting</c><00:10:44.560><c> at</c><00:10:44.720><c> the</c><00:10:44.880><c> root</c><00:10:45.279><c> we're</c>
+
+00:10:45.509 --> 00:10:45.519 align:start position:0%
+we're starting at the root we're
+ 
+
+00:10:45.519 --> 00:10:45.990 align:start position:0%
+we're starting at the root we're
+checking
+
+00:10:45.990 --> 00:10:46.000 align:start position:0%
+checking
+ 
+
+00:10:46.000 --> 00:10:48.389 align:start position:0%
+checking
+do<00:10:46.240><c> we</c><00:10:46.399><c> have</c><00:10:46.800><c> any</c><00:10:47.200><c> children</c><00:10:47.920><c> with</c><00:10:48.160><c> the</c>
+
+00:10:48.389 --> 00:10:48.399 align:start position:0%
+do we have any children with the
+ 
+
+00:10:48.399 --> 00:10:49.269 align:start position:0%
+do we have any children with the
+character
+
+00:10:49.269 --> 00:10:49.279 align:start position:0%
+character
+ 
+
+00:10:49.279 --> 00:10:52.470 align:start position:0%
+character
+b<00:10:49.760><c> right</c><00:10:50.240><c> we</c><00:10:50.560><c> check</c><00:10:51.440><c> this</c><00:10:51.760><c> first</c>
+
+00:10:52.470 --> 00:10:52.480 align:start position:0%
+b right we check this first
+ 
+
+00:10:52.480 --> 00:10:54.790 align:start position:0%
+b right we check this first
+layer<00:10:53.040><c> how</c><00:10:53.519><c> large</c><00:10:53.839><c> is</c><00:10:54.000><c> that</c><00:10:54.240><c> first</c><00:10:54.560><c> layer</c>
+
+00:10:54.790 --> 00:10:54.800 align:start position:0%
+layer how large is that first layer
+ 
+
+00:10:54.800 --> 00:10:56.389 align:start position:0%
+layer how large is that first layer
+gonna<00:10:55.040><c> be</c><00:10:55.200><c> well</c><00:10:55.440><c> we</c><00:10:55.600><c> know</c><00:10:55.760><c> that</c><00:10:56.000><c> there's</c>
+
+00:10:56.389 --> 00:10:56.399 align:start position:0%
+gonna be well we know that there's
+ 
+
+00:10:56.399 --> 00:10:59.030 align:start position:0%
+gonna be well we know that there's
+26<00:10:57.120><c> lowercase</c><00:10:57.760><c> letters</c><00:10:58.079><c> right</c><00:10:58.240><c> so</c><00:10:58.480><c> worst</c><00:10:58.720><c> case</c>
+
+00:10:59.030 --> 00:10:59.040 align:start position:0%
+26 lowercase letters right so worst case
+ 
+
+00:10:59.040 --> 00:11:00.069 align:start position:0%
+26 lowercase letters right so worst case
+it<00:10:59.120><c> would</c><00:10:59.279><c> be</c><00:10:59.440><c> lowercase</c>
+
+00:11:00.069 --> 00:11:00.079 align:start position:0%
+it would be lowercase
+ 
+
+00:11:00.079 --> 00:11:03.110 align:start position:0%
+it would be lowercase
+26<00:11:01.040><c> and</c><00:11:01.200><c> that's</c><00:11:01.680><c> pretty</c><00:11:02.160><c> efficient</c><00:11:02.640><c> right</c>
+
+00:11:03.110 --> 00:11:03.120 align:start position:0%
+26 and that's pretty efficient right
+ 
+
+00:11:03.120 --> 00:11:05.269 align:start position:0%
+26 and that's pretty efficient right
+so<00:11:03.760><c> when</c><00:11:03.920><c> we</c><00:11:04.079><c> check</c><00:11:04.399><c> we</c><00:11:04.560><c> check</c><00:11:04.880><c> hey</c><00:11:05.040><c> there's</c><00:11:05.200><c> a</c>
+
+00:11:05.269 --> 00:11:05.279 align:start position:0%
+so when we check we check hey there's a
+ 
+
+00:11:05.279 --> 00:11:07.590 align:start position:0%
+so when we check we check hey there's a
+lowercase<00:11:05.839><c> a</c><00:11:06.079><c> but</c><00:11:06.240><c> there's</c><00:11:06.480><c> no</c><00:11:06.720><c> lowercase</c><00:11:07.360><c> b</c>
+
+00:11:07.590 --> 00:11:07.600 align:start position:0%
+lowercase a but there's no lowercase b
+ 
+
+00:11:07.600 --> 00:11:07.990 align:start position:0%
+lowercase a but there's no lowercase b
+so
+
+00:11:07.990 --> 00:11:08.000 align:start position:0%
+so
+ 
+
+00:11:08.000 --> 00:11:09.590 align:start position:0%
+so
+for<00:11:08.160><c> this</c><00:11:08.399><c> starts</c><00:11:08.720><c> with</c><00:11:08.880><c> function</c><00:11:09.279><c> we</c><00:11:09.440><c> can</c>
+
+00:11:09.590 --> 00:11:09.600 align:start position:0%
+for this starts with function we can
+ 
+
+00:11:09.600 --> 00:11:11.190 align:start position:0%
+for this starts with function we can
+return<00:11:10.240><c> false</c><00:11:10.800><c> and</c>
+
+00:11:11.190 --> 00:11:11.200 align:start position:0%
+return false and
+ 
+
+00:11:11.200 --> 00:11:14.069 align:start position:0%
+return false and
+that<00:11:11.440><c> was</c><00:11:11.680><c> done</c><00:11:12.240><c> very</c><00:11:12.480><c> efficiently</c><00:11:13.040><c> right</c><00:11:13.519><c> uh</c>
+
+00:11:14.069 --> 00:11:14.079 align:start position:0%
+that was done very efficiently right uh
+ 
+
+00:11:14.079 --> 00:11:15.509 align:start position:0%
+that was done very efficiently right uh
+26<00:11:14.720><c> is</c><00:11:14.880><c> basically</c>
+
+00:11:15.509 --> 00:11:15.519 align:start position:0%
+26 is basically
+ 
+
+00:11:15.519 --> 00:11:18.870 align:start position:0%
+26 is basically
+big<00:11:15.760><c> o</c><00:11:16.079><c> of</c><00:11:16.640><c> one</c><00:11:17.040><c> so</c><00:11:17.279><c> this</c><00:11:17.600><c> is</c><00:11:17.920><c> a</c><00:11:18.399><c> super</c>
+
+00:11:18.870 --> 00:11:18.880 align:start position:0%
+big o of one so this is a super
+ 
+
+00:11:18.880 --> 00:11:19.910 align:start position:0%
+big o of one so this is a super
+efficient<00:11:19.360><c> way</c>
+
+00:11:19.910 --> 00:11:19.920 align:start position:0%
+efficient way
+ 
+
+00:11:19.920 --> 00:11:22.790 align:start position:0%
+efficient way
+to<00:11:21.040><c> to</c><00:11:21.279><c> check</c><00:11:21.519><c> prefixes</c><00:11:22.240><c> right</c><00:11:22.399><c> and</c><00:11:22.480><c> that's</c>
+
+00:11:22.790 --> 00:11:22.800 align:start position:0%
+to to check prefixes right and that's
+ 
+
+00:11:22.800 --> 00:11:24.630 align:start position:0%
+to to check prefixes right and that's
+why<00:11:22.959><c> they</c><00:11:23.200><c> call</c><00:11:23.440><c> this</c><00:11:23.680><c> a</c><00:11:23.839><c> prefix</c>
+
+00:11:24.630 --> 00:11:24.640 align:start position:0%
+why they call this a prefix
+ 
+
+00:11:24.640 --> 00:11:27.190 align:start position:0%
+why they call this a prefix
+tree<00:11:25.200><c> prefixes</c><00:11:26.079><c> can</c><00:11:26.240><c> be</c><00:11:26.399><c> checked</c><00:11:26.880><c> very</c>
+
+00:11:27.190 --> 00:11:27.200 align:start position:0%
+tree prefixes can be checked very
+ 
+
+00:11:27.200 --> 00:11:28.310 align:start position:0%
+tree prefixes can be checked very
+efficiently<00:11:27.920><c> so</c>
+
+00:11:28.310 --> 00:11:28.320 align:start position:0%
+efficiently so
+ 
+
+00:11:28.320 --> 00:11:30.310 align:start position:0%
+efficiently so
+now<00:11:28.560><c> let's</c><00:11:28.800><c> actually</c><00:11:29.200><c> jump</c><00:11:29.440><c> into</c><00:11:29.600><c> the</c><00:11:29.760><c> code</c>
+
+00:11:30.310 --> 00:11:30.320 align:start position:0%
+now let's actually jump into the code
+ 
+
+00:11:30.320 --> 00:11:32.389 align:start position:0%
+now let's actually jump into the code
+all<00:11:30.560><c> three</c><00:11:30.800><c> of</c><00:11:30.880><c> the</c><00:11:31.040><c> functions</c><00:11:31.600><c> insert</c>
+
+00:11:32.389 --> 00:11:32.399 align:start position:0%
+all three of the functions insert
+ 
+
+00:11:32.399 --> 00:11:34.710 align:start position:0%
+all three of the functions insert
+search<00:11:32.959><c> and</c><00:11:33.200><c> starts</c><00:11:33.600><c> with</c><00:11:34.079><c> are</c><00:11:34.320><c> pretty</c>
+
+00:11:34.710 --> 00:11:34.720 align:start position:0%
+search and starts with are pretty
+ 
+
+00:11:34.720 --> 00:11:35.910 align:start position:0%
+search and starts with are pretty
+similar<00:11:35.200><c> functions</c>
+
+00:11:35.910 --> 00:11:35.920 align:start position:0%
+similar functions
+ 
+
+00:11:35.920 --> 00:11:37.350 align:start position:0%
+similar functions
+so<00:11:36.160><c> the</c><00:11:36.480><c> even</c><00:11:36.640><c> though</c><00:11:36.800><c> we're</c><00:11:36.959><c> going</c><00:11:37.040><c> to</c><00:11:37.120><c> write</c>
+
+00:11:37.350 --> 00:11:37.360 align:start position:0%
+so the even though we're going to write
+ 
+
+00:11:37.360 --> 00:11:39.350 align:start position:0%
+so the even though we're going to write
+a<00:11:37.440><c> lot</c><00:11:37.600><c> of</c><00:11:37.680><c> code</c><00:11:38.000><c> it's</c><00:11:38.240><c> going</c><00:11:38.320><c> to</c><00:11:38.399><c> be</c><00:11:38.800><c> mostly</c>
+
+00:11:39.350 --> 00:11:39.360 align:start position:0%
+a lot of code it's going to be mostly
+ 
+
+00:11:39.360 --> 00:11:41.030 align:start position:0%
+a lot of code it's going to be mostly
+similar<00:11:39.760><c> so</c><00:11:39.920><c> let's</c><00:11:40.079><c> jump</c><00:11:40.320><c> into</c><00:11:40.560><c> that</c>
+
+00:11:41.030 --> 00:11:41.040 align:start position:0%
+similar so let's jump into that
+ 
+
+00:11:41.040 --> 00:11:43.430 align:start position:0%
+similar so let's jump into that
+so<00:11:41.360><c> our</c><00:11:41.600><c> job</c><00:11:41.920><c> is</c><00:11:42.079><c> to</c><00:11:42.240><c> implement</c><00:11:42.640><c> a</c><00:11:42.720><c> try</c><00:11:43.120><c> but</c><00:11:43.279><c> we</c>
+
+00:11:43.430 --> 00:11:43.440 align:start position:0%
+so our job is to implement a try but we
+ 
+
+00:11:43.440 --> 00:11:44.790 align:start position:0%
+so our job is to implement a try but we
+can't<00:11:43.680><c> really</c><00:11:44.000><c> do</c><00:11:44.160><c> that</c><00:11:44.320><c> without</c>
+
+00:11:44.790 --> 00:11:44.800 align:start position:0%
+can't really do that without
+ 
+
+00:11:44.800 --> 00:11:46.150 align:start position:0%
+can't really do that without
+implementing<00:11:45.360><c> a</c><00:11:45.600><c> try</c>
+
+00:11:46.150 --> 00:11:46.160 align:start position:0%
+implementing a try
+ 
+
+00:11:46.160 --> 00:11:48.389 align:start position:0%
+implementing a try
+node<00:11:46.800><c> so</c><00:11:47.120><c> the</c><00:11:47.279><c> first</c><00:11:47.519><c> thing</c><00:11:47.760><c> i'm</c><00:11:47.920><c> going</c><00:11:48.079><c> to</c><00:11:48.160><c> do</c>
+
+00:11:48.389 --> 00:11:48.399 align:start position:0%
+node so the first thing i'm going to do
+ 
+
+00:11:48.399 --> 00:11:49.670 align:start position:0%
+node so the first thing i'm going to do
+is<00:11:48.640><c> create</c><00:11:49.040><c> a</c><00:11:49.200><c> try</c>
+
+00:11:49.670 --> 00:11:49.680 align:start position:0%
+is create a try
+ 
+
+00:11:49.680 --> 00:11:52.150 align:start position:0%
+is create a try
+node<00:11:50.399><c> and</c><00:11:50.720><c> all</c><00:11:50.959><c> we're</c><00:11:51.120><c> going</c><00:11:51.279><c> to</c><00:11:51.360><c> do</c><00:11:51.680><c> is</c><00:11:51.920><c> just</c>
+
+00:11:52.150 --> 00:11:52.160 align:start position:0%
+node and all we're going to do is just
+ 
+
+00:11:52.160 --> 00:11:54.230 align:start position:0%
+node and all we're going to do is just
+create<00:11:52.560><c> the</c><00:11:52.720><c> constructor</c><00:11:53.360><c> so</c><00:11:53.519><c> in</c><00:11:53.680><c> python</c>
+
+00:11:54.230 --> 00:11:54.240 align:start position:0%
+create the constructor so in python
+ 
+
+00:11:54.240 --> 00:11:55.670 align:start position:0%
+create the constructor so in python
+that's<00:11:54.480><c> what</c><00:11:54.639><c> i'm</c><00:11:54.800><c> doing</c><00:11:55.120><c> and</c><00:11:55.279><c> net</c><00:11:55.519><c> is</c>
+
+00:11:55.670 --> 00:11:55.680 align:start position:0%
+that's what i'm doing and net is
+ 
+
+00:11:55.680 --> 00:11:57.350 align:start position:0%
+that's what i'm doing and net is
+basically<00:11:56.160><c> the</c><00:11:56.320><c> constructor</c>
+
+00:11:57.350 --> 00:11:57.360 align:start position:0%
+basically the constructor
+ 
+
+00:11:57.360 --> 00:11:59.829 align:start position:0%
+basically the constructor
+and<00:11:57.600><c> i'm</c><00:11:57.760><c> just</c><00:11:57.920><c> going</c><00:11:58.079><c> to</c><00:11:58.160><c> have</c><00:11:58.320><c> a</c><00:11:58.480><c> couple</c><00:11:59.120><c> of</c>
+
+00:11:59.829 --> 00:11:59.839 align:start position:0%
+and i'm just going to have a couple of
+ 
+
+00:11:59.839 --> 00:12:02.230 align:start position:0%
+and i'm just going to have a couple of
+uh<00:12:00.320><c> member</c><00:12:00.720><c> variables</c><00:12:01.279><c> for</c><00:12:01.519><c> this</c><00:12:01.680><c> so</c><00:12:01.839><c> we</c><00:12:02.079><c> are</c>
+
+00:12:02.230 --> 00:12:02.240 align:start position:0%
+uh member variables for this so we are
+ 
+
+00:12:02.240 --> 00:12:02.790 align:start position:0%
+uh member variables for this so we are
+going<00:12:02.320><c> to</c><00:12:02.480><c> have</c>
+
+00:12:02.790 --> 00:12:02.800 align:start position:0%
+going to have
+ 
+
+00:12:02.800 --> 00:12:05.269 align:start position:0%
+going to have
+children<00:12:03.680><c> of</c><00:12:04.240><c> a</c><00:12:04.320><c> tri</c><00:12:04.560><c> node</c><00:12:04.800><c> right</c><00:12:05.040><c> it</c><00:12:05.120><c> could</c>
+
+00:12:05.269 --> 00:12:05.279 align:start position:0%
+children of a tri node right it could
+ 
+
+00:12:05.279 --> 00:12:07.430 align:start position:0%
+children of a tri node right it could
+have<00:12:05.440><c> children</c><00:12:05.839><c> it</c><00:12:05.920><c> could</c><00:12:06.079><c> have</c><00:12:06.320><c> 26</c><00:12:06.959><c> children</c>
+
+00:12:07.430 --> 00:12:07.440 align:start position:0%
+have children it could have 26 children
+ 
+
+00:12:07.440 --> 00:12:09.269 align:start position:0%
+have children it could have 26 children
+but<00:12:07.680><c> instead</c><00:12:08.000><c> of</c><00:12:08.160><c> doing</c><00:12:08.320><c> an</c><00:12:08.560><c> array</c><00:12:08.959><c> i'm</c><00:12:09.120><c> just</c>
+
+00:12:09.269 --> 00:12:09.279 align:start position:0%
+but instead of doing an array i'm just
+ 
+
+00:12:09.279 --> 00:12:11.110 align:start position:0%
+but instead of doing an array i'm just
+gonna<00:12:09.440><c> do</c><00:12:09.680><c> a</c><00:12:09.920><c> hash</c><00:12:10.240><c> map</c><00:12:10.560><c> because</c><00:12:10.800><c> that's</c>
+
+00:12:11.110 --> 00:12:11.120 align:start position:0%
+gonna do a hash map because that's
+ 
+
+00:12:11.120 --> 00:12:11.750 align:start position:0%
+gonna do a hash map because that's
+easier
+
+00:12:11.750 --> 00:12:11.760 align:start position:0%
+easier
+ 
+
+00:12:11.760 --> 00:12:14.550 align:start position:0%
+easier
+and<00:12:12.240><c> remember</c><00:12:12.720><c> we</c><00:12:12.880><c> can</c><00:12:13.120><c> also</c><00:12:13.680><c> mark</c><00:12:14.160><c> every</c>
+
+00:12:14.550 --> 00:12:14.560 align:start position:0%
+and remember we can also mark every
+ 
+
+00:12:14.560 --> 00:12:15.670 align:start position:0%
+and remember we can also mark every
+single<00:12:15.120><c> node</c>
+
+00:12:15.670 --> 00:12:15.680 align:start position:0%
+single node
+ 
+
+00:12:15.680 --> 00:12:18.550 align:start position:0%
+single node
+as<00:12:16.000><c> if</c><00:12:16.240><c> it</c><00:12:16.399><c> was</c><00:12:16.720><c> the</c><00:12:16.959><c> end</c><00:12:17.200><c> of</c><00:12:17.360><c> a</c><00:12:17.440><c> word</c><00:12:18.160><c> i'm</c><00:12:18.320><c> gonna</c>
+
+00:12:18.550 --> 00:12:18.560 align:start position:0%
+as if it was the end of a word i'm gonna
+ 
+
+00:12:18.560 --> 00:12:18.949 align:start position:0%
+as if it was the end of a word i'm gonna
+say
+
+00:12:18.949 --> 00:12:18.959 align:start position:0%
+say
+ 
+
+00:12:18.959 --> 00:12:22.389 align:start position:0%
+say
+end<00:12:19.519><c> of</c><00:12:20.240><c> word</c><00:12:21.279><c> is</c><00:12:21.440><c> gonna</c><00:12:21.600><c> be</c><00:12:21.839><c> a</c><00:12:21.920><c> variable</c>
+
+00:12:22.389 --> 00:12:22.399 align:start position:0%
+end of word is gonna be a variable
+ 
+
+00:12:22.399 --> 00:12:24.150 align:start position:0%
+end of word is gonna be a variable
+initially<00:12:22.800><c> it's</c><00:12:22.959><c> gonna</c><00:12:23.120><c> be</c><00:12:23.360><c> false</c>
+
+00:12:24.150 --> 00:12:24.160 align:start position:0%
+initially it's gonna be false
+ 
+
+00:12:24.160 --> 00:12:26.069 align:start position:0%
+initially it's gonna be false
+but<00:12:24.320><c> we</c><00:12:24.480><c> could</c><00:12:24.720><c> set</c><00:12:24.959><c> it</c><00:12:25.040><c> to</c><00:12:25.279><c> true</c><00:12:25.760><c> if</c><00:12:25.920><c> the</c>
+
+00:12:26.069 --> 00:12:26.079 align:start position:0%
+but we could set it to true if the
+ 
+
+00:12:26.079 --> 00:12:27.910 align:start position:0%
+but we could set it to true if the
+character<00:12:26.560><c> was</c><00:12:26.800><c> the</c><00:12:26.959><c> end</c><00:12:27.120><c> of</c><00:12:27.279><c> a</c><00:12:27.360><c> word</c>
+
+00:12:27.910 --> 00:12:27.920 align:start position:0%
+character was the end of a word
+ 
+
+00:12:27.920 --> 00:12:29.990 align:start position:0%
+character was the end of a word
+notice<00:12:28.320><c> how</c><00:12:28.480><c> we're</c><00:12:28.720><c> not</c><00:12:29.040><c> actually</c><00:12:29.519><c> storing</c>
+
+00:12:29.990 --> 00:12:30.000 align:start position:0%
+notice how we're not actually storing
+ 
+
+00:12:30.000 --> 00:12:31.590 align:start position:0%
+notice how we're not actually storing
+the<00:12:30.160><c> character</c><00:12:30.720><c> itself</c>
+
+00:12:31.590 --> 00:12:31.600 align:start position:0%
+the character itself
+ 
+
+00:12:31.600 --> 00:12:34.389 align:start position:0%
+the character itself
+in<00:12:31.680><c> the</c><00:12:31.920><c> try</c><00:12:32.240><c> node</c><00:12:32.639><c> that's</c><00:12:32.959><c> gonna</c><00:12:33.120><c> be</c><00:12:33.360><c> implicit</c>
+
+00:12:34.389 --> 00:12:34.399 align:start position:0%
+in the try node that's gonna be implicit
+ 
+
+00:12:34.399 --> 00:12:35.190 align:start position:0%
+in the try node that's gonna be implicit
+from<00:12:34.720><c> the</c>
+
+00:12:35.190 --> 00:12:35.200 align:start position:0%
+from the
+ 
+
+00:12:35.200 --> 00:12:37.829 align:start position:0%
+from the
+hashmap<00:12:36.000><c> from</c><00:12:36.160><c> this</c><00:12:36.320><c> hashmap</c><00:12:36.880><c> so</c><00:12:37.200><c> if</c><00:12:37.360><c> we</c><00:12:37.519><c> were</c>
+
+00:12:37.829 --> 00:12:37.839 align:start position:0%
+hashmap from this hashmap so if we were
+ 
+
+00:12:37.839 --> 00:12:38.629 align:start position:0%
+hashmap from this hashmap so if we were
+adding<00:12:38.320><c> a</c>
+
+00:12:38.629 --> 00:12:38.639 align:start position:0%
+adding a
+ 
+
+00:12:38.639 --> 00:12:40.790 align:start position:0%
+adding a
+let's<00:12:38.800><c> say</c><00:12:39.040><c> a</c><00:12:39.120><c> character</c><00:12:39.760><c> a</c><00:12:40.160><c> a</c><00:12:40.320><c> lowercase</c>
+
+00:12:40.790 --> 00:12:40.800 align:start position:0%
+let's say a character a a lowercase
+ 
+
+00:12:40.800 --> 00:12:42.150 align:start position:0%
+let's say a character a a lowercase
+character<00:12:41.200><c> a</c><00:12:41.360><c> we</c><00:12:41.519><c> would</c><00:12:41.760><c> say</c>
+
+00:12:42.150 --> 00:12:42.160 align:start position:0%
+character a we would say
+ 
+
+00:12:42.160 --> 00:12:45.110 align:start position:0%
+character a we would say
+to<00:12:42.399><c> children</c><00:12:43.040><c> we</c><00:12:43.200><c> would</c><00:12:43.360><c> say</c><00:12:43.600><c> children</c><00:12:44.800><c> for</c>
+
+00:12:45.110 --> 00:12:45.120 align:start position:0%
+to children we would say children for
+ 
+
+00:12:45.120 --> 00:12:45.990 align:start position:0%
+to children we would say children for
+character<00:12:45.600><c> a</c>
+
+00:12:45.990 --> 00:12:46.000 align:start position:0%
+character a
+ 
+
+00:12:46.000 --> 00:12:48.069 align:start position:0%
+character a
+is<00:12:46.160><c> the</c><00:12:46.399><c> key</c><00:12:46.959><c> and</c><00:12:47.120><c> we're</c><00:12:47.279><c> going</c><00:12:47.360><c> to</c><00:12:47.519><c> create</c><00:12:47.839><c> a</c>
+
+00:12:48.069 --> 00:12:48.079 align:start position:0%
+is the key and we're going to create a
+ 
+
+00:12:48.079 --> 00:12:49.350 align:start position:0%
+is the key and we're going to create a
+new<00:12:48.399><c> tri</c><00:12:48.800><c> node</c>
+
+00:12:49.350 --> 00:12:49.360 align:start position:0%
+new tri node
+ 
+
+00:12:49.360 --> 00:12:51.750 align:start position:0%
+new tri node
+for<00:12:49.600><c> that</c><00:12:50.079><c> character</c><00:12:50.720><c> a</c><00:12:51.040><c> right</c><00:12:51.200><c> so</c><00:12:51.360><c> that's</c><00:12:51.600><c> how</c>
+
+00:12:51.750 --> 00:12:51.760 align:start position:0%
+for that character a right so that's how
+ 
+
+00:12:51.760 --> 00:12:53.030 align:start position:0%
+for that character a right so that's how
+we're<00:12:51.920><c> going</c><00:12:52.000><c> to</c><00:12:52.079><c> be</c><00:12:52.240><c> doing</c><00:12:52.560><c> it</c><00:12:52.720><c> that's</c><00:12:52.959><c> how</c>
+
+00:12:53.030 --> 00:12:53.040 align:start position:0%
+we're going to be doing it that's how
+ 
+
+00:12:53.040 --> 00:12:54.550 align:start position:0%
+we're going to be doing it that's how
+we're<00:12:53.200><c> going</c><00:12:53.279><c> to</c><00:12:53.360><c> be</c><00:12:53.519><c> inserting</c><00:12:54.240><c> a</c>
+
+00:12:54.550 --> 00:12:54.560 align:start position:0%
+we're going to be inserting a
+ 
+
+00:12:54.560 --> 00:12:57.750 align:start position:0%
+we're going to be inserting a
+node<00:12:55.279><c> so</c><00:12:55.440><c> that's</c><00:12:55.760><c> our</c><00:12:56.000><c> entire</c><00:12:56.880><c> trinode</c>
+
+00:12:57.750 --> 00:12:57.760 align:start position:0%
+node so that's our entire trinode
+ 
+
+00:12:57.760 --> 00:13:00.870 align:start position:0%
+node so that's our entire trinode
+class<00:12:58.240><c> now</c><00:12:58.399><c> let's</c><00:12:58.639><c> actually</c><00:12:58.959><c> get</c><00:12:59.279><c> into</c><00:13:00.160><c> the</c>
+
+00:13:00.870 --> 00:13:00.880 align:start position:0%
+class now let's actually get into the
+ 
+
+00:13:00.880 --> 00:13:02.629 align:start position:0%
+class now let's actually get into the
+try<00:13:01.279><c> class</c><00:13:01.600><c> so</c><00:13:01.920><c> the</c><00:13:02.079><c> first</c><00:13:02.240><c> thing</c><00:13:02.399><c> we're</c><00:13:02.560><c> going</c>
+
+00:13:02.629 --> 00:13:02.639 align:start position:0%
+try class so the first thing we're going
+ 
+
+00:13:02.639 --> 00:13:04.470 align:start position:0%
+try class so the first thing we're going
+to<00:13:02.720><c> do</c><00:13:02.880><c> is</c><00:13:03.040><c> initialize</c><00:13:03.680><c> this</c><00:13:03.920><c> so</c><00:13:04.079><c> let's</c><00:13:04.320><c> get</c>
+
+00:13:04.470 --> 00:13:04.480 align:start position:0%
+to do is initialize this so let's get
+ 
+
+00:13:04.480 --> 00:13:06.389 align:start position:0%
+to do is initialize this so let's get
+rid<00:13:04.720><c> of</c><00:13:04.800><c> this</c><00:13:05.040><c> comment</c><00:13:05.680><c> and</c>
+
+00:13:06.389 --> 00:13:06.399 align:start position:0%
+rid of this comment and
+ 
+
+00:13:06.399 --> 00:13:08.949 align:start position:0%
+rid of this comment and
+for<00:13:07.120><c> initializing</c><00:13:07.680><c> this</c><00:13:08.160><c> all</c><00:13:08.399><c> we're</c><00:13:08.720><c> really</c>
+
+00:13:08.949 --> 00:13:08.959 align:start position:0%
+for initializing this all we're really
+ 
+
+00:13:08.959 --> 00:13:09.910 align:start position:0%
+for initializing this all we're really
+going<00:13:09.040><c> to</c><00:13:09.120><c> need</c><00:13:09.440><c> is</c><00:13:09.680><c> a</c>
+
+00:13:09.910 --> 00:13:09.920 align:start position:0%
+going to need is a
+ 
+
+00:13:09.920 --> 00:13:12.629 align:start position:0%
+going to need is a
+root<00:13:10.320><c> node</c><00:13:10.880><c> and</c><00:13:11.120><c> we</c><00:13:11.279><c> can</c><00:13:11.600><c> get</c><00:13:11.920><c> the</c><00:13:12.160><c> rest</c><00:13:12.399><c> of</c><00:13:12.480><c> the</c>
+
+00:13:12.629 --> 00:13:12.639 align:start position:0%
+root node and we can get the rest of the
+ 
+
+00:13:12.639 --> 00:13:13.110 align:start position:0%
+root node and we can get the rest of the
+nodes
+
+00:13:13.110 --> 00:13:13.120 align:start position:0%
+nodes
+ 
+
+00:13:13.120 --> 00:13:14.710 align:start position:0%
+nodes
+from<00:13:13.440><c> that</c><00:13:13.680><c> root</c><00:13:13.920><c> so</c><00:13:14.079><c> we're</c><00:13:14.160><c> going</c><00:13:14.240><c> to</c><00:13:14.399><c> create</c>
+
+00:13:14.710 --> 00:13:14.720 align:start position:0%
+from that root so we're going to create
+ 
+
+00:13:14.720 --> 00:13:16.310 align:start position:0%
+from that root so we're going to create
+a<00:13:14.880><c> root</c><00:13:15.279><c> tri</c><00:13:15.680><c> node</c>
+
+00:13:16.310 --> 00:13:16.320 align:start position:0%
+a root tri node
+ 
+
+00:13:16.320 --> 00:13:17.590 align:start position:0%
+a root tri node
+and<00:13:16.480><c> that's</c><00:13:16.800><c> it</c><00:13:16.880><c> that's</c><00:13:17.200><c> all</c><00:13:17.279><c> we're</c><00:13:17.440><c> going</c><00:13:17.519><c> to</c>
+
+00:13:17.590 --> 00:13:17.600 align:start position:0%
+and that's it that's all we're going to
+ 
+
+00:13:17.600 --> 00:13:20.550 align:start position:0%
+and that's it that's all we're going to
+do<00:13:17.839><c> for</c><00:13:18.079><c> the</c><00:13:18.240><c> constructor</c><00:13:19.279><c> and</c><00:13:19.920><c> once</c><00:13:20.160><c> the</c><00:13:20.320><c> try</c>
+
+00:13:20.550 --> 00:13:20.560 align:start position:0%
+do for the constructor and once the try
+ 
+
+00:13:20.560 --> 00:13:22.550 align:start position:0%
+do for the constructor and once the try
+note<00:13:20.800><c> is</c><00:13:20.959><c> created</c><00:13:21.440><c> we</c><00:13:21.600><c> basically</c><00:13:22.079><c> have</c><00:13:22.320><c> an</c>
+
+00:13:22.550 --> 00:13:22.560 align:start position:0%
+note is created we basically have an
+ 
+
+00:13:22.560 --> 00:13:24.949 align:start position:0%
+note is created we basically have an
+empty<00:13:23.040><c> tree</c><00:13:23.360><c> even</c><00:13:23.600><c> though</c><00:13:23.760><c> we</c><00:13:24.000><c> have</c><00:13:24.320><c> a</c><00:13:24.560><c> root</c>
+
+00:13:24.949 --> 00:13:24.959 align:start position:0%
+empty tree even though we have a root
+ 
+
+00:13:24.959 --> 00:13:26.550 align:start position:0%
+empty tree even though we have a root
+it's<00:13:25.360><c> empty</c><00:13:25.680><c> because</c><00:13:25.920><c> it</c><00:13:26.000><c> does</c>
+
+00:13:26.550 --> 00:13:26.560 align:start position:0%
+it's empty because it does
+ 
+
+00:13:26.560 --> 00:13:28.389 align:start position:0%
+it's empty because it does
+it<00:13:26.720><c> does</c><00:13:26.880><c> not</c><00:13:27.040><c> have</c><00:13:27.200><c> any</c><00:13:27.440><c> children</c><00:13:28.000><c> so</c><00:13:28.240><c> we</c>
+
+00:13:28.389 --> 00:13:28.399 align:start position:0%
+it does not have any children so we
+ 
+
+00:13:28.399 --> 00:13:30.069 align:start position:0%
+it does not have any children so we
+technically<00:13:28.880><c> have</c><00:13:29.120><c> not</c><00:13:29.360><c> inserted</c>
+
+00:13:30.069 --> 00:13:30.079 align:start position:0%
+technically have not inserted
+ 
+
+00:13:30.079 --> 00:13:32.790 align:start position:0%
+technically have not inserted
+any<00:13:30.399><c> words</c><00:13:30.880><c> yet</c><00:13:31.360><c> but</c><00:13:31.600><c> now</c><00:13:31.760><c> let's</c><00:13:32.079><c> implement</c>
+
+00:13:32.790 --> 00:13:32.800 align:start position:0%
+any words yet but now let's implement
+ 
+
+00:13:32.800 --> 00:13:33.110 align:start position:0%
+any words yet but now let's implement
+the
+
+00:13:33.110 --> 00:13:33.120 align:start position:0%
+the
+ 
+
+00:13:33.120 --> 00:13:36.310 align:start position:0%
+the
+insert<00:13:33.839><c> word</c><00:13:34.560><c> method</c><00:13:35.200><c> this</c><00:13:35.519><c> method</c>
+
+00:13:36.310 --> 00:13:36.320 align:start position:0%
+insert word method this method
+ 
+
+00:13:36.320 --> 00:13:37.509 align:start position:0%
+insert word method this method
+for<00:13:36.480><c> this</c><00:13:36.639><c> method</c><00:13:36.959><c> we</c><00:13:37.120><c> are</c><00:13:37.200><c> gonna</c><00:13:37.360><c> have</c><00:13:37.440><c> to</c>
+
+00:13:37.509 --> 00:13:37.519 align:start position:0%
+for this method we are gonna have to
+ 
+
+00:13:37.519 --> 00:13:39.670 align:start position:0%
+for this method we are gonna have to
+iterate<00:13:37.920><c> through</c><00:13:38.160><c> every</c><00:13:38.480><c> single</c><00:13:38.959><c> character</c>
+
+00:13:39.670 --> 00:13:39.680 align:start position:0%
+iterate through every single character
+ 
+
+00:13:39.680 --> 00:13:41.910 align:start position:0%
+iterate through every single character
+in<00:13:39.839><c> the</c><00:13:40.079><c> word</c><00:13:40.720><c> so</c><00:13:40.959><c> we're</c><00:13:41.120><c> gonna</c><00:13:41.360><c> initialize</c>
+
+00:13:41.910 --> 00:13:41.920 align:start position:0%
+in the word so we're gonna initialize
+ 
+
+00:13:41.920 --> 00:13:43.269 align:start position:0%
+in the word so we're gonna initialize
+our<00:13:42.079><c> self</c><00:13:42.560><c> current</c>
+
+00:13:43.269 --> 00:13:43.279 align:start position:0%
+our self current
+ 
+
+00:13:43.279 --> 00:13:44.710 align:start position:0%
+our self current
+is<00:13:43.440><c> gonna</c><00:13:43.600><c> be</c><00:13:43.760><c> set</c><00:13:44.000><c> to</c><00:13:44.079><c> the</c><00:13:44.240><c> root</c><00:13:44.399><c> so</c><00:13:44.560><c> we're</c>
+
+00:13:44.710 --> 00:13:44.720 align:start position:0%
+is gonna be set to the root so we're
+ 
+
+00:13:44.720 --> 00:13:46.710 align:start position:0%
+is gonna be set to the root so we're
+gonna<00:13:44.959><c> initially</c><00:13:45.519><c> start</c><00:13:45.839><c> at</c><00:13:46.000><c> the</c><00:13:46.240><c> root</c><00:13:46.560><c> right</c>
+
+00:13:46.710 --> 00:13:46.720 align:start position:0%
+gonna initially start at the root right
+ 
+
+00:13:46.720 --> 00:13:47.670 align:start position:0%
+gonna initially start at the root right
+and<00:13:46.800><c> then</c><00:13:46.959><c> we're</c><00:13:47.120><c> gonna</c><00:13:47.360><c> go</c>
+
+00:13:47.670 --> 00:13:47.680 align:start position:0%
+and then we're gonna go
+ 
+
+00:13:47.680 --> 00:13:50.069 align:start position:0%
+and then we're gonna go
+character<00:13:48.160><c> by</c><00:13:48.399><c> character</c><00:13:49.040><c> in</c><00:13:49.279><c> the</c><00:13:49.440><c> word</c><00:13:49.920><c> and</c>
+
+00:13:50.069 --> 00:13:50.079 align:start position:0%
+character by character in the word and
+ 
+
+00:13:50.079 --> 00:13:51.910 align:start position:0%
+character by character in the word and
+for<00:13:50.399><c> every</c><00:13:50.800><c> single</c><00:13:51.120><c> character</c><00:13:51.519><c> we're</c><00:13:51.680><c> just</c>
+
+00:13:51.910 --> 00:13:51.920 align:start position:0%
+for every single character we're just
+ 
+
+00:13:51.920 --> 00:13:53.590 align:start position:0%
+for every single character we're just
+gonna<00:13:52.160><c> check</c><00:13:52.480><c> two</c><00:13:52.800><c> things</c>
+
+00:13:53.590 --> 00:13:53.600 align:start position:0%
+gonna check two things
+ 
+
+00:13:53.600 --> 00:13:55.829 align:start position:0%
+gonna check two things
+does<00:13:54.000><c> the</c><00:13:54.160><c> word</c><00:13:54.560><c> all</c><00:13:54.880><c> does</c><00:13:55.040><c> this</c><00:13:55.279><c> character</c>
+
+00:13:55.829 --> 00:13:55.839 align:start position:0%
+does the word all does this character
+ 
+
+00:13:55.839 --> 00:13:57.430 align:start position:0%
+does the word all does this character
+already<00:13:56.399><c> exist</c>
+
+00:13:57.430 --> 00:13:57.440 align:start position:0%
+already exist
+ 
+
+00:13:57.440 --> 00:13:59.670 align:start position:0%
+already exist
+if<00:13:57.680><c> it</c><00:13:58.079><c> doesn't</c><00:13:58.480><c> already</c><00:13:58.880><c> exist</c><00:13:59.199><c> so</c><00:13:59.440><c> if</c><00:13:59.519><c> this</c>
+
+00:13:59.670 --> 00:13:59.680 align:start position:0%
+if it doesn't already exist so if this
+ 
+
+00:13:59.680 --> 00:14:00.470 align:start position:0%
+if it doesn't already exist so if this
+character<00:14:00.160><c> is</c>
+
+00:14:00.470 --> 00:14:00.480 align:start position:0%
+character is
+ 
+
+00:14:00.480 --> 00:14:03.509 align:start position:0%
+character is
+not<00:14:01.040><c> in</c><00:14:01.680><c> the</c><00:14:02.000><c> current</c><00:14:02.639><c> nodes</c>
+
+00:14:03.509 --> 00:14:03.519 align:start position:0%
+not in the current nodes
+ 
+
+00:14:03.519 --> 00:14:06.150 align:start position:0%
+not in the current nodes
+dot<00:14:04.000><c> children</c><00:14:04.800><c> hash</c><00:14:05.120><c> map</c><00:14:05.440><c> right</c><00:14:05.680><c> so</c><00:14:05.839><c> if</c><00:14:06.000><c> the</c>
+
+00:14:06.150 --> 00:14:06.160 align:start position:0%
+dot children hash map right so if the
+ 
+
+00:14:06.160 --> 00:14:06.790 align:start position:0%
+dot children hash map right so if the
+current
+
+00:14:06.790 --> 00:14:06.800 align:start position:0%
+current
+ 
+
+00:14:06.800 --> 00:14:09.670 align:start position:0%
+current
+if<00:14:06.959><c> this</c><00:14:07.199><c> character</c><00:14:07.920><c> is</c><00:14:08.160><c> not</c><00:14:08.560><c> in</c><00:14:08.800><c> our</c><00:14:08.959><c> hash</c><00:14:09.199><c> map</c>
+
+00:14:09.670 --> 00:14:09.680 align:start position:0%
+if this character is not in our hash map
+ 
+
+00:14:09.680 --> 00:14:10.470 align:start position:0%
+if this character is not in our hash map
+yet
+
+00:14:10.470 --> 00:14:10.480 align:start position:0%
+yet
+ 
+
+00:14:10.480 --> 00:14:12.710 align:start position:0%
+yet
+that<00:14:10.720><c> means</c><00:14:11.040><c> it</c><00:14:11.279><c> hasn't</c><00:14:11.600><c> been</c><00:14:11.920><c> inserted</c><00:14:12.480><c> yet</c>
+
+00:14:12.710 --> 00:14:12.720 align:start position:0%
+that means it hasn't been inserted yet
+ 
+
+00:14:12.720 --> 00:14:13.990 align:start position:0%
+that means it hasn't been inserted yet
+so<00:14:12.880><c> what</c><00:14:13.040><c> are</c><00:14:13.199><c> we</c><00:14:13.279><c> going</c><00:14:13.360><c> to</c><00:14:13.440><c> do</c><00:14:13.680><c> we're</c><00:14:13.839><c> going</c>
+
+00:14:13.990 --> 00:14:14.000 align:start position:0%
+so what are we going to do we're going
+ 
+
+00:14:14.000 --> 00:14:16.069 align:start position:0%
+so what are we going to do we're going
+to<00:14:14.079><c> create</c><00:14:14.560><c> a</c><00:14:14.639><c> try</c><00:14:14.959><c> node</c><00:14:15.279><c> for</c><00:14:15.440><c> this</c><00:14:15.680><c> character</c>
+
+00:14:16.069 --> 00:14:16.079 align:start position:0%
+to create a try node for this character
+ 
+
+00:14:16.079 --> 00:14:17.350 align:start position:0%
+to create a try node for this character
+so<00:14:16.399><c> cur</c>
+
+00:14:17.350 --> 00:14:17.360 align:start position:0%
+so cur
+ 
+
+00:14:17.360 --> 00:14:20.949 align:start position:0%
+so cur
+dot<00:14:18.079><c> children</c><00:14:19.839><c> and</c><00:14:20.000><c> the</c><00:14:20.240><c> key</c><00:14:20.480><c> value</c><00:14:20.800><c> we're</c>
+
+00:14:20.949 --> 00:14:20.959 align:start position:0%
+dot children and the key value we're
+ 
+
+00:14:20.959 --> 00:14:21.430 align:start position:0%
+dot children and the key value we're
+going<00:14:21.040><c> to</c><00:14:21.120><c> use</c>
+
+00:14:21.430 --> 00:14:21.440 align:start position:0%
+going to use
+ 
+
+00:14:21.440 --> 00:14:23.990 align:start position:0%
+going to use
+is<00:14:21.680><c> the</c><00:14:21.839><c> character</c><00:14:22.800><c> and</c><00:14:23.440><c> then</c><00:14:23.600><c> we're</c><00:14:23.760><c> going</c><00:14:23.920><c> to</c>
+
+00:14:23.990 --> 00:14:24.000 align:start position:0%
+is the character and then we're going to
+ 
+
+00:14:24.000 --> 00:14:25.350 align:start position:0%
+is the character and then we're going to
+create<00:14:24.480><c> a</c><00:14:24.720><c> new</c>
+
+00:14:25.350 --> 00:14:25.360 align:start position:0%
+create a new
+ 
+
+00:14:25.360 --> 00:14:27.670 align:start position:0%
+create a new
+tri<00:14:25.680><c> node</c><00:14:26.320><c> so</c><00:14:26.560><c> this</c><00:14:26.880><c> is</c><00:14:27.040><c> how</c><00:14:27.279><c> we</c><00:14:27.440><c> are</c><00:14:27.519><c> going</c><00:14:27.600><c> to</c>
+
+00:14:27.670 --> 00:14:27.680 align:start position:0%
+tri node so this is how we are going to
+ 
+
+00:14:27.680 --> 00:14:29.350 align:start position:0%
+tri node so this is how we are going to
+be<00:14:28.000><c> inserting</c><00:14:28.639><c> characters</c>
+
+00:14:29.350 --> 00:14:29.360 align:start position:0%
+be inserting characters
+ 
+
+00:14:29.360 --> 00:14:31.350 align:start position:0%
+be inserting characters
+to<00:14:29.680><c> children</c><00:14:30.320><c> we're</c><00:14:30.480><c> going</c><00:14:30.639><c> to</c><00:14:30.720><c> use</c><00:14:31.199><c> the</c>
+
+00:14:31.350 --> 00:14:31.360 align:start position:0%
+to children we're going to use the
+ 
+
+00:14:31.360 --> 00:14:33.590 align:start position:0%
+to children we're going to use the
+character<00:14:31.920><c> as</c><00:14:32.240><c> a</c><00:14:32.399><c> key</c><00:14:32.720><c> value</c><00:14:33.120><c> and</c><00:14:33.199><c> then</c><00:14:33.440><c> we're</c>
+
+00:14:33.590 --> 00:14:33.600 align:start position:0%
+character as a key value and then we're
+ 
+
+00:14:33.600 --> 00:14:34.470 align:start position:0%
+character as a key value and then we're
+going<00:14:33.680><c> to</c><00:14:33.839><c> create</c>
+
+00:14:34.470 --> 00:14:34.480 align:start position:0%
+going to create
+ 
+
+00:14:34.480 --> 00:14:37.269 align:start position:0%
+going to create
+a<00:14:34.880><c> empty</c><00:14:35.279><c> tri</c><00:14:35.600><c> node</c><00:14:36.160><c> and</c><00:14:36.320><c> we're</c><00:14:36.639><c> only</c><00:14:37.040><c> doing</c>
+
+00:14:37.269 --> 00:14:37.279 align:start position:0%
+a empty tri node and we're only doing
+ 
+
+00:14:37.279 --> 00:14:37.670 align:start position:0%
+a empty tri node and we're only doing
+that
+
+00:14:37.670 --> 00:14:37.680 align:start position:0%
+that
+ 
+
+00:14:37.680 --> 00:14:40.069 align:start position:0%
+that
+if<00:14:37.920><c> the</c><00:14:38.079><c> character</c><00:14:38.639><c> doesn't</c><00:14:39.040><c> already</c><00:14:39.519><c> exist</c>
+
+00:14:40.069 --> 00:14:40.079 align:start position:0%
+if the character doesn't already exist
+ 
+
+00:14:40.079 --> 00:14:42.389 align:start position:0%
+if the character doesn't already exist
+if<00:14:40.320><c> it</c><00:14:40.560><c> does</c><00:14:40.959><c> already</c><00:14:41.440><c> exist</c><00:14:41.839><c> then</c><00:14:42.000><c> we</c><00:14:42.160><c> can</c>
+
+00:14:42.389 --> 00:14:42.399 align:start position:0%
+if it does already exist then we can
+ 
+
+00:14:42.399 --> 00:14:44.389 align:start position:0%
+if it does already exist then we can
+skip<00:14:42.800><c> that</c><00:14:43.120><c> step</c><00:14:43.519><c> and</c><00:14:43.839><c> just</c>
+
+00:14:44.389 --> 00:14:44.399 align:start position:0%
+skip that step and just
+ 
+
+00:14:44.399 --> 00:14:47.430 align:start position:0%
+skip that step and just
+say<00:14:45.120><c> that</c><00:14:45.600><c> current</c><00:14:46.000><c> is</c><00:14:46.160><c> going</c><00:14:46.320><c> to</c><00:14:46.399><c> be</c><00:14:46.959><c> set</c>
+
+00:14:47.430 --> 00:14:47.440 align:start position:0%
+say that current is going to be set
+ 
+
+00:14:47.440 --> 00:14:50.629 align:start position:0%
+say that current is going to be set
+to<00:14:47.760><c> that</c><00:14:48.160><c> child</c><00:14:48.959><c> right</c><00:14:49.279><c> so</c><00:14:49.440><c> if</c><00:14:49.680><c> that</c><00:14:50.160><c> character</c>
+
+00:14:50.629 --> 00:14:50.639 align:start position:0%
+to that child right so if that character
+ 
+
+00:14:50.639 --> 00:14:52.150 align:start position:0%
+to that child right so if that character
+already<00:14:51.040><c> existed</c><00:14:51.440><c> then</c><00:14:51.600><c> we</c><00:14:51.760><c> can</c><00:14:51.839><c> just</c>
+
+00:14:52.150 --> 00:14:52.160 align:start position:0%
+already existed then we can just
+ 
+
+00:14:52.160 --> 00:14:54.949 align:start position:0%
+already existed then we can just
+update<00:14:52.639><c> ker</c><00:14:53.040><c> and</c><00:14:53.360><c> move</c><00:14:53.839><c> to</c><00:14:54.000><c> that</c><00:14:54.399><c> character</c>
+
+00:14:54.949 --> 00:14:54.959 align:start position:0%
+update ker and move to that character
+ 
+
+00:14:54.959 --> 00:14:56.069 align:start position:0%
+update ker and move to that character
+and<00:14:55.040><c> then</c><00:14:55.279><c> continue</c>
+
+00:14:56.069 --> 00:14:56.079 align:start position:0%
+and then continue
+ 
+
+00:14:56.079 --> 00:14:57.509 align:start position:0%
+and then continue
+our<00:14:56.240><c> for</c><00:14:56.560><c> loop</c><00:14:56.800><c> right</c><00:14:56.959><c> so</c><00:14:57.120><c> we're</c><00:14:57.279><c> going</c><00:14:57.360><c> to</c><00:14:57.440><c> do</c>
+
+00:14:57.509 --> 00:14:57.519 align:start position:0%
+our for loop right so we're going to do
+ 
+
+00:14:57.519 --> 00:14:59.590 align:start position:0%
+our for loop right so we're going to do
+this<00:14:57.680><c> for</c><00:14:57.920><c> every</c><00:14:58.240><c> character</c><00:14:58.800><c> in</c><00:14:58.880><c> the</c><00:14:59.120><c> word</c>
+
+00:14:59.590 --> 00:14:59.600 align:start position:0%
+this for every character in the word
+ 
+
+00:14:59.600 --> 00:15:02.310 align:start position:0%
+this for every character in the word
+and<00:14:59.760><c> then</c><00:15:00.240><c> by</c><00:15:00.480><c> the</c><00:15:00.800><c> end</c><00:15:01.040><c> of</c><00:15:01.120><c> this</c><00:15:01.519><c> loop</c><00:15:02.000><c> whether</c>
+
+00:15:02.310 --> 00:15:02.320 align:start position:0%
+and then by the end of this loop whether
+ 
+
+00:15:02.320 --> 00:15:03.430 align:start position:0%
+and then by the end of this loop whether
+we<00:15:02.480><c> have</c><00:15:02.560><c> to</c><00:15:02.800><c> create</c>
+
+00:15:03.430 --> 00:15:03.440 align:start position:0%
+we have to create
+ 
+
+00:15:03.440 --> 00:15:06.230 align:start position:0%
+we have to create
+every<00:15:03.839><c> node</c><00:15:04.320><c> or</c><00:15:04.560><c> the</c><00:15:04.800><c> nodes</c><00:15:05.279><c> already</c><00:15:05.760><c> exist</c>
+
+00:15:06.230 --> 00:15:06.240 align:start position:0%
+every node or the nodes already exist
+ 
+
+00:15:06.240 --> 00:15:06.790 align:start position:0%
+every node or the nodes already exist
+for<00:15:06.480><c> us</c>
+
+00:15:06.790 --> 00:15:06.800 align:start position:0%
+for us
+ 
+
+00:15:06.800 --> 00:15:08.629 align:start position:0%
+for us
+for<00:15:07.040><c> this</c><00:15:07.279><c> word</c><00:15:07.600><c> right</c><00:15:07.920><c> let's</c><00:15:08.160><c> say</c><00:15:08.320><c> it</c><00:15:08.399><c> was</c>
+
+00:15:08.629 --> 00:15:08.639 align:start position:0%
+for this word right let's say it was
+ 
+
+00:15:08.639 --> 00:15:09.829 align:start position:0%
+for this word right let's say it was
+apple<00:15:09.040><c> or</c><00:15:09.199><c> something</c>
+
+00:15:09.829 --> 00:15:09.839 align:start position:0%
+apple or something
+ 
+
+00:15:09.839 --> 00:15:11.910 align:start position:0%
+apple or something
+the<00:15:10.160><c> characters</c><00:15:10.639><c> already</c><00:15:11.040><c> exist</c><00:15:11.360><c> or</c><00:15:11.519><c> we</c><00:15:11.680><c> just</c>
+
+00:15:11.910 --> 00:15:11.920 align:start position:0%
+the characters already exist or we just
+ 
+
+00:15:11.920 --> 00:15:12.870 align:start position:0%
+the characters already exist or we just
+created<00:15:12.399><c> them</c>
+
+00:15:12.870 --> 00:15:12.880 align:start position:0%
+created them
+ 
+
+00:15:12.880 --> 00:15:15.509 align:start position:0%
+created them
+now<00:15:13.440><c> current</c><00:15:13.920><c> is</c><00:15:14.079><c> set</c><00:15:14.320><c> to</c><00:15:14.480><c> the</c><00:15:14.720><c> last</c><00:15:15.040><c> character</c>
+
+00:15:15.509 --> 00:15:15.519 align:start position:0%
+now current is set to the last character
+ 
+
+00:15:15.519 --> 00:15:16.230 align:start position:0%
+now current is set to the last character
+of<00:15:15.600><c> the</c><00:15:15.760><c> word</c>
+
+00:15:16.230 --> 00:15:16.240 align:start position:0%
+of the word
+ 
+
+00:15:16.240 --> 00:15:18.550 align:start position:0%
+of the word
+so<00:15:16.480><c> what</c><00:15:16.720><c> are</c><00:15:16.800><c> we</c><00:15:16.959><c> going</c><00:15:17.040><c> to</c><00:15:17.279><c> do</c><00:15:17.839><c> to</c><00:15:18.079><c> current</c>
+
+00:15:18.550 --> 00:15:18.560 align:start position:0%
+so what are we going to do to current
+ 
+
+00:15:18.560 --> 00:15:19.269 align:start position:0%
+so what are we going to do to current
+well<00:15:18.720><c> we're</c><00:15:18.880><c> going</c><00:15:18.959><c> to</c>
+
+00:15:19.269 --> 00:15:19.279 align:start position:0%
+well we're going to
+ 
+
+00:15:19.279 --> 00:15:21.590 align:start position:0%
+well we're going to
+mark<00:15:19.600><c> it</c><00:15:20.079><c> as</c><00:15:20.320><c> the</c><00:15:20.560><c> end</c><00:15:20.800><c> of</c><00:15:20.880><c> a</c><00:15:21.040><c> word</c><00:15:21.279><c> so</c><00:15:21.440><c> we're</c>
+
+00:15:21.590 --> 00:15:21.600 align:start position:0%
+mark it as the end of a word so we're
+ 
+
+00:15:21.600 --> 00:15:23.189 align:start position:0%
+mark it as the end of a word so we're
+going<00:15:21.680><c> to</c><00:15:21.760><c> set</c><00:15:22.079><c> end</c><00:15:22.320><c> of</c><00:15:22.560><c> word</c>
+
+00:15:23.189 --> 00:15:23.199 align:start position:0%
+going to set end of word
+ 
+
+00:15:23.199 --> 00:15:25.829 align:start position:0%
+going to set end of word
+equal<00:15:23.600><c> to</c><00:15:23.839><c> true</c><00:15:24.320><c> now</c><00:15:24.800><c> and</c><00:15:24.959><c> then</c><00:15:25.440><c> we</c><00:15:25.600><c> don't</c>
+
+00:15:25.829 --> 00:15:25.839 align:start position:0%
+equal to true now and then we don't
+ 
+
+00:15:25.839 --> 00:15:27.670 align:start position:0%
+equal to true now and then we don't
+really<00:15:26.079><c> have</c><00:15:26.160><c> to</c><00:15:26.240><c> return</c><00:15:26.720><c> anything</c>
+
+00:15:27.670 --> 00:15:27.680 align:start position:0%
+really have to return anything
+ 
+
+00:15:27.680 --> 00:15:30.550 align:start position:0%
+really have to return anything
+so<00:15:27.839><c> that</c><00:15:28.079><c> was</c><00:15:28.399><c> pretty</c><00:15:28.880><c> simple</c><00:15:29.600><c> right</c><00:15:30.160><c> not</c><00:15:30.399><c> a</c>
+
+00:15:30.550 --> 00:15:30.560 align:start position:0%
+so that was pretty simple right not a
+ 
+
+00:15:30.560 --> 00:15:33.030 align:start position:0%
+so that was pretty simple right not a
+lot<00:15:30.800><c> of</c><00:15:31.040><c> complex</c><00:15:31.600><c> code</c><00:15:31.839><c> we</c><00:15:32.000><c> did</c><00:15:32.240><c> have</c><00:15:32.480><c> to</c>
+
+00:15:33.030 --> 00:15:33.040 align:start position:0%
+lot of complex code we did have to
+ 
+
+00:15:33.040 --> 00:15:35.110 align:start position:0%
+lot of complex code we did have to
+go<00:15:33.199><c> through</c><00:15:33.440><c> every</c><00:15:33.680><c> character</c><00:15:34.320><c> and</c><00:15:34.639><c> we</c><00:15:34.800><c> either</c>
+
+00:15:35.110 --> 00:15:35.120 align:start position:0%
+go through every character and we either
+ 
+
+00:15:35.120 --> 00:15:36.069 align:start position:0%
+go through every character and we either
+created<00:15:35.600><c> nodes</c>
+
+00:15:36.069 --> 00:15:36.079 align:start position:0%
+created nodes
+ 
+
+00:15:36.079 --> 00:15:39.189 align:start position:0%
+created nodes
+or<00:15:36.320><c> just</c><00:15:36.639><c> iterated</c><00:15:37.279><c> through</c><00:15:37.600><c> those</c><00:15:37.920><c> nodes</c><00:15:38.639><c> and</c>
+
+00:15:39.189 --> 00:15:39.199 align:start position:0%
+or just iterated through those nodes and
+ 
+
+00:15:39.199 --> 00:15:41.829 align:start position:0%
+or just iterated through those nodes and
+every<00:15:39.839><c> and</c><00:15:40.000><c> the</c><00:15:40.160><c> remaining</c><00:15:40.720><c> two</c><00:15:40.959><c> functions</c>
+
+00:15:41.829 --> 00:15:41.839 align:start position:0%
+every and the remaining two functions
+ 
+
+00:15:41.839 --> 00:15:43.590 align:start position:0%
+every and the remaining two functions
+search<00:15:42.320><c> and</c><00:15:42.560><c> starts</c><00:15:42.880><c> with</c><00:15:43.120><c> are</c><00:15:43.279><c> actually</c>
+
+00:15:43.590 --> 00:15:43.600 align:start position:0%
+search and starts with are actually
+ 
+
+00:15:43.600 --> 00:15:44.069 align:start position:0%
+search and starts with are actually
+going<00:15:43.680><c> to</c><00:15:43.759><c> be</c>
+
+00:15:44.069 --> 00:15:44.079 align:start position:0%
+going to be
+ 
+
+00:15:44.079 --> 00:15:47.030 align:start position:0%
+going to be
+very<00:15:44.560><c> similar</c><00:15:45.040><c> to</c><00:15:45.199><c> this</c><00:15:45.519><c> insert</c><00:15:46.079><c> function</c><00:15:46.800><c> so</c>
+
+00:15:47.030 --> 00:15:47.040 align:start position:0%
+very similar to this insert function so
+ 
+
+00:15:47.040 --> 00:15:48.389 align:start position:0%
+very similar to this insert function so
+now<00:15:47.199><c> let's</c><00:15:47.440><c> get</c><00:15:47.680><c> started</c><00:15:48.079><c> on</c>
+
+00:15:48.389 --> 00:15:48.399 align:start position:0%
+now let's get started on
+ 
+
+00:15:48.399 --> 00:15:50.949 align:start position:0%
+now let's get started on
+search<00:15:49.120><c> so</c><00:15:49.279><c> we</c><00:15:49.440><c> want</c><00:15:49.680><c> to</c><00:15:49.839><c> search</c><00:15:50.240><c> to</c><00:15:50.399><c> determine</c>
+
+00:15:50.949 --> 00:15:50.959 align:start position:0%
+search so we want to search to determine
+ 
+
+00:15:50.959 --> 00:15:53.110 align:start position:0%
+search so we want to search to determine
+if<00:15:51.199><c> a</c><00:15:51.360><c> word</c><00:15:51.759><c> exists</c><00:15:52.240><c> or</c><00:15:52.399><c> not</c><00:15:52.639><c> so</c>
+
+00:15:53.110 --> 00:15:53.120 align:start position:0%
+if a word exists or not so
+ 
+
+00:15:53.120 --> 00:15:54.470 align:start position:0%
+if a word exists or not so
+just<00:15:53.279><c> like</c><00:15:53.440><c> the</c><00:15:53.600><c> previous</c><00:15:54.000><c> function</c><00:15:54.320><c> we're</c>
+
+00:15:54.470 --> 00:15:54.480 align:start position:0%
+just like the previous function we're
+ 
+
+00:15:54.480 --> 00:15:56.389 align:start position:0%
+just like the previous function we're
+going<00:15:54.560><c> to</c><00:15:54.720><c> start</c><00:15:55.040><c> at</c><00:15:55.199><c> the</c><00:15:55.440><c> root</c><00:15:55.759><c> node</c><00:15:56.079><c> so</c>
+
+00:15:56.389 --> 00:15:56.399 align:start position:0%
+going to start at the root node so
+ 
+
+00:15:56.399 --> 00:15:59.030 align:start position:0%
+going to start at the root node so
+self<00:15:56.720><c> dot</c><00:15:57.519><c> root</c><00:15:58.079><c> and</c><00:15:58.240><c> we're</c><00:15:58.399><c> going</c><00:15:58.480><c> to</c><00:15:58.639><c> go</c>
+
+00:15:59.030 --> 00:15:59.040 align:start position:0%
+self dot root and we're going to go
+ 
+
+00:15:59.040 --> 00:16:00.310 align:start position:0%
+self dot root and we're going to go
+character<00:15:59.440><c> by</c><00:15:59.680><c> character</c>
+
+00:16:00.310 --> 00:16:00.320 align:start position:0%
+character by character
+ 
+
+00:16:00.320 --> 00:16:02.629 align:start position:0%
+character by character
+in<00:16:00.560><c> the</c><00:16:00.720><c> word</c><00:16:01.360><c> and</c><00:16:01.519><c> we're</c><00:16:01.680><c> going</c><00:16:01.839><c> to</c><00:16:02.000><c> check</c><00:16:02.399><c> if</c>
+
+00:16:02.629 --> 00:16:02.639 align:start position:0%
+in the word and we're going to check if
+ 
+
+00:16:02.639 --> 00:16:04.230 align:start position:0%
+in the word and we're going to check if
+this<00:16:02.880><c> character</c><00:16:03.360><c> exists</c>
+
+00:16:04.230 --> 00:16:04.240 align:start position:0%
+this character exists
+ 
+
+00:16:04.240 --> 00:16:07.670 align:start position:0%
+this character exists
+in<00:16:04.639><c> our</c><00:16:04.959><c> tree</c><00:16:05.360><c> if</c><00:16:05.519><c> it</c><00:16:05.759><c> does</c><00:16:06.160><c> not</c><00:16:06.480><c> so</c><00:16:06.639><c> if</c><00:16:06.880><c> c</c>
+
+00:16:07.670 --> 00:16:07.680 align:start position:0%
+in our tree if it does not so if c
+ 
+
+00:16:07.680 --> 00:16:10.949 align:start position:0%
+in our tree if it does not so if c
+not<00:16:08.399><c> in</c><00:16:09.399><c> current.children</c><00:16:10.639><c> if</c><00:16:10.720><c> this</c>
+
+00:16:10.949 --> 00:16:10.959 align:start position:0%
+not in current.children if this
+ 
+
+00:16:10.959 --> 00:16:11.509 align:start position:0%
+not in current.children if this
+character
+
+00:16:11.509 --> 00:16:11.519 align:start position:0%
+character
+ 
+
+00:16:11.519 --> 00:16:14.310 align:start position:0%
+character
+does<00:16:12.079><c> not</c><00:16:12.480><c> exist</c><00:16:13.440><c> then</c><00:16:13.680><c> what</c><00:16:13.839><c> do</c><00:16:13.920><c> we</c><00:16:14.079><c> have</c><00:16:14.160><c> to</c>
+
+00:16:14.310 --> 00:16:14.320 align:start position:0%
+does not exist then what do we have to
+ 
+
+00:16:14.320 --> 00:16:15.829 align:start position:0%
+does not exist then what do we have to
+do<00:16:14.560><c> we</c><00:16:14.720><c> return</c><00:16:15.199><c> false</c>
+
+00:16:15.829 --> 00:16:15.839 align:start position:0%
+do we return false
+ 
+
+00:16:15.839 --> 00:16:17.829 align:start position:0%
+do we return false
+meaning<00:16:16.320><c> the</c><00:16:16.480><c> word</c><00:16:16.800><c> just</c><00:16:17.120><c> just</c><00:16:17.360><c> simply</c><00:16:17.680><c> does</c>
+
+00:16:17.829 --> 00:16:17.839 align:start position:0%
+meaning the word just just simply does
+ 
+
+00:16:17.839 --> 00:16:19.269 align:start position:0%
+meaning the word just just simply does
+not<00:16:18.079><c> exist</c><00:16:18.720><c> if</c><00:16:18.959><c> it</c>
+
+00:16:19.269 --> 00:16:19.279 align:start position:0%
+not exist if it
+ 
+
+00:16:19.279 --> 00:16:22.470 align:start position:0%
+not exist if it
+does<00:16:19.839><c> then</c><00:16:20.079><c> we</c><00:16:20.240><c> can</c><00:16:20.880><c> move</c><00:16:21.199><c> ourselves</c><00:16:21.759><c> to</c><00:16:22.000><c> that</c>
+
+00:16:22.470 --> 00:16:22.480 align:start position:0%
+does then we can move ourselves to that
+ 
+
+00:16:22.480 --> 00:16:24.870 align:start position:0%
+does then we can move ourselves to that
+child<00:16:22.880><c> node</c><00:16:23.120><c> so</c><00:16:23.279><c> we</c><00:16:23.440><c> can</c><00:16:23.600><c> update</c><00:16:24.000><c> cur</c><00:16:24.399><c> and</c><00:16:24.639><c> set</c>
+
+00:16:24.870 --> 00:16:24.880 align:start position:0%
+child node so we can update cur and set
+ 
+
+00:16:24.880 --> 00:16:25.749 align:start position:0%
+child node so we can update cur and set
+it<00:16:25.120><c> to</c>
+
+00:16:25.749 --> 00:16:25.759 align:start position:0%
+it to
+ 
+
+00:16:25.759 --> 00:16:28.150 align:start position:0%
+it to
+the<00:16:26.000><c> child</c><00:16:26.399><c> node</c><00:16:26.800><c> of</c><00:16:27.040><c> that</c><00:16:27.279><c> character</c><00:16:28.079><c> and</c>
+
+00:16:28.150 --> 00:16:28.160 align:start position:0%
+the child node of that character and
+ 
+
+00:16:28.160 --> 00:16:29.990 align:start position:0%
+the child node of that character and
+then<00:16:28.560><c> we're</c><00:16:28.720><c> gonna</c><00:16:28.959><c> basically</c><00:16:29.519><c> keep</c><00:16:29.759><c> doing</c>
+
+00:16:29.990 --> 00:16:30.000 align:start position:0%
+then we're gonna basically keep doing
+ 
+
+00:16:30.000 --> 00:16:30.389 align:start position:0%
+then we're gonna basically keep doing
+this
+
+00:16:30.389 --> 00:16:30.399 align:start position:0%
+this
+ 
+
+00:16:30.399 --> 00:16:32.230 align:start position:0%
+this
+for<00:16:30.639><c> every</c><00:16:30.880><c> character</c><00:16:31.279><c> in</c><00:16:31.360><c> the</c><00:16:31.519><c> word</c><00:16:32.000><c> if</c><00:16:32.160><c> the</c>
+
+00:16:32.230 --> 00:16:32.240 align:start position:0%
+for every character in the word if the
+ 
+
+00:16:32.240 --> 00:16:34.230 align:start position:0%
+for every character in the word if the
+word<00:16:32.480><c> doesn't</c><00:16:32.800><c> exist</c><00:16:33.199><c> will</c><00:16:33.360><c> return</c><00:16:33.759><c> false</c><00:16:34.160><c> if</c>
+
+00:16:34.230 --> 00:16:34.240 align:start position:0%
+word doesn't exist will return false if
+ 
+
+00:16:34.240 --> 00:16:35.990 align:start position:0%
+word doesn't exist will return false if
+the<00:16:34.399><c> word</c><00:16:34.800><c> does</c><00:16:35.120><c> exist</c><00:16:35.519><c> that</c><00:16:35.759><c> means</c>
+
+00:16:35.990 --> 00:16:36.000 align:start position:0%
+the word does exist that means
+ 
+
+00:16:36.000 --> 00:16:39.030 align:start position:0%
+the word does exist that means
+the<00:16:36.160><c> entire</c><00:16:36.560><c> loop</c><00:16:36.959><c> will</c><00:16:37.279><c> execute</c><00:16:38.079><c> and</c><00:16:38.639><c> then</c>
+
+00:16:39.030 --> 00:16:39.040 align:start position:0%
+the entire loop will execute and then
+ 
+
+00:16:39.040 --> 00:16:41.749 align:start position:0%
+the entire loop will execute and then
+will<00:16:39.279><c> be</c><00:16:39.839><c> so</c><00:16:40.000><c> then</c><00:16:40.320><c> kerr</c><00:16:40.720><c> will</c><00:16:40.959><c> be</c><00:16:41.120><c> the</c><00:16:41.360><c> last</c>
+
+00:16:41.749 --> 00:16:41.759 align:start position:0%
+will be so then kerr will be the last
+ 
+
+00:16:41.759 --> 00:16:42.470 align:start position:0%
+will be so then kerr will be the last
+character
+
+00:16:42.470 --> 00:16:42.480 align:start position:0%
+character
+ 
+
+00:16:42.480 --> 00:16:45.350 align:start position:0%
+character
+of<00:16:42.639><c> the</c><00:16:42.800><c> word</c><00:16:43.279><c> and</c><00:16:43.839><c> we</c><00:16:44.320><c> and</c><00:16:44.480><c> we</c><00:16:44.639><c> know</c><00:16:44.800><c> that</c><00:16:45.040><c> it</c>
+
+00:16:45.350 --> 00:16:45.360 align:start position:0%
+of the word and we and we know that it
+ 
+
+00:16:45.360 --> 00:16:46.069 align:start position:0%
+of the word and we and we know that it
+is<00:16:45.519><c> a</c><00:16:45.680><c> word</c>
+
+00:16:46.069 --> 00:16:46.079 align:start position:0%
+is a word
+ 
+
+00:16:46.079 --> 00:16:49.670 align:start position:0%
+is a word
+if<00:16:46.480><c> ker</c><00:16:47.120><c> has</c><00:16:47.360><c> the</c><00:16:47.680><c> end</c><00:16:48.160><c> of</c><00:16:48.800><c> word</c>
+
+00:16:49.670 --> 00:16:49.680 align:start position:0%
+if ker has the end of word
+ 
+
+00:16:49.680 --> 00:16:51.829 align:start position:0%
+if ker has the end of word
+variable<00:16:50.320><c> set</c><00:16:50.639><c> to</c><00:16:50.800><c> true</c><00:16:51.120><c> so</c><00:16:51.360><c> this</c><00:16:51.600><c> is</c><00:16:51.680><c> the</c>
+
+00:16:51.829 --> 00:16:51.839 align:start position:0%
+variable set to true so this is the
+ 
+
+00:16:51.839 --> 00:16:53.430 align:start position:0%
+variable set to true so this is the
+variable<00:16:52.320><c> we're</c><00:16:52.480><c> going</c><00:16:52.560><c> to</c><00:16:52.639><c> be</c><00:16:52.800><c> returning</c>
+
+00:16:53.430 --> 00:16:53.440 align:start position:0%
+variable we're going to be returning
+ 
+
+00:16:53.440 --> 00:16:55.829 align:start position:0%
+variable we're going to be returning
+if<00:16:53.680><c> this</c><00:16:54.000><c> is</c><00:16:54.160><c> set</c><00:16:54.399><c> to</c><00:16:54.560><c> true</c><00:16:55.120><c> that</c><00:16:55.279><c> means</c><00:16:55.519><c> this</c>
+
+00:16:55.829 --> 00:16:55.839 align:start position:0%
+if this is set to true that means this
+ 
+
+00:16:55.839 --> 00:16:56.550 align:start position:0%
+if this is set to true that means this
+is<00:16:56.000><c> a</c><00:16:56.160><c> word</c>
+
+00:16:56.550 --> 00:16:56.560 align:start position:0%
+is a word
+ 
+
+00:16:56.560 --> 00:16:58.790 align:start position:0%
+is a word
+and<00:16:56.639><c> will</c><00:16:56.880><c> return</c><00:16:57.360><c> true</c><00:16:57.920><c> if</c><00:16:58.079><c> it's</c><00:16:58.320><c> set</c><00:16:58.480><c> to</c>
+
+00:16:58.790 --> 00:16:58.800 align:start position:0%
+and will return true if it's set to
+ 
+
+00:16:58.800 --> 00:17:01.030 align:start position:0%
+and will return true if it's set to
+false<00:16:59.360><c> that</c><00:16:59.519><c> means</c><00:16:59.839><c> it's</c><00:17:00.079><c> not</c><00:17:00.320><c> a</c><00:17:00.399><c> word</c><00:17:00.720><c> and</c><00:17:00.880><c> our</c>
+
+00:17:01.030 --> 00:17:01.040 align:start position:0%
+false that means it's not a word and our
+ 
+
+00:17:01.040 --> 00:17:02.949 align:start position:0%
+false that means it's not a word and our
+function<00:17:01.440><c> is</c><00:17:01.680><c> ultimately</c><00:17:02.079><c> going</c><00:17:02.240><c> to</c><00:17:02.399><c> return</c>
+
+00:17:02.949 --> 00:17:02.959 align:start position:0%
+function is ultimately going to return
+ 
+
+00:17:02.959 --> 00:17:05.669 align:start position:0%
+function is ultimately going to return
+false<00:17:03.680><c> and</c><00:17:04.000><c> now</c><00:17:04.400><c> last</c><00:17:04.720><c> but</c><00:17:04.880><c> not</c><00:17:05.120><c> least</c><00:17:05.439><c> let's</c>
+
+00:17:05.669 --> 00:17:05.679 align:start position:0%
+false and now last but not least let's
+ 
+
+00:17:05.679 --> 00:17:07.590 align:start position:0%
+false and now last but not least let's
+get<00:17:06.000><c> started</c><00:17:06.400><c> with</c><00:17:06.559><c> the</c><00:17:06.799><c> starts</c><00:17:07.280><c> with</c>
+
+00:17:07.590 --> 00:17:07.600 align:start position:0%
+get started with the starts with
+ 
+
+00:17:07.600 --> 00:17:08.309 align:start position:0%
+get started with the starts with
+function
+
+00:17:08.309 --> 00:17:08.319 align:start position:0%
+function
+ 
+
+00:17:08.319 --> 00:17:09.829 align:start position:0%
+function
+and<00:17:08.559><c> this</c><00:17:08.799><c> function</c><00:17:09.199><c> is</c><00:17:09.360><c> actually</c><00:17:09.679><c> going</c><00:17:09.760><c> to</c>
+
+00:17:09.829 --> 00:17:09.839 align:start position:0%
+and this function is actually going to
+ 
+
+00:17:09.839 --> 00:17:11.990 align:start position:0%
+and this function is actually going to
+be<00:17:10.000><c> the</c><00:17:10.240><c> exact</c><00:17:10.959><c> same</c><00:17:11.439><c> as</c><00:17:11.679><c> the</c>
+
+00:17:11.990 --> 00:17:12.000 align:start position:0%
+be the exact same as the
+ 
+
+00:17:12.000 --> 00:17:14.710 align:start position:0%
+be the exact same as the
+search<00:17:12.480><c> function</c><00:17:13.199><c> except</c><00:17:14.079><c> we're</c><00:17:14.400><c> not</c><00:17:14.640><c> going</c>
+
+00:17:14.710 --> 00:17:14.720 align:start position:0%
+search function except we're not going
+ 
+
+00:17:14.720 --> 00:17:15.510 align:start position:0%
+search function except we're not going
+to<00:17:14.880><c> have</c><00:17:15.039><c> to</c>
+
+00:17:15.510 --> 00:17:15.520 align:start position:0%
+to have to
+ 
+
+00:17:15.520 --> 00:17:18.390 align:start position:0%
+to have to
+uh<00:17:16.480><c> determine</c><00:17:17.039><c> if</c><00:17:17.199><c> it's</c><00:17:17.439><c> the</c><00:17:17.600><c> end</c><00:17:17.839><c> of</c><00:17:18.000><c> a</c><00:17:18.160><c> word</c>
+
+00:17:18.390 --> 00:17:18.400 align:start position:0%
+uh determine if it's the end of a word
+ 
+
+00:17:18.400 --> 00:17:19.110 align:start position:0%
+uh determine if it's the end of a word
+or<00:17:18.559><c> not</c><00:17:18.799><c> right</c>
+
+00:17:19.110 --> 00:17:19.120 align:start position:0%
+or not right
+ 
+
+00:17:19.120 --> 00:17:21.510 align:start position:0%
+or not right
+we<00:17:19.760><c> we're</c><00:17:19.919><c> not</c><00:17:20.079><c> checking</c><00:17:20.559><c> if</c><00:17:20.799><c> it</c><00:17:20.959><c> is</c><00:17:21.120><c> a</c><00:17:21.280><c> word</c>
+
+00:17:21.510 --> 00:17:21.520 align:start position:0%
+we we're not checking if it is a word
+ 
+
+00:17:21.520 --> 00:17:22.390 align:start position:0%
+we we're not checking if it is a word
+we're<00:17:22.000><c> right</c>
+
+00:17:22.390 --> 00:17:22.400 align:start position:0%
+we're right
+ 
+
+00:17:22.400 --> 00:17:24.630 align:start position:0%
+we're right
+we<00:17:22.720><c> we</c><00:17:22.880><c> are</c><00:17:22.959><c> just</c><00:17:23.120><c> given</c><00:17:23.439><c> a</c><00:17:23.600><c> prefix</c><00:17:24.319><c> and</c><00:17:24.480><c> we</c>
+
+00:17:24.630 --> 00:17:24.640 align:start position:0%
+we we are just given a prefix and we
+ 
+
+00:17:24.640 --> 00:17:26.150 align:start position:0%
+we we are just given a prefix and we
+just<00:17:24.799><c> want</c><00:17:24.959><c> to</c><00:17:25.039><c> know</c><00:17:25.199><c> if</c><00:17:25.360><c> there's</c><00:17:25.600><c> any</c><00:17:25.839><c> word</c>
+
+00:17:26.150 --> 00:17:26.160 align:start position:0%
+just want to know if there's any word
+ 
+
+00:17:26.160 --> 00:17:26.470 align:start position:0%
+just want to know if there's any word
+that
+
+00:17:26.470 --> 00:17:26.480 align:start position:0%
+that
+ 
+
+00:17:26.480 --> 00:17:29.750 align:start position:0%
+that
+starts<00:17:26.959><c> with</c><00:17:27.120><c> this</c><00:17:27.360><c> prefix</c><00:17:28.319><c> so</c><00:17:28.559><c> once</c><00:17:28.880><c> again</c>
+
+00:17:29.750 --> 00:17:29.760 align:start position:0%
+starts with this prefix so once again
+ 
+
+00:17:29.760 --> 00:17:31.029 align:start position:0%
+starts with this prefix so once again
+look<00:17:30.000><c> for</c><00:17:30.160><c> the</c><00:17:30.240><c> third</c><00:17:30.480><c> time</c><00:17:30.720><c> we're</c><00:17:30.880><c> going</c><00:17:30.960><c> to</c>
+
+00:17:31.029 --> 00:17:31.039 align:start position:0%
+look for the third time we're going to
+ 
+
+00:17:31.039 --> 00:17:33.350 align:start position:0%
+look for the third time we're going to
+be<00:17:31.200><c> starting</c><00:17:31.840><c> at</c><00:17:32.080><c> the</c><00:17:32.400><c> root</c>
+
+00:17:33.350 --> 00:17:33.360 align:start position:0%
+be starting at the root
+ 
+
+00:17:33.360 --> 00:17:35.430 align:start position:0%
+be starting at the root
+and<00:17:33.600><c> we're</c><00:17:33.760><c> going</c><00:17:33.840><c> to</c><00:17:34.000><c> go</c><00:17:34.480><c> character</c><00:17:35.120><c> by</c>
+
+00:17:35.430 --> 00:17:35.440 align:start position:0%
+and we're going to go character by
+ 
+
+00:17:35.440 --> 00:17:37.029 align:start position:0%
+and we're going to go character by
+character<00:17:35.919><c> in</c><00:17:36.080><c> the</c><00:17:36.320><c> prefix</c>
+
+00:17:37.029 --> 00:17:37.039 align:start position:0%
+character in the prefix
+ 
+
+00:17:37.039 --> 00:17:38.710 align:start position:0%
+character in the prefix
+this<00:17:37.280><c> time</c><00:17:37.520><c> right</c><00:17:37.679><c> we're</c><00:17:37.840><c> not</c><00:17:38.000><c> given</c><00:17:38.320><c> a</c><00:17:38.400><c> word</c>
+
+00:17:38.710 --> 00:17:38.720 align:start position:0%
+this time right we're not given a word
+ 
+
+00:17:38.720 --> 00:17:41.190 align:start position:0%
+this time right we're not given a word
+this<00:17:38.960><c> time</c><00:17:39.600><c> and</c><00:17:39.760><c> if</c><00:17:40.000><c> this</c><00:17:40.320><c> character</c><00:17:40.799><c> is</c>
+
+00:17:41.190 --> 00:17:41.200 align:start position:0%
+this time and if this character is
+ 
+
+00:17:41.200 --> 00:17:44.390 align:start position:0%
+this time and if this character is
+not<00:17:41.679><c> in</c><00:17:42.240><c> our</c><00:17:42.640><c> tree</c><00:17:43.039><c> so</c><00:17:43.200><c> if</c><00:17:43.360><c> it's</c><00:17:43.600><c> not</c><00:17:43.919><c> in</c><00:17:44.160><c> the</c>
+
+00:17:44.390 --> 00:17:44.400 align:start position:0%
+not in our tree so if it's not in the
+ 
+
+00:17:44.400 --> 00:17:45.350 align:start position:0%
+not in our tree so if it's not in the
+children
+
+00:17:45.350 --> 00:17:45.360 align:start position:0%
+children
+ 
+
+00:17:45.360 --> 00:17:47.510 align:start position:0%
+children
+right<00:17:45.600><c> now</c><00:17:45.919><c> then</c><00:17:46.240><c> we</c><00:17:46.400><c> will</c><00:17:46.559><c> return</c><00:17:47.039><c> false</c>
+
+00:17:47.510 --> 00:17:47.520 align:start position:0%
+right now then we will return false
+ 
+
+00:17:47.520 --> 00:17:49.270 align:start position:0%
+right now then we will return false
+meaning<00:17:47.760><c> the</c><00:17:47.919><c> prefix</c><00:17:48.480><c> does</c><00:17:48.640><c> not</c><00:17:48.880><c> exist</c>
+
+00:17:49.270 --> 00:17:49.280 align:start position:0%
+meaning the prefix does not exist
+ 
+
+00:17:49.280 --> 00:17:49.830 align:start position:0%
+meaning the prefix does not exist
+therefore
+
+00:17:49.830 --> 00:17:49.840 align:start position:0%
+therefore
+ 
+
+00:17:49.840 --> 00:17:51.990 align:start position:0%
+therefore
+no<00:17:50.080><c> words</c><00:17:50.640><c> start</c><00:17:50.880><c> with</c><00:17:51.039><c> this</c><00:17:51.280><c> prefix</c>
+
+00:17:51.990 --> 00:17:52.000 align:start position:0%
+no words start with this prefix
+ 
+
+00:17:52.000 --> 00:17:53.510 align:start position:0%
+no words start with this prefix
+otherwise<00:17:52.720><c> we</c><00:17:52.960><c> will</c>
+
+00:17:53.510 --> 00:17:53.520 align:start position:0%
+otherwise we will
+ 
+
+00:17:53.520 --> 00:17:55.909 align:start position:0%
+otherwise we will
+uh<00:17:54.080><c> shift</c><00:17:54.400><c> our</c><00:17:54.640><c> current</c><00:17:55.039><c> pointer</c><00:17:55.440><c> to</c><00:17:55.600><c> that</c>
+
+00:17:55.909 --> 00:17:55.919 align:start position:0%
+uh shift our current pointer to that
+ 
+
+00:17:55.919 --> 00:17:56.710 align:start position:0%
+uh shift our current pointer to that
+child
+
+00:17:56.710 --> 00:17:56.720 align:start position:0%
+child
+ 
+
+00:17:56.720 --> 00:18:00.390 align:start position:0%
+child
+pointer<00:17:57.919><c> of</c><00:17:58.080><c> this</c><00:17:58.320><c> character</c><00:17:59.360><c> and</c><00:17:59.840><c> continue</c>
+
+00:18:00.390 --> 00:18:00.400 align:start position:0%
+pointer of this character and continue
+ 
+
+00:18:00.400 --> 00:18:00.789 align:start position:0%
+pointer of this character and continue
+on
+
+00:18:00.789 --> 00:18:00.799 align:start position:0%
+on
+ 
+
+00:18:00.799 --> 00:18:03.830 align:start position:0%
+on
+and<00:18:01.120><c> at</c><00:18:01.280><c> the</c><00:18:01.520><c> end</c><00:18:02.080><c> if</c><00:18:02.480><c> we</c><00:18:02.720><c> do</c><00:18:03.440><c> reach</c>
+
+00:18:03.830 --> 00:18:03.840 align:start position:0%
+and at the end if we do reach
+ 
+
+00:18:03.840 --> 00:18:06.870 align:start position:0%
+and at the end if we do reach
+cur<00:18:04.480><c> then</c><00:18:04.640><c> we</c><00:18:04.799><c> can</c><00:18:04.960><c> immediately</c><00:18:05.600><c> return</c><00:18:06.080><c> true</c>
+
+00:18:06.870 --> 00:18:06.880 align:start position:0%
+cur then we can immediately return true
+ 
+
+00:18:06.880 --> 00:18:08.549 align:start position:0%
+cur then we can immediately return true
+because<00:18:07.280><c> we</c><00:18:07.520><c> know</c><00:18:07.679><c> that</c><00:18:07.840><c> there's</c><00:18:08.160><c> at</c><00:18:08.240><c> least</c>
+
+00:18:08.549 --> 00:18:08.559 align:start position:0%
+because we know that there's at least
+ 
+
+00:18:08.559 --> 00:18:11.029 align:start position:0%
+because we know that there's at least
+one<00:18:08.799><c> word</c><00:18:09.039><c> that</c><00:18:09.280><c> starts</c><00:18:09.679><c> with</c><00:18:09.919><c> this</c><00:18:10.240><c> prefix</c>
+
+00:18:11.029 --> 00:18:11.039 align:start position:0%
+one word that starts with this prefix
+ 
+
+00:18:11.039 --> 00:18:12.549 align:start position:0%
+one word that starts with this prefix
+we<00:18:11.200><c> don't</c><00:18:11.360><c> have</c><00:18:11.520><c> to</c><00:18:11.600><c> determine</c><00:18:12.240><c> that</c><00:18:12.400><c> the</c>
+
+00:18:12.549 --> 00:18:12.559 align:start position:0%
+we don't have to determine that the
+ 
+
+00:18:12.559 --> 00:18:14.070 align:start position:0%
+we don't have to determine that the
+prefix<00:18:13.200><c> itself</c>
+
+00:18:14.070 --> 00:18:14.080 align:start position:0%
+prefix itself
+ 
+
+00:18:14.080 --> 00:18:17.270 align:start position:0%
+prefix itself
+is<00:18:14.400><c> a</c><00:18:14.559><c> word</c><00:18:15.280><c> so</c><00:18:15.600><c> that</c><00:18:16.000><c> is</c><00:18:16.160><c> the</c><00:18:16.400><c> entire</c><00:18:16.799><c> code</c><00:18:17.200><c> i</c>
+
+00:18:17.270 --> 00:18:17.280 align:start position:0%
+is a word so that is the entire code i
+ 
+
+00:18:17.280 --> 00:18:19.110 align:start position:0%
+is a word so that is the entire code i
+can<00:18:17.520><c> zoom</c><00:18:17.760><c> out</c><00:18:17.919><c> so</c><00:18:18.080><c> you</c><00:18:18.160><c> can</c><00:18:18.320><c> see</c><00:18:18.480><c> the</c><00:18:18.720><c> entire</c>
+
+00:18:19.110 --> 00:18:19.120 align:start position:0%
+can zoom out so you can see the entire
+ 
+
+00:18:19.120 --> 00:18:19.510 align:start position:0%
+can zoom out so you can see the entire
+thing
+
+00:18:19.510 --> 00:18:19.520 align:start position:0%
+thing
+ 
+
+00:18:19.520 --> 00:18:21.510 align:start position:0%
+thing
+and<00:18:19.760><c> we</c><00:18:19.919><c> just</c><00:18:20.080><c> have</c><00:18:20.240><c> one</c><00:18:20.480><c> small</c><00:18:20.799><c> typo</c><00:18:21.280><c> over</c>
+
+00:18:21.510 --> 00:18:21.520 align:start position:0%
+and we just have one small typo over
+ 
+
+00:18:21.520 --> 00:18:23.590 align:start position:0%
+and we just have one small typo over
+here<00:18:21.919><c> this</c><00:18:22.160><c> is</c><00:18:22.480><c> children</c>
+
+00:18:23.590 --> 00:18:23.600 align:start position:0%
+here this is children
+ 
+
+00:18:23.600 --> 00:18:25.750 align:start position:0%
+here this is children
+and<00:18:24.080><c> so</c><00:18:24.320><c> other</c><00:18:24.559><c> than</c><00:18:24.720><c> that</c><00:18:25.039><c> this</c><00:18:25.360><c> is</c><00:18:25.520><c> the</c>
+
+00:18:25.750 --> 00:18:25.760 align:start position:0%
+and so other than that this is the
+ 
+
+00:18:25.760 --> 00:18:26.950 align:start position:0%
+and so other than that this is the
+entire<00:18:26.240><c> code</c>
+
+00:18:26.950 --> 00:18:26.960 align:start position:0%
+entire code
+ 
+
+00:18:26.960 --> 00:18:29.270 align:start position:0%
+entire code
+so<00:18:27.120><c> today</c><00:18:27.440><c> you</c><00:18:27.600><c> just</c><00:18:28.000><c> learned</c><00:18:28.400><c> a</c><00:18:28.640><c> brand</c><00:18:29.039><c> new</c>
+
+00:18:29.270 --> 00:18:29.280 align:start position:0%
+so today you just learned a brand new
+ 
+
+00:18:29.280 --> 00:18:31.029 align:start position:0%
+so today you just learned a brand new
+data<00:18:29.520><c> structure</c><00:18:30.080><c> and</c><00:18:30.240><c> i</c><00:18:30.320><c> hope</c><00:18:30.559><c> that</c><00:18:30.640><c> this</c><00:18:30.880><c> was</c>
+
+00:18:31.029 --> 00:18:31.039 align:start position:0%
+data structure and i hope that this was
+ 
+
+00:18:31.039 --> 00:18:31.990 align:start position:0%
+data structure and i hope that this was
+helpful<00:18:31.440><c> for</c><00:18:31.600><c> you</c>
+
+00:18:31.990 --> 00:18:32.000 align:start position:0%
+helpful for you
+ 
+
+00:18:32.000 --> 00:18:33.990 align:start position:0%
+helpful for you
+so<00:18:32.320><c> this</c><00:18:32.720><c> data</c><00:18:32.960><c> structure</c><00:18:33.360><c> can</c><00:18:33.600><c> be</c><00:18:33.760><c> pretty</c>
+
+00:18:33.990 --> 00:18:34.000 align:start position:0%
+so this data structure can be pretty
+ 
+
+00:18:34.000 --> 00:18:36.310 align:start position:0%
+so this data structure can be pretty
+useful<00:18:34.559><c> it's</c><00:18:34.799><c> a</c><00:18:34.960><c> rare</c><00:18:35.200><c> data</c><00:18:35.440><c> structure</c><00:18:35.840><c> to</c><00:18:36.000><c> see</c>
+
+00:18:36.310 --> 00:18:36.320 align:start position:0%
+useful it's a rare data structure to see
+ 
+
+00:18:36.320 --> 00:18:38.549 align:start position:0%
+useful it's a rare data structure to see
+on<00:18:36.480><c> leak</c><00:18:36.720><c> code</c><00:18:36.960><c> problems</c><00:18:37.440><c> but</c><00:18:37.600><c> i</c><00:18:37.760><c> hope</c><00:18:38.320><c> that</c>
+
+00:18:38.549 --> 00:18:38.559 align:start position:0%
+on leak code problems but i hope that
+ 
+
+00:18:38.559 --> 00:18:40.549 align:start position:0%
+on leak code problems but i hope that
+you<00:18:38.720><c> did</c><00:18:38.960><c> learn</c><00:18:39.200><c> something</c><00:18:39.520><c> new</c><00:18:39.760><c> today</c><00:18:40.160><c> and</c><00:18:40.400><c> if</c>
+
+00:18:40.549 --> 00:18:40.559 align:start position:0%
+you did learn something new today and if
+ 
+
+00:18:40.559 --> 00:18:41.990 align:start position:0%
+you did learn something new today and if
+this<00:18:40.720><c> was</c><00:18:40.960><c> helpful</c><00:18:41.360><c> please</c><00:18:41.679><c> like</c>
+
+00:18:41.990 --> 00:18:42.000 align:start position:0%
+this was helpful please like
+ 
+
+00:18:42.000 --> 00:18:43.990 align:start position:0%
+this was helpful please like
+and<00:18:42.080><c> subscribe</c><00:18:42.640><c> it</c><00:18:42.720><c> supports</c><00:18:43.120><c> the</c><00:18:43.280><c> channel</c><00:18:43.679><c> a</c>
+
+00:18:43.990 --> 00:18:44.000 align:start position:0%
+and subscribe it supports the channel a
+ 
+
+00:18:44.000 --> 00:18:45.669 align:start position:0%
+and subscribe it supports the channel a
+lot<00:18:44.400><c> and</c><00:18:44.559><c> i'll</c><00:18:44.799><c> hopefully</c>
+
+00:18:45.669 --> 00:18:45.679 align:start position:0%
+lot and i'll hopefully
+ 
+
+00:18:45.679 --> 00:18:57.039 align:start position:0%
+lot and i'll hopefully
+see<00:18:45.840><c> you</c><00:18:46.000><c> pretty</c><00:18:46.320><c> soon</c><00:18:46.880><c> thanks</c><00:18:47.120><c> for</c><00:18:54.039><c> watching</c>
+

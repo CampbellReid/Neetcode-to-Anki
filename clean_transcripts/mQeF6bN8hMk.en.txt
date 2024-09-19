@@ -1,0 +1,359 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+let's solve the problem
+clone graph so we're given a reference
+to a
+node that is in a connected undirected
+graph so it's convenient for us that the
+graph
+is completely connected and all we want
+to do is return a
+deep copy of that graph in other words a
+clone of that graph and for every single
+node
+we have two things we are given a value
+and we're also given a list of its
+neighbors so this is what's telling us
+you know how the graph happens to be
+connected these are the edges
+in our graph now if you're not super
+familiar with what a deep copy is so
+let's say that this
+is our example our input graph we're not
+just going to create a shallow copy
+meaning like this
+is the exact same graph like the color
+is yellow
+for both of these meaning like it's the
+exact same graph we didn't actually
+create a clone of it
+so this is not what we're looking for
+this is also not what we're looking for
+so this is a
+new graph because the color is slightly
+different
+but you see that the values aren't
+exactly how they're supposed to be we
+have a
+3 here whereas we have a 2 in the
+original graph right so basically we
+have these two's
+values mixed up so that's not what we
+want either we want an exact clone so
+it has the exact same structure and
+values right the values and structure is
+the exact same
+and this happens to be a new graph this
+is not the exact same graph as this one
+because this one is blue
+whereas this one is yellow so how are we
+going to solve this problem well you can
+see
+i'm going to use a hash map like pretty
+much every graph problem and we're going
+to use
+depth for a search where you can also
+use breadth first search if you want but
+let me show you the general algorithm
+so you can see these edges are
+undirected meaning you know if
+one has a neighbor two well two is also
+going to have a neighbor 1 in its
+neighbor list
+so let's say that 1 is our entry point
+in the graph what are we going to do you
+can see initially our hash map is empty
+what we're going to try to do is map the
+old nodes
+to the new nodes or the copy nodes so we
+start at one so what's the first thing
+we should do well obviously we should
+create a copy of this
+node that's what i'm gonna do so create
+a copy of one
+now this copy of one is not complete yet
+right because take a look at the
+original one it has two neighbors
+three and two so what can i do
+we know we're gonna have two neighbors
+for node one right
+can i just take these two original nodes
+and then put them over here
+three and two no i can't do that because
+for these nodes three and two we
+actually have to create copies of
+them as well so you can see that this is
+gonna be recursive
+so first thing i'm gonna do is i'm gonna
+go to its first neighbor which let's
+just say it happens to be two in this
+case right
+so i'm gonna now i'm gonna i'm gonna
+start cloning starting at two so
+we're at two we're gonna create a clone
+of two oh and by the way before i forget
+before we make a clone of two we know we
+just created a clone for one so what are
+we gonna do
+we're gonna map the original node one
+to its now clone node once we're mapping
+the old node
+to the new node and i'm going to show
+you why we're doing that in a second
+so now we're going to go to node 2 right
+and we're going to create a clone of
+node 2. so let's create that clone
+node 2. we're also going to add it to
+our hashmap right we're mapping the
+old node 2 to its clone so the clone
+in blue is the new node
+so now we've cloned one and we've cloned
+two
+and for two now let's look at two's
+neighbors well
+look you can see that it has a neighbor
+of one
+right and it has a neighbor of four so
+first we're gonna end up trying to do is
+create a clone for
+two because we know that we have to in
+the list of neighbors for two we have to
+add the clone
+one which we haven't done yet so what
+we're gonna end up doing is we're gonna
+try to clone one but we're gonna see
+in our hash map look we already ended up
+cloning
+one so basically what i'm saying is now
+we can say okay we can add
+this edge that two is connected to one
+that two has a neighbor
+that happens to be one and basically
+the reason i'm doing that is because we
+know this edge is going to be undirected
+it goes both
+ways so that's what i'm trying to do
+here so now we know that 2 is connected
+to 1
+we also know we have to clone node 4.
+so now we're going to visit position 4.
+let's create a clone for 4
+so let's add it to our hash map as well
+we're mapping the original node
+4 to its clone so now we're at the node
+4. we want to clone
+4's neighbors first you see that 4 has a
+neighbor
+2 which we already cloned so we're going
+to take this original node 4 right we
+know the original node
+we know the original node 4 has a as an
+original neighbor of 2
+so then we're going to take that 2 look
+it up in our hash map see okay we
+already created a
+clone of it and this is the clone and
+then we're gonna end up taking four and
+connecting it to
+two and let's just say that you know
+when we created the node four we ended
+up connecting two
+to four so let's just make this edge go
+both
+ways because we know that originally the
+edges are undirected
+so now that we've for four we wanted to
+create a clone of two
+we also want to create a clone of its
+second neighbor three
+so now let's create a clone of three so
+we know that four is going to be able to
+connect
+to this neighbor of three so we're
+creating a clone for it
+and we're gonna take the original three
+node and map it to its
+new copy node of three so now we're
+almost done
+right you can see that all four of the
+nodes have been copied
+but for three we haven't added threes
+and neighbors right
+three isn't ended up connecting to any
+other nodes yet but we know in the
+original three has two neighbors
+the first neighbor is four so we're
+going to say okay we know that
+this 4 needs to have a clone but the
+good thing is we already created a clone
+for that node
+and this is the clone so now we have it
+so we're gonna take
+three and ah and connect it to
+four so we're gonna make this edge
+basically double directed
+and three also has another neighbor of
+one and so basically what we need to do
+is make a clone of that one but we
+look in our hash map first and we see we
+already cloned one
+this is the clone so we're gonna take
+three and
+connect it to one right but wait we have
+one last problem right this
+one should also be connected to the
+three right you're right and that's what
+we're doing recursively now
+so we originally started at one then we
+went to two
+then we went to four then we went to
+three now what we're going to end up
+doing is
+reversing that because we remember we're
+doing this recursively so we're gonna
+pop back up to four
+we're gonna see four has already cloned
+its neighbors three already cloned its
+neighbors
+we're gonna pop back to two two already
+cloned its neighbors
+we're gonna pop back to one one we ended
+up cloning
+the neighbor two right but we didn't end
+up
+going this way so from three now we're
+gonna end up
+we're gonna end up checking okay did we
+already clone three let's look in our
+hash map yep we already did
+so this is the clone that we created so
+all we really need to do is make one
+connected to three so basically make
+this edge double directed
+so now you can see that we finally
+created a complete clone
+of the graph we did this in o of n
+time where n is basically the number of
+edges plus the number of vertices right
+the number of nodes plus the number of
+edges connecting them because we have to
+basically make a clone of each of these
+and with that being said now let's jump
+into the code
+so we remember that we only need a
+single data structure
+old to new which is a hash map mapping
+the old nodes to the new nodes and i'm
+going to implement this in depth first
+search
+and you can see that this function is
+nested in the outer function which just
+makes things easier meaning that this
+data structure doesn't need to be passed
+into every single function call
+but we do need to pass in everything
+every time the node that we're visiting
+so in depth first search we're going to
+pass in the node
+first thing we're going to check is if
+the node is
+in our hashmap if it is in our hashmap
+then that means we already made a clone
+of it
+if we already made a clone of it then
+i'm just going to return that clone
+we don't need to create another clone so
+if it exists return the new node
+so if this statement doesn't execute
+that means a clone doesn't already exist
+so let's create that clone i guess i'll
+call it a copy so we're going to create
+a
+copy of this node so we're going to use
+the node constructor and the value we're
+going to give it is the value of this
+original node and we're also going to
+take that copy and then add it to our
+old to new hash map so
+old to new so the old node is just node
+and the new node is the copy
+so we're mapping the old node to the
+copy
+and then we want to make copies of every
+single
+neighbor of the original node so
+node.neighbors
+let's go through every single neighbor
+and let's run depth first search on that
+neighbor
+for the and so basically if we run debt
+for search on that neighbor what it's
+going to do is it's going to return
+the copy that we end up creating and
+with that copy what am i going to do
+i'm going to take this old node or this
+new node the copy that we made
+and i'm going to take its list of
+neighbors
+and i'm going to append to that list of
+neighbors
+this uh the return statement from this
+debt first search call
+so let's copy and paste that in here so
+that's all i really really need to do
+depth first search
+and add it to the neighbors of this copy
+that we just
+made and once we're done making all
+the copies of the neighbors then we can
+return the copy that we just made in the
+current function call and it's actually
+that simple because
+even though this is called that first
+search it might even be better to call
+this function
+clone because cloning is basically what
+we're doing we're taking the original
+node and creating a clone
+of that node and we're cloning all of
+its neighbors recursively that's what
+this recursive
+call is right and then to the neighbors
+that we're creating we're
+adding them or appending them to the
+list of neighbors of this node
+and so it's actually the last thing to
+do is easier than you would think we're
+going to
+call debt for search passing in the
+original node that we're given in the
+original function call
+and then we're just going to return the
+result of that
+because that's going to give us the
+connected graph it doesn't really matter
+which
+node we return i think so any node that
+we end up returning
+is good after the entire clone has been
+made
+oh and one last thing we forgot to check
+one edge case the original node that
+we're given could be
+null so if the node
+is non-null then we're going to call
+this function return the result
+else if the node is null we'll just
+return
+null so with that being said this
+function
+should work and there you go it's pretty
+efficient even though
+this indication makes it seem like it's
+not i think if i ran it one more time it
+would probably be closer to like 50 or
+60 percent
+but i hope this was helpful if you
+enjoyed
+please like and subscribe it supports
+the channel a lot and i'll hopefully

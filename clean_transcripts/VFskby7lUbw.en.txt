@@ -1,0 +1,717 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+let's solve
+burst balloons and this problem has
+really earned that category of being a
+hard
+problem so this is going to be another
+dynamic programming problem and
+we're going to solve it with the optimal
+solution which is going to be big o
+of n cubed time complexity and i believe
+big o of n squared memory complexity
+and i'm going to try my best to explain
+the intuition of this problem and kind
+of walk through my thought process but
+if your question
+is if you saw this problem for the first
+time in an interview
+how would you be able to solve it that's
+a good question and honestly i don't
+have the answer to that unless your
+interviewer
+gave you a couple of hints that kind of
+pointed you in the right
+direction because this problem requires
+a couple tricks to get it to work
+efficiently
+so the description is pretty simple
+we're given n balloons
+indexed from position zero to position n
+minus one
+each balloon is painted with a
+particular number on it
+so basically we're given an input array
+of nums or other words balloons
+and we're asked to burst all of the
+balloons now when we burst a particular
+balloon
+i we are going to add to the total we're
+basically going to get a total number of
+coins from popping that balloon
+we're going to the total that we're
+going to get is basically the number
+that was painted on that balloon
+multiplied by the two adjacent balloons
+to that balloon at that particular time
+and of course we might have a balloon
+that's on the boundary or on the edge of
+our input array so if that's the case
+for example if i minus 1 or i plus 1
+are out of bounds of the input array
+then we're basically going to assume
+that there's
+you know a couple balloons with one
+painted on them on the edge
+basically there's gonna be some implicit
+ones so for example if this is our input
+array we're assuming there's a one over
+here and there's one over here the
+reason why is let's say we were given an
+input array of one number let's say that
+value was five right if we pop this
+we're going to assume that there's ones
+on the edge right so if we pop five what
+are we going to get we're gonna get five
+times the right neighbor which is one
+times the left neighbor which is one
+right so basically these are just
+neutral values so the total number of
+coins we're going to get from a single
+balloon
+is just going to be that value right 5.
+that makes sense that's why we're doing
+this
+so in this example the total number of
+maximum coins we can get is 167
+and that is if we first pop this one
+value
+and then we get three times one times
+five because three and five are the
+neighbors
+since we pop that next what we're going
+to pop is the
+five now since we're popping this five
+well we need to get its neighbors right
+it's right neighbor is obviously
+a since we popped this one its its left
+neighbor now is going to be
+the 3 that's over here so we're going to
+do 3 times 5 times 8
+so after we pop the 5 we now have 2
+remaining
+we're going to pop the 3 first and
+that's going to give us 3
+times 8 and the left neighbor of course
+remember we
+talked about the beginning is implied to
+be a 1 so then we're going to get 1
+times 3 times 8.
+now the 3 has been popped last one left
+is just the eight
+right so the neighbors of that
+implicitly are just one and one so eight
+times one times one
+we add that up to our total we get 167.
+now
+these implicit extra ones on our input
+array for example
+those are not actually going to be
+popped right so we need to remember that
+because obviously if we did pop them
+right we pop a one we'd add one to our
+total and if we pop the other one we'll
+add another one but that's not actually
+going to be the case right we don't want
+to pop these extras
+so even if you can't get the dynamic
+programming solution at the very least
+we know that there's a brute force
+approach right we could choose to pop
+three first we could choose to pop one
+first we could choose to pop
+five we could choose to pop eight right
+and then we could continue
+down this decision tree right that's the
+brute force right
+something like a backtracking approach
+but in that case
+obviously we have n choices roughly at
+each layer
+and the height of the tree is going to
+be n so basically the time complexity is
+going to be something like
+n to the power of n now that's not super
+efficient
+and in this case we actually can do
+better but it's not easy to
+arrive to that solution so now let me
+explain a little bit of the thought
+process
+to get us there and then i'm going to
+jump into the code in this case the code
+is actually not too bad once you see
+the couple of tricks that we need in
+this problem so we know the brute force
+approach but can we identify
+any sub-problems your first idea might
+be something like this okay so let's say
+i pop
+the fifth element right we popped this
+balloon now we have a new sub problem
+right we have
+this entire array minus this value as
+the sub problem right
+or for example maybe i popped one now we
+would get this entire array
+except the one as a sub problem right
+now if i continue popping for example i
+pop 1
+next i pop 8 now we have a different sub
+problem
+so if i keep going like this how many
+sub problems are we gonna have well
+basically what we're doing as we pop
+elements we're basically getting every
+single
+subsequence right now how many sub
+sequences
+for an input array are there well for
+each value we could choose to include it
+or not
+include it right so for each value we
+have two choices two times two
+times two right we're basically going to
+do this for the size of the input array
+which is let's say n so we're going to
+have 2 to the power of
+n sub sequences so basically what i'm
+getting at here
+is this is not the correct sub problem
+that we're looking for we need to look
+for an even more
+simple sub problem because if we have
+this many sub problems that's not going
+to help us
+caching something like this is not going
+to make the
+the solution more efficient we want to
+get something like n cubed
+and squared et cetera right this is what
+i'm aiming for let's try to see if we
+can get it
+so let's say i pop the five now is there
+an even more simple sub problem well we
+notice
+now we actually have two subarrays right
+we have one sub array over here
+and one sub array over here now these
+sub arrays are contiguous they're not
+subsequences that's pretty good
+because we know that at most for an
+input array of size
+n there could be at most there could be
+at most
+n squared sub array so that's something
+we can work with to make an
+efficient solution so now you might
+think well can i take each of these sub
+arrays right
+basically by popping this we got
+something like one times five
+times eight now we wanna know
+independently what the each of these sub
+arrays
+could get us like how many maximum coins
+could this subreddit and this subarray
+get us right independently
+but what we're gonna notice is we can't
+just look at this subarray independently
+right because independently a three
+times one right
+the max we could get is we first pop the
+one right
+in that case we get one times three and
+you know the right neighbor is nothing
+so once we pop that and then we pop this
+three right then we'll get
+three times basically just three by
+itself right so
+we pop this then we add the second
+balloon that we pop so we'd get a total
+of six right just independently
+if we had this sub subarray 3 and 1. but
+we
+know that in reality this 3 and 1 is now
+going to be connected
+to this 8 right and independently what
+this 8 would get us
+is 8 by itself right because it doesn't
+have any neighbors so in total if we
+took a
+look at both of these independently we'd
+get something like 6 plus 8
+so in total 14 right but in reality
+when we look at 3 1 8 what's the max we
+could possibly get in this case
+well we'd pop the 1 first right then
+we'd get
+three times one times eight now that's
+24 that already by itself
+went over the total that we would get if
+we did these independently so basically
+what i'm getting at is
+we can't break the problem up like this
+right
+we can't look at these arrays separately
+because in reality we know that they're
+going to be connected to each other
+okay so that's not going to work now
+this is the part where you have to be
+kind of
+clever we said what happens if we pop
+this one
+first and then try to do the remaining
+array let's reverse our
+thinking instead of popping this first
+let's say we pop this value last
+so what happens if we pop this value
+last
+meaning we pop this entire subarray
+and before right before we pop this and
+we pop
+this entire subarray before we pop this
+what's going to happen then well we know
+if this is the last value that we pop
+meaning we popped everything here we
+popped everything here its left and
+right neighbors
+are both going to be 1 right there's
+going to be a 1 over here and there's
+going to be a 1 over here so we're going
+to get 1 times 5
+times 1. but what's the remaining amount
+that we
+get from popping these two subarrays now
+because in this case since we're popping
+this value
+last that means these two subarrays are
+never going to be connected to each
+other
+ever not at any point because this is
+being popped
+last so since these two subarrays are
+not going to be connected that means we
+can now pop them independently so let's
+take a look now let's
+pop this 3-1 independently what's going
+to happen
+well we remember when we pop this
+independently we're basically going to
+get 1 times 3 plus 3 right
+that's going to total up to 6 once again
+right but that's not
+actually what we're looking for because
+remember this
+sub array is not independent we are it's
+true we're going to pop this before we
+pop the five
+but we can't just forget about the five
+right there is
+a five right next to this three one so
+in reality when i pop the one
+i'm gonna get three times one times five
+and then when i pop the three because we
+know we're not gonna put we're popping
+this last right so we are popping these
+two first
+but then when i pop the three i'm gonna
+get one times three
+times five right because there's an
+implicit one over here
+so how can i handle that what i'm saying
+is
+our array hasn't actually changed there
+is
+the five still over here but we want to
+pop all of these elements before we pop
+this five how can i handle that well
+it's actually not
+too different than what we went over at
+the beginning remember we said that
+let's say we had a single element in our
+input array let's say it's a three right
+we're assuming even for this input array
+there's gonna be an implicit
+one on the left and there's going to be
+an implicit one on the right
+these two values are not going to be
+popped when we're popping this
+array but we're still assuming that
+they're there for that computation that
+we're going to be doing
+that's exactly the same rule that we're
+going to follow
+so when we go from up here to down here
+right
+this is our sub problem so we we have we
+have identified what the sub problem is
+going to be it's going to be this
+sub array the only thing we have to
+remember is just like at the beginning
+how there's going to be an
+implicit 1 on the left now there's going
+to be an
+implicit 5 on the right so
+for the sub array that we're doing the
+left boundary
+is going to be at this value the right
+boundary is going to be
+at this value but these values are not
+going to go away
+we are going to leave this in the input
+array and
+we are going to make sure that we have
+an implicit 1 at the beginning of the
+input array
+and similarly when we want to solve this
+subarray we are going to assume that
+yeah there's just a single eight right
+so the left boundary is going to be here
+as well as the right boundary both
+boundaries are going to be here but
+we're going to assume that there's an
+implicit 1 at the right
+and this 5 is not going away the 5 is
+going to be here as well we're not going
+to pop it because take a look at our
+boundary our boundary tells us just to
+pop
+this subarray before we end up doing
+anything else so this is going to stay
+here we're not going to pop it
+but it is going to contribute to the
+total number of coins for example when
+we pop eight
+we're gonna get five times eight times
+one that's going to be the total number
+of coins we get
+once we pop this entire sub-array so
+using
+sub-arrays using this technique where
+for every value we're going to identify
+well what if we popped this value
+last that allows us to actually get a
+sub problem that we can cache now in our
+cache it's going to be
+let's say we call it dp this is our
+cache it's going to be a two dimensional
+cache because we are going to be using
+the left value as the first index and
+the right value as the
+second index these left and right values
+are basically just going to tell us
+what the sub array is from the original
+array right left is going to be the left
+boundary
+r is going to be the right boundary with
+that being said let me just give you a
+quick
+high level run through of the algorithm
+and then we're going to dive into the
+code
+so we remember in the brute force we
+started out with okay what happens if we
+pop this first what happens if we pop
+this
+first right so that's going to give us a
+decision tree now we're going to do it a
+little bit differently our decision tree
+now is going to be what happens if we
+pop
+this last what happens if we pop this
+last
+what happens if we pop this last which
+one of those paths
+is going to lead us to the maximum
+number of coins right
+so we are still going to brute force it
+kind of we are going to have that exact
+same decision tree
+only thing is we're going to use a cache
+we're going to take that sub problem and
+cache them so for example let's say we
+pop this value last what am i going to
+do
+and we actually are going to modify the
+input array so we are gonna add that
+implicit one at the beginning and at the
+end
+but our boundary is gonna be left is
+gonna be from here and right is gonna be
+from here that's ultimately
+these are the values that we're actually
+gonna be popping we're not actually
+gonna be popping these
+again the brute force what happens if we
+pop this last
+if we pop this last our left subarray
+becomes
+empty right there's nothing there in the
+left sub-array
+but our right sub-array is going to have
+this entire portion right
+so since currently our boundary our left
+boundaries here in our right boundaries
+here if we pop
+this value last this is what our total
+is gonna be we're gonna get
+so if we pop this last we know it's
+gonna
+we're gonna end up popping everything
+here before that right so when we pop
+this value we're gonna get
+three times one times one right so what
+i'm gonna say is three
+times nums of right which is over here
+plus
+one and nums of left which is over here
+minus one that's going to give us once
+we pop this
+plus we want the remaining number of
+coins that we get
+from popping the remaining portion of
+the left sub array we see that there's
+nothing here right
+remember we're not actually popping this
+value there's no other values in between
+so there is no left sub array what about
+the right sub array we're going to take
+our left pointer shift it by
+one that's going to put left over here
+so the right sub array is going to be
+all of these elements right so you can
+see we're going to get that total amount
+computed from our dp
+right we're going to get it from our dp
+if that's already been computed as a sub
+problem if it hasn't been computed then
+we're just going to do that
+brute force depth first search passing
+in these same parameters right
+l plus one and right now let's look at
+it for a more general
+case if we were popping let's say a
+middle value as the last value where we
+actually do have both a left sub array
+and a right sub array what's the
+equation going to look like then
+so we were looking at if we popped this
+value last next we're going to look at
+if we pop this value
+last we're also then going to look at
+this and this right that's basically the
+brute force right so basically we're
+going to have an i right it's going to
+start here
+it's going to run all the way through
+the end of the input array but now if we
+pop
+this last we know that if if this was
+popped last we'd end up popping all of
+this first and we'd pop this first so
+then once we popped this its left would
+be the one
+its right would be the one right so
+that's where we're getting this from
+right
+r plus one's here left minus one is over
+here
+multiplied by the value at index i which
+is one right
+but then what's our right sub array
+going to be clearly this is what the
+right sub array remaining sub array is
+right how much could we get from
+doing that well again in our dp or if
+it's not already computed in our dp
+we're basically going to call our depth
+search clearly you can see that the left
+boundary now is i
+plus one right basically we're taking
+this i moving it over here our right
+boundary remains
+unchanged right this is the sub array
+that's what i'm saying here
+what about our left sub array over here
+well the left boundary didn't change
+but the right boundary was decremented
+by one that makes sense right
+so that's basically the idea now my
+question is we know why the memory
+complexity is big o of n squared right
+the
+cache is basically going to be from
+every single subarray right
+and it's two dimensional so that makes
+sense i think why it's
+the memory is n squared but why is the
+time complexity big o
+n cubed well we know we're going to be
+breaking this problem down
+into sub problems of every single
+subarray we know that there's
+n squared number of sub arrays right so
+for once we have a sub array right like
+let's consider the entire input array
+was a sub array right
+we know that for every subway we're
+basically going to be iterating through
+every value right this is the first this
+is the second this is the
+and so on and so on right and
+considering if this was the last value
+popped so
+it's basically taking the total number
+of sub arrays which we know is n squared
+and multiplying it by another n because
+we're having to iterate through every
+single
+value for a given subarray with that
+being said let's jump into the code once
+you actually know these tricks and
+especially once you know
+this formula the algorithm is actually
+pretty easy with
+recursion so like i mentioned we are
+going to be
+updating the input array we're basically
+going to be adding a 1 at the beginning
+and then adding a 1 at the end we're
+also going to be having
+a cache i'm going to call it dp because
+it's short and then we can start with
+our
+depth first search function so let's
+define it we know that we're just going
+to have left
+and right boundaries right so basically
+left and right are going to be indices
+of the input array but let's call that
+depth first search function we know
+we're just going to be end up calling it
+and then returning the results so let's
+do that before we actually define the
+function
+now what am i going to pass in as a left
+and right boundary zero
+and you know the last index no right
+because we don't want to actually
+include
+this one and we don't want to include
+this one so i'm going to be passing in
+zero plus one which is one and basically
+passing in
+the length of the entire empire numbs
+minus two because we know
+this minus one would give us the last
+value minus 2 is going to be 1
+less than that so because remember we're
+not actually popping these
+and these okay so now what are actually
+the base cases for this algorithm well
+if left equaled right that means we have
+only one
+balloon left to pop so that's actually
+okay but if left
+past the right pointer so if left became
+greater than right
+that's when we know we've ran out and
+that's when we know we're gonna
+we're gonna return zero meaning there's
+nothing left to pop
+otherwise maybe we've already computed
+this before and it's already in our
+cache
+right this left and right pair is
+already in dp in that case we're just
+going to return dp
+of left and right otherwise
+we know that it hasn't been computed so
+now it's our time to actually compute it
+so let's set it initially to zero
+and now we're going to determine what is
+the max number of coins we could get
+for this pair so remember we're going to
+be iterating through every i
+considering if at index i that balloon
+was the last balloon we popped so let's
+go through every index from
+left all the way to right and let's
+compute the number of coins
+we could get from that so we know that
+if
+this numbs of i was popped last we'd get
+numbs
+of i multiplied by nums
+of right plus 1 multiplied
+numbs of left minus one right and now to
+coins we're going to
+add the additional coins that we would
+get from the left and right
+sub arrays right so we're going to be
+calling our depth first search function
+the left boundary stays the same and
+we're gonna do i
+minus one and we're also going to be
+calling it for the right subarray which
+we know we can get
+with i plus one as a left boundary and
+our right boundary is going to stay the
+same so now we've computed the total
+number of coins right it makes sense why
+we're doing this
+and then calling our debt for search
+function so now we can potentially
+update the result which we know we're
+storing here in dp
+of left and right so we're going to
+update it to the max of potentially what
+it already
+is and the max of what we just computed
+the total number of coins that we just
+computed and so we're basically going to
+be running through the entire loop
+doing that i hope that this kind of
+makes it a little more obvious of why
+this is n cubed we know that this debt
+for search function
+the maximum possible number of ways it
+could be called is
+n squared right every pair of the left
+and right indices could be n squared
+times
+e and then if we actually if it's
+already been cached then we're going to
+return it in big o
+of one time if it hasn't been cached
+meaning it's the first time we're
+computing this
+we're going to have to run through a
+linear time loop
+and for each of these pairs we are going
+to have to run through a loop at least
+once so that's what's going to give us
+the n cubed
+time complexity but yeah once this has
+been computed we know
+you know we can just go ahead and return
+it from this recursive function
+and that is the entire thing so
+you know we defined a function inside of
+a function but once you know
+you know the trick which is not so
+obvious we do have to do this
+and then we do have that relationship of
+you know we're popping this
+this balloon last it's not super
+intuitive but once you do have it
+hopefully your interviewer gives you
+that hint
+but and if you do get that the code is
+actually not too bad as you can see when
+you do
+recursion so i hope that this was
+helpful if it was
+please like and subscribe it supports
+the channel a lot and i'll hopefully

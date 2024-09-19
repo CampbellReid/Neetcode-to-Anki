@@ -1,0 +1,500 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+let's solve the problem
+word break so we're given an input
+string
+and a dictionary of strings called word
+dict and we want to return true
+if and only if s can be broken
+up into separate strings such that every
+separate string in s is also
+found inside of our word dict and we
+are allowed to use words from the word
+dict multiple times
+so for example let's say we're given an
+input string leak code
+and we're given a word dictionary of
+words called
+leat and code so obviously in this case
+we could split this string right into
+separate strings lee
+right break it down in this middle
+position and then the sep
+the second string would be code right so
+clearly this can be broken up into words
+that are found in the word dictionary so
+therefore we are going to return true
+now what if we took code outside of our
+word dictionary
+well then in that case this portion is a
+word right but we have no matching word
+in our dictionary for the remainder code
+so in that case we would have to return
+false and you know let's say we had an
+input string instead
+called lea and li again right so two
+leads in a row would
+would we return true yes because we're
+allowed to use this word from our
+dictionary multiple times right clearly
+it matches this
+and it also matches the first portion
+now let's start off with the brute force
+approach
+how would we even structure a brute
+force solution well there's actually
+two ways to do it but one of them
+happens to be more efficient and i'll
+tell you why
+so one thing we could try for an input
+string like this one we could check okay
+the first character
+right basically the first prefix of the
+string l
+by itself right is this a word that's
+found in our word dictionary it's not
+right
+so let's try maybe the first two
+characters together are a word right
+that's not it either
+we would try the first three right
+basically we would try every single
+portion from the beginning until we
+found a
+matching word that does exist in our
+word dictionary
+and we know that we are gonna find one
+like this right the first
+four characters of the string are
+a word right so once we found that what
+are we gonna do
+clearly we have a sub problem right we
+found a matching word for this portion
+but now we want to know can we break up
+the rest of this string
+with words from our dictionary so that's
+kind of how uh we're going to
+do it right that's what's going to be
+the sub problem basically so instead of
+starting from the first position in the
+string we would start
+at this position in the string and try
+to word break it
+now in this approach what we're going to
+basically be doing potentially is from
+every single starting position right
+we're going to check every prefix right
+so
+from the first starting position we
+might also get if you know this happened
+to be a word then we would
+start at this position and then do the
+same thing for this right every
+word starting here so basically we're
+going to try every word how many
+different words are we going to end up
+trying we're going to try
+let's say n is the size of our string n
+and we're going to try basically from
+every single starting position to the
+end
+so that's going to basically be n times
+n now
+we could also do it a different way
+instead of trying
+every single possible you know prefix
+let's
+just check every word in our word
+dictionary and see if that matches
+for example this first word is four
+characters
+long right so what we're going to do is
+we're going to check the first
+four characters in our string does this
+match this word clearly it does right
+so what does that tell us that tells us
+now you know we have the same sub
+problem as before
+we're going to start from these this
+next position now right and check
+and from here we're basically going to
+be doing the same thing right so we're
+going to check
+is elite basically you know the first
+four characters does that match lee
+this does not match lee right so now
+let's check the next word in our word
+dictionary and check does that match
+uh the characters over here it does
+right we found
+code so this is basically another way to
+do this problem instead of checking
+every single possible prefix right of
+any length what we're going to be doing
+is we're going to be checking every
+single word in our word
+dictionary as the prefix so instead of
+being
+o of n times n we're going to be doing o
+of n
+because potentially we are going to be
+going through every single starting
+position but we're going to be
+multiplying
+by the number of words in our word
+dictionary which is let's call it
+m and the reason why we're going to be
+doing this approach
+is because it's going to be a little bit
+more efficient and the reason is they
+they tell us below in the problem
+statement that the max size of word
+dictionary
+is going to be smaller than the max size
+of the string so this is overall
+probably going to be more efficient
+now this isn't going to be the overall
+time complexity we are actually going to
+multiply it by another
+n because when we're checking for
+example you know this brief
+this string when we're checking does
+that match the first four characters
+here
+that's also a end time operation because
+it could you know potentially be the
+size of the input string s
+so this is basically going to be the
+overall time complexity n squared
+multiplied by m so i'm just going to
+basically show you the same formula that
+i usually do i'm going to give you a
+quick illustration of what the decision
+tree would look like then we're going to
+understand how we could
+cache that to eliminate repeated work
+and then by understanding that we're
+going to go to the optimal
+dynamic programming solution the bottom
+up approach and then we're going to code
+that up usually the dp solution
+is a lot less code than caching so we're
+going to be looking at our input string
+neat code
+so i think that's a little bit better
+than neat code wouldn't you say so
+what the decision tree is gonna be is
+we're gonna start at the first position
+right for example i
+equals zero we're gonna be keeping track
+of whatever index we're at right because
+we know that if we can find a word
+you know that matches neat for example
+then the sub problem is gonna be
+you know finding words that can match
+the remainder of the string for example
+if we did that
+our i instead of starting at index zero
+would basically be starting at
+index four right so that's kind of what
+this that's what the sub problem is
+going to be
+so really we're only going to have one
+variable that we're keeping track of
+in this backtracking solution and so
+remember we mentioned
+we're not going to be doing it like this
+we're not going to check every single
+prefix
+we're going to have decisions in our
+decision tree based on the number of
+words that are in the word dictionary so
+we're going to have a decision for neat
+we're going to have a decision for elite
+and we're going to have a decision for
+code now what we're going to notice is
+when we try elite on here
+right basically is four characters
+therefore we're going to check the first
+four characters of here
+compare it does that match lee it does
+not right we're just one character off
+that first one so basically that means
+we're not going to continue down this
+path now let's try code does code match
+the first four characters definitely not
+so we're not even gonna
+continue down this path either of course
+neat
+does match this so we are gonna continue
+down here
+we're gonna do three more decisions
+basically one for
+every single word in our word dictionary
+now one thing though
+is when we are starting here we know we
+match the first four characters so by
+this point we are now going to be
+at i equals four meaning we're going to
+be looking at this
+part of the string so as we can see
+checking neat that's four characters
+long so let's check
+four characters starting from here
+that's not matching of course so then
+we're not going to continue here lee
+does that match over here nope we're not
+continue down this path
+code does code match this portion yes it
+exactly matches
+so therefore we are going to update our
+i pointer again since we matched four
+more characters
+we're just gonna take i and add four to
+it now
+so now i is going to be at eight
+and eight happens to be that exact
+position
+right after the end of the string right
+this is where index
+8 is therefore we basically know that we
+were able to
+match the entire string therefore we
+know we can return true right once we
+find a single true
+that means we just terminate we end the
+function we can just call
+we can just return true and the function
+is done now from this example it might
+not be super intuitive why we would use
+a cache but let's say we had another
+path in our decision tree that led us to
+for example
+index i equals five right and let's say
+we had we used all three decisions
+in that path and let's say none of them
+yielded
+the correct result meaning we were not
+able to word break this string
+from starting at index five so then we
+would return false from this
+path right and we would want to cache
+that we would want to say
+that let's say dp of index five right we
+would want to set that to
+false basically what we're saying is if
+we ever
+reached this same function call if we
+ever tried it again maybe you know this
+decision tree could be really big maybe
+there would be another path
+from you know somewhere over here where
+we tried index i equals 5 again
+in that case we would want to return
+false immediately because we saw
+from here there was no possible way to
+break it down therefore we don't need to
+redo
+all of that work if we you know try the
+same exact thing
+so we discovered that our base case is
+going to be dp
+of 8 because a is the length of the
+string basically is going to be
+true right if we can ever get to that
+last index we're going to return true
+so what we're going to do is now do the
+bottom up approach right we're going to
+go through every single
+index in reverse order right so we would
+start at the last character which is
+position
+seven right and see can we word break
+the remainder
+of this string you know and we would try
+every single word right like neat does
+neat match this string well they're not
+even the same size right if we tried to
+match
+neat on four characters starting from
+here we would go
+out of bounds of this string right
+there's not enough character so of
+course this is going to be
+false right it wouldn't match neat it
+wouldn't match the other two
+words in our dictionary either and
+that's obviously going to be true for dp
+of 6
+dp of 5 as well so both of these are
+also going to be
+false right basically if we started from
+6 or if we started from 5
+we would not be able to match any of the
+words in our dictionary
+but now if we start here index 4 so
+we're now trying to figure out dp of 4
+is that true
+well yes it is right it doesn't match
+neat it doesn't match elite but it does
+match
+code so we are going to set dp of 4
+equal to true
+so now let's keep doing it until we get
+to the first character so now we're
+going to be trying from dp
+of 3 right so starting from this
+character are we going to be able to
+match any of these well none of these
+words even start with a t
+so of course we're not going to be able
+to match so dp of 3 is going to be false
+what's dp of 2 gonna be it's also going
+to be false because
+if we were to start at this character
+this e
+would we be able to match any of the
+words in our word dictionary of course
+we would not and
+what about this position if we started
+here would we be able to match any of
+the words
+in our word dictionary again not so dpf3
+dpf2
+and dp of 1 are going to be false
+meaning we cannot word break this string
+if we start at any of these first any of
+these three positions basically
+now we're finally at the result that we
+were looking for dp
+of zero is dp of zero gonna be true
+well let's take a look so we're starting
+at
+the first character in the string can we
+match any of the strings we can't match
+lead we can't match code but
+neat it does match this portion of the
+string
+starting at index zero so then the
+question becomes
+we're asking can we break the entire
+string starting at
+index zero so now since we did match the
+first
+four characters we want to know were we
+able to match the remainder of the
+string right so we want to know
+starting from here were we able to match
+this string to words in our word
+dictionary now this is why we computed
+this bottom up right because
+this is index 4 right notice how we
+already computed
+index 4 over here right it's the one
+that's highlighted in green
+because it was true we were able to do
+it so
+basically the equation that we would use
+for this is going to be
+dp of 0 plus
+the length of the word that we were able
+to match with
+and we know the length of the word
+length of the word
+neat is going to be 4 so basically we
+can replace this length of the word with
+four so zero plus four is just dp of
+four we know that was true
+so we can set dp of zero equal to true
+so this is basically uh the result right
+this is how we're going to compute
+it and this is what we're going to
+assign dp of 0 to and once we've done
+that we've computed the result
+we know we can return true for the
+overall function
+so with that being said let's jump into
+the code so our cache is going to be
+let's say a one-dimensional array right
+because for every position i
+in the string s we are going to have a
+value so we're going to initialize this
+to false it's going to be the length of
+the string s
+plus 1 for our base case and we are
+going to initialize our base case we
+know that it's the last position
+basically the position
+the position out of bounds of the string
+so the length of
+s and we know that's going to be set to
+true that's our base case
+so now we're going to go through every
+position i in
+the length of the string starting at the
+last index and working our way to the
+beginning so that's why i'm using the
+decrementer of negative one
+and we're going to go up until the
+beginning of the string
+and for each position i we want to try
+every single word in our word dictionary
+and see if the word
+matches this portion so first we have to
+see if
+starting at position i the string s even
+has enough
+characters for w to be compared to it so
+what we're going to do is we're going to
+check
+i plus the length of w and we want to
+know is it less than or
+equal to the length of s if that's the
+case
+then that means there are enough
+characters in
+s for us to compare them so that's what
+exactly what we're going to do we're
+going
+if this is true then let's compare so we
+want to know if that's true
+and if s starting at index i
+going up until i plus the length
+of w so basically let's say
+w was three characters then we want to
+know the first three characters in
+s starting at index i are they exactly
+equal
+if they are equal then we wanna know
+okay so dp of
+i is going to be set to dp
+of i plus the length of w right that was
+the relationship we got
+i plus the length of whatever the word
+happens to be
+now if we got a single a way to word
+break this
+starting at index i that means we can
+basically stop this loop right we don't
+have to look at every single word in the
+dictionary if we found at least
+one way we were able to word break it
+then we're gonna stop so basically if dp
+of i
+is true then we can break out of this
+for loop and then move on to the next
+index so we're going to start basically
+at the last index
+keep going until we've gotten to index 0
+and then once we've done that we know we
+can actually return that
+and that's going to be stored in dp of
+zero so believe it or not
+that is the entire code about 10 lines i
+think and
+this is a pretty efficient solution as
+you can see so i hope that this was
+helpful
+if it was please like and subscribe it
+supports the channel a lot
+and i'll hopefully see you pretty soon

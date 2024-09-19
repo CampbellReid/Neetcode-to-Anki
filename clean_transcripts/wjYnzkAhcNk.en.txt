@@ -1,0 +1,534 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+let's all
+find the duplicate number and you can
+see that i'm not
+really a big fan of this problem and
+maybe i'm just salty but i really feel
+like this type of problem
+is the ultimate test of whether you've
+seen the problem or not
+but i'm still solving it nonetheless
+because it's an interesting problem
+and it does show up in interviews quite
+a lot it seems i really don't know how
+anyone would be able to solve this
+problem in a 30 minute interview without
+having seen even the person who came up
+with
+the algorithm floyd i i doubt even he
+could solve this in 30 minutes in an
+interview setting
+but that's okay let's just learn the
+problem today so we're given an
+integer array of nums containing n
+plus one integers this is the length of
+the array but
+every single value in the array is going
+to be within the range
+one through n so we have n different
+values that could be in the array like n
+different
+choices for the integers but we have n
+plus
+one integers so that kind of implies
+that at least
+one of the numbers is going to be
+repeated and they tell us that
+actually it's only one number is
+guaranteed to be repeated
+and the only thing we want to do is
+return the number that
+is repeated more than once now the easy
+way to solve this problem of course
+would just be have a hash set right
+iterate through every single value
+find the one that occurs twice by using
+our hash set that's going to be o of n
+time and o of n memory but they tell us
+that we can only use constant extra
+space
+and we can't even modify the input array
+so we can't even sort it or anything
+and i think those restrictions probably
+make this a hard problem rather than a
+medium problem but that's okay
+so there's two aspects to this problem
+and i'm going to explain both of them so
+we're going to solve this in o of n time
+and o of 1 space the first thing to
+recognize is this is a
+linked list problem specifically a
+linked list
+cycle problem and the second thing is
+to know floyd's algorithm which will
+tell you the beginning of a cycle in a
+linked list so there's two problems one
+to even
+recognize that this is a linked list
+problem and two to know the algorithm to
+actually apply to it
+once you know that so let me actually
+show you how we can
+we can figure out both of these things
+and yeah you're right it's probably not
+super intuitive and i i'm not really
+sure how you would be able to figure it
+out on your own if you've never done
+something like this before
+so remember that the length of our array
+is n plus 1
+but every value in the array is going to
+be between
+one and n so there's n different values
+but there's n plus one positions so in
+this
+array we have five different elements
+right and we know that the elements are
+going to be in the range
+one through four right so basically
+instead of thinking of these as
+values let's think of them as pointers
+so we know for sure that every single
+value
+in the array is going to be in the range
+one through four that means
+if we considered every value as a
+pointer
+each value is going to point at some
+position
+in this block of four you can see that
+this one
+points at position one this three
+points at position three this
+two points at position two over here
+and this four points at position
+four over here and then this two points
+back at position four so that's how you
+can kind of see that
+you know in that case there was a cycle
+and you can see i basically drew out the
+linked list
+version of that so it's not hard to see
+that this portion is going to form
+a cycle because no matter what value we
+look at it's going to point at
+some other value inside of this range
+there's never going to be an
+exit condition none of these values are
+going to point outside of the range
+either you know over here or over here
+none of them are going to point
+outside of the range so this portion is
+going to form a cycle
+linked list somewhere right what about
+this
+value is this going to be a part of the
+cycle
+notice how none of these values nothing
+is
+ever going to point at index 0 because
+remember our
+range is between 1 through 4 none of
+them is going to be zero so
+none of them is going to point here so
+we can guarantee that this
+is not going to be a part of the cycle
+and when you see i
+took this array drew it as a linked list
+you can see
+this is index zero right you can see
+that this was our cycle portion
+but this was not included in the cycle
+and that's going to be very important
+because we do when we start traversing
+this linked list we're always going to
+start here
+because we know this is not a part of
+the cycle
+so in our input array you can see that 2
+is the duplicate right 2
+is the one that shows up multiple times
+so in the context of this problem
+this position is going to point at index
+2
+and this position is going to also point
+at index two
+so what does that tell us about our
+linked list
+that means at the node that's labeled
+two
+the each value of the node each label is
+going to map to the index so this
+is basically node two right what that
+tells us about
+node two is that multiple nodes are
+going to be
+pointing to node two right therefore
+we know that this is the one that's
+going to be the start of the cycle
+we know for sure there's going to be a
+cycle and we know for sure there's going
+to be a portion before the cycle
+the portion before the cycle of course
+is eventually going to lead us to here
+which is the start
+of the cycle and of course there's going
+to be another node that completes the
+cycle right putting it back
+pointing back to this node so if we can
+somehow identify the beginning of a
+cycle
+in this linked list then we will know
+that that beginning of the cycle
+is the return value that we're looking
+for in the output you can see yes
+2 is the duplicate that's the one we
+want to return therefore we want to
+return the start of the cycle
+so at this point it's all about applying
+floyd's algorithm to find the beginning
+of a cycle
+so that's once you've determined that
+it's a linked list problem then you just
+need to apply
+this algorithm and this algorithm itself
+is actually also not very intuitive
+so let's look at a slightly different
+example so i can illustrate the
+floyd's algorithm so first i'm just
+going to tell you what the algorithm is
+and then i'm going to explain a little
+bit of the intuition of why it actually
+works
+so the slow pointer and fast pointer are
+both going to start at this position
+the slow pointer of course is going to
+be shifted by one
+each iteration so that's one jump that's
+two jumps that's three jumps so we just
+made three jumps with our
+with our slow pointer let's do the exact
+same thing with our fast pointer
+so remember a jump with the fast pointer
+is going to be two positions so that's
+one jump that's two jumps
+and let's make two more jumps from here
+so we're gonna go to two
+and then back to three so you can see
+that it got a little bit
+messy but we made three jumps with the
+fast pointer and we made three jumps
+with a slow pointer and you can see
+this is the first position that they
+intersected at
+so this was the intersection of
+the us of the two pointers right this
+was the first
+intersection so that's the first phase
+of this algorithm first we find the
+first position that they intersect at
+then we take our slow pointer leave it
+here
+so our slope pointer is going to be here
+right and then we're going to be done
+with the fast pointer we're going to
+take a
+second slow pointer and put it right at
+the beginning of the array
+and each of these slow pointers we're
+gonna keep shifting them by
+one until they intersect one more time
+so
+this slow pointer is going to be shifted
+by one this slow pointer is also going
+to be shifted by one
+hey and we just found out that they
+intersected right
+and this second point of intersection is
+always going to be the result it's not
+intuitive at all
+why this is the case yet but let me
+explain that but now you know the
+algorithm if all you wanted to do was
+memorize it that's literally it now you
+can code it up
+that's why i don't like this problem
+because it's simple if you
+if you've solved it before so this
+algorithm relies on the fact that the
+intersection point like the first
+intersection between the two pointers
+the distance between this point and the
+beginning of the cycle which in this
+case
+is one right is always going to be the
+same as the starting point
+distance from the cycle from the start
+of the cycle that's also
+one right since we know that's the case
+that's how we can take two slow pointers
+start one here start one here and then
+keep shifting until they intersect
+then we get the result but why is it the
+case that the distance between this
+is the same as the distance between this
+looking at this bigger example why is it
+that
+the distance between the start and to
+the start of the cycle
+is always going to be the same between
+the intersection and the start of the
+cycle why is that the case well let's
+just draw out a few
+distances let's say the distance this
+is p right basically p is the number of
+previous nodes we have before the actual
+start of the cycle
+and let's just say you know arbitrarily
+this is this the
+intersection point between the two
+points right and we don't know that this
+is going to be the same so let's just
+label it
+x for noun let's not label it p so
+because we don't know for sure that it's
+going to be the same
+let's label it x this is our unknown and
+then
+the remaining portion of the cycle
+is going to be c which is the length of
+the cycle right in this case it's 5
+minus x right because the total cycle
+is is 5 which is c and this this x
+portion makes up the remaining portion
+of the cycle that's why the
+this part is c minus x so we know that
+the slow pointer is going to start at
+the beginning it's going to traverse
+this p
+portion and then it's going to traverse
+the c minus x portion and it's going to
+land
+at the intersection point right now we
+know
+that the fast pointer is going to do
+more than that it's going to of course
+do this p portion
+once then it's going to do a complete
+loop right because remember the fast
+pointer is going to
+out loop the slow pointer and it's going
+to overlap the slow pointer so it's
+going to have to complete
+a full at least one full loop
+and then once it does a full loop it's
+going to be back here
+and then it's going to traverse this c
+minus x
+portion to get to the intersection point
+right we don't know where the
+intersection is
+obviously i drew it over here but it
+could be anywhere so let's
+write that mathematical equation out so
+we know that
+two times the number of iterations the
+slow pointer does is
+equal to the number of iterations the
+fast pointer does right how many
+spaces it moves versus how many spaces
+the slow pointer moves of course
+the fast one is twice as fast that's why
+we have to multiply the slow one by two
+to make it equal to this one and how
+many
+iterations did we say that the fast one
+does it's going to do p
+plus c x right to get to this position
+and then it's going to do another
+complete
+cycle starting from here to get back to
+this position right
+so the fast pointer is going to be p
+plus c minus x
+plus c again so more simplified it's
+going to be
+p plus 2c minus x
+the the slope pointer is just going to
+do p and then it's
+just going to do c minus x so we'll have
+a 2 on the outside
+p plus c minus
+x so i'm going to take this equation and
+simplify it over here to the right
+so once we simplify it a little bit
+we're going to get 2p
+plus 2c minus 2x which is
+equal to p plus 2c
+minus x and then this is the part where
+you can start doing a little bit of
+algebra so we can cross out the 2c from
+both sides of the equation we can cross
+out one x
+from each side of the equation and we
+can cross out one p
+from each side of the equation once we
+do that algebra we're left with the
+equation and sorry that it's getting a
+little bit messy we're left with a
+single p
+and a single negative x so we get p
+minus x
+is equal to notice how we crossed out
+everything on the right side so we got p
+minus x is equal to zero when we
+rearrange that we get
+p is equal to zero what did we just
+prove we just proved that the
+pre-portion of the cycle is always equal
+to
+this right so that's how we know
+once we have a pointer over here then we
+can set another slow pointer over here
+keep iterating them by one and for sure
+when they
+meet they're going to meet at the inner
+at the start
+of the cycle they're always going to
+meet at this position so i hope this
+explains a little bit of the intuition
+and a little bit of how you know this is
+very rigorous this is a proof this is
+always going to work
+and now you know why it's always going
+to work but the code is actually really
+simple
+now one last thing i didn't mention
+before we dive into the code is that
+notice how this p
+this pre-portion could be really long
+it could be even longer than the entire
+length of the cycle so how would that
+update our math would our math still
+work out in that case
+and i didn't include this in the math
+because i don't want to over complicate
+it too much
+but yes the math would work instead of
+having
+2c over here we would have an n over
+here
+and the math would end up still working
+out basically we would always start back
+at the beginning here
+we traverse this many nodes and then
+from here
+basically instead of just traveling this
+small distance it could be possible that
+we would have to do multiple
+loops you know because if this distance
+was really long
+longer than the length of this loop we
+would have to do multiple loops but
+after all of that the remainder would
+still be
+this portion left so we would still end
+up getting to this position
+the enter the start of the loop okay now
+we can finally get into the code
+so remember we're gonna be starting at
+phase one of this algorithm we're gonna
+have two pointers fast and slow they're
+always gonna start at zero remember
+because we know
+zero is not a part of the cycle that's
+for sure
+and we're gonna keep iterating through
+these loops i think there's an easier
+way to write this code but i'm lazy so
+just while true
+we're going to and we start out with
+while true because we want to keep going
+until they intersect but notice how they
+already intersect at the beginning
+so we're going to update slow so
+basically slow is going to be
+set to whatever it points at so nums of
+slow right and then fast is going to be
+the opposite or the same thing numbs of
+fast but remember
+we're advancing fast twice and so we can
+just do this and of course
+fast and slow are always going to be
+inbounds right they're never going to
+point out of bounds we know that for
+sure based on the restrictions that
+we're given
+and if slow is equal to fast that's when
+we can break
+out of the loop if they're not equal
+then we're not going to break this is
+basically a do while loop
+but i don't think you can do that in
+python so once we've done this
+that's how we know okay fast and slow
+intersected here
+so now we're going to create a second
+slow pointer slow 2
+we're going to set it to the beginning
+right back at index 0
+and now we're going to keep incrementing
+this slow pointer and the first slow
+pointer until they intersect so this is
+phase two of the algorithm while true
+advance the slow pointer by one
+and advance the second slow pointer by
+one as well notice how trivial this code
+is the hard part is just figuring it out
+so when we're going to keep going until
+they intersect so
+if these were equal then we can break
+out
+of this loop and then return
+the slow pointer right we can return
+either of them slow one or slow two
+index that they're at right slow slow
+one and slow two are always an index and
+the index that they're at
+is the duplicate number because we have
+multiple values pointing to the same
+value that's the duplicate we can
+actually take this and return it here
+so i'm just going to go ahead and do
+that and this is the entire solution
+okay i don't know what i was thinking i
+don't know why i put fast on the outside
+this is nums
+nums of fast which is a number which is
+a different index and then we're going
+to use that same index again
+in the nums array that's how we're
+basically advancing fast by two we could
+obviously write it in different lines of
+code but i'm just gonna leave it as it
+is just because it's a little bit neater
+and also i don't i don't really know
+what i'm thinking but the slow
+the second slow pointer also needs to be
+advanced i don't know why i called it
+slow one but that is the entire code
+and then once they finally meet we are
+going to be returning that index
+and as you can see the solution does
+work it's in a linear time solution
+we definitely didn't need to use any
+extra space we didn't need to modify the
+input array
+this is the floyd's algorithm with a
+fast and slow pointer
+beginning of a cycle detection so i hope
+that this was helpful
+if it was please like and subscribe it
+supports the channel a lot and i'll
+hopefully see you pretty soon

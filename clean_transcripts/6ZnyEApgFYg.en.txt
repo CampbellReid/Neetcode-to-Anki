@@ -1,0 +1,291 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+let's solve
+binary tree level order traversal it's
+basically just like it sounds so we're
+given a binary tree
+and we want to return the level order
+traversal
+of its nodes so basically going through
+every single
+level of the tree and going from left to
+right
+so for example for this tree we have
+this level
+so that's going to be one list we have
+the second level
+9 and 20 and then we have the third
+level 15
+and seven so we have one two three lists
+and these lists are going to be put
+together and that's going to be
+our result the three lists in that order
+so to understand what we want to do is
+pretty straightforward right so
+basically we have the first level right
+go from left to right
+we see that there's only a single node
+in this level three
+that's going to be one list we see the
+second level right that's what we want
+to do we want to traverse this
+tree every single level right one level
+at a time
+going from left to right so the second
+level
+we'll see 9 and 20 right we want to add
+that to a
+separate list and lastly we'll get to
+the third level
+going from left to right we have a 15
+and then
+a seven we're going to add that to the
+third list
+and so we've traversed the list in level
+order traversal and each of these sub
+lists are going to be
+put together into a single list and then
+that's going to be our results so that's
+what we want to do we
+know that that's pretty straightforward
+so
+the only question now is do you know an
+algorithm that can do that
+that can traverse it level order and if
+you don't
+the algorithm is breadth first search so
+we want to run
+breadth first search on our tree
+and then add the values into lists
+and the second thing to notice is do you
+know
+how to implement this breadth first
+search so we need to know
+this is the algorithm to use and now we
+need to know how to implement it and let
+me show you how to do that
+so we have a tree and we want to run a
+pretty standard algorithm
+on that tree called breadth first search
+and you might know how to
+already implement this algorithm you
+need a q
+data structure because we're going to be
+inserting elements
+to the right meaning we're gonna you
+know insert an element here here
+here right we're gonna be adding
+elements to the right portion
+and we're gonna be popping elements from
+the left portion so as soon as an
+so basically we're following first in
+first out right the first element that
+gets inserted
+over here is going to be the first
+element that gets removed right so
+that's the order
+we're going to be doing things in so the
+first thing we're going to do is take
+the first element
+3 and add it to our queue this is based
+basically to initialize the queue right
+and we know we're creating
+sub lists right so what we're gonna do
+now
+is see that okay how count how many
+elements are in our queue initially
+right there's
+one element in our queue so we're going
+to basically
+remove one element from our queue we're
+going to see okay the 3 is in the queue
+now let's get rid of the 3 and add it to
+a sub list
+right now the queue is empty so we know
+that this
+sub list is complete and what that tells
+us is basically we
+we went through the entire first level
+right
+that's what we're trying to do we're
+going through every level we know that
+the first level only had one element in
+it
+so now we're done but when we pop that
+three we need to add its children
+right it has two children it has a child
+nine
+and a child twenty so we're gonna add
+those children
+to our cue and we're to do it from left
+to right because that's important right
+we're doing this from left to right so
+we're going to add a 9
+then we're going to add a 20. okay so
+now we want to go through the second
+level of the tree right so we're going
+to have a sub list for the second
+level clearly we have two elements
+in our queue so we're gonna basically
+pop these two
+elements from our queue from left to
+right
+so the left is nine we're gonna pop nine
+from the queue add it to the sub list
+so nine is added to the sub list and
+notice how
+nine did not have any children right so
+we don't have to add any children
+for nine into our queue so next we still
+remember we had two elements we were
+trying to remove we have two elements in
+this level so let's
+now pop 20 so we can add 20 to our sub
+list right so now
+clearly this level is complete we added
+both nodes in the order 9 and 20
+to a sub list but notice 20 had a couple
+children had 15 and seven so as we
+remove
+20 from our q we're adding its children
+to the queue
+for the next level right because we know
+we want to keep
+going down a level so when we get here
+the values will already be added to our
+queue so
+15 and 7 are added to our queue we're
+done with the second level now time to
+go to the third level
+we see that there's two nodes two values
+in our queue
+so we're gonna pop both of these values
+first we pop 15
+add it to the sub list for the third
+level
+and then we pop seven add it to the sub
+list for the third level
+neither of these nodes had any children
+so now we're done we know we're done
+because our queue is now
+empty right there's nothing left in our
+queue
+so we created a sub list for every
+single
+level and as the question wanted us to
+do we're going to package
+all three of these sub-lists into one
+list and then return
+that as our result so we're really just
+doing a breadth first search algorithm
+with a queue on this binary search tree
+and since we're doing it like that
+the time complexity is going to be o of
+n we're only visiting every single node
+a single time
+the memory complexity is also o
+of n because our q at any given point in
+time
+our q could have up to n divided by two
+elements in it because the biggest level
+of a tree
+could be n divided by two that's how
+trees work
+binary trees at least and so we know
+that n
+divided by 2 can be rounded to big o of
+n so the memory complexity
+is big o of n with breadth with breadth
+first search
+so with that being said let's jump into
+the code
+so first let's initialize an array for
+the result
+and we also remember want to have a q so
+in python
+we can do that with collections dot deck
+this will give us a q and the first
+value we want to initialize this q
+with is the root node that we're given
+so with that we can start running the
+breadth first search and we're going to
+run breadth first search
+while our queue is non-empty remember
+and since the queue is not
+empty we're going to get the length of
+the cube right so we're going to get the
+number of
+nodes or values that are in this queue
+currently and we're going to go we're
+going to loop through
+every single one of those values this q
+length is basically ensuring that we we
+iterate through
+one level at a time we're going through
+one
+level at a time and with those nodes
+from that level we're going to be adding
+them to its own
+list right and then we're going to add
+that list to the result
+list so i'm going to loop through every
+value in this queue currently so for
+q length i'm going to pop nodes from the
+left
+of the queue right first in first out
+and it's technically possible that the
+node could be null
+so i'm going to have a check to make
+sure it's not null
+then we're going to take the node value
+and
+append it to the list level
+and and don't forget this is also
+important that to our queue
+we make sure to add the children of this
+node so node.left
+and node.right technically these could
+be
+null but that's why we have this if
+statement
+so then when the next loop comes around
+right we come around to the next
+iteration
+of the while loop it'll make sure to
+check that these nodes are non-null
+before adding them to its own
+level list okay so now we have the loop
+in place that's going to iterate through
+every node of a single
+level after we've done that entire level
+what we're going to do
+is take our result and make sure we add
+every single level
+to that result right and then we're
+going to keep running
+this outside while loop the outer while
+loop
+until there are no nodes left
+in our queue that's how we know we've
+gone through every single level
+added it to the result and then at the
+end we can finally return the result
+and one last thing we want to do is make
+sure that
+if we're adding a level to the result we
+want to make sure that level is
+non-empty because we know technically
+our queue could have
+null nodes we're not adding null nodes
+to the level list so
+we want to make sure that level is
+non-empty if we're adding it to the
+result
+we can run the code and see that it does
+work and it is pretty efficient this is
+a breadth-first search
+level order traversal of a binary tree
+and we did it in linear time and i hope
+that this was helpful
+if it was please like and subscribe it
+supports the channel a lot

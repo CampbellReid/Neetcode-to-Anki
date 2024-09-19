@@ -1,0 +1,435 @@
+everyone welcome back and let's write
+some more neat code today let's look at
+maximum product subarray and this is
+actually a
+dynamic programming problem and i'm
+going to show you how to
+solve this problem easily so we're given
+an integer array of numbers
+and we want to find the contiguous
+subarray
+that contains at least num one number
+and
+has the largest product so in this case
+we have a 2 a 3 a negative 2 and a 4
+and the largest continuous product we
+can make is 2 and 3 because
+2 times 3 is 6. that
+is the largest product we can't really
+make it bigger because there's a
+negative 2 if we multiply this by
+negative 2 it's going to be
+negative 12 that's not bigger than
+6. so what's like your first idea how to
+solve this problem maybe
+brute force right is there a brute force
+solution to this
+well we want to find a subarray right so
+why don't we just try
+every single subarray so let's say all
+sub arrays starting at two we got one
+sub array
+two sub arrays three four right
+and for each of these let's just
+calculate the product right like the
+first one is two the next one is two
+times three
+the next one is two times three times
+negative two
+the last one is two times three times
+negative two
+times four and we end up saying that so
+far the biggest
+is this but we're technically not done
+yet all of these sub-arrays contain
+two so now let's look at all sub-arrays
+containing three so we got
+one right just three then we got three
+times negative two then we got three
+times negative two
+times 4 and basically we repeat this
+process
+now you can tell that this is not super
+efficient
+the time complexity is big o n
+squared for each of these numbers we're
+going to end up having
+n sub arrays and we see that the total
+number of elements we have is also
+n right it's n elements in the array so
+we're going to get
+n times n is n squared so my question is
+can we do better and how can we do
+better maybe there's some
+patterns to this problem that we can use
+to our advantage to find a better
+solution than
+n squared so let's look at one example
+do you notice anything about this
+subarray well
+all elements are positive so what does
+that end up
+doing like this is all positive so we
+got a one
+okay and next we want to check this sub
+array okay multiply it by two
+we want to go even farther check the
+three
+okay multiply it by three and what if we
+kept having positive elements four
+five multiply by four multiply by five
+do you notice something up until this
+point our product is going to be a one
+up until this point it's going to be a
+two up until this point it's going to be
+a six
+up until this point it's going to be a
+24 up until this point is going to be
+120.
+if we have positive numbers no matter
+what
+happens they're going to keep increasing
+right
+so this is the simple case if we get all
+positive numbers
+then our product is always going to be
+increasing
+so now let's actually look at the
+opposite scenario what if we had
+all negative numbers because all
+positives is easy you just multiply
+all of them and you get the max product
+but with negative numbers it's a lot
+more tricky
+so let's look at the first number so up
+until here the max product is just
+negative one and then we we add
+a second element a negative two and then
+what do we get we get
+negative one times negative two and
+we know that the product of that is
+two right positive two now the last sub
+array we check
+from all the way from negative one to
+negative
+three so we introduce one more value a
+negative
+three and now if we multiply all three
+of these
+numbers together we see that our product
+actually got
+smaller now it's negative six and what's
+going to happen
+if we had a another element over here
+what if we had a negative four
+then we multiply by negative 4
+and now we see that our product is going
+to be
+24. so you see that when you have
+negatives consecutively the sign is
+alternating so when you want the maximum
+it makes it kind of tricky to have
+negatives but we also see that
+even though we got a negative six over
+here
+there's actually a subarray that has a
+better solution if you just take
+these two numbers negative two times
+negative three we get a
+positive six so why did we get a
+negative six over here
+how can we find the real maximum which
+is
+positive six so even though we're
+looking for the max
+product sub array we're actually also
+going to need to keep track of the
+minimum as well and i'm going to show
+you why
+so first do you at least agree with me
+that
+if we want to find the max product array
+sub array of this of the of the entire
+thing
+it might be helpful for us to at least
+solve the sub
+problem which is the max product
+subarray of just the first two elements
+first and then use that to get
+the entire one okay that makes sense
+we know that the max product subarray of
+this
+is two now if we had a positive three
+over here
+then we would say okay if i can get the
+max sub array of the first two elements
+and multiply it by
+three i'm gonna get two times three it
+works when these are positive numbers
+but we actually have a negative 3 over
+here
+so i'm gonna say get the max product sub
+array which is positive 2
+but let's also get the the minimum
+product sub array of these two as well
+and what do we know about the minimum
+what's the
+minimum product sub array of these two
+it's going to be
+negative two so i'm going to keep track
+of both positive and negative
+so we have a positive 2 and a negative
+2.
+we keep the max and we keep
+the minimum so now when we want to
+compute the max product subarray
+when we include this 3 then
+we can compute that we can compute that
+using
+both of these values so we know that
+when we take the maximum 2 we get
+negative
+3 times 2 which is negative 6
+and we know when we take the minimum we
+get we get
+negative 3 times negative
+2 and that gives us a result
+of positive six so we know the maximum
+is positive six and the minimum is
+negative six so we take positive six
+and put it over here and we can take
+negative six
+and put it over here and hypothetically
+maybe we get another element
+and this time and this time whether it's
+positive
+or negative right so in this case let's
+say it's negative 4
+we will be able to find the solution
+because the
+minimum or rather we're looking for the
+max product sub array
+and we know if we take negative four
+multiply it by
+the current minimum which is a negative
+number
+negative six we will end up getting 24
+which is what we're looking for but if
+you reverse it what if we had a
+positive 4 here instead well in that
+case we can say okay
+positive 4 multiplied by our
+maximum right our maximum which is
+positive 6. so 4 times positive 6
+we get 24. we still get it right so this
+if we maintain the maximum and the
+minimum
+we have all the information we need as
+we continue to add more
+elements to our array so now let's just
+look at
+one edge case so we're talking about
+positive numbers and negative numbers
+but we know that one last
+edge case exists the dreaded zero value
+right so what if we had a zero value and
+then maybe some other numbers three
+five our zero is gonna kind of
+kill us right it's gonna kill our streak
+like look what's going to happen
+to our min and max if we take 6
+multiplied by 0
+we get 0 if we take negative 6
+multiplied by 0 we get 0 again
+right x times 0 equals zero
+and then if we try taking this zero and
+making it a product of maybe three and
+five
+it's going to continue being zero right
+because any number times
+zero is going to be zero so i'm gonna
+decide to handle this
+in a different way so anytime we get a
+zero value
+i'm going to reset our max to zero or
+rather to one and i'm also going to
+reset
+our minimum to 1
+and the reason i'm gonna do this is
+because i don't want to
+kill our product right i'm just going to
+say that
+zeros are ignored we don't really care
+about zeros and the reason i'm setting
+this to
+one is because then when we start
+introducing new values like
+3 it's just going to be 1 times 3 right
+which is
+going to end up being 3 so 1 is like a
+neutral value for us
+so those are the main things we want to
+maintain the max
+and minimum of our product and we want
+to handle the
+zero case by resetting everything
+to a neutral value like one okay so now
+let's code it out
+i'm going to say our result is initially
+just going to be set to the max value
+contained in nums because we at least
+have to set it to some value
+we can't just initialize it to 0 because
+what if we had an array with just one
+number and it happened to be negative
+one right
+in that case this is our max product
+which is
+even less than zero so zero is not a
+good
+default case and i'm going to maintain
+the current
+min and the current max and i'm gonna
+initialize these
+to one e because we know one is like a
+neutral value
+and then we're just gonna start
+iterating through
+every single number in our input array
+we know that if we ever get to a zero
+we do not want to handle that we don't
+want to add that
+as a part of our product so we don't
+want to mess up our current min and max
+by multiplying it by zero
+because then it's going to stay zero
+forever so instead what we're going to
+do
+is we're going to reset our min and
+our max to one each
+and we're just going to continue to the
+next iteration of the loop
+if this doesn't execute that's when
+we're going to actually
+do our code and recompute the current
+min
+and current max so our current max how
+are we actually going to compute it well
+in python it's really convenient for us
+because we can say okay the current max
+could potentially be
+the the new number that we just found
+multiplied by the current max
+if the current max happens to be
+positive and n is positive
+it could also end up being the
+the input value n multiplied by the
+current
+minimum right what if n is negative and
+current minimum is negative then
+this could end up being a positive
+number which could be our current
+maximum
+the third option is n itself
+because what if we had an input such as
+negative one
+and eight well in that case the current
+min and max is going to end up being
+negative 1 and either of those numbers
+multiplied by
+8 which could be our hypothetical n
+value
+it's going to end up being negative 8 so
+8 it's by itself
+which is n is the maximum and
+the fun thing about python is that look
+we just put
+three values into our max function some
+languages don't allow for this but
+there's obviously ways to get around it
+and so now that we have our current max
+we can
+do the exact same thing for our current
+min
+so min so we can actually take all three
+of these values
+copy and paste them and then put them in
+the min because
+we want whatever the min containing n is
+and it could be anything it could be
+n times current max n times current min
+or
+n itself so an example would be negative
+one
+and negative eight if we multiply
+these together we get a positive eight
+but we don't want that we want
+the minimum which could be just negative
+eight by itself which would be
+this third case but this is where i
+always end up with a bug
+so do you see how we actually recomputed
+the current max but we want to use the
+old current max so i'm actually going to
+have a temporary variable
+up here temp and before we end up
+reassigning current max i'm just going
+to compute
+current max times n and then save it in
+temp so then we can use it
+down here so we're going to replace this
+with temp
+so this way we're always keeping track
+of what the current max is
+and what the current minimum is and so
+we can
+update our result after each iteration
+of the loop
+and we want the max product so we can
+take the maximum
+of result itself because result could
+still be the max
+current max and current minimum so
+that's actually it like we've done it
+and we can
+now just return what our result and so
+this is actually not
+that much code and it's not even like
+when you
+look at it it's hard to recognize that
+it's even a dynamic programming problem
+because it's not like we're storing an
+entire array like dp
+and then having an array we're just
+maintaining two values
+current min and current max and what
+they tell us
+is for let's say for example
+we were at this value n then we're going
+to have
+the current maximum of this subarray
+and the current minimum product of this
+subarray
+and then when our n gets shifted to the
+next value
+we're going to have the current maximum
+of these three
+and the current minimum product of these
+three and then by the time
+our n value is out of bounds we will
+have the current max
+and the current minimum of the entire
+array computed
+so it runs efficiently and that's
+because we're
+only iterating through the input so
+instead of being n squared
+the time complexity is just big o of n
+the memory complexity is big o of one
+because we are not using an array we're
+just using
+uh single variables i hope this was
+helpful
+if you enjoyed please like and subscribe
+it supports the channel a lot and i'll
+hopefully

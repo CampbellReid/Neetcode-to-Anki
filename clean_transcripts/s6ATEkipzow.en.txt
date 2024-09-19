@@ -1,0 +1,275 @@
+everyone welcome back and let's write
+some more neat code today
+solving validate binary search a very
+good question for practicing binary
+search tree questions we're just given a
+root of a binary search tree and we just
+want to determine
+is it a valid binary search tree or not
+and from learning data structures and
+algorithms you might know that a valid
+binary search tree
+is such that we have a node
+like two and every every
+single node in the left subtree one
+and if it possibly had other children is
+going to be
+less than two right so one is going to
+be
+less than two and similarly every single
+value in the right subtree three
+including three's potential children's
+if it had any
+are going to be greater than
+two not greater or equal strictly
+greater and we know this is a recursive
+definition so if
+we had three and it had some children
+like
+five and maybe four over here we see
+that it's not
+a binary search tree because four
+should be less than three four should be
+less than three but it's not
+so this is not a binary search tree so
+we need to do
+a recursive depth first search to solve
+this problem
+but let me show you what you might try
+you might just try
+a simple solution like hey five we have
+five is the root
+let's check its child okay three is less
+than five that's good
+okay let's check the right child okay
+seven is greater than five that's good
+right
+okay let's now let's check seven because
+we see three
+it doesn't have any children that's good
+for us we don't have to check anything
+but
+seven has a left child it has four as a
+left child well
+that's good four is less than seven
+and it has a right child eight that's
+good
+eight is greater than seven so is this a
+binary search tree
+the answer is no because
+it's really easy to miss we have a 5 as
+the root
+we have a right subtree over here and we
+have a
+4 in the right subtree
+but we know 5 is not less than 4
+that's not true so we need a better
+algorithm
+and it requires depth first search we
+can't
+just check the neighbors so our brute
+force approach would be
+for five check every value in its left
+subtree make sure that it's
+every value is less than five and then
+check every value
+in the right subtree make sure five is
+less than every value in the right
+subtree
+and so we would need n comparisons to do
+that right
+o of n and then we'd have to repeat that
+process for
+every sub tree so seven we got to repeat
+that compare it to
+every potential descendant of itself
+which is going to be o of n and the time
+complexity of that
+overall is going to be o n squared so
+can we do
+better than o of n squared so one
+thing to notice is the root value can be
+any value right there's no restrictions
+on what the value can be
+because it doesn't have any parents so
+we can say that
+it can be any value between negative
+infinity
+and positive infinity and as long as
+that's the case five is okay we don't
+have to make
+any other comparisons five is between
+negative infinity and positive infinity
+okay and then
+when we go down to the left subtree we
+know five is good we don't even have to
+check it anymore
+but when we go down to the left subtree
+what do we have to
+check all we have to check is that 3
+is less than 5 so in other words
+we just want to make sure three is
+greater than a negative infinity which
+of course it is
+and we're adding one more condition we
+want to make sure
+it's less than five so
+our left boundary stayed the same but we
+had to update
+our right boundary from up here
+right and so we're done with that and of
+course we don't have any children
+for three and five of course we don't
+have any children for three so
+we are done checking three next
+we want to also determine that the right
+subtree
+is a binary search tree so we want to
+make sure seven
+is greater than five but is there an
+upper boundary for seven like this could
+have been a hundred
+or could have been anything so there's
+no upper boundary yet
+so we just need to check that seven is
+less than infinity
+meaning that this is the right boundary
+and it's greater than
+5 so we had to update the left boundary
+over here when we went
+here we only had to update the right
+boundary
+and this condition is true so
+we are done checking 7 it is satisfied
+and when we go to the right child 8
+we're going to do the same thing we only
+have to
+update the left boundary so we have to
+make sure that 8 is at least
+greater than 7 but it could be
+anything so it's less than infinity so
+that's good
+8 is a binary search tree
+but now we get to the value that
+actually
+breaks our binary search tree and let's
+see what our algorithm
+does so we know since set four is the
+left child of seven
+it should be less than seven
+four is less than seven
+we have to update the right boundary for
+four
+but the left boundary stays the same
+so we're getting the left boundary from
+over here we're borrowing it from its
+parent
+because if seven is greater than 5
+then it's left child and 4 is a part of
+the sub tree 4 must
+also be greater than 5 so the left
+boundary is 5. now
+does this condition hold it does
+not 4 is not between
+7 and 5 so this value breaks
+our binary search tree so therefore this
+is not a binary search tree
+it's false we're returning false and
+with this algorithm since for each
+node all we're really doing is making a
+comparison
+we're making a single or rather two
+comparisons this is going to be
+big o of n or uh 2n
+which we know is still linear so we can
+just call it big
+o of n so now it's actually time to
+write the algorithm and the best way to
+do this
+is recursively so that's what i'm going
+to do i'm going to write a helper
+function
+nested inside of this helper or inside
+of our original
+function we'll call it valid we know we
+need to pass
+in the node since we are going to do
+this recursively and we're going to have
+two boundaries
+left and right boundaries like any
+binary search recursive function
+if we reach a null node we can just
+return what are we going to return
+we're going to return true because
+technically an empty binary search tree
+is still a binary search tree and then
+we want to check
+we want to make sure that node value is
+less than the right boundary
+and node value is greater than the left
+boundary
+but we know if this is not true if
+these conditions do not satisfy then
+we have to return false because we found
+a node that
+broke our binary search tree and now
+it's time to make
+our recursive call so we want to make
+sure that the left subtree of node
+is valid so we can pass node.left and
+what's going to be the boundary
+for these well since we are going left
+we can leave the left boundary the same
+but we're going to
+update the right boundary to the node's
+value because we know
+that a left sub tree has to be less than
+every value we know every value in the
+left sub tree has to be
+less than the parent and so the parent
+is going to be set
+to the right boundary because we need we
+need to make sure that this is going to
+be
+less than that so we want to make sure
+that the left sub tree is valid we
+also want to make sure that the right
+subtree
+is valid and in this case we're going to
+do the opposite of what we just did
+so the left boundary is going to be
+updated
+and the right boundary is going to stay
+the same because we know
+every value in a right subtree has to be
+greater than the root or the parent node
+which is the left boundary and if both
+of these return true
+then we can return true if they both
+return false
+then we can return false so what we can
+do is just
+return the result of this so whatever
+this evaluates to
+is going to be our result we don't
+really need any variables
+and now we just need to call the
+function that we just defined
+valid we'll pass in the root we want to
+make sure that this is a binary search
+tree
+initially the left boundary can be set
+to negative infinity
+and the right boundary can be set to
+positive infinity because
+the root value could be anything there's
+no restrictions on what the root value
+can be
+and as you can see this is a super
+efficient solution
+beats 97 percent and it doesn't take
+very much code either so i hope this was
+helpful
+if you enjoyed please like and subscribe
+and support the channel a lot and i'll
+hopefully

@@ -1,0 +1,192 @@
+what solve leak code 167 to some to so
+we're given an input array that's
+already sorted in ascending order and we
+want to find two numbers that sum up to
+some target that we're also given so in
+this case the target is nine the two
+numbers that sum up to nine in this
+array are two and seven and we want to
+return the indices of these two values
+but the catch here is that the indexes
+are one based they're not zero based so
+the first element has index 1 the second
+element has index 2
+I don't know why exactly they did that
+in this problem it's kind of weird but
+they did for some reason we're also
+guaranteed that there's exactly one
+solution and we can't use the same
+number twice so in this example that
+they gave us the two numbers the two
+first numbers sum up to the target so
+that's not really a good example so I'm
+gonna look at my example over here that
+I drew so the first idea that might come
+to your mind is just look at every
+single combination of two numbers so
+let's say we're starting at the first
+number one let's look at every number
+combined with one and see if it can sum
+up to the target nine so first we check
+1 plus 3 that is 4 so it's not 9 then we
+check 1 plus 4 that's 5 then we check 1
+plus 5 that's 6 1 plus 7 is 8 and 1 plus
+10 is 11 so now we've gotten to the
+point where at 1 plus 10 but the
+interesting thing about this is this is
+the first combination that's greater
+than our target 9 so do we have to keep
+looking at the next element since we
+know the array is already sorted there's
+no number that's gonna come after 10
+that's gonna be added to 1 that could
+possibly some to the target 9 so since 1
+plus 10 is already greater than the
+target we don't have to look at the
+remainder of the array because there's
+no number that could possibly come after
+10 added to 1 that would ever be the
+target every number is gonna be greater
+than the target so we don't have to
+consider 11 anymore
+so we basically remove it from
+consideration from our array so we
+didn't find the two numbers that sum to
+the target so now let's try if there's
+any combination with 3 that could
+possibly some 2
+so we start at 4 so 3 plus 4 is 7 3 plus
+5 is 8 3 plus 7 is 10 so this is the
+first combination 3 plus 7 which is 10
+is greater than the target 9 so we don't
+have to look at any number that comes
+after 7 because we know that it will
+never equal the target so we can
+basically say well 10 is removed from
+consideration we don't even have to look
+at it so we couldn't find a combination
+with 3 that could sum to the target 9 so
+now let's check the next number for the
+first number after 4 is 5 in this case 4
+plus 5 is exactly our target 9 so we
+found the solution of course since we
+found the solution we don't have to
+consider any element that comes after it
+so in this case 7 is removed from
+consideration and we can return our
+solution and remember that these indices
+are based on 1 so the first index is 1
+the second index is 2 3 &amp; 4 so the
+indices that we're going to be returning
+are 3 &amp; 4 so since this is a brute force
+solution and we're having to iterate
+through the entire array which is length
+N and we're going to potentially do that
+in the worst case n times for each
+number in the array so then that means
+our worst case time complexity is Big O
+of N squared so it's not very efficient
+but can we use the fact that this array
+is sorted to our advantage let's look at
+the picture we just drew first we
+eliminated 11 from consideration in the
+array then we eliminated 10 then we
+eliminated 7 so we're basically
+eliminating elements from the end of the
+array in reverse order can we use this
+to our advantage this is basically the
+intuition remember this array is sorted
+we can use that to our advantage so
+let's try the exact same problem with a
+slightly different algorithm using what
+we just learned
+our target is still 9 since we're
+eliminating elements from the end of the
+array we can use two pointers one
+pointer is going to be at the beginning
+or a left pointer one pointer is going
+to be at the end or
+the right pointer so we currently have a
+one and an eleven let's add these
+together one plus 11 is equal to 12 so
+that's greater than our target of nine
+remember so since this target is too big
+we need to decrease it we have a choice
+of which pointer to shift if we shift
+our left pointer here to three we're
+going to be increasing the sum we don't
+want to do that since the sum is already
+too big so instead let's take our right
+pointer and shift it to the left now
+we've decreased the total sum so let's
+recompute it one plus seven now it's
+eight this is too small we went a little
+- we decreased our sum too much so now
+we need to increase it so since the
+array is sorted we can take our left
+pointer and shift it to the right to
+increase our total sum now we've
+increased our sum so it's now three plus
+seven but we went too far again right
+now it's too big again it's bigger than
+nine so what do we have to do this time
+well we want to decrease our sum so
+we're going to take the right pointer
+and shift it left so now we decreased
+our sum let's recompute it three plus
+five but that's eight so again we got to
+a it's too small again but we're
+guaranteed a solution so we're gonna
+keep looking
+since our sum is too small we're gonna
+increase it by taking our left pointer
+and shifting it right now we can't
+really shift our pointers anymore so we
+better be at the right solution let's
+check four plus five that's exactly nine
+so we got our target and so we want to
+return the indices of these which are
+going to be three and four right in this
+case we don't have to iterate through
+the entire array more than once and
+these left and right pointers are never
+going to cross each other we don't need
+extra memory either so our time
+complexity in the worst case is a Big O
+of n we found a linear algorithm using
+two pointers to solve this problem we
+didn't even need extra
+now we're ready to code up the solution
+so we remember we have two pointers left
+and right the left pointer is going to
+be at the beginning of the array so
+index 0 the right pointer is going to be
+at the last index length of numbers
+minus 1 and we need a loop to iterate
+through our array the condition in this
+case is left is less than right but it
+doesn't really matter because we're
+guaranteed a solution so we're going to
+return a solution no matter what so like
+we just did in the example let's compute
+the current sum and we remember if our
+current sum is too big so if it's
+greater than the target we can decrease
+our sum by taking our right pointer and
+shifting it to the left on the other
+hand if the current sum is too small we
+want to increase our sum by taking the
+left pointer and shifting it to the
+right the last case is that our current
+sum is exactly equal to the target in
+that case we want to return the indices
+left and right but remember they're
+based on 1 so we're going to add 1 to
+each of them we can put our return out
+here but it's not needed because we're
+guaranteed a solutions where a loop will
+return the solution and it works
+perfectly a linear time algorithm with
+no extra space make sure to like if this
+was helpful and subscribe if you want
+more

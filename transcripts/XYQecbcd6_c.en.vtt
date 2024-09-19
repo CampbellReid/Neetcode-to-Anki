@@ -1,0 +1,1760 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.080 --> 00:00:02.550 align:start position:0%
+ 
+hey<00:00:00.320><c> everyone</c><00:00:00.799><c> let's</c><00:00:01.040><c> solve</c><00:00:01.439><c> another</c><00:00:02.000><c> classic</c>
+
+00:00:02.550 --> 00:00:02.560 align:start position:0%
+hey everyone let's solve another classic
+ 
+
+00:00:02.560 --> 00:00:04.309 align:start position:0%
+hey everyone let's solve another classic
+leak<00:00:02.800><c> code</c><00:00:03.040><c> problem</c><00:00:03.439><c> today</c><00:00:03.840><c> longest</c>
+
+00:00:04.309 --> 00:00:04.319 align:start position:0%
+leak code problem today longest
+ 
+
+00:00:04.319 --> 00:00:06.070 align:start position:0%
+leak code problem today longest
+palindromic<00:00:05.200><c> substring</c>
+
+00:00:06.070 --> 00:00:06.080 align:start position:0%
+palindromic substring
+ 
+
+00:00:06.080 --> 00:00:08.669 align:start position:0%
+palindromic substring
+so<00:00:06.240><c> we're</c><00:00:06.399><c> given</c><00:00:06.720><c> a</c><00:00:06.879><c> string</c><00:00:07.200><c> in</c><00:00:07.359><c> this</c><00:00:07.520><c> case</c>
+
+00:00:08.669 --> 00:00:08.679 align:start position:0%
+so we're given a string in this case
+ 
+
+00:00:08.679 --> 00:00:10.629 align:start position:0%
+so we're given a string in this case
+b-a-b-a-d
+
+00:00:10.629 --> 00:00:10.639 align:start position:0%
+b-a-b-a-d
+ 
+
+00:00:10.639 --> 00:00:12.709 align:start position:0%
+b-a-b-a-d
+and<00:00:10.880><c> we</c><00:00:11.120><c> want</c><00:00:11.280><c> to</c><00:00:11.360><c> return</c><00:00:11.920><c> the</c><00:00:12.240><c> longest</c>
+
+00:00:12.709 --> 00:00:12.719 align:start position:0%
+and we want to return the longest
+ 
+
+00:00:12.719 --> 00:00:14.709 align:start position:0%
+and we want to return the longest
+palindromic<00:00:13.360><c> substring</c><00:00:13.920><c> that</c><00:00:14.160><c> exists</c>
+
+00:00:14.709 --> 00:00:14.719 align:start position:0%
+palindromic substring that exists
+ 
+
+00:00:14.719 --> 00:00:16.790 align:start position:0%
+palindromic substring that exists
+inside<00:00:15.120><c> of</c><00:00:15.280><c> here</c><00:00:15.839><c> in</c><00:00:16.000><c> this</c><00:00:16.240><c> case</c><00:00:16.480><c> there's</c>
+
+00:00:16.790 --> 00:00:16.800 align:start position:0%
+inside of here in this case there's
+ 
+
+00:00:16.800 --> 00:00:18.230 align:start position:0%
+inside of here in this case there's
+actually<00:00:17.279><c> two</c>
+
+00:00:18.230 --> 00:00:18.240 align:start position:0%
+actually two
+ 
+
+00:00:18.240 --> 00:00:21.750 align:start position:0%
+actually two
+b<00:00:18.560><c> a</c><00:00:18.960><c> b</c><00:00:19.760><c> as</c><00:00:20.000><c> well</c><00:00:20.240><c> as</c><00:00:20.960><c> a</c><00:00:21.279><c> b</c>
+
+00:00:21.750 --> 00:00:21.760 align:start position:0%
+b a b as well as a b
+ 
+
+00:00:21.760 --> 00:00:24.390 align:start position:0%
+b a b as well as a b
+a<00:00:22.560><c> so</c><00:00:22.800><c> we</c><00:00:22.880><c> could</c><00:00:23.039><c> return</c><00:00:23.600><c> either</c><00:00:23.840><c> of</c><00:00:24.000><c> these</c><00:00:24.320><c> and</c>
+
+00:00:24.390 --> 00:00:24.400 align:start position:0%
+a so we could return either of these and
+ 
+
+00:00:24.400 --> 00:00:25.910 align:start position:0%
+a so we could return either of these and
+that<00:00:24.560><c> would</c><00:00:24.720><c> be</c><00:00:24.800><c> perfectly</c><00:00:25.279><c> fine</c>
+
+00:00:25.910 --> 00:00:25.920 align:start position:0%
+that would be perfectly fine
+ 
+
+00:00:25.920 --> 00:00:28.070 align:start position:0%
+that would be perfectly fine
+now<00:00:26.160><c> what</c><00:00:26.560><c> actually</c><00:00:27.119><c> is</c><00:00:27.279><c> a</c><00:00:27.359><c> palindromic</c>
+
+00:00:28.070 --> 00:00:28.080 align:start position:0%
+now what actually is a palindromic
+ 
+
+00:00:28.080 --> 00:00:29.589 align:start position:0%
+now what actually is a palindromic
+substring<00:00:28.560><c> in</c><00:00:28.640><c> the</c><00:00:28.720><c> first</c><00:00:29.039><c> place</c>
+
+00:00:29.589 --> 00:00:29.599 align:start position:0%
+substring in the first place
+ 
+
+00:00:29.599 --> 00:00:32.389 align:start position:0%
+substring in the first place
+basically<00:00:30.240><c> it</c><00:00:30.400><c> means</c><00:00:31.199><c> that</c><00:00:31.920><c> you</c><00:00:32.079><c> know</c><00:00:32.239><c> you</c>
+
+00:00:32.389 --> 00:00:32.399 align:start position:0%
+basically it means that you know you
+ 
+
+00:00:32.399 --> 00:00:32.950 align:start position:0%
+basically it means that you know you
+take<00:00:32.719><c> b</c>
+
+00:00:32.950 --> 00:00:32.960 align:start position:0%
+take b
+ 
+
+00:00:32.960 --> 00:00:35.190 align:start position:0%
+take b
+a<00:00:33.120><c> b</c><00:00:33.440><c> if</c><00:00:33.520><c> we</c><00:00:33.760><c> wrote</c><00:00:34.000><c> that</c><00:00:34.239><c> in</c><00:00:34.399><c> the</c><00:00:34.480><c> reverse</c>
+
+00:00:35.190 --> 00:00:35.200 align:start position:0%
+a b if we wrote that in the reverse
+ 
+
+00:00:35.200 --> 00:00:36.950 align:start position:0%
+a b if we wrote that in the reverse
+order<00:00:35.680><c> which</c><00:00:35.920><c> would</c><00:00:36.160><c> be</c>
+
+00:00:36.950 --> 00:00:36.960 align:start position:0%
+order which would be
+ 
+
+00:00:36.960 --> 00:00:39.910 align:start position:0%
+order which would be
+you<00:00:37.040><c> know</c><00:00:37.280><c> b</c><00:00:37.840><c> a</c><00:00:38.160><c> b</c><00:00:38.640><c> it's</c><00:00:38.879><c> the</c><00:00:39.040><c> exact</c><00:00:39.520><c> same</c>
+
+00:00:39.910 --> 00:00:39.920 align:start position:0%
+you know b a b it's the exact same
+ 
+
+00:00:39.920 --> 00:00:40.549 align:start position:0%
+you know b a b it's the exact same
+string
+
+00:00:40.549 --> 00:00:40.559 align:start position:0%
+string
+ 
+
+00:00:40.559 --> 00:00:43.110 align:start position:0%
+string
+so<00:00:41.280><c> like</c><00:00:41.520><c> i</c><00:00:41.680><c> usually</c><00:00:42.160><c> do</c><00:00:42.559><c> let's</c><00:00:42.719><c> say</c><00:00:42.879><c> you</c><00:00:42.960><c> just</c>
+
+00:00:43.110 --> 00:00:43.120 align:start position:0%
+so like i usually do let's say you just
+ 
+
+00:00:43.120 --> 00:00:43.990 align:start position:0%
+so like i usually do let's say you just
+don't<00:00:43.280><c> know</c><00:00:43.440><c> how</c><00:00:43.600><c> to</c><00:00:43.680><c> solve</c>
+
+00:00:43.990 --> 00:00:44.000 align:start position:0%
+don't know how to solve
+ 
+
+00:00:44.000 --> 00:00:45.910 align:start position:0%
+don't know how to solve
+the<00:00:44.160><c> problem</c><00:00:44.640><c> well</c><00:00:44.800><c> what's</c><00:00:45.120><c> the</c><00:00:45.280><c> most</c><00:00:45.600><c> brute</c>
+
+00:00:45.910 --> 00:00:45.920 align:start position:0%
+the problem well what's the most brute
+ 
+
+00:00:45.920 --> 00:00:47.510 align:start position:0%
+the problem well what's the most brute
+force<00:00:46.239><c> way</c><00:00:46.480><c> you</c><00:00:46.640><c> could</c><00:00:46.800><c> do</c><00:00:47.039><c> it</c>
+
+00:00:47.510 --> 00:00:47.520 align:start position:0%
+force way you could do it
+ 
+
+00:00:47.520 --> 00:00:49.670 align:start position:0%
+force way you could do it
+well<00:00:48.079><c> you</c><00:00:48.239><c> could</c><00:00:48.559><c> say</c><00:00:48.960><c> i'm</c><00:00:49.200><c> just</c><00:00:49.360><c> going</c><00:00:49.440><c> to</c>
+
+00:00:49.670 --> 00:00:49.680 align:start position:0%
+well you could say i'm just going to
+ 
+
+00:00:49.680 --> 00:00:52.229 align:start position:0%
+well you could say i'm just going to
+check<00:00:50.160><c> every</c><00:00:50.640><c> single</c><00:00:51.120><c> substring</c>
+
+00:00:52.229 --> 00:00:52.239 align:start position:0%
+check every single substring
+ 
+
+00:00:52.239 --> 00:00:54.869 align:start position:0%
+check every single substring
+in<00:00:52.480><c> this</c><00:00:53.520><c> original</c><00:00:54.000><c> string</c><00:00:54.399><c> and</c><00:00:54.559><c> check</c><00:00:54.800><c> if</c>
+
+00:00:54.869 --> 00:00:54.879 align:start position:0%
+in this original string and check if
+ 
+
+00:00:54.879 --> 00:00:56.389 align:start position:0%
+in this original string and check if
+it's<00:00:55.039><c> a</c><00:00:55.120><c> palindrome</c><00:00:55.680><c> and</c><00:00:55.760><c> get</c><00:00:55.920><c> the</c><00:00:56.000><c> longest</c>
+
+00:00:56.389 --> 00:00:56.399 align:start position:0%
+it's a palindrome and get the longest
+ 
+
+00:00:56.399 --> 00:00:56.950 align:start position:0%
+it's a palindrome and get the longest
+one
+
+00:00:56.950 --> 00:00:56.960 align:start position:0%
+one
+ 
+
+00:00:56.960 --> 00:00:59.670 align:start position:0%
+one
+starting<00:00:57.440><c> at</c><00:00:57.680><c> b</c><00:00:58.160><c> so</c><00:00:58.399><c> i</c><00:00:58.480><c> would</c><00:00:58.640><c> check</c><00:00:58.960><c> this</c><00:00:59.520><c> i</c>
+
+00:00:59.670 --> 00:00:59.680 align:start position:0%
+starting at b so i would check this i
+ 
+
+00:00:59.680 --> 00:01:00.790 align:start position:0%
+starting at b so i would check this i
+could<00:00:59.840><c> check</c><00:01:00.160><c> this</c>
+
+00:01:00.790 --> 00:01:00.800 align:start position:0%
+could check this
+ 
+
+00:01:00.800 --> 00:01:03.830 align:start position:0%
+could check this
+i<00:01:00.879><c> could</c><00:01:01.120><c> check</c><00:01:01.440><c> this</c><00:01:02.640><c> this</c>
+
+00:01:03.830 --> 00:01:03.840 align:start position:0%
+i could check this this
+ 
+
+00:01:03.840 --> 00:01:05.910 align:start position:0%
+i could check this this
+and<00:01:04.159><c> this</c><00:01:04.559><c> right</c><00:01:04.799><c> so</c><00:01:05.040><c> every</c><00:01:05.360><c> substring</c>
+
+00:01:05.910 --> 00:01:05.920 align:start position:0%
+and this right so every substring
+ 
+
+00:01:05.920 --> 00:01:06.870 align:start position:0%
+and this right so every substring
+containing<00:01:06.479><c> this</c>
+
+00:01:06.870 --> 00:01:06.880 align:start position:0%
+containing this
+ 
+
+00:01:06.880 --> 00:01:09.590 align:start position:0%
+containing this
+original<00:01:07.439><c> b</c><00:01:07.920><c> and</c><00:01:08.080><c> i</c><00:01:08.240><c> want</c><00:01:08.400><c> to</c><00:01:08.640><c> check</c><00:01:09.119><c> for</c><00:01:09.360><c> each</c>
+
+00:01:09.590 --> 00:01:09.600 align:start position:0%
+original b and i want to check for each
+ 
+
+00:01:09.600 --> 00:01:10.310 align:start position:0%
+original b and i want to check for each
+of<00:01:09.760><c> these</c>
+
+00:01:10.310 --> 00:01:10.320 align:start position:0%
+of these
+ 
+
+00:01:10.320 --> 00:01:12.870 align:start position:0%
+of these
+is<00:01:10.479><c> it</c><00:01:10.640><c> a</c><00:01:10.720><c> palindrome</c><00:01:11.439><c> or</c><00:01:11.680><c> not</c><00:01:12.240><c> and</c><00:01:12.560><c> i</c><00:01:12.640><c> would</c>
+
+00:01:12.870 --> 00:01:12.880 align:start position:0%
+is it a palindrome or not and i would
+ 
+
+00:01:12.880 --> 00:01:13.429 align:start position:0%
+is it a palindrome or not and i would
+repeat
+
+00:01:13.429 --> 00:01:13.439 align:start position:0%
+repeat
+ 
+
+00:01:13.439 --> 00:01:15.590 align:start position:0%
+repeat
+that<00:01:13.760><c> process</c><00:01:14.400><c> with</c><00:01:14.640><c> every</c><00:01:14.960><c> character</c><00:01:15.360><c> right</c>
+
+00:01:15.590 --> 00:01:15.600 align:start position:0%
+that process with every character right
+ 
+
+00:01:15.600 --> 00:01:17.270 align:start position:0%
+that process with every character right
+so<00:01:15.759><c> for</c><00:01:16.080><c> this</c><00:01:16.400><c> a</c>
+
+00:01:17.270 --> 00:01:17.280 align:start position:0%
+so for this a
+ 
+
+00:01:17.280 --> 00:01:20.710 align:start position:0%
+so for this a
+i'd<00:01:17.520><c> get</c><00:01:17.759><c> every</c><00:01:18.080><c> substring</c>
+
+00:01:20.710 --> 00:01:20.720 align:start position:0%
+i'd get every substring
+ 
+
+00:01:20.720 --> 00:01:23.510 align:start position:0%
+i'd get every substring
+and<00:01:21.280><c> basically</c><00:01:21.759><c> keep</c><00:01:22.000><c> doing</c><00:01:22.320><c> that</c><00:01:22.960><c> now</c><00:01:23.200><c> the</c>
+
+00:01:23.510 --> 00:01:23.520 align:start position:0%
+and basically keep doing that now the
+ 
+
+00:01:23.520 --> 00:01:24.550 align:start position:0%
+and basically keep doing that now the
+question<00:01:24.000><c> is</c>
+
+00:01:24.550 --> 00:01:24.560 align:start position:0%
+question is
+ 
+
+00:01:24.560 --> 00:01:27.830 align:start position:0%
+question is
+for<00:01:24.799><c> a</c><00:01:24.960><c> string</c><00:01:25.520><c> for</c><00:01:25.680><c> example</c><00:01:26.320><c> b</c><00:01:26.560><c> a</c><00:01:26.880><c> b</c>
+
+00:01:27.830 --> 00:01:27.840 align:start position:0%
+for a string for example b a b
+ 
+
+00:01:27.840 --> 00:01:30.950 align:start position:0%
+for a string for example b a b
+how<00:01:28.799><c> what's</c><00:01:29.040><c> the</c><00:01:29.200><c> time</c><00:01:29.439><c> complexity</c><00:01:30.240><c> to</c><00:01:30.479><c> even</c>
+
+00:01:30.950 --> 00:01:30.960 align:start position:0%
+how what's the time complexity to even
+ 
+
+00:01:30.960 --> 00:01:33.510 align:start position:0%
+how what's the time complexity to even
+check<00:01:31.280><c> if</c><00:01:31.520><c> it's</c><00:01:31.680><c> a</c><00:01:31.840><c> palindrome</c><00:01:32.720><c> well</c><00:01:33.200><c> we'd</c>
+
+00:01:33.510 --> 00:01:33.520 align:start position:0%
+check if it's a palindrome well we'd
+ 
+
+00:01:33.520 --> 00:01:34.390 align:start position:0%
+check if it's a palindrome well we'd
+have<00:01:33.680><c> to</c><00:01:33.920><c> scan</c>
+
+00:01:34.390 --> 00:01:34.400 align:start position:0%
+have to scan
+ 
+
+00:01:34.400 --> 00:01:36.550 align:start position:0%
+have to scan
+through<00:01:34.640><c> the</c><00:01:34.799><c> entire</c><00:01:35.280><c> string</c><00:01:35.759><c> right</c><00:01:36.000><c> so</c><00:01:36.159><c> for</c>
+
+00:01:36.550 --> 00:01:36.560 align:start position:0%
+through the entire string right so for
+ 
+
+00:01:36.560 --> 00:01:38.310 align:start position:0%
+through the entire string right so for
+any<00:01:36.880><c> given</c><00:01:37.360><c> sub</c><00:01:37.680><c> string</c>
+
+00:01:38.310 --> 00:01:38.320 align:start position:0%
+any given sub string
+ 
+
+00:01:38.320 --> 00:01:40.789 align:start position:0%
+any given sub string
+to<00:01:38.640><c> check</c><00:01:38.960><c> if</c><00:01:39.119><c> it's</c><00:01:39.280><c> a</c><00:01:39.439><c> palindrome</c><00:01:40.479><c> it's</c><00:01:40.720><c> going</c>
+
+00:01:40.789 --> 00:01:40.799 align:start position:0%
+to check if it's a palindrome it's going
+ 
+
+00:01:40.799 --> 00:01:41.910 align:start position:0%
+to check if it's a palindrome it's going
+to<00:01:41.040><c> take</c>
+
+00:01:41.910 --> 00:01:41.920 align:start position:0%
+to take
+ 
+
+00:01:41.920 --> 00:01:44.950 align:start position:0%
+to take
+linear<00:01:42.399><c> time</c><00:01:42.640><c> complexity</c><00:01:43.600><c> so</c><00:01:44.240><c> let's</c><00:01:44.479><c> say</c>
+
+00:01:44.950 --> 00:01:44.960 align:start position:0%
+linear time complexity so let's say
+ 
+
+00:01:44.960 --> 00:01:48.550 align:start position:0%
+linear time complexity so let's say
+n<00:01:45.439><c> right</c><00:01:46.479><c> now</c><00:01:46.880><c> how</c><00:01:47.119><c> many</c><00:01:47.600><c> sub</c><00:01:47.920><c> strings</c>
+
+00:01:48.550 --> 00:01:48.560 align:start position:0%
+n right now how many sub strings
+ 
+
+00:01:48.560 --> 00:01:51.670 align:start position:0%
+n right now how many sub strings
+do<00:01:48.720><c> we</c><00:01:49.040><c> actually</c><00:01:49.680><c> have</c><00:01:50.240><c> to</c><00:01:50.560><c> check</c>
+
+00:01:51.670 --> 00:01:51.680 align:start position:0%
+do we actually have to check
+ 
+
+00:01:51.680 --> 00:01:54.789 align:start position:0%
+do we actually have to check
+n<00:01:52.079><c> squared</c><00:01:53.119><c> because</c><00:01:53.840><c> we're</c><00:01:54.079><c> checking</c><00:01:54.560><c> every</c>
+
+00:01:54.789 --> 00:01:54.799 align:start position:0%
+n squared because we're checking every
+ 
+
+00:01:54.799 --> 00:01:56.709 align:start position:0%
+n squared because we're checking every
+single<00:01:55.200><c> substring</c><00:01:55.680><c> containing</c><00:01:56.240><c> every</c><00:01:56.399><c> single</c>
+
+00:01:56.709 --> 00:01:56.719 align:start position:0%
+single substring containing every single
+ 
+
+00:01:56.719 --> 00:01:57.429 align:start position:0%
+single substring containing every single
+character
+
+00:01:57.429 --> 00:01:57.439 align:start position:0%
+character
+ 
+
+00:01:57.439 --> 00:02:00.310 align:start position:0%
+character
+so<00:01:58.240><c> to</c><00:01:58.479><c> check</c><00:01:58.719><c> if</c><00:01:58.880><c> a</c><00:01:58.960><c> string</c><00:01:59.200><c> is</c><00:01:59.360><c> a</c><00:01:59.439><c> palindrome</c>
+
+00:02:00.310 --> 00:02:00.320 align:start position:0%
+so to check if a string is a palindrome
+ 
+
+00:02:00.320 --> 00:02:01.510 align:start position:0%
+so to check if a string is a palindrome
+we<00:02:00.560><c> have</c><00:02:00.719><c> to</c><00:02:00.880><c> do</c>
+
+00:02:01.510 --> 00:02:01.520 align:start position:0%
+we have to do
+ 
+
+00:02:01.520 --> 00:02:04.630 align:start position:0%
+we have to do
+we<00:02:01.680><c> have</c><00:02:01.759><c> to</c><00:02:01.920><c> do</c><00:02:02.719><c> a</c><00:02:02.880><c> linear</c><00:02:03.280><c> scan</c><00:02:03.920><c> and</c><00:02:04.399><c> we</c><00:02:04.560><c> have</c>
+
+00:02:04.630 --> 00:02:04.640 align:start position:0%
+we have to do a linear scan and we have
+ 
+
+00:02:04.640 --> 00:02:06.789 align:start position:0%
+we have to do a linear scan and we have
+to<00:02:04.719><c> do</c><00:02:04.880><c> that</c><00:02:05.040><c> for</c><00:02:05.360><c> every</c><00:02:05.680><c> single</c><00:02:06.079><c> substring</c>
+
+00:02:06.789 --> 00:02:06.799 align:start position:0%
+to do that for every single substring
+ 
+
+00:02:06.799 --> 00:02:08.630 align:start position:0%
+to do that for every single substring
+so<00:02:06.960><c> then</c><00:02:07.200><c> that's</c><00:02:07.439><c> going</c><00:02:07.520><c> to</c><00:02:07.600><c> mean</c><00:02:08.239><c> that</c><00:02:08.399><c> the</c>
+
+00:02:08.630 --> 00:02:08.640 align:start position:0%
+so then that's going to mean that the
+ 
+
+00:02:08.640 --> 00:02:10.389 align:start position:0%
+so then that's going to mean that the
+overall<00:02:08.959><c> time</c><00:02:09.200><c> complexity</c><00:02:09.759><c> of</c><00:02:09.840><c> this</c><00:02:10.080><c> brute</c>
+
+00:02:10.389 --> 00:02:10.399 align:start position:0%
+overall time complexity of this brute
+ 
+
+00:02:10.399 --> 00:02:11.990 align:start position:0%
+overall time complexity of this brute
+force<00:02:10.800><c> approach</c><00:02:11.200><c> is</c><00:02:11.280><c> going</c><00:02:11.360><c> to</c><00:02:11.520><c> be</c><00:02:11.680><c> big</c>
+
+00:02:11.990 --> 00:02:12.000 align:start position:0%
+force approach is going to be big
+ 
+
+00:02:12.000 --> 00:02:15.350 align:start position:0%
+force approach is going to be big
+o<00:02:12.720><c> n</c><00:02:13.120><c> cubed</c><00:02:13.840><c> so</c><00:02:14.000><c> the</c><00:02:14.239><c> question</c><00:02:14.640><c> is</c><00:02:14.800><c> how</c><00:02:14.959><c> can</c><00:02:15.200><c> we</c>
+
+00:02:15.350 --> 00:02:15.360 align:start position:0%
+o n cubed so the question is how can we
+ 
+
+00:02:15.360 --> 00:02:15.670 align:start position:0%
+o n cubed so the question is how can we
+do
+
+00:02:15.670 --> 00:02:15.680 align:start position:0%
+do
+ 
+
+00:02:15.680 --> 00:02:18.550 align:start position:0%
+do
+better<00:02:16.239><c> well</c><00:02:16.800><c> it</c><00:02:17.200><c> it</c><00:02:17.440><c> actually</c><00:02:18.000><c> involves</c>
+
+00:02:18.550 --> 00:02:18.560 align:start position:0%
+better well it it actually involves
+ 
+
+00:02:18.560 --> 00:02:20.309 align:start position:0%
+better well it it actually involves
+understanding<00:02:19.280><c> how</c><00:02:19.520><c> to</c><00:02:19.680><c> actually</c>
+
+00:02:20.309 --> 00:02:20.319 align:start position:0%
+understanding how to actually
+ 
+
+00:02:20.319 --> 00:02:23.030 align:start position:0%
+understanding how to actually
+check<00:02:20.640><c> if</c><00:02:20.800><c> a</c><00:02:20.959><c> substring</c><00:02:21.680><c> is</c><00:02:21.840><c> a</c><00:02:22.000><c> palindrome</c><00:02:22.800><c> or</c>
+
+00:02:23.030 --> 00:02:23.040 align:start position:0%
+check if a substring is a palindrome or
+ 
+
+00:02:23.040 --> 00:02:23.510 align:start position:0%
+check if a substring is a palindrome or
+not
+
+00:02:23.510 --> 00:02:23.520 align:start position:0%
+not
+ 
+
+00:02:23.520 --> 00:02:26.869 align:start position:0%
+not
+for<00:02:23.760><c> again</c><00:02:24.080><c> let's</c><00:02:24.319><c> look</c><00:02:24.480><c> at</c><00:02:24.720><c> bab</c><00:02:26.160><c> we</c><00:02:26.400><c> can</c><00:02:26.640><c> check</c>
+
+00:02:26.869 --> 00:02:26.879 align:start position:0%
+for again let's look at bab we can check
+ 
+
+00:02:26.879 --> 00:02:28.229 align:start position:0%
+for again let's look at bab we can check
+if<00:02:27.040><c> it's</c><00:02:27.200><c> a</c><00:02:27.360><c> palindrome</c>
+
+00:02:28.229 --> 00:02:28.239 align:start position:0%
+if it's a palindrome
+ 
+
+00:02:28.239 --> 00:02:31.589 align:start position:0%
+if it's a palindrome
+by<00:02:28.560><c> starting</c><00:02:28.959><c> at</c><00:02:29.120><c> the</c><00:02:29.440><c> outside</c><00:02:30.959><c> and</c><00:02:31.120><c> comparing</c>
+
+00:02:31.589 --> 00:02:31.599 align:start position:0%
+by starting at the outside and comparing
+ 
+
+00:02:31.599 --> 00:02:32.949 align:start position:0%
+by starting at the outside and comparing
+these<00:02:31.920><c> characters</c>
+
+00:02:32.949 --> 00:02:32.959 align:start position:0%
+these characters
+ 
+
+00:02:32.959 --> 00:02:34.710 align:start position:0%
+these characters
+and<00:02:33.280><c> as</c><00:02:33.440><c> long</c><00:02:33.680><c> as</c><00:02:33.760><c> they're</c><00:02:34.000><c> equal</c><00:02:34.319><c> we'll</c><00:02:34.480><c> keep</c>
+
+00:02:34.710 --> 00:02:34.720 align:start position:0%
+and as long as they're equal we'll keep
+ 
+
+00:02:34.720 --> 00:02:36.470 align:start position:0%
+and as long as they're equal we'll keep
+going<00:02:35.040><c> until</c><00:02:35.280><c> we</c><00:02:35.360><c> get</c><00:02:35.519><c> to</c><00:02:35.680><c> the</c><00:02:35.840><c> middle</c>
+
+00:02:36.470 --> 00:02:36.480 align:start position:0%
+going until we get to the middle
+ 
+
+00:02:36.480 --> 00:02:38.070 align:start position:0%
+going until we get to the middle
+and<00:02:36.720><c> then</c><00:02:36.879><c> we'll</c><00:02:37.120><c> check</c><00:02:37.440><c> and</c><00:02:37.519><c> then</c><00:02:37.680><c> we'll</c><00:02:37.840><c> know</c>
+
+00:02:38.070 --> 00:02:38.080 align:start position:0%
+and then we'll check and then we'll know
+ 
+
+00:02:38.080 --> 00:02:40.070 align:start position:0%
+and then we'll check and then we'll know
+okay<00:02:38.319><c> it's</c><00:02:38.480><c> a</c><00:02:38.560><c> palindrome</c><00:02:39.200><c> but</c><00:02:39.360><c> we</c><00:02:39.519><c> could</c><00:02:39.760><c> also</c>
+
+00:02:40.070 --> 00:02:40.080 align:start position:0%
+okay it's a palindrome but we could also
+ 
+
+00:02:40.080 --> 00:02:41.589 align:start position:0%
+okay it's a palindrome but we could also
+do<00:02:40.319><c> it</c><00:02:40.480><c> another</c><00:02:40.959><c> way</c>
+
+00:02:41.589 --> 00:02:41.599 align:start position:0%
+do it another way
+ 
+
+00:02:41.599 --> 00:02:43.670 align:start position:0%
+do it another way
+we<00:02:41.760><c> could</c><00:02:42.080><c> start</c><00:02:42.480><c> at</c><00:02:42.560><c> the</c><00:02:42.800><c> middle</c><00:02:43.280><c> and</c><00:02:43.440><c> then</c>
+
+00:02:43.670 --> 00:02:43.680 align:start position:0%
+we could start at the middle and then
+ 
+
+00:02:43.680 --> 00:02:45.350 align:start position:0%
+we could start at the middle and then
+expand<00:02:44.480><c> outwards</c>
+
+00:02:45.350 --> 00:02:45.360 align:start position:0%
+expand outwards
+ 
+
+00:02:45.360 --> 00:02:47.270 align:start position:0%
+expand outwards
+and<00:02:45.599><c> and</c><00:02:45.840><c> check</c><00:02:46.080><c> if</c><00:02:46.239><c> it's</c><00:02:46.319><c> a</c><00:02:46.400><c> palindrome</c><00:02:47.040><c> that</c>
+
+00:02:47.270 --> 00:02:47.280 align:start position:0%
+and and check if it's a palindrome that
+ 
+
+00:02:47.280 --> 00:02:48.630 align:start position:0%
+and and check if it's a palindrome that
+way<00:02:47.840><c> so</c>
+
+00:02:48.630 --> 00:02:48.640 align:start position:0%
+way so
+ 
+
+00:02:48.640 --> 00:02:50.309 align:start position:0%
+way so
+which<00:02:48.879><c> one</c><00:02:49.040><c> of</c><00:02:49.200><c> these</c><00:02:49.440><c> is</c><00:02:49.519><c> going</c><00:02:49.599><c> to</c><00:02:49.760><c> help</c><00:02:50.080><c> us</c>
+
+00:02:50.309 --> 00:02:50.319 align:start position:0%
+which one of these is going to help us
+ 
+
+00:02:50.319 --> 00:02:52.710 align:start position:0%
+which one of these is going to help us
+more<00:02:51.040><c> well</c><00:02:51.200><c> let's</c><00:02:51.440><c> think</c><00:02:51.680><c> about</c><00:02:52.000><c> this</c>
+
+00:02:52.710 --> 00:02:52.720 align:start position:0%
+more well let's think about this
+ 
+
+00:02:52.720 --> 00:02:55.990 align:start position:0%
+more well let's think about this
+let's<00:02:52.959><c> say</c><00:02:53.120><c> i</c><00:02:53.280><c> wanted</c><00:02:53.599><c> to</c><00:02:53.840><c> know</c><00:02:54.319><c> for</c><00:02:54.720><c> this</c><00:02:55.200><c> b</c>
+
+00:02:55.990 --> 00:02:56.000 align:start position:0%
+let's say i wanted to know for this b
+ 
+
+00:02:56.000 --> 00:02:59.110 align:start position:0%
+let's say i wanted to know for this b
+what's<00:02:56.319><c> the</c><00:02:56.640><c> longest</c><00:02:57.280><c> palindrome</c><00:02:58.319><c> where</c><00:02:58.640><c> this</c>
+
+00:02:59.110 --> 00:02:59.120 align:start position:0%
+what's the longest palindrome where this
+ 
+
+00:02:59.120 --> 00:03:02.309 align:start position:0%
+what's the longest palindrome where this
+b<00:02:59.680><c> is</c><00:02:59.840><c> the</c><00:03:00.319><c> center</c><00:03:00.879><c> of</c><00:03:01.040><c> the</c><00:03:01.280><c> palindrome</c>
+
+00:03:02.309 --> 00:03:02.319 align:start position:0%
+b is the center of the palindrome
+ 
+
+00:03:02.319 --> 00:03:04.949 align:start position:0%
+b is the center of the palindrome
+well<00:03:03.200><c> there's</c><00:03:03.519><c> no</c><00:03:03.760><c> character</c><00:03:04.159><c> to</c><00:03:04.319><c> the</c><00:03:04.480><c> left</c><00:03:04.800><c> of</c>
+
+00:03:04.949 --> 00:03:04.959 align:start position:0%
+well there's no character to the left of
+ 
+
+00:03:04.959 --> 00:03:06.390 align:start position:0%
+well there's no character to the left of
+it<00:03:05.120><c> so</c><00:03:05.280><c> it's</c><00:03:05.519><c> just</c><00:03:05.680><c> going</c><00:03:05.840><c> to</c><00:03:05.920><c> be</c><00:03:06.159><c> this</c>
+
+00:03:06.390 --> 00:03:06.400 align:start position:0%
+it so it's just going to be this
+ 
+
+00:03:06.400 --> 00:03:07.190 align:start position:0%
+it so it's just going to be this
+character
+
+00:03:07.190 --> 00:03:07.200 align:start position:0%
+character
+ 
+
+00:03:07.200 --> 00:03:09.750 align:start position:0%
+character
+this<00:03:07.519><c> or</c><00:03:07.840><c> this</c><00:03:08.080><c> b</c><00:03:08.319><c> itself</c><00:03:08.720><c> right</c><00:03:08.959><c> so</c><00:03:09.120><c> it's</c><00:03:09.280><c> just</c>
+
+00:03:09.750 --> 00:03:09.760 align:start position:0%
+this or this b itself right so it's just
+ 
+
+00:03:09.760 --> 00:03:10.630 align:start position:0%
+this or this b itself right so it's just
+one
+
+00:03:10.630 --> 00:03:10.640 align:start position:0%
+one
+ 
+
+00:03:10.640 --> 00:03:13.750 align:start position:0%
+one
+what<00:03:10.800><c> about</c><00:03:11.120><c> this</c><00:03:11.440><c> a</c><00:03:12.480><c> well</c><00:03:12.879><c> let's</c><00:03:13.280><c> let's</c><00:03:13.519><c> start</c>
+
+00:03:13.750 --> 00:03:13.760 align:start position:0%
+what about this a well let's let's start
+ 
+
+00:03:13.760 --> 00:03:15.350 align:start position:0%
+what about this a well let's let's start
+expanding<00:03:14.159><c> there</c><00:03:14.400><c> is</c><00:03:14.560><c> a</c><00:03:14.640><c> character</c><00:03:15.040><c> to</c><00:03:15.200><c> the</c>
+
+00:03:15.350 --> 00:03:15.360 align:start position:0%
+expanding there is a character to the
+ 
+
+00:03:15.360 --> 00:03:17.030 align:start position:0%
+expanding there is a character to the
+left<00:03:15.760><c> and</c><00:03:15.920><c> there</c><00:03:16.159><c> is</c><00:03:16.319><c> a</c><00:03:16.400><c> character</c><00:03:16.720><c> to</c><00:03:16.879><c> the</c>
+
+00:03:17.030 --> 00:03:17.040 align:start position:0%
+left and there is a character to the
+ 
+
+00:03:17.040 --> 00:03:19.110 align:start position:0%
+left and there is a character to the
+right<00:03:17.280><c> and</c><00:03:17.440><c> they</c><00:03:17.599><c> happen</c><00:03:17.920><c> to</c><00:03:18.080><c> be</c><00:03:18.319><c> equal</c>
+
+00:03:19.110 --> 00:03:19.120 align:start position:0%
+right and they happen to be equal
+ 
+
+00:03:19.120 --> 00:03:22.070 align:start position:0%
+right and they happen to be equal
+so<00:03:20.239><c> the</c><00:03:20.400><c> longest</c><00:03:20.800><c> palindrome</c><00:03:21.280><c> with</c><00:03:21.519><c> this</c><00:03:21.760><c> a</c><00:03:22.000><c> at</c>
+
+00:03:22.070 --> 00:03:22.080 align:start position:0%
+so the longest palindrome with this a at
+ 
+
+00:03:22.080 --> 00:03:22.869 align:start position:0%
+so the longest palindrome with this a at
+the<00:03:22.319><c> center</c>
+
+00:03:22.869 --> 00:03:22.879 align:start position:0%
+the center
+ 
+
+00:03:22.879 --> 00:03:25.589 align:start position:0%
+the center
+is<00:03:23.040><c> going</c><00:03:23.200><c> to</c><00:03:23.280><c> be</c><00:03:23.760><c> a</c><00:03:24.000><c> length</c><00:03:24.400><c> 3</c><00:03:25.200><c> and</c><00:03:25.360><c> it's</c><00:03:25.519><c> going</c>
+
+00:03:25.589 --> 00:03:25.599 align:start position:0%
+is going to be a length 3 and it's going
+ 
+
+00:03:25.599 --> 00:03:25.990 align:start position:0%
+is going to be a length 3 and it's going
+to<00:03:25.680><c> be</c>
+
+00:03:25.990 --> 00:03:26.000 align:start position:0%
+to be
+ 
+
+00:03:26.000 --> 00:03:30.390 align:start position:0%
+to be
+b<00:03:26.239><c> a</c><00:03:26.560><c> b</c><00:03:27.760><c> notice</c><00:03:28.159><c> how</c><00:03:28.400><c> if</c><00:03:28.480><c> we</c><00:03:28.720><c> do</c><00:03:28.959><c> it</c><00:03:29.120><c> this</c><00:03:29.440><c> way</c>
+
+00:03:30.390 --> 00:03:30.400 align:start position:0%
+b a b notice how if we do it this way
+ 
+
+00:03:30.400 --> 00:03:32.390 align:start position:0%
+b a b notice how if we do it this way
+for<00:03:30.640><c> each</c><00:03:31.040><c> character</c><00:03:32.000><c> we're</c><00:03:32.159><c> going</c><00:03:32.319><c> to</c>
+
+00:03:32.390 --> 00:03:32.400 align:start position:0%
+for each character we're going to
+ 
+
+00:03:32.400 --> 00:03:33.910 align:start position:0%
+for each character we're going to
+consider<00:03:32.879><c> it</c><00:03:33.040><c> the</c><00:03:33.200><c> center</c><00:03:33.519><c> and</c><00:03:33.599><c> we're</c><00:03:33.760><c> going</c>
+
+00:03:33.910 --> 00:03:33.920 align:start position:0%
+consider it the center and we're going
+ 
+
+00:03:33.920 --> 00:03:37.670 align:start position:0%
+consider it the center and we're going
+to<00:03:34.000><c> keep</c><00:03:34.239><c> expanding</c><00:03:34.959><c> outwards</c>
+
+00:03:37.670 --> 00:03:37.680 align:start position:0%
+ 
+ 
+
+00:03:37.680 --> 00:03:39.270 align:start position:0%
+ 
+we're<00:03:37.840><c> going</c><00:03:37.920><c> to</c><00:03:38.000><c> take</c><00:03:38.319><c> each</c><00:03:38.560><c> character</c><00:03:39.120><c> so</c>
+
+00:03:39.270 --> 00:03:39.280 align:start position:0%
+we're going to take each character so
+ 
+
+00:03:39.280 --> 00:03:41.589 align:start position:0%
+we're going to take each character so
+that's<00:03:39.519><c> going</c><00:03:39.599><c> to</c><00:03:39.680><c> be</c><00:03:39.920><c> n</c><00:03:40.400><c> and</c><00:03:40.640><c> to</c><00:03:40.879><c> expand</c>
+
+00:03:41.589 --> 00:03:41.599 align:start position:0%
+that's going to be n and to expand
+ 
+
+00:03:41.599 --> 00:03:43.110 align:start position:0%
+that's going to be n and to expand
+outwards<00:03:42.159><c> for</c><00:03:42.319><c> each</c><00:03:42.560><c> character</c><00:03:42.879><c> it's</c><00:03:43.040><c> going</c>
+
+00:03:43.110 --> 00:03:43.120 align:start position:0%
+outwards for each character it's going
+ 
+
+00:03:43.120 --> 00:03:44.789 align:start position:0%
+outwards for each character it's going
+to<00:03:43.200><c> be</c><00:03:43.680><c> n</c><00:03:44.000><c> again</c>
+
+00:03:44.789 --> 00:03:44.799 align:start position:0%
+to be n again
+ 
+
+00:03:44.799 --> 00:03:46.949 align:start position:0%
+to be n again
+so<00:03:45.360><c> for</c><00:03:45.599><c> this</c><00:03:45.840><c> way</c><00:03:46.159><c> the</c><00:03:46.319><c> overall</c><00:03:46.720><c> time</c>
+
+00:03:46.949 --> 00:03:46.959 align:start position:0%
+so for this way the overall time
+ 
+
+00:03:46.959 --> 00:03:47.830 align:start position:0%
+so for this way the overall time
+complexity
+
+00:03:47.830 --> 00:03:47.840 align:start position:0%
+complexity
+ 
+
+00:03:47.840 --> 00:03:50.309 align:start position:0%
+complexity
+is<00:03:47.920><c> going</c><00:03:48.080><c> to</c><00:03:48.159><c> be</c><00:03:48.480><c> o</c><00:03:48.799><c> of</c><00:03:48.959><c> n</c><00:03:49.200><c> squared</c><00:03:49.920><c> so</c><00:03:50.080><c> that's</c>
+
+00:03:50.309 --> 00:03:50.319 align:start position:0%
+is going to be o of n squared so that's
+ 
+
+00:03:50.319 --> 00:03:50.949 align:start position:0%
+is going to be o of n squared so that's
+kind<00:03:50.480><c> of</c>
+
+00:03:50.949 --> 00:03:50.959 align:start position:0%
+kind of
+ 
+
+00:03:50.959 --> 00:03:53.670 align:start position:0%
+kind of
+clever<00:03:51.440><c> right</c><00:03:51.760><c> like</c><00:03:52.640><c> a</c><00:03:52.799><c> little</c><00:03:53.120><c> a</c><00:03:53.280><c> subtle</c>
+
+00:03:53.670 --> 00:03:53.680 align:start position:0%
+clever right like a little a subtle
+ 
+
+00:03:53.680 --> 00:03:55.589 align:start position:0%
+clever right like a little a subtle
+difference<00:03:54.159><c> of</c><00:03:54.319><c> how</c><00:03:54.560><c> we</c><00:03:54.879><c> check</c><00:03:55.120><c> if</c><00:03:55.280><c> it's</c><00:03:55.439><c> a</c>
+
+00:03:55.589 --> 00:03:55.599 align:start position:0%
+difference of how we check if it's a
+ 
+
+00:03:55.599 --> 00:03:56.390 align:start position:0%
+difference of how we check if it's a
+palindrome
+
+00:03:56.390 --> 00:03:56.400 align:start position:0%
+palindrome
+ 
+
+00:03:56.400 --> 00:03:59.030 align:start position:0%
+palindrome
+can<00:03:56.640><c> really</c><00:03:57.200><c> improve</c><00:03:57.680><c> the</c><00:03:57.840><c> time</c><00:03:58.080><c> complexity</c>
+
+00:03:59.030 --> 00:03:59.040 align:start position:0%
+can really improve the time complexity
+ 
+
+00:03:59.040 --> 00:04:00.070 align:start position:0%
+can really improve the time complexity
+but<00:03:59.280><c> hold</c><00:03:59.599><c> on</c>
+
+00:04:00.070 --> 00:04:00.080 align:start position:0%
+but hold on
+ 
+
+00:04:00.080 --> 00:04:02.710 align:start position:0%
+but hold on
+there's<00:04:00.400><c> one</c><00:04:00.799><c> edge</c><00:04:01.120><c> case</c><00:04:01.360><c> that</c><00:04:01.519><c> we're</c><00:04:01.760><c> missing</c>
+
+00:04:02.710 --> 00:04:02.720 align:start position:0%
+there's one edge case that we're missing
+ 
+
+00:04:02.720 --> 00:04:03.509 align:start position:0%
+there's one edge case that we're missing
+when<00:04:02.959><c> we</c><00:04:03.120><c> take</c>
+
+00:04:03.509 --> 00:04:03.519 align:start position:0%
+when we take
+ 
+
+00:04:03.519 --> 00:04:05.750 align:start position:0%
+when we take
+one<00:04:03.840><c> character</c><00:04:04.400><c> and</c><00:04:04.560><c> expand</c><00:04:05.120><c> outwards</c><00:04:05.519><c> from</c>
+
+00:04:05.750 --> 00:04:05.760 align:start position:0%
+one character and expand outwards from
+ 
+
+00:04:05.760 --> 00:04:07.110 align:start position:0%
+one character and expand outwards from
+it<00:04:06.000><c> like</c><00:04:06.159><c> for</c><00:04:06.400><c> this</c><00:04:06.640><c> b</c>
+
+00:04:07.110 --> 00:04:07.120 align:start position:0%
+it like for this b
+ 
+
+00:04:07.120 --> 00:04:09.750 align:start position:0%
+it like for this b
+we're<00:04:07.439><c> getting</c><00:04:07.920><c> palindromes</c><00:04:08.959><c> that</c><00:04:09.200><c> are</c><00:04:09.360><c> of</c>
+
+00:04:09.750 --> 00:04:09.760 align:start position:0%
+we're getting palindromes that are of
+ 
+
+00:04:09.760 --> 00:04:10.390 align:start position:0%
+we're getting palindromes that are of
+odd
+
+00:04:10.390 --> 00:04:10.400 align:start position:0%
+odd
+ 
+
+00:04:10.400 --> 00:04:13.030 align:start position:0%
+odd
+lengths<00:04:11.519><c> they've</c><00:04:11.760><c> conveniently</c><00:04:12.640><c> shown</c><00:04:12.879><c> us</c>
+
+00:04:13.030 --> 00:04:13.040 align:start position:0%
+lengths they've conveniently shown us
+ 
+
+00:04:13.040 --> 00:04:14.229 align:start position:0%
+lengths they've conveniently shown us
+this<00:04:13.280><c> example</c>
+
+00:04:14.229 --> 00:04:14.239 align:start position:0%
+this example
+ 
+
+00:04:14.239 --> 00:04:16.469 align:start position:0%
+this example
+where<00:04:14.400><c> the</c><00:04:14.640><c> longest</c><00:04:15.040><c> palindrome</c><00:04:15.760><c> is</c><00:04:15.920><c> actually</c>
+
+00:04:16.469 --> 00:04:16.479 align:start position:0%
+where the longest palindrome is actually
+ 
+
+00:04:16.479 --> 00:04:18.710 align:start position:0%
+where the longest palindrome is actually
+even<00:04:17.120><c> so</c><00:04:17.280><c> how</c><00:04:17.519><c> are</c><00:04:17.600><c> we</c><00:04:17.759><c> going</c><00:04:17.840><c> to</c><00:04:18.079><c> check</c>
+
+00:04:18.710 --> 00:04:18.720 align:start position:0%
+even so how are we going to check
+ 
+
+00:04:18.720 --> 00:04:20.949 align:start position:0%
+even so how are we going to check
+even<00:04:19.120><c> palindromes</c><00:04:20.000><c> well</c><00:04:20.160><c> that's</c><00:04:20.400><c> just</c><00:04:20.720><c> a</c>
+
+00:04:20.949 --> 00:04:20.959 align:start position:0%
+even palindromes well that's just a
+ 
+
+00:04:20.959 --> 00:04:22.469 align:start position:0%
+even palindromes well that's just a
+slight<00:04:21.359><c> edge</c><00:04:21.680><c> case</c>
+
+00:04:22.469 --> 00:04:22.479 align:start position:0%
+slight edge case
+ 
+
+00:04:22.479 --> 00:04:26.070 align:start position:0%
+slight edge case
+that<00:04:23.600><c> we</c><00:04:23.759><c> can</c><00:04:24.080><c> easily</c><00:04:24.560><c> add</c><00:04:24.880><c> to</c><00:04:25.040><c> our</c><00:04:25.199><c> solution</c>
+
+00:04:26.070 --> 00:04:26.080 align:start position:0%
+that we can easily add to our solution
+ 
+
+00:04:26.080 --> 00:04:27.909 align:start position:0%
+that we can easily add to our solution
+so<00:04:26.320><c> we</c><00:04:26.479><c> just</c><00:04:26.639><c> have</c><00:04:26.720><c> to</c><00:04:26.880><c> remember</c><00:04:27.360><c> to</c><00:04:27.600><c> handle</c>
+
+00:04:27.909 --> 00:04:27.919 align:start position:0%
+so we just have to remember to handle
+ 
+
+00:04:27.919 --> 00:04:29.830 align:start position:0%
+so we just have to remember to handle
+this<00:04:28.160><c> edge</c><00:04:28.400><c> case</c><00:04:28.880><c> when</c><00:04:29.040><c> we're</c><00:04:29.280><c> implementing</c>
+
+00:04:29.830 --> 00:04:29.840 align:start position:0%
+this edge case when we're implementing
+ 
+
+00:04:29.840 --> 00:04:30.870 align:start position:0%
+this edge case when we're implementing
+our<00:04:30.000><c> code</c>
+
+00:04:30.870 --> 00:04:30.880 align:start position:0%
+our code
+ 
+
+00:04:30.880 --> 00:04:32.390 align:start position:0%
+our code
+okay<00:04:31.199><c> so</c><00:04:31.360><c> let's</c><00:04:31.600><c> get</c><00:04:31.759><c> to</c><00:04:31.919><c> everybody's</c>
+
+00:04:32.390 --> 00:04:32.400 align:start position:0%
+okay so let's get to everybody's
+ 
+
+00:04:32.400 --> 00:04:34.070 align:start position:0%
+okay so let's get to everybody's
+favorite<00:04:32.800><c> part</c><00:04:33.120><c> the</c><00:04:33.280><c> code</c>
+
+00:04:34.070 --> 00:04:34.080 align:start position:0%
+favorite part the code
+ 
+
+00:04:34.080 --> 00:04:37.110 align:start position:0%
+favorite part the code
+so<00:04:34.320><c> i'm</c><00:04:34.560><c> gonna</c><00:04:34.880><c> initialize</c><00:04:35.600><c> the</c><00:04:35.759><c> result</c><00:04:36.639><c> as</c><00:04:36.880><c> an</c>
+
+00:04:37.110 --> 00:04:37.120 align:start position:0%
+so i'm gonna initialize the result as an
+ 
+
+00:04:37.120 --> 00:04:39.110 align:start position:0%
+so i'm gonna initialize the result as an
+empty<00:04:37.440><c> string</c><00:04:38.240><c> because</c><00:04:38.720><c> you</c><00:04:38.800><c> know</c><00:04:38.960><c> that's</c>
+
+00:04:39.110 --> 00:04:39.120 align:start position:0%
+empty string because you know that's
+ 
+
+00:04:39.120 --> 00:04:41.430 align:start position:0%
+empty string because you know that's
+just<00:04:39.360><c> a</c><00:04:39.440><c> good</c><00:04:39.600><c> default</c><00:04:40.080><c> case</c>
+
+00:04:41.430 --> 00:04:41.440 align:start position:0%
+just a good default case
+ 
+
+00:04:41.440 --> 00:04:43.909 align:start position:0%
+just a good default case
+we'll<00:04:41.600><c> get</c><00:04:42.080><c> the</c><00:04:42.639><c> the</c><00:04:43.120><c> longest</c><00:04:43.600><c> length</c>
+
+00:04:43.909 --> 00:04:43.919 align:start position:0%
+we'll get the the longest length
+ 
+
+00:04:43.919 --> 00:04:46.550 align:start position:0%
+we'll get the the longest length
+initially<00:04:44.400><c> set</c><00:04:44.560><c> to</c><00:04:44.720><c> zero</c>
+
+00:04:46.550 --> 00:04:46.560 align:start position:0%
+initially set to zero
+ 
+
+00:04:46.560 --> 00:04:48.550 align:start position:0%
+initially set to zero
+now<00:04:46.800><c> we're</c><00:04:47.040><c> gonna</c><00:04:47.520><c> go</c><00:04:47.759><c> through</c><00:04:48.000><c> every</c><00:04:48.160><c> single</c>
+
+00:04:48.550 --> 00:04:48.560 align:start position:0%
+now we're gonna go through every single
+ 
+
+00:04:48.560 --> 00:04:49.670 align:start position:0%
+now we're gonna go through every single
+character<00:04:49.280><c> or</c>
+
+00:04:49.670 --> 00:04:49.680 align:start position:0%
+character or
+ 
+
+00:04:49.680 --> 00:04:51.749 align:start position:0%
+character or
+rather<00:04:50.080><c> every</c><00:04:50.240><c> single</c><00:04:50.639><c> position</c><00:04:51.440><c> in</c><00:04:51.600><c> this</c>
+
+00:04:51.749 --> 00:04:51.759 align:start position:0%
+rather every single position in this
+ 
+
+00:04:51.759 --> 00:04:55.030 align:start position:0%
+rather every single position in this
+string
+
+00:04:55.030 --> 00:04:55.040 align:start position:0%
+ 
+ 
+
+00:04:55.040 --> 00:04:57.430 align:start position:0%
+ 
+considering<00:04:55.600><c> it</c><00:04:55.759><c> to</c><00:04:55.919><c> be</c><00:04:56.000><c> the</c><00:04:56.240><c> center</c><00:04:56.800><c> so</c><00:04:57.120><c> first</c>
+
+00:04:57.430 --> 00:04:57.440 align:start position:0%
+considering it to be the center so first
+ 
+
+00:04:57.440 --> 00:04:58.230 align:start position:0%
+considering it to be the center so first
+let's<00:04:57.840><c> check</c>
+
+00:04:58.230 --> 00:04:58.240 align:start position:0%
+let's check
+ 
+
+00:04:58.240 --> 00:05:03.749 align:start position:0%
+let's check
+odd<00:04:58.800><c> length</c><00:04:59.600><c> palindromes</c>
+
+00:05:03.749 --> 00:05:03.759 align:start position:0%
+ 
+ 
+
+00:05:03.759 --> 00:05:05.830 align:start position:0%
+ 
+so<00:05:04.080><c> i'm</c><00:05:04.240><c> going</c><00:05:04.400><c> to</c><00:05:04.479><c> have</c><00:05:04.720><c> a</c><00:05:04.960><c> left</c><00:05:05.360><c> and</c><00:05:05.520><c> right</c>
+
+00:05:05.830 --> 00:05:05.840 align:start position:0%
+so i'm going to have a left and right
+ 
+
+00:05:05.840 --> 00:05:08.070 align:start position:0%
+so i'm going to have a left and right
+pointer<00:05:06.560><c> these</c><00:05:06.880><c> left</c><00:05:07.199><c> and</c><00:05:07.360><c> right</c><00:05:07.600><c> pointers</c>
+
+00:05:08.070 --> 00:05:08.080 align:start position:0%
+pointer these left and right pointers
+ 
+
+00:05:08.080 --> 00:05:09.990 align:start position:0%
+pointer these left and right pointers
+are<00:05:08.240><c> going</c><00:05:08.320><c> to</c><00:05:08.400><c> be</c><00:05:08.840><c> initialized</c>
+
+00:05:09.990 --> 00:05:10.000 align:start position:0%
+are going to be initialized
+ 
+
+00:05:10.000 --> 00:05:13.029 align:start position:0%
+are going to be initialized
+to<00:05:10.240><c> i</c><00:05:10.960><c> which</c><00:05:11.199><c> is</c><00:05:11.759><c> our</c><00:05:12.080><c> center</c><00:05:12.400><c> position</c>
+
+00:05:13.029 --> 00:05:13.039 align:start position:0%
+to i which is our center position
+ 
+
+00:05:13.039 --> 00:05:15.990 align:start position:0%
+to i which is our center position
+right<00:05:13.280><c> now</c><00:05:14.240><c> while</c><00:05:15.039><c> my</c><00:05:15.280><c> left</c><00:05:15.600><c> and</c><00:05:15.759><c> right</c>
+
+00:05:15.990 --> 00:05:16.000 align:start position:0%
+right now while my left and right
+ 
+
+00:05:16.000 --> 00:05:22.830 align:start position:0%
+right now while my left and right
+pointers<00:05:16.400><c> are</c>
+
+00:05:22.830 --> 00:05:22.840 align:start position:0%
+ 
+ 
+
+00:05:22.840 --> 00:05:23.990 align:start position:0%
+ 
+inbound
+
+00:05:23.990 --> 00:05:24.000 align:start position:0%
+inbound
+ 
+
+00:05:24.000 --> 00:05:26.710 align:start position:0%
+inbound
+as<00:05:24.240><c> well</c><00:05:24.560><c> as</c><00:05:25.039><c> while</c><00:05:25.360><c> this</c><00:05:25.600><c> is</c><00:05:25.759><c> a</c><00:05:25.840><c> palindrome</c><00:05:26.479><c> so</c>
+
+00:05:26.710 --> 00:05:26.720 align:start position:0%
+as well as while this is a palindrome so
+ 
+
+00:05:26.720 --> 00:05:28.390 align:start position:0%
+as well as while this is a palindrome so
+i<00:05:26.800><c> want</c><00:05:26.960><c> to</c><00:05:27.039><c> check</c><00:05:27.280><c> that</c><00:05:27.440><c> the</c><00:05:27.680><c> left</c><00:05:28.000><c> and</c><00:05:28.160><c> right</c>
+
+00:05:28.390 --> 00:05:28.400 align:start position:0%
+i want to check that the left and right
+ 
+
+00:05:28.400 --> 00:05:29.830 align:start position:0%
+i want to check that the left and right
+are<00:05:28.639><c> equal</c><00:05:28.960><c> to</c><00:05:29.120><c> each</c><00:05:29.360><c> other</c>
+
+00:05:29.830 --> 00:05:29.840 align:start position:0%
+are equal to each other
+ 
+
+00:05:29.840 --> 00:05:31.670 align:start position:0%
+are equal to each other
+remember<00:05:30.560><c> we're</c><00:05:30.800><c> starting</c><00:05:31.199><c> in</c><00:05:31.280><c> the</c><00:05:31.360><c> middle</c>
+
+00:05:31.670 --> 00:05:31.680 align:start position:0%
+remember we're starting in the middle
+ 
+
+00:05:31.680 --> 00:05:36.629 align:start position:0%
+remember we're starting in the middle
+and<00:05:31.840><c> expanding</c><00:05:32.560><c> outwards</c>
+
+00:05:36.629 --> 00:05:36.639 align:start position:0%
+ 
+ 
+
+00:05:36.639 --> 00:05:38.710 align:start position:0%
+ 
+so<00:05:36.880><c> while</c><00:05:37.199><c> this</c><00:05:37.360><c> is</c><00:05:37.520><c> the</c><00:05:37.680><c> case</c><00:05:38.000><c> we</c><00:05:38.240><c> know</c><00:05:38.400><c> it's</c><00:05:38.560><c> a</c>
+
+00:05:38.710 --> 00:05:38.720 align:start position:0%
+so while this is the case we know it's a
+ 
+
+00:05:38.720 --> 00:05:40.790 align:start position:0%
+so while this is the case we know it's a
+palindrome<00:05:39.360><c> so</c><00:05:39.520><c> we</c><00:05:39.600><c> can</c><00:05:39.759><c> potentially</c>
+
+00:05:40.790 --> 00:05:40.800 align:start position:0%
+palindrome so we can potentially
+ 
+
+00:05:40.800 --> 00:05:43.350 align:start position:0%
+palindrome so we can potentially
+update<00:05:41.280><c> our</c><00:05:41.360><c> result</c><00:05:42.080><c> so</c><00:05:42.240><c> we'll</c><00:05:42.560><c> check</c><00:05:43.199><c> that</c>
+
+00:05:43.350 --> 00:05:43.360 align:start position:0%
+update our result so we'll check that
+ 
+
+00:05:43.360 --> 00:05:45.350 align:start position:0%
+update our result so we'll check that
+the<00:05:43.600><c> length</c><00:05:43.919><c> of</c><00:05:44.080><c> this</c><00:05:44.320><c> palindrome</c><00:05:44.960><c> which</c><00:05:45.199><c> we</c>
+
+00:05:45.350 --> 00:05:45.360 align:start position:0%
+the length of this palindrome which we
+ 
+
+00:05:45.360 --> 00:05:45.670 align:start position:0%
+the length of this palindrome which we
+can
+
+00:05:45.670 --> 00:05:45.680 align:start position:0%
+can
+ 
+
+00:05:45.680 --> 00:05:48.950 align:start position:0%
+can
+compute<00:05:46.240><c> by</c><00:05:46.479><c> saying</c><00:05:46.960><c> right</c><00:05:47.280><c> minus</c><00:05:47.840><c> left</c>
+
+00:05:48.950 --> 00:05:48.960 align:start position:0%
+compute by saying right minus left
+ 
+
+00:05:48.960 --> 00:05:52.070 align:start position:0%
+compute by saying right minus left
+plus<00:05:49.280><c> one</c><00:05:51.520><c> is</c><00:05:51.680><c> greater</c>
+
+00:05:52.070 --> 00:05:52.080 align:start position:0%
+plus one is greater
+ 
+
+00:05:52.080 --> 00:05:55.350 align:start position:0%
+plus one is greater
+than<00:05:52.240><c> our</c><00:05:52.479><c> current</c><00:05:52.880><c> result</c><00:05:53.360><c> length</c>
+
+00:05:55.350 --> 00:05:55.360 align:start position:0%
+than our current result length
+ 
+
+00:05:55.360 --> 00:06:01.830 align:start position:0%
+than our current result length
+then<00:05:55.600><c> we</c><00:05:55.759><c> update</c><00:05:56.080><c> the</c><00:05:56.160><c> result</c>
+
+00:06:01.830 --> 00:06:01.840 align:start position:0%
+ 
+ 
+
+00:06:01.840 --> 00:06:04.070 align:start position:0%
+ 
+and<00:06:02.160><c> we</c><00:06:02.400><c> also</c><00:06:02.639><c> have</c><00:06:02.800><c> to</c><00:06:02.960><c> not</c><00:06:03.199><c> forget</c><00:06:03.520><c> to</c><00:06:03.759><c> update</c>
+
+00:06:04.070 --> 00:06:04.080 align:start position:0%
+and we also have to not forget to update
+ 
+
+00:06:04.080 --> 00:06:06.150 align:start position:0%
+and we also have to not forget to update
+the<00:06:04.160><c> result</c><00:06:04.560><c> length</c><00:06:04.960><c> i</c><00:06:05.120><c> usually</c><00:06:05.440><c> forget</c><00:06:05.759><c> to</c><00:06:05.919><c> do</c>
+
+00:06:06.150 --> 00:06:06.160 align:start position:0%
+the result length i usually forget to do
+ 
+
+00:06:06.160 --> 00:06:09.670 align:start position:0%
+the result length i usually forget to do
+this
+
+00:06:09.670 --> 00:06:09.680 align:start position:0%
+ 
+ 
+
+00:06:09.680 --> 00:06:12.469 align:start position:0%
+ 
+and<00:06:10.240><c> let's</c><00:06:10.560><c> also</c><00:06:10.800><c> not</c><00:06:11.039><c> forget</c><00:06:11.440><c> to</c><00:06:11.600><c> expand</c><00:06:12.240><c> our</c>
+
+00:06:12.469 --> 00:06:12.479 align:start position:0%
+and let's also not forget to expand our
+ 
+
+00:06:12.479 --> 00:06:14.390 align:start position:0%
+and let's also not forget to expand our
+pointers<00:06:12.960><c> outward</c><00:06:13.440><c> so</c><00:06:13.600><c> our</c><00:06:13.840><c> left</c><00:06:14.080><c> pointer</c>
+
+00:06:14.390 --> 00:06:14.400 align:start position:0%
+pointers outward so our left pointer
+ 
+
+00:06:14.400 --> 00:06:17.270 align:start position:0%
+pointers outward so our left pointer
+will<00:06:14.560><c> be</c><00:06:14.720><c> shifted</c><00:06:15.120><c> to</c><00:06:15.280><c> the</c><00:06:15.440><c> left</c>
+
+00:06:17.270 --> 00:06:17.280 align:start position:0%
+will be shifted to the left
+ 
+
+00:06:17.280 --> 00:06:19.110 align:start position:0%
+will be shifted to the left
+our<00:06:17.600><c> right</c><00:06:17.840><c> corner</c><00:06:18.160><c> will</c><00:06:18.240><c> be</c><00:06:18.400><c> shifted</c><00:06:18.800><c> to</c><00:06:18.960><c> the</c>
+
+00:06:19.110 --> 00:06:19.120 align:start position:0%
+our right corner will be shifted to the
+ 
+
+00:06:19.120 --> 00:06:21.749 align:start position:0%
+our right corner will be shifted to the
+right<00:06:19.840><c> so</c><00:06:20.160><c> now</c><00:06:20.319><c> let's</c><00:06:20.639><c> check</c><00:06:20.960><c> the</c><00:06:21.199><c> even</c>
+
+00:06:21.749 --> 00:06:21.759 align:start position:0%
+right so now let's check the even
+ 
+
+00:06:21.759 --> 00:06:25.110 align:start position:0%
+right so now let's check the even
+length<00:06:22.479><c> palindromes</c><00:06:23.199><c> as</c><00:06:23.360><c> well</c>
+
+00:06:25.110 --> 00:06:25.120 align:start position:0%
+length palindromes as well
+ 
+
+00:06:25.120 --> 00:06:26.870 align:start position:0%
+length palindromes as well
+right<00:06:25.360><c> now</c><00:06:25.840><c> you</c><00:06:25.919><c> can</c><00:06:26.080><c> handle</c><00:06:26.319><c> this</c><00:06:26.479><c> a</c><00:06:26.560><c> bunch</c><00:06:26.800><c> of</c>
+
+00:06:26.870 --> 00:06:26.880 align:start position:0%
+right now you can handle this a bunch of
+ 
+
+00:06:26.880 --> 00:06:28.309 align:start position:0%
+right now you can handle this a bunch of
+different<00:06:27.199><c> ways</c><00:06:27.440><c> the</c><00:06:27.520><c> way</c><00:06:27.759><c> i'm</c><00:06:27.919><c> going</c><00:06:28.000><c> to</c><00:06:28.080><c> do</c>
+
+00:06:28.309 --> 00:06:28.319 align:start position:0%
+different ways the way i'm going to do
+ 
+
+00:06:28.319 --> 00:06:28.950 align:start position:0%
+different ways the way i'm going to do
+it<00:06:28.479><c> is</c>
+
+00:06:28.950 --> 00:06:28.960 align:start position:0%
+it is
+ 
+
+00:06:28.960 --> 00:06:32.390 align:start position:0%
+it is
+setting<00:06:29.520><c> the</c><00:06:29.840><c> left</c><00:06:30.160><c> pointer</c><00:06:31.039><c> to</c>
+
+00:06:32.390 --> 00:06:32.400 align:start position:0%
+setting the left pointer to
+ 
+
+00:06:32.400 --> 00:06:35.430 align:start position:0%
+setting the left pointer to
+i<00:06:33.199><c> and</c><00:06:33.440><c> setting</c><00:06:33.759><c> the</c><00:06:34.080><c> right</c><00:06:34.400><c> pointer</c><00:06:34.880><c> to</c><00:06:35.120><c> i</c>
+
+00:06:35.430 --> 00:06:35.440 align:start position:0%
+i and setting the right pointer to i
+ 
+
+00:06:35.440 --> 00:06:38.309 align:start position:0%
+i and setting the right pointer to i
+plus<00:06:35.759><c> one</c><00:06:36.800><c> so</c><00:06:37.039><c> again</c><00:06:37.280><c> we're</c><00:06:37.520><c> basically</c><00:06:38.000><c> copy</c>
+
+00:06:38.309 --> 00:06:38.319 align:start position:0%
+plus one so again we're basically copy
+ 
+
+00:06:38.319 --> 00:06:39.990 align:start position:0%
+plus one so again we're basically copy
+and<00:06:38.479><c> pasting</c><00:06:38.880><c> the</c><00:06:39.039><c> code</c><00:06:39.280><c> that</c><00:06:39.440><c> we</c><00:06:39.520><c> just</c><00:06:39.759><c> wrote</c>
+
+00:06:39.990 --> 00:06:40.000 align:start position:0%
+and pasting the code that we just wrote
+ 
+
+00:06:40.000 --> 00:06:40.710 align:start position:0%
+and pasting the code that we just wrote
+above
+
+00:06:40.710 --> 00:06:40.720 align:start position:0%
+above
+ 
+
+00:06:40.720 --> 00:06:42.469 align:start position:0%
+above
+maybe<00:06:40.960><c> we</c><00:06:41.120><c> could</c><00:06:41.440><c> write</c><00:06:41.680><c> a</c><00:06:41.759><c> function</c><00:06:42.160><c> to</c><00:06:42.319><c> do</c>
+
+00:06:42.469 --> 00:06:42.479 align:start position:0%
+maybe we could write a function to do
+ 
+
+00:06:42.479 --> 00:06:44.230 align:start position:0%
+maybe we could write a function to do
+this<00:06:42.800><c> but</c><00:06:43.680><c> that's</c>
+
+00:06:44.230 --> 00:06:44.240 align:start position:0%
+this but that's
+ 
+
+00:06:44.240 --> 00:06:54.629 align:start position:0%
+this but that's
+i'm<00:06:44.400><c> too</c><00:06:44.639><c> lazy</c><00:06:44.960><c> to</c><00:06:45.039><c> do</c><00:06:46.840><c> that</c>
+
+00:06:54.629 --> 00:06:54.639 align:start position:0%
+ 
+ 
+
+00:06:54.639 --> 00:06:57.029 align:start position:0%
+ 
+so<00:06:54.880><c> while</c><00:06:55.120><c> it's</c><00:06:55.280><c> a</c><00:06:55.360><c> palindrome</c><00:06:55.840><c> again</c><00:06:56.639><c> we'll</c>
+
+00:06:57.029 --> 00:06:57.039 align:start position:0%
+so while it's a palindrome again we'll
+ 
+
+00:06:57.039 --> 00:06:58.230 align:start position:0%
+so while it's a palindrome again we'll
+check<00:06:57.599><c> that</c>
+
+00:06:58.230 --> 00:06:58.240 align:start position:0%
+check that
+ 
+
+00:06:58.240 --> 00:07:02.230 align:start position:0%
+check that
+the<00:06:58.560><c> length</c><00:07:00.720><c> is</c><00:07:01.199><c> we'll</c><00:07:01.440><c> check</c><00:07:01.599><c> that</c><00:07:01.919><c> it's</c><00:07:02.080><c> the</c>
+
+00:07:02.230 --> 00:07:02.240 align:start position:0%
+the length is we'll check that it's the
+ 
+
+00:07:02.240 --> 00:07:04.150 align:start position:0%
+the length is we'll check that it's the
+longest<00:07:02.720><c> palindrome</c><00:07:03.280><c> that</c><00:07:03.440><c> we've</c><00:07:03.680><c> seen</c><00:07:03.919><c> so</c>
+
+00:07:04.150 --> 00:07:04.160 align:start position:0%
+longest palindrome that we've seen so
+ 
+
+00:07:04.160 --> 00:07:05.990 align:start position:0%
+longest palindrome that we've seen so
+far<00:07:04.479><c> basically</c>
+
+00:07:05.990 --> 00:07:06.000 align:start position:0%
+far basically
+ 
+
+00:07:06.000 --> 00:07:18.870 align:start position:0%
+far basically
+if<00:07:06.160><c> it</c><00:07:06.319><c> is</c><00:07:06.479><c> we</c><00:07:06.639><c> update</c><00:07:06.960><c> our</c><00:07:14.840><c> result</c>
+
+00:07:18.870 --> 00:07:18.880 align:start position:0%
+ 
+ 
+
+00:07:18.880 --> 00:07:21.430 align:start position:0%
+ 
+and<00:07:19.199><c> again</c><00:07:19.599><c> we</c><00:07:19.759><c> can</c><00:07:19.919><c> expand</c><00:07:20.479><c> our</c><00:07:20.720><c> pointers</c>
+
+00:07:21.430 --> 00:07:21.440 align:start position:0%
+and again we can expand our pointers
+ 
+
+00:07:21.440 --> 00:07:25.830 align:start position:0%
+and again we can expand our pointers
+outward
+
+00:07:25.830 --> 00:07:25.840 align:start position:0%
+ 
+ 
+
+00:07:25.840 --> 00:07:28.230 align:start position:0%
+ 
+and<00:07:26.479><c> at</c><00:07:26.639><c> the</c><00:07:26.800><c> end</c><00:07:27.280><c> all</c><00:07:27.440><c> we</c><00:07:27.599><c> have</c><00:07:27.680><c> to</c><00:07:27.840><c> do</c><00:07:28.080><c> is</c>
+
+00:07:28.230 --> 00:07:28.240 align:start position:0%
+and at the end all we have to do is
+ 
+
+00:07:28.240 --> 00:07:28.950 align:start position:0%
+and at the end all we have to do is
+return
+
+00:07:28.950 --> 00:07:28.960 align:start position:0%
+return
+ 
+
+00:07:28.960 --> 00:07:32.469 align:start position:0%
+return
+our<00:07:29.280><c> result</c><00:07:31.039><c> so</c><00:07:31.280><c> i</c><00:07:31.440><c> kind</c><00:07:31.680><c> of</c><00:07:31.840><c> made</c><00:07:32.080><c> it</c><00:07:32.240><c> look</c>
+
+00:07:32.469 --> 00:07:32.479 align:start position:0%
+our result so i kind of made it look
+ 
+
+00:07:32.479 --> 00:07:33.350 align:start position:0%
+our result so i kind of made it look
+easy
+
+00:07:33.350 --> 00:07:33.360 align:start position:0%
+easy
+ 
+
+00:07:33.360 --> 00:07:35.510 align:start position:0%
+easy
+uh<00:07:33.599><c> with</c><00:07:33.759><c> the</c><00:07:33.919><c> code</c><00:07:34.400><c> but</c><00:07:34.880><c> don't</c><00:07:35.039><c> let</c><00:07:35.199><c> it</c><00:07:35.360><c> fool</c>
+
+00:07:35.510 --> 00:07:35.520 align:start position:0%
+uh with the code but don't let it fool
+ 
+
+00:07:35.520 --> 00:07:37.350 align:start position:0%
+uh with the code but don't let it fool
+you<00:07:35.680><c> it</c><00:07:35.759><c> took</c><00:07:36.000><c> me</c><00:07:36.160><c> a</c><00:07:36.240><c> while</c><00:07:36.560><c> to</c><00:07:36.880><c> write</c><00:07:37.120><c> this</c>
+
+00:07:37.350 --> 00:07:37.360 align:start position:0%
+you it took me a while to write this
+ 
+
+00:07:37.360 --> 00:07:39.430 align:start position:0%
+you it took me a while to write this
+before<00:07:37.599><c> i</c><00:07:37.759><c> started</c><00:07:38.080><c> recording</c><00:07:38.560><c> this</c>
+
+00:07:39.430 --> 00:07:39.440 align:start position:0%
+before i started recording this
+ 
+
+00:07:39.440 --> 00:07:41.510 align:start position:0%
+before i started recording this
+um<00:07:39.919><c> there's</c><00:07:40.160><c> a</c><00:07:40.240><c> lot</c><00:07:40.400><c> of</c><00:07:40.560><c> like</c><00:07:40.720><c> edge</c><00:07:41.039><c> cases</c><00:07:41.440><c> that</c>
+
+00:07:41.510 --> 00:07:41.520 align:start position:0%
+um there's a lot of like edge cases that
+ 
+
+00:07:41.520 --> 00:07:42.710 align:start position:0%
+um there's a lot of like edge cases that
+can<00:07:41.680><c> be</c><00:07:41.840><c> kind</c><00:07:41.919><c> of</c><00:07:42.080><c> annoying</c>
+
+00:07:42.710 --> 00:07:42.720 align:start position:0%
+can be kind of annoying
+ 
+
+00:07:42.720 --> 00:07:45.430 align:start position:0%
+can be kind of annoying
+with<00:07:42.880><c> this</c><00:07:43.120><c> problem</c><00:07:43.520><c> i</c><00:07:43.599><c> think</c><00:07:44.560><c> for</c><00:07:44.800><c> me</c><00:07:45.120><c> putting</c>
+
+00:07:45.430 --> 00:07:45.440 align:start position:0%
+with this problem i think for me putting
+ 
+
+00:07:45.440 --> 00:07:47.189 align:start position:0%
+with this problem i think for me putting
+the<00:07:45.680><c> if</c><00:07:45.919><c> statement</c>
+
+00:07:47.189 --> 00:07:47.199 align:start position:0%
+the if statement
+ 
+
+00:07:47.199 --> 00:07:49.510 align:start position:0%
+the if statement
+uh<00:07:48.240><c> checking</c><00:07:48.560><c> that</c><00:07:48.720><c> it's</c><00:07:48.960><c> the</c><00:07:49.120><c> longest</c>
+
+00:07:49.510 --> 00:07:49.520 align:start position:0%
+uh checking that it's the longest
+ 
+
+00:07:49.520 --> 00:07:51.909 align:start position:0%
+uh checking that it's the longest
+palindrome<00:07:50.160><c> inside</c><00:07:50.720><c> of</c><00:07:50.800><c> the</c><00:07:50.960><c> while</c><00:07:51.360><c> loop</c>
+
+00:07:51.909 --> 00:07:51.919 align:start position:0%
+palindrome inside of the while loop
+ 
+
+00:07:51.919 --> 00:07:54.550 align:start position:0%
+palindrome inside of the while loop
+helped<00:07:52.560><c> i</c><00:07:52.720><c> think</c><00:07:53.039><c> if</c><00:07:53.199><c> you</c><00:07:53.599><c> put</c><00:07:53.840><c> this</c><00:07:54.080><c> outside</c>
+
+00:07:54.550 --> 00:07:54.560 align:start position:0%
+helped i think if you put this outside
+ 
+
+00:07:54.560 --> 00:07:55.909 align:start position:0%
+helped i think if you put this outside
+the<00:07:54.720><c> while</c><00:07:54.960><c> loop</c><00:07:55.199><c> it</c><00:07:55.280><c> kind</c><00:07:55.440><c> of</c><00:07:55.599><c> makes</c><00:07:55.840><c> it</c>
+
+00:07:55.909 --> 00:07:55.919 align:start position:0%
+the while loop it kind of makes it
+ 
+
+00:07:55.919 --> 00:07:56.950 align:start position:0%
+the while loop it kind of makes it
+harder
+
+00:07:56.950 --> 00:07:56.960 align:start position:0%
+harder
+ 
+
+00:07:56.960 --> 00:07:58.869 align:start position:0%
+harder
+but<00:07:57.199><c> i</c><00:07:57.360><c> hope</c><00:07:57.599><c> this</c><00:07:57.919><c> at</c><00:07:58.080><c> least</c><00:07:58.479><c> gave</c><00:07:58.720><c> you</c><00:07:58.800><c> a</c>
+
+00:07:58.869 --> 00:07:58.879 align:start position:0%
+but i hope this at least gave you a
+ 
+
+00:07:58.879 --> 00:08:00.869 align:start position:0%
+but i hope this at least gave you a
+little<00:07:59.039><c> bit</c><00:07:59.280><c> of</c><00:07:59.360><c> the</c><00:07:59.599><c> intuition</c><00:08:00.319><c> behind</c><00:08:00.639><c> the</c>
+
+00:08:00.869 --> 00:08:00.879 align:start position:0%
+little bit of the intuition behind the
+ 
+
+00:08:00.879 --> 00:08:02.390 align:start position:0%
+little bit of the intuition behind the
+problem
+
+00:08:02.390 --> 00:08:02.400 align:start position:0%
+problem
+ 
+
+00:08:02.400 --> 00:08:04.869 align:start position:0%
+problem
+writing<00:08:02.720><c> the</c><00:08:02.800><c> code</c><00:08:03.120><c> is</c><00:08:03.280><c> not</c><00:08:03.440><c> always</c><00:08:03.840><c> easy</c><00:08:04.400><c> but</c>
+
+00:08:04.869 --> 00:08:04.879 align:start position:0%
+writing the code is not always easy but
+ 
+
+00:08:04.879 --> 00:08:06.150 align:start position:0%
+writing the code is not always easy but
+if<00:08:05.039><c> this</c><00:08:05.199><c> was</c><00:08:05.440><c> helpful</c>
+
+00:08:06.150 --> 00:08:06.160 align:start position:0%
+if this was helpful
+ 
+
+00:08:06.160 --> 00:08:08.629 align:start position:0%
+if this was helpful
+leave<00:08:06.400><c> a</c><00:08:06.479><c> like</c><00:08:06.720><c> and</c><00:08:06.800><c> subscribe</c><00:08:07.840><c> and</c><00:08:08.080><c> thank</c><00:08:08.319><c> you</c>
+
+00:08:08.629 --> 00:08:08.639 align:start position:0%
+leave a like and subscribe and thank you
+ 
+
+00:08:08.639 --> 00:08:12.479 align:start position:0%
+leave a like and subscribe and thank you
+for<00:08:09.479><c> watching</c>
+

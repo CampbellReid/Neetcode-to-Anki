@@ -1,0 +1,332 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+let's solve the problem missing number
+and this is another problem from the
+blind 75 list a list of commonly code
+questions we've been tracking this is
+missing number in the binary category
+you'll see why in a moment and the link
+to this sheet will be in the description
+if you do want to take a look we have
+solved most of the problems in this list
+so far so let's continue so the thing i
+like about this problem is that there's
+so many different solutions to this
+problem even though it's an easy problem
+i think it's a good problem to just
+understand a lot of the different
+solutions involved with this problem you
+can definitely learn a lot so we're
+given an array of numbers containing n
+distinct numbers in the range 0 to n
+even though this range actually has n
+plus 1 numbers inside it we're only
+choosing n distinct numbers from this
+range and we want to return the only
+number that's missing from this array so
+we want to find the missing number from
+this range that that we did not pick
+there are many different ways to solve
+this problem the follow-up is can we
+implement a solution with o of one extra
+space and o of n run time complexity
+that's going to be the challenge and
+actually there's two different ways we
+can arrive at such a solution i'll show
+you both of them because they're both
+pretty interesting okay so in the first
+example we're given three distinct
+numbers because the length of this is
+three so the range that we're looking at
+is from zero to three right there's four
+different numbers in this range zero one
+two and three but we've only chosen
+three of them in our input we want to
+find the one that's missing so we can
+kind of just go through this input right
+three okay
+the missing number is not three zero the
+missing number is not zero one the
+missing number is not one so the only
+remaining number is two so two is the
+missing number that was a pretty easy
+way to solve the problem what exactly
+did we do right now well you could have
+you could think about this list of
+numbers as basically a hash set or hash
+map or whatever you want and we're
+basically iterating through the list of
+numbers and then crossing out the ones
+that are already uh and contained in the
+input list so basically we used o of n
+extra memory with a hash set or map and
+o of n time complexity because we had to
+iterate through the input array so
+that's actually the most simple solution
+right using hashing to do this problem
+but it does take of n extra memory the
+follow-up was can we do this in o of one
+extra memory there are two different
+ways actually that at least i know of
+that you can do that so let me show you
+both of those right now so one of the
+ways that we can solve this problem with
+o of one memory is going to be needing
+some binary properties and if you've
+never really heard of this there's no
+way you can kind of figure out this
+solution
+at least this binary solution it's going
+to need the xor operator the exclusive
+or operator if you don't know what this
+is let me show you let's suppose we had
+two numbers let's say we had two and we
+want to exclusive or it with three this
+is the symbol that you use for exclusive
+or so we're taking two and exclusive
+oring it with three
+so this is a binary operation so we're
+going to look at the binary
+representation of 2 which is going to be
+1 0 we're going to look at the binary
+representation of 3 which is going to be
+1 1. we're going to exclusive or these
+how do you exclusive or you look at each
+bit and if only one of them basically if
+they're different
+if both of the bits are different one it
+must be a zero and one must be a one
+they could be swapped right it could be
+one zero or zero one but they need to be
+different and if they are different then
+the output is going to be a one if
+they're the same in this example they're
+both one or if they were both zero that
+means they're the same so then in the
+output we're going to have a zero so you
+can take two numbers like two and three
+exclusive or them and we get in this
+case an output of one so why is
+exclusive oring going to be helpful for
+us in this problem well my question to
+you is what happens when we take two
+numbers that are the same and then try
+to exclusive or them so five together
+with five so five in binary i think is
+one zero one so if we exclusive or these
+together what's going to happen well
+we're gonna look bit by bit it's gonna
+be the same so we're gonna get a zero in
+the output again it's gonna be the same
+we're gonna get a zero in the output
+right if there's 0 0 or 1 1 they're the
+same similarly in this case
+it's going to be 0 right because of
+course when you take two numbers they're
+going to have the exact same binary
+representation if you exclusive or them
+together we're going to get 0 in the
+output because they're the exact same
+right they're always going to be the
+same
+so the exclusive or is going to give us
+a 0. why is this helpful for us in
+solving this problem well basically the
+order in which we exclusive or numbers
+does not matter for example if i took 5
+exclusive or 5 and then exclusive or 3
+what's going to be the output of this
+well as we just determined 5 exclusive
+or with 5 is going to evaluate to zero
+right so then the problem is going to be
+0 exclusive or with 3. what happens when
+you take a number and an exclusive or
+with 0 well you just get the original
+number why is that the case let's look
+let's say we had
+1 1 this is our 3 and then 0 is 0 0 0
+and if we exclusive or this we're just
+going to take all the ones in 3 and put
+them in the output right because this is
+going to evaluate to 1 this is going to
+be 1 and then 0 0's which is going to be
+the rest of this thing is also is just
+going to evaluate to zero so the output
+what we get here as you can see is the
+number itself three so when you take
+three uh
+exclusive or with a zero we get the
+three uh and the thing i'm getting at is
+this operation it doesn't matter the
+order that you do it and if you do five
+exclusive or three and then exclusive or
+five uh we're still going to get a three
+in the output because five exclusive or
+with three is going to be something sure
+but basically what i'm saying is the
+order does not matter right we can say
+you know five exclusive or with five
+first then these kind of cancel each
+other out and then we're left with the
+three so why is this going to be helpful
+you might be able to figure it out by
+now uh because i've kind of explained
+most of the logic here so how are we
+going to use this simple fact to get the
+answer get the missing number from this
+range that we're given 0 to 3
+we know one of the numbers happens to be
+missing how are we going to do that well
+we know one of these numbers is missing
+from this array right so what are we
+going to do we're going to take the
+the range 0 1 2 3 exclusive or it with
+the input array in this case it's 0 1 3
+right we're missing the 2. what's going
+to happen when we do this operation this
+exclusive or operation well the zeros
+are going to match right the zeros are
+going to cancel out the ones are going
+to cancel out right we're going to get
+rid of the ones the threes are going to
+cancel out as well and then once
+everything is cancelled out the two will
+be remaining because it's the only
+number that didn't show up twice because
+this was the missing number this two was
+the missing number so then once the into
+this entire exclusive or operation is
+done we'll be left with a 2 which is the
+answer in this case and we did it with o
+of 1 memory because we just had to
+really iterate through every number in
+this
+input array exclusive or them together
+and then iterate through every number
+between 0 to 3 exclusive or them with
+the result of the exclusive or over here
+and then once all of those exclusive ors
+are done it's basically a linear time
+function it's going to be 2 2n because
+we're iterating through this array and
+iterating through that so it's going to
+be o of 2n the time complexity the
+memory complexity is going to be of 1
+because we didn't need anything extra
+and this solution is pretty easy to code
+up but there's actually one additional
+solution that i think is interesting for
+this problem that i'm gonna quickly go
+over let me explain how we're gonna
+arrive at the next o of one memory
+solution and then i'm actually gonna
+show you how to do it the simple idea is
+gonna be this what if we took the sum of
+this range 0 to 3 right basically the
+array from 0 1 2 to 3. we took the sum
+of this array subtracted from it the sum
+of the input array right right if we did
+that we took the sum of this subtracted
+by the sum of the other array we would
+be left with 2 right because 2 is the
+missing number 2 is the only number that
+shows up here that does not show up here
+and then the difference is going to be
+2. that's really easy now of course
+taking the sum of this array would be o
+of n and to compute this it would also
+be o of n so the overall time complexity
+is going to be 2n and we're not g we're
+just going to be maintaining two sums uh
+for each of these arrays right we're not
+actually going to be conti using any
+extra memory so the overall memory
+complexity is going to be big o of one
+so this is probably the easiest solution
+that you can arrive at with just o of
+one memory right this is probably the
+most intuitive one so this is the one
+i'll be coding up but just so you know
+you can actually calculate this sum
+you actually don't need a loop you can
+actually do it in o of one time using
+gauss's formula but that's something you
+can probably read more about on your own
+because it's a little bit extra for this
+problem so now let's get into the code
+we're going to initially set our result
+to zero or are we because what we want
+to do like i said is iterate through
+this input array nums and then second
+iterate through another array basically
+the array from zero to the length of
+this array nums right
+and then just kind of add those together
+right we're adding the values from this
+array 0 to n and subtracting the values
+from the input array but we don't need
+two loops to do that because since we're
+adding these values
+these values are going to be from 0 to
+n but we can use the index from this
+array nums to actually replace these
+values it's more simple than i'm going
+to be able to explain so let me actually
+just show you what we're going to do
+before i actually uh you know try to
+explain it so we're going through i in
+range length of the input array num so i
+is just the index right but we're going
+to be using i we're going to say a
+result we're going to add to the result
+the i value we're going to be adding
+this index right that's what we're going
+to be doing and we're going to be
+subtracting the number from nums right
+nums of i we're going to add i but
+subtract nums of i from this result why
+are we doing that because remember we
+want to add every value from here from
+this
+range it to our result but we want to
+subtract every value from nums obviously
+we're subtracting every value from nums
+but we want to add every value from this
+range so with this loop we're going to
+be adding every value from 0 to the
+length minus 1 because i
+because i is only going to go through
+every position from 0 to the length
+minus 1 uh let me actually correct this
+before we get an error uh this is going
+to be length minus one right we want to
+iterate through every position of nums
+so basically what i'm getting at is for
+this result we actually have to
+initialize not the result to zero but
+initialize it to the length of nums
+because we want because with this loop
+we're going to be adding i uh is it from
+zero to length minus one we're going to
+be adding that to the result but we also
+want to add the final value length of
+nums which is basically our n value and
+that's pretty much the explanation i
+probably over complicated it in this
+case it's a little more simple than you
+might think
+but this is the easiest way to do it
+with one loop then we can go ahead and
+actually return that result actually i
+don't actually need this minus one
+because i just remembered that python
+the way python works is i will
+implicitly it'll it'll stop before it
+actually gets to length of this it'll
+basically be a length of nums minus one
+but by default in python we can go ahead
+and run the code and you can see that it
+is very efficient so i hope that this
+was helpful if it was please like and
+subscribe it supports the channel a lot
+and i'll hopefully see you pretty soon

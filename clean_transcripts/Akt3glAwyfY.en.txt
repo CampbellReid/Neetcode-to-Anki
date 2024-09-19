@@ -1,0 +1,521 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+let's solve
+course schedule two and if you haven't
+already seen i've actually solved the
+first one which i recommend
+watching that video or at least solving
+that problem before you try to solve
+this one it's a little bit more
+difficult
+but it's also very similar so we are
+again given
+n courses labeled from 0 to n minus 1
+and these are basically going to be the
+nodes in our graphs so this is a graph
+problem and again some courses have
+prerequisites
+so course a has a prerequisite of course
+b and what that means is you have to
+take
+course b before you take course a so
+that's pretty intuitive right
+and so instead of knowing if we can take
+every single course
+in this problem we want to know for all
+of the courses
+and all of the prerequisites that we're
+given we want to return the order
+of courses that we would take in order
+to finish
+all the courses so we care about the
+order but there's one little subtlety
+it's possible that we can't take
+all courses given the prerequisites so
+if it's
+not possible we have to return an empty
+array so we have to
+we have to determine if it's even
+possible and then we have to return the
+order
+so this example is pretty simple we're
+given two courses zero
+and one and the prerequisite is so in
+order to take course one
+we have to first take course zero so
+then in that case what's the order
+of course we have to take zero first and
+then course one
+so the output is going to be zero one
+which is exactly what we have
+over here now what if i added one more
+prerequisite so what if i said
+okay to take course zero we are required
+to take
+course one as well what does that mean
+that means
+okay the first prereq tells us that to
+take
+course one we have to take course zero
+and the second one tells us to take
+course zero we have to take
+course one now look at this is it
+possible to take
+these courses it's not to take course
+zero we have to take course one to take
+course one we have to take course zero
+there's no
+valid order so we return an empty array
+and we know to return an empty array
+because
+we have a cycle in
+this graph right there's a cycle that
+tells us that it's not possible
+so now let's actually look at the
+general algorithm for it and it's
+actually
+topological sort this is a standard
+graph algorithm but you actually
+don't even need to know what this
+algorithm is when you solve this problem
+this
+problem actually teaches you what
+topological sort
+is so similar to course schedule one
+what we're gonna
+do is starting at every single node
+we're gonna run
+depth first search on the node so let's
+start at node zero let's run depth first
+search on it
+to do that we would before we do that we
+would need to build an adjacency list
+so for each node we would need to know
+its neighbors
+so for course 0 we would need its
+neighbors which are going to be
+1 and 2. basically it's prerequisites
+right that's going to be
+the prereq map so it's an adjacency list
+so i'm just going to quickly write that
+down
+so now we have our prereq map right it
+tells us for each
+node what are the prerequisites so zero
+right has two prerequisites one and two
+because it has two
+outgoing edges to one and two
+one has a single prerequisite three two
+has
+no prerequisites right because look it
+has two incoming edges but it does not
+have any
+outgoing edges so it does not have any
+prerequisites three has a single
+prerequisite of two
+four has a single prerequisite of zero
+and
+five also has a single prerequisite of
+zero
+and so we are going to build the output
+we're gonna do depth for search
+starting at every single node and
+remember the output we're trying to
+build is the order
+in which we can take courses so just by
+looking at it you can tell
+okay zero has two prerequisites one and
+two
+so of course we're gonna need to take
+one and two before we end up taking
+zero but let me show you the algorithm
+so let's start at zero we don't update
+our output yet we want to take the
+prerequisites
+first so let's go to one of the
+prerequisites
+by which we can tell from our prereq map
+so we're gonna be at node one right now
+and
+one has a single prerequisite three so
+we're gonna need to take the prereq
+before we can take
+course three and now we see three has
+a prereq of two a single prereq so all
+we have to do is take
+course two before we take three so now
+we are
+at course two and lovely that it does
+not have
+any prerequisites what does that mean
+for us
+so so far we've taken a path we've gone
+from zero to one to three
+all the way to two and now we don't have
+any more prereqs
+so we are allowed to take course two
+right it does not have any prereqs we
+can add it to our output so i'm going to
+add
+a 2 to our output and so what i'm going
+to do now is
+cross out 2 because we never have to
+visit it
+again because once we've added 2 to our
+output we don't want to add
+2 twice right there's no need to add a
+course
+to our output twice so i'm going to
+cross it out
+so we are never going to visit this node
+again and now i'm going to in our depth
+first search i'm going to go
+back to where we came from we came from
+this three
+so now that three look it does not
+three does not have any more prereqs
+right we've already visited two
+it doesn't have any more prereqs so we
+can also
+cross it out we never have to visit it
+again and we
+add it to our output and i'm just gonna
+repeat this process
+all the way along our green path that we
+just
+went along so we're gonna go back to one
+one
+we just visited three we are never gonna
+visit it
+and one has no prerequisites anymore so
+we can add this
+to our output and we go all the way back
+to zero now hold on a second so look
+zero has two prerequisites one and we
+already visited one
+but it has one more prereq two so
+let's go to two but we see
+right we already visited it we don't
+have to do it again we can cross this
+out
+we can cross this out so in reality zero
+does not have
+any prerequisites remaining so what do
+we do we add
+zero to our output now in reality
+our our algorithm is going to say okay
+we ran depth first search on zero so now
+we're going to run debt for search on
+one but we know that we already did that
+right we already recursively did that so
+we don't have to do it
+and actually before i forget since we
+added zero to our output let's cross it
+out so we ran debt for search on xero
+we're gonna try to run debt for search
+on one but we know we already did that
+we're gonna try to run debt for search
+on
+two but we know that we already did that
+we're gonna try to run debt for search
+on three
+but we know that we already did that so
+now we're going to try to run debt for
+search on four which we haven't visited
+yet
+and let's just use our common sense from
+just looking at the graph we can see
+that okay
+we need to take these courses in this
+order two
+three one zero what about four and five
+technically they both have a single
+prerequisite of zero right so once we
+take zero
+we can take four and five but we can do
+it in
+any order right we can take four or five
+or we can take
+five four it doesn't matter because
+these courses aren't a prerequisite of
+each other
+but the way our algorithm is gonna work
+we are gonna start
+in order so we're gonna go at four we're
+gonna see
+it has a single prerequisite of zero
+right we can see that in our prereq map
+and we know we know that we already took
+course two so we can also say okay
+course four has also been taken we've
+done the prerequisites we can take
+course four and we're going to do the
+exact same thing with five now we're
+going to try to see look it has a single
+prorack
+zero we've already done that so now
+we're allowed to take
+course five so this is the topological
+sort of this graph and we know that the
+topological sort is not necessarily
+unique right like this
+could have been a five and a four so
+it's not unique
+and we also know that if we detect any
+cycles
+we have to return an empty list
+because because that means that a
+topological sort
+is not even possible and by the way
+since we are visiting
+every single node and every single
+vertex or rather every single edge right
+we have to travel along
+every single edge i think at least twice
+and we're probably gonna visit every
+single node
+up to two times so it is going to be
+a so the time complexity is going to be
+the number
+of edges plus the number of
+vertices or by vertices we also mean
+nodes
+so we could also write this as o of p
+where p is the number of prerequisites
+which is actually the number of
+edges and plus n where n
+is the number of courses which is also
+equal to the number of vertices
+and one last thing how would we actually
+detect a
+cycle like with our algorithm well let's
+say we had a
+cycle so let's say two actually did have
+an outgoing node and it had a node
+all the way to zero in that case what
+our algorithm would do is okay we're
+starting at zero we're gonna go
+to one just like we did previously then
+we're gonna go to three just like we did
+previously then we're gonna go to two
+just like we did previously and then
+lastly
+starting at two we're gonna go to its
+only outgoing edge which is at zero
+and at that point what our algorithm is
+gonna do is it's gonna see okay
+we started at zero we remember that
+this is the path that we've taken we
+went all the way
+around and we landed back at zero so
+this means we have a cycle
+that means we stop our algorithm
+immediately and return an
+empty list we do not have to continue
+and the way
+i'm gonna handle this is i'm gonna use a
+hash set
+and with the hash set i'm going to
+basically remember our current
+path so we were we know we can recognize
+when we detect a cycle so now let me
+actually show you the code
+okay so now let's write the code the
+first thing we want to do is build an
+adjacency list with the prereq
+so i'm going to do that prereq and in
+some python what i'm going to initially
+do
+is for every course i'm going to map it
+to an empty list so initially it's going
+to be
+a empty list of prerequisites and now
+i'm actually going to fill it in so
+we're going to
+iterate through every single course
+prereq
+pair in our prerequisites list that
+we're given
+so for this pair in our prerequisites
+list
+i'm going to say prereq of this course
+let's add that to our list so append it
+to our list and this might not have been
+clear from
+my picture but a course has three
+possible states one where it's already
+visited right that's where i crossed it
+out in red it's already been added to
+the output
+it's been visited we do not have to ever
+consider it again
+the next state is visiting
+right so it's currently being visited
+that's the green path and that's what's
+going to allow us to detect
+if we have a cycle and the last is
+unvisited meaning a course has not been
+added to the output and it's not
+currently along
+the the visited path so that's that's
+pretty self-explanatory
+so i'm going to obviously create an
+output list which is going to be empty
+i'm also going to have
+two sets one visit set and one cycle set
+so these sets are going to allow us to
+know if a
+node or course has already been visited
+or if it's currently
+along the given path which this is the
+cycle is obviously going to let us know
+is going to help us detect cycles now
+i'm going to define
+our depth first search function i'm as
+you can see i'm doing it inside of
+another function
+basically so i don't have to pass all
+these parameters
+into this and all of these variables
+will be accessible
+inside this function so the only thing i
+have to pass in is the course number
+that we're currently visiting so the
+first thing i want to do is detect a
+cycle so if this course
+is already inside of our cycle set that
+means we're visiting
+it twice that means we've detected a
+cycle that means
+we're going to return false and then
+we're going to be able to
+terminate our algorithm and return an
+empty list if a course has already been
+visited
+that basically means we don't need to
+visit it twice
+so i'm going to return true we're not
+going to you know stop our algorithm
+and return an empty list but we don't
+need to visit this course
+twice now i'm going to recursively run
+debt for a search but before we do that
+we do have to add this course to our
+cycle we want to be able to know
+if we have a cycle so if we ever see
+this course again
+you know recursively we'll know that we
+detected a cycle but for now we're going
+to go through
+every prerequisite of this course so
+from our prerequisite map
+we're going to get all of the
+prerequisites we're going to run
+recursively depth first search on this
+prerequisite
+and if that returns false because we
+know we have two return values true and
+false
+if it returns false we know we just
+detected a
+cycle so in that case if this equals
+false we have to
+also return false if it doesn't equal
+false it equals true then we're just
+going to continue
+to go through all the prerequisites and
+continue to
+run up for search and when all of that
+is said and done
+we will take from our cycle we're going
+to remove the course because it's no
+longer
+along the path that we're going so we
+can remove it from
+cycle we can also add it to visit
+because we just
+went through this course and we went
+through all of its prerequisites
+therefore we can say that it's been
+visited
+and since this course has been visited
+we can finally
+add it to our output which was our
+ultimate
+goal so we can add it to our output
+because we just
+went through all of its prerequisites
+and from those prerequisites we just
+added them to our output
+so now we are allowed to add this course
+to our output
+we can only add a course after we've
+added its prerequisites right
+and since we added this to our output we
+know it's a course we're allowed to take
+so we can return true not false we're
+going to return true
+everything was fine because since we're
+returning true we know that this never
+executed so we never had to return false
+we ultimately returned true so now we've
+basically written
+all the code that we need we just have
+to execute it so
+we have to go through every
+course in the given number of courses
+and we're going to do it in order but
+you technically could do it in
+any order and what we're going to do is
+run debt first search on every single
+course
+but we do have to check if the return
+value
+of any of these calls happens to be
+false what that means is we detected a
+cycle
+and what that means is we are forced to
+return an
+empty list we're not going to return
+output we're going to return an
+empty list because we because it's
+impossible to take the given courses
+but if this never executes meaning the
+debt for search
+never detected a cycle this will never
+this will never execute and the loop
+will be finished running
+and when that happens we know we can
+return the output that we spent all our
+time building
+and the output will be in the order that
+we want it to be
+so that's the algorithm let me delete
+these comments so you can see the entire
+code
+on one page so this is the entire code
+i'm gonna run it and show you that it is
+pretty efficient
+okay whoops one little bug output is a
+list
+so the function to add elements to a
+list is actually append
+so with that working hopefully i don't
+have any other typos and yes
+you can see that this is a very
+efficient algorithm
+this is topological sort but you might
+not even recognize that
+and there are different ways to write
+this so i prefer writing it like this
+because
+it keeps things pretty simple right we
+only have two sets we don't have to
+remember
+colors or other ways of solving this
+problem
+but i hope it was helpful if you enjoyed
+please like and subscribe it supports
+the channel
+a lot and i'll hopefully see you pretty
+soon

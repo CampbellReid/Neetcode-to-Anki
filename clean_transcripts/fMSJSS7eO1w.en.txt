@@ -1,0 +1,455 @@
+everyone welcome back and let's write
+some more neat code today
+we're given an n by n matrix so this
+time it's a square matrix for sure
+representing some image and we want to
+rotate
+that image by 90 degrees clockwise
+and we are required to do this in place
+so we
+cannot allocate more memory we can't
+just make a copy of the matrix
+and rotate it like that so the challenge
+here is definitely doing it in place you
+can see that they had
+a original matrix like this what they
+did is they took
+the one and put it over here
+so 90 degrees basically what they did is
+took this entire first
+row and moved it into the rightmost
+column right and so they did that by
+moving this
+over here moving this 2 over
+here moving the 3 over here
+and so the problem is when you're moving
+this one over here you have to
+save the three temporarily right so you
+just save the three
+or once you move this one over here you
+can take the three
+save it and move it over here and we
+know that
+this entire right column is going to
+actually be
+put in the bottom row so what is
+actually going on
+is this 9 is actually being moved
+over here right that's where it ended up
+in the result
+and then this seven is being rotated
+over here so that's where the seven ends
+up
+the one ends up over here the three ends
+up over here
+the nine ended up over here so these
+four let's say have been rotated so
+far so now we don't have to touch them
+but you can see
+there's a little bit left in the outer
+layer so let's just worry about the
+outer layer so far we don't have to
+worry about the 5 but
+in the result we know the 5 actually
+doesn't move you know you rotate it
+but what about this four now it's
+basically the same
+thing that we did over here right we are
+rotating this
+so basically we can think of it as being
+in the top left right
+let's the original square we were
+rotating was like this
+now the square we're rotating is like
+this it's still technically a square
+you know if you turn your head a little
+bit but this is what we're doing we're
+rotating this
+so this 4 is of course going to be moved
+over here to this two and then and
+before we get rid of the two we want to
+save it
+and move it over here to the six
+and so in the original we have a two
+over here but we know
+that 2 is going to be rotated right
+because this is the rotation we're doing
+and before we get rid of the 6 we want
+to save it
+in a temporary variable and move it over
+here replacing the 8 but we don't want
+to lose the 8 yet because it needs to be
+rotated as well
+it's going to be rotated over here to
+this 4
+and since we rotated the 2 we know
+there's going to be an empty spot over
+here
+for the 4 to
+be placed in and that's what you have
+over here the four
+the two got moved over here the six got
+moved over here
+and the eight got moved over here so
+this is
+still a rotation and lastly we just have
+a one by one
+we know that you know it can't really
+rotating it will just
+be the exact same so let me show you the
+general algorithm to solve this problem
+we're going to do this in
+n square time meaning we only have to
+look at each cell
+in the matrix once remember the
+dimensions are n by
+n and we don't need any extra memory so
+the memory complexity is going to be
+constant we're doing this
+in place in our given matrix so i like
+to
+set some boundaries so we know that this
+is our left boundary
+and this is our right boundary
+initially because we're going to rotate
+the outermost
+layer first right the outermost square
+and then we're going to move inward
+right we're going to do the inside
+of the matrix and the top boundary i'm
+going to place
+over here because that's the top
+remember
+the origin over here is zero by zero
+this position
+is three to three it goes like this
+and as you go down it increases and the
+bottom boundary
+is going to be down here so immediately
+we're gonna start the rotation now how
+is the rotation gonna go well let's
+start at the top left because it's the
+easiest right
+we know that this is the general
+rotation
+that's gonna take place right because
+we're going clockwise
+and then we're going to do that right
+and we know we're going to keep
+doing that with every element in the top
+row so we did the first element in the
+top row then we're going to rotate
+the second element in the top row and
+how is that going to look well
+it's going to be pretty similar so since
+this was the second position
+in the top row we're going to move it to
+the second position
+in the last column right so in this
+column
+we're going to rotate this one to this
+position
+so the second to last position in the
+bottom row
+the main thing to notice though is that
+this is offset by one
+this is offset by one from the top this
+is offset by one to the
+from the right and so the position that
+it's moved
+to is also going to be offset by one
+from the bottom which is where the last
+rotation took place
+and then this is going to be moved over
+here
+and so as you can see we have one last
+rotation to
+make right with these four
+elements and they actually do form a
+square
+if you tilt your head enough this is a
+square rotation a matrix rotation
+but notice how since we already rotated
+this one
+we're actually not doing four rotations
+for the outermost layer we're doing
+four minus one rotations we're doing
+three rotations
+right so even though the outermost layer
+was n by n we actually
+did n minus 1 rotations right so we did
+three rotations and let's say after we
+complete
+the outermost layer right let's say
+we've completely rotated that
+you know we had to rotate this part this
+part and this part so once we do that
+then we know that we actually have an
+inner matrix
+that we have to do so we did the
+outermost layer but now we have to do
+the
+inside how am i going to handle that
+well it can actually just be
+treated as a sub problem because we know
+no matter what it's going to be
+a square matrix so all we really have to
+do is take our pointers and then
+shift all of them by one so our left
+pointer will be shifted
+here our right pointer will be shifted
+here our top pointer
+will be shifted here and our bottom
+pointer will be shifted
+here and so now the the last rotation
+seems pretty obvious right it's so it's
+going to be one rotation
+it's going to include four elements and
+then we will have our result
+now one last thing i wanna show you and
+then after that rotation has taken place
+we know we can update our pointers
+one more time but at this point what
+we'll notice is our left
+pointer is over here and our right
+pointer is here we know that left should
+always be less than right and
+since these pointers have crossed each
+other we know
+that we can stop the algorithm right we
+don't really have a matrix left
+to rotate one last thing i want to show
+you about the rotation is
+we know that the five the top left is
+going to be
+put in this position right the 11 so
+we're going to cross that out
+so we're going to really replace this
+with a
+5 but then what happens to the original
+11 that was placed here well what we can
+say is oh let's move the 11
+to a temporary variable and now let's
+put the 11
+over here so we're putting an 11 over
+here now but what happened to the 16
+that was over here
+well we have to put that in a temporary
+variable a 16
+and then move that 16 over here so let's
+replace this with a 16
+but what happened with the 15 that was
+over here well
+we move that to a temporary variable and
+now that temporary variable
+15 is going to be placed over here
+so the 15 is here and we don't have to
+move the 5 to a temporary variable
+because look we already put it over here
+so we're needing a lot
+of temporary variables i can show you a
+slight
+improvement to this which isn't required
+or anything but i think it makes
+writing the code easier so we know that
+this 5 is going to be rotated
+but let's do this let's do the rotation
+in
+reverse order so instead of removing the
+5 over here
+first i'm gonna take the 15 which we
+know is going to be
+placed over here and i'm going to put
+the 15 over here
+and i'm going to move the 5 to a
+temporary variable
+okay so are we going to move the five
+over here now nope that's not what we're
+going to do we're going to do this in
+reverse order
+so since the 15 has already been moved
+let's take
+this 16 and move it over here
+so now let's replace this 15 with a 16.
+and now we know that we need to make a
+rotation from
+11 to here so let's put an 11
+over here and last but not least we know
+that the original five had to be put
+over here
+and we stored that five in a temporary
+variable so now let's move
+that five over here and so we did the
+exact same rotation
+but do you notice how we did it in
+reverse order right we went
+counterclockwise and the thing that that
+the reason that was helpful is we only
+needed one temporary variable
+which will make the code a little bit
+easier for us but it's not actually
+required
+the overall complexity is still the same
+the memory and the time complexity is
+still the same
+so now let's get into the code so the
+first thing i'm going to do is set our
+left and right boundaries so
+left is zero right is going to be the
+length number of
+columns minus one but we know that the
+number of columns is the same as the
+number of rows so we actually don't need
+this
+and i'm gonna run our rotation while
+left is less than right and i'm going to
+go
+from index so let's say we're in our top
+row i'm going to iterate
+through the entire row except
+last element so how many rotations is
+that going to be that's going to be from
+left to right minus one or in
+other words we can say from in range
+right minus left so this is the number
+that we're gonna do so if
+left was zero right was three we would
+do three minus zero which is going to be
+three iterations even though we have
+four
+uh values in our first row so i also
+wanna have some top and bottom pointers
+and these are actually gonna be the same
+as left and right so top
+is gonna be the same as left and bottom
+is going to be the same as right because
+we do have a square matrix
+it's not just a generic rectangle it's
+definitely a square
+and the first thing i want to do is save
+the top
+left value right because the way i
+showed you the rotation we only need to
+save
+one variable so it's the top left i'm
+going to
+get that from our matrix so matrix of
+top left and just like in the drawing
+what i'm going to do is move
+the bottom left into the top left
+so in the position of the top left top
+left i'm going to move the bottom left
+into that spot the next thing i'm going
+to do just like in our drawing i'm going
+to move the bottom right
+into the bottom left
+we are doing this in reverse order
+basically even though the rotation
+is clockwise the direction we're going
+is counterclockwise
+so the bottom right is going to be moved
+into the bottom left we also want to
+move
+the top right into the bottom
+right so in the bottom right position
+we're going to replace it with the top
+right and the last thing we have to do
+is move the top left into
+the top right but remember we overwrote
+the top left position but
+good thing for us we saved it in a
+temporary variable
+in the top right we're gonna replace it
+with
+the top left there's just one thing we
+forgot to use
+so we forgot to use our i variable
+so you remember how this was the first
+rotation that we make
+right and then we move from our top left
+position we move
+one spot to the right from our top
+right position we move one spot down
+from our bottom right position we move
+one spot to the
+left and from our bottom left position
+we move
+one spot up and then we do a rotation
+from here right and then we're not done
+yet from there on we move another
+position to the right
+another position down another position
+to the left
+and another position up and then we do a
+rotation
+from these values so
+we can actually handle this pretty
+easily in our code
+we can use this i variable to handle
+that
+for us so we can add the i
+value to the left index which will shift
+us one
+position to the right and this is also
+the top left position so we're going to
+add
+i to this as well this is the
+bottom left position and we know that
+we can subtract i from the bottom which
+will shift us
+up by one and this is that same value so
+we're gonna subtract
+an i from that as well this is the
+bottom right
+and to shift that to the left we can
+subtract
+i from the right index and this is
+actually this
+this is also the bottom right so
+we're going to subtract i from that as
+well
+this is the top right and as we uh
+continue doing
+rotations we're going to add we're going
+to move down
+in this column so we're going to add i
+to the top
+index and this is the same top right so
+we're going to add an
+i to this index as well so basically as
+i is incremented it's going to be
+handling more and more rotations it's
+going to shift
+these cells that we want to rotate
+accordingly
+and so this will basically perform
+a layer of rotation so after we've
+completed an entire
+layer what are we going to do we
+actually need to do one last computation
+we need to update our pointers right
+because now we're going to do the sub
+matrix
+so our right pointer can be decremented
+by one our left pointer can be
+incremented by one and that is the
+entire code so
+it's going to complete every single
+layer once every layer has been
+completed
+our loop will stop and we are not
+required to return anything
+like it just says over here we're doing
+this in place
+inside of our matrix so we don't return
+anything this code
+is good to go and as you can see it's
+pretty efficient
+about as efficient as you can get for
+this problem and i hope this was helpful
+i hope it showed you a relatively easy
+way to write this code but you also
+understand what's going on if this was
+helpful please like and subscribe it
+supports the channel a lot and i'll
+hopefully

@@ -1,0 +1,2336 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.670 align:start position:0%
+ 
+hey<00:00:00.240><c> everyone</c><00:00:00.719><c> welcome</c><00:00:01.120><c> back</c><00:00:01.360><c> and</c><00:00:01.439><c> let's</c>
+
+00:00:01.670 --> 00:00:01.680 align:start position:0%
+hey everyone welcome back and let's
+ 
+
+00:00:01.680 --> 00:00:03.590 align:start position:0%
+hey everyone welcome back and let's
+write<00:00:01.920><c> some</c><00:00:02.080><c> more</c><00:00:02.320><c> neat</c><00:00:02.560><c> code</c><00:00:02.800><c> today</c><00:00:03.040><c> so</c><00:00:03.199><c> today</c>
+
+00:00:03.590 --> 00:00:03.600 align:start position:0%
+write some more neat code today so today
+ 
+
+00:00:03.600 --> 00:00:06.150 align:start position:0%
+write some more neat code today so today
+let's<00:00:03.840><c> solve</c><00:00:04.080><c> the</c><00:00:04.319><c> problem</c><00:00:04.799><c> max</c><00:00:05.359><c> area</c><00:00:05.759><c> of</c><00:00:06.000><c> an</c>
+
+00:00:06.150 --> 00:00:06.160 align:start position:0%
+let's solve the problem max area of an
+ 
+
+00:00:06.160 --> 00:00:08.390 align:start position:0%
+let's solve the problem max area of an
+island<00:00:06.560><c> this</c><00:00:06.799><c> is</c><00:00:06.960><c> actually</c><00:00:07.279><c> very</c><00:00:07.600><c> similar</c><00:00:08.160><c> to</c>
+
+00:00:08.390 --> 00:00:08.400 align:start position:0%
+island this is actually very similar to
+ 
+
+00:00:08.400 --> 00:00:10.470 align:start position:0%
+island this is actually very similar to
+another<00:00:09.040><c> problem</c><00:00:09.360><c> that</c><00:00:09.519><c> we</c><00:00:09.679><c> have</c><00:00:09.840><c> solved</c>
+
+00:00:10.470 --> 00:00:10.480 align:start position:0%
+another problem that we have solved
+ 
+
+00:00:10.480 --> 00:00:13.030 align:start position:0%
+another problem that we have solved
+called<00:00:10.880><c> number</c><00:00:11.440><c> of</c><00:00:11.679><c> islands</c><00:00:12.559><c> it's</c><00:00:12.799><c> pretty</c>
+
+00:00:13.030 --> 00:00:13.040 align:start position:0%
+called number of islands it's pretty
+ 
+
+00:00:13.040 --> 00:00:15.749 align:start position:0%
+called number of islands it's pretty
+much<00:00:13.280><c> the</c><00:00:13.440><c> same</c><00:00:14.240><c> general</c><00:00:14.719><c> algorithm</c><00:00:15.360><c> but</c>
+
+00:00:15.749 --> 00:00:15.759 align:start position:0%
+much the same general algorithm but
+ 
+
+00:00:15.759 --> 00:00:17.750 align:start position:0%
+much the same general algorithm but
+we're<00:00:16.080><c> returning</c><00:00:16.560><c> a</c><00:00:16.720><c> slightly</c><00:00:17.279><c> different</c>
+
+00:00:17.750 --> 00:00:17.760 align:start position:0%
+we're returning a slightly different
+ 
+
+00:00:17.760 --> 00:00:19.429 align:start position:0%
+we're returning a slightly different
+result<00:00:18.160><c> rather</c><00:00:18.400><c> than</c><00:00:18.640><c> counting</c><00:00:19.039><c> the</c><00:00:19.119><c> number</c>
+
+00:00:19.429 --> 00:00:19.439 align:start position:0%
+result rather than counting the number
+ 
+
+00:00:19.439 --> 00:00:20.870 align:start position:0%
+result rather than counting the number
+of<00:00:19.600><c> islands</c><00:00:19.840><c> we're</c><00:00:20.000><c> actually</c><00:00:20.320><c> going</c><00:00:20.560><c> through</c>
+
+00:00:20.870 --> 00:00:20.880 align:start position:0%
+of islands we're actually going through
+ 
+
+00:00:20.880 --> 00:00:22.790 align:start position:0%
+of islands we're actually going through
+every<00:00:21.119><c> island</c><00:00:21.680><c> and</c><00:00:21.920><c> figuring</c><00:00:22.320><c> out</c><00:00:22.400><c> which</c><00:00:22.640><c> one</c>
+
+00:00:22.790 --> 00:00:22.800 align:start position:0%
+every island and figuring out which one
+ 
+
+00:00:22.800 --> 00:00:25.109 align:start position:0%
+every island and figuring out which one
+of<00:00:22.880><c> them</c><00:00:23.039><c> has</c><00:00:23.279><c> the</c><00:00:23.439><c> max</c><00:00:24.000><c> area</c><00:00:24.560><c> and</c><00:00:24.800><c> then</c><00:00:24.960><c> we're</c>
+
+00:00:25.109 --> 00:00:25.119 align:start position:0%
+of them has the max area and then we're
+ 
+
+00:00:25.119 --> 00:00:27.910 align:start position:0%
+of them has the max area and then we're
+going<00:00:25.279><c> to</c><00:00:25.359><c> return</c><00:00:25.760><c> the</c><00:00:25.920><c> max</c><00:00:26.320><c> area</c><00:00:27.199><c> of</c><00:00:27.519><c> any</c><00:00:27.760><c> of</c>
+
+00:00:27.910 --> 00:00:27.920 align:start position:0%
+going to return the max area of any of
+ 
+
+00:00:27.920 --> 00:00:30.310 align:start position:0%
+going to return the max area of any of
+these<00:00:28.320><c> islands</c><00:00:29.039><c> so</c><00:00:29.199><c> the</c><00:00:29.359><c> general</c><00:00:29.760><c> idea</c><00:00:30.080><c> is</c><00:00:30.240><c> the</c>
+
+00:00:30.310 --> 00:00:30.320 align:start position:0%
+these islands so the general idea is the
+ 
+
+00:00:30.320 --> 00:00:32.870 align:start position:0%
+these islands so the general idea is the
+same<00:00:30.480><c> we're</c><00:00:30.640><c> given</c><00:00:30.880><c> a</c><00:00:31.039><c> 2d</c><00:00:31.519><c> grid</c><00:00:32.000><c> where</c><00:00:32.320><c> zeros</c>
+
+00:00:32.870 --> 00:00:32.880 align:start position:0%
+same we're given a 2d grid where zeros
+ 
+
+00:00:32.880 --> 00:00:34.709 align:start position:0%
+same we're given a 2d grid where zeros
+represent<00:00:33.520><c> water</c><00:00:33.920><c> as</c><00:00:34.079><c> you</c><00:00:34.160><c> can</c><00:00:34.320><c> see</c><00:00:34.480><c> they're</c>
+
+00:00:34.709 --> 00:00:34.719 align:start position:0%
+represent water as you can see they're
+ 
+
+00:00:34.719 --> 00:00:37.990 align:start position:0%
+represent water as you can see they're
+blue<00:00:35.200><c> and</c><00:00:35.520><c> ones</c><00:00:36.239><c> represent</c><00:00:37.040><c> land</c><00:00:37.760><c> and</c><00:00:37.920><c> of</c>
+
+00:00:37.990 --> 00:00:38.000 align:start position:0%
+blue and ones represent land and of
+ 
+
+00:00:38.000 --> 00:00:40.310 align:start position:0%
+blue and ones represent land and of
+course<00:00:38.239><c> an</c><00:00:38.480><c> island</c><00:00:39.040><c> is</c><00:00:39.120><c> going</c><00:00:39.280><c> to</c><00:00:39.440><c> be</c><00:00:40.000><c> you</c><00:00:40.160><c> know</c>
+
+00:00:40.310 --> 00:00:40.320 align:start position:0%
+course an island is going to be you know
+ 
+
+00:00:40.320 --> 00:00:42.630 align:start position:0%
+course an island is going to be you know
+consecutive<00:00:41.200><c> one</c><00:00:41.840><c> values</c><00:00:42.320><c> that</c><00:00:42.480><c> are</c>
+
+00:00:42.630 --> 00:00:42.640 align:start position:0%
+consecutive one values that are
+ 
+
+00:00:42.640 --> 00:00:45.590 align:start position:0%
+consecutive one values that are
+connected<00:00:43.440><c> either</c><00:00:43.879><c> horizontally</c><00:00:45.120><c> right</c><00:00:45.440><c> like</c>
+
+00:00:45.590 --> 00:00:45.600 align:start position:0%
+connected either horizontally right like
+ 
+
+00:00:45.600 --> 00:00:47.670 align:start position:0%
+connected either horizontally right like
+from<00:00:45.840><c> the</c><00:00:46.000><c> left</c><00:00:46.239><c> and</c><00:00:46.399><c> right</c><00:00:46.559><c> side</c><00:00:46.960><c> or</c>
+
+00:00:47.670 --> 00:00:47.680 align:start position:0%
+from the left and right side or
+ 
+
+00:00:47.680 --> 00:00:51.350 align:start position:0%
+from the left and right side or
+vertically<00:00:48.320><c> so</c><00:00:48.719><c> up</c><00:00:49.039><c> and</c><00:00:49.360><c> down</c><00:00:50.000><c> you</c><00:00:50.160><c> know</c><00:00:50.320><c> two</c>
+
+00:00:51.350 --> 00:00:51.360 align:start position:0%
+vertically so up and down you know two
+ 
+
+00:00:51.360 --> 00:00:53.110 align:start position:0%
+vertically so up and down you know two
+cells<00:00:51.680><c> that</c><00:00:51.840><c> are</c><00:00:51.920><c> connected</c><00:00:52.399><c> diagonally</c>
+
+00:00:53.110 --> 00:00:53.120 align:start position:0%
+cells that are connected diagonally
+ 
+
+00:00:53.120 --> 00:00:54.709 align:start position:0%
+cells that are connected diagonally
+don't<00:00:53.360><c> really</c><00:00:53.680><c> count</c><00:00:53.920><c> so</c><00:00:54.079><c> you</c><00:00:54.160><c> know</c><00:00:54.239><c> if</c><00:00:54.399><c> i</c><00:00:54.480><c> add</c>
+
+00:00:54.709 --> 00:00:54.719 align:start position:0%
+don't really count so you know if i add
+ 
+
+00:00:54.719 --> 00:00:56.470 align:start position:0%
+don't really count so you know if i add
+one<00:00:55.440><c> here</c>
+
+00:00:56.470 --> 00:00:56.480 align:start position:0%
+one here
+ 
+
+00:00:56.480 --> 00:00:58.630 align:start position:0%
+one here
+uh<00:00:56.800><c> you</c><00:00:56.879><c> know</c><00:00:56.960><c> if</c><00:00:57.039><c> this</c><00:00:57.199><c> was</c><00:00:57.360><c> a</c><00:00:57.520><c> one</c><00:00:58.320><c> it</c><00:00:58.399><c> would</c>
+
+00:00:58.630 --> 00:00:58.640 align:start position:0%
+uh you know if this was a one it would
+ 
+
+00:00:58.640 --> 00:01:01.830 align:start position:0%
+uh you know if this was a one it would
+still<00:00:59.440><c> uh</c><00:00:59.680><c> basically</c><00:01:00.160><c> this</c><00:01:00.640><c> and</c><00:01:00.879><c> this</c><00:01:01.440><c> are</c><00:01:01.600><c> not</c>
+
+00:01:01.830 --> 00:01:01.840 align:start position:0%
+still uh basically this and this are not
+ 
+
+00:01:01.840 --> 00:01:03.990 align:start position:0%
+still uh basically this and this are not
+connected<00:01:02.399><c> they're</c><00:01:02.559><c> not</c><00:01:02.800><c> an</c><00:01:02.960><c> island</c><00:01:03.680><c> they're</c>
+
+00:01:03.990 --> 00:01:04.000 align:start position:0%
+connected they're not an island they're
+ 
+
+00:01:04.000 --> 00:01:05.670 align:start position:0%
+connected they're not an island they're
+separately<00:01:04.479><c> an</c><00:01:04.640><c> island</c><00:01:04.960><c> this</c><00:01:05.119><c> is</c><00:01:05.199><c> a</c><00:01:05.280><c> separate</c>
+
+00:01:05.670 --> 00:01:05.680 align:start position:0%
+separately an island this is a separate
+ 
+
+00:01:05.680 --> 00:01:07.590 align:start position:0%
+separately an island this is a separate
+island<00:01:06.240><c> this</c><00:01:06.479><c> is</c><00:01:06.560><c> a</c><00:01:06.640><c> separate</c><00:01:07.040><c> island</c><00:01:07.360><c> this</c><00:01:07.520><c> is</c>
+
+00:01:07.590 --> 00:01:07.600 align:start position:0%
+island this is a separate island this is
+ 
+
+00:01:07.600 --> 00:01:09.510 align:start position:0%
+island this is a separate island this is
+a<00:01:07.680><c> separate</c><00:01:08.080><c> island</c><00:01:08.400><c> and</c><00:01:08.640><c> this</c><00:01:08.880><c> is</c><00:01:09.040><c> a</c><00:01:09.119><c> separate</c>
+
+00:01:09.510 --> 00:01:09.520 align:start position:0%
+a separate island and this is a separate
+ 
+
+00:01:09.520 --> 00:01:11.510 align:start position:0%
+a separate island and this is a separate
+island<00:01:10.080><c> so</c><00:01:10.240><c> there's</c><00:01:10.479><c> really</c><00:01:10.720><c> two</c><00:01:11.040><c> parts</c><00:01:11.360><c> to</c>
+
+00:01:11.510 --> 00:01:11.520 align:start position:0%
+island so there's really two parts to
+ 
+
+00:01:11.520 --> 00:01:12.870 align:start position:0%
+island so there's really two parts to
+this<00:01:11.840><c> algorithm</c>
+
+00:01:12.870 --> 00:01:12.880 align:start position:0%
+this algorithm
+ 
+
+00:01:12.880 --> 00:01:15.109 align:start position:0%
+this algorithm
+first<00:01:13.200><c> you</c><00:01:13.360><c> need</c><00:01:13.600><c> to</c><00:01:13.760><c> be</c><00:01:13.920><c> able</c><00:01:14.159><c> to</c><00:01:14.560><c> get</c><00:01:14.799><c> the</c>
+
+00:01:15.109 --> 00:01:15.119 align:start position:0%
+first you need to be able to get the
+ 
+
+00:01:15.119 --> 00:01:18.070 align:start position:0%
+first you need to be able to get the
+area<00:01:15.600><c> of</c><00:01:16.000><c> any</c><00:01:16.320><c> given</c><00:01:16.880><c> island</c><00:01:17.360><c> and</c><00:01:17.600><c> you</c><00:01:17.680><c> can</c><00:01:17.920><c> do</c>
+
+00:01:18.070 --> 00:01:18.080 align:start position:0%
+area of any given island and you can do
+ 
+
+00:01:18.080 --> 00:01:20.950 align:start position:0%
+area of any given island and you can do
+that<00:01:18.320><c> with</c><00:01:18.560><c> your</c><00:01:18.880><c> graph</c><00:01:19.360><c> algorithm</c><00:01:19.920><c> of</c><00:01:20.240><c> choice</c>
+
+00:01:20.950 --> 00:01:20.960 align:start position:0%
+that with your graph algorithm of choice
+ 
+
+00:01:20.960 --> 00:01:23.429 align:start position:0%
+that with your graph algorithm of choice
+i<00:01:21.200><c> prefer</c><00:01:21.600><c> doing</c><00:01:21.920><c> it</c><00:01:22.080><c> with</c><00:01:22.320><c> the</c><00:01:22.400><c> dfs</c><00:01:23.119><c> depth</c>
+
+00:01:23.429 --> 00:01:23.439 align:start position:0%
+i prefer doing it with the dfs depth
+ 
+
+00:01:23.439 --> 00:01:25.670 align:start position:0%
+i prefer doing it with the dfs depth
+first<00:01:23.759><c> search</c><00:01:24.080><c> so</c><00:01:24.560><c> understanding</c><00:01:25.280><c> debt</c><00:01:25.520><c> for</c>
+
+00:01:25.670 --> 00:01:25.680 align:start position:0%
+first search so understanding debt for
+ 
+
+00:01:25.680 --> 00:01:28.230 align:start position:0%
+first search so understanding debt for
+search<00:01:26.320><c> is</c><00:01:26.479><c> a</c><00:01:26.640><c> prerequisite</c><00:01:27.600><c> for</c><00:01:27.840><c> this</c>
+
+00:01:28.230 --> 00:01:28.240 align:start position:0%
+search is a prerequisite for this
+ 
+
+00:01:28.240 --> 00:01:30.950 align:start position:0%
+search is a prerequisite for this
+problem<00:01:29.040><c> and</c><00:01:29.439><c> the</c><00:01:29.600><c> good</c><00:01:29.840><c> thing</c><00:01:30.079><c> is</c><00:01:30.320><c> if</c><00:01:30.479><c> you</c><00:01:30.720><c> do</c>
+
+00:01:30.950 --> 00:01:30.960 align:start position:0%
+problem and the good thing is if you do
+ 
+
+00:01:30.960 --> 00:01:33.350 align:start position:0%
+problem and the good thing is if you do
+have<00:01:31.119><c> a</c><00:01:31.200><c> good</c><00:01:31.439><c> understanding</c><00:01:32.000><c> of</c><00:01:32.240><c> dfs</c><00:01:33.040><c> then</c>
+
+00:01:33.350 --> 00:01:33.360 align:start position:0%
+have a good understanding of dfs then
+ 
+
+00:01:33.360 --> 00:01:35.429 align:start position:0%
+have a good understanding of dfs then
+this<00:01:33.680><c> problem</c><00:01:34.240><c> is</c><00:01:34.479><c> pretty</c><00:01:34.799><c> easy</c><00:01:35.200><c> all</c><00:01:35.360><c> you</c>
+
+00:01:35.429 --> 00:01:35.439 align:start position:0%
+this problem is pretty easy all you
+ 
+
+00:01:35.439 --> 00:01:37.510 align:start position:0%
+this problem is pretty easy all you
+really<00:01:35.680><c> have</c><00:01:35.840><c> to</c><00:01:35.920><c> do</c><00:01:36.159><c> is</c><00:01:36.320><c> kind</c><00:01:36.479><c> of</c><00:01:36.640><c> understand</c>
+
+00:01:37.510 --> 00:01:37.520 align:start position:0%
+really have to do is kind of understand
+ 
+
+00:01:37.520 --> 00:01:40.550 align:start position:0%
+really have to do is kind of understand
+how<00:01:37.920><c> dfs</c><00:01:38.640><c> fits</c><00:01:39.119><c> into</c><00:01:39.439><c> the</c><00:01:39.520><c> context</c><00:01:40.159><c> of</c><00:01:40.240><c> this</c>
+
+00:01:40.550 --> 00:01:40.560 align:start position:0%
+how dfs fits into the context of this
+ 
+
+00:01:40.560 --> 00:01:42.630 align:start position:0%
+how dfs fits into the context of this
+problem<00:01:41.119><c> and</c><00:01:41.439><c> in</c><00:01:41.520><c> this</c><00:01:41.759><c> case</c><00:01:42.079><c> it's</c><00:01:42.240><c> actually</c>
+
+00:01:42.630 --> 00:01:42.640 align:start position:0%
+problem and in this case it's actually
+ 
+
+00:01:42.640 --> 00:01:44.310 align:start position:0%
+problem and in this case it's actually
+pretty<00:01:42.960><c> simple</c><00:01:43.280><c> so</c><00:01:43.439><c> i'll</c><00:01:43.600><c> be</c><00:01:43.759><c> walking</c><00:01:44.079><c> through</c>
+
+00:01:44.310 --> 00:01:44.320 align:start position:0%
+pretty simple so i'll be walking through
+ 
+
+00:01:44.320 --> 00:01:46.389 align:start position:0%
+pretty simple so i'll be walking through
+dfs<00:01:45.040><c> and</c><00:01:45.119><c> then</c><00:01:45.360><c> walking</c><00:01:45.680><c> through</c><00:01:45.920><c> how</c><00:01:46.079><c> we</c><00:01:46.240><c> can</c>
+
+00:01:46.389 --> 00:01:46.399 align:start position:0%
+dfs and then walking through how we can
+ 
+
+00:01:46.399 --> 00:01:49.510 align:start position:0%
+dfs and then walking through how we can
+apply<00:01:46.880><c> that</c><00:01:47.280><c> to</c><00:01:47.600><c> this</c><00:01:48.000><c> algorithm</c><00:01:48.880><c> so</c><00:01:49.119><c> running</c>
+
+00:01:49.510 --> 00:01:49.520 align:start position:0%
+apply that to this algorithm so running
+ 
+
+00:01:49.520 --> 00:01:53.350 align:start position:0%
+apply that to this algorithm so running
+dfs<00:01:50.240><c> on</c><00:01:50.560><c> an</c><00:01:50.799><c> island</c><00:01:51.280><c> such</c><00:01:51.600><c> as</c><00:01:52.240><c> this</c><00:01:52.640><c> one</c><00:01:53.119><c> so</c>
+
+00:01:53.350 --> 00:01:53.360 align:start position:0%
+dfs on an island such as this one so
+ 
+
+00:01:53.360 --> 00:01:55.990 align:start position:0%
+dfs on an island such as this one so
+suppose<00:01:53.680><c> you</c><00:01:53.840><c> know</c><00:01:54.000><c> we</c><00:01:54.240><c> start</c><00:01:54.640><c> here</c><00:01:55.360><c> we</c><00:01:55.680><c> wanna</c>
+
+00:01:55.990 --> 00:01:56.000 align:start position:0%
+suppose you know we start here we wanna
+ 
+
+00:01:56.000 --> 00:01:57.830 align:start position:0%
+suppose you know we start here we wanna
+we<00:01:56.159><c> see</c><00:01:56.320><c> that</c><00:01:56.479><c> it's</c><00:01:56.640><c> a</c><00:01:56.799><c> one</c><00:01:57.119><c> value</c><00:01:57.520><c> right</c><00:01:57.680><c> that</c>
+
+00:01:57.830 --> 00:01:57.840 align:start position:0%
+we see that it's a one value right that
+ 
+
+00:01:57.840 --> 00:02:00.230 align:start position:0%
+we see that it's a one value right that
+means<00:01:58.159><c> it's</c><00:01:58.320><c> an</c><00:01:58.560><c> island</c><00:01:59.119><c> but</c><00:01:59.439><c> is</c><00:01:59.680><c> the</c><00:01:59.840><c> area</c><00:02:00.079><c> of</c>
+
+00:02:00.230 --> 00:02:00.240 align:start position:0%
+means it's an island but is the area of
+ 
+
+00:02:00.240 --> 00:02:03.270 align:start position:0%
+means it's an island but is the area of
+this<00:02:00.479><c> island</c><00:02:00.880><c> just</c><00:02:01.360><c> one</c><00:02:01.759><c> itself</c><00:02:02.399><c> or</c><00:02:02.640><c> are</c><00:02:02.880><c> there</c>
+
+00:02:03.270 --> 00:02:03.280 align:start position:0%
+this island just one itself or are there
+ 
+
+00:02:03.280 --> 00:02:05.830 align:start position:0%
+this island just one itself or are there
+other<00:02:03.759><c> cells</c><00:02:04.560><c> connected</c><00:02:05.119><c> to</c><00:02:05.360><c> it</c><00:02:05.439><c> that</c><00:02:05.600><c> are</c>
+
+00:02:05.830 --> 00:02:05.840 align:start position:0%
+other cells connected to it that are
+ 
+
+00:02:05.840 --> 00:02:08.550 align:start position:0%
+other cells connected to it that are
+also<00:02:06.479><c> land</c><00:02:07.119><c> and</c><00:02:07.280><c> if</c><00:02:07.360><c> there</c><00:02:07.680><c> are</c><00:02:08.080><c> we</c><00:02:08.319><c> want</c><00:02:08.479><c> to</c>
+
+00:02:08.550 --> 00:02:08.560 align:start position:0%
+also land and if there are we want to
+ 
+
+00:02:08.560 --> 00:02:11.350 align:start position:0%
+also land and if there are we want to
+run<00:02:08.879><c> dfs</c><00:02:09.520><c> in</c><00:02:09.840><c> all</c><00:02:10.080><c> directions</c><00:02:10.640><c> to</c><00:02:10.800><c> basically</c>
+
+00:02:11.350 --> 00:02:11.360 align:start position:0%
+run dfs in all directions to basically
+ 
+
+00:02:11.360 --> 00:02:14.150 align:start position:0%
+run dfs in all directions to basically
+count<00:02:11.680><c> how</c><00:02:11.920><c> many</c><00:02:12.319><c> cells</c><00:02:12.800><c> are</c><00:02:13.040><c> connected</c><00:02:13.920><c> so</c>
+
+00:02:14.150 --> 00:02:14.160 align:start position:0%
+count how many cells are connected so
+ 
+
+00:02:14.160 --> 00:02:16.790 align:start position:0%
+count how many cells are connected so
+the<00:02:14.319><c> way</c><00:02:14.480><c> dfs</c><00:02:14.959><c> works</c><00:02:15.360><c> is</c><00:02:15.680><c> we're</c><00:02:15.840><c> going</c><00:02:16.000><c> to</c><00:02:16.160><c> run</c>
+
+00:02:16.790 --> 00:02:16.800 align:start position:0%
+the way dfs works is we're going to run
+ 
+
+00:02:16.800 --> 00:02:19.750 align:start position:0%
+the way dfs works is we're going to run
+dfs<00:02:17.440><c> above</c><00:02:18.160><c> which</c><00:02:18.400><c> we</c><00:02:18.560><c> see</c><00:02:18.879><c> is</c><00:02:19.120><c> out</c><00:02:19.280><c> of</c><00:02:19.440><c> bounds</c>
+
+00:02:19.750 --> 00:02:19.760 align:start position:0%
+dfs above which we see is out of bounds
+ 
+
+00:02:19.760 --> 00:02:22.150 align:start position:0%
+dfs above which we see is out of bounds
+so<00:02:19.920><c> dfs</c><00:02:20.480><c> is</c><00:02:20.560><c> a</c><00:02:20.720><c> recursive</c><00:02:21.280><c> algorithm</c><00:02:22.000><c> and</c>
+
+00:02:22.150 --> 00:02:22.160 align:start position:0%
+so dfs is a recursive algorithm and
+ 
+
+00:02:22.160 --> 00:02:24.070 align:start position:0%
+so dfs is a recursive algorithm and
+since<00:02:22.400><c> up</c><00:02:22.560><c> above</c><00:02:22.879><c> we're</c><00:02:23.120><c> out</c><00:02:23.280><c> of</c><00:02:23.440><c> bounds</c><00:02:23.920><c> the</c>
+
+00:02:24.070 --> 00:02:24.080 align:start position:0%
+since up above we're out of bounds the
+ 
+
+00:02:24.080 --> 00:02:26.630 align:start position:0%
+since up above we're out of bounds the
+dfs<00:02:24.640><c> is</c><00:02:24.720><c> going</c><00:02:24.800><c> to</c><00:02:24.959><c> return</c><00:02:25.440><c> zero</c><00:02:26.160><c> basically</c>
+
+00:02:26.630 --> 00:02:26.640 align:start position:0%
+dfs is going to return zero basically
+ 
+
+00:02:26.640 --> 00:02:28.949 align:start position:0%
+dfs is going to return zero basically
+telling<00:02:26.959><c> us</c><00:02:27.120><c> that</c><00:02:27.280><c> the</c><00:02:27.520><c> area</c><00:02:27.840><c> of</c><00:02:27.920><c> the</c><00:02:28.160><c> island</c>
+
+00:02:28.949 --> 00:02:28.959 align:start position:0%
+telling us that the area of the island
+ 
+
+00:02:28.959 --> 00:02:31.509 align:start position:0%
+telling us that the area of the island
+in<00:02:29.040><c> the</c><00:02:29.280><c> above</c><00:02:29.599><c> direction</c><00:02:30.160><c> is</c><00:02:30.319><c> zero</c><00:02:30.959><c> similarly</c>
+
+00:02:31.509 --> 00:02:31.519 align:start position:0%
+in the above direction is zero similarly
+ 
+
+00:02:31.519 --> 00:02:33.509 align:start position:0%
+in the above direction is zero similarly
+on<00:02:31.599><c> the</c><00:02:31.680><c> left</c><00:02:31.920><c> and</c><00:02:32.080><c> right</c><00:02:32.319><c> side</c><00:02:32.800><c> it's</c><00:02:33.040><c> not</c><00:02:33.440><c> out</c>
+
+00:02:33.509 --> 00:02:33.519 align:start position:0%
+on the left and right side it's not out
+ 
+
+00:02:33.519 --> 00:02:35.589 align:start position:0%
+on the left and right side it's not out
+of<00:02:33.760><c> bounds</c><00:02:34.239><c> but</c><00:02:34.400><c> this</c><00:02:34.640><c> is</c><00:02:34.959><c> water</c><00:02:35.280><c> so</c><00:02:35.440><c> it</c>
+
+00:02:35.589 --> 00:02:35.599 align:start position:0%
+of bounds but this is water so it
+ 
+
+00:02:35.599 --> 00:02:37.830 align:start position:0%
+of bounds but this is water so it
+doesn't<00:02:36.000><c> count</c><00:02:36.319><c> as</c><00:02:36.560><c> an</c><00:02:36.800><c> island</c><00:02:37.280><c> but</c><00:02:37.519><c> of</c><00:02:37.599><c> course</c>
+
+00:02:37.830 --> 00:02:37.840 align:start position:0%
+doesn't count as an island but of course
+ 
+
+00:02:37.840 --> 00:02:40.470 align:start position:0%
+doesn't count as an island but of course
+when<00:02:38.000><c> we</c><00:02:38.160><c> go</c><00:02:38.400><c> down</c><00:02:38.959><c> we</c><00:02:39.120><c> see</c><00:02:39.280><c> we</c><00:02:39.440><c> reach</c><00:02:39.760><c> a</c><00:02:39.920><c> one</c>
+
+00:02:40.470 --> 00:02:40.480 align:start position:0%
+when we go down we see we reach a one
+ 
+
+00:02:40.480 --> 00:02:43.750 align:start position:0%
+when we go down we see we reach a one
+and<00:02:41.040><c> this</c><00:02:41.360><c> one</c><00:02:41.680><c> has</c><00:02:41.920><c> not</c><00:02:42.160><c> been</c><00:02:42.400><c> visited</c><00:02:42.879><c> so</c><00:02:43.120><c> far</c>
+
+00:02:43.750 --> 00:02:43.760 align:start position:0%
+and this one has not been visited so far
+ 
+
+00:02:43.760 --> 00:02:47.670 align:start position:0%
+and this one has not been visited so far
+so<00:02:44.400><c> again</c><00:02:45.200><c> uh</c><00:02:45.599><c> we</c><00:02:45.920><c> reach</c><00:02:46.239><c> another</c><00:02:46.800><c> one</c><00:02:47.200><c> value</c>
+
+00:02:47.670 --> 00:02:47.680 align:start position:0%
+so again uh we reach another one value
+ 
+
+00:02:47.680 --> 00:02:49.509 align:start position:0%
+so again uh we reach another one value
+cell<00:02:48.000><c> and</c><00:02:48.160><c> again</c><00:02:48.560><c> recursively</c><00:02:49.200><c> we're</c><00:02:49.360><c> going</c>
+
+00:02:49.509 --> 00:02:49.519 align:start position:0%
+cell and again recursively we're going
+ 
+
+00:02:49.519 --> 00:02:52.949 align:start position:0%
+cell and again recursively we're going
+to<00:02:49.599><c> run</c><00:02:49.840><c> dfs</c><00:02:50.480><c> in</c><00:02:50.800><c> all</c><00:02:51.200><c> four</c><00:02:51.760><c> directions</c><00:02:52.720><c> so</c>
+
+00:02:52.949 --> 00:02:52.959 align:start position:0%
+to run dfs in all four directions so
+ 
+
+00:02:52.959 --> 00:02:55.270 align:start position:0%
+to run dfs in all four directions so
+going<00:02:53.200><c> to</c><00:02:53.360><c> the</c><00:02:53.519><c> left</c><00:02:53.920><c> which</c><00:02:54.160><c> is</c><00:02:54.319><c> water</c><00:02:54.879><c> so</c>
+
+00:02:55.270 --> 00:02:55.280 align:start position:0%
+going to the left which is water so
+ 
+
+00:02:55.280 --> 00:02:57.509 align:start position:0%
+going to the left which is water so
+don't<00:02:55.519><c> do</c><00:02:55.680><c> anything</c><00:02:56.000><c> there</c><00:02:56.480><c> going</c><00:02:56.879><c> down</c><00:02:57.280><c> which</c>
+
+00:02:57.509 --> 00:02:57.519 align:start position:0%
+don't do anything there going down which
+ 
+
+00:02:57.519 --> 00:02:59.670 align:start position:0%
+don't do anything there going down which
+is<00:02:57.680><c> also</c><00:02:58.080><c> water</c><00:02:58.640><c> don't</c><00:02:58.800><c> do</c><00:02:58.959><c> anything</c><00:02:59.440><c> we're</c>
+
+00:02:59.670 --> 00:02:59.680 align:start position:0%
+is also water don't do anything we're
+ 
+
+00:02:59.680 --> 00:03:02.550 align:start position:0%
+is also water don't do anything we're
+also<00:03:00.000><c> going</c><00:03:00.159><c> to</c><00:03:00.239><c> go</c><00:03:00.560><c> up</c><00:03:00.959><c> above</c><00:03:01.760><c> actually</c><00:03:02.319><c> even</c>
+
+00:03:02.550 --> 00:03:02.560 align:start position:0%
+also going to go up above actually even
+ 
+
+00:03:02.560 --> 00:03:04.470 align:start position:0%
+also going to go up above actually even
+though<00:03:02.720><c> we've</c><00:03:02.959><c> already</c><00:03:03.440><c> visited</c><00:03:03.840><c> that</c><00:03:04.080><c> cell</c>
+
+00:03:04.470 --> 00:03:04.480 align:start position:0%
+though we've already visited that cell
+ 
+
+00:03:04.480 --> 00:03:06.149 align:start position:0%
+though we've already visited that cell
+which<00:03:04.720><c> is</c><00:03:04.800><c> kind</c><00:03:05.040><c> of</c><00:03:05.200><c> a</c><00:03:05.360><c> problem</c><00:03:05.760><c> we</c><00:03:05.840><c> don't</c><00:03:06.000><c> want</c>
+
+00:03:06.149 --> 00:03:06.159 align:start position:0%
+which is kind of a problem we don't want
+ 
+
+00:03:06.159 --> 00:03:08.390 align:start position:0%
+which is kind of a problem we don't want
+to<00:03:06.239><c> have</c><00:03:06.400><c> to</c><00:03:06.480><c> go</c><00:03:06.720><c> and</c><00:03:06.879><c> run</c><00:03:07.040><c> dfs</c><00:03:07.519><c> recursively</c><00:03:08.239><c> on</c>
+
+00:03:08.390 --> 00:03:08.400 align:start position:0%
+to have to go and run dfs recursively on
+ 
+
+00:03:08.400 --> 00:03:11.030 align:start position:0%
+to have to go and run dfs recursively on
+a<00:03:08.560><c> cell</c><00:03:08.959><c> that</c><00:03:09.120><c> we've</c><00:03:09.440><c> already</c><00:03:10.000><c> visited</c><00:03:10.640><c> so</c><00:03:10.879><c> the</c>
+
+00:03:11.030 --> 00:03:11.040 align:start position:0%
+a cell that we've already visited so the
+ 
+
+00:03:11.040 --> 00:03:13.670 align:start position:0%
+a cell that we've already visited so the
+way<00:03:11.280><c> in</c><00:03:11.440><c> dfs</c><00:03:12.000><c> to</c><00:03:12.159><c> get</c><00:03:12.319><c> around</c><00:03:12.640><c> that</c><00:03:12.800><c> is</c><00:03:12.959><c> to</c><00:03:13.120><c> have</c>
+
+00:03:13.670 --> 00:03:13.680 align:start position:0%
+way in dfs to get around that is to have
+ 
+
+00:03:13.680 --> 00:03:15.190 align:start position:0%
+way in dfs to get around that is to have
+you<00:03:13.760><c> know</c><00:03:13.920><c> some</c><00:03:14.080><c> kind</c><00:03:14.239><c> of</c><00:03:14.319><c> data</c><00:03:14.560><c> structure</c><00:03:15.040><c> we</c>
+
+00:03:15.190 --> 00:03:15.200 align:start position:0%
+you know some kind of data structure we
+ 
+
+00:03:15.200 --> 00:03:17.270 align:start position:0%
+you know some kind of data structure we
+can<00:03:15.280><c> call</c><00:03:15.599><c> it</c><00:03:15.760><c> visit</c><00:03:16.319><c> it's</c><00:03:16.480><c> going</c><00:03:16.640><c> to</c><00:03:16.720><c> be</c><00:03:16.959><c> a</c>
+
+00:03:17.270 --> 00:03:17.280 align:start position:0%
+can call it visit it's going to be a
+ 
+
+00:03:17.280 --> 00:03:19.190 align:start position:0%
+can call it visit it's going to be a
+hash<00:03:17.760><c> set</c><00:03:18.480><c> so</c>
+
+00:03:19.190 --> 00:03:19.200 align:start position:0%
+hash set so
+ 
+
+00:03:19.200 --> 00:03:21.270 align:start position:0%
+hash set so
+using<00:03:19.440><c> this</c><00:03:19.599><c> hash</c><00:03:19.920><c> set</c><00:03:20.159><c> we</c><00:03:20.239><c> can</c><00:03:20.400><c> kind</c><00:03:20.640><c> of</c><00:03:20.959><c> mark</c>
+
+00:03:21.270 --> 00:03:21.280 align:start position:0%
+using this hash set we can kind of mark
+ 
+
+00:03:21.280 --> 00:03:23.030 align:start position:0%
+using this hash set we can kind of mark
+the<00:03:21.440><c> positions</c><00:03:21.920><c> that</c><00:03:22.000><c> we've</c><00:03:22.239><c> already</c><00:03:22.640><c> visited</c>
+
+00:03:23.030 --> 00:03:23.040 align:start position:0%
+the positions that we've already visited
+ 
+
+00:03:23.040 --> 00:03:25.670 align:start position:0%
+the positions that we've already visited
+so<00:03:23.200><c> that</c><00:03:23.360><c> we</c><00:03:23.519><c> don't</c><00:03:23.840><c> end</c><00:03:24.000><c> up</c><00:03:24.239><c> revisiting</c><00:03:25.040><c> them</c>
+
+00:03:25.670 --> 00:03:25.680 align:start position:0%
+so that we don't end up revisiting them
+ 
+
+00:03:25.680 --> 00:03:27.110 align:start position:0%
+so that we don't end up revisiting them
+that<00:03:25.920><c> will</c><00:03:26.080><c> help</c><00:03:26.400><c> us</c><00:03:26.560><c> with</c><00:03:26.720><c> the</c><00:03:26.879><c> time</c>
+
+00:03:27.110 --> 00:03:27.120 align:start position:0%
+that will help us with the time
+ 
+
+00:03:27.120 --> 00:03:29.509 align:start position:0%
+that will help us with the time
+complexity<00:03:27.840><c> of</c><00:03:28.159><c> this</c><00:03:28.560><c> problem</c><00:03:29.040><c> and</c><00:03:29.200><c> the</c><00:03:29.280><c> last</c>
+
+00:03:29.509 --> 00:03:29.519 align:start position:0%
+complexity of this problem and the last
+ 
+
+00:03:29.519 --> 00:03:32.229 align:start position:0%
+complexity of this problem and the last
+direction<00:03:30.159><c> from</c><00:03:30.400><c> here</c><00:03:30.799><c> is</c><00:03:30.959><c> to</c><00:03:31.120><c> go</c><00:03:31.519><c> right</c><00:03:32.080><c> where</c>
+
+00:03:32.229 --> 00:03:32.239 align:start position:0%
+direction from here is to go right where
+ 
+
+00:03:32.239 --> 00:03:34.949 align:start position:0%
+direction from here is to go right where
+we<00:03:32.400><c> see</c><00:03:32.560><c> that</c><00:03:32.720><c> yes</c><00:03:32.959><c> there's</c><00:03:33.200><c> an</c><00:03:33.360><c> island</c><00:03:33.920><c> so</c><00:03:34.480><c> uh</c>
+
+00:03:34.949 --> 00:03:34.959 align:start position:0%
+we see that yes there's an island so uh
+ 
+
+00:03:34.959 --> 00:03:36.949 align:start position:0%
+we see that yes there's an island so uh
+you<00:03:35.040><c> know</c><00:03:35.200><c> we</c><00:03:35.680><c> we</c><00:03:35.920><c> run</c><00:03:36.080><c> dfs</c><00:03:36.560><c> from</c><00:03:36.799><c> this</c>
+
+00:03:36.949 --> 00:03:36.959 align:start position:0%
+you know we we run dfs from this
+ 
+
+00:03:36.959 --> 00:03:39.670 align:start position:0%
+you know we we run dfs from this
+position<00:03:37.519><c> as</c><00:03:38.000><c> well</c><00:03:38.560><c> we</c><00:03:38.720><c> look</c><00:03:39.040><c> up</c><00:03:39.360><c> nothing</c>
+
+00:03:39.670 --> 00:03:39.680 align:start position:0%
+position as well we look up nothing
+ 
+
+00:03:39.680 --> 00:03:41.509 align:start position:0%
+position as well we look up nothing
+there<00:03:40.000><c> down</c><00:03:40.400><c> nothing</c><00:03:40.720><c> there</c><00:03:41.040><c> left</c><00:03:41.280><c> we've</c>
+
+00:03:41.509 --> 00:03:41.519 align:start position:0%
+there down nothing there left we've
+ 
+
+00:03:41.519 --> 00:03:43.350 align:start position:0%
+there down nothing there left we've
+already<00:03:41.760><c> visited</c><00:03:42.159><c> that</c><00:03:42.560><c> right</c><00:03:42.879><c> side</c><00:03:43.200><c> is</c>
+
+00:03:43.350 --> 00:03:43.360 align:start position:0%
+already visited that right side is
+ 
+
+00:03:43.360 --> 00:03:45.670 align:start position:0%
+already visited that right side is
+unvisited<00:03:44.239><c> so</c><00:03:44.400><c> that's</c><00:03:44.640><c> the</c><00:03:44.720><c> last</c><00:03:45.040><c> cell</c>
+
+00:03:45.670 --> 00:03:45.680 align:start position:0%
+unvisited so that's the last cell
+ 
+
+00:03:45.680 --> 00:03:47.350 align:start position:0%
+unvisited so that's the last cell
+there's<00:03:46.080><c> you</c><00:03:46.159><c> know</c><00:03:46.400><c> in</c><00:03:46.560><c> all</c><00:03:46.720><c> other</c><00:03:46.959><c> directions</c>
+
+00:03:47.350 --> 00:03:47.360 align:start position:0%
+there's you know in all other directions
+ 
+
+00:03:47.360 --> 00:03:49.430 align:start position:0%
+there's you know in all other directions
+there's<00:03:47.519><c> nothing</c><00:03:47.840><c> else</c><00:03:48.319><c> so</c><00:03:48.799><c> after</c><00:03:49.200><c> running</c>
+
+00:03:49.430 --> 00:03:49.440 align:start position:0%
+there's nothing else so after running
+ 
+
+00:03:49.440 --> 00:03:52.070 align:start position:0%
+there's nothing else so after running
+dfs<00:03:50.000><c> on</c><00:03:50.159><c> this</c><00:03:50.480><c> island</c><00:03:51.040><c> what</c><00:03:51.280><c> did</c><00:03:51.440><c> we</c><00:03:51.599><c> get</c><00:03:51.920><c> what</c>
+
+00:03:52.070 --> 00:03:52.080 align:start position:0%
+dfs on this island what did we get what
+ 
+
+00:03:52.080 --> 00:03:54.630 align:start position:0%
+dfs on this island what did we get what
+do<00:03:52.239><c> we</c><00:03:52.319><c> want</c><00:03:52.560><c> our</c><00:03:52.640><c> dfs</c><00:03:53.120><c> to</c><00:03:53.280><c> return</c><00:03:54.000><c> well</c><00:03:54.560><c> of</c>
+
+00:03:54.630 --> 00:03:54.640 align:start position:0%
+do we want our dfs to return well of
+ 
+
+00:03:54.640 --> 00:03:56.550 align:start position:0%
+do we want our dfs to return well of
+course<00:03:54.879><c> we</c><00:03:55.040><c> want</c><00:03:55.200><c> to</c><00:03:55.280><c> know</c><00:03:55.439><c> the</c><00:03:55.680><c> area</c><00:03:56.159><c> of</c><00:03:56.319><c> every</c>
+
+00:03:56.550 --> 00:03:56.560 align:start position:0%
+course we want to know the area of every
+ 
+
+00:03:56.560 --> 00:03:57.910 align:start position:0%
+course we want to know the area of every
+one<00:03:56.720><c> of</c><00:03:56.799><c> these</c><00:03:57.040><c> islands</c><00:03:57.360><c> right</c><00:03:57.599><c> that's</c><00:03:57.760><c> the</c>
+
+00:03:57.910 --> 00:03:57.920 align:start position:0%
+one of these islands right that's the
+ 
+
+00:03:57.920 --> 00:04:00.149 align:start position:0%
+one of these islands right that's the
+only<00:03:58.239><c> reason</c><00:03:58.560><c> we're</c><00:03:58.799><c> even</c><00:03:59.120><c> running</c><00:03:59.360><c> dfs</c><00:03:59.920><c> so</c>
+
+00:04:00.149 --> 00:04:00.159 align:start position:0%
+only reason we're even running dfs so
+ 
+
+00:04:00.159 --> 00:04:02.630 align:start position:0%
+only reason we're even running dfs so
+dfs<00:04:00.720><c> from</c><00:04:00.879><c> this</c><00:04:01.120><c> island</c><00:04:01.760><c> should</c><00:04:02.000><c> return</c><00:04:02.480><c> the</c>
+
+00:04:02.630 --> 00:04:02.640 align:start position:0%
+dfs from this island should return the
+ 
+
+00:04:02.640 --> 00:04:05.670 align:start position:0%
+dfs from this island should return the
+value<00:04:03.360><c> 4</c><00:04:03.840><c> because</c><00:04:04.080><c> that's</c><00:04:04.319><c> the</c><00:04:04.640><c> area</c><00:04:05.120><c> of</c><00:04:05.280><c> this</c>
+
+00:04:05.670 --> 00:04:05.680 align:start position:0%
+value 4 because that's the area of this
+ 
+
+00:04:05.680 --> 00:04:07.910 align:start position:0%
+value 4 because that's the area of this
+island<00:04:06.400><c> now</c><00:04:06.640><c> it</c><00:04:06.799><c> probably</c><00:04:07.120><c> makes</c><00:04:07.439><c> sense</c><00:04:07.760><c> how</c>
+
+00:04:07.910 --> 00:04:07.920 align:start position:0%
+island now it probably makes sense how
+ 
+
+00:04:07.920 --> 00:04:10.390 align:start position:0%
+island now it probably makes sense how
+dfs<00:04:08.400><c> fits</c><00:04:08.720><c> into</c><00:04:08.879><c> this</c><00:04:09.120><c> problem</c><00:04:09.840><c> once</c><00:04:10.080><c> you</c><00:04:10.159><c> get</c>
+
+00:04:10.390 --> 00:04:10.400 align:start position:0%
+dfs fits into this problem once you get
+ 
+
+00:04:10.400 --> 00:04:13.589 align:start position:0%
+dfs fits into this problem once you get
+good<00:04:10.640><c> at</c><00:04:10.799><c> writing</c><00:04:11.120><c> dfs</c><00:04:11.840><c> dfs</c><00:04:12.400><c> becomes</c><00:04:12.959><c> trivial</c>
+
+00:04:13.589 --> 00:04:13.599 align:start position:0%
+good at writing dfs dfs becomes trivial
+ 
+
+00:04:13.599 --> 00:04:15.270 align:start position:0%
+good at writing dfs dfs becomes trivial
+all<00:04:13.760><c> we</c><00:04:13.920><c> have</c><00:04:14.000><c> to</c><00:04:14.159><c> do</c><00:04:14.319><c> is</c><00:04:14.480><c> figure</c><00:04:14.799><c> out</c><00:04:14.959><c> how</c><00:04:15.120><c> to</c>
+
+00:04:15.270 --> 00:04:15.280 align:start position:0%
+all we have to do is figure out how to
+ 
+
+00:04:15.280 --> 00:04:17.110 align:start position:0%
+all we have to do is figure out how to
+apply<00:04:15.599><c> it</c><00:04:15.680><c> to</c><00:04:15.840><c> this</c><00:04:16.079><c> problem</c><00:04:16.560><c> and</c><00:04:16.720><c> it's</c><00:04:16.880><c> pretty</c>
+
+00:04:17.110 --> 00:04:17.120 align:start position:0%
+apply it to this problem and it's pretty
+ 
+
+00:04:17.120 --> 00:04:18.870 align:start position:0%
+apply it to this problem and it's pretty
+simple<00:04:17.519><c> in</c><00:04:17.680><c> our</c><00:04:17.840><c> case</c><00:04:18.239><c> we're</c><00:04:18.400><c> going</c><00:04:18.560><c> to</c><00:04:18.639><c> run</c>
+
+00:04:18.870 --> 00:04:18.880 align:start position:0%
+simple in our case we're going to run
+ 
+
+00:04:18.880 --> 00:04:22.150 align:start position:0%
+simple in our case we're going to run
+dfs<00:04:19.359><c> on</c><00:04:19.600><c> every</c><00:04:19.840><c> single</c><00:04:20.239><c> island</c><00:04:21.280><c> and</c><00:04:21.519><c> then</c><00:04:22.079><c> you</c>
+
+00:04:22.150 --> 00:04:22.160 align:start position:0%
+dfs on every single island and then you
+ 
+
+00:04:22.160 --> 00:04:23.749 align:start position:0%
+dfs on every single island and then you
+know<00:04:22.400><c> keep</c><00:04:22.720><c> track</c><00:04:22.960><c> of</c><00:04:23.040><c> which</c><00:04:23.280><c> one</c><00:04:23.440><c> of</c><00:04:23.520><c> these</c>
+
+00:04:23.749 --> 00:04:23.759 align:start position:0%
+know keep track of which one of these
+ 
+
+00:04:23.759 --> 00:04:26.469 align:start position:0%
+know keep track of which one of these
+has<00:04:24.000><c> the</c><00:04:24.160><c> maximum</c><00:04:24.800><c> area</c><00:04:25.360><c> as</c><00:04:25.520><c> you</c><00:04:25.600><c> can</c><00:04:25.759><c> see</c><00:04:26.320><c> this</c>
+
+00:04:26.469 --> 00:04:26.479 align:start position:0%
+has the maximum area as you can see this
+ 
+
+00:04:26.479 --> 00:04:29.350 align:start position:0%
+has the maximum area as you can see this
+one<00:04:26.720><c> has</c><00:04:26.880><c> the</c><00:04:26.960><c> maximum</c><00:04:27.520><c> area</c><00:04:28.000><c> of</c><00:04:28.400><c> six</c><00:04:28.960><c> so</c><00:04:29.120><c> we're</c>
+
+00:04:29.350 --> 00:04:29.360 align:start position:0%
+one has the maximum area of six so we're
+ 
+
+00:04:29.360 --> 00:04:31.749 align:start position:0%
+one has the maximum area of six so we're
+going<00:04:29.440><c> to</c><00:04:29.600><c> end</c><00:04:29.759><c> up</c><00:04:29.840><c> returning</c><00:04:30.560><c> six</c><00:04:31.040><c> in</c><00:04:31.360><c> this</c>
+
+00:04:31.749 --> 00:04:31.759 align:start position:0%
+going to end up returning six in this
+ 
+
+00:04:31.759 --> 00:04:35.189 align:start position:0%
+going to end up returning six in this
+problem<00:04:32.400><c> now</c><00:04:32.800><c> how</c><00:04:33.199><c> are</c><00:04:33.520><c> we</c><00:04:33.759><c> gonna</c><00:04:34.080><c> run</c><00:04:34.400><c> dfs</c><00:04:35.040><c> on</c>
+
+00:04:35.189 --> 00:04:35.199 align:start position:0%
+problem now how are we gonna run dfs on
+ 
+
+00:04:35.199 --> 00:04:37.590 align:start position:0%
+problem now how are we gonna run dfs on
+every<00:04:35.520><c> single</c><00:04:35.919><c> island</c><00:04:36.479><c> the</c><00:04:36.720><c> easiest</c><00:04:37.199><c> way</c><00:04:37.440><c> to</c>
+
+00:04:37.590 --> 00:04:37.600 align:start position:0%
+every single island the easiest way to
+ 
+
+00:04:37.600 --> 00:04:40.230 align:start position:0%
+every single island the easiest way to
+do<00:04:37.840><c> it</c><00:04:38.080><c> since</c><00:04:38.320><c> we</c><00:04:38.560><c> don't</c><00:04:38.960><c> know</c><00:04:39.520><c> which</c><00:04:39.840><c> cells</c>
+
+00:04:40.230 --> 00:04:40.240 align:start position:0%
+do it since we don't know which cells
+ 
+
+00:04:40.240 --> 00:04:42.550 align:start position:0%
+do it since we don't know which cells
+are<00:04:40.400><c> zero</c><00:04:40.720><c> and</c><00:04:40.880><c> which</c><00:04:41.120><c> ones</c><00:04:41.440><c> are</c><00:04:41.680><c> one</c><00:04:42.080><c> until</c><00:04:42.400><c> we</c>
+
+00:04:42.550 --> 00:04:42.560 align:start position:0%
+are zero and which ones are one until we
+ 
+
+00:04:42.560 --> 00:04:45.430 align:start position:0%
+are zero and which ones are one until we
+actually<00:04:43.040><c> look</c><00:04:43.360><c> at</c><00:04:43.600><c> every</c><00:04:44.080><c> single</c><00:04:44.639><c> individual</c>
+
+00:04:45.430 --> 00:04:45.440 align:start position:0%
+actually look at every single individual
+ 
+
+00:04:45.440 --> 00:04:46.950 align:start position:0%
+actually look at every single individual
+cell<00:04:45.919><c> that's</c><00:04:46.160><c> exactly</c><00:04:46.479><c> what</c><00:04:46.639><c> we're</c><00:04:46.800><c> gonna</c>
+
+00:04:46.950 --> 00:04:46.960 align:start position:0%
+cell that's exactly what we're gonna
+ 
+
+00:04:46.960 --> 00:04:48.310 align:start position:0%
+cell that's exactly what we're gonna
+have<00:04:47.040><c> to</c><00:04:47.120><c> do</c><00:04:47.280><c> we're</c><00:04:47.440><c> gonna</c><00:04:47.600><c> start</c><00:04:47.840><c> at</c><00:04:47.919><c> the</c><00:04:48.000><c> top</c>
+
+00:04:48.310 --> 00:04:48.320 align:start position:0%
+have to do we're gonna start at the top
+ 
+
+00:04:48.320 --> 00:04:51.510 align:start position:0%
+have to do we're gonna start at the top
+left<00:04:48.880><c> look</c><00:04:49.120><c> at</c><00:04:49.440><c> every</c><00:04:49.759><c> single</c><00:04:50.240><c> cell</c><00:04:50.800><c> if</c><00:04:50.960><c> we</c><00:04:51.199><c> see</c>
+
+00:04:51.510 --> 00:04:51.520 align:start position:0%
+left look at every single cell if we see
+ 
+
+00:04:51.520 --> 00:04:54.150 align:start position:0%
+left look at every single cell if we see
+a<00:04:51.759><c> one</c><00:04:52.080><c> value</c><00:04:52.720><c> we're</c><00:04:52.880><c> gonna</c><00:04:53.040><c> run</c><00:04:53.280><c> dfs</c><00:04:53.919><c> on</c><00:04:54.080><c> it</c>
+
+00:04:54.150 --> 00:04:54.160 align:start position:0%
+a one value we're gonna run dfs on it
+ 
+
+00:04:54.160 --> 00:04:56.469 align:start position:0%
+a one value we're gonna run dfs on it
+and<00:04:54.320><c> figure</c><00:04:54.560><c> out</c><00:04:54.720><c> the</c><00:04:54.960><c> area</c><00:04:55.360><c> of</c><00:04:55.520><c> that</c><00:04:55.759><c> island</c>
+
+00:04:56.469 --> 00:04:56.479 align:start position:0%
+and figure out the area of that island
+ 
+
+00:04:56.479 --> 00:04:58.070 align:start position:0%
+and figure out the area of that island
+if<00:04:56.639><c> we</c><00:04:56.720><c> don't</c><00:04:56.960><c> see</c><00:04:57.120><c> a</c><00:04:57.199><c> one</c><00:04:57.440><c> value</c><00:04:57.759><c> we're</c><00:04:57.919><c> going</c>
+
+00:04:58.070 --> 00:04:58.080 align:start position:0%
+if we don't see a one value we're going
+ 
+
+00:04:58.080 --> 00:05:00.230 align:start position:0%
+if we don't see a one value we're going
+to<00:04:58.160><c> skip</c><00:04:58.479><c> it</c><00:04:58.720><c> so</c><00:04:58.880><c> we're</c><00:04:58.960><c> going</c><00:04:59.040><c> to</c><00:04:59.280><c> have</c><00:05:00.000><c> by</c><00:05:00.160><c> the</c>
+
+00:05:00.230 --> 00:05:00.240 align:start position:0%
+to skip it so we're going to have by the
+ 
+
+00:05:00.240 --> 00:05:01.510 align:start position:0%
+to skip it so we're going to have by the
+end<00:05:00.400><c> of</c><00:05:00.560><c> it</c><00:05:00.639><c> we're</c><00:05:00.720><c> going</c><00:05:00.800><c> to</c><00:05:00.880><c> have</c><00:05:01.039><c> visited</c>
+
+00:05:01.510 --> 00:05:01.520 align:start position:0%
+end of it we're going to have visited
+ 
+
+00:05:01.520 --> 00:05:03.670 align:start position:0%
+end of it we're going to have visited
+every<00:05:01.680><c> single</c><00:05:02.000><c> position</c><00:05:02.560><c> and</c><00:05:02.720><c> run</c><00:05:02.880><c> dfs</c><00:05:03.440><c> on</c>
+
+00:05:03.670 --> 00:05:03.680 align:start position:0%
+every single position and run dfs on
+ 
+
+00:05:03.680 --> 00:05:05.670 align:start position:0%
+every single position and run dfs on
+every<00:05:03.919><c> island</c><00:05:04.400><c> so</c><00:05:04.639><c> we</c><00:05:04.800><c> will</c><00:05:04.960><c> know</c><00:05:05.120><c> which</c><00:05:05.360><c> one</c>
+
+00:05:05.670 --> 00:05:05.680 align:start position:0%
+every island so we will know which one
+ 
+
+00:05:05.680 --> 00:05:08.390 align:start position:0%
+every island so we will know which one
+is<00:05:05.919><c> the</c><00:05:06.080><c> maximum</c><00:05:07.039><c> the</c><00:05:07.199><c> only</c><00:05:07.520><c> problem</c><00:05:07.919><c> is</c><00:05:08.240><c> what</c>
+
+00:05:08.390 --> 00:05:08.400 align:start position:0%
+is the maximum the only problem is what
+ 
+
+00:05:08.400 --> 00:05:11.350 align:start position:0%
+is the maximum the only problem is what
+if<00:05:08.560><c> we</c><00:05:08.720><c> run</c><00:05:09.120><c> dfs</c><00:05:09.759><c> on</c><00:05:09.919><c> this</c><00:05:10.160><c> position</c><00:05:10.720><c> and</c><00:05:10.880><c> then</c>
+
+00:05:11.350 --> 00:05:11.360 align:start position:0%
+if we run dfs on this position and then
+ 
+
+00:05:11.360 --> 00:05:14.629 align:start position:0%
+if we run dfs on this position and then
+we<00:05:11.600><c> run</c><00:05:12.000><c> dfs</c><00:05:12.560><c> on</c><00:05:12.720><c> this</c><00:05:12.880><c> position</c><00:05:13.360><c> won't</c><00:05:13.600><c> we</c><00:05:13.840><c> get</c>
+
+00:05:14.629 --> 00:05:14.639 align:start position:0%
+we run dfs on this position won't we get
+ 
+
+00:05:14.639 --> 00:05:17.110 align:start position:0%
+we run dfs on this position won't we get
+the<00:05:14.880><c> same</c><00:05:15.199><c> exact</c><00:05:15.600><c> area</c><00:05:15.919><c> won't</c><00:05:16.080><c> we</c><00:05:16.240><c> run</c><00:05:16.479><c> dfs</c><00:05:17.039><c> on</c>
+
+00:05:17.110 --> 00:05:17.120 align:start position:0%
+the same exact area won't we run dfs on
+ 
+
+00:05:17.120 --> 00:05:20.070 align:start position:0%
+the same exact area won't we run dfs on
+the<00:05:17.280><c> same</c><00:05:17.520><c> island</c><00:05:18.080><c> twice</c><00:05:18.639><c> well</c><00:05:19.280><c> no</c><00:05:19.759><c> and</c><00:05:19.840><c> that's</c>
+
+00:05:20.070 --> 00:05:20.080 align:start position:0%
+the same island twice well no and that's
+ 
+
+00:05:20.080 --> 00:05:22.550 align:start position:0%
+the same island twice well no and that's
+the<00:05:20.240><c> reason</c><00:05:20.560><c> we</c><00:05:20.800><c> are</c><00:05:21.039><c> using</c><00:05:21.360><c> our</c><00:05:21.600><c> visit</c><00:05:22.160><c> set</c>
+
+00:05:22.550 --> 00:05:22.560 align:start position:0%
+the reason we are using our visit set
+ 
+
+00:05:22.560 --> 00:05:25.110 align:start position:0%
+the reason we are using our visit set
+because<00:05:22.800><c> we</c><00:05:22.960><c> don't</c><00:05:23.360><c> want</c><00:05:23.600><c> to</c><00:05:23.759><c> run</c><00:05:24.000><c> dfs</c><00:05:24.639><c> on</c><00:05:24.880><c> an</c>
+
+00:05:25.110 --> 00:05:25.120 align:start position:0%
+because we don't want to run dfs on an
+ 
+
+00:05:25.120 --> 00:05:27.749 align:start position:0%
+because we don't want to run dfs on an
+island<00:05:25.600><c> multiple</c><00:05:26.080><c> times</c><00:05:26.639><c> so</c><00:05:26.800><c> at</c><00:05:27.039><c> this</c><00:05:27.280><c> point</c>
+
+00:05:27.749 --> 00:05:27.759 align:start position:0%
+island multiple times so at this point
+ 
+
+00:05:27.759 --> 00:05:29.590 align:start position:0%
+island multiple times so at this point
+you<00:05:27.919><c> can</c><00:05:28.080><c> probably</c><00:05:28.560><c> see</c><00:05:29.039><c> that</c><00:05:29.199><c> the</c><00:05:29.440><c> time</c>
+
+00:05:29.590 --> 00:05:29.600 align:start position:0%
+you can probably see that the time
+ 
+
+00:05:29.600 --> 00:05:31.749 align:start position:0%
+you can probably see that the time
+complexity<00:05:30.160><c> of</c><00:05:30.240><c> this</c><00:05:30.479><c> problem</c><00:05:31.120><c> since</c><00:05:31.440><c> in</c><00:05:31.600><c> the</c>
+
+00:05:31.749 --> 00:05:31.759 align:start position:0%
+complexity of this problem since in the
+ 
+
+00:05:31.759 --> 00:05:33.590 align:start position:0%
+complexity of this problem since in the
+worst<00:05:32.160><c> case</c><00:05:32.400><c> we're</c><00:05:32.639><c> really</c><00:05:32.960><c> only</c><00:05:33.199><c> going</c><00:05:33.360><c> to</c><00:05:33.440><c> be</c>
+
+00:05:33.590 --> 00:05:33.600 align:start position:0%
+worst case we're really only going to be
+ 
+
+00:05:33.600 --> 00:05:36.550 align:start position:0%
+worst case we're really only going to be
+visiting<00:05:34.080><c> each</c><00:05:34.800><c> cell</c><00:05:35.440><c> you</c><00:05:35.600><c> know</c><00:05:35.840><c> a</c><00:05:36.000><c> constant</c>
+
+00:05:36.550 --> 00:05:36.560 align:start position:0%
+visiting each cell you know a constant
+ 
+
+00:05:36.560 --> 00:05:38.150 align:start position:0%
+visiting each cell you know a constant
+number<00:05:36.800><c> of</c><00:05:37.039><c> times</c><00:05:37.360><c> it's</c><00:05:37.520><c> not</c><00:05:37.600><c> going</c><00:05:37.680><c> to</c><00:05:37.759><c> be</c><00:05:38.080><c> you</c>
+
+00:05:38.150 --> 00:05:38.160 align:start position:0%
+number of times it's not going to be you
+ 
+
+00:05:38.160 --> 00:05:40.390 align:start position:0%
+number of times it's not going to be you
+know<00:05:38.400><c> exponential</c><00:05:38.960><c> or</c><00:05:39.120><c> anything</c><00:05:39.919><c> the</c><00:05:40.240><c> time</c>
+
+00:05:40.390 --> 00:05:40.400 align:start position:0%
+know exponential or anything the time
+ 
+
+00:05:40.400 --> 00:05:43.670 align:start position:0%
+know exponential or anything the time
+complexity<00:05:41.039><c> is</c><00:05:41.360><c> going</c><00:05:41.600><c> to</c><00:05:41.840><c> be</c><00:05:42.400><c> the</c><00:05:42.800><c> size</c><00:05:43.440><c> of</c>
+
+00:05:43.670 --> 00:05:43.680 align:start position:0%
+complexity is going to be the size of
+ 
+
+00:05:43.680 --> 00:05:46.070 align:start position:0%
+complexity is going to be the size of
+the<00:05:43.919><c> entire</c><00:05:44.400><c> grid</c><00:05:45.120><c> which</c>
+
+00:05:46.070 --> 00:05:46.080 align:start position:0%
+the entire grid which
+ 
+
+00:05:46.080 --> 00:05:49.270 align:start position:0%
+the entire grid which
+we're<00:05:46.240><c> given</c><00:05:46.639><c> is</c><00:05:46.880><c> m</c><00:05:47.120><c> by</c><00:05:47.520><c> n</c><00:05:48.080><c> so</c><00:05:48.479><c> in</c><00:05:48.639><c> that</c><00:05:48.880><c> case</c>
+
+00:05:49.270 --> 00:05:49.280 align:start position:0%
+we're given is m by n so in that case
+ 
+
+00:05:49.280 --> 00:05:51.350 align:start position:0%
+we're given is m by n so in that case
+the<00:05:49.440><c> overall</c><00:05:50.320><c> time</c><00:05:50.560><c> complexity</c><00:05:51.120><c> is</c><00:05:51.199><c> going</c><00:05:51.280><c> to</c>
+
+00:05:51.350 --> 00:05:51.360 align:start position:0%
+the overall time complexity is going to
+ 
+
+00:05:51.360 --> 00:05:53.590 align:start position:0%
+the overall time complexity is going to
+be<00:05:51.680><c> m</c><00:05:52.320><c> times</c><00:05:52.960><c> n</c>
+
+00:05:53.590 --> 00:05:53.600 align:start position:0%
+be m times n
+ 
+
+00:05:53.600 --> 00:05:55.350 align:start position:0%
+be m times n
+and<00:05:54.080><c> that's</c><00:05:54.320><c> also</c><00:05:54.560><c> going</c><00:05:54.639><c> to</c><00:05:54.720><c> be</c><00:05:54.880><c> the</c><00:05:55.039><c> memory</c>
+
+00:05:55.350 --> 00:05:55.360 align:start position:0%
+and that's also going to be the memory
+ 
+
+00:05:55.360 --> 00:05:57.590 align:start position:0%
+and that's also going to be the memory
+complexity<00:05:56.160><c> because</c><00:05:56.880><c> remember</c><00:05:57.280><c> we</c><00:05:57.440><c> are</c>
+
+00:05:57.590 --> 00:05:57.600 align:start position:0%
+complexity because remember we are
+ 
+
+00:05:57.600 --> 00:05:59.830 align:start position:0%
+complexity because remember we are
+having<00:05:58.000><c> a</c><00:05:58.160><c> hash</c><00:05:58.479><c> set</c><00:05:58.720><c> which</c><00:05:59.039><c> could</c>
+
+00:05:59.830 --> 00:05:59.840 align:start position:0%
+having a hash set which could
+ 
+
+00:05:59.840 --> 00:06:01.749 align:start position:0%
+having a hash set which could
+in<00:05:59.919><c> the</c><00:06:00.000><c> worst</c><00:06:00.400><c> case</c><00:06:00.639><c> contain</c><00:06:01.120><c> every</c><00:06:01.360><c> single</c>
+
+00:06:01.749 --> 00:06:01.759 align:start position:0%
+in the worst case contain every single
+ 
+
+00:06:01.759 --> 00:06:03.749 align:start position:0%
+in the worst case contain every single
+cell<00:06:02.240><c> in</c><00:06:02.560><c> the</c><00:06:02.800><c> grid</c>
+
+00:06:03.749 --> 00:06:03.759 align:start position:0%
+cell in the grid
+ 
+
+00:06:03.759 --> 00:06:05.909 align:start position:0%
+cell in the grid
+and<00:06:04.000><c> of</c><00:06:04.080><c> course</c><00:06:04.639><c> dfs</c><00:06:05.120><c> is</c><00:06:05.199><c> recursive</c><00:06:05.759><c> so</c>
+
+00:06:05.909 --> 00:06:05.919 align:start position:0%
+and of course dfs is recursive so
+ 
+
+00:06:05.919 --> 00:06:07.749 align:start position:0%
+and of course dfs is recursive so
+there's<00:06:06.160><c> a</c><00:06:06.240><c> call</c><00:06:06.479><c> stack</c><00:06:06.800><c> associated</c><00:06:07.360><c> with</c><00:06:07.600><c> it</c>
+
+00:06:07.749 --> 00:06:07.759 align:start position:0%
+there's a call stack associated with it
+ 
+
+00:06:07.759 --> 00:06:09.670 align:start position:0%
+there's a call stack associated with it
+but<00:06:08.240><c> uh</c><00:06:08.560><c> this</c><00:06:08.800><c> is</c><00:06:08.880><c> going</c><00:06:08.960><c> to</c><00:06:09.039><c> be</c><00:06:09.199><c> the</c><00:06:09.280><c> memory</c>
+
+00:06:09.670 --> 00:06:09.680 align:start position:0%
+but uh this is going to be the memory
+ 
+
+00:06:09.680 --> 00:06:12.150 align:start position:0%
+but uh this is going to be the memory
+bottleneck<00:06:10.240><c> the</c><00:06:10.400><c> hash</c><00:06:10.639><c> set</c><00:06:10.880><c> so</c><00:06:11.360><c> the</c><00:06:11.520><c> time</c><00:06:11.919><c> and</c>
+
+00:06:12.150 --> 00:06:12.160 align:start position:0%
+bottleneck the hash set so the time and
+ 
+
+00:06:12.160 --> 00:06:14.790 align:start position:0%
+bottleneck the hash set so the time and
+space<00:06:12.479><c> complexity</c><00:06:13.120><c> is</c><00:06:13.280><c> going</c><00:06:13.360><c> to</c><00:06:13.440><c> be</c><00:06:13.919><c> big</c><00:06:14.160><c> o</c><00:06:14.479><c> m</c>
+
+00:06:14.790 --> 00:06:14.800 align:start position:0%
+space complexity is going to be big o m
+ 
+
+00:06:14.800 --> 00:06:17.749 align:start position:0%
+space complexity is going to be big o m
+times<00:06:15.280><c> n</c><00:06:15.759><c> that's</c><00:06:16.000><c> enough</c><00:06:16.400><c> for</c><00:06:16.720><c> us</c><00:06:16.960><c> to</c><00:06:17.199><c> now</c><00:06:17.520><c> jump</c>
+
+00:06:17.749 --> 00:06:17.759 align:start position:0%
+times n that's enough for us to now jump
+ 
+
+00:06:17.759 --> 00:06:19.670 align:start position:0%
+times n that's enough for us to now jump
+into<00:06:18.000><c> the</c><00:06:18.160><c> code</c><00:06:18.720><c> okay</c><00:06:18.960><c> so</c><00:06:19.120><c> now</c><00:06:19.280><c> let's</c><00:06:19.520><c> write</c>
+
+00:06:19.670 --> 00:06:19.680 align:start position:0%
+into the code okay so now let's write
+ 
+
+00:06:19.680 --> 00:06:21.670 align:start position:0%
+into the code okay so now let's write
+the<00:06:19.840><c> code</c><00:06:20.080><c> if</c><00:06:20.240><c> you've</c><00:06:20.479><c> seen</c><00:06:20.800><c> any</c><00:06:21.039><c> of</c><00:06:21.120><c> my</c><00:06:21.360><c> graph</c>
+
+00:06:21.670 --> 00:06:21.680 align:start position:0%
+the code if you've seen any of my graph
+ 
+
+00:06:21.680 --> 00:06:23.430 align:start position:0%
+the code if you've seen any of my graph
+videos<00:06:22.080><c> you</c><00:06:22.240><c> probably</c><00:06:22.479><c> know</c><00:06:22.720><c> i</c><00:06:22.880><c> like</c><00:06:23.039><c> to</c><00:06:23.120><c> solve</c>
+
+00:06:23.430 --> 00:06:23.440 align:start position:0%
+videos you probably know i like to solve
+ 
+
+00:06:23.440 --> 00:06:25.590 align:start position:0%
+videos you probably know i like to solve
+all<00:06:23.600><c> these</c><00:06:23.919><c> problems</c><00:06:24.319><c> in</c><00:06:24.479><c> a</c><00:06:24.560><c> very</c><00:06:24.800><c> formulaic</c>
+
+00:06:25.590 --> 00:06:25.600 align:start position:0%
+all these problems in a very formulaic
+ 
+
+00:06:25.600 --> 00:06:27.350 align:start position:0%
+all these problems in a very formulaic
+way<00:06:26.080><c> the</c><00:06:26.240><c> first</c><00:06:26.400><c> thing</c><00:06:26.560><c> i</c><00:06:26.639><c> like</c><00:06:26.800><c> to</c><00:06:26.960><c> do</c><00:06:27.039><c> is</c><00:06:27.199><c> just</c>
+
+00:06:27.350 --> 00:06:27.360 align:start position:0%
+way the first thing i like to do is just
+ 
+
+00:06:27.360 --> 00:06:28.950 align:start position:0%
+way the first thing i like to do is just
+get<00:06:27.520><c> the</c><00:06:27.600><c> dimensions</c><00:06:28.160><c> of</c><00:06:28.319><c> the</c><00:06:28.400><c> grid</c><00:06:28.720><c> because</c>
+
+00:06:28.950 --> 00:06:28.960 align:start position:0%
+get the dimensions of the grid because
+ 
+
+00:06:28.960 --> 00:06:31.749 align:start position:0%
+get the dimensions of the grid because
+usually<00:06:29.759><c> it</c><00:06:30.000><c> comes</c><00:06:30.479><c> in</c><00:06:30.720><c> handy</c><00:06:31.120><c> so</c><00:06:31.360><c> let's</c><00:06:31.600><c> get</c>
+
+00:06:31.749 --> 00:06:31.759 align:start position:0%
+usually it comes in handy so let's get
+ 
+
+00:06:31.759 --> 00:06:34.230 align:start position:0%
+usually it comes in handy so let's get
+the<00:06:31.840><c> number</c><00:06:32.080><c> of</c><00:06:32.240><c> columns</c><00:06:32.960><c> and</c><00:06:33.120><c> the</c><00:06:33.360><c> number</c><00:06:33.759><c> of</c>
+
+00:06:34.230 --> 00:06:34.240 align:start position:0%
+the number of columns and the number of
+ 
+
+00:06:34.240 --> 00:06:37.909 align:start position:0%
+the number of columns and the number of
+rows<00:06:34.880><c> in</c><00:06:35.440><c> the</c><00:06:35.759><c> entire</c><00:06:36.240><c> grid</c><00:06:36.800><c> the</c><00:06:37.120><c> only</c><00:06:37.360><c> other</c>
+
+00:06:37.909 --> 00:06:37.919 align:start position:0%
+rows in the entire grid the only other
+ 
+
+00:06:37.919 --> 00:06:39.270 align:start position:0%
+rows in the entire grid the only other
+data<00:06:38.160><c> structure</c><00:06:38.479><c> we're</c><00:06:38.560><c> going</c><00:06:38.639><c> to</c><00:06:38.720><c> be</c><00:06:38.880><c> needing</c>
+
+00:06:39.270 --> 00:06:39.280 align:start position:0%
+data structure we're going to be needing
+ 
+
+00:06:39.280 --> 00:06:41.590 align:start position:0%
+data structure we're going to be needing
+is<00:06:39.440><c> the</c><00:06:39.600><c> visit</c><00:06:40.000><c> hash</c><00:06:40.319><c> set</c><00:06:40.639><c> so</c><00:06:40.880><c> let's</c><00:06:41.120><c> declare</c>
+
+00:06:41.590 --> 00:06:41.600 align:start position:0%
+is the visit hash set so let's declare
+ 
+
+00:06:41.600 --> 00:06:44.469 align:start position:0%
+is the visit hash set so let's declare
+that<00:06:41.919><c> above</c><00:06:42.639><c> and</c><00:06:43.280><c> now</c><00:06:43.520><c> we</c><00:06:43.680><c> want</c><00:06:43.840><c> to</c><00:06:44.000><c> write</c><00:06:44.240><c> our</c>
+
+00:06:44.469 --> 00:06:44.479 align:start position:0%
+that above and now we want to write our
+ 
+
+00:06:44.479 --> 00:06:47.110 align:start position:0%
+that above and now we want to write our
+recursive<00:06:45.280><c> dfs</c><00:06:45.759><c> function</c><00:06:46.479><c> i</c><00:06:46.639><c> like</c><00:06:46.800><c> to</c><00:06:46.960><c> just</c>
+
+00:06:47.110 --> 00:06:47.120 align:start position:0%
+recursive dfs function i like to just
+ 
+
+00:06:47.120 --> 00:06:49.110 align:start position:0%
+recursive dfs function i like to just
+write<00:06:47.360><c> the</c><00:06:47.440><c> dfs</c><00:06:48.080><c> inside</c><00:06:48.560><c> of</c><00:06:48.720><c> our</c><00:06:48.880><c> root</c>
+
+00:06:49.110 --> 00:06:49.120 align:start position:0%
+write the dfs inside of our root
+ 
+
+00:06:49.120 --> 00:06:51.029 align:start position:0%
+write the dfs inside of our root
+function<00:06:49.599><c> because</c><00:06:50.080><c> in</c><00:06:50.160><c> that</c><00:06:50.400><c> case</c><00:06:50.639><c> we</c><00:06:50.800><c> won't</c>
+
+00:06:51.029 --> 00:06:51.039 align:start position:0%
+function because in that case we won't
+ 
+
+00:06:51.039 --> 00:06:53.189 align:start position:0%
+function because in that case we won't
+have<00:06:51.199><c> to</c><00:06:51.360><c> pass</c><00:06:51.680><c> in</c><00:06:51.840><c> every</c><00:06:52.080><c> single</c><00:06:52.479><c> parameter</c>
+
+00:06:53.189 --> 00:06:53.199 align:start position:0%
+have to pass in every single parameter
+ 
+
+00:06:53.199 --> 00:06:54.790 align:start position:0%
+have to pass in every single parameter
+all<00:06:53.360><c> we</c><00:06:53.520><c> are</c><00:06:53.599><c> going</c><00:06:53.680><c> to</c><00:06:53.759><c> be</c><00:06:53.919><c> passing</c><00:06:54.240><c> in</c><00:06:54.479><c> is</c><00:06:54.639><c> the</c>
+
+00:06:54.790 --> 00:06:54.800 align:start position:0%
+all we are going to be passing in is the
+ 
+
+00:06:54.800 --> 00:06:56.230 align:start position:0%
+all we are going to be passing in is the
+position<00:06:55.280><c> that</c><00:06:55.360><c> we're</c><00:06:55.520><c> going</c><00:06:55.599><c> to</c><00:06:55.680><c> be</c><00:06:55.840><c> visiting</c>
+
+00:06:56.230 --> 00:06:56.240 align:start position:0%
+position that we're going to be visiting
+ 
+
+00:06:56.240 --> 00:06:59.029 align:start position:0%
+position that we're going to be visiting
+so<00:06:56.560><c> rc</c><00:06:57.199><c> is</c><00:06:57.360><c> going</c><00:06:57.440><c> to</c><00:06:57.520><c> be</c><00:06:57.599><c> the</c><00:06:57.759><c> row</c><00:06:58.080><c> column</c><00:06:58.800><c> that</c>
+
+00:06:59.029 --> 00:06:59.039 align:start position:0%
+so rc is going to be the row column that
+ 
+
+00:06:59.039 --> 00:07:01.510 align:start position:0%
+so rc is going to be the row column that
+we<00:06:59.360><c> are</c><00:06:59.520><c> running</c><00:06:59.840><c> dfs</c><00:07:00.479><c> on</c><00:07:00.880><c> we</c><00:07:01.039><c> won't</c><00:07:01.280><c> have</c><00:07:01.360><c> to</c>
+
+00:07:01.510 --> 00:07:01.520 align:start position:0%
+we are running dfs on we won't have to
+ 
+
+00:07:01.520 --> 00:07:04.870 align:start position:0%
+we are running dfs on we won't have to
+pass<00:07:01.840><c> in</c><00:07:02.000><c> the</c><00:07:02.160><c> visit</c><00:07:02.880><c> or</c><00:07:03.199><c> the</c><00:07:03.360><c> grid</c><00:07:03.919><c> itself</c><00:07:04.639><c> and</c>
+
+00:07:04.870 --> 00:07:04.880 align:start position:0%
+pass in the visit or the grid itself and
+ 
+
+00:07:04.880 --> 00:07:06.950 align:start position:0%
+pass in the visit or the grid itself and
+with<00:07:05.039><c> dfs</c><00:07:05.919><c> we</c><00:07:06.080><c> always</c><00:07:06.319><c> want</c><00:07:06.479><c> to</c><00:07:06.560><c> handle</c><00:07:06.800><c> the</c>
+
+00:07:06.950 --> 00:07:06.960 align:start position:0%
+with dfs we always want to handle the
+ 
+
+00:07:06.960 --> 00:07:08.870 align:start position:0%
+with dfs we always want to handle the
+base<00:07:07.280><c> case</c><00:07:07.680><c> first</c><00:07:08.000><c> with</c><00:07:08.240><c> all</c><00:07:08.400><c> recursive</c>
+
+00:07:08.870 --> 00:07:08.880 align:start position:0%
+base case first with all recursive
+ 
+
+00:07:08.880 --> 00:07:09.909 align:start position:0%
+base case first with all recursive
+functions
+
+00:07:09.909 --> 00:07:09.919 align:start position:0%
+functions
+ 
+
+00:07:09.919 --> 00:07:12.070 align:start position:0%
+functions
+one<00:07:10.160><c> base</c><00:07:10.400><c> case</c><00:07:10.720><c> is</c><00:07:10.880><c> if</c><00:07:11.039><c> we</c><00:07:11.120><c> go</c><00:07:11.360><c> out</c><00:07:11.520><c> of</c><00:07:11.599><c> bounds</c>
+
+00:07:12.070 --> 00:07:12.080 align:start position:0%
+one base case is if we go out of bounds
+ 
+
+00:07:12.080 --> 00:07:14.150 align:start position:0%
+one base case is if we go out of bounds
+how<00:07:12.240><c> do</c><00:07:12.319><c> we</c><00:07:12.400><c> determine</c><00:07:12.880><c> that</c><00:07:13.039><c> well</c><00:07:13.280><c> if</c><00:07:13.599><c> rho</c><00:07:14.000><c> is</c>
+
+00:07:14.150 --> 00:07:14.160 align:start position:0%
+how do we determine that well if rho is
+ 
+
+00:07:14.160 --> 00:07:17.670 align:start position:0%
+how do we determine that well if rho is
+less<00:07:14.400><c> than</c><00:07:14.639><c> zero</c><00:07:15.360><c> or</c><00:07:16.000><c> a</c><00:07:16.240><c> row</c><00:07:16.560><c> is</c><00:07:16.720><c> too</c><00:07:17.039><c> big</c><00:07:17.440><c> it'll</c>
+
+00:07:17.670 --> 00:07:17.680 align:start position:0%
+less than zero or a row is too big it'll
+ 
+
+00:07:17.680 --> 00:07:19.990 align:start position:0%
+less than zero or a row is too big it'll
+be<00:07:17.840><c> too</c><00:07:18.080><c> big</c><00:07:18.319><c> if</c><00:07:18.560><c> it's</c><00:07:18.720><c> exactly</c><00:07:19.199><c> equal</c><00:07:19.599><c> to</c><00:07:19.840><c> the</c>
+
+00:07:19.990 --> 00:07:20.000 align:start position:0%
+be too big if it's exactly equal to the
+ 
+
+00:07:20.000 --> 00:07:22.629 align:start position:0%
+be too big if it's exactly equal to the
+number<00:07:20.240><c> of</c><00:07:20.400><c> rows</c><00:07:20.720><c> that</c><00:07:20.800><c> we</c><00:07:20.960><c> have</c><00:07:21.680><c> uh</c><00:07:22.000><c> or</c><00:07:22.479><c> you</c>
+
+00:07:22.629 --> 00:07:22.639 align:start position:0%
+number of rows that we have uh or you
+ 
+
+00:07:22.639 --> 00:07:23.990 align:start position:0%
+number of rows that we have uh or you
+know<00:07:22.800><c> the</c><00:07:22.880><c> same</c><00:07:23.039><c> thing</c><00:07:23.199><c> with</c><00:07:23.360><c> the</c><00:07:23.520><c> column</c><00:07:23.840><c> if</c>
+
+00:07:23.990 --> 00:07:24.000 align:start position:0%
+know the same thing with the column if
+ 
+
+00:07:24.000 --> 00:07:26.629 align:start position:0%
+know the same thing with the column if
+it's<00:07:24.160><c> less</c><00:07:24.319><c> than</c><00:07:24.479><c> zero</c><00:07:24.960><c> or</c><00:07:25.520><c> it's</c><00:07:25.759><c> equal</c><00:07:26.160><c> to</c><00:07:26.400><c> the</c>
+
+00:07:26.629 --> 00:07:26.639 align:start position:0%
+it's less than zero or it's equal to the
+ 
+
+00:07:26.639 --> 00:07:29.270 align:start position:0%
+it's less than zero or it's equal to the
+number<00:07:26.960><c> of</c><00:07:27.199><c> columns</c><00:07:28.080><c> and</c><00:07:28.240><c> there's</c><00:07:28.720><c> two</c><00:07:29.039><c> other</c>
+
+00:07:29.270 --> 00:07:29.280 align:start position:0%
+number of columns and there's two other
+ 
+
+00:07:29.280 --> 00:07:31.830 align:start position:0%
+number of columns and there's two other
+cases<00:07:29.680><c> remember</c><00:07:30.400><c> one</c><00:07:30.639><c> is</c><00:07:30.800><c> if</c><00:07:30.960><c> we</c><00:07:31.120><c> reach</c><00:07:31.520><c> water</c>
+
+00:07:31.830 --> 00:07:31.840 align:start position:0%
+cases remember one is if we reach water
+ 
+
+00:07:31.840 --> 00:07:33.749 align:start position:0%
+cases remember one is if we reach water
+we<00:07:32.000><c> don't</c><00:07:32.160><c> want</c><00:07:32.240><c> to</c><00:07:32.319><c> run</c><00:07:32.560><c> dfs</c><00:07:33.039><c> on</c><00:07:33.199><c> water</c><00:07:33.520><c> so</c><00:07:33.680><c> if</c>
+
+00:07:33.749 --> 00:07:33.759 align:start position:0%
+we don't want to run dfs on water so if
+ 
+
+00:07:33.759 --> 00:07:36.790 align:start position:0%
+we don't want to run dfs on water so if
+the<00:07:33.919><c> grid</c><00:07:34.720><c> column</c><00:07:35.360><c> position</c><00:07:35.919><c> is</c><00:07:36.240><c> equal</c><00:07:36.560><c> to</c>
+
+00:07:36.790 --> 00:07:36.800 align:start position:0%
+the grid column position is equal to
+ 
+
+00:07:36.800 --> 00:07:38.710 align:start position:0%
+the grid column position is equal to
+zero<00:07:37.440><c> and</c><00:07:37.680><c> last</c><00:07:37.919><c> but</c><00:07:38.080><c> not</c><00:07:38.240><c> least</c><00:07:38.479><c> we</c><00:07:38.639><c> don't</c>
+
+00:07:38.710 --> 00:07:38.720 align:start position:0%
+zero and last but not least we don't
+ 
+
+00:07:38.720 --> 00:07:41.589 align:start position:0%
+zero and last but not least we don't
+want<00:07:38.880><c> to</c><00:07:39.039><c> revisit</c><00:07:40.160><c> the</c><00:07:40.319><c> same</c><00:07:40.720><c> position</c><00:07:41.120><c> so</c><00:07:41.280><c> if</c>
+
+00:07:41.589 --> 00:07:41.599 align:start position:0%
+want to revisit the same position so if
+ 
+
+00:07:41.599 --> 00:07:44.469 align:start position:0%
+want to revisit the same position so if
+the<00:07:41.840><c> row</c><00:07:42.160><c> column</c><00:07:42.560><c> pair</c><00:07:42.960><c> is</c><00:07:43.199><c> already</c><00:07:43.759><c> inserted</c>
+
+00:07:44.469 --> 00:07:44.479 align:start position:0%
+the row column pair is already inserted
+ 
+
+00:07:44.479 --> 00:07:47.589 align:start position:0%
+the row column pair is already inserted
+in<00:07:44.720><c> our</c><00:07:44.879><c> visit</c><00:07:45.280><c> hash</c><00:07:45.680><c> set</c><00:07:46.319><c> then</c><00:07:46.879><c> we</c><00:07:47.199><c> don't</c><00:07:47.440><c> want</c>
+
+00:07:47.589 --> 00:07:47.599 align:start position:0%
+in our visit hash set then we don't want
+ 
+
+00:07:47.599 --> 00:07:50.070 align:start position:0%
+in our visit hash set then we don't want
+to<00:07:47.680><c> revisit</c><00:07:48.240><c> it</c><00:07:48.560><c> so</c><00:07:48.879><c> in</c><00:07:49.120><c> all</c><00:07:49.360><c> of</c><00:07:49.440><c> these</c><00:07:49.680><c> cases</c>
+
+00:07:50.070 --> 00:07:50.080 align:start position:0%
+to revisit it so in all of these cases
+ 
+
+00:07:50.080 --> 00:07:51.830 align:start position:0%
+to revisit it so in all of these cases
+what<00:07:50.240><c> do</c><00:07:50.400><c> we</c><00:07:50.479><c> want</c><00:07:50.639><c> to</c><00:07:50.720><c> return</c><00:07:51.120><c> well</c><00:07:51.360><c> remember</c>
+
+00:07:51.830 --> 00:07:51.840 align:start position:0%
+what do we want to return well remember
+ 
+
+00:07:51.840 --> 00:07:54.070 align:start position:0%
+what do we want to return well remember
+our<00:07:52.000><c> dfs</c><00:07:52.479><c> is</c><00:07:52.560><c> trying</c><00:07:52.800><c> to</c><00:07:52.879><c> calculate</c><00:07:53.440><c> the</c><00:07:53.680><c> area</c>
+
+00:07:54.070 --> 00:07:54.080 align:start position:0%
+our dfs is trying to calculate the area
+ 
+
+00:07:54.080 --> 00:07:56.309 align:start position:0%
+our dfs is trying to calculate the area
+of<00:07:54.319><c> every</c><00:07:54.720><c> island</c><00:07:55.280><c> in</c><00:07:55.440><c> this</c><00:07:55.599><c> case</c><00:07:55.840><c> we</c><00:07:56.000><c> didn't</c>
+
+00:07:56.309 --> 00:07:56.319 align:start position:0%
+of every island in this case we didn't
+ 
+
+00:07:56.319 --> 00:07:59.749 align:start position:0%
+of every island in this case we didn't
+find<00:07:56.720><c> an</c><00:07:56.879><c> island</c><00:07:57.520><c> so</c><00:07:57.759><c> we</c><00:07:57.919><c> want</c><00:07:58.080><c> to</c><00:07:58.240><c> return</c><00:07:59.039><c> zero</c>
+
+00:07:59.749 --> 00:07:59.759 align:start position:0%
+find an island so we want to return zero
+ 
+
+00:07:59.759 --> 00:08:02.710 align:start position:0%
+find an island so we want to return zero
+and<00:08:00.000><c> after</c><00:08:00.319><c> that</c><00:08:00.639><c> don't</c><00:08:00.800><c> forget</c><00:08:01.199><c> to</c><00:08:01.520><c> add</c>
+
+00:08:02.710 --> 00:08:02.720 align:start position:0%
+and after that don't forget to add
+ 
+
+00:08:02.720 --> 00:08:05.510 align:start position:0%
+and after that don't forget to add
+this<00:08:03.440><c> row</c><00:08:03.680><c> column</c><00:08:04.080><c> pair</c><00:08:04.400><c> to</c><00:08:04.639><c> our</c><00:08:04.800><c> hash</c><00:08:05.120><c> set</c><00:08:05.280><c> to</c>
+
+00:08:05.510 --> 00:08:05.520 align:start position:0%
+this row column pair to our hash set to
+ 
+
+00:08:05.520 --> 00:08:08.309 align:start position:0%
+this row column pair to our hash set to
+indicate<00:08:05.919><c> that</c><00:08:06.160><c> it</c><00:08:06.400><c> has</c><00:08:06.720><c> been</c><00:08:07.039><c> visited</c><00:08:07.759><c> and</c>
+
+00:08:08.309 --> 00:08:08.319 align:start position:0%
+indicate that it has been visited and
+ 
+
+00:08:08.319 --> 00:08:10.309 align:start position:0%
+indicate that it has been visited and
+after<00:08:08.560><c> we</c><00:08:08.720><c> do</c><00:08:08.879><c> that</c><00:08:09.039><c> we</c><00:08:09.280><c> want</c><00:08:09.520><c> to</c><00:08:09.680><c> calculate</c>
+
+00:08:10.309 --> 00:08:10.319 align:start position:0%
+after we do that we want to calculate
+ 
+
+00:08:10.319 --> 00:08:13.430 align:start position:0%
+after we do that we want to calculate
+the<00:08:10.639><c> area</c><00:08:11.599><c> of</c><00:08:12.080><c> uh</c><00:08:12.400><c> this</c><00:08:12.639><c> position</c><00:08:13.039><c> right</c><00:08:13.280><c> of</c>
+
+00:08:13.430 --> 00:08:13.440 align:start position:0%
+the area of uh this position right of
+ 
+
+00:08:13.440 --> 00:08:14.950 align:start position:0%
+the area of uh this position right of
+this<00:08:13.680><c> island</c><00:08:14.080><c> how</c><00:08:14.319><c> are</c><00:08:14.400><c> we</c><00:08:14.479><c> going</c><00:08:14.639><c> to</c><00:08:14.720><c> do</c><00:08:14.800><c> that</c>
+
+00:08:14.950 --> 00:08:14.960 align:start position:0%
+this island how are we going to do that
+ 
+
+00:08:14.960 --> 00:08:17.510 align:start position:0%
+this island how are we going to do that
+well<00:08:15.360><c> the</c><00:08:15.680><c> current</c><00:08:16.080><c> cell</c><00:08:16.319><c> that</c><00:08:16.479><c> we're</c><00:08:16.800><c> at</c><00:08:17.280><c> is</c>
+
+00:08:17.510 --> 00:08:17.520 align:start position:0%
+well the current cell that we're at is
+ 
+
+00:08:17.520 --> 00:08:21.510 align:start position:0%
+well the current cell that we're at is
+going<00:08:17.680><c> to</c><00:08:17.840><c> count</c><00:08:18.080><c> as</c><00:08:18.400><c> one</c><00:08:18.879><c> of</c><00:08:19.120><c> the</c><00:08:19.360><c> area</c><00:08:20.000><c> values</c>
+
+00:08:21.510 --> 00:08:21.520 align:start position:0%
+going to count as one of the area values
+ 
+
+00:08:21.520 --> 00:08:23.350 align:start position:0%
+going to count as one of the area values
+and<00:08:22.240><c> the</c><00:08:22.479><c> other</c>
+
+00:08:23.350 --> 00:08:23.360 align:start position:0%
+and the other
+ 
+
+00:08:23.360 --> 00:08:27.749 align:start position:0%
+and the other
+positions<00:08:24.000><c> we</c><00:08:24.160><c> can</c><00:08:24.639><c> pretty</c><00:08:24.960><c> much</c><00:08:25.520><c> run</c><00:08:26.000><c> dfs</c><00:08:27.039><c> on</c>
+
+00:08:27.749 --> 00:08:27.759 align:start position:0%
+positions we can pretty much run dfs on
+ 
+
+00:08:27.759 --> 00:08:29.430 align:start position:0%
+positions we can pretty much run dfs on
+all<00:08:28.000><c> four</c><00:08:28.240><c> directions</c><00:08:28.800><c> right</c><00:08:28.960><c> so</c><00:08:29.120><c> let's</c><00:08:29.280><c> call</c>
+
+00:08:29.430 --> 00:08:29.440 align:start position:0%
+all four directions right so let's call
+ 
+
+00:08:29.440 --> 00:08:32.630 align:start position:0%
+all four directions right so let's call
+dfs<00:08:30.240><c> i'm</c><00:08:30.400><c> passing</c><00:08:30.800><c> in</c><00:08:31.199><c> how</c><00:08:31.360><c> about</c><00:08:31.680><c> row</c><00:08:32.320><c> plus</c>
+
+00:08:32.630 --> 00:08:32.640 align:start position:0%
+dfs i'm passing in how about row plus
+ 
+
+00:08:32.640 --> 00:08:36.389 align:start position:0%
+dfs i'm passing in how about row plus
+one<00:08:33.360><c> uh</c><00:08:33.680><c> column</c><00:08:34.560><c> right</c><00:08:35.279><c> and</c><00:08:35.760><c> we</c><00:08:35.919><c> can</c><00:08:36.159><c> actually</c>
+
+00:08:36.389 --> 00:08:36.399 align:start position:0%
+one uh column right and we can actually
+ 
+
+00:08:36.399 --> 00:08:38.630 align:start position:0%
+one uh column right and we can actually
+just<00:08:36.560><c> copy</c><00:08:36.880><c> and</c><00:08:36.959><c> paste</c><00:08:37.200><c> this</c><00:08:37.440><c> four</c><00:08:37.680><c> times</c><00:08:38.159><c> so</c>
+
+00:08:38.630 --> 00:08:38.640 align:start position:0%
+just copy and paste this four times so
+ 
+
+00:08:38.640 --> 00:08:40.870 align:start position:0%
+just copy and paste this four times so
+let's<00:08:38.959><c> do</c><00:08:39.200><c> that</c><00:08:39.519><c> this</c><00:08:39.760><c> can</c><00:08:40.000><c> also</c><00:08:40.240><c> be</c><00:08:40.399><c> done</c><00:08:40.640><c> with</c>
+
+00:08:40.870 --> 00:08:40.880 align:start position:0%
+let's do that this can also be done with
+ 
+
+00:08:40.880 --> 00:08:42.790 align:start position:0%
+let's do that this can also be done with
+like<00:08:41.200><c> a</c><00:08:41.360><c> for</c><00:08:41.680><c> loop</c><00:08:41.919><c> to</c><00:08:42.080><c> go</c><00:08:42.240><c> through</c><00:08:42.399><c> all</c><00:08:42.560><c> four</c>
+
+00:08:42.790 --> 00:08:42.800 align:start position:0%
+like a for loop to go through all four
+ 
+
+00:08:42.800 --> 00:08:44.550 align:start position:0%
+like a for loop to go through all four
+directions<00:08:43.200><c> but</c><00:08:43.360><c> i</c><00:08:43.519><c> just</c><00:08:43.680><c> prefer</c><00:08:44.080><c> writing</c><00:08:44.399><c> it</c>
+
+00:08:44.550 --> 00:08:44.560 align:start position:0%
+directions but i just prefer writing it
+ 
+
+00:08:44.560 --> 00:08:47.110 align:start position:0%
+directions but i just prefer writing it
+out<00:08:44.800><c> it's</c><00:08:45.200><c> not</c><00:08:45.519><c> too</c><00:08:45.760><c> much</c><00:08:46.160><c> code</c><00:08:46.800><c> and</c><00:08:46.959><c> it's</c>
+
+00:08:47.110 --> 00:08:47.120 align:start position:0%
+out it's not too much code and it's
+ 
+
+00:08:47.120 --> 00:08:49.190 align:start position:0%
+out it's not too much code and it's
+pretty<00:08:47.360><c> easy</c><00:08:47.680><c> so</c><00:08:48.080><c> we</c><00:08:48.240><c> just</c><00:08:48.399><c> want</c><00:08:48.560><c> to</c><00:08:48.640><c> replace</c>
+
+00:08:49.190 --> 00:08:49.200 align:start position:0%
+pretty easy so we just want to replace
+ 
+
+00:08:49.200 --> 00:08:51.110 align:start position:0%
+pretty easy so we just want to replace
+these<00:08:49.519><c> with</c><00:08:49.760><c> all</c><00:08:50.000><c> four</c><00:08:50.240><c> directions</c><00:08:50.640><c> so</c>
+
+00:08:51.110 --> 00:08:51.120 align:start position:0%
+these with all four directions so
+ 
+
+00:08:51.120 --> 00:08:53.350 align:start position:0%
+these with all four directions so
+another<00:08:51.440><c> direction</c><00:08:51.920><c> is</c><00:08:52.000><c> row</c><00:08:52.320><c> minus</c><00:08:52.720><c> one</c>
+
+00:08:53.350 --> 00:08:53.360 align:start position:0%
+another direction is row minus one
+ 
+
+00:08:53.360 --> 00:08:55.350 align:start position:0%
+another direction is row minus one
+another<00:08:53.920><c> direction</c><00:08:54.399><c> will</c><00:08:54.640><c> be</c>
+
+00:08:55.350 --> 00:08:55.360 align:start position:0%
+another direction will be
+ 
+
+00:08:55.360 --> 00:08:57.910 align:start position:0%
+another direction will be
+column<00:08:56.240><c> plus</c><00:08:56.560><c> one</c><00:08:57.040><c> and</c><00:08:57.200><c> another</c><00:08:57.600><c> direction</c>
+
+00:08:57.910 --> 00:08:57.920 align:start position:0%
+column plus one and another direction
+ 
+
+00:08:57.920 --> 00:08:59.670 align:start position:0%
+column plus one and another direction
+will<00:08:58.080><c> be</c><00:08:58.640><c> column</c>
+
+00:08:59.670 --> 00:08:59.680 align:start position:0%
+will be column
+ 
+
+00:08:59.680 --> 00:09:02.150 align:start position:0%
+will be column
+minus<00:09:00.080><c> one</c><00:09:00.320><c> so</c><00:09:00.480><c> that's</c><00:09:00.800><c> all</c><00:09:01.040><c> four</c><00:09:01.360><c> directions</c>
+
+00:09:02.150 --> 00:09:02.160 align:start position:0%
+minus one so that's all four directions
+ 
+
+00:09:02.160 --> 00:09:04.710 align:start position:0%
+minus one so that's all four directions
+so<00:09:02.399><c> each</c><00:09:02.640><c> of</c><00:09:02.720><c> these</c><00:09:02.959><c> dfs's</c><00:09:03.839><c> is</c><00:09:04.080><c> calculating</c>
+
+00:09:04.710 --> 00:09:04.720 align:start position:0%
+so each of these dfs's is calculating
+ 
+
+00:09:04.720 --> 00:09:07.750 align:start position:0%
+so each of these dfs's is calculating
+the<00:09:04.959><c> area</c><00:09:05.519><c> of</c><00:09:06.000><c> the</c><00:09:06.160><c> remaining</c><00:09:06.800><c> portion</c><00:09:07.360><c> of</c><00:09:07.519><c> the</c>
+
+00:09:07.750 --> 00:09:07.760 align:start position:0%
+the area of the remaining portion of the
+ 
+
+00:09:07.760 --> 00:09:10.630 align:start position:0%
+the area of the remaining portion of the
+island<00:09:08.320><c> in</c><00:09:08.560><c> each</c><00:09:08.720><c> of</c><00:09:08.959><c> these</c><00:09:09.519><c> four</c><00:09:09.839><c> directions</c>
+
+00:09:10.630 --> 00:09:10.640 align:start position:0%
+island in each of these four directions
+ 
+
+00:09:10.640 --> 00:09:12.710 align:start position:0%
+island in each of these four directions
+then<00:09:10.800><c> we're</c><00:09:11.120><c> adding</c><00:09:11.519><c> all</c><00:09:11.760><c> four</c><00:09:12.000><c> of</c><00:09:12.080><c> them</c><00:09:12.399><c> up</c>
+
+00:09:12.710 --> 00:09:12.720 align:start position:0%
+then we're adding all four of them up
+ 
+
+00:09:12.720 --> 00:09:14.710 align:start position:0%
+then we're adding all four of them up
+including<00:09:13.279><c> the</c><00:09:13.519><c> one</c><00:09:13.920><c> cell</c><00:09:14.240><c> that</c><00:09:14.320><c> we</c><00:09:14.560><c> are</c>
+
+00:09:14.710 --> 00:09:14.720 align:start position:0%
+including the one cell that we are
+ 
+
+00:09:14.720 --> 00:09:17.030 align:start position:0%
+including the one cell that we are
+currently<00:09:15.200><c> visiting</c><00:09:15.600><c> right</c><00:09:15.839><c> now</c><00:09:16.560><c> and</c><00:09:16.800><c> once</c>
+
+00:09:17.030 --> 00:09:17.040 align:start position:0%
+currently visiting right now and once
+ 
+
+00:09:17.040 --> 00:09:19.030 align:start position:0%
+currently visiting right now and once
+we've<00:09:17.279><c> added</c><00:09:17.600><c> all</c><00:09:17.760><c> those</c><00:09:18.080><c> up</c><00:09:18.480><c> all</c><00:09:18.640><c> we</c><00:09:18.800><c> really</c>
+
+00:09:19.030 --> 00:09:19.040 align:start position:0%
+we've added all those up all we really
+ 
+
+00:09:19.040 --> 00:09:20.470 align:start position:0%
+we've added all those up all we really
+need<00:09:19.200><c> to</c><00:09:19.279><c> do</c><00:09:19.519><c> is</c><00:09:19.680><c> return</c><00:09:20.080><c> it</c><00:09:20.160><c> because</c><00:09:20.320><c> that's</c>
+
+00:09:20.470 --> 00:09:20.480 align:start position:0%
+need to do is return it because that's
+ 
+
+00:09:20.480 --> 00:09:22.710 align:start position:0%
+need to do is return it because that's
+what<00:09:20.560><c> our</c><00:09:20.640><c> dfs</c><00:09:21.120><c> is</c><00:09:21.200><c> trying</c><00:09:21.440><c> to</c><00:09:21.519><c> do</c><00:09:21.760><c> just</c><00:09:22.240><c> return</c>
+
+00:09:22.710 --> 00:09:22.720 align:start position:0%
+what our dfs is trying to do just return
+ 
+
+00:09:22.720 --> 00:09:25.269 align:start position:0%
+what our dfs is trying to do just return
+the<00:09:23.279><c> area</c><00:09:23.760><c> of</c><00:09:24.000><c> the</c><00:09:24.240><c> island</c><00:09:24.720><c> if</c><00:09:24.880><c> it</c><00:09:24.959><c> hasn't</c>
+
+00:09:25.269 --> 00:09:25.279 align:start position:0%
+the area of the island if it hasn't
+ 
+
+00:09:25.279 --> 00:09:27.190 align:start position:0%
+the area of the island if it hasn't
+already<00:09:25.600><c> been</c><00:09:25.839><c> visited</c><00:09:26.560><c> so</c><00:09:26.720><c> now</c><00:09:26.880><c> that</c><00:09:26.959><c> we've</c>
+
+00:09:27.190 --> 00:09:27.200 align:start position:0%
+already been visited so now that we've
+ 
+
+00:09:27.200 --> 00:09:28.790 align:start position:0%
+already been visited so now that we've
+written<00:09:27.440><c> our</c><00:09:27.519><c> dfs</c><00:09:28.000><c> we've</c><00:09:28.240><c> pretty</c><00:09:28.399><c> much</c><00:09:28.560><c> solved</c>
+
+00:09:28.790 --> 00:09:28.800 align:start position:0%
+written our dfs we've pretty much solved
+ 
+
+00:09:28.800 --> 00:09:30.389 align:start position:0%
+written our dfs we've pretty much solved
+the<00:09:28.959><c> entire</c><00:09:29.279><c> problem</c><00:09:29.760><c> all</c><00:09:29.920><c> we</c><00:09:30.000><c> really</c><00:09:30.240><c> have</c><00:09:30.320><c> to</c>
+
+00:09:30.389 --> 00:09:30.399 align:start position:0%
+the entire problem all we really have to
+ 
+
+00:09:30.399 --> 00:09:34.070 align:start position:0%
+the entire problem all we really have to
+do<00:09:30.640><c> is</c><00:09:30.800><c> iterate</c><00:09:31.360><c> over</c><00:09:32.080><c> uh</c><00:09:32.320><c> the</c><00:09:32.640><c> entire</c><00:09:33.600><c> grid</c>
+
+00:09:34.070 --> 00:09:34.080 align:start position:0%
+do is iterate over uh the entire grid
+ 
+
+00:09:34.080 --> 00:09:35.910 align:start position:0%
+do is iterate over uh the entire grid
+which<00:09:34.240><c> we</c><00:09:34.399><c> can</c><00:09:34.480><c> do</c><00:09:34.720><c> just</c><00:09:34.959><c> like</c><00:09:35.120><c> this</c><00:09:35.440><c> nested</c>
+
+00:09:35.910 --> 00:09:35.920 align:start position:0%
+which we can do just like this nested
+ 
+
+00:09:35.920 --> 00:09:38.310 align:start position:0%
+which we can do just like this nested
+for<00:09:36.240><c> loops</c><00:09:36.720><c> going</c><00:09:36.959><c> through</c><00:09:37.200><c> every</c><00:09:37.519><c> row</c><00:09:38.080><c> going</c>
+
+00:09:38.310 --> 00:09:38.320 align:start position:0%
+for loops going through every row going
+ 
+
+00:09:38.320 --> 00:09:41.430 align:start position:0%
+for loops going through every row going
+through<00:09:38.640><c> every</c><00:09:38.959><c> single</c><00:09:39.519><c> column</c><00:09:40.240><c> in</c><00:09:40.640><c> the</c><00:09:40.800><c> grid</c>
+
+00:09:41.430 --> 00:09:41.440 align:start position:0%
+through every single column in the grid
+ 
+
+00:09:41.440 --> 00:09:43.829 align:start position:0%
+through every single column in the grid
+and<00:09:41.760><c> actually</c><00:09:42.160><c> let's</c><00:09:42.560><c> maintain</c><00:09:43.360><c> a</c><00:09:43.519><c> single</c>
+
+00:09:43.829 --> 00:09:43.839 align:start position:0%
+and actually let's maintain a single
+ 
+
+00:09:43.839 --> 00:09:45.750 align:start position:0%
+and actually let's maintain a single
+variable<00:09:44.320><c> let's</c><00:09:44.480><c> call</c><00:09:44.720><c> it</c><00:09:44.959><c> area</c><00:09:45.360><c> or</c><00:09:45.519><c> you</c><00:09:45.600><c> could</c>
+
+00:09:45.750 --> 00:09:45.760 align:start position:0%
+variable let's call it area or you could
+ 
+
+00:09:45.760 --> 00:09:47.269 align:start position:0%
+variable let's call it area or you could
+call<00:09:45.920><c> it</c><00:09:46.000><c> the</c><00:09:46.160><c> result</c><00:09:46.640><c> initially</c><00:09:47.040><c> it's</c><00:09:47.200><c> going</c>
+
+00:09:47.269 --> 00:09:47.279 align:start position:0%
+call it the result initially it's going
+ 
+
+00:09:47.279 --> 00:09:49.110 align:start position:0%
+call it the result initially it's going
+to<00:09:47.360><c> be</c><00:09:47.440><c> set</c><00:09:47.600><c> to</c><00:09:47.760><c> zero</c><00:09:48.080><c> right</c><00:09:48.320><c> this</c><00:09:48.480><c> is</c><00:09:48.640><c> the</c><00:09:48.720><c> max</c>
+
+00:09:49.110 --> 00:09:49.120 align:start position:0%
+to be set to zero right this is the max
+ 
+
+00:09:49.120 --> 00:09:50.870 align:start position:0%
+to be set to zero right this is the max
+area<00:09:49.360><c> that</c><00:09:49.519><c> we're</c><00:09:49.680><c> maintaining</c>
+
+00:09:50.870 --> 00:09:50.880 align:start position:0%
+area that we're maintaining
+ 
+
+00:09:50.880 --> 00:09:53.350 align:start position:0%
+area that we're maintaining
+every<00:09:51.200><c> single</c><00:09:51.519><c> time</c><00:09:51.839><c> we</c><00:09:52.080><c> call</c><00:09:52.320><c> our</c><00:09:52.399><c> dfs</c><00:09:53.200><c> we</c>
+
+00:09:53.350 --> 00:09:53.360 align:start position:0%
+every single time we call our dfs we
+ 
+
+00:09:53.360 --> 00:09:55.590 align:start position:0%
+every single time we call our dfs we
+want<00:09:53.519><c> to</c><00:09:53.680><c> potentially</c><00:09:54.399><c> update</c><00:09:54.800><c> the</c><00:09:55.040><c> area</c><00:09:55.440><c> if</c>
+
+00:09:55.590 --> 00:09:55.600 align:start position:0%
+want to potentially update the area if
+ 
+
+00:09:55.600 --> 00:09:57.670 align:start position:0%
+want to potentially update the area if
+it's<00:09:55.839><c> greater</c><00:09:56.560><c> than</c><00:09:56.800><c> the</c><00:09:56.959><c> current</c><00:09:57.360><c> area</c><00:09:57.519><c> so</c>
+
+00:09:57.670 --> 00:09:57.680 align:start position:0%
+it's greater than the current area so
+ 
+
+00:09:57.680 --> 00:09:59.030 align:start position:0%
+it's greater than the current area so
+we're<00:09:57.839><c> going</c><00:09:57.920><c> to</c><00:09:58.000><c> take</c><00:09:58.160><c> the</c><00:09:58.320><c> max</c><00:09:58.720><c> of</c><00:09:58.880><c> the</c>
+
+00:09:59.030 --> 00:09:59.040 align:start position:0%
+we're going to take the max of the
+ 
+
+00:09:59.040 --> 00:10:01.110 align:start position:0%
+we're going to take the max of the
+current<00:09:59.440><c> area</c><00:09:59.839><c> and</c><00:10:00.000><c> the</c><00:10:00.160><c> max</c>
+
+00:10:01.110 --> 00:10:01.120 align:start position:0%
+current area and the max
+ 
+
+00:10:01.120 --> 00:10:02.949 align:start position:0%
+current area and the max
+of<00:10:01.279><c> the</c><00:10:01.440><c> dfs</c><00:10:02.079><c> call</c><00:10:02.320><c> that</c><00:10:02.480><c> we're</c><00:10:02.640><c> going</c><00:10:02.720><c> to</c><00:10:02.800><c> be</c>
+
+00:10:02.949 --> 00:10:02.959 align:start position:0%
+of the dfs call that we're going to be
+ 
+
+00:10:02.959 --> 00:10:05.430 align:start position:0%
+of the dfs call that we're going to be
+doing<00:10:03.360><c> on</c><00:10:03.920><c> the</c><00:10:04.079><c> row</c><00:10:04.399><c> column</c><00:10:04.800><c> pair</c><00:10:05.040><c> that</c><00:10:05.200><c> we're</c>
+
+00:10:05.430 --> 00:10:05.440 align:start position:0%
+doing on the row column pair that we're
+ 
+
+00:10:05.440 --> 00:10:08.150 align:start position:0%
+doing on the row column pair that we're
+currently<00:10:06.000><c> iterating</c><00:10:06.560><c> through</c><00:10:07.200><c> and</c><00:10:07.680><c> once</c>
+
+00:10:08.150 --> 00:10:08.160 align:start position:0%
+currently iterating through and once
+ 
+
+00:10:08.160 --> 00:10:10.550 align:start position:0%
+currently iterating through and once
+that<00:10:08.399><c> is</c><00:10:08.560><c> done</c><00:10:08.880><c> we</c><00:10:09.120><c> will</c><00:10:09.440><c> have</c><00:10:09.680><c> the</c><00:10:09.839><c> max</c><00:10:10.240><c> area</c>
+
+00:10:10.550 --> 00:10:10.560 align:start position:0%
+that is done we will have the max area
+ 
+
+00:10:10.560 --> 00:10:13.110 align:start position:0%
+that is done we will have the max area
+so<00:10:10.880><c> all</c><00:10:11.040><c> we</c><00:10:11.120><c> have</c><00:10:11.200><c> to</c><00:10:11.279><c> do</c><00:10:11.519><c> is</c><00:10:11.760><c> return</c><00:10:12.240><c> it</c><00:10:12.880><c> and</c>
+
+00:10:13.110 --> 00:10:13.120 align:start position:0%
+so all we have to do is return it and
+ 
+
+00:10:13.120 --> 00:10:15.350 align:start position:0%
+so all we have to do is return it and
+last<00:10:13.519><c> let's</c><00:10:13.839><c> run</c><00:10:14.160><c> this</c><00:10:14.399><c> code</c><00:10:14.800><c> and</c><00:10:14.959><c> make</c><00:10:15.120><c> sure</c>
+
+00:10:15.350 --> 00:10:15.360 align:start position:0%
+last let's run this code and make sure
+ 
+
+00:10:15.360 --> 00:10:18.150 align:start position:0%
+last let's run this code and make sure
+that<00:10:15.519><c> it</c><00:10:15.680><c> works</c><00:10:16.399><c> okay</c><00:10:16.720><c> i</c><00:10:16.800><c> was</c><00:10:16.959><c> very</c><00:10:17.200><c> dumb</c><00:10:17.839><c> uh</c><00:10:18.000><c> we</c>
+
+00:10:18.150 --> 00:10:18.160 align:start position:0%
+that it works okay i was very dumb uh we
+ 
+
+00:10:18.160 --> 00:10:20.470 align:start position:0%
+that it works okay i was very dumb uh we
+forgot<00:10:18.480><c> to</c><00:10:18.640><c> add</c><00:10:18.880><c> the</c><00:10:19.040><c> plus</c><00:10:19.440><c> sign</c><00:10:19.839><c> to</c><00:10:20.079><c> each</c><00:10:20.320><c> of</c>
+
+00:10:20.470 --> 00:10:20.480 align:start position:0%
+forgot to add the plus sign to each of
+ 
+
+00:10:20.480 --> 00:10:23.269 align:start position:0%
+forgot to add the plus sign to each of
+these<00:10:20.959><c> i</c><00:10:21.040><c> don't</c><00:10:21.200><c> know</c><00:10:21.440><c> how</c><00:10:21.600><c> i</c><00:10:21.760><c> forgot</c><00:10:22.160><c> that</c><00:10:22.560><c> but</c>
+
+00:10:23.269 --> 00:10:23.279 align:start position:0%
+these i don't know how i forgot that but
+ 
+
+00:10:23.279 --> 00:10:26.150 align:start position:0%
+these i don't know how i forgot that but
+let's<00:10:23.760><c> not</c><00:10:24.000><c> forget</c><00:10:24.320><c> it</c><00:10:24.480><c> so</c><00:10:25.120><c> yeah</c><00:10:25.440><c> so</c><00:10:25.760><c> in</c><00:10:25.920><c> case</c>
+
+00:10:26.150 --> 00:10:26.160 align:start position:0%
+let's not forget it so yeah so in case
+ 
+
+00:10:26.160 --> 00:10:27.590 align:start position:0%
+let's not forget it so yeah so in case
+it<00:10:26.240><c> wasn't</c><00:10:26.480><c> clear</c><00:10:26.800><c> all</c><00:10:26.959><c> we're</c><00:10:27.120><c> doing</c><00:10:27.360><c> is</c>
+
+00:10:27.590 --> 00:10:27.600 align:start position:0%
+it wasn't clear all we're doing is
+ 
+
+00:10:27.600 --> 00:10:30.069 align:start position:0%
+it wasn't clear all we're doing is
+adding<00:10:28.079><c> all</c><00:10:28.320><c> four</c><00:10:28.560><c> of</c><00:10:28.640><c> these</c><00:10:28.959><c> together</c><00:10:29.839><c> adding</c>
+
+00:10:30.069 --> 00:10:30.079 align:start position:0%
+adding all four of these together adding
+ 
+
+00:10:30.079 --> 00:10:31.829 align:start position:0%
+adding all four of these together adding
+it<00:10:30.160><c> to</c><00:10:30.320><c> the</c><00:10:30.399><c> one</c><00:10:30.720><c> as</c><00:10:30.800><c> well</c><00:10:30.959><c> so</c><00:10:31.200><c> now</c><00:10:31.360><c> let's</c><00:10:31.600><c> run</c>
+
+00:10:31.829 --> 00:10:31.839 align:start position:0%
+it to the one as well so now let's run
+ 
+
+00:10:31.839 --> 00:10:33.590 align:start position:0%
+it to the one as well so now let's run
+it<00:10:31.920><c> to</c><00:10:32.000><c> make</c><00:10:32.160><c> sure</c><00:10:32.320><c> that</c><00:10:32.480><c> it</c><00:10:32.560><c> works</c><00:10:33.200><c> and</c><00:10:33.360><c> as</c><00:10:33.519><c> you</c>
+
+00:10:33.590 --> 00:10:33.600 align:start position:0%
+it to make sure that it works and as you
+ 
+
+00:10:33.600 --> 00:10:35.190 align:start position:0%
+it to make sure that it works and as you
+can<00:10:33.760><c> see</c><00:10:33.920><c> on</c><00:10:34.000><c> the</c><00:10:34.079><c> left</c><00:10:34.399><c> yes</c><00:10:34.640><c> it</c><00:10:34.800><c> works</c><00:10:35.040><c> and</c>
+
+00:10:35.190 --> 00:10:35.200 align:start position:0%
+can see on the left yes it works and
+ 
+
+00:10:35.200 --> 00:10:36.790 align:start position:0%
+can see on the left yes it works and
+it's<00:10:35.360><c> about</c><00:10:35.600><c> as</c><00:10:35.760><c> efficient</c><00:10:36.160><c> as</c><00:10:36.320><c> we</c><00:10:36.399><c> can</c><00:10:36.640><c> get</c>
+
+00:10:36.790 --> 00:10:36.800 align:start position:0%
+it's about as efficient as we can get
+ 
+
+00:10:36.800 --> 00:10:38.550 align:start position:0%
+it's about as efficient as we can get
+for<00:10:36.959><c> this</c><00:10:37.200><c> problem</c><00:10:37.600><c> i</c><00:10:37.680><c> will</c><00:10:37.920><c> say</c><00:10:38.079><c> that</c><00:10:38.240><c> one</c>
+
+00:10:38.550 --> 00:10:38.560 align:start position:0%
+for this problem i will say that one
+ 
+
+00:10:38.560 --> 00:10:39.990 align:start position:0%
+for this problem i will say that one
+other<00:10:38.800><c> optimization</c><00:10:39.440><c> you</c><00:10:39.519><c> can</c><00:10:39.600><c> do</c><00:10:39.760><c> is</c><00:10:39.920><c> you</c>
+
+00:10:39.990 --> 00:10:40.000 align:start position:0%
+other optimization you can do is you
+ 
+
+00:10:40.000 --> 00:10:42.310 align:start position:0%
+other optimization you can do is you
+don't<00:10:40.240><c> actually</c><00:10:40.560><c> need</c><00:10:40.880><c> an</c><00:10:41.120><c> external</c><00:10:41.920><c> visit</c>
+
+00:10:42.310 --> 00:10:42.320 align:start position:0%
+don't actually need an external visit
+ 
+
+00:10:42.320 --> 00:10:44.069 align:start position:0%
+don't actually need an external visit
+set<00:10:42.480><c> you</c><00:10:42.640><c> can</c><00:10:42.720><c> actually</c><00:10:42.959><c> just</c><00:10:43.200><c> use</c><00:10:43.440><c> the</c><00:10:43.680><c> grid</c>
+
+00:10:44.069 --> 00:10:44.079 align:start position:0%
+set you can actually just use the grid
+ 
+
+00:10:44.079 --> 00:10:46.389 align:start position:0%
+set you can actually just use the grid
+itself<00:10:44.560><c> to</c><00:10:44.720><c> determine</c><00:10:45.120><c> if</c><00:10:45.279><c> you've</c><00:10:45.519><c> visited</c><00:10:46.240><c> a</c>
+
+00:10:46.389 --> 00:10:46.399 align:start position:0%
+itself to determine if you've visited a
+ 
+
+00:10:46.399 --> 00:10:49.509 align:start position:0%
+itself to determine if you've visited a
+position<00:10:46.959><c> or</c><00:10:47.279><c> not</c><00:10:47.839><c> but</c><00:10:48.399><c> we're</c><00:10:48.640><c> not</c><00:10:48.959><c> guaranteed</c>
+
+00:10:49.509 --> 00:10:49.519 align:start position:0%
+position or not but we're not guaranteed
+ 
+
+00:10:49.519 --> 00:10:53.509 align:start position:0%
+position or not but we're not guaranteed
+that<00:10:49.680><c> we</c><00:10:49.839><c> can</c><00:10:50.160><c> write</c><00:10:50.560><c> over</c><00:10:51.040><c> the</c><00:10:51.680><c> input</c><00:10:52.079><c> grid</c><00:10:52.880><c> so</c>
+
+00:10:53.509 --> 00:10:53.519 align:start position:0%
+that we can write over the input grid so
+ 
+
+00:10:53.519 --> 00:10:55.110 align:start position:0%
+that we can write over the input grid so
+i<00:10:53.600><c> don't</c><00:10:53.760><c> think</c><00:10:53.920><c> it's</c><00:10:54.079><c> a</c><00:10:54.160><c> big</c><00:10:54.320><c> deal</c><00:10:54.560><c> to</c><00:10:54.720><c> use</c><00:10:55.040><c> a</c>
+
+00:10:55.110 --> 00:10:55.120 align:start position:0%
+i don't think it's a big deal to use a
+ 
+
+00:10:55.120 --> 00:10:56.790 align:start position:0%
+i don't think it's a big deal to use a
+hash<00:10:55.360><c> set</c><00:10:55.600><c> i</c><00:10:55.680><c> guess</c><00:10:55.920><c> you</c><00:10:56.000><c> could</c><00:10:56.160><c> clarify</c><00:10:56.640><c> with</c>
+
+00:10:56.790 --> 00:10:56.800 align:start position:0%
+hash set i guess you could clarify with
+ 
+
+00:10:56.800 --> 00:10:58.710 align:start position:0%
+hash set i guess you could clarify with
+your<00:10:56.959><c> interviewer</c><00:10:57.519><c> if</c><00:10:57.680><c> you</c><00:10:57.760><c> really</c><00:10:58.079><c> want</c><00:10:58.320><c> to</c>
+
+00:10:58.710 --> 00:10:58.720 align:start position:0%
+your interviewer if you really want to
+ 
+
+00:10:58.720 --> 00:11:00.470 align:start position:0%
+your interviewer if you really want to
+but<00:10:58.880><c> it's</c><00:10:59.040><c> just</c><00:10:59.200><c> a</c><00:10:59.279><c> small</c><00:10:59.680><c> optimization</c><00:11:00.240><c> that</c>
+
+00:11:00.470 --> 00:11:00.480 align:start position:0%
+but it's just a small optimization that
+ 
+
+00:11:00.480 --> 00:11:02.389 align:start position:0%
+but it's just a small optimization that
+isn't<00:11:00.720><c> a</c><00:11:00.800><c> big</c><00:11:00.959><c> deal</c><00:11:01.279><c> in</c><00:11:01.360><c> my</c><00:11:01.519><c> opinion</c><00:11:02.079><c> but</c><00:11:02.320><c> i</c>
+
+00:11:02.389 --> 00:11:02.399 align:start position:0%
+isn't a big deal in my opinion but i
+ 
+
+00:11:02.399 --> 00:11:03.829 align:start position:0%
+isn't a big deal in my opinion but i
+really<00:11:02.560><c> hope</c><00:11:02.800><c> that</c><00:11:02.880><c> this</c><00:11:03.040><c> was</c><00:11:03.200><c> helpful</c><00:11:03.600><c> if</c><00:11:03.760><c> it</c>
+
+00:11:03.829 --> 00:11:03.839 align:start position:0%
+really hope that this was helpful if it
+ 
+
+00:11:03.839 --> 00:11:05.829 align:start position:0%
+really hope that this was helpful if it
+was<00:11:04.320><c> please</c><00:11:04.640><c> like</c><00:11:04.880><c> and</c><00:11:04.959><c> subscribe</c><00:11:05.519><c> it</c><00:11:05.600><c> really</c>
+
+00:11:05.829 --> 00:11:05.839 align:start position:0%
+was please like and subscribe it really
+ 
+
+00:11:05.839 --> 00:11:07.590 align:start position:0%
+was please like and subscribe it really
+supports<00:11:06.240><c> the</c><00:11:06.399><c> channel</c><00:11:06.720><c> a</c><00:11:06.880><c> lot</c><00:11:07.120><c> consider</c>
+
+00:11:07.590 --> 00:11:07.600 align:start position:0%
+supports the channel a lot consider
+ 
+
+00:11:07.600 --> 00:11:09.190 align:start position:0%
+supports the channel a lot consider
+checking<00:11:07.920><c> out</c><00:11:08.000><c> my</c><00:11:08.160><c> patreon</c><00:11:08.720><c> if</c><00:11:08.880><c> you'd</c><00:11:08.959><c> like</c><00:11:09.120><c> to</c>
+
+00:11:09.190 --> 00:11:09.200 align:start position:0%
+checking out my patreon if you'd like to
+ 
+
+00:11:09.200 --> 00:11:10.389 align:start position:0%
+checking out my patreon if you'd like to
+further<00:11:09.440><c> support</c><00:11:09.760><c> the</c><00:11:09.920><c> channel</c><00:11:10.240><c> and</c>
+
+00:11:10.389 --> 00:11:10.399 align:start position:0%
+further support the channel and
+ 
+
+00:11:10.399 --> 00:11:12.069 align:start position:0%
+further support the channel and
+hopefully<00:11:10.880><c> i'll</c><00:11:11.040><c> see</c><00:11:11.200><c> you</c><00:11:11.360><c> pretty</c><00:11:11.600><c> soon</c>
+
+00:11:12.069 --> 00:11:12.079 align:start position:0%
+hopefully i'll see you pretty soon
+ 
+
+00:11:12.079 --> 00:11:15.120 align:start position:0%
+hopefully i'll see you pretty soon
+thanks<00:11:12.320><c> for</c><00:11:12.480><c> watching</c>
+

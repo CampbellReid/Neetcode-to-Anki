@@ -1,0 +1,2448 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.589 align:start position:0%
+ 
+hey<00:00:00.240><c> everyone</c><00:00:00.640><c> welcome</c><00:00:01.040><c> back</c><00:00:01.280><c> and</c><00:00:01.360><c> let's</c>
+
+00:00:01.589 --> 00:00:01.599 align:start position:0%
+hey everyone welcome back and let's
+ 
+
+00:00:01.599 --> 00:00:03.189 align:start position:0%
+hey everyone welcome back and let's
+write<00:00:01.839><c> some</c><00:00:02.000><c> more</c><00:00:02.240><c> neat</c><00:00:02.480><c> code</c><00:00:02.720><c> today</c>
+
+00:00:03.189 --> 00:00:03.199 align:start position:0%
+write some more neat code today
+ 
+
+00:00:03.199 --> 00:00:06.070 align:start position:0%
+write some more neat code today
+so<00:00:03.360><c> today</c><00:00:03.760><c> let's</c><00:00:04.080><c> solve</c><00:00:04.640><c> copy</c><00:00:05.279><c> list</c><00:00:05.680><c> with</c><00:00:05.920><c> a</c>
+
+00:00:06.070 --> 00:00:06.080 align:start position:0%
+so today let's solve copy list with a
+ 
+
+00:00:06.080 --> 00:00:08.070 align:start position:0%
+so today let's solve copy list with a
+random<00:00:06.560><c> pointer</c><00:00:06.960><c> so</c><00:00:07.120><c> we're</c><00:00:07.279><c> given</c><00:00:07.600><c> a</c><00:00:07.759><c> linked</c>
+
+00:00:08.070 --> 00:00:08.080 align:start position:0%
+random pointer so we're given a linked
+ 
+
+00:00:08.080 --> 00:00:08.710 align:start position:0%
+random pointer so we're given a linked
+list
+
+00:00:08.710 --> 00:00:08.720 align:start position:0%
+list
+ 
+
+00:00:08.720 --> 00:00:11.509 align:start position:0%
+list
+and<00:00:08.960><c> so</c><00:00:09.120><c> this</c><00:00:09.360><c> is</c><00:00:09.440><c> a</c><00:00:09.599><c> pretty</c><00:00:10.080><c> big</c><00:00:10.719><c> description</c>
+
+00:00:11.509 --> 00:00:11.519 align:start position:0%
+and so this is a pretty big description
+ 
+
+00:00:11.519 --> 00:00:13.190 align:start position:0%
+and so this is a pretty big description
+of<00:00:11.679><c> the</c><00:00:11.920><c> problem</c><00:00:12.240><c> but</c><00:00:12.400><c> it's</c><00:00:12.559><c> actually</c><00:00:12.880><c> more</c>
+
+00:00:13.190 --> 00:00:13.200 align:start position:0%
+of the problem but it's actually more
+ 
+
+00:00:13.200 --> 00:00:14.470 align:start position:0%
+of the problem but it's actually more
+simple<00:00:13.599><c> than</c><00:00:13.840><c> that</c><00:00:14.080><c> so</c>
+
+00:00:14.470 --> 00:00:14.480 align:start position:0%
+simple than that so
+ 
+
+00:00:14.480 --> 00:00:16.390 align:start position:0%
+simple than that so
+basically<00:00:15.280><c> you</c><00:00:15.440><c> can</c><00:00:15.599><c> see</c><00:00:15.759><c> down</c><00:00:16.080><c> in</c><00:00:16.160><c> the</c>
+
+00:00:16.390 --> 00:00:16.400 align:start position:0%
+basically you can see down in the
+ 
+
+00:00:16.400 --> 00:00:17.990 align:start position:0%
+basically you can see down in the
+example<00:00:16.880><c> this</c><00:00:17.039><c> is</c><00:00:17.199><c> what</c><00:00:17.359><c> you</c><00:00:17.520><c> should</c><00:00:17.760><c> pay</c>
+
+00:00:17.990 --> 00:00:18.000 align:start position:0%
+example this is what you should pay
+ 
+
+00:00:18.000 --> 00:00:18.870 align:start position:0%
+example this is what you should pay
+attention<00:00:18.400><c> to</c>
+
+00:00:18.870 --> 00:00:18.880 align:start position:0%
+attention to
+ 
+
+00:00:18.880 --> 00:00:21.109 align:start position:0%
+attention to
+we<00:00:19.119><c> have</c><00:00:19.359><c> a</c><00:00:19.520><c> pretty</c><00:00:19.920><c> ordinary</c><00:00:20.480><c> linked</c><00:00:20.800><c> list</c>
+
+00:00:21.109 --> 00:00:21.119 align:start position:0%
+we have a pretty ordinary linked list
+ 
+
+00:00:21.119 --> 00:00:22.950 align:start position:0%
+we have a pretty ordinary linked list
+right<00:00:21.279><c> so</c><00:00:21.439><c> this</c><00:00:21.600><c> is</c><00:00:21.760><c> a</c><00:00:21.920><c> node</c><00:00:22.320><c> and</c><00:00:22.480><c> you</c><00:00:22.560><c> can</c><00:00:22.720><c> see</c>
+
+00:00:22.950 --> 00:00:22.960 align:start position:0%
+right so this is a node and you can see
+ 
+
+00:00:22.960 --> 00:00:25.269 align:start position:0%
+right so this is a node and you can see
+each<00:00:23.199><c> node</c><00:00:23.519><c> has</c><00:00:23.760><c> a</c><00:00:24.000><c> next</c><00:00:24.320><c> pointer</c><00:00:24.720><c> right</c><00:00:24.960><c> so</c><00:00:25.199><c> it</c>
+
+00:00:25.269 --> 00:00:25.279 align:start position:0%
+each node has a next pointer right so it
+ 
+
+00:00:25.279 --> 00:00:27.269 align:start position:0%
+each node has a next pointer right so it
+just<00:00:25.439><c> keeps</c><00:00:25.760><c> going</c><00:00:26.000><c> it's</c><00:00:26.240><c> singly</c><00:00:26.640><c> linked</c><00:00:26.960><c> list</c>
+
+00:00:27.269 --> 00:00:27.279 align:start position:0%
+just keeps going it's singly linked list
+ 
+
+00:00:27.279 --> 00:00:28.470 align:start position:0%
+just keeps going it's singly linked list
+for<00:00:27.439><c> the</c><00:00:27.519><c> most</c><00:00:27.840><c> part</c><00:00:28.080><c> right</c>
+
+00:00:28.470 --> 00:00:28.480 align:start position:0%
+for the most part right
+ 
+
+00:00:28.480 --> 00:00:30.150 align:start position:0%
+for the most part right
+and<00:00:28.560><c> then</c><00:00:28.720><c> we</c><00:00:28.800><c> get</c><00:00:28.960><c> to</c><00:00:29.119><c> the</c><00:00:29.359><c> end</c><00:00:29.679><c> right</c><00:00:29.840><c> so</c><00:00:30.000><c> this</c>
+
+00:00:30.150 --> 00:00:30.160 align:start position:0%
+and then we get to the end right so this
+ 
+
+00:00:30.160 --> 00:00:31.589 align:start position:0%
+and then we get to the end right so this
+is<00:00:30.240><c> the</c><00:00:30.480><c> end</c><00:00:30.640><c> of</c><00:00:30.720><c> the</c><00:00:30.880><c> list</c>
+
+00:00:31.589 --> 00:00:31.599 align:start position:0%
+is the end of the list
+ 
+
+00:00:31.599 --> 00:00:34.389 align:start position:0%
+is the end of the list
+this<00:00:31.840><c> is</c><00:00:31.920><c> the</c><00:00:32.160><c> start</c><00:00:32.960><c> the</c><00:00:33.200><c> only</c><00:00:33.920><c> difference</c>
+
+00:00:34.389 --> 00:00:34.399 align:start position:0%
+this is the start the only difference
+ 
+
+00:00:34.399 --> 00:00:36.150 align:start position:0%
+this is the start the only difference
+between<00:00:34.719><c> this</c><00:00:34.960><c> and</c><00:00:35.040><c> a</c><00:00:35.120><c> regular</c><00:00:35.600><c> linked</c><00:00:35.840><c> list</c>
+
+00:00:36.150 --> 00:00:36.160 align:start position:0%
+between this and a regular linked list
+ 
+
+00:00:36.160 --> 00:00:36.630 align:start position:0%
+between this and a regular linked list
+is<00:00:36.320><c> that</c>
+
+00:00:36.630 --> 00:00:36.640 align:start position:0%
+is that
+ 
+
+00:00:36.640 --> 00:00:39.670 align:start position:0%
+is that
+every<00:00:36.960><c> single</c><00:00:37.280><c> node</c><00:00:37.760><c> has</c><00:00:38.160><c> one</c><00:00:38.640><c> extra</c><00:00:39.280><c> pointer</c>
+
+00:00:39.670 --> 00:00:39.680 align:start position:0%
+every single node has one extra pointer
+ 
+
+00:00:39.680 --> 00:00:40.310 align:start position:0%
+every single node has one extra pointer
+it<00:00:39.840><c> has</c><00:00:40.000><c> a</c>
+
+00:00:40.310 --> 00:00:40.320 align:start position:0%
+it has a
+ 
+
+00:00:40.320 --> 00:00:42.389 align:start position:0%
+it has a
+random<00:00:41.040><c> pointer</c><00:00:41.440><c> so</c><00:00:41.600><c> you</c><00:00:41.680><c> can</c><00:00:41.760><c> see</c><00:00:41.920><c> that</c><00:00:42.079><c> the</c>
+
+00:00:42.389 --> 00:00:42.399 align:start position:0%
+random pointer so you can see that the
+ 
+
+00:00:42.399 --> 00:00:43.350 align:start position:0%
+random pointer so you can see that the
+first<00:00:42.800><c> node</c>
+
+00:00:43.350 --> 00:00:43.360 align:start position:0%
+first node
+ 
+
+00:00:43.360 --> 00:00:46.389 align:start position:0%
+first node
+has<00:00:43.520><c> a</c><00:00:43.920><c> random</c><00:00:44.640><c> pointer</c><00:00:45.280><c> going</c><00:00:45.680><c> all</c><00:00:45.920><c> the</c><00:00:46.000><c> way</c>
+
+00:00:46.389 --> 00:00:46.399 align:start position:0%
+has a random pointer going all the way
+ 
+
+00:00:46.399 --> 00:00:47.029 align:start position:0%
+has a random pointer going all the way
+to
+
+00:00:47.029 --> 00:00:47.039 align:start position:0%
+to
+ 
+
+00:00:47.039 --> 00:00:49.190 align:start position:0%
+to
+null<00:00:47.520><c> right</c><00:00:47.920><c> you</c><00:00:48.079><c> can</c><00:00:48.239><c> see</c><00:00:48.399><c> that</c><00:00:48.559><c> the</c><00:00:48.800><c> second</c>
+
+00:00:49.190 --> 00:00:49.200 align:start position:0%
+null right you can see that the second
+ 
+
+00:00:49.200 --> 00:00:51.189 align:start position:0%
+null right you can see that the second
+node<00:00:49.520><c> has</c><00:00:49.760><c> a</c><00:00:49.920><c> random</c><00:00:50.320><c> pointer</c><00:00:50.640><c> going</c><00:00:50.960><c> all</c><00:00:51.120><c> the</c>
+
+00:00:51.189 --> 00:00:51.199 align:start position:0%
+node has a random pointer going all the
+ 
+
+00:00:51.199 --> 00:00:53.110 align:start position:0%
+node has a random pointer going all the
+way<00:00:51.440><c> back</c><00:00:51.680><c> to</c><00:00:51.840><c> the</c><00:00:52.079><c> first</c><00:00:52.480><c> node</c>
+
+00:00:53.110 --> 00:00:53.120 align:start position:0%
+way back to the first node
+ 
+
+00:00:53.120 --> 00:00:55.590 align:start position:0%
+way back to the first node
+you<00:00:53.280><c> can</c><00:00:53.360><c> see</c><00:00:53.520><c> the</c><00:00:53.920><c> third</c><00:00:54.559><c> node</c><00:00:54.879><c> has</c><00:00:55.039><c> a</c><00:00:55.199><c> random</c>
+
+00:00:55.590 --> 00:00:55.600 align:start position:0%
+you can see the third node has a random
+ 
+
+00:00:55.600 --> 00:00:56.310 align:start position:0%
+you can see the third node has a random
+pointer
+
+00:00:56.310 --> 00:00:56.320 align:start position:0%
+pointer
+ 
+
+00:00:56.320 --> 00:00:59.270 align:start position:0%
+pointer
+going<00:00:56.719><c> all</c><00:00:56.960><c> the</c><00:00:57.120><c> way</c><00:00:57.600><c> to</c><00:00:57.920><c> the</c><00:00:58.239><c> last</c><00:00:58.640><c> node</c><00:00:58.960><c> so</c>
+
+00:00:59.270 --> 00:00:59.280 align:start position:0%
+going all the way to the last node so
+ 
+
+00:00:59.280 --> 00:01:00.630 align:start position:0%
+going all the way to the last node so
+basically<00:00:59.760><c> what</c><00:00:59.920><c> the</c><00:01:00.160><c> deal</c>
+
+00:01:00.630 --> 00:01:00.640 align:start position:0%
+basically what the deal
+ 
+
+00:01:00.640 --> 00:01:03.510 align:start position:0%
+basically what the deal
+is<00:01:00.879><c> is</c><00:01:01.039><c> that</c><00:01:01.359><c> every</c><00:01:01.760><c> single</c><00:01:02.320><c> node</c><00:01:03.039><c> has</c><00:01:03.359><c> a</c>
+
+00:01:03.510 --> 00:01:03.520 align:start position:0%
+is is that every single node has a
+ 
+
+00:01:03.520 --> 00:01:05.350 align:start position:0%
+is is that every single node has a
+random<00:01:03.920><c> pointer</c><00:01:04.320><c> and</c><00:01:04.400><c> that</c><00:01:04.559><c> pointer</c><00:01:04.960><c> could</c><00:01:05.119><c> be</c>
+
+00:01:05.350 --> 00:01:05.360 align:start position:0%
+random pointer and that pointer could be
+ 
+
+00:01:05.360 --> 00:01:05.830 align:start position:0%
+random pointer and that pointer could be
+pointing
+
+00:01:05.830 --> 00:01:05.840 align:start position:0%
+pointing
+ 
+
+00:01:05.840 --> 00:01:07.590 align:start position:0%
+pointing
+anywhere<00:01:06.320><c> right</c><00:01:06.479><c> it</c><00:01:06.560><c> could</c><00:01:06.720><c> be</c><00:01:06.799><c> at</c><00:01:07.040><c> null</c><00:01:07.520><c> it</c>
+
+00:01:07.590 --> 00:01:07.600 align:start position:0%
+anywhere right it could be at null it
+ 
+
+00:01:07.600 --> 00:01:09.109 align:start position:0%
+anywhere right it could be at null it
+could<00:01:07.760><c> be</c><00:01:07.920><c> at</c><00:01:08.080><c> some</c><00:01:08.320><c> random</c>
+
+00:01:09.109 --> 00:01:09.119 align:start position:0%
+could be at some random
+ 
+
+00:01:09.119 --> 00:01:11.830 align:start position:0%
+could be at some random
+node<00:01:09.680><c> inside</c><00:01:10.320><c> of</c><00:01:10.400><c> the</c><00:01:10.640><c> list</c><00:01:11.280><c> it</c><00:01:11.360><c> could</c><00:01:11.520><c> be</c><00:01:11.600><c> at</c>
+
+00:01:11.830 --> 00:01:11.840 align:start position:0%
+node inside of the list it could be at
+ 
+
+00:01:11.840 --> 00:01:13.030 align:start position:0%
+node inside of the list it could be at
+any<00:01:12.000><c> of</c><00:01:12.159><c> those</c><00:01:12.479><c> nodes</c>
+
+00:01:13.030 --> 00:01:13.040 align:start position:0%
+any of those nodes
+ 
+
+00:01:13.040 --> 00:01:14.789 align:start position:0%
+any of those nodes
+so<00:01:13.200><c> it</c><00:01:13.360><c> has</c><00:01:13.520><c> a</c><00:01:13.600><c> random</c><00:01:14.000><c> pointer</c><00:01:14.240><c> but</c><00:01:14.400><c> it</c><00:01:14.560><c> also</c>
+
+00:01:14.789 --> 00:01:14.799 align:start position:0%
+so it has a random pointer but it also
+ 
+
+00:01:14.799 --> 00:01:16.469 align:start position:0%
+so it has a random pointer but it also
+has<00:01:15.040><c> a</c><00:01:15.360><c> next</c><00:01:15.680><c> pointer</c><00:01:16.080><c> which</c>
+
+00:01:16.469 --> 00:01:16.479 align:start position:0%
+has a next pointer which
+ 
+
+00:01:16.479 --> 00:01:18.230 align:start position:0%
+has a next pointer which
+is<00:01:16.799><c> as</c><00:01:16.960><c> you</c><00:01:17.040><c> would</c><00:01:17.280><c> expect</c><00:01:17.680><c> just</c><00:01:17.840><c> pointing</c><00:01:18.159><c> at</c>
+
+00:01:18.230 --> 00:01:18.240 align:start position:0%
+is as you would expect just pointing at
+ 
+
+00:01:18.240 --> 00:01:20.789 align:start position:0%
+is as you would expect just pointing at
+the<00:01:18.400><c> next</c><00:01:18.799><c> node</c><00:01:19.360><c> all</c><00:01:19.600><c> we</c><00:01:19.840><c> really</c><00:01:20.080><c> need</c><00:01:20.240><c> to</c><00:01:20.479><c> do</c>
+
+00:01:20.789 --> 00:01:20.799 align:start position:0%
+the next node all we really need to do
+ 
+
+00:01:20.799 --> 00:01:22.950 align:start position:0%
+the next node all we really need to do
+with<00:01:20.960><c> this</c><00:01:21.280><c> linked</c><00:01:21.600><c> list</c><00:01:21.840><c> is</c><00:01:22.000><c> create</c><00:01:22.320><c> a</c><00:01:22.560><c> copy</c>
+
+00:01:22.950 --> 00:01:22.960 align:start position:0%
+with this linked list is create a copy
+ 
+
+00:01:22.960 --> 00:01:23.429 align:start position:0%
+with this linked list is create a copy
+of<00:01:23.119><c> it</c>
+
+00:01:23.429 --> 00:01:23.439 align:start position:0%
+of it
+ 
+
+00:01:23.439 --> 00:01:26.469 align:start position:0%
+of it
+by<00:01:23.600><c> that</c><00:01:23.840><c> they</c><00:01:24.080><c> mean</c><00:01:24.320><c> a</c><00:01:24.560><c> deep</c><00:01:25.119><c> copy</c><00:01:25.520><c> so</c><00:01:26.159><c> really</c>
+
+00:01:26.469 --> 00:01:26.479 align:start position:0%
+by that they mean a deep copy so really
+ 
+
+00:01:26.479 --> 00:01:27.910 align:start position:0%
+by that they mean a deep copy so really
+what<00:01:26.640><c> we're</c><00:01:26.799><c> doing</c><00:01:27.040><c> is</c><00:01:27.119><c> for</c><00:01:27.280><c> every</c><00:01:27.520><c> single</c>
+
+00:01:27.910 --> 00:01:27.920 align:start position:0%
+what we're doing is for every single
+ 
+
+00:01:27.920 --> 00:01:28.310 align:start position:0%
+what we're doing is for every single
+node
+
+00:01:28.310 --> 00:01:28.320 align:start position:0%
+node
+ 
+
+00:01:28.320 --> 00:01:30.630 align:start position:0%
+node
+we're<00:01:28.560><c> allocating</c><00:01:29.439><c> new</c><00:01:30.000><c> memory</c><00:01:30.479><c> we're</c>
+
+00:01:30.630 --> 00:01:30.640 align:start position:0%
+we're allocating new memory we're
+ 
+
+00:01:30.640 --> 00:01:31.910 align:start position:0%
+we're allocating new memory we're
+actually<00:01:30.960><c> creating</c><00:01:31.520><c> a</c>
+
+00:01:31.910 --> 00:01:31.920 align:start position:0%
+actually creating a
+ 
+
+00:01:31.920 --> 00:01:34.550 align:start position:0%
+actually creating a
+new<00:01:32.320><c> node</c><00:01:32.720><c> right</c><00:01:33.439><c> and</c><00:01:33.600><c> so</c><00:01:33.920><c> you</c><00:01:34.079><c> can</c><00:01:34.240><c> see</c><00:01:34.400><c> we</c>
+
+00:01:34.550 --> 00:01:34.560 align:start position:0%
+new node right and so you can see we
+ 
+
+00:01:34.560 --> 00:01:35.270 align:start position:0%
+new node right and so you can see we
+have<00:01:34.799><c> five</c>
+
+00:01:35.270 --> 00:01:35.280 align:start position:0%
+have five
+ 
+
+00:01:35.280 --> 00:01:37.030 align:start position:0%
+have five
+nodes<00:01:35.759><c> in</c><00:01:35.920><c> the</c><00:01:36.159><c> input</c><00:01:36.479><c> so</c><00:01:36.640><c> we're</c><00:01:36.720><c> gonna</c><00:01:36.880><c> have</c>
+
+00:01:37.030 --> 00:01:37.040 align:start position:0%
+nodes in the input so we're gonna have
+ 
+
+00:01:37.040 --> 00:01:38.789 align:start position:0%
+nodes in the input so we're gonna have
+to<00:01:37.119><c> create</c><00:01:37.759><c> five</c><00:01:38.159><c> nodes</c>
+
+00:01:38.789 --> 00:01:38.799 align:start position:0%
+to create five nodes
+ 
+
+00:01:38.799 --> 00:01:41.429 align:start position:0%
+to create five nodes
+in<00:01:39.119><c> the</c><00:01:39.439><c> output</c><00:01:40.000><c> right</c><00:01:40.479><c> so</c><00:01:40.799><c> that's</c><00:01:41.119><c> pretty</c>
+
+00:01:41.429 --> 00:01:41.439 align:start position:0%
+in the output right so that's pretty
+ 
+
+00:01:41.439 --> 00:01:43.190 align:start position:0%
+in the output right so that's pretty
+straightforward<00:01:42.320><c> right</c><00:01:42.560><c> the</c><00:01:42.799><c> only</c>
+
+00:01:43.190 --> 00:01:43.200 align:start position:0%
+straightforward right the only
+ 
+
+00:01:43.200 --> 00:01:43.990 align:start position:0%
+straightforward right the only
+difficulty
+
+00:01:43.990 --> 00:01:44.000 align:start position:0%
+difficulty
+ 
+
+00:01:44.000 --> 00:01:46.710 align:start position:0%
+difficulty
+comes<00:01:44.320><c> though</c><00:01:44.799><c> is</c><00:01:45.040><c> from</c><00:01:45.360><c> the</c><00:01:45.680><c> random</c><00:01:46.320><c> pointer</c>
+
+00:01:46.710 --> 00:01:46.720 align:start position:0%
+comes though is from the random pointer
+ 
+
+00:01:46.720 --> 00:01:47.190 align:start position:0%
+comes though is from the random pointer
+right
+
+00:01:47.190 --> 00:01:47.200 align:start position:0%
+right
+ 
+
+00:01:47.200 --> 00:01:49.350 align:start position:0%
+right
+clearly<00:01:47.759><c> these</c><00:01:48.079><c> nodes</c><00:01:48.399><c> are</c><00:01:48.479><c> going</c><00:01:48.560><c> to</c><00:01:48.640><c> be</c>
+
+00:01:49.350 --> 00:01:49.360 align:start position:0%
+clearly these nodes are going to be
+ 
+
+00:01:49.360 --> 00:01:50.310 align:start position:0%
+clearly these nodes are going to be
+linked<00:01:49.680><c> together</c>
+
+00:01:50.310 --> 00:01:50.320 align:start position:0%
+linked together
+ 
+
+00:01:50.320 --> 00:01:53.190 align:start position:0%
+linked together
+right<00:01:50.880><c> in</c><00:01:51.119><c> linear</c><00:01:51.600><c> fashion</c><00:01:52.159><c> but</c><00:01:52.399><c> we</c><00:01:52.560><c> also</c><00:01:52.880><c> have</c>
+
+00:01:53.190 --> 00:01:53.200 align:start position:0%
+right in linear fashion but we also have
+ 
+
+00:01:53.200 --> 00:01:53.990 align:start position:0%
+right in linear fashion but we also have
+random<00:01:53.600><c> pointers</c>
+
+00:01:53.990 --> 00:01:54.000 align:start position:0%
+random pointers
+ 
+
+00:01:54.000 --> 00:01:55.990 align:start position:0%
+random pointers
+right<00:01:54.240><c> so</c><00:01:54.479><c> for</c><00:01:54.640><c> this</c><00:01:54.960><c> node</c><00:01:55.360><c> we</c><00:01:55.520><c> would</c><00:01:55.680><c> have</c><00:01:55.840><c> to</c>
+
+00:01:55.990 --> 00:01:56.000 align:start position:0%
+right so for this node we would have to
+ 
+
+00:01:56.000 --> 00:01:58.550 align:start position:0%
+right so for this node we would have to
+create<00:01:56.640><c> a</c><00:01:56.799><c> random</c><00:01:57.200><c> pointer</c><00:01:57.520><c> pointing</c><00:01:57.840><c> at</c><00:01:58.079><c> null</c>
+
+00:01:58.550 --> 00:01:58.560 align:start position:0%
+create a random pointer pointing at null
+ 
+
+00:01:58.560 --> 00:02:00.069 align:start position:0%
+create a random pointer pointing at null
+right<00:01:58.719><c> which</c><00:01:58.960><c> is</c><00:01:59.119><c> pretty</c><00:01:59.360><c> easy</c><00:01:59.680><c> that's</c><00:01:59.840><c> what</c>
+
+00:02:00.069 --> 00:02:00.079 align:start position:0%
+right which is pretty easy that's what
+ 
+
+00:02:00.079 --> 00:02:02.149 align:start position:0%
+right which is pretty easy that's what
+was<00:02:00.399><c> happening</c><00:02:00.799><c> with</c><00:02:00.960><c> the</c><00:02:01.040><c> first</c><00:02:01.439><c> node</c>
+
+00:02:02.149 --> 00:02:02.159 align:start position:0%
+was happening with the first node
+ 
+
+00:02:02.159 --> 00:02:04.069 align:start position:0%
+was happening with the first node
+but<00:02:02.399><c> for</c><00:02:02.560><c> the</c><00:02:02.799><c> second</c><00:02:03.119><c> node</c><00:02:03.439><c> right</c><00:02:03.680><c> we'd</c><00:02:03.920><c> have</c>
+
+00:02:04.069 --> 00:02:04.079 align:start position:0%
+but for the second node right we'd have
+ 
+
+00:02:04.079 --> 00:02:05.830 align:start position:0%
+but for the second node right we'd have
+a<00:02:04.240><c> random</c><00:02:04.640><c> pointer</c><00:02:05.040><c> going</c><00:02:05.360><c> back</c>
+
+00:02:05.830 --> 00:02:05.840 align:start position:0%
+a random pointer going back
+ 
+
+00:02:05.840 --> 00:02:08.389 align:start position:0%
+a random pointer going back
+to<00:02:06.000><c> the</c><00:02:06.320><c> first</c><00:02:06.719><c> node</c><00:02:07.280><c> and</c><00:02:07.439><c> for</c><00:02:07.600><c> the</c><00:02:07.840><c> third</c><00:02:08.160><c> node</c>
+
+00:02:08.389 --> 00:02:08.399 align:start position:0%
+to the first node and for the third node
+ 
+
+00:02:08.399 --> 00:02:10.710 align:start position:0%
+to the first node and for the third node
+we'd<00:02:08.640><c> have</c><00:02:08.720><c> a</c><00:02:08.879><c> random</c><00:02:09.280><c> pointer</c><00:02:09.679><c> going</c><00:02:10.080><c> to</c><00:02:10.319><c> the</c>
+
+00:02:10.710 --> 00:02:10.720 align:start position:0%
+we'd have a random pointer going to the
+ 
+
+00:02:10.720 --> 00:02:14.550 align:start position:0%
+we'd have a random pointer going to the
+last<00:02:11.440><c> node</c><00:02:12.080><c> so</c><00:02:12.800><c> it's</c><00:02:13.040><c> not</c><00:02:13.440><c> too</c><00:02:13.760><c> bad</c><00:02:14.080><c> right</c>
+
+00:02:14.550 --> 00:02:14.560 align:start position:0%
+last node so it's not too bad right
+ 
+
+00:02:14.560 --> 00:02:17.270 align:start position:0%
+last node so it's not too bad right
+the<00:02:14.879><c> only</c><00:02:15.440><c> difficulty</c><00:02:16.239><c> though</c><00:02:16.560><c> with</c><00:02:16.879><c> these</c>
+
+00:02:17.270 --> 00:02:17.280 align:start position:0%
+the only difficulty though with these
+ 
+
+00:02:17.280 --> 00:02:18.470 align:start position:0%
+the only difficulty though with these
+random<00:02:17.840><c> pointers</c>
+
+00:02:18.470 --> 00:02:18.480 align:start position:0%
+random pointers
+ 
+
+00:02:18.480 --> 00:02:21.110 align:start position:0%
+random pointers
+is<00:02:18.959><c> that</c><00:02:19.440><c> take</c><00:02:19.680><c> the</c><00:02:20.000><c> third</c><00:02:20.239><c> node</c><00:02:20.480><c> for</c><00:02:20.640><c> example</c>
+
+00:02:21.110 --> 00:02:21.120 align:start position:0%
+is that take the third node for example
+ 
+
+00:02:21.120 --> 00:02:21.750 align:start position:0%
+is that take the third node for example
+right
+
+00:02:21.750 --> 00:02:21.760 align:start position:0%
+right
+ 
+
+00:02:21.760 --> 00:02:23.910 align:start position:0%
+right
+let's<00:02:22.000><c> say</c><00:02:22.400><c> we</c><00:02:22.640><c> start</c><00:02:22.959><c> cloning</c><00:02:23.440><c> the</c><00:02:23.599><c> node</c>
+
+00:02:23.910 --> 00:02:23.920 align:start position:0%
+let's say we start cloning the node
+ 
+
+00:02:23.920 --> 00:02:24.949 align:start position:0%
+let's say we start cloning the node
+right<00:02:24.080><c> we</c><00:02:24.239><c> create</c><00:02:24.560><c> the</c>
+
+00:02:24.949 --> 00:02:24.959 align:start position:0%
+right we create the
+ 
+
+00:02:24.959 --> 00:02:27.510 align:start position:0%
+right we create the
+a<00:02:25.280><c> clone</c><00:02:25.599><c> of</c><00:02:25.680><c> the</c><00:02:25.760><c> first</c><00:02:26.160><c> node</c><00:02:26.879><c> then</c><00:02:27.120><c> we</c><00:02:27.280><c> create</c>
+
+00:02:27.510 --> 00:02:27.520 align:start position:0%
+a clone of the first node then we create
+ 
+
+00:02:27.520 --> 00:02:29.110 align:start position:0%
+a clone of the first node then we create
+a<00:02:27.599><c> clone</c><00:02:27.920><c> of</c><00:02:28.000><c> the</c><00:02:28.160><c> second</c><00:02:28.480><c> node</c><00:02:28.720><c> then</c><00:02:28.959><c> we</c>
+
+00:02:29.110 --> 00:02:29.120 align:start position:0%
+a clone of the second node then we
+ 
+
+00:02:29.120 --> 00:02:31.190 align:start position:0%
+a clone of the second node then we
+create<00:02:29.360><c> a</c><00:02:29.440><c> clone</c><00:02:29.840><c> of</c><00:02:30.080><c> the</c><00:02:30.239><c> third</c><00:02:30.640><c> node</c>
+
+00:02:31.190 --> 00:02:31.200 align:start position:0%
+create a clone of the third node
+ 
+
+00:02:31.200 --> 00:02:33.589 align:start position:0%
+create a clone of the third node
+and<00:02:31.680><c> you</c><00:02:31.840><c> know</c><00:02:31.920><c> the</c><00:02:32.160><c> random</c><00:02:32.560><c> pointers</c><00:02:33.440><c> this</c>
+
+00:02:33.589 --> 00:02:33.599 align:start position:0%
+and you know the random pointers this
+ 
+
+00:02:33.599 --> 00:02:34.949 align:start position:0%
+and you know the random pointers this
+one's<00:02:33.840><c> going</c><00:02:33.920><c> to</c><00:02:34.000><c> be</c><00:02:34.160><c> at</c><00:02:34.400><c> null</c>
+
+00:02:34.949 --> 00:02:34.959 align:start position:0%
+one's going to be at null
+ 
+
+00:02:34.959 --> 00:02:36.790 align:start position:0%
+one's going to be at null
+this<00:02:35.120><c> one's</c><00:02:35.440><c> gonna</c><00:02:35.680><c> point</c><00:02:35.920><c> back</c><00:02:36.160><c> at</c><00:02:36.319><c> the</c><00:02:36.480><c> first</c>
+
+00:02:36.790 --> 00:02:36.800 align:start position:0%
+this one's gonna point back at the first
+ 
+
+00:02:36.800 --> 00:02:38.630 align:start position:0%
+this one's gonna point back at the first
+node<00:02:37.120><c> but</c><00:02:37.280><c> the</c><00:02:37.599><c> third</c><00:02:38.000><c> node</c><00:02:38.239><c> right</c>
+
+00:02:38.630 --> 00:02:38.640 align:start position:0%
+node but the third node right
+ 
+
+00:02:38.640 --> 00:02:40.710 align:start position:0%
+node but the third node right
+we<00:02:38.879><c> know</c><00:02:39.120><c> its</c><00:02:39.360><c> random</c><00:02:39.760><c> pointer</c><00:02:40.160><c> is</c><00:02:40.319><c> going</c><00:02:40.560><c> to</c>
+
+00:02:40.710 --> 00:02:40.720 align:start position:0%
+we know its random pointer is going to
+ 
+
+00:02:40.720 --> 00:02:41.830 align:start position:0%
+we know its random pointer is going to
+be<00:02:41.120><c> at</c><00:02:41.360><c> the</c>
+
+00:02:41.830 --> 00:02:41.840 align:start position:0%
+be at the
+ 
+
+00:02:41.840 --> 00:02:44.790 align:start position:0%
+be at the
+fifth<00:02:42.400><c> node</c><00:02:42.720><c> but</c><00:02:42.879><c> we</c><00:02:43.040><c> haven't</c><00:02:43.519><c> created</c><00:02:44.239><c> a</c><00:02:44.480><c> deep</c>
+
+00:02:44.790 --> 00:02:44.800 align:start position:0%
+fifth node but we haven't created a deep
+ 
+
+00:02:44.800 --> 00:02:46.869 align:start position:0%
+fifth node but we haven't created a deep
+copy<00:02:45.280><c> of</c><00:02:45.440><c> the</c><00:02:45.599><c> fifth</c><00:02:46.000><c> node</c><00:02:46.319><c> yet</c>
+
+00:02:46.869 --> 00:02:46.879 align:start position:0%
+copy of the fifth node yet
+ 
+
+00:02:46.879 --> 00:02:49.430 align:start position:0%
+copy of the fifth node yet
+so<00:02:47.120><c> how</c><00:02:47.360><c> can</c><00:02:47.519><c> we</c><00:02:47.760><c> assign</c><00:02:48.560><c> a</c><00:02:48.720><c> random</c><00:02:49.120><c> pointer</c>
+
+00:02:49.430 --> 00:02:49.440 align:start position:0%
+so how can we assign a random pointer
+ 
+
+00:02:49.440 --> 00:02:51.430 align:start position:0%
+so how can we assign a random pointer
+before<00:02:49.760><c> it's</c><00:02:50.080><c> even</c><00:02:50.400><c> been</c><00:02:50.720><c> created</c>
+
+00:02:51.430 --> 00:02:51.440 align:start position:0%
+before it's even been created
+ 
+
+00:02:51.440 --> 00:02:54.229 align:start position:0%
+before it's even been created
+well<00:02:51.599><c> the</c><00:02:51.840><c> answer</c><00:02:52.319><c> is</c><00:02:52.720><c> we're</c><00:02:52.879><c> gonna</c><00:02:53.120><c> do</c><00:02:53.440><c> two</c>
+
+00:02:54.229 --> 00:02:54.239 align:start position:0%
+well the answer is we're gonna do two
+ 
+
+00:02:54.239 --> 00:02:55.430 align:start position:0%
+well the answer is we're gonna do two
+passes<00:02:54.800><c> we're</c><00:02:54.959><c> gonna</c><00:02:55.120><c> have</c>
+
+00:02:55.430 --> 00:02:55.440 align:start position:0%
+passes we're gonna have
+ 
+
+00:02:55.440 --> 00:02:58.390 align:start position:0%
+passes we're gonna have
+two<00:02:55.920><c> loops</c><00:02:56.480><c> and</c><00:02:56.640><c> so</c><00:02:56.879><c> with</c><00:02:57.120><c> these</c><00:02:57.519><c> two</c><00:02:57.760><c> passes</c>
+
+00:02:58.390 --> 00:02:58.400 align:start position:0%
+two loops and so with these two passes
+ 
+
+00:02:58.400 --> 00:02:59.350 align:start position:0%
+two loops and so with these two passes
+what<00:02:58.560><c> the</c><00:02:58.879><c> first</c>
+
+00:02:59.350 --> 00:02:59.360 align:start position:0%
+what the first
+ 
+
+00:02:59.360 --> 00:03:01.589 align:start position:0%
+what the first
+pass<00:02:59.760><c> is</c><00:02:59.920><c> going</c><00:03:00.159><c> to</c><00:03:00.319><c> do</c><00:03:00.879><c> is</c><00:03:01.120><c> we're</c><00:03:01.280><c> simply</c>
+
+00:03:01.589 --> 00:03:01.599 align:start position:0%
+pass is going to do is we're simply
+ 
+
+00:03:01.599 --> 00:03:03.670 align:start position:0%
+pass is going to do is we're simply
+going<00:03:01.760><c> to</c><00:03:01.920><c> take</c><00:03:02.319><c> each</c><00:03:02.640><c> of</c><00:03:02.879><c> these</c>
+
+00:03:03.670 --> 00:03:03.680 align:start position:0%
+going to take each of these
+ 
+
+00:03:03.680 --> 00:03:05.030 align:start position:0%
+going to take each of these
+input<00:03:04.080><c> nodes</c><00:03:04.400><c> right</c><00:03:04.560><c> and</c><00:03:04.720><c> we're</c><00:03:04.800><c> going</c><00:03:04.959><c> to</c>
+
+00:03:05.030 --> 00:03:05.040 align:start position:0%
+input nodes right and we're going to
+ 
+
+00:03:05.040 --> 00:03:07.830 align:start position:0%
+input nodes right and we're going to
+create<00:03:05.599><c> a</c><00:03:05.920><c> deep</c><00:03:06.400><c> copy</c><00:03:06.879><c> of</c><00:03:07.120><c> the</c><00:03:07.360><c> nodes</c><00:03:07.680><c> right</c>
+
+00:03:07.830 --> 00:03:07.840 align:start position:0%
+create a deep copy of the nodes right
+ 
+
+00:03:07.840 --> 00:03:09.190 align:start position:0%
+create a deep copy of the nodes right
+that's<00:03:08.159><c> all</c><00:03:08.319><c> we're</c><00:03:08.560><c> doing</c><00:03:08.720><c> we're</c><00:03:08.879><c> just</c><00:03:09.040><c> going</c>
+
+00:03:09.190 --> 00:03:09.200 align:start position:0%
+that's all we're doing we're just going
+ 
+
+00:03:09.200 --> 00:03:09.990 align:start position:0%
+that's all we're doing we're just going
+to<00:03:09.440><c> create</c>
+
+00:03:09.990 --> 00:03:10.000 align:start position:0%
+to create
+ 
+
+00:03:10.000 --> 00:03:11.750 align:start position:0%
+to create
+copies<00:03:10.480><c> of</c><00:03:10.640><c> these</c><00:03:10.879><c> nodes</c><00:03:11.120><c> we're</c><00:03:11.360><c> not</c><00:03:11.519><c> even</c>
+
+00:03:11.750 --> 00:03:11.760 align:start position:0%
+copies of these nodes we're not even
+ 
+
+00:03:11.760 --> 00:03:13.190 align:start position:0%
+copies of these nodes we're not even
+going<00:03:11.840><c> to</c><00:03:12.080><c> link</c><00:03:12.319><c> them</c><00:03:12.560><c> yet</c>
+
+00:03:13.190 --> 00:03:13.200 align:start position:0%
+going to link them yet
+ 
+
+00:03:13.200 --> 00:03:15.750 align:start position:0%
+going to link them yet
+right<00:03:13.440><c> so</c><00:03:13.599><c> that's</c><00:03:13.840><c> what</c><00:03:14.480><c> the</c><00:03:14.720><c> first</c><00:03:15.200><c> pass</c><00:03:15.599><c> is</c>
+
+00:03:15.750 --> 00:03:15.760 align:start position:0%
+right so that's what the first pass is
+ 
+
+00:03:15.760 --> 00:03:16.630 align:start position:0%
+right so that's what the first pass is
+going<00:03:15.840><c> to</c><00:03:16.080><c> do</c>
+
+00:03:16.630 --> 00:03:16.640 align:start position:0%
+going to do
+ 
+
+00:03:16.640 --> 00:03:19.509 align:start position:0%
+going to do
+and<00:03:17.040><c> in</c><00:03:17.280><c> addition</c><00:03:18.239><c> the</c><00:03:18.400><c> first</c><00:03:18.720><c> pass</c><00:03:19.040><c> is</c><00:03:19.280><c> also</c>
+
+00:03:19.509 --> 00:03:19.519 align:start position:0%
+and in addition the first pass is also
+ 
+
+00:03:19.519 --> 00:03:20.550 align:start position:0%
+and in addition the first pass is also
+going<00:03:19.760><c> to</c><00:03:19.920><c> create</c><00:03:20.319><c> a</c>
+
+00:03:20.550 --> 00:03:20.560 align:start position:0%
+going to create a
+ 
+
+00:03:20.560 --> 00:03:24.149 align:start position:0%
+going to create a
+hash<00:03:20.959><c> map</c><00:03:21.440><c> where</c><00:03:21.680><c> we</c><00:03:21.920><c> map</c><00:03:22.560><c> the</c><00:03:22.800><c> original</c><00:03:23.519><c> node</c>
+
+00:03:24.149 --> 00:03:24.159 align:start position:0%
+hash map where we map the original node
+ 
+
+00:03:24.159 --> 00:03:26.229 align:start position:0%
+hash map where we map the original node
+to<00:03:24.319><c> the</c><00:03:24.640><c> new</c><00:03:24.959><c> node</c><00:03:25.360><c> right</c><00:03:25.519><c> so</c><00:03:25.840><c> we're</c><00:03:26.000><c> going</c><00:03:26.080><c> to</c>
+
+00:03:26.229 --> 00:03:26.239 align:start position:0%
+to the new node right so we're going to
+ 
+
+00:03:26.239 --> 00:03:27.430 align:start position:0%
+to the new node right so we're going to
+map<00:03:26.560><c> every</c><00:03:27.040><c> old</c>
+
+00:03:27.430 --> 00:03:27.440 align:start position:0%
+map every old
+ 
+
+00:03:27.440 --> 00:03:29.589 align:start position:0%
+map every old
+node<00:03:27.680><c> to</c><00:03:27.840><c> the</c><00:03:28.080><c> new</c><00:03:28.480><c> copy</c><00:03:29.040><c> we're</c><00:03:29.200><c> going</c><00:03:29.360><c> to</c><00:03:29.440><c> do</c>
+
+00:03:29.589 --> 00:03:29.599 align:start position:0%
+node to the new copy we're going to do
+ 
+
+00:03:29.599 --> 00:03:30.869 align:start position:0%
+node to the new copy we're going to do
+that<00:03:29.760><c> with</c><00:03:29.920><c> a</c><00:03:30.080><c> hash</c><00:03:30.400><c> map</c>
+
+00:03:30.869 --> 00:03:30.879 align:start position:0%
+that with a hash map
+ 
+
+00:03:30.879 --> 00:03:32.630 align:start position:0%
+that with a hash map
+and<00:03:30.959><c> this</c><00:03:31.200><c> is</c><00:03:31.280><c> going</c><00:03:31.360><c> to</c><00:03:31.440><c> take</c><00:03:31.680><c> place</c><00:03:32.080><c> in</c><00:03:32.239><c> the</c>
+
+00:03:32.630 --> 00:03:32.640 align:start position:0%
+and this is going to take place in the
+ 
+
+00:03:32.640 --> 00:03:34.229 align:start position:0%
+and this is going to take place in the
+first<00:03:33.120><c> pass</c>
+
+00:03:34.229 --> 00:03:34.239 align:start position:0%
+first pass
+ 
+
+00:03:34.239 --> 00:03:37.270 align:start position:0%
+first pass
+and<00:03:34.560><c> in</c><00:03:35.040><c> the</c><00:03:35.280><c> actual</c><00:03:35.840><c> second</c><00:03:36.319><c> pass</c><00:03:36.879><c> is</c><00:03:37.040><c> where</c>
+
+00:03:37.270 --> 00:03:37.280 align:start position:0%
+and in the actual second pass is where
+ 
+
+00:03:37.280 --> 00:03:38.550 align:start position:0%
+and in the actual second pass is where
+we're<00:03:37.440><c> going</c><00:03:37.519><c> to</c><00:03:37.599><c> actually</c><00:03:37.920><c> do</c><00:03:38.239><c> all</c><00:03:38.400><c> the</c>
+
+00:03:38.550 --> 00:03:38.560 align:start position:0%
+we're going to actually do all the
+ 
+
+00:03:38.560 --> 00:03:40.550 align:start position:0%
+we're going to actually do all the
+pointer<00:03:39.040><c> connecting</c><00:03:39.519><c> so</c><00:03:39.680><c> we</c><00:03:39.760><c> know</c><00:03:40.000><c> that</c><00:03:40.239><c> every</c>
+
+00:03:40.550 --> 00:03:40.560 align:start position:0%
+pointer connecting so we know that every
+ 
+
+00:03:40.560 --> 00:03:42.390 align:start position:0%
+pointer connecting so we know that every
+node<00:03:40.799><c> is</c><00:03:40.959><c> going</c><00:03:41.200><c> to</c><00:03:41.360><c> have</c><00:03:41.680><c> you</c><00:03:41.760><c> know</c><00:03:42.000><c> pointers</c>
+
+00:03:42.390 --> 00:03:42.400 align:start position:0%
+node is going to have you know pointers
+ 
+
+00:03:42.400 --> 00:03:43.910 align:start position:0%
+node is going to have you know pointers
+to<00:03:42.560><c> the</c><00:03:42.640><c> next</c><00:03:42.959><c> node</c><00:03:43.280><c> they're</c><00:03:43.440><c> also</c><00:03:43.680><c> going</c><00:03:43.840><c> to</c>
+
+00:03:43.910 --> 00:03:43.920 align:start position:0%
+to the next node they're also going to
+ 
+
+00:03:43.920 --> 00:03:45.589 align:start position:0%
+to the next node they're also going to
+have<00:03:44.080><c> some</c><00:03:44.400><c> random</c><00:03:44.879><c> pointers</c>
+
+00:03:45.589 --> 00:03:45.599 align:start position:0%
+have some random pointers
+ 
+
+00:03:45.599 --> 00:03:47.030 align:start position:0%
+have some random pointers
+as<00:03:45.760><c> well</c><00:03:46.080><c> right</c><00:03:46.239><c> like</c><00:03:46.480><c> this</c><00:03:46.640><c> is</c><00:03:46.720><c> going</c><00:03:46.799><c> to</c><00:03:46.879><c> have</c>
+
+00:03:47.030 --> 00:03:47.040 align:start position:0%
+as well right like this is going to have
+ 
+
+00:03:47.040 --> 00:03:48.710 align:start position:0%
+as well right like this is going to have
+a<00:03:47.120><c> random</c><00:03:47.440><c> pointer</c><00:03:47.760><c> to</c><00:03:47.920><c> the</c><00:03:48.000><c> last</c><00:03:48.319><c> node</c>
+
+00:03:48.710 --> 00:03:48.720 align:start position:0%
+a random pointer to the last node
+ 
+
+00:03:48.720 --> 00:03:51.110 align:start position:0%
+a random pointer to the last node
+and<00:03:49.200><c> we're</c><00:03:49.360><c> going</c><00:03:49.519><c> to</c><00:03:49.840><c> leverage</c><00:03:50.400><c> our</c><00:03:50.560><c> hashmap</c>
+
+00:03:51.110 --> 00:03:51.120 align:start position:0%
+and we're going to leverage our hashmap
+ 
+
+00:03:51.120 --> 00:03:53.670 align:start position:0%
+and we're going to leverage our hashmap
+that<00:03:51.280><c> we</c><00:03:51.440><c> create</c><00:03:51.840><c> in</c><00:03:52.080><c> the</c><00:03:52.400><c> first</c><00:03:52.879><c> pass</c>
+
+00:03:53.670 --> 00:03:53.680 align:start position:0%
+that we create in the first pass
+ 
+
+00:03:53.680 --> 00:03:55.350 align:start position:0%
+that we create in the first pass
+right<00:03:54.000><c> that</c><00:03:54.159><c> we</c><00:03:54.319><c> create</c><00:03:54.640><c> using</c><00:03:54.879><c> the</c><00:03:55.040><c> first</c>
+
+00:03:55.350 --> 00:03:55.360 align:start position:0%
+right that we create using the first
+ 
+
+00:03:55.360 --> 00:03:56.949 align:start position:0%
+right that we create using the first
+pass<00:03:55.599><c> of</c><00:03:55.760><c> our</c><00:03:55.920><c> algorithm</c><00:03:56.560><c> we're</c><00:03:56.720><c> going</c><00:03:56.799><c> to</c>
+
+00:03:56.949 --> 00:03:56.959 align:start position:0%
+pass of our algorithm we're going to
+ 
+
+00:03:56.959 --> 00:03:58.630 align:start position:0%
+pass of our algorithm we're going to
+leverage<00:03:57.360><c> that</c><00:03:57.599><c> hashmap</c><00:03:58.239><c> to</c>
+
+00:03:58.630 --> 00:03:58.640 align:start position:0%
+leverage that hashmap to
+ 
+
+00:03:58.640 --> 00:04:01.429 align:start position:0%
+leverage that hashmap to
+get<00:03:59.280><c> to</c><00:03:59.519><c> map</c><00:03:59.920><c> every</c><00:04:00.319><c> old</c><00:04:00.560><c> node</c><00:04:00.879><c> to</c><00:04:01.040><c> the</c><00:04:01.200><c> new</c>
+
+00:04:01.429 --> 00:04:01.439 align:start position:0%
+get to map every old node to the new
+ 
+
+00:04:01.439 --> 00:04:03.030 align:start position:0%
+get to map every old node to the new
+node<00:04:01.680><c> so</c><00:04:01.920><c> for</c><00:04:02.159><c> example</c>
+
+00:04:03.030 --> 00:04:03.040 align:start position:0%
+node so for example
+ 
+
+00:04:03.040 --> 00:04:06.070 align:start position:0%
+node so for example
+we<00:04:03.280><c> see</c><00:04:03.680><c> in</c><00:04:03.840><c> the</c><00:04:04.000><c> original</c><00:04:04.720><c> third</c><00:04:05.120><c> node</c><00:04:05.680><c> its</c>
+
+00:04:06.070 --> 00:04:06.080 align:start position:0%
+we see in the original third node its
+ 
+
+00:04:06.080 --> 00:04:08.390 align:start position:0%
+we see in the original third node its
+random<00:04:06.560><c> pointer</c><00:04:06.959><c> is</c><00:04:07.120><c> pointing</c><00:04:07.599><c> at</c><00:04:08.159><c> the</c>
+
+00:04:08.390 --> 00:04:08.400 align:start position:0%
+random pointer is pointing at the
+ 
+
+00:04:08.400 --> 00:04:09.110 align:start position:0%
+random pointer is pointing at the
+original
+
+00:04:09.110 --> 00:04:09.120 align:start position:0%
+original
+ 
+
+00:04:09.120 --> 00:04:11.589 align:start position:0%
+original
+fifth<00:04:09.519><c> node</c><00:04:09.840><c> right</c><00:04:10.319><c> we</c><00:04:10.480><c> can</c><00:04:10.720><c> leverage</c><00:04:11.120><c> that</c><00:04:11.360><c> by</c>
+
+00:04:11.589 --> 00:04:11.599 align:start position:0%
+fifth node right we can leverage that by
+ 
+
+00:04:11.599 --> 00:04:12.470 align:start position:0%
+fifth node right we can leverage that by
+taking
+
+00:04:12.470 --> 00:04:12.480 align:start position:0%
+taking
+ 
+
+00:04:12.480 --> 00:04:15.270 align:start position:0%
+taking
+or<00:04:12.720><c> using</c><00:04:12.959><c> our</c><00:04:13.120><c> hash</c><00:04:13.439><c> map</c><00:04:13.760><c> we</c><00:04:13.920><c> can</c><00:04:14.080><c> say</c><00:04:14.319><c> okay</c><00:04:14.799><c> in</c>
+
+00:04:15.270 --> 00:04:15.280 align:start position:0%
+or using our hash map we can say okay in
+ 
+
+00:04:15.280 --> 00:04:15.750 align:start position:0%
+or using our hash map we can say okay in
+the
+
+00:04:15.750 --> 00:04:15.760 align:start position:0%
+the
+ 
+
+00:04:15.760 --> 00:04:17.830 align:start position:0%
+the
+copy<00:04:16.239><c> of</c><00:04:16.400><c> the</c><00:04:16.639><c> third</c><00:04:16.880><c> node</c><00:04:17.120><c> we</c><00:04:17.359><c> want</c><00:04:17.519><c> it</c><00:04:17.600><c> to</c>
+
+00:04:17.830 --> 00:04:17.840 align:start position:0%
+copy of the third node we want it to
+ 
+
+00:04:17.840 --> 00:04:19.509 align:start position:0%
+copy of the third node we want it to
+point<00:04:18.079><c> to</c><00:04:18.239><c> the</c><00:04:18.639><c> copy</c>
+
+00:04:19.509 --> 00:04:19.519 align:start position:0%
+point to the copy
+ 
+
+00:04:19.519 --> 00:04:22.310 align:start position:0%
+point to the copy
+of<00:04:20.000><c> the</c><00:04:20.320><c> fifth</c><00:04:20.720><c> node</c><00:04:21.199><c> right</c><00:04:21.680><c> and</c><00:04:21.840><c> we</c><00:04:22.000><c> can</c><00:04:22.079><c> use</c>
+
+00:04:22.310 --> 00:04:22.320 align:start position:0%
+of the fifth node right and we can use
+ 
+
+00:04:22.320 --> 00:04:23.990 align:start position:0%
+of the fifth node right and we can use
+our<00:04:22.479><c> hash</c><00:04:22.800><c> map</c><00:04:23.040><c> to</c><00:04:23.280><c> get</c><00:04:23.600><c> the</c>
+
+00:04:23.990 --> 00:04:24.000 align:start position:0%
+our hash map to get the
+ 
+
+00:04:24.000 --> 00:04:26.950 align:start position:0%
+our hash map to get the
+copy<00:04:24.800><c> and</c><00:04:25.360><c> so</c><00:04:25.600><c> if</c><00:04:25.759><c> this</c><00:04:26.000><c> doesn't</c><00:04:26.400><c> make</c><00:04:26.720><c> sense</c>
+
+00:04:26.950 --> 00:04:26.960 align:start position:0%
+copy and so if this doesn't make sense
+ 
+
+00:04:26.960 --> 00:04:29.270 align:start position:0%
+copy and so if this doesn't make sense
+yet<00:04:27.199><c> this</c><00:04:27.360><c> is</c><00:04:27.440><c> just</c><00:04:27.680><c> a</c><00:04:27.840><c> basic</c><00:04:28.320><c> illustration</c>
+
+00:04:29.270 --> 00:04:29.280 align:start position:0%
+yet this is just a basic illustration
+ 
+
+00:04:29.280 --> 00:04:31.510 align:start position:0%
+yet this is just a basic illustration
+this<00:04:29.520><c> problem</c><00:04:30.000><c> is</c><00:04:30.240><c> actually</c><00:04:30.639><c> straightforward</c>
+
+00:04:31.510 --> 00:04:31.520 align:start position:0%
+this problem is actually straightforward
+ 
+
+00:04:31.520 --> 00:04:33.590 align:start position:0%
+this problem is actually straightforward
+enough<00:04:31.840><c> with</c><00:04:32.080><c> the</c><00:04:32.400><c> code</c><00:04:32.720><c> that</c><00:04:32.960><c> i</c><00:04:33.040><c> think</c><00:04:33.360><c> even</c>
+
+00:04:33.590 --> 00:04:33.600 align:start position:0%
+enough with the code that i think even
+ 
+
+00:04:33.600 --> 00:04:35.350 align:start position:0%
+enough with the code that i think even
+if<00:04:33.759><c> this</c><00:04:34.000><c> doesn't</c><00:04:34.240><c> make</c><00:04:34.560><c> sense</c>
+
+00:04:35.350 --> 00:04:35.360 align:start position:0%
+if this doesn't make sense
+ 
+
+00:04:35.360 --> 00:04:36.950 align:start position:0%
+if this doesn't make sense
+when<00:04:35.520><c> i</c><00:04:35.600><c> show</c><00:04:35.759><c> you</c><00:04:35.919><c> the</c><00:04:36.080><c> code</c><00:04:36.400><c> it'll</c><00:04:36.639><c> make</c><00:04:36.880><c> a</c>
+
+00:04:36.950 --> 00:04:36.960 align:start position:0%
+when i show you the code it'll make a
+ 
+
+00:04:36.960 --> 00:04:38.550 align:start position:0%
+when i show you the code it'll make a
+lot<00:04:37.120><c> more</c><00:04:37.440><c> sense</c><00:04:38.000><c> because</c>
+
+00:04:38.550 --> 00:04:38.560 align:start position:0%
+lot more sense because
+ 
+
+00:04:38.560 --> 00:04:41.430 align:start position:0%
+lot more sense because
+at<00:04:38.720><c> the</c><00:04:38.880><c> base</c><00:04:39.280><c> this</c><00:04:39.520><c> is</c><00:04:39.680><c> a</c><00:04:40.000><c> two-pass</c><00:04:40.720><c> algorithm</c>
+
+00:04:41.430 --> 00:04:41.440 align:start position:0%
+at the base this is a two-pass algorithm
+ 
+
+00:04:41.440 --> 00:04:43.270 align:start position:0%
+at the base this is a two-pass algorithm
+where<00:04:41.600><c> we</c><00:04:41.840><c> create</c><00:04:42.160><c> a</c><00:04:42.320><c> hashmap</c>
+
+00:04:43.270 --> 00:04:43.280 align:start position:0%
+where we create a hashmap
+ 
+
+00:04:43.280 --> 00:04:46.230 align:start position:0%
+where we create a hashmap
+and<00:04:43.840><c> can</c><00:04:44.080><c> easily</c><00:04:44.479><c> solve</c><00:04:44.800><c> this</c><00:04:45.040><c> problem</c><00:04:45.600><c> in</c>
+
+00:04:46.230 --> 00:04:46.240 align:start position:0%
+and can easily solve this problem in
+ 
+
+00:04:46.240 --> 00:04:47.510 align:start position:0%
+and can easily solve this problem in
+linear<00:04:46.800><c> time</c>
+
+00:04:47.510 --> 00:04:47.520 align:start position:0%
+linear time
+ 
+
+00:04:47.520 --> 00:04:49.510 align:start position:0%
+linear time
+because<00:04:48.160><c> each</c><00:04:48.479><c> pass</c><00:04:48.880><c> is</c><00:04:49.040><c> going</c><00:04:49.199><c> to</c><00:04:49.280><c> be</c>
+
+00:04:49.510 --> 00:04:49.520 align:start position:0%
+because each pass is going to be
+ 
+
+00:04:49.520 --> 00:04:52.230 align:start position:0%
+because each pass is going to be
+iterating<00:04:50.080><c> through</c><00:04:50.320><c> the</c><00:04:50.479><c> entire</c><00:04:51.040><c> linked</c><00:04:51.440><c> list</c>
+
+00:04:52.230 --> 00:04:52.240 align:start position:0%
+iterating through the entire linked list
+ 
+
+00:04:52.240 --> 00:04:54.150 align:start position:0%
+iterating through the entire linked list
+and<00:04:52.400><c> our</c><00:04:52.560><c> hashmap</c><00:04:53.120><c> is</c><00:04:53.280><c> also</c><00:04:53.520><c> going</c><00:04:53.680><c> to</c><00:04:53.759><c> take</c>
+
+00:04:54.150 --> 00:04:54.160 align:start position:0%
+and our hashmap is also going to take
+ 
+
+00:04:54.160 --> 00:04:57.030 align:start position:0%
+and our hashmap is also going to take
+linear<00:04:54.639><c> memory</c><00:04:55.199><c> of</c><00:04:55.520><c> n</c><00:04:55.759><c> memory</c><00:04:56.320><c> because</c>
+
+00:04:57.030 --> 00:04:57.040 align:start position:0%
+linear memory of n memory because
+ 
+
+00:04:57.040 --> 00:04:59.510 align:start position:0%
+linear memory of n memory because
+we<00:04:57.199><c> are</c><00:04:57.360><c> having</c><00:04:57.680><c> to</c><00:04:57.919><c> store</c><00:04:58.320><c> every</c><00:04:58.639><c> single</c><00:04:59.040><c> node</c>
+
+00:04:59.510 --> 00:04:59.520 align:start position:0%
+we are having to store every single node
+ 
+
+00:04:59.520 --> 00:05:00.230 align:start position:0%
+we are having to store every single node
+inside
+
+00:05:00.230 --> 00:05:00.240 align:start position:0%
+inside
+ 
+
+00:05:00.240 --> 00:05:02.710 align:start position:0%
+inside
+of<00:05:00.400><c> our</c><00:05:00.560><c> hash</c><00:05:00.880><c> map</c><00:05:01.280><c> so</c><00:05:01.440><c> with</c><00:05:01.680><c> that</c><00:05:01.919><c> being</c><00:05:02.240><c> said</c>
+
+00:05:02.710 --> 00:05:02.720 align:start position:0%
+of our hash map so with that being said
+ 
+
+00:05:02.720 --> 00:05:03.990 align:start position:0%
+of our hash map so with that being said
+let<00:05:02.880><c> me</c><00:05:03.039><c> show</c><00:05:03.280><c> you</c><00:05:03.360><c> the</c><00:05:03.520><c> code</c>
+
+00:05:03.990 --> 00:05:04.000 align:start position:0%
+let me show you the code
+ 
+
+00:05:04.000 --> 00:05:05.830 align:start position:0%
+let me show you the code
+it's<00:05:04.320><c> actually</c><00:05:04.880><c> easier</c><00:05:05.199><c> than</c><00:05:05.360><c> you</c><00:05:05.520><c> might</c>
+
+00:05:05.830 --> 00:05:05.840 align:start position:0%
+it's actually easier than you might
+ 
+
+00:05:05.840 --> 00:05:08.629 align:start position:0%
+it's actually easier than you might
+think<00:05:06.639><c> so</c><00:05:06.880><c> remember</c><00:05:07.440><c> we</c><00:05:07.680><c> are</c><00:05:07.840><c> going</c><00:05:08.080><c> to</c><00:05:08.240><c> have</c><00:05:08.479><c> a</c>
+
+00:05:08.629 --> 00:05:08.639 align:start position:0%
+think so remember we are going to have a
+ 
+
+00:05:08.639 --> 00:05:09.990 align:start position:0%
+think so remember we are going to have a
+hash<00:05:08.960><c> map</c><00:05:09.199><c> i'm</c><00:05:09.280><c> going</c><00:05:09.360><c> to</c><00:05:09.520><c> call</c><00:05:09.759><c> it</c>
+
+00:05:09.990 --> 00:05:10.000 align:start position:0%
+hash map i'm going to call it
+ 
+
+00:05:10.000 --> 00:05:13.029 align:start position:0%
+hash map i'm going to call it
+old<00:05:10.639><c> to</c><00:05:11.120><c> copy</c><00:05:11.840><c> because</c><00:05:12.479><c> we're</c><00:05:12.639><c> going</c><00:05:12.720><c> to</c><00:05:12.800><c> be</c>
+
+00:05:13.029 --> 00:05:13.039 align:start position:0%
+old to copy because we're going to be
+ 
+
+00:05:13.039 --> 00:05:13.749 align:start position:0%
+old to copy because we're going to be
+mapping
+
+00:05:13.749 --> 00:05:13.759 align:start position:0%
+mapping
+ 
+
+00:05:13.759 --> 00:05:16.469 align:start position:0%
+mapping
+every<00:05:14.000><c> single</c><00:05:14.560><c> old</c><00:05:14.880><c> node</c><00:05:15.360><c> to</c><00:05:15.520><c> the</c><00:05:15.840><c> copy</c><00:05:16.320><c> of</c>
+
+00:05:16.469 --> 00:05:16.479 align:start position:0%
+every single old node to the copy of
+ 
+
+00:05:16.479 --> 00:05:18.070 align:start position:0%
+every single old node to the copy of
+that<00:05:16.720><c> node</c><00:05:16.960><c> that</c><00:05:17.120><c> we</c><00:05:17.360><c> create</c>
+
+00:05:18.070 --> 00:05:18.080 align:start position:0%
+that node that we create
+ 
+
+00:05:18.080 --> 00:05:20.310 align:start position:0%
+that node that we create
+so<00:05:18.720><c> first</c><00:05:19.039><c> we're</c><00:05:19.199><c> going</c><00:05:19.440><c> to</c><00:05:19.680><c> iterate</c><00:05:20.160><c> through</c>
+
+00:05:20.310 --> 00:05:20.320 align:start position:0%
+so first we're going to iterate through
+ 
+
+00:05:20.320 --> 00:05:21.909 align:start position:0%
+so first we're going to iterate through
+the<00:05:20.479><c> linked</c><00:05:20.800><c> list</c><00:05:21.120><c> once</c><00:05:21.520><c> right</c><00:05:21.680><c> so</c><00:05:21.840><c> we're</c>
+
+00:05:21.909 --> 00:05:21.919 align:start position:0%
+the linked list once right so we're
+ 
+
+00:05:21.919 --> 00:05:23.510 align:start position:0%
+the linked list once right so we're
+going<00:05:22.000><c> to</c><00:05:22.080><c> have</c><00:05:22.160><c> a</c><00:05:22.400><c> current</c><00:05:22.720><c> pointer</c><00:05:23.199><c> pointing</c>
+
+00:05:23.510 --> 00:05:23.520 align:start position:0%
+going to have a current pointer pointing
+ 
+
+00:05:23.520 --> 00:05:24.310 align:start position:0%
+going to have a current pointer pointing
+at<00:05:23.600><c> the</c><00:05:23.840><c> head</c>
+
+00:05:24.310 --> 00:05:24.320 align:start position:0%
+at the head
+ 
+
+00:05:24.320 --> 00:05:25.909 align:start position:0%
+at the head
+we're<00:05:24.479><c> basically</c><00:05:24.960><c> going</c><00:05:25.039><c> to</c><00:05:25.280><c> keep</c><00:05:25.520><c> going</c>
+
+00:05:25.909 --> 00:05:25.919 align:start position:0%
+we're basically going to keep going
+ 
+
+00:05:25.919 --> 00:05:27.909 align:start position:0%
+we're basically going to keep going
+until<00:05:26.320><c> this</c><00:05:26.560><c> current</c><00:05:26.880><c> pointer</c><00:05:27.280><c> reaches</c><00:05:27.680><c> the</c>
+
+00:05:27.909 --> 00:05:27.919 align:start position:0%
+until this current pointer reaches the
+ 
+
+00:05:27.919 --> 00:05:29.189 align:start position:0%
+until this current pointer reaches the
+end<00:05:28.080><c> of</c><00:05:28.240><c> the</c><00:05:28.400><c> linked</c><00:05:28.720><c> list</c>
+
+00:05:29.189 --> 00:05:29.199 align:start position:0%
+end of the linked list
+ 
+
+00:05:29.199 --> 00:05:31.430 align:start position:0%
+end of the linked list
+aka<00:05:29.840><c> when</c><00:05:30.080><c> the</c><00:05:30.479><c> when</c><00:05:30.639><c> the</c><00:05:30.720><c> current</c><00:05:31.120><c> node</c>
+
+00:05:31.430 --> 00:05:31.440 align:start position:0%
+aka when the when the current node
+ 
+
+00:05:31.440 --> 00:05:32.870 align:start position:0%
+aka when the when the current node
+becomes<00:05:32.080><c> null</c>
+
+00:05:32.870 --> 00:05:32.880 align:start position:0%
+becomes null
+ 
+
+00:05:32.880 --> 00:05:34.629 align:start position:0%
+becomes null
+so<00:05:33.199><c> the</c><00:05:33.360><c> first</c><00:05:33.600><c> thing</c><00:05:33.840><c> we</c><00:05:34.000><c> want</c><00:05:34.160><c> to</c><00:05:34.240><c> do</c><00:05:34.479><c> is</c>
+
+00:05:34.629 --> 00:05:34.639 align:start position:0%
+so the first thing we want to do is
+ 
+
+00:05:34.639 --> 00:05:37.510 align:start position:0%
+so the first thing we want to do is
+create<00:05:35.039><c> a</c><00:05:35.199><c> copy</c><00:05:35.759><c> of</c><00:05:36.080><c> this</c><00:05:36.400><c> node</c><00:05:36.800><c> right</c><00:05:37.039><c> so</c>
+
+00:05:37.510 --> 00:05:37.520 align:start position:0%
+create a copy of this node right so
+ 
+
+00:05:37.520 --> 00:05:40.710 align:start position:0%
+create a copy of this node right so
+we<00:05:37.680><c> can</c><00:05:37.759><c> do</c><00:05:38.000><c> that</c><00:05:38.240><c> with</c><00:05:38.639><c> the</c><00:05:39.440><c> node</c><00:05:39.840><c> construct</c>
+
+00:05:40.710 --> 00:05:40.720 align:start position:0%
+we can do that with the node construct
+ 
+
+00:05:40.720 --> 00:05:42.310 align:start position:0%
+we can do that with the node construct
+constructor<00:05:41.440><c> and</c><00:05:41.600><c> we're</c><00:05:41.759><c> going</c><00:05:41.840><c> to</c><00:05:41.919><c> pass</c><00:05:42.240><c> in</c>
+
+00:05:42.310 --> 00:05:42.320 align:start position:0%
+constructor and we're going to pass in
+ 
+
+00:05:42.320 --> 00:05:45.270 align:start position:0%
+constructor and we're going to pass in
+the<00:05:42.479><c> value</c><00:05:43.120><c> of</c><00:05:43.520><c> current</c><00:05:43.840><c> so</c><00:05:44.080><c> current.value</c>
+
+00:05:45.270 --> 00:05:45.280 align:start position:0%
+the value of current so current.value
+ 
+
+00:05:45.280 --> 00:05:47.590 align:start position:0%
+the value of current so current.value
+we're<00:05:45.440><c> creating</c><00:05:46.000><c> a</c><00:05:46.240><c> clone</c><00:05:46.800><c> of</c><00:05:46.960><c> the</c><00:05:47.120><c> node</c><00:05:47.440><c> a</c>
+
+00:05:47.590 --> 00:05:47.600 align:start position:0%
+we're creating a clone of the node a
+ 
+
+00:05:47.600 --> 00:05:50.310 align:start position:0%
+we're creating a clone of the node a
+deep<00:05:47.919><c> copy</c><00:05:48.320><c> of</c><00:05:48.400><c> the</c><00:05:48.560><c> node</c><00:05:48.880><c> putting</c><00:05:49.199><c> it</c><00:05:49.360><c> in</c><00:05:49.600><c> copy</c>
+
+00:05:50.310 --> 00:05:50.320 align:start position:0%
+deep copy of the node putting it in copy
+ 
+
+00:05:50.320 --> 00:05:51.990 align:start position:0%
+deep copy of the node putting it in copy
+and<00:05:50.800><c> now</c><00:05:50.960><c> we're</c><00:05:51.039><c> going</c><00:05:51.120><c> to</c><00:05:51.199><c> take</c><00:05:51.360><c> this</c><00:05:51.600><c> copy</c>
+
+00:05:51.990 --> 00:05:52.000 align:start position:0%
+and now we're going to take this copy
+ 
+
+00:05:52.000 --> 00:05:53.430 align:start position:0%
+and now we're going to take this copy
+and<00:05:52.160><c> put</c><00:05:52.320><c> it</c><00:05:52.400><c> in</c><00:05:52.560><c> our</c><00:05:52.720><c> hash</c><00:05:52.960><c> map</c>
+
+00:05:53.430 --> 00:05:53.440 align:start position:0%
+and put it in our hash map
+ 
+
+00:05:53.440 --> 00:05:56.469 align:start position:0%
+and put it in our hash map
+so<00:05:54.080><c> in</c><00:05:54.240><c> our</c><00:05:54.400><c> hashmap</c><00:05:55.039><c> old</c><00:05:55.440><c> to</c><00:05:55.680><c> copy</c><00:05:56.319><c> we're</c>
+
+00:05:56.469 --> 00:05:56.479 align:start position:0%
+so in our hashmap old to copy we're
+ 
+
+00:05:56.479 --> 00:05:56.870 align:start position:0%
+so in our hashmap old to copy we're
+going<00:05:56.560><c> to</c>
+
+00:05:56.870 --> 00:05:56.880 align:start position:0%
+going to
+ 
+
+00:05:56.880 --> 00:05:59.990 align:start position:0%
+going to
+map<00:05:57.440><c> the</c><00:05:57.840><c> old</c><00:05:58.319><c> node</c><00:05:58.960><c> to</c><00:05:59.199><c> the</c><00:05:59.440><c> copy</c>
+
+00:05:59.990 --> 00:06:00.000 align:start position:0%
+map the old node to the copy
+ 
+
+00:06:00.000 --> 00:06:02.230 align:start position:0%
+map the old node to the copy
+that<00:06:00.160><c> we</c><00:06:00.479><c> just</c><00:06:00.800><c> created</c><00:06:01.440><c> right</c><00:06:01.759><c> this</c><00:06:02.000><c> is</c>
+
+00:06:02.230 --> 00:06:02.240 align:start position:0%
+that we just created right this is
+ 
+
+00:06:02.240 --> 00:06:03.909 align:start position:0%
+that we just created right this is
+pretty<00:06:02.560><c> straightforward</c><00:06:03.360><c> right</c><00:06:03.520><c> we're</c><00:06:03.680><c> using</c>
+
+00:06:03.909 --> 00:06:03.919 align:start position:0%
+pretty straightforward right we're using
+ 
+
+00:06:03.919 --> 00:06:04.870 align:start position:0%
+pretty straightforward right we're using
+a<00:06:04.080><c> hashmap</c>
+
+00:06:04.870 --> 00:06:04.880 align:start position:0%
+a hashmap
+ 
+
+00:06:04.880 --> 00:06:07.830 align:start position:0%
+a hashmap
+mapping<00:06:05.280><c> the</c><00:06:05.600><c> old</c><00:06:05.840><c> node</c><00:06:06.319><c> to</c><00:06:06.479><c> the</c><00:06:06.639><c> copy</c><00:06:07.120><c> node</c>
+
+00:06:07.830 --> 00:06:07.840 align:start position:0%
+mapping the old node to the copy node
+ 
+
+00:06:07.840 --> 00:06:08.390 align:start position:0%
+mapping the old node to the copy node
+and
+
+00:06:08.390 --> 00:06:08.400 align:start position:0%
+and
+ 
+
+00:06:08.400 --> 00:06:10.870 align:start position:0%
+and
+next<00:06:08.720><c> all</c><00:06:08.880><c> we</c><00:06:09.039><c> really</c><00:06:09.280><c> need</c><00:06:09.440><c> to</c><00:06:09.520><c> do</c><00:06:09.840><c> is</c><00:06:10.319><c> update</c>
+
+00:06:10.870 --> 00:06:10.880 align:start position:0%
+next all we really need to do is update
+ 
+
+00:06:10.880 --> 00:06:12.230 align:start position:0%
+next all we really need to do is update
+our<00:06:11.120><c> current</c><00:06:11.440><c> pointer</c>
+
+00:06:12.230 --> 00:06:12.240 align:start position:0%
+our current pointer
+ 
+
+00:06:12.240 --> 00:06:15.510 align:start position:0%
+our current pointer
+until<00:06:12.720><c> it</c><00:06:12.880><c> reaches</c><00:06:13.759><c> null</c><00:06:14.160><c> and</c><00:06:14.240><c> then</c><00:06:14.720><c> the</c><00:06:15.039><c> first</c>
+
+00:06:15.510 --> 00:06:15.520 align:start position:0%
+until it reaches null and then the first
+ 
+
+00:06:15.520 --> 00:06:17.510 align:start position:0%
+until it reaches null and then the first
+pass<00:06:15.919><c> of</c><00:06:16.160><c> our</c><00:06:16.319><c> loop</c><00:06:16.639><c> is</c><00:06:16.720><c> going</c><00:06:16.960><c> to</c><00:06:17.039><c> be</c><00:06:17.199><c> done</c>
+
+00:06:17.510 --> 00:06:17.520 align:start position:0%
+pass of our loop is going to be done
+ 
+
+00:06:17.520 --> 00:06:19.270 align:start position:0%
+pass of our loop is going to be done
+right<00:06:17.680><c> so</c><00:06:17.840><c> remember</c><00:06:18.240><c> we're</c><00:06:18.400><c> doing</c><00:06:18.639><c> two</c><00:06:18.880><c> passes</c>
+
+00:06:19.270 --> 00:06:19.280 align:start position:0%
+right so remember we're doing two passes
+ 
+
+00:06:19.280 --> 00:06:19.990 align:start position:0%
+right so remember we're doing two passes
+this<00:06:19.520><c> is</c><00:06:19.600><c> the</c><00:06:19.680><c> first</c>
+
+00:06:19.990 --> 00:06:20.000 align:start position:0%
+this is the first
+ 
+
+00:06:20.000 --> 00:06:22.230 align:start position:0%
+this is the first
+pass<00:06:20.400><c> all</c><00:06:20.560><c> we're</c><00:06:20.720><c> doing</c><00:06:21.280><c> is</c><00:06:21.520><c> cloning</c><00:06:22.080><c> the</c>
+
+00:06:22.230 --> 00:06:22.240 align:start position:0%
+pass all we're doing is cloning the
+ 
+
+00:06:22.240 --> 00:06:23.350 align:start position:0%
+pass all we're doing is cloning the
+linked<00:06:22.560><c> list</c>
+
+00:06:23.350 --> 00:06:23.360 align:start position:0%
+linked list
+ 
+
+00:06:23.360 --> 00:06:25.909 align:start position:0%
+linked list
+nodes<00:06:24.080><c> and</c><00:06:24.319><c> adding</c><00:06:24.720><c> it</c><00:06:24.800><c> to</c><00:06:25.039><c> the</c><00:06:25.280><c> hashmap</c><00:06:25.759><c> we're</c>
+
+00:06:25.909 --> 00:06:25.919 align:start position:0%
+nodes and adding it to the hashmap we're
+ 
+
+00:06:25.919 --> 00:06:27.909 align:start position:0%
+nodes and adding it to the hashmap we're
+not<00:06:26.160><c> connecting</c><00:06:26.720><c> the</c><00:06:26.960><c> pointers</c><00:06:27.360><c> yet</c><00:06:27.600><c> that's</c>
+
+00:06:27.909 --> 00:06:27.919 align:start position:0%
+not connecting the pointers yet that's
+ 
+
+00:06:27.919 --> 00:06:28.550 align:start position:0%
+not connecting the pointers yet that's
+what<00:06:28.160><c> this</c>
+
+00:06:28.550 --> 00:06:28.560 align:start position:0%
+what this
+ 
+
+00:06:28.560 --> 00:06:29.749 align:start position:0%
+what this
+loop<00:06:28.800><c> is</c><00:06:28.960><c> going</c><00:06:29.039><c> to</c><00:06:29.120><c> be</c><00:06:29.280><c> for</c><00:06:29.440><c> we're</c><00:06:29.600><c> going</c><00:06:29.680><c> to</c>
+
+00:06:29.749 --> 00:06:29.759 align:start position:0%
+loop is going to be for we're going to
+ 
+
+00:06:29.759 --> 00:06:31.590 align:start position:0%
+loop is going to be for we're going to
+run<00:06:30.000><c> the</c><00:06:30.160><c> loop</c><00:06:30.479><c> one</c><00:06:30.720><c> more</c><00:06:30.960><c> time</c>
+
+00:06:31.590 --> 00:06:31.600 align:start position:0%
+run the loop one more time
+ 
+
+00:06:31.600 --> 00:06:33.510 align:start position:0%
+run the loop one more time
+setting<00:06:32.000><c> current</c><00:06:32.639><c> to</c><00:06:32.800><c> the</c><00:06:32.880><c> beginning</c><00:06:33.199><c> of</c><00:06:33.360><c> the</c>
+
+00:06:33.510 --> 00:06:33.520 align:start position:0%
+setting current to the beginning of the
+ 
+
+00:06:33.520 --> 00:06:35.749 align:start position:0%
+setting current to the beginning of the
+linked<00:06:33.840><c> list</c><00:06:34.479><c> keep</c><00:06:34.720><c> going</c><00:06:35.039><c> until</c><00:06:35.360><c> we</c><00:06:35.520><c> reach</c>
+
+00:06:35.749 --> 00:06:35.759 align:start position:0%
+linked list keep going until we reach
+ 
+
+00:06:35.759 --> 00:06:37.350 align:start position:0%
+linked list keep going until we reach
+the<00:06:36.000><c> end</c><00:06:36.240><c> of</c><00:06:36.319><c> the</c><00:06:36.479><c> linked</c><00:06:36.800><c> list</c>
+
+00:06:37.350 --> 00:06:37.360 align:start position:0%
+the end of the linked list
+ 
+
+00:06:37.360 --> 00:06:39.830 align:start position:0%
+the end of the linked list
+now<00:06:37.600><c> we're</c><00:06:37.759><c> going</c><00:06:37.840><c> to</c><00:06:38.080><c> set</c><00:06:38.400><c> the</c><00:06:38.720><c> pointers</c><00:06:39.680><c> so</c>
+
+00:06:39.830 --> 00:06:39.840 align:start position:0%
+now we're going to set the pointers so
+ 
+
+00:06:39.840 --> 00:06:41.990 align:start position:0%
+now we're going to set the pointers so
+we're<00:06:40.160><c> at</c><00:06:40.319><c> the</c><00:06:40.639><c> first</c><00:06:41.039><c> node</c><00:06:41.360><c> let's</c><00:06:41.600><c> say</c>
+
+00:06:41.990 --> 00:06:42.000 align:start position:0%
+we're at the first node let's say
+ 
+
+00:06:42.000 --> 00:06:43.430 align:start position:0%
+we're at the first node let's say
+of<00:06:42.160><c> our</c><00:06:42.319><c> linked</c><00:06:42.560><c> list</c><00:06:42.800><c> right</c><00:06:42.960><c> that's</c><00:06:43.199><c> what</c>
+
+00:06:43.430 --> 00:06:43.440 align:start position:0%
+of our linked list right that's what
+ 
+
+00:06:43.440 --> 00:06:45.909 align:start position:0%
+of our linked list right that's what
+current<00:06:43.840><c> is</c><00:06:44.080><c> so</c><00:06:44.319><c> let's</c><00:06:44.560><c> get</c><00:06:44.720><c> the</c><00:06:44.960><c> copy</c><00:06:45.520><c> of</c><00:06:45.759><c> the</c>
+
+00:06:45.909 --> 00:06:45.919 align:start position:0%
+current is so let's get the copy of the
+ 
+
+00:06:45.919 --> 00:06:47.909 align:start position:0%
+current is so let's get the copy of the
+node<00:06:46.240><c> remember</c><00:06:46.639><c> we</c><00:06:46.880><c> already</c><00:06:47.360><c> created</c><00:06:47.759><c> the</c>
+
+00:06:47.909 --> 00:06:47.919 align:start position:0%
+node remember we already created the
+ 
+
+00:06:47.919 --> 00:06:50.710 align:start position:0%
+node remember we already created the
+copy<00:06:48.400><c> in</c><00:06:48.560><c> our</c><00:06:48.639><c> hashmap</c><00:06:49.199><c> so</c><00:06:49.440><c> old</c><00:06:49.759><c> to</c><00:06:50.000><c> copy</c>
+
+00:06:50.710 --> 00:06:50.720 align:start position:0%
+copy in our hashmap so old to copy
+ 
+
+00:06:50.720 --> 00:06:53.670 align:start position:0%
+copy in our hashmap so old to copy
+we<00:06:50.960><c> use</c><00:06:51.360><c> current</c><00:06:52.160><c> and</c><00:06:52.319><c> this</c><00:06:52.639><c> gives</c><00:06:52.960><c> us</c><00:06:53.360><c> the</c>
+
+00:06:53.670 --> 00:06:53.680 align:start position:0%
+we use current and this gives us the
+ 
+
+00:06:53.680 --> 00:06:54.790 align:start position:0%
+we use current and this gives us the
+copy<00:06:54.160><c> node</c>
+
+00:06:54.790 --> 00:06:54.800 align:start position:0%
+copy node
+ 
+
+00:06:54.800 --> 00:06:57.670 align:start position:0%
+copy node
+of<00:06:55.360><c> current</c><00:06:55.840><c> right</c><00:06:56.639><c> and</c><00:06:56.800><c> now</c><00:06:56.960><c> what</c><00:06:57.199><c> we</c><00:06:57.280><c> want</c><00:06:57.440><c> to</c>
+
+00:06:57.670 --> 00:06:57.680 align:start position:0%
+of current right and now what we want to
+ 
+
+00:06:57.680 --> 00:06:59.909 align:start position:0%
+of current right and now what we want to
+do<00:06:58.000><c> is</c><00:06:58.319><c> for</c><00:06:58.639><c> this</c><00:06:58.880><c> current</c><00:06:59.199><c> node</c><00:06:59.440><c> we</c><00:06:59.599><c> just</c><00:06:59.759><c> want</c>
+
+00:06:59.909 --> 00:06:59.919 align:start position:0%
+do is for this current node we just want
+ 
+
+00:06:59.919 --> 00:07:00.870 align:start position:0%
+do is for this current node we just want
+to<00:07:00.080><c> set</c><00:07:00.400><c> its</c>
+
+00:07:00.870 --> 00:07:00.880 align:start position:0%
+to set its
+ 
+
+00:07:00.880 --> 00:07:03.110 align:start position:0%
+to set its
+pointers<00:07:01.680><c> because</c><00:07:02.000><c> remember</c><00:07:02.479><c> we</c><00:07:02.800><c> we</c><00:07:03.039><c> are</c>
+
+00:07:03.110 --> 00:07:03.120 align:start position:0%
+pointers because remember we we are
+ 
+
+00:07:03.120 --> 00:07:05.830 align:start position:0%
+pointers because remember we we are
+required<00:07:03.840><c> to</c><00:07:04.080><c> set</c><00:07:04.240><c> the</c><00:07:04.400><c> pointers</c><00:07:04.880><c> to</c><00:07:05.120><c> create</c><00:07:05.520><c> a</c>
+
+00:07:05.830 --> 00:07:05.840 align:start position:0%
+required to set the pointers to create a
+ 
+
+00:07:05.840 --> 00:07:07.990 align:start position:0%
+required to set the pointers to create a
+full<00:07:06.240><c> deep</c><00:07:06.560><c> copy</c><00:07:07.039><c> of</c><00:07:07.199><c> the</c><00:07:07.360><c> linked</c><00:07:07.599><c> list</c><00:07:07.919><c> we</c>
+
+00:07:07.990 --> 00:07:08.000 align:start position:0%
+full deep copy of the linked list we
+ 
+
+00:07:08.000 --> 00:07:08.950 align:start position:0%
+full deep copy of the linked list we
+need<00:07:08.160><c> to</c><00:07:08.319><c> set</c><00:07:08.560><c> the</c>
+
+00:07:08.950 --> 00:07:08.960 align:start position:0%
+need to set the
+ 
+
+00:07:08.960 --> 00:07:12.070 align:start position:0%
+need to set the
+the<00:07:09.199><c> next</c><00:07:09.520><c> pointer</c><00:07:09.919><c> right</c><00:07:10.160><c> so</c><00:07:10.400><c> copy</c><00:07:11.120><c> dot</c><00:07:11.599><c> next</c>
+
+00:07:12.070 --> 00:07:12.080 align:start position:0%
+the next pointer right so copy dot next
+ 
+
+00:07:12.080 --> 00:07:13.990 align:start position:0%
+the next pointer right so copy dot next
+we<00:07:12.240><c> have</c><00:07:12.319><c> to</c><00:07:12.479><c> set</c><00:07:12.720><c> that</c><00:07:12.880><c> pointer</c><00:07:13.280><c> we</c><00:07:13.520><c> also</c><00:07:13.840><c> have</c>
+
+00:07:13.990 --> 00:07:14.000 align:start position:0%
+we have to set that pointer we also have
+ 
+
+00:07:14.000 --> 00:07:16.150 align:start position:0%
+we have to set that pointer we also have
+to<00:07:14.240><c> set</c><00:07:14.800><c> copy</c><00:07:15.000><c> copy.random</c>
+
+00:07:16.150 --> 00:07:16.160 align:start position:0%
+to set copy copy.random
+ 
+
+00:07:16.160 --> 00:07:19.270 align:start position:0%
+to set copy copy.random
+so<00:07:16.479><c> copy</c><00:07:16.880><c> has</c><00:07:17.280><c> two</c><00:07:17.599><c> pointers</c><00:07:18.240><c> and</c><00:07:18.400><c> we</c><00:07:18.639><c> need</c><00:07:18.880><c> to</c>
+
+00:07:19.270 --> 00:07:19.280 align:start position:0%
+so copy has two pointers and we need to
+ 
+
+00:07:19.280 --> 00:07:23.189 align:start position:0%
+so copy has two pointers and we need to
+find<00:07:20.080><c> those</c><00:07:20.880><c> nodes</c><00:07:21.360><c> right</c><00:07:21.840><c> so</c><00:07:22.080><c> copy.next</c><00:07:23.039><c> how</c>
+
+00:07:23.189 --> 00:07:23.199 align:start position:0%
+find those nodes right so copy.next how
+ 
+
+00:07:23.199 --> 00:07:24.510 align:start position:0%
+find those nodes right so copy.next how
+do<00:07:23.360><c> we</c><00:07:23.599><c> get</c>
+
+00:07:24.510 --> 00:07:24.520 align:start position:0%
+do we get
+ 
+
+00:07:24.520 --> 00:07:28.390 align:start position:0%
+do we get
+copy.next<00:07:26.000><c> well</c><00:07:26.479><c> we</c><00:07:26.800><c> know</c><00:07:27.039><c> we</c><00:07:27.280><c> have</c>
+
+00:07:28.390 --> 00:07:28.400 align:start position:0%
+copy.next well we know we have
+ 
+
+00:07:28.400 --> 00:07:31.749 align:start position:0%
+copy.next well we know we have
+a<00:07:28.639><c> map</c><00:07:28.960><c> that</c><00:07:29.199><c> can</c><00:07:29.680><c> map</c><00:07:30.080><c> original</c><00:07:30.720><c> nodes</c><00:07:31.360><c> to</c><00:07:31.599><c> the</c>
+
+00:07:31.749 --> 00:07:31.759 align:start position:0%
+a map that can map original nodes to the
+ 
+
+00:07:31.759 --> 00:07:33.749 align:start position:0%
+a map that can map original nodes to the
+copies<00:07:32.319><c> right</c><00:07:32.639><c> so</c><00:07:32.880><c> if</c><00:07:32.960><c> we</c><00:07:33.199><c> take</c>
+
+00:07:33.749 --> 00:07:33.759 align:start position:0%
+copies right so if we take
+ 
+
+00:07:33.759 --> 00:07:37.189 align:start position:0%
+copies right so if we take
+current<00:07:34.400><c> dot</c><00:07:34.720><c> next</c><00:07:35.680><c> that's</c><00:07:36.000><c> gonna</c><00:07:36.319><c> map</c><00:07:36.720><c> us</c>
+
+00:07:37.189 --> 00:07:37.199 align:start position:0%
+current dot next that's gonna map us
+ 
+
+00:07:37.199 --> 00:07:39.830 align:start position:0%
+current dot next that's gonna map us
+to<00:07:37.440><c> the</c><00:07:37.840><c> copy</c><00:07:38.319><c> of</c><00:07:38.560><c> current.next</c><00:07:39.440><c> that</c><00:07:39.599><c> we</c>
+
+00:07:39.830 --> 00:07:39.840 align:start position:0%
+to the copy of current.next that we
+ 
+
+00:07:39.840 --> 00:07:40.710 align:start position:0%
+to the copy of current.next that we
+created
+
+00:07:40.710 --> 00:07:40.720 align:start position:0%
+created
+ 
+
+00:07:40.720 --> 00:07:45.029 align:start position:0%
+created
+and<00:07:41.039><c> that</c><00:07:41.360><c> copy</c><00:07:42.160><c> can</c><00:07:42.400><c> be</c><00:07:42.720><c> stored</c><00:07:43.520><c> in</c><00:07:43.960><c> copy.next</c>
+
+00:07:45.029 --> 00:07:45.039 align:start position:0%
+and that copy can be stored in copy.next
+ 
+
+00:07:45.039 --> 00:07:45.589 align:start position:0%
+and that copy can be stored in copy.next
+right
+
+00:07:45.589 --> 00:07:45.599 align:start position:0%
+right
+ 
+
+00:07:45.599 --> 00:07:47.990 align:start position:0%
+right
+this<00:07:45.840><c> is</c><00:07:45.919><c> what</c><00:07:46.400><c> our</c><00:07:46.639><c> hashmap</c><00:07:47.199><c> makes</c><00:07:47.520><c> our</c><00:07:47.680><c> life</c>
+
+00:07:47.990 --> 00:07:48.000 align:start position:0%
+this is what our hashmap makes our life
+ 
+
+00:07:48.000 --> 00:07:49.350 align:start position:0%
+this is what our hashmap makes our life
+so<00:07:48.240><c> much</c><00:07:48.479><c> easier</c><00:07:48.960><c> right</c>
+
+00:07:49.350 --> 00:07:49.360 align:start position:0%
+so much easier right
+ 
+
+00:07:49.360 --> 00:07:51.430 align:start position:0%
+so much easier right
+we<00:07:49.599><c> already</c><00:07:49.919><c> know</c><00:07:50.160><c> we</c><00:07:50.319><c> created</c><00:07:50.800><c> a</c><00:07:50.879><c> copy</c><00:07:51.280><c> of</c>
+
+00:07:51.430 --> 00:07:51.440 align:start position:0%
+we already know we created a copy of
+ 
+
+00:07:51.440 --> 00:07:53.270 align:start position:0%
+we already know we created a copy of
+every<00:07:51.680><c> single</c><00:07:52.000><c> node</c><00:07:52.240><c> so</c><00:07:52.479><c> of</c><00:07:52.639><c> course</c>
+
+00:07:53.270 --> 00:07:53.280 align:start position:0%
+every single node so of course
+ 
+
+00:07:53.280 --> 00:07:56.950 align:start position:0%
+every single node so of course
+current.next<00:07:54.319><c> is</c><00:07:54.560><c> going</c><00:07:54.720><c> to</c><00:07:54.879><c> be</c><00:07:55.199><c> in</c><00:07:55.759><c> copy.next</c>
+
+00:07:56.950 --> 00:07:56.960 align:start position:0%
+current.next is going to be in copy.next
+ 
+
+00:07:56.960 --> 00:08:00.070 align:start position:0%
+current.next is going to be in copy.next
+except<00:07:58.160><c> one</c><00:07:58.560><c> case</c><00:07:58.960><c> one</c><00:07:59.199><c> edge</c><00:07:59.440><c> case</c>
+
+00:08:00.070 --> 00:08:00.080 align:start position:0%
+except one case one edge case
+ 
+
+00:08:00.080 --> 00:08:03.110 align:start position:0%
+except one case one edge case
+what<00:08:00.319><c> if</c><00:08:00.759><c> current.next</c><00:08:02.000><c> was</c><00:08:02.479><c> null</c>
+
+00:08:03.110 --> 00:08:03.120 align:start position:0%
+what if current.next was null
+ 
+
+00:08:03.120 --> 00:08:05.670 align:start position:0%
+what if current.next was null
+what<00:08:03.280><c> would</c><00:08:03.520><c> we</c><00:08:03.759><c> want</c><00:08:04.080><c> our</c><00:08:04.240><c> hashmap</c><00:08:04.800><c> to</c><00:08:04.879><c> return</c>
+
+00:08:05.670 --> 00:08:05.680 align:start position:0%
+what would we want our hashmap to return
+ 
+
+00:08:05.680 --> 00:08:06.710 align:start position:0%
+what would we want our hashmap to return
+in<00:08:05.919><c> that</c><00:08:06.240><c> case</c>
+
+00:08:06.710 --> 00:08:06.720 align:start position:0%
+in that case
+ 
+
+00:08:06.720 --> 00:08:09.350 align:start position:0%
+in that case
+we'd<00:08:06.960><c> want</c><00:08:07.120><c> it</c><00:08:07.199><c> to</c><00:08:07.360><c> return</c><00:08:07.840><c> null</c><00:08:08.160><c> so</c><00:08:08.720><c> in</c><00:08:09.199><c> up</c>
+
+00:08:09.350 --> 00:08:09.360 align:start position:0%
+we'd want it to return null so in up
+ 
+
+00:08:09.360 --> 00:08:09.749 align:start position:0%
+we'd want it to return null so in up
+here
+
+00:08:09.749 --> 00:08:09.759 align:start position:0%
+here
+ 
+
+00:08:09.759 --> 00:08:12.469 align:start position:0%
+here
+in<00:08:10.000><c> our</c><00:08:10.319><c> initializing</c><00:08:11.520><c> of</c><00:08:11.680><c> the</c><00:08:11.759><c> hashmap</c><00:08:12.319><c> i'm</c>
+
+00:08:12.469 --> 00:08:12.479 align:start position:0%
+in our initializing of the hashmap i'm
+ 
+
+00:08:12.479 --> 00:08:13.270 align:start position:0%
+in our initializing of the hashmap i'm
+just<00:08:12.639><c> going</c><00:08:12.720><c> to</c><00:08:12.879><c> add</c>
+
+00:08:13.270 --> 00:08:13.280 align:start position:0%
+just going to add
+ 
+
+00:08:13.280 --> 00:08:16.390 align:start position:0%
+just going to add
+one<00:08:14.160><c> value</c><00:08:14.960><c> null</c><00:08:15.360><c> is</c><00:08:15.520><c> going</c><00:08:15.680><c> to</c><00:08:15.840><c> point</c><00:08:16.240><c> is</c>
+
+00:08:16.390 --> 00:08:16.400 align:start position:0%
+one value null is going to point is
+ 
+
+00:08:16.400 --> 00:08:18.390 align:start position:0%
+one value null is going to point is
+going<00:08:16.560><c> to</c><00:08:16.720><c> map</c><00:08:17.039><c> to</c><00:08:17.280><c> null</c><00:08:17.599><c> so</c>
+
+00:08:18.390 --> 00:08:18.400 align:start position:0%
+going to map to null so
+ 
+
+00:08:18.400 --> 00:08:19.909 align:start position:0%
+going to map to null so
+it's<00:08:18.639><c> pretty</c><00:08:18.879><c> straightforward</c><00:08:19.520><c> right</c><00:08:19.680><c> if</c><00:08:19.840><c> we</c>
+
+00:08:19.909 --> 00:08:19.919 align:start position:0%
+it's pretty straightforward right if we
+ 
+
+00:08:19.919 --> 00:08:23.270 align:start position:0%
+it's pretty straightforward right if we
+had<00:08:20.240><c> a</c><00:08:21.199><c> old</c><00:08:21.520><c> node</c><00:08:21.759><c> that</c><00:08:21.919><c> was</c><00:08:22.080><c> null</c><00:08:22.400><c> we</c><00:08:22.560><c> want</c><00:08:22.800><c> to</c>
+
+00:08:23.270 --> 00:08:23.280 align:start position:0%
+had a old node that was null we want to
+ 
+
+00:08:23.280 --> 00:08:25.430 align:start position:0%
+had a old node that was null we want to
+the<00:08:23.440><c> copy</c><00:08:23.840><c> is</c><00:08:23.919><c> also</c><00:08:24.240><c> going</c><00:08:24.319><c> to</c><00:08:24.400><c> be</c><00:08:24.639><c> null</c><00:08:24.960><c> right</c>
+
+00:08:25.430 --> 00:08:25.440 align:start position:0%
+the copy is also going to be null right
+ 
+
+00:08:25.440 --> 00:08:27.430 align:start position:0%
+the copy is also going to be null right
+and<00:08:25.680><c> last</c><00:08:26.000><c> thing</c><00:08:26.319><c> we're</c><00:08:26.720><c> basically</c><00:08:27.120><c> just</c>
+
+00:08:27.430 --> 00:08:27.440 align:start position:0%
+and last thing we're basically just
+ 
+
+00:08:27.440 --> 00:08:29.270 align:start position:0%
+and last thing we're basically just
+doing<00:08:27.680><c> the</c><00:08:27.759><c> exact</c><00:08:28.080><c> same</c><00:08:28.240><c> thing</c><00:08:28.560><c> so</c>
+
+00:08:29.270 --> 00:08:29.280 align:start position:0%
+doing the exact same thing so
+ 
+
+00:08:29.280 --> 00:08:31.270 align:start position:0%
+doing the exact same thing so
+for<00:08:29.520><c> the</c><00:08:29.759><c> current</c><00:08:30.160><c> node</c><00:08:30.560><c> the</c><00:08:30.720><c> current</c><00:08:31.039><c> node</c>
+
+00:08:31.270 --> 00:08:31.280 align:start position:0%
+for the current node the current node
+ 
+
+00:08:31.280 --> 00:08:33.829 align:start position:0%
+for the current node the current node
+had<00:08:31.840><c> or</c><00:08:32.000><c> the</c><00:08:32.159><c> original</c><00:08:32.560><c> node</c><00:08:32.800><c> it</c><00:08:32.959><c> had</c><00:08:33.120><c> a</c><00:08:33.360><c> random</c>
+
+00:08:33.829 --> 00:08:33.839 align:start position:0%
+had or the original node it had a random
+ 
+
+00:08:33.839 --> 00:08:34.709 align:start position:0%
+had or the original node it had a random
+pointer<00:08:34.240><c> right</c>
+
+00:08:34.709 --> 00:08:34.719 align:start position:0%
+pointer right
+ 
+
+00:08:34.719 --> 00:08:37.350 align:start position:0%
+pointer right
+that<00:08:35.039><c> random</c><00:08:35.440><c> pointer</c><00:08:36.159><c> points</c><00:08:36.479><c> to</c><00:08:36.640><c> some</c><00:08:36.959><c> node</c>
+
+00:08:37.350 --> 00:08:37.360 align:start position:0%
+that random pointer points to some node
+ 
+
+00:08:37.360 --> 00:08:39.110 align:start position:0%
+that random pointer points to some node
+and<00:08:37.519><c> that</c><00:08:37.839><c> node</c><00:08:38.159><c> has</c><00:08:38.399><c> already</c>
+
+00:08:39.110 --> 00:08:39.120 align:start position:0%
+and that node has already
+ 
+
+00:08:39.120 --> 00:08:41.350 align:start position:0%
+and that node has already
+ha<00:08:39.680><c> we</c><00:08:39.839><c> have</c><00:08:39.919><c> already</c><00:08:40.240><c> created</c><00:08:40.640><c> a</c><00:08:40.719><c> copy</c><00:08:41.120><c> of</c>
+
+00:08:41.350 --> 00:08:41.360 align:start position:0%
+ha we have already created a copy of
+ 
+
+00:08:41.360 --> 00:08:43.269 align:start position:0%
+ha we have already created a copy of
+that<00:08:41.599><c> node</c><00:08:41.919><c> and</c><00:08:42.080><c> put</c><00:08:42.240><c> it</c><00:08:42.399><c> inside</c><00:08:42.800><c> this</c><00:08:42.959><c> hash</c>
+
+00:08:43.269 --> 00:08:43.279 align:start position:0%
+that node and put it inside this hash
+ 
+
+00:08:43.279 --> 00:08:45.190 align:start position:0%
+that node and put it inside this hash
+map<00:08:43.599><c> so</c><00:08:43.760><c> we</c><00:08:43.919><c> can</c><00:08:44.080><c> get</c><00:08:44.320><c> that</c><00:08:44.640><c> copy</c>
+
+00:08:45.190 --> 00:08:45.200 align:start position:0%
+map so we can get that copy
+ 
+
+00:08:45.200 --> 00:08:48.150 align:start position:0%
+map so we can get that copy
+and<00:08:45.279><c> then</c><00:08:45.600><c> put</c><00:08:45.839><c> it</c><00:08:46.000><c> in</c><00:08:46.320><c> copy</c><00:08:47.279><c> dot</c><00:08:47.519><c> random</c><00:08:47.920><c> right</c>
+
+00:08:48.150 --> 00:08:48.160 align:start position:0%
+and then put it in copy dot random right
+ 
+
+00:08:48.160 --> 00:08:48.470 align:start position:0%
+and then put it in copy dot random right
+so
+
+00:08:48.470 --> 00:08:48.480 align:start position:0%
+so
+ 
+
+00:08:48.480 --> 00:08:50.870 align:start position:0%
+so
+the<00:08:48.640><c> copy</c><00:08:49.120><c> node</c><00:08:49.519><c> is</c><00:08:49.680><c> going</c><00:08:49.920><c> to</c><00:08:50.080><c> point</c><00:08:50.399><c> to</c><00:08:50.720><c> a</c>
+
+00:08:50.870 --> 00:08:50.880 align:start position:0%
+the copy node is going to point to a
+ 
+
+00:08:50.880 --> 00:08:51.829 align:start position:0%
+the copy node is going to point to a
+copy
+
+00:08:51.829 --> 00:08:51.839 align:start position:0%
+copy
+ 
+
+00:08:51.839 --> 00:08:54.310 align:start position:0%
+copy
+of<00:08:52.080><c> that</c><00:08:52.320><c> random</c><00:08:52.800><c> node</c><00:08:53.440><c> and</c><00:08:53.600><c> that's</c><00:08:53.920><c> actually</c>
+
+00:08:54.310 --> 00:08:54.320 align:start position:0%
+of that random node and that's actually
+ 
+
+00:08:54.320 --> 00:08:55.509 align:start position:0%
+of that random node and that's actually
+it<00:08:54.640><c> we</c><00:08:54.800><c> just</c><00:08:55.040><c> had</c>
+
+00:08:55.509 --> 00:08:55.519 align:start position:0%
+it we just had
+ 
+
+00:08:55.519 --> 00:08:57.590 align:start position:0%
+it we just had
+two<00:08:55.839><c> passes</c><00:08:56.399><c> one</c><00:08:56.640><c> pass</c><00:08:56.959><c> where</c><00:08:57.120><c> we</c><00:08:57.279><c> actually</c>
+
+00:08:57.590 --> 00:08:57.600 align:start position:0%
+two passes one pass where we actually
+ 
+
+00:08:57.600 --> 00:08:58.710 align:start position:0%
+two passes one pass where we actually
+copy<00:08:58.000><c> the</c><00:08:58.160><c> nodes</c>
+
+00:08:58.710 --> 00:08:58.720 align:start position:0%
+copy the nodes
+ 
+
+00:08:58.720 --> 00:09:00.630 align:start position:0%
+copy the nodes
+the<00:08:58.880><c> second</c><00:08:59.200><c> pass</c><00:08:59.600><c> where</c><00:08:59.839><c> we</c><00:09:00.080><c> set</c><00:09:00.399><c> the</c>
+
+00:09:00.630 --> 00:09:00.640 align:start position:0%
+the second pass where we set the
+ 
+
+00:09:00.640 --> 00:09:02.949 align:start position:0%
+the second pass where we set the
+pointers<00:09:01.279><c> and</c><00:09:01.440><c> we</c><00:09:01.600><c> had</c><00:09:01.839><c> one</c><00:09:02.080><c> data</c><00:09:02.320><c> structure</c><00:09:02.800><c> a</c>
+
+00:09:02.949 --> 00:09:02.959 align:start position:0%
+pointers and we had one data structure a
+ 
+
+00:09:02.959 --> 00:09:03.590 align:start position:0%
+pointers and we had one data structure a
+hash<00:09:03.200><c> map</c>
+
+00:09:03.590 --> 00:09:03.600 align:start position:0%
+hash map
+ 
+
+00:09:03.600 --> 00:09:05.590 align:start position:0%
+hash map
+with<00:09:03.839><c> all</c><00:09:03.920><c> that</c><00:09:04.160><c> said</c><00:09:04.560><c> we</c><00:09:04.720><c> can</c><00:09:04.880><c> return</c><00:09:05.360><c> the</c>
+
+00:09:05.590 --> 00:09:05.600 align:start position:0%
+with all that said we can return the
+ 
+
+00:09:05.600 --> 00:09:08.150 align:start position:0%
+with all that said we can return the
+head<00:09:06.240><c> of</c><00:09:06.399><c> the</c><00:09:06.720><c> copy</c><00:09:07.200><c> list</c><00:09:07.519><c> how</c><00:09:07.680><c> do</c><00:09:07.760><c> we</c><00:09:07.920><c> get</c><00:09:08.080><c> the</c>
+
+00:09:08.150 --> 00:09:08.160 align:start position:0%
+head of the copy list how do we get the
+ 
+
+00:09:08.160 --> 00:09:08.630 align:start position:0%
+head of the copy list how do we get the
+head
+
+00:09:08.630 --> 00:09:08.640 align:start position:0%
+head
+ 
+
+00:09:08.640 --> 00:09:11.430 align:start position:0%
+head
+well<00:09:09.120><c> our</c><00:09:09.279><c> hashmap</c><00:09:10.080><c> becomes</c><00:09:10.480><c> useful</c><00:09:10.959><c> for</c><00:09:11.120><c> us</c>
+
+00:09:11.430 --> 00:09:11.440 align:start position:0%
+well our hashmap becomes useful for us
+ 
+
+00:09:11.440 --> 00:09:12.230 align:start position:0%
+well our hashmap becomes useful for us
+once<00:09:11.760><c> again</c>
+
+00:09:12.230 --> 00:09:12.240 align:start position:0%
+once again
+ 
+
+00:09:12.240 --> 00:09:14.710 align:start position:0%
+once again
+we<00:09:12.399><c> can</c><00:09:12.560><c> take</c><00:09:12.800><c> the</c><00:09:13.040><c> head</c><00:09:13.680><c> of</c><00:09:13.839><c> the</c><00:09:14.160><c> original</c>
+
+00:09:14.710 --> 00:09:14.720 align:start position:0%
+we can take the head of the original
+ 
+
+00:09:14.720 --> 00:09:15.590 align:start position:0%
+we can take the head of the original
+linked<00:09:15.040><c> list</c>
+
+00:09:15.590 --> 00:09:15.600 align:start position:0%
+linked list
+ 
+
+00:09:15.600 --> 00:09:17.670 align:start position:0%
+linked list
+and<00:09:15.760><c> then</c><00:09:16.080><c> map</c><00:09:16.320><c> it</c><00:09:16.399><c> to</c><00:09:16.640><c> the</c><00:09:16.720><c> copy</c><00:09:17.200><c> right</c><00:09:17.600><c> and</c>
+
+00:09:17.670 --> 00:09:17.680 align:start position:0%
+and then map it to the copy right and
+ 
+
+00:09:17.680 --> 00:09:19.030 align:start position:0%
+and then map it to the copy right and
+then<00:09:17.839><c> return</c><00:09:18.240><c> that</c><00:09:18.640><c> head</c>
+
+00:09:19.030 --> 00:09:19.040 align:start position:0%
+then return that head
+ 
+
+00:09:19.040 --> 00:09:21.910 align:start position:0%
+then return that head
+of<00:09:19.200><c> the</c><00:09:19.360><c> copy</c><00:09:19.839><c> list</c><00:09:20.720><c> okay</c><00:09:20.959><c> i'm</c><00:09:21.200><c> pretty</c><00:09:21.440><c> dumb</c>
+
+00:09:21.910 --> 00:09:21.920 align:start position:0%
+of the copy list okay i'm pretty dumb
+ 
+
+00:09:21.920 --> 00:09:23.990 align:start position:0%
+of the copy list okay i'm pretty dumb
+for<00:09:22.080><c> some</c><00:09:22.240><c> reason</c><00:09:22.560><c> i</c><00:09:22.720><c> put</c><00:09:22.959><c> old</c><00:09:23.279><c> over</c><00:09:23.519><c> here</c><00:09:23.839><c> but</c>
+
+00:09:23.990 --> 00:09:24.000 align:start position:0%
+for some reason i put old over here but
+ 
+
+00:09:24.000 --> 00:09:25.430 align:start position:0%
+for some reason i put old over here but
+it's<00:09:24.240><c> actually</c><00:09:24.640><c> cur</c>
+
+00:09:25.430 --> 00:09:25.440 align:start position:0%
+it's actually cur
+ 
+
+00:09:25.440 --> 00:09:27.910 align:start position:0%
+it's actually cur
+cur<00:09:25.839><c> is</c><00:09:25.920><c> the</c><00:09:26.160><c> old</c><00:09:26.399><c> node</c><00:09:26.959><c> and</c><00:09:27.200><c> for</c><00:09:27.360><c> some</c><00:09:27.519><c> reason</c>
+
+00:09:27.910 --> 00:09:27.920 align:start position:0%
+cur is the old node and for some reason
+ 
+
+00:09:27.920 --> 00:09:29.110 align:start position:0%
+cur is the old node and for some reason
+i<00:09:28.160><c> also</c><00:09:28.399><c> forgot</c>
+
+00:09:29.110 --> 00:09:29.120 align:start position:0%
+i also forgot
+ 
+
+00:09:29.120 --> 00:09:31.590 align:start position:0%
+i also forgot
+in<00:09:29.200><c> the</c><00:09:29.360><c> original</c><00:09:29.920><c> loop</c><00:09:30.240><c> we</c><00:09:30.399><c> do</c><00:09:30.720><c> update</c><00:09:31.040><c> cur</c><00:09:31.440><c> i</c>
+
+00:09:31.590 --> 00:09:31.600 align:start position:0%
+in the original loop we do update cur i
+ 
+
+00:09:31.600 --> 00:09:32.630 align:start position:0%
+in the original loop we do update cur i
+forgot<00:09:31.920><c> to</c><00:09:32.080><c> update</c>
+
+00:09:32.630 --> 00:09:32.640 align:start position:0%
+forgot to update
+ 
+
+00:09:32.640 --> 00:09:34.949 align:start position:0%
+forgot to update
+kerr<00:09:33.040><c> in</c><00:09:33.200><c> the</c><00:09:33.440><c> second</c><00:09:33.760><c> loop</c><00:09:34.000><c> so</c><00:09:34.399><c> cur</c><00:09:34.800><c> is</c>
+
+00:09:34.949 --> 00:09:34.959 align:start position:0%
+kerr in the second loop so cur is
+ 
+
+00:09:34.959 --> 00:09:36.550 align:start position:0%
+kerr in the second loop so cur is
+cur.next
+
+00:09:36.550 --> 00:09:36.560 align:start position:0%
+cur.next
+ 
+
+00:09:36.560 --> 00:09:38.870 align:start position:0%
+cur.next
+now<00:09:36.800><c> we</c><00:09:36.959><c> won't</c><00:09:37.120><c> get</c><00:09:37.279><c> an</c><00:09:37.440><c> infinite</c><00:09:37.839><c> loop</c><00:09:38.399><c> and</c><00:09:38.640><c> as</c>
+
+00:09:38.870 --> 00:09:38.880 align:start position:0%
+now we won't get an infinite loop and as
+ 
+
+00:09:38.880 --> 00:09:40.070 align:start position:0%
+now we won't get an infinite loop and as
+you<00:09:38.959><c> can</c><00:09:39.120><c> see</c><00:09:39.360><c> this</c><00:09:39.600><c> function</c>
+
+00:09:40.070 --> 00:09:40.080 align:start position:0%
+you can see this function
+ 
+
+00:09:40.080 --> 00:09:43.190 align:start position:0%
+you can see this function
+is<00:09:40.399><c> very</c><00:09:40.720><c> efficient</c><00:09:41.279><c> 96</c><00:09:42.560><c> because</c>
+
+00:09:43.190 --> 00:09:43.200 align:start position:0%
+is very efficient 96 because
+ 
+
+00:09:43.200 --> 00:09:45.990 align:start position:0%
+is very efficient 96 because
+it's<00:09:43.440><c> a</c><00:09:43.680><c> linear</c><00:09:44.080><c> time</c><00:09:44.399><c> algorithm</c><00:09:45.360><c> and</c><00:09:45.600><c> we</c><00:09:45.760><c> do</c>
+
+00:09:45.990 --> 00:09:46.000 align:start position:0%
+it's a linear time algorithm and we do
+ 
+
+00:09:46.000 --> 00:09:48.070 align:start position:0%
+it's a linear time algorithm and we do
+have<00:09:46.240><c> a</c><00:09:46.480><c> hash</c><00:09:46.800><c> map</c><00:09:47.120><c> speeding</c><00:09:47.600><c> stuff</c>
+
+00:09:48.070 --> 00:09:48.080 align:start position:0%
+have a hash map speeding stuff
+ 
+
+00:09:48.080 --> 00:09:50.230 align:start position:0%
+have a hash map speeding stuff
+up<00:09:48.320><c> for</c><00:09:48.480><c> us</c><00:09:48.959><c> so</c><00:09:49.279><c> i</c><00:09:49.519><c> hope</c><00:09:49.680><c> that</c><00:09:49.839><c> this</c><00:09:50.080><c> was</c>
+
+00:09:50.230 --> 00:09:50.240 align:start position:0%
+up for us so i hope that this was
+ 
+
+00:09:50.240 --> 00:09:52.070 align:start position:0%
+up for us so i hope that this was
+helpful<00:09:51.040><c> if</c><00:09:51.279><c> it</c><00:09:51.440><c> was</c>
+
+00:09:52.070 --> 00:09:52.080 align:start position:0%
+helpful if it was
+ 
+
+00:09:52.080 --> 00:09:53.990 align:start position:0%
+helpful if it was
+please<00:09:52.480><c> like</c><00:09:52.720><c> and</c><00:09:52.800><c> subscribe</c><00:09:53.360><c> it</c><00:09:53.519><c> supports</c>
+
+00:09:53.990 --> 00:09:54.000 align:start position:0%
+please like and subscribe it supports
+ 
+
+00:09:54.000 --> 00:09:55.430 align:start position:0%
+please like and subscribe it supports
+the<00:09:54.160><c> channel</c><00:09:54.640><c> a</c><00:09:54.959><c> lot</c>
+
+00:09:55.430 --> 00:09:55.440 align:start position:0%
+the channel a lot
+ 
+
+00:09:55.440 --> 00:10:05.839 align:start position:0%
+the channel a lot
+and<00:09:55.600><c> i'll</c><00:09:55.839><c> hopefully</c><00:09:56.480><c> see</c><00:09:56.720><c> you</c><00:09:56.880><c> pretty</c><00:10:02.839><c> soon</c>
+

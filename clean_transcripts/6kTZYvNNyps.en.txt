@@ -1,0 +1,710 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+let's solve the problem alien dictionary
+and yes this is another problem from the
+blind 75 list
+this is the problem 32 a graph problem
+alien dictionary i've been wanting to do
+this problem for so long now and we're
+finally doing it because now we actually
+have lee code premium
+and again thank you for all my patreon
+supporters for making that possible so
+let's get into the problem now
+and by the way the the link to this
+spreadsheet will be in the description
+if you want to take a look so this is a
+pretty hard
+problem i will admit it's a hard graph
+problem so this problem
+is going to involve the algorithm
+topological
+sort that you may or may not have used
+before you may not have even heard of
+this before
+topological sort involves a d a g a
+directed
+a cyclical graph a graph that has
+directed edges but
+no cycles so the premise is we're given
+a new alien language that uses
+english alphabet letter so it's going to
+be basically lowercase a to lowercase
+z but the ordering of these characters
+is unknown to us now we know in regular
+english
+the ordering is basically a b c all the
+way to z
+right this is the order there's 26
+characters but basically they're saying
+that now we have a different ordering of
+these characters and where
+and the goal for us is to try to figure
+it out
+and what we're given to figure it out is
+basically a
+list of words which happen to be given
+to us
+in sorted order they say lexographically
+sorted that's basically just sorted
+based on
+how regular sorting of words works so
+our goal is to return
+a string of the unique characters that
+were given
+in this new alien language based on the
+words that were given
+and we're going to return this in sorted
+order in increasing order
+based on the new language's rules now if
+there is
+no solution we're returning an empty
+string so we have to figure out what
+that even
+means what does it mean for there to be
+no solution
+and also there could possibly be
+multiple solutions and if there are
+luckily for us we're allowed to return
+any of the valid solutions
+now they tell us that two strings s and
+t
+s is going to be smaller than t if
+at the first letter where they differ
+the letter in
+s comes before the letter in t in the
+alien language and this is pretty
+intuitive like
+if we know if we were given two words
+such as
+apple and banana how are we gonna
+sort these two words well we're gonna
+look at the first character right we see
+okay the first characters are
+different and a we know a is less than b
+right that's how the ordering works in
+english so we're going to check
+just the first differing character since
+a is less than b
+that means a comes first in the ordering
+so how would we order these words
+basically how they're listed right now a
+apple comes before banana what if we
+were given a different word
+such as apple and ape well in that case
+we look at the first characters okay
+they're the exact same so we still don't
+know how to sort them yet right we look
+at the second characters
+p p they're the exact same we look at
+the third characters
+p and e and we know in english
+the letter e comes before p right so
+the correct ordering of these words is
+going to be the opposite it's going to
+be ape
+and then apple right so that's how we
+would sort these words now
+the difference in this problem is that
+the input that we're given
+is already sorted right so these words
+are
+already sorted so we're going to use
+that to our advantage to basically
+figure out the ordering of the
+characters character by character
+and there's just one edge case we have
+to worry about so if
+we're given two words where they have
+the exact
+same prefix right where basically the
+shorter word
+is a prefix of the longer word if that's
+the case
+that means the smaller word is always
+going to become
+first in the ordering so for example if
+we had one word
+ape and another word apes no matter
+what since see since these words since
+this word is basically a prefix of the
+second word
+they match right so whatever the longer
+word is gonna be is always going to come
+after the shorter word and if that was
+not the case what if we were given a
+list of words where that was not the
+case what if we were given
+apes and then we were given ape well
+based on what they just told us that's
+invalid right they say the opposite must
+be true so what we can say is if we ever
+see
+something like this in our list of words
+then we know there's no solution and
+that's going to be
+one case where we return an empty string
+so they tell us that this input list of
+words
+is supposed to be in sorted order so
+we're going to use that to our advantage
+and so remember if these two words are
+in sorted order how was it determined
+that they're in sorted order how was it
+determined that this word
+must come after this word well it must
+be based on the first
+differing character right that's what
+lexographically ordered
+means so let's just go for every pair of
+words
+let's go character by character and find
+the first
+differing character and see what kind of
+information that gives
+us so let's look at the first characters
+well they're the exact same
+let's look at the second characters
+they're the exact same let's look at the
+third characters
+they're different we have a t that comes
+before an
+f so that must mean in the alien
+alphabet
+t comes before f so
+this is not in regular english this
+isn't true but in our alien language
+this seems to be the case
+so let's just keep track of that let's
+just remember okay
+t comes before f
+next let's look at the next two words so
+we're going to look at the first two
+characters and immediately they're
+different so we know that these two
+words were sorted based on this first
+character
+and we know that e comes after w because
+they're in that order we have a
+character w and we know for sure
+e is going to come after that w now who
+knows maybe there are some characters in
+between here right maybe
+it's actually going to be w f
+e something like that right but we don't
+really know that for sure
+all we know so far is this is true and
+this is true that's all we can assume
+from this ordering right we know that
+these first two characters
+are in that order but the remainder of
+the characters might be in any order
+right because
+when words are sorted they're only
+sorted on the most significant
+differing character so now let's look at
+the next two words
+look at comparing each first character
+they're the exact same let's go to the
+next character
+r and t now they're different so now we
+know for sure
+r comes before t so let's go ahead and
+do that
+in our drawing right r comes before t
+now we see that we already have a t in
+our graph right
+and actually i haven't actually
+mentioned that this is a graph but it's
+starting to get intuitive why we would
+want to represent these relationships as
+a graph now right
+we could separately say r t but why not
+include this node that we already have
+so we know
+r comes before t we know this for sure
+now time to finally look at the last two
+pair of words
+look at the first two characters e and r
+so that's the first differing
+pair so we know that e comes before
+r and we know that r is actually already
+in our graph so then we can say okay
+let's
+take this edge and then hook it up over
+here so once you recognize that you can
+use those relationships of characters
+and the relative order of those
+characters to build a graph this problem
+becomes
+doable right then all we need to do is
+now traverse this graph now
+in this example it's pretty
+straightforward right clearly we see
+that the order is non-ambiguous right
+we're going to start with a w
+then e then r then t then f
+and that's you know going to be the
+entire order and you can see
+that this order is also in the output
+that they gave us
+in this example so this matches up
+pretty easily so you'd think okay at
+this point the problem is easy but
+actually there's a lot of different ways
+this graph can be represented
+and traversing the graph itself is not
+super intuitive
+and there are multiple ways to do it you
+can do a bfs solution a breadth first
+search solution
+or you can do a depth first search
+solution and i
+much prefer the dfs solution there's so
+many more like bookkeeping things you
+need to do with the bfs solution
+that i don't really think it's worth
+doing i think the dfs solution even
+though it's recursive is just so much
+better so that's what i'm going to be
+focusing on
+so let's change this problem slightly
+let's say that this
+f actually pointed at the w
+so now if we were traversing this graph
+what the heck would the relative order
+be we could start at any node we could
+start at
+r and then say okay t f w e and then we
+say okay we got back to r so we already
+visited that but is that a valid order
+like this is
+very ambiguous it's not that this has
+multiple solutions it's that this is
+invalid there's a contradiction right
+what if we had a shorter cycle what if
+we had okay w
+and then e comes after w and then w
+comes after e do you see how that's a
+contradiction
+we can't have opposite rules right it's
+basically like if we had an input list
+of words
+that was something like this we had w e
+and then e e so clearly we have a
+different character here meaning e
+comes after w like this but then maybe
+we got that same word w-e
+so how can we say that this list of
+words is sorted
+when you know the same word is in both
+positions and then there's another word
+in between that
+that doesn't make sense basically that's
+how you know that there's a
+contradiction in that case we return the
+empty string there's no real solution
+and we know that because there exists a
+cycle in our graph now what if this last
+word in our input actually didn't exist
+what if we cross it out
+in that case we would never get this
+connection where e
+hooks up to r we have two separate
+graphs right but there's no
+contradiction here it's just that now we
+have multiple solutions so we could say
+okay the relative order
+is either we are tf right basically
+going through this
+and then doing this one right or we
+could even do it in the opposite order
+rtf we right
+that's one way or we could even do a
+breath first search approach right put
+these two first wr then put these two
+e t and then put f right all that really
+matters is that
+this like if there's a connection if
+there's a directed edge from this node
+to this node all that matters is when we
+return the output string
+this character shows up before this one
+and similarly this character shows up
+before this one
+and this character shows up before this
+one etc etc
+we really need to guarantee that that's
+the case so at this point you might
+think okay let's just start
+at the beginning of each of these
+components and then just go through it
+right like say okay w
+e r t f and then just build the output
+string like that
+and i'll show you one reason why that's
+actually not gonna work
+if we were given an input list of words
+like this
+what we would we would end up getting is
+basically a graph that looks like this
+and this is a perfectly valid graph
+right
+what's one valid ordering of this well
+basically
+abc right that's one valid ordering but
+let's say we did a dfs
+search on this let's say we started our
+dfs here
+so we got an a in our output then let's
+say we went to this node first
+then we got a c in our output then
+fro from our dfs then from a you know we
+see this is the base case from then we
+go back up to a we say okay now let's go
+to b
+in our dfs so then we got a solution a c
+b now from our b what we're going to end
+up doing is going to c
+so in reality c should come after b
+but we see in our input it came before b
+so basically from our dfs we got an
+invalid ordering
+of this graph so you know if we're doing
+a dfs from the beginning
+how do we know that we should be going
+down this path
+down to the b before we go down the c
+path
+well the answer is we don't really have
+a good way of knowing if we're doing
+this with dfs
+but there is a workaround solution to
+that
+and the solution to that is going to be
+doing a post
+order dfs so in reality
+yes we're going to be starting at this
+node but we're not going to be
+adding it to our output yet we're going
+to be adding this to our output
+last so okay we're here so now we're
+gonna get to c
+right now we're at c now we're gonna go
+farther down see we see c does not have
+any children right
+so that's our base case so now since
+this is post order
+now we're gonna actually add c to the
+output so now we're going to end up
+popping back to a
+right so we're now back at a so we're
+going to continue the dfs this is post
+order let's do all of our descendants
+before we process a so let's go to b
+okay b
+that's and b has some neighbors down to
+c okay we see c
+has already been processed no need to do
+that again so b
+does not have any more descendants so
+now we can process
+b let's add b to the output and now
+finally we can process
+a right so what you see is that the way
+we did it now
+was not ambiguous right we didn't end up
+we made sure we ended up doing
+all the leaf nodes right the last nodes
+of first and then these nodes
+and then we finally did a last so what
+you can see
+is that we actually built our result in
+reverse
+order which isn't bad because easily we
+can take this and reverse it right so we
+can
+when we get the output of this we're
+going to make sure to reverse it before
+we return
+it so we're going to return abc so
+that's the main idea of what i'm going
+to be doing when we're actually writing
+the code that's kind of how topological
+sort is
+done that's how i was taught to do it in
+school so it's just a dfs
+except we're building the result in
+reverse order
+and there's one last thing we're going
+to have to keep track of what we're
+going to be doing for
+loop detection and really what we're
+going to be keeping track of is two
+things
+similar to how i did it in the picture
+we're going to be marking if a node has
+already been visited meaning it's
+already been let's say
+processed or whatever and in this case
+we know that there weren't any loops
+well actually one thing i want to say is
+first we saw that c was processed right
+then we went back to a and then we went
+to b
+right when we went from b to c we saw
+that c
+was already processed but that doesn't
+necessarily mean that we have a cycle
+in our graph because yes this was
+processed but it wasn't
+currently being visited if we went to c
+and then
+c went back to b right and then we got
+to b and then we tried to go
+to c again that would indicate a cycle
+basically if this was
+currently being visited but once we once
+we go from here
+see it's a base case and then pop back
+to a
+then we're saying this is no longer
+being visited so what we're going to be
+keeping track of is two things
+we want to know if a node has already
+been visited meaning it's you know
+already been processed pretty much
+and we also want to know if a node is in
+our current
+path so we're gonna be doing that with a
+dictionary and
+if uh so every time we visit a node
+we're gonna say it's added to the
+dictionary but we're gonna give it a
+false value in the dictionary and once
+it's it's actually in the current path
+that we're traversing
+then we're going to give it a value of
+true in the dictionary
+with that being said we can now jump
+into the code the overall time
+complexity is just going to be the
+number of characters that were given
+in the input because that's basically
+going to determine how big our graph can
+be and of course we're going to have to
+traverse the entire graph
+so it's the the time complexity is just
+going to depend on the number of
+characters
+so this is going to be a long one about
+30 lines of code so the first thing
+we're going to want to do
+is going to create that adjacency list
+right basically based on the ordering of
+the characters
+so for every single character in our
+entire list of words what we want to do
+is map it to
+let's say a set we could do a list but a
+set
+is gonna make sure that we don't have
+duplicates so we're gonna go through
+four
+every word in our list of words and then
+for every character
+in each word we want every character to
+be mapped
+to a set and then we want to go through
+every pair of words so for i
+in range the number of words that were
+given minus
+one so that we would go through every
+single pair let's get
+each pair so word one and word two
+word one is going to be the word index i
+word two is gonna be the word at index
+i plus one so let's get the minimum
+length of both of these two words so
+let's get the minimum of the length of
+each of them
+and the first thing i'm going to check
+is basically that base case that edge
+case that we first mentioned so
+mainly if the minimum length of each
+word
+is the exact same right meaning the
+prefix of the words is the exact same
+but the first word is longer than the
+second word in which case we know that
+we have an
+invalid ordering right that's kind of
+the edge case that they sp
+explicitly mentioned so the length of
+word one
+is greater than the length of word two
+they have the exact same prefix meaning
+that it's an invalid ordering basically
+so in that case we would have to just
+return an empty string
+if that's not the case we want to go
+through every single character
+uh between these words so basically in
+range
+min length and our goal is to find the
+first
+uh differing character right so if the
+characters are the same we're not going
+to do anything but if the characters are
+different so
+the character at position j in word one
+is different from the character at
+position j
+in word two other they're different not
+equal then we're gonna break but before
+we break
+we're breaking because we only want the
+first differing character so we don't
+want to look at any subsequent
+characters but
+before we break we want to add this to
+our adjacency list so we want to say
+that the character in word two comes
+after the character in word one so we're
+going to indicate that by saying okay
+word one
+is the key at index j and to that we're
+going to be adding
+word to so that's our adjacency list is
+going to work out
+so once we do this we can actually start
+doing our dfs and remember for our dfs
+we're going to be making sure to keep
+track of visited nodes
+so we're going to use a hash map or
+dictionary and for each
+node or each character we're going to be
+mapping it to two values
+false basically means that the character
+has been visited
+true means visited and
+it's been it's in the current path right
+so
+clearly if it's in the current path that
+means it's been visited right so
+saying it's visited is basically
+redundant but true
+indicates that it's in the current path
+if it's not added to the visit
+dictionary at all that means it hasn't
+been visited at all
+we also want to maintain a result and
+remember we're going to be building this
+in reverse order so i'm actually going
+to make it a list
+initially and then we're gonna join the
+characters in that list at the end
+in reverse order so we can define our
+dfs function all we need to do is pass
+in the current character or node that
+we're visiting
+now if character is already in visit
+then we're just going to return
+now what are we going to return we're
+going to return the value that's stored
+in visit so
+if it's already been visited then we're
+just going to return false if it's
+if it's in the current path then we're
+going to return true now if this dfs
+ever returns true that means we saw a a
+character or
+node that was already in this in the
+current path
+and we saw it twice that means we
+detected a loop so if this returns true
+that's how you know we detected a loop
+if this
+if this is not the case then what we're
+going to say is okay visit
+to to visit at this character we're
+going to be adding true because not only
+has it been visited
+it's also in the current path and then
+at the end
+before we return we're going to say okay
+visit of c is now
+false meaning it's still been visited
+but now it's false because it's no
+longer in the current path that's what
+we're gonna do right before we return
+but
+before we do that we're gonna go through
+a loop we're gonna go through every
+neighbor or descendant or
+character that comes after this
+character so basically from our
+adjacency list that we built earlier
+we're going to go through every
+character that's a neighbor of c
+and we're going to run dfs on that
+neighbor now if this returns false so if
+or rather if this returns
+true that's how you know that we have a
+loop so if this returns true then we are
+going to return true
+immediately telling you know the
+recursive call that we basically
+detected a loop and we can return
+immediately okay so that's pretty much
+all for our dfs but don't forget this
+was a post order dfs so mainly
+after we've done the recursive call
+that's when we're finally gonna say okay
+to
+our result we can finally append this
+character remember we're actually
+building this in reverse order
+so once we've done the entire dfs we're
+gonna have to return the result in
+reverse
+order so now we defined our dfs so now
+let's actually
+call the dfs so for every single
+character and we don't really need to
+actually
+start at the beginning character of the
+graphs we can actually start at any
+single character and it'll still
+work out the same the reason being is
+because we're doing it in reverse order
+and if you don't believe me you can try
+drawing out the picture and seeing what
+would happen if we started it in the
+middle of the graph somewhere
+and it actually does surprisingly work
+out as long as you do mark the
+characters as visited once you actually
+visit them so we go through every single
+character in our adjacency list and then
+we call dfs
+on that character and if this returns
+true
+then we are also going to return then
+immediately we're going to turn the
+empty string meaning we detected a loop
+now if that's not the case
+that's when we're actually going to
+return the result but remember the
+result is a list so what we're going to
+do
+is actually join every single character
+in
+that list in result but before we do
+that we want to make sure we reverse
+the result and then we perform that join
+and return
+so i hope this was helpful if it was
+please like and subscribe it supports
+the channel a lot and i'll hopefully see
+you pretty soon

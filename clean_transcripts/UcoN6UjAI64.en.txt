@@ -1,0 +1,265 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+let's solve the problem reverse bits and
+this happens to be another problem from
+the blind 75 list or list of common leak
+code problems that we've been tracking
+in this spreadsheet we have a solution
+for the vast majority of them and i'll
+be doing a few more of the binary
+questions the one today we'll be doing
+is this one reverse bits so this is a
+good problem to kind of go over and
+learn or refresh yourself on the bit
+manipulation operations so we're given a
+32-bit unsigned integer and basically we
+want to reverse all of the bits of this
+integer so like in this example this is
+the integer represented in binary of
+course we might not be given the integer
+in binary you know that we might be
+given the integer 4 which in binary we
+know it looks like this and then we'd
+want to reverse
+all of the bits for it so basically
+we would you know the reversal is going
+to look something like this
+right and then we want to return that
+reversed integer of course we'll be
+returning a one value so let's say this
+is the 32-bit integer and let's just say
+it's four just because we don't want to
+do a super long binary integer like this
+there are many ways to kind of do this
+problem right suppose we declare an
+output variable for result and this is
+where we put the last bit the
+31st bit and then over here is where we
+put the zeroth bit right so we have 32
+bits in the output initially we'll just
+set all of these to
+zero right
+so we want to go bit by bit in the input
+right we'll start at the ones bit we
+want to get what is over here if it's a
+zero or if it's a one and then we want
+to take it and then put it over here in
+this case it's a zero so we're just
+going to put a zero over here right
+basically we're reversing right we're
+taking the bit from here putting it in
+this spot right just in reverse order
+pretty much like we would do with
+reversing a string next we're gonna go
+to this one put it in the next spot so
+we'll have another zero here and then
+we'll take a look at this one put it in
+the next spot so we'll have a one here
+and then since the remaining of all of
+these are zeros then we're just gonna
+have zero zero zero uh in the entirety
+of this so uh obviously before when i
+showed us just reversing these four we
+ended up getting an output of one but
+you can see when we actually do it with
+32 bits the result changes right so and
+they specifically tell us this is just a
+32-bit integer so this is going to be a
+pretty large integer and we're this is
+what we're going to end up returning
+right so it's pretty straightforward to
+understand what exactly we're doing at
+least with the solution that i'm showing
+you now the question is how can we
+actually do these operations for example
+how can we go bit by bit get the first
+bit get the next bit get the next bit
+all the way until we get to the end
+right how can we go and get each bit
+well one way in binary is to just take
+uh this bit right and it with a one the
+and operation right logic and what we're
+saying is if
+since this is a zero right if we take
+zero
+and it with one we get the output to
+that is going to be zero right which
+makes sense because we want to know if
+this is a zero or a one so if we end it
+with a one we'll get zero if this value
+is a zero that's exactly what we want if
+this value is a one and we end it with a
+one then we get one right which which is
+good because if this is a one then we
+want to get a one in the output so
+that's the operation we're going to do
+logic and to figure out what the bit is
+now that's easy in the case we're just
+looking at the ones place over here but
+what if we want to look at this next
+spot we want to look at the
+uh two's place right and then what if we
+want to look in this spot etc etc how
+are we going to do that well instead of
+taking this input value and then ending
+it with a one we're going to end it with
+a one
+shifted to the left each time we you
+know move a different spot in the input
+right how can we shift a one to the left
+that's also another binary operation so
+for example if we had something like
+zero one and then we do the shift
+operation to the left this is a bit
+shift operation if we shift it to the
+left all what it does is it shifts all
+of the bits to the left by one and it
+replaces the one spot with a zero so in
+the output we'll get this when we shift
+this by one we'll get this we'll have
+shifted the bit to the left by one and
+notice how if we have a one over here
+and then a zero over here and then we
+have zeros all the way for the remaining
+of it when we get the output value it's
+also going to be a 32-bit integer right
+but this is the only spot we're gonna
+care about because the rest of the spots
+are gonna be zero by default because if
+we and zero with anything else we're
+gonna get a zero in the output whether
+you know we have a one over here or not
+if we and these together we're gonna get
+a zero in the output okay so that covers
+how we're gonna get each of these bits
+now how are we going to put them in the
+output remember how initially we had a a
+result that was just filled with zeros
+right and we're going to start at the
+beginning take every you know if we have
+a one here we want to insert this one
+over here if it's a zero over here then
+we just want to leave the output as a
+zero and then we want to move to the
+next spot to the right and do the exact
+same thing so we're going to follow a
+similar pattern here if we had a 1 we
+would take the 1 shift it to the left by
+31 right because that's going to be the
+spot all the way to the left we're going
+to take this shift it to the left by 31
+so then we'll have a suppose a 1 here
+and then 0 0 0 what we want to do in
+this case is not logic and but we want
+to do logic or when we're trying to
+figure out what to replace it with so
+for example if we had a 0 here we would
+want to replace this with a 1. it works
+because we take 0 or it logic or it with
+1 we get a 1. if we take 0 logic or it
+with a 0 we get a 0. so if we had
+instead of having a 1 here if we just
+had a 0 here we wouldn't want to replace
+this we won't want to leave it as a 0.
+so that's what logic or can accomplish
+for us and similar to the previous
+example if we had something like this
+and we were trying to logic or this
+right we would want to put this one in
+this spot we don't want to get rid of
+this one right suppose we had already
+put a 1 over here we don't want to get
+rid of it so notice how if we if we if
+we take this logic or it with this we
+will end up changing this bit this will
+be changed to a one but this bit will
+stay the same which is what we want to
+do because if we're gonna have a zero
+here and we're gonna have zeros in every
+other position the other remaining bits
+are not going to end up getting changed
+if they are ones they're gonna remain as
+ones if they're zeros they're gonna
+remain as zeros so those are some kind
+of basics about bit operations logic and
+logic or
+bit shifting and that's kind of all you
+need to be able to solve this problem in
+the simplest way so now i think we are
+ready to dive into the code and it's
+going to be a little bit shorter than
+you might expect let's declare that
+result variable that i said so it's
+going to be a 0 meaning all 32 bits of
+it are going to be initialized as 0 and
+we're going to go through every single
+bit in the input end so i'm going to say
+for i in range 32 because we know it's
+going to be up to 32. i think we could
+change the logic of this while n is
+you know non-zero and we could
+continuously update n i'm just going to
+do it this kind of simple way so
+remember the first thing we want to do
+is we want to get the i th bit of n so
+how can we do that well remember we were
+going to take n
+and it with 1 to get the i bit but if we
+just end it with 1 every single time
+we're only going to get the first bit
+right we want to get the i bit so
+instead of ending it with one well we
+can take n shift it to the right by i i
+don't think that's what i said in the
+drawing picture i thought i think i said
+we're gonna take the ones a bit and then
+shift it to the left but if we actually
+take n shift it all the way to the right
+then in n we will have the the target
+bit that we're looking for and it will
+be in the one spot so then we can just
+take this and end it with one and then
+we'll get the result bit that we're
+looking for in the ones spot so this bit
+will be either one or it will be zero
+and then we want to logic or it with the
+output to put that bit in the output how
+can we do that is it going to be enough
+to just say result logic or the bit no
+because if we do it like this we're only
+going to be updating the one spot of
+this result but we want to be updating
+it in the reverse order we want to start
+at the largest bit and then work our way
+down how can we do that well we have
+this i variable right it's going to go
+from 0 to 31. so how about we do this we
+shift our bit to the right by 31 minus i
+so on the first iteration of the loop we
+will be getting the first bit from n and
+putting it in the 31 spot of the result
+and the next iteration will be doing the
+opposite will be getting the bit in
+index 1 from n and putting it in index
+30 in the output so then we're going to
+keep doing that and
+this is the operation we're doing and we
+want to set the result equal to the
+result of this logic or operation and
+that is the entire code once we're done
+with that we can go ahead and return the
+result so this is the simplest way to do
+it it is constant time big o of one
+because we're guaranteed that there's
+going to be 32 bits so
+the solution is not going to scale
+regardless of whatever the input n is as
+long as it's 32 bits and where you know
+the memory we're using as well is just a
+single variable right so this is just an
+o of one time and space solution so i
+hope that this was helpful i hope it
+taught you a little bit about binary
+operations if it was please like and
+subscribe it supports the channel a lot
+and i'll hopefully see you pretty soon

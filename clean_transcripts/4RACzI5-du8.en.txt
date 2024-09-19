@@ -1,0 +1,495 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+let's solve
+palindromic substrings and this is
+another problem from the leak code
+blind 75 list a list of 75 very good
+leak code problems to solve and this
+time we will be doing palindromic
+substrings down here
+and so we are getting one step closer to
+filling out this entire list and this
+problem palindromic substrings is
+actually really similar to another
+problem i've solved
+longest palindromic substring so if you
+would like to i'd recommend watching
+this video as well longest palindromic
+substring i will probably link it in the
+description below
+so simply we are given a string s and we
+just want to return the total number of
+palindromic sub strings contained in the
+string s
+and as you may know a palindromic
+substring
+is basically a string that can be read
+backwards and it's the same string so
+you know a
+a if you read it backwards it's the
+exact same string right
+a b a you know this is the same string
+reversed
+you know because the first character is
+the same as the last character
+and then in the middle we're just left
+with one character and
+you know basically that kind of pushes
+us towards a base case so
+as you may know there's two types of
+palindromic substrings
+strings of odd length right so for
+example just a single letter a
+that's a palindrome right it's it's the
+same backwards
+if we add a b to the beginning and a b
+to the end it's still a palindrome
+because now we
+expanded it outwards with the exact same
+character
+similarly we can do the same thing with
+even length sub strings as well if we
+have two a's
+in the middle then of course this is a
+palindrome and then
+if we continue to expand outwards we add
+a b at the beginning
+and we add a b at the end it's
+continuously
+going to be a palindrome because these
+characters are also matching now if we
+instead of adding a b we added a
+c at the end the inside is a palindrome
+this string of length
+two but now if we expand outwards this
+is not a palindrome right yeah this just
+it can't be read backwards c is not the
+same as b it's not a palindrome
+so that's a little bit about palindromes
+even an odd length
+but so how can we apply that to our
+input
+so in this case we are given a string a
+b c now of course we have three
+different
+palindromes because each character by
+itself is a substring of course
+and each of those by themselves is a
+palindrome as well so that's three now
+is any other substring for example a b
+that's not a palindrome
+bc that's not a palindrome abc that's
+also not a palindrome that's basically
+all the substrings available to us
+so we only find three so we're going to
+return three so let's
+understand how we can do the brute force
+solution which is actually big o of n
+cubed and then we can actually optimize
+it a little bit understanding how even
+an odd palindromes work
+and then we can get a big o of n squared
+time complexity solution
+so let's say we're given a string that
+looks like this
+if we just start brute forcing it we
+want to go through every single
+substring right so every single
+substring starting at this first
+position would be something like this
+right
+there's these substrings right then we'd
+want to go through every single
+substring starting at this position
+which would look something like
+this right in total there's going to be
+n squared sub strings right
+and for each substring for example you
+know this
+one we need to determine if it's a
+palindrome or not and we know it you
+know that's not
+a difficult algorithm to write we could
+have two pointers one at the beginning
+one at the end
+we basically keep comparing the
+characters and making sure that they're
+the same right so
+and for a substring like this we'd also
+have two pointers right compare that
+okay these two
+characters are the same so then we can
+move inward right we'd shift our
+pointers here
+and then we'd see okay this character is
+also the same and then you know we we go
+through every character so we determine
+yes that's a palindrome then we can
+increment our count of palindromes right
+we'll call that our result variable
+so then we'll add one to it right
+because that's ultimately what we're
+trying to return the number of
+palindromic substrings inside of this
+string s and clearly finding and
+determining that a string
+is a palindrome is also big o of n
+so since there are n squared substrings
+in the entire string
+s and for each of those substrings we
+have to determine that it's a palindrome
+we're going to multiply it by n so this
+is going to give us an
+n cubed time complexity now we can
+improve this
+and it's going to require us to solve
+this problem in a different
+order what we're instead going to do is
+we're going to go through every single
+position in
+this right instead of finding for this
+position all the substrings that
+start at this position we're going to
+find all the sub strings
+that this position is the middle of so
+instead of you know just going to the
+right we're actually going to expand in
+both directions we're going to go
+through
+all sub strings where this position is
+the middle position
+now clearly this string itself is one
+string right and
+this is a palindrome so we're gonna have
+our left and right pointer just
+initially at this position
+we're gonna see that okay both of these
+characters are the same right so then we
+can take our result
+add one to it right so we found so we
+did find one palindromic substring
+and then we're going to try to expand
+outward right our left pointer is going
+to go here our right pointer is going to
+go here
+clearly we go out of bounds though to
+the left right so
+so basically what we're saying is
+there's only one substring where this is
+the middle position of
+and then we're going to do the same
+thing for here so from this position we
+want all sub strings where this
+is the middle of so we're going to have
+our left and right pointer initially
+here
+yes this character you know our left and
+right pointer point at the same
+character so we
+we found one palindromic substring just
+the single character itself
+then we are going to take our left and
+right pointers and then shift them so
+left is going to go over here
+right is going to go over here right so
+now let's compare left character and
+right character
+since we already know this middle
+portion
+is a palindrome right now we only have
+to compare the left and right characters
+the new left and right characters if
+they are equal right which they are a
+equals a
+right so therefore we found one
+additional palindrome this palindrome of
+length three
+where this character is still the middle
+position right so now we found an
+additional palindrome so i think our
+total number of palindromes is up to
+three now
+and once again we're going to take our
+left pointer shift it to the left
+right pointer and shift it to the right
+now clearly once again our left pointer
+goes out of bounds
+so you know this is we can't really find
+any more sub strings where this
+is the middle position but do you notice
+how
+what we just did right we we cut down on
+repeated work
+we found that this is a substring and
+then in another single operation we
+found that this is a palindromic
+substring as well
+that cuts down on the repeated work
+whereas before we would have done
+something like okay
+you know this is a polynomic substring
+then we
+increase it then we have to look at both
+of these and
+you know if we continue to increase it
+if we go all the way here then we have
+to still
+check okay this is the same and now this
+is the same right we're
+continuing to do repeated work if we
+start from the left and then expand to
+the right but if we start in the middle
+and expand left and right then we
+eliminate repeated work
+so let's do the same thing from here so
+this is a palindromic substring right
+left and right point at the same
+character
+then we expand once to the left once to
+the right
+are these characters the same right are
+a
+and b the same they're not the same so
+we knew that the initial
+substring just in the middle over here
+the one the single character
+was a palindrome but when we add this
+character and this character it's no
+longer a palindrome this is not a
+palindrome so no matter what we do now
+if i expand one more to the left and
+expand one more to the right
+even if these characters were the same
+assume we had an a in both positions
+it doesn't matter because the sub
+problem the substring in the middle
+is not a palindrome so therefore no more
+substrings
+expanded from the middle of this
+position to the left and right
+none of those additional substrings are
+going to be palindromes
+so so far our count of palindromes is at
+four i believe so
+now let's go to the last position so we
+want to expand
+from this middle position so we're gonna
+go so initially we're gonna say okay
+this itself is a palindrome so we can
+change our count of palindromes to five
+we try to expand left and we try to
+expand right but again we go out of
+bounds to the right side
+so we're done so in total we found five
+different
+palindromes but it turns out we actually
+missed a couple
+we missed this palindrome of length two
+and we missed this palindrome of length
+two
+how is it that we missed palindromes and
+how is it that they're both
+length two notice how we were starting
+at each middle position
+so this was a length of one right as we
+add the adjacent positions then we're
+increasing the palindrome
+to length three and then if we added a
+couple more we'd increase it to length
+five so we're only
+getting palindromes of odd length if we
+want to get
+palindromes of even lengths we have to
+start
+at every single even position so we'd
+have to start
+at here and then you know this is a
+problem this is a substring of length
+two and then we'd expand
+by one more so then we'd get a
+palindrome of length four and etcetera
+etcetera just keep increasing it by two
+so this is how we're going to get
+palindromes of even length
+so when we do this we're gonna have our
+left pointer initialized here and
+in this case the right pointer is
+actually just gonna be left
+plus one before we were doing it as left
+and right both starting at the same
+position in this case
+left right is going to be left plus one
+and so in this case we see
+these characters are equal therefore
+they are palindromes so we can increase
+our count from five
+to six we expand outwards left and right
+but we see left is going to be out of
+bounds
+so then we can stop so next we're gonna
+basically do the same thing for every
+pair of adjacent characters right to
+find even length palindromes so here
+left and right are once again the same
+so
+we're gonna get our total to be seven
+when we expand to the left and right
+we see we have an a and we have a b
+these characters are not the same so we
+can't continue to expand and we don't
+increment our result so now we have
+seven palindromes this is the last even
+length sub string that we're going to
+start at and
+the left and right characters are
+clearly not the same so we don't
+continue to expand and we don't
+increment our result so
+we're done with everything here we get a
+result of seven
+and the overall time complexity of doing
+it like this
+it's going to be big o of n because for
+let's say the odd lengths
+uh palindromes we're starting at every
+single position
+and potentially expanding outwards all
+the way to the end of the string so
+that's going to be
+an end time operation so since we're
+doing it for every single character in
+the array it's going to be big o
+n times n right so that's that's
+basically how we're doing the odd length
+palindromes and the
+the same time complexity is going to be
+true for even length right we're
+basically going through every pair
+of characters which there are you know
+big o of n of them and then we're still
+expanding outwards
+so that's also going to be big o of n
+times n now if you add these together
+we're still going to get a overall time
+complexity of big o
+n squared so that's the overall time
+complexity
+in this solution and coding it up is
+pretty easy so let's get into that
+so let's keep track of a single result
+variable and it's initially going to be
+zero it's going to be the count
+of the palindromic substrings so we want
+to go through every single position
+in the string s and expand from it right
+that's going to give us the
+odd length palindromes so we're going to
+initialize our left
+and right pointers both to be set to i
+because these are odd length palindromes
+and while
+left is inbound so while left is greater
+than or equal to zero
+and right is inbound so right is less
+than the length of the string
+and this the position at left in our
+string is equal to the position
+at right in our string that means we
+found a palindrome so let's
+increment our result by one let's shift
+our our left pointer to the left
+and let's shift our right pointer to the
+right and we're going to continue to do
+that
+while the pointers are in bounds and the
+characters are the same then we're going
+to continue to increment the number of
+palindromes so that's going to give us
+the palindromes of odd length we can we
+don't have to do a separate for loop for
+the even length palindromes let's just
+do the exact same thing we've done up
+above here
+except in this case we're going to
+initialize left to be
+i which is what we did before but we're
+going to initialize
+right to be i plus 1
+which is going to give us the even
+length palindromes
+and once we've done that we can
+literally just copy and paste this for
+loop up above
+down here and then that'll calculate the
+even length palindromes
+and then once that is done we can go
+ahead and return our result
+now as you can see this solution works
+that's the entire thing
+it's very efficient but maybe your
+interviewer will want you to
+you know this is copy and paste and
+sometimes they don't like copy and paste
+we can
+basically take these two and condense
+them down into a single function
+so i'm just going to do that even though
+i'm sure you could probably figure out
+how to do it in this case it's not too
+bad so i'm going to make a function
+called count palindromes and we'll pass
+into
+this the string s and the left
+and right pointers that we are
+initializing
+and so basically what i'm going to do
+here is take this and just copy and
+paste it into here
+right and so you can see that we're
+giving this function the information it
+needs we're giving it the string s we're
+giving it pointers left and right
+let's just give it a variable here let's
+declare it result
+is initially going to be 0 and then this
+function is just going to return result
+which is the number of palindromes it
+can count
+starting at these left and right
+pointers so now we can
+you know change this so here we're
+trying to count the odd length
+palindrome so
+instead of doing this for loop we can
+just say let's add to the result
+the whatever this function returns so
+count pally
+passing in the string s passing in the
+left pointer
+and passing in the right pointer which
+we just declared up above here
+and getting rid of this while loop we
+can do the same thing so
+add to result whatever this function
+returns count pali
+passing in s passing in left
+and passing in right and if we really
+want we can take
+left and replace it with i and right and
+replace it with i
+plus one so then we can get rid of these
+two lines
+and up above do the same thing so
+replace left and right with both
+i and then get rid of this line so this
+is a pretty condensed
+version of this function so with this
+little helper function that we have we
+can cut down on
+that repeated code that we were writing
+and basically get the same result
+same efficiency same everything so i
+hope that this was helpful
+if it was please like and subscribe it
+supports the channel a lot
+and i'll hopefully see you pretty soon

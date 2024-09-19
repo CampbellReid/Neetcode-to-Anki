@@ -1,0 +1,265 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+let's solve
+leak code 66 plus one we are given a
+non-empty array of decimal digits
+and so by decimal they basically mean
+every digit is gonna be from 0
+to 9 right that's decimals any digit
+between 0 and 9
+and this array of digits is supposed to
+represent a
+non-negative integer and our job is just
+to increment this integer by one so it
+seems pretty straightforward right
+and they basically tell us that the
+digit is stored such that the most
+significant digit is on the left side
+basically how you would assume that an
+integer would be and we can assume that
+the integer does not contain
+any leading zeros which is pretty
+intuitive right so for example let's
+take a look at this
+this is an array one two three
+so this array represents the number 123.
+we want to increment this by one how
+easy is that well obviously we'd start
+at the right side
+right and then increment this digit by
+one so
+three plus one is of course four right
+so we change
+the three into a four therefore this 123
+becomes 124
+and then the output array becomes one
+two four
+second example is pretty similar this
+represents
+4 321 increment the
+first the right hand digit by one so
+basically change it into a two
+and then that's the output array so that
+seems really really easy doesn't it
+but it's a little bit misleading they
+don't show you one
+case that will basically change these
+two examples
+into difficult examples let's say that
+our array was this
+let's say this was our input array right
+and remember what we're trying to do
+here right we're just trying to add
+a single number so when i draw it like
+this it becomes a little more obvious of
+what exactly we're going to end up doing
+we're going to add 1
+right so we're going to add 1 to this 9
+right so 9 plus 1
+becomes 10 right so can we change this
+digit to a 10 if we did that we would
+end up with 9
+9 10 right and that represents the
+integer
+9910 well when you add 1 to 999
+it definitely doesn't become 9 000 so we
+did something wrong right we forgot one
+thing
+remember back to your elementary school
+math right nine plus
+one is ten right but we know that
+there's a carry so nine plus one
+becomes zero and we take a one and
+carry it over here right so that's what
+the algorithm is it's basically adding
+keeping track of this carry so again
+we're going to have
+nine plus one that's going to end up
+being again zero and we're going to have
+another
+carry over here so again nine plus one
+right so now you kind of see
+that this is this problem is not just a
+single addition it's going to be a
+while loop of continuous additions
+potentially right if we got an example
+such as this one
+so again 9 plus 1 becomes 0 and again
+we carry a 1 over here but in this case
+we ran
+out of digits notice that right we ran
+out of digits so what are we gonna do
+with this last
+carry one we're just gonna take it and
+add it over here so i know i'm kind of
+drawing over the elite code explanation
+over here
+but hopefully you can see this basically
+we got the ex
+the answer that we expected right when
+you add 999
+with one you expect to get a thousand
+right
+so our output array is actually gonna
+have these four
+digits zero 0 0 and
+1. so this is what our output array is
+going to actually end up being
+in this example and so basically these
+are the main cases we have to go through
+right if you have if you have a 9
+already here it's not going to turn into
+a 10 it's going to turn into a 0 and if
+we
+ran out of digits but we still had a
+carry we're basically going to be
+appending that carry
+to our integer array but notice how we
+are traversing the array in reverse
+order what i'm going to do though is i'm
+actually going to reverse the entire
+array and then so basically i'm going to
+turn it into 3
+2 1 so that we can start at the
+beginning when we add our digit 1
+to this and then at the end i'm going to
+take the
+array and then reverse it again so that
+we can get it back into the format that
+we want
+then we can return the the array in that
+correct
+format so with that being said this is a
+this is you know pretty self-explanatory
+that this is an uh linear algorithm
+because we're having to iterate through
+the entire input array which is going to
+be size
+n so the overall time complexity of this
+is going to be big o of
+n we're not really needing any extra
+memory other than the input array
+so the memory complexity is just going
+to be big o of 1.
+that being said let's jump into the code
+it's not too bad just a couple edge
+cases we have to worry about
+so like i said we're going to first
+reverse this
+integer array and we can do that in
+python just like this pretty simple
+and i'm gonna keep track of two
+variables i'm gonna keep track of the
+carry and i'm gonna call that just one
+because i'm bad at naming things
+and we're also gonna have one other
+variable i
+for the index of the position of digits
+that we're currently at so
+one i'm going to initialize to the value
+one because remember we do have to at
+least
+add a single one to this digit
+i i'm going to initialize at zero just
+at the beginning of the digits
+array so we are going to continue to
+iterate through
+digits while while our one digit
+is equal to one and we can basically
+just
+you know say this as the condition now
+it's possible that our
+i could be incremented so much that it
+becomes out of bounds so one thing we're
+going to check is that while i
+is at least in bounds and the else case
+is going to be if the
+i goes out of bounds so if the i is
+still in bounds then we're going to be
+incrementing of course right
+but there's one case that we do have to
+handle one special case what if
+digits at position i is equal to nine
+that's the special case right that's the
+case where we get our
+carry integer so if this is equal to
+nine
+one is going to stay as the value one
+right and we're guaranteed that one is
+right now one like i guess i should have
+named this something different but this
+because this is gonna be the value one
+if our loop is executing at
+all so this is gonna remain one so we
+don't have we don't actually have to
+write that
+but as we add one to this digits of i is
+gonna be
+reset back down to zero but if
+we're not dealing with this special case
+meaning if the digit is not nine
+then we can ordinarily just increment it
+by one right so
+otherwise we're just gonna increment
+this by one and if this was not
+nine that means we're not going to have
+a carry anymore right so we can take
+this
+one and then change it into a zero
+because we don't have a carry anymore we
+don't have to continue adding anything
+we can take this back down to zero
+now the else condition is when we go out
+of bounds right that means we reach the
+end there's no more digits to add on to
+anymore but we still have a one value
+what are we going to do in that case
+well
+in that case we're just going to take
+digits and then append one to it right
+because
+we're adding a new digit into this
+digits array right
+and also since you know we don't have a
+carry anymore
+that means we can take our one and now
+reset it again back down to zero right
+this is going to terminate our while
+loop which makes sense right if we
+appended a one
+that means we don't have any more to add
+on to our digits array
+and the one thing you don't want to
+forget with while loops is to make sure
+you increment your
+index so i'm going to make sure to do
+that regardless of which
+if condition executes we're going to be
+incrementing i
+and last but not least we're going to be
+returning our digits array but remember
+how i reversed it at the beginning
+so we're going to undo that reverse and
+reverse it again
+so that we have it in the correct format
+that they wanted
+and to be honest you probably don't need
+to reverse this
+you could just traverse the array in
+reverse order if you wanted to but i'm
+really lazy and i don't like writing
+that code i like going from left to
+right
+so i just wanted to reverse this so this
+is the entire code it's not too bad when
+you make sure you handle the edge case
+of nine
+and you make sure you keep track of the
+what value the carry happens to be
+whether it's zero
+or one so other than that i hope that
+this was helpful
+if it was please like and subscribe it
+supports the channel
+a lot and i'll hopefully see you pretty
+you

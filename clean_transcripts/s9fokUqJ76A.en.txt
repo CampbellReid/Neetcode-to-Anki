@@ -1,0 +1,413 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+let's solve
+generate parentheses so we are given a
+pair
+a certain number and pairs of
+parentheses and we want to write a
+function
+to generate combinations of all
+well-formed
+parentheses and so you can see that
+these are the examples
+and by well-formed they basically mean
+like when you're writing code
+you know you're nesting parentheses you
+want
+uh them to be nested in a valid way
+right like
+we can't have a right parentheses
+come before a left parenthesis right
+like this
+could not be possible we would have to
+do it like this
+right so you can see for each matching
+for each left parenthesis we have a
+matching right parenthesis that comes
+at some point after it right so like in
+the first example
+the first three are left parentheses
+then the next three
+are right parentheses and when they say
+n equals three that means we have three
+pairs of parentheses so in total
+we have six parentheses because a pair
+is
+two parentheses and three are going to
+be open parentheses
+and 3 are going to be closed parentheses
+right so this is a open parenthesis this
+is a closed parenthesis
+you can see that when n equals 1 there's
+only one possible way to
+make them valid because this is one way
+and the other way would be this
+and we know that this is invalid so how
+can we
+solve this problem let's just try out
+the
+backtracking solution kind of right like
+a a sort of brute force approach
+how would we even do a brute force
+approach let's say
+n equals three so then we have three
+parentheses
+what does that tell us about valid
+parentheses right like this is one
+valid parenthesis that satisfies this
+condition right we have three open
+parentheses three closing parentheses
+well the first thing it tells us is that
+we need
+three open parentheses and three closing
+parentheses right that
+much is pretty obvious right like you
+could probably figure that out by
+yourself
+if we have three pairs then we
+definitely need three open and three
+closing parentheses so in total
+six parentheses but what about the order
+of parentheses so let's say i have
+so far i'm empty right we're empty can i
+start out with an open parenthesis
+yes i can right but can i start out with
+a closing parenthesis
+no we know that this is invalid no
+matter what i do now
+this is always going to mess up our
+parentheses
+so we can't start with a closing
+parenthesis we can only start with an
+open parenthesis okay but now let's say
+i have one
+open parenthesis now what can i do can i
+have another
+open parenthesis yup because our limit
+is
+three open parenthesis and so far we
+have two so we're allowed to do that
+what about a closing parenthesis can i
+have a closing parenthesis
+yes because so far our open count
+is one and the initially the closing
+count
+is zero and i can by adding this
+parentheses
+i'm just changing the closing count to
+one now right
+so now let's look at it now can i add a
+another open parenthesis yes i can
+because the limit is
+three open parenthesis and so far we
+only have one
+so i'm allowed to add a open parenthesis
+what about
+a closing parenthesis can i add a
+closing parenthesis right now
+no because you see that so far we have
+one
+pair right this pair of open and closing
+parentheses and then when you get rid of
+that pair then we're just left with a
+single closed parenthesis
+this closing parenthesis will never have
+a matching
+open parenthesis on the left of it so we
+can't add this parentheses
+and how would you figure that out from
+code well
+just take a look at the count we have so
+far before we add
+the parentheses we have a count of one
+for closed
+we have a count of one for open
+basically what this
+tells us is that we can only add a
+closing parenthesis if the count of
+closing parentheses
+is less than the open count we can only
+if
+this is true are we allowed to add a
+closing parenthesis
+so if for example if i were to add
+another opening parenthesis
+now we update our open count to two
+so now we have two open parenthesis
+right so two
+is open one is closed from over here
+right
+so now i'm allowed to add a
+closing parenthesis right so basically
+let's say if we're gonna do backtracking
+these are the two rules that we have to
+follow
+this is basically our base case once we
+have three open and three closing
+parentheses
+then we have a valid uh parenthesis
+formation right and this condition tells
+us
+when we're allowed to add closing
+parentheses we can add
+as many open parenthesis as we want as
+long as it's
+under the limit which is n right we can
+add up to
+three open parentheses but we can
+only add a closing parenthesis if the
+number of
+closing so far is less than the number
+of
+open parentheses so with that said let's
+start
+our backtracking solution so we so far
+we're empty right
+so the first thing we're going to do is
+add a open parenthesis so
+now this is what we are so far a single
+open parenthesis
+since we added a open parenthesis that
+means the count of
+open is greater than the count of close
+so now we have two choices
+we can add a open parenthesis or we can
+add
+a closing parenthesis so we have
+potentially two open parentheses
+or a single open and a single close
+okay let's take a look at this decision
+here we have
+open is greater than or equal to close
+right and
+the number of open is still less than
+three so we can do both
+choices so from here we can add another
+opening parenthesis so we have
+potentially
+three and we can add a closing
+parenthesis
+so two open and one close from
+here we see that the open and closed
+count is actually
+equal right we have one of each so here
+we don't have any choices we
+have to add a open parenthesis
+so what we're going to do is have just
+another open parenthesis come after okay
+so i'm running out of room but
+let's continue so over here now we have
+three opening parentheses right so we've
+reached our
+limit which is n so we can only make one
+choice and that's to add a closing
+parenthesis so we're now we're going to
+have
+three open and a single closing
+parenthesis
+here you can see that we have two open
+parentheses
+and one closed parenthesis so we can
+actually add
+we have two choices we can add an open
+and we can add a close
+so if we add an open we'll end up with
+two open
+one close and then another open or we'll
+end up with
+two open parentheses and two closing
+parentheses
+over here we also have two choices
+because we see we have two open
+parenthesis
+and one closing parenthesis so we have
+so
+if we add a open parenthesis again we'll
+end up with
+open close open open
+if we add a closing parenthesis we will
+end up with
+open close open close okay so we're
+almost done
+start starting over here we see we we
+have three open parenthesis so we can
+only add a closing parenthesis now so
+open open open close close from here we
+actually only have one choice even
+though we have
+more open we have three open and one
+close
+which open is more than closed so we
+should be able to add one of each but we
+can't because we know that
+three is the limit so we can't add any
+more opening parenthesis we can only add
+a closing one
+so the new parentheses we add is closing
+here we also have one choice
+even though we only have two open and
+too close we know that
+the open count is equal to the closing
+count so we can't add another
+closing parenthesis because that would
+make it invalid right
+so we can only add a opening parenthesis
+so we'll just add a single
+open here we all we also only have one
+choice because we already have three
+opening parentheses so we can only add a
+closing parenthesis at this point
+here we also have one choice we can only
+add a open parenthesis because if we add
+a closing parenthesis that would make
+this invalid because then
+the close count which would be would be
+greater than the open count right which
+we cannot do
+and so at this point for each of these
+five we only need to add a single more
+parentheses and since this has
+three open three and two closed we know
+that we need three of each so the only
+thing we can do
+is add another closing parenthesis to it
+right so this is going to be
+one possible solution because now we
+actually have three of each which is
+what we wanted
+for this one we have three open and
+three
+and two closed so lastly we are going to
+add another
+closing parenthesis and and you might
+notice that's what we're going to do for
+each of these right because each of
+these now has
+three open and too close so all we need
+to do is add another closing parenthesis
+and for this one we also are just adding
+a closing parenthesis
+and lastly this one we're also adding a
+single
+closing parentheses so now you if you
+look at
+all five of these you see that they're
+all valid right
+and you see they have they have three of
+each and they come in a valid ordering
+so these
+five are going to be returned as our
+result these are the five ways we can
+make
+valid parentheses so now let's finally
+write the code
+this is basically what we're gonna do
+you can see i summarized it so we're
+only gonna add an open parenthesis
+if open count is less than our input n
+we're only going to add a closing
+parenthesis if the closed count is less
+than
+open and we're only going to stop adding
+parentheses altogether once our open
+count
+equals our closed count which is going
+to equal n so i'm going to do this
+recursively because that's basically the
+best way to do it
+and i'm going to create a stack which is
+going to hold our parentheses
+and i'm going to create a variable
+result which is going to have
+our list of valid parentheses
+combinations
+and i'm going to do this recursively so
+i'm going to put a function
+backtrack inside of another function so
+if we have this then we don't need to
+pass in these two variables
+into our function because this is nested
+inside of here we also don't need to
+pass
+n in into this function either but we
+are going to have to pass in our open
+and closed count so i'll call it open
+n and closed n so we know the base case
+is if open n is equal to closed n
+which is equal to n so in that case we
+have
+finished and basically our stack will
+contain the proper parentheses
+so what i'm going to do is basically
+some python stuff but you could probably
+handle this with a string
+if you wanted you don't actually need to
+use a stack but i just like doing it
+so what i'm going to do is take every
+character in
+the stack and join them together into a
+empty string so
+once they have been joined together they
+will form a complete string and what i'm
+going to do is append that
+to our result list and once i've done
+that i can just return right because
+this is our base case
+remember if we want to add a open
+parenthesis we have to check that our
+open
+count is less than n if that's true what
+we can do
+is to our stack we can append a open
+parenthesis
+so just an open parenthesis and then we
+can recursively continue
+our backtrack and but if we do that we
+have to increment our open count by one
+and the closed count remains the same
+and after that backtracking returns
+though we do have to update our stack
+because we only have a
+single stack variable remember we're not
+passing this stack into every single
+call this stack is basically a global
+variable
+so every time we're done with
+backtracking we're going to pop the
+character that we just
+added to the stack and if we want to
+add a closing parenthesis we have to
+make sure that the closed count
+is less than the open count so then we
+can take our stack and append
+a closing parenthesis and then we can
+call our backtrack
+function our recursive backtrack except
+we'll leave
+open count the same this time and we'll
+actually increment the
+closed count and as before we're also
+gonna need to clean up so we're gonna
+have to update
+our stack by popping the character that
+we just added
+and this is actually the entire function
+so you can see we
+broke it up into three conditions which
+i commented up here
+and i explained in the visual
+explanation
+so the only thing we have to do now is
+call our backtrack function
+pass in zero for the initial open and
+closed count
+because our stack is initially empty and
+then we can return
+what our result will contain which will
+be the list of valid parentheses
+so as you can see this solution works
+and it is pretty efficient
+so i hope that this was helpful and if
+it was
+please like and subscribe it supports
+the channel a lot and i'll hopefully

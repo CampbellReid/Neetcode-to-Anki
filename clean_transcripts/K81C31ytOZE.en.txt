@@ -1,0 +1,205 @@
+hey everyone welcome back and let's
+write some more neat code so today let's
+solve diameter of binary tree we're
+given the root of a binary tree and we
+want to return the length of the
+diameter of the tree which is defined as
+being the longest path from a particular
+node so in this case it would basically
+be the longest path on the left side
+which could either be this part or this
+part both of those are of length two I'm
+getting that calculation because two is
+the number of edges on that side for the
+longest path on the right side we just
+have one Edge so that's one so the
+diameter through the root would be 2 + 1
+which is 3 but keep in mind that the
+longest path might not necessarily run
+through the route so let's look at a
+counter example with this tree if we try
+to calculate the diameter through the
+root on the left side we have nothing so
+that's a zero on the right side we have
+three that's the longest path you could
+take multiple different paths but all of
+them are going to be of length three so
+the diameter from here is three but
+consider the node over here length on
+the left side is two and length on the
+right side is two so total is four
+that's the diameter of this tree now I
+want to mention to you that this problem
+is actually closer to a medium problem
+than an easy problem why exactly is that
+because the solution initially seems
+pretty obvious right to get the result
+we can just try to calculate that
+diameter through every single node in
+the tree how do you do that well just
+like I did get the longest path on the
+left and the longest path on the right
+and add them together AKA sort of like
+the height on the left side and the
+height on the right side generally we do
+this recursively with some kind of DFS
+algorithm but the tricky part about this
+problem is that the return value
+obviously of this DFS is going to be the
+height so what we want to return from
+this right subtree up to this node is of
+course the height but that's not the
+result that we're ultimately trying to
+compute what we're actually trying to
+compute is the diameter now in terms of
+the code there are multiple ways of
+handling that the way I'll show you is
+sort of by using a member variable or
+you can even think of it as sort of a
+global variable with respect to the
+recursive function but the algorithm
+will be exactly like this recursively
+run DFS from the left sub tree we reach
+null so the height of that of course is
+going to be zero that's what we return
+up here then do the same on the right
+side and then we'd continuously go down
+and so here we'd reach the case with
+just a node the height of that we will
+say is going to be one that's going to
+be returned up to the parent and that's
+basically saying that the length of this
+is one same thing for this side we'll
+say the length is one so now when we
+want to compute the diameter from here
+we're going to maintain a global
+variable which I'll call it the result
+or this for sure and initially we'll set
+it to zero this is what we're trying to
+maximize of course and from this node we
+calculate a diameter of 1 + 1 which of
+course is going to be two now that's the
+biggest result that we have now from
+this node I want to return up to my
+parent the height of this tree so what
+do I do well the height is different
+than the diameter so we actually will
+take the max of the left sub tree the
+max of the right sub tree and add one to
+it well in this case they're the same so
+we just get one and then add one to it
+which is this Edge so we'll say that the
+height here is going to be two obviously
+it didn't have to be like that Suppose
+there was a node over here and then
+maybe the height of this right tree
+would have been two and then we would
+have returned 2 + 1 which would would
+have been three so that's generally the
+core idea we would do the same thing
+from here cuz it's kind of symmetrical
+to this side so this would be one and
+one and then the height of this is two
+height of this is two those are going to
+be returned up to three add them
+together the diameter now is going to be
+four it's going to be increased all the
+way up to four from here we want to take
+the max of left Max of right it's two
+and we want to add one to it because of
+this edge here so then we say the height
+of this part is three we return that up
+to the root I'll make it another color
+three root is going to do the same thing
+take left plus Right add them together
+we get three this time it's not greater
+than the result so our result will stay
+unchanged and it will be four four is
+ultimately what we would return but it's
+not going to be returned from the
+recursive function keep that in mind
+we're going to have a separate variable
+that's sort of going to be Global which
+does that and since we were able to
+accomplish this by just visiting each
+node once we will say that the time
+complexity is linear and the space
+complexity is going to be proportional
+to the height of the tree which could be
+log in for a balance tree or n for a
+non-balanced tree so we're going to
+solve this recursively and I like to do
+it with nested functions so I'm going to
+have my DFS here and I'm going to pass
+in a single variable Curr remember that
+this DFS is not returning the diameter
+it's going to return the height that's
+the most important thing about this
+problem it's not a trivial recursive
+problem the base case though is going to
+be pretty easy if not Cur therefore we
+reached a null node the height of that
+is of course just going to be zero so
+that's what we return otherwise let's do
+the recursive case let's get the height
+of the left subtree let's call DFS on c.
+left let's do the exact same thing for
+the right subtree just like this now
+remember there's two things we want to
+do we want to potentially update the
+result and we want to return the height
+of the tree from cerr so let's start
+with the result I'm going to create a
+variable self. result is equal to zero
+this is basically making it a member
+variable of this class like an instance
+of this class so that it is accessible
+inside of this nested function so when I
+want to maximize the result I'm going to
+set it equal to the max of itself self.
+result and the current diameter how do
+we get that we'll just take the left and
+right and add them together just as we
+did in the drawing explanation now for
+returning we're not returning this we're
+not returning the diameter remember this
+Returns the height how do we calculate
+the height though well it's either going
+to be the max of the left or the max of
+the right and also don't forget to add
+one for the current node that we are at
+this just tells us the max of either of
+the sub trees but Plus One will give us
+the max of the height from cerr now
+that's actually pretty much it it's not
+easy to come up with remember the
+complexity of this comes from the fact
+that the return value is not the result
+so down here we're going to return self.
+result but don't forget don't be like me
+and forget to actually call the
+recursive function starting from the
+root this is the entire solution you can
+see that it works and it's very
+efficient I just want to show you a
+couple different ways that you could
+have handled This Global case though at
+least in Python another way is just
+making it a local variable result and
+then in here to update it let's get rid
+of all the self Dots here let's get rid
+of that and let's get rid of that to
+update result you have to kind of
+declare it nonlocal first you want to
+say that this is not a local variable to
+this function it's actually the same
+result that was declared out there so
+this will do the same thing so if we
+execute this you'll see that once again
+it works it says it's more efficient but
+leak code run times are random so don't
+really pay attention to that if you
+found this helpful please like And
+subscribe if you want to learn a bunch
+of more python tricks check out my
+python for coding interviews course and

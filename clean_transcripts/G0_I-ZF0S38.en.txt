@@ -1,0 +1,280 @@
+hey everyone welcome back and let's
+write some more neat code today it's
+actually raining outside right now
+pretty hard so hopefully you can't hear
+it too well so today let's solve an easy
+question reverse a linked list and this
+question is actually like a sub problem
+that's needed in a lot of other
+questions like linked list related
+questions so it's definitely
+good to understand so just like the
+problem says we have a linked list
+we've got some nodes and and we just
+want to take
+each of these links reverse them
+keep doing that with everything and then
+this is going to be the new head
+and then we're going to return that
+and they tell us that this can be done
+two ways iteratively meaning with just
+pointers
+and also recursively and i'll show you
+how to do it both ways
+so we can do this with two pointers
+because we want to reverse it so like
+from the perspective of this node
+instead of
+the next pointer pointing at three we
+want it to point at the previous
+node one so if we want to do this
+iteratively we can use two
+pointers like many problems
+now what are the two pointers going to
+be we can have initially
+a current pointer so we can initialize
+current to the first node
+which is our head and we can also
+maintain
+a previous pointer which initially
+is going to be set to null
+so for the first node 1 we're going to
+take
+the next pointer and reverse it so now
+the next
+pointer is going to be pointing at null
+so this is now going to be the last
+element in our new reversed linked list
+so now we can shift our pointers
+so we're going to take the previous
+pointer and then shift it to current
+and we're going to take the current
+pointer and shift it
+to the next node now since we broke this
+link we have to save this somewhere
+before we end up breaking this link and
+i'm going to show you how to do that
+in the code so now our current is 2
+we want to take the next pointer
+and reverse it so the next is now going
+to be
+like this so it's going to point at
+previous
+so we can reverse the next pointer and
+set it to previous
+and once again we're going to shift our
+previous pointer to current and our
+current pointer is going to be shifted
+to next
+now we're finally at the last node we
+can once again
+update the next pointer of this current
+node and so
+now when we update our pointers previous
+will be here
+and current is going to be at
+null we've reached the end of our list
+now we want to return the head
+how do we return the head lucky for us
+the previous pointer
+is equal to the new head right so this
+is going to be our result
+just like in the drawing we can
+initialize our pointers first
+previous will initially be null current
+will start
+at the head and we want to keep going
+until we reach
+the end of the list so while current is
+not null
+we're going to reverse the pointers so
+we want
+current dot next to be set to
+previous and then we can shift our
+pointers right so we can update previous
+set it to cur and
+cur is going to be equal to current.next
+but notice how we set current.next
+to previous before so when we do this
+we actually are going to have a
+temporary variable
+called next which i will do at the
+first line when we start our loop so we
+can save that in next
+so then when we update current.next
+you know we still have that next pointer
+and lastly we return the result which we
+know
+is stored in previous when this loop
+stops executing
+so it works and this is actually the
+most optimal solution the time
+and the memory complexity is big o of 1
+because we're just using pointers right
+no
+data structures or anything but if we
+want to do the recursive solution
+then the time complexity is also going
+to remain
+linear but the memory complexity is
+going to be
+linear as well so we're going to need
+extra memory so it's not the best
+solution but i'll still show you how to
+do it
+so usually the best way to think about
+recursive problems
+is to break it down into a sub problem
+right so
+if our initial head is one
+we start at one and this is our linked
+list right
+but let's say i want to do a recursive
+call
+instead of reversing the entire linked
+list
+i'm gonna reverse the remainder of the
+linked list
+so everything except this one
+so now i have a sub problem right now i
+only have
+two nodes to deal with but let's take it
+one step
+further this is now my new head right
+and i'm gonna break it down even more
+i'm gonna say reverse
+this portion reverse the sub problem
+reverse only
+one node so then if we try to break it
+down even more then we're going to get
+this is our sub list right but this is
+just
+null so we can't really reverse that
+that's the base case
+so now we're at this we only have one
+node and we want to reverse
+it how do we do that well the next
+pointer is pointing at
+null instead of that we can take the
+next pointer
+and set it to previous not really
+because this is recursive
+and at least the way i'm gonna do it i'm
+gonna set
+i'm gonna keep the pointer pointing at
+null so we technically reversed this
+portion which is
+just this right it's just a link list of
+one so now we're going to pop
+back up out of our recursive call
+and now our job is to reverse these two
+nodes so since we're at
+2 we can access three
+so what i'm gonna do is say okay the
+next pointer of this
+is actually gonna be set to me to
+is gonna be set to two where i'm at
+right now
+but my next pointer two's next pointer
+is gonna be set to null
+so notice that so far we have
+done our job we reversed a linked list
+of size two right this is going to be
+the new head and this is the tail this
+is the end of the list
+so we did our job of reversing it
+reversing these two nodes but we still
+have one more node so we're going to
+pop back up out of our recursive call
+okay so now we're finally at the last
+call so our sub problem
+is to reverse these three nodes and we
+can repeat the same thing we did over
+here
+we're gonna for one ins since one has
+access to two
+we're going to set two's next pointer
+over here instead of
+null we're going to set it to
+one and the next pointer
+of one is now going to be
+null because we've reached the end
+this is going to be the new end of our
+linked list
+so we've done our job we recursively
+took our linked list and reversed it
+the only problem is that we are doing
+this recursively so
+we have to in our code we're gonna have
+to maintain
+so now let's code it up as with most
+recursive functions
+you want to do the base case first so if
+the head is
+null we can return
+null and i'm going to make a variable
+to maintain the new head which i'm going
+to initially set to head
+head is the current node that we're at
+in our recursive call so
+if head dot next
+is not null if there's still a sub
+problem if we can keep
+uh reversing then we're gonna have our
+recursive call so
+reverse the list
+pass in head dot next and
+the return value of this we are going to
+have as the new head
+so if this returns something
+so we're going to set the result of that
+to
+new head and since head dot next
+is the next node of head we want to
+reverse that link so what we can do
+is get the double
+so head dot next dot next
+is going to be set to head what this is
+doing is just
+reversing the link between the next node
+and head
+and lastly we can say head dot
+next is going to be equal to null so if
+head happens to be the first node in the
+list
+we're setting the next pointer to null
+and
+of course this function wants us to
+reverse the list and return the new head
+so
+we're gonna return the new head
+so i think so this works and i think it
+might be a little confusing the way i
+wrote it because we have head.next.next
+but if you want to understand it a
+little more
+i would try to like mentally
+run through a couple test cases for
+example if you were just given one node
+like
+if you were just given a linked list of
+this try to run through the code
+see what the code does see what the
+function returns see which like this
+statement would not ever execute if we
+were given
+a link list of size one this is not
+going to execute
+so just kind of like try that out see
+what happens if
+you had a linked list of size two
+like this and use pen and paper draw a
+picture
+and lastly the reason why the memory is
+linear is because if we were given a
+linked list
+of size two our recursive call
+is gonna be size two but i hope this was
+helpful
+please leave a like and subscribe thank
+you and thank you so much for watching

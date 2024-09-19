@@ -1,0 +1,859 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+let's solve another problem from this
+week's leak code contest
+minimum interval to include each query
+we're given a 2d integer array of
+intervals each interval has a
+left value and a right value which
+basically determines the length
+and positions of the interval so right
+like the left point and the right point
+and so the interval is connected by the
+left and right points
+and of course the size of the interval
+is just defined as
+the right value minus the left value
+plus one right basically
+you know the size of the interval if
+this was one this was two basically if
+this
+if we had this interval one and two the
+size of the interval is going to be
+two even though that even though the
+length of the interval is one the size
+is two because it contains two values
+one and two if this was three then this
+would be an interval of length three
+three minus one plus one is going to be
+three
+because it contains one it contains two
+in the middle and then
+three it contains three points so that's
+basically
+what the size is in this case if we had
+just a an interval with
+one point right like maybe the left and
+right value are equal then the size of
+this interval is going to be
+one we're also given an integer array of
+queries and the answer to the
+jth query this is where things are going
+to get a little bit complicated
+the answer to each query is basically
+the size of the interval the size of the
+smallest interval such that q falls
+into the interval so for example we
+could have maybe
+one interval like this and then maybe a
+smaller interval
+like this and let's say we had a query
+such that the query you know
+the query is over here this is the point
+each query is just going to be a single
+value a point so
+as we can see this point falls into two
+different intervals which one of the
+intervals is smaller
+it's this little one over here right so
+basically we're going to return
+the length of that smaller interval for
+each query
+since we're doing a result for every
+single query that we have we're actually
+returning an array output basically
+for each query like this is our query
+array we have two three four
+five for each one of these we're gonna
+have a corresponding output value which
+is gonna tell us the size
+of the smallest interval that this query
+falls into
+if it's possible that a query like
+two for example might not fall into any
+interval that's available to us in that
+case we return a default value of
+negative one
+it's also possible we could have
+multiple queries that are the exact same
+right there's no restriction on that
+we could have a two query and another
+two query so what's going to be the
+brute force way to solve this problem
+can you answer
+that well for each query we're looking
+for the minimum interval right so the
+brute force will be
+for each query just scan through the
+entire
+interval list and then find which one of
+the queries
+which one of the intervals the query
+falls into that happens to be the
+smallest interval right so two in this
+case
+which one of these four intervals is the
+smallest interval that two falls into
+it falls into this one and the length of
+that is three it also falls into this
+one
+and the length of this one well actually
+the length of this one is four the
+length of this one
+is three and it does not fall into this
+one
+and two also does not fall into this one
+so what's the size of the smallest query
+it's going to be 3
+that's why we can see over here the
+first value in our output is 3.
+so what's going to be the time
+complexity of that well it's just going
+to be a nested for loop right we're
+going to have
+a length of queries and the length of
+intervals right so multiply those
+together let's say it's
+you know n is the size of queries or n
+is the size of intervals q is the size
+of queries we're going to get n
+times q is going to be the overall time
+complexity
+now is it possible to solve this problem
+more efficiently
+yes but not by much and i'm going to
+show you what the time complexity is and
+then i'm going to show you how to
+actually achieve that time complexity
+so it's going to be n log n plus
+q log q because
+the and and mainly this time complexity
+is going to come
+from the fact that we're going to be
+sorting our intervals and we're going to
+be
+sorting our queries and once we do that
+we can scan
+our queries from left to right and
+that'll and since our intervals are also
+sorted
+each query will be close to the interval
+that it belongs to right the smallest
+interval that it belongs to
+so it'll actually end up being
+relatively efficient once we sort both
+of them but we're also going to actually
+need a data structure
+in order to actually find the minimum
+the smallest interval
+so we're going to be needing a min heap
+to achieve
+that for us so this problem is a hard
+problem for a reason
+it does have a little bit of difficulty
+it's not super intuitive
+but the solution is doable the code is
+going to be about 15 to 20 lines of code
+so pretty much like every interval
+problem we're going to use the fact that
+we can sort the intervals
+to our advantage and just by looking at
+the picture this is why i like to draw
+pictures because it becomes more
+intuitive
+it wouldn't really make sense for us to
+go brute force right
+just like let's say the order we were
+given these values was maybe
+three and then four and then two it
+doesn't make sense for us to do these in
+a random order of course we would want
+to do it from
+left to right because the queries are
+going to be close
+to the intervals that they belong to and
+we're going to get the smallest interval
+that it belongs to and of course you
+know for a query like this we're not
+going to be necessarily looking at
+intervals all the way over here
+right that's 1 and of course we know we
+could also have
+multiple queries we have a query here we
+could have multiple queries with the
+same value and of course
+both of them would have the same
+smallest
+interval that they belong to so you know
+we could kind of cut down on the
+repeated work like that
+but so how is this going to work like i
+said we're going to need a min heap
+so we're going to iterate through every
+single query right
+ultimately we're trying to build our
+resulting output
+with the size of the minimum interval
+that each query belongs to so
+let's start with this query right it's
+at the
+its value is two so what are we gonna do
+we're gonna start
+iterating through our intervals from
+left to right
+you know since we've sorted them we're
+gonna sort them based on the left value
+of each
+interval so in what order are we going
+to iterate through these intervals
+well this one has the smallest left
+value this one is next
+this one is next and then this last one
+which is just a single point but it
+still counts as an interval
+is going to be the last one so starting
+here what are we going to determine
+what we want to do for this query is we
+want to
+add all possible intervals that this
+query could belong to right
+how do we know which intervals this
+query could possibly belong to
+well let's say we had an interval over
+here right like something like this
+since this interval is too far to the
+right
+of course this query is not going to
+belong to that interval
+how do we know that the what algorithm
+or what kind of condition can we use to
+check that well
+take a look at its left value or its
+start value of the interval
+if the left value of this interval is
+greater
+than the point or this query right if
+the left value is greater than the query
+of course this query could not belong to
+this interval
+so the condition we're going to use
+we're going to keep iterating through
+these intervals
+while the left value of the interval is
+less than or equal
+to the query so for example this is the
+first query we're going to look at the
+the left value is less than or equal to
+this so we're going to go ahead and add
+that query or add that interval
+to our min heap how are we going to add
+it to our min heap though remember we
+want to pop the minimum
+size so we're actually going to take
+this interval and calculate the size of
+it
+how are we going to do that well 4 minus
+1
+plus 1 is going to be equal to 4. so
+we're going to add
+4 to our min heap but actually we're
+going to add a
+second value 2 because there could be a
+condition where two intervals are the
+same
+length right we could have an interval
+like this
+right from here to here we could also
+have an interval like
+this from here to here both of these are
+size
+both of these are size 2 intervals but
+which one of these intervals would we
+want to
+pop first of course we would want to pop
+this interval first because it's farther
+to the left right we'd rather pop
+the leftmo most interval because
+what if what if we pop this one first
+from our min heap
+but it turns out that there's a query
+over here that actually
+you know this is the answer for this
+query we'd rather pop
+this one because we're going to be going
+from left to right
+so we'd rather have this interval
+belong to this query and we'd rather pop
+this query
+rather than popping this query first so
+we're going to need
+one thing to to be our tie breaker we
+need a tie breaker
+between these two intervals what's the
+tie breaker going to be
+it's going to be the right value of the
+interval
+we'd rather pop this one before popping
+this one so we're popping the one with
+the smaller right value so we're gonna
+we're gonna have our right value as the
+second key
+of our min heap so we're gonna have a
+pair for our key of the min heap
+the first is going to be the size of the
+interval the second is going to be the
+right value
+of the interval so in this case this is
+the left value of the interval this is
+the right value it's a value
+of 4 so the what we're adding to the min
+heap is 4 4 the first value is the size
+the second value is the right value of
+the interval
+so we've added this to our min heap now
+let's go to the next interval
+it's this one right so so the left value
+of this interval is technically less
+than or equal to this it's equal to it
+so
+technically we are going to be iterating
+through this one as well so what's the
+size of this interval well
+four minus two plus one so the size is
+actually
+three that's that's pretty good for us
+right so we're going to add that to our
+min heap the reason it's good is because
+we found a
+smaller interval that this value belongs
+to right that
+that necessarily didn't have to be the
+case right it could have been possible
+that even though this interval started
+here it could have just been a really
+long interval right
+that's the reason why we're adding for
+this query we're having to add
+all possible intervals that this query
+belongs to because we don't know what's
+the shortest gonna be
+that's why we need our min heap to
+efficiently in log
+n time to help us determine what that
+smallest interval is going to be
+so we got the size of that interval
+what's the right value of the interval
+take a look it's four so it's four in
+this case well technically we don't need
+that tie breaker because this is this
+one is going to be popped first from our
+min heat because it has the smaller size
+but in case we did need that tie breaker
+we do have it so now we've added this
+interval to our min heap as well now
+let's take a look at the
+next interval hey take a look though
+this interval
+the left value is not less than or equal
+to our query so we're actually
+not going to iterate through this one
+just yet we're not going to
+be it we're not going to be adding it to
+our min heap just yet
+take a look at our output array now we
+need an answer
+for this query what is the size of the
+smallest
+interval that it belongs to well let's
+take a look at our min heap
+what's this what's the size of the
+smallest interval
+in it well we have two choices right
+this one or this one
+obviously this one has a size of three
+whereas this one has a size of four so
+this is the smallest one so we get a
+three right three
+is the size of the smallest query that
+this
+that this query belongs to right so what
+we're gonna do is to our output
+for the first value we're gonna add a
+three oh and by the way
+remember how we sorted these queries i
+know i'm probably getting a little too
+in-depth but that's just kind of the
+nature of this problem there's just a
+lot of like
+bookkeeping and details that you have to
+worry about remember how we sorted our
+queries so technically we don't actually
+know that this
+is the first query we don't know that
+this query
+is going to be the one that corresponds
+to the first position
+in our output right so we're going to be
+needing to do some
+like bookkeeping to do that and all
+that's what i'm going to show you in the
+code because i don't want to get this
+too complicated
+basically we're going to be using a hash
+map to make sure that we can
+maintain the correct order of them but
+okay so for this query right we're
+basically done with this query now right
+we don't have to look at it but
+notice how i didn't actually pop this
+from our min heap
+why didn't i pop it because it's
+technically possible that the next query
+could also belong to this interval
+right and this interval could could be
+the smallest
+interval that this query belongs to so
+we're not going to be necessarily
+popping the uh from the min heap just
+because we found a result
+okay so now it's time finally to get to
+the next query this is going to take a
+while i can tell
+but so now we already added these two to
+our min heap what about
+this one right so let's take a look at
+this left value is it less than or equal
+to this query yes it is so we're going
+to go ahead and add it to our min heap
+first of all what's the size of this
+interval well take a look
+6 minus 3 plus 1 what's that going to be
+that's going to be
+4 so let's add 4 to
+our min heap now what's the right value
+going to be of the min heap
+the interval the right value is six so
+that's going to be the second value that
+we add
+to our min heap okay so we don't have to
+worry about this interval anymore we
+already added it to our min heap
+now let's go to the next and actually
+the last
+interval in our intervals this one the
+left
+the left value of this interval is not
+less than or equal to this so we're not
+going to be considering this interval
+just
+yet so now it's time for this query to
+determine
+what is the smallest value what's the
+smallest length
+of the interval that it belongs to well
+once again we're going to take a look at
+our min heap we're going to get the
+interval
+that's the smallest interval from here
+and we can actually do that in o of one
+time because we're not actually popping
+from the min heap but we will be popping
+later
+on and i'll show you why we do need to
+pop from the min heap
+later on but for now what's the smallest
+value in the min heap
+it's this one again right and that does
+make
+sense because take a look at this query
+it does belong to this interval and this
+interval is the smallest interval that
+it belongs to
+so for the size of the smallest interval
+of this query we're going to add
+3 once again and now we are done with
+this query time to move on to the next
+one
+so remember there's only one query left
+we already finished
+this one so let's take a look at the
+left value of this query it's a single
+point query
+so the left value is equal to the right
+value is the left value
+less than or equal to the query yes it
+is so we're going to take this interval
+and add it to our min heap what's the
+size of this interval well it's going to
+be 4 minus 4
+plus 1 that's going to be 1 and what's
+the right value of the
+of the interval well it's going to be
+one or it's going to be
+four because it's a single point
+interval
+that's where it's going to go so now
+we've actually added all the intervals
+to our query so the next time we go to
+the next query we want
+we won't actually have to add more
+intervals to our min heap that's pretty
+good but
+now it's time to determine for this
+query what's the smallest interval
+that it belongs to well let's again take
+a look at the min heap
+take a look at the smallest value now
+that we added
+the size of the smallest interval is now
+one so
+one is going to be the size that we add
+to our
+output so now we are done with this
+query we only have one last query
+left to consider so the good thing is we
+added all the intervals to the min heap
+so we don't have to do that
+but now notice one thing
+so now if we if we're trying to look for
+the smallest interval that this belongs
+to if we just
+immediately go to our min heap and pop
+and get the smallest one it's going to
+be this one right
+it's going to be 1 4. so then we're
+going to end up adding a 1 over here but
+is that correct let's take a look at the
+picture
+does this query belong
+to the interval of size 1 it doesn't
+like
+look at this right if you go vertically
+there's only one
+interval that this query belongs to so
+now
+we're going to get to the the other part
+of this algorithm that i didn't show you
+yet
+every time we're getting the smallest
+interval that a query belongs to
+first we have to make sure we remove
+all invalid queries from
+or rather remove all invalid intervals
+from the query before we get the
+smallest one for a query
+and take a look at this interval right
+so basically what we're going to do
+is for this min heap we're going to get
+the size we're going to get the smallest
+interval
+from that min heap right it turns out
+that this is the smallest one as of now
+let's take a look at that interval
+well the right value of this interval
+and
+by the way remember we added the right
+value to the min heap there's a reason
+why we did it this is one of those
+reasons we added the right value to the
+min heap it's four
+right four is less than five right
+that means for example for five we we
+might have like an interval like this
+where the interval starts and ends
+before we even
+get to this query right so of course
+we're not going to be considering this
+interval so now we're at the part of the
+algorithm we're going to loop
+for every we're going to keep getting
+the smallest interval and
+while the right value of that interval
+is less than the query
+we're going to be removing that interval
+from our min heap so right now we're
+going to be removing this interval right
+so now once again let's find the
+smallest interval in our min heap
+it's this one right because the size is
+3. now let's take a look at the right
+value of that interval once again it's
+4. 4 is less than 5 so 5 does not belong
+to this interval we're going to
+have to pop from this interval and that
+makes sense right because this
+interval is size 3 this is the picture
+of that interval right
+or rather this is the picture of that
+interval and of course
+five does not belong to it so we're
+gonna have to remove this
+once again let's get the smallest from
+our min heap
+well these two are both size four so
+which one are we gonna pop first
+remember we had that
+tie breaker we had a four and we have a
+six which one are we gonna pop first of
+course the smaller one
+which is this one four four so let's pop
+it we see the right value
+is still less than five right so we're
+gonna be removing this from our min heap
+right so when you take a look at the
+picture at this point we've removed this
+from our min heap we've removed this
+from our min heap
+and this one the only left is this
+interval and when we actually take a
+look at that interval 4
+6 we see the right value of that
+interval is 6 size is 4 but the
+the right value is 6 and that's greater
+than
+5 right so it's greater than or equal to
+5. so of course
+we're going to be this inner this query
+does belong to that interval
+so this is going to be the answer for
+this query this query
+the smallest interval that it belongs to
+is of size
+4 and this this happens to be that
+specific interval so that's what we're
+going to be ending up
+adding to our output for this query
+so this really isn't that easy of a
+problem once you can write the code the
+code isn't too bad but actually figuring
+out
+that you can you know do all this stuff
+there's some pretty
+neat edge cases that you have to worry
+about you really have to get those
+conditions right
+greater than or equal less than or equal
+right you really have to make sure
+that your off by one errors are correct
+so that was a pretty long explanation
+but i hope that it does provide a little
+bit of insight i would kind of
+walk yourself through a couple more
+examples if you need to
+and as well as study some of the code
+that i'm about to show you right now
+so like i said we're going to be sorting
+our intervals and we're going to be
+sorting
+our queries but i'm going to be
+uh remember we do need the original
+relative order of the query so i'm not
+actually going to be modifying the
+queries itself i'm just going to be
+modifying it for this loop so when i do
+this in python it's not actually
+updating the original array queries it's
+just that it's creating a copy of
+queries sorting it and then we're
+iterating through it
+like this so there's that but also
+remember that we are going to be needing
+a
+min heap as i mentioned and in python a
+min heap is just an array but we are
+going to have a
+min heap class that is going to help us
+i'm also going to have a resulting
+uh data structure and an index i i
+is basically going to tell us the
+position that we're at in our intervals
+array
+but result is actually not going to be
+an array it's initially going to be
+a hash map and then we're going to
+convert it into an array later on
+and i is going to be initially set to
+the beginning of intervals of course
+that's the index
+0. and the way we're going to do this is
+for every query we're going to map it to
+its smallest
+the length of the smallest interval that
+it belongs to and then we're going to
+later on convert that into an array
+maintaining the original relative order
+of
+queries so now we're going to start
+iterating through
+the intervals and of course we have to
+make sure that our index is
+inbound so i'm going to make sure that i
+is less than the length of interval so
+that's 1
+and the second thing is we're going to
+keep adding intervals
+to our min heap while the left value of
+that interval
+is less than or equal to the query value
+that we're currently iterating through
+right we're only adding intervals that
+the
+that this query could possibly belong to
+so we can get the left value of the
+query
+by getting first of all getting the
+interval at position i and the left
+value is going to be the first value at
+index 0
+we're making sure that it's less than or
+equal to the query value that we're
+currently
+at if that's the case we're going to get
+the left and right value from that
+interval and of course we're going to
+push it
+onto our heap so we can do heap q dot
+heat push
+to our min heap remember we're adding a
+pair of values we're getting the size of
+the interval right minus left plus one
+and the second value is going to be r
+the just the right value for our tie
+breaker
+and of course since we just iterated
+through an interval we have to make sure
+we increment our i
+plus one and so basically this loop is
+just going to keep adding intervals
+until either we run out of intervals or
+the interval is
+too far to the right for this query to
+even belong to
+and then once we've done that we're
+gonna go on to our second part of the
+algorithm
+now is the part where we're going to
+continue to pop from our min heap
+we want to remove all intervals that
+this query
+doesn't even belong to how do we know if
+there's an interval that this query
+doesn't belong to it would only be the
+case
+if this interval was too far to the left
+how do we know if it's too far to the
+left
+basically if the right value of that
+interval
+is 2 is less than the query value
+q so first we're we're going to be doing
+this from our min heap so we want to
+make sure our min heap is non-empty
+and for the the smallest value of our
+min heap we can get that at index
+0 in python so now we
+at index zero we've gotten the smallest
+interval and we want to make sure
+that it's right value which we can get
+at index
+one and if this right value happens to
+be
+too far to the left meaning it's less
+than the query value
+then we have to pop from our min heap so
+we're going to do heap q
+dot heap pop from the min heap so all
+this is doing
+is popping all the invalid intervals
+from our min heap popping the intervals
+that are too far to the left
+so once this loop has been done
+executing either
+then we're able to get from our min heap
+get the smallest
+uh interval which is going to be at
+index 0 and then we want the size of
+that interval so we can get
+index 0 get the size of that interval
+and that's
+only if our min heap is non-empty right
+it's possible that
+for one of these queries that there's
+not a single interval that it belongs to
+in which case else is where we would
+want the negative one which is the
+default value that they told us
+and for this we're going to be assigning
+it to
+result of that query so in our hashmap
+result
+of that query we're you know getting
+this i know this is kind of a lot
+even though that this is not a lot of
+code these are a lot of details we're
+having to worry about it's really easy
+to go wrong in this problem it's not an
+easy problem
+but that is actually it right remember
+if you remember the visual explanation
+these are the main things we had to
+worry about we're going through every
+query adding all possible intervals then
+popping the invalid
+intervals and then getting the the
+smallest interval that's left
+in our min heap once that's done and
+once we've done that for every single
+query
+we are done and so then we can return
+our
+result but happens to be that our result
+is actually a hash map because we
+remember we have to
+we have to return the result such that
+it matches the original order of the
+queries
+so how can we do that well for every
+single query
+in our queries array what are we going
+to do for every single query we just
+want the length the smallest length that
+this query the length of the smallest
+interval that the query belongs to we
+can get that with result
+of q for every query in our queries
+and with python at least you can do list
+comprehension
+so we can create a list like this on the
+fly but
+you know this isn't really the difficult
+part of this algorithm you could do this
+with a few extra lines of code in other
+languages if you needed to
+okay but that is the entire code it
+won't be super different if you're
+doing like java or something it's
+probably just going to be a different
+min heap library as well as probably
+this line is going to be different but
+for the most part
+you're going to be needing a hash map
+probably and you're going to be needing
+a min heap you're going to need to sort
+these
+input arrays and remember the time
+complexity is just going to be big o
+and log n where n is the length of the
+intervals
+and q log q where q is the length of
+queries because the main time complexity
+is coming from the fact that we're
+sorting both of the inputs
+but other than that i hope that this was
+helpful for you this is not an easy
+problem
+i hope that you did gain some
+understanding if this was helpful please
+like and subscribe it supports the
+channel
+a lot and i'll hopefully see you pretty

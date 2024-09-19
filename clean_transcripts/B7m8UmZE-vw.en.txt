@@ -1,0 +1,372 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+let's solve the problem partition labels
+this is a very interesting and somewhat
+unique problem we are given a string s
+and we want to partition the string into
+as many parts as possible so that each
+letter appears in at most one part and
+what we want to return is the list of
+integers representing the size of each
+of these parts so let's actually start
+with the second example this time
+because i think it really helps to
+illustrate how to solve this problem and
+kind of makes it simple just starting
+from left to right let's take a look at
+the first character it's an e character
+right we want to partition this into as
+many parts as possible but each
+character such as this e can only appear
+in a single partition so what we would
+want to do is just say okay cut it right
+here right this is a single partition
+great but we can't do that why can't we
+do that because
+there's actually multiple e's in this
+string there's another e all the way
+over here and our partitions have to be
+contiguous as soon as we see the first
+character and we see that it actually
+occurs way to the right in the string we
+will never be able to partition the
+string here here here here anywhere
+right because at the very least we know
+that this has to be one partition and if
+we do partition it like that this i
+think is nine characters but we actually
+can't even partition it here either and
+we can figure that out just by looking
+at the second character the second
+character is a c now there's a c over
+here there's another c over here and
+that's perfectly fine but the reason we
+can't partition here is because there's
+a c in the last position only by looking
+at the first two characters we realize
+that the entire string
+is going to be a single partition we
+can't partition this any further and so
+what we're going to return is we have a
+single partition and the length of that
+partition is 10. so this is the list
+that we are going to return in this case
+so you might be starting to get an idea
+of how we can solve this problem in
+general but if not don't worry about it
+because that's exactly what we're going
+to talk about right now so let's take a
+look at another example in this case
+we're given a string and the result is
+that we can split it into three
+partitions the first partition is going
+to be
+nine characters the next partition is
+gonna be seven characters and the last
+one is gonna be eight but let's try to
+figure out how we can arrive at that
+solution and how we can make it as
+efficient as possible so let's take a
+look at this string and let's use the
+similar idea that we talked about in the
+previous example so we look at the first
+character it's an a now immediately we
+know that we can't partition this at
+this point right this cannot be a
+partition if there are additional a
+characters somewhere in the string and
+not only that we could have multiple a
+characters and we do we have an a
+character here here here
+and that's the last one now which one of
+these do we care about the most we care
+about the last a character the most
+because once we stop here we know for
+sure that all of the a characters are in
+this portion of the string and that's
+what we're trying to do we're trying to
+create partitions where all a characters
+are going to be here not anywhere else
+in the string not in any other
+partitions so wouldn't it be convenient
+for us every time we see a character if
+we could automatically know where the
+last index of that character happens to
+be and maybe just maybe this character
+itself could be the last occurrence of a
+this index could be the last position
+where a exists well conveniently for us
+we can do exactly that and we can create
+a hashmap so we can create a hashmap
+just like this one where we take every
+single unique character in the input
+string and we map it to the last index
+that it occurs at so for example you can
+see the indexes are a little bit messy
+but we can see that a ends at the last
+occurrence of a is at index eight so we
+can map a to
+the character a to index eight the last
+occurrence of b is going to be at index
+five now i could do this for the entire
+string but we have a ton of characters
+so i don't want to waste my time too
+much but just assume that before we even
+start iterating through the array we
+build a hashmap just like this one and
+the time complexity of building this
+hashtrap isn't going to be bad because
+all we have to do is just iterate
+through the entire uh string so the time
+complexity and space com the time
+complexity will be o of n technically
+we're guaranteed that every character in
+here is just going to be a lowercase
+abc character so the memory complexity
+of this hash map is really going to be
+uh you know big o of 26 so constant
+memory complexity not too bad okay now
+before we start iterating through the
+array let's think about how we're going
+to approach this algorithm remember we
+are going to have an output which is
+going to tell us the size of each
+partition as you can see up above so it
+would be helpful for us as we're
+iterating through this if we maintain
+the size of the current partition
+ourselves initially we can set that to
+zero and as we iterate through this for
+example we get to the first character we
+see it's at index zero but the last
+occurrence of a is at index eight so we
+can keep track of another variable let's
+call it end you could call it whatever
+you want but end which is gonna tell us
+what's the end of our partition as far
+as we know so far right because we see
+the character a and we know it exists
+the last occurrence of it is over here
+so we assume so far we're assuming that
+this is going to be a partition but we
+don't know for sure just yet because we
+have some b characters here it's
+possible that one of the b's exists even
+farther than that and if that's the case
+then of course we have to update our
+ending but in this case that's not the
+case because the b's are actually uh
+within the first partition so let's see
+this algorithm in action okay so so far
+our size is zero we get to the first
+character our end is zero so far but we
+know that a the last occurrence of it is
+at this index so we update our end to be
+index a we get to the second character b
+the last occurrence of it is five five
+is less than eight so we don't have to
+update our ending
+just yet and by the way actually we'll
+be we'll have incremented our size we'll
+have incremented to one after we iterate
+the b or the a character and we'll have
+now uh updated it to two after we have
+visited the b character again we get to
+an a character so we know that we don't
+have to update our end because the a's
+last occurrence is still here but we can
+increment our size now to three we see a
+b character we've already seen it before
+okay now we see a c character we've
+already seen a b before so we can go
+ahead and update the size to four now we
+see a c character for the first time so
+where's the last occurrence of a c
+character it's all the way over here at
+index seven of course we're going to get
+that from our hashmap in constant time
+since it is a 7 we don't have to update
+our end again so
+we are good to go but we can increment
+our size now to 5. now we get to another
+b character so no major updates here we
+get to an a character again we get to a
+c character again no major updates but
+at this point our size will actually be
+eight now we get to
+uh the last a character so now our size
+is actually nine but what's special
+about this position well this position
+we're at the index where our end uh
+value happens to be as well so what that
+tells us is every character in this uh
+partition only occurs in this partition
+none of these characters are found
+anywhere to the right side so that
+basically means we have finished our
+first partition and we want to take the
+size and add it to the output good thing
+we're keeping track of the size the
+first partition is of size nine so we'll
+add it to the output and then after that
+we're going to reset the size back to
+zero because starting from here we're
+going to be looking at a new partition
+so our size is going to be reset back to
+zero our end pointer can stay the same
+because we know as soon as we see the
+next character our end pointer is going
+to be updated anyway because we know
+that this is going to be a new character
+that we see it's a d character where is
+the last index of d well it's over here
+which is 14. so that means we're gonna
+update our end pointer because 14 is of
+course greater than eight so end is now
+going to be 14 of course we are going to
+increment our size uh now to 1. okay
+next character is e whereas the last
+occurrence of e it's over here which is
+15 so 15 is greater than our current end
+so again let's update our end value and
+of course let's update our size now to
+be
+2. next character is f last occurrence
+of f is actually at this position so 11
+is
+less than 4 uh 15 so no changes here we
+see another e we've already seen e's
+before they're at index 15 which is what
+we have no big deal we see a g
+and g is the last occurrence of g is
+actually at this position as well which
+is 13 less than 15 so no updates at this
+point our size will actually be like
+five now i think uh next let's get to d
+this is the last occurrence of d we get
+to e this is the last occurrence of e
+and it's exactly our end value so this
+is the
+second end of the second partition and
+what's the size of this partition well
+it's seven which is what we're going to
+be keeping track of but i'm kind of
+skipping that so the second uh partition
+that we're gonna be adding to our output
+is gonna be of size seven so that's what
+we're gonna do next we're gonna go to
+the third partition so over here the
+first character is h uh by the way our
+size will have been reset to zero and
+last occurrence of h is over here which
+i think is 19. so that's what our end is
+going to be at currently we're going to
+get to the second character which is i
+it's a little bit smushed in here eyes
+last occurrence is over here actually at
+22. so uh you know update the end to 22.
+next character third character is going
+to be j
+uh last occurrence of j is actually at
+the end of the string which is 23 so at
+this point we pretty much know that this
+is going to be a partition itself right
+but let's assume we continue to run
+through the algorithm we basically visit
+all these characters we don't really
+update our end because it's already at
+the last index of the entire string and
+the size of this partition is what it's
+something like eight characters so by
+the end of it our size will be at eight
+and then we're going to go ahead and add
+that to our output so you can see we did
+the algorithm we got the same output as
+they got in the example up above and we
+kind of had to do two passes one pass to
+build our hash map and then one pass to
+actually build the output but still we
+all we had to do is scan through the
+input so the time complexity actually is
+just big o of n the memory complexity is
+big o of one because this hash map is
+going to be limited to 26 characters so
+with that being said i hope this makes
+sense now we can jump into the code
+remember the first thing we want to do
+is do a little bit of pre-processing by
+that i mean building our hash map where
+we are going to be going ahead and
+mapping every character to the last
+index of it in the input string s so
+let's go ahead and iterate through our
+string in python we can save like one
+line of code by
+enumerating the string which is
+basically going to allow us to get to
+iterate through the index and the
+character at the same time so i is the
+index c is the character uh we're gonna
+go ahead and take that character and set
+its last index equal to i now this is
+okay because even if the last uh
+occurrence of that character isn't this
+index eventually we will have visited
+the last occurrence of that character in
+the string and then we'll have updated
+the last index of that character to the
+last occurrence so this is pretty simple
+now getting into the actual algorithm we
+are going to be doing the same thing
+we're going to be enumerating through
+the index and the character of every
+single uh character in the string
+but remember we're going to be
+maintaining a couple things one is going
+to be the result of course which is
+going to tell us the size of each
+partition and if we want to you know add
+the size we have to maintain the size
+and we're also going to be maintaining
+the end of each partition so initially
+these can just be set to zero now as we
+go through every character as soon as we
+see a character we want to go ahead and
+increment the size of the partition we
+also potentially want to update the end
+of the partition if uh the last index of
+this character is greater than the
+current end then we can go ahead and
+update the current end to uh that last
+index you can write it out like an if
+statement like this but to save a line
+of code we can actually just use the max
+function which is built into python and
+most languages we can update end to be
+the max of itself and the last index of
+the current character that we are
+visiting so we can get rid of these two
+and just have this one line of code
+remember we know we can stop a partition
+if we actually reach the end of the
+partition so if i equals the end of the
+partition then
+we're done we're going to go ahead and
+add the size to the result and then we
+can go ahead and reset the size back
+down to zero and that's all we really
+need to do as we finish our partition we
+don't really have to reset the end
+because it's not really necessary in
+this case once this is done
+our result will have been built so we
+can go ahead and return it and then run
+this to make sure that the code works
+and as you can see on the left yes it
+works and it's about as efficient as we
+can get this problem to be so i really
+hope that this was helpful if it was
+please like and subscribe it supports
+the channel a lot consider checking out
+my patreon where you can further support
+the channel and hopefully i'll see you

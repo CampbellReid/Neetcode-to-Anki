@@ -1,0 +1,291 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+let's solve the problem max area of an
+island this is actually very similar to
+another problem that we have solved
+called number of islands it's pretty
+much the same general algorithm but
+we're returning a slightly different
+result rather than counting the number
+of islands we're actually going through
+every island and figuring out which one
+of them has the max area and then we're
+going to return the max area of any of
+these islands so the general idea is the
+same we're given a 2d grid where zeros
+represent water as you can see they're
+blue and ones represent land and of
+course an island is going to be you know
+consecutive one values that are
+connected either horizontally right like
+from the left and right side or
+vertically so up and down you know two
+cells that are connected diagonally
+don't really count so you know if i add
+one here
+uh you know if this was a one it would
+still uh basically this and this are not
+connected they're not an island they're
+separately an island this is a separate
+island this is a separate island this is
+a separate island and this is a separate
+island so there's really two parts to
+this algorithm
+first you need to be able to get the
+area of any given island and you can do
+that with your graph algorithm of choice
+i prefer doing it with the dfs depth
+first search so understanding debt for
+search is a prerequisite for this
+problem and the good thing is if you do
+have a good understanding of dfs then
+this problem is pretty easy all you
+really have to do is kind of understand
+how dfs fits into the context of this
+problem and in this case it's actually
+pretty simple so i'll be walking through
+dfs and then walking through how we can
+apply that to this algorithm so running
+dfs on an island such as this one so
+suppose you know we start here we wanna
+we see that it's a one value right that
+means it's an island but is the area of
+this island just one itself or are there
+other cells connected to it that are
+also land and if there are we want to
+run dfs in all directions to basically
+count how many cells are connected so
+the way dfs works is we're going to run
+dfs above which we see is out of bounds
+so dfs is a recursive algorithm and
+since up above we're out of bounds the
+dfs is going to return zero basically
+telling us that the area of the island
+in the above direction is zero similarly
+on the left and right side it's not out
+of bounds but this is water so it
+doesn't count as an island but of course
+when we go down we see we reach a one
+and this one has not been visited so far
+so again uh we reach another one value
+cell and again recursively we're going
+to run dfs in all four directions so
+going to the left which is water so
+don't do anything there going down which
+is also water don't do anything we're
+also going to go up above actually even
+though we've already visited that cell
+which is kind of a problem we don't want
+to have to go and run dfs recursively on
+a cell that we've already visited so the
+way in dfs to get around that is to have
+you know some kind of data structure we
+can call it visit it's going to be a
+hash set so
+using this hash set we can kind of mark
+the positions that we've already visited
+so that we don't end up revisiting them
+that will help us with the time
+complexity of this problem and the last
+direction from here is to go right where
+we see that yes there's an island so uh
+you know we we run dfs from this
+position as well we look up nothing
+there down nothing there left we've
+already visited that right side is
+unvisited so that's the last cell
+there's you know in all other directions
+there's nothing else so after running
+dfs on this island what did we get what
+do we want our dfs to return well of
+course we want to know the area of every
+one of these islands right that's the
+only reason we're even running dfs so
+dfs from this island should return the
+value 4 because that's the area of this
+island now it probably makes sense how
+dfs fits into this problem once you get
+good at writing dfs dfs becomes trivial
+all we have to do is figure out how to
+apply it to this problem and it's pretty
+simple in our case we're going to run
+dfs on every single island and then you
+know keep track of which one of these
+has the maximum area as you can see this
+one has the maximum area of six so we're
+going to end up returning six in this
+problem now how are we gonna run dfs on
+every single island the easiest way to
+do it since we don't know which cells
+are zero and which ones are one until we
+actually look at every single individual
+cell that's exactly what we're gonna
+have to do we're gonna start at the top
+left look at every single cell if we see
+a one value we're gonna run dfs on it
+and figure out the area of that island
+if we don't see a one value we're going
+to skip it so we're going to have by the
+end of it we're going to have visited
+every single position and run dfs on
+every island so we will know which one
+is the maximum the only problem is what
+if we run dfs on this position and then
+we run dfs on this position won't we get
+the same exact area won't we run dfs on
+the same island twice well no and that's
+the reason we are using our visit set
+because we don't want to run dfs on an
+island multiple times so at this point
+you can probably see that the time
+complexity of this problem since in the
+worst case we're really only going to be
+visiting each cell you know a constant
+number of times it's not going to be you
+know exponential or anything the time
+complexity is going to be the size of
+the entire grid which
+we're given is m by n so in that case
+the overall time complexity is going to
+be m times n
+and that's also going to be the memory
+complexity because remember we are
+having a hash set which could
+in the worst case contain every single
+cell in the grid
+and of course dfs is recursive so
+there's a call stack associated with it
+but uh this is going to be the memory
+bottleneck the hash set so the time and
+space complexity is going to be big o m
+times n that's enough for us to now jump
+into the code okay so now let's write
+the code if you've seen any of my graph
+videos you probably know i like to solve
+all these problems in a very formulaic
+way the first thing i like to do is just
+get the dimensions of the grid because
+usually it comes in handy so let's get
+the number of columns and the number of
+rows in the entire grid the only other
+data structure we're going to be needing
+is the visit hash set so let's declare
+that above and now we want to write our
+recursive dfs function i like to just
+write the dfs inside of our root
+function because in that case we won't
+have to pass in every single parameter
+all we are going to be passing in is the
+position that we're going to be visiting
+so rc is going to be the row column that
+we are running dfs on we won't have to
+pass in the visit or the grid itself and
+with dfs we always want to handle the
+base case first with all recursive
+functions
+one base case is if we go out of bounds
+how do we determine that well if rho is
+less than zero or a row is too big it'll
+be too big if it's exactly equal to the
+number of rows that we have uh or you
+know the same thing with the column if
+it's less than zero or it's equal to the
+number of columns and there's two other
+cases remember one is if we reach water
+we don't want to run dfs on water so if
+the grid column position is equal to
+zero and last but not least we don't
+want to revisit the same position so if
+the row column pair is already inserted
+in our visit hash set then we don't want
+to revisit it so in all of these cases
+what do we want to return well remember
+our dfs is trying to calculate the area
+of every island in this case we didn't
+find an island so we want to return zero
+and after that don't forget to add
+this row column pair to our hash set to
+indicate that it has been visited and
+after we do that we want to calculate
+the area of uh this position right of
+this island how are we going to do that
+well the current cell that we're at is
+going to count as one of the area values
+and the other
+positions we can pretty much run dfs on
+all four directions right so let's call
+dfs i'm passing in how about row plus
+one uh column right and we can actually
+just copy and paste this four times so
+let's do that this can also be done with
+like a for loop to go through all four
+directions but i just prefer writing it
+out it's not too much code and it's
+pretty easy so we just want to replace
+these with all four directions so
+another direction is row minus one
+another direction will be
+column plus one and another direction
+will be column
+minus one so that's all four directions
+so each of these dfs's is calculating
+the area of the remaining portion of the
+island in each of these four directions
+then we're adding all four of them up
+including the one cell that we are
+currently visiting right now and once
+we've added all those up all we really
+need to do is return it because that's
+what our dfs is trying to do just return
+the area of the island if it hasn't
+already been visited so now that we've
+written our dfs we've pretty much solved
+the entire problem all we really have to
+do is iterate over uh the entire grid
+which we can do just like this nested
+for loops going through every row going
+through every single column in the grid
+and actually let's maintain a single
+variable let's call it area or you could
+call it the result initially it's going
+to be set to zero right this is the max
+area that we're maintaining
+every single time we call our dfs we
+want to potentially update the area if
+it's greater than the current area so
+we're going to take the max of the
+current area and the max
+of the dfs call that we're going to be
+doing on the row column pair that we're
+currently iterating through and once
+that is done we will have the max area
+so all we have to do is return it and
+last let's run this code and make sure
+that it works okay i was very dumb uh we
+forgot to add the plus sign to each of
+these i don't know how i forgot that but
+let's not forget it so yeah so in case
+it wasn't clear all we're doing is
+adding all four of these together adding
+it to the one as well so now let's run
+it to make sure that it works and as you
+can see on the left yes it works and
+it's about as efficient as we can get
+for this problem i will say that one
+other optimization you can do is you
+don't actually need an external visit
+set you can actually just use the grid
+itself to determine if you've visited a
+position or not but we're not guaranteed
+that we can write over the input grid so
+i don't think it's a big deal to use a
+hash set i guess you could clarify with
+your interviewer if you really want to
+but it's just a small optimization that
+isn't a big deal in my opinion but i
+really hope that this was helpful if it
+was please like and subscribe it really
+supports the channel a lot consider
+checking out my patreon if you'd like to
+further support the channel and
+hopefully i'll see you pretty soon

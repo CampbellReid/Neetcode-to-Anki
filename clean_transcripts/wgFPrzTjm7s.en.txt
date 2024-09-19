@@ -1,0 +1,265 @@
+hey guys i'm still unemployed so let's
+solve another leak code problem today
+leak code 2
+add two numbers together so just like
+the problem
+says all we're really doing is adding
+two numbers together right so like
+this example 342 465
+add them together right that's 807. well
+you probably remember from elementary
+school how to add two numbers together
+right so that's
+the number one thing to know about this
+problem right so
+we're adding 342 and 465.
+so do you remember how to add two
+numbers together from elementary school
+you probably do but you might think you
+don't so
+let's just look at this right two plus
+five that's seven
+four plus six that's ten but that's a
+two digit number right so we gotta
+take a carry for that so we'll put a
+zero here
+but we know we have a carry so we're
+gonna have to put that one
+over here right so now we have one plus
+three plus four
+that's eight so we just did it right
+that was the result
+807 so you do probably remember how to
+add two numbers together that's really
+the main part of this problem now the
+second
+thing to recognize though of this
+problem is
+that there's a lot of edge cases that's
+kind of why there's a lot of dislikes in
+this problem
+you can tell over here but so there's
+going to be a lot of edge cases and
+we're going to
+really talk about those edge cases and
+focus on them
+so the first thing they tell us is we're
+given two non-empty linked lists
+right so these linked lists are
+representing the integers
+that we're adding together so they're
+non-empty what does that mean for us
+that means if we're adding two numbers
+right
+like uh 500 plus
+something else right this second number
+it can't be empty there's always gonna
+be some number here right so like eight
+for example something like that
+it's never going to be empty the other
+thing is that they're
+non-negative integers that's really
+convenient for us
+because these are linked lists remember
+so having a negative number would kind
+of be inconvenient so good thing we
+don't have to worry about that
+the other thing is the digits are stored
+in reverse
+order now let's not worry about this too
+much yet
+so for example we see 342
+down here in 465 right in the linked
+lists
+they're stored in reverse order so 342
+is actually 243. uh 465
+is actually 564. so
+we'll see we'll see later that having
+them in reverse order actually helps us
+and so we want to add these two numbers
+and return it as a
+linked list so for each digit we're
+going to have to create a separate
+node so we we will keep that in mind
+so let's look at a slightly modified
+example in the
+in the example given both the numbers
+had the exact same number of digits
+right so there were three digits in each
+but we're looking at it slightly
+different we added one more digit
+to one of the numbers because this is
+kind of
+a case that you have to consider so the
+first thing we're gonna do
+is obvious right we're just adding two
+numbers together so we're gonna
+go iterate through them right so five
+plus two that's gonna be 7 right that's
+our
+first node and notice that we're
+starting
+at the ones place right because that's
+how you add numbers
+and since the lists these linked lists
+are given to us
+in reverse order it makes it really easy
+for us to start at the ones place
+that's how you add two numbers together
+so they really made it easy for us
+so next we're just gonna basically keep
+doing that right so now we're gonna get
+to the next
+two numbers add them together that's
+going to be 10 so we're going to
+remember
+that we have to put a carry so we'll
+have a zero here and we'll
+make sure to remember we have a carry so
+now we're gonna do one plus four plus
+three
+that's eight now we no longer have a
+carry so the carry's gone
+and now we get to a weird place right
+there's nothing here
+so we only have one node right so what
+are we gonna say is up here well we can
+just kind of
+uh assume that it's a zero right so
+there's not actually any value but we'll
+assume that there's a zero here
+so zero plus three that's going to be
+three
+and in this case this is going to be our
+result so we just considered one edge
+case of what if the two
+linked lists that we're adding together
+are of different sizes right
+so we kind of know what we can do in
+that case now there's one last edge case
+that's kind of tricky
+i seem to never remember it when i'm
+solving this problem but
+maybe you'll be able to catch it so
+let's say we were adding
+seven plus eight together right now when
+you add it together
+with addition right it's pretty obvious
+uh let me rewrite it
+so we know it's 15 right so we're going
+to put a
+5 here but we have a carry so the carry
+is going to go here right but there's no
+other number that we're adding here
+right
+we know we can just put the 1 here but
+when you're solving this algorithm you
+might forget to do that because
+with a linked list seven plus eight
+you add these together you get a five
+right that's our result
+and you'll put the carry here you'll say
+yeah there's a carry of one
+but in our algorithm we have to make
+sure to remember
+to put the one in our result
+right even if there aren't any uh nodes
+here right like there aren't any
+input nodes that we're adding it with so
+with all of that in mind let's actually
+get into the code and it'll probably
+make even more sense
+so the first thing we want to do is we
+know we're creating a resulting linked
+list so
+i like to just put a dummy node to not
+have to deal with any of the edge cases
+of inserting into a linked list
+and our current pointer is going to
+point at the position that we're going
+to be inserting
+a new node or the new digit into
+so we're going to iterate through these
+nodes now how long
+are we going to be iterating through
+them while either of them has a digit so
+while
+l1 or l2 is non-null we're going to be
+adding them together
+now we know one of them could be null so
+we're going to get the digits from them
+only if l1 is non-null if l1
+is null though we're gonna set it to
+zero right just like we did
+in our visual example we're gonna do the
+exact same thing
+now we actually want to add them
+together but
+hold on remember we had a carry that we
+have to maintain
+so i'm gonna have a carry value and
+initially set it to zero outside of our
+loop so carry is initially zero
+so now we're gonna compute the new digit
+so how do we do that well we'll say
+v1 plus v2 plus carry right this is
+elementary school mathematics but now we
+could potentially have a
+new carry right so if our number that we
+just computed for example what if it's
+15
+right so that's a two digit number so
+we're we want to get the carry out of
+that so how do we get it
+uh we can just say value
+divided by 10. also since
+our value could be greater than 10 right
+right like 15
+we want only the the ones place
+digit so we're gonna take our value and
+mod it by ten so that'll give us the
+ones place
+so now that we have the digit we can
+finally insert it into our list so we're
+going to say
+current.next we're going to insert a new
+list node
+with the value that we just computed so
+now we're going to be
+updating our pointers so we have to
+update current
+so we're going to set current to the
+next pointer
+we're going to update our list one and
+list two pointers
+if they are non-null so l1 is going to
+be
+l1 dot next if l1 is non-null
+right you might you might say okay now
+we're done we're just going to return
+dummy.next right so we're going to
+return the list that we just created
+but remember that edge case that we
+talked about right what if we had
+eight plus seven uh our loop
+is is going to stop and we're going to
+forget about the carry
+so over here i'm going to add one last
+thing to our condition
+while our loop is going if our carry is
+non-null
+we want to continue the loop meaning if
+our carry for example 8 plus 7
+l1 and l2 are going to be null meaning
+v1 and v2 are going to evaluate to 0
+but our carry is going to be 1 right
+so we're gonna say uh we're gonna insert
+a value of zero
+plus zero plus one because our carry is
+one and then
+of course our list is gonna need to have
+that value in it so
+don't forget about the edge cases that's
+really what makes this problem annoying
+i hope this was helpful for you if it
+was leave a like and subscribe

@@ -1,0 +1,2808 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.910 align:start position:0%
+ 
+hey<00:00:00.240><c> everyone</c><00:00:00.799><c> welcome</c><00:00:01.280><c> back</c><00:00:01.520><c> and</c><00:00:01.680><c> let's</c>
+
+00:00:01.910 --> 00:00:01.920 align:start position:0%
+hey everyone welcome back and let's
+ 
+
+00:00:01.920 --> 00:00:04.150 align:start position:0%
+hey everyone welcome back and let's
+write<00:00:02.159><c> some</c><00:00:02.320><c> more</c><00:00:02.480><c> neat</c><00:00:02.800><c> code</c><00:00:03.120><c> today</c><00:00:03.600><c> so</c><00:00:03.760><c> today</c>
+
+00:00:04.150 --> 00:00:04.160 align:start position:0%
+write some more neat code today so today
+ 
+
+00:00:04.160 --> 00:00:06.950 align:start position:0%
+write some more neat code today so today
+let's<00:00:04.480><c> solve</c><00:00:04.799><c> the</c><00:00:04.960><c> problem</c><00:00:05.600><c> valid</c><00:00:06.080><c> sudoku</c><00:00:06.879><c> and</c>
+
+00:00:06.950 --> 00:00:06.960 align:start position:0%
+let's solve the problem valid sudoku and
+ 
+
+00:00:06.960 --> 00:00:08.710 align:start position:0%
+let's solve the problem valid sudoku and
+i'm<00:00:07.120><c> going</c><00:00:07.200><c> to</c><00:00:07.279><c> be</c><00:00:07.440><c> recording</c><00:00:08.000><c> this</c><00:00:08.320><c> on</c><00:00:08.480><c> the</c>
+
+00:00:08.710 --> 00:00:08.720 align:start position:0%
+i'm going to be recording this on the
+ 
+
+00:00:08.720 --> 00:00:10.310 align:start position:0%
+i'm going to be recording this on the
+4th<00:00:09.040><c> of</c><00:00:09.120><c> july</c><00:00:09.519><c> so</c><00:00:09.679><c> hopefully</c><00:00:10.000><c> there</c><00:00:10.160><c> aren't</c>
+
+00:00:10.310 --> 00:00:10.320 align:start position:0%
+4th of july so hopefully there aren't
+ 
+
+00:00:10.320 --> 00:00:11.749 align:start position:0%
+4th of july so hopefully there aren't
+too<00:00:10.480><c> many</c><00:00:10.719><c> firework</c><00:00:11.200><c> noises</c><00:00:11.599><c> in</c><00:00:11.679><c> the</c>
+
+00:00:11.749 --> 00:00:11.759 align:start position:0%
+too many firework noises in the
+ 
+
+00:00:11.759 --> 00:00:15.669 align:start position:0%
+too many firework noises in the
+background<00:00:12.480><c> so</c><00:00:12.719><c> we</c><00:00:12.960><c> are</c><00:00:13.200><c> given</c><00:00:13.679><c> a</c><00:00:13.920><c> 9x9</c><00:00:14.920><c> sudoku</c>
+
+00:00:15.669 --> 00:00:15.679 align:start position:0%
+background so we are given a 9x9 sudoku
+ 
+
+00:00:15.679 --> 00:00:18.310 align:start position:0%
+background so we are given a 9x9 sudoku
+board<00:00:16.320><c> and</c><00:00:16.560><c> all</c><00:00:16.800><c> we</c><00:00:16.960><c> want</c><00:00:17.119><c> to</c><00:00:17.279><c> do</c><00:00:17.520><c> is</c><00:00:17.680><c> determine</c>
+
+00:00:18.310 --> 00:00:18.320 align:start position:0%
+board and all we want to do is determine
+ 
+
+00:00:18.320 --> 00:00:21.189 align:start position:0%
+board and all we want to do is determine
+if<00:00:18.480><c> the</c><00:00:18.800><c> board</c><00:00:19.279><c> in</c><00:00:19.439><c> its</c><00:00:19.840><c> current</c><00:00:20.400><c> state</c><00:00:20.960><c> is</c>
+
+00:00:21.189 --> 00:00:21.199 align:start position:0%
+if the board in its current state is
+ 
+
+00:00:21.199 --> 00:00:23.029 align:start position:0%
+if the board in its current state is
+valid<00:00:21.840><c> or</c><00:00:22.160><c> not</c>
+
+00:00:23.029 --> 00:00:23.039 align:start position:0%
+valid or not
+ 
+
+00:00:23.039 --> 00:00:25.189 align:start position:0%
+valid or not
+and<00:00:23.119><c> they</c><00:00:23.359><c> tell</c><00:00:23.519><c> us</c><00:00:23.760><c> only</c><00:00:24.080><c> the</c><00:00:24.400><c> filled</c><00:00:24.880><c> in</c>
+
+00:00:25.189 --> 00:00:25.199 align:start position:0%
+and they tell us only the filled in
+ 
+
+00:00:25.199 --> 00:00:27.269 align:start position:0%
+and they tell us only the filled in
+cells<00:00:25.599><c> need</c><00:00:25.840><c> to</c><00:00:25.920><c> be</c><00:00:26.080><c> validated</c><00:00:26.720><c> according</c><00:00:27.119><c> to</c>
+
+00:00:27.269 --> 00:00:27.279 align:start position:0%
+cells need to be validated according to
+ 
+
+00:00:27.279 --> 00:00:30.390 align:start position:0%
+cells need to be validated according to
+the<00:00:27.519><c> three</c><00:00:27.920><c> rules</c><00:00:28.400><c> of</c><00:00:28.640><c> sudoku</c><00:00:29.279><c> so</c><00:00:29.519><c> basically</c>
+
+00:00:30.390 --> 00:00:30.400 align:start position:0%
+the three rules of sudoku so basically
+ 
+
+00:00:30.400 --> 00:00:33.830 align:start position:0%
+the three rules of sudoku so basically
+each<00:00:30.800><c> row</c><00:00:31.599><c> must</c><00:00:32.160><c> only</c><00:00:32.559><c> contain</c><00:00:33.200><c> digits</c>
+
+00:00:33.830 --> 00:00:33.840 align:start position:0%
+each row must only contain digits
+ 
+
+00:00:33.840 --> 00:00:37.510 align:start position:0%
+each row must only contain digits
+between<00:00:34.399><c> 1</c><00:00:34.719><c> through</c><00:00:35.040><c> 9</c><00:00:35.600><c> without</c><00:00:36.480><c> repetition</c>
+
+00:00:37.510 --> 00:00:37.520 align:start position:0%
+between 1 through 9 without repetition
+ 
+
+00:00:37.520 --> 00:00:40.229 align:start position:0%
+between 1 through 9 without repetition
+the<00:00:37.760><c> same</c><00:00:38.079><c> is</c><00:00:38.239><c> true</c><00:00:38.480><c> for</c><00:00:38.719><c> every</c><00:00:39.120><c> single</c><00:00:39.680><c> column</c>
+
+00:00:40.229 --> 00:00:40.239 align:start position:0%
+the same is true for every single column
+ 
+
+00:00:40.239 --> 00:00:42.470 align:start position:0%
+the same is true for every single column
+in<00:00:40.399><c> this</c><00:00:40.640><c> board</c><00:00:40.960><c> it</c><00:00:41.040><c> can</c><00:00:41.280><c> only</c><00:00:41.520><c> contain</c><00:00:42.000><c> digits</c>
+
+00:00:42.470 --> 00:00:42.480 align:start position:0%
+in this board it can only contain digits
+ 
+
+00:00:42.480 --> 00:00:44.310 align:start position:0%
+in this board it can only contain digits
+1<00:00:42.719><c> through</c><00:00:42.960><c> nine</c><00:00:43.200><c> without</c><00:00:43.680><c> repetition</c><00:00:44.239><c> that</c>
+
+00:00:44.310 --> 00:00:44.320 align:start position:0%
+1 through nine without repetition that
+ 
+
+00:00:44.320 --> 00:00:46.790 align:start position:0%
+1 through nine without repetition that
+means<00:00:44.559><c> we</c><00:00:44.719><c> can't</c><00:00:44.960><c> have</c><00:00:45.280><c> duplicates</c><00:00:46.320><c> in</c><00:00:46.559><c> any</c>
+
+00:00:46.790 --> 00:00:46.800 align:start position:0%
+means we can't have duplicates in any
+ 
+
+00:00:46.800 --> 00:00:49.670 align:start position:0%
+means we can't have duplicates in any
+particular<00:00:47.440><c> row</c><00:00:47.920><c> or</c><00:00:48.239><c> any</c><00:00:48.480><c> particular</c><00:00:49.120><c> column</c>
+
+00:00:49.670 --> 00:00:49.680 align:start position:0%
+particular row or any particular column
+ 
+
+00:00:49.680 --> 00:00:51.029 align:start position:0%
+particular row or any particular column
+and<00:00:49.760><c> the</c><00:00:49.920><c> third</c><00:00:50.239><c> part</c><00:00:50.399><c> which</c><00:00:50.640><c> is</c><00:00:50.719><c> going</c><00:00:50.800><c> to</c><00:00:50.879><c> be</c>
+
+00:00:51.029 --> 00:00:51.039 align:start position:0%
+and the third part which is going to be
+ 
+
+00:00:51.039 --> 00:00:54.150 align:start position:0%
+and the third part which is going to be
+the<00:00:51.199><c> most</c><00:00:51.520><c> tricky</c><00:00:52.000><c> is</c><00:00:52.480><c> each</c><00:00:52.879><c> three</c><00:00:53.280><c> by</c><00:00:53.600><c> three</c>
+
+00:00:54.150 --> 00:00:54.160 align:start position:0%
+the most tricky is each three by three
+ 
+
+00:00:54.160 --> 00:00:56.549 align:start position:0%
+the most tricky is each three by three
+sub<00:00:54.480><c> box</c><00:00:55.120><c> basically</c><00:00:55.920><c> you</c><00:00:56.000><c> know</c><00:00:56.160><c> you</c><00:00:56.320><c> can</c><00:00:56.399><c> kind</c>
+
+00:00:56.549 --> 00:00:56.559 align:start position:0%
+sub box basically you know you can kind
+ 
+
+00:00:56.559 --> 00:00:59.029 align:start position:0%
+sub box basically you know you can kind
+of<00:00:56.719><c> see</c><00:00:56.960><c> it</c><00:00:57.280><c> in</c><00:00:57.440><c> the</c><00:00:57.760><c> drawing</c><00:00:58.079><c> right</c><00:00:58.320><c> three</c><00:00:58.559><c> by</c>
+
+00:00:59.029 --> 00:00:59.039 align:start position:0%
+of see it in the drawing right three by
+ 
+
+00:00:59.039 --> 00:01:01.750 align:start position:0%
+of see it in the drawing right three by
+this<00:00:59.359><c> entire</c><00:00:59.760><c> nine</c><00:01:00.000><c> by</c><00:01:00.239><c> nine</c><00:01:00.559><c> grid</c><00:01:01.039><c> is</c><00:01:01.280><c> made</c><00:01:01.520><c> up</c>
+
+00:01:01.750 --> 00:01:01.760 align:start position:0%
+this entire nine by nine grid is made up
+ 
+
+00:01:01.760 --> 00:01:03.910 align:start position:0%
+this entire nine by nine grid is made up
+of<00:01:02.079><c> nine</c><00:01:02.719><c> three</c><00:01:02.960><c> by</c><00:01:03.199><c> three</c><00:01:03.520><c> grids</c><00:01:03.760><c> right</c>
+
+00:01:03.910 --> 00:01:03.920 align:start position:0%
+of nine three by three grids right
+ 
+
+00:01:03.920 --> 00:01:07.109 align:start position:0%
+of nine three by three grids right
+there's<00:01:04.159><c> one</c><00:01:04.320><c> here</c><00:01:04.799><c> one</c><00:01:05.119><c> here</c><00:01:05.519><c> one</c><00:01:05.760><c> here</c><00:01:06.479><c> and</c>
+
+00:01:07.109 --> 00:01:07.119 align:start position:0%
+there's one here one here one here and
+ 
+
+00:01:07.119 --> 00:01:09.830 align:start position:0%
+there's one here one here one here and
+you<00:01:07.280><c> know</c><00:01:07.760><c> basically</c><00:01:08.799><c> nine</c><00:01:09.040><c> of</c><00:01:09.200><c> them</c><00:01:09.600><c> as</c><00:01:09.760><c> you</c>
+
+00:01:09.830 --> 00:01:09.840 align:start position:0%
+you know basically nine of them as you
+ 
+
+00:01:09.840 --> 00:01:12.230 align:start position:0%
+you know basically nine of them as you
+can<00:01:10.000><c> see</c><00:01:10.479><c> so</c><00:01:10.720><c> basically</c><00:01:11.280><c> for</c><00:01:11.520><c> each</c><00:01:11.680><c> of</c><00:01:11.920><c> these</c>
+
+00:01:12.230 --> 00:01:12.240 align:start position:0%
+can see so basically for each of these
+ 
+
+00:01:12.240 --> 00:01:13.750 align:start position:0%
+can see so basically for each of these
+three<00:01:12.560><c> by</c><00:01:12.880><c> three</c>
+
+00:01:13.750 --> 00:01:13.760 align:start position:0%
+three by three
+ 
+
+00:01:13.760 --> 00:01:16.630 align:start position:0%
+three by three
+sub<00:01:14.080><c> grids</c><00:01:14.720><c> we</c><00:01:15.040><c> also</c><00:01:15.439><c> want</c><00:01:15.680><c> to</c><00:01:15.920><c> check</c><00:01:16.240><c> that</c><00:01:16.400><c> it</c>
+
+00:01:16.630 --> 00:01:16.640 align:start position:0%
+sub grids we also want to check that it
+ 
+
+00:01:16.640 --> 00:01:18.630 align:start position:0%
+sub grids we also want to check that it
+only<00:01:16.960><c> contains</c><00:01:17.520><c> digits</c><00:01:17.920><c> one</c><00:01:18.159><c> through</c><00:01:18.400><c> nine</c>
+
+00:01:18.630 --> 00:01:18.640 align:start position:0%
+only contains digits one through nine
+ 
+
+00:01:18.640 --> 00:01:20.469 align:start position:0%
+only contains digits one through nine
+without<00:01:19.119><c> repetition</c><00:01:19.840><c> basically</c><00:01:20.240><c> without</c>
+
+00:01:20.469 --> 00:01:20.479 align:start position:0%
+without repetition basically without
+ 
+
+00:01:20.479 --> 00:01:22.390 align:start position:0%
+without repetition basically without
+repetition<00:01:21.040><c> that</c><00:01:21.200><c> means</c><00:01:21.439><c> it</c><00:01:21.520><c> has</c><00:01:21.759><c> to</c><00:01:21.920><c> contain</c>
+
+00:01:22.390 --> 00:01:22.400 align:start position:0%
+repetition that means it has to contain
+ 
+
+00:01:22.400 --> 00:01:24.630 align:start position:0%
+repetition that means it has to contain
+every<00:01:22.640><c> single</c><00:01:22.960><c> digit</c><00:01:23.360><c> from</c><00:01:23.600><c> one</c><00:01:23.840><c> through</c><00:01:24.080><c> nine</c>
+
+00:01:24.630 --> 00:01:24.640 align:start position:0%
+every single digit from one through nine
+ 
+
+00:01:24.640 --> 00:01:26.550 align:start position:0%
+every single digit from one through nine
+now<00:01:24.799><c> of</c><00:01:24.880><c> course</c><00:01:25.200><c> the</c><00:01:25.520><c> sudoku</c><00:01:26.000><c> board</c><00:01:26.240><c> doesn't</c>
+
+00:01:26.550 --> 00:01:26.560 align:start position:0%
+now of course the sudoku board doesn't
+ 
+
+00:01:26.560 --> 00:01:28.230 align:start position:0%
+now of course the sudoku board doesn't
+necessarily<00:01:27.119><c> have</c><00:01:27.200><c> to</c><00:01:27.360><c> be</c><00:01:27.520><c> filled</c><00:01:27.840><c> in</c><00:01:28.000><c> you</c><00:01:28.080><c> can</c>
+
+00:01:28.230 --> 00:01:28.240 align:start position:0%
+necessarily have to be filled in you can
+ 
+
+00:01:28.240 --> 00:01:31.270 align:start position:0%
+necessarily have to be filled in you can
+see<00:01:28.400><c> this</c><00:01:28.640><c> 3x3</c><00:01:29.759><c> is</c><00:01:29.920><c> not</c><00:01:30.079><c> filled</c><00:01:30.479><c> in</c><00:01:30.880><c> but</c><00:01:31.119><c> in</c>
+
+00:01:31.270 --> 00:01:31.280 align:start position:0%
+see this 3x3 is not filled in but in
+ 
+
+00:01:31.280 --> 00:01:33.749 align:start position:0%
+see this 3x3 is not filled in but in
+this<00:01:31.520><c> case</c><00:01:32.000><c> we</c><00:01:32.240><c> are</c><00:01:32.400><c> going</c><00:01:32.560><c> to</c><00:01:32.640><c> say</c><00:01:32.799><c> ok</c><00:01:33.040><c> this</c>
+
+00:01:33.749 --> 00:01:33.759 align:start position:0%
+this case we are going to say ok this
+ 
+
+00:01:33.759 --> 00:01:37.190 align:start position:0%
+this case we are going to say ok this
+this<00:01:34.000><c> one</c><00:01:34.400><c> is</c><00:01:34.720><c> valid</c><00:01:35.520><c> because</c><00:01:36.079><c> it</c><00:01:36.640><c> you</c><00:01:36.799><c> know</c><00:01:36.960><c> it</c>
+
+00:01:37.190 --> 00:01:37.200 align:start position:0%
+this one is valid because it you know it
+ 
+
+00:01:37.200 --> 00:01:39.429 align:start position:0%
+this one is valid because it you know it
+only<00:01:37.439><c> has</c><00:01:37.680><c> a</c><00:01:37.840><c> 6</c><00:01:38.560><c> and</c><00:01:38.799><c> it</c><00:01:38.880><c> doesn't</c><00:01:39.119><c> have</c><00:01:39.280><c> any</c>
+
+00:01:39.429 --> 00:01:39.439 align:start position:0%
+only has a 6 and it doesn't have any
+ 
+
+00:01:39.439 --> 00:01:41.670 align:start position:0%
+only has a 6 and it doesn't have any
+duplicates<00:01:40.079><c> right</c><00:01:40.479><c> but</c><00:01:40.640><c> we</c><00:01:40.960><c> do</c><00:01:41.119><c> we</c><00:01:41.280><c> don't</c><00:01:41.439><c> only</c>
+
+00:01:41.670 --> 00:01:41.680 align:start position:0%
+duplicates right but we do we don't only
+ 
+
+00:01:41.680 --> 00:01:43.670 align:start position:0%
+duplicates right but we do we don't only
+have<00:01:41.759><c> to</c><00:01:41.920><c> check</c><00:01:42.159><c> each</c><00:01:42.399><c> 3x3</c><00:01:43.040><c> grid</c><00:01:43.280><c> we</c><00:01:43.439><c> also</c><00:01:43.600><c> have</c>
+
+00:01:43.670 --> 00:01:43.680 align:start position:0%
+have to check each 3x3 grid we also have
+ 
+
+00:01:43.680 --> 00:01:45.830 align:start position:0%
+have to check each 3x3 grid we also have
+to<00:01:43.840><c> check</c><00:01:44.079><c> every</c><00:01:44.240><c> single</c><00:01:44.640><c> column</c><00:01:45.360><c> and</c><00:01:45.600><c> every</c>
+
+00:01:45.830 --> 00:01:45.840 align:start position:0%
+to check every single column and every
+ 
+
+00:01:45.840 --> 00:01:48.630 align:start position:0%
+to check every single column and every
+single<00:01:46.560><c> row</c><00:01:47.119><c> now</c><00:01:47.280><c> before</c><00:01:47.759><c> i</c><00:01:48.000><c> get</c><00:01:48.240><c> into</c><00:01:48.479><c> the</c>
+
+00:01:48.630 --> 00:01:48.640 align:start position:0%
+single row now before i get into the
+ 
+
+00:01:48.640 --> 00:01:50.710 align:start position:0%
+single row now before i get into the
+solution<00:01:49.040><c> let</c><00:01:49.200><c> me</c><00:01:49.280><c> just</c><00:01:49.920><c> very</c><00:01:50.320><c> quickly</c>
+
+00:01:50.710 --> 00:01:50.720 align:start position:0%
+solution let me just very quickly
+ 
+
+00:01:50.720 --> 00:01:53.350 align:start position:0%
+solution let me just very quickly
+clarify<00:01:51.360><c> what</c><00:01:51.520><c> this</c><00:01:51.759><c> problem</c><00:01:52.159><c> wants</c><00:01:52.479><c> from</c><00:01:52.720><c> us</c>
+
+00:01:53.350 --> 00:01:53.360 align:start position:0%
+clarify what this problem wants from us
+ 
+
+00:01:53.360 --> 00:01:55.270 align:start position:0%
+clarify what this problem wants from us
+you<00:01:53.520><c> might</c><00:01:53.840><c> over</c><00:01:54.159><c> complicate</c><00:01:54.640><c> it</c><00:01:54.799><c> and</c><00:01:54.960><c> think</c>
+
+00:01:55.270 --> 00:01:55.280 align:start position:0%
+you might over complicate it and think
+ 
+
+00:01:55.280 --> 00:01:57.910 align:start position:0%
+you might over complicate it and think
+something<00:01:55.600><c> like</c><00:01:55.840><c> this</c><00:01:56.240><c> what</c><00:01:56.479><c> if</c><00:01:56.640><c> we</c><00:01:56.799><c> had</c><00:01:57.119><c> a</c><00:01:57.439><c> row</c>
+
+00:01:57.910 --> 00:01:57.920 align:start position:0%
+something like this what if we had a row
+ 
+
+00:01:57.920 --> 00:02:00.230 align:start position:0%
+something like this what if we had a row
+such<00:01:58.159><c> as</c><00:01:58.320><c> this</c><00:01:58.560><c> one</c><00:01:58.719><c> it</c><00:01:58.880><c> has</c><00:01:59.119><c> one</c><00:01:59.520><c> two</c><00:01:59.840><c> three</c>
+
+00:02:00.230 --> 00:02:00.240 align:start position:0%
+such as this one it has one two three
+ 
+
+00:02:00.240 --> 00:02:03.510 align:start position:0%
+such as this one it has one two three
+four<00:02:00.640><c> five</c><00:02:01.040><c> six</c><00:02:01.360><c> seven</c><00:02:01.840><c> eight</c><00:02:02.240><c> that</c><00:02:02.640><c> must</c><00:02:03.040><c> mean</c>
+
+00:02:03.510 --> 00:02:03.520 align:start position:0%
+four five six seven eight that must mean
+ 
+
+00:02:03.520 --> 00:02:05.830 align:start position:0%
+four five six seven eight that must mean
+even<00:02:03.759><c> though</c><00:02:04.000><c> this</c><00:02:04.240><c> spot</c><00:02:04.640><c> is</c><00:02:04.799><c> empty</c><00:02:05.200><c> that</c><00:02:05.520><c> must</c>
+
+00:02:05.830 --> 00:02:05.840 align:start position:0%
+even though this spot is empty that must
+ 
+
+00:02:05.840 --> 00:02:08.389 align:start position:0%
+even though this spot is empty that must
+mean<00:02:06.320><c> a</c><00:02:06.640><c> nine</c><00:02:07.040><c> has</c><00:02:07.280><c> to</c><00:02:07.439><c> go</c><00:02:07.680><c> here</c><00:02:07.920><c> right</c><00:02:08.080><c> that's</c>
+
+00:02:08.389 --> 00:02:08.399 align:start position:0%
+mean a nine has to go here right that's
+ 
+
+00:02:08.399 --> 00:02:10.630 align:start position:0%
+mean a nine has to go here right that's
+pretty<00:02:08.720><c> obvious</c><00:02:09.280><c> but</c><00:02:09.520><c> take</c><00:02:09.759><c> a</c><00:02:09.840><c> look</c><00:02:10.080><c> at</c><00:02:10.239><c> this</c>
+
+00:02:10.630 --> 00:02:10.640 align:start position:0%
+pretty obvious but take a look at this
+ 
+
+00:02:10.640 --> 00:02:13.270 align:start position:0%
+pretty obvious but take a look at this
+column<00:02:11.120><c> it</c><00:02:11.280><c> has</c><00:02:11.599><c> two</c><00:02:12.000><c> three</c><00:02:12.319><c> four</c><00:02:12.640><c> five</c><00:02:12.959><c> six</c>
+
+00:02:13.270 --> 00:02:13.280 align:start position:0%
+column it has two three four five six
+ 
+
+00:02:13.280 --> 00:02:15.990 align:start position:0%
+column it has two three four five six
+seven<00:02:13.599><c> eight</c><00:02:14.000><c> nine</c><00:02:14.640><c> that</c><00:02:14.959><c> must</c><00:02:15.280><c> mean</c><00:02:15.680><c> that</c><00:02:15.840><c> the</c>
+
+00:02:15.990 --> 00:02:16.000 align:start position:0%
+seven eight nine that must mean that the
+ 
+
+00:02:16.000 --> 00:02:18.550 align:start position:0%
+seven eight nine that must mean that the
+value<00:02:16.319><c> that</c><00:02:16.480><c> goes</c><00:02:16.720><c> here</c><00:02:16.959><c> has</c><00:02:17.120><c> to</c><00:02:17.280><c> be</c><00:02:17.599><c> a</c><00:02:17.920><c> one</c><00:02:18.400><c> so</c>
+
+00:02:18.550 --> 00:02:18.560 align:start position:0%
+value that goes here has to be a one so
+ 
+
+00:02:18.560 --> 00:02:20.550 align:start position:0%
+value that goes here has to be a one so
+we<00:02:18.720><c> have</c><00:02:18.879><c> a</c><00:02:19.040><c> contradiction</c><00:02:20.080><c> we</c><00:02:20.239><c> have</c><00:02:20.400><c> to</c>
+
+00:02:20.550 --> 00:02:20.560 align:start position:0%
+we have a contradiction we have to
+ 
+
+00:02:20.560 --> 00:02:23.510 align:start position:0%
+we have a contradiction we have to
+either<00:02:20.800><c> put</c><00:02:21.040><c> a</c><00:02:21.200><c> 1</c><00:02:21.520><c> or</c><00:02:21.760><c> a</c><00:02:21.920><c> 9</c><00:02:22.319><c> but</c><00:02:22.480><c> we</c><00:02:22.640><c> know</c><00:02:23.200><c> that</c>
+
+00:02:23.510 --> 00:02:23.520 align:start position:0%
+either put a 1 or a 9 but we know that
+ 
+
+00:02:23.520 --> 00:02:25.589 align:start position:0%
+either put a 1 or a 9 but we know that
+both<00:02:23.920><c> need</c><00:02:24.080><c> to</c><00:02:24.160><c> be</c><00:02:24.319><c> in</c><00:02:24.400><c> this</c><00:02:24.640><c> position</c><00:02:25.200><c> so</c><00:02:25.440><c> in</c>
+
+00:02:25.589 --> 00:02:25.599 align:start position:0%
+both need to be in this position so in
+ 
+
+00:02:25.599 --> 00:02:28.070 align:start position:0%
+both need to be in this position so in
+this<00:02:25.840><c> case</c><00:02:26.160><c> this</c><00:02:26.400><c> is</c><00:02:26.640><c> not</c><00:02:26.959><c> a</c><00:02:27.120><c> valid</c><00:02:27.520><c> sudoku</c>
+
+00:02:28.070 --> 00:02:28.080 align:start position:0%
+this case this is not a valid sudoku
+ 
+
+00:02:28.080 --> 00:02:31.110 align:start position:0%
+this case this is not a valid sudoku
+board<00:02:28.480><c> right</c><00:02:29.200><c> well</c><00:02:29.520><c> that's</c><00:02:29.840><c> technically</c><00:02:30.480><c> true</c>
+
+00:02:31.110 --> 00:02:31.120 align:start position:0%
+board right well that's technically true
+ 
+
+00:02:31.120 --> 00:02:33.270 align:start position:0%
+board right well that's technically true
+but<00:02:31.440><c> for</c><00:02:31.680><c> this</c><00:02:32.080><c> problem</c><00:02:32.720><c> we</c><00:02:32.879><c> are</c><00:02:33.040><c> going</c><00:02:33.120><c> to</c>
+
+00:02:33.270 --> 00:02:33.280 align:start position:0%
+but for this problem we are going to
+ 
+
+00:02:33.280 --> 00:02:35.670 align:start position:0%
+but for this problem we are going to
+consider<00:02:33.760><c> this</c><00:02:34.160><c> board</c><00:02:34.640><c> yes</c><00:02:34.959><c> it's</c><00:02:35.200><c> valid</c>
+
+00:02:35.670 --> 00:02:35.680 align:start position:0%
+consider this board yes it's valid
+ 
+
+00:02:35.680 --> 00:02:36.470 align:start position:0%
+consider this board yes it's valid
+because
+
+00:02:36.470 --> 00:02:36.480 align:start position:0%
+because
+ 
+
+00:02:36.480 --> 00:02:39.110 align:start position:0%
+because
+as<00:02:36.720><c> of</c><00:02:36.879><c> right</c><00:02:37.200><c> now</c><00:02:37.599><c> based</c><00:02:37.920><c> on</c><00:02:38.080><c> what</c><00:02:38.239><c> the</c><00:02:38.480><c> cells</c>
+
+00:02:39.110 --> 00:02:39.120 align:start position:0%
+as of right now based on what the cells
+ 
+
+00:02:39.120 --> 00:02:41.110 align:start position:0%
+as of right now based on what the cells
+are<00:02:39.360><c> filled</c><00:02:39.760><c> in</c><00:02:40.000><c> like</c><00:02:40.160><c> what</c><00:02:40.319><c> cells</c><00:02:40.640><c> are</c><00:02:40.800><c> filled</c>
+
+00:02:41.110 --> 00:02:41.120 align:start position:0%
+are filled in like what cells are filled
+ 
+
+00:02:41.120 --> 00:02:43.190 align:start position:0%
+are filled in like what cells are filled
+in<00:02:41.440><c> there</c><00:02:41.760><c> aren't</c><00:02:42.080><c> any</c><00:02:42.319><c> contradictions</c><00:02:43.040><c> we're</c>
+
+00:02:43.190 --> 00:02:43.200 align:start position:0%
+in there aren't any contradictions we're
+ 
+
+00:02:43.200 --> 00:02:45.430 align:start position:0%
+in there aren't any contradictions we're
+not<00:02:43.440><c> going</c><00:02:43.599><c> to</c><00:02:43.760><c> assume</c><00:02:44.400><c> anything</c><00:02:44.879><c> for</c><00:02:45.120><c> any</c><00:02:45.360><c> of</c>
+
+00:02:45.430 --> 00:02:45.440 align:start position:0%
+not going to assume anything for any of
+ 
+
+00:02:45.440 --> 00:02:47.270 align:start position:0%
+not going to assume anything for any of
+these<00:02:45.840><c> empty</c><00:02:46.400><c> positions</c><00:02:46.879><c> even</c><00:02:47.040><c> though</c><00:02:47.120><c> we</c>
+
+00:02:47.270 --> 00:02:47.280 align:start position:0%
+these empty positions even though we
+ 
+
+00:02:47.280 --> 00:02:49.030 align:start position:0%
+these empty positions even though we
+know<00:02:47.440><c> for</c><00:02:47.599><c> sure</c><00:02:47.840><c> yes</c><00:02:48.080><c> a</c><00:02:48.160><c> 9</c><00:02:48.480><c> would</c><00:02:48.640><c> have</c><00:02:48.800><c> to</c><00:02:48.879><c> go</c>
+
+00:02:49.030 --> 00:02:49.040 align:start position:0%
+know for sure yes a 9 would have to go
+ 
+
+00:02:49.040 --> 00:02:50.630 align:start position:0%
+know for sure yes a 9 would have to go
+here<00:02:49.200><c> based</c><00:02:49.519><c> on</c><00:02:49.599><c> this</c><00:02:49.840><c> row</c><00:02:50.239><c> we're</c><00:02:50.400><c> not</c><00:02:50.560><c> going</c>
+
+00:02:50.630 --> 00:02:50.640 align:start position:0%
+here based on this row we're not going
+ 
+
+00:02:50.640 --> 00:02:52.470 align:start position:0%
+here based on this row we're not going
+to<00:02:50.800><c> assume</c><00:02:51.120><c> that</c><00:02:51.519><c> so</c><00:02:51.680><c> it's</c><00:02:51.920><c> actually</c><00:02:52.239><c> a</c><00:02:52.319><c> little</c>
+
+00:02:52.470 --> 00:02:52.480 align:start position:0%
+to assume that so it's actually a little
+ 
+
+00:02:52.480 --> 00:02:54.710 align:start position:0%
+to assume that so it's actually a little
+bit<00:02:52.720><c> easier</c><00:02:53.040><c> than</c><00:02:53.200><c> you</c><00:02:53.360><c> might</c><00:02:53.680><c> think</c><00:02:54.319><c> so</c><00:02:54.480><c> the</c>
+
+00:02:54.710 --> 00:02:54.720 align:start position:0%
+bit easier than you might think so the
+ 
+
+00:02:54.720 --> 00:02:56.550 align:start position:0%
+bit easier than you might think so the
+algorithm<00:02:55.280><c> is</c><00:02:55.519><c> going</c><00:02:55.680><c> to</c><00:02:55.760><c> be</c><00:02:55.920><c> pretty</c><00:02:56.160><c> standard</c>
+
+00:02:56.550 --> 00:02:56.560 align:start position:0%
+algorithm is going to be pretty standard
+ 
+
+00:02:56.560 --> 00:02:58.470 align:start position:0%
+algorithm is going to be pretty standard
+right<00:02:56.800><c> we're</c><00:02:56.959><c> going</c><00:02:57.040><c> to</c><00:02:57.120><c> go</c><00:02:57.360><c> through</c><00:02:58.000><c> every</c>
+
+00:02:58.470 --> 00:02:58.480 align:start position:0%
+right we're going to go through every
+ 
+
+00:02:58.480 --> 00:03:00.149 align:start position:0%
+right we're going to go through every
+single<00:02:58.959><c> row</c><00:02:59.280><c> and</c><00:02:59.360><c> make</c><00:02:59.599><c> sure</c><00:02:59.840><c> every</c>
+
+00:03:00.149 --> 00:03:00.159 align:start position:0%
+single row and make sure every
+ 
+
+00:03:00.159 --> 00:03:02.070 align:start position:0%
+single row and make sure every
+particular<00:03:00.800><c> row</c><00:03:01.280><c> does</c><00:03:01.519><c> not</c><00:03:01.760><c> have</c><00:03:01.920><c> any</c>
+
+00:03:02.070 --> 00:03:02.080 align:start position:0%
+particular row does not have any
+ 
+
+00:03:02.080 --> 00:03:03.589 align:start position:0%
+particular row does not have any
+duplicates<00:03:02.640><c> how</c><00:03:02.800><c> could</c><00:03:02.959><c> we</c><00:03:03.040><c> do</c><00:03:03.200><c> that</c><00:03:03.360><c> we</c><00:03:03.519><c> could</c>
+
+00:03:03.589 --> 00:03:03.599 align:start position:0%
+duplicates how could we do that we could
+ 
+
+00:03:03.599 --> 00:03:05.110 align:start position:0%
+duplicates how could we do that we could
+do<00:03:03.680><c> it</c><00:03:03.840><c> a</c><00:03:03.920><c> bunch</c><00:03:04.159><c> of</c><00:03:04.239><c> different</c><00:03:04.480><c> ways</c><00:03:04.800><c> but</c><00:03:04.959><c> i'm</c>
+
+00:03:05.110 --> 00:03:05.120 align:start position:0%
+do it a bunch of different ways but i'm
+ 
+
+00:03:05.120 --> 00:03:07.750 align:start position:0%
+do it a bunch of different ways but i'm
+going<00:03:05.200><c> to</c><00:03:05.280><c> do</c><00:03:05.519><c> a</c><00:03:05.760><c> hash</c><00:03:06.159><c> set</c><00:03:06.480><c> right</c><00:03:06.800><c> so</c><00:03:07.200><c> a</c><00:03:07.440><c> hash</c>
+
+00:03:07.750 --> 00:03:07.760 align:start position:0%
+going to do a hash set right so a hash
+ 
+
+00:03:07.760 --> 00:03:09.750 align:start position:0%
+going to do a hash set right so a hash
+set<00:03:08.000><c> will</c><00:03:08.159><c> be</c><00:03:08.319><c> easy</c><00:03:08.640><c> for</c><00:03:08.800><c> us</c><00:03:08.959><c> to</c><00:03:09.120><c> detect</c><00:03:09.599><c> if</c>
+
+00:03:09.750 --> 00:03:09.760 align:start position:0%
+set will be easy for us to detect if
+ 
+
+00:03:09.760 --> 00:03:11.350 align:start position:0%
+set will be easy for us to detect if
+there<00:03:09.920><c> are</c><00:03:10.080><c> any</c><00:03:10.319><c> duplicates</c><00:03:10.959><c> so</c><00:03:11.120><c> we're</c><00:03:11.280><c> going</c>
+
+00:03:11.350 --> 00:03:11.360 align:start position:0%
+there are any duplicates so we're going
+ 
+
+00:03:11.360 --> 00:03:13.750 align:start position:0%
+there are any duplicates so we're going
+to<00:03:11.440><c> have</c><00:03:11.680><c> a</c><00:03:12.080><c> unique</c><00:03:12.560><c> hash</c><00:03:12.959><c> set</c><00:03:13.120><c> for</c><00:03:13.360><c> every</c>
+
+00:03:13.750 --> 00:03:13.760 align:start position:0%
+to have a unique hash set for every
+ 
+
+00:03:13.760 --> 00:03:17.509 align:start position:0%
+to have a unique hash set for every
+single<00:03:14.319><c> row</c><00:03:15.120><c> in</c><00:03:15.760><c> the</c><00:03:16.080><c> entire</c><00:03:16.640><c> grid</c><00:03:17.040><c> right</c><00:03:17.360><c> so</c>
+
+00:03:17.509 --> 00:03:17.519 align:start position:0%
+single row in the entire grid right so
+ 
+
+00:03:17.519 --> 00:03:19.270 align:start position:0%
+single row in the entire grid right so
+then<00:03:17.680><c> we</c><00:03:17.840><c> can</c><00:03:18.000><c> easily</c><00:03:18.319><c> determine</c><00:03:18.800><c> if</c><00:03:19.040><c> any</c>
+
+00:03:19.270 --> 00:03:19.280 align:start position:0%
+then we can easily determine if any
+ 
+
+00:03:19.280 --> 00:03:21.910 align:start position:0%
+then we can easily determine if any
+particular<00:03:19.920><c> row</c><00:03:20.319><c> has</c><00:03:20.640><c> any</c><00:03:21.040><c> filled</c><00:03:21.519><c> in</c>
+
+00:03:21.910 --> 00:03:21.920 align:start position:0%
+particular row has any filled in
+ 
+
+00:03:21.920 --> 00:03:23.750 align:start position:0%
+particular row has any filled in
+duplicates<00:03:22.480><c> right</c><00:03:22.720><c> this</c><00:03:23.040><c> row</c><00:03:23.360><c> obviously</c>
+
+00:03:23.750 --> 00:03:23.760 align:start position:0%
+duplicates right this row obviously
+ 
+
+00:03:23.760 --> 00:03:26.070 align:start position:0%
+duplicates right this row obviously
+doesn't<00:03:24.080><c> a</c><00:03:24.239><c> five</c><00:03:24.640><c> a</c><00:03:24.720><c> three</c><00:03:25.040><c> and</c><00:03:25.200><c> a</c><00:03:25.280><c> seven</c><00:03:25.840><c> no</c>
+
+00:03:26.070 --> 00:03:26.080 align:start position:0%
+doesn't a five a three and a seven no
+ 
+
+00:03:26.080 --> 00:03:28.229 align:start position:0%
+doesn't a five a three and a seven no
+duplicates<00:03:26.720><c> right</c><00:03:27.280><c> so</c><00:03:27.519><c> that</c><00:03:27.760><c> portion</c><00:03:28.159><c> is</c>
+
+00:03:28.229 --> 00:03:28.239 align:start position:0%
+duplicates right so that portion is
+ 
+
+00:03:28.239 --> 00:03:30.070 align:start position:0%
+duplicates right so that portion is
+pretty<00:03:28.480><c> easy</c><00:03:28.720><c> right</c><00:03:28.959><c> number</c><00:03:29.280><c> one</c><00:03:29.599><c> is</c><00:03:29.760><c> pretty</c>
+
+00:03:30.070 --> 00:03:30.080 align:start position:0%
+pretty easy right number one is pretty
+ 
+
+00:03:30.080 --> 00:03:31.990 align:start position:0%
+pretty easy right number one is pretty
+easy<00:03:30.319><c> to</c><00:03:30.560><c> check</c><00:03:30.959><c> what</c><00:03:31.120><c> about</c><00:03:31.360><c> number</c><00:03:31.680><c> two</c>
+
+00:03:31.990 --> 00:03:32.000 align:start position:0%
+easy to check what about number two
+ 
+
+00:03:32.000 --> 00:03:34.229 align:start position:0%
+easy to check what about number two
+checking<00:03:32.400><c> each</c><00:03:32.799><c> column</c><00:03:33.280><c> we</c><00:03:33.440><c> can</c><00:03:33.519><c> do</c><00:03:33.680><c> the</c><00:03:33.840><c> exact</c>
+
+00:03:34.229 --> 00:03:34.239 align:start position:0%
+checking each column we can do the exact
+ 
+
+00:03:34.239 --> 00:03:35.990 align:start position:0%
+checking each column we can do the exact
+same<00:03:34.400><c> thing</c><00:03:34.640><c> just</c><00:03:34.879><c> have</c><00:03:35.040><c> a</c><00:03:35.120><c> hash</c><00:03:35.440><c> set</c><00:03:35.760><c> for</c>
+
+00:03:35.990 --> 00:03:36.000 align:start position:0%
+same thing just have a hash set for
+ 
+
+00:03:36.000 --> 00:03:38.070 align:start position:0%
+same thing just have a hash set for
+every<00:03:36.319><c> single</c><00:03:36.720><c> column</c><00:03:37.120><c> right</c><00:03:37.599><c> every</c><00:03:37.760><c> single</c>
+
+00:03:38.070 --> 00:03:38.080 align:start position:0%
+every single column right every single
+ 
+
+00:03:38.080 --> 00:03:39.750 align:start position:0%
+every single column right every single
+column<00:03:38.319><c> has</c><00:03:38.480><c> a</c><00:03:38.560><c> hash</c><00:03:38.879><c> set</c><00:03:39.200><c> and</c><00:03:39.360><c> then</c><00:03:39.519><c> we</c><00:03:39.680><c> can</c>
+
+00:03:39.750 --> 00:03:39.760 align:start position:0%
+column has a hash set and then we can
+ 
+
+00:03:39.760 --> 00:03:41.830 align:start position:0%
+column has a hash set and then we can
+determine<00:03:40.319><c> if</c><00:03:40.480><c> there</c><00:03:40.640><c> are</c><00:03:40.799><c> any</c><00:03:40.959><c> duplicates</c><00:03:41.599><c> or</c>
+
+00:03:41.830 --> 00:03:41.840 align:start position:0%
+determine if there are any duplicates or
+ 
+
+00:03:41.840 --> 00:03:43.830 align:start position:0%
+determine if there are any duplicates or
+not<00:03:42.159><c> right</c><00:03:42.480><c> and</c><00:03:42.720><c> for</c><00:03:43.120><c> you</c><00:03:43.200><c> know</c><00:03:43.360><c> adding</c><00:03:43.680><c> an</c>
+
+00:03:43.830 --> 00:03:43.840 align:start position:0%
+not right and for you know adding an
+ 
+
+00:03:43.840 --> 00:03:46.149 align:start position:0%
+not right and for you know adding an
+element<00:03:44.159><c> to</c><00:03:44.239><c> the</c><00:03:44.319><c> hash</c><00:03:44.640><c> set</c><00:03:45.360><c> is</c><00:03:45.760><c> of</c><00:03:45.920><c> one</c>
+
+00:03:46.149 --> 00:03:46.159 align:start position:0%
+element to the hash set is of one
+ 
+
+00:03:46.159 --> 00:03:48.070 align:start position:0%
+element to the hash set is of one
+checking<00:03:46.480><c> duplicates</c><00:03:47.040><c> is</c><00:03:47.200><c> also</c><00:03:47.440><c> o</c><00:03:47.599><c> of</c><00:03:47.680><c> one</c><00:03:47.840><c> so</c>
+
+00:03:48.070 --> 00:03:48.080 align:start position:0%
+checking duplicates is also o of one so
+ 
+
+00:03:48.080 --> 00:03:49.990 align:start position:0%
+checking duplicates is also o of one so
+so<00:03:48.319><c> far</c><00:03:48.560><c> we</c><00:03:48.720><c> have</c><00:03:48.959><c> a</c><00:03:49.040><c> time</c><00:03:49.280><c> complexity</c><00:03:49.840><c> for</c>
+
+00:03:49.990 --> 00:03:50.000 align:start position:0%
+so far we have a time complexity for
+ 
+
+00:03:50.000 --> 00:03:52.229 align:start position:0%
+so far we have a time complexity for
+just<00:03:50.239><c> checking</c><00:03:50.560><c> the</c><00:03:50.720><c> columns</c><00:03:51.440><c> and</c><00:03:51.599><c> the</c><00:03:51.840><c> rows</c>
+
+00:03:52.229 --> 00:03:52.239 align:start position:0%
+just checking the columns and the rows
+ 
+
+00:03:52.239 --> 00:03:53.670 align:start position:0%
+just checking the columns and the rows
+we<00:03:52.400><c> have</c><00:03:52.560><c> a</c><00:03:52.640><c> time</c><00:03:52.799><c> complexity</c><00:03:53.360><c> which</c><00:03:53.519><c> is</c>
+
+00:03:53.670 --> 00:03:53.680 align:start position:0%
+we have a time complexity which is
+ 
+
+00:03:53.680 --> 00:03:56.229 align:start position:0%
+we have a time complexity which is
+basically<00:03:54.080><c> the</c><00:03:54.400><c> size</c><00:03:54.879><c> of</c><00:03:55.040><c> the</c><00:03:55.280><c> entire</c><00:03:55.760><c> grid</c>
+
+00:03:56.229 --> 00:03:56.239 align:start position:0%
+basically the size of the entire grid
+ 
+
+00:03:56.239 --> 00:03:58.630 align:start position:0%
+basically the size of the entire grid
+which<00:03:56.480><c> is</c><00:03:56.799><c> nine</c><00:03:57.120><c> squared</c><00:03:57.599><c> pretty</c><00:03:57.920><c> much</c><00:03:58.480><c> now</c>
+
+00:03:58.630 --> 00:03:58.640 align:start position:0%
+which is nine squared pretty much now
+ 
+
+00:03:58.640 --> 00:04:01.589 align:start position:0%
+which is nine squared pretty much now
+the<00:03:58.879><c> last</c><00:03:59.280><c> part</c><00:03:59.840><c> in</c><00:04:00.239><c> theory</c><00:04:00.720><c> should</c><00:04:01.040><c> also</c><00:04:01.360><c> be</c>
+
+00:04:01.589 --> 00:04:01.599 align:start position:0%
+the last part in theory should also be
+ 
+
+00:04:01.599 --> 00:04:03.350 align:start position:0%
+the last part in theory should also be
+pretty<00:04:01.840><c> easy</c><00:04:02.159><c> but</c><00:04:02.319><c> coding</c><00:04:02.720><c> it</c><00:04:02.879><c> up</c><00:04:03.040><c> is</c><00:04:03.200><c> a</c><00:04:03.200><c> little</c>
+
+00:04:03.350 --> 00:04:03.360 align:start position:0%
+pretty easy but coding it up is a little
+ 
+
+00:04:03.360 --> 00:04:04.869 align:start position:0%
+pretty easy but coding it up is a little
+bit<00:04:03.519><c> more</c><00:04:03.760><c> tricky</c><00:04:04.080><c> there</c><00:04:04.239><c> are</c><00:04:04.319><c> many</c><00:04:04.560><c> ways</c><00:04:04.799><c> to</c>
+
+00:04:04.869 --> 00:04:04.879 align:start position:0%
+bit more tricky there are many ways to
+ 
+
+00:04:04.879 --> 00:04:06.390 align:start position:0%
+bit more tricky there are many ways to
+do<00:04:05.040><c> it</c><00:04:05.120><c> i'm</c><00:04:05.280><c> going</c><00:04:05.360><c> to</c><00:04:05.439><c> show</c><00:04:05.599><c> you</c><00:04:05.760><c> the</c><00:04:05.920><c> easiest</c>
+
+00:04:06.390 --> 00:04:06.400 align:start position:0%
+do it i'm going to show you the easiest
+ 
+
+00:04:06.400 --> 00:04:09.270 align:start position:0%
+do it i'm going to show you the easiest
+way<00:04:06.959><c> we</c><00:04:07.280><c> want</c><00:04:07.519><c> to</c><00:04:07.680><c> be</c><00:04:07.840><c> able</c><00:04:08.000><c> to</c><00:04:08.239><c> tell</c><00:04:08.560><c> okay</c><00:04:09.040><c> for</c>
+
+00:04:09.270 --> 00:04:09.280 align:start position:0%
+way we want to be able to tell okay for
+ 
+
+00:04:09.280 --> 00:04:10.949 align:start position:0%
+way we want to be able to tell okay for
+every<00:04:09.519><c> three</c><00:04:09.760><c> by</c><00:04:10.000><c> three</c><00:04:10.239><c> grid</c><00:04:10.560><c> which</c><00:04:10.799><c> there</c>
+
+00:04:10.949 --> 00:04:10.959 align:start position:0%
+every three by three grid which there
+ 
+
+00:04:10.959 --> 00:04:13.670 align:start position:0%
+every three by three grid which there
+are<00:04:11.280><c> nine</c><00:04:11.599><c> of</c><00:04:12.159><c> does</c><00:04:12.560><c> any</c><00:04:12.799><c> of</c><00:04:12.879><c> them</c><00:04:13.120><c> have</c><00:04:13.439><c> any</c>
+
+00:04:13.670 --> 00:04:13.680 align:start position:0%
+are nine of does any of them have any
+ 
+
+00:04:13.680 --> 00:04:15.990 align:start position:0%
+are nine of does any of them have any
+duplicates<00:04:14.239><c> so</c><00:04:14.400><c> again</c><00:04:14.879><c> we</c><00:04:15.040><c> can</c><00:04:15.200><c> use</c><00:04:15.439><c> a</c><00:04:15.680><c> hash</c>
+
+00:04:15.990 --> 00:04:16.000 align:start position:0%
+duplicates so again we can use a hash
+ 
+
+00:04:16.000 --> 00:04:19.189 align:start position:0%
+duplicates so again we can use a hash
+set<00:04:16.479><c> to</c><00:04:16.799><c> represent</c><00:04:17.519><c> each</c><00:04:17.759><c> of</c><00:04:18.000><c> these</c><00:04:18.560><c> three</c><00:04:18.880><c> by</c>
+
+00:04:19.189 --> 00:04:19.199 align:start position:0%
+set to represent each of these three by
+ 
+
+00:04:19.199 --> 00:04:21.590 align:start position:0%
+set to represent each of these three by
+three<00:04:19.600><c> grids</c><00:04:20.160><c> but</c><00:04:20.320><c> the</c><00:04:20.479><c> question</c><00:04:20.880><c> is</c><00:04:21.120><c> how</c><00:04:21.440><c> are</c>
+
+00:04:21.590 --> 00:04:21.600 align:start position:0%
+three grids but the question is how are
+ 
+
+00:04:21.600 --> 00:04:23.430 align:start position:0%
+three grids but the question is how are
+we<00:04:21.680><c> gonna</c><00:04:21.840><c> do</c><00:04:22.079><c> it</c><00:04:22.160><c> how</c><00:04:22.320><c> can</c><00:04:22.560><c> it</c><00:04:22.639><c> be</c><00:04:22.880><c> easy</c><00:04:23.199><c> to</c>
+
+00:04:23.430 --> 00:04:23.440 align:start position:0%
+we gonna do it how can it be easy to
+ 
+
+00:04:23.440 --> 00:04:25.590 align:start position:0%
+we gonna do it how can it be easy to
+code<00:04:23.840><c> something</c><00:04:24.240><c> like</c><00:04:24.560><c> that</c><00:04:25.040><c> and</c><00:04:25.199><c> that's</c><00:04:25.440><c> what</c>
+
+00:04:25.590 --> 00:04:25.600 align:start position:0%
+code something like that and that's what
+ 
+
+00:04:25.600 --> 00:04:27.270 align:start position:0%
+code something like that and that's what
+i'm<00:04:25.759><c> gonna</c><00:04:26.000><c> quickly</c><00:04:26.400><c> explain</c><00:04:26.800><c> to</c><00:04:26.960><c> you</c><00:04:27.120><c> right</c>
+
+00:04:27.270 --> 00:04:27.280 align:start position:0%
+i'm gonna quickly explain to you right
+ 
+
+00:04:27.280 --> 00:04:29.030 align:start position:0%
+i'm gonna quickly explain to you right
+now<00:04:27.440><c> and</c><00:04:27.600><c> after</c><00:04:27.840><c> i</c><00:04:27.919><c> do</c><00:04:28.160><c> we</c><00:04:28.320><c> can</c><00:04:28.479><c> jump</c><00:04:28.720><c> into</c><00:04:28.880><c> the</c>
+
+00:04:29.030 --> 00:04:29.040 align:start position:0%
+now and after i do we can jump into the
+ 
+
+00:04:29.040 --> 00:04:31.350 align:start position:0%
+now and after i do we can jump into the
+code<00:04:29.440><c> the</c><00:04:29.680><c> overall</c><00:04:30.000><c> solution</c><00:04:30.560><c> is</c><00:04:30.800><c> yes</c><00:04:31.120><c> though</c>
+
+00:04:31.350 --> 00:04:31.360 align:start position:0%
+code the overall solution is yes though
+ 
+
+00:04:31.360 --> 00:04:33.590 align:start position:0%
+code the overall solution is yes though
+going<00:04:31.600><c> to</c><00:04:31.759><c> be</c><00:04:32.000><c> o</c><00:04:32.160><c> of</c><00:04:32.400><c> n</c><00:04:32.880><c> 9</c><00:04:33.120><c> squared</c><00:04:33.440><c> we're</c>
+
+00:04:33.590 --> 00:04:33.600 align:start position:0%
+going to be o of n 9 squared we're
+ 
+
+00:04:33.600 --> 00:04:34.469 align:start position:0%
+going to be o of n 9 squared we're
+pretty<00:04:33.759><c> much</c><00:04:33.919><c> just</c><00:04:34.080><c> going</c><00:04:34.160><c> to</c><00:04:34.240><c> have</c><00:04:34.320><c> to</c>
+
+00:04:34.469 --> 00:04:34.479 align:start position:0%
+pretty much just going to have to
+ 
+
+00:04:34.479 --> 00:04:37.830 align:start position:0%
+pretty much just going to have to
+iterate<00:04:34.800><c> through</c><00:04:35.040><c> over</c><00:04:35.600><c> the</c><00:04:35.840><c> entire</c><00:04:36.720><c> grid</c><00:04:37.440><c> and</c>
+
+00:04:37.830 --> 00:04:37.840 align:start position:0%
+iterate through over the entire grid and
+ 
+
+00:04:37.840 --> 00:04:39.350 align:start position:0%
+iterate through over the entire grid and
+nothing<00:04:38.240><c> else</c><00:04:38.639><c> but</c><00:04:38.800><c> we</c><00:04:38.960><c> are</c><00:04:39.040><c> going</c><00:04:39.120><c> to</c><00:04:39.199><c> have</c>
+
+00:04:39.350 --> 00:04:39.360 align:start position:0%
+nothing else but we are going to have
+ 
+
+00:04:39.360 --> 00:04:41.909 align:start position:0%
+nothing else but we are going to have
+extra<00:04:39.680><c> space</c><00:04:40.160><c> also</c><00:04:40.479><c> of</c><00:04:40.800><c> 9</c><00:04:41.120><c> squared</c><00:04:41.600><c> because</c>
+
+00:04:41.909 --> 00:04:41.919 align:start position:0%
+extra space also of 9 squared because
+ 
+
+00:04:41.919 --> 00:04:43.270 align:start position:0%
+extra space also of 9 squared because
+we're<00:04:42.080><c> going</c><00:04:42.160><c> to</c><00:04:42.240><c> have</c><00:04:42.400><c> three</c><00:04:42.720><c> hash</c><00:04:43.040><c> sets</c>
+
+00:04:43.270 --> 00:04:43.280 align:start position:0%
+we're going to have three hash sets
+ 
+
+00:04:43.280 --> 00:04:45.670 align:start position:0%
+we're going to have three hash sets
+which<00:04:43.440><c> are</c><00:04:43.520><c> going</c><00:04:43.600><c> to</c><00:04:43.759><c> be</c><00:04:43.919><c> this</c><00:04:44.160><c> exact</c><00:04:44.639><c> size</c><00:04:45.199><c> so</c>
+
+00:04:45.670 --> 00:04:45.680 align:start position:0%
+which are going to be this exact size so
+ 
+
+00:04:45.680 --> 00:04:47.749 align:start position:0%
+which are going to be this exact size so
+roughly<00:04:46.160><c> this</c><00:04:46.479><c> is</c><00:04:46.560><c> the</c><00:04:46.720><c> memory</c><00:04:47.040><c> complexity</c><00:04:47.600><c> as</c>
+
+00:04:47.749 --> 00:04:47.759 align:start position:0%
+roughly this is the memory complexity as
+ 
+
+00:04:47.759 --> 00:04:50.550 align:start position:0%
+roughly this is the memory complexity as
+well<00:04:48.400><c> so</c><00:04:48.639><c> we</c><00:04:48.960><c> want</c><00:04:49.360><c> to</c><00:04:49.520><c> represent</c><00:04:50.240><c> each</c><00:04:50.400><c> of</c>
+
+00:04:50.550 --> 00:04:50.560 align:start position:0%
+well so we want to represent each of
+ 
+
+00:04:50.560 --> 00:04:53.030 align:start position:0%
+well so we want to represent each of
+these<00:04:50.880><c> three</c><00:04:51.199><c> by</c><00:04:51.440><c> three</c><00:04:51.680><c> grids</c><00:04:52.240><c> with</c><00:04:52.479><c> a</c><00:04:52.639><c> hash</c>
+
+00:04:53.030 --> 00:04:53.040 align:start position:0%
+these three by three grids with a hash
+ 
+
+00:04:53.040 --> 00:04:54.870 align:start position:0%
+these three by three grids with a hash
+set<00:04:53.280><c> but</c><00:04:53.520><c> how</c><00:04:53.680><c> do</c><00:04:53.840><c> we</c><00:04:54.000><c> know</c><00:04:54.240><c> if</c><00:04:54.320><c> we're</c><00:04:54.560><c> at</c><00:04:54.720><c> any</c>
+
+00:04:54.870 --> 00:04:54.880 align:start position:0%
+set but how do we know if we're at any
+ 
+
+00:04:54.880 --> 00:04:57.270 align:start position:0%
+set but how do we know if we're at any
+particular<00:04:55.520><c> value</c><00:04:56.160><c> right</c><00:04:56.479><c> like</c><00:04:56.880><c> i</c><00:04:57.040><c> have</c>
+
+00:04:57.270 --> 00:04:57.280 align:start position:0%
+particular value right like i have
+ 
+
+00:04:57.280 --> 00:04:59.270 align:start position:0%
+particular value right like i have
+labeled<00:04:57.680><c> the</c><00:04:57.919><c> indices</c><00:04:58.479><c> right</c><00:04:58.720><c> this</c><00:04:59.040><c> is</c><00:04:59.199><c> going</c>
+
+00:04:59.270 --> 00:04:59.280 align:start position:0%
+labeled the indices right this is going
+ 
+
+00:04:59.280 --> 00:05:01.029 align:start position:0%
+labeled the indices right this is going
+to<00:04:59.360><c> represent</c><00:04:59.840><c> what</c><00:05:00.080><c> row</c><00:05:00.560><c> this</c><00:05:00.800><c> is</c><00:05:00.880><c> going</c><00:05:00.960><c> to</c>
+
+00:05:01.029 --> 00:05:01.039 align:start position:0%
+to represent what row this is going to
+ 
+
+00:05:01.039 --> 00:05:03.510 align:start position:0%
+to represent what row this is going to
+represent<00:05:01.520><c> which</c><00:05:01.840><c> column</c><00:05:02.720><c> how</c><00:05:02.880><c> do</c><00:05:03.039><c> we</c><00:05:03.199><c> know</c><00:05:03.440><c> if</c>
+
+00:05:03.510 --> 00:05:03.520 align:start position:0%
+represent which column how do we know if
+ 
+
+00:05:03.520 --> 00:05:06.870 align:start position:0%
+represent which column how do we know if
+we're<00:05:03.840><c> if</c><00:05:04.160><c> any</c><00:05:04.479><c> particular</c><00:05:05.199><c> value</c><00:05:05.600><c> such</c><00:05:05.840><c> as</c><00:05:06.080><c> 1</c>
+
+00:05:06.870 --> 00:05:06.880 align:start position:0%
+we're if any particular value such as 1
+ 
+
+00:05:06.880 --> 00:05:09.909 align:start position:0%
+we're if any particular value such as 1
+1<00:05:07.360><c> happens</c><00:05:07.680><c> to</c><00:05:07.840><c> be</c><00:05:08.080><c> in</c><00:05:08.400><c> this</c><00:05:08.720><c> 3</c><00:05:08.960><c> by</c><00:05:09.199><c> three</c><00:05:09.440><c> grid</c>
+
+00:05:09.909 --> 00:05:09.919 align:start position:0%
+1 happens to be in this 3 by three grid
+ 
+
+00:05:09.919 --> 00:05:11.749 align:start position:0%
+1 happens to be in this 3 by three grid
+whereas<00:05:10.560><c> a</c><00:05:10.800><c> different</c>
+
+00:05:11.749 --> 00:05:11.759 align:start position:0%
+whereas a different
+ 
+
+00:05:11.759 --> 00:05:15.110 align:start position:0%
+whereas a different
+cell<00:05:12.000><c> such</c><00:05:12.240><c> as</c><00:05:12.560><c> four</c><00:05:13.280><c> four</c><00:05:13.680><c> happens</c><00:05:14.080><c> to</c><00:05:14.240><c> be</c><00:05:14.560><c> in</c>
+
+00:05:15.110 --> 00:05:15.120 align:start position:0%
+cell such as four four happens to be in
+ 
+
+00:05:15.120 --> 00:05:17.270 align:start position:0%
+cell such as four four happens to be in
+this<00:05:15.840><c> three</c><00:05:16.080><c> by</c><00:05:16.240><c> three</c><00:05:16.479><c> grid</c><00:05:16.800><c> how</c><00:05:16.880><c> can</c><00:05:17.039><c> we</c>
+
+00:05:17.270 --> 00:05:17.280 align:start position:0%
+this three by three grid how can we
+ 
+
+00:05:17.280 --> 00:05:18.790 align:start position:0%
+this three by three grid how can we
+differentiate<00:05:18.000><c> them</c>
+
+00:05:18.790 --> 00:05:18.800 align:start position:0%
+differentiate them
+ 
+
+00:05:18.800 --> 00:05:22.070 align:start position:0%
+differentiate them
+notice<00:05:19.280><c> how</c><00:05:19.600><c> each</c><00:05:20.160><c> of</c><00:05:20.320><c> these</c><00:05:20.639><c> three</c><00:05:20.880><c> by</c><00:05:21.120><c> three</c>
+
+00:05:22.070 --> 00:05:22.080 align:start position:0%
+notice how each of these three by three
+ 
+
+00:05:22.080 --> 00:05:24.790 align:start position:0%
+notice how each of these three by three
+sub<00:05:22.400><c> squares</c><00:05:23.360><c> happens</c><00:05:23.680><c> to</c><00:05:23.840><c> be</c><00:05:24.000><c> three</c><00:05:24.240><c> by</c><00:05:24.479><c> three</c>
+
+00:05:24.790 --> 00:05:24.800 align:start position:0%
+sub squares happens to be three by three
+ 
+
+00:05:24.800 --> 00:05:28.629 align:start position:0%
+sub squares happens to be three by three
+right<00:05:25.120><c> so</c><00:05:25.680><c> one</c><00:05:26.000><c> way</c><00:05:26.560><c> is</c><00:05:27.120><c> to</c><00:05:27.360><c> basically</c><00:05:28.240><c> make</c><00:05:28.479><c> it</c>
+
+00:05:28.629 --> 00:05:28.639 align:start position:0%
+right so one way is to basically make it
+ 
+
+00:05:28.639 --> 00:05:30.150 align:start position:0%
+right so one way is to basically make it
+so<00:05:28.880><c> that</c><00:05:29.039><c> we</c><00:05:29.280><c> can</c>
+
+00:05:30.150 --> 00:05:30.160 align:start position:0%
+so that we can
+ 
+
+00:05:30.160 --> 00:05:32.550 align:start position:0%
+so that we can
+have<00:05:30.400><c> an</c><00:05:30.639><c> index</c><00:05:31.120><c> right</c><00:05:31.360><c> so</c><00:05:31.680><c> maybe</c><00:05:32.160><c> zero</c>
+
+00:05:32.550 --> 00:05:32.560 align:start position:0%
+have an index right so maybe zero
+ 
+
+00:05:32.560 --> 00:05:35.990 align:start position:0%
+have an index right so maybe zero
+represents<00:05:33.440><c> this</c><00:05:33.919><c> row</c><00:05:34.320><c> of</c><00:05:34.720><c> of</c><00:05:34.960><c> the</c><00:05:35.199><c> three</c>
+
+00:05:35.990 --> 00:05:36.000 align:start position:0%
+represents this row of of the three
+ 
+
+00:05:36.000 --> 00:05:38.070 align:start position:0%
+represents this row of of the three
+different<00:05:36.320><c> squares</c><00:05:36.800><c> right</c><00:05:37.440><c> and</c><00:05:37.600><c> a</c><00:05:37.840><c> 1</c>
+
+00:05:38.070 --> 00:05:38.080 align:start position:0%
+different squares right and a 1
+ 
+
+00:05:38.080 --> 00:05:40.870 align:start position:0%
+different squares right and a 1
+represents<00:05:38.720><c> this</c><00:05:39.039><c> row</c><00:05:39.440><c> of</c><00:05:39.600><c> 3</c><00:05:39.919><c> squares</c><00:05:40.320><c> and</c><00:05:40.479><c> a</c><00:05:40.560><c> 2</c>
+
+00:05:40.870 --> 00:05:40.880 align:start position:0%
+represents this row of 3 squares and a 2
+ 
+
+00:05:40.880 --> 00:05:43.590 align:start position:0%
+represents this row of 3 squares and a 2
+represents<00:05:41.520><c> a</c><00:05:41.759><c> row</c><00:05:42.080><c> of</c><00:05:42.320><c> this</c><00:05:42.960><c> right</c><00:05:43.360><c> and</c>
+
+00:05:43.590 --> 00:05:43.600 align:start position:0%
+represents a row of this right and
+ 
+
+00:05:43.600 --> 00:05:45.990 align:start position:0%
+represents a row of this right and
+similarly<00:05:44.160><c> for</c><00:05:44.320><c> the</c><00:05:44.479><c> columns</c><00:05:44.960><c> right</c><00:05:45.120><c> a</c><00:05:45.280><c> 0</c><00:05:45.759><c> over</c>
+
+00:05:45.990 --> 00:05:46.000 align:start position:0%
+similarly for the columns right a 0 over
+ 
+
+00:05:46.000 --> 00:05:48.469 align:start position:0%
+similarly for the columns right a 0 over
+here<00:05:46.320><c> represents</c><00:05:47.039><c> this</c><00:05:47.280><c> column</c><00:05:47.680><c> a</c><00:05:47.919><c> 1</c><00:05:48.240><c> over</c>
+
+00:05:48.469 --> 00:05:48.479 align:start position:0%
+here represents this column a 1 over
+ 
+
+00:05:48.479 --> 00:05:50.870 align:start position:0%
+here represents this column a 1 over
+here<00:05:48.720><c> represents</c><00:05:49.280><c> this</c><00:05:49.440><c> column</c><00:05:49.759><c> and</c><00:05:49.919><c> a</c><00:05:50.080><c> 2</c><00:05:50.639><c> over</c>
+
+00:05:50.870 --> 00:05:50.880 align:start position:0%
+here represents this column and a 2 over
+ 
+
+00:05:50.880 --> 00:05:52.469 align:start position:0%
+here represents this column and a 2 over
+here<00:05:51.120><c> represents</c><00:05:51.520><c> this</c><00:05:51.680><c> column</c><00:05:52.080><c> then</c><00:05:52.240><c> if</c><00:05:52.320><c> we</c>
+
+00:05:52.469 --> 00:05:52.479 align:start position:0%
+here represents this column then if we
+ 
+
+00:05:52.479 --> 00:05:55.590 align:start position:0%
+here represents this column then if we
+had<00:05:52.800><c> two</c><00:05:53.039><c> indices</c><00:05:53.840><c> right</c><00:05:54.479><c> if</c><00:05:54.639><c> we</c><00:05:54.800><c> can</c><00:05:55.199><c> somehow</c>
+
+00:05:55.590 --> 00:05:55.600 align:start position:0%
+had two indices right if we can somehow
+ 
+
+00:05:55.600 --> 00:05:59.909 align:start position:0%
+had two indices right if we can somehow
+take<00:05:56.000><c> 4</c><00:05:56.560><c> 4</c><00:05:57.280><c> and</c><00:05:57.440><c> convert</c><00:05:58.160><c> it</c><00:05:58.479><c> to</c><00:05:59.039><c> 1</c>
+
+00:05:59.909 --> 00:05:59.919 align:start position:0%
+take 4 4 and convert it to 1
+ 
+
+00:05:59.919 --> 00:06:03.830 align:start position:0%
+take 4 4 and convert it to 1
+1<00:06:00.639><c> then</c><00:06:00.880><c> we</c><00:06:01.120><c> know</c><00:06:01.440><c> it</c><00:06:01.600><c> goes</c><00:06:01.919><c> inside</c><00:06:02.880><c> this</c><00:06:03.520><c> sub</c>
+
+00:06:03.830 --> 00:06:03.840 align:start position:0%
+1 then we know it goes inside this sub
+ 
+
+00:06:03.840 --> 00:06:06.469 align:start position:0%
+1 then we know it goes inside this sub
+square<00:06:04.319><c> right</c><00:06:05.039><c> so</c><00:06:05.280><c> basically</c><00:06:05.759><c> we</c><00:06:05.919><c> have</c><00:06:06.160><c> nine</c>
+
+00:06:06.469 --> 00:06:06.479 align:start position:0%
+square right so basically we have nine
+ 
+
+00:06:06.479 --> 00:06:08.309 align:start position:0%
+square right so basically we have nine
+different<00:06:06.800><c> sub</c><00:06:07.039><c> squares</c><00:06:07.520><c> we're</c><00:06:07.680><c> gonna</c><00:06:07.919><c> have</c>
+
+00:06:08.309 --> 00:06:08.319 align:start position:0%
+different sub squares we're gonna have
+ 
+
+00:06:08.319 --> 00:06:10.950 align:start position:0%
+different sub squares we're gonna have
+indices<00:06:08.800><c> to</c><00:06:08.960><c> represent</c><00:06:09.440><c> them</c><00:06:09.680><c> right</c><00:06:10.080><c> a</c><00:06:10.319><c> one</c>
+
+00:06:10.950 --> 00:06:10.960 align:start position:0%
+indices to represent them right a one
+ 
+
+00:06:10.960 --> 00:06:13.189 align:start position:0%
+indices to represent them right a one
+one<00:06:11.440><c> means</c><00:06:11.680><c> that</c><00:06:12.000><c> this</c><00:06:12.240><c> is</c><00:06:12.400><c> the</c><00:06:12.639><c> sub</c><00:06:12.960><c> square</c>
+
+00:06:13.189 --> 00:06:13.199 align:start position:0%
+one means that this is the sub square
+ 
+
+00:06:13.199 --> 00:06:15.189 align:start position:0%
+one means that this is the sub square
+that<00:06:13.280><c> we're</c><00:06:13.520><c> talking</c><00:06:13.759><c> about</c><00:06:14.000><c> right</c><00:06:14.240><c> this</c><00:06:14.639><c> one</c>
+
+00:06:15.189 --> 00:06:15.199 align:start position:0%
+that we're talking about right this one
+ 
+
+00:06:15.199 --> 00:06:16.629 align:start position:0%
+that we're talking about right this one
+and<00:06:15.360><c> the</c><00:06:15.520><c> way</c><00:06:15.680><c> the</c><00:06:15.840><c> math</c><00:06:16.080><c> is</c><00:06:16.240><c> going</c><00:06:16.319><c> to</c><00:06:16.400><c> work</c>
+
+00:06:16.629 --> 00:06:16.639 align:start position:0%
+and the way the math is going to work
+ 
+
+00:06:16.639 --> 00:06:18.230 align:start position:0%
+and the way the math is going to work
+out<00:06:16.800><c> is</c><00:06:16.880><c> since</c><00:06:17.120><c> each</c><00:06:17.280><c> of</c><00:06:17.360><c> these</c><00:06:17.600><c> is</c><00:06:17.759><c> three</c><00:06:18.000><c> by</c>
+
+00:06:18.230 --> 00:06:18.240 align:start position:0%
+out is since each of these is three by
+ 
+
+00:06:18.240 --> 00:06:21.110 align:start position:0%
+out is since each of these is three by
+three<00:06:18.720><c> we</c><00:06:18.880><c> can</c><00:06:19.039><c> just</c><00:06:19.360><c> take</c><00:06:19.759><c> the</c><00:06:20.080><c> actual</c><00:06:20.720><c> index</c>
+
+00:06:21.110 --> 00:06:21.120 align:start position:0%
+three we can just take the actual index
+ 
+
+00:06:21.120 --> 00:06:23.110 align:start position:0%
+three we can just take the actual index
+such<00:06:21.360><c> as</c><00:06:21.759><c> four</c><00:06:22.160><c> let's</c><00:06:22.319><c> say</c><00:06:22.479><c> we</c><00:06:22.560><c> were</c><00:06:22.720><c> given</c>
+
+00:06:23.110 --> 00:06:23.120 align:start position:0%
+such as four let's say we were given
+ 
+
+00:06:23.120 --> 00:06:24.950 align:start position:0%
+such as four let's say we were given
+four<00:06:23.440><c> four</c><00:06:23.759><c> right</c><00:06:24.000><c> this</c><00:06:24.160><c> is</c><00:06:24.240><c> the</c><00:06:24.400><c> square</c><00:06:24.720><c> we're</c>
+
+00:06:24.950 --> 00:06:24.960 align:start position:0%
+four four right this is the square we're
+ 
+
+00:06:24.960 --> 00:06:27.670 align:start position:0%
+four four right this is the square we're
+talking<00:06:25.280><c> about</c><00:06:25.919><c> we</c><00:06:26.080><c> can</c><00:06:26.319><c> take</c><00:06:26.960><c> four</c><00:06:27.280><c> which</c><00:06:27.520><c> is</c>
+
+00:06:27.670 --> 00:06:27.680 align:start position:0%
+talking about we can take four which is
+ 
+
+00:06:27.680 --> 00:06:30.629 align:start position:0%
+talking about we can take four which is
+the<00:06:27.919><c> row</c><00:06:28.479><c> divide</c><00:06:29.039><c> it</c><00:06:29.199><c> by</c><00:06:29.600><c> three</c><00:06:30.240><c> integer</c>
+
+00:06:30.629 --> 00:06:30.639 align:start position:0%
+the row divide it by three integer
+ 
+
+00:06:30.639 --> 00:06:32.150 align:start position:0%
+the row divide it by three integer
+division<00:06:31.120><c> right</c><00:06:31.520><c> we're</c><00:06:31.680><c> talking</c><00:06:32.000><c> about</c>
+
+00:06:32.150 --> 00:06:32.160 align:start position:0%
+division right we're talking about
+ 
+
+00:06:32.160 --> 00:06:34.309 align:start position:0%
+division right we're talking about
+integer<00:06:32.639><c> division</c><00:06:33.039><c> 4</c><00:06:33.280><c> divided</c><00:06:33.600><c> by</c><00:06:33.840><c> 3</c><00:06:34.160><c> is</c><00:06:34.240><c> going</c>
+
+00:06:34.309 --> 00:06:34.319 align:start position:0%
+integer division 4 divided by 3 is going
+ 
+
+00:06:34.319 --> 00:06:37.590 align:start position:0%
+integer division 4 divided by 3 is going
+to<00:06:34.400><c> give</c><00:06:34.639><c> us</c><00:06:35.039><c> a</c><00:06:35.360><c> 1.</c><00:06:36.080><c> similarly</c><00:06:36.960><c> we</c><00:06:37.120><c> do</c><00:06:37.280><c> the</c><00:06:37.360><c> same</c>
+
+00:06:37.590 --> 00:06:37.600 align:start position:0%
+to give us a 1. similarly we do the same
+ 
+
+00:06:37.600 --> 00:06:39.990 align:start position:0%
+to give us a 1. similarly we do the same
+thing<00:06:37.759><c> with</c><00:06:37.919><c> the</c><00:06:38.080><c> column</c><00:06:38.479><c> right</c><00:06:38.960><c> 4</c><00:06:39.440><c> divided</c><00:06:39.840><c> by</c>
+
+00:06:39.990 --> 00:06:40.000 align:start position:0%
+thing with the column right 4 divided by
+ 
+
+00:06:40.000 --> 00:06:41.830 align:start position:0%
+thing with the column right 4 divided by
+3<00:06:40.240><c> is</c><00:06:40.319><c> going</c><00:06:40.400><c> to</c><00:06:40.479><c> give</c><00:06:40.639><c> us</c><00:06:40.800><c> a</c><00:06:40.960><c> 1.</c><00:06:41.360><c> right</c><00:06:41.600><c> so</c><00:06:41.759><c> if</c>
+
+00:06:41.830 --> 00:06:41.840 align:start position:0%
+3 is going to give us a 1. right so if
+ 
+
+00:06:41.840 --> 00:06:45.670 align:start position:0%
+3 is going to give us a 1. right so if
+we<00:06:42.160><c> take</c><00:06:42.639><c> the</c><00:06:43.039><c> actual</c><00:06:43.680><c> coordinates</c><00:06:44.639><c> 4</c><00:06:45.039><c> 4</c>
+
+00:06:45.670 --> 00:06:45.680 align:start position:0%
+we take the actual coordinates 4 4
+ 
+
+00:06:45.680 --> 00:06:47.909 align:start position:0%
+we take the actual coordinates 4 4
+divide<00:06:46.319><c> the</c><00:06:46.479><c> coordinates</c><00:06:47.039><c> integer</c><00:06:47.520><c> division</c>
+
+00:06:47.909 --> 00:06:47.919 align:start position:0%
+divide the coordinates integer division
+ 
+
+00:06:47.919 --> 00:06:51.749 align:start position:0%
+divide the coordinates integer division
+by<00:06:48.240><c> three</c><00:06:48.880><c> then</c><00:06:49.120><c> we</c><00:06:49.440><c> get</c><00:06:49.680><c> the</c><00:06:50.000><c> index</c><00:06:50.800><c> for</c><00:06:51.440><c> the</c>
+
+00:06:51.749 --> 00:06:51.759 align:start position:0%
+by three then we get the index for the
+ 
+
+00:06:51.759 --> 00:06:54.390 align:start position:0%
+by three then we get the index for the
+row<00:06:52.160><c> column</c><00:06:52.720><c> and</c><00:06:52.960><c> it</c><00:06:53.199><c> basically</c><00:06:53.680><c> identifies</c>
+
+00:06:54.390 --> 00:06:54.400 align:start position:0%
+row column and it basically identifies
+ 
+
+00:06:54.400 --> 00:06:56.790 align:start position:0%
+row column and it basically identifies
+which<00:06:54.639><c> square</c><00:06:55.120><c> this</c><00:06:55.360><c> is</c><00:06:55.440><c> a</c><00:06:55.599><c> part</c><00:06:55.919><c> of</c><00:06:56.400><c> now</c><00:06:56.560><c> let's</c>
+
+00:06:56.790 --> 00:06:56.800 align:start position:0%
+which square this is a part of now let's
+ 
+
+00:06:56.800 --> 00:06:58.870 align:start position:0%
+which square this is a part of now let's
+just<00:06:57.039><c> check</c><00:06:57.280><c> that</c><00:06:57.440><c> the</c><00:06:57.599><c> edge</c><00:06:57.919><c> cases</c><00:06:58.319><c> work</c><00:06:58.560><c> out</c>
+
+00:06:58.870 --> 00:06:58.880 align:start position:0%
+just check that the edge cases work out
+ 
+
+00:06:58.880 --> 00:07:01.350 align:start position:0%
+just check that the edge cases work out
+let's<00:06:59.120><c> try</c><00:06:59.440><c> a8</c><00:07:00.080><c> right</c><00:07:00.319><c> this</c><00:07:00.479><c> is</c><00:07:00.560><c> the</c><00:07:00.720><c> boundary</c>
+
+00:07:01.350 --> 00:07:01.360 align:start position:0%
+let's try a8 right this is the boundary
+ 
+
+00:07:01.360 --> 00:07:03.670 align:start position:0%
+let's try a8 right this is the boundary
+what<00:07:01.599><c> happens</c><00:07:01.840><c> if</c><00:07:01.919><c> we</c><00:07:02.080><c> take</c><00:07:02.400><c> 8</c><00:07:02.639><c> divided</c><00:07:03.039><c> by</c><00:07:03.280><c> 3</c>
+
+00:07:03.670 --> 00:07:03.680 align:start position:0%
+what happens if we take 8 divided by 3
+ 
+
+00:07:03.680 --> 00:07:06.230 align:start position:0%
+what happens if we take 8 divided by 3
+and<00:07:04.000><c> 8</c><00:07:04.319><c> divided</c><00:07:04.639><c> by</c><00:07:04.800><c> 3</c><00:07:05.120><c> right</c><00:07:05.520><c> well</c><00:07:05.759><c> then</c><00:07:06.000><c> we</c>
+
+00:07:06.230 --> 00:07:06.240 align:start position:0%
+and 8 divided by 3 right well then we
+ 
+
+00:07:06.240 --> 00:07:09.430 align:start position:0%
+and 8 divided by 3 right well then we
+get<00:07:06.800><c> 2</c><00:07:07.440><c> 2</c><00:07:07.759><c> right</c><00:07:08.080><c> integer</c><00:07:08.479><c> division</c><00:07:08.800><c> we</c><00:07:09.039><c> always</c>
+
+00:07:09.430 --> 00:07:09.440 align:start position:0%
+get 2 2 right integer division we always
+ 
+
+00:07:09.440 --> 00:07:12.469 align:start position:0%
+get 2 2 right integer division we always
+round<00:07:09.840><c> down</c><00:07:10.240><c> 2</c><00:07:10.639><c> 2</c><00:07:11.120><c> that</c><00:07:11.360><c> works</c><00:07:11.840><c> out</c><00:07:12.000><c> for</c><00:07:12.240><c> us</c>
+
+00:07:12.469 --> 00:07:12.479 align:start position:0%
+round down 2 2 that works out for us
+ 
+
+00:07:12.479 --> 00:07:14.390 align:start position:0%
+round down 2 2 that works out for us
+right<00:07:12.960><c> let's</c><00:07:13.360><c> do</c><00:07:13.520><c> a</c><00:07:13.599><c> different</c><00:07:13.919><c> edge</c><00:07:14.160><c> case</c>
+
+00:07:14.390 --> 00:07:14.400 align:start position:0%
+right let's do a different edge case
+ 
+
+00:07:14.400 --> 00:07:17.430 align:start position:0%
+right let's do a different edge case
+maybe<00:07:14.720><c> we</c><00:07:14.960><c> try</c><00:07:15.680><c> this</c><00:07:16.319><c> this</c><00:07:16.560><c> square</c><00:07:16.960><c> right</c><00:07:17.280><c> on</c>
+
+00:07:17.430 --> 00:07:17.440 align:start position:0%
+maybe we try this this square right on
+ 
+
+00:07:17.440 --> 00:07:19.189 align:start position:0%
+maybe we try this this square right on
+the<00:07:17.599><c> boundary</c><00:07:18.240><c> does</c><00:07:18.479><c> this</c>
+
+00:07:19.189 --> 00:07:19.199 align:start position:0%
+the boundary does this
+ 
+
+00:07:19.199 --> 00:07:21.029 align:start position:0%
+the boundary does this
+does<00:07:19.360><c> this</c><00:07:19.680><c> identify</c><00:07:20.240><c> zero</c><00:07:20.560><c> zero</c><00:07:20.880><c> because</c>
+
+00:07:21.029 --> 00:07:21.039 align:start position:0%
+does this identify zero zero because
+ 
+
+00:07:21.039 --> 00:07:22.710 align:start position:0%
+does this identify zero zero because
+that's<00:07:21.199><c> what</c><00:07:21.360><c> it</c><00:07:21.520><c> should</c><00:07:21.759><c> well</c><00:07:21.919><c> let's</c><00:07:22.160><c> take</c>
+
+00:07:22.710 --> 00:07:22.720 align:start position:0%
+that's what it should well let's take
+ 
+
+00:07:22.720 --> 00:07:25.589 align:start position:0%
+that's what it should well let's take
+the<00:07:23.199><c> positions</c><00:07:23.840><c> the</c><00:07:24.080><c> indices</c><00:07:24.639><c> two</c><00:07:24.960><c> two</c><00:07:25.280><c> divide</c>
+
+00:07:25.589 --> 00:07:25.599 align:start position:0%
+the positions the indices two two divide
+ 
+
+00:07:25.599 --> 00:07:28.150 align:start position:0%
+the positions the indices two two divide
+them<00:07:25.759><c> by</c><00:07:26.080><c> three</c><00:07:26.560><c> two</c><00:07:26.800><c> divided</c><00:07:27.120><c> by</c><00:07:27.360><c> three</c><00:07:27.919><c> two</c>
+
+00:07:28.150 --> 00:07:28.160 align:start position:0%
+them by three two divided by three two
+ 
+
+00:07:28.160 --> 00:07:30.469 align:start position:0%
+them by three two divided by three two
+divided<00:07:28.479><c> by</c><00:07:28.639><c> three</c><00:07:28.880><c> we</c><00:07:29.120><c> round</c><00:07:29.440><c> these</c><00:07:29.680><c> down</c><00:07:30.319><c> so</c>
+
+00:07:30.469 --> 00:07:30.479 align:start position:0%
+divided by three we round these down so
+ 
+
+00:07:30.479 --> 00:07:34.629 align:start position:0%
+divided by three we round these down so
+we<00:07:30.639><c> get</c><00:07:30.960><c> 0</c><00:07:31.680><c> 0</c><00:07:32.319><c> that</c><00:07:32.639><c> does</c><00:07:33.039><c> uniquely</c><00:07:33.680><c> identify</c>
+
+00:07:34.629 --> 00:07:34.639 align:start position:0%
+we get 0 0 that does uniquely identify
+ 
+
+00:07:34.639 --> 00:07:36.790 align:start position:0%
+we get 0 0 that does uniquely identify
+or<00:07:35.039><c> it</c><00:07:35.280><c> you</c><00:07:35.360><c> know</c><00:07:35.599><c> correctly</c><00:07:36.080><c> identifies</c><00:07:36.560><c> that</c>
+
+00:07:36.790 --> 00:07:36.800 align:start position:0%
+or it you know correctly identifies that
+ 
+
+00:07:36.800 --> 00:07:39.749 align:start position:0%
+or it you know correctly identifies that
+it<00:07:36.960><c> belongs</c><00:07:37.520><c> to</c><00:07:37.759><c> this</c><00:07:38.080><c> 3x3</c><00:07:38.880><c> grid</c><00:07:39.199><c> so</c><00:07:39.440><c> that's</c>
+
+00:07:39.749 --> 00:07:39.759 align:start position:0%
+it belongs to this 3x3 grid so that's
+ 
+
+00:07:39.759 --> 00:07:42.070 align:start position:0%
+it belongs to this 3x3 grid so that's
+kind<00:07:39.919><c> of</c><00:07:40.080><c> how</c><00:07:40.319><c> we're</c><00:07:40.479><c> going</c><00:07:40.639><c> to</c><00:07:40.800><c> identify</c><00:07:41.840><c> when</c>
+
+00:07:42.070 --> 00:07:42.080 align:start position:0%
+kind of how we're going to identify when
+ 
+
+00:07:42.080 --> 00:07:44.150 align:start position:0%
+kind of how we're going to identify when
+we<00:07:42.240><c> go</c><00:07:42.400><c> through</c><00:07:42.639><c> every</c><00:07:42.880><c> position</c><00:07:43.440><c> every</c><00:07:43.680><c> cell</c>
+
+00:07:44.150 --> 00:07:44.160 align:start position:0%
+we go through every position every cell
+ 
+
+00:07:44.160 --> 00:07:47.189 align:start position:0%
+we go through every position every cell
+in<00:07:44.720><c> the</c><00:07:45.120><c> entire</c><00:07:45.520><c> sudoku</c><00:07:46.080><c> board</c><00:07:46.639><c> which</c><00:07:46.960><c> of</c><00:07:47.039><c> the</c>
+
+00:07:47.189 --> 00:07:47.199 align:start position:0%
+in the entire sudoku board which of the
+ 
+
+00:07:47.199 --> 00:07:49.510 align:start position:0%
+in the entire sudoku board which of the
+three<00:07:47.919><c> which</c><00:07:48.160><c> of</c><00:07:48.240><c> the</c><00:07:48.400><c> three</c><00:07:48.639><c> by</c><00:07:48.879><c> three</c><00:07:49.280><c> uh</c>
+
+00:07:49.510 --> 00:07:49.520 align:start position:0%
+three which of the three by three uh
+ 
+
+00:07:49.520 --> 00:07:52.309 align:start position:0%
+three which of the three by three uh
+grids<00:07:50.000><c> is</c><00:07:50.160><c> it</c><00:07:50.319><c> a</c><00:07:50.400><c> part</c><00:07:50.720><c> of</c><00:07:51.039><c> and</c><00:07:51.120><c> then</c><00:07:51.360><c> we</c><00:07:51.520><c> can</c>
+
+00:07:52.309 --> 00:07:52.319 align:start position:0%
+grids is it a part of and then we can
+ 
+
+00:07:52.319 --> 00:07:54.550 align:start position:0%
+grids is it a part of and then we can
+and<00:07:52.400><c> then</c><00:07:52.560><c> we</c><00:07:52.639><c> can</c><00:07:52.879><c> add</c><00:07:53.120><c> them</c><00:07:53.759><c> to</c><00:07:53.919><c> that</c><00:07:54.400><c> right</c>
+
+00:07:54.550 --> 00:07:54.560 align:start position:0%
+and then we can add them to that right
+ 
+
+00:07:54.560 --> 00:07:56.070 align:start position:0%
+and then we can add them to that right
+so<00:07:54.720><c> we're</c><00:07:54.879><c> gonna</c><00:07:55.039><c> have</c><00:07:55.120><c> a</c><00:07:55.199><c> hash</c><00:07:55.520><c> set</c><00:07:55.680><c> where</c><00:07:55.840><c> the</c>
+
+00:07:56.070 --> 00:07:56.080 align:start position:0%
+so we're gonna have a hash set where the
+ 
+
+00:07:56.080 --> 00:07:58.150 align:start position:0%
+so we're gonna have a hash set where the
+key<00:07:56.639><c> of</c><00:07:56.720><c> the</c><00:07:56.879><c> hash</c><00:07:57.120><c> set</c><00:07:57.440><c> is</c><00:07:57.520><c> going</c><00:07:57.680><c> to</c><00:07:57.680><c> be</c><00:07:57.919><c> a</c>
+
+00:07:58.150 --> 00:07:58.160 align:start position:0%
+key of the hash set is going to be a
+ 
+
+00:07:58.160 --> 00:08:01.270 align:start position:0%
+key of the hash set is going to be a
+pair<00:07:58.479><c> of</c><00:07:58.720><c> values</c><00:07:59.440><c> the</c><00:07:59.680><c> row</c><00:08:00.160><c> column</c><00:08:00.879><c> not</c><00:08:01.039><c> the</c>
+
+00:08:01.270 --> 00:08:01.280 align:start position:0%
+pair of values the row column not the
+ 
+
+00:08:01.280 --> 00:08:03.430 align:start position:0%
+pair of values the row column not the
+actual<00:08:01.680><c> row</c><00:08:01.919><c> column</c><00:08:02.319><c> right</c><00:08:02.560><c> but</c><00:08:02.800><c> the</c><00:08:03.199><c> you</c><00:08:03.360><c> know</c>
+
+00:08:03.430 --> 00:08:03.440 align:start position:0%
+actual row column right but the you know
+ 
+
+00:08:03.440 --> 00:08:05.110 align:start position:0%
+actual row column right but the you know
+when<00:08:03.599><c> we</c><00:08:03.759><c> convert</c><00:08:04.240><c> it</c><00:08:04.319><c> to</c><00:08:04.479><c> the</c><00:08:04.560><c> row</c><00:08:04.800><c> column</c>
+
+00:08:05.110 --> 00:08:05.120 align:start position:0%
+when we convert it to the row column
+ 
+
+00:08:05.120 --> 00:08:07.830 align:start position:0%
+when we convert it to the row column
+basically<00:08:06.080><c> row</c><00:08:06.479><c> divided</c><00:08:06.879><c> by</c><00:08:07.120><c> three</c><00:08:07.520><c> and</c>
+
+00:08:07.830 --> 00:08:07.840 align:start position:0%
+basically row divided by three and
+ 
+
+00:08:07.840 --> 00:08:09.909 align:start position:0%
+basically row divided by three and
+column<00:08:08.479><c> divided</c><00:08:08.879><c> by</c><00:08:09.039><c> three</c><00:08:09.360><c> that's</c><00:08:09.599><c> what</c><00:08:09.759><c> the</c>
+
+00:08:09.909 --> 00:08:09.919 align:start position:0%
+column divided by three that's what the
+ 
+
+00:08:09.919 --> 00:08:11.830 align:start position:0%
+column divided by three that's what the
+key<00:08:10.400><c> of</c><00:08:10.639><c> the</c><00:08:10.879><c> hash</c><00:08:10.879><c> hashmap</c><00:08:11.440><c> is</c><00:08:11.520><c> going</c><00:08:11.599><c> to</c><00:08:11.680><c> be</c>
+
+00:08:11.830 --> 00:08:11.840 align:start position:0%
+key of the hash hashmap is going to be
+ 
+
+00:08:11.840 --> 00:08:14.550 align:start position:0%
+key of the hash hashmap is going to be
+and<00:08:12.000><c> the</c><00:08:12.160><c> value</c><00:08:12.720><c> is</c><00:08:13.120><c> similarly</c><00:08:13.680><c> going</c><00:08:13.919><c> to</c><00:08:14.080><c> be</c><00:08:14.240><c> a</c>
+
+00:08:14.550 --> 00:08:14.560 align:start position:0%
+and the value is similarly going to be a
+ 
+
+00:08:14.560 --> 00:08:17.029 align:start position:0%
+and the value is similarly going to be a
+hash<00:08:15.039><c> set</c><00:08:15.599><c> where</c><00:08:15.840><c> we</c><00:08:16.000><c> can</c><00:08:16.240><c> tell</c><00:08:16.560><c> do</c><00:08:16.800><c> we</c><00:08:16.879><c> have</c>
+
+00:08:17.029 --> 00:08:17.039 align:start position:0%
+hash set where we can tell do we have
+ 
+
+00:08:17.039 --> 00:08:19.990 align:start position:0%
+hash set where we can tell do we have
+any<00:08:17.199><c> duplicates</c><00:08:17.840><c> in</c><00:08:18.000><c> this</c><00:08:18.240><c> 3x3</c><00:08:18.960><c> grid</c><00:08:19.360><c> or</c><00:08:19.680><c> not</c>
+
+00:08:19.990 --> 00:08:20.000 align:start position:0%
+any duplicates in this 3x3 grid or not
+ 
+
+00:08:20.000 --> 00:08:22.309 align:start position:0%
+any duplicates in this 3x3 grid or not
+right<00:08:20.400><c> same</c><00:08:20.720><c> for</c><00:08:20.879><c> every</c><00:08:21.120><c> single</c><00:08:21.440><c> 3x3</c><00:08:22.000><c> grid</c>
+
+00:08:22.309 --> 00:08:22.319 align:start position:0%
+right same for every single 3x3 grid
+ 
+
+00:08:22.319 --> 00:08:23.670 align:start position:0%
+right same for every single 3x3 grid
+we're<00:08:22.479><c> just</c><00:08:22.720><c> checking</c><00:08:23.039><c> does</c><00:08:23.280><c> it</c><00:08:23.360><c> have</c><00:08:23.440><c> any</c>
+
+00:08:23.670 --> 00:08:23.680 align:start position:0%
+we're just checking does it have any
+ 
+
+00:08:23.680 --> 00:08:25.749 align:start position:0%
+we're just checking does it have any
+duplicates<00:08:24.400><c> if</c><00:08:24.639><c> not</c><00:08:24.800><c> then</c><00:08:25.039><c> we</c><00:08:25.120><c> can</c><00:08:25.280><c> continue</c>
+
+00:08:25.749 --> 00:08:25.759 align:start position:0%
+duplicates if not then we can continue
+ 
+
+00:08:25.759 --> 00:08:27.749 align:start position:0%
+duplicates if not then we can continue
+if<00:08:25.919><c> it</c><00:08:26.080><c> does</c><00:08:26.319><c> have</c><00:08:26.479><c> a</c><00:08:26.560><c> duplicate</c><00:08:27.280><c> that</c><00:08:27.520><c> means</c>
+
+00:08:27.749 --> 00:08:27.759 align:start position:0%
+if it does have a duplicate that means
+ 
+
+00:08:27.759 --> 00:08:30.309 align:start position:0%
+if it does have a duplicate that means
+our<00:08:27.919><c> sudoku</c><00:08:28.479><c> board</c><00:08:28.800><c> is</c><00:08:29.039><c> not</c><00:08:29.360><c> valid</c><00:08:30.000><c> and</c><00:08:30.160><c> then</c>
+
+00:08:30.309 --> 00:08:30.319 align:start position:0%
+our sudoku board is not valid and then
+ 
+
+00:08:30.319 --> 00:08:32.630 align:start position:0%
+our sudoku board is not valid and then
+we<00:08:30.479><c> would</c><00:08:30.720><c> have</c><00:08:30.800><c> to</c><00:08:30.960><c> return</c><00:08:31.680><c> false</c><00:08:32.080><c> but</c><00:08:32.240><c> if</c><00:08:32.399><c> it</c>
+
+00:08:32.630 --> 00:08:32.640 align:start position:0%
+we would have to return false but if it
+ 
+
+00:08:32.640 --> 00:08:34.469 align:start position:0%
+we would have to return false but if it
+is<00:08:32.800><c> valid</c><00:08:33.120><c> we're</c><00:08:33.279><c> just</c><00:08:33.440><c> going</c><00:08:33.519><c> to</c><00:08:33.599><c> continue</c><00:08:34.320><c> so</c>
+
+00:08:34.469 --> 00:08:34.479 align:start position:0%
+is valid we're just going to continue so
+ 
+
+00:08:34.479 --> 00:08:35.990 align:start position:0%
+is valid we're just going to continue so
+we're<00:08:34.640><c> basically</c><00:08:35.120><c> going</c><00:08:35.200><c> to</c><00:08:35.279><c> go</c><00:08:35.519><c> over</c><00:08:35.839><c> the</c>
+
+00:08:35.990 --> 00:08:36.000 align:start position:0%
+we're basically going to go over the
+ 
+
+00:08:36.000 --> 00:08:38.870 align:start position:0%
+we're basically going to go over the
+entire<00:08:36.719><c> grid</c><00:08:37.120><c> right</c><00:08:37.360><c> every</c><00:08:37.599><c> single</c><00:08:38.320><c> uh</c>
+
+00:08:38.870 --> 00:08:38.880 align:start position:0%
+entire grid right every single uh
+ 
+
+00:08:38.880 --> 00:08:41.110 align:start position:0%
+entire grid right every single uh
+position<00:08:39.360><c> in</c><00:08:39.440><c> the</c><00:08:39.599><c> entire</c><00:08:40.000><c> grid</c><00:08:40.560><c> if</c><00:08:40.719><c> we</c><00:08:40.880><c> find</c>
+
+00:08:41.110 --> 00:08:41.120 align:start position:0%
+position in the entire grid if we find
+ 
+
+00:08:41.120 --> 00:08:43.029 align:start position:0%
+position in the entire grid if we find
+any<00:08:41.279><c> duplicates</c><00:08:41.760><c> we</c><00:08:41.919><c> return</c><00:08:42.320><c> false</c><00:08:42.719><c> if</c><00:08:42.800><c> we</c>
+
+00:08:43.029 --> 00:08:43.039 align:start position:0%
+any duplicates we return false if we
+ 
+
+00:08:43.039 --> 00:08:45.509 align:start position:0%
+any duplicates we return false if we
+don't<00:08:43.360><c> at</c><00:08:43.519><c> the</c><00:08:43.680><c> end</c><00:08:43.919><c> we</c><00:08:44.080><c> can</c><00:08:44.240><c> return</c><00:08:44.720><c> true</c><00:08:45.360><c> so</c>
+
+00:08:45.509 --> 00:08:45.519 align:start position:0%
+don't at the end we can return true so
+ 
+
+00:08:45.519 --> 00:08:47.190 align:start position:0%
+don't at the end we can return true so
+now<00:08:45.680><c> we</c><00:08:45.839><c> have</c><00:08:46.000><c> enough</c><00:08:46.399><c> information</c><00:08:46.959><c> to</c>
+
+00:08:47.190 --> 00:08:47.200 align:start position:0%
+now we have enough information to
+ 
+
+00:08:47.200 --> 00:08:49.190 align:start position:0%
+now we have enough information to
+actually<00:08:47.600><c> write</c><00:08:47.839><c> out</c><00:08:48.000><c> the</c><00:08:48.160><c> code</c><00:08:48.640><c> so</c><00:08:48.800><c> let's</c><00:08:49.040><c> do</c>
+
+00:08:49.190 --> 00:08:49.200 align:start position:0%
+actually write out the code so let's do
+ 
+
+00:08:49.200 --> 00:08:50.870 align:start position:0%
+actually write out the code so let's do
+that<00:08:49.279><c> okay</c><00:08:49.519><c> so</c><00:08:49.680><c> now</c><00:08:49.839><c> we</c><00:08:50.000><c> can</c><00:08:50.160><c> write</c><00:08:50.399><c> the</c><00:08:50.560><c> code</c>
+
+00:08:50.870 --> 00:08:50.880 align:start position:0%
+that okay so now we can write the code
+ 
+
+00:08:50.880 --> 00:08:52.150 align:start position:0%
+that okay so now we can write the code
+like<00:08:51.120><c> i</c><00:08:51.279><c> mentioned</c><00:08:51.680><c> i'm</c><00:08:51.839><c> going</c><00:08:51.920><c> to</c><00:08:52.000><c> be</c>
+
+00:08:52.150 --> 00:08:52.160 align:start position:0%
+like i mentioned i'm going to be
+ 
+
+00:08:52.160 --> 00:08:55.030 align:start position:0%
+like i mentioned i'm going to be
+detecting<00:08:52.720><c> duplicates</c><00:08:53.279><c> with</c><00:08:53.519><c> a</c><00:08:53.760><c> hash</c><00:08:54.160><c> set</c><00:08:54.800><c> but</c>
+
+00:08:55.030 --> 00:08:55.040 align:start position:0%
+detecting duplicates with a hash set but
+ 
+
+00:08:55.040 --> 00:08:56.630 align:start position:0%
+detecting duplicates with a hash set but
+you<00:08:55.200><c> could</c><00:08:55.360><c> do</c><00:08:55.600><c> it</c><00:08:55.680><c> with</c><00:08:55.920><c> arrays</c><00:08:56.399><c> if</c><00:08:56.560><c> you</c>
+
+00:08:56.630 --> 00:08:56.640 align:start position:0%
+you could do it with arrays if you
+ 
+
+00:08:56.640 --> 00:08:58.150 align:start position:0%
+you could do it with arrays if you
+wanted<00:08:56.880><c> to</c><00:08:57.120><c> as</c><00:08:57.200><c> well</c><00:08:57.440><c> because</c><00:08:57.600><c> we</c><00:08:57.839><c> know</c><00:08:58.000><c> the</c>
+
+00:08:58.150 --> 00:08:58.160 align:start position:0%
+wanted to as well because we know the
+ 
+
+00:08:58.160 --> 00:09:00.230 align:start position:0%
+wanted to as well because we know the
+dimensions<00:08:58.800><c> of</c><00:08:58.959><c> this</c><00:08:59.360><c> sudoku</c><00:08:59.839><c> board</c><00:09:00.080><c> it's</c>
+
+00:09:00.230 --> 00:09:00.240 align:start position:0%
+dimensions of this sudoku board it's
+ 
+
+00:09:00.240 --> 00:09:03.509 align:start position:0%
+dimensions of this sudoku board it's
+nine<00:09:00.480><c> by</c><00:09:00.720><c> nine</c><00:09:01.120><c> but</c><00:09:01.360><c> i'm</c><00:09:01.440><c> going</c><00:09:01.519><c> to</c><00:09:01.680><c> be</c><00:09:01.760><c> using</c><00:09:02.640><c> a</c>
+
+00:09:03.509 --> 00:09:03.519 align:start position:0%
+nine by nine but i'm going to be using a
+ 
+
+00:09:03.519 --> 00:09:05.350 align:start position:0%
+nine by nine but i'm going to be using a
+hash<00:09:03.839><c> set</c><00:09:04.080><c> or</c><00:09:04.240><c> dictionary</c><00:09:04.720><c> just</c><00:09:04.880><c> because</c><00:09:05.200><c> it's</c>
+
+00:09:05.350 --> 00:09:05.360 align:start position:0%
+hash set or dictionary just because it's
+ 
+
+00:09:05.360 --> 00:09:06.470 align:start position:0%
+hash set or dictionary just because it's
+easier<00:09:05.760><c> so</c>
+
+00:09:06.470 --> 00:09:06.480 align:start position:0%
+easier so
+ 
+
+00:09:06.480 --> 00:09:08.389 align:start position:0%
+easier so
+in<00:09:06.560><c> this</c><00:09:06.800><c> case</c><00:09:07.040><c> i'm</c><00:09:07.200><c> actually</c><00:09:07.519><c> using</c><00:09:07.839><c> a</c><00:09:08.080><c> hash</c>
+
+00:09:08.389 --> 00:09:08.399 align:start position:0%
+in this case i'm actually using a hash
+ 
+
+00:09:08.399 --> 00:09:11.350 align:start position:0%
+in this case i'm actually using a hash
+map<00:09:08.800><c> where</c><00:09:09.120><c> the</c><00:09:09.680><c> uh</c><00:09:10.080><c> key</c><00:09:10.480><c> is</c><00:09:10.640><c> just</c><00:09:10.880><c> going</c><00:09:11.200><c> is</c>
+
+00:09:11.350 --> 00:09:11.360 align:start position:0%
+map where the uh key is just going is
+ 
+
+00:09:11.360 --> 00:09:13.030 align:start position:0%
+map where the uh key is just going is
+going<00:09:11.440><c> to</c><00:09:11.519><c> be</c><00:09:11.600><c> the</c><00:09:11.760><c> column</c><00:09:12.240><c> number</c><00:09:12.720><c> and</c><00:09:12.800><c> the</c>
+
+00:09:13.030 --> 00:09:13.040 align:start position:0%
+going to be the column number and the
+ 
+
+00:09:13.040 --> 00:09:14.710 align:start position:0%
+going to be the column number and the
+value<00:09:13.440><c> is</c><00:09:13.519><c> going</c><00:09:13.600><c> to</c><00:09:13.680><c> be</c><00:09:13.839><c> another</c><00:09:14.320><c> set</c>
+
+00:09:14.710 --> 00:09:14.720 align:start position:0%
+value is going to be another set
+ 
+
+00:09:14.720 --> 00:09:16.389 align:start position:0%
+value is going to be another set
+basically<00:09:15.200><c> the</c><00:09:15.360><c> set</c><00:09:15.600><c> is</c><00:09:15.760><c> going</c><00:09:15.839><c> to</c><00:09:15.920><c> represent</c>
+
+00:09:16.389 --> 00:09:16.399 align:start position:0%
+basically the set is going to represent
+ 
+
+00:09:16.399 --> 00:09:20.230 align:start position:0%
+basically the set is going to represent
+all<00:09:16.640><c> particular</c><00:09:17.600><c> values</c><00:09:18.240><c> in</c><00:09:18.399><c> this</c><00:09:18.720><c> column</c><00:09:19.600><c> and</c>
+
+00:09:20.230 --> 00:09:20.240 align:start position:0%
+all particular values in this column and
+ 
+
+00:09:20.240 --> 00:09:21.990 align:start position:0%
+all particular values in this column and
+we're<00:09:20.399><c> going</c><00:09:20.480><c> to</c><00:09:20.560><c> do</c><00:09:20.720><c> the</c><00:09:20.800><c> same</c><00:09:21.120><c> thing</c><00:09:21.440><c> for</c>
+
+00:09:21.990 --> 00:09:22.000 align:start position:0%
+we're going to do the same thing for
+ 
+
+00:09:22.000 --> 00:09:23.910 align:start position:0%
+we're going to do the same thing for
+rows<00:09:22.480><c> this</c><00:09:22.640><c> is</c><00:09:22.880><c> only</c><00:09:23.120><c> so</c><00:09:23.279><c> we</c><00:09:23.440><c> can</c><00:09:23.519><c> detect</c>
+
+00:09:23.910 --> 00:09:23.920 align:start position:0%
+rows this is only so we can detect
+ 
+
+00:09:23.920 --> 00:09:26.550 align:start position:0%
+rows this is only so we can detect
+duplicates<00:09:24.640><c> so</c><00:09:24.880><c> let's</c><00:09:25.200><c> create</c><00:09:25.519><c> another</c>
+
+00:09:26.550 --> 00:09:26.560 align:start position:0%
+duplicates so let's create another
+ 
+
+00:09:26.560 --> 00:09:28.389 align:start position:0%
+duplicates so let's create another
+uh<00:09:27.040><c> hash</c><00:09:27.440><c> map</c>
+
+00:09:28.389 --> 00:09:28.399 align:start position:0%
+uh hash map
+ 
+
+00:09:28.399 --> 00:09:31.269 align:start position:0%
+uh hash map
+with<00:09:28.720><c> rows</c><00:09:29.279><c> and</c><00:09:29.519><c> another</c><00:09:29.920><c> hash</c><00:09:30.240><c> map</c><00:09:30.560><c> with</c><00:09:30.959><c> the</c>
+
+00:09:31.269 --> 00:09:31.279 align:start position:0%
+with rows and another hash map with the
+ 
+
+00:09:31.279 --> 00:09:33.829 align:start position:0%
+with rows and another hash map with the
+squares<00:09:32.160><c> and</c><00:09:32.399><c> remember</c><00:09:32.800><c> the</c><00:09:33.040><c> key</c><00:09:33.440><c> for</c><00:09:33.680><c> the</c>
+
+00:09:33.829 --> 00:09:33.839 align:start position:0%
+squares and remember the key for the
+ 
+
+00:09:33.839 --> 00:09:36.870 align:start position:0%
+squares and remember the key for the
+squares<00:09:34.399><c> is</c><00:09:34.560><c> going</c><00:09:34.800><c> to</c><00:09:35.040><c> be</c><00:09:35.600><c> a</c><00:09:35.920><c> pair</c><00:09:36.240><c> of</c><00:09:36.399><c> values</c>
+
+00:09:36.870 --> 00:09:36.880 align:start position:0%
+squares is going to be a pair of values
+ 
+
+00:09:36.880 --> 00:09:39.829 align:start position:0%
+squares is going to be a pair of values
+basically<00:09:37.279><c> the</c><00:09:37.519><c> row</c><00:09:37.839><c> divided</c><00:09:38.240><c> by</c><00:09:38.480><c> three</c><00:09:39.279><c> and</c>
+
+00:09:39.829 --> 00:09:39.839 align:start position:0%
+basically the row divided by three and
+ 
+
+00:09:39.839 --> 00:09:40.630 align:start position:0%
+basically the row divided by three and
+the
+
+00:09:40.630 --> 00:09:40.640 align:start position:0%
+the
+ 
+
+00:09:40.640 --> 00:09:43.750 align:start position:0%
+the
+column<00:09:41.279><c> divided</c><00:09:41.680><c> by</c><00:09:41.920><c> three</c><00:09:42.640><c> so</c><00:09:42.880><c> now</c><00:09:43.120><c> we</c><00:09:43.360><c> just</c>
+
+00:09:43.750 --> 00:09:43.760 align:start position:0%
+column divided by three so now we just
+ 
+
+00:09:43.760 --> 00:09:47.350 align:start position:0%
+column divided by three so now we just
+want<00:09:44.080><c> to</c><00:09:44.480><c> iterate</c><00:09:45.040><c> over</c><00:09:45.360><c> the</c><00:09:45.600><c> entire</c><00:09:46.160><c> grid</c>
+
+00:09:47.350 --> 00:09:47.360 align:start position:0%
+want to iterate over the entire grid
+ 
+
+00:09:47.360 --> 00:09:49.110 align:start position:0%
+want to iterate over the entire grid
+and<00:09:47.519><c> we</c><00:09:47.600><c> know</c><00:09:47.920><c> the</c><00:09:48.080><c> dimensions</c><00:09:48.560><c> are</c><00:09:48.720><c> nine</c><00:09:48.959><c> by</c>
+
+00:09:49.110 --> 00:09:49.120 align:start position:0%
+and we know the dimensions are nine by
+ 
+
+00:09:49.120 --> 00:09:50.870 align:start position:0%
+and we know the dimensions are nine by
+nine<00:09:49.360><c> so</c><00:09:49.519><c> i'm</c><00:09:49.600><c> just</c><00:09:49.680><c> going</c><00:09:49.839><c> to</c><00:09:49.920><c> hard</c><00:09:50.240><c> code</c><00:09:50.560><c> that</c>
+
+00:09:50.870 --> 00:09:50.880 align:start position:0%
+nine so i'm just going to hard code that
+ 
+
+00:09:50.880 --> 00:09:53.990 align:start position:0%
+nine so i'm just going to hard code that
+in<00:09:51.360><c> to</c><00:09:51.600><c> these</c><00:09:51.920><c> loops</c><00:09:52.720><c> and</c><00:09:52.959><c> so</c><00:09:53.200><c> we</c><00:09:53.360><c> know</c><00:09:53.519><c> that</c><00:09:53.760><c> a</c>
+
+00:09:53.990 --> 00:09:54.000 align:start position:0%
+in to these loops and so we know that a
+ 
+
+00:09:54.000 --> 00:09:55.990 align:start position:0%
+in to these loops and so we know that a
+position<00:09:54.640><c> in</c><00:09:54.720><c> the</c><00:09:54.880><c> sudoku</c><00:09:55.360><c> board</c><00:09:55.680><c> actually</c>
+
+00:09:55.990 --> 00:09:56.000 align:start position:0%
+position in the sudoku board actually
+ 
+
+00:09:56.000 --> 00:09:58.150 align:start position:0%
+position in the sudoku board actually
+could<00:09:56.240><c> be</c><00:09:56.480><c> empty</c><00:09:56.800><c> and</c><00:09:56.959><c> they</c><00:09:57.120><c> tell</c><00:09:57.360><c> us</c><00:09:57.600><c> that</c><00:09:57.839><c> an</c>
+
+00:09:58.150 --> 00:09:58.160 align:start position:0%
+could be empty and they tell us that an
+ 
+
+00:09:58.160 --> 00:10:00.710 align:start position:0%
+could be empty and they tell us that an
+empty<00:09:58.800><c> position</c><00:09:59.200><c> is</c><00:09:59.440><c> represented</c><00:09:59.920><c> by</c><00:10:00.160><c> a</c><00:10:00.399><c> dot</c>
+
+00:10:00.710 --> 00:10:00.720 align:start position:0%
+empty position is represented by a dot
+ 
+
+00:10:00.720 --> 00:10:02.069 align:start position:0%
+empty position is represented by a dot
+so<00:10:00.880><c> the</c><00:10:01.040><c> first</c><00:10:01.200><c> thing</c><00:10:01.360><c> we're</c><00:10:01.519><c> going</c><00:10:01.680><c> to</c><00:10:01.760><c> check</c>
+
+00:10:02.069 --> 00:10:02.079 align:start position:0%
+so the first thing we're going to check
+ 
+
+00:10:02.079 --> 00:10:04.069 align:start position:0%
+so the first thing we're going to check
+is<00:10:02.320><c> if</c><00:10:02.480><c> this</c><00:10:02.800><c> is</c><00:10:02.959><c> an</c><00:10:03.120><c> empty</c><00:10:03.440><c> space</c><00:10:03.760><c> then</c><00:10:03.920><c> we</c><00:10:04.000><c> can</c>
+
+00:10:04.069 --> 00:10:04.079 align:start position:0%
+is if this is an empty space then we can
+ 
+
+00:10:04.079 --> 00:10:05.910 align:start position:0%
+is if this is an empty space then we can
+just<00:10:04.320><c> skip</c><00:10:04.640><c> it</c><00:10:04.880><c> right</c><00:10:05.279><c> then</c><00:10:05.519><c> we're</c><00:10:05.680><c> just</c><00:10:05.839><c> going</c>
+
+00:10:05.910 --> 00:10:05.920 align:start position:0%
+just skip it right then we're just going
+ 
+
+00:10:05.920 --> 00:10:08.150 align:start position:0%
+just skip it right then we're just going
+to<00:10:06.079><c> continue</c><00:10:06.640><c> to</c><00:10:06.800><c> the</c><00:10:06.959><c> next</c><00:10:07.279><c> iteration</c><00:10:07.839><c> of</c><00:10:08.000><c> the</c>
+
+00:10:08.150 --> 00:10:08.160 align:start position:0%
+to continue to the next iteration of the
+ 
+
+00:10:08.160 --> 00:10:10.470 align:start position:0%
+to continue to the next iteration of the
+loop<00:10:08.800><c> the</c><00:10:09.040><c> next</c><00:10:09.360><c> thing</c><00:10:09.519><c> we</c><00:10:09.680><c> want</c><00:10:09.839><c> to</c><00:10:10.000><c> check</c><00:10:10.240><c> is</c>
+
+00:10:10.470 --> 00:10:10.480 align:start position:0%
+loop the next thing we want to check is
+ 
+
+00:10:10.480 --> 00:10:12.710 align:start position:0%
+loop the next thing we want to check is
+have<00:10:10.800><c> we</c><00:10:11.040><c> found</c><00:10:11.279><c> a</c><00:10:11.440><c> duplicate</c><00:10:11.920><c> because</c><00:10:12.240><c> if</c><00:10:12.480><c> we</c>
+
+00:10:12.710 --> 00:10:12.720 align:start position:0%
+have we found a duplicate because if we
+ 
+
+00:10:12.720 --> 00:10:15.350 align:start position:0%
+have we found a duplicate because if we
+have<00:10:13.279><c> then</c><00:10:13.440><c> we</c><00:10:13.680><c> return</c><00:10:14.240><c> false</c><00:10:14.640><c> immediately</c><00:10:15.200><c> so</c>
+
+00:10:15.350 --> 00:10:15.360 align:start position:0%
+have then we return false immediately so
+ 
+
+00:10:15.360 --> 00:10:17.750 align:start position:0%
+have then we return false immediately so
+we<00:10:15.519><c> want</c><00:10:15.680><c> to</c><00:10:15.760><c> know</c><00:10:16.000><c> does</c><00:10:16.320><c> this</c><00:10:16.720><c> this</c><00:10:17.040><c> uh</c><00:10:17.360><c> value</c>
+
+00:10:17.750 --> 00:10:17.760 align:start position:0%
+we want to know does this this uh value
+ 
+
+00:10:17.760 --> 00:10:20.470 align:start position:0%
+we want to know does this this uh value
+if<00:10:17.920><c> it's</c><00:10:18.079><c> not</c><00:10:18.399><c> empty</c><00:10:19.200><c> it</c><00:10:19.360><c> has</c><00:10:19.600><c> it</c><00:10:19.839><c> already</c><00:10:20.240><c> been</c>
+
+00:10:20.470 --> 00:10:20.480 align:start position:0%
+if it's not empty it has it already been
+ 
+
+00:10:20.480 --> 00:10:22.949 align:start position:0%
+if it's not empty it has it already been
+detected<00:10:20.959><c> so</c><00:10:21.120><c> if</c><00:10:21.200><c> the</c><00:10:21.360><c> board</c><00:10:21.680><c> is</c><00:10:22.000><c> in</c>
+
+00:10:22.949 --> 00:10:22.959 align:start position:0%
+detected so if the board is in
+ 
+
+00:10:22.959 --> 00:10:26.389 align:start position:0%
+detected so if the board is in
+rows<00:10:23.839><c> at</c><00:10:24.320><c> this</c><00:10:24.720><c> current</c><00:10:25.120><c> row</c><00:10:25.600><c> what</c><00:10:25.760><c> does</c><00:10:26.000><c> this</c>
+
+00:10:26.389 --> 00:10:26.399 align:start position:0%
+rows at this current row what does this
+ 
+
+00:10:26.399 --> 00:10:29.269 align:start position:0%
+rows at this current row what does this
+mean<00:10:26.959><c> we're</c><00:10:27.279><c> saying</c><00:10:27.600><c> okay</c><00:10:28.160><c> the</c><00:10:28.480><c> current</c><00:10:28.959><c> row</c>
+
+00:10:29.269 --> 00:10:29.279 align:start position:0%
+mean we're saying okay the current row
+ 
+
+00:10:29.279 --> 00:10:30.630 align:start position:0%
+mean we're saying okay the current row
+that<00:10:29.519><c> we're</c><00:10:29.839><c> in</c>
+
+00:10:30.630 --> 00:10:30.640 align:start position:0%
+that we're in
+ 
+
+00:10:30.640 --> 00:10:32.470 align:start position:0%
+that we're in
+basically<00:10:31.120><c> this</c><00:10:31.360><c> is</c><00:10:31.519><c> our</c><00:10:31.760><c> hash</c><00:10:32.000><c> map</c><00:10:32.240><c> right</c>
+
+00:10:32.470 --> 00:10:32.480 align:start position:0%
+basically this is our hash map right
+ 
+
+00:10:32.480 --> 00:10:34.230 align:start position:0%
+basically this is our hash map right
+rows<00:10:32.800><c> is</c><00:10:32.959><c> our</c><00:10:33.120><c> hash</c><00:10:33.360><c> map</c><00:10:33.600><c> the</c><00:10:33.760><c> key</c><00:10:34.000><c> we're</c>
+
+00:10:34.230 --> 00:10:34.240 align:start position:0%
+rows is our hash map the key we're
+ 
+
+00:10:34.240 --> 00:10:36.069 align:start position:0%
+rows is our hash map the key we're
+putting<00:10:34.560><c> in</c><00:10:34.720><c> is</c><00:10:34.880><c> the</c><00:10:35.040><c> current</c><00:10:35.440><c> row</c><00:10:35.680><c> that</c><00:10:35.839><c> we're</c>
+
+00:10:36.069 --> 00:10:36.079 align:start position:0%
+putting in is the current row that we're
+ 
+
+00:10:36.079 --> 00:10:37.990 align:start position:0%
+putting in is the current row that we're
+in<00:10:36.399><c> so</c><00:10:36.640><c> that's</c><00:10:37.120><c> so</c><00:10:37.279><c> this</c><00:10:37.519><c> basically</c>
+
+00:10:37.990 --> 00:10:38.000 align:start position:0%
+in so that's so this basically
+ 
+
+00:10:38.000 --> 00:10:40.389 align:start position:0%
+in so that's so this basically
+represents<00:10:38.720><c> a</c><00:10:38.959><c> hash</c><00:10:39.360><c> set</c><00:10:39.680><c> as</c><00:10:39.839><c> you</c><00:10:39.920><c> can</c><00:10:40.000><c> see</c><00:10:40.240><c> up</c>
+
+00:10:40.389 --> 00:10:40.399 align:start position:0%
+represents a hash set as you can see up
+ 
+
+00:10:40.399 --> 00:10:44.069 align:start position:0%
+represents a hash set as you can see up
+above<00:10:40.800><c> a</c><00:10:41.120><c> set</c><00:10:41.600><c> a</c><00:10:41.839><c> hash</c><00:10:42.240><c> set</c><00:10:42.720><c> of</c><00:10:43.040><c> all</c><00:10:43.440><c> values</c>
+
+00:10:44.069 --> 00:10:44.079 align:start position:0%
+above a set a hash set of all values
+ 
+
+00:10:44.079 --> 00:10:47.110 align:start position:0%
+above a set a hash set of all values
+that<00:10:44.320><c> occur</c><00:10:44.800><c> in</c><00:10:44.959><c> this</c><00:10:45.279><c> particular</c><00:10:46.079><c> row</c><00:10:46.560><c> number</c>
+
+00:10:47.110 --> 00:10:47.120 align:start position:0%
+that occur in this particular row number
+ 
+
+00:10:47.120 --> 00:10:50.470 align:start position:0%
+that occur in this particular row number
+so<00:10:47.440><c> if</c><00:10:47.920><c> so</c><00:10:48.560><c> so</c><00:10:48.720><c> basically</c><00:10:49.200><c> if</c><00:10:49.279><c> this</c><00:10:49.680><c> uh</c><00:10:50.160><c> this</c>
+
+00:10:50.470 --> 00:10:50.480 align:start position:0%
+so if so so basically if this uh this
+ 
+
+00:10:50.480 --> 00:10:52.710 align:start position:0%
+so if so so basically if this uh this
+current<00:10:50.800><c> number</c><00:10:51.120><c> that</c><00:10:51.279><c> we're</c><00:10:51.440><c> at</c><00:10:51.760><c> is</c><00:10:52.079><c> already</c>
+
+00:10:52.710 --> 00:10:52.720 align:start position:0%
+current number that we're at is already
+ 
+
+00:10:52.720 --> 00:10:54.710 align:start position:0%
+current number that we're at is already
+inside<00:10:53.360><c> the</c><00:10:53.519><c> current</c><00:10:53.839><c> row</c><00:10:54.160><c> meaning</c><00:10:54.399><c> we've</c>
+
+00:10:54.710 --> 00:10:54.720 align:start position:0%
+inside the current row meaning we've
+ 
+
+00:10:54.720 --> 00:10:57.190 align:start position:0%
+inside the current row meaning we've
+already<00:10:55.200><c> seen</c><00:10:55.519><c> this</c><00:10:55.839><c> value</c><00:10:56.320><c> before</c><00:10:56.800><c> in</c><00:10:56.959><c> the</c>
+
+00:10:57.190 --> 00:10:57.200 align:start position:0%
+already seen this value before in the
+ 
+
+00:10:57.200 --> 00:10:58.710 align:start position:0%
+already seen this value before in the
+current<00:10:57.600><c> row</c><00:10:57.839><c> that</c><00:10:58.000><c> we're</c><00:10:58.240><c> in</c><00:10:58.399><c> that</c><00:10:58.480><c> means</c>
+
+00:10:58.710 --> 00:10:58.720 align:start position:0%
+current row that we're in that means
+ 
+
+00:10:58.720 --> 00:11:00.470 align:start position:0%
+current row that we're in that means
+it's<00:10:58.880><c> a</c><00:10:58.959><c> duplicate</c><00:10:59.440><c> right</c><00:10:59.680><c> in</c><00:10:59.760><c> which</c><00:11:00.000><c> case</c><00:11:00.320><c> we</c>
+
+00:11:00.470 --> 00:11:00.480 align:start position:0%
+it's a duplicate right in which case we
+ 
+
+00:11:00.480 --> 00:11:03.190 align:start position:0%
+it's a duplicate right in which case we
+can<00:11:00.640><c> return</c><00:11:01.040><c> false</c><00:11:01.680><c> but</c><00:11:02.160><c> that's</c><00:11:02.399><c> not</c><00:11:02.800><c> it</c>
+
+00:11:03.190 --> 00:11:03.200 align:start position:0%
+can return false but that's not it
+ 
+
+00:11:03.200 --> 00:11:04.949 align:start position:0%
+can return false but that's not it
+basically<00:11:03.680><c> the</c><00:11:03.839><c> exact</c><00:11:04.160><c> same</c><00:11:04.480><c> thing</c><00:11:04.720><c> is</c><00:11:04.880><c> going</c>
+
+00:11:04.949 --> 00:11:04.959 align:start position:0%
+basically the exact same thing is going
+ 
+
+00:11:04.959 --> 00:11:06.230 align:start position:0%
+basically the exact same thing is going
+to<00:11:05.040><c> be</c><00:11:05.279><c> true</c>
+
+00:11:06.230 --> 00:11:06.240 align:start position:0%
+to be true
+ 
+
+00:11:06.240 --> 00:11:09.190 align:start position:0%
+to be true
+if<00:11:06.800><c> this</c><00:11:07.440><c> value</c><00:11:07.839><c> has</c><00:11:08.079><c> already</c><00:11:08.560><c> occurred</c><00:11:09.040><c> in</c>
+
+00:11:09.190 --> 00:11:09.200 align:start position:0%
+if this value has already occurred in
+ 
+
+00:11:09.200 --> 00:11:11.110 align:start position:0%
+if this value has already occurred in
+the<00:11:09.440><c> same</c><00:11:09.920><c> column</c><00:11:10.399><c> before</c><00:11:10.720><c> so</c><00:11:10.880><c> we're</c><00:11:10.959><c> going</c><00:11:11.040><c> to</c>
+
+00:11:11.110 --> 00:11:11.120 align:start position:0%
+the same column before so we're going to
+ 
+
+00:11:11.120 --> 00:11:13.670 align:start position:0%
+the same column before so we're going to
+change<00:11:11.440><c> this</c><00:11:11.680><c> to</c><00:11:11.920><c> columns</c><00:11:12.720><c> at</c><00:11:12.880><c> the</c><00:11:13.120><c> current</c>
+
+00:11:13.670 --> 00:11:13.680 align:start position:0%
+change this to columns at the current
+ 
+
+00:11:13.680 --> 00:11:16.150 align:start position:0%
+change this to columns at the current
+column<00:11:14.000><c> that</c><00:11:14.160><c> we're</c><00:11:14.560><c> at</c><00:11:14.959><c> so</c><00:11:15.200><c> if</c><00:11:15.360><c> this</c><00:11:15.760><c> value</c>
+
+00:11:16.150 --> 00:11:16.160 align:start position:0%
+column that we're at so if this value
+ 
+
+00:11:16.160 --> 00:11:17.670 align:start position:0%
+column that we're at so if this value
+has<00:11:16.320><c> already</c><00:11:16.640><c> occurred</c><00:11:17.120><c> in</c><00:11:17.200><c> the</c><00:11:17.360><c> current</c>
+
+00:11:17.670 --> 00:11:17.680 align:start position:0%
+has already occurred in the current
+ 
+
+00:11:17.680 --> 00:11:19.350 align:start position:0%
+has already occurred in the current
+column<00:11:17.920><c> then</c><00:11:18.160><c> we're</c><00:11:18.399><c> in</c><00:11:18.560><c> that</c><00:11:18.720><c> we're</c><00:11:18.880><c> in</c><00:11:19.120><c> that</c>
+
+00:11:19.350 --> 00:11:19.360 align:start position:0%
+column then we're in that we're in that
+ 
+
+00:11:19.360 --> 00:11:21.590 align:start position:0%
+column then we're in that we're in that
+means<00:11:19.600><c> we've</c><00:11:20.000><c> detected</c><00:11:20.640><c> another</c><00:11:20.959><c> duplicate</c>
+
+00:11:21.590 --> 00:11:21.600 align:start position:0%
+means we've detected another duplicate
+ 
+
+00:11:21.600 --> 00:11:23.590 align:start position:0%
+means we've detected another duplicate
+in<00:11:21.760><c> which</c><00:11:22.000><c> case</c><00:11:22.160><c> we</c><00:11:22.320><c> can</c><00:11:22.480><c> return</c><00:11:22.880><c> false</c><00:11:23.360><c> and</c>
+
+00:11:23.590 --> 00:11:23.600 align:start position:0%
+in which case we can return false and
+ 
+
+00:11:23.600 --> 00:11:26.389 align:start position:0%
+in which case we can return false and
+last<00:11:23.839><c> but</c><00:11:24.000><c> not</c><00:11:24.399><c> least</c><00:11:25.120><c> we</c><00:11:25.279><c> have</c><00:11:25.440><c> to</c><00:11:25.680><c> check</c><00:11:26.000><c> if</c>
+
+00:11:26.389 --> 00:11:26.399 align:start position:0%
+last but not least we have to check if
+ 
+
+00:11:26.399 --> 00:11:28.710 align:start position:0%
+last but not least we have to check if
+this<00:11:26.959><c> value</c><00:11:27.360><c> has</c><00:11:27.600><c> already</c><00:11:28.000><c> occurred</c><00:11:28.399><c> in</c><00:11:28.480><c> the</c>
+
+00:11:28.710 --> 00:11:28.720 align:start position:0%
+this value has already occurred in the
+ 
+
+00:11:28.720 --> 00:11:30.870 align:start position:0%
+this value has already occurred in the
+current<00:11:29.120><c> square</c><00:11:29.600><c> that</c><00:11:29.760><c> we're</c><00:11:30.000><c> in</c><00:11:30.240><c> before</c><00:11:30.720><c> so</c>
+
+00:11:30.870 --> 00:11:30.880 align:start position:0%
+current square that we're in before so
+ 
+
+00:11:30.880 --> 00:11:32.710 align:start position:0%
+current square that we're in before so
+how<00:11:31.040><c> do</c><00:11:31.120><c> we</c><00:11:31.279><c> get</c><00:11:31.519><c> the</c><00:11:31.760><c> current</c><00:11:32.160><c> square</c><00:11:32.560><c> that</c>
+
+00:11:32.710 --> 00:11:32.720 align:start position:0%
+how do we get the current square that
+ 
+
+00:11:32.720 --> 00:11:35.750 align:start position:0%
+how do we get the current square that
+we're<00:11:32.959><c> in</c><00:11:33.600><c> uh</c><00:11:33.839><c> right</c><00:11:34.160><c> now</c><00:11:34.880><c> well</c>
+
+00:11:35.750 --> 00:11:35.760 align:start position:0%
+we're in uh right now well
+ 
+
+00:11:35.760 --> 00:11:37.509 align:start position:0%
+we're in uh right now well
+we<00:11:36.160><c> we</c><00:11:36.320><c> know</c><00:11:36.480><c> the</c><00:11:36.720><c> key</c><00:11:36.880><c> for</c><00:11:37.040><c> that</c><00:11:37.279><c> is</c><00:11:37.360><c> going</c><00:11:37.440><c> to</c>
+
+00:11:37.509 --> 00:11:37.519 align:start position:0%
+we we know the key for that is going to
+ 
+
+00:11:37.519 --> 00:11:40.150 align:start position:0%
+we we know the key for that is going to
+be<00:11:37.680><c> a</c><00:11:37.839><c> pair</c><00:11:38.160><c> of</c><00:11:38.240><c> values</c><00:11:38.720><c> basically</c><00:11:39.200><c> as</c><00:11:39.440><c> i</c><00:11:39.920><c> wrote</c>
+
+00:11:40.150 --> 00:11:40.160 align:start position:0%
+be a pair of values basically as i wrote
+ 
+
+00:11:40.160 --> 00:11:43.110 align:start position:0%
+be a pair of values basically as i wrote
+above<00:11:40.640><c> rho</c><00:11:40.880><c> divided</c><00:11:41.279><c> by</c><00:11:41.600><c> three</c><00:11:42.000><c> and</c><00:11:42.399><c> column</c>
+
+00:11:43.110 --> 00:11:43.120 align:start position:0%
+above rho divided by three and column
+ 
+
+00:11:43.120 --> 00:11:45.509 align:start position:0%
+above rho divided by three and column
+divided<00:11:43.519><c> by</c><00:11:43.839><c> three</c><00:11:44.320><c> so</c><00:11:44.480><c> that</c><00:11:44.720><c> tells</c><00:11:45.040><c> us</c><00:11:45.279><c> the</c>
+
+00:11:45.509 --> 00:11:45.519 align:start position:0%
+divided by three so that tells us the
+ 
+
+00:11:45.519 --> 00:11:47.990 align:start position:0%
+divided by three so that tells us the
+current<00:11:45.839><c> square</c><00:11:46.240><c> that</c><00:11:46.399><c> we're</c><00:11:46.640><c> in</c><00:11:47.279><c> and</c><00:11:47.839><c> this</c>
+
+00:11:47.990 --> 00:11:48.000 align:start position:0%
+current square that we're in and this
+ 
+
+00:11:48.000 --> 00:11:49.990 align:start position:0%
+current square that we're in and this
+will<00:11:48.240><c> return</c><00:11:48.640><c> a</c><00:11:48.959><c> set</c><00:11:49.279><c> as</c><00:11:49.440><c> you</c><00:11:49.600><c> can</c><00:11:49.680><c> see</c><00:11:49.839><c> up</c>
+
+00:11:49.990 --> 00:11:50.000 align:start position:0%
+will return a set as you can see up
+ 
+
+00:11:50.000 --> 00:11:52.389 align:start position:0%
+will return a set as you can see up
+above<00:11:50.399><c> of</c><00:11:50.639><c> all</c><00:11:50.880><c> the</c><00:11:51.040><c> values</c><00:11:51.680><c> that</c><00:11:51.839><c> we</c><00:11:52.079><c> have</c>
+
+00:11:52.389 --> 00:11:52.399 align:start position:0%
+above of all the values that we have
+ 
+
+00:11:52.399 --> 00:11:55.430 align:start position:0%
+above of all the values that we have
+seen<00:11:52.880><c> in</c><00:11:53.120><c> the</c><00:11:53.360><c> current</c><00:11:53.760><c> square</c><00:11:54.160><c> before</c><00:11:55.040><c> and</c><00:11:55.279><c> if</c>
+
+00:11:55.430 --> 00:11:55.440 align:start position:0%
+seen in the current square before and if
+ 
+
+00:11:55.440 --> 00:11:57.430 align:start position:0%
+seen in the current square before and if
+this<00:11:55.680><c> value</c><00:11:56.240><c> that</c><00:11:56.399><c> we're</c><00:11:56.639><c> at</c><00:11:56.800><c> right</c><00:11:56.959><c> now</c><00:11:57.200><c> is</c><00:11:57.360><c> a</c>
+
+00:11:57.430 --> 00:11:57.440 align:start position:0%
+this value that we're at right now is a
+ 
+
+00:11:57.440 --> 00:11:58.949 align:start position:0%
+this value that we're at right now is a
+duplicate<00:11:57.920><c> that</c><00:11:58.079><c> means</c><00:11:58.320><c> it's</c><00:11:58.480><c> already</c><00:11:58.800><c> going</c>
+
+00:11:58.949 --> 00:11:58.959 align:start position:0%
+duplicate that means it's already going
+ 
+
+00:11:58.959 --> 00:12:01.829 align:start position:0%
+duplicate that means it's already going
+to<00:11:59.040><c> be</c><00:11:59.279><c> in</c><00:11:59.839><c> this</c><00:12:00.320><c> this</c><00:12:00.720><c> hash</c><00:12:01.040><c> set</c><00:12:01.440><c> in</c><00:12:01.600><c> which</c>
+
+00:12:01.829 --> 00:12:01.839 align:start position:0%
+to be in this this hash set in which
+ 
+
+00:12:01.839 --> 00:12:04.069 align:start position:0%
+to be in this this hash set in which
+case<00:12:02.079><c> we</c><00:12:02.240><c> can</c><00:12:02.480><c> also</c><00:12:02.800><c> return</c><00:12:03.279><c> false</c><00:12:03.519><c> so</c><00:12:03.760><c> this</c><00:12:04.000><c> is</c>
+
+00:12:04.069 --> 00:12:04.079 align:start position:0%
+case we can also return false so this is
+ 
+
+00:12:04.079 --> 00:12:05.990 align:start position:0%
+case we can also return false so this is
+basically<00:12:04.560><c> our</c><00:12:04.720><c> way</c><00:12:04.959><c> of</c><00:12:05.120><c> validating</c><00:12:05.760><c> that</c>
+
+00:12:05.990 --> 00:12:06.000 align:start position:0%
+basically our way of validating that
+ 
+
+00:12:06.000 --> 00:12:08.629 align:start position:0%
+basically our way of validating that
+this<00:12:06.240><c> current</c><00:12:06.560><c> sudoku</c><00:12:07.040><c> board</c><00:12:07.360><c> is</c><00:12:07.519><c> valid</c><00:12:08.240><c> if</c><00:12:08.480><c> we</c>
+
+00:12:08.629 --> 00:12:08.639 align:start position:0%
+this current sudoku board is valid if we
+ 
+
+00:12:08.639 --> 00:12:10.150 align:start position:0%
+this current sudoku board is valid if we
+have<00:12:08.800><c> any</c><00:12:08.959><c> duplicates</c><00:12:09.440><c> that</c><00:12:09.519><c> means</c><00:12:09.760><c> it's</c><00:12:09.920><c> not</c>
+
+00:12:10.150 --> 00:12:10.160 align:start position:0%
+have any duplicates that means it's not
+ 
+
+00:12:10.160 --> 00:12:12.710 align:start position:0%
+have any duplicates that means it's not
+valid<00:12:10.480><c> we</c><00:12:10.639><c> return</c><00:12:11.040><c> false</c><00:12:11.360><c> if</c><00:12:11.519><c> it</c><00:12:11.760><c> is</c><00:12:11.920><c> valid</c><00:12:12.480><c> we</c>
+
+00:12:12.710 --> 00:12:12.720 align:start position:0%
+valid we return false if it is valid we
+ 
+
+00:12:12.720 --> 00:12:15.430 align:start position:0%
+valid we return false if it is valid we
+continue<00:12:13.680><c> and</c><00:12:13.920><c> we</c><00:12:14.079><c> basically</c><00:12:14.639><c> update</c><00:12:15.200><c> all</c>
+
+00:12:15.430 --> 00:12:15.440 align:start position:0%
+continue and we basically update all
+ 
+
+00:12:15.440 --> 00:12:17.990 align:start position:0%
+continue and we basically update all
+three<00:12:15.760><c> of</c><00:12:15.839><c> our</c><00:12:16.000><c> hash</c><00:12:16.320><c> maps</c><00:12:17.040><c> up</c><00:12:17.279><c> above</c><00:12:17.680><c> so</c>
+
+00:12:17.990 --> 00:12:18.000 align:start position:0%
+three of our hash maps up above so
+ 
+
+00:12:18.000 --> 00:12:19.990 align:start position:0%
+three of our hash maps up above so
+columns<00:12:18.800><c> of</c><00:12:19.040><c> the</c><00:12:19.200><c> current</c><00:12:19.519><c> column</c><00:12:19.839><c> we're</c>
+
+00:12:19.990 --> 00:12:20.000 align:start position:0%
+columns of the current column we're
+ 
+
+00:12:20.000 --> 00:12:22.069 align:start position:0%
+columns of the current column we're
+going<00:12:20.079><c> to</c><00:12:20.399><c> add</c><00:12:20.720><c> to</c><00:12:20.880><c> it</c><00:12:21.120><c> the</c><00:12:21.360><c> current</c><00:12:21.680><c> character</c>
+
+00:12:22.069 --> 00:12:22.079 align:start position:0%
+going to add to it the current character
+ 
+
+00:12:22.079 --> 00:12:24.069 align:start position:0%
+going to add to it the current character
+that<00:12:22.160><c> we</c><00:12:22.320><c> just</c><00:12:22.560><c> saw</c><00:12:23.360><c> and</c><00:12:23.600><c> we're</c><00:12:23.760><c> going</c><00:12:23.839><c> to</c><00:12:23.920><c> do</c>
+
+00:12:24.069 --> 00:12:24.079 align:start position:0%
+that we just saw and we're going to do
+ 
+
+00:12:24.079 --> 00:12:27.030 align:start position:0%
+that we just saw and we're going to do
+the<00:12:24.160><c> same</c><00:12:24.480><c> thing</c><00:12:25.120><c> with</c><00:12:25.600><c> the</c><00:12:26.000><c> current</c><00:12:26.560><c> row</c><00:12:26.880><c> that</c>
+
+00:12:27.030 --> 00:12:27.040 align:start position:0%
+the same thing with the current row that
+ 
+
+00:12:27.040 --> 00:12:29.190 align:start position:0%
+the same thing with the current row that
+we're<00:12:27.279><c> in</c><00:12:27.839><c> and</c><00:12:28.079><c> we're</c><00:12:28.320><c> going</c><00:12:28.399><c> to</c><00:12:28.480><c> do</c><00:12:28.639><c> the</c><00:12:28.800><c> exact</c>
+
+00:12:29.190 --> 00:12:29.200 align:start position:0%
+we're in and we're going to do the exact
+ 
+
+00:12:29.200 --> 00:12:30.710 align:start position:0%
+we're in and we're going to do the exact
+same<00:12:29.440><c> thing</c><00:12:29.680><c> with</c><00:12:29.839><c> the</c><00:12:30.000><c> current</c><00:12:30.320><c> square</c><00:12:30.639><c> that</c>
+
+00:12:30.710 --> 00:12:30.720 align:start position:0%
+same thing with the current square that
+ 
+
+00:12:30.720 --> 00:12:32.629 align:start position:0%
+same thing with the current square that
+we're<00:12:30.959><c> in</c><00:12:31.120><c> of</c><00:12:31.200><c> course</c><00:12:31.519><c> this</c><00:12:31.760><c> has</c><00:12:32.000><c> a</c><00:12:32.240><c> pair</c><00:12:32.480><c> of</c>
+
+00:12:32.629 --> 00:12:32.639 align:start position:0%
+we're in of course this has a pair of
+ 
+
+00:12:32.639 --> 00:12:35.829 align:start position:0%
+we're in of course this has a pair of
+values<00:12:33.360><c> as</c><00:12:33.680><c> the</c><00:12:34.000><c> key</c><00:12:34.720><c> so</c><00:12:34.959><c> this</c><00:12:35.200><c> makes</c><00:12:35.519><c> sure</c>
+
+00:12:35.829 --> 00:12:35.839 align:start position:0%
+values as the key so this makes sure
+ 
+
+00:12:35.839 --> 00:12:38.870 align:start position:0%
+values as the key so this makes sure
+that<00:12:36.079><c> our</c><00:12:36.320><c> hash</c><00:12:36.639><c> sets</c><00:12:37.040><c> are</c><00:12:37.279><c> updated</c><00:12:38.240><c> and</c><00:12:38.560><c> we'll</c>
+
+00:12:38.870 --> 00:12:38.880 align:start position:0%
+that our hash sets are updated and we'll
+ 
+
+00:12:38.880 --> 00:12:40.790 align:start position:0%
+that our hash sets are updated and we'll
+make<00:12:39.040><c> sure</c><00:12:39.279><c> to</c><00:12:39.519><c> detect</c><00:12:39.920><c> any</c><00:12:40.160><c> duplicates</c><00:12:40.639><c> when</c>
+
+00:12:40.790 --> 00:12:40.800 align:start position:0%
+make sure to detect any duplicates when
+ 
+
+00:12:40.800 --> 00:12:42.710 align:start position:0%
+make sure to detect any duplicates when
+we<00:12:40.959><c> get</c><00:12:41.120><c> to</c><00:12:41.279><c> the</c><00:12:41.440><c> next</c><00:12:41.680><c> iteration</c><00:12:42.320><c> of</c><00:12:42.399><c> the</c>
+
+00:12:42.710 --> 00:12:42.720 align:start position:0%
+we get to the next iteration of the
+ 
+
+00:12:42.720 --> 00:12:45.110 align:start position:0%
+we get to the next iteration of the
+loops<00:12:43.360><c> so</c><00:12:43.760><c> in</c><00:12:44.000><c> this</c><00:12:44.240><c> way</c><00:12:44.399><c> we're</c><00:12:44.639><c> iterating</c>
+
+00:12:45.110 --> 00:12:45.120 align:start position:0%
+loops so in this way we're iterating
+ 
+
+00:12:45.120 --> 00:12:47.670 align:start position:0%
+loops so in this way we're iterating
+over<00:12:45.360><c> the</c><00:12:45.519><c> entire</c><00:12:46.079><c> board</c><00:12:46.560><c> and</c><00:12:46.959><c> if</c><00:12:47.200><c> we</c><00:12:47.440><c> never</c>
+
+00:12:47.670 --> 00:12:47.680 align:start position:0%
+over the entire board and if we never
+ 
+
+00:12:47.680 --> 00:12:49.829 align:start position:0%
+over the entire board and if we never
+detect<00:12:48.160><c> any</c><00:12:48.320><c> duplicates</c><00:12:49.279><c> then</c><00:12:49.440><c> we</c><00:12:49.600><c> can</c>
+
+00:12:49.829 --> 00:12:49.839 align:start position:0%
+detect any duplicates then we can
+ 
+
+00:12:49.839 --> 00:12:51.670 align:start position:0%
+detect any duplicates then we can
+outside<00:12:50.240><c> of</c><00:12:50.320><c> the</c><00:12:50.480><c> loop</c><00:12:50.800><c> just</c><00:12:51.040><c> return</c><00:12:51.440><c> true</c>
+
+00:12:51.670 --> 00:12:51.680 align:start position:0%
+outside of the loop just return true
+ 
+
+00:12:51.680 --> 00:12:53.829 align:start position:0%
+outside of the loop just return true
+that<00:12:51.920><c> means</c><00:12:52.160><c> the</c><00:12:52.320><c> current</c><00:12:52.639><c> sudoku</c><00:12:53.120><c> board</c><00:12:53.680><c> with</c>
+
+00:12:53.829 --> 00:12:53.839 align:start position:0%
+that means the current sudoku board with
+ 
+
+00:12:53.839 --> 00:12:56.069 align:start position:0%
+that means the current sudoku board with
+the<00:12:54.079><c> current</c><00:12:54.399><c> values</c><00:12:54.800><c> populated</c><00:12:55.440><c> and</c><00:12:55.600><c> it</c><00:12:55.839><c> is</c>
+
+00:12:56.069 --> 00:12:56.079 align:start position:0%
+the current values populated and it is
+ 
+
+00:12:56.079 --> 00:12:58.790 align:start position:0%
+the current values populated and it is
+valid<00:12:56.800><c> as</c><00:12:56.959><c> you</c><00:12:57.120><c> can</c><00:12:57.279><c> see</c><00:12:57.680><c> the</c><00:12:57.920><c> solution</c><00:12:58.399><c> runs</c>
+
+00:12:58.790 --> 00:12:58.800 align:start position:0%
+valid as you can see the solution runs
+ 
+
+00:12:58.800 --> 00:13:00.870 align:start position:0%
+valid as you can see the solution runs
+and<00:12:58.959><c> is</c><00:12:59.120><c> pretty</c><00:12:59.519><c> efficient</c><00:13:00.320><c> so</c><00:13:00.480><c> i</c><00:13:00.560><c> hope</c><00:13:00.720><c> this</c>
+
+00:13:00.870 --> 00:13:00.880 align:start position:0%
+and is pretty efficient so i hope this
+ 
+
+00:13:00.880 --> 00:13:02.550 align:start position:0%
+and is pretty efficient so i hope this
+was<00:13:01.040><c> helpful</c><00:13:01.440><c> this</c><00:13:01.600><c> is</c><00:13:01.680><c> one</c><00:13:01.839><c> of</c><00:13:01.920><c> the</c><00:13:02.160><c> easier</c>
+
+00:13:02.550 --> 00:13:02.560 align:start position:0%
+was helpful this is one of the easier
+ 
+
+00:13:02.560 --> 00:13:04.710 align:start position:0%
+was helpful this is one of the easier
+ways<00:13:02.880><c> the</c><00:13:03.040><c> more</c><00:13:03.440><c> neat</c><00:13:03.680><c> ways</c><00:13:04.000><c> of</c><00:13:04.160><c> writing</c><00:13:04.480><c> this</c>
+
+00:13:04.710 --> 00:13:04.720 align:start position:0%
+ways the more neat ways of writing this
+ 
+
+00:13:04.720 --> 00:13:06.150 align:start position:0%
+ways the more neat ways of writing this
+code<00:13:05.040><c> of</c><00:13:05.120><c> course</c><00:13:05.279><c> there</c><00:13:05.519><c> are</c><00:13:05.680><c> some</c><00:13:05.920><c> more</c>
+
+00:13:06.150 --> 00:13:06.160 align:start position:0%
+code of course there are some more
+ 
+
+00:13:06.160 --> 00:13:08.629 align:start position:0%
+code of course there are some more
+complex<00:13:06.639><c> ways</c><00:13:07.040><c> as</c><00:13:07.200><c> well</c><00:13:07.760><c> but</c><00:13:07.920><c> i</c><00:13:08.000><c> think</c><00:13:08.160><c> this</c><00:13:08.399><c> is</c>
+
+00:13:08.629 --> 00:13:08.639 align:start position:0%
+complex ways as well but i think this is
+ 
+
+00:13:08.639 --> 00:13:11.590 align:start position:0%
+complex ways as well but i think this is
+fairly<00:13:09.120><c> readable</c><00:13:10.000><c> and</c><00:13:10.560><c> the</c><00:13:10.880><c> main</c><00:13:11.279><c> you</c><00:13:11.440><c> know</c>
+
+00:13:11.590 --> 00:13:11.600 align:start position:0%
+fairly readable and the main you know
+ 
+
+00:13:11.600 --> 00:13:13.509 align:start position:0%
+fairly readable and the main you know
+the<00:13:11.760><c> trick</c><00:13:12.079><c> that</c><00:13:12.240><c> we</c><00:13:12.399><c> use</c><00:13:12.639><c> is</c><00:13:12.800><c> just</c><00:13:13.040><c> this</c><00:13:13.200><c> whole</c>
+
+00:13:13.509 --> 00:13:13.519 align:start position:0%
+the trick that we use is just this whole
+ 
+
+00:13:13.519 --> 00:13:15.430 align:start position:0%
+the trick that we use is just this whole
+row<00:13:13.839><c> divided</c><00:13:14.240><c> by</c><00:13:14.399><c> three</c><00:13:14.639><c> column</c><00:13:14.959><c> divided</c><00:13:15.279><c> by</c>
+
+00:13:15.430 --> 00:13:15.440 align:start position:0%
+row divided by three column divided by
+ 
+
+00:13:15.440 --> 00:13:17.110 align:start position:0%
+row divided by three column divided by
+three<00:13:15.680><c> which</c><00:13:15.920><c> just</c><00:13:16.079><c> makes</c><00:13:16.320><c> the</c><00:13:16.480><c> code</c><00:13:16.720><c> a</c><00:13:16.880><c> lot</c>
+
+00:13:17.110 --> 00:13:17.120 align:start position:0%
+three which just makes the code a lot
+ 
+
+00:13:17.120 --> 00:13:19.269 align:start position:0%
+three which just makes the code a lot
+easier<00:13:17.519><c> in</c><00:13:17.680><c> my</c><00:13:17.839><c> opinion</c><00:13:18.560><c> so</c><00:13:18.720><c> i</c><00:13:18.800><c> hope</c><00:13:18.959><c> that</c><00:13:19.120><c> this</c>
+
+00:13:19.269 --> 00:13:19.279 align:start position:0%
+easier in my opinion so i hope that this
+ 
+
+00:13:19.279 --> 00:13:21.509 align:start position:0%
+easier in my opinion so i hope that this
+was<00:13:19.519><c> helpful</c><00:13:20.079><c> if</c><00:13:20.240><c> it</c><00:13:20.399><c> was</c><00:13:20.800><c> please</c><00:13:21.120><c> like</c><00:13:21.360><c> and</c>
+
+00:13:21.509 --> 00:13:21.519 align:start position:0%
+was helpful if it was please like and
+ 
+
+00:13:21.519 --> 00:13:23.910 align:start position:0%
+was helpful if it was please like and
+subscribe<00:13:22.079><c> it</c><00:13:22.240><c> supports</c><00:13:22.720><c> the</c><00:13:22.880><c> channel</c><00:13:23.360><c> a</c><00:13:23.519><c> lot</c>
+
+00:13:23.910 --> 00:13:23.920 align:start position:0%
+subscribe it supports the channel a lot
+ 
+
+00:13:23.920 --> 00:13:26.389 align:start position:0%
+subscribe it supports the channel a lot
+and<00:13:24.079><c> i'll</c><00:13:24.320><c> hopefully</c><00:13:25.120><c> see</c><00:13:25.279><c> you</c><00:13:25.519><c> pretty</c><00:13:25.760><c> soon</c>
+
+00:13:26.389 --> 00:13:26.399 align:start position:0%
+and i'll hopefully see you pretty soon
+ 
+
+00:13:26.399 --> 00:13:29.360 align:start position:0%
+and i'll hopefully see you pretty soon
+thanks<00:13:26.639><c> for</c><00:13:26.800><c> watching</c>
+

@@ -1,0 +1,4256 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.510 align:start position:0%
+ 
+hey<00:00:00.160><c> everyone</c><00:00:00.560><c> welcome</c><00:00:00.960><c> back</c><00:00:01.199><c> and</c><00:00:01.280><c> let's</c>
+
+00:00:01.510 --> 00:00:01.520 align:start position:0%
+hey everyone welcome back and let's
+ 
+
+00:00:01.520 --> 00:00:03.270 align:start position:0%
+hey everyone welcome back and let's
+write<00:00:01.680><c> some</c><00:00:01.839><c> more</c><00:00:02.080><c> neat</c><00:00:02.320><c> code</c><00:00:02.560><c> today</c><00:00:02.960><c> today</c>
+
+00:00:03.270 --> 00:00:03.280 align:start position:0%
+write some more neat code today today
+ 
+
+00:00:03.280 --> 00:00:04.390 align:start position:0%
+write some more neat code today today
+let's<00:00:03.520><c> solve</c><00:00:03.840><c> another</c>
+
+00:00:04.390 --> 00:00:04.400 align:start position:0%
+let's solve another
+ 
+
+00:00:04.400 --> 00:00:07.269 align:start position:0%
+let's solve another
+classic<00:00:05.200><c> dynamic</c><00:00:05.759><c> programming</c><00:00:06.319><c> problem</c><00:00:06.879><c> coin</c>
+
+00:00:07.269 --> 00:00:07.279 align:start position:0%
+classic dynamic programming problem coin
+ 
+
+00:00:07.279 --> 00:00:07.749 align:start position:0%
+classic dynamic programming problem coin
+change
+
+00:00:07.749 --> 00:00:07.759 align:start position:0%
+change
+ 
+
+00:00:07.759 --> 00:00:09.509 align:start position:0%
+change
+and<00:00:07.919><c> we</c><00:00:08.000><c> get</c><00:00:08.240><c> a</c><00:00:08.320><c> pretty</c><00:00:08.639><c> simple</c><00:00:09.280><c> uh</c>
+
+00:00:09.509 --> 00:00:09.519 align:start position:0%
+and we get a pretty simple uh
+ 
+
+00:00:09.519 --> 00:00:11.910 align:start position:0%
+and we get a pretty simple uh
+description<00:00:10.240><c> so</c><00:00:10.400><c> we're</c><00:00:10.639><c> given</c><00:00:11.040><c> a</c><00:00:11.280><c> list</c><00:00:11.679><c> of</c>
+
+00:00:11.910 --> 00:00:11.920 align:start position:0%
+description so we're given a list of
+ 
+
+00:00:11.920 --> 00:00:12.549 align:start position:0%
+description so we're given a list of
+coins
+
+00:00:12.549 --> 00:00:12.559 align:start position:0%
+coins
+ 
+
+00:00:12.559 --> 00:00:15.190 align:start position:0%
+coins
+of<00:00:12.880><c> different</c><00:00:13.519><c> values</c><00:00:14.240><c> and</c><00:00:14.400><c> we're</c><00:00:14.639><c> also</c><00:00:14.960><c> given</c>
+
+00:00:15.190 --> 00:00:15.200 align:start position:0%
+of different values and we're also given
+ 
+
+00:00:15.200 --> 00:00:16.550 align:start position:0%
+of different values and we're also given
+a<00:00:15.360><c> total</c><00:00:15.759><c> amount</c>
+
+00:00:16.550 --> 00:00:16.560 align:start position:0%
+a total amount
+ 
+
+00:00:16.560 --> 00:00:19.189 align:start position:0%
+a total amount
+of<00:00:16.800><c> money</c><00:00:17.119><c> that</c><00:00:17.199><c> we</c><00:00:17.359><c> want</c><00:00:17.520><c> to</c><00:00:17.760><c> sum</c><00:00:18.240><c> up</c><00:00:18.480><c> to</c><00:00:18.880><c> but</c>
+
+00:00:19.189 --> 00:00:19.199 align:start position:0%
+of money that we want to sum up to but
+ 
+
+00:00:19.199 --> 00:00:19.590 align:start position:0%
+of money that we want to sum up to but
+we
+
+00:00:19.590 --> 00:00:19.600 align:start position:0%
+we
+ 
+
+00:00:19.600 --> 00:00:22.870 align:start position:0%
+we
+want<00:00:19.840><c> to</c><00:00:20.080><c> use</c><00:00:20.480><c> the</c><00:00:20.800><c> fewest</c><00:00:21.520><c> number</c><00:00:22.000><c> of</c><00:00:22.320><c> coins</c>
+
+00:00:22.870 --> 00:00:22.880 align:start position:0%
+want to use the fewest number of coins
+ 
+
+00:00:22.880 --> 00:00:26.390 align:start position:0%
+want to use the fewest number of coins
+possible<00:00:23.519><c> to</c><00:00:23.760><c> make</c><00:00:24.240><c> up</c><00:00:24.560><c> or</c><00:00:24.720><c> to</c><00:00:25.039><c> sum</c><00:00:25.599><c> up</c><00:00:25.840><c> to</c><00:00:26.080><c> that</c>
+
+00:00:26.390 --> 00:00:26.400 align:start position:0%
+possible to make up or to sum up to that
+ 
+
+00:00:26.400 --> 00:00:26.950 align:start position:0%
+possible to make up or to sum up to that
+amount
+
+00:00:26.950 --> 00:00:26.960 align:start position:0%
+amount
+ 
+
+00:00:26.960 --> 00:00:29.189 align:start position:0%
+amount
+and<00:00:27.359><c> it's</c><00:00:27.760><c> possible</c><00:00:28.240><c> that</c><00:00:28.480><c> that</c><00:00:28.720><c> amount</c><00:00:29.039><c> of</c>
+
+00:00:29.189 --> 00:00:29.199 align:start position:0%
+and it's possible that that amount of
+ 
+
+00:00:29.199 --> 00:00:31.029 align:start position:0%
+and it's possible that that amount of
+money<00:00:29.599><c> cannot</c><00:00:30.160><c> be</c><00:00:30.400><c> made</c><00:00:30.720><c> up</c>
+
+00:00:31.029 --> 00:00:31.039 align:start position:0%
+money cannot be made up
+ 
+
+00:00:31.039 --> 00:00:33.270 align:start position:0%
+money cannot be made up
+with<00:00:31.279><c> any</c><00:00:31.599><c> combination</c><00:00:32.480><c> of</c><00:00:32.559><c> the</c><00:00:32.800><c> coins</c><00:00:33.120><c> that</c>
+
+00:00:33.270 --> 00:00:33.280 align:start position:0%
+with any combination of the coins that
+ 
+
+00:00:33.280 --> 00:00:34.069 align:start position:0%
+with any combination of the coins that
+we<00:00:33.520><c> have</c>
+
+00:00:34.069 --> 00:00:34.079 align:start position:0%
+we have
+ 
+
+00:00:34.079 --> 00:00:36.470 align:start position:0%
+we have
+and<00:00:34.239><c> then</c><00:00:34.480><c> we</c><00:00:34.640><c> want</c><00:00:34.800><c> to</c><00:00:34.960><c> return</c><00:00:35.680><c> negative</c><00:00:36.079><c> one</c>
+
+00:00:36.470 --> 00:00:36.480 align:start position:0%
+and then we want to return negative one
+ 
+
+00:00:36.480 --> 00:00:37.830 align:start position:0%
+and then we want to return negative one
+if<00:00:36.640><c> that's</c><00:00:36.960><c> the</c><00:00:37.120><c> case</c><00:00:37.520><c> and</c>
+
+00:00:37.830 --> 00:00:37.840 align:start position:0%
+if that's the case and
+ 
+
+00:00:37.840 --> 00:00:40.069 align:start position:0%
+if that's the case and
+luckily<00:00:38.320><c> for</c><00:00:38.640><c> us</c><00:00:38.879><c> we're</c><00:00:39.120><c> actually</c><00:00:39.520><c> given</c><00:00:39.840><c> an</c>
+
+00:00:40.069 --> 00:00:40.079 align:start position:0%
+luckily for us we're actually given an
+ 
+
+00:00:40.079 --> 00:00:42.150 align:start position:0%
+luckily for us we're actually given an
+infinite<00:00:40.559><c> number</c><00:00:40.960><c> of</c><00:00:41.120><c> each</c><00:00:41.440><c> coin</c><00:00:41.840><c> so</c>
+
+00:00:42.150 --> 00:00:42.160 align:start position:0%
+infinite number of each coin so
+ 
+
+00:00:42.160 --> 00:00:44.389 align:start position:0%
+infinite number of each coin so
+in<00:00:42.239><c> the</c><00:00:42.399><c> first</c><00:00:42.719><c> example</c><00:00:43.200><c> we</c><00:00:43.360><c> have</c><00:00:43.600><c> coins</c><00:00:44.239><c> of</c>
+
+00:00:44.389 --> 00:00:44.399 align:start position:0%
+in the first example we have coins of
+ 
+
+00:00:44.399 --> 00:00:45.430 align:start position:0%
+in the first example we have coins of
+value<00:00:44.960><c> 1</c>
+
+00:00:45.430 --> 00:00:45.440 align:start position:0%
+value 1
+ 
+
+00:00:45.440 --> 00:00:48.709 align:start position:0%
+value 1
+2<00:00:46.000><c> and</c><00:00:46.239><c> 5</c><00:00:46.879><c> and</c><00:00:47.039><c> we</c><00:00:47.200><c> have</c><00:00:47.440><c> infinite</c><00:00:48.000><c> quantities</c>
+
+00:00:48.709 --> 00:00:48.719 align:start position:0%
+2 and 5 and we have infinite quantities
+ 
+
+00:00:48.719 --> 00:00:50.790 align:start position:0%
+2 and 5 and we have infinite quantities
+of<00:00:48.879><c> these</c><00:00:49.200><c> coins</c><00:00:49.840><c> the</c><00:00:50.000><c> amount</c><00:00:50.399><c> that</c><00:00:50.559><c> we</c><00:00:50.640><c> want</c>
+
+00:00:50.790 --> 00:00:50.800 align:start position:0%
+of these coins the amount that we want
+ 
+
+00:00:50.800 --> 00:00:51.750 align:start position:0%
+of these coins the amount that we want
+to<00:00:50.960><c> sum</c><00:00:51.199><c> up</c><00:00:51.360><c> to</c>
+
+00:00:51.750 --> 00:00:51.760 align:start position:0%
+to sum up to
+ 
+
+00:00:51.760 --> 00:00:54.549 align:start position:0%
+to sum up to
+is<00:00:52.000><c> 11</c><00:00:52.800><c> and</c><00:00:53.280><c> basically</c><00:00:53.760><c> you</c><00:00:53.920><c> know</c><00:00:54.079><c> just</c><00:00:54.320><c> look</c>
+
+00:00:54.549 --> 00:00:54.559 align:start position:0%
+is 11 and basically you know just look
+ 
+
+00:00:54.559 --> 00:00:55.029 align:start position:0%
+is 11 and basically you know just look
+at<00:00:54.640><c> this</c>
+
+00:00:55.029 --> 00:00:55.039 align:start position:0%
+at this
+ 
+
+00:00:55.039 --> 00:00:56.869 align:start position:0%
+at this
+what's<00:00:55.360><c> the</c><00:00:55.600><c> fewest</c><00:00:56.000><c> number</c><00:00:56.239><c> of</c><00:00:56.399><c> coins</c><00:00:56.719><c> we</c>
+
+00:00:56.869 --> 00:00:56.879 align:start position:0%
+what's the fewest number of coins we
+ 
+
+00:00:56.879 --> 00:00:58.069 align:start position:0%
+what's the fewest number of coins we
+could<00:00:57.039><c> do</c><00:00:57.520><c> well</c>
+
+00:00:58.069 --> 00:00:58.079 align:start position:0%
+could do well
+ 
+
+00:00:58.079 --> 00:00:59.670 align:start position:0%
+could do well
+of<00:00:58.160><c> course</c><00:00:58.399><c> we</c><00:00:58.559><c> want</c><00:00:58.719><c> to</c><00:00:58.800><c> use</c><00:00:59.039><c> a</c><00:00:59.199><c> five</c><00:00:59.520><c> because</c>
+
+00:00:59.670 --> 00:00:59.680 align:start position:0%
+of course we want to use a five because
+ 
+
+00:00:59.680 --> 00:01:02.069 align:start position:0%
+of course we want to use a five because
+it's<00:00:59.920><c> the</c><00:01:00.000><c> biggest</c><00:01:00.399><c> one</c><00:01:01.039><c> we</c><00:01:01.120><c> can</c><00:01:01.280><c> use</c><00:01:01.520><c> another</c>
+
+00:01:02.069 --> 00:01:02.079 align:start position:0%
+it's the biggest one we can use another
+ 
+
+00:01:02.079 --> 00:01:02.709 align:start position:0%
+it's the biggest one we can use another
+five
+
+00:01:02.709 --> 00:01:02.719 align:start position:0%
+five
+ 
+
+00:01:02.719 --> 00:01:05.350 align:start position:0%
+five
+and<00:01:03.199><c> then</c><00:01:03.359><c> we</c><00:01:03.520><c> just</c><00:01:03.760><c> need</c><00:01:04.080><c> a</c><00:01:04.320><c> one</c><00:01:04.640><c> left</c><00:01:05.119><c> if</c><00:01:05.199><c> we</c>
+
+00:01:05.350 --> 00:01:05.360 align:start position:0%
+and then we just need a one left if we
+ 
+
+00:01:05.360 --> 00:01:06.789 align:start position:0%
+and then we just need a one left if we
+want<00:01:05.519><c> to</c><00:01:05.600><c> sum</c><00:01:05.840><c> up</c><00:01:06.000><c> to</c><00:01:06.159><c> 11.</c>
+
+00:01:06.789 --> 00:01:06.799 align:start position:0%
+want to sum up to 11.
+ 
+
+00:01:06.799 --> 00:01:08.630 align:start position:0%
+want to sum up to 11.
+so<00:01:07.040><c> in</c><00:01:07.200><c> this</c><00:01:07.360><c> case</c><00:01:07.600><c> you</c><00:01:07.760><c> can</c><00:01:07.920><c> see</c><00:01:08.159><c> we</c><00:01:08.320><c> only</c>
+
+00:01:08.630 --> 00:01:08.640 align:start position:0%
+so in this case you can see we only
+ 
+
+00:01:08.640 --> 00:01:10.230 align:start position:0%
+so in this case you can see we only
+needed<00:01:09.200><c> three</c><00:01:09.680><c> coins</c>
+
+00:01:10.230 --> 00:01:10.240 align:start position:0%
+needed three coins
+ 
+
+00:01:10.240 --> 00:01:12.469 align:start position:0%
+needed three coins
+these<00:01:10.640><c> this</c><00:01:10.880><c> is</c><00:01:11.040><c> the</c><00:01:11.520><c> fewest</c><00:01:11.840><c> number</c><00:01:12.080><c> of</c><00:01:12.240><c> coins</c>
+
+00:01:12.469 --> 00:01:12.479 align:start position:0%
+these this is the fewest number of coins
+ 
+
+00:01:12.479 --> 00:01:14.469 align:start position:0%
+these this is the fewest number of coins
+we<00:01:12.640><c> needed</c><00:01:12.960><c> so</c><00:01:13.200><c> we</c><00:01:13.280><c> can</c><00:01:13.520><c> return</c>
+
+00:01:14.469 --> 00:01:14.479 align:start position:0%
+we needed so we can return
+ 
+
+00:01:14.479 --> 00:01:17.510 align:start position:0%
+we needed so we can return
+three<00:01:15.040><c> in</c><00:01:15.200><c> the</c><00:01:15.360><c> second</c><00:01:15.759><c> example</c><00:01:16.720><c> we</c><00:01:17.119><c> have</c><00:01:17.360><c> a</c>
+
+00:01:17.510 --> 00:01:17.520 align:start position:0%
+three in the second example we have a
+ 
+
+00:01:17.520 --> 00:01:18.710 align:start position:0%
+three in the second example we have a
+coin<00:01:17.759><c> of</c><00:01:17.840><c> value</c><00:01:18.320><c> two</c>
+
+00:01:18.710 --> 00:01:18.720 align:start position:0%
+coin of value two
+ 
+
+00:01:18.720 --> 00:01:20.550 align:start position:0%
+coin of value two
+but<00:01:18.880><c> we</c><00:01:19.040><c> want</c><00:01:19.200><c> to</c><00:01:19.280><c> sum</c><00:01:19.520><c> up</c><00:01:19.600><c> to</c><00:01:19.840><c> three</c><00:01:20.240><c> we</c><00:01:20.400><c> can</c>
+
+00:01:20.550 --> 00:01:20.560 align:start position:0%
+but we want to sum up to three we can
+ 
+
+00:01:20.560 --> 00:01:22.550 align:start position:0%
+but we want to sum up to three we can
+try<00:01:20.880><c> two</c><00:01:21.119><c> plus</c><00:01:21.439><c> two</c><00:01:21.680><c> but</c><00:01:21.840><c> we</c><00:01:22.000><c> know</c><00:01:22.159><c> that's</c>
+
+00:01:22.550 --> 00:01:22.560 align:start position:0%
+try two plus two but we know that's
+ 
+
+00:01:22.560 --> 00:01:25.270 align:start position:0%
+try two plus two but we know that's
+four<00:01:22.880><c> so</c><00:01:23.040><c> we</c><00:01:23.200><c> went</c><00:01:23.600><c> over</c><00:01:24.000><c> three</c><00:01:24.479><c> so</c><00:01:24.799><c> there's</c><00:01:25.040><c> no</c>
+
+00:01:25.270 --> 00:01:25.280 align:start position:0%
+four so we went over three so there's no
+ 
+
+00:01:25.280 --> 00:01:26.230 align:start position:0%
+four so we went over three so there's no
+way<00:01:25.920><c> to</c>
+
+00:01:26.230 --> 00:01:26.240 align:start position:0%
+way to
+ 
+
+00:01:26.240 --> 00:01:29.190 align:start position:0%
+way to
+possibly<00:01:26.880><c> sum</c><00:01:27.200><c> up</c><00:01:27.439><c> to</c><00:01:27.680><c> three</c><00:01:28.159><c> so</c><00:01:28.400><c> we</c><00:01:28.640><c> return</c>
+
+00:01:29.190 --> 00:01:29.200 align:start position:0%
+possibly sum up to three so we return
+ 
+
+00:01:29.200 --> 00:01:30.710 align:start position:0%
+possibly sum up to three so we return
+negative<00:01:29.600><c> one</c><00:01:29.759><c> there's</c><00:01:30.000><c> no</c><00:01:30.240><c> possible</c>
+
+00:01:30.710 --> 00:01:30.720 align:start position:0%
+negative one there's no possible
+ 
+
+00:01:30.720 --> 00:01:31.350 align:start position:0%
+negative one there's no possible
+solution
+
+00:01:31.350 --> 00:01:31.360 align:start position:0%
+solution
+ 
+
+00:01:31.360 --> 00:01:34.390 align:start position:0%
+solution
+so<00:01:31.600><c> your</c><00:01:31.920><c> first</c><00:01:32.400><c> idea</c><00:01:32.960><c> might</c><00:01:33.200><c> be</c><00:01:33.520><c> can</c><00:01:33.840><c> we</c><00:01:34.079><c> just</c>
+
+00:01:34.390 --> 00:01:34.400 align:start position:0%
+so your first idea might be can we just
+ 
+
+00:01:34.400 --> 00:01:34.710 align:start position:0%
+so your first idea might be can we just
+be
+
+00:01:34.710 --> 00:01:34.720 align:start position:0%
+be
+ 
+
+00:01:34.720 --> 00:01:37.590 align:start position:0%
+be
+greedy<00:01:35.360><c> is</c><00:01:35.520><c> the</c><00:01:35.680><c> problem</c><00:01:36.240><c> that</c><00:01:36.640><c> easy</c><00:01:37.040><c> can</c><00:01:37.280><c> we</c>
+
+00:01:37.590 --> 00:01:37.600 align:start position:0%
+greedy is the problem that easy can we
+ 
+
+00:01:37.600 --> 00:01:37.990 align:start position:0%
+greedy is the problem that easy can we
+just
+
+00:01:37.990 --> 00:01:38.000 align:start position:0%
+just
+ 
+
+00:01:38.000 --> 00:01:40.149 align:start position:0%
+just
+be<00:01:38.240><c> greedy</c><00:01:38.799><c> and</c><00:01:39.040><c> let's</c><00:01:39.200><c> look</c><00:01:39.360><c> at</c><00:01:39.439><c> this</c><00:01:39.680><c> example</c>
+
+00:01:40.149 --> 00:01:40.159 align:start position:0%
+be greedy and let's look at this example
+ 
+
+00:01:40.159 --> 00:01:42.230 align:start position:0%
+be greedy and let's look at this example
+so<00:01:40.320><c> let's</c><00:01:40.479><c> say</c><00:01:40.720><c> these</c><00:01:41.040><c> are</c><00:01:41.200><c> our</c><00:01:41.439><c> coins</c><00:01:41.920><c> one</c>
+
+00:01:42.230 --> 00:01:42.240 align:start position:0%
+so let's say these are our coins one
+ 
+
+00:01:42.240 --> 00:01:42.630 align:start position:0%
+so let's say these are our coins one
+three
+
+00:01:42.630 --> 00:01:42.640 align:start position:0%
+three
+ 
+
+00:01:42.640 --> 00:01:45.990 align:start position:0%
+three
+four<00:01:43.040><c> five</c><00:01:43.759><c> and</c><00:01:43.920><c> we</c><00:01:44.079><c> want</c><00:01:44.320><c> to</c><00:01:44.479><c> sum</c><00:01:44.720><c> up</c><00:01:45.119><c> to</c><00:01:45.439><c> seven</c>
+
+00:01:45.990 --> 00:01:46.000 align:start position:0%
+four five and we want to sum up to seven
+ 
+
+00:01:46.000 --> 00:01:48.630 align:start position:0%
+four five and we want to sum up to seven
+so<00:01:46.159><c> when</c><00:01:46.399><c> i</c><00:01:46.560><c> say</c><00:01:46.880><c> greedy</c><00:01:47.360><c> i</c><00:01:47.520><c> mean</c><00:01:48.159><c> okay</c><00:01:48.479><c> we</c>
+
+00:01:48.630 --> 00:01:48.640 align:start position:0%
+so when i say greedy i mean okay we
+ 
+
+00:01:48.640 --> 00:01:50.550 align:start position:0%
+so when i say greedy i mean okay we
+wanna<00:01:48.880><c> sum</c><00:01:49.119><c> up</c><00:01:49.200><c> to</c><00:01:49.360><c> seven</c><00:01:49.680><c> let's</c><00:01:49.840><c> just</c><00:01:50.159><c> start</c>
+
+00:01:50.550 --> 00:01:50.560 align:start position:0%
+wanna sum up to seven let's just start
+ 
+
+00:01:50.560 --> 00:01:52.710 align:start position:0%
+wanna sum up to seven let's just start
+at<00:01:50.799><c> the</c><00:01:51.119><c> biggest</c><00:01:51.680><c> coin</c><00:01:52.000><c> we</c><00:01:52.240><c> have</c>
+
+00:01:52.710 --> 00:01:52.720 align:start position:0%
+at the biggest coin we have
+ 
+
+00:01:52.720 --> 00:01:55.990 align:start position:0%
+at the biggest coin we have
+so<00:01:52.880><c> let's</c><00:01:53.119><c> start</c><00:01:53.520><c> at</c><00:01:53.920><c> five</c><00:01:54.720><c> so</c><00:01:55.360><c> now</c><00:01:55.520><c> let's</c><00:01:55.759><c> look</c>
+
+00:01:55.990 --> 00:01:56.000 align:start position:0%
+so let's start at five so now let's look
+ 
+
+00:01:56.000 --> 00:01:57.190 align:start position:0%
+so let's start at five so now let's look
+at<00:01:56.159><c> the</c><00:01:56.240><c> biggest</c><00:01:56.560><c> coin</c><00:01:56.799><c> again</c>
+
+00:01:57.190 --> 00:01:57.200 align:start position:0%
+at the biggest coin again
+ 
+
+00:01:57.200 --> 00:01:59.670 align:start position:0%
+at the biggest coin again
+five<00:01:57.680><c> if</c><00:01:57.759><c> we</c><00:01:58.000><c> add</c><00:01:58.240><c> a</c><00:01:58.399><c> five</c><00:01:58.799><c> here</c><00:01:59.119><c> we</c><00:01:59.280><c> know</c><00:01:59.439><c> we're</c>
+
+00:01:59.670 --> 00:01:59.680 align:start position:0%
+five if we add a five here we know we're
+ 
+
+00:01:59.680 --> 00:02:00.709 align:start position:0%
+five if we add a five here we know we're
+going<00:02:00.159><c> over</c>
+
+00:02:00.709 --> 00:02:00.719 align:start position:0%
+going over
+ 
+
+00:02:00.719 --> 00:02:02.789 align:start position:0%
+going over
+we're<00:02:00.880><c> going</c><00:02:01.119><c> over</c><00:02:01.600><c> the</c><00:02:01.840><c> total</c><00:02:02.159><c> amount</c><00:02:02.479><c> seven</c>
+
+00:02:02.789 --> 00:02:02.799 align:start position:0%
+we're going over the total amount seven
+ 
+
+00:02:02.799 --> 00:02:05.030 align:start position:0%
+we're going over the total amount seven
+right<00:02:02.960><c> so</c><00:02:03.119><c> we</c><00:02:03.280><c> don't</c><00:02:03.520><c> add</c><00:02:03.759><c> another</c><00:02:04.399><c> five</c>
+
+00:02:05.030 --> 00:02:05.040 align:start position:0%
+right so we don't add another five
+ 
+
+00:02:05.040 --> 00:02:06.870 align:start position:0%
+right so we don't add another five
+well<00:02:05.280><c> let's</c><00:02:05.439><c> look</c><00:02:05.680><c> at</c><00:02:05.759><c> the</c><00:02:05.920><c> four</c><00:02:06.240><c> well</c><00:02:06.399><c> we</c><00:02:06.560><c> know</c>
+
+00:02:06.870 --> 00:02:06.880 align:start position:0%
+well let's look at the four well we know
+ 
+
+00:02:06.880 --> 00:02:08.150 align:start position:0%
+well let's look at the four well we know
+five<00:02:07.200><c> plus</c><00:02:07.520><c> 4</c><00:02:07.920><c> is</c>
+
+00:02:08.150 --> 00:02:08.160 align:start position:0%
+five plus 4 is
+ 
+
+00:02:08.160 --> 00:02:11.190 align:start position:0%
+five plus 4 is
+also<00:02:08.560><c> going</c><00:02:08.720><c> to</c><00:02:08.800><c> be</c><00:02:09.200><c> more</c><00:02:09.440><c> than</c><00:02:09.679><c> 7</c><00:02:10.399><c> 5</c><00:02:10.800><c> plus</c>
+
+00:02:11.190 --> 00:02:11.200 align:start position:0%
+also going to be more than 7 5 plus
+ 
+
+00:02:11.200 --> 00:02:13.750 align:start position:0%
+also going to be more than 7 5 plus
+3<00:02:11.599><c> is</c><00:02:11.760><c> going</c><00:02:11.840><c> to</c><00:02:11.920><c> be</c><00:02:12.080><c> more</c><00:02:12.239><c> than</c><00:02:12.560><c> 7.</c><00:02:13.200><c> okay</c><00:02:13.599><c> but</c>
+
+00:02:13.750 --> 00:02:13.760 align:start position:0%
+3 is going to be more than 7. okay but
+ 
+
+00:02:13.760 --> 00:02:15.910 align:start position:0%
+3 is going to be more than 7. okay but
+we<00:02:13.920><c> found</c><00:02:14.160><c> a</c><00:02:14.319><c> 1.</c><00:02:14.640><c> luckily</c><00:02:15.120><c> we</c><00:02:15.200><c> have</c><00:02:15.360><c> a</c><00:02:15.520><c> 1.</c><00:02:15.760><c> so</c>
+
+00:02:15.910 --> 00:02:15.920 align:start position:0%
+we found a 1. luckily we have a 1. so
+ 
+
+00:02:15.920 --> 00:02:17.990 align:start position:0%
+we found a 1. luckily we have a 1. so
+let's<00:02:16.239><c> add</c><00:02:16.560><c> 1</c><00:02:16.800><c> to</c><00:02:17.040><c> it</c><00:02:17.200><c> now</c><00:02:17.360><c> we're</c><00:02:17.599><c> at</c>
+
+00:02:17.990 --> 00:02:18.000 align:start position:0%
+let's add 1 to it now we're at
+ 
+
+00:02:18.000 --> 00:02:21.270 align:start position:0%
+let's add 1 to it now we're at
+6.<00:02:18.640><c> so</c><00:02:18.800><c> let's</c><00:02:19.120><c> add</c><00:02:19.440><c> a</c><00:02:19.840><c> second</c><00:02:20.319><c> one</c>
+
+00:02:21.270 --> 00:02:21.280 align:start position:0%
+6. so let's add a second one
+ 
+
+00:02:21.280 --> 00:02:24.309 align:start position:0%
+6. so let's add a second one
+now<00:02:21.520><c> we</c><00:02:21.680><c> got</c><00:02:22.239><c> to</c><00:02:22.400><c> the</c><00:02:22.640><c> sum</c><00:02:23.280><c> seven</c><00:02:23.920><c> so</c><00:02:24.160><c> we</c>
+
+00:02:24.309 --> 00:02:24.319 align:start position:0%
+now we got to the sum seven so we
+ 
+
+00:02:24.319 --> 00:02:25.830 align:start position:0%
+now we got to the sum seven so we
+basically<00:02:24.879><c> went</c><00:02:25.200><c> down</c>
+
+00:02:25.830 --> 00:02:25.840 align:start position:0%
+basically went down
+ 
+
+00:02:25.840 --> 00:02:28.470 align:start position:0%
+basically went down
+from<00:02:26.080><c> the</c><00:02:26.319><c> biggest</c><00:02:27.040><c> smallest</c><00:02:27.680><c> coin</c><00:02:28.000><c> values</c>
+
+00:02:28.470 --> 00:02:28.480 align:start position:0%
+from the biggest smallest coin values
+ 
+
+00:02:28.480 --> 00:02:29.910 align:start position:0%
+from the biggest smallest coin values
+right<00:02:28.640><c> that's</c><00:02:28.879><c> what</c><00:02:29.040><c> i</c><00:02:29.200><c> mean</c><00:02:29.360><c> when</c><00:02:29.520><c> i</c><00:02:29.599><c> say</c>
+
+00:02:29.910 --> 00:02:29.920 align:start position:0%
+right that's what i mean when i say
+ 
+
+00:02:29.920 --> 00:02:31.830 align:start position:0%
+right that's what i mean when i say
+greedy<00:02:30.319><c> let's</c><00:02:30.560><c> pick</c><00:02:30.800><c> the</c><00:02:31.040><c> biggest</c><00:02:31.519><c> one</c>
+
+00:02:31.830 --> 00:02:31.840 align:start position:0%
+greedy let's pick the biggest one
+ 
+
+00:02:31.840 --> 00:02:32.550 align:start position:0%
+greedy let's pick the biggest one
+possible
+
+00:02:32.550 --> 00:02:32.560 align:start position:0%
+possible
+ 
+
+00:02:32.560 --> 00:02:36.150 align:start position:0%
+possible
+first<00:02:33.440><c> so</c><00:02:33.840><c> notice</c><00:02:34.480><c> that</c><00:02:34.800><c> this</c><00:02:35.200><c> took</c><00:02:35.519><c> us</c>
+
+00:02:36.150 --> 00:02:36.160 align:start position:0%
+first so notice that this took us
+ 
+
+00:02:36.160 --> 00:02:39.509 align:start position:0%
+first so notice that this took us
+three<00:02:37.040><c> coin</c><00:02:37.760><c> values</c><00:02:38.319><c> right</c><00:02:38.480><c> so</c><00:02:38.720><c> our</c><00:02:38.879><c> result</c><00:02:39.360><c> in</c>
+
+00:02:39.509 --> 00:02:39.519 align:start position:0%
+three coin values right so our result in
+ 
+
+00:02:39.519 --> 00:02:41.110 align:start position:0%
+three coin values right so our result in
+this<00:02:39.680><c> case</c><00:02:40.000><c> would</c><00:02:40.160><c> be</c><00:02:40.400><c> three</c><00:02:40.720><c> but</c>
+
+00:02:41.110 --> 00:02:41.120 align:start position:0%
+this case would be three but
+ 
+
+00:02:41.120 --> 00:02:44.309 align:start position:0%
+this case would be three but
+is<00:02:41.519><c> that</c><00:02:41.840><c> the</c><00:02:42.160><c> minimum</c><00:02:42.800><c> amount</c><00:02:43.200><c> of</c><00:02:43.440><c> coins</c><00:02:44.080><c> the</c>
+
+00:02:44.309 --> 00:02:44.319 align:start position:0%
+is that the minimum amount of coins the
+ 
+
+00:02:44.319 --> 00:02:45.430 align:start position:0%
+is that the minimum amount of coins the
+answer<00:02:44.959><c> is</c>
+
+00:02:45.430 --> 00:02:45.440 align:start position:0%
+answer is
+ 
+
+00:02:45.440 --> 00:02:48.390 align:start position:0%
+answer is
+no<00:02:46.160><c> because</c><00:02:47.040><c> you</c><00:02:47.120><c> know</c><00:02:47.360><c> just</c><00:02:47.680><c> looking</c><00:02:48.000><c> at</c><00:02:48.239><c> it</c>
+
+00:02:48.390 --> 00:02:48.400 align:start position:0%
+no because you know just looking at it
+ 
+
+00:02:48.400 --> 00:02:49.270 align:start position:0%
+no because you know just looking at it
+we<00:02:48.560><c> can</c><00:02:48.879><c> tell</c>
+
+00:02:49.270 --> 00:02:49.280 align:start position:0%
+we can tell
+ 
+
+00:02:49.280 --> 00:02:52.470 align:start position:0%
+we can tell
+we<00:02:49.440><c> got</c><00:02:49.680><c> a</c><00:02:50.000><c> three</c><00:02:50.959><c> and</c><00:02:51.360><c> we</c><00:02:51.599><c> have</c><00:02:52.080><c> a</c>
+
+00:02:52.470 --> 00:02:52.480 align:start position:0%
+we got a three and we have a
+ 
+
+00:02:52.480 --> 00:02:55.990 align:start position:0%
+we got a three and we have a
+four<00:02:53.360><c> three</c><00:02:53.760><c> plus</c><00:02:54.160><c> four</c><00:02:54.720><c> is</c><00:02:55.120><c> seven</c>
+
+00:02:55.990 --> 00:02:56.000 align:start position:0%
+four three plus four is seven
+ 
+
+00:02:56.000 --> 00:02:58.390 align:start position:0%
+four three plus four is seven
+that<00:02:56.239><c> means</c><00:02:56.720><c> the</c><00:02:56.959><c> minimum</c><00:02:57.440><c> amount</c><00:02:57.760><c> of</c><00:02:57.920><c> coins</c>
+
+00:02:58.390 --> 00:02:58.400 align:start position:0%
+that means the minimum amount of coins
+ 
+
+00:02:58.400 --> 00:02:59.270 align:start position:0%
+that means the minimum amount of coins
+is<00:02:58.640><c> actually</c>
+
+00:02:59.270 --> 00:02:59.280 align:start position:0%
+is actually
+ 
+
+00:02:59.280 --> 00:03:02.149 align:start position:0%
+is actually
+two<00:02:59.760><c> so</c><00:03:00.000><c> this</c><00:03:00.239><c> is</c><00:03:00.400><c> a</c><00:03:00.640><c> counter</c><00:03:01.040><c> example</c><00:03:01.840><c> we</c>
+
+00:03:02.149 --> 00:03:02.159 align:start position:0%
+two so this is a counter example we
+ 
+
+00:03:02.159 --> 00:03:03.270 align:start position:0%
+two so this is a counter example we
+cannot<00:03:02.959><c> be</c>
+
+00:03:03.270 --> 00:03:03.280 align:start position:0%
+cannot be
+ 
+
+00:03:03.280 --> 00:03:05.750 align:start position:0%
+cannot be
+greedy<00:03:04.000><c> if</c><00:03:04.080><c> we</c><00:03:04.239><c> want</c><00:03:04.400><c> to</c><00:03:04.560><c> solve</c><00:03:04.959><c> it</c><00:03:05.360><c> so</c><00:03:05.519><c> the</c>
+
+00:03:05.750 --> 00:03:05.760 align:start position:0%
+greedy if we want to solve it so the
+ 
+
+00:03:05.760 --> 00:03:07.990 align:start position:0%
+greedy if we want to solve it so the
+next<00:03:06.080><c> thing</c><00:03:06.319><c> you</c><00:03:06.480><c> might</c><00:03:06.720><c> try</c><00:03:07.040><c> is</c><00:03:07.120><c> like</c><00:03:07.360><c> a</c><00:03:07.519><c> brute</c>
+
+00:03:07.990 --> 00:03:08.000 align:start position:0%
+next thing you might try is like a brute
+ 
+
+00:03:08.000 --> 00:03:10.309 align:start position:0%
+next thing you might try is like a brute
+force<00:03:08.319><c> solution</c><00:03:08.879><c> right</c><00:03:09.200><c> so</c><00:03:09.440><c> to</c><00:03:09.680><c> do</c><00:03:09.840><c> the</c><00:03:10.000><c> brute</c>
+
+00:03:10.309 --> 00:03:10.319 align:start position:0%
+force solution right so to do the brute
+ 
+
+00:03:10.319 --> 00:03:12.229 align:start position:0%
+force solution right so to do the brute
+force<00:03:10.560><c> solution</c><00:03:11.040><c> we</c><00:03:11.200><c> need</c><00:03:11.360><c> to</c><00:03:11.599><c> implement</c>
+
+00:03:12.229 --> 00:03:12.239 align:start position:0%
+force solution we need to implement
+ 
+
+00:03:12.239 --> 00:03:14.550 align:start position:0%
+force solution we need to implement
+some<00:03:12.480><c> kind</c><00:03:12.800><c> of</c><00:03:13.040><c> depth</c><00:03:13.360><c> first</c><00:03:13.680><c> search</c><00:03:14.159><c> or</c>
+
+00:03:14.550 --> 00:03:14.560 align:start position:0%
+some kind of depth first search or
+ 
+
+00:03:14.560 --> 00:03:16.070 align:start position:0%
+some kind of depth first search or
+backtracking<00:03:15.440><c> solution</c>
+
+00:03:16.070 --> 00:03:16.080 align:start position:0%
+backtracking solution
+ 
+
+00:03:16.080 --> 00:03:18.470 align:start position:0%
+backtracking solution
+right<00:03:16.560><c> so</c><00:03:16.800><c> let's</c><00:03:17.040><c> look</c><00:03:17.280><c> at</c><00:03:17.360><c> the</c><00:03:17.599><c> same</c><00:03:17.920><c> example</c>
+
+00:03:18.470 --> 00:03:18.480 align:start position:0%
+right so let's look at the same example
+ 
+
+00:03:18.480 --> 00:03:19.430 align:start position:0%
+right so let's look at the same example
+one<00:03:18.800><c> three</c><00:03:19.120><c> four</c>
+
+00:03:19.430 --> 00:03:19.440 align:start position:0%
+one three four
+ 
+
+00:03:19.440 --> 00:03:22.309 align:start position:0%
+one three four
+five<00:03:19.840><c> and</c><00:03:20.080><c> amount</c><00:03:20.640><c> sum</c><00:03:20.959><c> to</c><00:03:21.200><c> seven</c><00:03:21.840><c> so</c><00:03:22.080><c> what</c>
+
+00:03:22.309 --> 00:03:22.319 align:start position:0%
+five and amount sum to seven so what
+ 
+
+00:03:22.319 --> 00:03:24.309 align:start position:0%
+five and amount sum to seven so what
+would<00:03:22.560><c> a</c><00:03:22.720><c> backtracking</c><00:03:23.519><c> solution</c>
+
+00:03:24.309 --> 00:03:24.319 align:start position:0%
+would a backtracking solution
+ 
+
+00:03:24.319 --> 00:03:26.630 align:start position:0%
+would a backtracking solution
+even<00:03:24.799><c> look</c><00:03:25.120><c> like</c><00:03:25.360><c> for</c><00:03:25.599><c> this</c><00:03:25.920><c> problem</c><00:03:26.400><c> well</c>
+
+00:03:26.630 --> 00:03:26.640 align:start position:0%
+even look like for this problem well
+ 
+
+00:03:26.640 --> 00:03:28.710 align:start position:0%
+even look like for this problem well
+it's<00:03:26.799><c> gonna</c><00:03:27.040><c> be</c><00:03:27.280><c> brute</c><00:03:27.680><c> force</c><00:03:28.080><c> right</c><00:03:28.319><c> so</c>
+
+00:03:28.710 --> 00:03:28.720 align:start position:0%
+it's gonna be brute force right so
+ 
+
+00:03:28.720 --> 00:03:31.270 align:start position:0%
+it's gonna be brute force right so
+so<00:03:28.959><c> we</c><00:03:29.120><c> have</c><00:03:29.440><c> four</c><00:03:29.920><c> coin</c><00:03:30.319><c> values</c><00:03:30.959><c> so</c><00:03:31.120><c> that</c>
+
+00:03:31.270 --> 00:03:31.280 align:start position:0%
+so we have four coin values so that
+ 
+
+00:03:31.280 --> 00:03:33.670 align:start position:0%
+so we have four coin values so that
+means<00:03:31.680><c> in</c><00:03:31.840><c> our</c><00:03:32.000><c> decision</c><00:03:32.640><c> tree</c><00:03:32.879><c> we</c><00:03:33.040><c> have</c><00:03:33.360><c> four</c>
+
+00:03:33.670 --> 00:03:33.680 align:start position:0%
+means in our decision tree we have four
+ 
+
+00:03:33.680 --> 00:03:35.110 align:start position:0%
+means in our decision tree we have four
+possible<00:03:34.319><c> choices</c>
+
+00:03:35.110 --> 00:03:35.120 align:start position:0%
+possible choices
+ 
+
+00:03:35.120 --> 00:03:37.750 align:start position:0%
+possible choices
+we<00:03:35.280><c> can</c><00:03:35.519><c> choose</c><00:03:35.840><c> a</c><00:03:36.080><c> one</c><00:03:36.720><c> we</c><00:03:36.879><c> can</c><00:03:37.120><c> choose</c><00:03:37.440><c> a</c>
+
+00:03:37.750 --> 00:03:37.760 align:start position:0%
+we can choose a one we can choose a
+ 
+
+00:03:37.760 --> 00:03:38.470 align:start position:0%
+we can choose a one we can choose a
+three
+
+00:03:38.470 --> 00:03:38.480 align:start position:0%
+three
+ 
+
+00:03:38.480 --> 00:03:41.670 align:start position:0%
+three
+we<00:03:38.640><c> can</c><00:03:38.799><c> choose</c><00:03:39.200><c> a</c><00:03:39.519><c> four</c><00:03:40.239><c> or</c><00:03:40.480><c> we</c><00:03:40.640><c> can</c><00:03:40.879><c> choose</c><00:03:41.440><c> a</c>
+
+00:03:41.670 --> 00:03:41.680 align:start position:0%
+we can choose a four or we can choose a
+ 
+
+00:03:41.680 --> 00:03:42.309 align:start position:0%
+we can choose a four or we can choose a
+five
+
+00:03:42.309 --> 00:03:42.319 align:start position:0%
+five
+ 
+
+00:03:42.319 --> 00:03:45.190 align:start position:0%
+five
+in<00:03:42.560><c> this</c><00:03:42.879><c> case</c><00:03:43.200><c> the</c><00:03:43.440><c> remaining</c><00:03:44.159><c> amount</c><00:03:44.959><c> would</c>
+
+00:03:45.190 --> 00:03:45.200 align:start position:0%
+in this case the remaining amount would
+ 
+
+00:03:45.200 --> 00:03:46.630 align:start position:0%
+in this case the remaining amount would
+be<00:03:45.920><c> six</c>
+
+00:03:46.630 --> 00:03:46.640 align:start position:0%
+be six
+ 
+
+00:03:46.640 --> 00:03:49.589 align:start position:0%
+be six
+because<00:03:47.040><c> seven</c><00:03:47.360><c> minus</c><00:03:48.159><c> one</c><00:03:48.560><c> is</c><00:03:48.799><c> six</c><00:03:49.200><c> in</c><00:03:49.360><c> this</c>
+
+00:03:49.589 --> 00:03:49.599 align:start position:0%
+because seven minus one is six in this
+ 
+
+00:03:49.599 --> 00:03:51.350 align:start position:0%
+because seven minus one is six in this
+case<00:03:49.920><c> the</c><00:03:50.080><c> remaining</c><00:03:50.720><c> amount</c><00:03:51.040><c> that</c><00:03:51.120><c> we</c><00:03:51.280><c> have</c>
+
+00:03:51.350 --> 00:03:51.360 align:start position:0%
+case the remaining amount that we have
+ 
+
+00:03:51.360 --> 00:03:52.309 align:start position:0%
+case the remaining amount that we have
+to<00:03:51.519><c> compute</c>
+
+00:03:52.309 --> 00:03:52.319 align:start position:0%
+to compute
+ 
+
+00:03:52.319 --> 00:03:55.670 align:start position:0%
+to compute
+would<00:03:52.480><c> be</c><00:03:52.879><c> four</c><00:03:53.599><c> because</c><00:03:54.480><c> we're</c><00:03:54.640><c> taking</c><00:03:55.120><c> seven</c>
+
+00:03:55.670 --> 00:03:55.680 align:start position:0%
+would be four because we're taking seven
+ 
+
+00:03:55.680 --> 00:03:58.789 align:start position:0%
+would be four because we're taking seven
+minus<00:03:56.239><c> three</c><00:03:56.959><c> which</c><00:03:57.360><c> is</c><00:03:57.920><c> the</c><00:03:58.159><c> coin</c><00:03:58.480><c> that</c><00:03:58.640><c> we</c>
+
+00:03:58.789 --> 00:03:58.799 align:start position:0%
+minus three which is the coin that we
+ 
+
+00:03:58.799 --> 00:03:59.589 align:start position:0%
+minus three which is the coin that we
+chose
+
+00:03:59.589 --> 00:03:59.599 align:start position:0%
+chose
+ 
+
+00:03:59.599 --> 00:04:02.149 align:start position:0%
+chose
+so<00:04:00.000><c> we</c><00:04:00.159><c> get</c><00:04:00.560><c> four</c><00:04:00.879><c> as</c><00:04:01.040><c> the</c><00:04:01.200><c> remaining</c><00:04:01.680><c> amount</c>
+
+00:04:02.149 --> 00:04:02.159 align:start position:0%
+so we get four as the remaining amount
+ 
+
+00:04:02.159 --> 00:04:02.789 align:start position:0%
+so we get four as the remaining amount
+right
+
+00:04:02.789 --> 00:04:02.799 align:start position:0%
+right
+ 
+
+00:04:02.799 --> 00:04:05.589 align:start position:0%
+right
+in<00:04:02.959><c> this</c><00:04:03.280><c> case</c><00:04:03.599><c> we</c><00:04:03.760><c> would</c><00:04:04.000><c> have</c><00:04:04.239><c> a</c><00:04:04.560><c> three</c><00:04:05.360><c> and</c>
+
+00:04:05.589 --> 00:04:05.599 align:start position:0%
+in this case we would have a three and
+ 
+
+00:04:05.599 --> 00:04:07.589 align:start position:0%
+in this case we would have a three and
+in<00:04:05.760><c> this</c><00:04:06.000><c> case</c><00:04:06.319><c> we</c><00:04:06.480><c> would</c><00:04:06.640><c> have</c><00:04:06.799><c> a</c><00:04:06.959><c> remaining</c>
+
+00:04:07.589 --> 00:04:07.599 align:start position:0%
+in this case we would have a remaining
+ 
+
+00:04:07.599 --> 00:04:08.309 align:start position:0%
+in this case we would have a remaining
+amount<00:04:08.000><c> of</c>
+
+00:04:08.309 --> 00:04:08.319 align:start position:0%
+amount of
+ 
+
+00:04:08.319 --> 00:04:11.750 align:start position:0%
+amount of
+two<00:04:09.040><c> so</c><00:04:09.680><c> since</c><00:04:10.159><c> none</c><00:04:10.400><c> of</c><00:04:10.480><c> these</c><00:04:10.720><c> are</c><00:04:11.040><c> zero</c>
+
+00:04:11.750 --> 00:04:11.760 align:start position:0%
+two so since none of these are zero
+ 
+
+00:04:11.760 --> 00:04:14.390 align:start position:0%
+two so since none of these are zero
+once<00:04:12.080><c> we</c><00:04:12.239><c> get</c><00:04:12.400><c> to</c><00:04:12.640><c> zero</c><00:04:13.040><c> we</c><00:04:13.280><c> know</c><00:04:13.439><c> that</c><00:04:14.000><c> that</c>
+
+00:04:14.390 --> 00:04:14.400 align:start position:0%
+once we get to zero we know that that
+ 
+
+00:04:14.400 --> 00:04:15.509 align:start position:0%
+once we get to zero we know that that
+we've<00:04:14.720><c> computed</c>
+
+00:04:15.509 --> 00:04:15.519 align:start position:0%
+we've computed
+ 
+
+00:04:15.519 --> 00:04:18.150 align:start position:0%
+we've computed
+the<00:04:15.680><c> total</c><00:04:16.000><c> amount</c><00:04:16.400><c> that</c><00:04:16.560><c> we</c><00:04:16.799><c> want</c><00:04:17.680><c> but</c><00:04:17.919><c> right</c>
+
+00:04:18.150 --> 00:04:18.160 align:start position:0%
+the total amount that we want but right
+ 
+
+00:04:18.160 --> 00:04:20.229 align:start position:0%
+the total amount that we want but right
+now<00:04:18.400><c> we</c><00:04:18.560><c> have</c><00:04:18.720><c> to</c><00:04:19.040><c> continue</c><00:04:19.600><c> going</c><00:04:19.919><c> right</c><00:04:20.079><c> we</c>
+
+00:04:20.229 --> 00:04:20.239 align:start position:0%
+now we have to continue going right we
+ 
+
+00:04:20.239 --> 00:04:21.830 align:start position:0%
+now we have to continue going right we
+have<00:04:20.320><c> to</c><00:04:20.400><c> continue</c><00:04:20.799><c> doing</c><00:04:21.040><c> the</c><00:04:21.199><c> brute</c><00:04:21.519><c> force</c>
+
+00:04:21.830 --> 00:04:21.840 align:start position:0%
+have to continue doing the brute force
+ 
+
+00:04:21.840 --> 00:04:22.469 align:start position:0%
+have to continue doing the brute force
+approach
+
+00:04:22.469 --> 00:04:22.479 align:start position:0%
+approach
+ 
+
+00:04:22.479 --> 00:04:25.590 align:start position:0%
+approach
+let's<00:04:22.800><c> start</c><00:04:23.040><c> at</c><00:04:23.280><c> this</c><00:04:23.600><c> side</c><00:04:24.000><c> right</c><00:04:24.240><c> now</c><00:04:25.120><c> so</c><00:04:25.360><c> we</c>
+
+00:04:25.590 --> 00:04:25.600 align:start position:0%
+let's start at this side right now so we
+ 
+
+00:04:25.600 --> 00:04:26.230 align:start position:0%
+let's start at this side right now so we
+still<00:04:25.919><c> have</c>
+
+00:04:26.230 --> 00:04:26.240 align:start position:0%
+still have
+ 
+
+00:04:26.240 --> 00:04:27.990 align:start position:0%
+still have
+four<00:04:26.560><c> coins</c><00:04:26.880><c> right</c><00:04:27.040><c> we</c><00:04:27.199><c> have</c><00:04:27.360><c> unlimited</c>
+
+00:04:27.990 --> 00:04:28.000 align:start position:0%
+four coins right we have unlimited
+ 
+
+00:04:28.000 --> 00:04:29.510 align:start position:0%
+four coins right we have unlimited
+quantity<00:04:28.479><c> so</c><00:04:28.639><c> we</c><00:04:28.800><c> can</c><00:04:29.040><c> choose</c>
+
+00:04:29.510 --> 00:04:29.520 align:start position:0%
+quantity so we can choose
+ 
+
+00:04:29.520 --> 00:04:31.749 align:start position:0%
+quantity so we can choose
+the<00:04:29.680><c> coin</c><00:04:30.080><c> one</c><00:04:30.400><c> we</c><00:04:30.560><c> can</c><00:04:30.720><c> choose</c><00:04:31.040><c> a</c><00:04:31.280><c> three</c><00:04:31.600><c> we</c>
+
+00:04:31.749 --> 00:04:31.759 align:start position:0%
+the coin one we can choose a three we
+ 
+
+00:04:31.759 --> 00:04:32.790 align:start position:0%
+the coin one we can choose a three we
+can<00:04:31.919><c> choose</c><00:04:32.160><c> a</c><00:04:32.400><c> four</c>
+
+00:04:32.790 --> 00:04:32.800 align:start position:0%
+can choose a four
+ 
+
+00:04:32.800 --> 00:04:35.430 align:start position:0%
+can choose a four
+or<00:04:33.040><c> we</c><00:04:33.199><c> can</c><00:04:33.360><c> choose</c><00:04:33.759><c> a</c><00:04:34.000><c> five</c><00:04:34.639><c> if</c><00:04:34.800><c> we</c><00:04:35.040><c> choose</c><00:04:35.280><c> a</c>
+
+00:04:35.430 --> 00:04:35.440 align:start position:0%
+or we can choose a five if we choose a
+ 
+
+00:04:35.440 --> 00:04:37.510 align:start position:0%
+or we can choose a five if we choose a
+one<00:04:35.680><c> we'll</c><00:04:35.840><c> have</c><00:04:36.080><c> a</c><00:04:36.160><c> remaining</c><00:04:36.720><c> amount</c><00:04:37.199><c> of</c>
+
+00:04:37.510 --> 00:04:37.520 align:start position:0%
+one we'll have a remaining amount of
+ 
+
+00:04:37.520 --> 00:04:40.390 align:start position:0%
+one we'll have a remaining amount of
+one<00:04:38.320><c> if</c><00:04:38.479><c> we</c><00:04:38.639><c> choose</c><00:04:38.880><c> a</c><00:04:39.120><c> three</c><00:04:39.840><c> we're</c><00:04:40.080><c> going</c><00:04:40.240><c> to</c>
+
+00:04:40.390 --> 00:04:40.400 align:start position:0%
+one if we choose a three we're going to
+ 
+
+00:04:40.400 --> 00:04:41.189 align:start position:0%
+one if we choose a three we're going to
+get<00:04:40.720><c> a</c>
+
+00:04:41.189 --> 00:04:41.199 align:start position:0%
+get a
+ 
+
+00:04:41.199 --> 00:04:44.469 align:start position:0%
+get a
+negative<00:04:41.680><c> one</c><00:04:42.240><c> what</c><00:04:42.479><c> does</c><00:04:42.720><c> that</c><00:04:43.120><c> tell</c><00:04:43.440><c> us</c><00:04:44.160><c> that</c>
+
+00:04:44.469 --> 00:04:44.479 align:start position:0%
+negative one what does that tell us that
+ 
+
+00:04:44.479 --> 00:04:45.270 align:start position:0%
+negative one what does that tell us that
+tells<00:04:44.800><c> us</c>
+
+00:04:45.270 --> 00:04:45.280 align:start position:0%
+tells us
+ 
+
+00:04:45.280 --> 00:04:49.189 align:start position:0%
+tells us
+if<00:04:45.520><c> we</c><00:04:45.759><c> chose</c><00:04:46.479><c> a</c><00:04:46.800><c> five</c><00:04:47.280><c> coin</c><00:04:48.080><c> and</c><00:04:48.320><c> we</c><00:04:48.560><c> chose</c><00:04:48.960><c> a</c>
+
+00:04:49.189 --> 00:04:49.199 align:start position:0%
+if we chose a five coin and we chose a
+ 
+
+00:04:49.199 --> 00:04:50.150 align:start position:0%
+if we chose a five coin and we chose a
+three<00:04:49.600><c> coin</c>
+
+00:04:50.150 --> 00:04:50.160 align:start position:0%
+three coin
+ 
+
+00:04:50.160 --> 00:04:52.870 align:start position:0%
+three coin
+then<00:04:50.400><c> we</c><00:04:50.560><c> get</c><00:04:50.800><c> to</c><00:04:50.960><c> a</c><00:04:51.280><c> negative</c><00:04:51.840><c> value</c><00:04:52.560><c> that</c>
+
+00:04:52.870 --> 00:04:52.880 align:start position:0%
+then we get to a negative value that
+ 
+
+00:04:52.880 --> 00:04:53.510 align:start position:0%
+then we get to a negative value that
+means
+
+00:04:53.510 --> 00:04:53.520 align:start position:0%
+means
+ 
+
+00:04:53.520 --> 00:04:56.950 align:start position:0%
+means
+five<00:04:53.919><c> plus</c><00:04:54.240><c> three</c><00:04:54.880><c> cannot</c><00:04:55.520><c> be</c><00:04:56.000><c> the</c><00:04:56.160><c> amount</c>
+
+00:04:56.950 --> 00:04:56.960 align:start position:0%
+five plus three cannot be the amount
+ 
+
+00:04:56.960 --> 00:04:59.350 align:start position:0%
+five plus three cannot be the amount
+so<00:04:57.199><c> we</c><00:04:57.600><c> don't</c><00:04:57.840><c> have</c><00:04:58.000><c> to</c><00:04:58.160><c> keep</c><00:04:58.479><c> searching</c><00:04:59.040><c> here</c>
+
+00:04:59.350 --> 00:04:59.360 align:start position:0%
+so we don't have to keep searching here
+ 
+
+00:04:59.360 --> 00:05:01.430 align:start position:0%
+so we don't have to keep searching here
+we<00:04:59.440><c> can</c><00:04:59.759><c> stop</c><00:05:00.160><c> right</c><00:05:00.320><c> we</c><00:05:00.479><c> got</c><00:05:00.639><c> to</c><00:05:00.800><c> a</c><00:05:00.960><c> negative</c>
+
+00:05:01.430 --> 00:05:01.440 align:start position:0%
+we can stop right we got to a negative
+ 
+
+00:05:01.440 --> 00:05:02.230 align:start position:0%
+we can stop right we got to a negative
+value
+
+00:05:02.230 --> 00:05:02.240 align:start position:0%
+value
+ 
+
+00:05:02.240 --> 00:05:04.469 align:start position:0%
+value
+if<00:05:02.400><c> we</c><00:05:02.639><c> keep</c><00:05:03.039><c> adding</c><00:05:03.520><c> values</c><00:05:03.919><c> to</c><00:05:04.080><c> it</c><00:05:04.160><c> it's</c><00:05:04.320><c> just</c>
+
+00:05:04.469 --> 00:05:04.479 align:start position:0%
+if we keep adding values to it it's just
+ 
+
+00:05:04.479 --> 00:05:05.990 align:start position:0%
+if we keep adding values to it it's just
+going<00:05:04.639><c> to</c><00:05:04.720><c> become</c><00:05:05.199><c> more</c><00:05:05.440><c> and</c><00:05:05.600><c> more</c>
+
+00:05:05.990 --> 00:05:06.000 align:start position:0%
+going to become more and more
+ 
+
+00:05:06.000 --> 00:05:08.070 align:start position:0%
+going to become more and more
+negative<00:05:06.479><c> right</c><00:05:06.960><c> and</c><00:05:07.199><c> you</c><00:05:07.360><c> can</c><00:05:07.600><c> probably</c>
+
+00:05:08.070 --> 00:05:08.080 align:start position:0%
+negative right and you can probably
+ 
+
+00:05:08.080 --> 00:05:09.029 align:start position:0%
+negative right and you can probably
+notice<00:05:08.560><c> that</c>
+
+00:05:09.029 --> 00:05:09.039 align:start position:0%
+notice that
+ 
+
+00:05:09.039 --> 00:05:11.670 align:start position:0%
+notice that
+since<00:05:09.360><c> these</c><00:05:09.600><c> values</c><00:05:10.080><c> are</c><00:05:10.240><c> even</c><00:05:10.639><c> greater</c><00:05:11.360><c> 2</c>
+
+00:05:11.670 --> 00:05:11.680 align:start position:0%
+since these values are even greater 2
+ 
+
+00:05:11.680 --> 00:05:13.430 align:start position:0%
+since these values are even greater 2
+minus<00:05:11.919><c> 4</c><00:05:12.160><c> is</c><00:05:12.320><c> going</c><00:05:12.400><c> to</c><00:05:12.479><c> be</c><00:05:12.639><c> negative</c><00:05:13.120><c> 2</c>
+
+00:05:13.430 --> 00:05:13.440 align:start position:0%
+minus 4 is going to be negative 2
+ 
+
+00:05:13.440 --> 00:05:16.710 align:start position:0%
+minus 4 is going to be negative 2
+2<00:05:13.680><c> minus</c><00:05:14.080><c> 5</c><00:05:14.400><c> is</c><00:05:14.479><c> going</c><00:05:14.639><c> to</c><00:05:14.720><c> be</c><00:05:15.039><c> negative</c><00:05:15.759><c> 3.</c><00:05:16.400><c> so</c>
+
+00:05:16.710 --> 00:05:16.720 align:start position:0%
+2 minus 5 is going to be negative 3. so
+ 
+
+00:05:16.720 --> 00:05:19.510 align:start position:0%
+2 minus 5 is going to be negative 3. so
+we<00:05:16.960><c> can't</c><00:05:17.280><c> go</c><00:05:17.520><c> down</c><00:05:17.919><c> these</c><00:05:18.400><c> paths</c><00:05:19.039><c> either</c><00:05:19.360><c> we</c>
+
+00:05:19.510 --> 00:05:19.520 align:start position:0%
+we can't go down these paths either we
+ 
+
+00:05:19.520 --> 00:05:20.230 align:start position:0%
+we can't go down these paths either we
+don't<00:05:19.759><c> have</c><00:05:19.919><c> to</c>
+
+00:05:20.230 --> 00:05:20.240 align:start position:0%
+don't have to
+ 
+
+00:05:20.240 --> 00:05:23.189 align:start position:0%
+don't have to
+search<00:05:20.560><c> them</c><00:05:20.880><c> anymore</c><00:05:21.919><c> and</c><00:05:22.160><c> so</c><00:05:22.479><c> now</c><00:05:22.880><c> here</c>
+
+00:05:23.189 --> 00:05:23.199 align:start position:0%
+search them anymore and so now here
+ 
+
+00:05:23.199 --> 00:05:24.230 align:start position:0%
+search them anymore and so now here
+we're<00:05:23.360><c> gonna</c><00:05:23.600><c> see</c>
+
+00:05:24.230 --> 00:05:24.240 align:start position:0%
+we're gonna see
+ 
+
+00:05:24.240 --> 00:05:27.510 align:start position:0%
+we're gonna see
+okay<00:05:24.720><c> we</c><00:05:24.880><c> can</c><00:05:25.120><c> choose</c><00:05:25.840><c> a</c><00:05:26.160><c> one</c><00:05:26.479><c> coin</c><00:05:27.039><c> of</c><00:05:27.199><c> course</c>
+
+00:05:27.510 --> 00:05:27.520 align:start position:0%
+okay we can choose a one coin of course
+ 
+
+00:05:27.520 --> 00:05:28.390 align:start position:0%
+okay we can choose a one coin of course
+we<00:05:27.680><c> can</c><00:05:27.840><c> choose</c><00:05:28.160><c> a</c>
+
+00:05:28.390 --> 00:05:28.400 align:start position:0%
+we can choose a
+ 
+
+00:05:28.400 --> 00:05:31.510 align:start position:0%
+we can choose a
+three<00:05:29.199><c> four</c><00:05:29.600><c> and</c><00:05:29.840><c> five</c><00:05:30.160><c> but</c><00:05:30.320><c> we</c><00:05:30.479><c> can</c><00:05:30.800><c> see</c><00:05:31.120><c> from</c>
+
+00:05:31.510 --> 00:05:31.520 align:start position:0%
+three four and five but we can see from
+ 
+
+00:05:31.520 --> 00:05:31.909 align:start position:0%
+three four and five but we can see from
+here
+
+00:05:31.909 --> 00:05:31.919 align:start position:0%
+here
+ 
+
+00:05:31.919 --> 00:05:33.909 align:start position:0%
+here
+that<00:05:32.080><c> that's</c><00:05:32.479><c> not</c><00:05:32.720><c> gonna</c><00:05:33.039><c> work</c><00:05:33.360><c> that's</c><00:05:33.600><c> gonna</c>
+
+00:05:33.909 --> 00:05:33.919 align:start position:0%
+that that's not gonna work that's gonna
+ 
+
+00:05:33.919 --> 00:05:35.350 align:start position:0%
+that that's not gonna work that's gonna
+lead<00:05:34.160><c> us</c><00:05:34.320><c> to</c><00:05:34.479><c> a</c><00:05:34.800><c> negative</c>
+
+00:05:35.350 --> 00:05:35.360 align:start position:0%
+lead us to a negative
+ 
+
+00:05:35.360 --> 00:05:38.390 align:start position:0%
+lead us to a negative
+value<00:05:35.919><c> anyway</c><00:05:37.039><c> if</c><00:05:37.199><c> we</c><00:05:37.440><c> choose</c><00:05:37.680><c> a</c><00:05:38.000><c> one</c>
+
+00:05:38.390 --> 00:05:38.400 align:start position:0%
+value anyway if we choose a one
+ 
+
+00:05:38.400 --> 00:05:40.790 align:start position:0%
+value anyway if we choose a one
+over<00:05:38.720><c> here</c><00:05:39.600><c> then</c><00:05:39.840><c> we</c><00:05:40.080><c> know</c><00:05:40.240><c> we're</c><00:05:40.400><c> going</c><00:05:40.479><c> to</c>
+
+00:05:40.790 --> 00:05:40.800 align:start position:0%
+over here then we know we're going to
+ 
+
+00:05:40.800 --> 00:05:42.710 align:start position:0%
+over here then we know we're going to
+finally<00:05:41.280><c> get</c><00:05:41.520><c> to</c><00:05:41.759><c> a</c><00:05:42.000><c> zero</c>
+
+00:05:42.710 --> 00:05:42.720 align:start position:0%
+finally get to a zero
+ 
+
+00:05:42.720 --> 00:05:45.350 align:start position:0%
+finally get to a zero
+so<00:05:43.039><c> this</c><00:05:43.280><c> is</c><00:05:43.440><c> what</c><00:05:43.600><c> we</c><00:05:43.919><c> want</c><00:05:44.320><c> right</c><00:05:44.560><c> we</c><00:05:44.800><c> took</c><00:05:45.039><c> a</c>
+
+00:05:45.350 --> 00:05:45.360 align:start position:0%
+so this is what we want right we took a
+ 
+
+00:05:45.360 --> 00:05:45.990 align:start position:0%
+so this is what we want right we took a
+five
+
+00:05:45.990 --> 00:05:46.000 align:start position:0%
+five
+ 
+
+00:05:46.000 --> 00:05:48.790 align:start position:0%
+five
+from<00:05:46.240><c> up</c><00:05:46.479><c> here</c><00:05:47.120><c> we</c><00:05:47.280><c> took</c><00:05:47.520><c> a</c><00:05:47.840><c> one</c><00:05:48.320><c> from</c><00:05:48.560><c> over</c>
+
+00:05:48.790 --> 00:05:48.800 align:start position:0%
+from up here we took a one from over
+ 
+
+00:05:48.800 --> 00:05:49.189 align:start position:0%
+from up here we took a one from over
+here
+
+00:05:49.189 --> 00:05:49.199 align:start position:0%
+here
+ 
+
+00:05:49.199 --> 00:05:52.070 align:start position:0%
+here
+and<00:05:49.440><c> we</c><00:05:49.600><c> took</c><00:05:49.840><c> a</c><00:05:50.080><c> third</c><00:05:50.479><c> one</c><00:05:50.800><c> right</c><00:05:51.360><c> so</c><00:05:51.600><c> then</c><00:05:51.919><c> if</c>
+
+00:05:52.070 --> 00:05:52.080 align:start position:0%
+and we took a third one right so then if
+ 
+
+00:05:52.080 --> 00:05:52.550 align:start position:0%
+and we took a third one right so then if
+we
+
+00:05:52.550 --> 00:05:52.560 align:start position:0%
+we
+ 
+
+00:05:52.560 --> 00:05:55.670 align:start position:0%
+we
+count<00:05:53.440><c> how</c><00:05:53.680><c> many</c><00:05:54.479><c> coins</c><00:05:54.800><c> we</c><00:05:55.120><c> chose</c>
+
+00:05:55.670 --> 00:05:55.680 align:start position:0%
+count how many coins we chose
+ 
+
+00:05:55.680 --> 00:05:59.350 align:start position:0%
+count how many coins we chose
+down<00:05:56.000><c> this</c><00:05:56.400><c> path</c><00:05:57.120><c> we</c><00:05:57.520><c> know</c><00:05:58.319><c> we</c><00:05:58.639><c> get</c><00:05:58.960><c> three</c>
+
+00:05:59.350 --> 00:05:59.360 align:start position:0%
+down this path we know we get three
+ 
+
+00:05:59.360 --> 00:06:00.390 align:start position:0%
+down this path we know we get three
+coins<00:05:59.840><c> right</c>
+
+00:06:00.390 --> 00:06:00.400 align:start position:0%
+coins right
+ 
+
+00:06:00.400 --> 00:06:02.629 align:start position:0%
+coins right
+and<00:06:00.880><c> we</c><00:06:01.039><c> get</c><00:06:01.199><c> to</c><00:06:01.440><c> a</c><00:06:01.520><c> zero</c><00:06:01.919><c> so</c><00:06:02.160><c> of</c><00:06:02.240><c> course</c><00:06:02.479><c> we</c>
+
+00:06:02.629 --> 00:06:02.639 align:start position:0%
+and we get to a zero so of course we
+ 
+
+00:06:02.639 --> 00:06:04.629 align:start position:0%
+and we get to a zero so of course we
+don't<00:06:02.800><c> have</c><00:06:02.880><c> to</c><00:06:03.039><c> keep</c><00:06:03.280><c> searching</c><00:06:03.759><c> anymore</c>
+
+00:06:04.629 --> 00:06:04.639 align:start position:0%
+don't have to keep searching anymore
+ 
+
+00:06:04.639 --> 00:06:07.510 align:start position:0%
+don't have to keep searching anymore
+so<00:06:04.880><c> we</c><00:06:05.199><c> found</c><00:06:05.680><c> one</c><00:06:06.240><c> possible</c><00:06:06.800><c> way</c><00:06:07.120><c> where</c><00:06:07.280><c> we</c>
+
+00:06:07.510 --> 00:06:07.520 align:start position:0%
+so we found one possible way where we
+ 
+
+00:06:07.520 --> 00:06:07.909 align:start position:0%
+so we found one possible way where we
+can
+
+00:06:07.909 --> 00:06:07.919 align:start position:0%
+can
+ 
+
+00:06:07.919 --> 00:06:10.469 align:start position:0%
+can
+sum<00:06:08.400><c> up</c><00:06:08.560><c> to</c><00:06:08.720><c> the</c><00:06:08.880><c> amount</c><00:06:09.680><c> seven</c><00:06:10.000><c> we</c><00:06:10.160><c> know</c><00:06:10.400><c> it</c>
+
+00:06:10.469 --> 00:06:10.479 align:start position:0%
+sum up to the amount seven we know it
+ 
+
+00:06:10.479 --> 00:06:11.909 align:start position:0%
+sum up to the amount seven we know it
+has<00:06:10.720><c> three</c><00:06:11.120><c> coins</c><00:06:11.440><c> which</c>
+
+00:06:11.909 --> 00:06:11.919 align:start position:0%
+has three coins which
+ 
+
+00:06:11.919 --> 00:06:13.749 align:start position:0%
+has three coins which
+you<00:06:12.080><c> know</c><00:06:12.400><c> from</c><00:06:12.560><c> the</c><00:06:12.720><c> previous</c><00:06:13.199><c> example</c><00:06:13.600><c> we</c>
+
+00:06:13.749 --> 00:06:13.759 align:start position:0%
+you know from the previous example we
+ 
+
+00:06:13.759 --> 00:06:15.909 align:start position:0%
+you know from the previous example we
+know<00:06:14.000><c> that</c><00:06:14.240><c> that's</c><00:06:14.560><c> not</c><00:06:14.880><c> the</c><00:06:15.120><c> minimum</c><00:06:15.600><c> amount</c>
+
+00:06:15.909 --> 00:06:15.919 align:start position:0%
+know that that's not the minimum amount
+ 
+
+00:06:15.919 --> 00:06:16.790 align:start position:0%
+know that that's not the minimum amount
+of<00:06:16.160><c> coins</c>
+
+00:06:16.790 --> 00:06:16.800 align:start position:0%
+of coins
+ 
+
+00:06:16.800 --> 00:06:19.270 align:start position:0%
+of coins
+but<00:06:17.039><c> we</c><00:06:17.280><c> found</c><00:06:17.600><c> an</c><00:06:17.919><c> algorithm</c><00:06:18.479><c> that</c><00:06:18.639><c> at</c><00:06:18.800><c> least</c>
+
+00:06:19.270 --> 00:06:19.280 align:start position:0%
+but we found an algorithm that at least
+ 
+
+00:06:19.280 --> 00:06:20.230 align:start position:0%
+but we found an algorithm that at least
+tells<00:06:19.680><c> us</c>
+
+00:06:20.230 --> 00:06:20.240 align:start position:0%
+tells us
+ 
+
+00:06:20.240 --> 00:06:23.029 align:start position:0%
+tells us
+a<00:06:20.400><c> possible</c><00:06:21.039><c> solution</c><00:06:21.840><c> so</c><00:06:22.080><c> we</c><00:06:22.319><c> can</c><00:06:22.720><c> kind</c><00:06:22.880><c> of</c>
+
+00:06:23.029 --> 00:06:23.039 align:start position:0%
+a possible solution so we can kind of
+ 
+
+00:06:23.039 --> 00:06:25.510 align:start position:0%
+a possible solution so we can kind of
+keep<00:06:23.280><c> track</c><00:06:23.600><c> of</c><00:06:23.759><c> that</c><00:06:24.000><c> the</c><00:06:24.160><c> minimum</c><00:06:24.720><c> coins</c>
+
+00:06:25.510 --> 00:06:25.520 align:start position:0%
+keep track of that the minimum coins
+ 
+
+00:06:25.520 --> 00:06:29.510 align:start position:0%
+keep track of that the minimum coins
+we<00:06:25.759><c> can</c><00:06:26.400><c> set</c><00:06:26.720><c> to</c><00:06:27.520><c> three</c><00:06:28.240><c> so</c><00:06:28.560><c> now</c><00:06:28.960><c> i'm</c><00:06:29.120><c> gonna</c>
+
+00:06:29.510 --> 00:06:29.520 align:start position:0%
+we can set to three so now i'm gonna
+ 
+
+00:06:29.520 --> 00:06:31.510 align:start position:0%
+we can set to three so now i'm gonna
+show<00:06:29.759><c> you</c><00:06:30.000><c> what</c><00:06:30.160><c> happens</c><00:06:30.560><c> when</c><00:06:30.720><c> we</c><00:06:30.800><c> go</c><00:06:31.039><c> down</c>
+
+00:06:31.510 --> 00:06:31.520 align:start position:0%
+show you what happens when we go down
+ 
+
+00:06:31.520 --> 00:06:32.790 align:start position:0%
+show you what happens when we go down
+this<00:06:32.000><c> tree</c><00:06:32.319><c> path</c>
+
+00:06:32.790 --> 00:06:32.800 align:start position:0%
+this tree path
+ 
+
+00:06:32.800 --> 00:06:34.710 align:start position:0%
+this tree path
+even<00:06:33.120><c> though</c><00:06:33.280><c> we</c><00:06:33.520><c> know</c><00:06:33.759><c> that</c><00:06:33.919><c> the</c><00:06:34.080><c> solution</c><00:06:34.560><c> is</c>
+
+00:06:34.710 --> 00:06:34.720 align:start position:0%
+even though we know that the solution is
+ 
+
+00:06:34.720 --> 00:06:36.790 align:start position:0%
+even though we know that the solution is
+actually<00:06:35.120><c> three</c><00:06:35.520><c> plus</c><00:06:35.759><c> four</c><00:06:36.080><c> which</c><00:06:36.319><c> is</c><00:06:36.479><c> two</c>
+
+00:06:36.790 --> 00:06:36.800 align:start position:0%
+actually three plus four which is two
+ 
+
+00:06:36.800 --> 00:06:37.350 align:start position:0%
+actually three plus four which is two
+coins
+
+00:06:37.350 --> 00:06:37.360 align:start position:0%
+coins
+ 
+
+00:06:37.360 --> 00:06:40.150 align:start position:0%
+coins
+which<00:06:37.919><c> either</c><00:06:38.240><c> of</c><00:06:38.479><c> these</c><00:06:39.120><c> is</c><00:06:39.280><c> gonna</c><00:06:39.680><c> get</c><00:06:39.840><c> us</c><00:06:40.000><c> to</c>
+
+00:06:40.150 --> 00:06:40.160 align:start position:0%
+which either of these is gonna get us to
+ 
+
+00:06:40.160 --> 00:06:41.590 align:start position:0%
+which either of these is gonna get us to
+the<00:06:40.319><c> correct</c><00:06:40.639><c> solution</c><00:06:40.960><c> i'm</c><00:06:41.120><c> gonna</c><00:06:41.280><c> show</c><00:06:41.440><c> you</c>
+
+00:06:41.590 --> 00:06:41.600 align:start position:0%
+the correct solution i'm gonna show you
+ 
+
+00:06:41.600 --> 00:06:43.430 align:start position:0%
+the correct solution i'm gonna show you
+what<00:06:41.840><c> happens</c><00:06:42.160><c> when</c><00:06:42.319><c> we</c><00:06:42.479><c> go</c><00:06:42.720><c> down</c>
+
+00:06:43.430 --> 00:06:43.440 align:start position:0%
+what happens when we go down
+ 
+
+00:06:43.440 --> 00:06:46.790 align:start position:0%
+what happens when we go down
+this<00:06:43.759><c> one</c><00:06:44.160><c> anyway</c><00:06:45.120><c> so</c><00:06:45.360><c> we</c><00:06:45.520><c> can</c><00:06:45.840><c> choose</c><00:06:46.240><c> a</c><00:06:46.400><c> coin</c>
+
+00:06:46.790 --> 00:06:46.800 align:start position:0%
+this one anyway so we can choose a coin
+ 
+
+00:06:46.800 --> 00:06:47.510 align:start position:0%
+this one anyway so we can choose a coin
+one
+
+00:06:47.510 --> 00:06:47.520 align:start position:0%
+one
+ 
+
+00:06:47.520 --> 00:06:51.350 align:start position:0%
+one
+three<00:06:48.400><c> four</c><00:06:49.039><c> or</c><00:06:49.360><c> five</c><00:06:50.160><c> so</c><00:06:50.319><c> if</c><00:06:50.400><c> we</c><00:06:50.560><c> go</c><00:06:50.720><c> down</c><00:06:51.039><c> this</c>
+
+00:06:51.350 --> 00:06:51.360 align:start position:0%
+three four or five so if we go down this
+ 
+
+00:06:51.360 --> 00:06:51.990 align:start position:0%
+three four or five so if we go down this
+path
+
+00:06:51.990 --> 00:06:52.000 align:start position:0%
+path
+ 
+
+00:06:52.000 --> 00:06:55.029 align:start position:0%
+path
+we<00:06:52.160><c> will</c><00:06:52.400><c> have</c><00:06:52.720><c> a</c><00:06:52.880><c> remaining</c><00:06:53.520><c> amount</c><00:06:53.919><c> of</c><00:06:54.319><c> five</c>
+
+00:06:55.029 --> 00:06:55.039 align:start position:0%
+we will have a remaining amount of five
+ 
+
+00:06:55.039 --> 00:06:57.510 align:start position:0%
+we will have a remaining amount of five
+here<00:06:55.360><c> we'll</c><00:06:55.520><c> have</c><00:06:55.680><c> a</c><00:06:55.840><c> remaining</c><00:06:56.400><c> amount</c><00:06:57.120><c> of</c>
+
+00:06:57.510 --> 00:06:57.520 align:start position:0%
+here we'll have a remaining amount of
+ 
+
+00:06:57.520 --> 00:06:58.230 align:start position:0%
+here we'll have a remaining amount of
+three
+
+00:06:58.230 --> 00:06:58.240 align:start position:0%
+three
+ 
+
+00:06:58.240 --> 00:06:59.749 align:start position:0%
+three
+here<00:06:58.400><c> we'll</c><00:06:58.560><c> have</c><00:06:58.720><c> a</c><00:06:58.800><c> remaining</c><00:06:59.199><c> amount</c><00:06:59.440><c> of</c>
+
+00:06:59.749 --> 00:06:59.759 align:start position:0%
+here we'll have a remaining amount of
+ 
+
+00:06:59.759 --> 00:07:02.469 align:start position:0%
+here we'll have a remaining amount of
+two<00:07:00.560><c> here</c><00:07:00.800><c> we'll</c><00:07:00.960><c> have</c><00:07:01.199><c> a</c><00:07:01.280><c> remaining</c><00:07:01.840><c> amount</c>
+
+00:07:02.469 --> 00:07:02.479 align:start position:0%
+two here we'll have a remaining amount
+ 
+
+00:07:02.479 --> 00:07:05.189 align:start position:0%
+two here we'll have a remaining amount
+of<00:07:02.880><c> 1.</c><00:07:03.440><c> do</c><00:07:03.599><c> you</c><00:07:03.840><c> kind</c><00:07:04.080><c> of</c><00:07:04.400><c> see</c><00:07:04.720><c> how</c><00:07:04.960><c> we're</c>
+
+00:07:05.189 --> 00:07:05.199 align:start position:0%
+of 1. do you kind of see how we're
+ 
+
+00:07:05.199 --> 00:07:05.990 align:start position:0%
+of 1. do you kind of see how we're
+taking
+
+00:07:05.990 --> 00:07:06.000 align:start position:0%
+taking
+ 
+
+00:07:06.000 --> 00:07:09.189 align:start position:0%
+taking
+the<00:07:06.400><c> original</c><00:07:07.120><c> problem</c><00:07:07.599><c> which</c><00:07:07.840><c> is</c><00:07:08.479><c> 7</c>
+
+00:07:09.189 --> 00:07:09.199 align:start position:0%
+the original problem which is 7
+ 
+
+00:07:09.199 --> 00:07:11.990 align:start position:0%
+the original problem which is 7
+and<00:07:09.280><c> then</c><00:07:09.759><c> breaking</c><00:07:10.319><c> it</c><00:07:10.560><c> down</c><00:07:11.039><c> into</c><00:07:11.599><c> sub</c>
+
+00:07:11.990 --> 00:07:12.000 align:start position:0%
+and then breaking it down into sub
+ 
+
+00:07:12.000 --> 00:07:12.790 align:start position:0%
+and then breaking it down into sub
+problems
+
+00:07:12.790 --> 00:07:12.800 align:start position:0%
+problems
+ 
+
+00:07:12.800 --> 00:07:16.230 align:start position:0%
+problems
+like<00:07:13.520><c> 6</c><00:07:14.240><c> and</c><00:07:14.319><c> then</c><00:07:14.560><c> breaking</c><00:07:15.039><c> it</c><00:07:15.120><c> down</c><00:07:15.599><c> even</c>
+
+00:07:16.230 --> 00:07:16.240 align:start position:0%
+like 6 and then breaking it down even
+ 
+
+00:07:16.240 --> 00:07:20.309 align:start position:0%
+like 6 and then breaking it down even
+further<00:07:17.120><c> into</c><00:07:18.160><c> five</c><00:07:18.960><c> and</c><00:07:19.199><c> not</c><00:07:19.440><c> only</c><00:07:19.759><c> that</c><00:07:20.080><c> we</c>
+
+00:07:20.309 --> 00:07:20.319 align:start position:0%
+further into five and not only that we
+ 
+
+00:07:20.319 --> 00:07:22.390 align:start position:0%
+further into five and not only that we
+have<00:07:20.639><c> sub</c><00:07:21.039><c> problems</c><00:07:21.599><c> yes</c>
+
+00:07:22.390 --> 00:07:22.400 align:start position:0%
+have sub problems yes
+ 
+
+00:07:22.400 --> 00:07:25.749 align:start position:0%
+have sub problems yes
+but<00:07:22.639><c> do</c><00:07:22.800><c> you</c><00:07:23.120><c> also</c><00:07:23.680><c> see</c><00:07:24.479><c> that</c><00:07:24.800><c> these</c><00:07:25.360><c> sub</c>
+
+00:07:25.749 --> 00:07:25.759 align:start position:0%
+but do you also see that these sub
+ 
+
+00:07:25.759 --> 00:07:28.790 align:start position:0%
+but do you also see that these sub
+problems<00:07:26.479><c> are</c><00:07:26.800><c> repeating</c><00:07:27.599><c> themselves</c><00:07:28.479><c> here</c>
+
+00:07:28.790 --> 00:07:28.800 align:start position:0%
+problems are repeating themselves here
+ 
+
+00:07:28.800 --> 00:07:30.629 align:start position:0%
+problems are repeating themselves here
+we<00:07:28.960><c> have</c><00:07:29.199><c> a</c><00:07:29.280><c> remaining</c><00:07:29.840><c> amount</c><00:07:30.240><c> of</c>
+
+00:07:30.629 --> 00:07:30.639 align:start position:0%
+we have a remaining amount of
+ 
+
+00:07:30.639 --> 00:07:33.990 align:start position:0%
+we have a remaining amount of
+one<00:07:31.360><c> here</c><00:07:31.759><c> we</c><00:07:32.240><c> also</c><00:07:32.800><c> have</c><00:07:33.039><c> a</c><00:07:33.120><c> remaining</c><00:07:33.599><c> amount</c>
+
+00:07:33.990 --> 00:07:34.000 align:start position:0%
+one here we also have a remaining amount
+ 
+
+00:07:34.000 --> 00:07:34.710 align:start position:0%
+one here we also have a remaining amount
+of<00:07:34.240><c> one</c>
+
+00:07:34.710 --> 00:07:34.720 align:start position:0%
+of one
+ 
+
+00:07:34.720 --> 00:07:38.629 align:start position:0%
+of one
+so<00:07:35.199><c> do</c><00:07:35.440><c> we</c><00:07:35.919><c> even</c><00:07:36.400><c> have</c><00:07:36.720><c> to</c><00:07:36.960><c> compute</c><00:07:37.599><c> this</c><00:07:38.000><c> path</c>
+
+00:07:38.629 --> 00:07:38.639 align:start position:0%
+so do we even have to compute this path
+ 
+
+00:07:38.639 --> 00:07:41.270 align:start position:0%
+so do we even have to compute this path
+because<00:07:38.960><c> we</c><00:07:39.360><c> already</c><00:07:39.840><c> know</c><00:07:40.479><c> if</c><00:07:40.720><c> we</c><00:07:40.880><c> have</c><00:07:41.120><c> an</c>
+
+00:07:41.270 --> 00:07:41.280 align:start position:0%
+because we already know if we have an
+ 
+
+00:07:41.280 --> 00:07:42.550 align:start position:0%
+because we already know if we have an
+amount<00:07:41.840><c> one</c>
+
+00:07:42.550 --> 00:07:42.560 align:start position:0%
+amount one
+ 
+
+00:07:42.560 --> 00:07:45.909 align:start position:0%
+amount one
+it<00:07:42.800><c> takes</c><00:07:43.599><c> only</c><00:07:44.160><c> a</c><00:07:44.560><c> single</c><00:07:45.280><c> coin</c>
+
+00:07:45.909 --> 00:07:45.919 align:start position:0%
+it takes only a single coin
+ 
+
+00:07:45.919 --> 00:07:49.110 align:start position:0%
+it takes only a single coin
+for<00:07:46.319><c> us</c><00:07:46.639><c> to</c><00:07:46.800><c> be</c><00:07:47.039><c> able</c><00:07:47.440><c> to</c><00:07:47.599><c> reduce</c><00:07:48.319><c> it</c><00:07:48.720><c> to</c><00:07:48.960><c> the</c>
+
+00:07:49.110 --> 00:07:49.120 align:start position:0%
+for us to be able to reduce it to the
+ 
+
+00:07:49.120 --> 00:07:49.830 align:start position:0%
+for us to be able to reduce it to the
+amount
+
+00:07:49.830 --> 00:07:49.840 align:start position:0%
+amount
+ 
+
+00:07:49.840 --> 00:07:52.550 align:start position:0%
+amount
+zero<00:07:50.240><c> which</c><00:07:50.479><c> is</c><00:07:50.560><c> what</c><00:07:50.800><c> we're</c><00:07:51.039><c> looking</c><00:07:51.440><c> for</c><00:07:52.160><c> so</c>
+
+00:07:52.550 --> 00:07:52.560 align:start position:0%
+zero which is what we're looking for so
+ 
+
+00:07:52.560 --> 00:07:52.950 align:start position:0%
+zero which is what we're looking for so
+since
+
+00:07:52.950 --> 00:07:52.960 align:start position:0%
+since
+ 
+
+00:07:52.960 --> 00:07:55.670 align:start position:0%
+since
+this<00:07:53.280><c> sub</c><00:07:53.599><c> problem</c><00:07:54.000><c> repeats</c><00:07:54.879><c> i</c><00:07:55.120><c> don't</c><00:07:55.360><c> have</c><00:07:55.520><c> to</c>
+
+00:07:55.670 --> 00:07:55.680 align:start position:0%
+this sub problem repeats i don't have to
+ 
+
+00:07:55.680 --> 00:07:56.790 align:start position:0%
+this sub problem repeats i don't have to
+compute<00:07:56.240><c> it</c>
+
+00:07:56.790 --> 00:07:56.800 align:start position:0%
+compute it
+ 
+
+00:07:56.800 --> 00:07:59.830 align:start position:0%
+compute it
+i<00:07:56.960><c> can</c><00:07:57.120><c> just</c><00:07:57.599><c> borrow</c><00:07:58.400><c> from</c><00:07:58.800><c> over</c><00:07:59.199><c> here</c>
+
+00:07:59.830 --> 00:07:59.840 align:start position:0%
+i can just borrow from over here
+ 
+
+00:07:59.840 --> 00:08:02.469 align:start position:0%
+i can just borrow from over here
+so<00:08:00.160><c> in</c><00:08:00.319><c> that</c><00:08:00.639><c> case</c><00:08:01.120><c> we</c><00:08:01.360><c> see</c><00:08:01.599><c> the</c><00:08:01.840><c> same</c><00:08:02.240><c> thing</c>
+
+00:08:02.469 --> 00:08:02.479 align:start position:0%
+so in that case we see the same thing
+ 
+
+00:08:02.479 --> 00:08:03.430 align:start position:0%
+so in that case we see the same thing
+happened<00:08:02.960><c> though</c>
+
+00:08:03.430 --> 00:08:03.440 align:start position:0%
+happened though
+ 
+
+00:08:03.440 --> 00:08:06.550 align:start position:0%
+happened though
+we<00:08:03.599><c> use</c><00:08:03.840><c> a</c><00:08:04.000><c> coin</c><00:08:04.400><c> one</c><00:08:04.800><c> and</c><00:08:04.960><c> we</c><00:08:05.120><c> get</c><00:08:05.440><c> zero</c><00:08:06.080><c> and</c><00:08:06.319><c> we</c>
+
+00:08:06.550 --> 00:08:06.560 align:start position:0%
+we use a coin one and we get zero and we
+ 
+
+00:08:06.560 --> 00:08:08.070 align:start position:0%
+we use a coin one and we get zero and we
+see<00:08:06.800><c> that</c><00:08:07.039><c> okay</c><00:08:07.440><c> it</c><00:08:07.520><c> took</c>
+
+00:08:08.070 --> 00:08:08.080 align:start position:0%
+see that okay it took
+ 
+
+00:08:08.080 --> 00:08:11.189 align:start position:0%
+see that okay it took
+three<00:08:08.960><c> coins</c><00:08:09.599><c> for</c><00:08:09.840><c> us</c><00:08:10.000><c> to</c><00:08:10.160><c> get</c><00:08:10.319><c> to</c><00:08:10.560><c> zero</c><00:08:11.039><c> right</c>
+
+00:08:11.189 --> 00:08:11.199 align:start position:0%
+three coins for us to get to zero right
+ 
+
+00:08:11.199 --> 00:08:12.469 align:start position:0%
+three coins for us to get to zero right
+we<00:08:11.360><c> took</c><00:08:11.599><c> a</c><00:08:11.840><c> one</c>
+
+00:08:12.469 --> 00:08:12.479 align:start position:0%
+we took a one
+ 
+
+00:08:12.479 --> 00:08:16.070 align:start position:0%
+we took a one
+a<00:08:12.800><c> five</c><00:08:13.440><c> and</c><00:08:13.680><c> another</c><00:08:14.319><c> one</c><00:08:15.039><c> from</c><00:08:15.280><c> over</c><00:08:15.599><c> here</c><00:08:15.919><c> so</c>
+
+00:08:16.070 --> 00:08:16.080 align:start position:0%
+a five and another one from over here so
+ 
+
+00:08:16.080 --> 00:08:18.070 align:start position:0%
+a five and another one from over here so
+basically<00:08:16.560><c> we</c><00:08:16.720><c> got</c><00:08:16.960><c> the</c><00:08:17.199><c> same</c><00:08:17.680><c> thing</c><00:08:17.919><c> that</c>
+
+00:08:18.070 --> 00:08:18.080 align:start position:0%
+basically we got the same thing that
+ 
+
+00:08:18.080 --> 00:08:18.790 align:start position:0%
+basically we got the same thing that
+happened
+
+00:08:18.790 --> 00:08:18.800 align:start position:0%
+happened
+ 
+
+00:08:18.800 --> 00:08:21.830 align:start position:0%
+happened
+over<00:08:19.520><c> here</c><00:08:19.919><c> just</c><00:08:20.160><c> in</c><00:08:20.319><c> a</c><00:08:20.400><c> different</c><00:08:20.879><c> order</c><00:08:21.599><c> and</c>
+
+00:08:21.830 --> 00:08:21.840 align:start position:0%
+over here just in a different order and
+ 
+
+00:08:21.840 --> 00:08:23.430 align:start position:0%
+over here just in a different order and
+just<00:08:22.080><c> to</c><00:08:22.160><c> make</c><00:08:22.319><c> this</c><00:08:22.560><c> a</c><00:08:22.639><c> little</c><00:08:22.879><c> less</c><00:08:23.120><c> messy</c>
+
+00:08:23.430 --> 00:08:23.440 align:start position:0%
+just to make this a little less messy
+ 
+
+00:08:23.440 --> 00:08:25.110 align:start position:0%
+just to make this a little less messy
+i'm<00:08:23.680><c> just</c><00:08:23.759><c> gonna</c><00:08:24.000><c> tell</c><00:08:24.160><c> you</c><00:08:24.319><c> that</c><00:08:24.639><c> none</c><00:08:24.879><c> of</c>
+
+00:08:25.110 --> 00:08:25.120 align:start position:0%
+i'm just gonna tell you that none of
+ 
+
+00:08:25.120 --> 00:08:26.629 align:start position:0%
+i'm just gonna tell you that none of
+these<00:08:25.440><c> are</c><00:08:25.680><c> going</c><00:08:25.759><c> to</c><00:08:25.919><c> lead</c><00:08:26.160><c> us</c><00:08:26.319><c> to</c><00:08:26.479><c> the</c>
+
+00:08:26.629 --> 00:08:26.639 align:start position:0%
+these are going to lead us to the
+ 
+
+00:08:26.639 --> 00:08:28.070 align:start position:0%
+these are going to lead us to the
+optimal<00:08:27.199><c> solution</c>
+
+00:08:28.070 --> 00:08:28.080 align:start position:0%
+optimal solution
+ 
+
+00:08:28.080 --> 00:08:30.710 align:start position:0%
+optimal solution
+so<00:08:28.400><c> now</c><00:08:28.639><c> let's</c><00:08:28.879><c> look</c><00:08:29.120><c> at</c><00:08:29.440><c> this</c><00:08:29.759><c> case</c><00:08:30.240><c> we</c><00:08:30.400><c> have</c><00:08:30.560><c> a</c>
+
+00:08:30.710 --> 00:08:30.720 align:start position:0%
+so now let's look at this case we have a
+ 
+
+00:08:30.720 --> 00:08:32.149 align:start position:0%
+so now let's look at this case we have a
+remaining<00:08:31.199><c> amount</c><00:08:31.520><c> of</c><00:08:31.759><c> four</c>
+
+00:08:32.149 --> 00:08:32.159 align:start position:0%
+remaining amount of four
+ 
+
+00:08:32.159 --> 00:08:35.430 align:start position:0%
+remaining amount of four
+how<00:08:32.399><c> many</c><00:08:32.800><c> coins</c><00:08:33.279><c> does</c><00:08:33.519><c> it</c><00:08:33.680><c> take</c><00:08:34.240><c> for</c><00:08:34.560><c> us</c><00:08:35.039><c> to</c>
+
+00:08:35.430 --> 00:08:35.440 align:start position:0%
+how many coins does it take for us to
+ 
+
+00:08:35.440 --> 00:08:38.149 align:start position:0%
+how many coins does it take for us to
+get<00:08:35.680><c> an</c><00:08:35.839><c> amount</c><00:08:36.479><c> for</c><00:08:37.039><c> well</c><00:08:37.200><c> let's</c><00:08:37.519><c> brute</c><00:08:37.839><c> force</c>
+
+00:08:38.149 --> 00:08:38.159 align:start position:0%
+get an amount for well let's brute force
+ 
+
+00:08:38.159 --> 00:08:38.949 align:start position:0%
+get an amount for well let's brute force
+it<00:08:38.320><c> let's</c><00:08:38.640><c> check</c>
+
+00:08:38.949 --> 00:08:38.959 align:start position:0%
+it let's check
+ 
+
+00:08:38.959 --> 00:08:41.509 align:start position:0%
+it let's check
+every<00:08:39.440><c> possible</c><00:08:40.000><c> combination</c><00:08:41.039><c> here</c><00:08:41.279><c> we'll</c>
+
+00:08:41.509 --> 00:08:41.519 align:start position:0%
+every possible combination here we'll
+ 
+
+00:08:41.519 --> 00:08:42.310 align:start position:0%
+every possible combination here we'll
+get<00:08:41.919><c> a</c>
+
+00:08:42.310 --> 00:08:42.320 align:start position:0%
+get a
+ 
+
+00:08:42.320 --> 00:08:44.550 align:start position:0%
+get a
+one<00:08:43.039><c> here</c><00:08:43.360><c> we'll</c><00:08:43.519><c> get</c><00:08:43.760><c> the</c><00:08:43.919><c> value</c><00:08:44.320><c> we're</c>
+
+00:08:44.550 --> 00:08:44.560 align:start position:0%
+one here we'll get the value we're
+ 
+
+00:08:44.560 --> 00:08:46.550 align:start position:0%
+one here we'll get the value we're
+looking<00:08:44.880><c> for</c><00:08:45.200><c> zero</c><00:08:45.519><c> that's</c><00:08:45.920><c> great</c><00:08:46.160><c> but</c><00:08:46.320><c> let's</c>
+
+00:08:46.550 --> 00:08:46.560 align:start position:0%
+looking for zero that's great but let's
+ 
+
+00:08:46.560 --> 00:08:47.829 align:start position:0%
+looking for zero that's great but let's
+just<00:08:46.720><c> look</c><00:08:46.880><c> at</c><00:08:46.959><c> this</c><00:08:47.200><c> last</c><00:08:47.519><c> one</c>
+
+00:08:47.829 --> 00:08:47.839 align:start position:0%
+just look at this last one
+ 
+
+00:08:47.839 --> 00:08:50.389 align:start position:0%
+just look at this last one
+with<00:08:48.160><c> five</c><00:08:48.480><c> we'll</c><00:08:48.720><c> get</c><00:08:48.959><c> a</c><00:08:49.360><c> negative</c><00:08:49.839><c> one</c>
+
+00:08:50.389 --> 00:08:50.399 align:start position:0%
+with five we'll get a negative one
+ 
+
+00:08:50.399 --> 00:08:51.590 align:start position:0%
+with five we'll get a negative one
+meaning<00:08:50.800><c> we</c><00:08:50.959><c> can</c><00:08:51.120><c> stop</c>
+
+00:08:51.590 --> 00:08:51.600 align:start position:0%
+meaning we can stop
+ 
+
+00:08:51.600 --> 00:08:54.710 align:start position:0%
+meaning we can stop
+searching<00:08:52.320><c> so</c><00:08:52.640><c> this</c><00:08:52.959><c> is</c><00:08:53.200><c> awesome</c><00:08:53.600><c> we</c><00:08:53.839><c> got</c><00:08:54.399><c> a</c>
+
+00:08:54.710 --> 00:08:54.720 align:start position:0%
+searching so this is awesome we got a
+ 
+
+00:08:54.720 --> 00:08:57.269 align:start position:0%
+searching so this is awesome we got a
+zero<00:08:55.279><c> and</c><00:08:55.440><c> let's</c><00:08:55.839><c> count</c><00:08:56.240><c> how</c><00:08:56.399><c> many</c><00:08:56.720><c> coins</c><00:08:57.120><c> did</c>
+
+00:08:57.269 --> 00:08:57.279 align:start position:0%
+zero and let's count how many coins did
+ 
+
+00:08:57.279 --> 00:08:58.310 align:start position:0%
+zero and let's count how many coins did
+it<00:08:57.440><c> take</c><00:08:57.760><c> us</c><00:08:58.000><c> to</c>
+
+00:08:58.310 --> 00:08:58.320 align:start position:0%
+it take us to
+ 
+
+00:08:58.320 --> 00:09:01.509 align:start position:0%
+it take us to
+get<00:08:58.640><c> to</c><00:08:58.800><c> this</c><00:08:59.040><c> zero</c><00:08:59.680><c> we</c><00:08:59.920><c> took</c><00:09:00.240><c> one</c><00:09:00.720><c> four</c><00:09:01.200><c> and</c><00:09:01.279><c> we</c>
+
+00:09:01.509 --> 00:09:01.519 align:start position:0%
+get to this zero we took one four and we
+ 
+
+00:09:01.519 --> 00:09:01.990 align:start position:0%
+get to this zero we took one four and we
+took<00:09:01.760><c> a</c>
+
+00:09:01.990 --> 00:09:02.000 align:start position:0%
+took a
+ 
+
+00:09:02.000 --> 00:09:05.110 align:start position:0%
+took a
+three<00:09:02.640><c> so</c><00:09:02.959><c> this</c><00:09:03.440><c> path</c><00:09:04.320><c> is</c><00:09:04.640><c> only</c>
+
+00:09:05.110 --> 00:09:05.120 align:start position:0%
+three so this path is only
+ 
+
+00:09:05.120 --> 00:09:08.710 align:start position:0%
+three so this path is only
+two<00:09:05.760><c> coins</c><00:09:06.640><c> long</c><00:09:07.200><c> we</c><00:09:07.519><c> see</c><00:09:07.920><c> our</c><00:09:08.080><c> minimum</c><00:09:08.560><c> is</c>
+
+00:09:08.710 --> 00:09:08.720 align:start position:0%
+two coins long we see our minimum is
+ 
+
+00:09:08.720 --> 00:09:09.350 align:start position:0%
+two coins long we see our minimum is
+currently
+
+00:09:09.350 --> 00:09:09.360 align:start position:0%
+currently
+ 
+
+00:09:09.360 --> 00:09:11.590 align:start position:0%
+currently
+three<00:09:09.680><c> but</c><00:09:09.839><c> we</c><00:09:10.000><c> can</c><00:09:10.160><c> actually</c><00:09:10.560><c> replace</c><00:09:11.279><c> this</c>
+
+00:09:11.590 --> 00:09:11.600 align:start position:0%
+three but we can actually replace this
+ 
+
+00:09:11.600 --> 00:09:12.550 align:start position:0%
+three but we can actually replace this
+now<00:09:12.000><c> with</c><00:09:12.240><c> a</c>
+
+00:09:12.550 --> 00:09:12.560 align:start position:0%
+now with a
+ 
+
+00:09:12.560 --> 00:09:15.509 align:start position:0%
+now with a
+two<00:09:13.120><c> because</c><00:09:13.600><c> two</c><00:09:14.000><c> is</c><00:09:14.160><c> the</c><00:09:14.320><c> minimum</c><00:09:14.880><c> number</c><00:09:15.279><c> of</c>
+
+00:09:15.509 --> 00:09:15.519 align:start position:0%
+two because two is the minimum number of
+ 
+
+00:09:15.519 --> 00:09:16.310 align:start position:0%
+two because two is the minimum number of
+coins
+
+00:09:16.310 --> 00:09:16.320 align:start position:0%
+coins
+ 
+
+00:09:16.320 --> 00:09:19.509 align:start position:0%
+coins
+needed<00:09:16.880><c> to</c><00:09:17.200><c> total</c><00:09:17.920><c> to</c><00:09:18.080><c> amount</c><00:09:18.800><c> seven</c>
+
+00:09:19.509 --> 00:09:19.519 align:start position:0%
+needed to total to amount seven
+ 
+
+00:09:19.519 --> 00:09:21.350 align:start position:0%
+needed to total to amount seven
+so<00:09:19.760><c> we</c><00:09:19.920><c> know</c><00:09:20.160><c> this</c><00:09:20.399><c> is</c><00:09:20.480><c> the</c><00:09:20.640><c> correct</c><00:09:21.040><c> answer</c>
+
+00:09:21.350 --> 00:09:21.360 align:start position:0%
+so we know this is the correct answer
+ 
+
+00:09:21.360 --> 00:09:22.949 align:start position:0%
+so we know this is the correct answer
+but<00:09:21.519><c> let's</c><00:09:21.680><c> just</c><00:09:21.920><c> see</c><00:09:22.080><c> what</c><00:09:22.320><c> happens</c><00:09:22.640><c> with</c><00:09:22.800><c> the</c>
+
+00:09:22.949 --> 00:09:22.959 align:start position:0%
+but let's just see what happens with the
+ 
+
+00:09:22.959 --> 00:09:23.990 align:start position:0%
+but let's just see what happens with the
+remaining<00:09:23.519><c> stuff</c>
+
+00:09:23.990 --> 00:09:24.000 align:start position:0%
+remaining stuff
+ 
+
+00:09:24.000 --> 00:09:26.550 align:start position:0%
+remaining stuff
+so<00:09:24.480><c> first</c><00:09:24.720><c> let</c><00:09:24.880><c> me</c><00:09:25.040><c> just</c><00:09:25.200><c> look</c><00:09:25.360><c> at</c><00:09:25.440><c> this</c><00:09:25.760><c> one</c><00:09:26.240><c> we</c>
+
+00:09:26.550 --> 00:09:26.560 align:start position:0%
+so first let me just look at this one we
+ 
+
+00:09:26.560 --> 00:09:27.430 align:start position:0%
+so first let me just look at this one we
+see<00:09:26.720><c> we</c><00:09:26.959><c> actually</c>
+
+00:09:27.430 --> 00:09:27.440 align:start position:0%
+see we actually
+ 
+
+00:09:27.440 --> 00:09:29.990 align:start position:0%
+see we actually
+already<00:09:28.080><c> solved</c><00:09:28.560><c> this</c><00:09:28.800><c> sub</c><00:09:29.200><c> problem</c><00:09:29.680><c> over</c>
+
+00:09:29.990 --> 00:09:30.000 align:start position:0%
+already solved this sub problem over
+ 
+
+00:09:30.000 --> 00:09:30.550 align:start position:0%
+already solved this sub problem over
+here
+
+00:09:30.550 --> 00:09:30.560 align:start position:0%
+here
+ 
+
+00:09:30.560 --> 00:09:32.710 align:start position:0%
+here
+so<00:09:30.800><c> we</c><00:09:31.040><c> don't</c><00:09:31.279><c> really</c><00:09:31.680><c> need</c><00:09:32.000><c> to</c><00:09:32.240><c> solve</c><00:09:32.560><c> it</c>
+
+00:09:32.710 --> 00:09:32.720 align:start position:0%
+so we don't really need to solve it
+ 
+
+00:09:32.720 --> 00:09:34.150 align:start position:0%
+so we don't really need to solve it
+again<00:09:33.279><c> we</c><00:09:33.440><c> know</c><00:09:33.680><c> it</c><00:09:33.760><c> takes</c>
+
+00:09:34.150 --> 00:09:34.160 align:start position:0%
+again we know it takes
+ 
+
+00:09:34.160 --> 00:09:37.670 align:start position:0%
+again we know it takes
+one<00:09:34.480><c> coin</c><00:09:34.800><c> for</c><00:09:35.040><c> us</c><00:09:35.360><c> to</c><00:09:35.519><c> go</c><00:09:35.680><c> from</c><00:09:36.080><c> one</c><00:09:36.560><c> to</c><00:09:36.800><c> zero</c>
+
+00:09:37.670 --> 00:09:37.680 align:start position:0%
+one coin for us to go from one to zero
+ 
+
+00:09:37.680 --> 00:09:40.070 align:start position:0%
+one coin for us to go from one to zero
+and<00:09:37.839><c> what</c><00:09:38.000><c> about</c><00:09:38.320><c> this</c><00:09:38.720><c> three</c><00:09:39.360><c> okay</c><00:09:39.680><c> well</c><00:09:39.920><c> we</c>
+
+00:09:40.070 --> 00:09:40.080 align:start position:0%
+and what about this three okay well we
+ 
+
+00:09:40.080 --> 00:09:40.710 align:start position:0%
+and what about this three okay well we
+can<00:09:40.399><c> do</c>
+
+00:09:40.710 --> 00:09:40.720 align:start position:0%
+can do
+ 
+
+00:09:40.720 --> 00:09:44.230 align:start position:0%
+can do
+the<00:09:40.959><c> same</c><00:09:41.200><c> thing</c><00:09:41.519><c> right</c><00:09:41.839><c> one</c><00:09:42.480><c> three</c><00:09:43.360><c> four</c>
+
+00:09:44.230 --> 00:09:44.240 align:start position:0%
+the same thing right one three four
+ 
+
+00:09:44.240 --> 00:09:47.030 align:start position:0%
+the same thing right one three four
+five<00:09:45.040><c> and</c><00:09:45.200><c> i'll</c><00:09:45.360><c> just</c><00:09:45.600><c> tell</c><00:09:45.839><c> you</c><00:09:46.399><c> from</c><00:09:46.720><c> here</c>
+
+00:09:47.030 --> 00:09:47.040 align:start position:0%
+five and i'll just tell you from here
+ 
+
+00:09:47.040 --> 00:09:48.790 align:start position:0%
+five and i'll just tell you from here
+we're<00:09:47.360><c> not</c><00:09:47.600><c> going</c><00:09:47.760><c> to</c><00:09:47.839><c> find</c><00:09:48.160><c> the</c><00:09:48.320><c> optimal</c>
+
+00:09:48.790 --> 00:09:48.800 align:start position:0%
+we're not going to find the optimal
+ 
+
+00:09:48.800 --> 00:09:50.310 align:start position:0%
+we're not going to find the optimal
+solution<00:09:49.360><c> going</c><00:09:49.680><c> from</c>
+
+00:09:50.310 --> 00:09:50.320 align:start position:0%
+solution going from
+ 
+
+00:09:50.320 --> 00:09:52.949 align:start position:0%
+solution going from
+four<00:09:50.720><c> to</c><00:09:51.040><c> three</c><00:09:51.600><c> and</c><00:09:51.839><c> more</c><00:09:52.399><c> that's</c><00:09:52.720><c> going</c><00:09:52.800><c> to</c>
+
+00:09:52.949 --> 00:09:52.959 align:start position:0%
+four to three and more that's going to
+ 
+
+00:09:52.959 --> 00:09:54.470 align:start position:0%
+four to three and more that's going to
+obviously<00:09:53.519><c> be</c><00:09:53.760><c> more</c>
+
+00:09:54.470 --> 00:09:54.480 align:start position:0%
+obviously be more
+ 
+
+00:09:54.480 --> 00:09:56.389 align:start position:0%
+obviously be more
+than<00:09:54.720><c> the</c><00:09:55.040><c> current</c><00:09:55.440><c> minimum</c><00:09:55.839><c> of</c><00:09:56.000><c> coins</c><00:09:56.320><c> that</c>
+
+00:09:56.389 --> 00:09:56.399 align:start position:0%
+than the current minimum of coins that
+ 
+
+00:09:56.399 --> 00:09:58.230 align:start position:0%
+than the current minimum of coins that
+we<00:09:56.560><c> have</c><00:09:56.720><c> which</c><00:09:56.959><c> is</c><00:09:57.200><c> two</c><00:09:57.440><c> right</c><00:09:57.680><c> now</c>
+
+00:09:58.230 --> 00:09:58.240 align:start position:0%
+we have which is two right now
+ 
+
+00:09:58.240 --> 00:10:00.389 align:start position:0%
+we have which is two right now
+so<00:09:58.480><c> this</c><00:09:58.720><c> is</c><00:09:58.800><c> not</c><00:09:59.040><c> going</c><00:09:59.120><c> to</c><00:09:59.360><c> lead</c><00:09:59.600><c> us</c><00:09:59.920><c> to</c><00:10:00.080><c> the</c>
+
+00:10:00.389 --> 00:10:00.399 align:start position:0%
+so this is not going to lead us to the
+ 
+
+00:10:00.399 --> 00:10:01.829 align:start position:0%
+so this is not going to lead us to the
+correct<00:10:00.800><c> solution</c>
+
+00:10:01.829 --> 00:10:01.839 align:start position:0%
+correct solution
+ 
+
+00:10:01.839 --> 00:10:04.870 align:start position:0%
+correct solution
+but<00:10:02.160><c> you</c><00:10:02.399><c> see</c><00:10:02.720><c> that</c><00:10:03.040><c> once</c><00:10:03.519><c> we</c><00:10:04.000><c> compute</c>
+
+00:10:04.870 --> 00:10:04.880 align:start position:0%
+but you see that once we compute
+ 
+
+00:10:04.880 --> 00:10:08.310 align:start position:0%
+but you see that once we compute
+this<00:10:05.200><c> stuff</c><00:10:05.920><c> then</c><00:10:06.160><c> we</c><00:10:06.399><c> have</c><00:10:06.959><c> one</c><00:10:07.680><c> last</c>
+
+00:10:08.310 --> 00:10:08.320 align:start position:0%
+this stuff then we have one last
+ 
+
+00:10:08.320 --> 00:10:11.269 align:start position:0%
+this stuff then we have one last
+subtree<00:10:09.120><c> over</c><00:10:09.440><c> here</c><00:10:09.760><c> right</c><00:10:10.079><c> this</c><00:10:10.560><c> original</c>
+
+00:10:11.269 --> 00:10:11.279 align:start position:0%
+subtree over here right this original
+ 
+
+00:10:11.279 --> 00:10:11.750 align:start position:0%
+subtree over here right this original
+three
+
+00:10:11.750 --> 00:10:11.760 align:start position:0%
+three
+ 
+
+00:10:11.760 --> 00:10:14.150 align:start position:0%
+three
+but<00:10:12.079><c> once</c><00:10:12.399><c> we</c><00:10:12.560><c> already</c><00:10:13.120><c> solved</c><00:10:13.519><c> the</c><00:10:13.760><c> sub</c>
+
+00:10:14.150 --> 00:10:14.160 align:start position:0%
+but once we already solved the sub
+ 
+
+00:10:14.160 --> 00:10:15.190 align:start position:0%
+but once we already solved the sub
+problems<00:10:14.640><c> of</c><00:10:14.800><c> this</c>
+
+00:10:15.190 --> 00:10:15.200 align:start position:0%
+problems of this
+ 
+
+00:10:15.200 --> 00:10:18.150 align:start position:0%
+problems of this
+do<00:10:15.440><c> we</c><00:10:15.839><c> really</c><00:10:16.399><c> have</c><00:10:16.720><c> to</c><00:10:17.040><c> solve</c><00:10:17.600><c> the</c><00:10:17.839><c> sub</c>
+
+00:10:18.150 --> 00:10:18.160 align:start position:0%
+do we really have to solve the sub
+ 
+
+00:10:18.160 --> 00:10:18.949 align:start position:0%
+do we really have to solve the sub
+problems<00:10:18.560><c> here</c>
+
+00:10:18.949 --> 00:10:18.959 align:start position:0%
+problems here
+ 
+
+00:10:18.959 --> 00:10:22.470 align:start position:0%
+problems here
+no<00:10:19.600><c> if</c><00:10:19.839><c> we</c><00:10:20.240><c> store</c><00:10:20.640><c> it</c><00:10:20.800><c> in</c><00:10:21.040><c> memory</c><00:10:21.839><c> if</c><00:10:22.000><c> we</c><00:10:22.240><c> have</c>
+
+00:10:22.470 --> 00:10:22.480 align:start position:0%
+no if we store it in memory if we have
+ 
+
+00:10:22.480 --> 00:10:23.829 align:start position:0%
+no if we store it in memory if we have
+like<00:10:22.640><c> a</c><00:10:22.880><c> cache</c>
+
+00:10:23.829 --> 00:10:23.839 align:start position:0%
+like a cache
+ 
+
+00:10:23.839 --> 00:10:27.110 align:start position:0%
+like a cache
+or<00:10:24.079><c> you</c><00:10:24.240><c> can</c><00:10:24.399><c> call</c><00:10:24.640><c> it</c><00:10:24.880><c> dp</c><00:10:26.240><c> we</c><00:10:26.399><c> do</c><00:10:26.640><c> not</c><00:10:26.880><c> have</c><00:10:27.040><c> to</c>
+
+00:10:27.110 --> 00:10:27.120 align:start position:0%
+or you can call it dp we do not have to
+ 
+
+00:10:27.120 --> 00:10:28.310 align:start position:0%
+or you can call it dp we do not have to
+repeat<00:10:27.680><c> these</c><00:10:28.000><c> sub</c>
+
+00:10:28.310 --> 00:10:28.320 align:start position:0%
+repeat these sub
+ 
+
+00:10:28.320 --> 00:10:31.590 align:start position:0%
+repeat these sub
+problems<00:10:29.360><c> so</c><00:10:29.519><c> the</c><00:10:29.760><c> way</c><00:10:30.160><c> i</c><00:10:30.399><c> just</c><00:10:30.720><c> solved</c><00:10:31.040><c> this</c>
+
+00:10:31.590 --> 00:10:31.600 align:start position:0%
+problems so the way i just solved this
+ 
+
+00:10:31.600 --> 00:10:35.269 align:start position:0%
+problems so the way i just solved this
+was<00:10:31.920><c> called</c><00:10:32.640><c> top</c><00:10:33.440><c> down</c><00:10:34.399><c> or</c><00:10:34.640><c> top</c><00:10:34.959><c> down</c>
+
+00:10:35.269 --> 00:10:35.279 align:start position:0%
+was called top down or top down
+ 
+
+00:10:35.279 --> 00:10:36.630 align:start position:0%
+was called top down or top down
+memoization
+
+00:10:36.630 --> 00:10:36.640 align:start position:0%
+memoization
+ 
+
+00:10:36.640 --> 00:10:38.470 align:start position:0%
+memoization
+because<00:10:37.040><c> we're</c><00:10:37.200><c> doing</c><00:10:37.440><c> it</c><00:10:37.600><c> recursively</c><00:10:38.320><c> but</c>
+
+00:10:38.470 --> 00:10:38.480 align:start position:0%
+because we're doing it recursively but
+ 
+
+00:10:38.480 --> 00:10:40.310 align:start position:0%
+because we're doing it recursively but
+you<00:10:38.640><c> can</c><00:10:38.959><c> actually</c><00:10:39.519><c> solve</c><00:10:39.920><c> this</c>
+
+00:10:40.310 --> 00:10:40.320 align:start position:0%
+you can actually solve this
+ 
+
+00:10:40.320 --> 00:10:43.110 align:start position:0%
+you can actually solve this
+with<00:10:40.640><c> a</c><00:10:40.880><c> true</c><00:10:41.279><c> dynamic</c><00:10:41.839><c> programming</c><00:10:42.399><c> solution</c>
+
+00:10:43.110 --> 00:10:43.120 align:start position:0%
+with a true dynamic programming solution
+ 
+
+00:10:43.120 --> 00:10:43.509 align:start position:0%
+with a true dynamic programming solution
+which
+
+00:10:43.509 --> 00:10:43.519 align:start position:0%
+which
+ 
+
+00:10:43.519 --> 00:10:46.949 align:start position:0%
+which
+is<00:10:44.160><c> bottom</c><00:10:44.800><c> up</c><00:10:45.440><c> and</c><00:10:45.680><c> it</c><00:10:45.920><c> means</c><00:10:46.240><c> exactly</c><00:10:46.720><c> what</c>
+
+00:10:46.949 --> 00:10:46.959 align:start position:0%
+is bottom up and it means exactly what
+ 
+
+00:10:46.959 --> 00:10:47.829 align:start position:0%
+is bottom up and it means exactly what
+it<00:10:47.120><c> says</c><00:10:47.360><c> so</c>
+
+00:10:47.829 --> 00:10:47.839 align:start position:0%
+it says so
+ 
+
+00:10:47.839 --> 00:10:51.030 align:start position:0%
+it says so
+bottom<00:10:48.720><c> up</c><00:10:49.200><c> basically</c><00:10:49.920><c> instead</c><00:10:50.720><c> of</c>
+
+00:10:51.030 --> 00:10:51.040 align:start position:0%
+bottom up basically instead of
+ 
+
+00:10:51.040 --> 00:10:53.110 align:start position:0%
+bottom up basically instead of
+solving<00:10:51.519><c> the</c><00:10:51.680><c> original</c><00:10:52.320><c> problem</c><00:10:52.720><c> where</c><00:10:52.959><c> the</c>
+
+00:10:53.110 --> 00:10:53.120 align:start position:0%
+solving the original problem where the
+ 
+
+00:10:53.120 --> 00:10:54.790 align:start position:0%
+solving the original problem where the
+amount<00:10:53.680><c> is</c><00:10:54.000><c> seven</c><00:10:54.399><c> we</c>
+
+00:10:54.790 --> 00:10:54.800 align:start position:0%
+amount is seven we
+ 
+
+00:10:54.800 --> 00:10:57.190 align:start position:0%
+amount is seven we
+solve<00:10:55.200><c> it</c><00:10:55.360><c> in</c><00:10:55.519><c> reverse</c><00:10:56.160><c> order</c><00:10:56.560><c> we</c><00:10:56.800><c> start</c><00:10:57.120><c> at</c>
+
+00:10:57.190 --> 00:10:57.200 align:start position:0%
+solve it in reverse order we start at
+ 
+
+00:10:57.200 --> 00:10:58.949 align:start position:0%
+solve it in reverse order we start at
+the<00:10:57.440><c> smallest</c><00:10:58.079><c> one</c><00:10:58.399><c> which</c><00:10:58.640><c> is</c>
+
+00:10:58.949 --> 00:10:58.959 align:start position:0%
+the smallest one which is
+ 
+
+00:10:58.959 --> 00:11:02.310 align:start position:0%
+the smallest one which is
+zero<00:10:59.440><c> right</c><00:10:59.920><c> this</c><00:11:00.320><c> zero</c><00:11:00.800><c> over</c><00:11:01.040><c> here</c><00:11:01.519><c> so</c><00:11:01.760><c> we</c>
+
+00:11:02.310 --> 00:11:02.320 align:start position:0%
+zero right this zero over here so we
+ 
+
+00:11:02.320 --> 00:11:05.590 align:start position:0%
+zero right this zero over here so we
+wanna<00:11:02.640><c> know</c><00:11:03.440><c> what's</c><00:11:04.160><c> the</c><00:11:04.480><c> minimum</c><00:11:05.040><c> number</c><00:11:05.360><c> of</c>
+
+00:11:05.590 --> 00:11:05.600 align:start position:0%
+wanna know what's the minimum number of
+ 
+
+00:11:05.600 --> 00:11:06.230 align:start position:0%
+wanna know what's the minimum number of
+coins
+
+00:11:06.230 --> 00:11:06.240 align:start position:0%
+coins
+ 
+
+00:11:06.240 --> 00:11:09.590 align:start position:0%
+coins
+we<00:11:06.399><c> can</c><00:11:06.560><c> call</c><00:11:06.800><c> it</c><00:11:07.040><c> dp</c><00:11:08.000><c> of</c><00:11:08.320><c> zero</c><00:11:09.040><c> so</c>
+
+00:11:09.590 --> 00:11:09.600 align:start position:0%
+we can call it dp of zero so
+ 
+
+00:11:09.600 --> 00:11:11.590 align:start position:0%
+we can call it dp of zero so
+for<00:11:09.839><c> amount</c><00:11:10.399><c> equals</c><00:11:10.800><c> zero</c><00:11:11.200><c> what's</c><00:11:11.440><c> the</c>
+
+00:11:11.590 --> 00:11:11.600 align:start position:0%
+for amount equals zero what's the
+ 
+
+00:11:11.600 --> 00:11:13.110 align:start position:0%
+for amount equals zero what's the
+minimum<00:11:12.079><c> number</c><00:11:12.320><c> of</c><00:11:12.560><c> coins</c>
+
+00:11:13.110 --> 00:11:13.120 align:start position:0%
+minimum number of coins
+ 
+
+00:11:13.120 --> 00:11:16.150 align:start position:0%
+minimum number of coins
+for<00:11:13.440><c> us</c><00:11:14.000><c> to</c><00:11:14.399><c> sum</c><00:11:15.120><c> to</c><00:11:15.360><c> zero</c>
+
+00:11:16.150 --> 00:11:16.160 align:start position:0%
+for us to sum to zero
+ 
+
+00:11:16.160 --> 00:11:18.790 align:start position:0%
+for us to sum to zero
+well<00:11:16.399><c> we</c><00:11:16.560><c> know</c><00:11:16.800><c> it</c><00:11:16.880><c> just</c><00:11:17.200><c> takes</c><00:11:17.760><c> zero</c><00:11:18.320><c> coins</c>
+
+00:11:18.790 --> 00:11:18.800 align:start position:0%
+well we know it just takes zero coins
+ 
+
+00:11:18.800 --> 00:11:19.350 align:start position:0%
+well we know it just takes zero coins
+right
+
+00:11:19.350 --> 00:11:19.360 align:start position:0%
+right
+ 
+
+00:11:19.360 --> 00:11:21.269 align:start position:0%
+right
+what<00:11:19.519><c> about</c><00:11:19.920><c> if</c><00:11:20.079><c> we</c><00:11:20.320><c> wanna</c><00:11:20.640><c> know</c><00:11:20.800><c> what's</c><00:11:21.120><c> the</c>
+
+00:11:21.269 --> 00:11:21.279 align:start position:0%
+what about if we wanna know what's the
+ 
+
+00:11:21.279 --> 00:11:22.949 align:start position:0%
+what about if we wanna know what's the
+minimum<00:11:21.760><c> number</c><00:11:22.000><c> of</c><00:11:22.240><c> coins</c>
+
+00:11:22.949 --> 00:11:22.959 align:start position:0%
+minimum number of coins
+ 
+
+00:11:22.959 --> 00:11:26.150 align:start position:0%
+minimum number of coins
+for<00:11:23.279><c> summing</c><00:11:23.839><c> to</c><00:11:24.320><c> one</c><00:11:25.040><c> well</c><00:11:25.519><c> we</c><00:11:25.760><c> can</c>
+
+00:11:26.150 --> 00:11:26.160 align:start position:0%
+for summing to one well we can
+ 
+
+00:11:26.160 --> 00:11:29.269 align:start position:0%
+for summing to one well we can
+look<00:11:26.560><c> at</c><00:11:26.800><c> our</c><00:11:26.959><c> coins</c><00:11:27.279><c> we</c><00:11:27.440><c> got</c><00:11:27.760><c> a</c><00:11:28.079><c> one</c><00:11:28.399><c> a</c><00:11:28.640><c> three</c><00:11:29.040><c> a</c>
+
+00:11:29.269 --> 00:11:29.279 align:start position:0%
+look at our coins we got a one a three a
+ 
+
+00:11:29.279 --> 00:11:30.630 align:start position:0%
+look at our coins we got a one a three a
+four<00:11:29.600><c> and</c><00:11:29.760><c> a</c><00:11:30.000><c> five</c>
+
+00:11:30.630 --> 00:11:30.640 align:start position:0%
+four and a five
+ 
+
+00:11:30.640 --> 00:11:33.030 align:start position:0%
+four and a five
+these<00:11:30.959><c> will</c><00:11:31.279><c> all</c><00:11:31.680><c> cause</c><00:11:31.920><c> it</c><00:11:32.079><c> to</c><00:11:32.240><c> be</c><00:11:32.640><c> greater</c>
+
+00:11:33.030 --> 00:11:33.040 align:start position:0%
+these will all cause it to be greater
+ 
+
+00:11:33.040 --> 00:11:34.710 align:start position:0%
+these will all cause it to be greater
+than<00:11:33.200><c> one</c><00:11:33.440><c> but</c><00:11:33.600><c> we</c><00:11:33.760><c> just</c><00:11:34.079><c> want</c><00:11:34.399><c> a</c>
+
+00:11:34.710 --> 00:11:34.720 align:start position:0%
+than one but we just want a
+ 
+
+00:11:34.720 --> 00:11:38.069 align:start position:0%
+than one but we just want a
+one<00:11:35.200><c> so</c><00:11:35.360><c> we</c><00:11:35.519><c> can</c><00:11:35.760><c> take</c><00:11:36.399><c> just</c><00:11:36.800><c> this</c><00:11:37.440><c> meaning</c><00:11:37.839><c> it</c>
+
+00:11:38.069 --> 00:11:38.079 align:start position:0%
+one so we can take just this meaning it
+ 
+
+00:11:38.079 --> 00:11:39.350 align:start position:0%
+one so we can take just this meaning it
+only<00:11:38.560><c> takes</c><00:11:38.880><c> us</c>
+
+00:11:39.350 --> 00:11:39.360 align:start position:0%
+only takes us
+ 
+
+00:11:39.360 --> 00:11:42.470 align:start position:0%
+only takes us
+one<00:11:39.680><c> coin</c><00:11:40.320><c> to</c><00:11:40.560><c> sum</c><00:11:40.880><c> to</c><00:11:41.120><c> 1.</c><00:11:41.760><c> and</c><00:11:41.920><c> then</c><00:11:42.160><c> we</c><00:11:42.320><c> can</c>
+
+00:11:42.470 --> 00:11:42.480 align:start position:0%
+one coin to sum to 1. and then we can
+ 
+
+00:11:42.480 --> 00:11:45.190 align:start position:0%
+one coin to sum to 1. and then we can
+just<00:11:42.720><c> repeat</c><00:11:43.279><c> that</c><00:11:43.519><c> process</c><00:11:44.079><c> right</c><00:11:44.320><c> so</c><00:11:44.480><c> for</c>
+
+00:11:45.190 --> 00:11:45.200 align:start position:0%
+just repeat that process right so for
+ 
+
+00:11:45.200 --> 00:11:48.470 align:start position:0%
+just repeat that process right so for
+a<00:11:45.440><c> dp</c><00:11:46.079><c> of</c><00:11:46.399><c> 2</c><00:11:46.720><c> so</c><00:11:46.959><c> we</c><00:11:47.120><c> want</c><00:11:47.600><c> how</c><00:11:47.760><c> many</c><00:11:48.000><c> coins</c>
+
+00:11:48.470 --> 00:11:48.480 align:start position:0%
+a dp of 2 so we want how many coins
+ 
+
+00:11:48.480 --> 00:11:51.509 align:start position:0%
+a dp of 2 so we want how many coins
+does<00:11:48.720><c> it</c><00:11:48.880><c> take</c><00:11:49.200><c> for</c><00:11:49.360><c> us</c><00:11:49.440><c> to</c><00:11:49.680><c> sum</c><00:11:50.000><c> to</c><00:11:50.240><c> 2</c><00:11:50.959><c> well</c>
+
+00:11:51.509 --> 00:11:51.519 align:start position:0%
+does it take for us to sum to 2 well
+ 
+
+00:11:51.519 --> 00:11:54.790 align:start position:0%
+does it take for us to sum to 2 well
+we<00:11:51.760><c> got</c><00:11:52.160><c> 4</c><00:11:52.480><c> coins</c><00:11:52.800><c> right</c><00:11:53.519><c> these</c><00:11:53.920><c> 3</c><00:11:54.320><c> will</c><00:11:54.560><c> cause</c>
+
+00:11:54.790 --> 00:11:54.800 align:start position:0%
+we got 4 coins right these 3 will cause
+ 
+
+00:11:54.800 --> 00:11:56.629 align:start position:0%
+we got 4 coins right these 3 will cause
+it<00:11:54.880><c> to</c><00:11:55.040><c> be</c><00:11:55.200><c> greater</c><00:11:55.600><c> than</c><00:11:55.839><c> two</c><00:11:56.079><c> so</c><00:11:56.240><c> we</c><00:11:56.399><c> don't</c>
+
+00:11:56.629 --> 00:11:56.639 align:start position:0%
+it to be greater than two so we don't
+ 
+
+00:11:56.639 --> 00:11:57.590 align:start position:0%
+it to be greater than two so we don't
+use<00:11:56.959><c> those</c>
+
+00:11:57.590 --> 00:11:57.600 align:start position:0%
+use those
+ 
+
+00:11:57.600 --> 00:12:00.310 align:start position:0%
+use those
+but<00:11:57.760><c> what</c><00:11:58.000><c> about</c><00:11:58.240><c> this</c><00:11:58.560><c> one</c><00:11:58.959><c> okay</c><00:11:59.680><c> we</c><00:11:59.839><c> get</c><00:12:00.000><c> a</c>
+
+00:12:00.310 --> 00:12:00.320 align:start position:0%
+but what about this one okay we get a
+ 
+
+00:12:00.320 --> 00:12:00.790 align:start position:0%
+but what about this one okay we get a
+one
+
+00:12:00.790 --> 00:12:00.800 align:start position:0%
+one
+ 
+
+00:12:00.800 --> 00:12:03.670 align:start position:0%
+one
+so<00:12:00.959><c> it</c><00:12:01.120><c> takes</c><00:12:01.680><c> one</c><00:12:02.000><c> coin</c><00:12:02.320><c> to</c><00:12:02.560><c> sum</c><00:12:03.040><c> to</c><00:12:03.279><c> one</c><00:12:03.519><c> but</c>
+
+00:12:03.670 --> 00:12:03.680 align:start position:0%
+so it takes one coin to sum to one but
+ 
+
+00:12:03.680 --> 00:12:05.190 align:start position:0%
+so it takes one coin to sum to one but
+that's<00:12:03.920><c> something</c><00:12:04.320><c> we</c><00:12:04.560><c> already</c>
+
+00:12:05.190 --> 00:12:05.200 align:start position:0%
+that's something we already
+ 
+
+00:12:05.200 --> 00:12:08.710 align:start position:0%
+that's something we already
+knew<00:12:06.320><c> so</c><00:12:06.480><c> if</c><00:12:06.720><c> we</c><00:12:06.959><c> want</c><00:12:07.200><c> to</c><00:12:07.279><c> compute</c><00:12:07.920><c> dp</c>
+
+00:12:08.710 --> 00:12:08.720 align:start position:0%
+knew so if we want to compute dp
+ 
+
+00:12:08.720 --> 00:12:12.069 align:start position:0%
+knew so if we want to compute dp
+of<00:12:09.120><c> two</c><00:12:09.920><c> we</c><00:12:10.160><c> can</c><00:12:10.480><c> take</c><00:12:11.200><c> one</c>
+
+00:12:12.069 --> 00:12:12.079 align:start position:0%
+of two we can take one
+ 
+
+00:12:12.079 --> 00:12:16.310 align:start position:0%
+of two we can take one
+plus<00:12:13.279><c> dp</c><00:12:14.399><c> of</c><00:12:14.800><c> one</c>
+
+00:12:16.310 --> 00:12:16.320 align:start position:0%
+plus dp of one
+ 
+
+00:12:16.320 --> 00:12:18.710 align:start position:0%
+plus dp of one
+because<00:12:16.800><c> we</c><00:12:16.959><c> know</c><00:12:17.360><c> these</c><00:12:17.760><c> three</c><00:12:18.160><c> coins</c><00:12:18.560><c> are</c>
+
+00:12:18.710 --> 00:12:18.720 align:start position:0%
+because we know these three coins are
+ 
+
+00:12:18.720 --> 00:12:19.750 align:start position:0%
+because we know these three coins are
+going<00:12:18.800><c> to</c><00:12:18.959><c> be</c><00:12:19.279><c> too</c>
+
+00:12:19.750 --> 00:12:19.760 align:start position:0%
+going to be too
+ 
+
+00:12:19.760 --> 00:12:23.110 align:start position:0%
+going to be too
+big<00:12:20.480><c> but</c><00:12:20.639><c> we</c><00:12:20.880><c> have</c><00:12:21.120><c> a</c><00:12:21.360><c> one</c><00:12:21.760><c> over</c><00:12:22.079><c> here</c>
+
+00:12:23.110 --> 00:12:23.120 align:start position:0%
+big but we have a one over here
+ 
+
+00:12:23.120 --> 00:12:26.629 align:start position:0%
+big but we have a one over here
+that's<00:12:23.519><c> value</c><00:12:24.079><c> one</c><00:12:24.639><c> and</c><00:12:24.800><c> we</c><00:12:25.120><c> also</c><00:12:25.760><c> know</c>
+
+00:12:26.629 --> 00:12:26.639 align:start position:0%
+that's value one and we also know
+ 
+
+00:12:26.639 --> 00:12:29.269 align:start position:0%
+that's value one and we also know
+that<00:12:26.880><c> that's</c><00:12:27.279><c> not</c><00:12:27.519><c> enough</c><00:12:27.920><c> right</c><00:12:28.320><c> two</c><00:12:28.639><c> minus</c>
+
+00:12:29.269 --> 00:12:29.279 align:start position:0%
+that that's not enough right two minus
+ 
+
+00:12:29.279 --> 00:12:29.910 align:start position:0%
+that that's not enough right two minus
+one
+
+00:12:29.910 --> 00:12:29.920 align:start position:0%
+one
+ 
+
+00:12:29.920 --> 00:12:31.990 align:start position:0%
+one
+still<00:12:30.320><c> leaves</c><00:12:30.560><c> us</c><00:12:30.720><c> with</c><00:12:30.959><c> a</c><00:12:31.040><c> remaining</c><00:12:31.600><c> amount</c>
+
+00:12:31.990 --> 00:12:32.000 align:start position:0%
+still leaves us with a remaining amount
+ 
+
+00:12:32.000 --> 00:12:34.790 align:start position:0%
+still leaves us with a remaining amount
+of<00:12:32.320><c> one</c><00:12:32.800><c> but</c><00:12:33.040><c> we</c><00:12:33.279><c> just</c><00:12:33.680><c> computed</c><00:12:34.480><c> that</c>
+
+00:12:34.790 --> 00:12:34.800 align:start position:0%
+of one but we just computed that
+ 
+
+00:12:34.800 --> 00:12:38.150 align:start position:0%
+of one but we just computed that
+up<00:12:34.959><c> here</c><00:12:35.279><c> we</c><00:12:35.519><c> know</c><00:12:36.160><c> for</c><00:12:36.880><c> us</c><00:12:37.200><c> to</c><00:12:37.600><c> get</c><00:12:37.920><c> the</c>
+
+00:12:38.150 --> 00:12:38.160 align:start position:0%
+up here we know for us to get the
+ 
+
+00:12:38.160 --> 00:12:39.910 align:start position:0%
+up here we know for us to get the
+minimum<00:12:38.639><c> number</c><00:12:38.880><c> of</c><00:12:39.120><c> coins</c>
+
+00:12:39.910 --> 00:12:39.920 align:start position:0%
+minimum number of coins
+ 
+
+00:12:39.920 --> 00:12:42.949 align:start position:0%
+minimum number of coins
+to<00:12:40.160><c> get</c><00:12:40.399><c> a</c><00:12:40.560><c> value</c><00:12:41.040><c> one</c><00:12:41.360><c> it</c><00:12:41.680><c> only</c><00:12:42.320><c> takes</c>
+
+00:12:42.949 --> 00:12:42.959 align:start position:0%
+to get a value one it only takes
+ 
+
+00:12:42.959 --> 00:12:46.550 align:start position:0%
+to get a value one it only takes
+one<00:12:43.519><c> coin</c><00:12:44.160><c> so</c><00:12:44.320><c> that</c><00:12:44.560><c> means</c><00:12:45.279><c> that</c><00:12:45.600><c> if</c><00:12:45.760><c> we</c><00:12:46.000><c> want</c>
+
+00:12:46.550 --> 00:12:46.560 align:start position:0%
+one coin so that means that if we want
+ 
+
+00:12:46.560 --> 00:12:49.350 align:start position:0%
+one coin so that means that if we want
+to<00:12:46.720><c> get</c><00:12:46.959><c> amount</c><00:12:47.360><c> two</c><00:12:47.600><c> it</c><00:12:47.760><c> takes</c><00:12:48.160><c> at</c><00:12:48.399><c> least</c><00:12:48.959><c> two</c>
+
+00:12:49.350 --> 00:12:49.360 align:start position:0%
+to get amount two it takes at least two
+ 
+
+00:12:49.360 --> 00:12:50.150 align:start position:0%
+to get amount two it takes at least two
+coins
+
+00:12:50.150 --> 00:12:50.160 align:start position:0%
+coins
+ 
+
+00:12:50.160 --> 00:12:53.509 align:start position:0%
+coins
+and<00:12:50.320><c> let's</c><00:12:50.560><c> say</c><00:12:50.800><c> we</c><00:12:51.040><c> repeat</c><00:12:51.760><c> this</c><00:12:52.240><c> process</c><00:12:53.120><c> for</c>
+
+00:12:53.509 --> 00:12:53.519 align:start position:0%
+and let's say we repeat this process for
+ 
+
+00:12:53.519 --> 00:12:57.110 align:start position:0%
+and let's say we repeat this process for
+all<00:12:53.920><c> values</c><00:12:54.560><c> for</c><00:12:54.800><c> all</c><00:12:55.120><c> amounts</c><00:12:56.399><c> from</c>
+
+00:12:57.110 --> 00:12:57.120 align:start position:0%
+all values for all amounts from
+ 
+
+00:12:57.120 --> 00:12:59.750 align:start position:0%
+all values for all amounts from
+from<00:12:57.440><c> all</c><00:12:57.600><c> the</c><00:12:57.760><c> way</c><00:12:58.240><c> starting</c><00:12:58.720><c> at</c><00:12:58.880><c> zero</c><00:12:59.519><c> all</c>
+
+00:12:59.750 --> 00:12:59.760 align:start position:0%
+from all the way starting at zero all
+ 
+
+00:12:59.760 --> 00:13:00.550 align:start position:0%
+from all the way starting at zero all
+the<00:12:59.920><c> way</c>
+
+00:13:00.550 --> 00:13:00.560 align:start position:0%
+the way
+ 
+
+00:13:00.560 --> 00:13:04.629 align:start position:0%
+the way
+to<00:13:01.040><c> seven</c><00:13:01.760><c> over</c><00:13:02.079><c> here</c><00:13:02.880><c> so</c><00:13:03.120><c> i</c><00:13:03.360><c> computed</c><00:13:03.920><c> it</c><00:13:04.079><c> from</c>
+
+00:13:04.629 --> 00:13:04.639 align:start position:0%
+to seven over here so i computed it from
+ 
+
+00:13:04.639 --> 00:13:07.269 align:start position:0%
+to seven over here so i computed it from
+all<00:13:04.800><c> the</c><00:13:04.959><c> way</c><00:13:05.200><c> from</c><00:13:05.519><c> zero</c><00:13:06.079><c> to</c><00:13:06.480><c> six</c><00:13:06.880><c> but</c><00:13:07.040><c> the</c>
+
+00:13:07.269 --> 00:13:07.279 align:start position:0%
+all the way from zero to six but the
+ 
+
+00:13:07.279 --> 00:13:08.949 align:start position:0%
+all the way from zero to six but the
+last<00:13:07.600><c> one</c><00:13:07.839><c> we</c><00:13:08.079><c> really</c>
+
+00:13:08.949 --> 00:13:08.959 align:start position:0%
+last one we really
+ 
+
+00:13:08.959 --> 00:13:10.949 align:start position:0%
+last one we really
+really<00:13:09.279><c> want</c><00:13:09.600><c> is</c><00:13:09.760><c> amount</c><00:13:10.160><c> equals</c><00:13:10.560><c> seven</c><00:13:10.800><c> so</c>
+
+00:13:10.949 --> 00:13:10.959 align:start position:0%
+really want is amount equals seven so
+ 
+
+00:13:10.959 --> 00:13:11.990 align:start position:0%
+really want is amount equals seven so
+let's<00:13:11.200><c> compute</c><00:13:11.600><c> that</c>
+
+00:13:11.990 --> 00:13:12.000 align:start position:0%
+let's compute that
+ 
+
+00:13:12.000 --> 00:13:16.069 align:start position:0%
+let's compute that
+dp<00:13:12.959><c> of</c><00:13:13.680><c> seven</c><00:13:14.959><c> how</c><00:13:15.120><c> do</c><00:13:15.279><c> we</c><00:13:15.600><c> get</c><00:13:15.760><c> it</c>
+
+00:13:16.069 --> 00:13:16.079 align:start position:0%
+dp of seven how do we get it
+ 
+
+00:13:16.079 --> 00:13:18.790 align:start position:0%
+dp of seven how do we get it
+well<00:13:16.399><c> we</c><00:13:16.639><c> still</c><00:13:17.040><c> kind</c><00:13:17.279><c> of</c><00:13:17.440><c> have</c><00:13:17.600><c> to</c><00:13:18.320><c> check</c>
+
+00:13:18.790 --> 00:13:18.800 align:start position:0%
+well we still kind of have to check
+ 
+
+00:13:18.800 --> 00:13:19.990 align:start position:0%
+well we still kind of have to check
+every<00:13:19.120><c> single</c><00:13:19.519><c> coin</c><00:13:19.760><c> so</c>
+
+00:13:19.990 --> 00:13:20.000 align:start position:0%
+every single coin so
+ 
+
+00:13:20.000 --> 00:13:23.269 align:start position:0%
+every single coin so
+what<00:13:20.160><c> happens</c><00:13:20.480><c> if</c><00:13:20.639><c> we</c><00:13:20.880><c> get</c><00:13:21.279><c> coin</c><00:13:22.079><c> one</c>
+
+00:13:23.269 --> 00:13:23.279 align:start position:0%
+what happens if we get coin one
+ 
+
+00:13:23.279 --> 00:13:26.550 align:start position:0%
+what happens if we get coin one
+then<00:13:23.920><c> we</c><00:13:24.160><c> are</c><00:13:24.399><c> com</c><00:13:24.800><c> then</c><00:13:25.040><c> we</c><00:13:25.519><c> take</c><00:13:25.839><c> the</c><00:13:26.000><c> result</c>
+
+00:13:26.550 --> 00:13:26.560 align:start position:0%
+then we are com then we take the result
+ 
+
+00:13:26.560 --> 00:13:28.949 align:start position:0%
+then we are com then we take the result
+of<00:13:26.880><c> one</c><00:13:27.519><c> meaning</c><00:13:27.839><c> that's</c><00:13:28.079><c> how</c><00:13:28.160><c> many</c><00:13:28.480><c> coins</c><00:13:28.800><c> we</c>
+
+00:13:28.949 --> 00:13:28.959 align:start position:0%
+of one meaning that's how many coins we
+ 
+
+00:13:28.959 --> 00:13:30.790 align:start position:0%
+of one meaning that's how many coins we
+use<00:13:29.200><c> not</c><00:13:29.440><c> the</c><00:13:29.680><c> value</c><00:13:30.240><c> one</c>
+
+00:13:30.790 --> 00:13:30.800 align:start position:0%
+use not the value one
+ 
+
+00:13:30.800 --> 00:13:33.030 align:start position:0%
+use not the value one
+because<00:13:31.040><c> we</c><00:13:31.200><c> needed</c><00:13:31.600><c> one</c><00:13:31.839><c> coin</c><00:13:32.320><c> with</c><00:13:32.560><c> a</c><00:13:32.639><c> value</c>
+
+00:13:33.030 --> 00:13:33.040 align:start position:0%
+because we needed one coin with a value
+ 
+
+00:13:33.040 --> 00:13:35.350 align:start position:0%
+because we needed one coin with a value
+one<00:13:33.519><c> and</c><00:13:33.760><c> now</c><00:13:33.920><c> we</c><00:13:34.079><c> have</c><00:13:34.240><c> a</c><00:13:34.399><c> remaining</c><00:13:34.959><c> amount</c>
+
+00:13:35.350 --> 00:13:35.360 align:start position:0%
+one and now we have a remaining amount
+ 
+
+00:13:35.360 --> 00:13:35.829 align:start position:0%
+one and now we have a remaining amount
+of
+
+00:13:35.829 --> 00:13:35.839 align:start position:0%
+of
+ 
+
+00:13:35.839 --> 00:13:38.790 align:start position:0%
+of
+six<00:13:36.240><c> right</c><00:13:36.560><c> dp</c><00:13:37.200><c> of</c><00:13:37.440><c> six</c><00:13:37.680><c> so</c><00:13:37.839><c> how</c><00:13:38.000><c> many</c><00:13:38.399><c> coins</c>
+
+00:13:38.790 --> 00:13:38.800 align:start position:0%
+six right dp of six so how many coins
+ 
+
+00:13:38.800 --> 00:13:39.509 align:start position:0%
+six right dp of six so how many coins
+did<00:13:38.959><c> it</c><00:13:39.040><c> take</c>
+
+00:13:39.509 --> 00:13:39.519 align:start position:0%
+did it take
+ 
+
+00:13:39.519 --> 00:13:42.389 align:start position:0%
+did it take
+for<00:13:39.760><c> us</c><00:13:39.920><c> to</c><00:13:40.079><c> compute</c><00:13:40.639><c> dp</c><00:13:41.360><c> of</c><00:13:41.600><c> six</c><00:13:41.920><c> well</c><00:13:42.160><c> we</c>
+
+00:13:42.389 --> 00:13:42.399 align:start position:0%
+for us to compute dp of six well we
+ 
+
+00:13:42.399 --> 00:13:44.069 align:start position:0%
+for us to compute dp of six well we
+already<00:13:42.800><c> computed</c><00:13:43.279><c> that</c><00:13:43.519><c> it</c><00:13:43.680><c> took</c>
+
+00:13:44.069 --> 00:13:44.079 align:start position:0%
+already computed that it took
+ 
+
+00:13:44.079 --> 00:13:47.110 align:start position:0%
+already computed that it took
+two<00:13:44.800><c> so</c><00:13:45.040><c> we</c><00:13:45.279><c> get</c><00:13:45.839><c> one</c><00:13:46.079><c> plus</c><00:13:46.480><c> two</c>
+
+00:13:47.110 --> 00:13:47.120 align:start position:0%
+two so we get one plus two
+ 
+
+00:13:47.120 --> 00:13:50.870 align:start position:0%
+two so we get one plus two
+equals<00:13:47.920><c> three</c><00:13:48.480><c> so</c><00:13:48.639><c> that's</c><00:13:49.279><c> one</c><00:13:50.000><c> possible</c>
+
+00:13:50.870 --> 00:13:50.880 align:start position:0%
+equals three so that's one possible
+ 
+
+00:13:50.880 --> 00:13:54.230 align:start position:0%
+equals three so that's one possible
+solution<00:13:51.839><c> but</c><00:13:52.079><c> is</c><00:13:52.240><c> it</c><00:13:52.320><c> the</c><00:13:52.639><c> minimal</c><00:13:53.199><c> solution</c>
+
+00:13:54.230 --> 00:13:54.240 align:start position:0%
+solution but is it the minimal solution
+ 
+
+00:13:54.240 --> 00:13:57.509 align:start position:0%
+solution but is it the minimal solution
+well<00:13:54.480><c> let's</c><00:13:54.880><c> look</c><00:13:55.199><c> at</c><00:13:55.440><c> if</c><00:13:55.680><c> we</c><00:13:55.920><c> use</c><00:13:56.560><c> the</c><00:13:56.800><c> coin</c>
+
+00:13:57.509 --> 00:13:57.519 align:start position:0%
+well let's look at if we use the coin
+ 
+
+00:13:57.519 --> 00:14:01.110 align:start position:0%
+well let's look at if we use the coin
+value<00:13:58.399><c> three</c><00:13:59.120><c> over</c><00:13:59.519><c> here</c><00:14:00.000><c> well</c><00:14:00.320><c> it</c><00:14:00.399><c> takes</c><00:14:00.720><c> us</c>
+
+00:14:01.110 --> 00:14:01.120 align:start position:0%
+value three over here well it takes us
+ 
+
+00:14:01.120 --> 00:14:04.870 align:start position:0%
+value three over here well it takes us
+one<00:14:01.440><c> coin</c><00:14:02.079><c> so</c><00:14:02.240><c> we</c><00:14:02.800><c> take</c><00:14:03.360><c> one</c><00:14:03.920><c> plus</c>
+
+00:14:04.870 --> 00:14:04.880 align:start position:0%
+one coin so we take one plus
+ 
+
+00:14:04.880 --> 00:14:08.230 align:start position:0%
+one coin so we take one plus
+dp<00:14:05.920><c> of</c><00:14:06.639><c> four</c><00:14:07.040><c> because</c><00:14:07.360><c> that's</c><00:14:07.600><c> the</c><00:14:07.760><c> remaining</c>
+
+00:14:08.230 --> 00:14:08.240 align:start position:0%
+dp of four because that's the remaining
+ 
+
+00:14:08.240 --> 00:14:09.670 align:start position:0%
+dp of four because that's the remaining
+amount<00:14:08.560><c> we</c><00:14:08.720><c> have</c><00:14:08.800><c> to</c><00:14:09.040><c> use</c>
+
+00:14:09.670 --> 00:14:09.680 align:start position:0%
+amount we have to use
+ 
+
+00:14:09.680 --> 00:14:12.949 align:start position:0%
+amount we have to use
+if<00:14:09.920><c> we</c><00:14:10.240><c> take</c><00:14:10.959><c> a</c><00:14:11.120><c> coin</c><00:14:11.440><c> value</c><00:14:11.920><c> of</c><00:14:12.160><c> three</c><00:14:12.639><c> and</c>
+
+00:14:12.949 --> 00:14:12.959 align:start position:0%
+if we take a coin value of three and
+ 
+
+00:14:12.959 --> 00:14:15.990 align:start position:0%
+if we take a coin value of three and
+lucky<00:14:13.519><c> luckily</c><00:14:14.160><c> we</c><00:14:14.639><c> already</c><00:14:15.040><c> computed</c><00:14:15.519><c> dp</c>
+
+00:14:15.990 --> 00:14:16.000 align:start position:0%
+lucky luckily we already computed dp
+ 
+
+00:14:16.000 --> 00:14:19.910 align:start position:0%
+lucky luckily we already computed dp
+of<00:14:16.160><c> four</c><00:14:16.959><c> it</c><00:14:17.360><c> is</c><00:14:18.079><c> one</c><00:14:18.639><c> so</c><00:14:18.880><c> then</c><00:14:19.120><c> we</c><00:14:19.279><c> get</c><00:14:19.600><c> one</c>
+
+00:14:19.910 --> 00:14:19.920 align:start position:0%
+of four it is one so then we get one
+ 
+
+00:14:19.920 --> 00:14:20.389 align:start position:0%
+of four it is one so then we get one
+plus
+
+00:14:20.389 --> 00:14:20.399 align:start position:0%
+plus
+ 
+
+00:14:20.399 --> 00:14:23.590 align:start position:0%
+plus
+one<00:14:21.199><c> equals</c><00:14:22.160><c> two</c><00:14:22.560><c> and</c><00:14:22.720><c> we</c><00:14:23.040><c> know</c><00:14:23.279><c> that</c>
+
+00:14:23.590 --> 00:14:23.600 align:start position:0%
+one equals two and we know that
+ 
+
+00:14:23.600 --> 00:14:27.030 align:start position:0%
+one equals two and we know that
+this<00:14:24.079><c> is</c><00:14:24.320><c> the</c><00:14:24.639><c> real</c><00:14:25.279><c> result</c><00:14:25.839><c> that</c><00:14:26.079><c> we</c><00:14:26.320><c> want</c>
+
+00:14:27.030 --> 00:14:27.040 align:start position:0%
+this is the real result that we want
+ 
+
+00:14:27.040 --> 00:14:29.670 align:start position:0%
+this is the real result that we want
+but<00:14:27.440><c> even</c><00:14:28.000><c> before</c><00:14:28.480><c> we</c><00:14:28.720><c> know</c><00:14:28.959><c> that</c><00:14:29.279><c> we</c><00:14:29.440><c> would</c>
+
+00:14:29.670 --> 00:14:29.680 align:start position:0%
+but even before we know that we would
+ 
+
+00:14:29.680 --> 00:14:30.550 align:start position:0%
+but even before we know that we would
+repeat<00:14:30.240><c> this</c>
+
+00:14:30.550 --> 00:14:30.560 align:start position:0%
+repeat this
+ 
+
+00:14:30.560 --> 00:14:33.590 align:start position:0%
+repeat this
+process<00:14:31.360><c> so</c><00:14:31.680><c> technically</c><00:14:32.480><c> if</c><00:14:32.720><c> we</c><00:14:33.040><c> do</c><00:14:33.279><c> the</c>
+
+00:14:33.590 --> 00:14:33.600 align:start position:0%
+process so technically if we do the
+ 
+
+00:14:33.600 --> 00:14:34.310 align:start position:0%
+process so technically if we do the
+bottom-up
+
+00:14:34.310 --> 00:14:34.320 align:start position:0%
+bottom-up
+ 
+
+00:14:34.320 --> 00:14:36.230 align:start position:0%
+bottom-up
+dynamic<00:14:34.800><c> programming</c><00:14:35.360><c> solution</c><00:14:35.920><c> we</c><00:14:36.079><c> are</c>
+
+00:14:36.230 --> 00:14:36.240 align:start position:0%
+dynamic programming solution we are
+ 
+
+00:14:36.240 --> 00:14:37.990 align:start position:0%
+dynamic programming solution we are
+going<00:14:36.320><c> to</c><00:14:36.399><c> repeat</c><00:14:36.880><c> this</c><00:14:37.120><c> for</c><00:14:37.279><c> the</c><00:14:37.440><c> remaining</c>
+
+00:14:37.990 --> 00:14:38.000 align:start position:0%
+going to repeat this for the remaining
+ 
+
+00:14:38.000 --> 00:14:40.470 align:start position:0%
+going to repeat this for the remaining
+two<00:14:38.240><c> coins</c><00:14:38.639><c> so</c><00:14:38.800><c> for</c><00:14:39.040><c> four</c><00:14:39.360><c> we</c><00:14:39.519><c> would</c><00:14:39.680><c> get</c><00:14:40.000><c> one</c>
+
+00:14:40.470 --> 00:14:40.480 align:start position:0%
+two coins so for four we would get one
+ 
+
+00:14:40.480 --> 00:14:43.269 align:start position:0%
+two coins so for four we would get one
+so<00:14:40.639><c> we'd</c><00:14:40.880><c> have</c><00:14:41.120><c> one</c><00:14:41.440><c> plus</c><00:14:41.920><c> dp</c><00:14:42.480><c> of</c><00:14:42.800><c> three</c>
+
+00:14:43.269 --> 00:14:43.279 align:start position:0%
+so we'd have one plus dp of three
+ 
+
+00:14:43.279 --> 00:14:44.069 align:start position:0%
+so we'd have one plus dp of three
+because<00:14:43.680><c> four</c>
+
+00:14:44.069 --> 00:14:44.079 align:start position:0%
+because four
+ 
+
+00:14:44.079 --> 00:14:46.790 align:start position:0%
+because four
+minor<00:14:45.040><c> because</c><00:14:45.360><c> seven</c><00:14:45.760><c> minus</c><00:14:46.320><c> four</c><00:14:46.560><c> would</c>
+
+00:14:46.790 --> 00:14:46.800 align:start position:0%
+minor because seven minus four would
+ 
+
+00:14:46.800 --> 00:14:48.389 align:start position:0%
+minor because seven minus four would
+leave<00:14:47.040><c> us</c><00:14:47.199><c> with</c><00:14:47.360><c> a</c><00:14:47.440><c> remaining</c><00:14:47.920><c> amount</c><00:14:48.240><c> of</c>
+
+00:14:48.389 --> 00:14:48.399 align:start position:0%
+leave us with a remaining amount of
+ 
+
+00:14:48.399 --> 00:14:49.590 align:start position:0%
+leave us with a remaining amount of
+three
+
+00:14:49.590 --> 00:14:49.600 align:start position:0%
+three
+ 
+
+00:14:49.600 --> 00:14:52.629 align:start position:0%
+three
+and<00:14:49.760><c> in</c><00:14:49.920><c> that</c><00:14:50.240><c> case</c><00:14:50.639><c> we</c><00:14:50.800><c> know</c><00:14:51.040><c> dp</c><00:14:51.519><c> of</c><00:14:51.760><c> three</c><00:14:52.240><c> is</c>
+
+00:14:52.629 --> 00:14:52.639 align:start position:0%
+and in that case we know dp of three is
+ 
+
+00:14:52.639 --> 00:14:56.550 align:start position:0%
+and in that case we know dp of three is
+one<00:14:53.839><c> so</c><00:14:54.079><c> we</c><00:14:54.320><c> would</c><00:14:54.720><c> have</c><00:14:55.440><c> the</c><00:14:55.600><c> total</c><00:14:56.000><c> of</c><00:14:56.160><c> two</c>
+
+00:14:56.550 --> 00:14:56.560 align:start position:0%
+one so we would have the total of two
+ 
+
+00:14:56.560 --> 00:14:58.389 align:start position:0%
+one so we would have the total of two
+again<00:14:57.120><c> so</c><00:14:57.279><c> we</c><00:14:57.440><c> see</c><00:14:57.600><c> that</c><00:14:57.680><c> there</c><00:14:57.839><c> are</c><00:14:58.000><c> actually</c>
+
+00:14:58.389 --> 00:14:58.399 align:start position:0%
+again so we see that there are actually
+ 
+
+00:14:58.399 --> 00:15:00.550 align:start position:0%
+again so we see that there are actually
+two<00:14:59.440><c> solutions</c>
+
+00:15:00.550 --> 00:15:00.560 align:start position:0%
+two solutions
+ 
+
+00:15:00.560 --> 00:15:02.790 align:start position:0%
+two solutions
+and<00:15:00.800><c> we</c><00:15:00.959><c> know</c><00:15:01.199><c> we</c><00:15:01.360><c> have</c><00:15:01.680><c> one</c><00:15:01.920><c> last</c><00:15:02.399><c> coin</c><00:15:02.639><c> that</c>
+
+00:15:02.790 --> 00:15:02.800 align:start position:0%
+and we know we have one last coin that
+ 
+
+00:15:02.800 --> 00:15:04.470 align:start position:0%
+and we know we have one last coin that
+we<00:15:03.040><c> technically</c><00:15:03.519><c> have</c><00:15:03.680><c> to</c><00:15:03.920><c> check</c>
+
+00:15:04.470 --> 00:15:04.480 align:start position:0%
+we technically have to check
+ 
+
+00:15:04.480 --> 00:15:08.150 align:start position:0%
+we technically have to check
+coin<00:15:05.040><c> five</c><00:15:05.760><c> so</c><00:15:06.000><c> we'd</c><00:15:06.240><c> use</c><00:15:06.720><c> one</c><00:15:07.040><c> coin</c><00:15:07.440><c> for</c><00:15:07.600><c> value</c>
+
+00:15:08.150 --> 00:15:08.160 align:start position:0%
+coin five so we'd use one coin for value
+ 
+
+00:15:08.160 --> 00:15:08.790 align:start position:0%
+coin five so we'd use one coin for value
+five
+
+00:15:08.790 --> 00:15:08.800 align:start position:0%
+five
+ 
+
+00:15:08.800 --> 00:15:10.949 align:start position:0%
+five
+and<00:15:09.040><c> then</c><00:15:09.279><c> the</c><00:15:09.519><c> remaining</c><00:15:10.079><c> amount</c><00:15:10.399><c> we'd</c><00:15:10.639><c> wanna</c>
+
+00:15:10.949 --> 00:15:10.959 align:start position:0%
+and then the remaining amount we'd wanna
+ 
+
+00:15:10.959 --> 00:15:13.670 align:start position:0%
+and then the remaining amount we'd wanna
+compute<00:15:11.440><c> is</c><00:15:11.680><c> dp</c><00:15:12.160><c> of</c><00:15:12.399><c> 2</c>
+
+00:15:13.670 --> 00:15:13.680 align:start position:0%
+compute is dp of 2
+ 
+
+00:15:13.680 --> 00:15:17.269 align:start position:0%
+compute is dp of 2
+and<00:15:13.920><c> we</c><00:15:14.160><c> know</c><00:15:14.399><c> that</c><00:15:14.639><c> dp</c><00:15:15.040><c> of</c><00:15:15.279><c> 2</c><00:15:16.000><c> is</c><00:15:16.320><c> value</c><00:15:16.800><c> 2</c><00:15:17.040><c> so</c>
+
+00:15:17.269 --> 00:15:17.279 align:start position:0%
+and we know that dp of 2 is value 2 so
+ 
+
+00:15:17.279 --> 00:15:18.629 align:start position:0%
+and we know that dp of 2 is value 2 so
+this<00:15:17.519><c> would</c><00:15:17.760><c> result</c><00:15:18.160><c> in</c><00:15:18.399><c> a</c>
+
+00:15:18.629 --> 00:15:18.639 align:start position:0%
+this would result in a
+ 
+
+00:15:18.639 --> 00:15:21.750 align:start position:0%
+this would result in a
+3<00:15:19.120><c> which</c><00:15:19.440><c> is</c><00:15:19.760><c> not</c><00:15:20.079><c> what</c><00:15:20.240><c> we</c><00:15:20.480><c> want</c><00:15:20.880><c> right</c><00:15:21.440><c> so</c>
+
+00:15:21.750 --> 00:15:21.760 align:start position:0%
+3 which is not what we want right so
+ 
+
+00:15:21.760 --> 00:15:26.310 align:start position:0%
+3 which is not what we want right so
+from<00:15:22.320><c> these</c><00:15:23.199><c> 4</c><00:15:23.680><c> values</c><00:15:24.160><c> that</c><00:15:24.320><c> we</c><00:15:24.839><c> computed</c>
+
+00:15:26.310 --> 00:15:26.320 align:start position:0%
+from these 4 values that we computed
+ 
+
+00:15:26.320 --> 00:15:28.069 align:start position:0%
+from these 4 values that we computed
+we<00:15:26.480><c> want</c><00:15:26.639><c> to</c><00:15:26.800><c> take</c><00:15:26.959><c> the</c><00:15:27.199><c> minimum</c><00:15:27.600><c> which</c><00:15:27.839><c> we</c>
+
+00:15:28.069 --> 00:15:28.079 align:start position:0%
+we want to take the minimum which we
+ 
+
+00:15:28.079 --> 00:15:29.350 align:start position:0%
+we want to take the minimum which we
+know<00:15:28.320><c> is</c><00:15:28.639><c> 2</c>
+
+00:15:29.350 --> 00:15:29.360 align:start position:0%
+know is 2
+ 
+
+00:15:29.360 --> 00:15:32.629 align:start position:0%
+know is 2
+so<00:15:29.600><c> we</c><00:15:30.240><c> can</c><00:15:30.480><c> return</c><00:15:31.360><c> 2</c><00:15:31.680><c> in</c><00:15:31.839><c> this</c><00:15:32.079><c> case</c>
+
+00:15:32.629 --> 00:15:32.639 align:start position:0%
+so we can return 2 in this case
+ 
+
+00:15:32.639 --> 00:15:34.790 align:start position:0%
+so we can return 2 in this case
+so<00:15:32.800><c> that</c><00:15:32.959><c> took</c><00:15:33.199><c> us</c><00:15:33.360><c> forever</c><00:15:33.839><c> but</c><00:15:34.160><c> luckily</c><00:15:34.560><c> the</c>
+
+00:15:34.790 --> 00:15:34.800 align:start position:0%
+so that took us forever but luckily the
+ 
+
+00:15:34.800 --> 00:15:37.590 align:start position:0%
+so that took us forever but luckily the
+code<00:15:35.199><c> is</c><00:15:35.360><c> a</c><00:15:35.440><c> lot</c><00:15:35.759><c> shorter</c><00:15:36.320><c> so</c><00:15:36.560><c> just</c><00:15:36.880><c> like</c><00:15:37.120><c> we</c>
+
+00:15:37.590 --> 00:15:37.600 align:start position:0%
+code is a lot shorter so just like we
+ 
+
+00:15:37.600 --> 00:15:40.710 align:start position:0%
+code is a lot shorter so just like we
+showed<00:15:38.000><c> i'm</c><00:15:38.240><c> gonna</c><00:15:38.399><c> have</c><00:15:38.639><c> a</c><00:15:38.800><c> dp</c><00:15:39.440><c> array</c><00:15:40.320><c> and</c>
+
+00:15:40.710 --> 00:15:40.720 align:start position:0%
+showed i'm gonna have a dp array and
+ 
+
+00:15:40.720 --> 00:15:43.990 align:start position:0%
+showed i'm gonna have a dp array and
+i'm<00:15:40.959><c> gonna</c><00:15:41.279><c> initialize</c><00:15:42.639><c> this</c><00:15:43.040><c> to</c><00:15:43.279><c> be</c>
+
+00:15:43.990 --> 00:15:44.000 align:start position:0%
+i'm gonna initialize this to be
+ 
+
+00:15:44.000 --> 00:15:47.269 align:start position:0%
+i'm gonna initialize this to be
+length<00:15:44.720><c> of</c><00:15:45.040><c> amount</c><00:15:45.680><c> plus</c><00:15:46.079><c> one</c><00:15:46.480><c> because</c>
+
+00:15:47.269 --> 00:15:47.279 align:start position:0%
+length of amount plus one because
+ 
+
+00:15:47.279 --> 00:15:50.310 align:start position:0%
+length of amount plus one because
+we<00:15:47.600><c> are</c><00:15:47.839><c> going</c><00:15:48.399><c> from</c><00:15:49.279><c> zero</c>
+
+00:15:50.310 --> 00:15:50.320 align:start position:0%
+we are going from zero
+ 
+
+00:15:50.320 --> 00:15:54.150 align:start position:0%
+we are going from zero
+all<00:15:50.639><c> the</c><00:15:50.800><c> way</c><00:15:51.440><c> to</c><00:15:52.160><c> amount</c><00:15:53.120><c> and</c><00:15:53.279><c> the</c><00:15:53.440><c> default</c>
+
+00:15:54.150 --> 00:15:54.160 align:start position:0%
+all the way to amount and the default
+ 
+
+00:15:54.160 --> 00:15:57.110 align:start position:0%
+all the way to amount and the default
+value<00:15:54.720><c> i'm</c><00:15:54.880><c> gonna</c><00:15:55.120><c> give</c><00:15:55.759><c> each</c><00:15:56.240><c> uh</c><00:15:56.639><c> element</c><00:15:57.040><c> in</c>
+
+00:15:57.110 --> 00:15:57.120 align:start position:0%
+value i'm gonna give each uh element in
+ 
+
+00:15:57.120 --> 00:15:58.790 align:start position:0%
+value i'm gonna give each uh element in
+this<00:15:57.360><c> array</c><00:15:57.759><c> is</c><00:15:57.920><c> amount</c>
+
+00:15:58.790 --> 00:15:58.800 align:start position:0%
+this array is amount
+ 
+
+00:15:58.800 --> 00:16:01.829 align:start position:0%
+this array is amount
+plus<00:15:59.279><c> one</c><00:16:00.240><c> or</c><00:16:00.480><c> you</c><00:16:00.639><c> can</c><00:16:00.880><c> do</c><00:16:01.199><c> like</c>
+
+00:16:01.829 --> 00:16:01.839 align:start position:0%
+plus one or you can do like
+ 
+
+00:16:01.839 --> 00:16:05.470 align:start position:0%
+plus one or you can do like
+infinity<00:16:02.639><c> or</c><00:16:02.880><c> whatever</c><00:16:03.279><c> the</c><00:16:03.519><c> max</c><00:16:04.079><c> in</c><00:16:04.480><c> is</c><00:16:04.720><c> like</c>
+
+00:16:05.470 --> 00:16:05.480 align:start position:0%
+infinity or whatever the max in is like
+ 
+
+00:16:05.480 --> 00:16:07.749 align:start position:0%
+infinity or whatever the max in is like
+math.max<00:16:06.560><c> integer</c><00:16:06.959><c> or</c><00:16:07.040><c> whatever</c>
+
+00:16:07.749 --> 00:16:07.759 align:start position:0%
+math.max integer or whatever
+ 
+
+00:16:07.759 --> 00:16:10.870 align:start position:0%
+math.max integer or whatever
+in<00:16:07.839><c> your</c><00:16:08.160><c> language</c><00:16:08.800><c> but</c><00:16:09.040><c> amount</c><00:16:09.680><c> plus</c><00:16:10.240><c> one</c><00:16:10.639><c> is</c>
+
+00:16:10.870 --> 00:16:10.880 align:start position:0%
+in your language but amount plus one is
+ 
+
+00:16:10.880 --> 00:16:12.790 align:start position:0%
+in your language but amount plus one is
+basically<00:16:11.519><c> a</c><00:16:11.680><c> max</c><00:16:12.160><c> value</c>
+
+00:16:12.790 --> 00:16:12.800 align:start position:0%
+basically a max value
+ 
+
+00:16:12.800 --> 00:16:15.749 align:start position:0%
+basically a max value
+anyway<00:16:13.680><c> and</c><00:16:13.920><c> we</c><00:16:14.160><c> know</c><00:16:14.320><c> that</c><00:16:14.480><c> the</c><00:16:14.880><c> base</c><00:16:15.279><c> case</c>
+
+00:16:15.749 --> 00:16:15.759 align:start position:0%
+anyway and we know that the base case
+ 
+
+00:16:15.759 --> 00:16:16.629 align:start position:0%
+anyway and we know that the base case
+for<00:16:16.079><c> this</c>
+
+00:16:16.629 --> 00:16:16.639 align:start position:0%
+for this
+ 
+
+00:16:16.639 --> 00:16:19.670 align:start position:0%
+for this
+is<00:16:17.199><c> a</c><00:16:17.360><c> dp</c><00:16:17.839><c> of</c><00:16:18.000><c> zero</c><00:16:18.560><c> meaning</c><00:16:18.959><c> if</c><00:16:19.120><c> we</c><00:16:19.279><c> want</c><00:16:19.519><c> to</c>
+
+00:16:19.670 --> 00:16:19.680 align:start position:0%
+is a dp of zero meaning if we want to
+ 
+
+00:16:19.680 --> 00:16:20.150 align:start position:0%
+is a dp of zero meaning if we want to
+compute
+
+00:16:20.150 --> 00:16:20.160 align:start position:0%
+compute
+ 
+
+00:16:20.160 --> 00:16:23.030 align:start position:0%
+compute
+amount<00:16:20.639><c> zero</c><00:16:21.279><c> that</c><00:16:21.519><c> it</c><00:16:21.680><c> only</c><00:16:22.079><c> takes</c><00:16:22.560><c> zero</c>
+
+00:16:23.030 --> 00:16:23.040 align:start position:0%
+amount zero that it only takes zero
+ 
+
+00:16:23.040 --> 00:16:23.990 align:start position:0%
+amount zero that it only takes zero
+coins
+
+00:16:23.990 --> 00:16:24.000 align:start position:0%
+coins
+ 
+
+00:16:24.000 --> 00:16:26.150 align:start position:0%
+coins
+and<00:16:24.240><c> now</c><00:16:24.480><c> we're</c><00:16:24.639><c> going</c><00:16:24.720><c> to</c><00:16:24.880><c> start</c><00:16:25.360><c> computing</c>
+
+00:16:26.150 --> 00:16:26.160 align:start position:0%
+and now we're going to start computing
+ 
+
+00:16:26.160 --> 00:16:28.389 align:start position:0%
+and now we're going to start computing
+every<00:16:26.639><c> value</c><00:16:27.120><c> in</c><00:16:27.360><c> dp</c>
+
+00:16:28.389 --> 00:16:28.399 align:start position:0%
+every value in dp
+ 
+
+00:16:28.399 --> 00:16:31.829 align:start position:0%
+every value in dp
+so<00:16:28.639><c> for</c><00:16:28.959><c> every</c><00:16:29.440><c> amount</c><00:16:30.160><c> a</c><00:16:31.120><c> in</c>
+
+00:16:31.829 --> 00:16:31.839 align:start position:0%
+so for every amount a in
+ 
+
+00:16:31.839 --> 00:16:33.590 align:start position:0%
+so for every amount a in
+range<00:16:32.399><c> and</c><00:16:32.560><c> we're</c><00:16:32.720><c> going</c><00:16:32.880><c> to</c><00:16:32.959><c> do</c><00:16:33.120><c> this</c><00:16:33.360><c> in</c>
+
+00:16:33.590 --> 00:16:33.600 align:start position:0%
+range and we're going to do this in
+ 
+
+00:16:33.600 --> 00:16:35.509 align:start position:0%
+range and we're going to do this in
+reverse<00:16:34.320><c> order</c><00:16:34.720><c> not</c>
+
+00:16:35.509 --> 00:16:35.519 align:start position:0%
+reverse order not
+ 
+
+00:16:35.519 --> 00:16:37.829 align:start position:0%
+reverse order not
+or<00:16:35.839><c> rather</c><00:16:36.240><c> bottom</c><00:16:36.800><c> up</c><00:16:37.040><c> so</c><00:16:37.199><c> we're</c><00:16:37.440><c> gonna</c><00:16:37.600><c> go</c>
+
+00:16:37.829 --> 00:16:37.839 align:start position:0%
+or rather bottom up so we're gonna go
+ 
+
+00:16:37.839 --> 00:16:38.949 align:start position:0%
+or rather bottom up so we're gonna go
+from<00:16:38.320><c> one</c>
+
+00:16:38.949 --> 00:16:38.959 align:start position:0%
+from one
+ 
+
+00:16:38.959 --> 00:16:41.269 align:start position:0%
+from one
+all<00:16:39.199><c> the</c><00:16:39.360><c> way</c><00:16:39.680><c> to</c><00:16:39.839><c> the</c><00:16:40.000><c> amount</c><00:16:40.800><c> and</c><00:16:41.040><c> we</c>
+
+00:16:41.269 --> 00:16:41.279 align:start position:0%
+all the way to the amount and we
+ 
+
+00:16:41.279 --> 00:16:41.990 align:start position:0%
+all the way to the amount and we
+technically
+
+00:16:41.990 --> 00:16:42.000 align:start position:0%
+technically
+ 
+
+00:16:42.000 --> 00:16:44.870 align:start position:0%
+technically
+are<00:16:42.320><c> still</c><00:16:42.720><c> doing</c><00:16:43.040><c> it</c><00:16:43.199><c> in</c><00:16:43.360><c> a</c><00:16:43.600><c> brute</c><00:16:44.079><c> force</c><00:16:44.560><c> way</c>
+
+00:16:44.870 --> 00:16:44.880 align:start position:0%
+are still doing it in a brute force way
+ 
+
+00:16:44.880 --> 00:16:45.430 align:start position:0%
+are still doing it in a brute force way
+so<00:16:45.040><c> we</c>
+
+00:16:45.430 --> 00:16:45.440 align:start position:0%
+so we
+ 
+
+00:16:45.440 --> 00:16:48.069 align:start position:0%
+so we
+are<00:16:45.680><c> gonna</c><00:16:45.920><c> go</c><00:16:46.240><c> through</c><00:16:46.720><c> every</c><00:16:47.199><c> coin</c><00:16:47.600><c> so</c><00:16:47.839><c> for</c>
+
+00:16:48.069 --> 00:16:48.079 align:start position:0%
+are gonna go through every coin so for
+ 
+
+00:16:48.079 --> 00:16:48.870 align:start position:0%
+are gonna go through every coin so for
+coin
+
+00:16:48.870 --> 00:16:48.880 align:start position:0%
+coin
+ 
+
+00:16:48.880 --> 00:16:52.310 align:start position:0%
+coin
+in<00:16:49.279><c> our</c><00:16:49.600><c> list</c><00:16:50.079><c> of</c><00:16:50.320><c> coins</c><00:16:51.120><c> so</c><00:16:51.440><c> we're</c><00:16:51.759><c> trying</c><00:16:52.079><c> to</c>
+
+00:16:52.310 --> 00:16:52.320 align:start position:0%
+in our list of coins so we're trying to
+ 
+
+00:16:52.320 --> 00:16:52.870 align:start position:0%
+in our list of coins so we're trying to
+compute
+
+00:16:52.870 --> 00:16:52.880 align:start position:0%
+compute
+ 
+
+00:16:52.880 --> 00:16:55.990 align:start position:0%
+compute
+this<00:16:53.360><c> a</c><00:16:53.680><c> amount</c><00:16:54.560><c> so</c><00:16:55.120><c> we're</c><00:16:55.279><c> gonna</c><00:16:55.519><c> take</c>
+
+00:16:55.990 --> 00:16:56.000 align:start position:0%
+this a amount so we're gonna take
+ 
+
+00:16:56.000 --> 00:16:58.470 align:start position:0%
+this a amount so we're gonna take
+a<00:16:56.399><c> and</c><00:16:56.639><c> subtract</c><00:16:57.360><c> the</c><00:16:57.600><c> current</c><00:16:58.079><c> coin</c><00:16:58.399><c> that</c>
+
+00:16:58.470 --> 00:16:58.480 align:start position:0%
+a and subtract the current coin that
+ 
+
+00:16:58.480 --> 00:16:59.430 align:start position:0%
+a and subtract the current coin that
+we're<00:16:58.720><c> looking</c><00:16:59.040><c> at</c>
+
+00:16:59.430 --> 00:16:59.440 align:start position:0%
+we're looking at
+ 
+
+00:16:59.440 --> 00:17:02.949 align:start position:0%
+we're looking at
+if<00:16:59.920><c> this</c><00:17:00.800><c> is</c><00:17:01.560><c> non-negative</c>
+
+00:17:02.949 --> 00:17:02.959 align:start position:0%
+if this is non-negative
+ 
+
+00:17:02.959 --> 00:17:05.189 align:start position:0%
+if this is non-negative
+so<00:17:03.120><c> if</c><00:17:03.279><c> it's</c><00:17:03.519><c> greater</c><00:17:03.920><c> than</c><00:17:04.160><c> or</c><00:17:04.319><c> equal</c><00:17:04.559><c> to</c><00:17:04.799><c> zero</c>
+
+00:17:05.189 --> 00:17:05.199 align:start position:0%
+so if it's greater than or equal to zero
+ 
+
+00:17:05.199 --> 00:17:06.230 align:start position:0%
+so if it's greater than or equal to zero
+that<00:17:05.360><c> means</c><00:17:05.600><c> we</c><00:17:05.760><c> can</c>
+
+00:17:06.230 --> 00:17:06.240 align:start position:0%
+that means we can
+ 
+
+00:17:06.240 --> 00:17:09.110 align:start position:0%
+that means we can
+kind<00:17:06.480><c> of</c><00:17:06.559><c> continue</c><00:17:07.199><c> searching</c><00:17:07.760><c> right</c><00:17:08.480><c> so</c><00:17:08.720><c> this</c>
+
+00:17:09.110 --> 00:17:09.120 align:start position:0%
+kind of continue searching right so this
+ 
+
+00:17:09.120 --> 00:17:09.750 align:start position:0%
+kind of continue searching right so this
+means
+
+00:17:09.750 --> 00:17:09.760 align:start position:0%
+means
+ 
+
+00:17:09.760 --> 00:17:13.590 align:start position:0%
+means
+we<00:17:10.319><c> possibly</c><00:17:11.280><c> found</c><00:17:11.679><c> a</c><00:17:11.839><c> solution</c><00:17:12.480><c> for</c><00:17:12.799><c> our</c><00:17:12.959><c> dp</c>
+
+00:17:13.590 --> 00:17:13.600 align:start position:0%
+we possibly found a solution for our dp
+ 
+
+00:17:13.600 --> 00:17:16.710 align:start position:0%
+we possibly found a solution for our dp
+so<00:17:14.079><c> for</c><00:17:14.480><c> this</c><00:17:14.799><c> amount</c><00:17:15.280><c> a</c><00:17:15.839><c> we're</c><00:17:16.079><c> going</c><00:17:16.240><c> to</c><00:17:16.480><c> set</c>
+
+00:17:16.710 --> 00:17:16.720 align:start position:0%
+so for this amount a we're going to set
+ 
+
+00:17:16.720 --> 00:17:18.309 align:start position:0%
+so for this amount a we're going to set
+it<00:17:16.880><c> to</c><00:17:17.039><c> the</c><00:17:17.360><c> minimum</c>
+
+00:17:18.309 --> 00:17:18.319 align:start position:0%
+it to the minimum
+ 
+
+00:17:18.319 --> 00:17:21.590 align:start position:0%
+it to the minimum
+of<00:17:18.640><c> itself</c><00:17:19.839><c> and</c><00:17:20.640><c> 1</c>
+
+00:17:21.590 --> 00:17:21.600 align:start position:0%
+of itself and 1
+ 
+
+00:17:21.600 --> 00:17:24.949 align:start position:0%
+of itself and 1
+plus<00:17:22.640><c> dp</c><00:17:23.919><c> of</c><00:17:24.319><c> a</c>
+
+00:17:24.949 --> 00:17:24.959 align:start position:0%
+plus dp of a
+ 
+
+00:17:24.959 --> 00:17:28.309 align:start position:0%
+plus dp of a
+minus<00:17:25.839><c> c</c><00:17:26.480><c> so</c><00:17:26.959><c> this</c><00:17:27.439><c> 1</c><00:17:27.839><c> comes</c>
+
+00:17:28.309 --> 00:17:28.319 align:start position:0%
+minus c so this 1 comes
+ 
+
+00:17:28.319 --> 00:17:30.630 align:start position:0%
+minus c so this 1 comes
+from<00:17:28.640><c> this</c><00:17:28.960><c> current</c><00:17:29.440><c> coin</c><00:17:29.760><c> that</c><00:17:29.919><c> we're</c><00:17:30.080><c> using</c>
+
+00:17:30.630 --> 00:17:30.640 align:start position:0%
+from this current coin that we're using
+ 
+
+00:17:30.640 --> 00:17:32.390 align:start position:0%
+from this current coin that we're using
+c<00:17:31.280><c> and</c><00:17:31.600><c> dp</c><00:17:32.160><c> of</c>
+
+00:17:32.390 --> 00:17:32.400 align:start position:0%
+c and dp of
+ 
+
+00:17:32.400 --> 00:17:35.750 align:start position:0%
+c and dp of
+a<00:17:32.720><c> minus</c><00:17:33.520><c> c</c><00:17:34.000><c> comes</c><00:17:34.320><c> from</c><00:17:34.880><c> for</c><00:17:35.039><c> example</c>
+
+00:17:35.750 --> 00:17:35.760 align:start position:0%
+a minus c comes from for example
+ 
+
+00:17:35.760 --> 00:17:39.029 align:start position:0%
+a minus c comes from for example
+let's<00:17:36.000><c> say</c><00:17:36.160><c> our</c><00:17:36.480><c> coin</c><00:17:37.200><c> value</c><00:17:37.679><c> was</c><00:17:38.160><c> four</c>
+
+00:17:39.029 --> 00:17:39.039 align:start position:0%
+let's say our coin value was four
+ 
+
+00:17:39.039 --> 00:17:41.110 align:start position:0%
+let's say our coin value was four
+and<00:17:39.760><c> our</c><00:17:40.160><c> amount</c><00:17:40.559><c> that</c><00:17:40.720><c> we're</c><00:17:40.880><c> trying</c><00:17:41.039><c> to</c>
+
+00:17:41.110 --> 00:17:41.120 align:start position:0%
+and our amount that we're trying to
+ 
+
+00:17:41.120 --> 00:17:42.390 align:start position:0%
+and our amount that we're trying to
+compute<00:17:41.679><c> a</c><00:17:42.000><c> is</c>
+
+00:17:42.390 --> 00:17:42.400 align:start position:0%
+compute a is
+ 
+
+00:17:42.400 --> 00:17:45.590 align:start position:0%
+compute a is
+seven<00:17:43.360><c> basically</c><00:17:43.919><c> we're</c><00:17:44.160><c> saying</c><00:17:44.559><c> dp</c><00:17:45.200><c> of</c>
+
+00:17:45.590 --> 00:17:45.600 align:start position:0%
+seven basically we're saying dp of
+ 
+
+00:17:45.600 --> 00:17:49.029 align:start position:0%
+seven basically we're saying dp of
+seven<00:17:46.480><c> is</c><00:17:46.880><c> equal</c><00:17:47.600><c> to</c><00:17:48.160><c> one</c>
+
+00:17:49.029 --> 00:17:49.039 align:start position:0%
+seven is equal to one
+ 
+
+00:17:49.039 --> 00:17:52.470 align:start position:0%
+seven is equal to one
+plus<00:17:50.080><c> dp</c><00:17:51.679><c> of</c>
+
+00:17:52.470 --> 00:17:52.480 align:start position:0%
+plus dp of
+ 
+
+00:17:52.480 --> 00:17:56.150 align:start position:0%
+plus dp of
+three<00:17:53.280><c> because</c><00:17:54.559><c> seven</c><00:17:55.039><c> minus</c><00:17:55.600><c> four</c>
+
+00:17:56.150 --> 00:17:56.160 align:start position:0%
+three because seven minus four
+ 
+
+00:17:56.160 --> 00:17:59.110 align:start position:0%
+three because seven minus four
+is<00:17:56.480><c> three</c><00:17:57.280><c> so</c><00:17:57.520><c> we're</c><00:17:57.760><c> saying</c><00:17:58.000><c> that</c><00:17:58.240><c> this</c><00:17:58.559><c> is</c><00:17:58.799><c> a</c>
+
+00:17:59.110 --> 00:17:59.120 align:start position:0%
+is three so we're saying that this is a
+ 
+
+00:17:59.120 --> 00:18:00.789 align:start position:0%
+is three so we're saying that this is a
+possible<00:17:59.840><c> solution</c>
+
+00:18:00.789 --> 00:18:00.799 align:start position:0%
+possible solution
+ 
+
+00:18:00.799 --> 00:18:03.590 align:start position:0%
+possible solution
+and<00:18:01.120><c> actually</c><00:18:01.679><c> that's</c><00:18:02.080><c> the</c><00:18:02.480><c> only</c><00:18:03.120><c> thing</c><00:18:03.360><c> that</c>
+
+00:18:03.590 --> 00:18:03.600 align:start position:0%
+and actually that's the only thing that
+ 
+
+00:18:03.600 --> 00:18:04.549 align:start position:0%
+and actually that's the only thing that
+we<00:18:03.760><c> have</c><00:18:04.000><c> to</c><00:18:04.160><c> do</c>
+
+00:18:04.549 --> 00:18:04.559 align:start position:0%
+we have to do
+ 
+
+00:18:04.559 --> 00:18:07.190 align:start position:0%
+we have to do
+this<00:18:05.120><c> is</c><00:18:05.440><c> basically</c><00:18:06.080><c> it</c><00:18:06.320><c> this</c><00:18:06.559><c> is</c><00:18:06.720><c> like</c><00:18:06.960><c> what's</c>
+
+00:18:07.190 --> 00:18:07.200 align:start position:0%
+this is basically it this is like what's
+ 
+
+00:18:07.200 --> 00:18:08.950 align:start position:0%
+this is basically it this is like what's
+called<00:18:07.440><c> the</c><00:18:07.600><c> recurrence</c><00:18:08.320><c> relation</c>
+
+00:18:08.950 --> 00:18:08.960 align:start position:0%
+called the recurrence relation
+ 
+
+00:18:08.960 --> 00:18:11.350 align:start position:0%
+called the recurrence relation
+and<00:18:09.120><c> so</c><00:18:09.440><c> now</c><00:18:09.760><c> the</c><00:18:10.000><c> only</c><00:18:10.320><c> thing</c><00:18:10.559><c> we</c><00:18:10.720><c> have</c><00:18:10.799><c> to</c><00:18:10.960><c> do</c>
+
+00:18:11.350 --> 00:18:11.360 align:start position:0%
+and so now the only thing we have to do
+ 
+
+00:18:11.360 --> 00:18:14.070 align:start position:0%
+and so now the only thing we have to do
+is<00:18:11.600><c> return</c><00:18:12.000><c> what</c><00:18:12.160><c> we're</c><00:18:12.400><c> looking</c><00:18:12.720><c> for</c><00:18:12.960><c> so</c><00:18:13.200><c> dp</c>
+
+00:18:14.070 --> 00:18:14.080 align:start position:0%
+is return what we're looking for so dp
+ 
+
+00:18:14.080 --> 00:18:16.150 align:start position:0%
+is return what we're looking for so dp
+of<00:18:14.480><c> amount</c><00:18:15.120><c> so</c><00:18:15.360><c> this</c><00:18:15.520><c> is</c><00:18:15.600><c> what</c><00:18:15.760><c> we</c><00:18:15.919><c> have</c><00:18:16.000><c> to</c>
+
+00:18:16.150 --> 00:18:16.160 align:start position:0%
+of amount so this is what we have to
+ 
+
+00:18:16.160 --> 00:18:17.270 align:start position:0%
+of amount so this is what we have to
+return<00:18:16.799><c> but</c>
+
+00:18:17.270 --> 00:18:17.280 align:start position:0%
+return but
+ 
+
+00:18:17.280 --> 00:18:20.390 align:start position:0%
+return but
+we<00:18:17.520><c> remember</c><00:18:18.240><c> one</c><00:18:18.559><c> last</c><00:18:19.039><c> edge</c><00:18:19.360><c> case</c><00:18:19.919><c> if</c><00:18:20.160><c> we</c>
+
+00:18:20.390 --> 00:18:20.400 align:start position:0%
+we remember one last edge case if we
+ 
+
+00:18:20.400 --> 00:18:22.390 align:start position:0%
+we remember one last edge case if we
+could<00:18:20.720><c> not</c><00:18:21.039><c> compute</c><00:18:21.520><c> the</c><00:18:21.679><c> amount</c>
+
+00:18:22.390 --> 00:18:22.400 align:start position:0%
+could not compute the amount
+ 
+
+00:18:22.400 --> 00:18:25.990 align:start position:0%
+could not compute the amount
+meaning<00:18:23.280><c> if</c><00:18:23.919><c> so</c><00:18:24.160><c> we</c><00:18:24.320><c> can</c><00:18:24.640><c> only</c><00:18:25.039><c> return</c><00:18:25.520><c> this</c>
+
+00:18:25.990 --> 00:18:26.000 align:start position:0%
+meaning if so we can only return this
+ 
+
+00:18:26.000 --> 00:18:29.190 align:start position:0%
+meaning if so we can only return this
+if<00:18:26.559><c> if</c><00:18:27.200><c> the</c><00:18:27.679><c> value</c><00:18:28.160><c> that's</c><00:18:28.480><c> stored</c>
+
+00:18:29.190 --> 00:18:29.200 align:start position:0%
+if if the value that's stored
+ 
+
+00:18:29.200 --> 00:18:32.710 align:start position:0%
+if if the value that's stored
+is<00:18:29.520><c> not</c><00:18:29.840><c> the</c><00:18:30.000><c> default</c><00:18:30.720><c> value</c><00:18:31.440><c> so</c><00:18:31.679><c> if</c><00:18:31.919><c> it's</c>
+
+00:18:32.710 --> 00:18:32.720 align:start position:0%
+is not the default value so if it's
+ 
+
+00:18:32.720 --> 00:18:36.310 align:start position:0%
+is not the default value so if it's
+not<00:18:33.200><c> equal</c><00:18:33.840><c> to</c><00:18:34.240><c> amount</c><00:18:34.960><c> plus</c><00:18:35.600><c> one</c><00:18:35.919><c> right</c><00:18:36.160><c> which</c>
+
+00:18:36.310 --> 00:18:36.320 align:start position:0%
+not equal to amount plus one right which
+ 
+
+00:18:36.320 --> 00:18:38.230 align:start position:0%
+not equal to amount plus one right which
+was<00:18:36.559><c> the</c><00:18:36.720><c> default</c><00:18:37.360><c> value</c><00:18:37.760><c> that</c><00:18:37.919><c> we</c>
+
+00:18:38.230 --> 00:18:38.240 align:start position:0%
+was the default value that we
+ 
+
+00:18:38.240 --> 00:18:41.110 align:start position:0%
+was the default value that we
+gave<00:18:38.480><c> it</c><00:18:38.799><c> so</c><00:18:39.039><c> we'll</c><00:18:39.280><c> return</c><00:18:39.760><c> this</c><00:18:40.160><c> if</c><00:18:40.640><c> it's</c><00:18:40.880><c> not</c>
+
+00:18:41.110 --> 00:18:41.120 align:start position:0%
+gave it so we'll return this if it's not
+ 
+
+00:18:41.120 --> 00:18:42.310 align:start position:0%
+gave it so we'll return this if it's not
+the<00:18:41.200><c> default</c><00:18:41.600><c> value</c>
+
+00:18:42.310 --> 00:18:42.320 align:start position:0%
+the default value
+ 
+
+00:18:42.320 --> 00:18:44.630 align:start position:0%
+the default value
+otherwise<00:18:43.039><c> we're</c><00:18:43.200><c> gonna</c><00:18:43.520><c> have</c><00:18:43.760><c> to</c><00:18:44.000><c> return</c>
+
+00:18:44.630 --> 00:18:44.640 align:start position:0%
+otherwise we're gonna have to return
+ 
+
+00:18:44.640 --> 00:18:47.029 align:start position:0%
+otherwise we're gonna have to return
+negative<00:18:45.120><c> one</c><00:18:45.440><c> meaning</c><00:18:45.760><c> we</c><00:18:46.080><c> could</c><00:18:46.400><c> not</c>
+
+00:18:47.029 --> 00:18:47.039 align:start position:0%
+negative one meaning we could not
+ 
+
+00:18:47.039 --> 00:18:50.150 align:start position:0%
+negative one meaning we could not
+compute<00:18:47.679><c> this</c><00:18:48.000><c> amount</c><00:18:48.559><c> with</c><00:18:48.720><c> the</c><00:18:48.960><c> given</c><00:18:49.360><c> coins</c>
+
+00:18:50.150 --> 00:18:50.160 align:start position:0%
+compute this amount with the given coins
+ 
+
+00:18:50.160 --> 00:18:52.789 align:start position:0%
+compute this amount with the given coins
+so<00:18:50.400><c> this</c><00:18:50.640><c> solution</c><00:18:51.360><c> does</c><00:18:51.679><c> work</c><00:18:52.080><c> and</c><00:18:52.320><c> even</c>
+
+00:18:52.789 --> 00:18:52.799 align:start position:0%
+so this solution does work and even
+ 
+
+00:18:52.799 --> 00:18:53.270 align:start position:0%
+so this solution does work and even
+though
+
+00:18:53.270 --> 00:18:53.280 align:start position:0%
+though
+ 
+
+00:18:53.280 --> 00:18:55.350 align:start position:0%
+though
+it's<00:18:53.840><c> pretty</c><00:18:54.240><c> efficient</c><00:18:54.880><c> the</c><00:18:55.120><c> time</c>
+
+00:18:55.350 --> 00:18:55.360 align:start position:0%
+it's pretty efficient the time
+ 
+
+00:18:55.360 --> 00:18:57.110 align:start position:0%
+it's pretty efficient the time
+complexity<00:18:56.160><c> is</c><00:18:56.400><c> actually</c>
+
+00:18:57.110 --> 00:18:57.120 align:start position:0%
+complexity is actually
+ 
+
+00:18:57.120 --> 00:18:59.750 align:start position:0%
+complexity is actually
+big<00:18:57.440><c> o</c><00:18:58.000><c> the</c><00:18:58.160><c> amount</c><00:18:58.640><c> that</c><00:18:58.799><c> we're</c><00:18:59.039><c> given</c>
+
+00:18:59.750 --> 00:18:59.760 align:start position:0%
+big o the amount that we're given
+ 
+
+00:18:59.760 --> 00:19:01.590 align:start position:0%
+big o the amount that we're given
+multiplied<00:19:00.480><c> the</c><00:19:00.799><c> number</c><00:19:01.200><c> of</c>
+
+00:19:01.590 --> 00:19:01.600 align:start position:0%
+multiplied the number of
+ 
+
+00:19:01.600 --> 00:19:04.150 align:start position:0%
+multiplied the number of
+coins<00:19:02.080><c> that</c><00:19:02.240><c> we're</c><00:19:02.480><c> given</c><00:19:03.280><c> and</c><00:19:03.520><c> the</c><00:19:03.760><c> memory</c>
+
+00:19:04.150 --> 00:19:04.160 align:start position:0%
+coins that we're given and the memory
+ 
+
+00:19:04.160 --> 00:19:05.190 align:start position:0%
+coins that we're given and the memory
+complexity<00:19:04.880><c> is</c>
+
+00:19:05.190 --> 00:19:05.200 align:start position:0%
+complexity is
+ 
+
+00:19:05.200 --> 00:19:09.510 align:start position:0%
+complexity is
+big<00:19:05.600><c> o</c><00:19:06.480><c> amount</c><00:19:07.200><c> because</c><00:19:07.600><c> we</c><00:19:07.840><c> see</c><00:19:08.080><c> we</c><00:19:08.320><c> have</c><00:19:08.559><c> a</c><00:19:08.799><c> dp</c>
+
+00:19:09.510 --> 00:19:09.520 align:start position:0%
+big o amount because we see we have a dp
+ 
+
+00:19:09.520 --> 00:19:12.150 align:start position:0%
+big o amount because we see we have a dp
+array<00:19:10.480><c> that</c><00:19:10.720><c> we're</c><00:19:11.039><c> having</c><00:19:11.520><c> a</c><00:19:11.600><c> potential</c>
+
+00:19:12.150 --> 00:19:12.160 align:start position:0%
+array that we're having a potential
+ 
+
+00:19:12.160 --> 00:19:14.230 align:start position:0%
+array that we're having a potential
+value<00:19:12.640><c> for</c><00:19:12.960><c> every</c><00:19:13.440><c> single</c>
+
+00:19:14.230 --> 00:19:14.240 align:start position:0%
+value for every single
+ 
+
+00:19:14.240 --> 00:19:16.950 align:start position:0%
+value for every single
+amount<00:19:14.960><c> so</c><00:19:15.120><c> i</c><00:19:15.280><c> hope</c><00:19:15.520><c> this</c><00:19:15.760><c> was</c><00:19:15.919><c> helpful</c><00:19:16.640><c> if</c><00:19:16.799><c> you</c>
+
+00:19:16.950 --> 00:19:16.960 align:start position:0%
+amount so i hope this was helpful if you
+ 
+
+00:19:16.960 --> 00:19:17.669 align:start position:0%
+amount so i hope this was helpful if you
+enjoyed
+
+00:19:17.669 --> 00:19:17.679 align:start position:0%
+enjoyed
+ 
+
+00:19:17.679 --> 00:19:19.510 align:start position:0%
+enjoyed
+please<00:19:18.000><c> like</c><00:19:18.320><c> and</c><00:19:18.400><c> subscribe</c><00:19:18.960><c> it</c><00:19:19.120><c> supports</c>
+
+00:19:19.510 --> 00:19:19.520 align:start position:0%
+please like and subscribe it supports
+ 
+
+00:19:19.520 --> 00:19:21.590 align:start position:0%
+please like and subscribe it supports
+the<00:19:19.600><c> channel</c><00:19:20.000><c> a</c><00:19:20.240><c> lot</c><00:19:20.559><c> and</c><00:19:20.720><c> i'll</c><00:19:20.880><c> hopefully</c>
+
+00:19:21.590 --> 00:19:21.600 align:start position:0%
+the channel a lot and i'll hopefully
+ 
+
+00:19:21.600 --> 00:19:24.799 align:start position:0%
+the channel a lot and i'll hopefully
+see<00:19:21.760><c> you</c><00:19:21.919><c> pretty</c><00:19:22.240><c> soon</c>
+

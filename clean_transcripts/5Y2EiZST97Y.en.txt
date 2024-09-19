@@ -1,0 +1,305 @@
+hey everyone welcome back and let's
+write some more neat code today
+so today let's solve copy list with a
+random pointer so we're given a linked
+list
+and so this is a pretty big description
+of the problem but it's actually more
+simple than that so
+basically you can see down in the
+example this is what you should pay
+attention to
+we have a pretty ordinary linked list
+right so this is a node and you can see
+each node has a next pointer right so it
+just keeps going it's singly linked list
+for the most part right
+and then we get to the end right so this
+is the end of the list
+this is the start the only difference
+between this and a regular linked list
+is that
+every single node has one extra pointer
+it has a
+random pointer so you can see that the
+first node
+has a random pointer going all the way
+to
+null right you can see that the second
+node has a random pointer going all the
+way back to the first node
+you can see the third node has a random
+pointer
+going all the way to the last node so
+basically what the deal
+is is that every single node has a
+random pointer and that pointer could be
+pointing
+anywhere right it could be at null it
+could be at some random
+node inside of the list it could be at
+any of those nodes
+so it has a random pointer but it also
+has a next pointer which
+is as you would expect just pointing at
+the next node all we really need to do
+with this linked list is create a copy
+of it
+by that they mean a deep copy so really
+what we're doing is for every single
+node
+we're allocating new memory we're
+actually creating a
+new node right and so you can see we
+have five
+nodes in the input so we're gonna have
+to create five nodes
+in the output right so that's pretty
+straightforward right the only
+difficulty
+comes though is from the random pointer
+right
+clearly these nodes are going to be
+linked together
+right in linear fashion but we also have
+random pointers
+right so for this node we would have to
+create a random pointer pointing at null
+right which is pretty easy that's what
+was happening with the first node
+but for the second node right we'd have
+a random pointer going back
+to the first node and for the third node
+we'd have a random pointer going to the
+last node so it's not too bad right
+the only difficulty though with these
+random pointers
+is that take the third node for example
+right
+let's say we start cloning the node
+right we create the
+a clone of the first node then we create
+a clone of the second node then we
+create a clone of the third node
+and you know the random pointers this
+one's going to be at null
+this one's gonna point back at the first
+node but the third node right
+we know its random pointer is going to
+be at the
+fifth node but we haven't created a deep
+copy of the fifth node yet
+so how can we assign a random pointer
+before it's even been created
+well the answer is we're gonna do two
+passes we're gonna have
+two loops and so with these two passes
+what the first
+pass is going to do is we're simply
+going to take each of these
+input nodes right and we're going to
+create a deep copy of the nodes right
+that's all we're doing we're just going
+to create
+copies of these nodes we're not even
+going to link them yet
+right so that's what the first pass is
+going to do
+and in addition the first pass is also
+going to create a
+hash map where we map the original node
+to the new node right so we're going to
+map every old
+node to the new copy we're going to do
+that with a hash map
+and this is going to take place in the
+first pass
+and in the actual second pass is where
+we're going to actually do all the
+pointer connecting so we know that every
+node is going to have you know pointers
+to the next node they're also going to
+have some random pointers
+as well right like this is going to have
+a random pointer to the last node
+and we're going to leverage our hashmap
+that we create in the first pass
+right that we create using the first
+pass of our algorithm we're going to
+leverage that hashmap to
+get to map every old node to the new
+node so for example
+we see in the original third node its
+random pointer is pointing at the
+original
+fifth node right we can leverage that by
+taking
+or using our hash map we can say okay in
+the
+copy of the third node we want it to
+point to the copy
+of the fifth node right and we can use
+our hash map to get the
+copy and so if this doesn't make sense
+yet this is just a basic illustration
+this problem is actually straightforward
+enough with the code that i think even
+if this doesn't make sense
+when i show you the code it'll make a
+lot more sense because
+at the base this is a two-pass algorithm
+where we create a hashmap
+and can easily solve this problem in
+linear time
+because each pass is going to be
+iterating through the entire linked list
+and our hashmap is also going to take
+linear memory of n memory because
+we are having to store every single node
+inside
+of our hash map so with that being said
+let me show you the code
+it's actually easier than you might
+think so remember we are going to have a
+hash map i'm going to call it
+old to copy because we're going to be
+mapping
+every single old node to the copy of
+that node that we create
+so first we're going to iterate through
+the linked list once right so we're
+going to have a current pointer pointing
+at the head
+we're basically going to keep going
+until this current pointer reaches the
+end of the linked list
+aka when the when the current node
+becomes null
+so the first thing we want to do is
+create a copy of this node right so
+we can do that with the node construct
+constructor and we're going to pass in
+the value of current so current.value
+we're creating a clone of the node a
+deep copy of the node putting it in copy
+and now we're going to take this copy
+and put it in our hash map
+so in our hashmap old to copy we're
+going to
+map the old node to the copy
+that we just created right this is
+pretty straightforward right we're using
+a hashmap
+mapping the old node to the copy node
+and
+next all we really need to do is update
+our current pointer
+until it reaches null and then the first
+pass of our loop is going to be done
+right so remember we're doing two passes
+this is the first
+pass all we're doing is cloning the
+linked list
+nodes and adding it to the hashmap we're
+not connecting the pointers yet that's
+what this
+loop is going to be for we're going to
+run the loop one more time
+setting current to the beginning of the
+linked list keep going until we reach
+the end of the linked list
+now we're going to set the pointers so
+we're at the first node let's say
+of our linked list right that's what
+current is so let's get the copy of the
+node remember we already created the
+copy in our hashmap so old to copy
+we use current and this gives us the
+copy node
+of current right and now what we want to
+do is for this current node we just want
+to set its
+pointers because remember we we are
+required to set the pointers to create a
+full deep copy of the linked list we
+need to set the
+the next pointer right so copy dot next
+we have to set that pointer we also have
+to set copy copy.random
+so copy has two pointers and we need to
+find those nodes right so copy.next how
+do we get
+copy.next well we know we have
+a map that can map original nodes to the
+copies right so if we take
+current dot next that's gonna map us
+to the copy of current.next that we
+created
+and that copy can be stored in copy.next
+right
+this is what our hashmap makes our life
+so much easier right
+we already know we created a copy of
+every single node so of course
+current.next is going to be in copy.next
+except one case one edge case
+what if current.next was null
+what would we want our hashmap to return
+in that case
+we'd want it to return null so in up
+here
+in our initializing of the hashmap i'm
+just going to add
+one value null is going to point is
+going to map to null so
+it's pretty straightforward right if we
+had a old node that was null we want to
+the copy is also going to be null right
+and last thing we're basically just
+doing the exact same thing so
+for the current node the current node
+had or the original node it had a random
+pointer right
+that random pointer points to some node
+and that node has already
+ha we have already created a copy of
+that node and put it inside this hash
+map so we can get that copy
+and then put it in copy dot random right
+so
+the copy node is going to point to a
+copy
+of that random node and that's actually
+it we just had
+two passes one pass where we actually
+copy the nodes
+the second pass where we set the
+pointers and we had one data structure a
+hash map
+with all that said we can return the
+head of the copy list how do we get the
+head
+well our hashmap becomes useful for us
+once again
+we can take the head of the original
+linked list
+and then map it to the copy right and
+then return that head
+of the copy list okay i'm pretty dumb
+for some reason i put old over here but
+it's actually cur
+cur is the old node and for some reason
+i also forgot
+in the original loop we do update cur i
+forgot to update
+kerr in the second loop so cur is
+cur.next
+now we won't get an infinite loop and as
+you can see this function
+is very efficient 96 because
+it's a linear time algorithm and we do
+have a hash map speeding stuff
+up for us so i hope that this was
+helpful if it was
+please like and subscribe it supports
+the channel a lot

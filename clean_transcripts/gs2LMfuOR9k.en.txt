@@ -1,0 +1,221 @@
+hey everyone welcome back and let's
+write some more neat code today so
+today we're gonna solve lowest common
+ancestor of a binary search tree
+and if you recall a while ago in a video
+i showed you guys this
+sheet of the 75 blind problems that have
+become pretty popular and so this is
+basically a spreadsheet that i showed
+with an entire list of those problems
+and i've actually ended up making videos
+for most of these problems so far
+the video that we're doing today is
+actually going to be lowest common
+ancestor one of the few problems that i
+haven't done yet so
+i will be linking this sheet in the
+description if you do want to take a
+look and i'll probably be trying to wrap
+up most of the problems in this list i
+think one of the
+next ones that i'm going to be doing is
+alien dictionary because i really like
+that problem
+and once i've gotten this entire sheet
+of problems done i'll probably be making
+a playlist for it
+but for now you can watch the videos
+that are currently available for this
+list of problems
+so in this problem we're given a binary
+search tree and we're and we're supposed
+to find the lowest common ancestor of
+two
+given input nodes in the binary search
+tree
+and so the lowest common ancestor is
+basically defined as being the lowest
+node in the tree such that p
+and q are descendants of this
+node or p or q happens to be equal to
+this node
+so basically what we're saying is six
+can technically be a descendant of
+itself
+so for example in this problem in this
+example we're given p equals two q
+equals eight so we're going to start at
+the root
+because the root is always going to be a
+common ancestor of
+every single node in the tree right
+that's just
+kind of basic right for you know this
+node in this node of course
+this is going to be a common ancestor
+it's not necessarily the lowest common
+ancestor
+but it is a common ancestor so
+what we're gonna see is p is less than
+six therefore it's going to be in the
+left subtree and it actually happens to
+be a direct
+child of six eight happens to be greater
+than six so it's gonna go in the right
+subtree
+so basically if we went in the left sub
+tree two is two
+going to be a ancestor of
+two and eight of course not right two
+can't be an ancestor of the node eight
+if it's in a different subtree
+similarly eight is not going to be a
+common ancestor of two
+so basically if we look at this level or
+if we keep going down
+we're never gonna find a common ancestor
+between two and eight so the lowest one
+that we found
+ended up being six so we notice if
+there's a split
+between the nodes that p and q
+are going at if they're going in
+separate sub trees where that split
+occurs is going to be the lowest common
+ancestor
+so if i change this problem slightly and
+i gave
+p as 7 and q as 9 we would once again
+start at the root because we know this
+is going to be a common ancestor of
+these two nodes
+and so now we're going to check okay 7
+is greater
+than 6 right and 9 is
+also greater than 6. so therefore we
+don't need to search in separate
+subtrees we can just go to the right
+subtree to look for both of these values
+we know that this is not going to be the
+lowest common ancestor this could
+potentially though
+be the lowest common ancestor so now
+once again we're going to repeat that
+we're going to say 7
+that's going to be less than eight so
+for a seven we're gonna have to look in
+the left subtree
+nine is greater than eight so for that
+we're gonna have to look in the right
+subtree so
+since this is where the split occurred
+that means this is going to be the
+lowest common ancestor for this
+input so we would return this node as
+the lowest common ancestor
+so one last case is if we changed q
+to be a six so once again we would start
+at the root right before we were
+checking if p
+and q were both greater than six then we
+look in the right subtree
+if they're both less than six then we
+look in the left sub tree
+if they're if one of them is in the
+right sub tree and one of them is
+in the left sub tree that's how we know
+this is the lowest common ancestor but
+what about the last edge case
+where one of these nodes happens to be
+equal to the root node
+in that case this is potentially the
+lowest common ancestor
+it's definitely a common ancestor of
+both of these but now if we go
+lower for sure none of the descendants
+of this
+node nothing in the left subtree or in
+the right subtree is going to be a
+ancestor of this node itself right so
+basically
+if we ever reach the node itself for
+example six
+then that's going to be the lowest
+common ancestor so it's
+an ancestor of itself and it's also an
+ancestor of
+seven which can be found down here right
+so this problem isn't too difficult once
+you can kind of understand that if
+there's
+a split between these two nodes then
+that's going to be the lca the
+lowest common ancestor and since we're
+doing it this way we don't have to visit
+every single node in the entire tree so
+the time complexity is not going to be
+big o of n it's going to be
+log n because we're only going to have
+to visit one
+node for every single level in the tree
+so basically the time complexity is the
+height of the tree which is usually
+going to be log n
+and the memory complexity is just going
+to be big o of 1 because we're not
+really needing any data structures or
+anything like
+that that being said let's jump into the
+code now so as i mentioned we are going
+to start
+ourselves at the root node and we're
+basically going to continue until we
+find our result
+so we're guaranteed to find a result p
+and q are guaranteed to exist
+in the input tree so what we're just
+going to say is while current is not
+null now it's never going to be null
+because we are going to find a result
+but this is just a way to get it to
+execute forever until we find that
+result
+so one case would be if the p-value and
+the q
+value were both greater than the root
+value or the current value that we're
+visiting
+and in that case we would have to go
+down the right subtree
+so since we're going down the right
+subtree we can update our current
+pointer to current dot
+right now the else case is basically
+going to be the opposite of this
+so i'm just going to copy and paste that
+basically if both of the values happen
+to be
+less than the current node that we're
+visiting in that case we would want to
+go down the left subtree
+so in that case we can update current
+and set it equal to current dot
+left now the last case is basically if
+our split occurs or if we end up
+actually
+finding basically finding one of the
+values p or
+q and in that case it basically means we
+have found our result either way so we
+would just be able to return
+current itself now we don't have to put
+any return statement outside of the loop
+because we're guaranteed that this is
+going to execute at some point
+so as you can see this is a pretty
+efficient solution
+so i hope that this was helpful if it
+was please like and subscribe it
+supports the channel a lot and i'll
+hopefully

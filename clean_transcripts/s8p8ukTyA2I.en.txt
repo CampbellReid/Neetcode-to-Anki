@@ -1,0 +1,474 @@
+everyone welcome back and let's write
+some more neat code today so today let's
+solve the problem task scheduler one of
+you suggested this problem and i think
+it's a pretty good one so we're given an
+array of tasks it's a character array
+and it's going to be limited to the
+characters from uppercase a to uppercase
+z so 26 characters each of the
+characters represents a task and the
+task is something that the cpu needs to
+process and the tasks could be processed
+in any order each task takes exactly one
+unit of time to process so that's good
+because it makes things simple for us
+and for each unit of time the cpu could
+either process an entire task or it
+could be idle and the reason it would be
+idle is because we're also given
+non-negative integer input n that
+represents the cooldown period between
+the two same tasks and the same task is
+represented by the same letter the same
+character in the array and to understand
+this let's take a look at an example and
+by the way what we actually want to
+return is the minimum number of units of
+time that the cpu will take to finish
+all of the tasks let's take a look at
+this example we're given these tasks
+right three a tasks and three b tasks
+and the idle time we're given is two
+units of time so basically let's say we
+processed an a task right that takes us
+one unit of time to process now we
+process a b task and now we know that
+before we process another a task we have
+to wait two units of time so you know
+let's say we process an a we can't
+process another a we have to wait two
+units of time before we can process
+another a so what are we gonna do in the
+meantime well there's a b as well so
+let's process one of the b's and now for
+this b we know we actually have to wait
+two units of time before we can process
+another b
+so the next time we can process another
+b will be at this point in time after we
+have processed our second a so now the
+question is can we fill this spot with
+anything or are we gonna have to be idle
+at this point in time and there aren't
+any other characters right we had one a
+and one b now we have two a's and two
+b's remaining so we can't do anything
+this has to be idle we process an a a
+second a and a second b uh that means
+that before we can process another a is
+gonna be two units of time so this b and
+then another uh unit of time and then
+another a and we also process the b the
+next time we can process a b will be at
+this point in time so at this point
+again we are going to have to be idle
+but the good thing is that this is the
+entire um like all the tasks we were
+looking for three a's and three b's so
+as you can see it took us one two three
+four five six seven eight units of time
+to do this so our output is going to be
+a so now let's think about a general
+approach that we could come up with to
+solve this problem so let's say we had
+this as our input first thing to notice
+is we're going to be given characters a
+through z doesn't really make sense to
+worry about which character we're
+looking at right there's not really not
+a big difference between a b and a c but
+we should keep track of how many of each
+character there is so we know there's
+three a's two b's and two c's right we
+don't even have to worry about the
+characters anymore we can just focus on
+the numbers we know that there's three
+of one character there's two of a
+different character and then two of
+another character we know that the idol
+time in this case is one what order
+should we uh process the characters in
+it's probably better to process the more
+frequent character first the more
+frequent task first because we know
+there's going to be some idle time and
+processing the more frequent one first
+basically gives us more time to not be
+idle and i'll show you the intuition
+behind that let's say we did a c first
+right we do c uh we know that idle time
+is just one right so then let's say we
+do b and we're allowed to do another c
+right away let's say we do that right we
+do another c and uh then we do another b
+because we the idle times only one right
+so now we've already processed all the
+the c's and the b's and all we're left
+with is three a's okay let's process one
+of the a's okay great but now we have an
+idle time we have no other characters
+available for us so we have to wait
+and then we can process another a and
+then we wait and then process another a
+so in this case this was one way but did
+this minimize the total time that it
+took us to process all the tasks a
+different way would have been to start
+with the most frequent character right a
+and now there's only two a's left so now
+what's the most frequent well you could
+say a again but we know that there is an
+idle time of at least one so at this
+point in time a is not available to us
+so we have to process a different
+character let's say a b then a is
+actually going to be available for us
+again so we could process the a or we
+could process the c in this case it
+doesn't really make any difference
+because there's two of each of these so
+we could do either one let's just do c
+so then there will be two a's one b and
+one c then we'll of course want to do
+the more frequent character the a and
+then there's gonna be one a remaining we
+can't process another a without at least
+one unit of idle time so let's do b and
+then do c and then we can do a right
+this
+also is a valid way and this one
+actually minimizes the idle time rather
+than
+this one and what is the idle time in
+this case it's about uh not the idle
+time the total time in this case is
+about seven as opposed to nine in the
+other case so that's kind of the
+intuition why we're going to
+try to do the more frequent task first
+and then the less frequent task how
+we're going to be doing this is by using
+a data structure called a max heap which
+will allow us to continuously figure out
+which task is the most frequent one and
+the max heap can actually allow us to
+determine that in log n time right if we
+have a bunch of these we could figure
+out which is the most frequent in log in
+time which is good but in this case
+actually it's even better than that it's
+about log 26 since we only have 26
+different characters this is kind of a
+constant time operation anyway but i
+will say that the overall time
+complexity is still going to be big o of
+n one because we are gonna have to you
+know count the occurrences of each task
+so we're gonna have to go through the
+entire uh input and we're going to be
+you know popping every value from our
+max heap and adding every value to our
+max heap so the time complexity is going
+to be big o of n that's also going to be
+the memory complexity but now to the
+actual algorithm itself we're actually
+going to use one other data structure aq
+it's not required but i think it makes
+the problem a little bit more organized
+so let's start off with the max heap
+right we have three integers we're going
+to be adding integers to our max heap
+not the characters we're going to be
+taking the counts of each task and
+adding that to the max heap so we're
+going to have a three and a two and a
+another two and by the way when i
+actually code this up in python we don't
+have a native max heap so the way to we
+only have a min heap so the way i get
+around that is basically by taking each
+of these values and making it negative
+you know in a max heap we want to pop
+the maximum and we can do that in log n
+time so in this case we'd pop the 3
+which is the maximum but in python we're
+actually going to do it the opposite way
+all of these are going to be negative so
+we're going to end up popping the
+minimum which is going to be negative 3
+but we're going to you know assume that
+it's a positive 3. but yeah so that's
+the idea first we're going to pop the 3
+or the negative 3. you can think about
+it however you want that's the most
+frequent but now we want to change the
+count from being a three to now being a
+two right because we just processed one
+of the tasks so you know if you have a
+negative you'll have to add one if you
+have a positive you can decrement it to
+one in my case when i write the code i'm
+going to be adding one to this but now
+we're actually going to be taking this
+and adding it to our queue data
+structure because we know that there's
+some amount of idle time for this task
+at the current point in time we are at
+initially we were at time equals zero
+but we just processed the task so now
+we're at time equals one and we're going
+to add this integer 2 or negative 2 to
+our q
+but we're also going to be adding
+another value to the queue and that's at
+what time is this task going to be
+available for us to process once again
+basically at what point can we take this
+and add it back to our max heap right
+what's the idle time that is going to be
+remaining well right now we're at time
+equals one and our idle time for each
+task is n equals one so basically we're
+gonna take n
+and add it to our current time so it's
+gonna be two basically at time equals
+two this task is gonna be available for
+us to add to the heap again so that's
+what the second value in this case means
+and once again we're going to pop from
+our max heap we're going to pop the
+negative 2 and that means we have
+processed the task so now our time is
+actually going to be time equals 2.
+we're going to take that task it was a
+negative 2. we're going to add 1 to it
+which is going to make it a negative 1.
+so then we're going to take that
+negative 1 and add it to our q
+and at what time is that task going to
+be available to add back to our max heap
+well it's going to be 2 plus 1 because n
+is 1 in our case so at time equals 3
+this task can be added back to our max
+heap but now that we're at time equals 2
+we see that this task actually is
+available now to add back to our heap so
+let's pop it from our q and take the
+negative 2 and add it back to our max
+heap and at this point you're probably
+starting to get the idea so i'll just
+kind of fast forward through this we're
+going to pop this again set our time now
+equal to 3. we're going to take that
+negative 2 add 1 to it so it'll be a
+negative 1. we'll add that to our heap
+at time equals 4 it's going to be
+available for us to add back to the heap
+this value can be popped from our queue
+we can add a negative 1 here and then
+start the cycle over so let's pop this
+value over here uh add it to our q we're
+running out of space so let's add a
+little bit more space uh that negative
+two will become a negative one the time
+now will actually be four so the time
+that this can be popped it's going to be
+at time five we see it's time for so
+this can now be popped so we add that
+back to our uh heap negative one and now
+it's time equals four so i'm really
+going to fast forward through this it'll
+take one more unit of time to process
+this task but now this task as you can
+see we're going to pop it it's a
+negative 1 we're going to add 1 to it so
+now it's going to be 0 right 0 once a
+task becomes 0 we know that we don't
+have to process it anymore right so when
+it's 0 we're not going to add it to our
+q because it doesn't have to be idle
+it's never going to be added back to the
+max heap once it's zero we're not going
+to do anything with it so uh you know we
+pop it from our max heap and there's
+nothing left but we see that this value
+over here and right now it's going to be
+time equals five actually so time is
+five this can be added back to our max
+heap
+let's add that negative one sorry if
+it's getting a little bit messy but next
+we're gonna pop this from our max heap
+it's gonna become zero so we don't add
+it to our queue now it's gonna be time
+equals six after we process that task
+and lastly we have one task remaining we
+pop it we process it it becomes zero we
+don't add it to the queue so now after
+processing that task our time is seven
+so we can return seven in this case and
+that's pretty much the entire algorithm
+so that's what i'm going to be following
+even though popping and pushing to a max
+heap is usually a login operation in
+this case it's really going to be a log
+26 operation so the overall time
+complexity in this case is really just
+big o of n because we have to just go
+through every single task okay now let's
+write the code okay so now let's code it
+up and you can see i have a couple
+comments just to kind of help simplify
+things for us and i usually don't do
+this but we want to count the
+occurrences of each character in the
+input it's a list of strings we could
+just you know run through that loop
+through that and add it to a hash map
+but you can actually do that with a
+built-in way in python just using a
+counter which is literally a hash map
+it'll just do that for us so we don't
+have to write the code but now we
+actually want to create our max heap
+using those counts themselves uh we can
+do that in python with one line of code
+we're just going to iterate through each
+count in
+the
+hashmap that we just created but we want
+to only iterate through the values so
+count.values and we want to add that to
+our hashmap but in python's case we
+can't have a max heap this is actually a
+min heap after we heapify it so i'm
+actually going to take the negative of
+the count and add it so this is just
+creating an array with every negative
+count that we computed but to actually
+turn it into a heap
+we can do
+heapq.heapify in python and to that max
+heap and it'll basically order it it'll
+take this array and order it in such a
+way that it is a max heap basically for
+us to efficiently get the maximum value
+from
+the heap whenever we want it we're also
+going to declare a variable to keep
+track of what time it is initially we'll
+set that to zero and we'll also have a q
+in this case a double ended queue and
+the double ended queue is gonna actually
+contain a pair of values and the pair of
+values are gonna be that negative count
+that we had up above and for that uh you
+know task that count
+the corresponding idle time at what time
+is it going to be available for us to
+add back to the
+max heap okay so with that said we're
+gonna continue uh our loop we're gonna
+continue processing these tasks while
+the max heap is non-empty but end or not
+and but or the
+cue is not empty right as long as one of
+these is not empty that means we have
+more tasks that we need to process
+so as we process
+each iteration of the loop is just going
+to increment the time by exactly one and
+actually before i even forget i
+mentioned that the time complexity of
+this whole algorithm is going to be big
+o of n but that's not entirely correct
+let's say n is the size of our tasks we
+can add one more variable let's call it
+m where m actually represents what the
+idle time is because in the worst case
+you know we have to go through that idle
+time for each task that we have write
+suppose that the tasks was just an array
+of all a's
+in that case we'd have to you know go
+through the idle time for each task but
+the idle time is actually a pretty small
+constant i think it's less than 100 in
+our case but just wanted to mention that
+in case but okay now let's continue with
+the algorithm so at each iteration of
+loop we're going to increment the time
+by one if the max heap is non-empty we
+are going to pop from it and we can do
+that with heap q dot heap pop from the
+max heap and from it we're gonna get the
+count and as we uh pop from the heap
+that means we're processing this task so
+to the count itself we can actually add
+one to it because remember we're
+actually using negative values for the
+counts if you were using positive values
+you'd probably subtract one from it but
+in our case we're going to be adding one
+to it and if this count is non-zero we
+can check that uh like this if count is
+non-zero then we want to go ahead and
+append it to our queue and we can do
+that like this we're gonna append a pair
+of values the count itself and the time
+that it's going to be available again
+and we can get that by taking our time
+our current time adding to it the idle
+time n so at this time we can once again
+add it to our maxi okay that's great we
+process a task we remove it from the max
+heap but remember we also have to take
+care of our queue if our queue is
+non-empty and the first value in our
+queue at index 0
+the idle time for it which is also
+it was actually going to be at index one
+because it's the second value in the
+pair so if this time has just been
+reached so if this is equal to the
+current time that means you know we can
+actually pop this from our queue so
+we're going to say q dot popped left and
+so this is actually going to pop that
+pair of values and from that pair of
+values we care about the first one which
+is the count so we're going to get an
+index of zero but actually that value
+itself what do we want to do we just
+want to add it back to our max heap so
+we can do that with heap cue.heat push
+we're going to take it add it to our max
+heap so let's just copy and paste this
+and uh move it up above so the only
+thing left for us to do is once
+everything has been processed for our
+max heap and our queue we can just go
+ahead and return the time that it took
+us to do all that work let's just clean
+this up a little bit that's the entire
+code so now let's just run it to make
+sure that it actually works and as you
+can see on the left yes it does work and
+it's pretty efficient i do want to
+mention there actually is a different
+solution for this that's actually a
+little bit more of a true linear time
+solution but i think it's a lot less
+intuitive and i think this solution is
+perfectly fine for interviews and
+because it's more of an intuitive
+solution i think this is
+more or less what interviewers would
+expect you to come up with so i really
+hope that this was helpful if it was
+please like and subscribe it really
+supports the channel a lot consider
+checking out my patreon where you can
+further support the channel and
+hopefully i'll see you pretty soon

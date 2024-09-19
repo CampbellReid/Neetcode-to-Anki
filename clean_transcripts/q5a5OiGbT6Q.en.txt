@@ -1,0 +1,269 @@
+hey guys it's me neat code again solving
+another leak code problem this time
+we're doing merge
+k sorted linked list before we've done
+merging two sorted linked list
+which is i which is an easy problem i
+think it was
+leak code 21 so if you haven't solved
+that one yet i would recommend doing so
+because it's basically
+we're basically extending that problem
+so
+this problem is actually easier than you
+might think for a leak code hard problem
+there's some really basic ideas that we
+can use
+to solve it efficiently so to illustrate
+that i have
+four single node linked lists right so
+each of these link lists only has one
+node right so five for example
+so basically how can we merge them in an
+efficient way let me show you
+uh like the general idea so first we can
+merge these two five and seven right so
+the first two nodes
+when we merge them we know that the five
+is smaller than the seven so we put the
+five
+first so now we have a partially so uh
+a partial linked list so now we want to
+get the next value which is 3 and we
+want to merge it
+into this linked list again
+the 3 is smaller than the beginning of
+the linked list which is the 5 over here
+right
+so we can just put the three at the
+beginning
+and next we only have one value left so
+we want to merge
+this eight into our linked list and so
+what's the general idea of how to do
+that well we're gonna have to
+take our eight right look at look at
+this three right well it's bigger than
+the three so we're not putting it
+there is it bigger than the five yep is
+it bigger than the seven
+yep so we're going to put it at the end
+so notice how we had to iterate through
+every single node to find where to put
+8 that's kind of a problem but we did
+find the output
+the output is going to be the 3 5 7 and
+8.
+so doing it this way is not the most
+efficient way to do it because
+notice for each node or linked list
+we're going to be merging it into our
+current output or our current
+you know result we're going to be
+merging it that's not going to be super
+efficient we have k
+lists right and the total number of
+nodes we have is
+n so every time we're merging a list
+we're gonna potentially have to iterate
+through every single node we have so far
+which could be big o of n
+so the overall time complexity is gonna
+be k times
+n now i bet you already know where i'm
+going with the solution now because the
+picture
+really makes it obvious why would we
+merge it like
+this when we're
+by doing that we're really repeating a
+lot of work that's really not the most
+efficient way to do it if you know
+the algorithm merge sort you know that
+there's a better way to do this
+so and it's a really basic idea right
+like
+why merge it that way when we can merge
+these two
+and merge these two eliminate a bit of
+that repeated work
+right and then when we have that
+like the five and the seven now
+using this we're going to merge these
+two together
+as well and and assuming you know the
+algorithm to merge two sorted linked
+lists
+you we will get the standard we'll get
+the same solution right
+but let's analyze what exactly is going
+on here when we did this
+first step right over here when we
+went from four linked lists right one
+two three
+four and then we went to just two of
+them remaining right
+we did have to iterate we did have to go
+through every single node so this was
+a o of n operation right so it's still
+not cheap it's o of n but the question
+is
+how many times do we have to do this in
+this case we only have to do it two
+times right
+so we did the same thing we took our two
+linked lists down here
+and merged them into our result
+and again we had to potentially iterate
+through
+every single one of our four nodes so it
+was an o of
+n operation but basically what we're
+doing is we're taking our lists
+and dividing them by two every time so
+how many times can we take
+the k lists and divide them by two well
+it's going to be
+log k this is the part where we
+speed up our algorithm it's log k it's
+the log k
+is the number of times we're repeating
+this o of
+n step so in this case with this
+algorithm
+the total time complexity is going to be
+n
+log k
+and that's a lot better than the brute
+force which was
+n times k right so this is a lot better
+okay so now let's actually get into the
+code
+uh remember that we have to understand
+how to merge
+two sorted linked lists so i'm just
+gonna put
+that function here right now so we'll
+have list one and list two as parameters
+and we'll return
+the output list i'm not even going to do
+this yet because we know
+this is not the most important part of
+the algorithm that's the leak code easy
+portion
+we want to do the real part of the
+problem which is merging
+k linked list so the first thing i'm
+going to handle is the annoying edge
+cases where
+maybe the list is null or
+in that case we can just return an empty
+linked list
+and now to get to the actual problem so
+we're basically going to be taking
+pairs of linked lists and merging them
+each time
+and we're going to keep doing this until
+there's only one
+linked list remaining and that's going
+to be our output so
+while the length of lists is greater
+than one we're going to keep
+reducing it right we're going to keep
+cutting it in half
+so as we merge these lists i'm going to
+put them
+in a new list called merged list
+so now we want to iterate through each
+and each time we're going to we know we
+want to do
+pairs of linked lists so my incrementer
+is going to be 2.
+so list 1 is just going to be
+at index i now list 2
+might be out of bounds right because if
+we have an
+odd number of lists and we're
+incrementing by 2 each time
+list 2 could be null so we have to check
+for that we'll say it's lists of i
+plus 1 the adjacent list but we want to
+make sure
+so if i plus 1 is in bounds so we'll
+check
+i plus 1 is less than the length
+of the list then we'll do that otherwise
+we're going to say it's none if it's
+none that's still
+okay right because merging one non-null
+linked list and one null linked list is
+perfectly fine we can still do that
+i want to take these two lists merge
+them together
+with my helper function which i haven't
+and i want to take this and append it to
+our merged lists
+variable over here where we are storing
+the lists after we merge them
+this is the way i like to do it but i've
+seen people do it a different way
+but now so we want to update our lists
+variable because that's where we're
+uh you know actually getting our lists
+from so i'm going to update it with
+merged lists so merge list is basically
+like a temporary variable
+and of course we're going to keep doing
+that until there's only one list left
+and then we're going to return that list
+so list
+of zero so see that really wasn't
+too bad i mean you might uh kind of
+struggle with a little bit of the edge
+cases that's perfectly fine but once you
+get the idea you see it's really not
+that bad now we've reduced it to
+an easy problem we know how to merge two
+linked lists i've done it before in a
+video but i'll
+type it out again really quickly and
+maybe if you're lucky your interviewer
+won't even want you to
+merge the list anyway but
+let me go ahead and show off and try to
+speedrun it and hopefully not have a bug
+and i'm speedrunning it i'm showing off
+but i literally solved this problem
+right before i recorded this video so
+i'm br i'm basically typing basically
+off of memory so
+and i'm a super slow typer once you guys
+honestly once you guys practice enough
+lead code you'll probably be 10 times
+okay so let's dummy.
+okay and once again let me prove to
+and i do so okay so it was pretty small
+uh merged lists dot append
+we're appending to the output or
+appending to this list
+and hopefully that is good enough okay
+of course i get messed up with the typos
+merged list i guess the confusing part
+was that this variable name is
+pretty similar to this function name
+probably should have done it a little
+differently
+okay but it does work so hopefully
+you get the general idea it's not too
+bad of a problem
+there are actually a lot of ways to
+solve it even a heap solution
+but i think kind of sticking with this
+is fine
+but thank you so much for watching
+hopefully this was helpful if you have
+any tips and tricks you can feel free to
+share them with me and feel free to
+suggest
+any other problems that you would like
+me to solve and i'll see you

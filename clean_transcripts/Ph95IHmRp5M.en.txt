@@ -1,0 +1,559 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+let's solve
+n queen so this is a pretty famous
+backtracking problem and we're finally
+going to be solving it today
+and this is marked as a hard problem but
+i don't think it's super hard to come up
+with what the solution would be at least
+to come up with how to solve the problem
+i think the hard part about this is
+actually
+implementing the code of this problem
+because like i said it's backtracking so
+basically we're just going to be doing a
+brute force approach so the problem
+statement is
+we're given n queens we're given a board
+of size
+n by n a chess board right so the
+dimensions are n by
+n and we're also given n different
+queens that we have to place somewhere
+on this
+board such that no two
+queens ever attack each other so you
+have to know a little bit about chess
+so the way a queen can move is that
+a queen is allowed to move in any
+direction horizontally so it can move to
+the left
+or to the right it can move up or
+down so it can move in all four
+directions it can also move
+diagonally so you know this diagonal
+which i call
+the positive diagonal because you can
+see it's kind of a positive
+slope right top right also it can move
+in the negative diagonal direction which
+i
+which you know you can kind of tell is
+going bottom right
+so it can move in these different
+directions
+and that's kind of what makes it tricky
+so we want to place
+the queens in such a way that they don't
+attack each other so right now you can
+see this queen
+is going left right top bottom
+this diagonal and this diagonal right so
+it's definitely not attacking any other
+queen
+this queen as well you can see it's
+going up
+left right down diagonal and you could
+do that with all of the queens right i
+don't want to make it too messy though
+and then what we want to return is
+actually these boards themselves so in
+this case
+we were given n equals four and you can
+see that these
+two different compositions are the ways
+we could arrange the queens and then we
+want to return that
+as a list of strings each string
+represents
+one row in this board now the main thing
+you notice initially is okay
+since a queen can go horizontally or
+vertically therefore
+every queen has to be in a different
+uh row right notice how every single
+queen is in a different row that makes
+sense because if we ever put two queens
+in the same row then they'd be able to
+attack each other right
+so each queen has to go in a different
+row
+notice how each queen is also going in
+a different column right each queen
+in this case is in a separate column
+because they can move
+vertically we don't want them to attack
+each other vertically
+as well so that's pretty straightforward
+i think but the hard part is
+diagonals right notice how we have many
+different diagonals in this
+board let's just look at the positive
+diagonals what i call the positive
+diagonals the ones that can go
+top to right so notice how
+in this case we have many different
+diagonals and in each of the cases
+each queen is in a separate positive
+diagonal right you can see that that's
+the case
+what about negative diagonals okay this
+is one negative diagonal this is another
+each queen is in a separate negative
+diagonal
+because we don't want any queens to
+attack each other
+diagonally so this is going to be the
+part that's a little bit tricky to code
+at least until you've seen it before but
+it's actually really easy to implement
+once you know the main idea
+so now let me kind of show you how we're
+going to apply backtracking to this
+solution how we're going to apply the
+brute force method to
+get each valid arrangement of the end
+queens
+so what really really brute force idea
+that you might have
+is okay let's just choose okay we can
+pick any of these positions in the
+in the four by four grid let's put a
+queen over here so that's the first
+position we try okay
+now let's try a different position right
+for the second queen
+let's try putting the queen in this
+position right and then now we have all
+these remaining choices let's keep
+putting a queen in every single position
+and trying that so this is one
+arrangement then maybe we could take the
+fourth queen and put it over here
+etcetera etcetera
+now why is there any reason to do that
+that's a little bit too
+brute force if you ask me there's a much
+simpler way we can do it
+right because for each queen instead of
+having n
+squared choices how about we just have n
+choices because we know for sure each
+queen is definitely going to be in a
+different
+row so first we can go like this we can
+say
+okay we can decide to put for this first
+row itself right this first row we can
+decide to put the queen in the first
+position
+or we could decide to put the queen in
+the second position
+or the third position or the fourth
+position
+whatever we do in that first row then
+we're gonna move to the next row right
+so now our goal is to find
+a different location where we can put
+the second queen
+in this second row now we could try
+putting it over here
+or we could try putting it over here or
+we could try putting it over here
+but we can't put it over here why
+is it that we can't put it here because
+they're in the same column so
+now you already can tell we're going to
+need to be maintaining
+the columns of whatever previous
+queens that we've already placed we
+don't have to maintain the rows though
+right because i just showed you
+why because every time we place a queen
+we're gonna move to the next row
+anyway until we get to the bottom right
+and then we're gonna make sure
+that we're placing the last queen in a
+valid location
+and if we are then we're done right so
+we are gonna have to keep track of which
+columns we place a queen
+in and we're gonna have to keep track of
+the positive
+diagonals that we're placing a queen in
+and we're gonna have to keep track of
+the
+negative diagonals that we're placing a
+queen in and we can uh
+keep track of all of these with a set
+right
+so a set can tell us a hash set can tell
+us which column of zero
+one two or three we have put a queen
+already in
+and we can do the same for a positive
+diagonal
+and a negative diagonal but i bet you're
+wondering how can we do it
+easily with positive and negative
+diagonals right we don't have
+indices for something like this right
+what index does this diagonal belong to
+and i'll show you there's a bit of a
+pattern when it comes to diagonals
+positive
+and negative diagonals let's say we
+start at the origin the top
+left position and then we go diagonally
+bottom right so this is what i'm going
+to refer to as a
+negative diagonal because from left to
+right
+we're end up going downwards right do
+you
+notice anything about this diagonal well
+we're starting at 0
+0 right the row and column are 0 0
+as we move diagonally down we get to
+this position right then the row and
+column are
+1 1 then we get to this position where
+the row and column are 2 2. so notice
+how
+each time we're increasing the the
+column value by one
+and we're increasing the row value by
+one as well
+what does that tell us that tells us
+along
+this diagonal along this negative
+diagonal
+the computation rho minus
+column is going to stay constant
+over here right in this position if you
+take the row minus the column we get
+zero minus zero
+that equals zero if you take the row
+minus column in this position we get
+two minus two that equals zero so we can
+define
+this particular negative diagonal as
+being
+the zero negative diagonal let's try it
+out on a different negative diagonal to
+see if our pattern holds
+let's start over here at a different
+position
+row zero column two and then go
+diagonally down
+notice how whenever we're going
+negatively diagonal we're
+increasing the column by one and we're
+increasing
+the row by one so in this position
+the row which is zero minus the column
+was negative two right zero minus two is
+negative two
+when we get to the next position along
+this diagonal we get
+one minus three which is also negative
+negative two so we can see that this
+pattern holds the negative diagonal
+along this
+is going to be the negative one diagonal
+the negative diagonal along
+this path is going to be positive one
+because we see one
+minus zero is positive one so i just
+drew out a few of the diagonals if you
+want to visualize it you can see this
+diagonal
+is constant this diagonal is constant
+this diagonal is constant etcetera
+etcetera right
+so that's how we're going to be doing
+negative diagonals is there a similar
+pattern we can use for positive
+diagonals let's see
+so let's say we started our positive
+diagonal over here
+we can see the row is three the column
+is zero and then we go diagonally top
+right right we go
+up in this direction now notice when we
+do go in this direction
+we're moving to the right we're
+increasing the column by one
+but we're decreasing the row
+by one so we can't use row minus column
+for positive diagonals right because
+it's not going to stay constant
+over here the row minus column is going
+to be three over here the row minus
+column is going to be
+1 so it doesn't work if we do row minus
+column
+but notice since we're increasing the
+column
+going in this direction but we're
+decreasing
+the row that means row plus column
+is going to stay the same right the sum
+of these two values is going to stay the
+same because we're
+we're decrementing one but we're
+increasing the other
+for example in this position row plus
+column is three
+in this position row plus column is also
+three
+right so it's going to be three all the
+way what about
+this diagonal does it also work well
+three plus
+one that's four in this position
+two plus two that's four and this is
+also going to be four so you can see
+positive diagonals can be determined
+with r
+plus c turns out that these three sets
+are the only information we need then we
+can
+brute force start placing queens how's
+the algorithm going to go
+like i mentioned we're going to try each
+of the four positions
+in the first row right and for each of
+them so the decision tree is going to
+look something like this right we'll try
+a queen in position 0. we'll try a queen
+in position 1
+position 2 position 3 right and this is
+all for the first row and we'll do the
+exact same
+thing continuously right for if we put a
+queen here
+then could we pl then we're gonna you
+know try a queen in all the other four
+places so
+two three now if we place the queen here
+that means we put a queen here so then
+could we put a second queen in the same
+column
+no that's how we're going to know how
+are we going to detect that we can't do
+this
+we're going to see that a queen has
+already been placed in the same column
+set so we're not going to do that right
+so we can't place a queen here
+what about position 1 well it's clearly
+not in the same
+column right why shouldn't i be able to
+place a queen over here well
+it turns out that it's already been
+added to the negative diagonal
+this position means the negative
+diagonal is zero row minus column is
+zero
+so this position is also row minus
+column
+zero that means the negative diagonal
+has already been used so we also
+can't put a queen in this second
+position so this
+path in our decision tree also does not
+work can we put a queen
+over here in this position yes we can it
+doesn't
+overlap with the positive diagonal and
+it doesn't overlap
+with the negative diagonal and they're
+not in the same column right so we can
+continue
+this one and we can also continue in
+this one right it's also not in the same
+positive or negative diagonal
+also not in the same column so that's
+kind of how the algorithm is going to
+work
+i'm not going to draw the entire
+decision tree because i think you
+probably get the point these
+three sets are going to give us all the
+information we need
+okay so like i mentioned the the three
+sets are going to be all the information
+we need we have a column set we have a
+positive diagonal set and remember the
+positive diagonal is determined let's
+just place a comma is determined by
+r plus c and the negative
+diagonal is determined by r minus c
+so let's just make sure we remember that
+when we're actually writing our code
+r minus c for the negative diagonal and
+we're going to have a result which is
+basically going to tell us all possible
+end queen solutions and we're also going
+to maintain a
+board so initially i'm just going to
+make the board a
+array of let's say and by the way i
+didn't mention this but a dot
+is basically indicating an empty
+location so this multiplied by
+n is going to determine a row how many
+rows are we going to have well
+for i in range n right it's an n by
+n board so i'm just initialing a board
+with
+periods or dots in every single position
+so then
+we can define our backtracking recursive
+function
+and remember we're going to be doing it
+row by row so initially we're going to
+start at
+row 0 then we're going to go to row 1
+row 2 all the way until we get to row
+n row n is our base case that means
+we're out of bounds that means we
+already completed every single row
+so if we ever reach this position where
+rho is equal to n
+that means we were able to find a valid
+n queen solution
+so what can we do well of course we're
+going to return but before we return
+we're going to add whatever the current
+board is and we're going to add it to
+the result
+but we are going to make a copy of this
+board because we're still going to use
+it in
+subsequent function calls for this
+recursive function so we're going to
+make a copy of this board
+and we're also going to change the
+formatting the way they want it each row
+is not going to be an array
+each row is going to be a string so
+basically for each row here we're just
+going to join
+each substring together so let's make a
+copy of this board
+which we can do by taking four
+let's say row in the board each row
+we're going to take each row and then
+join it together so
+we can do that in python like this empty
+string dot
+join this entire row together
+and then doing this we'll have a copy of
+the board where each row is basically
+joined together right
+and then we're going to take that copy
+and append it to the result so
+result.append
+copy i mean i'm sure there's different
+ways you can do this if you're using
+java or c
+plus plus this is just an easy way to do
+it in python so if we did not reach the
+base case that's when we're gonna
+continue
+so we're gonna go through every single i
+in
+range of n right we're gonna try every
+single position
+in the current row that we're at we're
+gonna see which
+positions are we allowed to place a
+queen inside
+and this i actually refers to the column
+so i'm going to change it to for
+c and range n so basically if c is
+in column meaning it's already been used
+in this column or
+r plus c is already in the positive
+diagonal
+which means the positive diagonal has
+already been used or
+if the negative diagonal r minus c has
+already been used
+that's how we know we have to skip this
+position so what i'm going to say
+is continue if that's the case that
+means we're not allowed to use this
+column row position but if we are
+allowed to use this position
+let's do exactly that then we can do a
+backtracking
+call you know do the same thing
+backtracking call let's go to the next
+row but before we do that we know we
+have to actually update all of our sets
+right because we we weren't using
+this uh combination but now we are using
+it so we have to say
+column dot add this column and we have
+to say positive diagonal
+dot add row plus column
+and we have to say negative diagonal add
+row
+minus column so that's just kind of some
+of the pre-work that we have to do
+and we also have to update the board
+itself right we have to say okay at this
+position in the board row
+column let's set it equal to a queen
+not a dot anymore so that's what we're
+going to do before we start our
+recursive backtracking solution
+and after we're done we have to do the
+cleanup that is required in most
+in most backtracking solutions right so
+we have to basically do what we just did
+here and
+undo all of it for the next iteration of
+the loop
+so i'm just going to copy and paste this
+because we're literally just going to be
+having to rewrite every line so instead
+of
+adding all of these to the set i'm going
+to be removing all of these to the set
+right that's kind of what backtracking
+means
+where we're backtracking from what we
+just did to seeing if maybe multiple
+solutions exist
+right that's the brute force element of
+this so we initially set this equal to a
+queen
+let's set it back equal to an empty
+space or a dot
+in this case and that's really it we
+have no return condition
+in this backtracking so once this loop
+is done executing then we're done with
+the entire function so now
+outside of here all we have to do is
+call our backtracking function
+passing in row 0 and then once that is
+done
+we will have updated our result so our
+result should contain
+everything we need so then we can just
+be able to go ahead and say okay return
+the result
+so you can see that the solution does
+work and it is pretty dang efficient
+even though it's a backtracking brute
+force approach so i hope this was
+helpful
+if it was please like and subscribe that
+supports the channel
+a lot and i'll hopefully see you pretty

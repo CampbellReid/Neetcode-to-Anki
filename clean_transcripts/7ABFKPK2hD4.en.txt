@@ -1,0 +1,457 @@
+hey everyone welcome back and let's
+write some more neat code today
+let's take a look at a really popular
+interview question lru cash
+it's even asked by twitch tv it's one of
+their most popular interview questions
+and also don't forget to like the video
+it supports the channel
+a lot so this is definitely more of a
+design problem than an actual
+algorithms problem so we have some kind
+of cache
+that's going to store values it has a
+capacity so it's fixed
+size and we want to be able to get
+values from this cache based on a
+key value if that key value exists
+then we'll return the value that it
+corresponds to if it doesn't exist the
+default value we want to return is
+negative one
+and if we're getting values we also need
+to be able to put values into the
+cache we're putting them in based on key
+value pairs
+and there's a lot of edge cases and they
+explain a bit of them to us
+if the key already exists in the cache
+then
+we just want to update the value if it
+doesn't already exist then we're
+inserting it for the first time so we
+can put that key value pair
+into the cache and remember this does
+have a fixed size capacity
+so if we ever exceed the capacity
+then we have to evict the least recently
+used
+so that's why this is called the lru
+cash problem
+and it also makes sense right if there's
+a key that we're not really using
+then that's the one that we're going to
+take out of the cache
+and this is actually pretty similar to
+how browsers work
+so for example if you're using chrome
+and you know
+web browsers have caches if there are
+values that we're not really using in
+those
+in that cache then of course we can
+remove them let's also try to solve this
+the most efficient way which is each of
+these operations get
+and put are going to be constant time
+operations and it's going to be kind of
+tricky but
+it's definitely possible so let's just
+look at the first example so
+the input is two so that's something
+that we need to
+kind of remember right the capacity is
+two in this case and the next operation
+is put so we're putting a
+pair of one one key one value one
+and we're going to keep these kind of in
+order right because
+we want to remove the least recently
+used so we got to kind of remember
+in what order are we adding these values
+in the next one
+is another put operation and we're
+putting 2 2.
+of course for these first three
+operations we're not really returning
+anything
+so next we're actually doing a get
+operation
+and we want to get the value that has a
+key
+of one and remember we're trying to do
+this as
+fast as possible we're trying to do each
+operation
+in constant time so how can we know
+instantly what the value is
+when the key is one well the easiest way
+to do that would be with a hashmap right
+so we're going to use a hashmap to
+instantly look up the value of every key
+we can of course do this in constant
+time and we know that
+we the size of this hash map doesn't
+need to exceed our capacity so
+we can have only two values here right
+so for the key value we can use the same
+value
+that we use for each of our nodes and we
+could
+and for the value we could also do the
+same thing we could use the same
+value that we use in our nodes but i'm
+going to show you why it's going to be a
+little bit
+better for us instead to have the value
+be a
+pointer to the node itself and we can do
+the same thing with the second node
+that we inserted as well so for key
+value 2
+we're going to point at this node so now
+finally when we call this get and we ask
+for the key
+1 we're going to return the value 1
+that's over here
+which is exactly what the output tells
+us is correct
+so since we just used the get operation
+to get this one we went to our key
+then we found this value and then we
+returned that value
+that makes this the most recently used
+value and this is the least recently
+used value now
+so i'm going to keep track of the most
+recent and least recent
+by having a left and right
+pointers right so this left side is
+going to be
+the least recently used and the right
+over here is going to be the most recent
+so therefore we're basically going to be
+swapping
+these two nodes right and so this part
+this portion of the problem
+is starting to to keep the ordering of
+these
+it looks like we're going to need a
+linked list and
+not only a linked list but a double
+linked list because remember we can
+easily look up where these values are
+but if we want to also reorder them
+quickly
+by by for example every time we use a
+get operation we want to take this
+value and then move it over here because
+it was the most
+recent and so now we're going to reorder
+the two nodes so now this is the
+least recently used and this is the most
+recently used
+and since this is a doubly linked list
+we need
+the pointers to be connected of course
+the the hashmap won't really need to be
+updated because these are pointers
+they're already going to be
+pointing to the correct ones and i'm not
+going to show that and now we can get to
+the most
+interesting operation the third put so
+we're putting a third value
+key value 3 3 and since
+3 is greater than our capacity
+of 2 then we're going to have to remove
+the least recently used value and
+convenient for us
+we know exactly what that value is so
+first we're going to end up updating
+these pointers
+to make the least recently used 1 1
+and get rid of this and of course
+we want to replace that too since we
+know it's the least recently used
+we want to replace it with the new key 3
+and now we also want to update that
+pointer we want it to point at the new
+node
+and since the new node 3 3 is the most
+recent we're
+going to put it over here 3 3
+and the pointer is going to point here
+this pointer is going to point here and
+there's going to be a double
+link between them so this is basically
+the main idea we're going to keep track
+of a capacity
+we're going to have a double linked list
+we're going to have a hash map
+where the key of the hashmap is going to
+be the same key that we get from the
+input and the value is going to be a
+pointer
+to the nodes and each node is going to
+look something like this
+and it's going to have two pointers
+remember so it's going to have a
+previous pointer
+and a next pointer and don't forget
+about
+this right and this left these
+are also going to be nodes because
+we want to have pointers we want to be
+able to instantly know what's the least
+recently used and what's the most
+recently used so these are going to be
+dummy nodes pretty much
+so getting into the code remember we're
+going to need a
+node so before we even write this lru
+cache class
+let's make another class for that node
+that we're going to use
+and remember each node is going to have
+a key value pair
+so we're going to get those we're going
+and we're also going to have two
+pointers one for the previous node and
+one for the next node and they're both
+going to initially be set to null
+now when we actually get into the lru
+class we know that the capacity
+needs to be stored because we want to
+know if we ever go over that capacity
+we also need a hashmap and i'm going to
+call that our cache
+and remember this is going to map map
+the key to nodes
+and before we even have any values in
+our cache we
+want to have a couple dummy pointers a
+couple dummy nodes
+which tell us what are the most recent
+and least recent
+uh values that we added so we can just
+initialize these to zero
+for the default values so zero zero
+and initially we want these nodes to be
+connected to each other
+because if we're inserting a if we're
+putting a new node we want to put
+it in the middle between left and right
+and we can do that with some pointer
+stuff
+so left dot next is going to be right
+and right dot previous is going to be
+left and remember left is going to help
+us
+find the least recently used and
+right is going to be most recent
+so now let's start with our get function
+because it's mostly straightforward
+if the key exists so if the key is
+in our cache then we can return
+that value right so we can return
+self dot cash of key
+now this tells us the node remember
+because
+each key is mapped to a node so to get
+the value
+we can just do dot val and
+of course if it doesn't exist they
+wanted us to just return
+negative one now the only thing we're
+forgetting with this
+get is that every time we get a
+a value we want to update it to the most
+recent so to help us with this part i'm
+actually going to write a couple helper
+functions
+so i'm going to write i'm going to write
+a remove
+and insert helper function and these
+helper functions are going to be applied
+to our linked list so we're going to
+pass in
+the node that we want to remove
+from our our doubly linked list and i'm
+also
+going to write a function to insert
+into our linked list and when we insert
+we're going to insert at
+right and the remove is just going to
+remove
+from the list so
+these are basically going to be pointer
+functions we're going to be manipulating
+some pointers from our left from our
+right and doing some stuff so i'm not
+even going to worry about that
+i'd all i know is that we have a helper
+function that can remove
+any node from our list and a helper
+function that can
+insert any node at the rightmost
+position of our linked list
+so since we're getting what we want to
+do to our list
+is take this node
+self dot cache of key and remove it from
+our list
+and after we remove it then we want to
+reinsert it
+at the right most position so we can
+and looking at this get isn't so bad as
+long as we fill out
+these two helper functions for us so now
+when we actually look at our put
+function
+let's remember that if we have a
+key that's already in our cache
+that means that a node already exists
+in our list with that same key value
+so before we can insert this new key
+value pair
+we want to remove from our
+list so we can get that node by
+getting our cache and using the key
+value
+so these helper functions are definitely
+coming in handy for us
+so now we can create a new node with
+this key value pair so node
+key value and
+so now our hashmap has a pointer to this
+node
+but remember that's not enough we also
+have a doubly linked list
+so we need to take this node and insert
+it into
+our list so insert
+and just pass in the node which is
+cache of the key value so the node is
+stored here and we pass that node into
+our insert function
+okay so we just inserted a new value but
+remember
+we have a capacity to worry about so
+every time we
+insert a value we gotta check did does
+the
+length of our cache now exceed
+the capacity if it does
+this is the part where we're gonna we're
+gonna remove
+and delete or evict
+the mo the least recently used
+so we're going to remove it from the
+list
+the linked list and delete the lru
+from the cache or
+the hashmap so how do we actually find
+the node for the lru well this is why
+we have our left and right pointers
+remember the left pointer is all the way
+at the left and it's going to
+tell us what the least recently used was
+so left
+left dot next is always going to be
+the least recently used and so first
+we're going to remove it from our linked
+list
+by just passing in the node and we're
+also going to delete it from
+our hashmap so self.cache
+and we want the key of this node which
+is actually stored in the node itself
+this is why we didn't only store the the
+value we also store the key in our node
+class
+so we don't have to return anything
+input but we
+do now have to fill out these two helper
+functions
+remove and insert so if you have
+three nodes and you want to remove the
+middle node
+what do you do well you take this
+pointer
+and move it over here and you take
+this pointer and move it over here
+so this stuff is no longer relevant
+and we have removed the middle node
+this is going to be referred to as our
+previous node
+this is referred to as our next node
+so when we're writing this function node
+is going to be the middle node so we
+want to get the previous
+and next nodes of node so we can just
+get the pointer so node.previous
+node.next
+all we want to do is say that previous
+dot
+next should be updated and next
+dot previous should be updated these are
+the two pointers
+of the next and previous nodes so
+previous.next
+next stop previous should be previous
+so now node is no longer in between
+previous and next the last thing we need
+to do is
+fill out our insert function which what
+we want it to do
+is insert a node at the rightmost
+position
+right before our right pointer
+so let's say this is our right pointer
+we want to insert right here and this
+is going to be our previous pointer so
+when we have our
+new node that we're trying to insert
+what we want to do is take this pointer
+and reassign it to that
+this pointer and reassign it
+over here and we also want this node to
+be connected
+to its neighbors so we're going to have
+the next pointer over here and the
+previous pointer
+to be here so in this case
+our previous and next pointers we can
+get
+by using our rightmost pointer
+so self.write.previous
+and self.write now we want both
+previous and next to point to node so we
+can
+do that like this previous dot next
+is going to be equal to next dot
+previous
+which is going to be equal to node
+they're both
+pointing at node node has been inserted
+in the middle of them
+and node.next
+and node.previous also need to be
+assigned
+to next and
+previous so this is quite a lot of code
+about
+44 lines with some space and comments in
+between but
+this is how you get the most optimal
+solution
+for this problem and of course i had a
+bug so
+i misspelled something i'm really hoping
+that's the only bug here because i do
+not want to search for a bug in these
+lines of code
+okay so we got it to pass so i hope this
+was helpful
+if you enjoyed please like and subscribe

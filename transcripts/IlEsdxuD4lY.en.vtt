@@ -1,0 +1,2608 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.589 align:start position:0%
+ 
+hey<00:00:00.160><c> everyone</c><00:00:00.560><c> welcome</c><00:00:01.040><c> back</c><00:00:01.199><c> and</c><00:00:01.360><c> let's</c>
+
+00:00:01.589 --> 00:00:01.599 align:start position:0%
+hey everyone welcome back and let's
+ 
+
+00:00:01.599 --> 00:00:03.030 align:start position:0%
+hey everyone welcome back and let's
+write<00:00:01.760><c> some</c><00:00:01.920><c> more</c><00:00:02.080><c> neat</c><00:00:02.320><c> code</c><00:00:02.560><c> today</c>
+
+00:00:03.030 --> 00:00:03.040 align:start position:0%
+write some more neat code today
+ 
+
+00:00:03.040 --> 00:00:05.670 align:start position:0%
+write some more neat code today
+so<00:00:03.199><c> today</c><00:00:03.600><c> let's</c><00:00:03.919><c> look</c><00:00:04.080><c> at</c><00:00:04.400><c> unique</c><00:00:04.960><c> paths</c><00:00:05.440><c> so</c>
+
+00:00:05.670 --> 00:00:05.680 align:start position:0%
+so today let's look at unique paths so
+ 
+
+00:00:05.680 --> 00:00:08.070 align:start position:0%
+so today let's look at unique paths so
+this<00:00:06.000><c> is</c><00:00:06.160><c> a</c><00:00:06.319><c> dynamic</c><00:00:06.960><c> programming</c><00:00:07.600><c> problem</c>
+
+00:00:08.070 --> 00:00:08.080 align:start position:0%
+this is a dynamic programming problem
+ 
+
+00:00:08.080 --> 00:00:10.150 align:start position:0%
+this is a dynamic programming problem
+and<00:00:08.320><c> it's</c><00:00:08.559><c> a</c><00:00:08.800><c> relatively</c><00:00:09.519><c> straightforward</c>
+
+00:00:10.150 --> 00:00:10.160 align:start position:0%
+and it's a relatively straightforward
+ 
+
+00:00:10.160 --> 00:00:11.830 align:start position:0%
+and it's a relatively straightforward
+one<00:00:10.320><c> compared</c><00:00:10.719><c> to</c><00:00:10.800><c> a</c><00:00:10.880><c> lot</c><00:00:11.040><c> of</c><00:00:11.200><c> more</c><00:00:11.440><c> difficult</c>
+
+00:00:11.830 --> 00:00:11.840 align:start position:0%
+one compared to a lot of more difficult
+ 
+
+00:00:11.840 --> 00:00:13.509 align:start position:0%
+one compared to a lot of more difficult
+dynamic<00:00:12.240><c> programming</c><00:00:12.799><c> problems</c>
+
+00:00:13.509 --> 00:00:13.519 align:start position:0%
+dynamic programming problems
+ 
+
+00:00:13.519 --> 00:00:16.790 align:start position:0%
+dynamic programming problems
+we<00:00:13.679><c> are</c><00:00:14.000><c> given</c><00:00:14.639><c> a</c><00:00:15.040><c> m</c><00:00:15.280><c> by</c><00:00:15.679><c> n</c><00:00:16.080><c> grid</c>
+
+00:00:16.790 --> 00:00:16.800 align:start position:0%
+we are given a m by n grid
+ 
+
+00:00:16.800 --> 00:00:20.150 align:start position:0%
+we are given a m by n grid
+and<00:00:17.279><c> so</c><00:00:17.680><c> the</c><00:00:18.000><c> top</c><00:00:18.640><c> left</c><00:00:19.119><c> in</c><00:00:19.199><c> the</c><00:00:19.439><c> grid</c><00:00:19.840><c> is</c>
+
+00:00:20.150 --> 00:00:20.160 align:start position:0%
+and so the top left in the grid is
+ 
+
+00:00:20.160 --> 00:00:22.870 align:start position:0%
+and so the top left in the grid is
+always<00:00:20.640><c> going</c><00:00:20.880><c> to</c><00:00:21.039><c> be</c><00:00:21.359><c> our</c><00:00:21.600><c> start</c><00:00:22.000><c> value</c><00:00:22.640><c> and</c>
+
+00:00:22.870 --> 00:00:22.880 align:start position:0%
+always going to be our start value and
+ 
+
+00:00:22.880 --> 00:00:23.269 align:start position:0%
+always going to be our start value and
+so
+
+00:00:23.269 --> 00:00:23.279 align:start position:0%
+so
+ 
+
+00:00:23.279 --> 00:00:25.830 align:start position:0%
+so
+from<00:00:23.680><c> our</c><00:00:24.000><c> start</c><00:00:24.400><c> value</c><00:00:24.720><c> it's</c><00:00:24.880><c> like</c><00:00:25.119><c> a</c><00:00:25.279><c> game</c><00:00:25.680><c> we</c>
+
+00:00:25.830 --> 00:00:25.840 align:start position:0%
+from our start value it's like a game we
+ 
+
+00:00:25.840 --> 00:00:28.070 align:start position:0%
+from our start value it's like a game we
+have<00:00:26.160><c> two</c><00:00:26.480><c> choices</c><00:00:26.880><c> no</c><00:00:27.039><c> matter</c><00:00:27.359><c> what</c><00:00:27.599><c> position</c>
+
+00:00:28.070 --> 00:00:28.080 align:start position:0%
+have two choices no matter what position
+ 
+
+00:00:28.080 --> 00:00:28.950 align:start position:0%
+have two choices no matter what position
+we're<00:00:28.400><c> at</c><00:00:28.560><c> we</c>
+
+00:00:28.950 --> 00:00:28.960 align:start position:0%
+we're at we
+ 
+
+00:00:28.960 --> 00:00:32.950 align:start position:0%
+we're at we
+can<00:00:29.359><c> only</c><00:00:30.000><c> move</c><00:00:30.560><c> right</c><00:00:31.439><c> or</c><00:00:31.760><c> we</c><00:00:31.920><c> can</c><00:00:32.239><c> move</c>
+
+00:00:32.950 --> 00:00:32.960 align:start position:0%
+can only move right or we can move
+ 
+
+00:00:32.960 --> 00:00:35.510 align:start position:0%
+can only move right or we can move
+down<00:00:33.360><c> those</c><00:00:33.680><c> are</c><00:00:33.760><c> our</c><00:00:34.160><c> only</c><00:00:34.640><c> choices</c><00:00:35.120><c> we</c><00:00:35.280><c> can't</c>
+
+00:00:35.510 --> 00:00:35.520 align:start position:0%
+down those are our only choices we can't
+ 
+
+00:00:35.520 --> 00:00:36.630 align:start position:0%
+down those are our only choices we can't
+go<00:00:35.760><c> diagonal</c>
+
+00:00:36.630 --> 00:00:36.640 align:start position:0%
+go diagonal
+ 
+
+00:00:36.640 --> 00:00:38.389 align:start position:0%
+go diagonal
+we<00:00:36.800><c> can't</c><00:00:36.960><c> go</c><00:00:37.360><c> up</c><00:00:37.600><c> and</c><00:00:37.680><c> we</c><00:00:37.840><c> definitely</c><00:00:38.160><c> can't</c>
+
+00:00:38.389 --> 00:00:38.399 align:start position:0%
+we can't go up and we definitely can't
+ 
+
+00:00:38.399 --> 00:00:39.990 align:start position:0%
+we can't go up and we definitely can't
+go<00:00:38.719><c> left</c><00:00:39.280><c> so</c><00:00:39.520><c> our</c>
+
+00:00:39.990 --> 00:00:40.000 align:start position:0%
+go left so our
+ 
+
+00:00:40.000 --> 00:00:42.549 align:start position:0%
+go left so our
+goal<00:00:40.480><c> is</c><00:00:40.719><c> to</c><00:00:40.879><c> reach</c><00:00:41.280><c> the</c><00:00:41.520><c> end</c><00:00:41.920><c> position</c><00:00:42.320><c> or</c><00:00:42.480><c> the</c>
+
+00:00:42.549 --> 00:00:42.559 align:start position:0%
+goal is to reach the end position or the
+ 
+
+00:00:42.559 --> 00:00:43.350 align:start position:0%
+goal is to reach the end position or the
+finished
+
+00:00:43.350 --> 00:00:43.360 align:start position:0%
+finished
+ 
+
+00:00:43.360 --> 00:00:45.350 align:start position:0%
+finished
+position<00:00:43.840><c> that's</c><00:00:44.079><c> always</c><00:00:44.399><c> going</c><00:00:44.480><c> to</c><00:00:44.640><c> be</c><00:00:44.879><c> the</c>
+
+00:00:45.350 --> 00:00:45.360 align:start position:0%
+position that's always going to be the
+ 
+
+00:00:45.360 --> 00:00:47.830 align:start position:0%
+position that's always going to be the
+bottom<00:00:46.079><c> right</c><00:00:46.399><c> so</c><00:00:46.559><c> we</c><00:00:46.719><c> start</c><00:00:46.960><c> at</c><00:00:47.120><c> the</c><00:00:47.360><c> top</c>
+
+00:00:47.830 --> 00:00:47.840 align:start position:0%
+bottom right so we start at the top
+ 
+
+00:00:47.840 --> 00:00:49.990 align:start position:0%
+bottom right so we start at the top
+left<00:00:48.160><c> but</c><00:00:48.320><c> we</c><00:00:48.480><c> want</c><00:00:48.640><c> to</c><00:00:48.719><c> go</c><00:00:49.039><c> to</c><00:00:49.200><c> the</c><00:00:49.440><c> bottom</c>
+
+00:00:49.990 --> 00:00:50.000 align:start position:0%
+left but we want to go to the bottom
+ 
+
+00:00:50.000 --> 00:00:51.750 align:start position:0%
+left but we want to go to the bottom
+right<00:00:50.480><c> and</c><00:00:50.719><c> the</c><00:00:50.879><c> only</c><00:00:51.280><c> question</c>
+
+00:00:51.750 --> 00:00:51.760 align:start position:0%
+right and the only question
+ 
+
+00:00:51.760 --> 00:00:54.950 align:start position:0%
+right and the only question
+is<00:00:52.000><c> how</c><00:00:52.160><c> many</c><00:00:52.719><c> unique</c><00:00:53.680><c> paths</c><00:00:54.239><c> are</c><00:00:54.480><c> there</c><00:00:54.719><c> to</c>
+
+00:00:54.950 --> 00:00:54.960 align:start position:0%
+is how many unique paths are there to
+ 
+
+00:00:54.960 --> 00:00:56.549 align:start position:0%
+is how many unique paths are there to
+get<00:00:55.280><c> to</c><00:00:55.440><c> the</c><00:00:55.680><c> end</c><00:00:55.920><c> position</c>
+
+00:00:56.549 --> 00:00:56.559 align:start position:0%
+get to the end position
+ 
+
+00:00:56.559 --> 00:00:58.869 align:start position:0%
+get to the end position
+so<00:00:56.800><c> at</c><00:00:57.120><c> first</c><00:00:57.520><c> this</c><00:00:57.680><c> kind</c><00:00:58.000><c> of</c><00:00:58.160><c> seems</c><00:00:58.480><c> like</c><00:00:58.719><c> a</c>
+
+00:00:58.869 --> 00:00:58.879 align:start position:0%
+so at first this kind of seems like a
+ 
+
+00:00:58.879 --> 00:01:00.709 align:start position:0%
+so at first this kind of seems like a
+recursive<00:00:59.440><c> problem</c><00:00:59.840><c> right</c><00:01:00.079><c> so</c>
+
+00:01:00.709 --> 00:01:00.719 align:start position:0%
+recursive problem right so
+ 
+
+00:01:00.719 --> 00:01:03.670 align:start position:0%
+recursive problem right so
+we<00:01:00.879><c> have</c><00:01:01.120><c> two</c><00:01:01.440><c> choices</c><00:01:01.920><c> right</c><00:01:02.160><c> we</c><00:01:02.320><c> can</c><00:01:02.480><c> go</c><00:01:03.199><c> down</c>
+
+00:01:03.670 --> 00:01:03.680 align:start position:0%
+we have two choices right we can go down
+ 
+
+00:01:03.680 --> 00:01:04.630 align:start position:0%
+we have two choices right we can go down
+or<00:01:03.920><c> we</c><00:01:04.080><c> can</c><00:01:04.239><c> go</c>
+
+00:01:04.630 --> 00:01:04.640 align:start position:0%
+or we can go
+ 
+
+00:01:04.640 --> 00:01:07.190 align:start position:0%
+or we can go
+right<00:01:05.119><c> and</c><00:01:05.199><c> then</c><00:01:05.439><c> that's</c><00:01:05.760><c> a</c><00:01:06.000><c> sub</c><00:01:06.320><c> problem</c><00:01:07.040><c> one</c>
+
+00:01:07.190 --> 00:01:07.200 align:start position:0%
+right and then that's a sub problem one
+ 
+
+00:01:07.200 --> 00:01:08.950 align:start position:0%
+right and then that's a sub problem one
+thing<00:01:07.439><c> to</c><00:01:07.520><c> notice</c><00:01:07.920><c> is</c><00:01:08.080><c> see</c><00:01:08.240><c> how</c><00:01:08.479><c> from</c><00:01:08.720><c> this</c>
+
+00:01:08.950 --> 00:01:08.960 align:start position:0%
+thing to notice is see how from this
+ 
+
+00:01:08.960 --> 00:01:09.990 align:start position:0%
+thing to notice is see how from this
+start<00:01:09.200><c> position</c>
+
+00:01:09.990 --> 00:01:10.000 align:start position:0%
+start position
+ 
+
+00:01:10.000 --> 00:01:12.469 align:start position:0%
+start position
+we<00:01:10.240><c> are</c><00:01:10.400><c> actually</c><00:01:10.799><c> able</c><00:01:11.119><c> to</c><00:01:11.280><c> move</c><00:01:11.600><c> to</c><00:01:12.080><c> any</c>
+
+00:01:12.469 --> 00:01:12.479 align:start position:0%
+we are actually able to move to any
+ 
+
+00:01:12.479 --> 00:01:13.270 align:start position:0%
+we are actually able to move to any
+position
+
+00:01:13.270 --> 00:01:13.280 align:start position:0%
+position
+ 
+
+00:01:13.280 --> 00:01:16.789 align:start position:0%
+position
+in<00:01:13.439><c> the</c><00:01:13.680><c> entire</c><00:01:14.479><c> grid</c><00:01:15.439><c> but</c><00:01:15.840><c> if</c><00:01:16.080><c> we</c><00:01:16.320><c> move</c>
+
+00:01:16.789 --> 00:01:16.799 align:start position:0%
+in the entire grid but if we move
+ 
+
+00:01:16.799 --> 00:01:19.510 align:start position:0%
+in the entire grid but if we move
+right<00:01:17.439><c> from</c><00:01:17.920><c> this</c><00:01:18.240><c> position</c><00:01:18.960><c> what</c><00:01:19.200><c> are</c><00:01:19.360><c> the</c>
+
+00:01:19.510 --> 00:01:19.520 align:start position:0%
+right from this position what are the
+ 
+
+00:01:19.520 --> 00:01:21.429 align:start position:0%
+right from this position what are the
+possible<00:01:20.000><c> spots</c><00:01:20.400><c> we</c><00:01:20.479><c> can</c><00:01:20.640><c> go</c><00:01:20.799><c> to</c><00:01:20.960><c> well</c><00:01:21.200><c> we</c><00:01:21.280><c> can</c>
+
+00:01:21.429 --> 00:01:21.439 align:start position:0%
+possible spots we can go to well we can
+ 
+
+00:01:21.439 --> 00:01:21.749 align:start position:0%
+possible spots we can go to well we can
+go
+
+00:01:21.749 --> 00:01:21.759 align:start position:0%
+go
+ 
+
+00:01:21.759 --> 00:01:23.190 align:start position:0%
+go
+right<00:01:22.000><c> and</c><00:01:22.080><c> we</c><00:01:22.240><c> can</c><00:01:22.320><c> go</c><00:01:22.560><c> down</c><00:01:22.720><c> so</c><00:01:22.960><c> we</c><00:01:23.040><c> can</c>
+
+00:01:23.190 --> 00:01:23.200 align:start position:0%
+right and we can go down so we can
+ 
+
+00:01:23.200 --> 00:01:25.109 align:start position:0%
+right and we can go down so we can
+actually<00:01:23.439><c> go</c><00:01:23.600><c> to</c><00:01:23.920><c> any</c><00:01:24.560><c> spot</c>
+
+00:01:25.109 --> 00:01:25.119 align:start position:0%
+actually go to any spot
+ 
+
+00:01:25.119 --> 00:01:27.429 align:start position:0%
+actually go to any spot
+here<00:01:25.680><c> but</c><00:01:25.920><c> notice</c><00:01:26.479><c> we</c><00:01:26.640><c> will</c><00:01:26.799><c> never</c><00:01:27.040><c> be</c><00:01:27.119><c> able</c><00:01:27.280><c> to</c>
+
+00:01:27.429 --> 00:01:27.439 align:start position:0%
+here but notice we will never be able to
+ 
+
+00:01:27.439 --> 00:01:29.590 align:start position:0%
+here but notice we will never be able to
+reach<00:01:27.840><c> these</c><00:01:28.159><c> two</c><00:01:28.479><c> elements</c><00:01:29.040><c> if</c><00:01:29.200><c> we</c>
+
+00:01:29.590 --> 00:01:29.600 align:start position:0%
+reach these two elements if we
+ 
+
+00:01:29.600 --> 00:01:32.069 align:start position:0%
+reach these two elements if we
+start<00:01:29.920><c> from</c><00:01:30.079><c> here</c><00:01:30.640><c> and</c><00:01:30.960><c> similarly</c><00:01:31.520><c> if</c><00:01:31.600><c> we</c><00:01:31.759><c> go</c>
+
+00:01:32.069 --> 00:01:32.079 align:start position:0%
+start from here and similarly if we go
+ 
+
+00:01:32.079 --> 00:01:32.789 align:start position:0%
+start from here and similarly if we go
+down
+
+00:01:32.789 --> 00:01:32.799 align:start position:0%
+down
+ 
+
+00:01:32.799 --> 00:01:35.350 align:start position:0%
+down
+from<00:01:33.360><c> here</c><00:01:33.920><c> then</c><00:01:34.159><c> what</c><00:01:34.640><c> positions</c><00:01:35.040><c> can</c><00:01:35.200><c> we</c>
+
+00:01:35.350 --> 00:01:35.360 align:start position:0%
+from here then what positions can we
+ 
+
+00:01:35.360 --> 00:01:37.270 align:start position:0%
+from here then what positions can we
+reach<00:01:35.680><c> we</c><00:01:35.759><c> can</c><00:01:35.920><c> reach</c><00:01:36.240><c> any</c><00:01:36.479><c> position</c><00:01:36.880><c> to</c><00:01:37.040><c> the</c>
+
+00:01:37.270 --> 00:01:37.280 align:start position:0%
+reach we can reach any position to the
+ 
+
+00:01:37.280 --> 00:01:39.350 align:start position:0%
+reach we can reach any position to the
+right<00:01:37.600><c> or</c><00:01:37.920><c> below</c><00:01:38.400><c> but</c><00:01:38.560><c> we'll</c><00:01:38.799><c> never</c><00:01:39.040><c> be</c><00:01:39.200><c> able</c>
+
+00:01:39.350 --> 00:01:39.360 align:start position:0%
+right or below but we'll never be able
+ 
+
+00:01:39.360 --> 00:01:40.789 align:start position:0%
+right or below but we'll never be able
+to<00:01:39.520><c> reach</c><00:01:39.840><c> any</c><00:01:40.079><c> of</c><00:01:40.240><c> these</c>
+
+00:01:40.789 --> 00:01:40.799 align:start position:0%
+to reach any of these
+ 
+
+00:01:40.799 --> 00:01:43.109 align:start position:0%
+to reach any of these
+positions<00:01:41.600><c> and</c><00:01:41.759><c> another</c><00:01:42.079><c> thing</c><00:01:42.320><c> to</c><00:01:42.399><c> notice</c><00:01:42.799><c> is</c>
+
+00:01:43.109 --> 00:01:43.119 align:start position:0%
+positions and another thing to notice is
+ 
+
+00:01:43.119 --> 00:01:46.069 align:start position:0%
+positions and another thing to notice is
+literally<00:01:43.680><c> any</c><00:01:44.000><c> spot</c><00:01:44.479><c> in</c><00:01:44.640><c> the</c><00:01:44.799><c> entire</c><00:01:45.200><c> grid</c>
+
+00:01:46.069 --> 00:01:46.079 align:start position:0%
+literally any spot in the entire grid
+ 
+
+00:01:46.079 --> 00:01:48.630 align:start position:0%
+literally any spot in the entire grid
+uh<00:01:46.320><c> the</c><00:01:46.479><c> nature</c><00:01:46.799><c> of</c><00:01:46.880><c> this</c><00:01:47.119><c> grid</c><00:01:47.680><c> and</c><00:01:48.000><c> since</c><00:01:48.479><c> we</c>
+
+00:01:48.630 --> 00:01:48.640 align:start position:0%
+uh the nature of this grid and since we
+ 
+
+00:01:48.640 --> 00:01:50.630 align:start position:0%
+uh the nature of this grid and since we
+can<00:01:48.720><c> go</c><00:01:48.960><c> down</c><00:01:49.280><c> and</c><00:01:49.439><c> we</c><00:01:49.520><c> can</c><00:01:49.680><c> go</c><00:01:49.920><c> right</c>
+
+00:01:50.630 --> 00:01:50.640 align:start position:0%
+can go down and we can go right
+ 
+
+00:01:50.640 --> 00:01:53.109 align:start position:0%
+can go down and we can go right
+any<00:01:51.040><c> spot</c><00:01:51.600><c> in</c><00:01:51.759><c> this</c><00:01:52.000><c> grid</c><00:01:52.320><c> will</c><00:01:52.479><c> be</c><00:01:52.640><c> able</c><00:01:52.880><c> to</c>
+
+00:01:53.109 --> 00:01:53.119 align:start position:0%
+any spot in this grid will be able to
+ 
+
+00:01:53.119 --> 00:01:54.630 align:start position:0%
+any spot in this grid will be able to
+reach<00:01:53.360><c> our</c><00:01:53.520><c> destination</c>
+
+00:01:54.630 --> 00:01:54.640 align:start position:0%
+reach our destination
+ 
+
+00:01:54.640 --> 00:01:56.630 align:start position:0%
+reach our destination
+so<00:01:54.799><c> we</c><00:01:54.960><c> don't</c><00:01:55.119><c> have</c><00:01:55.280><c> to</c><00:01:55.439><c> worry</c><00:01:55.759><c> about</c><00:01:56.159><c> not</c>
+
+00:01:56.630 --> 00:01:56.640 align:start position:0%
+so we don't have to worry about not
+ 
+
+00:01:56.640 --> 00:01:57.749 align:start position:0%
+so we don't have to worry about not
+being<00:01:56.880><c> able</c><00:01:57.119><c> to</c><00:01:57.280><c> reach</c>
+
+00:01:57.749 --> 00:01:57.759 align:start position:0%
+being able to reach
+ 
+
+00:01:57.759 --> 00:01:59.910 align:start position:0%
+being able to reach
+the<00:01:58.000><c> destination</c><00:01:58.880><c> so</c><00:01:59.040><c> yeah</c><00:01:59.280><c> you</c><00:01:59.439><c> might</c><00:01:59.680><c> try</c>
+
+00:01:59.910 --> 00:01:59.920 align:start position:0%
+the destination so yeah you might try
+ 
+
+00:01:59.920 --> 00:02:01.510 align:start position:0%
+the destination so yeah you might try
+this<00:02:00.159><c> problem</c><00:02:00.479><c> recursively</c><00:02:01.119><c> right</c><00:02:01.280><c> so</c><00:02:01.439><c> we</c>
+
+00:02:01.510 --> 00:02:01.520 align:start position:0%
+this problem recursively right so we
+ 
+
+00:02:01.520 --> 00:02:03.190 align:start position:0%
+this problem recursively right so we
+have<00:02:01.680><c> two</c><00:02:01.920><c> decisions</c><00:02:02.479><c> go</c><00:02:02.640><c> down</c>
+
+00:02:03.190 --> 00:02:03.200 align:start position:0%
+have two decisions go down
+ 
+
+00:02:03.200 --> 00:02:05.510 align:start position:0%
+have two decisions go down
+or<00:02:03.439><c> go</c><00:02:03.759><c> right</c><00:02:04.320><c> and</c><00:02:04.479><c> that's</c><00:02:04.799><c> great</c><00:02:05.119><c> right</c><00:02:05.360><c> so</c>
+
+00:02:05.510 --> 00:02:05.520 align:start position:0%
+or go right and that's great right so
+ 
+
+00:02:05.520 --> 00:02:08.229 align:start position:0%
+or go right and that's great right so
+now<00:02:06.079><c> from</c><00:02:06.399><c> here</c><00:02:06.719><c> we</c><00:02:06.960><c> also</c><00:02:07.280><c> have</c><00:02:07.439><c> two</c><00:02:07.759><c> choices</c>
+
+00:02:08.229 --> 00:02:08.239 align:start position:0%
+now from here we also have two choices
+ 
+
+00:02:08.239 --> 00:02:08.869 align:start position:0%
+now from here we also have two choices
+go
+
+00:02:08.869 --> 00:02:08.879 align:start position:0%
+go
+ 
+
+00:02:08.879 --> 00:02:11.670 align:start position:0%
+go
+down<00:02:09.599><c> or</c><00:02:09.920><c> go</c><00:02:10.239><c> right</c><00:02:10.720><c> from</c><00:02:10.959><c> here</c><00:02:11.200><c> we</c><00:02:11.360><c> have</c><00:02:11.440><c> two</c>
+
+00:02:11.670 --> 00:02:11.680 align:start position:0%
+down or go right from here we have two
+ 
+
+00:02:11.680 --> 00:02:12.390 align:start position:0%
+down or go right from here we have two
+choices
+
+00:02:12.390 --> 00:02:12.400 align:start position:0%
+choices
+ 
+
+00:02:12.400 --> 00:02:15.670 align:start position:0%
+choices
+go<00:02:13.040><c> down</c><00:02:13.920><c> or</c><00:02:14.480><c> go</c><00:02:15.120><c> right</c>
+
+00:02:15.670 --> 00:02:15.680 align:start position:0%
+go down or go right
+ 
+
+00:02:15.680 --> 00:02:17.190 align:start position:0%
+go down or go right
+you<00:02:15.840><c> kind</c><00:02:16.000><c> of</c><00:02:16.160><c> notice</c><00:02:16.560><c> though</c><00:02:16.800><c> there's</c><00:02:17.040><c> some</c>
+
+00:02:17.190 --> 00:02:17.200 align:start position:0%
+you kind of notice though there's some
+ 
+
+00:02:17.200 --> 00:02:18.949 align:start position:0%
+you kind of notice though there's some
+repeated<00:02:18.160><c> work</c>
+
+00:02:18.949 --> 00:02:18.959 align:start position:0%
+repeated work
+ 
+
+00:02:18.959 --> 00:02:21.110 align:start position:0%
+repeated work
+obviously<00:02:19.440><c> we</c><00:02:19.520><c> can</c><00:02:19.760><c> get</c><00:02:20.000><c> to</c><00:02:20.160><c> this</c><00:02:20.400><c> position</c>
+
+00:02:21.110 --> 00:02:21.120 align:start position:0%
+obviously we can get to this position
+ 
+
+00:02:21.120 --> 00:02:22.550 align:start position:0%
+obviously we can get to this position
+two<00:02:21.360><c> different</c><00:02:21.760><c> ways</c><00:02:22.160><c> so</c>
+
+00:02:22.550 --> 00:02:22.560 align:start position:0%
+two different ways so
+ 
+
+00:02:22.560 --> 00:02:24.229 align:start position:0%
+two different ways so
+in<00:02:22.720><c> that</c><00:02:22.959><c> case</c><00:02:23.440><c> we're</c><00:02:23.599><c> gonna</c><00:02:23.840><c> end</c><00:02:24.000><c> up</c><00:02:24.080><c> doing</c>
+
+00:02:24.229 --> 00:02:24.239 align:start position:0%
+in that case we're gonna end up doing
+ 
+
+00:02:24.239 --> 00:02:25.750 align:start position:0%
+in that case we're gonna end up doing
+repeated<00:02:24.720><c> work</c><00:02:24.959><c> right</c><00:02:25.200><c> from</c>
+
+00:02:25.750 --> 00:02:25.760 align:start position:0%
+repeated work right from
+ 
+
+00:02:25.760 --> 00:02:28.229 align:start position:0%
+repeated work right from
+this<00:02:26.400><c> uh</c><00:02:27.120><c> way</c><00:02:27.280><c> that</c><00:02:27.440><c> we</c><00:02:27.520><c> got</c><00:02:27.680><c> here</c><00:02:27.840><c> we're</c><00:02:28.000><c> gonna</c>
+
+00:02:28.229 --> 00:02:28.239 align:start position:0%
+this uh way that we got here we're gonna
+ 
+
+00:02:28.239 --> 00:02:29.990 align:start position:0%
+this uh way that we got here we're gonna
+we<00:02:28.400><c> can</c><00:02:28.480><c> go</c><00:02:28.720><c> down</c><00:02:29.040><c> and</c><00:02:29.280><c> we</c><00:02:29.440><c> can</c><00:02:29.599><c> go</c>
+
+00:02:29.990 --> 00:02:30.000 align:start position:0%
+we can go down and we can go
+ 
+
+00:02:30.000 --> 00:02:32.390 align:start position:0%
+we can go down and we can go
+right<00:02:30.560><c> and</c><00:02:30.720><c> we're</c><00:02:30.879><c> gonna</c><00:02:31.040><c> repeat</c><00:02:31.519><c> that</c><00:02:32.000><c> over</c>
+
+00:02:32.390 --> 00:02:32.400 align:start position:0%
+right and we're gonna repeat that over
+ 
+
+00:02:32.400 --> 00:02:33.430 align:start position:0%
+right and we're gonna repeat that over
+here<00:02:32.640><c> right</c><00:02:32.959><c> go</c>
+
+00:02:33.430 --> 00:02:33.440 align:start position:0%
+here right go
+ 
+
+00:02:33.440 --> 00:02:37.110 align:start position:0%
+here right go
+down<00:02:34.080><c> or</c><00:02:34.720><c> go</c><00:02:35.040><c> right</c><00:02:35.440><c> so</c><00:02:36.160><c> if</c><00:02:36.319><c> we're</c><00:02:36.560><c> doing</c><00:02:36.879><c> depth</c>
+
+00:02:37.110 --> 00:02:37.120 align:start position:0%
+down or go right so if we're doing depth
+ 
+
+00:02:37.120 --> 00:02:38.869 align:start position:0%
+down or go right so if we're doing depth
+first<00:02:37.440><c> search</c><00:02:37.760><c> recursively</c>
+
+00:02:38.869 --> 00:02:38.879 align:start position:0%
+first search recursively
+ 
+
+00:02:38.879 --> 00:02:42.390 align:start position:0%
+first search recursively
+one<00:02:39.120><c> thing</c><00:02:39.280><c> we</c><00:02:39.440><c> can</c><00:02:39.599><c> do</c><00:02:39.920><c> is</c><00:02:40.080><c> have</c><00:02:40.239><c> a</c><00:02:40.560><c> cache</c><00:02:41.680><c> so</c>
+
+00:02:42.390 --> 00:02:42.400 align:start position:0%
+one thing we can do is have a cache so
+ 
+
+00:02:42.400 --> 00:02:45.750 align:start position:0%
+one thing we can do is have a cache so
+for<00:02:42.800><c> every</c><00:02:43.599><c> row</c><00:02:44.800><c> column</c>
+
+00:02:45.750 --> 00:02:45.760 align:start position:0%
+for every row column
+ 
+
+00:02:45.760 --> 00:02:48.790 align:start position:0%
+for every row column
+position<00:02:46.720><c> so</c><00:02:46.959><c> for</c><00:02:47.120><c> example</c><00:02:47.760><c> in</c><00:02:48.319><c> this</c>
+
+00:02:48.790 --> 00:02:48.800 align:start position:0%
+position so for example in this
+ 
+
+00:02:48.800 --> 00:02:51.990 align:start position:0%
+position so for example in this
+position<00:02:49.680><c> we</c><00:02:50.080><c> cache</c><00:02:50.560><c> the</c><00:02:50.800><c> result</c><00:02:51.440><c> so</c><00:02:51.680><c> if</c><00:02:51.760><c> we</c>
+
+00:02:51.990 --> 00:02:52.000 align:start position:0%
+position we cache the result so if we
+ 
+
+00:02:52.000 --> 00:02:52.470 align:start position:0%
+position we cache the result so if we
+ever
+
+00:02:52.470 --> 00:02:52.480 align:start position:0%
+ever
+ 
+
+00:02:52.480 --> 00:02:55.350 align:start position:0%
+ever
+reach<00:02:53.040><c> this</c><00:02:53.280><c> spot</c><00:02:53.760><c> multiple</c><00:02:54.319><c> times</c><00:02:55.040><c> we</c><00:02:55.200><c> will</c>
+
+00:02:55.350 --> 00:02:55.360 align:start position:0%
+reach this spot multiple times we will
+ 
+
+00:02:55.360 --> 00:02:57.030 align:start position:0%
+reach this spot multiple times we will
+be<00:02:55.519><c> able</c><00:02:55.680><c> to</c><00:02:55.920><c> store</c><00:02:56.239><c> that</c><00:02:56.400><c> and</c><00:02:56.480><c> we</c><00:02:56.640><c> won't</c><00:02:56.879><c> have</c>
+
+00:02:57.030 --> 00:02:57.040 align:start position:0%
+be able to store that and we won't have
+ 
+
+00:02:57.040 --> 00:02:57.509 align:start position:0%
+be able to store that and we won't have
+to<00:02:57.200><c> run</c>
+
+00:02:57.509 --> 00:02:57.519 align:start position:0%
+to run
+ 
+
+00:02:57.519 --> 00:02:59.830 align:start position:0%
+to run
+debt<00:02:57.760><c> for</c><00:02:58.000><c> search</c><00:02:58.400><c> again</c><00:02:59.040><c> because</c><00:02:59.440><c> debt</c><00:02:59.680><c> for</c>
+
+00:02:59.830 --> 00:02:59.840 align:start position:0%
+debt for search again because debt for
+ 
+
+00:02:59.840 --> 00:03:01.589 align:start position:0%
+debt for search again because debt for
+search<00:03:00.080><c> is</c><00:03:00.239><c> pretty</c><00:03:00.560><c> expensive</c>
+
+00:03:01.589 --> 00:03:01.599 align:start position:0%
+search is pretty expensive
+ 
+
+00:03:01.599 --> 00:03:03.589 align:start position:0%
+search is pretty expensive
+and<00:03:01.760><c> so</c><00:03:02.080><c> what</c><00:03:02.319><c> is</c><00:03:02.480><c> this</c><00:03:02.640><c> value</c><00:03:03.120><c> even</c><00:03:03.280><c> going</c><00:03:03.440><c> to</c>
+
+00:03:03.589 --> 00:03:03.599 align:start position:0%
+and so what is this value even going to
+ 
+
+00:03:03.599 --> 00:03:04.630 align:start position:0%
+and so what is this value even going to
+store<00:03:04.000><c> well</c>
+
+00:03:04.630 --> 00:03:04.640 align:start position:0%
+store well
+ 
+
+00:03:04.640 --> 00:03:07.589 align:start position:0%
+store well
+this<00:03:04.879><c> is</c><00:03:05.040><c> recursive</c><00:03:05.680><c> so</c><00:03:06.080><c> for</c><00:03:06.319><c> each</c><00:03:06.720><c> position</c>
+
+00:03:07.589 --> 00:03:07.599 align:start position:0%
+this is recursive so for each position
+ 
+
+00:03:07.599 --> 00:03:09.910 align:start position:0%
+this is recursive so for each position
+we're<00:03:07.920><c> actually</c><00:03:08.400><c> calculating</c><00:03:09.120><c> the</c><00:03:09.360><c> number</c><00:03:09.680><c> of</c>
+
+00:03:09.910 --> 00:03:09.920 align:start position:0%
+we're actually calculating the number of
+ 
+
+00:03:09.920 --> 00:03:10.470 align:start position:0%
+we're actually calculating the number of
+ways
+
+00:03:10.470 --> 00:03:10.480 align:start position:0%
+ways
+ 
+
+00:03:10.480 --> 00:03:13.110 align:start position:0%
+ways
+we<00:03:10.640><c> can</c><00:03:10.959><c> reach</c><00:03:11.519><c> the</c><00:03:11.760><c> destination</c><00:03:12.560><c> right</c><00:03:12.959><c> and</c>
+
+00:03:13.110 --> 00:03:13.120 align:start position:0%
+we can reach the destination right and
+ 
+
+00:03:13.120 --> 00:03:14.710 align:start position:0%
+we can reach the destination right and
+if<00:03:13.200><c> we</c><00:03:13.360><c> can</c><00:03:13.599><c> compute</c><00:03:14.080><c> that</c><00:03:14.319><c> for</c>
+
+00:03:14.710 --> 00:03:14.720 align:start position:0%
+if we can compute that for
+ 
+
+00:03:14.720 --> 00:03:18.070 align:start position:0%
+if we can compute that for
+every<00:03:15.360><c> single</c><00:03:16.319><c> like</c><00:03:16.800><c> square</c><00:03:17.680><c> then</c>
+
+00:03:18.070 --> 00:03:18.080 align:start position:0%
+every single like square then
+ 
+
+00:03:18.080 --> 00:03:20.710 align:start position:0%
+every single like square then
+we<00:03:18.239><c> can</c><00:03:18.400><c> compute</c><00:03:18.800><c> that</c><00:03:19.280><c> for</c><00:03:19.599><c> the</c><00:03:20.159><c> original</c>
+
+00:03:20.710 --> 00:03:20.720 align:start position:0%
+we can compute that for the original
+ 
+
+00:03:20.720 --> 00:03:21.190 align:start position:0%
+we can compute that for the original
+square
+
+00:03:21.190 --> 00:03:21.200 align:start position:0%
+square
+ 
+
+00:03:21.200 --> 00:03:23.910 align:start position:0%
+square
+right<00:03:21.760><c> basically</c><00:03:22.319><c> what</c><00:03:22.560><c> i'm</c><00:03:22.720><c> saying</c><00:03:23.120><c> is</c><00:03:23.680><c> the</c>
+
+00:03:23.910 --> 00:03:23.920 align:start position:0%
+right basically what i'm saying is the
+ 
+
+00:03:23.920 --> 00:03:26.070 align:start position:0%
+right basically what i'm saying is the
+result<00:03:24.480><c> that</c><00:03:24.640><c> we're</c><00:03:25.040><c> looking</c><00:03:25.440><c> for</c>
+
+00:03:26.070 --> 00:03:26.080 align:start position:0%
+result that we're looking for
+ 
+
+00:03:26.080 --> 00:03:28.789 align:start position:0%
+result that we're looking for
+is<00:03:26.400><c> actually</c><00:03:27.040><c> equal</c><00:03:27.840><c> so</c><00:03:28.080><c> let's</c><00:03:28.239><c> say</c><00:03:28.400><c> we</c><00:03:28.560><c> call</c>
+
+00:03:28.789 --> 00:03:28.799 align:start position:0%
+is actually equal so let's say we call
+ 
+
+00:03:28.799 --> 00:03:29.430 align:start position:0%
+is actually equal so let's say we call
+this<00:03:28.959><c> spot</c>
+
+00:03:29.430 --> 00:03:29.440 align:start position:0%
+this spot
+ 
+
+00:03:29.440 --> 00:03:31.910 align:start position:0%
+this spot
+r<00:03:29.920><c> we</c><00:03:30.080><c> call</c><00:03:30.319><c> this</c><00:03:30.480><c> spot</c><00:03:30.959><c> down</c><00:03:31.280><c> right</c><00:03:31.519><c> so</c><00:03:31.680><c> this</c>
+
+00:03:31.910 --> 00:03:31.920 align:start position:0%
+r we call this spot down right so this
+ 
+
+00:03:31.920 --> 00:03:32.630 align:start position:0%
+r we call this spot down right so this
+is<00:03:32.400><c> r</c>
+
+00:03:32.630 --> 00:03:32.640 align:start position:0%
+is r
+ 
+
+00:03:32.640 --> 00:03:35.990 align:start position:0%
+is r
+for<00:03:32.879><c> right</c><00:03:33.200><c> this</c><00:03:33.440><c> is</c><00:03:34.159><c> d</c><00:03:34.400><c> for</c><00:03:34.720><c> down</c><00:03:35.360><c> the</c><00:03:35.599><c> result</c>
+
+00:03:35.990 --> 00:03:36.000 align:start position:0%
+for right this is d for down the result
+ 
+
+00:03:36.000 --> 00:03:37.670 align:start position:0%
+for right this is d for down the result
+that<00:03:36.159><c> we're</c><00:03:36.319><c> looking</c><00:03:36.640><c> for</c><00:03:36.799><c> is</c><00:03:36.959><c> actually</c><00:03:37.360><c> the</c>
+
+00:03:37.670 --> 00:03:37.680 align:start position:0%
+that we're looking for is actually the
+ 
+
+00:03:37.680 --> 00:03:41.030 align:start position:0%
+that we're looking for is actually the
+sum<00:03:38.080><c> of</c><00:03:38.480><c> r</c><00:03:38.879><c> plus</c><00:03:39.519><c> d</c><00:03:39.920><c> right</c><00:03:40.319><c> but</c><00:03:40.480><c> then</c><00:03:40.720><c> you</c><00:03:40.879><c> might</c>
+
+00:03:41.030 --> 00:03:41.040 align:start position:0%
+sum of r plus d right but then you might
+ 
+
+00:03:41.040 --> 00:03:42.390 align:start position:0%
+sum of r plus d right but then you might
+ask<00:03:41.360><c> well</c><00:03:41.519><c> how</c><00:03:41.680><c> do</c><00:03:41.760><c> we</c><00:03:41.920><c> compute</c>
+
+00:03:42.390 --> 00:03:42.400 align:start position:0%
+ask well how do we compute
+ 
+
+00:03:42.400 --> 00:03:45.030 align:start position:0%
+ask well how do we compute
+r<00:03:42.640><c> and</c><00:03:42.720><c> how</c><00:03:42.879><c> do</c><00:03:42.959><c> we</c><00:03:43.120><c> compute</c><00:03:43.519><c> d</c><00:03:43.840><c> well</c><00:03:44.400><c> r</c><00:03:44.720><c> is</c><00:03:44.879><c> just</c>
+
+00:03:45.030 --> 00:03:45.040 align:start position:0%
+r and how do we compute d well r is just
+ 
+
+00:03:45.040 --> 00:03:45.589 align:start position:0%
+r and how do we compute d well r is just
+gonna<00:03:45.280><c> be</c>
+
+00:03:45.589 --> 00:03:45.599 align:start position:0%
+gonna be
+ 
+
+00:03:45.599 --> 00:03:47.430 align:start position:0%
+gonna be
+r<00:03:45.840><c> has</c><00:03:46.080><c> a</c><00:03:46.159><c> value</c><00:03:46.480><c> to</c><00:03:46.640><c> the</c><00:03:46.720><c> right</c><00:03:46.959><c> of</c><00:03:47.040><c> it</c><00:03:47.200><c> and</c><00:03:47.360><c> it</c>
+
+00:03:47.430 --> 00:03:47.440 align:start position:0%
+r has a value to the right of it and it
+ 
+
+00:03:47.440 --> 00:03:49.270 align:start position:0%
+r has a value to the right of it and it
+has<00:03:47.760><c> a</c><00:03:47.840><c> value</c><00:03:48.159><c> below</c><00:03:48.640><c> it</c><00:03:48.799><c> right</c>
+
+00:03:49.270 --> 00:03:49.280 align:start position:0%
+has a value below it right
+ 
+
+00:03:49.280 --> 00:03:52.390 align:start position:0%
+has a value below it right
+so<00:03:49.440><c> if</c><00:03:49.599><c> we</c><00:03:49.680><c> want</c><00:03:49.920><c> to</c><00:03:50.000><c> compute</c><00:03:50.879><c> this</c><00:03:51.760><c> value</c>
+
+00:03:52.390 --> 00:03:52.400 align:start position:0%
+so if we want to compute this value
+ 
+
+00:03:52.400 --> 00:03:55.030 align:start position:0%
+so if we want to compute this value
+we<00:03:52.560><c> can</c><00:03:52.799><c> just</c><00:03:53.040><c> take</c><00:03:53.599><c> the</c><00:03:54.239><c> right</c><00:03:54.560><c> and</c><00:03:54.720><c> down</c>
+
+00:03:55.030 --> 00:03:55.040 align:start position:0%
+we can just take the right and down
+ 
+
+00:03:55.040 --> 00:03:55.750 align:start position:0%
+we can just take the right and down
+values
+
+00:03:55.750 --> 00:03:55.760 align:start position:0%
+values
+ 
+
+00:03:55.760 --> 00:03:58.149 align:start position:0%
+values
+and<00:03:55.920><c> get</c><00:03:56.239><c> them</c><00:03:56.560><c> right</c><00:03:57.200><c> but</c><00:03:57.360><c> so</c><00:03:57.599><c> what's</c><00:03:57.920><c> the</c>
+
+00:03:58.149 --> 00:03:58.159 align:start position:0%
+and get them right but so what's the
+ 
+
+00:03:58.159 --> 00:04:00.710 align:start position:0%
+and get them right but so what's the
+what<00:03:58.480><c> ends</c><00:03:58.720><c> up</c><00:03:58.879><c> being</c><00:03:59.200><c> the</c><00:03:59.439><c> base</c><00:03:59.840><c> case</c>
+
+00:04:00.710 --> 00:04:00.720 align:start position:0%
+what ends up being the base case
+ 
+
+00:04:00.720 --> 00:04:02.949 align:start position:0%
+what ends up being the base case
+so<00:04:00.879><c> with</c><00:04:01.120><c> all</c><00:04:01.360><c> that</c><00:04:01.599><c> in</c><00:04:01.840><c> mind</c><00:04:02.239><c> what</c><00:04:02.480><c> ends</c><00:04:02.799><c> up</c>
+
+00:04:02.949 --> 00:04:02.959 align:start position:0%
+so with all that in mind what ends up
+ 
+
+00:04:02.959 --> 00:04:05.110 align:start position:0%
+so with all that in mind what ends up
+actually<00:04:03.360><c> being</c><00:04:03.599><c> the</c><00:04:03.840><c> base</c><00:04:04.159><c> case</c><00:04:04.480><c> well</c>
+
+00:04:05.110 --> 00:04:05.120 align:start position:0%
+actually being the base case well
+ 
+
+00:04:05.120 --> 00:04:07.509 align:start position:0%
+actually being the base case well
+so<00:04:05.280><c> this</c><00:04:05.519><c> is</c><00:04:05.680><c> the</c><00:04:06.159><c> ending</c><00:04:06.560><c> position</c><00:04:07.120><c> right</c><00:04:07.280><c> so</c>
+
+00:04:07.509 --> 00:04:07.519 align:start position:0%
+so this is the ending position right so
+ 
+
+00:04:07.519 --> 00:04:08.229 align:start position:0%
+so this is the ending position right so
+how<00:04:07.680><c> many</c><00:04:07.840><c> ways</c>
+
+00:04:08.229 --> 00:04:08.239 align:start position:0%
+how many ways
+ 
+
+00:04:08.239 --> 00:04:09.990 align:start position:0%
+how many ways
+from<00:04:08.480><c> the</c><00:04:08.640><c> ending</c><00:04:09.040><c> position</c><00:04:09.519><c> are</c><00:04:09.680><c> there</c><00:04:09.840><c> how</c>
+
+00:04:09.990 --> 00:04:10.000 align:start position:0%
+from the ending position are there how
+ 
+
+00:04:10.000 --> 00:04:11.589 align:start position:0%
+from the ending position are there how
+many<00:04:10.239><c> unique</c><00:04:10.560><c> paths</c><00:04:10.879><c> are</c><00:04:11.040><c> there</c><00:04:11.280><c> to</c>
+
+00:04:11.589 --> 00:04:11.599 align:start position:0%
+many unique paths are there to
+ 
+
+00:04:11.599 --> 00:04:15.110 align:start position:0%
+many unique paths are there to
+get<00:04:12.159><c> to</c><00:04:12.400><c> itself</c><00:04:13.280><c> well</c><00:04:13.760><c> we</c><00:04:14.000><c> can</c><00:04:14.400><c> choose</c>
+
+00:04:15.110 --> 00:04:15.120 align:start position:0%
+get to itself well we can choose
+ 
+
+00:04:15.120 --> 00:04:18.550 align:start position:0%
+get to itself well we can choose
+to<00:04:15.280><c> define</c><00:04:15.920><c> that</c><00:04:16.320><c> as</c><00:04:17.120><c> one</c><00:04:17.919><c> so</c><00:04:18.079><c> if</c><00:04:18.239><c> we've</c>
+
+00:04:18.550 --> 00:04:18.560 align:start position:0%
+to define that as one so if we've
+ 
+
+00:04:18.560 --> 00:04:20.949 align:start position:0%
+to define that as one so if we've
+defined<00:04:19.040><c> that</c><00:04:19.280><c> value</c><00:04:19.759><c> as</c><00:04:20.000><c> one</c><00:04:20.320><c> we'll</c><00:04:20.639><c> notice</c>
+
+00:04:20.949 --> 00:04:20.959 align:start position:0%
+defined that value as one we'll notice
+ 
+
+00:04:20.959 --> 00:04:22.710 align:start position:0%
+defined that value as one we'll notice
+that<00:04:21.199><c> things</c><00:04:21.519><c> actually</c><00:04:21.919><c> work</c><00:04:22.160><c> out</c><00:04:22.400><c> pretty</c>
+
+00:04:22.710 --> 00:04:22.720 align:start position:0%
+that things actually work out pretty
+ 
+
+00:04:22.720 --> 00:04:23.510 align:start position:0%
+that things actually work out pretty
+nicely
+
+00:04:23.510 --> 00:04:23.520 align:start position:0%
+nicely
+ 
+
+00:04:23.520 --> 00:04:26.390 align:start position:0%
+nicely
+because<00:04:24.479><c> let's</c><00:04:24.960><c> let's</c><00:04:25.199><c> take</c><00:04:25.360><c> a</c><00:04:25.440><c> look</c><00:04:25.680><c> at</c><00:04:25.919><c> this</c>
+
+00:04:26.390 --> 00:04:26.400 align:start position:0%
+because let's let's take a look at this
+ 
+
+00:04:26.400 --> 00:04:28.550 align:start position:0%
+because let's let's take a look at this
+cell<00:04:26.720><c> right</c><00:04:26.880><c> we</c><00:04:27.120><c> want</c><00:04:27.360><c> to</c><00:04:27.520><c> take</c><00:04:27.840><c> the</c><00:04:28.160><c> bottom</c>
+
+00:04:28.550 --> 00:04:28.560 align:start position:0%
+cell right we want to take the bottom
+ 
+
+00:04:28.560 --> 00:04:29.110 align:start position:0%
+cell right we want to take the bottom
+value
+
+00:04:29.110 --> 00:04:29.120 align:start position:0%
+value
+ 
+
+00:04:29.120 --> 00:04:31.909 align:start position:0%
+value
+and<00:04:29.440><c> the</c><00:04:29.759><c> right</c><00:04:30.080><c> value</c><00:04:30.560><c> and</c><00:04:30.639><c> then</c><00:04:30.960><c> add</c><00:04:31.199><c> them</c><00:04:31.600><c> up</c>
+
+00:04:31.909 --> 00:04:31.919 align:start position:0%
+and the right value and then add them up
+ 
+
+00:04:31.919 --> 00:04:33.430 align:start position:0%
+and the right value and then add them up
+and<00:04:32.000><c> then</c><00:04:32.240><c> that's</c><00:04:32.479><c> what</c><00:04:32.720><c> we're</c><00:04:32.880><c> going</c><00:04:33.040><c> to</c><00:04:33.120><c> put</c>
+
+00:04:33.430 --> 00:04:33.440 align:start position:0%
+and then that's what we're going to put
+ 
+
+00:04:33.440 --> 00:04:34.230 align:start position:0%
+and then that's what we're going to put
+in<00:04:33.520><c> this</c><00:04:33.759><c> spot</c>
+
+00:04:34.230 --> 00:04:34.240 align:start position:0%
+in this spot
+ 
+
+00:04:34.240 --> 00:04:36.150 align:start position:0%
+in this spot
+but<00:04:34.400><c> we</c><00:04:34.639><c> see</c><00:04:34.800><c> that</c><00:04:34.960><c> there's</c><00:04:35.360><c> nothing</c><00:04:35.680><c> below</c><00:04:36.080><c> it</c>
+
+00:04:36.150 --> 00:04:36.160 align:start position:0%
+but we see that there's nothing below it
+ 
+
+00:04:36.160 --> 00:04:37.670 align:start position:0%
+but we see that there's nothing below it
+right<00:04:36.400><c> that's</c><00:04:36.720><c> out</c><00:04:36.880><c> of</c><00:04:37.040><c> bounds</c>
+
+00:04:37.670 --> 00:04:37.680 align:start position:0%
+right that's out of bounds
+ 
+
+00:04:37.680 --> 00:04:39.110 align:start position:0%
+right that's out of bounds
+what<00:04:37.840><c> we</c><00:04:38.000><c> can</c><00:04:38.160><c> say</c><00:04:38.400><c> is</c><00:04:38.560><c> well</c><00:04:38.800><c> we'll</c><00:04:38.960><c> just</c>
+
+00:04:39.110 --> 00:04:39.120 align:start position:0%
+what we can say is well we'll just
+ 
+
+00:04:39.120 --> 00:04:40.870 align:start position:0%
+what we can say is well we'll just
+define<00:04:39.520><c> that</c><00:04:39.680><c> to</c><00:04:39.840><c> be</c><00:04:40.080><c> 0</c><00:04:40.479><c> right</c>
+
+00:04:40.870 --> 00:04:40.880 align:start position:0%
+define that to be 0 right
+ 
+
+00:04:40.880 --> 00:04:44.550 align:start position:0%
+define that to be 0 right
+we'll<00:04:41.120><c> define</c><00:04:41.680><c> every</c><00:04:42.800><c> value</c><00:04:43.600><c> out</c><00:04:43.840><c> of</c><00:04:44.000><c> bounds</c>
+
+00:04:44.550 --> 00:04:44.560 align:start position:0%
+we'll define every value out of bounds
+ 
+
+00:04:44.560 --> 00:04:47.189 align:start position:0%
+we'll define every value out of bounds
+to<00:04:44.720><c> be</c><00:04:44.960><c> zero</c><00:04:45.280><c> so</c><00:04:45.440><c> if</c><00:04:45.520><c> we</c><00:04:45.680><c> ever</c><00:04:46.000><c> need</c><00:04:46.320><c> them</c><00:04:46.960><c> well</c>
+
+00:04:47.189 --> 00:04:47.199 align:start position:0%
+to be zero so if we ever need them well
+ 
+
+00:04:47.199 --> 00:04:47.990 align:start position:0%
+to be zero so if we ever need them well
+we<00:04:47.360><c> can</c><00:04:47.520><c> just</c><00:04:47.680><c> say</c>
+
+00:04:47.990 --> 00:04:48.000 align:start position:0%
+we can just say
+ 
+
+00:04:48.000 --> 00:04:50.310 align:start position:0%
+we can just say
+that<00:04:48.240><c> they're</c><00:04:48.479><c> zero</c><00:04:49.199><c> so</c><00:04:49.360><c> then</c><00:04:49.680><c> what</c><00:04:49.919><c> becomes</c>
+
+00:04:50.310 --> 00:04:50.320 align:start position:0%
+that they're zero so then what becomes
+ 
+
+00:04:50.320 --> 00:04:52.150 align:start position:0%
+that they're zero so then what becomes
+the<00:04:50.479><c> value</c><00:04:50.720><c> that</c><00:04:50.880><c> we</c><00:04:51.040><c> place</c><00:04:51.360><c> in</c><00:04:51.440><c> the</c><00:04:51.600><c> cell</c><00:04:51.919><c> well</c>
+
+00:04:52.150 --> 00:04:52.160 align:start position:0%
+the value that we place in the cell well
+ 
+
+00:04:52.160 --> 00:04:53.030 align:start position:0%
+the value that we place in the cell well
+we<00:04:52.320><c> can</c><00:04:52.479><c> take</c>
+
+00:04:53.030 --> 00:04:53.040 align:start position:0%
+we can take
+ 
+
+00:04:53.040 --> 00:04:55.590 align:start position:0%
+we can take
+the<00:04:53.360><c> right</c><00:04:53.680><c> value</c><00:04:54.080><c> which</c><00:04:54.400><c> is</c><00:04:54.639><c> one</c><00:04:55.040><c> and</c><00:04:55.280><c> the</c>
+
+00:04:55.590 --> 00:04:55.600 align:start position:0%
+the right value which is one and the
+ 
+
+00:04:55.600 --> 00:04:57.590 align:start position:0%
+the right value which is one and the
+bottom<00:04:56.000><c> value</c><00:04:56.320><c> which</c><00:04:56.560><c> is</c><00:04:56.720><c> zero</c><00:04:57.120><c> add</c><00:04:57.360><c> them</c>
+
+00:04:57.590 --> 00:04:57.600 align:start position:0%
+bottom value which is zero add them
+ 
+
+00:04:57.600 --> 00:04:58.870 align:start position:0%
+bottom value which is zero add them
+together<00:04:58.080><c> and</c><00:04:58.160><c> then</c><00:04:58.400><c> we</c><00:04:58.560><c> get</c>
+
+00:04:58.870 --> 00:04:58.880 align:start position:0%
+together and then we get
+ 
+
+00:04:58.880 --> 00:05:01.110 align:start position:0%
+together and then we get
+one<00:04:59.280><c> so</c><00:04:59.440><c> we</c><00:04:59.600><c> can</c><00:04:59.759><c> just</c><00:04:59.919><c> put</c><00:05:00.160><c> a</c><00:05:00.320><c> one</c><00:05:00.639><c> over</c><00:05:00.880><c> here</c>
+
+00:05:01.110 --> 00:05:01.120 align:start position:0%
+one so we can just put a one over here
+ 
+
+00:05:01.120 --> 00:05:01.990 align:start position:0%
+one so we can just put a one over here
+right<00:05:01.600><c> and</c>
+
+00:05:01.990 --> 00:05:02.000 align:start position:0%
+right and
+ 
+
+00:05:02.000 --> 00:05:03.909 align:start position:0%
+right and
+you<00:05:02.240><c> might</c><00:05:02.479><c> notice</c><00:05:02.960><c> well</c><00:05:03.199><c> what</c><00:05:03.440><c> if</c><00:05:03.520><c> we</c><00:05:03.600><c> want</c><00:05:03.759><c> to</c>
+
+00:05:03.909 --> 00:05:03.919 align:start position:0%
+you might notice well what if we want to
+ 
+
+00:05:03.919 --> 00:05:06.629 align:start position:0%
+you might notice well what if we want to
+compute<00:05:04.560><c> the</c><00:05:04.880><c> value</c><00:05:05.360><c> in</c><00:05:05.520><c> this</c><00:05:05.759><c> position</c>
+
+00:05:06.629 --> 00:05:06.639 align:start position:0%
+compute the value in this position
+ 
+
+00:05:06.639 --> 00:05:08.469 align:start position:0%
+compute the value in this position
+well<00:05:07.199><c> the</c><00:05:07.360><c> exact</c><00:05:07.680><c> same</c><00:05:07.840><c> thing</c><00:05:08.080><c> will</c><00:05:08.240><c> take</c>
+
+00:05:08.469 --> 00:05:08.479 align:start position:0%
+well the exact same thing will take
+ 
+
+00:05:08.479 --> 00:05:10.310 align:start position:0%
+well the exact same thing will take
+place<00:05:08.720><c> right</c><00:05:08.880><c> the</c><00:05:09.039><c> value</c><00:05:09.280><c> below</c><00:05:09.759><c> is</c><00:05:09.840><c> zero</c><00:05:10.160><c> the</c>
+
+00:05:10.310 --> 00:05:10.320 align:start position:0%
+place right the value below is zero the
+ 
+
+00:05:10.320 --> 00:05:12.390 align:start position:0%
+place right the value below is zero the
+value<00:05:10.639><c> to</c><00:05:10.800><c> the</c><00:05:10.960><c> right</c><00:05:11.280><c> is</c><00:05:11.520><c> one</c>
+
+00:05:12.390 --> 00:05:12.400 align:start position:0%
+value to the right is one
+ 
+
+00:05:12.400 --> 00:05:15.270 align:start position:0%
+value to the right is one
+so<00:05:12.560><c> we</c><00:05:12.720><c> can</c><00:05:12.880><c> say</c><00:05:13.120><c> that</c><00:05:13.280><c> there's</c><00:05:14.000><c> one</c><00:05:14.320><c> way</c><00:05:14.800><c> from</c>
+
+00:05:15.270 --> 00:05:15.280 align:start position:0%
+so we can say that there's one way from
+ 
+
+00:05:15.280 --> 00:05:16.469 align:start position:0%
+so we can say that there's one way from
+this<00:05:15.600><c> position</c>
+
+00:05:16.469 --> 00:05:16.479 align:start position:0%
+this position
+ 
+
+00:05:16.479 --> 00:05:19.029 align:start position:0%
+this position
+to<00:05:16.880><c> reach</c><00:05:17.360><c> the</c><00:05:17.600><c> end</c><00:05:17.840><c> result</c><00:05:18.320><c> and</c><00:05:18.400><c> now</c><00:05:18.639><c> what's</c>
+
+00:05:19.029 --> 00:05:19.039 align:start position:0%
+to reach the end result and now what's
+ 
+
+00:05:19.039 --> 00:05:20.230 align:start position:0%
+to reach the end result and now what's
+what<00:05:19.280><c> actually</c><00:05:19.680><c> is</c><00:05:19.840><c> that</c>
+
+00:05:20.230 --> 00:05:20.240 align:start position:0%
+what actually is that
+ 
+
+00:05:20.240 --> 00:05:23.110 align:start position:0%
+what actually is that
+path<00:05:20.800><c> well</c><00:05:21.440><c> we</c><00:05:21.600><c> can</c><00:05:21.919><c> we</c><00:05:22.080><c> can't</c><00:05:22.400><c> move</c><00:05:22.720><c> down</c>
+
+00:05:23.110 --> 00:05:23.120 align:start position:0%
+path well we can we can't move down
+ 
+
+00:05:23.120 --> 00:05:24.629 align:start position:0%
+path well we can we can't move down
+right<00:05:23.280><c> that's</c><00:05:23.600><c> out</c><00:05:23.680><c> of</c><00:05:23.840><c> bounds</c><00:05:24.160><c> so</c><00:05:24.320><c> we</c><00:05:24.400><c> can</c>
+
+00:05:24.629 --> 00:05:24.639 align:start position:0%
+right that's out of bounds so we can
+ 
+
+00:05:24.639 --> 00:05:26.550 align:start position:0%
+right that's out of bounds so we can
+only<00:05:24.960><c> choose</c><00:05:25.360><c> to</c><00:05:25.680><c> move</c>
+
+00:05:26.550 --> 00:05:26.560 align:start position:0%
+only choose to move
+ 
+
+00:05:26.560 --> 00:05:28.790 align:start position:0%
+only choose to move
+right<00:05:27.039><c> and</c><00:05:27.120><c> then</c><00:05:27.440><c> right</c><00:05:27.919><c> and</c><00:05:28.160><c> then</c><00:05:28.479><c> we'll</c><00:05:28.639><c> be</c>
+
+00:05:28.790 --> 00:05:28.800 align:start position:0%
+right and then right and then we'll be
+ 
+
+00:05:28.800 --> 00:05:29.909 align:start position:0%
+right and then right and then we'll be
+able<00:05:28.960><c> to</c><00:05:29.039><c> get</c><00:05:29.199><c> to</c><00:05:29.280><c> the</c><00:05:29.440><c> result</c>
+
+00:05:29.909 --> 00:05:29.919 align:start position:0%
+able to get to the result
+ 
+
+00:05:29.919 --> 00:05:31.830 align:start position:0%
+able to get to the result
+and<00:05:30.000><c> you</c><00:05:30.160><c> can</c><00:05:30.240><c> see</c><00:05:30.400><c> that's</c><00:05:30.800><c> true</c><00:05:31.039><c> for</c><00:05:31.360><c> every</c>
+
+00:05:31.830 --> 00:05:31.840 align:start position:0%
+and you can see that's true for every
+ 
+
+00:05:31.840 --> 00:05:33.909 align:start position:0%
+and you can see that's true for every
+position<00:05:32.560><c> in</c><00:05:32.720><c> the</c><00:05:32.880><c> bottom</c><00:05:33.199><c> row</c><00:05:33.440><c> so</c><00:05:33.600><c> we're</c><00:05:33.759><c> just</c>
+
+00:05:33.909 --> 00:05:33.919 align:start position:0%
+position in the bottom row so we're just
+ 
+
+00:05:33.919 --> 00:05:34.469 align:start position:0%
+position in the bottom row so we're just
+going<00:05:34.000><c> to</c><00:05:34.160><c> fill</c>
+
+00:05:34.469 --> 00:05:34.479 align:start position:0%
+going to fill
+ 
+
+00:05:34.479 --> 00:05:36.629 align:start position:0%
+going to fill
+these<00:05:34.720><c> to</c><00:05:34.880><c> be</c><00:05:35.120><c> one</c><00:05:35.680><c> and</c><00:05:35.840><c> you</c><00:05:36.000><c> might</c><00:05:36.160><c> be</c><00:05:36.320><c> able</c><00:05:36.479><c> to</c>
+
+00:05:36.629 --> 00:05:36.639 align:start position:0%
+these to be one and you might be able to
+ 
+
+00:05:36.639 --> 00:05:37.510 align:start position:0%
+these to be one and you might be able to
+see<00:05:36.960><c> how</c>
+
+00:05:37.510 --> 00:05:37.520 align:start position:0%
+see how
+ 
+
+00:05:37.520 --> 00:05:40.469 align:start position:0%
+see how
+we<00:05:37.759><c> are</c><00:05:37.919><c> going</c><00:05:38.479><c> to</c><00:05:39.280><c> arrive</c><00:05:39.680><c> at</c><00:05:39.840><c> the</c><00:05:39.919><c> dynamic</c>
+
+00:05:40.469 --> 00:05:40.479 align:start position:0%
+we are going to arrive at the dynamic
+ 
+
+00:05:40.479 --> 00:05:42.230 align:start position:0%
+we are going to arrive at the dynamic
+programming<00:05:40.960><c> solution</c><00:05:41.520><c> now</c>
+
+00:05:42.230 --> 00:05:42.240 align:start position:0%
+programming solution now
+ 
+
+00:05:42.240 --> 00:05:44.150 align:start position:0%
+programming solution now
+so<00:05:42.400><c> the</c><00:05:42.560><c> first</c><00:05:42.880><c> thing</c><00:05:43.039><c> for</c><00:05:43.280><c> us</c><00:05:43.360><c> to</c><00:05:43.520><c> do</c><00:05:43.840><c> is</c><00:05:44.000><c> to</c>
+
+00:05:44.150 --> 00:05:44.160 align:start position:0%
+so the first thing for us to do is to
+ 
+
+00:05:44.160 --> 00:05:46.310 align:start position:0%
+so the first thing for us to do is to
+compute<00:05:44.560><c> this</c><00:05:44.800><c> bottom</c><00:05:45.120><c> row</c><00:05:45.360><c> now</c><00:05:45.600><c> let's</c><00:05:45.919><c> start</c>
+
+00:05:46.310 --> 00:05:46.320 align:start position:0%
+compute this bottom row now let's start
+ 
+
+00:05:46.320 --> 00:05:47.430 align:start position:0%
+compute this bottom row now let's start
+doing<00:05:46.639><c> the</c><00:05:46.960><c> next</c>
+
+00:05:47.430 --> 00:05:47.440 align:start position:0%
+doing the next
+ 
+
+00:05:47.440 --> 00:05:49.749 align:start position:0%
+doing the next
+row<00:05:47.840><c> right</c><00:05:48.479><c> because</c><00:05:48.639><c> our</c><00:05:49.039><c> ultimate</c><00:05:49.440><c> goal</c><00:05:49.600><c> is</c>
+
+00:05:49.749 --> 00:05:49.759 align:start position:0%
+row right because our ultimate goal is
+ 
+
+00:05:49.759 --> 00:05:51.670 align:start position:0%
+row right because our ultimate goal is
+to<00:05:49.840><c> be</c><00:05:49.919><c> able</c><00:05:50.080><c> to</c><00:05:50.240><c> do</c><00:05:50.479><c> this</c><00:05:50.720><c> value</c><00:05:51.120><c> we</c><00:05:51.280><c> can</c><00:05:51.440><c> work</c>
+
+00:05:51.670 --> 00:05:51.680 align:start position:0%
+to be able to do this value we can work
+ 
+
+00:05:51.680 --> 00:05:52.469 align:start position:0%
+to be able to do this value we can work
+our<00:05:51.919><c> way</c>
+
+00:05:52.469 --> 00:05:52.479 align:start position:0%
+our way
+ 
+
+00:05:52.479 --> 00:05:55.270 align:start position:0%
+our way
+from<00:05:53.039><c> the</c><00:05:53.280><c> bottom</c><00:05:54.000><c> to</c><00:05:54.240><c> the</c><00:05:54.400><c> left</c><00:05:54.880><c> and</c><00:05:55.039><c> then</c>
+
+00:05:55.270 --> 00:05:55.280 align:start position:0%
+from the bottom to the left and then
+ 
+
+00:05:55.280 --> 00:05:56.150 align:start position:0%
+from the bottom to the left and then
+from<00:05:55.520><c> here</c>
+
+00:05:56.150 --> 00:05:56.160 align:start position:0%
+from here
+ 
+
+00:05:56.160 --> 00:05:58.469 align:start position:0%
+from here
+to<00:05:56.400><c> the</c><00:05:56.560><c> left</c><00:05:57.120><c> and</c><00:05:57.280><c> then</c><00:05:57.600><c> keep</c><00:05:57.840><c> doing</c><00:05:58.080><c> that</c><00:05:58.319><c> and</c>
+
+00:05:58.469 --> 00:05:58.479 align:start position:0%
+to the left and then keep doing that and
+ 
+
+00:05:58.479 --> 00:05:59.350 align:start position:0%
+to the left and then keep doing that and
+eventually<00:05:58.960><c> we'll</c>
+
+00:05:59.350 --> 00:05:59.360 align:start position:0%
+eventually we'll
+ 
+
+00:05:59.360 --> 00:06:01.670 align:start position:0%
+eventually we'll
+arrive<00:05:59.759><c> at</c><00:05:59.919><c> the</c><00:06:00.080><c> result</c><00:06:00.720><c> so</c><00:06:00.880><c> what</c><00:06:01.039><c> about</c><00:06:01.360><c> this</c>
+
+00:06:01.670 --> 00:06:01.680 align:start position:0%
+arrive at the result so what about this
+ 
+
+00:06:01.680 --> 00:06:02.550 align:start position:0%
+arrive at the result so what about this
+position
+
+00:06:02.550 --> 00:06:02.560 align:start position:0%
+position
+ 
+
+00:06:02.560 --> 00:06:04.790 align:start position:0%
+position
+well<00:06:02.960><c> it</c><00:06:03.120><c> has</c><00:06:03.440><c> a</c><00:06:03.680><c> zero</c><00:06:04.000><c> to</c><00:06:04.160><c> the</c><00:06:04.319><c> right</c><00:06:04.560><c> of</c><00:06:04.639><c> it</c>
+
+00:06:04.790 --> 00:06:04.800 align:start position:0%
+well it has a zero to the right of it
+ 
+
+00:06:04.800 --> 00:06:06.629 align:start position:0%
+well it has a zero to the right of it
+because<00:06:05.199><c> the</c><00:06:05.360><c> right</c><00:06:05.600><c> is</c><00:06:05.759><c> out</c><00:06:05.919><c> of</c><00:06:06.080><c> bounds</c><00:06:06.479><c> it</c>
+
+00:06:06.629 --> 00:06:06.639 align:start position:0%
+because the right is out of bounds it
+ 
+
+00:06:06.639 --> 00:06:07.430 align:start position:0%
+because the right is out of bounds it
+has<00:06:06.800><c> a</c><00:06:07.039><c> one</c>
+
+00:06:07.430 --> 00:06:07.440 align:start position:0%
+has a one
+ 
+
+00:06:07.440 --> 00:06:10.390 align:start position:0%
+has a one
+below<00:06:07.919><c> it</c><00:06:08.479><c> so</c><00:06:08.800><c> we'll</c><00:06:08.960><c> take</c><00:06:09.280><c> zero</c><00:06:09.680><c> plus</c><00:06:10.000><c> one</c>
+
+00:06:10.390 --> 00:06:10.400 align:start position:0%
+below it so we'll take zero plus one
+ 
+
+00:06:10.400 --> 00:06:11.350 align:start position:0%
+below it so we'll take zero plus one
+again<00:06:10.720><c> we</c><00:06:10.960><c> get</c>
+
+00:06:11.350 --> 00:06:11.360 align:start position:0%
+again we get
+ 
+
+00:06:11.360 --> 00:06:14.070 align:start position:0%
+again we get
+one<00:06:12.000><c> now</c><00:06:12.160><c> what</c><00:06:12.319><c> about</c><00:06:12.720><c> this</c><00:06:13.039><c> spot</c><00:06:13.440><c> this</c><00:06:13.680><c> spot</c>
+
+00:06:14.070 --> 00:06:14.080 align:start position:0%
+one now what about this spot this spot
+ 
+
+00:06:14.080 --> 00:06:16.070 align:start position:0%
+one now what about this spot this spot
+actually<00:06:14.479><c> has</c><00:06:14.800><c> a</c><00:06:14.960><c> value</c><00:06:15.360><c> below</c><00:06:15.759><c> it</c>
+
+00:06:16.070 --> 00:06:16.080 align:start position:0%
+actually has a value below it
+ 
+
+00:06:16.080 --> 00:06:19.270 align:start position:0%
+actually has a value below it
+and<00:06:16.319><c> a</c><00:06:16.479><c> value</c><00:06:17.039><c> to</c><00:06:17.199><c> the</c><00:06:17.440><c> right</c><00:06:17.759><c> of</c><00:06:17.919><c> it</c><00:06:18.639><c> and</c><00:06:18.960><c> those</c>
+
+00:06:19.270 --> 00:06:19.280 align:start position:0%
+and a value to the right of it and those
+ 
+
+00:06:19.280 --> 00:06:21.909 align:start position:0%
+and a value to the right of it and those
+values<00:06:19.680><c> are</c><00:06:19.840><c> one</c><00:06:20.080><c> and</c><00:06:20.240><c> one</c><00:06:20.479><c> respectively</c><00:06:21.280><c> so</c>
+
+00:06:21.909 --> 00:06:21.919 align:start position:0%
+values are one and one respectively so
+ 
+
+00:06:21.919 --> 00:06:24.469 align:start position:0%
+values are one and one respectively so
+the<00:06:22.160><c> sum</c><00:06:22.479><c> is</c><00:06:22.639><c> gonna</c><00:06:22.800><c> be</c><00:06:23.120><c> two</c><00:06:23.759><c> and</c><00:06:23.919><c> that</c><00:06:24.160><c> makes</c>
+
+00:06:24.469 --> 00:06:24.479 align:start position:0%
+the sum is gonna be two and that makes
+ 
+
+00:06:24.479 --> 00:06:25.670 align:start position:0%
+the sum is gonna be two and that makes
+sense<00:06:24.880><c> right</c><00:06:25.039><c> because</c><00:06:25.280><c> if</c><00:06:25.440><c> you</c>
+
+00:06:25.670 --> 00:06:25.680 align:start position:0%
+sense right because if you
+ 
+
+00:06:25.680 --> 00:06:28.550 align:start position:0%
+sense right because if you
+start<00:06:26.080><c> here</c><00:06:26.560><c> there's</c><00:06:26.960><c> one</c><00:06:27.280><c> path</c><00:06:27.759><c> going</c><00:06:28.080><c> to</c><00:06:28.240><c> the</c>
+
+00:06:28.550 --> 00:06:28.560 align:start position:0%
+start here there's one path going to the
+ 
+
+00:06:28.560 --> 00:06:30.469 align:start position:0%
+start here there's one path going to the
+right<00:06:28.880><c> and</c><00:06:28.960><c> then</c><00:06:29.199><c> going</c><00:06:29.600><c> down</c><00:06:29.919><c> right</c><00:06:30.160><c> that's</c>
+
+00:06:30.469 --> 00:06:30.479 align:start position:0%
+right and then going down right that's
+ 
+
+00:06:30.479 --> 00:06:32.309 align:start position:0%
+right and then going down right that's
+one<00:06:30.720><c> path</c><00:06:30.960><c> to</c><00:06:31.120><c> get</c><00:06:31.280><c> to</c><00:06:31.360><c> the</c><00:06:31.440><c> result</c>
+
+00:06:32.309 --> 00:06:32.319 align:start position:0%
+one path to get to the result
+ 
+
+00:06:32.319 --> 00:06:34.790 align:start position:0%
+one path to get to the result
+and<00:06:32.479><c> there's</c><00:06:32.639><c> another</c><00:06:33.039><c> path</c><00:06:33.360><c> going</c><00:06:33.680><c> down</c><00:06:34.560><c> and</c>
+
+00:06:34.790 --> 00:06:34.800 align:start position:0%
+and there's another path going down and
+ 
+
+00:06:34.800 --> 00:06:35.590 align:start position:0%
+and there's another path going down and
+going
+
+00:06:35.590 --> 00:06:35.600 align:start position:0%
+going
+ 
+
+00:06:35.600 --> 00:06:37.909 align:start position:0%
+going
+right<00:06:36.240><c> that</c><00:06:36.479><c> lets</c><00:06:36.720><c> us</c><00:06:36.880><c> get</c><00:06:37.039><c> to</c><00:06:37.120><c> the</c><00:06:37.280><c> result</c><00:06:37.759><c> so</c>
+
+00:06:37.909 --> 00:06:37.919 align:start position:0%
+right that lets us get to the result so
+ 
+
+00:06:37.919 --> 00:06:39.590 align:start position:0%
+right that lets us get to the result so
+it<00:06:38.000><c> makes</c><00:06:38.319><c> sense</c><00:06:38.639><c> that</c><00:06:38.800><c> this</c><00:06:39.039><c> would</c><00:06:39.280><c> be</c>
+
+00:06:39.590 --> 00:06:39.600 align:start position:0%
+it makes sense that this would be
+ 
+
+00:06:39.600 --> 00:06:42.390 align:start position:0%
+it makes sense that this would be
+two<00:06:40.160><c> unique</c><00:06:40.639><c> paths</c><00:06:41.199><c> to</c><00:06:41.360><c> get</c><00:06:41.520><c> to</c><00:06:41.680><c> the</c><00:06:41.759><c> result</c>
+
+00:06:42.390 --> 00:06:42.400 align:start position:0%
+two unique paths to get to the result
+ 
+
+00:06:42.400 --> 00:06:44.710 align:start position:0%
+two unique paths to get to the result
+and<00:06:42.639><c> from</c><00:06:42.800><c> here</c><00:06:43.039><c> on</c><00:06:43.280><c> out</c><00:06:43.520><c> it's</c><00:06:43.759><c> basic</c><00:06:44.240><c> addition</c>
+
+00:06:44.710 --> 00:06:44.720 align:start position:0%
+and from here on out it's basic addition
+ 
+
+00:06:44.720 --> 00:06:46.390 align:start position:0%
+and from here on out it's basic addition
+right<00:06:44.880><c> so</c><00:06:45.120><c> down</c><00:06:45.520><c> is</c><00:06:45.759><c> one</c>
+
+00:06:46.390 --> 00:06:46.400 align:start position:0%
+right so down is one
+ 
+
+00:06:46.400 --> 00:06:48.790 align:start position:0%
+right so down is one
+right<00:06:46.720><c> is</c><00:06:46.880><c> two</c><00:06:47.520><c> add</c><00:06:47.759><c> those</c><00:06:48.000><c> together</c><00:06:48.400><c> we</c><00:06:48.560><c> get</c>
+
+00:06:48.790 --> 00:06:48.800 align:start position:0%
+right is two add those together we get
+ 
+
+00:06:48.800 --> 00:06:51.350 align:start position:0%
+right is two add those together we get
+three<00:06:49.360><c> here</c><00:06:49.759><c> we</c><00:06:49.919><c> get</c><00:06:50.240><c> one</c><00:06:50.479><c> plus</c><00:06:50.880><c> three</c><00:06:51.120><c> that's</c>
+
+00:06:51.350 --> 00:06:51.360 align:start position:0%
+three here we get one plus three that's
+ 
+
+00:06:51.360 --> 00:06:51.909 align:start position:0%
+three here we get one plus three that's
+going<00:06:51.520><c> to</c><00:06:51.599><c> be</c>
+
+00:06:51.909 --> 00:06:51.919 align:start position:0%
+going to be
+ 
+
+00:06:51.919 --> 00:06:54.309 align:start position:0%
+going to be
+four<00:06:52.479><c> add</c><00:06:52.720><c> this</c><00:06:53.039><c> together</c><00:06:53.440><c> with</c><00:06:53.680><c> this</c><00:06:54.000><c> that's</c>
+
+00:06:54.309 --> 00:06:54.319 align:start position:0%
+four add this together with this that's
+ 
+
+00:06:54.319 --> 00:06:55.350 align:start position:0%
+four add this together with this that's
+gonna<00:06:54.479><c> be</c><00:06:54.800><c> five</c>
+
+00:06:55.350 --> 00:06:55.360 align:start position:0%
+gonna be five
+ 
+
+00:06:55.360 --> 00:06:57.110 align:start position:0%
+gonna be five
+add<00:06:55.599><c> these</c><00:06:55.919><c> two</c><00:06:56.160><c> together</c><00:06:56.479><c> that's</c><00:06:56.720><c> gonna</c><00:06:56.880><c> be</c>
+
+00:06:57.110 --> 00:06:57.120 align:start position:0%
+add these two together that's gonna be
+ 
+
+00:06:57.120 --> 00:06:58.950 align:start position:0%
+add these two together that's gonna be
+six<00:06:57.520><c> add</c><00:06:57.759><c> these</c><00:06:58.000><c> two</c><00:06:58.240><c> together</c><00:06:58.560><c> that's</c><00:06:58.800><c> gonna</c>
+
+00:06:58.950 --> 00:06:58.960 align:start position:0%
+six add these two together that's gonna
+ 
+
+00:06:58.960 --> 00:06:59.990 align:start position:0%
+six add these two together that's gonna
+be<00:06:59.199><c> seven</c>
+
+00:06:59.990 --> 00:07:00.000 align:start position:0%
+be seven
+ 
+
+00:07:00.000 --> 00:07:02.469 align:start position:0%
+be seven
+and<00:07:00.160><c> so</c><00:07:00.319><c> you</c><00:07:00.560><c> notice</c><00:07:01.039><c> now</c><00:07:01.680><c> we</c><00:07:01.919><c> have</c><00:07:02.080><c> filled</c><00:07:02.319><c> in</c>
+
+00:07:02.469 --> 00:07:02.479 align:start position:0%
+and so you notice now we have filled in
+ 
+
+00:07:02.479 --> 00:07:03.909 align:start position:0%
+and so you notice now we have filled in
+the<00:07:02.560><c> second</c><00:07:02.880><c> row</c><00:07:03.120><c> it</c><00:07:03.199><c> looks</c><00:07:03.440><c> a</c><00:07:03.520><c> little</c><00:07:03.680><c> bit</c>
+
+00:07:03.909 --> 00:07:03.919 align:start position:0%
+the second row it looks a little bit
+ 
+
+00:07:03.919 --> 00:07:05.990 align:start position:0%
+the second row it looks a little bit
+different<00:07:04.319><c> than</c><00:07:04.479><c> the</c><00:07:04.720><c> first</c><00:07:05.039><c> row</c><00:07:05.360><c> right</c>
+
+00:07:05.990 --> 00:07:06.000 align:start position:0%
+different than the first row right
+ 
+
+00:07:06.000 --> 00:07:08.469 align:start position:0%
+different than the first row right
+the<00:07:06.160><c> bottom</c><00:07:06.479><c> was</c><00:07:06.720><c> all</c><00:07:06.960><c> ones</c><00:07:07.680><c> and</c><00:07:07.919><c> now</c><00:07:08.160><c> the</c><00:07:08.319><c> only</c>
+
+00:07:08.469 --> 00:07:08.479 align:start position:0%
+the bottom was all ones and now the only
+ 
+
+00:07:08.479 --> 00:07:09.990 align:start position:0%
+the bottom was all ones and now the only
+thing<00:07:08.639><c> for</c><00:07:08.800><c> us</c><00:07:08.960><c> to</c><00:07:09.039><c> do</c><00:07:09.280><c> is</c><00:07:09.360><c> to</c><00:07:09.520><c> get</c><00:07:09.680><c> this</c>
+
+00:07:09.990 --> 00:07:10.000 align:start position:0%
+thing for us to do is to get this
+ 
+
+00:07:10.000 --> 00:07:13.189 align:start position:0%
+thing for us to do is to get this
+last<00:07:10.479><c> row</c><00:07:10.960><c> so</c><00:07:11.599><c> we</c><00:07:11.840><c> look</c><00:07:12.160><c> down</c><00:07:12.560><c> and</c><00:07:12.639><c> we</c><00:07:12.880><c> look</c>
+
+00:07:13.189 --> 00:07:13.199 align:start position:0%
+last row so we look down and we look
+ 
+
+00:07:13.199 --> 00:07:15.350 align:start position:0%
+last row so we look down and we look
+right<00:07:13.520><c> that's</c><00:07:13.919><c> one</c><00:07:14.240><c> plus</c><00:07:14.560><c> zero</c><00:07:15.039><c> so</c><00:07:15.199><c> we're</c>
+
+00:07:15.350 --> 00:07:15.360 align:start position:0%
+right that's one plus zero so we're
+ 
+
+00:07:15.360 --> 00:07:16.390 align:start position:0%
+right that's one plus zero so we're
+going<00:07:15.440><c> to</c><00:07:15.520><c> get</c><00:07:15.680><c> a</c><00:07:15.840><c> one</c>
+
+00:07:16.390 --> 00:07:16.400 align:start position:0%
+going to get a one
+ 
+
+00:07:16.400 --> 00:07:19.029 align:start position:0%
+going to get a one
+notice<00:07:16.800><c> how</c><00:07:17.039><c> the</c><00:07:17.199><c> entire</c><00:07:17.759><c> first</c><00:07:18.240><c> column</c><00:07:18.720><c> is</c>
+
+00:07:19.029 --> 00:07:19.039 align:start position:0%
+notice how the entire first column is
+ 
+
+00:07:19.039 --> 00:07:19.430 align:start position:0%
+notice how the entire first column is
+one
+
+00:07:19.430 --> 00:07:19.440 align:start position:0%
+one
+ 
+
+00:07:19.440 --> 00:07:21.350 align:start position:0%
+one
+that's<00:07:19.680><c> actually</c><00:07:20.160><c> always</c><00:07:20.560><c> going</c><00:07:20.720><c> to</c><00:07:20.800><c> be</c><00:07:21.039><c> true</c>
+
+00:07:21.350 --> 00:07:21.360 align:start position:0%
+that's actually always going to be true
+ 
+
+00:07:21.360 --> 00:07:23.029 align:start position:0%
+that's actually always going to be true
+right<00:07:21.599><c> because</c><00:07:21.840><c> think</c><00:07:22.080><c> about</c><00:07:22.240><c> it</c><00:07:22.400><c> from</c><00:07:22.720><c> any</c>
+
+00:07:23.029 --> 00:07:23.039 align:start position:0%
+right because think about it from any
+ 
+
+00:07:23.039 --> 00:07:23.990 align:start position:0%
+right because think about it from any
+position
+
+00:07:23.990 --> 00:07:24.000 align:start position:0%
+position
+ 
+
+00:07:24.000 --> 00:07:25.749 align:start position:0%
+position
+in<00:07:24.160><c> the</c><00:07:24.240><c> rightmost</c><00:07:24.800><c> column</c><00:07:25.440><c> the</c><00:07:25.520><c> only</c>
+
+00:07:25.749 --> 00:07:25.759 align:start position:0%
+in the rightmost column the only
+ 
+
+00:07:25.759 --> 00:07:27.110 align:start position:0%
+in the rightmost column the only
+decision<00:07:26.160><c> we</c><00:07:26.319><c> can</c><00:07:26.400><c> do</c><00:07:26.560><c> is</c><00:07:26.720><c> move</c>
+
+00:07:27.110 --> 00:07:27.120 align:start position:0%
+decision we can do is move
+ 
+
+00:07:27.120 --> 00:07:29.350 align:start position:0%
+decision we can do is move
+down<00:07:27.759><c> so</c><00:07:27.919><c> there's</c><00:07:28.240><c> only</c><00:07:28.479><c> going</c><00:07:28.560><c> to</c><00:07:28.720><c> be</c><00:07:28.960><c> one</c>
+
+00:07:29.350 --> 00:07:29.360 align:start position:0%
+down so there's only going to be one
+ 
+
+00:07:29.360 --> 00:07:30.150 align:start position:0%
+down so there's only going to be one
+path
+
+00:07:30.150 --> 00:07:30.160 align:start position:0%
+path
+ 
+
+00:07:30.160 --> 00:07:32.790 align:start position:0%
+path
+to<00:07:30.400><c> the</c><00:07:30.720><c> result</c><00:07:31.440><c> so</c><00:07:31.599><c> this</c><00:07:31.840><c> is</c><00:07:32.000><c> going</c><00:07:32.080><c> to</c><00:07:32.160><c> be</c><00:07:32.400><c> two</c>
+
+00:07:32.790 --> 00:07:32.800 align:start position:0%
+to the result so this is going to be two
+ 
+
+00:07:32.800 --> 00:07:33.270 align:start position:0%
+to the result so this is going to be two
+plus
+
+00:07:33.270 --> 00:07:33.280 align:start position:0%
+plus
+ 
+
+00:07:33.280 --> 00:07:36.550 align:start position:0%
+plus
+one<00:07:33.919><c> this</c><00:07:34.240><c> is</c><00:07:34.400><c> going</c><00:07:34.479><c> to</c><00:07:34.639><c> be</c><00:07:34.880><c> three</c><00:07:35.280><c> plus</c><00:07:35.840><c> three</c>
+
+00:07:36.550 --> 00:07:36.560 align:start position:0%
+one this is going to be three plus three
+ 
+
+00:07:36.560 --> 00:07:39.110 align:start position:0%
+one this is going to be three plus three
+this<00:07:36.800><c> is</c><00:07:36.960><c> going</c><00:07:37.039><c> to</c><00:07:37.120><c> be</c><00:07:37.440><c> four</c><00:07:37.759><c> plus</c><00:07:38.240><c> six</c><00:07:38.880><c> this</c>
+
+00:07:39.110 --> 00:07:39.120 align:start position:0%
+this is going to be four plus six this
+ 
+
+00:07:39.120 --> 00:07:40.710 align:start position:0%
+this is going to be four plus six this
+is<00:07:39.199><c> going</c><00:07:39.280><c> to</c><00:07:39.360><c> be</c><00:07:39.520><c> five</c><00:07:39.840><c> plus</c><00:07:40.160><c> ten</c>
+
+00:07:40.710 --> 00:07:40.720 align:start position:0%
+is going to be five plus ten
+ 
+
+00:07:40.720 --> 00:07:43.189 align:start position:0%
+is going to be five plus ten
+this<00:07:40.960><c> is</c><00:07:41.120><c> going</c><00:07:41.199><c> to</c><00:07:41.360><c> be</c><00:07:41.520><c> six</c><00:07:41.840><c> plus</c><00:07:42.080><c> fifteen</c><00:07:43.039><c> and</c>
+
+00:07:43.189 --> 00:07:43.199 align:start position:0%
+this is going to be six plus fifteen and
+ 
+
+00:07:43.199 --> 00:07:44.550 align:start position:0%
+this is going to be six plus fifteen and
+so<00:07:43.680><c> finally</c>
+
+00:07:44.550 --> 00:07:44.560 align:start position:0%
+so finally
+ 
+
+00:07:44.560 --> 00:07:47.110 align:start position:0%
+so finally
+we<00:07:44.800><c> are</c><00:07:45.120><c> at</c><00:07:45.360><c> our</c><00:07:45.759><c> start</c><00:07:46.160><c> position</c><00:07:46.639><c> so</c><00:07:46.800><c> we</c><00:07:46.960><c> can</c>
+
+00:07:47.110 --> 00:07:47.120 align:start position:0%
+we are at our start position so we can
+ 
+
+00:07:47.120 --> 00:07:49.189 align:start position:0%
+we are at our start position so we can
+take<00:07:47.440><c> the</c><00:07:47.680><c> bottom</c><00:07:48.160><c> and</c><00:07:48.319><c> right</c><00:07:48.639><c> values</c>
+
+00:07:49.189 --> 00:07:49.199 align:start position:0%
+take the bottom and right values
+ 
+
+00:07:49.199 --> 00:07:53.350 align:start position:0%
+take the bottom and right values
+7<00:07:49.919><c> plus</c><00:07:50.560><c> 21</c><00:07:51.199><c> add</c><00:07:51.440><c> them</c><00:07:51.680><c> together</c><00:07:52.080><c> we</c><00:07:52.240><c> get</c><00:07:52.479><c> 28</c>
+
+00:07:53.350 --> 00:07:53.360 align:start position:0%
+7 plus 21 add them together we get 28
+ 
+
+00:07:53.360 --> 00:07:56.469 align:start position:0%
+7 plus 21 add them together we get 28
+so<00:07:53.599><c> that</c><00:07:53.840><c> tells</c><00:07:54.160><c> us</c><00:07:54.639><c> if</c><00:07:54.800><c> we</c><00:07:55.120><c> start</c><00:07:55.680><c> here</c><00:07:56.240><c> there</c>
+
+00:07:56.469 --> 00:07:56.479 align:start position:0%
+so that tells us if we start here there
+ 
+
+00:07:56.479 --> 00:07:56.869 align:start position:0%
+so that tells us if we start here there
+are
+
+00:07:56.869 --> 00:07:56.879 align:start position:0%
+are
+ 
+
+00:07:56.879 --> 00:08:00.070 align:start position:0%
+are
+28<00:07:58.080><c> different</c><00:07:58.479><c> paths</c><00:07:58.960><c> we</c><00:07:59.120><c> can</c><00:07:59.440><c> use</c>
+
+00:08:00.070 --> 00:08:00.080 align:start position:0%
+28 different paths we can use
+ 
+
+00:08:00.080 --> 00:08:03.830 align:start position:0%
+28 different paths we can use
+to<00:08:00.400><c> get</c><00:08:00.800><c> to</c><00:08:00.960><c> the</c><00:08:01.199><c> result</c><00:08:01.919><c> 28</c><00:08:02.560><c> unique</c><00:08:03.199><c> paths</c>
+
+00:08:03.830 --> 00:08:03.840 align:start position:0%
+to get to the result 28 unique paths
+ 
+
+00:08:03.840 --> 00:08:05.270 align:start position:0%
+to get to the result 28 unique paths
+and<00:08:04.000><c> when</c><00:08:04.160><c> you</c><00:08:04.319><c> look</c><00:08:04.560><c> at</c><00:08:04.639><c> the</c><00:08:04.800><c> picture</c><00:08:05.199><c> it</c>
+
+00:08:05.270 --> 00:08:05.280 align:start position:0%
+and when you look at the picture it
+ 
+
+00:08:05.280 --> 00:08:06.950 align:start position:0%
+and when you look at the picture it
+actually<00:08:05.520><c> looks</c><00:08:05.759><c> more</c><00:08:06.000><c> like</c><00:08:06.160><c> a</c><00:08:06.319><c> math</c><00:08:06.639><c> problem</c>
+
+00:08:06.950 --> 00:08:06.960 align:start position:0%
+actually looks more like a math problem
+ 
+
+00:08:06.960 --> 00:08:08.550 align:start position:0%
+actually looks more like a math problem
+than<00:08:07.199><c> a</c><00:08:07.280><c> coding</c><00:08:07.680><c> problem</c><00:08:08.000><c> right</c><00:08:08.240><c> and</c><00:08:08.319><c> that's</c>
+
+00:08:08.550 --> 00:08:08.560 align:start position:0%
+than a coding problem right and that's
+ 
+
+00:08:08.560 --> 00:08:10.150 align:start position:0%
+than a coding problem right and that's
+because<00:08:08.800><c> it</c><00:08:08.960><c> is</c><00:08:09.199><c> you</c><00:08:09.280><c> can</c><00:08:09.440><c> actually</c>
+
+00:08:10.150 --> 00:08:10.160 align:start position:0%
+because it is you can actually
+ 
+
+00:08:10.160 --> 00:08:12.070 align:start position:0%
+because it is you can actually
+calculate<00:08:10.960><c> the</c><00:08:11.120><c> number</c><00:08:11.360><c> of</c><00:08:11.520><c> ways</c><00:08:11.759><c> from</c><00:08:11.919><c> the</c>
+
+00:08:12.070 --> 00:08:12.080 align:start position:0%
+calculate the number of ways from the
+ 
+
+00:08:12.080 --> 00:08:14.710 align:start position:0%
+calculate the number of ways from the
+top<00:08:12.400><c> left</c><00:08:12.720><c> i</c><00:08:12.800><c> think</c><00:08:13.039><c> in</c><00:08:13.280><c> constant</c><00:08:13.919><c> time</c><00:08:14.319><c> if</c><00:08:14.479><c> you</c>
+
+00:08:14.710 --> 00:08:14.720 align:start position:0%
+top left i think in constant time if you
+ 
+
+00:08:14.720 --> 00:08:15.510 align:start position:0%
+top left i think in constant time if you
+have<00:08:14.879><c> like</c><00:08:15.120><c> a</c>
+
+00:08:15.510 --> 00:08:15.520 align:start position:0%
+have like a
+ 
+
+00:08:15.520 --> 00:08:17.670 align:start position:0%
+have like a
+math<00:08:15.919><c> equation</c><00:08:16.479><c> but</c><00:08:16.720><c> i</c><00:08:16.879><c> don't</c><00:08:17.039><c> know</c><00:08:17.280><c> a</c><00:08:17.440><c> ton</c>
+
+00:08:17.670 --> 00:08:17.680 align:start position:0%
+math equation but i don't know a ton
+ 
+
+00:08:17.680 --> 00:08:19.350 align:start position:0%
+math equation but i don't know a ton
+about<00:08:17.919><c> it</c><00:08:18.240><c> i'm</c><00:08:18.400><c> just</c><00:08:18.560><c> going</c><00:08:18.639><c> to</c><00:08:18.720><c> stick</c><00:08:19.039><c> to</c><00:08:19.199><c> the</c>
+
+00:08:19.350 --> 00:08:19.360 align:start position:0%
+about it i'm just going to stick to the
+ 
+
+00:08:19.360 --> 00:08:21.350 align:start position:0%
+about it i'm just going to stick to the
+dynamic<00:08:19.840><c> programming</c><00:08:20.319><c> solution</c>
+
+00:08:21.350 --> 00:08:21.360 align:start position:0%
+dynamic programming solution
+ 
+
+00:08:21.360 --> 00:08:23.350 align:start position:0%
+dynamic programming solution
+so<00:08:21.599><c> let's</c><00:08:21.840><c> do</c><00:08:22.160><c> what</c><00:08:22.319><c> we</c><00:08:22.479><c> just</c><00:08:22.720><c> did</c><00:08:23.039><c> in</c><00:08:23.199><c> the</c>
+
+00:08:23.350 --> 00:08:23.360 align:start position:0%
+so let's do what we just did in the
+ 
+
+00:08:23.360 --> 00:08:24.950 align:start position:0%
+so let's do what we just did in the
+picture<00:08:23.759><c> so</c><00:08:24.000><c> i'm</c><00:08:24.160><c> going</c><00:08:24.319><c> to</c><00:08:24.560><c> have</c>
+
+00:08:24.950 --> 00:08:24.960 align:start position:0%
+picture so i'm going to have
+ 
+
+00:08:24.960 --> 00:08:26.869 align:start position:0%
+picture so i'm going to have
+a<00:08:25.280><c> row</c><00:08:25.680><c> and</c><00:08:25.759><c> this</c><00:08:25.919><c> is</c><00:08:26.080><c> initially</c><00:08:26.479><c> going</c><00:08:26.639><c> to</c><00:08:26.720><c> be</c>
+
+00:08:26.869 --> 00:08:26.879 align:start position:0%
+a row and this is initially going to be
+ 
+
+00:08:26.879 --> 00:08:29.110 align:start position:0%
+a row and this is initially going to be
+the<00:08:27.120><c> bottom</c><00:08:27.599><c> row</c><00:08:27.919><c> it's</c><00:08:28.160><c> going</c><00:08:28.400><c> to</c><00:08:28.639><c> be</c>
+
+00:08:29.110 --> 00:08:29.120 align:start position:0%
+the bottom row it's going to be
+ 
+
+00:08:29.120 --> 00:08:31.430 align:start position:0%
+the bottom row it's going to be
+the<00:08:29.440><c> length</c><00:08:29.840><c> of</c><00:08:29.919><c> the</c><00:08:30.080><c> number</c><00:08:30.479><c> of</c><00:08:30.720><c> rows</c><00:08:31.120><c> that</c><00:08:31.280><c> we</c>
+
+00:08:31.430 --> 00:08:31.440 align:start position:0%
+the length of the number of rows that we
+ 
+
+00:08:31.440 --> 00:08:32.550 align:start position:0%
+the length of the number of rows that we
+have<00:08:31.680><c> which</c><00:08:32.000><c> is</c>
+
+00:08:32.550 --> 00:08:32.560 align:start position:0%
+have which is
+ 
+
+00:08:32.560 --> 00:08:34.550 align:start position:0%
+have which is
+n<00:08:33.279><c> but</c><00:08:33.519><c> since</c><00:08:33.760><c> it's</c><00:08:33.919><c> a</c><00:08:34.000><c> grid</c><00:08:34.320><c> you</c><00:08:34.399><c> could</c>
+
+00:08:34.550 --> 00:08:34.560 align:start position:0%
+n but since it's a grid you could
+ 
+
+00:08:34.560 --> 00:08:35.750 align:start position:0%
+n but since it's a grid you could
+probably<00:08:34.800><c> use</c><00:08:35.039><c> either</c><00:08:35.440><c> m</c>
+
+00:08:35.750 --> 00:08:35.760 align:start position:0%
+probably use either m
+ 
+
+00:08:35.760 --> 00:08:38.070 align:start position:0%
+probably use either m
+or<00:08:36.000><c> n</c><00:08:36.560><c> and</c><00:08:36.719><c> so</c><00:08:36.959><c> since</c><00:08:37.200><c> we</c><00:08:37.279><c> know</c><00:08:37.519><c> the</c><00:08:37.599><c> bottom</c><00:08:37.919><c> row</c>
+
+00:08:38.070 --> 00:08:38.080 align:start position:0%
+or n and so since we know the bottom row
+ 
+
+00:08:38.080 --> 00:08:40.070 align:start position:0%
+or n and so since we know the bottom row
+is<00:08:38.159><c> going</c><00:08:38.240><c> to</c><00:08:38.320><c> be</c><00:08:38.560><c> all</c><00:08:38.800><c> ones</c><00:08:39.279><c> we</c><00:08:39.440><c> can</c><00:08:39.599><c> start</c>
+
+00:08:40.070 --> 00:08:40.080 align:start position:0%
+is going to be all ones we can start
+ 
+
+00:08:40.080 --> 00:08:43.350 align:start position:0%
+is going to be all ones we can start
+going<00:08:40.640><c> through</c><00:08:41.039><c> the</c><00:08:41.519><c> other</c><00:08:42.399><c> rows</c>
+
+00:08:43.350 --> 00:08:43.360 align:start position:0%
+going through the other rows
+ 
+
+00:08:43.360 --> 00:08:45.190 align:start position:0%
+going through the other rows
+so<00:08:43.519><c> we</c><00:08:43.680><c> can</c><00:08:43.839><c> go</c><00:08:44.000><c> through</c><00:08:44.320><c> all</c><00:08:44.560><c> of</c><00:08:44.640><c> the</c><00:08:44.880><c> other</c>
+
+00:08:45.190 --> 00:08:45.200 align:start position:0%
+so we can go through all of the other
+ 
+
+00:08:45.200 --> 00:08:47.110 align:start position:0%
+so we can go through all of the other
+rows<00:08:45.600><c> except</c><00:08:46.000><c> for</c><00:08:46.160><c> the</c><00:08:46.320><c> last</c><00:08:46.640><c> one</c><00:08:46.800><c> so</c>
+
+00:08:47.110 --> 00:08:47.120 align:start position:0%
+rows except for the last one so
+ 
+
+00:08:47.120 --> 00:08:49.910 align:start position:0%
+rows except for the last one so
+m<00:08:47.360><c> minus</c><00:08:47.760><c> one</c><00:08:48.399><c> and</c><00:08:48.720><c> for</c><00:08:49.040><c> each</c><00:08:49.360><c> row</c><00:08:49.600><c> we're</c><00:08:49.760><c> going</c>
+
+00:08:49.910 --> 00:08:49.920 align:start position:0%
+m minus one and for each row we're going
+ 
+
+00:08:49.920 --> 00:08:50.710 align:start position:0%
+m minus one and for each row we're going
+to<00:08:50.160><c> compute</c>
+
+00:08:50.710 --> 00:08:50.720 align:start position:0%
+to compute
+ 
+
+00:08:50.720 --> 00:08:53.190 align:start position:0%
+to compute
+a<00:08:50.959><c> new</c><00:08:51.200><c> row</c><00:08:51.519><c> so</c><00:08:51.760><c> this</c><00:08:52.000><c> new</c><00:08:52.160><c> row</c><00:08:52.480><c> is</c><00:08:52.560><c> going</c><00:08:52.720><c> to</c><00:08:52.880><c> be</c>
+
+00:08:53.190 --> 00:08:53.200 align:start position:0%
+a new row so this new row is going to be
+ 
+
+00:08:53.200 --> 00:08:54.150 align:start position:0%
+a new row so this new row is going to be
+above
+
+00:08:54.150 --> 00:08:54.160 align:start position:0%
+above
+ 
+
+00:08:54.160 --> 00:08:56.470 align:start position:0%
+above
+the<00:08:54.480><c> old</c><00:08:54.880><c> row</c><00:08:55.600><c> and</c><00:08:55.760><c> so</c><00:08:55.920><c> it's</c><00:08:56.080><c> going</c><00:08:56.160><c> to</c><00:08:56.240><c> be</c><00:08:56.320><c> the</c>
+
+00:08:56.470 --> 00:08:56.480 align:start position:0%
+the old row and so it's going to be the
+ 
+
+00:08:56.480 --> 00:08:58.230 align:start position:0%
+the old row and so it's going to be the
+same<00:08:56.720><c> dimensions</c><00:08:57.519><c> of</c><00:08:57.680><c> course</c>
+
+00:08:58.230 --> 00:08:58.240 align:start position:0%
+same dimensions of course
+ 
+
+00:08:58.240 --> 00:09:00.870 align:start position:0%
+same dimensions of course
+we'll<00:08:58.480><c> initialize</c><00:08:59.040><c> it</c><00:08:59.200><c> to</c><00:08:59.360><c> all</c><00:08:59.600><c> ones</c><00:09:00.320><c> and</c><00:09:00.560><c> to</c>
+
+00:09:00.870 --> 00:09:00.880 align:start position:0%
+we'll initialize it to all ones and to
+ 
+
+00:09:00.880 --> 00:09:01.670 align:start position:0%
+we'll initialize it to all ones and to
+avoid
+
+00:09:01.670 --> 00:09:01.680 align:start position:0%
+avoid
+ 
+
+00:09:01.680 --> 00:09:03.829 align:start position:0%
+avoid
+the<00:09:01.839><c> edge</c><00:09:02.160><c> case</c><00:09:02.560><c> of</c><00:09:02.720><c> having</c><00:09:03.040><c> to</c><00:09:03.200><c> check</c><00:09:03.519><c> out</c><00:09:03.680><c> of</c>
+
+00:09:03.829 --> 00:09:03.839 align:start position:0%
+the edge case of having to check out of
+ 
+
+00:09:03.839 --> 00:09:05.430 align:start position:0%
+the edge case of having to check out of
+bounds<00:09:04.240><c> what</c><00:09:04.399><c> i'm</c><00:09:04.560><c> going</c><00:09:04.640><c> to</c><00:09:04.880><c> do</c>
+
+00:09:05.430 --> 00:09:05.440 align:start position:0%
+bounds what i'm going to do
+ 
+
+00:09:05.440 --> 00:09:08.389 align:start position:0%
+bounds what i'm going to do
+is<00:09:06.160><c> go</c><00:09:06.560><c> through</c><00:09:07.040><c> every</c><00:09:07.360><c> position</c><00:09:08.080><c> every</c>
+
+00:09:08.389 --> 00:09:08.399 align:start position:0%
+is go through every position every
+ 
+
+00:09:08.399 --> 00:09:09.430 align:start position:0%
+is go through every position every
+column<00:09:08.800><c> except</c>
+
+00:09:09.430 --> 00:09:09.440 align:start position:0%
+column except
+ 
+
+00:09:09.440 --> 00:09:11.990 align:start position:0%
+column except
+the<00:09:09.920><c> rightmost</c><00:09:10.640><c> column</c><00:09:11.120><c> and</c><00:09:11.200><c> we</c><00:09:11.360><c> can</c><00:09:11.519><c> do</c><00:09:11.760><c> that</c>
+
+00:09:11.990 --> 00:09:12.000 align:start position:0%
+the rightmost column and we can do that
+ 
+
+00:09:12.000 --> 00:09:14.150 align:start position:0%
+the rightmost column and we can do that
+like<00:09:12.320><c> this</c><00:09:12.720><c> because</c><00:09:12.959><c> we</c><00:09:13.120><c> know</c><00:09:13.279><c> the</c><00:09:13.519><c> rightmost</c>
+
+00:09:14.150 --> 00:09:14.160 align:start position:0%
+like this because we know the rightmost
+ 
+
+00:09:14.160 --> 00:09:14.870 align:start position:0%
+like this because we know the rightmost
+column
+
+00:09:14.870 --> 00:09:14.880 align:start position:0%
+column
+ 
+
+00:09:14.880 --> 00:09:18.070 align:start position:0%
+column
+or<00:09:15.120><c> the</c><00:09:15.440><c> last</c><00:09:15.920><c> value</c><00:09:16.399><c> in</c><00:09:16.640><c> every</c><00:09:16.959><c> single</c><00:09:17.440><c> row</c><00:09:17.839><c> is</c>
+
+00:09:18.070 --> 00:09:18.080 align:start position:0%
+or the last value in every single row is
+ 
+
+00:09:18.080 --> 00:09:18.949 align:start position:0%
+or the last value in every single row is
+always<00:09:18.399><c> going</c><00:09:18.480><c> to</c><00:09:18.640><c> be</c>
+
+00:09:18.949 --> 00:09:18.959 align:start position:0%
+always going to be
+ 
+
+00:09:18.959 --> 00:09:21.590 align:start position:0%
+always going to be
+one<00:09:19.360><c> right</c><00:09:19.600><c> i</c><00:09:19.760><c> showed</c><00:09:20.000><c> that</c><00:09:20.320><c> in</c><00:09:20.480><c> the</c><00:09:20.800><c> drawing</c>
+
+00:09:21.590 --> 00:09:21.600 align:start position:0%
+one right i showed that in the drawing
+ 
+
+00:09:21.600 --> 00:09:22.470 align:start position:0%
+one right i showed that in the drawing
+and<00:09:21.760><c> so</c><00:09:21.920><c> we're</c><00:09:22.080><c> going</c><00:09:22.160><c> to</c>
+
+00:09:22.470 --> 00:09:22.480 align:start position:0%
+and so we're going to
+ 
+
+00:09:22.480 --> 00:09:24.949 align:start position:0%
+and so we're going to
+start<00:09:22.880><c> at</c><00:09:23.040><c> the</c><00:09:23.200><c> second</c><00:09:23.519><c> to</c><00:09:23.680><c> last</c><00:09:24.000><c> position</c>
+
+00:09:24.949 --> 00:09:24.959 align:start position:0%
+start at the second to last position
+ 
+
+00:09:24.959 --> 00:09:26.790 align:start position:0%
+start at the second to last position
+keep<00:09:25.279><c> going</c><00:09:25.519><c> until</c><00:09:25.760><c> we</c><00:09:25.920><c> get</c><00:09:26.000><c> to</c><00:09:26.160><c> the</c><00:09:26.240><c> beginning</c>
+
+00:09:26.790 --> 00:09:26.800 align:start position:0%
+keep going until we get to the beginning
+ 
+
+00:09:26.800 --> 00:09:27.269 align:start position:0%
+keep going until we get to the beginning
+and<00:09:26.959><c> go</c>
+
+00:09:27.269 --> 00:09:27.279 align:start position:0%
+and go
+ 
+
+00:09:27.279 --> 00:09:29.269 align:start position:0%
+and go
+in<00:09:27.440><c> reverse</c><00:09:28.000><c> order</c><00:09:28.320><c> so</c><00:09:28.480><c> we're</c><00:09:28.640><c> going</c><00:09:28.880><c> from</c>
+
+00:09:29.269 --> 00:09:29.279 align:start position:0%
+in reverse order so we're going from
+ 
+
+00:09:29.279 --> 00:09:30.310 align:start position:0%
+in reverse order so we're going from
+right<00:09:29.600><c> to</c><00:09:29.839><c> left</c>
+
+00:09:30.310 --> 00:09:30.320 align:start position:0%
+right to left
+ 
+
+00:09:30.320 --> 00:09:32.790 align:start position:0%
+right to left
+and<00:09:30.480><c> we</c><00:09:30.720><c> know</c><00:09:30.959><c> that</c><00:09:31.120><c> the</c><00:09:31.360><c> new</c><00:09:31.760><c> row</c><00:09:32.160><c> so</c><00:09:32.399><c> if</c><00:09:32.560><c> we're</c>
+
+00:09:32.790 --> 00:09:32.800 align:start position:0%
+and we know that the new row so if we're
+ 
+
+00:09:32.800 --> 00:09:34.070 align:start position:0%
+and we know that the new row so if we're
+computing<00:09:33.360><c> new</c><00:09:33.600><c> row</c><00:09:33.839><c> of</c>
+
+00:09:34.070 --> 00:09:34.080 align:start position:0%
+computing new row of
+ 
+
+00:09:34.080 --> 00:09:37.509 align:start position:0%
+computing new row of
+j<00:09:34.800><c> it's</c><00:09:35.120><c> going</c><00:09:35.440><c> to</c><00:09:35.680><c> be</c><00:09:36.640><c> new</c>
+
+00:09:37.509 --> 00:09:37.519 align:start position:0%
+j it's going to be new
+ 
+
+00:09:37.519 --> 00:09:40.790 align:start position:0%
+j it's going to be new
+row<00:09:38.160><c> of</c><00:09:38.800><c> j</c><00:09:39.360><c> plus</c><00:09:39.839><c> 1</c><00:09:40.240><c> so</c><00:09:40.399><c> the</c>
+
+00:09:40.790 --> 00:09:40.800 align:start position:0%
+row of j plus 1 so the
+ 
+
+00:09:40.800 --> 00:09:42.949 align:start position:0%
+row of j plus 1 so the
+this<00:09:41.040><c> is</c><00:09:41.120><c> the</c><00:09:41.360><c> right</c><00:09:41.600><c> value</c><00:09:42.160><c> and</c><00:09:42.320><c> the</c><00:09:42.480><c> value</c>
+
+00:09:42.949 --> 00:09:42.959 align:start position:0%
+this is the right value and the value
+ 
+
+00:09:42.959 --> 00:09:44.550 align:start position:0%
+this is the right value and the value
+below<00:09:43.600><c> is</c><00:09:43.760><c> just</c><00:09:44.000><c> going</c><00:09:44.160><c> to</c><00:09:44.240><c> be</c>
+
+00:09:44.550 --> 00:09:44.560 align:start position:0%
+below is just going to be
+ 
+
+00:09:44.560 --> 00:09:48.230 align:start position:0%
+below is just going to be
+the<00:09:44.800><c> old</c><00:09:45.200><c> row</c><00:09:45.839><c> at</c><00:09:46.160><c> index</c><00:09:46.800><c> j</c><00:09:47.440><c> and</c><00:09:47.600><c> so</c><00:09:47.760><c> with</c><00:09:47.920><c> this</c>
+
+00:09:48.230 --> 00:09:48.240 align:start position:0%
+the old row at index j and so with this
+ 
+
+00:09:48.240 --> 00:09:50.070 align:start position:0%
+the old row at index j and so with this
+loop<00:09:48.560><c> we'll</c><00:09:48.720><c> be</c><00:09:48.880><c> able</c><00:09:49.040><c> to</c><00:09:49.120><c> compute</c><00:09:49.519><c> the</c><00:09:49.760><c> new</c>
+
+00:09:50.070 --> 00:09:50.080 align:start position:0%
+loop we'll be able to compute the new
+ 
+
+00:09:50.080 --> 00:09:52.790 align:start position:0%
+loop we'll be able to compute the new
+row<00:09:50.560><c> and</c><00:09:50.800><c> so</c><00:09:51.120><c> after</c><00:09:51.360><c> we</c><00:09:51.519><c> do</c><00:09:51.680><c> that</c><00:09:52.000><c> we</c><00:09:52.160><c> can</c>
+
+00:09:52.790 --> 00:09:52.800 align:start position:0%
+row and so after we do that we can
+ 
+
+00:09:52.800 --> 00:09:54.870 align:start position:0%
+row and so after we do that we can
+update<00:09:53.200><c> the</c><00:09:53.440><c> row</c><00:09:53.680><c> so</c><00:09:53.839><c> the</c><00:09:54.080><c> old</c><00:09:54.320><c> row</c><00:09:54.560><c> is</c><00:09:54.720><c> now</c>
+
+00:09:54.870 --> 00:09:54.880 align:start position:0%
+update the row so the old row is now
+ 
+
+00:09:54.880 --> 00:09:56.389 align:start position:0%
+update the row so the old row is now
+going<00:09:55.120><c> to</c><00:09:55.200><c> be</c><00:09:55.440><c> set</c><00:09:55.760><c> to</c><00:09:56.000><c> the</c>
+
+00:09:56.389 --> 00:09:56.399 align:start position:0%
+going to be set to the
+ 
+
+00:09:56.399 --> 00:09:58.790 align:start position:0%
+going to be set to the
+new<00:09:56.720><c> row</c><00:09:57.279><c> and</c><00:09:57.440><c> so</c><00:09:57.760><c> it's</c><00:09:58.000><c> going</c><00:09:58.080><c> to</c><00:09:58.240><c> keep</c><00:09:58.480><c> doing</c>
+
+00:09:58.790 --> 00:09:58.800 align:start position:0%
+new row and so it's going to keep doing
+ 
+
+00:09:58.800 --> 00:09:59.829 align:start position:0%
+new row and so it's going to keep doing
+that<00:09:59.040><c> until</c><00:09:59.519><c> we</c>
+
+00:09:59.829 --> 00:09:59.839 align:start position:0%
+that until we
+ 
+
+00:09:59.839 --> 00:10:02.790 align:start position:0%
+that until we
+end<00:10:00.080><c> up</c><00:10:00.399><c> getting</c><00:10:01.120><c> the</c><00:10:01.519><c> last</c><00:10:02.000><c> or</c><00:10:02.160><c> rather</c><00:10:02.480><c> the</c>
+
+00:10:02.790 --> 00:10:02.800 align:start position:0%
+end up getting the last or rather the
+ 
+
+00:10:02.800 --> 00:10:04.069 align:start position:0%
+end up getting the last or rather the
+first<00:10:03.200><c> row</c><00:10:03.440><c> the</c><00:10:03.680><c> top</c>
+
+00:10:04.069 --> 00:10:04.079 align:start position:0%
+first row the top
+ 
+
+00:10:04.079 --> 00:10:06.310 align:start position:0%
+first row the top
+row<00:10:04.399><c> that</c><00:10:04.480><c> we</c><00:10:04.640><c> actually</c><00:10:04.959><c> want</c><00:10:05.120><c> to</c><00:10:05.279><c> compute</c><00:10:06.000><c> so</c>
+
+00:10:06.310 --> 00:10:06.320 align:start position:0%
+row that we actually want to compute so
+ 
+
+00:10:06.320 --> 00:10:08.230 align:start position:0%
+row that we actually want to compute so
+after<00:10:06.720><c> this</c><00:10:06.959><c> has</c><00:10:07.040><c> been</c><00:10:07.360><c> executed</c><00:10:07.920><c> that's</c>
+
+00:10:08.230 --> 00:10:08.240 align:start position:0%
+after this has been executed that's
+ 
+
+00:10:08.240 --> 00:10:09.750 align:start position:0%
+after this has been executed that's
+what's<00:10:08.480><c> going</c><00:10:08.720><c> to</c><00:10:08.880><c> happen</c><00:10:09.279><c> and</c><00:10:09.360><c> what</c><00:10:09.600><c> we</c>
+
+00:10:09.750 --> 00:10:09.760 align:start position:0%
+what's going to happen and what we
+ 
+
+00:10:09.760 --> 00:10:11.269 align:start position:0%
+what's going to happen and what we
+actually<00:10:10.079><c> want</c><00:10:10.240><c> to</c><00:10:10.320><c> return</c><00:10:10.880><c> though</c>
+
+00:10:11.269 --> 00:10:11.279 align:start position:0%
+actually want to return though
+ 
+
+00:10:11.279 --> 00:10:13.990 align:start position:0%
+actually want to return though
+is<00:10:11.760><c> in</c><00:10:12.000><c> that</c><00:10:12.320><c> first</c><00:10:12.720><c> row</c><00:10:12.959><c> which</c><00:10:13.200><c> will</c><00:10:13.360><c> be</c><00:10:13.839><c> in</c>
+
+00:10:13.990 --> 00:10:14.000 align:start position:0%
+is in that first row which will be in
+ 
+
+00:10:14.000 --> 00:10:15.190 align:start position:0%
+is in that first row which will be in
+this<00:10:14.240><c> variable</c>
+
+00:10:15.190 --> 00:10:15.200 align:start position:0%
+this variable
+ 
+
+00:10:15.200 --> 00:10:17.990 align:start position:0%
+this variable
+we<00:10:15.360><c> want</c><00:10:15.680><c> the</c><00:10:15.920><c> first</c><00:10:16.320><c> value</c><00:10:16.720><c> so</c><00:10:16.959><c> at</c><00:10:17.120><c> index</c><00:10:17.519><c> 0</c>
+
+00:10:17.990 --> 00:10:18.000 align:start position:0%
+we want the first value so at index 0
+ 
+
+00:10:18.000 --> 00:10:19.509 align:start position:0%
+we want the first value so at index 0
+that's<00:10:18.240><c> what</c><00:10:18.399><c> we're</c><00:10:18.560><c> going</c><00:10:18.640><c> to</c><00:10:18.720><c> return</c>
+
+00:10:19.509 --> 00:10:19.519 align:start position:0%
+that's what we're going to return
+ 
+
+00:10:19.519 --> 00:10:22.550 align:start position:0%
+that's what we're going to return
+so<00:10:19.680><c> now</c><00:10:19.839><c> we</c><00:10:20.000><c> can</c><00:10:20.399><c> run</c><00:10:20.640><c> our</c><00:10:20.880><c> code</c><00:10:21.600><c> and</c><00:10:22.160><c> by</c><00:10:22.320><c> the</c>
+
+00:10:22.550 --> 00:10:22.560 align:start position:0%
+so now we can run our code and by the
+ 
+
+00:10:22.560 --> 00:10:23.190 align:start position:0%
+so now we can run our code and by the
+way
+
+00:10:23.190 --> 00:10:23.200 align:start position:0%
+way
+ 
+
+00:10:23.200 --> 00:10:25.430 align:start position:0%
+way
+so<00:10:23.440><c> it</c><00:10:23.600><c> is</c><00:10:23.760><c> pretty</c><00:10:24.079><c> efficient</c><00:10:24.640><c> because</c><00:10:25.040><c> we</c><00:10:25.200><c> did</c>
+
+00:10:25.430 --> 00:10:25.440 align:start position:0%
+so it is pretty efficient because we did
+ 
+
+00:10:25.440 --> 00:10:26.470 align:start position:0%
+so it is pretty efficient because we did
+this<00:10:25.760><c> in</c><00:10:26.079><c> o</c>
+
+00:10:26.470 --> 00:10:26.480 align:start position:0%
+this in o
+ 
+
+00:10:26.480 --> 00:10:30.069 align:start position:0%
+this in o
+of<00:10:26.880><c> n</c><00:10:27.120><c> times</c><00:10:27.600><c> n</c><00:10:28.160><c> time</c><00:10:28.880><c> and</c><00:10:29.360><c> the</c><00:10:29.680><c> memory</c>
+
+00:10:30.069 --> 00:10:30.079 align:start position:0%
+of n times n time and the memory
+ 
+
+00:10:30.079 --> 00:10:32.550 align:start position:0%
+of n times n time and the memory
+complexity<00:10:30.880><c> is</c><00:10:31.120><c> just</c><00:10:31.760><c> the</c>
+
+00:10:32.550 --> 00:10:32.560 align:start position:0%
+complexity is just the
+ 
+
+00:10:32.560 --> 00:10:35.990 align:start position:0%
+complexity is just the
+big<00:10:32.800><c> o</c><00:10:33.200><c> of</c><00:10:33.839><c> n</c><00:10:34.160><c> because</c><00:10:34.560><c> that's</c><00:10:34.959><c> the</c><00:10:35.279><c> length</c><00:10:35.760><c> of</c>
+
+00:10:35.990 --> 00:10:36.000 align:start position:0%
+big o of n because that's the length of
+ 
+
+00:10:36.000 --> 00:10:36.230 align:start position:0%
+big o of n because that's the length of
+a
+
+00:10:36.230 --> 00:10:36.240 align:start position:0%
+a
+ 
+
+00:10:36.240 --> 00:10:38.790 align:start position:0%
+a
+row<00:10:36.959><c> so</c><00:10:37.120><c> i</c><00:10:37.279><c> hope</c><00:10:37.440><c> this</c><00:10:37.680><c> was</c><00:10:37.839><c> helpful</c><00:10:38.480><c> if</c><00:10:38.560><c> you</c>
+
+00:10:38.790 --> 00:10:38.800 align:start position:0%
+row so i hope this was helpful if you
+ 
+
+00:10:38.800 --> 00:10:39.350 align:start position:0%
+row so i hope this was helpful if you
+enjoyed
+
+00:10:39.350 --> 00:10:39.360 align:start position:0%
+enjoyed
+ 
+
+00:10:39.360 --> 00:10:41.110 align:start position:0%
+enjoyed
+please<00:10:39.680><c> like</c><00:10:39.920><c> and</c><00:10:40.000><c> subscribe</c><00:10:40.560><c> it</c><00:10:40.720><c> supports</c>
+
+00:10:41.110 --> 00:10:41.120 align:start position:0%
+please like and subscribe it supports
+ 
+
+00:10:41.120 --> 00:10:43.269 align:start position:0%
+please like and subscribe it supports
+the<00:10:41.279><c> channel</c><00:10:41.680><c> a</c><00:10:41.920><c> lot</c><00:10:42.320><c> and</c><00:10:42.480><c> i'll</c><00:10:42.640><c> hopefully</c>
+
+00:10:43.269 --> 00:10:43.279 align:start position:0%
+the channel a lot and i'll hopefully
+ 
+
+00:10:43.279 --> 00:10:47.839 align:start position:0%
+the channel a lot and i'll hopefully
+see<00:10:43.440><c> you</c><00:10:43.600><c> pretty</c><00:10:44.839><c> soon</c>
+

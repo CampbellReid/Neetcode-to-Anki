@@ -1,0 +1,264 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+let's solve a problem
+meeting rooms and you notice that the ui
+of this looks a little bit different and
+let me show you why
+so if you go on leak code and you try to
+solve this problem meeting rooms you'll
+notice that
+it's a locked problem and you have to
+subscribe and pay money to be able to
+solve this premium really good problem
+but there's actually a workaround that i
+found
+and that is that there's a site called
+lint code
+and on that site lint code you can
+basically solve
+it's it's pretty much a leak code clone
+and you can basically solve
+premium leak code problems for free so
+you know this
+is so yeah if you don't want to pay
+money to be able to solve certain
+problems on leak code i'd recommend
+solving them on this site instead so
+that's what i'm going to be doing today
+but nevertheless this is basically the
+exact same problem i don't know how they
+can get away with doing that but that's
+okay
+so we're given an array of meeting time
+intervals consisting of start and end
+time so each
+interval is basically a tuple or a pair
+of values the first value is the start
+time the second value is the end time
+of a particular meeting so for example
+if we were given two meetings one starts
+at zero and
+ends at eight and the next one starts at
+eight and ends at
+ten these do not overlap basically we're
+trying to determine if a person could
+attend both of these meetings and
+technically they could
+because it's one ends at eight and the
+other one starts at eight so that's
+technically
+non-overlapping and in this case we
+would return true because
+the person could attend both of these
+meetings but let's look at the second
+example
+so we see that one meeting starts at
+zero and ends at thirty
+the next meeting that starts after it
+starts at five so
+technically it starts after this meeting
+but it ends
+at 10. so the main thing to notice is
+this meeting
+starts before this meeting has even
+ended right so if this goes from zero
+all the way
+to thirty we see another meeting starts
+over here at
+five and it goes to ten but the thing
+we're paying attention to is it started
+before the other meeting even
+ended right like we can see that they
+are overlapping therefore nobody could
+be able to attend both of the meetings
+at the same time so we have to return
+false because we found
+overlapping intervals so as you can tell
+it might be helpful for us if we're able
+to sort
+all of the meetings based on the start
+time
+of each meeting and they basically gave
+us that
+sorted array you know just as an input
+but and they're basically hinting us
+to do exactly that sort it based on the
+start value of each
+interval so if we we are given an array
+of meeting intervals and we sort based
+on the start time that is going to take
+n log n complexity for that sorting
+but after we're done sorting what you're
+going to notice is we're basically
+allowed to start at the beginning and
+just scan
+through so the next part of the
+algorithm is going to be o of n
+so the overall time complexity is just
+going to be big o and log n
+so what we're going to do is we're going
+to look at the first
+two intervals available to us and the
+only thing we're going to compare
+is the end time of the first interval
+and the start time of the second
+interval because we
+know for sure since these are in sorted
+order this one is going to start
+before or equal to the same time as this
+one so we know for sure the start time
+of this is either going to be right here
+or it's going to come after it and for
+us to detect
+that these two intervals are overlapping
+it's very simple
+if the start time of this is before the
+end
+time of this one that means they are
+overlapping so for example if the start
+time of this was over here
+that means it starts before this one
+ends therefore
+they are overlapping and we can
+immediately return false right that
+means no one could attend all of the
+meetings
+but if they're not overlapping which is
+the case right now right
+this one starts right as this one ends
+so that technically does not mean that
+they're overlapping
+so that means these two intervals are
+not overlapping
+so my next question to you is does that
+mean now we have to compare this one
+to this one as well we don't and that's
+exactly why we sorted the input because
+do we know
+if this one if this interval starting
+value came after
+or equal to this interval's n value then
+there's no
+way that this interval could possibly
+overlap with this one because we know
+for sure
+this interval start time is going to
+come after this interval start time
+right
+or equal to it so if this one did not
+overlap this one then there's no way
+this could possibly overlap this one so
+we don't have to check that so now
+as we move to the next position we're
+going to be checking if
+these two intervals are overlapping
+and so again we're just going to repeat
+that process okay the end time of this
+one and the start time of this one well
+this the start time of this is after
+this one
+after the end time of this interval so
+therefore they're definitely not
+overlapping right
+and if this one does not overlap with
+this one if we had a bunch of intervals
+that came after over here right even if
+they started at the exact same time
+right maybe some intervals like this
+then if we can determine that
+this interval does not overlap this
+interval then for sure
+all of these intervals that could
+possibly exist towards the right
+are definitely not going to overlap with
+this one either
+so then we just continue our comparisons
+comparing
+each adjacent pair of intervals so that
+is basically the solution the main idea
+to notice
+is that we can sort the input based on
+the start time and
+that's going to give us the most
+efficient solution so now let's jump
+into the code
+on lint code rather than leak code this
+time so one thing before i start coding
+is i want to mention that the list of
+intervals is given to us not as a pair
+but it's actually an
+object so interval happens to be an
+object it has two members
+start and end and they basically mean
+what they say they mean
+so now we can code it so remember the
+first thing we're going to want to do is
+sort the intervals and we're going to
+sort it based on the start time so in
+python we can give the key that we're
+going to be sorting on
+as this it's going to be lambda
+basically an inline function
+so for this function if we're given an
+input i for the interval
+the return value or rather what we're
+going to be sorting it based on
+is going to be i of start right so for
+an interval we're going to be sorting it
+based on the start time
+of that interval and once we're done
+with that we're just going to iterate
+through the entire
+array of intervals so i'm going to
+use i for index it's not the interval
+itself and we're going to go through the
+length of intervals and since we're
+comparing adjacent intervals
+we can actually start at index 1 because
+we're going to compare
+index 1 with the previous index so we're
+going to be looking at two intervals
+interval 1
+is going to be the interval at index i
+minus 1. so that's going to be the first
+interval interval 2 is going to be
+the interval at the current index or
+intervals at index
+i and remember we want to compare the
+end time of interval 1 and the start
+time of interval 2 and how are we
+comparing them how do we know if we're
+going to be returning
+false if and only if the start time
+of interval 2 is less than the
+end time of interval 1 that means
+interval 2 starts before interval 1
+ends and therefore we would have to
+if that's not the case though then we
+don't have to do anything right then we
+just have to go to the next iteration of
+our loop and then compare the next two
+intervals
+and if we never end up returning false
+that means we
+never had overlapping intervals then we
+can just return true as soon as we exit
+out of the loop
+so now let me just submit it make sure
+that it works
+and yep you can see it's about as
+efficient as we could get so
+uh probably the biggest thing that you
+learned in this is that you can use a
+website called link code to solve
+premium leak code problems for free
+and i think i'm probably going to be
+making use of this site when i'm solving
+some other premium questions such as
+alien dictionary and some other ones
+that i think are pretty important and
+good problems to practice
+so i hope that this was helpful if it
+was please like and subscribe it
+supports the channel a lot and i'll
+hopefully

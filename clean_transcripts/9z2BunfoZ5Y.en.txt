@@ -1,0 +1,363 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+let's solve the problem surrounded
+regions this is a pretty interesting
+problem and I think you're going to be
+really surprised by the solution that we
+come up with today and I definitely
+think this problem is well worth your
+time so now let's get into it in this
+problem we're given an M byn Matrix
+board containing only X's and O's and we
+want to capture all regions that are
+four directionally surrounded by x's and
+by the way capturing a reason I don't
+know if you can hear that flight noise
+there's an airplane above but let's
+continue the problem capturing a region
+is defined by flipping all of the O's
+into X's if and only if those O's happen
+to be surrounded by x's and this is best
+understood with an example so let's take
+a look at this input board this is the
+input board and this is the result so
+how do we get to the result well take a
+look at the board here we have two
+different regions of O's this is one
+region let me use a different color this
+is one region and this is the second
+region why are these separate regions
+aren't they connected diagonally well
+yeah they're connected diagonally but
+remember look above we only want four
+directionally surrounded right so
+basically these cannot be connected
+diagonally they have to be connected
+horizontally or vertically like these
+three are so these are two separate
+regions in the result you can see that
+this region was flipped right one of the
+regions was flipped right why was this
+region flipped because take a look it's
+surrounded by X's right there's an X
+here x here x here x here x here x here
+uh by the way actually we don't care
+about this x because this x is diagonal
+right we care about horizontal and
+vertical X's so this x this x this X
+this X and I think this is the last X
+right it's surrounded by all X's so
+therefore we can capture this region
+when we say capture we mean convert the
+O's into X's as you can see in the
+output what about the second region
+isn't this region also surrounded by X's
+why didn't we flip it in the output well
+let's take a look this is has an x on
+the left of it has an X above it has an
+x to the right of it but at the bottom
+there's no X it's on on the border right
+so because this region is connected to
+the Border we're not going to flip it
+right so basically any regions that are
+not connected to the Border are going to
+be flipped only the regions that are not
+connected to the border so how can we
+solve this problem should we run a DFS
+on you know the entire board and then
+try to figure out somehow which regions
+are not connected to the border and then
+flip them well definitely that is
+possible but depending on how you do it
+that's a complicated approach actually
+there are many ways to solve this
+problem I'm going to show you a slightly
+clever and easy way to solve this
+problem but I think you can actually
+learn a lot from the type of solution
+I'm going to show you it has to do with
+reversing the way you think about the
+problem what I and some people like to
+call reverse thinking so let's get into
+that solution right now so up above you
+can see the example that we're trying to
+solve this General problem we're trying
+to solve but before we even get into
+that let me just kind of ask you a
+simple question let's say I had a piece
+of paper like this one let's say I cut
+it like this right I have a small region
+over here called a this is the a portion
+of the paper and I have a other portion
+this is the B portion of the paper let's
+say I want to keep only this portion I
+only want to keep the a portion of the
+paper so how can I ask for the a portion
+of the paper well I can say only give me
+a right only the a portion of the paper
+that's the simple way to talk about it
+but a more complicated and kind of a
+useless way to talk about it in English
+at least would be would be to say give
+me everything in the paper except for B
+right give me this entire paper except
+for B right just cross B out just give
+me everything except for B why would you
+say that when you can just say just give
+me a right of course that's the simp way
+to say it but sometimes this reverse way
+of thinking can be helpful especially in
+programming I'm sure you guys already
+have kind of experienced that so how is
+this going to be helpful in this problem
+let me explain in the problem they told
+us to capture they told us to capture
+the surrounding regions only right only
+the surrounding regions in other words
+only this region that's surrounded
+another way the opposite way of saying
+that is capture everything except the
+UNS surrounded regions right I basically
+restated the first bullet point with a
+longer sentence right capture everything
+in this board except the UNS surrounded
+regions the regions that are not
+surrounded in other words capture the
+entire board except for this region
+because this region is not surrounded
+how do we know that this region is not
+surrounded is there an easy way to
+figure that out yes it's very easy
+because this region is connected to the
+Border any any region in the board
+connected to the border right there were
+some O's over here some O's over here
+here or down here we are not going to
+capture those so this is where things
+are going to get a little bit clever I
+wouldn't expect most people to be able
+to figure this part out especially
+beginners how are we going to actually
+implement this this second bullet point
+basically we're going to go we're going
+to scan through every border cell right
+everything on the outside we're going to
+look for any O's we found one o over
+here right so we found one region that's
+not surrounded right we know for sure
+this region is UNS surrounded because
+it's connected to the border now we're
+going to run a DFS on on this region
+because we don't want to capture it how
+are we going to do that well we're going
+to give it a temporary uh basically a
+temporary value we're we're going to
+change all the O's into T's so I'm going
+to change this o into a t right now this
+this o is not connected to anything
+right it could be it could have been
+possible maybe there's another o over
+here and it kind of forms this region
+that's connected to the border right and
+then we would change all of those into
+T's as well right but in this case it's
+just a region of size one so that's all
+we do now why are we changing it to a
+temporary variable because remember
+we're trying to capture everything
+except unsur regions so now we we marked
+this as a UNS surrounded region right so
+now what are we going to do we have this
+board we're going to just do a double
+nested Loop iterate through every single
+Row in this uh input grid and anytime we
+see an O value we're going to change it
+into an X because now we know for sure
+that anytime we see an O It's defin
+itely part of a surrounded region
+because any regions that were UNS
+surrounded we already changed them to a
+t so anytime we see an O we're going to
+change it to an X so what I'm going to
+do is we see we see you know this is an
+X leave it as it is X leave it we see an
+O down here change it to an X Change
+this to an X this is already an X Etc
+change this to an X and this is already
+an X when we get to this T we're going
+to ignore T's right we're only changing
+O's into X's right so that's the second
+phase of the algorithm first we marked
+T's now we're marking X's now the last
+thing we have to do take a look at our
+board and take a look at the desired
+board that we want to return what's the
+only difference basically the UNS
+surrounded regions we change them to T's
+but we still want them to be O's so
+basically again we're going to do a
+double scan we're a a a double four Loop
+scan through the entire grid right
+anytime we see a t we're going to change
+it into back into an O so basically this
+T over here would be changed you know
+back into an O and then we have the
+desired board that we want and we can
+accomplish this we're going to have to
+obviously iterate over the entire board
+like two or three times or something so
+that overall time complexity let's say
+is going to be n * m where these are the
+dimensions of the board but that is the
+entire time complexity so I hope that
+this solution makes sense to you so with
+that being said I think we're ready to
+dive into the code now okay so now let's
+write out the code and you can see that
+we don't have to actually return
+anything we just have to modify the
+board in place with these two
+dimensional problems the first thing I
+usually like to do is just get the
+dimensions of the board so let's get the
+number of rows and let's get the number
+of columns I think we're guaranteed that
+this board is always going to be
+non-empty and I'm going to break this
+algorithm up into three phases so the
+first phase is going to be to capture
+the unsur rounded regions remember all
+the regions that are uh connected to the
+Border we need to capture them and
+change them into T's so any o is going
+to be converted into a t for temporary
+or something you could do any kind of
+special character that you want the
+second phase is going to be to capture
+the surrounded regions right and we can
+do that with a double for Loop right
+we're basically going to be converting
+O's into X's when we do this right all
+the remaining O's are going to be
+changed into x's and the last phase of
+the algorithm is just going to be to uh
+uncapture those UNS surrounded regions
+so basically those t's are going to be
+converted back into O's so these are the
+three phases of the algorithm and by the
+way only the first phase is going to
+need DFS the second and third phases are
+going to be four Loops only let's
+actually write out that DFS because
+we're going to be needing it so let's
+write out a DFS for capture we're given
+some coordinates let's call it row and
+column we're only going to be converting
+O's into X's or O's into T's now the
+main thing is the base case so let's
+write it out basically if we go out of
+bound so if row is less than zero or
+column is less than zero row is equal to
+the number of rows which means it was
+too big or column is equal to the number
+of columns which means it also went out
+of bounds and the other case is remember
+we're only capturing O's so if the board
+at this position is not an O then we can
+also return so a board at row column is
+not equal to an O then we can also
+return so this has gotten to be a very
+long line let me shorten it up a little
+bit so that is the main base case and
+the uh rest of the function is pretty
+easy so if the base case did not execute
+then we're going to be changing the uh
+value at this uh position changing the O
+into a t so let's change it into a t and
+then we're basically just going to run
+capture in the four adjacent Direction
+so I'm just going to type that out you
+could do it with a for Loop if you
+wanted to but I'm lazy let's just copy
+paste this a couple times so this will
+be row minus one this will be column +
+one and the next will be column minus
+one so we're looking in all four
+adjacent directions and capturing only
+the O's right because that's our base
+case if we go out of bounds or if we get
+to something that's not an O we're not
+going to capture it this function is
+only going to be run on the border cell
+so let's do phase one of the algorithm
+let's do a double nested for Loop over
+the entire grid even though this is not
+actually necessary because technically
+we're only going to be looking at the
+border of the grid but I'm just coding
+it up this way because it's short it
+shortens up the code a little so we're
+going to be iterating over the entire
+board anytime we see a uh value that is
+an O right we want O's so if we get to
+an O and if this happens to be a border
+cell right so B basically we're looking
+for all the UNS surrounded regions which
+are connected to the border and have O's
+right because O's are regions so the way
+I'm going to figure out if this is
+connected to the border is basically if
+row is in this pair of values either the
+row is equal to zero or it's equal to
+the number of rows minus one this is a
+good way to do it in Python at least I
+think so because we're basically doing
+two comparisons in one we're checking if
+row is equal to zero or equal to this
+and we can also do it uh with another
+thing so we're we're checking if this is
+connected to the border so we're saying
+if this is true and uh row Is On The
+Border or uh the column is in the border
+so we can say column is either equal to
+zero or it's equal to columns minus one
+so if this is a border cell what are we
+going to do well we're going to capture
+this region right so we can call our
+helper function capture on this row and
+column easy as that so we're already
+done with phase one we've already
+captured all UNS surrounded regions
+converted them into T's and the next
+portion of the algorithm is actually
+going to be very trivial because we're
+not going to even need DFS we're just
+going to do a double nested for loop on
+the entire grid and convert all O's into
+X's right that's all we got to do this
+is capturing the surrounded region so if
+we ever see an O then we convert it into
+a x right we don't even need to run DFS
+on this because we don't even have to
+figure out which regions are Sur rounded
+all remaining O's are guaranteed to be
+surrounded regions last but not least we
+have to do phase three of the algorithm
+which is just converting the t's back
+into O's let me make some space so that
+we can fit this all on one screen
+basically that's going to be trivial as
+well I'm just going to copy the above
+for Loop that we did instead of checking
+if it's equal to an O we're converting
+T's into O's so if it's equal to T
+convert it back into an O believe it or
+not that is the entire algorithm I hope
+this was broken down and easy to
+understand let's run it to make sure
+that it works and as you can see on the
+left yes this solution does work and it
+is pretty dang efficient so I really
+hope that this was helpful if it was
+please like And subscribe it supports
+the channel a lot and hopefully I'll see

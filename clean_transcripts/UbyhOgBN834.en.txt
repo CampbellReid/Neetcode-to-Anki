@@ -1,0 +1,502 @@
+everyone welcome back and let's write
+some more neat code today so today let's
+solve the problem permutation in a
+string and there's actually two
+solutions to this problem one is the 26
+times n solution and there's another
+solution that's actually just big o of n
+now we know that a constant number here
+doesn't actually affect the overall time
+complexity but that being said i'm still
+going to focus on the slightly more
+optimal solution uh because it's a
+little bit more difficult but it's also
+interesting and it's a pattern that's
+actually used in other leak code
+problems as well so we're given two
+strings s1 and s2 and all we want to do
+is return true if the string s2 contains
+a permutation of s1 and we return false
+if that's not the case now you can get
+bogged down and really confused with the
+explanation of this problem like
+focusing a ton on permutations but i'm
+going to try to simplify this for you
+immediately without going down too many
+rabbit holes and let's actually take a
+look at this first example so we see
+that s1 is the target string that's what
+we're trying to look for we're looking
+for a permutation of this string
+somewhere inside of s2 can we find it
+now what does permutation mean well we
+could actually you know create a
+permutation of the string which would be
+really complex and annoying
+but we see that over here there actually
+is a substring of s2 and it's a
+permutation that matches s1 it's ba
+right the exact same characters just in
+a different order which is perfectly
+fine now by the way a b itself
+technically counts as a permutation of
+itself so this string is also allowed
+but since you kind of see what we're
+really just looking for is is there a
+substring of the exact same size so this
+is two characters so we have to look for
+a substring of two characters here right
+we can't just take three characters and
+say that that's the permutation but you
+know we're looking for a window same
+size as this and it has to contain the
+exact same characters as s1 just maybe
+in a different order now does that kind
+of sound familiar to you well it's the
+same thing as looking for an anagram
+right we're just looking for the exact
+same characters we don't care about what
+order they're in right so it's looking
+for an anagram so we can actually use a
+typical sliding window technique we're
+going to look at every window in s2
+that's the exact same size as s1 so in
+this case length 2. so we're going to
+look at the first two characters then
+the next two characters the next two etc
+etc until we find an exact match with s1
+now if we were actually comparing the
+exact characters that would be pretty
+annoying the time complexity in that
+case would let's say be n times m where
+n is the size of s2 m is the size of s1
+because we're looking at every single
+window but we can do it a little bit
+better we can reduce it to be 26 times n
+if we use a hash map because actually in
+this problem it's written all the way at
+the bottom of the description so it's
+not on screen but they tell us that all
+the characters in both of the strings
+are going to be limited to lowercase a
+through lowercase z so therefore the
+size of our hashmap is going to be at
+most size 26. there's only 26 characters
+so as we build that hash map we're
+actually going to have two hash maps
+we're going to have one hash map for s1
+which is going to stay the exact same
+we're also going to have a second hash
+map for s2 which is going to have the
+characters of the current window that
+we're at so every time we create a
+window right each time we shift our
+window to the right we're only just
+adding one character and maybe removing
+the character that was on the left and
+then once we have those two hash maps
+we're going to compare them if they are
+equal which is a 26 operation right
+there's only 26 characters and so that's
+where we get this time complexity from
+but there actually is a better way this
+solution is doable it's easy to code up
+and you can do so if you would like but
+i'm going to show you the slightly more
+optimal solution which is actually not
+even going to have this 26 it's just
+gonna be big o of n so let's look at the
+big o of n solution and it's actually
+similar to the previous solution we
+discussed we're actually going to still
+have two hash maps one for s1 so as you
+can see we counted the occurrences of
+each character we call it s1 count so we
+have one a we have one b and one c so we
+filled our hash map with the same values
+and rs2 hash map is empty because first
+we're going to set our window here and
+then we're going to continue to shift it
+by one each time but the difference here
+is we're not actually going to be
+comparing the two hash maps together we
+won't need to because we're going to
+keep track of one more variable we're
+going to call it matches
+we're basically going to have a little
+shortcut initially this is going to be
+set to zero i'll just create a box for
+it even though it's just going to be a
+single
+value but we might be updating it to
+other values but this matches variable
+is basically going to be a shortcut
+that's going to allow us to not have to
+compare the entire hash maps each time
+which we know in the worst case could be
+a 26 operation having to look through
+every single character of the hashmaps
+because this matches variable is
+actually gonna maintain the total number
+of equal characters in each of these
+hash maps and actually even though i
+didn't draw the entire
+map for s1 and s2 in this case because
+actually we know that there's a through
+z there's 26 characters and i didn't
+actually draw the entire thing but we
+are gonna
+you know fill in the values in the code
+because we know that the rest of the
+characters in s1 are gonna be of count
+zero right and matches is gonna tell us
+the exact number of matches of each
+character between the two hash maps so
+we want to know does
+the a count of s1 and of s2 match if it
+does match then that's a plus one if it
+doesn't match then that's not a plus one
+right and we want to know the number of
+matches for every single character and
+we want to know that initially right it
+could be 26 matches or it could be zero
+matches right it could be any value in
+between but once we have 26 matches that
+means that for some window in s2 and by
+looking at it we know that this is going
+to be the window we know that this
+window has 26 matches with this window
+because they both have a single a
+character a single b character a single
+c character and for the other remaining
+23 characters they have
+they both have zero of those characters
+so therefore they have 26 matches that's
+what we care about and we can do that
+with a single variable without having to
+look through the entire hashmap let me
+show you the algorithm to do that it's
+pretty straightforward actually so first
+thing we're going to do is actually just
+look at the first three characters of s2
+and then fill up our hash map so we have
+a single b we have a single a and we
+have a single x now you can see that
+this is what our hash maps actually look
+like we have looked at the first three
+characters and now what we're actually
+going to do for the only time we are
+actually going to iterate through both
+of these hash maps comparing each
+character we actually do have to do that
+at least one time but it's a single 26
+operation so and then after that we'll
+only have to just iterate through this
+string so the overall time complexity is
+going to be n plus 26 which we know is
+going to be equal to big o of n uh it's
+it's definitely better than if we were
+just doing 26 times n okay so we're
+gonna look at every character a they
+both have one a they both have one b
+s one has a single c
+but s two does not have any c's so
+therefore they have two matches a and b
+but c is not a match then we're going to
+look at all the other characters after c
+and we're actually going to see that yes
+there is a match
+right because they both have zero d's
+they both have zero e's they have zero
+f's etc etc but then we're going to get
+to x okay
+this has a single x but s1 does not have
+any x's that's not a match but they both
+have zero y's and zero z's so all in all
+they actually matched every single
+character except for c and except for x
+those were the only characters they
+didn't match so actually initially we
+have 24 matches next we're gonna look
+we're gonna take our window which was
+like this and we're gonna shift it to
+the right by one when we shift it we're
+obviously removing a character from the
+s2 window we're removing a b now as we
+make changes to the count we want to
+know does it affect the number of
+matches so here we have one right which
+was equal to what it was supposed to be
+in s1 as well but now we're now changing
+it to a zero so therefore it's not
+matching with what it previously was
+matching with therefore our matches
+total is actually going to be updated
+now to be 23 we're decrementing it by
+one okay but we also added a character a
+y does this affect our matches was this
+a character we were looking for well
+let's increment our i by one and we see
+that now it's one but what was the y
+value in s1's count it was equal to 0 so
+now we actually created another mismatch
+so actually the total number of matches
+is gonna be 22 now and now we're going
+to actually shift one more time so this
+a is no longer gonna be in our window
+now we're gonna have x y z in our window
+so we remove the a a count is now gonna
+be set to zero we created another
+mismatch so our matches count is now
+gonna be 21 but we added a z so
+our z count is one but the z count in s1
+is zero therefore we created another
+mismatch so now our total number of
+matches is actually going to be 20. now
+let's shift our window one more time
+let's chop off this x so x count is now
+going to be set to zero so let's update
+that x count is now set to zero which is
+good for us because s1's x count was
+also zero so therefore we can actually
+increment our number of matches now
+right so let's uh set matches now equal
+to 21. we also added a character we
+added this a character at the top so
+let's actually increment the number of
+a's we went from having zero a's to now
+having one a and that's what we were
+looking for right because one a is also
+found in s1 count so now we can
+increment our number of matches from 21
+to b22 we're getting closer to our goal
+and i'm gonna kind of fast forward the
+remaining two spots clearly we're gonna
+see that the y gets chopped off and then
+we're gonna be two we're gonna add the b
+character which is also what we wanted
+to do right we have one b and we have
+zero y's so that brings us to be 24
+matches and then we're gonna shift one
+more time uh to be at this last window
+we're gonna get rid of the z that we
+that we didn't really need so now our
+number of z's is zero that's good that's
+exactly what we want and we added a c
+character so now we have one c now we
+have the exact number of matches we were
+looking for that our matches count is
+going to be 26 whenever we get to 26
+matches that's our magic number we are
+going to go ahead and stop the algorithm
+and return true because all we're
+looking for is does there exist a single
+permutation of this in s2 or in other
+words does there exist an anagram of s1
+and there does we found it we return
+true immediately and we can stop the
+algorithm that's the big o of end time
+algorithm now let's actually code it up
+okay now let's write the code but
+there's just one little edge case we
+actually have to look for that i didn't
+talk about previously and that's if our
+s1 string is actually shorter or
+actually rather longer than our s2
+string
+which would make it impossible for us to
+find a permutation of s1 in s2 in that
+case we can just return false
+immediately but after that we can get
+into our standard algorithm even though
+i was talking about hashmaps we can
+actually implement these with arrays as
+well because we are getting fixed values
+uh lowercase a through lowercase z and
+we can convert those characters to be
+uh integers and we can use those
+integers as indices indexes of our two
+arrays so initially i'm just going to
+set these to be 26
+numbers and each of those numbers is
+just going to be a 0 for now uh we're
+going to go through every character in
+s1 and we're gonna go so suppose s1 is
+maybe three characters long at the same
+time as we're going through s1 we're
+also going to go through the first let's
+say three characters of s2 so we're
+going to initialize both of these hash
+maps at the same time so let's do that
+now so the way we're going to convert
+these characters so in s1 we're going to
+get the character at the ith indexed and
+we're going to use the ord function now
+depending on your language it might be a
+different function all we're doing is
+getting the ascii value of this
+character with our ord function and
+we're going to subtract from it the
+ascii value of lowercase
+lowercase a let's get this right and
+this will map to an index this will map
+to one of the 26 indexes and to this all
+we want to do is just add one to it and
+i'm just going to go ahead and copy and
+paste this line and do the exact same
+thing for s2 we're gonna in s2 count uh
+we're going to update the count of this
+character and just increment it by one
+so now before we actually get to our
+sliding window portion don't forget we
+actually have to initialize the number
+of matches we're initially going to set
+it to zero but let's compare
+each of these maps or arrays we know
+that there's going to be 26 spots in the
+array so we can actually just hard code
+that so now we're going to say
+to the number of matches we want to add
+one to it only if
+s1 count at index i is equal to s2 count
+at index i that's the only case where
+we'd want to increment this by 1 but if
+that's not the case then we are not
+going to increment it by one so we can
+just say else zero right so else
+incremented by zero which is the same as
+not incrementing it at all let's put
+parentheses here just to clean it up and
+now we can move on so now we're going to
+do the sliding window portion we're to
+initialize a left pointer to be at the
+beginning so at index uh
+0. so then we're going to have our right
+pointer which is actually going to
+iterate through every position in s2
+but we know we don't actually have to
+start at the first position because we
+already initialized our windows so we're
+actually going to start at the length of
+1 the length of s1 because this will
+start us at the next character that we
+left off at right and this and this
+range is actually non-inclusive so we
+stopped before we reached this index so
+now we're actually going to go to that
+index with our right pointer but
+remember what happens if matches is 26
+shouldn't we return immediately yeah we
+can put a return statement outside of
+this for loop but it'll be redundant so
+we can actually put it as the first
+statement inside of the for loop so
+basically if matches is equal to 26 then
+we are returning true if that ever
+happens we can immediately return true
+no questions asked but if it's not the
+case then we have to update the number
+of matches we know that we just visited
+a character at index r and this is the
+part where you actually might have hoped
+that you used a hash map rather than an
+array and that's fine if you want to
+rewrite the code that i'm about to write
+using hash maps i think it's perfectly
+fine but i feel like i usually overuse
+hashmap so this time i actually wanted
+to kind of show you guys the array
+solution even though it's a little bit
+more annoying because remember our
+character is not the key of our array we
+have to map that character to an index
+and we can do that just like this so s2
+at index r uh minus ord of lowercase a
+so we're also going to take the ord of
+this because that's how we're getting
+the index of our count arrays so now we
+can actually use this index but what are
+we going to use it for well we know that
+this character is the character that was
+just added to our uh window in our s2
+string so we're gonna increment the
+count of this by one but now that we
+just incremented the count of it by one
+it could be possible that now it exactly
+equals the count in s1 so if that's the
+case if now that we incremented this and
+now it finally equals exactly s1 count
+at the same index at the same character
+then
+we can increment our number of matches
+by one but it's possible that also by
+incrementing this instead of making it
+exactly equal we made it too
+large we made it exactly bigger than the
+target by one that's how you know we
+have got to actually decrement the
+number of matches so basically else if
+s1
+count at the same index plus 1 is now
+exactly equal to s2 count at the index
+and if this is the case that means they
+were equal they were exactly equal but
+we just incremented s2 count by one so
+now we made them unequal so then we
+actually have to decrement the number of
+matches by one okay and that's pretty
+much the entire algorithm but there's
+one last thing and i'm just going to go
+ahead and actually copy and paste this
+entire block
+because we're going to do the exact
+opposite thing we know that we're adding
+a character to the right of our window
+but at index l at index left we removed
+a character so we're just going to
+replace this with the opposite case
+right here i replace the r with an l and
+here instead of incrementing the count
+we're going to decrement the count
+because this is the character that we
+just removed from the left side of our
+window and here what we're going to say
+this is actually going to stay the same
+if somehow by decrementing this we made
+the counts exactly equal then we're
+going to increment our matches by 1. but
+if somehow by decrementing this value we
+changed it from being exactly equal to
+now being too small meaning it's now
+going to be equal to s count s1 count
+minus 1. if we changed it from being
+exactly equal to now being slightly too
+small that's when we are going to
+decrement the number of matches right so
+we really didn't have to make too many
+changes to this block of code but that's
+actually the entire algorithm except we
+know our right pointer is being
+incremented by one each time but we also
+want to make sure our left pointer is
+being incremented by one each time as
+well and after that we are done then
+finally we can return false well not
+quite because it's possible that after
+our loop eggs are exited right the last
+iteration of our loop we didn't check
+after that if our matches were equal to
+26 so instead we're actually going to
+return
+does matches equal 26 so it's going to
+return true if it does equal 26 it's
+going to return false if it doesn't
+equal 26 now let's run the code to make
+sure that it works and on the left you
+can see that it does and it's pretty
+efficient so i really hope that this was
+helpful if it was please like and
+subscribe it really supports the channel
+a lot consider checking out my patreon
+where you can further support the
+channel and hopefully i'll see you

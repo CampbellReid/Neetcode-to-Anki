@@ -1,0 +1,503 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+let's solve the problem multiply strings
+so we're given two non-negative integers
+num1 and num2 but these could be
+extremely large numbers and because of
+that these integers are going to be
+represented as strings as you can see
+down below and the good thing is that
+these integers are always going to be
+either positive or they could be zero
+and we want to just take these two
+numbers multiply them together get the
+product and then return that product as
+a string and we're not allowed to you
+know actually do this with integers
+right we can't just convert these two
+strings to integers we actually want to
+do this with strings themselves because
+you know there's no guaranteed that an
+integer this large could actually fit
+into a 32-bit or a 64-bit integer and
+they don't want us to use any kind of
+big integer library so there's going to
+be two parts to this problem the first
+part is going to be to remember how you
+actually multiply two numbers in the
+first place you probably learned it in
+elementary school but you may have
+forgotten so that's the first thing we
+need to figure out how to actually
+multiply two numbers and the next part
+is how can we actually take that idea
+and then translate it into code in a
+readable and you know somewhat concise
+way and that's going to be the second
+part that we have to figure out and just
+to go through an example real quick you
+can see 123
+456 you multiply those two together you
+get this value and we are returning it
+as a string so let's go back to
+elementary school how can we take two
+numbers like these and multiply them
+together in a formulaic way that we can
+translate into an algorithm well
+remember we usually first start with the
+ones place over here right and then we
+just take this value and then multiply
+it by three multiply it by two and
+multiply it by you know the more
+significant digit and then we add those
+three together you know we also do have
+a carry which is something we're gonna
+have to keep track of and you can kind
+of tell that you know if we take six
+multiply it by these three integers then
+we're gonna go to four we're gonna go to
+five multiply it by these three integers
+then we're gonna go to four multiply it
+by these three integers that's something
+that could probably be translated into a
+nested for loop right so we're kind of
+learning that as we go but let's just
+start with this so six times three
+that's going to be 18 right but normally
+you know we just take the first digit
+eight put it over here in this ones
+place then we take the one and carry it
+right so the one is going to go up here
+it's going to be added to whatever goes
+down here but in the code we're actually
+going to be putting that one here
+immediately
+because you know when we're when we're
+keeping track of a carry we could keep
+track of it over here like in a single
+variable but it's kind of just easier to
+just put it here because we know it's
+going to be added with whatever next
+value that we put over here so next
+we're going to look at 6 multiplied by 2
+that's going to be 12 right so we're
+going to take 12 add it with the carry
+right that's going to give us 13 in this
+position right so we have a 3 digit here
+and we have the 1 which is going to be
+the carry in the next position now
+notice how when we were multiplying
+these three together we put the digit in
+the first spot but when we multiply
+these two together we put the digit in
+the next spot and when you multiply
+these two together we're gonna put the
+digit over here so basically the way you
+know how we decide where we actually put
+the digit when we multiply two digits
+together is basically going to be the
+sum of the indices of these two so
+basically consider this is zero this is
+one this is two these are the indices uh
+if we're multiplying these two together
+we're gonna put it but we're gonna put
+the digit in the zero position if we
+multiply these two together we're gonna
+take zero plus one we're gonna put it in
+the one position over here now if we
+multiplied these two values together
+we'd say one plus one
+you know
+these two multiplied together we'd put
+the digit over here because this is the
+two spot i know that's kind of tricky to
+you know recognize immediately but i
+think it makes sense because you know
+when we're multiplying six by one we're
+not actually multiplying six by one
+we're multiplying six by a hundred right
+because this one's place is in the
+hundreds place so that's kind of the
+intuition behind that but yes now we
+take six multiply it by one we get a six
+right so this is where we would put the
+six we clearly have a carry over here so
+we're gonna actually put a seven over
+here so so far this is our result but we
+only went through this six digit next we
+want to go through this five digit and
+multiply it by these three values so we
+take 5 multiplied by 3 we get 15 right
+the 15 is going to go in this
+spot over here right but of course we
+have a carry one over here so what are
+we gonna do well we're gonna take these
+add them together and we're gonna take
+these add them together right so we're
+gonna get an 8 over here and we're going
+to get an 8 over here next we're going
+to take 5 and multiply it by 2 and the
+position that that's going to go in is
+going to be in this position right
+because
+you know that's just kind of the math of
+how these indexes add up so 5 times 2 is
+going to be 10 so we put a 10 here right
+0 plus 8 that's just going to stay 8 but
+that one carry is gonna go over here in
+this position notice how the result when
+you multiply two numbers the number of
+digits in the output could be greater
+than the number of digits in the input
+now what's the maximum number of digits
+the output could even be well if we took
+two numbers suppose 99 multiplied by 99
+right these are kind of the biggest
+integers we could have for two digits
+each how big would the output be well
+the output would be four digits i think
+it'd be something like something like
+this i'm not 100 sure on that but
+basically you can see that you know if
+we have two digits multiplied by two
+digits the max the output could be is
+the sum of the digits of each of these
+right so if we have an example like this
+one three digits multiplied by three
+digits we could have an output of up to
+six digits but it might it could be less
+than that right for example you know you
+take 10 multiplied by 10 we just get a
+three digit number 100 right even though
+two plus two is four digits this is the
+output happens to be three digits so
+it's it's basically going to be less
+than or equal to the sum of the number
+of digits but okay so where did we leave
+off we were gonna now multiply five by
+this one and then put it in this digit
+position because this is that index two
+this is at index one so
+the output is going to be at index three
+over here right these are kind of the
+indexes of the output so five times one
+is just going to be five so we take a
+five here add it with the one that's
+already there so we're going to get a 6
+in this position by the way notice how
+when we count the indices where you know
+this is 0 this is 1 this is 2. so
+basically the integers themselves we're
+going to be iterating through them in
+reverse order similarly we're going to
+be building our output in reverse order
+as well and then at the end we're gonna
+take this and reverse it okay so now we
+took five multiplied it by all three of
+these digits so we're done with five
+lastly we're going to take four and
+multiply it by all three of these so
+four times three is going to be 12 right
+we're going to put a 12 here you know we
+take these two add them together we're
+gonna get a zero in this spot right a
+zero and we had a six here we had a one
+here now we're gonna since we got a zero
+here we're going to have another one
+carry in this position so when we
+actually add these together we're now
+going to have an 8 in this spot so we
+took 4 multiplied it by 3 now take 4
+multiply it by 2 which is going to be 8
+and we're going to put that a in this
+position because that's how the math for
+these indexes adds up so 8 plus 8 is
+going to give us a 6 so we can put a 6
+here but of course we're going to have a
+carry right 8 plus 8 is 16 so this is
+what we have we had to put that carry
+over here so we took 4 multiplied it by
+2 lastly we're going to take 4 multiply
+it by 1 and then put it in this spot so
+4 plus 1 is or 4 times 1 is 4 so we take
+a four add it here add it with one we
+get a result of five and then we're done
+right because we took four multiplied it
+by this multiplied it by this and
+multiplied it by this we we finished our
+nested for loop and this is the result
+that we got
+and as you can double check that matches
+exactly with the output that they
+expected so basically how i ran through
+it is similar to exactly how we're going
+to code this up the only difference is
+we're going to pre-create we're going to
+pre-allocate the result array in this
+case we have three digits by three
+digits so we're gonna have an output
+array and we're not gonna keep track of
+it in terms of strings even though the
+input is given to us in strings we're
+gonna build the output as an array just
+because it's a little bit easier i think
+you could do it with a string but then
+we'd have to do a lot of conversions you
+know converting a character to an
+integer and vice versa doing it as an
+array is a little bit easier and then at
+the end we can take the array and then
+convert it back into a string you know
+pretty easily so that's kind of what
+we're going to do and like i mentioned
+we're going to start at the right
+position of each string at the right you
+know in reverse order we're going to
+iterate through the input strings in
+reverse order and when we build the
+output you know this is kind of the
+order of the value we're gonna build it
+opposite we're gonna put the eight here
+because this is index zero we're gonna
+put another eight here zero six five
+right so as you can see this is
+basically built in reverse order to this
+so we're going to do that but then at
+the end we can take this array reverse
+it and then convert into a string which
+is going to look something like this and
+then we can return the string in the
+format that they actually wanted and the
+last thing is when we're when we're
+taking two digits and multiplying them
+together consider if we had the largest
+digits consider if these digits were
+actually nine and nine right we're only
+multiplying one digit by one digit so
+the max that this could possibly be is a
+two digit value in this case nine by
+nine is going to be 81. so when we take
+when we we're always going to want the
+ones place right to actually put it in
+this spot right so when we take a value
+like 81 we can mod it by 10 to get the
+ones place which will give us 1 and we
+can divide it by 10 to get the carry
+right so if we divide this by 10 we'll
+get 8 because it always rounds down in
+most programming languages right so
+that's how we're going to do the math on
+that we're going to put the 1 here then
+we're going to take the carry put it in
+the next spot right add it to the next
+spot and in terms of time complexity the
+since we're going to be doing a nested
+loop it's basically going to be let's
+say n times m where n is the number of
+digits in the first value and m is the
+number of digits in the second value
+that's overall going to be the time
+complexity i think the memory complexity
+is going to be something like n plus m
+because we're going to be using an
+additional array just to have all of the
+output digits inside of it then convert
+it to a string at the end with that
+being said we can go ahead and dive into
+the code so now let's finally write the
+code and the first thing i want to do
+before actually dive into the actual
+algorithm is basically uh if either of
+these digits or these numbers happens to
+be zero then we can just return zero
+itself right but then we don't actually
+have to execute our code so one way in
+python i can check that is if this is in
+the array with two values num one or
+num2 basically i'm checking if either of
+these values happens to be zero in which
+case we can return zero right any value
+multiplied by zero equals zero the other
+thing is allocating that array right so
+i'm going to allocate an array of all
+zeros multiplied uh or basically the
+length of this is just going to be the
+length of num1 plus the length of num2
+and as i mentioned we're going to be
+iterating through both numbers in
+reverse order so before i actually
+iterate through them let me just reverse
+each of them and this is basically how
+you reverse in python i'm sure you can
+do it in your own language of choice and
+we're going to iterate through both of
+these keeping track of the indices right
+because we know that the index is going
+to be useful for some of the math that
+we're going to have to do so for i1 in
+in
+range
+of the length of num1 so i1 is going to
+be the pointer for num1 and i2 is going
+to be the pointer for num2 now we want
+the digit right so we're going to take
+the numbers or the digits from each
+number and then multiply them together
+we know the digit itself though could be
+a two digit value so let's keep that in
+mind so the digit from num1 multiplied
+by the digit from num2 and so where
+exactly are we gonna store this digit
+well you might remember i mentioned in
+the drawing explanation we're going to
+take the indices i1 add it with i2 which
+is going to tell us what position to put
+this in the output result so we can then
+store this digit there but remember we
+have to mod this digit by 10 before we
+actually store it here and we might not
+just be storing it there might have
+already been a carry in this position so
+we're going to add whatever this one's
+place is to whatever is you know this
+target position so that's where we're
+gonna add the ones place digit now we
+might have a carry the carry might be
+zero or it might not be zero either way
+we're going to put it in the i
+you know the position plus one right so
+just the next position over is where
+we're going to put the carry value so we
+can add the carry value to this position
+we can calculate the carry value by
+taking digit dividing it by 10. and the
+last thing is i didn't mention but
+suppose we were given two values 10
+times 10 in this case we would have our
+output end up being something like zero
+a hundred the reason we have a leading
+zero is basically because you know when
+we allocated the output array we took
+the digits
+two digits here two digits here so we
+would have a four digit result so we
+basically want to get rid of any leading
+zeros which is something we can do
+pretty easily so before we try to get
+rid of the leading zeros let me actually
+reverse this result so result is going
+to be set to itself except reversed and
+the beginning pointer is going to be set
+at the beginning of this result and
+we're going to keep incrementing
+beginning while it happens to be zero so
+while beginning is less than the length
+of the result and
+the value in the beginning position
+happens to be equal to zero basically
+while we have leading zeros we're going
+to increment our beginning pointer until
+the point that we don't have any leading
+zeros anymore now we do have an array of
+integers not an array of strings so in
+python at least there's a way that we
+can convert this
+we can use a map function and basically
+convert every single a value in this
+result from the beginning pointer all
+since we calculated the beginning point
+we're just going to be you know we're
+basically removing the leading zeros by
+doing this uh operation starting
+basically taking the sub array starting
+at the beginning pointer and we're
+converting each integer to a string at
+least that's how we're doing this in
+python i'm sure you could write out the
+two lines of code that it would take in
+other languages so once we convert the
+array to an array of strings then all we
+have to do is just join the strings
+together and python you can do it
+something like this just join it with an
+empty string and one thing i forgot is
+first of all i named this num i just
+changed it to num2 and since these are
+actually you know characters we have to
+convert them to integers before we can
+multiply them that's something i usually
+forget i don't know if you guys forget
+that as well but let me actually convert
+them to integers first and actually one
+other thing that i forgot and this is
+actually a good example what if we had a
+let's say we had a two in the ones place
+and then two this two we're adding a
+digit of we had an eight and we're
+adding a digit of two right so you know
+that's kind of what i'm doing with this
+line of code in that case we would have
+a two digit value here right a ten so
+we'd have to take this whatever stored
+here and then mod that or rather divide
+that by ten to see if we have a carry
+resulting from two ones place digits
+that's something we were handling in the
+drawing picture but i forgot about that
+when we were actually writing out the
+code so the way we can remedy that is
+basically when we're going here uh we're
+gonna take just the digit itself and add
+it to this position right the digit
+could be a one digit value like two or
+it could be a two digit value like 12
+right either way we're adding them
+together and then it could be possible
+we have a two digit value stored here
+right so one thing we'd want to do if we
+did have a two two digit value and
+stored it here we would want to take it
+and mod it by 10 right so basically set
+this equal to itself but modded by 10 we
+can do that pretty easily right right so
+we're just taking it modding it by 10.
+if it just happened to be a single digit
+value like 2 then it would remain the
+same if it was a 2 digit value like 12
+then we'd get the ones place and put it
+here but notice how we're doing this
+after
+we're doing this line because this line
+of code actually is going to be similar
+because before we do that we have to
+take the carry that could be stored here
+right like i said it could be a two
+digit value like it could be something
+like a 12 in which case
+we'd want to take this value divide it
+by 10 and then add it to the next
+position over right so we're taking the
+carry adding it to the next position we
+can get the carry by taking this two
+digit value dividing it by 10 and then
+adding it to the next position i know
+this might have made things a little bit
+more confusing so sorry about that but
+you know if you kind of do go through
+these three lines of code run it on an
+example on your own you'll see that it's
+pretty much exactly what i was doing in
+the drawing explanation so as you can
+see this code does work so this is the
+entire code i hope that this was helpful
+it's definitely not super easy to get
+here but i do think being able to
+understand you know how multiplication
+works is a very good first step in being
+able to tackle this problem i think
+using an array also makes things a lot
+easier so i hope this was helpful if it
+was please like and subscribe it
+supports the channel a lot and i'll
+hopefully see you pretty soon thanks for
+watching

@@ -1,0 +1,726 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+let's solve
+find median from a data stream so this
+is another
+hard problem but it's not super
+difficult if you know the data structure
+behind it
+so they basically tell us we know the
+median is defined as the middle value
+in a sorted integer list if the list is
+even there is no middle value so you
+take the average of the two middle
+values right
+so with this sorted array the middle
+value is three so the median is three
+with this there is no middle value so
+you take the two middle values
+add them together divide by two and then
+you get a median of 2.5
+and so we're actually designing a data
+structure that's going to have two
+operations
+one operation is going to be adding a
+number to our data stream so we had
+we actually have to store the list of
+numbers and that list of numbers is not
+constant it's going to be changing every
+time
+add number is called and then from that
+list of numbers that we're going to be
+maintaining ourselves
+we are going to need to constantly be
+finding the median
+of that list so every time this function
+find
+median is called we have to return what
+the median is
+from the elements so far so this is just
+an example
+if we add num1 then our list is going to
+have one in it
+if we add another number two then our
+list is going to have two numbers
+then if we want to find the median we
+will take the average of these two and
+it's going to be
+1.5 after that we'll add another number
+three
+and then we'll find the median again in
+this case the median is different
+because our list got updated the middle
+value is now
+two so what's the most obvious way to
+solve this problem well i
+basically just hinted at it right so
+where
+the way the obvious way to solve this is
+insert elements
+in order so let's say these are the
+function calls that are gonna be made so
+we're gonna add
+four numbers and then we're gonna try to
+get the median so we're gonna maintain
+a list or an array right and
+every time we get a function call add
+three
+we're gonna insert in order just like it
+says up here
+and basically if our array is always
+sorted
+then it's going to be easy to identify
+the middle number right which is going
+to be the median
+right so the median is always going to
+be in the middle position and if our
+array is sorted we'll always know where
+that
+is so the first one we have is add three
+so just add it to the first spot
+next we want to add two so how do we do
+that in order well
+we have to traverse our array so far so
+we get
+we see that there's a three over here
+right so then we gotta replace that
+three we shift the three to the next
+position and then we put a
+two in the position that the three was
+initially at
+right so now our array is in sorted
+order we had to
+uh shift some elements and we had to
+search for the spot that we put the two
+in right so you can tell that every time
+we add a number
+it's going to be an o of n operation
+where
+n is the number of elements we have
+added so far
+so we added two next let's add one
+well we're gonna traverse the array
+right we're gonna see okay the first
+element is two we know that
+one is less than two so really what
+we're gonna do is
+cross out the two cross out the three
+right shift the two over here
+shift the three over here and then put a
+one here but
+i'll just to keep the picture simple i'm
+just gonna put the one over here but we
+know that
+in the worst case every time we insert
+an element it's gonna be o of
+n lastly we're gonna take the four and
+add the four so we're gonna see
+one nope four is bigger than that two
+nope four is bigger than that three
+nope four is bigger than that so we add
+the four at the end
+so now we finally have a get median call
+well good thing for us since our
+array is in sorted order we know getting
+the median is super easy in this case we
+have an
+even length list right we have four
+elements so we are going to take
+the two middle elements two and three
+add them together
+divide by two we're going to get 2.5 so
+we know that
+the get median operation is always going
+to be o of 1
+but adding a number is always going to
+be o of n
+so how can we speed this o of n
+operation up and let me just tell you
+basically what we're going to do
+is instead of having just a single list
+of
+elements we're gonna break this up into
+two and
+the we're gonna have basically two
+subsets right
+and one is always gonna be less so this
+has one
+and two and this has three and four
+and all elements from the left are
+always going to be
+less than or equal to all elements in
+the right
+so this will also make it easy for us to
+get the median
+but i'm not just gonna have arrays i'm
+going to use a
+heap or a priority queue so we're going
+to use a heap data structure
+so i'm going to have two heaps in this
+case a small heap and a large heap
+small heap all elements in the small
+heap are always going to be less than or
+equal to
+all elements in the large heap also
+the size of these heaps is always going
+to be approximately equal so
+if there were two elements in this heap
+then there's there has to be two
+elements in this heap what if we had an
+odd number of elements so what if there
+were three elements in this heap
+that's allowed because we know that we
+can't actually
+have these be equal if there's a two and
+a three right
+or in the opposite case there could be
+two elements here and there could
+actually be
+three elements here that's also allowed
+because we know that's approximately
+equal
+if the difference though is ever greater
+than one so if there were
+four here and two here we know then we
+have to balance them right make this
+equal
+three and make this equal three right we
+always have to keep it as balanced as
+possible
+and if you're not familiar with what
+exactly a heap is
+it's basically like a list it's pretty
+similar to a list it's implemented
+using arrays or lists the only
+difference is though
+adding a number we don't add at the
+beginning or at the end we just
+add elements to the heap and adding an
+element to this
+heap is always going to be a log n
+operation
+and removing an element is also going to
+be
+a log n operation right so add
+or remove is log n and there happen to
+be
+two kinds of heaps a max heap or
+a min heap and the thing about these
+is so for a max heap finding the max
+in this list so find max in a max heap
+is always going to be
+o of one so that's the advantage
+we know that finding the max in a
+regular list
+is o of n because you have to search the
+entire list
+but with a heap we can find the max in
+constant time
+similarly with a min heap if you want to
+find the min
+that's also an o of one operation
+so with that being said the small heap
+is going to be implemented as a
+max heap and the reason we have a max
+heap and not a min heap it's kind of
+counterintuitive right if this is the
+small heap why are we using a
+max heap and that for this one we're
+actually going to have a
+min heap instead of a max heap
+and the reason is what if we had
+elements to
+these heaps such as right what if we had
+these elements in each of the heaps
+right we see that all elements here are
+less than or equal to the elements in
+the
+right heap but if you actually want to
+find the median
+of these we know we need to get the max
+value in the small heap right two and we
+need to get the
+min value in the large heap three
+add them together and then divide by two
+right that's how we're going to get the
+median so that's why we need the min
+heap right
+we always want the minimum value from
+our large heap and we always want the
+max value from our small heap and of
+course
+finding the median like this way right
+getting the
+value getting the value from each of the
+heaps it only works
+if the size of the heaps is
+approximately the same right if
+in this case they're equal but what if
+we had a
+third element in this heap what if we
+had a three well they're approximately
+equal right but you can see the length
+of this one
+is greater right but the difference in
+length is one so they're approximately
+equal
+in that case how are we going to find
+the median well since we know that the
+length of this heap is bigger than the
+length of this heap
+we know that we have an odd number of
+elements in that case right if one heap
+is bigger than the other there's
+always going to be an odd number and in
+that case we're going to want to get the
+value
+from this heap so if the length of this
+heap
+is bigger we're going to want to get the
+max from
+here we're going to want to get the max
+value from this heap and that's going to
+be
+3 and we know in this case 3 happens to
+be the median right if you
+because look at them these values are in
+sorted order we get rid of these two we
+get rid of these through
+two the middle value is three and i'm
+not going to walk you through this case
+but
+let's just say imagine we had a two over
+here the exact same thing would happen
+right we would get the min value from
+here we get the two
+and notice that look the max value from
+here and the min value from here are
+equal right that's why i say
+every value in here has to be less than
+or equal it's possible that they are
+equal
+okay so now let me just go through a
+quick walkthrough of this code again
+so what we're gonna do add the first
+element which is a three
+which heap are we gonna add it to in
+this case it doesn't really matter so
+what i'm gonna do is just by default add
+it to the small heap
+so let's add three to the small heap and
+we know that that was roughly a log
+n operation right next let's add
+two so by default i'm always gonna take
+whatever element we add and i'm gonna
+take it and add it to the small heap now
+i added
+two to the small heap but wait a minute
+now the heaps are not approximately
+equal
+this has a length of two this has a
+length of zero it was okay when this had
+a length of one because that's still
+approximately equal
+but 2 is that's too big of a difference
+so now what we're going to do is find
+the max
+value in this heap and add it to
+this heap the large heap which is always
+going to have elements greater than or
+equal to the small heap
+so we need to get the max value from
+this heap and since this is a max heap
+actually finding the maximum is an o of
+one
+operation now the downside is we have to
+remove
+that value which is a log n operation
+and we're going to take that element
+that we removed and add it
+to the min heap and that's also going to
+be a
+log n operation we know adding and
+removing
+from heaps is always login finding the
+maximum in a max heap
+is o of one finding the minimum in a min
+heap is also o of one
+okay so now we did add three add two now
+let's add
+one i'm gonna change this add one to a
+add
+seven just to illustrate one last thing
+about this
+algorithm that we're gonna do and let me
+just cross this out we're not doing
+insert order anymore we're doing the
+heap solution
+so we're gonna add seven right by
+default
+i know that i'm adding it to the small
+heap so what am i gonna do i'm gonna
+take
+seven and add it to the small heap now
+the size of this heap is two the size of
+this heap is one so they are
+approximately equal the last condition
+though
+is every element in the small heap less
+than or equal
+to every element in the min heap now how
+are we going to check that well
+we can find the minimum of the min heap
+in o of one time
+right it happens to be three we can find
+the max of the small heap in o of one
+time
+it happens to be seven is that
+is seven less than or equal to three no
+it's not so
+what are we gonna do well we're actually
+gonna do the exact same
+thing we did before so i'm gonna find
+the max
+from the small heap in o of one time i'm
+gonna remove that max so
+seven is removed to remove we know it
+takes login time
+and then i'm going to add it to the min
+heap
+which also takes log n time so now
+i'm adding seven and the lengths are
+approximately equal still right this has
+one element this has
+two elements and now if we get the
+maximum from here
+two and we get the min from here three
+we see that the condition actually now
+is true every element in the left
+is less than or equal to every element
+in the right
+now we added seven now let's do add four
+so by default i'm always going to add it
+to the small heap
+so i'm adding four to the small heap the
+small heap has two
+the large g has two also but we know
+that
+this condition doesn't hold right the
+less than or equal condition if we get
+the max
+from here that's going to be four if we
+get the min from here that's going to be
+three
+this is just not true right four is not
+less than or equal to three
+so we have to pop this and we have to
+move it
+to this heap so now everything is good
+right it's
+every value is less than or equal write
+this as two this has three that's less
+than or equal gray
+only problem now is the lengths are not
+approximately equal
+this has one element this has three
+elements
+so since the length of this one is
+greater what are we gonna do we're gonna
+get we're gonna find the min
+o of one time remove that min and
+then move it to this heap so we know
+that the min
+is three we can do that in o of one time
+but removing it is gonna be
+log n and adding it to the left heap is
+also gonna be log n
+so now the lengths are approximately
+equal this has two elements
+this has two elements and the other
+condition find the max from here find
+the min here
+we'll end up with three and four and
+less than or equal is definitely true
+so it looks like a lot of work and it
+definitely is
+it's a lot harder than just having one
+array right
+it's definitely more code but it's also
+a lot more efficient now
+the only thing we have to do is get the
+median and
+the time complexity for get median is
+actually still
+o of one which is exactly what we wanted
+let me show you why
+well we need in this case we have an
+even number of elements right
+two plus two is even so we wanna find
+the maximum from our left heap which is
+three right we know we can do that in
+o of one time because this is a max heap
+we want to find the minimum value from
+our right heap and we know we can do
+that in o of one time because this is a
+min heap and we know that four happens
+to be the min value
+so we get these two values three plus
+four
+add them together divide by two and
+that's going to be our median so we can
+still
+find the median in o of one time which
+is great
+now with all that being said let me
+finally show you the code
+and show you that it's not as long as
+you might expect okay so now let's look
+at the code
+so here's a couple comments we're gonna
+have two heaps large and small
+large is gonna be a min heap mac or
+small is gonna be a max heap
+and the heaps should be roughly equal to
+roughly
+the same size so in python you can
+actually have a heap
+be just a list and i'll show you the
+other things we'll need to do later so
+actually in python since these are
+members
+of this object large and small we need
+to
+have a self as the prefix and so
+now we have two functions to implement
+find median and add num let's start with
+add num
+so just like i showed you what i'm going
+to do is
+i'm always going to take num and add it
+to the small heap so
+heap q dot heap push this is how you do
+it in python
+other languages might be different
+obviously so to the small heap we're
+going to push num
+now python is kind of annoying in that
+it only
+implements min heaps we know small is
+actually a
+max heap so to get around that what i'm
+going to
+have to do is take every number and
+actually multiply it by negative one
+this allows us to actually implement a
+max heap which
+isn't implemented by default in python
+for some reason
+but what i'm doing here is taking num
+and adding it to
+the small heap the max heap right but
+now we want to make sure
+every element in small
+is less is less than or equal to
+every element in large right so every
+element in the small heap has to be less
+than or equal to every element in the
+large heap so i'm going to make sure
+that that's true so
+if if small and large are non-null
+and so from from small from our
+small heap our max heap what i'm going
+to do is get the max value from it so
+how can i do that i can just take the
+index of 0 because it's
+implemented as a list heaps are
+implemented as lists
+so if you get the 0th index you're
+getting the max value
+we know that every time we add a value
+to the small heap we're multiplying it
+by negative one
+so to reverse that i'm going to take
+this value
+and multiply it by negative one and get
+the true value that we actually added to
+the heap
+and so i wanna know is this value
+somehow
+greater than the smallest value in our
+large heap how can i get the smallest
+value in our large heap i can do the
+exact same thing
+index of zero but i didn't have to
+multiply this by negative one
+because this is a min heap and that's
+what python does by default
+so if this condition is true let me make
+it look a little nicer so
+so that mainly this condition is true
+meaning that some value
+in our our small heap is greater than
+our large heap then we have to
+pop from our small heap and then add to
+our large heap
+so i'm going to heap q dot
+heap pop so i'm going to pop from our
+small heap i'm going to get the largest
+value from our small heap stored in val
+and then i'm going to i'm going to push
+that value
+to our large heap so to our large heap
+i'm going to push that value
+basically exactly what i did in the
+picture but maybe the
+code is a little confusing oh and
+actually since we know
+every value pushed to the small heap is
+being multiplied by negative one
+to reverse that we have to also multiply
+it by negative one when we pop from it
+because look when we pushed to it we
+multiplied that number by negative one
+but to our large heap we can actually
+give the correct values we don't have to
+multiply by negative one
+that is actually probably one of the
+more confusing parts about this
+which is annoying because there's no way
+to really get around it in python
+so now we check this condition the only
+other condition that we have to check
+is what if the size is uneven
+and so by uneven size we actually mean a
+difference
+greater than one so if the length of
+small
+is greater than the length of large plus
+one that means the difference is two or
+greater
+in that case in that case what are we
+going to do this is too big so what
+we're going to do is
+pop from the small and then up and then
+push to the large which is actually
+exactly what we did
+up here so i'm just going to copy and
+paste that
+and the other case is if the length
+of the large heap is greater than the
+length of the small heap
+plus one meaning the difference is two
+or greater
+and in that case i'm basically going to
+do the opposite of what we just did up
+here so let me copy and paste that so
+we don't need this negative one because
+we are going to be popping from
+the large heap which has the correct
+values not the negative one multiplied
+values
+and with that value though i'm going to
+take that value and add it to the
+small heap and actually we are going to
+need to take this value and then
+multiply it by negative 1
+because we have to do that whenever we
+add to this
+small heap so now we are making sure we
+take every element add it to one of the
+heaps and if there happens to be
+a size difference we're handling that if
+there happens to be
+an order difference right like the
+values are in the wrong order we're
+handling that as well
+and remember all of these heap
+operations are
+log n operations log n
+and now the last thing we have to handle
+is finding the median
+so one case is that there's an odd
+length how do we know if there's an odd
+length well
+if the length of small was ever
+greater than the length of large we know
+that then we have an
+odd length right because maybe one of
+them has three elements the other has
+two elements
+we know with this function we're always
+making sure that they're
+about roughly equal so if this evaluated
+true that means we have an odd number of
+elements
+and small happens to have an extra
+element so what we can do
+is return the largest value in small
+which is stored in index 0 of small
+if the opposite is true if the length of
+large
+is somehow greater than the length of
+small
+we know that the opposite happens to be
+true so we can return
+the smallest value in large now if
+neither of these
+evaluates that means we have an even
+number of elements so
+each each of these heaps has the exact
+same size so what we can do in that case
+is return the largest value
+in the small heap plus the smallest
+value in the large heap add them
+together
+and then divide by two and then return
+the result of that
+so here is the final code it's 34 lines
+but you can see we have some comments
+and some
+you know boilerplate type uh code
+but the code that itself that we had to
+write was relatively short right because
+we did this with a heap
+and we did it pretty efficiently let me
+just run it to prove that it works
+okay uh just one time i forgot to
+say that this small is a member object
+so self.small
+and i actually forgot to do that in a
+couple places so let me just fix that so
+self.small self.large self.small
+self.large self.small self.large
+and a couple more places okay so we
+corrected
+the self errors one last thing i forgot
+is remember
+small as negative we multiplied the
+numbers by negative so when we're
+getting the number and actually trying
+to calculate the median we have to take
+that number and multiply it by negative
+one
+before we add it to this number and then
+divide by two
+and let me not forget to do the exact
+same calculation when we're returning
+the value here right so i somehow had
+too many bugs in here but okay so now
+finally
+this should be the final code the big
+thing in python at least is to remember
+these negative ones if you're doing this
+in c
+plus plus or java i'm pretty sure you
+will not have to worry about that
+this should be the final code finally
+and you can see
+yes it is pretty efficient and in python
+at least it's not
+a lot of code i think even in java and c
+plus it shouldn't be that much code
+either so i hope this was helpful
+if you enjoyed please like and subscribe
+it supports the channel
+a lot and i'll hopefully see you pretty
+soon

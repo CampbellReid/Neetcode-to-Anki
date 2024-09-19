@@ -1,0 +1,428 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+we're going to be solving a binary
+question
+counting bits and this is one of the
+binary questions from the blind 75 list
+that we've been tracking in the
+spreadsheet so we will finally be adding
+a
+video solution to this binary problem
+i'm pretty sure it used to be a medium
+problem which is why it's highlighted
+yellow but i think it got changed to an
+easy problem
+so the statement is pretty simple we're
+given an integer n and we want to return
+an answer array of length n plus one
+basically a value for every integer in
+the range from zero
+all the way up until n so if n happened
+to be
+zero then we would just return a single
+integer if
+zero happened to be two then we would
+return three integers for
+zero one and two and basically for every
+value
+in this range zero to n so if n was two
+we would have three values in that range
+zero one two for each of these values we
+want to know what
+is the number of ones in the binary
+representation
+of this particular integer now what's
+the binary representation of zero it's
+of course just
+zero right you could add multiple zeros
+but it's
+still going to be zero what's the binary
+representation of one
+it's going to be just one right you
+could have some leading zeros we could
+have as many as we want
+but at the end it's just going to end
+with a single one so there's only
+one occurrence of the integer one in the
+binary representation of 0.
+so so far our output is going to look
+something like 0
+1 and then now we just need the number
+of ones in the binary representation of
+2.
+the binary representation of 2 is going
+to look like this 1
+0. you could have some leading zeros but
+this is the main part that we're looking
+at so
+it just has a single one so then the
+output is going to be
+one for that so the array that we would
+return is going to look something like
+this
+zero one one now the brute force way to
+solve this problem
+is going to be n log n and that solution
+is going to look something like this
+let's say we had an arbitrary
+value such as 2 or maybe even 3 right we
+know the
+binary representation of 3 is going to
+look like 1
+1 right so how are we going to count the
+number of ones
+in the binary representation of three
+well we first let's get the ones place
+right is this gonna
+is this gonna be a one or a zero how can
+we get that well we can take three
+mod it by two which is gonna give us one
+so we have at least
+one one here right so we already looked
+at this position so what we do is
+basically cross it out and then we just
+want to look at the remaining
+portions now how can we actually do this
+uh like what kind of operation can we do
+basically if you take
+three and divide it by 2 integer
+division here
+and most programming languages will do
+this basically by integer division
+what that's going to do to this integer
+is it's basically going to take that
+ones place and remove it
+take the remaining bits and then shift
+it to the right so it basically does
+exactly what you would want to do
+and of course what do we get when we
+take 3 and divide it by 2
+integer division is going to give us a 1
+so we're basically going to get this
+and when you look at that yes this is
+the binary representation of 1
+right so now we're gonna take this and
+mod it by two as well we're taking one
+modding it by two that's also gonna be a
+one
+so so far we've counted two different
+ones for this integer
+and again we're gonna take this uh
+this one's place now and chop it off and
+now we're left with a single zero so if
+you take one
+divided by two yes you get zero once we
+get to zero that's how you know when
+we're stopping
+right there's obviously in zero there's
+no more ones
+in zero so basically we counted two
+different ones
+so that's how we would do it for every
+particular integer the example i showed
+right now is three
+and to get this the time complexity is
+log
+n because for any integer n how many
+times can you divide it by two well of
+course
+that's just log base two n now we don't
+really worry too much about the base
+usually but yes it's gonna be log n
+log base two n that's how many times we
+could divide any particular integer
+n by two and of course we know we're
+doing this for a bunch of integers in
+the range
+all the way from 0 to n so we're doing
+this n times
+doing a log n operation n times
+is going to be time complexity and log n
+now there's some repeated work
+that we can eliminate that you can
+easily recognize when you actually draw
+out the bit mappings
+the the binary representations of a
+bunch of integers and with that repeated
+work we can actually get a working o of
+n
+solution let me show you that right now
+now i just drew out the binary
+representations from zero all the way up
+to eight so we know that of course
+zero has zero ones in the binary
+representation
+when you get to one we have one
+occurrence of one in its binary
+representation for two we have
+one for three by looking at this we can
+see we have two different ones
+and now when you get to four you really
+start to notice how we are doing this
+repeated work
+notice how for four all the way to seven
+we have a
+one in this place right in the most
+significant place
+we have a one and notice how the
+remaining portion
+of this and then this and then
+this and this these four
+are just repeats of the previous four
+that we calculated right because
+we're you know we're counting zero zero
+adding a one
+right to four when you add a one you
+just change it to this from four when we
+add a two
+we get this which is basically the
+binary representation of two itself
+right and then you get a one zero and
+then you get a one
+one which is matching over here so now
+looking at it this is the binary
+representation of
+four right there's just a single one in
+this position
+so if we wanted to take zero and add
+four to it we would just
+to take this position and add a one here
+right that will take us
+four positions ahead and if you had a
+one
+and you and you changed this bit to a
+one we're adding four to it so you can
+take
+a one and change it to a five by taking
+that bit
+so similarly when we get to four
+we know that yes we're gonna have one
+extra one
+in this position right because we just
+got this one this one represents a four
+this is the most significant bit so far
+but for the remaining ones all we have
+to do
+is take this offset it by four
+and get here and count how many ones
+were over here so when we're calculating
+how many ones
+for four we're just saying it's one plus
+the number of bits at position
+zero how many bits how many ones were in
+position zero that's our dp so you can
+see this is a dynamic programming
+problem because we're using the previous
+results that we calculated
+to compute the new results in other
+words this is going to be 1
+plus dp of n minus
+4 and actually when you look at this 5
+we're also offsetting it by 4 to get
+these two right because that's what's
+going to match up with
+this which is going to tell us how many
+ones are going to go here right so and
+clearly
+we see that that's a 1. so here we're
+going to compute
+1 plus again dp of n
+minus 4. and similarly for here we would
+say
+one which is coming from here plus the
+number of ones
+in this binary representation which we
+know we already computed
+up over here and the answer to that was
+one so in this position
+really there's going to be two ones in
+this binary representation now over here
+once again
+we know that there's at least one from
+here plus how many were in this binary
+representation we computed that
+at position three which again is offset
+by four
+so this is going to be one plus two
+which is going to be 3.
+now you get over here so now we have an
+even more significant bit last time the
+most significant
+bit was in this position and we know
+that represents the integer
+4. now we got an even more significant
+bit
+which represents the integer a so
+we know that this is going to have at
+least one occurrence of one and then we
+want to know how many
+ones are in this binary representation
+now
+how are we going to get that in this
+case you can tell
+the the offset is no longer four because
+if we do an offset of four we get to the
+integer four that's not what we're
+trying to do
+this binary representation represents
+the integer zero so in reality
+we want to take eight offset it by 8
+which is going to get us all the way
+over here
+and once you do that that's when you
+actually notice the pattern since this
+is going to be
+1 plus dp of n minus
+8 you can tell that for each value
+this is going to be the equation 1 plus
+dp of n minus a particular integer
+and that integer is going to be called
+the offset
+and the offset is going to be the most
+significant
+bit that we have reached so far and what
+are the most significant bits well the
+first one is going to be a one
+the next one is going to be a two the
+next is going to be a 4 8
+16. so basically they're doubling in
+size every time because we know a bit is
+just a
+power of two right that's what binary
+represents so let's clean this up just a
+tiny bit
+so we know that this is kind of our base
+case zero is going to have zero ones in
+it
+now in the next position what's the most
+significant bit we've reached so far
+it's in the ones place right so
+therefore it's going to be a 1. so when
+we're computing
+this we're going to compute 1 plus dp
+of n n is always going to be the value
+we're computing right now so that's
+going to be a 1
+minus 1 because 1 is the most
+significant bit we've reached so far
+down here we reached a new significant
+bit of 2
+right because we've gotten to the value
+2 so far so
+for here we're going to say 1 plus dp of
+n minus
+two now in this next position again the
+most significant bit is
+two right we we know that two is a
+significant bit
+the next significant bit is going to be
+four because that's another power of two
+so
+three is not a it's still going to use
+the previous value
+so from here we're going to compute 1
+plus again dp
+of n minus 2. now once you get here
+we see that we've reached a new power of
+2.
+so then we're gonna be modifying this to
+one plus dp
+of n minus four and then of course when
+we got to
+eight we know we reached a new power of
+two so we were gonna do one plus dp of n
+minus eight
+how do you know if you reach a new power
+of two well you can take the previous
+power of two for example it was two
+right
+let's say the current power of two is
+two let's say we multiply it
+by two does that equal the current uh
+value where if we got to three n equals
+three
+we would check does two times two equal
+three no it does not so we did not reach
+a new power of two
+if we if we got to four two times four
+that does equal
+four so now we reached a new power of
+two and then
+from four we would do the same thing so
+four multiplied by two
+does that equal to seven right let's say
+we got to seven and we were trying to
+see
+is this a power of two no this does not
+equal seven but once we get to
+eight then four times two yes that
+equals eight right so we did reach a new
+power of 2 and we'd do the exact same
+thing
+so the next time we would reach a new
+power of 2 is would be 8 times 2
+equals 16. so next time we reach a 16
+that's going to be a new power of 2
+and 16 times 2 is 32 etc etc so that's
+how it's going to work
+and once you know this idea it's not
+super intuitive until you actually kind
+of draw it out
+but once you do the code is actually
+pretty easy to write let me show you how
+so our dp array is going to be
+initialized to all zeros and it's going
+to be length
+n plus 1 because that's how many we're
+trying to compute and we're also going
+to have an answer
+array which is initially just going to
+have a single zero in it because we know
+n is going to be at least zero and then
+we're going to go through for i
+in range all the way from one up until n
+so n plus one this is non-inclusive in
+python so we're actually going to be
+stopping when we go from one all the way
+up until n
+and we're going to be keeping track of
+one more variable the offset aka the
+highest power of two so far so initially
+that's gonna be
+one so before we actually compute the dp
+or the number of bits in this
+integer i's binary representation first
+we're going to check how
+can we double our offset we're going to
+check if
+offset multiplied by two is equal
+to i the current end that we have just
+reached if it is then we can set
+offset equal to i otherwise offset is
+going to stay the same
+and then we can actually compute the dp
+so we're trying to compute dp of i
+which is basically the number of bits
+the number of ones in i's binary
+representation we know that's going to
+be at least
+1 plus dp of i
+minus the offset and actually one thing
+i just realized
+is the dp and the answer array are
+actually the exact same i don't know why
+i even created an answer array we can
+get rid of that so this dp is basically
+our answer array it's going to give us
+the number of bits the number of one
+bits in each integer's binary
+representation so once
+once we're done with that we can go
+ahead and just return this dp array
+so as you can see this is a pretty
+efficient solution this is the linear
+time big o of n
+time and space solution i hope this was
+helpful if it was please like and
+subscribe it supports the channel a lot
+and i'll hopefully see you pretty soon

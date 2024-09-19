@@ -1,0 +1,1304 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:02.570 align:start position:0%
+ 
+what<00:00:00.179><c> solve</c><00:00:00.450><c> leak</c><00:00:00.690><c> code</c><00:00:00.960><c> 3</c><00:00:01.380><c> longest</c><00:00:02.070><c> substring</c>
+
+00:00:02.570 --> 00:00:02.580 align:start position:0%
+what solve leak code 3 longest substring
+ 
+
+00:00:02.580 --> 00:00:04.610 align:start position:0%
+what solve leak code 3 longest substring
+without<00:00:03.000><c> repeating</c><00:00:03.480><c> characters</c><00:00:04.140><c> or</c><00:00:04.380><c> back</c><00:00:04.589><c> to</c>
+
+00:00:04.610 --> 00:00:04.620 align:start position:0%
+without repeating characters or back to
+ 
+
+00:00:04.620 --> 00:00:06.920 align:start position:0%
+without repeating characters or back to
+a<00:00:04.830><c> classic</c><00:00:05.220><c> leak</c><00:00:05.700><c> code</c><00:00:05.940><c> problem</c><00:00:06.420><c> the</c><00:00:06.600><c> third</c>
+
+00:00:06.920 --> 00:00:06.930 align:start position:0%
+a classic leak code problem the third
+ 
+
+00:00:06.930 --> 00:00:09.080 align:start position:0%
+a classic leak code problem the third
+one<00:00:07.259><c> so</c><00:00:07.740><c> this</c><00:00:07.919><c> one's</c><00:00:08.099><c> pretty</c><00:00:08.370><c> simple</c><00:00:08.639><c> we're</c>
+
+00:00:09.080 --> 00:00:09.090 align:start position:0%
+one so this one's pretty simple we're
+ 
+
+00:00:09.090 --> 00:00:11.209 align:start position:0%
+one so this one's pretty simple we're
+just<00:00:09.450><c> given</c><00:00:09.900><c> a</c><00:00:09.990><c> string</c><00:00:10.320><c> and</c><00:00:10.530><c> we</c><00:00:10.710><c> want</c><00:00:10.920><c> to</c><00:00:11.010><c> find</c>
+
+00:00:11.209 --> 00:00:11.219 align:start position:0%
+just given a string and we want to find
+ 
+
+00:00:11.219 --> 00:00:13.490 align:start position:0%
+just given a string and we want to find
+the<00:00:11.400><c> longest</c><00:00:11.820><c> sub</c><00:00:12.389><c> screen</c><00:00:12.719><c> without</c><00:00:12.929><c> any</c>
+
+00:00:13.490 --> 00:00:13.500 align:start position:0%
+the longest sub screen without any
+ 
+
+00:00:13.500 --> 00:00:15.770 align:start position:0%
+the longest sub screen without any
+repeating<00:00:14.490><c> characters</c><00:00:15.030><c> right</c><00:00:15.330><c> like</c><00:00:15.599><c> how</c>
+
+00:00:15.770 --> 00:00:15.780 align:start position:0%
+repeating characters right like how
+ 
+
+00:00:15.780 --> 00:00:18.050 align:start position:0%
+repeating characters right like how
+these<00:00:16.020><c> three</c><00:00:16.410><c> don't</c><00:00:16.710><c> have</c><00:00:16.890><c> any</c><00:00:17.160><c> duplicate</c>
+
+00:00:18.050 --> 00:00:18.060 align:start position:0%
+these three don't have any duplicate
+ 
+
+00:00:18.060 --> 00:00:22.730 align:start position:0%
+these three don't have any duplicate
+characters<00:00:18.510><c> ABC</c><00:00:19.550><c> this</c><00:00:20.550><c> one</c><00:00:20.939><c> has</c><00:00:21.570><c> two</c><00:00:21.960><c> A's</c><00:00:22.289><c> so</c>
+
+00:00:22.730 --> 00:00:22.740 align:start position:0%
+characters ABC this one has two A's so
+ 
+
+00:00:22.740 --> 00:00:25.400 align:start position:0%
+characters ABC this one has two A's so
+this<00:00:23.100><c> would</c><00:00:23.310><c> not</c><00:00:23.340><c> count</c><00:00:23.970><c> as</c><00:00:24.210><c> a</c><00:00:24.410><c> substring</c>
+
+00:00:25.400 --> 00:00:25.410 align:start position:0%
+this would not count as a substring
+ 
+
+00:00:25.410 --> 00:00:27.050 align:start position:0%
+this would not count as a substring
+without<00:00:25.650><c> repeating</c><00:00:25.920><c> characters</c><00:00:26.519><c> and</c><00:00:26.789><c> we</c><00:00:26.910><c> only</c>
+
+00:00:27.050 --> 00:00:27.060 align:start position:0%
+without repeating characters and we only
+ 
+
+00:00:27.060 --> 00:00:28.580 align:start position:0%
+without repeating characters and we only
+need<00:00:27.330><c> to</c><00:00:27.420><c> return</c><00:00:27.720><c> the</c><00:00:27.869><c> length</c><00:00:28.199><c> of</c><00:00:28.470><c> this</c>
+
+00:00:28.580 --> 00:00:28.590 align:start position:0%
+need to return the length of this
+ 
+
+00:00:28.590 --> 00:00:31.400 align:start position:0%
+need to return the length of this
+substring<00:00:29.160><c> so</c><00:00:29.760><c> the</c><00:00:29.910><c> first</c><00:00:30.179><c> idea</c><00:00:30.660><c> that</c><00:00:30.720><c> comes</c>
+
+00:00:31.400 --> 00:00:31.410 align:start position:0%
+substring so the first idea that comes
+ 
+
+00:00:31.410 --> 00:00:33.680 align:start position:0%
+substring so the first idea that comes
+to<00:00:31.650><c> my</c><00:00:31.890><c> mind</c><00:00:31.920><c> at</c><00:00:32.369><c> least</c><00:00:32.520><c> is</c><00:00:32.850><c> so</c><00:00:33.120><c> just</c><00:00:33.390><c> check</c>
+
+00:00:33.680 --> 00:00:33.690 align:start position:0%
+to my mind at least is so just check
+ 
+
+00:00:33.690 --> 00:00:35.930 align:start position:0%
+to my mind at least is so just check
+every<00:00:34.200><c> single</c><00:00:34.440><c> substring</c><00:00:35.190><c> check</c><00:00:35.640><c> if</c><00:00:35.790><c> it</c><00:00:35.910><c> has</c>
+
+00:00:35.930 --> 00:00:35.940 align:start position:0%
+every single substring check if it has
+ 
+
+00:00:35.940 --> 00:00:37.850 align:start position:0%
+every single substring check if it has
+any<00:00:36.300><c> duplicates</c><00:00:36.809><c> if</c><00:00:36.960><c> it</c><00:00:37.079><c> doesn't</c><00:00:37.530><c> then</c><00:00:37.710><c> it</c>
+
+00:00:37.850 --> 00:00:37.860 align:start position:0%
+any duplicates if it doesn't then it
+ 
+
+00:00:37.860 --> 00:00:39.020 align:start position:0%
+any duplicates if it doesn't then it
+then<00:00:38.100><c> we're</c><00:00:38.309><c> just</c><00:00:38.340><c> going</c><00:00:38.610><c> to</c><00:00:38.640><c> take</c><00:00:38.820><c> the</c>
+
+00:00:39.020 --> 00:00:39.030 align:start position:0%
+then we're just going to take the
+ 
+
+00:00:39.030 --> 00:00:41.090 align:start position:0%
+then we're just going to take the
+longest<00:00:39.629><c> one</c><00:00:39.840><c> of</c><00:00:39.989><c> those</c><00:00:40.170><c> strings</c><00:00:40.559><c> and</c><00:00:40.739><c> return</c>
+
+00:00:41.090 --> 00:00:41.100 align:start position:0%
+longest one of those strings and return
+ 
+
+00:00:41.100 --> 00:00:43.340 align:start position:0%
+longest one of those strings and return
+the<00:00:41.309><c> length</c><00:00:41.579><c> so</c><00:00:42.059><c> how</c><00:00:42.270><c> would</c><00:00:42.329><c> that</c><00:00:42.629><c> algorithm</c>
+
+00:00:43.340 --> 00:00:43.350 align:start position:0%
+the length so how would that algorithm
+ 
+
+00:00:43.350 --> 00:00:45.470 align:start position:0%
+the length so how would that algorithm
+run<00:00:43.590><c> okay</c><00:00:43.950><c> first</c><00:00:44.219><c> we'd</c><00:00:44.430><c> start</c><00:00:44.700><c> at</c><00:00:44.820><c> a</c><00:00:44.940><c> we</c><00:00:45.300><c> want</c>
+
+00:00:45.470 --> 00:00:45.480 align:start position:0%
+run okay first we'd start at a we want
+ 
+
+00:00:45.480 --> 00:00:47.840 align:start position:0%
+run okay first we'd start at a we want
+to<00:00:45.539><c> get</c><00:00:45.660><c> every</c><00:00:46.020><c> substring</c><00:00:46.500><c> starting</c><00:00:47.010><c> at</c><00:00:47.129><c> a</c><00:00:47.309><c> so</c>
+
+00:00:47.840 --> 00:00:47.850 align:start position:0%
+to get every substring starting at a so
+ 
+
+00:00:47.850 --> 00:00:49.580 align:start position:0%
+to get every substring starting at a so
+just<00:00:48.090><c> this</c><00:00:48.239><c> one</c><00:00:48.480><c> a</c><00:00:48.690><c> well</c><00:00:48.989><c> that</c><00:00:49.200><c> doesn't</c><00:00:49.410><c> have</c>
+
+00:00:49.580 --> 00:00:49.590 align:start position:0%
+just this one a well that doesn't have
+ 
+
+00:00:49.590 --> 00:00:51.799 align:start position:0%
+just this one a well that doesn't have
+any<00:00:49.739><c> duplicates</c><00:00:50.280><c> a</c><00:00:50.489><c> B</c><00:00:50.940><c> that</c><00:00:51.239><c> doesn't</c><00:00:51.539><c> have</c><00:00:51.629><c> any</c>
+
+00:00:51.799 --> 00:00:51.809 align:start position:0%
+any duplicates a B that doesn't have any
+ 
+
+00:00:51.809 --> 00:00:54.290 align:start position:0%
+any duplicates a B that doesn't have any
+duplicates<00:00:52.320><c> a</c><00:00:52.590><c> C</c><00:00:53.370><c> that</c><00:00:53.760><c> doesn't</c><00:00:54.090><c> have</c><00:00:54.180><c> any</c>
+
+00:00:54.290 --> 00:00:54.300 align:start position:0%
+duplicates a C that doesn't have any
+ 
+
+00:00:54.300 --> 00:00:56.450 align:start position:0%
+duplicates a C that doesn't have any
+duplicates<00:00:54.809><c> either</c><00:00:54.989><c> and</c><00:00:55.320><c> then</c><00:00:55.980><c> we</c><00:00:56.190><c> get</c><00:00:56.399><c> to</c>
+
+00:00:56.450 --> 00:00:56.460 align:start position:0%
+duplicates either and then we get to
+ 
+
+00:00:56.460 --> 00:00:58.970 align:start position:0%
+duplicates either and then we get to
+this<00:00:56.730><c> first</c><00:00:57.030><c> duplicate</c><00:00:57.600><c> a</c><00:00:57.750><c> we</c><00:00:58.379><c> have</c><00:00:58.500><c> two</c><00:00:58.710><c> A's</c>
+
+00:00:58.970 --> 00:00:58.980 align:start position:0%
+this first duplicate a we have two A's
+ 
+
+00:00:58.980 --> 00:01:00.920 align:start position:0%
+this first duplicate a we have two A's
+now<00:00:59.280><c> but</c><00:00:59.879><c> remember</c><00:01:00.359><c> we're</c><00:01:00.510><c> checking</c><00:01:00.780><c> every</c>
+
+00:01:00.920 --> 00:01:00.930 align:start position:0%
+now but remember we're checking every
+ 
+
+00:01:00.930 --> 00:01:04.039 align:start position:0%
+now but remember we're checking every
+single<00:01:01.559><c> sub</c><00:01:02.340><c> screen</c><00:01:02.699><c> starting</c><00:01:03.270><c> at</c><00:01:03.420><c> this</c><00:01:03.629><c> first</c>
+
+00:01:04.039 --> 00:01:04.049 align:start position:0%
+single sub screen starting at this first
+ 
+
+00:01:04.049 --> 00:01:06.200 align:start position:0%
+single sub screen starting at this first
+a<00:01:04.290><c> so</c><00:01:04.830><c> we're</c><00:01:05.010><c> gonna</c><00:01:05.129><c> keep</c><00:01:05.430><c> this</c><00:01:05.700><c> algorithm</c>
+
+00:01:06.200 --> 00:01:06.210 align:start position:0%
+a so we're gonna keep this algorithm
+ 
+
+00:01:06.210 --> 00:01:08.510 align:start position:0%
+a so we're gonna keep this algorithm
+going<00:01:06.450><c> even</c><00:01:06.869><c> though</c><00:01:06.990><c> we</c><00:01:07.110><c> don't</c><00:01:07.260><c> have</c><00:01:07.500><c> to</c><00:01:07.740><c> every</c>
+
+00:01:08.510 --> 00:01:08.520 align:start position:0%
+going even though we don't have to every
+ 
+
+00:01:08.520 --> 00:01:11.929 align:start position:0%
+going even though we don't have to every
+substring<00:01:09.119><c> we</c><00:01:09.299><c> get</c><00:01:09.510><c> after</c><00:01:09.689><c> that</c><00:01:10.310><c> like</c><00:01:11.310><c> see</c><00:01:11.850><c> how</c>
+
+00:01:11.929 --> 00:01:11.939 align:start position:0%
+substring we get after that like see how
+ 
+
+00:01:11.939 --> 00:01:13.640 align:start position:0%
+substring we get after that like see how
+we're<00:01:12.119><c> doing</c><00:01:12.150><c> it</c><00:01:12.479><c> every</c><00:01:12.840><c> single</c><00:01:13.049><c> substring</c>
+
+00:01:13.640 --> 00:01:13.650 align:start position:0%
+we're doing it every single substring
+ 
+
+00:01:13.650 --> 00:01:16.609 align:start position:0%
+we're doing it every single substring
+after<00:01:14.159><c> is</c><00:01:14.340><c> also</c><00:01:15.180><c> gonna</c><00:01:15.689><c> have</c><00:01:15.930><c> duplicates</c><00:01:16.500><c> so</c>
+
+00:01:16.609 --> 00:01:16.619 align:start position:0%
+after is also gonna have duplicates so
+ 
+
+00:01:16.619 --> 00:01:19.600 align:start position:0%
+after is also gonna have duplicates so
+do<00:01:16.920><c> we</c><00:01:17.040><c> even</c><00:01:17.189><c> need</c><00:01:17.580><c> to</c><00:01:17.820><c> check</c><00:01:18.150><c> all</c><00:01:18.390><c> of</c><00:01:18.479><c> these</c>
+
+00:01:19.600 --> 00:01:19.610 align:start position:0%
+do we even need to check all of these
+ 
+
+00:01:19.610 --> 00:01:23.090 align:start position:0%
+do we even need to check all of these
+starting<00:01:20.610><c> at</c><00:01:20.759><c> value</c><00:01:21.180><c> a</c><00:01:21.409><c> this</c><00:01:22.409><c> is</c><00:01:22.619><c> the</c><00:01:22.740><c> repeated</c>
+
+00:01:23.090 --> 00:01:23.100 align:start position:0%
+starting at value a this is the repeated
+ 
+
+00:01:23.100 --> 00:01:24.740 align:start position:0%
+starting at value a this is the repeated
+work<00:01:23.369><c> that</c><00:01:23.549><c> we're</c><00:01:23.670><c> gonna</c><00:01:23.759><c> eliminate</c><00:01:24.060><c> with</c><00:01:24.509><c> our</c>
+
+00:01:24.740 --> 00:01:24.750 align:start position:0%
+work that we're gonna eliminate with our
+ 
+
+00:01:24.750 --> 00:01:27.590 align:start position:0%
+work that we're gonna eliminate with our
+very<00:01:25.170><c> fundamental</c><00:01:26.100><c> technique</c><00:01:26.610><c> the</c><00:01:26.970><c> sliding</c>
+
+00:01:27.590 --> 00:01:27.600 align:start position:0%
+very fundamental technique the sliding
+ 
+
+00:01:27.600 --> 00:01:30.980 align:start position:0%
+very fundamental technique the sliding
+window<00:01:27.680><c> so</c><00:01:28.680><c> we</c><00:01:29.189><c> want</c><00:01:29.579><c> to</c><00:01:30.030><c> only</c><00:01:30.240><c> check</c><00:01:30.689><c> sub</c>
+
+00:01:30.980 --> 00:01:30.990 align:start position:0%
+window so we want to only check sub
+ 
+
+00:01:30.990 --> 00:01:32.810 align:start position:0%
+window so we want to only check sub
+strings<00:01:31.290><c> without</c><00:01:31.680><c> any</c><00:01:31.920><c> repeated</c><00:01:32.430><c> characters</c>
+
+00:01:32.810 --> 00:01:32.820 align:start position:0%
+strings without any repeated characters
+ 
+
+00:01:32.820 --> 00:01:34.730 align:start position:0%
+strings without any repeated characters
+so<00:01:33.000><c> let's</c><00:01:33.210><c> actually</c><00:01:33.450><c> just</c><00:01:33.869><c> do</c><00:01:34.200><c> that</c><00:01:34.470><c> let's</c>
+
+00:01:34.730 --> 00:01:34.740 align:start position:0%
+so let's actually just do that let's
+ 
+
+00:01:34.740 --> 00:01:37.640 align:start position:0%
+so let's actually just do that let's
+make<00:01:34.979><c> sure</c><00:01:35.009><c> that</c><00:01:35.250><c> our</c><00:01:35.490><c> window</c><00:01:36.329><c> right</c><00:01:36.930><c> our</c><00:01:37.170><c> sub</c>
+
+00:01:37.640 --> 00:01:37.650 align:start position:0%
+make sure that our window right our sub
+ 
+
+00:01:37.650 --> 00:01:40.999 align:start position:0%
+make sure that our window right our sub
+array<00:01:38.009><c> our</c><00:01:38.369><c> substring</c><00:01:39.030><c> is</c><00:01:39.299><c> always</c><00:01:40.079><c> not</c>
+
+00:01:40.999 --> 00:01:41.009 align:start position:0%
+array our substring is always not
+ 
+
+00:01:41.009 --> 00:01:44.600 align:start position:0%
+array our substring is always not
+containing<00:01:41.579><c> any</c><00:01:41.939><c> duplicates</c><00:01:42.780><c> so</c><00:01:43.590><c> once</c><00:01:44.009><c> we</c><00:01:44.280><c> get</c>
+
+00:01:44.600 --> 00:01:44.610 align:start position:0%
+containing any duplicates so once we get
+ 
+
+00:01:44.610 --> 00:01:47.539 align:start position:0%
+containing any duplicates so once we get
+to<00:01:44.880><c> this</c><00:01:45.060><c> next</c><00:01:45.750><c> a</c><00:01:46.020><c> we're</c><00:01:46.590><c> gonna</c><00:01:46.710><c> say</c><00:01:47.009><c> well</c><00:01:47.310><c> now</c>
+
+00:01:47.539 --> 00:01:47.549 align:start position:0%
+to this next a we're gonna say well now
+ 
+
+00:01:47.549 --> 00:01:49.399 align:start position:0%
+to this next a we're gonna say well now
+we<00:01:47.610><c> have</c><00:01:47.729><c> to</c><00:01:48.119><c> a</c><00:01:48.149><c> so</c><00:01:48.420><c> we</c><00:01:48.810><c> need</c><00:01:49.020><c> to</c><00:01:49.140><c> start</c>
+
+00:01:49.399 --> 00:01:49.409 align:start position:0%
+we have to a so we need to start
+ 
+
+00:01:49.409 --> 00:01:51.859 align:start position:0%
+we have to a so we need to start
+removing<00:01:49.729><c> from</c><00:01:50.729><c> the</c><00:01:50.850><c> left</c><00:01:51.149><c> wing</c><00:01:51.420><c> to</c><00:01:51.450><c> start</c>
+
+00:01:51.859 --> 00:01:51.869 align:start position:0%
+removing from the left wing to start
+ 
+
+00:01:51.869 --> 00:01:55.460 align:start position:0%
+removing from the left wing to start
+shrinking<00:01:52.409><c> our</c><00:01:52.829><c> sliding</c><00:01:53.310><c> window</c><00:01:53.960><c> until</c><00:01:54.960><c> we</c><00:01:55.200><c> no</c>
+
+00:01:55.460 --> 00:01:55.470 align:start position:0%
+shrinking our sliding window until we no
+ 
+
+00:01:55.470 --> 00:01:58.010 align:start position:0%
+shrinking our sliding window until we no
+longer<00:01:55.500><c> have</c><00:01:56.130><c> duplicates</c><00:01:56.729><c> so</c><00:01:57.210><c> I'm</c><00:01:57.540><c> gonna</c><00:01:57.719><c> say</c>
+
+00:01:58.010 --> 00:01:58.020 align:start position:0%
+longer have duplicates so I'm gonna say
+ 
+
+00:01:58.020 --> 00:02:02.480 align:start position:0%
+longer have duplicates so I'm gonna say
+remove<00:01:58.680><c> this</c><00:01:59.490><c> one</c><00:01:59.820><c> from</c><00:02:00.689><c> our</c><00:02:00.960><c> substring</c><00:02:01.710><c> now</c>
+
+00:02:02.480 --> 00:02:02.490 align:start position:0%
+remove this one from our substring now
+ 
+
+00:02:02.490 --> 00:02:05.719 align:start position:0%
+remove this one from our substring now
+our<00:02:02.759><c> substring</c><00:02:03.270><c> runs</c><00:02:03.630><c> from</c><00:02:03.930><c> here</c><00:02:04.500><c> from</c><00:02:05.219><c> the</c><00:02:05.430><c> B</c>
+
+00:02:05.719 --> 00:02:05.729 align:start position:0%
+our substring runs from here from the B
+ 
+
+00:02:05.729 --> 00:02:08.660 align:start position:0%
+our substring runs from here from the B
+all<00:02:06.119><c> the</c><00:02:06.180><c> way</c><00:02:06.659><c> to</c><00:02:06.810><c> the</c><00:02:07.079><c> a</c><00:02:07.110><c> now</c><00:02:08.039><c> it's</c><00:02:08.250><c> perfectly</c>
+
+00:02:08.660 --> 00:02:08.670 align:start position:0%
+all the way to the a now it's perfectly
+ 
+
+00:02:08.670 --> 00:02:11.029 align:start position:0%
+all the way to the a now it's perfectly
+valid<00:02:08.819><c> so</c><00:02:09.390><c> now</c><00:02:09.629><c> we</c><00:02:09.690><c> can</c><00:02:09.959><c> keep</c><00:02:10.110><c> going</c><00:02:10.170><c> it's</c>
+
+00:02:11.029 --> 00:02:11.039 align:start position:0%
+valid so now we can keep going it's
+ 
+
+00:02:11.039 --> 00:02:13.280 align:start position:0%
+valid so now we can keep going it's
+still<00:02:11.190><c> only</c><00:02:11.580><c> length</c><00:02:11.940><c> three</c><00:02:12.330><c> though</c><00:02:12.540><c> so</c><00:02:12.989><c> now</c>
+
+00:02:13.280 --> 00:02:13.290 align:start position:0%
+still only length three though so now
+ 
+
+00:02:13.290 --> 00:02:15.500 align:start position:0%
+still only length three though so now
+so<00:02:13.409><c> we're</c><00:02:13.500><c> gonna</c><00:02:13.590><c> add</c><00:02:13.829><c> this</c><00:02:14.099><c> bead</c><00:02:14.700><c> but</c><00:02:15.269><c> wait</c><00:02:15.480><c> a</c>
+
+00:02:15.500 --> 00:02:15.510 align:start position:0%
+so we're gonna add this bead but wait a
+ 
+
+00:02:15.510 --> 00:02:17.929 align:start position:0%
+so we're gonna add this bead but wait a
+minute<00:02:15.629><c> now</c><00:02:16.049><c> we</c><00:02:16.110><c> have</c><00:02:16.409><c> two</c><00:02:16.709><c> bees</c><00:02:16.980><c> but</c><00:02:17.760><c> my</c>
+
+00:02:17.929 --> 00:02:17.939 align:start position:0%
+minute now we have two bees but my
+ 
+
+00:02:17.939 --> 00:02:19.910 align:start position:0%
+minute now we have two bees but my
+question<00:02:18.450><c> is</c><00:02:18.599><c> how</c><00:02:18.780><c> would</c><00:02:18.989><c> we</c><00:02:19.140><c> even</c><00:02:19.319><c> know</c>
+
+00:02:19.910 --> 00:02:19.920 align:start position:0%
+question is how would we even know
+ 
+
+00:02:19.920 --> 00:02:22.640 align:start position:0%
+question is how would we even know
+instantly<00:02:20.730><c> whether</c><00:02:21.180><c> we</c><00:02:21.450><c> had</c><00:02:21.659><c> a</c><00:02:21.870><c> duplicate</c><00:02:22.469><c> or</c>
+
+00:02:22.640 --> 00:02:22.650 align:start position:0%
+instantly whether we had a duplicate or
+ 
+
+00:02:22.650 --> 00:02:25.789 align:start position:0%
+instantly whether we had a duplicate or
+not<00:02:22.920><c> well</c><00:02:23.459><c> we</c><00:02:23.640><c> can</c><00:02:23.790><c> use</c><00:02:23.819><c> a</c><00:02:23.969><c> set</c><00:02:24.480><c> for</c><00:02:24.750><c> that</c><00:02:24.930><c> sets</c>
+
+00:02:25.789 --> 00:02:25.799 align:start position:0%
+not well we can use a set for that sets
+ 
+
+00:02:25.799 --> 00:02:28.130 align:start position:0%
+not well we can use a set for that sets
+will<00:02:26.189><c> only</c><00:02:26.430><c> contain</c><00:02:26.969><c> one</c><00:02:27.329><c> of</c><00:02:27.359><c> each</c><00:02:27.599><c> character</c>
+
+00:02:28.130 --> 00:02:28.140 align:start position:0%
+will only contain one of each character
+ 
+
+00:02:28.140 --> 00:02:30.110 align:start position:0%
+will only contain one of each character
+so<00:02:28.290><c> we'll</c><00:02:28.469><c> automatically</c><00:02:29.129><c> know</c><00:02:29.489><c> if</c><00:02:29.730><c> we</c><00:02:29.939><c> have</c><00:02:30.090><c> a</c>
+
+00:02:30.110 --> 00:02:30.120 align:start position:0%
+so we'll automatically know if we have a
+ 
+
+00:02:30.120 --> 00:02:33.170 align:start position:0%
+so we'll automatically know if we have a
+duplicate<00:02:30.720><c> we</c><00:02:30.959><c> can</c><00:02:31.140><c> check</c><00:02:31.379><c> it</c><00:02:31.590><c> instantly</c><00:02:32.370><c> so</c>
+
+00:02:33.170 --> 00:02:33.180 align:start position:0%
+duplicate we can check it instantly so
+ 
+
+00:02:33.180 --> 00:02:34.490 align:start position:0%
+duplicate we can check it instantly so
+we're<00:02:33.359><c> going</c><00:02:33.450><c> to</c><00:02:33.540><c> check</c><00:02:33.780><c> that</c><00:02:33.810><c> we</c><00:02:34.109><c> have</c><00:02:34.140><c> two</c>
+
+00:02:34.490 --> 00:02:34.500 align:start position:0%
+we're going to check that we have two
+ 
+
+00:02:34.500 --> 00:02:36.860 align:start position:0%
+we're going to check that we have two
+bees<00:02:34.769><c> so</c><00:02:35.040><c> now</c><00:02:35.189><c> we're</c><00:02:35.310><c> going</c><00:02:35.400><c> to</c><00:02:35.489><c> keep</c><00:02:35.870><c> popping</c>
+
+00:02:36.860 --> 00:02:36.870 align:start position:0%
+bees so now we're going to keep popping
+ 
+
+00:02:36.870 --> 00:02:38.179 align:start position:0%
+bees so now we're going to keep popping
+from<00:02:37.260><c> the</c><00:02:37.439><c> left</c><00:02:37.709><c> we're</c><00:02:37.890><c> going</c><00:02:37.980><c> to</c><00:02:38.069><c> keep</c>
+
+00:02:38.179 --> 00:02:38.189 align:start position:0%
+from the left we're going to keep
+ 
+
+00:02:38.189 --> 00:02:40.339 align:start position:0%
+from the left we're going to keep
+shrinking<00:02:38.519><c> our</c><00:02:38.939><c> window</c><00:02:39.299><c> from</c><00:02:39.480><c> the</c><00:02:39.540><c> left</c><00:02:39.659><c> until</c>
+
+00:02:40.339 --> 00:02:40.349 align:start position:0%
+shrinking our window from the left until
+ 
+
+00:02:40.349 --> 00:02:43.399 align:start position:0%
+shrinking our window from the left until
+we<00:02:40.560><c> don't</c><00:02:40.769><c> have</c><00:02:41.099><c> until</c><00:02:41.879><c> we</c><00:02:42.000><c> remove</c><00:02:42.450><c> a</c><00:02:42.719><c> bee</c><00:02:43.109><c> and</c>
+
+00:02:43.399 --> 00:02:43.409 align:start position:0%
+we don't have until we remove a bee and
+ 
+
+00:02:43.409 --> 00:02:45.229 align:start position:0%
+we don't have until we remove a bee and
+we're<00:02:43.980><c> gonna</c><00:02:44.069><c> see</c><00:02:44.280><c> that</c><00:02:44.310><c> the</c><00:02:44.519><c> first</c><00:02:44.819><c> one</c><00:02:45.090><c> we</c>
+
+00:02:45.229 --> 00:02:45.239 align:start position:0%
+we're gonna see that the first one we
+ 
+
+00:02:45.239 --> 00:02:46.879 align:start position:0%
+we're gonna see that the first one we
+remove<00:02:45.569><c> is</c><00:02:45.780><c> the</c><00:02:45.840><c> Beast</c><00:02:46.290><c> and</c><00:02:46.470><c> now</c><00:02:46.560><c> we're</c><00:02:46.739><c> done</c>
+
+00:02:46.879 --> 00:02:46.889 align:start position:0%
+remove is the Beast and now we're done
+ 
+
+00:02:46.889 --> 00:02:49.729 align:start position:0%
+remove is the Beast and now we're done
+so<00:02:47.549><c> now</c><00:02:47.819><c> our</c><00:02:47.849><c> substring</c><00:02:48.599><c> runs</c><00:02:48.870><c> from</c><00:02:49.109><c> this</c><00:02:49.349><c> C</c>
+
+00:02:49.729 --> 00:02:49.739 align:start position:0%
+so now our substring runs from this C
+ 
+
+00:02:49.739 --> 00:02:52.520 align:start position:0%
+so now our substring runs from this C
+all<00:02:50.040><c> the</c><00:02:50.099><c> way</c><00:02:50.459><c> to</c><00:02:50.639><c> this</c><00:02:50.939><c> D</c><00:02:51.329><c> now</c><00:02:52.260><c> we're</c><00:02:52.439><c> gonna</c>
+
+00:02:52.520 --> 00:02:52.530 align:start position:0%
+all the way to this D now we're gonna
+ 
+
+00:02:52.530 --> 00:02:55.460 align:start position:0%
+all the way to this D now we're gonna
+add<00:02:52.739><c> another</c><00:02:52.889><c> character</c><00:02:53.310><c> once</c><00:02:53.879><c> again</c><00:02:54.480><c> we</c><00:02:55.200><c> have</c>
+
+00:02:55.460 --> 00:02:55.470 align:start position:0%
+add another character once again we have
+ 
+
+00:02:55.470 --> 00:02:57.830 align:start position:0%
+add another character once again we have
+a<00:02:55.500><c> duplicate</c><00:02:56.220><c> and</c><00:02:56.400><c> once</c><00:02:57.000><c> again</c><00:02:57.209><c> we</c><00:02:57.689><c> can</c>
+
+00:02:57.830 --> 00:02:57.840 align:start position:0%
+a duplicate and once again we can
+ 
+
+00:02:57.840 --> 00:02:59.960 align:start position:0%
+a duplicate and once again we can
+literally<00:02:58.470><c> just</c><00:02:58.769><c> remove</c><00:02:59.129><c> the</c><00:02:59.340><c> farthest</c><00:02:59.760><c> left</c>
+
+00:02:59.960 --> 00:02:59.970 align:start position:0%
+literally just remove the farthest left
+ 
+
+00:02:59.970 --> 00:03:02.360 align:start position:0%
+literally just remove the farthest left
+character<00:03:00.480><c> and</c><00:03:00.689><c> now</c><00:03:00.840><c> we're</c><00:03:01.049><c> valid</c><00:03:01.409><c> again</c><00:03:01.680><c> no</c>
+
+00:03:02.360 --> 00:03:02.370 align:start position:0%
+character and now we're valid again no
+ 
+
+00:03:02.370 --> 00:03:03.920 align:start position:0%
+character and now we're valid again no
+more<00:03:02.579><c> duplicates</c><00:03:02.790><c> we're</c><00:03:03.359><c> running</c><00:03:03.659><c> all</c><00:03:03.780><c> the</c>
+
+00:03:03.920 --> 00:03:03.930 align:start position:0%
+more duplicates we're running all the
+ 
+
+00:03:03.930 --> 00:03:09.409 align:start position:0%
+more duplicates we're running all the
+way<00:03:03.959><c> from</c><00:03:04.439><c> A</c><00:03:04.590><c> to</c><00:03:04.919><c> C</c><00:03:05.900><c> next</c><00:03:06.900><c> we</c><00:03:07.200><c> add</c><00:03:07.409><c> a</c><00:03:07.709><c> B</c><00:03:08.419><c> the</c>
+
+00:03:09.409 --> 00:03:09.419 align:start position:0%
+way from A to C next we add a B the
+ 
+
+00:03:09.419 --> 00:03:12.289 align:start position:0%
+way from A to C next we add a B the
+interesting<00:03:10.019><c> thing</c><00:03:10.200><c> about</c><00:03:10.230><c> this</c><00:03:10.709><c> is</c><00:03:11.069><c> that</c><00:03:11.430><c> now</c>
+
+00:03:12.289 --> 00:03:12.299 align:start position:0%
+interesting thing about this is that now
+ 
+
+00:03:12.299 --> 00:03:14.330 align:start position:0%
+interesting thing about this is that now
+we<00:03:12.359><c> have</c><00:03:12.540><c> to</c><00:03:12.689><c> remove</c><00:03:13.109><c> this</c><00:03:13.409><c> a</c><00:03:13.590><c> because</c><00:03:14.040><c> we</c><00:03:14.189><c> have</c>
+
+00:03:14.330 --> 00:03:14.340 align:start position:0%
+we have to remove this a because we have
+ 
+
+00:03:14.340 --> 00:03:16.190 align:start position:0%
+we have to remove this a because we have
+to<00:03:14.519><c> shrink</c><00:03:14.879><c> our</c><00:03:15.000><c> window</c><00:03:15.359><c> our</c><00:03:15.450><c> sub</c><00:03:15.750><c> string</c><00:03:16.049><c> has</c>
+
+00:03:16.190 --> 00:03:16.200 align:start position:0%
+to shrink our window our sub string has
+ 
+
+00:03:16.200 --> 00:03:18.110 align:start position:0%
+to shrink our window our sub string has
+to<00:03:16.230><c> be</c><00:03:16.409><c> contiguous</c><00:03:16.889><c> so</c><00:03:17.430><c> we</c><00:03:17.549><c> have</c><00:03:17.639><c> to</c><00:03:17.760><c> remove</c>
+
+00:03:18.110 --> 00:03:18.120 align:start position:0%
+to be contiguous so we have to remove
+ 
+
+00:03:18.120 --> 00:03:21.080 align:start position:0%
+to be contiguous so we have to remove
+this<00:03:18.389><c> a</c><00:03:18.569><c> but</c><00:03:19.229><c> notice</c><00:03:19.620><c> we</c><00:03:19.799><c> still</c><00:03:20.159><c> have</c><00:03:20.400><c> two</c><00:03:20.729><c> bees</c>
+
+00:03:21.080 --> 00:03:21.090 align:start position:0%
+this a but notice we still have two bees
+ 
+
+00:03:21.090 --> 00:03:22.909 align:start position:0%
+this a but notice we still have two bees
+in<00:03:21.329><c> our</c><00:03:21.389><c> substring</c><00:03:21.900><c> so</c><00:03:22.229><c> we</c><00:03:22.349><c> got</c><00:03:22.500><c> to</c><00:03:22.590><c> remove</c>
+
+00:03:22.909 --> 00:03:22.919 align:start position:0%
+in our substring so we got to remove
+ 
+
+00:03:22.919 --> 00:03:25.309 align:start position:0%
+in our substring so we got to remove
+another<00:03:23.849><c> character</c><00:03:24.449><c> we</c><00:03:24.690><c> have</c><00:03:24.780><c> to</c><00:03:24.870><c> remove</c><00:03:25.079><c> this</c>
+
+00:03:25.309 --> 00:03:25.319 align:start position:0%
+another character we have to remove this
+ 
+
+00:03:25.319 --> 00:03:28.430 align:start position:0%
+another character we have to remove this
+B<00:03:25.739><c> so</c><00:03:26.400><c> now</c><00:03:26.639><c> our</c><00:03:26.669><c> substring</c><00:03:27.359><c> runs</c><00:03:27.599><c> from</c><00:03:27.840><c> C</c><00:03:28.199><c> to</c><00:03:28.229><c> B</c>
+
+00:03:28.430 --> 00:03:28.440 align:start position:0%
+B so now our substring runs from C to B
+ 
+
+00:03:28.440 --> 00:03:30.559 align:start position:0%
+B so now our substring runs from C to B
+so<00:03:29.310><c> we</c><00:03:29.340><c> are</c><00:03:29.579><c> valid</c><00:03:30.000><c> again</c><00:03:30.209><c> but</c><00:03:30.419><c> now</c><00:03:30.540><c> our</c>
+
+00:03:30.559 --> 00:03:30.569 align:start position:0%
+so we are valid again but now our
+ 
+
+00:03:30.569 --> 00:03:33.289 align:start position:0%
+so we are valid again but now our
+substring<00:03:31.139><c> is</c><00:03:31.290><c> only</c><00:03:31.440><c> length</c><00:03:31.799><c> two</c><00:03:32.190><c> next</c><00:03:33.150><c> we'll</c>
+
+00:03:33.289 --> 00:03:33.299 align:start position:0%
+substring is only length two next we'll
+ 
+
+00:03:33.299 --> 00:03:35.750 align:start position:0%
+substring is only length two next we'll
+get<00:03:33.419><c> to</c><00:03:33.569><c> the</c><00:03:33.659><c> last</c><00:03:33.930><c> B</c><00:03:34.379><c> last</c><00:03:35.190><c> character</c><00:03:35.609><c> we're</c>
+
+00:03:35.750 --> 00:03:35.760 align:start position:0%
+get to the last B last character we're
+ 
+
+00:03:35.760 --> 00:03:38.330 align:start position:0%
+get to the last B last character we're
+adding<00:03:36.120><c> and</c><00:03:36.329><c> C</c><00:03:36.569><c> yep</c><00:03:36.989><c> it's</c><00:03:37.199><c> a</c><00:03:37.319><c> duplicate</c><00:03:37.859><c> again</c>
+
+00:03:38.330 --> 00:03:38.340 align:start position:0%
+adding and C yep it's a duplicate again
+ 
+
+00:03:38.340 --> 00:03:40.789 align:start position:0%
+adding and C yep it's a duplicate again
+and<00:03:38.729><c> don't</c><00:03:39.120><c> forget</c><00:03:39.540><c> that</c><00:03:39.599><c> as</c><00:03:39.959><c> we're</c><00:03:40.379><c> removing</c>
+
+00:03:40.789 --> 00:03:40.799 align:start position:0%
+and don't forget that as we're removing
+ 
+
+00:03:40.799 --> 00:03:42.530 align:start position:0%
+and don't forget that as we're removing
+these<00:03:41.190><c> characters</c><00:03:41.669><c> from</c><00:03:41.819><c> the</c><00:03:42.030><c> left</c><00:03:42.060><c> we're</c>
+
+00:03:42.530 --> 00:03:42.540 align:start position:0%
+these characters from the left we're
+ 
+
+00:03:42.540 --> 00:03:44.750 align:start position:0%
+these characters from the left we're
+removing<00:03:42.989><c> a</c><00:03:43.079><c> C</c><00:03:43.409><c> we're</c><00:03:43.859><c> not</c><00:03:44.010><c> just</c><00:03:44.220><c> removing</c><00:03:44.609><c> it</c>
+
+00:03:44.750 --> 00:03:44.760 align:start position:0%
+removing a C we're not just removing it
+ 
+
+00:03:44.760 --> 00:03:46.490 align:start position:0%
+removing a C we're not just removing it
+from<00:03:45.000><c> our</c><00:03:45.120><c> window</c><00:03:45.479><c> but</c><00:03:45.659><c> we</c><00:03:45.780><c> also</c><00:03:45.989><c> have</c><00:03:46.349><c> to</c>
+
+00:03:46.490 --> 00:03:46.500 align:start position:0%
+from our window but we also have to
+ 
+
+00:03:46.500 --> 00:03:48.619 align:start position:0%
+from our window but we also have to
+remove<00:03:46.829><c> it</c><00:03:46.979><c> from</c><00:03:47.129><c> our</c><00:03:47.370><c> set</c><00:03:47.760><c> because</c><00:03:48.090><c> our</c><00:03:48.209><c> set</c>
+
+00:03:48.619 --> 00:03:48.629 align:start position:0%
+remove it from our set because our set
+ 
+
+00:03:48.629 --> 00:03:50.270 align:start position:0%
+remove it from our set because our set
+is<00:03:48.659><c> going</c><00:03:48.989><c> to</c><00:03:49.049><c> correspond</c><00:03:49.650><c> to</c><00:03:49.739><c> all</c><00:03:50.069><c> the</c>
+
+00:03:50.270 --> 00:03:50.280 align:start position:0%
+is going to correspond to all the
+ 
+
+00:03:50.280 --> 00:03:52.250 align:start position:0%
+is going to correspond to all the
+characters<00:03:50.729><c> inside</c><00:03:50.940><c> of</c><00:03:51.510><c> our</c><00:03:51.629><c> substring</c><00:03:52.199><c> that</c>
+
+00:03:52.250 --> 00:03:52.260 align:start position:0%
+characters inside of our substring that
+ 
+
+00:03:52.260 --> 00:03:54.170 align:start position:0%
+characters inside of our substring that
+we're<00:03:52.530><c> at</c><00:03:52.709><c> so</c><00:03:53.129><c> we</c><00:03:53.250><c> have</c><00:03:53.340><c> to</c><00:03:53.430><c> remove</c><00:03:53.760><c> our</c><00:03:53.909><c> see</c>
+
+00:03:54.170 --> 00:03:54.180 align:start position:0%
+we're at so we have to remove our see
+ 
+
+00:03:54.180 --> 00:03:56.089 align:start position:0%
+we're at so we have to remove our see
+from<00:03:54.389><c> the</c><00:03:54.540><c> window</c><00:03:54.870><c> and</c><00:03:55.079><c> move</c><00:03:55.290><c> it</c><00:03:55.470><c> from</c><00:03:55.590><c> the</c><00:03:55.829><c> set</c>
+
+00:03:56.089 --> 00:03:56.099 align:start position:0%
+from the window and move it from the set
+ 
+
+00:03:56.099 --> 00:03:58.699 align:start position:0%
+from the window and move it from the set
+we<00:03:56.639><c> have</c><00:03:56.760><c> to</c><00:03:56.819><c> take</c><00:03:57.030><c> this</c><00:03:57.180><c> B</c><00:03:57.659><c> and</c><00:03:57.959><c> do</c><00:03:58.379><c> the</c><00:03:58.500><c> same</c>
+
+00:03:58.699 --> 00:03:58.709 align:start position:0%
+we have to take this B and do the same
+ 
+
+00:03:58.709 --> 00:04:01.699 align:start position:0%
+we have to take this B and do the same
+thing<00:03:59.069><c> and</c><00:03:59.400><c> now</c><00:04:00.329><c> we</c><00:04:00.389><c> have</c><00:04:00.689><c> no</c><00:04:00.930><c> more</c><00:04:01.199><c> characters</c>
+
+00:04:01.699 --> 00:04:01.709 align:start position:0%
+thing and now we have no more characters
+ 
+
+00:04:01.709 --> 00:04:03.830 align:start position:0%
+thing and now we have no more characters
+to<00:04:01.739><c> add</c><00:04:02.040><c> with</c><00:04:02.729><c> this</c><00:04:02.939><c> sliding</c><00:04:03.329><c> window</c>
+
+00:04:03.830 --> 00:04:03.840 align:start position:0%
+to add with this sliding window
+ 
+
+00:04:03.840 --> 00:04:05.179 align:start position:0%
+to add with this sliding window
+technique<00:04:04.229><c> which</c><00:04:04.409><c> is</c><00:04:04.530><c> a</c><00:04:04.560><c> very</c><00:04:04.829><c> fundamental</c>
+
+00:04:05.179 --> 00:04:05.189 align:start position:0%
+technique which is a very fundamental
+ 
+
+00:04:05.189 --> 00:04:07.159 align:start position:0%
+technique which is a very fundamental
+technique<00:04:05.879><c> that</c><00:04:06.060><c> you'll</c><00:04:06.180><c> probably</c><00:04:06.419><c> see</c><00:04:06.780><c> a</c><00:04:06.810><c> lot</c>
+
+00:04:07.159 --> 00:04:07.169 align:start position:0%
+technique that you'll probably see a lot
+ 
+
+00:04:07.169 --> 00:04:09.289 align:start position:0%
+technique that you'll probably see a lot
+more<00:04:07.439><c> in</c><00:04:07.590><c> a</c><00:04:07.680><c> lot</c><00:04:07.709><c> of</c><00:04:07.979><c> different</c><00:04:08.400><c> problems</c><00:04:08.909><c> we</c>
+
+00:04:09.289 --> 00:04:09.299 align:start position:0%
+more in a lot of different problems we
+ 
+
+00:04:09.299 --> 00:04:11.629 align:start position:0%
+more in a lot of different problems we
+can<00:04:09.479><c> cut</c><00:04:09.780><c> the</c><00:04:09.959><c> time</c><00:04:10.199><c> complexity</c><00:04:10.739><c> down</c><00:04:11.099><c> to</c><00:04:11.400><c> Big</c>
+
+00:04:11.629 --> 00:04:11.639 align:start position:0%
+can cut the time complexity down to Big
+ 
+
+00:04:11.639 --> 00:04:14.360 align:start position:0%
+can cut the time complexity down to Big
+O<00:04:11.819><c> of</c><00:04:11.849><c> n</c><00:04:12.239><c> we</c><00:04:12.659><c> just</c><00:04:12.689><c> have</c><00:04:13.139><c> to</c><00:04:13.290><c> go</c><00:04:13.530><c> through</c><00:04:13.560><c> the</c>
+
+00:04:14.360 --> 00:04:14.370 align:start position:0%
+O of n we just have to go through the
+ 
+
+00:04:14.370 --> 00:04:16.249 align:start position:0%
+O of n we just have to go through the
+entire<00:04:14.519><c> list</c><00:04:14.790><c> well</c><00:04:15.509><c> we</c><00:04:15.720><c> might</c><00:04:15.900><c> have</c><00:04:15.930><c> to</c><00:04:16.049><c> add</c>
+
+00:04:16.249 --> 00:04:16.259 align:start position:0%
+entire list well we might have to add
+ 
+
+00:04:16.259 --> 00:04:18.349 align:start position:0%
+entire list well we might have to add
+and<00:04:16.680><c> remove</c><00:04:16.829><c> values</c><00:04:17.519><c> from</c><00:04:17.669><c> our</c><00:04:17.820><c> set</c><00:04:18.150><c> but</c>
+
+00:04:18.349 --> 00:04:18.359 align:start position:0%
+and remove values from our set but
+ 
+
+00:04:18.359 --> 00:04:21.050 align:start position:0%
+and remove values from our set but
+that's<00:04:18.539><c> a</c><00:04:18.690><c> very</c><00:04:18.900><c> quick</c><00:04:19.199><c> operation</c><00:04:20.070><c> the</c><00:04:20.639><c> memory</c>
+
+00:04:21.050 --> 00:04:21.060 align:start position:0%
+that's a very quick operation the memory
+ 
+
+00:04:21.060 --> 00:04:23.779 align:start position:0%
+that's a very quick operation the memory
+complexity<00:04:21.750><c> because</c><00:04:22.469><c> of</c><00:04:22.500><c> our</c><00:04:22.740><c> set</c><00:04:23.099><c> is</c><00:04:23.310><c> also</c>
+
+00:04:23.779 --> 00:04:23.789 align:start position:0%
+complexity because of our set is also
+ 
+
+00:04:23.789 --> 00:04:26.890 align:start position:0%
+complexity because of our set is also
+going<00:04:23.940><c> to</c><00:04:24.000><c> be</c><00:04:24.060><c> Big</c><00:04:24.479><c> O</c><00:04:24.659><c> of</c><00:04:24.690><c> n</c><00:04:25.190><c> because</c><00:04:26.190><c> potential</c>
+
+00:04:26.890 --> 00:04:26.900 align:start position:0%
+going to be Big O of n because potential
+ 
+
+00:04:26.900 --> 00:04:28.540 align:start position:0%
+going to be Big O of n because potential
+every<00:04:27.380><c> character</c><00:04:27.800><c> and</c><00:04:27.919><c> the</c><00:04:28.009><c> string</c><00:04:28.250><c> could</c><00:04:28.430><c> be</c>
+
+00:04:28.540 --> 00:04:28.550 align:start position:0%
+every character and the string could be
+ 
+
+00:04:28.550 --> 00:04:30.430 align:start position:0%
+every character and the string could be
+unique<00:04:28.910><c> and</c><00:04:29.180><c> will</c><00:04:29.270><c> add</c><00:04:29.449><c> all</c><00:04:29.750><c> of</c><00:04:29.780><c> them</c><00:04:30.080><c> to</c><00:04:30.410><c> our</c>
+
+00:04:30.430 --> 00:04:30.440 align:start position:0%
+unique and will add all of them to our
+ 
+
+00:04:30.440 --> 00:04:33.370 align:start position:0%
+unique and will add all of them to our
+set<00:04:30.860><c> and</c><00:04:31.190><c> I</c><00:04:31.820><c> didn't</c><00:04:32.090><c> really</c><00:04:32.210><c> show</c><00:04:32.660><c> it</c><00:04:32.870><c> while</c><00:04:33.169><c> we</c>
+
+00:04:33.370 --> 00:04:33.380 align:start position:0%
+set and I didn't really show it while we
+ 
+
+00:04:33.380 --> 00:04:34.749 align:start position:0%
+set and I didn't really show it while we
+were<00:04:33.500><c> going</c><00:04:33.620><c> through</c><00:04:33.889><c> the</c><00:04:34.009><c> problem</c><00:04:34.490><c> but</c><00:04:34.639><c> we</c>
+
+00:04:34.749 --> 00:04:34.759 align:start position:0%
+were going through the problem but we
+ 
+
+00:04:34.759 --> 00:04:36.100 align:start position:0%
+were going through the problem but we
+would<00:04:34.910><c> want</c><00:04:34.940><c> to</c><00:04:35.150><c> maintain</c><00:04:35.389><c> what's</c><00:04:35.930><c> the</c>
+
+00:04:36.100 --> 00:04:36.110 align:start position:0%
+would want to maintain what's the
+ 
+
+00:04:36.110 --> 00:04:38.560 align:start position:0%
+would want to maintain what's the
+longest<00:04:36.470><c> substring</c><00:04:37.100><c> we</c><00:04:37.250><c> found</c><00:04:37.580><c> in</c><00:04:37.789><c> our</c><00:04:38.240><c> case</c>
+
+00:04:38.560 --> 00:04:38.570 align:start position:0%
+longest substring we found in our case
+ 
+
+00:04:38.570 --> 00:04:40.450 align:start position:0%
+longest substring we found in our case
+it<00:04:38.780><c> was</c><00:04:38.840><c> obvious</c><00:04:39.320><c> that</c><00:04:39.350><c> the</c><00:04:39.680><c> long</c><00:04:39.949><c> as</c><00:04:40.130><c> we</c><00:04:40.280><c> found</c>
+
+00:04:40.450 --> 00:04:40.460 align:start position:0%
+it was obvious that the long as we found
+ 
+
+00:04:40.460 --> 00:04:43.029 align:start position:0%
+it was obvious that the long as we found
+was<00:04:40.729><c> of</c><00:04:40.880><c> length</c><00:04:41.090><c> three</c><00:04:41.630><c> so</c><00:04:42.530><c> I</c><00:04:42.560><c> remember</c><00:04:42.800><c> the</c>
+
+00:04:43.029 --> 00:04:43.039 align:start position:0%
+was of length three so I remember the
+ 
+
+00:04:43.039 --> 00:04:44.800 align:start position:0%
+was of length three so I remember the
+first<00:04:43.250><c> thing</c><00:04:43.490><c> we</c><00:04:43.610><c> need</c><00:04:43.789><c> to</c><00:04:43.820><c> do</c><00:04:44.030><c> is</c><00:04:44.180><c> get</c><00:04:44.330><c> a</c><00:04:44.389><c> set</c>
+
+00:04:44.800 --> 00:04:44.810 align:start position:0%
+first thing we need to do is get a set
+ 
+
+00:04:44.810 --> 00:04:47.439 align:start position:0%
+first thing we need to do is get a set
+to<00:04:45.350><c> make</c><00:04:45.560><c> sure</c><00:04:45.949><c> we</c><00:04:46.160><c> have</c><00:04:46.370><c> all</c><00:04:46.699><c> the</c><00:04:46.820><c> characters</c>
+
+00:04:47.439 --> 00:04:47.449 align:start position:0%
+to make sure we have all the characters
+ 
+
+00:04:47.449 --> 00:04:49.120 align:start position:0%
+to make sure we have all the characters
+in<00:04:47.479><c> our</c><00:04:47.690><c> window</c><00:04:47.990><c> so</c><00:04:48.139><c> I'll</c><00:04:48.229><c> call</c><00:04:48.410><c> it</c><00:04:48.470><c> character</c>
+
+00:04:49.120 --> 00:04:49.130 align:start position:0%
+in our window so I'll call it character
+ 
+
+00:04:49.130 --> 00:04:52.900 align:start position:0%
+in our window so I'll call it character
+set<00:04:49.400><c> and</c><00:04:51.250><c> we're</c><00:04:52.250><c> going</c><00:04:52.370><c> to</c><00:04:52.400><c> do</c><00:04:52.520><c> a</c><00:04:52.550><c> sliding</c>
+
+00:04:52.900 --> 00:04:52.910 align:start position:0%
+set and we're going to do a sliding
+ 
+
+00:04:52.910 --> 00:04:54.550 align:start position:0%
+set and we're going to do a sliding
+window<00:04:53.090><c> so</c><00:04:53.479><c> any</c><00:04:53.600><c> week</c><00:04:53.750><c> so</c><00:04:54.020><c> we</c><00:04:54.169><c> need</c><00:04:54.350><c> two</c>
+
+00:04:54.550 --> 00:04:54.560 align:start position:0%
+window so any week so we need two
+ 
+
+00:04:54.560 --> 00:04:56.439 align:start position:0%
+window so any week so we need two
+pointers<00:04:55.100><c> a</c><00:04:55.130><c> left</c><00:04:55.580><c> pointer</c><00:04:56.030><c> and</c><00:04:56.180><c> a</c><00:04:56.240><c> right</c>
+
+00:04:56.439 --> 00:04:56.449 align:start position:0%
+pointers a left pointer and a right
+ 
+
+00:04:56.449 --> 00:04:58.240 align:start position:0%
+pointers a left pointer and a right
+pointer<00:04:56.840><c> to</c><00:04:56.990><c> determine</c><00:04:57.470><c> our</c><00:04:57.560><c> sliding</c><00:04:57.830><c> window</c>
+
+00:04:58.240 --> 00:04:58.250 align:start position:0%
+pointer to determine our sliding window
+ 
+
+00:04:58.250 --> 00:05:01.210 align:start position:0%
+pointer to determine our sliding window
+our<00:04:58.940><c> left</c><00:04:59.419><c> will</c><00:04:59.720><c> be</c><00:04:59.750><c> initialized</c><00:05:00.289><c> to</c><00:05:00.500><c> zero</c><00:05:00.860><c> and</c>
+
+00:05:01.210 --> 00:05:01.220 align:start position:0%
+our left will be initialized to zero and
+ 
+
+00:05:01.220 --> 00:05:03.040 align:start position:0%
+our left will be initialized to zero and
+our<00:05:01.639><c> right</c><00:05:01.940><c> pointer</c><00:05:02.419><c> is</c><00:05:02.600><c> going</c><00:05:02.900><c> to</c>
+
+00:05:03.040 --> 00:05:03.050 align:start position:0%
+our right pointer is going to
+ 
+
+00:05:03.050 --> 00:05:04.990 align:start position:0%
+our right pointer is going to
+continuously<00:05:03.710><c> be</c><00:05:04.039><c> changing</c><00:05:04.550><c> as</c><00:05:04.639><c> we</c><00:05:04.820><c> visit</c>
+
+00:05:04.990 --> 00:05:05.000 align:start position:0%
+continuously be changing as we visit
+ 
+
+00:05:05.000 --> 00:05:07.870 align:start position:0%
+continuously be changing as we visit
+every<00:05:05.570><c> character</c><00:05:06.080><c> so</c><00:05:06.350><c> I</c><00:05:06.590><c> can</c><00:05:07.160><c> just</c><00:05:07.310><c> use</c><00:05:07.520><c> it</c><00:05:07.550><c> in</c>
+
+00:05:07.870 --> 00:05:07.880 align:start position:0%
+every character so I can just use it in
+ 
+
+00:05:07.880 --> 00:05:13.300 align:start position:0%
+every character so I can just use it in
+this<00:05:08.360><c> for</c><00:05:08.630><c> loop</c><00:05:08.900><c> so</c><00:05:11.740><c> the</c><00:05:12.740><c> right</c><00:05:12.919><c> pointer</c><00:05:13.220><c> is</c>
+
+00:05:13.300 --> 00:05:13.310 align:start position:0%
+this for loop so the right pointer is
+ 
+
+00:05:13.310 --> 00:05:14.560 align:start position:0%
+this for loop so the right pointer is
+going<00:05:13.460><c> to</c><00:05:13.520><c> go</c><00:05:13.789><c> through</c><00:05:14.030><c> every</c><00:05:14.270><c> single</c>
+
+00:05:14.560 --> 00:05:14.570 align:start position:0%
+going to go through every single
+ 
+
+00:05:14.570 --> 00:05:16.960 align:start position:0%
+going to go through every single
+character<00:05:14.780><c> now</c><00:05:15.680><c> remember</c><00:05:16.190><c> if</c><00:05:16.370><c> we</c><00:05:16.610><c> get</c><00:05:16.820><c> to</c><00:05:16.940><c> a</c>
+
+00:05:16.960 --> 00:05:16.970 align:start position:0%
+character now remember if we get to a
+ 
+
+00:05:16.970 --> 00:05:18.760 align:start position:0%
+character now remember if we get to a
+duplicate<00:05:17.720><c> character</c><00:05:18.169><c> that</c><00:05:18.289><c> means</c><00:05:18.560><c> we</c><00:05:18.680><c> have</c>
+
+00:05:18.760 --> 00:05:18.770 align:start position:0%
+duplicate character that means we have
+ 
+
+00:05:18.770 --> 00:05:21.490 align:start position:0%
+duplicate character that means we have
+to<00:05:18.889><c> update</c><00:05:19.130><c> our</c><00:05:19.430><c> window</c><00:05:19.970><c> and</c><00:05:20.240><c> our</c><00:05:20.419><c> set</c><00:05:20.810><c> so</c>
+
+00:05:21.490 --> 00:05:21.500 align:start position:0%
+to update our window and our set so
+ 
+
+00:05:21.500 --> 00:05:24.580 align:start position:0%
+to update our window and our set so
+while<00:05:22.070><c> this</c><00:05:23.060><c> character</c><00:05:23.630><c> that</c><00:05:23.660><c> we</c><00:05:23.900><c> just</c><00:05:24.169><c> visit</c>
+
+00:05:24.580 --> 00:05:24.590 align:start position:0%
+while this character that we just visit
+ 
+
+00:05:24.590 --> 00:05:28.330 align:start position:0%
+while this character that we just visit
+at<00:05:24.710><c> the</c><00:05:24.889><c> right</c><00:05:25.130><c> pointer</c><00:05:25.639><c> s</c><00:05:26.120><c> of</c><00:05:26.449><c> R</c><00:05:26.690><c> is</c><00:05:27.139><c> equal</c><00:05:28.130><c> is</c>
+
+00:05:28.330 --> 00:05:28.340 align:start position:0%
+at the right pointer s of R is equal is
+ 
+
+00:05:28.340 --> 00:05:31.300 align:start position:0%
+at the right pointer s of R is equal is
+already<00:05:29.090><c> inside</c><00:05:29.810><c> our</c><00:05:30.139><c> character</c><00:05:30.710><c> set</c><00:05:30.949><c> meaning</c>
+
+00:05:31.300 --> 00:05:31.310 align:start position:0%
+already inside our character set meaning
+ 
+
+00:05:31.310 --> 00:05:33.820 align:start position:0%
+already inside our character set meaning
+it's<00:05:31.460><c> a</c><00:05:31.580><c> duplicate</c><00:05:32.300><c> then</c><00:05:33.139><c> we</c><00:05:33.320><c> got</c><00:05:33.500><c> to</c><00:05:33.590><c> update</c>
+
+00:05:33.820 --> 00:05:33.830 align:start position:0%
+it's a duplicate then we got to update
+ 
+
+00:05:33.830 --> 00:05:36.700 align:start position:0%
+it's a duplicate then we got to update
+our<00:05:34.250><c> window</c><00:05:34.729><c> so</c><00:05:35.150><c> we</c><00:05:35.389><c> have</c><00:05:35.539><c> to</c><00:05:35.660><c> take</c><00:05:35.900><c> the</c><00:05:36.410><c> left</c>
+
+00:05:36.700 --> 00:05:36.710 align:start position:0%
+our window so we have to take the left
+ 
+
+00:05:36.710 --> 00:05:39.040 align:start position:0%
+our window so we have to take the left
+character<00:05:37.280><c> and</c><00:05:37.520><c> remove</c><00:05:38.030><c> it</c><00:05:38.180><c> from</c><00:05:38.210><c> our</c><00:05:38.510><c> set</c><00:05:38.810><c> so</c>
+
+00:05:39.040 --> 00:05:39.050 align:start position:0%
+character and remove it from our set so
+ 
+
+00:05:39.050 --> 00:05:42.939 align:start position:0%
+character and remove it from our set so
+character<00:05:39.650><c> set</c><00:05:40.039><c> dot</c><00:05:40.910><c> remove</c><00:05:41.539><c> the</c><00:05:42.500><c> leftmost</c>
+
+00:05:42.939 --> 00:05:42.949 align:start position:0%
+character set dot remove the leftmost
+ 
+
+00:05:42.949 --> 00:05:45.550 align:start position:0%
+character set dot remove the leftmost
+character<00:05:43.729><c> and</c><00:05:44.000><c> then</c><00:05:44.690><c> of</c><00:05:44.840><c> course</c><00:05:44.870><c> we</c><00:05:45.320><c> have</c><00:05:45.409><c> to</c>
+
+00:05:45.550 --> 00:05:45.560 align:start position:0%
+character and then of course we have to
+ 
+
+00:05:45.560 --> 00:05:47.830 align:start position:0%
+character and then of course we have to
+update<00:05:46.010><c> that</c><00:05:46.190><c> left</c><00:05:46.550><c> pointer</c><00:05:47.060><c> incremented</c><00:05:47.810><c> by</c>
+
+00:05:47.830 --> 00:05:47.840 align:start position:0%
+update that left pointer incremented by
+ 
+
+00:05:47.840 --> 00:05:50.620 align:start position:0%
+update that left pointer incremented by
+1<00:05:48.289><c> and</c><00:05:48.669><c> we're</c><00:05:49.669><c> going</c><00:05:49.820><c> to</c><00:05:49.849><c> keep</c><00:05:50.120><c> doing</c><00:05:50.180><c> this</c>
+
+00:05:50.620 --> 00:05:50.630 align:start position:0%
+1 and we're going to keep doing this
+ 
+
+00:05:50.630 --> 00:05:53.050 align:start position:0%
+1 and we're going to keep doing this
+while<00:05:51.320><c> that</c><00:05:51.650><c> duplicate</c><00:05:52.250><c> remains</c><00:05:52.729><c> in</c><00:05:52.970><c> the</c>
+
+00:05:53.050 --> 00:05:53.060 align:start position:0%
+while that duplicate remains in the
+ 
+
+00:05:53.060 --> 00:05:55.600 align:start position:0%
+while that duplicate remains in the
+character<00:05:53.479><c> set</c><00:05:53.780><c> after</c><00:05:54.770><c> we've</c><00:05:54.949><c> removed</c><00:05:55.190><c> all</c>
+
+00:05:55.600 --> 00:05:55.610 align:start position:0%
+character set after we've removed all
+ 
+
+00:05:55.610 --> 00:05:57.790 align:start position:0%
+character set after we've removed all
+duplicates<00:05:55.970><c> then</c><00:05:56.630><c> we</c><00:05:56.780><c> can</c><00:05:56.960><c> just</c><00:05:57.199><c> add</c><00:05:57.380><c> this</c>
+
+00:05:57.790 --> 00:05:57.800 align:start position:0%
+duplicates then we can just add this
+ 
+
+00:05:57.800 --> 00:06:04.149 align:start position:0%
+duplicates then we can just add this
+rightmost<00:05:58.220><c> character</c><00:05:59.000><c> to</c><00:05:59.270><c> our</c><00:05:59.300><c> set</c><00:06:00.909><c> and</c><00:06:03.159><c> since</c>
+
+00:06:04.149 --> 00:06:04.159 align:start position:0%
+rightmost character to our set and since
+ 
+
+00:06:04.159 --> 00:06:06.370 align:start position:0%
+rightmost character to our set and since
+at<00:06:04.340><c> this</c><00:06:04.610><c> point</c><00:06:05.030><c> we</c><00:06:05.180><c> know</c><00:06:05.449><c> for</c><00:06:05.720><c> sure</c><00:06:05.750><c> that</c><00:06:06.080><c> our</c>
+
+00:06:06.370 --> 00:06:06.380 align:start position:0%
+at this point we know for sure that our
+ 
+
+00:06:06.380 --> 00:06:08.350 align:start position:0%
+at this point we know for sure that our
+substring<00:06:06.979><c> doesn't</c><00:06:07.370><c> have</c><00:06:07.460><c> any</c><00:06:07.610><c> duplicates</c><00:06:08.180><c> we</c>
+
+00:06:08.350 --> 00:06:08.360 align:start position:0%
+substring doesn't have any duplicates we
+ 
+
+00:06:08.360 --> 00:06:10.930 align:start position:0%
+substring doesn't have any duplicates we
+can<00:06:08.510><c> potentially</c><00:06:09.050><c> update</c><00:06:09.530><c> ours</c><00:06:09.889><c> our</c><00:06:10.340><c> result</c>
+
+00:06:10.930 --> 00:06:10.940 align:start position:0%
+can potentially update ours our result
+ 
+
+00:06:10.940 --> 00:06:12.730 align:start position:0%
+can potentially update ours our result
+variable<00:06:11.330><c> which</c><00:06:11.599><c> I</c><00:06:11.720><c> never</c><00:06:11.780><c> declared</c><00:06:12.380><c> so</c><00:06:12.590><c> let</c>
+
+00:06:12.730 --> 00:06:12.740 align:start position:0%
+variable which I never declared so let
+ 
+
+00:06:12.740 --> 00:06:14.649 align:start position:0%
+variable which I never declared so let
+me<00:06:12.830><c> declare</c><00:06:13.159><c> it</c><00:06:13.250><c> up</c><00:06:13.370><c> here</c><00:06:13.669><c> result</c><00:06:14.510><c> is</c>
+
+00:06:14.649 --> 00:06:14.659 align:start position:0%
+me declare it up here result is
+ 
+
+00:06:14.659 --> 00:06:17.230 align:start position:0%
+me declare it up here result is
+initially<00:06:15.110><c> going</c><00:06:15.260><c> to</c><00:06:15.320><c> be</c><00:06:15.440><c> 0</c><00:06:15.800><c> and</c><00:06:16.159><c> now</c><00:06:16.880><c> we</c><00:06:16.940><c> can</c>
+
+00:06:17.230 --> 00:06:17.240 align:start position:0%
+initially going to be 0 and now we can
+ 
+
+00:06:17.240 --> 00:06:19.200 align:start position:0%
+initially going to be 0 and now we can
+update<00:06:17.479><c> our</c><00:06:17.720><c> results</c><00:06:18.349><c> so</c><00:06:18.470><c> we</c><00:06:18.620><c> can</c><00:06:18.800><c> potentially</c>
+
+00:06:19.200 --> 00:06:19.210 align:start position:0%
+update our results so we can potentially
+ 
+
+00:06:19.210 --> 00:06:23.890 align:start position:0%
+update our results so we can potentially
+make<00:06:20.210><c> it</c><00:06:20.419><c> larger</c><00:06:21.050><c> than</c><00:06:21.229><c> it</c><00:06:21.349><c> is</c><00:06:21.500><c> if</c><00:06:22.659><c> the</c><00:06:23.659><c> current</c>
+
+00:06:23.890 --> 00:06:23.900 align:start position:0%
+make it larger than it is if the current
+ 
+
+00:06:23.900 --> 00:06:25.899 align:start position:0%
+make it larger than it is if the current
+window<00:06:24.380><c> size</c><00:06:24.620><c> is</c><00:06:24.889><c> greater</c><00:06:25.159><c> than</c><00:06:25.250><c> what</c><00:06:25.760><c> it</c><00:06:25.880><c> is</c>
+
+00:06:25.899 --> 00:06:25.909 align:start position:0%
+window size is greater than what it is
+ 
+
+00:06:25.909 --> 00:06:28.330 align:start position:0%
+window size is greater than what it is
+right<00:06:26.030><c> now</c><00:06:26.419><c> which</c><00:06:26.750><c> we</c><00:06:27.139><c> can</c><00:06:27.289><c> compute</c><00:06:27.740><c> by</c><00:06:27.770><c> right</c>
+
+00:06:28.330 --> 00:06:28.340 align:start position:0%
+right now which we can compute by right
+ 
+
+00:06:28.340 --> 00:06:33.219 align:start position:0%
+right now which we can compute by right
+minus<00:06:28.940><c> left</c><00:06:29.060><c> plus</c><00:06:30.050><c> 1</c><00:06:30.530><c> and</c><00:06:31.750><c> then</c><00:06:32.750><c> at</c><00:06:32.900><c> the</c><00:06:33.020><c> end</c>
+
+00:06:33.219 --> 00:06:33.229 align:start position:0%
+minus left plus 1 and then at the end
+ 
+
+00:06:33.229 --> 00:06:35.610 align:start position:0%
+minus left plus 1 and then at the end
+once<00:06:33.590><c> we've</c><00:06:33.770><c> gone</c><00:06:33.949><c> through</c><00:06:34.220><c> the</c><00:06:34.310><c> entire</c><00:06:34.639><c> or</c>
+
+00:06:35.610 --> 00:06:35.620 align:start position:0%
+once we've gone through the entire or
+ 
+
+00:06:35.620 --> 00:06:38.529 align:start position:0%
+once we've gone through the entire or
+substring<00:06:36.620><c> we</c><00:06:36.919><c> can</c><00:06:37.130><c> return</c><00:06:37.520><c> the</c><00:06:37.789><c> result</c><00:06:38.240><c> if</c>
+
+00:06:38.529 --> 00:06:38.539 align:start position:0%
+substring we can return the result if
+ 
+
+00:06:38.539 --> 00:06:40.780 align:start position:0%
+substring we can return the result if
+this<00:06:39.320><c> was</c><00:06:39.500><c> helpful</c><00:06:39.740><c> leave</c><00:06:40.279><c> a</c><00:06:40.310><c> like</c><00:06:40.580><c> in</c>
+
+00:06:40.780 --> 00:06:40.790 align:start position:0%
+this was helpful leave a like in
+ 
+
+00:06:40.790 --> 00:06:44.350 align:start position:0%
+this was helpful leave a like in
+subscribe<00:06:41.300><c> and</c><00:06:41.540><c> thank</c><00:06:41.780><c> you</c><00:06:41.930><c> for</c><00:06:42.140><c> watching</c>
+

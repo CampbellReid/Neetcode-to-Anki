@@ -1,0 +1,256 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+let's solve the problem evaluate reverse
+polish notation quite a mouthful but
+basically this problem is about what the
+meaning of that term even means and it's
+just kind of a way to compute
+arithmetic expressions and the only
+operations we're really going to be
+doing in this case are going to be the
+simple ones add subtract multiply and
+divide a one note that they tell us
+though is division between two integers
+should basically round towards zero
+since i'm going to be doing this in
+python though if you you know take uh
+some values and do integer division
+between them they always round down
+which is not rounding towards zero
+necessarily because imagine if we had
+negative 3 divided by 2 that's negative
+1.5 it rounds down to negative 2 in
+python but that's not what we want to do
+but there's a trick in python that you
+can do to make it round towards zero so
+we can take care of that if you're using
+java though i think it automatically
+rounds towards zero same with like c
+plus plus in most languages uh one thing
+we're told though in terms of the rn rpn
+rpn expression is that it's always going
+to be valid which is good so we don't
+really have to worry about too many edge
+cases there's never going to be some
+divide by zero or anything crazy like
+that so now what does rpn even mean well
+let's take a look at this example so
+we're given a 2 a 1
+then a plus operator then a 3 and then a
+multiply operator now the way uh this is
+gonna work is we're gonna be reading
+from left to right we're gonna be
+reading the inputs uh so first one was a
+two next one is a one when we reach an
+operator though what exactly are we
+supposed to do well any operator in this
+case is going to be applied to the
+previous two values and like i said
+there's not going to be edge cases so
+we're guaranteed that there are going to
+be two previous values so in this case
+what we would do is replace these this
+two and this one
+by adding them together so where it's
+going to be replaced with a
+three right so we can kind of forget
+these and we already used this plus
+operator so we can kind of cross it out
+as well now we have a 3 again
+so i'm going to be kind of writing it
+down here just to kind of you know
+basically say that we've seen that 3
+before now we have the multiply operator
+it's going to be applied to the two
+previous values now in the actual input
+itself you can see that the the previous
+value was a 3 and the value before that
+was a plus operator when we say it's
+going to be applied to the two previous
+values that's not what we mean we don't
+want to apply it to another operator
+right we mean the two previous values
+that came so you can see that we had a
+three and then the one before that was a
+one but remember this two and this one
+they were replaced by this three and
+then we had a second 3 which we wrote
+down here so this multiply is going to
+be applied to these two values so we can
+multiply both of them and then replace
+them with the result which in this case
+is going to be a 9. so you can see that
+that is our result and you can see that
+it is correct if you know the data
+structure or you're familiar with the
+data structure a stack and you've used
+that in other problems before i think
+this problem is pretty simple to figure
+out that a stack will be useful here
+because basically each operator is going
+to be applied to the previous values
+right but in the case of this 2 the
+previous values are going to be removed
+from the stack right and then replaced
+with the new value which is a three so
+you know as we read through the input
+each value here is going to be added to
+the stack anytime we reach an operator
+the previous two values are going to be
+removed from the stack and then we're
+gonna do the operation on them so in
+this case two plus one and then we're
+gonna take the result of that which is
+three and then push it back onto the
+stack and that's kind of what i was
+getting at when i was doing the drawing
+explanation so really quickly let's
+actually run through an example with a
+stack and just to make this problem a
+bit more interesting let's replace this
+uh
+plus operator with actually a subtract
+and this multiply with a divide because
+uh it's going to be a little bit
+different with these two operations
+because with plus these two are going to
+be added right two plus one but when you
+have subtract which order are they going
+to be subtracted well the intuitive one
+would be two minus one because that's
+the order that they appear in but one
+minus two could be possible right well
+in this case if you looked at the second
+example i think they clarify that yes
+it's going to be this way right 2 minus
+1. let's run through this with a stack
+very quickly so we read the first value
+it's a 2 we add it to our stack second
+value is a one we add it to our stack
+next we get the subtract operator what
+does that mean that means we pop these
+values from our stack and then do the
+operation so in this case it was two
+minus one that's going to be a one over
+here next value is a 3 we add it to the
+stack next we have a divide operator so
+in this case it's going to be the same
+order that the values appear in so 1
+divided by 3 we're going to round
+towards 0. so in this case it's actually
+gonna be zero right so we pop this pop
+this uh and then replace it with a zero
+and we're guaranteed since this is
+always going to be valid that we're only
+gonna be left with a single value in our
+stack so that's the value we're gonna
+return so in this case the answer is 0.
+so that's pretty much the entire
+solution
+now we can code it up but i just want to
+mention that the overall time complexity
+is going to be big o of n because we're
+just reading through the input string
+adding each value to the stack and
+removing it at most once each so you
+know the time complexity is two times n
+in other words it's big o of n uh the
+memory complexity since we do have the
+stack is also going to be big o of n so
+now let's code it up let's code it up
+like i said we're going to need a single
+data structure in this problem which is
+going to be our stack in python you can
+just use a list
+and then most of this problem is just
+going to be boilerplate once you realize
+that a stack works for this problem then
+it's just about coding it up so what
+we're going to do is just iterate
+through every character in our tokens
+input and then just have a bunch of
+conditional statements the first one is
+if the character
+well there's five cases remember it
+could be one of the four operators or it
+could be any other character and any
+other character basically means that
+it's a digit or some number right so
+let's basically make those conditions so
+first is that it's
+plus and let me just kind of you know
+copy and paste this stuff and then get
+uh
+it updated so
+the cases are plus minus multiply and
+divide and then the last fifth case is
+where it's something else and if it's
+something else that means it's a number
+and that's the simplest case of all
+because that means we can just take that
+character and then append it to our
+stack but it's a character remember but
+we should probably convert it into a
+number before we actually add it to our
+stack because remember what we want to
+return is a number not a character okay
+so now let's start with the plus
+condition well remember what i said we
+can just pop from our stack twice and
+then add those values together and then
+append that to the stack so for this
+it's actually pretty simple as well we
+pop from the stack twice take the return
+values add them together and then append
+that to the stack so that the result is
+added to the sac pretty simple and for
+multiply that's also going to be almost
+the exact the same thing right instead
+of plus we're going to be doing
+multiplication so let's you know just
+copy paste and then update that as well
+it's going to be a little bit more
+tricky though for subtract and divide
+because the order that we're popping it
+in is not the order that we want to
+apply that subtract and divide
+operations so
+for subtract well again we are going to
+pop twice because we want to get those
+two values that were popped so let's do
+that this is
+let's call them just a and b arbitrarily
+you could call them anything that you
+want but when we
+subtract them we want to subtract we
+want to take the one that was popped
+second and subtract it from the one that
+was popped first so b minus a and then
+take that and then append it to our
+stack so this though is going to be very
+similar to what we do in our divide
+operation down here we're going to pop
+two values and then in that same order b
+and then a we're going to divide them
+rather than subtract them but in python
+when you do this this is actually
+decimal division but we want to round it
+towards zero so to do that we can
+actually just call the int function
+which will convert it to an integer and
+also round it towards zero at the same
+time so that's pretty much the entire
+code you can see it's mostly just a
+bunch of boilerplate but once all that's
+done let's go ahead and return the
+single value that is guaranteed to be in
+the stack stack at index zero and then
+make sure that our code works by running
+it and as you can see on the left yes it
+does and it's very efficient so i really
+hope that this was helpful if it was
+please like and subscribe it really
+supports the channel a lot consider
+checking out my patreon where you can
+further support the channel and
+hopefully i'll see you pretty soon

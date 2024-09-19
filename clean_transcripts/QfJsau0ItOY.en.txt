@@ -1,0 +1,363 @@
+everyone welcome back and let's write
+some more neat code today so today let's
+solve the problem balanced binary tree
+we're given a binary tree and we want to
+determine if it is height balanced what
+exactly do they mean by height balanced
+well it's defined by saying that for
+every single node in the tree if we take
+the left and right subtrees of this node
+the heights of these left and right sub
+trees will differ by at most one so in
+here you can see taking a look at the
+root node uh it has a left sub tree
+what's the height of this left sub tree
+let's call it one right because there's
+one node in the left sub tree what about
+the right subtree how m what's the
+height of this right sub tree well it's
+two right we can determine that just by
+looking at it so then the left sub tree
+has a height of one the right subtree
+has a height of two the difference is uh
+at most one right because if we take the
+absolute value of the difference we get
+one so we'll say the
+difference is one so we just did that
+for the root node but we have to do that
+for every single node to make sure that
+the left and right subtrees of every
+single node differ by at most one and
+just to show you a counter example so
+this is kind of a badly drawn tree but
+take a look at the root node right if we
+take a look at the left tree over here
+the height is three if we take a look at
+the right subtree the height is three so
+the difference is zero which fits into
+our criteria so from the root node the
+left sub tree and the right subtree are
+balanced but if we take a look at let's
+say this node right we take a look at
+its left sub tree which is empty right
+so that's has a height of zero the right
+subtree has a height of two so in that
+case the difference is two minus zero
+which is two right positive two which is
+greater than one so just because uh from
+here taking a look at the root note the
+left and right sub trees are balanced
+doesn't mean that that's going to be
+true for every single node because we
+just looked at this node the left and
+right subtrees were not balanced how can
+we solve this efficiently let me first
+show you kind of a naive approach and
+then we'll see how we can actually
+optimize that so if we were asking
+naively right the first question we're
+asking is from the root node are the
+left and right sub trees balanced how do
+we even determine that well do you agree
+that we could probably do a recursive
+dfs on the left sub tree to determine
+the height of the left subtree do a
+recursive dfs on the right subtree to
+determine the height of this subtree and
+then we could compare those and make
+sure that the difference is less than or
+equal to one do you agree that we could
+do that probably right i'll explain more
+details in the code but for now let's
+just assume we can do that we start from
+the root we run a dfs on the left and on
+the right that means we go through every
+single node in the tree so we just did
+an o of n operation right and we were
+able to determine okay from the root
+node yes it is balanced but we're not
+done yet right we now we have to
+continue to ask that question for every
+single node right so the next question
+we're going to ask is suppose on the
+left subtree right from the left subtree
+are the left and right subtrees from
+this node also balanced and of course
+they're both zero so we determine that
+they are and then we'll have to
+recursively go to the right subtree from
+here we're going to ask are the left and
+right subtrees balanced yes they are but
+we'll recursively have to continue we'll
+have to do that from this node and then
+we'll have to do that from this node
+since we're running a recursive dfs on
+every single subtree on this uh root
+tree we're going to have to do it
+basically an o of n operation each time
+we ask that question is it balanced from
+here is it balanced from here is it
+balanced from here and we could have a
+really big tree and we'd have to do an
+oven operation each time of n is the
+number of nodes in the tree and if we
+have to do this n operation n times
+we're going to get a time complexity of
+o of n squared so now the question is
+can we do better than that is there any
+repeated work and i'll show you that yes
+there is repeated work and it basically
+can be eliminated by
+asking the question in a different order
+what i mean by that is instead of first
+asking if the entire tree is balanced
+from the root node right that's the
+first question we ask is it balance
+starting from here instead of asking
+that we uh
+do this bottom up we start we
+recursively instead of asking it from
+here we're going to check okay is this
+entire right subtree balanced before we
+do that we're going to ask is this
+entire subtree balance and we're going
+to keep going lower and lower until we
+get to the base case once we get to the
+base case then we're going to go back up
+and i'll show you how that's actually
+going to end up eliminating the repeated
+work if we do it in this order we'll
+only have to visit each node at most one
+time which will ensure the overall time
+complexity is going to be big o of n
+rather than n squared okay so when we
+get to the root before we check if it's
+balanced from here we're going to check
+if it's bounced from this right subtree
+that makes sense so far and then before
+we ask from this position we're gonna
+ask is it bounced from this leaf node
+right and now we can't really go any
+lower because this node doesn't actually
+have any children so of course its
+subtrees are going to be balanced but
+now we're good right we we determine
+okay this
+from this node yes the left and right
+subtrees are balanced right and then we
+pop back up suppose and then uh we we
+also want to make sure that this node is
+also balanced it's the same thing right
+the left and right childs don't exist so
+yeah it's balanced from here as well so
+we determined that right now we know
+from at least these two nodes yes the
+left and right sub trees are balanced
+from these two nodes okay now we want to
+know is it balanced from this node how
+can we determine that aren't we going to
+have to go back down and revisit the
+entire right subtree in the entire left
+sub tree again no and i'll show you why
+as we are determining if this subtree is
+balanced let's also at the same time
+simultaneously let's make sure we get
+the height of this tree the entire
+height of this subtree and let's do the
+exact same thing for this node make sure
+we get the entire height of this subtree
+because once we've done that then once
+we go back up to the parent node from
+here it will be easy we already have the
+height of this tree we already have the
+height of this tree we can take the
+difference between those make sure it's
+less than or equal to one and then we're
+good we we didn't even have to revisit
+these trees right from this node now
+we've already determined yes it's also
+balanced from this position right so now
+we've determined it's balanced from this
+node bounced from here and balanced from
+here and now we want to go back up to
+the root node and make sure it's
+balanced from here before we do that we
+have to solve the sub problem on this
+left subtree it's just a base case
+problem right it's just a single node so
+we know it's balanced from here as well
+so now we want to go back up to the root
+node is it balanced from this root node
+well as we are doing this right as we
+were doing this right subtree we
+determined the height of this tree was
+one the height of this tree was also one
+right so now we want to know before from
+from this node over here before we
+return back up to the parent we want to
+know what's the entire height of this
+subtree how can we easily determine that
+well we know that this was one this was
+also one so from here the height is just
+gonna be one meaning one this one comes
+from this node over here plus the max of
+its left and right subtrees which we
+know are both one so we can take the max
+of one and one that's going to end up
+being one so the height of the overall
+tree is just gonna be one plus one which
+is two right so the height of this tree
+is going to be 2. we determine that
+pretty easily and that's what we can
+return back up to this parent node which
+is good for us right and from this tree
+on the left the height is 1 because it's
+just a single node so we return that up
+to the parent as well so now from here
+we know that the height of the left sub
+tree is one the height of the right
+subtree is two we can take that
+difference two minus one it's one which
+is less than or equal to uh one so that
+we do know that this is balanced from
+this
+node as well right and we can continue
+to recursively do that if we had another
+parent node up above us somewhere we
+could return okay the height of this
+overall tree is going to be three right
+so that's the main logic we're gonna
+follow yes we're going to do this
+recursively and there's many ways to
+code this up the main way i'm going to
+code this up is actually by returning
+two values i'm going to return a boolean
+as the first value which will be either
+true or false basically for every single
+subtree remember we are going to
+determine is that subtree balance we'll
+return a true or false for that and the
+second value will be the height of that
+subtree so from this subtree what we
+would return is true because it is
+balanced and the height we would return
+is 2 right the height of the subtree is
+2 so this is kind of what we would
+return now if we ever from any single
+subtree if we ever return false that
+means we found at least one subtree
+that's not balanced if we find even one
+subtree that's not balanced that means
+from the root we're going to end up
+having to return false which i'll show
+you how we can implement that in the
+code it's pretty straightforward okay so
+now let's get into the code and
+main thing is we're going to do this
+recursively why can't i just use this
+outer function to do it because this
+outer function just returns a single
+value right the boolean but we actually
+want to implement this by returning two
+values so i'm gonna write a nested
+recursive function here and we're gonna
+pass in a single parameter which is the
+root and remember this function is going
+to return a pair of values a boolean and
+the height of the tree so first things
+first the base case if the root is a
+null right this means that we have an
+empty tree so is an empty tree
+considered balanced yeah let's say it is
+so for the first value we'll return true
+in this case and the second value which
+is the height of the tree an empty tree
+we can assume just has a height of zero
+let's say and now remember before we
+determine from this root node is this
+tree balanced first we want to determine
+if from the left sub tree it is balanced
+and from the right subtree is a balance
+so let's call dfs recursively on the
+right and left subtrees and then assign
+it to the result variables left and
+right so that's what we're doing with
+the single line of code calling dfs on
+both subtrees so now we want to know
+from the root node is it balanced right
+how can we determine that well we're
+gonna have to take the absolute value of
+the left and right heights right so how
+can we do that we can take absolute
+value left of index one because remember
+the second value is where the height
+happens to be left of one minus right of
+one so this will give us that so as long
+as this is less than or equal to one we
+can say that the tree is balanced right
+not not so fast because remember if
+either of these left or right subtrees
+ever returned false in the first
+parameter then we know for sure that the
+entire tree is not balanced right so
+before we say uh that this condition is
+enough we're gonna add two more
+conditions we're going to say okay as
+long as this is true meaning that from
+the root it's balanced and the left and
+right sub trees were also balanced so we
+can determine that by just taking the uh
+first the zero index of left and the
+zero index of right
+and also this condition over here let me
+just reformat it slightly to make it a
+little bit more readable this balance is
+what we're going to be returning as the
+first
+as the zeroth index let me just show you
+that so we're going to return a pair of
+values the first is going to be is this
+tree balanced and the second is going to
+be the height of the tree how do we
+determine the height of the tree well
+it's going to be one
+one comes from the root node that we're
+currently at plus the max of the left
+and right subtree so we can get that
+pretty easily left at index one
+and right at index one so whatever the
+max of those two is plus one gives us
+the height hopefully this is pretty
+simple but the balanced might not be
+this balance doesn't only mean is the is
+the tree balanced from the root position
+this balanced means is the entire tree
+balanced at all because remember if the
+left subtree for example was not
+balanced then this conditional is going
+to evaluate to false right because this
+balance is only going to be true if the
+left sub tree was balanced and the right
+sub tree was balanced and from the root
+subtree are we balanced right so all
+three of those have to be true for us to
+return true as the balanced variable
+hopefully that makes sense because that
+is the entire code once we're done with
+that we can in the outer function we can
+go ahead and call our dfs starting from
+the root node and remember this dfs is
+going to return two variable or a pair
+of values right a boolean and the height
+so which of those do we want to return
+in the outer function we want to return
+the boolean so we can return this at
+index 0 and then that will be the entire
+code so let me submit it to make sure
+that it works as you can see on the left
+it does work and it's pretty efficient
+so i hope that this was helpful if it
+was please like and subscribe it
+supports channel a lot and i'll
+hopefully see you pretty soon thanks for
+watching

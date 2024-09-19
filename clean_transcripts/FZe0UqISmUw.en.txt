@@ -1,0 +1,316 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+let's solve the problem permutations
+I've actually already solved this
+problem before but I think I could
+explain it a bit better so I wanted to
+do it again we're given an array of
+distinct integers and we want to return
+all possible permutations of those
+integers so for the record a permutation
+of a set of numbers like this would look
+something like this we have three
+numbers so we're going to have three
+positions to fill for the first position
+we have three choices we can pick any of
+these three elements so let's put a
+three over here for the second position
+we don't know which element we already
+picked we could have picked this one or
+this one or this one for the first spot
+but either way we know we're going to
+have only two elements remaining to
+choose from to place over here so
+there's going to be two different
+elements that go here and then after
+we've picked the first two elements this
+one is already decided so we'll put a
+one here so 3 * 2 * 1 we'll have six
+different permutations of this set of
+numbers and in order to visualize it
+let's kind of draw a decision tree so
+let's say that for the first choice we
+can choose among three elements we can
+have one two or three so regardless of
+which path we take we're going to have
+two choices here we could have either a
+two or a three we can't have a one cuz
+we already picked it here we can have a
+one or a three because we can't have two
+we already picked it here we can have a
+one or a two but not a three so now it's
+going to get a bit more simple we'll
+only have one choice for each of these
+and it must be the element we haven't
+chosen so here it's going to be three
+here it's going to be two here it's
+going to be three here it's going to be
+one here we haven't chosen two and here
+we haven't chosen one so now if you go
+through each path we have a permutation
+we have exactly six of them and you can
+see every single one of these is
+different so if we could have each of
+these in an array this is the result
+like we've calculated the entire result
+now the only problem with the way we're
+thinking about it here is it's pretty
+easy on like pen and paper to draw this
+out but how would we actually calculate
+this in terms of code obviously it looks
+like we're using recursion and it's
+definitely possible to do it that way
+but the way we're doing it right now
+involves a decent amount of bookkeeping
+because what exactly is the sub problem
+like here we chose one right so we got
+rid of one and these are the elements
+remaining so now we're trying to create
+permutations with those elements but
+here the sub problem is different here
+we use two so now we have the these
+elements remaining and we're trying to
+create permutations with those elements
+again we could do it this way but it
+would involve like removing this element
+and doing some other stuff so I think a
+slightly easier way to think about this
+problem is to really use the idea of sub
+problems cuz it makes recursion very
+very easy so let me kind of redo this in
+a very simple way now we're still going
+to use recursion but we're actually not
+even going to Branch anywhere so you're
+going to see something interesting here
+we have three numbers to choose from so
+what we're trying to do is give me all
+permutations from 1 2 and three but next
+the sub problem we're going to ask is
+this give me all permutations with just
+these two numbers so we're going to have
+something like this 2 three and then
+finally we're going to ask just give me
+all permutations with just a single
+number notice how it's getting more
+simple as we go down so watch what the
+return value is going to be well first
+let's go to the base case if I don't
+have any elements from here I'm going to
+return up an array with an empty list
+like that's our permutation we can only
+create one permutation with an empty set
+of numbers and it's an empty permutation
+so that's the base case just to keep it
+simple and now it's going to stay pretty
+simple with just three how many
+permutations could we have well it would
+look like this we're going to return up
+to the parent just a single array with
+the value three cuz a single number can
+only be permutated like that
+now it's going to get more interesting
+from here now from this sub problem two
+and three how do we solve it well you
+probably know what the return value is
+going to look like it's going to look
+pretty simple just like this so it's
+going to have two in the front and it's
+going to have two in the back so 32 like
+this so these are the two permutations
+we can create now the reason I'm showing
+you this way is this way is so easy to
+calculate just watch this from the base
+case all we do is just add three to that
+list okay now from here this was the
+numbers were given we already got all
+permutations from three so now the only
+thing to do is to add two so what we do
+now with this array it's a very simple
+array it just has one element so we know
+we have two choices actually with two we
+can put it at the front or we can put it
+at the back so that's exactly what we do
+we create a permutation with two at the
+front and then we create a permutation
+with two at the back and then from here
+we're going to do the same thing we have
+these two permutations two and three
+what we're going to do is try to put one
+in every position we're going to try to
+put one at the beginning we're going to
+try to put one in the middle and we're
+going to try to put one at the end so
+we're going to end up with three
+different permutations we're going to do
+the same thing with this one we also
+have 32 it's obviously different from 2
+three so we're going to put one at the
+beginning in the middle and at the end
+and if we do this we're going to end up
+with three more permutations which is
+six total permutations and that's
+obviously going to be the result and if
+you're curious I'll quickly draw out
+those permutations here one goes at the
+end here one goes in the middle oh when
+I said end I meant beginning sorry here
+one goes at the end and from this
+permutation 32 we're going to put one at
+the beginning so 1 3 2 we're going to
+put one in the middle 3 1 2 and we're
+going to put one at the end end 3 2 1
+these are the six permutations now let's
+code it up and I'll also explain the
+time complexity in the coding solution
+so we're going to start with the base
+case which is pretty simple in our case
+we're going to have the length of the
+input and when it's equal to zero we're
+going to return a list with a single
+empty list inside of it and so the
+reason we're using that is because we're
+only going to have a single parameter
+the input list the idea is that we're
+going to keep calling the recursive
+function with the input nums without the
+first element so that's the sub problem
+just get rid of the first element from
+nums just create a subarray starting at
+index one and that'll give us all the
+values from nums except the first one so
+these are our permutations like our sub
+problem and then we want to from these
+add the current element which is the
+number at index zero to all of these in
+every possible position and we're going
+to store those in another variable which
+I'm going to call result that's what
+we're going to end up returning from
+this function now to actually do what I
+said earlier let's just go through every
+single permutation that we have and for
+each permutation let's go through every
+possible index that we could insert the
+current value into that permutation so
+I'm going to get the length of P I'm
+also going to have plus one because we
+technically could add to the end of the
+permutation as well so now for that
+permutation P I'm actually going to
+create a copy of it because we're going
+to use this one multiple times we're
+going to possibly add a value to it in
+multiple different places we don't want
+to modify the original permutation we
+just want to create a copy of it so I'm
+going to store that in a variable called
+P copy then for p copy we want to insert
+at index I the value nums at index zero
+we're taking this value inserting it at
+this index we're going to do that for
+every index and then we're going to take
+P copy and append it to the result we're
+going to do that for every permutation
+and then the result is going to be here
+and then we're just going to go ahead
+and return now as you can see on the
+left this solution works and it is very
+efficient well it's about as efficient
+as we can get for this problem and let
+me just kind of show you how to analyze
+the time complexity the idea here is
+it's going to be easier for us to do it
+without kind of focusing too much on the
+code remember that how many permutations
+are we going to have well if we have
+three elements we had something like 3 *
+2 * 1 that is a math equation called n
+factorial so if we have n elements in
+the input we're going to have this many
+different permutations how do we build
+each individual permutation well to add
+a single element to a permutation we're
+like inserting in the middle that's how
+we're coding this up so it's an N
+operation and that's just inserting one
+element into a existing permutation if
+we're inserting n elements into each
+permutation we're going to have like an
+N squ over here so the overall time
+complexity is going to be n factorial
+time n^ 2 but this is really the
+dominating factor in the time complexity
+n factorial space complexity wise if
+you're not counting the output which is
+just going to be n * n factorial CU each
+permutation is going to be of length n
+and we're going to have this many of
+them if you're not counting the output
+and you're just counting like extra
+space here the space is still actually
+going to be in
+factorial time n because we have
+multiple copies of it here so this is
+space this is time now you might think
+since we don't even branch in this
+recursion isn't it possible to solve
+this problem without recursion and
+you're exactly right the logic is going
+to actually be very very similar like
+we're going to start kind of with this
+as the base case I think the time and
+space complexity is going to be the
+exact same so I guess I'll leave this
+here um but this we're going to call
+this our permutations and we're going to
+get rid of this cuz we're not going to
+have any recursion I want to leave this
+code here cuz I want to show you how
+similar the solution is going to be
+remember this is the base case we want
+to compute like the sub problem so for
+every number I could use like an index I
+to make it more clear but we don't need
+to I'm just going to go for n in nums
+for every number we want to now add this
+number to all the existing permutations
+that's what we're trying to do that's
+the logic behind this so I'm going to
+call the new permutations we create with
+this number the new perms it's going to
+be just an empty list for now we're
+going to go through every existing
+permutation kind of like we did down
+here right going through every
+permutation and now I want to insert
+this element into every permutation and
+I need to do that for every position so
+I'm going to say for I in range length
+of p + 1 exactly the same as we did down
+here and now to that permutation I want
+to create a copy of it just like we did
+before and then I want to insert into
+that copy the current element at index I
+we want to add n so this is slightly
+different I guess it's not nums of zero
+it's n and also I want to say let's take
+this now and add it to New perms so new
+permutations append P copy the only
+difference here is going to be at the
+end we want to update perms to be this
+now so we're going to set permutations
+equal to the new permutations and then
+at the end we're going to turn the
+permutations so you can see that the
+code above is very similar to the code
+below and I kind of got rid of the base
+case here so this is not like the
+complete code but you can see that this
+portion of the code is pretty much
+exactly like this portion so I'm going
+to get rid of this down here and I'm
+going to run this code for you now and
+show you here that it also works and
+it's also just as efficient pretty much
+in terms of Big O at least if you found
+this helpful check out NE code. thanks

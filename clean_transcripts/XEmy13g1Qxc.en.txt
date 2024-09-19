@@ -1,0 +1,519 @@
+everyone welcome back and let's write
+some more neat code today so today let's
+solve the problem kth largest element in
+an array so we're given an integer array
+numsend and integer k we want to return
+the kth largest element in the array by
+largest they mean largest in sorted
+order not the largest distinct element
+so we could have duplicates in this
+array and so when they say let's say a k
+equals one ray if k was one and let's
+say this array was sorted then that
+would mean we want the right most
+element because we want the first
+largest element if k is two we want the
+second largest element so not the
+largest element but the second largest
+element so that's how it works now the
+most obvious solution you probably could
+already come up with by yourself is just
+take the input array it's not
+necessarily gonna be sorted but we could
+sort it ourselves what would be the time
+complexity well it would be uh n
+log n right that's the time complexity
+to sort and since this is an array once
+we sort it we can instantly check the
+index that we want what index are we
+going to want let's say k is 2 what
+index would we want in nums we'd want
+the second largest right so instead of
+the largest we'd want the second largest
+so how would we do that we'd just take
+the length of the array minus k that
+would give us the index that we want to
+get to but this is a medium problem so
+you can assume that there are going to
+be different solutions can we do better
+than n log n well it turns out we can
+and one solution is using a max heap
+using a heap will be slightly better
+because we won't have to sort the entire
+input array what we can do with the heap
+is you can take an entire input array
+like this one and you can heapify it you
+can turn it into a heap and you can do
+that in o of n time but just because we
+have a heap doesn't mean we've
+necessarily solved the problem because
+we don't necessarily want the largest
+element in the array we might want the
+kth largest element so from that heap
+after we've already done an n operation
+to turn this array into a heap then
+we're going to have to pop from that
+heap k times because it's a max heap so
+we're going to pop k times so we can get
+the kth largest element every time you
+pop from a heap it takes a log n
+operation where n is the size of the
+heap how many times are we going to pop
+we're going to pop k times because we
+want the kth largest so this is the time
+complexity of
+the heap solution you can see it's
+slightly better than n log n depending
+on whatever k happens to be so in some
+cases it will be better than the sorting
+approach if k is
+relatively small and that's about as
+good as you can do in terms of worst
+case time complexity but there is a
+solution that's better actually if you
+want to know the average case time
+complexity and that's what i'm going to
+be focusing on because that's i think
+the more difficult of the three
+solutions that i've talked about so this
+third solution actually can be achieved
+with o of n average time complexity not
+worst case the worst case actually
+happens to be n squared so in the worst
+case it's not that efficient but in the
+average case it is pretty efficient what
+algorithm am i talking about well i'm
+talking about the algorithm quick select
+it's pretty similar to a standard
+algorithm that you may know called quick
+sort and if you haven't heard of this
+algorithm i'm going to be teaching it to
+you today if you have then you can
+probably implement this yourself let me
+show you how to do that now so let's
+take a look at this first example and
+like i said this algorithm is going to
+be really similar to quick sort and the
+main part about quicksort is the
+partition so that's what we're going to
+do first we're going to take this entire
+array and partition it into two halves
+right we're gonna somewhat cut it in
+half one half of the array is gonna be
+every value in let's say this half of
+the array is less than or equal to every
+value in the right half of the array
+that's how we're gonna partition it so
+how can we make sure that it's always
+going to be half well it turns out we
+can't that's why the worst case time
+complexity is going to be n squared and
+the average case time complexity is
+going to be o of n because what we're
+going to do is we're going to randomly
+pick a pivot let's just pick the
+rightmost element each time as the pivot
+value when i say pivot i mean this value
+is going to decide what goes in the left
+half and what goes in the right half so
+what we're going to do now we selected
+this as our pivot we're going to start
+at the beginning of the array and we're
+going to go through each element and
+we're going to compare each element to
+this pivot value so for example 3 is
+less than or equal to 4 right so what
+are we going to do we're going to make
+sure to place it in the left half of the
+array it's already in this spot so what
+we're going to do is basically just swap
+it with itself and then we're going to
+shift our
+pivot pointer
+over here this pointer is basically
+going to indicate every time we find a
+value such as this one
+or this one that's less than or equal to
+4 then we can put it in this spot
+wherever this pointer happens to be and
+then once we've done that we're going to
+take this pointer and shift it again to
+indicate that okay next time we find a
+value like this one that's less than or
+equal to four then we're going to put
+the value in this uh position so in the
+actual code we're going to be doing this
+in place but i just drew an extra piece
+of memory just to kind of help you
+visualize it so we're going to take our
+three keep it in this spot three is
+going to go here our our p pointer is
+now going to be shifted here originally
+it was over here but now we shifted it
+over here so now we're done visiting
+this element we're going to go to the
+next element 2 is 2 less than or equal
+to 4 yes it is so we're going to go
+ahead and put this value 2 in the
+position where p points at so we're
+going to put our 2 over here p is going
+to be shifted
+by 1. so let's put p over here we find a
+we go to the next element right one
+again it's less than or equal to four we
+put one over here and then shift our p
+value so one goes here p is going to be
+over here now now we get to our first
+element that's not less than or equal to
+4 so what do we do in that case we're
+going to leave this exactly where it is
+and and again we're going to get to the
+next element 6 is again not less than or
+equal to 4 we're going to leave it
+exactly where it is and before we
+actually get to the last element we're
+going to stop so at this point we've
+we're basically done going through the
+entire array right and now our array
+looks something like this right we have
+a 4 over here and at this point what
+this p pointer tells us is that every
+element before the p pointer everything
+over here is less than or equal to this
+value four and then every value
+over here right p
+and you know all these remaining
+elements except for the last one of
+course all of these elements are going
+to be greater than 4 right because all
+of these are less than or equal to 4 so
+these must be greater than 4. that's
+what we mean by partitioning the array
+now notice just because we partitioned
+the array this is not in sorted order
+right it's not necessary the halves of
+the array the partitions are not
+necessarily going to be in sorted order
+but they are going to be partitioned so
+that everything here is less than
+everything here and one last swap that
+we're going to do now is we're going to
+take our pivot value over here which we
+selected as the rightmost element and
+we're going to swap it with whatever
+happens to be at this pointer right now
+so let's do that last swap we're going
+gonna put we're gonna replace this value
+with a five and we're gonna replace this
+value with a four so this might be a
+little hard to read but so the reason
+why we did that you're probably
+wondering why did we even do the
+partition in the first place so now we
+know all we know at this point is we
+have some value
+at this point our p this is the value we
+use to do the partition right now it's
+over here and we know that everything
+over here is greater than it and
+everything over here is going to be less
+than or equal to this partition value
+right that's good so now what we're
+going to check is where is that k value
+that we're looking for where is the
+second largest value in the array
+remember what we determined earlier that
+we can find that target value at the
+index length minus k right so what the
+length of this entire thing is six
+minus k which is two so we're going to
+go to index four this is zero one two
+three four this is index four so all we
+have determined at this point so far is
+there are two elements on this half of
+the array right so we know for sure that
+the the second largest element must be
+somewhere here we don't know for sure
+that this is the second largest element
+or that this is the second largest
+element because remember these are not
+necessarily going to be sorted in this
+case they're not so so we don't know
+it's over here but we know it's
+somewhere in this half of the partition
+right it's definitely not here and it's
+definitely not here right if the the k
+value is different right maybe k was a
+really big number then we'd get length
+which is six minus let's say k was four
+uh then we'd get two right that would
+tell us that okay the target value is
+going to be in the left half of the
+array or it could even be such that
+let's say k was equal to three then we'd
+get length which is six minus k which is
+three then we'd get the value three so
+then we'd go to index equals three and
+then we'd we'd see that this is that
+index right and then if if it's ever
+this case right where that value that
+target value is exactly at p wherever
+that partition happened to be then we've
+actually found our result do you know
+why that's the case it's because we know
+for sure that this is the kth largest
+value in this case we know for sure
+right now that this value is the third
+largest value because we know for sure
+that everything in the left half is less
+than or equal to this value and we know
+for sure that there are two values that
+are greater than this value
+so that must mean that this is the third
+largest value right so we found the
+third largest value but we're looking
+for the second largest value so
+basically what i'm getting at is we're
+going to do this recursively so instead
+of
+basically we've eliminated that these
+cannot possibly be the result so now
+we're going to run the exact same
+algorithm i just showed you the quick
+sort partition on this part of the array
+until we find that result until we find
+k equals to the second largest element
+and when we actually do that partition
+on this we're gonna use 5 as the pivot
+we're going to say 6 is greater than 5.
+our p pointer is going to be here and
+then at the end we're going to take this
+swap it with whatever is with p so then
+we're going to have an array like
+looking like this 5 and 6 where this is
+our partition
+value this is where p is at and like i
+said all of this is actually going to be
+done in place so we will have the
+ultimate array and then we're gonna look
+at k you know the length minus two which
+is gonna find put us at this index then
+we're gonna have found our result five
+is the second largest element because we
+know for sure there's at least there's
+exactly one element that's greater than
+five right there's one element that's
+greater than five that must mean five is
+the second largest element so that's
+mainly how the code is going to work so
+if you recall how quick sort works it's
+a little bit different right let's just
+analyze the time complexity right now so
+with quick sort when you do the
+partition then you have to recursively
+run uh you know quicksort on the left
+half and on the right half which ends up
+giving us a average case time complexity
+of n log n but in this case uh the
+average case is actually going to be big
+o of n because we're not going to be
+looking at both halfs of the partition
+we're only going to be looking at at
+most one half of the partition wherever
+we know that the target value happens to
+be and assuming in the average case
+every time we choose a pivot that pivot
+is going to be somewhere in the middle
+of the array it's going to be middle of
+the pack where half the elements are
+less than half of them are greater than
+it that's going to give us you can
+probably skip over this part you
+probably don't care but just to analyze
+the time complexity we're gonna have to
+iterate through the entire array once
+right so let's say that's an n operation
+then we're gonna have to let's say
+iterate through half of the array which
+is gonna be n over two operation then
+we're gonna have to iterate through half
+of that array which is gonna be n over
+4. this is an infinite series that you
+might remember from calculus this
+infinite series evaluates to 2 times n
+which we know is linear so that means
+the average taste
+average case time complexity is big o of
+n that's the average case but we know
+that actually in some cases
+we could have a pivot value let's say
+six was our pivot value right six was
+here then when we partitioned the array
+our p pointer is actually going to be
+over here so
+and let's say we didn't find the result
+then we're gonna have to look through
+pretty much the entire array except one
+element and let's and it could be uh the
+array could be organized in such a way
+that every time we choose a pivot that
+pivot is always the greatest value so
+basically each time we iterate through
+the entire array we eliminate one value
+we iterate through the entire array
+again we eliminate one value we iterate
+through the entire array again eliminate
+one value so that's an n squared time
+complexity in the worst case but like i
+said the average case is actually big o
+of n okay that was definitely a mouthful
+so now we are ready to get into the code
+it's not too difficult the code and like
+i mentioned earlier the easiest way to
+solve this problem is just two lines of
+code sort it and then return
+the length minus k you know that index
+and that actually happens to be faster
+on leak code than the quick select
+the quick select algorithm but i'm still
+going to code the quick select anyway
+because the average case happens to be
+more efficient and it's definitely a
+more interesting solution so like i said
+the index that we're going to be looking
+for the target index that we're looking
+for is going to be the length of the
+array minus k so what i'm going to do is
+just
+take k and reassign it to this just to
+make it easier for us because this is
+the index right k i'm going to use k as
+the index that we're looking for the kth
+largest element if the array was sorted
+so now
+we're going to do that recursive quick
+select algorithm and since every time
+the subarray that we're looking at and
+running quick select changes we're going
+to pass in two variables we're going to
+pass in the left and right pointer this
+tells us on which portion of the array
+are we currently running quick select on
+then when you actually implement quick
+select you choose the pivot we're going
+to choose the right most value because
+it's easy
+and we're going to have our p pointer
+initially being at the leftmost value so
+pivot is going to be set to nums of
+right p the pointer is going to be set
+to the leftmost position just like i
+showed in the drawing and then uh
+pretty much like the drawing we're just
+going to go ahead and iterate through
+the entire array except the last element
+so we're going to go from index left all
+the way to right
+right is non-inclusive in python so it's
+not actually going to reach the right
+index and we'll go through each element
+if this element nums of i happens to be
+less than or equal to the pivot value
+then we're going to swap it with
+the left index or not the left index
+actually the p index right wherever
+we're putting uh the partition values so
+if this is the case we're gonna set nums
+of p equal to nums of i and we're gonna
+set nums of i equal to nums of p you can
+do that in one line in python you don't
+need a swap helper function we can do it
+just like this
+so we're just swapping these two values
+it's pretty straight forward
+remember every time we do do a swap
+though then we want to increment the p
+pointer because next time we do a swap
+we want to put it in the next position
+okay so that's the partition and the
+last part of the partition is to swap
+the pivot value with the p index so
+we're going to set nums of p
+equal to the pivot value and we're going
+to set nums of right the you know what
+this pivot value is currently in the
+rightmost position we're going to swap
+that with whatever happens to be in nums
+of p so nums of right is going to be set
+to
+nums of p
+this might be confusing maybe because i
+use pivot so you can actually rewrite it
+so instead of using pivot i could
+actually just go ahead and write nums of
+r we're just swapping the rightmost
+value with whatever happens to be at
+nums of p right at our p index okay and
+once that is done then we potentially
+may have found a solution or we may not
+have found a solution so so let's check
+is our k value less than p
+the k is the target index we're looking
+for if it's less than p that means we
+have to run quick select now on the left
+portion of the array because we have to
+look for a smaller index so we're going
+to call quick select and for the indices
+we're going to pass in left remains the
+same but the right pointer is now going
+to be shifted towards the left right is
+now going to be set to p
+minus 1 because we can look at the left
+portion of this
+array now this partitioned array that's
+if k is less than p we could have
+another case and we're actually going to
+be returning this value whatever happens
+to be
+and the else case is if uh k is greater
+than p if k is greater than p that means
+we have to look in the right portion of
+the array so in that case we can return
+quick select
+looking at the right portion of the
+array which means our left pointer is
+going to be
+changed to be p
+plus 1 now and our right pointer is
+going to stay the same that's the other
+case the last case else is if p is
+exactly equal to k in that case we can
+just go ahead and return nums of p
+because we know for sure p is the kth
+largest element and yes since all of
+these
+end up returning something that is the
+entire code that's the entire quick
+select algorithm now all we have to do
+is actually call it so we can call quick
+select for the pointers of course we'll
+just pass in zero for the left boundary
+and for the right boundary we'll pass in
+length
+minus one so that we can run quick
+select on the entire input array and
+then return whatever the result is so
+i'm going to run it to prove to you that
+it works even though since the worst
+case is n squared and some of the uh
+test cases on leak code actually happen
+to be you know poor cases for quick
+select it doesn't run very efficiently
+on some of those test cases so this
+actually isn't very efficient on leak
+code but you know this is definitely a
+good algorithm to know in the average
+case it does beat the sorting approach
+so i hope this was helpful if it was
+please like and subscribe it supports
+the channel a lot and i'll hopefully see

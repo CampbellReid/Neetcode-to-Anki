@@ -1,0 +1,352 @@
+one welcome back and let's write some
+more neat code today so today let's
+solve the problem reverse integer even
+though this is marked as an easy
+question i would say that this is
+definitely more of a medium question and
+that's probably why this question has so
+many different uh so many dislikes but i
+don't think it's actually a bad problem
+it's definitely good when it comes to
+bit manipulation so we're given a signed
+32-bit integer x the fact that it's
+32-bit is very important here we want to
+return
+this integer x with all of its digits
+being reversed and the only catch here
+is if reversing this integer x causes
+the value to go outside of the 32-bit
+integer range which is this then
+then we basically want to return 0 if
+that's the case because we're working
+with 32-bit integers if the integer
+overflows then we want to return 0. and
+this is the portion that's actually
+going to make the the problem difficult
+because we are working with 32-bit
+integers and we cannot assume that we
+can store 64-bit integers or anything
+greater than 32-bits that's what makes
+this question difficult i think because
+if we just take a look at the standard
+procedure that we would do take the
+first example over here we have one two
+three did you know we can chop off this
+one's place digit pretty easily you can
+do that by
+modding this by 10. if we mod by 10
+we're basically dividing this by 10
+except we're getting the remainder which
+is exactly what we want that's how you
+get the ones place if i took 123 divided
+by 10 what would be the remainder it
+would be 3 of course right so then we
+can get 3. so with this digit we want to
+create a new integer right so we're
+going to start our new integer just
+being 3 right this is the result that
+we're returning it's going to be three
+let me you know write it down over here
+three right then another operation we
+can do on 123. now that we've processed
+this one's place we don't really care
+about the ones place anymore right we
+don't care about this three now we want
+to look at the next digit right so how
+can we basically chop this digit off
+well it's pretty easy you basically take
+123 divide it by 10 when i say divide
+we're not doing decimal division we're
+doing integer division so
+when you do integer division we round
+towards zeros if we divide this by 10 we
+will get 12 because we're rounding down
+we're rounding towards zero so now we
+have 12. we're going to basically repeat
+that exact same step that we just did
+over here basically now we're going to
+take 12
+mod it by 10 and now we're going to get
+the ones place which is 2 right that's
+the digit we were looking for so now we
+want to take this 2 and add it over here
+right now how can we do that well we
+have a digi we have a value three so
+let's take three multiply it by ten what
+do we get we get thirty right why did we
+multiply it by ten because we wanted to
+shift this three to the left by one
+because now we're going to take this 30
+add 2 to it why are we adding 2 because
+that's the digit that we just computed
+up above right so we add 2 to 30 now we
+get 32 right so we've almost we're
+almost done reversing this integer right
+if you take a look over here we started
+with 123 we've reversed the first two
+digits right but now we want to reverse
+the last one which is one and that'll be
+pretty easy we'll just continue the
+steps that we've just done up above so
+then we'll at the end we'll have 321
+and then we'll return that which is
+exactly what we wanted to do and believe
+it or not we can do this exact same
+procedure on negative numbers and it
+works out the exact same so that's the
+good thing the only downside is we
+haven't covered what are we going to do
+if the digits overflow so let me kind of
+explain that to you this range that we
+have to kind of meet oh in the
+description they say that if the value
+goes out of bounds so take a look at the
+left they say if it goes out of bounds
+from this range then return 0. now what
+is the value negative 2 or 2 to the
+power of 31 negative right negative 2 to
+the power 31 what is that value well you
+can see over here this is that full
+value these are the digits what is 2 to
+the power of 31 minus 1 this is that
+value so what if we had a example that
+looked basically was too
+large right what if the value was too
+large to fit what if the value was
+actually larger than the max value that
+we can possibly have what if the value
+was two one four seven what if the value
+was the exact same as this except plus
+one you can see that this is the exact
+same value except i added one so this is
+an eight instead of a seven and actually
+what if the input value was this
+basically what if the input value was
+the reverse of the max digit plus one
+right
+let's say this was our input value right
+and let's say we reversed it if we
+reversed it this is the reversed value
+up above right this is what we would get
+but what we know is this integer is
+actually too
+large this integer is greater than the
+one up above so this would not even fit
+into memory so we would need to return
+zero now how could we detect that this
+integer overflows without actually
+calculating it right because we can't
+have this digit this digit is impossible
+to have in 32 bits so how would we
+detect it without actually building this
+number without actually taking this and
+reversing it all the way to here well
+that's the trick that i'm going to show
+you we actually are are going to reverse
+this input digit by digit except for the
+last digit we're not going to reverse
+we're not going to add the last digit
+yet what we're going to do is once we've
+reversed this right we have all but the
+last digit we're going to check okay is
+this value exactly equal to
+this value basically all everything from
+the max digit except the last digit how
+are we going to actually get this
+basically we can take the max digit and
+divide it by 10 right because dividing
+by 10 we'll take the ones place digit
+and chop it off right so if we do that
+like this we're going to check okay is
+is our reversed integer equal to this
+one yes it is right it's exactly equal
+in this case okay and then the next
+question we're gonna ask ourselves is
+okay we're trying to also we're now
+trying to add another digit we add the
+ones place digit okay so how do we know
+then if if the resulting integer is
+going to be greater than this max
+integer up above how do we know that
+well all we have to do since we know
+that this is equal to this now all we
+have to do is compare the ones place is
+eight
+greater than
+this integer we have over here which is
+seven in this case it is greater than it
+right so then we're not actually going
+to take this eight digit and add it to
+here add it to this entire integer we're
+actually going to return zero
+immediately so that's one trick that
+we're gonna basically to basically to
+detect if we go out of bounds and
+basically i just showed you the example
+of what we would do for positive
+integers the exact same is basically
+going to be true for negative integers
+except instead of checking if this digit
+is greater than the ones place of the
+max negative integer or the minimum
+negative integer we're not going to
+check if it's greater we're going to
+check if it's less than because this is
+a negative number right so that's one
+way we could detect if we did go out of
+bounds another way we can actually check
+is
+taking away this final digit right this
+one's place digit and taking away this
+one's place digit again and we do know
+how to do that in the code so i won't
+explain it but if we were comparing all
+of these digits right and we were
+comparing all of these digits and let's
+say we knew that yes we are about to add
+another digit we know for sure we're
+going to add another digit then what
+we're going to ask is or is this portion
+down here that i have squared up is this
+greater than this over here right for
+example over here that we have a value
+we have a value 2 followed by 8
+different digits right so suppose this
+value over here that i have written over
+here it wasn't 2 followed by 8 digits it
+was a 3 0
+0 0 0 0 followed by 8 0's right then we
+know for sure this is actually larger
+than this integer i have up above since
+we know this is larger and let's say
+we're adding another zero to it so now
+we have nine zeros then we know for sure
+it's gonna be greater than the max
+integer up above because that max
+integer starts with a two followed by
+nine digits right we know for sure this
+is gonna be greater so basically that's
+how we're going to compare it i know
+this sounds confusing right but to put
+it simply if we compare this with this
+up above and we know that this is
+greater than we know we're out of bounds
+and then we're going to again have to
+return zero i know this seems really
+complicated but let me show you the code
+and it's actually gonna be probably even
+more simple this is definitely why i
+would say this is more of a medium
+problem not an easy problem okay so now
+let's get into the code and i already
+wrote out the code because i think it's
+going to be more easy to understand if
+you can kind of see the entire structure
+written out so in most languages you can
+find the max integer and minimum integer
+in 32 bits right this is the max integer
+this is the minimum integer and i have
+those coded up above in python the math
+it kind of works out a little bit
+differently compared to most languages
+but i'm basically doing the with the
+following while loop i'm doing what i
+explained earlier in the video so we
+have our result initially zero right
+we're passed in some integer x so while
+this integer x is not zero let's
+continue the loop right now we're in the
+looping phase we're going through each
+digit of x what we want to do right just
+like i mentioned earlier we want to take
+x and mod it by 10. now you would you're
+probably wondering why can't i just take
+x and mod it by 10 why do i need this
+helper function or whatever uh basically
+because python is kind of dumb it does
+some unexpected behavior negative 1
+modded by 10 should not be 9 in most
+cases but python is a little bit
+different than most languages in most
+languages you can just do the mod
+operator but we're doing math f mod to
+get that digit in python once we have
+that digit we're clear right then we
+want to take x and divide it by 10.
+you're wondering why can't we just
+divide it by 10 well python's a little
+bit weird so
+we're doing we're we're dividing it by
+10 and then casting it back to an
+integer to make sure that we can round
+towards zero in most languages you won't
+have to do this you can just take x
+divided by 10 but python's a little bit
+weird so excuse that so then we we've we
+have the digit and we took x and we
+chopped off the digit so that's good
+next we want to do the stuff that i just
+mentioned actually right so i want to
+take that result right we have a digit
+we want to add it to the result but you
+can see i'm doing a couple if statements
+before i actually execute this line down
+here where i'm actually taking that
+digit and adding it to the result right
+result multiplied by 10 and then add
+that digit which is what we discussed
+earlier but before i do this i have to
+make sure that this is not going to
+overflow how can i guarantee it's not
+going to overflow well if we take the
+current result and we take the max value
+divided by 10 why are we taking this max
+value up above and dividing up by 10
+because we don't want to look at that
+last digit yet because we can't look at
+that last digit until we know for sure
+that this value is not going to overflow
+so we're going to compare every other
+digit so if this result is greater than
+max divided by 10 then we're going to
+return 0 because we know it's going to
+overflow regardless of what that digit
+is it's going to overflow because uh the
+result the result is already larger than
+max divided by 10. so that's one case
+the other case is if the result is
+exactly equal to max divided by 10 right
+if it's exactly equal to this max
+portion except the last digit and if if
+that's if that's true and if the digit
+is greater than 7 where did i get 7 from
+well basically this is max modded by 10.
+if you take this max integer mod it by
+10 you're gonna get the ones place which
+is seven so if the digit is greater than
+seven and this previous portion executed
+as true then we're going to return zero
+so that's basically the case if the
+resulting integer is going to be too
+large the bottom if statement is the
+exact same thing except if the resulting
+integer was going to be too small if it
+was going to be smaller than the minimum
+integer we have up above so if that was
+the case then we'd return 0 as well and
+if if those don't execute then we can go
+ahead and finally take that digit and
+add it to the result and then we can
+when once the while loop is done
+executing if the result has not
+overflowed then we can return that
+result so that was a lot of information
+but i hope that these if statements are
+finally starting to make sense and the
+good thing is once you run the code it
+is about as efficient as it can possibly
+be so i hope that this video was helpful
+if it was please like and subscribe it
+supports the channel a lot and i'll
+hopefully see you pretty soon thanks for
+watching

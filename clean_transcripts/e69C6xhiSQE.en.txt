@@ -1,0 +1,374 @@
+everyone welcome back and let's write
+some more neat code today so today let's
+solve another graph problem
+walls and gates so we're given an m by
+n grid where each position
+could have three possible values a
+negative one which represents a
+wall aka an obstacle that we're not
+allowed to
+visit we're not allowed to visit these
+walls a
+zero which identifies a gate so
+this is an example of a gate in this
+case and the third value
+is infinity which basically represents
+an empty room
+and basically for every single empty
+room aka every position that's marked as
+infinity initially we want to identify
+what's the nearest gate to that room and
+then we want to take the distance
+uh from that room to the nearest gate
+and then replace
+that infinite value with it so and
+if it is impossible basically if an
+empty position cannot reach a gate
+in our graph then basically we're going
+to leave that position as
+infinity so for example let's take a
+look at this example
+uh the easiest one over here right how
+far away is this
+empty room from a gate well it can go in
+two directions it can go down
+which is an obstacle so we're not
+allowed to travel in that way
+we can't go up or to the right those are
+out of bounds but we can go to the left
+and of course right next to it happens
+to be a gate so what we're gonna place
+here
+is a one meaning this is one position
+away from a gate
+and similarly this one how far away is
+this from a gate will one
+two three positions right from a gate so
+we could put a three here we could put a
+two here and a one here
+uh what about this one we could go one
+two three so it's three positions
+from this gate but it happens to be that
+there's a closer gate
+if we go to the right and then we go up
+right so the closer gate is actually two
+places away so we're gonna put two
+in this position and now what happens if
+there was a gate over here what would we
+mark these two as well basically they
+start out as
+infinity and we would leave these two
+positions as infinity
+so any positions that cannot visit a
+gate are going to be
+remaining as infinity so the first idea
+that you might have for this problem is
+basically for every position we want to
+know what's the closest gate why can't
+we just run a dfs right
+basically a dfs until we reach the gate
+or you know we reach as many positions
+as we can when we return what was the
+closest gate
+to that position right and then do that
+for every single position in the entire
+grid now what's the time complexity
+going to be
+of that well a dfs is going to basically
+be the size of the grid and we're going
+to do that for every single position in
+the grid so basically it's going to be
+something like m by
+n squared so the question is can we do
+better than this big o time complexity
+well let's try out a bfs
+solution right we tried dfs let's try
+out breadth first search and see
+what that leads to us let's say we
+started our bfs
+at some arbitrary position like this one
+is it possible that we can eliminate
+repeated work if we do that
+well we're gonna start here and then
+visit in all four directions
+and see you know what's the closest gate
+that we can get to
+so starting here we have a distance of
+zero it takes us a distance of one to
+get to these positions and then finally
+we can get a distance of two
+to get this position right but since we
+don't want to revisit the same node
+twice the same position twice
+we're gonna you know do exactly that
+once we get to a position we're gonna
+leave it as visited so
+you know if we go from here to here it
+takes us two positions so you know then
+we can say okay for this position it
+took us two but when we go
+up right we get to this position you
+know we can't really go in any other
+direction so basically this is going to
+be remaining as a dead
+end we're never going to get a distance
+in this position right because we don't
+want to revisit the same position
+twice we can't go back in the direction
+that we came from
+so a bfs solution starting from the
+rooms is not going to work if we want to
+get an actual
+o of m by n solution it's not going to
+work if we do it from the rooms but
+let's reverse our thinking a bit why
+don't we do a bfs solution
+from the gates so for example from this
+gate we can say okay let's mark all
+adjacent rooms basically as saying okay
+all of the adjacent rooms are one
+distance away
+from this gate and then let's continue
+that so from
+you know this room doesn't have any
+other rooms adjacent to it but this room
+does
+so we can say okay for this room it's
+two in this room it's also
+two this is two positions away from this
+gate and we continue right we say okay
+this room is three
+and continue from here this room is four
+and from here
+similarly right we'd say okay this is
+three this is four
+and this is four right but is that
+actually true is this room
+four positions away well we forgot about
+this gate
+right so a better way of doing this
+would be to
+simultaneously do a bfs from both
+gates at the exact same time so in that
+case if we ever reach
+a position so let's let's see what
+happens when we do a bfs simultaneously
+so from here we're going to say this is
+one these two are one position and this
+is also one position now
+from all of our ones we're going to
+continue the bfs right so
+from this one we'll say these rooms are
+two away from this one we'll say this
+room
+is two away right now from this
+uh room right this is two away we're not
+gonna go to this position and say that
+it's three positions away because with
+this has already been visited
+we've already found the minimum distance
+that this is away
+from a bfs right so every time we expand
+one layer
+we're saying okay first let's find all
+the rooms
+one distance away from a gate next let's
+find
+all the rooms two distance away from the
+gate
+and three and we keep doing that until
+every single
+position in our grid has already been
+visited or we
+basically cannot continue and we know
+bfs solutions are implemented with a q
+so once our q
+is empty that's how we know we can stop
+so let's just continue a little bit more
+so from this to
+the only unvisited neighbor is this one
+so this is three
+positions away this one is also here
+so now we're going to do a bfs from the
+remaining threes
+we can see only this three actually has
+a neighbor
+so we'll say this one is going to be
+four and when you take a look at the
+actual
+output that they built our solution
+exactly matches what they did and we
+didn't have to revisit the same node
+twice
+all we had to do was initialize our
+queue with the
+two initial positions for the gates
+and then expanding outwardly basically
+incrementing the distance every time we
+complete a
+full layer of our bfs uh traversal
+and that actually led to us having a
+time complexity of
+m by n we're also going to have that as
+the memory complexity because we're
+going to have a visit set to make sure
+we don't visit the same position twice
+but once you kind of know that this is
+going to be a bfs from multiple sources
+at the same time implementing the code
+is pretty straightforward if you know
+how to do bfs
+so first things first let's get the
+dimensions of our grid so the number of
+rows and the number of columns i usually
+like to do this at the beginning
+so and we're also going to have a visit
+set that
+is going to make sure that we don't
+visit the same position multiple times
+and we're also going to have a q which
+initially
+let's uh set to being empty but we're
+gonna initialize that with the
+gates first of all right so now let's go
+through every single position and
+actually initialize
+our cue right and we know we're just
+gonna do that with the gate so we're
+going to go through the entire grid
+so iterating over the entire grid and
+even though we're doing this it's not
+actually going to change the overall
+time complexity so we're going to go
+through every position
+if rooms at this position is equal to
+a gate meaning it's equal to a zero
+then we're going to add it to our queue
+so we're going to say q dot append
+this position and let's make sure to add
+it to the
+visit set because we don't want to have
+to visit this same position twice
+and now we can actually start doing our
+bfs so initially the distance is going
+to be zero
+because we're gonna be popping the
+actual gates first of all so
+we're gonna say while q is non-empty
+we're going to go through every single
+position in the queue currently right
+basically
+this layer of the queue and
+so we're going to be popping from the q
+so pop left
+from this q we're going to get the
+coordinates of the gates that we
+initially added right that's going to be
+the first
+layer the first layer we're going to be
+popping are the gates that we just added
+right
+so for each gate we're basically going
+to say okay
+let's change this gate to being the
+current distance
+so since the current distance is
+initially zero and remember the gates
+start
+out as having a value of zero we're not
+actually going to be modifying the value
+of the gates but the reason i'm putting
+this line here is because
+after we pop the gate layer the next
+layer that we're going to add to our
+queue is going to be all the rooms
+that are one distance away so after this
+for loop
+let's make sure that we remember to
+increment our distance
+by one every time we complete a full
+layer of the queue
+and so basically for this room let's
+just go ahead
+and add room we're going to add every
+single
+neighbor of this room and you can see i
+haven't actually defined that function
+yet so
+let's do that up above once i actually
+write this out so basically what i'm
+doing is
+going to be adding all four adjacent
+rooms to the queue
+and and we obviously know that some of
+these rooms might be out of bounds some
+of them might have already been visited
+that's why i'm going to put this in a
+helper function to basically abstract
+some of that logic for us so let's
+define the function up above over here
+so add room we're just going to pass in
+a couple coordinates
+so basically if this row is
+less than zero or if the row is out of
+bounds meaning it's too
+big meaning it's equal to the number of
+rows
+or the exact same thing for column if
+column is less than zero
+or column is too big or
+if this position row column has already
+been visited
+or one last condition basically if
+this room is a wall
+or an obstacle right because remember
+not every position in our graph
+is a empty room it's it could it's
+possible it could be
+a obstacle meaning it's equal to
+negative one so if
+any of these above conditions is true
+we're going to immediately return
+because this is an
+invalid room so we're not going to
+actually add it to the queue
+or the visit set but if it's not invalid
+that's when we can go ahead and say okay
+visit
+dot add to the hash set and go ahead and
+queue
+dot append to the hash set as well
+right so basically you can see why i'm
+putting this stuff inside of a helper
+function because we don't want to have
+to call that four times
+and i don't really want to put a loop in
+here because i just think it's kind of
+messy i'd rather just write it out like
+this
+but so with all of that done we can see
+that we have added the rooms we're
+making sure to increment the distance
+every time we complete a
+layer and we're basically going through
+rooms labeling what's the minimum
+distance
+from that room to a gate once we're done
+with that we don't actually have to
+return anything because we just have to
+modify
+modify the room's 2d array in place
+so this is all the code that we're
+actually going to have to write so you
+can see that this solution is
+efficient we're basically visiting the
+entire grid a couple times i think two
+or three times because of course we have
+this initial loop and then we actually
+have to run our bfs solution
+but it's still a linear time solution
+with respect to the size
+of the input array so i hope that this
+was helpful if it was
+please like and subscribe it supports
+the channel a lot and i'll hopefully

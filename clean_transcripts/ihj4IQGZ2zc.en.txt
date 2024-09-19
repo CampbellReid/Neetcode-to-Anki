@@ -1,0 +1,499 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+let's solve a pretty fun problem
+construct a binary tree from a pre-order
+and in order traversal so we're actually
+given
+two integer arrays representing one
+the pre-order traversal and two the
+in-order traversal
+of a binary tree and our
+goal is to take these two traversals
+and the orderings of those nodes and
+then can
+reconstruct basically the original
+binary tree
+that the traversals are from and it is
+technically possible
+these two traversals have all the
+information we need
+we just need to take that information
+and then deconstruct it
+and then reconstruct this binary tree
+from those so just to verify it let's go
+through this
+tree and actually do the pre-order
+traversal first of all so
+first we know pre-order traversal is you
+start at the root and then you process
+the current node
+then you do the left subtree then you do
+the right subtree right
+so let's just let's just do the
+pre-order traversal so we're starting at
+the root we
+do the root node first that's how
+pre-order works so then we get a three
+next we're going to go to the left sub
+tree and then
+and then do pre-order traversal on that
+left subtree
+we see nine right so we're going to add
+nine to our
+pre-order traversal and it doesn't have
+any children so we're actually done with
+nine we're done with three now it's time
+to do the right subtree
+in pre-order traversal so we start at 20
+add
+20 to our pre-order
+go left we see 15 add 15 to the
+pre-order
+15 doesn't have any children now we go
+to the right
+subtree seven so add seven it's our last
+node
+to the pre-order traversal right and
+this actually take a look at this take a
+look at all the values it matches
+exactly
+with the input so this is the uh
+pre-order traversal now let's just
+validate the in-order traversal
+as well inorder traversal is we start at
+the
+root right we take care of the entire
+left subtree first then we take care of
+the root node
+and then we take care of the right
+subtree with
+in order traversal that's the general
+order so let's validate
+the inorder traversal of this tree so
+we're starting
+at one we're we're starting at the root
+three but we're not going to add three
+yet first we're gonna do the left
+subtree
+we see we have a nine the nine does not
+have any left or right children so now
+we can add that nine
+to our inorder traversal remember we're
+doing this in order
+left to right we go back up to the root
+now we can process the root we can take
+three and add it to the inorder
+traversal
+and now we're going to do the entire
+right subtree
+so we get to 20 but we're not we're
+going to wait for 20. we're going to
+first do the left
+subtree 15 15 is the only value here so
+it doesn't have any children add 15 to
+the inorder traversal
+now we can add 20 because we've done the
+left subtree
+20 is added and then last we go to the
+right subtree
+only one value seven let's add that
+seven to
+our in order now let's take a look at
+these
+five values notice how they are the
+exact same
+five values in the exact same order as
+that in-order traversal that we were
+given
+so we can see that the
+that what they gave us was correct but
+now the question remains how can we
+actually take
+these two uh arrays these two
+traversals and construct this tree well
+it's definitely possible
+let me show you how to do that right now
+so i just want to let you know that
+there's actually
+two things two main facts that we're
+going to be using to construct this tree
+so the first
+fact is that the first value
+in pre-order traversal is always going
+to be the
+root right we remember when we do
+pre-order traversal right
+we're always processing the root first
+so if i was taking
+the pre-order traversal that we're given
+right we we
+remember this is the pre-order traversal
+that we're given the
+first value in pre-order traversal is
+always going to be the root so
+this is the first value three it's
+guaranteed
+to be the root because that's how
+pre-order traversal works the first
+value
+in pre-order traversal is always the
+root node now we don't know about the
+rest of these
+right but we can recursively
+construct now the left subtree and the
+right subtree right we can
+we can we're done with this three right
+now our goal is to reconstruct the left
+subtree
+hey lucky for us the first value here
+is always going to be the root of
+the of the left subtree right because
+that's how pre-order traversal works
+right
+so that's one thing that we're going to
+use the first value is
+always going to be the root and then we
+can take the sub
+list right we can remove the three we
+don't need to look at it anymore then we
+take the sub list and then
+basically we're going to do this
+recursively that's what i'm telling you
+okay we can construct the root but we
+need more information than that right
+and then we're let's say we're done
+looking at this three now i want to take
+this uh array right and i want to know
+which values are going to go in the left
+subtree and which are going to go on the
+right subtree
+from looking at the actual tree itself
+we know the answer right we know that
+this is where we're going to cut our
+list right
+the 9 is going in the left subtree
+right these three values are going in
+the right subtree but how can we
+determine that
+well that's what we need our inorder
+traversal array for
+okay so now let's take a look at the
+input array we're given for the inorder
+traversal and by the way let me just
+mention that
+every value in the traversal is
+guaranteed to be unique
+that's true for both of the traversals
+the inorder and the pre-order every
+value is going to be unique because
+every value in the tree
+is going to be unique but okay so far we
+know that this first
+value three is gonna be the root right
+so now let's
+find three right we we know three is the
+root right
+so we removed it from our first list
+basically right
+but now let's find it in our in
+order list we find it's right over here
+3 is in this index right so we know we
+don't need this 3 anymore right we
+already created that
+node but so now what does
+this in order array tell us
+notice how this is convenient for us
+every
+value to the left of the 3 that we just
+created the root from
+every value over here which is only 9 is
+going to
+go in the left subtree and every value
+to the
+right of 3 is going to go in the right
+subtree that's
+really convenient for us why is this the
+case because that's
+basically the purpose of in-order
+traversal right
+it guarantees that we're going to go
+through the tree in order right from
+left to right basically right so if we
+see the three here
+and that's and this is the position in
+the array we know everything
+here is going to be in the left sub tree
+everything here is going to be in the
+right subtree that's what it tells us
+this is really convenient for us because
+we can count it right we can see there's
+exactly
+one value that's going to go in the
+left subtree and there's exactly three
+values that are going to go in the right
+subtree so what we can do
+is we can take we can take the remainder
+of the pre-order
+array and then partition it right
+partition it over here because we know
+one value is going to go in the left
+subtree and three
+values are going to go in the right
+subtree so that's what we're doing and
+we're going to continue this right
+so now let's recur and by the way in the
+code we're going to do this recursively
+let's create the left subtree
+we know that okay this is the in
+order portion right and this is how
+we're gonna partition
+it from pre-order right we see this is
+the array to create the left subtree the
+thing here is
+notice how this is size one right
+there's only one value here and there's
+only one value here right that tells us
+that the sub tree we're creating is only
+gonna have one node in it right so
+nine is the only node in the left
+subtree so we're going to create that
+node put the value there and now we're
+basically
+done with this left sub tree obviously
+because there's no more
+uh you know there's no more nodes left
+in this general area right this these
+values are reserved
+for the right subtree this is reserved
+for the right subtree
+okay so now we're looking at the
+pre-order portion right there's three
+values just like in the in order portion
+and remember how are we gonna create the
+root node of this subtree now we always
+take the first value in pre-order
+traversal it's
+20 right the value is 20 so we're going
+to take this
+value 20. we don't need it anymore
+because we're going to create a
+a node from that value and so now we
+need to know which values are going to
+go in the left sub tree and which are
+going to go
+in the right subtree we know by finding
+20 right 20 is the value let's find 20
+in our in order traversal it's over here
+by the way in the code i'm going to be
+calling the index of this
+mid so m for mid we find the
+index of 20 right we know we don't need
+20 anymore so we can get rid of it right
+we see that there's one value on the
+left of 20
+and there's one value on the right of
+20.
+this tells us that one value is going to
+go in the left subtree and one value is
+going to go in the right subtree right
+just like we have over here
+so now let's construct that left subtree
+we know it's going to be exactly size 1
+from looking over here so we take this
+15
+right where can we now our job is to
+recursively create the left subtree
+we're going to take this 15 since it's
+the first value in the subarray for
+pre-order right we know that it's going
+to be the root of
+the current subtree we're at so let's
+get rid of this this 15.
+let's create that node right 15 over
+here is going to be a node
+and there's no more values left in this
+subtree because we know it's only going
+to be size
+1. okay now we're creating the right
+subtree
+we know that there's only one value in
+the right subtree from looking over here
+with and since there's only one value
+left in general it's a seven
+we can make a node from it and then
+we're done
+we know we're done because we've
+basically gotten rid of every single
+value
+in our arrays pre-order and in order
+so using these two arrays we were able
+to create our
+tree correctly and just let me just
+summarize what we're actually doing
+we're not doing a lot
+we don't need a ton of information
+remember
+the first value in pre-order
+the pre-order array is always going to
+be the root right that's just how it
+works and then once we
+take that value create a node from it
+and then when we try to
+look that value up in in order traversal
+right
+then we can get some subarrays
+right we can take we can take the length
+of the left
+and right sub array so the right sub
+array is three
+and the left sub array is one note
+now these counts one and three they tell
+us
+how to partition the pre-order traversal
+so take a look at the pre-order
+traversal
+one tells us that we're gonna cut over
+here because this needs to be size
+one this needs to be size three
+and then from this subarray this
+subarray with only one value
+we are going to recursively run the
+algorithm
+to create this left subtree and with
+this sub array we're going to
+recursively run the algorithm
+to create this subtree and we're just
+going to continuously repeat that
+process until we get to our base cases
+and until we're finished with every
+single node that we need to create
+so now let me actually show you the code
+it's actually very short
+less than 10 lines okay so as i
+mentioned this is a recursive algorithm
+so we always want to start with the base
+case and the base case is going to be
+what if we don't have any nodes
+to traverse through the two arrays that
+we're given
+that means we can return null or
+basically we don't have to create
+a tree so if pre-order is empty or
+in order is empty then we can return
+null we have no values so we don't need
+to create a tree we can return null
+otherwise we're going to create a tree
+node right
+and what's the value of that tree node
+going to be well it's going to be
+the first value that happens to be in
+the pre-order
+array just like i showed you right
+always going to be the first value so
+it's always going to be
+index of zero and then whatever that
+value was
+we want to find the position of it in
+the in order array so inorder dot
+index so we want the index of that value
+pre-order of zero
+and we're going to get it in mid now
+this is the part
+where we're going to build the subtree
+so root.left let's create the left
+subtree and we're going to do this
+recursively as i mentioned
+so self.build tree we're calling the
+function that we're
+inside of and the convenient part about
+python is we can do
+sublist so that's going to cut down our
+code quite a bit so we need to pass in
+the new
+pre-order and in order arrays or the
+sub-arrays more likely so pre-order
+what are we going to pass in for the
+left subtree of
+pre-order well mid tells us
+mid tells us how many nodes we want the
+index
+of basically the value of mid tells us
+how many nodes we want in the left
+subtree so what i'm going to do is for
+pre-order
+we're going to start at index one we're
+basically skipping the zero index
+because we already just created a node
+for the zero index we're starting at
+index one going all the way
+up until mid plus one in python
+this mid plus one is non-inclusive so
+this sub array is really just
+a pre-order from index one to mid so
+that's what we're doing and we're going
+to pass in the in
+order portion that we need as well and
+that's just going to be
+from the beginning up until mid but not
+including mid right
+this probably makes more sense if you go
+back and look at the picture but
+basically we're just creating the
+appropriate sub-lists
+that we need to create the left subtree
+we're going to do basically the exact
+same thing with the
+right subtree and i would encourage you
+to draw this out
+yourself to basically reinforce what
+you're learning or
+watching me do right now so to build the
+right subtree
+we need every value after this sub list
+right so we can just say starting at
+index
+mid plus one going until the end
+of the list that's how you do it in
+python we're starting at mid plus one
+and going until the end of that
+sub list just like i showed in the
+picture and
+for in order we can actually do the
+exact same thing
+we want every node to the right of
+mid in in order right from our inorder
+array we want every value to the right
+of this
+index mid so we can do that with mid
+plus one start starting at mid plus one
+and then going until the end of the
+array so now let me close this function
+and so this is literally all you have to
+do the reason it's so easy
+is mainly because i'm using python but
+you could you could
+read you could do this code without
+python it would probably just be a
+couple extra lines
+you might need to pass in a couple extra
+parameters into this build tree function
+basically just these indices that i'm
+doing you might not be able to create
+sub lists
+but you can at least create you can at
+least pass these indices into your
+functions
+in java and other languages so with that
+we have actually created our
+uh tree so the only thing left for us to
+do is return that tree
+so with that being said this is the
+final solution it's probably
+less code than you would have predicted
+but the problem is a little tricky
+but it's kind of enjoyable at least in
+my opinion
+so i hope that this was helpful if you
+enjoyed please like and subscribe it
+supports the channel a lot and i'll
+hopefully

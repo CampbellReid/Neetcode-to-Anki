@@ -1,0 +1,482 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+let's solve the problem time based key
+value store and this is one of my
+favorite problems honestly on all of
+late code because there's not a lot of
+fancy tricks involved you can really
+logically uh you know dig your way
+through this problem so you can go ahead
+and read through this description if you
+want but i'm going to go ahead and jump
+straight into the explanation because i
+think this is best understood by
+actually going through an example so our
+whole objective here is to design a key
+value store so it's kind of like a hash
+map we're gonna have some key value and
+then we're gonna have a value associated
+with that key but we're actually not
+just gonna have a single value we're
+gonna have a list of values
+uh so plural so it'll be a list and in
+that list we're gonna have a pair of
+values so it's not just gonna be a
+single value each value is gonna have a
+time stamp associated with it so for an
+example we can have a key value of let's
+say foo and we would have a list of
+values associated with that and one of
+the values the pair of values right
+because we're going to have a value and
+then a time so
+the value let's say is going to be bar
+it's a string in this case and the time
+stamp associated with it let's just say
+in this case the example it's going to
+be integer so let's just say it's 1 in
+this case and then we could have a
+second value right associated with it as
+well and that will have its own
+timestamp as well right so basically
+it's going to be a list of values the
+and the values themselves are going to
+be pairs a value and then a timestamp
+associated with that so it's not super
+complicated but the main operations that
+we're going to support are actually
+pretty simple just two operations
+actually three if you count the
+constructor so yes we're going to have a
+you know constructor because it's an
+object that we're designing a class and
+the two operations we want to support on
+this key value store are going to be set
+and get which is pretty straightforward
+that's what we would expect so let's
+just go through this example and i think
+the problem will actually make a lot of
+sense to you so the first operation we
+have is a set operation the key is going
+to be the first value foo the value is
+going to be bar and the time stamp
+associated with it is going to be 1. so
+let's put the first value here it's
+going to be bar
+and the time associated with it is just
+one and now we get the second operation
+get what are we getting we're getting
+the key uh associated with foo
+and the the second parameter in our get
+operation is actually going to be the
+time stamp so when we do a get operation
+normally on a hashmap we just need a key
+but in this case we need two values the
+key and the timestamp right because we
+know that for a single key it's not
+enough to identify a value right because
+there could be multiple values over here
+we need the time stamp to identify the
+actual value in this case we were given
+a key value of foo and we were given a
+timestamp of one right you can see up
+above yeah it's one and by the way in
+case i didn't mention we're actually
+going to be implementing this this
+entire key value store with a hash map
+so
+you know the keys are just going to be
+normal
+hash map keys and the value in this hash
+map is going to be a list of values
+with you know this schema right this the
+list of values are going to be pairs so
+when we use the key in the hashmap we're
+going to get a list of values right in
+this case this list only has one pair of
+values bar is that value and remember we
+were given a timestamp of one so in this
+list we're gonna basically iterate
+through the list to find the pair that
+has a timestamp of one in this case we
+did find it right it does exist so then
+we can take this and uh the thing i
+think we're returning is just the value
+itself so we can return bar and you can
+see up above that's what they ended up
+returning for this operation so we did
+our first get operation that's great now
+let's do our second get operation in
+this case we're given this pair we're
+given the key is going to be foo so
+right we can go to the same list and the
+timestamp is actually three in this case
+but if you scan through the entire list
+that we have here you can see that none
+of these have a timestamp of three
+associated with them so what does that
+mean are we just gonna return null in
+this case no because remember what we're
+doing here we're designing a key
+a key value store based on time so we
+set this value at time one now it's time
+three so the way this problem wants us
+to handle the timing is basically if you
+don't find an exact match in our in our
+key value store then just return the
+most recent one so in this case we're
+doing
+the time is three right just return the
+most recent one and by recent they mean
+the the closest value to three that's
+less than three so for example there's
+only a single value here right so in
+this case we only have a single one and
+the time with that is one so of course
+one is going to be the closest to three
+but what if instead we had something
+like four
+four is close to three but it's greater
+than three so that's not allowed we
+wanna find the closest timestamp that's
+less than three now if we had multiple
+if we had another bar here or some other
+value and the time associated with that
+is two then in that case uh which of
+these two would we want to return we
+would want to return this one even
+though the value is the exact same but
+we'd want to return this one because it
+has a closer time to the three but in
+this case we only had a single value so
+we're just going to return bar again and
+you can see in the explanation and the
+output that is the correct value so we
+return bar in this case okay so just
+cleaning up what we've already done so
+far but now we're at a second set
+operation the values associated with
+this set are well the key is foo so same
+you know slot we're gonna go over here
+and the value in this case is bar two
+pretty simple and the time associated
+with it is four so that's the timestamp
+uh bar two and the time is four and by
+the way the set operation that we're
+doing is always going to be a constant
+time operation big o of one right
+because the you know so finding the key
+is an o of one operation because we're
+using a hash map and then uh you know
+this list of values is gonna be a list
+and every time we add a value to this
+list we're always going to add it to the
+end of the list so we can do that in big
+o of one time
+so not too bad but where things get
+tricky uh now that we're done with the
+second set operation where things get
+tricky is when we get to the get
+operation so now we're at another get
+operation the key is foo and the time
+stamp is four so we're going to go to
+the same slot here and then now that we
+actually have more values you're
+probably getting at what the bottleneck
+is so in this case the timestamp is 4.
+so we want to look in this list we want
+to look for an exact match and if we
+can't find an exact match we want to
+find the closest value that's less than
+4. and how exactly are we going to be
+doing that if we just do a linear scan
+through the array worst case it's going
+to be linear time now that's really not
+that bad but the question is can we do
+any better well obviously very few
+algorithms are better than big o of n
+one of the algorithms that's better than
+big o of n is binary search which we
+know runs in log n time that's
+definitely an improvement over big o of
+n but that would require that our values
+are sorted but what exactly do these
+values have to be sorted by do they have
+to be sorted by the value or by the time
+stamp well since we're searching for an
+exact match with the time stamp these
+have to be sorted by the timestamp so
+again not too bad what are we supposed
+to do though are we supposed to sort
+this every single time we want to do a
+get operation that's not going to make
+things any better because if we have to
+sort the time complexity is not going to
+be log n and it's not even going to be n
+either it's going to be n log n so
+that's not an improvement at all and so
+this is the part where we kind of have
+to be smart let's go down and read the
+problem carefully if you scroll all the
+way down and read the fine print you can
+see that all the time stamps every time
+we we set a value the timestamp is going
+to be in increasing order strictly in
+increasing order so how does this help
+us well basically it means if we have a
+list here and every time we set a value
+we just add it to the end of the list
+then the list is actually going to be
+sorted by the timestamp by default so
+it's already in sorted order so that's
+why
+we don't have to sort it again we
+actually can just run a binary search
+that's really good for us but what if
+you you know what if you didn't really
+read the fine print well the way this
+problem is set up i think it's kind of
+intuitive that if you are in a real
+interview the best question would be to
+ask every time we set a value is it you
+know is the timestamp gonna be in
+ascending order because you know the way
+a set operation would work in real life
+is you would use the the current time
+that you know the current time that
+you're setting the value and you know as
+most of us know time really just flows
+in one direction so it makes sense that
+these
+you know the list that we're setting
+would already be in sorted order but
+again that's kind of why i like this
+question because even if you don't read
+the fine print you might think to
+yourself are the set operations going to
+be in sorted order and that would be a
+really good question to ask in a real
+interview so in this case we would want
+to run binary search which would be
+login time so that just means that the
+get operation worst case is going to be
+a log in operation and by the way if
+we're looking for the key value 4 we
+know that it exists so this is what we
+would end up returning we would return
+bar 2 and you can see that's exactly
+what they did return in the output so
+we're done with another operation let's
+cross this out and let's do our last
+operation the get operation in this case
+the key is foo so again over here and
+the time stamp is five so again we're
+gonna run binary search right we're
+looking for an exact match of five and
+if we can't find the five what's the
+closest thing that we can get that's
+less than five well in this case it's
+four so the value of that is bar two so
+again we'd return bar two so that's kind
+of what i wanted to cover with this
+problem of course we just had a single
+key but you know this problem wouldn't
+be much different if we had a second key
+or you know multiple keys so i think we
+can actually go into the code now and
+see how we can implement this binary
+search solution okay so now let's get
+into the code and so you can see that
+they already gave us like a class and a
+few functions that we're going to define
+so
+the only thing we really need to do in
+the constructor is just initialize our
+store like i mentioned it's just going
+to be a pretty simple hash map
+where the key value is going to end up
+being a string and the value of the
+hashmap is going to be a list of lists
+so
+a list of pairs really but what we're
+actually going to be using to implement
+that pair is going to be yes a
+another sub list and the values of that
+sub-list are going to represent the
+value itself which is going to be a
+string and the second is going to be the
+time stamp uh and yeah just uh kind of
+condense this uh basically we're gonna
+have a key that key is gonna be mapped
+to a list of pairs okay so now let's get
+into the set operation because it's a
+little bit more simple than the get
+operation the way i'm going to do this
+is first just check so of course we're
+inserting something based on this key
+value based on this key and based on
+this value based on this timestamp so
+this is going to be that pair of value
+timestamp and this is just going to be
+the key of the hashmap first of all we
+want to know does this key even exist in
+our store and if it doesn't exist in our
+store
+the first thing we want to do is just
+you know insert it into the store and
+you know set it to let's say an empty
+list so
+put this key
+and just set it to an empty list
+you probably don't need to do this line
+we could just use a default dictionary
+if we really wanted to but i don't want
+to abuse python too much because i think
+sometimes it makes things too easy and
+this would kind of be
+i assume this is what you would want to
+do if you were doing this in java or c
+plus or something like that yeah so
+after we have uh you know we know that
+for sure we have an empty list there
+then all we want to do is to that list
+append a value to it right append to the
+end of the list uh a pair of values the
+value itself and the timestamp
+associated with it and that's really it
+right the set operation is pretty
+straightforward in this case but the get
+operation is where things are going to
+get a little bit tricky so first i'm
+just going to initialize the result
+initially it's just going to be an empty
+string and the reason i'm doing this is
+because if this key doesn't even exist
+in the store itself then this is what
+they want us to return they just want us
+to return an empty string that's why i'm
+initializing it this way and the next
+thing we want to do is actually check
+what that list of values actually is so
+let's go to our store and run the get
+operation reason i'm using the get is
+because if we find a match it'll return
+that list if it doesn't find a match
+with this key by default we can
+tell it to just return an empty list
+yeah so this is our list of values and
+now is when we actually want to run the
+binary search and then after we run the
+binary search we're going to end up
+returning whatever the result happens to
+be as you may know
+binary search has usually two pointers a
+left and right pointer i have solved a
+variety of binary search problems on
+this channel i even have a binary search
+playlist if you
+want to practice uh but yeah so let's
+set the left and let's get the length of
+the array minus one is going to be our
+right pointer and basically while the
+left pointer hasn't crossed the right
+pointer we are going to run the binary
+search
+actually should be equal if we want to
+make sure to get the last value but yeah
+so we have a left and right pointer and
+usually we want to look at the middle
+value so we can just take left plus
+right divide it by two in in python
+integer division you need two uh slashes
+to do that otherwise it does decimal
+division and
+then we just want to know did we find
+the result or not well if we found it
+let's check in our values values at
+index m and we know this is going to be
+a pair of values we want to look at the
+time stamp which is the second value up
+above right you can see even in the
+comments we said that the second value
+is the timestamp so we can go to index
+1. if this is equal to the timestamp
+that we're searching for which was an
+input parameter to this function called
+timestamp actually instead of an exact
+match let's first check if it's less
+than the timestamp less than or even
+equal to the timestamp because in that
+case we know that it's a valid value
+because remember the else case from this
+is completely different than this one
+right if it's equal to the timestamp or
+less than the timestamp that's
+completely fine but if it's greater than
+the timestamp that value is not allowed
+so we are going to be handling these two
+cases a little bit differently so with
+most binary search if we
+if we know that this is less than the
+timestamp what would we want to do we
+would want to say the way we want to
+update the pointer is to set left equal
+to mid plus 1 because we want to search
+to the right portion if it was less than
+the result but before we do that even we
+want to say the result so far at this
+point right since this is a valid value
+and this is the closest value we have
+seen so far we are going to set the
+result equal to values uh you know
+basically the value at index m
+and then you know this is going to be
+index 0. right because this is the
+closest we have seen so far that's how
+this binary search is going to work this
+is the closest we've seen so far now
+let's go to the next iteration of the
+loop and then see if we got any closer
+to the result but the else case is going
+to be
+whoops the else case is going to be the
+opposite here all we're going to do is
+update the pointer if the value was too
+big it was greater than the timestamp
+which is what the else case is we would
+want to update the right pointer set it
+to mid minus one and then you know
+that's just how we're going to be
+searching but we're not going to assign
+the result here because this is an
+invalid value we cannot assign it to the
+result technically this isn't as
+optimized as it could be because you
+know in this uh equals in the first case
+if we even find the exact match to the
+time stamp we're not even returning
+right we're still continuing the binary
+search which is kind of sub optimal but
+it doesn't change the overall time
+complexity it's still login and in this
+case i kind of prefer the concise code
+so i'm going to leave it as it is
+because we are actually done with the
+function after you know this binary
+search is over we're going to go ahead
+and return the result whether it's an
+empty string or whether we actually
+found the correct value
+you know the closest value to that
+timestamp that's the entire code let's
+run it to make sure that it works
+and as you can see on the left yes it
+does work and it's pretty efficient
+probably could be a little bit more
+efficient if we actually returned when
+we find the value but that's okay i hope
+that this was helpful if it was please
+like and subscribe it really supports
+the channel a lot consider checking out
+my patreon where you can further support
+the channel and hopefully i'll see you

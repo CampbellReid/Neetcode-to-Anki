@@ -1,0 +1,1736 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.060 --> 00:00:02.570 align:start position:0%
+ 
+let's<00:00:00.329><c> all</c><00:00:00.510><c> eat</c><00:00:00.810><c> code</c><00:00:01.050><c> 128</c><00:00:01.580><c> longest</c>
+
+00:00:02.570 --> 00:00:02.580 align:start position:0%
+let's all eat code 128 longest
+ 
+
+00:00:02.580 --> 00:00:04.880 align:start position:0%
+let's all eat code 128 longest
+consecutive<00:00:03.300><c> sequence</c><00:00:03.750><c> this</c><00:00:04.470><c> is</c><00:00:04.529><c> a</c><00:00:04.650><c> pretty</c>
+
+00:00:04.880 --> 00:00:04.890 align:start position:0%
+consecutive sequence this is a pretty
+ 
+
+00:00:04.890 --> 00:00:06.710 align:start position:0%
+consecutive sequence this is a pretty
+interesting<00:00:05.220><c> problem</c><00:00:05.910><c> and</c><00:00:06.120><c> it's</c><00:00:06.270><c> actually</c>
+
+00:00:06.710 --> 00:00:06.720 align:start position:0%
+interesting problem and it's actually
+ 
+
+00:00:06.720 --> 00:00:08.240 align:start position:0%
+interesting problem and it's actually
+been<00:00:06.870><c> asked</c><00:00:07.230><c> by</c><00:00:07.379><c> a</c><00:00:07.410><c> lot</c><00:00:07.500><c> of</c><00:00:07.799><c> companies</c>
+
+00:00:08.240 --> 00:00:08.250 align:start position:0%
+been asked by a lot of companies
+ 
+
+00:00:08.250 --> 00:00:10.490 align:start position:0%
+been asked by a lot of companies
+including<00:00:08.790><c> Google</c><00:00:08.820><c> for</c><00:00:09.690><c> a</c><00:00:09.719><c> coding</c><00:00:10.110><c> interview</c>
+
+00:00:10.490 --> 00:00:10.500 align:start position:0%
+including Google for a coding interview
+ 
+
+00:00:10.500 --> 00:00:11.749 align:start position:0%
+including Google for a coding interview
+so<00:00:10.650><c> I</c><00:00:10.710><c> think</c><00:00:10.800><c> it's</c><00:00:11.010><c> a</c><00:00:11.099><c> good</c><00:00:11.280><c> problem</c><00:00:11.519><c> to</c>
+
+00:00:11.749 --> 00:00:11.759 align:start position:0%
+so I think it's a good problem to
+ 
+
+00:00:11.759 --> 00:00:14.270 align:start position:0%
+so I think it's a good problem to
+understand<00:00:12.269><c> so</c><00:00:12.900><c> we're</c><00:00:13.080><c> given</c><00:00:13.440><c> an</c><00:00:13.650><c> input</c><00:00:13.950><c> array</c>
+
+00:00:14.270 --> 00:00:14.280 align:start position:0%
+understand so we're given an input array
+ 
+
+00:00:14.280 --> 00:00:16.460 align:start position:0%
+understand so we're given an input array
+of<00:00:14.549><c> numbers</c><00:00:14.940><c> right</c><00:00:14.969><c> in</c><00:00:15.480><c> this</c><00:00:16.020><c> case</c><00:00:16.199><c> we</c><00:00:16.350><c> have</c>
+
+00:00:16.460 --> 00:00:16.470 align:start position:0%
+of numbers right in this case we have
+ 
+
+00:00:16.470 --> 00:00:18.230 align:start position:0%
+of numbers right in this case we have
+six<00:00:16.770><c> numbers</c><00:00:17.160><c> and</c><00:00:17.340><c> we</c><00:00:17.580><c> want</c><00:00:17.789><c> to</c><00:00:17.850><c> find</c><00:00:18.060><c> the</c>
+
+00:00:18.230 --> 00:00:18.240 align:start position:0%
+six numbers and we want to find the
+ 
+
+00:00:18.240 --> 00:00:20.090 align:start position:0%
+six numbers and we want to find the
+longest<00:00:18.420><c> consecutive</c><00:00:19.199><c> sequence</c><00:00:19.680><c> in</c><00:00:19.830><c> this</c>
+
+00:00:20.090 --> 00:00:20.100 align:start position:0%
+longest consecutive sequence in this
+ 
+
+00:00:20.100 --> 00:00:22.130 align:start position:0%
+longest consecutive sequence in this
+case<00:00:20.369><c> the</c><00:00:20.609><c> longest</c><00:00:21.000><c> consecutive</c><00:00:21.539><c> sequence</c><00:00:21.960><c> is</c>
+
+00:00:22.130 --> 00:00:22.140 align:start position:0%
+case the longest consecutive sequence is
+ 
+
+00:00:22.140 --> 00:00:24.590 align:start position:0%
+case the longest consecutive sequence is
+one<00:00:22.439><c> two</c><00:00:22.980><c> three</c><00:00:23.279><c> four</c><00:00:23.609><c> right</c>
+
+00:00:24.590 --> 00:00:24.600 align:start position:0%
+one two three four right
+ 
+
+00:00:24.600 --> 00:00:26.480 align:start position:0%
+one two three four right
+it<00:00:25.170><c> doesn't</c><00:00:25.500><c> matter</c><00:00:25.650><c> what</c><00:00:25.920><c> order</c><00:00:26.189><c> of</c><00:00:26.400><c> the</c>
+
+00:00:26.480 --> 00:00:26.490 align:start position:0%
+it doesn't matter what order of the
+ 
+
+00:00:26.490 --> 00:00:28.400 align:start position:0%
+it doesn't matter what order of the
+numbers<00:00:26.789><c> appear</c><00:00:27.150><c> in</c><00:00:27.269><c> and</c><00:00:27.449><c> the</c><00:00:27.570><c> input</c><00:00:27.990><c> array</c><00:00:28.080><c> we</c>
+
+00:00:28.400 --> 00:00:28.410 align:start position:0%
+numbers appear in and the input array we
+ 
+
+00:00:28.410 --> 00:00:30.080 align:start position:0%
+numbers appear in and the input array we
+just<00:00:28.590><c> want</c><00:00:28.740><c> to</c><00:00:28.830><c> know</c><00:00:29.010><c> the</c><00:00:29.279><c> longest</c>
+
+00:00:30.080 --> 00:00:30.090 align:start position:0%
+just want to know the longest
+ 
+
+00:00:30.090 --> 00:00:31.700 align:start position:0%
+just want to know the longest
+consecutive<00:00:30.630><c> sequence</c><00:00:31.019><c> that</c><00:00:31.199><c> we</c><00:00:31.320><c> can</c><00:00:31.470><c> make</c>
+
+00:00:31.700 --> 00:00:31.710 align:start position:0%
+consecutive sequence that we can make
+ 
+
+00:00:31.710 --> 00:00:34.040 align:start position:0%
+consecutive sequence that we can make
+from<00:00:32.160><c> the</c><00:00:32.399><c> input</c><00:00:32.759><c> array</c><00:00:32.880><c> now</c><00:00:33.660><c> the</c><00:00:33.719><c> most</c>
+
+00:00:34.040 --> 00:00:34.050 align:start position:0%
+from the input array now the most
+ 
+
+00:00:34.050 --> 00:00:36.139 align:start position:0%
+from the input array now the most
+obvious<00:00:34.739><c> way</c><00:00:34.920><c> to</c><00:00:34.950><c> solve</c><00:00:35.340><c> this</c><00:00:35.520><c> problem</c><00:00:35.760><c> is</c>
+
+00:00:36.139 --> 00:00:36.149 align:start position:0%
+obvious way to solve this problem is
+ 
+
+00:00:36.149 --> 00:00:37.760 align:start position:0%
+obvious way to solve this problem is
+just<00:00:36.360><c> by</c><00:00:36.510><c> sorting</c><00:00:36.989><c> right</c><00:00:37.230><c> so</c><00:00:37.350><c> if</c><00:00:37.469><c> you</c><00:00:37.559><c> look</c><00:00:37.680><c> at</c>
+
+00:00:37.760 --> 00:00:37.770 align:start position:0%
+just by sorting right so if you look at
+ 
+
+00:00:37.770 --> 00:00:39.770 align:start position:0%
+just by sorting right so if you look at
+the<00:00:37.890><c> sorted</c><00:00:38.309><c> array</c><00:00:38.399><c> over</c><00:00:38.760><c> here</c><00:00:39.149><c> we</c><00:00:39.540><c> have</c>
+
+00:00:39.770 --> 00:00:39.780 align:start position:0%
+the sorted array over here we have
+ 
+
+00:00:39.780 --> 00:00:42.200 align:start position:0%
+the sorted array over here we have
+obviously<00:00:40.110><c> one</c><00:00:40.920><c> consecutive</c><00:00:41.550><c> sequence</c><00:00:42.000><c> of</c>
+
+00:00:42.200 --> 00:00:42.210 align:start position:0%
+obviously one consecutive sequence of
+ 
+
+00:00:42.210 --> 00:00:44.810 align:start position:0%
+obviously one consecutive sequence of
+length<00:00:42.480><c> four</c><00:00:42.870><c> right</c><00:00:43.230><c> one</c><00:00:43.800><c> two</c><00:00:44.129><c> three</c><00:00:44.520><c> four</c>
+
+00:00:44.810 --> 00:00:44.820 align:start position:0%
+length four right one two three four
+ 
+
+00:00:44.820 --> 00:00:47.060 align:start position:0%
+length four right one two three four
+they're<00:00:45.239><c> all</c><00:00:45.420><c> consecutive</c><00:00:46.079><c> numbers</c><00:00:46.440><c> we</c><00:00:46.860><c> also</c>
+
+00:00:47.060 --> 00:00:47.070 align:start position:0%
+they're all consecutive numbers we also
+ 
+
+00:00:47.070 --> 00:00:49.490 align:start position:0%
+they're all consecutive numbers we also
+have<00:00:47.340><c> another</c><00:00:47.640><c> one</c><00:00:47.879><c> that's</c><00:00:48.360><c> length</c><00:00:48.719><c> one</c><00:00:49.079><c> just</c>
+
+00:00:49.490 --> 00:00:49.500 align:start position:0%
+have another one that's length one just
+ 
+
+00:00:49.500 --> 00:00:52.400 align:start position:0%
+have another one that's length one just
+100<00:00:50.129><c> and</c><00:00:50.280><c> we</c><00:00:50.789><c> have</c><00:00:50.879><c> the</c><00:00:51.030><c> last</c><00:00:51.270><c> one</c><00:00:51.570><c> that's</c><00:00:51.960><c> also</c>
+
+00:00:52.400 --> 00:00:52.410 align:start position:0%
+100 and we have the last one that's also
+ 
+
+00:00:52.410 --> 00:00:55.490 align:start position:0%
+100 and we have the last one that's also
+length<00:00:52.680><c> one</c><00:00:52.949><c> just</c><00:00:53.399><c> 200</c><00:00:54.090><c> right</c><00:00:54.300><c> now</c><00:00:55.079><c> this</c><00:00:55.320><c> is</c>
+
+00:00:55.490 --> 00:00:55.500 align:start position:0%
+length one just 200 right now this is
+ 
+
+00:00:55.500 --> 00:00:57.560 align:start position:0%
+length one just 200 right now this is
+definitely<00:00:55.890><c> a</c><00:00:56.070><c> valid</c><00:00:56.370><c> solution</c><00:00:57.149><c> we</c><00:00:57.420><c> can</c>
+
+00:00:57.560 --> 00:00:57.570 align:start position:0%
+definitely a valid solution we can
+ 
+
+00:00:57.570 --> 00:00:59.689 align:start position:0%
+definitely a valid solution we can
+definitely<00:00:57.899><c> code</c><00:00:58.530><c> this</c><00:00:58.739><c> up</c><00:00:58.980><c> but</c><00:00:59.219><c> the</c><00:00:59.280><c> time</c>
+
+00:00:59.689 --> 00:00:59.699 align:start position:0%
+definitely code this up but the time
+ 
+
+00:00:59.699 --> 00:01:03.310 align:start position:0%
+definitely code this up but the time
+complexity<00:01:00.210><c> is</c><00:01:00.420><c> going</c><00:01:00.539><c> to</c><00:01:00.600><c> be</c><00:01:00.690><c> o</c><00:01:00.840><c> n</c><00:01:01.289><c> log</c><00:01:01.770><c> n</c><00:01:02.039><c> so</c>
+
+00:01:03.310 --> 00:01:03.320 align:start position:0%
+complexity is going to be o n log n so
+ 
+
+00:01:03.320 --> 00:01:06.590 align:start position:0%
+complexity is going to be o n log n so
+the<00:01:04.320><c> question</c><00:01:04.710><c> is</c><00:01:04.920><c> can</c><00:01:05.400><c> we</c><00:01:05.460><c> do</c><00:01:05.700><c> better</c><00:01:05.729><c> so</c><00:01:06.420><c> this</c>
+
+00:01:06.590 --> 00:01:06.600 align:start position:0%
+the question is can we do better so this
+ 
+
+00:01:06.600 --> 00:01:08.480 align:start position:0%
+the question is can we do better so this
+is<00:01:06.720><c> a</c><00:01:06.750><c> leak</c><00:01:06.990><c> code</c><00:01:07.200><c> hard</c><00:01:07.470><c> obviously</c><00:01:08.340><c> the</c>
+
+00:01:08.480 --> 00:01:08.490 align:start position:0%
+is a leak code hard obviously the
+ 
+
+00:01:08.490 --> 00:01:10.280 align:start position:0%
+is a leak code hard obviously the
+solution<00:01:08.670><c> wouldn't</c><00:01:09.180><c> be</c><00:01:09.240><c> this</c><00:01:09.540><c> simple</c><00:01:09.810><c> so</c><00:01:10.170><c> we</c>
+
+00:01:10.280 --> 00:01:10.290 align:start position:0%
+solution wouldn't be this simple so we
+ 
+
+00:01:10.290 --> 00:01:12.679 align:start position:0%
+solution wouldn't be this simple so we
+can<00:01:10.320><c> do</c><00:01:10.830><c> better</c><00:01:11.010><c> but</c><00:01:11.580><c> how</c><00:01:11.820><c> do</c><00:01:11.880><c> we</c><00:01:12.000><c> get</c><00:01:12.360><c> there</c>
+
+00:01:12.679 --> 00:01:12.689 align:start position:0%
+can do better but how do we get there
+ 
+
+00:01:12.689 --> 00:01:14.810 align:start position:0%
+can do better but how do we get there
+now<00:01:13.229><c> the</c><00:01:13.290><c> first</c><00:01:13.650><c> thing</c><00:01:13.860><c> to</c><00:01:14.010><c> do</c><00:01:14.189><c> is</c><00:01:14.400><c> try</c><00:01:14.670><c> to</c>
+
+00:01:14.810 --> 00:01:14.820 align:start position:0%
+now the first thing to do is try to
+ 
+
+00:01:14.820 --> 00:01:17.210 align:start position:0%
+now the first thing to do is try to
+visualize<00:01:15.210><c> the</c><00:01:15.750><c> problem</c><00:01:15.990><c> in</c><00:01:16.290><c> a</c><00:01:16.380><c> way</c><00:01:16.590><c> that</c><00:01:16.830><c> it</c>
+
+00:01:17.210 --> 00:01:17.220 align:start position:0%
+visualize the problem in a way that it
+ 
+
+00:01:17.220 --> 00:01:18.859 align:start position:0%
+visualize the problem in a way that it
+makes<00:01:17.430><c> the</c><00:01:17.610><c> problem</c><00:01:17.820><c> really</c><00:01:18.360><c> easy</c><00:01:18.630><c> to</c>
+
+00:01:18.859 --> 00:01:18.869 align:start position:0%
+makes the problem really easy to
+ 
+
+00:01:18.869 --> 00:01:21.740 align:start position:0%
+makes the problem really easy to
+understand<00:01:19.409><c> so</c><00:01:20.369><c> I</c><00:01:20.400><c> visualized</c><00:01:21.210><c> the</c><00:01:21.390><c> problem</c>
+
+00:01:21.740 --> 00:01:21.750 align:start position:0%
+understand so I visualized the problem
+ 
+
+00:01:21.750 --> 00:01:24.020 align:start position:0%
+understand so I visualized the problem
+by<00:01:21.900><c> drawing</c><00:01:22.229><c> out</c><00:01:22.530><c> an</c><00:01:22.799><c> imaginary</c><00:01:23.130><c> number</c><00:01:23.820><c> line</c>
+
+00:01:24.020 --> 00:01:24.030 align:start position:0%
+by drawing out an imaginary number line
+ 
+
+00:01:24.030 --> 00:01:26.149 align:start position:0%
+by drawing out an imaginary number line
+right<00:01:24.270><c> so</c><00:01:25.020><c> we</c><00:01:25.140><c> can</c><00:01:25.290><c> kind</c><00:01:25.470><c> of</c><00:01:25.530><c> see</c><00:01:25.890><c> what</c><00:01:26.130><c> the</c>
+
+00:01:26.149 --> 00:01:26.159 align:start position:0%
+right so we can kind of see what the
+ 
+
+00:01:26.159 --> 00:01:28.190 align:start position:0%
+right so we can kind of see what the
+sequences<00:01:26.939><c> actually</c><00:01:27.299><c> look</c><00:01:27.540><c> like</c><00:01:27.570><c> this</c><00:01:27.990><c> makes</c>
+
+00:01:28.190 --> 00:01:28.200 align:start position:0%
+sequences actually look like this makes
+ 
+
+00:01:28.200 --> 00:01:29.660 align:start position:0%
+sequences actually look like this makes
+it<00:01:28.320><c> a</c><00:01:28.409><c> lot</c><00:01:28.530><c> easier</c><00:01:28.590><c> to</c><00:01:29.040><c> recognize</c><00:01:29.220><c> the</c>
+
+00:01:29.660 --> 00:01:29.670 align:start position:0%
+it a lot easier to recognize the
+ 
+
+00:01:29.670 --> 00:01:32.210 align:start position:0%
+it a lot easier to recognize the
+patterns<00:01:30.090><c> so</c><00:01:30.360><c> we</c><00:01:30.960><c> know</c><00:01:31.140><c> we</c><00:01:31.259><c> have</c><00:01:31.290><c> one</c><00:01:31.650><c> sequence</c>
+
+00:01:32.210 --> 00:01:32.220 align:start position:0%
+patterns so we know we have one sequence
+ 
+
+00:01:32.220 --> 00:01:41.840 align:start position:0%
+patterns so we know we have one sequence
+that<00:01:32.729><c> starts</c><00:01:33.060><c> at</c><00:01:33.630><c> one</c><00:01:34.430><c> two</c><00:01:35.930><c> three</c><00:01:36.930><c> and</c><00:01:37.250><c> four</c><00:01:40.850><c> we</c>
+
+00:01:41.840 --> 00:01:41.850 align:start position:0%
+that starts at one two three and four we
+ 
+
+00:01:41.850 --> 00:01:43.639 align:start position:0%
+that starts at one two three and four we
+have<00:01:41.970><c> another</c><00:01:42.270><c> sequence</c><00:01:42.750><c> that</c><00:01:42.960><c> comes</c><00:01:43.140><c> after</c>
+
+00:01:43.639 --> 00:01:43.649 align:start position:0%
+have another sequence that comes after
+ 
+
+00:01:43.649 --> 00:01:48.050 align:start position:0%
+have another sequence that comes after
+it<00:01:43.770><c> with</c><00:01:43.920><c> just</c><00:01:44.100><c> one</c><00:01:44.340><c> number</c><00:01:44.700><c> 100</c><00:01:46.790><c> we</c><00:01:47.790><c> have</c><00:01:47.820><c> the</c>
+
+00:01:48.050 --> 00:01:48.060 align:start position:0%
+it with just one number 100 we have the
+ 
+
+00:01:48.060 --> 00:01:50.480 align:start position:0%
+it with just one number 100 we have the
+last<00:01:48.299><c> sequence</c><00:01:48.750><c> with</c><00:01:49.049><c> also</c><00:01:49.500><c> only</c><00:01:49.920><c> one</c><00:01:50.130><c> number</c>
+
+00:01:50.480 --> 00:01:50.490 align:start position:0%
+last sequence with also only one number
+ 
+
+00:01:50.490 --> 00:01:55.310 align:start position:0%
+last sequence with also only one number
+200<00:01:52.700><c> so</c><00:01:53.700><c> just</c><00:01:54.000><c> by</c><00:01:54.119><c> looking</c><00:01:54.509><c> at</c><00:01:54.630><c> it</c><00:01:54.810><c> we</c><00:01:54.930><c> can</c><00:01:55.079><c> tell</c>
+
+00:01:55.310 --> 00:01:55.320 align:start position:0%
+200 so just by looking at it we can tell
+ 
+
+00:01:55.320 --> 00:01:57.789 align:start position:0%
+200 so just by looking at it we can tell
+we<00:01:55.530><c> have</c><00:01:55.710><c> three</c><00:01:56.219><c> distinct</c><00:01:57.030><c> sequences</c><00:01:57.659><c> right</c>
+
+00:01:57.789 --> 00:01:57.799 align:start position:0%
+we have three distinct sequences right
+ 
+
+00:01:57.799 --> 00:02:03.499 align:start position:0%
+we have three distinct sequences right
+that's<00:01:58.799><c> something</c><00:01:59.189><c> to</c><00:01:59.310><c> recognize</c><00:02:02.149><c> now</c><00:02:03.149><c> by</c>
+
+00:02:03.499 --> 00:02:03.509 align:start position:0%
+that's something to recognize now by
+ 
+
+00:02:03.509 --> 00:02:05.569 align:start position:0%
+that's something to recognize now by
+visualizing<00:02:04.439><c> it</c><00:02:04.590><c> we</c><00:02:04.770><c> can</c><00:02:04.950><c> kind</c><00:02:05.219><c> of</c><00:02:05.280><c> try</c><00:02:05.520><c> to</c>
+
+00:02:05.569 --> 00:02:05.579 align:start position:0%
+visualizing it we can kind of try to
+ 
+
+00:02:05.579 --> 00:02:08.240 align:start position:0%
+visualizing it we can kind of try to
+approach<00:02:06.119><c> how</c><00:02:06.450><c> would</c><00:02:06.630><c> a</c><00:02:06.659><c> human</c><00:02:07.020><c> solve</c><00:02:07.530><c> it</c><00:02:07.770><c> well</c>
+
+00:02:08.240 --> 00:02:08.250 align:start position:0%
+approach how would a human solve it well
+ 
+
+00:02:08.250 --> 00:02:10.460 align:start position:0%
+approach how would a human solve it well
+the<00:02:08.369><c> easiest</c><00:02:08.819><c> way</c><00:02:09.119><c> is</c><00:02:09.179><c> just</c><00:02:09.270><c> look</c><00:02:09.810><c> at</c><00:02:09.959><c> each</c><00:02:10.170><c> of</c>
+
+00:02:10.460 --> 00:02:10.470 align:start position:0%
+the easiest way is just look at each of
+ 
+
+00:02:10.470 --> 00:02:12.470 align:start position:0%
+the easiest way is just look at each of
+the<00:02:10.619><c> sequences</c><00:02:11.220><c> right</c><00:02:11.250><c> and</c><00:02:11.640><c> count</c><00:02:11.940><c> how</c><00:02:12.060><c> long</c>
+
+00:02:12.470 --> 00:02:12.480 align:start position:0%
+the sequences right and count how long
+ 
+
+00:02:12.480 --> 00:02:13.350 align:start position:0%
+the sequences right and count how long
+they<00:02:12.810><c> are</c>
+
+00:02:13.350 --> 00:02:13.360 align:start position:0%
+they are
+ 
+
+00:02:13.360 --> 00:02:14.850 align:start position:0%
+they are
+so<00:02:13.600><c> let's</c><00:02:13.810><c> look</c><00:02:13.990><c> at</c><00:02:14.110><c> the</c><00:02:14.200><c> first</c><00:02:14.440><c> sequence</c>
+
+00:02:14.850 --> 00:02:14.860 align:start position:0%
+so let's look at the first sequence
+ 
+
+00:02:14.860 --> 00:02:18.810 align:start position:0%
+so let's look at the first sequence
+right<00:02:15.100><c> we</c><00:02:15.550><c> have</c><00:02:15.700><c> one</c><00:02:16.150><c> two</c><00:02:16.870><c> three</c><00:02:17.740><c> and</c><00:02:17.980><c> four</c><00:02:18.340><c> so</c>
+
+00:02:18.810 --> 00:02:18.820 align:start position:0%
+right we have one two three and four so
+ 
+
+00:02:18.820 --> 00:02:21.120 align:start position:0%
+right we have one two three and four so
+this<00:02:19.060><c> sequence</c><00:02:19.240><c> has</c><00:02:19.600><c> four</c><00:02:19.870><c> numbers</c><00:02:20.230><c> in</c><00:02:20.260><c> it</c><00:02:20.500><c> we</c>
+
+00:02:21.120 --> 00:02:21.130 align:start position:0%
+this sequence has four numbers in it we
+ 
+
+00:02:21.130 --> 00:02:23.580 align:start position:0%
+this sequence has four numbers in it we
+have<00:02:21.220><c> the</c><00:02:21.340><c> second</c><00:02:21.730><c> sequence</c><00:02:22.030><c> just</c><00:02:22.600><c> 100</c><00:02:23.290><c> so</c><00:02:23.500><c> it</c>
+
+00:02:23.580 --> 00:02:23.590 align:start position:0%
+have the second sequence just 100 so it
+ 
+
+00:02:23.590 --> 00:02:25.530 align:start position:0%
+have the second sequence just 100 so it
+only<00:02:23.740><c> has</c><00:02:23.920><c> one</c><00:02:24.160><c> number</c><00:02:24.400><c> in</c><00:02:24.670><c> it</c><00:02:24.820><c> so</c><00:02:25.180><c> it's</c><00:02:25.330><c> a</c>
+
+00:02:25.530 --> 00:02:25.540 align:start position:0%
+only has one number in it so it's a
+ 
+
+00:02:25.540 --> 00:02:27.630 align:start position:0%
+only has one number in it so it's a
+sequence<00:02:25.780><c> of</c><00:02:26.050><c> length</c><00:02:26.260><c> 1</c><00:02:26.530><c> the</c><00:02:27.010><c> last</c><00:02:27.220><c> one</c><00:02:27.550><c> is</c>
+
+00:02:27.630 --> 00:02:27.640 align:start position:0%
+sequence of length 1 the last one is
+ 
+
+00:02:27.640 --> 00:02:30.060 align:start position:0%
+sequence of length 1 the last one is
+also<00:02:27.880><c> a</c><00:02:28.090><c> sequence</c><00:02:28.570><c> of</c><00:02:28.690><c> length</c><00:02:28.900><c> 1</c><00:02:29.260><c> now</c><00:02:29.680><c> this</c><00:02:29.860><c> is</c>
+
+00:02:30.060 --> 00:02:30.070 align:start position:0%
+also a sequence of length 1 now this is
+ 
+
+00:02:30.070 --> 00:02:32.610 align:start position:0%
+also a sequence of length 1 now this is
+so<00:02:30.370><c> easy</c><00:02:30.730><c> to</c><00:02:30.970><c> solve</c><00:02:31.300><c> when</c><00:02:31.690><c> you</c><00:02:31.840><c> visualize</c><00:02:32.080><c> it</c>
+
+00:02:32.610 --> 00:02:32.620 align:start position:0%
+so easy to solve when you visualize it
+ 
+
+00:02:32.620 --> 00:02:34.440 align:start position:0%
+so easy to solve when you visualize it
+and<00:02:32.800><c> try</c><00:02:32.980><c> to</c><00:02:33.040><c> approach</c><00:02:33.430><c> it</c><00:02:33.460><c> how</c><00:02:33.760><c> a</c><00:02:33.790><c> human</c><00:02:34.120><c> would</c>
+
+00:02:34.440 --> 00:02:34.450 align:start position:0%
+and try to approach it how a human would
+ 
+
+00:02:34.450 --> 00:02:36.660 align:start position:0%
+and try to approach it how a human would
+but<00:02:34.840><c> can</c><00:02:35.020><c> we</c><00:02:35.140><c> actually</c><00:02:35.350><c> convert</c><00:02:36.220><c> this</c><00:02:36.430><c> into</c>
+
+00:02:36.660 --> 00:02:36.670 align:start position:0%
+but can we actually convert this into
+ 
+
+00:02:36.670 --> 00:02:39.810 align:start position:0%
+but can we actually convert this into
+code<00:02:37.060><c> somehow</c><00:02:37.570><c> the</c><00:02:38.140><c> answer</c><00:02:38.560><c> is</c><00:02:38.740><c> yes</c><00:02:39.070><c> so</c><00:02:39.670><c> the</c>
+
+00:02:39.810 --> 00:02:39.820 align:start position:0%
+code somehow the answer is yes so the
+ 
+
+00:02:39.820 --> 00:02:41.850 align:start position:0%
+code somehow the answer is yes so the
+most<00:02:40.120><c> important</c><00:02:40.840><c> thing</c><00:02:40.990><c> to</c><00:02:41.140><c> notice</c><00:02:41.410><c> is</c><00:02:41.709><c> that</c>
+
+00:02:41.850 --> 00:02:41.860 align:start position:0%
+most important thing to notice is that
+ 
+
+00:02:41.860 --> 00:02:44.610 align:start position:0%
+most important thing to notice is that
+we<00:02:42.520><c> have</c><00:02:42.550><c> three</c><00:02:43.060><c> sequences</c><00:02:43.780><c> but</c><00:02:43.990><c> how</c><00:02:44.260><c> can</c><00:02:44.320><c> we</c>
+
+00:02:44.610 --> 00:02:44.620 align:start position:0%
+we have three sequences but how can we
+ 
+
+00:02:44.620 --> 00:02:47.670 align:start position:0%
+we have three sequences but how can we
+identify<00:02:45.090><c> what</c><00:02:46.090><c> makes</c><00:02:46.510><c> a</c><00:02:46.750><c> sequence</c><00:02:47.230><c> how</c><00:02:47.470><c> can</c>
+
+00:02:47.670 --> 00:02:47.680 align:start position:0%
+identify what makes a sequence how can
+ 
+
+00:02:47.680 --> 00:02:49.740 align:start position:0%
+identify what makes a sequence how can
+we<00:02:47.830><c> actually</c><00:02:47.980><c> start</c><00:02:48.250><c> at</c><00:02:48.850><c> the</c><00:02:48.970><c> beginning</c><00:02:49.450><c> of</c><00:02:49.660><c> a</c>
+
+00:02:49.740 --> 00:02:49.750 align:start position:0%
+we actually start at the beginning of a
+ 
+
+00:02:49.750 --> 00:02:52.140 align:start position:0%
+we actually start at the beginning of a
+sequence<00:02:50.170><c> the</c><00:02:50.650><c> thing</c><00:02:51.010><c> to</c><00:02:51.160><c> notice</c><00:02:51.459><c> and</c><00:02:51.790><c> this</c><00:02:52.000><c> is</c>
+
+00:02:52.140 --> 00:02:52.150 align:start position:0%
+sequence the thing to notice and this is
+ 
+
+00:02:52.150 --> 00:02:53.880 align:start position:0%
+sequence the thing to notice and this is
+really<00:02:52.570><c> easy</c><00:02:52.810><c> when</c><00:02:53.050><c> you</c><00:02:53.140><c> actually</c><00:02:53.290><c> look</c><00:02:53.739><c> at</c>
+
+00:02:53.880 --> 00:02:53.890 align:start position:0%
+really easy when you actually look at
+ 
+
+00:02:53.890 --> 00:02:56.550 align:start position:0%
+really easy when you actually look at
+the<00:02:54.040><c> picture</c><00:02:54.250><c> that</c><00:02:54.880><c> each</c><00:02:55.209><c> sequence</c><00:02:55.959><c> has</c><00:02:56.500><c> a</c>
+
+00:02:56.550 --> 00:02:56.560 align:start position:0%
+the picture that each sequence has a
+ 
+
+00:02:56.560 --> 00:02:59.550 align:start position:0%
+the picture that each sequence has a
+start<00:02:57.100><c> value</c><00:02:57.160><c> the</c><00:02:57.880><c> start</c><00:02:58.330><c> value</c><00:02:58.780><c> in</c><00:02:58.959><c> this</c><00:02:59.320><c> case</c>
+
+00:02:59.550 --> 00:02:59.560 align:start position:0%
+start value the start value in this case
+ 
+
+00:02:59.560 --> 00:03:01.830 align:start position:0%
+start value the start value in this case
+the<00:02:59.800><c> start</c><00:03:00.070><c> value</c><00:03:00.340><c> for</c><00:03:00.520><c> the</c><00:03:00.640><c> first</c><00:03:00.970><c> range</c><00:03:01.420><c> or</c>
+
+00:03:01.830 --> 00:03:01.840 align:start position:0%
+the start value for the first range or
+ 
+
+00:03:01.840 --> 00:03:05.340 align:start position:0%
+the start value for the first range or
+the<00:03:02.500><c> first</c><00:03:02.680><c> sequence</c><00:03:03.100><c> has</c><00:03:03.610><c> no</c><00:03:04.090><c> left</c><00:03:04.870><c> neighbour</c>
+
+00:03:05.340 --> 00:03:05.350 align:start position:0%
+the first sequence has no left neighbour
+ 
+
+00:03:05.350 --> 00:03:08.220 align:start position:0%
+the first sequence has no left neighbour
+the<00:03:05.680><c> first</c><00:03:06.070><c> value</c><00:03:06.489><c> 1</c><00:03:06.820><c> has</c><00:03:07.090><c> no</c><00:03:07.450><c> left</c><00:03:07.900><c> neighbour</c>
+
+00:03:08.220 --> 00:03:08.230 align:start position:0%
+the first value 1 has no left neighbour
+ 
+
+00:03:08.230 --> 00:03:10.650 align:start position:0%
+the first value 1 has no left neighbour
+right<00:03:08.709><c> that's</c><00:03:08.920><c> really</c><00:03:09.250><c> obvious</c><00:03:09.459><c> look</c><00:03:10.420><c> at</c><00:03:10.540><c> the</c>
+
+00:03:10.650 --> 00:03:10.660 align:start position:0%
+right that's really obvious look at the
+ 
+
+00:03:10.660 --> 00:03:13.320 align:start position:0%
+right that's really obvious look at the
+second<00:03:11.050><c> range</c><00:03:11.290><c> 100</c><00:03:12.220><c> it</c><00:03:12.520><c> doesn't</c><00:03:12.910><c> have</c><00:03:13.030><c> a</c><00:03:13.060><c> left</c>
+
+00:03:13.320 --> 00:03:13.330 align:start position:0%
+second range 100 it doesn't have a left
+ 
+
+00:03:13.330 --> 00:03:15.750 align:start position:0%
+second range 100 it doesn't have a left
+neighbour<00:03:13.630><c> the</c><00:03:14.140><c> third</c><00:03:14.410><c> range</c><00:03:14.680><c> 200</c><00:03:15.340><c> doesn't</c>
+
+00:03:15.750 --> 00:03:15.760 align:start position:0%
+neighbour the third range 200 doesn't
+ 
+
+00:03:15.760 --> 00:03:18.570 align:start position:0%
+neighbour the third range 200 doesn't
+have<00:03:15.880><c> a</c><00:03:15.910><c> left</c><00:03:16.209><c> neighbour</c><00:03:16.480><c> so</c><00:03:17.230><c> we</c><00:03:17.890><c> can</c><00:03:18.100><c> get</c><00:03:18.400><c> the</c>
+
+00:03:18.570 --> 00:03:18.580 align:start position:0%
+have a left neighbour so we can get the
+ 
+
+00:03:18.580 --> 00:03:21.539 align:start position:0%
+have a left neighbour so we can get the
+start<00:03:19.120><c> of</c><00:03:19.299><c> each</c><00:03:19.690><c> sequence</c><00:03:20.260><c> by</c><00:03:20.680><c> just</c><00:03:21.160><c> looking</c>
+
+00:03:21.539 --> 00:03:21.549 align:start position:0%
+start of each sequence by just looking
+ 
+
+00:03:21.549 --> 00:03:25.430 align:start position:0%
+start of each sequence by just looking
+at<00:03:21.970><c> our</c><00:03:22.330><c> entire</c><00:03:23.080><c> array</c><00:03:23.890><c> of</c><00:03:24.100><c> numbers</c><00:03:24.549><c> right</c><00:03:24.850><c> and</c>
+
+00:03:25.430 --> 00:03:25.440 align:start position:0%
+at our entire array of numbers right and
+ 
+
+00:03:25.440 --> 00:03:28.380 align:start position:0%
+at our entire array of numbers right and
+figuring<00:03:26.440><c> out</c><00:03:26.560><c> which</c><00:03:26.980><c> numbers</c><00:03:27.549><c> don't</c><00:03:28.090><c> have</c><00:03:28.360><c> a</c>
+
+00:03:28.380 --> 00:03:28.390 align:start position:0%
+figuring out which numbers don't have a
+ 
+
+00:03:28.390 --> 00:03:31.050 align:start position:0%
+figuring out which numbers don't have a
+left<00:03:28.780><c> neighbour</c><00:03:29.140><c> so</c><00:03:29.709><c> meaning</c><00:03:30.190><c> if</c><00:03:30.370><c> we</c><00:03:30.400><c> were</c><00:03:30.730><c> if</c>
+
+00:03:31.050 --> 00:03:31.060 align:start position:0%
+left neighbour so meaning if we were if
+ 
+
+00:03:31.060 --> 00:03:33.300 align:start position:0%
+left neighbour so meaning if we were if
+we<00:03:31.209><c> wanted</c><00:03:31.510><c> to</c><00:03:31.570><c> check</c><00:03:31.870><c> if</c><00:03:32.080><c> one</c><00:03:32.440><c> had</c><00:03:32.980><c> a</c><00:03:33.010><c> left</c>
+
+00:03:33.300 --> 00:03:33.310 align:start position:0%
+we wanted to check if one had a left
+ 
+
+00:03:33.310 --> 00:03:35.190 align:start position:0%
+we wanted to check if one had a left
+neighbour<00:03:33.549><c> we</c><00:03:33.790><c> would</c><00:03:33.970><c> check</c><00:03:34.209><c> does</c><00:03:34.660><c> our</c><00:03:34.810><c> array</c>
+
+00:03:35.190 --> 00:03:35.200 align:start position:0%
+neighbour we would check does our array
+ 
+
+00:03:35.200 --> 00:03:37.470 align:start position:0%
+neighbour we would check does our array
+contain<00:03:35.709><c> the</c><00:03:35.860><c> number</c><00:03:36.160><c> 0</c><00:03:36.549><c> if</c><00:03:36.880><c> we</c><00:03:37.090><c> wanted</c><00:03:37.420><c> to</c>
+
+00:03:37.470 --> 00:03:37.480 align:start position:0%
+contain the number 0 if we wanted to
+ 
+
+00:03:37.480 --> 00:03:39.660 align:start position:0%
+contain the number 0 if we wanted to
+know<00:03:37.600><c> if</c><00:03:37.840><c> 100</c><00:03:38.410><c> have</c><00:03:38.560><c> had</c><00:03:38.890><c> a</c><00:03:38.920><c> left</c><00:03:39.190><c> neighbour</c><00:03:39.430><c> we</c>
+
+00:03:39.660 --> 00:03:39.670 align:start position:0%
+know if 100 have had a left neighbour we
+ 
+
+00:03:39.670 --> 00:03:42.420 align:start position:0%
+know if 100 have had a left neighbour we
+checked<00:03:39.940><c> does</c><00:03:40.570><c> the</c><00:03:40.750><c> array</c><00:03:40.989><c> contain</c><00:03:41.380><c> 99</c><00:03:41.950><c> the</c>
+
+00:03:42.420 --> 00:03:42.430 align:start position:0%
+checked does the array contain 99 the
+ 
+
+00:03:42.430 --> 00:03:44.400 align:start position:0%
+checked does the array contain 99 the
+easiest<00:03:42.970><c> way</c><00:03:43.090><c> to</c><00:03:43.120><c> do</c><00:03:43.390><c> this</c><00:03:43.420><c> and</c><00:03:44.080><c> the</c><00:03:44.260><c> most</c>
+
+00:03:44.400 --> 00:03:44.410 align:start position:0%
+easiest way to do this and the most
+ 
+
+00:03:44.410 --> 00:03:46.470 align:start position:0%
+easiest way to do this and the most
+efficient<00:03:44.920><c> way</c><00:03:45.010><c> to</c><00:03:45.040><c> do</c><00:03:45.250><c> it</c><00:03:45.370><c> is</c><00:03:45.519><c> by</c><00:03:45.820><c> taking</c><00:03:46.150><c> our</c>
+
+00:03:46.470 --> 00:03:46.480 align:start position:0%
+efficient way to do it is by taking our
+ 
+
+00:03:46.480 --> 00:03:48.300 align:start position:0%
+efficient way to do it is by taking our
+initial<00:03:46.900><c> array</c><00:03:47.200><c> and</c><00:03:47.350><c> converting</c><00:03:47.920><c> it</c><00:03:48.010><c> into</c><00:03:48.130><c> a</c>
+
+00:03:48.300 --> 00:03:48.310 align:start position:0%
+initial array and converting it into a
+ 
+
+00:03:48.310 --> 00:03:52.650 align:start position:0%
+initial array and converting it into a
+set<00:03:50.010><c> so</c><00:03:51.010><c> now</c><00:03:51.040><c> to</c><00:03:51.310><c> find</c><00:03:51.670><c> the</c><00:03:51.880><c> start</c><00:03:52.209><c> ranges</c>
+
+00:03:52.650 --> 00:03:52.660 align:start position:0%
+set so now to find the start ranges
+ 
+
+00:03:52.660 --> 00:03:54.360 align:start position:0%
+set so now to find the start ranges
+let's<00:03:52.870><c> start</c><00:03:53.110><c> iterating</c><00:03:53.350><c> through</c><00:03:53.709><c> our</c><00:03:54.040><c> array</c>
+
+00:03:54.360 --> 00:03:54.370 align:start position:0%
+let's start iterating through our array
+ 
+
+00:03:54.370 --> 00:03:56.340 align:start position:0%
+let's start iterating through our array
+so<00:03:54.760><c> we</c><00:03:54.910><c> got</c><00:03:55.150><c> we</c><00:03:55.420><c> get</c><00:03:55.600><c> to</c><00:03:55.720><c> the</c><00:03:55.810><c> first</c><00:03:56.110><c> element</c>
+
+00:03:56.340 --> 00:03:56.350 align:start position:0%
+so we got we get to the first element
+ 
+
+00:03:56.350 --> 00:03:59.100 align:start position:0%
+so we got we get to the first element
+100<00:03:57.280><c> does</c><00:03:57.970><c> it</c><00:03:58.120><c> have</c><00:03:58.269><c> a</c><00:03:58.299><c> left</c><00:03:58.570><c> neighbour</c><00:03:58.810><c> well</c>
+
+00:03:59.100 --> 00:03:59.110 align:start position:0%
+100 does it have a left neighbour well
+ 
+
+00:03:59.110 --> 00:04:02.190 align:start position:0%
+100 does it have a left neighbour well
+we<00:03:59.380><c> can</c><00:03:59.560><c> check</c><00:03:59.860><c> our</c><00:04:00.160><c> set</c><00:04:00.640><c> it</c><00:04:01.120><c> doesn't</c><00:04:01.510><c> have</c><00:04:01.630><c> 99</c>
+
+00:04:02.190 --> 00:04:02.200 align:start position:0%
+we can check our set it doesn't have 99
+ 
+
+00:04:02.200 --> 00:04:06.300 align:start position:0%
+we can check our set it doesn't have 99
+in<00:04:02.440><c> it</c><00:04:02.590><c> so</c><00:04:02.799><c> this</c><00:04:03.010><c> is</c><00:04:03.250><c> the</c><00:04:03.400><c> first</c><00:04:05.010><c> so</c><00:04:06.010><c> this</c><00:04:06.190><c> is</c>
+
+00:04:06.300 --> 00:04:06.310 align:start position:0%
+in it so this is the first so this is
+ 
+
+00:04:06.310 --> 00:04:08.370 align:start position:0%
+in it so this is the first so this is
+the<00:04:06.430><c> start</c><00:04:06.730><c> of</c><00:04:06.880><c> a</c><00:04:07.000><c> sequence</c><00:04:07.390><c> so</c><00:04:07.720><c> let's</c><00:04:07.959><c> get</c><00:04:08.230><c> the</c>
+
+00:04:08.370 --> 00:04:08.380 align:start position:0%
+the start of a sequence so let's get the
+ 
+
+00:04:08.380 --> 00:04:13.759 align:start position:0%
+the start of a sequence so let's get the
+length<00:04:08.650><c> of</c><00:04:08.920><c> the</c><00:04:09.190><c> sequence</c><00:04:09.900><c> we</c><00:04:10.900><c> start</c><00:04:11.200><c> at</c><00:04:11.290><c> 100</c>
+
+00:04:13.759 --> 00:04:13.769 align:start position:0%
+length of the sequence we start at 100
+ 
+
+00:04:13.769 --> 00:04:16.469 align:start position:0%
+length of the sequence we start at 100
+now<00:04:14.769><c> to</c><00:04:14.860><c> get</c><00:04:15.070><c> the</c><00:04:15.250><c> length</c><00:04:15.549><c> of</c><00:04:15.820><c> the</c><00:04:15.970><c> sequence</c><00:04:16.419><c> we</c>
+
+00:04:16.469 --> 00:04:16.479 align:start position:0%
+now to get the length of the sequence we
+ 
+
+00:04:16.479 --> 00:04:17.940 align:start position:0%
+now to get the length of the sequence we
+want<00:04:16.750><c> to</c><00:04:16.840><c> count</c><00:04:17.169><c> how</c><00:04:17.290><c> many</c><00:04:17.680><c> consecutive</c>
+
+00:04:17.940 --> 00:04:17.950 align:start position:0%
+want to count how many consecutive
+ 
+
+00:04:17.950 --> 00:04:20.729 align:start position:0%
+want to count how many consecutive
+numbers<00:04:18.790><c> come</c><00:04:19.000><c> after</c><00:04:19.419><c> 100</c><00:04:19.959><c> so</c><00:04:20.320><c> we</c><00:04:20.500><c> want</c><00:04:20.680><c> to</c>
+
+00:04:20.729 --> 00:04:20.739 align:start position:0%
+numbers come after 100 so we want to
+ 
+
+00:04:20.739 --> 00:04:24.180 align:start position:0%
+numbers come after 100 so we want to
+know<00:04:20.859><c> does</c><00:04:21.150><c> 101</c><00:04:22.150><c> exist</c><00:04:22.810><c> in</c><00:04:23.020><c> our</c><00:04:23.380><c> sequence</c>
+
+00:04:24.180 --> 00:04:24.190 align:start position:0%
+know does 101 exist in our sequence
+ 
+
+00:04:24.190 --> 00:04:26.640 align:start position:0%
+know does 101 exist in our sequence
+looking<00:04:24.970><c> at</c><00:04:25.090><c> the</c><00:04:25.210><c> number</c><00:04:25.570><c> line</c><00:04:25.720><c> obviously</c><00:04:26.530><c> it</c>
+
+00:04:26.640 --> 00:04:26.650 align:start position:0%
+looking at the number line obviously it
+ 
+
+00:04:26.650 --> 00:04:27.120 align:start position:0%
+looking at the number line obviously it
+doesn't
+
+00:04:27.120 --> 00:04:27.130 align:start position:0%
+doesn't
+ 
+
+00:04:27.130 --> 00:04:28.950 align:start position:0%
+doesn't
+how<00:04:27.340><c> can</c><00:04:27.520><c> we</c><00:04:27.670><c> check</c><00:04:27.910><c> this</c><00:04:28.120><c> efficiently</c><00:04:28.720><c> with</c>
+
+00:04:28.950 --> 00:04:28.960 align:start position:0%
+how can we check this efficiently with
+ 
+
+00:04:28.960 --> 00:04:31.590 align:start position:0%
+how can we check this efficiently with
+code<00:04:29.290><c> well</c><00:04:29.710><c> we</c><00:04:29.830><c> already</c><00:04:30.070><c> have</c><00:04:30.340><c> a</c><00:04:30.490><c> set</c><00:04:30.970><c> that</c>
+
+00:04:31.590 --> 00:04:31.600 align:start position:0%
+code well we already have a set that
+ 
+
+00:04:31.600 --> 00:04:33.660 align:start position:0%
+code well we already have a set that
+takes<00:04:31.900><c> up</c><00:04:32.110><c> this</c><00:04:32.230><c> entire</c><00:04:32.620><c> array</c><00:04:32.980><c> so</c><00:04:33.040><c> let's</c><00:04:33.430><c> just</c>
+
+00:04:33.660 --> 00:04:33.670 align:start position:0%
+takes up this entire array so let's just
+ 
+
+00:04:33.670 --> 00:04:36.540 align:start position:0%
+takes up this entire array so let's just
+use<00:04:33.850><c> our</c><00:04:34.030><c> set</c><00:04:34.360><c> to</c><00:04:34.570><c> check</c><00:04:34.870><c> if</c><00:04:35.020><c> 101</c><00:04:35.860><c> exists</c><00:04:36.250><c> since</c>
+
+00:04:36.540 --> 00:04:36.550 align:start position:0%
+use our set to check if 101 exists since
+ 
+
+00:04:36.550 --> 00:04:39.480 align:start position:0%
+use our set to check if 101 exists since
+it<00:04:36.700><c> doesn't</c><00:04:37.270><c> we</c><00:04:37.630><c> can</c><00:04:38.170><c> no</c><00:04:38.380><c> longer</c><00:04:38.490><c> continue</c>
+
+00:04:39.480 --> 00:04:39.490 align:start position:0%
+it doesn't we can no longer continue
+ 
+
+00:04:39.490 --> 00:04:41.790 align:start position:0%
+it doesn't we can no longer continue
+this<00:04:39.850><c> sequence</c><00:04:40.330><c> so</c><00:04:40.690><c> now</c><00:04:40.900><c> we</c><00:04:40.960><c> go</c><00:04:41.170><c> we</c><00:04:41.440><c> get</c><00:04:41.590><c> to</c><00:04:41.710><c> the</c>
+
+00:04:41.790 --> 00:04:41.800 align:start position:0%
+this sequence so now we go we get to the
+ 
+
+00:04:41.800 --> 00:04:45.330 align:start position:0%
+this sequence so now we go we get to the
+next<00:04:42.070><c> number</c><00:04:42.190><c> for</c><00:04:42.700><c> is</c><00:04:43.410><c> for</c><00:04:44.410><c> the</c><00:04:44.620><c> start</c><00:04:45.010><c> of</c><00:04:45.220><c> a</c>
+
+00:04:45.330 --> 00:04:45.340 align:start position:0%
+next number for is for the start of a
+ 
+
+00:04:45.340 --> 00:04:47.550 align:start position:0%
+next number for is for the start of a
+sequence<00:04:45.790><c> let's</c><00:04:46.540><c> look</c><00:04:46.750><c> at</c><00:04:46.900><c> our</c><00:04:46.930><c> picture</c><00:04:47.440><c> we</c>
+
+00:04:47.550 --> 00:04:47.560 align:start position:0%
+sequence let's look at our picture we
+ 
+
+00:04:47.560 --> 00:04:50.010 align:start position:0%
+sequence let's look at our picture we
+drove<00:04:47.830><c> for</c><00:04:48.340><c> is</c><00:04:48.580><c> not</c><00:04:49.000><c> the</c><00:04:49.180><c> start</c><00:04:49.450><c> of</c><00:04:49.570><c> a</c><00:04:49.630><c> sequence</c>
+
+00:04:50.010 --> 00:04:50.020 align:start position:0%
+drove for is not the start of a sequence
+ 
+
+00:04:50.020 --> 00:04:52.170 align:start position:0%
+drove for is not the start of a sequence
+and<00:04:50.230><c> we</c><00:04:50.380><c> can</c><00:04:50.500><c> check</c><00:04:50.770><c> this</c><00:04:51.010><c> using</c><00:04:51.640><c> our</c><00:04:51.730><c> set</c><00:04:52.030><c> we</c>
+
+00:04:52.170 --> 00:04:52.180 align:start position:0%
+and we can check this using our set we
+ 
+
+00:04:52.180 --> 00:04:53.880 align:start position:0%
+and we can check this using our set we
+would<00:04:52.570><c> check</c><00:04:52.750><c> that</c><00:04:52.930><c> it</c><00:04:53.050><c> does</c><00:04:53.290><c> have</c><00:04:53.530><c> a</c><00:04:53.560><c> left</c>
+
+00:04:53.880 --> 00:04:53.890 align:start position:0%
+would check that it does have a left
+ 
+
+00:04:53.890 --> 00:04:55.860 align:start position:0%
+would check that it does have a left
+neighbor<00:04:54.190><c> right</c><00:04:54.610><c> three</c><00:04:55.180><c> so</c><00:04:55.390><c> it's</c><00:04:55.540><c> not</c><00:04:55.660><c> the</c>
+
+00:04:55.860 --> 00:04:55.870 align:start position:0%
+neighbor right three so it's not the
+ 
+
+00:04:55.870 --> 00:04:57.570 align:start position:0%
+neighbor right three so it's not the
+start<00:04:56.170><c> of</c><00:04:56.260><c> a</c><00:04:56.320><c> sequence</c><00:04:56.680><c> we're</c><00:04:57.040><c> not</c><00:04:57.310><c> going</c><00:04:57.520><c> to</c>
+
+00:04:57.570 --> 00:04:57.580 align:start position:0%
+start of a sequence we're not going to
+ 
+
+00:04:57.580 --> 00:04:59.880 align:start position:0%
+start of a sequence we're not going to
+make<00:04:57.730><c> a</c><00:04:57.760><c> range</c><00:04:58.090><c> from</c><00:04:58.360><c> it</c><00:04:58.540><c> we</c><00:04:59.320><c> get</c><00:04:59.470><c> to</c><00:04:59.560><c> the</c><00:04:59.680><c> next</c>
+
+00:04:59.880 --> 00:04:59.890 align:start position:0%
+make a range from it we get to the next
+ 
+
+00:04:59.890 --> 00:05:02.070 align:start position:0%
+make a range from it we get to the next
+number<00:05:00.010><c> 200</c><00:05:00.760><c> is</c><00:05:00.850><c> this</c><00:05:01.480><c> the</c><00:05:01.630><c> start</c><00:05:01.930><c> of</c><00:05:02.020><c> a</c>
+
+00:05:02.070 --> 00:05:02.080 align:start position:0%
+number 200 is this the start of a
+ 
+
+00:05:02.080 --> 00:05:04.140 align:start position:0%
+number 200 is this the start of a
+sequence<00:05:02.500><c> looking</c><00:05:03.220><c> at</c><00:05:03.340><c> our</c><00:05:03.430><c> picture</c><00:05:03.760><c> yes</c><00:05:04.000><c> it</c>
+
+00:05:04.140 --> 00:05:04.150 align:start position:0%
+sequence looking at our picture yes it
+ 
+
+00:05:04.150 --> 00:05:07.260 align:start position:0%
+sequence looking at our picture yes it
+is<00:05:04.330><c> and</c><00:05:04.570><c> we</c><00:05:04.870><c> know</c><00:05:05.020><c> that</c><00:05:05.280><c> 199</c><00:05:06.280><c> does</c><00:05:06.550><c> not</c><00:05:06.850><c> exist</c>
+
+00:05:07.260 --> 00:05:07.270 align:start position:0%
+is and we know that 199 does not exist
+ 
+
+00:05:07.270 --> 00:05:13.820 align:start position:0%
+is and we know that 199 does not exist
+in<00:05:07.390><c> our</c><00:05:07.510><c> set</c><00:05:07.840><c> so</c><00:05:08.260><c> let's</c><00:05:08.500><c> make</c><00:05:08.770><c> this</c><00:05:08.950><c> sequence</c>
+
+00:05:13.820 --> 00:05:13.830 align:start position:0%
+ 
+ 
+
+00:05:13.830 --> 00:05:16.290 align:start position:0%
+ 
+let's<00:05:14.830><c> try</c><00:05:15.040><c> to</c><00:05:15.100><c> make</c><00:05:15.340><c> it</c><00:05:15.370><c> as</c><00:05:15.550><c> long</c><00:05:15.730><c> as</c><00:05:15.790><c> we</c><00:05:15.970><c> can</c>
+
+00:05:16.290 --> 00:05:16.300 align:start position:0%
+let's try to make it as long as we can
+ 
+
+00:05:16.300 --> 00:05:19.290 align:start position:0%
+let's try to make it as long as we can
+we<00:05:16.540><c> check</c><00:05:16.780><c> this</c><00:05:17.080><c> 201</c><00:05:17.830><c> exists</c><00:05:18.220><c> no</c><00:05:18.760><c> it</c><00:05:18.910><c> doesn't</c>
+
+00:05:19.290 --> 00:05:19.300 align:start position:0%
+we check this 201 exists no it doesn't
+ 
+
+00:05:19.300 --> 00:05:20.850 align:start position:0%
+we check this 201 exists no it doesn't
+we<00:05:19.390><c> can</c><00:05:19.540><c> tell</c><00:05:19.720><c> that</c><00:05:19.840><c> from</c><00:05:20.050><c> our</c><00:05:20.170><c> picture</c><00:05:20.380><c> and</c><00:05:20.710><c> we</c>
+
+00:05:20.850 --> 00:05:20.860 align:start position:0%
+we can tell that from our picture and we
+ 
+
+00:05:20.860 --> 00:05:23.370 align:start position:0%
+we can tell that from our picture and we
+would<00:05:21.040><c> use</c><00:05:21.190><c> the</c><00:05:21.370><c> set</c><00:05:21.580><c> to</c><00:05:21.730><c> determine</c><00:05:22.180><c> that</c><00:05:22.420><c> so</c>
+
+00:05:23.370 --> 00:05:23.380 align:start position:0%
+would use the set to determine that so
+ 
+
+00:05:23.380 --> 00:05:25.380 align:start position:0%
+would use the set to determine that so
+now<00:05:23.560><c> we'll</c><00:05:23.740><c> this</c><00:05:24.310><c> is</c><00:05:24.490><c> as</c><00:05:24.610><c> long</c><00:05:24.790><c> as</c><00:05:24.940><c> we</c><00:05:25.090><c> can</c><00:05:25.210><c> make</c>
+
+00:05:25.380 --> 00:05:25.390 align:start position:0%
+now we'll this is as long as we can make
+ 
+
+00:05:25.390 --> 00:05:27.000 align:start position:0%
+now we'll this is as long as we can make
+this<00:05:25.570><c> set</c><00:05:25.840><c> so</c><00:05:26.020><c> let's</c><00:05:26.200><c> get</c><00:05:26.350><c> to</c><00:05:26.440><c> the</c><00:05:26.560><c> next</c><00:05:26.680><c> number</c>
+
+00:05:27.000 --> 00:05:27.010 align:start position:0%
+this set so let's get to the next number
+ 
+
+00:05:27.010 --> 00:05:30.330 align:start position:0%
+this set so let's get to the next number
+one<00:05:27.430><c> is</c><00:05:27.700><c> one</c><00:05:28.300><c> the</c><00:05:28.450><c> start</c><00:05:28.750><c> of</c><00:05:28.840><c> a</c><00:05:28.930><c> sequence</c><00:05:29.350><c> at</c>
+
+00:05:30.330 --> 00:05:30.340 align:start position:0%
+one is one the start of a sequence at
+ 
+
+00:05:30.340 --> 00:05:32.160 align:start position:0%
+one is one the start of a sequence at
+our<00:05:30.520><c> picture</c><00:05:30.880><c> we</c><00:05:31.000><c> can</c><00:05:31.120><c> tell</c><00:05:31.360><c> one</c><00:05:31.750><c> does</c><00:05:31.960><c> not</c>
+
+00:05:32.160 --> 00:05:32.170 align:start position:0%
+our picture we can tell one does not
+ 
+
+00:05:32.170 --> 00:05:34.020 align:start position:0%
+our picture we can tell one does not
+have<00:05:32.410><c> a</c><00:05:32.440><c> left</c><00:05:32.710><c> neighbor</c><00:05:32.950><c> so</c><00:05:33.400><c> what</c><00:05:33.550><c> is</c><00:05:33.790><c> the</c>
+
+00:05:34.020 --> 00:05:34.030 align:start position:0%
+have a left neighbor so what is the
+ 
+
+00:05:34.030 --> 00:05:37.050 align:start position:0%
+have a left neighbor so what is the
+start<00:05:34.300><c> of</c><00:05:34.360><c> a</c><00:05:34.450><c> sequence</c><00:05:35.460><c> now</c><00:05:36.460><c> let's</c><00:05:36.700><c> check</c><00:05:36.880><c> if</c>
+
+00:05:37.050 --> 00:05:37.060 align:start position:0%
+start of a sequence now let's check if
+ 
+
+00:05:37.060 --> 00:05:40.350 align:start position:0%
+start of a sequence now let's check if
+two<00:05:37.090><c> exists</c><00:05:38.080><c> in</c><00:05:38.170><c> our</c><00:05:38.260><c> set</c><00:05:38.590><c> it</c><00:05:39.040><c> does</c><00:05:39.430><c> so</c><00:05:40.060><c> we</c><00:05:40.210><c> can</c>
+
+00:05:40.350 --> 00:05:40.360 align:start position:0%
+two exists in our set it does so we can
+ 
+
+00:05:40.360 --> 00:05:43.040 align:start position:0%
+two exists in our set it does so we can
+make<00:05:40.540><c> this</c><00:05:40.720><c> sequence</c><00:05:41.350><c> a</c><00:05:41.470><c> little</c><00:05:41.710><c> bit</c><00:05:41.830><c> longer</c>
+
+00:05:43.040 --> 00:05:43.050 align:start position:0%
+make this sequence a little bit longer
+ 
+
+00:05:43.050 --> 00:05:45.750 align:start position:0%
+make this sequence a little bit longer
+now<00:05:44.050><c> let's</c><00:05:44.290><c> check</c><00:05:44.560><c> if</c><00:05:44.740><c> the</c><00:05:44.770><c> next</c><00:05:44.890><c> number</c><00:05:45.370><c> three</c>
+
+00:05:45.750 --> 00:05:45.760 align:start position:0%
+now let's check if the next number three
+ 
+
+00:05:45.760 --> 00:05:48.360 align:start position:0%
+now let's check if the next number three
+exists<00:05:46.240><c> in</c><00:05:46.300><c> our</c><00:05:46.330><c> set</c><00:05:46.720><c> yes</c><00:05:47.080><c> it</c><00:05:47.260><c> does</c><00:05:47.500><c> so</c><00:05:48.160><c> let's</c>
+
+00:05:48.360 --> 00:05:48.370 align:start position:0%
+exists in our set yes it does so let's
+ 
+
+00:05:48.370 --> 00:05:52.020 align:start position:0%
+exists in our set yes it does so let's
+make<00:05:48.550><c> it</c><00:05:48.580><c> even</c><00:05:48.760><c> longer</c><00:05:50.010><c> now</c><00:05:51.010><c> does</c><00:05:51.220><c> four</c><00:05:51.580><c> exist</c>
+
+00:05:52.020 --> 00:05:52.030 align:start position:0%
+make it even longer now does four exist
+ 
+
+00:05:52.030 --> 00:05:56.360 align:start position:0%
+make it even longer now does four exist
+in<00:05:52.150><c> our</c><00:05:52.270><c> set</c><00:05:52.570><c> yes</c><00:05:52.960><c> it</c><00:05:53.140><c> does</c>
+
+00:05:56.360 --> 00:05:56.370 align:start position:0%
+ 
+ 
+
+00:05:56.370 --> 00:05:58.890 align:start position:0%
+ 
+now<00:05:57.370><c> let's</c><00:05:57.580><c> check</c><00:05:57.790><c> if</c><00:05:57.910><c> five</c><00:05:58.210><c> exists</c><00:05:58.720><c> in</c><00:05:58.810><c> our</c>
+
+00:05:58.890 --> 00:05:58.900 align:start position:0%
+now let's check if five exists in our
+ 
+
+00:05:58.900 --> 00:06:02.280 align:start position:0%
+now let's check if five exists in our
+set<00:05:59.200><c> it</c><00:06:00.160><c> doesn't</c><00:06:00.700><c> right</c><00:06:00.910><c> there</c><00:06:01.450><c> is</c><00:06:01.570><c> no</c><00:06:01.720><c> there</c>
+
+00:06:02.280 --> 00:06:02.290 align:start position:0%
+set it doesn't right there is no there
+ 
+
+00:06:02.290 --> 00:06:04.080 align:start position:0%
+set it doesn't right there is no there
+is<00:06:02.320><c> no</c><00:06:02.440><c> 5</c><00:06:02.830><c> so</c><00:06:03.070><c> we</c><00:06:03.310><c> can't</c><00:06:03.550><c> make</c><00:06:03.730><c> this</c><00:06:03.880><c> sequence</c>
+
+00:06:04.080 --> 00:06:04.090 align:start position:0%
+is no 5 so we can't make this sequence
+ 
+
+00:06:04.090 --> 00:06:06.660 align:start position:0%
+is no 5 so we can't make this sequence
+any<00:06:04.480><c> longer</c><00:06:05.140><c> so</c><00:06:05.590><c> now</c><00:06:05.770><c> let's</c><00:06:05.950><c> continue</c><00:06:06.160><c> through</c>
+
+00:06:06.660 --> 00:06:06.670 align:start position:0%
+any longer so now let's continue through
+ 
+
+00:06:06.670 --> 00:06:09.420 align:start position:0%
+any longer so now let's continue through
+the<00:06:06.790><c> array</c><00:06:07.060><c> 3</c><00:06:07.600><c> is</c><00:06:07.840><c> to</c><00:06:08.440><c> read</c><00:06:08.620><c> the</c><00:06:08.650><c> start</c><00:06:09.160><c> of</c><00:06:09.340><c> a</c>
+
+00:06:09.420 --> 00:06:09.430 align:start position:0%
+the array 3 is to read the start of a
+ 
+
+00:06:09.430 --> 00:06:11.610 align:start position:0%
+the array 3 is to read the start of a
+sequence<00:06:09.820><c> no</c><00:06:10.420><c> it's</c><00:06:10.600><c> not</c><00:06:10.780><c> it</c><00:06:11.050><c> has</c><00:06:11.260><c> a</c><00:06:11.290><c> left</c>
+
+00:06:11.610 --> 00:06:11.620 align:start position:0%
+sequence no it's not it has a left
+ 
+
+00:06:11.620 --> 00:06:16.020 align:start position:0%
+sequence no it's not it has a left
+neighbor<00:06:11.890><c> too</c><00:06:12.540><c> now</c><00:06:13.540><c> let's</c><00:06:13.570><c> try</c><00:06:14.110><c> 2</c><00:06:14.280><c> this</c><00:06:15.280><c> 2</c><00:06:15.730><c> is</c>
+
+00:06:16.020 --> 00:06:16.030 align:start position:0%
+neighbor too now let's try 2 this 2 is
+ 
+
+00:06:16.030 --> 00:06:18.360 align:start position:0%
+neighbor too now let's try 2 this 2 is
+to<00:06:16.450><c> the</c><00:06:16.630><c> start</c><00:06:16.930><c> of</c><00:06:17.050><c> a</c><00:06:17.110><c> sequence</c><00:06:17.500><c> it's</c><00:06:18.040><c> not</c>
+
+00:06:18.360 --> 00:06:18.370 align:start position:0%
+to the start of a sequence it's not
+ 
+
+00:06:18.370 --> 00:06:20.640 align:start position:0%
+to the start of a sequence it's not
+because<00:06:18.730><c> it</c><00:06:18.820><c> has</c><00:06:18.850><c> a</c><00:06:18.940><c> left</c><00:06:19.270><c> neighbor</c><00:06:19.540><c> 1</c><00:06:19.960><c> so</c><00:06:20.500><c> we</c>
+
+00:06:20.640 --> 00:06:20.650 align:start position:0%
+because it has a left neighbor 1 so we
+ 
+
+00:06:20.650 --> 00:06:22.710 align:start position:0%
+because it has a left neighbor 1 so we
+went<00:06:20.920><c> through</c><00:06:21.130><c> the</c><00:06:21.250><c> entire</c><00:06:21.610><c> array</c><00:06:21.850><c> we</c><00:06:22.210><c> created</c>
+
+00:06:22.710 --> 00:06:22.720 align:start position:0%
+went through the entire array we created
+ 
+
+00:06:22.720 --> 00:06:24.750 align:start position:0%
+went through the entire array we created
+all<00:06:22.900><c> the</c><00:06:23.140><c> sequences</c><00:06:23.650><c> we</c><00:06:23.800><c> could</c><00:06:24.100><c> the</c><00:06:24.490><c> first</c>
+
+00:06:24.750 --> 00:06:24.760 align:start position:0%
+all the sequences we could the first
+ 
+
+00:06:24.760 --> 00:06:27.600 align:start position:0%
+all the sequences we could the first
+sequence<00:06:25.270><c> is</c><00:06:25.480><c> length</c><00:06:25.840><c> 1</c><00:06:26.230><c> the</c><00:06:26.830><c> second</c><00:06:27.250><c> sequence</c>
+
+00:06:27.600 --> 00:06:27.610 align:start position:0%
+sequence is length 1 the second sequence
+ 
+
+00:06:27.610 --> 00:06:29.040 align:start position:0%
+sequence is length 1 the second sequence
+is<00:06:27.850><c> also</c><00:06:28.300><c> length</c><00:06:28.570><c> 1</c>
+
+00:06:29.040 --> 00:06:29.050 align:start position:0%
+is also length 1
+ 
+
+00:06:29.050 --> 00:06:31.860 align:start position:0%
+is also length 1
+the<00:06:29.380><c> third</c><00:06:29.710><c> sequence</c><00:06:30.160><c> is</c><00:06:30.340><c> length</c><00:06:30.700><c> 4</c><00:06:31.120><c> so</c><00:06:31.630><c> this</c>
+
+00:06:31.860 --> 00:06:31.870 align:start position:0%
+the third sequence is length 4 so this
+ 
+
+00:06:31.870 --> 00:06:34.020 align:start position:0%
+the third sequence is length 4 so this
+is<00:06:32.050><c> the</c><00:06:32.200><c> longest</c><00:06:32.620><c> sequence</c><00:06:32.890><c> now</c><00:06:33.610><c> we</c><00:06:33.670><c> took</c><00:06:33.970><c> a</c>
+
+00:06:34.020 --> 00:06:34.030 align:start position:0%
+is the longest sequence now we took a
+ 
+
+00:06:34.030 --> 00:06:36.450 align:start position:0%
+is the longest sequence now we took a
+really<00:06:34.390><c> complicated</c><00:06:34.930><c> problem</c><00:06:35.500><c> or</c><00:06:35.890><c> seemingly</c>
+
+00:06:36.450 --> 00:06:36.460 align:start position:0%
+really complicated problem or seemingly
+ 
+
+00:06:36.460 --> 00:06:38.640 align:start position:0%
+really complicated problem or seemingly
+complicated<00:06:37.210><c> and</c><00:06:37.360><c> we</c><00:06:37.450><c> broke</c><00:06:37.750><c> it</c><00:06:37.810><c> down</c><00:06:38.140><c> so</c>
+
+00:06:38.640 --> 00:06:38.650 align:start position:0%
+complicated and we broke it down so
+ 
+
+00:06:38.650 --> 00:06:40.660 align:start position:0%
+complicated and we broke it down so
+easily<00:06:39.130><c> all</c><00:06:39.610><c> we</c><00:06:39.910><c> had</c><00:06:40.090><c> to</c><00:06:40.210><c> do</c><00:06:40.360><c> is</c>
+
+00:06:40.660 --> 00:06:40.670 align:start position:0%
+easily all we had to do is
+ 
+
+00:06:40.670 --> 00:06:42.910 align:start position:0%
+easily all we had to do is
+iterate<00:06:41.060><c> through</c><00:06:41.300><c> the</c><00:06:41.480><c> initial</c><00:06:41.930><c> array</c><00:06:42.230><c> use</c><00:06:42.890><c> a</c>
+
+00:06:42.910 --> 00:06:42.920 align:start position:0%
+iterate through the initial array use a
+ 
+
+00:06:42.920 --> 00:06:46.750 align:start position:0%
+iterate through the initial array use a
+set<00:06:43.460><c> and</c><00:06:43.670><c> check</c><00:06:44.330><c> if</c><00:06:44.540><c> I've</c><00:06:45.050><c> nodes</c><00:06:45.440><c> had</c><00:06:45.760><c> values</c>
+
+00:06:46.750 --> 00:06:46.760 align:start position:0%
+set and check if I've nodes had values
+ 
+
+00:06:46.760 --> 00:06:48.910 align:start position:0%
+set and check if I've nodes had values
+had<00:06:46.940><c> left</c><00:06:47.330><c> neighbors</c><00:06:47.750><c> and</c><00:06:48.020><c> if</c><00:06:48.380><c> they</c><00:06:48.500><c> didn't</c>
+
+00:06:48.910 --> 00:06:48.920 align:start position:0%
+had left neighbors and if they didn't
+ 
+
+00:06:48.920 --> 00:06:51.040 align:start position:0%
+had left neighbors and if they didn't
+then<00:06:49.190><c> they</c><00:06:49.370><c> were</c><00:06:49.430><c> the</c><00:06:49.580><c> start</c><00:06:49.910><c> of</c><00:06:50.030><c> sequences</c><00:06:50.600><c> we</c>
+
+00:06:51.040 --> 00:06:51.050 align:start position:0%
+then they were the start of sequences we
+ 
+
+00:06:51.050 --> 00:06:53.080 align:start position:0%
+then they were the start of sequences we
+made<00:06:51.290><c> this</c><00:06:51.410><c> problem</c><00:06:51.680><c> so</c><00:06:52.160><c> easy</c><00:06:52.490><c> with</c><00:06:52.760><c> only</c>
+
+00:06:53.080 --> 00:06:53.090 align:start position:0%
+made this problem so easy with only
+ 
+
+00:06:53.090 --> 00:06:55.840 align:start position:0%
+made this problem so easy with only
+using<00:06:53.630><c> one</c><00:06:53.900><c> data</c><00:06:54.200><c> structure</c><00:06:54.590><c> since</c><00:06:55.430><c> we</c><00:06:55.550><c> only</c>
+
+00:06:55.840 --> 00:06:55.850 align:start position:0%
+using one data structure since we only
+ 
+
+00:06:55.850 --> 00:06:57.640 align:start position:0%
+using one data structure since we only
+had<00:06:56.150><c> to</c><00:06:56.270><c> iterate</c><00:06:56.690><c> through</c><00:06:56.900><c> the</c><00:06:56.990><c> entire</c><00:06:57.410><c> array</c>
+
+00:06:57.640 --> 00:06:57.650 align:start position:0%
+had to iterate through the entire array
+ 
+
+00:06:57.650 --> 00:07:00.880 align:start position:0%
+had to iterate through the entire array
+and<00:06:58.130><c> we</c><00:06:58.490><c> had</c><00:06:58.640><c> to</c><00:06:58.790><c> expand</c><00:06:59.330><c> each</c><00:06:59.660><c> range</c><00:07:00.140><c> we</c><00:07:00.590><c> know</c>
+
+00:07:00.880 --> 00:07:00.890 align:start position:0%
+and we had to expand each range we know
+ 
+
+00:07:00.890 --> 00:07:02.350 align:start position:0%
+and we had to expand each range we know
+that<00:07:01.250><c> we're</c><00:07:01.400><c> only</c><00:07:01.580><c> going</c><00:07:01.850><c> to</c><00:07:01.910><c> visit</c><00:07:02.210><c> each</c>
+
+00:07:02.350 --> 00:07:02.360 align:start position:0%
+that we're only going to visit each
+ 
+
+00:07:02.360 --> 00:07:05.380 align:start position:0%
+that we're only going to visit each
+number<00:07:02.870><c> at</c><00:07:03.020><c> most</c><00:07:03.380><c> twice</c><00:07:03.890><c> so</c><00:07:04.490><c> our</c><00:07:04.670><c> solution</c><00:07:05.240><c> is</c>
+
+00:07:05.380 --> 00:07:05.390 align:start position:0%
+number at most twice so our solution is
+ 
+
+00:07:05.390 --> 00:07:11.680 align:start position:0%
+number at most twice so our solution is
+very<00:07:05.840><c> efficient</c><00:07:08.020><c> and</c><00:07:09.820><c> we</c><00:07:10.820><c> did</c><00:07:11.030><c> have</c><00:07:11.180><c> to</c><00:07:11.270><c> use</c><00:07:11.360><c> an</c>
+
+00:07:11.680 --> 00:07:11.690 align:start position:0%
+very efficient and we did have to use an
+ 
+
+00:07:11.690 --> 00:07:13.750 align:start position:0%
+very efficient and we did have to use an
+additional<00:07:12.200><c> memory</c><00:07:12.800><c> to</c><00:07:12.980><c> create</c><00:07:13.280><c> a</c><00:07:13.310><c> set</c>
+
+00:07:13.750 --> 00:07:13.760 align:start position:0%
+additional memory to create a set
+ 
+
+00:07:13.760 --> 00:07:15.340 align:start position:0%
+additional memory to create a set
+because<00:07:14.150><c> we</c><00:07:14.240><c> wanted</c><00:07:14.480><c> to</c><00:07:14.570><c> check</c><00:07:14.750><c> if</c><00:07:14.930><c> neighbors</c>
+
+00:07:15.340 --> 00:07:15.350 align:start position:0%
+because we wanted to check if neighbors
+ 
+
+00:07:15.350 --> 00:07:18.400 align:start position:0%
+because we wanted to check if neighbors
+existed<00:07:16.010><c> so</c><00:07:16.610><c> we</c><00:07:16.840><c> so</c><00:07:17.840><c> for</c><00:07:18.050><c> the</c><00:07:18.140><c> memory</c>
+
+00:07:18.400 --> 00:07:18.410 align:start position:0%
+existed so we so for the memory
+ 
+
+00:07:18.410 --> 00:07:23.230 align:start position:0%
+existed so we so for the memory
+complexity<00:07:19.010><c> it</c><00:07:19.220><c> is</c><00:07:19.760><c> also</c><00:07:20.320><c> Big</c><00:07:21.320><c> O</c><00:07:21.470><c> of</c><00:07:21.500><c> N</c><00:07:21.800><c> in</c><00:07:22.250><c> this</c>
+
+00:07:23.230 --> 00:07:23.240 align:start position:0%
+complexity it is also Big O of N in this
+ 
+
+00:07:23.240 --> 00:07:26.020 align:start position:0%
+complexity it is also Big O of N in this
+case<00:07:23.300><c> n</c><00:07:23.540><c> is</c><00:07:24.080><c> the</c><00:07:24.230><c> size</c><00:07:24.500><c> of</c><00:07:24.740><c> the</c><00:07:24.830><c> input</c><00:07:25.220><c> array</c><00:07:25.340><c> so</c>
+
+00:07:26.020 --> 00:07:26.030 align:start position:0%
+case n is the size of the input array so
+ 
+
+00:07:26.030 --> 00:07:27.910 align:start position:0%
+case n is the size of the input array so
+now<00:07:26.150><c> let's</c><00:07:26.330><c> get</c><00:07:26.480><c> to</c><00:07:26.540><c> the</c><00:07:26.750><c> code</c><00:07:26.960><c> so</c><00:07:27.290><c> we</c><00:07:27.440><c> remember</c>
+
+00:07:27.910 --> 00:07:27.920 align:start position:0%
+now let's get to the code so we remember
+ 
+
+00:07:27.920 --> 00:07:29.920 align:start position:0%
+now let's get to the code so we remember
+we<00:07:28.070><c> need</c><00:07:28.280><c> to</c><00:07:28.340><c> create</c><00:07:28.730><c> a</c><00:07:28.760><c> set</c><00:07:29.180><c> from</c><00:07:29.420><c> the</c><00:07:29.510><c> initial</c>
+
+00:07:29.920 --> 00:07:29.930 align:start position:0%
+we need to create a set from the initial
+ 
+
+00:07:29.930 --> 00:07:31.030 align:start position:0%
+we need to create a set from the initial
+array<00:07:30.230><c> nums</c>
+
+00:07:31.030 --> 00:07:31.040 align:start position:0%
+array nums
+ 
+
+00:07:31.040 --> 00:07:33.040 align:start position:0%
+array nums
+so<00:07:31.610><c> it's</c><00:07:31.730><c> really</c><00:07:31.910><c> easy</c><00:07:32.180><c> to</c><00:07:32.330><c> do</c><00:07:32.570><c> that</c><00:07:32.600><c> in</c><00:07:32.870><c> Python</c>
+
+00:07:33.040 --> 00:07:33.050 align:start position:0%
+so it's really easy to do that in Python
+ 
+
+00:07:33.050 --> 00:07:35.650 align:start position:0%
+so it's really easy to do that in Python
+we<00:07:33.440><c> can</c><00:07:33.590><c> just</c><00:07:33.800><c> pass</c><00:07:34.010><c> their</c><00:07:34.340><c> D</c><00:07:34.940><c> array</c><00:07:35.150><c> into</c><00:07:35.630><c> a</c>
+
+00:07:35.650 --> 00:07:35.660 align:start position:0%
+we can just pass their D array into a
+ 
+
+00:07:35.660 --> 00:07:38.260 align:start position:0%
+we can just pass their D array into a
+set<00:07:36.260><c> constructor</c><00:07:36.890><c> next</c><00:07:37.730><c> we</c><00:07:37.880><c> want</c><00:07:38.030><c> to</c><00:07:38.090><c> keep</c>
+
+00:07:38.260 --> 00:07:38.270 align:start position:0%
+set constructor next we want to keep
+ 
+
+00:07:38.270 --> 00:07:40.270 align:start position:0%
+set constructor next we want to keep
+track<00:07:38.330><c> of</c><00:07:38.810><c> what</c><00:07:38.960><c> the</c><00:07:39.110><c> longest</c><00:07:39.650><c> consecutive</c>
+
+00:07:40.270 --> 00:07:40.280 align:start position:0%
+track of what the longest consecutive
+ 
+
+00:07:40.280 --> 00:07:43.050 align:start position:0%
+track of what the longest consecutive
+sequence<00:07:40.640><c> is</c><00:07:40.820><c> initially</c><00:07:41.420><c> we</c><00:07:41.540><c> can</c><00:07:41.660><c> say</c><00:07:41.840><c> it's</c><00:07:41.990><c> 0</c>
+
+00:07:43.050 --> 00:07:43.060 align:start position:0%
+sequence is initially we can say it's 0
+ 
+
+00:07:43.060 --> 00:07:46.030 align:start position:0%
+sequence is initially we can say it's 0
+so<00:07:44.060><c> we</c><00:07:44.750><c> want</c><00:07:44.960><c> to</c><00:07:45.050><c> iterate</c><00:07:45.410><c> through</c><00:07:45.440><c> every</c>
+
+00:07:46.030 --> 00:07:46.040 align:start position:0%
+so we want to iterate through every
+ 
+
+00:07:46.040 --> 00:07:49.450 align:start position:0%
+so we want to iterate through every
+number<00:07:46.370><c> in</c><00:07:46.730><c> the</c><00:07:47.420><c> number</c><00:07:47.690><c> Rea</c><00:07:48.200><c> and</c><00:07:48.620><c> we</c><00:07:49.160><c> want</c><00:07:49.370><c> to</c>
+
+00:07:49.450 --> 00:07:49.460 align:start position:0%
+number in the number Rea and we want to
+ 
+
+00:07:49.460 --> 00:07:54.490 align:start position:0%
+number in the number Rea and we want to
+check<00:07:50.410><c> if</c><00:07:51.410><c> it's</c><00:07:51.920><c> the</c><00:07:52.400><c> start</c><00:07:52.910><c> of</c><00:07:53.090><c> a</c><00:07:53.900><c> sequence</c>
+
+00:07:54.490 --> 00:07:54.500 align:start position:0%
+check if it's the start of a sequence
+ 
+
+00:07:54.500 --> 00:07:58.870 align:start position:0%
+check if it's the start of a sequence
+and<00:07:55.810><c> we</c><00:07:56.810><c> can</c><00:07:56.960><c> check</c><00:07:57.230><c> that</c><00:07:57.340><c> simply</c><00:07:58.340><c> by</c><00:07:58.580><c> checking</c>
+
+00:07:58.870 --> 00:07:58.880 align:start position:0%
+and we can check that simply by checking
+ 
+
+00:07:58.880 --> 00:08:03.220 align:start position:0%
+and we can check that simply by checking
+if<00:07:59.270><c> n</c><00:07:59.560><c> minus</c><00:08:00.560><c> 1</c><00:08:00.980><c> does</c><00:08:01.550><c> not</c><00:08:01.630><c> exist</c><00:08:02.630><c> in</c><00:08:02.870><c> our</c><00:08:02.960><c> num</c>
+
+00:08:03.220 --> 00:08:03.230 align:start position:0%
+if n minus 1 does not exist in our num
+ 
+
+00:08:03.230 --> 00:08:06.520 align:start position:0%
+if n minus 1 does not exist in our num
+set<00:08:03.680><c> if</c><00:08:04.270><c> this</c><00:08:05.270><c> number</c><00:08:05.600><c> doesn't</c><00:08:05.870><c> have</c><00:08:06.140><c> a</c><00:08:06.200><c> left</c>
+
+00:08:06.520 --> 00:08:06.530 align:start position:0%
+set if this number doesn't have a left
+ 
+
+00:08:06.530 --> 00:08:08.140 align:start position:0%
+set if this number doesn't have a left
+neighbour<00:08:06.770><c> that</c><00:08:07.040><c> means</c><00:08:07.220><c> the</c><00:08:07.520><c> start</c><00:08:07.910><c> of</c><00:08:08.060><c> a</c>
+
+00:08:08.140 --> 00:08:08.150 align:start position:0%
+neighbour that means the start of a
+ 
+
+00:08:08.150 --> 00:08:09.880 align:start position:0%
+neighbour that means the start of a
+sequence<00:08:08.600><c> so</c><00:08:09.080><c> now</c><00:08:09.290><c> we</c><00:08:09.350><c> want</c><00:08:09.620><c> to</c><00:08:09.680><c> get</c><00:08:09.770><c> the</c>
+
+00:08:09.880 --> 00:08:09.890 align:start position:0%
+sequence so now we want to get the
+ 
+
+00:08:09.890 --> 00:08:11.980 align:start position:0%
+sequence so now we want to get the
+length<00:08:10.190><c> of</c><00:08:10.490><c> the</c><00:08:10.730><c> sequence</c><00:08:10.970><c> initially</c><00:08:11.720><c> we</c><00:08:11.870><c> can</c>
+
+00:08:11.980 --> 00:08:11.990 align:start position:0%
+length of the sequence initially we can
+ 
+
+00:08:11.990 --> 00:08:14.650 align:start position:0%
+length of the sequence initially we can
+say<00:08:12.170><c> the</c><00:08:12.320><c> length</c><00:08:12.470><c> is</c><00:08:12.740><c> 0</c><00:08:13.070><c> and</c><00:08:13.490><c> we</c><00:08:14.090><c> want</c><00:08:14.240><c> to</c><00:08:14.360><c> keep</c>
+
+00:08:14.650 --> 00:08:14.660 align:start position:0%
+say the length is 0 and we want to keep
+ 
+
+00:08:14.660 --> 00:08:16.720 align:start position:0%
+say the length is 0 and we want to keep
+getting<00:08:15.020><c> each</c><00:08:15.470><c> consecutive</c><00:08:16.280><c> number</c><00:08:16.610><c> and</c>
+
+00:08:16.720 --> 00:08:16.730 align:start position:0%
+getting each consecutive number and
+ 
+
+00:08:16.730 --> 00:08:19.270 align:start position:0%
+getting each consecutive number and
+checking<00:08:17.240><c> if</c><00:08:17.390><c> it</c><00:08:17.510><c> exists</c><00:08:18.110><c> in</c><00:08:18.260><c> our</c><00:08:18.470><c> num</c><00:08:18.740><c> set</c><00:08:19.070><c> if</c>
+
+00:08:19.270 --> 00:08:19.280 align:start position:0%
+checking if it exists in our num set if
+ 
+
+00:08:19.280 --> 00:08:22.090 align:start position:0%
+checking if it exists in our num set if
+it<00:08:19.640><c> does</c><00:08:19.970><c> then</c><00:08:20.720><c> we</c><00:08:20.930><c> can</c><00:08:21.110><c> keep</c><00:08:21.290><c> expanding</c><00:08:21.800><c> the</c>
+
+00:08:22.090 --> 00:08:22.100 align:start position:0%
+it does then we can keep expanding the
+ 
+
+00:08:22.100 --> 00:08:25.920 align:start position:0%
+it does then we can keep expanding the
+length<00:08:22.450><c> so</c><00:08:23.450><c> initially</c><00:08:24.080><c> I'm</c><00:08:24.590><c> going</c><00:08:24.650><c> to</c><00:08:24.920><c> check</c><00:08:25.220><c> n</c>
+
+00:08:25.920 --> 00:08:25.930 align:start position:0%
+length so initially I'm going to check n
+ 
+
+00:08:25.930 --> 00:08:28.120 align:start position:0%
+length so initially I'm going to check n
+plus<00:08:26.930><c> lengths</c><00:08:27.320><c> because</c><00:08:27.650><c> that's</c><00:08:27.950><c> going</c><00:08:28.070><c> to</c>
+
+00:08:28.120 --> 00:08:28.130 align:start position:0%
+plus lengths because that's going to
+ 
+
+00:08:28.130 --> 00:08:33.070 align:start position:0%
+plus lengths because that's going to
+check<00:08:28.430><c> the</c><00:08:28.580><c> current</c><00:08:28.880><c> number</c><00:08:32.080><c> initially</c>
+
+00:08:33.070 --> 00:08:33.080 align:start position:0%
+check the current number initially
+ 
+
+00:08:33.080 --> 00:08:34.900 align:start position:0%
+check the current number initially
+length<00:08:33.290><c> is</c><00:08:33.500><c> 0</c><00:08:33.770><c> so</c><00:08:34.160><c> we're</c><00:08:34.310><c> just</c><00:08:34.490><c> checking</c><00:08:34.640><c> the</c>
+
+00:08:34.900 --> 00:08:34.910 align:start position:0%
+length is 0 so we're just checking the
+ 
+
+00:08:34.910 --> 00:08:38.200 align:start position:0%
+length is 0 so we're just checking the
+current<00:08:35.210><c> number</c><00:08:35.510><c> as</c><00:08:35.660><c> it</c><00:08:36.560><c> as</c><00:08:36.740><c> the</c><00:08:37.610><c> length</c><00:08:37.790><c> grows</c>
+
+00:08:38.200 --> 00:08:38.210 align:start position:0%
+current number as it as the length grows
+ 
+
+00:08:38.210 --> 00:08:40.330 align:start position:0%
+current number as it as the length grows
+we'll<00:08:38.479><c> check</c><00:08:38.750><c> more</c><00:08:39.050><c> consecutive</c><00:08:39.470><c> numbers</c><00:08:40.070><c> at</c>
+
+00:08:40.330 --> 00:08:40.340 align:start position:0%
+we'll check more consecutive numbers at
+ 
+
+00:08:40.340 --> 00:08:43.000 align:start position:0%
+we'll check more consecutive numbers at
+the<00:08:41.060><c> end</c><00:08:41.270><c> we</c><00:08:41.840><c> could</c><00:08:42.020><c> have</c><00:08:42.110><c> potentially</c><00:08:42.800><c> found</c>
+
+00:08:43.000 --> 00:08:43.010 align:start position:0%
+the end we could have potentially found
+ 
+
+00:08:43.010 --> 00:08:45.100 align:start position:0%
+the end we could have potentially found
+the<00:08:43.280><c> longest</c><00:08:43.729><c> sequence</c><00:08:44.570><c> so</c><00:08:44.750><c> we</c><00:08:44.780><c> want</c><00:08:45.050><c> to</c>
+
+00:08:45.100 --> 00:08:45.110 align:start position:0%
+the longest sequence so we want to
+ 
+
+00:08:45.110 --> 00:08:47.350 align:start position:0%
+the longest sequence so we want to
+potentially<00:08:45.380><c> update</c><00:08:46.220><c> our</c><00:08:46.460><c> longest</c><00:08:47.000><c> by</c><00:08:47.150><c> just</c>
+
+00:08:47.350 --> 00:08:47.360 align:start position:0%
+potentially update our longest by just
+ 
+
+00:08:47.360 --> 00:08:49.330 align:start position:0%
+potentially update our longest by just
+taking<00:08:47.510><c> the</c><00:08:47.810><c> max</c><00:08:48.080><c> of</c><00:08:48.320><c> the</c><00:08:48.590><c> current</c><00:08:48.920><c> length</c><00:08:49.100><c> we</c>
+
+00:08:49.330 --> 00:08:49.340 align:start position:0%
+taking the max of the current length we
+ 
+
+00:08:49.340 --> 00:08:51.130 align:start position:0%
+taking the max of the current length we
+just<00:08:49.610><c> computed</c><00:08:50.090><c> as</c><00:08:50.270><c> well</c><00:08:50.720><c> as</c><00:08:50.840><c> what</c><00:08:51.020><c> the</c>
+
+00:08:51.130 --> 00:08:51.140 align:start position:0%
+just computed as well as what the
+ 
+
+00:08:51.140 --> 00:08:53.830 align:start position:0%
+just computed as well as what the
+longest<00:08:51.620><c> originally</c><00:08:52.220><c> was</c>
+
+00:08:53.830 --> 00:08:53.840 align:start position:0%
+longest originally was
+ 
+
+00:08:53.840 --> 00:08:56.650 align:start position:0%
+longest originally was
+and<00:08:54.070><c> it's</c><00:08:55.070><c> really</c><00:08:55.280><c> that</c><00:08:55.430><c> simple</c><00:08:55.610><c> so</c><00:08:56.210><c> now</c><00:08:56.390><c> all</c>
+
+00:08:56.650 --> 00:08:56.660 align:start position:0%
+and it's really that simple so now all
+ 
+
+00:08:56.660 --> 00:08:58.630 align:start position:0%
+and it's really that simple so now all
+we<00:08:56.900><c> have</c><00:08:57.050><c> left</c><00:08:57.080><c> to</c><00:08:57.350><c> do</c><00:08:57.530><c> is</c><00:08:57.560><c> just</c><00:08:57.860><c> return</c><00:08:58.310><c> what</c>
+
+00:08:58.630 --> 00:08:58.640 align:start position:0%
+we have left to do is just return what
+ 
+
+00:08:58.640 --> 00:09:02.170 align:start position:0%
+we have left to do is just return what
+the<00:08:58.790><c> longest</c><00:08:59.240><c> subsequence</c><00:09:00.670><c> was</c><00:09:01.670><c> that</c><00:09:01.910><c> we</c><00:09:02.000><c> just</c>
+
+00:09:02.170 --> 00:09:02.180 align:start position:0%
+the longest subsequence was that we just
+ 
+
+00:09:02.180 --> 00:09:04.510 align:start position:0%
+the longest subsequence was that we just
+computed<00:09:02.510><c> so</c><00:09:03.050><c> we</c><00:09:03.200><c> did</c><00:09:03.380><c> this</c><00:09:03.500><c> in</c><00:09:03.710><c> such</c><00:09:03.980><c> a</c><00:09:04.010><c> small</c>
+
+00:09:04.510 --> 00:09:04.520 align:start position:0%
+computed so we did this in such a small
+ 
+
+00:09:04.520 --> 00:09:06.730 align:start position:0%
+computed so we did this in such a small
+amount<00:09:04.700><c> of</c><00:09:04.970><c> code</c><00:09:05.240><c> now</c><00:09:05.870><c> let's</c><00:09:06.050><c> just</c><00:09:06.230><c> run</c><00:09:06.470><c> it</c><00:09:06.500><c> to</c>
+
+00:09:06.730 --> 00:09:06.740 align:start position:0%
+amount of code now let's just run it to
+ 
+
+00:09:06.740 --> 00:09:13.090 align:start position:0%
+amount of code now let's just run it to
+see<00:09:06.890><c> that</c><00:09:07.040><c> it</c><00:09:07.130><c> works</c><00:09:10.360><c> and</c><00:09:11.360><c> it</c><00:09:11.840><c> works</c><00:09:12.100><c> perfectly</c>
+
+00:09:13.090 --> 00:09:13.100 align:start position:0%
+see that it works and it works perfectly
+ 
+
+00:09:13.100 --> 00:09:16.360 align:start position:0%
+see that it works and it works perfectly
+so<00:09:14.030><c> this</c><00:09:14.210><c> is</c><00:09:14.330><c> a</c><00:09:14.360><c> linear</c><00:09:14.720><c> time</c><00:09:15.170><c> solution</c><00:09:15.710><c> in</c><00:09:16.130><c> a</c>
+
+00:09:16.360 --> 00:09:16.370 align:start position:0%
+so this is a linear time solution in a
+ 
+
+00:09:16.370 --> 00:09:18.820 align:start position:0%
+so this is a linear time solution in a
+linear<00:09:16.610><c> memory</c><00:09:17.000><c> complexity</c><00:09:17.720><c> solution</c><00:09:18.230><c> once</c>
+
+00:09:18.820 --> 00:09:18.830 align:start position:0%
+linear memory complexity solution once
+ 
+
+00:09:18.830 --> 00:09:20.650 align:start position:0%
+linear memory complexity solution once
+we<00:09:19.040><c> visualize</c><00:09:19.610><c> the</c><00:09:19.910><c> problem</c><00:09:20.330><c> the</c><00:09:20.510><c> solution</c>
+
+00:09:20.650 --> 00:09:20.660 align:start position:0%
+we visualize the problem the solution
+ 
+
+00:09:20.660 --> 00:09:24.370 align:start position:0%
+we visualize the problem the solution
+became<00:09:21.290><c> so</c><00:09:21.590><c> easy</c><00:09:21.620><c> to</c><00:09:22.160><c> derive</c>
+

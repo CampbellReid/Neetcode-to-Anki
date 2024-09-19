@@ -1,0 +1,342 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+let's solve the problem find minimum in
+a rotated sorted array so we are given
+an input array of length n that is
+assorted in ascending order but it could
+be rotated
+one to n times for example if we have an
+array like one two
+one zero one two right to rotate it by
+one basically means to take the
+rightmost element you know move it to
+the beginning
+like this right so this has been rotated
+by one we could also rotate it by two by
+taking the last two elements and moving
+them to the beginning so something like
+this right this has been rotated by two
+and so we want to find the minimum value
+and we want to do it in log n time as
+they say the good thing is that we do
+have some kind of sorting property that
+we can use to our advantage to find this
+log n time solution and we are
+guaranteed that every value in the array
+happens to be unique of course it would
+be easy to find a linear time solution
+basically just scan through every single
+value in the array and then take the
+minimum value and return it but we can
+use the sorting property to our
+advantage even if the array has been
+rotated let me show you how we can do
+that solution as you might be able to
+guess it is going to involve the binary
+search algorithm which is usually the
+algorithm that runs in log and time so
+the fact that the array was originally
+sorted is what hints to you that binary
+search might work in this case but it's
+not going to be a traditional binary
+search now of course if the entire array
+was sort was uh rotated n times that
+basically means we took a sorted array
+such as one two three four five rotated
+it n times basically leaving it in the
+original sorted order now if we had an
+array that was completely sorted like
+this one an easy binary search would
+work on a sorted array but if the array
+is fully sorted then we know that the
+minimum value is going to be the
+leftmost right so if at any point we get
+a you know binary search is going to run
+like this a left pointer and a right
+pointer if we ever get to a point where
+the entire array is sorted we can just
+return the leftmost element or at least
+consider this as being the minimum value
+so let's try a binary search and see how
+it's going to be different than a
+regular binary search now of course we
+want to find the minimum value we're
+going to initialize our left pointer
+here and our right pointer here
+basically the current pointer situation
+means that we are considering this
+entire array to find the minimum the
+minimum could be from anywhere in this
+array and the result is going to be the
+minimum and i'm going to keep track of
+that over here now of course one way we
+could do this problem is basically find
+the pivot right find the position where
+you know the
+the elements are not in
+increasing order right from from here to
+here three to four they're in an
+increasing order from four to five there
+they are in increasing order from one to
+two they're also in increasing order but
+from five to one they're in decreasing
+order this is the pivot right so
+basically this value is going to be the
+minimum but i'm going to do it in a
+slightly different way where we don't
+necessarily have to you know look
+exactly for the pivot i'm going to take
+okay left right take the half of them
+get our middle pointer our middle is
+going to be over here at 5. so i'm going
+to consider as 5 being the minimum value
+we have seen so far right so our result
+is going to be five now
+now we have to ask ourselves okay
+you know this could have been the result
+but now we don't want to you know look
+at this value again so the question
+becomes are we going to search to the
+left or are we going to search to the
+right where are we going to find the
+minimum value where are we going to find
+a value that's even smaller than 5. well
+first consider this
+since we rotated the array we have two
+portions of the array that are sorted
+right we have this portion of the array
+that's sorted the left portion right and
+we have the right sorted portion of the
+array which is also sorted so the
+question is for us with this middle
+pointer at this value 5 are we currently
+in the left sorted portion or are we
+currently in the right sorted portion
+now if we are in the left sorted portion
+of the array don't we want to search the
+right sorted portion reason being if we
+sorted the if we rotated the array the
+left portion is always going to have
+values that are greater than every value
+in the right sorted portion right
+because when we rotate right suppose an
+array like this we're taking the the
+rightmost value the largest value and
+putting it over here right so we're
+taking larger values putting them on the
+left side right so therefore the values
+on the right are going to be smaller now
+so that's why it's always going to be
+that way so if our middle pointer is
+currently in a value that's in the left
+sorted portion then we want to search
+the right sorted portion because it has
+smaller values in it right so how can we
+know if we are in the left sorted
+portion well like i said every value in
+the right sorted portion is going to be
+smaller than every value in the left
+sorted portion so one thing we can check
+is if the current middle value is
+greater than or equal to the value all
+the way at the left of our thing right
+because the left value is going to be
+the smallest value if the middle value
+is greater than or equal to the leftmost
+value that means this middle value is a
+part of this left sorted portion right
+in which case we want to search to the
+right now if our middle pointer suppose
+in this case we can see five is greater
+than or equal to three the the reason
+we're doing greater than or equal is
+technically this middle pointer could
+actually be at the left position as well
+that's one edge case and in that case we
+would also you know this would be the
+left sorted portion but suppose our
+middle pointer instead of being at five
+was actually over here it was at one
+what would our condition evaluate to
+that numbs of middle would be one is
+that greater than or equal to the left
+value which is three it's not right
+because the values in this right sorted
+portion are going to be smaller than the
+left sorted portion in which case this
+would evaluate to false right if it's
+false that means you know if we're at a
+value that's in the right sorted portion
+then we want to search to the left right
+because in this case the the right if if
+our middle was at this it makes sense
+that okay you know all the values to the
+right of it are going to be greater so
+then we want to search to the left but
+obviously these values are also greater
+but that kind of doesn't illustrate the
+point because what if our middle pointer
+was over here right maybe we had some
+values over here
+you know this is where our middle
+pointer is we see two okay
+two could have been the minimum then we
+want to search to the left because we
+want to find even smaller values
+particularly we would want to find this
+one that happens to be smaller because
+we don't know where the pivot is the
+pivot could be here the pivot could be
+here it could be anywhere we just know
+we have to look to the left if we want
+to find smaller elements if we if our
+middle pointer happens to be in the
+right sorted portion then we want to
+search to the left if our middle pointer
+is in the left sorted portion then we
+want to search to the right and i just
+showed you the condition we can use to
+detect that so now i'm going to run
+through the example and it'll probably
+make more sense and by the way the
+algorithm i'm describing only works on a
+on a rotated sorted array if we ever got
+to a point where our let's say our right
+pointer was over here meaning that you
+know this is our entire search range
+then we could not do this algorithm in
+this case if we ever got to a a portion
+of the array that's completely sorted we
+would just take the leftmost value and
+see if it's smaller than our current
+result and then we would stop the entire
+binary search okay so now let's run
+through the example these are the
+conditions that i talked about that
+we're going to be using so our middle
+pointer is here let's check is so you
+know we we checked that this might be
+the minimum now we're never going to
+look at this again so now we're going to
+check is this value greater than the
+value all the way to the left yes it is
+so we're going to search right since
+we're searching right that means we're
+never going to search these values again
+so we can cross them out we're going to
+take our left pointer and
+shift it to mid plus one so our left
+pointer is now going to be over here
+this is our new search range and as you
+can see this portion of the array is
+already in sorted order right how do we
+know that because our the point the
+value at our right pointer is greater
+than the value at our left pointer so
+that means that the array is entirely
+sorted and then we can just take the
+leftmost value here which is one see if
+it's smaller than our current result yes
+it is so then we can return one in this
+case now just to kind of illustrate the
+opposite case arbitrarily i'm just going
+to say our middle pointer is actually
+gonna be over here for some random
+reason let's just see how our binary
+search would work in that case well we
+would take this middle value say that it
+might be our result so our result is
+gonna initially be one and then we're
+gonna run through these conditions is
+the middle value greater than or equal
+to the leftmost value it's not so we
+execute the else case which basically
+means we're searching left right so
+we're going to take uh you know this is
+not going to be considered again we're
+going to take our right pointer set it
+to mid minus 1. so our right pointer is
+going to be over here and we're going to
+cross out 2 because it's never going to
+be searched right because we shifted our
+pointer this is our new search range
+once again you can see that this range
+is sorted basically the left value is
+smaller than the right value so this is
+already sorted we can take the leftmost
+value over here c is this smaller than
+our current result it's not so our
+result stays the same and we don't have
+to search this entire portion because
+it's already sorted so that's kind of
+the general idea of how this algorithm
+is going to work it's pretty easy once
+you kind of figure out these two
+conditions with that being said we can
+jump into the code okay so now let's get
+into the code as i mentioned we are
+going to be maintaining a result now we
+can set this to some arbitrary default
+value i'm just going to set it to nums
+of 0. we could just pick any value in
+the input array nums but i'm just going
+to choose the leftmost
+just because
+we're also going to have our two
+pointers initially left is going to be
+all the way at the left index zero right
+is going to be at the rightmost index
+length of nums minus one and we're going
+to keep running our binary search while
+our pointers are in a valid
+position while left is less than or
+equal to right and like i mentioned if
+we ever get to a subarray that's already
+sorted basically if the value at the
+left is
+uh less than the value at the right then
+we can update our result potentially
+setting the result to the minimum of
+itself and the leftmost value of this
+sorted portion and then we can break out
+of this while loop
+if the array is not sorted that's when
+we're actually going to be doing our
+binary search portion so we can compute
+the mid uh the midpointer basically left
+plus right integer division by two
+and with this mid value we're going to
+potentially update our results setting
+the result equal to the minimum of
+itself and the value at the mid pointer
+and once we're done with that now we
+want to know are we going to search to
+the left or are we going to search to
+the right so how can we determine that
+as i mentioned the condition we want to
+know is this mid value a part of the
+left sorted portion it is a part of the
+left sorted portion if the value at the
+middle index is greater than or equal to
+the value all the way at the left that
+means it is a part of the left sorted
+portion in which case we want to search
+the right sorted portion so we can take
+our midpointer set it take our left
+pointer set it to mid plus one now the
+else case is if we're in the right
+sorted portion in which case we want to
+search to the left so we set the right
+pointer equal to mid minus one and we're
+going to keep doing that until we find
+the solution or until our binary search
+has basically searched the entire array
+and then after that we can go ahead and
+return the result value as you can see
+this solution does run it's pretty uh
+short and concise i'm sure there are
+ways you can make it even shorter but it
+runs pretty efficiently so i hope that
+this was helpful if it was please like
+and subscribe it supports the channel a
+lot and i'll hopefully see you pretty

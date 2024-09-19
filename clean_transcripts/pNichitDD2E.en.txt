@@ -1,0 +1,617 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+let's solve the problem design twitter
+this is a somewhat challenging problem
+for a medium and spoiler alert this is
+actually really similar to another leak
+code problem which is called merge k
+sorted lists and that problem is
+actually a hard problem so it's kind of
+weird that they make this a medium
+problem because this problem is actually
+even harder than the merge case sorted
+list problem but that's okay so we are
+told to design a simplified version of
+twitter and this problem is really about
+which data structures are we going to
+use for each of these functions so you
+really need to have an understanding of
+trade-offs to make sure that we
+implement each of these functions in the
+most efficient way so there's in total
+five functions we wanna do one is the
+constructor so that's where we're really
+just gonna handle what data structures
+we wanna use like initializing them and
+all that and i'm actually gonna start
+with the implementation for these two
+functions the follow function and the
+unfollow function
+so any user in this case the follower id
+is the user can follow another user and
+that's called the follow e id followee a
+little bit confusing for me but so
+clearly with this function we need to
+keep track that this user is following
+this user right we need a data structure
+to do that now there's a bunch that we
+could do the easiest one that you might
+consider is a map right we want to map
+this user to another user
+but of course a user
+can actually not just follow one person
+but they could follow multiple people so
+the simplest idea that you might think
+of is first okay create a hash map right
+uh where we're gonna map the user id
+right just some generic user to whoever
+they're following right we'll call that
+the follow eid but it's not just going
+to be one so let's actually call it list
+of followee ids right that's just our
+naive approach that's just the first
+thing that came to our mind so if each
+time we get a user and we are told that
+they follow somebody else we can just
+keep adding that you know user that they
+follow to the end of that list that we
+have right in our hash map this is going
+to be the key this is going to be
+the key is going to map to a list and we
+can add a new value to that list and of
+one time so that's easy but now we're
+introducing a second operation called
+unfollow so if a user now wants to
+unfollow another user how can we
+implement it with our current data
+structure well removing from a list is
+not as easy as adding to the end of that
+list because we might actually have to
+search through the entire list to even
+find that a follower id that we're
+trying to remove and then removing it is
+going to be a big-o of end time
+operation is there a more efficient way
+that we can do this well there is a data
+structure we know that can add and
+remove in o of one time do you know what
+it is well hashmap is one of them but in
+this case we don't really need a map we
+just need a set of values right a list
+or a set but in this case we can use a
+hash set and that can insert and remove
+in big o of one time so instead of using
+a list which was our naive approach
+we're actually going to map each user id
+to a hash set of follow eids okay so
+that's actually pretty easy right so
+we've already figured out a follow and
+we've already figured out unfollow and
+of course we're going to be initializing
+this data structure inside of our
+constructor but now for the somewhat
+difficult part the post tweet and the
+get news feed function so let's start
+with post tweet each user can post a
+tweet and obviously they can post more
+than one tweet so we need to be able to
+map a user to their list of tweets right
+let's just start with a list again and
+see if it works out for us so again
+we're gonna have a hash map okay so
+we're gonna have another hash map
+mapping each user id to the list of
+their tweets and each time we post a
+tweet for a given user we're just going
+to take that tweet and add it to the end
+of that list so let's just see if that
+works for now that's like the most naive
+approach and in this case i'll just tell
+you it is going to work for us and
+you're going to see why so by the way
+this post tweet if we're just adding to
+the end of the list each time we can do
+that in big o of one time so we've
+basically got all three of these
+functions running in big o of one time
+but this get news feed is going to be by
+far the most complex function so
+basically for any given user we want to
+retrieve the 10
+most recent tweet ids for that user and
+the way we're going to get the 10 most
+recent tweets is from the list of uh
+followees of the list of people that
+that user follows right and from that
+list of people that they follow we want
+the 10 most recent tweets now how do we
+even get most recent well one anytime a
+user posts a tweet we're already adding
+it to the end of the list right so if we
+create a list of tweets right let's say
+this is the first tweet then we have the
+second tweet then we have the third
+tweet of course the most recent tweet is
+going to be at the end of the list right
+for any given user but we don't just
+have one user right it's possible that
+we were told okay this user uh you know
+we're given some user but they maybe
+follow two people right maybe the second
+person that they follow has these tweets
+four five six and let's say these are
+the actual tweet ids right so we know
+that this is the most recent tweet from
+the first person that they follow and
+this is the most recent tweet from the
+second person that they follow but these
+values we can't just compare the tweet
+ids right because that's what we have
+right now a list of tweet ids so instead
+of just having a list of tweet ids how
+about we also keep track of the time
+that that tweet was posted so in that
+case we won't just have a list of tweet
+ids we'll have a list of pairs a list of
+i'm going to call it count because
+that's what we're going to be keeping
+track of for time right we don't
+actually have a time we have a count of
+how many total tweets we have and we're
+actually going to start our count at 0
+and then we're going to decrement it to
+negative 1 then to negative 2 then a
+negative three and you're gonna see why
+it basically has to do with us using a
+heap uh and in python at least there's
+not really a max heap so we're gonna be
+using a min heap if you're if you're
+doing this in java by the way you can
+just take the count and start at zero
+and then increment it to one then to two
+then the three but in this case i'm
+going to be decrementing it from one to
+negative one to negative two and it'll
+work out for us this count isn't the
+most important part of this function
+okay so once again let's say we're
+trying to run get newsfeed for some
+particular user now first thing we want
+for that user is who do they follow how
+can we get that well remember we have a
+hash map for that we can take this user
+id and get a hash set of all the people
+that they follow and a hash set in this
+case is basically equivalent to a list
+for us because we're just going to
+iterate through all the people that they
+follow and then get the tweets of those
+people right so for each followee id
+that's a person right that's a user how
+do we get their list of tweets well
+conveniently we have a second hash map
+for that we can take that uh followee id
+and then convert it into a list of their
+account and tweets right and that count
+is really just going to be used to
+figure out what tweet
+occurred most recently so suppose we did
+all that work right we took some user
+and then got a list of all the people
+that they follow and their particular
+tweets let me just draw some example for
+that let's say we have one three five uh
+and let's say these are the counts right
+because we know that that list is
+actually going to have a pair of values
+count and tweet id uh we do care about
+the tweet id as well because that's what
+we're gonna be returning remember we're
+returning a list of the tweet ids that
+occurred most recently the 10 tweets
+that occurred most recently and if there
+aren't 10 let's say there's only eight
+tweets from all the people that they
+follow then we occur however many we
+have right we don't go over 10 but if
+there's less than 10 then we'll return
+however many we have but in this case uh
+let's say there are less than 10 let's
+say we have two four and then for the
+other one let's say we have a six
+seven so not only do we want at most ten
+tweets but they need to actually be
+ordered from most recent to least recent
+so how do we do that that's really the
+main portion of this algorithm and it's
+basically exactly like merge k sorted
+lists the naive way to do this would run
+in big o of 10
+times k where k is basically the number
+of people that that user follows and let
+me tell you why because of course for
+each in this case we have three right
+basically i'm saying k is equal to three
+because we have three different lists uh
+if we're trying to get the most recent
+tweets and order them in that way of
+course we're gonna start at the end of
+each list right so we're gonna have a
+pointer for each list you can call it an
+index or whatever you want and we're
+going to compare all of these right
+which one occurred most recently which
+one has the smallest value in this case
+four is the smallest value so what are
+we going to do well we're gonna take 4
+and add it to our list i'm kind of
+running out of space so let me just
+create a variable up here sorry if it's
+messy so result is going to be our list
+so we found the first value it's 4 so
+we're going to add 4 to that list and
+then we're going to take that pointer
+which was here and then decrement it
+we're going to shift it to the left so
+now it's going to be over here and then
+we're basically going to keep repeating
+this right we're going to take the
+minimum of all of these and the reason
+the time complexity is 10 times k is
+obviously we have k lists to find the
+minimum between k values it's a big o of
+k operation so that's the naive way to
+do it but if you've solved merge k
+sorted lists before you know that we
+don't have to do it in the naive way the
+slightly more optimal way to do this is
+actually to take our frontier of all
+these lists basically frontiers all of
+the pointers right wherever the pointers
+are take this this and this and add it
+to a data structure called the heap in
+our case we want the min heap because we
+want the minimum value right we want to
+know which one of these occurred most uh
+recently uh and actually that reminds me
+we remember we were actually going to
+make these values negative so sorry if
+this was confusing or remember we were
+going to start at 0 and then make all
+these negatives so
+that doesn't really change the problem
+at all but it's just how we're going to
+implement it in the code if you're using
+java by the way you don't need to make
+them negative because java has a max
+heap which you can use but we will be
+using a min heap and python but the idea
+is the same right we're going to take
+these values add them to a heap in our
+case we're going to be using a min heap
+and then from this value this value and
+this value we're going to find the
+minimum we're going to do that in log k
+time
+and how many times are we going to do
+that log k operation well of course only
+at most 10 times right so the time
+complexity is 10 times log k so that's
+better than 10 times k which we
+previously had right well not quite
+actually
+and that's kind of the dumb part about
+this
+even if you do use them in heap it
+doesn't really change the overall time
+complexity let me tell you why because
+let's say we take each of these k values
+and we add them to the heap we can add
+these values in two different ways we
+can push each of these values which
+would result in k times log k just to
+push these values these k values to the
+min heap or we could run heapify which
+would be a big o of k time operation so
+that in addition to our 10 times log k
+it makes the overall time complexity
+still big o of k which is what we
+already originally had so it actually
+doesn't change the overall time
+complexity uh but the benefit is if you
+know if we were running this algorithm
+in a generic case where we didn't have
+to actually receive uh 10 uh different
+tweets maybe we had to receive
+up to n tweets our algorithm using a
+heap would be more efficient so i think
+i've talked enough about the complexity
+and how we're actually gonna design this
+now it's actually time to implement the
+solution and code it up just to save a
+bit of time i'm just gonna copy and
+paste a few lines of code so remember
+we're gonna have three main variables in
+our constructor we're gonna keep track
+of the count initially it's gonna be
+zero uh we're gonna use the count to
+basically uh it would be better to call
+this time but it really is just counting
+our number of tweets so basically we can
+maintain which tweet was created earlier
+than another tweet we're also gonna have
+a tweet map where we map each user to a
+list of uh that user's tweets as well as
+the count which is uh gonna be used to
+figure out which tweet was created uh
+earlier and of course we want to be able
+to have a follow map to
+maintain a user and a set of all the
+people that they follow so i'm actually
+going to implement the follow and
+unfollow first because they're a lot
+easier so for follow we take our follow
+map and
+for a follower id we want to say okay
+this uh person is now following another
+person uh with the uh followee id so
+with the hash set we're gonna add to
+that hash set this followee id so that's
+pretty easy now in the unfollow it's
+basically the reverse of this right a
+user is now unfollowing someone so
+instead of adding we're gonna remove but
+what if this person is actually not even
+following a different person well let's
+just add a conditional to make sure that
+they are following before we actually
+call the remove function because at
+least in python i think it will throw
+like an exception or something so let's
+just
+make sure if follow e id is in
+the set for that follower id so if that
+is the case only then are we actually
+going to remove it okay so that was the
+easy part now let's do post tweet it's
+the second easiest so for any user uh
+they just created a tweet so we want to
+be able to record that so in our tweet
+map we're gonna say oh and by the way i
+didn't mention we're using default dicks
+in this case default dictionaries or
+hash maps in this case of course we have
+a list right that's going to be what
+we're recording and in this one we have
+a set main reason i'm doing it like this
+is just to save a couple lines of code
+if we didn't have default dicks we could
+have just initialized it to a regular
+hashmap but in that case each time i'm
+adding values like see here i'm adding
+values i would have to initialize it
+before so i'd have to say
+follower id
+is going to equal a list and or in this
+case a set and then i can add it right
+first we'd have to create an empty set
+and then add the
+values to that set doing it this way
+just saves a few lines of code i think
+in most cases your interviewer would
+probably be fine with it but if they're
+not you can always just write it out
+it's pretty easy to do it just saves us
+a few lines of code in this case so in
+the tweet map for this user id we want
+to append to the end of the list the
+tweet id but actually not just the tweet
+id remember because we determined that
+we need to record a pair of values we
+need to record the count uh that this
+tweet was created at so that we know
+which tweet was created before another
+tweet
+actually i think we're trying to figure
+out which tweet was created most
+recently uh but either way our account
+will help us for that and then after
+we've done that we want the next tweet
+to be uh created at a different count so
+we're gonna actually decrement this so
+that we can use this in our min heap in
+our this function that's i think pretty
+much it for post tweet so now basically
+to the main part of this algorithm to
+get news feed so like i said we're gonna
+have a result right that's gonna be the
+list of tweets so it's gonna be ordered
+starting from the most recent tweets uh
+for all the people that this person
+follows and we're also going to be
+needing a min heap to figure out what
+the most recent were so initially the
+min heap is going to be empty we are now
+going to go through
+every person that this user follows how
+can we get that how can we get the
+followee id of each person that this
+user follows well remember we have a
+follower map for that so follower map
+don't forget to use self in python
+for this user id so we want to go
+through each followee id and what do we
+want to do with that followee id we want
+the most recent tweet that this person
+created right our frontier basically
+first we're going to get the index and
+that index is basically just going to be
+the last value of the list so first to
+even get the list we need the tweet map
+of this followe id so this will give us
+a list we want the length of this list
+minus 1 because that will give us the
+last index and using that last index we
+can take that list
+so this is the list we're going to index
+it so basically look at this position of
+the list which will give us the last
+value and remember this itself is a pair
+of values the count and the tweet id so
+count tweet id and this is what's going
+to be added to our min heap so i'm
+initially just going to append this to
+the min heap we don't need to heap push
+it or anything and then we can heapify
+this after we've added every value that
+we want to it so i'm appending to the
+min heap the first value so it's going
+to be not just a pair of values but it's
+actually going to be 4 values and you're
+going to see why but the first value is
+what's used as the key as long as
+there's not a tie and there won't be a
+tie in this case because count is always
+going to be unique for every single
+tweet in this case i'm gonna add that
+count as the first value because that's
+what we want to use as the key that's
+what we want to order our min heap and
+then the remaining i'm gonna of course
+need to add the tweet id because that's
+we're gonna we're gonna end up adding to
+the result and i'm also going to be
+adding the followee id of this person
+because after we pop this tweet we also
+want to get the next tweet from this
+followee id right so we using this
+followee id we're going to go back to
+the list and then get the next position
+at the next index not really the next
+index but the previous index so really
+i'm going to decrement this index by one
+so let's make sure to store that index
+also in our min heap just so we have it
+so we can take that index decrement it
+by one but we're basically saying that
+this is the next position we're going to
+look at in our list over here as long as
+it's greater than or equal to zero
+basically as long as there are still
+elements in that list for that followee
+id okay that's definitely a lot going on
+here which is why this problem is pretty
+difficult for a medium and actually one
+thing i forgot to do is
+we're not 100 sure that this followee id
+this person even has any tweets that
+they created so before we even try to uh
+you know look at it inside of the tree
+map before we try to look at some index
+let's make sure that at least has one
+tweet so basically if followee id is in
+self.tweet map if that is the case then
+they have at least one tweet so that's
+when we're gonna be actually running
+this portion okay so we go through every
+uh person that they follow after we do
+that let's make sure to actually turn
+this list because right now it's just a
+list we want to turn it into a heap a
+min heap so in python we can do that
+like this heapq.heapify
+to that key okay now we actually get
+into the main portion of the algorithm
+remember we want to pop
+at most 10 values we can run a while
+loop basically saying while the min heap
+is non-empty and the result or or the
+length of the result is less than 10. so
+basically if we run out of values this
+is going to stop even if we don't have
+10 but right if our min heap is empty
+it'll stop if we reach 10 values it'll
+also stop each time though we're going
+to pop from the min heap we want the
+most recent tweet that occurred we can
+do that in python like this heap q dot
+heap pop from the min heap it's going to
+pop four values that we defined up here
+right so i'm just gonna copy and paste
+that
+four values we don't need the minus one
+so
+these are the values it's gonna give us
+and of course we want the tweet id
+that's the most important because that's
+what we're going to end up adding to the
+result this is the most recent tweet
+that happened so we can go ahead and add
+it to the result now if this followee id
+this person had any more tweets we want
+to get that tweet and we can get it at
+this index let me just actually copy and
+paste this because we're using the same
+variable names which makes it convenient
+for us so let me uh so from the tweet
+map we're going to get that person and
+this index which will tell us the next
+tweet that we can add to our min heap
+this remember returns a pair of values
+which we defined up here count and tweet
+id so let's re-define count and redefine
+tweet id which we you know used up here
+that's okay we'll redefine them because
+this is these two values are what we're
+now going to be uh pushing to the heap
+we can do that like this heap q dot heap
+push to the min heap and we're always
+adding four values to it the first one
+is going to be the count next is going
+to be the tweet id next is going to be
+the followee id which we have up above
+and last is going to be the index but
+remember we always add the index minus 1
+because we're adding the next index uh
+but don't forget we just ran these two
+lines of code right but we're assuming
+that the index is going to be valid
+we're assuming that the index is going
+to be greater than or equal to zero that
+that person has some more tweets left
+that we haven't already added to the min
+heap so let's make sure to have that
+conditional up above okay and quite a
+bit of code but luckily that is all of
+it so after all that is done we have 10
+tweets we can go ahead and return the
+result and of course i do i miss the
+name so this is follower map but we
+don't need the er okay and i had one
+last bug and actually had to do with how
+we read the problem they actually define
+the news feed like a user is actually
+technically following themself basically
+we want the 10 most recent posts from
+the people that they follow including
+themself so before we even run this
+function what we're actually going to do
+is to the follow map of that person
+we're just going to add themselves to it
+i think that's one of the easiest ways
+to do this so for that user user id
+we're going to add themselves to it so i
+think that's kind of dumb if i was doing
+this in a real interview i think i'd
+probably miss this detail but it's just
+one thing you need to do to pass this
+problem so now let's run it i really
+hope i don't have any more bugs and
+luckily it actually does work so you can
+see on the left yes it works and it's
+pretty efficient so i really hope that
+this was helpful if it was please like
+and subscribe it really supports the
+channel a lot consider checking out my
+patreon where you can further support
+the channel and hopefully i'll see you

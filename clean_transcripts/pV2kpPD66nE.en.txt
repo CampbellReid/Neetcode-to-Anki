@@ -1,0 +1,252 @@
+let's solve Li code 200 number of
+islands this is actually one of my
+favorite problems because I feel like a
+lot of graph problems build upon this
+one and you can learn a lot from just
+this one problem it's also a really
+popular interview question a lot of big
+tech companies including Google and uber
+ask it so it's a good question a common
+question to understand so we're given a
+2d grid where ones represent land zeros
+represent water we want to count the
+total number of islands that exist right
+and in this case an island is defined as
+one's being connected and jacent ly
+horizontally or vertically not
+diagonally right so they have to be
+connected horizontally or vertically and
+the entire grid is surrounded by water
+so in this example case we can see that
+there's only one island right this
+portion of one's and they're all
+connected horizontally and vertically
+and there's nothing else the rest of the
+grid is just made up of water so we
+don't have to look at it
+so if you don't know how to solve the
+problem the first thing you should do is
+not try to write any code just look at
+the picture and try to get as much
+information as you can so think about it
+how would a kid solve this problem if
+you gave them the picture and told them
+to count the number of islands well the
+first thing you would do is notice okay
+let's start at the top left hey there's
+a one here right okay that means it's an
+island how many other ones are connected
+to this one horizontally and vertically
+just by looking at it right you kind of
+draw the outline there's all these ones
+that are connected to each other so then
+that's one island we can say that the
+number of islands we have so far is one
+right and if you look at the other ones
+right maybe we have to count those as
+well like this one but you notice it's
+already a part of the island that we
+drew right this outline it's already
+there we're not going to count it twice
+these ones are part of the same island
+so the count of islands remains one and
+after looking at each of these ones we'd
+conclude the same thing right they're
+all a part of the same island next we
+could look at some of these zeros right
+okay we check is this an island nope its
+water
+so just cross it out right don't need to
+consider it anymore
+is this an island nope it's water this
+is water
+this is water this is water this is
+water this is water this is water
+it's getting pretty repetitive but this
+is water stillwater this is still water
+but now we get to a one that means we
+found another island and it's not a part
+of this island that we already counted
+right it's a part of a new island so
+we're gonna update the number of islands
+cross one out now we're gonna put two
+but we have to remember that we have to
+count all the ones that are connected to
+this one and there's only one right
+neighbor that it has right and so the
+total number of islands is now two when
+we get to this one again we see it's
+already a part of the island that we
+already counted right so we don't have
+to count it again so we visited every
+single cell and we concluded that the
+total number of islands is two so now we
+kind of have an idea of how the
+algorithm works but with a difficult
+part is that you might not know unless
+you know a little about a little bit
+about graph algorithms is how do we
+actually determine this entire area
+right how do we get all of the adjacent
+neighbors of an island how do we mark
+them as visited right let's take a look
+at how we can do that so when we first
+got to this one we realized we got to an
+island but then we wanted to mark the
+contiguous land of this island as
+visited right so the first thing we
+could do is say okay well the the
+adjacent neighbors of this one also have
+to be marked visited so its neighbors
+are this one below it and this one to
+the right of it okay but we're not done
+yet right there could be even more ones
+connected to these two that we just
+visited and then we can say that for
+this one below the the first one its
+neighbors are this one and this one but
+what about this one but above it well
+it's already visited so we don't want to
+mark it twice so we're not going to do
+that now let's get the neighbors of this
+one that was to the right of the
+original one so it has one neighbor to
+the right of it it also has a neighbor
+below it but hey we already marked that
+visited so we don't need to do that
+again and then let's look at this one
+and see it's neighbors well it only has
+one
+and then we notice that this one doesn't
+have any neighbors that aren't already
+visited and this one doesn't have any
+neighbors that aren't already visited
+either so you might already know what
+this algorithm is but it's basically a
+bet a breadth-first search we're just
+doing a graph traversal algorithm
+starting at the original point over here
+and marking each layer of ones so in the
+first layer we got this the second layer
+we got this the third layer we got this
+and the fourth layer we had just a
+single value so this is really easy to
+visualize and if you already know this
+algorithm you can code it up pretty
+quickly so knowing what we just learned
+let's code it up so the first thing just
+do some input validation if we had an
+empty grid we don't want to have to run
+our algorithm and we can simply just
+return zero
+there aren't any islands in that case
+the next thing I like to do is just get
+the dimensions of the grid so the number
+of rows and the number of columns we can
+get the number of rows by getting doing
+this and the number of columns by doing
+this we also want to be able to mark
+positions or cells visited when we're
+marking island masses so I'm going to
+use a set to do that we could also use a
+2d grid if we wanted to but I think sets
+are a little easier we also want to
+count the number of islands we can
+initialize that as zero so we want to
+visit every single position in the grid
+so let's iterate through each row and
+column so R is going to go through every
+single row C is going to go through
+every single column if we visit a zero
+we don't have to do anything right but
+if we visit a one then we have to do
+something then we have to traverse it
+and mark it visited and don't forget
+that this 2d grid is actually made up of
+strings not numbers that always trips me
+up I think it's kind of annoying that
+LICO does that but it does so now we
+have to run our traversal
+I'm gonna run breadth-first search
+because I kind of like it so run
+breadth-first search on this cell
+column we also have to increment the
+number of islands but remember we're
+only going to be incrementing the number
+of islands if we get to a one that we
+haven't already visited so we're going
+to make sure that if we execute this we
+we've gotten to a position we haven't
+visited and then ultimately we're just
+going to return the number of islands
+but we didn't actually write our
+breadth-first search let's do that right
+now so breadth-first search is not a
+recursive algorithm it's iterative so we
+need a data structure to use for memory
+so a queue is normally used for
+breadth-first search so we want to mark
+this position visit it as well so to
+visit we're gonna add this cell that
+we're about to use our traversal on our
+c we're also going to add it to our
+queue and so while our queue is not
+empty that means we're gonna be
+expanding our island so we're gonna pop
+from the queue and we want to check the
+adjacent positions of this position that
+we just popped so the way I like to do
+that is use a loop so we know that
+there's four directions that we can go
+in the direction to the right which is
+one zero the direction to the left which
+is negative one zero the direction above
+now for each of these directions we're
+gonna check something first we want to
+check that this position is in bounds
+the way in Python I like to check that
+is just if R Plus D R is in range of
+rows and check that the column plus
+direction that we're moving in is also
+in range of columns and that this
+position is a land position so this is
+equal to 1 meaning its land and lastly
+that this position hasn't already been
+visited so if this is true then we can
+add that to our queue because that means
+we have to run breadth-first search on
+this cell as well we also have to mark
+it visited so we don't visit it twice
+I noticed that we're doing this
+computation a lot by adding row plus
+different a direction of row so I'm
+so that's a little bit cleaner and
+that's pretty much the entire breadth
+first search function it's gonna be
+running until the queue is empty which
+means that there's no more land
+positions to visit I had a sloppy bug I
+forgot to add this row column position
+as a tuple which we want to do as a pair
+not two elements separately I also use
+the wrong function name for visit we
+have to use visit add not append
+because it's a set and on a list and
+there is their breadth-first search
+solution to this problem sorry about a
+few of the bugs that i had oh that they
+didn't trip you up too much and also the
+neat thing about writing it this way is
+if your interview asked you at the end
+okay could you do a depth-first search
+solution to this you can actually do it
+really easily this pop left that we
+wrote if you just change it to a regular
+pop meaning a pop right it'll pop the
+most recent element that we added
+instead of the first element that we
+added which means it'll basic b it'll
+basically be a depth-first search but
+it's non recursive it's iterative if you
+enjoyed and if this was helpful please
+leave a like and subscribe and thank you

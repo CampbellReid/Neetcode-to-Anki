@@ -1,0 +1,1712 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.750 align:start position:0%
+ 
+hey<00:00:00.240><c> everyone</c><00:00:00.719><c> welcome</c><00:00:01.199><c> back</c><00:00:01.439><c> and</c><00:00:01.520><c> let's</c>
+
+00:00:01.750 --> 00:00:01.760 align:start position:0%
+hey everyone welcome back and let's
+ 
+
+00:00:01.760 --> 00:00:03.750 align:start position:0%
+hey everyone welcome back and let's
+write<00:00:02.000><c> some</c><00:00:02.159><c> more</c><00:00:02.399><c> neat</c><00:00:02.720><c> code</c><00:00:02.960><c> today</c><00:00:03.280><c> so</c><00:00:03.439><c> today</c>
+
+00:00:03.750 --> 00:00:03.760 align:start position:0%
+write some more neat code today so today
+ 
+
+00:00:03.760 --> 00:00:05.749 align:start position:0%
+write some more neat code today so today
+let's<00:00:03.919><c> solve</c><00:00:04.240><c> a</c><00:00:04.400><c> problem</c><00:00:04.799><c> from</c><00:00:04.960><c> today's</c><00:00:05.520><c> leak</c>
+
+00:00:05.749 --> 00:00:05.759 align:start position:0%
+let's solve a problem from today's leak
+ 
+
+00:00:05.759 --> 00:00:07.190 align:start position:0%
+let's solve a problem from today's leak
+code<00:00:06.000><c> contest</c><00:00:06.560><c> to</c><00:00:06.720><c> merge</c>
+
+00:00:07.190 --> 00:00:07.200 align:start position:0%
+code contest to merge
+ 
+
+00:00:07.200 --> 00:00:10.549 align:start position:0%
+code contest to merge
+triplets<00:00:07.759><c> to</c><00:00:08.080><c> form</c><00:00:08.559><c> target</c><00:00:09.120><c> triplet</c><00:00:10.160><c> and</c><00:00:10.320><c> this</c>
+
+00:00:10.549 --> 00:00:10.559 align:start position:0%
+triplets to form target triplet and this
+ 
+
+00:00:10.559 --> 00:00:12.629 align:start position:0%
+triplets to form target triplet and this
+problem<00:00:10.960><c> is</c><00:00:11.200><c> actually</c><00:00:11.679><c> a</c><00:00:11.840><c> little</c><00:00:12.080><c> bit</c><00:00:12.320><c> easier</c>
+
+00:00:12.629 --> 00:00:12.639 align:start position:0%
+problem is actually a little bit easier
+ 
+
+00:00:12.639 --> 00:00:14.310 align:start position:0%
+problem is actually a little bit easier
+than<00:00:12.799><c> you</c><00:00:12.880><c> might</c><00:00:13.200><c> think</c><00:00:13.440><c> so</c><00:00:13.599><c> you</c><00:00:13.679><c> can</c><00:00:13.840><c> read</c><00:00:14.160><c> the</c>
+
+00:00:14.310 --> 00:00:14.320 align:start position:0%
+than you might think so you can read the
+ 
+
+00:00:14.320 --> 00:00:15.350 align:start position:0%
+than you might think so you can read the
+description
+
+00:00:15.350 --> 00:00:15.360 align:start position:0%
+description
+ 
+
+00:00:15.360 --> 00:00:17.269 align:start position:0%
+description
+basically<00:00:15.759><c> we</c><00:00:15.920><c> have</c><00:00:16.000><c> a</c><00:00:16.240><c> target</c><00:00:16.720><c> triplet</c><00:00:17.199><c> and</c>
+
+00:00:17.269 --> 00:00:17.279 align:start position:0%
+basically we have a target triplet and
+ 
+
+00:00:17.279 --> 00:00:19.029 align:start position:0%
+basically we have a target triplet and
+we're<00:00:17.440><c> given</c><00:00:17.680><c> a</c><00:00:17.840><c> list</c><00:00:18.160><c> of</c><00:00:18.320><c> triplets</c><00:00:18.800><c> and</c><00:00:18.960><c> we</c>
+
+00:00:19.029 --> 00:00:19.039 align:start position:0%
+we're given a list of triplets and we
+ 
+
+00:00:19.039 --> 00:00:21.109 align:start position:0%
+we're given a list of triplets and we
+want<00:00:19.199><c> to</c><00:00:19.279><c> know</c><00:00:19.439><c> if</c><00:00:19.600><c> we</c><00:00:19.680><c> can</c><00:00:19.920><c> transform</c>
+
+00:00:21.109 --> 00:00:21.119 align:start position:0%
+want to know if we can transform
+ 
+
+00:00:21.119 --> 00:00:23.910 align:start position:0%
+want to know if we can transform
+this<00:00:21.600><c> list</c><00:00:21.920><c> of</c><00:00:22.080><c> triplets</c><00:00:22.800><c> into</c><00:00:23.279><c> the</c><00:00:23.519><c> target</c>
+
+00:00:23.910 --> 00:00:23.920 align:start position:0%
+this list of triplets into the target
+ 
+
+00:00:23.920 --> 00:00:25.750 align:start position:0%
+this list of triplets into the target
+triplet<00:00:24.320><c> and</c><00:00:24.400><c> we're</c><00:00:24.560><c> given</c><00:00:24.880><c> a</c>
+
+00:00:25.750 --> 00:00:25.760 align:start position:0%
+triplet and we're given a
+ 
+
+00:00:25.760 --> 00:00:27.990 align:start position:0%
+triplet and we're given a
+a<00:00:25.920><c> single</c><00:00:26.400><c> operation</c><00:00:27.039><c> that</c><00:00:27.199><c> we're</c><00:00:27.439><c> allowed</c><00:00:27.840><c> to</c>
+
+00:00:27.990 --> 00:00:28.000 align:start position:0%
+a single operation that we're allowed to
+ 
+
+00:00:28.000 --> 00:00:29.269 align:start position:0%
+a single operation that we're allowed to
+do<00:00:28.480><c> we</c><00:00:28.640><c> can</c><00:00:28.800><c> take</c>
+
+00:00:29.269 --> 00:00:29.279 align:start position:0%
+do we can take
+ 
+
+00:00:29.279 --> 00:00:32.229 align:start position:0%
+do we can take
+any<00:00:29.679><c> two</c><00:00:30.160><c> triplets</c><00:00:31.039><c> such</c><00:00:31.279><c> as</c><00:00:31.519><c> these</c><00:00:31.920><c> two</c>
+
+00:00:32.229 --> 00:00:32.239 align:start position:0%
+any two triplets such as these two
+ 
+
+00:00:32.239 --> 00:00:33.350 align:start position:0%
+any two triplets such as these two
+triplets<00:00:32.800><c> right</c>
+
+00:00:33.350 --> 00:00:33.360 align:start position:0%
+triplets right
+ 
+
+00:00:33.360 --> 00:00:36.630 align:start position:0%
+triplets right
+and<00:00:33.520><c> we</c><00:00:33.680><c> can</c><00:00:34.079><c> set</c><00:00:34.640><c> one</c><00:00:34.880><c> of</c><00:00:35.040><c> them</c><00:00:35.440><c> equal</c><00:00:36.079><c> to</c><00:00:36.239><c> the</c>
+
+00:00:36.630 --> 00:00:36.640 align:start position:0%
+and we can set one of them equal to the
+ 
+
+00:00:36.640 --> 00:00:39.350 align:start position:0%
+and we can set one of them equal to the
+max<00:00:37.360><c> of</c><00:00:37.760><c> both</c><00:00:38.079><c> of</c><00:00:38.160><c> the</c><00:00:38.320><c> triplets</c><00:00:38.800><c> combined</c><00:00:39.200><c> so</c>
+
+00:00:39.350 --> 00:00:39.360 align:start position:0%
+max of both of the triplets combined so
+ 
+
+00:00:39.360 --> 00:00:40.310 align:start position:0%
+max of both of the triplets combined so
+basically<00:00:39.920><c> for</c>
+
+00:00:40.310 --> 00:00:40.320 align:start position:0%
+basically for
+ 
+
+00:00:40.320 --> 00:00:41.910 align:start position:0%
+basically for
+the<00:00:40.559><c> first</c><00:00:40.879><c> value</c><00:00:41.280><c> we</c><00:00:41.440><c> would</c><00:00:41.600><c> take</c><00:00:41.760><c> the</c>
+
+00:00:41.910 --> 00:00:41.920 align:start position:0%
+the first value we would take the
+ 
+
+00:00:41.920 --> 00:00:43.990 align:start position:0%
+the first value we would take the
+maximum<00:00:42.480><c> in</c><00:00:42.559><c> this</c><00:00:42.719><c> case</c><00:00:42.960><c> it's</c><00:00:43.280><c> two</c>
+
+00:00:43.990 --> 00:00:44.000 align:start position:0%
+maximum in this case it's two
+ 
+
+00:00:44.000 --> 00:00:45.590 align:start position:0%
+maximum in this case it's two
+for<00:00:44.160><c> the</c><00:00:44.320><c> second</c><00:00:44.640><c> value</c><00:00:44.960><c> we</c><00:00:45.120><c> would</c><00:00:45.280><c> take</c><00:00:45.440><c> the</c>
+
+00:00:45.590 --> 00:00:45.600 align:start position:0%
+for the second value we would take the
+ 
+
+00:00:45.600 --> 00:00:47.270 align:start position:0%
+for the second value we would take the
+maximum<00:00:46.079><c> in</c><00:00:46.160><c> this</c><00:00:46.320><c> case</c><00:00:46.559><c> it's</c><00:00:46.800><c> seven</c>
+
+00:00:47.270 --> 00:00:47.280 align:start position:0%
+maximum in this case it's seven
+ 
+
+00:00:47.280 --> 00:00:48.790 align:start position:0%
+maximum in this case it's seven
+and<00:00:47.440><c> for</c><00:00:47.600><c> the</c><00:00:47.760><c> third</c><00:00:48.000><c> value</c><00:00:48.320><c> we</c><00:00:48.480><c> take</c><00:00:48.640><c> the</c>
+
+00:00:48.790 --> 00:00:48.800 align:start position:0%
+and for the third value we take the
+ 
+
+00:00:48.800 --> 00:00:50.549 align:start position:0%
+and for the third value we take the
+maximum<00:00:49.360><c> in</c><00:00:49.440><c> this</c><00:00:49.600><c> case</c><00:00:49.840><c> it's</c><00:00:50.079><c> five</c><00:00:50.239><c> so</c><00:00:50.480><c> we</c>
+
+00:00:50.549 --> 00:00:50.559 align:start position:0%
+maximum in this case it's five so we
+ 
+
+00:00:50.559 --> 00:00:51.430 align:start position:0%
+maximum in this case it's five so we
+would<00:00:50.719><c> get</c>
+
+00:00:51.430 --> 00:00:51.440 align:start position:0%
+would get
+ 
+
+00:00:51.440 --> 00:00:53.350 align:start position:0%
+would get
+when<00:00:51.600><c> we</c><00:00:51.920><c> combine</c><00:00:52.399><c> the</c><00:00:52.559><c> two</c><00:00:52.800><c> triplets</c><00:00:53.199><c> we'd</c>
+
+00:00:53.350 --> 00:00:53.360 align:start position:0%
+when we combine the two triplets we'd
+ 
+
+00:00:53.360 --> 00:00:55.029 align:start position:0%
+when we combine the two triplets we'd
+get<00:00:53.520><c> something</c><00:00:53.760><c> like</c><00:00:54.000><c> two</c><00:00:54.320><c> seven</c>
+
+00:00:55.029 --> 00:00:55.039 align:start position:0%
+get something like two seven
+ 
+
+00:00:55.039 --> 00:00:57.430 align:start position:0%
+get something like two seven
+five<00:00:55.760><c> and</c><00:00:55.920><c> we</c><00:00:56.079><c> wanna</c><00:00:56.399><c> know</c><00:00:56.800><c> if</c><00:00:56.960><c> we're</c><00:00:57.120><c> allowed</c>
+
+00:00:57.430 --> 00:00:57.440 align:start position:0%
+five and we wanna know if we're allowed
+ 
+
+00:00:57.440 --> 00:00:59.349 align:start position:0%
+five and we wanna know if we're allowed
+to<00:00:57.600><c> do</c><00:00:57.760><c> this</c><00:00:58.000><c> kind</c><00:00:58.239><c> of</c><00:00:58.399><c> operation</c><00:00:59.039><c> on</c>
+
+00:00:59.349 --> 00:00:59.359 align:start position:0%
+to do this kind of operation on
+ 
+
+00:00:59.359 --> 00:01:01.110 align:start position:0%
+to do this kind of operation on
+any<00:00:59.600><c> of</c><00:00:59.680><c> the</c><00:00:59.840><c> triplets</c><00:01:00.399><c> inside</c><00:01:00.800><c> of</c><00:01:00.960><c> our</c>
+
+00:01:01.110 --> 00:01:01.120 align:start position:0%
+any of the triplets inside of our
+ 
+
+00:01:01.120 --> 00:01:03.590 align:start position:0%
+any of the triplets inside of our
+triplets<00:01:01.600><c> list</c><00:01:01.840><c> as</c><00:01:02.079><c> many</c><00:01:02.320><c> times</c><00:01:02.640><c> as</c><00:01:02.800><c> we</c><00:01:02.960><c> want</c>
+
+00:01:03.590 --> 00:01:03.600 align:start position:0%
+triplets list as many times as we want
+ 
+
+00:01:03.600 --> 00:01:07.109 align:start position:0%
+triplets list as many times as we want
+are<00:01:03.760><c> we</c><00:01:04.080><c> able</c><00:01:04.400><c> to</c><00:01:04.640><c> somehow</c><00:01:05.680><c> get</c><00:01:06.080><c> the</c><00:01:06.479><c> target</c>
+
+00:01:07.109 --> 00:01:07.119 align:start position:0%
+are we able to somehow get the target
+ 
+
+00:01:07.119 --> 00:01:09.350 align:start position:0%
+are we able to somehow get the target
+triplet<00:01:07.760><c> now</c><00:01:08.080><c> your</c><00:01:08.320><c> first</c><00:01:08.640><c> idea</c><00:01:08.960><c> might</c><00:01:09.119><c> be</c>
+
+00:01:09.350 --> 00:01:09.360 align:start position:0%
+triplet now your first idea might be
+ 
+
+00:01:09.360 --> 00:01:10.710 align:start position:0%
+triplet now your first idea might be
+backtracking<00:01:10.240><c> or</c>
+
+00:01:10.710 --> 00:01:10.720 align:start position:0%
+backtracking or
+ 
+
+00:01:10.720 --> 00:01:12.390 align:start position:0%
+backtracking or
+you<00:01:10.880><c> know</c><00:01:11.040><c> some</c><00:01:11.280><c> other</c><00:01:11.439><c> kind</c><00:01:11.600><c> of</c><00:01:11.760><c> complicated</c>
+
+00:01:12.390 --> 00:01:12.400 align:start position:0%
+you know some other kind of complicated
+ 
+
+00:01:12.400 --> 00:01:14.310 align:start position:0%
+you know some other kind of complicated
+high<00:01:12.720><c> complexity</c><00:01:13.360><c> solution</c><00:01:13.760><c> but</c><00:01:13.920><c> let</c><00:01:14.080><c> me</c><00:01:14.159><c> just</c>
+
+00:01:14.310 --> 00:01:14.320 align:start position:0%
+high complexity solution but let me just
+ 
+
+00:01:14.320 --> 00:01:15.990 align:start position:0%
+high complexity solution but let me just
+tell<00:01:14.479><c> you</c><00:01:14.640><c> there's</c><00:01:14.880><c> a</c><00:01:15.119><c> single</c>
+
+00:01:15.990 --> 00:01:16.000 align:start position:0%
+tell you there's a single
+ 
+
+00:01:16.000 --> 00:01:18.630 align:start position:0%
+tell you there's a single
+key<00:01:16.560><c> observation</c><00:01:17.439><c> that</c><00:01:17.600><c> you</c><00:01:17.759><c> can</c><00:01:18.000><c> make</c><00:01:18.479><c> that</c>
+
+00:01:18.630 --> 00:01:18.640 align:start position:0%
+key observation that you can make that
+ 
+
+00:01:18.640 --> 00:01:20.070 align:start position:0%
+key observation that you can make that
+will<00:01:18.880><c> make</c><00:01:19.119><c> this</c><00:01:19.360><c> problem</c>
+
+00:01:20.070 --> 00:01:20.080 align:start position:0%
+will make this problem
+ 
+
+00:01:20.080 --> 00:01:22.390 align:start position:0%
+will make this problem
+super<00:01:20.640><c> easy</c><00:01:21.040><c> so</c><00:01:21.200><c> let's</c><00:01:21.600><c> try</c><00:01:21.759><c> to</c><00:01:21.920><c> figure</c><00:01:22.240><c> that</c>
+
+00:01:22.390 --> 00:01:22.400 align:start position:0%
+super easy so let's try to figure that
+ 
+
+00:01:22.400 --> 00:01:23.749 align:start position:0%
+super easy so let's try to figure that
+out<00:01:22.799><c> so</c><00:01:23.040><c> remember</c><00:01:23.439><c> that</c>
+
+00:01:23.749 --> 00:01:23.759 align:start position:0%
+out so remember that
+ 
+
+00:01:23.759 --> 00:01:25.590 align:start position:0%
+out so remember that
+this<00:01:24.000><c> is</c><00:01:24.159><c> our</c><00:01:24.400><c> target</c><00:01:24.880><c> triplet</c><00:01:25.280><c> that</c><00:01:25.439><c> we're</c>
+
+00:01:25.590 --> 00:01:25.600 align:start position:0%
+this is our target triplet that we're
+ 
+
+00:01:25.600 --> 00:01:27.350 align:start position:0%
+this is our target triplet that we're
+trying<00:01:25.840><c> to</c><00:01:26.000><c> make</c><00:01:26.400><c> and</c><00:01:26.560><c> we</c><00:01:26.720><c> can</c><00:01:26.960><c> take</c>
+
+00:01:27.350 --> 00:01:27.360 align:start position:0%
+trying to make and we can take
+ 
+
+00:01:27.360 --> 00:01:28.950 align:start position:0%
+trying to make and we can take
+any<00:01:27.680><c> two</c><00:01:27.920><c> triplets</c><00:01:28.400><c> and</c><00:01:28.479><c> then</c><00:01:28.560><c> get</c><00:01:28.720><c> the</c>
+
+00:01:28.950 --> 00:01:28.960 align:start position:0%
+any two triplets and then get the
+ 
+
+00:01:28.960 --> 00:01:30.710 align:start position:0%
+any two triplets and then get the
+maximum<00:01:29.680><c> of</c><00:01:29.840><c> those</c><00:01:30.320><c> so</c>
+
+00:01:30.710 --> 00:01:30.720 align:start position:0%
+maximum of those so
+ 
+
+00:01:30.720 --> 00:01:33.270 align:start position:0%
+maximum of those so
+clearly<00:01:31.200><c> our</c><00:01:31.520><c> goal</c><00:01:31.920><c> is</c><00:01:32.000><c> to</c><00:01:32.240><c> take</c><00:01:32.640><c> smaller</c>
+
+00:01:33.270 --> 00:01:33.280 align:start position:0%
+clearly our goal is to take smaller
+ 
+
+00:01:33.280 --> 00:01:34.950 align:start position:0%
+clearly our goal is to take smaller
+values<00:01:33.759><c> like</c><00:01:33.840><c> maybe</c><00:01:34.159><c> we</c><00:01:34.320><c> have</c><00:01:34.400><c> a</c><00:01:34.560><c> one</c><00:01:34.799><c> and</c>
+
+00:01:34.950 --> 00:01:34.960 align:start position:0%
+values like maybe we have a one and
+ 
+
+00:01:34.960 --> 00:01:36.469 align:start position:0%
+values like maybe we have a one and
+somehow<00:01:35.360><c> get</c><00:01:35.600><c> it</c><00:01:35.680><c> to</c><00:01:35.840><c> a</c><00:01:36.079><c> two</c>
+
+00:01:36.469 --> 00:01:36.479 align:start position:0%
+somehow get it to a two
+ 
+
+00:01:36.479 --> 00:01:38.149 align:start position:0%
+somehow get it to a two
+which<00:01:36.720><c> is</c><00:01:36.799><c> the</c><00:01:36.960><c> target</c><00:01:37.280><c> for</c><00:01:37.520><c> here</c><00:01:37.759><c> and</c><00:01:37.840><c> maybe</c>
+
+00:01:38.149 --> 00:01:38.159 align:start position:0%
+which is the target for here and maybe
+ 
+
+00:01:38.159 --> 00:01:39.510 align:start position:0%
+which is the target for here and maybe
+we<00:01:38.320><c> have</c><00:01:38.479><c> a</c><00:01:38.640><c> six</c><00:01:38.960><c> somewhere</c>
+
+00:01:39.510 --> 00:01:39.520 align:start position:0%
+we have a six somewhere
+ 
+
+00:01:39.520 --> 00:01:42.230 align:start position:0%
+we have a six somewhere
+and<00:01:39.600><c> then</c><00:01:39.759><c> take</c><00:01:40.000><c> that</c><00:01:40.240><c> and</c><00:01:40.400><c> get</c><00:01:40.640><c> it</c><00:01:40.880><c> to</c><00:01:41.119><c> be</c><00:01:41.360><c> a</c><00:01:41.759><c> 7.</c>
+
+00:01:42.230 --> 00:01:42.240 align:start position:0%
+and then take that and get it to be a 7.
+ 
+
+00:01:42.240 --> 00:01:44.149 align:start position:0%
+and then take that and get it to be a 7.
+but<00:01:42.560><c> what</c><00:01:42.880><c> happens</c><00:01:43.280><c> if</c><00:01:43.360><c> we</c><00:01:43.520><c> have</c><00:01:43.680><c> a</c><00:01:43.840><c> value</c>
+
+00:01:44.149 --> 00:01:44.159 align:start position:0%
+but what happens if we have a value
+ 
+
+00:01:44.159 --> 00:01:44.630 align:start position:0%
+but what happens if we have a value
+that's
+
+00:01:44.630 --> 00:01:44.640 align:start position:0%
+that's
+ 
+
+00:01:44.640 --> 00:01:47.510 align:start position:0%
+that's
+greater<00:01:45.439><c> than</c><00:01:45.680><c> the</c><00:01:45.840><c> target</c><00:01:46.240><c> see</c><00:01:46.560><c> this</c><00:01:46.880><c> triplet</c>
+
+00:01:47.510 --> 00:01:47.520 align:start position:0%
+greater than the target see this triplet
+ 
+
+00:01:47.520 --> 00:01:48.149 align:start position:0%
+greater than the target see this triplet
+1
+
+00:01:48.149 --> 00:01:48.159 align:start position:0%
+1
+ 
+
+00:01:48.159 --> 00:01:51.350 align:start position:0%
+1
+8<00:01:48.880><c> 4.</c><00:01:49.360><c> now</c><00:01:49.759><c> 1</c><00:01:50.159><c> is</c><00:01:50.320><c> smaller</c><00:01:50.799><c> than</c><00:01:50.960><c> the</c><00:01:51.040><c> value</c>
+
+00:01:51.350 --> 00:01:51.360 align:start position:0%
+8 4. now 1 is smaller than the value
+ 
+
+00:01:51.360 --> 00:01:52.550 align:start position:0%
+8 4. now 1 is smaller than the value
+we're<00:01:51.600><c> looking</c><00:01:51.920><c> for</c>
+
+00:01:52.550 --> 00:01:52.560 align:start position:0%
+we're looking for
+ 
+
+00:01:52.560 --> 00:01:54.149 align:start position:0%
+we're looking for
+4<00:01:52.960><c> is</c><00:01:53.119><c> smaller</c><00:01:53.439><c> than</c><00:01:53.600><c> the</c><00:01:53.680><c> value</c><00:01:54.000><c> we're</c>
+
+00:01:54.149 --> 00:01:54.159 align:start position:0%
+4 is smaller than the value we're
+ 
+
+00:01:54.159 --> 00:01:55.910 align:start position:0%
+4 is smaller than the value we're
+looking<00:01:54.399><c> for</c><00:01:54.560><c> but</c><00:01:54.720><c> what</c><00:01:54.880><c> about</c><00:01:55.360><c> 8</c>
+
+00:01:55.910 --> 00:01:55.920 align:start position:0%
+looking for but what about 8
+ 
+
+00:01:55.920 --> 00:01:58.149 align:start position:0%
+looking for but what about 8
+8<00:01:56.399><c> is</c><00:01:56.719><c> bigger</c><00:01:57.040><c> than</c><00:01:57.280><c> the</c><00:01:57.360><c> value</c><00:01:57.759><c> we're</c><00:01:57.920><c> looking</c>
+
+00:01:58.149 --> 00:01:58.159 align:start position:0%
+8 is bigger than the value we're looking
+ 
+
+00:01:58.159 --> 00:01:58.950 align:start position:0%
+8 is bigger than the value we're looking
+for<00:01:58.560><c> so</c>
+
+00:01:58.950 --> 00:01:58.960 align:start position:0%
+for so
+ 
+
+00:01:58.960 --> 00:02:01.830 align:start position:0%
+for so
+what<00:01:59.280><c> happens</c><00:01:59.759><c> with</c><00:02:00.000><c> this</c><00:02:00.320><c> triplet</c><00:02:01.119><c> if</c><00:02:01.360><c> we</c>
+
+00:02:01.830 --> 00:02:01.840 align:start position:0%
+what happens with this triplet if we
+ 
+
+00:02:01.840 --> 00:02:02.230 align:start position:0%
+what happens with this triplet if we
+ever
+
+00:02:02.230 --> 00:02:02.240 align:start position:0%
+ever
+ 
+
+00:02:02.240 --> 00:02:05.190 align:start position:0%
+ever
+try<00:02:02.560><c> to</c><00:02:02.799><c> combine</c><00:02:03.520><c> this</c><00:02:03.759><c> triplet</c><00:02:04.240><c> with</c><00:02:04.719><c> any</c>
+
+00:02:05.190 --> 00:02:05.200 align:start position:0%
+try to combine this triplet with any
+ 
+
+00:02:05.200 --> 00:02:05.590 align:start position:0%
+try to combine this triplet with any
+other
+
+00:02:05.590 --> 00:02:05.600 align:start position:0%
+other
+ 
+
+00:02:05.600 --> 00:02:09.350 align:start position:0%
+other
+triplet<00:02:06.320><c> we're</c><00:02:06.880><c> always</c><00:02:07.680><c> gonna</c><00:02:08.080><c> get</c><00:02:08.399><c> a</c><00:02:08.640><c> value</c>
+
+00:02:09.350 --> 00:02:09.360 align:start position:0%
+triplet we're always gonna get a value
+ 
+
+00:02:09.360 --> 00:02:11.510 align:start position:0%
+triplet we're always gonna get a value
+that's<00:02:09.599><c> either</c><00:02:10.080><c> eight</c><00:02:10.399><c> or</c><00:02:10.560><c> maybe</c><00:02:10.879><c> even</c><00:02:11.280><c> bigger</c>
+
+00:02:11.510 --> 00:02:11.520 align:start position:0%
+that's either eight or maybe even bigger
+ 
+
+00:02:11.520 --> 00:02:13.430 align:start position:0%
+that's either eight or maybe even bigger
+than<00:02:11.760><c> a</c><00:02:12.000><c> if</c><00:02:12.160><c> you</c><00:02:12.319><c> know</c><00:02:12.480><c> that</c><00:02:12.720><c> other</c><00:02:13.040><c> triplet</c>
+
+00:02:13.430 --> 00:02:13.440 align:start position:0%
+than a if you know that other triplet
+ 
+
+00:02:13.440 --> 00:02:15.270 align:start position:0%
+than a if you know that other triplet
+somehow<00:02:13.840><c> had</c><00:02:14.000><c> a</c><00:02:14.239><c> nine</c><00:02:14.640><c> in</c><00:02:14.800><c> the</c><00:02:14.879><c> middle</c><00:02:15.120><c> or</c>
+
+00:02:15.270 --> 00:02:15.280 align:start position:0%
+somehow had a nine in the middle or
+ 
+
+00:02:15.280 --> 00:02:16.470 align:start position:0%
+somehow had a nine in the middle or
+something<00:02:15.520><c> like</c><00:02:15.680><c> that</c><00:02:15.920><c> right</c>
+
+00:02:16.470 --> 00:02:16.480 align:start position:0%
+something like that right
+ 
+
+00:02:16.480 --> 00:02:19.350 align:start position:0%
+something like that right
+but<00:02:16.720><c> we're</c><00:02:17.040><c> always</c><00:02:17.680><c> with</c><00:02:17.920><c> this</c><00:02:18.239><c> triplet</c><00:02:18.879><c> we're</c>
+
+00:02:19.350 --> 00:02:19.360 align:start position:0%
+but we're always with this triplet we're
+ 
+
+00:02:19.360 --> 00:02:21.910 align:start position:0%
+but we're always with this triplet we're
+always<00:02:20.080><c> going</c><00:02:20.400><c> to</c><00:02:20.640><c> get</c><00:02:20.879><c> a</c><00:02:21.040><c> value</c><00:02:21.520><c> that's</c>
+
+00:02:21.910 --> 00:02:21.920 align:start position:0%
+always going to get a value that's
+ 
+
+00:02:21.920 --> 00:02:23.190 align:start position:0%
+always going to get a value that's
+greater<00:02:22.319><c> than</c><00:02:22.480><c> the</c><00:02:22.640><c> target</c>
+
+00:02:23.190 --> 00:02:23.200 align:start position:0%
+greater than the target
+ 
+
+00:02:23.200 --> 00:02:26.150 align:start position:0%
+greater than the target
+7<00:02:23.520><c> that</c><00:02:23.599><c> we're</c><00:02:23.840><c> looking</c><00:02:24.160><c> for</c><00:02:24.480><c> so</c><00:02:24.879><c> any</c><00:02:25.360><c> triplet</c>
+
+00:02:26.150 --> 00:02:26.160 align:start position:0%
+7 that we're looking for so any triplet
+ 
+
+00:02:26.160 --> 00:02:27.830 align:start position:0%
+7 that we're looking for so any triplet
+any<00:02:26.560><c> triplet</c><00:02:27.040><c> in</c><00:02:27.200><c> our</c><00:02:27.360><c> list</c>
+
+00:02:27.830 --> 00:02:27.840 align:start position:0%
+any triplet in our list
+ 
+
+00:02:27.840 --> 00:02:31.350 align:start position:0%
+any triplet in our list
+at<00:02:28.160><c> all</c><00:02:28.640><c> that</c><00:02:28.879><c> has</c><00:02:29.120><c> a</c><00:02:29.280><c> value</c><00:02:29.840><c> in</c><00:02:30.160><c> any</c><00:02:30.560><c> position</c>
+
+00:02:31.350 --> 00:02:31.360 align:start position:0%
+at all that has a value in any position
+ 
+
+00:02:31.360 --> 00:02:33.509 align:start position:0%
+at all that has a value in any position
+that's<00:02:31.840><c> greater</c><00:02:32.239><c> than</c><00:02:32.400><c> the</c><00:02:32.560><c> corresponding</c>
+
+00:02:33.509 --> 00:02:33.519 align:start position:0%
+that's greater than the corresponding
+ 
+
+00:02:33.519 --> 00:02:35.509 align:start position:0%
+that's greater than the corresponding
+target<00:02:34.000><c> value</c><00:02:34.319><c> that</c><00:02:34.480><c> we're</c><00:02:34.720><c> looking</c><00:02:35.040><c> for</c>
+
+00:02:35.509 --> 00:02:35.519 align:start position:0%
+target value that we're looking for
+ 
+
+00:02:35.519 --> 00:02:37.750 align:start position:0%
+target value that we're looking for
+is<00:02:35.680><c> going</c><00:02:35.760><c> to</c><00:02:35.920><c> be</c><00:02:36.239><c> useless</c><00:02:36.800><c> for</c><00:02:37.040><c> us</c><00:02:37.280><c> so</c><00:02:37.519><c> a</c>
+
+00:02:37.750 --> 00:02:37.760 align:start position:0%
+is going to be useless for us so a
+ 
+
+00:02:37.760 --> 00:02:38.550 align:start position:0%
+is going to be useless for us so a
+triplet<00:02:38.239><c> like</c>
+
+00:02:38.550 --> 00:02:38.560 align:start position:0%
+triplet like
+ 
+
+00:02:38.560 --> 00:02:40.790 align:start position:0%
+triplet like
+this<00:02:38.959><c> we're</c><00:02:39.280><c> not</c><00:02:39.519><c> even</c><00:02:39.760><c> going</c><00:02:39.920><c> to</c><00:02:40.080><c> consider</c><00:02:40.640><c> it</c>
+
+00:02:40.790 --> 00:02:40.800 align:start position:0%
+this we're not even going to consider it
+ 
+
+00:02:40.800 --> 00:02:41.750 align:start position:0%
+this we're not even going to consider it
+we're<00:02:40.959><c> not</c><00:02:41.120><c> even</c><00:02:41.360><c> going</c><00:02:41.440><c> to</c>
+
+00:02:41.750 --> 00:02:41.760 align:start position:0%
+we're not even going to
+ 
+
+00:02:41.760 --> 00:02:44.550 align:start position:0%
+we're not even going to
+look<00:02:42.000><c> at</c><00:02:42.239><c> it</c><00:02:42.480><c> so</c><00:02:42.879><c> from</c><00:02:43.360><c> our</c><00:02:43.760><c> input</c><00:02:44.160><c> list</c><00:02:44.400><c> of</c>
+
+00:02:44.550 --> 00:02:44.560 align:start position:0%
+look at it so from our input list of
+ 
+
+00:02:44.560 --> 00:02:45.910 align:start position:0%
+look at it so from our input list of
+triplets<00:02:45.120><c> if</c><00:02:45.280><c> we</c><00:02:45.599><c> do</c>
+
+00:02:45.910 --> 00:02:45.920 align:start position:0%
+triplets if we do
+ 
+
+00:02:45.920 --> 00:02:48.070 align:start position:0%
+triplets if we do
+remove<00:02:46.640><c> all</c><00:02:46.879><c> triplets</c><00:02:47.360><c> or</c><00:02:47.599><c> like</c><00:02:47.760><c> that</c><00:02:47.920><c> that</c>
+
+00:02:48.070 --> 00:02:48.080 align:start position:0%
+remove all triplets or like that that
+ 
+
+00:02:48.080 --> 00:02:49.430 align:start position:0%
+remove all triplets or like that that
+have<00:02:48.400><c> values</c><00:02:48.800><c> that</c><00:02:48.879><c> are</c><00:02:49.120><c> too</c>
+
+00:02:49.430 --> 00:02:49.440 align:start position:0%
+have values that are too
+ 
+
+00:02:49.440 --> 00:02:51.350 align:start position:0%
+have values that are too
+great<00:02:50.080><c> then</c><00:02:50.319><c> we're</c><00:02:50.480><c> going</c><00:02:50.560><c> to</c><00:02:50.640><c> be</c><00:02:50.879><c> left</c><00:02:51.120><c> with</c>
+
+00:02:51.350 --> 00:02:51.360 align:start position:0%
+great then we're going to be left with
+ 
+
+00:02:51.360 --> 00:02:53.190 align:start position:0%
+great then we're going to be left with
+triplets<00:02:51.840><c> in</c><00:02:52.000><c> our</c><00:02:52.160><c> input</c><00:02:52.480><c> that</c><00:02:52.640><c> are</c><00:02:52.800><c> either</c>
+
+00:02:53.190 --> 00:02:53.200 align:start position:0%
+triplets in our input that are either
+ 
+
+00:02:53.200 --> 00:02:55.509 align:start position:0%
+triplets in our input that are either
+equal<00:02:53.840><c> to</c><00:02:54.000><c> the</c><00:02:54.160><c> target</c><00:02:54.640><c> or</c><00:02:54.959><c> less</c><00:02:55.200><c> than</c><00:02:55.360><c> the</c>
+
+00:02:55.509 --> 00:02:55.519 align:start position:0%
+equal to the target or less than the
+ 
+
+00:02:55.519 --> 00:02:56.949 align:start position:0%
+equal to the target or less than the
+target<00:02:55.840><c> right</c><00:02:56.080><c> they</c><00:02:56.160><c> have</c><00:02:56.319><c> values</c><00:02:56.720><c> that</c><00:02:56.800><c> are</c>
+
+00:02:56.949 --> 00:02:56.959 align:start position:0%
+target right they have values that are
+ 
+
+00:02:56.959 --> 00:02:57.670 align:start position:0%
+target right they have values that are
+equal<00:02:57.360><c> or</c>
+
+00:02:57.670 --> 00:02:57.680 align:start position:0%
+equal or
+ 
+
+00:02:57.680 --> 00:02:59.750 align:start position:0%
+equal or
+less<00:02:57.920><c> than</c><00:02:58.080><c> the</c><00:02:58.239><c> target</c><00:02:58.879><c> so</c><00:02:59.120><c> then</c><00:02:59.360><c> at</c><00:02:59.519><c> that</c>
+
+00:02:59.750 --> 00:02:59.760 align:start position:0%
+less than the target so then at that
+ 
+
+00:02:59.760 --> 00:03:01.350 align:start position:0%
+less than the target so then at that
+point<00:03:00.000><c> once</c><00:03:00.239><c> we're</c><00:03:00.560><c> left</c><00:03:00.800><c> with</c><00:03:01.040><c> those</c>
+
+00:03:01.350 --> 00:03:01.360 align:start position:0%
+point once we're left with those
+ 
+
+00:03:01.360 --> 00:03:01.990 align:start position:0%
+point once we're left with those
+triplets
+
+00:03:01.990 --> 00:03:02.000 align:start position:0%
+triplets
+ 
+
+00:03:02.000 --> 00:03:04.070 align:start position:0%
+triplets
+how<00:03:02.159><c> do</c><00:03:02.319><c> we</c><00:03:02.480><c> know</c><00:03:02.720><c> if</c><00:03:02.879><c> maybe</c><00:03:03.280><c> those</c><00:03:03.599><c> triplets</c>
+
+00:03:04.070 --> 00:03:04.080 align:start position:0%
+how do we know if maybe those triplets
+ 
+
+00:03:04.080 --> 00:03:05.670 align:start position:0%
+how do we know if maybe those triplets
+can<00:03:04.400><c> form</c><00:03:04.720><c> the</c><00:03:04.879><c> target</c>
+
+00:03:05.670 --> 00:03:05.680 align:start position:0%
+can form the target
+ 
+
+00:03:05.680 --> 00:03:07.350 align:start position:0%
+can form the target
+well<00:03:06.080><c> we're</c><00:03:06.319><c> not</c><00:03:06.480><c> actually</c><00:03:06.800><c> going</c><00:03:06.879><c> to</c><00:03:07.040><c> have</c><00:03:07.120><c> to</c>
+
+00:03:07.350 --> 00:03:07.360 align:start position:0%
+well we're not actually going to have to
+ 
+
+00:03:07.360 --> 00:03:09.190 align:start position:0%
+well we're not actually going to have to
+go<00:03:07.599><c> through</c><00:03:07.920><c> and</c><00:03:08.080><c> do</c><00:03:08.319><c> these</c><00:03:08.640><c> maximum</c>
+
+00:03:09.190 --> 00:03:09.200 align:start position:0%
+go through and do these maximum
+ 
+
+00:03:09.200 --> 00:03:11.030 align:start position:0%
+go through and do these maximum
+operations<00:03:09.760><c> it's</c><00:03:09.920><c> actually</c><00:03:10.319><c> even</c><00:03:10.640><c> easier</c>
+
+00:03:11.030 --> 00:03:11.040 align:start position:0%
+operations it's actually even easier
+ 
+
+00:03:11.040 --> 00:03:12.550 align:start position:0%
+operations it's actually even easier
+than<00:03:11.200><c> that</c><00:03:11.440><c> all</c><00:03:11.680><c> we're</c><00:03:11.840><c> going</c><00:03:12.000><c> to</c><00:03:12.159><c> do</c>
+
+00:03:12.550 --> 00:03:12.560 align:start position:0%
+than that all we're going to do
+ 
+
+00:03:12.560 --> 00:03:15.670 align:start position:0%
+than that all we're going to do
+is<00:03:12.879><c> go</c><00:03:13.200><c> through</c><00:03:13.760><c> every</c><00:03:14.159><c> single</c><00:03:14.560><c> triplet</c><00:03:15.360><c> and</c>
+
+00:03:15.670 --> 00:03:15.680 align:start position:0%
+is go through every single triplet and
+ 
+
+00:03:15.680 --> 00:03:16.550 align:start position:0%
+is go through every single triplet and
+see
+
+00:03:16.550 --> 00:03:16.560 align:start position:0%
+see
+ 
+
+00:03:16.560 --> 00:03:19.350 align:start position:0%
+see
+does<00:03:16.879><c> it</c><00:03:17.120><c> have</c><00:03:17.760><c> for</c><00:03:18.080><c> every</c><00:03:18.480><c> target</c><00:03:18.879><c> value</c><00:03:19.200><c> do</c>
+
+00:03:19.350 --> 00:03:19.360 align:start position:0%
+does it have for every target value do
+ 
+
+00:03:19.360 --> 00:03:20.070 align:start position:0%
+does it have for every target value do
+we<00:03:19.519><c> have</c><00:03:19.760><c> a</c>
+
+00:03:20.070 --> 00:03:20.080 align:start position:0%
+we have a
+ 
+
+00:03:20.080 --> 00:03:22.710 align:start position:0%
+we have a
+2<00:03:20.480><c> in</c><00:03:20.640><c> the</c><00:03:20.720><c> first</c><00:03:20.959><c> position</c><00:03:21.440><c> among</c><00:03:22.159><c> any</c><00:03:22.480><c> of</c><00:03:22.560><c> the</c>
+
+00:03:22.710 --> 00:03:22.720 align:start position:0%
+2 in the first position among any of the
+ 
+
+00:03:22.720 --> 00:03:23.509 align:start position:0%
+2 in the first position among any of the
+triplets
+
+00:03:23.509 --> 00:03:23.519 align:start position:0%
+triplets
+ 
+
+00:03:23.519 --> 00:03:26.630 align:start position:0%
+triplets
+do<00:03:23.760><c> we</c><00:03:23.920><c> have</c><00:03:24.159><c> a</c><00:03:24.480><c> 7</c><00:03:24.879><c> in</c><00:03:24.959><c> the</c><00:03:25.120><c> target</c><00:03:25.519><c> value</c><00:03:25.920><c> among</c>
+
+00:03:26.630 --> 00:03:26.640 align:start position:0%
+do we have a 7 in the target value among
+ 
+
+00:03:26.640 --> 00:03:29.589 align:start position:0%
+do we have a 7 in the target value among
+any<00:03:26.879><c> of</c><00:03:26.959><c> the</c><00:03:27.120><c> triplets</c><00:03:27.760><c> and</c><00:03:28.000><c> do</c><00:03:28.159><c> we</c><00:03:28.319><c> have</c><00:03:28.480><c> a</c><00:03:28.799><c> 5</c>
+
+00:03:29.589 --> 00:03:29.599 align:start position:0%
+any of the triplets and do we have a 5
+ 
+
+00:03:29.599 --> 00:03:29.990 align:start position:0%
+any of the triplets and do we have a 5
+in
+
+00:03:29.990 --> 00:03:30.000 align:start position:0%
+in
+ 
+
+00:03:30.000 --> 00:03:33.030 align:start position:0%
+in
+the<00:03:30.239><c> third</c><00:03:30.799><c> position</c><00:03:31.599><c> among</c><00:03:32.319><c> any</c><00:03:32.640><c> of</c><00:03:32.879><c> our</c>
+
+00:03:33.030 --> 00:03:33.040 align:start position:0%
+the third position among any of our
+ 
+
+00:03:33.040 --> 00:03:33.830 align:start position:0%
+the third position among any of our
+triplets
+
+00:03:33.830 --> 00:03:33.840 align:start position:0%
+triplets
+ 
+
+00:03:33.840 --> 00:03:36.869 align:start position:0%
+triplets
+if<00:03:34.159><c> we</c><00:03:34.480><c> do</c><00:03:34.959><c> then</c><00:03:35.200><c> we</c><00:03:35.360><c> can</c><00:03:35.760><c> guarantee</c><00:03:36.480><c> that</c>
+
+00:03:36.869 --> 00:03:36.879 align:start position:0%
+if we do then we can guarantee that
+ 
+
+00:03:36.879 --> 00:03:39.430 align:start position:0%
+if we do then we can guarantee that
+somehow<00:03:37.680><c> some</c><00:03:38.000><c> way</c><00:03:38.400><c> that</c><00:03:38.560><c> we</c><00:03:38.720><c> can</c><00:03:38.879><c> take</c><00:03:39.200><c> these</c>
+
+00:03:39.430 --> 00:03:39.440 align:start position:0%
+somehow some way that we can take these
+ 
+
+00:03:39.440 --> 00:03:40.070 align:start position:0%
+somehow some way that we can take these
+triplets
+
+00:03:40.070 --> 00:03:40.080 align:start position:0%
+triplets
+ 
+
+00:03:40.080 --> 00:03:42.390 align:start position:0%
+triplets
+you<00:03:40.239><c> know</c><00:03:40.560><c> combine</c><00:03:41.040><c> them</c><00:03:41.280><c> together</c><00:03:41.760><c> and</c><00:03:42.080><c> form</c>
+
+00:03:42.390 --> 00:03:42.400 align:start position:0%
+you know combine them together and form
+ 
+
+00:03:42.400 --> 00:03:44.229 align:start position:0%
+you know combine them together and form
+this<00:03:42.799><c> because</c><00:03:43.040><c> we</c><00:03:43.200><c> know</c><00:03:43.440><c> for</c><00:03:43.680><c> sure</c>
+
+00:03:44.229 --> 00:03:44.239 align:start position:0%
+this because we know for sure
+ 
+
+00:03:44.239 --> 00:03:46.630 align:start position:0%
+this because we know for sure
+at<00:03:44.560><c> every</c><00:03:44.959><c> position</c><00:03:45.599><c> in</c><00:03:45.680><c> these</c><00:03:46.000><c> remaining</c>
+
+00:03:46.630 --> 00:03:46.640 align:start position:0%
+at every position in these remaining
+ 
+
+00:03:46.640 --> 00:03:47.270 align:start position:0%
+at every position in these remaining
+triplets
+
+00:03:47.270 --> 00:03:47.280 align:start position:0%
+triplets
+ 
+
+00:03:47.280 --> 00:03:49.270 align:start position:0%
+triplets
+the<00:03:47.440><c> value</c><00:03:47.840><c> is</c><00:03:47.920><c> either</c><00:03:48.239><c> exactly</c><00:03:48.720><c> equal</c><00:03:49.040><c> to</c><00:03:49.120><c> the</c>
+
+00:03:49.270 --> 00:03:49.280 align:start position:0%
+the value is either exactly equal to the
+ 
+
+00:03:49.280 --> 00:03:51.190 align:start position:0%
+the value is either exactly equal to the
+target<00:03:49.680><c> or</c><00:03:50.080><c> less</c><00:03:50.319><c> than</c><00:03:50.480><c> the</c><00:03:50.640><c> target</c><00:03:50.959><c> so</c><00:03:51.120><c> we</c>
+
+00:03:51.190 --> 00:03:51.200 align:start position:0%
+target or less than the target so we
+ 
+
+00:03:51.200 --> 00:03:52.789 align:start position:0%
+target or less than the target so we
+know<00:03:51.360><c> for</c><00:03:51.599><c> sure</c><00:03:51.760><c> if</c><00:03:51.920><c> we</c><00:03:52.000><c> combine</c>
+
+00:03:52.789 --> 00:03:52.799 align:start position:0%
+know for sure if we combine
+ 
+
+00:03:52.799 --> 00:03:54.710 align:start position:0%
+know for sure if we combine
+all<00:03:53.040><c> of</c><00:03:53.120><c> them</c><00:03:53.360><c> together</c><00:03:53.920><c> we're</c><00:03:54.239><c> not</c><00:03:54.480><c> going</c><00:03:54.640><c> to</c>
+
+00:03:54.710 --> 00:03:54.720 align:start position:0%
+all of them together we're not going to
+ 
+
+00:03:54.720 --> 00:03:56.550 align:start position:0%
+all of them together we're not going to
+go<00:03:55.200><c> over</c><00:03:55.519><c> the</c><00:03:55.680><c> target</c>
+
+00:03:56.550 --> 00:03:56.560 align:start position:0%
+go over the target
+ 
+
+00:03:56.560 --> 00:03:58.869 align:start position:0%
+go over the target
+and<00:03:56.720><c> we're</c><00:03:56.959><c> definitely</c><00:03:57.599><c> going</c><00:03:57.840><c> to</c><00:03:58.239><c> reach</c><00:03:58.720><c> the</c>
+
+00:03:58.869 --> 00:03:58.879 align:start position:0%
+and we're definitely going to reach the
+ 
+
+00:03:58.879 --> 00:04:00.070 align:start position:0%
+and we're definitely going to reach the
+target<00:03:59.360><c> if</c><00:03:59.519><c> we</c><00:03:59.680><c> have</c>
+
+00:04:00.070 --> 00:04:00.080 align:start position:0%
+target if we have
+ 
+
+00:04:00.080 --> 00:04:01.990 align:start position:0%
+target if we have
+all<00:04:00.239><c> of</c><00:04:00.319><c> those</c><00:04:00.560><c> values</c><00:04:00.959><c> we're</c><00:04:01.120><c> looking</c><00:04:01.360><c> for</c><00:04:01.599><c> so</c>
+
+00:04:01.990 --> 00:04:02.000 align:start position:0%
+all of those values we're looking for so
+ 
+
+00:04:02.000 --> 00:04:03.110 align:start position:0%
+all of those values we're looking for so
+with<00:04:02.159><c> that</c><00:04:02.400><c> being</c><00:04:02.640><c> said</c>
+
+00:04:03.110 --> 00:04:03.120 align:start position:0%
+with that being said
+ 
+
+00:04:03.120 --> 00:04:04.710 align:start position:0%
+with that being said
+the<00:04:03.280><c> code</c><00:04:03.599><c> is</c><00:04:03.680><c> going</c><00:04:03.840><c> to</c><00:04:03.920><c> be</c><00:04:04.080><c> pretty</c><00:04:04.400><c> simple</c>
+
+00:04:04.710 --> 00:04:04.720 align:start position:0%
+the code is going to be pretty simple
+ 
+
+00:04:04.720 --> 00:04:06.149 align:start position:0%
+the code is going to be pretty simple
+all<00:04:04.879><c> we're</c><00:04:05.040><c> going</c><00:04:05.120><c> to</c><00:04:05.200><c> do</c><00:04:05.360><c> is</c><00:04:05.519><c> go</c><00:04:05.760><c> through</c><00:04:06.000><c> our</c>
+
+00:04:06.149 --> 00:04:06.159 align:start position:0%
+all we're going to do is go through our
+ 
+
+00:04:06.159 --> 00:04:07.270 align:start position:0%
+all we're going to do is go through our
+list<00:04:06.400><c> of</c><00:04:06.560><c> triplets</c>
+
+00:04:07.270 --> 00:04:07.280 align:start position:0%
+list of triplets
+ 
+
+00:04:07.280 --> 00:04:08.949 align:start position:0%
+list of triplets
+filter<00:04:07.840><c> out</c><00:04:08.000><c> the</c><00:04:08.159><c> triplets</c><00:04:08.640><c> that</c><00:04:08.720><c> have</c><00:04:08.879><c> a</c>
+
+00:04:08.949 --> 00:04:08.959 align:start position:0%
+filter out the triplets that have a
+ 
+
+00:04:08.959 --> 00:04:10.470 align:start position:0%
+filter out the triplets that have a
+value<00:04:09.360><c> that's</c><00:04:09.599><c> greater</c><00:04:10.080><c> than</c>
+
+00:04:10.470 --> 00:04:10.480 align:start position:0%
+value that's greater than
+ 
+
+00:04:10.480 --> 00:04:12.390 align:start position:0%
+value that's greater than
+any<00:04:10.720><c> value</c><00:04:11.040><c> in</c><00:04:11.200><c> the</c><00:04:11.280><c> target</c><00:04:11.920><c> and</c><00:04:12.080><c> then</c><00:04:12.239><c> we're</c>
+
+00:04:12.390 --> 00:04:12.400 align:start position:0%
+any value in the target and then we're
+ 
+
+00:04:12.400 --> 00:04:14.550 align:start position:0%
+any value in the target and then we're
+going<00:04:12.560><c> to</c><00:04:13.040><c> check</c><00:04:13.360><c> among</c><00:04:13.680><c> any</c><00:04:13.920><c> of</c><00:04:14.080><c> our</c><00:04:14.159><c> triplets</c>
+
+00:04:14.550 --> 00:04:14.560 align:start position:0%
+going to check among any of our triplets
+ 
+
+00:04:14.560 --> 00:04:15.589 align:start position:0%
+going to check among any of our triplets
+can<00:04:14.799><c> we</c>
+
+00:04:15.589 --> 00:04:15.599 align:start position:0%
+can we
+ 
+
+00:04:15.599 --> 00:04:17.590 align:start position:0%
+can we
+reach<00:04:15.920><c> each</c><00:04:16.160><c> of</c><00:04:16.239><c> these</c><00:04:16.479><c> target</c><00:04:16.880><c> values</c><00:04:17.280><c> if</c><00:04:17.440><c> we</c>
+
+00:04:17.590 --> 00:04:17.600 align:start position:0%
+reach each of these target values if we
+ 
+
+00:04:17.600 --> 00:04:19.590 align:start position:0%
+reach each of these target values if we
+can<00:04:18.000><c> basically</c><00:04:18.479><c> if</c><00:04:18.639><c> we</c><00:04:18.799><c> if</c><00:04:18.959><c> we</c><00:04:19.120><c> can</c><00:04:19.199><c> reach</c>
+
+00:04:19.590 --> 00:04:19.600 align:start position:0%
+can basically if we if we can reach
+ 
+
+00:04:19.600 --> 00:04:22.069 align:start position:0%
+can basically if we if we can reach
+all<00:04:19.840><c> three</c><00:04:20.160><c> of</c><00:04:20.239><c> these</c><00:04:20.479><c> values</c><00:04:21.280><c> in</c><00:04:21.519><c> our</c><00:04:21.759><c> input</c>
+
+00:04:22.069 --> 00:04:22.079 align:start position:0%
+all three of these values in our input
+ 
+
+00:04:22.079 --> 00:04:23.110 align:start position:0%
+all three of these values in our input
+list<00:04:22.320><c> of</c><00:04:22.400><c> triplets</c>
+
+00:04:23.110 --> 00:04:23.120 align:start position:0%
+list of triplets
+ 
+
+00:04:23.120 --> 00:04:24.550 align:start position:0%
+list of triplets
+then<00:04:23.360><c> we're</c><00:04:23.520><c> going</c><00:04:23.600><c> to</c><00:04:23.759><c> return</c><00:04:24.160><c> true</c>
+
+00:04:24.550 --> 00:04:24.560 align:start position:0%
+then we're going to return true
+ 
+
+00:04:24.560 --> 00:04:26.310 align:start position:0%
+then we're going to return true
+otherwise<00:04:24.960><c> we</c><00:04:25.120><c> return</c><00:04:25.520><c> false</c>
+
+00:04:26.310 --> 00:04:26.320 align:start position:0%
+otherwise we return false
+ 
+
+00:04:26.320 --> 00:04:28.070 align:start position:0%
+otherwise we return false
+so<00:04:26.560><c> basically</c><00:04:26.960><c> this</c><00:04:27.120><c> is</c><00:04:27.199><c> going</c><00:04:27.280><c> to</c><00:04:27.360><c> be</c><00:04:27.520><c> an</c><00:04:27.680><c> o</c><00:04:27.840><c> of</c>
+
+00:04:28.070 --> 00:04:28.080 align:start position:0%
+so basically this is going to be an o of
+ 
+
+00:04:28.080 --> 00:04:29.830 align:start position:0%
+so basically this is going to be an o of
+n<00:04:28.240><c> time</c><00:04:28.479><c> solution</c><00:04:28.880><c> where</c><00:04:29.040><c> we</c><00:04:29.199><c> iterate</c><00:04:29.600><c> through</c>
+
+00:04:29.830 --> 00:04:29.840 align:start position:0%
+n time solution where we iterate through
+ 
+
+00:04:29.840 --> 00:04:31.350 align:start position:0%
+n time solution where we iterate through
+every<00:04:30.080><c> single</c><00:04:30.400><c> triplet</c><00:04:30.880><c> and</c><00:04:30.960><c> go</c><00:04:31.120><c> through</c>
+
+00:04:31.350 --> 00:04:31.360 align:start position:0%
+every single triplet and go through
+ 
+
+00:04:31.360 --> 00:04:32.870 align:start position:0%
+every single triplet and go through
+every<00:04:31.520><c> single</c><00:04:31.840><c> value</c><00:04:32.240><c> in</c><00:04:32.400><c> every</c><00:04:32.560><c> single</c>
+
+00:04:32.870 --> 00:04:32.880 align:start position:0%
+every single value in every single
+ 
+
+00:04:32.880 --> 00:04:33.749 align:start position:0%
+every single value in every single
+triplet
+
+00:04:33.749 --> 00:04:33.759 align:start position:0%
+triplet
+ 
+
+00:04:33.759 --> 00:04:35.990 align:start position:0%
+triplet
+so<00:04:34.080><c> i'm</c><00:04:34.240><c> going</c><00:04:34.400><c> to</c><00:04:34.560><c> initially</c><00:04:34.960><c> make</c><00:04:35.199><c> a</c><00:04:35.520><c> set</c>
+
+00:04:35.990 --> 00:04:36.000 align:start position:0%
+so i'm going to initially make a set
+ 
+
+00:04:36.000 --> 00:04:37.430 align:start position:0%
+so i'm going to initially make a set
+called<00:04:36.720><c> good</c>
+
+00:04:37.430 --> 00:04:37.440 align:start position:0%
+called good
+ 
+
+00:04:37.440 --> 00:04:39.909 align:start position:0%
+called good
+because<00:04:37.759><c> basically</c><00:04:38.240><c> just</c><00:04:38.639><c> which</c><00:04:39.360><c> positions</c>
+
+00:04:39.909 --> 00:04:39.919 align:start position:0%
+because basically just which positions
+ 
+
+00:04:39.919 --> 00:04:41.749 align:start position:0%
+because basically just which positions
+of<00:04:40.080><c> the</c><00:04:40.240><c> target</c><00:04:40.639><c> are</c><00:04:40.880><c> good</c><00:04:41.120><c> like</c><00:04:41.280><c> which</c><00:04:41.520><c> ones</c>
+
+00:04:41.749 --> 00:04:41.759 align:start position:0%
+of the target are good like which ones
+ 
+
+00:04:41.759 --> 00:04:42.710 align:start position:0%
+of the target are good like which ones
+can<00:04:41.919><c> we</c><00:04:42.160><c> actually</c>
+
+00:04:42.710 --> 00:04:42.720 align:start position:0%
+can we actually
+ 
+
+00:04:42.720 --> 00:04:44.629 align:start position:0%
+can we actually
+complete<00:04:43.600><c> so</c><00:04:43.840><c> to</c><00:04:44.080><c> this</c><00:04:44.240><c> i'm</c><00:04:44.400><c> going</c><00:04:44.479><c> to</c><00:04:44.560><c> be</c>
+
+00:04:44.629 --> 00:04:44.639 align:start position:0%
+complete so to this i'm going to be
+ 
+
+00:04:44.639 --> 00:04:46.070 align:start position:0%
+complete so to this i'm going to be
+adding<00:04:44.960><c> the</c><00:04:45.120><c> indices</c><00:04:45.600><c> i'm</c><00:04:45.680><c> going</c><00:04:45.759><c> to</c><00:04:45.840><c> be</c>
+
+00:04:46.070 --> 00:04:46.080 align:start position:0%
+adding the indices i'm going to be
+ 
+
+00:04:46.080 --> 00:04:47.510 align:start position:0%
+adding the indices i'm going to be
+either<00:04:46.320><c> adding</c><00:04:46.720><c> index</c><00:04:47.120><c> 0</c>
+
+00:04:47.510 --> 00:04:47.520 align:start position:0%
+either adding index 0
+ 
+
+00:04:47.520 --> 00:04:49.990 align:start position:0%
+either adding index 0
+1<00:04:47.840><c> or</c><00:04:48.080><c> 2.</c><00:04:48.720><c> you</c><00:04:48.800><c> know</c><00:04:49.040><c> depending</c><00:04:49.360><c> on</c><00:04:49.440><c> which</c><00:04:49.680><c> ones</c>
+
+00:04:49.990 --> 00:04:50.000 align:start position:0%
+1 or 2. you know depending on which ones
+ 
+
+00:04:50.000 --> 00:04:51.590 align:start position:0%
+1 or 2. you know depending on which ones
+we<00:04:50.240><c> are</c><00:04:50.479><c> able</c><00:04:50.720><c> to</c><00:04:50.800><c> complete</c><00:04:51.199><c> and</c><00:04:51.280><c> if</c><00:04:51.360><c> the</c>
+
+00:04:51.590 --> 00:04:51.600 align:start position:0%
+we are able to complete and if the
+ 
+
+00:04:51.600 --> 00:04:52.469 align:start position:0%
+we are able to complete and if the
+length<00:04:51.919><c> of</c><00:04:52.000><c> this</c><00:04:52.240><c> is</c>
+
+00:04:52.469 --> 00:04:52.479 align:start position:0%
+length of this is
+ 
+
+00:04:52.479 --> 00:04:54.390 align:start position:0%
+length of this is
+3<00:04:52.960><c> then</c><00:04:53.120><c> we're</c><00:04:53.280><c> going</c><00:04:53.360><c> to</c><00:04:53.440><c> return</c><00:04:53.840><c> true</c><00:04:54.240><c> if</c>
+
+00:04:54.390 --> 00:04:54.400 align:start position:0%
+3 then we're going to return true if
+ 
+
+00:04:54.400 --> 00:04:56.150 align:start position:0%
+3 then we're going to return true if
+it's<00:04:54.639><c> 0</c><00:04:55.120><c> or</c><00:04:55.360><c> less</c><00:04:55.600><c> than</c><00:04:55.759><c> 3</c>
+
+00:04:56.150 --> 00:04:56.160 align:start position:0%
+it's 0 or less than 3
+ 
+
+00:04:56.160 --> 00:04:58.070 align:start position:0%
+it's 0 or less than 3
+then<00:04:56.320><c> we're</c><00:04:56.479><c> going</c><00:04:56.560><c> to</c><00:04:56.639><c> return</c><00:04:57.040><c> false</c><00:04:57.600><c> so</c><00:04:57.840><c> now</c>
+
+00:04:58.070 --> 00:04:58.080 align:start position:0%
+then we're going to return false so now
+ 
+
+00:04:58.080 --> 00:04:59.670 align:start position:0%
+then we're going to return false so now
+our<00:04:58.240><c> brute</c><00:04:58.560><c> force</c><00:04:58.880><c> basically</c><00:04:59.280><c> just</c><00:04:59.520><c> going</c>
+
+00:04:59.670 --> 00:04:59.680 align:start position:0%
+our brute force basically just going
+ 
+
+00:04:59.680 --> 00:05:01.029 align:start position:0%
+our brute force basically just going
+through<00:04:59.840><c> every</c><00:05:00.000><c> single</c><00:05:00.400><c> triplet</c>
+
+00:05:01.029 --> 00:05:01.039 align:start position:0%
+through every single triplet
+ 
+
+00:05:01.039 --> 00:05:04.070 align:start position:0%
+through every single triplet
+in<00:05:01.280><c> the</c><00:05:01.520><c> input</c><00:05:01.919><c> list</c><00:05:02.960><c> and</c><00:05:03.520><c> if</c>
+
+00:05:04.070 --> 00:05:04.080 align:start position:0%
+in the input list and if
+ 
+
+00:05:04.080 --> 00:05:06.469 align:start position:0%
+in the input list and if
+we<00:05:04.240><c> get</c><00:05:04.400><c> a</c><00:05:04.560><c> triplet</c><00:05:05.039><c> so</c><00:05:05.280><c> if</c><00:05:05.680><c> this</c><00:05:05.919><c> triplet</c><00:05:06.400><c> at</c>
+
+00:05:06.469 --> 00:05:06.479 align:start position:0%
+we get a triplet so if this triplet at
+ 
+
+00:05:06.479 --> 00:05:08.390 align:start position:0%
+we get a triplet so if this triplet at
+position<00:05:06.960><c> 0</c><00:05:07.280><c> has</c><00:05:07.520><c> a</c><00:05:07.600><c> value</c>
+
+00:05:08.390 --> 00:05:08.400 align:start position:0%
+position 0 has a value
+ 
+
+00:05:08.400 --> 00:05:11.430 align:start position:0%
+position 0 has a value
+that's<00:05:08.720><c> greater</c><00:05:09.199><c> than</c><00:05:09.360><c> the</c><00:05:09.600><c> target</c><00:05:10.160><c> values</c><00:05:10.960><c> uh</c>
+
+00:05:11.430 --> 00:05:11.440 align:start position:0%
+that's greater than the target values uh
+ 
+
+00:05:11.440 --> 00:05:14.710 align:start position:0%
+that's greater than the target values uh
+position<00:05:12.000><c> zero</c><00:05:12.720><c> or</c><00:05:12.960><c> at</c><00:05:13.120><c> position</c><00:05:13.680><c> one</c><00:05:14.160><c> if</c><00:05:14.400><c> this</c>
+
+00:05:14.710 --> 00:05:14.720 align:start position:0%
+position zero or at position one if this
+ 
+
+00:05:14.720 --> 00:05:16.390 align:start position:0%
+position zero or at position one if this
+value<00:05:15.039><c> is</c><00:05:15.199><c> greater</c><00:05:15.440><c> than</c><00:05:15.600><c> the</c><00:05:15.759><c> targets</c><00:05:16.240><c> at</c>
+
+00:05:16.390 --> 00:05:16.400 align:start position:0%
+value is greater than the targets at
+ 
+
+00:05:16.400 --> 00:05:17.590 align:start position:0%
+value is greater than the targets at
+position<00:05:16.880><c> one</c>
+
+00:05:17.590 --> 00:05:17.600 align:start position:0%
+position one
+ 
+
+00:05:17.600 --> 00:05:21.430 align:start position:0%
+position one
+and<00:05:17.840><c> finally</c><00:05:18.400><c> if</c><00:05:18.800><c> at</c><00:05:19.039><c> position</c><00:05:19.600><c> two</c><00:05:20.320><c> this</c>
+
+00:05:21.430 --> 00:05:21.440 align:start position:0%
+and finally if at position two this
+ 
+
+00:05:21.440 --> 00:05:23.110 align:start position:0%
+and finally if at position two this
+triplets<00:05:22.080><c> value</c><00:05:22.400><c> is</c><00:05:22.560><c> greater</c><00:05:22.800><c> than</c><00:05:22.960><c> the</c>
+
+00:05:23.110 --> 00:05:23.120 align:start position:0%
+triplets value is greater than the
+ 
+
+00:05:23.120 --> 00:05:24.870 align:start position:0%
+triplets value is greater than the
+targets<00:05:23.600><c> at</c><00:05:23.840><c> position</c><00:05:24.240><c> two</c>
+
+00:05:24.870 --> 00:05:24.880 align:start position:0%
+targets at position two
+ 
+
+00:05:24.880 --> 00:05:26.950 align:start position:0%
+targets at position two
+that<00:05:25.120><c> means</c><00:05:25.680><c> that</c><00:05:26.000><c> this</c><00:05:26.240><c> is</c><00:05:26.320><c> one</c><00:05:26.560><c> of</c><00:05:26.639><c> those</c>
+
+00:05:26.950 --> 00:05:26.960 align:start position:0%
+that means that this is one of those
+ 
+
+00:05:26.960 --> 00:05:28.629 align:start position:0%
+that means that this is one of those
+triplets<00:05:27.440><c> that</c><00:05:27.520><c> we're</c><00:05:27.680><c> going</c><00:05:27.759><c> to</c><00:05:28.000><c> filter</c><00:05:28.479><c> out</c>
+
+00:05:28.629 --> 00:05:28.639 align:start position:0%
+triplets that we're going to filter out
+ 
+
+00:05:28.639 --> 00:05:30.870 align:start position:0%
+triplets that we're going to filter out
+so<00:05:28.880><c> we</c><00:05:28.960><c> can</c><00:05:29.120><c> just</c><00:05:29.360><c> continue</c><00:05:30.080><c> on</c><00:05:30.240><c> to</c><00:05:30.400><c> the</c><00:05:30.560><c> next</c>
+
+00:05:30.870 --> 00:05:30.880 align:start position:0%
+so we can just continue on to the next
+ 
+
+00:05:30.880 --> 00:05:32.230 align:start position:0%
+so we can just continue on to the next
+iteration<00:05:31.360><c> of</c><00:05:31.440><c> the</c><00:05:31.680><c> loop</c>
+
+00:05:32.230 --> 00:05:32.240 align:start position:0%
+iteration of the loop
+ 
+
+00:05:32.240 --> 00:05:34.550 align:start position:0%
+iteration of the loop
+otherwise<00:05:33.120><c> this</c><00:05:33.360><c> triplet</c><00:05:33.840><c> could</c><00:05:34.160><c> contain</c>
+
+00:05:34.550 --> 00:05:34.560 align:start position:0%
+otherwise this triplet could contain
+ 
+
+00:05:34.560 --> 00:05:36.070 align:start position:0%
+otherwise this triplet could contain
+some<00:05:34.720><c> of</c><00:05:34.800><c> the</c><00:05:34.960><c> target</c><00:05:35.360><c> values</c><00:05:35.680><c> we're</c><00:05:35.840><c> looking</c>
+
+00:05:36.070 --> 00:05:36.080 align:start position:0%
+some of the target values we're looking
+ 
+
+00:05:36.080 --> 00:05:37.430 align:start position:0%
+some of the target values we're looking
+for<00:05:36.240><c> so</c><00:05:36.400><c> let's</c><00:05:36.639><c> iterate</c><00:05:37.039><c> through</c><00:05:37.199><c> this</c>
+
+00:05:37.430 --> 00:05:37.440 align:start position:0%
+for so let's iterate through this
+ 
+
+00:05:37.440 --> 00:05:39.029 align:start position:0%
+for so let's iterate through this
+triplet<00:05:37.840><c> and</c><00:05:37.919><c> we</c><00:05:38.080><c> are</c><00:05:38.240><c> going</c><00:05:38.400><c> to</c><00:05:38.479><c> need</c><00:05:38.720><c> the</c>
+
+00:05:39.029 --> 00:05:39.039 align:start position:0%
+triplet and we are going to need the
+ 
+
+00:05:39.039 --> 00:05:41.590 align:start position:0%
+triplet and we are going to need the
+index<00:05:39.600><c> of</c><00:05:39.759><c> this</c><00:05:40.000><c> triplet</c><00:05:40.800><c> the</c><00:05:41.039><c> index</c><00:05:41.360><c> in</c><00:05:41.440><c> this</c>
+
+00:05:41.590 --> 00:05:41.600 align:start position:0%
+index of this triplet the index in this
+ 
+
+00:05:41.600 --> 00:05:43.749 align:start position:0%
+index of this triplet the index in this
+case<00:05:41.840><c> is</c><00:05:42.000><c> basically</c><00:05:42.400><c> the</c><00:05:42.560><c> position</c><00:05:43.280><c> of</c><00:05:43.520><c> each</c>
+
+00:05:43.749 --> 00:05:43.759 align:start position:0%
+case is basically the position of each
+ 
+
+00:05:43.759 --> 00:05:45.830 align:start position:0%
+case is basically the position of each
+value<00:05:44.080><c> in</c><00:05:44.240><c> the</c><00:05:44.320><c> triplet</c><00:05:44.639><c> so</c><00:05:44.880><c> iv</c>
+
+00:05:45.830 --> 00:05:45.840 align:start position:0%
+value in the triplet so iv
+ 
+
+00:05:45.840 --> 00:05:49.029 align:start position:0%
+value in the triplet so iv
+in<00:05:46.479><c> enumerate</c><00:05:47.440><c> through</c><00:05:47.759><c> this</c><00:05:48.080><c> triplet</c>
+
+00:05:49.029 --> 00:05:49.039 align:start position:0%
+in enumerate through this triplet
+ 
+
+00:05:49.039 --> 00:05:51.189 align:start position:0%
+in enumerate through this triplet
+and<00:05:49.120><c> so</c><00:05:49.280><c> we're</c><00:05:49.520><c> going</c><00:05:49.600><c> to</c><00:05:49.759><c> check</c><00:05:50.080><c> if</c><00:05:50.320><c> the</c><00:05:50.639><c> value</c>
+
+00:05:51.189 --> 00:05:51.199 align:start position:0%
+and so we're going to check if the value
+ 
+
+00:05:51.199 --> 00:05:52.070 align:start position:0%
+and so we're going to check if the value
+at<00:05:51.280><c> this</c><00:05:51.520><c> position</c>
+
+00:05:52.070 --> 00:05:52.080 align:start position:0%
+at this position
+ 
+
+00:05:52.080 --> 00:05:55.270 align:start position:0%
+at this position
+i<00:05:52.320><c> is</c><00:05:52.560><c> equal</c><00:05:53.120><c> to</c><00:05:53.680><c> a</c><00:05:53.840><c> value</c><00:05:54.320><c> in</c><00:05:54.400><c> the</c><00:05:54.639><c> target</c>
+
+00:05:55.270 --> 00:05:55.280 align:start position:0%
+i is equal to a value in the target
+ 
+
+00:05:55.280 --> 00:05:58.390 align:start position:0%
+i is equal to a value in the target
+at<00:05:55.520><c> position</c><00:05:56.160><c> i</c><00:05:57.120><c> so</c><00:05:57.280><c> basically</c><00:05:57.759><c> maybe</c><00:05:58.160><c> the</c>
+
+00:05:58.390 --> 00:05:58.400 align:start position:0%
+at position i so basically maybe the
+ 
+
+00:05:58.400 --> 00:06:00.469 align:start position:0%
+at position i so basically maybe the
+zero<00:05:58.800><c> value</c><00:05:59.280><c> of</c><00:05:59.440><c> this</c><00:05:59.600><c> triplet</c><00:06:00.000><c> matches</c><00:06:00.319><c> the</c>
+
+00:06:00.469 --> 00:06:00.479 align:start position:0%
+zero value of this triplet matches the
+ 
+
+00:06:00.479 --> 00:06:02.150 align:start position:0%
+zero value of this triplet matches the
+zero<00:06:00.800><c> value</c><00:06:01.120><c> of</c><00:06:01.199><c> the</c><00:06:01.280><c> target</c><00:06:01.680><c> then</c><00:06:01.840><c> what</c><00:06:02.000><c> we're</c>
+
+00:06:02.150 --> 00:06:02.160 align:start position:0%
+zero value of the target then what we're
+ 
+
+00:06:02.160 --> 00:06:03.270 align:start position:0%
+zero value of the target then what we're
+going<00:06:02.240><c> to</c><00:06:02.319><c> go</c><00:06:02.479><c> ahead</c><00:06:02.639><c> and</c><00:06:02.800><c> do</c>
+
+00:06:03.270 --> 00:06:03.280 align:start position:0%
+going to go ahead and do
+ 
+
+00:06:03.280 --> 00:06:06.390 align:start position:0%
+going to go ahead and do
+is<00:06:03.520><c> to</c><00:06:03.919><c> our</c><00:06:04.240><c> good</c><00:06:04.639><c> set</c><00:06:05.280><c> we're</c><00:06:05.440><c> going</c><00:06:05.520><c> to</c><00:06:05.840><c> add</c>
+
+00:06:06.390 --> 00:06:06.400 align:start position:0%
+is to our good set we're going to add
+ 
+
+00:06:06.400 --> 00:06:08.950 align:start position:0%
+is to our good set we're going to add
+position<00:06:07.120><c> i</c><00:06:07.440><c> because</c><00:06:07.919><c> that</c><00:06:08.080><c> means</c><00:06:08.400><c> we</c><00:06:08.720><c> are</c>
+
+00:06:08.950 --> 00:06:08.960 align:start position:0%
+position i because that means we are
+ 
+
+00:06:08.960 --> 00:06:10.790 align:start position:0%
+position i because that means we are
+able<00:06:09.280><c> to</c><00:06:09.440><c> get</c><00:06:09.680><c> position</c><00:06:10.160><c> i</c><00:06:10.400><c> from</c>
+
+00:06:10.790 --> 00:06:10.800 align:start position:0%
+able to get position i from
+ 
+
+00:06:10.800 --> 00:06:12.629 align:start position:0%
+able to get position i from
+some<00:06:11.039><c> of</c><00:06:11.199><c> our</c><00:06:11.440><c> triplets</c><00:06:12.240><c> and</c><00:06:12.319><c> then</c><00:06:12.479><c> we're</c>
+
+00:06:12.629 --> 00:06:12.639 align:start position:0%
+some of our triplets and then we're
+ 
+
+00:06:12.639 --> 00:06:14.070 align:start position:0%
+some of our triplets and then we're
+going<00:06:12.720><c> to</c><00:06:12.800><c> do</c><00:06:13.039><c> the</c><00:06:13.199><c> exact</c><00:06:13.520><c> same</c><00:06:13.680><c> thing</c><00:06:13.840><c> for</c>
+
+00:06:14.070 --> 00:06:14.080 align:start position:0%
+going to do the exact same thing for
+ 
+
+00:06:14.080 --> 00:06:15.990 align:start position:0%
+going to do the exact same thing for
+every<00:06:14.319><c> single</c><00:06:14.639><c> triplet</c><00:06:15.039><c> that</c><00:06:15.280><c> is</c><00:06:15.440><c> valid</c><00:06:15.840><c> that</c>
+
+00:06:15.990 --> 00:06:16.000 align:start position:0%
+every single triplet that is valid that
+ 
+
+00:06:16.000 --> 00:06:17.189 align:start position:0%
+every single triplet that is valid that
+we're<00:06:16.080><c> not</c><00:06:16.240><c> going</c><00:06:16.319><c> to</c><00:06:16.400><c> be</c><00:06:16.560><c> skipping</c>
+
+00:06:17.189 --> 00:06:17.199 align:start position:0%
+we're not going to be skipping
+ 
+
+00:06:17.199 --> 00:06:19.909 align:start position:0%
+we're not going to be skipping
+and<00:06:17.280><c> then</c><00:06:17.600><c> at</c><00:06:17.759><c> the</c><00:06:18.000><c> end</c><00:06:18.639><c> if</c><00:06:18.960><c> we</c><00:06:19.199><c> know</c><00:06:19.440><c> for</c><00:06:19.600><c> sure</c>
+
+00:06:19.909 --> 00:06:19.919 align:start position:0%
+and then at the end if we know for sure
+ 
+
+00:06:19.919 --> 00:06:20.790 align:start position:0%
+and then at the end if we know for sure
+that<00:06:20.080><c> the</c><00:06:20.319><c> length</c>
+
+00:06:20.790 --> 00:06:20.800 align:start position:0%
+that the length
+ 
+
+00:06:20.800 --> 00:06:22.629 align:start position:0%
+that the length
+of<00:06:21.039><c> good</c><00:06:21.440><c> is</c><00:06:21.600><c> equal</c><00:06:21.759><c> to</c><00:06:22.000><c> three</c><00:06:22.240><c> then</c><00:06:22.479><c> we're</c>
+
+00:06:22.629 --> 00:06:22.639 align:start position:0%
+of good is equal to three then we're
+ 
+
+00:06:22.639 --> 00:06:23.990 align:start position:0%
+of good is equal to three then we're
+going<00:06:22.720><c> to</c><00:06:22.800><c> return</c><00:06:23.440><c> true</c>
+
+00:06:23.990 --> 00:06:24.000 align:start position:0%
+going to return true
+ 
+
+00:06:24.000 --> 00:06:25.749 align:start position:0%
+going to return true
+otherwise<00:06:24.479><c> we're</c><00:06:24.639><c> going</c><00:06:24.720><c> to</c><00:06:24.800><c> return</c><00:06:25.280><c> false</c><00:06:25.600><c> so</c>
+
+00:06:25.749 --> 00:06:25.759 align:start position:0%
+otherwise we're going to return false so
+ 
+
+00:06:25.759 --> 00:06:27.029 align:start position:0%
+otherwise we're going to return false so
+really<00:06:26.000><c> we</c><00:06:26.160><c> can</c><00:06:26.240><c> just</c><00:06:26.400><c> return</c>
+
+00:06:27.029 --> 00:06:27.039 align:start position:0%
+really we can just return
+ 
+
+00:06:27.039 --> 00:06:29.990 align:start position:0%
+really we can just return
+the<00:06:27.199><c> result</c><00:06:27.840><c> of</c><00:06:28.080><c> this</c><00:06:28.400><c> comparison</c><00:06:29.440><c> so</c><00:06:29.680><c> that's</c>
+
+00:06:29.990 --> 00:06:30.000 align:start position:0%
+the result of this comparison so that's
+ 
+
+00:06:30.000 --> 00:06:31.510 align:start position:0%
+the result of this comparison so that's
+the<00:06:30.160><c> entire</c><00:06:30.560><c> code</c><00:06:30.880><c> you</c><00:06:31.039><c> can</c><00:06:31.199><c> see</c>
+
+00:06:31.510 --> 00:06:31.520 align:start position:0%
+the entire code you can see
+ 
+
+00:06:31.520 --> 00:06:34.550 align:start position:0%
+the entire code you can see
+that<00:06:31.759><c> it</c><00:06:32.080><c> does</c><00:06:32.560><c> pass</c><00:06:33.280><c> in</c><00:06:33.840><c> this</c>
+
+00:06:34.550 --> 00:06:34.560 align:start position:0%
+that it does pass in this
+ 
+
+00:06:34.560 --> 00:06:36.230 align:start position:0%
+that it does pass in this
+leak<00:06:34.800><c> code</c><00:06:35.039><c> contest</c><00:06:35.440><c> so</c><00:06:35.600><c> i</c><00:06:35.680><c> hope</c><00:06:35.840><c> that</c><00:06:36.000><c> this</c>
+
+00:06:36.230 --> 00:06:36.240 align:start position:0%
+leak code contest so i hope that this
+ 
+
+00:06:36.240 --> 00:06:38.150 align:start position:0%
+leak code contest so i hope that this
+was<00:06:36.400><c> helpful</c><00:06:36.800><c> if</c><00:06:37.039><c> it</c><00:06:37.120><c> was</c><00:06:37.440><c> please</c><00:06:37.759><c> like</c><00:06:38.000><c> and</c>
+
+00:06:38.150 --> 00:06:38.160 align:start position:0%
+was helpful if it was please like and
+ 
+
+00:06:38.160 --> 00:06:40.230 align:start position:0%
+was helpful if it was please like and
+subscribe<00:06:38.639><c> it</c><00:06:38.800><c> supports</c><00:06:39.199><c> the</c><00:06:39.280><c> channel</c><00:06:39.680><c> a</c><00:06:39.919><c> lot</c>
+
+00:06:40.230 --> 00:06:40.240 align:start position:0%
+subscribe it supports the channel a lot
+ 
+
+00:06:40.240 --> 00:06:41.270 align:start position:0%
+subscribe it supports the channel a lot
+and<00:06:40.400><c> i'll</c><00:06:40.639><c> hopefully</c>
+
+00:06:41.270 --> 00:06:41.280 align:start position:0%
+and i'll hopefully
+ 
+
+00:06:41.280 --> 00:06:45.520 align:start position:0%
+and i'll hopefully
+see<00:06:41.440><c> you</c><00:06:41.600><c> pretty</c><00:06:41.919><c> soon</c><00:06:42.479><c> thanks</c><00:06:42.720><c> for</c><00:06:42.880><c> watching</c>
+

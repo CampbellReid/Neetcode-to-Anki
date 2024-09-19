@@ -1,0 +1,214 @@
+let's all eat code 128 longest
+consecutive sequence this is a pretty
+interesting problem and it's actually
+been asked by a lot of companies
+including Google for a coding interview
+so I think it's a good problem to
+understand so we're given an input array
+of numbers right in this case we have
+six numbers and we want to find the
+longest consecutive sequence in this
+case the longest consecutive sequence is
+one two three four right
+it doesn't matter what order of the
+numbers appear in and the input array we
+just want to know the longest
+consecutive sequence that we can make
+from the input array now the most
+obvious way to solve this problem is
+just by sorting right so if you look at
+the sorted array over here we have
+obviously one consecutive sequence of
+length four right one two three four
+they're all consecutive numbers we also
+have another one that's length one just
+100 and we have the last one that's also
+length one just 200 right now this is
+definitely a valid solution we can
+definitely code this up but the time
+complexity is going to be o n log n so
+the question is can we do better so this
+is a leak code hard obviously the
+solution wouldn't be this simple so we
+can do better but how do we get there
+now the first thing to do is try to
+visualize the problem in a way that it
+makes the problem really easy to
+understand so I visualized the problem
+by drawing out an imaginary number line
+right so we can kind of see what the
+sequences actually look like this makes
+it a lot easier to recognize the
+patterns so we know we have one sequence
+that starts at one two three and four we
+have another sequence that comes after
+it with just one number 100 we have the
+last sequence with also only one number
+200 so just by looking at it we can tell
+we have three distinct sequences right
+that's something to recognize now by
+visualizing it we can kind of try to
+approach how would a human solve it well
+the easiest way is just look at each of
+the sequences right and count how long
+they are
+so let's look at the first sequence
+right we have one two three and four so
+this sequence has four numbers in it we
+have the second sequence just 100 so it
+only has one number in it so it's a
+sequence of length 1 the last one is
+also a sequence of length 1 now this is
+so easy to solve when you visualize it
+and try to approach it how a human would
+but can we actually convert this into
+code somehow the answer is yes so the
+most important thing to notice is that
+we have three sequences but how can we
+identify what makes a sequence how can
+we actually start at the beginning of a
+sequence the thing to notice and this is
+really easy when you actually look at
+the picture that each sequence has a
+start value the start value in this case
+the start value for the first range or
+the first sequence has no left neighbour
+the first value 1 has no left neighbour
+right that's really obvious look at the
+second range 100 it doesn't have a left
+neighbour the third range 200 doesn't
+have a left neighbour so we can get the
+start of each sequence by just looking
+at our entire array of numbers right and
+figuring out which numbers don't have a
+left neighbour so meaning if we were if
+we wanted to check if one had a left
+neighbour we would check does our array
+contain the number 0 if we wanted to
+know if 100 have had a left neighbour we
+checked does the array contain 99 the
+easiest way to do this and the most
+efficient way to do it is by taking our
+initial array and converting it into a
+set so now to find the start ranges
+let's start iterating through our array
+so we got we get to the first element
+100 does it have a left neighbour well
+we can check our set it doesn't have 99
+in it so this is the first so this is
+the start of a sequence so let's get the
+length of the sequence we start at 100
+now to get the length of the sequence we
+want to count how many consecutive
+numbers come after 100 so we want to
+know does 101 exist in our sequence
+looking at the number line obviously it
+doesn't
+how can we check this efficiently with
+code well we already have a set that
+takes up this entire array so let's just
+use our set to check if 101 exists since
+it doesn't we can no longer continue
+this sequence so now we go we get to the
+next number for is for the start of a
+sequence let's look at our picture we
+drove for is not the start of a sequence
+and we can check this using our set we
+would check that it does have a left
+neighbor right three so it's not the
+start of a sequence we're not going to
+make a range from it we get to the next
+number 200 is this the start of a
+sequence looking at our picture yes it
+is and we know that 199 does not exist
+let's try to make it as long as we can
+we check this 201 exists no it doesn't
+we can tell that from our picture and we
+would use the set to determine that so
+now we'll this is as long as we can make
+this set so let's get to the next number
+one is one the start of a sequence at
+our picture we can tell one does not
+have a left neighbor so what is the
+start of a sequence now let's check if
+two exists in our set it does so we can
+make this sequence a little bit longer
+now let's check if the next number three
+exists in our set yes it does so let's
+make it even longer now does four exist
+now let's check if five exists in our
+set it doesn't right there is no there
+is no 5 so we can't make this sequence
+any longer so now let's continue through
+the array 3 is to read the start of a
+sequence no it's not it has a left
+neighbor too now let's try 2 this 2 is
+to the start of a sequence it's not
+because it has a left neighbor 1 so we
+went through the entire array we created
+all the sequences we could the first
+sequence is length 1 the second sequence
+is also length 1
+the third sequence is length 4 so this
+is the longest sequence now we took a
+really complicated problem or seemingly
+complicated and we broke it down so
+easily all we had to do is
+iterate through the initial array use a
+set and check if I've nodes had values
+had left neighbors and if they didn't
+then they were the start of sequences we
+made this problem so easy with only
+using one data structure since we only
+had to iterate through the entire array
+and we had to expand each range we know
+that we're only going to visit each
+number at most twice so our solution is
+very efficient and we did have to use an
+additional memory to create a set
+because we wanted to check if neighbors
+existed so we so for the memory
+complexity it is also Big O of N in this
+case n is the size of the input array so
+now let's get to the code so we remember
+we need to create a set from the initial
+array nums
+so it's really easy to do that in Python
+we can just pass their D array into a
+set constructor next we want to keep
+track of what the longest consecutive
+sequence is initially we can say it's 0
+so we want to iterate through every
+number in the number Rea and we want to
+check if it's the start of a sequence
+and we can check that simply by checking
+if n minus 1 does not exist in our num
+set if this number doesn't have a left
+neighbour that means the start of a
+sequence so now we want to get the
+length of the sequence initially we can
+say the length is 0 and we want to keep
+getting each consecutive number and
+checking if it exists in our num set if
+it does then we can keep expanding the
+length so initially I'm going to check n
+plus lengths because that's going to
+check the current number initially
+length is 0 so we're just checking the
+current number as it as the length grows
+we'll check more consecutive numbers at
+the end we could have potentially found
+the longest sequence so we want to
+potentially update our longest by just
+taking the max of the current length we
+just computed as well as what the
+longest originally was
+and it's really that simple so now all
+we have left to do is just return what
+the longest subsequence was that we just
+computed so we did this in such a small
+amount of code now let's just run it to
+see that it works and it works perfectly
+so this is a linear time solution in a
+linear memory complexity solution once
+we visualize the problem the solution

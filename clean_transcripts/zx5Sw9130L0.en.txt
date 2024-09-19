@@ -1,0 +1,369 @@
+let's Ollie code 84 largest rectangle
+and histogram so we're given a bunch of
+bar heights and each bar has a width of
+1 we want to find out what's the largest
+rectangle we can get and return the area
+of it so in this case the largest has an
+area of 10 width of 2 height 5 another
+rectangle we could get as an area 8 this
+one has a width of 4 height of 2 another
+there's also other rectangles we could
+get but these are a few of them so if we
+just draw the first two bars let's see
+if we can notice any patterns from them
+so if you look at them the first one is
+bigger than the second one
+that means for the rectangle of height 2
+we can't extend it any farther once we
+reach this one we can't extend it any
+farther so the biggest rectangle we
+could get with height 2 is just this one
+right here because there's a little hole
+over here so we can't push it any
+farther but for this one we can push
+since the height is 1 we can kind of
+extend it towards the left a little bit
+right and use the left rectangle and
+since we can't extend the height 2 we
+can still extend the height 1 because
+there's no there's nothing coming after
+it that'll stop us just yet let's look
+at the opposite scenario what would
+happen if the 1 came before the 2 in
+this case the 1 comes first so we can
+keep extending it to the right there's
+nothing stopping us right and the 2
+there's nothing coming after it just yet
+they'll stop us so we can actually
+extend this height of 2 a little farther
+because there's no smaller height that
+the third case is if two rectangles were
+even right next to each other in this
+case we can also keep extending it right
+because there's no hole these rectangles
+are the same height there's no smaller
+rectangle stopping
+from being extended farther to the right
+so this tells us that the current
+heights are going to be an increasing
+order because this two cannot be
+extended beyond this point so we can
+only compute the area of height 2 from
+this width and then we have to pop it
+right we can't extend it any farther so
+we have to remove it from being
+considered so now let's look at the case
+where all the heights are in increasing
+order
+notice how since they're all in
+increasing order they can be extended to
+the right continuously right so this one
+over here can continue to be extended to
+the right this too can be extended to
+the right this three can be extended to
+the right and this four can be extended
+to the right none of them can be
+extended towards the left though right
+because the height to the left is
+smaller so they can't be extended to the
+left but what would happen if we
+introduced a smaller height after so if
+we introduced a three over here that
+would mean that this four over here it
+can't be extended any farther because
+there's a three coming after it so all
+we can do is say okay these are the
+boundaries of height four let's compute
+the area which is going to be 4 in this
+case because the width is 1 and then we
+have to remove this from being
+considered right so we pop it what if we
+introduced a 2 instead well the same
+thing will happen we can't extend this
+for any farther right so all we can say
+is these are the boundaries of it right
+it's we started back here and then we
+extended all the way until we got to
+this 2 so compute the area and then pop
+it right let's look at this 3 now we
+can't extend this any farther either
+right because the 2 is less than the 3
+so we can say that these are the
+boundaries of the 3 let's see what the
+area it could have contributed was it's
+6 maybe that's the max area we don't
+know yet but well you know we can't
+extend this three any farther so we have
+to pop it as well what about this 2 over
+here
+well since the new height that we got is
+also 2 we can keep extending it there's
+an there's no reason we can't so we will
+all
+you have to pop these two elements the
+three and the four because we can't
+extend them any farther because now we
+reached a two let's look at one last
+example to drive this point home so now
+we have a one over here right so we
+can't extend the four anymore either so
+we compute the area four and then remove
+it from consideration also this three it
+can't be extended any further so we
+compute the area six and then remove it
+from consideration in this case even the
+two can't be extended any further right
+because the one is too small so we
+compute the area in this case six and
+then remove it from consideration so in
+this case we had a 1 and then we popped
+so notice how we are popping elements
+and we're only popping the most recent
+elements we're not popping an element
+that's in the middle
+we're only popping them from the top to
+the bottom from the most recent elements
+right so that tells us we should use a
+stack for this problem so the stack will
+contain the current heights that are
+that we are considering and we'll pop
+them from the top when we are no longer
+considering them so now let's look at
+the algorithm so I have a stack and in
+the stack I'm not just gonna hold the
+index and I'm not just gonna hold the
+height I'm gonna hold both of them at
+the same time so I'm holding the start
+index and the corresponding height I'm
+also gonna be maintaining what the max
+area is so far so now let's start at the
+beginning of the array we get element
+two so since there's nothing in the
+stack we can't pop anything let's just
+add it so I that's starting at index
+zero we have a height of two next we get
+to index one there's a height of one
+over here right so now we're gonna add
+the height one to our stack but let's
+notice let's look at our stack there's a
+height one that's at the top of the
+stack right now that means that this -
+it can't be extended any farther we
+reached a height
+was smaller than the two so that means
+we're gonna pop the two from the stack
+but before we pop it let's just see
+what's the max area we could have gotten
+with this to height so it started at
+index zero right we can see it started
+at index zero and it and we just reached
+index one so that's the range of the
+width from zero to one so the width is
+one the height is two so that means the
+area is two so so far we'll say our max
+area is two now and now we can pop the
+two from the stack so what's the index
+of this one now
+well we're currently at index one right
+so we can say that that's the index but
+I'm actually gonna do it a little
+differently if you look at this two we
+can actually extend this one all the way
+back because we just popped this - that
+means this one could have been extended
+back by one so instead of saying the
+index of this one of this height one
+starts at index one I'm gonna say it
+starts at index zero because we can
+extend it all the way back to the zero
+over here next we're gonna get at index
+two we have a five right so we'll add
+that to our stack the five is greater
+than the one so there's no restriction
+this one can still be extended so I'll
+just add the five and the corresponding
+index which is two to the stack don't
+need to pop anything next we get to
+index three right there's a height of
+six again this six is greater than this
+than the value at the top of our stack
+which is five so the heights are in
+increasing order so far which is good
+that means we don't have to pop anything
+and the index we reach the six was at
+three
+that means this five can continue to be
+extended that's why we don't have to pop
+the five now we get to index for this is
+where the interesting stuff happens so
+well so this at this index four we have
+a height - the problem is this six now
+can't go any farther we reached a two so
+this six which started at index 3 over
+here ended up stopping at index 4 that
+means its width was only one so we have
+to pop it now but before we pop it let's
+get that
+area that it could have made so from in
+depth so the width is one the height is
+six that means the area it could have
+made is six this is the max area that
+this height of six could have created so
+we'll update our max area six is greater
+than two our max area is now six and
+okay now the top of our stack is five
+but wait
+five is greater than the two as well
+that means this five can't be extended
+any farther so we look at the start
+index of this five it was index two and
+we stopped it all the way index four so
+that means its width was to its height
+is five so the area it created was 10 so
+before we pop it let's just compute the
+max area that it could have created it's
+10 so we update our max area our max
+area is now 10 greater than 6 and we
+remember to pop this 5 from our stack
+now we look at the top of the stack it's
+1 right 2 is greater than 1 so we don't
+have to pop this one because this one
+can continue to be extended so we don't
+have to pop it right and what about the
+start index do we put for this height of
+2 can we put index 4 well yes we can but
+we notice that we just popped two
+elements 6 and 5 that means this 2 can
+actually be extended backwards all the
+way to index 2
+right so instead of saying index 4 is
+the start value of this - I'm gonna say
+index 2 next we reach index 5 the last
+element so this height is 3 let's put it
+on our stack we see 3 is greater than 2
+that means we don't have to pop the 2
+from the stack that means that this 2
+can continue to be extended there's no
+need to pop it and what about the start
+index of this height 3
+well we can't extend it backwards
+anymore so I'm just gonna say the start
+index is 5 if you look we still have the
+elements left in our stack so what do we
+do with them so we have three elements
+that we didn't end up popping from the
+stack what that tells us is that we were
+able to extend them all the way to the
+end of the histogram so we still need to
+compute the areas we could have created
+from these heights
+so let's iterate through them and figure
+that out so let's start at this last one
+index five it started and it had a
+height of three so it started at index
+five and went all the way to the end of
+the histogram so that means the length
+of it was just one the height is three
+so we can compute the area as having an
+now this area of three is not greater
+than our current max of ten so we don't
+update our max let's go to the next
+element in our stack it's indexed to
+height two that means it started at
+index two over here and it went all the
+way to the end of the histogram and it
+had a height of two so that means the
+width was four
+the height was to two times four is
+eight is not greater than our max area
+either the max areas 10 so we don't
+update the max area the last element in
+our stack index zero height one that
+tells us it started all the way back
+here at index zero and it extended all
+the way to the end of the histogram so
+from zero to the end is a width of six
+the height was one so that means the
+area it created was six this six is not
+greater than our current max area of ten
+either so that means the max area at the
+end is ten so that's the result 10 so
+with this algorithm we only had to
+iterate through the histogram once we
+had to push elements onto our stack but
+we had to only push each element once
+and pop it once so that means the
+we had to use a stack and the stack
+could potentially be up to the entire
+size of the of the input array so we did
+need extra memory the memory is also
+going to be Big O of n ok now let's
+write the code so we know we have to
+keep track of what the max area
+currently is so I'm going to initially
+say the max area is 0 we also know we
+have to have a stack in Python we can
+use just a list to do that and in my
+stack I'm going to hold a pair of
+elements the pair of elements is gonna
+be an index and the height so now let's
+iterate through the index and height of
+this Heights array before I add it to
+the stack I'm gonna say the start index
+of this current height that we're at is
+just I because we don't know if we can
+extend it backwards just yet so let's
+now check if our stack is not empty and
+if the stack if the top value in the
+stack and the top values height is
+greater than the height that we just
+reached if that's the case that means we
+have to pop our stack right we have to
+pop the height and we have to check the
+max rectangle we can create from that
+height and we have to extend the current
+height that we're at backwards so now we
+have to pop from the stack because this
+height is too great right so we're
+popping but we have to actually retrieve
+the values who are popping so we're
+popping in index and we're popping the
+height and we have to check if this
+height that we're popping could have
+we're gonna multiply the height by the
+width we can compute the width pretty
+easily right now we're at the current
+index we're at is I and the index that
+this height started out was what we just
+popped index so I minus index is going
+to be the width and since we know that
+this height was greater than the current
+height that were visiting that means we
+can extend our start index backwards to
+the index that we just popped now when
+we actually add our element to the stack
+or add our pair to the stack we're gonna
+say we're gonna add the pair start index
+and the height that we're visiting right
+now we're not just adding I we're adding
+the start index that we pushed all the
+way backwards and now we remember there
+still might be some entries in our stack
+left so these were able to be extended
+all the way to the end of the histogram
+so we still have to compute their
+heights and we can do that pretty easily
+so we potentially update our max area
+the height is just what's stored in the
+stack so height multiplied by the width
+we can compute the width pretty easily
+we know that these were extended all the
+way to the end of the histogram so we
+can get the length of the histogram
+subtracted by the start value I that was
+stored in the stack and now all we have
+to do is return our max area and it
+works perfectly I think this is the most
+intuitive solution at least from my
+perspective for this problem storing I
+think the start index and the height in

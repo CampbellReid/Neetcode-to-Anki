@@ -1,0 +1,342 @@
+hey everyone welcome back and let's
+write some more neat code so today we're
+going to be solving
+leak code 11 container with most water
+so we're given an array of heights so
+this is a height 1 this is i
+8 6 so on and so on and
+using these heights we want to see
+what's the biggest
+area we can form with a container that
+has a
+left height and a right height so in
+this example
+you can see that if we take this one
+with a height of eight
+and this one with a height of seven we
+can create an
+area let's see how wide this is at one
+two three
+one two three seven wide and seven tall
+so that's seven by seven
+and the area is going to be 49 and they
+tell us that much
+in the explanation so since we're given
+a list of heights and we want to
+maximize the area
+we can potentially just take every
+single combination right so check every
+left pointer
+and every right pointer so my first
+thought with this
+is what's the brute force way what's the
+easiest way to solve this problem
+well let's just try every single
+combination of left and right let's just
+try
+every single possible container we could
+make
+and see if it works so let's say this is
+our left
+and this is our right what's the most
+what's the max area we can make with
+this well
+let's fill it up to 1 and if we keep
+filling
+it up with water notice how it's going
+to spill to the left right
+so this left pointer is our bottleneck
+right
+we have a height of 1 and we have a
+height of seven
+the minimum one is one so you know
+we can't fill it up any higher the width
+of this is also
+one so we get a we get an area of one by
+one
+with water and of course if this one
+remains our left pointer we can try this
+one as our right pointer
+and in this case the width is going to
+be two
+but the height is still going to be one
+our
+remember our left height is only one so
+our bottleneck is one so we get an area
+of two by one
+so i'm starting to notice a bit of a
+pattern but let's just keep continuing
+with the brute force
+so next we can try this area
+that's going to be three next we can try
+this area that's going to be 4.
+next we try this one that's going to be
+5 and we can just keep going
+the height is going to stay 1 because
+our left pointer has a height
+of 1. next we move our left pointer
+here and again we're just going to
+continue with the brute force solution
+eventually we're going to have our right
+pointer set here and then we're going to
+find
+our result right it's going to be 7 by 7
+that's the biggest area we can do and
+since we're checking every single
+combination we know we're eventually
+going to find
+the correct solution the only downside
+is that this algorithm
+is big o of n squared now is that good
+enough
+i guess it depends on your interviewer
+and let me just quickly code up the
+solution
+for that so this is the brute force of
+n solution let's first initialize our
+result
+which is our area i'm going to
+initialize it to 0 because you can't
+really have a negative area
+at least not in this context and we want
+to go through every single combination
+so
+i'm going to have our left pointer go
+through
+every single indices of height
+so i'm going to get the length of height
+which is our
+array so left is going to
+be at every single position at least
+once now
+right pointer we can just have this one
+be always at least one position ahead of
+left so left plus one
+because it all our right pointer of
+course always needs to be
+to the right of our left pointer right
+and for each of these
+combinations we want to compute the area
+so let's do that
+area is going to be equal let me just
+remember
+how to i don't know about you guys but
+sometimes even i forget how to compute
+the area of a rectangle
+so we're going to do width times height
+so the width
+is going to be right minus left
+multiplied by the height now how do we
+find the height so how do we find the
+height
+remember we're focusing on what the
+bottleneck is
+and by bottleneck in this case we mean
+the minimum height because
+no matter how tall our right no matter
+how tall one of the heights is right
+we could extend this to a million but
+look how small this one is it's just too
+small the water is going to spill out
+so we care about the minimum height of
+the left and right
+pointers so let's get that minimum so
+minimum
+of height of left
+and minimum of height of right
+so now that we've computed the area
+remember we want the max area so we can
+set our result
+equal to the max of
+itself and of the area that we just
+computed
+so every time we compute an area if it's
+the max we're going to update our result
+and now all we need to do is return that
+result that we computed
+let's see if it works unfortunately it
+doesn't work we got time limit exceeded
+so
+now we need to figure out how we can
+make this a little bit better
+can we get a linear time solution so now
+let's take a look at the
+linear time solution the one that will
+actually work in late code
+so remember how we said that the minimum
+height
+is our limiting factor we really don't
+want
+small heights so let's see if we can try
+a two pointer technique now i'm gonna
+initialize
+the left pointer all the way at the left
+and i'm going to initialize the right
+pointer all the way at the right
+why because we want to maximize the area
+so
+why would i initialize them like
+because we want the width to be as big
+as possible because if this left height
+is super tall and this right height is
+super tall
+then we've instantly found our result
+but of course in this case that doesn't
+work we get an
+area of 1 by 8 i think so that's
+obviously
+not the result so what do we do how do
+so the first area that we computed was
+an 8 which is
+our max because our initial max because
+this is basically the maximum so far
+so now how are we going to update our
+pointer well
+we're going to look at what's the
+minimum height this one has a height of
+one
+this one has a height of seven so why
+would i shift my right pointer when it
+has a height of
+seven when i could instead shift my left
+pointer
+which has a height of one and
+potentially increase it
+so now left is over here and we have a
+height of 8
+and lucky for us we've basically found
+our solution but i'm just going to keep
+going with the algorithm
+just to kind of show you how it works so
+now we have an
+area of seven by seven which we know is
+49
+so our max area gets updated our max is
+no longer eight it's 49
+which we know is the correct solution
+next i'm gonna take the minimum
+of eight and seven
+is smaller so we're going to shift our
+right pointer to the left
+now our right height is looks like three
+so the area that we're going to compute
+is going to be 3
+by 6
+which is 18 but that's too small that's
+not bigger than our maximum
+so we don't need to update our max area
+now our minimum
+is 3 so we're going to shift
+now we have an 8 by 5 rectangle which is
+40 but that's still not greater than 49
+and
+and now we get to a nice little edge
+case where both of the values
+are equal in this case it doesn't
+actually matter which pointer that we
+shift
+but if you wanted to you could shift
+the one that has a larger height coming
+like
+for example like this height is at six
+whereas this height is at four
+we could choose to shift this one just
+because we know that a larger height
+exists over here
+but it actually doesn't matter you could
+so now our left is six so we get
+six by four which is 24 too small
+we don't care about it let's just keep
+going
+so now our minimum height is six let's
+now we get a two by three rectangle
+which is too small
+let's shift our left pointer one more
+time
+hey this time we got a five by two
+that's a little better than before but
+still not better than our max and so
+this is basically the last
+rectangle or water container that we can
+form
+it's going to be four by one and now if
+we try to shift our left pointer
+we get to the terminating condition we
+get to the condition that's going to
+end our code so now that we shift our
+left pointer
+here we're going to get our left here
+left and right are at the same
+position so let's get rid of this let's
+get a solution that can actually work
+on leak code and maybe you might need
+this solution in your interview if the
+brute force is not good enough
+so once again i'm going to set our
+result equal to zero
+i'm going to do what i did in the
+explanation our left pointer is going to
+be initialized
+all the way to the
+left which is zero and our right pointer
+is going to be initialized all the way
+to the right
+so these values are zero and length
+of heights minus one
+and remember our condition for the loop
+is while
+left is less than right because if
+they're equal that's no
+good and if they if left passes right
+that's no good either
+so let's compute the area again i'm just
+going to copy and paste it from my above
+solution because
+that's what the brute force solution is
+for right you can learn
+the basic problem the basic parts of the
+problem before doing
+the clever stuff i can also just copy
+and paste the part where we update our
+result as well
+now the part that we have to change
+though is
+when we're updating our left and right
+pointers we're doing it
+based on a certain condition if
+the height at position left is less than
+the height at position
+right we're going to shift our left
+pointer to the right
+we're going to increment our left
+pointer because we want to maximize
+both of these heights now the other
+condition
+is the opposite case so if height of
+left
+then we would want to shift our right
+pointer and we want to decrement it
+and the last case is if they're equal
+right that's our else condition
+and remember how i said we could do
+either one if
+uh if they're both equal right we could
+increment our left pointer or we could
+decrement our
+right pointer uh notice how both of
+these are doing the same thing
+so i'm just going to condense this i'm
+just going to get rid of
+now all we need to do is return the
+maximum that we computed
+let's see if it actually works this time
+okay of course i had
+a typo so i had a s at the end of
+heights
+let's run it one more time and this time
+it'll work so
+this is the actual linear time solution
+the big o of n solution
+as always thank you so much for watching
+like and subscribe if this was helpful
+you

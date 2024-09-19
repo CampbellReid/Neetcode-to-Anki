@@ -1,0 +1,418 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+let's solve the problem
+last stone way so this is an easy-ish
+problem i would say
+but we're also going to be solving the
+second version of this problem last
+stone weight 2
+probably tomorrow or the next video that
+i upload
+so the context is that we're given a
+collection of stones
+each stone has a positive integer weight
+so greater than zero weight
+and each turn we can choose
+the two heaviest stones and then smash
+them together now what happens when we
+take the two heaviest stones
+and mash them together well in one case
+if they are the exact same weight both
+of the stones are going to be destroyed
+if they are not the exact same weight
+then
+the smaller stone is going to be totally
+destroyed
+but the larger stone is going to
+basically be
+the difference between the weights so
+for example let's say we had two stones
+five
+and four this is the weight of the
+stones they're not equal so
+when we smash them together the smaller
+stone four is going to be destroyed
+and the larger stone is going to be
+basically
+a five minus four that's what its
+remaining weight is going to be so
+you know we take the we start with two
+stones and then we get reduced to a
+single stone the smaller stone gets
+destroyed
+the larger stone is going to be five
+minus four that's a one
+so that's kind of what happens when we
+smash two stones together
+at the end there is going to be at most
+one stone left and it could technically
+even be
+zero stones if there aren't any left so
+what do we want to return we want to
+return the weight of whatever stone
+happens to be left
+over if we don't have any stones left
+over
+then we can just return a 0 as the
+default value
+so i will say that this problem is
+somewhat straightforward let's take a
+look at one of the
+examples and the reason this problem is
+straightforward is
+they gave us basically all the
+instructions and the information that we
+need and all we really have to do is
+kind of
+simulate these instructions we don't
+actually have to find a clever way to
+solve this problem we just have to
+simulate what they told us that's pretty
+much the best we can do
+what did they tell us to do they told us
+to always take the two
+heaviest stones and then smash them
+together how are we gonna
+get suppose we had a bunch of stones
+like this
+how are we gonna get the two heaviest
+stones
+of course we could sort the array that's
+one solution
+but even if we did sort the array you'll
+find that
+it's a valid solution but you know when
+we're taking the two heaviest
+seven and one we're smashing them
+together and then we're gonna basically
+be introducing a new stone right so
+eight minus seven is going to be the new
+stone one and then we're gonna
+to maintain the sorted property of this
+list we're gonna have to insert this in
+order which
+might be a little bit annoying but i
+think it is a valid solution but another
+solution
+is going to be using a heap not a min
+heap in this case but we're actually
+going to be using a max heap
+because we're going to be taking the max
+stones each iteration in order to take
+this
+input array and transform it into a max
+heap is actually an
+o of n time operation uh with the
+heapify function
+but every time that we want to actually
+get the maximum from here
+that's going to be a log n operation and
+how many times potentially are we
+actually going to need to get the
+maximum
+from here n times so n multiplied by log
+n
+that's what's going to be the overall
+time complexity
+of this solution now how is it actually
+going to work
+well basically as i mentioned we're
+gonna simulate so
+we're gonna assume we have a max heap
+here we're gonna get the largest stone
+it's gonna be an eight we're gonna get
+the second largest stone it's gonna be
+a seven we're gonna smash them together
+we have eight
+and seven smashing them together seven
+is smaller so this is going to be
+destroyed
+eight is gonna be transformed into a one
+now so we can let's just introduce
+another one
+to this list and we're gonna continue
+the simulation right we're gonna get the
+now two biggest stones it's gonna be a
+four
+and a two what's going to happen with
+four and
+two well two is smaller so that's gonna
+be destroyed
+four is going to basically be four minus
+two which is gonna be two
+so we can insert that into our max heap
+so now we're gonna insert a two
+now we are left with it's a little bit
+messy but we're left with
+a two a one and a couple ones
+so when we smash these two together
+we're actually gonna be left with a
+single one i won't
+draw that because i think at this point
+you probably get the idea then we're
+left with three ones
+what's going to happen with these three
+ones well two of them are going to be
+smashed together
+and then we're left with a single one
+left and we have nothing left
+we have no other stones to smash this
+one with
+so when everything is said and done we
+will be remaining
+with a single stone so we can go ahead
+and return uh
+one as the return value and you know it
+could have been a little bit different
+it could have been
+something like okay we're left with two
+ones then they get smashed together and
+then we have
+nothing left so then if we had nothing
+left we could return a zero but that's
+not the case in
+in this example we do end up returning a
+one as you can see
+down here this problem is pretty
+straightforward if you have a decent
+understanding of
+heaps and their time complexities in
+this case the only tricky part for us in
+the code
+is going to be python does not actually
+have max heaps
+so we're going to have to use a min heap
+to basically simulate a max heap and you
+can do that
+by basically you know assume we had some
+kind of heap we would want eight to be
+the maximum value and then suppose we
+had some other values three and five
+but this is how a mac a real max heap
+would work
+but if we are actually implementing this
+with a min
+heap it's going to be the opposite of
+this but we still want 8 to be
+the the value that we get from the root
+so what we're going to do is actually
+have negatives
+we're basically gonna multiply every
+value in the heap
+by negative one so that the minimum
+which is
+eight negative eight in this case is
+going to be popped when we want the
+maximum and then when we pop this we're
+gonna get negative eight but we can just
+convert it we can get the absolute value
+of this
+and then just convert it back into an
+eight that's kind of how
+unfortunately we're gonna have to do
+this in python in other languages i
+think you can just get a regular max
+heap
+but i think that's all the information
+we need now we can hop on into the code
+but before i do let me just give you a
+very quick word from our sponsor for
+today
+interviewing dot io if you want to get
+hired
+at top tech companies like google
+facebook and
+amazon then you need to check out
+interviewing dot io
+you'll practice realistic coding
+interviews
+with senior engineers who will give you
+detailed feedback
+on exactly what you need to work on they
+have the
+largest network of vetted and
+experienced
+tech interviewers in the world so you
+can book an interview
+with as little as 24 hours notice
+and the best part you don't even have to
+pay
+until you get hired please check out the
+link in the description below
+for more details okay so now let's get
+into the code like i said we're going to
+be writing the simulation
+for this problem and so the first thing
+we want to do is put all of these stones
+into a max heap
+now python does not have max heap so
+we're gonna put these in a min heap but
+we're gonna multiply every one of these
+values by negative one we're gonna make
+them negative
+so in python what i'm doing right now is
+basically just going through every
+single stone
+and putting it into a list uh and
+multiplying each zone by negative one
+i'm putting the negative of that stone
+in
+this list and now i want to turn this
+list into a
+heap so what i'm going to do is heap q
+dot heapify
+this stones this is a linear time
+operation
+so now we're good to go now we can start
+running the simulation
+and remember we want to continue this
+while the number of stones is greater
+than one if we have one stone or if we
+have zero stones
+that's when we can stop the simulation
+but until
+then we are going to take the two
+largest stones
+how can we get them well we're gonna pop
+from
+the min heap we can do that like this
+heap q dot heap
+pop from the max heap not min heap
+so pop from stones and we can that'll
+give us the largest
+and this will give us the second largest
+uh stone
+and remember if the stones are equal
+that's basically we wouldn't have to do
+anything right we just remove
+these two stones from the heap and if
+they are equal
+weights then we don't really have to do
+anything we're not going to add them
+back to the heap we don't have to we
+don't have to do anything
+but in the other case if the second
+stone that we popped was less than
+the first stone that we popped and why
+am i saying second stone well because
+the second stone is going to have a
+smaller weight than the first stone or
+equal weight right because it because
+we're popping the first one that one is
+supposed to be the heaviest stone
+but we you know we're doing it this way
+but
+remember we made all the weights
+negative so
+what we actually have to do is the
+opposite of this case if second
+is greater than first suppose we popped
+you know this is kind of an example
+suppose the first stone had a weight of
+eight in that case it would have a value
+of negative eight
+and the second one had a weight of seven
+uh
+and the value would be negative seven in
+that case then of course
+negative seven is a greater value than
+the first stone right
+so that means basically this second is
+the smaller stone and we have to destroy
+second and how are we gonna do that well
+basically we already popped it from the
+heap so we don't actually have to
+destroy it all we have to do is take
+the difference between these two and
+then add that back into the heap now how
+are we going to take the difference
+first of all a heap q dot heap push is
+how we can actually
+add to the heap so we're going to add to
+stones whatever that value is how are we
+going to get the value
+well obviously the value in this case
+would be a 1 right if we took it 8
+subtracted 7 from it we'd be left with a
+1. how can we do that computation
+well basically you can just take second
+subtracted by first
+if that kind of confuses you if these
+negatives and kind of that math confuses
+you
+you can convert these into absolute
+values if you want so you know you can
+take the first
+and second and convert them into the
+absolute value then the math will be
+straightforward
+i don't really want to waste you know
+too much time writing that code out and
+this kind of does make sense to me so
+i'm just going to keep it
+short and concise i'm just going to take
+second subtracted by first
+which will give us the which will give
+us the weight that we want to add right
+we want to add
+a stone of weight one but remember in
+our heap we are keeping track of
+negative values
+so i would have to i would have to
+multiply this by negative one uh
+the easier way to do this is just to
+take first subtracted
+by second which will give us the exact
+same thing it'll give us the negative
+that value that we're looking for it'll
+take the difference between these and
+that difference will be negative right
+we'll have
+first which is negative eight plus seven
+which is going to be a negative one
+which is you know what we want in this
+case so i hope that makes sense it's a
+little bit confusing
+but basically this is our case and that
+is the entire simulation code once we're
+done with that
+we can go ahead and return whatever the
+value of the stone happens to be the
+remaining stone so stone at index
+zero but don't forget we actually do
+have negative values right so when we
+return
+the value of that stone we want to
+return the positive value so we're going
+to take the absolute value
+of this stone and also don't forget
+one last edge case what if stones was
+empty
+right what if we didn't have any stone
+left in here
+well one way to handle that edge case is
+just to take
+before we return just say stones dot
+append a
+zero so in that case if there's already
+a stone in
+this list we'll we'll end up returning
+that stone because it'll be at index
+zero
+if there's not a stone then we'll add
+this
+zero stone and then we'll end up
+returning that zero
+instead so this basically works out in
+all cases which is what i'm getting at
+so i hope
+this was helpful as you can see this
+solution does run and it is pretty
+efficient sometimes it's more efficient
+than other times so i hope that this was
+helpful if it was
+please like and subscribe it supports
+the channel a lot
+and i'll hopefully see you pretty soon
+when we solve the second version of this
+problem last stone weight 2 which is a

@@ -1,0 +1,4488 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.750 align:start position:0%
+ 
+hey<00:00:00.160><c> everyone</c><00:00:00.719><c> welcome</c><00:00:01.120><c> back</c><00:00:01.439><c> and</c><00:00:01.520><c> let's</c>
+
+00:00:01.750 --> 00:00:01.760 align:start position:0%
+hey everyone welcome back and let's
+ 
+
+00:00:01.760 --> 00:00:03.750 align:start position:0%
+hey everyone welcome back and let's
+write<00:00:02.000><c> some</c><00:00:02.159><c> more</c><00:00:02.399><c> neat</c><00:00:02.639><c> code</c><00:00:02.960><c> today</c><00:00:03.199><c> so</c><00:00:03.439><c> today</c>
+
+00:00:03.750 --> 00:00:03.760 align:start position:0%
+write some more neat code today so today
+ 
+
+00:00:03.760 --> 00:00:04.470 align:start position:0%
+write some more neat code today so today
+let's<00:00:04.000><c> solve</c>
+
+00:00:04.470 --> 00:00:04.480 align:start position:0%
+let's solve
+ 
+
+00:00:04.480 --> 00:00:06.869 align:start position:0%
+let's solve
+n<00:00:04.880><c> queen</c><00:00:05.279><c> so</c><00:00:05.440><c> this</c><00:00:05.680><c> is</c><00:00:05.759><c> a</c><00:00:05.920><c> pretty</c><00:00:06.399><c> famous</c>
+
+00:00:06.869 --> 00:00:06.879 align:start position:0%
+n queen so this is a pretty famous
+ 
+
+00:00:06.879 --> 00:00:08.710 align:start position:0%
+n queen so this is a pretty famous
+backtracking<00:00:07.600><c> problem</c><00:00:08.000><c> and</c><00:00:08.160><c> we're</c><00:00:08.320><c> finally</c>
+
+00:00:08.710 --> 00:00:08.720 align:start position:0%
+backtracking problem and we're finally
+ 
+
+00:00:08.720 --> 00:00:10.470 align:start position:0%
+backtracking problem and we're finally
+going<00:00:08.800><c> to</c><00:00:08.880><c> be</c><00:00:09.120><c> solving</c><00:00:09.519><c> it</c><00:00:09.599><c> today</c>
+
+00:00:10.470 --> 00:00:10.480 align:start position:0%
+going to be solving it today
+ 
+
+00:00:10.480 --> 00:00:12.470 align:start position:0%
+going to be solving it today
+and<00:00:10.639><c> this</c><00:00:10.880><c> is</c><00:00:11.040><c> marked</c><00:00:11.360><c> as</c><00:00:11.519><c> a</c><00:00:11.599><c> hard</c><00:00:12.000><c> problem</c><00:00:12.320><c> but</c>
+
+00:00:12.470 --> 00:00:12.480 align:start position:0%
+and this is marked as a hard problem but
+ 
+
+00:00:12.480 --> 00:00:14.709 align:start position:0%
+and this is marked as a hard problem but
+i<00:00:12.639><c> don't</c><00:00:12.799><c> think</c><00:00:13.040><c> it's</c><00:00:13.360><c> super</c><00:00:13.840><c> hard</c><00:00:14.160><c> to</c><00:00:14.320><c> come</c><00:00:14.559><c> up</c>
+
+00:00:14.709 --> 00:00:14.719 align:start position:0%
+i don't think it's super hard to come up
+ 
+
+00:00:14.719 --> 00:00:16.390 align:start position:0%
+i don't think it's super hard to come up
+with<00:00:14.880><c> what</c><00:00:15.040><c> the</c><00:00:15.200><c> solution</c><00:00:15.759><c> would</c><00:00:15.920><c> be</c><00:00:16.080><c> at</c><00:00:16.240><c> least</c>
+
+00:00:16.390 --> 00:00:16.400 align:start position:0%
+with what the solution would be at least
+ 
+
+00:00:16.400 --> 00:00:18.550 align:start position:0%
+with what the solution would be at least
+to<00:00:16.560><c> come</c><00:00:16.800><c> up</c><00:00:16.880><c> with</c><00:00:17.199><c> how</c><00:00:17.440><c> to</c><00:00:17.680><c> solve</c><00:00:18.000><c> the</c><00:00:18.160><c> problem</c>
+
+00:00:18.550 --> 00:00:18.560 align:start position:0%
+to come up with how to solve the problem
+ 
+
+00:00:18.560 --> 00:00:20.310 align:start position:0%
+to come up with how to solve the problem
+i<00:00:18.640><c> think</c><00:00:18.800><c> the</c><00:00:19.039><c> hard</c><00:00:19.359><c> part</c><00:00:19.680><c> about</c><00:00:19.920><c> this</c><00:00:20.160><c> is</c>
+
+00:00:20.310 --> 00:00:20.320 align:start position:0%
+i think the hard part about this is
+ 
+
+00:00:20.320 --> 00:00:20.790 align:start position:0%
+i think the hard part about this is
+actually
+
+00:00:20.790 --> 00:00:20.800 align:start position:0%
+actually
+ 
+
+00:00:20.800 --> 00:00:23.670 align:start position:0%
+actually
+implementing<00:00:21.359><c> the</c><00:00:21.680><c> code</c><00:00:22.480><c> of</c><00:00:22.640><c> this</c><00:00:22.960><c> problem</c>
+
+00:00:23.670 --> 00:00:23.680 align:start position:0%
+implementing the code of this problem
+ 
+
+00:00:23.680 --> 00:00:25.589 align:start position:0%
+implementing the code of this problem
+because<00:00:24.000><c> like</c><00:00:24.160><c> i</c><00:00:24.240><c> said</c><00:00:24.480><c> it's</c><00:00:24.720><c> backtracking</c><00:00:25.439><c> so</c>
+
+00:00:25.589 --> 00:00:25.599 align:start position:0%
+because like i said it's backtracking so
+ 
+
+00:00:25.599 --> 00:00:27.029 align:start position:0%
+because like i said it's backtracking so
+basically<00:00:26.000><c> we're</c><00:00:26.160><c> just</c><00:00:26.320><c> going</c><00:00:26.400><c> to</c><00:00:26.480><c> be</c><00:00:26.640><c> doing</c><00:00:26.880><c> a</c>
+
+00:00:27.029 --> 00:00:27.039 align:start position:0%
+basically we're just going to be doing a
+ 
+
+00:00:27.039 --> 00:00:29.269 align:start position:0%
+basically we're just going to be doing a
+brute<00:00:27.439><c> force</c><00:00:27.840><c> approach</c><00:00:28.320><c> so</c><00:00:28.560><c> the</c><00:00:28.880><c> problem</c>
+
+00:00:29.269 --> 00:00:29.279 align:start position:0%
+brute force approach so the problem
+ 
+
+00:00:29.279 --> 00:00:30.390 align:start position:0%
+brute force approach so the problem
+statement<00:00:29.920><c> is</c>
+
+00:00:30.390 --> 00:00:30.400 align:start position:0%
+statement is
+ 
+
+00:00:30.400 --> 00:00:33.430 align:start position:0%
+statement is
+we're<00:00:30.560><c> given</c><00:00:31.199><c> n</c><00:00:31.679><c> queens</c><00:00:32.320><c> we're</c><00:00:32.480><c> given</c><00:00:32.800><c> a</c><00:00:33.040><c> board</c>
+
+00:00:33.430 --> 00:00:33.440 align:start position:0%
+we're given n queens we're given a board
+ 
+
+00:00:33.440 --> 00:00:34.229 align:start position:0%
+we're given n queens we're given a board
+of<00:00:33.680><c> size</c>
+
+00:00:34.229 --> 00:00:34.239 align:start position:0%
+of size
+ 
+
+00:00:34.239 --> 00:00:36.389 align:start position:0%
+of size
+n<00:00:34.399><c> by</c><00:00:34.719><c> n</c><00:00:35.040><c> a</c><00:00:35.200><c> chess</c><00:00:35.600><c> board</c><00:00:35.920><c> right</c><00:00:36.079><c> so</c><00:00:36.320><c> the</c>
+
+00:00:36.389 --> 00:00:36.399 align:start position:0%
+n by n a chess board right so the
+ 
+
+00:00:36.399 --> 00:00:37.750 align:start position:0%
+n by n a chess board right so the
+dimensions<00:00:37.040><c> are</c><00:00:37.200><c> n</c><00:00:37.440><c> by</c>
+
+00:00:37.750 --> 00:00:37.760 align:start position:0%
+dimensions are n by
+ 
+
+00:00:37.760 --> 00:00:40.790 align:start position:0%
+dimensions are n by
+n<00:00:38.239><c> and</c><00:00:38.399><c> we're</c><00:00:38.640><c> also</c><00:00:39.040><c> given</c><00:00:39.760><c> n</c><00:00:40.239><c> different</c>
+
+00:00:40.790 --> 00:00:40.800 align:start position:0%
+n and we're also given n different
+ 
+
+00:00:40.800 --> 00:00:43.350 align:start position:0%
+n and we're also given n different
+queens<00:00:41.200><c> that</c><00:00:41.360><c> we</c><00:00:41.520><c> have</c><00:00:41.600><c> to</c><00:00:41.840><c> place</c><00:00:42.640><c> somewhere</c>
+
+00:00:43.350 --> 00:00:43.360 align:start position:0%
+queens that we have to place somewhere
+ 
+
+00:00:43.360 --> 00:00:44.069 align:start position:0%
+queens that we have to place somewhere
+on<00:00:43.600><c> this</c>
+
+00:00:44.069 --> 00:00:44.079 align:start position:0%
+on this
+ 
+
+00:00:44.079 --> 00:00:47.110 align:start position:0%
+on this
+board<00:00:44.800><c> such</c><00:00:45.200><c> that</c><00:00:45.920><c> no</c><00:00:46.559><c> two</c>
+
+00:00:47.110 --> 00:00:47.120 align:start position:0%
+board such that no two
+ 
+
+00:00:47.120 --> 00:00:50.069 align:start position:0%
+board such that no two
+queens<00:00:48.000><c> ever</c><00:00:48.480><c> attack</c><00:00:49.039><c> each</c><00:00:49.360><c> other</c><00:00:49.760><c> so</c><00:00:49.920><c> you</c>
+
+00:00:50.069 --> 00:00:50.079 align:start position:0%
+queens ever attack each other so you
+ 
+
+00:00:50.079 --> 00:00:52.069 align:start position:0%
+queens ever attack each other so you
+have<00:00:50.160><c> to</c><00:00:50.320><c> know</c><00:00:50.480><c> a</c><00:00:50.559><c> little</c><00:00:50.800><c> bit</c><00:00:50.960><c> about</c><00:00:51.360><c> chess</c>
+
+00:00:52.069 --> 00:00:52.079 align:start position:0%
+have to know a little bit about chess
+ 
+
+00:00:52.079 --> 00:00:55.510 align:start position:0%
+have to know a little bit about chess
+so<00:00:52.640><c> the</c><00:00:52.960><c> way</c><00:00:53.280><c> a</c><00:00:53.520><c> queen</c><00:00:54.000><c> can</c><00:00:54.239><c> move</c><00:00:54.719><c> is</c><00:00:54.960><c> that</c>
+
+00:00:55.510 --> 00:00:55.520 align:start position:0%
+so the way a queen can move is that
+ 
+
+00:00:55.520 --> 00:00:57.590 align:start position:0%
+so the way a queen can move is that
+a<00:00:55.680><c> queen</c><00:00:56.160><c> is</c><00:00:56.320><c> allowed</c><00:00:56.640><c> to</c><00:00:56.800><c> move</c><00:00:57.039><c> in</c><00:00:57.280><c> any</c>
+
+00:00:57.590 --> 00:00:57.600 align:start position:0%
+a queen is allowed to move in any
+ 
+
+00:00:57.600 --> 00:00:59.990 align:start position:0%
+a queen is allowed to move in any
+direction<00:00:58.399><c> horizontally</c><00:00:59.280><c> so</c><00:00:59.440><c> it</c><00:00:59.520><c> can</c><00:00:59.680><c> move</c><00:00:59.920><c> to</c>
+
+00:00:59.990 --> 00:01:00.000 align:start position:0%
+direction horizontally so it can move to
+ 
+
+00:01:00.000 --> 00:01:00.709 align:start position:0%
+direction horizontally so it can move to
+the<00:01:00.320><c> left</c>
+
+00:01:00.709 --> 00:01:00.719 align:start position:0%
+the left
+ 
+
+00:01:00.719 --> 00:01:03.910 align:start position:0%
+the left
+or<00:01:01.120><c> to</c><00:01:01.280><c> the</c><00:01:01.440><c> right</c><00:01:01.920><c> it</c><00:01:02.079><c> can</c><00:01:02.239><c> move</c><00:01:02.800><c> up</c><00:01:03.520><c> or</c>
+
+00:01:03.910 --> 00:01:03.920 align:start position:0%
+or to the right it can move up or
+ 
+
+00:01:03.920 --> 00:01:05.830 align:start position:0%
+or to the right it can move up or
+down<00:01:04.479><c> so</c><00:01:04.720><c> it</c><00:01:04.799><c> can</c><00:01:04.960><c> move</c><00:01:05.199><c> in</c><00:01:05.360><c> all</c><00:01:05.600><c> four</c>
+
+00:01:05.830 --> 00:01:05.840 align:start position:0%
+down so it can move in all four
+ 
+
+00:01:05.840 --> 00:01:08.149 align:start position:0%
+down so it can move in all four
+directions<00:01:06.400><c> it</c><00:01:06.479><c> can</c><00:01:06.880><c> also</c><00:01:07.439><c> move</c>
+
+00:01:08.149 --> 00:01:08.159 align:start position:0%
+directions it can also move
+ 
+
+00:01:08.159 --> 00:01:11.190 align:start position:0%
+directions it can also move
+diagonally<00:01:09.200><c> so</c><00:01:09.920><c> you</c><00:01:10.080><c> know</c><00:01:10.320><c> this</c><00:01:10.640><c> diagonal</c>
+
+00:01:11.190 --> 00:01:11.200 align:start position:0%
+diagonally so you know this diagonal
+ 
+
+00:01:11.200 --> 00:01:11.990 align:start position:0%
+diagonally so you know this diagonal
+which<00:01:11.439><c> i</c><00:01:11.600><c> call</c>
+
+00:01:11.990 --> 00:01:12.000 align:start position:0%
+which i call
+ 
+
+00:01:12.000 --> 00:01:13.990 align:start position:0%
+which i call
+the<00:01:12.400><c> positive</c><00:01:12.880><c> diagonal</c><00:01:13.439><c> because</c><00:01:13.840><c> you</c><00:01:13.920><c> can</c>
+
+00:01:13.990 --> 00:01:14.000 align:start position:0%
+the positive diagonal because you can
+ 
+
+00:01:14.000 --> 00:01:15.749 align:start position:0%
+the positive diagonal because you can
+see<00:01:14.159><c> it's</c><00:01:14.320><c> kind</c><00:01:14.479><c> of</c><00:01:14.560><c> a</c><00:01:14.799><c> positive</c>
+
+00:01:15.749 --> 00:01:15.759 align:start position:0%
+see it's kind of a positive
+ 
+
+00:01:15.759 --> 00:01:19.270 align:start position:0%
+see it's kind of a positive
+slope<00:01:16.320><c> right</c><00:01:16.799><c> top</c><00:01:17.119><c> right</c><00:01:17.680><c> also</c><00:01:18.400><c> it</c><00:01:18.560><c> can</c><00:01:18.720><c> move</c>
+
+00:01:19.270 --> 00:01:19.280 align:start position:0%
+slope right top right also it can move
+ 
+
+00:01:19.280 --> 00:01:22.070 align:start position:0%
+slope right top right also it can move
+in<00:01:19.520><c> the</c><00:01:20.000><c> negative</c><00:01:20.560><c> diagonal</c><00:01:21.200><c> direction</c><00:01:21.840><c> which</c>
+
+00:01:22.070 --> 00:01:22.080 align:start position:0%
+in the negative diagonal direction which
+ 
+
+00:01:22.080 --> 00:01:22.789 align:start position:0%
+in the negative diagonal direction which
+i
+
+00:01:22.789 --> 00:01:22.799 align:start position:0%
+i
+ 
+
+00:01:22.799 --> 00:01:24.789 align:start position:0%
+i
+which<00:01:23.200><c> you</c><00:01:23.280><c> know</c><00:01:23.439><c> you</c><00:01:23.520><c> can</c><00:01:23.600><c> kind</c><00:01:23.759><c> of</c><00:01:23.920><c> tell</c><00:01:24.159><c> is</c>
+
+00:01:24.789 --> 00:01:24.799 align:start position:0%
+which you know you can kind of tell is
+ 
+
+00:01:24.799 --> 00:01:26.149 align:start position:0%
+which you know you can kind of tell is
+going<00:01:25.119><c> bottom</c><00:01:25.520><c> right</c>
+
+00:01:26.149 --> 00:01:26.159 align:start position:0%
+going bottom right
+ 
+
+00:01:26.159 --> 00:01:28.630 align:start position:0%
+going bottom right
+so<00:01:26.400><c> it</c><00:01:26.479><c> can</c><00:01:26.640><c> move</c><00:01:27.200><c> in</c><00:01:27.600><c> these</c><00:01:28.159><c> different</c>
+
+00:01:28.630 --> 00:01:28.640 align:start position:0%
+so it can move in these different
+ 
+
+00:01:28.640 --> 00:01:29.590 align:start position:0%
+so it can move in these different
+directions
+
+00:01:29.590 --> 00:01:29.600 align:start position:0%
+directions
+ 
+
+00:01:29.600 --> 00:01:31.350 align:start position:0%
+directions
+and<00:01:29.759><c> that's</c><00:01:30.079><c> kind</c><00:01:30.240><c> of</c><00:01:30.320><c> what</c><00:01:30.560><c> makes</c><00:01:30.799><c> it</c><00:01:30.960><c> tricky</c>
+
+00:01:31.350 --> 00:01:31.360 align:start position:0%
+and that's kind of what makes it tricky
+ 
+
+00:01:31.360 --> 00:01:32.870 align:start position:0%
+and that's kind of what makes it tricky
+so<00:01:31.520><c> we</c><00:01:31.759><c> want</c><00:01:32.000><c> to</c><00:01:32.240><c> place</c>
+
+00:01:32.870 --> 00:01:32.880 align:start position:0%
+so we want to place
+ 
+
+00:01:32.880 --> 00:01:34.950 align:start position:0%
+so we want to place
+the<00:01:33.040><c> queens</c><00:01:33.439><c> in</c><00:01:33.600><c> such</c><00:01:33.840><c> a</c><00:01:33.920><c> way</c><00:01:34.320><c> that</c><00:01:34.479><c> they</c><00:01:34.720><c> don't</c>
+
+00:01:34.950 --> 00:01:34.960 align:start position:0%
+the queens in such a way that they don't
+ 
+
+00:01:34.960 --> 00:01:36.390 align:start position:0%
+the queens in such a way that they don't
+attack<00:01:35.280><c> each</c><00:01:35.439><c> other</c><00:01:35.680><c> so</c><00:01:35.840><c> right</c><00:01:36.000><c> now</c><00:01:36.159><c> you</c><00:01:36.240><c> can</c>
+
+00:01:36.390 --> 00:01:36.400 align:start position:0%
+attack each other so right now you can
+ 
+
+00:01:36.400 --> 00:01:37.590 align:start position:0%
+attack each other so right now you can
+see<00:01:36.640><c> this</c><00:01:36.880><c> queen</c>
+
+00:01:37.590 --> 00:01:37.600 align:start position:0%
+see this queen
+ 
+
+00:01:37.600 --> 00:01:41.429 align:start position:0%
+see this queen
+is<00:01:37.759><c> going</c><00:01:38.560><c> left</c><00:01:39.280><c> right</c><00:01:40.000><c> top</c><00:01:40.479><c> bottom</c>
+
+00:01:41.429 --> 00:01:41.439 align:start position:0%
+is going left right top bottom
+ 
+
+00:01:41.439 --> 00:01:45.429 align:start position:0%
+is going left right top bottom
+this<00:01:41.759><c> diagonal</c><00:01:43.040><c> and</c><00:01:44.159><c> this</c><00:01:44.479><c> diagonal</c><00:01:45.119><c> right</c><00:01:45.280><c> so</c>
+
+00:01:45.429 --> 00:01:45.439 align:start position:0%
+this diagonal and this diagonal right so
+ 
+
+00:01:45.439 --> 00:01:47.350 align:start position:0%
+this diagonal and this diagonal right so
+it's<00:01:45.600><c> definitely</c><00:01:46.079><c> not</c><00:01:46.320><c> attacking</c><00:01:46.880><c> any</c><00:01:47.119><c> other</c>
+
+00:01:47.350 --> 00:01:47.360 align:start position:0%
+it's definitely not attacking any other
+ 
+
+00:01:47.360 --> 00:01:48.149 align:start position:0%
+it's definitely not attacking any other
+queen
+
+00:01:48.149 --> 00:01:48.159 align:start position:0%
+queen
+ 
+
+00:01:48.159 --> 00:01:50.310 align:start position:0%
+queen
+this<00:01:48.399><c> queen</c><00:01:48.799><c> as</c><00:01:48.960><c> well</c><00:01:49.280><c> you</c><00:01:49.360><c> can</c><00:01:49.520><c> see</c><00:01:50.079><c> it's</c>
+
+00:01:50.310 --> 00:01:50.320 align:start position:0%
+this queen as well you can see it's
+ 
+
+00:01:50.320 --> 00:01:51.270 align:start position:0%
+this queen as well you can see it's
+going<00:01:50.640><c> up</c>
+
+00:01:51.270 --> 00:01:51.280 align:start position:0%
+going up
+ 
+
+00:01:51.280 --> 00:01:54.950 align:start position:0%
+going up
+left<00:01:52.079><c> right</c><00:01:52.880><c> down</c><00:01:53.920><c> diagonal</c><00:01:54.560><c> and</c><00:01:54.720><c> you</c><00:01:54.799><c> could</c>
+
+00:01:54.950 --> 00:01:54.960 align:start position:0%
+left right down diagonal and you could
+ 
+
+00:01:54.960 --> 00:01:56.870 align:start position:0%
+left right down diagonal and you could
+do<00:01:55.119><c> that</c><00:01:55.280><c> with</c><00:01:55.520><c> all</c><00:01:55.759><c> of</c><00:01:55.840><c> the</c><00:01:56.000><c> queens</c><00:01:56.399><c> right</c><00:01:56.719><c> i</c>
+
+00:01:56.870 --> 00:01:56.880 align:start position:0%
+do that with all of the queens right i
+ 
+
+00:01:56.880 --> 00:01:59.030 align:start position:0%
+do that with all of the queens right i
+don't<00:01:57.040><c> want</c><00:01:57.119><c> to</c><00:01:57.360><c> make</c><00:01:57.600><c> it</c><00:01:57.680><c> too</c><00:01:57.920><c> messy</c><00:01:58.320><c> though</c>
+
+00:01:59.030 --> 00:01:59.040 align:start position:0%
+don't want to make it too messy though
+ 
+
+00:01:59.040 --> 00:02:00.469 align:start position:0%
+don't want to make it too messy though
+and<00:01:59.200><c> then</c><00:01:59.360><c> what</c><00:01:59.520><c> we</c><00:01:59.680><c> want</c><00:01:59.840><c> to</c><00:01:59.920><c> return</c><00:02:00.320><c> is</c>
+
+00:02:00.469 --> 00:02:00.479 align:start position:0%
+and then what we want to return is
+ 
+
+00:02:00.479 --> 00:02:02.469 align:start position:0%
+and then what we want to return is
+actually<00:02:00.880><c> these</c><00:02:01.280><c> boards</c><00:02:01.680><c> themselves</c><00:02:02.159><c> so</c><00:02:02.399><c> in</c>
+
+00:02:02.469 --> 00:02:02.479 align:start position:0%
+actually these boards themselves so in
+ 
+
+00:02:02.479 --> 00:02:03.109 align:start position:0%
+actually these boards themselves so in
+this<00:02:02.719><c> case</c>
+
+00:02:03.109 --> 00:02:03.119 align:start position:0%
+this case
+ 
+
+00:02:03.119 --> 00:02:05.190 align:start position:0%
+this case
+we<00:02:03.280><c> were</c><00:02:03.439><c> given</c><00:02:03.840><c> n</c><00:02:04.079><c> equals</c><00:02:04.560><c> four</c><00:02:04.880><c> and</c><00:02:04.960><c> you</c><00:02:05.119><c> can</c>
+
+00:02:05.190 --> 00:02:05.200 align:start position:0%
+we were given n equals four and you can
+ 
+
+00:02:05.200 --> 00:02:06.230 align:start position:0%
+we were given n equals four and you can
+see<00:02:05.439><c> that</c><00:02:05.840><c> these</c>
+
+00:02:06.230 --> 00:02:06.240 align:start position:0%
+see that these
+ 
+
+00:02:06.240 --> 00:02:08.309 align:start position:0%
+see that these
+two<00:02:06.479><c> different</c><00:02:06.880><c> compositions</c><00:02:07.680><c> are</c><00:02:07.759><c> the</c><00:02:08.000><c> ways</c>
+
+00:02:08.309 --> 00:02:08.319 align:start position:0%
+two different compositions are the ways
+ 
+
+00:02:08.319 --> 00:02:09.910 align:start position:0%
+two different compositions are the ways
+we<00:02:08.479><c> could</c><00:02:08.640><c> arrange</c><00:02:08.959><c> the</c><00:02:09.119><c> queens</c><00:02:09.520><c> and</c><00:02:09.599><c> then</c><00:02:09.759><c> we</c>
+
+00:02:09.910 --> 00:02:09.920 align:start position:0%
+we could arrange the queens and then we
+ 
+
+00:02:09.920 --> 00:02:11.110 align:start position:0%
+we could arrange the queens and then we
+want<00:02:10.080><c> to</c><00:02:10.160><c> return</c><00:02:10.640><c> that</c>
+
+00:02:11.110 --> 00:02:11.120 align:start position:0%
+want to return that
+ 
+
+00:02:11.120 --> 00:02:14.710 align:start position:0%
+want to return that
+as<00:02:11.520><c> a</c><00:02:12.239><c> list</c><00:02:12.800><c> of</c><00:02:13.120><c> strings</c><00:02:13.840><c> each</c><00:02:14.239><c> string</c>
+
+00:02:14.710 --> 00:02:14.720 align:start position:0%
+as a list of strings each string
+ 
+
+00:02:14.720 --> 00:02:15.430 align:start position:0%
+as a list of strings each string
+represents
+
+00:02:15.430 --> 00:02:15.440 align:start position:0%
+represents
+ 
+
+00:02:15.440 --> 00:02:19.030 align:start position:0%
+represents
+one<00:02:15.920><c> row</c><00:02:16.400><c> in</c><00:02:16.640><c> this</c><00:02:17.120><c> board</c><00:02:18.000><c> now</c><00:02:18.319><c> the</c><00:02:18.640><c> main</c><00:02:18.879><c> thing</c>
+
+00:02:19.030 --> 00:02:19.040 align:start position:0%
+one row in this board now the main thing
+ 
+
+00:02:19.040 --> 00:02:20.949 align:start position:0%
+one row in this board now the main thing
+you<00:02:19.280><c> notice</c><00:02:19.680><c> initially</c><00:02:20.160><c> is</c><00:02:20.400><c> okay</c>
+
+00:02:20.949 --> 00:02:20.959 align:start position:0%
+you notice initially is okay
+ 
+
+00:02:20.959 --> 00:02:22.949 align:start position:0%
+you notice initially is okay
+since<00:02:21.280><c> a</c><00:02:21.360><c> queen</c><00:02:21.599><c> can</c><00:02:21.760><c> go</c><00:02:22.000><c> horizontally</c><00:02:22.800><c> or</c>
+
+00:02:22.949 --> 00:02:22.959 align:start position:0%
+since a queen can go horizontally or
+ 
+
+00:02:22.959 --> 00:02:24.710 align:start position:0%
+since a queen can go horizontally or
+vertically<00:02:23.760><c> therefore</c>
+
+00:02:24.710 --> 00:02:24.720 align:start position:0%
+vertically therefore
+ 
+
+00:02:24.720 --> 00:02:28.229 align:start position:0%
+vertically therefore
+every<00:02:25.280><c> queen</c><00:02:25.760><c> has</c><00:02:26.000><c> to</c><00:02:26.160><c> be</c><00:02:26.560><c> in</c><00:02:26.879><c> a</c><00:02:27.200><c> different</c>
+
+00:02:28.229 --> 00:02:28.239 align:start position:0%
+every queen has to be in a different
+ 
+
+00:02:28.239 --> 00:02:31.270 align:start position:0%
+every queen has to be in a different
+uh<00:02:28.720><c> row</c><00:02:29.440><c> right</c><00:02:30.000><c> notice</c><00:02:30.400><c> how</c><00:02:30.640><c> every</c><00:02:30.879><c> single</c>
+
+00:02:31.270 --> 00:02:31.280 align:start position:0%
+uh row right notice how every single
+ 
+
+00:02:31.280 --> 00:02:33.430 align:start position:0%
+uh row right notice how every single
+queen<00:02:31.680><c> is</c><00:02:31.920><c> in</c><00:02:32.080><c> a</c><00:02:32.239><c> different</c><00:02:32.720><c> row</c><00:02:33.040><c> that</c><00:02:33.200><c> makes</c>
+
+00:02:33.430 --> 00:02:33.440 align:start position:0%
+queen is in a different row that makes
+ 
+
+00:02:33.440 --> 00:02:35.430 align:start position:0%
+queen is in a different row that makes
+sense<00:02:33.760><c> because</c><00:02:34.000><c> if</c><00:02:34.080><c> we</c><00:02:34.239><c> ever</c><00:02:34.400><c> put</c><00:02:34.640><c> two</c><00:02:34.879><c> queens</c>
+
+00:02:35.430 --> 00:02:35.440 align:start position:0%
+sense because if we ever put two queens
+ 
+
+00:02:35.440 --> 00:02:37.430 align:start position:0%
+sense because if we ever put two queens
+in<00:02:35.519><c> the</c><00:02:35.680><c> same</c><00:02:36.080><c> row</c><00:02:36.480><c> then</c><00:02:36.640><c> they'd</c><00:02:36.879><c> be</c><00:02:37.040><c> able</c><00:02:37.280><c> to</c>
+
+00:02:37.430 --> 00:02:37.440 align:start position:0%
+in the same row then they'd be able to
+ 
+
+00:02:37.440 --> 00:02:38.550 align:start position:0%
+in the same row then they'd be able to
+attack<00:02:37.760><c> each</c><00:02:37.920><c> other</c><00:02:38.160><c> right</c>
+
+00:02:38.550 --> 00:02:38.560 align:start position:0%
+attack each other right
+ 
+
+00:02:38.560 --> 00:02:41.110 align:start position:0%
+attack each other right
+so<00:02:38.800><c> each</c><00:02:39.120><c> queen</c><00:02:39.680><c> has</c><00:02:39.920><c> to</c><00:02:40.080><c> go</c><00:02:40.319><c> in</c><00:02:40.480><c> a</c><00:02:40.560><c> different</c>
+
+00:02:41.110 --> 00:02:41.120 align:start position:0%
+so each queen has to go in a different
+ 
+
+00:02:41.120 --> 00:02:41.830 align:start position:0%
+so each queen has to go in a different
+row
+
+00:02:41.830 --> 00:02:41.840 align:start position:0%
+row
+ 
+
+00:02:41.840 --> 00:02:45.030 align:start position:0%
+row
+notice<00:02:42.239><c> how</c><00:02:42.720><c> each</c><00:02:43.040><c> queen</c><00:02:43.360><c> is</c><00:02:43.680><c> also</c><00:02:44.160><c> going</c><00:02:44.720><c> in</c>
+
+00:02:45.030 --> 00:02:45.040 align:start position:0%
+notice how each queen is also going in
+ 
+
+00:02:45.040 --> 00:02:48.229 align:start position:0%
+notice how each queen is also going in
+a<00:02:45.280><c> different</c><00:02:46.160><c> column</c><00:02:46.959><c> right</c><00:02:47.280><c> each</c><00:02:47.599><c> queen</c>
+
+00:02:48.229 --> 00:02:48.239 align:start position:0%
+a different column right each queen
+ 
+
+00:02:48.239 --> 00:02:50.470 align:start position:0%
+a different column right each queen
+in<00:02:48.319><c> this</c><00:02:48.560><c> case</c><00:02:48.879><c> is</c><00:02:49.120><c> in</c><00:02:49.280><c> a</c><00:02:49.360><c> separate</c><00:02:49.920><c> column</c>
+
+00:02:50.470 --> 00:02:50.480 align:start position:0%
+in this case is in a separate column
+ 
+
+00:02:50.480 --> 00:02:51.430 align:start position:0%
+in this case is in a separate column
+because<00:02:50.800><c> they</c><00:02:50.959><c> can</c><00:02:51.120><c> move</c>
+
+00:02:51.430 --> 00:02:51.440 align:start position:0%
+because they can move
+ 
+
+00:02:51.440 --> 00:02:53.270 align:start position:0%
+because they can move
+vertically<00:02:52.000><c> we</c><00:02:52.160><c> don't</c><00:02:52.319><c> want</c><00:02:52.480><c> them</c><00:02:52.640><c> to</c><00:02:52.879><c> attack</c>
+
+00:02:53.270 --> 00:02:53.280 align:start position:0%
+vertically we don't want them to attack
+ 
+
+00:02:53.280 --> 00:02:54.630 align:start position:0%
+vertically we don't want them to attack
+each<00:02:53.440><c> other</c><00:02:54.000><c> vertically</c>
+
+00:02:54.630 --> 00:02:54.640 align:start position:0%
+each other vertically
+ 
+
+00:02:54.640 --> 00:02:57.270 align:start position:0%
+each other vertically
+as<00:02:54.879><c> well</c><00:02:55.519><c> so</c><00:02:55.760><c> that's</c><00:02:56.160><c> pretty</c><00:02:56.480><c> straightforward</c>
+
+00:02:57.270 --> 00:02:57.280 align:start position:0%
+as well so that's pretty straightforward
+ 
+
+00:02:57.280 --> 00:02:59.030 align:start position:0%
+as well so that's pretty straightforward
+i<00:02:57.360><c> think</c><00:02:57.599><c> but</c><00:02:57.760><c> the</c><00:02:58.000><c> hard</c><00:02:58.319><c> part</c><00:02:58.720><c> is</c>
+
+00:02:59.030 --> 00:02:59.040 align:start position:0%
+i think but the hard part is
+ 
+
+00:02:59.040 --> 00:03:02.470 align:start position:0%
+i think but the hard part is
+diagonals<00:02:59.920><c> right</c><00:03:00.560><c> notice</c><00:03:01.040><c> how</c><00:03:01.599><c> we</c><00:03:01.760><c> have</c><00:03:02.080><c> many</c>
+
+00:03:02.470 --> 00:03:02.480 align:start position:0%
+diagonals right notice how we have many
+ 
+
+00:03:02.480 --> 00:03:03.990 align:start position:0%
+diagonals right notice how we have many
+different<00:03:02.800><c> diagonals</c><00:03:03.599><c> in</c><00:03:03.680><c> this</c>
+
+00:03:03.990 --> 00:03:04.000 align:start position:0%
+different diagonals in this
+ 
+
+00:03:04.000 --> 00:03:05.750 align:start position:0%
+different diagonals in this
+board<00:03:04.319><c> let's</c><00:03:04.480><c> just</c><00:03:04.720><c> look</c><00:03:04.959><c> at</c><00:03:05.040><c> the</c><00:03:05.280><c> positive</c>
+
+00:03:05.750 --> 00:03:05.760 align:start position:0%
+board let's just look at the positive
+ 
+
+00:03:05.760 --> 00:03:07.350 align:start position:0%
+board let's just look at the positive
+diagonals<00:03:06.319><c> what</c><00:03:06.480><c> i</c><00:03:06.640><c> call</c><00:03:06.800><c> the</c><00:03:06.959><c> positive</c>
+
+00:03:07.350 --> 00:03:07.360 align:start position:0%
+diagonals what i call the positive
+ 
+
+00:03:07.360 --> 00:03:09.190 align:start position:0%
+diagonals what i call the positive
+diagonals<00:03:07.840><c> the</c><00:03:08.000><c> ones</c><00:03:08.239><c> that</c><00:03:08.400><c> can</c><00:03:08.560><c> go</c>
+
+00:03:09.190 --> 00:03:09.200 align:start position:0%
+diagonals the ones that can go
+ 
+
+00:03:09.200 --> 00:03:12.229 align:start position:0%
+diagonals the ones that can go
+top<00:03:09.840><c> to</c><00:03:10.080><c> right</c><00:03:10.720><c> so</c><00:03:11.280><c> notice</c><00:03:11.680><c> how</c>
+
+00:03:12.229 --> 00:03:12.239 align:start position:0%
+top to right so notice how
+ 
+
+00:03:12.239 --> 00:03:13.830 align:start position:0%
+top to right so notice how
+in<00:03:12.400><c> this</c><00:03:12.640><c> case</c><00:03:12.879><c> we</c><00:03:13.040><c> have</c><00:03:13.200><c> many</c><00:03:13.519><c> different</c>
+
+00:03:13.830 --> 00:03:13.840 align:start position:0%
+in this case we have many different
+ 
+
+00:03:13.840 --> 00:03:16.470 align:start position:0%
+in this case we have many different
+diagonals<00:03:14.720><c> and</c><00:03:15.120><c> in</c><00:03:15.280><c> each</c><00:03:15.519><c> of</c><00:03:15.680><c> the</c><00:03:15.840><c> cases</c>
+
+00:03:16.470 --> 00:03:16.480 align:start position:0%
+diagonals and in each of the cases
+ 
+
+00:03:16.480 --> 00:03:19.830 align:start position:0%
+diagonals and in each of the cases
+each<00:03:16.800><c> queen</c><00:03:17.440><c> is</c><00:03:17.599><c> in</c><00:03:17.760><c> a</c><00:03:18.159><c> separate</c><00:03:18.959><c> positive</c>
+
+00:03:19.830 --> 00:03:19.840 align:start position:0%
+each queen is in a separate positive
+ 
+
+00:03:19.840 --> 00:03:22.390 align:start position:0%
+each queen is in a separate positive
+diagonal<00:03:20.560><c> right</c><00:03:21.599><c> you</c><00:03:21.760><c> can</c><00:03:21.840><c> see</c><00:03:22.000><c> that</c><00:03:22.159><c> that's</c>
+
+00:03:22.390 --> 00:03:22.400 align:start position:0%
+diagonal right you can see that that's
+ 
+
+00:03:22.400 --> 00:03:22.949 align:start position:0%
+diagonal right you can see that that's
+the<00:03:22.560><c> case</c>
+
+00:03:22.949 --> 00:03:22.959 align:start position:0%
+the case
+ 
+
+00:03:22.959 --> 00:03:25.670 align:start position:0%
+the case
+what<00:03:23.120><c> about</c><00:03:23.519><c> negative</c><00:03:24.000><c> diagonals</c><00:03:25.120><c> okay</c><00:03:25.440><c> this</c>
+
+00:03:25.670 --> 00:03:25.680 align:start position:0%
+what about negative diagonals okay this
+ 
+
+00:03:25.680 --> 00:03:27.990 align:start position:0%
+what about negative diagonals okay this
+is<00:03:25.840><c> one</c><00:03:26.080><c> negative</c><00:03:26.480><c> diagonal</c><00:03:27.040><c> this</c><00:03:27.280><c> is</c><00:03:27.360><c> another</c>
+
+00:03:27.990 --> 00:03:28.000 align:start position:0%
+is one negative diagonal this is another
+ 
+
+00:03:28.000 --> 00:03:30.789 align:start position:0%
+is one negative diagonal this is another
+each<00:03:28.319><c> queen</c><00:03:28.959><c> is</c><00:03:29.200><c> in</c><00:03:29.360><c> a</c><00:03:29.599><c> separate</c><00:03:30.400><c> negative</c>
+
+00:03:30.789 --> 00:03:30.799 align:start position:0%
+each queen is in a separate negative
+ 
+
+00:03:30.799 --> 00:03:31.509 align:start position:0%
+each queen is in a separate negative
+diagonal
+
+00:03:31.509 --> 00:03:31.519 align:start position:0%
+diagonal
+ 
+
+00:03:31.519 --> 00:03:33.350 align:start position:0%
+diagonal
+because<00:03:31.760><c> we</c><00:03:32.000><c> don't</c><00:03:32.319><c> want</c><00:03:32.560><c> any</c><00:03:32.799><c> queens</c><00:03:33.200><c> to</c>
+
+00:03:33.350 --> 00:03:33.360 align:start position:0%
+because we don't want any queens to
+ 
+
+00:03:33.360 --> 00:03:34.869 align:start position:0%
+because we don't want any queens to
+attack<00:03:33.840><c> each</c><00:03:34.080><c> other</c>
+
+00:03:34.869 --> 00:03:34.879 align:start position:0%
+attack each other
+ 
+
+00:03:34.879 --> 00:03:37.190 align:start position:0%
+attack each other
+diagonally<00:03:35.920><c> so</c><00:03:36.239><c> this</c><00:03:36.480><c> is</c><00:03:36.560><c> going</c><00:03:36.720><c> to</c><00:03:36.799><c> be</c><00:03:36.959><c> the</c>
+
+00:03:37.190 --> 00:03:37.200 align:start position:0%
+diagonally so this is going to be the
+ 
+
+00:03:37.200 --> 00:03:39.190 align:start position:0%
+diagonally so this is going to be the
+part<00:03:37.440><c> that's</c><00:03:37.680><c> a</c><00:03:37.760><c> little</c><00:03:37.920><c> bit</c><00:03:38.159><c> tricky</c><00:03:38.560><c> to</c><00:03:38.799><c> code</c>
+
+00:03:39.190 --> 00:03:39.200 align:start position:0%
+part that's a little bit tricky to code
+ 
+
+00:03:39.200 --> 00:03:40.869 align:start position:0%
+part that's a little bit tricky to code
+at<00:03:39.280><c> least</c><00:03:39.519><c> until</c><00:03:39.840><c> you've</c><00:03:40.080><c> seen</c><00:03:40.319><c> it</c><00:03:40.400><c> before</c><00:03:40.799><c> but</c>
+
+00:03:40.869 --> 00:03:40.879 align:start position:0%
+at least until you've seen it before but
+ 
+
+00:03:40.879 --> 00:03:42.630 align:start position:0%
+at least until you've seen it before but
+it's<00:03:41.120><c> actually</c><00:03:41.440><c> really</c><00:03:41.680><c> easy</c><00:03:42.000><c> to</c><00:03:42.159><c> implement</c>
+
+00:03:42.630 --> 00:03:42.640 align:start position:0%
+it's actually really easy to implement
+ 
+
+00:03:42.640 --> 00:03:44.390 align:start position:0%
+it's actually really easy to implement
+once<00:03:42.879><c> you</c><00:03:43.040><c> know</c><00:03:43.200><c> the</c><00:03:43.360><c> main</c><00:03:43.680><c> idea</c>
+
+00:03:44.390 --> 00:03:44.400 align:start position:0%
+once you know the main idea
+ 
+
+00:03:44.400 --> 00:03:46.390 align:start position:0%
+once you know the main idea
+so<00:03:44.640><c> now</c><00:03:44.799><c> let</c><00:03:44.959><c> me</c><00:03:45.200><c> kind</c><00:03:45.360><c> of</c><00:03:45.440><c> show</c><00:03:45.599><c> you</c><00:03:46.000><c> how</c><00:03:46.159><c> we're</c>
+
+00:03:46.390 --> 00:03:46.400 align:start position:0%
+so now let me kind of show you how we're
+ 
+
+00:03:46.400 --> 00:03:48.630 align:start position:0%
+so now let me kind of show you how we're
+going<00:03:46.480><c> to</c><00:03:46.560><c> apply</c><00:03:47.120><c> backtracking</c><00:03:47.920><c> to</c><00:03:48.080><c> this</c>
+
+00:03:48.630 --> 00:03:48.640 align:start position:0%
+going to apply backtracking to this
+ 
+
+00:03:48.640 --> 00:03:49.910 align:start position:0%
+going to apply backtracking to this
+solution<00:03:49.040><c> how</c><00:03:49.200><c> we're</c><00:03:49.360><c> going</c><00:03:49.440><c> to</c><00:03:49.519><c> apply</c><00:03:49.760><c> the</c>
+
+00:03:49.910 --> 00:03:49.920 align:start position:0%
+solution how we're going to apply the
+ 
+
+00:03:49.920 --> 00:03:51.750 align:start position:0%
+solution how we're going to apply the
+brute<00:03:50.319><c> force</c><00:03:50.720><c> method</c><00:03:51.360><c> to</c>
+
+00:03:51.750 --> 00:03:51.760 align:start position:0%
+brute force method to
+ 
+
+00:03:51.760 --> 00:03:54.710 align:start position:0%
+brute force method to
+get<00:03:52.239><c> each</c><00:03:52.720><c> valid</c><00:03:53.439><c> arrangement</c><00:03:54.159><c> of</c><00:03:54.239><c> the</c><00:03:54.480><c> end</c>
+
+00:03:54.710 --> 00:03:54.720 align:start position:0%
+get each valid arrangement of the end
+ 
+
+00:03:54.720 --> 00:03:55.670 align:start position:0%
+get each valid arrangement of the end
+queens
+
+00:03:55.670 --> 00:03:55.680 align:start position:0%
+queens
+ 
+
+00:03:55.680 --> 00:03:58.309 align:start position:0%
+queens
+so<00:03:55.920><c> what</c><00:03:56.319><c> really</c><00:03:56.959><c> really</c><00:03:57.360><c> brute</c><00:03:57.680><c> force</c><00:03:58.000><c> idea</c>
+
+00:03:58.309 --> 00:03:58.319 align:start position:0%
+so what really really brute force idea
+ 
+
+00:03:58.319 --> 00:03:59.509 align:start position:0%
+so what really really brute force idea
+that<00:03:58.480><c> you</c><00:03:58.799><c> might</c><00:03:59.120><c> have</c>
+
+00:03:59.509 --> 00:03:59.519 align:start position:0%
+that you might have
+ 
+
+00:03:59.519 --> 00:04:01.750 align:start position:0%
+that you might have
+is<00:03:59.840><c> okay</c><00:04:00.560><c> let's</c><00:04:00.799><c> just</c><00:04:00.959><c> choose</c><00:04:01.280><c> okay</c><00:04:01.519><c> we</c><00:04:01.599><c> can</c>
+
+00:04:01.750 --> 00:04:01.760 align:start position:0%
+is okay let's just choose okay we can
+ 
+
+00:04:01.760 --> 00:04:03.589 align:start position:0%
+is okay let's just choose okay we can
+pick<00:04:02.080><c> any</c><00:04:02.319><c> of</c><00:04:02.400><c> these</c><00:04:02.640><c> positions</c><00:04:03.120><c> in</c><00:04:03.280><c> the</c>
+
+00:04:03.589 --> 00:04:03.599 align:start position:0%
+pick any of these positions in the
+ 
+
+00:04:03.599 --> 00:04:05.190 align:start position:0%
+pick any of these positions in the
+in<00:04:03.760><c> the</c><00:04:03.840><c> four</c><00:04:04.080><c> by</c><00:04:04.239><c> four</c><00:04:04.480><c> grid</c><00:04:04.720><c> let's</c><00:04:04.959><c> put</c><00:04:05.120><c> a</c>
+
+00:04:05.190 --> 00:04:05.200 align:start position:0%
+in the four by four grid let's put a
+ 
+
+00:04:05.200 --> 00:04:06.710 align:start position:0%
+in the four by four grid let's put a
+queen<00:04:05.519><c> over</c><00:04:05.760><c> here</c><00:04:06.000><c> so</c><00:04:06.159><c> that's</c><00:04:06.319><c> the</c><00:04:06.480><c> first</c>
+
+00:04:06.710 --> 00:04:06.720 align:start position:0%
+queen over here so that's the first
+ 
+
+00:04:06.720 --> 00:04:08.070 align:start position:0%
+queen over here so that's the first
+position<00:04:07.120><c> we</c><00:04:07.280><c> try</c><00:04:07.599><c> okay</c>
+
+00:04:08.070 --> 00:04:08.080 align:start position:0%
+position we try okay
+ 
+
+00:04:08.080 --> 00:04:10.470 align:start position:0%
+position we try okay
+now<00:04:08.239><c> let's</c><00:04:08.480><c> try</c><00:04:09.040><c> a</c><00:04:09.200><c> different</c><00:04:09.519><c> position</c><00:04:10.239><c> right</c>
+
+00:04:10.470 --> 00:04:10.480 align:start position:0%
+now let's try a different position right
+ 
+
+00:04:10.480 --> 00:04:11.670 align:start position:0%
+now let's try a different position right
+for<00:04:10.640><c> the</c><00:04:10.799><c> second</c><00:04:11.120><c> queen</c>
+
+00:04:11.670 --> 00:04:11.680 align:start position:0%
+for the second queen
+ 
+
+00:04:11.680 --> 00:04:13.350 align:start position:0%
+for the second queen
+let's<00:04:11.920><c> try</c><00:04:12.159><c> putting</c><00:04:12.400><c> the</c><00:04:12.560><c> queen</c><00:04:12.959><c> in</c><00:04:13.120><c> this</c>
+
+00:04:13.350 --> 00:04:13.360 align:start position:0%
+let's try putting the queen in this
+ 
+
+00:04:13.360 --> 00:04:15.670 align:start position:0%
+let's try putting the queen in this
+position<00:04:13.920><c> right</c><00:04:14.560><c> and</c><00:04:14.640><c> then</c><00:04:14.959><c> now</c><00:04:15.120><c> we</c><00:04:15.280><c> have</c><00:04:15.519><c> all</c>
+
+00:04:15.670 --> 00:04:15.680 align:start position:0%
+position right and then now we have all
+ 
+
+00:04:15.680 --> 00:04:17.270 align:start position:0%
+position right and then now we have all
+these<00:04:15.920><c> remaining</c><00:04:16.320><c> choices</c><00:04:16.799><c> let's</c><00:04:17.040><c> keep</c>
+
+00:04:17.270 --> 00:04:17.280 align:start position:0%
+these remaining choices let's keep
+ 
+
+00:04:17.280 --> 00:04:19.189 align:start position:0%
+these remaining choices let's keep
+putting<00:04:17.519><c> a</c><00:04:17.600><c> queen</c><00:04:17.919><c> in</c><00:04:18.079><c> every</c><00:04:18.239><c> single</c><00:04:18.560><c> position</c>
+
+00:04:19.189 --> 00:04:19.199 align:start position:0%
+putting a queen in every single position
+ 
+
+00:04:19.199 --> 00:04:20.550 align:start position:0%
+putting a queen in every single position
+and<00:04:19.359><c> trying</c><00:04:19.680><c> that</c><00:04:19.919><c> so</c><00:04:20.079><c> this</c><00:04:20.239><c> is</c><00:04:20.320><c> one</c>
+
+00:04:20.550 --> 00:04:20.560 align:start position:0%
+and trying that so this is one
+ 
+
+00:04:20.560 --> 00:04:22.150 align:start position:0%
+and trying that so this is one
+arrangement<00:04:20.959><c> then</c><00:04:21.120><c> maybe</c><00:04:21.359><c> we</c><00:04:21.519><c> could</c><00:04:21.680><c> take</c><00:04:21.919><c> the</c>
+
+00:04:22.150 --> 00:04:22.160 align:start position:0%
+arrangement then maybe we could take the
+ 
+
+00:04:22.160 --> 00:04:23.430 align:start position:0%
+arrangement then maybe we could take the
+fourth<00:04:22.400><c> queen</c><00:04:22.639><c> and</c><00:04:22.720><c> put</c><00:04:22.880><c> it</c><00:04:23.040><c> over</c><00:04:23.199><c> here</c>
+
+00:04:23.430 --> 00:04:23.440 align:start position:0%
+fourth queen and put it over here
+ 
+
+00:04:23.440 --> 00:04:24.550 align:start position:0%
+fourth queen and put it over here
+etcetera<00:04:23.919><c> etcetera</c>
+
+00:04:24.550 --> 00:04:24.560 align:start position:0%
+etcetera etcetera
+ 
+
+00:04:24.560 --> 00:04:26.870 align:start position:0%
+etcetera etcetera
+now<00:04:25.360><c> why</c><00:04:25.600><c> is</c><00:04:25.680><c> there</c><00:04:25.919><c> any</c><00:04:26.080><c> reason</c><00:04:26.400><c> to</c><00:04:26.560><c> do</c><00:04:26.720><c> that</c>
+
+00:04:26.870 --> 00:04:26.880 align:start position:0%
+now why is there any reason to do that
+ 
+
+00:04:26.880 --> 00:04:28.070 align:start position:0%
+now why is there any reason to do that
+that's<00:04:27.120><c> a</c><00:04:27.199><c> little</c><00:04:27.360><c> bit</c><00:04:27.680><c> too</c>
+
+00:04:28.070 --> 00:04:28.080 align:start position:0%
+that's a little bit too
+ 
+
+00:04:28.080 --> 00:04:30.790 align:start position:0%
+that's a little bit too
+brute<00:04:28.479><c> force</c><00:04:28.880><c> if</c><00:04:29.040><c> you</c><00:04:29.199><c> ask</c><00:04:29.520><c> me</c><00:04:29.919><c> there's</c><00:04:30.160><c> a</c><00:04:30.479><c> much</c>
+
+00:04:30.790 --> 00:04:30.800 align:start position:0%
+brute force if you ask me there's a much
+ 
+
+00:04:30.800 --> 00:04:32.469 align:start position:0%
+brute force if you ask me there's a much
+simpler<00:04:31.120><c> way</c><00:04:31.360><c> we</c><00:04:31.520><c> can</c><00:04:31.680><c> do</c><00:04:31.919><c> it</c>
+
+00:04:32.469 --> 00:04:32.479 align:start position:0%
+simpler way we can do it
+ 
+
+00:04:32.479 --> 00:04:34.790 align:start position:0%
+simpler way we can do it
+right<00:04:32.880><c> because</c><00:04:33.600><c> for</c><00:04:33.759><c> each</c><00:04:34.000><c> queen</c><00:04:34.320><c> instead</c><00:04:34.639><c> of</c>
+
+00:04:34.790 --> 00:04:34.800 align:start position:0%
+right because for each queen instead of
+ 
+
+00:04:34.800 --> 00:04:35.590 align:start position:0%
+right because for each queen instead of
+having<00:04:35.280><c> n</c>
+
+00:04:35.590 --> 00:04:35.600 align:start position:0%
+having n
+ 
+
+00:04:35.600 --> 00:04:38.550 align:start position:0%
+having n
+squared<00:04:36.160><c> choices</c><00:04:36.880><c> how</c><00:04:37.040><c> about</c><00:04:37.199><c> we</c><00:04:37.360><c> just</c><00:04:37.680><c> have</c><00:04:38.160><c> n</c>
+
+00:04:38.550 --> 00:04:38.560 align:start position:0%
+squared choices how about we just have n
+ 
+
+00:04:38.560 --> 00:04:40.790 align:start position:0%
+squared choices how about we just have n
+choices<00:04:39.040><c> because</c><00:04:39.360><c> we</c><00:04:39.600><c> know</c><00:04:39.840><c> for</c><00:04:40.080><c> sure</c><00:04:40.479><c> each</c>
+
+00:04:40.790 --> 00:04:40.800 align:start position:0%
+choices because we know for sure each
+ 
+
+00:04:40.800 --> 00:04:42.710 align:start position:0%
+choices because we know for sure each
+queen<00:04:41.120><c> is</c><00:04:41.280><c> definitely</c><00:04:41.840><c> going</c><00:04:42.080><c> to</c><00:04:42.240><c> be</c><00:04:42.479><c> in</c><00:04:42.639><c> a</c>
+
+00:04:42.710 --> 00:04:42.720 align:start position:0%
+queen is definitely going to be in a
+ 
+
+00:04:42.720 --> 00:04:43.270 align:start position:0%
+queen is definitely going to be in a
+different
+
+00:04:43.270 --> 00:04:43.280 align:start position:0%
+different
+ 
+
+00:04:43.280 --> 00:04:45.909 align:start position:0%
+different
+row<00:04:43.840><c> so</c><00:04:44.160><c> first</c><00:04:44.479><c> we</c><00:04:44.639><c> can</c><00:04:44.800><c> go</c><00:04:45.040><c> like</c><00:04:45.280><c> this</c><00:04:45.520><c> we</c><00:04:45.680><c> can</c>
+
+00:04:45.909 --> 00:04:45.919 align:start position:0%
+row so first we can go like this we can
+ 
+
+00:04:45.919 --> 00:04:46.469 align:start position:0%
+row so first we can go like this we can
+say
+
+00:04:46.469 --> 00:04:46.479 align:start position:0%
+say
+ 
+
+00:04:46.479 --> 00:04:49.510 align:start position:0%
+say
+okay<00:04:46.800><c> we</c><00:04:46.960><c> can</c><00:04:47.120><c> decide</c><00:04:47.600><c> to</c><00:04:47.840><c> put</c><00:04:48.560><c> for</c><00:04:48.720><c> this</c><00:04:49.040><c> first</c>
+
+00:04:49.510 --> 00:04:49.520 align:start position:0%
+okay we can decide to put for this first
+ 
+
+00:04:49.520 --> 00:04:51.510 align:start position:0%
+okay we can decide to put for this first
+row<00:04:49.840><c> itself</c><00:04:50.320><c> right</c><00:04:50.479><c> this</c><00:04:50.720><c> first</c><00:04:51.040><c> row</c><00:04:51.280><c> we</c><00:04:51.360><c> can</c>
+
+00:04:51.510 --> 00:04:51.520 align:start position:0%
+row itself right this first row we can
+ 
+
+00:04:51.520 --> 00:04:53.189 align:start position:0%
+row itself right this first row we can
+decide<00:04:51.919><c> to</c><00:04:52.000><c> put</c><00:04:52.160><c> the</c><00:04:52.320><c> queen</c><00:04:52.720><c> in</c><00:04:52.800><c> the</c><00:04:52.880><c> first</c>
+
+00:04:53.189 --> 00:04:53.199 align:start position:0%
+decide to put the queen in the first
+ 
+
+00:04:53.199 --> 00:04:53.749 align:start position:0%
+decide to put the queen in the first
+position
+
+00:04:53.749 --> 00:04:53.759 align:start position:0%
+position
+ 
+
+00:04:53.759 --> 00:04:55.830 align:start position:0%
+position
+or<00:04:54.240><c> we</c><00:04:54.400><c> could</c><00:04:54.560><c> decide</c><00:04:54.960><c> to</c><00:04:55.040><c> put</c><00:04:55.199><c> the</c><00:04:55.360><c> queen</c><00:04:55.680><c> in</c>
+
+00:04:55.830 --> 00:04:55.840 align:start position:0%
+or we could decide to put the queen in
+ 
+
+00:04:55.840 --> 00:04:56.790 align:start position:0%
+or we could decide to put the queen in
+the<00:04:55.919><c> second</c><00:04:56.240><c> position</c>
+
+00:04:56.790 --> 00:04:56.800 align:start position:0%
+the second position
+ 
+
+00:04:56.800 --> 00:04:59.430 align:start position:0%
+the second position
+or<00:04:57.360><c> the</c><00:04:57.520><c> third</c><00:04:57.840><c> position</c><00:04:58.400><c> or</c><00:04:58.960><c> the</c><00:04:59.120><c> fourth</c>
+
+00:04:59.430 --> 00:04:59.440 align:start position:0%
+or the third position or the fourth
+ 
+
+00:04:59.440 --> 00:04:59.990 align:start position:0%
+or the third position or the fourth
+position
+
+00:04:59.990 --> 00:05:00.000 align:start position:0%
+position
+ 
+
+00:05:00.000 --> 00:05:02.390 align:start position:0%
+position
+whatever<00:05:00.479><c> we</c><00:05:00.639><c> do</c><00:05:00.880><c> in</c><00:05:01.039><c> that</c><00:05:01.280><c> first</c><00:05:01.680><c> row</c><00:05:02.160><c> then</c>
+
+00:05:02.390 --> 00:05:02.400 align:start position:0%
+whatever we do in that first row then
+ 
+
+00:05:02.400 --> 00:05:04.390 align:start position:0%
+whatever we do in that first row then
+we're<00:05:02.639><c> gonna</c><00:05:02.880><c> move</c><00:05:03.199><c> to</c><00:05:03.360><c> the</c><00:05:03.600><c> next</c><00:05:04.000><c> row</c><00:05:04.240><c> right</c>
+
+00:05:04.390 --> 00:05:04.400 align:start position:0%
+we're gonna move to the next row right
+ 
+
+00:05:04.400 --> 00:05:06.070 align:start position:0%
+we're gonna move to the next row right
+so<00:05:04.639><c> now</c><00:05:04.880><c> our</c><00:05:05.039><c> goal</c><00:05:05.280><c> is</c><00:05:05.440><c> to</c><00:05:05.600><c> find</c>
+
+00:05:06.070 --> 00:05:06.080 align:start position:0%
+so now our goal is to find
+ 
+
+00:05:06.080 --> 00:05:07.909 align:start position:0%
+so now our goal is to find
+a<00:05:06.320><c> different</c><00:05:06.720><c> location</c><00:05:07.280><c> where</c><00:05:07.440><c> we</c><00:05:07.520><c> can</c><00:05:07.759><c> put</c>
+
+00:05:07.909 --> 00:05:07.919 align:start position:0%
+a different location where we can put
+ 
+
+00:05:07.919 --> 00:05:09.189 align:start position:0%
+a different location where we can put
+the<00:05:08.240><c> second</c><00:05:08.720><c> queen</c>
+
+00:05:09.189 --> 00:05:09.199 align:start position:0%
+the second queen
+ 
+
+00:05:09.199 --> 00:05:11.670 align:start position:0%
+the second queen
+in<00:05:09.360><c> this</c><00:05:09.680><c> second</c><00:05:10.240><c> row</c><00:05:10.880><c> now</c><00:05:11.120><c> we</c><00:05:11.199><c> could</c><00:05:11.440><c> try</c>
+
+00:05:11.670 --> 00:05:11.680 align:start position:0%
+in this second row now we could try
+ 
+
+00:05:11.680 --> 00:05:13.350 align:start position:0%
+in this second row now we could try
+putting<00:05:12.000><c> it</c><00:05:12.160><c> over</c><00:05:12.400><c> here</c>
+
+00:05:13.350 --> 00:05:13.360 align:start position:0%
+putting it over here
+ 
+
+00:05:13.360 --> 00:05:15.909 align:start position:0%
+putting it over here
+or<00:05:13.600><c> we</c><00:05:13.759><c> could</c><00:05:13.919><c> try</c><00:05:14.240><c> putting</c><00:05:14.560><c> it</c><00:05:14.880><c> over</c><00:05:15.199><c> here</c><00:05:15.759><c> or</c>
+
+00:05:15.909 --> 00:05:15.919 align:start position:0%
+or we could try putting it over here or
+ 
+
+00:05:15.919 --> 00:05:17.350 align:start position:0%
+or we could try putting it over here or
+we<00:05:16.080><c> could</c><00:05:16.240><c> try</c><00:05:16.479><c> putting</c><00:05:16.720><c> it</c><00:05:16.800><c> over</c><00:05:17.039><c> here</c>
+
+00:05:17.350 --> 00:05:17.360 align:start position:0%
+we could try putting it over here
+ 
+
+00:05:17.360 --> 00:05:20.469 align:start position:0%
+we could try putting it over here
+but<00:05:17.520><c> we</c><00:05:17.919><c> can't</c><00:05:18.479><c> put</c><00:05:18.720><c> it</c><00:05:18.960><c> over</c><00:05:19.360><c> here</c><00:05:20.000><c> why</c>
+
+00:05:20.469 --> 00:05:20.479 align:start position:0%
+but we can't put it over here why
+ 
+
+00:05:20.479 --> 00:05:21.990 align:start position:0%
+but we can't put it over here why
+is<00:05:20.639><c> it</c><00:05:20.720><c> that</c><00:05:20.880><c> we</c><00:05:20.960><c> can't</c><00:05:21.199><c> put</c><00:05:21.440><c> it</c><00:05:21.520><c> here</c><00:05:21.680><c> because</c>
+
+00:05:21.990 --> 00:05:22.000 align:start position:0%
+is it that we can't put it here because
+ 
+
+00:05:22.000 --> 00:05:24.310 align:start position:0%
+is it that we can't put it here because
+they're<00:05:22.240><c> in</c><00:05:22.320><c> the</c><00:05:22.560><c> same</c><00:05:23.199><c> column</c><00:05:23.919><c> so</c>
+
+00:05:24.310 --> 00:05:24.320 align:start position:0%
+they're in the same column so
+ 
+
+00:05:24.320 --> 00:05:26.310 align:start position:0%
+they're in the same column so
+now<00:05:24.479><c> you</c><00:05:24.960><c> already</c><00:05:25.280><c> can</c><00:05:25.520><c> tell</c><00:05:25.919><c> we're</c><00:05:26.080><c> going</c><00:05:26.160><c> to</c>
+
+00:05:26.310 --> 00:05:26.320 align:start position:0%
+now you already can tell we're going to
+ 
+
+00:05:26.320 --> 00:05:27.990 align:start position:0%
+now you already can tell we're going to
+need<00:05:26.479><c> to</c><00:05:26.639><c> be</c><00:05:26.960><c> maintaining</c>
+
+00:05:27.990 --> 00:05:28.000 align:start position:0%
+need to be maintaining
+ 
+
+00:05:28.000 --> 00:05:31.670 align:start position:0%
+need to be maintaining
+the<00:05:28.479><c> columns</c><00:05:29.360><c> of</c><00:05:29.840><c> whatever</c><00:05:30.479><c> previous</c>
+
+00:05:31.670 --> 00:05:31.680 align:start position:0%
+the columns of whatever previous
+ 
+
+00:05:31.680 --> 00:05:34.150 align:start position:0%
+the columns of whatever previous
+queens<00:05:32.080><c> that</c><00:05:32.240><c> we've</c><00:05:32.639><c> already</c><00:05:33.360><c> placed</c><00:05:33.919><c> we</c>
+
+00:05:34.150 --> 00:05:34.160 align:start position:0%
+queens that we've already placed we
+ 
+
+00:05:34.160 --> 00:05:36.230 align:start position:0%
+queens that we've already placed we
+don't<00:05:34.400><c> have</c><00:05:34.560><c> to</c><00:05:34.720><c> maintain</c><00:05:35.199><c> the</c><00:05:35.520><c> rows</c><00:05:36.000><c> though</c>
+
+00:05:36.230 --> 00:05:36.240 align:start position:0%
+don't have to maintain the rows though
+ 
+
+00:05:36.240 --> 00:05:37.510 align:start position:0%
+don't have to maintain the rows though
+right<00:05:36.400><c> because</c><00:05:36.639><c> i</c><00:05:36.800><c> just</c><00:05:36.960><c> showed</c><00:05:37.199><c> you</c>
+
+00:05:37.510 --> 00:05:37.520 align:start position:0%
+right because i just showed you
+ 
+
+00:05:37.520 --> 00:05:39.830 align:start position:0%
+right because i just showed you
+why<00:05:38.000><c> because</c><00:05:38.560><c> every</c><00:05:38.800><c> time</c><00:05:39.039><c> we</c><00:05:39.199><c> place</c><00:05:39.520><c> a</c><00:05:39.600><c> queen</c>
+
+00:05:39.830 --> 00:05:39.840 align:start position:0%
+why because every time we place a queen
+ 
+
+00:05:39.840 --> 00:05:41.670 align:start position:0%
+why because every time we place a queen
+we're<00:05:40.000><c> gonna</c><00:05:40.240><c> move</c><00:05:40.479><c> to</c><00:05:40.639><c> the</c><00:05:40.800><c> next</c><00:05:41.280><c> row</c>
+
+00:05:41.670 --> 00:05:41.680 align:start position:0%
+we're gonna move to the next row
+ 
+
+00:05:41.680 --> 00:05:44.230 align:start position:0%
+we're gonna move to the next row
+anyway<00:05:42.080><c> until</c><00:05:42.400><c> we</c><00:05:42.479><c> get</c><00:05:42.639><c> to</c><00:05:42.800><c> the</c><00:05:43.120><c> bottom</c><00:05:43.840><c> right</c>
+
+00:05:44.230 --> 00:05:44.240 align:start position:0%
+anyway until we get to the bottom right
+ 
+
+00:05:44.240 --> 00:05:45.830 align:start position:0%
+anyway until we get to the bottom right
+and<00:05:44.400><c> then</c><00:05:44.560><c> we're</c><00:05:44.800><c> gonna</c><00:05:44.960><c> make</c><00:05:45.199><c> sure</c>
+
+00:05:45.830 --> 00:05:45.840 align:start position:0%
+and then we're gonna make sure
+ 
+
+00:05:45.840 --> 00:05:47.749 align:start position:0%
+and then we're gonna make sure
+that<00:05:46.000><c> we're</c><00:05:46.160><c> placing</c><00:05:46.560><c> the</c><00:05:46.800><c> last</c><00:05:47.120><c> queen</c><00:05:47.440><c> in</c><00:05:47.600><c> a</c>
+
+00:05:47.749 --> 00:05:47.759 align:start position:0%
+that we're placing the last queen in a
+ 
+
+00:05:47.759 --> 00:05:48.870 align:start position:0%
+that we're placing the last queen in a
+valid<00:05:48.080><c> location</c>
+
+00:05:48.870 --> 00:05:48.880 align:start position:0%
+valid location
+ 
+
+00:05:48.880 --> 00:05:51.029 align:start position:0%
+valid location
+and<00:05:49.039><c> if</c><00:05:49.199><c> we</c><00:05:49.520><c> are</c><00:05:49.759><c> then</c><00:05:49.919><c> we're</c><00:05:50.160><c> done</c><00:05:50.479><c> right</c><00:05:50.639><c> so</c>
+
+00:05:51.029 --> 00:05:51.039 align:start position:0%
+and if we are then we're done right so
+ 
+
+00:05:51.039 --> 00:05:52.629 align:start position:0%
+and if we are then we're done right so
+we<00:05:51.280><c> are</c><00:05:51.360><c> gonna</c><00:05:51.520><c> have</c><00:05:51.600><c> to</c><00:05:51.680><c> keep</c><00:05:51.919><c> track</c><00:05:52.160><c> of</c><00:05:52.320><c> which</c>
+
+00:05:52.629 --> 00:05:52.639 align:start position:0%
+we are gonna have to keep track of which
+ 
+
+00:05:52.639 --> 00:05:54.230 align:start position:0%
+we are gonna have to keep track of which
+columns<00:05:53.199><c> we</c><00:05:53.360><c> place</c><00:05:53.680><c> a</c><00:05:53.840><c> queen</c>
+
+00:05:54.230 --> 00:05:54.240 align:start position:0%
+columns we place a queen
+ 
+
+00:05:54.240 --> 00:05:56.710 align:start position:0%
+columns we place a queen
+in<00:05:54.560><c> and</c><00:05:54.800><c> we're</c><00:05:54.960><c> gonna</c><00:05:55.120><c> have</c><00:05:55.199><c> to</c><00:05:55.280><c> keep</c><00:05:55.520><c> track</c><00:05:56.160><c> of</c>
+
+00:05:56.710 --> 00:05:56.720 align:start position:0%
+in and we're gonna have to keep track of
+ 
+
+00:05:56.720 --> 00:05:57.990 align:start position:0%
+in and we're gonna have to keep track of
+the<00:05:57.039><c> positive</c>
+
+00:05:57.990 --> 00:05:58.000 align:start position:0%
+the positive
+ 
+
+00:05:58.000 --> 00:06:00.629 align:start position:0%
+the positive
+diagonals<00:05:59.039><c> that</c><00:05:59.199><c> we're</c><00:05:59.360><c> placing</c><00:05:59.840><c> a</c><00:06:00.000><c> queen</c><00:06:00.319><c> in</c>
+
+00:06:00.629 --> 00:06:00.639 align:start position:0%
+diagonals that we're placing a queen in
+ 
+
+00:06:00.639 --> 00:06:02.070 align:start position:0%
+diagonals that we're placing a queen in
+and<00:06:00.800><c> we're</c><00:06:00.960><c> gonna</c><00:06:01.120><c> have</c><00:06:01.199><c> to</c><00:06:01.360><c> keep</c><00:06:01.600><c> track</c><00:06:01.919><c> of</c>
+
+00:06:02.070 --> 00:06:02.080 align:start position:0%
+and we're gonna have to keep track of
+ 
+
+00:06:02.080 --> 00:06:02.469 align:start position:0%
+and we're gonna have to keep track of
+the
+
+00:06:02.469 --> 00:06:02.479 align:start position:0%
+the
+ 
+
+00:06:02.479 --> 00:06:05.029 align:start position:0%
+the
+negative<00:06:03.280><c> diagonals</c><00:06:04.080><c> that</c><00:06:04.240><c> we're</c><00:06:04.479><c> placing</c><00:06:04.880><c> a</c>
+
+00:06:05.029 --> 00:06:05.039 align:start position:0%
+negative diagonals that we're placing a
+ 
+
+00:06:05.039 --> 00:06:06.390 align:start position:0%
+negative diagonals that we're placing a
+queen<00:06:05.280><c> in</c><00:06:05.440><c> and</c><00:06:05.520><c> we</c><00:06:05.680><c> can</c><00:06:05.919><c> uh</c>
+
+00:06:06.390 --> 00:06:06.400 align:start position:0%
+queen in and we can uh
+ 
+
+00:06:06.400 --> 00:06:08.950 align:start position:0%
+queen in and we can uh
+keep<00:06:06.639><c> track</c><00:06:06.880><c> of</c><00:06:07.120><c> all</c><00:06:07.280><c> of</c><00:06:07.440><c> these</c><00:06:07.840><c> with</c><00:06:08.080><c> a</c><00:06:08.400><c> set</c>
+
+00:06:08.950 --> 00:06:08.960 align:start position:0%
+keep track of all of these with a set
+ 
+
+00:06:08.960 --> 00:06:09.430 align:start position:0%
+keep track of all of these with a set
+right
+
+00:06:09.430 --> 00:06:09.440 align:start position:0%
+right
+ 
+
+00:06:09.440 --> 00:06:11.909 align:start position:0%
+right
+so<00:06:09.680><c> a</c><00:06:09.919><c> set</c><00:06:10.240><c> can</c><00:06:10.400><c> tell</c><00:06:10.639><c> us</c><00:06:10.880><c> a</c><00:06:11.039><c> hash</c><00:06:11.360><c> set</c><00:06:11.520><c> can</c><00:06:11.680><c> tell</c>
+
+00:06:11.909 --> 00:06:11.919 align:start position:0%
+so a set can tell us a hash set can tell
+ 
+
+00:06:11.919 --> 00:06:13.350 align:start position:0%
+so a set can tell us a hash set can tell
+us<00:06:12.080><c> which</c><00:06:12.400><c> column</c><00:06:12.720><c> of</c><00:06:12.880><c> zero</c>
+
+00:06:13.350 --> 00:06:13.360 align:start position:0%
+us which column of zero
+ 
+
+00:06:13.360 --> 00:06:15.990 align:start position:0%
+us which column of zero
+one<00:06:13.680><c> two</c><00:06:14.000><c> or</c><00:06:14.319><c> three</c><00:06:14.800><c> we</c><00:06:14.960><c> have</c><00:06:15.199><c> put</c><00:06:15.440><c> a</c><00:06:15.600><c> queen</c>
+
+00:06:15.990 --> 00:06:16.000 align:start position:0%
+one two or three we have put a queen
+ 
+
+00:06:16.000 --> 00:06:16.870 align:start position:0%
+one two or three we have put a queen
+already<00:06:16.560><c> in</c>
+
+00:06:16.870 --> 00:06:16.880 align:start position:0%
+already in
+ 
+
+00:06:16.880 --> 00:06:19.189 align:start position:0%
+already in
+and<00:06:16.960><c> we</c><00:06:17.120><c> can</c><00:06:17.280><c> do</c><00:06:17.440><c> the</c><00:06:17.600><c> same</c><00:06:17.919><c> for</c><00:06:18.319><c> a</c><00:06:18.639><c> positive</c>
+
+00:06:19.189 --> 00:06:19.199 align:start position:0%
+and we can do the same for a positive
+ 
+
+00:06:19.199 --> 00:06:20.070 align:start position:0%
+and we can do the same for a positive
+diagonal
+
+00:06:20.070 --> 00:06:20.080 align:start position:0%
+diagonal
+ 
+
+00:06:20.080 --> 00:06:22.150 align:start position:0%
+diagonal
+and<00:06:20.319><c> a</c><00:06:20.560><c> negative</c><00:06:20.960><c> diagonal</c><00:06:21.440><c> but</c><00:06:21.600><c> i</c><00:06:21.759><c> bet</c><00:06:21.919><c> you're</c>
+
+00:06:22.150 --> 00:06:22.160 align:start position:0%
+and a negative diagonal but i bet you're
+ 
+
+00:06:22.160 --> 00:06:23.909 align:start position:0%
+and a negative diagonal but i bet you're
+wondering<00:06:22.720><c> how</c><00:06:23.039><c> can</c><00:06:23.199><c> we</c><00:06:23.440><c> do</c><00:06:23.680><c> it</c>
+
+00:06:23.909 --> 00:06:23.919 align:start position:0%
+wondering how can we do it
+ 
+
+00:06:23.919 --> 00:06:26.070 align:start position:0%
+wondering how can we do it
+easily<00:06:24.639><c> with</c><00:06:24.960><c> positive</c><00:06:25.520><c> and</c><00:06:25.680><c> negative</c>
+
+00:06:26.070 --> 00:06:26.080 align:start position:0%
+easily with positive and negative
+ 
+
+00:06:26.080 --> 00:06:27.590 align:start position:0%
+easily with positive and negative
+diagonals<00:06:26.639><c> right</c><00:06:26.880><c> we</c><00:06:27.039><c> don't</c><00:06:27.199><c> have</c>
+
+00:06:27.590 --> 00:06:27.600 align:start position:0%
+diagonals right we don't have
+ 
+
+00:06:27.600 --> 00:06:29.990 align:start position:0%
+diagonals right we don't have
+indices<00:06:28.479><c> for</c><00:06:28.880><c> something</c><00:06:29.280><c> like</c><00:06:29.520><c> this</c><00:06:29.840><c> right</c>
+
+00:06:29.990 --> 00:06:30.000 align:start position:0%
+indices for something like this right
+ 
+
+00:06:30.000 --> 00:06:32.550 align:start position:0%
+indices for something like this right
+what<00:06:30.400><c> index</c><00:06:30.800><c> does</c><00:06:31.039><c> this</c><00:06:31.280><c> diagonal</c><00:06:31.759><c> belong</c><00:06:32.160><c> to</c>
+
+00:06:32.550 --> 00:06:32.560 align:start position:0%
+what index does this diagonal belong to
+ 
+
+00:06:32.560 --> 00:06:35.749 align:start position:0%
+what index does this diagonal belong to
+what<00:06:32.960><c> index</c><00:06:33.600><c> does</c><00:06:34.160><c> this</c><00:06:34.479><c> diagonal</c><00:06:35.199><c> belong</c><00:06:35.520><c> to</c>
+
+00:06:35.749 --> 00:06:35.759 align:start position:0%
+what index does this diagonal belong to
+ 
+
+00:06:35.759 --> 00:06:37.510 align:start position:0%
+what index does this diagonal belong to
+and<00:06:35.840><c> i'll</c><00:06:36.000><c> show</c><00:06:36.160><c> you</c><00:06:36.400><c> there's</c><00:06:36.639><c> a</c><00:06:36.800><c> bit</c><00:06:37.039><c> of</c><00:06:37.280><c> a</c>
+
+00:06:37.510 --> 00:06:37.520 align:start position:0%
+and i'll show you there's a bit of a
+ 
+
+00:06:37.520 --> 00:06:39.990 align:start position:0%
+and i'll show you there's a bit of a
+pattern<00:06:38.080><c> when</c><00:06:38.319><c> it</c><00:06:38.479><c> comes</c><00:06:38.800><c> to</c><00:06:39.039><c> diagonals</c>
+
+00:06:39.990 --> 00:06:40.000 align:start position:0%
+pattern when it comes to diagonals
+ 
+
+00:06:40.000 --> 00:06:40.710 align:start position:0%
+pattern when it comes to diagonals
+positive
+
+00:06:40.710 --> 00:06:40.720 align:start position:0%
+positive
+ 
+
+00:06:40.720 --> 00:06:43.270 align:start position:0%
+positive
+and<00:06:41.120><c> negative</c><00:06:41.520><c> diagonals</c><00:06:42.560><c> let's</c><00:06:42.800><c> say</c><00:06:43.039><c> we</c>
+
+00:06:43.270 --> 00:06:43.280 align:start position:0%
+and negative diagonals let's say we
+ 
+
+00:06:43.280 --> 00:06:44.870 align:start position:0%
+and negative diagonals let's say we
+start<00:06:43.520><c> at</c><00:06:43.680><c> the</c><00:06:43.840><c> origin</c><00:06:44.319><c> the</c><00:06:44.479><c> top</c>
+
+00:06:44.870 --> 00:06:44.880 align:start position:0%
+start at the origin the top
+ 
+
+00:06:44.880 --> 00:06:47.350 align:start position:0%
+start at the origin the top
+left<00:06:45.199><c> position</c><00:06:45.759><c> and</c><00:06:45.840><c> then</c><00:06:46.000><c> we</c><00:06:46.160><c> go</c><00:06:46.479><c> diagonally</c>
+
+00:06:47.350 --> 00:06:47.360 align:start position:0%
+left position and then we go diagonally
+ 
+
+00:06:47.360 --> 00:06:49.270 align:start position:0%
+left position and then we go diagonally
+bottom<00:06:47.919><c> right</c><00:06:48.240><c> so</c><00:06:48.479><c> this</c><00:06:48.639><c> is</c><00:06:48.800><c> what</c><00:06:49.039><c> i'm</c><00:06:49.199><c> going</c>
+
+00:06:49.270 --> 00:06:49.280 align:start position:0%
+bottom right so this is what i'm going
+ 
+
+00:06:49.280 --> 00:06:50.710 align:start position:0%
+bottom right so this is what i'm going
+to<00:06:49.440><c> refer</c><00:06:49.840><c> to</c><00:06:50.160><c> as</c><00:06:50.400><c> a</c>
+
+00:06:50.710 --> 00:06:50.720 align:start position:0%
+to refer to as a
+ 
+
+00:06:50.720 --> 00:06:53.350 align:start position:0%
+to refer to as a
+negative<00:06:51.199><c> diagonal</c><00:06:52.080><c> because</c><00:06:52.639><c> from</c><00:06:52.960><c> left</c><00:06:53.199><c> to</c>
+
+00:06:53.350 --> 00:06:53.360 align:start position:0%
+negative diagonal because from left to
+ 
+
+00:06:53.360 --> 00:06:53.749 align:start position:0%
+negative diagonal because from left to
+right
+
+00:06:53.749 --> 00:06:53.759 align:start position:0%
+right
+ 
+
+00:06:53.759 --> 00:06:56.870 align:start position:0%
+right
+we're<00:06:54.080><c> end</c><00:06:54.240><c> up</c><00:06:54.400><c> going</c><00:06:55.199><c> downwards</c><00:06:55.840><c> right</c><00:06:56.720><c> do</c>
+
+00:06:56.870 --> 00:06:56.880 align:start position:0%
+we're end up going downwards right do
+ 
+
+00:06:56.880 --> 00:06:57.189 align:start position:0%
+we're end up going downwards right do
+you
+
+00:06:57.189 --> 00:06:57.199 align:start position:0%
+you
+ 
+
+00:06:57.199 --> 00:06:59.189 align:start position:0%
+you
+notice<00:06:57.680><c> anything</c><00:06:58.080><c> about</c><00:06:58.319><c> this</c><00:06:58.560><c> diagonal</c><00:06:59.039><c> well</c>
+
+00:06:59.189 --> 00:06:59.199 align:start position:0%
+notice anything about this diagonal well
+ 
+
+00:06:59.199 --> 00:07:00.469 align:start position:0%
+notice anything about this diagonal well
+we're<00:06:59.520><c> starting</c><00:06:59.840><c> at</c><00:07:00.080><c> 0</c>
+
+00:07:00.469 --> 00:07:00.479 align:start position:0%
+we're starting at 0
+ 
+
+00:07:00.479 --> 00:07:03.510 align:start position:0%
+we're starting at 0
+0<00:07:00.800><c> right</c><00:07:00.960><c> the</c><00:07:01.199><c> row</c><00:07:01.520><c> and</c><00:07:01.759><c> column</c><00:07:02.160><c> are</c><00:07:02.400><c> 0</c><00:07:02.800><c> 0</c>
+
+00:07:03.510 --> 00:07:03.520 align:start position:0%
+0 right the row and column are 0 0
+ 
+
+00:07:03.520 --> 00:07:06.309 align:start position:0%
+0 right the row and column are 0 0
+as<00:07:03.759><c> we</c><00:07:04.000><c> move</c><00:07:04.400><c> diagonally</c><00:07:05.199><c> down</c><00:07:05.759><c> we</c><00:07:05.919><c> get</c><00:07:06.080><c> to</c>
+
+00:07:06.309 --> 00:07:06.319 align:start position:0%
+as we move diagonally down we get to
+ 
+
+00:07:06.319 --> 00:07:08.230 align:start position:0%
+as we move diagonally down we get to
+this<00:07:06.639><c> position</c><00:07:07.039><c> right</c><00:07:07.360><c> then</c><00:07:07.599><c> the</c><00:07:07.759><c> row</c><00:07:08.080><c> and</c>
+
+00:07:08.230 --> 00:07:08.240 align:start position:0%
+this position right then the row and
+ 
+
+00:07:08.240 --> 00:07:08.870 align:start position:0%
+this position right then the row and
+column<00:07:08.639><c> are</c>
+
+00:07:08.870 --> 00:07:08.880 align:start position:0%
+column are
+ 
+
+00:07:08.880 --> 00:07:11.430 align:start position:0%
+column are
+1<00:07:09.199><c> 1</c><00:07:09.840><c> then</c><00:07:10.080><c> we</c><00:07:10.240><c> get</c><00:07:10.400><c> to</c><00:07:10.639><c> this</c><00:07:10.880><c> position</c><00:07:11.280><c> where</c>
+
+00:07:11.430 --> 00:07:11.440 align:start position:0%
+1 1 then we get to this position where
+ 
+
+00:07:11.440 --> 00:07:13.589 align:start position:0%
+1 1 then we get to this position where
+the<00:07:11.599><c> row</c><00:07:11.840><c> and</c><00:07:11.919><c> column</c><00:07:12.319><c> are</c><00:07:12.479><c> 2</c><00:07:12.720><c> 2.</c><00:07:12.960><c> so</c><00:07:13.199><c> notice</c>
+
+00:07:13.589 --> 00:07:13.599 align:start position:0%
+the row and column are 2 2. so notice
+ 
+
+00:07:13.599 --> 00:07:13.909 align:start position:0%
+the row and column are 2 2. so notice
+how
+
+00:07:13.909 --> 00:07:13.919 align:start position:0%
+how
+ 
+
+00:07:13.919 --> 00:07:16.790 align:start position:0%
+how
+each<00:07:14.319><c> time</c><00:07:14.880><c> we're</c><00:07:15.360><c> increasing</c><00:07:16.160><c> the</c><00:07:16.560><c> the</c>
+
+00:07:16.790 --> 00:07:16.800 align:start position:0%
+each time we're increasing the the
+ 
+
+00:07:16.800 --> 00:07:18.309 align:start position:0%
+each time we're increasing the the
+column<00:07:17.199><c> value</c><00:07:17.599><c> by</c><00:07:17.840><c> one</c>
+
+00:07:18.309 --> 00:07:18.319 align:start position:0%
+column value by one
+ 
+
+00:07:18.319 --> 00:07:20.629 align:start position:0%
+column value by one
+and<00:07:18.479><c> we're</c><00:07:18.800><c> increasing</c><00:07:19.360><c> the</c><00:07:19.680><c> row</c><00:07:20.000><c> value</c><00:07:20.400><c> by</c>
+
+00:07:20.629 --> 00:07:20.639 align:start position:0%
+and we're increasing the row value by
+ 
+
+00:07:20.639 --> 00:07:21.909 align:start position:0%
+and we're increasing the row value by
+one<00:07:21.120><c> as</c><00:07:21.360><c> well</c>
+
+00:07:21.909 --> 00:07:21.919 align:start position:0%
+one as well
+ 
+
+00:07:21.919 --> 00:07:24.710 align:start position:0%
+one as well
+what<00:07:22.160><c> does</c><00:07:22.479><c> that</c><00:07:22.800><c> tell</c><00:07:23.039><c> us</c><00:07:23.520><c> that</c><00:07:23.840><c> tells</c><00:07:24.240><c> us</c>
+
+00:07:24.710 --> 00:07:24.720 align:start position:0%
+what does that tell us that tells us
+ 
+
+00:07:24.720 --> 00:07:25.510 align:start position:0%
+what does that tell us that tells us
+along
+
+00:07:25.510 --> 00:07:25.520 align:start position:0%
+along
+ 
+
+00:07:25.520 --> 00:07:27.909 align:start position:0%
+along
+this<00:07:25.840><c> diagonal</c><00:07:26.639><c> along</c><00:07:27.199><c> this</c><00:07:27.520><c> negative</c>
+
+00:07:27.909 --> 00:07:27.919 align:start position:0%
+this diagonal along this negative
+ 
+
+00:07:27.919 --> 00:07:28.710 align:start position:0%
+this diagonal along this negative
+diagonal
+
+00:07:28.710 --> 00:07:28.720 align:start position:0%
+diagonal
+ 
+
+00:07:28.720 --> 00:07:31.830 align:start position:0%
+diagonal
+the<00:07:28.960><c> computation</c><00:07:30.400><c> rho</c><00:07:31.199><c> minus</c>
+
+00:07:31.830 --> 00:07:31.840 align:start position:0%
+the computation rho minus
+ 
+
+00:07:31.840 --> 00:07:34.870 align:start position:0%
+the computation rho minus
+column<00:07:32.560><c> is</c><00:07:32.800><c> going</c><00:07:33.039><c> to</c><00:07:33.360><c> stay</c><00:07:34.000><c> constant</c>
+
+00:07:34.870 --> 00:07:34.880 align:start position:0%
+column is going to stay constant
+ 
+
+00:07:34.880 --> 00:07:36.950 align:start position:0%
+column is going to stay constant
+over<00:07:35.280><c> here</c><00:07:35.840><c> right</c><00:07:36.080><c> in</c><00:07:36.240><c> this</c><00:07:36.400><c> position</c><00:07:36.800><c> if</c><00:07:36.880><c> you</c>
+
+00:07:36.950 --> 00:07:36.960 align:start position:0%
+over here right in this position if you
+ 
+
+00:07:36.960 --> 00:07:39.110 align:start position:0%
+over here right in this position if you
+take<00:07:37.199><c> the</c><00:07:37.440><c> row</c><00:07:37.840><c> minus</c><00:07:38.240><c> the</c><00:07:38.400><c> column</c><00:07:38.720><c> we</c><00:07:38.880><c> get</c>
+
+00:07:39.110 --> 00:07:39.120 align:start position:0%
+take the row minus the column we get
+ 
+
+00:07:39.120 --> 00:07:40.550 align:start position:0%
+take the row minus the column we get
+zero<00:07:39.520><c> minus</c><00:07:39.919><c> zero</c>
+
+00:07:40.550 --> 00:07:40.560 align:start position:0%
+zero minus zero
+ 
+
+00:07:40.560 --> 00:07:42.710 align:start position:0%
+zero minus zero
+that<00:07:40.880><c> equals</c><00:07:41.280><c> zero</c><00:07:41.759><c> if</c><00:07:41.919><c> you</c><00:07:42.080><c> take</c><00:07:42.319><c> the</c><00:07:42.479><c> row</c>
+
+00:07:42.710 --> 00:07:42.720 align:start position:0%
+that equals zero if you take the row
+ 
+
+00:07:42.720 --> 00:07:44.469 align:start position:0%
+that equals zero if you take the row
+minus<00:07:43.039><c> column</c><00:07:43.360><c> in</c><00:07:43.440><c> this</c><00:07:43.680><c> position</c><00:07:44.080><c> we</c><00:07:44.160><c> get</c>
+
+00:07:44.469 --> 00:07:44.479 align:start position:0%
+minus column in this position we get
+ 
+
+00:07:44.479 --> 00:07:48.070 align:start position:0%
+minus column in this position we get
+two<00:07:45.120><c> minus</c><00:07:45.599><c> two</c><00:07:46.160><c> that</c><00:07:46.479><c> equals</c><00:07:46.879><c> zero</c><00:07:47.360><c> so</c><00:07:47.599><c> we</c><00:07:47.840><c> can</c>
+
+00:07:48.070 --> 00:07:48.080 align:start position:0%
+two minus two that equals zero so we can
+ 
+
+00:07:48.080 --> 00:07:48.950 align:start position:0%
+two minus two that equals zero so we can
+define
+
+00:07:48.950 --> 00:07:48.960 align:start position:0%
+define
+ 
+
+00:07:48.960 --> 00:07:51.909 align:start position:0%
+define
+this<00:07:49.280><c> particular</c><00:07:50.400><c> negative</c><00:07:50.879><c> diagonal</c><00:07:51.680><c> as</c>
+
+00:07:51.909 --> 00:07:51.919 align:start position:0%
+this particular negative diagonal as
+ 
+
+00:07:51.919 --> 00:07:52.469 align:start position:0%
+this particular negative diagonal as
+being
+
+00:07:52.469 --> 00:07:52.479 align:start position:0%
+being
+ 
+
+00:07:52.479 --> 00:07:55.589 align:start position:0%
+being
+the<00:07:52.800><c> zero</c><00:07:53.599><c> negative</c><00:07:54.080><c> diagonal</c><00:07:54.800><c> let's</c><00:07:55.120><c> try</c><00:07:55.440><c> it</c>
+
+00:07:55.589 --> 00:07:55.599 align:start position:0%
+the zero negative diagonal let's try it
+ 
+
+00:07:55.599 --> 00:07:57.670 align:start position:0%
+the zero negative diagonal let's try it
+out<00:07:55.759><c> on</c><00:07:55.919><c> a</c><00:07:56.160><c> different</c><00:07:56.560><c> negative</c><00:07:56.960><c> diagonal</c><00:07:57.440><c> to</c>
+
+00:07:57.670 --> 00:07:57.680 align:start position:0%
+out on a different negative diagonal to
+ 
+
+00:07:57.680 --> 00:07:59.350 align:start position:0%
+out on a different negative diagonal to
+see<00:07:57.919><c> if</c><00:07:58.080><c> our</c><00:07:58.319><c> pattern</c><00:07:58.800><c> holds</c>
+
+00:07:59.350 --> 00:07:59.360 align:start position:0%
+see if our pattern holds
+ 
+
+00:07:59.360 --> 00:08:01.909 align:start position:0%
+see if our pattern holds
+let's<00:07:59.680><c> start</c><00:08:00.080><c> over</c><00:08:00.560><c> here</c><00:08:01.360><c> at</c><00:08:01.520><c> a</c><00:08:01.599><c> different</c>
+
+00:08:01.909 --> 00:08:01.919 align:start position:0%
+let's start over here at a different
+ 
+
+00:08:01.919 --> 00:08:02.390 align:start position:0%
+let's start over here at a different
+position
+
+00:08:02.390 --> 00:08:02.400 align:start position:0%
+position
+ 
+
+00:08:02.400 --> 00:08:05.350 align:start position:0%
+position
+row<00:08:02.800><c> zero</c><00:08:03.680><c> column</c><00:08:04.080><c> two</c><00:08:04.560><c> and</c><00:08:04.800><c> then</c><00:08:05.120><c> go</c>
+
+00:08:05.350 --> 00:08:05.360 align:start position:0%
+row zero column two and then go
+ 
+
+00:08:05.360 --> 00:08:06.710 align:start position:0%
+row zero column two and then go
+diagonally<00:08:06.080><c> down</c>
+
+00:08:06.710 --> 00:08:06.720 align:start position:0%
+diagonally down
+ 
+
+00:08:06.720 --> 00:08:08.550 align:start position:0%
+diagonally down
+notice<00:08:07.120><c> how</c><00:08:07.599><c> whenever</c><00:08:08.000><c> we're</c><00:08:08.160><c> going</c>
+
+00:08:08.550 --> 00:08:08.560 align:start position:0%
+notice how whenever we're going
+ 
+
+00:08:08.560 --> 00:08:10.070 align:start position:0%
+notice how whenever we're going
+negatively<00:08:09.199><c> diagonal</c><00:08:09.759><c> we're</c>
+
+00:08:10.070 --> 00:08:10.080 align:start position:0%
+negatively diagonal we're
+ 
+
+00:08:10.080 --> 00:08:12.950 align:start position:0%
+negatively diagonal we're
+increasing<00:08:11.039><c> the</c><00:08:11.440><c> column</c><00:08:11.919><c> by</c><00:08:12.160><c> one</c><00:08:12.560><c> and</c><00:08:12.720><c> we're</c>
+
+00:08:12.950 --> 00:08:12.960 align:start position:0%
+increasing the column by one and we're
+ 
+
+00:08:12.960 --> 00:08:13.749 align:start position:0%
+increasing the column by one and we're
+increasing
+
+00:08:13.749 --> 00:08:13.759 align:start position:0%
+increasing
+ 
+
+00:08:13.759 --> 00:08:16.950 align:start position:0%
+increasing
+the<00:08:14.080><c> row</c><00:08:14.319><c> by</c><00:08:14.560><c> one</c><00:08:14.800><c> so</c><00:08:15.039><c> in</c><00:08:15.280><c> this</c><00:08:16.080><c> position</c>
+
+00:08:16.950 --> 00:08:16.960 align:start position:0%
+the row by one so in this position
+ 
+
+00:08:16.960 --> 00:08:20.469 align:start position:0%
+the row by one so in this position
+the<00:08:17.280><c> row</c><00:08:18.240><c> which</c><00:08:18.479><c> is</c><00:08:18.639><c> zero</c><00:08:19.280><c> minus</c><00:08:19.599><c> the</c><00:08:19.840><c> column</c>
+
+00:08:20.469 --> 00:08:20.479 align:start position:0%
+the row which is zero minus the column
+ 
+
+00:08:20.479 --> 00:08:23.990 align:start position:0%
+the row which is zero minus the column
+was<00:08:20.960><c> negative</c><00:08:21.919><c> two</c><00:08:22.479><c> right</c><00:08:22.960><c> zero</c><00:08:23.280><c> minus</c><00:08:23.680><c> two</c><00:08:23.919><c> is</c>
+
+00:08:23.990 --> 00:08:24.000 align:start position:0%
+was negative two right zero minus two is
+ 
+
+00:08:24.000 --> 00:08:24.710 align:start position:0%
+was negative two right zero minus two is
+negative<00:08:24.400><c> two</c>
+
+00:08:24.710 --> 00:08:24.720 align:start position:0%
+negative two
+ 
+
+00:08:24.720 --> 00:08:27.029 align:start position:0%
+negative two
+when<00:08:24.879><c> we</c><00:08:25.039><c> get</c><00:08:25.199><c> to</c><00:08:25.280><c> the</c><00:08:25.599><c> next</c><00:08:25.919><c> position</c><00:08:26.479><c> along</c>
+
+00:08:27.029 --> 00:08:27.039 align:start position:0%
+when we get to the next position along
+ 
+
+00:08:27.039 --> 00:08:28.309 align:start position:0%
+when we get to the next position along
+this<00:08:27.360><c> diagonal</c><00:08:27.840><c> we</c><00:08:28.000><c> get</c>
+
+00:08:28.309 --> 00:08:28.319 align:start position:0%
+this diagonal we get
+ 
+
+00:08:28.319 --> 00:08:32.230 align:start position:0%
+this diagonal we get
+one<00:08:29.039><c> minus</c><00:08:29.599><c> three</c><00:08:30.080><c> which</c><00:08:30.319><c> is</c><00:08:30.639><c> also</c><00:08:31.199><c> negative</c>
+
+00:08:32.230 --> 00:08:32.240 align:start position:0%
+one minus three which is also negative
+ 
+
+00:08:32.240 --> 00:08:34.310 align:start position:0%
+one minus three which is also negative
+negative<00:08:32.640><c> two</c><00:08:33.039><c> so</c><00:08:33.200><c> we</c><00:08:33.360><c> can</c><00:08:33.599><c> see</c><00:08:33.760><c> that</c><00:08:33.919><c> this</c>
+
+00:08:34.310 --> 00:08:34.320 align:start position:0%
+negative two so we can see that this
+ 
+
+00:08:34.320 --> 00:08:36.310 align:start position:0%
+negative two so we can see that this
+pattern<00:08:34.800><c> holds</c><00:08:35.200><c> the</c><00:08:35.440><c> negative</c><00:08:35.839><c> diagonal</c>
+
+00:08:36.310 --> 00:08:36.320 align:start position:0%
+pattern holds the negative diagonal
+ 
+
+00:08:36.320 --> 00:08:37.029 align:start position:0%
+pattern holds the negative diagonal
+along<00:08:36.719><c> this</c>
+
+00:08:37.029 --> 00:08:37.039 align:start position:0%
+along this
+ 
+
+00:08:37.039 --> 00:08:39.350 align:start position:0%
+along this
+is<00:08:37.120><c> going</c><00:08:37.279><c> to</c><00:08:37.440><c> be</c><00:08:37.599><c> the</c><00:08:37.760><c> negative</c><00:08:38.320><c> one</c><00:08:38.640><c> diagonal</c>
+
+00:08:39.350 --> 00:08:39.360 align:start position:0%
+is going to be the negative one diagonal
+ 
+
+00:08:39.360 --> 00:08:41.190 align:start position:0%
+is going to be the negative one diagonal
+the<00:08:39.839><c> negative</c><00:08:40.159><c> diagonal</c><00:08:40.719><c> along</c>
+
+00:08:41.190 --> 00:08:41.200 align:start position:0%
+the negative diagonal along
+ 
+
+00:08:41.200 --> 00:08:43.350 align:start position:0%
+the negative diagonal along
+this<00:08:41.519><c> path</c><00:08:41.919><c> is</c><00:08:42.080><c> going</c><00:08:42.240><c> to</c><00:08:42.399><c> be</c><00:08:42.640><c> positive</c><00:08:43.120><c> one</c>
+
+00:08:43.350 --> 00:08:43.360 align:start position:0%
+this path is going to be positive one
+ 
+
+00:08:43.360 --> 00:08:44.470 align:start position:0%
+this path is going to be positive one
+because<00:08:43.519><c> we</c><00:08:43.680><c> see</c><00:08:43.919><c> one</c>
+
+00:08:44.470 --> 00:08:44.480 align:start position:0%
+because we see one
+ 
+
+00:08:44.480 --> 00:08:47.269 align:start position:0%
+because we see one
+minus<00:08:44.800><c> zero</c><00:08:45.279><c> is</c><00:08:45.440><c> positive</c><00:08:46.000><c> one</c><00:08:46.640><c> so</c><00:08:46.880><c> i</c><00:08:47.040><c> just</c>
+
+00:08:47.269 --> 00:08:47.279 align:start position:0%
+minus zero is positive one so i just
+ 
+
+00:08:47.279 --> 00:08:49.190 align:start position:0%
+minus zero is positive one so i just
+drew<00:08:47.600><c> out</c><00:08:47.839><c> a</c><00:08:48.000><c> few</c><00:08:48.160><c> of</c><00:08:48.320><c> the</c><00:08:48.399><c> diagonals</c><00:08:49.040><c> if</c><00:08:49.120><c> you</c>
+
+00:08:49.190 --> 00:08:49.200 align:start position:0%
+drew out a few of the diagonals if you
+ 
+
+00:08:49.200 --> 00:08:50.550 align:start position:0%
+drew out a few of the diagonals if you
+want<00:08:49.360><c> to</c><00:08:49.440><c> visualize</c><00:08:49.920><c> it</c><00:08:50.000><c> you</c><00:08:50.080><c> can</c><00:08:50.160><c> see</c><00:08:50.399><c> this</c>
+
+00:08:50.550 --> 00:08:50.560 align:start position:0%
+want to visualize it you can see this
+ 
+
+00:08:50.560 --> 00:08:51.350 align:start position:0%
+want to visualize it you can see this
+diagonal
+
+00:08:51.350 --> 00:08:51.360 align:start position:0%
+diagonal
+ 
+
+00:08:51.360 --> 00:08:53.269 align:start position:0%
+diagonal
+is<00:08:51.519><c> constant</c><00:08:52.000><c> this</c><00:08:52.240><c> diagonal</c><00:08:52.640><c> is</c><00:08:52.800><c> constant</c>
+
+00:08:53.269 --> 00:08:53.279 align:start position:0%
+is constant this diagonal is constant
+ 
+
+00:08:53.279 --> 00:08:55.030 align:start position:0%
+is constant this diagonal is constant
+this<00:08:53.519><c> diagonal</c><00:08:54.080><c> is</c><00:08:54.160><c> constant</c><00:08:54.560><c> etcetera</c>
+
+00:08:55.030 --> 00:08:55.040 align:start position:0%
+this diagonal is constant etcetera
+ 
+
+00:08:55.040 --> 00:08:56.389 align:start position:0%
+this diagonal is constant etcetera
+etcetera<00:08:55.600><c> right</c>
+
+00:08:56.389 --> 00:08:56.399 align:start position:0%
+etcetera right
+ 
+
+00:08:56.399 --> 00:08:57.590 align:start position:0%
+etcetera right
+so<00:08:56.560><c> that's</c><00:08:56.800><c> how</c><00:08:56.880><c> we're</c><00:08:57.040><c> going</c><00:08:57.120><c> to</c><00:08:57.279><c> be</c><00:08:57.360><c> doing</c>
+
+00:08:57.590 --> 00:08:57.600 align:start position:0%
+so that's how we're going to be doing
+ 
+
+00:08:57.600 --> 00:08:59.590 align:start position:0%
+so that's how we're going to be doing
+negative<00:08:58.000><c> diagonals</c><00:08:58.640><c> is</c><00:08:58.720><c> there</c><00:08:58.959><c> a</c><00:08:59.120><c> similar</c>
+
+00:08:59.590 --> 00:08:59.600 align:start position:0%
+negative diagonals is there a similar
+ 
+
+00:08:59.600 --> 00:09:01.350 align:start position:0%
+negative diagonals is there a similar
+pattern<00:08:59.920><c> we</c><00:09:00.080><c> can</c><00:09:00.240><c> use</c><00:09:00.560><c> for</c><00:09:00.880><c> positive</c>
+
+00:09:01.350 --> 00:09:01.360 align:start position:0%
+pattern we can use for positive
+ 
+
+00:09:01.360 --> 00:09:03.509 align:start position:0%
+pattern we can use for positive
+diagonals<00:09:02.080><c> let's</c><00:09:02.399><c> see</c>
+
+00:09:03.509 --> 00:09:03.519 align:start position:0%
+diagonals let's see
+ 
+
+00:09:03.519 --> 00:09:05.350 align:start position:0%
+diagonals let's see
+so<00:09:03.760><c> let's</c><00:09:03.920><c> say</c><00:09:04.160><c> we</c><00:09:04.320><c> started</c><00:09:04.800><c> our</c><00:09:04.959><c> positive</c>
+
+00:09:05.350 --> 00:09:05.360 align:start position:0%
+so let's say we started our positive
+ 
+
+00:09:05.360 --> 00:09:06.790 align:start position:0%
+so let's say we started our positive
+diagonal<00:09:06.000><c> over</c><00:09:06.399><c> here</c>
+
+00:09:06.790 --> 00:09:06.800 align:start position:0%
+diagonal over here
+ 
+
+00:09:06.800 --> 00:09:09.829 align:start position:0%
+diagonal over here
+we<00:09:06.959><c> can</c><00:09:07.040><c> see</c><00:09:07.200><c> the</c><00:09:07.519><c> row</c><00:09:07.920><c> is</c><00:09:08.160><c> three</c><00:09:08.880><c> the</c><00:09:09.120><c> column</c>
+
+00:09:09.829 --> 00:09:09.839 align:start position:0%
+we can see the row is three the column
+ 
+
+00:09:09.839 --> 00:09:12.630 align:start position:0%
+we can see the row is three the column
+is<00:09:10.000><c> zero</c><00:09:10.399><c> and</c><00:09:10.560><c> then</c><00:09:11.040><c> we</c><00:09:11.200><c> go</c><00:09:11.680><c> diagonally</c><00:09:12.320><c> top</c>
+
+00:09:12.630 --> 00:09:12.640 align:start position:0%
+is zero and then we go diagonally top
+ 
+
+00:09:12.640 --> 00:09:13.670 align:start position:0%
+is zero and then we go diagonally top
+right<00:09:12.959><c> right</c><00:09:13.120><c> we</c><00:09:13.279><c> go</c>
+
+00:09:13.670 --> 00:09:13.680 align:start position:0%
+right right we go
+ 
+
+00:09:13.680 --> 00:09:15.670 align:start position:0%
+right right we go
+up<00:09:14.000><c> in</c><00:09:14.080><c> this</c><00:09:14.320><c> direction</c><00:09:14.720><c> now</c><00:09:14.959><c> notice</c><00:09:15.279><c> when</c><00:09:15.440><c> we</c>
+
+00:09:15.670 --> 00:09:15.680 align:start position:0%
+up in this direction now notice when we
+ 
+
+00:09:15.680 --> 00:09:17.110 align:start position:0%
+up in this direction now notice when we
+do<00:09:15.920><c> go</c><00:09:16.160><c> in</c><00:09:16.240><c> this</c><00:09:16.480><c> direction</c>
+
+00:09:17.110 --> 00:09:17.120 align:start position:0%
+do go in this direction
+ 
+
+00:09:17.120 --> 00:09:18.790 align:start position:0%
+do go in this direction
+we're<00:09:17.279><c> moving</c><00:09:17.600><c> to</c><00:09:17.760><c> the</c><00:09:17.920><c> right</c><00:09:18.399><c> we're</c>
+
+00:09:18.790 --> 00:09:18.800 align:start position:0%
+we're moving to the right we're
+ 
+
+00:09:18.800 --> 00:09:21.269 align:start position:0%
+we're moving to the right we're
+increasing<00:09:19.680><c> the</c><00:09:20.000><c> column</c><00:09:20.560><c> by</c><00:09:20.800><c> one</c>
+
+00:09:21.269 --> 00:09:21.279 align:start position:0%
+increasing the column by one
+ 
+
+00:09:21.279 --> 00:09:24.310 align:start position:0%
+increasing the column by one
+but<00:09:21.519><c> we're</c><00:09:21.959><c> decreasing</c><00:09:23.279><c> the</c><00:09:23.680><c> row</c>
+
+00:09:24.310 --> 00:09:24.320 align:start position:0%
+but we're decreasing the row
+ 
+
+00:09:24.320 --> 00:09:28.070 align:start position:0%
+but we're decreasing the row
+by<00:09:24.640><c> one</c><00:09:25.120><c> so</c><00:09:25.279><c> we</c><00:09:25.600><c> can't</c><00:09:26.000><c> use</c><00:09:26.560><c> row</c><00:09:26.959><c> minus</c><00:09:27.440><c> column</c>
+
+00:09:28.070 --> 00:09:28.080 align:start position:0%
+by one so we can't use row minus column
+ 
+
+00:09:28.080 --> 00:09:30.310 align:start position:0%
+by one so we can't use row minus column
+for<00:09:28.640><c> positive</c><00:09:29.200><c> diagonals</c><00:09:29.920><c> right</c><00:09:30.080><c> because</c>
+
+00:09:30.310 --> 00:09:30.320 align:start position:0%
+for positive diagonals right because
+ 
+
+00:09:30.320 --> 00:09:31.910 align:start position:0%
+for positive diagonals right because
+it's<00:09:30.480><c> not</c><00:09:30.640><c> going</c><00:09:30.800><c> to</c><00:09:30.880><c> stay</c><00:09:31.279><c> constant</c>
+
+00:09:31.910 --> 00:09:31.920 align:start position:0%
+it's not going to stay constant
+ 
+
+00:09:31.920 --> 00:09:33.670 align:start position:0%
+it's not going to stay constant
+over<00:09:32.160><c> here</c><00:09:32.399><c> the</c><00:09:32.560><c> row</c><00:09:32.800><c> minus</c><00:09:33.120><c> column</c><00:09:33.440><c> is</c><00:09:33.600><c> going</c>
+
+00:09:33.670 --> 00:09:33.680 align:start position:0%
+over here the row minus column is going
+ 
+
+00:09:33.680 --> 00:09:36.150 align:start position:0%
+over here the row minus column is going
+to<00:09:33.760><c> be</c><00:09:34.000><c> three</c><00:09:34.640><c> over</c><00:09:35.040><c> here</c><00:09:35.279><c> the</c><00:09:35.519><c> row</c><00:09:35.760><c> minus</c>
+
+00:09:36.150 --> 00:09:36.160 align:start position:0%
+to be three over here the row minus
+ 
+
+00:09:36.160 --> 00:09:37.110 align:start position:0%
+to be three over here the row minus
+column<00:09:36.480><c> is</c><00:09:36.640><c> going</c><00:09:36.720><c> to</c><00:09:36.800><c> be</c>
+
+00:09:37.110 --> 00:09:37.120 align:start position:0%
+column is going to be
+ 
+
+00:09:37.120 --> 00:09:39.670 align:start position:0%
+column is going to be
+1<00:09:37.519><c> so</c><00:09:37.680><c> it</c><00:09:37.839><c> doesn't</c><00:09:38.160><c> work</c><00:09:38.480><c> if</c><00:09:38.560><c> we</c><00:09:38.720><c> do</c><00:09:38.880><c> row</c><00:09:39.279><c> minus</c>
+
+00:09:39.670 --> 00:09:39.680 align:start position:0%
+1 so it doesn't work if we do row minus
+ 
+
+00:09:39.680 --> 00:09:40.150 align:start position:0%
+1 so it doesn't work if we do row minus
+column
+
+00:09:40.150 --> 00:09:40.160 align:start position:0%
+column
+ 
+
+00:09:40.160 --> 00:09:42.949 align:start position:0%
+column
+but<00:09:40.480><c> notice</c><00:09:41.120><c> since</c><00:09:41.360><c> we're</c><00:09:42.000><c> increasing</c><00:09:42.720><c> the</c>
+
+00:09:42.949 --> 00:09:42.959 align:start position:0%
+but notice since we're increasing the
+ 
+
+00:09:42.959 --> 00:09:43.670 align:start position:0%
+but notice since we're increasing the
+column
+
+00:09:43.670 --> 00:09:43.680 align:start position:0%
+column
+ 
+
+00:09:43.680 --> 00:09:45.509 align:start position:0%
+column
+going<00:09:44.000><c> in</c><00:09:44.080><c> this</c><00:09:44.320><c> direction</c><00:09:44.880><c> but</c><00:09:45.120><c> we're</c>
+
+00:09:45.509 --> 00:09:45.519 align:start position:0%
+going in this direction but we're
+ 
+
+00:09:45.519 --> 00:09:46.790 align:start position:0%
+going in this direction but we're
+decreasing
+
+00:09:46.790 --> 00:09:46.800 align:start position:0%
+decreasing
+ 
+
+00:09:46.800 --> 00:09:51.190 align:start position:0%
+decreasing
+the<00:09:47.600><c> row</c><00:09:48.320><c> that</c><00:09:48.560><c> means</c><00:09:49.279><c> row</c><00:09:49.839><c> plus</c><00:09:50.560><c> column</c>
+
+00:09:51.190 --> 00:09:51.200 align:start position:0%
+the row that means row plus column
+ 
+
+00:09:51.200 --> 00:09:54.230 align:start position:0%
+the row that means row plus column
+is<00:09:51.519><c> going</c><00:09:51.760><c> to</c><00:09:51.920><c> stay</c><00:09:52.240><c> the</c><00:09:52.399><c> same</c><00:09:52.800><c> right</c><00:09:53.440><c> the</c><00:09:53.760><c> sum</c>
+
+00:09:54.230 --> 00:09:54.240 align:start position:0%
+is going to stay the same right the sum
+ 
+
+00:09:54.240 --> 00:09:56.949 align:start position:0%
+is going to stay the same right the sum
+of<00:09:54.480><c> these</c><00:09:54.800><c> two</c><00:09:55.040><c> values</c><00:09:55.839><c> is</c><00:09:56.160><c> going</c><00:09:56.399><c> to</c><00:09:56.480><c> stay</c><00:09:56.800><c> the</c>
+
+00:09:56.949 --> 00:09:56.959 align:start position:0%
+of these two values is going to stay the
+ 
+
+00:09:56.959 --> 00:09:57.990 align:start position:0%
+of these two values is going to stay the
+same<00:09:57.200><c> because</c><00:09:57.440><c> we're</c>
+
+00:09:57.990 --> 00:09:58.000 align:start position:0%
+same because we're
+ 
+
+00:09:58.000 --> 00:10:00.070 align:start position:0%
+same because we're
+we're<00:09:58.240><c> decrementing</c><00:09:59.040><c> one</c><00:09:59.519><c> but</c><00:09:59.680><c> we're</c>
+
+00:10:00.070 --> 00:10:00.080 align:start position:0%
+we're decrementing one but we're
+ 
+
+00:10:00.080 --> 00:10:01.509 align:start position:0%
+we're decrementing one but we're
+increasing<00:10:00.720><c> the</c><00:10:00.959><c> other</c>
+
+00:10:01.509 --> 00:10:01.519 align:start position:0%
+increasing the other
+ 
+
+00:10:01.519 --> 00:10:03.670 align:start position:0%
+increasing the other
+for<00:10:01.680><c> example</c><00:10:02.240><c> in</c><00:10:02.399><c> this</c><00:10:02.640><c> position</c><00:10:03.120><c> row</c><00:10:03.440><c> plus</c>
+
+00:10:03.670 --> 00:10:03.680 align:start position:0%
+for example in this position row plus
+ 
+
+00:10:03.680 --> 00:10:04.710 align:start position:0%
+for example in this position row plus
+column<00:10:04.000><c> is</c><00:10:04.240><c> three</c>
+
+00:10:04.710 --> 00:10:04.720 align:start position:0%
+column is three
+ 
+
+00:10:04.720 --> 00:10:07.350 align:start position:0%
+column is three
+in<00:10:04.880><c> this</c><00:10:05.120><c> position</c><00:10:05.519><c> row</c><00:10:05.839><c> plus</c><00:10:06.079><c> column</c><00:10:06.640><c> is</c><00:10:06.880><c> also</c>
+
+00:10:07.350 --> 00:10:07.360 align:start position:0%
+in this position row plus column is also
+ 
+
+00:10:07.360 --> 00:10:07.829 align:start position:0%
+in this position row plus column is also
+three
+
+00:10:07.829 --> 00:10:07.839 align:start position:0%
+three
+ 
+
+00:10:07.839 --> 00:10:09.750 align:start position:0%
+three
+right<00:10:08.079><c> so</c><00:10:08.320><c> it's</c><00:10:08.640><c> going</c><00:10:08.800><c> to</c><00:10:08.880><c> be</c><00:10:09.040><c> three</c><00:10:09.440><c> all</c><00:10:09.600><c> the</c>
+
+00:10:09.750 --> 00:10:09.760 align:start position:0%
+right so it's going to be three all the
+ 
+
+00:10:09.760 --> 00:10:10.949 align:start position:0%
+right so it's going to be three all the
+way<00:10:10.240><c> what</c><00:10:10.399><c> about</c>
+
+00:10:10.949 --> 00:10:10.959 align:start position:0%
+way what about
+ 
+
+00:10:10.959 --> 00:10:13.110 align:start position:0%
+way what about
+this<00:10:11.440><c> diagonal</c><00:10:12.000><c> does</c><00:10:12.240><c> it</c><00:10:12.320><c> also</c><00:10:12.560><c> work</c><00:10:12.880><c> well</c>
+
+00:10:13.110 --> 00:10:13.120 align:start position:0%
+this diagonal does it also work well
+ 
+
+00:10:13.120 --> 00:10:14.230 align:start position:0%
+this diagonal does it also work well
+three<00:10:13.760><c> plus</c>
+
+00:10:14.230 --> 00:10:14.240 align:start position:0%
+three plus
+ 
+
+00:10:14.240 --> 00:10:17.350 align:start position:0%
+three plus
+one<00:10:14.720><c> that's</c><00:10:15.120><c> four</c><00:10:15.920><c> in</c><00:10:16.079><c> this</c><00:10:16.320><c> position</c>
+
+00:10:17.350 --> 00:10:17.360 align:start position:0%
+one that's four in this position
+ 
+
+00:10:17.360 --> 00:10:20.630 align:start position:0%
+one that's four in this position
+two<00:10:17.920><c> plus</c><00:10:18.399><c> two</c><00:10:18.959><c> that's</c><00:10:19.360><c> four</c><00:10:20.000><c> and</c><00:10:20.240><c> this</c><00:10:20.480><c> is</c>
+
+00:10:20.630 --> 00:10:20.640 align:start position:0%
+two plus two that's four and this is
+ 
+
+00:10:20.640 --> 00:10:22.389 align:start position:0%
+two plus two that's four and this is
+also<00:10:20.959><c> going</c><00:10:21.120><c> to</c><00:10:21.279><c> be</c><00:10:21.440><c> four</c><00:10:21.680><c> so</c><00:10:21.839><c> you</c><00:10:21.920><c> can</c><00:10:22.079><c> see</c>
+
+00:10:22.389 --> 00:10:22.399 align:start position:0%
+also going to be four so you can see
+ 
+
+00:10:22.399 --> 00:10:24.870 align:start position:0%
+also going to be four so you can see
+positive<00:10:22.959><c> diagonals</c><00:10:23.680><c> can</c><00:10:23.920><c> be</c><00:10:24.079><c> determined</c>
+
+00:10:24.870 --> 00:10:24.880 align:start position:0%
+positive diagonals can be determined
+ 
+
+00:10:24.880 --> 00:10:25.590 align:start position:0%
+positive diagonals can be determined
+with<00:10:25.200><c> r</c>
+
+00:10:25.590 --> 00:10:25.600 align:start position:0%
+with r
+ 
+
+00:10:25.600 --> 00:10:28.870 align:start position:0%
+with r
+plus<00:10:26.000><c> c</c><00:10:26.640><c> turns</c><00:10:27.040><c> out</c><00:10:27.279><c> that</c><00:10:27.519><c> these</c><00:10:28.000><c> three</c><00:10:28.399><c> sets</c>
+
+00:10:28.870 --> 00:10:28.880 align:start position:0%
+plus c turns out that these three sets
+ 
+
+00:10:28.880 --> 00:10:31.670 align:start position:0%
+plus c turns out that these three sets
+are<00:10:29.040><c> the</c><00:10:29.279><c> only</c><00:10:29.839><c> information</c><00:10:30.640><c> we</c><00:10:30.880><c> need</c><00:10:31.200><c> then</c><00:10:31.519><c> we</c>
+
+00:10:31.670 --> 00:10:31.680 align:start position:0%
+are the only information we need then we
+ 
+
+00:10:31.680 --> 00:10:31.990 align:start position:0%
+are the only information we need then we
+can
+
+00:10:31.990 --> 00:10:32.000 align:start position:0%
+can
+ 
+
+00:10:32.000 --> 00:10:35.269 align:start position:0%
+can
+brute<00:10:32.480><c> force</c><00:10:33.200><c> start</c><00:10:33.760><c> placing</c><00:10:34.399><c> queens</c><00:10:34.959><c> how's</c>
+
+00:10:35.269 --> 00:10:35.279 align:start position:0%
+brute force start placing queens how's
+ 
+
+00:10:35.279 --> 00:10:36.550 align:start position:0%
+brute force start placing queens how's
+the<00:10:35.440><c> algorithm</c><00:10:35.920><c> going</c><00:10:36.000><c> to</c><00:10:36.160><c> go</c>
+
+00:10:36.550 --> 00:10:36.560 align:start position:0%
+the algorithm going to go
+ 
+
+00:10:36.560 --> 00:10:38.710 align:start position:0%
+the algorithm going to go
+like<00:10:36.800><c> i</c><00:10:36.959><c> mentioned</c><00:10:37.519><c> we're</c><00:10:37.680><c> going</c><00:10:37.760><c> to</c><00:10:37.920><c> try</c><00:10:38.480><c> each</c>
+
+00:10:38.710 --> 00:10:38.720 align:start position:0%
+like i mentioned we're going to try each
+ 
+
+00:10:38.720 --> 00:10:40.150 align:start position:0%
+like i mentioned we're going to try each
+of<00:10:38.880><c> the</c><00:10:39.200><c> four</c><00:10:39.519><c> positions</c>
+
+00:10:40.150 --> 00:10:40.160 align:start position:0%
+of the four positions
+ 
+
+00:10:40.160 --> 00:10:43.030 align:start position:0%
+of the four positions
+in<00:10:40.240><c> the</c><00:10:40.480><c> first</c><00:10:41.200><c> row</c><00:10:41.760><c> right</c><00:10:42.240><c> and</c><00:10:42.399><c> for</c><00:10:42.640><c> each</c><00:10:42.880><c> of</c>
+
+00:10:43.030 --> 00:10:43.040 align:start position:0%
+in the first row right and for each of
+ 
+
+00:10:43.040 --> 00:10:44.389 align:start position:0%
+in the first row right and for each of
+them<00:10:43.279><c> so</c><00:10:43.440><c> the</c><00:10:43.600><c> decision</c><00:10:43.920><c> tree</c><00:10:44.160><c> is</c><00:10:44.240><c> going</c><00:10:44.320><c> to</c>
+
+00:10:44.389 --> 00:10:44.399 align:start position:0%
+them so the decision tree is going to
+ 
+
+00:10:44.399 --> 00:10:46.550 align:start position:0%
+them so the decision tree is going to
+look<00:10:44.560><c> something</c><00:10:44.959><c> like</c><00:10:45.200><c> this</c><00:10:45.440><c> right</c><00:10:45.600><c> we'll</c><00:10:45.839><c> try</c>
+
+00:10:46.550 --> 00:10:46.560 align:start position:0%
+look something like this right we'll try
+ 
+
+00:10:46.560 --> 00:10:48.870 align:start position:0%
+look something like this right we'll try
+a<00:10:46.800><c> queen</c><00:10:47.200><c> in</c><00:10:47.360><c> position</c><00:10:47.839><c> 0.</c><00:10:48.160><c> we'll</c><00:10:48.320><c> try</c><00:10:48.480><c> a</c><00:10:48.640><c> queen</c>
+
+00:10:48.870 --> 00:10:48.880 align:start position:0%
+a queen in position 0. we'll try a queen
+ 
+
+00:10:48.880 --> 00:10:49.990 align:start position:0%
+a queen in position 0. we'll try a queen
+in<00:10:48.959><c> position</c><00:10:49.440><c> 1</c>
+
+00:10:49.990 --> 00:10:50.000 align:start position:0%
+in position 1
+ 
+
+00:10:50.000 --> 00:10:53.509 align:start position:0%
+in position 1
+position<00:10:50.480><c> 2</c><00:10:51.120><c> position</c><00:10:52.399><c> 3</c><00:10:52.800><c> right</c><00:10:53.040><c> and</c><00:10:53.120><c> this</c><00:10:53.279><c> is</c>
+
+00:10:53.509 --> 00:10:53.519 align:start position:0%
+position 2 position 3 right and this is
+ 
+
+00:10:53.519 --> 00:10:55.670 align:start position:0%
+position 2 position 3 right and this is
+all<00:10:53.680><c> for</c><00:10:53.839><c> the</c><00:10:54.160><c> first</c><00:10:54.640><c> row</c><00:10:55.120><c> and</c><00:10:55.200><c> we'll</c><00:10:55.360><c> do</c><00:10:55.519><c> the</c>
+
+00:10:55.670 --> 00:10:55.680 align:start position:0%
+all for the first row and we'll do the
+ 
+
+00:10:55.680 --> 00:10:56.949 align:start position:0%
+all for the first row and we'll do the
+exact<00:10:56.399><c> same</c>
+
+00:10:56.949 --> 00:10:56.959 align:start position:0%
+exact same
+ 
+
+00:10:56.959 --> 00:11:00.310 align:start position:0%
+exact same
+thing<00:10:58.160><c> continuously</c><00:10:58.959><c> right</c><00:10:59.200><c> for</c><00:10:59.680><c> if</c><00:10:59.839><c> we</c><00:11:00.000><c> put</c><00:11:00.160><c> a</c>
+
+00:11:00.310 --> 00:11:00.320 align:start position:0%
+thing continuously right for if we put a
+ 
+
+00:11:00.320 --> 00:11:01.030 align:start position:0%
+thing continuously right for if we put a
+queen<00:11:00.640><c> here</c>
+
+00:11:01.030 --> 00:11:01.040 align:start position:0%
+queen here
+ 
+
+00:11:01.040 --> 00:11:02.630 align:start position:0%
+queen here
+then<00:11:01.279><c> could</c><00:11:01.440><c> we</c><00:11:01.600><c> pl</c><00:11:01.920><c> then</c><00:11:02.079><c> we're</c><00:11:02.240><c> gonna</c><00:11:02.480><c> you</c>
+
+00:11:02.630 --> 00:11:02.640 align:start position:0%
+then could we pl then we're gonna you
+ 
+
+00:11:02.640 --> 00:11:04.710 align:start position:0%
+then could we pl then we're gonna you
+know<00:11:02.800><c> try</c><00:11:03.120><c> a</c><00:11:03.279><c> queen</c><00:11:03.519><c> in</c><00:11:03.760><c> all</c><00:11:03.920><c> the</c><00:11:04.079><c> other</c><00:11:04.399><c> four</c>
+
+00:11:04.710 --> 00:11:04.720 align:start position:0%
+know try a queen in all the other four
+ 
+
+00:11:04.720 --> 00:11:06.069 align:start position:0%
+know try a queen in all the other four
+places<00:11:05.279><c> so</c>
+
+00:11:06.069 --> 00:11:06.079 align:start position:0%
+places so
+ 
+
+00:11:06.079 --> 00:11:09.030 align:start position:0%
+places so
+two<00:11:06.880><c> three</c><00:11:07.600><c> now</c><00:11:07.839><c> if</c><00:11:08.000><c> we</c><00:11:08.160><c> place</c><00:11:08.480><c> the</c><00:11:08.640><c> queen</c><00:11:08.880><c> here</c>
+
+00:11:09.030 --> 00:11:09.040 align:start position:0%
+two three now if we place the queen here
+ 
+
+00:11:09.040 --> 00:11:10.790 align:start position:0%
+two three now if we place the queen here
+that<00:11:09.200><c> means</c><00:11:09.440><c> we</c><00:11:09.519><c> put</c><00:11:09.680><c> a</c><00:11:09.760><c> queen</c><00:11:10.079><c> here</c><00:11:10.399><c> so</c><00:11:10.560><c> then</c>
+
+00:11:10.790 --> 00:11:10.800 align:start position:0%
+that means we put a queen here so then
+ 
+
+00:11:10.800 --> 00:11:12.790 align:start position:0%
+that means we put a queen here so then
+could<00:11:10.959><c> we</c><00:11:11.120><c> put</c><00:11:11.279><c> a</c><00:11:11.440><c> second</c><00:11:11.839><c> queen</c><00:11:12.160><c> in</c><00:11:12.320><c> the</c><00:11:12.399><c> same</c>
+
+00:11:12.790 --> 00:11:12.800 align:start position:0%
+could we put a second queen in the same
+ 
+
+00:11:12.800 --> 00:11:13.430 align:start position:0%
+could we put a second queen in the same
+column
+
+00:11:13.430 --> 00:11:13.440 align:start position:0%
+column
+ 
+
+00:11:13.440 --> 00:11:15.030 align:start position:0%
+column
+no<00:11:13.920><c> that's</c><00:11:14.160><c> how</c><00:11:14.320><c> we're</c><00:11:14.480><c> going</c><00:11:14.560><c> to</c><00:11:14.720><c> know</c><00:11:14.880><c> how</c>
+
+00:11:15.030 --> 00:11:15.040 align:start position:0%
+no that's how we're going to know how
+ 
+
+00:11:15.040 --> 00:11:16.710 align:start position:0%
+no that's how we're going to know how
+are<00:11:15.120><c> we</c><00:11:15.279><c> going</c><00:11:15.360><c> to</c><00:11:15.440><c> detect</c><00:11:15.920><c> that</c><00:11:16.160><c> we</c><00:11:16.320><c> can't</c><00:11:16.560><c> do</c>
+
+00:11:16.710 --> 00:11:16.720 align:start position:0%
+are we going to detect that we can't do
+ 
+
+00:11:16.720 --> 00:11:17.110 align:start position:0%
+are we going to detect that we can't do
+this
+
+00:11:17.110 --> 00:11:17.120 align:start position:0%
+this
+ 
+
+00:11:17.120 --> 00:11:18.550 align:start position:0%
+this
+we're<00:11:17.279><c> going</c><00:11:17.360><c> to</c><00:11:17.440><c> see</c><00:11:17.600><c> that</c><00:11:17.760><c> a</c><00:11:18.000><c> queen</c><00:11:18.320><c> has</c>
+
+00:11:18.550 --> 00:11:18.560 align:start position:0%
+we're going to see that a queen has
+ 
+
+00:11:18.560 --> 00:11:20.870 align:start position:0%
+we're going to see that a queen has
+already<00:11:18.959><c> been</c><00:11:19.279><c> placed</c><00:11:19.600><c> in</c><00:11:19.760><c> the</c><00:11:19.920><c> same</c><00:11:20.320><c> column</c>
+
+00:11:20.870 --> 00:11:20.880 align:start position:0%
+already been placed in the same column
+ 
+
+00:11:20.880 --> 00:11:23.190 align:start position:0%
+already been placed in the same column
+set<00:11:21.279><c> so</c><00:11:21.440><c> we're</c><00:11:21.680><c> not</c><00:11:21.920><c> going</c><00:11:22.000><c> to</c><00:11:22.160><c> do</c><00:11:22.480><c> that</c><00:11:22.800><c> right</c>
+
+00:11:23.190 --> 00:11:23.200 align:start position:0%
+set so we're not going to do that right
+ 
+
+00:11:23.200 --> 00:11:24.949 align:start position:0%
+set so we're not going to do that right
+so<00:11:23.360><c> we</c><00:11:23.600><c> can't</c><00:11:23.839><c> place</c><00:11:24.160><c> a</c><00:11:24.240><c> queen</c><00:11:24.560><c> here</c>
+
+00:11:24.949 --> 00:11:24.959 align:start position:0%
+so we can't place a queen here
+ 
+
+00:11:24.959 --> 00:11:28.550 align:start position:0%
+so we can't place a queen here
+what<00:11:25.200><c> about</c><00:11:25.440><c> position</c><00:11:26.160><c> 1</c><00:11:26.800><c> well</c><00:11:27.760><c> it's</c><00:11:28.079><c> clearly</c>
+
+00:11:28.550 --> 00:11:28.560 align:start position:0%
+what about position 1 well it's clearly
+ 
+
+00:11:28.560 --> 00:11:29.430 align:start position:0%
+what about position 1 well it's clearly
+not<00:11:28.800><c> in</c><00:11:28.880><c> the</c><00:11:29.040><c> same</c>
+
+00:11:29.430 --> 00:11:29.440 align:start position:0%
+not in the same
+ 
+
+00:11:29.440 --> 00:11:31.269 align:start position:0%
+not in the same
+column<00:11:29.839><c> right</c><00:11:30.079><c> why</c><00:11:30.399><c> shouldn't</c><00:11:30.720><c> i</c><00:11:30.800><c> be</c><00:11:30.959><c> able</c><00:11:31.120><c> to</c>
+
+00:11:31.269 --> 00:11:31.279 align:start position:0%
+column right why shouldn't i be able to
+ 
+
+00:11:31.279 --> 00:11:33.110 align:start position:0%
+column right why shouldn't i be able to
+place<00:11:31.519><c> a</c><00:11:31.680><c> queen</c><00:11:32.000><c> over</c><00:11:32.240><c> here</c><00:11:32.560><c> well</c>
+
+00:11:33.110 --> 00:11:33.120 align:start position:0%
+place a queen over here well
+ 
+
+00:11:33.120 --> 00:11:35.190 align:start position:0%
+place a queen over here well
+it<00:11:33.279><c> turns</c><00:11:33.600><c> out</c><00:11:33.839><c> that</c><00:11:34.160><c> it's</c><00:11:34.480><c> already</c><00:11:34.880><c> been</c>
+
+00:11:35.190 --> 00:11:35.200 align:start position:0%
+it turns out that it's already been
+ 
+
+00:11:35.200 --> 00:11:37.269 align:start position:0%
+it turns out that it's already been
+added<00:11:35.519><c> to</c><00:11:35.760><c> the</c><00:11:36.000><c> negative</c><00:11:36.480><c> diagonal</c>
+
+00:11:37.269 --> 00:11:37.279 align:start position:0%
+added to the negative diagonal
+ 
+
+00:11:37.279 --> 00:11:39.110 align:start position:0%
+added to the negative diagonal
+this<00:11:37.600><c> position</c><00:11:38.079><c> means</c><00:11:38.560><c> the</c><00:11:38.720><c> negative</c>
+
+00:11:39.110 --> 00:11:39.120 align:start position:0%
+this position means the negative
+ 
+
+00:11:39.120 --> 00:11:41.350 align:start position:0%
+this position means the negative
+diagonal<00:11:39.680><c> is</c><00:11:39.839><c> zero</c><00:11:40.240><c> row</c><00:11:40.480><c> minus</c><00:11:40.880><c> column</c><00:11:41.200><c> is</c>
+
+00:11:41.350 --> 00:11:41.360 align:start position:0%
+diagonal is zero row minus column is
+ 
+
+00:11:41.360 --> 00:11:41.990 align:start position:0%
+diagonal is zero row minus column is
+zero
+
+00:11:41.990 --> 00:11:42.000 align:start position:0%
+zero
+ 
+
+00:11:42.000 --> 00:11:45.190 align:start position:0%
+zero
+so<00:11:42.560><c> this</c><00:11:43.120><c> position</c><00:11:43.600><c> is</c><00:11:43.760><c> also</c><00:11:44.399><c> row</c><00:11:44.800><c> minus</c>
+
+00:11:45.190 --> 00:11:45.200 align:start position:0%
+so this position is also row minus
+ 
+
+00:11:45.200 --> 00:11:45.670 align:start position:0%
+so this position is also row minus
+column
+
+00:11:45.670 --> 00:11:45.680 align:start position:0%
+column
+ 
+
+00:11:45.680 --> 00:11:48.230 align:start position:0%
+column
+zero<00:11:46.160><c> that</c><00:11:46.320><c> means</c><00:11:47.120><c> the</c><00:11:47.360><c> negative</c><00:11:47.760><c> diagonal</c>
+
+00:11:48.230 --> 00:11:48.240 align:start position:0%
+zero that means the negative diagonal
+ 
+
+00:11:48.240 --> 00:11:50.470 align:start position:0%
+zero that means the negative diagonal
+has<00:11:48.480><c> already</c><00:11:48.880><c> been</c><00:11:49.120><c> used</c><00:11:49.440><c> so</c><00:11:49.600><c> we</c><00:11:49.839><c> also</c>
+
+00:11:50.470 --> 00:11:50.480 align:start position:0%
+has already been used so we also
+ 
+
+00:11:50.480 --> 00:11:52.389 align:start position:0%
+has already been used so we also
+can't<00:11:50.800><c> put</c><00:11:51.040><c> a</c><00:11:51.200><c> queen</c><00:11:51.680><c> in</c><00:11:51.839><c> this</c><00:11:52.079><c> second</c>
+
+00:11:52.389 --> 00:11:52.399 align:start position:0%
+can't put a queen in this second
+ 
+
+00:11:52.399 --> 00:11:53.590 align:start position:0%
+can't put a queen in this second
+position<00:11:52.800><c> so</c><00:11:53.040><c> this</c>
+
+00:11:53.590 --> 00:11:53.600 align:start position:0%
+position so this
+ 
+
+00:11:53.600 --> 00:11:55.910 align:start position:0%
+position so this
+path<00:11:53.920><c> in</c><00:11:54.079><c> our</c><00:11:54.240><c> decision</c><00:11:54.639><c> tree</c><00:11:54.959><c> also</c><00:11:55.360><c> does</c><00:11:55.600><c> not</c>
+
+00:11:55.910 --> 00:11:55.920 align:start position:0%
+path in our decision tree also does not
+ 
+
+00:11:55.920 --> 00:11:57.829 align:start position:0%
+path in our decision tree also does not
+work<00:11:56.560><c> can</c><00:11:56.800><c> we</c><00:11:56.959><c> put</c><00:11:57.120><c> a</c><00:11:57.200><c> queen</c>
+
+00:11:57.829 --> 00:11:57.839 align:start position:0%
+work can we put a queen
+ 
+
+00:11:57.839 --> 00:12:00.790 align:start position:0%
+work can we put a queen
+over<00:11:58.160><c> here</c><00:11:58.720><c> in</c><00:11:58.880><c> this</c><00:11:59.120><c> position</c><00:11:59.600><c> yes</c><00:11:59.920><c> we</c><00:12:00.079><c> can</c><00:12:00.560><c> it</c>
+
+00:12:00.790 --> 00:12:00.800 align:start position:0%
+over here in this position yes we can it
+ 
+
+00:12:00.800 --> 00:12:01.509 align:start position:0%
+over here in this position yes we can it
+doesn't
+
+00:12:01.509 --> 00:12:01.519 align:start position:0%
+doesn't
+ 
+
+00:12:01.519 --> 00:12:03.990 align:start position:0%
+doesn't
+overlap<00:12:02.079><c> with</c><00:12:02.240><c> the</c><00:12:02.399><c> positive</c><00:12:02.959><c> diagonal</c><00:12:03.680><c> and</c>
+
+00:12:03.990 --> 00:12:04.000 align:start position:0%
+overlap with the positive diagonal and
+ 
+
+00:12:04.000 --> 00:12:05.190 align:start position:0%
+overlap with the positive diagonal and
+it<00:12:04.160><c> doesn't</c><00:12:04.480><c> overlap</c>
+
+00:12:05.190 --> 00:12:05.200 align:start position:0%
+it doesn't overlap
+ 
+
+00:12:05.200 --> 00:12:07.509 align:start position:0%
+it doesn't overlap
+with<00:12:05.600><c> the</c><00:12:06.000><c> negative</c><00:12:06.399><c> diagonal</c><00:12:07.040><c> and</c><00:12:07.360><c> they're</c>
+
+00:12:07.509 --> 00:12:07.519 align:start position:0%
+with the negative diagonal and they're
+ 
+
+00:12:07.519 --> 00:12:09.509 align:start position:0%
+with the negative diagonal and they're
+not<00:12:07.760><c> in</c><00:12:07.920><c> the</c><00:12:08.000><c> same</c><00:12:08.399><c> column</c><00:12:08.720><c> right</c><00:12:08.959><c> so</c><00:12:09.120><c> we</c><00:12:09.279><c> can</c>
+
+00:12:09.509 --> 00:12:09.519 align:start position:0%
+not in the same column right so we can
+ 
+
+00:12:09.519 --> 00:12:10.069 align:start position:0%
+not in the same column right so we can
+continue
+
+00:12:10.069 --> 00:12:10.079 align:start position:0%
+continue
+ 
+
+00:12:10.079 --> 00:12:13.030 align:start position:0%
+continue
+this<00:12:10.320><c> one</c><00:12:10.639><c> and</c><00:12:10.800><c> we</c><00:12:10.959><c> can</c><00:12:11.279><c> also</c><00:12:11.680><c> continue</c><00:12:12.480><c> in</c>
+
+00:12:13.030 --> 00:12:13.040 align:start position:0%
+this one and we can also continue in
+ 
+
+00:12:13.040 --> 00:12:14.870 align:start position:0%
+this one and we can also continue in
+this<00:12:13.279><c> one</c><00:12:13.519><c> right</c><00:12:13.760><c> it's</c><00:12:13.920><c> also</c><00:12:14.240><c> not</c><00:12:14.480><c> in</c><00:12:14.560><c> the</c><00:12:14.639><c> same</c>
+
+00:12:14.870 --> 00:12:14.880 align:start position:0%
+this one right it's also not in the same
+ 
+
+00:12:14.880 --> 00:12:16.310 align:start position:0%
+this one right it's also not in the same
+positive<00:12:15.279><c> or</c><00:12:15.440><c> negative</c><00:12:15.760><c> diagonal</c>
+
+00:12:16.310 --> 00:12:16.320 align:start position:0%
+positive or negative diagonal
+ 
+
+00:12:16.320 --> 00:12:18.389 align:start position:0%
+positive or negative diagonal
+also<00:12:16.639><c> not</c><00:12:16.880><c> in</c><00:12:16.959><c> the</c><00:12:17.120><c> same</c><00:12:17.440><c> column</c><00:12:17.920><c> so</c><00:12:18.160><c> that's</c>
+
+00:12:18.389 --> 00:12:18.399 align:start position:0%
+also not in the same column so that's
+ 
+
+00:12:18.399 --> 00:12:19.750 align:start position:0%
+also not in the same column so that's
+kind<00:12:18.639><c> of</c><00:12:18.720><c> how</c><00:12:18.880><c> the</c><00:12:19.040><c> algorithm</c><00:12:19.440><c> is</c><00:12:19.600><c> going</c><00:12:19.680><c> to</c>
+
+00:12:19.750 --> 00:12:19.760 align:start position:0%
+kind of how the algorithm is going to
+ 
+
+00:12:19.760 --> 00:12:20.150 align:start position:0%
+kind of how the algorithm is going to
+work
+
+00:12:20.150 --> 00:12:20.160 align:start position:0%
+work
+ 
+
+00:12:20.160 --> 00:12:21.509 align:start position:0%
+work
+i'm<00:12:20.240><c> not</c><00:12:20.399><c> going</c><00:12:20.480><c> to</c><00:12:20.560><c> draw</c><00:12:20.959><c> the</c><00:12:21.120><c> entire</c>
+
+00:12:21.509 --> 00:12:21.519 align:start position:0%
+i'm not going to draw the entire
+ 
+
+00:12:21.519 --> 00:12:22.790 align:start position:0%
+i'm not going to draw the entire
+decision<00:12:21.920><c> tree</c><00:12:22.160><c> because</c><00:12:22.399><c> i</c><00:12:22.480><c> think</c><00:12:22.639><c> you</c>
+
+00:12:22.790 --> 00:12:22.800 align:start position:0%
+decision tree because i think you
+ 
+
+00:12:22.800 --> 00:12:23.990 align:start position:0%
+decision tree because i think you
+probably<00:12:23.040><c> get</c><00:12:23.200><c> the</c><00:12:23.360><c> point</c><00:12:23.680><c> these</c>
+
+00:12:23.990 --> 00:12:24.000 align:start position:0%
+probably get the point these
+ 
+
+00:12:24.000 --> 00:12:25.670 align:start position:0%
+probably get the point these
+three<00:12:24.320><c> sets</c><00:12:24.720><c> are</c><00:12:24.800><c> going</c><00:12:24.880><c> to</c><00:12:24.959><c> give</c><00:12:25.120><c> us</c><00:12:25.360><c> all</c><00:12:25.519><c> the</c>
+
+00:12:25.670 --> 00:12:25.680 align:start position:0%
+three sets are going to give us all the
+ 
+
+00:12:25.680 --> 00:12:27.110 align:start position:0%
+three sets are going to give us all the
+information<00:12:26.240><c> we</c><00:12:26.480><c> need</c>
+
+00:12:27.110 --> 00:12:27.120 align:start position:0%
+information we need
+ 
+
+00:12:27.120 --> 00:12:29.430 align:start position:0%
+information we need
+okay<00:12:27.440><c> so</c><00:12:28.000><c> like</c><00:12:28.240><c> i</c><00:12:28.320><c> mentioned</c><00:12:28.639><c> the</c><00:12:28.959><c> the</c><00:12:29.120><c> three</c>
+
+00:12:29.430 --> 00:12:29.440 align:start position:0%
+okay so like i mentioned the the three
+ 
+
+00:12:29.440 --> 00:12:30.870 align:start position:0%
+okay so like i mentioned the the three
+sets<00:12:29.760><c> are</c><00:12:29.839><c> going</c><00:12:29.920><c> to</c><00:12:30.000><c> be</c><00:12:30.160><c> all</c><00:12:30.240><c> the</c><00:12:30.399><c> information</c>
+
+00:12:30.870 --> 00:12:30.880 align:start position:0%
+sets are going to be all the information
+ 
+
+00:12:30.880 --> 00:12:33.110 align:start position:0%
+sets are going to be all the information
+we<00:12:31.040><c> need</c><00:12:31.279><c> we</c><00:12:31.360><c> have</c><00:12:31.600><c> a</c><00:12:31.680><c> column</c><00:12:32.160><c> set</c><00:12:32.399><c> we</c><00:12:32.560><c> have</c><00:12:32.800><c> a</c>
+
+00:12:33.110 --> 00:12:33.120 align:start position:0%
+we need we have a column set we have a
+ 
+
+00:12:33.120 --> 00:12:36.150 align:start position:0%
+we need we have a column set we have a
+positive<00:12:34.000><c> diagonal</c><00:12:34.720><c> set</c><00:12:35.360><c> and</c><00:12:35.600><c> remember</c><00:12:36.000><c> the</c>
+
+00:12:36.150 --> 00:12:36.160 align:start position:0%
+positive diagonal set and remember the
+ 
+
+00:12:36.160 --> 00:12:38.230 align:start position:0%
+positive diagonal set and remember the
+positive<00:12:36.639><c> diagonal</c><00:12:37.279><c> is</c><00:12:37.440><c> determined</c><00:12:38.079><c> let's</c>
+
+00:12:38.230 --> 00:12:38.240 align:start position:0%
+positive diagonal is determined let's
+ 
+
+00:12:38.240 --> 00:12:40.069 align:start position:0%
+positive diagonal is determined let's
+just<00:12:38.399><c> place</c><00:12:38.639><c> a</c><00:12:38.800><c> comma</c><00:12:39.200><c> is</c><00:12:39.279><c> determined</c><00:12:39.760><c> by</c>
+
+00:12:40.069 --> 00:12:40.079 align:start position:0%
+just place a comma is determined by
+ 
+
+00:12:40.079 --> 00:12:43.190 align:start position:0%
+just place a comma is determined by
+r<00:12:40.639><c> plus</c><00:12:41.120><c> c</c><00:12:41.839><c> and</c><00:12:42.000><c> the</c><00:12:42.320><c> negative</c>
+
+00:12:43.190 --> 00:12:43.200 align:start position:0%
+r plus c and the negative
+ 
+
+00:12:43.200 --> 00:12:46.230 align:start position:0%
+r plus c and the negative
+diagonal<00:12:43.839><c> is</c><00:12:44.000><c> determined</c><00:12:44.639><c> by</c><00:12:45.040><c> r</c><00:12:45.440><c> minus</c><00:12:45.920><c> c</c>
+
+00:12:46.230 --> 00:12:46.240 align:start position:0%
+diagonal is determined by r minus c
+ 
+
+00:12:46.240 --> 00:12:48.150 align:start position:0%
+diagonal is determined by r minus c
+so<00:12:46.480><c> let's</c><00:12:46.720><c> just</c><00:12:47.040><c> make</c><00:12:47.200><c> sure</c><00:12:47.360><c> we</c><00:12:47.519><c> remember</c><00:12:48.000><c> that</c>
+
+00:12:48.150 --> 00:12:48.160 align:start position:0%
+so let's just make sure we remember that
+ 
+
+00:12:48.160 --> 00:12:49.910 align:start position:0%
+so let's just make sure we remember that
+when<00:12:48.320><c> we're</c><00:12:48.560><c> actually</c><00:12:48.800><c> writing</c><00:12:49.120><c> our</c><00:12:49.360><c> code</c>
+
+00:12:49.910 --> 00:12:49.920 align:start position:0%
+when we're actually writing our code
+ 
+
+00:12:49.920 --> 00:12:52.629 align:start position:0%
+when we're actually writing our code
+r<00:12:50.240><c> minus</c><00:12:50.720><c> c</c><00:12:51.040><c> for</c><00:12:51.200><c> the</c><00:12:51.360><c> negative</c><00:12:51.760><c> diagonal</c><00:12:52.480><c> and</c>
+
+00:12:52.629 --> 00:12:52.639 align:start position:0%
+r minus c for the negative diagonal and
+ 
+
+00:12:52.639 --> 00:12:54.069 align:start position:0%
+r minus c for the negative diagonal and
+we're<00:12:52.800><c> going</c><00:12:52.959><c> to</c><00:12:53.040><c> have</c><00:12:53.200><c> a</c><00:12:53.360><c> result</c><00:12:53.760><c> which</c><00:12:54.000><c> is</c>
+
+00:12:54.069 --> 00:12:54.079 align:start position:0%
+we're going to have a result which is
+ 
+
+00:12:54.079 --> 00:12:55.829 align:start position:0%
+we're going to have a result which is
+basically<00:12:54.480><c> going</c><00:12:54.639><c> to</c><00:12:54.720><c> tell</c><00:12:54.959><c> us</c><00:12:55.120><c> all</c><00:12:55.360><c> possible</c>
+
+00:12:55.829 --> 00:12:55.839 align:start position:0%
+basically going to tell us all possible
+ 
+
+00:12:55.839 --> 00:12:57.350 align:start position:0%
+basically going to tell us all possible
+end<00:12:56.079><c> queen</c><00:12:56.320><c> solutions</c><00:12:56.800><c> and</c><00:12:56.880><c> we're</c><00:12:57.040><c> also</c><00:12:57.279><c> going</c>
+
+00:12:57.350 --> 00:12:57.360 align:start position:0%
+end queen solutions and we're also going
+ 
+
+00:12:57.360 --> 00:12:58.389 align:start position:0%
+end queen solutions and we're also going
+to<00:12:57.440><c> maintain</c><00:12:58.000><c> a</c>
+
+00:12:58.389 --> 00:12:58.399 align:start position:0%
+to maintain a
+ 
+
+00:12:58.399 --> 00:13:00.230 align:start position:0%
+to maintain a
+board<00:12:59.120><c> so</c><00:12:59.360><c> initially</c><00:12:59.839><c> i'm</c><00:12:59.920><c> just</c><00:13:00.079><c> going</c><00:13:00.160><c> to</c>
+
+00:13:00.230 --> 00:13:00.240 align:start position:0%
+board so initially i'm just going to
+ 
+
+00:13:00.240 --> 00:13:02.069 align:start position:0%
+board so initially i'm just going to
+make<00:13:00.399><c> the</c><00:13:00.639><c> board</c><00:13:01.279><c> a</c>
+
+00:13:02.069 --> 00:13:02.079 align:start position:0%
+make the board a
+ 
+
+00:13:02.079 --> 00:13:04.710 align:start position:0%
+make the board a
+array<00:13:02.800><c> of</c><00:13:03.120><c> let's</c><00:13:03.360><c> say</c><00:13:03.920><c> and</c><00:13:04.240><c> by</c><00:13:04.399><c> the</c><00:13:04.480><c> way</c><00:13:04.639><c> i</c>
+
+00:13:04.710 --> 00:13:04.720 align:start position:0%
+array of let's say and by the way i
+ 
+
+00:13:04.720 --> 00:13:05.990 align:start position:0%
+array of let's say and by the way i
+didn't<00:13:04.880><c> mention</c><00:13:05.120><c> this</c><00:13:05.279><c> but</c><00:13:05.440><c> a</c><00:13:05.600><c> dot</c>
+
+00:13:05.990 --> 00:13:06.000 align:start position:0%
+didn't mention this but a dot
+ 
+
+00:13:06.000 --> 00:13:07.590 align:start position:0%
+didn't mention this but a dot
+is<00:13:06.079><c> basically</c><00:13:06.560><c> indicating</c><00:13:07.040><c> an</c><00:13:07.279><c> empty</c>
+
+00:13:07.590 --> 00:13:07.600 align:start position:0%
+is basically indicating an empty
+ 
+
+00:13:07.600 --> 00:13:09.990 align:start position:0%
+is basically indicating an empty
+location<00:13:08.160><c> so</c><00:13:08.720><c> this</c><00:13:09.040><c> multiplied</c><00:13:09.680><c> by</c>
+
+00:13:09.990 --> 00:13:10.000 align:start position:0%
+location so this multiplied by
+ 
+
+00:13:10.000 --> 00:13:12.790 align:start position:0%
+location so this multiplied by
+n<00:13:10.320><c> is</c><00:13:10.480><c> going</c><00:13:10.720><c> to</c><00:13:10.800><c> determine</c><00:13:11.440><c> a</c><00:13:11.760><c> row</c><00:13:12.399><c> how</c><00:13:12.560><c> many</c>
+
+00:13:12.790 --> 00:13:12.800 align:start position:0%
+n is going to determine a row how many
+ 
+
+00:13:12.800 --> 00:13:14.230 align:start position:0%
+n is going to determine a row how many
+rows<00:13:13.120><c> are</c><00:13:13.279><c> we</c><00:13:13.360><c> going</c><00:13:13.440><c> to</c><00:13:13.519><c> have</c><00:13:13.839><c> well</c>
+
+00:13:14.230 --> 00:13:14.240 align:start position:0%
+rows are we going to have well
+ 
+
+00:13:14.240 --> 00:13:17.350 align:start position:0%
+rows are we going to have well
+for<00:13:14.720><c> i</c><00:13:15.120><c> in</c><00:13:15.519><c> range</c><00:13:16.079><c> n</c><00:13:16.320><c> right</c><00:13:16.560><c> it's</c><00:13:16.720><c> an</c><00:13:16.880><c> n</c><00:13:17.040><c> by</c>
+
+00:13:17.350 --> 00:13:17.360 align:start position:0%
+for i in range n right it's an n by
+ 
+
+00:13:17.360 --> 00:13:19.990 align:start position:0%
+for i in range n right it's an n by
+n<00:13:17.519><c> board</c><00:13:18.000><c> so</c><00:13:18.160><c> i'm</c><00:13:18.320><c> just</c><00:13:18.480><c> initialing</c><00:13:18.959><c> a</c><00:13:19.120><c> board</c>
+
+00:13:19.990 --> 00:13:20.000 align:start position:0%
+n board so i'm just initialing a board
+ 
+
+00:13:20.000 --> 00:13:20.710 align:start position:0%
+n board so i'm just initialing a board
+with
+
+00:13:20.710 --> 00:13:20.720 align:start position:0%
+with
+ 
+
+00:13:20.720 --> 00:13:23.590 align:start position:0%
+with
+periods<00:13:21.279><c> or</c><00:13:21.519><c> dots</c><00:13:22.000><c> in</c><00:13:22.160><c> every</c><00:13:22.320><c> single</c><00:13:22.880><c> position</c>
+
+00:13:23.590 --> 00:13:23.600 align:start position:0%
+periods or dots in every single position
+ 
+
+00:13:23.600 --> 00:13:24.310 align:start position:0%
+periods or dots in every single position
+so<00:13:23.920><c> then</c>
+
+00:13:24.310 --> 00:13:24.320 align:start position:0%
+so then
+ 
+
+00:13:24.320 --> 00:13:26.949 align:start position:0%
+so then
+we<00:13:24.480><c> can</c><00:13:24.639><c> define</c><00:13:25.120><c> our</c><00:13:25.279><c> backtracking</c><00:13:26.000><c> recursive</c>
+
+00:13:26.949 --> 00:13:26.959 align:start position:0%
+we can define our backtracking recursive
+ 
+
+00:13:26.959 --> 00:13:27.509 align:start position:0%
+we can define our backtracking recursive
+function
+
+00:13:27.509 --> 00:13:27.519 align:start position:0%
+function
+ 
+
+00:13:27.519 --> 00:13:29.110 align:start position:0%
+function
+and<00:13:27.680><c> remember</c><00:13:28.079><c> we're</c><00:13:28.240><c> going</c><00:13:28.320><c> to</c><00:13:28.399><c> be</c><00:13:28.560><c> doing</c><00:13:28.800><c> it</c>
+
+00:13:29.110 --> 00:13:29.120 align:start position:0%
+and remember we're going to be doing it
+ 
+
+00:13:29.120 --> 00:13:30.790 align:start position:0%
+and remember we're going to be doing it
+row<00:13:29.440><c> by</c><00:13:29.680><c> row</c><00:13:29.920><c> so</c><00:13:30.079><c> initially</c><00:13:30.480><c> we're</c><00:13:30.639><c> going</c><00:13:30.720><c> to</c>
+
+00:13:30.790 --> 00:13:30.800 align:start position:0%
+row by row so initially we're going to
+ 
+
+00:13:30.800 --> 00:13:31.509 align:start position:0%
+row by row so initially we're going to
+start<00:13:31.040><c> at</c>
+
+00:13:31.509 --> 00:13:31.519 align:start position:0%
+start at
+ 
+
+00:13:31.519 --> 00:13:33.670 align:start position:0%
+start at
+row<00:13:31.760><c> 0</c><00:13:32.160><c> then</c><00:13:32.320><c> we're</c><00:13:32.480><c> going</c><00:13:32.560><c> to</c><00:13:32.639><c> go</c><00:13:32.800><c> to</c><00:13:32.880><c> row</c><00:13:33.200><c> 1</c>
+
+00:13:33.670 --> 00:13:33.680 align:start position:0%
+row 0 then we're going to go to row 1
+ 
+
+00:13:33.680 --> 00:13:35.910 align:start position:0%
+row 0 then we're going to go to row 1
+row<00:13:34.079><c> 2</c><00:13:34.399><c> all</c><00:13:34.480><c> the</c><00:13:34.560><c> way</c><00:13:34.720><c> until</c><00:13:35.040><c> we</c><00:13:35.120><c> get</c><00:13:35.279><c> to</c><00:13:35.440><c> row</c>
+
+00:13:35.910 --> 00:13:35.920 align:start position:0%
+row 2 all the way until we get to row
+ 
+
+00:13:35.920 --> 00:13:38.550 align:start position:0%
+row 2 all the way until we get to row
+n<00:13:36.480><c> row</c><00:13:36.880><c> n</c><00:13:37.200><c> is</c><00:13:37.360><c> our</c><00:13:37.519><c> base</c><00:13:37.839><c> case</c><00:13:38.079><c> that</c><00:13:38.320><c> means</c>
+
+00:13:38.550 --> 00:13:38.560 align:start position:0%
+n row n is our base case that means
+ 
+
+00:13:38.560 --> 00:13:39.910 align:start position:0%
+n row n is our base case that means
+we're<00:13:38.800><c> out</c><00:13:38.959><c> of</c><00:13:39.040><c> bounds</c><00:13:39.360><c> that</c><00:13:39.440><c> means</c><00:13:39.680><c> we</c>
+
+00:13:39.910 --> 00:13:39.920 align:start position:0%
+we're out of bounds that means we
+ 
+
+00:13:39.920 --> 00:13:41.910 align:start position:0%
+we're out of bounds that means we
+already<00:13:40.240><c> completed</c><00:13:40.880><c> every</c><00:13:41.120><c> single</c><00:13:41.519><c> row</c>
+
+00:13:41.910 --> 00:13:41.920 align:start position:0%
+already completed every single row
+ 
+
+00:13:41.920 --> 00:13:43.670 align:start position:0%
+already completed every single row
+so<00:13:42.160><c> if</c><00:13:42.240><c> we</c><00:13:42.399><c> ever</c><00:13:42.639><c> reach</c><00:13:42.959><c> this</c><00:13:43.120><c> position</c><00:13:43.519><c> where</c>
+
+00:13:43.670 --> 00:13:43.680 align:start position:0%
+so if we ever reach this position where
+ 
+
+00:13:43.680 --> 00:13:44.949 align:start position:0%
+so if we ever reach this position where
+rho<00:13:44.000><c> is</c><00:13:44.160><c> equal</c><00:13:44.399><c> to</c><00:13:44.560><c> n</c>
+
+00:13:44.949 --> 00:13:44.959 align:start position:0%
+rho is equal to n
+ 
+
+00:13:44.959 --> 00:13:47.509 align:start position:0%
+rho is equal to n
+that<00:13:45.120><c> means</c><00:13:45.360><c> we</c><00:13:45.519><c> were</c><00:13:45.680><c> able</c><00:13:45.920><c> to</c><00:13:46.160><c> find</c><00:13:46.480><c> a</c><00:13:46.880><c> valid</c>
+
+00:13:47.509 --> 00:13:47.519 align:start position:0%
+that means we were able to find a valid
+ 
+
+00:13:47.519 --> 00:13:48.949 align:start position:0%
+that means we were able to find a valid
+n<00:13:47.839><c> queen</c><00:13:48.240><c> solution</c>
+
+00:13:48.949 --> 00:13:48.959 align:start position:0%
+n queen solution
+ 
+
+00:13:48.959 --> 00:13:51.110 align:start position:0%
+n queen solution
+so<00:13:49.199><c> what</c><00:13:49.360><c> can</c><00:13:49.519><c> we</c><00:13:49.760><c> do</c><00:13:50.160><c> well</c><00:13:50.399><c> of</c><00:13:50.560><c> course</c><00:13:50.959><c> we're</c>
+
+00:13:51.110 --> 00:13:51.120 align:start position:0%
+so what can we do well of course we're
+ 
+
+00:13:51.120 --> 00:13:52.790 align:start position:0%
+so what can we do well of course we're
+going<00:13:51.199><c> to</c><00:13:51.360><c> return</c><00:13:51.760><c> but</c><00:13:52.000><c> before</c><00:13:52.320><c> we</c><00:13:52.480><c> return</c>
+
+00:13:52.790 --> 00:13:52.800 align:start position:0%
+going to return but before we return
+ 
+
+00:13:52.800 --> 00:13:54.629 align:start position:0%
+going to return but before we return
+we're<00:13:53.040><c> going</c><00:13:53.120><c> to</c><00:13:53.279><c> add</c><00:13:53.600><c> whatever</c><00:13:53.920><c> the</c><00:13:54.079><c> current</c>
+
+00:13:54.629 --> 00:13:54.639 align:start position:0%
+we're going to add whatever the current
+ 
+
+00:13:54.639 --> 00:13:56.629 align:start position:0%
+we're going to add whatever the current
+board<00:13:55.120><c> is</c><00:13:55.440><c> and</c><00:13:55.600><c> we're</c><00:13:55.760><c> going</c><00:13:55.839><c> to</c><00:13:56.000><c> add</c><00:13:56.240><c> it</c><00:13:56.399><c> to</c>
+
+00:13:56.629 --> 00:13:56.639 align:start position:0%
+board is and we're going to add it to
+ 
+
+00:13:56.639 --> 00:13:57.750 align:start position:0%
+board is and we're going to add it to
+the<00:13:56.880><c> result</c>
+
+00:13:57.750 --> 00:13:57.760 align:start position:0%
+the result
+ 
+
+00:13:57.760 --> 00:13:59.750 align:start position:0%
+the result
+but<00:13:58.000><c> we</c><00:13:58.240><c> are</c><00:13:58.399><c> going</c><00:13:58.560><c> to</c><00:13:58.639><c> make</c><00:13:58.800><c> a</c><00:13:59.040><c> copy</c><00:13:59.440><c> of</c><00:13:59.519><c> this</c>
+
+00:13:59.750 --> 00:13:59.760 align:start position:0%
+but we are going to make a copy of this
+ 
+
+00:13:59.760 --> 00:14:01.189 align:start position:0%
+but we are going to make a copy of this
+board<00:14:00.000><c> because</c><00:14:00.240><c> we're</c><00:14:00.480><c> still</c><00:14:00.639><c> going</c><00:14:00.800><c> to</c><00:14:00.880><c> use</c>
+
+00:14:01.189 --> 00:14:01.199 align:start position:0%
+board because we're still going to use
+ 
+
+00:14:01.199 --> 00:14:01.750 align:start position:0%
+board because we're still going to use
+it<00:14:01.360><c> in</c>
+
+00:14:01.750 --> 00:14:01.760 align:start position:0%
+it in
+ 
+
+00:14:01.760 --> 00:14:03.750 align:start position:0%
+it in
+subsequent<00:14:02.560><c> function</c><00:14:03.040><c> calls</c><00:14:03.360><c> for</c><00:14:03.519><c> this</c>
+
+00:14:03.750 --> 00:14:03.760 align:start position:0%
+subsequent function calls for this
+ 
+
+00:14:03.760 --> 00:14:04.870 align:start position:0%
+subsequent function calls for this
+recursive<00:14:04.240><c> function</c><00:14:04.560><c> so</c><00:14:04.639><c> we're</c><00:14:04.800><c> going</c><00:14:04.880><c> to</c>
+
+00:14:04.870 --> 00:14:04.880 align:start position:0%
+recursive function so we're going to
+ 
+
+00:14:04.880 --> 00:14:06.389 align:start position:0%
+recursive function so we're going to
+make<00:14:05.120><c> a</c><00:14:05.279><c> copy</c><00:14:05.680><c> of</c><00:14:05.760><c> this</c><00:14:06.000><c> board</c>
+
+00:14:06.389 --> 00:14:06.399 align:start position:0%
+make a copy of this board
+ 
+
+00:14:06.399 --> 00:14:07.670 align:start position:0%
+make a copy of this board
+and<00:14:06.560><c> we're</c><00:14:06.720><c> also</c><00:14:06.959><c> going</c><00:14:07.040><c> to</c><00:14:07.120><c> change</c><00:14:07.440><c> the</c>
+
+00:14:07.670 --> 00:14:07.680 align:start position:0%
+and we're also going to change the
+ 
+
+00:14:07.680 --> 00:14:09.750 align:start position:0%
+and we're also going to change the
+formatting<00:14:08.240><c> the</c><00:14:08.320><c> way</c><00:14:08.480><c> they</c><00:14:08.720><c> want</c><00:14:08.959><c> it</c><00:14:09.040><c> each</c><00:14:09.440><c> row</c>
+
+00:14:09.750 --> 00:14:09.760 align:start position:0%
+formatting the way they want it each row
+ 
+
+00:14:09.760 --> 00:14:11.430 align:start position:0%
+formatting the way they want it each row
+is<00:14:09.920><c> not</c><00:14:10.079><c> going</c><00:14:10.240><c> to</c><00:14:10.320><c> be</c><00:14:10.560><c> an</c><00:14:10.720><c> array</c>
+
+00:14:11.430 --> 00:14:11.440 align:start position:0%
+is not going to be an array
+ 
+
+00:14:11.440 --> 00:14:13.590 align:start position:0%
+is not going to be an array
+each<00:14:11.760><c> row</c><00:14:12.000><c> is</c><00:14:12.079><c> going</c><00:14:12.240><c> to</c><00:14:12.320><c> be</c><00:14:12.560><c> a</c><00:14:12.880><c> string</c><00:14:13.279><c> so</c>
+
+00:14:13.590 --> 00:14:13.600 align:start position:0%
+each row is going to be a string so
+ 
+
+00:14:13.600 --> 00:14:15.350 align:start position:0%
+each row is going to be a string so
+basically<00:14:14.160><c> for</c><00:14:14.320><c> each</c><00:14:14.639><c> row</c><00:14:14.880><c> here</c><00:14:15.040><c> we're</c><00:14:15.199><c> just</c>
+
+00:14:15.350 --> 00:14:15.360 align:start position:0%
+basically for each row here we're just
+ 
+
+00:14:15.360 --> 00:14:16.150 align:start position:0%
+basically for each row here we're just
+going<00:14:15.440><c> to</c><00:14:15.680><c> join</c>
+
+00:14:16.150 --> 00:14:16.160 align:start position:0%
+going to join
+ 
+
+00:14:16.160 --> 00:14:19.350 align:start position:0%
+going to join
+each<00:14:16.639><c> substring</c><00:14:17.279><c> together</c><00:14:18.320><c> so</c><00:14:18.800><c> let's</c><00:14:19.040><c> make</c><00:14:19.199><c> a</c>
+
+00:14:19.350 --> 00:14:19.360 align:start position:0%
+each substring together so let's make a
+ 
+
+00:14:19.360 --> 00:14:21.110 align:start position:0%
+each substring together so let's make a
+copy<00:14:19.839><c> of</c><00:14:20.000><c> this</c><00:14:20.320><c> board</c>
+
+00:14:21.110 --> 00:14:21.120 align:start position:0%
+copy of this board
+ 
+
+00:14:21.120 --> 00:14:24.310 align:start position:0%
+copy of this board
+which<00:14:21.760><c> we</c><00:14:21.920><c> can</c><00:14:22.160><c> do</c><00:14:22.480><c> by</c><00:14:22.720><c> taking</c><00:14:23.680><c> four</c>
+
+00:14:24.310 --> 00:14:24.320 align:start position:0%
+which we can do by taking four
+ 
+
+00:14:24.320 --> 00:14:27.189 align:start position:0%
+which we can do by taking four
+let's<00:14:24.560><c> say</c><00:14:24.959><c> row</c><00:14:25.600><c> in</c><00:14:26.000><c> the</c><00:14:26.160><c> board</c><00:14:26.560><c> each</c><00:14:26.880><c> row</c>
+
+00:14:27.189 --> 00:14:27.199 align:start position:0%
+let's say row in the board each row
+ 
+
+00:14:27.199 --> 00:14:28.790 align:start position:0%
+let's say row in the board each row
+we're<00:14:27.360><c> going</c><00:14:27.440><c> to</c><00:14:27.519><c> take</c><00:14:27.839><c> each</c><00:14:28.160><c> row</c><00:14:28.480><c> and</c><00:14:28.560><c> then</c>
+
+00:14:28.790 --> 00:14:28.800 align:start position:0%
+we're going to take each row and then
+ 
+
+00:14:28.800 --> 00:14:30.150 align:start position:0%
+we're going to take each row and then
+join<00:14:29.120><c> it</c><00:14:29.279><c> together</c><00:14:29.680><c> so</c>
+
+00:14:30.150 --> 00:14:30.160 align:start position:0%
+join it together so
+ 
+
+00:14:30.160 --> 00:14:33.030 align:start position:0%
+join it together so
+we<00:14:30.320><c> can</c><00:14:30.399><c> do</c><00:14:30.560><c> that</c><00:14:30.720><c> in</c><00:14:30.880><c> python</c><00:14:31.360><c> like</c><00:14:31.680><c> this</c><00:14:32.720><c> empty</c>
+
+00:14:33.030 --> 00:14:33.040 align:start position:0%
+we can do that in python like this empty
+ 
+
+00:14:33.040 --> 00:14:33.750 align:start position:0%
+we can do that in python like this empty
+string<00:14:33.360><c> dot</c>
+
+00:14:33.750 --> 00:14:33.760 align:start position:0%
+string dot
+ 
+
+00:14:33.760 --> 00:14:36.949 align:start position:0%
+string dot
+join<00:14:34.720><c> this</c><00:14:35.279><c> entire</c><00:14:35.760><c> row</c><00:14:36.079><c> together</c>
+
+00:14:36.949 --> 00:14:36.959 align:start position:0%
+join this entire row together
+ 
+
+00:14:36.959 --> 00:14:39.990 align:start position:0%
+join this entire row together
+and<00:14:37.120><c> then</c><00:14:38.240><c> doing</c><00:14:38.480><c> this</c><00:14:38.720><c> we'll</c><00:14:38.880><c> have</c><00:14:39.279><c> a</c><00:14:39.519><c> copy</c><00:14:39.920><c> of</c>
+
+00:14:39.990 --> 00:14:40.000 align:start position:0%
+and then doing this we'll have a copy of
+ 
+
+00:14:40.000 --> 00:14:41.829 align:start position:0%
+and then doing this we'll have a copy of
+the<00:14:40.160><c> board</c><00:14:40.480><c> where</c><00:14:40.720><c> each</c><00:14:40.959><c> row</c><00:14:41.279><c> is</c><00:14:41.440><c> basically</c>
+
+00:14:41.829 --> 00:14:41.839 align:start position:0%
+the board where each row is basically
+ 
+
+00:14:41.839 --> 00:14:42.870 align:start position:0%
+the board where each row is basically
+joined<00:14:42.160><c> together</c><00:14:42.560><c> right</c>
+
+00:14:42.870 --> 00:14:42.880 align:start position:0%
+joined together right
+ 
+
+00:14:42.880 --> 00:14:44.470 align:start position:0%
+joined together right
+and<00:14:42.959><c> then</c><00:14:43.120><c> we're</c><00:14:43.279><c> going</c><00:14:43.360><c> to</c><00:14:43.440><c> take</c><00:14:43.680><c> that</c><00:14:44.000><c> copy</c>
+
+00:14:44.470 --> 00:14:44.480 align:start position:0%
+and then we're going to take that copy
+ 
+
+00:14:44.480 --> 00:14:46.110 align:start position:0%
+and then we're going to take that copy
+and<00:14:44.639><c> append</c><00:14:45.040><c> it</c><00:14:45.120><c> to</c><00:14:45.279><c> the</c><00:14:45.519><c> result</c><00:14:45.760><c> so</c>
+
+00:14:46.110 --> 00:14:46.120 align:start position:0%
+and append it to the result so
+ 
+
+00:14:46.120 --> 00:14:47.509 align:start position:0%
+and append it to the result so
+result.append
+
+00:14:47.509 --> 00:14:47.519 align:start position:0%
+result.append
+ 
+
+00:14:47.519 --> 00:14:49.269 align:start position:0%
+result.append
+copy<00:14:48.160><c> i</c><00:14:48.320><c> mean</c><00:14:48.480><c> i'm</c><00:14:48.639><c> sure</c><00:14:48.800><c> there's</c><00:14:49.040><c> different</c>
+
+00:14:49.269 --> 00:14:49.279 align:start position:0%
+copy i mean i'm sure there's different
+ 
+
+00:14:49.279 --> 00:14:50.870 align:start position:0%
+copy i mean i'm sure there's different
+ways<00:14:49.600><c> you</c><00:14:49.680><c> can</c><00:14:49.760><c> do</c><00:14:49.920><c> this</c><00:14:50.160><c> if</c><00:14:50.320><c> you're</c><00:14:50.560><c> using</c>
+
+00:14:50.870 --> 00:14:50.880 align:start position:0%
+ways you can do this if you're using
+ 
+
+00:14:50.880 --> 00:14:51.670 align:start position:0%
+ways you can do this if you're using
+java<00:14:51.279><c> or</c><00:14:51.440><c> c</c>
+
+00:14:51.670 --> 00:14:51.680 align:start position:0%
+java or c
+ 
+
+00:14:51.680 --> 00:14:53.350 align:start position:0%
+java or c
+plus<00:14:51.920><c> plus</c><00:14:52.240><c> this</c><00:14:52.399><c> is</c><00:14:52.480><c> just</c><00:14:52.639><c> an</c><00:14:52.800><c> easy</c><00:14:52.959><c> way</c><00:14:53.120><c> to</c><00:14:53.279><c> do</c>
+
+00:14:53.350 --> 00:14:53.360 align:start position:0%
+plus plus this is just an easy way to do
+ 
+
+00:14:53.360 --> 00:14:55.829 align:start position:0%
+plus plus this is just an easy way to do
+it<00:14:53.519><c> in</c><00:14:53.600><c> python</c><00:14:54.399><c> so</c><00:14:54.560><c> if</c><00:14:54.639><c> we</c><00:14:54.800><c> did</c><00:14:55.040><c> not</c><00:14:55.360><c> reach</c><00:14:55.680><c> the</c>
+
+00:14:55.829 --> 00:14:55.839 align:start position:0%
+it in python so if we did not reach the
+ 
+
+00:14:55.839 --> 00:14:57.269 align:start position:0%
+it in python so if we did not reach the
+base<00:14:56.160><c> case</c><00:14:56.480><c> that's</c><00:14:56.720><c> when</c><00:14:56.880><c> we're</c><00:14:57.040><c> gonna</c>
+
+00:14:57.269 --> 00:14:57.279 align:start position:0%
+base case that's when we're gonna
+ 
+
+00:14:57.279 --> 00:14:58.389 align:start position:0%
+base case that's when we're gonna
+continue
+
+00:14:58.389 --> 00:14:58.399 align:start position:0%
+continue
+ 
+
+00:14:58.399 --> 00:15:00.870 align:start position:0%
+continue
+so<00:14:58.639><c> we're</c><00:14:58.800><c> gonna</c><00:14:59.040><c> go</c><00:14:59.199><c> through</c><00:14:59.519><c> every</c><00:14:59.760><c> single</c><00:15:00.240><c> i</c>
+
+00:15:00.870 --> 00:15:00.880 align:start position:0%
+so we're gonna go through every single i
+ 
+
+00:15:00.880 --> 00:15:01.509 align:start position:0%
+so we're gonna go through every single i
+in
+
+00:15:01.509 --> 00:15:01.519 align:start position:0%
+in
+ 
+
+00:15:01.519 --> 00:15:03.829 align:start position:0%
+in
+range<00:15:02.079><c> of</c><00:15:02.480><c> n</c><00:15:02.800><c> right</c><00:15:02.959><c> we're</c><00:15:03.120><c> gonna</c><00:15:03.279><c> try</c><00:15:03.600><c> every</c>
+
+00:15:03.829 --> 00:15:03.839 align:start position:0%
+range of n right we're gonna try every
+ 
+
+00:15:03.839 --> 00:15:04.790 align:start position:0%
+range of n right we're gonna try every
+single<00:15:04.160><c> position</c>
+
+00:15:04.790 --> 00:15:04.800 align:start position:0%
+single position
+ 
+
+00:15:04.800 --> 00:15:07.030 align:start position:0%
+single position
+in<00:15:04.959><c> the</c><00:15:05.279><c> current</c><00:15:05.839><c> row</c><00:15:06.160><c> that</c><00:15:06.399><c> we're</c><00:15:06.639><c> at</c><00:15:06.880><c> we're</c>
+
+00:15:07.030 --> 00:15:07.040 align:start position:0%
+in the current row that we're at we're
+ 
+
+00:15:07.040 --> 00:15:07.990 align:start position:0%
+in the current row that we're at we're
+gonna<00:15:07.279><c> see</c><00:15:07.600><c> which</c>
+
+00:15:07.990 --> 00:15:08.000 align:start position:0%
+gonna see which
+ 
+
+00:15:08.000 --> 00:15:10.230 align:start position:0%
+gonna see which
+positions<00:15:08.560><c> are</c><00:15:08.639><c> we</c><00:15:08.880><c> allowed</c><00:15:09.360><c> to</c><00:15:09.600><c> place</c><00:15:10.000><c> a</c>
+
+00:15:10.230 --> 00:15:10.240 align:start position:0%
+positions are we allowed to place a
+ 
+
+00:15:10.240 --> 00:15:11.670 align:start position:0%
+positions are we allowed to place a
+queen<00:15:10.720><c> inside</c>
+
+00:15:11.670 --> 00:15:11.680 align:start position:0%
+queen inside
+ 
+
+00:15:11.680 --> 00:15:14.069 align:start position:0%
+queen inside
+and<00:15:11.920><c> this</c><00:15:12.240><c> i</c><00:15:12.560><c> actually</c><00:15:12.959><c> refers</c><00:15:13.360><c> to</c><00:15:13.519><c> the</c><00:15:13.680><c> column</c>
+
+00:15:14.069 --> 00:15:14.079 align:start position:0%
+and this i actually refers to the column
+ 
+
+00:15:14.079 --> 00:15:15.430 align:start position:0%
+and this i actually refers to the column
+so<00:15:14.240><c> i'm</c><00:15:14.399><c> going</c><00:15:14.480><c> to</c><00:15:14.560><c> change</c><00:15:14.880><c> it</c><00:15:14.959><c> to</c><00:15:15.120><c> for</c>
+
+00:15:15.430 --> 00:15:15.440 align:start position:0%
+so i'm going to change it to for
+ 
+
+00:15:15.440 --> 00:15:18.470 align:start position:0%
+so i'm going to change it to for
+c<00:15:15.920><c> and</c><00:15:16.079><c> range</c><00:15:16.480><c> n</c><00:15:16.639><c> so</c><00:15:16.880><c> basically</c><00:15:17.440><c> if</c><00:15:17.680><c> c</c><00:15:18.160><c> is</c>
+
+00:15:18.470 --> 00:15:18.480 align:start position:0%
+c and range n so basically if c is
+ 
+
+00:15:18.480 --> 00:15:20.550 align:start position:0%
+c and range n so basically if c is
+in<00:15:18.720><c> column</c><00:15:19.199><c> meaning</c><00:15:19.440><c> it's</c><00:15:19.680><c> already</c><00:15:20.000><c> been</c><00:15:20.240><c> used</c>
+
+00:15:20.550 --> 00:15:20.560 align:start position:0%
+in column meaning it's already been used
+ 
+
+00:15:20.560 --> 00:15:22.150 align:start position:0%
+in column meaning it's already been used
+in<00:15:20.639><c> this</c><00:15:20.880><c> column</c><00:15:21.279><c> or</c>
+
+00:15:22.150 --> 00:15:22.160 align:start position:0%
+in this column or
+ 
+
+00:15:22.160 --> 00:15:25.430 align:start position:0%
+in this column or
+r<00:15:22.560><c> plus</c><00:15:22.959><c> c</c><00:15:23.680><c> is</c><00:15:23.920><c> already</c><00:15:24.480><c> in</c><00:15:24.720><c> the</c><00:15:24.959><c> positive</c>
+
+00:15:25.430 --> 00:15:25.440 align:start position:0%
+r plus c is already in the positive
+ 
+
+00:15:25.440 --> 00:15:25.990 align:start position:0%
+r plus c is already in the positive
+diagonal
+
+00:15:25.990 --> 00:15:26.000 align:start position:0%
+diagonal
+ 
+
+00:15:26.000 --> 00:15:27.910 align:start position:0%
+diagonal
+which<00:15:26.160><c> means</c><00:15:26.399><c> the</c><00:15:26.639><c> positive</c><00:15:27.120><c> diagonal</c><00:15:27.680><c> has</c>
+
+00:15:27.910 --> 00:15:27.920 align:start position:0%
+which means the positive diagonal has
+ 
+
+00:15:27.920 --> 00:15:29.590 align:start position:0%
+which means the positive diagonal has
+already<00:15:28.240><c> been</c><00:15:28.480><c> used</c><00:15:28.959><c> or</c>
+
+00:15:29.590 --> 00:15:29.600 align:start position:0%
+already been used or
+ 
+
+00:15:29.600 --> 00:15:32.550 align:start position:0%
+already been used or
+if<00:15:29.759><c> the</c><00:15:30.000><c> negative</c><00:15:30.480><c> diagonal</c><00:15:31.040><c> r</c><00:15:31.519><c> minus</c><00:15:32.000><c> c</c><00:15:32.320><c> has</c>
+
+00:15:32.550 --> 00:15:32.560 align:start position:0%
+if the negative diagonal r minus c has
+ 
+
+00:15:32.560 --> 00:15:33.910 align:start position:0%
+if the negative diagonal r minus c has
+already<00:15:32.959><c> been</c><00:15:33.199><c> used</c>
+
+00:15:33.910 --> 00:15:33.920 align:start position:0%
+already been used
+ 
+
+00:15:33.920 --> 00:15:36.310 align:start position:0%
+already been used
+that's<00:15:34.240><c> how</c><00:15:34.399><c> we</c><00:15:34.560><c> know</c><00:15:34.720><c> we</c><00:15:34.959><c> have</c><00:15:35.199><c> to</c><00:15:35.440><c> skip</c><00:15:36.000><c> this</c>
+
+00:15:36.310 --> 00:15:36.320 align:start position:0%
+that's how we know we have to skip this
+ 
+
+00:15:36.320 --> 00:15:37.670 align:start position:0%
+that's how we know we have to skip this
+position<00:15:36.720><c> so</c><00:15:36.880><c> what</c><00:15:37.040><c> i'm</c><00:15:37.199><c> going</c><00:15:37.279><c> to</c><00:15:37.360><c> say</c>
+
+00:15:37.670 --> 00:15:37.680 align:start position:0%
+position so what i'm going to say
+ 
+
+00:15:37.680 --> 00:15:39.829 align:start position:0%
+position so what i'm going to say
+is<00:15:37.920><c> continue</c><00:15:38.639><c> if</c><00:15:38.880><c> that's</c><00:15:39.120><c> the</c><00:15:39.360><c> case</c><00:15:39.680><c> that</c>
+
+00:15:39.829 --> 00:15:39.839 align:start position:0%
+is continue if that's the case that
+ 
+
+00:15:39.839 --> 00:15:41.749 align:start position:0%
+is continue if that's the case that
+means<00:15:40.079><c> we're</c><00:15:40.240><c> not</c><00:15:40.480><c> allowed</c><00:15:40.800><c> to</c><00:15:41.040><c> use</c><00:15:41.360><c> this</c>
+
+00:15:41.749 --> 00:15:41.759 align:start position:0%
+means we're not allowed to use this
+ 
+
+00:15:41.759 --> 00:15:44.550 align:start position:0%
+means we're not allowed to use this
+column<00:15:42.480><c> row</c><00:15:42.880><c> position</c><00:15:43.519><c> but</c><00:15:43.759><c> if</c><00:15:43.839><c> we</c><00:15:44.240><c> are</c>
+
+00:15:44.550 --> 00:15:44.560 align:start position:0%
+column row position but if we are
+ 
+
+00:15:44.560 --> 00:15:45.990 align:start position:0%
+column row position but if we are
+allowed<00:15:44.880><c> to</c><00:15:45.040><c> use</c><00:15:45.199><c> this</c><00:15:45.440><c> position</c>
+
+00:15:45.990 --> 00:15:46.000 align:start position:0%
+allowed to use this position
+ 
+
+00:15:46.000 --> 00:15:48.870 align:start position:0%
+allowed to use this position
+let's<00:15:46.320><c> do</c><00:15:46.560><c> exactly</c><00:15:47.120><c> that</c><00:15:47.680><c> then</c><00:15:47.839><c> we</c><00:15:48.000><c> can</c><00:15:48.240><c> do</c><00:15:48.639><c> a</c>
+
+00:15:48.870 --> 00:15:48.880 align:start position:0%
+let's do exactly that then we can do a
+ 
+
+00:15:48.880 --> 00:15:49.829 align:start position:0%
+let's do exactly that then we can do a
+backtracking
+
+00:15:49.829 --> 00:15:49.839 align:start position:0%
+backtracking
+ 
+
+00:15:49.839 --> 00:15:51.509 align:start position:0%
+backtracking
+call<00:15:50.480><c> you</c><00:15:50.560><c> know</c><00:15:50.800><c> do</c><00:15:50.959><c> the</c><00:15:51.120><c> same</c><00:15:51.279><c> thing</c>
+
+00:15:51.509 --> 00:15:51.519 align:start position:0%
+call you know do the same thing
+ 
+
+00:15:51.519 --> 00:15:53.350 align:start position:0%
+call you know do the same thing
+backtracking<00:15:52.000><c> call</c><00:15:52.240><c> let's</c><00:15:52.399><c> go</c><00:15:52.560><c> to</c><00:15:52.720><c> the</c><00:15:52.959><c> next</c>
+
+00:15:53.350 --> 00:15:53.360 align:start position:0%
+backtracking call let's go to the next
+ 
+
+00:15:53.360 --> 00:15:55.110 align:start position:0%
+backtracking call let's go to the next
+row<00:15:53.519><c> but</c><00:15:53.759><c> before</c><00:15:54.079><c> we</c><00:15:54.240><c> do</c><00:15:54.480><c> that</c><00:15:54.639><c> we</c><00:15:54.800><c> know</c><00:15:55.040><c> we</c>
+
+00:15:55.110 --> 00:15:55.120 align:start position:0%
+row but before we do that we know we
+ 
+
+00:15:55.120 --> 00:15:56.949 align:start position:0%
+row but before we do that we know we
+have<00:15:55.199><c> to</c><00:15:55.360><c> actually</c><00:15:55.680><c> update</c><00:15:56.079><c> all</c><00:15:56.240><c> of</c><00:15:56.399><c> our</c><00:15:56.639><c> sets</c>
+
+00:15:56.949 --> 00:15:56.959 align:start position:0%
+have to actually update all of our sets
+ 
+
+00:15:56.959 --> 00:15:58.870 align:start position:0%
+have to actually update all of our sets
+right<00:15:57.199><c> because</c><00:15:57.440><c> we</c><00:15:57.680><c> we</c><00:15:57.920><c> weren't</c><00:15:58.240><c> using</c>
+
+00:15:58.870 --> 00:15:58.880 align:start position:0%
+right because we we weren't using
+ 
+
+00:15:58.880 --> 00:16:01.509 align:start position:0%
+right because we we weren't using
+this<00:15:59.199><c> uh</c><00:15:59.839><c> combination</c><00:16:00.399><c> but</c><00:16:00.560><c> now</c><00:16:00.800><c> we</c><00:16:01.040><c> are</c><00:16:01.279><c> using</c>
+
+00:16:01.509 --> 00:16:01.519 align:start position:0%
+this uh combination but now we are using
+ 
+
+00:16:01.519 --> 00:16:02.470 align:start position:0%
+this uh combination but now we are using
+it<00:16:01.600><c> so</c><00:16:01.759><c> we</c><00:16:01.839><c> have</c><00:16:01.920><c> to</c><00:16:02.079><c> say</c>
+
+00:16:02.470 --> 00:16:02.480 align:start position:0%
+it so we have to say
+ 
+
+00:16:02.480 --> 00:16:05.509 align:start position:0%
+it so we have to say
+column<00:16:03.199><c> dot</c><00:16:03.519><c> add</c><00:16:04.160><c> this</c><00:16:04.480><c> column</c><00:16:05.120><c> and</c><00:16:05.279><c> we</c><00:16:05.440><c> have</c>
+
+00:16:05.509 --> 00:16:05.519 align:start position:0%
+column dot add this column and we have
+ 
+
+00:16:05.519 --> 00:16:07.269 align:start position:0%
+column dot add this column and we have
+to<00:16:05.600><c> say</c><00:16:05.920><c> positive</c><00:16:06.399><c> diagonal</c>
+
+00:16:07.269 --> 00:16:07.279 align:start position:0%
+to say positive diagonal
+ 
+
+00:16:07.279 --> 00:16:10.870 align:start position:0%
+to say positive diagonal
+dot<00:16:07.680><c> add</c><00:16:08.959><c> row</c><00:16:09.440><c> plus</c><00:16:10.000><c> column</c>
+
+00:16:10.870 --> 00:16:10.880 align:start position:0%
+dot add row plus column
+ 
+
+00:16:10.880 --> 00:16:13.670 align:start position:0%
+dot add row plus column
+and<00:16:11.040><c> we</c><00:16:11.199><c> have</c><00:16:11.279><c> to</c><00:16:11.360><c> say</c><00:16:11.680><c> negative</c><00:16:12.079><c> diagonal</c><00:16:13.040><c> add</c>
+
+00:16:13.670 --> 00:16:13.680 align:start position:0%
+and we have to say negative diagonal add
+ 
+
+00:16:13.680 --> 00:16:14.230 align:start position:0%
+and we have to say negative diagonal add
+row
+
+00:16:14.230 --> 00:16:14.240 align:start position:0%
+row
+ 
+
+00:16:14.240 --> 00:16:16.069 align:start position:0%
+row
+minus<00:16:14.720><c> column</c><00:16:15.040><c> so</c><00:16:15.199><c> that's</c><00:16:15.519><c> just</c><00:16:15.680><c> kind</c><00:16:15.839><c> of</c><00:16:15.920><c> some</c>
+
+00:16:16.069 --> 00:16:16.079 align:start position:0%
+minus column so that's just kind of some
+ 
+
+00:16:16.079 --> 00:16:18.310 align:start position:0%
+minus column so that's just kind of some
+of<00:16:16.160><c> the</c><00:16:16.320><c> pre-work</c><00:16:16.880><c> that</c><00:16:16.959><c> we</c><00:16:17.120><c> have</c><00:16:17.279><c> to</c><00:16:17.440><c> do</c>
+
+00:16:18.310 --> 00:16:18.320 align:start position:0%
+of the pre-work that we have to do
+ 
+
+00:16:18.320 --> 00:16:20.150 align:start position:0%
+of the pre-work that we have to do
+and<00:16:18.480><c> we</c><00:16:18.720><c> also</c><00:16:18.959><c> have</c><00:16:19.040><c> to</c><00:16:19.199><c> update</c><00:16:19.600><c> the</c><00:16:19.759><c> board</c>
+
+00:16:20.150 --> 00:16:20.160 align:start position:0%
+and we also have to update the board
+ 
+
+00:16:20.160 --> 00:16:22.069 align:start position:0%
+and we also have to update the board
+itself<00:16:20.720><c> right</c><00:16:20.880><c> we</c><00:16:21.040><c> have</c><00:16:21.120><c> to</c><00:16:21.199><c> say</c><00:16:21.360><c> okay</c><00:16:21.680><c> at</c><00:16:21.839><c> this</c>
+
+00:16:22.069 --> 00:16:22.079 align:start position:0%
+itself right we have to say okay at this
+ 
+
+00:16:22.079 --> 00:16:23.749 align:start position:0%
+itself right we have to say okay at this
+position<00:16:22.480><c> in</c><00:16:22.560><c> the</c><00:16:22.720><c> board</c><00:16:23.120><c> row</c>
+
+00:16:23.749 --> 00:16:23.759 align:start position:0%
+position in the board row
+ 
+
+00:16:23.759 --> 00:16:26.870 align:start position:0%
+position in the board row
+column<00:16:24.399><c> let's</c><00:16:24.720><c> set</c><00:16:24.880><c> it</c><00:16:25.120><c> equal</c><00:16:25.519><c> to</c><00:16:25.920><c> a</c><00:16:26.240><c> queen</c>
+
+00:16:26.870 --> 00:16:26.880 align:start position:0%
+column let's set it equal to a queen
+ 
+
+00:16:26.880 --> 00:16:29.509 align:start position:0%
+column let's set it equal to a queen
+not<00:16:27.199><c> a</c><00:16:27.519><c> dot</c><00:16:28.000><c> anymore</c><00:16:28.800><c> so</c><00:16:28.959><c> that's</c><00:16:29.199><c> what</c><00:16:29.360><c> we're</c>
+
+00:16:29.509 --> 00:16:29.519 align:start position:0%
+not a dot anymore so that's what we're
+ 
+
+00:16:29.519 --> 00:16:31.189 align:start position:0%
+not a dot anymore so that's what we're
+going<00:16:29.600><c> to</c><00:16:29.680><c> do</c><00:16:29.839><c> before</c><00:16:30.399><c> we</c><00:16:30.720><c> start</c><00:16:31.040><c> our</c>
+
+00:16:31.189 --> 00:16:31.199 align:start position:0%
+going to do before we start our
+ 
+
+00:16:31.199 --> 00:16:33.030 align:start position:0%
+going to do before we start our
+recursive<00:16:31.759><c> backtracking</c><00:16:32.399><c> solution</c>
+
+00:16:33.030 --> 00:16:33.040 align:start position:0%
+recursive backtracking solution
+ 
+
+00:16:33.040 --> 00:16:34.949 align:start position:0%
+recursive backtracking solution
+and<00:16:33.279><c> after</c><00:16:33.680><c> we're</c><00:16:33.920><c> done</c><00:16:34.160><c> we</c><00:16:34.320><c> have</c><00:16:34.399><c> to</c><00:16:34.560><c> do</c><00:16:34.720><c> the</c>
+
+00:16:34.949 --> 00:16:34.959 align:start position:0%
+and after we're done we have to do the
+ 
+
+00:16:34.959 --> 00:16:37.110 align:start position:0%
+and after we're done we have to do the
+cleanup<00:16:35.440><c> that</c><00:16:35.680><c> is</c><00:16:35.839><c> required</c><00:16:36.560><c> in</c><00:16:36.720><c> most</c>
+
+00:16:37.110 --> 00:16:37.120 align:start position:0%
+cleanup that is required in most
+ 
+
+00:16:37.120 --> 00:16:39.110 align:start position:0%
+cleanup that is required in most
+in<00:16:37.279><c> most</c><00:16:37.519><c> backtracking</c><00:16:38.240><c> solutions</c><00:16:38.639><c> right</c><00:16:38.959><c> so</c>
+
+00:16:39.110 --> 00:16:39.120 align:start position:0%
+in most backtracking solutions right so
+ 
+
+00:16:39.120 --> 00:16:40.949 align:start position:0%
+in most backtracking solutions right so
+we<00:16:39.199><c> have</c><00:16:39.279><c> to</c><00:16:39.680><c> basically</c><00:16:40.079><c> do</c><00:16:40.240><c> what</c><00:16:40.399><c> we</c><00:16:40.560><c> just</c><00:16:40.720><c> did</c>
+
+00:16:40.949 --> 00:16:40.959 align:start position:0%
+we have to basically do what we just did
+ 
+
+00:16:40.959 --> 00:16:41.509 align:start position:0%
+we have to basically do what we just did
+here<00:16:41.199><c> and</c>
+
+00:16:41.509 --> 00:16:41.519 align:start position:0%
+here and
+ 
+
+00:16:41.519 --> 00:16:44.790 align:start position:0%
+here and
+undo<00:16:42.320><c> all</c><00:16:42.480><c> of</c><00:16:42.720><c> it</c><00:16:43.040><c> for</c><00:16:43.199><c> the</c><00:16:43.519><c> next</c><00:16:43.920><c> iteration</c><00:16:44.639><c> of</c>
+
+00:16:44.790 --> 00:16:44.800 align:start position:0%
+undo all of it for the next iteration of
+ 
+
+00:16:44.800 --> 00:16:45.670 align:start position:0%
+undo all of it for the next iteration of
+the<00:16:45.040><c> loop</c>
+
+00:16:45.670 --> 00:16:45.680 align:start position:0%
+the loop
+ 
+
+00:16:45.680 --> 00:16:47.430 align:start position:0%
+the loop
+so<00:16:45.920><c> i'm</c><00:16:46.079><c> just</c><00:16:46.240><c> going</c><00:16:46.320><c> to</c><00:16:46.480><c> copy</c><00:16:46.880><c> and</c><00:16:46.959><c> paste</c><00:16:47.199><c> this</c>
+
+00:16:47.430 --> 00:16:47.440 align:start position:0%
+so i'm just going to copy and paste this
+ 
+
+00:16:47.440 --> 00:16:48.710 align:start position:0%
+so i'm just going to copy and paste this
+because<00:16:47.680><c> we're</c><00:16:47.920><c> literally</c><00:16:48.240><c> just</c><00:16:48.399><c> going</c><00:16:48.560><c> to</c><00:16:48.639><c> be</c>
+
+00:16:48.710 --> 00:16:48.720 align:start position:0%
+because we're literally just going to be
+ 
+
+00:16:48.720 --> 00:16:50.310 align:start position:0%
+because we're literally just going to be
+having<00:16:49.040><c> to</c><00:16:49.120><c> rewrite</c><00:16:49.519><c> every</c><00:16:49.680><c> line</c><00:16:49.920><c> so</c><00:16:50.079><c> instead</c>
+
+00:16:50.310 --> 00:16:50.320 align:start position:0%
+having to rewrite every line so instead
+ 
+
+00:16:50.320 --> 00:16:50.629 align:start position:0%
+having to rewrite every line so instead
+of
+
+00:16:50.629 --> 00:16:50.639 align:start position:0%
+of
+ 
+
+00:16:50.639 --> 00:16:52.310 align:start position:0%
+of
+adding<00:16:51.040><c> all</c><00:16:51.199><c> of</c><00:16:51.360><c> these</c><00:16:51.600><c> to</c><00:16:51.680><c> the</c><00:16:51.839><c> set</c><00:16:52.079><c> i'm</c><00:16:52.240><c> going</c>
+
+00:16:52.310 --> 00:16:52.320 align:start position:0%
+adding all of these to the set i'm going
+ 
+
+00:16:52.320 --> 00:16:54.389 align:start position:0%
+adding all of these to the set i'm going
+to<00:16:52.399><c> be</c><00:16:52.560><c> removing</c><00:16:53.440><c> all</c><00:16:53.600><c> of</c><00:16:53.680><c> these</c><00:16:53.920><c> to</c><00:16:54.079><c> the</c><00:16:54.160><c> set</c>
+
+00:16:54.389 --> 00:16:54.399 align:start position:0%
+to be removing all of these to the set
+ 
+
+00:16:54.399 --> 00:16:55.910 align:start position:0%
+to be removing all of these to the set
+right<00:16:54.560><c> that's</c><00:16:54.800><c> kind</c><00:16:54.880><c> of</c><00:16:54.959><c> what</c><00:16:55.199><c> backtracking</c>
+
+00:16:55.910 --> 00:16:55.920 align:start position:0%
+right that's kind of what backtracking
+ 
+
+00:16:55.920 --> 00:16:56.470 align:start position:0%
+right that's kind of what backtracking
+means
+
+00:16:56.470 --> 00:16:56.480 align:start position:0%
+means
+ 
+
+00:16:56.480 --> 00:16:58.790 align:start position:0%
+means
+where<00:16:57.120><c> we're</c><00:16:57.440><c> backtracking</c><00:16:58.160><c> from</c><00:16:58.480><c> what</c><00:16:58.639><c> we</c>
+
+00:16:58.790 --> 00:16:58.800 align:start position:0%
+where we're backtracking from what we
+ 
+
+00:16:58.800 --> 00:17:00.870 align:start position:0%
+where we're backtracking from what we
+just<00:16:59.120><c> did</c><00:16:59.360><c> to</c><00:16:59.519><c> seeing</c><00:16:59.759><c> if</c><00:17:00.000><c> maybe</c><00:17:00.320><c> multiple</c>
+
+00:17:00.870 --> 00:17:00.880 align:start position:0%
+just did to seeing if maybe multiple
+ 
+
+00:17:00.880 --> 00:17:02.150 align:start position:0%
+just did to seeing if maybe multiple
+solutions<00:17:01.519><c> exist</c>
+
+00:17:02.150 --> 00:17:02.160 align:start position:0%
+solutions exist
+ 
+
+00:17:02.160 --> 00:17:04.230 align:start position:0%
+solutions exist
+right<00:17:02.399><c> that's</c><00:17:02.639><c> the</c><00:17:02.800><c> brute</c><00:17:03.199><c> force</c><00:17:03.600><c> element</c><00:17:04.079><c> of</c>
+
+00:17:04.230 --> 00:17:04.240 align:start position:0%
+right that's the brute force element of
+ 
+
+00:17:04.240 --> 00:17:06.470 align:start position:0%
+right that's the brute force element of
+this<00:17:04.720><c> so</c><00:17:04.880><c> we</c><00:17:05.120><c> initially</c><00:17:05.600><c> set</c><00:17:05.760><c> this</c><00:17:06.000><c> equal</c><00:17:06.240><c> to</c><00:17:06.400><c> a</c>
+
+00:17:06.470 --> 00:17:06.480 align:start position:0%
+this so we initially set this equal to a
+ 
+
+00:17:06.480 --> 00:17:06.949 align:start position:0%
+this so we initially set this equal to a
+queen
+
+00:17:06.949 --> 00:17:06.959 align:start position:0%
+queen
+ 
+
+00:17:06.959 --> 00:17:09.270 align:start position:0%
+queen
+let's<00:17:07.280><c> set</c><00:17:07.520><c> it</c><00:17:07.760><c> back</c><00:17:08.160><c> equal</c><00:17:08.480><c> to</c><00:17:08.640><c> an</c><00:17:08.880><c> empty</c>
+
+00:17:09.270 --> 00:17:09.280 align:start position:0%
+let's set it back equal to an empty
+ 
+
+00:17:09.280 --> 00:17:10.549 align:start position:0%
+let's set it back equal to an empty
+space<00:17:09.760><c> or</c><00:17:09.919><c> a</c><00:17:10.160><c> dot</c>
+
+00:17:10.549 --> 00:17:10.559 align:start position:0%
+space or a dot
+ 
+
+00:17:10.559 --> 00:17:12.789 align:start position:0%
+space or a dot
+in<00:17:10.640><c> this</c><00:17:10.880><c> case</c><00:17:11.600><c> and</c><00:17:11.760><c> that's</c><00:17:12.079><c> really</c><00:17:12.400><c> it</c><00:17:12.640><c> we</c>
+
+00:17:12.789 --> 00:17:12.799 align:start position:0%
+in this case and that's really it we
+ 
+
+00:17:12.799 --> 00:17:14.309 align:start position:0%
+in this case and that's really it we
+have<00:17:13.039><c> no</c><00:17:13.280><c> return</c><00:17:13.679><c> condition</c>
+
+00:17:14.309 --> 00:17:14.319 align:start position:0%
+have no return condition
+ 
+
+00:17:14.319 --> 00:17:16.150 align:start position:0%
+have no return condition
+in<00:17:14.480><c> this</c><00:17:14.720><c> backtracking</c><00:17:15.280><c> so</c><00:17:15.439><c> once</c><00:17:15.679><c> this</c><00:17:15.839><c> loop</c>
+
+00:17:16.150 --> 00:17:16.160 align:start position:0%
+in this backtracking so once this loop
+ 
+
+00:17:16.160 --> 00:17:17.669 align:start position:0%
+in this backtracking so once this loop
+is<00:17:16.240><c> done</c><00:17:16.480><c> executing</c><00:17:16.959><c> then</c><00:17:17.120><c> we're</c><00:17:17.360><c> done</c><00:17:17.600><c> with</c>
+
+00:17:17.669 --> 00:17:17.679 align:start position:0%
+is done executing then we're done with
+ 
+
+00:17:17.679 --> 00:17:19.590 align:start position:0%
+is done executing then we're done with
+the<00:17:17.919><c> entire</c><00:17:18.319><c> function</c><00:17:18.720><c> so</c><00:17:18.959><c> now</c>
+
+00:17:19.590 --> 00:17:19.600 align:start position:0%
+the entire function so now
+ 
+
+00:17:19.600 --> 00:17:21.750 align:start position:0%
+the entire function so now
+outside<00:17:20.160><c> of</c><00:17:20.319><c> here</c><00:17:20.720><c> all</c><00:17:20.959><c> we</c><00:17:21.039><c> have</c><00:17:21.199><c> to</c><00:17:21.280><c> do</c><00:17:21.439><c> is</c>
+
+00:17:21.750 --> 00:17:21.760 align:start position:0%
+outside of here all we have to do is
+ 
+
+00:17:21.760 --> 00:17:23.669 align:start position:0%
+outside of here all we have to do is
+call<00:17:22.079><c> our</c><00:17:22.319><c> backtracking</c><00:17:23.120><c> function</c>
+
+00:17:23.669 --> 00:17:23.679 align:start position:0%
+call our backtracking function
+ 
+
+00:17:23.679 --> 00:17:26.630 align:start position:0%
+call our backtracking function
+passing<00:17:24.079><c> in</c><00:17:24.319><c> row</c><00:17:24.799><c> 0</c><00:17:25.520><c> and</c><00:17:25.679><c> then</c><00:17:25.919><c> once</c><00:17:26.240><c> that</c><00:17:26.480><c> is</c>
+
+00:17:26.630 --> 00:17:26.640 align:start position:0%
+passing in row 0 and then once that is
+ 
+
+00:17:26.640 --> 00:17:27.829 align:start position:0%
+passing in row 0 and then once that is
+done
+
+00:17:27.829 --> 00:17:27.839 align:start position:0%
+done
+ 
+
+00:17:27.839 --> 00:17:29.990 align:start position:0%
+done
+we<00:17:28.079><c> will</c><00:17:28.319><c> have</c><00:17:28.640><c> updated</c><00:17:29.200><c> our</c><00:17:29.360><c> result</c><00:17:29.679><c> so</c><00:17:29.840><c> our</c>
+
+00:17:29.990 --> 00:17:30.000 align:start position:0%
+we will have updated our result so our
+ 
+
+00:17:30.000 --> 00:17:31.190 align:start position:0%
+we will have updated our result so our
+result<00:17:30.400><c> should</c><00:17:30.720><c> contain</c>
+
+00:17:31.190 --> 00:17:31.200 align:start position:0%
+result should contain
+ 
+
+00:17:31.200 --> 00:17:33.029 align:start position:0%
+result should contain
+everything<00:17:31.520><c> we</c><00:17:31.679><c> need</c><00:17:32.240><c> so</c><00:17:32.400><c> then</c><00:17:32.640><c> we</c><00:17:32.720><c> can</c><00:17:32.880><c> just</c>
+
+00:17:33.029 --> 00:17:33.039 align:start position:0%
+everything we need so then we can just
+ 
+
+00:17:33.039 --> 00:17:34.789 align:start position:0%
+everything we need so then we can just
+be<00:17:33.200><c> able</c><00:17:33.360><c> to</c><00:17:33.520><c> go</c><00:17:33.679><c> ahead</c><00:17:33.760><c> and</c><00:17:33.840><c> say</c><00:17:34.080><c> okay</c><00:17:34.400><c> return</c>
+
+00:17:34.789 --> 00:17:34.799 align:start position:0%
+be able to go ahead and say okay return
+ 
+
+00:17:34.799 --> 00:17:35.669 align:start position:0%
+be able to go ahead and say okay return
+the<00:17:34.880><c> result</c>
+
+00:17:35.669 --> 00:17:35.679 align:start position:0%
+the result
+ 
+
+00:17:35.679 --> 00:17:37.430 align:start position:0%
+the result
+so<00:17:35.840><c> you</c><00:17:35.919><c> can</c><00:17:36.080><c> see</c><00:17:36.240><c> that</c><00:17:36.400><c> the</c><00:17:36.559><c> solution</c><00:17:37.120><c> does</c>
+
+00:17:37.430 --> 00:17:37.440 align:start position:0%
+so you can see that the solution does
+ 
+
+00:17:37.440 --> 00:17:39.669 align:start position:0%
+so you can see that the solution does
+work<00:17:38.000><c> and</c><00:17:38.240><c> it</c><00:17:38.400><c> is</c><00:17:38.559><c> pretty</c><00:17:38.880><c> dang</c><00:17:39.200><c> efficient</c>
+
+00:17:39.669 --> 00:17:39.679 align:start position:0%
+work and it is pretty dang efficient
+ 
+
+00:17:39.679 --> 00:17:41.110 align:start position:0%
+work and it is pretty dang efficient
+even<00:17:39.840><c> though</c><00:17:40.000><c> it's</c><00:17:40.160><c> a</c><00:17:40.240><c> backtracking</c><00:17:40.880><c> brute</c>
+
+00:17:41.110 --> 00:17:41.120 align:start position:0%
+even though it's a backtracking brute
+ 
+
+00:17:41.120 --> 00:17:42.549 align:start position:0%
+even though it's a backtracking brute
+force<00:17:41.440><c> approach</c><00:17:41.760><c> so</c><00:17:41.919><c> i</c><00:17:42.000><c> hope</c><00:17:42.160><c> this</c><00:17:42.320><c> was</c>
+
+00:17:42.549 --> 00:17:42.559 align:start position:0%
+force approach so i hope this was
+ 
+
+00:17:42.559 --> 00:17:43.029 align:start position:0%
+force approach so i hope this was
+helpful
+
+00:17:43.029 --> 00:17:43.039 align:start position:0%
+helpful
+ 
+
+00:17:43.039 --> 00:17:45.110 align:start position:0%
+helpful
+if<00:17:43.200><c> it</c><00:17:43.360><c> was</c><00:17:43.760><c> please</c><00:17:44.080><c> like</c><00:17:44.320><c> and</c><00:17:44.400><c> subscribe</c><00:17:44.960><c> that</c>
+
+00:17:45.110 --> 00:17:45.120 align:start position:0%
+if it was please like and subscribe that
+ 
+
+00:17:45.120 --> 00:17:46.150 align:start position:0%
+if it was please like and subscribe that
+supports<00:17:45.520><c> the</c><00:17:45.679><c> channel</c>
+
+00:17:46.150 --> 00:17:46.160 align:start position:0%
+supports the channel
+ 
+
+00:17:46.160 --> 00:17:48.549 align:start position:0%
+supports the channel
+a<00:17:46.400><c> lot</c><00:17:46.799><c> and</c><00:17:46.960><c> i'll</c><00:17:47.120><c> hopefully</c><00:17:48.000><c> see</c><00:17:48.160><c> you</c><00:17:48.320><c> pretty</c>
+
+00:17:48.549 --> 00:17:48.559 align:start position:0%
+a lot and i'll hopefully see you pretty
+ 
+
+00:17:48.559 --> 00:17:52.080 align:start position:0%
+a lot and i'll hopefully see you pretty
+soon<00:17:49.120><c> thanks</c><00:17:49.360><c> for</c><00:17:49.520><c> watching</c>
+

@@ -1,0 +1,338 @@
+hey everyone welcome back and let's
+write some more neat code today today
+let's solve reverse nodes
+in a k group now this is a hard problem
+but it's actually not as hard as you
+might think
+so we're given one linked list and we
+want to reverse
+the nodes of that linked list a at a
+time
+and then return the output so what do
+they actually
+mean when they say k at a time so
+in the example that we're going to look
+at let's say k is 2.
+we basically take this input right we
+see there's
+five nodes we want to look at each
+group of size k so each group
+of size two this is one group this is
+one group
+and the last group doesn't even have k
+elements and what we want to do to each
+group
+so let's look at the first group we just
+want to reverse it
+so now this has been reversed and we
+also want it to still be a part of this
+entire linked list so what we have to do
+is for this
+one we have to set its next pointer over
+here
+and in the output you can see that
+this group is reversed now we do the
+same thing with the
+second group so four's next is actually
+going to be
+three now we've reversed this and then
+the output
+it's also reversed now they tell us if
+we have a special group
+right like the last group doesn't even
+have k elements
+so if it's not a multiple of k then it
+should just remain
+as it is so we really don't have to make
+any changes to this
+it remains the exact same now
+one thing to notice is reversing the
+groups
+is pretty easy but we need to do a
+little more than just
+that right see one's next pointer is
+initially at two
+but at the end it's pointing at four
+so really we have to make this jump
+so that's where the difficulty comes
+from and that's what i'm going to
+explain once we've reversed these groups
+then we actually have to put them
+together
+so like most linked list problems i'm
+just going to tell you from the start
+this time that we
+are going to need a dummy node because
+we're potentially
+modifying the head of the list right
+like
+first this is the head but at the end
+this is going to be the head i don't
+want to deal with edge cases and stuff
+so just having a dummy node here helps
+us a lot
+so we have k equals two
+i wanna reverse the first group how do i
+do that
+let's say we start here all i have to do
+is
+count by k so one
+two so this is the k-th
+node so now starting from here
+we're gonna start reversing so the next
+pointer
+of one is gonna be reversed but
+this is the dummy node so i don't really
+care about it
+so i'm actually gonna set this equal
+let's say to null for now
+next i'm gonna move to the next node
+which happens to be our kth
+node i'm going to say its next pointer
+is also going to be reversed now it's
+set
+to 1 right the previous node
+now we move to the next node but we
+know we just passed our kth node so
+we're not reversing this yet we're going
+to reverse it
+with its own group right now we're only
+reversing
+this group so we're finished so now if
+you look at what we just did we
+took this portion reversed that group
+right now we have this
+and we didn't really touch this so it
+stayed the same
+but look what we just did we cut our
+linked list
+in half it's not even connected anymore
+we reversed the first group which is
+what we wanted
+but we didn't want to split them so
+instead of setting
+this one to null we can set it
+to what the last what our cond where our
+condition would
+stop right this is where our condition
+is going to stop so the node
+right after k is where we're going to
+set
+the next pointer of this
+also we don't want to forget that our
+our dummy node over here should point at
+the
+first node so great we've done
+the first group now we want to move to
+the next group
+so don't forget k equals 2 so
+this is our first node this is our
+second node
+so this happens to be the kth node so
+again
+we're going to take this pointer and
+reverse it
+and in the first example i showed you
+that it's going to be set
+to null but really we know
+it's going to be set to k dot
+next right k dot next we know that this
+is
+k so k dot next is over here
+so after i cross out the next pointer
+i'm going to move it
+over here next we want to reverse
+the link of 4 so we can remove this
+pointer and
+reverse it we know that this is the
+previous
+node and the last thing remember don't
+forget
+before we took our dummy pointer and
+then set it
+to two instead of one but
+right now we're gonna take one's next
+pointer
+and instead set it to four
+rather than three because we're
+reversing
+this group so one dot next is gonna be
+at four so these pointers can get
+complicated and can definitely get
+messy even when you're looking at a
+picture so let's redraw it
+so this is what our linked list looks
+like
+now we still have our dummy node over
+here we reversed the first group
+we reversed the second group let's look
+at the third group
+so we're starting here this is one let's
+get the kth node okay we want the second
+node we try here
+this is null right so the kth node
+doesn't even exist
+so this group is too small so we're
+finished
+we don't have to do anything anymore and
+so notice we got
+two one four three five
+when you go back here that's exactly
+what we have in the output
+two one four three and five
+so now let's actually look at the code
+we want a
+dummy node to be initialized
+at the beginning so we're gonna give it
+a default value
+zero and the next pointer is gonna be
+set to our head
+of the linked list i'm also gonna have
+a pointer i'm gonna call the group
+previous
+which i'm gonna initially set to dummy
+but the reason we have this
+is if we have a group so if our group
+was 2 and 3 and we want to reverse it
+the output would look like this right so
+we took this group and reversed it to do
+that we need to have a pointer of one
+node
+right before the start of our group so
+we can then say
+one dot next is three so we're always
+going to save
+one node right before our group now
+we're just gonna start
+looping i'm just gonna say while true
+because i'm lazy
+so we're going to need to get the kth
+node so we know
+how long or how big our group is how
+like what exactly the group is we're
+trying to reverse so i'm going to write
+a helper function to do that
+just called get k and we're just going
+to pass
+in two parameters the current node and
+the what the value k
+is so starting at cur we're gonna
+increment
+we're gonna uh we're gonna shift k times
+and then return that
+kth node so while cur is not at the end
+and
+k is greater than zero we're gonna
+update current
+and decrement k then at the end we can
+return
+the kth node that we want to so now i'm
+gonna call that helper function
+get k and what's the start that we're
+going to pass in we're going to pass in
+the group
+previous because the group previous is
+and let's store this in case but
+what if the kth node doesn't even exist
+what does that
+mean that means we've gotten to the last
+group
+in our linked list and it's not big
+enough
+for us to reverse it so we can stop then
+so we can say
+if not k if it's null then terminate so
+break out of the loop so that's why we
+have a true here
+and that's going to be the condition
+that breaks us out so
+similar to how we have we always keep
+track of one node before the start of
+our group
+let's keep track of a node right after
+our group so if this is the kth
+node let's just get kth dot
+next and store that in group dot next
+so one node right after our group so now
+we can start
+actually reversing right reversing
+the group and we can use two pointers to
+do that if you've solved
+the delete code easy problem reversal
+linked list you probably know how to do
+this
+i'm going to set previous to null and
+current
+group previous dot next
+because this is the first node in our
+group but there's just one problem with
+this remember
+if we have previous initially set to
+null
+we're gonna end up splitting our linked
+lists and we don't want to have multiple
+linked lists so
+instead of this being null in reality
+it's going to be kth dot next
+so the rest of this is basically just
+reverse a linked list so
+while current does not reach the end in
+this case the
+end is the end is group dot next and now
+we're just reversing so i'm going to put
+it in a temporary variable
+current.next we're going to update
+current.next
+set it to previous previous is going to
+be set to
+current and then current is going to be
+shifted by 1 which is
+stored in our temporary variable so
+remember how
+kth was the last node in our group now
+we want it to be the first node in our
+group
+and what we can do is say group
+previous so one node before the start of
+our group
+dot next is now going to be
+kth so what we're doing is putting kth
+at the beginning of this group
+but we also want to update group
+previous for the next iteration of our
+loop right when we come back around
+we want this node to be where it should
+be we want this pointer to be where it
+should be
+and to do that what we can do is
+actually have a and i have another
+temporary variable so
+in that we're going to store group
+previous
+dot next before we end up updating it
+and what this current what this
+initially stores
+is the first node in our group remember
+kth was the last node in our group this
+is the first node in our group
+and so we want to set this equal to that
+because this started as the first node
+in our group
+but now it's going to be the last node
+and that's
+what we want this to be set to so i
+think probably this is the most
+complicated part of the problem and
+pointers in general are really
+kind of annoying even drawing a picture
+is kind of annoying because you have to
+cross out a bunch of pointers
+but right now all we need to do is
+return
+the new head of the linked list which is
+going to be
+dummy.next so this is the final code so
+it does work
+pretty well if this was helpful please
+like and subscribe it supports the
+channel a lot

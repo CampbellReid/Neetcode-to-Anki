@@ -1,0 +1,239 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+let's solve
+same tree so i'm going to upload this on
+a friday so today we're going to be
+doing an easy-ish problem
+so we're given the root of two binary
+trees p
+and q we need to write a function to
+check if they
+are the exact same tree or not we can
+determine that by
+one making sure that the structure is
+the exact same
+so for example basically the number of
+nodes right like they both have a root
+node
+they both have a left child and they
+both have a right child right the
+structure is the same
+not only that though they also have to
+have the exact same
+values at every node position so in this
+case we can see
+they have the same value once again same
+value in the left side
+and lastly same value on the right side
+so these are the exact same tree right
+so
+we can return true now if i got rid of
+one of these nodes right
+let's say i just got rid of this then
+it's definitely not the same tree right
+or
+if i took this value and changed it
+let's say to a
+hunt a 10 or whatever then it's also not
+the same tree because the values in this
+case
+are different right the main thing to
+notice with this problem is it
+lends itself very well to recursion and
+we know that there's a
+pretty convenient uh recurs recursive
+way to traverse
+trees and that's depth first search
+we're going to be using that recursive
+uh function to solve this problem so
+remember we're trying to check if these
+are the same
+tree right so that's a big problem we're
+comparing
+the big trees can we break that down
+recursively well first thing to
+intuitively check is
+we really just need to check the root
+nodes right are these the same that's
+the first thing to check
+are the root nodes the same if they are
+we're going to continue the function now
+if they were different for example maybe
+this had a different value if it was
+true
+we immediately return false right if
+even a single node
+doesn't match we can return false
+nothing more is needed now if they do
+match right these are equal great now
+this is the recursive part we don't have
+to consider this node anymore and we
+don't have to consider this node anymore
+and now we have changed the problem now
+we actually have
+two trees left we have one left sub tree
+right these are the left sub trees and
+we also have two
+right sub trees so this is the right
+subtree of the first
+tree and this is the second right
+subtree so now
+the problem is change now we're checking
+are these two trees
+the exact same and are these two trees
+the exact same right so we've changed
+the problem
+it becomes recursive right we're now
+going to be looking at the sub trees
+comparing them
+now both of the sub trees need to be
+equal right these two need to be equal
+and these two need to be equal and then
+we can return true
+and we're just going to continue to
+break this down obviously the tree
+could be much larger than this in which
+case we would continue to do that
+now let's not consider this example
+anymore we know with recursive functions
+the
+the main thing to consider is the base
+case so what are a couple base cases
+well what if we had
+two null nodes right they're both empty
+what's what's what are we going to
+return then is this the same tree or is
+this not the same tree well they're both
+empty right so that's technically the
+same tree in this base case
+we return true what if the left
+tree is null but maybe the right tree
+has a single node in it
+now this is obviously going to be false
+right these are not the same tree and
+the exact same thing could be true we
+could have
+a null in the right tree and a real node
+in the left tree and that would also be
+false
+now the case where both nodes are
+non-null
+then we're going to be looking at the
+values obviously if the values are the
+same
+that's true right that we're going to be
+returning true they're the same tree
+if the values are different we're going
+to be returning false so
+these are basically all of the base
+cases that i went over
+and the code is just basically going to
+be implementing exactly what we just
+showed right now so let's jump into that
+oh and last but not least
+the time complexity of this so the time
+complexity is overall going to be
+basically the size of both trees added
+together so the size of p
+plus q because worst case we would have
+to iterate through every single node
+in both trees so that's basically the
+overall time complexity
+so like i said this is going to be a
+recursive function since we already went
+through most of the base cases this is
+going to be pretty easy peasy so
+if you know debt first search already we
+know the base case is important
+so if the first tree is empty and if the
+second tree is empty so
+if p and q are empty then what are we
+gonna do
+we're gonna return true because they're
+both empty trees empty trees are
+technically equal
+now if they're both not empty but maybe
+one of them
+is empty so if this this statement did
+not execute
+then we're going to go to the next one
+so if not p or
+not q the only thing difference between
+this and the one above is this one is
+and this one is or so if this one did
+not
+execute that means both of them are not
+null but if
+this executes that means only one of
+them
+is null now what happens if one of them
+is null but the other one is
+not null well then they're not the same
+tree right so we're going to have to
+return false in that case
+and we had one more base case right so
+let's say if neither of these statements
+executes
+that means that both of the trees are
+non-empty so
+now we can actually look at the values
+so if p dot
+val is not equal to q dot val
+what does that tell us that tells us
+that the values are not the same so the
+trees are not the same
+so we can return false in this case
+one thing to notice here is that both of
+these two
+are executing the exact same thing right
+this is returning false
+and this is returning false so we can
+actually condense this i'm going to copy
+and paste this here so if
+if this is true or if
+this last thing is true then we can also
+return false we don't actually need
+this third condition so if this
+statement does not execute
+that means that both of the nodes p and
+q
+are not are are non-empty right and the
+values are actually the same
+because if this does not execute so then
+what are we going to do over here now
+we're going to do the recursive step
+we're going to call is same tree
+on the left and right subtree so if p
+we're going to call it on p left and q
+left
+and we're going to call it on p right
+and q right and what do we
+want to know from for the when we're
+comparing the left tree
+and the right trees what do we want to
+know we want to know that both
+of the the left sub trees and the right
+sub trees
+are equal so we want this to be true and
+we want this to return true as well so
+we're gonna take
+these two uh the return values of these
+two function calls and we're gonna
+and them together and if the and is true
+we're gonna return true if the and is
+false
+we're gonna end up returning false and
+this is the recursive step
+this is the only thing that we have to
+return this is the entire
+function so this is a pretty good
+problem to practice your tree traversals
+your debt for search
+practicing so i think it's a pretty good
+problem
+and i hope that this was helpful i hope
+you do understand the edge cases and how
+we simplified the code
+if it was please like and subscribe it
+supports the channel
+a lot and i'll hopefully see you pretty

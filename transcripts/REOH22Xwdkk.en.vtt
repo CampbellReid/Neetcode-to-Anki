@@ -1,0 +1,2072 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.080 --> 00:00:01.589 align:start position:0%
+ 
+everyone<00:00:00.480><c> welcome</c><00:00:00.880><c> back</c><00:00:01.120><c> and</c><00:00:01.199><c> let's</c><00:00:01.439><c> write</c>
+
+00:00:01.589 --> 00:00:01.599 align:start position:0%
+everyone welcome back and let's write
+ 
+
+00:00:01.599 --> 00:00:03.669 align:start position:0%
+everyone welcome back and let's write
+some<00:00:01.760><c> more</c><00:00:02.000><c> neat</c><00:00:02.240><c> code</c><00:00:02.480><c> today</c><00:00:02.800><c> so</c><00:00:02.960><c> today</c><00:00:03.360><c> let's</c>
+
+00:00:03.669 --> 00:00:03.679 align:start position:0%
+some more neat code today so today let's
+ 
+
+00:00:03.679 --> 00:00:04.710 align:start position:0%
+some more neat code today so today let's
+solve<00:00:04.000><c> the</c><00:00:04.160><c> problem</c>
+
+00:00:04.710 --> 00:00:04.720 align:start position:0%
+solve the problem
+ 
+
+00:00:04.720 --> 00:00:07.590 align:start position:0%
+solve the problem
+subsets<00:00:05.440><c> so</c><00:00:05.680><c> we</c><00:00:05.839><c> are</c><00:00:06.080><c> given</c><00:00:06.480><c> an</c><00:00:06.720><c> integer</c><00:00:07.120><c> array</c>
+
+00:00:07.590 --> 00:00:07.600 align:start position:0%
+subsets so we are given an integer array
+ 
+
+00:00:07.600 --> 00:00:09.830 align:start position:0%
+subsets so we are given an integer array
+nums<00:00:08.000><c> and</c><00:00:08.240><c> all</c><00:00:08.400><c> we</c><00:00:08.559><c> need</c><00:00:08.720><c> to</c><00:00:08.880><c> do</c><00:00:09.120><c> is</c><00:00:09.280><c> return</c>
+
+00:00:09.830 --> 00:00:09.840 align:start position:0%
+nums and all we need to do is return
+ 
+
+00:00:09.840 --> 00:00:12.470 align:start position:0%
+nums and all we need to do is return
+every<00:00:10.320><c> single</c><00:00:10.800><c> possible</c><00:00:11.519><c> subset</c><00:00:12.080><c> that</c><00:00:12.320><c> we</c>
+
+00:00:12.470 --> 00:00:12.480 align:start position:0%
+every single possible subset that we
+ 
+
+00:00:12.480 --> 00:00:13.509 align:start position:0%
+every single possible subset that we
+could<00:00:12.719><c> create</c>
+
+00:00:13.509 --> 00:00:13.519 align:start position:0%
+could create
+ 
+
+00:00:13.519 --> 00:00:16.390 align:start position:0%
+could create
+from<00:00:13.759><c> the</c><00:00:14.080><c> input</c><00:00:14.639><c> nums</c><00:00:15.280><c> and</c><00:00:15.519><c> we</c><00:00:15.679><c> do</c><00:00:15.839><c> not</c><00:00:16.160><c> want</c>
+
+00:00:16.390 --> 00:00:16.400 align:start position:0%
+from the input nums and we do not want
+ 
+
+00:00:16.400 --> 00:00:16.710 align:start position:0%
+from the input nums and we do not want
+to
+
+00:00:16.710 --> 00:00:16.720 align:start position:0%
+to
+ 
+
+00:00:16.720 --> 00:00:19.990 align:start position:0%
+to
+include<00:00:17.279><c> any</c><00:00:17.680><c> duplicate</c><00:00:18.320><c> subsets</c><00:00:19.039><c> so</c><00:00:19.520><c> what</c><00:00:19.760><c> is</c>
+
+00:00:19.990 --> 00:00:20.000 align:start position:0%
+include any duplicate subsets so what is
+ 
+
+00:00:20.000 --> 00:00:22.070 align:start position:0%
+include any duplicate subsets so what is
+a<00:00:20.080><c> subset</c><00:00:20.640><c> well</c><00:00:20.880><c> let's</c><00:00:21.119><c> say</c><00:00:21.279><c> we</c><00:00:21.520><c> have</c>
+
+00:00:22.070 --> 00:00:22.080 align:start position:0%
+a subset well let's say we have
+ 
+
+00:00:22.080 --> 00:00:25.509 align:start position:0%
+a subset well let's say we have
+one<00:00:22.560><c> two</c><00:00:22.960><c> three</c><00:00:23.439><c> as</c><00:00:23.600><c> our</c><00:00:23.840><c> input</c><00:00:24.560><c> one</c><00:00:24.880><c> subset</c><00:00:25.359><c> of</c>
+
+00:00:25.509 --> 00:00:25.519 align:start position:0%
+one two three as our input one subset of
+ 
+
+00:00:25.519 --> 00:00:26.470 align:start position:0%
+one two three as our input one subset of
+course<00:00:25.840><c> would</c><00:00:26.000><c> be</c>
+
+00:00:26.470 --> 00:00:26.480 align:start position:0%
+course would be
+ 
+
+00:00:26.480 --> 00:00:28.950 align:start position:0%
+course would be
+one<00:00:26.800><c> right</c><00:00:27.039><c> by</c><00:00:27.279><c> itself</c><00:00:27.920><c> another</c><00:00:28.320><c> subset</c><00:00:28.800><c> would</c>
+
+00:00:28.950 --> 00:00:28.960 align:start position:0%
+one right by itself another subset would
+ 
+
+00:00:28.960 --> 00:00:30.310 align:start position:0%
+one right by itself another subset would
+be<00:00:29.119><c> two</c><00:00:29.359><c> by</c><00:00:29.599><c> itself</c>
+
+00:00:30.310 --> 00:00:30.320 align:start position:0%
+be two by itself
+ 
+
+00:00:30.320 --> 00:00:33.030 align:start position:0%
+be two by itself
+we<00:00:30.480><c> could</c><00:00:30.640><c> do</c><00:00:30.960><c> one</c><00:00:31.279><c> two</c><00:00:31.599><c> together</c><00:00:32.559><c> now</c><00:00:32.880><c> what</c>
+
+00:00:33.030 --> 00:00:33.040 align:start position:0%
+we could do one two together now what
+ 
+
+00:00:33.040 --> 00:00:34.549 align:start position:0%
+we could do one two together now what
+happens<00:00:33.520><c> if</c><00:00:33.680><c> we</c><00:00:33.920><c> do</c>
+
+00:00:34.549 --> 00:00:34.559 align:start position:0%
+happens if we do
+ 
+
+00:00:34.559 --> 00:00:37.270 align:start position:0%
+happens if we do
+two<00:00:35.200><c> one</c><00:00:35.600><c> right</c><00:00:35.920><c> we</c><00:00:36.079><c> just</c><00:00:36.239><c> swap</c><00:00:36.640><c> the</c><00:00:36.880><c> order</c>
+
+00:00:37.270 --> 00:00:37.280 align:start position:0%
+two one right we just swap the order
+ 
+
+00:00:37.280 --> 00:00:37.910 align:start position:0%
+two one right we just swap the order
+does<00:00:37.520><c> that</c>
+
+00:00:37.910 --> 00:00:37.920 align:start position:0%
+does that
+ 
+
+00:00:37.920 --> 00:00:40.310 align:start position:0%
+does that
+count<00:00:38.399><c> as</c><00:00:38.640><c> a</c><00:00:38.879><c> different</c><00:00:39.280><c> subset</c><00:00:39.840><c> or</c><00:00:40.000><c> is</c><00:00:40.160><c> that</c>
+
+00:00:40.310 --> 00:00:40.320 align:start position:0%
+count as a different subset or is that
+ 
+
+00:00:40.320 --> 00:00:40.950 align:start position:0%
+count as a different subset or is that
+the<00:00:40.559><c> same</c>
+
+00:00:40.950 --> 00:00:40.960 align:start position:0%
+the same
+ 
+
+00:00:40.960 --> 00:00:43.350 align:start position:0%
+the same
+as<00:00:41.360><c> this</c><00:00:41.600><c> subset</c><00:00:42.320><c> well</c><00:00:42.559><c> they're</c><00:00:42.800><c> the</c><00:00:42.960><c> exact</c>
+
+00:00:43.350 --> 00:00:43.360 align:start position:0%
+as this subset well they're the exact
+ 
+
+00:00:43.360 --> 00:00:45.270 align:start position:0%
+as this subset well they're the exact
+same<00:00:43.680><c> we</c><00:00:43.840><c> don't</c><00:00:44.000><c> care</c><00:00:44.239><c> about</c><00:00:44.399><c> the</c><00:00:44.640><c> order</c><00:00:45.039><c> this</c>
+
+00:00:45.270 --> 00:00:45.280 align:start position:0%
+same we don't care about the order this
+ 
+
+00:00:45.280 --> 00:00:47.190 align:start position:0%
+same we don't care about the order this
+is<00:00:45.360><c> not</c><00:00:45.600><c> a</c><00:00:45.800><c> permutation</c>
+
+00:00:47.190 --> 00:00:47.200 align:start position:0%
+is not a permutation
+ 
+
+00:00:47.200 --> 00:00:49.270 align:start position:0%
+is not a permutation
+this<00:00:47.440><c> is</c><00:00:47.520><c> a</c><00:00:47.840><c> subset</c><00:00:48.559><c> so</c><00:00:48.719><c> it's</c><00:00:48.960><c> not</c><00:00:49.200><c> a</c>
+
+00:00:49.270 --> 00:00:49.280 align:start position:0%
+this is a subset so it's not a
+ 
+
+00:00:49.280 --> 00:00:50.310 align:start position:0%
+this is a subset so it's not a
+permutation
+
+00:00:50.310 --> 00:00:50.320 align:start position:0%
+permutation
+ 
+
+00:00:50.320 --> 00:00:52.950 align:start position:0%
+permutation
+it's<00:00:50.559><c> a</c><00:00:50.719><c> subset</c><00:00:51.280><c> so</c><00:00:52.000><c> we</c><00:00:52.160><c> do</c><00:00:52.320><c> not</c><00:00:52.559><c> want</c><00:00:52.719><c> to</c>
+
+00:00:52.950 --> 00:00:52.960 align:start position:0%
+it's a subset so we do not want to
+ 
+
+00:00:52.960 --> 00:00:53.350 align:start position:0%
+it's a subset so we do not want to
+include
+
+00:00:53.350 --> 00:00:53.360 align:start position:0%
+include
+ 
+
+00:00:53.360 --> 00:00:55.189 align:start position:0%
+include
+duplicates<00:00:54.079><c> and</c><00:00:54.320><c> this</c><00:00:54.640><c> counts</c><00:00:54.960><c> as</c><00:00:55.120><c> a</c>
+
+00:00:55.189 --> 00:00:55.199 align:start position:0%
+duplicates and this counts as a
+ 
+
+00:00:55.199 --> 00:00:56.869 align:start position:0%
+duplicates and this counts as a
+duplicate<00:00:55.680><c> we're</c><00:00:55.840><c> not</c><00:00:55.920><c> going</c><00:00:56.079><c> to</c><00:00:56.160><c> include</c><00:00:56.559><c> it</c>
+
+00:00:56.869 --> 00:00:56.879 align:start position:0%
+duplicate we're not going to include it
+ 
+
+00:00:56.879 --> 00:01:00.150 align:start position:0%
+duplicate we're not going to include it
+and<00:00:57.280><c> 3</c><00:00:57.600><c> is</c><00:00:57.760><c> another</c><00:00:58.079><c> subset</c><00:00:58.800><c> 1</c><00:00:59.120><c> 3</c><00:00:59.840><c> 2</c>
+
+00:01:00.150 --> 00:01:00.160 align:start position:0%
+and 3 is another subset 1 3 2
+ 
+
+00:01:00.160 --> 00:01:03.590 align:start position:0%
+and 3 is another subset 1 3 2
+3<00:01:00.879><c> 1</c><00:01:01.199><c> 2</c><00:01:01.440><c> 3</c><00:01:01.760><c> the</c><00:01:01.920><c> original</c><00:01:02.960><c> input</c>
+
+00:01:03.590 --> 00:01:03.600 align:start position:0%
+3 1 2 3 the original input
+ 
+
+00:01:03.600 --> 00:01:06.630 align:start position:0%
+3 1 2 3 the original input
+is<00:01:03.920><c> technically</c><00:01:04.479><c> also</c><00:01:04.879><c> a</c><00:01:05.119><c> subset</c><00:01:05.760><c> and</c><00:01:06.080><c> we</c><00:01:06.320><c> also</c>
+
+00:01:06.630 --> 00:01:06.640 align:start position:0%
+is technically also a subset and we also
+ 
+
+00:01:06.640 --> 00:01:08.789 align:start position:0%
+is technically also a subset and we also
+don't<00:01:06.799><c> want</c><00:01:06.960><c> to</c><00:01:07.040><c> forget</c><00:01:07.520><c> the</c><00:01:07.760><c> empty</c><00:01:08.159><c> subset</c><00:01:08.560><c> so</c>
+
+00:01:08.789 --> 00:01:08.799 align:start position:0%
+don't want to forget the empty subset so
+ 
+
+00:01:08.799 --> 00:01:09.350 align:start position:0%
+don't want to forget the empty subset so
+no<00:01:08.960><c> matter</c>
+
+00:01:09.350 --> 00:01:09.360 align:start position:0%
+no matter
+ 
+
+00:01:09.360 --> 00:01:12.149 align:start position:0%
+no matter
+what<00:01:09.520><c> we're</c><00:01:09.840><c> given</c><00:01:10.479><c> an</c><00:01:10.720><c> empty</c><00:01:11.119><c> subset</c><00:01:11.840><c> is</c>
+
+00:01:12.149 --> 00:01:12.159 align:start position:0%
+what we're given an empty subset is
+ 
+
+00:01:12.159 --> 00:01:14.149 align:start position:0%
+what we're given an empty subset is
+technically<00:01:12.799><c> a</c><00:01:13.040><c> subset</c><00:01:13.600><c> of</c><00:01:13.760><c> this</c>
+
+00:01:14.149 --> 00:01:14.159 align:start position:0%
+technically a subset of this
+ 
+
+00:01:14.159 --> 00:01:16.630 align:start position:0%
+technically a subset of this
+as<00:01:14.320><c> well</c><00:01:14.880><c> so</c><00:01:15.040><c> if</c><00:01:15.200><c> we</c><00:01:15.360><c> want</c><00:01:15.520><c> to</c><00:01:15.600><c> create</c><00:01:16.159><c> all</c><00:01:16.400><c> the</c>
+
+00:01:16.630 --> 00:01:16.640 align:start position:0%
+as well so if we want to create all the
+ 
+
+00:01:16.640 --> 00:01:19.350 align:start position:0%
+as well so if we want to create all the
+subsets<00:01:17.200><c> from</c><00:01:17.439><c> this</c><00:01:17.759><c> input</c><00:01:18.240><c> we</c><00:01:18.479><c> have</c><00:01:18.720><c> a</c><00:01:18.960><c> choice</c>
+
+00:01:19.350 --> 00:01:19.360 align:start position:0%
+subsets from this input we have a choice
+ 
+
+00:01:19.360 --> 00:01:19.670 align:start position:0%
+subsets from this input we have a choice
+for
+
+00:01:19.670 --> 00:01:19.680 align:start position:0%
+for
+ 
+
+00:01:19.680 --> 00:01:22.710 align:start position:0%
+for
+every<00:01:20.080><c> single</c><00:01:20.400><c> element</c><00:01:20.880><c> so</c><00:01:21.360><c> for</c><00:01:21.600><c> this</c><00:01:22.240><c> one</c>
+
+00:01:22.710 --> 00:01:22.720 align:start position:0%
+every single element so for this one
+ 
+
+00:01:22.720 --> 00:01:25.749 align:start position:0%
+every single element so for this one
+we<00:01:22.960><c> have</c><00:01:23.119><c> a</c><00:01:23.280><c> choice</c><00:01:23.759><c> of</c><00:01:24.080><c> include</c><00:01:24.640><c> the</c><00:01:24.799><c> one</c><00:01:25.520><c> in</c>
+
+00:01:25.749 --> 00:01:25.759 align:start position:0%
+we have a choice of include the one in
+ 
+
+00:01:25.759 --> 00:01:26.630 align:start position:0%
+we have a choice of include the one in
+our<00:01:25.920><c> subset</c>
+
+00:01:26.630 --> 00:01:26.640 align:start position:0%
+our subset
+ 
+
+00:01:26.640 --> 00:01:29.350 align:start position:0%
+our subset
+or<00:01:27.360><c> not</c><00:01:27.680><c> include</c><00:01:28.000><c> the</c><00:01:28.159><c> one</c><00:01:28.479><c> so</c><00:01:28.640><c> we</c><00:01:28.880><c> get</c><00:01:29.119><c> an</c>
+
+00:01:29.350 --> 00:01:29.360 align:start position:0%
+or not include the one so we get an
+ 
+
+00:01:29.360 --> 00:01:31.030 align:start position:0%
+or not include the one so we get an
+empty<00:01:29.600><c> subset</c><00:01:30.079><c> right</c><00:01:30.240><c> so</c><00:01:30.479><c> we</c><00:01:30.560><c> have</c><00:01:30.720><c> that</c>
+
+00:01:31.030 --> 00:01:31.040 align:start position:0%
+empty subset right so we have that
+ 
+
+00:01:31.040 --> 00:01:31.670 align:start position:0%
+empty subset right so we have that
+choice
+
+00:01:31.670 --> 00:01:31.680 align:start position:0%
+choice
+ 
+
+00:01:31.680 --> 00:01:34.789 align:start position:0%
+choice
+and<00:01:31.840><c> we</c><00:01:32.000><c> have</c><00:01:32.159><c> that</c><00:01:32.400><c> choice</c><00:01:32.720><c> for</c><00:01:33.119><c> every</c><00:01:33.920><c> single</c>
+
+00:01:34.789 --> 00:01:34.799 align:start position:0%
+and we have that choice for every single
+ 
+
+00:01:34.799 --> 00:01:37.749 align:start position:0%
+and we have that choice for every single
+input<00:01:35.360><c> element</c><00:01:36.079><c> so</c><00:01:36.400><c> in</c><00:01:36.640><c> total</c><00:01:37.040><c> we</c><00:01:37.200><c> have</c><00:01:37.520><c> two</c>
+
+00:01:37.749 --> 00:01:37.759 align:start position:0%
+input element so in total we have two
+ 
+
+00:01:37.759 --> 00:01:39.030 align:start position:0%
+input element so in total we have two
+choices<00:01:38.320><c> here</c>
+
+00:01:39.030 --> 00:01:39.040 align:start position:0%
+choices here
+ 
+
+00:01:39.040 --> 00:01:41.510 align:start position:0%
+choices here
+two<00:01:39.280><c> choices</c><00:01:39.759><c> here</c><00:01:40.159><c> and</c><00:01:40.400><c> two</c><00:01:40.640><c> choices</c><00:01:41.040><c> here</c><00:01:41.280><c> so</c>
+
+00:01:41.510 --> 00:01:41.520 align:start position:0%
+two choices here and two choices here so
+ 
+
+00:01:41.520 --> 00:01:42.710 align:start position:0%
+two choices here and two choices here so
+this<00:01:41.759><c> is</c><00:01:41.840><c> going</c><00:01:41.920><c> to</c><00:01:42.079><c> be</c>
+
+00:01:42.710 --> 00:01:42.720 align:start position:0%
+this is going to be
+ 
+
+00:01:42.720 --> 00:01:45.990 align:start position:0%
+this is going to be
+8<00:01:43.119><c> or</c><00:01:43.439><c> in</c><00:01:43.600><c> other</c><00:01:43.840><c> words</c><00:01:44.240><c> 2</c><00:01:44.479><c> to</c><00:01:44.640><c> the</c><00:01:44.799><c> power</c><00:01:45.119><c> of</c><00:01:45.439><c> n</c>
+
+00:01:45.990 --> 00:01:46.000 align:start position:0%
+8 or in other words 2 to the power of n
+ 
+
+00:01:46.000 --> 00:01:49.270 align:start position:0%
+8 or in other words 2 to the power of n
+where<00:01:46.479><c> n</c><00:01:46.960><c> is</c><00:01:47.439><c> the</c><00:01:47.840><c> size</c><00:01:48.479><c> of</c><00:01:48.880><c> our</c>
+
+00:01:49.270 --> 00:01:49.280 align:start position:0%
+where n is the size of our
+ 
+
+00:01:49.280 --> 00:01:52.310 align:start position:0%
+where n is the size of our
+input<00:01:49.920><c> right</c><00:01:50.079><c> so</c><00:01:50.399><c> this</c><00:01:50.799><c> is</c><00:01:50.960><c> the</c><00:01:51.360><c> number</c><00:01:52.000><c> of</c>
+
+00:01:52.310 --> 00:01:52.320 align:start position:0%
+input right so this is the number of
+ 
+
+00:01:52.320 --> 00:01:53.190 align:start position:0%
+input right so this is the number of
+subsets
+
+00:01:53.190 --> 00:01:53.200 align:start position:0%
+subsets
+ 
+
+00:01:53.200 --> 00:01:55.670 align:start position:0%
+subsets
+and<00:01:53.360><c> we</c><00:01:53.520><c> don't</c><00:01:53.840><c> want</c><00:01:54.079><c> the</c><00:01:54.320><c> number</c><00:01:54.640><c> of</c><00:01:55.200><c> subsets</c>
+
+00:01:55.670 --> 00:01:55.680 align:start position:0%
+and we don't want the number of subsets
+ 
+
+00:01:55.680 --> 00:01:58.149 align:start position:0%
+and we don't want the number of subsets
+we<00:01:55.759><c> actually</c><00:01:56.159><c> want</c><00:01:56.399><c> the</c><00:01:56.560><c> subsets</c><00:01:57.119><c> themselves</c>
+
+00:01:58.149 --> 00:01:58.159 align:start position:0%
+we actually want the subsets themselves
+ 
+
+00:01:58.159 --> 00:02:01.030 align:start position:0%
+we actually want the subsets themselves
+so<00:01:58.399><c> how</c><00:01:58.799><c> long</c><00:01:59.200><c> could</c><00:01:59.439><c> a</c><00:01:59.520><c> subset</c><00:02:00.079><c> be</c><00:02:00.399><c> right</c><00:02:00.640><c> well</c>
+
+00:02:01.030 --> 00:02:01.040 align:start position:0%
+so how long could a subset be right well
+ 
+
+00:02:01.040 --> 00:02:03.109 align:start position:0%
+so how long could a subset be right well
+we<00:02:01.280><c> could</c><00:02:01.520><c> have</c><00:02:01.840><c> a</c><00:02:02.000><c> subset</c><00:02:02.399><c> one</c><00:02:02.640><c> two</c><00:02:02.799><c> three</c>
+
+00:02:03.109 --> 00:02:03.119 align:start position:0%
+we could have a subset one two three
+ 
+
+00:02:03.119 --> 00:02:04.789 align:start position:0%
+we could have a subset one two three
+right<00:02:03.280><c> the</c><00:02:03.520><c> size</c><00:02:03.840><c> of</c><00:02:04.000><c> our</c><00:02:04.240><c> input</c>
+
+00:02:04.789 --> 00:02:04.799 align:start position:0%
+right the size of our input
+ 
+
+00:02:04.799 --> 00:02:06.469 align:start position:0%
+right the size of our input
+we<00:02:04.960><c> could</c><00:02:05.119><c> also</c><00:02:05.439><c> have</c><00:02:05.680><c> subsets</c><00:02:06.159><c> that</c><00:02:06.320><c> are</c>
+
+00:02:06.469 --> 00:02:06.479 align:start position:0%
+we could also have subsets that are
+ 
+
+00:02:06.479 --> 00:02:08.389 align:start position:0%
+we could also have subsets that are
+smaller<00:02:06.960><c> right</c><00:02:07.119><c> like</c><00:02:07.360><c> one</c><00:02:07.759><c> two</c>
+
+00:02:08.389 --> 00:02:08.399 align:start position:0%
+smaller right like one two
+ 
+
+00:02:08.399 --> 00:02:12.070 align:start position:0%
+smaller right like one two
+maybe<00:02:08.800><c> two</c><00:02:09.599><c> three</c><00:02:10.239><c> so</c><00:02:10.959><c> as</c><00:02:11.200><c> you</c><00:02:11.360><c> can</c><00:02:11.680><c> tell</c>
+
+00:02:12.070 --> 00:02:12.080 align:start position:0%
+maybe two three so as you can tell
+ 
+
+00:02:12.080 --> 00:02:14.070 align:start position:0%
+maybe two three so as you can tell
+this<00:02:12.400><c> is</c><00:02:12.560><c> not</c><00:02:12.720><c> going</c><00:02:12.879><c> to</c><00:02:12.959><c> be</c><00:02:13.280><c> an</c><00:02:13.520><c> efficient</c>
+
+00:02:14.070 --> 00:02:14.080 align:start position:0%
+this is not going to be an efficient
+ 
+
+00:02:14.080 --> 00:02:15.910 align:start position:0%
+this is not going to be an efficient
+problem<00:02:14.480><c> to</c><00:02:14.640><c> solve</c><00:02:14.959><c> we</c><00:02:15.040><c> have</c><00:02:15.280><c> this</c><00:02:15.520><c> many</c>
+
+00:02:15.910 --> 00:02:15.920 align:start position:0%
+problem to solve we have this many
+ 
+
+00:02:15.920 --> 00:02:16.710 align:start position:0%
+problem to solve we have this many
+subsets
+
+00:02:16.710 --> 00:02:16.720 align:start position:0%
+subsets
+ 
+
+00:02:16.720 --> 00:02:20.150 align:start position:0%
+subsets
+and<00:02:16.959><c> each</c><00:02:17.280><c> subset</c><00:02:17.920><c> could</c><00:02:18.239><c> be</c><00:02:18.560><c> up</c><00:02:18.800><c> to</c><00:02:19.120><c> length</c><00:02:19.599><c> n</c>
+
+00:02:20.150 --> 00:02:20.160 align:start position:0%
+and each subset could be up to length n
+ 
+
+00:02:20.160 --> 00:02:22.630 align:start position:0%
+and each subset could be up to length n
+so<00:02:20.319><c> the</c><00:02:20.640><c> worst</c><00:02:21.040><c> case</c><00:02:21.360><c> time</c><00:02:21.680><c> complexity</c><00:02:22.480><c> of</c>
+
+00:02:22.630 --> 00:02:22.640 align:start position:0%
+so the worst case time complexity of
+ 
+
+00:02:22.640 --> 00:02:24.070 align:start position:0%
+so the worst case time complexity of
+this<00:02:22.959><c> problem</c><00:02:23.440><c> is</c><00:02:23.520><c> going</c><00:02:23.680><c> to</c><00:02:23.760><c> be</c>
+
+00:02:24.070 --> 00:02:24.080 align:start position:0%
+this problem is going to be
+ 
+
+00:02:24.080 --> 00:02:27.990 align:start position:0%
+this problem is going to be
+n<00:02:24.720><c> times</c><00:02:25.520><c> 2</c><00:02:25.760><c> to</c><00:02:25.920><c> the</c><00:02:26.160><c> n</c><00:02:26.800><c> regardless</c><00:02:27.680><c> of</c>
+
+00:02:27.990 --> 00:02:28.000 align:start position:0%
+n times 2 to the n regardless of
+ 
+
+00:02:28.000 --> 00:02:30.309 align:start position:0%
+n times 2 to the n regardless of
+how<00:02:28.239><c> efficient</c><00:02:28.800><c> we</c><00:02:29.040><c> make</c><00:02:29.280><c> it</c><00:02:29.520><c> because</c><00:02:30.000><c> given</c>
+
+00:02:30.309 --> 00:02:30.319 align:start position:0%
+how efficient we make it because given
+ 
+
+00:02:30.319 --> 00:02:32.150 align:start position:0%
+how efficient we make it because given
+the<00:02:30.400><c> constraints</c><00:02:31.120><c> of</c><00:02:31.200><c> this</c><00:02:31.440><c> problem</c><00:02:31.840><c> we</c><00:02:32.000><c> don't</c>
+
+00:02:32.150 --> 00:02:32.160 align:start position:0%
+the constraints of this problem we don't
+ 
+
+00:02:32.160 --> 00:02:33.830 align:start position:0%
+the constraints of this problem we don't
+want<00:02:32.319><c> the</c><00:02:32.480><c> number</c><00:02:32.800><c> of</c><00:02:32.959><c> subsets</c><00:02:33.440><c> we</c><00:02:33.519><c> want</c><00:02:33.680><c> the</c>
+
+00:02:33.830 --> 00:02:33.840 align:start position:0%
+want the number of subsets we want the
+ 
+
+00:02:33.840 --> 00:02:35.270 align:start position:0%
+want the number of subsets we want the
+subsets<00:02:34.400><c> themselves</c>
+
+00:02:35.270 --> 00:02:35.280 align:start position:0%
+subsets themselves
+ 
+
+00:02:35.280 --> 00:02:38.070 align:start position:0%
+subsets themselves
+we<00:02:35.519><c> have</c><00:02:35.760><c> to</c><00:02:36.000><c> make</c><00:02:36.239><c> it</c><00:02:36.720><c> inefficient</c><00:02:37.360><c> so</c><00:02:37.840><c> with</c>
+
+00:02:38.070 --> 00:02:38.080 align:start position:0%
+we have to make it inefficient so with
+ 
+
+00:02:38.080 --> 00:02:39.350 align:start position:0%
+we have to make it inefficient so with
+this<00:02:38.319><c> in</c><00:02:38.480><c> mind</c><00:02:38.800><c> we</c><00:02:38.959><c> can</c><00:02:39.040><c> just</c>
+
+00:02:39.350 --> 00:02:39.360 align:start position:0%
+this in mind we can just
+ 
+
+00:02:39.360 --> 00:02:42.710 align:start position:0%
+this in mind we can just
+jump<00:02:39.680><c> straight</c><00:02:40.080><c> into</c><00:02:40.400><c> backtracking</c><00:02:41.680><c> which</c><00:02:42.080><c> is</c>
+
+00:02:42.710 --> 00:02:42.720 align:start position:0%
+jump straight into backtracking which is
+ 
+
+00:02:42.720 --> 00:02:44.630 align:start position:0%
+jump straight into backtracking which is
+the<00:02:42.959><c> brute</c><00:02:43.360><c> force</c><00:02:43.680><c> way</c><00:02:43.920><c> of</c><00:02:44.000><c> solving</c><00:02:44.400><c> this</c>
+
+00:02:44.630 --> 00:02:44.640 align:start position:0%
+the brute force way of solving this
+ 
+
+00:02:44.640 --> 00:02:45.830 align:start position:0%
+the brute force way of solving this
+problem<00:02:44.879><c> but</c><00:02:45.040><c> it's</c><00:02:45.280><c> also</c>
+
+00:02:45.830 --> 00:02:45.840 align:start position:0%
+problem but it's also
+ 
+
+00:02:45.840 --> 00:02:47.830 align:start position:0%
+problem but it's also
+pretty<00:02:46.080><c> much</c><00:02:46.319><c> the</c><00:02:46.480><c> most</c><00:02:46.720><c> efficient</c><00:02:47.120><c> way</c><00:02:47.599><c> so</c>
+
+00:02:47.830 --> 00:02:47.840 align:start position:0%
+pretty much the most efficient way so
+ 
+
+00:02:47.840 --> 00:02:49.030 align:start position:0%
+pretty much the most efficient way so
+like<00:02:48.080><c> i</c><00:02:48.319><c> said</c>
+
+00:02:49.030 --> 00:02:49.040 align:start position:0%
+like i said
+ 
+
+00:02:49.040 --> 00:02:50.869 align:start position:0%
+like i said
+for<00:02:49.280><c> each</c><00:02:49.440><c> of</c><00:02:49.519><c> these</c><00:02:49.840><c> elements</c><00:02:50.319><c> we</c><00:02:50.480><c> have</c><00:02:50.640><c> a</c>
+
+00:02:50.869 --> 00:02:50.879 align:start position:0%
+for each of these elements we have a
+ 
+
+00:02:50.879 --> 00:02:53.030 align:start position:0%
+for each of these elements we have a
+choice<00:02:51.440><c> so</c><00:02:51.680><c> i'm</c><00:02:51.840><c> going</c><00:02:51.920><c> to</c><00:02:52.000><c> draw</c><00:02:52.319><c> the</c><00:02:52.480><c> decision</c>
+
+00:02:53.030 --> 00:02:53.040 align:start position:0%
+choice so i'm going to draw the decision
+ 
+
+00:02:53.040 --> 00:02:53.589 align:start position:0%
+choice so i'm going to draw the decision
+tree
+
+00:02:53.589 --> 00:02:53.599 align:start position:0%
+tree
+ 
+
+00:02:53.599 --> 00:02:57.270 align:start position:0%
+tree
+so<00:02:53.920><c> first</c><00:02:54.319><c> we</c><00:02:54.480><c> can</c><00:02:54.720><c> choose</c><00:02:55.360><c> to</c><00:02:55.599><c> add</c><00:02:55.920><c> one</c><00:02:56.560><c> or</c>
+
+00:02:57.270 --> 00:02:57.280 align:start position:0%
+so first we can choose to add one or
+ 
+
+00:02:57.280 --> 00:03:00.470 align:start position:0%
+so first we can choose to add one or
+not<00:02:57.599><c> add</c><00:02:57.920><c> one</c><00:02:58.560><c> and</c><00:02:59.040><c> that</c><00:02:59.280><c> will</c><00:02:59.519><c> give</c><00:02:59.760><c> us</c><00:03:00.239><c> two</c>
+
+00:03:00.470 --> 00:03:00.480 align:start position:0%
+not add one and that will give us two
+ 
+
+00:03:00.480 --> 00:03:02.710 align:start position:0%
+not add one and that will give us two
+subsets<00:03:01.120><c> one</c><00:03:01.360><c> subset</c><00:03:01.840><c> with</c><00:03:02.000><c> just</c><00:03:02.319><c> one</c>
+
+00:03:02.710 --> 00:03:02.720 align:start position:0%
+subsets one subset with just one
+ 
+
+00:03:02.720 --> 00:03:05.750 align:start position:0%
+subsets one subset with just one
+and<00:03:02.959><c> one</c><00:03:03.440><c> empty</c><00:03:03.840><c> subset</c><00:03:04.640><c> so</c><00:03:05.120><c> along</c>
+
+00:03:05.750 --> 00:03:05.760 align:start position:0%
+and one empty subset so along
+ 
+
+00:03:05.760 --> 00:03:08.070 align:start position:0%
+and one empty subset so along
+this<00:03:06.080><c> path</c><00:03:06.480><c> we</c><00:03:06.640><c> can</c><00:03:06.879><c> decide</c><00:03:07.360><c> now</c><00:03:07.599><c> do</c><00:03:07.760><c> we</c><00:03:07.920><c> want</c>
+
+00:03:08.070 --> 00:03:08.080 align:start position:0%
+this path we can decide now do we want
+ 
+
+00:03:08.080 --> 00:03:09.190 align:start position:0%
+this path we can decide now do we want
+to<00:03:08.159><c> add</c><00:03:08.480><c> two</c><00:03:08.879><c> or</c>
+
+00:03:09.190 --> 00:03:09.200 align:start position:0%
+to add two or
+ 
+
+00:03:09.200 --> 00:03:12.070 align:start position:0%
+to add two or
+not<00:03:09.440><c> add</c><00:03:09.760><c> two</c><00:03:10.400><c> so</c><00:03:10.560><c> with</c><00:03:10.800><c> one</c><00:03:11.040><c> decision</c><00:03:11.519><c> we</c><00:03:11.760><c> will</c>
+
+00:03:12.070 --> 00:03:12.080 align:start position:0%
+not add two so with one decision we will
+ 
+
+00:03:12.080 --> 00:03:14.309 align:start position:0%
+not add two so with one decision we will
+add<00:03:12.400><c> two</c><00:03:12.720><c> and</c><00:03:12.879><c> the</c><00:03:13.040><c> other</c><00:03:13.200><c> decision</c><00:03:13.760><c> we</c><00:03:14.000><c> won't</c>
+
+00:03:14.309 --> 00:03:14.319 align:start position:0%
+add two and the other decision we won't
+ 
+
+00:03:14.319 --> 00:03:15.270 align:start position:0%
+add two and the other decision we won't
+add<00:03:14.640><c> to</c>
+
+00:03:15.270 --> 00:03:15.280 align:start position:0%
+add to
+ 
+
+00:03:15.280 --> 00:03:19.589 align:start position:0%
+add to
+so<00:03:15.680><c> we'll</c><00:03:16.000><c> get</c><00:03:16.720><c> one</c><00:03:17.440><c> two</c><00:03:18.239><c> as</c><00:03:18.560><c> one</c><00:03:18.800><c> subset</c><00:03:19.440><c> and</c>
+
+00:03:19.589 --> 00:03:19.599 align:start position:0%
+so we'll get one two as one subset and
+ 
+
+00:03:19.599 --> 00:03:21.190 align:start position:0%
+so we'll get one two as one subset and
+the<00:03:19.760><c> other</c><00:03:20.000><c> subset</c><00:03:20.400><c> will</c><00:03:20.640><c> just</c><00:03:20.879><c> be</c>
+
+00:03:21.190 --> 00:03:21.200 align:start position:0%
+the other subset will just be
+ 
+
+00:03:21.200 --> 00:03:23.910 align:start position:0%
+the other subset will just be
+one<00:03:21.440><c> by</c><00:03:21.680><c> itself</c><00:03:22.560><c> and</c><00:03:22.720><c> we</c><00:03:22.879><c> can</c><00:03:23.040><c> actually</c><00:03:23.440><c> repeat</c>
+
+00:03:23.910 --> 00:03:23.920 align:start position:0%
+one by itself and we can actually repeat
+ 
+
+00:03:23.920 --> 00:03:24.390 align:start position:0%
+one by itself and we can actually repeat
+that
+
+00:03:24.390 --> 00:03:24.400 align:start position:0%
+that
+ 
+
+00:03:24.400 --> 00:03:27.430 align:start position:0%
+that
+on<00:03:24.720><c> the</c><00:03:25.040><c> right</c><00:03:25.280><c> subtree</c><00:03:26.400><c> for</c><00:03:26.720><c> two</c><00:03:26.959><c> so</c><00:03:27.120><c> we</c><00:03:27.280><c> can</c>
+
+00:03:27.430 --> 00:03:27.440 align:start position:0%
+on the right subtree for two so we can
+ 
+
+00:03:27.440 --> 00:03:28.470 align:start position:0%
+on the right subtree for two so we can
+decide<00:03:27.840><c> to</c><00:03:28.080><c> add</c>
+
+00:03:28.470 --> 00:03:28.480 align:start position:0%
+decide to add
+ 
+
+00:03:28.480 --> 00:03:31.110 align:start position:0%
+decide to add
+two<00:03:28.799><c> to</c><00:03:28.959><c> this</c><00:03:29.200><c> empty</c><00:03:29.599><c> subset</c><00:03:30.480><c> or</c><00:03:30.720><c> we</c><00:03:30.879><c> can</c>
+
+00:03:31.110 --> 00:03:31.120 align:start position:0%
+two to this empty subset or we can
+ 
+
+00:03:31.120 --> 00:03:31.670 align:start position:0%
+two to this empty subset or we can
+decide
+
+00:03:31.670 --> 00:03:31.680 align:start position:0%
+decide
+ 
+
+00:03:31.680 --> 00:03:34.309 align:start position:0%
+decide
+to<00:03:32.000><c> not</c><00:03:32.319><c> add</c><00:03:32.560><c> two</c><00:03:32.799><c> to</c><00:03:32.959><c> the</c><00:03:33.120><c> empty</c><00:03:33.440><c> subset</c><00:03:34.159><c> in</c>
+
+00:03:34.309 --> 00:03:34.319 align:start position:0%
+to not add two to the empty subset in
+ 
+
+00:03:34.319 --> 00:03:35.509 align:start position:0%
+to not add two to the empty subset in
+which<00:03:34.560><c> case</c><00:03:34.879><c> we'll</c><00:03:35.120><c> get</c>
+
+00:03:35.509 --> 00:03:35.519 align:start position:0%
+which case we'll get
+ 
+
+00:03:35.519 --> 00:03:38.470 align:start position:0%
+which case we'll get
+a<00:03:35.760><c> subset</c><00:03:36.239><c> with</c><00:03:36.640><c> two</c><00:03:36.879><c> by</c><00:03:37.040><c> itself</c><00:03:37.680><c> or</c><00:03:37.920><c> we'll</c><00:03:38.159><c> get</c>
+
+00:03:38.470 --> 00:03:38.480 align:start position:0%
+a subset with two by itself or we'll get
+ 
+
+00:03:38.480 --> 00:03:40.390 align:start position:0%
+a subset with two by itself or we'll get
+the<00:03:38.720><c> empty</c><00:03:39.040><c> subset</c><00:03:39.519><c> again</c><00:03:39.920><c> right</c>
+
+00:03:40.390 --> 00:03:40.400 align:start position:0%
+the empty subset again right
+ 
+
+00:03:40.400 --> 00:03:41.910 align:start position:0%
+the empty subset again right
+this<00:03:40.640><c> is</c><00:03:40.799><c> where</c><00:03:40.959><c> we're</c><00:03:41.200><c> just</c><00:03:41.360><c> not</c><00:03:41.599><c> adding</c>
+
+00:03:41.910 --> 00:03:41.920 align:start position:0%
+this is where we're just not adding
+ 
+
+00:03:41.920 --> 00:03:43.990 align:start position:0%
+this is where we're just not adding
+anything<00:03:42.560><c> and</c><00:03:42.959><c> lastly</c>
+
+00:03:43.990 --> 00:03:44.000 align:start position:0%
+anything and lastly
+ 
+
+00:03:44.000 --> 00:03:45.670 align:start position:0%
+anything and lastly
+we<00:03:44.159><c> can</c><00:03:44.319><c> decide</c><00:03:44.720><c> whether</c><00:03:44.959><c> we</c><00:03:45.120><c> want</c><00:03:45.280><c> to</c><00:03:45.440><c> add</c>
+
+00:03:45.670 --> 00:03:45.680 align:start position:0%
+we can decide whether we want to add
+ 
+
+00:03:45.680 --> 00:03:47.270 align:start position:0%
+we can decide whether we want to add
+this<00:03:46.080><c> 3</c><00:03:46.560><c> or</c><00:03:46.799><c> not</c>
+
+00:03:47.270 --> 00:03:47.280 align:start position:0%
+this 3 or not
+ 
+
+00:03:47.280 --> 00:03:50.229 align:start position:0%
+this 3 or not
+so<00:03:47.440><c> if</c><00:03:47.599><c> we</c><00:03:47.760><c> add</c><00:03:48.000><c> the</c><00:03:48.239><c> 3</c><00:03:48.879><c> to</c><00:03:49.040><c> this</c><00:03:49.280><c> subset</c><00:03:50.000><c> we'll</c>
+
+00:03:50.229 --> 00:03:50.239 align:start position:0%
+so if we add the 3 to this subset we'll
+ 
+
+00:03:50.239 --> 00:03:50.789 align:start position:0%
+so if we add the 3 to this subset we'll
+get
+
+00:03:50.789 --> 00:03:50.799 align:start position:0%
+get
+ 
+
+00:03:50.799 --> 00:03:55.190 align:start position:0%
+get
+1<00:03:51.599><c> 2</c><00:03:52.400><c> 3.</c><00:03:53.200><c> if</c><00:03:53.280><c> we</c><00:03:53.599><c> don't</c><00:03:53.920><c> add</c><00:03:54.159><c> the</c><00:03:54.480><c> 3</c>
+
+00:03:55.190 --> 00:03:55.200 align:start position:0%
+1 2 3. if we don't add the 3
+ 
+
+00:03:55.200 --> 00:03:58.309 align:start position:0%
+1 2 3. if we don't add the 3
+then<00:03:55.519><c> we</c><00:03:55.680><c> will</c><00:03:55.920><c> remain</c><00:03:56.720><c> as</c><00:03:57.360><c> 1</c>
+
+00:03:58.309 --> 00:03:58.319 align:start position:0%
+then we will remain as 1
+ 
+
+00:03:58.319 --> 00:04:01.190 align:start position:0%
+then we will remain as 1
+2<00:03:59.120><c> and</c><00:03:59.280><c> we</c><00:03:59.439><c> can</c><00:03:59.599><c> repeat</c><00:04:00.000><c> that</c><00:04:00.239><c> decision</c><00:04:00.799><c> over</c>
+
+00:04:01.190 --> 00:04:01.200 align:start position:0%
+2 and we can repeat that decision over
+ 
+
+00:04:01.200 --> 00:04:01.670 align:start position:0%
+2 and we can repeat that decision over
+here
+
+00:04:01.670 --> 00:04:01.680 align:start position:0%
+here
+ 
+
+00:04:01.680 --> 00:04:03.030 align:start position:0%
+here
+and<00:04:01.760><c> that's</c><00:04:02.000><c> basically</c><00:04:02.400><c> what</c><00:04:02.560><c> i'm</c><00:04:02.720><c> gonna</c><00:04:02.879><c> do</c>
+
+00:04:03.030 --> 00:04:03.040 align:start position:0%
+and that's basically what i'm gonna do
+ 
+
+00:04:03.040 --> 00:04:05.429 align:start position:0%
+and that's basically what i'm gonna do
+now<00:04:03.280><c> right</c><00:04:03.519><c> repeat</c><00:04:03.840><c> that</c><00:04:04.080><c> decision</c><00:04:04.480><c> for</c><00:04:04.720><c> every</c>
+
+00:04:05.429 --> 00:04:05.439 align:start position:0%
+now right repeat that decision for every
+ 
+
+00:04:05.439 --> 00:04:07.910 align:start position:0%
+now right repeat that decision for every
+single<00:04:05.920><c> one</c><00:04:06.080><c> of</c><00:04:06.400><c> our</c><00:04:07.120><c> like</c><00:04:07.280><c> you</c><00:04:07.439><c> can</c><00:04:07.599><c> call</c><00:04:07.760><c> them</c>
+
+00:04:07.910 --> 00:04:07.920 align:start position:0%
+single one of our like you can call them
+ 
+
+00:04:07.920 --> 00:04:09.670 align:start position:0%
+single one of our like you can call them
+nodes<00:04:08.319><c> or</c><00:04:08.400><c> you</c><00:04:08.560><c> can</c><00:04:08.640><c> call</c><00:04:08.879><c> them</c><00:04:09.040><c> leaf</c><00:04:09.280><c> nodes</c>
+
+00:04:09.670 --> 00:04:09.680 align:start position:0%
+nodes or you can call them leaf nodes
+ 
+
+00:04:09.680 --> 00:04:11.030 align:start position:0%
+nodes or you can call them leaf nodes
+that's<00:04:10.000><c> just</c><00:04:10.159><c> what</c><00:04:10.319><c> we're</c><00:04:10.480><c> doing</c>
+
+00:04:11.030 --> 00:04:11.040 align:start position:0%
+that's just what we're doing
+ 
+
+00:04:11.040 --> 00:04:13.030 align:start position:0%
+that's just what we're doing
+so<00:04:11.200><c> if</c><00:04:11.360><c> i</c><00:04:11.519><c> add</c><00:04:11.680><c> the</c><00:04:11.840><c> three</c><00:04:12.159><c> here</c><00:04:12.400><c> we'll</c><00:04:12.560><c> have</c><00:04:12.799><c> a</c>
+
+00:04:13.030 --> 00:04:13.040 align:start position:0%
+so if i add the three here we'll have a
+ 
+
+00:04:13.040 --> 00:04:14.309 align:start position:0%
+so if i add the three here we'll have a
+one<00:04:13.680><c> three</c>
+
+00:04:14.309 --> 00:04:14.319 align:start position:0%
+one three
+ 
+
+00:04:14.319 --> 00:04:16.629 align:start position:0%
+one three
+if<00:04:14.480><c> i</c><00:04:14.640><c> do</c><00:04:14.799><c> not</c><00:04:15.040><c> add</c><00:04:15.280><c> the</c><00:04:15.519><c> three</c><00:04:15.840><c> here</c><00:04:16.400><c> we'll</c>
+
+00:04:16.629 --> 00:04:16.639 align:start position:0%
+if i do not add the three here we'll
+ 
+
+00:04:16.639 --> 00:04:17.509 align:start position:0%
+if i do not add the three here we'll
+have<00:04:17.199><c> the</c>
+
+00:04:17.509 --> 00:04:17.519 align:start position:0%
+have the
+ 
+
+00:04:17.519 --> 00:04:20.310 align:start position:0%
+have the
+one<00:04:18.000><c> by</c><00:04:18.320><c> itself</c><00:04:19.040><c> so</c><00:04:19.199><c> you</c><00:04:19.280><c> can</c><00:04:19.519><c> kind</c><00:04:19.680><c> of</c><00:04:19.840><c> see</c>
+
+00:04:20.310 --> 00:04:20.320 align:start position:0%
+one by itself so you can kind of see
+ 
+
+00:04:20.320 --> 00:04:21.030 align:start position:0%
+one by itself so you can kind of see
+these<00:04:20.639><c> are</c>
+
+00:04:21.030 --> 00:04:21.040 align:start position:0%
+these are
+ 
+
+00:04:21.040 --> 00:04:23.909 align:start position:0%
+these are
+four<00:04:21.519><c> unique</c><00:04:22.400><c> subsets</c><00:04:23.040><c> right</c><00:04:23.440><c> now</c><00:04:23.680><c> let's</c>
+
+00:04:23.909 --> 00:04:23.919 align:start position:0%
+four unique subsets right now let's
+ 
+
+00:04:23.919 --> 00:04:25.590 align:start position:0%
+four unique subsets right now let's
+build<00:04:24.160><c> the</c><00:04:24.320><c> rest</c><00:04:24.639><c> of</c><00:04:24.720><c> the</c><00:04:24.880><c> four</c><00:04:25.120><c> from</c><00:04:25.360><c> over</c>
+
+00:04:25.590 --> 00:04:25.600 align:start position:0%
+build the rest of the four from over
+ 
+
+00:04:25.600 --> 00:04:25.990 align:start position:0%
+build the rest of the four from over
+here
+
+00:04:25.990 --> 00:04:26.000 align:start position:0%
+here
+ 
+
+00:04:26.000 --> 00:04:28.790 align:start position:0%
+here
+so<00:04:26.240><c> i</c><00:04:26.400><c> have</c><00:04:26.479><c> the</c><00:04:26.720><c> choice</c><00:04:27.280><c> do</c><00:04:27.520><c> i</c><00:04:27.600><c> add</c><00:04:27.919><c> three</c><00:04:28.560><c> or</c>
+
+00:04:28.790 --> 00:04:28.800 align:start position:0%
+so i have the choice do i add three or
+ 
+
+00:04:28.800 --> 00:04:29.350 align:start position:0%
+so i have the choice do i add three or
+do<00:04:29.040><c> i</c>
+
+00:04:29.350 --> 00:04:29.360 align:start position:0%
+do i
+ 
+
+00:04:29.360 --> 00:04:32.469 align:start position:0%
+do i
+not<00:04:29.680><c> add</c><00:04:29.919><c> three</c><00:04:30.479><c> to</c><00:04:30.639><c> this</c><00:04:30.800><c> subset</c><00:04:31.600><c> if</c><00:04:31.759><c> i</c><00:04:32.000><c> do</c><00:04:32.320><c> i</c>
+
+00:04:32.469 --> 00:04:32.479 align:start position:0%
+not add three to this subset if i do i
+ 
+
+00:04:32.479 --> 00:04:33.270 align:start position:0%
+not add three to this subset if i do i
+will<00:04:32.720><c> get</c>
+
+00:04:33.270 --> 00:04:33.280 align:start position:0%
+will get
+ 
+
+00:04:33.280 --> 00:04:36.790 align:start position:0%
+will get
+two<00:04:34.320><c> three</c><00:04:35.120><c> if</c><00:04:35.360><c> i</c><00:04:35.680><c> don't</c><00:04:36.080><c> i</c><00:04:36.240><c> will</c><00:04:36.400><c> have</c>
+
+00:04:36.790 --> 00:04:36.800 align:start position:0%
+two three if i don't i will have
+ 
+
+00:04:36.800 --> 00:04:39.830 align:start position:0%
+two three if i don't i will have
+two<00:04:37.600><c> by</c><00:04:37.919><c> itself</c><00:04:38.560><c> and</c><00:04:38.720><c> you</c><00:04:38.800><c> can</c><00:04:38.960><c> see</c><00:04:39.280><c> these</c><00:04:39.600><c> two</c>
+
+00:04:39.830 --> 00:04:39.840 align:start position:0%
+two by itself and you can see these two
+ 
+
+00:04:39.840 --> 00:04:40.790 align:start position:0%
+two by itself and you can see these two
+subsets<00:04:40.400><c> are</c>
+
+00:04:40.790 --> 00:04:40.800 align:start position:0%
+subsets are
+ 
+
+00:04:40.800 --> 00:04:42.790 align:start position:0%
+subsets are
+different<00:04:41.440><c> from</c><00:04:41.600><c> the</c><00:04:41.759><c> subsets</c><00:04:42.240><c> over</c><00:04:42.479><c> here</c>
+
+00:04:42.790 --> 00:04:42.800 align:start position:0%
+different from the subsets over here
+ 
+
+00:04:42.800 --> 00:04:44.070 align:start position:0%
+different from the subsets over here
+these<00:04:43.040><c> are</c><00:04:43.120><c> still</c><00:04:43.440><c> unique</c>
+
+00:04:44.070 --> 00:04:44.080 align:start position:0%
+these are still unique
+ 
+
+00:04:44.080 --> 00:04:47.510 align:start position:0%
+these are still unique
+and<00:04:44.639><c> lastly</c><00:04:45.360><c> we</c><00:04:45.520><c> can</c><00:04:45.680><c> choose</c><00:04:46.000><c> to</c><00:04:46.240><c> add</c><00:04:46.639><c> three</c>
+
+00:04:47.510 --> 00:04:47.520 align:start position:0%
+and lastly we can choose to add three
+ 
+
+00:04:47.520 --> 00:04:50.469 align:start position:0%
+and lastly we can choose to add three
+to<00:04:47.680><c> the</c><00:04:48.639><c> sub</c><00:04:49.120><c> to</c><00:04:49.199><c> the</c><00:04:49.360><c> empty</c><00:04:49.680><c> subset</c><00:04:50.080><c> or</c><00:04:50.240><c> we</c><00:04:50.320><c> can</c>
+
+00:04:50.469 --> 00:04:50.479 align:start position:0%
+to the sub to the empty subset or we can
+ 
+
+00:04:50.479 --> 00:04:50.870 align:start position:0%
+to the sub to the empty subset or we can
+choose
+
+00:04:50.870 --> 00:04:50.880 align:start position:0%
+choose
+ 
+
+00:04:50.880 --> 00:04:53.430 align:start position:0%
+choose
+not<00:04:51.120><c> to</c><00:04:51.280><c> add</c><00:04:51.600><c> three</c><00:04:51.840><c> to</c><00:04:52.000><c> the</c><00:04:52.160><c> empty</c><00:04:52.560><c> subset</c><00:04:53.280><c> in</c>
+
+00:04:53.430 --> 00:04:53.440 align:start position:0%
+not to add three to the empty subset in
+ 
+
+00:04:53.440 --> 00:04:54.310 align:start position:0%
+not to add three to the empty subset in
+which<00:04:53.759><c> case</c>
+
+00:04:54.310 --> 00:04:54.320 align:start position:0%
+which case
+ 
+
+00:04:54.320 --> 00:04:57.510 align:start position:0%
+which case
+we'll<00:04:54.639><c> get</c><00:04:55.120><c> a</c><00:04:55.440><c> single</c><00:04:56.000><c> empty</c><00:04:56.400><c> subset</c><00:04:57.199><c> now</c><00:04:57.360><c> you</c>
+
+00:04:57.510 --> 00:04:57.520 align:start position:0%
+we'll get a single empty subset now you
+ 
+
+00:04:57.520 --> 00:04:58.310 align:start position:0%
+we'll get a single empty subset now you
+can<00:04:57.680><c> see</c>
+
+00:04:58.310 --> 00:04:58.320 align:start position:0%
+can see
+ 
+
+00:04:58.320 --> 00:05:00.629 align:start position:0%
+can see
+we<00:04:58.560><c> keep</c><00:04:58.880><c> multiplying</c><00:04:59.440><c> by</c><00:04:59.680><c> two</c><00:04:59.919><c> right</c><00:05:00.080><c> so</c><00:05:00.400><c> here</c>
+
+00:05:00.629 --> 00:05:00.639 align:start position:0%
+we keep multiplying by two right so here
+ 
+
+00:05:00.639 --> 00:05:02.469 align:start position:0%
+we keep multiplying by two right so here
+we<00:05:00.800><c> had</c><00:05:00.960><c> a</c><00:05:01.120><c> one</c><00:05:01.440><c> we</c><00:05:01.600><c> had</c><00:05:01.840><c> one</c>
+
+00:05:02.469 --> 00:05:02.479 align:start position:0%
+we had a one we had one
+ 
+
+00:05:02.479 --> 00:05:05.749 align:start position:0%
+we had a one we had one
+we<00:05:02.960><c> we</c><00:05:03.199><c> multiply</c><00:05:03.759><c> by</c><00:05:04.000><c> two</c><00:05:04.400><c> now</c><00:05:04.560><c> we</c><00:05:04.720><c> have</c><00:05:05.039><c> two</c>
+
+00:05:05.749 --> 00:05:05.759 align:start position:0%
+we we multiply by two now we have two
+ 
+
+00:05:05.759 --> 00:05:08.230 align:start position:0%
+we we multiply by two now we have two
+subsets<00:05:06.320><c> over</c><00:05:06.560><c> here</c><00:05:06.800><c> right</c><00:05:07.199><c> we</c><00:05:07.360><c> go</c><00:05:07.600><c> down</c><00:05:07.919><c> again</c>
+
+00:05:08.230 --> 00:05:08.240 align:start position:0%
+subsets over here right we go down again
+ 
+
+00:05:08.240 --> 00:05:10.070 align:start position:0%
+subsets over here right we go down again
+we<00:05:08.400><c> multiply</c><00:05:08.880><c> by</c><00:05:09.120><c> two</c><00:05:09.280><c> now</c><00:05:09.520><c> we</c><00:05:09.600><c> have</c>
+
+00:05:10.070 --> 00:05:10.080 align:start position:0%
+we multiply by two now we have
+ 
+
+00:05:10.080 --> 00:05:13.270 align:start position:0%
+we multiply by two now we have
+four<00:05:10.479><c> subsets</c><00:05:11.280><c> over</c><00:05:11.520><c> here</c><00:05:11.840><c> right</c><00:05:12.639><c> then</c><00:05:12.880><c> we</c><00:05:13.039><c> go</c>
+
+00:05:13.270 --> 00:05:13.280 align:start position:0%
+four subsets over here right then we go
+ 
+
+00:05:13.280 --> 00:05:15.430 align:start position:0%
+four subsets over here right then we go
+down<00:05:13.600><c> one</c><00:05:13.840><c> more</c><00:05:14.080><c> time</c><00:05:14.320><c> multiply</c><00:05:14.880><c> by</c><00:05:15.039><c> two</c><00:05:15.280><c> we</c>
+
+00:05:15.430 --> 00:05:15.440 align:start position:0%
+down one more time multiply by two we
+ 
+
+00:05:15.440 --> 00:05:15.749 align:start position:0%
+down one more time multiply by two we
+have
+
+00:05:15.749 --> 00:05:15.759 align:start position:0%
+have
+ 
+
+00:05:15.759 --> 00:05:19.510 align:start position:0%
+have
+eight<00:05:16.479><c> subsets</c><00:05:17.360><c> and</c><00:05:17.520><c> they're</c><00:05:17.919><c> all</c><00:05:18.560><c> unique</c>
+
+00:05:19.510 --> 00:05:19.520 align:start position:0%
+eight subsets and they're all unique
+ 
+
+00:05:19.520 --> 00:05:21.670 align:start position:0%
+eight subsets and they're all unique
+this<00:05:19.919><c> is</c><00:05:20.240><c> our</c><00:05:20.560><c> result</c><00:05:21.039><c> this</c><00:05:21.280><c> is</c><00:05:21.360><c> what</c><00:05:21.520><c> we're</c>
+
+00:05:21.670 --> 00:05:21.680 align:start position:0%
+this is our result this is what we're
+ 
+
+00:05:21.680 --> 00:05:23.029 align:start position:0%
+this is our result this is what we're
+building<00:05:22.000><c> with</c><00:05:22.160><c> this</c><00:05:22.400><c> problem</c>
+
+00:05:23.029 --> 00:05:23.039 align:start position:0%
+building with this problem
+ 
+
+00:05:23.039 --> 00:05:25.350 align:start position:0%
+building with this problem
+this<00:05:23.280><c> is</c><00:05:23.520><c> backtracking</c><00:05:24.639><c> now</c><00:05:24.880><c> if</c><00:05:25.039><c> you</c><00:05:25.120><c> want</c><00:05:25.280><c> to</c>
+
+00:05:25.350 --> 00:05:25.360 align:start position:0%
+this is backtracking now if you want to
+ 
+
+00:05:25.360 --> 00:05:26.950 align:start position:0%
+this is backtracking now if you want to
+know<00:05:25.520><c> how</c><00:05:25.680><c> to</c><00:05:25.840><c> do</c><00:05:26.080><c> this</c><00:05:26.320><c> backtracking</c>
+
+00:05:26.950 --> 00:05:26.960 align:start position:0%
+know how to do this backtracking
+ 
+
+00:05:26.960 --> 00:05:28.150 align:start position:0%
+know how to do this backtracking
+solution<00:05:27.440><c> in</c><00:05:27.680><c> code</c>
+
+00:05:28.150 --> 00:05:28.160 align:start position:0%
+solution in code
+ 
+
+00:05:28.160 --> 00:05:30.469 align:start position:0%
+solution in code
+let<00:05:28.320><c> me</c><00:05:28.479><c> show</c><00:05:28.720><c> you</c><00:05:28.960><c> right</c><00:05:29.199><c> now</c><00:05:29.759><c> so</c><00:05:30.000><c> let's</c><00:05:30.240><c> do</c>
+
+00:05:30.469 --> 00:05:30.479 align:start position:0%
+let me show you right now so let's do
+ 
+
+00:05:30.479 --> 00:05:32.710 align:start position:0%
+let me show you right now so let's do
+this<00:05:30.880><c> with</c><00:05:31.120><c> backtracking</c><00:05:31.759><c> so</c><00:05:32.000><c> we're</c><00:05:32.240><c> going</c><00:05:32.479><c> to</c>
+
+00:05:32.710 --> 00:05:32.720 align:start position:0%
+this with backtracking so we're going to
+ 
+
+00:05:32.720 --> 00:05:33.189 align:start position:0%
+this with backtracking so we're going to
+have
+
+00:05:33.189 --> 00:05:33.199 align:start position:0%
+have
+ 
+
+00:05:33.199 --> 00:05:35.350 align:start position:0%
+have
+a<00:05:33.360><c> result</c><00:05:33.919><c> list</c><00:05:34.400><c> which</c><00:05:34.639><c> we're</c><00:05:34.800><c> going</c><00:05:34.960><c> to</c><00:05:35.120><c> add</c>
+
+00:05:35.350 --> 00:05:35.360 align:start position:0%
+a result list which we're going to add
+ 
+
+00:05:35.360 --> 00:05:36.710 align:start position:0%
+a result list which we're going to add
+these<00:05:35.520><c> subsets</c><00:05:36.160><c> to</c>
+
+00:05:36.710 --> 00:05:36.720 align:start position:0%
+these subsets to
+ 
+
+00:05:36.720 --> 00:05:38.469 align:start position:0%
+these subsets to
+and<00:05:36.960><c> i'm</c><00:05:37.199><c> gonna</c><00:05:37.360><c> do</c><00:05:37.520><c> this</c><00:05:37.840><c> with</c><00:05:38.240><c> uh</c>
+
+00:05:38.469 --> 00:05:38.479 align:start position:0%
+and i'm gonna do this with uh
+ 
+
+00:05:38.479 --> 00:05:40.629 align:start position:0%
+and i'm gonna do this with uh
+backtracking<00:05:39.520><c> depth</c><00:05:39.759><c> first</c><00:05:40.080><c> search</c>
+
+00:05:40.629 --> 00:05:40.639 align:start position:0%
+backtracking depth first search
+ 
+
+00:05:40.639 --> 00:05:42.950 align:start position:0%
+backtracking depth first search
+and<00:05:41.199><c> i'm</c><00:05:41.520><c> going</c><00:05:41.759><c> to</c><00:05:42.000><c> write</c><00:05:42.240><c> this</c><00:05:42.479><c> function</c>
+
+00:05:42.950 --> 00:05:42.960 align:start position:0%
+and i'm going to write this function
+ 
+
+00:05:42.960 --> 00:05:44.390 align:start position:0%
+and i'm going to write this function
+inside<00:05:43.600><c> of</c><00:05:43.680><c> this</c><00:05:43.919><c> function</c>
+
+00:05:44.390 --> 00:05:44.400 align:start position:0%
+inside of this function
+ 
+
+00:05:44.400 --> 00:05:46.230 align:start position:0%
+inside of this function
+so<00:05:44.560><c> that</c><00:05:44.720><c> we</c><00:05:44.880><c> don't</c><00:05:45.039><c> have</c><00:05:45.120><c> to</c><00:05:45.280><c> pass</c><00:05:45.680><c> in</c><00:05:46.000><c> this</c>
+
+00:05:46.230 --> 00:05:46.240 align:start position:0%
+so that we don't have to pass in this
+ 
+
+00:05:46.240 --> 00:05:48.310 align:start position:0%
+so that we don't have to pass in this
+variable<00:05:46.800><c> or</c><00:05:47.039><c> this</c><00:05:47.199><c> variable</c><00:05:47.759><c> into</c><00:05:48.080><c> it</c>
+
+00:05:48.310 --> 00:05:48.320 align:start position:0%
+variable or this variable into it
+ 
+
+00:05:48.320 --> 00:05:49.990 align:start position:0%
+variable or this variable into it
+we'll<00:05:48.560><c> just</c><00:05:48.720><c> have</c><00:05:48.960><c> access</c><00:05:49.199><c> to</c><00:05:49.360><c> it</c><00:05:49.440><c> by</c><00:05:49.600><c> default</c>
+
+00:05:49.990 --> 00:05:50.000 align:start position:0%
+we'll just have access to it by default
+ 
+
+00:05:50.000 --> 00:05:52.230 align:start position:0%
+we'll just have access to it by default
+but<00:05:50.160><c> i'm</c><00:05:50.320><c> going</c><00:05:50.479><c> to</c><00:05:50.560><c> pass</c><00:05:50.880><c> an</c><00:05:51.199><c> i</c><00:05:51.520><c> which</c><00:05:51.759><c> is</c><00:05:51.919><c> the</c>
+
+00:05:52.230 --> 00:05:52.240 align:start position:0%
+but i'm going to pass an i which is the
+ 
+
+00:05:52.240 --> 00:05:53.029 align:start position:0%
+but i'm going to pass an i which is the
+index
+
+00:05:53.029 --> 00:05:53.039 align:start position:0%
+index
+ 
+
+00:05:53.039 --> 00:05:55.270 align:start position:0%
+index
+of<00:05:53.199><c> the</c><00:05:53.440><c> value</c><00:05:54.240><c> that</c><00:05:54.479><c> we</c><00:05:54.639><c> are</c><00:05:54.800><c> making</c><00:05:55.120><c> the</c>
+
+00:05:55.270 --> 00:05:55.280 align:start position:0%
+of the value that we are making the
+ 
+
+00:05:55.280 --> 00:05:56.550 align:start position:0%
+of the value that we are making the
+decision<00:05:55.680><c> on</c><00:05:55.919><c> so</c>
+
+00:05:56.550 --> 00:05:56.560 align:start position:0%
+decision on so
+ 
+
+00:05:56.560 --> 00:05:58.710 align:start position:0%
+decision on so
+you<00:05:56.720><c> know</c><00:05:56.960><c> we</c><00:05:57.120><c> had</c><00:05:57.440><c> one</c><00:05:57.759><c> two</c><00:05:58.080><c> three</c><00:05:58.479><c> so</c>
+
+00:05:58.710 --> 00:05:58.720 align:start position:0%
+you know we had one two three so
+ 
+
+00:05:58.720 --> 00:05:59.909 align:start position:0%
+you know we had one two three so
+initially<00:05:59.120><c> i'm</c><00:05:59.199><c> going</c><00:05:59.360><c> to</c><00:05:59.440><c> pass</c><00:05:59.680><c> an</c>
+
+00:05:59.909 --> 00:05:59.919 align:start position:0%
+initially i'm going to pass an
+ 
+
+00:05:59.919 --> 00:06:02.950 align:start position:0%
+initially i'm going to pass an
+index<00:06:00.400><c> zero</c><00:06:00.960><c> for</c><00:06:01.199><c> this</c><00:06:01.440><c> one</c><00:06:02.080><c> and</c><00:06:02.720><c> you</c><00:06:02.880><c> know</c>
+
+00:06:02.950 --> 00:06:02.960 align:start position:0%
+index zero for this one and you know
+ 
+
+00:06:02.960 --> 00:06:04.550 align:start position:0%
+index zero for this one and you know
+this<00:06:03.280><c> will</c><00:06:03.440><c> be</c><00:06:03.600><c> index</c><00:06:03.919><c> one</c><00:06:04.080><c> this</c><00:06:04.240><c> will</c><00:06:04.400><c> be</c>
+
+00:06:04.550 --> 00:06:04.560 align:start position:0%
+this will be index one this will be
+ 
+
+00:06:04.560 --> 00:06:06.230 align:start position:0%
+this will be index one this will be
+index<00:06:04.960><c> 2</c><00:06:05.120><c> that's</c><00:06:05.360><c> going</c><00:06:05.440><c> to</c><00:06:05.520><c> tell</c><00:06:05.759><c> us</c>
+
+00:06:06.230 --> 00:06:06.240 align:start position:0%
+index 2 that's going to tell us
+ 
+
+00:06:06.240 --> 00:06:09.189 align:start position:0%
+index 2 that's going to tell us
+whether<00:06:06.560><c> we</c><00:06:06.720><c> decide</c><00:06:07.120><c> to</c><00:06:07.280><c> add</c><00:06:07.600><c> 3</c><00:06:08.000><c> or</c><00:06:08.240><c> not</c><00:06:08.479><c> add</c><00:06:08.800><c> 3.</c>
+
+00:06:09.189 --> 00:06:09.199 align:start position:0%
+whether we decide to add 3 or not add 3.
+ 
+
+00:06:09.199 --> 00:06:11.110 align:start position:0%
+whether we decide to add 3 or not add 3.
+so<00:06:09.360><c> this</c><00:06:09.680><c> i</c><00:06:09.840><c> will</c><00:06:10.000><c> tell</c><00:06:10.240><c> us</c><00:06:10.400><c> which</c><00:06:10.720><c> element</c>
+
+00:06:11.110 --> 00:06:11.120 align:start position:0%
+so this i will tell us which element
+ 
+
+00:06:11.120 --> 00:06:11.909 align:start position:0%
+so this i will tell us which element
+we're<00:06:11.280><c> currently</c>
+
+00:06:11.909 --> 00:06:11.919 align:start position:0%
+we're currently
+ 
+
+00:06:11.919 --> 00:06:14.070 align:start position:0%
+we're currently
+visiting<00:06:12.560><c> and</c><00:06:12.800><c> so</c><00:06:13.039><c> we</c><00:06:13.199><c> know</c><00:06:13.360><c> that</c><00:06:13.520><c> the</c><00:06:13.759><c> base</c>
+
+00:06:14.070 --> 00:06:14.080 align:start position:0%
+visiting and so we know that the base
+ 
+
+00:06:14.080 --> 00:06:15.670 align:start position:0%
+visiting and so we know that the base
+case<00:06:14.479><c> for</c><00:06:14.639><c> this</c><00:06:14.880><c> will</c><00:06:15.120><c> be</c><00:06:15.360><c> if</c>
+
+00:06:15.670 --> 00:06:15.680 align:start position:0%
+case for this will be if
+ 
+
+00:06:15.680 --> 00:06:17.909 align:start position:0%
+case for this will be if
+i<00:06:16.000><c> happens</c><00:06:16.400><c> to</c><00:06:16.560><c> be</c><00:06:16.800><c> out</c><00:06:16.960><c> of</c><00:06:17.120><c> bounds</c><00:06:17.440><c> so</c><00:06:17.600><c> if</c><00:06:17.680><c> it's</c>
+
+00:06:17.909 --> 00:06:17.919 align:start position:0%
+i happens to be out of bounds so if it's
+ 
+
+00:06:17.919 --> 00:06:19.189 align:start position:0%
+i happens to be out of bounds so if it's
+greater<00:06:18.240><c> than</c><00:06:18.400><c> or</c><00:06:18.639><c> equal</c>
+
+00:06:19.189 --> 00:06:19.199 align:start position:0%
+greater than or equal
+ 
+
+00:06:19.199 --> 00:06:21.590 align:start position:0%
+greater than or equal
+to<00:06:19.360><c> the</c><00:06:19.680><c> length</c><00:06:20.160><c> of</c><00:06:20.319><c> our</c><00:06:20.560><c> input</c><00:06:20.880><c> we</c><00:06:21.120><c> know</c><00:06:21.280><c> we're</c>
+
+00:06:21.590 --> 00:06:21.600 align:start position:0%
+to the length of our input we know we're
+ 
+
+00:06:21.600 --> 00:06:22.629 align:start position:0%
+to the length of our input we know we're
+out<00:06:21.759><c> of</c><00:06:22.000><c> bounds</c>
+
+00:06:22.629 --> 00:06:22.639 align:start position:0%
+out of bounds
+ 
+
+00:06:22.639 --> 00:06:25.749 align:start position:0%
+out of bounds
+and<00:06:22.880><c> in</c><00:06:23.039><c> that</c><00:06:23.280><c> case</c><00:06:23.680><c> we</c><00:06:23.919><c> can</c><00:06:24.160><c> just</c><00:06:24.639><c> return</c><00:06:25.440><c> now</c>
+
+00:06:25.749 --> 00:06:25.759 align:start position:0%
+and in that case we can just return now
+ 
+
+00:06:25.759 --> 00:06:26.390 align:start position:0%
+and in that case we can just return now
+what
+
+00:06:26.390 --> 00:06:26.400 align:start position:0%
+what
+ 
+
+00:06:26.400 --> 00:06:27.909 align:start position:0%
+what
+what<00:06:26.639><c> like</c><00:06:26.800><c> data</c><00:06:27.039><c> structure</c><00:06:27.440><c> am</c><00:06:27.600><c> i</c><00:06:27.680><c> going</c><00:06:27.759><c> to</c>
+
+00:06:27.909 --> 00:06:27.919 align:start position:0%
+what like data structure am i going to
+ 
+
+00:06:27.919 --> 00:06:30.390 align:start position:0%
+what like data structure am i going to
+use<00:06:28.240><c> to</c><00:06:28.560><c> build</c><00:06:29.120><c> each</c><00:06:29.360><c> subset</c><00:06:29.919><c> i'm</c><00:06:30.080><c> going</c><00:06:30.240><c> to</c>
+
+00:06:30.390 --> 00:06:30.400 align:start position:0%
+use to build each subset i'm going to
+ 
+
+00:06:30.400 --> 00:06:32.150 align:start position:0%
+use to build each subset i'm going to
+have<00:06:30.639><c> an</c><00:06:30.880><c> array</c><00:06:31.199><c> and</c><00:06:31.280><c> i'm</c><00:06:31.360><c> going</c><00:06:31.440><c> to</c><00:06:31.600><c> allocate</c>
+
+00:06:32.150 --> 00:06:32.160 align:start position:0%
+have an array and i'm going to allocate
+ 
+
+00:06:32.160 --> 00:06:32.550 align:start position:0%
+have an array and i'm going to allocate
+it
+
+00:06:32.550 --> 00:06:32.560 align:start position:0%
+it
+ 
+
+00:06:32.560 --> 00:06:34.950 align:start position:0%
+it
+outside<00:06:33.199><c> of</c><00:06:33.280><c> the</c><00:06:33.440><c> function</c><00:06:34.160><c> so</c><00:06:34.319><c> that</c><00:06:34.560><c> we</c><00:06:34.720><c> have</c>
+
+00:06:34.950 --> 00:06:34.960 align:start position:0%
+outside of the function so that we have
+ 
+
+00:06:34.960 --> 00:06:37.590 align:start position:0%
+outside of the function so that we have
+global<00:06:35.520><c> access</c><00:06:35.919><c> to</c><00:06:36.080><c> it</c><00:06:36.319><c> inside</c><00:06:36.800><c> of</c>
+
+00:06:37.590 --> 00:06:37.600 align:start position:0%
+global access to it inside of
+ 
+
+00:06:37.600 --> 00:06:39.990 align:start position:0%
+global access to it inside of
+this<00:06:37.840><c> function</c><00:06:38.319><c> right</c><00:06:38.720><c> so</c><00:06:38.960><c> let's</c><00:06:39.120><c> say</c><00:06:39.440><c> cur</c>
+
+00:06:39.990 --> 00:06:40.000 align:start position:0%
+this function right so let's say cur
+ 
+
+00:06:40.000 --> 00:06:41.670 align:start position:0%
+this function right so let's say cur
+let's<00:06:40.319><c> actually</c><00:06:40.560><c> call</c><00:06:40.800><c> it</c><00:06:40.960><c> subset</c>
+
+00:06:41.670 --> 00:06:41.680 align:start position:0%
+let's actually call it subset
+ 
+
+00:06:41.680 --> 00:06:44.950 align:start position:0%
+let's actually call it subset
+let's<00:06:41.919><c> say</c><00:06:42.160><c> that</c><00:06:42.400><c> it</c><00:06:42.720><c> has</c><00:06:43.360><c> the</c><00:06:44.319><c> subset</c><00:06:44.720><c> that</c><00:06:44.880><c> we</c>
+
+00:06:44.950 --> 00:06:44.960 align:start position:0%
+let's say that it has the subset that we
+ 
+
+00:06:44.960 --> 00:06:46.790 align:start position:0%
+let's say that it has the subset that we
+currently<00:06:45.360><c> have</c><00:06:45.600><c> if</c><00:06:45.759><c> we</c><00:06:45.919><c> ever</c><00:06:46.080><c> reach</c><00:06:46.400><c> the</c><00:06:46.560><c> base</c>
+
+00:06:46.790 --> 00:06:46.800 align:start position:0%
+currently have if we ever reach the base
+ 
+
+00:06:46.800 --> 00:06:48.309 align:start position:0%
+currently have if we ever reach the base
+case<00:06:47.039><c> we</c><00:06:47.199><c> know</c><00:06:47.440><c> we've</c><00:06:47.600><c> gotten</c>
+
+00:06:48.309 --> 00:06:48.319 align:start position:0%
+case we know we've gotten
+ 
+
+00:06:48.319 --> 00:06:51.270 align:start position:0%
+case we know we've gotten
+past<00:06:48.720><c> our</c><00:06:48.960><c> leaf</c><00:06:49.280><c> node</c><00:06:49.520><c> so</c><00:06:49.680><c> what</c><00:06:49.919><c> we</c><00:06:50.000><c> can</c><00:06:50.240><c> do</c><00:06:50.639><c> is</c>
+
+00:06:51.270 --> 00:06:51.280 align:start position:0%
+past our leaf node so what we can do is
+ 
+
+00:06:51.280 --> 00:06:52.870 align:start position:0%
+past our leaf node so what we can do is
+add<00:06:51.520><c> that</c><00:06:51.840><c> to</c><00:06:52.000><c> our</c><00:06:52.160><c> result</c>
+
+00:06:52.870 --> 00:06:52.880 align:start position:0%
+add that to our result
+ 
+
+00:06:52.880 --> 00:06:55.670 align:start position:0%
+add that to our result
+and<00:06:53.199><c> i'm</c><00:06:53.360><c> also</c><00:06:53.680><c> going</c><00:06:53.840><c> to</c><00:06:54.080><c> add</c><00:06:54.479><c> a</c><00:06:54.880><c> copy</c><00:06:55.360><c> of</c><00:06:55.520><c> the</c>
+
+00:06:55.670 --> 00:06:55.680 align:start position:0%
+and i'm also going to add a copy of the
+ 
+
+00:06:55.680 --> 00:06:57.029 align:start position:0%
+and i'm also going to add a copy of the
+subset<00:06:56.319><c> because</c>
+
+00:06:57.029 --> 00:06:57.039 align:start position:0%
+subset because
+ 
+
+00:06:57.039 --> 00:06:59.189 align:start position:0%
+subset because
+it<00:06:57.520><c> because</c><00:06:57.759><c> the</c><00:06:57.919><c> way</c><00:06:58.160><c> it</c><00:06:58.240><c> works</c><00:06:58.560><c> in</c><00:06:58.720><c> python</c>
+
+00:06:59.189 --> 00:06:59.199 align:start position:0%
+it because the way it works in python
+ 
+
+00:06:59.199 --> 00:07:00.790 align:start position:0%
+it because the way it works in python
+and<00:06:59.360><c> in</c><00:06:59.440><c> most</c><00:06:59.840><c> most</c><00:07:00.080><c> languages</c>
+
+00:07:00.790 --> 00:07:00.800 align:start position:0%
+and in most most languages
+ 
+
+00:07:00.800 --> 00:07:03.830 align:start position:0%
+and in most most languages
+this<00:07:01.039><c> subset</c><00:07:02.080><c> is</c><00:07:02.479><c> going</c><00:07:02.639><c> to</c><00:07:02.880><c> be</c><00:07:03.199><c> modified</c>
+
+00:07:03.830 --> 00:07:03.840 align:start position:0%
+this subset is going to be modified
+ 
+
+00:07:03.840 --> 00:07:05.909 align:start position:0%
+this subset is going to be modified
+right<00:07:04.160><c> so</c><00:07:04.400><c> we</c><00:07:04.560><c> know</c><00:07:04.720><c> we</c><00:07:04.880><c> have</c><00:07:05.120><c> two</c><00:07:05.360><c> decisions</c>
+
+00:07:05.909 --> 00:07:05.919 align:start position:0%
+right so we know we have two decisions
+ 
+
+00:07:05.919 --> 00:07:07.670 align:start position:0%
+right so we know we have two decisions
+so<00:07:06.160><c> this</c><00:07:06.400><c> is</c><00:07:06.560><c> the</c><00:07:06.720><c> decision</c>
+
+00:07:07.670 --> 00:07:07.680 align:start position:0%
+so this is the decision
+ 
+
+00:07:07.680 --> 00:07:11.510 align:start position:0%
+so this is the decision
+to<00:07:08.080><c> include</c><00:07:09.360><c> nums</c><00:07:10.000><c> of</c><00:07:10.240><c> i</c><00:07:10.560><c> so</c><00:07:10.720><c> this</c><00:07:10.880><c> is</c><00:07:10.960><c> like</c><00:07:11.199><c> our</c>
+
+00:07:11.510 --> 00:07:11.520 align:start position:0%
+to include nums of i so this is like our
+ 
+
+00:07:11.520 --> 00:07:13.189 align:start position:0%
+to include nums of i so this is like our
+left<00:07:11.840><c> decision</c><00:07:12.319><c> that</c><00:07:12.479><c> i</c><00:07:12.560><c> showed</c><00:07:12.800><c> you</c><00:07:12.960><c> in</c><00:07:13.039><c> the</c>
+
+00:07:13.189 --> 00:07:13.199 align:start position:0%
+left decision that i showed you in the
+ 
+
+00:07:13.199 --> 00:07:15.189 align:start position:0%
+left decision that i showed you in the
+picture<00:07:13.599><c> right</c><00:07:13.840><c> so</c><00:07:14.080><c> what</c><00:07:14.240><c> i'm</c><00:07:14.400><c> going</c><00:07:14.479><c> to</c><00:07:14.560><c> do</c><00:07:14.880><c> is</c>
+
+00:07:15.189 --> 00:07:15.199 align:start position:0%
+picture right so what i'm going to do is
+ 
+
+00:07:15.199 --> 00:07:17.909 align:start position:0%
+picture right so what i'm going to do is
+to<00:07:15.440><c> the</c><00:07:15.680><c> subset</c><00:07:16.319><c> i'm</c><00:07:16.479><c> going</c><00:07:16.560><c> to</c><00:07:16.720><c> append</c>
+
+00:07:17.909 --> 00:07:17.919 align:start position:0%
+to the subset i'm going to append
+ 
+
+00:07:17.919 --> 00:07:20.550 align:start position:0%
+to the subset i'm going to append
+nums<00:07:18.319><c> of</c><00:07:18.479><c> i</c><00:07:19.039><c> and</c><00:07:19.520><c> then</c><00:07:19.840><c> i'm</c><00:07:20.000><c> going</c><00:07:20.160><c> to</c>
+
+00:07:20.550 --> 00:07:20.560 align:start position:0%
+nums of i and then i'm going to
+ 
+
+00:07:20.560 --> 00:07:21.749 align:start position:0%
+nums of i and then i'm going to
+recursively<00:07:21.440><c> run</c>
+
+00:07:21.749 --> 00:07:21.759 align:start position:0%
+recursively run
+ 
+
+00:07:21.759 --> 00:07:24.390 align:start position:0%
+recursively run
+depth<00:07:22.000><c> first</c><00:07:22.319><c> search</c><00:07:22.880><c> on</c><00:07:23.280><c> the</c><00:07:23.599><c> next</c><00:07:24.000><c> element</c>
+
+00:07:24.390 --> 00:07:24.400 align:start position:0%
+depth first search on the next element
+ 
+
+00:07:24.400 --> 00:07:25.589 align:start position:0%
+depth first search on the next element
+so<00:07:24.639><c> i</c><00:07:24.960><c> plus</c>
+
+00:07:25.589 --> 00:07:25.599 align:start position:0%
+so i plus
+ 
+
+00:07:25.599 --> 00:07:27.909 align:start position:0%
+so i plus
+1.<00:07:26.080><c> so</c><00:07:26.240><c> this</c><00:07:26.479><c> is</c><00:07:26.560><c> going</c><00:07:26.720><c> to</c><00:07:26.880><c> be</c><00:07:27.039><c> like</c><00:07:27.280><c> the</c><00:07:27.520><c> left</c>
+
+00:07:27.909 --> 00:07:27.919 align:start position:0%
+1. so this is going to be like the left
+ 
+
+00:07:27.919 --> 00:07:29.670 align:start position:0%
+1. so this is going to be like the left
+branch<00:07:28.560><c> of</c><00:07:28.880><c> our</c>
+
+00:07:29.670 --> 00:07:29.680 align:start position:0%
+branch of our
+ 
+
+00:07:29.680 --> 00:07:32.469 align:start position:0%
+branch of our
+decision<00:07:30.160><c> tree</c><00:07:30.800><c> and</c><00:07:31.520><c> this</c><00:07:31.840><c> is</c><00:07:32.000><c> going</c><00:07:32.160><c> to</c><00:07:32.319><c> be</c>
+
+00:07:32.469 --> 00:07:32.479 align:start position:0%
+decision tree and this is going to be
+ 
+
+00:07:32.479 --> 00:07:33.909 align:start position:0%
+decision tree and this is going to be
+the<00:07:32.720><c> decision</c>
+
+00:07:33.909 --> 00:07:33.919 align:start position:0%
+the decision
+ 
+
+00:07:33.919 --> 00:07:37.270 align:start position:0%
+the decision
+not<00:07:34.479><c> to</c><00:07:34.880><c> include</c><00:07:35.759><c> nums</c><00:07:36.240><c> of</c><00:07:36.400><c> i</c><00:07:36.639><c> so</c><00:07:36.880><c> basically</c>
+
+00:07:37.270 --> 00:07:37.280 align:start position:0%
+not to include nums of i so basically
+ 
+
+00:07:37.280 --> 00:07:39.189 align:start position:0%
+not to include nums of i so basically
+we're<00:07:37.520><c> skipping</c><00:07:38.000><c> numbers</c><00:07:38.240><c> of</c><00:07:38.400><c> i</c><00:07:38.639><c> so</c><00:07:38.800><c> how</c><00:07:38.960><c> am</c><00:07:39.120><c> i</c>
+
+00:07:39.189 --> 00:07:39.199 align:start position:0%
+we're skipping numbers of i so how am i
+ 
+
+00:07:39.199 --> 00:07:40.710 align:start position:0%
+we're skipping numbers of i so how am i
+going<00:07:39.360><c> to</c><00:07:39.440><c> do</c><00:07:39.599><c> that</c><00:07:39.840><c> i'm</c><00:07:40.000><c> going</c><00:07:40.080><c> to</c><00:07:40.240><c> take</c><00:07:40.479><c> the</c>
+
+00:07:40.710 --> 00:07:40.720 align:start position:0%
+going to do that i'm going to take the
+ 
+
+00:07:40.720 --> 00:07:41.510 align:start position:0%
+going to do that i'm going to take the
+subset
+
+00:07:41.510 --> 00:07:41.520 align:start position:0%
+subset
+ 
+
+00:07:41.520 --> 00:07:44.869 align:start position:0%
+subset
+and<00:07:41.680><c> just</c><00:07:42.080><c> pop</c><00:07:42.880><c> the</c><00:07:43.039><c> element</c><00:07:43.520><c> that</c><00:07:43.680><c> we</c><00:07:44.000><c> just</c>
+
+00:07:44.869 --> 00:07:44.879 align:start position:0%
+and just pop the element that we just
+ 
+
+00:07:44.879 --> 00:07:47.110 align:start position:0%
+and just pop the element that we just
+appended<00:07:45.919><c> and</c><00:07:46.160><c> then</c><00:07:46.560><c> i'm</c><00:07:46.800><c> going</c><00:07:46.960><c> to</c>
+
+00:07:47.110 --> 00:07:47.120 align:start position:0%
+appended and then i'm going to
+ 
+
+00:07:47.120 --> 00:07:49.110 align:start position:0%
+appended and then i'm going to
+recursively<00:07:47.840><c> run</c><00:07:48.080><c> depth</c><00:07:48.319><c> first</c><00:07:48.639><c> search</c>
+
+00:07:49.110 --> 00:07:49.120 align:start position:0%
+recursively run depth first search
+ 
+
+00:07:49.120 --> 00:07:50.869 align:start position:0%
+recursively run depth first search
+uh<00:07:49.520><c> i'm</c><00:07:49.759><c> basically</c><00:07:50.160><c> going</c><00:07:50.319><c> to</c><00:07:50.400><c> do</c><00:07:50.560><c> the</c><00:07:50.639><c> same</c>
+
+00:07:50.869 --> 00:07:50.879 align:start position:0%
+uh i'm basically going to do the same
+ 
+
+00:07:50.879 --> 00:07:52.150 align:start position:0%
+uh i'm basically going to do the same
+thing<00:07:51.120><c> so</c><00:07:51.680><c> these</c>
+
+00:07:52.150 --> 00:07:52.160 align:start position:0%
+thing so these
+ 
+
+00:07:52.160 --> 00:07:54.070 align:start position:0%
+thing so these
+two<00:07:52.400><c> function</c><00:07:52.800><c> calls</c><00:07:53.120><c> while</c><00:07:53.360><c> they</c><00:07:53.599><c> look</c><00:07:53.840><c> the</c>
+
+00:07:54.070 --> 00:07:54.080 align:start position:0%
+two function calls while they look the
+ 
+
+00:07:54.080 --> 00:07:55.670 align:start position:0%
+two function calls while they look the
+exact<00:07:54.400><c> same</c><00:07:54.639><c> they're</c><00:07:54.800><c> going</c><00:07:54.960><c> to</c><00:07:55.039><c> behave</c>
+
+00:07:55.670 --> 00:07:55.680 align:start position:0%
+exact same they're going to behave
+ 
+
+00:07:55.680 --> 00:07:58.070 align:start position:0%
+exact same they're going to behave
+slightly<00:07:56.240><c> differently</c><00:07:56.879><c> because</c><00:07:57.360><c> for</c><00:07:57.680><c> this</c>
+
+00:07:58.070 --> 00:07:58.080 align:start position:0%
+slightly differently because for this
+ 
+
+00:07:58.080 --> 00:07:59.189 align:start position:0%
+slightly differently because for this
+recursive<00:07:58.639><c> call</c>
+
+00:07:59.189 --> 00:07:59.199 align:start position:0%
+recursive call
+ 
+
+00:07:59.199 --> 00:08:01.589 align:start position:0%
+recursive call
+it's<00:07:59.440><c> going</c><00:07:59.599><c> to</c><00:07:59.840><c> have</c><00:08:00.080><c> a</c><00:08:00.319><c> different</c><00:08:00.960><c> subset</c>
+
+00:08:01.589 --> 00:08:01.599 align:start position:0%
+it's going to have a different subset
+ 
+
+00:08:01.599 --> 00:08:02.390 align:start position:0%
+it's going to have a different subset
+given<00:08:01.919><c> to</c><00:08:02.080><c> it</c>
+
+00:08:02.390 --> 00:08:02.400 align:start position:0%
+given to it
+ 
+
+00:08:02.400 --> 00:08:05.029 align:start position:0%
+given to it
+and<00:08:02.560><c> this</c><00:08:02.800><c> recursive</c><00:08:03.360><c> call</c><00:08:04.080><c> is</c><00:08:04.240><c> going</c><00:08:04.479><c> to</c><00:08:04.639><c> have</c>
+
+00:08:05.029 --> 00:08:05.039 align:start position:0%
+and this recursive call is going to have
+ 
+
+00:08:05.039 --> 00:08:07.510 align:start position:0%
+and this recursive call is going to have
+an<00:08:05.360><c> empty</c><00:08:05.680><c> subset</c><00:08:06.160><c> given</c><00:08:06.479><c> to</c><00:08:06.720><c> it</c><00:08:06.960><c> so</c><00:08:07.120><c> now</c><00:08:07.360><c> the</c>
+
+00:08:07.510 --> 00:08:07.520 align:start position:0%
+an empty subset given to it so now the
+ 
+
+00:08:07.520 --> 00:08:08.950 align:start position:0%
+an empty subset given to it so now the
+only<00:08:07.680><c> thing</c><00:08:07.919><c> left</c><00:08:08.080><c> for</c><00:08:08.240><c> us</c><00:08:08.400><c> to</c><00:08:08.560><c> do</c>
+
+00:08:08.950 --> 00:08:08.960 align:start position:0%
+only thing left for us to do
+ 
+
+00:08:08.960 --> 00:08:11.510 align:start position:0%
+only thing left for us to do
+is<00:08:09.440><c> call</c><00:08:10.000><c> our</c><00:08:10.400><c> function</c><00:08:11.039><c> of</c><00:08:11.120><c> course</c><00:08:11.360><c> we're</c>
+
+00:08:11.510 --> 00:08:11.520 align:start position:0%
+is call our function of course we're
+ 
+
+00:08:11.520 --> 00:08:11.990 align:start position:0%
+is call our function of course we're
+going<00:08:11.599><c> to</c><00:08:11.680><c> pass</c>
+
+00:08:11.990 --> 00:08:12.000 align:start position:0%
+going to pass
+ 
+
+00:08:12.000 --> 00:08:14.550 align:start position:0%
+going to pass
+an<00:08:12.160><c> index</c><00:08:12.560><c> 0</c><00:08:12.879><c> that's</c><00:08:13.120><c> the</c><00:08:13.280><c> first</c><00:08:13.680><c> value</c><00:08:14.319><c> and</c>
+
+00:08:14.550 --> 00:08:14.560 align:start position:0%
+an index 0 that's the first value and
+ 
+
+00:08:14.560 --> 00:08:16.150 align:start position:0%
+an index 0 that's the first value and
+then<00:08:14.800><c> we</c><00:08:14.960><c> can</c><00:08:15.199><c> return</c>
+
+00:08:16.150 --> 00:08:16.160 align:start position:0%
+then we can return
+ 
+
+00:08:16.160 --> 00:08:19.830 align:start position:0%
+then we can return
+our<00:08:16.720><c> result</c><00:08:17.440><c> so</c><00:08:17.599><c> as</c><00:08:17.759><c> you</c><00:08:17.919><c> can</c><00:08:18.160><c> see</c><00:08:18.879><c> it</c><00:08:19.199><c> is</c><00:08:19.440><c> of</c><00:08:19.680><c> an</c>
+
+00:08:19.830 --> 00:08:19.840 align:start position:0%
+our result so as you can see it is of an
+ 
+
+00:08:19.840 --> 00:08:20.950 align:start position:0%
+our result so as you can see it is of an
+efficient<00:08:20.240><c> solution</c>
+
+00:08:20.950 --> 00:08:20.960 align:start position:0%
+efficient solution
+ 
+
+00:08:20.960 --> 00:08:23.350 align:start position:0%
+efficient solution
+luckily<00:08:21.440><c> for</c><00:08:21.759><c> us</c><00:08:22.160><c> the</c><00:08:22.400><c> order</c><00:08:22.800><c> that</c><00:08:22.960><c> we</c><00:08:23.120><c> have</c>
+
+00:08:23.350 --> 00:08:23.360 align:start position:0%
+luckily for us the order that we have
+ 
+
+00:08:23.360 --> 00:08:25.110 align:start position:0%
+luckily for us the order that we have
+our<00:08:23.520><c> subsets</c><00:08:24.000><c> in</c><00:08:24.080><c> the</c><00:08:24.240><c> result</c><00:08:24.560><c> doesn't</c><00:08:24.800><c> matter</c>
+
+00:08:25.110 --> 00:08:25.120 align:start position:0%
+our subsets in the result doesn't matter
+ 
+
+00:08:25.120 --> 00:08:27.189 align:start position:0%
+our subsets in the result doesn't matter
+so<00:08:25.280><c> for</c><00:08:25.440><c> example</c><00:08:25.759><c> if</c><00:08:25.919><c> we</c><00:08:26.080><c> had</c><00:08:26.319><c> an</c><00:08:26.479><c> empty</c>
+
+00:08:27.189 --> 00:08:27.199 align:start position:0%
+so for example if we had an empty
+ 
+
+00:08:27.199 --> 00:08:30.550 align:start position:0%
+so for example if we had an empty
+subset<00:08:27.680><c> and</c><00:08:27.759><c> we</c><00:08:27.919><c> had</c><00:08:28.240><c> one</c><00:08:28.960><c> that's</c><00:08:29.599><c> the</c><00:08:29.840><c> same</c><00:08:30.240><c> as</c>
+
+00:08:30.550 --> 00:08:30.560 align:start position:0%
+subset and we had one that's the same as
+ 
+
+00:08:30.560 --> 00:08:31.670 align:start position:0%
+subset and we had one that's the same as
+if<00:08:30.800><c> we</c><00:08:30.960><c> returned</c>
+
+00:08:31.670 --> 00:08:31.680 align:start position:0%
+if we returned
+ 
+
+00:08:31.680 --> 00:08:34.550 align:start position:0%
+if we returned
+one<00:08:32.399><c> and</c><00:08:32.800><c> the</c><00:08:33.039><c> empty</c><00:08:33.440><c> subset</c><00:08:33.919><c> right</c><00:08:34.240><c> like</c><00:08:34.399><c> the</c>
+
+00:08:34.550 --> 00:08:34.560 align:start position:0%
+one and the empty subset right like the
+ 
+
+00:08:34.560 --> 00:08:36.550 align:start position:0%
+one and the empty subset right like the
+order<00:08:34.959><c> that</c><00:08:35.120><c> we</c><00:08:35.279><c> put</c><00:08:35.440><c> the</c><00:08:35.599><c> subsets</c><00:08:36.159><c> in</c>
+
+00:08:36.550 --> 00:08:36.560 align:start position:0%
+order that we put the subsets in
+ 
+
+00:08:36.560 --> 00:08:38.949 align:start position:0%
+order that we put the subsets in
+doesn't<00:08:36.959><c> actually</c><00:08:37.360><c> matter</c><00:08:38.000><c> but</c><00:08:38.159><c> again</c><00:08:38.560><c> i</c><00:08:38.800><c> hope</c>
+
+00:08:38.949 --> 00:08:38.959 align:start position:0%
+doesn't actually matter but again i hope
+ 
+
+00:08:38.959 --> 00:08:40.790 align:start position:0%
+doesn't actually matter but again i hope
+this<00:08:39.200><c> was</c><00:08:39.360><c> helpful</c><00:08:39.839><c> if</c><00:08:40.000><c> you</c><00:08:40.159><c> enjoyed</c>
+
+00:08:40.790 --> 00:08:40.800 align:start position:0%
+this was helpful if you enjoyed
+ 
+
+00:08:40.800 --> 00:08:42.550 align:start position:0%
+this was helpful if you enjoyed
+please<00:08:41.120><c> like</c><00:08:41.360><c> and</c><00:08:41.440><c> subscribe</c><00:08:42.000><c> it</c><00:08:42.080><c> supports</c>
+
+00:08:42.550 --> 00:08:42.560 align:start position:0%
+please like and subscribe it supports
+ 
+
+00:08:42.560 --> 00:08:44.630 align:start position:0%
+please like and subscribe it supports
+the<00:08:42.640><c> channel</c><00:08:43.120><c> a</c><00:08:43.279><c> lot</c><00:08:43.680><c> and</c><00:08:43.839><c> i'll</c><00:08:44.000><c> hopefully</c>
+
+00:08:44.630 --> 00:08:44.640 align:start position:0%
+the channel a lot and i'll hopefully
+ 
+
+00:08:44.640 --> 00:08:48.560 align:start position:0%
+the channel a lot and i'll hopefully
+see<00:08:44.800><c> you</c><00:08:44.959><c> pretty</c><00:08:45.560><c> soon</c>
+

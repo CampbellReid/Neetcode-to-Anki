@@ -1,0 +1,661 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+we're going to solve
+longest repeating character replacement
+and so this is another problem from that
+blind 75 list
+so we are going to be one step closer to
+completing the entire list
+the link will be in the description to
+this spreadsheet if you do want to take
+a look
+and hello to the six people that are
+currently viewing the
+spreadsheet right now you're gonna be in
+the next video but okay so let's get
+into this problem because it's another
+pretty fundamental problem that's really
+good to understand so we're given a
+string
+s and a single integer k and so
+basically they tell us that we can
+choose
+any of the characters in the string and
+change it to any other uppercase english
+character so in this problem
+every character in the input string is
+going to be limited to uppercase english
+characters and we know that there's 26
+uppercase english characters from
+capital a to capital z
+and so basically we can perform a
+replacement on
+any of the characters at most k times
+so we are allowed to replace k different
+characters in the string to any other
+character we want
+and what we want to do is return the
+length of the
+longest substring containing the exact
+same character we can get after
+performing
+at most k different replacements
+so we just want to return that length we
+don't actually have to make those
+replacements in the input string
+so in this case when we take a look at
+the input string we have a
+b a b and we're allowed to replace two
+of the characters
+so what's the longest substring we could
+get with the exact same character well
+we could replace
+one of the b's we could basically
+replace both of the b's
+with a capital a and then we get four
+a's in a row
+which would give us an output of four
+and we could technically also do the
+opposite we could replace the a's
+with capital b's and that would give us
+the exact same result a length of four
+so i'm going to show you how you can
+solve this problem in big
+o of n time and technically it's going
+to be big o of
+26 multiplied by n which we know is also
+reduces to
+big o of n but there's actually
+technically an easier
+way to do it or at least a more simple
+way to do it which is just going to be
+a flat big o of n we don't even need
+this 26 constant
+but this way is actually pretty tricky
+to get to
+so i'll be going over a little bit of it
+but this is kind of the main way that
+you'd want to solve this problem
+so let's say we're given an input string
+like this and we're given a k value now
+the most brute force way would just be
+check every single substring right
+and if we were checking every single sub
+string in the entire input array we know
+there's n squared sub string so that
+wouldn't be the simple
+that wouldn't be the most efficient way
+to do it but even if we were doing it
+like that what exactly are we
+looking for if we're looking at a
+particular substring
+how do we know if this substring is
+valid because remember at the end of the
+day
+we want to maximize the result right the
+result is going to be the longest
+sub string that contains a single
+character and we can make
+two replacements so let's look at this
+substring alone
+how do we know if it's valid well which
+character are we going to replace are we
+going to want to replace the b's
+in order to make it all be amount to
+match a or would we want to replace the
+a in order to match it with the rest of
+the b's
+of course we're going to replace the
+character that occurs less frequently
+right because the number of replacements
+we have is
+limited so we would want to replace the
+character
+that the characters that are less
+frequent so in other words
+we want all characters in a particular
+window to
+match the most common character
+in that window so what we're going to be
+doing is we are going to have a
+hash map or a array which is going to
+take
+every single character in this case we
+only have characters a and b
+and we're going to count the number of
+occurrences of each character
+so for example if we were looking at
+this substring we see that there's three
+b's and we have a single
+a so how do we know if this window is
+valid what we're gonna do is we're gonna
+take
+the length of the window which is gonna
+be four
+right we're gonna take the length of the
+window right which we know in this case
+is four
+and we're gonna take the length or the
+count of the most frequent character in
+this case
+we know that that's b and the count of
+it happens to be
+three so we're gonna take four minus
+three and
+from that we're gonna get a one now what
+does this value one tell us
+it tells us the number of characters in
+our window right
+now that we need to replace in order to
+make it
+match the most frequent character b
+right we have a b here
+we want everything to match a b in this
+case we only have an a right but it
+could be possible like
+who knows maybe that we would have a c
+over here right or an x
+over here and it doesn't really matter
+what the characters
+are we just know that b is the most
+frequent character in the window
+and the other characters that are not b
+a and z
+for example are the characters we want
+to replace so we can calculate the
+number of characters we want to pull
+that we want to replace just like this
+and so so we want to replace one
+character how do we know if we have
+enough
+replacements to do one character well of
+course that's our input parameter
+k right so what we're confirming here is
+that
+this value is less than or equal to
+k as long as this condition is true
+that means our current window is valid
+that means we have enough replacements
+to make those replacements
+in our current window so this is the
+main condition that we're going to be
+checking the other question is how are
+we going to know which character is the
+most frequent well
+the brute force way is gonna be taking a
+look at our map
+of counts and we know that the max size
+of this could possibly be
+26 because we'd only have 26 different
+characters
+so doing finding the max character is
+going to be big o of 26 so that's
+a little bit more inefficient than we
+would like but it's technically still
+linear time like the overall algorithm
+is still going to be linear time
+the the last thing that we're gonna have
+to do though is to this
+uh equation we're gonna have to add a
+sliding window technique so basically
+what we're gonna do is we're gonna take
+our window
+start at the beginning expand it as much
+as we can as long as the
+the condition that we mentioned is valid
+if the condition is not valid then we're
+going to take our left pointer
+and then take our left pointer and then
+shift it as well
+until the string becomes valid once
+again
+so we're going to have a left and right
+pointer so initially left is gonna be at
+the beginning and
+right is also gonna be at the beginning
+and also the counts of a
+and b are initially gonna be zero now
+we're gonna look at the first character
+right
+that's where our right pointer happens
+to be we're gonna look at it we're gonna
+say okay we have a
+we have a single a right we're going to
+take our count of a
+and set it to 1 now so is this
+window valid as in can this window be
+the exact same character
+with within two replacements of course
+it can right that's kind of the trivial
+case but
+we would still calculate it and the way
+we would calculate it is get the size of
+our window right now we can see the size
+of our window is
+one subtracted by the count of
+the most frequent character in this case
+we know the most frequent character is a
+one minus one
+is that greater is that less than or
+equal to k we know k is two so of course
+uh this is going to equal zero zero is
+less than equal to two which is k
+right so of course this window is valid
+that's kind of a trivial case
+next we're going to shift our right
+pointer to the next character right
+so now we have a b so we're going to
+increment the count of b in our map
+so b is now going to be set to 1. in
+this case the length of our window is 2
+the most frequent character is either of
+these right and the
+the count of that frequent character is
+gonna be one so we're gonna have two
+minus one equal to one
+so this is the number of replacements
+that we would have to do and
+looking at our current window that makes
+sense right we'd have to replace at
+least one of these two characters
+so we're going to ensure that this the
+number of replacements that we need to
+do is less than or equal to k which is
+two of course that's true so
+our window is currently valid i guess i
+did forget to
+update our result so since this window
+is valid the length of the window is
+gonna be
+set to the result right so right now the
+result is two two is the length of the
+longest window that we can get
+so that's our result for now so now
+let's continue next we're gonna shift
+our right pointer to the third character
+so now
+we get another a so we're gonna take the
+count of a
+and increment it all the way to two and
+we're basically going to repeat our
+algorithm so once again we're gonna get
+the length of the window three minus the
+count of the most frequent character we
+see the most frequent character is
+a so the count of is two three minus two
+is one
+is that less than or equal to two which
+is k yes of course it is so
+this window is also valid we can update
+our result now to three so we found
+another window even longer so i'm going
+to take
+our right pointer once again and then
+shift it over to the b
+so now we're going to be since we
+reached another b we're going to
+increment the count of b
+to 2 now and so the length of our window
+now is 4
+and the count of the most frequent
+character is either of these and that's
+going to be 2
+4 minus 2 is equal to 2. is that less
+than or equal to k
+k is 2 in this case so of course once
+again this condition does hold so
+once again we found a window that's
+longer than our result we found a window
+now of length
+four and so once again we're going to
+take our right pointer and shift it so
+now
+another b let's increment the count of b
+to three so the length of the window now
+is five
+minus the count of the most frequent
+character charac that character is b
+five minus three is this two in that and
+less than or equal to k
+of course it's still true because when
+you look at our window
+we have three b's so that means we're
+going to be replacing the a's
+so we're gonna need to make two
+replacements and we are allowed to make
+two replacements
+okay so now we're finally gonna get to
+the case that i mentioned earlier where
+we're gonna have to take our left
+pointer and then slide it to the right
+which is why this is a sliding window
+problem so now we reached an
+a so we're gonna take the count of a and
+set it to three so now we have a
+count three and b count three so let's
+take the size of our window six
+subtract from it the count of the most
+frequent character it's gonna be
+either of these so six minus three means
+we need to make three replacements
+is that less than or equal to k k is two
+so we exceeded k right we exceeded the
+number of replacements we're allowed to
+make
+if we wanted this window to be valid we
+have to replace three characters in it
+but we're not allowed to do that so what
+we have to do
+is shrink the size of our window until
+we
+are valid so we're going to take our
+left pointer and
+shift it to the right so now the left
+pointer is going to be over here it's
+going to be at the b
+so since we removed this a from our
+window
+we have to decrement the count of a in
+our window so i'm going to cross this
+three out and now it's
+actually going to be set to 2. i kind of
+ran out of room but i hope this is still
+readable
+so now the count of a is two so now
+let's once again
+check is our window valid well the size
+of the window now is
+five and the count of the most frequent
+character is
+b and that's gonna be three so five
+minus three is gonna be equal to two
+is that less than or equal to k yes we
+are once again
+valid so this is technically a valid
+window and i think i forgot to update
+the result earlier when we had a window
+of size five so
+the result right now would be size five
+because the longest window we can make
+is either this window or the window that
+we had
+uh earlier with you know these first
+five characters
+but yeah and so at this point we would
+stop our algorithm because we did find a
+window of
+5 that is valid and our right pointer
+cannot be shifted
+anymore so this is the general algorithm
+so it's a basic sliding it's a
+fundamental sliding window problem with
+this particular condition
+being important but there's actually one
+way you can do it without
+having to look through the entire
+hashmap
+every time you want to find the most
+frequent character
+that occurs and it's kind of tricky
+to arrive at the solution but it's
+pretty easy to implement once you can
+figure it out
+i'll explain the algorithm at a high
+level i don't want to waste too much
+time on it but basically we're going to
+be having another variable
+and it's going to be called max
+frequency basically the count of the
+most frequent character at any given
+time
+so basically you know for example if we
+had a as
+a count of three and b is count two we'd
+say okay the count of the mo
+the most frequent character occurs three
+times so max f is going to be three
+and so any time you know if we got a b
+we inc
+let's say we incremented our b all the
+way up to four then we want to update
+our max frequency to four right so we'd
+always want this to be the most frequent
+character
+now the one problem is if we're trying
+to maintain the count of the most
+frequent character
+what happens when we take our left
+pointer for example right and then
+shift it right when we do that we're
+basically removing a character
+and therefore we're gonna have to update
+our count map right we are gonna do that
+but and if that does happen right let's
+say we took b and then
+from four we decremented it all the way
+down to
+two for example then we have to rescan
+this entire map
+and then find okay what's now what's the
+new most frequent character right so
+we'd have to take our max frequency
+and from four downgrade it all the way
+to
+a three for example so then we'd have to
+set it to a three
+but and that would basically defeat the
+purpose right we'd still have to do that
+big o of 26 calculation to scan through
+this
+but it's technically true that you
+don't have to decrement this max
+frequency
+but the main idea is this the result
+is only going to be maximized as we find
+a
+new max frequency right because remember
+what we were doing we were taking the
+length of the window
+subtracted by the max frequency right
+whatever the most occurring character
+was and we wanted to minimize this right
+so basically we want the
+length we want the length to be
+maximized because that's what our result
+is going to be set to
+so therefore we also want the max
+frequency to be maximized because we
+want to ensure
+that this is less than or equal to
+k and k is going to be a constant
+so for example let's say i had a max
+frequency of four
+but let's say now the new max frequency
+got downgraded to a three i'm
+still gonna leave this as a four because
+it's not going to
+change our result because for example if
+i had a
+6 minus 4 that was that was less than or
+equal to k which is 2 in our example
+and if i leave this as a 4 i'm basically
+overestimating what the max frequency is
+but we know at least at
+one given point in time it was a four so
+therefore we were able to take the
+length
+six and then set it equal to our result
+and now
+if we're ever so let's say our result is
+now six if we're
+ever going to increase the result from 6
+to another
+number like for example 7 we would
+require
+our max frequency to increase if it
+stays the same
+or if it decreases our result is never
+going to change because we only change
+our result
+when we increase our max frequency
+because that's the only way
+this condition here is going to be true
+so
+if our max frequency is downgraded we
+don't have to actually update it we
+don't have to look through the entire
+hash map to find the new max
+frequency but if we increase our max
+frequency for example if i took this
+a and then from three i set it equal to
+a five
+then that's that's something we can
+check and big o of
+one time and then if we increase this
+then we definitely
+do want to update our max frequency and
+increase it and that's something we can
+do in big o of one time so
+i know i probably went a little too long
+into this but the main idea here
+i'm trying to get at is the easy way to
+solve this problem with a sliding window
+is going to be big o
+of 26 times n which is technically
+linear but there is a
+clever way to do this in big o of end
+time that honestly i didn't figure out
+on my own and i wouldn't really expect
+other people to be able to figure it out
+on their own like in an interview at all
+but i will show this the standard
+solution and i'll also show the code for
+this more optimized solution
+okay so now let's jump into the code and
+the code is actually a lot easier than
+the visual example that i gave a lot
+shorter for sure so we're gonna have a
+hash map to count the occurrences
+of each character and we're also gonna
+have a result which is going to tell us
+the longest
+substring that we can create with k
+replacements and we're going to have a
+left pointer which is going to be at 0
+and then our right pointer is going to
+go through every single position
+in the entire string s so what we're
+going to do
+is for the character at position r we're
+going to increment the count of it
+we're going to take 1 plus whatever the
+count currently was
+count dot get this character and if the
+character doesn't exist in our hash map
+we're just going to return a default
+value of zero that's what this function
+is doing
+and so before what we're going to
+obviously do is update our result right
+and we want to set the result equal to
+the max that it's ever been
+and set it basically equal to the size
+of the window we can get the size of the
+window
+so we're going to take the max of result
+and the size of the window the size of
+the window can be gotten with
+right minus left plus one and
+but before we do this before we update
+the result we want to make sure that the
+current window is
+valid so what i'm going to do is
+basically say while and i don't think
+you'd actually need a while here you
+could just do if but i'm just going to
+do while just
+because so while the window is not valid
+and we would know that by taking the
+length of the window which we have down
+here so i'm just going to copy and paste
+that the length of the window
+subtracted by the most the count of the
+most frequent character which can be
+gotten with max
+of count dot values
+right we're basically going through the
+hash map which could be size 26 and just
+getting the max value from it
+so this is the number of replacements
+that we have to do and if the number of
+replacements was
+greater than the number of replacements
+that's allowed which is equal to k
+that's when we would want to shift our
+left pointer so we'd want to increment
+our left pointer
+but before we increment the left pointer
+we'd want to take the count of the
+character
+at the left position and then decrement
+it
+by one and that is the entire algorithm
+after all of that is done after we've
+gone through the entire string then we
+can just simply return our result
+and as you can see this is pretty
+efficient it's linear time it's about
+as efficient as you would need i think
+but i'm going to make that slight
+optimization that i showed you i'm going
+to maintain the max frequency in a
+single variable
+so that we won't have to do this
+operation where we're getting the max of
+the entire
+hash map instead up here before we
+execute that loop i'm going to say max
+frequency is going to be equal
+to the max of what it currently is max
+frequency or
+it's equal to the frequency of the
+character that we just added a value to
+maybe that character became the most
+frequent character
+so we would have to update our max
+frequency and we can do that
+just like this and this is a constant
+time operation we're not scanning any
+list or anything
+and then once we have this max frequency
+we can use it in
+this loop execution right so we can
+replace this
+and just use max f for that and the
+thing is
+notice how even when we're shifting left
+we're incrementing the left pointer
+we're potentially removing characters
+from our window we're still not
+decrementing max f because we actually
+don't need to
+it won't end up affecting the result if
+we for if we just don't decrement it
+and that very slight optimization which
+is really simple
+in terms of code but it's kind of hard
+to see why we're allowed to do that
+watch how much more efficient it makes
+our algorithm
+so as you can see look it definitely
+improved it i think it was
+50 milliseconds different so this is
+significantly faster
+it's hard to see why though i would
+definitely
+not expect most people to be able to
+figure that out
+so i hope that this was helpful if it
+was please like and subscribe it
+supports the channel
+a lot and i'll hopefully see you pretty

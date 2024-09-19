@@ -1,0 +1,490 @@
+everyone welcome back let's solve
+another problem today
+longest increasing subsequence and this
+is another tricky dynamic programming
+problem
+and i'm going to show you how to go from
+the recursive solution
+to the dynamic programming solution so
+we're given
+an array of numbers and we just want to
+return the length of the longest
+increasing subsequence
+and if you don't know what a subsequence
+is it's basically
+like let's say this is our input array
+we're basically taking a
+subarray but that subarray does not have
+to be
+contiguous so like we have from here so
+uh subsequence is three six two seven
+basically we took this subarray
+and we removed one two from it and we
+removed a one from it and now it's three
+six two seven but you notice about this
+subsequence
+it's not an increasing order right we
+have six and then we have two that's not
+increasing order so this is not a
+increasing subsequence so in this
+example we're given
+about nine elements and we want the
+longest increasing subsequence
+which we see is this and so how did we
+get that subsequence well you go from 2
+all the way to 101 but you notice
+that unfortunately this is not an
+increasing
+order we have a 5 and then we get a 3
+right after so we actually have two
+choices
+if we remove the three we have an
+increasing
+subsequence if we remove the five we
+also have an increasing subsequence but
+we just care about the length
+which in this case is four so we return
+four
+so the first idea you might have is
+brute force
+using depth first search so let's say
+that
+this is our input array so we have six
+elements for if we wanna know the brute
+force meaning we want to generate
+every possible subsequence we have a
+choice for each value right so for the
+first
+0 we have a choice are we going to
+include this
+0 in our subsequence or are we not going
+to include it in our subsequence
+so in reality for each value we have
+two choices now when we get to the next
+value we
+also have a choice are we including it
+or not
+so again we have two choices if we want
+to generate
+every possible subsequence so we do that
+for every single value
+and then we see that there are actually
+2 to the power of
+n possible subsequences where n is the
+number of values
+given in our input array so already you
+can see the time complexity is not going
+to be
+great but can we take this brute force
+approach and then somehow modify it
+to get a better solution like n squared
+so let's look at another example and
+this time we're going to do depth first
+search
+with caching and we're going to see how
+that improves our time complexity so
+we have an example of four elements so
+it's kind of obvious that this is our
+longest increasing subsequence so the
+result is going to be
+three three elements but how can we do
+this with an algorithm that's efficient
+well let's start out with the brute
+force approach
+let's check all subsequences starting at
+index 0 and then repeat that starting at
+index
+one starting at index two and starting
+at index
+three right so these are the indices so
+we take
+one decision to start at index
+zero we take one decision to start at
+index one
+one decision to start at index two and
+one decision to start at
+index three so in these cases
+these are going to be the subsequences
+we have so far so we know index zero has
+value 1
+index 1 has value 2 index 2 has value
+4 index 3 has value 3.
+so now let's go along the first path so
+index 0 so we know if we start at index
+zero
+we have three values that come after it
+so we can try
+all three of these possible decisions
+so we can go along index one index
+two and index three and we see that
+all three are possibly valid because all
+three of these values are greater than
+one
+so we can continue these subsequences so
+we know index one has value two
+index two has value four so we can add a
+four
+index three has value three so we can
+add a
+three to our subsequence that originally
+was just
+one so now we took index
+zero and index one so for here we only
+have
+two indices that come after these two
+values
+so let's continue our decisions we see
+that both
+four and three are greater than the
+the last value in our subsequence which
+is two
+so we can choose both of these decisions
+so if we take index 2 then we can add a
+4 to our subsequence if we take index 3
+we can add a
+3 to our subsequence so now let's
+continue here we have
+three values so far in our subsequence
+and there's one
+index that comes after two index three
+it has a value three
+so can we add a three to our subsequence
+we'll get one two four and then 3
+but this 3 is not greater
+than the last value in our subsequence
+so we technically
+cannot make this decision so we cannot
+continue
+to increase the subsequence anymore
+so we can mark this as reaching its
+limit we cannot continue it anymore what
+about
+this one well it stopped at index three
+which was over here
+so are there any elements that come
+after it now
+no there's not any elements so this
+subsequence
+has also reached its limit so we cannot
+increase it
+anymore but so now let's focus on this
+caching part
+what kind of repeated work have we
+eliminated well let's just
+do this out of order instead of doing
+these first let me show you what happens
+if we try to extend the three now
+we try to get another element right we
+started at index
+three but we know that no values come
+after index three so this one cannot be
+continued
+but what do we know about index three
+if we start at index three and we want
+the longest increasing
+subsequence we just get a single three
+so that tells us that lis starting at
+index three is one we don't need to
+repeat this work
+and isn't that what we just learned over
+here
+even though this subsequence is length
+3 we are talking about starting at the 3
+and we noticed we could add a 3 to it
+right
+this was the element that we added but
+as soon as we added that three we
+could not add we could not increase this
+subsequence anymore right that's what
+this
+x tells us we were only able to add
+one element if we start at index three
+and that's exactly what this two told us
+as well if we start at index two
+we can add a four but this three that
+comes after it cannot be
+added we cannot include that and there
+aren't any more elements to add
+so as soon as we finish this and we
+found this x meaning we could not go any
+lower
+we knew we knew that the
+longest increasing subsequence starting
+at index
+two is also one so
+therefore if we start at index two
+we cannot go any lower we cannot
+continue this
+and we don't even have to attempt to do
+that and what about
+this branch so if we chose if we
+started at index one we would start with
+the
+subsequence of two right that's what
+this tells us
+and so now i'm gonna repeat i'm gonna
+do some more stuff right i'm gonna
+choose the next indices
+two and three but wait a minute do i
+actually have to do that
+because look over here
+we started with index one and we already
+did that so when we started with index
+one
+we saw we had two choices a two or a
+three index right we could choose this
+or we could choose that we saw both of
+them
+ended right we could not continue either
+of them
+so if you want the longest increasing
+subsequence
+that starts at index 1 over here
+no matter what you choose the
+subsequence
+is gonna be length two either way right
+because
+if we start with a two then we can add a
+four
+or we can add a three but we cannot add
+both of them so we can mark the longest
+increasing subsequence
+starting at index one to be length
+two so we actually don't even have to
+go down this path once we already
+go down here because it's just gonna be
+repeated work
+and we also see for these two trees that
+we have not finished yet
+once we add a four the longest
+increasing
+subsequence at index two which is where
+four is at is going to be 1 so we cannot
+continue this
+anymore similarly once we add a 3
+we know no values come after it the
+longest increasing substituent starting
+at index 3 is just
+1 we cannot increase this anymore so
+when we finally in our depth first
+search get back to the root
+we're gonna see that the longest path is
+one of these right either that or of
+course you could
+go down this direction but either way
+the longest
+increasing subsequence starting at index
+zero
+is going to be three and so when you
+look
+at these four right because these are
+our subsequences these are the longest
+subsequences starting at each index the
+greatest
+one is three and so therefore the result
+is three but now if you actually wanna
+do the dynamic
+programming solution you might notice
+how we're doing this recursively we're
+kind of starting at the last
+index right three and then working our
+way
+up backwards to zero so then going back
+here so can we use that to do dynamic
+programming
+so now let me show you the dynamic
+programming solution and it's actually
+easier than you might think so we're
+going to work we're going to start at
+the last index 3 and then
+work our way backward so we know this is
+kind of the base case right
+no values come after it so the longest
+increasing subsequence we could make
+from here is just going to be
+length one anyway so we can say the lis
+starting at index three is just one
+that's the max
+length now how do we get the longest
+increasing subsequence
+starting at index two which is
+just one shifted to the left well
+one possibility is just four by itself
+right so that's one possibility it could
+just
+be one or it could be
+one plus the longest increasing
+subsequence starting at position three
+and what this means is if we take
+both of these right because lis of three
+is just
+one right so three by itself but we're
+only
+allowed to do this if the value
+nums at index 2 which we know is 4
+is less than nums at index
+3 which we know is 3. is this
+true this is not true so we are
+not allowed to do this so normally we
+would take the max of these two values
+but we know that the condition
+to take the max of this does not satisfy
+so we only have one choice
+one so the lis of this is going to be
+one i'll put it over
+here like in the corner so again we're
+gonna work our way backwards so let's
+get the longest increasing subsequence
+one index back at index one so we're
+going to do the similar
+thing that we just did so we know we
+could take a subsequence
+two by itself right that's one choice
+one is a choice length one we also have
+a choice
+one plus the longest increasing
+subsequence starting at four
+and we're allowed to do this because two
+is less than four so it
+is increasing the subsequence is
+increasing
+so another choice is one plus
+lis of two and another choice is
+l i s starting at index three because
+two
+is less than three right two is less
+than three so the subsequence is in
+increasing order so one plus l i s
+of three now we know that this is two
+and this is two so it doesn't really
+matter which one we do
+the lis of one is
+going to be equal to two regardless
+so now we want the longest increasing
+subsequence starting at index zero and
+we're just going to repeat what we just
+did so
+we could take one by itself which is
+just one
+or we could take one add it with the
+longest increasing subsequence starting
+at two
+or this longest increasing substitution
+starting at
+at this index or this index so we know
+we're going to get
+1 plus 1 from here we're going to get 1
+plus 1
+from here and we're going to get 1 plus
+2 from here and we're allowed to do all
+of these because you notice
+2 is greater than 1 4 is greater than 1
+and 3 is greater than 1 so they're an
+increase
+so they are an increasing order so then
+we know that the longest increasing
+subsequence of this
+is going to be equal to 3 which is what
+we want
+so this is a much better solution the
+dynamic programming solution is much
+better than brute force
+because the time complexity is o of n
+squared but why is it o of n squared
+well you see we're working backwards we
+start at three
+and then we check every position
+afterwards which is not
+too bad right so then we iterate through
+basically every value here
+when we start at four we have to look at
+every value that comes
+after it there's only one value that's
+good for us
+so we iterate through these two values
+when we start at two we have to check
+these subsequences starting at these two
+values
+so then we have to end up iterating
+through two
+and every value that comes after and we
+do the same
+thing for one so we iterate through one
+and
+every value that comes after so you can
+tell by looking at this
+this pattern is similar to an n squared
+pattern so now let's finally write the
+code so we know we're going to do this
+dynamic programming style so let's have
+a
+cache or a list it's initially going to
+be set to
+1 every value is going to be set to 1
+it's going to be the length of the input
+array that we're given
+so every longest increasing subsequence
+starting at every value or every index
+is initially just set to one we're going
+to try to find what the max is
+so we want to iterate through every
+index
+in the range of our input array
+and we want to do it in reverse order so
+that's what i'm going to do in python
+it if you're not familiar with python
+this might look a little weird but
+basically what i'm doing is starting at
+the last index
+and then going all the way to zero and
+just like i showed in the example
+we're going to start at index i like
+this could be i and then we want to
+iterate through
+every subsequence that came after it so
+i'm going to have another nested loop
+for j
+in range so starting at i plus 1
+and then going to the end of the input
+array
+and before we can update lis
+we want to know is the value
+at i actually less than the value
+at j because j comes after it if we want
+this to be an
+increasing subsequence this condition
+has to
+be true and only then are we allowed
+to update the longest increasing
+subsequence
+at index i and we can set it to the max
+of itself and or the max
+of 1 plus the lis
+starting at j because we know for sure
+j is going to be in increasing order
+with i
+and literally that is it we made sure to
+evaluate that it's an increasing order
+we did it backwards we made sure to
+cache the repeated work
+what do we have left to do well we want
+to return what the max is how can we do
+that well
+in python you can just take the max of a
+list so whatever
+uh the long whatever the greatest value
+is in here
+is going to be returned and they're
+actually so this is
+o of n squared and there actually is a
+better solution
+big o of n log n but i really
+doubt your interviewer is going to
+expect you to get this on your own
+without a hint
+if they do i would personally just walk
+out of the room
+but i hope this was helpful if you
+enjoyed please like and subscribe it
+supports the channel a lot and i'll
+hopefully

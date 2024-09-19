@@ -1,0 +1,350 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+let's solve the problem valid sudoku and
+i'm going to be recording this on the
+4th of july so hopefully there aren't
+too many firework noises in the
+background so we are given a 9x9 sudoku
+board and all we want to do is determine
+if the board in its current state is
+valid or not
+and they tell us only the filled in
+cells need to be validated according to
+the three rules of sudoku so basically
+each row must only contain digits
+between 1 through 9 without repetition
+the same is true for every single column
+in this board it can only contain digits
+1 through nine without repetition that
+means we can't have duplicates in any
+particular row or any particular column
+and the third part which is going to be
+the most tricky is each three by three
+sub box basically you know you can kind
+of see it in the drawing right three by
+this entire nine by nine grid is made up
+of nine three by three grids right
+there's one here one here one here and
+you know basically nine of them as you
+can see so basically for each of these
+three by three
+sub grids we also want to check that it
+only contains digits one through nine
+without repetition basically without
+repetition that means it has to contain
+every single digit from one through nine
+now of course the sudoku board doesn't
+necessarily have to be filled in you can
+see this 3x3 is not filled in but in
+this case we are going to say ok this
+this one is valid because it you know it
+only has a 6 and it doesn't have any
+duplicates right but we do we don't only
+have to check each 3x3 grid we also have
+to check every single column and every
+single row now before i get into the
+solution let me just very quickly
+clarify what this problem wants from us
+you might over complicate it and think
+something like this what if we had a row
+such as this one it has one two three
+four five six seven eight that must mean
+even though this spot is empty that must
+mean a nine has to go here right that's
+pretty obvious but take a look at this
+column it has two three four five six
+seven eight nine that must mean that the
+value that goes here has to be a one so
+we have a contradiction we have to
+either put a 1 or a 9 but we know that
+both need to be in this position so in
+this case this is not a valid sudoku
+board right well that's technically true
+but for this problem we are going to
+consider this board yes it's valid
+because
+as of right now based on what the cells
+are filled in like what cells are filled
+in there aren't any contradictions we're
+not going to assume anything for any of
+these empty positions even though we
+know for sure yes a 9 would have to go
+here based on this row we're not going
+to assume that so it's actually a little
+bit easier than you might think so the
+algorithm is going to be pretty standard
+right we're going to go through every
+single row and make sure every
+particular row does not have any
+duplicates how could we do that we could
+do it a bunch of different ways but i'm
+going to do a hash set right so a hash
+set will be easy for us to detect if
+there are any duplicates so we're going
+to have a unique hash set for every
+single row in the entire grid right so
+then we can easily determine if any
+particular row has any filled in
+duplicates right this row obviously
+doesn't a five a three and a seven no
+duplicates right so that portion is
+pretty easy right number one is pretty
+easy to check what about number two
+checking each column we can do the exact
+same thing just have a hash set for
+every single column right every single
+column has a hash set and then we can
+determine if there are any duplicates or
+not right and for you know adding an
+element to the hash set is of one
+checking duplicates is also o of one so
+so far we have a time complexity for
+just checking the columns and the rows
+we have a time complexity which is
+basically the size of the entire grid
+which is nine squared pretty much now
+the last part in theory should also be
+pretty easy but coding it up is a little
+bit more tricky there are many ways to
+do it i'm going to show you the easiest
+way we want to be able to tell okay for
+every three by three grid which there
+are nine of does any of them have any
+duplicates so again we can use a hash
+set to represent each of these three by
+three grids but the question is how are
+we gonna do it how can it be easy to
+code something like that and that's what
+i'm gonna quickly explain to you right
+now and after i do we can jump into the
+code the overall solution is yes though
+going to be o of n 9 squared we're
+pretty much just going to have to
+iterate through over the entire grid and
+nothing else but we are going to have
+extra space also of 9 squared because
+we're going to have three hash sets
+which are going to be this exact size so
+roughly this is the memory complexity as
+well so we want to represent each of
+these three by three grids with a hash
+set but how do we know if we're at any
+particular value right like i have
+labeled the indices right this is going
+to represent what row this is going to
+represent which column how do we know if
+we're if any particular value such as 1
+1 happens to be in this 3 by three grid
+whereas a different
+cell such as four four happens to be in
+this three by three grid how can we
+differentiate them
+notice how each of these three by three
+sub squares happens to be three by three
+right so one way is to basically make it
+so that we can
+have an index right so maybe zero
+represents this row of of the three
+different squares right and a 1
+represents this row of 3 squares and a 2
+represents a row of this right and
+similarly for the columns right a 0 over
+here represents this column a 1 over
+here represents this column and a 2 over
+here represents this column then if we
+had two indices right if we can somehow
+take 4 4 and convert it to 1
+1 then we know it goes inside this sub
+square right so basically we have nine
+different sub squares we're gonna have
+indices to represent them right a one
+one means that this is the sub square
+that we're talking about right this one
+and the way the math is going to work
+out is since each of these is three by
+three we can just take the actual index
+such as four let's say we were given
+four four right this is the square we're
+talking about we can take four which is
+the row divide it by three integer
+division right we're talking about
+integer division 4 divided by 3 is going
+to give us a 1. similarly we do the same
+thing with the column right 4 divided by
+3 is going to give us a 1. right so if
+we take the actual coordinates 4 4
+divide the coordinates integer division
+by three then we get the index for the
+row column and it basically identifies
+which square this is a part of now let's
+just check that the edge cases work out
+let's try a8 right this is the boundary
+what happens if we take 8 divided by 3
+and 8 divided by 3 right well then we
+get 2 2 right integer division we always
+round down 2 2 that works out for us
+right let's do a different edge case
+maybe we try this this square right on
+the boundary does this
+does this identify zero zero because
+that's what it should well let's take
+the positions the indices two two divide
+them by three two divided by three two
+divided by three we round these down so
+we get 0 0 that does uniquely identify
+or it you know correctly identifies that
+it belongs to this 3x3 grid so that's
+kind of how we're going to identify when
+we go through every position every cell
+in the entire sudoku board which of the
+three which of the three by three uh
+grids is it a part of and then we can
+and then we can add them to that right
+so we're gonna have a hash set where the
+key of the hash set is going to be a
+pair of values the row column not the
+actual row column right but the you know
+when we convert it to the row column
+basically row divided by three and
+column divided by three that's what the
+key of the hash hashmap is going to be
+and the value is similarly going to be a
+hash set where we can tell do we have
+any duplicates in this 3x3 grid or not
+right same for every single 3x3 grid
+we're just checking does it have any
+duplicates if not then we can continue
+if it does have a duplicate that means
+our sudoku board is not valid and then
+we would have to return false but if it
+is valid we're just going to continue so
+we're basically going to go over the
+entire grid right every single uh
+position in the entire grid if we find
+any duplicates we return false if we
+don't at the end we can return true so
+now we have enough information to
+actually write out the code so let's do
+that okay so now we can write the code
+like i mentioned i'm going to be
+detecting duplicates with a hash set but
+you could do it with arrays if you
+wanted to as well because we know the
+dimensions of this sudoku board it's
+nine by nine but i'm going to be using a
+hash set or dictionary just because it's
+easier so
+in this case i'm actually using a hash
+map where the uh key is just going is
+going to be the column number and the
+value is going to be another set
+basically the set is going to represent
+all particular values in this column and
+we're going to do the same thing for
+rows this is only so we can detect
+duplicates so let's create another
+uh hash map
+with rows and another hash map with the
+squares and remember the key for the
+squares is going to be a pair of values
+basically the row divided by three and
+the
+column divided by three so now we just
+want to iterate over the entire grid
+and we know the dimensions are nine by
+nine so i'm just going to hard code that
+in to these loops and so we know that a
+position in the sudoku board actually
+could be empty and they tell us that an
+empty position is represented by a dot
+so the first thing we're going to check
+is if this is an empty space then we can
+just skip it right then we're just going
+to continue to the next iteration of the
+loop the next thing we want to check is
+have we found a duplicate because if we
+have then we return false immediately so
+we want to know does this this uh value
+if it's not empty it has it already been
+detected so if the board is in
+rows at this current row what does this
+mean we're saying okay the current row
+that we're in
+basically this is our hash map right
+rows is our hash map the key we're
+putting in is the current row that we're
+in so that's so this basically
+represents a hash set as you can see up
+above a set a hash set of all values
+that occur in this particular row number
+so if so so basically if this uh this
+current number that we're at is already
+inside the current row meaning we've
+already seen this value before in the
+current row that we're in that means
+it's a duplicate right in which case we
+can return false but that's not it
+basically the exact same thing is going
+to be true
+if this value has already occurred in
+the same column before so we're going to
+change this to columns at the current
+column that we're at so if this value
+has already occurred in the current
+column then we're in that we're in that
+means we've detected another duplicate
+in which case we can return false and
+last but not least we have to check if
+this value has already occurred in the
+current square that we're in before so
+how do we get the current square that
+we're in uh right now well
+we we know the key for that is going to
+be a pair of values basically as i wrote
+above rho divided by three and column
+divided by three so that tells us the
+current square that we're in and this
+will return a set as you can see up
+above of all the values that we have
+seen in the current square before and if
+this value that we're at right now is a
+duplicate that means it's already going
+to be in this this hash set in which
+case we can also return false so this is
+basically our way of validating that
+this current sudoku board is valid if we
+have any duplicates that means it's not
+valid we return false if it is valid we
+continue and we basically update all
+three of our hash maps up above so
+columns of the current column we're
+going to add to it the current character
+that we just saw and we're going to do
+the same thing with the current row that
+we're in and we're going to do the exact
+same thing with the current square that
+we're in of course this has a pair of
+values as the key so this makes sure
+that our hash sets are updated and we'll
+make sure to detect any duplicates when
+we get to the next iteration of the
+loops so in this way we're iterating
+over the entire board and if we never
+detect any duplicates then we can
+outside of the loop just return true
+that means the current sudoku board with
+the current values populated and it is
+valid as you can see the solution runs
+and is pretty efficient so i hope this
+was helpful this is one of the easier
+ways the more neat ways of writing this
+code of course there are some more
+complex ways as well but i think this is
+fairly readable and the main you know
+the trick that we use is just this whole
+row divided by three column divided by
+three which just makes the code a lot
+easier in my opinion so i hope that this
+was helpful if it was please like and
+subscribe it supports the channel a lot
+and i'll hopefully see you pretty soon

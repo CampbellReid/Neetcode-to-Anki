@@ -1,0 +1,230 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+let's solve min stack so this is a
+pretty good design problem and the
+description is pretty simple so our job
+is to design a stack class that supports
+four operations obviously we want to
+push on to the stack we want to be able
+to pop from the stack and we want to be
+able to get the top value on the stack
+and last but not least the fourth one
+this is the part that's going to be
+tricky we want to be able to retrieve
+the minimum element in constant time so
+we want to be able to do all four of
+these operations in constant time now if
+you are familiar with a stack data
+structure you know that by default a
+stack will be able to support adding a
+value popping a value and getting the
+top value all three of those in of one
+time now i'm not going to go into the
+details of how to actually implement a
+stack you can implement it with a linked
+list or you can do it with an array in
+this problem we're basically just going
+to use the built-in data structure that
+is pretty much implemented as a stack
+but the main part of this problem is
+being able to do this last operation
+getting the minimum value from the stack
+in o of one time
+right because by default a stack doesn't
+support this operation
+now a stack let's say we're implementing
+it with an array so let's say this is
+our stack and let's say we do a few
+operations let's just look at this
+example right we push a negative
+negative two we push it let's say to the
+bottom of the stack we push another
+value a zero we push another value
+negative three and now so we did three
+push operations now we wanna do a get
+min so how exactly are we gonna be able
+to get the minimum here well a naive way
+would be just look at every single value
+negative three zero negative two so we
+can look through the entire the entire
+stack that's gonna be o of n time to get
+the minimum so at least we have a
+baseline at least we know how to do it
+in o of n time that's not too bad but
+how can we do better how can we actually
+get it to be o of one and if you want to
+try to figure it out yourself i
+recommend taking a look at this hint
+that leak code actually provides they
+say consider each value in the stack
+having a corresponding minimum value
+think about that for a second so let's
+go back to the basics when we were
+adding three values so when we first
+added a value we added a negative two so
+what's the minimum at this point in our
+stack when we only had one value the
+minimum at that point was negative two
+right when we added another value we
+added a zero what was the minimum at
+this point when we added the zero
+did this replace our current minimum
+negative two no it did not so in other
+words we can leave our minimum as it is
+but that's not always going to work
+having a single value maintaining the
+minimum isn't always going to work
+because for example let's say we added
+another negative 2. okay our minimum
+stays the exact same negative 2 right
+now what if we pop this negative 2 okay
+we pop that negative two now how do we
+know what's the new minimum is the
+minimum gonna stay negative two or is it
+gonna be zero well of course we know
+it's gonna be stay it's gonna stay as
+negative two but how can we do that so a
+good workaround is let's for each
+position
+write down what's the minimum at this
+point so when we pop then we know okay
+this is going to be the new minimum so
+let's say at this point the minimum
+stays negative two and we added a third
+value remember we added a negative three
+so now what's the new minimum we can we
+can compute it in o of one time by just
+comparing this new value we added and
+comparing the current minimum obviously
+negative three is smaller so at this
+point in our stack the minimum value is
+negative three if we were to pop this
+negative three then the new minimum
+would be a negative two right this would
+be the top of our stack this would be
+the minimum so far so what you might be
+noticing is on this right hand side i'm
+actually defining another stack right we
+have two stacks one stack is telling us
+the values that we've added so far in
+the order that we added them the other
+the other stack is telling us what's the
+minimum value that we have added so far
+in each position of the stack so if we
+add a value we'll be inserting into both
+stacks if we pop a value we'll be
+popping from both stacks when we get the
+top value of our stack right because
+remember that's an operation the top
+value we're going to be looking at the
+first stack we're just going to say okay
+this is the most recently added value in
+the stack when we do the get min
+operation we're going to look at the top
+of our minimum stack get that in o of
+one time right we just have to get one
+value so we can do an o of one time
+don't have to pop anything we just have
+to take a look at our second stack so
+that is the main idea it's a little
+tricky to actually come up with this but
+once you do it's very simple so now
+let's actually jump into the code okay
+so now let's get into the coding portion
+so we know that we have to support four
+operations and in our constructor the
+first thing we're going to do is since
+we know we're going to have two stacks
+let's define those stacks first of all
+and like i said i'm going to be
+implementing this with an array or at
+least an array list if you were using
+java this is not just an ordinary array
+we can append pop from it it's basically
+python's implementation of a like a
+regular stack we're going to have a
+second array which is going to be the
+min stack and initially they're going to
+be empty so the simple thing to do is
+push right that's the first operation so
+on our first stack it's always going to
+be easy right we're always going to take
+the input value and append it to the
+first stack now with the second stack we
+need to know for the second stack if
+there's already a value inserted in the
+minimum stack then we're going to take
+the minimum of the input value and the
+minimum value or at least the value at
+the top of our min stack and take the
+minimum of those two and then append
+that value to the min stack so let's
+update our value first of all let's set
+it equal to the minimum of itself and
+the minimum of the top of our min stack
+so let's say self.min stack at negative
+one at least that's how you do it in
+python but we know that this min stack
+actually could be
+non-empty so we're gonna only do this if
+our self.min stack is non-empty
+otherwise let's just take the minimum of
+val and val so i this might be a little
+complicated i probably could have just
+done an if else statement but in python
+i feel like this is a little bit cleaner
+so we're just taking the minimum of
+value and the top of our stack if the
+stack is not empty if it is empty we're
+just taking the minimum of val and val
+because if the stack is empty then of
+course we're just going to take the
+men's stack and append
+the value to it right so when we append
+this value it should be the minimum of
+the input value and the minimum of the
+top of the min stack so that's all for
+our push function now let's do the pop
+function we don't have to return
+anything all we have to do is pop from
+our stack but since we have two stacks
+we're gonna have to pop from both of
+these stacks so popping from the first
+stack and popping from the minimum stack
+so that definitely takes care of
+everything for us
+it feels like cheating since we're
+pretty much using the built-in functions
+and to get the top value of the stack we
+are going to take from the top of the
+first stack right we by top we want to
+get the last value that was inserted and
+this is always going to be called when
+our stack is non-empty so we don't have
+to take care of any edge cases the last
+one get min is going to be returning
+from the top of the min stack right
+because we want the minimum value that's
+always going to be on the top of the min
+stack and this function as well is only
+going to be called when our stack is
+non-empty so that is the entire code and
+of course for some reason i didn't
+notice that i didn't actually put the
+else over here so if it was confusing
+before i'm really sorry about that so
+now you can probably tell exactly what's
+going on because it's pretty simple so
+this is what we're going to be
+evaluating if our stack is not empty
+else this expression is going to
+evaluate just to this value and then
+we'll of course take the minimum of
+these two
+so now this code is complete you can see
+that it's very efficient because every
+single one of these four functions is
+done in o of one time so i hope that
+this was helpful if it was please like
+and subscribe it supports the channel a
+lot and i'll hopefully see you pretty

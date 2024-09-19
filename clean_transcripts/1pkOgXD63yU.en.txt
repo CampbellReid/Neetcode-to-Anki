@@ -1,0 +1,223 @@
+hey everyone welcome back and let's
+write some more neat code today
+and don't forget to hit the like button
+it supports the channel a lot so today
+let's look at leak code 121
+best time to buy and sell a stock so if
+you know a little about the stock market
+the saying is usually buy low
+and sell high so in this case
+we're given an input array now each
+value
+represents the price of the of a stock
+at a particular day and we we
+are given one transaction meaning we can
+buy
+on one of these days and then sell on
+another day
+and we want a transaction that maximizes
+our profit and then we want to return
+that profit in this
+case if we buy on day two when the price
+is
+one and sell day five when the price is
+six
+that's what's going to maximize the
+profit for us so as always
+i'm going to draw a picture and show you
+that this problem is actually not too
+bad
+even the optimal solution so on day one
+it was at price seven and then it went
+down all the way to price one
+the next day it went from price one all
+the way up to price
+five and we could just keep going with
+this right so
+next day went down and the next day it
+went up
+and the last day it went down again
+so looking at the picture it's pretty
+clear that
+the max profit we can get is simply by
+taking
+the minimum here and the max
+here and if we look at the actual values
+for that
+we see that this is one this
+is six so the profit is gonna be
+six minus one which is
+five but notice how we there's actually
+a greater
+maximum than this one right like this is
+six but this is
+seven so why can't we just do this
+because then we get seven minus one
+which is six which is
+even bigger than five well it turns out
+we know that time
+moves in one direction right we can't go
+back in time to sell at this price
+so how are we going to solve that
+problem well there's a pretty common
+programming technique two pointers so
+we're gonna initialize
+a left pointer on day one
+and our right pointer on day two which
+makes sense
+right is gonna be to the right of left
+and so we're going to see
+what's the current profit right now from
+here
+to here well it's going down right
+that's not good it's negative
+and in this case left is going to be the
+day that we buy
+and write is gonna be the day that we
+sell
+so the first thing you're gonna notice
+is it's down right it's negative
+this is not good we don't want a
+negative profit why would we
+buy left when we can buy right right
+is less than left why would i pay
+seven when i could wait one day and pay
+one
+so that's basically how the algorithm
+works since
+our right value is less than left we're
+gonna update our pointer
+left so left is now gonna be
+on day two and right is gonna be on
+day three so now we see
+that the right value is actually greater
+than the left value
+the profit in this case is going to be 5
+minus
+1 which we know equals 4
+which is so far our current max profit
+so for the current max i'm going to put
+a 4.
+and in this case since our left pointer
+is less than our right pointer
+since we're buying low and selling high
+that means we can leave
+our left pointer over here and we only
+have to update our right pointer
+now let's compare our left and right so
+we're buying here we're selling here
+in that case the profit is going to be 3
+minus 1 which is only
+2. so if you take a look at our current
+max it's 4 so we're not going to update
+our max profit
+and we notice that our left pointer
+we're buying low and we're still
+selling high it's not as high as this
+but we still
+don't need to update the left pointer
+and so now
+we get to the actual uh result case that
+we already know about but
+let's compute it so this is at six
+this is at one so we found
+a new max profit six minus one
+so our algorithm is gonna keep going
+even though we can tell by the picture
+that we did find the mac so it's gonna
+end up checking this last case
+which left we're buying one and we're
+selling at i think this is
+four so we know four minus one is three
+not greater than five so our algorithm
+is complete we
+found our max profit of
+five and if we wanna know the memory
+and extra space we used we know we
+didn't really use extra memory we used a
+couple pointers but no array so
+extra memory is 01 time is going to be
+linear because this is a two pointer
+solution
+we're not doing any brute force stuff
+this is going to be
+big o of and we only have to scan
+through the array
+uh one time even though we have two
+pointers
+okay now let's code it up so we do have
+a left and right pointer
+left is going to be initialized to 0 and
+right is going to be initialized to 1
+just like in our picture we know left
+is buying right
+is selling we can initialize our max
+profit
+to zero as like the default case and
+we're gonna
+keep iterating through prices while our
+right pointer
+has not uh passed the end of prices
+now we wanna check is this a profitable
+transaction and how do we check that
+well
+if prices of left
+is less than prices of right
+now if this is profitable let's
+calculate that profit
+so this is just the math right price is
+a right minus left
+and now we can potentially update our
+max profit but we don't know for sure so
+we're going to check
+the maximum of the current max profit
+as well as the profit that we just
+computed so whatever the max is is going
+to be assigned
+to the new max profit but it might
+not be a profitable transaction which in
+that case
+we can update our left pointer
+now regardless of the conditions we want
+to
+update our right pointer and so this is
+obviously going to keep going
+until our right pointer is out of bounds
+in which case we've gone through
+all of the values and we know that max p
+has the result that we want to return so
+i actually had a small
+bug over here instead of incrementing
+left by one
+if the left price is not less than the
+right price we don't just want to shift
+our left pointer by one we want to shift
+it
+all the way to the right because we
+found
+a really low price we found the lowest
+price
+that we could pretty much we basically
+want our left pointer to be
+at the minimum and you can tell from
+this picture
+that if our left was here and our right
+was over here
+we don't just want to shift our left
+pointer by one because then it's up here
+we want the left pointer to be low right
+we want to buy
+low sell high so we would shift our left
+pointer
+all the way over here
+so we'd cross this out put the left here
+and then the right pointer would be over
+here
+and we can see that this would be a
+super good profit for us
+and now we can submit our solution and
+it's
+over 90 so we're in the clear we found a
+very optimal solution for this problem
+i hope it was helpful please like and
+subscribe to support the channel

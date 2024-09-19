@@ -1,0 +1,256 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+we're going to look at leak code 202
+happy number so what makes a number
+happy
+they explain it to us in the problem
+statement
+so we're given an input number n and we
+want to know
+is it happy or not if it's happy we can
+return true
+and we're done if it's not happy we're
+going to return
+false but how do you determine if it's a
+happy number or not
+in this example they gave us a nineteen
+so let's work with that so all we need
+to do is take
+each digit so the first digit one
+square it the second digit nine
+square it add them together
+but we're not done yet to determine if
+it's actually happy or not
+we're going to take this number now and
+do the same thing
+and we're going to keep repeating this
+process right so we would take 8 squared
+plus 2 squared and then we get 68
+and we're going to keep going now if the
+number reaches
+a 1 just like it did in this example so
+eventually
+we're going to go to 68 we're going to
+go to 100
+and then we're going to get to 1.
+and if it reaches a 1 like this then
+it's a happy number if it doesn't ever
+reach a one
+then it's not a happy number and we're
+going to return false
+but they also tell us that no matter
+what whether it's a happy number or not
+it's going to loop endlessly so notice
+how this
+one if you take one and square it
+one squared is equal to one one squared
+is equal to one so
+when we keep doing this we're going to
+get stuck in an infinite loop
+but even if we never reach a 1 we'll
+still be stuck in an infinite loop
+so you guys know how much i like to
+visualize problems so let's
+do exactly that so we start with a 19.
+then we get to a hundred
+and then we get to the number that
+proves to us
+that 19 is happy
+now we get to a one right and now this
+one
+is going to loop infinitely and
+therefore we know
+that 1 or 19 is a happy
+number but let's take a look at a
+different example
+what if our input was equal to
+2 instead of 19.
+then what's going to happen so we first
+start with a 2
+we can square the 2 and we get to 4.
+we can square the 4 and we get to
+16. now this is the part where you're
+gonna have to trust my math
+so if we take the sum of squares
+of digits of 16 we're gonna get to
+37 if we take the sum of squares of 37
+which is
+next 3 squared plus 0 squared that's
+a 9. 9 squared is eighty-one
+eighty-one squared is
+sixty-five
+sixty-five squared is sixty-one
+or the sum of squares of 65 is 61.
+and now 6 squared
+plus 1 squared is
+37 and you notice anything
+about this there's a 37 right
+over here so basically
+the exact same thing happened right we
+started at 2
+we did some stuff and then we got stuck
+in an infinite loop right it's just
+going to keep going around and round and
+round
+infinitely right so what does this tell
+us well in this case
+so instead of returning true we're going
+to return false
+so basically what we're trying to do is
+check
+if we ever get to basically
+do we ever visit a number twice and how
+can we do that efficiently well you
+might have heard there's a data
+structure called
+a hash set that we can use and i'm going
+to show you how to code that up right
+now
+so i'm doing this in python so let's
+create
+a visit hash set to keep track of
+every number that we previously visited
+so that if we get to a number that we
+visit twice we can
+instantly know in constant speed right
+hash sets are really quick
+and now we just want to compute the sum
+of squares of
+n until n is
+repeated until we get a duplicate value
+so i'm gonna go until
+n is not in visit so if n hasn't
+been visited so if n hasn't been visited
+then the first thing we can do
+and the next thing we want to do is
+compute the
+sum of squares
+so i'm not going to do that here i'm
+going to separate that out into a helper
+function
+like i'm doing right now so we're going
+to pass n into this function
+we're going to compute the sum of
+squares and we're going to reassign n
+to that value so before i forget let me
+and so what's going to be the condition
+that we return true
+so remember the single number that we're
+looking for is 1.
+if n ever equals 1 we're done
+like we can just return true
+and we could have even put this part
+like at the beginning of our code if we
+wanted to if the input value was one
+just instantly return one we don't even
+need to do anything
+but in the case that we visit a value
+twice like if our loop stops executing
+that means we visited about we visited a
+value twice
+but in the case that we visited a value
+twice
+and that value was not one then
+we need to return false because we know
+our
+loop is going to stop executing and we
+know that we didn't reach a value that
+was
+1 so we can just return false
+now for the annoying part we actually
+gotta compute these sum of squares of
+digits
+so let me just explain what i'm gonna do
+before i actually write the code for
+that
+so we're talking about taking 19 right
+getting the sum of squares
+and then adding them up but how do we
+actually do that in code it's a little
+bit annoying but once you
+kind of figure it out it's not too bad
+so if you take
+19 mod it
+you get the ones place value right
+so we want to take this 9 because we
+need it to compute the sum of squares
+so now that we have our 9 we don't
+actually need this
+anymore so what are we going to do i'm
+going to take 19
+and divide it by 10. now we know in
+code this is not going to do what you'd
+expect in math right this is not going
+to be a fraction
+we want to just get rid of this 9. so in
+code this is going to this is going to
+equal
+1 right so that's great now we got our
+one
+and we have our nine so now we just can
+take the squares of them
+and add them together so this is kind of
+the process that i'm gonna do except
+we're gonna do it in code and we're
+gonna use a loop
+oh and one more thing so notice how we
+have our one now
+if we mod it by 10
+we're gonna get zero right and zero
+squared is of course
+zero when we take our one and divide it
+by 10
+we're also going to get zero so that's
+how you know we're finished right so
+this isn't going to loop forever
+okay so now we can finish this helper
+function and then finally be done with
+our solution
+so i'm going to declare a variable for
+the output which is going to be the sum
+of squares value
+initially it's going to be 0.
+so while n is not 0
+and we can just say while n in python at
+least
+we're going to continue our loop we're
+going to continue taking each digit
+and squaring it and adding it to our
+output
+so remember how do we get that digit we
+can take
+n mod it by 10
+and we also have to square our digit so
+double star two so that's squaring in
+python
+and we can take our output and add this
+digit
+and the last thing we have to do is
+remember update our value
+n because we're done with this digit but
+and so in python at least these two mean
+integer division in java in most
+languages you can just get away with one
+and so this loop is going to keep going
+until n is equal to zero
+and then we can finally return that
+output
+and our solution works it's not the most
+efficient solution
+i'll tell you that so we needed a set
+right
+the set made it so our memory complexity
+was big o of n there's a
+actually slightly better way to do this
+and the better way to do this
+is just like this suggested problem a
+lengthless cycle
+because if you remember the drawings i
+was showing
+this problem is a linked list problem at
+its heart right so if you solve linked
+list cycle
+you're pretty much solving this problem
+as well but thank you so much for
+watching if this was helpful
+soon

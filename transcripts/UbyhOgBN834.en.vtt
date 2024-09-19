@@ -1,0 +1,4024 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.160 --> 00:00:01.750 align:start position:0%
+ 
+everyone<00:00:00.560><c> welcome</c><00:00:00.960><c> back</c><00:00:01.199><c> and</c><00:00:01.280><c> let's</c><00:00:01.520><c> write</c>
+
+00:00:01.750 --> 00:00:01.760 align:start position:0%
+everyone welcome back and let's write
+ 
+
+00:00:01.760 --> 00:00:03.590 align:start position:0%
+everyone welcome back and let's write
+some<00:00:01.920><c> more</c><00:00:02.159><c> neat</c><00:00:02.399><c> code</c><00:00:02.639><c> today</c><00:00:02.879><c> so</c><00:00:03.040><c> today</c><00:00:03.360><c> let's</c>
+
+00:00:03.590 --> 00:00:03.600 align:start position:0%
+some more neat code today so today let's
+ 
+
+00:00:03.600 --> 00:00:06.389 align:start position:0%
+some more neat code today so today let's
+solve<00:00:03.919><c> the</c><00:00:04.160><c> problem</c><00:00:04.640><c> permutation</c><00:00:05.839><c> in</c><00:00:06.160><c> a</c>
+
+00:00:06.389 --> 00:00:06.399 align:start position:0%
+solve the problem permutation in a
+ 
+
+00:00:06.399 --> 00:00:08.390 align:start position:0%
+solve the problem permutation in a
+string<00:00:07.120><c> and</c><00:00:07.200><c> there's</c><00:00:07.440><c> actually</c><00:00:07.919><c> two</c>
+
+00:00:08.390 --> 00:00:08.400 align:start position:0%
+string and there's actually two
+ 
+
+00:00:08.400 --> 00:00:12.070 align:start position:0%
+string and there's actually two
+solutions<00:00:08.880><c> to</c><00:00:09.040><c> this</c><00:00:09.280><c> problem</c><00:00:09.760><c> one</c><00:00:10.320><c> is</c><00:00:10.719><c> the</c><00:00:11.120><c> 26</c>
+
+00:00:12.070 --> 00:00:12.080 align:start position:0%
+solutions to this problem one is the 26
+ 
+
+00:00:12.080 --> 00:00:14.870 align:start position:0%
+solutions to this problem one is the 26
+times<00:00:12.639><c> n</c><00:00:13.200><c> solution</c><00:00:14.080><c> and</c><00:00:14.240><c> there's</c><00:00:14.480><c> another</c>
+
+00:00:14.870 --> 00:00:14.880 align:start position:0%
+times n solution and there's another
+ 
+
+00:00:14.880 --> 00:00:16.790 align:start position:0%
+times n solution and there's another
+solution<00:00:15.200><c> that's</c><00:00:15.440><c> actually</c><00:00:15.759><c> just</c><00:00:16.160><c> big</c><00:00:16.400><c> o</c><00:00:16.480><c> of</c><00:00:16.640><c> n</c>
+
+00:00:16.790 --> 00:00:16.800 align:start position:0%
+solution that's actually just big o of n
+ 
+
+00:00:16.800 --> 00:00:18.790 align:start position:0%
+solution that's actually just big o of n
+now<00:00:17.039><c> we</c><00:00:17.199><c> know</c><00:00:17.359><c> that</c><00:00:17.600><c> a</c><00:00:17.760><c> constant</c><00:00:18.240><c> number</c><00:00:18.560><c> here</c>
+
+00:00:18.790 --> 00:00:18.800 align:start position:0%
+now we know that a constant number here
+ 
+
+00:00:18.800 --> 00:00:20.710 align:start position:0%
+now we know that a constant number here
+doesn't<00:00:19.119><c> actually</c><00:00:19.520><c> affect</c><00:00:19.920><c> the</c><00:00:20.080><c> overall</c><00:00:20.480><c> time</c>
+
+00:00:20.710 --> 00:00:20.720 align:start position:0%
+doesn't actually affect the overall time
+ 
+
+00:00:20.720 --> 00:00:23.349 align:start position:0%
+doesn't actually affect the overall time
+complexity<00:00:21.840><c> but</c><00:00:22.320><c> that</c><00:00:22.560><c> being</c><00:00:22.800><c> said</c><00:00:23.039><c> i'm</c><00:00:23.199><c> still</c>
+
+00:00:23.349 --> 00:00:23.359 align:start position:0%
+complexity but that being said i'm still
+ 
+
+00:00:23.359 --> 00:00:25.349 align:start position:0%
+complexity but that being said i'm still
+going<00:00:23.439><c> to</c><00:00:23.600><c> focus</c><00:00:24.080><c> on</c><00:00:24.160><c> the</c><00:00:24.400><c> slightly</c><00:00:24.960><c> more</c>
+
+00:00:25.349 --> 00:00:25.359 align:start position:0%
+going to focus on the slightly more
+ 
+
+00:00:25.359 --> 00:00:27.349 align:start position:0%
+going to focus on the slightly more
+optimal<00:00:25.840><c> solution</c><00:00:26.640><c> uh</c><00:00:26.880><c> because</c><00:00:27.119><c> it's</c><00:00:27.279><c> a</c>
+
+00:00:27.349 --> 00:00:27.359 align:start position:0%
+optimal solution uh because it's a
+ 
+
+00:00:27.359 --> 00:00:29.109 align:start position:0%
+optimal solution uh because it's a
+little<00:00:27.439><c> bit</c><00:00:27.599><c> more</c><00:00:27.840><c> difficult</c><00:00:28.400><c> but</c><00:00:28.560><c> it's</c><00:00:28.720><c> also</c>
+
+00:00:29.109 --> 00:00:29.119 align:start position:0%
+little bit more difficult but it's also
+ 
+
+00:00:29.119 --> 00:00:30.550 align:start position:0%
+little bit more difficult but it's also
+interesting<00:00:29.519><c> and</c><00:00:29.679><c> it's</c><00:00:29.920><c> a</c><00:00:30.000><c> pattern</c><00:00:30.320><c> that's</c>
+
+00:00:30.550 --> 00:00:30.560 align:start position:0%
+interesting and it's a pattern that's
+ 
+
+00:00:30.560 --> 00:00:32.150 align:start position:0%
+interesting and it's a pattern that's
+actually<00:00:30.960><c> used</c><00:00:31.279><c> in</c><00:00:31.439><c> other</c><00:00:31.679><c> leak</c><00:00:31.920><c> code</c>
+
+00:00:32.150 --> 00:00:32.160 align:start position:0%
+actually used in other leak code
+ 
+
+00:00:32.160 --> 00:00:34.630 align:start position:0%
+actually used in other leak code
+problems<00:00:32.719><c> as</c><00:00:32.960><c> well</c><00:00:33.600><c> so</c><00:00:33.840><c> we're</c><00:00:34.000><c> given</c><00:00:34.320><c> two</c>
+
+00:00:34.630 --> 00:00:34.640 align:start position:0%
+problems as well so we're given two
+ 
+
+00:00:34.640 --> 00:00:37.510 align:start position:0%
+problems as well so we're given two
+strings<00:00:35.280><c> s1</c><00:00:35.840><c> and</c><00:00:36.079><c> s2</c><00:00:36.640><c> and</c><00:00:36.800><c> all</c><00:00:36.960><c> we</c><00:00:37.120><c> want</c><00:00:37.280><c> to</c><00:00:37.360><c> do</c>
+
+00:00:37.510 --> 00:00:37.520 align:start position:0%
+strings s1 and s2 and all we want to do
+ 
+
+00:00:37.520 --> 00:00:41.590 align:start position:0%
+strings s1 and s2 and all we want to do
+is<00:00:37.680><c> return</c><00:00:38.079><c> true</c><00:00:38.719><c> if</c><00:00:39.040><c> the</c><00:00:39.200><c> string</c><00:00:39.840><c> s2</c><00:00:40.719><c> contains</c>
+
+00:00:41.590 --> 00:00:41.600 align:start position:0%
+is return true if the string s2 contains
+ 
+
+00:00:41.600 --> 00:00:46.229 align:start position:0%
+is return true if the string s2 contains
+a<00:00:41.920><c> permutation</c><00:00:43.360><c> of</c><00:00:43.840><c> s1</c><00:00:44.960><c> and</c><00:00:45.200><c> we</c><00:00:45.360><c> return</c><00:00:45.840><c> false</c>
+
+00:00:46.229 --> 00:00:46.239 align:start position:0%
+a permutation of s1 and we return false
+ 
+
+00:00:46.239 --> 00:00:49.270 align:start position:0%
+a permutation of s1 and we return false
+if<00:00:46.320><c> that's</c><00:00:46.719><c> not</c><00:00:46.960><c> the</c><00:00:47.280><c> case</c><00:00:48.000><c> now</c><00:00:48.480><c> you</c><00:00:48.640><c> can</c><00:00:48.879><c> get</c>
+
+00:00:49.270 --> 00:00:49.280 align:start position:0%
+if that's not the case now you can get
+ 
+
+00:00:49.280 --> 00:00:51.750 align:start position:0%
+if that's not the case now you can get
+bogged<00:00:49.760><c> down</c><00:00:50.079><c> and</c><00:00:50.239><c> really</c><00:00:50.480><c> confused</c><00:00:51.199><c> with</c><00:00:51.520><c> the</c>
+
+00:00:51.750 --> 00:00:51.760 align:start position:0%
+bogged down and really confused with the
+ 
+
+00:00:51.760 --> 00:00:53.750 align:start position:0%
+bogged down and really confused with the
+explanation<00:00:52.399><c> of</c><00:00:52.480><c> this</c><00:00:52.719><c> problem</c><00:00:53.440><c> like</c>
+
+00:00:53.750 --> 00:00:53.760 align:start position:0%
+explanation of this problem like
+ 
+
+00:00:53.760 --> 00:00:56.549 align:start position:0%
+explanation of this problem like
+focusing<00:00:54.239><c> a</c><00:00:54.320><c> ton</c><00:00:54.640><c> on</c><00:00:54.800><c> permutations</c><00:00:56.079><c> but</c><00:00:56.320><c> i'm</c>
+
+00:00:56.549 --> 00:00:56.559 align:start position:0%
+focusing a ton on permutations but i'm
+ 
+
+00:00:56.559 --> 00:00:58.310 align:start position:0%
+focusing a ton on permutations but i'm
+going<00:00:56.640><c> to</c><00:00:56.800><c> try</c><00:00:56.960><c> to</c><00:00:57.120><c> simplify</c><00:00:57.680><c> this</c><00:00:57.840><c> for</c><00:00:58.000><c> you</c>
+
+00:00:58.310 --> 00:00:58.320 align:start position:0%
+going to try to simplify this for you
+ 
+
+00:00:58.320 --> 00:01:00.389 align:start position:0%
+going to try to simplify this for you
+immediately<00:00:58.960><c> without</c><00:00:59.359><c> going</c><00:00:59.680><c> down</c><00:01:00.000><c> too</c><00:01:00.160><c> many</c>
+
+00:01:00.389 --> 00:01:00.399 align:start position:0%
+immediately without going down too many
+ 
+
+00:01:00.399 --> 00:01:02.229 align:start position:0%
+immediately without going down too many
+rabbit<00:01:00.800><c> holes</c><00:01:01.359><c> and</c><00:01:01.440><c> let's</c><00:01:01.680><c> actually</c><00:01:02.000><c> take</c><00:01:02.160><c> a</c>
+
+00:01:02.229 --> 00:01:02.239 align:start position:0%
+rabbit holes and let's actually take a
+ 
+
+00:01:02.239 --> 00:01:04.710 align:start position:0%
+rabbit holes and let's actually take a
+look<00:01:02.480><c> at</c><00:01:02.559><c> this</c><00:01:02.800><c> first</c><00:01:03.120><c> example</c><00:01:03.680><c> so</c><00:01:03.920><c> we</c><00:01:04.159><c> see</c>
+
+00:01:04.710 --> 00:01:04.720 align:start position:0%
+look at this first example so we see
+ 
+
+00:01:04.720 --> 00:01:07.670 align:start position:0%
+look at this first example so we see
+that<00:01:05.040><c> s1</c><00:01:05.840><c> is</c><00:01:05.920><c> the</c><00:01:06.159><c> target</c><00:01:06.640><c> string</c><00:01:07.280><c> that's</c><00:01:07.520><c> what</c>
+
+00:01:07.670 --> 00:01:07.680 align:start position:0%
+that s1 is the target string that's what
+ 
+
+00:01:07.680 --> 00:01:09.270 align:start position:0%
+that s1 is the target string that's what
+we're<00:01:07.920><c> trying</c><00:01:08.159><c> to</c><00:01:08.400><c> look</c><00:01:08.640><c> for</c><00:01:08.799><c> we're</c><00:01:09.040><c> looking</c>
+
+00:01:09.270 --> 00:01:09.280 align:start position:0%
+we're trying to look for we're looking
+ 
+
+00:01:09.280 --> 00:01:11.910 align:start position:0%
+we're trying to look for we're looking
+for<00:01:09.439><c> a</c><00:01:09.520><c> permutation</c><00:01:10.400><c> of</c><00:01:10.720><c> this</c><00:01:11.119><c> string</c>
+
+00:01:11.910 --> 00:01:11.920 align:start position:0%
+for a permutation of this string
+ 
+
+00:01:11.920 --> 00:01:15.590 align:start position:0%
+for a permutation of this string
+somewhere<00:01:12.560><c> inside</c><00:01:13.360><c> of</c><00:01:13.680><c> s2</c><00:01:14.720><c> can</c><00:01:14.960><c> we</c><00:01:15.200><c> find</c><00:01:15.520><c> it</c>
+
+00:01:15.590 --> 00:01:15.600 align:start position:0%
+somewhere inside of s2 can we find it
+ 
+
+00:01:15.600 --> 00:01:17.990 align:start position:0%
+somewhere inside of s2 can we find it
+now<00:01:15.759><c> what</c><00:01:15.920><c> does</c><00:01:16.159><c> permutation</c><00:01:16.960><c> mean</c><00:01:17.600><c> well</c><00:01:17.840><c> we</c>
+
+00:01:17.990 --> 00:01:18.000 align:start position:0%
+now what does permutation mean well we
+ 
+
+00:01:18.000 --> 00:01:19.270 align:start position:0%
+now what does permutation mean well we
+could<00:01:18.240><c> actually</c><00:01:18.479><c> you</c><00:01:18.640><c> know</c><00:01:18.799><c> create</c><00:01:19.200><c> a</c>
+
+00:01:19.270 --> 00:01:19.280 align:start position:0%
+could actually you know create a
+ 
+
+00:01:19.280 --> 00:01:21.030 align:start position:0%
+could actually you know create a
+permutation<00:01:20.000><c> of</c><00:01:20.080><c> the</c><00:01:20.240><c> string</c><00:01:20.560><c> which</c><00:01:20.720><c> would</c><00:01:20.880><c> be</c>
+
+00:01:21.030 --> 00:01:21.040 align:start position:0%
+permutation of the string which would be
+ 
+
+00:01:21.040 --> 00:01:23.590 align:start position:0%
+permutation of the string which would be
+really<00:01:21.439><c> complex</c><00:01:22.400><c> and</c><00:01:22.560><c> annoying</c>
+
+00:01:23.590 --> 00:01:23.600 align:start position:0%
+really complex and annoying
+ 
+
+00:01:23.600 --> 00:01:25.590 align:start position:0%
+really complex and annoying
+but<00:01:23.759><c> we</c><00:01:24.000><c> see</c><00:01:24.159><c> that</c><00:01:24.560><c> over</c><00:01:24.799><c> here</c><00:01:25.119><c> there</c><00:01:25.280><c> actually</c>
+
+00:01:25.590 --> 00:01:25.600 align:start position:0%
+but we see that over here there actually
+ 
+
+00:01:25.600 --> 00:01:28.710 align:start position:0%
+but we see that over here there actually
+is<00:01:25.920><c> a</c><00:01:26.080><c> substring</c><00:01:26.880><c> of</c><00:01:27.280><c> s2</c><00:01:28.240><c> and</c><00:01:28.479><c> it's</c><00:01:28.640><c> a</c>
+
+00:01:28.710 --> 00:01:28.720 align:start position:0%
+is a substring of s2 and it's a
+ 
+
+00:01:28.720 --> 00:01:32.630 align:start position:0%
+is a substring of s2 and it's a
+permutation<00:01:29.280><c> that</c><00:01:29.520><c> matches</c><00:01:30.240><c> s1</c><00:01:31.040><c> it's</c><00:01:31.680><c> ba</c>
+
+00:01:32.630 --> 00:01:32.640 align:start position:0%
+permutation that matches s1 it's ba
+ 
+
+00:01:32.640 --> 00:01:35.109 align:start position:0%
+permutation that matches s1 it's ba
+right<00:01:32.880><c> the</c><00:01:33.119><c> exact</c><00:01:33.520><c> same</c><00:01:34.000><c> characters</c><00:01:34.720><c> just</c><00:01:35.040><c> in</c>
+
+00:01:35.109 --> 00:01:35.119 align:start position:0%
+right the exact same characters just in
+ 
+
+00:01:35.119 --> 00:01:36.870 align:start position:0%
+right the exact same characters just in
+a<00:01:35.200><c> different</c><00:01:35.600><c> order</c><00:01:35.920><c> which</c><00:01:36.159><c> is</c><00:01:36.320><c> perfectly</c>
+
+00:01:36.870 --> 00:01:36.880 align:start position:0%
+a different order which is perfectly
+ 
+
+00:01:36.880 --> 00:01:40.310 align:start position:0%
+a different order which is perfectly
+fine<00:01:37.439><c> now</c><00:01:37.840><c> by</c><00:01:38.000><c> the</c><00:01:38.159><c> way</c><00:01:38.720><c> a</c><00:01:39.040><c> b</c><00:01:39.439><c> itself</c>
+
+00:01:40.310 --> 00:01:40.320 align:start position:0%
+fine now by the way a b itself
+ 
+
+00:01:40.320 --> 00:01:43.109 align:start position:0%
+fine now by the way a b itself
+technically<00:01:40.960><c> counts</c><00:01:41.439><c> as</c><00:01:41.600><c> a</c><00:01:41.759><c> permutation</c><00:01:42.880><c> of</c>
+
+00:01:43.109 --> 00:01:43.119 align:start position:0%
+technically counts as a permutation of
+ 
+
+00:01:43.119 --> 00:01:45.510 align:start position:0%
+technically counts as a permutation of
+itself<00:01:43.920><c> so</c><00:01:44.079><c> this</c><00:01:44.240><c> string</c><00:01:44.560><c> is</c><00:01:44.720><c> also</c><00:01:45.119><c> allowed</c>
+
+00:01:45.510 --> 00:01:45.520 align:start position:0%
+itself so this string is also allowed
+ 
+
+00:01:45.520 --> 00:01:47.270 align:start position:0%
+itself so this string is also allowed
+but<00:01:46.079><c> since</c><00:01:46.320><c> you</c><00:01:46.399><c> kind</c><00:01:46.560><c> of</c><00:01:46.720><c> see</c><00:01:46.960><c> what</c><00:01:47.119><c> we're</c>
+
+00:01:47.270 --> 00:01:47.280 align:start position:0%
+but since you kind of see what we're
+ 
+
+00:01:47.280 --> 00:01:48.870 align:start position:0%
+but since you kind of see what we're
+really<00:01:47.520><c> just</c><00:01:47.680><c> looking</c><00:01:48.000><c> for</c><00:01:48.320><c> is</c><00:01:48.479><c> is</c><00:01:48.640><c> there</c><00:01:48.799><c> a</c>
+
+00:01:48.870 --> 00:01:48.880 align:start position:0%
+really just looking for is is there a
+ 
+
+00:01:48.880 --> 00:01:50.950 align:start position:0%
+really just looking for is is there a
+substring<00:01:49.439><c> of</c><00:01:49.520><c> the</c><00:01:49.680><c> exact</c><00:01:50.000><c> same</c><00:01:50.320><c> size</c><00:01:50.560><c> so</c><00:01:50.720><c> this</c>
+
+00:01:50.950 --> 00:01:50.960 align:start position:0%
+substring of the exact same size so this
+ 
+
+00:01:50.960 --> 00:01:52.389 align:start position:0%
+substring of the exact same size so this
+is<00:01:51.040><c> two</c><00:01:51.280><c> characters</c><00:01:51.680><c> so</c><00:01:51.840><c> we</c><00:01:51.920><c> have</c><00:01:52.000><c> to</c><00:01:52.159><c> look</c><00:01:52.320><c> for</c>
+
+00:01:52.389 --> 00:01:52.399 align:start position:0%
+is two characters so we have to look for
+ 
+
+00:01:52.399 --> 00:01:54.550 align:start position:0%
+is two characters so we have to look for
+a<00:01:52.479><c> substring</c><00:01:53.040><c> of</c><00:01:53.360><c> two</c><00:01:53.680><c> characters</c><00:01:54.159><c> here</c><00:01:54.399><c> right</c>
+
+00:01:54.550 --> 00:01:54.560 align:start position:0%
+a substring of two characters here right
+ 
+
+00:01:54.560 --> 00:01:56.709 align:start position:0%
+a substring of two characters here right
+we<00:01:54.640><c> can't</c><00:01:54.799><c> just</c><00:01:55.040><c> take</c><00:01:55.360><c> three</c><00:01:55.680><c> characters</c><00:01:56.560><c> and</c>
+
+00:01:56.709 --> 00:01:56.719 align:start position:0%
+we can't just take three characters and
+ 
+
+00:01:56.719 --> 00:01:59.350 align:start position:0%
+we can't just take three characters and
+say<00:01:56.960><c> that</c><00:01:57.119><c> that's</c><00:01:57.439><c> the</c><00:01:57.520><c> permutation</c><00:01:58.640><c> but</c><00:01:59.200><c> you</c>
+
+00:01:59.350 --> 00:01:59.360 align:start position:0%
+say that that's the permutation but you
+ 
+
+00:01:59.360 --> 00:02:01.910 align:start position:0%
+say that that's the permutation but you
+know<00:01:59.920><c> we're</c><00:02:00.159><c> looking</c><00:02:00.399><c> for</c><00:02:00.560><c> a</c><00:02:00.799><c> window</c><00:02:01.680><c> same</c>
+
+00:02:01.910 --> 00:02:01.920 align:start position:0%
+know we're looking for a window same
+ 
+
+00:02:01.920 --> 00:02:04.310 align:start position:0%
+know we're looking for a window same
+size<00:02:02.159><c> as</c><00:02:02.320><c> this</c><00:02:02.799><c> and</c><00:02:03.040><c> it</c><00:02:03.119><c> has</c><00:02:03.360><c> to</c><00:02:03.759><c> contain</c><00:02:04.159><c> the</c>
+
+00:02:04.310 --> 00:02:04.320 align:start position:0%
+size as this and it has to contain the
+ 
+
+00:02:04.320 --> 00:02:07.510 align:start position:0%
+size as this and it has to contain the
+exact<00:02:04.719><c> same</c><00:02:05.040><c> characters</c><00:02:05.840><c> as</c><00:02:06.159><c> s1</c><00:02:06.719><c> just</c><00:02:07.119><c> maybe</c>
+
+00:02:07.510 --> 00:02:07.520 align:start position:0%
+exact same characters as s1 just maybe
+ 
+
+00:02:07.520 --> 00:02:09.510 align:start position:0%
+exact same characters as s1 just maybe
+in<00:02:07.600><c> a</c><00:02:07.680><c> different</c><00:02:08.080><c> order</c><00:02:08.720><c> now</c><00:02:08.959><c> does</c><00:02:09.200><c> that</c><00:02:09.360><c> kind</c>
+
+00:02:09.510 --> 00:02:09.520 align:start position:0%
+in a different order now does that kind
+ 
+
+00:02:09.520 --> 00:02:11.589 align:start position:0%
+in a different order now does that kind
+of<00:02:09.599><c> sound</c><00:02:09.840><c> familiar</c><00:02:10.399><c> to</c><00:02:10.560><c> you</c><00:02:10.959><c> well</c><00:02:11.280><c> it's</c><00:02:11.440><c> the</c>
+
+00:02:11.589 --> 00:02:11.599 align:start position:0%
+of sound familiar to you well it's the
+ 
+
+00:02:11.599 --> 00:02:14.150 align:start position:0%
+of sound familiar to you well it's the
+same<00:02:12.000><c> thing</c><00:02:12.319><c> as</c><00:02:12.560><c> looking</c><00:02:12.879><c> for</c><00:02:13.200><c> an</c><00:02:13.520><c> anagram</c>
+
+00:02:14.150 --> 00:02:14.160 align:start position:0%
+same thing as looking for an anagram
+ 
+
+00:02:14.160 --> 00:02:15.510 align:start position:0%
+same thing as looking for an anagram
+right<00:02:14.319><c> we're</c><00:02:14.480><c> just</c><00:02:14.640><c> looking</c><00:02:14.879><c> for</c><00:02:15.040><c> the</c><00:02:15.120><c> exact</c>
+
+00:02:15.510 --> 00:02:15.520 align:start position:0%
+right we're just looking for the exact
+ 
+
+00:02:15.520 --> 00:02:17.990 align:start position:0%
+right we're just looking for the exact
+same<00:02:15.840><c> characters</c><00:02:16.879><c> we</c><00:02:17.040><c> don't</c><00:02:17.200><c> care</c><00:02:17.440><c> about</c><00:02:17.680><c> what</c>
+
+00:02:17.990 --> 00:02:18.000 align:start position:0%
+same characters we don't care about what
+ 
+
+00:02:18.000 --> 00:02:19.990 align:start position:0%
+same characters we don't care about what
+order<00:02:18.400><c> they're</c><00:02:18.800><c> in</c><00:02:19.280><c> right</c><00:02:19.440><c> so</c><00:02:19.599><c> it's</c><00:02:19.760><c> looking</c>
+
+00:02:19.990 --> 00:02:20.000 align:start position:0%
+order they're in right so it's looking
+ 
+
+00:02:20.000 --> 00:02:22.710 align:start position:0%
+order they're in right so it's looking
+for<00:02:20.160><c> an</c><00:02:20.319><c> anagram</c><00:02:20.879><c> so</c><00:02:21.040><c> we</c><00:02:21.200><c> can</c><00:02:21.360><c> actually</c><00:02:21.680><c> use</c><00:02:22.239><c> a</c>
+
+00:02:22.710 --> 00:02:22.720 align:start position:0%
+for an anagram so we can actually use a
+ 
+
+00:02:22.720 --> 00:02:25.110 align:start position:0%
+for an anagram so we can actually use a
+typical<00:02:23.360><c> sliding</c><00:02:23.920><c> window</c><00:02:24.400><c> technique</c><00:02:24.959><c> we're</c>
+
+00:02:25.110 --> 00:02:25.120 align:start position:0%
+typical sliding window technique we're
+ 
+
+00:02:25.120 --> 00:02:27.510 align:start position:0%
+typical sliding window technique we're
+going<00:02:25.200><c> to</c><00:02:25.280><c> look</c><00:02:25.440><c> at</c><00:02:25.680><c> every</c><00:02:26.080><c> window</c><00:02:26.800><c> in</c><00:02:27.040><c> s2</c>
+
+00:02:27.510 --> 00:02:27.520 align:start position:0%
+going to look at every window in s2
+ 
+
+00:02:27.520 --> 00:02:29.670 align:start position:0%
+going to look at every window in s2
+that's<00:02:27.680><c> the</c><00:02:27.840><c> exact</c><00:02:28.160><c> same</c><00:02:28.480><c> size</c><00:02:28.720><c> as</c><00:02:28.879><c> s1</c><00:02:29.360><c> so</c><00:02:29.599><c> in</c>
+
+00:02:29.670 --> 00:02:29.680 align:start position:0%
+that's the exact same size as s1 so in
+ 
+
+00:02:29.680 --> 00:02:31.430 align:start position:0%
+that's the exact same size as s1 so in
+this<00:02:29.840><c> case</c><00:02:30.319><c> length</c><00:02:30.720><c> 2.</c><00:02:30.959><c> so</c><00:02:31.120><c> we're</c><00:02:31.280><c> going</c><00:02:31.360><c> to</c>
+
+00:02:31.430 --> 00:02:31.440 align:start position:0%
+this case length 2. so we're going to
+ 
+
+00:02:31.440 --> 00:02:33.030 align:start position:0%
+this case length 2. so we're going to
+look<00:02:31.519><c> at</c><00:02:31.599><c> the</c><00:02:31.680><c> first</c><00:02:31.920><c> two</c><00:02:32.160><c> characters</c><00:02:32.800><c> then</c>
+
+00:02:33.030 --> 00:02:33.040 align:start position:0%
+look at the first two characters then
+ 
+
+00:02:33.040 --> 00:02:35.270 align:start position:0%
+look at the first two characters then
+the<00:02:33.120><c> next</c><00:02:33.360><c> two</c><00:02:33.519><c> characters</c><00:02:34.239><c> the</c><00:02:34.480><c> next</c><00:02:34.720><c> two</c><00:02:34.879><c> etc</c>
+
+00:02:35.270 --> 00:02:35.280 align:start position:0%
+the next two characters the next two etc
+ 
+
+00:02:35.280 --> 00:02:39.030 align:start position:0%
+the next two characters the next two etc
+etc<00:02:35.680><c> until</c><00:02:36.000><c> we</c><00:02:36.160><c> find</c><00:02:36.400><c> an</c><00:02:36.560><c> exact</c><00:02:37.200><c> match</c><00:02:37.760><c> with</c><00:02:38.080><c> s1</c>
+
+00:02:39.030 --> 00:02:39.040 align:start position:0%
+etc until we find an exact match with s1
+ 
+
+00:02:39.040 --> 00:02:40.550 align:start position:0%
+etc until we find an exact match with s1
+now<00:02:39.280><c> if</c><00:02:39.360><c> we</c><00:02:39.440><c> were</c><00:02:39.680><c> actually</c><00:02:39.920><c> comparing</c><00:02:40.400><c> the</c>
+
+00:02:40.550 --> 00:02:40.560 align:start position:0%
+now if we were actually comparing the
+ 
+
+00:02:40.560 --> 00:02:43.270 align:start position:0%
+now if we were actually comparing the
+exact<00:02:41.120><c> characters</c><00:02:42.080><c> that</c><00:02:42.319><c> would</c><00:02:42.560><c> be</c><00:02:42.959><c> pretty</c>
+
+00:02:43.270 --> 00:02:43.280 align:start position:0%
+exact characters that would be pretty
+ 
+
+00:02:43.280 --> 00:02:44.630 align:start position:0%
+exact characters that would be pretty
+annoying<00:02:43.599><c> the</c><00:02:43.760><c> time</c><00:02:43.920><c> complexity</c><00:02:44.400><c> in</c><00:02:44.560><c> that</c>
+
+00:02:44.630 --> 00:02:44.640 align:start position:0%
+annoying the time complexity in that
+ 
+
+00:02:44.640 --> 00:02:47.350 align:start position:0%
+annoying the time complexity in that
+case<00:02:44.879><c> would</c><00:02:45.040><c> let's</c><00:02:45.200><c> say</c><00:02:45.440><c> be</c><00:02:45.680><c> n</c><00:02:46.160><c> times</c><00:02:46.720><c> m</c><00:02:47.120><c> where</c>
+
+00:02:47.350 --> 00:02:47.360 align:start position:0%
+case would let's say be n times m where
+ 
+
+00:02:47.360 --> 00:02:49.990 align:start position:0%
+case would let's say be n times m where
+n<00:02:47.599><c> is</c><00:02:47.680><c> the</c><00:02:47.840><c> size</c><00:02:48.080><c> of</c><00:02:48.239><c> s2</c><00:02:48.720><c> m</c><00:02:48.959><c> is</c><00:02:49.040><c> the</c><00:02:49.200><c> size</c><00:02:49.440><c> of</c><00:02:49.599><c> s1</c>
+
+00:02:49.990 --> 00:02:50.000 align:start position:0%
+n is the size of s2 m is the size of s1
+ 
+
+00:02:50.000 --> 00:02:51.270 align:start position:0%
+n is the size of s2 m is the size of s1
+because<00:02:50.239><c> we're</c><00:02:50.400><c> looking</c><00:02:50.640><c> at</c><00:02:50.800><c> every</c><00:02:50.959><c> single</c>
+
+00:02:51.270 --> 00:02:51.280 align:start position:0%
+because we're looking at every single
+ 
+
+00:02:51.280 --> 00:02:53.589 align:start position:0%
+because we're looking at every single
+window<00:02:51.840><c> but</c><00:02:52.239><c> we</c><00:02:52.400><c> can</c><00:02:52.560><c> do</c><00:02:52.800><c> it</c><00:02:53.120><c> a</c><00:02:53.200><c> little</c><00:02:53.360><c> bit</c>
+
+00:02:53.589 --> 00:02:53.599 align:start position:0%
+window but we can do it a little bit
+ 
+
+00:02:53.599 --> 00:02:57.270 align:start position:0%
+window but we can do it a little bit
+better<00:02:53.840><c> we</c><00:02:54.000><c> can</c><00:02:54.080><c> reduce</c><00:02:54.560><c> it</c><00:02:54.640><c> to</c><00:02:54.800><c> be</c><00:02:55.200><c> 26</c><00:02:56.080><c> times</c><00:02:56.640><c> n</c>
+
+00:02:57.270 --> 00:02:57.280 align:start position:0%
+better we can reduce it to be 26 times n
+ 
+
+00:02:57.280 --> 00:03:00.229 align:start position:0%
+better we can reduce it to be 26 times n
+if<00:02:57.440><c> we</c><00:02:57.599><c> use</c><00:02:58.159><c> a</c><00:02:58.400><c> hash</c><00:02:58.800><c> map</c><00:02:59.200><c> because</c><00:02:59.599><c> actually</c><00:03:00.080><c> in</c>
+
+00:03:00.229 --> 00:03:00.239 align:start position:0%
+if we use a hash map because actually in
+ 
+
+00:03:00.239 --> 00:03:02.070 align:start position:0%
+if we use a hash map because actually in
+this<00:03:00.560><c> problem</c><00:03:01.120><c> it's</c><00:03:01.280><c> written</c><00:03:01.599><c> all</c><00:03:01.760><c> the</c><00:03:01.840><c> way</c><00:03:02.000><c> at</c>
+
+00:03:02.070 --> 00:03:02.080 align:start position:0%
+this problem it's written all the way at
+ 
+
+00:03:02.080 --> 00:03:03.509 align:start position:0%
+this problem it's written all the way at
+the<00:03:02.159><c> bottom</c><00:03:02.480><c> of</c><00:03:02.640><c> the</c><00:03:02.720><c> description</c><00:03:03.200><c> so</c><00:03:03.360><c> it's</c>
+
+00:03:03.509 --> 00:03:03.519 align:start position:0%
+the bottom of the description so it's
+ 
+
+00:03:03.519 --> 00:03:05.589 align:start position:0%
+the bottom of the description so it's
+not<00:03:03.760><c> on</c><00:03:03.920><c> screen</c><00:03:04.239><c> but</c><00:03:04.400><c> they</c><00:03:04.560><c> tell</c><00:03:04.800><c> us</c><00:03:05.120><c> that</c><00:03:05.440><c> all</c>
+
+00:03:05.589 --> 00:03:05.599 align:start position:0%
+not on screen but they tell us that all
+ 
+
+00:03:05.599 --> 00:03:07.270 align:start position:0%
+not on screen but they tell us that all
+the<00:03:05.760><c> characters</c><00:03:06.319><c> in</c><00:03:06.400><c> both</c><00:03:06.640><c> of</c><00:03:06.800><c> the</c><00:03:06.879><c> strings</c>
+
+00:03:07.270 --> 00:03:07.280 align:start position:0%
+the characters in both of the strings
+ 
+
+00:03:07.280 --> 00:03:09.589 align:start position:0%
+the characters in both of the strings
+are<00:03:07.360><c> going</c><00:03:07.440><c> to</c><00:03:07.519><c> be</c><00:03:07.760><c> limited</c><00:03:08.159><c> to</c><00:03:08.400><c> lowercase</c><00:03:09.120><c> a</c>
+
+00:03:09.589 --> 00:03:09.599 align:start position:0%
+are going to be limited to lowercase a
+ 
+
+00:03:09.599 --> 00:03:12.229 align:start position:0%
+are going to be limited to lowercase a
+through<00:03:10.000><c> lowercase</c><00:03:11.040><c> z</c><00:03:11.440><c> so</c><00:03:11.680><c> therefore</c><00:03:12.080><c> the</c>
+
+00:03:12.229 --> 00:03:12.239 align:start position:0%
+through lowercase z so therefore the
+ 
+
+00:03:12.239 --> 00:03:14.149 align:start position:0%
+through lowercase z so therefore the
+size<00:03:12.560><c> of</c><00:03:12.640><c> our</c><00:03:12.800><c> hashmap</c><00:03:13.360><c> is</c><00:03:13.440><c> going</c><00:03:13.519><c> to</c><00:03:13.599><c> be</c><00:03:13.840><c> at</c>
+
+00:03:14.149 --> 00:03:14.159 align:start position:0%
+size of our hashmap is going to be at
+ 
+
+00:03:14.159 --> 00:03:17.589 align:start position:0%
+size of our hashmap is going to be at
+most<00:03:14.800><c> size</c><00:03:15.440><c> 26.</c><00:03:16.080><c> there's</c><00:03:16.239><c> only</c><00:03:16.480><c> 26</c><00:03:16.959><c> characters</c>
+
+00:03:17.589 --> 00:03:17.599 align:start position:0%
+most size 26. there's only 26 characters
+ 
+
+00:03:17.599 --> 00:03:19.830 align:start position:0%
+most size 26. there's only 26 characters
+so<00:03:18.000><c> as</c><00:03:18.159><c> we</c><00:03:18.400><c> build</c><00:03:18.720><c> that</c><00:03:18.959><c> hash</c><00:03:19.280><c> map</c><00:03:19.599><c> we're</c>
+
+00:03:19.830 --> 00:03:19.840 align:start position:0%
+so as we build that hash map we're
+ 
+
+00:03:19.840 --> 00:03:21.430 align:start position:0%
+so as we build that hash map we're
+actually<00:03:20.080><c> going</c><00:03:20.239><c> to</c><00:03:20.319><c> have</c><00:03:20.720><c> two</c><00:03:20.879><c> hash</c><00:03:21.200><c> maps</c>
+
+00:03:21.430 --> 00:03:21.440 align:start position:0%
+actually going to have two hash maps
+ 
+
+00:03:21.440 --> 00:03:23.030 align:start position:0%
+actually going to have two hash maps
+we're<00:03:21.519><c> going</c><00:03:21.599><c> to</c><00:03:21.680><c> have</c><00:03:21.760><c> one</c><00:03:22.000><c> hash</c><00:03:22.239><c> map</c><00:03:22.480><c> for</c><00:03:22.640><c> s1</c>
+
+00:03:23.030 --> 00:03:23.040 align:start position:0%
+we're going to have one hash map for s1
+ 
+
+00:03:23.040 --> 00:03:24.869 align:start position:0%
+we're going to have one hash map for s1
+which<00:03:23.280><c> is</c><00:03:23.360><c> going</c><00:03:23.440><c> to</c><00:03:23.599><c> stay</c><00:03:23.840><c> the</c><00:03:23.920><c> exact</c><00:03:24.319><c> same</c>
+
+00:03:24.869 --> 00:03:24.879 align:start position:0%
+which is going to stay the exact same
+ 
+
+00:03:24.879 --> 00:03:26.149 align:start position:0%
+which is going to stay the exact same
+we're<00:03:25.040><c> also</c><00:03:25.200><c> going</c><00:03:25.360><c> to</c><00:03:25.440><c> have</c><00:03:25.519><c> a</c><00:03:25.599><c> second</c><00:03:25.840><c> hash</c>
+
+00:03:26.149 --> 00:03:26.159 align:start position:0%
+we're also going to have a second hash
+ 
+
+00:03:26.159 --> 00:03:28.309 align:start position:0%
+we're also going to have a second hash
+map<00:03:26.400><c> for</c><00:03:26.560><c> s2</c><00:03:27.120><c> which</c><00:03:27.360><c> is</c><00:03:27.519><c> going</c><00:03:27.599><c> to</c><00:03:27.680><c> have</c><00:03:28.159><c> the</c>
+
+00:03:28.309 --> 00:03:28.319 align:start position:0%
+map for s2 which is going to have the
+ 
+
+00:03:28.319 --> 00:03:30.309 align:start position:0%
+map for s2 which is going to have the
+characters<00:03:28.879><c> of</c><00:03:29.040><c> the</c><00:03:29.200><c> current</c><00:03:29.680><c> window</c><00:03:30.159><c> that</c>
+
+00:03:30.309 --> 00:03:30.319 align:start position:0%
+characters of the current window that
+ 
+
+00:03:30.319 --> 00:03:32.390 align:start position:0%
+characters of the current window that
+we're<00:03:30.640><c> at</c><00:03:30.959><c> so</c><00:03:31.200><c> every</c><00:03:31.440><c> time</c><00:03:31.599><c> we</c><00:03:31.840><c> create</c><00:03:32.239><c> a</c>
+
+00:03:32.390 --> 00:03:32.400 align:start position:0%
+we're at so every time we create a
+ 
+
+00:03:32.400 --> 00:03:34.550 align:start position:0%
+we're at so every time we create a
+window<00:03:33.040><c> right</c><00:03:33.280><c> each</c><00:03:33.519><c> time</c><00:03:33.760><c> we</c><00:03:33.920><c> shift</c><00:03:34.159><c> our</c>
+
+00:03:34.550 --> 00:03:34.560 align:start position:0%
+window right each time we shift our
+ 
+
+00:03:34.560 --> 00:03:35.910 align:start position:0%
+window right each time we shift our
+window<00:03:34.879><c> to</c><00:03:35.040><c> the</c><00:03:35.120><c> right</c><00:03:35.280><c> we're</c><00:03:35.440><c> only</c><00:03:35.680><c> just</c>
+
+00:03:35.910 --> 00:03:35.920 align:start position:0%
+window to the right we're only just
+ 
+
+00:03:35.920 --> 00:03:38.149 align:start position:0%
+window to the right we're only just
+adding<00:03:36.319><c> one</c><00:03:36.560><c> character</c><00:03:37.040><c> and</c><00:03:37.120><c> maybe</c><00:03:37.440><c> removing</c>
+
+00:03:38.149 --> 00:03:38.159 align:start position:0%
+adding one character and maybe removing
+ 
+
+00:03:38.159 --> 00:03:39.990 align:start position:0%
+adding one character and maybe removing
+the<00:03:38.319><c> character</c><00:03:38.720><c> that</c><00:03:38.799><c> was</c><00:03:38.959><c> on</c><00:03:39.120><c> the</c><00:03:39.280><c> left</c><00:03:39.840><c> and</c>
+
+00:03:39.990 --> 00:03:40.000 align:start position:0%
+the character that was on the left and
+ 
+
+00:03:40.000 --> 00:03:41.990 align:start position:0%
+the character that was on the left and
+then<00:03:40.480><c> once</c><00:03:40.720><c> we</c><00:03:40.879><c> have</c><00:03:41.040><c> those</c><00:03:41.280><c> two</c><00:03:41.440><c> hash</c><00:03:41.680><c> maps</c>
+
+00:03:41.990 --> 00:03:42.000 align:start position:0%
+then once we have those two hash maps
+ 
+
+00:03:42.000 --> 00:03:43.670 align:start position:0%
+then once we have those two hash maps
+we're<00:03:42.159><c> going</c><00:03:42.239><c> to</c><00:03:42.319><c> compare</c><00:03:42.879><c> them</c><00:03:43.120><c> if</c><00:03:43.280><c> they</c><00:03:43.440><c> are</c>
+
+00:03:43.670 --> 00:03:43.680 align:start position:0%
+we're going to compare them if they are
+ 
+
+00:03:43.680 --> 00:03:46.229 align:start position:0%
+we're going to compare them if they are
+equal<00:03:44.000><c> which</c><00:03:44.239><c> is</c><00:03:44.400><c> a</c><00:03:44.480><c> 26</c><00:03:45.519><c> operation</c><00:03:46.080><c> right</c>
+
+00:03:46.229 --> 00:03:46.239 align:start position:0%
+equal which is a 26 operation right
+ 
+
+00:03:46.239 --> 00:03:48.710 align:start position:0%
+equal which is a 26 operation right
+there's<00:03:46.480><c> only</c><00:03:46.640><c> 26</c><00:03:47.120><c> characters</c><00:03:47.920><c> and</c><00:03:48.319><c> so</c><00:03:48.480><c> that's</c>
+
+00:03:48.710 --> 00:03:48.720 align:start position:0%
+there's only 26 characters and so that's
+ 
+
+00:03:48.720 --> 00:03:50.470 align:start position:0%
+there's only 26 characters and so that's
+where<00:03:48.879><c> we</c><00:03:48.959><c> get</c><00:03:49.120><c> this</c><00:03:49.360><c> time</c><00:03:49.519><c> complexity</c><00:03:50.159><c> from</c>
+
+00:03:50.470 --> 00:03:50.480 align:start position:0%
+where we get this time complexity from
+ 
+
+00:03:50.480 --> 00:03:52.869 align:start position:0%
+where we get this time complexity from
+but<00:03:50.640><c> there</c><00:03:50.879><c> actually</c><00:03:51.519><c> is</c><00:03:51.920><c> a</c><00:03:52.080><c> better</c><00:03:52.400><c> way</c><00:03:52.640><c> this</c>
+
+00:03:52.869 --> 00:03:52.879 align:start position:0%
+but there actually is a better way this
+ 
+
+00:03:52.879 --> 00:03:55.190 align:start position:0%
+but there actually is a better way this
+solution<00:03:53.360><c> is</c><00:03:53.519><c> doable</c><00:03:54.000><c> it's</c><00:03:54.239><c> easy</c><00:03:54.480><c> to</c><00:03:54.640><c> code</c><00:03:54.959><c> up</c>
+
+00:03:55.190 --> 00:03:55.200 align:start position:0%
+solution is doable it's easy to code up
+ 
+
+00:03:55.200 --> 00:03:56.869 align:start position:0%
+solution is doable it's easy to code up
+and<00:03:55.360><c> you</c><00:03:55.519><c> can</c><00:03:55.680><c> do</c><00:03:55.920><c> so</c><00:03:56.159><c> if</c><00:03:56.319><c> you</c><00:03:56.400><c> would</c><00:03:56.480><c> like</c><00:03:56.720><c> but</c>
+
+00:03:56.869 --> 00:03:56.879 align:start position:0%
+and you can do so if you would like but
+ 
+
+00:03:56.879 --> 00:03:58.309 align:start position:0%
+and you can do so if you would like but
+i'm<00:03:56.959><c> going</c><00:03:57.040><c> to</c><00:03:57.200><c> show</c><00:03:57.360><c> you</c><00:03:57.519><c> the</c><00:03:57.680><c> slightly</c><00:03:58.080><c> more</c>
+
+00:03:58.309 --> 00:03:58.319 align:start position:0%
+i'm going to show you the slightly more
+ 
+
+00:03:58.319 --> 00:04:00.149 align:start position:0%
+i'm going to show you the slightly more
+optimal<00:03:58.720><c> solution</c><00:03:59.040><c> which</c><00:03:59.280><c> is</c><00:03:59.439><c> actually</c><00:03:59.920><c> not</c>
+
+00:04:00.149 --> 00:04:00.159 align:start position:0%
+optimal solution which is actually not
+ 
+
+00:04:00.159 --> 00:04:02.309 align:start position:0%
+optimal solution which is actually not
+even<00:04:00.400><c> going</c><00:04:00.560><c> to</c><00:04:00.640><c> have</c><00:04:00.879><c> this</c><00:04:01.120><c> 26</c><00:04:01.840><c> it's</c><00:04:02.080><c> just</c>
+
+00:04:02.309 --> 00:04:02.319 align:start position:0%
+even going to have this 26 it's just
+ 
+
+00:04:02.319 --> 00:04:05.750 align:start position:0%
+even going to have this 26 it's just
+gonna<00:04:02.560><c> be</c><00:04:03.040><c> big</c><00:04:03.360><c> o</c><00:04:03.680><c> of</c><00:04:04.159><c> n</c><00:04:04.720><c> so</c><00:04:04.959><c> let's</c><00:04:05.200><c> look</c><00:04:05.439><c> at</c><00:04:05.519><c> the</c>
+
+00:04:05.750 --> 00:04:05.760 align:start position:0%
+gonna be big o of n so let's look at the
+ 
+
+00:04:05.760 --> 00:04:08.309 align:start position:0%
+gonna be big o of n so let's look at the
+big<00:04:06.080><c> o</c><00:04:06.319><c> of</c><00:04:06.640><c> n</c><00:04:06.879><c> solution</c><00:04:07.519><c> and</c><00:04:07.680><c> it's</c><00:04:07.840><c> actually</c>
+
+00:04:08.309 --> 00:04:08.319 align:start position:0%
+big o of n solution and it's actually
+ 
+
+00:04:08.319 --> 00:04:10.309 align:start position:0%
+big o of n solution and it's actually
+similar<00:04:08.799><c> to</c><00:04:09.040><c> the</c><00:04:09.280><c> previous</c><00:04:09.760><c> solution</c><00:04:10.159><c> we</c>
+
+00:04:10.309 --> 00:04:10.319 align:start position:0%
+similar to the previous solution we
+ 
+
+00:04:10.319 --> 00:04:11.990 align:start position:0%
+similar to the previous solution we
+discussed<00:04:10.799><c> we're</c><00:04:11.040><c> actually</c><00:04:11.360><c> going</c><00:04:11.519><c> to</c><00:04:11.680><c> still</c>
+
+00:04:11.990 --> 00:04:12.000 align:start position:0%
+discussed we're actually going to still
+ 
+
+00:04:12.000 --> 00:04:15.830 align:start position:0%
+discussed we're actually going to still
+have<00:04:12.400><c> two</c><00:04:12.640><c> hash</c><00:04:13.040><c> maps</c><00:04:13.680><c> one</c><00:04:14.159><c> for</c><00:04:14.640><c> s1</c><00:04:15.360><c> so</c><00:04:15.519><c> as</c><00:04:15.760><c> you</c>
+
+00:04:15.830 --> 00:04:15.840 align:start position:0%
+have two hash maps one for s1 so as you
+ 
+
+00:04:15.840 --> 00:04:18.390 align:start position:0%
+have two hash maps one for s1 so as you
+can<00:04:16.000><c> see</c><00:04:16.560><c> we</c><00:04:16.959><c> counted</c><00:04:17.440><c> the</c><00:04:17.600><c> occurrences</c><00:04:18.239><c> of</c>
+
+00:04:18.390 --> 00:04:18.400 align:start position:0%
+can see we counted the occurrences of
+ 
+
+00:04:18.400 --> 00:04:20.710 align:start position:0%
+can see we counted the occurrences of
+each<00:04:18.560><c> character</c><00:04:19.040><c> we</c><00:04:19.120><c> call</c><00:04:19.359><c> it</c><00:04:19.519><c> s1</c><00:04:20.000><c> count</c><00:04:20.320><c> so</c><00:04:20.560><c> we</c>
+
+00:04:20.710 --> 00:04:20.720 align:start position:0%
+each character we call it s1 count so we
+ 
+
+00:04:20.720 --> 00:04:23.909 align:start position:0%
+each character we call it s1 count so we
+have<00:04:20.959><c> one</c><00:04:21.280><c> a</c><00:04:21.519><c> we</c><00:04:21.680><c> have</c><00:04:21.840><c> one</c><00:04:22.079><c> b</c><00:04:22.240><c> and</c><00:04:22.400><c> one</c><00:04:22.880><c> c</c><00:04:23.440><c> so</c><00:04:23.680><c> we</c>
+
+00:04:23.909 --> 00:04:23.919 align:start position:0%
+have one a we have one b and one c so we
+ 
+
+00:04:23.919 --> 00:04:26.710 align:start position:0%
+have one a we have one b and one c so we
+filled<00:04:24.240><c> our</c><00:04:24.400><c> hash</c><00:04:24.639><c> map</c><00:04:25.199><c> with</c><00:04:25.440><c> the</c><00:04:25.520><c> same</c><00:04:25.840><c> values</c>
+
+00:04:26.710 --> 00:04:26.720 align:start position:0%
+filled our hash map with the same values
+ 
+
+00:04:26.720 --> 00:04:30.629 align:start position:0%
+filled our hash map with the same values
+and<00:04:27.280><c> rs2</c><00:04:28.080><c> hash</c><00:04:28.400><c> map</c><00:04:28.720><c> is</c><00:04:28.960><c> empty</c><00:04:29.680><c> because</c><00:04:30.320><c> first</c>
+
+00:04:30.629 --> 00:04:30.639 align:start position:0%
+and rs2 hash map is empty because first
+ 
+
+00:04:30.639 --> 00:04:31.909 align:start position:0%
+and rs2 hash map is empty because first
+we're<00:04:30.800><c> going</c><00:04:30.880><c> to</c><00:04:30.960><c> set</c><00:04:31.199><c> our</c><00:04:31.360><c> window</c><00:04:31.680><c> here</c><00:04:31.840><c> and</c>
+
+00:04:31.909 --> 00:04:31.919 align:start position:0%
+we're going to set our window here and
+ 
+
+00:04:31.919 --> 00:04:33.270 align:start position:0%
+we're going to set our window here and
+then<00:04:32.080><c> we're</c><00:04:32.240><c> going</c><00:04:32.240><c> to</c><00:04:32.400><c> continue</c><00:04:32.720><c> to</c><00:04:32.880><c> shift</c><00:04:33.120><c> it</c>
+
+00:04:33.270 --> 00:04:33.280 align:start position:0%
+then we're going to continue to shift it
+ 
+
+00:04:33.280 --> 00:04:36.230 align:start position:0%
+then we're going to continue to shift it
+by<00:04:33.520><c> one</c><00:04:33.840><c> each</c><00:04:34.240><c> time</c><00:04:34.800><c> but</c><00:04:35.040><c> the</c><00:04:35.280><c> difference</c><00:04:35.840><c> here</c>
+
+00:04:36.230 --> 00:04:36.240 align:start position:0%
+by one each time but the difference here
+ 
+
+00:04:36.240 --> 00:04:38.070 align:start position:0%
+by one each time but the difference here
+is<00:04:36.639><c> we're</c><00:04:36.880><c> not</c><00:04:37.280><c> actually</c><00:04:37.600><c> going</c><00:04:37.759><c> to</c><00:04:37.919><c> be</c>
+
+00:04:38.070 --> 00:04:38.080 align:start position:0%
+is we're not actually going to be
+ 
+
+00:04:38.080 --> 00:04:41.030 align:start position:0%
+is we're not actually going to be
+comparing<00:04:38.800><c> the</c><00:04:39.040><c> two</c><00:04:39.280><c> hash</c><00:04:39.600><c> maps</c><00:04:40.000><c> together</c><00:04:40.720><c> we</c>
+
+00:04:41.030 --> 00:04:41.040 align:start position:0%
+comparing the two hash maps together we
+ 
+
+00:04:41.040 --> 00:04:42.790 align:start position:0%
+comparing the two hash maps together we
+won't<00:04:41.520><c> need</c><00:04:41.840><c> to</c><00:04:42.080><c> because</c><00:04:42.320><c> we're</c><00:04:42.560><c> going</c><00:04:42.639><c> to</c>
+
+00:04:42.790 --> 00:04:42.800 align:start position:0%
+won't need to because we're going to
+ 
+
+00:04:42.800 --> 00:04:45.590 align:start position:0%
+won't need to because we're going to
+keep<00:04:43.040><c> track</c><00:04:43.440><c> of</c><00:04:43.680><c> one</c><00:04:44.320><c> more</c><00:04:44.639><c> variable</c><00:04:45.440><c> we're</c>
+
+00:04:45.590 --> 00:04:45.600 align:start position:0%
+keep track of one more variable we're
+ 
+
+00:04:45.600 --> 00:04:47.990 align:start position:0%
+keep track of one more variable we're
+going<00:04:45.680><c> to</c><00:04:45.840><c> call</c><00:04:46.160><c> it</c><00:04:46.720><c> matches</c>
+
+00:04:47.990 --> 00:04:48.000 align:start position:0%
+going to call it matches
+ 
+
+00:04:48.000 --> 00:04:50.310 align:start position:0%
+going to call it matches
+we're<00:04:48.240><c> basically</c><00:04:49.199><c> going</c><00:04:49.440><c> to</c><00:04:49.600><c> have</c><00:04:49.840><c> a</c><00:04:49.919><c> little</c>
+
+00:04:50.310 --> 00:04:50.320 align:start position:0%
+we're basically going to have a little
+ 
+
+00:04:50.320 --> 00:04:52.390 align:start position:0%
+we're basically going to have a little
+shortcut<00:04:51.040><c> initially</c><00:04:51.600><c> this</c><00:04:51.840><c> is</c><00:04:52.000><c> going</c><00:04:52.080><c> to</c><00:04:52.160><c> be</c>
+
+00:04:52.390 --> 00:04:52.400 align:start position:0%
+shortcut initially this is going to be
+ 
+
+00:04:52.400 --> 00:04:55.350 align:start position:0%
+shortcut initially this is going to be
+set<00:04:52.800><c> to</c><00:04:53.520><c> zero</c><00:04:54.000><c> i'll</c><00:04:54.160><c> just</c><00:04:54.400><c> create</c><00:04:54.639><c> a</c><00:04:54.800><c> box</c><00:04:55.120><c> for</c>
+
+00:04:55.350 --> 00:04:55.360 align:start position:0%
+set to zero i'll just create a box for
+ 
+
+00:04:55.360 --> 00:04:56.390 align:start position:0%
+set to zero i'll just create a box for
+it<00:04:55.440><c> even</c><00:04:55.600><c> though</c><00:04:55.759><c> it's</c><00:04:55.840><c> just</c><00:04:56.000><c> going</c><00:04:56.080><c> to</c><00:04:56.160><c> be</c><00:04:56.320><c> a</c>
+
+00:04:56.390 --> 00:04:56.400 align:start position:0%
+it even though it's just going to be a
+ 
+
+00:04:56.400 --> 00:04:57.430 align:start position:0%
+it even though it's just going to be a
+single
+
+00:04:57.430 --> 00:04:57.440 align:start position:0%
+single
+ 
+
+00:04:57.440 --> 00:04:59.670 align:start position:0%
+single
+value<00:04:58.080><c> but</c><00:04:58.240><c> we</c><00:04:58.400><c> might</c><00:04:58.639><c> be</c><00:04:58.800><c> updating</c><00:04:59.280><c> it</c><00:04:59.440><c> to</c>
+
+00:04:59.670 --> 00:04:59.680 align:start position:0%
+value but we might be updating it to
+ 
+
+00:04:59.680 --> 00:05:02.070 align:start position:0%
+value but we might be updating it to
+other<00:04:59.919><c> values</c><00:05:00.479><c> but</c><00:05:00.639><c> this</c><00:05:01.039><c> matches</c><00:05:01.520><c> variable</c>
+
+00:05:02.070 --> 00:05:02.080 align:start position:0%
+other values but this matches variable
+ 
+
+00:05:02.080 --> 00:05:03.510 align:start position:0%
+other values but this matches variable
+is<00:05:02.160><c> basically</c><00:05:02.639><c> going</c><00:05:02.720><c> to</c><00:05:02.800><c> be</c><00:05:02.960><c> a</c><00:05:03.039><c> shortcut</c>
+
+00:05:03.510 --> 00:05:03.520 align:start position:0%
+is basically going to be a shortcut
+ 
+
+00:05:03.520 --> 00:05:05.350 align:start position:0%
+is basically going to be a shortcut
+that's<00:05:03.680><c> going</c><00:05:03.759><c> to</c><00:05:03.840><c> allow</c><00:05:04.160><c> us</c><00:05:04.320><c> to</c><00:05:04.639><c> not</c><00:05:04.960><c> have</c><00:05:05.199><c> to</c>
+
+00:05:05.350 --> 00:05:05.360 align:start position:0%
+that's going to allow us to not have to
+ 
+
+00:05:05.360 --> 00:05:08.390 align:start position:0%
+that's going to allow us to not have to
+compare<00:05:05.840><c> the</c><00:05:06.080><c> entire</c><00:05:06.800><c> hash</c><00:05:07.120><c> maps</c><00:05:07.759><c> each</c><00:05:08.080><c> time</c>
+
+00:05:08.390 --> 00:05:08.400 align:start position:0%
+compare the entire hash maps each time
+ 
+
+00:05:08.400 --> 00:05:10.070 align:start position:0%
+compare the entire hash maps each time
+which<00:05:08.560><c> we</c><00:05:08.720><c> know</c><00:05:08.960><c> in</c><00:05:09.039><c> the</c><00:05:09.199><c> worst</c><00:05:09.440><c> case</c><00:05:09.680><c> could</c><00:05:09.919><c> be</c>
+
+00:05:10.070 --> 00:05:10.080 align:start position:0%
+which we know in the worst case could be
+ 
+
+00:05:10.080 --> 00:05:12.790 align:start position:0%
+which we know in the worst case could be
+a<00:05:10.160><c> 26</c><00:05:11.199><c> operation</c><00:05:11.919><c> having</c><00:05:12.160><c> to</c><00:05:12.320><c> look</c><00:05:12.479><c> through</c>
+
+00:05:12.790 --> 00:05:12.800 align:start position:0%
+a 26 operation having to look through
+ 
+
+00:05:12.800 --> 00:05:15.430 align:start position:0%
+a 26 operation having to look through
+every<00:05:13.039><c> single</c><00:05:13.440><c> character</c><00:05:14.240><c> of</c><00:05:14.400><c> the</c><00:05:14.560><c> hashmaps</c>
+
+00:05:15.430 --> 00:05:15.440 align:start position:0%
+every single character of the hashmaps
+ 
+
+00:05:15.440 --> 00:05:17.670 align:start position:0%
+every single character of the hashmaps
+because<00:05:15.840><c> this</c><00:05:16.160><c> matches</c><00:05:16.880><c> variable</c><00:05:17.440><c> is</c>
+
+00:05:17.670 --> 00:05:17.680 align:start position:0%
+because this matches variable is
+ 
+
+00:05:17.680 --> 00:05:21.350 align:start position:0%
+because this matches variable is
+actually<00:05:18.240><c> gonna</c><00:05:18.639><c> maintain</c><00:05:19.680><c> the</c><00:05:20.080><c> total</c><00:05:20.720><c> number</c>
+
+00:05:21.350 --> 00:05:21.360 align:start position:0%
+actually gonna maintain the total number
+ 
+
+00:05:21.360 --> 00:05:24.310 align:start position:0%
+actually gonna maintain the total number
+of<00:05:21.759><c> equal</c><00:05:22.400><c> characters</c><00:05:23.280><c> in</c><00:05:23.600><c> each</c><00:05:23.919><c> of</c><00:05:24.080><c> these</c>
+
+00:05:24.310 --> 00:05:24.320 align:start position:0%
+of equal characters in each of these
+ 
+
+00:05:24.320 --> 00:05:27.110 align:start position:0%
+of equal characters in each of these
+hash<00:05:24.639><c> maps</c><00:05:25.199><c> and</c><00:05:25.520><c> actually</c><00:05:26.400><c> even</c><00:05:26.639><c> though</c><00:05:26.960><c> i</c>
+
+00:05:27.110 --> 00:05:27.120 align:start position:0%
+hash maps and actually even though i
+ 
+
+00:05:27.120 --> 00:05:29.350 align:start position:0%
+hash maps and actually even though i
+didn't<00:05:27.520><c> draw</c><00:05:28.000><c> the</c><00:05:28.160><c> entire</c>
+
+00:05:29.350 --> 00:05:29.360 align:start position:0%
+didn't draw the entire
+ 
+
+00:05:29.360 --> 00:05:31.909 align:start position:0%
+didn't draw the entire
+map<00:05:29.840><c> for</c><00:05:30.080><c> s1</c><00:05:30.560><c> and</c><00:05:30.720><c> s2</c><00:05:31.120><c> in</c><00:05:31.199><c> this</c><00:05:31.360><c> case</c><00:05:31.600><c> because</c>
+
+00:05:31.909 --> 00:05:31.919 align:start position:0%
+map for s1 and s2 in this case because
+ 
+
+00:05:31.919 --> 00:05:33.590 align:start position:0%
+map for s1 and s2 in this case because
+actually<00:05:32.240><c> we</c><00:05:32.400><c> know</c><00:05:32.639><c> that</c><00:05:32.720><c> there's</c><00:05:33.039><c> a</c><00:05:33.280><c> through</c>
+
+00:05:33.590 --> 00:05:33.600 align:start position:0%
+actually we know that there's a through
+ 
+
+00:05:33.600 --> 00:05:35.830 align:start position:0%
+actually we know that there's a through
+z<00:05:33.840><c> there's</c><00:05:34.080><c> 26</c><00:05:34.720><c> characters</c><00:05:35.360><c> and</c><00:05:35.440><c> i</c><00:05:35.520><c> didn't</c>
+
+00:05:35.830 --> 00:05:35.840 align:start position:0%
+z there's 26 characters and i didn't
+ 
+
+00:05:35.840 --> 00:05:37.830 align:start position:0%
+z there's 26 characters and i didn't
+actually<00:05:36.080><c> draw</c><00:05:36.720><c> the</c><00:05:36.880><c> entire</c><00:05:37.280><c> thing</c><00:05:37.520><c> but</c><00:05:37.680><c> we</c>
+
+00:05:37.830 --> 00:05:37.840 align:start position:0%
+actually draw the entire thing but we
+ 
+
+00:05:37.840 --> 00:05:38.950 align:start position:0%
+actually draw the entire thing but we
+are<00:05:38.000><c> gonna</c>
+
+00:05:38.950 --> 00:05:38.960 align:start position:0%
+are gonna
+ 
+
+00:05:38.960 --> 00:05:40.870 align:start position:0%
+are gonna
+you<00:05:39.120><c> know</c><00:05:39.280><c> fill</c><00:05:39.520><c> in</c><00:05:39.600><c> the</c><00:05:39.759><c> values</c><00:05:40.240><c> in</c><00:05:40.400><c> the</c><00:05:40.560><c> code</c>
+
+00:05:40.870 --> 00:05:40.880 align:start position:0%
+you know fill in the values in the code
+ 
+
+00:05:40.880 --> 00:05:42.629 align:start position:0%
+you know fill in the values in the code
+because<00:05:41.120><c> we</c><00:05:41.280><c> know</c><00:05:41.840><c> that</c><00:05:42.080><c> the</c><00:05:42.240><c> rest</c><00:05:42.479><c> of</c><00:05:42.560><c> the</c>
+
+00:05:42.629 --> 00:05:42.639 align:start position:0%
+because we know that the rest of the
+ 
+
+00:05:42.639 --> 00:05:44.790 align:start position:0%
+because we know that the rest of the
+characters<00:05:43.120><c> in</c><00:05:43.280><c> s1</c><00:05:43.680><c> are</c><00:05:43.759><c> gonna</c><00:05:43.919><c> be</c><00:05:44.160><c> of</c><00:05:44.320><c> count</c>
+
+00:05:44.790 --> 00:05:44.800 align:start position:0%
+characters in s1 are gonna be of count
+ 
+
+00:05:44.800 --> 00:05:48.150 align:start position:0%
+characters in s1 are gonna be of count
+zero<00:05:45.280><c> right</c><00:05:45.759><c> and</c><00:05:46.160><c> matches</c><00:05:46.880><c> is</c><00:05:47.039><c> gonna</c><00:05:47.360><c> tell</c><00:05:47.680><c> us</c>
+
+00:05:48.150 --> 00:05:48.160 align:start position:0%
+zero right and matches is gonna tell us
+ 
+
+00:05:48.160 --> 00:05:51.350 align:start position:0%
+zero right and matches is gonna tell us
+the<00:05:48.320><c> exact</c><00:05:49.120><c> number</c><00:05:49.600><c> of</c><00:05:49.840><c> matches</c><00:05:50.639><c> of</c><00:05:50.960><c> each</c>
+
+00:05:51.350 --> 00:05:51.360 align:start position:0%
+the exact number of matches of each
+ 
+
+00:05:51.360 --> 00:05:54.390 align:start position:0%
+the exact number of matches of each
+character<00:05:52.160><c> between</c><00:05:52.720><c> the</c><00:05:52.880><c> two</c><00:05:53.120><c> hash</c><00:05:53.520><c> maps</c><00:05:54.160><c> so</c>
+
+00:05:54.390 --> 00:05:54.400 align:start position:0%
+character between the two hash maps so
+ 
+
+00:05:54.400 --> 00:05:56.390 align:start position:0%
+character between the two hash maps so
+we<00:05:54.560><c> want</c><00:05:54.800><c> to</c><00:05:54.960><c> know</c><00:05:55.600><c> does</c>
+
+00:05:56.390 --> 00:05:56.400 align:start position:0%
+we want to know does
+ 
+
+00:05:56.400 --> 00:06:00.550 align:start position:0%
+we want to know does
+the<00:05:56.639><c> a</c><00:05:57.039><c> count</c><00:05:57.600><c> of</c><00:05:57.840><c> s1</c><00:05:58.479><c> and</c><00:05:58.720><c> of</c><00:05:58.880><c> s2</c><00:05:59.759><c> match</c><00:06:00.240><c> if</c><00:06:00.400><c> it</c>
+
+00:06:00.550 --> 00:06:00.560 align:start position:0%
+the a count of s1 and of s2 match if it
+ 
+
+00:06:00.560 --> 00:06:03.270 align:start position:0%
+the a count of s1 and of s2 match if it
+does<00:06:00.960><c> match</c><00:06:01.440><c> then</c><00:06:01.600><c> that's</c><00:06:01.840><c> a</c><00:06:02.000><c> plus</c><00:06:02.400><c> one</c><00:06:02.880><c> if</c><00:06:03.039><c> it</c>
+
+00:06:03.270 --> 00:06:03.280 align:start position:0%
+does match then that's a plus one if it
+ 
+
+00:06:03.280 --> 00:06:06.070 align:start position:0%
+does match then that's a plus one if it
+doesn't<00:06:03.680><c> match</c><00:06:04.240><c> then</c><00:06:04.880><c> that's</c><00:06:05.199><c> not</c><00:06:05.440><c> a</c><00:06:05.520><c> plus</c><00:06:05.759><c> one</c>
+
+00:06:06.070 --> 00:06:06.080 align:start position:0%
+doesn't match then that's not a plus one
+ 
+
+00:06:06.080 --> 00:06:07.830 align:start position:0%
+doesn't match then that's not a plus one
+right<00:06:06.479><c> and</c><00:06:06.639><c> we</c><00:06:06.800><c> want</c><00:06:06.960><c> to</c><00:06:07.120><c> know</c><00:06:07.280><c> the</c><00:06:07.440><c> number</c><00:06:07.680><c> of</c>
+
+00:06:07.830 --> 00:06:07.840 align:start position:0%
+right and we want to know the number of
+ 
+
+00:06:07.840 --> 00:06:10.950 align:start position:0%
+right and we want to know the number of
+matches<00:06:08.560><c> for</c><00:06:08.960><c> every</c><00:06:09.600><c> single</c><00:06:10.080><c> character</c><00:06:10.880><c> and</c>
+
+00:06:10.950 --> 00:06:10.960 align:start position:0%
+matches for every single character and
+ 
+
+00:06:10.960 --> 00:06:13.430 align:start position:0%
+matches for every single character and
+we<00:06:11.120><c> want</c><00:06:11.280><c> to</c><00:06:11.360><c> know</c><00:06:11.600><c> that</c><00:06:11.919><c> initially</c><00:06:12.960><c> right</c><00:06:13.280><c> it</c>
+
+00:06:13.430 --> 00:06:13.440 align:start position:0%
+we want to know that initially right it
+ 
+
+00:06:13.440 --> 00:06:16.629 align:start position:0%
+we want to know that initially right it
+could<00:06:13.680><c> be</c><00:06:14.000><c> 26</c><00:06:14.639><c> matches</c><00:06:15.120><c> or</c><00:06:15.360><c> it</c><00:06:15.520><c> could</c><00:06:15.759><c> be</c><00:06:16.240><c> zero</c>
+
+00:06:16.629 --> 00:06:16.639 align:start position:0%
+could be 26 matches or it could be zero
+ 
+
+00:06:16.639 --> 00:06:18.710 align:start position:0%
+could be 26 matches or it could be zero
+matches<00:06:17.120><c> right</c><00:06:17.280><c> it</c><00:06:17.360><c> could</c><00:06:17.520><c> be</c><00:06:17.759><c> any</c><00:06:18.000><c> value</c><00:06:18.560><c> in</c>
+
+00:06:18.710 --> 00:06:18.720 align:start position:0%
+matches right it could be any value in
+ 
+
+00:06:18.720 --> 00:06:22.629 align:start position:0%
+matches right it could be any value in
+between<00:06:19.360><c> but</c><00:06:19.759><c> once</c><00:06:20.160><c> we</c><00:06:20.400><c> have</c><00:06:20.800><c> 26</c><00:06:21.600><c> matches</c><00:06:22.319><c> that</c>
+
+00:06:22.629 --> 00:06:22.639 align:start position:0%
+between but once we have 26 matches that
+ 
+
+00:06:22.639 --> 00:06:26.629 align:start position:0%
+between but once we have 26 matches that
+means<00:06:23.280><c> that</c><00:06:23.520><c> for</c><00:06:23.919><c> some</c><00:06:24.319><c> window</c><00:06:24.880><c> in</c><00:06:25.199><c> s2</c><00:06:26.000><c> and</c><00:06:26.400><c> by</c>
+
+00:06:26.629 --> 00:06:26.639 align:start position:0%
+means that for some window in s2 and by
+ 
+
+00:06:26.639 --> 00:06:28.070 align:start position:0%
+means that for some window in s2 and by
+looking<00:06:26.880><c> at</c><00:06:27.039><c> it</c><00:06:27.120><c> we</c><00:06:27.280><c> know</c><00:06:27.440><c> that</c><00:06:27.680><c> this</c><00:06:27.919><c> is</c><00:06:28.000><c> going</c>
+
+00:06:28.070 --> 00:06:28.080 align:start position:0%
+looking at it we know that this is going
+ 
+
+00:06:28.080 --> 00:06:29.830 align:start position:0%
+looking at it we know that this is going
+to<00:06:28.160><c> be</c><00:06:28.319><c> the</c><00:06:28.479><c> window</c><00:06:28.800><c> we</c><00:06:28.960><c> know</c><00:06:29.199><c> that</c><00:06:29.680><c> this</c>
+
+00:06:29.830 --> 00:06:29.840 align:start position:0%
+to be the window we know that this
+ 
+
+00:06:29.840 --> 00:06:32.629 align:start position:0%
+to be the window we know that this
+window<00:06:30.160><c> has</c><00:06:30.479><c> 26</c><00:06:31.120><c> matches</c><00:06:31.759><c> with</c><00:06:32.000><c> this</c><00:06:32.240><c> window</c>
+
+00:06:32.629 --> 00:06:32.639 align:start position:0%
+window has 26 matches with this window
+ 
+
+00:06:32.639 --> 00:06:34.790 align:start position:0%
+window has 26 matches with this window
+because<00:06:33.199><c> they</c><00:06:33.440><c> both</c><00:06:33.759><c> have</c><00:06:34.000><c> a</c><00:06:34.160><c> single</c><00:06:34.560><c> a</c>
+
+00:06:34.790 --> 00:06:34.800 align:start position:0%
+because they both have a single a
+ 
+
+00:06:34.800 --> 00:06:37.270 align:start position:0%
+because they both have a single a
+character<00:06:35.280><c> a</c><00:06:35.440><c> single</c><00:06:35.840><c> b</c><00:06:36.080><c> character</c><00:06:36.560><c> a</c><00:06:36.800><c> single</c>
+
+00:06:37.270 --> 00:06:37.280 align:start position:0%
+character a single b character a single
+ 
+
+00:06:37.280 --> 00:06:39.749 align:start position:0%
+character a single b character a single
+c<00:06:37.600><c> character</c><00:06:38.160><c> and</c><00:06:38.400><c> for</c><00:06:38.560><c> the</c><00:06:38.800><c> other</c><00:06:39.039><c> remaining</c>
+
+00:06:39.749 --> 00:06:39.759 align:start position:0%
+c character and for the other remaining
+ 
+
+00:06:39.759 --> 00:06:42.550 align:start position:0%
+c character and for the other remaining
+23<00:06:40.400><c> characters</c><00:06:41.199><c> they</c><00:06:41.440><c> have</c>
+
+00:06:42.550 --> 00:06:42.560 align:start position:0%
+23 characters they have
+ 
+
+00:06:42.560 --> 00:06:44.790 align:start position:0%
+23 characters they have
+they<00:06:42.720><c> both</c><00:06:43.039><c> have</c><00:06:43.280><c> zero</c><00:06:43.759><c> of</c><00:06:43.919><c> those</c><00:06:44.240><c> characters</c>
+
+00:06:44.790 --> 00:06:44.800 align:start position:0%
+they both have zero of those characters
+ 
+
+00:06:44.800 --> 00:06:47.990 align:start position:0%
+they both have zero of those characters
+so<00:06:45.039><c> therefore</c><00:06:45.520><c> they</c><00:06:45.680><c> have</c><00:06:45.919><c> 26</c><00:06:46.960><c> matches</c><00:06:47.759><c> that's</c>
+
+00:06:47.990 --> 00:06:48.000 align:start position:0%
+so therefore they have 26 matches that's
+ 
+
+00:06:48.000 --> 00:06:49.749 align:start position:0%
+so therefore they have 26 matches that's
+what<00:06:48.160><c> we</c><00:06:48.400><c> care</c><00:06:48.639><c> about</c><00:06:49.039><c> and</c><00:06:49.120><c> we</c><00:06:49.280><c> can</c><00:06:49.440><c> do</c><00:06:49.599><c> that</c>
+
+00:06:49.749 --> 00:06:49.759 align:start position:0%
+what we care about and we can do that
+ 
+
+00:06:49.759 --> 00:06:51.749 align:start position:0%
+what we care about and we can do that
+with<00:06:49.919><c> a</c><00:06:50.000><c> single</c><00:06:50.319><c> variable</c><00:06:50.880><c> without</c><00:06:51.280><c> having</c><00:06:51.520><c> to</c>
+
+00:06:51.749 --> 00:06:51.759 align:start position:0%
+with a single variable without having to
+ 
+
+00:06:51.759 --> 00:06:53.430 align:start position:0%
+with a single variable without having to
+look<00:06:52.000><c> through</c><00:06:52.160><c> the</c><00:06:52.319><c> entire</c><00:06:52.639><c> hashmap</c><00:06:53.199><c> let</c><00:06:53.360><c> me</c>
+
+00:06:53.430 --> 00:06:53.440 align:start position:0%
+look through the entire hashmap let me
+ 
+
+00:06:53.440 --> 00:06:55.270 align:start position:0%
+look through the entire hashmap let me
+show<00:06:53.599><c> you</c><00:06:53.759><c> the</c><00:06:53.919><c> algorithm</c><00:06:54.400><c> to</c><00:06:54.560><c> do</c><00:06:54.800><c> that</c><00:06:55.039><c> it's</c>
+
+00:06:55.270 --> 00:06:55.280 align:start position:0%
+show you the algorithm to do that it's
+ 
+
+00:06:55.280 --> 00:06:57.510 align:start position:0%
+show you the algorithm to do that it's
+pretty<00:06:55.599><c> straightforward</c><00:06:56.400><c> actually</c><00:06:57.120><c> so</c><00:06:57.360><c> first</c>
+
+00:06:57.510 --> 00:06:57.520 align:start position:0%
+pretty straightforward actually so first
+ 
+
+00:06:57.520 --> 00:06:58.710 align:start position:0%
+pretty straightforward actually so first
+thing<00:06:57.680><c> we're</c><00:06:57.840><c> going</c><00:06:57.919><c> to</c><00:06:58.000><c> do</c><00:06:58.160><c> is</c><00:06:58.319><c> actually</c><00:06:58.560><c> just</c>
+
+00:06:58.710 --> 00:06:58.720 align:start position:0%
+thing we're going to do is actually just
+ 
+
+00:06:58.720 --> 00:07:00.550 align:start position:0%
+thing we're going to do is actually just
+look<00:06:58.880><c> at</c><00:06:58.960><c> the</c><00:06:59.039><c> first</c><00:06:59.280><c> three</c><00:06:59.520><c> characters</c><00:07:00.000><c> of</c><00:07:00.160><c> s2</c>
+
+00:07:00.550 --> 00:07:00.560 align:start position:0%
+look at the first three characters of s2
+ 
+
+00:07:00.560 --> 00:07:02.629 align:start position:0%
+look at the first three characters of s2
+and<00:07:00.639><c> then</c><00:07:00.800><c> fill</c><00:07:01.039><c> up</c><00:07:01.120><c> our</c><00:07:01.280><c> hash</c><00:07:01.599><c> map</c><00:07:02.160><c> so</c><00:07:02.400><c> we</c><00:07:02.479><c> have</c>
+
+00:07:02.629 --> 00:07:02.639 align:start position:0%
+and then fill up our hash map so we have
+ 
+
+00:07:02.639 --> 00:07:05.350 align:start position:0%
+and then fill up our hash map so we have
+a<00:07:02.720><c> single</c><00:07:03.120><c> b</c><00:07:03.759><c> we</c><00:07:03.919><c> have</c><00:07:04.160><c> a</c><00:07:04.240><c> single</c><00:07:04.639><c> a</c><00:07:05.039><c> and</c><00:07:05.199><c> we</c>
+
+00:07:05.350 --> 00:07:05.360 align:start position:0%
+a single b we have a single a and we
+ 
+
+00:07:05.360 --> 00:07:07.270 align:start position:0%
+a single b we have a single a and we
+have<00:07:05.599><c> a</c><00:07:05.680><c> single</c><00:07:06.160><c> x</c><00:07:06.639><c> now</c><00:07:06.880><c> you</c><00:07:06.960><c> can</c><00:07:07.039><c> see</c><00:07:07.199><c> that</c>
+
+00:07:07.270 --> 00:07:07.280 align:start position:0%
+have a single x now you can see that
+ 
+
+00:07:07.280 --> 00:07:09.189 align:start position:0%
+have a single x now you can see that
+this<00:07:07.440><c> is</c><00:07:07.520><c> what</c><00:07:07.680><c> our</c><00:07:07.840><c> hash</c><00:07:08.240><c> maps</c><00:07:08.639><c> actually</c><00:07:08.960><c> look</c>
+
+00:07:09.189 --> 00:07:09.199 align:start position:0%
+this is what our hash maps actually look
+ 
+
+00:07:09.199 --> 00:07:10.790 align:start position:0%
+this is what our hash maps actually look
+like<00:07:09.599><c> we</c><00:07:09.759><c> have</c><00:07:09.919><c> looked</c><00:07:10.160><c> at</c><00:07:10.240><c> the</c><00:07:10.319><c> first</c><00:07:10.560><c> three</c>
+
+00:07:10.790 --> 00:07:10.800 align:start position:0%
+like we have looked at the first three
+ 
+
+00:07:10.800 --> 00:07:12.550 align:start position:0%
+like we have looked at the first three
+characters<00:07:11.360><c> and</c><00:07:11.759><c> now</c><00:07:11.919><c> what</c><00:07:12.080><c> we're</c><00:07:12.240><c> actually</c>
+
+00:07:12.550 --> 00:07:12.560 align:start position:0%
+characters and now what we're actually
+ 
+
+00:07:12.560 --> 00:07:15.430 align:start position:0%
+characters and now what we're actually
+going<00:07:12.639><c> to</c><00:07:12.720><c> do</c><00:07:13.280><c> for</c><00:07:13.440><c> the</c><00:07:13.759><c> only</c><00:07:14.240><c> time</c><00:07:14.880><c> we</c><00:07:15.120><c> are</c>
+
+00:07:15.430 --> 00:07:15.440 align:start position:0%
+going to do for the only time we are
+ 
+
+00:07:15.440 --> 00:07:17.270 align:start position:0%
+going to do for the only time we are
+actually<00:07:15.840><c> going</c><00:07:16.000><c> to</c><00:07:16.160><c> iterate</c><00:07:16.560><c> through</c><00:07:16.960><c> both</c>
+
+00:07:17.270 --> 00:07:17.280 align:start position:0%
+actually going to iterate through both
+ 
+
+00:07:17.280 --> 00:07:19.350 align:start position:0%
+actually going to iterate through both
+of<00:07:17.360><c> these</c><00:07:17.599><c> hash</c><00:07:17.919><c> maps</c><00:07:18.240><c> comparing</c><00:07:19.039><c> each</c>
+
+00:07:19.350 --> 00:07:19.360 align:start position:0%
+of these hash maps comparing each
+ 
+
+00:07:19.360 --> 00:07:21.189 align:start position:0%
+of these hash maps comparing each
+character<00:07:20.000><c> we</c><00:07:20.160><c> actually</c><00:07:20.400><c> do</c><00:07:20.560><c> have</c><00:07:20.720><c> to</c><00:07:20.800><c> do</c><00:07:20.960><c> that</c>
+
+00:07:21.189 --> 00:07:21.199 align:start position:0%
+character we actually do have to do that
+ 
+
+00:07:21.199 --> 00:07:23.670 align:start position:0%
+character we actually do have to do that
+at<00:07:21.280><c> least</c><00:07:21.599><c> one</c><00:07:21.840><c> time</c><00:07:22.080><c> but</c><00:07:22.240><c> it's</c><00:07:22.479><c> a</c><00:07:22.560><c> single</c><00:07:23.039><c> 26</c>
+
+00:07:23.670 --> 00:07:23.680 align:start position:0%
+at least one time but it's a single 26
+ 
+
+00:07:23.680 --> 00:07:25.990 align:start position:0%
+at least one time but it's a single 26
+operation<00:07:24.400><c> so</c><00:07:25.039><c> and</c><00:07:25.120><c> then</c><00:07:25.360><c> after</c><00:07:25.599><c> that</c><00:07:25.759><c> we'll</c>
+
+00:07:25.990 --> 00:07:26.000 align:start position:0%
+operation so and then after that we'll
+ 
+
+00:07:26.000 --> 00:07:27.430 align:start position:0%
+operation so and then after that we'll
+only<00:07:26.160><c> have</c><00:07:26.319><c> to</c><00:07:26.479><c> just</c><00:07:26.639><c> iterate</c><00:07:27.039><c> through</c><00:07:27.199><c> this</c>
+
+00:07:27.430 --> 00:07:27.440 align:start position:0%
+only have to just iterate through this
+ 
+
+00:07:27.440 --> 00:07:29.029 align:start position:0%
+only have to just iterate through this
+string<00:07:27.680><c> so</c><00:07:27.919><c> the</c><00:07:28.080><c> overall</c><00:07:28.400><c> time</c><00:07:28.560><c> complexity</c><00:07:28.960><c> is</c>
+
+00:07:29.029 --> 00:07:29.039 align:start position:0%
+string so the overall time complexity is
+ 
+
+00:07:29.039 --> 00:07:31.110 align:start position:0%
+string so the overall time complexity is
+going<00:07:29.120><c> to</c><00:07:29.199><c> be</c><00:07:29.440><c> n</c><00:07:29.680><c> plus</c><00:07:30.000><c> 26</c><00:07:30.479><c> which</c><00:07:30.639><c> we</c><00:07:30.800><c> know</c><00:07:31.039><c> is</c>
+
+00:07:31.110 --> 00:07:31.120 align:start position:0%
+going to be n plus 26 which we know is
+ 
+
+00:07:31.120 --> 00:07:33.589 align:start position:0%
+going to be n plus 26 which we know is
+going<00:07:31.199><c> to</c><00:07:31.280><c> be</c><00:07:31.440><c> equal</c><00:07:31.759><c> to</c><00:07:31.919><c> big</c><00:07:32.240><c> o</c><00:07:32.319><c> of</c><00:07:32.560><c> n</c><00:07:33.039><c> uh</c><00:07:33.360><c> it's</c>
+
+00:07:33.589 --> 00:07:33.599 align:start position:0%
+going to be equal to big o of n uh it's
+ 
+
+00:07:33.599 --> 00:07:35.670 align:start position:0%
+going to be equal to big o of n uh it's
+it's<00:07:33.840><c> definitely</c><00:07:34.319><c> better</c><00:07:34.639><c> than</c><00:07:35.280><c> if</c><00:07:35.360><c> we</c><00:07:35.520><c> were</c>
+
+00:07:35.670 --> 00:07:35.680 align:start position:0%
+it's definitely better than if we were
+ 
+
+00:07:35.680 --> 00:07:38.550 align:start position:0%
+it's definitely better than if we were
+just<00:07:35.840><c> doing</c><00:07:36.160><c> 26</c><00:07:37.039><c> times</c><00:07:37.599><c> n</c><00:07:38.000><c> okay</c><00:07:38.240><c> so</c><00:07:38.400><c> we're</c>
+
+00:07:38.550 --> 00:07:38.560 align:start position:0%
+just doing 26 times n okay so we're
+ 
+
+00:07:38.560 --> 00:07:40.390 align:start position:0%
+just doing 26 times n okay so we're
+gonna<00:07:38.720><c> look</c><00:07:38.880><c> at</c><00:07:39.039><c> every</c><00:07:39.280><c> character</c><00:07:39.759><c> a</c><00:07:40.240><c> they</c>
+
+00:07:40.390 --> 00:07:40.400 align:start position:0%
+gonna look at every character a they
+ 
+
+00:07:40.400 --> 00:07:43.350 align:start position:0%
+gonna look at every character a they
+both<00:07:40.720><c> have</c><00:07:40.880><c> one</c><00:07:41.199><c> a</c><00:07:41.680><c> they</c><00:07:41.840><c> both</c><00:07:42.080><c> have</c><00:07:42.319><c> one</c><00:07:42.639><c> b</c>
+
+00:07:43.350 --> 00:07:43.360 align:start position:0%
+both have one a they both have one b
+ 
+
+00:07:43.360 --> 00:07:45.749 align:start position:0%
+both have one a they both have one b
+s<00:07:43.599><c> one</c><00:07:44.000><c> has</c><00:07:44.319><c> a</c><00:07:44.479><c> single</c><00:07:44.960><c> c</c>
+
+00:07:45.749 --> 00:07:45.759 align:start position:0%
+s one has a single c
+ 
+
+00:07:45.759 --> 00:07:49.110 align:start position:0%
+s one has a single c
+but<00:07:46.240><c> s</c><00:07:46.639><c> two</c><00:07:47.120><c> does</c><00:07:47.360><c> not</c><00:07:47.599><c> have</c><00:07:47.919><c> any</c><00:07:48.319><c> c's</c><00:07:48.879><c> so</c>
+
+00:07:49.110 --> 00:07:49.120 align:start position:0%
+but s two does not have any c's so
+ 
+
+00:07:49.120 --> 00:07:51.670 align:start position:0%
+but s two does not have any c's so
+therefore<00:07:49.840><c> they</c><00:07:50.000><c> have</c><00:07:50.240><c> two</c><00:07:50.479><c> matches</c><00:07:50.960><c> a</c><00:07:51.199><c> and</c><00:07:51.360><c> b</c>
+
+00:07:51.670 --> 00:07:51.680 align:start position:0%
+therefore they have two matches a and b
+ 
+
+00:07:51.680 --> 00:07:54.070 align:start position:0%
+therefore they have two matches a and b
+but<00:07:52.000><c> c</c><00:07:52.400><c> is</c><00:07:52.639><c> not</c><00:07:52.879><c> a</c><00:07:52.960><c> match</c><00:07:53.520><c> then</c><00:07:53.759><c> we're</c><00:07:53.919><c> going</c><00:07:54.000><c> to</c>
+
+00:07:54.070 --> 00:07:54.080 align:start position:0%
+but c is not a match then we're going to
+ 
+
+00:07:54.080 --> 00:07:56.710 align:start position:0%
+but c is not a match then we're going to
+look<00:07:54.319><c> at</c><00:07:54.479><c> all</c><00:07:54.639><c> the</c><00:07:54.879><c> other</c><00:07:55.120><c> characters</c><00:07:55.759><c> after</c><00:07:56.240><c> c</c>
+
+00:07:56.710 --> 00:07:56.720 align:start position:0%
+look at all the other characters after c
+ 
+
+00:07:56.720 --> 00:07:58.070 align:start position:0%
+look at all the other characters after c
+and<00:07:56.800><c> we're</c><00:07:56.960><c> actually</c><00:07:57.280><c> going</c><00:07:57.360><c> to</c><00:07:57.440><c> see</c><00:07:57.599><c> that</c><00:07:57.840><c> yes</c>
+
+00:07:58.070 --> 00:07:58.080 align:start position:0%
+and we're actually going to see that yes
+ 
+
+00:07:58.080 --> 00:07:59.670 align:start position:0%
+and we're actually going to see that yes
+there<00:07:58.400><c> is</c><00:07:58.560><c> a</c><00:07:58.720><c> match</c>
+
+00:07:59.670 --> 00:07:59.680 align:start position:0%
+there is a match
+ 
+
+00:07:59.680 --> 00:08:01.830 align:start position:0%
+there is a match
+right<00:07:59.840><c> because</c><00:08:00.080><c> they</c><00:08:00.240><c> both</c><00:08:00.479><c> have</c><00:08:00.879><c> zero</c><00:08:01.360><c> d's</c>
+
+00:08:01.830 --> 00:08:01.840 align:start position:0%
+right because they both have zero d's
+ 
+
+00:08:01.840 --> 00:08:04.230 align:start position:0%
+right because they both have zero d's
+they<00:08:02.080><c> both</c><00:08:02.319><c> have</c><00:08:02.560><c> zero</c><00:08:03.039><c> e's</c><00:08:03.360><c> they</c><00:08:03.520><c> have</c><00:08:03.680><c> zero</c>
+
+00:08:04.230 --> 00:08:04.240 align:start position:0%
+they both have zero e's they have zero
+ 
+
+00:08:04.240 --> 00:08:06.309 align:start position:0%
+they both have zero e's they have zero
+f's<00:08:04.560><c> etc</c><00:08:05.039><c> etc</c><00:08:05.599><c> but</c><00:08:05.759><c> then</c><00:08:05.840><c> we're</c><00:08:06.000><c> going</c><00:08:06.080><c> to</c><00:08:06.160><c> get</c>
+
+00:08:06.309 --> 00:08:06.319 align:start position:0%
+f's etc etc but then we're going to get
+ 
+
+00:08:06.319 --> 00:08:08.230 align:start position:0%
+f's etc etc but then we're going to get
+to<00:08:06.639><c> x</c><00:08:07.280><c> okay</c>
+
+00:08:08.230 --> 00:08:08.240 align:start position:0%
+to x okay
+ 
+
+00:08:08.240 --> 00:08:10.869 align:start position:0%
+to x okay
+this<00:08:08.479><c> has</c><00:08:08.639><c> a</c><00:08:08.800><c> single</c><00:08:09.280><c> x</c><00:08:09.759><c> but</c><00:08:10.000><c> s1</c><00:08:10.400><c> does</c><00:08:10.560><c> not</c><00:08:10.639><c> have</c>
+
+00:08:10.869 --> 00:08:10.879 align:start position:0%
+this has a single x but s1 does not have
+ 
+
+00:08:10.879 --> 00:08:14.070 align:start position:0%
+this has a single x but s1 does not have
+any<00:08:11.120><c> x's</c><00:08:12.080><c> that's</c><00:08:12.479><c> not</c><00:08:12.720><c> a</c><00:08:12.879><c> match</c><00:08:13.360><c> but</c><00:08:13.520><c> they</c><00:08:13.759><c> both</c>
+
+00:08:14.070 --> 00:08:14.080 align:start position:0%
+any x's that's not a match but they both
+ 
+
+00:08:14.080 --> 00:08:18.070 align:start position:0%
+any x's that's not a match but they both
+have<00:08:14.400><c> zero</c><00:08:14.879><c> y's</c><00:08:15.520><c> and</c><00:08:15.759><c> zero</c><00:08:16.240><c> z's</c><00:08:17.199><c> so</c><00:08:17.520><c> all</c><00:08:17.759><c> in</c><00:08:17.919><c> all</c>
+
+00:08:18.070 --> 00:08:18.080 align:start position:0%
+have zero y's and zero z's so all in all
+ 
+
+00:08:18.080 --> 00:08:20.629 align:start position:0%
+have zero y's and zero z's so all in all
+they<00:08:18.400><c> actually</c><00:08:18.879><c> matched</c><00:08:19.520><c> every</c><00:08:20.080><c> single</c>
+
+00:08:20.629 --> 00:08:20.639 align:start position:0%
+they actually matched every single
+ 
+
+00:08:20.639 --> 00:08:24.469 align:start position:0%
+they actually matched every single
+character<00:08:21.280><c> except</c><00:08:22.000><c> for</c><00:08:22.400><c> c</c><00:08:22.960><c> and</c><00:08:23.199><c> except</c><00:08:23.840><c> for</c><00:08:24.160><c> x</c>
+
+00:08:24.469 --> 00:08:24.479 align:start position:0%
+character except for c and except for x
+ 
+
+00:08:24.479 --> 00:08:25.909 align:start position:0%
+character except for c and except for x
+those<00:08:24.720><c> were</c><00:08:24.879><c> the</c><00:08:25.039><c> only</c><00:08:25.199><c> characters</c><00:08:25.599><c> they</c>
+
+00:08:25.909 --> 00:08:25.919 align:start position:0%
+those were the only characters they
+ 
+
+00:08:25.919 --> 00:08:28.869 align:start position:0%
+those were the only characters they
+didn't<00:08:26.319><c> match</c><00:08:26.879><c> so</c><00:08:27.440><c> actually</c><00:08:28.240><c> initially</c><00:08:28.720><c> we</c>
+
+00:08:28.869 --> 00:08:28.879 align:start position:0%
+didn't match so actually initially we
+ 
+
+00:08:28.879 --> 00:08:32.389 align:start position:0%
+didn't match so actually initially we
+have<00:08:29.120><c> 24</c><00:08:30.560><c> matches</c><00:08:31.360><c> next</c><00:08:31.680><c> we're</c><00:08:31.840><c> gonna</c><00:08:32.080><c> look</c>
+
+00:08:32.389 --> 00:08:32.399 align:start position:0%
+have 24 matches next we're gonna look
+ 
+
+00:08:32.399 --> 00:08:33.829 align:start position:0%
+have 24 matches next we're gonna look
+we're<00:08:32.560><c> gonna</c><00:08:32.719><c> take</c><00:08:32.959><c> our</c><00:08:33.120><c> window</c><00:08:33.440><c> which</c><00:08:33.599><c> was</c>
+
+00:08:33.829 --> 00:08:33.839 align:start position:0%
+we're gonna take our window which was
+ 
+
+00:08:33.839 --> 00:08:35.269 align:start position:0%
+we're gonna take our window which was
+like<00:08:34.000><c> this</c><00:08:34.240><c> and</c><00:08:34.399><c> we're</c><00:08:34.479><c> gonna</c><00:08:34.719><c> shift</c><00:08:35.039><c> it</c><00:08:35.120><c> to</c>
+
+00:08:35.269 --> 00:08:35.279 align:start position:0%
+like this and we're gonna shift it to
+ 
+
+00:08:35.279 --> 00:08:37.990 align:start position:0%
+like this and we're gonna shift it to
+the<00:08:35.599><c> right</c><00:08:36.000><c> by</c><00:08:36.240><c> one</c><00:08:36.640><c> when</c><00:08:36.880><c> we</c><00:08:37.039><c> shift</c><00:08:37.440><c> it</c><00:08:37.680><c> we're</c>
+
+00:08:37.990 --> 00:08:38.000 align:start position:0%
+the right by one when we shift it we're
+ 
+
+00:08:38.000 --> 00:08:40.949 align:start position:0%
+the right by one when we shift it we're
+obviously<00:08:38.479><c> removing</c><00:08:39.279><c> a</c><00:08:39.440><c> character</c><00:08:40.240><c> from</c><00:08:40.640><c> the</c>
+
+00:08:40.949 --> 00:08:40.959 align:start position:0%
+obviously removing a character from the
+ 
+
+00:08:40.959 --> 00:08:44.389 align:start position:0%
+obviously removing a character from the
+s2<00:08:41.599><c> window</c><00:08:41.919><c> we're</c><00:08:42.080><c> removing</c><00:08:42.800><c> a</c><00:08:42.959><c> b</c><00:08:43.440><c> now</c><00:08:43.839><c> as</c><00:08:44.080><c> we</c>
+
+00:08:44.389 --> 00:08:44.399 align:start position:0%
+s2 window we're removing a b now as we
+ 
+
+00:08:44.399 --> 00:08:47.030 align:start position:0%
+s2 window we're removing a b now as we
+make<00:08:45.040><c> changes</c><00:08:45.600><c> to</c><00:08:45.760><c> the</c><00:08:46.000><c> count</c><00:08:46.560><c> we</c><00:08:46.720><c> want</c><00:08:46.880><c> to</c>
+
+00:08:47.030 --> 00:08:47.040 align:start position:0%
+make changes to the count we want to
+ 
+
+00:08:47.040 --> 00:08:49.030 align:start position:0%
+make changes to the count we want to
+know<00:08:47.279><c> does</c><00:08:47.440><c> it</c><00:08:47.600><c> affect</c><00:08:48.160><c> the</c><00:08:48.399><c> number</c><00:08:48.800><c> of</c>
+
+00:08:49.030 --> 00:08:49.040 align:start position:0%
+know does it affect the number of
+ 
+
+00:08:49.040 --> 00:08:52.470 align:start position:0%
+know does it affect the number of
+matches<00:08:49.760><c> so</c><00:08:50.240><c> here</c><00:08:50.560><c> we</c><00:08:50.720><c> have</c><00:08:51.440><c> one</c><00:08:52.080><c> right</c><00:08:52.240><c> which</c>
+
+00:08:52.470 --> 00:08:52.480 align:start position:0%
+matches so here we have one right which
+ 
+
+00:08:52.480 --> 00:08:54.230 align:start position:0%
+matches so here we have one right which
+was<00:08:52.720><c> equal</c><00:08:53.040><c> to</c><00:08:53.200><c> what</c><00:08:53.360><c> it</c><00:08:53.440><c> was</c><00:08:53.600><c> supposed</c><00:08:54.000><c> to</c><00:08:54.080><c> be</c>
+
+00:08:54.230 --> 00:08:54.240 align:start position:0%
+was equal to what it was supposed to be
+ 
+
+00:08:54.240 --> 00:08:57.110 align:start position:0%
+was equal to what it was supposed to be
+in<00:08:54.399><c> s1</c><00:08:54.880><c> as</c><00:08:54.959><c> well</c><00:08:55.200><c> but</c><00:08:55.440><c> now</c><00:08:55.839><c> we're</c><00:08:56.080><c> now</c><00:08:56.560><c> changing</c>
+
+00:08:57.110 --> 00:08:57.120 align:start position:0%
+in s1 as well but now we're now changing
+ 
+
+00:08:57.120 --> 00:09:00.070 align:start position:0%
+in s1 as well but now we're now changing
+it<00:08:57.279><c> to</c><00:08:57.600><c> a</c><00:08:57.839><c> zero</c><00:08:58.480><c> so</c><00:08:58.720><c> therefore</c><00:08:59.200><c> it's</c><00:08:59.680><c> not</c>
+
+00:09:00.070 --> 00:09:00.080 align:start position:0%
+it to a zero so therefore it's not
+ 
+
+00:09:00.080 --> 00:09:02.310 align:start position:0%
+it to a zero so therefore it's not
+matching<00:09:00.720><c> with</c><00:09:00.959><c> what</c><00:09:01.120><c> it</c><00:09:01.360><c> previously</c><00:09:02.000><c> was</c>
+
+00:09:02.310 --> 00:09:02.320 align:start position:0%
+matching with what it previously was
+ 
+
+00:09:02.320 --> 00:09:04.389 align:start position:0%
+matching with what it previously was
+matching<00:09:02.800><c> with</c><00:09:03.200><c> therefore</c><00:09:03.680><c> our</c><00:09:03.920><c> matches</c>
+
+00:09:04.389 --> 00:09:04.399 align:start position:0%
+matching with therefore our matches
+ 
+
+00:09:04.399 --> 00:09:06.389 align:start position:0%
+matching with therefore our matches
+total<00:09:04.800><c> is</c><00:09:05.040><c> actually</c><00:09:05.360><c> going</c><00:09:05.519><c> to</c><00:09:05.600><c> be</c><00:09:05.839><c> updated</c>
+
+00:09:06.389 --> 00:09:06.399 align:start position:0%
+total is actually going to be updated
+ 
+
+00:09:06.399 --> 00:09:09.670 align:start position:0%
+total is actually going to be updated
+now<00:09:06.959><c> to</c><00:09:07.120><c> be</c><00:09:07.760><c> 23</c><00:09:08.320><c> we're</c><00:09:08.560><c> decrementing</c><00:09:09.279><c> it</c><00:09:09.360><c> by</c>
+
+00:09:09.670 --> 00:09:09.680 align:start position:0%
+now to be 23 we're decrementing it by
+ 
+
+00:09:09.680 --> 00:09:12.710 align:start position:0%
+now to be 23 we're decrementing it by
+one<00:09:10.240><c> okay</c><00:09:10.560><c> but</c><00:09:10.720><c> we</c><00:09:10.880><c> also</c><00:09:11.360><c> added</c><00:09:11.760><c> a</c><00:09:11.920><c> character</c><00:09:12.399><c> a</c>
+
+00:09:12.710 --> 00:09:12.720 align:start position:0%
+one okay but we also added a character a
+ 
+
+00:09:12.720 --> 00:09:14.949 align:start position:0%
+one okay but we also added a character a
+y<00:09:13.200><c> does</c><00:09:13.440><c> this</c><00:09:13.680><c> affect</c><00:09:14.080><c> our</c><00:09:14.240><c> matches</c><00:09:14.640><c> was</c><00:09:14.800><c> this</c>
+
+00:09:14.949 --> 00:09:14.959 align:start position:0%
+y does this affect our matches was this
+ 
+
+00:09:14.959 --> 00:09:16.230 align:start position:0%
+y does this affect our matches was this
+a<00:09:15.040><c> character</c><00:09:15.360><c> we</c><00:09:15.519><c> were</c><00:09:15.680><c> looking</c><00:09:15.839><c> for</c><00:09:16.080><c> well</c>
+
+00:09:16.230 --> 00:09:16.240 align:start position:0%
+a character we were looking for well
+ 
+
+00:09:16.240 --> 00:09:19.350 align:start position:0%
+a character we were looking for well
+let's<00:09:16.560><c> increment</c><00:09:17.040><c> our</c><00:09:17.279><c> i</c><00:09:17.600><c> by</c><00:09:17.839><c> one</c><00:09:18.560><c> and</c><00:09:18.959><c> we</c><00:09:19.200><c> see</c>
+
+00:09:19.350 --> 00:09:19.360 align:start position:0%
+let's increment our i by one and we see
+ 
+
+00:09:19.360 --> 00:09:21.430 align:start position:0%
+let's increment our i by one and we see
+that<00:09:19.600><c> now</c><00:09:19.839><c> it's</c><00:09:20.080><c> one</c><00:09:20.399><c> but</c><00:09:20.560><c> what</c><00:09:20.800><c> was</c><00:09:20.959><c> the</c><00:09:21.120><c> y</c>
+
+00:09:21.430 --> 00:09:21.440 align:start position:0%
+that now it's one but what was the y
+ 
+
+00:09:21.440 --> 00:09:25.190 align:start position:0%
+that now it's one but what was the y
+value<00:09:22.000><c> in</c><00:09:22.399><c> s1's</c><00:09:23.120><c> count</c><00:09:23.440><c> it</c><00:09:23.680><c> was</c><00:09:24.000><c> equal</c><00:09:24.480><c> to</c><00:09:24.640><c> 0</c><00:09:25.040><c> so</c>
+
+00:09:25.190 --> 00:09:25.200 align:start position:0%
+value in s1's count it was equal to 0 so
+ 
+
+00:09:25.200 --> 00:09:28.470 align:start position:0%
+value in s1's count it was equal to 0 so
+now<00:09:25.440><c> we</c><00:09:25.600><c> actually</c><00:09:26.000><c> created</c><00:09:26.640><c> another</c><00:09:27.519><c> mismatch</c>
+
+00:09:28.470 --> 00:09:28.480 align:start position:0%
+now we actually created another mismatch
+ 
+
+00:09:28.480 --> 00:09:30.870 align:start position:0%
+now we actually created another mismatch
+so<00:09:28.800><c> actually</c><00:09:29.519><c> the</c><00:09:29.760><c> total</c><00:09:30.000><c> number</c><00:09:30.240><c> of</c><00:09:30.320><c> matches</c>
+
+00:09:30.870 --> 00:09:30.880 align:start position:0%
+so actually the total number of matches
+ 
+
+00:09:30.880 --> 00:09:34.710 align:start position:0%
+so actually the total number of matches
+is<00:09:31.040><c> gonna</c><00:09:31.440><c> be</c><00:09:32.080><c> 22</c><00:09:33.120><c> now</c><00:09:33.760><c> and</c><00:09:34.240><c> now</c><00:09:34.480><c> we're</c><00:09:34.640><c> going</c>
+
+00:09:34.710 --> 00:09:34.720 align:start position:0%
+is gonna be 22 now and now we're going
+ 
+
+00:09:34.720 --> 00:09:36.949 align:start position:0%
+is gonna be 22 now and now we're going
+to<00:09:34.880><c> actually</c><00:09:35.600><c> shift</c><00:09:35.920><c> one</c><00:09:36.160><c> more</c><00:09:36.320><c> time</c><00:09:36.560><c> so</c><00:09:36.720><c> this</c>
+
+00:09:36.949 --> 00:09:36.959 align:start position:0%
+to actually shift one more time so this
+ 
+
+00:09:36.959 --> 00:09:39.030 align:start position:0%
+to actually shift one more time so this
+a<00:09:37.279><c> is</c><00:09:37.360><c> no</c><00:09:37.519><c> longer</c><00:09:37.839><c> gonna</c><00:09:38.080><c> be</c><00:09:38.240><c> in</c><00:09:38.399><c> our</c><00:09:38.480><c> window</c>
+
+00:09:39.030 --> 00:09:39.040 align:start position:0%
+a is no longer gonna be in our window
+ 
+
+00:09:39.040 --> 00:09:41.829 align:start position:0%
+a is no longer gonna be in our window
+now<00:09:39.440><c> we're</c><00:09:39.600><c> gonna</c><00:09:39.760><c> have</c><00:09:40.000><c> x</c><00:09:40.240><c> y</c><00:09:40.560><c> z</c><00:09:40.880><c> in</c><00:09:41.040><c> our</c><00:09:41.200><c> window</c>
+
+00:09:41.829 --> 00:09:41.839 align:start position:0%
+now we're gonna have x y z in our window
+ 
+
+00:09:41.839 --> 00:09:44.230 align:start position:0%
+now we're gonna have x y z in our window
+so<00:09:42.000><c> we</c><00:09:42.240><c> remove</c><00:09:42.720><c> the</c><00:09:42.880><c> a</c><00:09:43.279><c> a</c><00:09:43.519><c> count</c><00:09:43.760><c> is</c><00:09:43.920><c> now</c><00:09:44.080><c> gonna</c>
+
+00:09:44.230 --> 00:09:44.240 align:start position:0%
+so we remove the a a count is now gonna
+ 
+
+00:09:44.240 --> 00:09:46.230 align:start position:0%
+so we remove the a a count is now gonna
+be<00:09:44.320><c> set</c><00:09:44.560><c> to</c><00:09:44.720><c> zero</c><00:09:45.040><c> we</c><00:09:45.200><c> created</c><00:09:45.680><c> another</c>
+
+00:09:46.230 --> 00:09:46.240 align:start position:0%
+be set to zero we created another
+ 
+
+00:09:46.240 --> 00:09:48.070 align:start position:0%
+be set to zero we created another
+mismatch<00:09:46.800><c> so</c><00:09:47.040><c> our</c><00:09:47.200><c> matches</c><00:09:47.600><c> count</c><00:09:47.839><c> is</c><00:09:47.920><c> now</c>
+
+00:09:48.070 --> 00:09:48.080 align:start position:0%
+mismatch so our matches count is now
+ 
+
+00:09:48.080 --> 00:09:51.990 align:start position:0%
+mismatch so our matches count is now
+gonna<00:09:48.240><c> be</c><00:09:48.399><c> 21</c><00:09:49.279><c> but</c><00:09:49.440><c> we</c><00:09:49.680><c> added</c><00:09:50.160><c> a</c><00:09:50.399><c> z</c><00:09:51.040><c> so</c>
+
+00:09:51.990 --> 00:09:52.000 align:start position:0%
+gonna be 21 but we added a z so
+ 
+
+00:09:52.000 --> 00:09:54.710 align:start position:0%
+gonna be 21 but we added a z so
+our<00:09:52.160><c> z</c><00:09:52.399><c> count</c><00:09:52.720><c> is</c><00:09:52.880><c> one</c><00:09:53.200><c> but</c><00:09:53.360><c> the</c><00:09:53.440><c> z</c><00:09:53.680><c> count</c><00:09:53.920><c> in</c><00:09:54.080><c> s1</c>
+
+00:09:54.710 --> 00:09:54.720 align:start position:0%
+our z count is one but the z count in s1
+ 
+
+00:09:54.720 --> 00:09:58.070 align:start position:0%
+our z count is one but the z count in s1
+is<00:09:54.959><c> zero</c><00:09:55.760><c> therefore</c><00:09:56.640><c> we</c><00:09:56.880><c> created</c><00:09:57.360><c> another</c>
+
+00:09:58.070 --> 00:09:58.080 align:start position:0%
+is zero therefore we created another
+ 
+
+00:09:58.080 --> 00:10:01.190 align:start position:0%
+is zero therefore we created another
+mismatch<00:09:58.640><c> so</c><00:09:58.959><c> now</c><00:09:59.279><c> our</c><00:09:59.920><c> total</c><00:10:00.800><c> number</c><00:10:01.040><c> of</c>
+
+00:10:01.190 --> 00:10:01.200 align:start position:0%
+mismatch so now our total number of
+ 
+
+00:10:01.200 --> 00:10:04.150 align:start position:0%
+mismatch so now our total number of
+matches<00:10:01.680><c> is</c><00:10:01.920><c> actually</c><00:10:02.240><c> going</c><00:10:02.399><c> to</c><00:10:02.480><c> be</c><00:10:03.120><c> 20.</c><00:10:04.000><c> now</c>
+
+00:10:04.150 --> 00:10:04.160 align:start position:0%
+matches is actually going to be 20. now
+ 
+
+00:10:04.160 --> 00:10:05.670 align:start position:0%
+matches is actually going to be 20. now
+let's<00:10:04.399><c> shift</c><00:10:04.640><c> our</c><00:10:04.800><c> window</c><00:10:05.040><c> one</c><00:10:05.200><c> more</c><00:10:05.440><c> time</c>
+
+00:10:05.670 --> 00:10:05.680 align:start position:0%
+let's shift our window one more time
+ 
+
+00:10:05.680 --> 00:10:08.550 align:start position:0%
+let's shift our window one more time
+let's<00:10:05.920><c> chop</c><00:10:06.160><c> off</c><00:10:06.399><c> this</c><00:10:06.720><c> x</c><00:10:07.279><c> so</c><00:10:07.600><c> x</c><00:10:07.920><c> count</c><00:10:08.240><c> is</c><00:10:08.320><c> now</c>
+
+00:10:08.550 --> 00:10:08.560 align:start position:0%
+let's chop off this x so x count is now
+ 
+
+00:10:08.560 --> 00:10:11.269 align:start position:0%
+let's chop off this x so x count is now
+going<00:10:08.640><c> to</c><00:10:08.720><c> be</c><00:10:09.200><c> set</c><00:10:09.519><c> to</c><00:10:09.839><c> zero</c><00:10:10.399><c> so</c><00:10:10.560><c> let's</c><00:10:10.880><c> update</c>
+
+00:10:11.269 --> 00:10:11.279 align:start position:0%
+going to be set to zero so let's update
+ 
+
+00:10:11.279 --> 00:10:14.150 align:start position:0%
+going to be set to zero so let's update
+that<00:10:11.839><c> x</c><00:10:12.079><c> count</c><00:10:12.399><c> is</c><00:10:12.560><c> now</c><00:10:12.800><c> set</c><00:10:13.040><c> to</c><00:10:13.200><c> zero</c><00:10:13.680><c> which</c><00:10:13.920><c> is</c>
+
+00:10:14.150 --> 00:10:14.160 align:start position:0%
+that x count is now set to zero which is
+ 
+
+00:10:14.160 --> 00:10:17.110 align:start position:0%
+that x count is now set to zero which is
+good<00:10:14.399><c> for</c><00:10:14.640><c> us</c><00:10:14.800><c> because</c><00:10:15.200><c> s1's</c><00:10:16.320><c> x</c><00:10:16.560><c> count</c><00:10:16.880><c> was</c>
+
+00:10:17.110 --> 00:10:17.120 align:start position:0%
+good for us because s1's x count was
+ 
+
+00:10:17.120 --> 00:10:19.190 align:start position:0%
+good for us because s1's x count was
+also<00:10:17.519><c> zero</c><00:10:17.839><c> so</c><00:10:18.079><c> therefore</c><00:10:18.480><c> we</c><00:10:18.560><c> can</c><00:10:18.720><c> actually</c>
+
+00:10:19.190 --> 00:10:19.200 align:start position:0%
+also zero so therefore we can actually
+ 
+
+00:10:19.200 --> 00:10:21.110 align:start position:0%
+also zero so therefore we can actually
+increment<00:10:19.760><c> our</c><00:10:19.920><c> number</c><00:10:20.160><c> of</c><00:10:20.320><c> matches</c><00:10:20.800><c> now</c>
+
+00:10:21.110 --> 00:10:21.120 align:start position:0%
+increment our number of matches now
+ 
+
+00:10:21.120 --> 00:10:23.910 align:start position:0%
+increment our number of matches now
+right<00:10:21.519><c> so</c><00:10:21.760><c> let's</c><00:10:22.399><c> uh</c><00:10:22.880><c> set</c><00:10:23.120><c> matches</c><00:10:23.519><c> now</c><00:10:23.680><c> equal</c>
+
+00:10:23.910 --> 00:10:23.920 align:start position:0%
+right so let's uh set matches now equal
+ 
+
+00:10:23.920 --> 00:10:26.389 align:start position:0%
+right so let's uh set matches now equal
+to<00:10:24.079><c> 21.</c><00:10:24.800><c> we</c><00:10:24.959><c> also</c><00:10:25.360><c> added</c><00:10:25.680><c> a</c><00:10:25.760><c> character</c><00:10:26.160><c> we</c>
+
+00:10:26.389 --> 00:10:26.399 align:start position:0%
+to 21. we also added a character we
+ 
+
+00:10:26.399 --> 00:10:28.630 align:start position:0%
+to 21. we also added a character we
+added<00:10:26.720><c> this</c><00:10:26.959><c> a</c><00:10:27.279><c> character</c><00:10:27.680><c> at</c><00:10:27.760><c> the</c><00:10:27.920><c> top</c><00:10:28.399><c> so</c>
+
+00:10:28.630 --> 00:10:28.640 align:start position:0%
+added this a character at the top so
+ 
+
+00:10:28.640 --> 00:10:30.870 align:start position:0%
+added this a character at the top so
+let's<00:10:28.959><c> actually</c><00:10:29.680><c> increment</c><00:10:30.160><c> the</c><00:10:30.320><c> number</c><00:10:30.640><c> of</c>
+
+00:10:30.870 --> 00:10:30.880 align:start position:0%
+let's actually increment the number of
+ 
+
+00:10:30.880 --> 00:10:33.590 align:start position:0%
+let's actually increment the number of
+a's<00:10:31.519><c> we</c><00:10:31.680><c> went</c><00:10:31.920><c> from</c><00:10:32.160><c> having</c><00:10:32.480><c> zero</c><00:10:32.880><c> a's</c><00:10:33.200><c> to</c><00:10:33.360><c> now</c>
+
+00:10:33.590 --> 00:10:33.600 align:start position:0%
+a's we went from having zero a's to now
+ 
+
+00:10:33.600 --> 00:10:35.509 align:start position:0%
+a's we went from having zero a's to now
+having<00:10:34.079><c> one</c><00:10:34.320><c> a</c><00:10:34.800><c> and</c><00:10:34.880><c> that's</c><00:10:35.120><c> what</c><00:10:35.279><c> we</c><00:10:35.360><c> were</c>
+
+00:10:35.509 --> 00:10:35.519 align:start position:0%
+having one a and that's what we were
+ 
+
+00:10:35.519 --> 00:10:37.750 align:start position:0%
+having one a and that's what we were
+looking<00:10:35.839><c> for</c><00:10:36.079><c> right</c><00:10:36.320><c> because</c><00:10:36.640><c> one</c><00:10:36.959><c> a</c><00:10:37.200><c> is</c><00:10:37.440><c> also</c>
+
+00:10:37.750 --> 00:10:37.760 align:start position:0%
+looking for right because one a is also
+ 
+
+00:10:37.760 --> 00:10:39.829 align:start position:0%
+looking for right because one a is also
+found<00:10:38.000><c> in</c><00:10:38.240><c> s1</c><00:10:38.720><c> count</c><00:10:39.040><c> so</c><00:10:39.279><c> now</c><00:10:39.519><c> we</c><00:10:39.680><c> can</c>
+
+00:10:39.829 --> 00:10:39.839 align:start position:0%
+found in s1 count so now we can
+ 
+
+00:10:39.839 --> 00:10:42.790 align:start position:0%
+found in s1 count so now we can
+increment<00:10:40.320><c> our</c><00:10:40.480><c> number</c><00:10:40.720><c> of</c><00:10:40.800><c> matches</c><00:10:41.440><c> from</c><00:10:42.000><c> 21</c>
+
+00:10:42.790 --> 00:10:42.800 align:start position:0%
+increment our number of matches from 21
+ 
+
+00:10:42.800 --> 00:10:45.269 align:start position:0%
+increment our number of matches from 21
+to<00:10:42.959><c> b22</c><00:10:43.680><c> we're</c><00:10:43.839><c> getting</c><00:10:44.160><c> closer</c><00:10:44.560><c> to</c><00:10:44.720><c> our</c><00:10:44.880><c> goal</c>
+
+00:10:45.269 --> 00:10:45.279 align:start position:0%
+to b22 we're getting closer to our goal
+ 
+
+00:10:45.279 --> 00:10:47.190 align:start position:0%
+to b22 we're getting closer to our goal
+and<00:10:45.440><c> i'm</c><00:10:45.600><c> gonna</c><00:10:45.760><c> kind</c><00:10:45.920><c> of</c><00:10:46.079><c> fast</c><00:10:46.399><c> forward</c><00:10:47.040><c> the</c>
+
+00:10:47.190 --> 00:10:47.200 align:start position:0%
+and i'm gonna kind of fast forward the
+ 
+
+00:10:47.200 --> 00:10:49.430 align:start position:0%
+and i'm gonna kind of fast forward the
+remaining<00:10:47.760><c> two</c><00:10:48.000><c> spots</c><00:10:48.720><c> clearly</c><00:10:49.120><c> we're</c><00:10:49.279><c> gonna</c>
+
+00:10:49.430 --> 00:10:49.440 align:start position:0%
+remaining two spots clearly we're gonna
+ 
+
+00:10:49.440 --> 00:10:51.269 align:start position:0%
+remaining two spots clearly we're gonna
+see<00:10:49.680><c> that</c><00:10:49.839><c> the</c><00:10:50.000><c> y</c><00:10:50.320><c> gets</c><00:10:50.560><c> chopped</c><00:10:50.880><c> off</c><00:10:51.040><c> and</c><00:10:51.120><c> then</c>
+
+00:10:51.269 --> 00:10:51.279 align:start position:0%
+see that the y gets chopped off and then
+ 
+
+00:10:51.279 --> 00:10:53.350 align:start position:0%
+see that the y gets chopped off and then
+we're<00:10:51.440><c> gonna</c><00:10:51.600><c> be</c><00:10:51.760><c> two</c><00:10:52.480><c> we're</c><00:10:52.640><c> gonna</c><00:10:52.800><c> add</c><00:10:52.959><c> the</c><00:10:53.120><c> b</c>
+
+00:10:53.350 --> 00:10:53.360 align:start position:0%
+we're gonna be two we're gonna add the b
+ 
+
+00:10:53.360 --> 00:10:54.790 align:start position:0%
+we're gonna be two we're gonna add the b
+character<00:10:53.760><c> which</c><00:10:53.920><c> is</c><00:10:54.000><c> also</c><00:10:54.240><c> what</c><00:10:54.399><c> we</c><00:10:54.560><c> wanted</c>
+
+00:10:54.790 --> 00:10:54.800 align:start position:0%
+character which is also what we wanted
+ 
+
+00:10:54.800 --> 00:10:57.590 align:start position:0%
+character which is also what we wanted
+to<00:10:54.959><c> do</c><00:10:55.200><c> right</c><00:10:55.360><c> we</c><00:10:55.519><c> have</c><00:10:55.760><c> one</c><00:10:56.079><c> b</c><00:10:56.560><c> and</c><00:10:56.800><c> we</c><00:10:56.959><c> have</c>
+
+00:10:57.590 --> 00:10:57.600 align:start position:0%
+to do right we have one b and we have
+ 
+
+00:10:57.600 --> 00:11:00.949 align:start position:0%
+to do right we have one b and we have
+zero<00:10:58.079><c> y's</c><00:10:58.880><c> so</c><00:10:59.040><c> that</c><00:10:59.279><c> brings</c><00:10:59.519><c> us</c><00:10:59.680><c> to</c><00:10:59.920><c> be</c><00:11:00.240><c> 24</c>
+
+00:11:00.949 --> 00:11:00.959 align:start position:0%
+zero y's so that brings us to be 24
+ 
+
+00:11:00.959 --> 00:11:02.470 align:start position:0%
+zero y's so that brings us to be 24
+matches<00:11:01.440><c> and</c><00:11:01.519><c> then</c><00:11:01.680><c> we're</c><00:11:01.760><c> gonna</c><00:11:02.000><c> shift</c><00:11:02.240><c> one</c>
+
+00:11:02.470 --> 00:11:02.480 align:start position:0%
+matches and then we're gonna shift one
+ 
+
+00:11:02.480 --> 00:11:05.269 align:start position:0%
+matches and then we're gonna shift one
+more<00:11:02.720><c> time</c><00:11:03.360><c> uh</c><00:11:03.680><c> to</c><00:11:03.839><c> be</c><00:11:04.160><c> at</c><00:11:04.399><c> this</c><00:11:04.640><c> last</c><00:11:05.040><c> window</c>
+
+00:11:05.269 --> 00:11:05.279 align:start position:0%
+more time uh to be at this last window
+ 
+
+00:11:05.279 --> 00:11:07.350 align:start position:0%
+more time uh to be at this last window
+we're<00:11:05.440><c> gonna</c><00:11:05.600><c> get</c><00:11:05.839><c> rid</c><00:11:06.000><c> of</c><00:11:06.079><c> the</c><00:11:06.320><c> z</c><00:11:06.640><c> that</c><00:11:06.720><c> we</c>
+
+00:11:07.350 --> 00:11:07.360 align:start position:0%
+we're gonna get rid of the z that we
+ 
+
+00:11:07.360 --> 00:11:08.949 align:start position:0%
+we're gonna get rid of the z that we
+that<00:11:07.519><c> we</c><00:11:07.600><c> didn't</c><00:11:07.839><c> really</c><00:11:08.079><c> need</c><00:11:08.320><c> so</c><00:11:08.480><c> now</c><00:11:08.800><c> our</c>
+
+00:11:08.949 --> 00:11:08.959 align:start position:0%
+that we didn't really need so now our
+ 
+
+00:11:08.959 --> 00:11:10.790 align:start position:0%
+that we didn't really need so now our
+number<00:11:09.120><c> of</c><00:11:09.279><c> z's</c><00:11:09.600><c> is</c><00:11:09.760><c> zero</c><00:11:10.079><c> that's</c><00:11:10.399><c> good</c><00:11:10.560><c> that's</c>
+
+00:11:10.790 --> 00:11:10.800 align:start position:0%
+number of z's is zero that's good that's
+ 
+
+00:11:10.800 --> 00:11:13.110 align:start position:0%
+number of z's is zero that's good that's
+exactly<00:11:11.200><c> what</c><00:11:11.360><c> we</c><00:11:11.519><c> want</c><00:11:11.920><c> and</c><00:11:12.079><c> we</c><00:11:12.320><c> added</c><00:11:12.640><c> a</c><00:11:12.800><c> c</c>
+
+00:11:13.110 --> 00:11:13.120 align:start position:0%
+exactly what we want and we added a c
+ 
+
+00:11:13.120 --> 00:11:16.470 align:start position:0%
+exactly what we want and we added a c
+character<00:11:13.680><c> so</c><00:11:14.000><c> now</c><00:11:14.399><c> we</c><00:11:14.560><c> have</c><00:11:14.880><c> one</c><00:11:15.200><c> c</c><00:11:15.760><c> now</c><00:11:16.240><c> we</c>
+
+00:11:16.470 --> 00:11:16.480 align:start position:0%
+character so now we have one c now we
+ 
+
+00:11:16.480 --> 00:11:18.550 align:start position:0%
+character so now we have one c now we
+have<00:11:17.040><c> the</c><00:11:17.200><c> exact</c><00:11:17.600><c> number</c><00:11:17.839><c> of</c><00:11:17.920><c> matches</c><00:11:18.320><c> we</c><00:11:18.399><c> were</c>
+
+00:11:18.550 --> 00:11:18.560 align:start position:0%
+have the exact number of matches we were
+ 
+
+00:11:18.560 --> 00:11:19.990 align:start position:0%
+have the exact number of matches we were
+looking<00:11:18.800><c> for</c><00:11:18.959><c> that</c><00:11:19.120><c> our</c><00:11:19.279><c> matches</c><00:11:19.600><c> count</c><00:11:19.920><c> is</c>
+
+00:11:19.990 --> 00:11:20.000 align:start position:0%
+looking for that our matches count is
+ 
+
+00:11:20.000 --> 00:11:22.870 align:start position:0%
+looking for that our matches count is
+going<00:11:20.079><c> to</c><00:11:20.160><c> be</c><00:11:20.320><c> 26</c><00:11:20.959><c> whenever</c><00:11:21.519><c> we</c><00:11:21.680><c> get</c><00:11:21.920><c> to</c><00:11:22.079><c> 26</c>
+
+00:11:22.870 --> 00:11:22.880 align:start position:0%
+going to be 26 whenever we get to 26
+ 
+
+00:11:22.880 --> 00:11:24.790 align:start position:0%
+going to be 26 whenever we get to 26
+matches<00:11:23.279><c> that's</c><00:11:23.519><c> our</c><00:11:23.680><c> magic</c><00:11:24.079><c> number</c><00:11:24.560><c> we</c><00:11:24.720><c> are</c>
+
+00:11:24.790 --> 00:11:24.800 align:start position:0%
+matches that's our magic number we are
+ 
+
+00:11:24.800 --> 00:11:26.550 align:start position:0%
+matches that's our magic number we are
+going<00:11:24.959><c> to</c><00:11:25.040><c> go</c><00:11:25.200><c> ahead</c><00:11:25.360><c> and</c><00:11:25.519><c> stop</c><00:11:25.839><c> the</c><00:11:26.079><c> algorithm</c>
+
+00:11:26.550 --> 00:11:26.560 align:start position:0%
+going to go ahead and stop the algorithm
+ 
+
+00:11:26.560 --> 00:11:27.910 align:start position:0%
+going to go ahead and stop the algorithm
+and<00:11:26.640><c> return</c><00:11:27.120><c> true</c><00:11:27.279><c> because</c><00:11:27.600><c> all</c><00:11:27.680><c> we're</c>
+
+00:11:27.910 --> 00:11:27.920 align:start position:0%
+and return true because all we're
+ 
+
+00:11:27.920 --> 00:11:29.990 align:start position:0%
+and return true because all we're
+looking<00:11:28.160><c> for</c><00:11:28.480><c> is</c><00:11:28.640><c> does</c><00:11:28.880><c> there</c><00:11:29.040><c> exist</c><00:11:29.440><c> a</c><00:11:29.600><c> single</c>
+
+00:11:29.990 --> 00:11:30.000 align:start position:0%
+looking for is does there exist a single
+ 
+
+00:11:30.000 --> 00:11:32.790 align:start position:0%
+looking for is does there exist a single
+permutation<00:11:30.800><c> of</c><00:11:30.880><c> this</c><00:11:31.360><c> in</c><00:11:31.600><c> s2</c><00:11:32.240><c> or</c><00:11:32.480><c> in</c><00:11:32.640><c> other</c>
+
+00:11:32.790 --> 00:11:32.800 align:start position:0%
+permutation of this in s2 or in other
+ 
+
+00:11:32.800 --> 00:11:35.190 align:start position:0%
+permutation of this in s2 or in other
+words<00:11:33.040><c> does</c><00:11:33.200><c> there</c><00:11:33.440><c> exist</c><00:11:33.760><c> an</c><00:11:33.920><c> anagram</c><00:11:34.480><c> of</c><00:11:34.640><c> s1</c>
+
+00:11:35.190 --> 00:11:35.200 align:start position:0%
+words does there exist an anagram of s1
+ 
+
+00:11:35.200 --> 00:11:37.030 align:start position:0%
+words does there exist an anagram of s1
+and<00:11:35.279><c> there</c><00:11:35.519><c> does</c><00:11:35.920><c> we</c><00:11:36.160><c> found</c><00:11:36.399><c> it</c><00:11:36.480><c> we</c><00:11:36.640><c> return</c>
+
+00:11:37.030 --> 00:11:37.040 align:start position:0%
+and there does we found it we return
+ 
+
+00:11:37.040 --> 00:11:38.870 align:start position:0%
+and there does we found it we return
+true<00:11:37.360><c> immediately</c><00:11:38.000><c> and</c><00:11:38.160><c> we</c><00:11:38.320><c> can</c><00:11:38.480><c> stop</c><00:11:38.720><c> the</c>
+
+00:11:38.870 --> 00:11:38.880 align:start position:0%
+true immediately and we can stop the
+ 
+
+00:11:38.880 --> 00:11:41.269 align:start position:0%
+true immediately and we can stop the
+algorithm<00:11:39.519><c> that's</c><00:11:39.920><c> the</c><00:11:40.160><c> big</c><00:11:40.399><c> o</c><00:11:40.640><c> of</c><00:11:40.800><c> end</c><00:11:40.959><c> time</c>
+
+00:11:41.269 --> 00:11:41.279 align:start position:0%
+algorithm that's the big o of end time
+ 
+
+00:11:41.279 --> 00:11:43.110 align:start position:0%
+algorithm that's the big o of end time
+algorithm<00:11:41.760><c> now</c><00:11:41.920><c> let's</c><00:11:42.160><c> actually</c><00:11:42.560><c> code</c><00:11:42.800><c> it</c><00:11:42.959><c> up</c>
+
+00:11:43.110 --> 00:11:43.120 align:start position:0%
+algorithm now let's actually code it up
+ 
+
+00:11:43.120 --> 00:11:44.630 align:start position:0%
+algorithm now let's actually code it up
+okay<00:11:43.440><c> now</c><00:11:43.600><c> let's</c><00:11:43.839><c> write</c><00:11:44.000><c> the</c><00:11:44.160><c> code</c><00:11:44.480><c> but</c>
+
+00:11:44.630 --> 00:11:44.640 align:start position:0%
+okay now let's write the code but
+ 
+
+00:11:44.640 --> 00:11:46.310 align:start position:0%
+okay now let's write the code but
+there's<00:11:44.880><c> just</c><00:11:45.120><c> one</c><00:11:45.360><c> little</c><00:11:45.600><c> edge</c><00:11:45.920><c> case</c><00:11:46.160><c> we</c>
+
+00:11:46.310 --> 00:11:46.320 align:start position:0%
+there's just one little edge case we
+ 
+
+00:11:46.320 --> 00:11:47.990 align:start position:0%
+there's just one little edge case we
+actually<00:11:46.640><c> have</c><00:11:46.800><c> to</c><00:11:47.040><c> look</c><00:11:47.279><c> for</c><00:11:47.519><c> that</c><00:11:47.680><c> i</c><00:11:47.760><c> didn't</c>
+
+00:11:47.990 --> 00:11:48.000 align:start position:0%
+actually have to look for that i didn't
+ 
+
+00:11:48.000 --> 00:11:49.750 align:start position:0%
+actually have to look for that i didn't
+talk<00:11:48.160><c> about</c><00:11:48.480><c> previously</c><00:11:49.040><c> and</c><00:11:49.120><c> that's</c><00:11:49.360><c> if</c><00:11:49.519><c> our</c>
+
+00:11:49.750 --> 00:11:49.760 align:start position:0%
+talk about previously and that's if our
+ 
+
+00:11:49.760 --> 00:11:52.790 align:start position:0%
+talk about previously and that's if our
+s1<00:11:50.639><c> string</c><00:11:51.279><c> is</c><00:11:51.440><c> actually</c><00:11:51.920><c> shorter</c><00:11:52.560><c> or</c>
+
+00:11:52.790 --> 00:11:52.800 align:start position:0%
+s1 string is actually shorter or
+ 
+
+00:11:52.800 --> 00:11:54.949 align:start position:0%
+s1 string is actually shorter or
+actually<00:11:53.120><c> rather</c><00:11:53.600><c> longer</c><00:11:54.000><c> than</c><00:11:54.240><c> our</c><00:11:54.480><c> s2</c>
+
+00:11:54.949 --> 00:11:54.959 align:start position:0%
+actually rather longer than our s2
+ 
+
+00:11:54.959 --> 00:11:55.910 align:start position:0%
+actually rather longer than our s2
+string
+
+00:11:55.910 --> 00:11:55.920 align:start position:0%
+string
+ 
+
+00:11:55.920 --> 00:11:58.230 align:start position:0%
+string
+which<00:11:56.240><c> would</c><00:11:56.639><c> make</c><00:11:56.880><c> it</c><00:11:57.040><c> impossible</c><00:11:57.680><c> for</c><00:11:57.839><c> us</c><00:11:58.000><c> to</c>
+
+00:11:58.230 --> 00:11:58.240 align:start position:0%
+which would make it impossible for us to
+ 
+
+00:11:58.240 --> 00:12:01.910 align:start position:0%
+which would make it impossible for us to
+find<00:11:58.639><c> a</c><00:11:58.800><c> permutation</c><00:11:59.600><c> of</c><00:11:59.839><c> s1</c><00:12:00.560><c> in</c><00:12:00.880><c> s2</c><00:12:01.600><c> in</c><00:12:01.760><c> that</c>
+
+00:12:01.910 --> 00:12:01.920 align:start position:0%
+find a permutation of s1 in s2 in that
+ 
+
+00:12:01.920 --> 00:12:03.269 align:start position:0%
+find a permutation of s1 in s2 in that
+case<00:12:02.160><c> we</c><00:12:02.240><c> can</c><00:12:02.399><c> just</c><00:12:02.560><c> return</c><00:12:02.880><c> false</c>
+
+00:12:03.269 --> 00:12:03.279 align:start position:0%
+case we can just return false
+ 
+
+00:12:03.279 --> 00:12:05.030 align:start position:0%
+case we can just return false
+immediately<00:12:03.920><c> but</c><00:12:04.079><c> after</c><00:12:04.320><c> that</c><00:12:04.480><c> we</c><00:12:04.639><c> can</c><00:12:04.800><c> get</c>
+
+00:12:05.030 --> 00:12:05.040 align:start position:0%
+immediately but after that we can get
+ 
+
+00:12:05.040 --> 00:12:07.190 align:start position:0%
+immediately but after that we can get
+into<00:12:05.440><c> our</c><00:12:05.600><c> standard</c><00:12:06.160><c> algorithm</c><00:12:06.800><c> even</c><00:12:07.040><c> though</c>
+
+00:12:07.190 --> 00:12:07.200 align:start position:0%
+into our standard algorithm even though
+ 
+
+00:12:07.200 --> 00:12:08.790 align:start position:0%
+into our standard algorithm even though
+i<00:12:07.279><c> was</c><00:12:07.440><c> talking</c><00:12:07.760><c> about</c><00:12:08.000><c> hashmaps</c><00:12:08.560><c> we</c><00:12:08.639><c> can</c>
+
+00:12:08.790 --> 00:12:08.800 align:start position:0%
+i was talking about hashmaps we can
+ 
+
+00:12:08.800 --> 00:12:10.870 align:start position:0%
+i was talking about hashmaps we can
+actually<00:12:09.120><c> implement</c><00:12:09.519><c> these</c><00:12:09.760><c> with</c><00:12:10.079><c> arrays</c><00:12:10.720><c> as</c>
+
+00:12:10.870 --> 00:12:10.880 align:start position:0%
+actually implement these with arrays as
+ 
+
+00:12:10.880 --> 00:12:13.670 align:start position:0%
+actually implement these with arrays as
+well<00:12:11.200><c> because</c><00:12:11.680><c> we</c><00:12:11.839><c> are</c><00:12:12.000><c> getting</c><00:12:12.399><c> fixed</c><00:12:12.800><c> values</c>
+
+00:12:13.670 --> 00:12:13.680 align:start position:0%
+well because we are getting fixed values
+ 
+
+00:12:13.680 --> 00:12:16.230 align:start position:0%
+well because we are getting fixed values
+uh<00:12:14.000><c> lowercase</c><00:12:14.560><c> a</c><00:12:14.720><c> through</c><00:12:14.959><c> lowercase</c><00:12:15.519><c> z</c><00:12:16.079><c> and</c>
+
+00:12:16.230 --> 00:12:16.240 align:start position:0%
+uh lowercase a through lowercase z and
+ 
+
+00:12:16.240 --> 00:12:18.949 align:start position:0%
+uh lowercase a through lowercase z and
+we<00:12:16.399><c> can</c><00:12:16.560><c> convert</c><00:12:17.040><c> those</c><00:12:17.279><c> characters</c><00:12:17.920><c> to</c><00:12:18.240><c> be</c>
+
+00:12:18.949 --> 00:12:18.959 align:start position:0%
+we can convert those characters to be
+ 
+
+00:12:18.959 --> 00:12:20.710 align:start position:0%
+we can convert those characters to be
+uh<00:12:19.279><c> integers</c><00:12:19.839><c> and</c><00:12:20.000><c> we</c><00:12:20.079><c> can</c><00:12:20.240><c> use</c><00:12:20.480><c> those</c>
+
+00:12:20.710 --> 00:12:20.720 align:start position:0%
+uh integers and we can use those
+ 
+
+00:12:20.720 --> 00:12:24.470 align:start position:0%
+uh integers and we can use those
+integers<00:12:21.200><c> as</c><00:12:21.440><c> indices</c><00:12:22.160><c> indexes</c><00:12:22.880><c> of</c><00:12:23.360><c> our</c><00:12:24.240><c> two</c>
+
+00:12:24.470 --> 00:12:24.480 align:start position:0%
+integers as indices indexes of our two
+ 
+
+00:12:24.480 --> 00:12:25.910 align:start position:0%
+integers as indices indexes of our two
+arrays<00:12:24.880><c> so</c><00:12:25.040><c> initially</c><00:12:25.440><c> i'm</c><00:12:25.519><c> just</c><00:12:25.680><c> going</c><00:12:25.760><c> to</c>
+
+00:12:25.910 --> 00:12:25.920 align:start position:0%
+arrays so initially i'm just going to
+ 
+
+00:12:25.920 --> 00:12:28.069 align:start position:0%
+arrays so initially i'm just going to
+set<00:12:26.079><c> these</c><00:12:26.320><c> to</c><00:12:26.480><c> be</c><00:12:26.720><c> 26</c>
+
+00:12:28.069 --> 00:12:28.079 align:start position:0%
+set these to be 26
+ 
+
+00:12:28.079 --> 00:12:30.310 align:start position:0%
+set these to be 26
+numbers<00:12:28.560><c> and</c><00:12:28.800><c> each</c><00:12:29.040><c> of</c><00:12:29.200><c> those</c><00:12:29.760><c> numbers</c><00:12:30.079><c> is</c>
+
+00:12:30.310 --> 00:12:30.320 align:start position:0%
+numbers and each of those numbers is
+ 
+
+00:12:30.320 --> 00:12:32.629 align:start position:0%
+numbers and each of those numbers is
+just<00:12:30.480><c> going</c><00:12:30.639><c> to</c><00:12:30.720><c> be</c><00:12:30.880><c> a</c><00:12:31.120><c> 0</c><00:12:31.519><c> for</c><00:12:31.760><c> now</c><00:12:32.240><c> uh</c><00:12:32.480><c> we're</c>
+
+00:12:32.629 --> 00:12:32.639 align:start position:0%
+just going to be a 0 for now uh we're
+ 
+
+00:12:32.639 --> 00:12:35.750 align:start position:0%
+just going to be a 0 for now uh we're
+going<00:12:32.720><c> to</c><00:12:32.959><c> go</c><00:12:33.279><c> through</c><00:12:33.920><c> every</c><00:12:34.560><c> character</c><00:12:35.279><c> in</c>
+
+00:12:35.750 --> 00:12:35.760 align:start position:0%
+going to go through every character in
+ 
+
+00:12:35.760 --> 00:12:40.230 align:start position:0%
+going to go through every character in
+s1<00:12:36.800><c> and</c><00:12:37.440><c> we're</c><00:12:37.600><c> gonna</c><00:12:37.920><c> go</c><00:12:38.399><c> so</c><00:12:38.639><c> suppose</c><00:12:39.360><c> s1</c><00:12:40.079><c> is</c>
+
+00:12:40.230 --> 00:12:40.240 align:start position:0%
+s1 and we're gonna go so suppose s1 is
+ 
+
+00:12:40.240 --> 00:12:42.389 align:start position:0%
+s1 and we're gonna go so suppose s1 is
+maybe<00:12:40.560><c> three</c><00:12:40.800><c> characters</c><00:12:41.360><c> long</c><00:12:41.839><c> at</c><00:12:41.920><c> the</c><00:12:42.079><c> same</c>
+
+00:12:42.389 --> 00:12:42.399 align:start position:0%
+maybe three characters long at the same
+ 
+
+00:12:42.399 --> 00:12:44.629 align:start position:0%
+maybe three characters long at the same
+time<00:12:42.720><c> as</c><00:12:42.880><c> we're</c><00:12:43.120><c> going</c><00:12:43.440><c> through</c><00:12:43.680><c> s1</c><00:12:44.399><c> we're</c>
+
+00:12:44.629 --> 00:12:44.639 align:start position:0%
+time as we're going through s1 we're
+ 
+
+00:12:44.639 --> 00:12:46.230 align:start position:0%
+time as we're going through s1 we're
+also<00:12:45.040><c> going</c><00:12:45.200><c> to</c><00:12:45.279><c> go</c><00:12:45.519><c> through</c><00:12:45.680><c> the</c><00:12:45.760><c> first</c><00:12:46.079><c> let's</c>
+
+00:12:46.230 --> 00:12:46.240 align:start position:0%
+also going to go through the first let's
+ 
+
+00:12:46.240 --> 00:12:48.230 align:start position:0%
+also going to go through the first let's
+say<00:12:46.480><c> three</c><00:12:46.720><c> characters</c><00:12:47.279><c> of</c><00:12:47.519><c> s2</c><00:12:48.000><c> so</c><00:12:48.160><c> we're</c>
+
+00:12:48.230 --> 00:12:48.240 align:start position:0%
+say three characters of s2 so we're
+ 
+
+00:12:48.240 --> 00:12:50.069 align:start position:0%
+say three characters of s2 so we're
+going<00:12:48.320><c> to</c><00:12:48.480><c> initialize</c><00:12:49.279><c> both</c><00:12:49.519><c> of</c><00:12:49.600><c> these</c><00:12:49.760><c> hash</c>
+
+00:12:50.069 --> 00:12:50.079 align:start position:0%
+going to initialize both of these hash
+ 
+
+00:12:50.079 --> 00:12:53.110 align:start position:0%
+going to initialize both of these hash
+maps<00:12:50.399><c> at</c><00:12:50.560><c> the</c><00:12:50.639><c> same</c><00:12:50.959><c> time</c><00:12:51.600><c> so</c><00:12:52.079><c> let's</c><00:12:52.399><c> do</c><00:12:52.639><c> that</c>
+
+00:12:53.110 --> 00:12:53.120 align:start position:0%
+maps at the same time so let's do that
+ 
+
+00:12:53.120 --> 00:12:55.430 align:start position:0%
+maps at the same time so let's do that
+now<00:12:53.600><c> so</c><00:12:54.240><c> the</c><00:12:54.399><c> way</c><00:12:54.639><c> we're</c><00:12:54.800><c> going</c><00:12:54.959><c> to</c><00:12:55.040><c> convert</c>
+
+00:12:55.430 --> 00:12:55.440 align:start position:0%
+now so the way we're going to convert
+ 
+
+00:12:55.440 --> 00:12:58.470 align:start position:0%
+now so the way we're going to convert
+these<00:12:55.760><c> characters</c><00:12:56.399><c> so</c><00:12:56.880><c> in</c><00:12:57.120><c> s1</c><00:12:58.079><c> we're</c><00:12:58.320><c> going</c><00:12:58.399><c> to</c>
+
+00:12:58.470 --> 00:12:58.480 align:start position:0%
+these characters so in s1 we're going to
+ 
+
+00:12:58.480 --> 00:13:00.470 align:start position:0%
+these characters so in s1 we're going to
+get<00:12:58.639><c> the</c><00:12:58.720><c> character</c><00:12:59.120><c> at</c><00:12:59.200><c> the</c><00:12:59.360><c> ith</c><00:12:59.760><c> indexed</c><00:13:00.320><c> and</c>
+
+00:13:00.470 --> 00:13:00.480 align:start position:0%
+get the character at the ith indexed and
+ 
+
+00:13:00.480 --> 00:13:02.310 align:start position:0%
+get the character at the ith indexed and
+we're<00:13:00.639><c> going</c><00:13:00.720><c> to</c><00:13:00.800><c> use</c><00:13:00.959><c> the</c><00:13:01.200><c> ord</c><00:13:01.600><c> function</c><00:13:02.079><c> now</c>
+
+00:13:02.310 --> 00:13:02.320 align:start position:0%
+we're going to use the ord function now
+ 
+
+00:13:02.320 --> 00:13:03.750 align:start position:0%
+we're going to use the ord function now
+depending<00:13:02.720><c> on</c><00:13:02.800><c> your</c><00:13:02.959><c> language</c><00:13:03.360><c> it</c><00:13:03.440><c> might</c><00:13:03.600><c> be</c><00:13:03.680><c> a</c>
+
+00:13:03.750 --> 00:13:03.760 align:start position:0%
+depending on your language it might be a
+ 
+
+00:13:03.760 --> 00:13:05.030 align:start position:0%
+depending on your language it might be a
+different<00:13:04.000><c> function</c><00:13:04.399><c> all</c><00:13:04.480><c> we're</c><00:13:04.720><c> doing</c><00:13:04.880><c> is</c>
+
+00:13:05.030 --> 00:13:05.040 align:start position:0%
+different function all we're doing is
+ 
+
+00:13:05.040 --> 00:13:07.430 align:start position:0%
+different function all we're doing is
+getting<00:13:05.279><c> the</c><00:13:05.440><c> ascii</c><00:13:06.000><c> value</c><00:13:06.639><c> of</c><00:13:07.120><c> this</c>
+
+00:13:07.430 --> 00:13:07.440 align:start position:0%
+getting the ascii value of this
+ 
+
+00:13:07.440 --> 00:13:09.269 align:start position:0%
+getting the ascii value of this
+character<00:13:07.920><c> with</c><00:13:08.240><c> our</c><00:13:08.480><c> ord</c><00:13:08.800><c> function</c><00:13:09.200><c> and</c>
+
+00:13:09.269 --> 00:13:09.279 align:start position:0%
+character with our ord function and
+ 
+
+00:13:09.279 --> 00:13:10.870 align:start position:0%
+character with our ord function and
+we're<00:13:09.440><c> going</c><00:13:09.519><c> to</c><00:13:09.600><c> subtract</c><00:13:10.079><c> from</c><00:13:10.320><c> it</c><00:13:10.720><c> the</c>
+
+00:13:10.870 --> 00:13:10.880 align:start position:0%
+we're going to subtract from it the
+ 
+
+00:13:10.880 --> 00:13:13.829 align:start position:0%
+we're going to subtract from it the
+ascii<00:13:11.360><c> value</c><00:13:11.760><c> of</c><00:13:12.000><c> lowercase</c>
+
+00:13:13.829 --> 00:13:13.839 align:start position:0%
+ascii value of lowercase
+ 
+
+00:13:13.839 --> 00:13:16.790 align:start position:0%
+ascii value of lowercase
+lowercase<00:13:14.800><c> a</c><00:13:15.120><c> let's</c><00:13:15.360><c> get</c><00:13:15.600><c> this</c><00:13:16.000><c> right</c><00:13:16.560><c> and</c>
+
+00:13:16.790 --> 00:13:16.800 align:start position:0%
+lowercase a let's get this right and
+ 
+
+00:13:16.800 --> 00:13:19.030 align:start position:0%
+lowercase a let's get this right and
+this<00:13:17.040><c> will</c><00:13:17.360><c> map</c><00:13:17.680><c> to</c><00:13:17.920><c> an</c><00:13:18.160><c> index</c><00:13:18.560><c> this</c><00:13:18.720><c> will</c><00:13:18.880><c> map</c>
+
+00:13:19.030 --> 00:13:19.040 align:start position:0%
+this will map to an index this will map
+ 
+
+00:13:19.040 --> 00:13:22.550 align:start position:0%
+this will map to an index this will map
+to<00:13:19.200><c> one</c><00:13:19.440><c> of</c><00:13:19.519><c> the</c><00:13:19.680><c> 26</c><00:13:20.240><c> indexes</c><00:13:21.200><c> and</c><00:13:21.839><c> to</c><00:13:22.079><c> this</c><00:13:22.399><c> all</c>
+
+00:13:22.550 --> 00:13:22.560 align:start position:0%
+to one of the 26 indexes and to this all
+ 
+
+00:13:22.560 --> 00:13:25.430 align:start position:0%
+to one of the 26 indexes and to this all
+we<00:13:22.720><c> want</c><00:13:22.880><c> to</c><00:13:22.959><c> do</c><00:13:23.120><c> is</c><00:13:23.279><c> just</c><00:13:23.760><c> add</c><00:13:24.240><c> one</c><00:13:24.560><c> to</c><00:13:24.800><c> it</c><00:13:25.200><c> and</c>
+
+00:13:25.430 --> 00:13:25.440 align:start position:0%
+we want to do is just add one to it and
+ 
+
+00:13:25.440 --> 00:13:26.790 align:start position:0%
+we want to do is just add one to it and
+i'm<00:13:25.519><c> just</c><00:13:25.680><c> going</c><00:13:25.760><c> to</c><00:13:25.839><c> go</c><00:13:26.000><c> ahead</c><00:13:26.160><c> and</c><00:13:26.320><c> copy</c><00:13:26.720><c> and</c>
+
+00:13:26.790 --> 00:13:26.800 align:start position:0%
+i'm just going to go ahead and copy and
+ 
+
+00:13:26.800 --> 00:13:29.509 align:start position:0%
+i'm just going to go ahead and copy and
+paste<00:13:27.120><c> this</c><00:13:27.360><c> line</c><00:13:27.839><c> and</c><00:13:28.079><c> do</c><00:13:28.320><c> the</c><00:13:28.480><c> exact</c><00:13:29.040><c> same</c>
+
+00:13:29.509 --> 00:13:29.519 align:start position:0%
+paste this line and do the exact same
+ 
+
+00:13:29.519 --> 00:13:33.670 align:start position:0%
+paste this line and do the exact same
+thing<00:13:30.079><c> for</c><00:13:30.560><c> s2</c><00:13:31.440><c> we're</c><00:13:31.600><c> gonna</c><00:13:32.160><c> in</c><00:13:32.399><c> s2</c><00:13:32.880><c> count</c><00:13:33.519><c> uh</c>
+
+00:13:33.670 --> 00:13:33.680 align:start position:0%
+thing for s2 we're gonna in s2 count uh
+ 
+
+00:13:33.680 --> 00:13:35.269 align:start position:0%
+thing for s2 we're gonna in s2 count uh
+we're<00:13:33.839><c> going</c><00:13:33.920><c> to</c><00:13:34.000><c> update</c><00:13:34.320><c> the</c><00:13:34.399><c> count</c><00:13:34.800><c> of</c><00:13:34.959><c> this</c>
+
+00:13:35.269 --> 00:13:35.279 align:start position:0%
+we're going to update the count of this
+ 
+
+00:13:35.279 --> 00:13:37.990 align:start position:0%
+we're going to update the count of this
+character<00:13:36.000><c> and</c><00:13:36.160><c> just</c><00:13:36.399><c> increment</c><00:13:36.959><c> it</c><00:13:37.200><c> by</c><00:13:37.519><c> one</c>
+
+00:13:37.990 --> 00:13:38.000 align:start position:0%
+character and just increment it by one
+ 
+
+00:13:38.000 --> 00:13:39.670 align:start position:0%
+character and just increment it by one
+so<00:13:38.240><c> now</c><00:13:38.399><c> before</c><00:13:38.720><c> we</c><00:13:38.880><c> actually</c><00:13:39.199><c> get</c><00:13:39.360><c> to</c><00:13:39.519><c> our</c>
+
+00:13:39.670 --> 00:13:39.680 align:start position:0%
+so now before we actually get to our
+ 
+
+00:13:39.680 --> 00:13:41.509 align:start position:0%
+so now before we actually get to our
+sliding<00:13:40.160><c> window</c><00:13:40.480><c> portion</c><00:13:40.880><c> don't</c><00:13:41.040><c> forget</c><00:13:41.279><c> we</c>
+
+00:13:41.509 --> 00:13:41.519 align:start position:0%
+sliding window portion don't forget we
+ 
+
+00:13:41.519 --> 00:13:43.030 align:start position:0%
+sliding window portion don't forget we
+actually<00:13:41.760><c> have</c><00:13:41.920><c> to</c><00:13:42.000><c> initialize</c><00:13:42.639><c> the</c><00:13:42.800><c> number</c>
+
+00:13:43.030 --> 00:13:43.040 align:start position:0%
+actually have to initialize the number
+ 
+
+00:13:43.040 --> 00:13:44.629 align:start position:0%
+actually have to initialize the number
+of<00:13:43.279><c> matches</c><00:13:43.760><c> we're</c><00:13:43.920><c> initially</c><00:13:44.320><c> going</c><00:13:44.399><c> to</c><00:13:44.480><c> set</c>
+
+00:13:44.629 --> 00:13:44.639 align:start position:0%
+of matches we're initially going to set
+ 
+
+00:13:44.639 --> 00:13:47.189 align:start position:0%
+of matches we're initially going to set
+it<00:13:44.720><c> to</c><00:13:44.880><c> zero</c><00:13:45.279><c> but</c><00:13:45.680><c> let's</c><00:13:46.000><c> compare</c>
+
+00:13:47.189 --> 00:13:47.199 align:start position:0%
+it to zero but let's compare
+ 
+
+00:13:47.199 --> 00:13:50.230 align:start position:0%
+it to zero but let's compare
+each<00:13:47.440><c> of</c><00:13:47.600><c> these</c><00:13:48.320><c> maps</c><00:13:48.880><c> or</c><00:13:49.279><c> arrays</c><00:13:49.920><c> we</c><00:13:50.079><c> know</c>
+
+00:13:50.230 --> 00:13:50.240 align:start position:0%
+each of these maps or arrays we know
+ 
+
+00:13:50.240 --> 00:13:52.310 align:start position:0%
+each of these maps or arrays we know
+that<00:13:50.399><c> there's</c><00:13:50.639><c> going</c><00:13:50.720><c> to</c><00:13:50.800><c> be</c><00:13:51.040><c> 26</c><00:13:51.600><c> spots</c><00:13:52.079><c> in</c><00:13:52.160><c> the</c>
+
+00:13:52.310 --> 00:13:52.320 align:start position:0%
+that there's going to be 26 spots in the
+ 
+
+00:13:52.320 --> 00:13:54.069 align:start position:0%
+that there's going to be 26 spots in the
+array<00:13:52.639><c> so</c><00:13:52.800><c> we</c><00:13:52.880><c> can</c><00:13:53.040><c> actually</c><00:13:53.279><c> just</c><00:13:53.519><c> hard</c><00:13:53.839><c> code</c>
+
+00:13:54.069 --> 00:13:54.079 align:start position:0%
+array so we can actually just hard code
+ 
+
+00:13:54.079 --> 00:13:58.069 align:start position:0%
+array so we can actually just hard code
+that<00:13:54.399><c> so</c><00:13:54.959><c> now</c><00:13:55.199><c> we're</c><00:13:55.440><c> going</c><00:13:55.600><c> to</c><00:13:56.160><c> say</c>
+
+00:13:58.069 --> 00:13:58.079 align:start position:0%
+that so now we're going to say
+ 
+
+00:13:58.079 --> 00:14:00.629 align:start position:0%
+that so now we're going to say
+to<00:13:58.320><c> the</c><00:13:58.480><c> number</c><00:13:58.720><c> of</c><00:13:58.880><c> matches</c><00:13:59.600><c> we</c><00:13:59.839><c> want</c><00:14:00.000><c> to</c><00:14:00.240><c> add</c>
+
+00:14:00.629 --> 00:14:00.639 align:start position:0%
+to the number of matches we want to add
+ 
+
+00:14:00.639 --> 00:14:03.430 align:start position:0%
+to the number of matches we want to add
+one<00:14:00.959><c> to</c><00:14:01.199><c> it</c><00:14:01.760><c> only</c><00:14:02.399><c> if</c>
+
+00:14:03.430 --> 00:14:03.440 align:start position:0%
+one to it only if
+ 
+
+00:14:03.440 --> 00:14:08.389 align:start position:0%
+one to it only if
+s1<00:14:04.000><c> count</c><00:14:04.399><c> at</c><00:14:04.639><c> index</c><00:14:05.120><c> i</c><00:14:05.600><c> is</c><00:14:05.920><c> equal</c><00:14:06.720><c> to</c><00:14:07.120><c> s2</c><00:14:07.920><c> count</c>
+
+00:14:08.389 --> 00:14:08.399 align:start position:0%
+s1 count at index i is equal to s2 count
+ 
+
+00:14:08.399 --> 00:14:10.470 align:start position:0%
+s1 count at index i is equal to s2 count
+at<00:14:08.639><c> index</c><00:14:09.120><c> i</c><00:14:09.600><c> that's</c><00:14:09.839><c> the</c><00:14:09.920><c> only</c><00:14:10.079><c> case</c><00:14:10.320><c> where</c>
+
+00:14:10.470 --> 00:14:10.480 align:start position:0%
+at index i that's the only case where
+ 
+
+00:14:10.480 --> 00:14:12.310 align:start position:0%
+at index i that's the only case where
+we'd<00:14:10.639><c> want</c><00:14:10.800><c> to</c><00:14:10.959><c> increment</c><00:14:11.360><c> this</c><00:14:11.519><c> by</c><00:14:11.760><c> 1</c><00:14:12.000><c> but</c><00:14:12.160><c> if</c>
+
+00:14:12.310 --> 00:14:12.320 align:start position:0%
+we'd want to increment this by 1 but if
+ 
+
+00:14:12.320 --> 00:14:15.189 align:start position:0%
+we'd want to increment this by 1 but if
+that's<00:14:12.639><c> not</c><00:14:12.800><c> the</c><00:14:13.040><c> case</c><00:14:13.600><c> then</c><00:14:14.160><c> we</c><00:14:14.639><c> are</c><00:14:15.040><c> not</c>
+
+00:14:15.189 --> 00:14:15.199 align:start position:0%
+that's not the case then we are not
+ 
+
+00:14:15.199 --> 00:14:17.189 align:start position:0%
+that's not the case then we are not
+going<00:14:15.360><c> to</c><00:14:15.519><c> increment</c><00:14:15.920><c> it</c><00:14:16.000><c> by</c><00:14:16.160><c> one</c><00:14:16.480><c> so</c><00:14:16.880><c> we</c><00:14:17.040><c> can</c>
+
+00:14:17.189 --> 00:14:17.199 align:start position:0%
+going to increment it by one so we can
+ 
+
+00:14:17.199 --> 00:14:19.430 align:start position:0%
+going to increment it by one so we can
+just<00:14:17.440><c> say</c><00:14:17.760><c> else</c><00:14:18.240><c> zero</c><00:14:18.720><c> right</c><00:14:18.880><c> so</c><00:14:19.120><c> else</c>
+
+00:14:19.430 --> 00:14:19.440 align:start position:0%
+just say else zero right so else
+ 
+
+00:14:19.440 --> 00:14:21.269 align:start position:0%
+just say else zero right so else
+incremented<00:14:19.920><c> by</c><00:14:20.160><c> zero</c><00:14:20.480><c> which</c><00:14:20.639><c> is</c><00:14:20.720><c> the</c><00:14:20.880><c> same</c><00:14:21.120><c> as</c>
+
+00:14:21.269 --> 00:14:21.279 align:start position:0%
+incremented by zero which is the same as
+ 
+
+00:14:21.279 --> 00:14:23.350 align:start position:0%
+incremented by zero which is the same as
+not<00:14:21.600><c> incrementing</c><00:14:22.160><c> it</c><00:14:22.399><c> at</c><00:14:22.720><c> all</c><00:14:22.880><c> let's</c><00:14:23.120><c> put</c>
+
+00:14:23.350 --> 00:14:23.360 align:start position:0%
+not incrementing it at all let's put
+ 
+
+00:14:23.360 --> 00:14:25.430 align:start position:0%
+not incrementing it at all let's put
+parentheses<00:14:23.920><c> here</c><00:14:24.160><c> just</c><00:14:24.320><c> to</c><00:14:24.480><c> clean</c><00:14:24.720><c> it</c><00:14:24.880><c> up</c><00:14:25.199><c> and</c>
+
+00:14:25.430 --> 00:14:25.440 align:start position:0%
+parentheses here just to clean it up and
+ 
+
+00:14:25.440 --> 00:14:27.189 align:start position:0%
+parentheses here just to clean it up and
+now<00:14:25.600><c> we</c><00:14:25.760><c> can</c><00:14:25.920><c> move</c><00:14:26.240><c> on</c><00:14:26.560><c> so</c><00:14:26.720><c> now</c><00:14:26.880><c> we're</c><00:14:27.040><c> going</c><00:14:27.120><c> to</c>
+
+00:14:27.189 --> 00:14:27.199 align:start position:0%
+now we can move on so now we're going to
+ 
+
+00:14:27.199 --> 00:14:29.030 align:start position:0%
+now we can move on so now we're going to
+do<00:14:27.360><c> the</c><00:14:27.440><c> sliding</c><00:14:27.839><c> window</c><00:14:28.240><c> portion</c><00:14:28.720><c> we're</c><00:14:28.959><c> to</c>
+
+00:14:29.030 --> 00:14:29.040 align:start position:0%
+do the sliding window portion we're to
+ 
+
+00:14:29.040 --> 00:14:31.350 align:start position:0%
+do the sliding window portion we're to
+initialize<00:14:29.600><c> a</c><00:14:29.839><c> left</c><00:14:30.160><c> pointer</c><00:14:30.560><c> to</c><00:14:30.800><c> be</c><00:14:31.040><c> at</c><00:14:31.199><c> the</c>
+
+00:14:31.350 --> 00:14:31.360 align:start position:0%
+initialize a left pointer to be at the
+ 
+
+00:14:31.360 --> 00:14:33.509 align:start position:0%
+initialize a left pointer to be at the
+beginning<00:14:31.760><c> so</c><00:14:32.000><c> at</c><00:14:32.240><c> index</c><00:14:32.800><c> uh</c>
+
+00:14:33.509 --> 00:14:33.519 align:start position:0%
+beginning so at index uh
+ 
+
+00:14:33.519 --> 00:14:35.990 align:start position:0%
+beginning so at index uh
+0.<00:14:33.920><c> so</c><00:14:34.639><c> then</c><00:14:35.040><c> we're</c><00:14:35.199><c> going</c><00:14:35.279><c> to</c><00:14:35.360><c> have</c><00:14:35.600><c> our</c><00:14:35.760><c> right</c>
+
+00:14:35.990 --> 00:14:36.000 align:start position:0%
+0. so then we're going to have our right
+ 
+
+00:14:36.000 --> 00:14:37.030 align:start position:0%
+0. so then we're going to have our right
+pointer<00:14:36.320><c> which</c><00:14:36.399><c> is</c><00:14:36.560><c> actually</c><00:14:36.800><c> going</c><00:14:36.880><c> to</c>
+
+00:14:37.030 --> 00:14:37.040 align:start position:0%
+pointer which is actually going to
+ 
+
+00:14:37.040 --> 00:14:40.949 align:start position:0%
+pointer which is actually going to
+iterate<00:14:37.360><c> through</c><00:14:37.760><c> every</c><00:14:38.079><c> position</c><00:14:39.040><c> in</c><00:14:39.519><c> s2</c>
+
+00:14:40.949 --> 00:14:40.959 align:start position:0%
+iterate through every position in s2
+ 
+
+00:14:40.959 --> 00:14:42.150 align:start position:0%
+iterate through every position in s2
+but<00:14:41.120><c> we</c><00:14:41.199><c> know</c><00:14:41.360><c> we</c><00:14:41.519><c> don't</c><00:14:41.680><c> actually</c><00:14:41.920><c> have</c><00:14:42.000><c> to</c>
+
+00:14:42.150 --> 00:14:42.160 align:start position:0%
+but we know we don't actually have to
+ 
+
+00:14:42.160 --> 00:14:44.710 align:start position:0%
+but we know we don't actually have to
+start<00:14:42.480><c> at</c><00:14:42.800><c> the</c><00:14:43.040><c> first</c><00:14:43.360><c> position</c><00:14:44.240><c> because</c><00:14:44.480><c> we</c>
+
+00:14:44.710 --> 00:14:44.720 align:start position:0%
+start at the first position because we
+ 
+
+00:14:44.720 --> 00:14:47.269 align:start position:0%
+start at the first position because we
+already<00:14:45.199><c> initialized</c><00:14:45.920><c> our</c><00:14:46.160><c> windows</c><00:14:46.880><c> so</c><00:14:47.120><c> we're</c>
+
+00:14:47.269 --> 00:14:47.279 align:start position:0%
+already initialized our windows so we're
+ 
+
+00:14:47.279 --> 00:14:50.470 align:start position:0%
+already initialized our windows so we're
+actually<00:14:47.519><c> going</c><00:14:47.680><c> to</c><00:14:47.839><c> start</c><00:14:48.320><c> at</c><00:14:48.880><c> the</c><00:14:49.199><c> length</c><00:14:49.680><c> of</c>
+
+00:14:50.470 --> 00:14:50.480 align:start position:0%
+actually going to start at the length of
+ 
+
+00:14:50.480 --> 00:14:53.750 align:start position:0%
+actually going to start at the length of
+1<00:14:50.959><c> the</c><00:14:51.120><c> length</c><00:14:51.440><c> of</c><00:14:51.680><c> s1</c><00:14:52.800><c> because</c><00:14:53.199><c> this</c><00:14:53.440><c> will</c>
+
+00:14:53.750 --> 00:14:53.760 align:start position:0%
+1 the length of s1 because this will
+ 
+
+00:14:53.760 --> 00:14:56.629 align:start position:0%
+1 the length of s1 because this will
+start<00:14:54.160><c> us</c><00:14:54.639><c> at</c><00:14:55.120><c> the</c><00:14:55.440><c> next</c><00:14:55.839><c> character</c><00:14:56.240><c> that</c><00:14:56.320><c> we</c>
+
+00:14:56.629 --> 00:14:56.639 align:start position:0%
+start us at the next character that we
+ 
+
+00:14:56.639 --> 00:14:59.269 align:start position:0%
+start us at the next character that we
+left<00:14:57.120><c> off</c><00:14:57.600><c> at</c><00:14:57.839><c> right</c><00:14:58.240><c> and</c><00:14:58.320><c> this</c><00:14:58.800><c> and</c><00:14:59.040><c> this</c>
+
+00:14:59.269 --> 00:14:59.279 align:start position:0%
+left off at right and this and this
+ 
+
+00:14:59.279 --> 00:15:01.269 align:start position:0%
+left off at right and this and this
+range<00:14:59.600><c> is</c><00:14:59.760><c> actually</c><00:15:00.079><c> non-inclusive</c><00:15:00.880><c> so</c><00:15:01.040><c> we</c>
+
+00:15:01.269 --> 00:15:01.279 align:start position:0%
+range is actually non-inclusive so we
+ 
+
+00:15:01.279 --> 00:15:03.670 align:start position:0%
+range is actually non-inclusive so we
+stopped<00:15:01.680><c> before</c><00:15:02.079><c> we</c><00:15:02.240><c> reached</c><00:15:02.639><c> this</c><00:15:02.959><c> index</c><00:15:03.519><c> so</c>
+
+00:15:03.670 --> 00:15:03.680 align:start position:0%
+stopped before we reached this index so
+ 
+
+00:15:03.680 --> 00:15:05.509 align:start position:0%
+stopped before we reached this index so
+now<00:15:03.839><c> we're</c><00:15:04.079><c> actually</c><00:15:04.320><c> going</c><00:15:04.399><c> to</c><00:15:04.560><c> go</c><00:15:04.880><c> to</c><00:15:05.199><c> that</c>
+
+00:15:05.509 --> 00:15:05.519 align:start position:0%
+now we're actually going to go to that
+ 
+
+00:15:05.519 --> 00:15:07.269 align:start position:0%
+now we're actually going to go to that
+index<00:15:05.839><c> with</c><00:15:06.079><c> our</c><00:15:06.240><c> right</c><00:15:06.560><c> pointer</c><00:15:07.120><c> but</c>
+
+00:15:07.269 --> 00:15:07.279 align:start position:0%
+index with our right pointer but
+ 
+
+00:15:07.279 --> 00:15:10.150 align:start position:0%
+index with our right pointer but
+remember<00:15:07.920><c> what</c><00:15:08.160><c> happens</c><00:15:08.480><c> if</c><00:15:08.639><c> matches</c><00:15:09.120><c> is</c><00:15:09.279><c> 26</c>
+
+00:15:10.150 --> 00:15:10.160 align:start position:0%
+remember what happens if matches is 26
+ 
+
+00:15:10.160 --> 00:15:12.550 align:start position:0%
+remember what happens if matches is 26
+shouldn't<00:15:10.480><c> we</c><00:15:10.639><c> return</c><00:15:11.199><c> immediately</c><00:15:12.079><c> yeah</c><00:15:12.399><c> we</c>
+
+00:15:12.550 --> 00:15:12.560 align:start position:0%
+shouldn't we return immediately yeah we
+ 
+
+00:15:12.560 --> 00:15:14.870 align:start position:0%
+shouldn't we return immediately yeah we
+can<00:15:12.880><c> put</c><00:15:13.040><c> a</c><00:15:13.120><c> return</c><00:15:13.440><c> statement</c><00:15:13.920><c> outside</c><00:15:14.480><c> of</c>
+
+00:15:14.870 --> 00:15:14.880 align:start position:0%
+can put a return statement outside of
+ 
+
+00:15:14.880 --> 00:15:17.189 align:start position:0%
+can put a return statement outside of
+this<00:15:15.120><c> for</c><00:15:15.440><c> loop</c><00:15:15.760><c> but</c><00:15:16.000><c> it'll</c><00:15:16.240><c> be</c><00:15:16.399><c> redundant</c><00:15:17.040><c> so</c>
+
+00:15:17.189 --> 00:15:17.199 align:start position:0%
+this for loop but it'll be redundant so
+ 
+
+00:15:17.199 --> 00:15:19.269 align:start position:0%
+this for loop but it'll be redundant so
+we<00:15:17.360><c> can</c><00:15:17.519><c> actually</c><00:15:17.760><c> put</c><00:15:18.000><c> it</c><00:15:18.160><c> as</c><00:15:18.399><c> the</c><00:15:18.560><c> first</c>
+
+00:15:19.269 --> 00:15:19.279 align:start position:0%
+we can actually put it as the first
+ 
+
+00:15:19.279 --> 00:15:21.110 align:start position:0%
+we can actually put it as the first
+statement<00:15:19.839><c> inside</c><00:15:20.320><c> of</c><00:15:20.399><c> the</c><00:15:20.560><c> for</c><00:15:20.720><c> loop</c><00:15:20.959><c> so</c>
+
+00:15:21.110 --> 00:15:21.120 align:start position:0%
+statement inside of the for loop so
+ 
+
+00:15:21.120 --> 00:15:25.509 align:start position:0%
+statement inside of the for loop so
+basically<00:15:21.519><c> if</c><00:15:21.760><c> matches</c><00:15:22.639><c> is</c><00:15:22.959><c> equal</c><00:15:23.440><c> to</c><00:15:23.680><c> 26</c><00:15:24.959><c> then</c>
+
+00:15:25.509 --> 00:15:25.519 align:start position:0%
+basically if matches is equal to 26 then
+ 
+
+00:15:25.519 --> 00:15:27.509 align:start position:0%
+basically if matches is equal to 26 then
+we<00:15:25.760><c> are</c><00:15:25.920><c> returning</c><00:15:26.399><c> true</c><00:15:26.800><c> if</c><00:15:26.959><c> that</c><00:15:27.199><c> ever</c>
+
+00:15:27.509 --> 00:15:27.519 align:start position:0%
+we are returning true if that ever
+ 
+
+00:15:27.519 --> 00:15:30.310 align:start position:0%
+we are returning true if that ever
+happens<00:15:28.079><c> we</c><00:15:28.240><c> can</c><00:15:28.480><c> immediately</c><00:15:29.040><c> return</c><00:15:29.759><c> true</c>
+
+00:15:30.310 --> 00:15:30.320 align:start position:0%
+happens we can immediately return true
+ 
+
+00:15:30.320 --> 00:15:32.710 align:start position:0%
+happens we can immediately return true
+no<00:15:30.720><c> questions</c><00:15:31.360><c> asked</c><00:15:31.920><c> but</c><00:15:32.079><c> if</c><00:15:32.240><c> it's</c><00:15:32.399><c> not</c><00:15:32.560><c> the</c>
+
+00:15:32.710 --> 00:15:32.720 align:start position:0%
+no questions asked but if it's not the
+ 
+
+00:15:32.720 --> 00:15:34.629 align:start position:0%
+no questions asked but if it's not the
+case<00:15:32.959><c> then</c><00:15:33.199><c> we</c><00:15:33.279><c> have</c><00:15:33.440><c> to</c><00:15:33.759><c> update</c><00:15:34.160><c> the</c><00:15:34.320><c> number</c>
+
+00:15:34.629 --> 00:15:34.639 align:start position:0%
+case then we have to update the number
+ 
+
+00:15:34.639 --> 00:15:36.790 align:start position:0%
+case then we have to update the number
+of<00:15:34.720><c> matches</c><00:15:35.360><c> we</c><00:15:35.519><c> know</c><00:15:35.680><c> that</c><00:15:35.839><c> we</c><00:15:36.000><c> just</c><00:15:36.240><c> visited</c>
+
+00:15:36.790 --> 00:15:36.800 align:start position:0%
+of matches we know that we just visited
+ 
+
+00:15:36.800 --> 00:15:39.829 align:start position:0%
+of matches we know that we just visited
+a<00:15:36.959><c> character</c><00:15:37.759><c> at</c><00:15:38.079><c> index</c><00:15:38.560><c> r</c><00:15:39.199><c> and</c><00:15:39.360><c> this</c><00:15:39.600><c> is</c><00:15:39.680><c> the</c>
+
+00:15:39.829 --> 00:15:39.839 align:start position:0%
+a character at index r and this is the
+ 
+
+00:15:39.839 --> 00:15:41.910 align:start position:0%
+a character at index r and this is the
+part<00:15:40.079><c> where</c><00:15:40.320><c> you</c><00:15:40.480><c> actually</c><00:15:40.880><c> might</c><00:15:41.279><c> have</c><00:15:41.519><c> hoped</c>
+
+00:15:41.910 --> 00:15:41.920 align:start position:0%
+part where you actually might have hoped
+ 
+
+00:15:41.920 --> 00:15:44.629 align:start position:0%
+part where you actually might have hoped
+that<00:15:42.079><c> you</c><00:15:42.320><c> used</c><00:15:42.720><c> a</c><00:15:42.800><c> hash</c><00:15:43.120><c> map</c><00:15:43.440><c> rather</c><00:15:43.759><c> than</c><00:15:44.160><c> an</c>
+
+00:15:44.629 --> 00:15:44.639 align:start position:0%
+that you used a hash map rather than an
+ 
+
+00:15:44.639 --> 00:15:46.389 align:start position:0%
+that you used a hash map rather than an
+array<00:15:45.360><c> and</c><00:15:45.519><c> that's</c><00:15:45.759><c> fine</c><00:15:46.000><c> if</c><00:15:46.079><c> you</c><00:15:46.240><c> want</c><00:15:46.320><c> to</c>
+
+00:15:46.389 --> 00:15:46.399 align:start position:0%
+array and that's fine if you want to
+ 
+
+00:15:46.399 --> 00:15:47.990 align:start position:0%
+array and that's fine if you want to
+rewrite<00:15:46.800><c> the</c><00:15:46.959><c> code</c><00:15:47.120><c> that</c><00:15:47.279><c> i'm</c><00:15:47.440><c> about</c><00:15:47.600><c> to</c><00:15:47.759><c> write</c>
+
+00:15:47.990 --> 00:15:48.000 align:start position:0%
+rewrite the code that i'm about to write
+ 
+
+00:15:48.000 --> 00:15:49.829 align:start position:0%
+rewrite the code that i'm about to write
+using<00:15:48.320><c> hash</c><00:15:48.560><c> maps</c><00:15:49.040><c> i</c><00:15:49.120><c> think</c><00:15:49.279><c> it's</c><00:15:49.440><c> perfectly</c>
+
+00:15:49.829 --> 00:15:49.839 align:start position:0%
+using hash maps i think it's perfectly
+ 
+
+00:15:49.839 --> 00:15:51.829 align:start position:0%
+using hash maps i think it's perfectly
+fine<00:15:50.000><c> but</c><00:15:50.160><c> i</c><00:15:50.240><c> feel</c><00:15:50.399><c> like</c><00:15:50.560><c> i</c><00:15:50.720><c> usually</c><00:15:51.360><c> overuse</c>
+
+00:15:51.829 --> 00:15:51.839 align:start position:0%
+fine but i feel like i usually overuse
+ 
+
+00:15:51.839 --> 00:15:53.509 align:start position:0%
+fine but i feel like i usually overuse
+hashmap<00:15:52.320><c> so</c><00:15:52.480><c> this</c><00:15:52.639><c> time</c><00:15:52.800><c> i</c><00:15:52.880><c> actually</c><00:15:53.199><c> wanted</c>
+
+00:15:53.509 --> 00:15:53.519 align:start position:0%
+hashmap so this time i actually wanted
+ 
+
+00:15:53.519 --> 00:15:56.230 align:start position:0%
+hashmap so this time i actually wanted
+to<00:15:53.839><c> kind</c><00:15:54.000><c> of</c><00:15:54.160><c> show</c><00:15:54.320><c> you</c><00:15:54.560><c> guys</c><00:15:54.800><c> the</c><00:15:55.120><c> array</c>
+
+00:15:56.230 --> 00:15:56.240 align:start position:0%
+to kind of show you guys the array
+ 
+
+00:15:56.240 --> 00:15:57.430 align:start position:0%
+to kind of show you guys the array
+solution<00:15:56.720><c> even</c><00:15:56.880><c> though</c><00:15:56.959><c> it's</c><00:15:57.120><c> a</c><00:15:57.120><c> little</c><00:15:57.279><c> bit</c>
+
+00:15:57.430 --> 00:15:57.440 align:start position:0%
+solution even though it's a little bit
+ 
+
+00:15:57.440 --> 00:15:59.430 align:start position:0%
+solution even though it's a little bit
+more<00:15:57.680><c> annoying</c><00:15:58.160><c> because</c><00:15:58.800><c> remember</c><00:15:59.199><c> our</c>
+
+00:15:59.430 --> 00:15:59.440 align:start position:0%
+more annoying because remember our
+ 
+
+00:15:59.440 --> 00:16:02.310 align:start position:0%
+more annoying because remember our
+character<00:16:00.160><c> is</c><00:16:00.320><c> not</c><00:16:00.480><c> the</c><00:16:00.800><c> key</c><00:16:01.360><c> of</c><00:16:01.600><c> our</c><00:16:01.839><c> array</c><00:16:02.160><c> we</c>
+
+00:16:02.310 --> 00:16:02.320 align:start position:0%
+character is not the key of our array we
+ 
+
+00:16:02.320 --> 00:16:05.030 align:start position:0%
+character is not the key of our array we
+have<00:16:02.399><c> to</c><00:16:02.480><c> map</c><00:16:02.800><c> that</c><00:16:02.959><c> character</c><00:16:03.519><c> to</c><00:16:03.920><c> an</c><00:16:04.320><c> index</c>
+
+00:16:05.030 --> 00:16:05.040 align:start position:0%
+have to map that character to an index
+ 
+
+00:16:05.040 --> 00:16:07.590 align:start position:0%
+have to map that character to an index
+and<00:16:05.360><c> we</c><00:16:05.519><c> can</c><00:16:05.680><c> do</c><00:16:05.839><c> that</c><00:16:06.079><c> just</c><00:16:06.320><c> like</c><00:16:06.560><c> this</c><00:16:06.800><c> so</c><00:16:07.040><c> s2</c>
+
+00:16:07.590 --> 00:16:07.600 align:start position:0%
+and we can do that just like this so s2
+ 
+
+00:16:07.600 --> 00:16:11.910 align:start position:0%
+and we can do that just like this so s2
+at<00:16:07.839><c> index</c><00:16:08.399><c> r</c><00:16:08.800><c> uh</c><00:16:09.199><c> minus</c><00:16:10.000><c> ord</c><00:16:10.639><c> of</c><00:16:11.120><c> lowercase</c><00:16:11.759><c> a</c>
+
+00:16:11.910 --> 00:16:11.920 align:start position:0%
+at index r uh minus ord of lowercase a
+ 
+
+00:16:11.920 --> 00:16:13.350 align:start position:0%
+at index r uh minus ord of lowercase a
+so<00:16:12.000><c> we're</c><00:16:12.160><c> also</c><00:16:12.320><c> going</c><00:16:12.399><c> to</c><00:16:12.480><c> take</c><00:16:12.720><c> the</c><00:16:12.880><c> ord</c><00:16:13.199><c> of</c>
+
+00:16:13.350 --> 00:16:13.360 align:start position:0%
+so we're also going to take the ord of
+ 
+
+00:16:13.360 --> 00:16:14.949 align:start position:0%
+so we're also going to take the ord of
+this<00:16:13.680><c> because</c><00:16:14.000><c> that's</c><00:16:14.240><c> how</c><00:16:14.399><c> we're</c><00:16:14.639><c> getting</c>
+
+00:16:14.949 --> 00:16:14.959 align:start position:0%
+this because that's how we're getting
+ 
+
+00:16:14.959 --> 00:16:17.670 align:start position:0%
+this because that's how we're getting
+the<00:16:15.199><c> index</c><00:16:15.839><c> of</c><00:16:16.000><c> our</c><00:16:16.160><c> count</c><00:16:16.399><c> arrays</c><00:16:17.040><c> so</c><00:16:17.360><c> now</c><00:16:17.519><c> we</c>
+
+00:16:17.670 --> 00:16:17.680 align:start position:0%
+the index of our count arrays so now we
+ 
+
+00:16:17.680 --> 00:16:19.829 align:start position:0%
+the index of our count arrays so now we
+can<00:16:17.839><c> actually</c><00:16:18.160><c> use</c><00:16:18.399><c> this</c><00:16:18.720><c> index</c><00:16:19.440><c> but</c><00:16:19.600><c> what</c><00:16:19.759><c> are</c>
+
+00:16:19.829 --> 00:16:19.839 align:start position:0%
+can actually use this index but what are
+ 
+
+00:16:19.839 --> 00:16:22.550 align:start position:0%
+can actually use this index but what are
+we<00:16:20.240><c> going</c><00:16:20.320><c> to</c><00:16:20.480><c> use</c><00:16:20.720><c> it</c><00:16:20.959><c> for</c><00:16:21.600><c> well</c><00:16:22.000><c> we</c><00:16:22.240><c> know</c><00:16:22.399><c> that</c>
+
+00:16:22.550 --> 00:16:22.560 align:start position:0%
+we going to use it for well we know that
+ 
+
+00:16:22.560 --> 00:16:24.389 align:start position:0%
+we going to use it for well we know that
+this<00:16:22.880><c> character</c><00:16:23.440><c> is</c><00:16:23.600><c> the</c><00:16:23.680><c> character</c><00:16:24.079><c> that</c><00:16:24.160><c> was</c>
+
+00:16:24.389 --> 00:16:24.399 align:start position:0%
+this character is the character that was
+ 
+
+00:16:24.399 --> 00:16:28.230 align:start position:0%
+this character is the character that was
+just<00:16:24.720><c> added</c><00:16:25.199><c> to</c><00:16:25.600><c> our</c><00:16:26.240><c> uh</c><00:16:26.720><c> window</c><00:16:27.360><c> in</c><00:16:27.519><c> our</c><00:16:27.759><c> s2</c>
+
+00:16:28.230 --> 00:16:28.240 align:start position:0%
+just added to our uh window in our s2
+ 
+
+00:16:28.240 --> 00:16:29.990 align:start position:0%
+just added to our uh window in our s2
+string<00:16:28.560><c> so</c><00:16:28.800><c> we're</c><00:16:28.959><c> gonna</c><00:16:29.199><c> increment</c><00:16:29.759><c> the</c>
+
+00:16:29.990 --> 00:16:30.000 align:start position:0%
+string so we're gonna increment the
+ 
+
+00:16:30.000 --> 00:16:33.430 align:start position:0%
+string so we're gonna increment the
+count<00:16:30.399><c> of</c><00:16:30.560><c> this</c><00:16:31.279><c> by</c><00:16:32.000><c> one</c><00:16:32.480><c> but</c><00:16:32.720><c> now</c><00:16:32.959><c> that</c><00:16:33.120><c> we</c>
+
+00:16:33.430 --> 00:16:33.440 align:start position:0%
+count of this by one but now that we
+ 
+
+00:16:33.440 --> 00:16:35.990 align:start position:0%
+count of this by one but now that we
+just<00:16:33.920><c> incremented</c><00:16:34.480><c> the</c><00:16:34.639><c> count</c><00:16:34.880><c> of</c><00:16:35.040><c> it</c><00:16:35.199><c> by</c><00:16:35.519><c> one</c>
+
+00:16:35.990 --> 00:16:36.000 align:start position:0%
+just incremented the count of it by one
+ 
+
+00:16:36.000 --> 00:16:39.590 align:start position:0%
+just incremented the count of it by one
+it<00:16:36.240><c> could</c><00:16:36.480><c> be</c><00:16:36.720><c> possible</c><00:16:37.440><c> that</c><00:16:37.839><c> now</c><00:16:38.480><c> it</c><00:16:38.800><c> exactly</c>
+
+00:16:39.590 --> 00:16:39.600 align:start position:0%
+it could be possible that now it exactly
+ 
+
+00:16:39.600 --> 00:16:43.590 align:start position:0%
+it could be possible that now it exactly
+equals<00:16:40.399><c> the</c><00:16:40.639><c> count</c><00:16:41.199><c> in</c><00:16:41.519><c> s1</c><00:16:42.639><c> so</c><00:16:42.880><c> if</c><00:16:43.120><c> that's</c><00:16:43.440><c> the</c>
+
+00:16:43.590 --> 00:16:43.600 align:start position:0%
+equals the count in s1 so if that's the
+ 
+
+00:16:43.600 --> 00:16:46.710 align:start position:0%
+equals the count in s1 so if that's the
+case<00:16:44.240><c> if</c><00:16:44.560><c> now</c><00:16:44.880><c> that</c><00:16:45.040><c> we</c><00:16:45.279><c> incremented</c><00:16:45.920><c> this</c><00:16:46.399><c> and</c>
+
+00:16:46.710 --> 00:16:46.720 align:start position:0%
+case if now that we incremented this and
+ 
+
+00:16:46.720 --> 00:16:50.069 align:start position:0%
+case if now that we incremented this and
+now<00:16:47.279><c> it</c><00:16:47.519><c> finally</c><00:16:48.000><c> equals</c><00:16:48.480><c> exactly</c><00:16:49.199><c> s1</c><00:16:49.759><c> count</c>
+
+00:16:50.069 --> 00:16:50.079 align:start position:0%
+now it finally equals exactly s1 count
+ 
+
+00:16:50.079 --> 00:16:52.389 align:start position:0%
+now it finally equals exactly s1 count
+at<00:16:50.160><c> the</c><00:16:50.320><c> same</c><00:16:50.639><c> index</c><00:16:51.040><c> at</c><00:16:51.199><c> the</c><00:16:51.279><c> same</c><00:16:51.519><c> character</c>
+
+00:16:52.389 --> 00:16:52.399 align:start position:0%
+at the same index at the same character
+ 
+
+00:16:52.399 --> 00:16:53.430 align:start position:0%
+at the same index at the same character
+then
+
+00:16:53.430 --> 00:16:53.440 align:start position:0%
+then
+ 
+
+00:16:53.440 --> 00:16:56.150 align:start position:0%
+then
+we<00:16:53.759><c> can</c><00:16:54.240><c> increment</c><00:16:54.720><c> our</c><00:16:54.880><c> number</c><00:16:55.199><c> of</c><00:16:55.360><c> matches</c>
+
+00:16:56.150 --> 00:16:56.160 align:start position:0%
+we can increment our number of matches
+ 
+
+00:16:56.160 --> 00:17:00.790 align:start position:0%
+we can increment our number of matches
+by<00:16:56.959><c> one</c><00:16:57.759><c> but</c><00:16:58.240><c> it's</c><00:16:58.639><c> possible</c><00:16:59.360><c> that</c><00:16:59.759><c> also</c><00:17:00.480><c> by</c>
+
+00:17:00.790 --> 00:17:00.800 align:start position:0%
+by one but it's possible that also by
+ 
+
+00:17:00.800 --> 00:17:02.949 align:start position:0%
+by one but it's possible that also by
+incrementing<00:17:01.360><c> this</c><00:17:01.839><c> instead</c><00:17:02.160><c> of</c><00:17:02.320><c> making</c><00:17:02.720><c> it</c>
+
+00:17:02.949 --> 00:17:02.959 align:start position:0%
+incrementing this instead of making it
+ 
+
+00:17:02.959 --> 00:17:05.829 align:start position:0%
+incrementing this instead of making it
+exactly<00:17:03.600><c> equal</c><00:17:04.240><c> we</c><00:17:04.480><c> made</c><00:17:04.720><c> it</c><00:17:05.039><c> too</c>
+
+00:17:05.829 --> 00:17:05.839 align:start position:0%
+exactly equal we made it too
+ 
+
+00:17:05.839 --> 00:17:08.309 align:start position:0%
+exactly equal we made it too
+large<00:17:06.400><c> we</c><00:17:06.640><c> made</c><00:17:06.880><c> it</c><00:17:07.039><c> exactly</c><00:17:07.679><c> bigger</c><00:17:08.000><c> than</c><00:17:08.160><c> the</c>
+
+00:17:08.309 --> 00:17:08.319 align:start position:0%
+large we made it exactly bigger than the
+ 
+
+00:17:08.319 --> 00:17:12.069 align:start position:0%
+large we made it exactly bigger than the
+target<00:17:08.959><c> by</c><00:17:09.520><c> one</c><00:17:10.079><c> that's</c><00:17:10.400><c> how</c><00:17:10.559><c> you</c><00:17:10.880><c> know</c><00:17:11.439><c> we</c>
+
+00:17:12.069 --> 00:17:12.079 align:start position:0%
+target by one that's how you know we
+ 
+
+00:17:12.079 --> 00:17:14.949 align:start position:0%
+target by one that's how you know we
+have<00:17:12.720><c> got</c><00:17:13.039><c> to</c><00:17:13.280><c> actually</c><00:17:13.839><c> decrement</c><00:17:14.799><c> the</c>
+
+00:17:14.949 --> 00:17:14.959 align:start position:0%
+have got to actually decrement the
+ 
+
+00:17:14.959 --> 00:17:17.750 align:start position:0%
+have got to actually decrement the
+number<00:17:15.360><c> of</c><00:17:15.520><c> matches</c><00:17:15.839><c> so</c><00:17:16.079><c> basically</c><00:17:16.559><c> else</c><00:17:17.120><c> if</c>
+
+00:17:17.750 --> 00:17:17.760 align:start position:0%
+number of matches so basically else if
+ 
+
+00:17:17.760 --> 00:17:19.270 align:start position:0%
+number of matches so basically else if
+s1
+
+00:17:19.270 --> 00:17:19.280 align:start position:0%
+s1
+ 
+
+00:17:19.280 --> 00:17:22.949 align:start position:0%
+s1
+count<00:17:19.839><c> at</c><00:17:20.079><c> the</c><00:17:20.240><c> same</c><00:17:20.559><c> index</c><00:17:21.360><c> plus</c><00:17:22.000><c> 1</c><00:17:22.400><c> is</c><00:17:22.640><c> now</c>
+
+00:17:22.949 --> 00:17:22.959 align:start position:0%
+count at the same index plus 1 is now
+ 
+
+00:17:22.959 --> 00:17:25.990 align:start position:0%
+count at the same index plus 1 is now
+exactly<00:17:23.439><c> equal</c><00:17:23.679><c> to</c><00:17:23.919><c> s2</c><00:17:24.400><c> count</c><00:17:24.799><c> at</c><00:17:25.039><c> the</c><00:17:25.280><c> index</c>
+
+00:17:25.990 --> 00:17:26.000 align:start position:0%
+exactly equal to s2 count at the index
+ 
+
+00:17:26.000 --> 00:17:28.390 align:start position:0%
+exactly equal to s2 count at the index
+and<00:17:26.160><c> if</c><00:17:26.400><c> this</c><00:17:26.640><c> is</c><00:17:26.720><c> the</c><00:17:26.959><c> case</c><00:17:27.439><c> that</c><00:17:27.679><c> means</c><00:17:28.000><c> they</c>
+
+00:17:28.390 --> 00:17:28.400 align:start position:0%
+and if this is the case that means they
+ 
+
+00:17:28.400 --> 00:17:31.590 align:start position:0%
+and if this is the case that means they
+were<00:17:28.880><c> equal</c><00:17:29.360><c> they</c><00:17:29.679><c> were</c><00:17:30.160><c> exactly</c><00:17:30.720><c> equal</c><00:17:31.360><c> but</c>
+
+00:17:31.590 --> 00:17:31.600 align:start position:0%
+were equal they were exactly equal but
+ 
+
+00:17:31.600 --> 00:17:34.549 align:start position:0%
+were equal they were exactly equal but
+we<00:17:31.760><c> just</c><00:17:32.240><c> incremented</c><00:17:32.880><c> s2</c><00:17:33.360><c> count</c><00:17:33.679><c> by</c><00:17:33.919><c> one</c><00:17:34.320><c> so</c>
+
+00:17:34.549 --> 00:17:34.559 align:start position:0%
+we just incremented s2 count by one so
+ 
+
+00:17:34.559 --> 00:17:37.510 align:start position:0%
+we just incremented s2 count by one so
+now<00:17:34.799><c> we</c><00:17:35.200><c> made</c><00:17:35.600><c> them</c><00:17:36.000><c> unequal</c><00:17:36.799><c> so</c><00:17:37.039><c> then</c><00:17:37.280><c> we</c>
+
+00:17:37.510 --> 00:17:37.520 align:start position:0%
+now we made them unequal so then we
+ 
+
+00:17:37.520 --> 00:17:39.270 align:start position:0%
+now we made them unequal so then we
+actually<00:17:37.760><c> have</c><00:17:37.919><c> to</c><00:17:38.160><c> decrement</c><00:17:38.720><c> the</c><00:17:38.799><c> number</c><00:17:39.120><c> of</c>
+
+00:17:39.270 --> 00:17:39.280 align:start position:0%
+actually have to decrement the number of
+ 
+
+00:17:39.280 --> 00:17:42.150 align:start position:0%
+actually have to decrement the number of
+matches<00:17:40.000><c> by</c><00:17:40.320><c> one</c><00:17:40.960><c> okay</c><00:17:41.280><c> and</c><00:17:41.440><c> that's</c><00:17:41.840><c> pretty</c>
+
+00:17:42.150 --> 00:17:42.160 align:start position:0%
+matches by one okay and that's pretty
+ 
+
+00:17:42.160 --> 00:17:43.990 align:start position:0%
+matches by one okay and that's pretty
+much<00:17:42.400><c> the</c><00:17:42.559><c> entire</c><00:17:42.960><c> algorithm</c><00:17:43.600><c> but</c><00:17:43.760><c> there's</c>
+
+00:17:43.990 --> 00:17:44.000 align:start position:0%
+much the entire algorithm but there's
+ 
+
+00:17:44.000 --> 00:17:45.350 align:start position:0%
+much the entire algorithm but there's
+one<00:17:44.240><c> last</c><00:17:44.480><c> thing</c><00:17:44.720><c> and</c><00:17:44.799><c> i'm</c><00:17:44.960><c> just</c><00:17:45.039><c> going</c><00:17:45.120><c> to</c><00:17:45.200><c> go</c>
+
+00:17:45.350 --> 00:17:45.360 align:start position:0%
+one last thing and i'm just going to go
+ 
+
+00:17:45.360 --> 00:17:46.789 align:start position:0%
+one last thing and i'm just going to go
+ahead<00:17:45.440><c> and</c><00:17:45.600><c> actually</c><00:17:45.919><c> copy</c><00:17:46.240><c> and</c><00:17:46.320><c> paste</c><00:17:46.640><c> this</c>
+
+00:17:46.789 --> 00:17:46.799 align:start position:0%
+ahead and actually copy and paste this
+ 
+
+00:17:46.799 --> 00:17:48.950 align:start position:0%
+ahead and actually copy and paste this
+entire<00:17:47.280><c> block</c>
+
+00:17:48.950 --> 00:17:48.960 align:start position:0%
+entire block
+ 
+
+00:17:48.960 --> 00:17:50.870 align:start position:0%
+entire block
+because<00:17:49.600><c> we're</c><00:17:49.760><c> going</c><00:17:49.840><c> to</c><00:17:50.000><c> do</c><00:17:50.240><c> the</c><00:17:50.400><c> exact</c>
+
+00:17:50.870 --> 00:17:50.880 align:start position:0%
+because we're going to do the exact
+ 
+
+00:17:50.880 --> 00:17:52.950 align:start position:0%
+because we're going to do the exact
+opposite<00:17:51.440><c> thing</c><00:17:51.919><c> we</c><00:17:52.080><c> know</c><00:17:52.240><c> that</c><00:17:52.400><c> we're</c><00:17:52.640><c> adding</c>
+
+00:17:52.950 --> 00:17:52.960 align:start position:0%
+opposite thing we know that we're adding
+ 
+
+00:17:52.960 --> 00:17:54.630 align:start position:0%
+opposite thing we know that we're adding
+a<00:17:53.120><c> character</c><00:17:53.440><c> to</c><00:17:53.600><c> the</c><00:17:53.840><c> right</c><00:17:54.080><c> of</c><00:17:54.240><c> our</c><00:17:54.320><c> window</c>
+
+00:17:54.630 --> 00:17:54.640 align:start position:0%
+a character to the right of our window
+ 
+
+00:17:54.640 --> 00:17:58.549 align:start position:0%
+a character to the right of our window
+but<00:17:54.799><c> at</c><00:17:54.960><c> index</c><00:17:55.600><c> l</c><00:17:56.080><c> at</c><00:17:56.320><c> index</c><00:17:56.960><c> left</c><00:17:57.760><c> we</c><00:17:58.000><c> removed</c>
+
+00:17:58.549 --> 00:17:58.559 align:start position:0%
+but at index l at index left we removed
+ 
+
+00:17:58.559 --> 00:18:00.470 align:start position:0%
+but at index l at index left we removed
+a<00:17:58.640><c> character</c><00:17:59.440><c> so</c><00:18:00.000><c> we're</c><00:18:00.160><c> just</c><00:18:00.320><c> going</c><00:18:00.400><c> to</c>
+
+00:18:00.470 --> 00:18:00.480 align:start position:0%
+a character so we're just going to
+ 
+
+00:18:00.480 --> 00:18:02.310 align:start position:0%
+a character so we're just going to
+replace<00:18:00.960><c> this</c><00:18:01.120><c> with</c><00:18:01.280><c> the</c><00:18:01.440><c> opposite</c><00:18:01.919><c> case</c>
+
+00:18:02.310 --> 00:18:02.320 align:start position:0%
+replace this with the opposite case
+ 
+
+00:18:02.320 --> 00:18:05.029 align:start position:0%
+replace this with the opposite case
+right<00:18:02.559><c> here</c><00:18:02.799><c> i</c><00:18:02.880><c> replace</c><00:18:03.280><c> the</c><00:18:03.520><c> r</c><00:18:03.760><c> with</c><00:18:03.919><c> an</c><00:18:04.160><c> l</c><00:18:04.720><c> and</c>
+
+00:18:05.029 --> 00:18:05.039 align:start position:0%
+right here i replace the r with an l and
+ 
+
+00:18:05.039 --> 00:18:07.350 align:start position:0%
+right here i replace the r with an l and
+here<00:18:05.600><c> instead</c><00:18:05.840><c> of</c><00:18:06.080><c> incrementing</c><00:18:06.880><c> the</c><00:18:07.039><c> count</c>
+
+00:18:07.350 --> 00:18:07.360 align:start position:0%
+here instead of incrementing the count
+ 
+
+00:18:07.360 --> 00:18:08.549 align:start position:0%
+here instead of incrementing the count
+we're<00:18:07.520><c> going</c><00:18:07.600><c> to</c><00:18:07.679><c> decrement</c><00:18:08.160><c> the</c><00:18:08.320><c> count</c>
+
+00:18:08.549 --> 00:18:08.559 align:start position:0%
+we're going to decrement the count
+ 
+
+00:18:08.559 --> 00:18:09.750 align:start position:0%
+we're going to decrement the count
+because<00:18:08.799><c> this</c><00:18:08.960><c> is</c><00:18:09.039><c> the</c><00:18:09.200><c> character</c><00:18:09.520><c> that</c><00:18:09.679><c> we</c>
+
+00:18:09.750 --> 00:18:09.760 align:start position:0%
+because this is the character that we
+ 
+
+00:18:09.760 --> 00:18:11.830 align:start position:0%
+because this is the character that we
+just<00:18:10.000><c> removed</c><00:18:10.559><c> from</c><00:18:10.799><c> the</c><00:18:11.039><c> left</c><00:18:11.280><c> side</c><00:18:11.600><c> of</c><00:18:11.679><c> our</c>
+
+00:18:11.830 --> 00:18:11.840 align:start position:0%
+just removed from the left side of our
+ 
+
+00:18:11.840 --> 00:18:14.789 align:start position:0%
+just removed from the left side of our
+window<00:18:12.559><c> and</c><00:18:13.039><c> here</c><00:18:13.520><c> what</c><00:18:13.679><c> we're</c><00:18:13.919><c> going</c><00:18:14.000><c> to</c><00:18:14.160><c> say</c>
+
+00:18:14.789 --> 00:18:14.799 align:start position:0%
+window and here what we're going to say
+ 
+
+00:18:14.799 --> 00:18:16.470 align:start position:0%
+window and here what we're going to say
+this<00:18:15.200><c> is</c><00:18:15.280><c> actually</c><00:18:15.520><c> going</c><00:18:15.679><c> to</c><00:18:15.760><c> stay</c><00:18:16.000><c> the</c><00:18:16.080><c> same</c>
+
+00:18:16.470 --> 00:18:16.480 align:start position:0%
+this is actually going to stay the same
+ 
+
+00:18:16.480 --> 00:18:18.870 align:start position:0%
+this is actually going to stay the same
+if<00:18:16.880><c> somehow</c><00:18:17.360><c> by</c><00:18:17.600><c> decrementing</c><00:18:18.160><c> this</c><00:18:18.400><c> we</c><00:18:18.640><c> made</c>
+
+00:18:18.870 --> 00:18:18.880 align:start position:0%
+if somehow by decrementing this we made
+ 
+
+00:18:18.880 --> 00:18:21.270 align:start position:0%
+if somehow by decrementing this we made
+the<00:18:19.039><c> counts</c><00:18:19.520><c> exactly</c><00:18:20.000><c> equal</c><00:18:20.799><c> then</c><00:18:21.039><c> we're</c>
+
+00:18:21.270 --> 00:18:21.280 align:start position:0%
+the counts exactly equal then we're
+ 
+
+00:18:21.280 --> 00:18:24.150 align:start position:0%
+the counts exactly equal then we're
+going<00:18:21.360><c> to</c><00:18:21.919><c> increment</c><00:18:22.320><c> our</c><00:18:22.400><c> matches</c><00:18:22.799><c> by</c><00:18:23.039><c> 1.</c><00:18:23.679><c> but</c>
+
+00:18:24.150 --> 00:18:24.160 align:start position:0%
+going to increment our matches by 1. but
+ 
+
+00:18:24.160 --> 00:18:27.510 align:start position:0%
+going to increment our matches by 1. but
+if<00:18:24.480><c> somehow</c><00:18:24.960><c> by</c><00:18:25.280><c> decrementing</c><00:18:26.160><c> this</c><00:18:26.559><c> value</c><00:18:27.280><c> we</c>
+
+00:18:27.510 --> 00:18:27.520 align:start position:0%
+if somehow by decrementing this value we
+ 
+
+00:18:27.520 --> 00:18:30.070 align:start position:0%
+if somehow by decrementing this value we
+changed<00:18:28.000><c> it</c><00:18:28.160><c> from</c><00:18:28.559><c> being</c><00:18:29.039><c> exactly</c><00:18:29.600><c> equal</c><00:18:29.919><c> to</c>
+
+00:18:30.070 --> 00:18:30.080 align:start position:0%
+changed it from being exactly equal to
+ 
+
+00:18:30.080 --> 00:18:32.870 align:start position:0%
+changed it from being exactly equal to
+now<00:18:30.320><c> being</c><00:18:30.720><c> too</c><00:18:31.120><c> small</c><00:18:31.840><c> meaning</c><00:18:32.400><c> it's</c><00:18:32.640><c> now</c>
+
+00:18:32.870 --> 00:18:32.880 align:start position:0%
+now being too small meaning it's now
+ 
+
+00:18:32.880 --> 00:18:35.669 align:start position:0%
+now being too small meaning it's now
+going<00:18:33.039><c> to</c><00:18:33.120><c> be</c><00:18:33.360><c> equal</c><00:18:33.679><c> to</c><00:18:33.919><c> s</c><00:18:34.240><c> count</c><00:18:34.720><c> s1</c><00:18:35.280><c> count</c>
+
+00:18:35.669 --> 00:18:35.679 align:start position:0%
+going to be equal to s count s1 count
+ 
+
+00:18:35.679 --> 00:18:38.230 align:start position:0%
+going to be equal to s count s1 count
+minus<00:18:36.400><c> 1.</c><00:18:36.880><c> if</c><00:18:37.039><c> we</c><00:18:37.200><c> changed</c><00:18:37.600><c> it</c><00:18:37.679><c> from</c><00:18:37.919><c> being</c>
+
+00:18:38.230 --> 00:18:38.240 align:start position:0%
+minus 1. if we changed it from being
+ 
+
+00:18:38.240 --> 00:18:40.470 align:start position:0%
+minus 1. if we changed it from being
+exactly<00:18:38.720><c> equal</c><00:18:38.960><c> to</c><00:18:39.200><c> now</c><00:18:39.440><c> being</c><00:18:39.760><c> slightly</c><00:18:40.240><c> too</c>
+
+00:18:40.470 --> 00:18:40.480 align:start position:0%
+exactly equal to now being slightly too
+ 
+
+00:18:40.480 --> 00:18:43.190 align:start position:0%
+exactly equal to now being slightly too
+small<00:18:41.039><c> that's</c><00:18:41.360><c> when</c><00:18:41.600><c> we</c><00:18:41.919><c> are</c><00:18:42.080><c> going</c><00:18:42.400><c> to</c>
+
+00:18:43.190 --> 00:18:43.200 align:start position:0%
+small that's when we are going to
+ 
+
+00:18:43.200 --> 00:18:45.510 align:start position:0%
+small that's when we are going to
+decrement<00:18:43.840><c> the</c><00:18:43.919><c> number</c><00:18:44.240><c> of</c><00:18:44.400><c> matches</c><00:18:45.200><c> right</c><00:18:45.360><c> so</c>
+
+00:18:45.510 --> 00:18:45.520 align:start position:0%
+decrement the number of matches right so
+ 
+
+00:18:45.520 --> 00:18:46.950 align:start position:0%
+decrement the number of matches right so
+we<00:18:45.679><c> really</c><00:18:45.919><c> didn't</c><00:18:46.160><c> have</c><00:18:46.240><c> to</c><00:18:46.320><c> make</c><00:18:46.559><c> too</c><00:18:46.720><c> many</c>
+
+00:18:46.950 --> 00:18:46.960 align:start position:0%
+we really didn't have to make too many
+ 
+
+00:18:46.960 --> 00:18:49.110 align:start position:0%
+we really didn't have to make too many
+changes<00:18:47.360><c> to</c><00:18:47.520><c> this</c><00:18:47.760><c> block</c><00:18:48.080><c> of</c><00:18:48.160><c> code</c><00:18:48.640><c> but</c><00:18:48.799><c> that's</c>
+
+00:18:49.110 --> 00:18:49.120 align:start position:0%
+changes to this block of code but that's
+ 
+
+00:18:49.120 --> 00:18:51.750 align:start position:0%
+changes to this block of code but that's
+actually<00:18:49.760><c> the</c><00:18:49.919><c> entire</c><00:18:50.320><c> algorithm</c><00:18:50.880><c> except</c><00:18:51.600><c> we</c>
+
+00:18:51.750 --> 00:18:51.760 align:start position:0%
+actually the entire algorithm except we
+ 
+
+00:18:51.760 --> 00:18:52.870 align:start position:0%
+actually the entire algorithm except we
+know<00:18:51.919><c> our</c><00:18:52.080><c> right</c><00:18:52.320><c> pointer</c><00:18:52.559><c> is</c><00:18:52.720><c> being</c>
+
+00:18:52.870 --> 00:18:52.880 align:start position:0%
+know our right pointer is being
+ 
+
+00:18:52.880 --> 00:18:55.190 align:start position:0%
+know our right pointer is being
+incremented<00:18:53.360><c> by</c><00:18:53.520><c> one</c><00:18:53.840><c> each</c><00:18:54.080><c> time</c><00:18:54.480><c> but</c><00:18:54.640><c> we</c><00:18:54.880><c> also</c>
+
+00:18:55.190 --> 00:18:55.200 align:start position:0%
+incremented by one each time but we also
+ 
+
+00:18:55.200 --> 00:18:57.029 align:start position:0%
+incremented by one each time but we also
+want<00:18:55.440><c> to</c><00:18:55.520><c> make</c><00:18:55.760><c> sure</c><00:18:56.000><c> our</c><00:18:56.240><c> left</c><00:18:56.559><c> pointer</c><00:18:56.960><c> is</c>
+
+00:18:57.029 --> 00:18:57.039 align:start position:0%
+want to make sure our left pointer is
+ 
+
+00:18:57.039 --> 00:18:58.950 align:start position:0%
+want to make sure our left pointer is
+being<00:18:57.280><c> incremented</c><00:18:57.840><c> by</c><00:18:58.000><c> one</c><00:18:58.320><c> each</c><00:18:58.559><c> time</c><00:18:58.799><c> as</c>
+
+00:18:58.950 --> 00:18:58.960 align:start position:0%
+being incremented by one each time as
+ 
+
+00:18:58.960 --> 00:19:01.990 align:start position:0%
+being incremented by one each time as
+well<00:18:59.360><c> and</c><00:18:59.600><c> after</c><00:19:00.000><c> that</c><00:19:00.480><c> we</c><00:19:00.640><c> are</c><00:19:00.799><c> done</c><00:19:01.440><c> then</c>
+
+00:19:01.990 --> 00:19:02.000 align:start position:0%
+well and after that we are done then
+ 
+
+00:19:02.000 --> 00:19:04.789 align:start position:0%
+well and after that we are done then
+finally<00:19:02.480><c> we</c><00:19:02.640><c> can</c><00:19:02.880><c> return</c><00:19:03.679><c> false</c><00:19:04.240><c> well</c><00:19:04.480><c> not</c>
+
+00:19:04.789 --> 00:19:04.799 align:start position:0%
+finally we can return false well not
+ 
+
+00:19:04.799 --> 00:19:06.549 align:start position:0%
+finally we can return false well not
+quite<00:19:05.120><c> because</c><00:19:05.360><c> it's</c><00:19:05.520><c> possible</c><00:19:06.000><c> that</c><00:19:06.240><c> after</c>
+
+00:19:06.549 --> 00:19:06.559 align:start position:0%
+quite because it's possible that after
+ 
+
+00:19:06.559 --> 00:19:08.950 align:start position:0%
+quite because it's possible that after
+our<00:19:06.720><c> loop</c><00:19:07.039><c> eggs</c><00:19:07.440><c> are</c><00:19:07.840><c> exited</c><00:19:08.320><c> right</c><00:19:08.559><c> the</c><00:19:08.720><c> last</c>
+
+00:19:08.950 --> 00:19:08.960 align:start position:0%
+our loop eggs are exited right the last
+ 
+
+00:19:08.960 --> 00:19:11.029 align:start position:0%
+our loop eggs are exited right the last
+iteration<00:19:09.440><c> of</c><00:19:09.600><c> our</c><00:19:09.679><c> loop</c><00:19:10.080><c> we</c><00:19:10.240><c> didn't</c><00:19:10.640><c> check</c>
+
+00:19:11.029 --> 00:19:11.039 align:start position:0%
+iteration of our loop we didn't check
+ 
+
+00:19:11.039 --> 00:19:13.029 align:start position:0%
+iteration of our loop we didn't check
+after<00:19:11.440><c> that</c><00:19:11.679><c> if</c><00:19:11.840><c> our</c><00:19:12.000><c> matches</c><00:19:12.480><c> were</c><00:19:12.640><c> equal</c><00:19:12.880><c> to</c>
+
+00:19:13.029 --> 00:19:13.039 align:start position:0%
+after that if our matches were equal to
+ 
+
+00:19:13.039 --> 00:19:14.789 align:start position:0%
+after that if our matches were equal to
+26<00:19:13.520><c> so</c><00:19:13.760><c> instead</c><00:19:14.160><c> we're</c><00:19:14.320><c> actually</c><00:19:14.559><c> going</c><00:19:14.720><c> to</c>
+
+00:19:14.789 --> 00:19:14.799 align:start position:0%
+26 so instead we're actually going to
+ 
+
+00:19:14.799 --> 00:19:15.990 align:start position:0%
+26 so instead we're actually going to
+return
+
+00:19:15.990 --> 00:19:16.000 align:start position:0%
+return
+ 
+
+00:19:16.000 --> 00:19:18.870 align:start position:0%
+return
+does<00:19:16.480><c> matches</c><00:19:17.120><c> equal</c><00:19:17.760><c> 26</c><00:19:18.400><c> so</c><00:19:18.559><c> it's</c><00:19:18.720><c> going</c><00:19:18.799><c> to</c>
+
+00:19:18.870 --> 00:19:18.880 align:start position:0%
+does matches equal 26 so it's going to
+ 
+
+00:19:18.880 --> 00:19:21.029 align:start position:0%
+does matches equal 26 so it's going to
+return<00:19:19.280><c> true</c><00:19:19.600><c> if</c><00:19:19.760><c> it</c><00:19:19.840><c> does</c><00:19:20.160><c> equal</c><00:19:20.400><c> 26</c><00:19:20.880><c> it's</c>
+
+00:19:21.029 --> 00:19:21.039 align:start position:0%
+return true if it does equal 26 it's
+ 
+
+00:19:21.039 --> 00:19:22.549 align:start position:0%
+return true if it does equal 26 it's
+going<00:19:21.120><c> to</c><00:19:21.200><c> return</c><00:19:21.600><c> false</c><00:19:21.919><c> if</c><00:19:22.080><c> it</c><00:19:22.240><c> doesn't</c>
+
+00:19:22.549 --> 00:19:22.559 align:start position:0%
+going to return false if it doesn't
+ 
+
+00:19:22.559 --> 00:19:24.870 align:start position:0%
+going to return false if it doesn't
+equal<00:19:22.880><c> 26</c><00:19:23.600><c> now</c><00:19:23.760><c> let's</c><00:19:24.000><c> run</c><00:19:24.160><c> the</c><00:19:24.320><c> code</c><00:19:24.640><c> to</c><00:19:24.720><c> make</c>
+
+00:19:24.870 --> 00:19:24.880 align:start position:0%
+equal 26 now let's run the code to make
+ 
+
+00:19:24.880 --> 00:19:26.950 align:start position:0%
+equal 26 now let's run the code to make
+sure<00:19:25.039><c> that</c><00:19:25.280><c> it</c><00:19:25.440><c> works</c><00:19:26.000><c> and</c><00:19:26.160><c> on</c><00:19:26.320><c> the</c><00:19:26.480><c> left</c><00:19:26.799><c> you</c>
+
+00:19:26.950 --> 00:19:26.960 align:start position:0%
+sure that it works and on the left you
+ 
+
+00:19:26.960 --> 00:19:28.390 align:start position:0%
+sure that it works and on the left you
+can<00:19:27.039><c> see</c><00:19:27.200><c> that</c><00:19:27.360><c> it</c><00:19:27.520><c> does</c><00:19:27.760><c> and</c><00:19:27.919><c> it's</c><00:19:28.080><c> pretty</c>
+
+00:19:28.390 --> 00:19:28.400 align:start position:0%
+can see that it does and it's pretty
+ 
+
+00:19:28.400 --> 00:19:30.070 align:start position:0%
+can see that it does and it's pretty
+efficient<00:19:28.799><c> so</c><00:19:28.960><c> i</c><00:19:29.120><c> really</c><00:19:29.360><c> hope</c><00:19:29.600><c> that</c><00:19:29.679><c> this</c><00:19:29.840><c> was</c>
+
+00:19:30.070 --> 00:19:30.080 align:start position:0%
+efficient so i really hope that this was
+ 
+
+00:19:30.080 --> 00:19:32.070 align:start position:0%
+efficient so i really hope that this was
+helpful<00:19:30.640><c> if</c><00:19:30.799><c> it</c><00:19:30.960><c> was</c><00:19:31.520><c> please</c><00:19:31.760><c> like</c><00:19:32.000><c> and</c>
+
+00:19:32.070 --> 00:19:32.080 align:start position:0%
+helpful if it was please like and
+ 
+
+00:19:32.080 --> 00:19:33.830 align:start position:0%
+helpful if it was please like and
+subscribe<00:19:32.559><c> it</c><00:19:32.720><c> really</c><00:19:32.960><c> supports</c><00:19:33.440><c> the</c><00:19:33.520><c> channel</c>
+
+00:19:33.830 --> 00:19:33.840 align:start position:0%
+subscribe it really supports the channel
+ 
+
+00:19:33.840 --> 00:19:35.430 align:start position:0%
+subscribe it really supports the channel
+a<00:19:33.919><c> lot</c><00:19:34.080><c> consider</c><00:19:34.480><c> checking</c><00:19:34.799><c> out</c><00:19:34.880><c> my</c><00:19:35.039><c> patreon</c>
+
+00:19:35.430 --> 00:19:35.440 align:start position:0%
+a lot consider checking out my patreon
+ 
+
+00:19:35.440 --> 00:19:36.549 align:start position:0%
+a lot consider checking out my patreon
+where<00:19:35.600><c> you</c><00:19:35.679><c> can</c><00:19:35.840><c> further</c><00:19:36.080><c> support</c><00:19:36.400><c> the</c>
+
+00:19:36.549 --> 00:19:36.559 align:start position:0%
+where you can further support the
+ 
+
+00:19:36.559 --> 00:19:38.070 align:start position:0%
+where you can further support the
+channel<00:19:36.880><c> and</c><00:19:37.039><c> hopefully</c><00:19:37.600><c> i'll</c><00:19:37.760><c> see</c><00:19:37.919><c> you</c>
+
+00:19:38.070 --> 00:19:38.080 align:start position:0%
+channel and hopefully i'll see you
+ 
+
+00:19:38.080 --> 00:19:41.760 align:start position:0%
+channel and hopefully i'll see you
+pretty<00:19:38.320><c> soon</c><00:19:38.880><c> thanks</c><00:19:39.120><c> for</c><00:19:39.280><c> watching</c>
+

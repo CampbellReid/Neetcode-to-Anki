@@ -1,0 +1,333 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+let's solve the problem rotting oranges
+we're given an m by n grid where each
+cell could have three different values
+it could have a zero which represents
+empty it could have a one which
+represents a fresh orange or it could be
+a two which represents a rotten orange
+every minute that passes any fresh
+orange that is four directionally
+adjacent meaning either up down left or
+right so if it's right next to a rotten
+orange then that fresh orange will also
+become rotten we want to return the
+minimum number of minutes that must
+elapse until no fresh orange exists but
+it might be impossible you know suppose
+if a fresh orange was actually not next
+to any other oranges at all including
+any rotten oranges then that fresh
+orange would never become rotten so if
+it's not possible then we can return
+negative one but if it is possible we
+return the minimum number of minutes
+that it takes so you can see in this
+example which is actually a very simple
+one because we are only given a single
+rotten orange but we could be given
+multiple rotten oranges but in this case
+we see that this is the rotten orange
+right right now we're at time equals
+zero and let's say one unit of time
+passes now we're at time equals one what
+happened well the adjacent oranges to
+the rotten one also became rotten so
+this is rotten now and this is rotten
+now okay now another unit of time passes
+it's time equals to what happened well
+all the other oranges which were
+adjacent to rotten oranges like these
+two also became rotten okay now we're at
+time equals three what happened well
+this orange which is adjacent to a
+rotten orange also became rotten now
+we're at time equals four and this last
+orange also became rotten because it's
+next to a rock it's next to a rotten
+orange so at time equals four
+four minutes later all oranges are
+rotten so we return four that's exactly
+what they expect in this example let's
+say this is the grid that we were given
+and these orange things are the oranges
+and let's say these two initially were
+rotten what kind of algorithm can we do
+to make sure that the adjacent oranges
+also become rotten and then track the
+time that it takes for you know each
+layer to become rotten well you could
+try a dfs right that's like the first
+graph algorithm that most people try in
+this case it's not really going to work
+we run a dfs let's say on just one of
+the or the rotten oranges let's say we
+pick this one first okay we run a dfs on
+the adjacent spots okay here's an
+adjacent spot so this becomes rotten
+this becomes rotten that's time equals
+two then this becomes rotten at time
+equals three then these two become
+rotten at time equals four and then
+lastly this one but that doesn't really
+work because it took us five units of
+time to make these rotten but that's not
+actually what's gonna happen right these
+two initial rotten oranges are
+simultaneously going to be making the
+adjacent oranges rotten right like after
+one unit of time this orange is going to
+become rotten from this one and this one
+is going to become rotten from this one
+after another unit of time this is going
+to become rotten from this one and this
+is going to become rotten from this one
+and this is going to become rotten from
+this one as well after two units of time
+after three units of time this last one
+is going to become rotten either from
+the one above it or from the one to the
+right of it so in three units of time
+all of the oranges became rotten but we
+didn't use dfs if you were watching
+carefully you might have noticed that
+the the main algorithm we were actually
+using
+is bfs breadth first search right which
+is also a standard algorithm and the
+reason it's helpful for us is because we
+don't have to finish running dfs on a
+single rotten orange we can run the bfs
+algorithm simultaneously on multiple
+sources at the same time so basically
+what we're doing is running multi-source
+bfs and usually bfs is implemented with
+a queue data structure so basically what
+we're going to be doing is initializing
+our cue with the initial rotten oranges
+we're going to pop through every initial
+rotten orange and then we're going to
+call that one unit of time and then to
+our q we're going to add the next rotten
+oranges so these two would not be in our
+queue anymore but this one over here and
+this one over here would then be added
+to our q and then we're gonna you know
+pop through those ones as well and then
+call it our second unit of time and then
+keep going like that but how do we know
+when we're actually finished well once
+our cue is empty then of course we can
+stop but it's not guaranteed that we
+will actually have made every single
+orange rotten suppose there was an
+orange all the way over here that's a
+fresh orange it's not rotten yet of
+course we know that these oranges are
+going to become rotten but this is not
+going to become rotten so basically
+after our cue is completely popped what
+we're going to notice is there is a
+fresh orange remaining and the way we're
+gonna know about that is because we
+should keep track of how many fresh
+oranges there are initially right in our
+case i think there's about uh seven
+fresh oranges right and then by the time
+our bfs algorithm is done we're down to
+one fresh orange because we still have a
+positive number of fresh oranges that
+means we were not able to make every
+orange rotten and therefore we're gonna
+have to return negative one as our
+result but if we were able to
+do that right let's say this orange
+didn't exist we you know make all these
+oranges rotten then we keep track of how
+much time did it take us to make all of
+the oranges rotten it was three units of
+time i think so then we're going to
+return three so that's the overall
+algorithm as you can kind of tell from
+the bfs it's multi-sourced but we're
+still only going to be visiting each uh
+orange each cell in our grid at most
+once so we can say that the time
+complexity is going to be n times m
+where these are the dimensions of the
+grid and i think in the worst case that
+the memory complexity is also going to
+be the same because we're going to be
+using a q and all that so that's enough
+for us to get into the code so let's do
+that now okay so now let's code it up so
+the first thing we're going to do is
+initialize our deck it's going to be
+empty initially we're going to also have
+two more variables one is going to be
+the time to keep track of how much time
+has passed and another is going to be
+called fresh to keep track of how many
+fresh oranges we have at any given point
+in time initially let's just set these
+both to zero but let's actually iterate
+over the entire grid and actually before
+we do that it would be good to get the
+dimensions of the grid so the number of
+rows and the number of columns so now
+let's iterate over the entire grid just
+to do some pre-work the pre-work is
+going to be doing two things at the same
+time so we can just write some nested
+loops to iterate over the grid one we're
+going to be doing is counting the number
+of fresh oranges right so if any cell in
+the grid is equal to one remember that
+ones represent fresh oranges so if this
+is equal to one we can just increment
+the number of fresh oranges the second
+thing we also want to be doing is to
+identify all of the rotting oranges
+because remember we need to add them to
+our queue so that we can actually run
+the bfs in the first place right the
+multi-source bfs so if any of these grid
+cells are equal to 2 that means it's a
+rotting orange and that means we can go
+ahead and append it to our queue and by
+append we're going to be appending the
+coordinates of that rotting orange so
+next what we're going to be doing is
+running our while loop while our queue
+is non-empty and we can say that if
+fresh is also greater than zero right
+basically if either of these uh you know
+if our cube becomes empty or if fresh
+equals zero then the loop is going to
+stop if neither of those are true then
+we're going to continue the loop so now
+we have a certain number of rotten
+oranges in our queue and we want to
+actually pop every single one of them so
+basically we're going to create another
+loop while
+you know let's say we have three oranges
+in our queue then we're gonna iterate
+through the loop three times we're gonna
+pop those three oranges but at the same
+time we're actually gonna be adding uh
+the adjacent oranges to that q as well
+marking them as rotten so that's why
+we're creating the while the for loop
+rather than saying while the queue is
+non-empty because uh this will just take
+a snapshot so for example if the length
+of our queue is equal to three this loop
+will execute three times even though
+inside of the loop we're going to be
+adding to the queue updating its length
+but this uh you know the range function
+isn't going to execute each time after
+that we want to of course pop from the
+queue and when we pop we're popping the
+coordinates of the rotten orange at this
+point we want to go through all of the
+four adjacent spots for this orange so
+what we're going to say is drdc
+the difference in run difference in a
+column in directions and we're actually
+going to create a variable for this
+outside of our loop and it's basically
+the four directions that we could move
+in so it's going to be pairs let's say 0
+1 and 0
+negative 1 and 1 zero and negative one
+zero so these are the four directions we
+could move in so that's what dr dc is
+going to represent so
+let's actually calculate what the row
+would be so initially we're starting at
+rc and then the you know adjacent spot
+that we're looking at is going to be d r
+plus r and d c plus c so this is one of
+the four adjacent spots row column and
+what we want to do with this position is
+make sure that it's in bounds and that
+it's a non-rotten orange so meaning that
+it's a fresh orange let's actually
+change this comment to that and it's a
+fresh orange and then we want to make it
+rotten so to save a bit of time i'm
+actually just going to copy and paste
+this so what we're doing here is
+checking that the row
+basically if the row is out of bounds if
+it's less than zero or if it's too big
+or if the column is out of bounds or
+it's too big or the grid cell is
+actually not a fresh orange if any of
+these are true we're going to continue
+to the next iteration of the loop
+because that means this is either out of
+bounds or it's not a fresh orange but if
+it is a fresh orange and it's in bounds
+then we want to make it into a rotten
+orange so we can do that very easily
+like this and we also want to add that
+position to our queue so that row column
+pair so that over the next iteration of
+the while loop that we can include that
+right even though we're appending to the
+queue this portion of the you know for
+loop isn't going to change right that
+length was a snapshot we're not going to
+continuously update that and last but
+not least make sure to uh decrement the
+number of fresh oranges because that's
+one of the you know indicators of if we
+can stop the algorithm or not and
+remember this loop was going through all
+of the rotten oranges and then the
+adjacent
+fresh oranges were being set to rotten
+as well so that actually happened in one
+unit of time so after that loop is done
+executing we can increment our time by
+one after uh this loop is finished then
+it's time to return our result but how
+do we know if we can return the time or
+if we have to return negative one well
+we can return the time if fresh is equal
+to zero that means we made every single
+orange rotten but else if it's not then
+we have to return negative one that
+means there's some oranges that we just
+can't make rotten okay so that's the
+whole code now lastly let's just run it
+to make sure that it works and actually
+i just noticed i made a couple of little
+mistakes so over here on this line i
+forgot one of the or statements so let's
+add that as well and actually here we
+have q.pop but remember we're actually
+adding to the queue when we append we're
+adding to the right side of the queue so
+when we pop from the queue we want to
+make sure we're popping from the left
+because we want to pop you know the more
+recently added oranges right that's why
+we're taking this length if the length
+was three we would want to pop the 3
+oranges from the left side not the same
+oranges that we're adding to the queue
+so make sure that this is a pop left so
+that being said let's run the code to
+make sure that it works and as you can
+see on the left yes it does and it's
+pretty efficient so i really hope that
+this was helpful if it was please like
+and subscribe it really supports the
+channel a lot consider checking out my
+patreon where you can further support
+the channel and hopefully i'll see you

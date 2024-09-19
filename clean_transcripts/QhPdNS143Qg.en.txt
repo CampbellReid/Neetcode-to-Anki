@@ -1,0 +1,389 @@
+everyone welcome back and let's write
+some more neat code today so today let's
+solve the problem valid parentheses
+string we've solved a few parentheses
+related problems on this channel but
+this is a pretty unique one so we're
+given a string s and it could contain
+three types of characters a left
+parenthesis a right parenthesis and a
+wild card character and the wild card
+character could
+be a three possibilities it could be an
+empty string which is the simplest right
+so basically in that case we would
+ignore the wild card it could be a right
+parenthesis or it could be a left
+parenthesis so
+each time we reach a wild card
+in terms of a decision tree we really
+have three branches right we have three
+different things we could consider it
+could be a space it could be a left
+parenthesis it could be a right
+parenthesis so already we're kind of
+getting the intuition of how to solve
+this problem or at least enumerate all
+possibilities our goal is to determine
+if the given string could be valid if
+it's possible we return true if it's
+impossible we return false and you can
+go over this to understand what makes
+parentheses valid and invalid the main
+thing is as you scan through a string
+suppose this one what has to really
+happen is that every left parenthesis
+has to have a matching right parenthesis
+and the matching right parenthesis has
+to come after the left parentheses and
+the natural order for it is kind of like
+first in first out so you can see we
+have a left parenthesis then we have
+another left parenthesis then we have a
+right parenthesis and this right
+parenthesis matches this one okay then
+we have another left parenthesis then we
+have a right parenthesis this matches
+the most recent one and then we have
+another right parentheses and this
+matches this one but suppose we had a
+slightly different string maybe we have
+three right parentheses in a row this
+would be invalid and you can see why
+these two match each other great this
+one matches this one great but the right
+parentheses then comes before the left
+parenthesis we can't have that and this
+is one way to understand that but the
+easiest way to know that we have an
+invalid parenthesis combination is that
+at any given point of the string the
+number of left parentheses that we have
+can never be less than the number of
+right parentheses and you can see that
+that happens here right we have two left
+parentheses then we have three right
+parentheses and we are never going to be
+able to recover from this because at one
+point in time we had more right
+parentheses than we had left it doesn't
+matter if we get more left parentheses
+we cannot recover from this ever and
+that's how you know it's invalid let's
+take a very simple input string and then
+determine if this is valid or not and we
+can tell that it is how would it be
+valid if the wild card was empty and it
+would look like this right just a left
+and a right parenthesis but how can we
+do that uh brute force and we would we
+could possibly have more complex strings
+how could we determine that well the
+brute force is going to be a decision
+tree because if we weren't given any
+wild cards we have a very simple
+algorithm just to scan through the
+parentheses to know if they were valid
+or not just like i talked about but with
+wild cards there's lots of possibilities
+we're going to go through each character
+in the string and have a decision tree
+so first character we see is a left
+parenthesis that's perfectly fine and
+then we get to the wild card right when
+you get to a wild card that's when you
+actually need to branch we don't need to
+just branch when we get to a regular
+parenthesis because that's already
+determined it could be another left
+parenthesis it could be a space or it
+could be a right parenthesis
+and then we're going to get to the third
+character uh but we have to do that
+third character it's already determined
+it's a right parenthesis but we have to
+do it for all three of our branches now
+so you can kind of see if we had a lot
+of wild cards uh this decision tree
+would get very big but let's just finish
+it up real quick so here we'll have a
+right parenthesis here we'll have a
+right parentheses here we'll have a
+right parenthesis so among all three of
+these combinations you can see that this
+is invalid because it has two open it
+has two left one right that's invalid
+this one you can see is also invalid it
+has one left and then two right but the
+middle one you can see it is valid it
+has a left a space and then a right and
+the way we could do this problem
+recursively the decision tree portion is
+kind of simple we would make three
+recursive calls every time
+we got to a wild card but to determine
+if it was valid or not one we would keep
+track of how many left parentheses we
+had how many open left parentheses we
+had at this point we had one open
+if we're just considering the middle
+branch here we also had a one open and
+then by the end of it we had zero open
+zero left open parenthesis by the end we
+should have exactly zero because they
+should all match each other and the
+number of left open should never be
+negative for example if we started like
+this right if we started with a right
+parenthesis that's automatically invalid
+okay so that's the recursive solution
+and you can actually add dynamic
+programming and by dynamic programming i
+mean memoization that's the easier way
+to do it to this recursive solution and
+i will actually link the code to that in
+the description if you want to take a
+look uh the overall time complexity of
+first of all the brute force solution is
+in the worst case going to be a 3 to the
+power of n because that's how many
+branches we have n is going to be the
+size of the string because that's going
+to be the height of this decision tree
+but when you add memoization to this the
+overall time complexity actually becomes
+n cubed and the way we would do that is
+by caching and we would cache uh with
+two parameters one would be i which is
+the index of the position that we're at
+and the other parameter would be uh the
+number of left open parentheses at any
+given point uh in the string that we're
+at now a caching with two different
+parameters like this will cause us to
+have a two-dimensional matrix uh the
+size of that matrix is going to be n
+squared but to calculate each value in
+that matrix would would take big o of n
+time complexity that's how i'm getting n
+cubed from but i don't expect you to
+understand all of this if you want to
+understand it a bit more you can look at
+the code that i'll have in the
+description but there's actually an even
+more efficient way to solve this problem
+and that is the greedy solution and it's
+very difficult to come up with now even
+if you can't come up with the greedy
+solution by yourself it might still
+occur to you in a real interview that
+maybe there's some kind of trick to this
+problem that if only you could figure it
+out you would be able to solve this
+problem in linear time is there a trick
+like that well hopefully in a real
+interview your interviewer would give
+you a hint for that but let's see how we
+could maybe come up with it ourselves we
+know that one variable is going to be a
+mandatory for us and i'm going to call
+it left it's going to be the number of
+left open parentheses we have and when
+we reach the first character it's a left
+open parenthesis initially our total is
+going to be zero but after seeing the
+left open parenthesis we increment it by
+one now we have one left open
+parenthesis and that would be very easy
+uh suppose we didn't have the wild card
+then we would have a right parenthesis
+and we would do the exact opposite we'd
+say okay left uh open parenthesis has
+been decremented by one so now we're
+back to zero left open parenthesis and
+that makes sense but wild cards create
+multiple possibilities and three exactly
+right one the simplest would be to
+ignore this right if we ignore it okay
+we're still left with one open
+parenthesis that's the simplest but it
+could there could be multiple
+possibilities right and we need to
+consider all possibilities if we want to
+be sure that we can determine if this is
+possibly valid or not possibly valid we
+do have to consider every possibility so
+another possibility is this wild card
+could be a
+left open parenthesis if that's the case
+we would take our left and actually
+increment it by one to make it two but
+another possibility is that this a wild
+card could be a right parenthesis and in
+that case we would take this and then
+decrement it by one see how this wild
+card is creating some divergence for us
+we can't maintain all possibilities in a
+single variable like we could before so
+this is kind of a hint to you that maybe
+we need two variables let's go to the
+third character before we actually
+create those two variables now we have a
+right parenthesis now what are we gonna
+do well with right parentheses we're
+gonna decrement our left count but now
+we have to decrement two variables so
+this would become one and then this
+would become zero what do these actually
+represent the reason we have two in the
+first place is from the wild card
+basically these are gonna represent the
+i'm gonna call it the left max and the
+left min and what that means is what's
+the
+maximum left open left parenthesis we
+could have and what's the minimum open
+left parenthesis we could have depending
+on how we choose our wild card okay now
+let's go to another character and again
+we have a wild card now let me explain
+to you what these two variables are
+supposed to represent they're supposed
+to represent the range of possibilities
+we could have zero left open parentheses
+or we could have one left open
+parentheses depending on how we chose
+the first wild card but now we have a
+second wildcard now if we made this a
+left open parenthesis that would mean
+it's possible for us to have two left
+open parentheses so we would update our
+left max in that case but if we made it
+a closing parenthesis then we would want
+to update our minimum because this is
+supposed to represent all possibilities
+so let's do exactly that if
+let's increment our left max to be 2
+then let's decrement our left min to be
+negative one but hold on for a second
+this isn't just the range of
+possibilities this should also be the
+valid range of possibilities we should
+never have our left min become negative
+because that would imply that the
+choices we made caused our left min to
+be negative and we know that's invalid
+so we're never going to allow our left
+min to become negative if it ever does
+become negative we're going to reset it
+back to b0 so now you can see that these
+are the range of possibilities between
+zero and two and now we're just going to
+continue through the rest of the array
+we're going to get a left open
+parenthesis which uh we're going to
+increment both of our variables so this
+is going to be 1 this is going to be a 3
+and then we're going to get a closing
+parenthesis so this is going to be
+decremented down to 0. this is going to
+be decremented down to 2. and now how do
+we know if we can return true or false
+is this valid or is it not valid well we
+know it's balanced if the left open
+parenthesis count is zero so does zero
+fall in between our range right now it
+does because our left min is exactly
+zero so that's how you know we can
+return true if our left min is equal to
+zero and before we get into the code i
+just want to show you another way that
+our solution could have been invalid uh
+suppose you know our string had two uh
+closing parentheses and then two open of
+course our left min is never going to be
+uh negative because uh if it becomes
+negative we reset it back to zero but if
+our left max does become negative uh in
+this case it'll be negative two uh from
+this uh at this after we've seen these
+two that's how you know we can return
+false because it'll never be valid we'll
+never recover from this because if the
+maximum number of left open parentheses
+we could have is negative that means
+there's no choices we could possibly do
+to make this valid okay so before we get
+into the code as you could tell from
+this algorithm we don't even need any
+extra space so the space complexity is
+bigger of zero and we only need to scan
+through the string once so the time
+complexity is big o of n so now let's
+code it up okay so now let's code it up
+and like i said we're gonna have two
+variables left min and left max
+initially they're both gonna be a zero
+and then we're just going to go through
+every single character in the string if
+we get a open parenthesis a left open
+parenthesis we're going to increment
+both of our variables so leftmin and
+leftmax are going to be incremented by
+one because here we don't really have
+any choices we have to increment the
+count by one and in the opposite case
+where we do have a closing parenthesis
+we also don't have a choice so i'm going
+to copy and paste this but in that case
+we're going to be decrementing the count
+by one for each of them uh and the else
+case is when we have a wild card we
+don't have to specify that character and
+this is the part where we do have a
+choice so i'll copy and paste again but
+with the left min we're going to
+decrement that count in the case that we
+have a closing parenthesis and in the
+case that we choose the wild card to be
+an open parenthesis we're going to
+increment the left max by 1. but
+remember if the left max ever is
+negative that means it's impossible for
+our parentheses to be valid so in that
+case we're just going to immediately
+return false but in the similar case
+where our left min is negative we're not
+necessarily going to return false
+because that would mean our left max is
+not negative so it technically is
+possible for the string to still be
+valid we don't want to continue assuming
+that our string up until this point is
+invalid so we're going to reset it back
+to zero and if
+this part is unclear and i don't expect
+it to be too clear because it's actually
+complicated to understand this is the
+string that i would kind of run the code
+on and this is the example i would
+really try to understand if you don't
+get this part this string is impossible
+to make valid no matter what we choose
+for the wild card but if you don't
+include this if statement in your code
+you'll end up returning true for this
+when you should be returning false
+that's kind of what i'll leave it at but
+other than that once we exit the loop we
+will return true if the left min is
+equal to zero if it's not equal to zero
+then we return false now let's run the
+code to make sure that it works and as
+you can see on the left yes it does and
+it's pretty efficient so i really hope
+that this was helpful if it was please
+like and subscribe it really supports
+the channel a lot consider checking out
+my patreon where you can further support
+the channel and hopefully i'll see you

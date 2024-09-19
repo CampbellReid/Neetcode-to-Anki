@@ -1,0 +1,247 @@
+okay let's solve leak code 198 house
+robber in my opinion this is such a good
+question to understand even though it's
+just an easy question you can learn so
+much about dynamic programming from this
+problem and you might already know
+Google really loves asking dynamic
+programming problems and if you want to
+get started on that this is such a good
+question to understand
+so we're basically given an array of
+integers like many problems and each
+integer represents a house right so this
+is a house this is a house this is a
+house they're all houses and they're
+adjacent to each other so it's basically
+a neighborhood we want to rob houses to
+maximize the amount of money we can rob
+so why not just rob all of them right
+nope there's a restriction we can't rob
+two houses that are adjacent to each
+other so we can rob this house but then
+we can't rob this house right so we have
+to rob this one next maybe right on the
+other hand if we rob this one we can't
+rob this one and we can't rob this one
+it has two neighbors this might sound
+really difficult right so let's just
+start out with the brute force approach
+let's imagine if we were trying to get
+every single combination okay so the
+first combination is where we pick the
+first house right so let's draw out what
+the decision tree of that would look
+like okay so our first decision was to
+rob the house with value one okay so
+next we want to rob more houses right
+but we can't rob this one so we can we
+have to basically get the max we can Rob
+from these two so does that sound kind
+of like a sub problem yeah but we'll get
+there in a minute so continuing on with
+just a brute-force right okay so now we
+want to rob these two houses right well
+we can't rob both of them because
+they're right next to each other so we
+can either rob house 3 or we can rob
+house 1 so this is the decision tree
+right and so along this path so if we
+were to rob house 1 right let's say we
+went along this path then we can either
+rob house 1 and 3 or we can rob house 1
+and 1 obviously we're gonna choose this
+one because that gives us the total that
+gives us the maximum which is 4 okay but
+what if we didn't Rob the first house we
+decided to rob the second
+so that would be our other decision in
+our decision tree right Rob house - okay
+now we have not many choices right we
+can't Rob house three so the only house
+left is house one so we rob that one as
+well
+so if we went along this pathway in our
+decision tree we would get these two
+houses robbed and that's a total of
+three but we remember we found this
+which was a total of four which is
+greater of course so that's going to be
+our result now this is a very
+brute-force approach imagine if we had
+more numbers here right maybe a three
+and a four then we'd have to have like
+more paths in our decision tree this
+could get very complex so how can we
+improve it can we identify any
+subproblem and the answer to that is yes
+let's take a look at the subproblem so
+remember we have two choices we want to
+get the max that we can rob from this
+entire neighborhood so the first choice
+is we rob from the first house and then
+find the maximum from the remaining
+houses right imagine there's more houses
+here there could be a three or four
+whatever right this is the subproblem
+we're finding the max of a sub array of
+the entire array the second choice we
+have is we skip this house right if we
+skip it then basically we're saying okay
+find the maximum of the entire sub array
+not including the first value so let's
+actually write out the relationship if
+it doesn't make sense yet so if we want
+to find the max we can Rob from the
+entire array we have two choices Rob in
+this case indicates the max that we can
+Rob from the entire array so in our
+first decision we decided that we were
+gonna Rob the first value so array of
+index 0 plus Rob the remainder of this
+blue portion of the array so we're
+skipping index 1 we're gonna Rob the
+entire array from index 2 to the end so
+I'll say n is the end in this case so
+that's our first decision if we decided
+to rob the first house then we're gonna
+break up the problem into a sub problem
+now we got to Rob the remainder of that
+array
+skipping one of the values if we didn't
+rob the first house and then we simply
+only have the sub-problem robbed every
+house skipping the first house so we
+start at house one not house zero and go
+until the end of the array so this is
+the recurrence relationship you might
+not know exactly what that means but
+it's basically a way to break up dynamic
+programming problems notice the result
+of the entire problem depends on only
+these two if we can compute these two
+then we have our result
+but notice each Rob can be broken up
+into its own sub-problem just like we
+did over here so let's actually solve
+the subproblems now before we solve the
+entire problem now I could do this in
+reverse order right I could say let's
+find the max of this sub array this sub
+array and so on but it's a little more
+confusing to do that so I'm actually
+going to do it in order so let's start
+at the first house like we've been doing
+so if we rob this house that's basically
+our base case right so we can decide to
+rob this house in that case up until
+this point we could Rob a total of 1 ok
+now we get to the second house so what's
+the max we can Rob up until this point
+well we can decide to not rob this house
+and only rob this house if we wanted to
+or we can decide to not rob this house
+and only rob this house to is obviously
+greater than 1 so I'm gonna decide only
+to rob this house next we get to house 3
+this is where it gets interesting so
+what's the max amount we can Rob up
+until this point so we have two choices
+again we can Rob house 3 and we can Rob
+house 1 or we can just Rob house to the
+max is obviously if we Rob house 3 and 1
+and in that case we'd get a total of 4
+now we get to the last value 1 so we can
+decide to Rob house 1 and if we did Rob
+house 1 then we would want the max we
+could Rob up until these two values
+meaning we'd want 1 plus 2 because 2
+tells us what's the max we can Rob from
+these first two elements we
+include this one because it's adjacent
+to one so one of our choices is one plus
+two that's choice one or we can decide
+to not even Rob house one we can just
+get the max of the entire first three
+elements not including this one in that
+case we have what we would get from the
+first three elements right here we
+already computed it it's four so our
+choices are one plus two or four
+obviously four is greater so I'm gonna
+choose four that means we put a four
+right here and this for this last four
+means that for the entire array the
+entire array the max value we could get
+is four if we wanted to rob houses so we
+can put a 4 here but notice how we don't
+have to look we don't even have to store
+this entire blue portion for each value
+like for this one for to compute this we
+only need to look at the previous two
+results that we computed and the reason
+for that is because we could either
+decide to rob this one and Rob the
+remainder portion of the array not
+including 3 and in which case we'd have
+the value computed right here the other
+cases if we wanted the max we could Rob
+from the entire array we could decide to
+not even include this and just get the
+max from these three and in that case
+the value would be stored here so now
+let's look at the code since we only
+need to maintain the last two maxes that
+we could rob from we'll only need two
+variables so I'll just name them Rob 1
+Rob 2 we'll initialize them as zero
+because if we get an empty sub-array we
+want to return zero anyway so let's
+iterate through each of the houses we
+can Rob and now we want to compute the
+maximum that we can Rob up and tell this
+value n so I'm gonna compute that in a
+temporary variable for now and you'll
+probably see why so the max we can Rob
+up until now in my case I'm gonna say
+Rob 1 or Rob 2 was the last house that
+we robbed
+Rob one was the one before
+that so knowing that the max we could
+get would be n+ Rob one meaning there's
+a gap between the current house and the
+previous house or Rob two which includes
+the previous house in case it's not
+clear this is basically let me just make
+a comment to show what I mean by Rob 1
+and Rob - so Rob 1 is first
+Rob 2 comes second and then we get some
+more values and n plus 1 and so on so if
+I want a Rob n then I have to Rob Rob
+one as well I can't use Rob 2
+but if I want to do Rob - I can include
+n because it's right next to it so when
+we iterate to the next position meaning
+we get here we want to update Rob one to
+now equal Rob - so let's do that
+and Rob 2 in this case wants to be
+updated to n so Rob 2 can now equal our
+temporary value that we just computed at
+the end we want to return Rob 2 because
+by the time we get to the end Rob 2 will
+be equal to the last value meaning that
+it will be the max we can rob from the
+entire neighborhood of houses this is a
+problem you can learn so much from even
+though it's an easy problem it might
+take you a while to digest exactly
+what's going on and to understand all
+the like importance of this problem so
+many dynamic program programming
+problems are built upon this one and let
+me know if you have any questions
+because I feel like I might not have
+explained like the recurrence
+relationship quite well enough but if
+this was helpful thank you for watching
+leave a like and subscribe and let me

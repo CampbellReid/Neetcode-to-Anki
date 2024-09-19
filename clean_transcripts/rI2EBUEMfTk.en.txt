@@ -1,0 +1,265 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+let's solve the problem k closest points
+to the origin so let's take a look at
+this example and you can't really see it
+well but they have a couple points so
+there's one point over here and there's
+one point over here so we have a list of
+points right we could have a bunch more
+points right anywhere on this
+two-dimensional grid we have an x-axis
+and a y-axis so each point is
+represented by a pair of values this
+point is 1
+3 this point is negative 2
+2
+right and so we can have a bunch more
+points and we want to return from the
+entire list of points we want to return
+the k closest points to the origin now
+the origin is the
+center which is zero zero right so which
+of these points is the closest to the
+origin and in this case we have k equals
+one so from these two points we just
+want to return the single point that is
+the closest to the origin and we're
+guaranteed that the solution is going to
+be unique so there's never going to be a
+tie or anything like that but it could
+be you know
+in this case we have k is 1 it could be
+k is 2 k is 3 or something if we had a
+bunch more points so we just want to
+figure out efficiently what are the k
+closest points to the origin now the
+first thing is how do we know how far
+any given point actually is from the
+origin you know you might remember from
+your you know high school math class or
+in this case they actually tell us the
+actual formula which does make things a
+little bit easy so it's basically taking
+the x difference right so in this case
+for this point the x difference is going
+to be 1 minus 0 plus the y difference in
+this case the y difference is going to
+be three minus zero and each of these is
+going to be squared because you know
+that's kind of how it works a squared
+plus b squared equals c squared this is
+the formula we're using so if we want to
+find c which is going to be the actual
+distance we'll take a squared plus b
+squared and then take the square root of
+the entire thing to actually find c so
+you know finding the distance we can do
+that a squared plus b squared taking the
+square root but in this case we actually
+aren't required to find the square root
+because we're not actually trying to
+return the distance we're just trying to
+determine which point is the closest so
+you know for example let's say we had
+something like this that totaled up to
+five right and we had another one that
+totaled up to 4. if we take the square
+root of 2 or 4 that's going to give us 2
+if we take the square root of 5 is going
+to give us 2 point you know something
+something so we're not required to take
+the square root because we just want to
+be able to compare which one is greater
+right obviously if 5 is greater than 4
+we know that that the square root of 5
+is also going to be greater than 4 so
+we're not technically required to
+actually take that square root and i
+don't know why i'm making this such a
+big point it's just that it's kind of
+easier to code it up then if we don't
+actually have to take the square root we
+just take the absolute difference
+between the x
+square it the difference between the y
+square it and then add them together
+that will be enough for us to compare
+two points and to figure out which one
+of them is actually closer to the origin
+so once you have that down how can we
+actually find the k closest points we're
+not just finding the single closest
+point that would be easy but we're
+trying to find k of the closest points
+well the the easiest and simplest idea
+that you might think of is just sorting
+right so if we have a list of size n and
+for each one of these points we you know
+compute this
+take the x difference y difference
+square it right and use that value to
+sort the entire list of points the time
+complexity of that is going to be n
+log n because we're sorting the entire
+list and then once we have that right
+like let's say we had
+what you know three values or something
+we just wanted the first two which is k
+and then we can just iterate through the
+list and find k so the k is not really
+going to change the time complexity the
+time complexity is going to depend on
+the n log n sorting but since we're only
+looking for k points right we don't
+actually need to sort the entire thing
+we just need the k closest points so
+actually this problem can be
+reduced or slightly simplified if you
+use a min heap and that's going to be
+the solution i'm showing you if you
+you know if you already know how to use
+a min heap you can probably skip to the
+coding portion or you know solve this
+problem yourself a min heap is a good
+way to solve this problem but i'm going
+to analyze it for you right now so let's
+still take the simplified example so
+like i said the first thing we're going
+to do for every point so we have the
+point 1
+3 and we want to know the distance
+between it so we can say okay 1 squared
+plus 3 squared which is going to give us
+10 so this is you know the distance
+actually isn't 10 but that's going to be
+the value we use to compare we're not
+going to take the square root because we
+actually don't need to the other one
+negative 2
+positive 2 is going to be 2 squared plus
+2 plus negative 2 squared which is you
+know just going to be 2 squared as well
+so
+taking both of these together is going
+to be
+a distance of 8 so
+the next thing we're going to do is
+take these right notice how we put the
+distance as the first value because when
+we put this in a min heap we want this
+to be the value that we order it by so
+we're going to take this and we're going
+to run the function heapify which is not
+n log n heapify is actually a linear
+time algorithm so it'll basically take
+all of these put them into a heap in o
+of end time so now
+you know let's say that all of these are
+in our min heap what are we going to do
+we want to pop from this heap k times
+because we want every time we pop we
+want to pop the closest one which is in
+this case going to be this point right
+and of course k in our example is only
+one but obviously this solution could be
+generalized to if k was two three or
+bigger right so in this case how many
+times are we gonna pop from the min heap
+obviously k times we only need to find
+the k closest points and what's the
+operation for for popping from a heap
+it's going to be log the size of the
+heap which is worst case going to be n
+so this time complexity is actually
+going to be a little bit better it's
+going to be k log n that's why a min
+heap solution is slightly more efficient
+because if k is relatively small it's
+going to be a lot better than something
+like n log n right this is much smaller
+this is much faster so that's kind of
+the idea at this point you probably know
+how to code it up but you know just to
+finish the example k is one we pop from
+this one time are we gonna pop this one
+or this one obviously this one has a
+smaller distance so we pop this one and
+then we take it append it to our result
+and we we only append the coordinates
+the coordinates were negative two
+positive two right we don't actually
+have to append the distance or anything
+so this will be added to our result and
+then we're going to return that result
+right we only need to pop once
+and we can return that you can see up in
+the result over here at the top that's
+exactly what they did they just returned
+a list of one point
+so that is the main solution now we can
+go ahead and code it up so now let's
+actually code it up and like i said
+we're going to be using a min heap so
+initially a min heap is just an array or
+a list in python so what we want to do
+is we actually want to go through every
+pair of points every x y in the input
+list points and we want to go ahead and
+actually compute the distance so how can
+we compute the distance for every point
+well it's pretty much just going to be x
+squared plus y squared right so we can
+take x in python you can take x to the
+power of 2 like this plus y to the power
+of 2 like this and add those together we
+just won't take the square root because
+we're lazy and we know that we don't
+actually need to take the square root so
+then to our points or rather to our min
+heap we can append to it this uh point
+that we just calculated right so we'll
+append the three values we talked about
+the distance is gonna go first because
+that's the key value for our min heap
+python will use that the first value by
+default and we're going to also append
+the coordinates of this point as well
+and now that we have all those points in
+a list obviously that this operation was
+a linear time operation now we're also
+going to do a linear time operation in
+python we can turn that list into a heap
+like this
+heapq.heapify that list so it'll reorder
+the list to make sure that it is in the
+structure of a heap and we also want to
+have a list for the result right we're
+going to pop k times so while k is
+greater than zero we're going to keep
+popping from our min heap we're gonna
+say heap q dot heap
+pop from the min heap and whatever value
+is popped we're gonna append it to the
+result just like this but actually i
+just realized we're actually popping
+three values from it so before we append
+it let's get the three values we're
+popping the distance the the
+x-coordinate and the y-coordinate from
+the min heap and once we pop those three
+values to our result itself we're only
+appending two values the coordinates the
+x and y coordinates and we're gonna do
+that k time so let's make sure to
+decrement our k value and so once we've
+popped from it k times we can go ahead
+and return the result that we just
+created and as you can see the solution
+works and it is pretty efficient i think
+a sorting approach would be about as
+efficient but this is slightly better in
+some cases so i hope that this was
+helpful if it was please like and
+subscribe it supports the channel a lot
+and i'll hopefully see you pretty soon

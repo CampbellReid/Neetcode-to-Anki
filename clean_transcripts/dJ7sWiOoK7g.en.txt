@@ -1,0 +1,352 @@
+everyone welcome back and let's write
+some more neat code today so today let's
+solve
+jump game two so you might remember
+recently we solved the first jump game
+problem and i would recommend watching
+that video or solving that problem
+yourself before looking at this one
+because this one is actually
+very similar the main difference is we
+are the premise of the problem is the
+exact same we're given
+an integer array of non-negative
+integers
+they're always non-negative and we are
+placed at the
+first index of this array so let's say
+this is our input array
+we're going to be placed at the first
+index over here and
+our goal is going to be over here the
+last value in the index that's the goal
+and our goal is to jump to
+the last position from the first
+position in
+our integer right in this problem though
+the question we're trying to answer is
+what is the
+minimum number of jumps that it takes
+for us to reach
+the last index and luckily for us we can
+always
+assume that we're always going to be
+able to reach that last index
+so in this first problem we know that
+we're starting here right in this two
+position
+if we take so since we're at the
+position two we have two choices right
+we can either take a jump of
+length one or we can take a jump of
+length
+two our choices are these two values
+the three and the one if we take if we
+reach
+the one then we take one more jump
+get to the second one and then we take a
+third jump to get to the four
+which is the goal right the goal is the
+four
+the last position of the array or if we
+if we go to the 3 instead then we
+actually just take a jump
+of length 3 to get to the 4 which means
+that in this case it'll take us exactly
+two jumps right we go from two to three
+and then we get to the goal so that took
+two steps
+two jumps and our output can be two
+because we're looking for
+that minimum number of steps
+so you might know that this is a problem
+that can be
+solved with dynamic programming just
+like the first jump game solution
+but i'm not really going to go over the
+dynamic programming solution because
+actually just
+like jump game one this problem also has
+a greedy solution
+and it turns out that the greedy
+solution is a linear time
+solution so oh big o of n whereas
+the dynamic programming solution is
+actually big
+o of n squared so we know that with this
+problem we can make a some kind of
+decision tree right we know that
+this first position right two it has
+two choices right if we're jumping from
+this position right we can jump to the
+three
+or we can jump to the one right
+so those are our decisions right so
+really from two we can get to these
+next two values the greedy solution
+is going to be something similar to
+a breath first search type solution
+right
+so next so we looked at this value right
+this
+two that was the starting position and
+we saw that these
+are the next values that we can go to
+from there right
+we're going to continue this process
+that's why it's kind of like a breath
+first search
+because we're going to be continuing
+this exact algorithm what we're going to
+be doing though
+now is we saw that from here we could
+get to these next
+two values now the next question becomes
+from this entire portion of the array
+what are all the other values outside of
+this portion that we can also reach
+let's take a look at that from this
+three we know we can reach
+this next one right but that doesn't
+count because it's already a part of our
+green
+area right we can reach that one but
+it's redundant because we can already
+get to this part we can also get to this
+next one right so that's going to be at
+the next
+level or the next part of our breadth
+first search
+we can also reach the destination which
+is four right at this point we would we
+would normally be done with our
+algorithm because we know that
+we can reach this four and we've
+basically found the minimum number of
+steps that
+allow us to do that but we're going to
+continue with this just
+to understand the algorithm so we know
+that from this 3
+we are able to reach these two values
+let's just continue it just to see okay
+this one
+we also need to check what are all the
+positions it can reach well in this case
+it can only reach this one and that's
+already included in our purple area
+okay so now we see that that this purple
+level
+is what we can reach from the green
+level these
+portions and the whole reason i'm color
+coding this is because the levels
+tell us how many steps it takes to reach
+these
+cells the minimum number of steps right
+we know that we
+start at this position right therefore
+the number of steps it takes to reach
+this position is zero right
+it takes zero jumps for us to reach this
+position
+how now my question to you is how many
+steps does how many
+jumps does it take to reach the green
+uh values it takes exactly
+one jump right that's the whole point of
+color coding it because we know from
+two we can jump here or we can jump here
+it takes
+one jump for us to reach any of these
+values if we're taking the minimum route
+right we're taking the minimum number of
+jumps
+now next what about the purple
+values how many jumps what's the minimum
+number of jumps that it takes
+for us to reach these well obviously
+it's two
+because if it takes us one jump to reach
+these green values
+and we can take one jump from the green
+to get to the purple
+it's going to take one extra jump to get
+here so it's obviously going to be
+two jumps right this is pretty simple
+this is a pretty straightforward
+algorithm we would continue it
+if we had more values in our array
+but as you can see what we're doing here
+is basically
+through a simple or a one-dimensional
+array
+breadth-first search we are finding the
+minimum
+path or the minimum number of jumps to
+reach the destination right remember we
+only care about the destination once we
+reach the destination
+we are done so in this case we can see
+it takes exactly
+two jumps for us to reach the
+destination
+so this is the visual explanation
+but now hopefully you get the idea of
+what we're doing the colors hopefully
+can illustrate that and we're going to
+translate this into the code it's
+very little code the code is actually
+pretty straightforward
+let me show you how to do that part now
+that we know the breadth for search
+algorithm
+so remember we are counting the number
+of jumps it takes to reach the
+destination we'll call that result we'll
+initially set that to zero i'm also
+going to have two pointers
+left and right and they're both
+initially going to be set to
+zero because these left and right
+pointers are going to tell us our
+window we saw that initially the window
+starts at just 0 0 right the first
+initial value so that's what it's going
+to be
+we know that i think the second level
+was
+where left equals 1 right equals
+2 right so this would represent a window
+from
+index 1 all the way to index 2 and
+that's basically this is basically going
+to determine what level of
+or what portion of the array is going to
+be used for breadth first search
+currently
+and we know we are going to continue
+this algorithm until
+right which is the rightmost value of
+our current portion
+until it reaches the last value of
+the input array so while our right
+pointer is
+less than the last index we're going to
+be continuing our algorithm and keep
+incrementing that result so just for
+visual purposes
+uh what i mean by the left pointer is
+that let's say we're currently going
+through the green our left pointer would
+be here because it's the left
+most value of the portion we're going
+through our right pointer would be at
+the rightmost portion
+so that's great last thing is how are we
+gonna determine the boundaries for the
+next portion well what we're gonna do is
+we're gonna look at
+who can jump the farthest the three the
+farthest jump it can make
+is one two three right the farthest jump
+it can make is to this
+value the one the farthest jump it can
+do is just a one so it can get here
+right
+so what we're going to do now to update
+our pointers is
+we're going to take our left pointer and
+set it to
+right plus one right it's gonna be
+adjacent to the
+right pointer so this is where our left
+pointer would go
+where's our right pointer gonna go it's
+gonna go
+to the place that we can jump the
+farthest right it's going to go to the
+right boundary of
+our purple area so we're going to cross
+this out
+and put right over here the reason we're
+putting it over here
+is that's the farthest position that we
+can jump to from the
+previous section the green section
+so now let's get back into the code so
+we are going to have a
+variable farthest which is going to tell
+us who can jump the farthest and what's
+the index of that jump
+so right now we're going to go through
+our portion you could say we're going
+through
+our green portion so for i in range
+uh from left to right plus one because
+we have to make
+the right value inclusive so going
+through this loop all we're trying to
+determine is who can jump the farthest
+because that's going to determine how we
+can update our left and right pointers
+so
+what we're going to do is just set
+farthest equal
+to the max of itself and the max
+of the jump that we're currently
+performing so i
+is the index that tells us the jump
+we're performing so we're jumping
+from index i so i plus
+the value at index i which tells us how
+far we can actually
+jump so nums of i plus i is going to
+tell us
+what's the look what's the farthest
+location that this could jump to
+and so we're going to take the max of
+this and then update
+that farthest variable by the end of it
+we should be good farthest should be
+set to what the farthest it can go is
+and then we can update
+our window right so we can say left is
+now going to be equal to right
+plus one just like i showed in the
+picture right
+is going to be equal to farthest and
+don't forget to increment the result
+each time because remember
+that's telling us how many jumps we're
+taking to get to that
+end point so once you're done with this
+that's actually the entire algorithm
+after that all you have to do is return
+the result
+so what we're doing here is basically uh
+a simplified
+breadth first search it's we're doing it
+on a one-dimensional
+array and we're using a left and right
+variables to keep track of what our
+current window is we're also updating
+that window as we keep progressing
+once our window or in other words our
+right pointer
+reaches the last value in the input
+array
+that's when you know that we're done
+counting the jumps and
+we can stop our in our loop and then we
+can return
+the number of jumps that we took the
+minimum number of jumps
+so i hope that this was helpful i hope
+you have a visual
+understanding of this problem as well as
+understanding the code
+and thank you for watching uh don't
+forget to like and subscribe if this was
+helpful
+soon

@@ -1,0 +1,213 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+let's solve a problem from today's leak
+code contest to merge
+triplets to form target triplet and this
+problem is actually a little bit easier
+than you might think so you can read the
+description
+basically we have a target triplet and
+we're given a list of triplets and we
+want to know if we can transform
+this list of triplets into the target
+triplet and we're given a
+a single operation that we're allowed to
+do we can take
+any two triplets such as these two
+triplets right
+and we can set one of them equal to the
+max of both of the triplets combined so
+basically for
+the first value we would take the
+maximum in this case it's two
+for the second value we would take the
+maximum in this case it's seven
+and for the third value we take the
+maximum in this case it's five so we
+would get
+when we combine the two triplets we'd
+get something like two seven
+five and we wanna know if we're allowed
+to do this kind of operation on
+any of the triplets inside of our
+triplets list as many times as we want
+are we able to somehow get the target
+triplet now your first idea might be
+backtracking or
+you know some other kind of complicated
+high complexity solution but let me just
+tell you there's a single
+key observation that you can make that
+will make this problem
+super easy so let's try to figure that
+out so remember that
+this is our target triplet that we're
+trying to make and we can take
+any two triplets and then get the
+maximum of those so
+clearly our goal is to take smaller
+values like maybe we have a one and
+somehow get it to a two
+which is the target for here and maybe
+we have a six somewhere
+and then take that and get it to be a 7.
+but what happens if we have a value
+that's
+greater than the target see this triplet
+1
+8 4. now 1 is smaller than the value
+we're looking for
+4 is smaller than the value we're
+looking for but what about 8
+8 is bigger than the value we're looking
+for so
+what happens with this triplet if we
+ever
+try to combine this triplet with any
+other
+triplet we're always gonna get a value
+that's either eight or maybe even bigger
+than a if you know that other triplet
+somehow had a nine in the middle or
+something like that right
+but we're always with this triplet we're
+always going to get a value that's
+greater than the target
+7 that we're looking for so any triplet
+any triplet in our list
+at all that has a value in any position
+that's greater than the corresponding
+target value that we're looking for
+is going to be useless for us so a
+triplet like
+this we're not even going to consider it
+we're not even going to
+look at it so from our input list of
+triplets if we do
+remove all triplets or like that that
+have values that are too
+great then we're going to be left with
+triplets in our input that are either
+equal to the target or less than the
+target right they have values that are
+equal or
+less than the target so then at that
+point once we're left with those
+triplets
+how do we know if maybe those triplets
+can form the target
+well we're not actually going to have to
+go through and do these maximum
+operations it's actually even easier
+than that all we're going to do
+is go through every single triplet and
+see
+does it have for every target value do
+we have a
+2 in the first position among any of the
+triplets
+do we have a 7 in the target value among
+any of the triplets and do we have a 5
+in
+the third position among any of our
+triplets
+if we do then we can guarantee that
+somehow some way that we can take these
+triplets
+you know combine them together and form
+this because we know for sure
+at every position in these remaining
+triplets
+the value is either exactly equal to the
+target or less than the target so we
+know for sure if we combine
+all of them together we're not going to
+go over the target
+and we're definitely going to reach the
+target if we have
+all of those values we're looking for so
+with that being said
+the code is going to be pretty simple
+all we're going to do is go through our
+list of triplets
+filter out the triplets that have a
+value that's greater than
+any value in the target and then we're
+going to check among any of our triplets
+can we
+reach each of these target values if we
+can basically if we if we can reach
+all three of these values in our input
+list of triplets
+then we're going to return true
+otherwise we return false
+so basically this is going to be an o of
+n time solution where we iterate through
+every single triplet and go through
+every single value in every single
+triplet
+so i'm going to initially make a set
+called good
+because basically just which positions
+of the target are good like which ones
+can we actually
+complete so to this i'm going to be
+adding the indices i'm going to be
+either adding index 0
+1 or 2. you know depending on which ones
+we are able to complete and if the
+length of this is
+3 then we're going to return true if
+it's 0 or less than 3
+then we're going to return false so now
+our brute force basically just going
+through every single triplet
+in the input list and if
+we get a triplet so if this triplet at
+position 0 has a value
+that's greater than the target values uh
+position zero or at position one if this
+value is greater than the targets at
+position one
+and finally if at position two this
+triplets value is greater than the
+targets at position two
+that means that this is one of those
+triplets that we're going to filter out
+so we can just continue on to the next
+iteration of the loop
+otherwise this triplet could contain
+some of the target values we're looking
+for so let's iterate through this
+triplet and we are going to need the
+index of this triplet the index in this
+case is basically the position of each
+value in the triplet so iv
+in enumerate through this triplet
+and so we're going to check if the value
+at this position
+i is equal to a value in the target
+at position i so basically maybe the
+zero value of this triplet matches the
+zero value of the target then what we're
+going to go ahead and do
+is to our good set we're going to add
+position i because that means we are
+able to get position i from
+some of our triplets and then we're
+going to do the exact same thing for
+every single triplet that is valid that
+we're not going to be skipping
+and then at the end if we know for sure
+that the length
+of good is equal to three then we're
+going to return true
+otherwise we're going to return false so
+really we can just return
+the result of this comparison so that's
+the entire code you can see
+that it does pass in this
+leak code contest so i hope that this
+was helpful if it was please like and
+subscribe it supports the channel a lot
+and i'll hopefully

@@ -1,0 +1,2736 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.750 align:start position:0%
+ 
+hey<00:00:00.240><c> everyone</c><00:00:00.719><c> welcome</c><00:00:01.120><c> back</c><00:00:01.360><c> and</c><00:00:01.520><c> let's</c>
+
+00:00:01.750 --> 00:00:01.760 align:start position:0%
+hey everyone welcome back and let's
+ 
+
+00:00:01.760 --> 00:00:03.669 align:start position:0%
+hey everyone welcome back and let's
+write<00:00:01.920><c> some</c><00:00:02.080><c> more</c><00:00:02.320><c> neat</c><00:00:02.560><c> code</c><00:00:02.879><c> today</c><00:00:03.120><c> so</c><00:00:03.280><c> today</c>
+
+00:00:03.669 --> 00:00:03.679 align:start position:0%
+write some more neat code today so today
+ 
+
+00:00:03.679 --> 00:00:04.309 align:start position:0%
+write some more neat code today so today
+let's<00:00:03.919><c> solve</c>
+
+00:00:04.309 --> 00:00:04.319 align:start position:0%
+let's solve
+ 
+
+00:00:04.319 --> 00:00:06.630 align:start position:0%
+let's solve
+linked<00:00:04.799><c> list</c><00:00:05.120><c> cycle</c><00:00:05.600><c> i</c><00:00:05.759><c> know</c><00:00:05.920><c> that</c><00:00:06.080><c> we</c><00:00:06.240><c> solved</c>
+
+00:00:06.630 --> 00:00:06.640 align:start position:0%
+linked list cycle i know that we solved
+ 
+
+00:00:06.640 --> 00:00:08.310 align:start position:0%
+linked list cycle i know that we solved
+a<00:00:06.720><c> problem</c><00:00:07.120><c> that's</c><00:00:07.359><c> pretty</c><00:00:07.520><c> much</c><00:00:07.759><c> a</c><00:00:07.839><c> harder</c>
+
+00:00:08.310 --> 00:00:08.320 align:start position:0%
+a problem that's pretty much a harder
+ 
+
+00:00:08.320 --> 00:00:09.990 align:start position:0%
+a problem that's pretty much a harder
+version<00:00:08.639><c> of</c><00:00:08.800><c> this</c><00:00:08.960><c> exact</c><00:00:09.440><c> problem</c>
+
+00:00:09.990 --> 00:00:10.000 align:start position:0%
+version of this exact problem
+ 
+
+00:00:10.000 --> 00:00:11.990 align:start position:0%
+version of this exact problem
+but<00:00:10.240><c> in</c><00:00:10.400><c> this</c><00:00:10.719><c> explanation</c><00:00:11.280><c> i'm</c><00:00:11.759><c> going</c><00:00:11.840><c> to</c>
+
+00:00:11.990 --> 00:00:12.000 align:start position:0%
+but in this explanation i'm going to
+ 
+
+00:00:12.000 --> 00:00:14.629 align:start position:0%
+but in this explanation i'm going to
+explain<00:00:12.960><c> why</c><00:00:13.360><c> the</c><00:00:13.599><c> tortoise</c><00:00:14.160><c> and</c><00:00:14.320><c> hair</c>
+
+00:00:14.629 --> 00:00:14.639 align:start position:0%
+explain why the tortoise and hair
+ 
+
+00:00:14.639 --> 00:00:16.310 align:start position:0%
+explain why the tortoise and hair
+algorithm<00:00:15.200><c> on</c><00:00:15.360><c> a</c><00:00:15.440><c> linkedlist</c><00:00:15.839><c> cycle</c>
+
+00:00:16.310 --> 00:00:16.320 align:start position:0%
+algorithm on a linkedlist cycle
+ 
+
+00:00:16.320 --> 00:00:19.510 align:start position:0%
+algorithm on a linkedlist cycle
+why<00:00:16.640><c> exactly</c><00:00:17.279><c> it</c><00:00:17.520><c> works</c><00:00:17.920><c> and</c><00:00:18.160><c> why</c><00:00:18.560><c> exactly</c>
+
+00:00:19.510 --> 00:00:19.520 align:start position:0%
+why exactly it works and why exactly
+ 
+
+00:00:19.520 --> 00:00:22.550 align:start position:0%
+why exactly it works and why exactly
+we<00:00:19.840><c> know</c><00:00:20.080><c> for</c><00:00:20.320><c> sure</c><00:00:20.800><c> that</c><00:00:21.119><c> it's</c><00:00:21.439><c> a</c><00:00:21.680><c> linear</c><00:00:22.160><c> time</c>
+
+00:00:22.550 --> 00:00:22.560 align:start position:0%
+we know for sure that it's a linear time
+ 
+
+00:00:22.560 --> 00:00:24.070 align:start position:0%
+we know for sure that it's a linear time
+algorithm<00:00:23.119><c> because</c><00:00:23.359><c> i</c><00:00:23.439><c> think</c><00:00:23.600><c> most</c><00:00:23.840><c> people</c>
+
+00:00:24.070 --> 00:00:24.080 align:start position:0%
+algorithm because i think most people
+ 
+
+00:00:24.080 --> 00:00:26.070 align:start position:0%
+algorithm because i think most people
+just<00:00:24.240><c> kind</c><00:00:24.400><c> of</c><00:00:24.560><c> glance</c><00:00:24.960><c> over</c><00:00:25.279><c> why</c><00:00:25.519><c> exactly</c>
+
+00:00:26.070 --> 00:00:26.080 align:start position:0%
+just kind of glance over why exactly
+ 
+
+00:00:26.080 --> 00:00:27.830 align:start position:0%
+just kind of glance over why exactly
+this<00:00:26.320><c> is</c><00:00:26.480><c> true</c><00:00:26.800><c> so</c><00:00:26.960><c> i'm</c><00:00:27.119><c> going</c><00:00:27.199><c> to</c><00:00:27.279><c> go</c><00:00:27.519><c> over</c>
+
+00:00:27.830 --> 00:00:27.840 align:start position:0%
+this is true so i'm going to go over
+ 
+
+00:00:27.840 --> 00:00:28.550 align:start position:0%
+this is true so i'm going to go over
+that<00:00:28.080><c> today</c>
+
+00:00:28.550 --> 00:00:28.560 align:start position:0%
+that today
+ 
+
+00:00:28.560 --> 00:00:30.230 align:start position:0%
+that today
+and<00:00:28.720><c> you</c><00:00:28.880><c> can</c><00:00:29.039><c> see</c><00:00:29.199><c> that</c><00:00:29.359><c> this</c><00:00:29.679><c> linked</c><00:00:29.920><c> list</c>
+
+00:00:30.230 --> 00:00:30.240 align:start position:0%
+and you can see that this linked list
+ 
+
+00:00:30.240 --> 00:00:32.150 align:start position:0%
+and you can see that this linked list
+problem<00:00:30.800><c> is</c><00:00:30.960><c> another</c><00:00:31.439><c> problem</c><00:00:31.840><c> from</c><00:00:32.000><c> the</c>
+
+00:00:32.150 --> 00:00:32.160 align:start position:0%
+problem is another problem from the
+ 
+
+00:00:32.160 --> 00:00:35.110 align:start position:0%
+problem is another problem from the
+blind<00:00:32.559><c> 75</c><00:00:33.200><c> list</c><00:00:33.520><c> a</c><00:00:33.760><c> list</c><00:00:34.079><c> of</c><00:00:34.160><c> 75</c><00:00:34.719><c> problems</c>
+
+00:00:35.110 --> 00:00:35.120 align:start position:0%
+blind 75 list a list of 75 problems
+ 
+
+00:00:35.120 --> 00:00:36.630 align:start position:0%
+blind 75 list a list of 75 problems
+we've<00:00:35.280><c> been</c><00:00:35.440><c> working</c><00:00:35.840><c> through</c><00:00:36.079><c> and</c><00:00:36.239><c> tracking</c>
+
+00:00:36.630 --> 00:00:36.640 align:start position:0%
+we've been working through and tracking
+ 
+
+00:00:36.640 --> 00:00:37.830 align:start position:0%
+we've been working through and tracking
+on<00:00:36.719><c> the</c><00:00:36.880><c> spreadsheet</c><00:00:37.360><c> the</c><00:00:37.440><c> link</c><00:00:37.600><c> to</c><00:00:37.760><c> the</c>
+
+00:00:37.830 --> 00:00:37.840 align:start position:0%
+on the spreadsheet the link to the
+ 
+
+00:00:37.840 --> 00:00:39.270 align:start position:0%
+on the spreadsheet the link to the
+spreadsheet<00:00:38.320><c> will</c><00:00:38.480><c> be</c><00:00:38.559><c> in</c><00:00:38.719><c> the</c><00:00:38.800><c> description</c>
+
+00:00:39.270 --> 00:00:39.280 align:start position:0%
+spreadsheet will be in the description
+ 
+
+00:00:39.280 --> 00:00:40.709 align:start position:0%
+spreadsheet will be in the description
+if<00:00:39.360><c> you</c><00:00:39.440><c> want</c><00:00:39.600><c> to</c><00:00:39.680><c> take</c><00:00:39.920><c> a</c><00:00:40.000><c> look</c>
+
+00:00:40.709 --> 00:00:40.719 align:start position:0%
+if you want to take a look
+ 
+
+00:00:40.719 --> 00:00:42.630 align:start position:0%
+if you want to take a look
+we<00:00:40.879><c> are</c><00:00:40.960><c> not</c><00:00:41.200><c> quite</c><00:00:41.440><c> done</c><00:00:41.680><c> with</c><00:00:41.840><c> this</c><00:00:42.399><c> sheet</c>
+
+00:00:42.630 --> 00:00:42.640 align:start position:0%
+we are not quite done with this sheet
+ 
+
+00:00:42.640 --> 00:00:44.229 align:start position:0%
+we are not quite done with this sheet
+yet<00:00:42.879><c> even</c><00:00:43.040><c> though</c><00:00:43.200><c> we</c><00:00:43.360><c> have</c><00:00:43.440><c> done</c><00:00:43.680><c> all</c>
+
+00:00:44.229 --> 00:00:44.239 align:start position:0%
+yet even though we have done all
+ 
+
+00:00:44.239 --> 00:00:46.069 align:start position:0%
+yet even though we have done all
+pretty<00:00:44.399><c> much</c><00:00:44.640><c> most</c><00:00:44.960><c> of</c><00:00:45.039><c> the</c><00:00:45.200><c> difficult</c><00:00:45.680><c> medium</c>
+
+00:00:46.069 --> 00:00:46.079 align:start position:0%
+pretty much most of the difficult medium
+ 
+
+00:00:46.079 --> 00:00:47.750 align:start position:0%
+pretty much most of the difficult medium
+and<00:00:46.160><c> hard</c><00:00:46.480><c> problems</c><00:00:46.879><c> on</c><00:00:47.039><c> this</c><00:00:47.360><c> list</c>
+
+00:00:47.750 --> 00:00:47.760 align:start position:0%
+and hard problems on this list
+ 
+
+00:00:47.760 --> 00:00:49.990 align:start position:0%
+and hard problems on this list
+so<00:00:48.000><c> basically</c><00:00:48.480><c> we're</c><00:00:48.640><c> given</c><00:00:49.039><c> the</c><00:00:49.280><c> head</c><00:00:49.680><c> of</c><00:00:49.840><c> a</c>
+
+00:00:49.990 --> 00:00:50.000 align:start position:0%
+so basically we're given the head of a
+ 
+
+00:00:50.000 --> 00:00:50.869 align:start position:0%
+so basically we're given the head of a
+linked<00:00:50.399><c> list</c>
+
+00:00:50.869 --> 00:00:50.879 align:start position:0%
+linked list
+ 
+
+00:00:50.879 --> 00:00:52.709 align:start position:0%
+linked list
+and<00:00:51.039><c> we</c><00:00:51.199><c> just</c><00:00:51.360><c> want</c><00:00:51.520><c> to</c><00:00:51.600><c> determine</c><00:00:52.320><c> if</c><00:00:52.480><c> there</c>
+
+00:00:52.709 --> 00:00:52.719 align:start position:0%
+and we just want to determine if there
+ 
+
+00:00:52.719 --> 00:00:55.029 align:start position:0%
+and we just want to determine if there
+exists<00:00:53.280><c> a</c><00:00:53.520><c> cycle</c><00:00:53.920><c> in</c><00:00:54.000><c> this</c><00:00:54.239><c> linked</c><00:00:54.559><c> list</c><00:00:54.879><c> or</c>
+
+00:00:55.029 --> 00:00:55.039 align:start position:0%
+exists a cycle in this linked list or
+ 
+
+00:00:55.039 --> 00:00:55.590 align:start position:0%
+exists a cycle in this linked list or
+not
+
+00:00:55.590 --> 00:00:55.600 align:start position:0%
+not
+ 
+
+00:00:55.600 --> 00:00:57.350 align:start position:0%
+not
+and<00:00:55.840><c> basically</c><00:00:56.320><c> the</c><00:00:56.399><c> definition</c><00:00:56.879><c> of</c><00:00:57.039><c> a</c><00:00:57.120><c> cycle</c>
+
+00:00:57.350 --> 00:00:57.360 align:start position:0%
+and basically the definition of a cycle
+ 
+
+00:00:57.360 --> 00:00:59.510 align:start position:0%
+and basically the definition of a cycle
+is<00:00:57.520><c> if</c><00:00:57.760><c> at</c><00:00:57.840><c> some</c><00:00:58.079><c> point</c><00:00:58.320><c> you</c><00:00:58.399><c> know</c><00:00:58.559><c> you</c><00:00:58.800><c> get</c>
+
+00:00:59.510 --> 00:00:59.520 align:start position:0%
+is if at some point you know you get
+ 
+
+00:00:59.520 --> 00:01:01.029 align:start position:0%
+is if at some point you know you get
+to<00:00:59.680><c> a</c><00:00:59.760><c> node</c><00:01:00.000><c> and</c><00:01:00.160><c> you</c><00:01:00.239><c> keep</c><00:01:00.480><c> following</c><00:01:00.879><c> the</c>
+
+00:01:01.029 --> 00:01:01.039 align:start position:0%
+to a node and you keep following the
+ 
+
+00:01:01.039 --> 00:01:02.950 align:start position:0%
+to a node and you keep following the
+pointers<00:01:01.520><c> along</c><00:01:02.000><c> that</c><00:01:02.239><c> node</c><00:01:02.559><c> eventually</c>
+
+00:01:02.950 --> 00:01:02.960 align:start position:0%
+pointers along that node eventually
+ 
+
+00:01:02.960 --> 00:01:04.869 align:start position:0%
+pointers along that node eventually
+you'll<00:01:03.199><c> get</c><00:01:03.440><c> back</c><00:01:03.680><c> to</c><00:01:03.840><c> the</c><00:01:04.080><c> same</c><00:01:04.400><c> node</c><00:01:04.640><c> and</c><00:01:04.720><c> if</c>
+
+00:01:04.869 --> 00:01:04.879 align:start position:0%
+you'll get back to the same node and if
+ 
+
+00:01:04.879 --> 00:01:06.390 align:start position:0%
+you'll get back to the same node and if
+we<00:01:04.960><c> get</c><00:01:05.119><c> back</c><00:01:05.360><c> to</c><00:01:05.439><c> the</c><00:01:05.600><c> same</c><00:01:05.920><c> node</c>
+
+00:01:06.390 --> 00:01:06.400 align:start position:0%
+we get back to the same node
+ 
+
+00:01:06.400 --> 00:01:08.710 align:start position:0%
+we get back to the same node
+we'll<00:01:06.640><c> be</c><00:01:06.720><c> able</c><00:01:06.880><c> to</c><00:01:06.960><c> do</c><00:01:07.119><c> it</c><00:01:07.200><c> again</c><00:01:07.920><c> and</c><00:01:08.080><c> again</c>
+
+00:01:08.710 --> 00:01:08.720 align:start position:0%
+we'll be able to do it again and again
+ 
+
+00:01:08.720 --> 00:01:10.950 align:start position:0%
+we'll be able to do it again and again
+and<00:01:08.880><c> again</c><00:01:09.200><c> basically</c><00:01:09.680><c> an</c><00:01:09.840><c> infinite</c><00:01:10.240><c> loop</c>
+
+00:01:10.950 --> 00:01:10.960 align:start position:0%
+and again basically an infinite loop
+ 
+
+00:01:10.960 --> 00:01:12.870 align:start position:0%
+and again basically an infinite loop
+so<00:01:11.119><c> we</c><00:01:11.280><c> return</c><00:01:11.680><c> true</c><00:01:11.920><c> if</c><00:01:12.080><c> there's</c><00:01:12.240><c> a</c><00:01:12.400><c> cycle</c><00:01:12.720><c> we</c>
+
+00:01:12.870 --> 00:01:12.880 align:start position:0%
+so we return true if there's a cycle we
+ 
+
+00:01:12.880 --> 00:01:14.630 align:start position:0%
+so we return true if there's a cycle we
+return<00:01:13.280><c> false</c><00:01:13.600><c> if</c><00:01:13.680><c> there's</c><00:01:13.920><c> no</c><00:01:14.080><c> cycle</c><00:01:14.400><c> now</c><00:01:14.560><c> the</c>
+
+00:01:14.630 --> 00:01:14.640 align:start position:0%
+return false if there's no cycle now the
+ 
+
+00:01:14.640 --> 00:01:16.149 align:start position:0%
+return false if there's no cycle now the
+first<00:01:14.960><c> idea</c><00:01:15.280><c> you</c><00:01:15.360><c> might</c><00:01:15.520><c> have</c><00:01:15.680><c> is</c><00:01:15.759><c> just</c><00:01:16.000><c> start</c>
+
+00:01:16.149 --> 00:01:16.159 align:start position:0%
+first idea you might have is just start
+ 
+
+00:01:16.159 --> 00:01:17.109 align:start position:0%
+first idea you might have is just start
+at<00:01:16.240><c> the</c><00:01:16.320><c> beginning</c>
+
+00:01:17.109 --> 00:01:17.119 align:start position:0%
+at the beginning
+ 
+
+00:01:17.119 --> 00:01:19.510 align:start position:0%
+at the beginning
+keep<00:01:17.360><c> going</c><00:01:17.600><c> to</c><00:01:17.759><c> the</c><00:01:18.000><c> end</c><00:01:18.560><c> keep</c><00:01:18.799><c> going</c><00:01:19.360><c> keep</c>
+
+00:01:19.510 --> 00:01:19.520 align:start position:0%
+keep going to the end keep going keep
+ 
+
+00:01:19.520 --> 00:01:21.190 align:start position:0%
+keep going to the end keep going keep
+going<00:01:19.759><c> and</c><00:01:19.920><c> eventually</c><00:01:20.400><c> let's</c><00:01:20.560><c> say</c><00:01:20.720><c> that</c><00:01:20.880><c> this</c>
+
+00:01:21.190 --> 00:01:21.200 align:start position:0%
+going and eventually let's say that this
+ 
+
+00:01:21.200 --> 00:01:23.030 align:start position:0%
+going and eventually let's say that this
+of<00:01:21.600><c> this</c><00:01:21.840><c> negative</c><00:01:22.159><c> four</c><00:01:22.400><c> actually</c><00:01:22.640><c> pointed</c>
+
+00:01:23.030 --> 00:01:23.040 align:start position:0%
+of this negative four actually pointed
+ 
+
+00:01:23.040 --> 00:01:24.550 align:start position:0%
+of this negative four actually pointed
+to<00:01:23.200><c> null</c><00:01:23.840><c> in</c><00:01:23.920><c> that</c><00:01:24.159><c> case</c>
+
+00:01:24.550 --> 00:01:24.560 align:start position:0%
+to null in that case
+ 
+
+00:01:24.560 --> 00:01:26.070 align:start position:0%
+to null in that case
+we<00:01:24.720><c> know</c><00:01:24.880><c> okay</c><00:01:25.200><c> we</c><00:01:25.280><c> got</c><00:01:25.439><c> to</c><00:01:25.520><c> the</c><00:01:25.680><c> end</c><00:01:25.840><c> of</c><00:01:25.920><c> a</c>
+
+00:01:26.070 --> 00:01:26.080 align:start position:0%
+we know okay we got to the end of a
+ 
+
+00:01:26.080 --> 00:01:27.910 align:start position:0%
+we know okay we got to the end of a
+linked<00:01:26.320><c> list</c><00:01:26.640><c> right</c><00:01:26.799><c> so</c><00:01:27.280><c> in</c><00:01:27.360><c> that</c><00:01:27.520><c> case</c><00:01:27.759><c> we</c>
+
+00:01:27.910 --> 00:01:27.920 align:start position:0%
+linked list right so in that case we
+ 
+
+00:01:27.920 --> 00:01:28.390 align:start position:0%
+linked list right so in that case we
+return
+
+00:01:28.390 --> 00:01:28.400 align:start position:0%
+return
+ 
+
+00:01:28.400 --> 00:01:31.270 align:start position:0%
+return
+false<00:01:29.119><c> no</c><00:01:29.600><c> cycle</c><00:01:30.400><c> and</c><00:01:30.560><c> that's</c><00:01:30.880><c> always</c><00:01:31.200><c> going</c>
+
+00:01:31.270 --> 00:01:31.280 align:start position:0%
+false no cycle and that's always going
+ 
+
+00:01:31.280 --> 00:01:32.630 align:start position:0%
+false no cycle and that's always going
+to<00:01:31.360><c> be</c><00:01:31.439><c> the</c><00:01:31.520><c> case</c><00:01:31.759><c> so</c><00:01:31.920><c> if</c><00:01:32.000><c> there's</c><00:01:32.159><c> no</c><00:01:32.400><c> cycle</c>
+
+00:01:32.630 --> 00:01:32.640 align:start position:0%
+to be the case so if there's no cycle
+ 
+
+00:01:32.640 --> 00:01:34.469 align:start position:0%
+to be the case so if there's no cycle
+it's<00:01:32.880><c> really</c><00:01:33.119><c> easy</c><00:01:33.520><c> to</c><00:01:33.600><c> detect</c><00:01:34.079><c> that</c><00:01:34.240><c> there's</c>
+
+00:01:34.469 --> 00:01:34.479 align:start position:0%
+it's really easy to detect that there's
+ 
+
+00:01:34.479 --> 00:01:36.149 align:start position:0%
+it's really easy to detect that there's
+no<00:01:34.640><c> cycle</c><00:01:34.960><c> because</c><00:01:35.200><c> eventually</c><00:01:35.680><c> we</c><00:01:35.840><c> reach</c>
+
+00:01:36.149 --> 00:01:36.159 align:start position:0%
+no cycle because eventually we reach
+ 
+
+00:01:36.159 --> 00:01:38.310 align:start position:0%
+no cycle because eventually we reach
+null<00:01:36.560><c> but</c><00:01:36.720><c> if</c><00:01:36.799><c> we</c><00:01:37.119><c> don't</c><00:01:37.439><c> reach</c><00:01:37.680><c> null</c>
+
+00:01:38.310 --> 00:01:38.320 align:start position:0%
+null but if we don't reach null
+ 
+
+00:01:38.320 --> 00:01:40.469 align:start position:0%
+null but if we don't reach null
+right<00:01:38.560><c> we</c><00:01:38.960><c> we</c><00:01:39.119><c> go</c><00:01:39.280><c> along</c><00:01:39.680><c> this</c><00:01:40.000><c> node</c><00:01:40.320><c> and</c><00:01:40.400><c> we</c>
+
+00:01:40.469 --> 00:01:40.479 align:start position:0%
+right we we go along this node and we
+ 
+
+00:01:40.479 --> 00:01:42.310 align:start position:0%
+right we we go along this node and we
+get<00:01:40.640><c> to</c><00:01:40.960><c> we</c><00:01:41.119><c> get</c><00:01:41.280><c> back</c><00:01:41.439><c> to</c><00:01:41.600><c> the</c><00:01:41.680><c> same</c><00:01:41.920><c> node</c><00:01:42.159><c> we</c>
+
+00:01:42.310 --> 00:01:42.320 align:start position:0%
+get to we get back to the same node we
+ 
+
+00:01:42.320 --> 00:01:44.069 align:start position:0%
+get to we get back to the same node we
+already<00:01:42.720><c> visited</c><00:01:43.119><c> but</c><00:01:43.360><c> for</c><00:01:43.520><c> some</c><00:01:43.680><c> reason</c><00:01:44.000><c> we</c>
+
+00:01:44.069 --> 00:01:44.079 align:start position:0%
+already visited but for some reason we
+ 
+
+00:01:44.079 --> 00:01:45.670 align:start position:0%
+already visited but for some reason we
+can't<00:01:44.320><c> detect</c><00:01:44.720><c> that</c><00:01:44.880><c> so</c><00:01:45.040><c> then</c><00:01:45.200><c> we</c><00:01:45.280><c> go</c><00:01:45.439><c> to</c><00:01:45.600><c> the</c>
+
+00:01:45.670 --> 00:01:45.680 align:start position:0%
+can't detect that so then we go to the
+ 
+
+00:01:45.680 --> 00:01:46.389 align:start position:0%
+can't detect that so then we go to the
+next<00:01:46.000><c> node</c>
+
+00:01:46.389 --> 00:01:46.399 align:start position:0%
+next node
+ 
+
+00:01:46.399 --> 00:01:48.389 align:start position:0%
+next node
+the<00:01:46.560><c> next</c><00:01:46.799><c> node</c><00:01:47.119><c> and</c><00:01:47.200><c> keep</c><00:01:47.520><c> doing</c><00:01:47.840><c> that</c><00:01:48.159><c> and</c>
+
+00:01:48.389 --> 00:01:48.399 align:start position:0%
+the next node and keep doing that and
+ 
+
+00:01:48.399 --> 00:01:49.910 align:start position:0%
+the next node and keep doing that and
+from<00:01:48.640><c> our</c><00:01:48.799><c> perspective</c><00:01:49.360><c> we're</c><00:01:49.600><c> just</c><00:01:49.759><c> going</c><00:01:49.840><c> to</c>
+
+00:01:49.910 --> 00:01:49.920 align:start position:0%
+from our perspective we're just going to
+ 
+
+00:01:49.920 --> 00:01:51.510 align:start position:0%
+from our perspective we're just going to
+say<00:01:50.079><c> okay</c><00:01:50.479><c> it's</c><00:01:50.640><c> just</c><00:01:50.880><c> a</c><00:01:51.040><c> really</c>
+
+00:01:51.510 --> 00:01:51.520 align:start position:0%
+say okay it's just a really
+ 
+
+00:01:51.520 --> 00:01:53.030 align:start position:0%
+say okay it's just a really
+long<00:01:51.840><c> linked</c><00:01:52.079><c> list</c><00:01:52.320><c> eventually</c><00:01:52.799><c> we're</c><00:01:52.960><c> going</c>
+
+00:01:53.030 --> 00:01:53.040 align:start position:0%
+long linked list eventually we're going
+ 
+
+00:01:53.040 --> 00:01:54.870 align:start position:0%
+long linked list eventually we're going
+to<00:01:53.119><c> get</c><00:01:53.280><c> to</c><00:01:53.439><c> null</c><00:01:53.840><c> right</c><00:01:54.240><c> but</c><00:01:54.479><c> that's</c><00:01:54.720><c> not</c>
+
+00:01:54.870 --> 00:01:54.880 align:start position:0%
+to get to null right but that's not
+ 
+
+00:01:54.880 --> 00:01:56.389 align:start position:0%
+to get to null right but that's not
+going<00:01:55.040><c> to</c><00:01:55.119><c> be</c><00:01:55.280><c> the</c><00:01:55.360><c> case</c><00:01:55.680><c> if</c><00:01:55.759><c> there's</c><00:01:56.000><c> a</c><00:01:56.079><c> cycle</c>
+
+00:01:56.389 --> 00:01:56.399 align:start position:0%
+going to be the case if there's a cycle
+ 
+
+00:01:56.399 --> 00:01:58.310 align:start position:0%
+going to be the case if there's a cycle
+we<00:01:56.640><c> never</c><00:01:56.880><c> get</c><00:01:57.040><c> to</c><00:01:57.200><c> null</c><00:01:57.439><c> we'll</c><00:01:57.759><c> never</c><00:01:58.079><c> break</c>
+
+00:01:58.310 --> 00:01:58.320 align:start position:0%
+we never get to null we'll never break
+ 
+
+00:01:58.320 --> 00:02:00.149 align:start position:0%
+we never get to null we'll never break
+out<00:01:58.479><c> of</c><00:01:58.560><c> this</c><00:01:58.719><c> loop</c><00:01:58.960><c> so</c><00:01:59.119><c> we</c><00:01:59.280><c> really</c><00:01:59.680><c> have</c><00:01:59.920><c> to</c>
+
+00:02:00.149 --> 00:02:00.159 align:start position:0%
+out of this loop so we really have to
+ 
+
+00:02:00.159 --> 00:02:01.190 align:start position:0%
+out of this loop so we really have to
+determine<00:02:00.719><c> a</c><00:02:00.799><c> way</c>
+
+00:02:01.190 --> 00:02:01.200 align:start position:0%
+determine a way
+ 
+
+00:02:01.200 --> 00:02:03.429 align:start position:0%
+determine a way
+to<00:02:01.360><c> detect</c><00:02:01.840><c> that</c><00:02:02.000><c> we're</c><00:02:02.320><c> visiting</c><00:02:02.719><c> the</c><00:02:03.040><c> same</c>
+
+00:02:03.429 --> 00:02:03.439 align:start position:0%
+to detect that we're visiting the same
+ 
+
+00:02:03.439 --> 00:02:04.870 align:start position:0%
+to detect that we're visiting the same
+node<00:02:03.920><c> twice</c>
+
+00:02:04.870 --> 00:02:04.880 align:start position:0%
+node twice
+ 
+
+00:02:04.880 --> 00:02:06.389 align:start position:0%
+node twice
+so<00:02:05.119><c> how</c><00:02:05.360><c> can</c><00:02:05.520><c> we</c><00:02:05.680><c> determine</c><00:02:06.159><c> if</c><00:02:06.240><c> we're</c>
+
+00:02:06.389 --> 00:02:06.399 align:start position:0%
+so how can we determine if we're
+ 
+
+00:02:06.399 --> 00:02:08.150 align:start position:0%
+so how can we determine if we're
+visiting<00:02:06.799><c> the</c><00:02:06.960><c> same</c><00:02:07.280><c> node</c><00:02:07.520><c> twice</c><00:02:07.840><c> well</c><00:02:08.000><c> we</c>
+
+00:02:08.150 --> 00:02:08.160 align:start position:0%
+visiting the same node twice well we
+ 
+
+00:02:08.160 --> 00:02:10.150 align:start position:0%
+visiting the same node twice well we
+start<00:02:08.319><c> at</c><00:02:08.399><c> the</c><00:02:08.560><c> beginning</c><00:02:08.879><c> like</c><00:02:09.119><c> usual</c><00:02:09.679><c> and</c><00:02:09.920><c> we</c>
+
+00:02:10.150 --> 00:02:10.160 align:start position:0%
+start at the beginning like usual and we
+ 
+
+00:02:10.160 --> 00:02:11.029 align:start position:0%
+start at the beginning like usual and we
+maintain
+
+00:02:11.029 --> 00:02:11.039 align:start position:0%
+maintain
+ 
+
+00:02:11.039 --> 00:02:14.470 align:start position:0%
+maintain
+a<00:02:11.280><c> hash</c><00:02:11.599><c> map</c><00:02:11.920><c> or</c><00:02:12.160><c> a</c><00:02:12.319><c> hash</c><00:02:12.800><c> set</c><00:02:13.440><c> in</c><00:02:13.599><c> this</c><00:02:13.840><c> case</c>
+
+00:02:14.470 --> 00:02:14.480 align:start position:0%
+a hash map or a hash set in this case
+ 
+
+00:02:14.480 --> 00:02:16.550 align:start position:0%
+a hash map or a hash set in this case
+where<00:02:14.720><c> basically</c><00:02:15.200><c> we</c><00:02:15.360><c> take</c><00:02:15.760><c> every</c><00:02:16.080><c> single</c>
+
+00:02:16.550 --> 00:02:16.560 align:start position:0%
+where basically we take every single
+ 
+
+00:02:16.560 --> 00:02:18.229 align:start position:0%
+where basically we take every single
+node<00:02:17.360><c> and</c><00:02:17.520><c> we</c><00:02:17.680><c> take</c><00:02:17.920><c> the</c>
+
+00:02:18.229 --> 00:02:18.239 align:start position:0%
+node and we take the
+ 
+
+00:02:18.239 --> 00:02:21.430 align:start position:0%
+node and we take the
+node<00:02:18.800><c> itself</c><00:02:19.680><c> and</c><00:02:20.000><c> add</c><00:02:20.239><c> it</c><00:02:20.400><c> to</c><00:02:20.480><c> the</c><00:02:20.640><c> hash</c><00:02:21.040><c> set</c>
+
+00:02:21.430 --> 00:02:21.440 align:start position:0%
+node itself and add it to the hash set
+ 
+
+00:02:21.440 --> 00:02:23.990 align:start position:0%
+node itself and add it to the hash set
+after<00:02:21.760><c> we</c><00:02:22.000><c> have</c><00:02:22.319><c> visited</c><00:02:23.040><c> this</c><00:02:23.360><c> node</c><00:02:23.680><c> we</c><00:02:23.760><c> don't</c>
+
+00:02:23.990 --> 00:02:24.000 align:start position:0%
+after we have visited this node we don't
+ 
+
+00:02:24.000 --> 00:02:25.589 align:start position:0%
+after we have visited this node we don't
+add<00:02:24.160><c> the</c><00:02:24.319><c> value</c><00:02:24.720><c> because</c><00:02:24.879><c> i</c><00:02:25.040><c> think</c><00:02:25.280><c> in</c><00:02:25.440><c> this</c>
+
+00:02:25.589 --> 00:02:25.599 align:start position:0%
+add the value because i think in this
+ 
+
+00:02:25.599 --> 00:02:27.350 align:start position:0%
+add the value because i think in this
+problem<00:02:25.920><c> there</c><00:02:26.160><c> could</c><00:02:26.400><c> be</c><00:02:26.640><c> duplicates</c>
+
+00:02:27.350 --> 00:02:27.360 align:start position:0%
+problem there could be duplicates
+ 
+
+00:02:27.360 --> 00:02:29.270 align:start position:0%
+problem there could be duplicates
+right<00:02:27.680><c> like</c><00:02:27.920><c> the</c><00:02:28.000><c> same</c><00:02:28.239><c> value</c><00:02:28.640><c> could</c><00:02:28.800><c> show</c><00:02:28.959><c> up</c>
+
+00:02:29.270 --> 00:02:29.280 align:start position:0%
+right like the same value could show up
+ 
+
+00:02:29.280 --> 00:02:31.190 align:start position:0%
+right like the same value could show up
+multiple<00:02:29.760><c> times</c><00:02:30.160><c> in</c><00:02:30.239><c> multiple</c><00:02:30.720><c> nodes</c>
+
+00:02:31.190 --> 00:02:31.200 align:start position:0%
+multiple times in multiple nodes
+ 
+
+00:02:31.200 --> 00:02:32.790 align:start position:0%
+multiple times in multiple nodes
+so<00:02:31.360><c> we</c><00:02:31.519><c> don't</c><00:02:31.680><c> want</c><00:02:31.760><c> to</c><00:02:31.840><c> detect</c><00:02:32.239><c> a</c><00:02:32.319><c> loop</c><00:02:32.640><c> that</c>
+
+00:02:32.790 --> 00:02:32.800 align:start position:0%
+so we don't want to detect a loop that
+ 
+
+00:02:32.800 --> 00:02:34.630 align:start position:0%
+so we don't want to detect a loop that
+way<00:02:32.959><c> but</c><00:02:33.120><c> we'll</c><00:02:33.280><c> take</c><00:02:33.440><c> the</c><00:02:33.680><c> node</c><00:02:34.000><c> itself</c>
+
+00:02:34.630 --> 00:02:34.640 align:start position:0%
+way but we'll take the node itself
+ 
+
+00:02:34.640 --> 00:02:36.710 align:start position:0%
+way but we'll take the node itself
+and<00:02:34.720><c> then</c><00:02:34.959><c> add</c><00:02:35.200><c> it</c><00:02:35.280><c> to</c><00:02:35.519><c> the</c><00:02:35.680><c> hash</c><00:02:36.000><c> set</c><00:02:36.400><c> and</c><00:02:36.560><c> i</c>
+
+00:02:36.710 --> 00:02:36.720 align:start position:0%
+and then add it to the hash set and i
+ 
+
+00:02:36.720 --> 00:02:38.470 align:start position:0%
+and then add it to the hash set and i
+think<00:02:36.879><c> you</c><00:02:37.040><c> can</c><00:02:37.200><c> do</c><00:02:37.360><c> that</c><00:02:37.519><c> in</c><00:02:37.680><c> most</c><00:02:38.000><c> languages</c>
+
+00:02:38.470 --> 00:02:38.480 align:start position:0%
+think you can do that in most languages
+ 
+
+00:02:38.480 --> 00:02:40.150 align:start position:0%
+think you can do that in most languages
+you<00:02:38.640><c> definitely</c><00:02:39.040><c> can</c><00:02:39.280><c> in</c><00:02:39.440><c> python</c>
+
+00:02:40.150 --> 00:02:40.160 align:start position:0%
+you definitely can in python
+ 
+
+00:02:40.160 --> 00:02:41.750 align:start position:0%
+you definitely can in python
+because<00:02:40.400><c> the</c><00:02:40.560><c> node</c><00:02:40.800><c> itself</c><00:02:41.200><c> is</c><00:02:41.360><c> just</c><00:02:41.519><c> an</c>
+
+00:02:41.750 --> 00:02:41.760 align:start position:0%
+because the node itself is just an
+ 
+
+00:02:41.760 --> 00:02:43.750 align:start position:0%
+because the node itself is just an
+object<00:02:42.160><c> and</c><00:02:42.319><c> you</c><00:02:42.480><c> usually</c><00:02:42.879><c> can</c><00:02:43.200><c> hash</c><00:02:43.519><c> an</c>
+
+00:02:43.750 --> 00:02:43.760 align:start position:0%
+object and you usually can hash an
+ 
+
+00:02:43.760 --> 00:02:45.190 align:start position:0%
+object and you usually can hash an
+object<00:02:44.160><c> and</c><00:02:44.239><c> so</c><00:02:44.400><c> in</c><00:02:44.480><c> that</c><00:02:44.640><c> case</c><00:02:44.959><c> we're</c><00:02:45.120><c> going</c>
+
+00:02:45.190 --> 00:02:45.200 align:start position:0%
+object and so in that case we're going
+ 
+
+00:02:45.200 --> 00:02:45.830 align:start position:0%
+object and so in that case we're going
+to<00:02:45.280><c> take</c><00:02:45.519><c> this</c>
+
+00:02:45.830 --> 00:02:45.840 align:start position:0%
+to take this
+ 
+
+00:02:45.840 --> 00:02:47.830 align:start position:0%
+to take this
+visit<00:02:46.160><c> it</c><00:02:46.319><c> take</c><00:02:46.560><c> this</c><00:02:46.879><c> visit</c><00:02:47.120><c> it</c><00:02:47.280><c> take</c><00:02:47.519><c> this</c>
+
+00:02:47.830 --> 00:02:47.840 align:start position:0%
+visit it take this visit it take this
+ 
+
+00:02:47.840 --> 00:02:49.270 align:start position:0%
+visit it take this visit it take this
+visit<00:02:48.080><c> it</c><00:02:48.239><c> take</c><00:02:48.480><c> this</c><00:02:48.720><c> visit</c><00:02:49.040><c> and</c><00:02:49.120><c> then</c>
+
+00:02:49.270 --> 00:02:49.280 align:start position:0%
+visit it take this visit and then
+ 
+
+00:02:49.280 --> 00:02:50.150 align:start position:0%
+visit it take this visit and then
+eventually<00:02:49.599><c> we'll</c><00:02:49.760><c> get</c>
+
+00:02:50.150 --> 00:02:50.160 align:start position:0%
+eventually we'll get
+ 
+
+00:02:50.160 --> 00:02:53.190 align:start position:0%
+eventually we'll get
+back<00:02:50.640><c> to</c><00:02:50.800><c> a</c><00:02:51.040><c> node</c><00:02:51.519><c> if</c><00:02:51.680><c> we</c><00:02:52.000><c> notice</c><00:02:52.480><c> that</c><00:02:52.640><c> a</c><00:02:52.879><c> node</c>
+
+00:02:53.190 --> 00:02:53.200 align:start position:0%
+back to a node if we notice that a node
+ 
+
+00:02:53.200 --> 00:02:53.509 align:start position:0%
+back to a node if we notice that a node
+has
+
+00:02:53.509 --> 00:02:53.519 align:start position:0%
+has
+ 
+
+00:02:53.519 --> 00:02:55.589 align:start position:0%
+has
+already<00:02:54.080><c> been</c><00:02:54.319><c> visited</c><00:02:54.879><c> and</c><00:02:55.200><c> now</c><00:02:55.360><c> we're</c>
+
+00:02:55.589 --> 00:02:55.599 align:start position:0%
+already been visited and now we're
+ 
+
+00:02:55.599 --> 00:02:57.110 align:start position:0%
+already been visited and now we're
+visiting<00:02:56.000><c> it</c><00:02:56.400><c> twice</c>
+
+00:02:57.110 --> 00:02:57.120 align:start position:0%
+visiting it twice
+ 
+
+00:02:57.120 --> 00:02:59.350 align:start position:0%
+visiting it twice
+that<00:02:57.519><c> obviously</c><00:02:58.159><c> means</c><00:02:58.400><c> that</c><00:02:58.560><c> there</c><00:02:58.879><c> must</c><00:02:59.200><c> be</c>
+
+00:02:59.350 --> 00:02:59.360 align:start position:0%
+that obviously means that there must be
+ 
+
+00:02:59.360 --> 00:03:00.630 align:start position:0%
+that obviously means that there must be
+a<00:02:59.599><c> cycle</c><00:03:00.080><c> right</c>
+
+00:03:00.630 --> 00:03:00.640 align:start position:0%
+a cycle right
+ 
+
+00:03:00.640 --> 00:03:02.550 align:start position:0%
+a cycle right
+we<00:03:00.800><c> can't</c><00:03:01.040><c> visit</c><00:03:01.360><c> the</c><00:03:01.440><c> same</c><00:03:01.680><c> node</c><00:03:01.920><c> twice</c><00:03:02.400><c> so</c>
+
+00:03:02.550 --> 00:03:02.560 align:start position:0%
+we can't visit the same node twice so
+ 
+
+00:03:02.560 --> 00:03:04.309 align:start position:0%
+we can't visit the same node twice so
+that<00:03:02.720><c> means</c><00:03:02.879><c> there's</c><00:03:03.120><c> a</c><00:03:03.200><c> cycle</c><00:03:03.599><c> we</c><00:03:03.840><c> detect</c>
+
+00:03:04.309 --> 00:03:04.319 align:start position:0%
+that means there's a cycle we detect
+ 
+
+00:03:04.319 --> 00:03:06.470 align:start position:0%
+that means there's a cycle we detect
+that<00:03:04.640><c> and</c><00:03:04.720><c> then</c><00:03:04.959><c> we</c><00:03:05.040><c> can</c><00:03:05.200><c> return</c><00:03:05.519><c> true</c><00:03:05.920><c> a</c><00:03:06.080><c> cycle</c>
+
+00:03:06.470 --> 00:03:06.480 align:start position:0%
+that and then we can return true a cycle
+ 
+
+00:03:06.480 --> 00:03:07.190 align:start position:0%
+that and then we can return true a cycle
+exists
+
+00:03:07.190 --> 00:03:07.200 align:start position:0%
+exists
+ 
+
+00:03:07.200 --> 00:03:08.710 align:start position:0%
+exists
+now<00:03:07.440><c> in</c><00:03:07.519><c> this</c><00:03:07.680><c> case</c><00:03:07.920><c> we're</c><00:03:08.159><c> only</c><00:03:08.319><c> having</c><00:03:08.560><c> to</c>
+
+00:03:08.710 --> 00:03:08.720 align:start position:0%
+now in this case we're only having to
+ 
+
+00:03:08.720 --> 00:03:10.550 align:start position:0%
+now in this case we're only having to
+visit<00:03:09.040><c> each</c><00:03:09.200><c> node</c><00:03:09.440><c> about</c><00:03:09.920><c> once</c>
+
+00:03:10.550 --> 00:03:10.560 align:start position:0%
+visit each node about once
+ 
+
+00:03:10.560 --> 00:03:12.149 align:start position:0%
+visit each node about once
+so<00:03:10.879><c> the</c><00:03:11.040><c> time</c><00:03:11.280><c> complexity</c><00:03:11.760><c> is</c><00:03:11.840><c> going</c><00:03:11.920><c> to</c><00:03:12.000><c> be</c>
+
+00:03:12.149 --> 00:03:12.159 align:start position:0%
+so the time complexity is going to be
+ 
+
+00:03:12.159 --> 00:03:14.949 align:start position:0%
+so the time complexity is going to be
+big<00:03:12.400><c> o</c><00:03:12.640><c> of</c><00:03:12.800><c> n</c><00:03:13.200><c> the</c><00:03:13.440><c> memory</c><00:03:13.840><c> complexity</c><00:03:14.480><c> is</c><00:03:14.640><c> also</c>
+
+00:03:14.949 --> 00:03:14.959 align:start position:0%
+big o of n the memory complexity is also
+ 
+
+00:03:14.959 --> 00:03:16.869 align:start position:0%
+big o of n the memory complexity is also
+going<00:03:15.040><c> to</c><00:03:15.120><c> be</c><00:03:15.280><c> big</c><00:03:15.519><c> o</c><00:03:15.599><c> of</c><00:03:15.760><c> n</c><00:03:15.920><c> because</c><00:03:16.159><c> every</c>
+
+00:03:16.869 --> 00:03:16.879 align:start position:0%
+going to be big o of n because every
+ 
+
+00:03:16.879 --> 00:03:19.830 align:start position:0%
+going to be big o of n because every
+node<00:03:17.280><c> potentially</c><00:03:18.640><c> is</c><00:03:18.800><c> going</c><00:03:18.959><c> to</c><00:03:19.120><c> be</c><00:03:19.280><c> stored</c>
+
+00:03:19.830 --> 00:03:19.840 align:start position:0%
+node potentially is going to be stored
+ 
+
+00:03:19.840 --> 00:03:21.350 align:start position:0%
+node potentially is going to be stored
+in<00:03:20.000><c> the</c><00:03:20.239><c> hash</c><00:03:20.640><c> set</c>
+
+00:03:21.350 --> 00:03:21.360 align:start position:0%
+in the hash set
+ 
+
+00:03:21.360 --> 00:03:22.949 align:start position:0%
+in the hash set
+but<00:03:21.519><c> there's</c><00:03:21.840><c> actually</c><00:03:22.159><c> a</c><00:03:22.239><c> way</c><00:03:22.480><c> that</c><00:03:22.640><c> we</c><00:03:22.800><c> can</c>
+
+00:03:22.949 --> 00:03:22.959 align:start position:0%
+but there's actually a way that we can
+ 
+
+00:03:22.959 --> 00:03:25.589 align:start position:0%
+but there's actually a way that we can
+do<00:03:23.120><c> this</c><00:03:23.599><c> without</c><00:03:24.239><c> using</c><00:03:24.640><c> a</c><00:03:24.720><c> hash</c><00:03:25.040><c> set</c><00:03:25.280><c> we</c><00:03:25.440><c> can</c>
+
+00:03:25.589 --> 00:03:25.599 align:start position:0%
+do this without using a hash set we can
+ 
+
+00:03:25.599 --> 00:03:28.070 align:start position:0%
+do this without using a hash set we can
+do<00:03:25.760><c> this</c><00:03:26.000><c> in</c><00:03:26.159><c> o</c><00:03:26.400><c> of</c><00:03:26.640><c> one</c><00:03:26.959><c> memory</c><00:03:27.440><c> and</c><00:03:27.680><c> that's</c>
+
+00:03:28.070 --> 00:03:28.080 align:start position:0%
+do this in o of one memory and that's
+ 
+
+00:03:28.080 --> 00:03:28.390 align:start position:0%
+do this in o of one memory and that's
+the
+
+00:03:28.390 --> 00:03:28.400 align:start position:0%
+the
+ 
+
+00:03:28.400 --> 00:03:30.149 align:start position:0%
+the
+slightly<00:03:28.799><c> complicated</c><00:03:29.360><c> algorithm</c><00:03:29.920><c> i'm</c><00:03:30.080><c> going</c>
+
+00:03:30.149 --> 00:03:30.159 align:start position:0%
+slightly complicated algorithm i'm going
+ 
+
+00:03:30.159 --> 00:03:31.589 align:start position:0%
+slightly complicated algorithm i'm going
+to<00:03:30.319><c> show</c><00:03:30.480><c> you</c><00:03:30.640><c> that</c><00:03:30.879><c> algorithm</c><00:03:31.280><c> and</c><00:03:31.440><c> i'm</c><00:03:31.519><c> going</c>
+
+00:03:31.589 --> 00:03:31.599 align:start position:0%
+to show you that algorithm and i'm going
+ 
+
+00:03:31.599 --> 00:03:32.070 align:start position:0%
+to show you that algorithm and i'm going
+to<00:03:31.680><c> show</c><00:03:31.840><c> you</c>
+
+00:03:32.070 --> 00:03:32.080 align:start position:0%
+to show you
+ 
+
+00:03:32.080 --> 00:03:35.589 align:start position:0%
+to show you
+exactly<00:03:33.040><c> why</c><00:03:33.519><c> it</c><00:03:33.760><c> works</c><00:03:34.400><c> so</c><00:03:34.640><c> the</c><00:03:34.799><c> idea</c><00:03:35.360><c> is</c>
+
+00:03:35.589 --> 00:03:35.599 align:start position:0%
+exactly why it works so the idea is
+ 
+
+00:03:35.599 --> 00:03:37.430 align:start position:0%
+exactly why it works so the idea is
+simple<00:03:36.080><c> we're</c><00:03:36.400><c> going</c><00:03:36.640><c> to</c><00:03:36.799><c> start</c><00:03:37.200><c> at</c><00:03:37.280><c> the</c>
+
+00:03:37.430 --> 00:03:37.440 align:start position:0%
+simple we're going to start at the
+ 
+
+00:03:37.440 --> 00:03:38.789 align:start position:0%
+simple we're going to start at the
+beginning<00:03:37.840><c> of</c><00:03:37.920><c> the</c><00:03:38.080><c> linked</c><00:03:38.319><c> list</c><00:03:38.560><c> but</c><00:03:38.720><c> we're</c>
+
+00:03:38.789 --> 00:03:38.799 align:start position:0%
+beginning of the linked list but we're
+ 
+
+00:03:38.799 --> 00:03:40.710 align:start position:0%
+beginning of the linked list but we're
+going<00:03:38.959><c> to</c><00:03:39.040><c> have</c><00:03:39.280><c> two</c><00:03:39.599><c> pointers</c><00:03:40.080><c> this</c><00:03:40.319><c> time</c>
+
+00:03:40.710 --> 00:03:40.720 align:start position:0%
+going to have two pointers this time
+ 
+
+00:03:40.720 --> 00:03:43.270 align:start position:0%
+going to have two pointers this time
+we're<00:03:40.879><c> going</c><00:03:41.040><c> to</c><00:03:41.120><c> have</c><00:03:41.440><c> a</c><00:03:41.680><c> slow</c><00:03:42.080><c> pointer</c><00:03:42.720><c> s</c><00:03:43.120><c> and</c>
+
+00:03:43.270 --> 00:03:43.280 align:start position:0%
+we're going to have a slow pointer s and
+ 
+
+00:03:43.280 --> 00:03:45.190 align:start position:0%
+we're going to have a slow pointer s and
+we're<00:03:43.440><c> going</c><00:03:43.519><c> to</c><00:03:43.599><c> have</c><00:03:43.760><c> a</c><00:03:44.000><c> fast</c><00:03:44.400><c> pointer</c>
+
+00:03:45.190 --> 00:03:45.200 align:start position:0%
+we're going to have a fast pointer
+ 
+
+00:03:45.200 --> 00:03:47.350 align:start position:0%
+we're going to have a fast pointer
+f<00:03:45.760><c> and</c><00:03:45.920><c> you</c><00:03:46.080><c> may</c><00:03:46.239><c> have</c><00:03:46.400><c> seen</c><00:03:46.640><c> this</c><00:03:46.879><c> algorithm</c>
+
+00:03:47.350 --> 00:03:47.360 align:start position:0%
+f and you may have seen this algorithm
+ 
+
+00:03:47.360 --> 00:03:49.030 align:start position:0%
+f and you may have seen this algorithm
+before<00:03:47.680><c> it's</c><00:03:47.840><c> a</c><00:03:47.920><c> pretty</c><00:03:48.239><c> simple</c><00:03:48.560><c> algorithm</c>
+
+00:03:49.030 --> 00:03:49.040 align:start position:0%
+before it's a pretty simple algorithm
+ 
+
+00:03:49.040 --> 00:03:50.710 align:start position:0%
+before it's a pretty simple algorithm
+once<00:03:49.280><c> you</c><00:03:49.519><c> know</c><00:03:49.680><c> it</c><00:03:49.760><c> but</c><00:03:49.920><c> i'm</c><00:03:50.080><c> gonna</c><00:03:50.319><c> again</c>
+
+00:03:50.710 --> 00:03:50.720 align:start position:0%
+once you know it but i'm gonna again
+ 
+
+00:03:50.720 --> 00:03:53.030 align:start position:0%
+once you know it but i'm gonna again
+show<00:03:50.879><c> you</c><00:03:51.120><c> why</c><00:03:51.440><c> exactly</c><00:03:51.920><c> it</c><00:03:52.000><c> works</c><00:03:52.640><c> so</c><00:03:52.799><c> the</c>
+
+00:03:53.030 --> 00:03:53.040 align:start position:0%
+show you why exactly it works so the
+ 
+
+00:03:53.040 --> 00:03:54.149 align:start position:0%
+show you why exactly it works so the
+slow<00:03:53.439><c> pointer</c>
+
+00:03:54.149 --> 00:03:54.159 align:start position:0%
+slow pointer
+ 
+
+00:03:54.159 --> 00:03:56.869 align:start position:0%
+slow pointer
+each<00:03:54.480><c> time</c><00:03:54.799><c> is</c><00:03:54.959><c> just</c><00:03:55.200><c> gonna</c><00:03:55.360><c> be</c><00:03:55.599><c> shifted</c><00:03:56.400><c> by</c>
+
+00:03:56.869 --> 00:03:56.879 align:start position:0%
+each time is just gonna be shifted by
+ 
+
+00:03:56.879 --> 00:03:57.509 align:start position:0%
+each time is just gonna be shifted by
+one
+
+00:03:57.509 --> 00:03:57.519 align:start position:0%
+one
+ 
+
+00:03:57.519 --> 00:04:00.149 align:start position:0%
+one
+the<00:03:57.840><c> fast</c><00:03:58.239><c> pointer</c><00:03:58.720><c> is</c><00:03:58.879><c> going</c><00:03:59.040><c> to</c><00:03:59.200><c> be</c><00:03:59.360><c> shifted</c>
+
+00:04:00.149 --> 00:04:00.159 align:start position:0%
+the fast pointer is going to be shifted
+ 
+
+00:04:00.159 --> 00:04:00.630 align:start position:0%
+the fast pointer is going to be shifted
+by
+
+00:04:00.630 --> 00:04:00.640 align:start position:0%
+by
+ 
+
+00:04:00.640 --> 00:04:03.670 align:start position:0%
+by
+two<00:04:01.360><c> so</c><00:04:01.599><c> it's</c><00:04:01.840><c> going</c><00:04:02.000><c> to</c><00:04:02.159><c> be</c><00:04:02.400><c> here</c><00:04:02.959><c> and</c>
+
+00:04:03.670 --> 00:04:03.680 align:start position:0%
+two so it's going to be here and
+ 
+
+00:04:03.680 --> 00:04:06.309 align:start position:0%
+two so it's going to be here and
+so<00:04:04.159><c> originally</c><00:04:04.799><c> they</c><00:04:05.040><c> do</c><00:04:05.439><c> start</c><00:04:05.840><c> at</c><00:04:05.920><c> the</c><00:04:06.080><c> same</c>
+
+00:04:06.309 --> 00:04:06.319 align:start position:0%
+so originally they do start at the same
+ 
+
+00:04:06.319 --> 00:04:08.470 align:start position:0%
+so originally they do start at the same
+position<00:04:06.799><c> but</c><00:04:07.040><c> we're</c><00:04:07.200><c> gonna</c><00:04:07.519><c> look</c><00:04:07.840><c> at</c><00:04:08.080><c> every</c>
+
+00:04:08.470 --> 00:04:08.480 align:start position:0%
+position but we're gonna look at every
+ 
+
+00:04:08.480 --> 00:04:09.429 align:start position:0%
+position but we're gonna look at every
+position
+
+00:04:09.429 --> 00:04:09.439 align:start position:0%
+position
+ 
+
+00:04:09.439 --> 00:04:11.509 align:start position:0%
+position
+after<00:04:09.760><c> we've</c><00:04:10.080><c> shifted</c><00:04:10.480><c> it</c><00:04:10.879><c> and</c><00:04:11.040><c> so</c><00:04:11.200><c> what's</c>
+
+00:04:11.509 --> 00:04:11.519 align:start position:0%
+after we've shifted it and so what's
+ 
+
+00:04:11.519 --> 00:04:12.789 align:start position:0%
+after we've shifted it and so what's
+either<00:04:11.920><c> going</c><00:04:12.159><c> to</c><00:04:12.319><c> happen</c>
+
+00:04:12.789 --> 00:04:12.799 align:start position:0%
+either going to happen
+ 
+
+00:04:12.799 --> 00:04:14.390 align:start position:0%
+either going to happen
+obviously<00:04:13.200><c> the</c><00:04:13.360><c> fast</c><00:04:13.599><c> pointer</c><00:04:13.920><c> is</c><00:04:14.000><c> faster</c>
+
+00:04:14.390 --> 00:04:14.400 align:start position:0%
+obviously the fast pointer is faster
+ 
+
+00:04:14.400 --> 00:04:16.469 align:start position:0%
+obviously the fast pointer is faster
+than<00:04:14.560><c> the</c><00:04:14.640><c> slow</c><00:04:14.959><c> pointer</c><00:04:15.200><c> so</c><00:04:15.360><c> the</c><00:04:15.760><c> if</c><00:04:16.000><c> there</c><00:04:16.320><c> is</c>
+
+00:04:16.469 --> 00:04:16.479 align:start position:0%
+than the slow pointer so the if there is
+ 
+
+00:04:16.479 --> 00:04:18.069 align:start position:0%
+than the slow pointer so the if there is
+the<00:04:16.720><c> end</c><00:04:16.880><c> of</c><00:04:17.040><c> a</c><00:04:17.120><c> linked</c><00:04:17.359><c> list</c><00:04:17.600><c> right</c><00:04:17.759><c> like</c><00:04:18.000><c> for</c>
+
+00:04:18.069 --> 00:04:18.079 align:start position:0%
+the end of a linked list right like for
+ 
+
+00:04:18.079 --> 00:04:18.870 align:start position:0%
+the end of a linked list right like for
+example
+
+00:04:18.870 --> 00:04:18.880 align:start position:0%
+example
+ 
+
+00:04:18.880 --> 00:04:21.030 align:start position:0%
+example
+this<00:04:19.120><c> points</c><00:04:19.440><c> at</c><00:04:19.600><c> null</c><00:04:20.079><c> the</c><00:04:20.239><c> fast</c><00:04:20.639><c> pointer</c><00:04:20.959><c> is</c>
+
+00:04:21.030 --> 00:04:21.040 align:start position:0%
+this points at null the fast pointer is
+ 
+
+00:04:21.040 --> 00:04:21.990 align:start position:0%
+this points at null the fast pointer is
+of<00:04:21.199><c> course</c><00:04:21.519><c> gonna</c>
+
+00:04:21.990 --> 00:04:22.000 align:start position:0%
+of course gonna
+ 
+
+00:04:22.000 --> 00:04:23.990 align:start position:0%
+of course gonna
+gonna<00:04:22.400><c> reach</c><00:04:22.720><c> the</c><00:04:22.880><c> end</c><00:04:23.040><c> of</c><00:04:23.120><c> the</c><00:04:23.280><c> linked</c><00:04:23.600><c> list</c>
+
+00:04:23.990 --> 00:04:24.000 align:start position:0%
+gonna reach the end of the linked list
+ 
+
+00:04:24.000 --> 00:04:26.150 align:start position:0%
+gonna reach the end of the linked list
+first<00:04:24.639><c> so</c><00:04:24.880><c> if</c><00:04:25.120><c> we</c><00:04:25.360><c> do</c><00:04:25.600><c> that</c>
+
+00:04:26.150 --> 00:04:26.160 align:start position:0%
+first so if we do that
+ 
+
+00:04:26.160 --> 00:04:28.550 align:start position:0%
+first so if we do that
+then<00:04:26.400><c> we</c><00:04:26.560><c> can</c><00:04:26.800><c> return</c><00:04:27.199><c> false</c><00:04:27.680><c> no</c><00:04:27.919><c> link</c><00:04:28.240><c> no</c>
+
+00:04:28.550 --> 00:04:28.560 align:start position:0%
+then we can return false no link no
+ 
+
+00:04:28.560 --> 00:04:30.469 align:start position:0%
+then we can return false no link no
+cycle<00:04:29.040><c> exists</c><00:04:29.440><c> in</c><00:04:29.520><c> the</c><00:04:29.600><c> linked</c><00:04:29.840><c> list</c><00:04:30.080><c> but</c><00:04:30.320><c> if</c>
+
+00:04:30.469 --> 00:04:30.479 align:start position:0%
+cycle exists in the linked list but if
+ 
+
+00:04:30.479 --> 00:04:30.870 align:start position:0%
+cycle exists in the linked list but if
+there
+
+00:04:30.870 --> 00:04:30.880 align:start position:0%
+there
+ 
+
+00:04:30.880 --> 00:04:34.310 align:start position:0%
+there
+is<00:04:31.280><c> a</c><00:04:31.520><c> cycle</c><00:04:32.320><c> do</c><00:04:32.479><c> you</c><00:04:32.800><c> see</c><00:04:33.360><c> that</c><00:04:33.600><c> this</c><00:04:33.919><c> fast</c>
+
+00:04:34.310 --> 00:04:34.320 align:start position:0%
+is a cycle do you see that this fast
+ 
+
+00:04:34.320 --> 00:04:36.150 align:start position:0%
+is a cycle do you see that this fast
+pointer<00:04:34.800><c> and</c><00:04:35.040><c> this</c><00:04:35.199><c> slow</c><00:04:35.520><c> pointer</c><00:04:35.919><c> are</c>
+
+00:04:36.150 --> 00:04:36.160 align:start position:0%
+pointer and this slow pointer are
+ 
+
+00:04:36.160 --> 00:04:38.950 align:start position:0%
+pointer and this slow pointer are
+going<00:04:36.479><c> to</c><00:04:36.800><c> meet</c><00:04:37.280><c> again</c><00:04:38.400><c> they're</c><00:04:38.560><c> going</c><00:04:38.720><c> to</c>
+
+00:04:38.950 --> 00:04:38.960 align:start position:0%
+going to meet again they're going to
+ 
+
+00:04:38.960 --> 00:04:40.390 align:start position:0%
+going to meet again they're going to
+meet<00:04:39.280><c> at</c><00:04:39.440><c> the</c><00:04:39.680><c> exact</c>
+
+00:04:40.390 --> 00:04:40.400 align:start position:0%
+meet at the exact
+ 
+
+00:04:40.400 --> 00:04:43.189 align:start position:0%
+meet at the exact
+same<00:04:40.880><c> position</c><00:04:41.919><c> and</c><00:04:42.240><c> if</c><00:04:42.400><c> they</c><00:04:42.639><c> meet</c><00:04:42.880><c> at</c><00:04:43.040><c> the</c>
+
+00:04:43.189 --> 00:04:43.199 align:start position:0%
+same position and if they meet at the
+ 
+
+00:04:43.199 --> 00:04:45.270 align:start position:0%
+same position and if they meet at the
+exact<00:04:43.440><c> same</c><00:04:43.759><c> position</c><00:04:44.160><c> that</c><00:04:44.479><c> must</c><00:04:44.880><c> mean</c><00:04:45.120><c> that</c>
+
+00:04:45.270 --> 00:04:45.280 align:start position:0%
+exact same position that must mean that
+ 
+
+00:04:45.280 --> 00:04:45.990 align:start position:0%
+exact same position that must mean that
+a<00:04:45.440><c> cycle</c>
+
+00:04:45.990 --> 00:04:46.000 align:start position:0%
+a cycle
+ 
+
+00:04:46.000 --> 00:04:47.830 align:start position:0%
+a cycle
+exists<00:04:46.800><c> so</c><00:04:46.960><c> i'm</c><00:04:47.120><c> just</c><00:04:47.199><c> going</c><00:04:47.360><c> to</c><00:04:47.440><c> run</c><00:04:47.680><c> the</c>
+
+00:04:47.830 --> 00:04:47.840 align:start position:0%
+exists so i'm just going to run the
+ 
+
+00:04:47.840 --> 00:04:49.030 align:start position:0%
+exists so i'm just going to run the
+simulation<00:04:48.479><c> and</c><00:04:48.560><c> then</c><00:04:48.639><c> i'm</c><00:04:48.800><c> going</c><00:04:48.800><c> to</c><00:04:48.880><c> show</c>
+
+00:04:49.030 --> 00:04:49.040 align:start position:0%
+simulation and then i'm going to show
+ 
+
+00:04:49.040 --> 00:04:50.870 align:start position:0%
+simulation and then i'm going to show
+you<00:04:49.280><c> why</c><00:04:49.520><c> it's</c><00:04:49.759><c> always</c><00:04:50.160><c> going</c><00:04:50.320><c> to</c><00:04:50.400><c> be</c><00:04:50.560><c> the</c><00:04:50.639><c> case</c>
+
+00:04:50.870 --> 00:04:50.880 align:start position:0%
+you why it's always going to be the case
+ 
+
+00:04:50.880 --> 00:04:52.469 align:start position:0%
+you why it's always going to be the case
+that<00:04:51.040><c> these</c><00:04:51.280><c> two</c><00:04:51.520><c> are</c><00:04:51.600><c> going</c><00:04:51.759><c> to</c><00:04:52.000><c> meet</c>
+
+00:04:52.469 --> 00:04:52.479 align:start position:0%
+that these two are going to meet
+ 
+
+00:04:52.479 --> 00:04:55.189 align:start position:0%
+that these two are going to meet
+if<00:04:52.639><c> they</c><00:04:52.880><c> ever</c><00:04:53.120><c> reach</c><00:04:53.520><c> a</c><00:04:53.680><c> cycle</c><00:04:54.479><c> so</c><00:04:54.880><c> we</c><00:04:55.040><c> just</c>
+
+00:04:55.189 --> 00:04:55.199 align:start position:0%
+if they ever reach a cycle so we just
+ 
+
+00:04:55.199 --> 00:04:57.030 align:start position:0%
+if they ever reach a cycle so we just
+take<00:04:55.360><c> one</c><00:04:55.600><c> more</c><00:04:55.919><c> step</c><00:04:56.240><c> with</c><00:04:56.479><c> s</c><00:04:56.720><c> right</c><00:04:56.880><c> we're</c>
+
+00:04:57.030 --> 00:04:57.040 align:start position:0%
+take one more step with s right we're
+ 
+
+00:04:57.040 --> 00:04:58.550 align:start position:0%
+take one more step with s right we're
+only<00:04:57.280><c> shifting</c><00:04:57.680><c> it</c><00:04:57.759><c> by</c><00:04:58.000><c> one</c>
+
+00:04:58.550 --> 00:04:58.560 align:start position:0%
+only shifting it by one
+ 
+
+00:04:58.560 --> 00:05:01.189 align:start position:0%
+only shifting it by one
+f<00:04:58.880><c> is</c><00:04:59.040><c> gonna</c><00:04:59.280><c> be</c><00:04:59.440><c> shifted</c><00:05:00.080><c> by</c><00:05:00.400><c> two</c><00:05:00.639><c> so</c><00:05:00.880><c> first</c>
+
+00:05:01.189 --> 00:05:01.199 align:start position:0%
+f is gonna be shifted by two so first
+ 
+
+00:05:01.199 --> 00:05:02.469 align:start position:0%
+f is gonna be shifted by two so first
+we're<00:05:01.360><c> gonna</c><00:05:01.520><c> go</c><00:05:01.759><c> to</c><00:05:02.000><c> four</c>
+
+00:05:02.469 --> 00:05:02.479 align:start position:0%
+we're gonna go to four
+ 
+
+00:05:02.479 --> 00:05:04.550 align:start position:0%
+we're gonna go to four
+and<00:05:02.639><c> then</c><00:05:02.800><c> we're</c><00:05:03.039><c> gonna</c><00:05:03.360><c> follow</c><00:05:03.680><c> the</c><00:05:04.000><c> link</c><00:05:04.400><c> and</c>
+
+00:05:04.550 --> 00:05:04.560 align:start position:0%
+and then we're gonna follow the link and
+ 
+
+00:05:04.560 --> 00:05:05.749 align:start position:0%
+and then we're gonna follow the link and
+reach<00:05:05.039><c> back</c>
+
+00:05:05.749 --> 00:05:05.759 align:start position:0%
+reach back
+ 
+
+00:05:05.759 --> 00:05:08.710 align:start position:0%
+reach back
+to<00:05:06.320><c> this</c><00:05:06.560><c> position</c><00:05:07.039><c> right</c><00:05:07.280><c> the</c><00:05:07.520><c> two</c><00:05:07.759><c> position</c>
+
+00:05:08.710 --> 00:05:08.720 align:start position:0%
+to this position right the two position
+ 
+
+00:05:08.720 --> 00:05:09.590 align:start position:0%
+to this position right the two position
+so
+
+00:05:09.590 --> 00:05:09.600 align:start position:0%
+so
+ 
+
+00:05:09.600 --> 00:05:12.390 align:start position:0%
+so
+clearly<00:05:10.160><c> f</c><00:05:10.479><c> made</c><00:05:10.720><c> a</c><00:05:10.880><c> loop</c><00:05:11.280><c> f</c><00:05:11.759><c> has</c><00:05:12.000><c> gone</c><00:05:12.240><c> through</c>
+
+00:05:12.390 --> 00:05:12.400 align:start position:0%
+clearly f made a loop f has gone through
+ 
+
+00:05:12.400 --> 00:05:13.270 align:start position:0%
+clearly f made a loop f has gone through
+the<00:05:12.560><c> cycle</c>
+
+00:05:13.270 --> 00:05:13.280 align:start position:0%
+the cycle
+ 
+
+00:05:13.280 --> 00:05:14.950 align:start position:0%
+the cycle
+and<00:05:13.440><c> so</c><00:05:13.680><c> far</c><00:05:13.919><c> we've</c><00:05:14.160><c> shifted</c><00:05:14.560><c> each</c><00:05:14.720><c> of</c><00:05:14.800><c> the</c>
+
+00:05:14.950 --> 00:05:14.960 align:start position:0%
+and so far we've shifted each of the
+ 
+
+00:05:14.960 --> 00:05:16.790 align:start position:0%
+and so far we've shifted each of the
+pointers<00:05:15.840><c> twice</c>
+
+00:05:16.790 --> 00:05:16.800 align:start position:0%
+pointers twice
+ 
+
+00:05:16.800 --> 00:05:18.950 align:start position:0%
+pointers twice
+and<00:05:16.960><c> so</c><00:05:17.199><c> we're</c><00:05:17.360><c> going</c><00:05:17.440><c> to</c><00:05:17.520><c> do</c><00:05:17.759><c> one</c><00:05:18.000><c> last</c><00:05:18.400><c> shift</c>
+
+00:05:18.950 --> 00:05:18.960 align:start position:0%
+and so we're going to do one last shift
+ 
+
+00:05:18.960 --> 00:05:20.230 align:start position:0%
+and so we're going to do one last shift
+s<00:05:19.360><c> is</c><00:05:19.440><c> going</c><00:05:19.600><c> to</c><00:05:19.680><c> reach</c>
+
+00:05:20.230 --> 00:05:20.240 align:start position:0%
+s is going to reach
+ 
+
+00:05:20.240 --> 00:05:24.230 align:start position:0%
+s is going to reach
+the<00:05:20.560><c> 4</c><00:05:22.240><c> and</c><00:05:22.400><c> our</c><00:05:22.720><c> f</c><00:05:23.120><c> from</c><00:05:23.360><c> over</c><00:05:23.600><c> here</c><00:05:23.919><c> is</c><00:05:24.080><c> gonna</c>
+
+00:05:24.230 --> 00:05:24.240 align:start position:0%
+the 4 and our f from over here is gonna
+ 
+
+00:05:24.240 --> 00:05:25.990 align:start position:0%
+the 4 and our f from over here is gonna
+be<00:05:24.400><c> shifted</c><00:05:24.800><c> twice</c><00:05:25.280><c> again</c>
+
+00:05:25.990 --> 00:05:26.000 align:start position:0%
+be shifted twice again
+ 
+
+00:05:26.000 --> 00:05:28.870 align:start position:0%
+be shifted twice again
+and<00:05:26.240><c> it's</c><00:05:26.560><c> gonna</c><00:05:26.720><c> reach</c><00:05:27.199><c> the</c><00:05:27.520><c> four</c><00:05:27.919><c> as</c><00:05:28.160><c> well</c><00:05:28.639><c> so</c>
+
+00:05:28.870 --> 00:05:28.880 align:start position:0%
+and it's gonna reach the four as well so
+ 
+
+00:05:28.880 --> 00:05:30.070 align:start position:0%
+and it's gonna reach the four as well so
+at<00:05:29.199><c> this</c><00:05:29.520><c> point</c>
+
+00:05:30.070 --> 00:05:30.080 align:start position:0%
+at this point
+ 
+
+00:05:30.080 --> 00:05:32.629 align:start position:0%
+at this point
+we're<00:05:30.240><c> gonna</c><00:05:30.400><c> just</c><00:05:30.720><c> we're</c><00:05:30.880><c> gonna</c><00:05:31.120><c> see</c><00:05:31.680><c> yes</c><00:05:32.320><c> the</c>
+
+00:05:32.629 --> 00:05:32.639 align:start position:0%
+we're gonna just we're gonna see yes the
+ 
+
+00:05:32.639 --> 00:05:34.469 align:start position:0%
+we're gonna just we're gonna see yes the
+slow<00:05:32.960><c> pointer</c><00:05:33.280><c> and</c><00:05:33.360><c> the</c><00:05:33.520><c> fast</c><00:05:33.840><c> pointer</c><00:05:34.160><c> have</c>
+
+00:05:34.469 --> 00:05:34.479 align:start position:0%
+slow pointer and the fast pointer have
+ 
+
+00:05:34.479 --> 00:05:36.629 align:start position:0%
+slow pointer and the fast pointer have
+met<00:05:34.720><c> each</c><00:05:34.960><c> other</c><00:05:35.280><c> how</c><00:05:35.520><c> could</c><00:05:35.759><c> it</c><00:05:35.840><c> be</c><00:05:36.160><c> possible</c>
+
+00:05:36.629 --> 00:05:36.639 align:start position:0%
+met each other how could it be possible
+ 
+
+00:05:36.639 --> 00:05:37.990 align:start position:0%
+met each other how could it be possible
+that<00:05:36.800><c> they</c><00:05:37.039><c> met</c><00:05:37.280><c> each</c><00:05:37.440><c> other</c><00:05:37.680><c> if</c><00:05:37.759><c> the</c>
+
+00:05:37.990 --> 00:05:38.000 align:start position:0%
+that they met each other if the
+ 
+
+00:05:38.000 --> 00:05:40.310 align:start position:0%
+that they met each other if the
+fast<00:05:38.240><c> pointer</c><00:05:38.560><c> was</c><00:05:38.720><c> going</c><00:05:39.120><c> twice</c><00:05:39.520><c> as</c><00:05:39.759><c> fast</c>
+
+00:05:40.310 --> 00:05:40.320 align:start position:0%
+fast pointer was going twice as fast
+ 
+
+00:05:40.320 --> 00:05:41.029 align:start position:0%
+fast pointer was going twice as fast
+because
+
+00:05:41.029 --> 00:05:41.039 align:start position:0%
+because
+ 
+
+00:05:41.039 --> 00:05:44.310 align:start position:0%
+because
+they<00:05:41.199><c> were</c><00:05:41.600><c> in</c><00:05:41.919><c> a</c><00:05:42.160><c> cycle</c><00:05:43.039><c> and</c><00:05:43.440><c> eventually</c><00:05:44.080><c> the</c>
+
+00:05:44.310 --> 00:05:44.320 align:start position:0%
+they were in a cycle and eventually the
+ 
+
+00:05:44.320 --> 00:05:46.629 align:start position:0%
+they were in a cycle and eventually the
+fast<00:05:44.639><c> pointer</c><00:05:45.120><c> no</c><00:05:45.280><c> matter</c><00:05:45.600><c> where</c><00:05:45.840><c> they</c><00:05:46.080><c> start</c>
+
+00:05:46.629 --> 00:05:46.639 align:start position:0%
+fast pointer no matter where they start
+ 
+
+00:05:46.639 --> 00:05:48.230 align:start position:0%
+fast pointer no matter where they start
+slow<00:05:46.960><c> is</c><00:05:47.039><c> here</c><00:05:47.280><c> fast</c><00:05:47.600><c> as</c><00:05:47.680><c> you're</c><00:05:47.840><c> eventually</c>
+
+00:05:48.230 --> 00:05:48.240 align:start position:0%
+slow is here fast as you're eventually
+ 
+
+00:05:48.240 --> 00:05:50.150 align:start position:0%
+slow is here fast as you're eventually
+the<00:05:48.400><c> fast</c><00:05:48.720><c> pointer</c><00:05:49.039><c> is</c><00:05:49.120><c> going</c><00:05:49.280><c> to</c><00:05:49.520><c> catch</c>
+
+00:05:50.150 --> 00:05:50.160 align:start position:0%
+the fast pointer is going to catch
+ 
+
+00:05:50.160 --> 00:05:52.070 align:start position:0%
+the fast pointer is going to catch
+up<00:05:50.400><c> to</c><00:05:50.560><c> the</c><00:05:50.720><c> slow</c><00:05:51.039><c> pointer</c><00:05:51.360><c> let</c><00:05:51.520><c> me</c><00:05:51.680><c> show</c><00:05:51.840><c> you</c>
+
+00:05:52.070 --> 00:05:52.080 align:start position:0%
+up to the slow pointer let me show you
+ 
+
+00:05:52.080 --> 00:05:54.469 align:start position:0%
+up to the slow pointer let me show you
+why<00:05:52.240><c> that's</c><00:05:52.720><c> always</c><00:05:53.199><c> going</c><00:05:53.440><c> to</c><00:05:53.520><c> be</c><00:05:53.680><c> the</c><00:05:53.919><c> case</c>
+
+00:05:54.469 --> 00:05:54.479 align:start position:0%
+why that's always going to be the case
+ 
+
+00:05:54.479 --> 00:05:57.510 align:start position:0%
+why that's always going to be the case
+and<00:05:55.120><c> why</c><00:05:55.440><c> it's</c><00:05:55.680><c> going</c><00:05:55.840><c> to</c><00:05:56.080><c> happen</c><00:05:56.720><c> in</c><00:05:56.960><c> linear</c>
+
+00:05:57.510 --> 00:05:57.520 align:start position:0%
+and why it's going to happen in linear
+ 
+
+00:05:57.520 --> 00:05:58.230 align:start position:0%
+and why it's going to happen in linear
+time
+
+00:05:58.230 --> 00:05:58.240 align:start position:0%
+time
+ 
+
+00:05:58.240 --> 00:06:00.309 align:start position:0%
+time
+so<00:05:58.479><c> let's</c><00:05:58.720><c> say</c><00:05:58.960><c> this</c><00:05:59.199><c> is</c><00:05:59.360><c> our</c><00:05:59.600><c> cycle</c><00:06:00.080><c> and</c><00:06:00.240><c> i'm</c>
+
+00:06:00.309 --> 00:06:00.319 align:start position:0%
+so let's say this is our cycle and i'm
+ 
+
+00:06:00.319 --> 00:06:01.830 align:start position:0%
+so let's say this is our cycle and i'm
+not<00:06:00.479><c> drawing</c><00:06:00.800><c> it</c><00:06:00.960><c> as</c><00:06:01.120><c> a</c><00:06:01.199><c> linked</c><00:06:01.360><c> list</c><00:06:01.680><c> it's</c>
+
+00:06:01.830 --> 00:06:01.840 align:start position:0%
+not drawing it as a linked list it's
+ 
+
+00:06:01.840 --> 00:06:03.430 align:start position:0%
+not drawing it as a linked list it's
+some<00:06:02.000><c> kind</c><00:06:02.160><c> of</c><00:06:02.319><c> circle</c><00:06:02.800><c> right</c><00:06:03.039><c> and</c><00:06:03.199><c> it's</c><00:06:03.360><c> a</c>
+
+00:06:03.430 --> 00:06:03.440 align:start position:0%
+some kind of circle right and it's a
+ 
+
+00:06:03.440 --> 00:06:04.230 align:start position:0%
+some kind of circle right and it's a
+cycle
+
+00:06:04.230 --> 00:06:04.240 align:start position:0%
+cycle
+ 
+
+00:06:04.240 --> 00:06:06.390 align:start position:0%
+cycle
+and<00:06:04.400><c> let's</c><00:06:04.560><c> say</c><00:06:04.720><c> we're</c><00:06:04.880><c> moving</c><00:06:05.280><c> clockwise</c><00:06:06.240><c> in</c>
+
+00:06:06.390 --> 00:06:06.400 align:start position:0%
+and let's say we're moving clockwise in
+ 
+
+00:06:06.400 --> 00:06:07.590 align:start position:0%
+and let's say we're moving clockwise in
+this<00:06:06.639><c> cycle</c>
+
+00:06:07.590 --> 00:06:07.600 align:start position:0%
+this cycle
+ 
+
+00:06:07.600 --> 00:06:09.909 align:start position:0%
+this cycle
+first<00:06:08.080><c> thing</c><00:06:08.400><c> to</c><00:06:08.560><c> notice</c><00:06:09.039><c> is</c><00:06:09.440><c> do</c><00:06:09.600><c> you</c><00:06:09.759><c> know</c>
+
+00:06:09.909 --> 00:06:09.919 align:start position:0%
+first thing to notice is do you know
+ 
+
+00:06:09.919 --> 00:06:11.749 align:start position:0%
+first thing to notice is do you know
+that<00:06:10.240><c> every</c><00:06:10.639><c> gap</c><00:06:10.960><c> so</c><00:06:11.120><c> let's</c><00:06:11.280><c> say</c><00:06:11.440><c> you</c><00:06:11.520><c> know</c><00:06:11.680><c> the</c>
+
+00:06:11.749 --> 00:06:11.759 align:start position:0%
+that every gap so let's say you know the
+ 
+
+00:06:11.759 --> 00:06:13.749 align:start position:0%
+that every gap so let's say you know the
+distance<00:06:12.240><c> between</c><00:06:12.639><c> slow</c><00:06:13.039><c> and</c><00:06:13.280><c> fast</c>
+
+00:06:13.749 --> 00:06:13.759 align:start position:0%
+distance between slow and fast
+ 
+
+00:06:13.759 --> 00:06:15.670 align:start position:0%
+distance between slow and fast
+that's<00:06:14.000><c> going</c><00:06:14.080><c> to</c><00:06:14.160><c> be</c><00:06:14.400><c> some</c><00:06:14.800><c> integer</c><00:06:15.280><c> value</c>
+
+00:06:15.670 --> 00:06:15.680 align:start position:0%
+that's going to be some integer value
+ 
+
+00:06:15.680 --> 00:06:16.950 align:start position:0%
+that's going to be some integer value
+right<00:06:15.840><c> it's</c><00:06:16.000><c> not</c><00:06:16.080><c> going</c><00:06:16.160><c> to</c><00:06:16.240><c> be</c><00:06:16.400><c> a</c><00:06:16.479><c> decimal</c>
+
+00:06:16.950 --> 00:06:16.960 align:start position:0%
+right it's not going to be a decimal
+ 
+
+00:06:16.960 --> 00:06:18.710 align:start position:0%
+right it's not going to be a decimal
+it's<00:06:17.039><c> going</c><00:06:17.120><c> to</c><00:06:17.199><c> be</c><00:06:17.360><c> an</c><00:06:17.520><c> integer</c><00:06:18.000><c> value</c>
+
+00:06:18.710 --> 00:06:18.720 align:start position:0%
+it's going to be an integer value
+ 
+
+00:06:18.720 --> 00:06:21.430 align:start position:0%
+it's going to be an integer value
+and<00:06:19.280><c> this</c><00:06:19.520><c> portion</c><00:06:20.000><c> is</c><00:06:20.240><c> also</c><00:06:20.560><c> going</c><00:06:20.800><c> to</c><00:06:20.960><c> be</c><00:06:21.199><c> an</c>
+
+00:06:21.430 --> 00:06:21.440 align:start position:0%
+and this portion is also going to be an
+ 
+
+00:06:21.440 --> 00:06:22.309 align:start position:0%
+and this portion is also going to be an
+integer<00:06:21.759><c> value</c>
+
+00:06:22.309 --> 00:06:22.319 align:start position:0%
+integer value
+ 
+
+00:06:22.319 --> 00:06:25.510 align:start position:0%
+integer value
+because<00:06:22.960><c> the</c><00:06:23.199><c> entire</c><00:06:24.000><c> length</c><00:06:24.639><c> of</c><00:06:24.880><c> the</c><00:06:25.120><c> cycle</c>
+
+00:06:25.510 --> 00:06:25.520 align:start position:0%
+because the entire length of the cycle
+ 
+
+00:06:25.520 --> 00:06:27.189 align:start position:0%
+because the entire length of the cycle
+is<00:06:25.680><c> going</c><00:06:25.840><c> to</c><00:06:26.000><c> be</c><00:06:26.160><c> an</c><00:06:26.319><c> integer</c><00:06:26.720><c> value</c><00:06:27.039><c> because</c>
+
+00:06:27.189 --> 00:06:27.199 align:start position:0%
+is going to be an integer value because
+ 
+
+00:06:27.199 --> 00:06:28.230 align:start position:0%
+is going to be an integer value because
+you<00:06:27.280><c> know</c><00:06:27.520><c> linked</c><00:06:27.759><c> list</c>
+
+00:06:28.230 --> 00:06:28.240 align:start position:0%
+you know linked list
+ 
+
+00:06:28.240 --> 00:06:30.469 align:start position:0%
+you know linked list
+lengths<00:06:28.720><c> are</c><00:06:29.039><c> integer</c><00:06:29.440><c> values</c><00:06:29.759><c> right</c><00:06:30.000><c> this</c><00:06:30.240><c> is</c>
+
+00:06:30.469 --> 00:06:30.479 align:start position:0%
+lengths are integer values right this is
+ 
+
+00:06:30.479 --> 00:06:33.029 align:start position:0%
+lengths are integer values right this is
+an<00:06:30.639><c> integer</c><00:06:31.039><c> one</c><00:06:31.280><c> this</c><00:06:31.440><c> is</c><00:06:31.600><c> an</c><00:06:31.759><c> integer</c><00:06:32.160><c> two</c>
+
+00:06:33.029 --> 00:06:33.039 align:start position:0%
+an integer one this is an integer two
+ 
+
+00:06:33.039 --> 00:06:35.350 align:start position:0%
+an integer one this is an integer two
+uh<00:06:33.520><c> also</c><00:06:33.759><c> one</c><00:06:33.919><c> so</c><00:06:34.160><c> the</c><00:06:34.240><c> entire</c><00:06:34.560><c> list</c><00:06:34.880><c> is</c><00:06:35.039><c> length</c>
+
+00:06:35.350 --> 00:06:35.360 align:start position:0%
+uh also one so the entire list is length
+ 
+
+00:06:35.360 --> 00:06:36.790 align:start position:0%
+uh also one so the entire list is length
+two<00:06:35.520><c> right</c><00:06:35.759><c> so</c><00:06:36.000><c> we're</c><00:06:36.160><c> dealing</c><00:06:36.479><c> with</c>
+
+00:06:36.790 --> 00:06:36.800 align:start position:0%
+two right so we're dealing with
+ 
+
+00:06:36.800 --> 00:06:39.350 align:start position:0%
+two right so we're dealing with
+integers<00:06:37.280><c> here</c><00:06:37.600><c> not</c><00:06:37.919><c> decimals</c><00:06:38.800><c> so</c><00:06:39.039><c> we're</c>
+
+00:06:39.350 --> 00:06:39.360 align:start position:0%
+integers here not decimals so we're
+ 
+
+00:06:39.360 --> 00:06:41.430 align:start position:0%
+integers here not decimals so we're
+looking<00:06:39.600><c> at</c><00:06:39.759><c> the</c><00:06:39.919><c> case</c><00:06:40.319><c> where</c><00:06:40.560><c> at</c><00:06:40.800><c> with</c><00:06:41.039><c> a</c><00:06:41.120><c> slow</c>
+
+00:06:41.430 --> 00:06:41.440 align:start position:0%
+looking at the case where at with a slow
+ 
+
+00:06:41.440 --> 00:06:42.710 align:start position:0%
+looking at the case where at with a slow
+and<00:06:41.520><c> fast</c><00:06:41.759><c> pointer</c><00:06:42.080><c> are</c><00:06:42.240><c> at</c><00:06:42.400><c> different</c>
+
+00:06:42.710 --> 00:06:42.720 align:start position:0%
+and fast pointer are at different
+ 
+
+00:06:42.720 --> 00:06:44.230 align:start position:0%
+and fast pointer are at different
+positions<00:06:43.199><c> because</c><00:06:43.440><c> obviously</c><00:06:43.840><c> if</c><00:06:43.919><c> they</c><00:06:44.080><c> were</c>
+
+00:06:44.230 --> 00:06:44.240 align:start position:0%
+positions because obviously if they were
+ 
+
+00:06:44.240 --> 00:06:45.670 align:start position:0%
+positions because obviously if they were
+already<00:06:44.639><c> at</c><00:06:44.720><c> the</c><00:06:44.880><c> same</c><00:06:45.120><c> position</c>
+
+00:06:45.670 --> 00:06:45.680 align:start position:0%
+already at the same position
+ 
+
+00:06:45.680 --> 00:06:46.950 align:start position:0%
+already at the same position
+we're<00:06:45.919><c> inside</c><00:06:46.160><c> the</c><00:06:46.319><c> cycle</c><00:06:46.560><c> they're</c><00:06:46.720><c> at</c><00:06:46.880><c> the</c>
+
+00:06:46.950 --> 00:06:46.960 align:start position:0%
+we're inside the cycle they're at the
+ 
+
+00:06:46.960 --> 00:06:48.230 align:start position:0%
+we're inside the cycle they're at the
+same<00:06:47.120><c> position</c><00:06:47.440><c> then</c><00:06:47.600><c> of</c><00:06:47.680><c> course</c><00:06:47.919><c> we</c><00:06:48.080><c> know</c>
+
+00:06:48.230 --> 00:06:48.240 align:start position:0%
+same position then of course we know
+ 
+
+00:06:48.240 --> 00:06:49.749 align:start position:0%
+same position then of course we know
+we're<00:06:48.400><c> going</c><00:06:48.479><c> to</c><00:06:48.560><c> return</c><00:06:48.960><c> true</c><00:06:49.280><c> but</c><00:06:49.440><c> it</c><00:06:49.599><c> could</c>
+
+00:06:49.749 --> 00:06:49.759 align:start position:0%
+we're going to return true but it could
+ 
+
+00:06:49.759 --> 00:06:51.110 align:start position:0%
+we're going to return true but it could
+be<00:06:49.919><c> possible</c><00:06:50.319><c> that</c><00:06:50.479><c> they're</c><00:06:50.639><c> at</c><00:06:50.800><c> different</c>
+
+00:06:51.110 --> 00:06:51.120 align:start position:0%
+be possible that they're at different
+ 
+
+00:06:51.120 --> 00:06:51.670 align:start position:0%
+be possible that they're at different
+positions
+
+00:06:51.670 --> 00:06:51.680 align:start position:0%
+positions
+ 
+
+00:06:51.680 --> 00:06:54.070 align:start position:0%
+positions
+any<00:06:52.080><c> arbitrary</c><00:06:52.880><c> position</c><00:06:53.360><c> is</c><00:06:53.440><c> what</c><00:06:53.680><c> i'm</c>
+
+00:06:54.070 --> 00:06:54.080 align:start position:0%
+any arbitrary position is what i'm
+ 
+
+00:06:54.080 --> 00:06:55.270 align:start position:0%
+any arbitrary position is what i'm
+choosing<00:06:54.479><c> here</c>
+
+00:06:55.270 --> 00:06:55.280 align:start position:0%
+choosing here
+ 
+
+00:06:55.280 --> 00:06:57.670 align:start position:0%
+choosing here
+and<00:06:55.599><c> we</c><00:06:55.840><c> know</c><00:06:56.400><c> that</c><00:06:56.560><c> the</c><00:06:56.800><c> slope</c><00:06:57.120><c> pointer</c><00:06:57.440><c> on</c>
+
+00:06:57.670 --> 00:06:57.680 align:start position:0%
+and we know that the slope pointer on
+ 
+
+00:06:57.680 --> 00:06:59.510 align:start position:0%
+and we know that the slope pointer on
+one<00:06:57.919><c> iteration</c><00:06:58.479><c> is</c><00:06:58.560><c> going</c><00:06:58.720><c> to</c><00:06:58.800><c> make</c>
+
+00:06:59.510 --> 00:06:59.520 align:start position:0%
+one iteration is going to make
+ 
+
+00:06:59.520 --> 00:07:01.670 align:start position:0%
+one iteration is going to make
+one<00:07:00.080><c> jump</c><00:07:00.400><c> right</c><00:07:00.720><c> the</c><00:07:00.880><c> distance</c><00:07:01.280><c> it's</c><00:07:01.520><c> gonna</c>
+
+00:07:01.670 --> 00:07:01.680 align:start position:0%
+one jump right the distance it's gonna
+ 
+
+00:07:01.680 --> 00:07:03.749 align:start position:0%
+one jump right the distance it's gonna
+do<00:07:02.080><c> it's</c><00:07:02.240><c> gonna</c><00:07:02.479><c> move</c><00:07:02.720><c> is</c><00:07:02.960><c> one</c><00:07:03.280><c> we</c><00:07:03.440><c> know</c><00:07:03.599><c> that</c>
+
+00:07:03.749 --> 00:07:03.759 align:start position:0%
+do it's gonna move is one we know that
+ 
+
+00:07:03.759 --> 00:07:05.110 align:start position:0%
+do it's gonna move is one we know that
+the<00:07:04.080><c> fast</c><00:07:04.560><c> pointer</c>
+
+00:07:05.110 --> 00:07:05.120 align:start position:0%
+the fast pointer
+ 
+
+00:07:05.120 --> 00:07:08.390 align:start position:0%
+the fast pointer
+is<00:07:05.280><c> gonna</c><00:07:05.599><c> move</c><00:07:06.080><c> a</c><00:07:06.319><c> distance</c><00:07:07.039><c> of</c><00:07:07.759><c> two</c>
+
+00:07:08.390 --> 00:07:08.400 align:start position:0%
+is gonna move a distance of two
+ 
+
+00:07:08.400 --> 00:07:11.830 align:start position:0%
+is gonna move a distance of two
+right<00:07:08.960><c> so</c><00:07:09.280><c> clearly</c><00:07:10.160><c> in</c><00:07:10.319><c> our</c><00:07:10.560><c> simulation</c>
+
+00:07:11.830 --> 00:07:11.840 align:start position:0%
+right so clearly in our simulation
+ 
+
+00:07:11.840 --> 00:07:15.510 align:start position:0%
+right so clearly in our simulation
+eventually<00:07:13.120><c> the</c><00:07:13.440><c> fast</c><00:07:13.919><c> pointer</c><00:07:14.560><c> is</c><00:07:14.800><c> going</c><00:07:14.960><c> to</c>
+
+00:07:15.510 --> 00:07:15.520 align:start position:0%
+eventually the fast pointer is going to
+ 
+
+00:07:15.520 --> 00:07:19.029 align:start position:0%
+eventually the fast pointer is going to
+reach<00:07:16.160><c> and</c><00:07:16.400><c> surpass</c><00:07:17.280><c> the</c><00:07:17.520><c> slow</c><00:07:17.919><c> pointer</c>
+
+00:07:19.029 --> 00:07:19.039 align:start position:0%
+reach and surpass the slow pointer
+ 
+
+00:07:19.039 --> 00:07:20.710 align:start position:0%
+reach and surpass the slow pointer
+but<00:07:19.360><c> why</c><00:07:19.680><c> is</c><00:07:19.840><c> it</c><00:07:20.000><c> true</c><00:07:20.160><c> that</c><00:07:20.319><c> they</c><00:07:20.479><c> are</c><00:07:20.639><c> going</c>
+
+00:07:20.710 --> 00:07:20.720 align:start position:0%
+but why is it true that they are going
+ 
+
+00:07:20.720 --> 00:07:22.710 align:start position:0%
+but why is it true that they are going
+to<00:07:20.960><c> meet</c><00:07:21.280><c> each</c><00:07:21.520><c> other</c><00:07:21.759><c> at</c><00:07:21.840><c> the</c><00:07:22.000><c> exact</c><00:07:22.400><c> same</c>
+
+00:07:22.710 --> 00:07:22.720 align:start position:0%
+to meet each other at the exact same
+ 
+
+00:07:22.720 --> 00:07:23.350 align:start position:0%
+to meet each other at the exact same
+spot
+
+00:07:23.350 --> 00:07:23.360 align:start position:0%
+spot
+ 
+
+00:07:23.360 --> 00:07:26.230 align:start position:0%
+spot
+well<00:07:24.000><c> let's</c><00:07:24.319><c> just</c><00:07:24.639><c> give</c><00:07:25.039><c> this</c><00:07:25.360><c> distance</c><00:07:26.000><c> an</c>
+
+00:07:26.230 --> 00:07:26.240 align:start position:0%
+well let's just give this distance an
+ 
+
+00:07:26.240 --> 00:07:27.430 align:start position:0%
+well let's just give this distance an
+arbitrary
+
+00:07:27.430 --> 00:07:27.440 align:start position:0%
+arbitrary
+ 
+
+00:07:27.440 --> 00:07:29.510 align:start position:0%
+arbitrary
+value<00:07:27.919><c> we</c><00:07:28.160><c> know</c><00:07:28.319><c> that</c><00:07:28.479><c> the</c><00:07:28.639><c> fast</c><00:07:28.960><c> pointer</c><00:07:29.280><c> will</c>
+
+00:07:29.510 --> 00:07:29.520 align:start position:0%
+value we know that the fast pointer will
+ 
+
+00:07:29.520 --> 00:07:31.430 align:start position:0%
+value we know that the fast pointer will
+catch<00:07:29.759><c> up</c><00:07:29.919><c> to</c><00:07:30.080><c> the</c><00:07:30.160><c> slow</c><00:07:30.479><c> pointer</c><00:07:30.880><c> and</c><00:07:31.039><c> this</c><00:07:31.280><c> is</c>
+
+00:07:31.430 --> 00:07:31.440 align:start position:0%
+catch up to the slow pointer and this is
+ 
+
+00:07:31.440 --> 00:07:32.870 align:start position:0%
+catch up to the slow pointer and this is
+the<00:07:31.680><c> distance</c><00:07:32.080><c> that</c><00:07:32.240><c> it's</c><00:07:32.400><c> going</c><00:07:32.479><c> to</c><00:07:32.560><c> have</c><00:07:32.720><c> to</c>
+
+00:07:32.870 --> 00:07:32.880 align:start position:0%
+the distance that it's going to have to
+ 
+
+00:07:32.880 --> 00:07:33.510 align:start position:0%
+the distance that it's going to have to
+travel
+
+00:07:33.510 --> 00:07:33.520 align:start position:0%
+travel
+ 
+
+00:07:33.520 --> 00:07:36.309 align:start position:0%
+travel
+in<00:07:33.680><c> order</c><00:07:34.000><c> to</c><00:07:34.240><c> do</c><00:07:34.479><c> so</c><00:07:34.880><c> this</c><00:07:35.120><c> is</c><00:07:35.280><c> our</c><00:07:35.599><c> gap</c><00:07:36.080><c> that</c>
+
+00:07:36.309 --> 00:07:36.319 align:start position:0%
+in order to do so this is our gap that
+ 
+
+00:07:36.319 --> 00:07:37.350 align:start position:0%
+in order to do so this is our gap that
+we<00:07:36.479><c> have</c><00:07:36.639><c> to</c><00:07:36.880><c> close</c>
+
+00:07:37.350 --> 00:07:37.360 align:start position:0%
+we have to close
+ 
+
+00:07:37.360 --> 00:07:39.990 align:start position:0%
+we have to close
+so<00:07:37.520><c> let's</c><00:07:37.680><c> say</c><00:07:37.919><c> the</c><00:07:38.240><c> the</c><00:07:38.479><c> length</c><00:07:38.800><c> of</c><00:07:38.880><c> this</c><00:07:39.280><c> gap</c>
+
+00:07:39.990 --> 00:07:40.000 align:start position:0%
+so let's say the the length of this gap
+ 
+
+00:07:40.000 --> 00:07:40.950 align:start position:0%
+so let's say the the length of this gap
+is<00:07:40.319><c> 10.</c>
+
+00:07:40.950 --> 00:07:40.960 align:start position:0%
+is 10.
+ 
+
+00:07:40.960 --> 00:07:44.469 align:start position:0%
+is 10.
+if<00:07:41.199><c> we</c><00:07:41.520><c> move</c><00:07:41.919><c> the</c><00:07:42.160><c> slow</c><00:07:42.639><c> pointer</c><00:07:43.360><c> by</c><00:07:43.840><c> one</c>
+
+00:07:44.469 --> 00:07:44.479 align:start position:0%
+if we move the slow pointer by one
+ 
+
+00:07:44.479 --> 00:07:47.350 align:start position:0%
+if we move the slow pointer by one
+we're<00:07:44.960><c> taking</c><00:07:45.360><c> the</c><00:07:45.599><c> gap</c><00:07:46.080><c> and</c><00:07:46.479><c> increasing</c><00:07:47.199><c> it</c>
+
+00:07:47.350 --> 00:07:47.360 align:start position:0%
+we're taking the gap and increasing it
+ 
+
+00:07:47.360 --> 00:07:48.390 align:start position:0%
+we're taking the gap and increasing it
+by<00:07:47.599><c> one</c><00:07:47.919><c> right</c>
+
+00:07:48.390 --> 00:07:48.400 align:start position:0%
+by one right
+ 
+
+00:07:48.400 --> 00:07:50.710 align:start position:0%
+by one right
+if<00:07:48.479><c> the</c><00:07:48.639><c> slow</c><00:07:48.960><c> pointer</c><00:07:49.280><c> gets</c><00:07:49.599><c> shifted</c><00:07:50.000><c> by</c><00:07:50.240><c> one</c>
+
+00:07:50.710 --> 00:07:50.720 align:start position:0%
+if the slow pointer gets shifted by one
+ 
+
+00:07:50.720 --> 00:07:52.150 align:start position:0%
+if the slow pointer gets shifted by one
+we<00:07:50.960><c> increased</c><00:07:51.599><c> the</c><00:07:51.759><c> gap</c>
+
+00:07:52.150 --> 00:07:52.160 align:start position:0%
+we increased the gap
+ 
+
+00:07:52.160 --> 00:07:53.990 align:start position:0%
+we increased the gap
+but<00:07:52.400><c> then</c><00:07:52.800><c> the</c><00:07:52.960><c> fast</c><00:07:53.280><c> pointer</c><00:07:53.599><c> is</c><00:07:53.680><c> not</c><00:07:53.919><c> going</c>
+
+00:07:53.990 --> 00:07:54.000 align:start position:0%
+but then the fast pointer is not going
+ 
+
+00:07:54.000 --> 00:07:56.710 align:start position:0%
+but then the fast pointer is not going
+to<00:07:54.240><c> quit</c><00:07:54.560><c> it's</c><00:07:54.800><c> gonna</c><00:07:55.039><c> move</c><00:07:55.360><c> by</c><00:07:55.599><c> two</c><00:07:56.000><c> as</c><00:07:56.240><c> well</c>
+
+00:07:56.710 --> 00:07:56.720 align:start position:0%
+to quit it's gonna move by two as well
+ 
+
+00:07:56.720 --> 00:07:59.029 align:start position:0%
+to quit it's gonna move by two as well
+so<00:07:57.039><c> when</c><00:07:57.199><c> we</c><00:07:57.440><c> move</c><00:07:57.599><c> the</c><00:07:57.919><c> fast</c><00:07:58.240><c> pointer</c><00:07:58.720><c> we're</c>
+
+00:07:59.029 --> 00:07:59.039 align:start position:0%
+so when we move the fast pointer we're
+ 
+
+00:07:59.039 --> 00:08:00.150 align:start position:0%
+so when we move the fast pointer we're
+taking<00:07:59.440><c> the</c><00:07:59.680><c> gap</c>
+
+00:08:00.150 --> 00:08:00.160 align:start position:0%
+taking the gap
+ 
+
+00:08:00.160 --> 00:08:02.869 align:start position:0%
+taking the gap
+and<00:08:00.639><c> closing</c><00:08:01.280><c> it</c><00:08:01.440><c> by</c><00:08:01.680><c> two</c><00:08:01.919><c> so</c><00:08:02.080><c> we're</c><00:08:02.240><c> saying</c>
+
+00:08:02.869 --> 00:08:02.879 align:start position:0%
+and closing it by two so we're saying
+ 
+
+00:08:02.879 --> 00:08:03.350 align:start position:0%
+and closing it by two so we're saying
+plus
+
+00:08:03.350 --> 00:08:03.360 align:start position:0%
+plus
+ 
+
+00:08:03.360 --> 00:08:06.869 align:start position:0%
+plus
+one<00:08:04.160><c> minus</c><00:08:05.039><c> two</c><00:08:05.599><c> right</c><00:08:05.840><c> do</c><00:08:06.000><c> you</c><00:08:06.240><c> see</c><00:08:06.479><c> how</c>
+
+00:08:06.869 --> 00:08:06.879 align:start position:0%
+one minus two right do you see how
+ 
+
+00:08:06.879 --> 00:08:10.469 align:start position:0%
+one minus two right do you see how
+this<00:08:07.520><c> evaluates</c><00:08:08.400><c> to</c><00:08:08.720><c> ten</c><00:08:09.520><c> minus</c>
+
+00:08:10.469 --> 00:08:10.479 align:start position:0%
+this evaluates to ten minus
+ 
+
+00:08:10.479 --> 00:08:13.029 align:start position:0%
+this evaluates to ten minus
+one<00:08:10.879><c> which</c><00:08:11.120><c> is</c><00:08:11.199><c> going</c><00:08:11.360><c> to</c><00:08:11.440><c> be</c><00:08:11.680><c> nine</c><00:08:12.240><c> so</c><00:08:12.479><c> on</c><00:08:12.720><c> a</c>
+
+00:08:13.029 --> 00:08:13.039 align:start position:0%
+one which is going to be nine so on a
+ 
+
+00:08:13.039 --> 00:08:13.670 align:start position:0%
+one which is going to be nine so on a
+single
+
+00:08:13.670 --> 00:08:13.680 align:start position:0%
+single
+ 
+
+00:08:13.680 --> 00:08:15.909 align:start position:0%
+single
+iteration<00:08:14.319><c> of</c><00:08:14.479><c> the</c><00:08:14.639><c> loop</c><00:08:15.039><c> the</c><00:08:15.360><c> distance</c>
+
+00:08:15.909 --> 00:08:15.919 align:start position:0%
+iteration of the loop the distance
+ 
+
+00:08:15.919 --> 00:08:17.189 align:start position:0%
+iteration of the loop the distance
+between<00:08:16.400><c> the</c><00:08:16.639><c> pointers</c>
+
+00:08:17.189 --> 00:08:17.199 align:start position:0%
+between the pointers
+ 
+
+00:08:17.199 --> 00:08:20.710 align:start position:0%
+between the pointers
+is<00:08:17.360><c> being</c><00:08:17.840><c> closed</c><00:08:18.720><c> by</c><00:08:19.120><c> one</c><00:08:19.840><c> so</c><00:08:20.080><c> then</c>
+
+00:08:20.710 --> 00:08:20.720 align:start position:0%
+is being closed by one so then
+ 
+
+00:08:20.720 --> 00:08:22.869 align:start position:0%
+is being closed by one so then
+how<00:08:20.960><c> many</c><00:08:21.360><c> iterations</c><00:08:22.000><c> is</c><00:08:22.080><c> it</c><00:08:22.160><c> going</c><00:08:22.319><c> to</c><00:08:22.479><c> take</c>
+
+00:08:22.869 --> 00:08:22.879 align:start position:0%
+how many iterations is it going to take
+ 
+
+00:08:22.879 --> 00:08:24.710 align:start position:0%
+how many iterations is it going to take
+for<00:08:23.120><c> the</c><00:08:23.280><c> fast</c><00:08:23.520><c> pointer</c><00:08:23.919><c> to</c><00:08:24.000><c> reach</c><00:08:24.240><c> the</c><00:08:24.400><c> slope</c>
+
+00:08:24.710 --> 00:08:24.720 align:start position:0%
+for the fast pointer to reach the slope
+ 
+
+00:08:24.720 --> 00:08:26.790 align:start position:0%
+for the fast pointer to reach the slope
+pointer<00:08:25.039><c> well</c><00:08:25.199><c> of</c><00:08:25.360><c> course</c><00:08:25.840><c> whatever</c><00:08:26.319><c> this</c>
+
+00:08:26.790 --> 00:08:26.800 align:start position:0%
+pointer well of course whatever this
+ 
+
+00:08:26.800 --> 00:08:29.110 align:start position:0%
+pointer well of course whatever this
+length<00:08:27.199><c> happens</c><00:08:27.680><c> to</c><00:08:27.919><c> be</c><00:08:28.240><c> right</c><00:08:28.479><c> whatever</c><00:08:28.800><c> that</c>
+
+00:08:29.110 --> 00:08:29.120 align:start position:0%
+length happens to be right whatever that
+ 
+
+00:08:29.120 --> 00:08:30.950 align:start position:0%
+length happens to be right whatever that
+closing<00:08:29.599><c> distance</c><00:08:30.160><c> happens</c><00:08:30.479><c> to</c><00:08:30.560><c> be</c><00:08:30.720><c> whatever</c>
+
+00:08:30.950 --> 00:08:30.960 align:start position:0%
+closing distance happens to be whatever
+ 
+
+00:08:30.960 --> 00:08:31.350 align:start position:0%
+closing distance happens to be whatever
+that
+
+00:08:31.350 --> 00:08:31.360 align:start position:0%
+that
+ 
+
+00:08:31.360 --> 00:08:35.269 align:start position:0%
+that
+gap<00:08:31.840><c> happens</c><00:08:32.240><c> to</c><00:08:32.479><c> be</c><00:08:32.959><c> how</c><00:08:33.440><c> big</c><00:08:33.919><c> could</c><00:08:34.159><c> this</c><00:08:34.479><c> gap</c>
+
+00:08:35.269 --> 00:08:35.279 align:start position:0%
+gap happens to be how big could this gap
+ 
+
+00:08:35.279 --> 00:08:39.350 align:start position:0%
+gap happens to be how big could this gap
+possibly<00:08:36.159><c> be</c><00:08:36.640><c> it</c><00:08:36.800><c> could</c><00:08:37.039><c> only</c><00:08:37.599><c> be</c><00:08:38.159><c> the</c><00:08:38.399><c> entire</c>
+
+00:08:39.350 --> 00:08:39.360 align:start position:0%
+possibly be it could only be the entire
+ 
+
+00:08:39.360 --> 00:08:42.149 align:start position:0%
+possibly be it could only be the entire
+length<00:08:40.000><c> of</c><00:08:40.159><c> the</c><00:08:40.479><c> list</c><00:08:40.880><c> so</c><00:08:41.120><c> you</c><00:08:41.279><c> know</c><00:08:41.360><c> let's</c><00:08:41.599><c> say</c>
+
+00:08:42.149 --> 00:08:42.159 align:start position:0%
+length of the list so you know let's say
+ 
+
+00:08:42.159 --> 00:08:43.909 align:start position:0%
+length of the list so you know let's say
+uh<00:08:42.399><c> the</c><00:08:42.560><c> fast</c><00:08:42.800><c> pointer</c><00:08:43.120><c> is</c><00:08:43.279><c> over</c><00:08:43.440><c> here</c><00:08:43.680><c> where</c>
+
+00:08:43.909 --> 00:08:43.919 align:start position:0%
+uh the fast pointer is over here where
+ 
+
+00:08:43.919 --> 00:08:44.310 align:start position:0%
+uh the fast pointer is over here where
+this
+
+00:08:44.310 --> 00:08:44.320 align:start position:0%
+this
+ 
+
+00:08:44.320 --> 00:08:47.190 align:start position:0%
+this
+distance<00:08:44.880><c> is</c><00:08:45.200><c> one</c><00:08:46.000><c> so</c><00:08:46.160><c> then</c><00:08:46.320><c> the</c><00:08:46.480><c> remaining</c>
+
+00:08:47.190 --> 00:08:47.200 align:start position:0%
+distance is one so then the remaining
+ 
+
+00:08:47.200 --> 00:08:48.470 align:start position:0%
+distance is one so then the remaining
+distance<00:08:47.680><c> is</c><00:08:47.839><c> gonna</c><00:08:48.080><c> be</c>
+
+00:08:48.470 --> 00:08:48.480 align:start position:0%
+distance is gonna be
+ 
+
+00:08:48.480 --> 00:08:50.470 align:start position:0%
+distance is gonna be
+the<00:08:48.640><c> entire</c><00:08:49.279><c> length</c><00:08:49.600><c> of</c><00:08:49.680><c> the</c><00:08:49.839><c> list</c><00:08:50.080><c> let's</c><00:08:50.320><c> call</c>
+
+00:08:50.470 --> 00:08:50.480 align:start position:0%
+the entire length of the list let's call
+ 
+
+00:08:50.480 --> 00:08:51.509 align:start position:0%
+the entire length of the list let's call
+that<00:08:50.880><c> n</c>
+
+00:08:51.509 --> 00:08:51.519 align:start position:0%
+that n
+ 
+
+00:08:51.519 --> 00:08:54.070 align:start position:0%
+that n
+minus<00:08:52.080><c> one</c><00:08:52.560><c> so</c><00:08:52.800><c> then</c><00:08:52.959><c> how</c><00:08:53.120><c> many</c><00:08:53.440><c> iterations</c><00:08:54.000><c> is</c>
+
+00:08:54.070 --> 00:08:54.080 align:start position:0%
+minus one so then how many iterations is
+ 
+
+00:08:54.080 --> 00:08:55.750 align:start position:0%
+minus one so then how many iterations is
+it<00:08:54.160><c> gonna</c><00:08:54.320><c> take</c><00:08:54.480><c> to</c><00:08:54.640><c> get</c><00:08:54.880><c> this</c><00:08:55.120><c> to</c><00:08:55.360><c> equal</c><00:08:55.600><c> to</c>
+
+00:08:55.750 --> 00:08:55.760 align:start position:0%
+it gonna take to get this to equal to
+ 
+
+00:08:55.760 --> 00:08:56.150 align:start position:0%
+it gonna take to get this to equal to
+zero
+
+00:08:56.150 --> 00:08:56.160 align:start position:0%
+zero
+ 
+
+00:08:56.160 --> 00:08:58.630 align:start position:0%
+zero
+of<00:08:56.240><c> course</c><00:08:56.560><c> roughly</c><00:08:57.120><c> n</c><00:08:57.519><c> so</c><00:08:57.680><c> that's</c><00:08:58.000><c> why</c><00:08:58.399><c> the</c>
+
+00:08:58.630 --> 00:08:58.640 align:start position:0%
+of course roughly n so that's why the
+ 
+
+00:08:58.640 --> 00:08:59.990 align:start position:0%
+of course roughly n so that's why the
+overall<00:08:58.959><c> time</c><00:08:59.200><c> complexity</c><00:08:59.760><c> is</c>
+
+00:08:59.990 --> 00:09:00.000 align:start position:0%
+overall time complexity is
+ 
+
+00:09:00.000 --> 00:09:02.710 align:start position:0%
+overall time complexity is
+n<00:09:00.480><c> where</c><00:09:00.640><c> the</c><00:09:00.880><c> length</c><00:09:01.519><c> is</c><00:09:01.839><c> the</c><00:09:02.000><c> distance</c><00:09:02.480><c> where</c>
+
+00:09:02.710 --> 00:09:02.720 align:start position:0%
+n where the length is the distance where
+ 
+
+00:09:02.720 --> 00:09:04.870 align:start position:0%
+n where the length is the distance where
+n<00:09:02.959><c> is</c><00:09:03.040><c> the</c><00:09:03.279><c> length</c><00:09:03.600><c> of</c><00:09:03.760><c> the</c><00:09:04.000><c> cycle</c><00:09:04.399><c> which</c><00:09:04.640><c> could</c>
+
+00:09:04.870 --> 00:09:04.880 align:start position:0%
+n is the length of the cycle which could
+ 
+
+00:09:04.880 --> 00:09:06.630 align:start position:0%
+n is the length of the cycle which could
+be<00:09:04.959><c> the</c><00:09:05.120><c> entire</c><00:09:05.519><c> linked</c><00:09:05.839><c> list</c><00:09:06.240><c> right</c>
+
+00:09:06.630 --> 00:09:06.640 align:start position:0%
+be the entire linked list right
+ 
+
+00:09:06.640 --> 00:09:09.430 align:start position:0%
+be the entire linked list right
+so<00:09:06.800><c> that's</c><00:09:07.120><c> why</c><00:09:07.360><c> it's</c><00:09:07.760><c> always</c><00:09:08.320><c> going</c><00:09:08.560><c> to</c><00:09:08.800><c> work</c>
+
+00:09:09.430 --> 00:09:09.440 align:start position:0%
+so that's why it's always going to work
+ 
+
+00:09:09.440 --> 00:09:10.150 align:start position:0%
+so that's why it's always going to work
+and
+
+00:09:10.150 --> 00:09:10.160 align:start position:0%
+and
+ 
+
+00:09:10.160 --> 00:09:12.550 align:start position:0%
+and
+it's<00:09:10.320><c> going</c><00:09:10.480><c> to</c><00:09:10.640><c> run</c><00:09:10.959><c> in</c><00:09:11.120><c> linear</c><00:09:11.600><c> time</c><00:09:12.320><c> and</c>
+
+00:09:12.550 --> 00:09:12.560 align:start position:0%
+it's going to run in linear time and
+ 
+
+00:09:12.560 --> 00:09:14.150 align:start position:0%
+it's going to run in linear time and
+maybe<00:09:12.800><c> you</c><00:09:12.880><c> didn't</c><00:09:13.120><c> even</c><00:09:13.360><c> care</c><00:09:13.680><c> about</c><00:09:13.920><c> why</c>
+
+00:09:14.150 --> 00:09:14.160 align:start position:0%
+maybe you didn't even care about why
+ 
+
+00:09:14.160 --> 00:09:15.829 align:start position:0%
+maybe you didn't even care about why
+exactly<00:09:14.560><c> it</c><00:09:14.640><c> works</c><00:09:14.959><c> but</c><00:09:15.120><c> that's</c><00:09:15.360><c> okay</c><00:09:15.600><c> because</c>
+
+00:09:15.829 --> 00:09:15.839 align:start position:0%
+exactly it works but that's okay because
+ 
+
+00:09:15.839 --> 00:09:17.670 align:start position:0%
+exactly it works but that's okay because
+once<00:09:16.080><c> you</c><00:09:16.240><c> know</c><00:09:16.399><c> the</c><00:09:16.560><c> fast</c><00:09:16.959><c> and</c><00:09:17.040><c> slow</c><00:09:17.360><c> pointer</c>
+
+00:09:17.670 --> 00:09:17.680 align:start position:0%
+once you know the fast and slow pointer
+ 
+
+00:09:17.680 --> 00:09:18.230 align:start position:0%
+once you know the fast and slow pointer
+technique
+
+00:09:18.230 --> 00:09:18.240 align:start position:0%
+technique
+ 
+
+00:09:18.240 --> 00:09:20.150 align:start position:0%
+technique
+the<00:09:18.480><c> code</c><00:09:18.720><c> is</c><00:09:18.880><c> usually</c><00:09:19.279><c> pretty</c><00:09:19.519><c> easy</c><00:09:19.760><c> to</c><00:09:19.920><c> write</c>
+
+00:09:20.150 --> 00:09:20.160 align:start position:0%
+the code is usually pretty easy to write
+ 
+
+00:09:20.160 --> 00:09:22.710 align:start position:0%
+the code is usually pretty easy to write
+let's<00:09:20.320><c> get</c><00:09:20.480><c> into</c><00:09:20.720><c> that</c><00:09:20.959><c> now</c><00:09:21.920><c> so</c><00:09:22.160><c> like</c><00:09:22.399><c> i</c><00:09:22.480><c> said</c>
+
+00:09:22.710 --> 00:09:22.720 align:start position:0%
+let's get into that now so like i said
+ 
+
+00:09:22.720 --> 00:09:24.310 align:start position:0%
+let's get into that now so like i said
+we're<00:09:22.880><c> going</c><00:09:22.959><c> to</c><00:09:23.120><c> start</c><00:09:23.360><c> our</c><00:09:23.519><c> slow</c><00:09:23.920><c> and</c><00:09:24.080><c> fast</c>
+
+00:09:24.310 --> 00:09:24.320 align:start position:0%
+we're going to start our slow and fast
+ 
+
+00:09:24.320 --> 00:09:26.150 align:start position:0%
+we're going to start our slow and fast
+pointer<00:09:24.720><c> at</c><00:09:24.800><c> the</c><00:09:24.959><c> same</c><00:09:25.279><c> position</c>
+
+00:09:26.150 --> 00:09:26.160 align:start position:0%
+pointer at the same position
+ 
+
+00:09:26.160 --> 00:09:28.470 align:start position:0%
+pointer at the same position
+and<00:09:26.640><c> the</c><00:09:26.959><c> next</c><00:09:27.360><c> time</c><00:09:27.600><c> that</c><00:09:27.760><c> they</c><00:09:28.000><c> meet</c><00:09:28.240><c> each</c>
+
+00:09:28.470 --> 00:09:28.480 align:start position:0%
+and the next time that they meet each
+ 
+
+00:09:28.480 --> 00:09:30.150 align:start position:0%
+and the next time that they meet each
+other<00:09:28.720><c> is</c><00:09:28.880><c> how</c><00:09:29.040><c> we</c><00:09:29.200><c> know</c><00:09:29.360><c> we've</c><00:09:29.600><c> detected</c><00:09:30.080><c> a</c>
+
+00:09:30.150 --> 00:09:30.160 align:start position:0%
+other is how we know we've detected a
+ 
+
+00:09:30.160 --> 00:09:31.590 align:start position:0%
+other is how we know we've detected a
+loop<00:09:30.399><c> so</c><00:09:30.560><c> obviously</c><00:09:30.959><c> they're</c><00:09:31.200><c> at</c><00:09:31.279><c> the</c><00:09:31.360><c> same</c>
+
+00:09:31.590 --> 00:09:31.600 align:start position:0%
+loop so obviously they're at the same
+ 
+
+00:09:31.600 --> 00:09:33.990 align:start position:0%
+loop so obviously they're at the same
+position<00:09:32.000><c> now</c><00:09:32.240><c> so</c><00:09:32.399><c> we</c><00:09:32.560><c> don't</c><00:09:32.880><c> want</c><00:09:33.120><c> to</c>
+
+00:09:33.990 --> 00:09:34.000 align:start position:0%
+position now so we don't want to
+ 
+
+00:09:34.000 --> 00:09:35.750 align:start position:0%
+position now so we don't want to
+say<00:09:34.160><c> that</c><00:09:34.320><c> there</c><00:09:34.560><c> already</c><00:09:34.959><c> exists</c><00:09:35.440><c> a</c><00:09:35.519><c> loop</c>
+
+00:09:35.750 --> 00:09:35.760 align:start position:0%
+say that there already exists a loop
+ 
+
+00:09:35.760 --> 00:09:37.190 align:start position:0%
+say that there already exists a loop
+because<00:09:36.000><c> we</c><00:09:36.080><c> don't</c><00:09:36.240><c> know</c><00:09:36.399><c> that</c><00:09:36.560><c> for</c><00:09:36.720><c> sure</c>
+
+00:09:37.190 --> 00:09:37.200 align:start position:0%
+because we don't know that for sure
+ 
+
+00:09:37.200 --> 00:09:38.870 align:start position:0%
+because we don't know that for sure
+and<00:09:37.360><c> we're</c><00:09:37.519><c> going</c><00:09:37.680><c> to</c><00:09:37.760><c> be</c><00:09:38.000><c> shifting</c><00:09:38.399><c> our</c><00:09:38.560><c> fast</c>
+
+00:09:38.870 --> 00:09:38.880 align:start position:0%
+and we're going to be shifting our fast
+ 
+
+00:09:38.880 --> 00:09:40.630 align:start position:0%
+and we're going to be shifting our fast
+and<00:09:39.040><c> slow</c><00:09:39.360><c> pointers</c><00:09:40.000><c> while</c>
+
+00:09:40.630 --> 00:09:40.640 align:start position:0%
+and slow pointers while
+ 
+
+00:09:40.640 --> 00:09:43.829 align:start position:0%
+and slow pointers while
+fast<00:09:41.519><c> and</c><00:09:41.920><c> fast</c><00:09:42.240><c> dot</c><00:09:42.720><c> next</c><00:09:43.279><c> is</c><00:09:43.519><c> not</c>
+
+00:09:43.829 --> 00:09:43.839 align:start position:0%
+fast and fast dot next is not
+ 
+
+00:09:43.839 --> 00:09:45.430 align:start position:0%
+fast and fast dot next is not
+null<00:09:44.160><c> because</c><00:09:44.399><c> we</c><00:09:44.560><c> need</c><00:09:44.720><c> to</c><00:09:44.800><c> make</c><00:09:44.959><c> sure</c><00:09:45.120><c> that</c>
+
+00:09:45.430 --> 00:09:45.440 align:start position:0%
+null because we need to make sure that
+ 
+
+00:09:45.440 --> 00:09:47.110 align:start position:0%
+null because we need to make sure that
+fast<00:09:45.680><c> dot</c><00:09:46.000><c> next</c><00:09:46.320><c> is</c><00:09:46.480><c> not</c><00:09:46.720><c> null</c>
+
+00:09:47.110 --> 00:09:47.120 align:start position:0%
+fast dot next is not null
+ 
+
+00:09:47.120 --> 00:09:49.190 align:start position:0%
+fast dot next is not null
+because<00:09:47.360><c> remember</c><00:09:47.760><c> we're</c><00:09:48.000><c> shifting</c><00:09:48.399><c> fast</c><00:09:48.880><c> by</c>
+
+00:09:49.190 --> 00:09:49.200 align:start position:0%
+because remember we're shifting fast by
+ 
+
+00:09:49.200 --> 00:09:50.310 align:start position:0%
+because remember we're shifting fast by
+two<00:09:49.760><c> on</c><00:09:50.000><c> each</c>
+
+00:09:50.310 --> 00:09:50.320 align:start position:0%
+two on each
+ 
+
+00:09:50.320 --> 00:09:52.389 align:start position:0%
+two on each
+iteration<00:09:51.120><c> and</c><00:09:51.279><c> of</c><00:09:51.360><c> course</c><00:09:51.760><c> fast</c><00:09:52.080><c> is</c><00:09:52.240><c> going</c><00:09:52.320><c> to</c>
+
+00:09:52.389 --> 00:09:52.399 align:start position:0%
+iteration and of course fast is going to
+ 
+
+00:09:52.399 --> 00:09:53.990 align:start position:0%
+iteration and of course fast is going to
+reach<00:09:52.640><c> the</c><00:09:52.880><c> end</c><00:09:53.040><c> of</c><00:09:53.120><c> the</c><00:09:53.279><c> linked</c><00:09:53.600><c> list</c>
+
+00:09:53.990 --> 00:09:54.000 align:start position:0%
+reach the end of the linked list
+ 
+
+00:09:54.000 --> 00:09:57.030 align:start position:0%
+reach the end of the linked list
+before<00:09:54.720><c> slow</c><00:09:55.120><c> does</c><00:09:55.600><c> so</c><00:09:55.839><c> if</c><00:09:56.000><c> it</c><00:09:56.160><c> does</c><00:09:56.399><c> that</c><00:09:56.720><c> then</c>
+
+00:09:57.030 --> 00:09:57.040 align:start position:0%
+before slow does so if it does that then
+ 
+
+00:09:57.040 --> 00:09:59.350 align:start position:0%
+before slow does so if it does that then
+outside<00:09:57.519><c> of</c><00:09:57.600><c> the</c><00:09:57.760><c> loop</c><00:09:58.000><c> we</c><00:09:58.160><c> can</c><00:09:58.320><c> return</c><00:09:58.800><c> false</c>
+
+00:09:59.350 --> 00:09:59.360 align:start position:0%
+outside of the loop we can return false
+ 
+
+00:09:59.360 --> 00:10:00.550 align:start position:0%
+outside of the loop we can return false
+meaning<00:09:59.600><c> that</c><00:09:59.760><c> there</c><00:10:00.080><c> does</c>
+
+00:10:00.550 --> 00:10:00.560 align:start position:0%
+meaning that there does
+ 
+
+00:10:00.560 --> 00:10:03.269 align:start position:0%
+meaning that there does
+not<00:10:00.880><c> exist</c><00:10:01.279><c> a</c><00:10:01.440><c> cycle</c><00:10:02.399><c> but</c><00:10:02.720><c> on</c><00:10:02.800><c> the</c><00:10:02.959><c> inside</c>
+
+00:10:03.269 --> 00:10:03.279 align:start position:0%
+not exist a cycle but on the inside
+ 
+
+00:10:03.279 --> 00:10:04.790 align:start position:0%
+not exist a cycle but on the inside
+we're<00:10:03.440><c> gonna</c><00:10:03.600><c> check</c><00:10:03.760><c> if</c><00:10:03.920><c> there</c><00:10:04.079><c> is</c><00:10:04.240><c> a</c><00:10:04.320><c> cycle</c><00:10:04.640><c> so</c>
+
+00:10:04.790 --> 00:10:04.800 align:start position:0%
+we're gonna check if there is a cycle so
+ 
+
+00:10:04.800 --> 00:10:06.230 align:start position:0%
+we're gonna check if there is a cycle so
+we're<00:10:04.880><c> gonna</c><00:10:05.040><c> take</c><00:10:05.200><c> our</c><00:10:05.360><c> slow</c><00:10:05.680><c> pointer</c>
+
+00:10:06.230 --> 00:10:06.240 align:start position:0%
+we're gonna take our slow pointer
+ 
+
+00:10:06.240 --> 00:10:09.350 align:start position:0%
+we're gonna take our slow pointer
+shift<00:10:06.560><c> it</c><00:10:06.640><c> by</c><00:10:07.279><c> one</c><00:10:07.600><c> slow</c><00:10:07.920><c> dot</c><00:10:08.240><c> next</c><00:10:08.880><c> take</c><00:10:09.120><c> our</c>
+
+00:10:09.350 --> 00:10:09.360 align:start position:0%
+shift it by one slow dot next take our
+ 
+
+00:10:09.360 --> 00:10:11.030 align:start position:0%
+shift it by one slow dot next take our
+fast<00:10:09.680><c> pointer</c><00:10:10.079><c> shift</c><00:10:10.320><c> it</c><00:10:10.399><c> by</c><00:10:10.640><c> two</c>
+
+00:10:11.030 --> 00:10:11.040 align:start position:0%
+fast pointer shift it by two
+ 
+
+00:10:11.040 --> 00:10:14.389 align:start position:0%
+fast pointer shift it by two
+fast<00:10:11.360><c> dot</c><00:10:11.760><c> next</c><00:10:12.560><c> dot</c><00:10:13.279><c> next</c><00:10:13.680><c> again</c>
+
+00:10:14.389 --> 00:10:14.399 align:start position:0%
+fast dot next dot next again
+ 
+
+00:10:14.399 --> 00:10:17.590 align:start position:0%
+fast dot next dot next again
+and<00:10:14.720><c> now</c><00:10:15.120><c> if</c><00:10:15.279><c> we</c><00:10:16.160><c> if</c><00:10:16.320><c> they</c><00:10:16.480><c> meet</c><00:10:16.720><c> each</c><00:10:16.959><c> other</c>
+
+00:10:17.590 --> 00:10:17.600 align:start position:0%
+and now if we if they meet each other
+ 
+
+00:10:17.600 --> 00:10:20.630 align:start position:0%
+and now if we if they meet each other
+we<00:10:17.760><c> can</c><00:10:18.000><c> say</c><00:10:18.320><c> if</c><00:10:18.720><c> slow</c><00:10:19.200><c> ever</c><00:10:19.360><c> reaches</c><00:10:19.920><c> fast</c>
+
+00:10:20.630 --> 00:10:20.640 align:start position:0%
+we can say if slow ever reaches fast
+ 
+
+00:10:20.640 --> 00:10:22.949 align:start position:0%
+we can say if slow ever reaches fast
+then<00:10:21.040><c> we</c><00:10:21.200><c> can</c><00:10:21.279><c> return</c><00:10:21.760><c> true</c><00:10:22.160><c> there</c><00:10:22.399><c> does</c><00:10:22.640><c> exist</c>
+
+00:10:22.949 --> 00:10:22.959 align:start position:0%
+then we can return true there does exist
+ 
+
+00:10:22.959 --> 00:10:24.710 align:start position:0%
+then we can return true there does exist
+a<00:10:23.120><c> cycle</c><00:10:23.440><c> and</c><00:10:23.600><c> you</c><00:10:23.680><c> could</c><00:10:23.920><c> pretty</c><00:10:24.160><c> much</c><00:10:24.399><c> write</c>
+
+00:10:24.710 --> 00:10:24.720 align:start position:0%
+a cycle and you could pretty much write
+ 
+
+00:10:24.720 --> 00:10:26.790 align:start position:0%
+a cycle and you could pretty much write
+this<00:10:24.959><c> loop</c><00:10:25.200><c> as</c><00:10:25.360><c> a</c><00:10:25.519><c> do</c><00:10:25.760><c> while</c><00:10:26.079><c> loop</c><00:10:26.320><c> in</c><00:10:26.399><c> a</c><00:10:26.480><c> lot</c><00:10:26.640><c> of</c>
+
+00:10:26.790 --> 00:10:26.800 align:start position:0%
+this loop as a do while loop in a lot of
+ 
+
+00:10:26.800 --> 00:10:28.710 align:start position:0%
+this loop as a do while loop in a lot of
+other<00:10:27.040><c> languages</c><00:10:27.440><c> but</c><00:10:27.600><c> i</c><00:10:27.760><c> don't</c><00:10:28.000><c> think</c><00:10:28.240><c> python</c>
+
+00:10:28.710 --> 00:10:28.720 align:start position:0%
+other languages but i don't think python
+ 
+
+00:10:28.720 --> 00:10:29.910 align:start position:0%
+other languages but i don't think python
+supports<00:10:29.200><c> that</c>
+
+00:10:29.910 --> 00:10:29.920 align:start position:0%
+supports that
+ 
+
+00:10:29.920 --> 00:10:31.910 align:start position:0%
+supports that
+so<00:10:30.160><c> the</c><00:10:30.320><c> solution</c><00:10:30.880><c> is</c><00:10:31.040><c> really</c><00:10:31.360><c> as</c><00:10:31.519><c> simple</c><00:10:31.760><c> as</c>
+
+00:10:31.910 --> 00:10:31.920 align:start position:0%
+so the solution is really as simple as
+ 
+
+00:10:31.920 --> 00:10:32.949 align:start position:0%
+so the solution is really as simple as
+that<00:10:32.160><c> linear</c><00:10:32.560><c> time</c>
+
+00:10:32.949 --> 00:10:32.959 align:start position:0%
+that linear time
+ 
+
+00:10:32.959 --> 00:10:34.470 align:start position:0%
+that linear time
+constant<00:10:33.440><c> space</c><00:10:33.839><c> you</c><00:10:33.920><c> can</c><00:10:34.079><c> see</c><00:10:34.240><c> that</c><00:10:34.320><c> the</c>
+
+00:10:34.470 --> 00:10:34.480 align:start position:0%
+constant space you can see that the
+ 
+
+00:10:34.480 --> 00:10:36.150 align:start position:0%
+constant space you can see that the
+solution<00:10:34.880><c> works</c><00:10:35.200><c> and</c><00:10:35.360><c> is</c><00:10:35.440><c> efficient</c><00:10:35.839><c> so</c><00:10:36.000><c> i</c>
+
+00:10:36.150 --> 00:10:36.160 align:start position:0%
+solution works and is efficient so i
+ 
+
+00:10:36.160 --> 00:10:37.190 align:start position:0%
+solution works and is efficient so i
+hope<00:10:36.320><c> this</c><00:10:36.480><c> was</c><00:10:36.720><c> helpful</c>
+
+00:10:37.190 --> 00:10:37.200 align:start position:0%
+hope this was helpful
+ 
+
+00:10:37.200 --> 00:10:39.430 align:start position:0%
+hope this was helpful
+if<00:10:37.440><c> it</c><00:10:37.519><c> was</c><00:10:38.079><c> please</c><00:10:38.399><c> like</c><00:10:38.640><c> and</c><00:10:38.720><c> subscribe</c><00:10:39.279><c> it</c>
+
+00:10:39.430 --> 00:10:39.440 align:start position:0%
+if it was please like and subscribe it
+ 
+
+00:10:39.440 --> 00:10:41.350 align:start position:0%
+if it was please like and subscribe it
+supports<00:10:39.839><c> the</c><00:10:40.000><c> channel</c><00:10:40.399><c> a</c><00:10:40.640><c> lot</c><00:10:40.959><c> and</c><00:10:41.120><c> i'll</c>
+
+00:10:41.350 --> 00:10:41.360 align:start position:0%
+supports the channel a lot and i'll
+ 
+
+00:10:41.360 --> 00:10:45.040 align:start position:0%
+supports the channel a lot and i'll
+hopefully<00:10:41.920><c> see</c><00:10:42.079><c> you</c><00:10:42.240><c> pretty</c><00:10:42.560><c> soon</c>
+

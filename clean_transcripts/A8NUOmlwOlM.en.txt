@@ -1,0 +1,338 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+let's solve the problem insert interval
+and this is actually another problem
+from the blind 75 list a list of 75
+common leak good questions that we've
+been tracking on this spreadsheet we're
+almost done with all of them today we'll
+be solving this interval question insert
+interval so basically we're given a set
+of
+non-overlapping intervals and we want to
+insert a new interval into this
+list of intervals we want the intervals
+to remain non-overlapping so basically
+we might have to merge some intervals
+because we are given a single
+interval we're given a list of
+non-overlapping intervals in this case 2
+5 so when we insert this interval in
+here you can see that 2 5 is an interval
+right suppose we have 1 3 and then we
+have 2 5. so clearly these two intervals
+overlap each other right so then we have
+to merge them together how are we going
+to merge two intervals together well if
+they are overlapping we're going to take
+the minimum of both of them in this case
+it's 1 and we're going to take the
+maximum of both of them in this case
+it's 5. so that's what the new interval
+is going to be right so we merge them
+together we'll have a new interval like
+this 1 5 and
+so this is a new interval and then you
+can see we have another interval 6 9 now
+6 9 is not overlapping with one five so
+in our output now we're gonna have two
+intervals right we we're gonna have one
+five and six nine and then we're gonna
+return these intervals in the output now
+the convenient thing is that these
+intervals are actually already sorted
+for us in ascending order based on their
+start times that's good because that
+means we are not going to have to sort
+them and if you've solved any interval
+problems before you know that sorting
+always comes in handy for interval
+problems and i don't know if they
+specify in this problem but just so you
+know an interval such as this let's say
+we had 1 2 and another interval 2
+3 these do count as overlapping because
+these two points technically are
+connected so this would be one single
+interval one
+three
+i don't know if they mentioned that
+somewhere in the description but that is
+just an edge case that we'll have to
+keep track of suppose we were given a
+list of intervals such as these right
+these are sorted in ascending order
+based on their start value so none of
+these are overlapping which is what we
+expect what if we were given an interval
+such as this one an interval that
+actually goes let's say this is zero
+right even though i don't know what kind
+of interval would end at zero but let's
+just assume it is right so that it
+doesn't overlap with this one so since
+even this interval right
+the end value is less than the start
+value of the first interval that means
+this interval is not going to overlap
+with this interval right and if it's not
+even going to overlap with the first
+interval then there's no way it could
+inter it could overlap with any of the
+upcoming intervals either right so so
+when we basically return our output
+we're just going to return this original
+list but we're going to add this
+interval at the beginning right so that
+they're still sort in sorted order and
+they're non-overlapping now what if the
+opposite was true suppose we were given
+an interval such as this one 7
+to 8 or something like that right where
+the start value of this is actually
+greater than the end value of the last
+interval right in this case this
+interval won't overlap with any of these
+and then we can just return the original
+list and adding this to the end of the
+list right now those are a couple of the
+simple cases but it's possible that the
+new interval could actually end up
+overlapping with one of these
+other intervals right and then we'd have
+to combine both of these it could be
+possible that the interval actually
+could overlap with multiple intervals in
+the input in which case we have to
+combine multiple intervals right or it
+could be that the new interval would
+actually go somewhere in between a
+couple of these and not overlap at all
+so how are we going to determine where
+exactly this new interval ends up going
+well we'll have to go we'll have to
+iterate through these sorted intervals
+and then basically find the insertion
+point of the new interval that we're
+looking for so we're going to go suppose
+we have an interval like this one right
+somewhere small in between here we're
+going to go interval by interval we're
+going to say okay this is the first
+interval does this overlap with our new
+interval it does not so we would take
+this add it to the output we would look
+at the next and we would see that this
+interval goes after that and then we go
+to the next interval and then we'd see
+that okay this n this other this next
+interval actually goes after the
+interval that we're trying to insert
+right suppose we had a really small
+interval like this that goes in between
+then what would we do well we wouldn't
+want to add this one to the result first
+we would want to take this this new
+interval add it to the result and then
+add this to the result and then at that
+point we can just take the remaining
+intervals and then add them to the
+result and then we can return so those
+are a couple more of these simple cases
+right where we would not have to merge
+suppose we had an interval such as
+this one though right let's say 0 to
+3 or something like that okay we we
+iterate through the first interval we
+see okay this interval is overlapping
+with this one how do we know if they're
+overlapping or not well we would check
+okay does the end value of the new
+interval is it less than the start value
+of this interval it's not okay is the
+start value of the new interval greater
+than the end value of the current
+interval it's not so if that if neither
+of those are the case that means this
+interval does not go after this interval
+and it does not go before this interval
+so that must mean that they are
+overlapping in which case we're going to
+merge them how are we going to merge
+them we're going to take the minimum of
+the left and the maximum of the right
+and then merge them together so when we
+merge them we're going to get a new
+interval such as this one zero two
+three and once we have this merged
+interval we're not going to actually add
+it to the output just yet because we
+know that this this interval could
+actually overlap with some other
+intervals that we now have that come
+following right and that's exactly the
+case it's overlapping with this other
+interval three four so we we've gotten
+rid of this first
+interval now we're going to be iterating
+to the second interval we're gonna see
+three four okay is this overlapping with
+our zero three interval yes it is so
+we're going to merge these as well we're
+gonna take the minimum of the left it's
+gonna be zero and the maximum of the
+right it's gonna be four so we merge
+these together so now we're gonna have a
+new interval uh from zero to 4 and we're
+still
+not going to add this to the output yet
+because it could technically still be
+overlapping with some following
+intervals in this case we're going to
+get to the third interval and in this
+case they're not overlapping how do we
+know that because the end value of this
+one 4 is less than the start value of
+the interval that we're at so what are
+we going to do we're going to take this
+the first interval add it to the result
+now and then we're going to take this
+interval add it to the result after it
+and then we're going to go to the next
+interval see that we don't have any more
+intervals remaining and then we're done
+so this is going to be our result in
+this case 0 4 and 5 6 our new intervals
+after we've merged them and they're in
+ascending order so that's kind of the
+general algorithm as you can see since
+it's already sorted we'll just have to
+iterate through the entire list of
+intervals once so the overall time
+complexity is going to be big o of n
+that's also going to be the memory
+complexity
+if you count the memory that we're going
+to use to create the result array with
+that being said we can hop into the code
+now into the code and so we are going to
+have a result a result of intervals and
+as i mentioned we're going to be
+iterating through every single interval
+in the input we're given a list of
+intervals they're already in sorted in
+ascending order so now we want to know
+the couple edge cases remember so
+basically if this new interval uh
+suppose it goes before the current
+interval that we're at so suppose the
+end value of this new interval is
+actually less than the start value of
+the interval that we're at so how do we
+get the start value well interval at
+index i at the zero value this is the
+start value and so basically if the new
+interval has an end value that's smaller
+than the start value of the current
+interval we're at what are we going to
+do well that means we can go ahead and
+take this new interval and insert it
+into the result so we'll say result dot
+append new interval and once we're done
+with that then we basically know that
+all the intervals that come after it are
+also going to be non-overlapping right
+so we don't really have to do anything
+we can just take those additional
+intervals append it append them to the
+result and then return so in python an
+easy way to do this is result uh plus
+intervals the sub list starting at index
+i going until the end of intervals right
+so we can just take that entire sub list
+and append it to result this is you can
+do that with the addition operator and
+then we'll just return that right we
+don't even have to continue this uh
+while loop now the opposite case we
+discussed remember was else if
+this new interval actually goes after
+the current interval that we're at well
+in that case that means the new interval
+could actually still be overlapping with
+some intervals to the right so we're not
+going to add the new interval to the
+result
+let me write the condition so basically
+if the new interval the start value of
+this new interval was greater than the
+end value of the interval that we're at
+then we're to the result we're going to
+go ahead and append that interval that
+we're currently at because it's not
+overlapping with this new interval but
+we're not going to append the new
+interval just yet because it could
+technically overlap with some additional
+following intervals that are coming up
+and the last condition so these two
+conditions are if the new interval was
+not overlapping but the last condition
+else if neither of these evaluates to
+true that means the new interval is
+overlapping with the current interval
+that we're iterating through so what are
+we going to do well we want to update
+the new interval in that case right we
+want to merge it with the interval that
+we're at and remember we how are we
+going to do that well we're going to
+take the minimum of the left value of
+both intervals so this is how we can do
+that the
+minimum of the the new interval and the
+minimum of the current interval we're at
+and the maximum of the right value of
+both of these so let me copy and paste
+and the right value is going to be at
+index one so we just have to change
+those indexes so this is what the new
+interval is going to be set to now once
+we've updated that new interval right we
+basically merged it with a different
+interval are we going to add this new
+interval to our result well not quite
+because remember this new interval could
+still be overlapping with some
+additional intervals that are coming up
+so we're not going to add it just yet
+and then at the end so once this entire
+loop is done executing we're going to go
+ahead and return the result right but
+remember one thing so there's two ways
+that we could have exited right
+one is that if we ever got to the point
+where the new interval was uh basically
+if this if condition ever executed if
+the new interval was not overlapping
+with a interval then we go ahead and add
+that new interval to the result and then
+we return right but if that never
+executes then we're never going to end
+up adding the new interval to the result
+right so what we want to do before we
+return the result is go ahead and take
+to result.append that new interval
+before we return right because that
+means basically we definitely want to
+append this new interval to the result
+right that's kind of what the function
+was telling us to do insert the new
+interval so we want to make sure that we
+do end up executing that so
+once that's done we have written the
+entire code and as you can see it is a
+pretty efficient solution so i hope that
+this was helpful if it was please like
+and subscribe it supports the channel a
+lot and i'll hopefully see you pretty

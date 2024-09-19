@@ -1,0 +1,321 @@
+everyone welcome back and let's write
+some more neat code today so today let's
+solve a pretty interesting problem from
+today's leak code contest detect squares
+so this is a pretty challenging problem
+for a medium but it's actually pretty
+easy once you know the trick behind it
+so that's what i'll be explaining to you
+the trick for detecting squares or even
+generic rectangles within a
+grid so we're basically designing a data
+structure with three
+methods three functions we're going to
+be given a stream of points and we want
+to store these points that we're given
+they're going to be two-dimensional they
+have an x and y-coordinate you can see
+some examples down here and we could
+even have duplicate points in the exact
+same spot and we do want to store those
+so a good data structure to use would be
+a list so that's one data structure
+we're going to be using a list or an
+array list so storing the points is the
+easy part but we're also given a second
+requirement to implement the count
+method and this count method will take
+one parameter a point so a single point
+that may or may not already be in the
+you know stored list of points but it
+could be a new point or something and
+given that we want to be able to count
+how many possible
+exact perfect squares are we able to
+make with this new input query point and
+all the points that we already have
+stored within our list so suppose that
+this was the query point then we want to
+know how many different ways can we make
+squares if we are allowed to choose any
+of the points that we already had stored
+let's say all of these three points were
+already stored then clearly we could
+make uh one point or one square right
+what if we had two duplicates of this
+point on the top left then how many
+squares would be able to make well
+technically we'd be able to make two
+squares right we could swap the top left
+point if we had two uh you know two
+copies of it so then we could make two
+what if we had two copies of this point
+and we had two copies of the bottom
+right point how many squares could we
+make then in that case we could make
+four squares where i got this for is
+basically by multiplying how many copies
+we have of this and how many copies we
+have of this so that's going to be
+important so
+uh we're gonna since
+you know the count of how many uh each
+point that we have matters i'm gonna be
+using a map or a hash map to basically
+count the number of occurrences for each
+point so now for the actual trick the
+important part of this problem the most
+brute force way is going to be an n
+cubed approach why exactly is that well
+let's say we're given this a query point
+then we want to run through all possible
+combinations of the remaining points we
+have right we want to do an n
+an entire loop uh you know going through
+every single point suppose that point
+was in the top left position then we
+want to do another end loop to suppose
+every point was in the bottom left and
+an end loop for every bottom right point
+and then we want to check okay does this
+combination of four points actually form
+a perfect square or not so that's really
+not efficient right and it's actually
+not super easy to code either so what's
+an easier way to do it and we do need a
+tiny bit of geometry to kind of
+understand how we can make it more
+efficient so suppose we're given a query
+point right what's an easy way to
+determine
+the rectangle of this point or of you
+know trying to make a square what's an
+easy way to determine that well since
+we're actually dealing with squares it's
+a little bit different than the trick
+i'm going to show you but i'm going to
+show you a trick that can apply to all
+that's a little bit more generic and it
+could apply to rectangles as well so if
+instead of detecting squares we wanted
+to detect rectangles i'll show you the
+way that we could do that so we're given
+a point right this point we want to find
+a diagonal point from this one so
+instead of doing three n loops like
+instead of doing three for loops to find
+every single you know matching pair of
+three points we're just going to run a
+single loop and supposing that every
+single point we have available to us was
+the diagonal point from the query point
+that we're given now we want to verify
+if it could actually form a square how
+do we know if this diagonal point with
+this query point could actually form a
+square well of course the height
+difference of them or the y difference
+of them has to be the exact same as the
+width distance or the x distance between
+them right
+so that's something we can easily verify
+by just taking the difference of the
+coordinates of these two points right
+once we have verified that we know it's
+possible if these two points are
+diagonal to each other for them to form
+a square and once we have that we have
+actually
+uh you know then we can instantly check
+an o of one if it's possible that these
+two form an actual square given the
+current points that we have how can we
+check it with o of one well remember we
+do have a hash map right what are we
+going to say suppose the coordinates of
+this point are p x and p y or you could
+say q x q y for the query point and
+suppose the coordinates of this bottom
+point are x and y we want to know does
+there exist a top left point how can we
+check that by taking the x coordinate of
+this point and the y coordinate of this
+point and checking if that exists in our
+hash map in other words we could check
+this coordinate x and p y how do we
+check the bottom right point the exact
+opposite right we take p x and
+y and check does this exist in our hash
+map right since we're using a hash map
+that'll be an o of one lookup right so
+that's really easy so then we can
+instantly check if we can form a square
+or not but remember we could maybe have
+three copies of this top left and maybe
+we could have two copies of the bottom
+right so we want to take the counts of
+them and then multiply them together and
+we can do that easily with our hash map
+because with our hashmap we are storing
+the counts of each of these points that
+we have in our input and remember the o
+of n loop is only iterating through the
+diagonal list of points okay so now
+let's get into the code and i think i
+mentioned at the beginning that we are
+going to use a list but now that i think
+about it the list is actually not
+necessary so we can actually even
+shorten up the code from what i
+originally had so we're just going to
+use a map so this map is going to be
+called points count it's going to be a
+dictionary in python or you know a hash
+map and if you use default dict it'll
+just make things a little bit easier for
+us so if we try to
+retrieve a key that hasn't already been
+inserted here then the default value of
+that will be zero that's what basically
+this provides for us and that's just
+going to make the code a little bit
+shorter for us but so every time we're
+given a point right add point all we
+want to say is the you know the count of
+this point has increased by one right
+that's very easy to implement with a
+hash map we'll just say uh for this key
+uh by the way a list can't be a key
+value for a hashmap in python so we're
+gonna have to transform this list into a
+tuple so this point will be converted
+into a tuple and then
+we can increment that count by one so if
+it doesn't already exist in the map its
+default count will be zero and then
+we'll add one to it so pretty
+straightforward here now for the
+interesting part is the count function
+so we want to count you know the number
+of ways we can create a square initially
+we'll say set that result to zero we'll
+extract the uh x and y coordinates of
+the query point that we're given so
+point can be you know we can easily get
+the x and y coordinates of it and then
+we're gonna iterate through every single
+point in the list of points that we've
+saved or in our map so every x y in
+the points count we don't uh
+want the count of this particular point
+remember this loop is just going through
+all possible diagonal values to the
+query point that we're given in the
+input right but we need to actually
+verify that this is a diagonal point so
+how can we do that well we're going to
+say
+is the absolute value of the difference
+between the y-coordinates equal
+to the
+absolute value of the difference between
+the x coordinates if that's true then we
+can continue if it's not true meaning
+these are not equal then it's not really
+possible for these to form a square at
+all if they're diagonal to each other so
+in that case we're just going to
+continue to the next iteration of the
+loop but they also mentioned in the
+problem description that the squares
+have to have a positive error area
+basically that means we can't just use a
+you know we can't just stack four points
+at the exact same coordinate and call
+that a square i don't know if
+technically that is a square or not but
+that square would have zero area so what
+we want to just make sure to avoid that
+case we just want to say this x can't be
+equal to the query point you know or if
+the y is equal to the query point then
+we're also going to continue right so if
+if these points are stacked on top of
+each other you know if they're not
+really diagonal to each other then we're
+going to continue so other than that now
+we know that these two points are
+diagonal to each other so now we want to
+know can we actually create a square
+with them or not how can we know if we
+can create a square with them well we're
+going to say
+does the point in our points map so
+points count does that
+let's say you know one of those points
+which is x and p y does that point exist
+and does the opposite point
+exist as well
+both of these points have to exist so
+you know just copy and pasting and
+updating the coordinates so this will be
+the opposite
+so as i mentioned the drawing both of
+these points have to exist and what
+we're going to do is just multiply the
+counts together right because if each of
+these is one then one times one is one
+we can create one point with the one a
+perfect square
+with these coordinates right if it's 2
+and 2 then we're going to multiply 2
+times 2. we're going to say there's four
+possible ways we can create a perfect
+square with these
+and we're just going to take this
+multiplication and add it to our result
+which we declared up above and you know
+that's the entire thing obviously you
+can tell pretty easily that this is a
+linear time function right once we're
+done with that we can actually just go
+ahead and return the result okay so it
+looks like we are just going to
+implement this using a list so instead
+of iterating through the keys of that
+i'm just going to be maintaining a
+second variable i'm sure you can do this
+without that but i'm tired of trying to
+get this to work in python so i'm just
+going to go back to the first solution
+that i implemented so
+yeah we're just going to be maintaining
+a list as well as the hashmap so every
+time we get a point uh we're going to be
+appending that point onto this list of
+points that we're maintaining and then
+when we want to iterate through all the
+points that we have we're not going to
+iterate through the map we're going to
+iterate through the list of points that
+we implemented so self.points
+and then we are good to go the solution
+will work but one thing i did notice is
+i did have a little typo here so the x
+and y coordinates uh
+it needs to be x first and then y for
+some reason i put y and then p x so
+let's just swap these around p x y so
+these are the two opposite points as we
+showed in the drawing picture and we're
+just iterating through the list of
+points so that being said the code
+should work hopefully it does so let's
+try submitting it and as you can see
+below it does work i hope it's pretty
+efficient i hope this was helpful if it
+was please like and subscribe it
+supports the channel a lot consider
+checking out my patreon where you can
+further support the channel and
+hopefully i'll see you pretty soon i

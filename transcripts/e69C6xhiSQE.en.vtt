@@ -1,0 +1,3000 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.160 --> 00:00:01.910 align:start position:0%
+ 
+everyone<00:00:00.640><c> welcome</c><00:00:01.040><c> back</c><00:00:01.280><c> and</c><00:00:01.439><c> let's</c><00:00:01.680><c> write</c>
+
+00:00:01.910 --> 00:00:01.920 align:start position:0%
+everyone welcome back and let's write
+ 
+
+00:00:01.920 --> 00:00:03.750 align:start position:0%
+everyone welcome back and let's write
+some<00:00:02.080><c> more</c><00:00:02.320><c> neat</c><00:00:02.560><c> code</c><00:00:02.800><c> today</c><00:00:03.040><c> so</c><00:00:03.199><c> today</c><00:00:03.520><c> let's</c>
+
+00:00:03.750 --> 00:00:03.760 align:start position:0%
+some more neat code today so today let's
+ 
+
+00:00:03.760 --> 00:00:05.430 align:start position:0%
+some more neat code today so today let's
+solve<00:00:04.080><c> another</c><00:00:04.480><c> graph</c><00:00:04.880><c> problem</c>
+
+00:00:05.430 --> 00:00:05.440 align:start position:0%
+solve another graph problem
+ 
+
+00:00:05.440 --> 00:00:08.470 align:start position:0%
+solve another graph problem
+walls<00:00:06.000><c> and</c><00:00:06.319><c> gates</c><00:00:06.960><c> so</c><00:00:07.120><c> we're</c><00:00:07.359><c> given</c><00:00:07.680><c> an</c><00:00:07.919><c> m</c><00:00:08.160><c> by</c>
+
+00:00:08.470 --> 00:00:08.480 align:start position:0%
+walls and gates so we're given an m by
+ 
+
+00:00:08.480 --> 00:00:11.589 align:start position:0%
+walls and gates so we're given an m by
+n<00:00:08.960><c> grid</c><00:00:09.920><c> where</c><00:00:10.320><c> each</c><00:00:10.639><c> position</c>
+
+00:00:11.589 --> 00:00:11.599 align:start position:0%
+n grid where each position
+ 
+
+00:00:11.599 --> 00:00:14.230 align:start position:0%
+n grid where each position
+could<00:00:11.840><c> have</c><00:00:12.160><c> three</c><00:00:12.559><c> possible</c><00:00:13.200><c> values</c><00:00:14.000><c> a</c>
+
+00:00:14.230 --> 00:00:14.240 align:start position:0%
+could have three possible values a
+ 
+
+00:00:14.240 --> 00:00:16.150 align:start position:0%
+could have three possible values a
+negative<00:00:14.719><c> one</c><00:00:15.040><c> which</c><00:00:15.280><c> represents</c><00:00:15.839><c> a</c>
+
+00:00:16.150 --> 00:00:16.160 align:start position:0%
+negative one which represents a
+ 
+
+00:00:16.160 --> 00:00:18.710 align:start position:0%
+negative one which represents a
+wall<00:00:16.560><c> aka</c><00:00:17.279><c> an</c><00:00:17.600><c> obstacle</c><00:00:18.160><c> that</c><00:00:18.320><c> we're</c><00:00:18.560><c> not</c>
+
+00:00:18.710 --> 00:00:18.720 align:start position:0%
+wall aka an obstacle that we're not
+ 
+
+00:00:18.720 --> 00:00:19.750 align:start position:0%
+wall aka an obstacle that we're not
+allowed<00:00:19.199><c> to</c>
+
+00:00:19.750 --> 00:00:19.760 align:start position:0%
+allowed to
+ 
+
+00:00:19.760 --> 00:00:21.349 align:start position:0%
+allowed to
+visit<00:00:20.160><c> we're</c><00:00:20.320><c> not</c><00:00:20.480><c> allowed</c><00:00:20.720><c> to</c><00:00:20.800><c> visit</c><00:00:21.119><c> these</c>
+
+00:00:21.349 --> 00:00:21.359 align:start position:0%
+visit we're not allowed to visit these
+ 
+
+00:00:21.359 --> 00:00:22.790 align:start position:0%
+visit we're not allowed to visit these
+walls<00:00:22.480><c> a</c>
+
+00:00:22.790 --> 00:00:22.800 align:start position:0%
+walls a
+ 
+
+00:00:22.800 --> 00:00:25.830 align:start position:0%
+walls a
+zero<00:00:23.279><c> which</c><00:00:23.600><c> identifies</c><00:00:24.400><c> a</c><00:00:24.720><c> gate</c><00:00:25.199><c> so</c>
+
+00:00:25.830 --> 00:00:25.840 align:start position:0%
+zero which identifies a gate so
+ 
+
+00:00:25.840 --> 00:00:28.070 align:start position:0%
+zero which identifies a gate so
+this<00:00:26.160><c> is</c><00:00:26.320><c> an</c><00:00:26.480><c> example</c><00:00:26.960><c> of</c><00:00:27.119><c> a</c><00:00:27.279><c> gate</c><00:00:27.680><c> in</c><00:00:27.840><c> this</c>
+
+00:00:28.070 --> 00:00:28.080 align:start position:0%
+this is an example of a gate in this
+ 
+
+00:00:28.080 --> 00:00:29.669 align:start position:0%
+this is an example of a gate in this
+case<00:00:28.560><c> and</c><00:00:28.720><c> the</c><00:00:28.880><c> third</c><00:00:29.199><c> value</c>
+
+00:00:29.669 --> 00:00:29.679 align:start position:0%
+case and the third value
+ 
+
+00:00:29.679 --> 00:00:32.229 align:start position:0%
+case and the third value
+is<00:00:30.080><c> infinity</c><00:00:30.800><c> which</c><00:00:31.199><c> basically</c><00:00:31.599><c> represents</c>
+
+00:00:32.229 --> 00:00:32.239 align:start position:0%
+is infinity which basically represents
+ 
+
+00:00:32.239 --> 00:00:33.590 align:start position:0%
+is infinity which basically represents
+an<00:00:32.559><c> empty</c><00:00:32.960><c> room</c>
+
+00:00:33.590 --> 00:00:33.600 align:start position:0%
+an empty room
+ 
+
+00:00:33.600 --> 00:00:36.150 align:start position:0%
+an empty room
+and<00:00:33.840><c> basically</c><00:00:34.480><c> for</c><00:00:34.800><c> every</c><00:00:35.200><c> single</c><00:00:35.680><c> empty</c>
+
+00:00:36.150 --> 00:00:36.160 align:start position:0%
+and basically for every single empty
+ 
+
+00:00:36.160 --> 00:00:38.470 align:start position:0%
+and basically for every single empty
+room<00:00:36.480><c> aka</c><00:00:37.120><c> every</c><00:00:37.360><c> position</c><00:00:37.760><c> that's</c><00:00:38.000><c> marked</c><00:00:38.320><c> as</c>
+
+00:00:38.470 --> 00:00:38.480 align:start position:0%
+room aka every position that's marked as
+ 
+
+00:00:38.480 --> 00:00:41.110 align:start position:0%
+room aka every position that's marked as
+infinity<00:00:39.120><c> initially</c><00:00:39.680><c> we</c><00:00:39.920><c> want</c><00:00:40.160><c> to</c><00:00:40.320><c> identify</c>
+
+00:00:41.110 --> 00:00:41.120 align:start position:0%
+infinity initially we want to identify
+ 
+
+00:00:41.120 --> 00:00:44.389 align:start position:0%
+infinity initially we want to identify
+what's<00:00:41.440><c> the</c><00:00:41.760><c> nearest</c><00:00:42.480><c> gate</c><00:00:43.120><c> to</c><00:00:43.440><c> that</c><00:00:43.760><c> room</c><00:00:44.239><c> and</c>
+
+00:00:44.389 --> 00:00:44.399 align:start position:0%
+what's the nearest gate to that room and
+ 
+
+00:00:44.399 --> 00:00:46.389 align:start position:0%
+what's the nearest gate to that room and
+then<00:00:44.559><c> we</c><00:00:44.719><c> want</c><00:00:44.879><c> to</c><00:00:45.120><c> take</c><00:00:45.360><c> the</c><00:00:45.600><c> distance</c>
+
+00:00:46.389 --> 00:00:46.399 align:start position:0%
+then we want to take the distance
+ 
+
+00:00:46.399 --> 00:00:48.630 align:start position:0%
+then we want to take the distance
+uh<00:00:46.719><c> from</c><00:00:46.960><c> that</c><00:00:47.200><c> room</c><00:00:47.520><c> to</c><00:00:47.680><c> the</c><00:00:47.840><c> nearest</c><00:00:48.320><c> gate</c>
+
+00:00:48.630 --> 00:00:48.640 align:start position:0%
+uh from that room to the nearest gate
+ 
+
+00:00:48.640 --> 00:00:50.069 align:start position:0%
+uh from that room to the nearest gate
+and<00:00:48.800><c> then</c><00:00:49.200><c> replace</c>
+
+00:00:50.069 --> 00:00:50.079 align:start position:0%
+and then replace
+ 
+
+00:00:50.079 --> 00:00:53.270 align:start position:0%
+and then replace
+that<00:00:50.399><c> infinite</c><00:00:50.879><c> value</c><00:00:51.440><c> with</c><00:00:51.680><c> it</c><00:00:51.920><c> so</c><00:00:52.960><c> and</c>
+
+00:00:53.270 --> 00:00:53.280 align:start position:0%
+that infinite value with it so and
+ 
+
+00:00:53.280 --> 00:00:55.670 align:start position:0%
+that infinite value with it so and
+if<00:00:53.520><c> it</c><00:00:53.760><c> is</c><00:00:54.000><c> impossible</c><00:00:54.559><c> basically</c><00:00:55.199><c> if</c><00:00:55.440><c> an</c>
+
+00:00:55.670 --> 00:00:55.680 align:start position:0%
+if it is impossible basically if an
+ 
+
+00:00:55.680 --> 00:00:58.069 align:start position:0%
+if it is impossible basically if an
+empty<00:00:55.920><c> position</c><00:00:56.480><c> cannot</c><00:00:57.039><c> reach</c><00:00:57.440><c> a</c><00:00:57.680><c> gate</c>
+
+00:00:58.069 --> 00:00:58.079 align:start position:0%
+empty position cannot reach a gate
+ 
+
+00:00:58.079 --> 00:00:59.990 align:start position:0%
+empty position cannot reach a gate
+in<00:00:58.320><c> our</c><00:00:58.559><c> graph</c><00:00:59.039><c> then</c><00:00:59.280><c> basically</c><00:00:59.680><c> we're</c><00:00:59.840><c> going</c>
+
+00:00:59.990 --> 00:01:00.000 align:start position:0%
+in our graph then basically we're going
+ 
+
+00:01:00.000 --> 00:01:01.430 align:start position:0%
+in our graph then basically we're going
+to<00:01:00.160><c> leave</c><00:01:00.399><c> that</c><00:01:00.640><c> position</c><00:01:01.120><c> as</c>
+
+00:01:01.430 --> 00:01:01.440 align:start position:0%
+to leave that position as
+ 
+
+00:01:01.440 --> 00:01:03.349 align:start position:0%
+to leave that position as
+infinity<00:01:01.920><c> so</c><00:01:02.079><c> for</c><00:01:02.320><c> example</c><00:01:02.960><c> let's</c><00:01:03.120><c> take</c><00:01:03.280><c> a</c>
+
+00:01:03.349 --> 00:01:03.359 align:start position:0%
+infinity so for example let's take a
+ 
+
+00:01:03.359 --> 00:01:04.710 align:start position:0%
+infinity so for example let's take a
+look<00:01:03.600><c> at</c><00:01:03.680><c> this</c><00:01:04.000><c> example</c>
+
+00:01:04.710 --> 00:01:04.720 align:start position:0%
+look at this example
+ 
+
+00:01:04.720 --> 00:01:07.109 align:start position:0%
+look at this example
+uh<00:01:05.040><c> the</c><00:01:05.360><c> easiest</c><00:01:05.840><c> one</c><00:01:06.080><c> over</c><00:01:06.320><c> here</c><00:01:06.640><c> right</c><00:01:06.799><c> how</c>
+
+00:01:07.109 --> 00:01:07.119 align:start position:0%
+uh the easiest one over here right how
+ 
+
+00:01:07.119 --> 00:01:08.230 align:start position:0%
+uh the easiest one over here right how
+far<00:01:07.360><c> away</c><00:01:07.680><c> is</c><00:01:07.840><c> this</c>
+
+00:01:08.230 --> 00:01:08.240 align:start position:0%
+far away is this
+ 
+
+00:01:08.240 --> 00:01:10.789 align:start position:0%
+far away is this
+empty<00:01:08.640><c> room</c><00:01:09.200><c> from</c><00:01:09.520><c> a</c><00:01:09.760><c> gate</c><00:01:10.080><c> well</c><00:01:10.320><c> it</c><00:01:10.400><c> can</c><00:01:10.560><c> go</c><00:01:10.720><c> in</c>
+
+00:01:10.789 --> 00:01:10.799 align:start position:0%
+empty room from a gate well it can go in
+ 
+
+00:01:10.799 --> 00:01:12.390 align:start position:0%
+empty room from a gate well it can go in
+two<00:01:11.040><c> directions</c><00:01:11.439><c> it</c><00:01:11.520><c> can</c><00:01:11.680><c> go</c><00:01:11.920><c> down</c>
+
+00:01:12.390 --> 00:01:12.400 align:start position:0%
+two directions it can go down
+ 
+
+00:01:12.400 --> 00:01:13.910 align:start position:0%
+two directions it can go down
+which<00:01:12.720><c> is</c><00:01:12.880><c> an</c><00:01:13.040><c> obstacle</c><00:01:13.439><c> so</c><00:01:13.600><c> we're</c><00:01:13.760><c> not</c>
+
+00:01:13.910 --> 00:01:13.920 align:start position:0%
+which is an obstacle so we're not
+ 
+
+00:01:13.920 --> 00:01:15.429 align:start position:0%
+which is an obstacle so we're not
+allowed<00:01:14.159><c> to</c><00:01:14.240><c> travel</c><00:01:14.560><c> in</c><00:01:14.720><c> that</c><00:01:14.880><c> way</c>
+
+00:01:15.429 --> 00:01:15.439 align:start position:0%
+allowed to travel in that way
+ 
+
+00:01:15.439 --> 00:01:17.350 align:start position:0%
+allowed to travel in that way
+we<00:01:15.600><c> can't</c><00:01:15.840><c> go</c><00:01:16.159><c> up</c><00:01:16.320><c> or</c><00:01:16.479><c> to</c><00:01:16.640><c> the</c><00:01:16.799><c> right</c><00:01:16.960><c> those</c><00:01:17.200><c> are</c>
+
+00:01:17.350 --> 00:01:17.360 align:start position:0%
+we can't go up or to the right those are
+ 
+
+00:01:17.360 --> 00:01:19.429 align:start position:0%
+we can't go up or to the right those are
+out<00:01:17.520><c> of</c><00:01:17.600><c> bounds</c><00:01:17.920><c> but</c><00:01:18.080><c> we</c><00:01:18.240><c> can</c><00:01:18.479><c> go</c><00:01:18.640><c> to</c><00:01:18.799><c> the</c><00:01:19.040><c> left</c>
+
+00:01:19.429 --> 00:01:19.439 align:start position:0%
+out of bounds but we can go to the left
+ 
+
+00:01:19.439 --> 00:01:21.830 align:start position:0%
+out of bounds but we can go to the left
+and<00:01:19.840><c> of</c><00:01:20.000><c> course</c><00:01:20.640><c> right</c><00:01:20.880><c> next</c><00:01:21.119><c> to</c><00:01:21.280><c> it</c><00:01:21.520><c> happens</c>
+
+00:01:21.830 --> 00:01:21.840 align:start position:0%
+and of course right next to it happens
+ 
+
+00:01:21.840 --> 00:01:23.429 align:start position:0%
+and of course right next to it happens
+to<00:01:21.920><c> be</c><00:01:22.080><c> a</c><00:01:22.159><c> gate</c><00:01:22.400><c> so</c><00:01:22.560><c> what</c><00:01:22.720><c> we're</c><00:01:22.880><c> gonna</c><00:01:23.119><c> place</c>
+
+00:01:23.429 --> 00:01:23.439 align:start position:0%
+to be a gate so what we're gonna place
+ 
+
+00:01:23.439 --> 00:01:23.749 align:start position:0%
+to be a gate so what we're gonna place
+here
+
+00:01:23.749 --> 00:01:23.759 align:start position:0%
+here
+ 
+
+00:01:23.759 --> 00:01:25.990 align:start position:0%
+here
+is<00:01:23.920><c> a</c><00:01:24.240><c> one</c><00:01:24.640><c> meaning</c><00:01:24.880><c> this</c><00:01:25.119><c> is</c><00:01:25.280><c> one</c><00:01:25.520><c> position</c>
+
+00:01:25.990 --> 00:01:26.000 align:start position:0%
+is a one meaning this is one position
+ 
+
+00:01:26.000 --> 00:01:27.270 align:start position:0%
+is a one meaning this is one position
+away<00:01:26.320><c> from</c><00:01:26.560><c> a</c><00:01:26.720><c> gate</c>
+
+00:01:27.270 --> 00:01:27.280 align:start position:0%
+away from a gate
+ 
+
+00:01:27.280 --> 00:01:29.270 align:start position:0%
+away from a gate
+and<00:01:27.520><c> similarly</c><00:01:28.159><c> this</c><00:01:28.400><c> one</c><00:01:28.640><c> how</c><00:01:28.799><c> far</c><00:01:28.960><c> away</c><00:01:29.200><c> is</c>
+
+00:01:29.270 --> 00:01:29.280 align:start position:0%
+and similarly this one how far away is
+ 
+
+00:01:29.280 --> 00:01:30.789 align:start position:0%
+and similarly this one how far away is
+this<00:01:29.439><c> from</c><00:01:29.680><c> a</c><00:01:29.759><c> gate</c><00:01:30.000><c> will</c><00:01:30.159><c> one</c>
+
+00:01:30.789 --> 00:01:30.799 align:start position:0%
+this from a gate will one
+ 
+
+00:01:30.799 --> 00:01:33.670 align:start position:0%
+this from a gate will one
+two<00:01:31.439><c> three</c><00:01:31.759><c> positions</c><00:01:32.320><c> right</c><00:01:32.479><c> from</c><00:01:32.720><c> a</c><00:01:32.799><c> gate</c><00:01:33.439><c> so</c>
+
+00:01:33.670 --> 00:01:33.680 align:start position:0%
+two three positions right from a gate so
+ 
+
+00:01:33.680 --> 00:01:35.109 align:start position:0%
+two three positions right from a gate so
+we<00:01:33.840><c> could</c><00:01:34.000><c> put</c><00:01:34.159><c> a</c><00:01:34.240><c> three</c><00:01:34.479><c> here</c><00:01:34.640><c> we</c><00:01:34.720><c> could</c><00:01:34.880><c> put</c><00:01:35.040><c> a</c>
+
+00:01:35.109 --> 00:01:35.119 align:start position:0%
+we could put a three here we could put a
+ 
+
+00:01:35.119 --> 00:01:36.710 align:start position:0%
+we could put a three here we could put a
+two<00:01:35.360><c> here</c><00:01:35.520><c> and</c><00:01:35.680><c> a</c><00:01:35.759><c> one</c><00:01:36.000><c> here</c>
+
+00:01:36.710 --> 00:01:36.720 align:start position:0%
+two here and a one here
+ 
+
+00:01:36.720 --> 00:01:40.149 align:start position:0%
+two here and a one here
+uh<00:01:37.439><c> what</c><00:01:37.600><c> about</c><00:01:37.920><c> this</c><00:01:38.240><c> one</c><00:01:38.640><c> we</c><00:01:38.799><c> could</c><00:01:38.960><c> go</c><00:01:39.360><c> one</c>
+
+00:01:40.149 --> 00:01:40.159 align:start position:0%
+uh what about this one we could go one
+ 
+
+00:01:40.159 --> 00:01:43.590 align:start position:0%
+uh what about this one we could go one
+two<00:01:40.720><c> three</c><00:01:41.520><c> so</c><00:01:42.000><c> it's</c><00:01:42.560><c> three</c><00:01:42.880><c> positions</c>
+
+00:01:43.590 --> 00:01:43.600 align:start position:0%
+two three so it's three positions
+ 
+
+00:01:43.600 --> 00:01:45.590 align:start position:0%
+two three so it's three positions
+from<00:01:44.079><c> this</c><00:01:44.399><c> gate</c><00:01:44.640><c> but</c><00:01:44.799><c> it</c><00:01:44.960><c> happens</c><00:01:45.280><c> to</c><00:01:45.360><c> be</c><00:01:45.520><c> that</c>
+
+00:01:45.590 --> 00:01:45.600 align:start position:0%
+from this gate but it happens to be that
+ 
+
+00:01:45.600 --> 00:01:46.950 align:start position:0%
+from this gate but it happens to be that
+there's<00:01:45.759><c> a</c><00:01:45.920><c> closer</c><00:01:46.399><c> gate</c>
+
+00:01:46.950 --> 00:01:46.960 align:start position:0%
+there's a closer gate
+ 
+
+00:01:46.960 --> 00:01:48.950 align:start position:0%
+there's a closer gate
+if<00:01:47.119><c> we</c><00:01:47.200><c> go</c><00:01:47.520><c> to</c><00:01:47.680><c> the</c><00:01:47.920><c> right</c><00:01:48.159><c> and</c><00:01:48.240><c> then</c><00:01:48.399><c> we</c><00:01:48.479><c> go</c><00:01:48.799><c> up</c>
+
+00:01:48.950 --> 00:01:48.960 align:start position:0%
+if we go to the right and then we go up
+ 
+
+00:01:48.960 --> 00:01:50.950 align:start position:0%
+if we go to the right and then we go up
+right<00:01:49.119><c> so</c><00:01:49.280><c> the</c><00:01:49.439><c> closer</c><00:01:49.920><c> gate</c><00:01:50.159><c> is</c><00:01:50.320><c> actually</c><00:01:50.720><c> two</c>
+
+00:01:50.950 --> 00:01:50.960 align:start position:0%
+right so the closer gate is actually two
+ 
+
+00:01:50.960 --> 00:01:52.630 align:start position:0%
+right so the closer gate is actually two
+places<00:01:51.360><c> away</c><00:01:51.600><c> so</c><00:01:51.680><c> we're</c><00:01:51.840><c> gonna</c><00:01:52.000><c> put</c><00:01:52.240><c> two</c>
+
+00:01:52.630 --> 00:01:52.640 align:start position:0%
+places away so we're gonna put two
+ 
+
+00:01:52.640 --> 00:01:55.030 align:start position:0%
+places away so we're gonna put two
+in<00:01:52.799><c> this</c><00:01:53.040><c> position</c><00:01:54.079><c> and</c><00:01:54.320><c> now</c><00:01:54.479><c> what</c><00:01:54.720><c> happens</c><00:01:54.960><c> if</c>
+
+00:01:55.030 --> 00:01:55.040 align:start position:0%
+in this position and now what happens if
+ 
+
+00:01:55.040 --> 00:01:56.709 align:start position:0%
+in this position and now what happens if
+there<00:01:55.200><c> was</c><00:01:55.360><c> a</c><00:01:55.439><c> gate</c><00:01:55.759><c> over</c><00:01:56.000><c> here</c><00:01:56.159><c> what</c><00:01:56.320><c> would</c><00:01:56.479><c> we</c>
+
+00:01:56.709 --> 00:01:56.719 align:start position:0%
+there was a gate over here what would we
+ 
+
+00:01:56.719 --> 00:01:58.709 align:start position:0%
+there was a gate over here what would we
+mark<00:01:57.040><c> these</c><00:01:57.360><c> two</c><00:01:57.600><c> as</c><00:01:57.759><c> well</c><00:01:58.000><c> basically</c><00:01:58.399><c> they</c>
+
+00:01:58.709 --> 00:01:58.719 align:start position:0%
+mark these two as well basically they
+ 
+
+00:01:58.719 --> 00:01:59.590 align:start position:0%
+mark these two as well basically they
+start<00:01:59.040><c> out</c><00:01:59.280><c> as</c>
+
+00:01:59.590 --> 00:01:59.600 align:start position:0%
+start out as
+ 
+
+00:01:59.600 --> 00:02:01.190 align:start position:0%
+start out as
+infinity<00:02:00.079><c> and</c><00:02:00.159><c> we</c><00:02:00.320><c> would</c><00:02:00.560><c> leave</c><00:02:00.799><c> these</c><00:02:01.040><c> two</c>
+
+00:02:01.190 --> 00:02:01.200 align:start position:0%
+infinity and we would leave these two
+ 
+
+00:02:01.200 --> 00:02:02.789 align:start position:0%
+infinity and we would leave these two
+positions<00:02:01.759><c> as</c><00:02:02.000><c> infinity</c>
+
+00:02:02.789 --> 00:02:02.799 align:start position:0%
+positions as infinity
+ 
+
+00:02:02.799 --> 00:02:05.270 align:start position:0%
+positions as infinity
+so<00:02:03.040><c> any</c><00:02:03.280><c> positions</c><00:02:03.759><c> that</c><00:02:04.000><c> cannot</c><00:02:04.479><c> visit</c><00:02:04.960><c> a</c>
+
+00:02:05.270 --> 00:02:05.280 align:start position:0%
+so any positions that cannot visit a
+ 
+
+00:02:05.280 --> 00:02:06.630 align:start position:0%
+so any positions that cannot visit a
+gate<00:02:05.680><c> are</c><00:02:05.840><c> going</c><00:02:06.000><c> to</c><00:02:06.159><c> be</c>
+
+00:02:06.630 --> 00:02:06.640 align:start position:0%
+gate are going to be
+ 
+
+00:02:06.640 --> 00:02:09.990 align:start position:0%
+gate are going to be
+remaining<00:02:07.200><c> as</c><00:02:07.600><c> infinity</c><00:02:08.479><c> so</c><00:02:09.039><c> the</c><00:02:09.280><c> first</c><00:02:09.599><c> idea</c>
+
+00:02:09.990 --> 00:02:10.000 align:start position:0%
+remaining as infinity so the first idea
+ 
+
+00:02:10.000 --> 00:02:11.830 align:start position:0%
+remaining as infinity so the first idea
+that<00:02:10.080><c> you</c><00:02:10.239><c> might</c><00:02:10.479><c> have</c><00:02:10.720><c> for</c><00:02:10.959><c> this</c><00:02:11.200><c> problem</c><00:02:11.599><c> is</c>
+
+00:02:11.830 --> 00:02:11.840 align:start position:0%
+that you might have for this problem is
+ 
+
+00:02:11.840 --> 00:02:13.510 align:start position:0%
+that you might have for this problem is
+basically<00:02:12.400><c> for</c><00:02:12.560><c> every</c><00:02:12.800><c> position</c><00:02:13.200><c> we</c><00:02:13.360><c> want</c><00:02:13.440><c> to</c>
+
+00:02:13.510 --> 00:02:13.520 align:start position:0%
+basically for every position we want to
+ 
+
+00:02:13.520 --> 00:02:15.190 align:start position:0%
+basically for every position we want to
+know<00:02:13.680><c> what's</c><00:02:13.920><c> the</c><00:02:14.000><c> closest</c><00:02:14.400><c> gate</c><00:02:14.720><c> why</c><00:02:14.959><c> can't</c>
+
+00:02:15.190 --> 00:02:15.200 align:start position:0%
+know what's the closest gate why can't
+ 
+
+00:02:15.200 --> 00:02:17.030 align:start position:0%
+know what's the closest gate why can't
+we<00:02:15.360><c> just</c><00:02:15.599><c> run</c><00:02:15.840><c> a</c><00:02:16.000><c> dfs</c><00:02:16.640><c> right</c>
+
+00:02:17.030 --> 00:02:17.040 align:start position:0%
+we just run a dfs right
+ 
+
+00:02:17.040 --> 00:02:20.070 align:start position:0%
+we just run a dfs right
+basically<00:02:17.520><c> a</c><00:02:17.599><c> dfs</c><00:02:18.080><c> until</c><00:02:18.400><c> we</c><00:02:18.560><c> reach</c><00:02:19.120><c> the</c><00:02:19.360><c> gate</c>
+
+00:02:20.070 --> 00:02:20.080 align:start position:0%
+basically a dfs until we reach the gate
+ 
+
+00:02:20.080 --> 00:02:22.070 align:start position:0%
+basically a dfs until we reach the gate
+or<00:02:20.560><c> you</c><00:02:20.640><c> know</c><00:02:20.800><c> we</c><00:02:20.959><c> reach</c><00:02:21.280><c> as</c><00:02:21.360><c> many</c><00:02:21.599><c> positions</c>
+
+00:02:22.070 --> 00:02:22.080 align:start position:0%
+or you know we reach as many positions
+ 
+
+00:02:22.080 --> 00:02:23.670 align:start position:0%
+or you know we reach as many positions
+as<00:02:22.160><c> we</c><00:02:22.319><c> can</c><00:02:22.560><c> when</c><00:02:22.720><c> we</c><00:02:22.879><c> return</c><00:02:23.280><c> what</c><00:02:23.440><c> was</c><00:02:23.599><c> the</c>
+
+00:02:23.670 --> 00:02:23.680 align:start position:0%
+as we can when we return what was the
+ 
+
+00:02:23.680 --> 00:02:24.790 align:start position:0%
+as we can when we return what was the
+closest<00:02:24.319><c> gate</c>
+
+00:02:24.790 --> 00:02:24.800 align:start position:0%
+closest gate
+ 
+
+00:02:24.800 --> 00:02:27.990 align:start position:0%
+closest gate
+to<00:02:25.520><c> that</c><00:02:25.760><c> position</c><00:02:26.319><c> right</c><00:02:27.040><c> and</c><00:02:27.200><c> then</c><00:02:27.599><c> do</c><00:02:27.760><c> that</c>
+
+00:02:27.990 --> 00:02:28.000 align:start position:0%
+to that position right and then do that
+ 
+
+00:02:28.000 --> 00:02:29.750 align:start position:0%
+to that position right and then do that
+for<00:02:28.239><c> every</c><00:02:28.480><c> single</c><00:02:28.720><c> position</c><00:02:29.200><c> in</c><00:02:29.280><c> the</c><00:02:29.440><c> entire</c>
+
+00:02:29.750 --> 00:02:29.760 align:start position:0%
+for every single position in the entire
+ 
+
+00:02:29.760 --> 00:02:31.110 align:start position:0%
+for every single position in the entire
+grid<00:02:29.920><c> now</c><00:02:30.080><c> what's</c><00:02:30.319><c> the</c><00:02:30.400><c> time</c><00:02:30.640><c> complexity</c>
+
+00:02:31.110 --> 00:02:31.120 align:start position:0%
+grid now what's the time complexity
+ 
+
+00:02:31.120 --> 00:02:31.670 align:start position:0%
+grid now what's the time complexity
+going<00:02:31.280><c> to</c><00:02:31.360><c> be</c>
+
+00:02:31.670 --> 00:02:31.680 align:start position:0%
+going to be
+ 
+
+00:02:31.680 --> 00:02:34.150 align:start position:0%
+going to be
+of<00:02:32.000><c> that</c><00:02:32.480><c> well</c><00:02:32.720><c> a</c><00:02:32.800><c> dfs</c><00:02:33.360><c> is</c><00:02:33.519><c> going</c><00:02:33.599><c> to</c><00:02:33.680><c> basically</c>
+
+00:02:34.150 --> 00:02:34.160 align:start position:0%
+of that well a dfs is going to basically
+ 
+
+00:02:34.160 --> 00:02:35.830 align:start position:0%
+of that well a dfs is going to basically
+be<00:02:34.319><c> the</c><00:02:34.560><c> size</c><00:02:34.800><c> of</c><00:02:34.959><c> the</c><00:02:35.040><c> grid</c><00:02:35.440><c> and</c><00:02:35.599><c> we're</c><00:02:35.760><c> going</c>
+
+00:02:35.830 --> 00:02:35.840 align:start position:0%
+be the size of the grid and we're going
+ 
+
+00:02:35.840 --> 00:02:37.110 align:start position:0%
+be the size of the grid and we're going
+to<00:02:35.920><c> do</c><00:02:36.080><c> that</c><00:02:36.160><c> for</c><00:02:36.239><c> every</c><00:02:36.400><c> single</c><00:02:36.720><c> position</c><00:02:37.040><c> in</c>
+
+00:02:37.110 --> 00:02:37.120 align:start position:0%
+to do that for every single position in
+ 
+
+00:02:37.120 --> 00:02:38.309 align:start position:0%
+to do that for every single position in
+the<00:02:37.200><c> grid</c><00:02:37.440><c> so</c><00:02:37.599><c> basically</c><00:02:37.920><c> it's</c><00:02:38.080><c> going</c><00:02:38.160><c> to</c><00:02:38.239><c> be</c>
+
+00:02:38.309 --> 00:02:38.319 align:start position:0%
+the grid so basically it's going to be
+ 
+
+00:02:38.319 --> 00:02:39.430 align:start position:0%
+the grid so basically it's going to be
+something<00:02:38.640><c> like</c><00:02:38.879><c> m</c><00:02:39.120><c> by</c>
+
+00:02:39.430 --> 00:02:39.440 align:start position:0%
+something like m by
+ 
+
+00:02:39.440 --> 00:02:42.630 align:start position:0%
+something like m by
+n<00:02:40.080><c> squared</c><00:02:40.800><c> so</c><00:02:41.280><c> the</c><00:02:41.599><c> question</c><00:02:41.920><c> is</c><00:02:42.080><c> can</c><00:02:42.319><c> we</c><00:02:42.400><c> do</c>
+
+00:02:42.630 --> 00:02:42.640 align:start position:0%
+n squared so the question is can we do
+ 
+
+00:02:42.640 --> 00:02:44.229 align:start position:0%
+n squared so the question is can we do
+better<00:02:42.879><c> than</c><00:02:43.040><c> this</c><00:02:43.200><c> big</c><00:02:43.360><c> o</c><00:02:43.519><c> time</c><00:02:43.760><c> complexity</c>
+
+00:02:44.229 --> 00:02:44.239 align:start position:0%
+better than this big o time complexity
+ 
+
+00:02:44.239 --> 00:02:45.910 align:start position:0%
+better than this big o time complexity
+well<00:02:44.400><c> let's</c><00:02:44.640><c> try</c><00:02:44.879><c> out</c><00:02:45.040><c> a</c><00:02:45.280><c> bfs</c>
+
+00:02:45.910 --> 00:02:45.920 align:start position:0%
+well let's try out a bfs
+ 
+
+00:02:45.920 --> 00:02:47.830 align:start position:0%
+well let's try out a bfs
+solution<00:02:46.319><c> right</c><00:02:46.480><c> we</c><00:02:46.640><c> tried</c><00:02:46.879><c> dfs</c><00:02:47.440><c> let's</c><00:02:47.599><c> try</c>
+
+00:02:47.830 --> 00:02:47.840 align:start position:0%
+solution right we tried dfs let's try
+ 
+
+00:02:47.840 --> 00:02:49.509 align:start position:0%
+solution right we tried dfs let's try
+out<00:02:48.080><c> breadth</c><00:02:48.400><c> first</c><00:02:48.640><c> search</c><00:02:48.959><c> and</c><00:02:49.120><c> see</c>
+
+00:02:49.509 --> 00:02:49.519 align:start position:0%
+out breadth first search and see
+ 
+
+00:02:49.519 --> 00:02:51.270 align:start position:0%
+out breadth first search and see
+what<00:02:49.760><c> that</c><00:02:50.000><c> leads</c><00:02:50.319><c> to</c><00:02:50.480><c> us</c><00:02:50.720><c> let's</c><00:02:50.879><c> say</c><00:02:51.040><c> we</c>
+
+00:02:51.270 --> 00:02:51.280 align:start position:0%
+what that leads to us let's say we
+ 
+
+00:02:51.280 --> 00:02:52.550 align:start position:0%
+what that leads to us let's say we
+started<00:02:51.680><c> our</c><00:02:51.920><c> bfs</c>
+
+00:02:52.550 --> 00:02:52.560 align:start position:0%
+started our bfs
+ 
+
+00:02:52.560 --> 00:02:54.550 align:start position:0%
+started our bfs
+at<00:02:52.720><c> some</c><00:02:52.959><c> arbitrary</c><00:02:53.440><c> position</c><00:02:53.920><c> like</c><00:02:54.160><c> this</c><00:02:54.319><c> one</c>
+
+00:02:54.550 --> 00:02:54.560 align:start position:0%
+at some arbitrary position like this one
+ 
+
+00:02:54.560 --> 00:02:56.150 align:start position:0%
+at some arbitrary position like this one
+is<00:02:54.720><c> it</c><00:02:54.800><c> possible</c><00:02:55.200><c> that</c><00:02:55.360><c> we</c><00:02:55.519><c> can</c><00:02:55.680><c> eliminate</c>
+
+00:02:56.150 --> 00:02:56.160 align:start position:0%
+is it possible that we can eliminate
+ 
+
+00:02:56.160 --> 00:02:57.750 align:start position:0%
+is it possible that we can eliminate
+repeated<00:02:56.640><c> work</c><00:02:56.959><c> if</c><00:02:57.040><c> we</c><00:02:57.200><c> do</c><00:02:57.360><c> that</c>
+
+00:02:57.750 --> 00:02:57.760 align:start position:0%
+repeated work if we do that
+ 
+
+00:02:57.760 --> 00:02:59.830 align:start position:0%
+repeated work if we do that
+well<00:02:58.159><c> we're</c><00:02:58.400><c> gonna</c><00:02:58.720><c> start</c><00:02:59.040><c> here</c><00:02:59.519><c> and</c><00:02:59.599><c> then</c>
+
+00:02:59.830 --> 00:02:59.840 align:start position:0%
+well we're gonna start here and then
+ 
+
+00:02:59.840 --> 00:03:01.589 align:start position:0%
+well we're gonna start here and then
+visit<00:03:00.239><c> in</c><00:03:00.400><c> all</c><00:03:00.560><c> four</c><00:03:00.800><c> directions</c>
+
+00:03:01.589 --> 00:03:01.599 align:start position:0%
+visit in all four directions
+ 
+
+00:03:01.599 --> 00:03:04.229 align:start position:0%
+visit in all four directions
+and<00:03:01.920><c> see</c><00:03:02.879><c> you</c><00:03:03.040><c> know</c><00:03:03.280><c> what's</c><00:03:03.519><c> the</c><00:03:03.599><c> closest</c><00:03:04.000><c> gate</c>
+
+00:03:04.229 --> 00:03:04.239 align:start position:0%
+and see you know what's the closest gate
+ 
+
+00:03:04.239 --> 00:03:05.830 align:start position:0%
+and see you know what's the closest gate
+that<00:03:04.400><c> we</c><00:03:04.560><c> can</c><00:03:04.720><c> get</c><00:03:04.959><c> to</c>
+
+00:03:05.830 --> 00:03:05.840 align:start position:0%
+that we can get to
+ 
+
+00:03:05.840 --> 00:03:07.509 align:start position:0%
+that we can get to
+so<00:03:06.080><c> starting</c><00:03:06.400><c> here</c><00:03:06.640><c> we</c><00:03:06.800><c> have</c><00:03:06.879><c> a</c><00:03:06.959><c> distance</c><00:03:07.360><c> of</c>
+
+00:03:07.509 --> 00:03:07.519 align:start position:0%
+so starting here we have a distance of
+ 
+
+00:03:07.519 --> 00:03:09.350 align:start position:0%
+so starting here we have a distance of
+zero<00:03:07.840><c> it</c><00:03:07.920><c> takes</c><00:03:08.159><c> us</c><00:03:08.400><c> a</c><00:03:08.480><c> distance</c><00:03:08.800><c> of</c><00:03:08.959><c> one</c><00:03:09.200><c> to</c>
+
+00:03:09.350 --> 00:03:09.360 align:start position:0%
+zero it takes us a distance of one to
+ 
+
+00:03:09.360 --> 00:03:10.790 align:start position:0%
+zero it takes us a distance of one to
+get<00:03:09.440><c> to</c><00:03:09.519><c> these</c><00:03:09.760><c> positions</c><00:03:10.159><c> and</c><00:03:10.239><c> then</c><00:03:10.400><c> finally</c>
+
+00:03:10.790 --> 00:03:10.800 align:start position:0%
+get to these positions and then finally
+ 
+
+00:03:10.800 --> 00:03:12.309 align:start position:0%
+get to these positions and then finally
+we<00:03:10.959><c> can</c><00:03:11.120><c> get</c><00:03:11.280><c> a</c><00:03:11.360><c> distance</c><00:03:11.760><c> of</c><00:03:11.840><c> two</c>
+
+00:03:12.309 --> 00:03:12.319 align:start position:0%
+we can get a distance of two
+ 
+
+00:03:12.319 --> 00:03:13.990 align:start position:0%
+we can get a distance of two
+to<00:03:12.480><c> get</c><00:03:12.640><c> this</c><00:03:12.879><c> position</c><00:03:13.200><c> right</c><00:03:13.360><c> but</c><00:03:13.599><c> since</c><00:03:13.840><c> we</c>
+
+00:03:13.990 --> 00:03:14.000 align:start position:0%
+to get this position right but since we
+ 
+
+00:03:14.000 --> 00:03:15.750 align:start position:0%
+to get this position right but since we
+don't<00:03:14.159><c> want</c><00:03:14.319><c> to</c><00:03:14.480><c> revisit</c><00:03:15.040><c> the</c><00:03:15.120><c> same</c><00:03:15.440><c> node</c>
+
+00:03:15.750 --> 00:03:15.760 align:start position:0%
+don't want to revisit the same node
+ 
+
+00:03:15.760 --> 00:03:17.589 align:start position:0%
+don't want to revisit the same node
+twice<00:03:16.239><c> the</c><00:03:16.400><c> same</c><00:03:16.640><c> position</c><00:03:17.040><c> twice</c>
+
+00:03:17.589 --> 00:03:17.599 align:start position:0%
+twice the same position twice
+ 
+
+00:03:17.599 --> 00:03:19.430 align:start position:0%
+twice the same position twice
+we're<00:03:17.760><c> gonna</c><00:03:18.400><c> you</c><00:03:18.560><c> know</c><00:03:18.640><c> do</c><00:03:18.879><c> exactly</c><00:03:19.280><c> that</c>
+
+00:03:19.430 --> 00:03:19.440 align:start position:0%
+we're gonna you know do exactly that
+ 
+
+00:03:19.440 --> 00:03:21.030 align:start position:0%
+we're gonna you know do exactly that
+once<00:03:19.680><c> we</c><00:03:19.760><c> get</c><00:03:19.920><c> to</c><00:03:20.080><c> a</c><00:03:20.159><c> position</c><00:03:20.640><c> we're</c><00:03:20.800><c> gonna</c>
+
+00:03:21.030 --> 00:03:21.040 align:start position:0%
+once we get to a position we're gonna
+ 
+
+00:03:21.040 --> 00:03:22.550 align:start position:0%
+once we get to a position we're gonna
+leave<00:03:21.280><c> it</c><00:03:21.360><c> as</c><00:03:21.599><c> visited</c><00:03:22.080><c> so</c>
+
+00:03:22.550 --> 00:03:22.560 align:start position:0%
+leave it as visited so
+ 
+
+00:03:22.560 --> 00:03:24.710 align:start position:0%
+leave it as visited so
+you<00:03:22.720><c> know</c><00:03:23.040><c> if</c><00:03:23.120><c> we</c><00:03:23.360><c> go</c><00:03:23.519><c> from</c><00:03:23.840><c> here</c><00:03:24.239><c> to</c><00:03:24.400><c> here</c><00:03:24.640><c> it</c>
+
+00:03:24.710 --> 00:03:24.720 align:start position:0%
+you know if we go from here to here it
+ 
+
+00:03:24.720 --> 00:03:26.390 align:start position:0%
+you know if we go from here to here it
+takes<00:03:24.959><c> us</c><00:03:25.120><c> two</c><00:03:25.280><c> positions</c><00:03:25.760><c> so</c><00:03:26.000><c> you</c><00:03:26.159><c> know</c><00:03:26.239><c> then</c>
+
+00:03:26.390 --> 00:03:26.400 align:start position:0%
+takes us two positions so you know then
+ 
+
+00:03:26.400 --> 00:03:27.750 align:start position:0%
+takes us two positions so you know then
+we<00:03:26.480><c> can</c><00:03:26.560><c> say</c><00:03:26.799><c> okay</c><00:03:27.040><c> for</c><00:03:27.120><c> this</c><00:03:27.280><c> position</c><00:03:27.680><c> it</c>
+
+00:03:27.750 --> 00:03:27.760 align:start position:0%
+we can say okay for this position it
+ 
+
+00:03:27.760 --> 00:03:29.430 align:start position:0%
+we can say okay for this position it
+took<00:03:28.000><c> us</c><00:03:28.159><c> two</c><00:03:28.480><c> but</c><00:03:28.640><c> when</c><00:03:28.879><c> we</c><00:03:29.040><c> go</c>
+
+00:03:29.430 --> 00:03:29.440 align:start position:0%
+took us two but when we go
+ 
+
+00:03:29.440 --> 00:03:31.430 align:start position:0%
+took us two but when we go
+up<00:03:29.840><c> right</c><00:03:30.000><c> we</c><00:03:30.159><c> get</c><00:03:30.319><c> to</c><00:03:30.400><c> this</c><00:03:30.640><c> position</c><00:03:31.360><c> you</c>
+
+00:03:31.430 --> 00:03:31.440 align:start position:0%
+up right we get to this position you
+ 
+
+00:03:31.440 --> 00:03:33.110 align:start position:0%
+up right we get to this position you
+know<00:03:31.599><c> we</c><00:03:31.680><c> can't</c><00:03:31.920><c> really</c><00:03:32.159><c> go</c><00:03:32.400><c> in</c><00:03:32.640><c> any</c><00:03:32.879><c> other</c>
+
+00:03:33.110 --> 00:03:33.120 align:start position:0%
+know we can't really go in any other
+ 
+
+00:03:33.120 --> 00:03:34.710 align:start position:0%
+know we can't really go in any other
+direction<00:03:33.599><c> so</c><00:03:33.760><c> basically</c><00:03:34.159><c> this</c><00:03:34.400><c> is</c><00:03:34.480><c> going</c><00:03:34.560><c> to</c>
+
+00:03:34.710 --> 00:03:34.720 align:start position:0%
+direction so basically this is going to
+ 
+
+00:03:34.720 --> 00:03:36.149 align:start position:0%
+direction so basically this is going to
+be<00:03:34.879><c> remaining</c><00:03:35.360><c> as</c><00:03:35.519><c> a</c><00:03:35.760><c> dead</c>
+
+00:03:36.149 --> 00:03:36.159 align:start position:0%
+be remaining as a dead
+ 
+
+00:03:36.159 --> 00:03:39.110 align:start position:0%
+be remaining as a dead
+end<00:03:36.480><c> we're</c><00:03:36.640><c> never</c><00:03:36.879><c> going</c><00:03:37.040><c> to</c><00:03:37.280><c> get</c><00:03:37.920><c> a</c><00:03:38.319><c> distance</c>
+
+00:03:39.110 --> 00:03:39.120 align:start position:0%
+end we're never going to get a distance
+ 
+
+00:03:39.120 --> 00:03:40.630 align:start position:0%
+end we're never going to get a distance
+in<00:03:39.280><c> this</c><00:03:39.519><c> position</c><00:03:40.000><c> right</c><00:03:40.239><c> because</c><00:03:40.400><c> we</c><00:03:40.480><c> don't</c>
+
+00:03:40.630 --> 00:03:40.640 align:start position:0%
+in this position right because we don't
+ 
+
+00:03:40.640 --> 00:03:42.470 align:start position:0%
+in this position right because we don't
+want<00:03:40.799><c> to</c><00:03:40.959><c> revisit</c><00:03:41.519><c> the</c><00:03:41.680><c> same</c><00:03:42.000><c> position</c>
+
+00:03:42.470 --> 00:03:42.480 align:start position:0%
+want to revisit the same position
+ 
+
+00:03:42.480 --> 00:03:44.550 align:start position:0%
+want to revisit the same position
+twice<00:03:42.799><c> we</c><00:03:42.879><c> can't</c><00:03:43.120><c> go</c><00:03:43.440><c> back</c><00:03:43.920><c> in</c><00:03:44.080><c> the</c><00:03:44.159><c> direction</c>
+
+00:03:44.550 --> 00:03:44.560 align:start position:0%
+twice we can't go back in the direction
+ 
+
+00:03:44.560 --> 00:03:45.670 align:start position:0%
+twice we can't go back in the direction
+that<00:03:44.720><c> we</c><00:03:44.879><c> came</c><00:03:45.200><c> from</c>
+
+00:03:45.670 --> 00:03:45.680 align:start position:0%
+that we came from
+ 
+
+00:03:45.680 --> 00:03:49.270 align:start position:0%
+that we came from
+so<00:03:46.239><c> a</c><00:03:46.480><c> bfs</c><00:03:47.040><c> solution</c><00:03:48.159><c> starting</c><00:03:48.640><c> from</c><00:03:48.959><c> the</c>
+
+00:03:49.270 --> 00:03:49.280 align:start position:0%
+so a bfs solution starting from the
+ 
+
+00:03:49.280 --> 00:03:52.070 align:start position:0%
+so a bfs solution starting from the
+rooms<00:03:50.080><c> is</c><00:03:50.400><c> not</c><00:03:50.640><c> going</c><00:03:50.799><c> to</c><00:03:50.959><c> work</c><00:03:51.280><c> if</c><00:03:51.440><c> we</c><00:03:51.599><c> want</c><00:03:51.840><c> to</c>
+
+00:03:52.070 --> 00:03:52.080 align:start position:0%
+rooms is not going to work if we want to
+ 
+
+00:03:52.080 --> 00:03:53.270 align:start position:0%
+rooms is not going to work if we want to
+get<00:03:52.400><c> an</c><00:03:52.720><c> actual</c>
+
+00:03:53.270 --> 00:03:53.280 align:start position:0%
+get an actual
+ 
+
+00:03:53.280 --> 00:03:55.990 align:start position:0%
+get an actual
+o<00:03:53.519><c> of</c><00:03:53.760><c> m</c><00:03:54.080><c> by</c><00:03:54.480><c> n</c><00:03:54.959><c> solution</c><00:03:55.439><c> it's</c><00:03:55.599><c> not</c><00:03:55.760><c> going</c><00:03:55.920><c> to</c>
+
+00:03:55.990 --> 00:03:56.000 align:start position:0%
+o of m by n solution it's not going to
+ 
+
+00:03:56.000 --> 00:03:57.830 align:start position:0%
+o of m by n solution it's not going to
+work<00:03:56.239><c> if</c><00:03:56.319><c> we</c><00:03:56.480><c> do</c><00:03:56.640><c> it</c><00:03:56.720><c> from</c><00:03:56.959><c> the</c><00:03:57.200><c> rooms</c><00:03:57.680><c> but</c>
+
+00:03:57.830 --> 00:03:57.840 align:start position:0%
+work if we do it from the rooms but
+ 
+
+00:03:57.840 --> 00:04:00.070 align:start position:0%
+work if we do it from the rooms but
+let's<00:03:58.159><c> reverse</c><00:03:58.799><c> our</c><00:03:58.959><c> thinking</c><00:03:59.439><c> a</c><00:03:59.519><c> bit</c><00:03:59.920><c> why</c>
+
+00:04:00.070 --> 00:04:00.080 align:start position:0%
+let's reverse our thinking a bit why
+ 
+
+00:04:00.080 --> 00:04:02.550 align:start position:0%
+let's reverse our thinking a bit why
+don't<00:04:00.319><c> we</c><00:04:00.480><c> do</c><00:04:00.720><c> a</c><00:04:00.959><c> bfs</c><00:04:01.599><c> solution</c>
+
+00:04:02.550 --> 00:04:02.560 align:start position:0%
+don't we do a bfs solution
+ 
+
+00:04:02.560 --> 00:04:05.750 align:start position:0%
+don't we do a bfs solution
+from<00:04:03.120><c> the</c><00:04:03.519><c> gates</c><00:04:04.159><c> so</c><00:04:04.400><c> for</c><00:04:04.560><c> example</c><00:04:05.040><c> from</c><00:04:05.360><c> this</c>
+
+00:04:05.750 --> 00:04:05.760 align:start position:0%
+from the gates so for example from this
+ 
+
+00:04:05.760 --> 00:04:08.630 align:start position:0%
+from the gates so for example from this
+gate<00:04:06.159><c> we</c><00:04:06.319><c> can</c><00:04:06.560><c> say</c><00:04:06.799><c> okay</c><00:04:07.519><c> let's</c><00:04:07.920><c> mark</c><00:04:08.319><c> all</c>
+
+00:04:08.630 --> 00:04:08.640 align:start position:0%
+gate we can say okay let's mark all
+ 
+
+00:04:08.640 --> 00:04:11.509 align:start position:0%
+gate we can say okay let's mark all
+adjacent<00:04:09.200><c> rooms</c><00:04:09.599><c> basically</c><00:04:10.239><c> as</c><00:04:10.480><c> saying</c><00:04:10.879><c> okay</c>
+
+00:04:11.509 --> 00:04:11.519 align:start position:0%
+adjacent rooms basically as saying okay
+ 
+
+00:04:11.519 --> 00:04:13.589 align:start position:0%
+adjacent rooms basically as saying okay
+all<00:04:11.840><c> of</c><00:04:12.000><c> the</c><00:04:12.159><c> adjacent</c><00:04:12.560><c> rooms</c><00:04:12.959><c> are</c><00:04:13.280><c> one</c>
+
+00:04:13.589 --> 00:04:13.599 align:start position:0%
+all of the adjacent rooms are one
+ 
+
+00:04:13.599 --> 00:04:15.030 align:start position:0%
+all of the adjacent rooms are one
+distance<00:04:14.480><c> away</c>
+
+00:04:15.030 --> 00:04:15.040 align:start position:0%
+distance away
+ 
+
+00:04:15.040 --> 00:04:17.590 align:start position:0%
+distance away
+from<00:04:15.680><c> this</c><00:04:16.079><c> gate</c><00:04:16.400><c> and</c><00:04:16.479><c> then</c><00:04:16.799><c> let's</c><00:04:17.120><c> continue</c>
+
+00:04:17.590 --> 00:04:17.600 align:start position:0%
+from this gate and then let's continue
+ 
+
+00:04:17.600 --> 00:04:18.629 align:start position:0%
+from this gate and then let's continue
+that<00:04:17.759><c> so</c><00:04:18.000><c> from</c>
+
+00:04:18.629 --> 00:04:18.639 align:start position:0%
+that so from
+ 
+
+00:04:18.639 --> 00:04:20.150 align:start position:0%
+that so from
+you<00:04:18.799><c> know</c><00:04:18.880><c> this</c><00:04:19.120><c> room</c><00:04:19.280><c> doesn't</c><00:04:19.519><c> have</c><00:04:19.680><c> any</c>
+
+00:04:20.150 --> 00:04:20.160 align:start position:0%
+you know this room doesn't have any
+ 
+
+00:04:20.160 --> 00:04:22.230 align:start position:0%
+you know this room doesn't have any
+other<00:04:20.400><c> rooms</c><00:04:20.880><c> adjacent</c><00:04:21.359><c> to</c><00:04:21.519><c> it</c><00:04:21.600><c> but</c><00:04:21.759><c> this</c><00:04:21.919><c> room</c>
+
+00:04:22.230 --> 00:04:22.240 align:start position:0%
+other rooms adjacent to it but this room
+ 
+
+00:04:22.240 --> 00:04:22.629 align:start position:0%
+other rooms adjacent to it but this room
+does
+
+00:04:22.629 --> 00:04:22.639 align:start position:0%
+does
+ 
+
+00:04:22.639 --> 00:04:24.469 align:start position:0%
+does
+so<00:04:22.800><c> we</c><00:04:22.880><c> can</c><00:04:23.040><c> say</c><00:04:23.199><c> okay</c><00:04:23.440><c> for</c><00:04:23.680><c> this</c><00:04:23.919><c> room</c><00:04:24.160><c> it's</c>
+
+00:04:24.469 --> 00:04:24.479 align:start position:0%
+so we can say okay for this room it's
+ 
+
+00:04:24.479 --> 00:04:26.150 align:start position:0%
+so we can say okay for this room it's
+two<00:04:24.800><c> in</c><00:04:24.880><c> this</c><00:04:25.120><c> room</c><00:04:25.360><c> it's</c><00:04:25.680><c> also</c>
+
+00:04:26.150 --> 00:04:26.160 align:start position:0%
+two in this room it's also
+ 
+
+00:04:26.160 --> 00:04:29.510 align:start position:0%
+two in this room it's also
+two<00:04:26.639><c> this</c><00:04:26.880><c> is</c><00:04:27.120><c> two</c><00:04:27.360><c> positions</c><00:04:27.919><c> away</c><00:04:28.560><c> from</c><00:04:29.120><c> this</c>
+
+00:04:29.510 --> 00:04:29.520 align:start position:0%
+two this is two positions away from this
+ 
+
+00:04:29.520 --> 00:04:31.270 align:start position:0%
+two this is two positions away from this
+gate<00:04:29.840><c> and</c><00:04:29.919><c> we</c><00:04:30.080><c> continue</c><00:04:30.560><c> right</c><00:04:30.720><c> we</c><00:04:30.880><c> say</c><00:04:31.040><c> okay</c>
+
+00:04:31.270 --> 00:04:31.280 align:start position:0%
+gate and we continue right we say okay
+ 
+
+00:04:31.280 --> 00:04:33.030 align:start position:0%
+gate and we continue right we say okay
+this<00:04:32.000><c> room</c><00:04:32.240><c> is</c><00:04:32.400><c> three</c>
+
+00:04:33.030 --> 00:04:33.040 align:start position:0%
+this room is three
+ 
+
+00:04:33.040 --> 00:04:35.510 align:start position:0%
+this room is three
+and<00:04:33.360><c> continue</c><00:04:33.759><c> from</c><00:04:34.000><c> here</c><00:04:34.320><c> this</c><00:04:34.639><c> room</c><00:04:34.880><c> is</c><00:04:35.120><c> four</c>
+
+00:04:35.510 --> 00:04:35.520 align:start position:0%
+and continue from here this room is four
+ 
+
+00:04:35.520 --> 00:04:36.790 align:start position:0%
+and continue from here this room is four
+and<00:04:35.840><c> from</c><00:04:36.080><c> here</c>
+
+00:04:36.790 --> 00:04:36.800 align:start position:0%
+and from here
+ 
+
+00:04:36.800 --> 00:04:38.230 align:start position:0%
+and from here
+similarly<00:04:37.280><c> right</c><00:04:37.440><c> we'd</c><00:04:37.600><c> say</c><00:04:37.759><c> okay</c><00:04:37.919><c> this</c><00:04:38.080><c> is</c>
+
+00:04:38.230 --> 00:04:38.240 align:start position:0%
+similarly right we'd say okay this is
+ 
+
+00:04:38.240 --> 00:04:40.150 align:start position:0%
+similarly right we'd say okay this is
+three<00:04:39.040><c> this</c><00:04:39.280><c> is</c><00:04:39.600><c> four</c>
+
+00:04:40.150 --> 00:04:40.160 align:start position:0%
+three this is four
+ 
+
+00:04:40.160 --> 00:04:42.230 align:start position:0%
+three this is four
+and<00:04:40.400><c> this</c><00:04:40.560><c> is</c><00:04:40.720><c> four</c><00:04:41.040><c> right</c><00:04:41.520><c> but</c><00:04:41.919><c> is</c><00:04:42.080><c> that</c>
+
+00:04:42.230 --> 00:04:42.240 align:start position:0%
+and this is four right but is that
+ 
+
+00:04:42.240 --> 00:04:43.670 align:start position:0%
+and this is four right but is that
+actually<00:04:42.639><c> true</c><00:04:42.960><c> is</c><00:04:43.120><c> this</c><00:04:43.280><c> room</c>
+
+00:04:43.670 --> 00:04:43.680 align:start position:0%
+actually true is this room
+ 
+
+00:04:43.680 --> 00:04:45.909 align:start position:0%
+actually true is this room
+four<00:04:44.000><c> positions</c><00:04:44.479><c> away</c><00:04:44.880><c> well</c><00:04:45.040><c> we</c><00:04:45.199><c> forgot</c><00:04:45.520><c> about</c>
+
+00:04:45.909 --> 00:04:45.919 align:start position:0%
+four positions away well we forgot about
+ 
+
+00:04:45.919 --> 00:04:46.950 align:start position:0%
+four positions away well we forgot about
+this<00:04:46.479><c> gate</c>
+
+00:04:46.950 --> 00:04:46.960 align:start position:0%
+this gate
+ 
+
+00:04:46.960 --> 00:04:49.830 align:start position:0%
+this gate
+right<00:04:47.520><c> so</c><00:04:48.240><c> a</c><00:04:48.720><c> better</c><00:04:49.040><c> way</c><00:04:49.280><c> of</c><00:04:49.440><c> doing</c><00:04:49.680><c> this</c>
+
+00:04:49.830 --> 00:04:49.840 align:start position:0%
+right so a better way of doing this
+ 
+
+00:04:49.840 --> 00:04:50.909 align:start position:0%
+right so a better way of doing this
+would<00:04:50.000><c> be</c><00:04:50.240><c> to</c>
+
+00:04:50.909 --> 00:04:50.919 align:start position:0%
+would be to
+ 
+
+00:04:50.919 --> 00:04:54.150 align:start position:0%
+would be to
+simultaneously<00:04:52.320><c> do</c><00:04:52.479><c> a</c><00:04:52.639><c> bfs</c><00:04:53.360><c> from</c><00:04:53.680><c> both</c>
+
+00:04:54.150 --> 00:04:54.160 align:start position:0%
+simultaneously do a bfs from both
+ 
+
+00:04:54.160 --> 00:04:57.350 align:start position:0%
+simultaneously do a bfs from both
+gates<00:04:54.560><c> at</c><00:04:54.720><c> the</c><00:04:54.880><c> exact</c><00:04:55.440><c> same</c><00:04:55.919><c> time</c><00:04:56.560><c> so</c><00:04:57.040><c> in</c><00:04:57.199><c> that</c>
+
+00:04:57.350 --> 00:04:57.360 align:start position:0%
+gates at the exact same time so in that
+ 
+
+00:04:57.360 --> 00:04:58.870 align:start position:0%
+gates at the exact same time so in that
+case<00:04:57.680><c> if</c><00:04:57.759><c> we</c><00:04:58.000><c> ever</c><00:04:58.320><c> reach</c>
+
+00:04:58.870 --> 00:04:58.880 align:start position:0%
+case if we ever reach
+ 
+
+00:04:58.880 --> 00:05:00.550 align:start position:0%
+case if we ever reach
+a<00:04:59.040><c> position</c><00:04:59.520><c> so</c><00:04:59.680><c> let's</c><00:05:00.080><c> let's</c><00:05:00.240><c> see</c><00:05:00.400><c> what</c>
+
+00:05:00.550 --> 00:05:00.560 align:start position:0%
+a position so let's let's see what
+ 
+
+00:05:00.560 --> 00:05:02.710 align:start position:0%
+a position so let's let's see what
+happens<00:05:00.880><c> when</c><00:05:01.039><c> we</c><00:05:01.120><c> do</c><00:05:01.199><c> a</c><00:05:01.280><c> bfs</c><00:05:01.759><c> simultaneously</c>
+
+00:05:02.710 --> 00:05:02.720 align:start position:0%
+happens when we do a bfs simultaneously
+ 
+
+00:05:02.720 --> 00:05:05.270 align:start position:0%
+happens when we do a bfs simultaneously
+so<00:05:02.880><c> from</c><00:05:03.120><c> here</c><00:05:03.360><c> we're</c><00:05:03.600><c> going</c><00:05:03.680><c> to</c><00:05:03.840><c> say</c><00:05:04.800><c> this</c><00:05:05.039><c> is</c>
+
+00:05:05.270 --> 00:05:05.280 align:start position:0%
+so from here we're going to say this is
+ 
+
+00:05:05.280 --> 00:05:07.189 align:start position:0%
+so from here we're going to say this is
+one<00:05:05.600><c> these</c><00:05:05.840><c> two</c><00:05:06.000><c> are</c><00:05:06.080><c> one</c><00:05:06.320><c> position</c><00:05:06.800><c> and</c><00:05:06.960><c> this</c>
+
+00:05:07.189 --> 00:05:07.199 align:start position:0%
+one these two are one position and this
+ 
+
+00:05:07.199 --> 00:05:08.469 align:start position:0%
+one these two are one position and this
+is<00:05:07.280><c> also</c><00:05:07.520><c> one</c><00:05:07.759><c> position</c><00:05:08.160><c> now</c>
+
+00:05:08.469 --> 00:05:08.479 align:start position:0%
+is also one position now
+ 
+
+00:05:08.479 --> 00:05:10.310 align:start position:0%
+is also one position now
+from<00:05:08.720><c> all</c><00:05:08.880><c> of</c><00:05:09.039><c> our</c><00:05:09.360><c> ones</c><00:05:09.919><c> we're</c><00:05:10.080><c> going</c><00:05:10.160><c> to</c>
+
+00:05:10.310 --> 00:05:10.320 align:start position:0%
+from all of our ones we're going to
+ 
+
+00:05:10.320 --> 00:05:11.990 align:start position:0%
+from all of our ones we're going to
+continue<00:05:10.720><c> the</c><00:05:10.880><c> bfs</c><00:05:11.440><c> right</c><00:05:11.600><c> so</c>
+
+00:05:11.990 --> 00:05:12.000 align:start position:0%
+continue the bfs right so
+ 
+
+00:05:12.000 --> 00:05:14.469 align:start position:0%
+continue the bfs right so
+from<00:05:12.240><c> this</c><00:05:12.400><c> one</c><00:05:12.639><c> we'll</c><00:05:12.880><c> say</c><00:05:13.759><c> these</c><00:05:14.080><c> rooms</c><00:05:14.400><c> are</c>
+
+00:05:14.469 --> 00:05:14.479 align:start position:0%
+from this one we'll say these rooms are
+ 
+
+00:05:14.479 --> 00:05:16.230 align:start position:0%
+from this one we'll say these rooms are
+two<00:05:14.720><c> away</c><00:05:15.039><c> from</c><00:05:15.199><c> this</c><00:05:15.360><c> one</c><00:05:15.600><c> we'll</c><00:05:15.759><c> say</c><00:05:16.000><c> this</c>
+
+00:05:16.230 --> 00:05:16.240 align:start position:0%
+two away from this one we'll say this
+ 
+
+00:05:16.240 --> 00:05:16.710 align:start position:0%
+two away from this one we'll say this
+room
+
+00:05:16.710 --> 00:05:16.720 align:start position:0%
+room
+ 
+
+00:05:16.720 --> 00:05:19.749 align:start position:0%
+room
+is<00:05:16.880><c> two</c><00:05:17.120><c> away</c><00:05:17.440><c> right</c><00:05:18.000><c> now</c><00:05:18.479><c> from</c><00:05:19.120><c> this</c>
+
+00:05:19.749 --> 00:05:19.759 align:start position:0%
+is two away right now from this
+ 
+
+00:05:19.759 --> 00:05:21.590 align:start position:0%
+is two away right now from this
+uh<00:05:20.080><c> room</c><00:05:20.400><c> right</c><00:05:20.560><c> this</c><00:05:20.720><c> is</c><00:05:20.880><c> two</c><00:05:21.039><c> away</c><00:05:21.280><c> we're</c><00:05:21.440><c> not</c>
+
+00:05:21.590 --> 00:05:21.600 align:start position:0%
+uh room right this is two away we're not
+ 
+
+00:05:21.600 --> 00:05:23.430 align:start position:0%
+uh room right this is two away we're not
+gonna<00:05:21.840><c> go</c><00:05:22.240><c> to</c><00:05:22.400><c> this</c><00:05:22.639><c> position</c><00:05:23.039><c> and</c><00:05:23.120><c> say</c><00:05:23.280><c> that</c>
+
+00:05:23.430 --> 00:05:23.440 align:start position:0%
+gonna go to this position and say that
+ 
+
+00:05:23.440 --> 00:05:25.430 align:start position:0%
+gonna go to this position and say that
+it's<00:05:23.759><c> three</c><00:05:24.240><c> positions</c><00:05:24.720><c> away</c><00:05:25.039><c> because</c><00:05:25.199><c> with</c>
+
+00:05:25.430 --> 00:05:25.440 align:start position:0%
+it's three positions away because with
+ 
+
+00:05:25.440 --> 00:05:27.029 align:start position:0%
+it's three positions away because with
+this<00:05:25.600><c> has</c><00:05:25.759><c> already</c><00:05:26.160><c> been</c><00:05:26.400><c> visited</c>
+
+00:05:27.029 --> 00:05:27.039 align:start position:0%
+this has already been visited
+ 
+
+00:05:27.039 --> 00:05:29.110 align:start position:0%
+this has already been visited
+we've<00:05:27.280><c> already</c><00:05:27.759><c> found</c><00:05:28.080><c> the</c><00:05:28.240><c> minimum</c><00:05:28.639><c> distance</c>
+
+00:05:29.110 --> 00:05:29.120 align:start position:0%
+we've already found the minimum distance
+ 
+
+00:05:29.120 --> 00:05:30.310 align:start position:0%
+we've already found the minimum distance
+that<00:05:29.280><c> this</c><00:05:29.520><c> is</c><00:05:29.680><c> away</c>
+
+00:05:30.310 --> 00:05:30.320 align:start position:0%
+that this is away
+ 
+
+00:05:30.320 --> 00:05:33.270 align:start position:0%
+that this is away
+from<00:05:30.639><c> a</c><00:05:30.800><c> bfs</c><00:05:31.440><c> right</c><00:05:31.680><c> so</c><00:05:31.840><c> every</c><00:05:32.080><c> time</c><00:05:32.320><c> we</c><00:05:32.479><c> expand</c>
+
+00:05:33.270 --> 00:05:33.280 align:start position:0%
+from a bfs right so every time we expand
+ 
+
+00:05:33.280 --> 00:05:34.070 align:start position:0%
+from a bfs right so every time we expand
+one<00:05:33.600><c> layer</c>
+
+00:05:34.070 --> 00:05:34.080 align:start position:0%
+one layer
+ 
+
+00:05:34.080 --> 00:05:36.230 align:start position:0%
+one layer
+we're<00:05:34.320><c> saying</c><00:05:34.560><c> okay</c><00:05:34.880><c> first</c><00:05:35.199><c> let's</c><00:05:35.440><c> find</c><00:05:36.000><c> all</c>
+
+00:05:36.230 --> 00:05:36.240 align:start position:0%
+we're saying okay first let's find all
+ 
+
+00:05:36.240 --> 00:05:37.270 align:start position:0%
+we're saying okay first let's find all
+the<00:05:36.479><c> rooms</c>
+
+00:05:37.270 --> 00:05:37.280 align:start position:0%
+the rooms
+ 
+
+00:05:37.280 --> 00:05:40.550 align:start position:0%
+the rooms
+one<00:05:37.840><c> distance</c><00:05:38.560><c> away</c><00:05:39.039><c> from</c><00:05:39.280><c> a</c><00:05:39.440><c> gate</c><00:05:40.000><c> next</c><00:05:40.320><c> let's</c>
+
+00:05:40.550 --> 00:05:40.560 align:start position:0%
+one distance away from a gate next let's
+ 
+
+00:05:40.560 --> 00:05:40.950 align:start position:0%
+one distance away from a gate next let's
+find
+
+00:05:40.950 --> 00:05:40.960 align:start position:0%
+find
+ 
+
+00:05:40.960 --> 00:05:43.510 align:start position:0%
+find
+all<00:05:41.120><c> the</c><00:05:41.280><c> rooms</c><00:05:41.840><c> two</c><00:05:42.160><c> distance</c><00:05:42.880><c> away</c><00:05:43.199><c> from</c><00:05:43.360><c> the</c>
+
+00:05:43.510 --> 00:05:43.520 align:start position:0%
+all the rooms two distance away from the
+ 
+
+00:05:43.520 --> 00:05:43.990 align:start position:0%
+all the rooms two distance away from the
+gate
+
+00:05:43.990 --> 00:05:44.000 align:start position:0%
+gate
+ 
+
+00:05:44.000 --> 00:05:46.230 align:start position:0%
+gate
+and<00:05:44.400><c> three</c><00:05:44.800><c> and</c><00:05:44.960><c> we</c><00:05:45.120><c> keep</c><00:05:45.360><c> doing</c><00:05:45.600><c> that</c><00:05:45.840><c> until</c>
+
+00:05:46.230 --> 00:05:46.240 align:start position:0%
+and three and we keep doing that until
+ 
+
+00:05:46.240 --> 00:05:47.189 align:start position:0%
+and three and we keep doing that until
+every<00:05:46.560><c> single</c>
+
+00:05:47.189 --> 00:05:47.199 align:start position:0%
+every single
+ 
+
+00:05:47.199 --> 00:05:49.510 align:start position:0%
+every single
+position<00:05:47.919><c> in</c><00:05:48.160><c> our</c><00:05:48.400><c> grid</c><00:05:48.720><c> has</c><00:05:48.960><c> already</c><00:05:49.280><c> been</c>
+
+00:05:49.510 --> 00:05:49.520 align:start position:0%
+position in our grid has already been
+ 
+
+00:05:49.520 --> 00:05:50.870 align:start position:0%
+position in our grid has already been
+visited<00:05:50.160><c> or</c><00:05:50.479><c> we</c>
+
+00:05:50.870 --> 00:05:50.880 align:start position:0%
+visited or we
+ 
+
+00:05:50.880 --> 00:05:52.550 align:start position:0%
+visited or we
+basically<00:05:51.280><c> cannot</c><00:05:51.600><c> continue</c><00:05:52.160><c> and</c><00:05:52.240><c> we</c><00:05:52.400><c> know</c>
+
+00:05:52.550 --> 00:05:52.560 align:start position:0%
+basically cannot continue and we know
+ 
+
+00:05:52.560 --> 00:05:54.870 align:start position:0%
+basically cannot continue and we know
+bfs<00:05:53.120><c> solutions</c><00:05:53.600><c> are</c><00:05:53.759><c> implemented</c><00:05:54.240><c> with</c><00:05:54.400><c> a</c><00:05:54.560><c> q</c>
+
+00:05:54.870 --> 00:05:54.880 align:start position:0%
+bfs solutions are implemented with a q
+ 
+
+00:05:54.880 --> 00:05:55.749 align:start position:0%
+bfs solutions are implemented with a q
+so<00:05:55.039><c> once</c><00:05:55.280><c> our</c><00:05:55.440><c> q</c>
+
+00:05:55.749 --> 00:05:55.759 align:start position:0%
+so once our q
+ 
+
+00:05:55.759 --> 00:05:58.070 align:start position:0%
+so once our q
+is<00:05:55.919><c> empty</c><00:05:56.400><c> that's</c><00:05:56.639><c> how</c><00:05:56.800><c> we</c><00:05:56.880><c> know</c><00:05:57.120><c> we</c><00:05:57.199><c> can</c><00:05:57.440><c> stop</c>
+
+00:05:58.070 --> 00:05:58.080 align:start position:0%
+is empty that's how we know we can stop
+ 
+
+00:05:58.080 --> 00:05:59.670 align:start position:0%
+is empty that's how we know we can stop
+so<00:05:58.319><c> let's</c><00:05:58.560><c> just</c><00:05:58.720><c> continue</c><00:05:59.120><c> a</c><00:05:59.199><c> little</c><00:05:59.360><c> bit</c><00:05:59.520><c> more</c>
+
+00:05:59.670 --> 00:05:59.680 align:start position:0%
+so let's just continue a little bit more
+ 
+
+00:05:59.680 --> 00:06:00.710 align:start position:0%
+so let's just continue a little bit more
+so<00:05:59.840><c> from</c><00:06:00.080><c> this</c><00:06:00.400><c> to</c>
+
+00:06:00.710 --> 00:06:00.720 align:start position:0%
+so from this to
+ 
+
+00:06:00.720 --> 00:06:02.790 align:start position:0%
+so from this to
+the<00:06:00.880><c> only</c><00:06:01.199><c> unvisited</c><00:06:02.000><c> neighbor</c><00:06:02.319><c> is</c><00:06:02.479><c> this</c><00:06:02.639><c> one</c>
+
+00:06:02.790 --> 00:06:02.800 align:start position:0%
+the only unvisited neighbor is this one
+ 
+
+00:06:02.800 --> 00:06:03.909 align:start position:0%
+the only unvisited neighbor is this one
+so<00:06:03.039><c> this</c><00:06:03.199><c> is</c><00:06:03.360><c> three</c>
+
+00:06:03.909 --> 00:06:03.919 align:start position:0%
+so this is three
+ 
+
+00:06:03.919 --> 00:06:06.950 align:start position:0%
+so this is three
+positions<00:06:04.319><c> away</c><00:06:04.960><c> this</c><00:06:05.199><c> one</c><00:06:05.680><c> is</c><00:06:06.000><c> also</c><00:06:06.479><c> here</c>
+
+00:06:06.950 --> 00:06:06.960 align:start position:0%
+positions away this one is also here
+ 
+
+00:06:06.960 --> 00:06:08.870 align:start position:0%
+positions away this one is also here
+so<00:06:07.120><c> now</c><00:06:07.280><c> we're</c><00:06:07.440><c> going</c><00:06:07.520><c> to</c><00:06:07.680><c> do</c><00:06:07.840><c> a</c><00:06:07.919><c> bfs</c><00:06:08.479><c> from</c><00:06:08.720><c> the</c>
+
+00:06:08.870 --> 00:06:08.880 align:start position:0%
+so now we're going to do a bfs from the
+ 
+
+00:06:08.880 --> 00:06:10.230 align:start position:0%
+so now we're going to do a bfs from the
+remaining<00:06:09.520><c> threes</c>
+
+00:06:10.230 --> 00:06:10.240 align:start position:0%
+remaining threes
+ 
+
+00:06:10.240 --> 00:06:12.550 align:start position:0%
+remaining threes
+we<00:06:10.400><c> can</c><00:06:10.560><c> see</c><00:06:11.120><c> only</c><00:06:11.440><c> this</c><00:06:11.759><c> three</c><00:06:12.080><c> actually</c><00:06:12.400><c> has</c>
+
+00:06:12.550 --> 00:06:12.560 align:start position:0%
+we can see only this three actually has
+ 
+
+00:06:12.560 --> 00:06:13.350 align:start position:0%
+we can see only this three actually has
+a<00:06:12.720><c> neighbor</c>
+
+00:06:13.350 --> 00:06:13.360 align:start position:0%
+a neighbor
+ 
+
+00:06:13.360 --> 00:06:15.430 align:start position:0%
+a neighbor
+so<00:06:13.759><c> we'll</c><00:06:14.000><c> say</c><00:06:14.240><c> this</c><00:06:14.560><c> one</c><00:06:14.880><c> is</c><00:06:15.039><c> going</c><00:06:15.120><c> to</c><00:06:15.199><c> be</c>
+
+00:06:15.430 --> 00:06:15.440 align:start position:0%
+so we'll say this one is going to be
+ 
+
+00:06:15.440 --> 00:06:17.110 align:start position:0%
+so we'll say this one is going to be
+four<00:06:15.840><c> and</c><00:06:15.919><c> when</c><00:06:16.080><c> you</c><00:06:16.160><c> take</c><00:06:16.319><c> a</c><00:06:16.479><c> look</c><00:06:16.720><c> at</c><00:06:16.880><c> the</c>
+
+00:06:17.110 --> 00:06:17.120 align:start position:0%
+four and when you take a look at the
+ 
+
+00:06:17.120 --> 00:06:17.510 align:start position:0%
+four and when you take a look at the
+actual
+
+00:06:17.510 --> 00:06:17.520 align:start position:0%
+actual
+ 
+
+00:06:17.520 --> 00:06:19.990 align:start position:0%
+actual
+output<00:06:17.840><c> that</c><00:06:18.000><c> they</c><00:06:18.160><c> built</c><00:06:18.720><c> our</c><00:06:19.120><c> solution</c>
+
+00:06:19.990 --> 00:06:20.000 align:start position:0%
+output that they built our solution
+ 
+
+00:06:20.000 --> 00:06:21.830 align:start position:0%
+output that they built our solution
+exactly<00:06:20.560><c> matches</c><00:06:20.880><c> what</c><00:06:21.039><c> they</c><00:06:21.280><c> did</c><00:06:21.520><c> and</c><00:06:21.680><c> we</c>
+
+00:06:21.830 --> 00:06:21.840 align:start position:0%
+exactly matches what they did and we
+ 
+
+00:06:21.840 --> 00:06:23.749 align:start position:0%
+exactly matches what they did and we
+didn't<00:06:22.080><c> have</c><00:06:22.240><c> to</c><00:06:22.479><c> revisit</c><00:06:23.039><c> the</c><00:06:23.199><c> same</c><00:06:23.440><c> node</c>
+
+00:06:23.749 --> 00:06:23.759 align:start position:0%
+didn't have to revisit the same node
+ 
+
+00:06:23.759 --> 00:06:24.309 align:start position:0%
+didn't have to revisit the same node
+twice
+
+00:06:24.309 --> 00:06:24.319 align:start position:0%
+twice
+ 
+
+00:06:24.319 --> 00:06:26.550 align:start position:0%
+twice
+all<00:06:24.479><c> we</c><00:06:24.639><c> had</c><00:06:24.880><c> to</c><00:06:24.960><c> do</c><00:06:25.199><c> was</c><00:06:25.440><c> initialize</c><00:06:26.240><c> our</c>
+
+00:06:26.550 --> 00:06:26.560 align:start position:0%
+all we had to do was initialize our
+ 
+
+00:06:26.560 --> 00:06:27.990 align:start position:0%
+all we had to do was initialize our
+queue<00:06:27.199><c> with</c><00:06:27.520><c> the</c>
+
+00:06:27.990 --> 00:06:28.000 align:start position:0%
+queue with the
+ 
+
+00:06:28.000 --> 00:06:31.270 align:start position:0%
+queue with the
+two<00:06:28.479><c> initial</c><00:06:28.960><c> positions</c><00:06:29.759><c> for</c><00:06:30.160><c> the</c><00:06:30.560><c> gates</c>
+
+00:06:31.270 --> 00:06:31.280 align:start position:0%
+two initial positions for the gates
+ 
+
+00:06:31.280 --> 00:06:33.670 align:start position:0%
+two initial positions for the gates
+and<00:06:31.440><c> then</c><00:06:31.759><c> expanding</c><00:06:32.560><c> outwardly</c><00:06:33.120><c> basically</c>
+
+00:06:33.670 --> 00:06:33.680 align:start position:0%
+and then expanding outwardly basically
+ 
+
+00:06:33.680 --> 00:06:35.909 align:start position:0%
+and then expanding outwardly basically
+incrementing<00:06:34.400><c> the</c><00:06:34.639><c> distance</c><00:06:35.199><c> every</c><00:06:35.440><c> time</c><00:06:35.680><c> we</c>
+
+00:06:35.909 --> 00:06:35.919 align:start position:0%
+incrementing the distance every time we
+ 
+
+00:06:35.919 --> 00:06:36.790 align:start position:0%
+incrementing the distance every time we
+complete<00:06:36.479><c> a</c>
+
+00:06:36.790 --> 00:06:36.800 align:start position:0%
+complete a
+ 
+
+00:06:36.800 --> 00:06:40.550 align:start position:0%
+complete a
+full<00:06:37.600><c> layer</c><00:06:38.000><c> of</c><00:06:38.240><c> our</c><00:06:38.400><c> bfs</c><00:06:39.360><c> uh</c><00:06:39.680><c> traversal</c>
+
+00:06:40.550 --> 00:06:40.560 align:start position:0%
+full layer of our bfs uh traversal
+ 
+
+00:06:40.560 --> 00:06:42.390 align:start position:0%
+full layer of our bfs uh traversal
+and<00:06:40.880><c> that</c><00:06:41.120><c> actually</c><00:06:41.440><c> led</c><00:06:41.600><c> to</c><00:06:41.840><c> us</c><00:06:42.000><c> having</c><00:06:42.240><c> a</c>
+
+00:06:42.390 --> 00:06:42.400 align:start position:0%
+and that actually led to us having a
+ 
+
+00:06:42.400 --> 00:06:43.670 align:start position:0%
+and that actually led to us having a
+time<00:06:42.639><c> complexity</c><00:06:43.280><c> of</c>
+
+00:06:43.670 --> 00:06:43.680 align:start position:0%
+time complexity of
+ 
+
+00:06:43.680 --> 00:06:46.230 align:start position:0%
+time complexity of
+m<00:06:44.240><c> by</c><00:06:44.560><c> n</c><00:06:44.720><c> we're</c><00:06:44.960><c> also</c><00:06:45.199><c> going</c><00:06:45.280><c> to</c><00:06:45.360><c> have</c><00:06:45.840><c> that</c><00:06:46.080><c> as</c>
+
+00:06:46.230 --> 00:06:46.240 align:start position:0%
+m by n we're also going to have that as
+ 
+
+00:06:46.240 --> 00:06:47.749 align:start position:0%
+m by n we're also going to have that as
+the<00:06:46.560><c> memory</c><00:06:46.880><c> complexity</c><00:06:47.360><c> because</c><00:06:47.600><c> we're</c>
+
+00:06:47.749 --> 00:06:47.759 align:start position:0%
+the memory complexity because we're
+ 
+
+00:06:47.759 --> 00:06:49.189 align:start position:0%
+the memory complexity because we're
+going<00:06:47.840><c> to</c><00:06:47.919><c> have</c><00:06:48.000><c> a</c><00:06:48.160><c> visit</c><00:06:48.560><c> set</c><00:06:48.800><c> to</c><00:06:48.880><c> make</c><00:06:49.039><c> sure</c>
+
+00:06:49.189 --> 00:06:49.199 align:start position:0%
+going to have a visit set to make sure
+ 
+
+00:06:49.199 --> 00:06:51.110 align:start position:0%
+going to have a visit set to make sure
+we<00:06:49.360><c> don't</c><00:06:49.520><c> visit</c><00:06:49.840><c> the</c><00:06:49.919><c> same</c><00:06:50.160><c> position</c><00:06:50.560><c> twice</c>
+
+00:06:51.110 --> 00:06:51.120 align:start position:0%
+we don't visit the same position twice
+ 
+
+00:06:51.120 --> 00:06:52.469 align:start position:0%
+we don't visit the same position twice
+but<00:06:51.280><c> once</c><00:06:51.520><c> you</c><00:06:51.599><c> kind</c><00:06:51.759><c> of</c><00:06:51.840><c> know</c><00:06:52.080><c> that</c><00:06:52.160><c> this</c><00:06:52.319><c> is</c>
+
+00:06:52.469 --> 00:06:52.479 align:start position:0%
+but once you kind of know that this is
+ 
+
+00:06:52.479 --> 00:06:54.710 align:start position:0%
+but once you kind of know that this is
+going<00:06:52.560><c> to</c><00:06:52.639><c> be</c><00:06:52.720><c> a</c><00:06:52.800><c> bfs</c><00:06:53.360><c> from</c><00:06:53.599><c> multiple</c><00:06:54.160><c> sources</c>
+
+00:06:54.710 --> 00:06:54.720 align:start position:0%
+going to be a bfs from multiple sources
+ 
+
+00:06:54.720 --> 00:06:56.550 align:start position:0%
+going to be a bfs from multiple sources
+at<00:06:54.880><c> the</c><00:06:54.960><c> same</c><00:06:55.280><c> time</c><00:06:55.599><c> implementing</c><00:06:56.080><c> the</c><00:06:56.240><c> code</c>
+
+00:06:56.550 --> 00:06:56.560 align:start position:0%
+at the same time implementing the code
+ 
+
+00:06:56.560 --> 00:06:57.990 align:start position:0%
+at the same time implementing the code
+is<00:06:56.720><c> pretty</c><00:06:56.960><c> straightforward</c><00:06:57.680><c> if</c><00:06:57.759><c> you</c><00:06:57.919><c> know</c>
+
+00:06:57.990 --> 00:06:58.000 align:start position:0%
+is pretty straightforward if you know
+ 
+
+00:06:58.000 --> 00:06:59.510 align:start position:0%
+is pretty straightforward if you know
+how<00:06:58.160><c> to</c><00:06:58.240><c> do</c><00:06:58.400><c> bfs</c>
+
+00:06:59.510 --> 00:06:59.520 align:start position:0%
+how to do bfs
+ 
+
+00:06:59.520 --> 00:07:01.749 align:start position:0%
+how to do bfs
+so<00:06:59.759><c> first</c><00:07:00.080><c> things</c><00:07:00.479><c> first</c><00:07:00.800><c> let's</c><00:07:01.280><c> get</c><00:07:01.520><c> the</c>
+
+00:07:01.749 --> 00:07:01.759 align:start position:0%
+so first things first let's get the
+ 
+
+00:07:01.759 --> 00:07:03.670 align:start position:0%
+so first things first let's get the
+dimensions<00:07:02.400><c> of</c><00:07:02.560><c> our</c><00:07:02.720><c> grid</c><00:07:02.960><c> so</c><00:07:03.120><c> the</c><00:07:03.199><c> number</c><00:07:03.440><c> of</c>
+
+00:07:03.670 --> 00:07:03.680 align:start position:0%
+dimensions of our grid so the number of
+ 
+
+00:07:03.680 --> 00:07:05.670 align:start position:0%
+dimensions of our grid so the number of
+rows<00:07:04.080><c> and</c><00:07:04.160><c> the</c><00:07:04.319><c> number</c><00:07:04.560><c> of</c><00:07:04.720><c> columns</c><00:07:05.199><c> i</c><00:07:05.280><c> usually</c>
+
+00:07:05.670 --> 00:07:05.680 align:start position:0%
+rows and the number of columns i usually
+ 
+
+00:07:05.680 --> 00:07:07.270 align:start position:0%
+rows and the number of columns i usually
+like<00:07:05.919><c> to</c><00:07:06.000><c> do</c><00:07:06.160><c> this</c><00:07:06.400><c> at</c><00:07:06.560><c> the</c><00:07:06.639><c> beginning</c>
+
+00:07:07.270 --> 00:07:07.280 align:start position:0%
+like to do this at the beginning
+ 
+
+00:07:07.280 --> 00:07:09.830 align:start position:0%
+like to do this at the beginning
+so<00:07:08.319><c> and</c><00:07:08.479><c> we're</c><00:07:08.720><c> also</c><00:07:08.880><c> going</c><00:07:08.960><c> to</c><00:07:09.120><c> have</c><00:07:09.199><c> a</c><00:07:09.360><c> visit</c>
+
+00:07:09.830 --> 00:07:09.840 align:start position:0%
+so and we're also going to have a visit
+ 
+
+00:07:09.840 --> 00:07:10.629 align:start position:0%
+so and we're also going to have a visit
+set<00:07:10.160><c> that</c>
+
+00:07:10.629 --> 00:07:10.639 align:start position:0%
+set that
+ 
+
+00:07:10.639 --> 00:07:11.670 align:start position:0%
+set that
+is<00:07:10.800><c> going</c><00:07:10.880><c> to</c><00:07:10.960><c> make</c><00:07:11.120><c> sure</c><00:07:11.280><c> that</c><00:07:11.360><c> we</c><00:07:11.520><c> don't</c>
+
+00:07:11.670 --> 00:07:11.680 align:start position:0%
+is going to make sure that we don't
+ 
+
+00:07:11.680 --> 00:07:13.990 align:start position:0%
+is going to make sure that we don't
+visit<00:07:11.919><c> the</c><00:07:12.080><c> same</c><00:07:12.319><c> position</c><00:07:12.880><c> multiple</c><00:07:13.280><c> times</c>
+
+00:07:13.990 --> 00:07:14.000 align:start position:0%
+visit the same position multiple times
+ 
+
+00:07:14.000 --> 00:07:16.390 align:start position:0%
+visit the same position multiple times
+and<00:07:14.080><c> we're</c><00:07:14.319><c> also</c><00:07:14.560><c> going</c><00:07:14.720><c> to</c><00:07:14.800><c> have</c><00:07:15.199><c> a</c><00:07:15.520><c> q</c><00:07:16.160><c> which</c>
+
+00:07:16.390 --> 00:07:16.400 align:start position:0%
+and we're also going to have a q which
+ 
+
+00:07:16.400 --> 00:07:17.029 align:start position:0%
+and we're also going to have a q which
+initially
+
+00:07:17.029 --> 00:07:17.039 align:start position:0%
+initially
+ 
+
+00:07:17.039 --> 00:07:19.749 align:start position:0%
+initially
+let's<00:07:17.599><c> uh</c><00:07:18.240><c> set</c><00:07:18.639><c> to</c><00:07:18.800><c> being</c><00:07:19.199><c> empty</c><00:07:19.440><c> but</c><00:07:19.599><c> we're</c>
+
+00:07:19.749 --> 00:07:19.759 align:start position:0%
+let's uh set to being empty but we're
+ 
+
+00:07:19.759 --> 00:07:21.270 align:start position:0%
+let's uh set to being empty but we're
+gonna<00:07:19.919><c> initialize</c><00:07:20.479><c> that</c><00:07:20.720><c> with</c><00:07:20.960><c> the</c>
+
+00:07:21.270 --> 00:07:21.280 align:start position:0%
+gonna initialize that with the
+ 
+
+00:07:21.280 --> 00:07:23.909 align:start position:0%
+gonna initialize that with the
+gates<00:07:22.160><c> first</c><00:07:22.400><c> of</c><00:07:22.560><c> all</c><00:07:22.720><c> right</c><00:07:23.120><c> so</c><00:07:23.280><c> now</c><00:07:23.440><c> let's</c><00:07:23.680><c> go</c>
+
+00:07:23.909 --> 00:07:23.919 align:start position:0%
+gates first of all right so now let's go
+ 
+
+00:07:23.919 --> 00:07:25.270 align:start position:0%
+gates first of all right so now let's go
+through<00:07:24.160><c> every</c><00:07:24.319><c> single</c><00:07:24.639><c> position</c><00:07:25.039><c> and</c>
+
+00:07:25.270 --> 00:07:25.280 align:start position:0%
+through every single position and
+ 
+
+00:07:25.280 --> 00:07:26.390 align:start position:0%
+through every single position and
+actually<00:07:25.599><c> initialize</c>
+
+00:07:26.390 --> 00:07:26.400 align:start position:0%
+actually initialize
+ 
+
+00:07:26.400 --> 00:07:28.230 align:start position:0%
+actually initialize
+our<00:07:27.120><c> cue</c><00:07:27.440><c> right</c><00:07:27.599><c> and</c><00:07:27.680><c> we</c><00:07:27.840><c> know</c><00:07:28.000><c> we're</c><00:07:28.080><c> just</c>
+
+00:07:28.230 --> 00:07:28.240 align:start position:0%
+our cue right and we know we're just
+ 
+
+00:07:28.240 --> 00:07:30.070 align:start position:0%
+our cue right and we know we're just
+gonna<00:07:28.400><c> do</c><00:07:28.560><c> that</c><00:07:28.800><c> with</c><00:07:29.039><c> the</c><00:07:29.360><c> gate</c><00:07:29.680><c> so</c><00:07:29.919><c> we're</c>
+
+00:07:30.070 --> 00:07:30.080 align:start position:0%
+gonna do that with the gate so we're
+ 
+
+00:07:30.080 --> 00:07:32.230 align:start position:0%
+gonna do that with the gate so we're
+going<00:07:30.160><c> to</c><00:07:30.319><c> go</c><00:07:30.560><c> through</c><00:07:30.720><c> the</c><00:07:30.880><c> entire</c><00:07:31.360><c> grid</c>
+
+00:07:32.230 --> 00:07:32.240 align:start position:0%
+going to go through the entire grid
+ 
+
+00:07:32.240 --> 00:07:35.029 align:start position:0%
+going to go through the entire grid
+so<00:07:32.560><c> iterating</c><00:07:33.039><c> over</c><00:07:33.280><c> the</c><00:07:33.599><c> entire</c><00:07:34.080><c> grid</c><00:07:34.880><c> and</c>
+
+00:07:35.029 --> 00:07:35.039 align:start position:0%
+so iterating over the entire grid and
+ 
+
+00:07:35.039 --> 00:07:36.309 align:start position:0%
+so iterating over the entire grid and
+even<00:07:35.199><c> though</c><00:07:35.360><c> we're</c><00:07:35.520><c> doing</c><00:07:35.759><c> this</c><00:07:36.000><c> it's</c><00:07:36.160><c> not</c>
+
+00:07:36.309 --> 00:07:36.319 align:start position:0%
+even though we're doing this it's not
+ 
+
+00:07:36.319 --> 00:07:37.830 align:start position:0%
+even though we're doing this it's not
+actually<00:07:36.639><c> going</c><00:07:36.720><c> to</c><00:07:36.880><c> change</c><00:07:37.199><c> the</c><00:07:37.440><c> overall</c>
+
+00:07:37.830 --> 00:07:37.840 align:start position:0%
+actually going to change the overall
+ 
+
+00:07:37.840 --> 00:07:39.029 align:start position:0%
+actually going to change the overall
+time<00:07:38.000><c> complexity</c><00:07:38.479><c> so</c><00:07:38.639><c> we're</c><00:07:38.720><c> going</c><00:07:38.800><c> to</c><00:07:38.880><c> go</c>
+
+00:07:39.029 --> 00:07:39.039 align:start position:0%
+time complexity so we're going to go
+ 
+
+00:07:39.039 --> 00:07:40.150 align:start position:0%
+time complexity so we're going to go
+through<00:07:39.199><c> every</c><00:07:39.440><c> position</c>
+
+00:07:40.150 --> 00:07:40.160 align:start position:0%
+through every position
+ 
+
+00:07:40.160 --> 00:07:43.670 align:start position:0%
+through every position
+if<00:07:40.800><c> rooms</c><00:07:41.520><c> at</c><00:07:41.680><c> this</c><00:07:41.919><c> position</c><00:07:42.720><c> is</c><00:07:42.880><c> equal</c><00:07:43.280><c> to</c>
+
+00:07:43.670 --> 00:07:43.680 align:start position:0%
+if rooms at this position is equal to
+ 
+
+00:07:43.680 --> 00:07:46.790 align:start position:0%
+if rooms at this position is equal to
+a<00:07:44.080><c> gate</c><00:07:44.400><c> meaning</c><00:07:44.800><c> it's</c><00:07:45.039><c> equal</c><00:07:45.360><c> to</c><00:07:45.599><c> a</c><00:07:45.919><c> zero</c>
+
+00:07:46.790 --> 00:07:46.800 align:start position:0%
+a gate meaning it's equal to a zero
+ 
+
+00:07:46.800 --> 00:07:48.390 align:start position:0%
+a gate meaning it's equal to a zero
+then<00:07:47.039><c> we're</c><00:07:47.360><c> going</c><00:07:47.440><c> to</c><00:07:47.599><c> add</c><00:07:47.759><c> it</c><00:07:47.840><c> to</c><00:07:48.000><c> our</c><00:07:48.160><c> queue</c>
+
+00:07:48.390 --> 00:07:48.400 align:start position:0%
+then we're going to add it to our queue
+ 
+
+00:07:48.400 --> 00:07:50.950 align:start position:0%
+then we're going to add it to our queue
+so<00:07:48.560><c> we're</c><00:07:48.720><c> going</c><00:07:48.720><c> to</c><00:07:48.800><c> say</c><00:07:49.039><c> q</c><00:07:49.360><c> dot</c><00:07:49.759><c> append</c>
+
+00:07:50.950 --> 00:07:50.960 align:start position:0%
+so we're going to say q dot append
+ 
+
+00:07:50.960 --> 00:07:54.309 align:start position:0%
+so we're going to say q dot append
+this<00:07:51.599><c> position</c><00:07:52.639><c> and</c><00:07:53.039><c> let's</c><00:07:53.280><c> make</c><00:07:53.520><c> sure</c><00:07:53.759><c> to</c><00:07:54.000><c> add</c>
+
+00:07:54.309 --> 00:07:54.319 align:start position:0%
+this position and let's make sure to add
+ 
+
+00:07:54.319 --> 00:07:54.950 align:start position:0%
+this position and let's make sure to add
+it<00:07:54.479><c> to</c><00:07:54.639><c> the</c>
+
+00:07:54.950 --> 00:07:54.960 align:start position:0%
+it to the
+ 
+
+00:07:54.960 --> 00:07:57.029 align:start position:0%
+it to the
+visit<00:07:55.360><c> set</c><00:07:56.160><c> because</c><00:07:56.400><c> we</c><00:07:56.560><c> don't</c><00:07:56.720><c> want</c><00:07:56.879><c> to</c><00:07:56.960><c> have</c>
+
+00:07:57.029 --> 00:07:57.039 align:start position:0%
+visit set because we don't want to have
+ 
+
+00:07:57.039 --> 00:07:59.110 align:start position:0%
+visit set because we don't want to have
+to<00:07:57.120><c> visit</c><00:07:57.440><c> this</c><00:07:57.599><c> same</c><00:07:57.840><c> position</c><00:07:58.319><c> twice</c>
+
+00:07:59.110 --> 00:07:59.120 align:start position:0%
+to visit this same position twice
+ 
+
+00:07:59.120 --> 00:08:01.189 align:start position:0%
+to visit this same position twice
+and<00:07:59.280><c> now</c><00:07:59.440><c> we</c><00:07:59.599><c> can</c><00:07:59.840><c> actually</c><00:08:00.160><c> start</c><00:08:00.479><c> doing</c><00:08:00.960><c> our</c>
+
+00:08:01.189 --> 00:08:01.199 align:start position:0%
+and now we can actually start doing our
+ 
+
+00:08:01.199 --> 00:08:03.189 align:start position:0%
+and now we can actually start doing our
+bfs<00:08:01.759><c> so</c><00:08:02.000><c> initially</c><00:08:02.400><c> the</c><00:08:02.560><c> distance</c><00:08:03.039><c> is</c><00:08:03.120><c> going</c>
+
+00:08:03.189 --> 00:08:03.199 align:start position:0%
+bfs so initially the distance is going
+ 
+
+00:08:03.199 --> 00:08:04.469 align:start position:0%
+bfs so initially the distance is going
+to<00:08:03.280><c> be</c><00:08:03.520><c> zero</c>
+
+00:08:04.469 --> 00:08:04.479 align:start position:0%
+to be zero
+ 
+
+00:08:04.479 --> 00:08:06.390 align:start position:0%
+to be zero
+because<00:08:04.879><c> we're</c><00:08:05.120><c> gonna</c><00:08:05.280><c> be</c><00:08:05.520><c> popping</c><00:08:06.000><c> the</c>
+
+00:08:06.390 --> 00:08:06.400 align:start position:0%
+because we're gonna be popping the
+ 
+
+00:08:06.400 --> 00:08:08.390 align:start position:0%
+because we're gonna be popping the
+actual<00:08:07.039><c> gates</c><00:08:07.440><c> first</c><00:08:07.759><c> of</c><00:08:07.919><c> all</c><00:08:08.080><c> so</c>
+
+00:08:08.390 --> 00:08:08.400 align:start position:0%
+actual gates first of all so
+ 
+
+00:08:08.400 --> 00:08:11.670 align:start position:0%
+actual gates first of all so
+we're<00:08:08.560><c> gonna</c><00:08:08.800><c> say</c><00:08:09.440><c> while</c><00:08:09.840><c> q</c><00:08:10.319><c> is</c><00:08:10.560><c> non-empty</c>
+
+00:08:11.670 --> 00:08:11.680 align:start position:0%
+we're gonna say while q is non-empty
+ 
+
+00:08:11.680 --> 00:08:13.350 align:start position:0%
+we're gonna say while q is non-empty
+we're<00:08:11.840><c> going</c><00:08:12.000><c> to</c><00:08:12.160><c> go</c><00:08:12.400><c> through</c><00:08:12.800><c> every</c><00:08:13.039><c> single</c>
+
+00:08:13.350 --> 00:08:13.360 align:start position:0%
+we're going to go through every single
+ 
+
+00:08:13.360 --> 00:08:15.430 align:start position:0%
+we're going to go through every single
+position<00:08:13.840><c> in</c><00:08:13.919><c> the</c><00:08:14.160><c> queue</c><00:08:14.560><c> currently</c><00:08:15.120><c> right</c>
+
+00:08:15.430 --> 00:08:15.440 align:start position:0%
+position in the queue currently right
+ 
+
+00:08:15.440 --> 00:08:16.230 align:start position:0%
+position in the queue currently right
+basically
+
+00:08:16.230 --> 00:08:16.240 align:start position:0%
+basically
+ 
+
+00:08:16.240 --> 00:08:19.270 align:start position:0%
+basically
+this<00:08:16.800><c> layer</c><00:08:17.280><c> of</c><00:08:17.360><c> the</c><00:08:17.599><c> queue</c><00:08:18.400><c> and</c>
+
+00:08:19.270 --> 00:08:19.280 align:start position:0%
+this layer of the queue and
+ 
+
+00:08:19.280 --> 00:08:20.869 align:start position:0%
+this layer of the queue and
+so<00:08:19.520><c> we're</c><00:08:19.680><c> going</c><00:08:19.759><c> to</c><00:08:19.840><c> be</c><00:08:20.000><c> popping</c><00:08:20.319><c> from</c><00:08:20.479><c> the</c><00:08:20.639><c> q</c>
+
+00:08:20.869 --> 00:08:20.879 align:start position:0%
+so we're going to be popping from the q
+ 
+
+00:08:20.879 --> 00:08:22.550 align:start position:0%
+so we're going to be popping from the q
+so<00:08:21.199><c> pop</c><00:08:22.080><c> left</c>
+
+00:08:22.550 --> 00:08:22.560 align:start position:0%
+so pop left
+ 
+
+00:08:22.560 --> 00:08:24.230 align:start position:0%
+so pop left
+from<00:08:22.800><c> this</c><00:08:23.199><c> q</c><00:08:23.520><c> we're</c><00:08:23.680><c> going</c><00:08:23.759><c> to</c><00:08:23.919><c> get</c><00:08:24.080><c> the</c>
+
+00:08:24.230 --> 00:08:24.240 align:start position:0%
+from this q we're going to get the
+ 
+
+00:08:24.240 --> 00:08:26.150 align:start position:0%
+from this q we're going to get the
+coordinates<00:08:24.879><c> of</c><00:08:25.120><c> the</c><00:08:25.520><c> gates</c><00:08:25.840><c> that</c><00:08:26.000><c> we</c>
+
+00:08:26.150 --> 00:08:26.160 align:start position:0%
+coordinates of the gates that we
+ 
+
+00:08:26.160 --> 00:08:27.589 align:start position:0%
+coordinates of the gates that we
+initially<00:08:26.639><c> added</c><00:08:26.960><c> right</c><00:08:27.120><c> that's</c><00:08:27.360><c> going</c><00:08:27.440><c> to</c><00:08:27.520><c> be</c>
+
+00:08:27.589 --> 00:08:27.599 align:start position:0%
+initially added right that's going to be
+ 
+
+00:08:27.599 --> 00:08:28.390 align:start position:0%
+initially added right that's going to be
+the<00:08:27.840><c> first</c>
+
+00:08:28.390 --> 00:08:28.400 align:start position:0%
+the first
+ 
+
+00:08:28.400 --> 00:08:30.070 align:start position:0%
+the first
+layer<00:08:28.800><c> the</c><00:08:28.960><c> first</c><00:08:29.360><c> layer</c><00:08:29.599><c> we're</c><00:08:29.759><c> going</c><00:08:29.840><c> to</c><00:08:29.919><c> be</c>
+
+00:08:30.070 --> 00:08:30.080 align:start position:0%
+layer the first layer we're going to be
+ 
+
+00:08:30.080 --> 00:08:31.990 align:start position:0%
+layer the first layer we're going to be
+popping<00:08:30.400><c> are</c><00:08:30.560><c> the</c><00:08:30.720><c> gates</c><00:08:31.120><c> that</c><00:08:31.199><c> we</c><00:08:31.360><c> just</c><00:08:31.599><c> added</c>
+
+00:08:31.990 --> 00:08:32.000 align:start position:0%
+popping are the gates that we just added
+ 
+
+00:08:32.000 --> 00:08:32.389 align:start position:0%
+popping are the gates that we just added
+right
+
+00:08:32.389 --> 00:08:32.399 align:start position:0%
+right
+ 
+
+00:08:32.399 --> 00:08:34.230 align:start position:0%
+right
+so<00:08:32.640><c> for</c><00:08:32.880><c> each</c><00:08:33.200><c> gate</c><00:08:33.519><c> we're</c><00:08:33.680><c> basically</c><00:08:34.080><c> going</c>
+
+00:08:34.230 --> 00:08:34.240 align:start position:0%
+so for each gate we're basically going
+ 
+
+00:08:34.240 --> 00:08:35.670 align:start position:0%
+so for each gate we're basically going
+to<00:08:34.320><c> say</c><00:08:34.560><c> okay</c>
+
+00:08:35.670 --> 00:08:35.680 align:start position:0%
+to say okay
+ 
+
+00:08:35.680 --> 00:08:38.230 align:start position:0%
+to say okay
+let's<00:08:36.080><c> change</c><00:08:36.479><c> this</c><00:08:36.880><c> gate</c><00:08:37.360><c> to</c><00:08:37.680><c> being</c><00:08:38.000><c> the</c>
+
+00:08:38.230 --> 00:08:38.240 align:start position:0%
+let's change this gate to being the
+ 
+
+00:08:38.240 --> 00:08:39.509 align:start position:0%
+let's change this gate to being the
+current<00:08:38.640><c> distance</c>
+
+00:08:39.509 --> 00:08:39.519 align:start position:0%
+current distance
+ 
+
+00:08:39.519 --> 00:08:41.269 align:start position:0%
+current distance
+so<00:08:40.080><c> since</c><00:08:40.320><c> the</c><00:08:40.479><c> current</c><00:08:40.719><c> distance</c><00:08:41.200><c> is</c>
+
+00:08:41.269 --> 00:08:41.279 align:start position:0%
+so since the current distance is
+ 
+
+00:08:41.279 --> 00:08:43.190 align:start position:0%
+so since the current distance is
+initially<00:08:41.760><c> zero</c><00:08:42.159><c> and</c><00:08:42.320><c> remember</c><00:08:42.640><c> the</c><00:08:42.800><c> gates</c>
+
+00:08:43.190 --> 00:08:43.200 align:start position:0%
+initially zero and remember the gates
+ 
+
+00:08:43.200 --> 00:08:43.670 align:start position:0%
+initially zero and remember the gates
+start
+
+00:08:43.670 --> 00:08:43.680 align:start position:0%
+start
+ 
+
+00:08:43.680 --> 00:08:46.230 align:start position:0%
+start
+out<00:08:43.839><c> as</c><00:08:44.080><c> having</c><00:08:44.399><c> a</c><00:08:44.959><c> value</c><00:08:45.440><c> of</c><00:08:45.600><c> zero</c><00:08:45.920><c> we're</c><00:08:46.080><c> not</c>
+
+00:08:46.230 --> 00:08:46.240 align:start position:0%
+out as having a value of zero we're not
+ 
+
+00:08:46.240 --> 00:08:47.910 align:start position:0%
+out as having a value of zero we're not
+actually<00:08:46.480><c> going</c><00:08:46.560><c> to</c><00:08:46.640><c> be</c><00:08:46.800><c> modifying</c><00:08:47.279><c> the</c><00:08:47.519><c> value</c>
+
+00:08:47.910 --> 00:08:47.920 align:start position:0%
+actually going to be modifying the value
+ 
+
+00:08:47.920 --> 00:08:49.670 align:start position:0%
+actually going to be modifying the value
+of<00:08:48.080><c> the</c><00:08:48.320><c> gates</c><00:08:48.720><c> but</c><00:08:48.880><c> the</c><00:08:49.040><c> reason</c><00:08:49.360><c> i'm</c><00:08:49.440><c> putting</c>
+
+00:08:49.670 --> 00:08:49.680 align:start position:0%
+of the gates but the reason i'm putting
+ 
+
+00:08:49.680 --> 00:08:51.269 align:start position:0%
+of the gates but the reason i'm putting
+this<00:08:49.920><c> line</c><00:08:50.240><c> here</c><00:08:50.560><c> is</c><00:08:50.720><c> because</c>
+
+00:08:51.269 --> 00:08:51.279 align:start position:0%
+this line here is because
+ 
+
+00:08:51.279 --> 00:08:53.910 align:start position:0%
+this line here is because
+after<00:08:51.600><c> we</c><00:08:52.160><c> pop</c><00:08:52.399><c> the</c><00:08:52.720><c> gate</c><00:08:53.040><c> layer</c><00:08:53.279><c> the</c><00:08:53.519><c> next</c>
+
+00:08:53.910 --> 00:08:53.920 align:start position:0%
+after we pop the gate layer the next
+ 
+
+00:08:53.920 --> 00:08:55.350 align:start position:0%
+after we pop the gate layer the next
+layer<00:08:54.240><c> that</c><00:08:54.320><c> we're</c><00:08:54.480><c> going</c><00:08:54.560><c> to</c><00:08:54.720><c> add</c><00:08:54.959><c> to</c><00:08:55.120><c> our</c>
+
+00:08:55.350 --> 00:08:55.360 align:start position:0%
+layer that we're going to add to our
+ 
+
+00:08:55.360 --> 00:08:57.509 align:start position:0%
+layer that we're going to add to our
+queue<00:08:55.680><c> is</c><00:08:55.760><c> going</c><00:08:56.000><c> to</c><00:08:56.160><c> be</c><00:08:56.399><c> all</c><00:08:56.640><c> the</c><00:08:56.880><c> rooms</c>
+
+00:08:57.509 --> 00:08:57.519 align:start position:0%
+queue is going to be all the rooms
+ 
+
+00:08:57.519 --> 00:09:00.150 align:start position:0%
+queue is going to be all the rooms
+that<00:08:57.760><c> are</c><00:08:58.000><c> one</c><00:08:58.240><c> distance</c><00:08:58.720><c> away</c><00:08:59.040><c> so</c><00:08:59.440><c> after</c><00:08:59.839><c> this</c>
+
+00:09:00.150 --> 00:09:00.160 align:start position:0%
+that are one distance away so after this
+ 
+
+00:09:00.160 --> 00:09:00.790 align:start position:0%
+that are one distance away so after this
+for<00:09:00.399><c> loop</c>
+
+00:09:00.790 --> 00:09:00.800 align:start position:0%
+for loop
+ 
+
+00:09:00.800 --> 00:09:02.550 align:start position:0%
+for loop
+let's<00:09:01.040><c> make</c><00:09:01.279><c> sure</c><00:09:01.440><c> that</c><00:09:01.600><c> we</c><00:09:01.760><c> remember</c><00:09:02.240><c> to</c>
+
+00:09:02.550 --> 00:09:02.560 align:start position:0%
+let's make sure that we remember to
+ 
+
+00:09:02.560 --> 00:09:03.990 align:start position:0%
+let's make sure that we remember to
+increment<00:09:03.040><c> our</c><00:09:03.279><c> distance</c>
+
+00:09:03.990 --> 00:09:04.000 align:start position:0%
+increment our distance
+ 
+
+00:09:04.000 --> 00:09:06.710 align:start position:0%
+increment our distance
+by<00:09:04.320><c> one</c><00:09:04.959><c> every</c><00:09:05.279><c> time</c><00:09:05.440><c> we</c><00:09:05.680><c> complete</c><00:09:06.080><c> a</c><00:09:06.320><c> full</c>
+
+00:09:06.710 --> 00:09:06.720 align:start position:0%
+by one every time we complete a full
+ 
+
+00:09:06.720 --> 00:09:08.470 align:start position:0%
+by one every time we complete a full
+layer<00:09:07.200><c> of</c><00:09:07.440><c> the</c><00:09:07.600><c> queue</c>
+
+00:09:08.470 --> 00:09:08.480 align:start position:0%
+layer of the queue
+ 
+
+00:09:08.480 --> 00:09:11.269 align:start position:0%
+layer of the queue
+and<00:09:09.200><c> so</c><00:09:09.440><c> basically</c><00:09:10.000><c> for</c><00:09:10.320><c> this</c><00:09:10.640><c> room</c><00:09:11.040><c> let's</c>
+
+00:09:11.269 --> 00:09:11.279 align:start position:0%
+and so basically for this room let's
+ 
+
+00:09:11.279 --> 00:09:12.070 align:start position:0%
+and so basically for this room let's
+just<00:09:11.440><c> go</c><00:09:11.600><c> ahead</c>
+
+00:09:12.070 --> 00:09:12.080 align:start position:0%
+just go ahead
+ 
+
+00:09:12.080 --> 00:09:14.870 align:start position:0%
+just go ahead
+and<00:09:12.560><c> add</c><00:09:13.360><c> room</c><00:09:13.680><c> we're</c><00:09:13.839><c> going</c><00:09:13.920><c> to</c><00:09:14.160><c> add</c><00:09:14.560><c> every</c>
+
+00:09:14.870 --> 00:09:14.880 align:start position:0%
+and add room we're going to add every
+ 
+
+00:09:14.880 --> 00:09:15.509 align:start position:0%
+and add room we're going to add every
+single
+
+00:09:15.509 --> 00:09:15.519 align:start position:0%
+single
+ 
+
+00:09:15.519 --> 00:09:17.829 align:start position:0%
+single
+neighbor<00:09:16.000><c> of</c><00:09:16.320><c> this</c><00:09:16.800><c> room</c><00:09:17.120><c> and</c><00:09:17.279><c> you</c><00:09:17.440><c> can</c><00:09:17.519><c> see</c><00:09:17.680><c> i</c>
+
+00:09:17.829 --> 00:09:17.839 align:start position:0%
+neighbor of this room and you can see i
+ 
+
+00:09:17.839 --> 00:09:19.590 align:start position:0%
+neighbor of this room and you can see i
+haven't<00:09:18.080><c> actually</c><00:09:18.320><c> defined</c><00:09:18.959><c> that</c><00:09:19.120><c> function</c>
+
+00:09:19.590 --> 00:09:19.600 align:start position:0%
+haven't actually defined that function
+ 
+
+00:09:19.600 --> 00:09:20.550 align:start position:0%
+haven't actually defined that function
+yet<00:09:19.920><c> so</c>
+
+00:09:20.550 --> 00:09:20.560 align:start position:0%
+yet so
+ 
+
+00:09:20.560 --> 00:09:22.790 align:start position:0%
+yet so
+let's<00:09:20.959><c> do</c><00:09:21.200><c> that</c><00:09:21.519><c> up</c><00:09:21.680><c> above</c><00:09:22.160><c> once</c><00:09:22.399><c> i</c><00:09:22.560><c> actually</c>
+
+00:09:22.790 --> 00:09:22.800 align:start position:0%
+let's do that up above once i actually
+ 
+
+00:09:22.800 --> 00:09:24.310 align:start position:0%
+let's do that up above once i actually
+write<00:09:22.959><c> this</c><00:09:23.200><c> out</c><00:09:23.360><c> so</c><00:09:23.600><c> basically</c><00:09:24.000><c> what</c><00:09:24.240><c> i'm</c>
+
+00:09:24.310 --> 00:09:24.320 align:start position:0%
+write this out so basically what i'm
+ 
+
+00:09:24.320 --> 00:09:25.110 align:start position:0%
+write this out so basically what i'm
+doing<00:09:24.640><c> is</c>
+
+00:09:25.110 --> 00:09:25.120 align:start position:0%
+doing is
+ 
+
+00:09:25.120 --> 00:09:27.110 align:start position:0%
+doing is
+going<00:09:25.279><c> to</c><00:09:25.360><c> be</c><00:09:25.519><c> adding</c><00:09:25.920><c> all</c><00:09:26.160><c> four</c><00:09:26.480><c> adjacent</c>
+
+00:09:27.110 --> 00:09:27.120 align:start position:0%
+going to be adding all four adjacent
+ 
+
+00:09:27.120 --> 00:09:28.949 align:start position:0%
+going to be adding all four adjacent
+rooms<00:09:27.760><c> to</c><00:09:28.000><c> the</c><00:09:28.160><c> queue</c>
+
+00:09:28.949 --> 00:09:28.959 align:start position:0%
+rooms to the queue
+ 
+
+00:09:28.959 --> 00:09:31.509 align:start position:0%
+rooms to the queue
+and<00:09:29.760><c> and</c><00:09:30.160><c> we</c><00:09:30.399><c> obviously</c><00:09:30.880><c> know</c><00:09:31.120><c> that</c><00:09:31.279><c> some</c><00:09:31.440><c> of</c>
+
+00:09:31.509 --> 00:09:31.519 align:start position:0%
+and and we obviously know that some of
+ 
+
+00:09:31.519 --> 00:09:33.269 align:start position:0%
+and and we obviously know that some of
+these<00:09:31.760><c> rooms</c><00:09:32.080><c> might</c><00:09:32.240><c> be</c><00:09:32.480><c> out</c><00:09:32.640><c> of</c><00:09:32.720><c> bounds</c><00:09:33.120><c> some</c>
+
+00:09:33.269 --> 00:09:33.279 align:start position:0%
+these rooms might be out of bounds some
+ 
+
+00:09:33.279 --> 00:09:35.030 align:start position:0%
+these rooms might be out of bounds some
+of<00:09:33.440><c> them</c><00:09:33.600><c> might</c><00:09:33.839><c> have</c><00:09:34.080><c> already</c><00:09:34.480><c> been</c><00:09:34.640><c> visited</c>
+
+00:09:35.030 --> 00:09:35.040 align:start position:0%
+of them might have already been visited
+ 
+
+00:09:35.040 --> 00:09:36.470 align:start position:0%
+of them might have already been visited
+that's<00:09:35.279><c> why</c><00:09:35.519><c> i'm</c><00:09:35.680><c> going</c><00:09:35.760><c> to</c><00:09:35.839><c> put</c><00:09:36.000><c> this</c><00:09:36.240><c> in</c><00:09:36.399><c> a</c>
+
+00:09:36.470 --> 00:09:36.480 align:start position:0%
+that's why i'm going to put this in a
+ 
+
+00:09:36.480 --> 00:09:38.710 align:start position:0%
+that's why i'm going to put this in a
+helper<00:09:36.800><c> function</c><00:09:37.279><c> to</c><00:09:37.440><c> basically</c><00:09:38.080><c> abstract</c>
+
+00:09:38.710 --> 00:09:38.720 align:start position:0%
+helper function to basically abstract
+ 
+
+00:09:38.720 --> 00:09:40.550 align:start position:0%
+helper function to basically abstract
+some<00:09:38.880><c> of</c><00:09:38.959><c> that</c><00:09:39.200><c> logic</c><00:09:39.600><c> for</c><00:09:39.760><c> us</c><00:09:39.920><c> so</c><00:09:40.080><c> let's</c>
+
+00:09:40.550 --> 00:09:40.560 align:start position:0%
+some of that logic for us so let's
+ 
+
+00:09:40.560 --> 00:09:42.710 align:start position:0%
+some of that logic for us so let's
+define<00:09:40.959><c> the</c><00:09:41.120><c> function</c><00:09:41.600><c> up</c><00:09:41.760><c> above</c><00:09:42.240><c> over</c><00:09:42.480><c> here</c>
+
+00:09:42.710 --> 00:09:42.720 align:start position:0%
+define the function up above over here
+ 
+
+00:09:42.720 --> 00:09:44.310 align:start position:0%
+define the function up above over here
+so<00:09:42.880><c> add</c><00:09:43.200><c> room</c><00:09:43.440><c> we're</c><00:09:43.600><c> just</c><00:09:43.760><c> going</c><00:09:43.920><c> to</c><00:09:44.000><c> pass</c><00:09:44.240><c> in</c>
+
+00:09:44.310 --> 00:09:44.320 align:start position:0%
+so add room we're just going to pass in
+ 
+
+00:09:44.320 --> 00:09:45.430 align:start position:0%
+so add room we're just going to pass in
+a<00:09:44.399><c> couple</c><00:09:44.720><c> coordinates</c>
+
+00:09:45.430 --> 00:09:45.440 align:start position:0%
+a couple coordinates
+ 
+
+00:09:45.440 --> 00:09:48.630 align:start position:0%
+a couple coordinates
+so<00:09:45.680><c> basically</c><00:09:46.320><c> if</c><00:09:46.959><c> this</c><00:09:47.440><c> row</c><00:09:48.240><c> is</c>
+
+00:09:48.630 --> 00:09:48.640 align:start position:0%
+so basically if this row is
+ 
+
+00:09:48.640 --> 00:09:51.030 align:start position:0%
+so basically if this row is
+less<00:09:48.880><c> than</c><00:09:49.120><c> zero</c><00:09:49.519><c> or</c><00:09:49.680><c> if</c><00:09:49.839><c> the</c><00:09:50.000><c> row</c><00:09:50.399><c> is</c><00:09:50.720><c> out</c><00:09:50.880><c> of</c>
+
+00:09:51.030 --> 00:09:51.040 align:start position:0%
+less than zero or if the row is out of
+ 
+
+00:09:51.040 --> 00:09:52.150 align:start position:0%
+less than zero or if the row is out of
+bounds<00:09:51.360><c> meaning</c><00:09:51.600><c> it's</c><00:09:51.839><c> too</c>
+
+00:09:52.150 --> 00:09:52.160 align:start position:0%
+bounds meaning it's too
+ 
+
+00:09:52.160 --> 00:09:54.630 align:start position:0%
+bounds meaning it's too
+big<00:09:52.720><c> meaning</c><00:09:52.959><c> it's</c><00:09:53.200><c> equal</c><00:09:53.519><c> to</c><00:09:54.080><c> the</c><00:09:54.240><c> number</c><00:09:54.480><c> of</c>
+
+00:09:54.630 --> 00:09:54.640 align:start position:0%
+big meaning it's equal to the number of
+ 
+
+00:09:54.640 --> 00:09:55.430 align:start position:0%
+big meaning it's equal to the number of
+rows
+
+00:09:55.430 --> 00:09:55.440 align:start position:0%
+rows
+ 
+
+00:09:55.440 --> 00:09:57.509 align:start position:0%
+rows
+or<00:09:55.920><c> the</c><00:09:56.080><c> exact</c><00:09:56.399><c> same</c><00:09:56.560><c> thing</c><00:09:56.800><c> for</c><00:09:56.959><c> column</c><00:09:57.360><c> if</c>
+
+00:09:57.509 --> 00:09:57.519 align:start position:0%
+or the exact same thing for column if
+ 
+
+00:09:57.519 --> 00:09:59.509 align:start position:0%
+or the exact same thing for column if
+column<00:09:58.000><c> is</c><00:09:58.399><c> less</c><00:09:58.640><c> than</c><00:09:58.880><c> zero</c>
+
+00:09:59.509 --> 00:09:59.519 align:start position:0%
+column is less than zero
+ 
+
+00:09:59.519 --> 00:10:03.110 align:start position:0%
+column is less than zero
+or<00:10:00.160><c> column</c><00:10:00.720><c> is</c><00:10:01.279><c> too</c><00:10:01.600><c> big</c><00:10:02.320><c> or</c>
+
+00:10:03.110 --> 00:10:03.120 align:start position:0%
+or column is too big or
+ 
+
+00:10:03.120 --> 00:10:05.910 align:start position:0%
+or column is too big or
+if<00:10:03.680><c> this</c><00:10:04.160><c> position</c><00:10:04.640><c> row</c><00:10:04.880><c> column</c><00:10:05.279><c> has</c><00:10:05.519><c> already</c>
+
+00:10:05.910 --> 00:10:05.920 align:start position:0%
+if this position row column has already
+ 
+
+00:10:05.920 --> 00:10:06.949 align:start position:0%
+if this position row column has already
+been<00:10:06.160><c> visited</c>
+
+00:10:06.949 --> 00:10:06.959 align:start position:0%
+been visited
+ 
+
+00:10:06.959 --> 00:10:10.069 align:start position:0%
+been visited
+or<00:10:07.440><c> one</c><00:10:08.000><c> last</c><00:10:08.480><c> condition</c><00:10:09.040><c> basically</c><00:10:09.760><c> if</c>
+
+00:10:10.069 --> 00:10:10.079 align:start position:0%
+or one last condition basically if
+ 
+
+00:10:10.079 --> 00:10:13.350 align:start position:0%
+or one last condition basically if
+this<00:10:10.720><c> room</c><00:10:11.519><c> is</c><00:10:12.079><c> a</c><00:10:12.800><c> wall</c>
+
+00:10:13.350 --> 00:10:13.360 align:start position:0%
+this room is a wall
+ 
+
+00:10:13.360 --> 00:10:15.190 align:start position:0%
+this room is a wall
+or<00:10:13.519><c> an</c><00:10:13.839><c> obstacle</c><00:10:14.320><c> right</c><00:10:14.560><c> because</c><00:10:14.720><c> remember</c>
+
+00:10:15.190 --> 00:10:15.200 align:start position:0%
+or an obstacle right because remember
+ 
+
+00:10:15.200 --> 00:10:17.430 align:start position:0%
+or an obstacle right because remember
+not<00:10:15.519><c> every</c><00:10:15.839><c> position</c><00:10:16.399><c> in</c><00:10:16.640><c> our</c><00:10:16.880><c> graph</c>
+
+00:10:17.430 --> 00:10:17.440 align:start position:0%
+not every position in our graph
+ 
+
+00:10:17.440 --> 00:10:20.310 align:start position:0%
+not every position in our graph
+is<00:10:18.000><c> a</c><00:10:18.240><c> empty</c><00:10:18.720><c> room</c><00:10:19.519><c> it's</c><00:10:19.760><c> it</c><00:10:19.920><c> could</c><00:10:20.160><c> it's</c>
+
+00:10:20.310 --> 00:10:20.320 align:start position:0%
+is a empty room it's it could it's
+ 
+
+00:10:20.320 --> 00:10:21.750 align:start position:0%
+is a empty room it's it could it's
+possible<00:10:20.720><c> it</c><00:10:20.880><c> could</c><00:10:21.040><c> be</c>
+
+00:10:21.750 --> 00:10:21.760 align:start position:0%
+possible it could be
+ 
+
+00:10:21.760 --> 00:10:23.670 align:start position:0%
+possible it could be
+a<00:10:22.160><c> obstacle</c><00:10:22.720><c> meaning</c><00:10:22.959><c> it's</c><00:10:23.120><c> equal</c><00:10:23.440><c> to</c>
+
+00:10:23.670 --> 00:10:23.680 align:start position:0%
+a obstacle meaning it's equal to
+ 
+
+00:10:23.680 --> 00:10:25.110 align:start position:0%
+a obstacle meaning it's equal to
+negative<00:10:24.240><c> one</c><00:10:24.640><c> so</c><00:10:24.880><c> if</c>
+
+00:10:25.110 --> 00:10:25.120 align:start position:0%
+negative one so if
+ 
+
+00:10:25.120 --> 00:10:27.430 align:start position:0%
+negative one so if
+any<00:10:25.360><c> of</c><00:10:25.519><c> these</c><00:10:25.839><c> above</c><00:10:26.240><c> conditions</c><00:10:26.800><c> is</c><00:10:26.959><c> true</c>
+
+00:10:27.430 --> 00:10:27.440 align:start position:0%
+any of these above conditions is true
+ 
+
+00:10:27.440 --> 00:10:28.949 align:start position:0%
+any of these above conditions is true
+we're<00:10:27.600><c> going</c><00:10:27.680><c> to</c><00:10:27.839><c> immediately</c><00:10:28.480><c> return</c>
+
+00:10:28.949 --> 00:10:28.959 align:start position:0%
+we're going to immediately return
+ 
+
+00:10:28.959 --> 00:10:29.829 align:start position:0%
+we're going to immediately return
+because<00:10:29.279><c> this</c><00:10:29.440><c> is</c><00:10:29.600><c> an</c>
+
+00:10:29.829 --> 00:10:29.839 align:start position:0%
+because this is an
+ 
+
+00:10:29.839 --> 00:10:31.590 align:start position:0%
+because this is an
+invalid<00:10:30.480><c> room</c><00:10:30.800><c> so</c><00:10:30.959><c> we're</c><00:10:31.200><c> not</c><00:10:31.360><c> going</c><00:10:31.440><c> to</c>
+
+00:10:31.590 --> 00:10:31.600 align:start position:0%
+invalid room so we're not going to
+ 
+
+00:10:31.600 --> 00:10:33.750 align:start position:0%
+invalid room so we're not going to
+actually<00:10:32.079><c> add</c><00:10:32.399><c> it</c><00:10:32.800><c> to</c><00:10:32.959><c> the</c><00:10:33.200><c> queue</c>
+
+00:10:33.750 --> 00:10:33.760 align:start position:0%
+actually add it to the queue
+ 
+
+00:10:33.760 --> 00:10:36.389 align:start position:0%
+actually add it to the queue
+or<00:10:33.920><c> the</c><00:10:34.079><c> visit</c><00:10:34.399><c> set</c><00:10:34.640><c> but</c><00:10:34.880><c> if</c><00:10:35.040><c> it's</c><00:10:35.279><c> not</c><00:10:35.600><c> invalid</c>
+
+00:10:36.389 --> 00:10:36.399 align:start position:0%
+or the visit set but if it's not invalid
+ 
+
+00:10:36.399 --> 00:10:37.990 align:start position:0%
+or the visit set but if it's not invalid
+that's<00:10:36.640><c> when</c><00:10:36.800><c> we</c><00:10:36.959><c> can</c><00:10:37.120><c> go</c><00:10:37.279><c> ahead</c><00:10:37.440><c> and</c><00:10:37.519><c> say</c><00:10:37.680><c> okay</c>
+
+00:10:37.990 --> 00:10:38.000 align:start position:0%
+that's when we can go ahead and say okay
+ 
+
+00:10:38.000 --> 00:10:38.790 align:start position:0%
+that's when we can go ahead and say okay
+visit
+
+00:10:38.790 --> 00:10:38.800 align:start position:0%
+visit
+ 
+
+00:10:38.800 --> 00:10:42.470 align:start position:0%
+visit
+dot<00:10:39.120><c> add</c><00:10:39.839><c> to</c><00:10:40.399><c> the</c><00:10:40.800><c> hash</c><00:10:41.200><c> set</c><00:10:41.519><c> and</c><00:10:41.839><c> go</c><00:10:42.000><c> ahead</c><00:10:42.240><c> and</c>
+
+00:10:42.470 --> 00:10:42.480 align:start position:0%
+dot add to the hash set and go ahead and
+ 
+
+00:10:42.480 --> 00:10:43.110 align:start position:0%
+dot add to the hash set and go ahead and
+queue
+
+00:10:43.110 --> 00:10:43.120 align:start position:0%
+queue
+ 
+
+00:10:43.120 --> 00:10:46.630 align:start position:0%
+queue
+dot<00:10:43.440><c> append</c><00:10:44.399><c> to</c><00:10:44.640><c> the</c><00:10:44.959><c> hash</c><00:10:45.279><c> set</c><00:10:45.600><c> as</c><00:10:45.920><c> well</c>
+
+00:10:46.630 --> 00:10:46.640 align:start position:0%
+dot append to the hash set as well
+ 
+
+00:10:46.640 --> 00:10:48.870 align:start position:0%
+dot append to the hash set as well
+right<00:10:46.880><c> so</c><00:10:47.040><c> basically</c><00:10:47.680><c> you</c><00:10:47.760><c> can</c><00:10:47.920><c> see</c><00:10:48.160><c> why</c><00:10:48.399><c> i'm</c>
+
+00:10:48.870 --> 00:10:48.880 align:start position:0%
+right so basically you can see why i'm
+ 
+
+00:10:48.880 --> 00:10:50.310 align:start position:0%
+right so basically you can see why i'm
+putting<00:10:49.120><c> this</c><00:10:49.360><c> stuff</c><00:10:49.600><c> inside</c><00:10:49.839><c> of</c><00:10:49.920><c> a</c><00:10:50.000><c> helper</c>
+
+00:10:50.310 --> 00:10:50.320 align:start position:0%
+putting this stuff inside of a helper
+ 
+
+00:10:50.320 --> 00:10:51.350 align:start position:0%
+putting this stuff inside of a helper
+function<00:10:50.640><c> because</c><00:10:50.800><c> we</c><00:10:50.959><c> don't</c><00:10:51.120><c> want</c><00:10:51.200><c> to</c><00:10:51.279><c> have</c>
+
+00:10:51.350 --> 00:10:51.360 align:start position:0%
+function because we don't want to have
+ 
+
+00:10:51.360 --> 00:10:53.110 align:start position:0%
+function because we don't want to have
+to<00:10:51.519><c> call</c><00:10:51.760><c> that</c><00:10:52.079><c> four</c><00:10:52.399><c> times</c>
+
+00:10:53.110 --> 00:10:53.120 align:start position:0%
+to call that four times
+ 
+
+00:10:53.120 --> 00:10:54.790 align:start position:0%
+to call that four times
+and<00:10:53.279><c> i</c><00:10:53.440><c> don't</c><00:10:53.600><c> really</c><00:10:53.760><c> want</c><00:10:53.920><c> to</c><00:10:54.000><c> put</c><00:10:54.160><c> a</c><00:10:54.320><c> loop</c><00:10:54.640><c> in</c>
+
+00:10:54.790 --> 00:10:54.800 align:start position:0%
+and i don't really want to put a loop in
+ 
+
+00:10:54.800 --> 00:10:56.069 align:start position:0%
+and i don't really want to put a loop in
+here<00:10:54.959><c> because</c><00:10:55.200><c> i</c><00:10:55.279><c> just</c><00:10:55.440><c> think</c><00:10:55.600><c> it's</c><00:10:55.760><c> kind</c><00:10:55.920><c> of</c>
+
+00:10:56.069 --> 00:10:56.079 align:start position:0%
+here because i just think it's kind of
+ 
+
+00:10:56.079 --> 00:10:57.750 align:start position:0%
+here because i just think it's kind of
+messy<00:10:56.399><c> i'd</c><00:10:56.560><c> rather</c><00:10:56.880><c> just</c><00:10:57.120><c> write</c><00:10:57.279><c> it</c><00:10:57.440><c> out</c><00:10:57.600><c> like</c>
+
+00:10:57.750 --> 00:10:57.760 align:start position:0%
+messy i'd rather just write it out like
+ 
+
+00:10:57.760 --> 00:10:58.470 align:start position:0%
+messy i'd rather just write it out like
+this
+
+00:10:58.470 --> 00:10:58.480 align:start position:0%
+this
+ 
+
+00:10:58.480 --> 00:11:00.870 align:start position:0%
+this
+but<00:10:58.640><c> so</c><00:10:58.880><c> with</c><00:10:59.200><c> all</c><00:10:59.360><c> of</c><00:10:59.600><c> that</c><00:10:59.920><c> done</c><00:11:00.399><c> we</c><00:11:00.560><c> can</c><00:11:00.720><c> see</c>
+
+00:11:00.870 --> 00:11:00.880 align:start position:0%
+but so with all of that done we can see
+ 
+
+00:11:00.880 --> 00:11:02.230 align:start position:0%
+but so with all of that done we can see
+that<00:11:00.959><c> we</c><00:11:01.120><c> have</c><00:11:01.360><c> added</c><00:11:01.680><c> the</c><00:11:01.839><c> rooms</c><00:11:02.079><c> we're</c>
+
+00:11:02.230 --> 00:11:02.240 align:start position:0%
+that we have added the rooms we're
+ 
+
+00:11:02.240 --> 00:11:03.829 align:start position:0%
+that we have added the rooms we're
+making<00:11:02.480><c> sure</c><00:11:02.640><c> to</c><00:11:02.880><c> increment</c><00:11:03.279><c> the</c><00:11:03.440><c> distance</c>
+
+00:11:03.829 --> 00:11:03.839 align:start position:0%
+making sure to increment the distance
+ 
+
+00:11:03.839 --> 00:11:05.190 align:start position:0%
+making sure to increment the distance
+every<00:11:04.079><c> time</c><00:11:04.240><c> we</c><00:11:04.399><c> complete</c><00:11:04.880><c> a</c>
+
+00:11:05.190 --> 00:11:05.200 align:start position:0%
+every time we complete a
+ 
+
+00:11:05.200 --> 00:11:07.269 align:start position:0%
+every time we complete a
+layer<00:11:06.079><c> and</c><00:11:06.240><c> we're</c><00:11:06.480><c> basically</c><00:11:06.880><c> going</c><00:11:07.040><c> through</c>
+
+00:11:07.269 --> 00:11:07.279 align:start position:0%
+layer and we're basically going through
+ 
+
+00:11:07.279 --> 00:11:08.949 align:start position:0%
+layer and we're basically going through
+rooms<00:11:07.760><c> labeling</c><00:11:08.160><c> what's</c><00:11:08.399><c> the</c><00:11:08.560><c> minimum</c>
+
+00:11:08.949 --> 00:11:08.959 align:start position:0%
+rooms labeling what's the minimum
+ 
+
+00:11:08.959 --> 00:11:09.750 align:start position:0%
+rooms labeling what's the minimum
+distance
+
+00:11:09.750 --> 00:11:09.760 align:start position:0%
+distance
+ 
+
+00:11:09.760 --> 00:11:12.230 align:start position:0%
+distance
+from<00:11:10.000><c> that</c><00:11:10.240><c> room</c><00:11:10.800><c> to</c><00:11:11.120><c> a</c><00:11:11.440><c> gate</c><00:11:11.680><c> once</c><00:11:11.920><c> we're</c><00:11:12.079><c> done</c>
+
+00:11:12.230 --> 00:11:12.240 align:start position:0%
+from that room to a gate once we're done
+ 
+
+00:11:12.240 --> 00:11:13.430 align:start position:0%
+from that room to a gate once we're done
+with<00:11:12.399><c> that</c><00:11:12.560><c> we</c><00:11:12.720><c> don't</c><00:11:12.959><c> actually</c><00:11:13.200><c> have</c><00:11:13.279><c> to</c>
+
+00:11:13.430 --> 00:11:13.440 align:start position:0%
+with that we don't actually have to
+ 
+
+00:11:13.440 --> 00:11:15.269 align:start position:0%
+with that we don't actually have to
+return<00:11:13.920><c> anything</c><00:11:14.399><c> because</c><00:11:14.640><c> we</c><00:11:14.800><c> just</c><00:11:14.959><c> have</c><00:11:15.120><c> to</c>
+
+00:11:15.269 --> 00:11:15.279 align:start position:0%
+return anything because we just have to
+ 
+
+00:11:15.279 --> 00:11:15.910 align:start position:0%
+return anything because we just have to
+modify
+
+00:11:15.910 --> 00:11:15.920 align:start position:0%
+modify
+ 
+
+00:11:15.920 --> 00:11:19.030 align:start position:0%
+modify
+modify<00:11:16.399><c> the</c><00:11:16.720><c> room's</c><00:11:17.360><c> 2d</c><00:11:17.839><c> array</c><00:11:18.240><c> in</c><00:11:18.480><c> place</c>
+
+00:11:19.030 --> 00:11:19.040 align:start position:0%
+modify the room's 2d array in place
+ 
+
+00:11:19.040 --> 00:11:20.470 align:start position:0%
+modify the room's 2d array in place
+so<00:11:19.200><c> this</c><00:11:19.440><c> is</c><00:11:19.600><c> all</c><00:11:19.760><c> the</c><00:11:20.000><c> code</c><00:11:20.240><c> that</c><00:11:20.320><c> we're</c>
+
+00:11:20.470 --> 00:11:20.480 align:start position:0%
+so this is all the code that we're
+ 
+
+00:11:20.480 --> 00:11:22.069 align:start position:0%
+so this is all the code that we're
+actually<00:11:20.720><c> going</c><00:11:20.800><c> to</c><00:11:20.880><c> have</c><00:11:20.959><c> to</c><00:11:21.200><c> write</c><00:11:21.839><c> so</c><00:11:22.000><c> you</c>
+
+00:11:22.069 --> 00:11:22.079 align:start position:0%
+actually going to have to write so you
+ 
+
+00:11:22.079 --> 00:11:23.750 align:start position:0%
+actually going to have to write so you
+can<00:11:22.240><c> see</c><00:11:22.399><c> that</c><00:11:22.560><c> this</c><00:11:22.720><c> solution</c><00:11:23.279><c> is</c>
+
+00:11:23.750 --> 00:11:23.760 align:start position:0%
+can see that this solution is
+ 
+
+00:11:23.760 --> 00:11:25.430 align:start position:0%
+can see that this solution is
+efficient<00:11:24.160><c> we're</c><00:11:24.320><c> basically</c><00:11:24.800><c> visiting</c><00:11:25.200><c> the</c>
+
+00:11:25.430 --> 00:11:25.440 align:start position:0%
+efficient we're basically visiting the
+ 
+
+00:11:25.440 --> 00:11:27.910 align:start position:0%
+efficient we're basically visiting the
+entire<00:11:25.839><c> grid</c><00:11:26.480><c> a</c><00:11:26.640><c> couple</c><00:11:26.959><c> times</c><00:11:27.360><c> i</c><00:11:27.519><c> think</c><00:11:27.760><c> two</c>
+
+00:11:27.910 --> 00:11:27.920 align:start position:0%
+entire grid a couple times i think two
+ 
+
+00:11:27.920 --> 00:11:29.430 align:start position:0%
+entire grid a couple times i think two
+or<00:11:28.000><c> three</c><00:11:28.240><c> times</c><00:11:28.480><c> because</c><00:11:28.880><c> of</c><00:11:28.959><c> course</c><00:11:29.200><c> we</c><00:11:29.279><c> have</c>
+
+00:11:29.430 --> 00:11:29.440 align:start position:0%
+or three times because of course we have
+ 
+
+00:11:29.440 --> 00:11:30.949 align:start position:0%
+or three times because of course we have
+this<00:11:29.680><c> initial</c><00:11:30.079><c> loop</c><00:11:30.320><c> and</c><00:11:30.399><c> then</c><00:11:30.560><c> we</c><00:11:30.640><c> actually</c>
+
+00:11:30.949 --> 00:11:30.959 align:start position:0%
+this initial loop and then we actually
+ 
+
+00:11:30.959 --> 00:11:32.710 align:start position:0%
+this initial loop and then we actually
+have<00:11:31.040><c> to</c><00:11:31.200><c> run</c><00:11:31.440><c> our</c><00:11:31.600><c> bfs</c><00:11:32.079><c> solution</c>
+
+00:11:32.710 --> 00:11:32.720 align:start position:0%
+have to run our bfs solution
+ 
+
+00:11:32.720 --> 00:11:34.710 align:start position:0%
+have to run our bfs solution
+but<00:11:32.959><c> it's</c><00:11:33.120><c> still</c><00:11:33.440><c> a</c><00:11:33.600><c> linear</c><00:11:34.000><c> time</c><00:11:34.240><c> solution</c>
+
+00:11:34.710 --> 00:11:34.720 align:start position:0%
+but it's still a linear time solution
+ 
+
+00:11:34.720 --> 00:11:36.630 align:start position:0%
+but it's still a linear time solution
+with<00:11:35.120><c> respect</c><00:11:35.600><c> to</c><00:11:35.760><c> the</c><00:11:36.000><c> size</c>
+
+00:11:36.630 --> 00:11:36.640 align:start position:0%
+with respect to the size
+ 
+
+00:11:36.640 --> 00:11:38.870 align:start position:0%
+with respect to the size
+of<00:11:36.880><c> the</c><00:11:37.200><c> input</c><00:11:37.600><c> array</c><00:11:38.160><c> so</c><00:11:38.320><c> i</c><00:11:38.399><c> hope</c><00:11:38.560><c> that</c><00:11:38.720><c> this</c>
+
+00:11:38.870 --> 00:11:38.880 align:start position:0%
+of the input array so i hope that this
+ 
+
+00:11:38.880 --> 00:11:40.389 align:start position:0%
+of the input array so i hope that this
+was<00:11:39.040><c> helpful</c><00:11:39.600><c> if</c><00:11:39.839><c> it</c><00:11:40.000><c> was</c>
+
+00:11:40.389 --> 00:11:40.399 align:start position:0%
+was helpful if it was
+ 
+
+00:11:40.399 --> 00:11:42.230 align:start position:0%
+was helpful if it was
+please<00:11:40.720><c> like</c><00:11:40.959><c> and</c><00:11:41.120><c> subscribe</c><00:11:41.680><c> it</c><00:11:41.760><c> supports</c>
+
+00:11:42.230 --> 00:11:42.240 align:start position:0%
+please like and subscribe it supports
+ 
+
+00:11:42.240 --> 00:11:44.310 align:start position:0%
+please like and subscribe it supports
+the<00:11:42.320><c> channel</c><00:11:42.720><c> a</c><00:11:42.959><c> lot</c><00:11:43.360><c> and</c><00:11:43.519><c> i'll</c><00:11:43.680><c> hopefully</c>
+
+00:11:44.310 --> 00:11:44.320 align:start position:0%
+the channel a lot and i'll hopefully
+ 
+
+00:11:44.320 --> 00:11:48.320 align:start position:0%
+the channel a lot and i'll hopefully
+see<00:11:44.480><c> you</c><00:11:44.640><c> pretty</c><00:11:44.959><c> soon</c><00:11:45.440><c> thanks</c><00:11:45.680><c> for</c><00:11:45.839><c> watching</c>
+

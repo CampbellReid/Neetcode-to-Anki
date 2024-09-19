@@ -1,0 +1,315 @@
+everyone welcome back and let's write
+some more neat code today so today let's
+solve the problem target sum we're given
+an array of integers called nums and
+we're also given a single integer called
+target and basically for every single
+number in the array nums we can either
+choose to add that number or subtract
+that number and we must do that for
+every single number we have to either
+choose to add it or subtract it and then
+using that we will have some
+total or some sum at the end of our
+you know computation and basically we
+want to know does that computation that
+sum that we have that total is it equal
+to the target value that we were given
+at the beginning right and not only that
+but we want to count the number of ways
+that we can get a sum from this array
+nums that will equal this target value
+and then we want to return how many ways
+we were able to do that so in this
+example you can see we're given an array
+numbers of five consecutive ones and a
+target value of three and you can see
+all the different ways that we can sum
+up to that total value of three there
+are five different ways to do that right
+you can see the first one if we subtract
+the first one add the next one add the
+next one add the next one and add the
+next one we're able to get to three
+right basically four positive and one
+negative that will give us a sum of
+three you can see that the next example
+the next way that we were able to do
+that basically we subtracted the second
+one added the first and then added the
+next three the main thing though to note
+is that the order that you do these does
+matter so if we can change the order of
+the plus and minus symbols you know that
+counts as a different way that we are
+able to total up to the target right so
+basically we're we're counting
+permutations so this can be a complex
+problem if you're not familiar with it
+so let's start off with the brute force
+solution which is going to be 2 to the
+power of n and then let's see how we can
+actually optimize that into a more
+efficient solution so suppose we're
+given that same example that we just
+talked about target of three and five
+ones in the input remember for every
+single one of the values we have a
+choice right we can either add it or
+subtract it right and the best way to
+visualize this for me is always using a
+decision tree right so if we want to
+know all possible ways we could you know
+enumerate this and all possible totals
+we could get from this array a decision
+tree is the most helpful initially we
+start at the index right we're keeping
+track of what index we're at right
+initially we're going to be at the
+zeroth index we're going to keep moving
+on and on as we make choices right to
+the second third fourth index until we
+of course reach the end of the array
+another thing we're going to be keeping
+track of what is our total so far right
+of course we want to know what our total
+is so far because by the time we reach
+the end of the array we want to know is
+our total equal to the target value or
+not so using this pair of values as our
+parameter to our recursive function
+we'll get a decision tree that looks
+something like this initially we'll be
+at zero zero right index zero and our
+total will initially be set to zero we
+can make a choice right we're at this
+one over here right at the top left we
+can either make a choice to add that one
+right plus one or
+minus one if we add the one then our
+index is going to be at 1 because we're
+going to move to the next position right
+we're going to be at this position now
+which is at index 1. and our total write
+the second value we're keeping track of
+is also going to be 1 because we added a
+1. now if we did the opposite choice we
+would still end up at index 1 but our
+total would be negative one right that's
+our second value over here and this
+decision tree is actually going to be
+pretty simple for us because all of the
+values in the input are one so basically
+every single decision is going to look
+exactly like this one let me just kind
+of quickly draw it out to give you an
+idea okay so we kind of ran out of room
+so i won't draw the entire tree but just
+to show you a path a single path that
+will lead us to the target so initially
+we start at the the first spot right we
+add the first one right so this is a
+positive right we're at one so far then
+we go down this path where we said we
+minus one right then our total is at
+zero so minus one then we add one again
+we're at index three total of one so
+plus one here then we add another one
+we're at index four total of two
+and then we add a last one right the
+fifth one we add this as well that
+leaves our total exactly at three which
+is good and it puts us at index five
+well index zero is here one here two
+here three four five is exactly out of
+bounds so as soon as we go out of bounds
+we're done right we've reached our base
+case now we want to know is our total so
+far which right now happens to be three
+is it equal to the target yes it's
+exactly equal to the target so now we're
+done we found a single way that we could
+reach the target value right of course
+there's going to be other dis there
+other paths in our decision tree that
+also lead to the result but there's also
+going to be some paths that may be sum
+up to you know possibly one right if we
+subtract two of them and then add three
+of them that'll leave us with a positive
+one which is not equal to our target so
+in that case we won't count that but
+ultimately we're going to count how many
+different paths were able to lead us to
+that target value now this is the brute
+force of course this tree could have a
+height of n and we obviously have two
+branches each time uh right two
+different paths for every single node so
+that will put the time complexity at two
+to the power of n how can we optimize
+this well the trick is going to be in
+the parameters that we're passing into
+our recursive function right the index
+which we're maintaining and the total
+sum that we have as well using these we
+can actually optimize this solution so
+we can use the idea of caching to
+optimize this problem as with most
+dynamic programming problems so take a
+look at the parameters we have the index
+which we're passing in and the total now
+how many possible values could we pass
+in for the index value of course
+you know the size of nums right so
+that's how many would n is how many
+possibilities we could have for this
+index how many different possible values
+could we pass in for the total that's
+definitely a little bit harder to
+determine and the simple solution to
+that is what's the the maximum total
+that we could have from this array of
+nums in this case just add up all the
+nums it's 5 right 5 is the biggest
+number we could pass in for total and
+since 5 is the biggest number we could
+possibly also you know if we subtract
+every value we could get you know
+passing a negative 5 here right and
+potentially every value in between
+positive five and negative five not
+necessarily though but possibly that's
+the big idea here right since we're
+going for worst case time complexity
+which is big o time complexity we have
+to think about the worst case and
+possibly we could pass in every value
+between positive five and negative five
+so overall uh the way to think about how
+many different values we could pass in
+for the total is basically the total sum
+of the nums array right and let's just
+call that t for simplicity so
+t
+uh n times t where t is the total number
+of values we could pass in or rather the
+sum of the entire array that's going to
+be the overall time complexity if we
+perform caching using this pair of
+values so it's pretty easy to implement
+caching once you have coded up the
+recursive solution so we can now jump
+into the code okay so now let's write
+the code it's actually not too bad so
+remember we are going to be using a
+cache i'm going to call that dp it's
+just going to be a hash map in this case
+and we're going to be mapping a pair of
+values which is the index and
+the total so far we're going to be
+mapping this pair of values to the
+number of ways that we can actually get
+to the target value if we start at this
+index with this particular total value
+now we can actually write out our
+recursive function i'm just going to
+call it backtracking and i'm going to
+define it in
+this
+function let's just call it backtrack
+i'm going to define it nested inside of
+this outer function so that we don't
+have to pass in every parameter like dp
+like nums and target into this function
+we only have to pass an index and the
+current total so far not too bad now
+remember
+i always like to start out with our base
+case what's our base case is it it's if
+we reach the end of the array so if i is
+equal to length of nums let me remain
+rename index to i just to keep things a
+little bit shorter so if we've reached
+the end of the array then what are we
+going to do well we want to return 1 if
+our total is equal to the target value
+right if this is true then we can return
+1. if it's not true then we have to
+return 0 meaning that this is not a way
+to reach the target value so in python
+it's pretty easy to do that but you can
+use a ternary operator in your language
+of choice and the other base case is
+going to be if we've already seen this
+before we've already seen this pair of
+index total before then that means it
+must exist in our cache because that's
+what we're going to be doing as we
+compute these we're going to be caching
+them so if it exists in our cache well
+which we can check like this if it's in
+dp then we can just return
+dp at index i and this total value if
+either of those base cases does not
+evaluate to true then we get to the fun
+part the recursive part which is
+actually going to be pretty easy because
+we don't need any loops or anything like
+that we can just you know determine the
+answer for this uh pair of values this
+index total and how are we going to do
+that we're going to of course call our
+recursive function backtrack and
+remember we really had two choices that
+we could make uh one choice was to add
+the value at index i right if we do that
+then the or the next index we're going
+to be passing is just going to be i plus
+1 right we're going to be doing that no
+matter what regardless of whether we add
+or subtract the value but this for the
+second parameter for the total parameter
+we're going to pass in the current total
+plus nums of i that's if we're adding
+this now we could do the exact same
+thing if we're subtracting it so let's
+do that on the next line i'm going to do
+a plus sign because then when we go to
+the next line we want to put the
+opposite instead of adding this we're
+going to be subtracting nums of i the
+index though stays the same i plus 1. so
+if we take these two function calls add
+the results together that will tell us
+how many possible ways starting at index
+i and with this total that we could sum
+up to the target value right if we add
+these together then we can store them in
+our cache and then we can just return
+the result turn dp of index i
+and total so then we're good to go we
+have a completed our recursive function
+it really is that simple you just have
+to worry about the base cases and the
+recursive case which in our case was
+simple it's just two decisions pretty
+simple then we of course have to
+remember to actually call our
+backtracking function i always forget
+that so we're going to start at index
+equals 0 and our total initially is also
+going to be zero
+then we can return the result of this
+function in our outer function and then
+we're done right this is the answer they
+were looking for we returned it let's
+run it to make sure that the code works
+and as you can see on the left yes it
+does work and it's pretty efficient so i
+really hope that this was helpful if it
+was please like and subscribe it
+supports the channel a lot consider
+checking out my patreon where you can
+further support the channel if you'd
+like and hopefully i'll see you pretty

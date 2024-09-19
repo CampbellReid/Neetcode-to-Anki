@@ -1,0 +1,1736 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.000 --> 00:00:01.750 align:start position:0%
+ 
+hey<00:00:00.240><c> everyone</c><00:00:00.719><c> welcome</c><00:00:01.199><c> back</c><00:00:01.439><c> and</c><00:00:01.520><c> let's</c>
+
+00:00:01.750 --> 00:00:01.760 align:start position:0%
+hey everyone welcome back and let's
+ 
+
+00:00:01.760 --> 00:00:03.669 align:start position:0%
+hey everyone welcome back and let's
+write<00:00:02.000><c> some</c><00:00:02.159><c> more</c><00:00:02.399><c> neat</c><00:00:02.639><c> code</c><00:00:02.879><c> today</c><00:00:03.120><c> so</c><00:00:03.280><c> today</c>
+
+00:00:03.669 --> 00:00:03.679 align:start position:0%
+write some more neat code today so today
+ 
+
+00:00:03.679 --> 00:00:06.550 align:start position:0%
+write some more neat code today so today
+let's<00:00:03.919><c> solve</c><00:00:04.480><c> count</c><00:00:04.960><c> good</c><00:00:05.359><c> nodes</c><00:00:05.759><c> in</c><00:00:05.920><c> a</c><00:00:06.000><c> binary</c>
+
+00:00:06.550 --> 00:00:06.560 align:start position:0%
+let's solve count good nodes in a binary
+ 
+
+00:00:06.560 --> 00:00:09.430 align:start position:0%
+let's solve count good nodes in a binary
+tree<00:00:06.879><c> this</c><00:00:07.359><c> is</c><00:00:07.600><c> according</c><00:00:08.080><c> to</c><00:00:08.320><c> leak</c><00:00:08.559><c> code</c><00:00:09.120><c> this</c>
+
+00:00:09.430 --> 00:00:09.440 align:start position:0%
+tree this is according to leak code this
+ 
+
+00:00:09.440 --> 00:00:12.629 align:start position:0%
+tree this is according to leak code this
+is<00:00:09.679><c> microsoft's</c><00:00:10.559><c> most</c><00:00:11.120><c> asked</c><00:00:11.599><c> question</c><00:00:12.320><c> of</c>
+
+00:00:12.629 --> 00:00:12.639 align:start position:0%
+is microsoft's most asked question of
+ 
+
+00:00:12.639 --> 00:00:15.749 align:start position:0%
+is microsoft's most asked question of
+2021<00:00:13.679><c> so</c><00:00:14.000><c> far</c><00:00:14.719><c> and</c><00:00:14.960><c> in</c><00:00:15.040><c> my</c><00:00:15.280><c> opinion</c><00:00:15.599><c> it's</c>
+
+00:00:15.749 --> 00:00:15.759 align:start position:0%
+2021 so far and in my opinion it's
+ 
+
+00:00:15.759 --> 00:00:17.029 align:start position:0%
+2021 so far and in my opinion it's
+actually<00:00:16.080><c> a</c><00:00:16.160><c> pretty</c><00:00:16.400><c> good</c><00:00:16.640><c> problem</c><00:00:16.880><c> to</c>
+
+00:00:17.029 --> 00:00:17.039 align:start position:0%
+actually a pretty good problem to
+ 
+
+00:00:17.039 --> 00:00:18.630 align:start position:0%
+actually a pretty good problem to
+understand<00:00:17.440><c> a</c><00:00:17.520><c> lot</c><00:00:17.680><c> of</c><00:00:17.760><c> good</c><00:00:18.000><c> fundamental</c>
+
+00:00:18.630 --> 00:00:18.640 align:start position:0%
+understand a lot of good fundamental
+ 
+
+00:00:18.640 --> 00:00:20.310 align:start position:0%
+understand a lot of good fundamental
+knowledge<00:00:19.039><c> can</c><00:00:19.199><c> be</c><00:00:19.439><c> gained</c><00:00:19.760><c> from</c><00:00:20.000><c> this</c>
+
+00:00:20.310 --> 00:00:20.320 align:start position:0%
+knowledge can be gained from this
+ 
+
+00:00:20.320 --> 00:00:22.390 align:start position:0%
+knowledge can be gained from this
+problem<00:00:20.960><c> so</c><00:00:21.119><c> we're</c><00:00:21.279><c> given</c><00:00:21.600><c> the</c><00:00:21.840><c> root</c><00:00:22.080><c> of</c><00:00:22.240><c> a</c>
+
+00:00:22.390 --> 00:00:22.400 align:start position:0%
+problem so we're given the root of a
+ 
+
+00:00:22.400 --> 00:00:25.589 align:start position:0%
+problem so we're given the root of a
+binary<00:00:23.119><c> tree</c><00:00:23.840><c> that</c><00:00:24.160><c> is</c><00:00:24.320><c> going</c><00:00:24.560><c> to</c><00:00:24.800><c> always</c><00:00:25.279><c> be</c>
+
+00:00:25.589 --> 00:00:25.599 align:start position:0%
+binary tree that is going to always be
+ 
+
+00:00:25.599 --> 00:00:28.470 align:start position:0%
+binary tree that is going to always be
+non-empty<00:00:26.800><c> we</c><00:00:27.039><c> want</c><00:00:27.199><c> to</c><00:00:27.439><c> count</c><00:00:27.680><c> the</c><00:00:27.840><c> number</c><00:00:28.160><c> of</c>
+
+00:00:28.470 --> 00:00:28.480 align:start position:0%
+non-empty we want to count the number of
+ 
+
+00:00:28.480 --> 00:00:31.589 align:start position:0%
+non-empty we want to count the number of
+good<00:00:28.880><c> nodes</c><00:00:29.359><c> in</c><00:00:29.519><c> the</c><00:00:29.679><c> tree</c><00:00:30.240><c> and</c><00:00:30.480><c> a</c><00:00:30.720><c> good</c><00:00:31.119><c> node</c>
+
+00:00:31.589 --> 00:00:31.599 align:start position:0%
+good nodes in the tree and a good node
+ 
+
+00:00:31.599 --> 00:00:34.950 align:start position:0%
+good nodes in the tree and a good node
+is<00:00:31.760><c> defined</c><00:00:32.719><c> so</c><00:00:32.880><c> for</c><00:00:33.040><c> example</c><00:00:33.440><c> take</c><00:00:33.840><c> node</c><00:00:34.320><c> x</c><00:00:34.719><c> it</c>
+
+00:00:34.950 --> 00:00:34.960 align:start position:0%
+is defined so for example take node x it
+ 
+
+00:00:34.960 --> 00:00:38.389 align:start position:0%
+is defined so for example take node x it
+is<00:00:35.120><c> defined</c><00:00:35.680><c> as</c><00:00:35.920><c> a</c><00:00:36.079><c> good</c><00:00:36.480><c> node</c><00:00:36.960><c> if</c><00:00:37.440><c> for</c><00:00:37.680><c> example</c>
+
+00:00:38.389 --> 00:00:38.399 align:start position:0%
+is defined as a good node if for example
+ 
+
+00:00:38.399 --> 00:00:41.990 align:start position:0%
+is defined as a good node if for example
+let's<00:00:38.719><c> take</c><00:00:38.960><c> this</c><00:00:39.200><c> node</c><00:00:39.520><c> 4</c><00:00:40.160><c> if</c><00:00:40.640><c> from</c><00:00:40.960><c> the</c><00:00:41.280><c> path</c>
+
+00:00:41.990 --> 00:00:42.000 align:start position:0%
+let's take this node 4 if from the path
+ 
+
+00:00:42.000 --> 00:00:45.110 align:start position:0%
+let's take this node 4 if from the path
+from<00:00:42.320><c> the</c><00:00:42.719><c> root</c><00:00:43.120><c> node</c><00:00:43.600><c> all</c><00:00:43.760><c> the</c><00:00:43.920><c> way</c><00:00:44.320><c> down</c><00:00:44.800><c> to</c>
+
+00:00:45.110 --> 00:00:45.120 align:start position:0%
+from the root node all the way down to
+ 
+
+00:00:45.120 --> 00:00:48.310 align:start position:0%
+from the root node all the way down to
+this<00:00:45.360><c> node</c><00:00:46.079><c> this</c><00:00:46.559><c> path</c><00:00:47.039><c> in</c><00:00:47.200><c> particular</c><00:00:48.079><c> if</c>
+
+00:00:48.310 --> 00:00:48.320 align:start position:0%
+this node this path in particular if
+ 
+
+00:00:48.320 --> 00:00:51.270 align:start position:0%
+this node this path in particular if
+there<00:00:48.640><c> are</c><00:00:48.960><c> no</c><00:00:49.520><c> nodes</c><00:00:50.079><c> in</c><00:00:50.239><c> this</c><00:00:50.559><c> path</c><00:00:51.039><c> that</c>
+
+00:00:51.270 --> 00:00:51.280 align:start position:0%
+there are no nodes in this path that
+ 
+
+00:00:51.280 --> 00:00:53.510 align:start position:0%
+there are no nodes in this path that
+have<00:00:51.520><c> a</c><00:00:51.840><c> greater</c><00:00:52.480><c> value</c><00:00:52.960><c> than</c><00:00:53.199><c> this</c>
+
+00:00:53.510 --> 00:00:53.520 align:start position:0%
+have a greater value than this
+ 
+
+00:00:53.520 --> 00:00:56.069 align:start position:0%
+have a greater value than this
+particular<00:00:54.160><c> node</c><00:00:54.399><c> so</c><00:00:54.719><c> basically</c><00:00:55.280><c> along</c><00:00:55.760><c> this</c>
+
+00:00:56.069 --> 00:00:56.079 align:start position:0%
+particular node so basically along this
+ 
+
+00:00:56.079 --> 00:00:58.630 align:start position:0%
+particular node so basically along this
+path<00:00:56.559><c> if</c><00:00:56.719><c> there</c><00:00:57.039><c> isn't</c><00:00:57.440><c> any</c><00:00:57.760><c> value</c><00:00:58.320><c> larger</c>
+
+00:00:58.630 --> 00:00:58.640 align:start position:0%
+path if there isn't any value larger
+ 
+
+00:00:58.640 --> 00:01:02.389 align:start position:0%
+path if there isn't any value larger
+than<00:00:59.039><c> 4</c><00:00:59.600><c> then</c><00:00:59.840><c> this</c><00:01:00.079><c> node</c><00:01:00.480><c> 4</c><00:01:00.960><c> counts</c><00:01:01.359><c> as</c><00:01:01.600><c> a</c><00:01:01.920><c> good</c>
+
+00:01:02.389 --> 00:01:02.399 align:start position:0%
+than 4 then this node 4 counts as a good
+ 
+
+00:01:02.399 --> 00:01:05.509 align:start position:0%
+than 4 then this node 4 counts as a good
+node<00:01:03.120><c> what</c><00:01:03.280><c> about</c><00:01:03.840><c> 1</c><00:01:04.400><c> let's</c><00:01:04.640><c> take</c><00:01:04.879><c> the</c><00:01:05.119><c> path</c>
+
+00:01:05.509 --> 00:01:05.519 align:start position:0%
+node what about 1 let's take the path
+ 
+
+00:01:05.519 --> 00:01:07.350 align:start position:0%
+node what about 1 let's take the path
+from<00:01:05.760><c> the</c><00:01:06.000><c> root</c><00:01:06.240><c> to</c><00:01:06.479><c> 1.</c>
+
+00:01:07.350 --> 00:01:07.360 align:start position:0%
+from the root to 1.
+ 
+
+00:01:07.360 --> 00:01:09.830 align:start position:0%
+from the root to 1.
+are<00:01:07.520><c> there</c><00:01:07.760><c> nodes</c><00:01:08.240><c> greater</c><00:01:08.720><c> than</c><00:01:08.880><c> the</c><00:01:09.040><c> value</c><00:01:09.439><c> 1</c>
+
+00:01:09.830 --> 00:01:09.840 align:start position:0%
+are there nodes greater than the value 1
+ 
+
+00:01:09.840 --> 00:01:13.270 align:start position:0%
+are there nodes greater than the value 1
+along<00:01:10.320><c> this</c><00:01:10.640><c> path</c><00:01:11.360><c> yes</c><00:01:11.760><c> because</c><00:01:12.320><c> this</c><00:01:12.560><c> node</c><00:01:12.880><c> 3</c>
+
+00:01:13.270 --> 00:01:13.280 align:start position:0%
+along this path yes because this node 3
+ 
+
+00:01:13.280 --> 00:01:16.870 align:start position:0%
+along this path yes because this node 3
+is<00:01:13.600><c> greater</c><00:01:14.000><c> than</c><00:01:14.240><c> this</c><00:01:14.560><c> node</c><00:01:14.880><c> 1</c><00:01:15.280><c> so</c><00:01:15.520><c> then</c><00:01:16.240><c> 1</c><00:01:16.640><c> is</c>
+
+00:01:16.870 --> 00:01:16.880 align:start position:0%
+is greater than this node 1 so then 1 is
+ 
+
+00:01:16.880 --> 00:01:19.910 align:start position:0%
+is greater than this node 1 so then 1 is
+not<00:01:17.200><c> a</c><00:01:17.439><c> good</c><00:01:17.759><c> node</c><00:01:18.479><c> so</c><00:01:18.799><c> we</c><00:01:19.040><c> can</c><00:01:19.280><c> solve</c><00:01:19.680><c> this</c>
+
+00:01:19.910 --> 00:01:19.920 align:start position:0%
+not a good node so we can solve this
+ 
+
+00:01:19.920 --> 00:01:22.469 align:start position:0%
+not a good node so we can solve this
+problem<00:01:20.479><c> in</c><00:01:20.799><c> linear</c><00:01:21.200><c> time</c><00:01:21.520><c> big</c><00:01:21.759><c> o</c><00:01:21.840><c> of</c><00:01:22.080><c> n</c><00:01:22.240><c> time</c>
+
+00:01:22.469 --> 00:01:22.479 align:start position:0%
+problem in linear time big o of n time
+ 
+
+00:01:22.479 --> 00:01:24.390 align:start position:0%
+problem in linear time big o of n time
+where<00:01:22.720><c> n</c><00:01:22.880><c> is</c><00:01:22.960><c> the</c><00:01:23.119><c> number</c><00:01:23.360><c> of</c><00:01:23.520><c> nodes</c><00:01:24.080><c> and</c>
+
+00:01:24.390 --> 00:01:24.400 align:start position:0%
+where n is the number of nodes and
+ 
+
+00:01:24.400 --> 00:01:27.350 align:start position:0%
+where n is the number of nodes and
+memory<00:01:24.720><c> complexity</c><00:01:25.360><c> is</c><00:01:25.439><c> going</c><00:01:25.680><c> to</c><00:01:25.920><c> be</c><00:01:26.240><c> log</c><00:01:26.799><c> n</c>
+
+00:01:27.350 --> 00:01:27.360 align:start position:0%
+memory complexity is going to be log n
+ 
+
+00:01:27.360 --> 00:01:29.270 align:start position:0%
+memory complexity is going to be log n
+or<00:01:27.600><c> in</c><00:01:27.759><c> other</c><00:01:27.920><c> words</c><00:01:28.240><c> the</c><00:01:28.479><c> height</c><00:01:28.799><c> of</c><00:01:28.880><c> the</c><00:01:29.040><c> tree</c>
+
+00:01:29.270 --> 00:01:29.280 align:start position:0%
+or in other words the height of the tree
+ 
+
+00:01:29.280 --> 00:01:31.190 align:start position:0%
+or in other words the height of the tree
+which<00:01:29.600><c> technically</c><00:01:30.079><c> could</c><00:01:30.320><c> be</c><00:01:30.560><c> greater</c><00:01:30.960><c> than</c>
+
+00:01:31.190 --> 00:01:31.200 align:start position:0%
+which technically could be greater than
+ 
+
+00:01:31.200 --> 00:01:33.830 align:start position:0%
+which technically could be greater than
+log<00:01:31.439><c> n</c><00:01:31.600><c> it</c><00:01:31.680><c> could</c><00:01:31.840><c> be</c><00:01:32.079><c> as</c><00:01:32.400><c> big</c><00:01:32.720><c> as</c><00:01:33.119><c> n</c>
+
+00:01:33.830 --> 00:01:33.840 align:start position:0%
+log n it could be as big as n
+ 
+
+00:01:33.840 --> 00:01:36.469 align:start position:0%
+log n it could be as big as n
+and<00:01:34.079><c> we</c><00:01:34.320><c> can</c><00:01:34.640><c> accomplish</c><00:01:35.200><c> this</c><00:01:35.520><c> with</c><00:01:35.680><c> a</c><00:01:36.000><c> simple</c>
+
+00:01:36.469 --> 00:01:36.479 align:start position:0%
+and we can accomplish this with a simple
+ 
+
+00:01:36.479 --> 00:01:38.469 align:start position:0%
+and we can accomplish this with a simple
+tree<00:01:36.799><c> traversal</c><00:01:37.439><c> in</c><00:01:37.600><c> particular</c><00:01:38.159><c> we're</c><00:01:38.400><c> going</c>
+
+00:01:38.469 --> 00:01:38.479 align:start position:0%
+tree traversal in particular we're going
+ 
+
+00:01:38.479 --> 00:01:42.149 align:start position:0%
+tree traversal in particular we're going
+to<00:01:38.560><c> be</c><00:01:38.720><c> using</c><00:01:39.320><c> pre-order</c><00:01:40.640><c> traversal</c><00:01:41.840><c> meaning</c>
+
+00:01:42.149 --> 00:01:42.159 align:start position:0%
+to be using pre-order traversal meaning
+ 
+
+00:01:42.159 --> 00:01:44.950 align:start position:0%
+to be using pre-order traversal meaning
+when<00:01:42.399><c> we</c><00:01:42.799><c> recursively</c><00:01:43.600><c> run</c><00:01:43.840><c> dfs</c><00:01:44.479><c> on</c><00:01:44.640><c> this</c>
+
+00:01:44.950 --> 00:01:44.960 align:start position:0%
+when we recursively run dfs on this
+ 
+
+00:01:44.960 --> 00:01:47.670 align:start position:0%
+when we recursively run dfs on this
+we're<00:01:45.119><c> going</c><00:01:45.200><c> to</c><00:01:45.439><c> process</c><00:01:46.159><c> each</c><00:01:46.640><c> node</c><00:01:47.200><c> before</c>
+
+00:01:47.670 --> 00:01:47.680 align:start position:0%
+we're going to process each node before
+ 
+
+00:01:47.680 --> 00:01:50.230 align:start position:0%
+we're going to process each node before
+we<00:01:48.000><c> do</c><00:01:48.560><c> recursively</c><00:01:49.200><c> the</c><00:01:49.360><c> left</c><00:01:49.600><c> subtree</c><00:01:50.079><c> and</c>
+
+00:01:50.230 --> 00:01:50.240 align:start position:0%
+we do recursively the left subtree and
+ 
+
+00:01:50.240 --> 00:01:52.630 align:start position:0%
+we do recursively the left subtree and
+recursively<00:01:50.880><c> the</c><00:01:51.119><c> right</c><00:01:51.439><c> subtree</c><00:01:52.240><c> so</c><00:01:52.479><c> the</c>
+
+00:01:52.630 --> 00:01:52.640 align:start position:0%
+recursively the right subtree so the
+ 
+
+00:01:52.640 --> 00:01:55.109 align:start position:0%
+recursively the right subtree so the
+first<00:01:52.960><c> question</c><00:01:53.439><c> is</c><00:01:53.680><c> is</c><00:01:53.920><c> the</c><00:01:54.320><c> root</c><00:01:54.720><c> node</c>
+
+00:01:55.109 --> 00:01:55.119 align:start position:0%
+first question is is the root node
+ 
+
+00:01:55.119 --> 00:01:57.670 align:start position:0%
+first question is is the root node
+technically<00:01:55.840><c> a</c><00:01:56.079><c> good</c><00:01:56.399><c> node</c><00:01:56.799><c> well</c>
+
+00:01:57.670 --> 00:01:57.680 align:start position:0%
+technically a good node well
+ 
+
+00:01:57.680 --> 00:01:59.670 align:start position:0%
+technically a good node well
+this<00:01:57.920><c> is</c><00:01:58.240><c> basically</c><00:01:58.640><c> the</c><00:01:58.799><c> entire</c><00:01:59.200><c> path</c><00:01:59.520><c> are</c>
+
+00:01:59.670 --> 00:01:59.680 align:start position:0%
+this is basically the entire path are
+ 
+
+00:01:59.680 --> 00:02:01.670 align:start position:0%
+this is basically the entire path are
+there<00:01:59.840><c> any</c><00:02:00.079><c> nodes</c><00:02:00.399><c> greater</c><00:02:00.719><c> than</c><00:02:00.960><c> three</c><00:02:01.280><c> no</c><00:02:01.520><c> so</c>
+
+00:02:01.670 --> 00:02:01.680 align:start position:0%
+there any nodes greater than three no so
+ 
+
+00:02:01.680 --> 00:02:03.830 align:start position:0%
+there any nodes greater than three no so
+technically<00:02:02.240><c> yes</c><00:02:02.479><c> the</c><00:02:02.640><c> root</c><00:02:02.880><c> node</c><00:02:03.200><c> does</c><00:02:03.520><c> count</c>
+
+00:02:03.830 --> 00:02:03.840 align:start position:0%
+technically yes the root node does count
+ 
+
+00:02:03.840 --> 00:02:05.350 align:start position:0%
+technically yes the root node does count
+as<00:02:04.000><c> a</c><00:02:04.079><c> good</c><00:02:04.240><c> note</c><00:02:04.479><c> so</c><00:02:04.640><c> what</c><00:02:04.799><c> we're</c><00:02:04.960><c> going</c><00:02:05.040><c> to</c><00:02:05.119><c> do</c>
+
+00:02:05.350 --> 00:02:05.360 align:start position:0%
+as a good note so what we're going to do
+ 
+
+00:02:05.360 --> 00:02:08.389 align:start position:0%
+as a good note so what we're going to do
+now<00:02:05.759><c> we've</c><00:02:06.000><c> counted</c><00:02:06.560><c> one</c><00:02:07.200><c> as</c>
+
+00:02:08.389 --> 00:02:08.399 align:start position:0%
+now we've counted one as
+ 
+
+00:02:08.399 --> 00:02:10.309 align:start position:0%
+now we've counted one as
+we<00:02:08.560><c> found</c><00:02:08.959><c> one</c><00:02:09.280><c> good</c><00:02:09.520><c> note</c><00:02:09.840><c> and</c><00:02:09.920><c> now</c><00:02:10.080><c> we</c><00:02:10.160><c> want</c>
+
+00:02:10.309 --> 00:02:10.319 align:start position:0%
+we found one good note and now we want
+ 
+
+00:02:10.319 --> 00:02:12.309 align:start position:0%
+we found one good note and now we want
+to<00:02:10.399><c> know</c><00:02:10.640><c> how</c><00:02:10.800><c> many</c><00:02:11.280><c> good</c><00:02:11.520><c> nodes</c><00:02:11.840><c> are</c><00:02:12.000><c> there</c><00:02:12.239><c> in</c>
+
+00:02:12.309 --> 00:02:12.319 align:start position:0%
+to know how many good nodes are there in
+ 
+
+00:02:12.319 --> 00:02:14.229 align:start position:0%
+to know how many good nodes are there in
+the<00:02:12.480><c> left</c><00:02:12.720><c> subtree</c><00:02:13.200><c> and</c><00:02:13.280><c> how</c><00:02:13.440><c> many</c><00:02:13.680><c> good</c><00:02:13.920><c> nodes</c>
+
+00:02:14.229 --> 00:02:14.239 align:start position:0%
+the left subtree and how many good nodes
+ 
+
+00:02:14.239 --> 00:02:16.390 align:start position:0%
+the left subtree and how many good nodes
+are<00:02:14.400><c> there</c><00:02:14.640><c> in</c><00:02:14.720><c> the</c><00:02:14.879><c> right</c><00:02:15.200><c> subtree</c><00:02:15.840><c> well</c>
+
+00:02:16.390 --> 00:02:16.400 align:start position:0%
+are there in the right subtree well
+ 
+
+00:02:16.400 --> 00:02:18.309 align:start position:0%
+are there in the right subtree well
+first<00:02:16.720><c> let's</c><00:02:16.959><c> do</c><00:02:17.120><c> the</c><00:02:17.360><c> left</c><00:02:17.599><c> subtree</c><00:02:18.160><c> even</c>
+
+00:02:18.309 --> 00:02:18.319 align:start position:0%
+first let's do the left subtree even
+ 
+
+00:02:18.319 --> 00:02:19.589 align:start position:0%
+first let's do the left subtree even
+though<00:02:18.480><c> we</c><00:02:18.640><c> could</c><00:02:18.800><c> do</c><00:02:18.959><c> it</c><00:02:19.040><c> in</c><00:02:19.120><c> the</c><00:02:19.280><c> opposite</c>
+
+00:02:19.589 --> 00:02:19.599 align:start position:0%
+though we could do it in the opposite
+ 
+
+00:02:19.599 --> 00:02:20.949 align:start position:0%
+though we could do it in the opposite
+order<00:02:19.920><c> but</c><00:02:20.000><c> i'm</c><00:02:20.080><c> just</c><00:02:20.239><c> going</c><00:02:20.319><c> to</c><00:02:20.400><c> do</c><00:02:20.480><c> the</c><00:02:20.640><c> left</c>
+
+00:02:20.949 --> 00:02:20.959 align:start position:0%
+order but i'm just going to do the left
+ 
+
+00:02:20.959 --> 00:02:22.550 align:start position:0%
+order but i'm just going to do the left
+first<00:02:21.680><c> so</c>
+
+00:02:22.550 --> 00:02:22.560 align:start position:0%
+first so
+ 
+
+00:02:22.560 --> 00:02:24.390 align:start position:0%
+first so
+to<00:02:22.720><c> count</c><00:02:23.040><c> how</c><00:02:23.200><c> many</c><00:02:23.440><c> good</c><00:02:23.680><c> nodes</c><00:02:23.920><c> are</c><00:02:24.080><c> in</c><00:02:24.160><c> this</c>
+
+00:02:24.390 --> 00:02:24.400 align:start position:0%
+to count how many good nodes are in this
+ 
+
+00:02:24.400 --> 00:02:26.550 align:start position:0%
+to count how many good nodes are in this
+left<00:02:24.640><c> subtree</c><00:02:25.120><c> first</c><00:02:25.440><c> we</c><00:02:25.599><c> have</c><00:02:25.680><c> to</c><00:02:26.000><c> we</c><00:02:26.080><c> have</c><00:02:26.239><c> to</c>
+
+00:02:26.550 --> 00:02:26.560 align:start position:0%
+left subtree first we have to we have to
+ 
+
+00:02:26.560 --> 00:02:29.190 align:start position:0%
+left subtree first we have to we have to
+run<00:02:26.959><c> the</c><00:02:27.120><c> dfs</c><00:02:27.680><c> on</c><00:02:27.840><c> the</c><00:02:28.000><c> left</c><00:02:28.319><c> child</c><00:02:28.640><c> but</c><00:02:28.879><c> before</c>
+
+00:02:29.190 --> 00:02:29.200 align:start position:0%
+run the dfs on the left child but before
+ 
+
+00:02:29.200 --> 00:02:31.670 align:start position:0%
+run the dfs on the left child but before
+we<00:02:29.360><c> do</c><00:02:29.520><c> that</c><00:02:29.680><c> we</c><00:02:29.760><c> have</c><00:02:29.920><c> to</c><00:02:30.160><c> pass</c><00:02:30.800><c> to</c><00:02:31.120><c> this</c><00:02:31.440><c> left</c>
+
+00:02:31.670 --> 00:02:31.680 align:start position:0%
+we do that we have to pass to this left
+ 
+
+00:02:31.680 --> 00:02:33.589 align:start position:0%
+we do that we have to pass to this left
+child<00:02:32.000><c> we</c><00:02:32.160><c> have</c><00:02:32.239><c> to</c><00:02:32.480><c> pass</c><00:02:32.959><c> what's</c><00:02:33.200><c> the</c>
+
+00:02:33.589 --> 00:02:33.599 align:start position:0%
+child we have to pass what's the
+ 
+
+00:02:33.599 --> 00:02:36.229 align:start position:0%
+child we have to pass what's the
+greatest<00:02:34.160><c> value</c><00:02:34.720><c> we</c><00:02:34.959><c> have</c><00:02:35.200><c> seen</c><00:02:35.519><c> so</c><00:02:35.680><c> far</c><00:02:36.080><c> we</c>
+
+00:02:36.229 --> 00:02:36.239 align:start position:0%
+greatest value we have seen so far we
+ 
+
+00:02:36.239 --> 00:02:38.150 align:start position:0%
+greatest value we have seen so far we
+don't<00:02:36.400><c> have</c><00:02:36.480><c> to</c><00:02:36.640><c> pass</c><00:02:37.120><c> all</c><00:02:37.280><c> the</c><00:02:37.519><c> values</c><00:02:38.000><c> we've</c>
+
+00:02:38.150 --> 00:02:38.160 align:start position:0%
+don't have to pass all the values we've
+ 
+
+00:02:38.160 --> 00:02:39.830 align:start position:0%
+don't have to pass all the values we've
+seen<00:02:38.400><c> so</c><00:02:38.560><c> far</c><00:02:38.800><c> we</c><00:02:38.879><c> just</c><00:02:39.040><c> have</c><00:02:39.120><c> to</c><00:02:39.280><c> pass</c><00:02:39.519><c> the</c>
+
+00:02:39.830 --> 00:02:39.840 align:start position:0%
+seen so far we just have to pass the
+ 
+
+00:02:39.840 --> 00:02:41.430 align:start position:0%
+seen so far we just have to pass the
+greatest<00:02:40.640><c> because</c><00:02:40.879><c> then</c><00:02:41.040><c> we're</c><00:02:41.200><c> going</c><00:02:41.280><c> to</c>
+
+00:02:41.430 --> 00:02:41.440 align:start position:0%
+greatest because then we're going to
+ 
+
+00:02:41.440 --> 00:02:43.990 align:start position:0%
+greatest because then we're going to
+check<00:02:41.680><c> for</c><00:02:41.840><c> every</c><00:02:42.160><c> node</c><00:02:42.800><c> is</c><00:02:43.120><c> this</c>
+
+00:02:43.990 --> 00:02:44.000 align:start position:0%
+check for every node is this
+ 
+
+00:02:44.000 --> 00:02:45.910 align:start position:0%
+check for every node is this
+is<00:02:44.239><c> the</c><00:02:44.400><c> greatest</c><00:02:44.879><c> node</c><00:02:45.200><c> that</c><00:02:45.280><c> we've</c><00:02:45.440><c> seen</c><00:02:45.760><c> so</c>
+
+00:02:45.910 --> 00:02:45.920 align:start position:0%
+is the greatest node that we've seen so
+ 
+
+00:02:45.920 --> 00:02:48.869 align:start position:0%
+is the greatest node that we've seen so
+far<00:02:46.239><c> somehow</c><00:02:46.800><c> greater</c><00:02:47.519><c> than</c><00:02:47.840><c> this</c><00:02:48.080><c> node</c><00:02:48.560><c> if</c><00:02:48.720><c> it</c>
+
+00:02:48.869 --> 00:02:48.879 align:start position:0%
+far somehow greater than this node if it
+ 
+
+00:02:48.879 --> 00:02:51.990 align:start position:0%
+far somehow greater than this node if it
+is<00:02:49.040><c> then</c><00:02:49.200><c> this</c><00:02:49.440><c> is</c><00:02:49.599><c> not</c><00:02:49.920><c> a</c><00:02:50.239><c> good</c><00:02:50.800><c> node</c><00:02:51.440><c> so</c><00:02:51.760><c> to</c>
+
+00:02:51.990 --> 00:02:52.000 align:start position:0%
+is then this is not a good node so to
+ 
+
+00:02:52.000 --> 00:02:53.589 align:start position:0%
+is then this is not a good node so to
+this<00:02:52.239><c> node</c><00:02:52.400><c> we're</c><00:02:52.560><c> gonna</c><00:02:52.720><c> pass</c><00:02:53.040><c> the</c><00:02:53.120><c> value</c>
+
+00:02:53.589 --> 00:02:53.599 align:start position:0%
+this node we're gonna pass the value
+ 
+
+00:02:53.599 --> 00:02:55.670 align:start position:0%
+this node we're gonna pass the value
+three<00:02:53.920><c> we're</c><00:02:54.080><c> gonna</c><00:02:54.319><c> now</c><00:02:54.640><c> process</c><00:02:55.120><c> this</c><00:02:55.519><c> the</c>
+
+00:02:55.670 --> 00:02:55.680 align:start position:0%
+three we're gonna now process this the
+ 
+
+00:02:55.680 --> 00:02:57.910 align:start position:0%
+three we're gonna now process this the
+greatest<00:02:56.080><c> we've</c><00:02:56.239><c> seen</c><00:02:56.480><c> so</c><00:02:56.720><c> far</c><00:02:56.879><c> is</c><00:02:57.040><c> three</c><00:02:57.680><c> one</c>
+
+00:02:57.910 --> 00:02:57.920 align:start position:0%
+greatest we've seen so far is three one
+ 
+
+00:02:57.920 --> 00:03:00.149 align:start position:0%
+greatest we've seen so far is three one
+is<00:02:58.000><c> smaller</c><00:02:58.319><c> than</c><00:02:58.480><c> that</c><00:02:58.720><c> this</c><00:02:58.959><c> is</c><00:02:59.120><c> not</c><00:02:59.440><c> a</c><00:02:59.680><c> good</c>
+
+00:03:00.149 --> 00:03:00.159 align:start position:0%
+is smaller than that this is not a good
+ 
+
+00:03:00.159 --> 00:03:01.830 align:start position:0%
+is smaller than that this is not a good
+node<00:03:00.480><c> so</c><00:03:00.640><c> this</c><00:03:00.800><c> does</c><00:03:00.959><c> not</c><00:03:01.200><c> count</c><00:03:01.440><c> but</c><00:03:01.599><c> we</c><00:03:01.680><c> still</c>
+
+00:03:01.830 --> 00:03:01.840 align:start position:0%
+node so this does not count but we still
+ 
+
+00:03:01.840 --> 00:03:04.630 align:start position:0%
+node so this does not count but we still
+have<00:03:02.000><c> to</c><00:03:02.159><c> recursively</c><00:03:03.200><c> run</c><00:03:03.519><c> dfs</c><00:03:04.080><c> on</c><00:03:04.159><c> the</c><00:03:04.319><c> left</c>
+
+00:03:04.630 --> 00:03:04.640 align:start position:0%
+have to recursively run dfs on the left
+ 
+
+00:03:04.640 --> 00:03:07.350 align:start position:0%
+have to recursively run dfs on the left
+and<00:03:04.800><c> right</c><00:03:05.200><c> now</c><00:03:05.599><c> when</c><00:03:05.760><c> we</c><00:03:06.319><c> do</c><00:03:06.480><c> run</c><00:03:06.720><c> dfs</c><00:03:07.200><c> on</c><00:03:07.280><c> the</c>
+
+00:03:07.350 --> 00:03:07.360 align:start position:0%
+and right now when we do run dfs on the
+ 
+
+00:03:07.360 --> 00:03:09.030 align:start position:0%
+and right now when we do run dfs on the
+left<00:03:07.680><c> obviously</c><00:03:08.000><c> it</c><00:03:08.080><c> doesn't</c><00:03:08.319><c> have</c><00:03:08.480><c> a</c><00:03:08.720><c> right</c>
+
+00:03:09.030 --> 00:03:09.040 align:start position:0%
+left obviously it doesn't have a right
+ 
+
+00:03:09.040 --> 00:03:11.270 align:start position:0%
+left obviously it doesn't have a right
+subtree<00:03:09.519><c> but</c><00:03:09.760><c> on</c><00:03:09.920><c> the</c><00:03:10.080><c> left</c><00:03:10.319><c> subtree</c><00:03:11.040><c> what</c>
+
+00:03:11.270 --> 00:03:11.280 align:start position:0%
+subtree but on the left subtree what
+ 
+
+00:03:11.280 --> 00:03:13.350 align:start position:0%
+subtree but on the left subtree what
+value<00:03:11.680><c> are</c><00:03:11.840><c> we</c><00:03:11.920><c> going</c><00:03:12.080><c> to</c><00:03:12.159><c> pass</c><00:03:12.560><c> here</c><00:03:13.040><c> well</c><00:03:13.280><c> we</c>
+
+00:03:13.350 --> 00:03:13.360 align:start position:0%
+value are we going to pass here well we
+ 
+
+00:03:13.360 --> 00:03:15.750 align:start position:0%
+value are we going to pass here well we
+would<00:03:13.519><c> want</c><00:03:13.680><c> to</c><00:03:13.840><c> take</c><00:03:14.000><c> the</c><00:03:14.239><c> max</c><00:03:14.800><c> of</c><00:03:15.120><c> 3</c><00:03:15.519><c> which</c>
+
+00:03:15.750 --> 00:03:15.760 align:start position:0%
+would want to take the max of 3 which
+ 
+
+00:03:15.760 --> 00:03:19.190 align:start position:0%
+would want to take the max of 3 which
+was<00:03:16.400><c> the</c><00:03:16.640><c> parents</c><00:03:17.440><c> max</c><00:03:18.080><c> and</c><00:03:18.400><c> the</c><00:03:18.560><c> value</c><00:03:18.959><c> here</c>
+
+00:03:19.190 --> 00:03:19.200 align:start position:0%
+was the parents max and the value here
+ 
+
+00:03:19.200 --> 00:03:21.190 align:start position:0%
+was the parents max and the value here
+of<00:03:19.280><c> course</c><00:03:19.680><c> one</c><00:03:20.000><c> is</c><00:03:20.239><c> smaller</c><00:03:20.640><c> than</c><00:03:20.879><c> three</c><00:03:21.040><c> so</c>
+
+00:03:21.190 --> 00:03:21.200 align:start position:0%
+of course one is smaller than three so
+ 
+
+00:03:21.200 --> 00:03:23.750 align:start position:0%
+of course one is smaller than three so
+we're<00:03:21.360><c> going</c><00:03:21.440><c> to</c><00:03:21.519><c> pass</c><00:03:22.159><c> three</c><00:03:22.800><c> to</c><00:03:23.040><c> this</c><00:03:23.440><c> uh</c>
+
+00:03:23.750 --> 00:03:23.760 align:start position:0%
+we're going to pass three to this uh
+ 
+
+00:03:23.760 --> 00:03:26.070 align:start position:0%
+we're going to pass three to this uh
+node<00:03:24.159><c> as</c><00:03:24.319><c> well</c><00:03:24.799><c> so</c><00:03:25.040><c> so</c><00:03:25.200><c> far</c><00:03:25.440><c> the</c><00:03:25.599><c> max</c><00:03:25.840><c> we've</c>
+
+00:03:26.070 --> 00:03:26.080 align:start position:0%
+node as well so so far the max we've
+ 
+
+00:03:26.080 --> 00:03:27.589 align:start position:0%
+node as well so so far the max we've
+seen<00:03:26.480><c> is</c><00:03:26.720><c> three</c>
+
+00:03:27.589 --> 00:03:27.599 align:start position:0%
+seen is three
+ 
+
+00:03:27.599 --> 00:03:30.070 align:start position:0%
+seen is three
+is<00:03:28.000><c> is</c><00:03:28.159><c> the</c><00:03:28.319><c> max</c><00:03:28.799><c> greater</c><00:03:29.280><c> than</c><00:03:29.519><c> this</c><00:03:29.760><c> node</c>
+
+00:03:30.070 --> 00:03:30.080 align:start position:0%
+is is the max greater than this node
+ 
+
+00:03:30.080 --> 00:03:31.509 align:start position:0%
+is is the max greater than this node
+it's<00:03:30.400><c> not</c><00:03:30.640><c> so</c><00:03:30.799><c> even</c><00:03:30.959><c> though</c><00:03:31.120><c> they're</c><00:03:31.360><c> the</c>
+
+00:03:31.509 --> 00:03:31.519 align:start position:0%
+it's not so even though they're the
+ 
+
+00:03:31.519 --> 00:03:34.470 align:start position:0%
+it's not so even though they're the
+exact<00:03:31.920><c> same</c><00:03:32.400><c> value</c><00:03:33.120><c> this</c><00:03:33.360><c> still</c><00:03:33.680><c> counts</c><00:03:34.080><c> as</c><00:03:34.239><c> a</c>
+
+00:03:34.470 --> 00:03:34.480 align:start position:0%
+exact same value this still counts as a
+ 
+
+00:03:34.480 --> 00:03:37.190 align:start position:0%
+exact same value this still counts as a
+good<00:03:35.200><c> node</c><00:03:35.599><c> so</c><00:03:35.760><c> that's</c><00:03:36.000><c> what</c><00:03:36.159><c> we</c><00:03:36.319><c> learned</c><00:03:36.959><c> and</c>
+
+00:03:37.190 --> 00:03:37.200 align:start position:0%
+good node so that's what we learned and
+ 
+
+00:03:37.200 --> 00:03:37.990 align:start position:0%
+good node so that's what we learned and
+so
+
+00:03:37.990 --> 00:03:38.000 align:start position:0%
+so
+ 
+
+00:03:38.000 --> 00:03:40.869 align:start position:0%
+so
+now<00:03:38.400><c> we</c><00:03:38.560><c> have</c><00:03:38.799><c> seen</c><00:03:39.120><c> two</c><00:03:39.440><c> good</c><00:03:39.680><c> nodes</c><00:03:40.000><c> so</c><00:03:40.239><c> far</c>
+
+00:03:40.869 --> 00:03:40.879 align:start position:0%
+now we have seen two good nodes so far
+ 
+
+00:03:40.879 --> 00:03:43.030 align:start position:0%
+now we have seen two good nodes so far
+now<00:03:41.040><c> the</c><00:03:41.280><c> same</c><00:03:41.680><c> thing</c><00:03:42.239><c> we're</c><00:03:42.480><c> going</c><00:03:42.560><c> to</c><00:03:42.640><c> do</c><00:03:42.879><c> on</c>
+
+00:03:43.030 --> 00:03:43.040 align:start position:0%
+now the same thing we're going to do on
+ 
+
+00:03:43.040 --> 00:03:45.110 align:start position:0%
+now the same thing we're going to do on
+the<00:03:43.280><c> right</c><00:03:43.519><c> subtree</c><00:03:44.080><c> literally</c><00:03:44.560><c> the</c><00:03:44.799><c> exact</c>
+
+00:03:45.110 --> 00:03:45.120 align:start position:0%
+the right subtree literally the exact
+ 
+
+00:03:45.120 --> 00:03:46.710 align:start position:0%
+the right subtree literally the exact
+same<00:03:45.440><c> thing</c><00:03:45.599><c> just</c><00:03:45.840><c> recursively</c><00:03:46.400><c> doing</c><00:03:46.640><c> the</c>
+
+00:03:46.710 --> 00:03:46.720 align:start position:0%
+same thing just recursively doing the
+ 
+
+00:03:46.720 --> 00:03:49.110 align:start position:0%
+same thing just recursively doing the
+same<00:03:46.879><c> thing</c><00:03:47.120><c> we're</c><00:03:47.280><c> going</c><00:03:47.360><c> to</c><00:03:47.440><c> pass</c><00:03:48.000><c> 3</c><00:03:48.640><c> to</c><00:03:48.879><c> this</c>
+
+00:03:49.110 --> 00:03:49.120 align:start position:0%
+same thing we're going to pass 3 to this
+ 
+
+00:03:49.120 --> 00:03:51.110 align:start position:0%
+same thing we're going to pass 3 to this
+node<00:03:49.440><c> because</c><00:03:49.680><c> 3</c><00:03:50.000><c> is</c><00:03:50.080><c> the</c><00:03:50.239><c> max</c><00:03:50.560><c> value</c><00:03:50.879><c> we've</c>
+
+00:03:51.110 --> 00:03:51.120 align:start position:0%
+node because 3 is the max value we've
+ 
+
+00:03:51.120 --> 00:03:53.830 align:start position:0%
+node because 3 is the max value we've
+seen<00:03:51.360><c> so</c><00:03:51.599><c> far</c><00:03:52.239><c> from</c><00:03:52.799><c> the</c><00:03:53.120><c> root</c><00:03:53.439><c> right</c><00:03:53.599><c> if</c><00:03:53.760><c> there</c>
+
+00:03:53.830 --> 00:03:53.840 align:start position:0%
+seen so far from the root right if there
+ 
+
+00:03:53.840 --> 00:03:55.509 align:start position:0%
+seen so far from the root right if there
+was<00:03:54.000><c> a</c><00:03:54.080><c> really</c><00:03:54.319><c> big</c><00:03:54.480><c> value</c><00:03:54.879><c> here</c><00:03:55.120><c> we</c><00:03:55.280><c> wouldn't</c>
+
+00:03:55.509 --> 00:03:55.519 align:start position:0%
+was a really big value here we wouldn't
+ 
+
+00:03:55.519 --> 00:03:57.350 align:start position:0%
+was a really big value here we wouldn't
+want<00:03:55.680><c> to</c><00:03:55.920><c> transfer</c><00:03:56.319><c> it</c><00:03:56.400><c> to</c><00:03:56.560><c> the</c><00:03:56.640><c> right</c><00:03:56.879><c> subtree</c>
+
+00:03:57.350 --> 00:03:57.360 align:start position:0%
+want to transfer it to the right subtree
+ 
+
+00:03:57.360 --> 00:03:59.270 align:start position:0%
+want to transfer it to the right subtree
+but<00:03:57.760><c> we're</c><00:03:57.920><c> counting</c><00:03:58.319><c> from</c><00:03:58.560><c> the</c><00:03:58.799><c> root</c>
+
+00:03:59.270 --> 00:03:59.280 align:start position:0%
+but we're counting from the root
+ 
+
+00:03:59.280 --> 00:04:02.630 align:start position:0%
+but we're counting from the root
+downwards<00:04:00.319><c> so</c><00:04:00.560><c> let's</c><00:04:00.799><c> look</c><00:04:00.959><c> at</c><00:04:01.200><c> four</c><00:04:02.000><c> is</c><00:04:02.319><c> this</c>
+
+00:04:02.630 --> 00:04:02.640 align:start position:0%
+downwards so let's look at four is this
+ 
+
+00:04:02.640 --> 00:04:05.750 align:start position:0%
+downwards so let's look at four is this
+max<00:04:03.040><c> value</c><00:04:03.599><c> greater</c><00:04:04.080><c> than</c><00:04:04.480><c> four</c><00:04:04.799><c> it's</c><00:04:05.040><c> not</c><00:04:05.519><c> so</c>
+
+00:04:05.750 --> 00:04:05.760 align:start position:0%
+max value greater than four it's not so
+ 
+
+00:04:05.760 --> 00:04:09.270 align:start position:0%
+max value greater than four it's not so
+then<00:04:06.080><c> four</c><00:04:06.480><c> does</c><00:04:06.879><c> count</c><00:04:07.200><c> as</c><00:04:07.360><c> a</c><00:04:07.680><c> good</c><00:04:08.319><c> node</c>
+
+00:04:09.270 --> 00:04:09.280 align:start position:0%
+then four does count as a good node
+ 
+
+00:04:09.280 --> 00:04:11.830 align:start position:0%
+then four does count as a good node
+now<00:04:09.519><c> let's</c><00:04:09.760><c> do</c><00:04:09.920><c> the</c><00:04:10.000><c> same</c><00:04:10.319><c> thing</c><00:04:10.720><c> for</c><00:04:10.959><c> the</c><00:04:11.280><c> left</c>
+
+00:04:11.830 --> 00:04:11.840 align:start position:0%
+now let's do the same thing for the left
+ 
+
+00:04:11.840 --> 00:04:13.750 align:start position:0%
+now let's do the same thing for the left
+subtree<00:04:12.560><c> but</c><00:04:12.879><c> when</c><00:04:13.040><c> we</c><00:04:13.200><c> go</c><00:04:13.360><c> to</c><00:04:13.519><c> the</c><00:04:13.599><c> left</c>
+
+00:04:13.750 --> 00:04:13.760 align:start position:0%
+subtree but when we go to the left
+ 
+
+00:04:13.760 --> 00:04:15.670 align:start position:0%
+subtree but when we go to the left
+subtree<00:04:14.159><c> we're</c><00:04:14.319><c> not</c><00:04:14.480><c> passing</c><00:04:14.959><c> three</c><00:04:15.439><c> we're</c>
+
+00:04:15.670 --> 00:04:15.680 align:start position:0%
+subtree we're not passing three we're
+ 
+
+00:04:15.680 --> 00:04:18.150 align:start position:0%
+subtree we're not passing three we're
+passing<00:04:16.320><c> four</c><00:04:16.639><c> because</c><00:04:17.040><c> so</c><00:04:17.280><c> far</c><00:04:17.519><c> now</c><00:04:17.759><c> along</c>
+
+00:04:18.150 --> 00:04:18.160 align:start position:0%
+passing four because so far now along
+ 
+
+00:04:18.160 --> 00:04:20.069 align:start position:0%
+passing four because so far now along
+this<00:04:18.479><c> path</c><00:04:18.959><c> the</c><00:04:19.120><c> max</c><00:04:19.440><c> value</c><00:04:19.840><c> we've</c>
+
+00:04:20.069 --> 00:04:20.079 align:start position:0%
+this path the max value we've
+ 
+
+00:04:20.079 --> 00:04:22.150 align:start position:0%
+this path the max value we've
+encountered<00:04:20.799><c> is</c><00:04:21.359><c> four</c><00:04:21.680><c> so</c><00:04:21.840><c> we're</c><00:04:21.919><c> going</c><00:04:22.000><c> to</c>
+
+00:04:22.150 --> 00:04:22.160 align:start position:0%
+encountered is four so we're going to
+ 
+
+00:04:22.160 --> 00:04:25.350 align:start position:0%
+encountered is four so we're going to
+pass<00:04:22.560><c> four</c><00:04:23.120><c> to</c><00:04:23.360><c> this</c><00:04:23.919><c> child</c><00:04:24.320><c> node</c><00:04:24.720><c> one</c><00:04:25.120><c> now</c>
+
+00:04:25.350 --> 00:04:25.360 align:start position:0%
+pass four to this child node one now
+ 
+
+00:04:25.360 --> 00:04:27.350 align:start position:0%
+pass four to this child node one now
+obviously<00:04:25.840><c> four</c><00:04:26.080><c> is</c><00:04:26.320><c> greater</c><00:04:26.720><c> than</c><00:04:26.880><c> one</c><00:04:27.120><c> so</c>
+
+00:04:27.350 --> 00:04:27.360 align:start position:0%
+obviously four is greater than one so
+ 
+
+00:04:27.360 --> 00:04:30.710 align:start position:0%
+obviously four is greater than one so
+this<00:04:27.520><c> does</c><00:04:27.759><c> not</c><00:04:28.080><c> count</c><00:04:28.479><c> as</c><00:04:28.800><c> a</c><00:04:29.120><c> good</c><00:04:29.600><c> node</c><00:04:30.400><c> same</c>
+
+00:04:30.710 --> 00:04:30.720 align:start position:0%
+this does not count as a good node same
+ 
+
+00:04:30.720 --> 00:04:32.870 align:start position:0%
+this does not count as a good node same
+thing<00:04:31.040><c> on</c><00:04:31.199><c> the</c><00:04:31.520><c> right</c><00:04:32.160><c> node</c><00:04:32.560><c> we're</c><00:04:32.720><c> going</c><00:04:32.800><c> to</c>
+
+00:04:32.870 --> 00:04:32.880 align:start position:0%
+thing on the right node we're going to
+ 
+
+00:04:32.880 --> 00:04:35.110 align:start position:0%
+thing on the right node we're going to
+pass<00:04:33.280><c> 4</c><00:04:33.680><c> down</c><00:04:33.919><c> to</c><00:04:34.080><c> this</c><00:04:34.320><c> node</c><00:04:34.560><c> the</c><00:04:34.639><c> max</c><00:04:34.880><c> we've</c>
+
+00:04:35.110 --> 00:04:35.120 align:start position:0%
+pass 4 down to this node the max we've
+ 
+
+00:04:35.120 --> 00:04:38.390 align:start position:0%
+pass 4 down to this node the max we've
+seen<00:04:35.360><c> so</c><00:04:35.680><c> far</c><00:04:36.080><c> is</c><00:04:36.240><c> 4</c><00:04:36.639><c> but</c><00:04:36.880><c> this</c><00:04:37.040><c> value</c><00:04:37.600><c> 5</c><00:04:38.160><c> is</c>
+
+00:04:38.390 --> 00:04:38.400 align:start position:0%
+seen so far is 4 but this value 5 is
+ 
+
+00:04:38.400 --> 00:04:40.550 align:start position:0%
+seen so far is 4 but this value 5 is
+greater<00:04:38.720><c> than</c><00:04:38.960><c> it</c><00:04:39.280><c> 4</c><00:04:39.520><c> is</c><00:04:39.680><c> not</c><00:04:39.840><c> greater</c><00:04:40.160><c> than</c><00:04:40.320><c> 5</c>
+
+00:04:40.550 --> 00:04:40.560 align:start position:0%
+greater than it 4 is not greater than 5
+ 
+
+00:04:40.560 --> 00:04:43.830 align:start position:0%
+greater than it 4 is not greater than 5
+so<00:04:40.800><c> this</c><00:04:40.960><c> counts</c><00:04:41.360><c> as</c><00:04:41.600><c> another</c><00:04:42.320><c> good</c><00:04:42.880><c> node</c><00:04:43.600><c> so</c>
+
+00:04:43.830 --> 00:04:43.840 align:start position:0%
+so this counts as another good node so
+ 
+
+00:04:43.840 --> 00:04:45.909 align:start position:0%
+so this counts as another good node so
+all<00:04:44.080><c> together</c><00:04:44.479><c> you</c><00:04:44.560><c> can</c><00:04:44.720><c> look</c><00:04:44.960><c> we</c><00:04:45.120><c> have</c><00:04:45.360><c> one</c>
+
+00:04:45.909 --> 00:04:45.919 align:start position:0%
+all together you can look we have one
+ 
+
+00:04:45.919 --> 00:04:49.350 align:start position:0%
+all together you can look we have one
+two<00:04:46.479><c> three</c><00:04:47.120><c> four</c><00:04:47.520><c> good</c><00:04:47.840><c> nodes</c><00:04:48.560><c> and</c>
+
+00:04:49.350 --> 00:04:49.360 align:start position:0%
+two three four good nodes and
+ 
+
+00:04:49.360 --> 00:04:51.030 align:start position:0%
+two three four good nodes and
+we<00:04:49.600><c> would</c><00:04:49.919><c> you</c><00:04:50.000><c> know</c><00:04:50.160><c> from</c><00:04:50.400><c> the</c><00:04:50.639><c> root</c><00:04:50.880><c> what</c>
+
+00:04:51.030 --> 00:04:51.040 align:start position:0%
+we would you know from the root what
+ 
+
+00:04:51.040 --> 00:04:52.629 align:start position:0%
+we would you know from the root what
+would<00:04:51.199><c> we</c><00:04:51.360><c> actually</c><00:04:51.600><c> do</c><00:04:51.840><c> we'd</c><00:04:52.000><c> say</c><00:04:52.160><c> okay</c><00:04:52.400><c> we</c><00:04:52.479><c> so</c>
+
+00:04:52.629 --> 00:04:52.639 align:start position:0%
+would we actually do we'd say okay we so
+ 
+
+00:04:52.639 --> 00:04:55.590 align:start position:0%
+would we actually do we'd say okay we so
+far<00:04:52.880><c> we</c><00:04:53.040><c> found</c><00:04:53.360><c> one</c><00:04:54.080><c> uh</c><00:04:54.479><c> good</c><00:04:54.720><c> node</c><00:04:55.120><c> at</c><00:04:55.360><c> this</c>
+
+00:04:55.590 --> 00:04:55.600 align:start position:0%
+far we found one uh good node at this
+ 
+
+00:04:55.600 --> 00:04:58.790 align:start position:0%
+far we found one uh good node at this
+root<00:04:56.080><c> in</c><00:04:56.240><c> the</c><00:04:56.720><c> left</c><00:04:57.120><c> right</c><00:04:57.600><c> plus</c><00:04:58.000><c> left</c><00:04:58.479><c> this</c><00:04:58.639><c> is</c>
+
+00:04:58.790 --> 00:04:58.800 align:start position:0%
+root in the left right plus left this is
+ 
+
+00:04:58.800 --> 00:05:00.070 align:start position:0%
+root in the left right plus left this is
+basically<00:04:59.280><c> the</c><00:04:59.440><c> equation</c><00:04:59.759><c> we're</c><00:04:59.919><c> going</c><00:05:00.000><c> to</c>
+
+00:05:00.070 --> 00:05:00.080 align:start position:0%
+basically the equation we're going to
+ 
+
+00:05:00.080 --> 00:05:02.950 align:start position:0%
+basically the equation we're going to
+use<00:05:00.400><c> one</c><00:05:00.720><c> plus</c><00:05:01.039><c> left</c><00:05:01.440><c> plus</c><00:05:01.759><c> right</c><00:05:02.080><c> of</c><00:05:02.160><c> course</c>
+
+00:05:02.950 --> 00:05:02.960 align:start position:0%
+use one plus left plus right of course
+ 
+
+00:05:02.960 --> 00:05:04.870 align:start position:0%
+use one plus left plus right of course
+left<00:05:03.360><c> is</c><00:05:03.600><c> actually</c><00:05:03.919><c> going</c><00:05:04.000><c> to</c><00:05:04.080><c> be</c><00:05:04.320><c> one</c><00:05:04.639><c> because</c>
+
+00:05:04.870 --> 00:05:04.880 align:start position:0%
+left is actually going to be one because
+ 
+
+00:05:04.880 --> 00:05:06.310 align:start position:0%
+left is actually going to be one because
+there's<00:05:05.199><c> one</c><00:05:05.440><c> good</c><00:05:05.680><c> node</c><00:05:05.919><c> in</c><00:05:06.000><c> the</c><00:05:06.080><c> left</c>
+
+00:05:06.310 --> 00:05:06.320 align:start position:0%
+there's one good node in the left
+ 
+
+00:05:06.320 --> 00:05:08.230 align:start position:0%
+there's one good node in the left
+subtree<00:05:07.120><c> right</c><00:05:07.440><c> is</c><00:05:07.600><c> actually</c><00:05:07.919><c> going</c><00:05:08.000><c> to</c><00:05:08.080><c> be</c>
+
+00:05:08.230 --> 00:05:08.240 align:start position:0%
+subtree right is actually going to be
+ 
+
+00:05:08.240 --> 00:05:09.909 align:start position:0%
+subtree right is actually going to be
+two<00:05:08.479><c> there's</c><00:05:08.720><c> two</c><00:05:08.960><c> good</c><00:05:09.120><c> nodes</c><00:05:09.440><c> in</c><00:05:09.520><c> the</c><00:05:09.680><c> right</c>
+
+00:05:09.909 --> 00:05:09.919 align:start position:0%
+two there's two good nodes in the right
+ 
+
+00:05:09.919 --> 00:05:12.469 align:start position:0%
+two there's two good nodes in the right
+subtree<00:05:10.240><c> so</c><00:05:10.479><c> one</c><00:05:10.800><c> plus</c><00:05:11.440><c> one</c><00:05:11.759><c> plus</c><00:05:12.080><c> two</c><00:05:12.320><c> that's</c>
+
+00:05:12.469 --> 00:05:12.479 align:start position:0%
+subtree so one plus one plus two that's
+ 
+
+00:05:12.479 --> 00:05:14.310 align:start position:0%
+subtree so one plus one plus two that's
+going<00:05:12.560><c> to</c><00:05:12.639><c> be</c><00:05:12.880><c> four</c><00:05:13.360><c> so</c><00:05:13.600><c> from</c><00:05:13.759><c> the</c><00:05:13.919><c> root</c><00:05:14.160><c> we're</c>
+
+00:05:14.310 --> 00:05:14.320 align:start position:0%
+going to be four so from the root we're
+ 
+
+00:05:14.320 --> 00:05:17.029 align:start position:0%
+going to be four so from the root we're
+going<00:05:14.400><c> to</c><00:05:14.479><c> return</c><00:05:14.960><c> four</c><00:05:15.440><c> good</c><00:05:15.759><c> nodes</c><00:05:16.160><c> in</c><00:05:16.320><c> this</c>
+
+00:05:17.029 --> 00:05:17.039 align:start position:0%
+going to return four good nodes in this
+ 
+
+00:05:17.039 --> 00:05:19.430 align:start position:0%
+going to return four good nodes in this
+entire<00:05:17.600><c> tree</c><00:05:18.240><c> so</c><00:05:18.400><c> with</c><00:05:18.560><c> that</c><00:05:18.800><c> being</c><00:05:19.039><c> said</c><00:05:19.280><c> we</c>
+
+00:05:19.430 --> 00:05:19.440 align:start position:0%
+entire tree so with that being said we
+ 
+
+00:05:19.440 --> 00:05:21.510 align:start position:0%
+entire tree so with that being said we
+can<00:05:19.680><c> finally</c><00:05:20.160><c> jump</c><00:05:20.479><c> into</c><00:05:20.639><c> the</c><00:05:20.800><c> code</c><00:05:21.120><c> okay</c><00:05:21.360><c> so</c>
+
+00:05:21.510 --> 00:05:21.520 align:start position:0%
+can finally jump into the code okay so
+ 
+
+00:05:21.520 --> 00:05:23.110 align:start position:0%
+can finally jump into the code okay so
+we<00:05:21.680><c> know</c><00:05:21.840><c> this</c><00:05:22.080><c> is</c><00:05:22.160><c> going</c><00:05:22.240><c> to</c><00:05:22.320><c> be</c><00:05:22.479><c> a</c><00:05:22.560><c> recursive</c>
+
+00:05:23.110 --> 00:05:23.120 align:start position:0%
+we know this is going to be a recursive
+ 
+
+00:05:23.120 --> 00:05:25.510 align:start position:0%
+we know this is going to be a recursive
+function<00:05:23.600><c> but</c><00:05:24.160><c> in</c><00:05:24.400><c> our</c><00:05:24.560><c> recursive</c><00:05:25.199><c> function</c>
+
+00:05:25.510 --> 00:05:25.520 align:start position:0%
+function but in our recursive function
+ 
+
+00:05:25.520 --> 00:05:27.110 align:start position:0%
+function but in our recursive function
+we're<00:05:25.759><c> going</c><00:05:25.840><c> to</c><00:05:26.000><c> have</c><00:05:26.160><c> to</c><00:05:26.240><c> pass</c><00:05:26.560><c> in</c><00:05:26.720><c> more</c><00:05:26.880><c> than</c>
+
+00:05:27.110 --> 00:05:27.120 align:start position:0%
+we're going to have to pass in more than
+ 
+
+00:05:27.120 --> 00:05:28.790 align:start position:0%
+we're going to have to pass in more than
+just<00:05:27.360><c> the</c><00:05:27.600><c> root</c><00:05:27.840><c> so</c><00:05:28.000><c> which</c><00:05:28.240><c> is</c><00:05:28.320><c> why</c><00:05:28.560><c> i'm</c><00:05:28.720><c> going</c>
+
+00:05:28.790 --> 00:05:28.800 align:start position:0%
+just the root so which is why i'm going
+ 
+
+00:05:28.800 --> 00:05:31.110 align:start position:0%
+just the root so which is why i'm going
+to<00:05:28.960><c> define</c><00:05:29.440><c> a</c><00:05:29.680><c> separate</c><00:05:30.160><c> function</c><00:05:30.639><c> inside</c><00:05:31.039><c> of</c>
+
+00:05:31.110 --> 00:05:31.120 align:start position:0%
+to define a separate function inside of
+ 
+
+00:05:31.120 --> 00:05:33.189 align:start position:0%
+to define a separate function inside of
+this<00:05:31.280><c> function</c><00:05:31.680><c> dfs</c><00:05:32.560><c> obviously</c><00:05:32.960><c> we're</c><00:05:33.120><c> going</c>
+
+00:05:33.189 --> 00:05:33.199 align:start position:0%
+this function dfs obviously we're going
+ 
+
+00:05:33.199 --> 00:05:35.189 align:start position:0%
+this function dfs obviously we're going
+to<00:05:33.360><c> pass</c><00:05:33.600><c> in</c><00:05:33.759><c> the</c><00:05:34.000><c> node</c><00:05:34.400><c> or</c><00:05:34.639><c> the</c><00:05:34.800><c> root</c><00:05:35.039><c> or</c>
+
+00:05:35.189 --> 00:05:35.199 align:start position:0%
+to pass in the node or the root or
+ 
+
+00:05:35.199 --> 00:05:36.310 align:start position:0%
+to pass in the node or the root or
+whatever<00:05:35.520><c> you</c><00:05:35.600><c> want</c><00:05:35.680><c> to</c><00:05:35.759><c> call</c><00:05:35.919><c> it</c><00:05:36.000><c> but</c><00:05:36.160><c> we're</c>
+
+00:05:36.310 --> 00:05:36.320 align:start position:0%
+whatever you want to call it but we're
+ 
+
+00:05:36.320 --> 00:05:38.710 align:start position:0%
+whatever you want to call it but we're
+also<00:05:36.479><c> going</c><00:05:36.639><c> to</c><00:05:36.720><c> pass</c><00:05:37.039><c> in</c><00:05:37.280><c> what</c><00:05:37.440><c> the</c><00:05:37.600><c> max</c><00:05:38.080><c> value</c>
+
+00:05:38.710 --> 00:05:38.720 align:start position:0%
+also going to pass in what the max value
+ 
+
+00:05:38.720 --> 00:05:41.909 align:start position:0%
+also going to pass in what the max value
+is<00:05:39.360><c> so</c><00:05:39.680><c> far</c><00:05:40.000><c> from</c><00:05:40.160><c> the</c><00:05:40.400><c> path</c><00:05:41.120><c> from</c><00:05:41.360><c> the</c><00:05:41.520><c> root</c>
+
+00:05:41.909 --> 00:05:41.919 align:start position:0%
+is so far from the path from the root
+ 
+
+00:05:41.919 --> 00:05:43.830 align:start position:0%
+is so far from the path from the root
+all<00:05:42.080><c> the</c><00:05:42.240><c> way</c><00:05:42.400><c> down</c><00:05:42.639><c> to</c><00:05:42.880><c> every</c><00:05:43.120><c> particular</c>
+
+00:05:43.830 --> 00:05:43.840 align:start position:0%
+all the way down to every particular
+ 
+
+00:05:43.840 --> 00:05:45.990 align:start position:0%
+all the way down to every particular
+node<00:05:44.560><c> and</c><00:05:44.880><c> i</c><00:05:44.960><c> didn't</c><00:05:45.199><c> mention</c><00:05:45.520><c> this</c><00:05:45.680><c> but</c><00:05:45.840><c> our</c>
+
+00:05:45.990 --> 00:05:46.000 align:start position:0%
+node and i didn't mention this but our
+ 
+
+00:05:46.000 --> 00:05:48.310 align:start position:0%
+node and i didn't mention this but our
+base<00:05:46.240><c> case</c><00:05:46.560><c> of</c><00:05:46.639><c> course</c><00:05:46.960><c> is</c><00:05:47.120><c> going</c><00:05:47.280><c> to</c><00:05:47.520><c> be</c><00:05:47.919><c> if</c>
+
+00:05:48.310 --> 00:05:48.320 align:start position:0%
+base case of course is going to be if
+ 
+
+00:05:48.320 --> 00:05:50.629 align:start position:0%
+base case of course is going to be if
+the<00:05:48.639><c> node</c><00:05:48.960><c> we</c><00:05:49.120><c> reach</c><00:05:49.440><c> is</c><00:05:49.680><c> null</c><00:05:50.000><c> right</c><00:05:50.240><c> so</c><00:05:50.400><c> if</c>
+
+00:05:50.629 --> 00:05:50.639 align:start position:0%
+the node we reach is null right so if
+ 
+
+00:05:50.639 --> 00:05:52.629 align:start position:0%
+the node we reach is null right so if
+not<00:05:51.039><c> node</c><00:05:51.520><c> now</c><00:05:51.680><c> what</c><00:05:51.840><c> are</c><00:05:51.919><c> we</c><00:05:52.000><c> going</c><00:05:52.160><c> to</c><00:05:52.240><c> return</c>
+
+00:05:52.629 --> 00:05:52.639 align:start position:0%
+not node now what are we going to return
+ 
+
+00:05:52.639 --> 00:05:55.029 align:start position:0%
+not node now what are we going to return
+then<00:05:53.120><c> does</c><00:05:53.360><c> an</c><00:05:53.600><c> empty</c><00:05:53.919><c> tree</c><00:05:54.240><c> have</c><00:05:54.479><c> any</c><00:05:54.800><c> good</c>
+
+00:05:55.029 --> 00:05:55.039 align:start position:0%
+then does an empty tree have any good
+ 
+
+00:05:55.039 --> 00:05:56.550 align:start position:0%
+then does an empty tree have any good
+nodes<00:05:55.440><c> of</c><00:05:55.520><c> course</c><00:05:55.840><c> it</c><00:05:55.919><c> doesn't</c><00:05:56.240><c> so</c><00:05:56.400><c> we're</c>
+
+00:05:56.550 --> 00:05:56.560 align:start position:0%
+nodes of course it doesn't so we're
+ 
+
+00:05:56.560 --> 00:05:58.950 align:start position:0%
+nodes of course it doesn't so we're
+going<00:05:56.639><c> to</c><00:05:56.720><c> return</c><00:05:57.120><c> 0</c><00:05:57.520><c> right</c><00:05:58.080><c> ok</c><00:05:58.319><c> so</c><00:05:58.479><c> now</c><00:05:58.639><c> we</c><00:05:58.800><c> got</c>
+
+00:05:58.950 --> 00:05:58.960 align:start position:0%
+going to return 0 right ok so now we got
+ 
+
+00:05:58.960 --> 00:06:02.150 align:start position:0%
+going to return 0 right ok so now we got
+to<00:05:59.120><c> a</c><00:05:59.280><c> node</c><00:05:59.840><c> that</c><00:06:00.080><c> is</c><00:06:00.400><c> non</c><00:06:00.800><c> empty</c><00:06:01.680><c> we</c><00:06:01.840><c> want</c><00:06:02.000><c> to</c>
+
+00:06:02.150 --> 00:06:02.160 align:start position:0%
+to a node that is non empty we want to
+ 
+
+00:06:02.160 --> 00:06:04.710 align:start position:0%
+to a node that is non empty we want to
+know<00:06:02.400><c> is</c><00:06:02.560><c> this</c><00:06:02.800><c> particular</c><00:06:03.440><c> node</c><00:06:03.759><c> a</c><00:06:04.000><c> good</c><00:06:04.319><c> node</c>
+
+00:06:04.710 --> 00:06:04.720 align:start position:0%
+know is this particular node a good node
+ 
+
+00:06:04.720 --> 00:06:06.870 align:start position:0%
+know is this particular node a good node
+or<00:06:04.960><c> not</c><00:06:05.280><c> well</c><00:06:05.680><c> let's</c>
+
+00:06:06.870 --> 00:06:06.880 align:start position:0%
+or not well let's
+ 
+
+00:06:06.880 --> 00:06:08.629 align:start position:0%
+or not well let's
+let's<00:06:07.120><c> compute</c><00:06:07.440><c> that</c><00:06:07.680><c> into</c><00:06:08.000><c> our</c><00:06:08.080><c> result</c><00:06:08.479><c> so</c>
+
+00:06:08.629 --> 00:06:08.639 align:start position:0%
+let's compute that into our result so
+ 
+
+00:06:08.639 --> 00:06:09.909 align:start position:0%
+let's compute that into our result so
+we're<00:06:08.800><c> going</c><00:06:08.880><c> to</c><00:06:08.960><c> say</c><00:06:09.120><c> okay</c><00:06:09.360><c> result</c><00:06:09.759><c> is</c><00:06:09.840><c> going</c>
+
+00:06:09.909 --> 00:06:09.919 align:start position:0%
+we're going to say okay result is going
+ 
+
+00:06:09.919 --> 00:06:12.469 align:start position:0%
+we're going to say okay result is going
+to<00:06:10.000><c> be</c><00:06:10.240><c> 1</c><00:06:10.800><c> if</c><00:06:11.039><c> this</c><00:06:11.280><c> node</c><00:06:11.600><c> is</c><00:06:11.759><c> a</c><00:06:11.840><c> good</c><00:06:12.080><c> note</c><00:06:12.319><c> how</c>
+
+00:06:12.469 --> 00:06:12.479 align:start position:0%
+to be 1 if this node is a good note how
+ 
+
+00:06:12.479 --> 00:06:14.150 align:start position:0%
+to be 1 if this node is a good note how
+do<00:06:12.560><c> we</c><00:06:12.639><c> know</c><00:06:12.800><c> if</c><00:06:13.199><c> it's</c><00:06:13.360><c> a</c><00:06:13.440><c> good</c><00:06:13.600><c> note</c><00:06:13.840><c> if</c><00:06:14.000><c> the</c>
+
+00:06:14.150 --> 00:06:14.160 align:start position:0%
+do we know if it's a good note if the
+ 
+
+00:06:14.160 --> 00:06:16.710 align:start position:0%
+do we know if it's a good note if the
+node<00:06:14.639><c> value</c><00:06:15.280><c> is</c><00:06:15.440><c> greater</c><00:06:15.759><c> than</c><00:06:15.919><c> or</c><00:06:16.080><c> equal</c><00:06:16.560><c> to</c>
+
+00:06:16.710 --> 00:06:16.720 align:start position:0%
+node value is greater than or equal to
+ 
+
+00:06:16.720 --> 00:06:19.909 align:start position:0%
+node value is greater than or equal to
+the<00:06:16.880><c> max</c><00:06:17.199><c> value</c><00:06:17.919><c> encountered</c><00:06:18.880><c> so</c><00:06:19.360><c> far</c>
+
+00:06:19.909 --> 00:06:19.919 align:start position:0%
+the max value encountered so far
+ 
+
+00:06:19.919 --> 00:06:21.670 align:start position:0%
+the max value encountered so far
+otherwise<00:06:20.560><c> the</c><00:06:20.720><c> result</c><00:06:21.039><c> so</c><00:06:21.199><c> far</c><00:06:21.440><c> is</c><00:06:21.520><c> going</c><00:06:21.600><c> to</c>
+
+00:06:21.670 --> 00:06:21.680 align:start position:0%
+otherwise the result so far is going to
+ 
+
+00:06:21.680 --> 00:06:24.309 align:start position:0%
+otherwise the result so far is going to
+be<00:06:21.840><c> 0</c><00:06:22.160><c> meaning</c><00:06:22.400><c> this</c><00:06:22.639><c> node</c><00:06:22.960><c> is</c><00:06:23.199><c> not</c><00:06:23.520><c> a</c><00:06:23.759><c> good</c>
+
+00:06:24.309 --> 00:06:24.319 align:start position:0%
+be 0 meaning this node is not a good
+ 
+
+00:06:24.319 --> 00:06:27.029 align:start position:0%
+be 0 meaning this node is not a good
+node<00:06:25.039><c> next</c><00:06:25.360><c> we</c><00:06:25.520><c> want</c><00:06:25.680><c> to</c><00:06:25.840><c> do</c><00:06:26.080><c> is</c><00:06:26.400><c> update</c><00:06:26.880><c> our</c>
+
+00:06:27.029 --> 00:06:27.039 align:start position:0%
+node next we want to do is update our
+ 
+
+00:06:27.039 --> 00:06:29.189 align:start position:0%
+node next we want to do is update our
+max<00:06:27.440><c> value</c><00:06:27.919><c> so</c><00:06:28.160><c> far</c><00:06:28.400><c> right</c><00:06:28.720><c> we're</c><00:06:28.960><c> just</c><00:06:29.120><c> going</c>
+
+00:06:29.189 --> 00:06:29.199 align:start position:0%
+max value so far right we're just going
+ 
+
+00:06:29.199 --> 00:06:33.350 align:start position:0%
+max value so far right we're just going
+to<00:06:29.360><c> take</c><00:06:29.759><c> the</c><00:06:30.000><c> max</c><00:06:30.560><c> of</c><00:06:30.720><c> itself</c><00:06:31.759><c> and</c><00:06:32.160><c> the</c><00:06:32.319><c> max</c><00:06:32.960><c> of</c>
+
+00:06:33.350 --> 00:06:33.360 align:start position:0%
+to take the max of itself and the max of
+ 
+
+00:06:33.360 --> 00:06:35.670 align:start position:0%
+to take the max of itself and the max of
+the<00:06:33.600><c> current</c><00:06:34.000><c> node's</c><00:06:34.479><c> value</c><00:06:35.120><c> so</c><00:06:35.280><c> we've</c>
+
+00:06:35.670 --> 00:06:35.680 align:start position:0%
+the current node's value so we've
+ 
+
+00:06:35.680 --> 00:06:38.150 align:start position:0%
+the current node's value so we've
+updated<00:06:36.240><c> our</c><00:06:36.319><c> max</c><00:06:36.639><c> value</c><00:06:37.039><c> so</c><00:06:37.280><c> far</c><00:06:37.600><c> why</c><00:06:37.759><c> did</c><00:06:38.000><c> we</c>
+
+00:06:38.150 --> 00:06:38.160 align:start position:0%
+updated our max value so far why did we
+ 
+
+00:06:38.160 --> 00:06:39.830 align:start position:0%
+updated our max value so far why did we
+do<00:06:38.319><c> this</c><00:06:38.639><c> because</c><00:06:39.039><c> of</c><00:06:39.199><c> course</c><00:06:39.520><c> we're</c><00:06:39.680><c> going</c><00:06:39.759><c> to</c>
+
+00:06:39.830 --> 00:06:39.840 align:start position:0%
+do this because of course we're going to
+ 
+
+00:06:39.840 --> 00:06:42.629 align:start position:0%
+do this because of course we're going to
+need<00:06:40.000><c> to</c><00:06:40.240><c> pass</c><00:06:40.560><c> this</c><00:06:40.800><c> along</c><00:06:41.600><c> to</c><00:06:41.840><c> our</c><00:06:42.080><c> dfs</c>
+
+00:06:42.629 --> 00:06:42.639 align:start position:0%
+need to pass this along to our dfs
+ 
+
+00:06:42.639 --> 00:06:44.550 align:start position:0%
+need to pass this along to our dfs
+recursive<00:06:43.280><c> call</c><00:06:43.759><c> of</c><00:06:43.919><c> course</c><00:06:44.240><c> we're</c><00:06:44.400><c> going</c><00:06:44.479><c> to</c>
+
+00:06:44.550 --> 00:06:44.560 align:start position:0%
+recursive call of course we're going to
+ 
+
+00:06:44.560 --> 00:06:47.350 align:start position:0%
+recursive call of course we're going to
+run<00:06:44.720><c> dfs</c><00:06:45.280><c> on</c><00:06:45.360><c> the</c><00:06:45.520><c> node's</c><00:06:46.000><c> left</c><00:06:46.319><c> child</c><00:06:46.880><c> passing</c>
+
+00:06:47.350 --> 00:06:47.360 align:start position:0%
+run dfs on the node's left child passing
+ 
+
+00:06:47.360 --> 00:06:49.189 align:start position:0%
+run dfs on the node's left child passing
+in<00:06:47.440><c> the</c><00:06:47.520><c> max</c><00:06:47.840><c> value</c><00:06:48.479><c> and</c><00:06:48.639><c> of</c><00:06:48.720><c> course</c><00:06:49.039><c> we're</c>
+
+00:06:49.189 --> 00:06:49.199 align:start position:0%
+in the max value and of course we're
+ 
+
+00:06:49.199 --> 00:06:51.909 align:start position:0%
+in the max value and of course we're
+going<00:06:49.280><c> to</c><00:06:49.360><c> do</c><00:06:49.520><c> the</c><00:06:49.680><c> exact</c><00:06:50.000><c> same</c><00:06:50.400><c> thing</c><00:06:51.039><c> on</c><00:06:51.599><c> the</c>
+
+00:06:51.909 --> 00:06:51.919 align:start position:0%
+going to do the exact same thing on the
+ 
+
+00:06:51.919 --> 00:06:54.390 align:start position:0%
+going to do the exact same thing on the
+right<00:06:52.240><c> child</c><00:06:52.639><c> the</c><00:06:52.880><c> right</c><00:06:53.199><c> subtree</c><00:06:53.759><c> passing</c><00:06:54.160><c> in</c>
+
+00:06:54.390 --> 00:06:54.400 align:start position:0%
+right child the right subtree passing in
+ 
+
+00:06:54.400 --> 00:06:56.309 align:start position:0%
+right child the right subtree passing in
+the<00:06:54.479><c> max</c><00:06:54.800><c> value</c><00:06:55.199><c> so</c><00:06:55.440><c> far</c><00:06:55.840><c> now</c><00:06:56.000><c> what</c><00:06:56.160><c> are</c><00:06:56.240><c> we</c>
+
+00:06:56.309 --> 00:06:56.319 align:start position:0%
+the max value so far now what are we
+ 
+
+00:06:56.319 --> 00:06:57.990 align:start position:0%
+the max value so far now what are we
+going<00:06:56.479><c> to</c><00:06:56.560><c> do</c><00:06:56.720><c> with</c><00:06:56.800><c> the</c><00:06:56.960><c> results</c><00:06:57.599><c> of</c><00:06:57.759><c> these</c>
+
+00:06:57.990 --> 00:06:58.000 align:start position:0%
+going to do with the results of these
+ 
+
+00:06:58.000 --> 00:07:00.309 align:start position:0%
+going to do with the results of these
+two<00:06:58.160><c> recursive</c><00:06:58.800><c> calls</c><00:06:59.280><c> well</c><00:06:59.759><c> this</c><00:07:00.000><c> function</c>
+
+00:07:00.309 --> 00:07:00.319 align:start position:0%
+two recursive calls well this function
+ 
+
+00:07:00.319 --> 00:07:02.150 align:start position:0%
+two recursive calls well this function
+itself<00:07:00.800><c> is</c><00:07:00.880><c> just</c><00:07:01.199><c> counting</c><00:07:01.599><c> the</c><00:07:01.759><c> number</c><00:07:02.080><c> of</c>
+
+00:07:02.150 --> 00:07:02.160 align:start position:0%
+itself is just counting the number of
+ 
+
+00:07:02.160 --> 00:07:03.670 align:start position:0%
+itself is just counting the number of
+good<00:07:02.479><c> nodes</c><00:07:02.880><c> so</c><00:07:03.039><c> we're</c><00:07:03.199><c> going</c><00:07:03.280><c> to</c><00:07:03.360><c> take</c><00:07:03.599><c> the</c>
+
+00:07:03.670 --> 00:07:03.680 align:start position:0%
+good nodes so we're going to take the
+ 
+
+00:07:03.680 --> 00:07:06.070 align:start position:0%
+good nodes so we're going to take the
+result<00:07:04.240><c> of</c><00:07:04.400><c> it</c><00:07:04.560><c> and</c><00:07:04.720><c> add</c><00:07:04.960><c> it</c><00:07:05.120><c> to</c><00:07:05.440><c> our</c><00:07:05.599><c> result</c>
+
+00:07:06.070 --> 00:07:06.080 align:start position:0%
+result of it and add it to our result
+ 
+
+00:07:06.080 --> 00:07:07.589 align:start position:0%
+result of it and add it to our result
+for<00:07:06.240><c> both</c><00:07:06.560><c> of</c><00:07:06.639><c> these</c><00:07:06.880><c> function</c><00:07:07.199><c> calls</c><00:07:07.520><c> we're</c>
+
+00:07:07.589 --> 00:07:07.599 align:start position:0%
+for both of these function calls we're
+ 
+
+00:07:07.599 --> 00:07:09.589 align:start position:0%
+for both of these function calls we're
+going<00:07:07.759><c> to</c><00:07:07.840><c> count</c><00:07:08.080><c> the</c><00:07:08.240><c> number</c><00:07:08.560><c> of</c><00:07:08.880><c> good</c><00:07:09.120><c> nodes</c>
+
+00:07:09.589 --> 00:07:09.599 align:start position:0%
+going to count the number of good nodes
+ 
+
+00:07:09.599 --> 00:07:11.510 align:start position:0%
+going to count the number of good nodes
+in<00:07:09.680><c> the</c><00:07:09.840><c> left</c><00:07:10.080><c> and</c><00:07:10.160><c> right</c><00:07:10.400><c> subtree</c><00:07:11.120><c> adding</c><00:07:11.440><c> it</c>
+
+00:07:11.510 --> 00:07:11.520 align:start position:0%
+in the left and right subtree adding it
+ 
+
+00:07:11.520 --> 00:07:13.749 align:start position:0%
+in the left and right subtree adding it
+to<00:07:11.680><c> the</c><00:07:11.840><c> result</c><00:07:12.319><c> once</c><00:07:12.560><c> that's</c><00:07:12.800><c> been</c><00:07:13.039><c> computed</c>
+
+00:07:13.749 --> 00:07:13.759 align:start position:0%
+to the result once that's been computed
+ 
+
+00:07:13.759 --> 00:07:15.350 align:start position:0%
+to the result once that's been computed
+then<00:07:13.919><c> we</c><00:07:14.080><c> can</c><00:07:14.240><c> go</c><00:07:14.400><c> ahead</c><00:07:14.560><c> and</c><00:07:14.720><c> actually</c><00:07:14.960><c> return</c>
+
+00:07:15.350 --> 00:07:15.360 align:start position:0%
+then we can go ahead and actually return
+ 
+
+00:07:15.360 --> 00:07:17.110 align:start position:0%
+then we can go ahead and actually return
+that<00:07:15.520><c> result</c><00:07:15.919><c> value</c>
+
+00:07:17.110 --> 00:07:17.120 align:start position:0%
+that result value
+ 
+
+00:07:17.120 --> 00:07:19.029 align:start position:0%
+that result value
+so<00:07:17.360><c> you</c><00:07:17.520><c> can</c><00:07:17.680><c> see</c><00:07:17.919><c> that</c><00:07:18.160><c> this</c><00:07:18.400><c> dfs</c><00:07:18.960><c> is</c>
+
+00:07:19.029 --> 00:07:19.039 align:start position:0%
+so you can see that this dfs is
+ 
+
+00:07:19.039 --> 00:07:20.710 align:start position:0%
+so you can see that this dfs is
+basically<00:07:19.440><c> computing</c><00:07:19.919><c> the</c><00:07:20.080><c> result</c><00:07:20.400><c> that</c><00:07:20.479><c> we</c>
+
+00:07:20.710 --> 00:07:20.720 align:start position:0%
+basically computing the result that we
+ 
+
+00:07:20.720 --> 00:07:22.550 align:start position:0%
+basically computing the result that we
+want<00:07:21.120><c> of</c><00:07:21.280><c> course</c><00:07:21.520><c> we</c><00:07:21.680><c> want</c><00:07:21.840><c> to</c><00:07:21.919><c> compute</c><00:07:22.319><c> it</c><00:07:22.400><c> for</c>
+
+00:07:22.550 --> 00:07:22.560 align:start position:0%
+want of course we want to compute it for
+ 
+
+00:07:22.560 --> 00:07:24.469 align:start position:0%
+want of course we want to compute it for
+the<00:07:22.720><c> entire</c><00:07:23.120><c> tree</c><00:07:23.360><c> so</c><00:07:23.520><c> when</c><00:07:23.680><c> we</c><00:07:23.840><c> actually</c><00:07:24.160><c> call</c>
+
+00:07:24.469 --> 00:07:24.479 align:start position:0%
+the entire tree so when we actually call
+ 
+
+00:07:24.479 --> 00:07:26.629 align:start position:0%
+the entire tree so when we actually call
+our<00:07:24.639><c> dfs</c><00:07:25.280><c> we're</c><00:07:25.520><c> going</c><00:07:25.599><c> to</c><00:07:25.680><c> call</c><00:07:25.919><c> it</c><00:07:26.160><c> on</c><00:07:26.319><c> the</c>
+
+00:07:26.629 --> 00:07:26.639 align:start position:0%
+our dfs we're going to call it on the
+ 
+
+00:07:26.639 --> 00:07:29.350 align:start position:0%
+our dfs we're going to call it on the
+root<00:07:27.120><c> node</c><00:07:27.680><c> now</c><00:07:27.919><c> what</c><00:07:28.240><c> default</c><00:07:28.720><c> value</c><00:07:29.039><c> can</c><00:07:29.199><c> we</c>
+
+00:07:29.350 --> 00:07:29.360 align:start position:0%
+root node now what default value can we
+ 
+
+00:07:29.360 --> 00:07:31.830 align:start position:0%
+root node now what default value can we
+pass<00:07:29.599><c> in</c><00:07:29.680><c> for</c><00:07:29.840><c> the</c><00:07:29.919><c> max</c><00:07:30.240><c> value</c><00:07:30.639><c> so</c><00:07:30.960><c> far</c><00:07:31.520><c> well</c><00:07:31.759><c> we</c>
+
+00:07:31.830 --> 00:07:31.840 align:start position:0%
+pass in for the max value so far well we
+ 
+
+00:07:31.840 --> 00:07:33.270 align:start position:0%
+pass in for the max value so far well we
+could<00:07:32.000><c> pass</c><00:07:32.319><c> in</c><00:07:32.400><c> some</c><00:07:32.560><c> kind</c><00:07:32.720><c> of</c><00:07:32.880><c> negative</c>
+
+00:07:33.270 --> 00:07:33.280 align:start position:0%
+could pass in some kind of negative
+ 
+
+00:07:33.280 --> 00:07:35.110 align:start position:0%
+could pass in some kind of negative
+infinity<00:07:33.840><c> right</c><00:07:34.080><c> or</c><00:07:34.160><c> whatever</c><00:07:34.720><c> but</c><00:07:34.960><c> it</c>
+
+00:07:35.110 --> 00:07:35.120 align:start position:0%
+infinity right or whatever but it
+ 
+
+00:07:35.120 --> 00:07:36.710 align:start position:0%
+infinity right or whatever but it
+actually<00:07:35.440><c> works</c><00:07:35.759><c> out</c><00:07:36.000><c> as</c><00:07:36.080><c> well</c><00:07:36.319><c> if</c><00:07:36.479><c> we</c><00:07:36.560><c> just</c>
+
+00:07:36.710 --> 00:07:36.720 align:start position:0%
+actually works out as well if we just
+ 
+
+00:07:36.720 --> 00:07:38.950 align:start position:0%
+actually works out as well if we just
+pass<00:07:37.039><c> in</c><00:07:37.120><c> the</c><00:07:37.280><c> root</c><00:07:37.759><c> value</c><00:07:38.319><c> because</c><00:07:38.560><c> as</c><00:07:38.720><c> long</c>
+
+00:07:38.950 --> 00:07:38.960 align:start position:0%
+pass in the root value because as long
+ 
+
+00:07:38.960 --> 00:07:41.909 align:start position:0%
+pass in the root value because as long
+as<00:07:39.120><c> this</c><00:07:39.440><c> root</c><00:07:40.000><c> is</c><00:07:40.240><c> greater</c><00:07:40.560><c> than</c><00:07:40.720><c> or</c><00:07:40.960><c> equal</c><00:07:41.680><c> to</c>
+
+00:07:41.909 --> 00:07:41.919 align:start position:0%
+as this root is greater than or equal to
+ 
+
+00:07:41.919 --> 00:07:44.390 align:start position:0%
+as this root is greater than or equal to
+the<00:07:42.240><c> max</c><00:07:42.560><c> value</c><00:07:42.960><c> so</c><00:07:43.120><c> far</c><00:07:43.360><c> it</c><00:07:43.520><c> does</c><00:07:43.840><c> count</c><00:07:44.160><c> as</c><00:07:44.319><c> a</c>
+
+00:07:44.390 --> 00:07:44.400 align:start position:0%
+the max value so far it does count as a
+ 
+
+00:07:44.400 --> 00:07:47.029 align:start position:0%
+the max value so far it does count as a
+good<00:07:44.720><c> note</c><00:07:45.039><c> and</c><00:07:45.199><c> we</c><00:07:45.360><c> know</c><00:07:45.759><c> that</c><00:07:45.919><c> the</c><00:07:46.160><c> root</c><00:07:46.479><c> node</c>
+
+00:07:47.029 --> 00:07:47.039 align:start position:0%
+good note and we know that the root node
+ 
+
+00:07:47.039 --> 00:07:49.270 align:start position:0%
+good note and we know that the root node
+always<00:07:47.599><c> counts</c><00:07:47.919><c> as</c><00:07:48.160><c> a</c><00:07:48.240><c> good</c><00:07:48.479><c> node</c><00:07:48.720><c> so</c><00:07:48.879><c> this</c><00:07:49.120><c> is</c>
+
+00:07:49.270 --> 00:07:49.280 align:start position:0%
+always counts as a good node so this is
+ 
+
+00:07:49.280 --> 00:07:51.670 align:start position:0%
+always counts as a good node so this is
+going<00:07:49.520><c> to</c><00:07:49.680><c> work</c><00:07:50.000><c> out</c><00:07:50.240><c> for</c><00:07:50.479><c> us</c><00:07:50.960><c> now</c><00:07:51.360><c> what</c><00:07:51.520><c> we</c>
+
+00:07:51.670 --> 00:07:51.680 align:start position:0%
+going to work out for us now what we
+ 
+
+00:07:51.680 --> 00:07:53.909 align:start position:0%
+going to work out for us now what we
+actually<00:07:52.000><c> want</c><00:07:52.080><c> to</c><00:07:52.160><c> do</c><00:07:52.400><c> is</c><00:07:52.560><c> return</c><00:07:53.120><c> the</c><00:07:53.280><c> result</c>
+
+00:07:53.909 --> 00:07:53.919 align:start position:0%
+actually want to do is return the result
+ 
+
+00:07:53.919 --> 00:07:55.589 align:start position:0%
+actually want to do is return the result
+of<00:07:54.080><c> this</c><00:07:54.319><c> function</c><00:07:54.720><c> call</c><00:07:55.120><c> and</c><00:07:55.199><c> then</c><00:07:55.440><c> we're</c>
+
+00:07:55.589 --> 00:07:55.599 align:start position:0%
+of this function call and then we're
+ 
+
+00:07:55.599 --> 00:07:56.710 align:start position:0%
+of this function call and then we're
+good<00:07:55.759><c> to</c><00:07:56.000><c> go</c>
+
+00:07:56.710 --> 00:07:56.720 align:start position:0%
+good to go
+ 
+
+00:07:56.720 --> 00:07:58.070 align:start position:0%
+good to go
+as<00:07:56.960><c> you</c><00:07:57.039><c> can</c><00:07:57.120><c> see</c><00:07:57.280><c> it's</c><00:07:57.520><c> pretty</c><00:07:57.759><c> dang</c>
+
+00:07:58.070 --> 00:07:58.080 align:start position:0%
+as you can see it's pretty dang
+ 
+
+00:07:58.080 --> 00:08:00.230 align:start position:0%
+as you can see it's pretty dang
+efficient<00:07:58.879><c> so</c><00:07:59.039><c> this</c><00:07:59.199><c> is</c><00:07:59.360><c> a</c><00:07:59.440><c> good</c><00:07:59.680><c> fundamental</c>
+
+00:08:00.230 --> 00:08:00.240 align:start position:0%
+efficient so this is a good fundamental
+ 
+
+00:08:00.240 --> 00:08:02.550 align:start position:0%
+efficient so this is a good fundamental
+binary<00:08:01.039><c> tree</c><00:08:01.360><c> question</c><00:08:01.759><c> to</c><00:08:01.919><c> understand</c><00:08:02.400><c> your</c>
+
+00:08:02.550 --> 00:08:02.560 align:start position:0%
+binary tree question to understand your
+ 
+
+00:08:02.560 --> 00:08:04.790 align:start position:0%
+binary tree question to understand your
+pre-order<00:08:03.039><c> traversal</c><00:08:03.840><c> and</c><00:08:04.000><c> it</c><00:08:04.160><c> also</c><00:08:04.479><c> happens</c>
+
+00:08:04.790 --> 00:08:04.800 align:start position:0%
+pre-order traversal and it also happens
+ 
+
+00:08:04.800 --> 00:08:07.110 align:start position:0%
+pre-order traversal and it also happens
+to<00:08:04.960><c> be</c><00:08:05.120><c> the</c><00:08:05.280><c> most</c><00:08:05.599><c> common</c><00:08:06.080><c> asked</c><00:08:06.479><c> question</c><00:08:06.879><c> by</c>
+
+00:08:07.110 --> 00:08:07.120 align:start position:0%
+to be the most common asked question by
+ 
+
+00:08:07.120 --> 00:08:09.670 align:start position:0%
+to be the most common asked question by
+microsoft<00:08:07.759><c> of</c><00:08:07.919><c> 2021</c><00:08:08.960><c> so</c><00:08:09.120><c> i</c><00:08:09.199><c> hope</c><00:08:09.360><c> that</c><00:08:09.520><c> this</c>
+
+00:08:09.670 --> 00:08:09.680 align:start position:0%
+microsoft of 2021 so i hope that this
+ 
+
+00:08:09.680 --> 00:08:12.070 align:start position:0%
+microsoft of 2021 so i hope that this
+was<00:08:09.919><c> helpful</c><00:08:10.479><c> if</c><00:08:10.720><c> it</c><00:08:10.879><c> was</c><00:08:11.440><c> please</c><00:08:11.759><c> like</c><00:08:12.000><c> and</c>
+
+00:08:12.070 --> 00:08:12.080 align:start position:0%
+was helpful if it was please like and
+ 
+
+00:08:12.080 --> 00:08:14.309 align:start position:0%
+was helpful if it was please like and
+subscribe<00:08:12.639><c> it</c><00:08:12.800><c> supports</c><00:08:13.280><c> the</c><00:08:13.360><c> channel</c><00:08:13.759><c> a</c><00:08:14.000><c> lot</c>
+
+00:08:14.309 --> 00:08:14.319 align:start position:0%
+subscribe it supports the channel a lot
+ 
+
+00:08:14.319 --> 00:08:16.550 align:start position:0%
+subscribe it supports the channel a lot
+and<00:08:14.479><c> i'll</c><00:08:14.720><c> hopefully</c><00:08:15.440><c> see</c><00:08:15.599><c> you</c><00:08:15.840><c> pretty</c><00:08:16.080><c> soon</c>
+
+00:08:16.550 --> 00:08:16.560 align:start position:0%
+and i'll hopefully see you pretty soon
+ 
+
+00:08:16.560 --> 00:08:19.599 align:start position:0%
+and i'll hopefully see you pretty soon
+thanks<00:08:16.800><c> for</c><00:08:16.960><c> watching</c>
+

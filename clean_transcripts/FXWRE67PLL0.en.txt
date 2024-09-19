@@ -1,0 +1,506 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+let's solve redundant connections but
+before i do i just want to mention if
+you have any problem suggestions you can
+feel free to leave those in the comments
+i do have a
+pretty large backlog that i'm working
+through right now so it might take me a
+couple weeks to get to your suggested
+problem so this is a pretty good problem
+to solve
+this can actually be solved in a naive
+way which is going to be o of n squared
+and that's just a basic like depth first
+search solution for it for this graph
+similar to many other graph problems but
+you can actually reduce this
+to a regular o of n a more optimized
+solution and that actually requires a
+algorithm that you might not have seen
+before
+union find it's a rare algorithm to need
+on leak code so most people don't use it
+but this problem can use union find to
+get a much better solution
+i'm also going to explain why we're
+allowed to use the union find algorithm
+in this problem because it's not super
+clear
+so we're given a definition a tree is an
+undirected graph
+that contains no cycles so basically
+this is the key an undirected graph that
+contains no cycles
+we're given a graph that started as a
+tree started as a graph that was
+undirected
+and had no cycles we had n nodes these
+nodes are labeled from
+one all the way to n but we ended up
+adding
+one additional edge and we know every
+edge basically just connects
+two vertices and this edge is undirected
+so so this
+edge ended up connecting two two
+vertices and this edge
+did not already exist in the graph in
+this case the graph
+is represented as an array of edges and
+the number of edges is basically
+n basically the number of edges is equal
+to the number of nodes that we have
+as i mentioned every edge is going to be
+connecting two nodes together
+so we want to return an edge that can be
+removed from the graph
+that will turn the graph back into a
+tree
+if there are multiple edges that we can
+remove that will turn the graph back
+into a tree
+then we will return the last edge in the
+input that that basically satisfies that
+condition
+and they guarantee us that in the input
+list of edges that were given
+every single edge is going to be unique
+so let's take a look at this
+example notice how if we remove any of
+the edges if i remove this
+now this graph no longer has a cycle
+right because
+initially it had this cycle right so if
+i remove this
+edge it doesn't have a cycle so that
+satisfies the condition so does that
+mean
+one two is the result one two is the
+edge that we can return
+no because it turns out if i remove this
+edge
+it also satisfies the condition it
+breaks the cycle that we initially had
+the same is true for the third edge so
+in this case
+which of the so which of these three
+edges are we going to return basically
+the one that occurs
+last in the input which is going to be 2
+3.
+so i guess the next question you might
+have is is that always going to be the
+case is it if we remove
+any of the edges it breaks the cycle so
+that are we always going to be returning
+whatever the last edge is given to us
+not necessarily let's take a look at
+another edge if we added let's say two
+four basically if i increased the number
+of nodes to
+from three to four so i added an edge
+over here
+that connects these two nodes now
+if i break and this is the last edge
+occurs in our input if i break
+this edge does that get rid of the loop
+that we have no we still have a loop
+over here right so
+this breaking this edge does not turn us
+into a tree that's what we were looking
+for
+so we're not always going to be
+returning the last edge my next question
+to you is
+if we have n nodes and we have n edges
+right that's what we're given always
+we're always given the same number of
+nodes same number of edges
+is it guaranteed that we're always going
+to start out with a loop and the answer
+is
+yes let me show you the intuition of why
+that's true
+let's say we start out with two nodes if
+i add a
+single edge to this notice how we were
+able to take
+the total number of disjoint graphs we
+had two graphs that were not connected
+right
+once we added an edge we were able to
+reduce that number
+to one graph right now we have one
+connected graph
+and you want to know something about a
+connected graph
+if you add a new edge to this connected
+graph
+you are going to create a cycle so for
+example in this case
+we don't even have any more unique
+possible edges we could add other than
+for example a
+self loop on two or a self loop on one
+or just adding
+another edge right but we know that the
+edges are undirected basically what i'm
+saying is
+if we keep adding edges to a graph that
+is already a connected graph
+then we're creating a cycle let's look
+at a couple more examples
+so now we have four nodes if i add four
+edges to this graph that are all unique
+edges we are gonna end up with a cycle
+it's impossible to
+not end up with a cycle if we add four
+unique edges to this graph let me show
+you why
+let's say we added one edge here then we
+could add
+another edge here right and then we
+could add another edge
+here and then the fourth edge we could
+add would be here
+this way we end up with a cycle but hold
+on maybe there are other possibilities
+right
+well maybe instead of connecting these i
+can also connect
+these oh that ends up with the cycle too
+right notice that
+maybe we just don't connect this with
+anything else maybe we add an edge here
+that ends up with a cycle
+if i add an edge over here that ends up
+with a cycle no matter how we do it we
+end up with a cycle
+right maybe i start out like this i try
+to be clever now what we
+still will end up with a cycle and
+that's going to be true no matter what
+if we have
+n nodes and n unique edges we're going
+to end up with a cycle
+no matter what but my question to you is
+how do you
+know that adding this edge right let's
+say we already have these three edges
+how do you know that
+adding this edge is creating a cycle for
+us it's because
+one is already connected with three
+three and one are already connected see
+how
+all four of these nodes are already
+connected
+so when i add this edge i already knew
+there was a path from
+three to get to one now i'm creating a
+second path
+from three to get to one notice how
+that's what's creating the cycle
+this is the reason why we're allowed to
+use the union find algorithm
+because we're looking at the connected
+graphs and once we add
+the once we notice we found an edge in
+our input array
+that caused us to take a connected graph
+and add
+another redundant connection that's why
+this is called redundant connections we
+added another connection that was not
+needed
+three could already get to one why
+bother adding this edge
+that created a loop so the last edge
+so the first edge in our input array
+edges
+that causes a redundant connection is
+going to be the edge that we return
+so the solution we're going to be doing
+is union find and we are going to be
+doing union find by
+rank which is the most efficient way to
+do it so what we're going to be doing
+is iterating through every single edge
+for example
+this one one two we know that we start
+out with three nodes right because we're
+given three edges therefore n equals
+three we have three nodes each node is
+numbered from one
+two to three right so we start out with
+three nodes that are not connected with
+each other right
+and the rank of each of those separate
+graphs is one basically the size of the
+graph right
+what we're gonna be doing is going
+through each edge so for example one
+two that means we're going to be
+connecting one and two
+together we're connecting them in the
+shape of a tree so one of them is going
+to be the parent node of the
+other and we're going to be doing that
+based on rank so for example
+if the size of this graph was
+or maybe we had something separate right
+maybe we had something like this
+if we had one graph of size 2 and
+another graph
+of size 1 then we would want to add the
+smaller graph
+as a child of the larger graph
+but in this case we know that both of
+the ranks or in other words
+size is the same of both of these
+they're both one so it doesn't really
+matter what we do
+let's add two as the child of one so
+since i added so since now one has
+another child the size of this is
+actually gonna be two now so let's
+update the rank of it
+to two but we also have to update the
+parent so
+initially notice how the parents are all
+one two and three what that means is one
+is a parent of one right that's
+that just basically means it has no
+parent and two
+is initially a parent of two but notice
+now two is not two actually has a real
+parent now two has a parent
+of one so what we're gonna do is erase
+this two
+and instead set it to one because now if
+we ever
+get to two and we wanna know who's the
+parent of two we can go
+up this link all the way to one and see
+that one is a parent of two
+next we're going to go to the next edge
+one and three this means we're going to
+be connecting
+one and three together so since one is
+the parent of one and three is the
+parent of three let's get the ranks of
+both of these
+the rank of one is going to be two the
+rank of three
+is going to be one since one has a
+larger rank
+than three that means three is going to
+be the child
+of one so let's add three as a child of
+one
+and by doing that we can also update the
+new rank
+of one because now the size of this has
+actually increased
+to three so let's change this to
+three and let's update the parent of
+three initially three was just the
+parent of itself
+now we're going to change that to also
+being one
+because the parent of three is clearly
+one now
+so now let's go to the last edge in our
+input array two
+three so what this is telling us is we
+want to merge
+two and three together basically we want
+to connect them together
+we're always gonna be connecting by the
+parent so what we're gonna do when we
+when we have two so far we've done our
+union algorithm now we're gonna do the
+find
+portion of union find every time we're
+given two nodes to merge together we
+need to
+find what their parents are so for to
+get two's parent we're gonna go
+up the link see that the parent is one
+for three
+we're going to go up the link see that
+its parent is also one
+what does that tell us if we're trying
+to merge two and three together into the
+same graph
+if they have the exact same parent which
+can be
+you know found from the parent array
+that means they're
+already connected that means if we added
+this
+new edge to our graph we're adding a
+redundant connection
+that means that this edge is the edge
+that we're going to return
+as our result it's the one that we
+identified first so with that being said
+now let's jump into the code so as
+mentioned we are going to have a parent
+array so initially we can just
+initialize that for every single node
+itself is going to be the parent so for
+i in
+range of the length of edges
+plus one because we are starting with
+zero even though our nodes are going
+from one to n
+we are going to have a zero in this
+input array just because it makes the
+math work out easier we're not actually
+going to be using that zero node
+and we're also going to have a list of
+ranks which initially is just going to
+be set to one
+so and it's going to be the size of
+length of edges
+plus one and then we can basically just
+define our standard algorithms for
+uh union and find so let's start out
+with find because it's easier so for
+if we were given a node n then we want
+to find what its parent is
+so we're going to go to its first parent
+and when we say parent we want to find
+the root parent it's possible
+that a parent could go multiple it could
+take multiple links to get to the parent
+so
+we're going to get the first parent of
+this parent
+of n and it's also possible that n could
+basically be the parent of
+itself so we're going to basically keep
+going until we find
+the last root parent so while is
+not equal to parent of n
+then we're going to basically keep going
+up the length so we're going to set p
+equal to parent of itself
+so while p is not equal to its own
+parent we're going to basically keep
+going up the link so then we're going to
+update p
+to the parent of itself but we are going
+to add one thing to this algorithm it's
+called path compression basically
+before we get to this portion what we're
+gonna say is for
+p we're gonna set its parent actually to
+the parent of its parent basically
+it's grandparent so we're gonna say its
+new parent
+parent of p is going to be parent of
+its parent and so this part is a little
+bit complicated but basically it's
+making sure that we
+shorten the links as we go up the chain
+of parents
+so if we had to go up the link one more
+time if we had to repeat this
+find operation it would be a little bit
+faster the next time that we did it
+and at the end when this is no longer
+the case basically
+once we've gotten to the root parent is
+when we're going to be returning p
+so this function is pretty short the
+next one that we're going to be
+implementing
+is the union function so if we were
+given two nodes n1 and n2 and we had to
+union them together that's what we're
+going to be doing so
+to union them we would have to find both
+of their root parents first right so
+that's why we implemented the find
+function first so we're going to want to
+get p1 and p2 the parents of n1 and n2
+we can do that with our find function
+find n1
+and find n2 one case is that
+both of the parents are equals for
+example p1 is equal to p2
+in that case we're going to return false
+because we cannot complete this
+operation so we're going to say
+return false if can't complete meaning
+they're already merged
+that's how we're gonna know that we
+found a redundant connection so we'll
+return false if they have the same
+parent if they don't have the same
+parent then we're gonna union them we're
+gonna be unioning them by rank so if
+the rank of p1 is greater than the rank
+of p2 that means that rank that means p1
+is going to be the parent of p2
+if the opposite is true then that means
+p2 is going to be the parent of p1 in
+the else condition but let's do the if
+condition first
+so p1 is going to be the parent so what
+we're going to do is for p2 we're going
+to set its parent
+equal to p1 we also then have to update
+the rank
+of p1 because it's now has more children
+than it had before
+so we're going to add to the rank of p1
+basically whatever the rank of p2 was
+prior to union unioning them together
+in the else condition we're basically
+going to be do the doing the opposite so
+for p1 we're going to set its parent
+equal to p2
+and we're going to add to the rank of p2
+i just noticed that i called my uh
+parent
+array parent but i've been referencing
+it as pair
+so let's just shorten this to par and
+the last thing we're gonna do in this is
+return true if we were able to
+successfully union them together so
+let's return true
+and that's basically the entire code now
+we get to the easy part where we're
+actually going to be calling these union
+find functions
+so let's go through every single edge so
+for n1n2 this pair of edges
+this pair of nodes in our edges input
+array we're gonna be calling
+union on these two n1 and two and
+if it returns false so if not the result
+of this function
+then we have to return this edge n1
+and 2 as the resulting edge that they're
+looking for and we know for sure
+it's guaranteed that at least one edge
+is going to lead to a redundant
+connection in this problem so this is
+definitely going to execute we don't
+have to put a return statement out here
+so this
+is the entire code so i hope that you
+learned something today i hope this
+video was helpful maybe you learned
+union finding it today
+and it's usually something that you can
+just memorize that if you need to
+so i hope this was helpful if it was
+please like and subscribe it supports
+the channel a lot and i'll hopefully

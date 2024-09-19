@@ -1,0 +1,553 @@
+everyone welcome back and let's write
+some more neat code today so today let's
+solve the problem cheapest flights
+within k stops i think this is a really
+good interview question because there's
+so many different ways to solve this
+problem and there's a lot of different
+trade-offs that you can discuss the main
+way that i'm actually going to be
+solving this problem is by using the
+bellman ford algorithm which is an
+algorithm that we haven't really gone
+over on this channel before so i think
+this is a good opportunity to go over it
+so to explain the problem this is
+obviously a graph problem as you can see
+from the picture where given a bunch of
+nodes each node represents a city and
+each edge in the graph represents
+obviously they are directed edges as you
+can see from the arrow down here so each
+edge represents a flight that connects
+two cities together for example city
+zero and city one are connected together
+meaning we can go from city zero down to
+city one we can travel along this flight
+and the edge actually does have a weight
+so in this case it's a hundred so that
+represents the cost or the price to go
+from city zero to city one and we're
+asked a very simple question we're given
+a source node in this case city 0 and a
+destination node in this case city 2.
+we're asked a simple question of what is
+the cheapest price traveling from city
+zero to city 2 the only catch here is
+that we can only do at most k stops so
+that's really the catch of this problem
+because as you know we know an algorithm
+that can calculate shortest paths right
+even with weighted edges this algorithm
+can can calculate shortest paths and
+it's called jigstra's algorithm but we
+can't use it easily in this problem
+because we're given a condition of at
+most k stops so if we try to take that
+idea and then incorporate it into
+gixxer's algorithm it's not super
+efficient but it is still doable but
+there's another algorithm that also
+calculates shortest paths and that is
+called the bellman ford algorithm and
+with this shortest path algorithm we can
+incorporate the idea of at most k stops
+and also do it efficiently the overall
+time complexity is actually going to be
+let's say e where e is the number of
+edges and k is the input parameter that
+we're given at most k stops the way it's
+going to work is it's going to be
+similar to a breath first search
+approach in general though the bellman
+ford algorithm actually runs an e times
+v time where v is the number of vertices
+e is the number of edges but in this
+case we're given a condition of k so the
+time complexity in this case is just
+going to be e times k and by the way
+looking at this problem what is the
+solution well obviously we have a direct
+edge linking zero to two obviously the
+cost is 500 in that case but we do have
+a second path if we go all the way to
+one costs a hundred and then we go from
+one to two then another hundred so that
+in total is going to be 200 not too bad
+right this is shorter like i mean the
+price is smaller and this does fit
+within our criteria obviously this path
+how many stops did this path have you
+might think it's two because we had we
+traveled along two different edges but
+when we say stops we're just calculating
+what's the number of cities between the
+starting point and the destination there
+was only one city in between them so
+that means we did fit the criteria of
+down here we were given k equals one we
+can only have one at most one stop in
+between the source uh and the
+destination so we were we did fit that
+criteria so in this case the result is
+gonna be 200 because this path is a
+valid path so now let's try to
+understand how bellman ford algorithm
+can actually help us so now let's try to
+understand the bellman ford algorithm
+and just to give you a little bit of a
+background on bellman ford it's actually
+a pretty general algorithm there's
+different implementations of it one of
+the benefits of bellman ford is that it
+can actually deal with the negative
+weights which is something jigstra's
+algorithm can't deal with but in this
+case obviously we don't have negative
+weights so what we're going to be
+focusing on is what we actually need
+from the bellman ford algorithm to solve
+this problem so we do have a source node
+a in this case and we have a destination
+node c in this case so the main idea
+with this algorithm is to start at the
+source node a so in this case this node
+and then slowly do a breath first search
+right so from a first we would look at
+what's the first layer of nodes that we
+can reach within one stop right within
+one stop okay we can reach
+b
+and c and then we'd continue that
+breadth first search and say okay now
+within two stops how many different
+nodes can we reach well can't really go
+anywhere from here can't go anywhere
+from here but from here we can go to
+this uh position c and in doing this
+breadth first search we're going to
+simultaneously be keeping track of for
+each node that we have visited or can
+visit what is the minimum price that it
+takes to reach that node because
+remember that's what we're trying to
+solve we're trying to find from starting
+at a going to see what's the minimum
+cost it would take within k stops so
+that's something i didn't mention yet in
+this case we have k equals one right so
+since k equals one what's the breadth
+first search going to be does that mean
+we're only going to do one layer of
+breadth first search no we're actually
+going to be doing k
+plus one layers of breadth first search
+and that's that has nothing to do with
+bellman ford that just has to do with
+how this problem is defined they just
+define to us that we can do at most k
+stops between the starting position and
+the destination right so this would be
+one stop between these two nodes so
+you're probably wondering why do i have
+this second temporary array of prices
+i'll get more into that in a moment for
+now i would just kind of focus on the
+general idea of what we're doing so if
+we're doing a breadth first search and
+we're starting at a what's the cost the
+minimum cost from starting at a to reach
+a well it's going to be zero of course
+right and so far if we've only reached a
+what's the minimum cost to reach b and c
+we're just going to put that as infinity
+for now so now we're going to do the
+breadth first search portion but the
+thing about this breadth for search is
+it's not implemented how you would think
+we're not just going to look at a and
+only look at the neighbors of a we're
+actually going to go through every
+single edge in this graph so for example
+let's go at the first edge okay this
+edge has a weight of 100 it connects a
+to node b so now the question is we can
+reach b along this edge did we find a
+new minimum path to be able to reach
+this node b
+did we or did we not well as of right
+now the value is infinity we found a way
+to reach node b with what's the cost to
+reach node b it's whatever the cost is
+to reach node a right which we already
+know is zero right so we're gonna say
+zero plus whatever the weight of this
+edge is which is a hundreds right so the
+overall cost to reach node b is a
+hundred that's less than infinity which
+is what we have so we can get rid of
+this infinity and then put a hundred
+but when we update this value we're not
+going to update it in the original
+prices array we're going to update it in
+the temporary prices array and then once
+we've completely updated the temporary
+prices array we're going to go ahead and
+put all of the values in the new prices
+array so we went over this edge already
+now let's look at another edge let's
+take a look at this edge 500. it
+connects a to c right so how much did it
+take to reach node a we know that's
+already zero right okay so going from
+node a which costs 0 to get to plus 500
+which is this edge to get to c so it so
+we found a way to get to node c with a
+cost of 500. is this smaller than the
+current minimum that we have for c which
+is infinity yes it's smaller so we can
+replace this with infinity but of course
+we're going to do it in the temporary
+prices array next we're going to look at
+this third and final edge even though
+this edge is not connected to a right i
+said this was a breath for search but i
+guess it's not technically a breadth
+first search because we are looking at
+all edges but notice what's going to
+happen when we look at this edge okay we
+found a way to go from node b to get to
+node c and it costs a hundred to do that
+did we find a new minimum to get to node
+c well the first question is how what's
+the cost to actually get to b to get to
+b is infinity it's not 100 100 is what
+we determined but for now we're going to
+be using this original value i'll
+explain why in a moment it takes a
+infinity to get to node b so to get to
+node c takes infinity plus 100 that's
+not smaller than infinity right so any
+time we get to an infinity in the source
+node right so we took a look at this
+edge right this is the source this is
+the destination it took in it took
+infinity to get to the source so we're
+just going to skip this edge all
+together right so it technically is a
+breath first search because we're
+skipping edges that we haven't actually
+gotten to for the source node and
+there's a lot of like technical
+questions you could probably ask so why
+am i even you know implementing it this
+way why am i going through all the edges
+when i could just do a regular breath
+for search the main reason is because
+the time complexity is not actually
+going to change and doing it this way is
+a lot easier to code you're going to be
+surprised how short the code is when i
+actually show that to you and to be
+honest since the overall time complexity
+is the same i think it's much better to
+go with a readable solution rather than
+a solution that saves you maybe 10 on
+the runtime right so i think this is one
+of the cases where simplicity is much
+better than a slight improvement in
+performance this is our temporary prices
+array and by the way we are going to
+have this zero here so
+if we updated a value in this case we
+did then we put the values here or the
+original values will still be there so
+what did we discover what does this
+array represent and what does this array
+represent basically before we started
+our breadth for search this is what we
+had now we've done a breadth first
+search of one layer and this is what
+we've determined for the sh for the
+smallest price to pay to reach each of
+these nodes this is what we've done so
+far for one layer but how many layers
+are we going to do in this case k is one
+does that mean we're only going to do
+one layer nope remember what i said
+we're going to do k plus one layers i
+know that's kind of confusing but it's
+just kind of how the problem is set up
+okay so now we're going to do our last
+layer of the bfs by the way i replaced
+our prices with this and temp prices
+will stay the same temp prices is always
+just going to be a copy of the regular
+prices and then when we update values
+we're going to put the updated values
+here then you know reassign them up here
+and then continue that kind of loop and
+of course we're going to do this k plus
+1 times right that's how the breadth for
+search is going to work we're going to
+update this entire array k plus 1 times
+so basically if the input value was k
+equals zero we have that result right
+within zero stops uh this would be the
+minimum cost to reach the destination
+node c 500 but we know k is actually one
+so we can have one stop in between the
+source and the destination so now once
+again we're gonna do the exact same
+thing we're just gonna go through every
+single edge so let's look at this first
+edge okay we know that from going from a
+to b it takes a hundred right so how
+much does it take to get to a it takes
+0. so it takes 0 plus 100 to get to b is
+that smaller than what we have for b no
+it's the exact same which is what we
+expect right we know within one stop or
+we know within zero stops in between it
+takes 100 to get there so having an
+extra stop in between a and b doesn't
+decrease that is what we found right if
+you have two stops three stops four
+stops between a and b it doesn't reduce
+the cost it's always going to be a
+hundred so this value will stay the same
+in temp prices let's look at the next
+edge this is going to be the exact same
+thing right 500 is just going to be the
+vowel that we put here it's already the
+same increasing the number of stops does
+not decrease the cost to get to c
+at least along this edge but now we're
+going to look at the third and final
+edge this edge and it takes from b to
+get to c takes 100 how much does it take
+to get to b it takes 100 to get to b
+right so 100 plus the value of this edge
+100 is 200 right 200 is what it takes to
+get to c now so is this 200 smaller than
+what we currently have for c yes it is
+that means we can update the value in
+temp prices for c we can change this 500
+to a 200 sorry if it's not readable i'd
+put it over here but 200 is the cost to
+reach c if we add an extra stop in
+between so now that we've gone through
+every single edge again we're going to
+take all of these put the values up here
+and we're actually done with the loop
+we're done with the entire algorithm
+because we ran it k plus 1 times so
+since this 200 since this 500 up here is
+going to be a 200 right that means 200
+is the value that we're going to return
+for the entire result right within one
+stop in between a and c which is
+obviously this route over here it takes
+200 cost to get there uh just an fyi if
+we were not actually able to reach this
+right like maybe within k stops we
+actually can't even go from a to the
+destination c what would we return in
+that case would we just return infinity
+no the way the problem is written they
+just want us to return negative one if
+that's ever the case so i hope this
+algorithm makes sense and i hope you can
+see why the time complexity is e times k
+because the loop is going to run k times
+and every time we loop we're going to be
+iterating through every single edge in
+the graph which is e so this is where
+the time complexity comes from you're
+probably still wondering why exactly do
+we have this temporary prices array if
+you're not you can probably skip ahead a
+minute but if you are let me explain
+that to you suppose we change the
+problem slightly suppose instead of
+having k equals one we change it to k
+equals zero that means the loop is going
+to run k plus 1 times that means the
+loop is going to run exactly one time so
+let's see what happens in that case what
+would be the output in that case if we
+could only have zero stops in between a
+and c what's going to be the cost to
+reach node c of course it's going to be
+500 right there's only one possible way
+we can reach c from a if we have zero
+stops in between we can't go along this
+path on the left side because it has one
+stop in between we're only allowed zero
+stops in between so if we run the
+algorithm and if we didn't have a
+temporary prices array let me show you
+what would happen we're going to go
+through the first edge 100 right okay
+we're going to figure out okay it takes
+100 to get to b right so we can replace
+this infinity with a hundred sorry if
+it's not readable but this is 100. next
+we're going to go to the second edge
+right another hundred what are we gonna
+say we're gonna say okay how long does
+it take to reach b it takes infinity
+nope it takes a hundred right because we
+put that update simultaneously in the
+exact same prices that we're iterating
+through right we put a hundred here so
+now what we're gonna say is okay how
+many how much does it take to reach c a
+hundred plus a hundred that it took to
+reach node b so then we'd put a 200
+value in the c spot right we'd put 200
+over here but what we just did because
+we updated the same prices we didn't
+have a temporary prices what we did is
+we instead used a path that had an extra
+node along it and we weren't allowed to
+do that look we had k equals zero so
+that's the idea of why we have to use a
+temporary prices array okay so now let's
+code it up and the best part about
+writing the code with my videos is i
+spend so much time explaining the
+solution that now writing the code is
+gonna be pretty trivial i bet for most
+of you so we're going to initialize
+prices to be infinity right where how
+how big is price is going to be it's
+going to be the number of nodes that
+we're given that parameter is n and
+we're going to initialize it to all
+infinity except for the source node
+remember the source node we're going to
+say it takes a price of 0 to get to the
+source node and that's the only variable
+we're going to need now we can actually
+start iterating uh through the loop
+remember how many times are we going to
+iterate through the loop we're going to
+do k plus one time so k is the input
+parameter we can use that we can do this
+loop k plus one times and once we do
+that we're gonna go through every single
+edge remember so uh edges are located in
+the flights array so we're going to go
+through every flight each flight or edge
+has three values a source which i'm
+going to say is s a destination which is
+d right going from s to d each edge is
+going to be directed each edge is also
+going to have a price so p is going to
+be what price is so iterating through
+this flights array let me just put a
+comment to tell you uh what each of
+those variables means and remember
+before we actually go through this loop
+we do want to have a temporary prices
+array and what we're how we're going to
+initialize this temporary prices is just
+going to be a copy of whatever prices
+happens to be at this point in time so
+just create a copy of prices this
+temporary prices is where our updates
+are going to go so there's only two
+conditions we're going to check for
+remember the one special case is if this
+source node right we have an edge source
+destination and price if this source
+node
+is not even possible to reach meaning if
+the price located at the source node
+happens to be infinity that that means
+we can't even reach this source node if
+it's equal to infinity so in that case
+we're just going to continue the loop
+right we don't want to check these edges
+and the only other case that we're going
+to look for is if we found a new
+shortest path to the destination node d
+so if we want to know what's the price
+to actually reach the source node s so
+far what's the minimum price to reach
+the source node s we know it's
+definitely not going to be infinity
+because we just checked that up above so
+whatever that price happens to be plus
+whatever is the price of this particular
+edge that we're iterating through so the
+price to reach s plus this edge
+connecting s with d so if this is
+smaller than whatever the minimum price
+is to reach the destination then we're
+going to update that weight or or rather
+we're going to update that price and
+we're not going to be checking this
+prices that way we're actually going to
+be checking if it's smaller than the
+temp prices array because it could be
+possible that through this single loop
+we updated this value already once right
+this temporary prices array so if we
+update it multiple times we want that
+update to be reflected we want to we
+want to just make sure that we're
+getting the minimum value is what i'm
+getting at so if it's smaller than that
+then we're going to be
+updating this to
+be
+this new minimum that we just found
+right this happens to be smaller than
+this so it's time to do an update so we
+can just copy and paste this into uh
+this line of code that's all for this
+for loop so once we're done updating
+those minimums uh the last thing we're
+gonna have to do is take temporary
+prices and then reassign it to be prices
+so prices can be updated to
+be just like this and really that is the
+entire implementation of bellman ford at
+least for the context of this problem we
+don't need any min heaps or anything
+like jigstr's algorithm and then finally
+we can return the result what are we
+going to return we're going to return
+prices of d right we want to know the
+minimum price to reach a destination
+actually not d we're going to be using
+dest because that's the input parameter
+that we're given up above over here but
+remember it could be infinity if it's
+equal to infinity so let's say if
+this is equal to float of infinity then
+we actually want to return negative one
+so return negative one if this condition
+is true if this condition is not true
+then we can just return whatever the
+actual minimum price happens to be okay
+so now let's run it to make sure that it
+works it doesn't have an amazing run
+time on leak code so you can see that it
+does work and it's relatively efficient
+you can make it slightly more efficient
+i think if you use like a hash map and
+stuff but i think for the most part and
+especially for interviews that
+definitely won't be a factor so i really
+hope this was helpful i'm pretty sure
+this is going to be a really long video
+and it's going to probably be a pain to
+edit so i do hope it was helpful if it
+was please like and subscribe it
+supports the channel a lot consider
+checking out my patreon where you can
+further support the channel and
+hopefully i'll see you pretty soon

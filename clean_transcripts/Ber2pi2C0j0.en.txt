@@ -1,0 +1,281 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+let's solve search a 2d matrix and i
+really like this problem because it's
+not one of those problems that you need
+a fancy trick for you can actually solve
+this problem just by using logic so we
+are tasked with creating an efficient
+algorithm for searching for a single
+value in an m by n matrix the matrix has
+two properties in every single row the
+integers are sorted from left to right
+and the first integer of each row for
+example this 10 is always going to be
+greater than the last integer of the
+previous row so greater than this one so
+in other words we know that each row is
+sorted and then the next row is going to
+be greater than that so technically each
+value in total throughout the entire
+matrix is going to be in sorted order so
+that's pretty good in this example we
+were given a target 3 so if we search
+for the target we will find it right
+here so then we can return true that it
+does exist if it does not exist then we
+simply return false so how can we solve
+this problem the key word here is create
+an efficient algorithm what would be the
+brute force of course we could do an
+algorithm o of m by n basically by
+searching every single value in the
+input array right that's a pretty easy
+algorithm to do on a two-dimensional
+matrix but can we do better of course we
+can because they gave us a couple
+properties that this matrix has some
+sorting already applied to it assume
+that we just had a single row like
+forget that we had a matrix if we just
+had a single row like this one and we
+know it's in sorted order do you know an
+algorithm that can search for a target
+value in a sorted array
+i know of one called binary search right
+and how efficient is binary search well
+let's say
+the size of this array is n we could do
+a binary search in log n time right but
+of course we know that we actually have
+m
+different rows right so let's say we ran
+a binary search on every single row
+until we found the input target value
+right what would the time complexity be
+well log n multiplied by m is going to
+give us a solution like that so that's
+using the first property knowing that
+each rows integers are sorted but and
+this is a pretty good solution but can
+we do even better than this i'll give
+you a hint we're definitely gonna have
+to use this second property that they
+told us each row itself is actually in
+sorted order as in we know that the
+values in this row are going to be
+smaller than all of the values in this
+row and all the values in this row are
+going to be smaller than all the values
+in this row so can we use that property
+to instead of searching through every
+one of these m rows maybe we can
+actually do a binary search just to
+figure out which one of these rows to
+search in the first place because for
+example if we're looking for a target
+value 3 let's take a look at this row
+this row could have any values between
+10 which is the lower bound and between
+20. so obviously the target value 3 is
+not going to fall within that range
+between 10 and 20 right so then the
+question is okay if the if the target
+value is definitely not in this row we
+can cross this row out but then which
+direction are we going to go are we
+going to look at the row above it or are
+we going to look at the row below it of
+course we would want to look at the one
+above right because above the top row is
+going to have smaller values than the
+bottom row right so when we cross this
+row out we can also say that you know
+let's cross this row out too because of
+course this row is going to have greater
+values that's how the binary search is
+going to work to even figure out which
+one of these m rows we're going to need
+to search right so we can reduce instead
+of m we can do a log m by running binary
+search after we've ran that log m search
+then we know okay this is the row that
+we have to do our second binary search
+on so after we're done with that we're
+going to do another binary search so
+let's plus here log
+n
+right log n
+for binary searching the row itself so
+that's a better time complexity than we
+had previously right log m plus log n
+that's pretty dang good so once we get
+to this row we're going to say okay 3 is
+what we're looking for does that fall in
+the range between 1 and between 7 of
+course it does so either our target
+value exists in this row or it doesn't
+exist at all so let's run binary search
+here so of course we're gonna have two
+pointers left pointer and right pointer
+then we're gonna check the middle value
+in this case i think the middle value is
+gonna end up being this one because zero
+plus three is gonna become index one but
+let's just say it became this one just
+to kind of show you what it's going to
+look like let's say our middle value is
+here we're going to check okay 5 is that
+3 nope 3 is less than 5. so what we can
+do in our binary search is cross out
+these values cross out our pointers now
+our right pointer is going to be over
+here and let's say we ran binary search
+again we compute the mid to be over here
+we check is this 3 nope 3 is greater
+than this so we cross this out and we
+shift our left pointer over here left
+and right are both here middle is going
+to be here as well we're gonna see okay
+either this has to be three or nothing
+or three just doesn't exist of course
+this is three so we found it we can
+return
+true and that's the entire solution so
+it's just a double binary search and we
+can implement that pretty easily once
+you kind of know how to do binary search
+and if you don't i'm going to show you
+how to do it right now so now let's get
+into the code so the first thing i like
+to do is actually get the dimensions of
+the matrix so let's get the rows and the
+number of columns in this matrix we can
+do that pretty easily because we know
+for sure that the matrix is always going
+to be non-empty and now we're going to
+do the first binary search we're going
+to look for the row that we need to find
+so i'm going to have two pointers one
+for the top row and one for the bottom
+row top row is zero the bottom row is
+going to be the number of rows minus one
+so now we're just going to continue to
+do the binary search until we can either
+find the target row or we we figure out
+that the target row does not even exist
+in the binary search so one case is that
+the target value is even greater than
+the largest value in this row so let's
+go to that row okay first before i do
+that let me actually compute the row so
+we want the middle row in this case
+we'll take the top and bottom and divide
+it by two
+that's kind of how binary search usually
+goes right so and then we have that row
+so in our matrix we're going to look at
+that row and we're going to look at the
+right most value in python you can do
+that with negative 1 but we could also
+just do number of rows minus or the
+number of columns minus 1 but in python
+it's a little bit easier so we're going
+to check is this target value greater
+than the largest value in this row if
+that's the case what are we going to do
+well then we need to look at rows with
+even larger values so what we're going
+to say is our bottom row is going to end
+up being the the current row plus one
+because now we want to look at rows that
+are uh larger than this row else if the
+exact opposite happens so let me copy
+and paste this if the target value was
+even less than the leftmost value in the
+array aka the target value was smaller
+than the smallest value in this row and
+that's in that case we need to look at
+rows with smaller values so we're going
+to shift our top pointer actually i
+think i just did it backwards so when we
+look for larger values we actually want
+to take our top pointer and then shift
+it down because when you go down in the
+matrix is when you actually get larger
+values and when we if we want to look
+for smaller values we're going to take
+our bottom pointer and then shift it up
+in that case we would want to set it to
+be row minus one so that's the case if
+the target value was either too big or
+too small if neither of those evaluates
+to true that means that the target value
+is actually
+actually does fall within this current
+row in that case we just want to break
+out of this while loop and then we can
+do the second portion of the binary
+search now it's possible that if we uh
+did not break out maybe we just created
+an invalid condition where we figured
+out that the top and bottom
+pointers are invalid right then our
+while loop would stop and what that
+would tell us is that we crossed out
+every single row in the matrix and none
+of the rows contained the target value
+in that case we have to return false
+immediately so basically if not top is
+less than or equal to bottom that means
+that none of the rows contain the target
+value and then we can just immediately
+return false if that's not the case then
+we're going to move on to the second
+binary search portion and we're going to
+run binary search on the current row
+that we found from the top and bottom
+pointer so let me just copy and paste
+that this is the row that we're going to
+run binary search on and we're going to
+have a couple pointers left and right
+which is going to be 0 and
+columns minus 1 because that's going to
+be the right most position in the row
+and we're going to do the pretty much
+the exact same thing that we just wrote
+above a second binary search while left
+is less than or equal to right let's
+compute the middle point we can do that
+by taking left plus right divided by 2
+and now we'll do the same thing so if we
+find that the target value is greater
+than the value in this target row at
+position middle that means we have to
+search towards the right of the row we
+have to search towards the right of this
+middle point in which case we'll say our
+left pointer is going to be m
+plus 1. we're going to search towards
+the right else if the exact opposite was
+true then we want to search towards the
+right so we can shift our right pointer
+to be mid minus one
+and else the last case is if we actually
+did find the target value in that case
+of course we can return true now if this
+loop exited but we never returned to
+true then outside of the loop then we
+have to return false meaning that we
+never found the target value okay i just
+forgot that when we're copy and pasting
+i forgot to change this condition so the
+first one of course is if target is
+greater the second else if is target if
+target is smaller then we want to shift
+the opposite pointer and that is the
+entire code so you can see that it's
+pretty efficient so i hope that this was
+helpful if it was please like and
+subscribe it supports the channel a lot
+and i'll hopefully see you pretty soon

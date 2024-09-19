@@ -1,0 +1,310 @@
+hey everyone welcome back and let's
+write some more neat code today
+so today let's solve binary tree right
+side
+view the problem is pretty
+self-explanatory we're given a binary
+tree
+and basically imagine you're standing on
+the right side of it so this is the tree
+imagine we have a person standing over
+here right you can see
+from the right side you can see
+everything on the right side
+and so what nodes can this person see
+well they can see
+the root node right there's nothing
+blocking that they can see
+this node can they see two well you
+can't really see two because it's behind
+this node right it's basically blocking
+it's blocking this node right
+and the same thing with these two nodes
+right we can see four because it's the
+right most right like
+imagine the person sees this but you
+can't really see that
+because it's being blocked by the four
+so
+that so when you just look at this
+example this problem seems really easy
+right so your first thought might just
+be okay start at the root
+and keep going to the right
+right just keep going down and we'll get
+the right side view right every node on
+the right side
+but we can make a counter example pretty
+easily to show that that actually won't
+always work imagine this node 5
+had a left child right like let's let's
+say it has 7
+over here now now you can see that our
+result is going to be
+one three four we can't include these
+nodes because they're being blocked
+but there's nothing over here right the
+seven is not being blocked so if this
+was our input tree then
+our output would be one three four and
+we'd have to add a seven to that because
+look at our person
+they can technically see down here so
+basically what this means is we can't
+only look at the right children right
+so you can actually solve this problem
+with a breadth first search i know most
+tree problems you can just do depth
+first search but this problem can
+actually be solved with breadth first
+search there actually
+is a depth first search solution but i'm
+going to explain the breadth first
+search solution
+to you because in some ways it's easier
+and you might know brett's first search
+in a tree is also known as level
+order traversal so it's also known as
+level order traversal which
+you're gonna see why it's called that
+just about now
+so instead of saying that there's a
+person over here that can see
+only the right side of the tree another
+way of framing this problem is saying
+okay for each
+level right each level of the tree we
+want the
+right most node so the first level it's
+pretty easy because there's only one
+node
+so we'll just take the one from that
+what about this
+level right we look at the nodes
+together for this level we want the
+right most so we get the three
+next we want the third level
+and what's the right most value it's
+gonna be the four right
+and lastly we take the last
+level and there's only one node it's
+seven
+so we're going to get d7 so with a
+picture this is pretty
+obvious right it's really easy to know
+what we're doing with a picture but
+actually
+writing the code for level order
+traversal is a little bit tricky
+and i'm gonna show you how to do that
+basically how we're gonna implement this
+is with a q data structure so initially
+what we're gonna do
+is add the root node to our queue so
+we're gonna add
+one to our queue and we're also going to
+have a result
+array so now what we're going to do is
+take a look
+at our rightmost value in the queue it's
+1
+so we're going to add 1 to our result
+next now we're no longer looking at this
+node we are looking at
+its children basically the next level so
+we can get that by taking the left and
+right child
+and adding them to our q and removing
+the leftmost value from our q so we add
+the two
+and the three to the q and it's
+important that we do it
+in order right the left and right the
+left has to be added
+first and then the right because we
+always want to get the right most value
+when we you know add to our result so
+now
+this is the second level of our
+uh tree right so what are we going to do
+again we're just going to take the
+rightmost value in this case it's 3
+add it to our result and next what we're
+going to do is we're going to look at
+the
+leftmost value pop it right but before
+we pop it we want to take its children
+notice it doesn't have a left child
+right that's null and the right child is
+5. so we're going to take its children
+and add them to the queue so now we're
+adding
+5 to the q so we're done with 2. next we
+have to remove
+3 from our cube because we're done with
+this level we want to look at the next
+level
+so we remove three but before we remove
+three we have to add its left and right
+child
+notice it doesn't have a left child but
+it has a right child four so we're going
+to add four to our q
+so now look at our cube we have two
+elements and these two elements
+represent the third level so what we're
+going to do
+now is take the rightmost value once
+again
+in our queue and add it to our result
+because that's
+the rightmost value in this level
+of the tree and now we're going to
+repeat that process so for five we're
+done looking at five but we have to look
+at its left and right child it has one
+child
+seven so we remove five and we add
+seven to our q and we also look at four
+so
+we're done looking at 4 right so we pop
+it but before we pop it we want to look
+at its children notice
+both of the children are null so
+basically we've reached our base case
+we don't end up adding more elements to
+the q
+in this case and now there's only a
+single
+element remaining in our queue and that
+element represents the fourth
+level of our tree and the rightmost node
+in that level is seven so we can add
+seven to our result
+and we know we still have to remove
+seven now right so remove seven from our
+q
+notice it didn't have any children right
+both of the children were
+null so we've reached our base case we
+cannot add
+any more elements to the queue therefore
+the queue is now
+empty so now we can stop running our
+algorithm we know that our result
+is complete we have no more nodes left
+to traverse
+so now let's translate this into code so
+i'm going to initialize a
+empty result i'm also going to have a
+q so in python we can do that like this
+it's called a dec and i'm going to
+initialize it just like i did in the
+picture with a single element
+and that's going to be root now it's
+possible that root
+could be null so technically it's
+possible that our q
+could have null values and i'm going to
+show you how i'm going to handle that
+so while the queue is non-empty that
+means we can
+pop elements from the queue so i'm going
+to get
+the right side element from this current
+level i'm initially going to set it to
+null
+and i'm going to get the current queue
+length
+right the current length of the queue so
+right now imagine
+it's just a single level right our q at
+any given point contains
+one level at a time so for this level
+i'm gonna get the length
+and then what i'm gonna do is go through
+every element
+in this level so for only q length right
+the initial
+length because we know this q is going
+to continuously be
+updated so i'm going to go through every
+element
+and i'm going to pop it so q pop
+left right we know we're popping
+elements from the left and we're adding
+elements to the right
+now we know the node actually could be
+null so what i'm going to check is
+if node is not null if it is null then
+we can just go to the next
+iteration of the loop so if it's not
+null what i'm going to do is update our
+right side
+to that node so you can see that after
+this entire
+loop is done executing what right side
+is going to have
+is the last node that was in
+this current level of the queue and
+since this node is not
+null i'm just going to take its children
+so
+so node.left and i'm going to append
+that to our queue
+and also i'm going to take node.right
+and append it to the queue
+now it's technically possible that these
+children could be null
+but we know that if they are in the next
+iteration of the while loop
+we'll come back here and we'll verify
+that the nodes are non-null
+before we you know update our right side
+and it's also important that you add the
+left node
+before you add the right node and after
+this
+after this for loop is done executing
+what we have done is taken every node in
+the current level
+popped it right that's what the pop is
+doing and taking
+all the children of that level and added
+them to the queue so basically what
+we've done is removed
+the elements from the previous level and
+added the elements from the next
+level so that's good and the other thing
+that we did is we took the right side
+the right
+most node in that level and had it
+stored
+in the right side variable so now we can
+take
+to our result we can take that right
+side variable and append it to the
+result
+but not just uh right side we actually
+want right side dot
+value because we're trying to append the
+values and it's actually technically
+possible
+initially right side was null in one of
+the base cases
+you know the right side could actually
+be null
+once we've reached the last level so
+we're going to verify that
+right side is non-null so once we've
+done that
+and once this cue is empty meaning we've
+gone through every single
+level of the tree then all we have to do
+is return our result
+so there it is it's a pretty efficient
+solution even though this percentage
+doesn't indicate that
+so i hope this was helpful if you
+enjoyed like and subscribe it supports
+the channel a lot

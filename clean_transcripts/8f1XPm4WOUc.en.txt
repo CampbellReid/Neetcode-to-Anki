@@ -1,0 +1,511 @@
+hey everyone welcome back and let's
+write some more neat code today so today
+let's solve
+number of connected components in an
+undirected graph
+and yes this is once again a problem
+from our blind 75 list
+the link to the spreadsheet will be in
+the description if you want to take a
+look you can see about
+18 people are currently viewing it
+including me but
+so this is a problem problem 34 from
+that list number of connected components
+so this is the graph one we'll be
+solving today
+probably tomorrow i'll finally go ahead
+and do alien dictionary
+so the main reason i've been putting off
+alien dictionary and even this problem
+is because i couldn't really find a free
+version of these problems on the website
+lint code so i actually went ahead and
+and shelled out the
+35 bucks for a leak code monthly
+premium subscription so for the next 30
+days i will have leak code premium so if
+you have any premium problems that you
+want to suggest feel free to do that in
+the description
+big shout out to my patreon supporters
+for making this possible
+but yeah so now let's actually get into
+the problems so we're given a graph of
+n nodes pretty simple so far so the
+number of nodes will
+be given to us with an integer n and
+we're also just given an array of
+edges belonging to this graph every edge
+is undirected it connects two nodes
+a and b together and all we need to do
+is just return the number of connected
+components in the graph now what is a
+connected component you probably already
+know but it's basically just
+an individual portion of the graph
+that's all contiguous
+see how everything in this portion is
+connected we also have
+a second portion which is disjoint right
+so these two components are disjoint
+right they they are not connected to
+each other but
+each of them separately is connected
+right like every of these three nodes is
+connected together
+these two nodes are connected together
+therefore we have two
+different contiguous components so
+there's not a lot of edge cases with
+this problem it's pretty straightforward
+so for example if we were just given
+two nodes zero two no edges between them
+then we would just return the number of
+nodes we're given two nodes
+therefore we have two connected
+components right one node by itself does
+count as a connected component
+and of course if we're not given any
+nodes n equals zero then we return zero
+but
+clearly this is pretty straightforward
+so far so there's a couple of ways to
+solve this problem
+so we're given the edges as a list of
+edges but we could make an adjacency
+list
+which would make it easy to do a dfs
+search on the entire graph so that's one
+way to solve this problem just go
+through every single node starting at
+zero right so we start at zero
+then do a dfs search from here so we're
+going to mark
+zero as visited we're going to see okay
+we can reach a one mark that is visited
+from the one we can reach a two mark
+that as visited so so far
+we've only done one dfs
+search right so therefore we found one
+connected component now
+now we are then going to try to do a dfs
+starting from one
+right but what we're going to find is
+that's already been visited so we don't
+want to
+add that to the number of connected
+components right so so far we still only
+have one connected component
+we can do the same exact thing for
+second node for node number two it's
+already been visited no need to
+increment the number of connected
+components
+then we're gonna get to node three this
+one has not been visited therefore now
+we have
+two connected components so now let's
+just do a dfs on here to mark
+all of them visited three is visited it
+has one neighbor four
+four is visited and then there's none
+left so we got two connected commands
+we'll try to do a dfs from four but it's
+already been visited so therefore
+we in the end notice we only had two
+connected components
+now this isn't a bad algorithm at all
+the overall time complexity is basically
+going to be
+it's basically going to be big o of e
+plus v because notice we are gonna have
+to go through every single
+edge when we traverse the graph end when
+we actually build the adjacency list and
+we're also gonna have to go through
+every node
+iterating through it as we traverse the
+graph and as we you know
+try to do the dfs starting at every
+single position so this is going to be
+the overall time complexity
+not bad at all but there actually
+happens to be a more natural way to
+solve this problem and if you have heard
+of the algorithm called
+union find it's a pretty rare algorithm
+to need on leak code but if you do know
+this algorithm
+then you basically know that this
+algorithm was literally made for a
+problem like this
+literally made to be able to count
+connected components
+as well as to be able to identify you
+know disjoint sets and all that stuff
+so i'm gonna use this problem as an
+opportunity to go over union find once
+again i think i've done this once before
+in a previous problem but let's dive
+into this so we're gonna mainly be
+maintaining two
+arrays one called the parent array and
+we're going to have a value in that
+array for each node that we're given in
+the input and initially
+the array is just going to look like
+this 0 1 2
+3 4. so each index so the index 0
+represents
+the 0 node index one represents
+the one node and the value in every
+single array clearly matches that
+of every single node initially at least
+so initially they do match
+what that basically means is each node
+is the parent
+of itself so the way union find works
+it's basically a forest of
+trees so we're gonna have multiple trees
+initially clearly we have
+n trees uh one for every single node
+in the input and as we go through every
+single edge such as zero and one what
+we're gonna do is take okay let's say
+zero is gonna be the parent so zero is a
+parent of itself
+but what we're gonna do to one is say no
+one's parent now
+is going to be zero basically what we're
+doing is just connecting
+the two nodes right and since we know
+that we just
+made a single connection what we can say
+now is that okay we started out with
+five different connected components
+we just merged two of them every time we
+perform a merge we're basically taking
+the number of connected components we
+have
+decrementing it by one so that's how we
+can keep track of the connected
+components
+and there's one slight un and it's not
+required but it's an optimization that's
+pretty easy to make with this problem
+we're going to maintain the rank of
+every single component so basically for
+every single node we're going to
+maintain
+what's the size of it basically you know
+if this is the parent what's the size of
+its entire connected component right now
+what we would
+initially for each of them it's
+obviously going to be one right the size
+for
+all of them is going to be one initially
+but
+since we just made this merge we're
+going to leave the rank
+of one as it is because it's not the
+parent but for the parent
+zero we can say okay it's rank is now
+not
+one it's actually going to be two really
+we're just talking about the size
+if this was the parent which it is the
+parent right so what
+in our rank array we could change the
+first one
+into a two and the reason we're
+maintaining this rank is basically just
+an optimization
+so right now you can clearly see we have
+one component of size two and we have
+one component of size one if we were
+if we were merging these two right would
+we want to merge
+this one as a child of this one if we
+did that
+we would get something like this right
+we'd get one
+and then zero right we'd get basically a
+linked list so why would we do
+that when we would rather merge the
+smaller connected component
+underneath the bigger one so if we do
+that we'll get something like this
+right and clearly here you can see if
+this was a tree the height of the tree
+is now minimized before we had a tree
+that was basically a linked list now we
+have a tree that's actually kind of a
+binary tree if you you know adjust your
+head by 90 degrees you can kind of see
+what i'm talking about but so that's the
+main algorithm
+so so far we've just done the first edge
+so now let's look at the second edge in
+our input one
+and two so we're connecting one and two
+and the way
+we're gonna merge these is first we're
+gonna get the root
+parent of both of these so for two two
+itself
+is its parent but for one one has
+another parent zero so when you
+get the root parent of two
+nodes that's how you know if they're
+already connected or not
+because if if maybe this two
+was connected to one then we would say
+okay one two's parent is one
+one's parent is zero and and then what
+we would say is okay one and zero both
+have the same root parent so therefore
+they're already merged so we don't need
+to merge them again but in this case you
+can see
+two has its own two is the parent of
+itself one has a root parent of zero
+so therefore they're not connected so we
+can connect them together we can union
+these two components together
+so this one is larger this one is
+smaller so we're going to add this
+as a child of zero where we're always
+adding to the root parent right we're
+not going to add it to one we're going
+to add it to
+zero even though this edge is connecting
+these two together
+when we add that edge itself we're going
+to make sure that 2 is connected
+to the root parent because we want to
+minimize the height of the tree
+and once we do that we know that the
+rank of this is actually going to
+increase so in our rank array we're
+going to get rid of two and now it's
+actually going to be
+three and also what i didn't update in
+the first go around was the parent of
+one and two so
+one and two have new parents now they
+both have parents of zero
+zero so this array is what we're going
+to use to go through every node and find
+its root parent
+so we've done both of the first edges
+now the last
+and third edge we're connecting three
+and four together so in this case it
+doesn't really matter which one is the
+parent i'm just gonna draw it like this
+because it's easier
+so three will be the parent of four so
+for node three we will update its rank
+its rank is going to be two
+and the parent of three is going to stay
+the same but the parent of four is now
+going to be three so that's just kind of
+the bookkeeping we're going to be doing
+to update
+our parent and rank arrays but each time
+we made a union operation we
+were taking our initial number of
+components five decrementing it by one
+and so we did a union three different
+times
+so we got a result of two two is the
+number of connected components we have
+at the end
+but let's say we just had one more edge
+let's say we had an edge
+zero two so let's say we're trying to
+merge zero and two right
+first we'll get the parent of two the
+root parent which is zero
+then we'll get the root parent of zero
+zero is the root parent of zero so what
+we're going to find
+since both of these have the exact same
+root parent
+that means they're already connected so
+we had two connected components we're
+not going to decrement this by one
+because we
+didn't end up you know decreasing the
+number of connected components we didn't
+even do a union operation so in that
+case
+we would return before we made any
+changes to the graph
+once we see that they both have the same
+parent we return immediately
+so that's the main idea of this
+algorithm once you've implemented it
+you've written it out and coded it once
+or twice or three times
+it gets pretty straightforward because
+most union find problems are pretty
+similar
+so now let's get into the code and like
+i said this is a leak code premium
+problem
+but if you don't have leak code premium
+i'd recommend solving leak code 547
+so this problem leak code 547 number of
+provinces is pretty much exactly
+like a union find problem so if you want
+to practice union find go ahead and do
+it on this problem it's pretty much the
+exact same
+so like i mentioned we're going to have
+a parent array initially
+each node so for i and range of
+n each node is just going to be the
+parent of itself and we're gonna have a
+list of ranks each
+uh you know component is just gonna have
+a rank of one initially so
+and then we're gonna define our two
+functions find and union find is the
+simpler one so let's start with that
+let's say we're given a
+node n1 we want to find its root parent
+so for n1 we want to return its root
+parent so initially we'll just set the
+result equal to n1 and we'll say
+while result is not equal to the parent
+of itself we know we can stop searching
+once we've gotten to a node
+where the node itself is its own parent
+because that means we can't go any
+higher we found the root parent
+so in that case what we would do is just
+return the result which is the root
+parent but if we don't
+have that what we can do then is
+basically update the current
+pointer to be its parent
+right we just want to go up that chain
+until we get to the parent now before we
+do that
+one thing i didn't mention in the
+drawing explanation because i don't want
+to get too
+in-depth it's basically an idea of path
+compression i would google it it's
+pretty simple
+to understand that's just kind of how
+union find problems are optimized it's
+just adding one line of code which can
+optimize it so basically what we're
+saying is before we go to the parent
+we want to set the parent of result
+equal to its grandparent so if we did
+have a linked list that we were going up
+the chain of what we would do now is
+basically make the linked lists
+a little bit shorter so we're just
+setting our parent equal to the parent
+of our parent if it happens to exist if
+it doesn't exist if we don't actually
+have a grandparent then
+this line will basically do nothing so
+that's pretty simple for the
+find function and last we're going to do
+the union so we're going to take two
+nodes this time n1 and n2 and we want to
+union their components together
+so first thing we need to do is find the
+root parents of each of these nodes this
+is exactly why we just wrote our find
+function first
+because we want to get the root parents
+of n1 and n2
+and then we can go ahead and merge them
+together now it's possible that they
+have the same parent in which case we're
+just going to return immediately
+so if p1 equals p2 we're going to return
+immediately we're going to return 0 to
+indicate that we did not actually
+perform a union
+otherwise we're actually going to do the
+union and remember we're going to do
+this union by
+rank so let's say the rank of p2
+is greater than the rank of p1
+in that case p2 is going to be the
+parent of p1 so we're going to say for
+p1
+let's set its parent equal to p2 and
+then we can
+increase the rank of p2 because since
+it's the parent
+we've just added some children to it so
+we're going to add to it the rank
+of whatever p1 happened to be before
+that
+and the else case is basically just
+doing the exact opposite of this so
+that would be if p1 was greater
+therefore we'd want p
+p1 to be the parent of p2 and we'd want
+to increase the rank
+of p1 by whatever the rank of p2
+happened to be before that
+once that's all said and done we're just
+going to return 1 to indicate that we
+actually did perform a successful union
+and those return values are going to
+come in useful for us right about now
+when we go through every single
+edge so let's go through every single
+edge which is a pair of nodes
+in our input edges so we're going to be
+unioning n1 and n2 together
+so we can call union on n1 and n2
+remember the number of connected
+components we initially start out with
+is
+n so we're going to set the result equal
+to n every time we perform a successful
+union operation we want to decrement the
+result by
+one which is the return value of union
+if it's successful if it's
+unsuccessful then we're going to return
+zero in which case our result is
+not going to be updated at all right if
+we don't perform a union there's no need
+to update the number of connected
+components
+so you can see that the math works out
+pretty nicely for us
+once that is completed we can go ahead
+and return the result which is the
+number of connected components that's
+what we originally wanted to do
+and it wouldn't be a video of mine
+without a typo i don't know how i missed
+it but on this first line i didn't
+actually
+declare the variable so for i in range
+and you probably caught that earlier
+so sorry if it was frustrating to watch
+but as you can see
+we've run the code and this problem is
+pretty efficient union find is about as
+efficient as you can get for this
+problem this problem is literally made
+for union finding so i hope this was
+helpful
+if it was please like and subscribe it
+supports the channel a lot and i'll
+hopefully see you pretty soon
