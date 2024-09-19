@@ -1,0 +1,2453 @@
+Problem:
+You are given a network of `n` directed nodes, labeled from `1` to `n`. You are also given `times`, a list of directed edges where `times[i] = (ui, vi, ti)`. 
+    
+* `ui` is the source node (an integer from `1` to `n`)
+* `vi` is the target node (an integer from `1` to `n`)
+* `ti` is the time it takes for a signal to travel from the source to the target node (an integer greater than or equal to `0`).
+
+You are also given an integer `k`, representing the node that we will send a signal from.
+
+Return the **minimum** time it takes for all of the `n` nodes to receive the signal. If it is impossible for all the nodes to receive the signal, return `-1` instead.
+
+**Example 1:**
+
+![](https://imagedelivery.net/CLfkmk9Wzy8_9HRyug4EVA/ba9b9be8-b888-45d6-627a-e719d1ac4e00/public)
+
+```java
+Input: times = [[1,2,1],[2,3,1],[1,4,4],[3,4,1]], n = 4, k = 1
+
+Output: 3
+```
+
+**Example 2:**
+
+```java
+Input: times = [[1,2,1],[2,3,1]], n = 3, k = 2
+
+Output: -1
+```
+
+**Constraints:**
+* `1 <= k <= n <= 100`
+* `1 <= times.length <= 1000`
+
+Transcript:
+hey everyone welcome back and let's
+write some more neat code today so today
+let's solve
+network delay time the reason i'm
+solving this problem is because it's a
+rare problem that you actually have to
+use
+ajixtra's however you pronounce that
+name
+this algorithm it's the shortest path
+algorithm
+it's not super common on leak code but i
+think it's a really cool
+problem to solve a cool algorithm to
+implement so obviously this is a graph
+problem we're given
+a network of n nodes labeled from
+1 to n and we're also given a list of
+times the times are going to be our
+edges so
+it's going to be directed edges so a
+time
+is a triple value the first value in
+this triple
+is going to be the source node so for
+example this node 2
+the second node the second value is
+going to be the target
+node for example 1 is this node
+and the reason it's a target is we can
+see that there is an
+outgoing edge going from two to the one
+so every edge is going to be directed
+right we can see there's a directed edge
+there a directed edge here
+the third value and this is also pretty
+important for this algorithm
+is the weight of the edge in the context
+of this problem the one basically just
+means the amount of time
+it's going to take for us to go from
+here to this node right
+but this is the weight of the edge so
+we're given
+a original node k so this is our
+starting point the node k is going to be
+the starting point
+so for example in this problem in this
+origin in this graph
+we're given k equals 2. that means this
+is the starting point
+for us what we want to do in this
+problem
+is starting at two how
+long would it take for us to visit
+every single node basically if we
+if we sent a signal from here in every
+direction so in this direction
+and in this direction how long would it
+take for that signal to reach
+every single node now if it's not
+possible for example
+in this case it is possible but what if
+we had a fifth node over here
+that's just not connected to these four
+nodes over here then it would be
+impossible
+for this node to send a signal here in
+that case
+we're simply going to return negative
+one because it's not possible
+but what about in this problem because
+it is possible
+how long is it going to take that's the
+only question now looking at the picture
+it's pretty obvious
+starting at 2 how long is it going to
+take for this to reach a signal
+it's going to take 1 right because the
+weight of the edge
+is 1. how long is it going to take for
+this node to
+to get the signal also one because
+the the weight of the edge is one so now
+we're over here
+let me just change the color to make it
+a little bit better by the way this was
+the original node how long did it take
+this node to get the signal
+technically zero right because it's the
+one sending the signal
+how long did it take this three to reach
+the signal one
+how long did it take this to reach a
+signal one now we're going to continue
+going
+from this three we know that this one
+doesn't have any more nodes that it can
+send the signal to but this three
+does it has a node over here four right
+now how long is it going to take this
+four to reach the signal
+well the weight of the edge is one so
+does that mean it's going to take
+the for one second or whatever our time
+unit is to reach this
+no because we have to add the one from
+over here right
+remember our signal first started over
+here
+then it traveled over here with one then
+it's going to travel again
+over here with one so in total once we
+have visited this
+node it's going to have taken two units
+of time to reach it
+now after this node reaches gets the
+signal
+that means everybody has gotten the
+signal how long did it take what's the
+largest value we have
+it took this one right this one took two
+seconds or whatever
+so therefore we're going to return two
+because after
+two you know units of time every node
+has received the signal so our output
+value
+in this case is going to be 2. now from
+looking at this example that we ran
+through you might be able to tell that
+jigstr's algorithm is actually a breadth
+first search algorithm
+that i'm going to show you the general
+idea of
+but the one difference about regular
+breadth for searches
+this algorithm actually uses a minimum
+heap
+aka a priority queue so we're going to
+be needing this data structure it's not
+a super common data structure
+but it is it is needed for this graph
+algorithm let me show you the actual
+algorithm after that we're going to jump
+into the code
+so in case you want to google this
+algorithm or do some more research it is
+called
+jigsaw's algorithm it is a shortest path
+graph algorithm
+and it's pretty common you have probably
+learned it in school if you study cs
+and what it does is in this case let's
+say our source or our starting point is
+this node the value one what it does
+is for every other node it basically
+tells you the shortest path right so
+for example three what's the length of
+the shortest path
+to this node well from directly from one
+to three
+it takes one so one is going to be the
+shortest path
+for this node what about this two node
+what's the shortest path to this node
+right
+with this it's pretty obvious because
+there's only one
+way to get here anyway but take a look
+at this node
+there's two different ways to get there
+now this
+is this the shortest path it's the
+obvious path right it's just
+one node away but the edge has a weight
+of four that's a problem because take a
+look at the second path that we can do
+we can go to
+three right over here then we can go to
+the four
+and then we can get to the two right
+that took three
+edges didn't it that took one edge two
+edge
+three edges but when we total these
+values up
+we get a sum of three that means
+this path is actually shorter than the
+path up here so
+it's not always clear right that's why
+we need an algorithm
+and that's exactly what we have we have
+jigsaw's algorithm
+and we're going to be doing a breath
+first search right so starting at this
+node the start node 1 we're only going
+to be possibly visiting nodes that are
+that are right next to our frontier
+right
+depth first search would be we just go
+one direction we just keep going right
+but breadth first search
+is we're gonna do this layer by layer
+right we're going to go to the first
+layer
+the next layer and so on if we had a
+bigger graph right that's how breadth
+first search works
+and every node that is on our
+frontier right so if this is our
+starting point we have two
+options of nodes we can visit this node
+or this node
+these both are going are going to be
+added to our min
+heap and we're only going to visit the
+one with a shorter path
+that does make sense so far doesn't it
+it makes sense that we would want to
+visit
+this node because it has a shorter path
+rather than visiting this node first
+which has a longer path right that makes
+sense so far
+that's why we're using a minimum heap
+minimum heaps can get us the minimum
+value
+pretty efficiently right every time we
+want to get a minimum value from the min
+heap
+it's just a log n operation
+okay so the way we initialize this
+algorithm is we know that we're starting
+here right what we're going to actually
+do
+is add this node to our min heap
+initially right so
+and in our min heap we're going to be
+keeping track of two values
+obviously the path length right because
+we're always going to be popping
+from the min heap based on the minimum
+path right so that's what
+that's like our key value that's what we
+actually care about right that's what's
+going to determine
+which one we pop but we also want to
+keep track of which node it is right so
+initially
+the path to reach uh the initial node
+one
+is zero right because we're that's where
+we're starting so
+it doesn't cost us anything to get there
+and the node itself
+is obviously one so this is how we're
+gonna start then we're gonna pop
+this value it's only one value so far so
+it's it's simple
+of where we're popping right once we pop
+this value
+what's our next step well like i said
+this is a
+breadth first search right so we're
+gonna take a look at the node over here
+it's one we're gonna look at all of its
+neighbors right
+it has two neighbors right we're
+checking that first
+layer this we're going we're going layer
+by layer
+with breadth first search right so this
+is our first layer right
+we're gonna take the first neighbor
+three how long does it take to reach
+three one
+we're not visiting it yet we're simply
+adding it to
+our min heap so the path length is one
+and this is for node three then other
+node that we can reach
+is two the path length is four let's add
+that
+as well four and the node is two
+and since we've already visited the node
+one we can cross it out now
+so now we're popping another value this
+time we have two values so which one are
+we gonna pop well this is a min heap
+right we're gonna pop the value with the
+minimum
+path it's this one right of course
+that's the one with the shortest path
+that's what we're gonna pop
+now so as we pop every element
+we're basically determining the minimum
+path so now we can say for sure that the
+minimum path to reach three
+takes us one right because one was the
+value that we added
+to our min heap and again we're just
+doing a breath first search
+what are all of the nodes that three has
+neighbors with
+it it only has neighbors with one node
+right this four we have a directed edge
+going exactly to four so let's add
+four to our min heap
+so we're adding the node 4 right so
+that's what we're going to put in the
+node position
+what are we going to put in the path
+position are we just going to put
+1 because it only takes 1 for us to get
+there from
+3 that's not actually what we're going
+to put we're going to take
+the total that it took to reach three
+which was
+one and it's taking us another one
+to reach four so we're gonna add the
+total to this right we're not just
+keeping track of the single one
+we're keeping track of the total path it
+takes
+for each node we want to know how long
+it takes to reach node 4
+all the way from our starting position
+we care about the starting position so
+when i put the path value
+of the path length for this node i'm
+going to put a 2 value
+so now we are once again done with this
+node so now again we are going to decide
+which one are we going to pop
+from our min heap we want to pop the
+value with a
+shorter path so we're going to pop this
+one
+so now we're at this node right and how
+many nodes can this node
+reach well it only has a single outgoing
+edge
+to this node 2 right and we see that
+2 has actually already been added to
+our min heap right but the only
+difference is this time
+and i'm running out of space so i'm just
+going to add a little slot is that
+for this 2 it's how long
+first of all how long did it take to
+reach this it took a distance of
+two to reach this four and plus one
+means that to reach this to reach this
+two now it's actually a distance of 3
+which is
+shorter than this one right so now
+we can actually add that same node 2
+to our min heap but this time we're
+going to have
+a distance of 3 which is shorter so we
+visited this node
+and now you can see that we only have
+one node remaining to visit
+good thing for us both of our options in
+the
+min heap lead to that node which one are
+we gonna pick
+it's a min heap so we're gonna pick this
+one 3
+is less than 4 so we're going to pop
+this from our min heap
+so now we finally popped the last node
+it's a path length of
+3 so now that we've reached every single
+node in our array and by the way this
+node does not have any outgoing edges so
+we don't have to do anything more
+and we even though we do have an a value
+left in our min heap
+once we pop it we're going to see that
+it's the same node that we've already
+visited we visited this two node and we
+visited every node now and you can see
+the max
+value that we got in terms of length is
+three
+so three is going to be our output in
+this case it takes
+three units of time or whatever for us
+to start at this
+position and then send a signal to every
+other node
+in the graph so analyzing the time
+complexity of this problem is actually a
+little more difficult than you think so
+i'm going to use
+e to tell us basically the number of
+total edges
+inside of our graph that we're given
+and v for the total number of nodes or
+vertices that we're given
+and just so you know the maximum number
+of edges
+that we could possibly have is about
+proportional to the number
+of nodes squared because like it's just
+kind of how it works so like if we had
+two nodes
+or rather three nodes you know there's
+we could have bi-directional edges
+for every pair of nodes and if you just
+basically this is just something that's
+true and that's what i'm going to assume
+so the max size of our heap could
+actually be
+v squared even though we have let's say
+four
+edges we noticed that some of the uh
+or rather we have four nodes we notice
+that some of the nodes could be added
+into the min heap
+multiple times that's dependent on the
+total number of edges that's why we're
+saying v
+squared is the total number of nodes
+that could be in the heap
+so every heap operation is possibly
+worst case
+log v squared and how many times
+are we going to be doing this operation
+it's going to be e
+times worst case basically the number of
+edges because for every edge
+is how many times we can add values to
+the heap
+right so and this and the way logs work
+logarithms if you take this 2 we can
+actually
+get rid of that too put it over here
+right put the two over here and we know
+how big o
+complexity works we don't care about
+constant values
+so this two actually goes away so the
+overall
+big o time complexity with a
+priority queue for a jigsaw's algorithm
+is going to be e
+log v this is just the general overview
+now let's get into the code
+so we're actually given a list of edges
+and we want to create an adjacency list
+of that first
+for jigsaw's algorithm so the first
+thing i'm going to do is create a
+dictionary or a hashmap of
+edges initially it's just going to be an
+empty list
+so i'm going to go through every edge in
+the input
+so for so for every edge u i'm going to
+get a list of all of its
+uh neighbors right because we know that
+that's pretty useful for a gixxer's
+algorithm we're going to
+basically get every single outgoing
+neighbor so v
+is the neighbor node and w is the weight
+of that node so we're going to add that
+to edges
+list for you so this is just creating an
+adjacency list for us which is going to
+be useful
+now i'm going to create that min heap we
+remember
+we want to just initialize this min heap
+with the first value and the
+weight of it's going to be 0 because we
+know it doesn't cost us anything to get
+there and that
+starting node is given to us as k i'm
+also going to have one more data
+structure it's going to be a set
+basically it's going to keep track of
+all the nodes that we've visited because
+we know we don't want to go
+in a cycle we don't want to go in a loop
+so we do have to
+sort of keep track of that i'm also
+going to have a variable t
+for the result initially it's going to
+be 0 basically the max
+value that we end up getting or the last
+node that we visit
+and the cost or the length to visit that
+note is going to be the value that we
+return
+so now we're just going to continue our
+algorithm while our min heap
+is non-empty we're going to keep popping
+from
+our heap while it's not empty we know
+that there's two values that we added
+the
+weight was the first value the second
+was the actual node itself so we're
+going to say
+keep q dot heap pop
+from our min heap this is basically how
+you do it in python it's
+pretty easy in python that's what i like
+and
+like i said we don't want to visit a
+node multiple times so if we see that
+this node
+n1 is in visit meaning it's already been
+visited then we're just going to
+continue to the next
+iteration of the loop we don't want to
+go through all of this node's neighbors
+if it's already been visited otherwise
+what we're going to do is
+add it to visit so that we don't visit
+it again and we're also going to update
+our result
+t so we're going to set it to the max of
+what it already is
+and the max of the weight that we just
+got the weight is remember the time it
+takes to reach
+this node so we're going to update that
+now we're going to do the breath first
+search
+portion of it so we're going to go
+through all the neighbors
+of this node so the no the neighbor and
+the neighbor's
+weight so i'm just going to call that n2
+and w2 because i'm bad at naming
+these so in edges basically neighbors
+of this n1 original node that we just
+popped from
+our min heap we're going to go through
+it and for all of the neighbors that
+haven't already been visited so if
+n2 is not in visit it's it has not been
+visited yet
+then we're going to add it to our min
+heap so heap q dot
+heap push on to our min heap
+is going to be this node n2
+but remember the first value we're
+adding is the weight so
+weight 2 but remember this weight
+is just this weight 2 is just the weight
+that it takes
+for one edge but we want to keep track
+of the total
+uh path length to reach this node so
+we're actually going to add that
+w1 the first weight to it
+as well so w1 plus w2
+the total path that it takes to reach n2
+i know that this algorithm is actually
+pretty complicated
+it's not a lot of code it's about 20
+lines but it's actually
+you know it does take some practice to
+get used to it after you've written it a
+few times you do kind of understand the
+subtleties of it
+it's pretty easy to go wrong with this
+algorithm but we've basically
+written the entire thing so now we can
+return
+t after this loop is done executing
+after the min heap is empty
+our t should give us the uh basically
+what it takes to reach every single node
+if it's possible right remember if it's
+possible
+and we know that it's possible basically
+we've visited
+every single node if the length of visit
+is equal
+to our input value n which tells us the
+total number of nodes if we visited
+every node then we can return
+t remember the other condition was if we
+can't visit every single node
+we return negative one and that is the
+entire algorithm remember the overall
+time complexity is big
+o the total number of edges multiplied
+by log the total number of vertices
+so this was a pretty long one it was
+pretty difficult i actually had a lot of
+bugs when i was writing my code for this
+video
+and i hope that this came across pretty
+clear
+if this was helpful please like and
+subscribe it supports the channel a lot
+and i'll hopefully
+
+Solution:
+class Solution:
+    def networkDelayTime(self, times: List[List[int]], n: int, k: int) -> int:
+        edges = collections.defaultdict(list)
+        for u, v, w in times:
+            edges[u].append((v, w))
+
+        minHeap = [(0, k)]
+        visit = set()
+        t = 0
+        while minHeap:
+            w1, n1 = heapq.heappop(minHeap)
+            if n1 in visit:
+                continue
+            visit.add(n1)
+            t = w1
+
+            for n2, w2 in edges[n1]:
+                if n2 not in visit:
+                    heapq.heappush(minHeap, (w1 + w2, n2))
+        return t if len(visit) == n else -1
+
+
+Problem:
+Given an integer array `nums`, return all the triplets `[nums[i], nums[j], nums[k]]` where `nums[i] + nums[j] + nums[k] == 0`, and the indices `i`, `j` and `k` are all distinct.
+
+The output should *not* contain any duplicate triplets. You may return the output and the triplets in **any order**.
+
+**Example 1:**
+
+```java
+Input: nums = [-1,0,1,2,-1,-4]
+
+Output: [[-1,-1,2],[-1,0,1]]
+```
+
+Explanation: 
+`nums[0] + nums[1] + nums[2] = (-1) + 0 + 1 = 0.`
+`nums[1] + nums[2] + nums[4] = 0 + 1 + (-1) = 0.`
+`nums[0] + nums[3] + nums[4] = (-1) + 2 + (-1) = 0.`
+The distinct triplets are `[-1,0,1]` and `[-1,-1,2]`.
+
+**Example 2:**
+
+```java
+Input: nums = [0,1,1]
+
+Output: []
+```
+
+Explanation: The only possible triplet does not sum up to 0.
+
+**Example 3:**
+
+```java
+Input: nums = [0,0,0]
+
+Output: [[0,0,0]]
+```
+
+Explanation: The only possible triplet sums up to 0.
+
+
+**Constraints:**
+* `3 <= nums.length <= 1000`
+* `-10^5 <= nums[i] <= 10^5`
+
+Transcript:
+okay let's solve leak code 15 threesome
+the sequel to the popular question to
+some so before you solve this question
+the first thing you should do is make
+sure that you've solved twosome which is
+the most popular question on leak code
+so you've probably solved it or at least
+seen it before
+I also recommend solving twosome 2 which
+is basically to some except the input
+array sorted a lot of people skip this
+question I think that's what makes
+threesome a little harder because they
+don't solve this one first if you solve
+twosome n to sum to this question
+threesome is pretty straightforward in
+my opinion but ok let's get into the
+question so we're given an input array
+of n integers as per usual this array
+though can have duplicates as we can see
+in the example right two negative ones
+in this case now what we want to do is
+find 3 numbers of this array so a B and
+C and they and we want them to sum to 0
+so in the example there were two
+elements or two triplets that summed it
+to the total 0 now one problem is that
+we cannot have duplicates in our
+solution so we're gonna have to keep
+that in the back of our minds so let's
+just start the most brute force way you
+we see that we need three numbers so why
+not just have a triple loop right just
+get every single combination of three
+numbers that's probably the first thing
+you're gonna try right so let's say our
+first number is negative three
+this is our a so we're gonna try each of
+these numbers for B right this could be
+a B this could be a B this could be a B
+this could be a B this last one can't be
+a B because we need at least one number
+to come after it so that it's a C now if
+we did that if we did that with our
+triple loop we would find that there is
+one such combination starting with
+negative three that will sum to zero if
+we take one as our B and we take two as
+our C value because then we'll have
+negative three plus one plus two that's
+obviously zero so to our solution set we
+can say okay there's a negative three a
+one and A two
+so now when we move we can consider this
+as our first element right but
+eventually we'll see that we go through
+the entire thing and we don't find
+anything that cannot be added to three
+that'll give us a sum of zero we all do
+the same for this one and there isn't
+anything now we get to with negative
+three again though because remember
+there are duplicates in this array so
+now we're saying again that we're gonna
+put negative three in this first spot
+now this is a recipe for finding
+duplicates this is not good and we'll
+see in this example that's exactly
+what's gonna happen does another we'll
+take this as our B we'll take this as
+our C again we find negative three plus
+one plus two sums to zero so then we're
+gonna add that again to our result set
+right but that's not what we want we
+want to eliminate the duplicates so the
+problem was we took negative three as
+our a value right and then we search the
+rest of the array for two numbers one
+and two that add to zero but then we
+went back here right and we found the
+negative three again and we did the
+exact same thing the problem is we don't
+want to have the same number in this
+position in the a position twice because
+then if there are the numbers that come
+after it we could potentially find
+duplicates the solution to this problem
+is to sort the input array let me show
+you what I mean so here you can see that
+the array is now sorted let's cross out
+our top right which was unsorted so now
+we are going to sort the input array so
+now when we're looking for all
+combinations if we find negative three
+first then that's good okay we'll say
+negative three then we find these two
+numbers 1 plus 2 and then we find our
+solution great now if we get to negative
+3 again we'll say hey wait a minute this
+number was already in this position
+right and we know that because it's its
+neighbor it's left neighbor is the same
+value we don't want to put it twice here
+because if we do we'll get the same
+duplicate so we're gonna tell ourselves
+that we already computed all
+combinations that start with a negative
+3 so we don't need to do that anymore
+we already visited this one we're gonna
+skip this one and then we're gonna go
+here so that means in this case we're
+not going to find any more
+results in the remaining portion of the
+area because they're all positive
+they're never going to sum to zero so
+then in our result we're only gonna have
+the one triplet negative three one and
+two we eliminated duplicates by not
+reusing the same element twice I think
+it helps to understand a little bit
+about the statistics of like
+combinations and permutations to like
+understand exactly why this eliminates
+duplicates but I hope this explanation
+at least helped a little bit so now that
+we know to sort the input array and we
+know how to eliminate duplicates once we
+find our first number notice right so
+let's say we have a negative 3 so then
+the remaining part of the problem
+there's only two elements right so it
+basically reduces to twosome and you
+probably know how to solve twosome right
+obviously we can put the numbers let's
+say that this is our first a right so
+then for the remaining portion we're
+basically going to do to sum and you can
+do that with a hash map or a hash set
+but if you've solved the problem to some
+two you know that we don't need to use a
+hash map we can use a left and right
+pointer so this is our left and this is
+our right and if we find numbers such
+that left and right added to our
+negative three sum to zero then we're
+gonna add them to the solution set if
+the sum though is too big for example if
+our sum was greater than zero we want to
+decrease our sum now we can do that by
+taking our right pointer and shifting it
+so our right pointer would be shifted
+here notice how that decreases the sum
+because the numbers are sorted so if
+you've sold to some two before you know
+exactly why this works and I encourage
+you to watch that video if you want a
+deeper explanation now on the other hand
+maybe our sum is too small our sum is
+smaller than zero in that case we would
+shift our left pointer because the input
+array is sorted if we shift our left
+pointer we're increasing the sum now
+there could be duplicates among these
+left and right values too for example if
+this this one was a negative three
+instead right in that case we don't want
+to reuse the same element twice even
+our left and right values so we would
+not use the same we would shift our
+pointer once more over here we don't
+want to reuse the same value for left
+and right either so we don't get any
+duplicates now in terms of time
+complexity remember we are sorting the
+array which is Big O of n log N and then
+we are not doing the brute force with
+triple loops that would be n cubed we
+are using the fact that this input array
+is sorted to our advantage
+we're using one loop to get to tell us
+the first value and we're using the
+second loop to basically solve two sums
+so we're gonna have two nested loops and
+that's going to give us o N squared so
+that means obviously the time complexity
+reduces to just of N squared now the
+space complexity will depend so for the
+implementation I'm showing it could be
+Big O of 1 or it could be Big O of n
+because sorting actually does take extra
+memory in some libraries so it depends
+on your implementation of sorting it
+could be O of n ok now let's get to the
+code so we remember we have to return
+this result as a list of lists and
+remember the first thing you want to do
+is sort the input array next we want to
+use each number in the input array as a
+possible first value so I will iterate
+through the index and the value and
+remember we don't want to reuse the same
+value in the same position twice so if I
+is greater than zero meaning this isn't
+the first value in the input array and
+this value a is equal to nums
+of I minus 1 that means it's the same
+value as before that means we want to
+continue we don't want to reuse the same
+value twice so we're going to continue
+to the next iteration of the loop next
+we're going to use our two pointer
+solution for the remaining portion of
+the array to basically solve to sum so
+we'll have left and right pointers left
+will initially be I've
+plus one right will be the end of the
+list length minus one left and right
+can't be equal so we're gonna say left
+is less than right now we're going to
+actually compute the sums so we'll say
+our three sum is a plus numbers of left
+plus numbers of right so if the sum is
+too great remember if it's greater than
+zero which is what we're looking for
+then we need to decrease it in which
+case we would say our right pointer
+needs to be decremented on the other
+hand if it's too small we need to make
+the sum bigger
+if only I could type today if it's too
+small we need to make it bigger so shift
+our left pointer to the right the last
+case is if this is equal to zero so of
+course we have to add it to our result
+so to our result we're going to append
+all three numbers so the numbers are a
+number of left and nums of right now of
+course we got to update our pointers
+about how do we update it there's a lot
+of ways you can do it but I'm going to
+show you the way that you can do it with
+writing the minimal amount of code so
+let me just write a comment to show you
+a little bit what if we had the to sum
+basically for these left and right and
+we were at negative 2 negative 2 so
+negative 2 0 0 2 &amp; 2 what if our left
+pointer was here and our right pointer
+was here in that case we might have we
+found a solution let's say right then
+we'd want to update our left pointer
+right so then our left pointer gets to
+negative 2 again but that's the same one
+as before so in that case we want to
+update it one more time to get it over
+here right now in that case now our sum
+is going to be too big because we're
+going to be at 0 plus 2 so that's
+greater than 0 so then our loop is gonna
+execute saying that this is too big and
+we're gonna shift the right pointer to
+the left but notice how that right value
+is now the same as it previously was to
+but that's ok
+because our sum is gonna our sum is
+going to evaluate as too big
+to our right corner is going to be
+shifted again notice how each value is
+only going to have one corresponding
+value that it can sum equal to the
+target which is zero so we only have to
+update one pointer and there are two
+conditions up here we'll update the
+other pointer by itself we don't even
+have to worry about it
+so in this case we're only going to
+shift our left pointer because we don't
+want to have the same sum we're gonna
+have to use a loop so in this case if
+nums of left is equal to num of left
+minus one that means it's the same value
+so we have to keep shifting our pointer
+but remember we don't want our left
+pointer to ever pass the right pointer
+so we're gonna add that to the condition
+so this is all we need to do now I
+believe unless I've made another stupid
+bug we should be able to just return our
+result and pass the problem with the
+most optimized solution okay I'm praying
+that this works on the first try let's
+see we passed the test case the first
+test case they really want you to buy
+leak code premium this is taking okay so
+it did pass usually have some stupid
+bugs where I mess up a condition but
+okay so we passed it this is pretty
+complicated I'm not gonna lie this is a
+pretty hard problem to solve if you've
+only just solved to some so I really
+recommend solving to some two as well
+before solving this problem I might have
+made it look easy with the amount of
+code I wrote but don't let it fool you I
+really struggled with this problem the
+first time I was doing it and you can
+see here and by looking at the evidence
+a long time ago well ten months ago I
+was pretty bad at this as well so don't
+get discouraged if this was helpful
+though please leave a like and subscribe
+
+Solution:
+class Solution:
+    def threeSum(self, nums: List[int]) -> List[List[int]]:
+        res = []
+        nums.sort()
+
+        for i, a in enumerate(nums):
+            if a > 0:
+                break
+
+            if i > 0 and a == nums[i - 1]:
+                continue
+
+            l, r = i + 1, len(nums) - 1
+            while l < r:
+                threeSum = a + nums[l] + nums[r]
+                if threeSum > 0:
+                    r -= 1
+                elif threeSum < 0:
+                    l += 1
+                else:
+                    res.append([a, nums[l], nums[r]])
+                    l += 1
+                    r -= 1
+                    while nums[l] == nums[l - 1] and l < r:
+                        l += 1
+                        
+        return res
+
+
+Problem:
+A **prefix tree** (also known as a trie) is a tree data structure used to efficiently store and retrieve keys in a set of strings. Some applications of this data structure include auto-complete and spell checker systems.
+
+Implement the PrefixTree class:
+* `PrefixTree()` Initializes the prefix tree object.
+* `void insert(String word)` Inserts the string `word` into the prefix tree.
+* `boolean search(String word)` Returns `true` if the string `word` is in the prefix tree (i.e., was inserted before), and `false` otherwise.
+* `boolean startsWith(String prefix)` Returns `true` if there is a previously inserted string `word` that has the prefix `prefix`, and `false` otherwise.
+
+**Example 1:**
+
+```java
+Input: 
+["Trie", "insert", "dog", "search", "dog", "search", "do", "startsWith", "do", "insert", "do", "search", "do"]
+
+Output:
+[null, null, true, false, true, null, true]
+
+Explanation:
+PrefixTree prefixTree = new PrefixTree();
+prefixTree.insert("dog");
+prefixTree.search("dog");    // return true
+prefixTree.search("do");     // return false
+prefixTree.startsWith("do"); // return true
+prefixTree.insert("do");
+prefixTree.search("do");     // return true
+```
+
+**Constraints:**
+* `1 <= word.length, prefix.length <= 1000`
+* `word` and `prefix` are made up of lowercase English letters.
+
+Transcript:
+everyone welcome back and let's write
+some more neat code today so today let's
+solve
+implement try aka a prefix
+tree so a try or a prefix tree is a
+special type of
+tree and it's used to efficiently store
+strings and
+the applications are some stuff like
+autocomplete
+and spell checker the reason is because
+the prefix
+tree allows you to efficiently filter
+and search
+based on prefixes so let's look at the
+actual implementation of it
+so we're going to have a object that's
+what we're going to be doing this time a
+try
+object and our job is to fill in three
+functions the first function is going to
+be
+inserting a word into the try the second
+function is going to be
+searching for a word in the try to see
+if the word
+exists and the third function is going
+to be to check
+if there is a word that starts with a
+given
+prefix so those are the three functions
+we're gonna do
+and let me just go through the rest of
+this explanation
+and then i'll show you what a try
+actually is so here you can see
+basically what we're gonna actually be
+doing
+they're gonna be instantiating the try
+right we're going to be inserting a word
+such as apple right then we're going to
+run search
+does the word apple exist but we just uh
+added it so of course we're going to
+return true apple exists
+then we're going to check does the word
+app exist
+it does not the word app does not exist
+and third we're going to try starts with
+app are there any words that start with
+app an answer is yes so we return true
+remember
+apple starts with app so we return true
+the
+prefix right this is the prefix app
+is the prefix of apple so
+now let me show you the actual data
+structure so let me show you what a try
+is and in this problem they told us that
+the limitation
+is that the words are gonna only have
+characters from
+lowercase a to z right so this is
+lowercase a to z so that means we're
+gonna have exactly 26 characters
+to worry about right but so this is a
+tree right it's a prefix tree it's a
+special kind of
+tree so initially our tr our tree is
+going to be empty
+right but let's say we want to insert
+apple
+so if we want to insert the word apple
+how can we do that well this is what
+we're going to do we're going to create
+a node for the lowercase
+letter a right then we're going to
+create another
+node for the lowercase letter p
+and we're going to basically keep doing
+this for every
+character in the word that we're
+inserting right we're going to say
+a insert it p insert it second
+p keep doing that and every time we're
+inserting a new character we're going to
+add it as a
+child of the previous character
+so we inserted the word apple right we
+can clearly see that
+one more thing we have to do to say that
+this is
+the word that we inserted is we have to
+mark the
+end of the word right so this is the
+end of the word right the letter e is
+the end of the word so we're going to
+mark it such that
+so that this is identified as the end of
+the word right not
+for example this right if the if we mark
+this as the end of the word
+then we're basically saying we inserted
+the word a p
+but we know we actually did apple right
+full on
+apple this is the last character so we
+mark here as the last character
+we are marking it even though it's kind
+of self-explanatory because this
+character e
+does not have any children it's
+basically obvious that this is the end
+of the word but we're still marking it
+just to be safe
+so you can kind of see what we're doing
+here now right this
+is kind of the route right so
+really what's going to be possible is we
+have 26 characters right so
+potentially we could have a a a
+node at the first layer for every
+character right so a
+b c d etc right we could have a node for
+each of these
+basically indicating that here is where
+we're gonna put all of the words that
+start with a b
+here we're gonna put all the words that
+start with a c here's where we're going
+to put all the words starting with d
+so the next thing we're going to do is
+run search we're searching for the word
+apple so how are we going to do that
+well we're going to start
+here at our root right this is
+technically our root even though it
+doesn't really have
+a character right so that's basically
+just a placeholder node right it doesn't
+have any characteristics
+but it's considered the root right and
+so we're gonna check does this
+root have the child the of the first
+character that we're looking for right
+so take a look this is the word we're
+looking for
+obviously we're looking for the
+character a so we check
+hey there's the a lowercase a right it's
+the first character of the word that's
+what we're looking for great
+now for this a we're looking for the
+next character right so does this a have
+a child
+p character it has exactly that so we do
+have this p
+right and this is what we're doing right
+we're going character by character in
+the word we're searching for and
+checking
+if a node exists for each character
+consecutively right as a child so
+next character p does this have a child
+p yes it does
+next character l we have a child l next
+character
+e this is the last character so we do
+have an e
+over here right and last thing that we
+have to confirm
+is okay this is the last character does
+is it marked
+such that this is the end of the word is
+it marked as if it was the end of the
+word
+it's blue right that's what we're doing
+to indicate that it's the end of the
+word
+so it is right so clearly we do have
+apple we search for apple what do we do
+we return
+true because apple does exist in the try
+so next let's run search again and this
+time
+let's check if a word app exists inside
+of our try app right not apple
+so obviously we know that starting from
+the root again we do have an
+a lowercase a just like we checked we do
+have a lowercase p
+after that and we do have a second
+lowercase p
+so since we do have all three of these
+characters right
+a p p shouldn't this function return
+true
+no we're not returning true and the
+reason is
+this node is the last character of the
+word right p
+and it's not marked blue meaning it's
+not
+marked as a word right remember we only
+inserted apple into our try right into
+our tree
+and we and we marked this as the end of
+the word we never inserted
+app into the tree so this is not marked
+as the end of the word so we return
+false for saying that uh
+app does not exist in our tree app is
+not
+a word yet next let's run another
+function on our tree or try we're going
+to check
+does a word start with app how can we
+check if a word
+starts with app well we're basically
+running the exact same thing what we've
+done right we're starting at the root
+we're going to check
+character by character so this is pretty
+like all three of these functions are
+pretty similar right we're checking
+character by character for all of them
+start at a a exists check p p
+exists check another p p does exist
+so since we found all of the characters
+right
+we're basically guaranteed that's either
+this
+is a word itself which clearly it's not
+right we never inserted app
+or we're guaranteed that there is some
+word
+below that has been marked right because
+if
+we inserted these characters we only did
+that because we were inserting a word so
+there's guaranteed to be
+at least something that is marked blue
+down here right so
+so once we found this character the
+second p
+which is all the characters in here then
+we can say true right there definitely
+exists
+a word that starts with app right and so
+this starts with function is the main
+reason we're even
+implementing a try in the first place
+because if we want to
+insert words and search for words exist
+right to check if a word exists we could
+just use a hash map for that right
+because
+hash maps can or hash sets can do both
+of those things in o of
+one time right but this is really the
+problem
+starts with it allows us to check
+prefixes right so now
+let's say we were inserting another word
+let's say we're inserting the word
+ape right a p e how are we gonna do that
+right we're inserting another word what
+does that mean are we gonna say
+a p e and then just create a separate
+node for each of these
+as children right and just connect them
+such as that right this is a child of a
+this is the child of p are we gonna do
+that no because we could
+reuse it right why would we have
+duplicate a's
+in the first position when we already
+have an a
+over here so if we are inserting this
+word ape we're gonna
+leverage this a that we already created
+great
+and then we're adding the second
+character p we're gonna leverage
+this p that we already created and so
+we've inserted
+the first two characters what about the
+last character the e
+do we have an e over here no right
+there's no
+e in the third position so what are we
+gonna do we're gonna create another
+child node right now we create an e
+and last but not least we mark that this
+is the
+end of a word so you can see that a try
+actually has the potential to be pretty
+efficient because we are
+reusing a lot of nodes right we're not
+necessarily creating a separate node
+for every single word now let me just
+show you one
+last thing before we jump into the code
+so we're going to do one last function
+we want to check does any word start
+with
+b and i'm just illustrating why we're
+even implementing a try in the first
+place it's because the starts with
+function
+is very efficient compared to other data
+structures
+so for example let's say we had a list a
+list
+of words a list of strings and let's say
+the size of that list
+was equal to a million right
+how long would it take for us to check
+if
+any word starts with b worst case we
+would have to check
+every single word in the list and check
+if it starts with b
+and what if there was zero words that
+started with b then every time we would
+have to go through that entire
+list of a million words but with a try
+like we've implemented right now it's
+very efficient
+here you can see we implement we have
+two words right we have one word here
+and we have a second word here and it's
+possible we could have a million
+other words right like clearly there's
+probably a lot of words that start with
+the character a
+and maybe so on but when we run this
+function
+starts with b all we're checking is
+we're starting at the root we're
+checking
+do we have any children with the
+character
+b right we check this first
+layer how large is that first layer
+gonna be well we know that there's
+26 lowercase letters right so worst case
+it would be lowercase
+26 and that's pretty efficient right
+so when we check we check hey there's a
+lowercase a but there's no lowercase b
+so
+for this starts with function we can
+return false and
+that was done very efficiently right uh
+26 is basically
+big o of one so this is a super
+efficient way
+to to check prefixes right and that's
+why they call this a prefix
+tree prefixes can be checked very
+efficiently so
+now let's actually jump into the code
+all three of the functions insert
+search and starts with are pretty
+similar functions
+so the even though we're going to write
+a lot of code it's going to be mostly
+similar so let's jump into that
+so our job is to implement a try but we
+can't really do that without
+implementing a try
+node so the first thing i'm going to do
+is create a try
+node and all we're going to do is just
+create the constructor so in python
+that's what i'm doing and net is
+basically the constructor
+and i'm just going to have a couple of
+uh member variables for this so we are
+going to have
+children of a tri node right it could
+have children it could have 26 children
+but instead of doing an array i'm just
+gonna do a hash map because that's
+easier
+and remember we can also mark every
+single node
+as if it was the end of a word i'm gonna
+say
+end of word is gonna be a variable
+initially it's gonna be false
+but we could set it to true if the
+character was the end of a word
+notice how we're not actually storing
+the character itself
+in the try node that's gonna be implicit
+from the
+hashmap from this hashmap so if we were
+adding a
+let's say a character a a lowercase
+character a we would say
+to children we would say children for
+character a
+is the key and we're going to create a
+new tri node
+for that character a right so that's how
+we're going to be doing it that's how
+we're going to be inserting a
+node so that's our entire trinode
+class now let's actually get into the
+try class so the first thing we're going
+to do is initialize this so let's get
+rid of this comment and
+for initializing this all we're really
+going to need is a
+root node and we can get the rest of the
+nodes
+from that root so we're going to create
+a root tri node
+and that's it that's all we're going to
+do for the constructor and once the try
+note is created we basically have an
+empty tree even though we have a root
+it's empty because it does
+it does not have any children so we
+technically have not inserted
+any words yet but now let's implement
+the
+insert word method this method
+for this method we are gonna have to
+iterate through every single character
+in the word so we're gonna initialize
+our self current
+is gonna be set to the root so we're
+gonna initially start at the root right
+and then we're gonna go
+character by character in the word and
+for every single character we're just
+gonna check two things
+does the word all does this character
+already exist
+if it doesn't already exist so if this
+character is
+not in the current nodes
+dot children hash map right so if the
+current
+if this character is not in our hash map
+yet
+that means it hasn't been inserted yet
+so what are we going to do we're going
+to create a try node for this character
+so cur
+dot children and the key value we're
+going to use
+is the character and then we're going to
+create a new
+tri node so this is how we are going to
+be inserting characters
+to children we're going to use the
+character as a key value and then we're
+going to create
+a empty tri node and we're only doing
+that
+if the character doesn't already exist
+if it does already exist then we can
+skip that step and just
+say that current is going to be set
+to that child right so if that character
+already existed then we can just
+update ker and move to that character
+and then continue
+our for loop right so we're going to do
+this for every character in the word
+and then by the end of this loop whether
+we have to create
+every node or the nodes already exist
+for us
+for this word right let's say it was
+apple or something
+the characters already exist or we just
+created them
+now current is set to the last character
+of the word
+so what are we going to do to current
+well we're going to
+mark it as the end of a word so we're
+going to set end of word
+equal to true now and then we don't
+really have to return anything
+so that was pretty simple right not a
+lot of complex code we did have to
+go through every character and we either
+created nodes
+or just iterated through those nodes and
+every and the remaining two functions
+search and starts with are actually
+going to be
+very similar to this insert function so
+now let's get started on
+search so we want to search to determine
+if a word exists or not so
+just like the previous function we're
+going to start at the root node so
+self dot root and we're going to go
+character by character
+in the word and we're going to check if
+this character exists
+in our tree if it does not so if c
+not in current.children if this
+character
+does not exist then what do we have to
+do we return false
+meaning the word just just simply does
+not exist if it
+does then we can move ourselves to that
+child node so we can update cur and set
+it to
+the child node of that character and
+then we're gonna basically keep doing
+this
+for every character in the word if the
+word doesn't exist will return false if
+the word does exist that means
+the entire loop will execute and then
+will be so then kerr will be the last
+character
+of the word and we and we know that it
+is a word
+if ker has the end of word
+variable set to true so this is the
+variable we're going to be returning
+if this is set to true that means this
+is a word
+and will return true if it's set to
+false that means it's not a word and our
+function is ultimately going to return
+false and now last but not least let's
+get started with the starts with
+function
+and this function is actually going to
+be the exact same as the
+search function except we're not going
+to have to
+uh determine if it's the end of a word
+or not right
+we we're not checking if it is a word
+we're right
+we we are just given a prefix and we
+just want to know if there's any word
+that
+starts with this prefix so once again
+look for the third time we're going to
+be starting at the root
+and we're going to go character by
+character in the prefix
+this time right we're not given a word
+this time and if this character is
+not in our tree so if it's not in the
+children
+right now then we will return false
+meaning the prefix does not exist
+therefore
+no words start with this prefix
+otherwise we will
+uh shift our current pointer to that
+child
+pointer of this character and continue
+on
+and at the end if we do reach
+cur then we can immediately return true
+because we know that there's at least
+one word that starts with this prefix
+we don't have to determine that the
+prefix itself
+is a word so that is the entire code i
+can zoom out so you can see the entire
+thing
+and we just have one small typo over
+here this is children
+and so other than that this is the
+entire code
+so today you just learned a brand new
+data structure and i hope that this was
+helpful for you
+so this data structure can be pretty
+useful it's a rare data structure to see
+on leak code problems but i hope that
+you did learn something new today and if
+this was helpful please like
+and subscribe it supports the channel a
+lot and i'll hopefully
+
+Solution:
+class PrefixTreeNode:
+    def __init__(self):
+        self.children = [None] * 26
+        self.end = False
+
+class PrefixTree:
+    def __init__(self):
+        self.root = PrefixTreeNode()
+
+    def insert(self, word: str) -> None:
+        curr = self.root
+        for c in word:
+            i = ord(c) - ord("a")
+            if curr.children[i] == None:
+                curr.children[i] = PrefixTreeNode()
+            curr = curr.children[i]
+        curr.end = True
+
+    def search(self, word: str) -> bool:
+        curr = self.root
+        for c in word:
+            i = ord(c) - ord("a")
+            if curr.children[i] == None:
+                return False
+            curr = curr.children[i]
+        return curr.end
+
+    def startsWith(self, prefix: str) -> bool:
+        curr = self.root
+        for c in prefix:
+            i = ord(c) - ord("a")
+            if curr.children[i] == None:
+                return False
+            curr = curr.children[i]
+        return True
+
+
+Problem:
+You are given two strings `word1` and `word2`, each consisting of lowercase English letters.
+
+You are allowed to perform three operations on `word1` an unlimited number of times:
+
+* Insert a character at any position
+* Delete a character at any position
+* Replace a character at any position
+
+Return the minimum number of operations to make `word1` equal `word2`.
+
+**Example 1:**
+
+```java
+Input: word1 = "monkeys", word2 = "money"
+
+Output: 2
+```
+
+Explanation: 
+`monkeys` -> `monkey` (remove `s`)
+`monkey` -> `monkey`  (remove `k`)
+
+**Example 2:**
+
+```java
+Input: word1 = "neatcdee", word2 = "neetcode"
+
+Output: 3
+```
+
+Explanation: 
+`neatcdee` -> `neetcdee`  (replace `a` with `e`)
+`neetcdee` -> `neetcde`   (remove last `e`)
+`neetcde`  -> `neetcode`  (insert `o`)
+
+**Constraints:**
+* `0 <= word1.length, word2.length <= 100`
+* `word1` and `word2` consist of lowercase English letters.
+
+Transcript:
+hey everyone welcome back and let's
+write some more neat code today so today
+let's solve
+edit distance so this is a dynamic
+programming problem and this is
+very similar to the problem longest
+common subsequence which is a problem
+i've solved on this channel so
+this problem is basically an extension
+of that problem
+so we're given two strings word one and
+word two
+and our goal is to return the minimum
+number of
+operations required to take word one
+and convert it into word two and we only
+have
+three operations available to us
+inserting a character
+into word one right remember because
+we're trying to take word one and
+convert it
+into word two we can't change word two
+we can delete a character
+from word one because we can't change
+word two and we can replace a character
+in word one and so replacing a character
+is basically changing
+one character into another so in this
+case
+there's three operations it would take
+to take horse and turn it into
+this string of course we'd want to get
+rid of the
+h right but we would do that by
+replacing the h with an
+r so this is going to be an r and then
+we have
+two r's right so we'd get rid of this r
+so we
+can get rid of that and lastly we see we
+have
+r o s we have an extra e so we're going
+to get
+rid of the e as well so we did that in
+three operations
+so we can return three so first of all
+let's analyze some simple cases
+what if we had the case where word one
+and word two were both
+just empty strings how many operations
+does it take then to take word one and
+convert it into word two
+obviously zero right we don't have to do
+anything they're already the same
+similarly if word one was let's say abc
+and word two
+is also a b c we also
+don't have to do anything right we'd
+look at the first character see oh
+they're the same right
+since they're the same of course we
+don't have to consider them anymore
+right
+then all we have to do is compare the
+remainder of each string right but then
+we see again hey b
+is the same good c is also the same
+good and look perfectly timed there's no
+characters left in word one and there's
+no characters left in word two
+therefore zero operations were needed
+right
+what if word one was abc
+and word two was empty then what would
+we do is it even possible to take this
+word and then convert it into an
+empty of course it is in this problem
+it's
+always going to be possible to take word
+one and convert it into word two right
+because we can insert a character we can
+delete a character
+or we can replace a character so it's
+always going to be possible
+because in the worst case right this is
+what we could do
+we could take every single character in
+word one and just delete it
+delete that delete that because none of
+these show up in word two
+just delete all of them if there was
+some character maybe there's a z over
+here
+then we could just copy every character
+after we've deleted these
+and then copy it over here right add
+that z but no we don't need to
+so my question to you is if word two is
+empty
+and word one is not empty then what's
+this is a base case
+how many operations is it gonna take is
+always going to take the length of word
+one whatever the length happens to be
+because we're gonna have to delete
+every single character right so that's
+one base case word two is empty
+what about the opposite case what if
+word two was abc
+and word one was empty is this possible
+is it possible to take word one and
+convert it to word two
+of course it is right because we're
+allowed to insert characters in here so
+basically we could just read character
+by character a
+add that here b add that here c add that
+here
+as well right so we can just copy every
+character so my question to you is in
+in this case the opposite case where
+word two is
+non-empty but word one is empty how many
+operations is it gonna take well we're
+just gonna
+copy each character in here right so in
+this case it's gonna take the length
+of word two that's how many operations
+it's going to take right so basically
+what i'm getting at is if
+word one is empty and word two is
+non-empty
+then we're gonna return the length of
+this as the minimum number of operations
+if the opposite was true right maybe
+this is empty but this is not empty then
+we'd return the length of the non-empty
+one if one of them is empty we're going
+to return the length of the non-empty
+string that's going to be the minimum
+number of operations
+this is important because this is our
+base case so now let's try to brute
+force this
+how are we going to handle it well we're
+going to have two pointers right we're
+going to have one pointer
+pointing at a character in word one and
+a second pointer pointing at a character
+in word two we're going to compare
+character by character
+so the the one case is what if they're
+exactly equal
+then what what is the sub problem then
+right because we don't have to consider
+these characters anymore
+now we're dealing with the sub problem
+of the remainder of the
+of those strings so basically if i'm
+calling the pointer in word one i and
+i'm calling the pointer in word to j
+if these characters are equal that means
+we can basically say i plus one is the
+new problem and
+j plus one is the is the new problem in
+word two right so
+we're just shifting our pointers like
+that so basically to summarize
+if these characters are equal right at
+the i and j
+pointer basically what i'm saying the
+characters are equal then we're just
+going to increment i by 1
+and increment j by 1. the number of
+operations we had to do was exactly
+zero right we didn't have to do anything
+they were already equal we didn't have
+to
+modify word one at all to the next
+character so our i
+pointer is going to be over here our j
+pointer is going to be here because we
+incremented both of them by one so now
+let's compare the characters
+c and b are not equal right so now our
+else condition condition is going to
+execute and we don't know
+we know we have three options we can
+insert a character
+delete a character or replace a
+character from word one
+but we don't know which one to do right
+so let's just try
+all three what happens if we insert
+a character what character are we gonna
+wanna insert over here
+obviously we'd wanna insert the
+character from word two we don't know if
+that's going to end up making word one
+exactly into word two in the minimum
+number of operations but let's just try
+it and see what happens
+right so what would we do if we inserted
+a c over here right we're not deleting a
+character all we're doing is inserting a
+c
+over here in that case our i pointer is
+still going to be pointing at this b
+right
+but since we inserted a c over here it's
+hard to read
+but let's say i inserted a c in between
+over here
+that means we took care of the c from
+word two right so
+basically we don't need to find a
+matching c for it anymore we do need to
+find a matching b
+somewhere over here right so we're gonna
+leave our i
+pointer where it is but we're gonna take
+our j pointer and then shift it to the
+next position
+in word two that's what we would do if
+we inserted a character
+so as you can see when we insert a
+character
+we are taking one operation right so
+we're gonna have to add a one to the
+number of operations we did
+but when we when we shift our pointers
+the i
+pointer stays the exact same but j
+is incremented by one so that's one
+possibility
+another possibility is we delete a
+character so we're allowed to delete
+characters from
+our word one right so what would happen
+if i just deleted this character what
+we're saying is
+okay i can't find a matching c in this
+position right
+and we and we don't have a b
+corresponding to that position so i'm
+just going to ignore this guy
+and hopefully the remainder of the
+strings can match up right so what i'm
+saying is i'm going to take our
+eye pointer and yes i am going to shift
+it to the next position because i just i
+want to pretend like this character
+never existed but it does take one
+operation to complete that but since we
+did not
+find a matching c yet right we have to
+leave our j pointer here right we have
+to keep searching until we find a
+matching c
+ultimately we want word one to match
+word two
+so in this case for the delete operation
+what we're saying is i is going to be
+shifted but j is going to stay the exact
+same so i plus 1 but j stays the same
+as you can see this is you know kind of
+a pattern we're starting to see a
+pattern right
+and the last thing that we can do is
+replace
+a character from word one that shows up
+in word two right obviously if we're
+replacing a character from word
+one right we're gonna want the character
+that's matching
+in word two right so what we'd wanna do
+is take this b
+and replace it with a c character right
+if we did that clearly these two
+characters match right we
+made them match we forced these
+characters to match
+so in that case we we know that the c
+has a matching c
+up here so we can take this i pointer
+and shift it and we can take our j
+pointer and shift it to the next
+position right so
+the replace actually ends up doing the
+exact same thing as
+if the characters were equal and that
+makes sense because what we're doing is
+we're
+forcing them to be equal with the
+replace operation
+the difference between the replace and
+and if they were already originally
+equal
+is that the replace does take a single
+operation if they were already equal
+the number of operations it takes is
+zero right
+so it does come with a cost even though
+replace is pretty powerful
+as i said with replace what we're going
+to do is increment i
+and increment j so let's just go with
+the replace operation because that's
+actually going to end up
+being the minimum solution so now we
+shifted our pointers to the next
+position we see
+d and d they match each other so this is
+the statement that's going to execute
+and we know that takes 0
+operations right so we're going to
+increment both pointers by 1.
+j is going to be over here now i is
+going to be over here notice now how we
+have two
+empty strings remember the base case if
+both strings are empty
+we can return 0 because it takes zero
+operations to make them
+equal right they're already equal so
+we're done we return
+zero how many operations did it take by
+the way if we
+if you were counting we did have to
+execute a single replace
+operation that took one operation so the
+result is
+one so we are noticing that the sub
+problems
+are good to solve before we try to solve
+the original
+problem of comparing the entire lists
+let me reformat this
+into the dynamic programming explanation
+so you may have seen something like this
+before this is going to be a
+two-dimensional dynamic programming
+problem
+it's good to visualize it kind of like
+this so what we're doing here is we are
+comparing these two strings
+and for this position this is what we
+want to calculate
+in this position what we're going to do
+is we're going to store
+the basically the minimum number of
+operations for
+these two strings starting at this
+character for word two
+starting at this character for word one
+so basically the entire strings
+is going to be stored here what would be
+stored in this position basically
+corresponding to here so we're comparing
+these two
+basically the remainder of this string
+and from here
+the remainder of this string so in this
+position what we would store
+is the minimum number of operations it
+would take to make this
+sub problem these two sub strings how
+many
+minimum operations it would take to make
+them equal
+okay so that makes sense so far but then
+why do i have this
+extra layer over here the this
+portion is for our base case what would
+be over here
+right so clearly we see that there's an
+empty string over here there's an empty
+string over here what value should i put
+over here obviously zero right two empty
+strings take
+zero operations to make equal what about
+in
+this position what does this position
+tell us well we have an empty string
+from word two
+but over here we have the entire string
+from word one
+so how many minimum operations would
+that take remember we went over that at
+the beginning
+and it would just be the length of the
+non-empty string so here we can see the
+length of the non-empty string
+is three what about in this position
+similarly
+word two is empty word one has a length
+of
+two so we'd put two and basically
+continuing
+to one and then down to zero right so
+similarly over here
+we have an empty string from word one
+word two is completely
+full and the length of it is three so
+we're going to put three here
+and then continue just counting down
+three two
+one right so in what order are we going
+to solve this
+if we start at the beginning then we're
+going to notice something
+notice okay well we're comparing these
+two characters in this position right
+they're both
+equal right so then we're going to
+execute this statement right so we're
+going to take
+i plus 1 and j plus 1. what does that
+tell us that tells us that the result of
+this value
+depends on this value right
+so okay then let's take a look at this
+value well in this case they're
+not equal b and c are not equal
+so then what are we going to do remember
+if they're not equal we have to brute
+force it we have to take a look at all
+three operations and remember i
+corresponds to word one
+j corresponds to or two so in the insert
+operation what we're going to do is look
+in this spot
+in the delete operation what we're going
+to do increment i by 1 in this case so
+we're going to look in this spot
+and for the replace operation we're
+incrementing both of them so then we're
+going diagonal
+again from this since we have three
+values that we're looking at what we're
+going to do is we want to know which one
+of these three
+leads us to the minimum number of
+operations right so what in reality
+what we're going to do is since we're
+noticing that
+it depends on the lower values let's do
+this
+bottom up this is called bottom up
+dynamic programming we're going to start
+at the bottom
+compute this value compute this value
+compute this value
+and then so on and so on and then work
+our way backwards until we finally
+get to the result and notice if we do
+start
+in this position we already have the
+values that it could possibly depend on
+because those are our base cases over
+here
+diagonally and below right and so notice
+d and d are equal so what we're going to
+do is from here we're going to look at
+the diagonal value
+right because this this statement is
+going to execute we're going to see it's
+zero
+so that's what we're going to put over
+here and then eventually we would end
+we would compute these and then
+eventually we would get up over
+here right and we'd compute the value
+from that
+and then eventually we'd get all the way
+up here and we would compute the value
+from here you would see that we'd end up
+putting a 1 over here we'd end up
+putting a 1
+over here so what would the value over
+here end up being well let's look at the
+two characters d
+and c they're not equal so what we're
+going to do is we're going to look down
+we're going to look
+diagonal and we're going to look to the
+right which one of those values is
+minimum
+it's over here so that's 0 but we do
+have to add 1 because
+in this case we do need to do a single
+operation so we add 1
+and similarly is what we would do for
+every single position
+you know we'd compare the characters and
+then we'd execute this statement or we'd
+execute
+this statement so i'm not going to run
+through that but i think this is simple
+enough that if you want to you can get a
+piece of paper out
+and then try it for yourself and you'll
+probably come to the same conclusion
+so that being said let's jump into the
+code this is exactly what i'm going to
+do with the code i'm going to have a two
+dimensional
+array and i'm going to execute these
+exact statements
+so i'm going to call our two-dimensional
+array our cache
+and so basically i'm going to initialize
+it to
+initial values of just max integer or
+float infinity in python
+and you can probably initialize this any
+way that you'd like in your own language
+there's probably
+a different ways that you'd want to do
+that but i'm going to use
+a list comprehension so basically i'm
+creating a list
+fl with float infinite as the value of
+length
+word two plus one remember because we do
+need to make
+our two dimensional array a little bit
+bigger to handle those base cases
+for this list i'm gonna have one of
+these lists basically for every
+character
+in the range of the length of
+word one so this probably looks
+confusing if you're not familiar with
+python but basically i'm just creating a
+two-dimensional array
+with these dimensions actually word one
+the length of board one plus one
+because remember we are worrying about
+the base case but basically yeah
+a two dimensional array so now i wanna
+fill up
+our bottom row of the two-dimensional
+grid
+so what i'm gonna do is for our cache
+i'm going to go to the bottom row what's
+the bottom row it's going to be the
+length of the word
+1 and that's going to be the bottom row
+and we're going to go through every
+value of it so for
+every j of that remember where it's
+going to be basically
+in descending order so what i'm going to
+do is and it's going to initially start
+at the length of what word two happens
+to be
+because remember the base case is if one
+string is empty and the other string
+isn't so word two and it's going to
+basically be decrementing by one each
+time so what i can just do is just say
+length of word two dec subtracted by
+j and actually i keep forgetting the
+bottom row is actually not just going to
+be the length of word tube that's going
+to be length of word two plus
+one so i want to make sure to add that
+plus one and similarly what we're gonna
+do is and for that right most column
+what we're gonna do is go through every
+position in it so length of word one
+plus one and for every work every
+position in
+the last column and the last column can
+be
+found like this basically for every i
+in the last column which is going to be
+length of word
+2 in this case and what we're going to
+do is similar to what we did
+up here take what the original length of
+word one is
+and each time subtract it by an
+additional value
+basically we can use i in this case so
+this might be a little bit confusing
+you can do this a bunch of different
+ways if this is confusing to you you can
+probably find your own way to do it
+basically we're just initializing the
+base case of our two dimensional array
+but so now let's actually get into the
+dynamic programming portion so remember
+this is going to be bottom
+up so we're going to work our way
+backwards from the length of
+word one minus one and the reason we're
+minusing one is we know we already
+filled up our base case
+portion so now we actually want to get
+to the actual dimensions of our two
+strings
+and we're going to do this in
+decrementing order until we get
+to the beginning until we get to the
+zeroth index which is when this is going
+to end up stopping
+and similarly let's work our way
+backwards from the length
+of word to so we're going to start at
+the bottom row and work our way
+backwards and then keep doing that until
+we end up getting to the top
+row and remember we had two cases either
+word one
+at index i is equal to word two at
+index j basically with the characters
+that we're comparing are equal or
+they're not equal remember if they are
+equal
+then that's really easy for us right
+because then we can just say okay
+cache of position i j what we're doing
+here is computing what's the minimum
+number of operations it would take
+to get the sub string starting at i and
+the substring starting at j for these
+respective words
+compute the minimum number of operations
+so we can get that in this case since
+the characters are equal just by saying
+cache of i plus one cache of j plus
+one and the else case is where we have
+to check all three directions
+and then take the minimum of those so
+what i'm gonna do is say one
+plus the minimum of those three uh
+directions so cache of
+i plus 1 and leave j the same
+and also we want to take the minimum of
+cash
+of i left the same but j plus 1
+and last but not least we want to take
+the minimum of cash of i plus 1
+and j plus one so this is a long line
+but i'm going to leave it as it is
+but yeah basically this is taking care
+of insert delete
+as well as replace and it's taking the
+minimum of whatever
+those were adding one to it because we
+are having to do at least one operation
+whichever one of those it is and then
+storing that minimum
+here and once we have done that once
+we've filled up our entire
+two-dimensional array
+we want to return the value at index
+0 0 of our cache because that tells us
+what's the minimum number of operations
+for the beginning of both strings so
+basically the entirety
+of both strings so this is definitely a
+doozy of a problem it's not a ton of
+code but it does take some thought to
+get to here
+and it's definitely an extension of
+longest common subsequence
+so i recommend solving that problem if
+you haven't already
+but i do hope that this was helpful it's
+a tough dynamic programming problem
+if it was helpful please like and
+subscribe it supports the channel
+a lot and i'll hopefully see you pretty
+
+Solution:
+class Solution:
+    def minDistance(self, word1: str, word2: str) -> int:
+        dp = [[float("inf")] * (len(word2) + 1) for i in range(len(word1) + 1)]
+
+        for j in range(len(word2) + 1):
+            dp[len(word1)][j] = len(word2) - j
+        for i in range(len(word1) + 1):
+            dp[i][len(word2)] = len(word1) - i
+
+        for i in range(len(word1) - 1, -1, -1):
+            for j in range(len(word2) - 1, -1, -1):
+                if word1[i] == word2[j]:
+                    dp[i][j] = dp[i + 1][j + 1]
+                else:
+                    dp[i][j] = 1 + min(dp[i + 1][j], dp[i][j + 1], dp[i + 1][j + 1])
+        return dp[0][0]
+
+
