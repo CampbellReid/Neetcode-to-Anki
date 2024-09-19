@@ -367,7 +367,7 @@
         "Difficulty": "Medium",
         "Video": "S5bfdUTrKLM",
         "PythonSolution": "# Definition for singly-linked list.\n# class ListNode:\n#     def __init__(self, val=0, next=None):\n#         self.val = val\n#         self.next = next\n\nclass Solution:\n    def reorderList(self, head: Optional[ListNode]) -> None:\n        slow, fast = head, head.next\n        while fast and fast.next:\n            slow = slow.next\n            fast = fast.next.next\n\n        second = slow.next\n        prev = slow.next = None\n        while second:\n            tmp = second.next\n            second.next = prev\n            prev = second\n            second = tmp\n\n        first, second = head, prev\n        while second:\n            tmp1, tmp2 = first.next, second.next\n            first.next = second\n            second.next = tmp1\n            first, second = tmp1, tmp2\n",
-        "Transcript": ""
+        "Transcript": "Approach\nThis problem can be broken down into three simple sub problems and can be solve sequentially to arrive at our final solution.\n\nFinding the mid: take slow and fast ptr and find the start of the second half of Linked List\nReverse Linked List: reverse the second half and split the original Linked list into two independent linked list\nMerge Linked List: take each node one by one from both the sublists and merge them into single linked list."
     },
     {
         "Name": "Remove Nth Node From End of List",

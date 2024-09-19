@@ -1,0 +1,6 @@
+Approach
+This problem can be broken down into three simple sub problems and can be solve sequentially to arrive at our final solution.
+
+Finding the mid: take slow and fast ptr and find the start of the second half of Linked List
+Reverse Linked List: reverse the second half and split the original Linked list into two independent linked list
+Merge Linked List: take each node one by one from both the sublists and merge them into single linked list.
